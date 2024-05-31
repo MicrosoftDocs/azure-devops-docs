@@ -1,22 +1,36 @@
 ---
-title: Publish NuGet packages with Pipeline tasks or the classic editor
-description: How to publish NuGet packages with Azure Pipelines using YAML and the classic editor
-services: vsts
+title: Publish NuGet packages with Azure Pipelines
+description: Learn how to publish your NuGet packages using YAML and Classic Pipelines.
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
-ms.topic: conceptual
-ms.date: 01/04/2023
+ms.topic: tutorial
+ms.date: 05/31/2024
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
 # Publish NuGet packages with Azure Pipelines (YAML/Classic) 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In Azure Pipelines, you can use the classic editor or the YAML tasks to publish your NuGet packages within your pipeline, to your Azure Artifacts feed, or to public registries such as *nuget.org*.
+With Azure Pipelines, you can use either classic or YAML pipelines to publish your NuGet packages to your Azure Artifacts feed, external feeds, or public registries such as *nuget.org*. In this article, you will learn how to: 
+
+> [!div class="checklist"]
+>
+> * Generate a NuGet package in Azure Pipelines
+> * Publish packages to internal and external feeds
+> * Publish packages to NuGet.org
+
+## Prerequisites
+
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
+
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
+
+- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-npm.md#create-a-feed).
 
 ## Create a NuGet package
 
-There are various ways to create your NuGet packages such as using Visual Studio to pack your NuGet packages. If you're already using MSBuild or some other task to create your packages, skip this section and jump to the [publish NuGet packages](#publish-nuget-packages) section.
+There are several ways to create your NuGet packages, such as using the dotnet or nuget.exe CLI to pack your packages. If you are already using MSBuild or other tasks to create your packages, you can skip this section and proceed to the next one.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
