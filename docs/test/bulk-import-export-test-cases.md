@@ -4,8 +4,8 @@ titleSuffix: Azure Test Plans
 description: Learn how to bulk import or export test cases in Azure Test Plans.  
 ms.service: azure-devops-test-plans
 ms.custom: cross-project, UpdateFrequency3
-ms.author: rbatra
-author: raviLiftr
+ms.author: jeom
+author: wisdeom
 ms.topic: how-to
 monikerRange: '= azure-devops'
 ms.date: 12/04/2023
@@ -100,7 +100,18 @@ A: Any problems with the formatting of your CSV/XLSX file appear in the import v
 A: No, all work items aren't supported. The Test case import only supports the following work item types:
 
 - Test Case
-- Shared Steps
+
+Important for referencing shared steps in test case using import functionality:
+
+- A shared steps work item must already exist, and its ID can be referenced in the CSV. The CSV or XLSX import functionality does not support creating a new shared steps work item if it is referenced without an ID, and the import will fail with an "invalid column" error.
+
+- You can create new shared steps work item from a test case work item UI and **using create shared steps option** in it.
+
+- Once the shared steps work item is created, you can refer the ID of the shared step in CSV.
+
+:::image type="content" source="media/bulk-import-test-case/shared-steps-reference-in-csv.png" alt-text="Screenshot of shared step reference in CSV.":::
+
+- Note that if the shared steps work item reference is provided along with steps in the CSV or XLSX, it will update the shared steps work item. Therefore, if you only want to provide a reference to the shared steps, do not add steps to it in the CSV or XLSX.
 
 Azure Boards has a separate bulk import functionality using CSV files. For more information, see [Bulk import or update (CSV)](../boards/queries/import-work-items-from-csv.md).
 
