@@ -20,12 +20,11 @@ Most components in Azure DevOps must follow naming restrictions and conventions.
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
 > [!IMPORTANT]   
-> - When using the API, rather than user interface (UI), the API allows you to directly specify a name, which includes characters that might be restricted in the UI. 
+> When using the API, rather than user interface (UI), the API allows you to directly specify a name, which includes characters that might be restricted in the UI. 
 > 
 > **Best practices:** 
 > - Follow the UI restrictions to maintain consistency and prevent unintended issues.
-> - Validate names programmatically and handle any special characters appropriately. 
-> - Implement custom validation logic before invoking the API to ensure names meet your specific requirements. For more information, see [Sample rule scenarios](work/rule-samples.md).
+> - Validate names programmatically and handle any special characters appropriately.
 
 <a id="CommonRestrictions">   </a>
 
