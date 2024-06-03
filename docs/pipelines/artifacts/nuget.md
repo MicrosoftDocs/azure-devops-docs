@@ -73,7 +73,7 @@ From your pipeline definition, add the **NuGet task** to your pipeline to create
 
 4. Fill out the required fields as follows:
 
-    - **Command:**: the NuGet command to run.
+    - **Command:**: *pack*.
     - **Path to csproj or nuspec file(s) to pack**: the pattern that the task uses to search for csproj directories to pack.
     - **Configuration to package**: specifies the configuration to package when using a *.csproj* file.
     - **Package folder**: directory where packages are created. If empty, packages will be created at the source root.
