@@ -39,8 +39,8 @@ Do the following steps to create an inherited process that you can customize. Th
 ::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.  
-   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.  
+   ![Screenshot showing highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)
 3. Select **Process** > **...** (More actions) > **Create inherited process**.
    Choose the same system process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;that was used to create the project that you want to customize.  
 
@@ -71,7 +71,7 @@ Do the following steps to create an inherited process that you can customize. Th
 	> If you don't have the **Create inherited process** menu option, then the collection you selected is set to work with the on-premises XML process model. For more information, see [On-premises XML process model](../../../reference/customize-work.md).
 	::: moniker-end 
 
-    Inherited child processes automatically update, based on their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
+Inherited child processes automatically update, based on their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 ::: moniker-end
 

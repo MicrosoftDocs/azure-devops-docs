@@ -51,9 +51,9 @@ After you [create an inherited process](manage-process.md#create-an-inherited-pr
 Locked :::image type="icon" source="media/process/locked-icon.png" border="false"::: fields and inherited :::image type="icon" source="media/process/inherited-icon.png" border="false"::: fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)
 2. Select **Process** > your **inherited process** > the **WIT** you want to customize. 
 3. To add a field, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: (**New Field** icon).  
 

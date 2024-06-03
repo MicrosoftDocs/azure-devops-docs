@@ -12,14 +12,14 @@ ms.date: 08/03/2022
 ::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png) 
+   ![Screenshot showing Organization settings button highlights.](../../../media/settings/open-admin-settings-vert.png) 
 
 3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot shows highlighted Process button for selection.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
+	> ![Screenshot showing highlighted Process button for selection.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
 
 ::: moniker-end
 
@@ -30,7 +30,7 @@ ms.date: 08/03/2022
 3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Process button.](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
+	> ![Screenshot showing highlighted Process button in Collection settings.](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
 
 ::: moniker-end
 
@@ -41,6 +41,6 @@ ms.date: 08/03/2022
 3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Process button.](/../work/media/process/open-process-page-2019.png) 
+	> ![Screenshot showing highlighted Process button in Admin settings.](/../work/media/process/open-process-page-2019.png) 
 
 ::: moniker-end

@@ -29,7 +29,9 @@ To learn more about what you can customize, see [About process customization and
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../includes/create-inherited-process.md)]
+## Create inherited process
+
+For more information, see [Create inherited process](manage-process.md#create-an-inherited-process).
 
 <a id="add-wit">  </a>
 
