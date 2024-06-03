@@ -7,62 +7,40 @@ ms.date: 08/03/2022
 
 <a id="open-process-wit">  </a>
 
-
-
-::: moniker range=">= azure-devops-2019"
-
-## Open Settings>Process
-
-::: moniker-end
+## Open Settings > Process
 
 ::: moniker range="azure-devops"
 
-You create, manage, and make customizations to processes from **Organization settings>Process**. 
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+  
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png) 
 
-1. Choose the :::image type="icon" source="../../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects>Organization settings.](../../../media/settings/open-admin-settings-vert.png)  
-
-1. Then, choose **Process**. 
+3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Then, choose Process.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
-
-	> [!IMPORTANT]  
-	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/customize-work.md).
-
+	> ![Screenshot shows highlighted Process button for selection.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range=" < azure-devops"
 
-You create, manage, and make customizations to processes from **Collection Settings>Process**. 
-
-1. Choose the :::image type="icon" source="../../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Choose the project collection whose processes you want to customize, and then choose **Collection Settings**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects>Organization settings](/azure/devops/organizations/settings/work/media/process/open-process-page-2020.png)  
-
-1. Then, choose **Process**. 
+1. Sign in to your collection (```https://dev.azure.com/{Your_Collection}```).
+2. Select **Collection Settings**.
+3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Then, choose Process.](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
+	> ![Screenshot showing highlighted Process button.](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-You create, manage, and make customizations to processes from **Admin settings>Process**. 
-
-1. Choose the :::image type="icon" source="../../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Project>Organization settings.](../../../media/settings/open-admin-settings-2019.png)  
-
-1. Then, choose **Process**. 
+1. Sign in to your collection (```https://dev.azure.com/{Your_Collection}```).
+2. Select **Admin settings**.  
+3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Then, choose Process.](/azure/devops/organizations/settings/work/media/process/open-process-page-2019.png) 
+	> ![Screenshot showing highlighted Process button.](/../work/media/process/open-process-page-2019.png) 
 
 ::: moniker-end
