@@ -1,27 +1,27 @@
 ---
-title: What are feeds?
-description: Learn about Artifacts feeds and the difference between project-scoped and organization-scoped feeds. Learn how to create, delete, and restore feeds. 
+title: What Are Azure Artifacts Feeds?
+description: Understand the differences between project-scoped and organization-scoped Azure Artifacts feeds. Learn the steps to create, delete, and restore feeds. 
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 06/03/2024
 monikerRange: '<= azure-devops'
 ---
 
-# What are feeds?
+# What Are Azure Artifacts Feeds?
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Artifacts Feeds are organizational constructs that allow you to store, manage, and group your packages and control who to share it with. Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
+Azure Artifacts Feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. Feeds are not limited to specific package types; you can store various types, such as npm, NuGet, Maven, and Python packages, in a single feed.
 
 ## Project-scoped vs Organization-scoped feeds
 
-Previously, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**. This type of feed can only be accessed from within the hosting project. 
+Organization-scoped feeds are accessible and viewable from any project within the organization. Project-scoped feeds on the other hand, are restricted to being viewed solely within the hosting project.
 
-Only project-scoped feeds can be made public. You can learn more about [public feeds](#public-feeds) later in this article. See [Feeds visibility](../feeds/project-scoped-feeds.md) to understand the differences between project-scoped and organization-scoped feeds.
+It's important to note that organization-scoped feeds cannot be converted into project-scoped feeds. Furthermore, only project-scoped feeds have the capability to be designated as [public feeds](#public-feeds). For a detailed comparison between project-scoped and organization-scoped feeds, refer to [Feeds scope](../feeds/project-scoped-feeds.md).
 
 > [!NOTE]
-> To access a feed in a different organization, a user must be given access to the project hosting that feed.
+> To access a feed in a different organization, a user must be granted access to the project hosting that feed.
 
 ## Public feeds
 
