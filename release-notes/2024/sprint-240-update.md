@@ -2,7 +2,7 @@
 title: View third-party providers code scan results in Azure DevOps
 author: ckanyika
 ms.author: ckanyika
-ms.date: 5/2/2024
+ms.date: 6/11/2024
 description: View third-party providers code scan results in Azure DevOps
 ---
 # View third-party providers code scan results in Azure DevOps
@@ -13,27 +13,27 @@ Check out the release notes for details.
 
 ### General
 
-[!INCLUDE [sprint-238-update-links](includes/general/sprint-238-update-links.md)]
+[!INCLUDE [sprint-240-update-links](includes/general/sprint-240-update-links.md)]
 
 ### GitHub Advanced Security for Azure DevOps
 
-[!INCLUDE [sprint-238-update-links](includes/ghazdo/sprint-238-update-links.md)]
+[!INCLUDE [sprint-240-update-links](includes/ghazdo/sprint-240-update-links.md)]
 
 ### Azure Pipelines
 
-[!INCLUDE [sprint-238-update-links](includes/pipelines/sprint-238-update-links.md)]
+[!INCLUDE [sprint-240-update-links](includes/pipelines/sprint-240-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-238-update](includes/general/sprint-238-update.md)]
+[!INCLUDE [sprint-240-update](includes/general/sprint-240-update.md)]
 
 ## GitHub Advanced Security for Azure DevOps
 
-[!INCLUDE [sprint-238-update](includes/ghazdo/sprint-238-update.md)]
+[!INCLUDE [sprint-240-update](includes/ghazdo/sprint-240-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-238-update](includes/pipelines/sprint-238-update.md)]
+[!INCLUDE [sprint-240-update](includes/pipelines/sprint-240-update.md)]
 
 ## Next steps
 
