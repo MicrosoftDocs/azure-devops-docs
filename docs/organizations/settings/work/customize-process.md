@@ -133,7 +133,7 @@ Workflow states allow you to track the status of a work item as it moves from ne
 
 Custom controls provide more functionality to a work item form. 
 
-1. From the Process page, select your inherited process > WIT > **Add custom control**.
+From the **Process** page, select your inherited process > WIT > **Add custom control**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Choose your inherited process, the WIT, and then Add custom control sequence.](media/process/cpcontrols-add-custom-control.png) 
@@ -149,21 +149,15 @@ An extension is an installable unit that contributes new capabilities to your pr
 > [!NOTE]   
 > Group and Page extensions are automatically added to all WITs for all processes, both system and  inherited . You can hide an extension for selected WITs within an inherited process. 
 
-1. Select your inherited process and the WIT, and then select **Get extensions**.
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Process, WIT, Bug, Layout, Get extensions selections.](media/process/cprocess-choose-extensions.png) 
+1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), find an extension, and select **Get it free**.
 
-2. Select the extension you want to add. Here we select the Work item checklist.
+   :::image type="content" source="media/process/marketplace-extension-work-item-checklist.png" alt-text="Screenshot showing Marketplace extension, Work item checklist.":::
 
-3. Choose the organization you want to add it to and select **Install**.  
+2. Choose the organization you want to add it to from the dropdown menu, and then select **Install**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Visual Studio Marketplace, install extension.](media/process/cprocess-install-extension.png) 
+   :::image type="content" source="media/process/install-work-item-checklist-extension.png" alt-text="Screenshot showing selected organization and install button.":::
 
-	You can add extensions to all projects and processes. 
-
-4. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
+3. Return to the process and WIT and verify the extension is where you want it. You can drag it to where you want it on the form. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Group extension on Bug work item form.](media/process/cpfield-add-checklist-extension.png) 
@@ -173,12 +167,12 @@ An extension is an installable unit that contributes new capabilities to your pr
 You can add more WITs to a backlog level or add another portfolio backlog. As shown in the following example, we added a third level portfolio backlog labeled *Initiatives*, which tracks the custom *Initiative* WIT. We renamed the product backlog to *Stories and Tickets* to indicate that we track *User stories* and *Customer tickets* on the product backlog. 
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing Changes made to the backlog levels.](media/process/process-backlog-boards-intro.png) 
+> ![Screenshot showing Changes made to the backlog levels.](media/process/backlog-levels.png) 
 
 1. From the **Process** page, select your inherited process > **Backlog levels**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Admin context, Process page, open Backlog levels](media/process/process-backlog-levels-open.png) 
+	> ![Screenshot showing Web portal, Admin context, Process page, open Backlog levels.](media/process/process-backlog-levels-open.png) 
 
 2. You can modify the backlog and board configuration in the following ways:    
 	- [Add a custom WIT to a backlog or board](customize-process-backlogs-boards.md)  
@@ -212,18 +206,9 @@ We recommend that you create a test project and apply your customized inherited 
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
 	::: moniker-end
 
-2. Enter information into the form. For more information, see [Create a project](../../projects/create-project.md).
+2. Enter information into the form, and then select **Create**. For more information, see [Create a project](../../projects/create-project.md).
 
-	::: moniker range=">= azure-devops-2020"
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](media/process/create-test-project-sprint166.png) 
-	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](media/process/create-test-project.png) 
-	::: moniker-end
-
-3. Select **Work** > **Work Items** > **New Work Item** and select the customized WIT. 
+3. From your project, select **Boards** > **Work Items**, and then select the customized WIT from the **New Work Item** dropdown menu. 
    In the following example, we select **Bug**. 
 
 	> [!div class="mx-imgBorder"]  
