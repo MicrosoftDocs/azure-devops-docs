@@ -4,7 +4,7 @@ description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipel
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.topic: conceptual
 ms.custom: continuous-test, cross-service
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 ms.date: 12/07/2018
 monikerRange: '<= azure-devops'
