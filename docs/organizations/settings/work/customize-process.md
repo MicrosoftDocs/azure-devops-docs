@@ -135,8 +135,8 @@ Custom controls provide more functionality to a work item form.
 
 From the **Process** page, select your inherited process > WIT > **Add custom control**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Choose your inherited process, the WIT, and then Add custom control sequence.](media/process/cpcontrols-add-custom-control.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot showing Choose your inherited process, the WIT, and then Add custom control sequence.](media/process/cpcontrols-add-custom-control.png) 
 
 For more information, see [Add extensions and custom controls to a work item type](custom-controls-process.md).
 
