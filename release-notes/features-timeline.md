@@ -306,7 +306,7 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="13"><strong>2024 Q2</strong></td>
+      <td rowspan="15"><strong>2024 Q2</strong></td>
        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
@@ -314,23 +314,20 @@ For the past several years, all our pipelines investments have been in the area 
        <td>N/A</td>
       </tr>     
       <tr>
-<<<<<<< HEAD
          <td>
-            <a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project (preview)</a>
+            <a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a>
          </td>
          <td>Boards</td>         
          <td>Future</td>
       </tr>
-=======
-        <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
-        <td>Boards</td>         
-        <td>Future</td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
+         <td>Boards</td>         
+         <td>Future</td>
       </tr> 
->>>>>>> b8ea9060725dc56ea7af3e0e75c59b582f22bd82
       <tr>
-         <td>
-            <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request (preview)](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request (preview)</a>
-         </td>
+       <td>
+         <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request</a>
+       </td>
          <td>Boards</td>         
          <td>Future</td>
       </tr>   
@@ -338,7 +335,8 @@ For the past several years, all our pipelines investments have been in the area 
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a>
          </td>
-         <td>Boards</td>        
+         <td>Boards</td> 
+         <td>Future</td>       
       </tr> 
        <tr>
         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments</a></td>
