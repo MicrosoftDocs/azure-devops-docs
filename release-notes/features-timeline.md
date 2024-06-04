@@ -328,8 +328,8 @@ For the past several years, all our pipelines investments have been in the area 
        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
-        <td>General</td>
-        <td>N/A</td>
+       <td>General</td>
+       <td>N/A</td>
       </tr>     
       <tr>
          <td>
@@ -338,7 +338,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Boards</td>         
          <td>Future</td>
       </tr>
-       <tr>
+      <tr>
          <td>
             <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request (preview)](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request (preview)</a>
          </td>
@@ -411,6 +411,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
+      <tr>
       <td rowspan="21"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
