@@ -5,7 +5,7 @@ description: Learn which commands you can use to manage Azure Test Plans
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 01/18/2022

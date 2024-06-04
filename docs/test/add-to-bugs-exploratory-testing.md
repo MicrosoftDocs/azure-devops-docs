@@ -5,7 +5,7 @@ ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
