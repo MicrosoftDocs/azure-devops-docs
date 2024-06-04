@@ -485,6 +485,10 @@
     {
       "source_path": "docs/migrate/migration-post-import.md",
       "redirect_url": "/azure/devops/migrate/migration-post-migration"
+    },
+    {
+      "source_path": "docs/report/sql-reports/analytics-insights-comparable-sql-reports.md",
+      "redirect_url": "/azure/devops/report/dashboards/overview#sql-server-reports"
     }
   ]
 }

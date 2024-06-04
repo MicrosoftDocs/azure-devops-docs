@@ -23,15 +23,12 @@ For an overview of Analytics, see [What is Analytics](../powerbi/what-is-analyti
 > [!NOTE]  
 > If you are looking for information about the Azure Analysis Services, see 
 [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/).
-
-For information on replacement of a specific SQL Server Reporting Services report, see [Get Analytics insights comparable to those provided by SQL Reporting Services reports](analytics-insights-comparable-sql-reports.md).
-
  
 ## General guidance
 
 As you migrate from using SQL Server Reporting Services to Analytics, note the following information.   
 
-- Analytics is an object-relational mapper, whereas SQL Server Reporting Services data is based on a relational databased and online analytical processing (OLAP) cube.  
+- Analytics is an object-relational mapper, whereas SQL Server Reporting Services data is based on a relational database and online analytical processing (OLAP) cube.  
 - Analytics doesn't require any maintenance.  
 - Analytics stores all work tracking fields, except for HTML/rich-text fields. Custom fields are automatically added to the Analytics data store.   
 - Always limit your query to the project(s) you have access to. You can generate cross-project reports using Power BI, however, queries only return data when you have permissions to view Analytics data for all projects you query. 
@@ -89,7 +86,3 @@ In addition, users can set permissions for individual shared Analytics views the
 **Learn resources**:  
 - [Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline)
 - [Run functional tests in Azure DevOps](/training/modules/run-functional-tests-azure-pipelines) 
-
-## Next steps
-> [!div class="nextstepaction"]
-> [Get Analytics insights comparable to those provided by SQL Reporting Services reports](analytics-insights-comparable-sql-reports.md)
