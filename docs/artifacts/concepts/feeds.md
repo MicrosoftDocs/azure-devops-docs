@@ -124,22 +124,21 @@ To access feeds pending permanent deletion, navigate to the feed picker dropdown
 
 ## Permanently deleting a feed
 
-A feed pending deletion will still use storage space. If you want to permanently delete your feed before the 30 days period is up, you can do this as follows:
+A feed pending deletion will still use storage space. To permanently delete your feed before the 30-day period ends, follow these steps:
 
-1. Select **Artifacts**.
+1. Navigate to your Azure DevOps project, and then select **Artifacts**.
 
-1. Select the feed picker dropdown menu, and then select **Deleted Feeds**
-
-    > [!div class="mx-imgBorder"] 
-    > ![Deleted feeds list](media/deleted-feeds.png)
+1. Select the feed picker dropdown menu, and then select the **Deleted Feeds** tab.
 
 1. Select the feed you want to restore, and then select **Feed Settings**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Feed settings](media/feed-settings-button.png)
-
 1. Select **Permanently Delete Feed**, and then select **Delete**.
 
-Once the feed is permanently deleted, users won't be able to view or restore its packages. The feed name will be available for reuse 15 minutes after the deletion.
+> [!NOTE]
+> Once a feed is permanently deleted, users will no longer have access to view or restore its packages. The feed's name will become available for reuse 15 minutes after deletion.
 
-::: moniker-end
+## Related articles
+
+- [Monitor Artifacts storage consumption](../artifact-storage.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
