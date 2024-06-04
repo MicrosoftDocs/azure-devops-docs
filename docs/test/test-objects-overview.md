@@ -5,7 +5,7 @@ description: Understand the different test objects and terms that support manual
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021

@@ -8,19 +8,19 @@ ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md). For a description of each field defined with a system process, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md). 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
+For more information, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
@@ -29,29 +29,31 @@ To learn more about what you can customize, see [About process customization and
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../includes/create-inherited-process.md)]
+## Create inherited process
+
+For more information, see [Create inherited process](manage-process.md#create-an-inherited-process).
 
 <a id="add-wit">  </a>
 
 ## Add a field 
 
-You always add a field to an existing work item type.  
+Do the following steps to add a field to an existing work item type. You can't use the **Steps** control on a custom work item type based on the Test Case work item type.  
 
-1. From the **Process** page of the selected  inherited process, choose the work item type you want to add the custom field to. 
+1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
 
-	Here we choose the Bug WIT. Note the breadcrumb links that allow you to move back to the **All Processes** and **MyAgile** process page. 
+	Here we choose the Bug WIT. The breadcrumb links allow you to move back to the **All Processes** and **MyAgile** process page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![All Processes-Process-WIT breadcrumb links](media/field/breadcrumbs-bug-wit.png) 
 
-	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+	If the **New field** and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 	
-1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
+2. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: **New field**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
 
-1. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](inheritance-process-model.md#field-reference). Optionally, add a Description.  
+3. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](inheritance-process-model.md#field-reference). Optionally, add a Description.  
 
 	> [!NOTE]   
 	> Once created, you can't change the field name or data type. 
@@ -63,20 +65,20 @@ You always add a field to an existing work item type.
 	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), and [Checkbox](customize-process-field.md#add-a-checkbox-field).  
 
 	<a id="options">  </a>  
-1.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
+4.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
 
 	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" />  
 
 	By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
 	<a id="layout">  </a>
-1.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form. 
+5.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form. 
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
 	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" />  
 
-1.	Choose **Add field** to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
+6.	Choose **Add field** to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 
 	> [!TIP]    
 	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields.  You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
@@ -102,7 +104,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
 	::: moniker-end
 
-1. The Create new project page opens. Fill out the form. 
+2. The Create new project page opens. Fill out the form. 
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]  
@@ -117,17 +119,17 @@ We recommend that you create a test project and apply your customized  inherited
 	> ![Create new project form](media/process/create-test-project.png) 
 	::: moniker-end
 
-1.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+3.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Work Items](../../../boards/work-items/media/view-add/open-work-items-agile.png)
 
-1. Select the WIT you customized. Here we choose **Bug**. 
+4. Select the WIT you customized. Here we choose **Bug**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](media/process/add-custom-field-verify-bug.png) 
 
-1.  Verify that the field you added appears on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
+5.  Verify that the field you added appears on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-bug-form.png) 
@@ -135,13 +137,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
-## Q & A
-
-### Q: Are there some fields that can't be used?
-
-**A:** Yes, the Steps control that is available on the Test Case work item type can't be used on a custom work item type.
-
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add a custom work item type](add-custom-wit.md) 
@@ -156,4 +152,3 @@ We recommend that you create a test project and apply your customized  inherited
 - [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field) 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)
-

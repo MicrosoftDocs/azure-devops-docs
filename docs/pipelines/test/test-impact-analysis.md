@@ -1,10 +1,10 @@
 ---
 title: Use Test Impact Analysis
-description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
+description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline.
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.topic: conceptual
 ms.custom: continuous-test, cross-service
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 ms.date: 12/07/2018
 monikerRange: '<= azure-devops'
@@ -14,39 +14,34 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Continuous Integration (CI) is a key practice in the industry. Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible. But, as the code base grows and matures, its regression test suite tends to grow as well - to the extent that running a full regression test might require hours. This testing slows down the frequency of integrations, and ultimately defeats the purpose of continuous integration.
 
-
-Continuous Integration (CI) is a key practice in the industry.
-Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
-However, as the codebase grows and matures, its regression test suite tends to grow as well - to the extent that running a full regression test might require hours.
-This slows down the frequency of integrations, and ultimately defeats the purpose of continuous integration.
-In order to have a CI pipeline that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline.
-However, this only serves to further defeat continuous integration.
+To have a CI pipeline that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline. But, this action only serves to further defeat continuous integration.
 
 Instead, [enable Test Impact Analysis (TIA)](#enabletia) when using the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2)
 task in a build pipeline. TIA performs incremental validation by automatic test selection.
-It will automatically select only the subset of tests required to validate the code being committed.
-For a given code commit entering the CI/CD pipeline, TIA will select and run only the relevant tests required to validate that commit.
-Therefore, that test run will complete more quickly, if there is a failure you will get to know about it sooner, and because it is all scoped by relevance, analysis will be faster as well.
+It automatically selects only the subset of tests required to validate the code being committed.
+For a given code commit entering the CI/CD pipeline, TIA selects and runs only the relevant tests required to validate that commit.
+Therefore, that test run completes more quickly, if there is a failure you get alerted sooner, and because it's all scoped by relevance, analysis is faster, too.
 
 ![Comparison of test times when using TIA](media/test-impact-analysis/tia-chart.png)
 
 Test Impact Analysis has:
 
 * **A robust test selection mechanism**. It includes existing impacted tests, previously failing tests, and newly added tests.
-* **Safe fallback**. For commits and scenarios that TIA cannot understand, it will fall back to running all tests. TIA is currently scoped to only managed code, and single machine topology. So, for example, if the code commit contains changes to HTML or CSS files, it cannot reason about them and will fall back to running all tests.
+* **Safe fallback**. For commits and scenarios that TIA can't understand, it falls back to running all tests. TIA is currently scoped to only managed code, and single machine topology. So, for example, if the code commit contains changes to HTML or CSS files, it can't reason about them and falls back to running all tests.
 * **Configurable overrides**. You can run all tests at a configured periodicity.
 
 However, be aware of the following caveats when using TIA with Visual Studio 2015:
 
-* **Running tests in parallel**. In this case, tests will run serially.
-* **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
+* **Running tests in parallel**. In this case, tests run serially.
+* **Running tests with code coverage enabled**. In this case, code coverage data doesn't get collected.
 
 
 
 ## Test Impact Analysis supported scenarios
 
-At present, TIA is supported for:
+ Test Impact Analysis (TIA) is supported for the following scenarios:
 
 * TFS 2017 Update 1 onwards, and Azure Pipelines
 * Version 2.* of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task in the build pipeline
@@ -60,7 +55,7 @@ At present, TIA is supported for:
 * Single machine topology. Tests and app (SUT) must be running on the same machine.
 * Managed code (any .NET Framework app, any .NET service)
 
-At present, TIA is **not** supported for:
+TIA is **not** supported for the following scenarios:
 
 * Multi-machine topology (where the test is exercising an app deployed to a different machine)
 * Data driven tests
@@ -76,12 +71,12 @@ At present, TIA is **not** supported for:
 
 TIA is supported through Version 2.* of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task.
 If your app is a single tier application, all you need to do is to check **Run only impacted tests** in the task UI.
-The Test Impact data collector is automatically configured. No additional steps are required.
+The Test Impact data collector is automatically configured. No further steps are required.
 
 ![Enable TIA in the VS Test task UI](media/test-impact-analysis/task-params.png)
 
 If your application interacts with a service in the context of IIS, you must also configure the Test Impact data collector to run in the context of IIS by using a **.runsettings** file.
-Here is a sample that creates this configuration:
+The following sample creates this configuration:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -123,12 +118,12 @@ TIA is integrated into existing test reporting at both the summary and details l
 You can influence the way that tests are either included or ignored during a test run:
 
 * **Through the VSTest task UI**. TIA can be conditioned to run all tests at a configured periodicity. Setting this option is recommended, and is the means to regulate test selection.
-* **By setting a build variable**. Even after TIA has been enabled in the VSTest task, it can be disabled for a specific build by setting the variable **DisableTestImpactAnalysis** to **true**. This override will force TIA to run all tests for that build. In subsequent builds, TIA will go back to optimized test selection.
+* **By setting a build variable**. Even after TIA is enabled in the VSTest task, you can disable it for a specific build by setting the variable **DisableTestImpactAnalysis** to **true**. This override forces TIA to run all tests for that build. In subsequent builds, TIA goes back to optimized test selection.
 
-When TIA opens a commit and sees an unknown file type, it falls back to running all tests. While this is good from a safety perspective, tuning this behavior might be useful in some cases. For example:
+When TIA opens a commit and sees an unknown file type, it falls back to running all tests. While this action is good from a safety perspective, tuning this behavior might be useful in some cases. For example:
 
-* Set the **TI\_IncludePathFilters** variable to specific paths to include only these paths in a repository for which you want TIA to apply. This is useful when teams use a shared repository. Setting this variable disables TIA for all other paths not included in the setting.
-* Set the **TIA\_IncludePathFilters** variable to specify file types that do not influence the outcome of tests and for which changes should be ignored. For example, to ignore changes to .csproj files set the variable to the value **!\*\*\\\*.csproj**.
+* Set the **TI\_IncludePathFilters** variable to specific paths to include only these paths in a repository for which you want TIA to apply. This action is useful when teams use a shared repository. Setting this variable disables TIA for all other paths not included in the setting.
+* Set the **TIA\_IncludePathFilters** variable to specify file types that don't influence the outcome of tests and for which changes should be ignored. For example, to ignore changes to.csproj files set the variable to the value: **`!\*\*\\\*.csproj`**.
 
 > Use the [minimatch pattern](../tasks/file-matching-patterns.md) when setting variables, and separate multiple items with a semicolon.
 
@@ -152,8 +147,8 @@ TestMethod2
   dependency3
 ```
 
-TIA can generate such a dependencies map for managed code execution.
-Where such dependencies reside in **.cs** and **.vb** files, TIA can automatically watch for commits into such files and then run tests that had these source files in their list of dependencies.
+TIA can generate a dependency map for managed code execution.
+Where such dependencies reside in **`.cs`** and **`.vb`** files, TIA can automatically watch for commits into such files and then run tests that had these source files in their list of dependencies.
 
 You can extend the scope of TIA by explicitly providing the dependencies map as an XML file.
 For example, you might want to support code in other languages such as JavaScript or C++,
