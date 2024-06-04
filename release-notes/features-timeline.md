@@ -242,7 +242,7 @@ These investments include:
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
@@ -254,17 +254,17 @@ These investments include:
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
          <td>Boards</td>
-         <td>2024 Q2</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item (preview)</a></td>
          <td>Boards</td>
          <td>2024 Q2</td>
          <td>Future</td>
-      </tr>
+      </tr>      
     </tbody>
 </table>
 
@@ -530,7 +530,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item (preview)</a></td>
+        <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
         <td>Boards</td>         
         <td>Future</td>
       </tr> 
@@ -540,7 +540,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>       
       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>        
