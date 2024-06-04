@@ -485,6 +485,10 @@
     {
       "source_path": "docs/migrate/migration-post-import.md",
       "redirect_url": "/azure/devops/migrate/migration-post-migration"
+    },
+    {
+      "source_path": "docs/extend/develop/use-control.md",
+      "redirect_url": "https://azdevinternal.azureedge.net/"
     }
   ]
 }
