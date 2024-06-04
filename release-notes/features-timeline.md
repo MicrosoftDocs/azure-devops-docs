@@ -324,7 +324,7 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="17"><strong>2024 Q2</strong></td>
+      <td rowspan="13"><strong>2024 Q2</strong></td>
        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
@@ -401,8 +401,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
-      <td rowspan="4"><strong>2024 Q3</strong></td>
-      <tr>
+      <td rowspan="2"><strong>2024 Q3</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
          <td>Pipelines</td>
          <td>Future</td>
@@ -412,7 +411,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
-      <td rowspan="22"><strong>Future</strong></td>
+      <td rowspan="21"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
