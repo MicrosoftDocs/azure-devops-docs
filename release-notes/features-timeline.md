@@ -225,9 +225,7 @@ These investments include:
 
 ### YAML and release pipelines feature parity
 
-Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we'll invest in bridging these gaps. 
-
-As a first step, we'll focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
+For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens?view=azure-devops&tabs=yaml#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We will continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
 
 <table>
     <thead>
@@ -275,6 +273,30 @@ As a first step, we'll focus on **checks**. Checks are the primary mechanism in 
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q1</td>
          <td>Future</td>
       </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/rerun-single-stage" data-raw-source="[Rerun single stage](/azure/devops/release-notes/roadmap/2024/rerun-single-stage)">Rerun single stage</a></td>
+         <td>Pipelines</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>Pipelines</td>
+         <td>2024 H2</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
+         <td>Pipelines</td>
+         <td>2024 H2</td>
+         <td>Future</td>
+      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
@@ -285,45 +307,6 @@ As a first step, we'll focus on **checks**. Checks are the primary mechanism in 
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
          <td>Pipelines</td>
          <td>Future</td>
-         <td>Future</td>
-      </tr>
-    </tbody>
-</table>
-
-Next, we'll focus on **deployment functionality**, to make it possible to have deployment strategies in YAML pipelines similar to the ones in classic release pipelines.
-
-<table>
-    <thead>
-        <tr>
-            <th>Feature</th>
-            <th>Area</th>
-            <th>Service</th>
-            <th>Server</th>
-        </tr>
-    </thead>
-    <tbody>
-       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/rerun-single-stage" data-raw-source="[Rerun single stage](/azure/devops/release-notes/roadmap/2024/rerun-single-stage)">Rerun single stage</a></td>
-         <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q1</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
-         <td>Pipelines</td>
-         <td>2024 Q2</td>
-         <td>Future</td>
-      </tr>
-           <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
-         <td>Pipelines</td>
-         <td>2024 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
-         <td>Pipelines</td>
-         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
     </tbody>
