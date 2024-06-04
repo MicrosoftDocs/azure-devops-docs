@@ -5,7 +5,7 @@ ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
