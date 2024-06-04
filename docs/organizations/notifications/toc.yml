@@ -56,9 +56,9 @@
   - name: Why are my emails delayed
     displayName: expected, notification, statistics, issue, filter, duplicate, subscription, volume
     href: troubleshoot-delayed-email.md
-  - name: Contacting support
+  - name: Get support
     displayName: developer, community, version, platform, event, ID
-    href: troubleshoot-contact-support.md
+    href: ../../user-guide/provide-feedback.md
 - name: Reference
   items:
   - name: Default permissions (Security)

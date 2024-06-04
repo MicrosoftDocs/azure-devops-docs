@@ -485,6 +485,10 @@
     {
       "source_path": "docs/migrate/migration-post-import.md",
       "redirect_url": "/azure/devops/migrate/migration-post-migration"
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
+      "redirect_url": "/azure/devops/user-guide/provide-feedback"
     }
   ]
 }
