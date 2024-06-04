@@ -18,7 +18,7 @@ This quickstart will guide you through setting up your Maven project to connect 
 
 - An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
 - [Install Apache Maven](https://maven.apache.org/download.cgi).
-- An Azure Artifacts feed. [Create a feed](./concepts/feeds.md#create-public-feeds) if you don't have one already.
+- An Azure Artifacts feed. [Create a feed](./concepts/feeds.md#create-a-public-feed) if you don't have one already.
 
 ## Set up authentication
 

@@ -20,7 +20,7 @@ In this article, you will learn how to connect to an Azure Artifacts feed and pu
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 
-- An Azure Artifacts feed. [Create a feed](../concepts/feeds.md#create-public-feeds) if you don't have one already.
+- An Azure Artifacts feed. [Create a feed](../concepts/feeds.md#create-a-public-feed) if you don't have one already.
 
 - Download and install [Gradle](https://docs.gradle.org/current/userguide/installation.html).
 
