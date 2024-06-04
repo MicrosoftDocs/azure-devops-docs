@@ -122,7 +122,7 @@ To access feeds pending permanent deletion, navigate to the feed picker dropdown
 
     :::image type="content" source="media/feed-settings-button.png" alt-text="A screenshot displaying the feed settings button for a feed pending permanent deletion.":::
 
-## Permanently deleting a feed
+## Permanently delete a feed
 
 A feed pending deletion will still use storage space. To permanently delete your feed before the 30-day period ends, follow these steps:
 
