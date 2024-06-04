@@ -8,7 +8,7 @@ ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/05/2023
+ms.date: 05/30/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -24,7 +24,7 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 
 ## Prerequisites
 
-* If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now.
+* If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
 * You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 > [!NOTE]
@@ -40,7 +40,7 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 
 3. Select **Billing**.
 
-    ![Screenshot showing highlighted Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
+   ![Screenshot showing highlighted Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
 
 4. Select **Set up billing**.
 
@@ -49,6 +49,18 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 5. Select your Azure subscription, and then select **Save**.
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
+
+   > [!TIP]
+   > If you can't see an Azure Subscription associated with a different tenant ID, it’s likely due to authentication issues. Here’s how you can address this situation:
+   e to authentication issues. Here’s how you can address this situation:
+   >**Tenant context:**
+   > - Your organization might be connected to 'Tenant A,' where your user account is registered.
+   > - But, the Azure subscription you’re trying to access is associated with 'Tenant B,' a different Microsoft Entra ID tenant.
+   >**Authentication steps:**
+   > - To access the subscription in 'Tenant B,' you must authenticate with that specific tenant.
+   > 1. Go to aex.dev.azure.com directly.
+   > 2. In the dropdown menu, select the desired Microsoft Entra ID tenant, 'Tenant B.'
+   > 3. Retry the operation, and you should see the subscription.
 
 Billing is set up for your Azure DevOps organization. You can [review your individual Azure subscription bill](/azure/cost-management-billing/understand/review-individual-bill) at any time.
 
@@ -62,4 +74,4 @@ Billing is set up for your Azure DevOps organization. You can [review your indiv
 * [Change your subscription for billing](change-azure-subscription.md)
 * [Add a user who can set up or change billing for Azure DevOps](add-backup-billing-managers.md)
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
-* [Learn about Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)
+* [Learn about cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)

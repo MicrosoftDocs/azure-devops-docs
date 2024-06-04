@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 11/02/2023
+ms.date: 05/15/2024
 ---
 
 # Change your organization's billing subscription
@@ -57,9 +57,9 @@ Azure DevOps bills the newly saved subscription for your organization.
 ## Remove your billing subscription 
 
 > [!IMPORTANT]
-> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the [free tier](billing-faq.yml) of service immediately.
->  
-> If you delete your organization resource in the Azure Portal, do so *after* you change the billing subscription in Azure DevOps and not before, to avoid your organization reverting to the free tier of service. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
+> - When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the [free tier](billing-faq.yml) of service immediately.
+> - If you delete your organization resource in the Azure Portal, do so *after* you change the billing subscription in Azure DevOps and not before, to avoid your organization reverting to the free tier of service. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
+> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. It's safe to delete these resource groups if empty. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
 
 1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing**, and then **Change billing**, following steps 1 through 4 provided in the [Change the subscription](#change-subscription) section.
 

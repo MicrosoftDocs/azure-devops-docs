@@ -190,9 +190,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 	![Authorize Microsoft](../../media/authorize-Microsoft-corp.png)
 
-	For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
-
-1. Choose **Continue**.
+2. Choose **Continue**.
 
    ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
@@ -204,7 +202,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 	You can change the organization name as indicated in [Change organization or project settings](#change-settings) later in this article.
 	
-1. To complete your sign-up process, go to [create a project](#create-project).  
+3. To complete your sign-up process, go to [create a project](#create-project).  
  
 <a id="create-project"></a>
 

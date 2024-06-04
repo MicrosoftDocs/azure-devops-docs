@@ -116,7 +116,7 @@ Using proven CI and CD practices to deploy application or infrastructure changes
 
 Consider Azure Pipelines and CI/CD processes for:
 
-- Accelerating application development and development lifecycles.
+- Accelerating application development and deployment lifecycles.
 - Building quality and consistency into an automated build and release process.
 - Increasing application stability and uptime.
 

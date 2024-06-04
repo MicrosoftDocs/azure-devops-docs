@@ -465,7 +465,7 @@ The fields you assign are used by the following tools:
 
 You can grant or restrict access to select features through permission settings. When you add user accounts to your team, they're automatically added to the Contributor group. They then have access to most of the features they'll need to contribute to code, work tracking, builds, and test. However, the Contributor group doesn't allow users to create shared queries or to add area or iteration paths. You have to grant these permissions separately.  
 
-For a simplified view of the most common, default permissions and access assignments, see [Permissions and access](../organizations/security/permissions-access.md). If you're new to managing permissions, see [Get started with permissions, access, and security groups, Permission inheritance and security groups](../organizations/security/about-permissions.md#inheritance).
+For a simplified view of the most common, default permissions and access assignments, see [Permissions and access](../organizations/security/permissions-access.md). If you're new to managing permissions, see [Get started with permissions, access, and security groups, Permission inheritance and security groups](../organizations/security/about-permissions.md#permission-inheritance).
 
 Otherwise, to grant or restrict access to select features, review one of these topics: 
  
@@ -486,7 +486,7 @@ Otherwise, to grant or restrict access to select features, review one of these t
       - [Work item query and folder permissions](../boards/queries/set-query-permissions.md)  
       - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)  
       - [Delivery Plan permissions](../organizations/security/set-permissions-access-work-tracking.md)  
-      - [Tagging permissions](../organizations/security/permissions.md#tags)  
+      - [Tagging permissions](../organizations/security/permissions.md)  
       - [Test permissions](../organizations/security/permissions.md#project_test)   
    :::column-end:::
    :::column span="1":::

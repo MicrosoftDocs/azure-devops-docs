@@ -77,7 +77,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#permission-inheritance).  
 
 6. Close the dialog when you're done.
 
@@ -115,7 +115,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#permission-inheritance).  
   
 ::: moniker-end
 

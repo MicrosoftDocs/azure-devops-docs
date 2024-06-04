@@ -192,7 +192,7 @@ Examples of restricted users include Stakeholders, Microsoft Entra guest users, 
 
 ::: moniker-end
 
-::: moniker range=" <= azure-devops"
+::: moniker range=" < azure-devops"
 
 Examples of restricted users include Stakeholders, or members of a security group. Once enabled, any user or group added to the Project-Scoped Users group gets restricted from accessing the Organization Settings pages, except for Overview and Projects. They're restricted to accessing only those projects to which they've been added. 
 
