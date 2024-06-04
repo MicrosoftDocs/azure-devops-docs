@@ -84,59 +84,43 @@ Public feeds are **project-scoped** and inherit the visibility settings of the h
 > [!NOTE]
 > All feed views in a public feed are accessible to everyone on the internet.
 
-## Create public feeds
+## Create a public feed
 
-Public feeds are project-scoped feeds in a public project.
+Public feeds are project-scoped feeds in a public project. Follow the instructions below to create a new public feed:
 
-1. Select **Artifacts**.
+1. Navigate to your Azure DevOps project. Make sure that your project is **Public** in order to create a public feed. Once there, select **Artifacts** > **Create Feed**.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing Artifacts in the Azure DevOps dashboard.":::
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
 
-1. Select **Create Feed**.
+1. Enter a **Name** for your feed, and then select **Project** for the feed's scope. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
-
-1. Give your feed a **Name**, and then select **Project** for your feed's scope.
-
-    :::image type="content" source="../media/new-public-feed.png" alt-text="Screenshot showing how to create a new public feed.":::
-
-1. Select **Create** when you are done.
-
-::: moniker range=">= azure-devops-2019"
+    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot that shows how to create a new public feed.":::
 
 ## Delete a feed
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Navigate to your Azure DevOps project, select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your feed's settings.
 
-    :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to access the feed's settings":::
+1. Select **Delete feed**, and then select **Delete** once more to confirm.
 
-1. Select **Delete feed**.
-
-1. Select **Delete** when you are ready.
-
-    :::image type="content" source="media/delete-warning.png" alt-text="A screenshot showing a warning message prior to deleting a feed":::
+    :::image type="content" source="media/delete-warning.png" alt-text="A screenshot displaying the warning message that appears before deleting a feed.":::
 
 ## Restore deleted feeds
 
-If you accidentally delete a feed, Azure Artifacts provides a 30 days window to recover your feed to its original state. After the 30 days, the feed will be deleted permanently. During the recovery window, the name of the feed remains reserved, packages are unavailable for download, and write access is suspended for that feed.
+If you accidentally delete a feed, Azure Artifacts offers a 30-days window to restore it to its original state. After this period, the feed will be permanently deleted. During the recovery window, the feed's name remains reserved, packages are unavailable for download, and write access is suspended.
 
-You can view the feeds that are pending permanent deletion in the feed picker dropdown list under the **Deleted Feeds** tab.
+To access feeds pending permanent deletion, navigate to the feed picker dropdown menu and select the **Deleted Feeds** tab.
 
-1. Select **Artifacts**.
+1. Navigate to your Azure DevOps project, and then select **Artifacts**.
 
-1. Select the feed picker dropdown menu, and then select **Deleted Feeds**
+1. Select the feed picker dropdown menu, and then select the **Deleted Feeds** tab.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Deleted feeds dropdown](media/deleted-feeds.png)
+    :::image type="content" source="media/deleted-feeds.png" alt-text="A screenshot that shows how to access feeds pending permanent deletion.":::
 
-1. Select the feed you want to restore, and then select **Feed Settings**.
+1. Select the feed you want to restore, and then select **Feed Settings**. Select **Restore Feed** when you're ready.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Feed settings button](media/feed-settings-button.png)
-
-1. Select **Restore Feed**.
+    :::image type="content" source="media/feed-settings-button.png" alt-text="A screenshot displaying the feed settings button for a feed pending permanent deletion.":::
 
 ## Permanently deleting a feed
 
