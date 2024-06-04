@@ -34,4 +34,4 @@ Poorly defined subscription filters or duplicate subscriptions might cause an un
 
 ## Contact customer support
 
-If you can't resolve the issue with the previously mentioned steps, consider contacting [customer support](troubleshoot-contact-support.md).
+If you can't resolve the issue with the previously mentioned steps, consider contacting [customer support](../../user-guide/provide-feedback.md).
