@@ -23,7 +23,7 @@ It helps improve the efficiency of your pipeline by identifying repetitive, high
 
 Read the [glossary](./test-glossary.md) to understand test reports terminology.
 
-## Install the Analytics extension if required
+## Install the Analytics extension if necessary
 
 For more information, see [The Analytics Marketplace extension](../../report/dashboards/analytics-extension.md).
 
@@ -47,7 +47,7 @@ As with build, the summary provides an aggregated view of the test pass rate and
 
 ![View trends in release](media/test-analytics/view-in-release.png)
 
-## Test Failures
+## Test failures
 
 Open a build or release summary to view the top failing tests report.
 This report provides a granular view of the top failing tests in the pipeline, along with the failure details. 
@@ -62,7 +62,7 @@ The detailed view contains two sections:
 
     ![View pass rate](media/test-analytics/pass-rate.png)
 
-  - Failing tests: Provides a distinct count of tests that failed during the specified period. In the example above, 986 test failures originated from 124 tests. 
+  - Failing tests: Provides a distinct count of tests that failed during the specified period. In the previous example, 986 test failures originated from 124 tests. 
 
     ![View failing tests](media/test-analytics/failing-tests.png)
 
@@ -70,7 +70,7 @@ The detailed view contains two sections:
 
     ![View chart](media/test-analytics/chart-view.png)
 
-* **Results**: List of top failed tests based on the total number of failures.  Helps to identify problematic tests and lets you drill into a detailed summary of results.
+* **Results**: List of top failed tests based on the total number of failures. Helps to identify problematic tests and lets you drill into a detailed summary of results.
 
   ![View results.](media/test-analytics/results-view.png)
 
@@ -78,7 +78,7 @@ The detailed view contains two sections:
 
 The report view can be organized in several different ways using the **group by** option.
 Grouping test results can provide deep insights into various aspects of the top failing tests.
-In the example below, the test results are grouped based on the [test files](test-glossary.md) they belong to.
+In the following example, the test results are grouped based on the [test files](test-glossary.md) they belong to.
 It shows the test files and their respective contribution towards the total of test failures, during the
 specified period to help you easily identify and prioritize your next steps. 
 Additionally, for each test file, it shows the tests that contribute to these failures.
@@ -87,9 +87,7 @@ Additionally, for each test file, it shows the tests that contribute to these fa
 
 ### Drill down to individual tests
 
-After you have identified one or more tests in the **Details** section, select the individual test you want to analyze.
-This provides a drill-down view of the selected test with a stacked chart of various outcomes such as passed or
-failed instances of the test, for each day in the specified period. 
+After you identify one or more tests in the **Details** section, select the individual test you want to analyze. This action provides a drill-down view of the selected test with a stacked chart of various outcomes such as passed or failed instances of the test, for each day in the specified period. 
 This view helps you infer hidden patterns and take actions accordingly. 
 
 ![Drill down for test](media/test-analytics/drill-down-test.png)
@@ -107,19 +105,19 @@ to see failure details in context.
 
 ### Infer hidden patterns
 
-When looking at the test failures for a single instance of execution, it is often difficult to infer any pattern.
-In the example below, the test failures occurred during a specific period, and knowing this can help narrow down the scope of investigation. 
+When looking at the test failures for a single instance of execution, it's often difficult to infer any pattern.
+In the following example, the test failures occurred during a specific period, which helps narrow down the scope of investigation. 
 
 ![Example of test failure pattern.](media/test-analytics/infer-pattern.png)
 
-Another example is tests that exhibit non-deterministic behavior (often referred to as [flaky tests](test-glossary.md)).
-Looking at an individual instance of test execution may not provide any meaningful insights into the behavior.
+Another example is tests that exhibit nondeterministic behavior (often referred to as [flaky tests](test-glossary.md)).
+Looking at an individual instance of test execution might not provide any meaningful insights into the behavior.
 However, observing test execution trends for a period can help infer hidden patterns, and help you resolve the failures.
 
 ## Report information source
 
 The source of information for test analytics is the set of [published test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) for
 the build or release pipeline.
-These result are accrued over a period of time, and form the basis of the rich insights that test analytics provides. 
+These results are accrued over a period of time, and form the basis of the rich insights that test analytics provides. 
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
-in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
+in order to measure pipeline quality, review traceability, troubleshoot failures, and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
 
 ::: moniker range=">= azure-devops-2019"
@@ -39,21 +39,20 @@ Published test results can be viewed in the **Tests** tab in a build or release 
 
 Test results can be surfaced in the **Tests** tab using one of the following options:
 
-* **Automatically  inferred  test  results**.  By default, your pipeline can automatically infer the test output for a few popular test runners.
-  This is done by parsing the error logs generated during the build operation and then checking for signatures of test failures.
+* **Automatically  inferred  test  results**. By default, your pipeline can automatically infer the test output for a few popular test runners. Parse the error logs generated during the build operation and then check for signatures of test failures.
   <a name="inferred_runners_list"></a>Currently, Azure DevOps supports the following languages and test runners for automatically inferring the test results: 
 
-  - JavaScript - Mocha,  Jest  and  Jasmine
+  - JavaScript - Mocha, Jest, and Jasmine
   - Python- Unittest
  
     > [!NOTE]
     > This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
     > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
-  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/customize-javascript.md#run-unit-tests)
-  - [Publishing fully-formed test reports for Python test runners](../ecosystems/customize-python.md#test)
+  - [Publishing fully formed test reports for JavaScript test runners](../ecosystems/customize-javascript.md#run-unit-tests)
+  - [Publishing fully formed test reports for Python test runners](../ecosystems/customize-python.md#test)
 
-* **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2)
+* **Test execution tasks**. Built-in test execution tasks, such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2)
   that automatically publish test results to the pipeline, or others such as [Ant](/azure/devops/pipelines/tasks/reference/ant-v1),
   [Maven](/azure/devops/pipelines/tasks/reference/maven-v3), [Gulp](/azure/devops/pipelines/tasks/reference/gulp-v1), [Grunt](/azure/devops/pipelines/tasks/reference/grunt-v0), and
   [Xcode](/azure/devops/pipelines/tasks/reference/xcode-v5) that provide this capability as an option within the task.  
@@ -66,7 +65,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
 ## Surface test information beyond the Tests tab
 
 The **Tests** tab provides a detailed summary of the test execution.
-This is helpful in tracking the quality of the pipeline, as well as for troubleshooting failures.
+This is helpful in tracking the quality of the pipeline, and for troubleshooting failures.
 Azure DevOps also provides other ways to surface the test information: 
 
 * The [Dashboard](../../report/dashboards/dashboards.md) provides visibility of your team's progress.
@@ -94,7 +93,7 @@ test results as a measure of **pass percentage** along with indicators for **fai
 
 ## View test results in release
 
-In the pipeline view you can see all the stages and associated tests.
+In the pipeline view, you can see all the stages and associated tests.
 The view provides a summary of the test results as a measure of **pass percentage** along with indicators for
 **failures** and **aborts** if these exist. These indicators are same as in the build timeline view, giving
 a consistent experience across build and release.
@@ -134,7 +133,7 @@ The following capabilities of the **Tests** tab help to improve productivity and
 ### Filter large test results
 
 Over time, tests accrue and, for large applications, can easily grow to tens of thousands of tests.
-For these applications with very many tests, it can be hard to navigate through the results to identify test failures,
+For these applications with many tests, it can be hard to navigate through the results to identify test failures,
 associate root causes, or get ownership of issues. Filters make it easy to quickly navigate to the test results of your interest.
 You can filter on **Test Name**, **Outcome** (failed, passed, and more), **Test Files** (files holding tests) and **Owner** (for test files).
 All of the filter criteria are cumulative in nature.
@@ -148,7 +147,7 @@ you can organize the **Results** view exactly as you require.
 
 ### Test debt management with bugs
 
-To manage your test debt for failing or long running tests you can create a bug or add data to existing bug and all view all associated work items in the work item tab. 
+To manage your test debt for failing or long running tests, you can create a bug or add data to existing bug and all view all associated work items in the work item tab. 
 
 ### Immersive troubleshooting experience
 
@@ -173,10 +172,9 @@ You can create or add to an existing bug to manage test debt for failures or lon
 ### Test trends with historical data
 
 History of test execution can provide meaningful insights into reliability or performance of tests.
-When troubleshooting a failure, it is valuable to know how a test has performed in the past.
+When troubleshooting a failure, it's valuable to know how a test has performed in the past.
 The **Tests** tab provides test history in context with the test results.
-The test history information is exposed in a progressive manner starting with the current build pipeline to other branches,
-or the current stage to other stages, for build and release respectively.
+The test history information is exposed in a progressive manner, starting with the current build pipeline to other branches, or the current stage to other stages, for build and release respectively.
 
 ![View historical trends](media/review-continuous-test-results-after-build/view-historical-trend.png)
 
@@ -185,8 +183,8 @@ or the current stage to other stages, for build and release respectively.
 ### View execution of in-progress tests
 
 Tests, such as integration and functional tests, can run for a long time.
-Therefore, it is important to see the current or near real-time status of test execution at any given time.
-Even for cases where tests run quickly, it's useful to know the status of the relevant test result(s) as early as possible;
+Therefore, it's important to see the current or near real-time status of test execution at any given time.
+Even for cases where tests run quickly, it's useful to know the status of the relevant test results as early as possible;
 especially when failures occur. The **in-progress** view eliminates the need to wait for test execution to finish.
 Results are available in near real-time as execution progresses, helping you to take actions faster.
 You can debug a failure, file a bug, or abort the pipeline. 
@@ -198,8 +196,8 @@ You can debug a failure, file a bug, or abort the pipeline.
 > [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task in a Multi Agent job. 
 > It will be available for Single Agent jobs in a future release.
 
-The view below shows the **in-progress** test summary in a release, reporting the total test count and the number of test failures
-at a given point in time. The test failures are available for troubleshooting, creating bug(s), or to take any other appropriate action. 
+The following example shows the **in-progress** test summary in a release, reporting the total test count and the number of test failures
+at a given point in time. The test failures are available for troubleshooting, creating bugs, or to take any other appropriate action. 
 
 ![In progress summary view](media/review-continuous-test-results-after-build/inprogress-summary-view.png)
 
@@ -217,15 +215,15 @@ As these tests are related, they must be reported together with the overall outc
 These test results are reported as a summarized test result in the **Tests** tab:
 
 * **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task.
-  During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the non-deterministic behavior of the test.
+  During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the nondeterministic behavior of the test.
   Test reports provide a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
-  Additionally the [Test Management API(s)](/rest/api/azure/devops/test/results/list)
+  The [Test Management APIs](/rest/api/azure/devops/test/results/list)
   now support the ability to publish and query summarized test results.
 
   ![Rerun failed tests](media/review-continuous-test-results-after-build/rerun-failed-test.png)
 
 * **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test in a summarized view.
-  The summarized view is also available for ordered tests (**.orderedtest** in Visual Studio).
+  The summarized view is also available for ordered tests (**`.orderedtest`** in Visual Studio).
 
   ![Data driven test](media/review-continuous-test-results-after-build/data-driven-test.png)
 
@@ -238,7 +236,7 @@ These test results are reported as a summarized test result in the **Tests** tab
 ### View aborted tests
 
 Test execution can abort due to several reasons such as bad test code, errors in the source under test, or environmental issues.
-Irrespective of the reason for the abort, it is important to be able to diagnose the behavior and identify the root cause.
+Irrespective of the reason for the abort, it's important to be able to diagnose the behavior and identify the root cause.
 The aborted tests and test runs can be viewed alongside the completed runs in the **Tests** tab. 
 
 ![View stopped tests.](media/review-continuous-test-results-after-build/aborted-test-run.png)
@@ -262,8 +260,8 @@ started using Test Reporting.
 
 See the [list of runners for which test results are automatically inferred](#inferred_runners_list).
 
-As only limited test metadata is present in such inferred reports, they are limited in features and capabilities.
-The following features are not available for inferred test reports:
+As only limited test metadata is present in such inferred reports, they're limited in features and capabilities.
+The following features aren't available for inferred test reports:
 
 * Group the test results by test file, owner, priority, and other fields
 * Search and filter the test results

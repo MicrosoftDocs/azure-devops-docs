@@ -19,28 +19,17 @@ ms.date: 08/03/2022
 3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Process button for selection.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
+	> ![Screenshot showing highlighted Process button for selection.](../work/media/process/open-process-page-s150.png) 
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops"
+::: moniker range="< azure-devops"
 
 1. Sign in to your collection (```https://dev.azure.com/{Your_Collection}```).
-2. Select **Collection Settings**.
+2. Select **Collection Settings** or **Admin settings**.
 3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing highlighted Process button in Collection settings.](../work/media/process/open-process-2020.png) 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your collection..
-2. Select **Admin settings**.  
-3. Select **Process**. 
-   
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing highlighted Process button in Admin settings.](../work/media/process/open-process-page-2019.png)
 
 ::: moniker-end

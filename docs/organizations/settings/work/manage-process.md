@@ -47,7 +47,7 @@ Do the following steps to create an inherited process that you can customize. Th
 	In the following example, we create an inherited process from the Agile system process.
 
 	> [!div class="mx-imgBorder"]  
-	:::image type="content" source="media/process/create-inherited-process-menu-agile.png" alt-text="Screenshot of Context menu, Choose Create inherited process, Azure DevOps..":::
+	:::image type="content" source="media/process/create-inherited-process-menu-agile.png" alt-text="Screenshot of Context menu, Choose Create inherited process, Azure DevOps.":::
 
    If you don't have access to these options, ask a member of your **Project Collection Administrators** group to grant you permissions. To find a member, see [Look up a Project Collection Administrator](../../security/look-up-project-collection-administrators.md).
 
@@ -69,7 +69,6 @@ Do the following steps to create an inherited process that you can customize. Th
 
 	> [!IMPORTANT]  
 	> If you don't have the **Create inherited process** menu option, then the collection you selected is set to work with the on-premises XML process model. For more information, see [On-premises XML process model](../../../reference/customize-work.md).
-	::: moniker-end 
 
 Inherited child processes automatically update, based on their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
@@ -84,7 +83,7 @@ After you define the inherited process, you can do the following tasks:
 
 ## Change a project's process
 
-You can change a project’s process from one inherited process to another. There are there following two methods for doing so:
+You can change a project’s process from one inherited process to another with the following methods:
 
 - **Switch within the same base process:** Move a project between processes that share the same base, such as Agile or Scrum.
 - **Migrate to a different process model:** Change the project’s process model, for instance, from Agile to Scrum or Basic to Agile.
@@ -146,7 +145,7 @@ We provide detailed steps for the second method, covering the following common s
 
 ## Copy a process
 
-Before you implement customization across your organization, it's essential to test them by doing the following steps.  
+Before you implement customizations across your organization, it's essential to test them by doing the following steps.  
  
 > [!TIP]
 > If you modify a process used by multiple projects, each project immediately reflects the incremental process change. To bundle process changes before rolling them out to all projects, do the following steps.
