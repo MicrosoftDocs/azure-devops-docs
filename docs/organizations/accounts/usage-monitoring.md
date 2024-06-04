@@ -6,7 +6,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/09/2021
+ms.date: 01/09/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can investigate the usage of your users in Azure DevOps Services. Usage monitoring is important to identify causes for bandwidth bottlenecks, that aren't caused by faulty systems. See the following most common commands or operations that might trigger a usage message.
+You can investigate the usage of your users in Azure DevOps Services for the previous 28 days. Usage monitoring is important to identify causes for bandwidth bottlenecks, that aren't caused by faulty systems. See the following most common commands or operations that might trigger a usage message.
 
 - Requests that were delayed
 - Requests that exceeded thresholds
@@ -37,6 +37,9 @@ To avoid issues, you may need to rewrite tools or update build processes. This a
 - Other columns highlight total TSTUs and delay time.
 
 For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
+
+> [!NOTE]
+> To view usage from an audit perspective, see [Access, export, and filter audit logs](../../organizations/audit/azure-devops-auditing.md). This view does't include TSTUs, but does have 90s of retention.
 
 ## View usage
 
@@ -86,3 +89,4 @@ For more information, see [Rate and usage limits](../../integrate/concepts/rate-
 - [Access, export, and filter Azure DevOps audit logs](../audit/azure-devops-auditing.md)
 - [About Settings at the user, team, project, and organizational level](../settings/about-settings.md)
 - [Get list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+

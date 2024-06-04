@@ -21,7 +21,7 @@ Whether your software project is large, small, or brand new, it's best to use ve
 
 - If you want to work in a distributed version control system, you can instead use [Git with Azure Repos](../../repos/git/share-your-code-in-git-vs.md).
 
-- If you have code you want to migrate into Azure DevOps Services, see [Migration options](../../migrate/migrate-from-tfs.md).
+- If you have code you want to migrate into Azure DevOps Services, see the [Migration overview](../../migrate/migration-overview.md).
 
 ## Prerequisites
 
@@ -141,4 +141,4 @@ Your whole team can work on the code now. All changes are tracked in version con
 ## Next steps
 
 - [Get your code reviewed](get-code-reviewed-vs.md)
-- [Migrate from Azure DevOps Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md)
+- [Learn about migrating from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md)

@@ -49,7 +49,7 @@ Although Azure DevOps Services is a hosted version of Azure DevOps Server, there
 - [Reporting](#reporting)
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
-If you're using Azure DevOps Server and considering a move to Azure DevOps Services, understand your  [migration options](../migrate/migrate-from-tfs.md).
+If you're using Azure DevOps Server and considering a move to Azure DevOps Services, see the [Migration overview](../migrate/migration-overview.md).
 
 ## Scope and scale data 
 

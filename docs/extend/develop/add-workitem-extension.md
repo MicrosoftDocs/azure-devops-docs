@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/22/2016
+ms.date: 05/08/2024
 ---
 
 # Extend the work item form
@@ -54,9 +54,9 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 | Property     | Description           |
 |--------------|-----------------------|
-| ```name```         | Text that appears on the group   |
-| ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts
-| ```height```       | (Optional) Defines the height of the group. When omitted, it's 100%
+| ```name```         | Text that appears on the group.   |
+| ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts.
+| ```height```       | (Optional) Defines the height of the group. When omitted, it's 100%.
 
 ###  JavaScript sample
 
@@ -232,7 +232,7 @@ To add an observer to the work item, which listens to the work item events, add 
 
 | Property     | Description           |
 |--------------|-----------------------|
-| uri          | URI to a page that hosts the scripts listening to events |
+| uri          | URI to a page that hosts the scripts listening to events. |
 
 [!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
@@ -295,3 +295,22 @@ To add an observer to the work item, which listens to the work item events, add 
 </body>
 </html>    
 ```
+
+## Changes with New Boards Hub
+
+> [!NOTE]
+> New Boards Hub is currently in preview but is on track be available for everyone in 2024. We strongly suggest that you immediately enable New Boards Hub and test your internal extensions.
+
+### Use the latests SDK's
+
+Make sure your extension is using the latest version of [azure-devops-extension-sdk](https://www.npmjs.com/package/azure-devops-extension-sdk)
+
+When using the new SDK, you should also be using the [azure-devops-extension-api](https://www.npmjs.com/package/azure-devops-extension-api) package for REST APIs. We update the methods and interfaces every sprint to ensure it includes all of the latest features.
+
+### When to use action or action-provider
+
+Use `ms.vss-web.action-provider` when dynamically loading menu items using ``getMenuItems`` on the menu handler. Avoid using `ms.vss-web.action-provider` when your menu items are static and defined in your manifest. Instead `ms.vss-web.action` should be used .
+
+### Package require("VSS/Events/Document") is no longer supported
+
+``require("VSS/Events/Document")`` import is no longer supported with New Boards Hub.

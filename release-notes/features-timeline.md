@@ -179,7 +179,7 @@ These investments include:
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available)">Add link to GitHub commit or pull request from work item</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
@@ -189,37 +189,19 @@ These investments include:
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item (preview)</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
+         <td>Future</td>
       </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
-         <td>Future</td>
-      </tr>
-        <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request (preview)](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
-         <td>Boards</td>
-         <td>2024 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a></td>
-         <td>Boards</td>
-         <td>2025 H1</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status" data-raw-source="[Show status of GitHub Actions work flow run](/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status)">Show status of GitHub Actions work flow run</a></td>
-         <td>Boards</td>
-         <td>2025 H1</td>
-         <td>Future</td>
-      </tr>
     </tbody>
 </table>
 
@@ -332,13 +314,11 @@ For the past several years, all our pipelines investments have been in the area 
         <td>N/A</td>
       </tr>     
       <tr>
-         <td>
-            <a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project (preview)</a>
-         </td>
-         <td>Boards</td>         
-         <td>Future</td>
-      </tr>
-       <tr>
+        <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
+        <td>Boards</td>         
+        <td>Future</td>
+      </tr> 
+      <tr>
          <td>
             <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request (preview)](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request (preview)</a>
          </td>
@@ -350,9 +330,13 @@ For the past several years, all our pipelines investments have been in the area 
             <a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a>
          </td>
          <td>Boards</td>        
-         <td>Future</td>
-      </tr>
-      <tr>
+      </tr> 
+       <tr>
+        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+       </tr>
+       <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-area-path" data-raw-source="[Prevent the deletion of an active area or iteration path](/azure/devops/release-notes/roadmap/2024/boards-delete-area-path)">Prevent the deletion of an active area or iteration path</a>
          </td>
