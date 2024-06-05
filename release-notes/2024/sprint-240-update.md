@@ -1,39 +1,38 @@
 ---
-title: View third-party providers code scan results in Azure DevOps
+title: TBD
 author: ckanyika
 ms.author: ckanyika
 ms.date: 6/11/2024
-description: View third-party providers code scan results in Azure DevOps
+description: TBD
 ---
-# View third-party providers code scan results in Azure DevOps
+# TBD
 
-As we continue our integration with GitHub Advanced Security, we are excited to announce that you can now leverage the publish task (AdvancedSecurity-Publish@1) to import security results from third-party providers into the Advanced Security Code Scanning alerts hub! 
 
-Check out the release notes for details.
+### Azure Boards
 
-### General
-
-[!INCLUDE [sprint-240-update-links](includes/general/sprint-240-update-links.md)]
-
-### GitHub Advanced Security for Azure DevOps
-
-[!INCLUDE [sprint-240-update-links](includes/ghazdo/sprint-240-update-links.md)]
+[!INCLUDE [sprint-240-update-links](includes/boards/sprint-240-update-links.md)]
 
 ### Azure Pipelines
 
 [!INCLUDE [sprint-240-update-links](includes/pipelines/sprint-240-update-links.md)]
 
-## General
+### Azure Repos
 
-[!INCLUDE [sprint-240-update](includes/general/sprint-240-update.md)]
+[!INCLUDE [sprint-240-update-links](includes/repos/sprint-240-update-links.md)]
 
-## GitHub Advanced Security for Azure DevOps
+## Azure Boards
 
-[!INCLUDE [sprint-240-update](includes/ghazdo/sprint-240-update.md)]
+[!INCLUDE [sprint-240-update](includes/boards/sprint-240-update.md)]
 
 ## Azure Pipelines
 
 [!INCLUDE [sprint-240-update](includes/pipelines/sprint-240-update.md)]
+
+## Azure Repos
+
+[!INCLUDE [sprint-240-update](includes/repos/sprint-240-update.md)]
+
+
 
 ## Next steps
 
@@ -56,4 +55,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Silviu Andrica
+Dan Hellem
