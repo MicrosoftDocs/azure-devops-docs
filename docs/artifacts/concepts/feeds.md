@@ -1,5 +1,5 @@
 ---
-title: What Are Azure Artifacts Feeds?
+title: What are Azure Artifacts feeds?
 description: Understand the differences between project-scoped and organization-scoped Azure Artifacts feeds. Learn the steps to create, delete, and restore feeds. 
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.service: azure-devops-artifacts
@@ -8,11 +8,11 @@ ms.date: 06/03/2024
 monikerRange: '<= azure-devops'
 ---
 
-# What Are Azure Artifacts Feeds?
+# What are Azure Artifacts feeds?
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts Feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. Feeds are not limited to specific package types; you can store various types, such as npm, NuGet, Maven, and Python packages, in a single feed.
+Azure Artifacts feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. Feeds are not limited to specific package types; you can store various types, such as npm, NuGet, Maven, and Python packages, in a single feed.
 
 ## Project-scoped vs Organization-scoped feeds
 
@@ -73,7 +73,7 @@ Follow the instructions below and choose the appropriate scope to create a new p
 
 ## Public feeds
 
-Public feeds allow you to share your packages publicly with anyone on the internet. Users do not need to be members of your organization, nor do they need an Azure DevOps account to access the packages.
+Public feeds allow you to share your packages publicly with anyone on the internet. Users do not need to be members of your organization, nor do they need to log in to the Azure DevOps portal to access the packages.
 
 Public feeds are **project-scoped** and inherit the visibility settings of the hosting project. Here are some important points to note about public feeds:
 
