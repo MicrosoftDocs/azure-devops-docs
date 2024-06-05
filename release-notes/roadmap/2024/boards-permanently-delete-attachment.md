@@ -14,6 +14,8 @@ hide_comments: true
 
 The ability to permanently delete work item attachments so they cannot be accessed from a work item link, history, direct link, or any other means.
 
-## Scenerio
+We will initially release a delete REST API endpoint. Then adding the feature to the UI in a later sprint.
+
+### Scenerio
 
 User uploads a malicious attachment to a work item. The link to that attachment is shared via email, chat, or work item discussion. The attachment is deleted from the work item, but the link is still accessible. That attachment needs to be permanently deleted so it cannot be accessed from any means.

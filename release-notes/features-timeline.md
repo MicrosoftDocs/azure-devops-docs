@@ -344,7 +344,7 @@ For the past several years, all our pipelines investments have been in the area 
        </tr>
        <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-area-path" data-raw-source="[Prevent the deletion of an active area or iteration path](/azure/devops/release-notes/roadmap/2024/boards-delete-area-path)">Prevent the deletion of an active area or iteration path</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-area-path" data-raw-source="[Prevent deleting of an active area or iteration path](/azure/devops/release-notes/roadmap/2024/boards-delete-area-path)">Prevent deleting of an active area or iteration path</a>
          </td>
          <td>Boards</td>        
          <td>Future</td>
