@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 06/03/2024
+ms.date: 06/05/2024
 ---
 
 # Customize your work tracking experience 
@@ -20,7 +20,7 @@ As you plan and track your project, consider configuring a feature or customizin
 
 This article gives you an overview of the customizations available and how they vary across the three process models. For specific guidance on customizations to support business decisions, [Configure and customize Azure Boards](../boards/configure-customize.md). For more information, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md) and [About work items](../boards/work-items/about-work-items.md). 
 
-You can customize at the following levels:   
+You can customize at the following levels of work tracking:   
 
 ::: moniker range="azure-devops"
 - **[Project-level shared resources](#project-level-shared-resources)**: Define area and iteration paths which teams select to configure their backlogs and boards. Shared queries and work item tags are more objects that once defined can be shared across the project.  
@@ -451,6 +451,8 @@ The fields you assign are used by the following tools:
 <a id="access-permissions"></a>
 
 ## Manage access to work tracking tools  
+
+Manage access to specific features through permission settings. When you add user accounts to your team, they're automatically added to the Contributor group. They then have access to most of the features they'll need to contribute to code, work tracking, builds, and test. However, the Contributor group doesn't allow users to create shared queries or to add area or iteration paths. You have to grant these permissions separately.  
 
 You can manage access with the following permission settings:
 - When you add user accounts to your team, they’re automatically added to the **Contributor** group.

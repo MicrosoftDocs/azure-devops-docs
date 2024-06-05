@@ -138,7 +138,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 
 
-For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
+For more information, see [Manage access to specific features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
 
 <a id="refresh-permissions"></a>
 

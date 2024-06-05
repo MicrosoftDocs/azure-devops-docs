@@ -22,7 +22,7 @@ For an overview of default permissions, see [Default permissions quick reference
 
 ## Access levels 
 
-All users added to Azure DevOps are assigned an *access level*, which grants or restricts access to select web portal features.  
+All users added to Azure DevOps are assigned an *access level*, which grants or restricts access to specific web portal features.  
 
 There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Stakeholder access provides free access to an unlimited number of users to a limited set of features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
@@ -307,7 +307,7 @@ Members of the Project Administrators or Project Collection Administrators group
 
 ## Preview features 
  
-Feature flags control access to select, new features. Periodically, Azure DevOps introduces new features by placing them behind a feature flag. Project members and organization owners can enable or disable preview features. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
+Feature flags control access to specific, new features. Periodically, Azure DevOps introduces new features by placing them behind a feature flag. Project members and organization owners can enable or disable preview features. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 ## Next steps
 

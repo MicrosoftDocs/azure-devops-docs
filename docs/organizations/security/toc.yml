@@ -117,7 +117,7 @@
   - name: Set object-level permissions
     displayName: artifacts, boards, repos, projects, area, iteration, path, work items, access
     href: set-object-level-permissions.md
-  - name: Grant or restrict permissions to select tasks
+  - name: Manage permissions for specific tasks
     displayName: give, revoke, access, users
     href: restrict-access.md
   - name: Set dashboard permissions

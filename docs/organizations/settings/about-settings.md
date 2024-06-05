@@ -750,7 +750,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Look up the organization owner](../security/look-up-organization-owner.md)
       - [Look up a project collection administrator ](../security/look-up-project-collection-administrators.md)
       - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md) 
+      - [Manage access to specific features](../security/restrict-access.md) 
    :::column-end:::
    :::column span="2":::
       For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).

@@ -82,7 +82,7 @@ If your organization requires more than five contributors, then you need to set 
 
 ## Manage security and permissions
 
-Permissions and security groups control access to select tasks.  
+Permissions and security groups control access to specific tasks.  
 
 [!INCLUDE [collection-level-permissions](../organizations/security/includes/collection-level-permissions.md)]
 

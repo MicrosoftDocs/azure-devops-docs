@@ -20,7 +20,7 @@ Learn about managing permissions for your wiki. By default, all members of the C
 
 ## Manage wiki permissions
 
-All contributors to a project have access to "read" and “edit” the wiki repository by default. You can manage the wiki repository permissions to grant or restrict access for reading and editing wiki pages. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+All contributors to a project have access to "read" and “edit” the wiki repository by default. You can manage the wiki repository permissions to manage access for reading and editing wiki pages. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 To open the Security dialog, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** > **Wiki security**.
 
