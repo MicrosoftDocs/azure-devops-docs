@@ -23,7 +23,7 @@ For more information, see the following articles:
   - [Add users & manage access](../accounts/add-organization-users.md)  
   - [Add users or groups to a team or project](add-users-team-project.md)  
   - [Remove user accounts](/azure/active-directory/add-users-azure-active-directory#delete-a-user) 
-  - [Grant or restrict access using permissions](restrict-access.md)
+  - [Manage access using permissions](restrict-access.md)
   - [Change project-level permissions](../security/change-project-level-permissions.md)
   - [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)
 

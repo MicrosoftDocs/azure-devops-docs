@@ -251,7 +251,7 @@ ID                                    Display Name         Email                
 To limit select users access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they haven't been added to.
 
 > [!NOTE]
-> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to specific identities through the people picker. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 Complete the following steps to add users to the new **Project-Scoped Users** group:
 
@@ -306,7 +306,7 @@ After you add members to your project, each member gets an invitation email that
 
 #### Q: How is *access* different from *permissions*?
 
-**A:** Access levels control user access to select web portal features, based on the user's subscription. Permissions control a user's access to select operations, based on security group membership or specific Access Control Level (ACL) assignments made to a specific user or group.
+**A:** Access levels control user access to specific web portal features, based on the user's subscription. Permissions control a user's access to specific operations, based on security group membership or specific Access Control Level (ACL) assignments made to a specific user or group.
 
 ## Next steps
 
@@ -317,6 +317,6 @@ After you add members to your project, each member gets an invitation email that
 
 * [Create a project](../projects/create-project.md)
 * [Invite external users](add-external-user.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+* [Manage access to specific features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
 * [Export a list of users and their access levels](../security/export-users-audit-log.md)

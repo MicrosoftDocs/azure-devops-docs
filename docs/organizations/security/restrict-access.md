@@ -1,7 +1,7 @@
 ---
-title: Grant or restrict access to select features
+title: Manage access to specific features
 titleSuffix: Azure DevOps 
-description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions.  
+description: How to set permissions to grant or restrict access to specific build, version control, or work tracking functions.  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: overview
 ms.subservice: azure-devops-security
@@ -11,11 +11,11 @@ monikerRange: '<= azure-devops'
 ms.date: 03/23/2023 
 --- 
 
-# Grant or restrict access using permissions
+# Manage access using permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can grant or restrict access to resources that you manage in Azure DevOps. You might want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you might need more security requirements not met by these assignments.
+Manage access to specific resources in Azure DevOps. You might want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you might need more security requirements not met by these assignments.
 
 If you're new to administrating permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md) to learn about permission states and inheritance.
 

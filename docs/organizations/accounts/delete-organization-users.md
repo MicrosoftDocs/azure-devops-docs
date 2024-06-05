@@ -142,6 +142,6 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 - [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)  
 - [Request an increase in permission levels](../../organizations/security/request-changes-permissions.md)
-- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+- [Manage access to specific features and functions](../../organizations/security/restrict-access.md)
 - [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.yml)
 - [Export a list of users and their access levels](../security/export-users-audit-log.md)
