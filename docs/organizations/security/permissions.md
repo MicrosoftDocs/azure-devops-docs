@@ -2213,7 +2213,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
 
 ## Area path (object-level) 
 
-Area path permissions grant or restrict access to branches of the area hierarchy and to the work items in those areas. Manage the security of each area path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#area). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+Area path permissions manage access to branches of the area hierarchy and to the work items in those areas. Manage the security of each area path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#area). Area permissions manage access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -2334,7 +2334,7 @@ Members of the Project Administrators group are automatically granted permission
 
 ## Iteration path (object-level) 
 
-Iteration path permissions grant or restrict access to create and manage iteration paths, also referred to as sprints.
+Iteration path permissions manage access to create and manage iteration paths, also referred to as sprints.
 
 Manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#iteration-permissions). 
 

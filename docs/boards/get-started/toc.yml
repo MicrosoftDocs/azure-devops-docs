@@ -16,6 +16,6 @@
   - name: Set work tracking & plan permissions
     displayName: work item tags, roles, object-level, project-level, permissions
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
-  - name: Manage permissions for select tasks
+  - name: Manage permissions for specific tasks
     displayName: restrict access, visibility, closed work
     href: ../../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json

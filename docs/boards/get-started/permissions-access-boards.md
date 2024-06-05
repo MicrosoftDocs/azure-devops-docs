@@ -78,7 +78,7 @@ Stakeholder access supports business owners. It also supports analysts and other
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+- [Manage access to specific features and functions](../../organizations/security/restrict-access.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
 

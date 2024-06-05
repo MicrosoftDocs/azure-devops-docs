@@ -1,7 +1,7 @@
 ---
 title: Set TFVC repository permissions
 titleSuffix: Azure Repos
-description: Follow steps to grant or restrict access to a Team Foundation Version Control (TFVC) repository feature or function.
+description: Follow steps to manage access to a Team Foundation Version Control (TFVC) repository feature or function.
 ms.assetid:  
 ms.service: azure-devops-repos
 ms.topic: quickstart
@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can grant or restrict access to a Team Foundation Version Control (TFVC) repository to lock down who can contribute to your source code. There's only one TFVC repository per project. For guidance on who to give greater permission levels, see [Grant or restrict access using permissions](../../organizations/security/restrict-access.md).
+You can manage access to a Team Foundation Version Control (TFVC) repository to lock down who can contribute to your source code. There's only one TFVC repository per project. For guidance on who to give greater permission levels, see [Manage access using permissions](../../organizations/security/restrict-access.md).
 
 ## Prerequisites
 
@@ -107,7 +107,7 @@ To set the permissions for the TFVC repository for a project:
 
 ## Related articles
 
-- [Grant or restrict access using permissions](../../organizations/security/restrict-access.md)
+- [Manage access using permissions](../../organizations/security/restrict-access.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)  
 - [Permission command](permission-command.md)

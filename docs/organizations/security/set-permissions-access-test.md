@@ -21,7 +21,7 @@ To exercise the full features of Azure Test Plans, you must be granted [Basic + 
 - [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
 
-In addition, you can grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project. Many test artifacts correspond to test-specific work item types. So, work-tracking permissions apply to test-specific work items, such as test plans, test suites, test cases and more. You set permissions for work items and manual testing features   for area paths and at the project-level. You set permissions to manage test controllers at the organization or collection level. Test controllers are used in performing load tests.   
+In addition, you can manage access to various manual test features by granting users or groups specific permissions for an object or project. Many test artifacts correspond to test-specific work item types. So, work-tracking permissions apply to test-specific work items, such as test plans, test suites, test cases and more. You set permissions for work items and manual testing features   for area paths and at the project-level. You set permissions to manage test controllers at the organization or collection level. Test controllers are used in performing load tests.   
 
 - **Object-level, Area path level**  
 	- **Edit work items in this node**: Add or edit test-specific work items, such as test plans, test suites, test cases, shared steps, or shared parameters. 
@@ -80,7 +80,7 @@ To have full access to the Test feature set, your [access level must be set to B
 
 ## Manage test plans and test suites under an area path 
 
-Area path permissions let you grant or restrict access to edit or modify test plans or test suites assigned to those areas. You can restrict access to users or groups.  
+Area path permissions let you manage access to edit or modify test plans or test suites assigned to those areas. You can restrict access to users or groups.  
 
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts, which are set for an area path. 
 
@@ -146,7 +146,7 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 ## Related articles 
 
-- [Grant or restrict access](restrict-access.md)   
+- [Manage access](restrict-access.md)   
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
