@@ -4,7 +4,7 @@ description: Link requirements, tests, and bugs to enable requirements traceabil
 ms.assetid: 41F15A66-D8C2-43AA-9E38-BCED9A8D3F55
 ms.topic: conceptual
 ms.custom: continuous-test, cross-service
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 ms.date: 07/01/2020
 monikerRange: '<= azure-devops'
@@ -16,15 +16,14 @@ monikerRange: '<= azure-devops'
 
 **Requirements traceability** is the ability to relate and document two or more phases of 
 a development process, which can then be traced both forward or backward from its origin.
-Requirements traceability help teams to get insights into indicators such as
+Requirements traceability helps teams to get insights into indicators such as
 **quality of requirements** or **readiness to ship the requirement**.
-A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
+A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs, and code changes.
 
-> Read the [glossary](./test-glossary.md) to understand test report terminology.
-
-
+Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 <a name="agileteams"></a>
+
 ## Agile teams running automated tests 
 
 Agile teams have characteristics including, but not limited to the following 
@@ -34,7 +33,7 @@ Agile teams have characteristics including, but not limited to the following
 * Negligible manual testing footprint; limited to exploratory testing
 * High degree of automation
 
-The following sections explore traceability from **Quality**, **Bug** and **Source** standpoints for Agile teams.
+The following sections explore traceability from **Quality**, **Bug**, and **Source** standpoints for Agile teams.
 
 <a name="qualitytraceability"></a>
 
@@ -42,17 +41,15 @@ The following sections explore traceability from **Quality**, **Bug** and **Sour
 
 :::moniker range="=azure-devops-2019"
 
-To ensure user requirements meet the quality goals, the requirements
-in a project can be linked to test results, which can then be viewed on the
-team's dashboard. This enables end-to-end traceability with a simple way to monitor test results.
-To link automated tests with requirements, visit [test report](review-continuous-test-results-after-build.md) in build or release.
+Link project requirements to test results for end-to-end traceability with a simple way to monitor test results.
+To link automated tests with requirements, see [Test report](review-continuous-test-results-after-build.md).
 
 1. In the results section under **Tests** tab of a build or release summary,
-   select the test(s) to be linked to requirements and choose **Link**. 
+   select the test to be linked to requirements and choose **Link**. 
 
    ![Select tests to be linked to requirements](media/requirements-traceability/link-results-to-requirements.png)
 
-2. Choose a work item to be linked to the selected test(s) in one of the specified way:
+2. Choose a work item to be linked to the selected test in one of the following ways:
 
    * Choose an applicable work item from the list of suggested work items. The list is based on the most recently viewed and updated work items.
    * Specify a work item ID.
@@ -62,14 +59,14 @@ To link automated tests with requirements, visit [test report](review-continuous
 
    > The list shows only work items belonging to the Requirements category. 
 
-3. After the requirements have been linked to the test results you can view the test
+3. Once the requirements are linked to the test results, you can view the test
    results grouped by requirement. Requirement is one of the many "Group by" options provided
    to make it easy to navigate the test results.
 
    ![Group results by requirements](media/requirements-traceability/groupby-requirements.png)
 
 4. Teams often want to pin the summarized view of requirements traceability to a dashboard.
-   Use the [Requirements quality](../../report/dashboards/widget-catalog.md) widget for this.
+   Use the [Requirements quality](../../report/dashboards/widget-catalog.md) widget to do so.
 
    ![Create team dashboard](media/requirements-traceability/team-dashboard.png)
 
@@ -83,7 +80,7 @@ To link automated tests with requirements, visit [test report](review-continuous
 6. View the widget in the team's dashboard. It lists all the **Requirements** in scope,
    along with the **Pass Rate** for the tests and count of Failed tests. Selecting a **Failed** test
    count opens the **Tests** tab for the selected build or release.
-   The widget also helps to track the requirements without any associated test(s).
+   The widget also helps to track the requirements without any associated test.
 
    ![Track requirements without tests](media/requirements-traceability/requirements-quality-widget.png)
 
@@ -91,17 +88,14 @@ To link automated tests with requirements, visit [test report](review-continuous
 
 :::moniker range=">azure-devops-2019"
 
-To ensure user requirements meet the quality goals, the requirements
-in a project can be linked to test results, which can then be viewed on the
-team's dashboard. This enables end-to-end traceability with a simple way to monitor test results.
-To link automated tests with requirements, visit [test report](review-continuous-test-results-after-build.md) in build or release.
+Link project requirements to test results for end-to-end traceability with a simple way to monitor test results. To link automated tests with requirements, see [Test report](review-continuous-test-results-after-build.md).
 
 1. In the results section under **Tests** tab of a build or release summary,
-   select the test(s) to be linked to requirements and choose **Link**. 
+   select the test to be linked to requirements and choose **Link**. 
 
    ![Select tests to be linked to requirements](media/requirements-traceability/link-results-to-requirements.png)
 
-1. Choose a work item to be linked to the selected test(s) in one of the specified way:
+2. Choose a work item to be linked to the selected test in one of the following ways:
 
    * Choose an applicable work item from the list of suggested work items. The list is based on the most recently viewed and updated work items.
    * Specify a work item ID.
@@ -111,22 +105,22 @@ To link automated tests with requirements, visit [test report](review-continuous
 
    > The list shows only work items belonging to the Requirements category. 
 
-1. Teams often want to pin the summarized view of requirements traceability to a dashboard.
-   Use the [Requirements quality](../../report/dashboards/widget-catalog.md) widget for this.
+3. Teams often want to pin the summarized view of requirements traceability to a dashboard.
+   Use the [Requirements quality](../../report/dashboards/widget-catalog.md) widget to do so.
 
    ![Create team dashboard](media/requirements-traceability/team-dashboard.png)
 
-1. Configure the **Requirements quality** widget with the required options and save it.
+4. Configure the **Requirements quality** widget with the required options and save it.
 
    * **Requirements query**: Select a work item query that captures the requirements, such as the user stories in the current iteration.
    * **Quality data**: Specify the stage of the pipeline for which the requirements quality should be traced.
 
    ![Configure widget](media/requirements-traceability/configure-widget.png)
 
-1. View the widget in the team's dashboard. It lists all the **Requirements** in scope,
+5. View the widget in the team's dashboard. It lists all the **Requirements** in scope,
    along with the **Pass Rate** for the tests and count of Failed tests. Selecting a **Failed** test
    count opens the **Tests** tab for the selected build or release.
-   The widget also helps to track the requirements without any associated test(s).
+   The widget also helps to track the requirements without any associated test.
 
    ![Track requirements without tests](media/requirements-traceability/requirements-quality-widget.png)
 
@@ -136,21 +130,15 @@ To link automated tests with requirements, visit [test report](review-continuous
 
 ### Bug traceability
 
-Testing gives a measure of the confidence to ship a change to users. A test  failure signals an issues with the change.
-Failures can happen for many reasons such as errors in the source under test, bad test code, environmental issues,
-[flaky tests](test-glossary.md), and more.
+Testing gives a measure of the confidence to ship a change to users. A test failure signals an issue with the change. Failures can occur due to errors in the source under test, bad test code, environmental issues, [flaky tests](test-glossary.md), and more.
 Bugs provide a robust way to track test failures and drive accountability in the team to take the required remedial actions.
-To associate bugs with test results, visit [test report](review-continuous-test-results-after-build.md) in build or release.
+To associate bugs with test results, see [Test report](review-continuous-test-results-after-build.md).
 
-1. In the results section of the **Tests** tab select the tests against which the bug should be created
-   and choose **Bug**. Multiple test results can be mapped to a single bug.
-   This is typically done when the reason for the failures is attributable to a single cause such as
-   the unavailability of a dependent service, a database connection failure, or similar issues.
+1. In the results section of the Tests tab, select the tests against which the bug should be created and choose **Bug**. Multiple test results can be mapped to a single bug, which is typically done when the reason for the failures attributes to a single cause, such as an unavailable dependent service, a database connection failure, or similar issues.
 
    ![Link bugs to tests](media/requirements-traceability/link-bugs-to-tests.png)
 
-2. Open the work item to see the bug. It captures the complete context of the test results including key information
-   such as the error message, stack trace, comments, and more.
+2. Open the work item. The bug captures the complete context of the test results including key information, such as the error message, stack trace, comments, and more.
 
    ![Capture bug details](media/requirements-traceability/capture-bug-details.png)
 
@@ -167,7 +155,7 @@ To associate bugs with test results, visit [test report](review-continuous-test-
 5. In the work item, select **Test case** or **Test result** to go directly to the **Tests** page
    for the selected build or release. You can troubleshoot the failure, update your analysis
    in the bug, and make the changes required to fix the issue as applicable.
-   While both the links take you to the **Tests tab**, the default section shown are **History** and **Debug** respectively.
+   While both the links take you to the **Tests tab**, the default sections include **History** and **Debug**.
 
    ![Tests Tab full page view](media/requirements-traceability/redirect-to-tests-tab.png)
 
@@ -176,8 +164,8 @@ To associate bugs with test results, visit [test report](review-continuous-test-
 ### Source traceability
 
 When troubleshooting test failures that occur consistently over a period of time,
-it is important to trace back to the initial set of changes - where the failure originated.
-This can help significantly to narrow down the scope for identifying the problematic test or
+it's important to trace back to the initial set of changes - where the failure originated.
+This step can help significantly to narrow down the scope for identifying the problematic test or
 source under test. To discover the first instance of test failures and trace it back to the associated code changes,
 visit [Tests tab](review-continuous-test-results-after-build.md) in build or release.
 
@@ -186,11 +174,11 @@ visit [Tests tab](review-continuous-test-results-after-build.md) in build or rel
 
    ![View Failing release](media/requirements-traceability/view-failing-release.png)
 
-2. This opens another instance of the **Tests** tab in a new window, showing the first instance of consecutive failures for the test.
+   Another instance of the **Tests** tab opens in a new window, showing the first instance of consecutive failures for the test.
 
    ![originating test failure](media/requirements-traceability/view-originating-test.png)
 
-3. Based on the build or release pipeline, you can choose the timeline or pipeline view to see what code changes were committed.
+2. Based on the build or release pipeline, you can choose the timeline or pipeline view to see what code changes were committed.
    You can analyze the code changes to identify the potential root cause of the test failure.
 
    ![View code commits](media/requirements-traceability/view-code-commits.png)
@@ -199,9 +187,8 @@ visit [Tests tab](review-continuous-test-results-after-build.md) in build or rel
 
 ## Traditional teams using planned testing
 
-Teams that are moving from manual testing to continuous (automated) testing, and have a subset of tests already automated,
-can execute them as part of the pipeline or on demand (see [test report](review-continuous-test-results-after-build.md)).
-Referred to as **Planned testing**, automated tests can be [associated to the test cases](../../test/associate-automated-test-with-test-case.md)
+Teams moving from manual testing to continuous, automated testing, and have a subset of tests that are already automated, can [execute them as part of the pipeline or on demand](review-continuous-test-results-after-build.md).
+**Planned testing**, or "automated tests" can be [associated to the test cases](../../test/associate-automated-test-with-test-case.md)
 in a test plan and executed from **Azure Test Plans**.
 Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
 

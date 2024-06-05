@@ -84,4 +84,4 @@ If a subscription was created or last modified by a user who lost permissions to
 
 ## Contact customer support
 
-If you're not able to resolve the issue with the previous steps, consider contacting [customer support](troubleshoot-contact-support.md)
+If you're not able to resolve the issue with the previous steps, consider contacting [customer support](../../user-guide/provide-feedback.md).

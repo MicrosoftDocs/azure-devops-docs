@@ -489,6 +489,10 @@
     {
       "source_path": "docs/extend/develop/use-control.md",
       "redirect_url": "https://azdevinternal.azureedge.net/"
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
+      "redirect_url": "/azure/devops/user-guide/provide-feedback"
     }
   ]
 }
