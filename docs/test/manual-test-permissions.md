@@ -5,7 +5,7 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
