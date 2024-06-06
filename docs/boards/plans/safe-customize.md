@@ -263,7 +263,7 @@ You add the following Marketplace extensions to get access to many rich features
 
 ## Related articles
 
-- [Grant or restrict access](../../organizations/security/restrict-access.md) 
+- [Manage access](../../organizations/security/restrict-access.md) 
 - [Develop a web extension for Azure DevOps Services](../../extend/get-started/node.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)
 - [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)

@@ -6,6 +6,7 @@ ms.topic: include
 ---
 
 ### Security overview risk and coverage views 
+
 You can now see an organization-wide view of your repositories and their Advanced Security alerts and Advanced Security enablement status of all repositories in your organization. 
 
 The security overview feature for Advanced Security can be found by navigating to **Organization settings > Security overview**. For more information, see [Security overview on GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-security-overview).

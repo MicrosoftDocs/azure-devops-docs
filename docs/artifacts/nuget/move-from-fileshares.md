@@ -80,7 +80,7 @@ If you want to replicate your existing file share permissions, make a note of th
 
 After completing the inventory of your current package sources, it's time to configure your feeds. In this step, we'll assume a one-to-one mapping of feeds to SMB shares.
 
-For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-a-feed):
+For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-feed):
 
 - Set the **Feed name** to match the name of your SMB share folder.
 

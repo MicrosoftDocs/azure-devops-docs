@@ -21,7 +21,7 @@ Finding the right package for your project can be challenging, especially when t
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
+- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-feed), if you don't have one already.
 
 ## Search packages
 

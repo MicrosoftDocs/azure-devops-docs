@@ -146,7 +146,7 @@ For more information, see the [Windows and Linux agent options available with Mi
 
 ### What precached Docker images are available on hosted agents?
 
-To avoid spending long intervals pulling Docker images for every job from the container registry, some commonly used images are precached on Microsoft-hosted agents. For the list of available precached images, see the **Included Software** for the available VM images in the [**azure-pipelines-image-generation** repository](https://github.com/actions/runner-images).
+To avoid spending long intervals pulling Docker images for every job from the container registry, some commonly used images are precached on Microsoft-hosted agents.
 
 ### How do I set the BuildKit variable for my Docker builds?
 

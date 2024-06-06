@@ -168,7 +168,7 @@ Use the following elements to structure your project to support your business ne
 - [Define area paths](../settings/set-area-paths.md) to support different subprojects, products, features, or teams.
 - [Define iteration paths (also known as sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Each team you create automatically creates a security group for that team, which you can use to manage permissions for a team. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md).
-- [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
+- [Manage access to specific features and functions](../security/restrict-access.md) using custom security groups.
 - [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
 - [Define or modify notifications](../../organizations/notifications/about-notifications.md) set at the project level.
 

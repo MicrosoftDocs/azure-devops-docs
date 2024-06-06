@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 04/03/2024
+ms.date: 05/09/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -392,11 +392,11 @@ Classic schedules are defined using a graphical editor instead of cron syntax. F
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline.
 
 > [!IMPORTANT]
-> The scheduled runs view only shows pipelines scheduled to run within seven days from the current date. If your cron schedule has an interval longer than 7 days and the next run is scheduled to start after seven days from the current date, it won't be displayed in the scheduled runs view.
+> The scheduled runs view only shows pipelines scheduled to run within seven days from the current date. If your cron schedule has an interval longer than 7 days and the next run is scheduled to start after seven days from the current date, it won't be displayed in the **Scheduled runs** view.
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
 
-After you create or update your scheduled triggers, you can verify them using this view.
+After you create or update your scheduled triggers, you can verify them using **Scheduled runs** view.
 
 ![Scheduled runs](media/triggers/scheduled-runs.png)
 
@@ -412,6 +412,9 @@ schedules:
 ```
 
 The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. This example displays a screenshot taken in the EST time zone.
+
+> [!NOTE]
+> If you update the schedule for a running pipeline, the **Scheduled runs** view isn't updated with the new schedule until the currently running pipeline completes.
 
 ::: moniker-end
 

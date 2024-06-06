@@ -38,7 +38,7 @@
     href: ../project/search/functional-code-search.md?toc=/azure/devops/get-started/toc.json
   - name: Search work items
     href: ../project/search/functional-work-item-search.md?toc=/azure/devops/get-started/toc.json
-- name: Migrate & import
+- name: Migrate 
   href: ../migrate/toc.yml
 - name: Permissions & access
   items:

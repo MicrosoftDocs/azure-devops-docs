@@ -23,11 +23,11 @@ For more information, see the following articles:
   - [Add users & manage access](../accounts/add-organization-users.md)  
   - [Add users or groups to a team or project](add-users-team-project.md)  
   - [Remove user accounts](/azure/active-directory/add-users-azure-active-directory#delete-a-user) 
-  - [Grant or restrict access using permissions](restrict-access.md)
+  - [Manage access using permissions](restrict-access.md)
   - [Change project-level permissions](../security/change-project-level-permissions.md)
   - [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)
 
-Users inherit permissions from the group(s) that they belong to. If a permission is set to **Allow** for one group and **Deny** for another group to which the user belongs, then their effective permission assignment is **Deny**. For more information, see [About permissions/Inheritance](about-permissions.md#inheritance).  
+Users inherit permissions from the group(s) that they belong to. If a permission is set to **Allow** for one group and **Deny** for another group to which the user belongs, then their effective permission assignment is **Deny**. For more information, see [About permissions/Inheritance](about-permissions.md#security-groups-and-membership).  
 
 ## How Azure DevOps uses security groups 
 

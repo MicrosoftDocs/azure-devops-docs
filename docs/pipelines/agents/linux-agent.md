@@ -3,7 +3,7 @@ title: Deploy an Azure Pipelines agent on Linux
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 04/03/2024
+ms.date: 05/06/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,14 +13,9 @@ monikerRange: '<= azure-devops'
 
 :::moniker range="<=azure-devops"
 
-> [!IMPORTANT]
-> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Linux agents (Agent version 2.x)](v2-linux-agent.md).
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services and current versions of Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 :::moniker-end
-
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 
 To run your jobs, you need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
 
@@ -39,7 +34,6 @@ We support the following subset of .NET 6 supported distributions:
 
 * Supported distributions
   * x64
-    * CentOS 7, 8
     * Debian 10+
     * Fedora 36+
     * openSUSE 15+
@@ -48,6 +42,7 @@ We support the following subset of .NET 6 supported distributions:
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
     * Azure Linux 2.0
+    * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04

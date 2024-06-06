@@ -21,7 +21,7 @@ With Azure Artifacts, you can publish and restore Maven packages from Azure Arti
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
 - [Download](https://maven.apache.org/download.cgi) and [install](https://maven.apache.org/install.html) Maven.
 
