@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 5/2/2024
+ms.date: 6/11/2024
 ms.topic: include
 ---
 
@@ -14,6 +14,9 @@ Tasks in the pipeline are executed using a runner, with Node.js used in most cas
 We now expose the REST API endpoint to request OIDC tokens in the `System.OidcRequestUri` pipeline variable. Task developers can use this variable to create an idToken and use that to authenticate with Entra ID.
 
 If you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation yet. In these cases, we ask task developers to support workload identity federation to improve security.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of oidc collaboration.](../../media/240-pipelines-01.png "Screenshot of oidc collaboration")
 
 <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/oidc-collaboration-4.png" alt="Image oidc collaboration" width="1250" height="543" class="aligncenter size-full wp-image-67562" />
 
