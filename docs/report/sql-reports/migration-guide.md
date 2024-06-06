@@ -58,7 +58,7 @@ The Analytics data model consists of entity sets, whose members (entities) conta
 
 The following tools support interaction with the Analytics service: 
 - **Analytics views**: Provide a quick way to generate reports based on work tracking and test cases. You can define an Analytics view and share with others. Using Power BI, you can build any type of report Power BI supports. TO learn more, see [What are Analytics views?](../powerbi/what-are-analytics-views.md).  
-- **Power BI**: Connect to Analytics from Power BI through an ANalytics view, OData query, or OData feed. See [About Power BI integration](../powerbi/overview.md). 
+- **Power BI**: Connect to Analytics from Power BI through an Analytics view, OData query, or OData feed. See [About Power BI integration](../powerbi/overview.md). 
 - **OData query**: Use Odata to directly query Analytics from a supported browser and use the returned JSON data as needed.  
 - Programmatic query of the Analytics metadata [Construct OData queries for Analytics, URL components to query the metadata](../analytics/analytics-query-parts.md#query-metadata). 
  
