@@ -487,6 +487,10 @@
       "redirect_url": "/azure/devops/migrate/migration-post-migration"
     },
     {
+      "source_path": "docs/report/sql-reports/analytics-insights-comparable-sql-reports.md",
+      "redirect_url": "/azure/devops/report/dashboards/overview#sql-server-reports"
+    },
+    {
       "source_path": "docs/extend/develop/use-control.md",
       "redirect_url": "https://azdevinternal.azureedge.net/"
     },
