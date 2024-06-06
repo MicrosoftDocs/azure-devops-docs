@@ -56,7 +56,7 @@ If you selected the upstream sources checkbox during the creation of your feed, 
 
 1. Select **Public source**, and then select **PyPI (https://pypi.org/)** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** one more time from the top right corner to save your changes.
+1. Select **Add** when you're done, and then select **Save** one more time from the top right corner to save your changes.
 
 ## Authenticate with your feed
 

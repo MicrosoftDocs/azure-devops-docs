@@ -43,7 +43,7 @@ If you checked the *upstream sources* checkbox when creating your feed, Google M
 
 1. Select **Public source**, and then select **Google Maven Repository (https://maven.google.com/web/index.html)** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** again in the top right corner to save your changes.
+1. Select **Add** when you're done, and then select **Save** again in the top right corner to save your changes.
 
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
