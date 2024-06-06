@@ -487,17 +487,16 @@
       "redirect_url": "/azure/devops/migrate/migration-post-migration"
     },
     {
-<<<<<<< users/chcomley/258975-analytics
       "source_path": "docs/report/sql-reports/analytics-insights-comparable-sql-reports.md",
       "redirect_url": "/azure/devops/report/dashboards/overview#sql-server-reports"
-=======
+    },
+    {
       "source_path": "docs/extend/develop/use-control.md",
       "redirect_url": "https://azdevinternal.azureedge.net/"
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
       "redirect_url": "/azure/devops/user-guide/provide-feedback"
->>>>>>> main
     }
   ]
 }
