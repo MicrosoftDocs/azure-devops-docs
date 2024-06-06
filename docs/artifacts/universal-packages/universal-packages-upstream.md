@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstreams. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Microsoft Entra ID. See [Manage access with Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Microsoft Entra ID.
+With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstream sources. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Microsoft Entra ID. See [Manage access with Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Microsoft Entra ID.
 
 ## Add a feed in your organization as an upstream source
 
