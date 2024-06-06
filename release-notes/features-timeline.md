@@ -494,7 +494,7 @@ For the past several years, all our pipelines investments have been in the area 
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="21"><strong>2024 H1</strong></td>
+        <td rowspan="15"><strong>2024 H1</strong></td>
         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -595,7 +595,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Boards</td>         
          <td>Future</td>
       </tr> 
-      <td rowspan="27"><strong>Future</strong></td>
+      <td rowspan="25"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
