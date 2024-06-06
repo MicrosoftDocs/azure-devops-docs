@@ -26,8 +26,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available on Azure DevOps Services; the Server columns reflect when we expect the feature to ship in Azure DevOps Server. 
 
-## Azure DevOps Services
-
 ## Initiatives
 
 ### GitHub Advanced Security for Azure DevOps
@@ -294,6 +292,8 @@ For the past several years, all our pipelines investments have been in the area 
 </table>
 
 ## All features
+
+## Azure DevOps Services
 
 <table>
     <thead>
