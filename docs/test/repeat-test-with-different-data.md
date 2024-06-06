@@ -200,25 +200,6 @@ The outcome of the test is based on a precedence hierarchy of all the iteration 
    ![Screenshot shows viewing the test run details.](media/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
 ::: moniker-end
 
-## Speed up test iterations by using record and playback
-
-It can be error-prone and tedious to work through a long table of 
-parameter combinations. To speed up things, create an action 
-recording when you run the test with the first set of parameter 
-values, and then play it back for the other sets.
-
-1. Use Azure Test Plans to [run the test](run-manual-tests.md).
-
-1. Select **Create action recording** before you choose **Start**.
-
-1. Complete the first test iteration and then move on to the next one.
-
-1. Mark each step as passed or failed as you work. Enter parameter values in the application exactly as displayed in the test script.
-
-1. Select **Play** to run the test with the next set of parameter values. 
-   Your actions play back automatically, but you must still verify the results. 
-
-   Record and playback don't work with all applications. For more information, see [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## Related articles
 
