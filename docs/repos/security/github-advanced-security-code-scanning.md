@@ -28,7 +28,7 @@ GitHub experts, security researchers, and community contributors write and maint
 
 For more specific documentation about CodeQL, visit the [CodeQL documentation on GitHub](https://codeql.github.com/docs/).
 
-CodeQL supports both compiled and interpreted languages and can find vulnerabilities and errors in code that's written in the supported languages. 
+CodeQL supports both compiled and interpreted languages and can find vulnerabilities and errors in code written in the supported languages. 
 
 * C/C++ 
 * C# 
@@ -53,15 +53,15 @@ You can view the specific queries and task details used by CodeQL by looking thr
 
 To use code scanning, you need to first configure [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md). 
 
-The Advanced Security tab under Repos in Azure DevOps is the hub to view your code scanning alerts. Select the **Code scanning** tab to view scanning alerts. You can filter by branch, state, pipeline, rule type, and severity. At this time, the alerts hub does not display alerts for scanning completed on PR branches.
+The Advanced Security tab under Repos in Azure DevOps is the hub to view your code scanning alerts. Select the **Code scanning** tab to view scanning alerts. You can filter by branch, state, pipeline, rule type, and severity. At this time, the alerts hub doesn't display alerts for scanning completed on PR branches.
 
 There's no effect to results if pipelines or branches are renamed - it may take up to 24 hours before the new name is displayed. 
 
-If you choose to run custom CodeQL queries, there is not by default a separate filter for alerts generated from different query packs. You can filter by rule, which is distinct for each query. 
+If you choose to run custom CodeQL queries, there isn't by default a separate filter for alerts generated from different query packs. You can filter by rule, which is distinct for each query. 
 
 ![Screenshot of code scanning alerts for a repository](./media/code-scanning-alerts.png) 
 
-If you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
+If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task does not fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
 ### Alert details 
 
@@ -72,7 +72,7 @@ Select an alert for more details, including remediation guidance. Each alert inc
 
 | Section  | Explanation  |
 |---|---|
-|  Location | The **Locations** section details a specific instance where CodeQL has detected a vulnerability. If there are multiple instances of your code violating the same rule, a new alert is generated for each distinct location. The Locations card contains a direct link to the affected code snippet so you can select the snippet to be directed to the Azure DevOps web UI for editing.  |
+|  Location | The **Locations** section details a specific instance where CodeQL detected a vulnerability. If there are multiple instances of your code violating the same rule, a new alert is generated for each distinct location. The Locations card contains a direct link to the affected code snippet so you can select the snippet to be directed to the Azure DevOps web UI for editing.  |
 | Description | The description is provided by the CodeQL tool based off of the problem. |
 | Recommendation | The recommendation is the suggested fix for a given code scanning alert. |
 | Example | The example section shows a simplified example of the identified weakness in your code. |
@@ -106,10 +106,10 @@ To dismiss an alert:
 
 ![Screenshot of how to dismiss a code scanning alert](./media/code-scanning-dismiss-alert.png)
 
-This only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert that has been previously dismissed can be manually reopened. 
+This action only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
 
 ## Using custom queries with CodeQL
-By default, if you do not have a custom configuration file specified in your pipeline setup, CodeQL will run the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. You will also need to create a custom configuration file to modify CodeQL's default analysis.
+By default, if you do not have a custom configuration file specified in your pipeline setup, CodeQL runs the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. You also need to create a custom configuration file to modify CodeQL's default analysis.
 
 To find existing custom queries or to contribute your own custom query, see [Contributing to CodeQL](https://github.com/github/codeql/blob/main/CONTRIBUTING.md).
 
@@ -119,7 +119,7 @@ The quickest way to start with a custom query is to write a query and save it in
 
 ### Using a custom configuration file
 
-A custom configuration file is a way to manage what queries are run during CodeQL's analysis against your code. You can specify additional queries or query packs to be run, and change or disable the default CodeQL queries.  
+A custom configuration file is a way to manage what queries are run during CodeQL's analysis against your code. You can specify more queries or query packs to be run, and change or disable the default CodeQL queries.  
 
 To include a specific query you want to include, specify the query with a name and path to the location of the query file (.ql) in your repository. 
 
@@ -186,9 +186,9 @@ dependencies:
   codeql/javascript-all: "*"
   codeql/javascript-queries: "*"
 ```
-The `dependencies` variable contains all of the dependencies of this package and their compatible version ranges. Each dependency is referenced as the `scope/name` of a CodeQL library pack. When defining `dependencies`, your `qlpack.yml` depends on exactly one of the core language packs (e.g.: JavaScript, C#, Ruby, etc.), which determines the language your query can analyze.
+The `dependencies` variable contains all of the dependencies of this package and their compatible version ranges. Each dependency is referenced as the `scope/name` of a CodeQL library pack. When defining `dependencies`, your `qlpack.yml` depends on exactly one of the core language packs (for example, JavaScript, C#, Ruby, etc.), which determines the language your query can analyze.
 
-For more specific advice and configuration options with your configuration file, see [Customizing your advanced setup for code scanning](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#specifying-codeql-query-packs) or for `qlpack.yml` set up, see [CodeQL pack structure](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/creating-and-working-with-codeql-packs#codeql-pack-structure).
+For more specific advice and configuration options with your configuration file, see [Customizing your advanced setup for code scanning](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#specifying-codeql-query-packs) or for `qlpack.yml` setup, see [CodeQL pack structure](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/creating-and-working-with-codeql-packs#codeql-pack-structure).
 
 
 Once you have your configuration file, you then need to customize your pipeline running CodeQL analysis to utilize your new file. Here is a sample pipeline pointing to a configuration file:
@@ -227,7 +227,7 @@ steps:
 
 ## Troubleshooting code scanning 
 
-Generally, if you are encountering errors with CodeQL execution, the CodeQL CLI reports the status of each command it runs as an exit code. The exit code provides information for subsequent commands or for other tools that rely on the CodeQL CLI. For more details on exit code details, see [Exit codes](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/exit-codes). 
+Generally, if you are encountering errors with CodeQL execution, the CodeQL CLI reports the status of each command it runs as an exit code. The exit code provides information for subsequent commands or for other tools that rely on the CodeQL CLI. For more information on exit code details, see [Exit codes](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/exit-codes). 
 
 ### Error: 'database finalize' CodeQL command (32) 
 This error indicates a problem with finalizing the CodeQL database creation, potentially due to extraction errors or missing build steps.
@@ -257,7 +257,7 @@ Troubleshooting steps:
 1. Refer to setup guidelines or configuration scripts provided in [Configure GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md#extra-prerequisites-for-self-hosted-agents).
 
 ### Error: language pipeline variable not set
-This error occurs when attempting to run CodeQL without setting the pipeline variable specifying which language(s) will be scanned.
+This error occurs when attempting to run CodeQL without setting the pipeline variable specifying which languages to scan.
 
 Troubleshooting steps:
 1. Set language pipeline variable
@@ -274,10 +274,13 @@ Troubleshooting steps:
    * Confirm the query suite being used and consider switching to a more comprehensive suite if necessary.
    * Alternatively, [custom query suites](#using-custom-queries-with-codeql) can be created for tailored analysis. 
 1. Adjust permissions for viewing results
-   * Ensure proper permissions, at least at the contributor level, are granted to access analysis results. For more information, refer to [Advanced Security permissions](./github-advanced-security-permissions.md).
+   * Ensure proper permissions, at least at the contributor level, are granted to access analysis results. For more information, see [Advanced Security permissions](./github-advanced-security-permissions.md).
+
+### CodeQL timing out
+If the `AdvancedSecurity-Codeql-Analyze@1` task is displaying `This job was abandoned ... we lost contact with the agent` and you are using a hosted Microsoft agent, the task is hitting the built-in six-hour timeout for paid hosted agents. You may attempt to run analysis on a self-hosted agent instead. 
 
 ### Code scanning task permissions
-The code scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in the same project have access to upload the SARIF file generated by running CodeQL analysis. If you remove those permissions from the build service account or if you have a custom setup (for example, a pipeline hosted in a different project than the repository), you must grant these permissions manually.
+The code scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in the same project have access to upload the SARIF file generated by running CodeQL analysis. If these permissions are removed from the build service account or if you have a custom setup (for example, a pipeline hosted in a different project than the repository), you must grant these permissions manually.
 
 Troubleshooting steps:
 * Grant `Advanced Security: View alerts` and `Advanced Security: Manage and dismiss alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
