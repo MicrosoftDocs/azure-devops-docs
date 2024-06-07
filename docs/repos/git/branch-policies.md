@@ -17,7 +17,7 @@ ms.subservice: azure-devops-repos-git
 
 Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
 
-A branch that has required policies configured can't be deleted, and requires pull requests (PRs) for all changes.
+A branch with required policies configured can't be deleted, and requires pull requests (PRs) for all changes.
 
 ## Prerequisites 
 
@@ -175,7 +175,7 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 :::image type="content" source="media/branch-policies/require-minimum-reviewers-2020.png" alt-text="Screenshot that shows the Enable the Require Code Reviews policy.":::
 
-- Select **Allow requestors to approve their own changes** to allow a PR's creator to vote on its approval. Otherwise, the creator can still vote **Approve** on the PR, but their vote won't count toward the minimum number of reviewers.
+- Select **Allow requestors to approve their own changes** to allow a PR's creator to vote on its approval. Otherwise, the creator can still vote **Approve** on the PR, but their vote does't count toward the minimum number of reviewers.
 
 - Select **Prohibit the most recent pusher from approving their own changes** to enforce segregation of duties. By default, anyone with push permission on the source branch can both add commits and vote on PR approval. Selecting this option means the most recent pusher's vote doesn't count, even if they can ordinarily approve their own changes.
 
@@ -195,7 +195,7 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 ::: moniker range=">= azure-devops-2022"
 
 - Under **When new changes are pushed**:
-  - Select **Require at least one approval on every iteration** to require at least one approval vote for the last source branch change. The user's approval is not counted against any previous unapproved iteration pushed by that user. As a result, additional approval on the last iteration is required to be done by another user. **Require at least one approval on every iteration** is available in Azure DevOps Server 2022.1 and higher.
+  - Select **Require at least one approval on every iteration** to require at least one approval vote for the last source branch change. The user's approval isn't counted against any previous unapproved iteration pushed by that user. As a result, another approval on the last iteration is required to be done by another user. **Require at least one approval on every iteration** is available in Azure DevOps Server 2022.1 and higher.
   - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
   - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
   - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
@@ -206,7 +206,7 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 ![Check the Require Code Reviews box](media/branch-policies/require-minimum-number-of-pr-reviews-2018.png)  
 
-- If **Requestors can approve their own changes** isn't selected, the creator of the pull request can still vote **Approve** on their pull request, but their vote won't count toward the **Minimum number of reviewers**.
+- If **Requestors can approve their own changes** isn't selected, the creator of the pull request can still vote **Approve** on their pull request, but their vote doesn't count toward the **Minimum number of reviewers**.
 - If any reviewer rejects the changes, the pull request can't complete unless you select **Allow completion even if some reviewers vote to wait or reject**.
 - You can reset code reviewer votes when new changes are pushed to the source branch. Select **Reset code reviewer votes when there are new changes**.
 
@@ -451,7 +451,7 @@ The **Check for comment resolution** policy checks whether all PR comments are r
 
 Configure a comment resolution policy for your branch by setting **Check for comment resolution** to **On**. Then select whether to make the policy **Required** or **Optional**.
 
-:::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Check for comment resolution":::
+:::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Screenshot of Check for comment resolution.":::
 
 For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md).
 
@@ -573,7 +573,7 @@ Azure Repos has several merge strategies, and by default, all of them are allowe
 
 Set **Limit merge types** to **On** to limit which merge types to allow in your repo.
 
-:::image type="content" source="media/branch-policies/limit-merge-types-2020.png" alt-text="Limit merge types":::
+:::image type="content" source="media/branch-policies/limit-merge-types-2020.png" alt-text="Screenshot of Limit merge types.":::
 
 - **Basic merge (no fast-forward)** creates a merge commit in the target whose parents are the target and source branches.
 - **Squash merge** creates a linear history with a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects branch history.
@@ -741,7 +741,7 @@ To add a build validation policy
 
 1. Fill out the **Set build policy** form:
 
-   :::image type="content" source="media/branch-policies/add-build-policy-menu-2020.png" alt-text="Build policy settings":::
+   :::image type="content" source="media/branch-policies/add-build-policy-menu-2020.png" alt-text="Screenshot of Build policy settings.":::
 
    - Select the **Build pipeline**.
 
@@ -755,11 +755,11 @@ To add a build validation policy
 
      - **Immediately when \<branch name> is updated**: This option sets PR build policy status to *failed* whenever the branch is updated, and requeues a build. This setting ensures that the PR changes build successfully even if the protected branch changes.
 
-       This option is best for teams whose important branches have few changes. Teams working in busy development branches may find it disruptive to wait for a build every time the branch updates.
+       This option is best for teams whose important branches have few changes. Teams working in busy development branches might find it disruptive to wait for a build every time the branch updates.
 
      - **After \<n> hours if \<branch name> has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold you enter. This option is a compromise between always or never requiring a build when the protected branch updates. This choice reduces the number of builds when your protected branch has frequent updates.
 
-     - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds, but can cause problems when completing PRs that haven't updated recently.
+     - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds, but can cause problems when completing PRs that weren't updated recently.
 
    - Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build pipeline name.
 
@@ -820,7 +820,7 @@ az repos policy build create --blocking {false, true}
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
+|`path-filter`|Path on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
@@ -874,7 +874,7 @@ az repos policy build update --id
 |`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`manual-queue-only`|Whether to allow only manual queue of builds. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
+|`path-filter`|Paths on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`queue-on-source-update-only`|Whether to queue builds only when source updates. Accepted values: `false`, `true`.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
@@ -893,7 +893,8 @@ az repos policy build update --id
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
-If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
+
+If a build validation policy is enabled, a new build is queued when a new pull request is created or when changes are pushed to an existing pull request that targets the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 > [!IMPORTANT]
 > Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
@@ -909,9 +910,9 @@ Choose **Add build policy** and configure your options in **Add build policy**.
 1. Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
 1. Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
 
-   - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches may find it disruptive to wait for a build to complete every time the protected branch is updated.
+   - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches might find it disruptive to wait for a build to complete every time the protected branch is updated.
    - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates.
-   - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that haven't updated recently.
+   - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that weren't updated recently.
   
 1. Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build definition name.
 1. Select **Save**.
@@ -926,9 +927,9 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 ## Status checks
  
-External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services enables those third-party services to participate in the PR workflow and establish policy requirements.
+External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services enables those external services to participate in the PR workflow and establish policy requirements.
 
-:::image type="content" source="media/branch-policies/status-checks-2020.png" alt-text="Require external services to approve":::
+:::image type="content" source="media/branch-policies/status-checks-2020.png" alt-text="Screenshot of Require external services to approve.":::
 
 For instructions on configuring this policy, see [Configure a branch policy for an external service](pr-status-policy.md).
 
@@ -940,7 +941,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ## Require approval from external services
 
-External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services  brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
+External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services brings the ability for those external services to participate in the PR workflow and establish policy requirements.
 
 ![Require external services to approve](media/branch-policies/require-approval-from-additional-services-2018.png)
 
@@ -1032,7 +1033,7 @@ az repos policy required-reviewer create --blocking {false, true}
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
+|`path-filter`|Paths on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
@@ -1081,7 +1082,7 @@ az repos policy required-reviewer update --id
 |`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`message`|Activity feed message that appears in the pull request.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
+|`path-filter`|Paths on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
 |`required-reviewer-ids`|Reviewer email addresses separated by `;`. For example: `john@contoso.com;alice@contoso.com`.|
@@ -1146,8 +1147,8 @@ For more information about managing these permissions, see [Git permissions](../
 
 In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
 
-- When completing a pull request, opt-in to override policies and complete a pull request even if the current set of branch policies is not satisfied.
-- Push directly to a branch even if that branch has branch policies set. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
+- Opt-in to override policies and complete a pull request even if the current set of branch policies isn't satisfied.
+- Push directly to a branch even if that branch has branch policies set. When a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
 
 ::: moniker-end
 
@@ -1191,12 +1192,12 @@ The order of filters is significant. Filters are applied left-to-right.
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
-- [What happens when path in path filters start neither with `/` nor with wildcard?](#what-happens-when-path-in-path-filters-start-neither-with--nor-with-wildcard)
+- [What happens when path in path filters doesn't start with `/` or with a wildcard?](#what-happens-when-path-in-path-filters-doesnt-start-with--or-with-a-wildcard)
 
 
 #### Can I push changes directly to branches that have branch policies?
 
-You can't push changes directly to branches that have *required* branch policies unless you have permissions to [bypass branch policies](#bypass-branch-policies). Changes to these branches can be made only through [pull requests](pull-requests.md). You can push changes directly to branches that have *optional* branch policies, if they have no required branch policies.
+You can't push changes directly to branches with *required* branch policies unless you have permissions to [bypass branch policies](#bypass-branch-policies). Changes to these branches can be made only through [pull requests](pull-requests.md). You can push changes directly to branches that have *optional* branch policies, if they have no required branch policies.
 
 #### What is autocomplete?
 
@@ -1220,7 +1221,7 @@ Examples:
 
 - `*.sql` matches all files with the *.sql* extension.
 - `/ConsoleApplication/*` matches all files under the folder named *ConsoleApplication*.
-- `/.gitattributes` matches the *.gitattributes* file in the root of the repo.
+- `/.gitattributes` matches the.gitattributes* file in the root of the repo.
 - `*/.gitignore` matches any *.gitignore* file in the repo.
 
 #### Are the required code reviewer paths case-sensitive?
@@ -1229,7 +1230,7 @@ No, branch policies aren't case-sensitive.
 
 #### How can I configure multiple users as required reviewers, but require only one of them to approve?
 
-You can [add the users to a group](../../organizations/security/add-users-team-project.md), and then add the group as a reviewer.  Any member of the group can then approve to meet the policy requirement.
+You can [add the users to a group](../../organizations/security/add-users-team-project.md), and then add the group as a reviewer. Any member of the group can then approve to meet the policy requirement.
 
 #### I have bypass policy permissions. Why do I still see policy failures in the pull request status?
 
@@ -1250,10 +1251,10 @@ In this case, your approval satisfies **Automatically included reviewers**, but 
 
 There might also be other policies, such as **Prohibit the most recent pusher from approving their own changes**, that prevent you from approving your own changes even if **Allow requestors to approve their own changes** is set.
 
-#### What happens when path in path filters start neither with `/` nor with wildcard?
+#### What happens when path in path filters doesn't start with `/` or with a wildcard?
 
 
-The path in path filters that start neither with `/` nor with a wildcard will have no effect, and the path filter will evaluate as if that path wasn't specified. That's because such a path can't match the `/` the absolute file path starts with.
+The path in path filters that doesn't start with `/` or with a wildcard has no effect, and the path filter evaluates as if that path wasn't specified. Such a path can't match the `/` the absolute file path starts with.
 
 
 ## Related articles
@@ -1263,3 +1264,4 @@ The path in path filters that start neither with `/` nor with a wildcard will ha
 - [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
 - [Set permissions (Security)](set-git-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
 - [Cross-service integration overview](../../cross-service/cross-service-overview.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
+- [Azure DevOps REST API: Policy](/rest/api/azure/devops/policy)
