@@ -73,7 +73,7 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 2.	Choose Add-ins and from the **Manage** picklist, choose **Disabled Items**, and then choose **Go**.
 
    > [!div class="mx-imgBorder"]
-	> ![Screenshot of Excel Options, Add-ins, Choose Disabled Items.](media/excel-com-disabled-items.png)
+   > ![Screenshot of Excel Options, Add-ins, Choose Disabled Items.](media/excel-com-disabled-items.png)
 
 3. If you see "Azure DevOps Add In" in the list, select it and click **Enable**.
 
