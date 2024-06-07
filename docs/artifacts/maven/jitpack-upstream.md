@@ -24,11 +24,9 @@ With Azure Artifacts, you can consume packages from different public registries 
 
 1. Select **Public source**, and then select **JitPack (https://jitpack.io/)** from the dropdown menu.
 
+1. Select **Add** when you're done, and then select **Save** at the top right corner to save your changes.
+
     :::image type="content" source="./media/jitpack-upstream.png" alt-text="A screenshot showing how to add JitPack.":::
-
-1. Select **Save** when you are done.
-
-1. Select **Save** at the top right corner to save your changes.
 
 ## View saved packages
 

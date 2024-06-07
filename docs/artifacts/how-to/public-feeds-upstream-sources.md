@@ -60,7 +60,7 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
     :::image type="content" source="../media/public-feed-upstream-types.png" alt-text="A screenshot showing the different types of upstream sources.":::
 
-1. Configure your source, and then select **Save** when you're done.
+1. Configure your source, and then select **Add** when you're done.
 
     :::image type="content" source="../media/public-feed-configure-upstream.png" alt-text="A screenshot showing how to configure your upstream source.":::
 
