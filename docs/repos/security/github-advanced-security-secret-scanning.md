@@ -194,4 +194,15 @@ The following table lists the non-provider generated secrets detected by secret 
 > [!TIP]
 > The detection of non-provider patterns is currently in beta and subject to change.
 
-[!INCLUDE [non-provider-table](includes/non-provider-table.md)] 
+[!INCLUDE [non-provider-table](includes/non-provider-table.md)]  
+
+## Troubleshooting secret scanning 
+
+### Secret scanning repository scanning doesn't complete 
+If the repository-level secret scanning upon first enabling Advanced Security appears to be stuck after some time, attempt to disable then re-enable Advanced Security to reset the scanning operation.
+
+### Push protection not blocking a secret 
+Ensure that the secret you are attempting to block is supported for push protection using the above tables, (Supported secrets)[#supported-secrets]. 
+
+### No repository alerts created for password
+Ensure that the secret you are attempting to block is supported as a user alert using the above tables, (Supported secrets)[#supported-secrets]. If you are attempting to push a generically named secret, such as `password: password123` or `secret: password123`, this is not supported by secret scanning today and no alert or push protection will be applied.
