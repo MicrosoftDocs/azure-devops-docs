@@ -125,6 +125,8 @@ To include a specific query you want to include, specify the query with a name a
 
 To include a specific pack you want to include, specify the pack name. You can specify any number of CodeQL query packs to run in your configuration file.  
 
+The next step is to create a `qlpack.yml` file. This file declares the CodeQL pack and information about it. Any `*.ql` files in the same directory (or sub-directory) as a `qlpack.yml` are considered part of the package. 
+
 > [!TIP]
 > The `packs` filter from the configuration file support downloading packs from repositories hosted in GitHub, although the `queries` filter does not.
 > If the pack is private in GitHub, then you need to provide a GitHub access token via the `AdvancedSecurity-Codeql-Init@1` task as an environment variable and variable name as `GITHUB_TOKEN`, with the scope of the token being `read:packages`.
@@ -177,7 +179,16 @@ query-filters:
 > `includepaths` / `ignorepaths` will be ignored or, if `paths`/`paths-ignore` are present, overwritten with values from `paths`/`paths-ignore`.
 > `querysuite` will be overwritten with values specified in `queries` or `packs` in the configuration file.
 
-For more specific advice and configuration options with your configuration file, see [Customizing your advanced setup for code scanning](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#specifying-codeql-query-packs).
+If you are using any custom query, here is an example `qlpack.yml` placed in the directory of your custom queries:
+```
+version: 1.0.1
+dependencies:
+  codeql/javascript-all: "*"
+  codeql/javascript-queries: "*"
+```
+The `dependencies` variable contains all of the dependencies of this package and their compatible version ranges. Each dependency is referenced as the `scope/name` of a CodeQL library pack. When defining `dependencies`, your `qlpack.yml` depends on exactly one of the core language packs (e.g.: JavaScript, C#, Ruby, etc.), which determines the language your query can analyze.
+
+For more specific advice and configuration options with your configuration file, see [Customizing your advanced setup for code scanning](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#specifying-codeql-query-packs) or for `qlpack.yml` set up, see [CodeQL pack structure](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/creating-and-working-with-codeql-packs#codeql-pack-structure).
 
 
 Once you have your configuration file, you then need to customize your pipeline running CodeQL analysis to utilize your new file. Here is a sample pipeline pointing to a configuration file:
