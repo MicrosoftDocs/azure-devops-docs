@@ -24,7 +24,7 @@ Dependency scanning generates an alert for any open-source component, direct or 
 
 ### About dependency scanning detection 
 
-A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code is executed. 
+A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code (in other words, a new commit) is executed. 
 
 For every vulnerable component detected in use, the component and vulnerability are listed in the build log and displayed as an alert in the Advanced Security tab. Only advisories that reviewed by GitHub and added to the [GitHub Advisory Database](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/browsing-security-advisories-in-the-github-advisory-database) create a dependency scanning alert. The build log includes a link to the individual alert for further investigation. For more information on the alert detail, view Fixing dependency scanning alerts.  
 
@@ -90,9 +90,6 @@ The pipelines listed under the **Detections** tab are the pipelines where the vu
 Once an alert has been resolved, the alert automatically moves to the `Closed` state and the latest run pipeline under the Detections tab displays a green checkmark, meaning that code containing the updated component was run in that pipeline: 
 
 ![Screenshot of dependency scanning detections view for an alert](./media/dependency-scanning-detections.png)
-
-
-
 
 #### Severity 
 
@@ -480,7 +477,11 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Dependency scanning not identifying any components
 
-If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task. 
+If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task.  
+
+### Dependency scanning not picking up new vulnerabilities 
+
+If you are running a new build but not seeing new vulnerabilities as expected, ensure that the build is run with a new commit.
 
 ### Dependency scanning task timeout 
 
