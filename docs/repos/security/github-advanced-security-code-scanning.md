@@ -61,7 +61,7 @@ If you choose to run custom CodeQL queries, there is not by default a separate f
 
 ![Screenshot of code scanning alerts for a repository](./media/code-scanning-alerts.png) 
 
-If you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
+If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task does not fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
 ### Alert details 
 
@@ -72,7 +72,7 @@ Select an alert for more details, including remediation guidance. Each alert inc
 
 | Section  | Explanation  |
 |---|---|
-|  Location | The **Locations** section details a specific instance where CodeQL has detected a vulnerability. If there are multiple instances of your code violating the same rule, a new alert is generated for each distinct location. The Locations card contains a direct link to the affected code snippet so you can select the snippet to be directed to the Azure DevOps web UI for editing.  |
+|  Location | The **Locations** section details a specific instance where CodeQL detected a vulnerability. If there are multiple instances of your code violating the same rule, a new alert is generated for each distinct location. The Locations card contains a direct link to the affected code snippet so you can select the snippet to be directed to the Azure DevOps web UI for editing.  |
 | Description | The description is provided by the CodeQL tool based off of the problem. |
 | Recommendation | The recommendation is the suggested fix for a given code scanning alert. |
 | Example | The example section shows a simplified example of the identified weakness in your code. |
@@ -106,10 +106,10 @@ To dismiss an alert:
 
 ![Screenshot of how to dismiss a code scanning alert](./media/code-scanning-dismiss-alert.png)
 
-This only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert that has been previously dismissed can be manually reopened. 
+This only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
 
 ## Using custom queries with CodeQL
-By default, if you do not have a custom configuration file specified in your pipeline setup, CodeQL will run the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. You will also need to create a custom configuration file to modify CodeQL's default analysis.
+By default, if you do not have a custom configuration file specified in your pipeline setup, CodeQL runs the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. You will also need to create a custom configuration file to modify CodeQL's default analysis.
 
 To find existing custom queries or to contribute your own custom query, see [Contributing to CodeQL](https://github.com/github/codeql/blob/main/CONTRIBUTING.md).
 
@@ -186,7 +186,7 @@ dependencies:
   codeql/javascript-all: "*"
   codeql/javascript-queries: "*"
 ```
-The `dependencies` variable contains all of the dependencies of this package and their compatible version ranges. Each dependency is referenced as the `scope/name` of a CodeQL library pack. When defining `dependencies`, your `qlpack.yml` depends on exactly one of the core language packs (e.g.: JavaScript, C#, Ruby, etc.), which determines the language your query can analyze.
+The `dependencies` variable contains all of the dependencies of this package and their compatible version ranges. Each dependency is referenced as the `scope/name` of a CodeQL library pack. When defining `dependencies`, your `qlpack.yml` depends on exactly one of the core language packs (for example, JavaScript, C#, Ruby, etc.), which determines the language your query can analyze.
 
 For more specific advice and configuration options with your configuration file, see [Customizing your advanced setup for code scanning](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#specifying-codeql-query-packs) or for `qlpack.yml` set up, see [CodeQL pack structure](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/creating-and-working-with-codeql-packs#codeql-pack-structure).
 
@@ -257,7 +257,7 @@ Troubleshooting steps:
 1. Refer to setup guidelines or configuration scripts provided in [Configure GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md#extra-prerequisites-for-self-hosted-agents).
 
 ### Error: language pipeline variable not set
-This error occurs when attempting to run CodeQL without setting the pipeline variable specifying which language(s) will be scanned.
+This error occurs when attempting to run CodeQL without setting the pipeline variable specifying which languages will be scanned.
 
 Troubleshooting steps:
 1. Set language pipeline variable
