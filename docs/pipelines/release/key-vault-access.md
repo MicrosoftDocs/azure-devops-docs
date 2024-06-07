@@ -81,12 +81,13 @@ Let's start by creating a new service principal, this will enable us to access A
 
 Azure Pipelines enables developers to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
 
-I/ From Azure DevOps, during the variable group configuration time.
-II/ From a Self-hosted agent, during the pipeline job runtime.
+I. From Azure DevOps, during the variable group configuration time.
+
+II. From a Self-hosted agent, during the pipeline job runtime.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
 
-## I/ Access private key vaults from Azure Devops
+## I. Access private key vaults from Azure Devops
 
 In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure key vault from a Variable Group. Therefore, by adding inbound connections to the Azure key vault firewall, we can successfully connect to our Azure key vault.
 
@@ -192,7 +193,7 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
 > [!IMPORTANT]
 > Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
-## II/ Access private key vaults from a self-hosted agent
+## II. Access private key vaults from a self-hosted agent
 
 To have the ability to access a private key vault from an Azure Pipelines agent, you'll need to use either a Self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [Mac](../agents/osx-agent.md)) or [Scale Set agents](../agents/scale-set-agents.md). This is because Microsoft Hosted agents, like other generic compute services, are not included in the key vault's list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
 
