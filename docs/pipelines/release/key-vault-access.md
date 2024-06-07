@@ -81,12 +81,12 @@ Let's start by creating a new service principal, this will enable us to access A
 
 Azure Pipelines enables developers to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
 
-1. From Azure DevOps, during the variable group configuration time.
-1. From a Self-hosted agent, during the pipeline job runtime.
+I/ From Azure DevOps, during the variable group configuration time.
+II/ From a Self-hosted agent, during the pipeline job runtime.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
 
-## Access private key vaults from Azure Devops
+## I/ Access private key vaults from Azure Devops
 
 In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure key vault from a Variable Group. Therefore, by adding inbound connections to the Azure key vault firewall, we can successfully connect to our Azure key vault.
 
@@ -110,7 +110,7 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 1. Add your secrets and then select **Save** when you're done.
 
-## 1.2 Configure inbound access from Azure DevOps
+## 1.2. Configure inbound access from Azure DevOps
 
 To enable access to your key vault from Azure DevOps, you must grant access from specific static IP ranges. These ranges are determined by the geographical location of your Azure DevOps organization.
 
@@ -126,7 +126,7 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
-## 1.3 Query private key vaults with a variable group
+## 1.3. Query private key vaults with a variable group
 
 In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure key vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure key vault from a Variable Group, so make sure you have [configured inbound access](#12-configure-inbound-access-from-azure-devops) for this to work properly:
 
@@ -151,12 +151,12 @@ steps:
     publishLocation: 'Container'
 ```
 
-## 2 Dynamically allow Microsoft-hosted agent IP
+## 2. Dynamically allow Microsoft-hosted agent IP
 
 In this second approach, we'll start by querying the IP of the Microsoft-hosted agent at the beginning of our pipeline. Then, we'll add it to the key vault allowlist, proceed with the remaining tasks, and finally, remove the IP from the key vault's firewall allowlist.
 
-> [!IMPORTANT]
-> Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
+> [!NOTE]
+> This approach is for demonstration purposes only and is not the recommended approach by Azure Pipelines.
 
 ```yml
 - task: AzurePowerShell@5
@@ -186,18 +186,19 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
     Inline: |
      $ipRange = $env:agentIP + "/32"
      Remove-AzKeyVaultNetworkRule -VaultName "YOUR_KEY_VAULT_NAME" -IpAddressRange $ipRange
+  condition: succeededOrFailed()
 ```
 
-> [!NOTE]
-> This approach is for demonstration purposes only and is not the recommended approach by Azure Pipelines.
+> [!IMPORTANT]
+> Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
-## Access private key vaults from a self-hosted agent
+## II/ Access private key vaults from a self-hosted agent
 
 To have the ability to access a private key vault from an Azure Pipelines agent, you'll need to use either a Self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [Mac](../agents/osx-agent.md)) or [Scale Set agents](../agents/scale-set-agents.md). This is because Microsoft Hosted agents, like other generic compute services, are not included in the key vault's list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
 
 To establish connectivity with your private key vault, you must provide a [line of sight](../agents/agents.md#communication-to-deploy-to-target-servers) connectivity by configuring a private endpoint for your key vault. This endpoint must be routable and have its private DNS name resolvable from the Self-hosted Pipeline agent.
 
-## Configure inbound access from a self-hosted Agent
+## 1. Configure inbound access from a self-hosted Agent
 
 1. Follow the provided instruction to [Create a virtual network](/azure/virtual-network/quick-create-portal).
 
@@ -225,7 +226,7 @@ To establish connectivity with your private key vault, you must provide a [line 
 
     :::image type="content" source="media/key-vault-approved-private-endpoint-connection.png" alt-text="A screenshot showing an approved private endpoint connection":::  
 
-## Allow your virtual network
+## 2. Allow your virtual network
 
 1. Navigate to [Azure portal](https://portal.azure.com/), and then find your Azure key vault.
  
@@ -239,7 +240,7 @@ To establish connectivity with your private key vault, you must provide a [line 
 
     :::image type="content" source="media/add-new-virtual-network-key-vault-firewall.png" alt-text="A screenshot showing how to add an existing virtual network to Azure key vault firewall.":::  
 
-## Query private key vaults from a self-hosted Agent
+## 3. Query private key vaults from a self-hosted Agent
 
 The following example uses an agent set up on the virtual network's VM to query the private key vault through the variable group:
 
