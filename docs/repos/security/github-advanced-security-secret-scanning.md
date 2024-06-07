@@ -202,7 +202,7 @@ The following table lists the non-provider generated secrets detected by secret 
 If the repository-level secret scanning upon first enabling Advanced Security appears to be stuck after some time, attempt to disable then re-enable Advanced Security to reset the scanning operation.
 
 ### Push protection not blocking a secret 
-Ensure that the secret you are attempting to block is supported for push protection using the above tables, (Supported secrets)[#supported-secrets]. 
+Ensure that the secret you are attempting to block is supported for push protection using the above tables, [Supported secrets](#supported-secrets). 
 
 ### No repository alerts created for password
-Ensure that the secret you are attempting to block is supported as a user alert using the above tables, (Supported secrets)[#supported-secrets]. If you are attempting to push a generically named secret, such as `password: password123` or `secret: password123`, secret scanning does not support this scenario and no alert is creaeted nor does push protection apply.
+Ensure that the secret you are attempting to block is supported as a user alert using the above tables, [Supported secrets](#supported-secrets). If you are attempting to push a generically named secret, such as `password: password123` or `secret: password123`, secret scanning does not support this scenario and no alert is creaeted nor does push protection apply.
