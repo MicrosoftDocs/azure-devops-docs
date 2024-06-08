@@ -2,6 +2,7 @@
 title: Build container images to deploy apps
 description: Build Linux or Windows container images for app deployment using Azure Pipelines.
 ms.topic: quickstart
+ms.custom: linux-related-content
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
 ms.date: 01/23/2024
 monikerRange: '>=azure-devops-2020'
