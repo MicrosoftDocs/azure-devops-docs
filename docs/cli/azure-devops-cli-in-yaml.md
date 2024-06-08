@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Use Azure DevOps CLI to create Azure Pipeline YAML
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, linux-related-content
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley

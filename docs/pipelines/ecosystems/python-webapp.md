@@ -7,8 +7,7 @@ ms.author: v-catherbund
 author: cebundy
 ms.date: 04/01/2024
 monikerRange: '>= azure-devops-2020'
-ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2, arm2024
-
+ms.custom: devx-track-python, freshness-fy22q2, arm2024, linux-related-content
 ---
 
 # Use Azure Pipelines to build and deploy a Python web app to Azure App Service
