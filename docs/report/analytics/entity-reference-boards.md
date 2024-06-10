@@ -40,13 +40,13 @@ Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other
 |[**Areas**](#areas) | **Area** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
 |[**Dates**](entity-reference-general.md#dates)|**CalendarDate**|The dates used to filter and group other entities using relationships.| 
 |[**Iterations**](#iterations) | **Iteration** |The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |
-|[**BoardLocations**](#kanban-board-properties-fields) |**BoardLocation**|  The Kanban board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| 
+|[**BoardLocations**](#kanban-board-properties-fields) |**BoardLocation**|  The board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each board field, see [Workflow and board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| 
 |[**Processes**](#processes) |**Process** | Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). Supported for Analytics v2.0 version and later. | 
 |[**Projects**](entity-reference-general.md#projects)|**Project** |All projects defined for an organization (cloud) or project collection (on-premises). | 
 |[**Tags**](#tags) | **Tag** |All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | 
 |[**Teams**](#teams) | **Team** |All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | 
 |[**Users**](entity-reference-general.md#users)|**User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | 
-|[**WorkItemBoardSnapshot**](#kanban-board-properties-fields) |**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | 
+|[**WorkItemBoardSnapshot**](#kanban-board-properties-fields) |**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including board location, used to generate trend reports. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | 
 |[**WorkItemLinks**](#workitemlinks)| **WorkItemLink** |The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | 
 |[**WorkItemRevisions**](#property-names-fields) |**WorkItemRevision** |All historic work item revisions, including the current revision. Doesn't include deleted work items. |  
 |[**WorkItemSnapshot**](#property-names-fields) |**WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, used to support trend reporting. For a sample report, see [Bug trends sample report](../powerbi/sample-boards-bugtrend.md).  |   
@@ -226,7 +226,7 @@ The following two functions are supported for the **WorkItem** entity. These fun
 
 ## BoardLocation and WorkItemBoardSnapshot    
 
-Properties listed and described in the following table are defined for the following entity types, unless specifically noted. With these fields, you can filter work item data based on the status of a work item within a team's Kanban board column, swimlane, or backlog level. 
+Properties listed and described in the following table are defined for the following entity types, unless specifically noted. With these fields, you can filter work item data based on the status of a work item within a team's board column, swimlane, or backlog level. 
 
 - `BoardLocation`
 - `WorkItemBoardSnapshot`  
@@ -235,23 +235,23 @@ For an example that queries the `WorkItemBoardSnapshot` entity set, see [Cumulat
 
 |**Display name**<br/>`Property name` | **Data type** | **Description**<br/>`Reference name` | 
 |-------------------------------------|---------------|--------------------------------------|
-|**Board Id**  <br/>`BoardId` | Guid | The unique GUID assigned to a Kanban board. Each team is associated with one or more Kanban boards.  | 
-|**Board Category Reference Name**<br/>`BoardCategoryReferenceName` | String | The name assigned to the category of work item types used to populate a Kanban board. For example, the product backlog board is associated with the Requirements category. To learn more, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).  | 
-| **Board Name** <br/>`BoardName` | String | The name assigned to the Kanban board. For example, *Stories*, *Backlog Items*, *Features*, and *Epics*.  | 
-|**Board Level**<br/>`BoardLevel` | Int32 | The number assigned to the Kanban board based on where it sits within the hierarchy of Kanban boards.  | 
+|**Board Id**  <br/>`BoardId` | Guid | The unique GUID assigned to a board. Each team is associated with one or more boards.  | 
+|**Board Category Reference Name**<br/>`BoardCategoryReferenceName` | String | The name assigned to the category of work item types used to populate a board. For example, the product backlog board is associated with the Requirements category. To learn more, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).  | 
+| **Board Name** <br/>`BoardName` | String | The name assigned to the board. For example, *Stories*, *Backlog Items*, *Features*, and *Epics*.  | 
+|**Board Level**<br/>`BoardLevel` | Int32 | The number assigned to the board based on where it sits within the hierarchy of boards.  | 
 |**Backlog Type** <br/>`BacklogType` | String | The name of the type of backlog. For example, Iteration, Requirement, or Portfolio.   | 
-|**Column Name**<br/>`ColumnName` | String | The name of the Kanban board column that a work item is currently assigned, such as *Active*, **Closed**, **Committed**, **Done**, or other custom column label. <br/> `System.BoardColumn`   | 
-|**Column Order**<br/>`ColumnOrder` | Int32 | The number assigned to the Kanban board column in terms of its sequence within the Kanban board.   |  
+|**Column Name**<br/>`ColumnName` | String | The name of the board column that a work item is currently assigned, such as *Active*, **Closed**, **Committed**, **Done**, or other custom column label. <br/> `System.BoardColumn`   | 
+|**Column Order**<br/>`ColumnOrder` | Int32 | The number assigned to the board column in terms of its sequence within the board.   |  
 |**Done** <br/>`Done` | Enumerated | Indicates the split-column location. Valid values are listed below for [BoardColumnSplit](#boardcolumnsplit-enumerated-members).   | 
-|**Column Item Limit**<br/>`ColumnItemLimit` | Int32 | The number assigned to the Kanban board column in terms of its sequence.  |   
+|**Column Item Limit**<br/>`ColumnItemLimit` | Int32 | The number assigned to the board column in terms of its sequence.  |   
 |**Is Board Visible** <br/>`IsBoardVisible` | Boolean | Indicates if the team has elected to make a board visible or not.  | 
-|**Is Column Split**<br/>`IsColumnSplit`  | Boolean | Indicates if a column has been split into **Doing** and **Done** columns as described in [Split columns on your Kanban board to show work in progress](../../boards/boards/split-columns.md).  | 
+|**Is Column Split**<br/>`IsColumnSplit`  | Boolean | Indicates if a column has been split into **Doing** and **Done** columns as described in [Split columns on your board to show work in progress](../../boards/boards/split-columns.md).  | 
 |**Is Current** <br/>`IsCurrent`  | Boolean | Property that supports filtering the data to view the most recent snapshot of the filtered set of work items by setting the value to `True`. | 
 |**Is Default Lane** <br/>`IsDefaultLane` | Boolean | Property that indicates the work item is assigned to the default swimlane (True) or not (False).  |    
-|**Is Done** <br/>`IsDone` | Boolean | The current assignment of the work item to **Doing** (False) or **Done** (True) within a Kanban column. Only assigned when [split-columns](../../boards/boards/split-columns.md) is enabled for a Kanban board column. <br/>`System.BoardColumnDone`   | 
-|**Lane Id** <br/>`LaneId` | Guid | The unique GUID assigned to a Kanban board swim lane. Each team can add one or more swim lanes to a Kanban board. To learn more about swimlanes, see [Speed up your team's work by using swimlanes in your Kanban board](../../boards/boards/expedite-work.md). | 
-|**Lane Name**<br/>`LaneName` | String | The name assigned to the Kanban board swimlane.<br/>`System.BoardLane`   |  
-|**Lane Order**<br/>`LaneOrder` | Int32 | The number assigned to the Kanban board swimlane in terms of its sequence. | 
+|**Is Done** <br/>`IsDone` | Boolean | The current assignment of the work item to **Doing** (False) or **Done** (True) within a column. Only assigned when [split-columns](../../boards/boards/split-columns.md) is enabled for a board column. <br/>`System.BoardColumnDone`   | 
+|**Lane Id** <br/>`LaneId` | Guid | The unique GUID assigned to a board swim lane. Each team can add one or more swim lanes to a board. To learn more about swimlanes, see [Speed up your team's work by using swimlanes in your board](../../boards/boards/expedite-work.md). | 
+|**Lane Name**<br/>`LaneName` | String | The name assigned to the board swimlane.<br/>`System.BoardLane`   |  
+|**Lane Order**<br/>`LaneOrder` | Int32 | The number assigned to the board swimlane in terms of its sequence. | 
  
 ### BoardColumnSplit enumerated members
 
@@ -265,8 +265,8 @@ The following table lists the member names for the `BoardColumnSplit` enumerated
 
 
 To learn more about board columns for a team, see the following articles:  
-- [Add columns to your Kanban board to manage your workflow](../../boards/boards/add-columns.md)
-- [Split columns on your Kanban board to show work in progress](../../boards/boards/split-columns.md) 
+- [Add columns to your board to manage your workflow](../../boards/boards/add-columns.md)
+- [Split columns on your board to show work in progress](../../boards/boards/split-columns.md) 
 
 ## Areas 
 

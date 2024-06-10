@@ -51,7 +51,7 @@ Each team administrator can configure the following elements for their team, bac
       - [Working with bugs](../organizations/settings/show-bugs-on-backlog.md)  
    :::column-end:::
    :::column span="1":::
-      **Kanban boards**
+      **Boards**
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
       - [Definition of Done](../boards/boards/add-columns.md#definition-of-done)  

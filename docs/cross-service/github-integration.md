@@ -101,7 +101,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 ::: moniker-end 
 :::row:::
    :::column span="1":::
-      Link work items to GitHub commits, pull requests, and issues. Quickly view and open linked objects from the Kanban board. 
+      Link work items to GitHub commits, pull requests, and issues. Quickly view and open linked objects from the board. 
    :::column-end::: 
    :::column span="2":::
       Supports [linking GitHub commits, pull requests, and issues to Azure Boards work items](../boards/github/link-to-from-github.md). Mentioned work items in GitHub comments are configured as hyperlinks to support quick navigation to Azure Boards work items.   
@@ -114,7 +114,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
       Add status badges of Azure Boards to a GitHub repository README file. 
    :::column-end::: 
    :::column span="2":::
-      Supports adding Markdown syntax to a GitHub repo README.md file to display the status of a Kanban board. For more information, see [Configure status badges to add to GitHub README files](../boards/github/configure-status-badges.md).   
+      Supports adding Markdown syntax to a GitHub repo README.md file to display the status of a board. For more information, see [Configure status badges to add to GitHub README files](../boards/github/configure-status-badges.md).   
       :::image type="content" source="../boards/github/media/badges/custom-columns.png" alt-text="Screenshot of GitHub status badge.":::   
    :::column-end:::
 :::row-end:::

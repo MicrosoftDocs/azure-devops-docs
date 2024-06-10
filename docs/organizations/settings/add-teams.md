@@ -89,19 +89,19 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
 	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
 
 	> [!NOTE] 
-	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, Kanban boards, and Taskboards. To learn more, see [Manage and configure team tools](manage-teams.md).   
+	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, boards, and Taskboards. To learn more, see [Manage and configure team tools](manage-teams.md).   
 
-1. When finished, select **Create**.  
+2. When finished, select **Create**.  
 
-1. Select the team to add a team image, or configure other team elements.  
+3. Select the team to add a team image, or configure other team elements.  
 
-1. Choose **Settings** to upload an image, change the team name, add a team administrator, or delete the team.   
+4. Choose **Settings** to upload an image, change the team name, add a team administrator, or delete the team.   
 
 	:::image type="content" source="media/add-team/team-settings-dialog-new-teams-preview.png" alt-text="Screenshot of Team Settings dialog, New Teams preview feature enabled.":::
 
-1. Choose **Save** to save any changes you made. 
+5. Choose **Save** to save any changes you made. 
 
-1.  Choose **Iterations and areas** to set the **Area Paths** and **Iteration Paths** for the team to use.   
+6.  Choose **Iterations and areas** to set the **Area Paths** and **Iteration Paths** for the team to use.   
 
 	:::image type="content" source="media/add-team/team-settings-select-iterations-areas-new-teams-preview.png" alt-text="Screenshot of team settings, Iterations and areas highlighted, New Teams preview feature enabled.":::
 

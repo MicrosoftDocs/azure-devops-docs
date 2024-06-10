@@ -62,14 +62,14 @@ Different work items are used to track different types of work, as described in 
 
 [!INCLUDE [temp](../../boards/includes/work-item-types.md)]
 
-## Open your Kanban board
+## Open your board
 
 You can view work items after you connect to a project.
 
 ::: moniker range="azure-devops"
 1. In your project, select **Boards** > **Boards**. Then select a **team board** from the dropdown menu.
 
-	:::image type="content" source="../../boards/boards/media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot that shows opening your Kanban board, cloud version.":::
+	:::image type="content" source="../../boards/boards/media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot that shows opening your board, cloud version.":::
 
 	You can also enter a keyword in the search box or select **View Board directory** to see a list of available team boards.
 
@@ -78,7 +78,7 @@ You can view work items after you connect to a project.
 	> [!TIP]
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
-1. Ensure that for the backlog level, you select:
+2. Ensure that for the backlog level, you select:
 
     - **Stories** for Agile.
     - **Issues** for Basic.
@@ -92,7 +92,7 @@ You can view work items after you connect to a project.
 
 1. In your project, select **Boards** > **Boards**. Then select the **team board** from the dropdown menu.
 
-	:::image type="content" source="../../boards/boards/media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot that shows opening your Kanban board in on-premises versions.":::
+	:::image type="content" source="../../boards/boards/media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot that shows opening your board in on-premises versions.":::
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -101,7 +101,7 @@ You can view work items after you connect to a project.
 	> [!TIP]
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
-1. Check that for the backlog level, you selected:
+2. Check that for the backlog level, you selected:
 
     - **Stories** for Agile.
     - **Issues** for Basic.
@@ -123,7 +123,7 @@ From your board, select the :::image type="icon" source="../../media/icons/add-i
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"
-From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by selecting the **Backlog** link. Also, you can't update the status of a work item by using the drag-and-drop method to move a different column or reorder cards within a column.
+From the board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by selecting the **Backlog** link. Also, you can't update the status of a work item by using the drag-and-drop method to move a different column or reorder cards within a column.
 ::: moniker-end  
 
 For more information, see [View and add work items from the Work Items page](../../boards/work-items/view-add-work-items.md).
@@ -138,7 +138,7 @@ Your work item forms might differ from the following images, but the functionali
 
 Use the drag-and-drop method to move a work item downstream as you finish work.
 
-:::image type="content" source="../../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot that shows a Kanban board that uses an Agile template to update the status of a work item.":::
+:::image type="content" source="../../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot that shows a board that uses an Agile template to update the status of a work item.":::
 
 ::: moniker-end  
 ::: moniker range="azure-devops-2020"
@@ -192,13 +192,13 @@ To add more details, you can change field values, add a description or tags, and
 Check the product backlog to see how the team prioritized their work. Backlog items appear in priority order. Work item types might include bugs depending on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md).
 
 ::: moniker range="azure-devops"
-From the Kanban board, select **View as backlog**.
+From the board, select **View as backlog**.
 
 :::image type="content" source="../../boards/media/switch-to-backlog-cloud.png" alt-text="Screenshot that shows View as backlog in a cloud version.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
-From the Kanban board, select **View as backlog**.
+::: moniker range=" < azure-devops"
+From the board, select **View as backlog**.
 :::image type="content" source="../../boards/media/switch-to-backlog-2019.png" alt-text="Screenshot that shows View as backlog in an on-premises version.":::
 ::: moniker-end
 
@@ -229,6 +229,6 @@ For more information, see:
 ## Related articles
 
 - [Add work items](../../boards/backlogs/add-work-items.md)
-- [Get started with Kanban](../../boards/boards/kanban-quickstart.md)
+- [Get started with Kanban boards](../../boards/boards/kanban-quickstart.md)
 - [Learn about access levels](access-levels.md)
 - [Change access levels](change-access-levels.md)

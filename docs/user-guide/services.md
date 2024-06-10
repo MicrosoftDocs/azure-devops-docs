@@ -123,7 +123,7 @@ You can do the following tasks with boards.
 - Manage your product backlog
 - Plan sprints by using sprint backlogs
 - Review sprint tasks and update tasks through the task boards
-- Visualize the workflow and update the status by using Kanban boards
+- Visualize the workflow and update the status by using boards
 - Manage portfolios by grouping stories under features and grouping features under epics
 - Use task boards during daily Scrum meetings to review completed, remaining, or blocked work
 

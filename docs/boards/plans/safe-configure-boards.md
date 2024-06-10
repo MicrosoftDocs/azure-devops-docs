@@ -54,7 +54,7 @@ We'll then configure the area path to the following hierarchy and configuring ea
 > [!TIP]    
 > If you have a large number of teams, area paths, and iterations that you need to add, you may want to use command line or programmatic tools. See the [Command line and  programmatic tools](#command-line-and-programmatic-tools) provided later in this article. 
 
-All teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
+All teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own board, prioritize the items on their backlog, and view progress across release trains.
 
 While the above may sound complicated, it actually takes little configuration to set up the teams and get started.
 To go from one project with one default team, first define each team while automatically creating a default area path for that team. Then reconfigure the flat set of area paths to a hierarchical structure. Next, define the iteration paths to support the release structure you want and the program and Agile teams to use. Lastly, configure each team and populate the membership of teams.  

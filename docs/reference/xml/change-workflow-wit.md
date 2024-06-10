@@ -26,7 +26,7 @@ The workflow determines the logical progression and regression of work that team
 
 
 > [!NOTE]  
-> This article describes how to customize a workflow state. If instead, you want to change the *State* assigned to a specific work item, see one of the following articles: [Kanban board, Track work in progress](../../boards/boards/kanban-quickstart.md#track-work-in-progress), or [Task board, Update task status](../../boards/sprints//task-board.md#update-task-status). You can also perform a [bulk update of the *State* for many work items](../../boards/backlogs/bulk-modify-work-items.md).
+> This article describes how to customize a workflow state. If instead, you want to change the *State* assigned to a specific work item, see one of the following articles: [Board, Track work in progress](../../boards/boards/kanban-quickstart.md#track-work-in-progress), or [Task board, Update task status](../../boards/sprints//task-board.md#update-task-status). You can also perform a [bulk update of the *State* for many work items](../../boards/backlogs/bulk-modify-work-items.md).
 > 
 > For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
@@ -316,7 +316,7 @@ When the value of the **State** field for a work item is set to Active and the w
 
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize-work.md)  
-- [Query by assignment, workflow or Kanban board changes](../../boards/queries/query-by-workflow-changes.md)  
+- [Query by assignment, workflow or board changes](../../boards/queries/query-by-workflow-changes.md)  
 - [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)    
 - [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
 

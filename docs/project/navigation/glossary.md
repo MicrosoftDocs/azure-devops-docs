@@ -18,7 +18,7 @@ ms.date: 04/22/2024
 This glossary describes terms used when navigating in the web portal for Azure DevOps. See also the [Agile glossary](../../boards/work-items/agile-glossary.md).
 
 ## Backlogs 
-An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. 
+An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the board. 
 
 Teams can customize each backlog. For more information, see [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
@@ -45,8 +45,8 @@ Authentication verifies a user's identify based on the credentials provided when
 
 Authorization is the operation that's performed to verify that the identity that's attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. For more information, see [About security, authentication, and authorization](../../organizations/security/about-security-identity.md).
 
-## Boards (Kanban) 
-An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban overview](../../boards/boards/kanban-overview.md).
+## Boards
+An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Board overview](../../boards/boards/kanban-overview.md).
 
 [!INCLUDE [temp](../../includes/glossary-terms/collections.md)] 
 

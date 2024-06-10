@@ -616,7 +616,7 @@ You can use the macros described in the following table to filter your queries b
       **@Me** 
    :::column-end:::
    :::column span="3":::
-      Use with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause `Created By=@Me`. For more examples, see [Query by assignment, workflow, or Kanban board changes](query-by-workflow-changes.md).
+      Use with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause `Created By=@Me`. For more examples, see [Query by assignment, workflow, or board changes](query-by-workflow-changes.md).
    :::column-end:::
 :::row-end:::
 ---

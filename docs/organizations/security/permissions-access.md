@@ -62,7 +62,7 @@ You can use work items to track anything you need to track. To learn more, see [
 
 ### Boards  
 
-You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop.
+You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban/Agile methods. Boards present work items as cards and support quick status updates through drag-and-drop.
 
 [!INCLUDE [temp](includes/boards-boards.md)]
 

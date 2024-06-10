@@ -395,7 +395,7 @@ Iteration paths can be a flat list, or grouped under release milestones as shown
 
 :::image type="content" source="media/config-custom/iteration-paths-flat-or-grouped.png" alt-text="Screenshot of Iteration paths, grouped.":::
 
-While Iteration Paths don't affect Kanban board tools, you can use Iteration Paths as a filter on boards. For more information, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
+While Iteration Paths don't affect board tools, you can use Iteration Paths as a filter on boards. For more information, see [Filter your board](./backlogs/filter-backlogs-boards-plans.md).
 
 [!INCLUDE [temp](includes/list-sprint-dependent-tools.md)]
 
@@ -443,27 +443,27 @@ The following table shows the effects when you add a custom WIT to a specific ca
 	- Work items based on the new WIT appear on the sprint backlogs and Taskboards
    :::column-end:::
    :::column span="1":::
-   - Work items based on the new WIT appear on the product backlog and Kanban board
-	- Each team must configure the Kanban board to support the new WIT 
+   - Work items based on the new WIT appear on the product backlog and \board
+	- Each team must configure the \board to support the new WIT 
    :::column-end:::
    :::column span="1":::
-   - Work items based on the new WIT appear on the corresponding portfolio backlogs and Kanban boards
-	- Each team must configure the Kanban boards to support the new WIT
+   - Work items based on the new WIT appear on the corresponding portfolio backlogs and boards
+	- Each team must configure the \boards to support the new WIT
 	- The new WITs might not appear on one or more of the portfolio planning tools
    :::column-end:::  
 :::row-end:::
 
 ### Custom workflow 
 
-Each process supports a default workflow. This workflow defines the default columns that appear on the Kanban boards and sprint Taskboards. 
+Each process supports a default workflow. This workflow defines the default columns that appear on the boards and sprint Taskboards. 
 
 [!INCLUDE [temp](includes/four-process-workflow.md)] 
 
 Sometimes, teams want to track the status of their work that goes beyond these default states. Support is provided in one of the following ways: 
-- Add custom workflow states to the WIT: This option impacts all teams and requires that they update their Kanban board configuration. 
-- [Add columns to a Kanban board](backlogs/set-column-options.md): This option only impacts the team that adds the columns.
+- Add custom workflow states to the WIT: This option impacts all teams and requires that they update their board configuration. 
+- [Add columns to a board](backlogs/set-column-options.md): This option only impacts the team that adds the columns.
 
-Both workflow states and Kanban columns appear in the Cumulative Flow diagram for a team. Individuals can choose which columns appear in the chart. For more information, see [Cumulative flow diagram](../report/dashboards/cumulative-flow.md). 
+Both workflow states and columns appear in the Cumulative Flow diagram for a team. Individuals can choose which columns appear in the chart. For more information, see [Cumulative flow diagram](../report/dashboards/cumulative-flow.md). 
 
 ## Who can make changes? 
 
@@ -502,7 +502,7 @@ Team administrators do the following operations:
 - Add team members 
 - Subscribe to area and iteration paths
 - Configure backlogs and other common team settings 
-- Configure Kanban boards 
+- Configure boards 
 - Manage team notifications
 
 For more information on configuring backlogs and boards, see [Manage and configure team tools](../organizations/settings/manage-teams.md).

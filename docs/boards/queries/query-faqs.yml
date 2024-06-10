@@ -70,7 +70,7 @@ sections:
                 - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
                 - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
-                - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
+                - [Board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md)
                 ::: moniker-end

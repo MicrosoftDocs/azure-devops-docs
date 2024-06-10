@@ -163,7 +163,7 @@ With work items selected, open the context menu for any selected item, and reass
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Queries Results page, bulk modify, Assign to selection from More actions menu.](media/bulk-modify/assign-from-query.png)  
 
-To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
+To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
 

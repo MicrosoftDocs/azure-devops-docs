@@ -119,7 +119,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 ## Color-code tags on boards
 
-Highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md). 
+Highlight tags on board cards by color-coding them. These colors only appear on the board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md). 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of sequence, Boards, Settings, Tag colors dialog.](media/add-tags/color-code-tags.png)
