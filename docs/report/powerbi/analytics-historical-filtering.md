@@ -24,7 +24,7 @@ The following table describes the entity sets that you can use to create histori
 
 |`EntitySet`  |   **Description** | **Sample report** |
 |------------|-------------|-------------|  
-|[**WorkItemBoardSnapshot**](../analytics/entity-reference-boards.md#kanban-board-properties-fields) |(Composite) The state of each work item on each calendar date, including Kanban board location. | [Cumulative Flow Diagram (CFD) sample report](sample-boards-cfd.md) |
+|[**WorkItemBoardSnapshot**](../analytics/entity-reference-boards.md#kanban-board-properties-fields) |(Composite) The state of each work item on each calendar date, including board location. | [Cumulative Flow Diagram (CFD) sample report](sample-boards-cfd.md) |
 |[**WorkItemRevisions**](../analytics/entity-reference-boards.md#property-names-fields)|All historic work item revisions, including the current revision. Doesn't include deleted work items. | [Return the history of a specific work item](../extend-analytics/analytics-recipes.md#history)   | 
 |[**WorkItemSnapshot**](../analytics/entity-reference-boards.md#property-names-fields)|(Composite) The state of each work item on each calendar date. |[Bug trends sample report](sample-boards-bugtrend.md)   |   
 |[**ParallelPipelineJobsSnapshot**](../analytics/entity-reference-pipelines.md#parallelpipelinejobssnapshot)|(Composite) Supports understanding of parallel pipeline consumption.  |    | 

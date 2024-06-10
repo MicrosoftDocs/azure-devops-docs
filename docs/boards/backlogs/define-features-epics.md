@@ -181,7 +181,7 @@ Open each item by double-clicking, or highlight the item and select **Enter**. T
 
 ## Add child items
 
-You can add child items to your features from any backlog. You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for features. And, you can add child features from the Epic board. For more information, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). To quickly parent or reparent children from a backlog, see [Organize your backlog, map child work items to parents](organize-backlog.md).
+You can add child items to your features from any backlog. You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the board for features. And, you can add child features from the Epic board. For more information, see [Board features and epics](../boards/kanban-epics-features-stories.md). To quickly parent or reparent children from a backlog, see [Organize your backlog, map child work items to parents](organize-backlog.md).
 
 ::: moniker range=">= azure-devops-2019"
 

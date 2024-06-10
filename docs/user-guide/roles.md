@@ -57,7 +57,7 @@ Product owners typically plan the feature set to deliver, set priorities, and tr
 
 - Use the product backlog to quickly define and prioritize user stories, features, and other work items
 - Use the sprint backlog and task board to implement Scrum practices
-- Use the Kanban board to work with Kanban methods
+- Use your board to work with Kanban methods
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards
 - Use dashboards to share information, status, and trends with your team or organization
   

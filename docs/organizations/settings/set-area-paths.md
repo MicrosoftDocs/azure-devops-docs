@@ -58,7 +58,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
 > [!NOTE]
-> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md).
+> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
 
 
 As needed, you can do the following actions at any time:
@@ -338,7 +338,7 @@ All work items that are assigned to a team area path appear on the backlogs and 
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
 > [!IMPORTANT]  
-> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+> Work items that appear on more than one team's board can yield query results that don't meet your expectations. Because each team can customize the board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
  
 #### [Browser](#tab/browser/)

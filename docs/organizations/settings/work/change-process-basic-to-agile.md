@@ -67,23 +67,23 @@ For more information, see [About processes and process templates](../../../board
    :::image type="content" source="media/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png" alt-text="Screenshot of completion page.":::
 
 7. (Optional) If you had existing work items, manually update work items and board settings.
-   1. Update the column to state mapping for each team Kanban board.
+   1. Update the column to state mapping for each team board.
    2. Update existing work items using the work item types set by the target process.
    3. Update existing work items using the correct state model of the target process.
 
-## Update Kanban board column-to-state settings
+## Update board column-to-state settings
 
-You can customize Kanban boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. To learn more, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
+You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. To learn more, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
-1. For each team, [open your Kanban board](../../../boards/get-started/plan-track-work.md), and then select **Correct this now** or select the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
+1. For each team, [open your board](../../../boards/get-started/plan-track-work.md), and then select **Correct this now** or select the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 
-   :::image type="content" source="media/change-process/open-kanban-board.png" alt-text="Screenshot of opened Kanban board.":::
+   :::image type="content" source="media/change-process/open-kanban-board.png" alt-text="Screenshot of opened board.":::
 
    The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 
    :::image type="content" source="media/change-process/kanban-stories-column-settings-to-correct.png" alt-text="Screenshot of Column dialog with settings to correct.":::
 
-2. Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. **Save** your work when you're done. For more information, see [Manage columns on your Kanban board.](../../../boards/boards/add-columns.md)
+2. Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. **Save** your work when you're done. For more information, see [Manage columns on your board.](../../../boards/boards/add-columns.md)
 
 ## Update work items
 

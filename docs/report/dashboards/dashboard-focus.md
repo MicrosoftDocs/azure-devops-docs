@@ -236,7 +236,7 @@ Create a dedicated dashboard to review how tests, builds, and deployments are pr
 
 ## Extend your dashboard visibility 
 
-You can add Kanban boards and dashboards as tabs to your Teams channel. 
+You can add boards and dashboards as tabs to your Teams channel. 
 [Configure Azure DevOps Services tabs in Microsoft Teams](../../boards/integrations/boards-teams.md#configure-azure-devops-services-tabs-in-microsoft-teams)
 
 ## Related articles

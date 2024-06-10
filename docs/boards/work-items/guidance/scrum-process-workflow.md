@@ -118,13 +118,13 @@ PBIs and bugs follow this typical workflow progression:
 -  The team updates the status to **Committed** when they decide to commit to working on it during the sprint  
 -  The item gets moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
-### Update status with Kanban or Taskboards
+### Update status with board or Taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of PBIs, and the [sprint Taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [board](../../boards/kanban-overview.md) to update the status of PBIs, and the [sprint Taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-:::image type="content" source="../../boards/media/alm-cc-move-card.png" alt-text="Screenshot of track progress on the Kanban board.":::
+:::image type="content" source="../../boards/media/alm-cc-move-card.png" alt-text="Screenshot of track progress on the board.":::
 
-You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For other customization options, see [Customize your work tracking experience](#customize-work-tracking).
+You can customize the board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For other customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
 
 ## Map PBIs to features

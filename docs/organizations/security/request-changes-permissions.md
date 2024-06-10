@@ -26,7 +26,7 @@ Most users added to the **Contributors** group are granted the permissions they 
 - **Work tracking** 
 	- Add or change **Area Paths** or **Iteration Paths**: Requires elevated permissions to an Area Path or Iteration Path node. To learn more, see [Set work tracking permissions, Create child nodes](set-permissions-access-work-tracking.md#set-permissions-area-path). 
 	- Create shared queries or query folders: Requires elevated permissions set for a shared query folder. To learn more, see [Set work tracking permissions, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries). 
-	- Change team settings&mdash;such as Kanban board settings: Requires addition as a team administrator. To learn more, see  [Add or remove a team administrator](../settings/add-team-administrator.md)
+	- Change team settings&mdash;such as board settings: Requires addition as a team administrator. To learn more, see  [Add or remove a team administrator](../settings/add-team-administrator.md)
 
 - **Source code, Git repositories**, the following tasks require elevated permissions for Git repositories or a specific repository. To learn more, see [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
 	- Create, delete, or rename a Git repository 

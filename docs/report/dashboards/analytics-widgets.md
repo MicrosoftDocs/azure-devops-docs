@@ -80,7 +80,7 @@ To learn more, see [Configure and monitor sprint burndown](configure-sprint-burn
 
 ## Cumulative Flow Diagram (CFD) widget
 
-The CFD widget shows the count of work items (over time) for each column of a Kanban board. It allows you to see patterns in your team's development cycle over time. It will help you answer questions like: 
+The CFD widget shows the count of work items (over time) for each column of a board. It allows you to see patterns in your team's development cycle over time. It will help you answer questions like: 
 * Is there a bottleneck in my process? 
 * Am I consistently delivering value to my users? 
 

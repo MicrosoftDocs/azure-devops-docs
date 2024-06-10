@@ -126,11 +126,11 @@ With a hierarchy, you can manage a set of features that different teams work on.
 
 ### Use tags to group work items   
  
-Work item tags are labels that team members can add to work items. You can filter backlogs and boards by these tags to see only the work items that match them. You can also use tags in your queries. For example, you can see only the cards with the Web tag on the Kanban board by filtering it with the *web* tag, as shown in the following image.
+Work item tags are labels that team members can add to work items. You can filter backlogs and boards by these tags to see only the work items that match them. You can also use tags in your queries. For example, you can see only the cards with the Web tag on the board by filtering it with the *web* tag, as shown in the following image.
 
 **Filter backlogs and boards based on tags** 
 
-![Screenshot of Kanban board, Filter using keyword search.](../boards/backlogs/media/filter-boards/filter-kb-text-web-services.png)
+![Screenshot of board, Filter using keyword search.](../boards/backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum  
 
@@ -142,9 +142,9 @@ Use a Kanban board to visualize your work items on a product or portfolio backlo
 
 You can customize your board to match your Kanban practices. For example, you can define columns and swimlanes, set WIP limits, and specify the Definition of Done. You can drag a work item to a different column to update its status as it moves through the stages of your workflow.
 
-**Example Kanban board** 
+**Example board** 
 
-:::image type="content" source="../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot of Kanban board, Agile template, update status of work item."::: 
+:::image type="content" source="../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot of board, Agile template, update status of work item."::: 
 
 ### Implement Scrum  
 
@@ -231,11 +231,11 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 To review progress and deliverables, you can use the following tools:
 
-- Features Kanban board: Shows the status of each feature and its tasks
+- Features board: Shows the status of each feature and its tasks
 - Features backlog: Displays the rollup columns for the features and their child work items
 - Delivery plans: Provides a timeline view of the features and their dependencies across different teams
 
-### Features Kanban board 
+### Features board 
  
 You can also use your **Features** board to track progress and ensure the continuous delivery of value. The following image shows an example of a customized Features board. It has added columns for different stages of feature development, such as Need more info, Spec Complete, In Progress, and Customer Rollout. These columns reflect the natural flow of features from proposal to production.
 

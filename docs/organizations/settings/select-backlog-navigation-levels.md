@@ -39,7 +39,7 @@ This setting impacts the backlog and board views for all team members. You can m
 ::: moniker range=">= azure-devops-2019" 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Choose **Boards**, and then open your Kanban board.
+2. Choose **Boards**, and then open your board.
 
 3. Select **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::.  
 

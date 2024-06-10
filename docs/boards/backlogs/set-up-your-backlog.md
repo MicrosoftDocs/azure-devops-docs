@@ -69,7 +69,7 @@ Your sprint backlog displays only those work items assigned to the selected spri
 
 ## Review checklist for work items, backlogs, and boards
 
-If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [Kanban board](../boards/kanban-quickstart.md), complete the following checks: 
+If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [board](../boards/kanban-quickstart.md), complete the following checks: 
 
 1. Make sure you've selected the team backlog or board of interest. To learn how, see [Use breadcrumbs and selectors to go to and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -92,7 +92,7 @@ If you don't see the work items you expect on your [product Backlog](create-your
 
 ::: moniker range=">= azure-devops-2019"
 
-For all processes except the Basic process, each team manages the way bugs are tracked. Track bugs in the Requirements category because they show up on the Backlog and Kanban board or the Tasks category. They can also show up on the Taskboard or the Bugs category where they don't appear on either backlogs or boards. 
+For all processes except the Basic process, each team manages the way bugs are tracked. Track bugs in the Requirements category because they show up on the Backlog and board or the Tasks category. They can also show up on the Taskboard or the Bugs category where they don't appear on either backlogs or boards. 
 
 ::: moniker-end
 
@@ -107,19 +107,19 @@ If you want bugs to show up on your Backlog and Board, choose <strong>Bugs are m
 
 For more information, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-## Correct your Kanban board configuration
+## Correct your board configuration
 
-If you see the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the Requirements category aren't mapped to the column. 
+If you see the following error when you open your board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the Requirements category aren't mapped to the column. 
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Configuration error message](media/setup-backlog/column-config-error.png)
+> ![Board, Configuration error message](media/setup-backlog/column-config-error.png)
 
-Choose **Correct this now** to open the Settings dialog. To map the workflow states, refer to [Add columns to your Kanban board, Update Kanban column-to-State mappings](../boards/add-columns.md#state-mappings). 
+Choose **Correct this now** to open the Settings dialog. To map the workflow states, refer to [Add columns to your board, Update column-to-State mappings](../boards/add-columns.md#state-mappings). 
 
 
-## Customize your Kanban board checklist items
+## Customize your board checklist items
 
-Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md).
+Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -153,9 +153,9 @@ To learn more about checklists, see the following articles:
 
 ::: moniker range=">= azure-devops-2019"
 
-## Add other work item types to your Kanban board checklist
+## Add other work item types to your board checklist
 
-If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose if these types appear within a checklist on your product Kanban board. You make this choice by opening **Board Settings**, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to five annotations. For more information, see [Customize cards](../boards/customize-cards.md). 
+If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose if these types appear within a checklist on your product board. You make this choice by opening **Board Settings**, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to five annotations. For more information, see [Customize cards](../boards/customize-cards.md). 
 
 For example, here  we've chosen to track bugs along with tasks, and we enable Issue and Ticket and Task and Bug. To learn more about checklists, see [Add tasks or child items as checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
 
@@ -221,7 +221,7 @@ To add custom work item types to appear on your sprint Taskboard, follow the ste
 
 ::: moniker range=">= azure-devops-2019 "
 > [!NOTE]
-> You can enable work item types that you add to your Iteration backlog to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban board checklist items](#customize-checklist-2019) provided earlier in this article. 
+> You can enable work item types that you add to your Iteration backlog to appear as a checklist on your product board. To learn how, see [Customize your board checklist items](#customize-checklist-2019) provided earlier in this article. 
 
 ::: moniker-end
 
@@ -282,12 +282,12 @@ For on-premises deployments that use the On-premises XML process model to custom
 ## Other factors that can affect work items in your backlogs and boards
 The following settings can influence the type and number of work items that appear in your backlogs and boards. 
 
-- In your Kanban board, newly added work items may not appear if they're stack ranked lower within the product backlog. By choosing **Show more items**, you can cause the board to refresh and display more work items. 
+- In your board, newly added work items may not appear if they're stack ranked lower within the product backlog. By choosing **Show more items**, you can cause the board to refresh and display more work items. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards, Show more items](media/setup-backlog/show-more-items.png) 
 
-- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md).
+- If you have nested work items that belong to the same category, only leaf nodes may appear on the board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md).
 
 - If you've turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 

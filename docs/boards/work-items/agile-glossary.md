@@ -39,7 +39,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 
 ## Categories
 
-Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and taskboard pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. For more information, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
+Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and taskboard pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and boards. For more information, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
 
 [!INCLUDE [temp](../../includes/glossary-terms/collections.md)] 
 
@@ -90,7 +90,7 @@ The Inheritance process model provides support for customizing work tracking obj
 
 **Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It's defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md). 
 
-**Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It's defined for the Basic process and appears on the product backlog and [Issues Kanban board](../get-started/plan-track-work.md). 
+**Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It's defined for the Basic process and appears on the product backlog and [Issues board](../get-started/plan-track-work.md). 
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 [!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
@@ -115,7 +115,7 @@ A picklist specifies an enumerated set of values that appear within a drop-down 
 
 ## Process configuration
 
-Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and taskboard. (Only supported for Hosted XML and On-premises XML process models)  
+Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, board, and taskboard. (Only supported for Hosted XML and On-premises XML process models)  
 
 ## Process model  
 

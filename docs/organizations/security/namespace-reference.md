@@ -887,7 +887,7 @@ The following table describes the security namespaces and permissions that aren'
       `Manage`          
    :::column-end:::
    :::column span="2":::
-      Manages permissions and access to Kanban boards.  
+      Manages permissions and access to boards.  
       <br/>
       **ID:** `251e12d9-bea3-43a8-bfdb-901b98c0125e`
    :::column-end:::

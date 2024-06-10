@@ -49,7 +49,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the boards and Taskboards map to a Proposed state category. 
    :::column-end:::
    :::column span="1":::
    New
@@ -60,7 +60,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on boards. 
    :::column-end::: 
    :::column span="1":::
    Active (Bug, Epic, Feature, User Story)
@@ -82,7 +82,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. You can't modify states in this category nor can you add states to this category.
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the board. You can't modify states in this category nor can you add states to this category.
    :::column-end::: 
    :::column span="1":::
    Closed (Bug, Epic, Feature, User Story)  
@@ -121,7 +121,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the boards and Taskboards map to a Proposed state category. 
    :::column-end:::
    :::column span="1":::
    To Do
@@ -132,7 +132,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on boards. 
    :::column-end::: 
    :::column span="1":::
    Doing
@@ -154,7 +154,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. You can't modify states in this category nor can you add states to this category.
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the board. You can't modify states in this category nor can you add states to this category.
    :::column-end::: 
    :::column span="1":::
    Done  
@@ -191,7 +191,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the boards and Taskboards map to a Proposed state category. 
    :::column-end:::
    :::column span="1":::
    New (Bug, Epic, Feature, Product backlog item)  Approved  To Do (Task) 
@@ -202,7 +202,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on boards. 
    :::column-end::: 
    :::column span="1":::
    Committed (Bug, Epic, Feature, Product backlog item)  Open (Impediment)
@@ -224,7 +224,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. You can't modify states in this category nor can you add states to this category.
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the board. You can't modify states in this category nor can you add states to this category.
    :::column-end::: 
    :::column span="1":::
    Done  
@@ -261,7 +261,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the boards and Taskboards map to a Proposed state category. 
    :::column-end:::
    :::column span="1":::
    Proposed  
@@ -272,7 +272,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on boards. 
    :::column-end::: 
    :::column span="1":::
    Active  Resolved (Epic, Feature, Requirement, Task)
@@ -294,7 +294,7 @@ Here's how the default, inherited states map to the category states for the four
 :::row-end:::
 :::row:::
    :::column span="2":::
-   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. You can't modify states in this category nor can you add states to this category.
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the board. You can't modify states in this category nor can you add states to this category.
    :::column-end::: 
    :::column span="1":::
    Closed  
@@ -321,13 +321,13 @@ Here's how the default, inherited states map to the category states for the four
 
 [!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
 
-## When to add a State versus a Kanban column
+## When to add a State versus a column
 
-Use both States and Kanban columns to track the status of work. Workflow states are shared across a project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
+Use both States and columns to track the status of work. Workflow states are shared across a project while columns are shared within a team. Only project collection admins can add custom states, while team admins can add columns.  
 
 Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the projects and work item types that reference that process. 
 
-Adding custom states to support workflow states that multiple teams want to track, helps avoid the resulting confusion of different teams creating queries based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items that appear on different boards might not be the same. The primary workaround for this issue is to maintain single ownership of work items by team area path. Another workaround is to formalize the columns by adding custom states that can be shared across teams. 
+Adding custom states to support workflow states that multiple teams want to track, helps avoid the resulting confusion of different teams creating queries based on a column. Because each team can customize the board columns and swimlanes, the values assigned to work items that appear on different boards might not be the same. The primary workaround for this issue is to maintain single ownership of work items by team area path. Another workaround is to formalize the columns by adding custom states that can be shared across teams. 
 
 ## Auto completion of work items with pull requests 
 
