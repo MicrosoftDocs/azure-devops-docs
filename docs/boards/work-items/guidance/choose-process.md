@@ -56,7 +56,7 @@ The default processes differ mainly in the work item types they provide for plan
    
    **Agile**
 
-   Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. This process works great for tracking User Stories and (optionally) bugs on the Kanban board. You can also track bugs and tasks on the taskboard.
+   Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. This process works great for tracking User Stories and (optionally) bugs on the board. You can also track bugs and tasks on the taskboard.
 
    For more information about Agile methodologies, see [Agile Alliance](https://www.agilealliance.org/).
    
@@ -75,7 +75,7 @@ The default processes differ mainly in the work item types they provide for plan
    **Scrum**
 
    
-   Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great for tracking product backlog items and bugs on the Kanban board. You can also break down product backlog items and bugs into tasks on the taskboard.
+   Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great for tracking product backlog items and bugs on the board. You can also break down product backlog items and bugs into tasks on the taskboard.
    
    This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).
 
@@ -344,7 +344,7 @@ The following table summarizes the main distinctions between the work item types
 
 Notes:
 
-1. Add work items from the [product backlog](../../backlogs/create-your-backlog.md) or [Kanban board](../../boards/kanban-overview.md). The product backlog shows a single view of the current backlog of work that can be dynamically reordered and grouped. Product owners can quickly prioritize work and outline dependencies and relationships. Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
+1. Add work items from the [product backlog](../../backlogs/create-your-backlog.md) or [board](../../boards/kanban-overview.md). The product backlog shows a single view of the current backlog of work that can be dynamically reordered and grouped. Product owners can quickly prioritize work and outline dependencies and relationships. Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
 1. Define a hierarchy of portfolio backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives. Each team configures which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
 1. Define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). With capacity planning, teams can quickly determine if they're over- or undercapacity for a sprint.
 
@@ -490,7 +490,7 @@ Each image shows only the default reason associated with the transition.
 
 * * *
 
-Most work item types used by Agile tools, the ones that appear on backlogs and boards, support any-to-any transitions. Update the status of a work item by using the Kanban board or the taskboard by dragging it to its corresponding state column.
+Most work item types used by Agile tools, the ones that appear on backlogs and boards, support any-to-any transitions. Update the status of a work item by using the board or the taskboard by dragging it to its corresponding state column.
 
 Change the workflow to support other states, transitions, and reasons. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
@@ -500,7 +500,7 @@ Change the workflow to support other states, transitions, and reasons. For more 
 
 When you change the state of a work item to `Removed`, `Closed`, or `Done`, the system responds as follows:
 
-- `Closed`/`Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. They do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
+- `Closed`/`Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. They do appear on the sprint backlog pages, board, and taskboard. Also, when you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
 - `Removed`: Work items in this state don't appear on any backlog or board.
 
 Your project maintains work items as long as the project is active. Even if you set work items to `Closed`, `Done`, or `Removed`, the data store keeps a record. Use a record to create queries or reports.

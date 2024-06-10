@@ -148,7 +148,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 ## Create a branch for several work items  
 
-You can also add a new branch from the work item listed on the backlog or Kanban board without having to open the work item. Using [multi-select](bulk-modify-work-items.md), you can select several work items and create a new branch where they're all linked to the branch. 
+You can also add a new branch from the work item listed on the backlog or board without having to open the work item. Using [multi-select](bulk-modify-work-items.md), you can select several work items and create a new branch where they're all linked to the branch. 
 
 For example, here we select the first five items to link to a new branch.  
 

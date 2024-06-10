@@ -71,9 +71,9 @@ sections:
           - [Define a query, Query across projects](../boards/queries/using-queries.md) 
           - [Search for work items](search/functional-work-item-search.md)
 
-      - question: Can I view a Kanban board of work items defined in different projects? 
+      - question: Can I view a board of work items defined in different projects? 
         answer: |
-          **Yes**. The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension supports this feature. You can view a Kanban board view of a flat-list query of work items.
+          **Yes**. The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension supports this feature. You can view a board view of a flat-list query of work items.
 
       - question: Can I link work items across projects? 
         answer: |

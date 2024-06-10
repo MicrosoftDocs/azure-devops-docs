@@ -194,7 +194,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
    :::column-end:::
    :::column span="2":::
-      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
+      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). Configure boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -391,7 +391,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Define iteration paths or sprints](set-iteration-paths-sprints.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -406,7 +406,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set retention policies](../../pipelines/policies/retention.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---

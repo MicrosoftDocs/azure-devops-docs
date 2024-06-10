@@ -370,7 +370,7 @@ Azure Boards provides several in-context reports that derive from Analytics data
 
 ### Cumulative Flow Diagram
 
-Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns.
+Use the interactive controls to choose the time frame, swimlanes, and workflow states or board columns.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot that shows open CFD analytics.](media/cfd/analytics-cfd-azure-devops.png)

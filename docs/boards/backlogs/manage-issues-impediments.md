@@ -66,7 +66,7 @@ Define tasks when you want to create a [checklist of tasks](../boards/add-task-c
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]  
-> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Set up your backlogs and boards, Customize your Kanban Board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
+> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product board. To learn how, see [Set up your backlogs and boards, Customize your board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
 
 ::: moniker-end
 

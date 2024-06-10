@@ -114,7 +114,7 @@ You can also delete and/or destroy work items in batch with a REST API. For more
 
 ### Remove work items
 
-By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you [define custom workflow states](../../organizations/settings/work/customize-process-workflow.md), any state you map to the **Removed** workflow category state act in a similar way. 
+By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, boards, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you [define custom workflow states](../../organizations/settings/work/customize-process-workflow.md), any state you map to the **Removed** workflow category state act in a similar way. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, Change State to Removed.](media/move-change-delete/remove-state.png)  
@@ -139,7 +139,7 @@ Deleted work items don't appear in your backlogs, boards, or queries. When you d
 You can delete work items in one of the following ways: 
 - The work item form
 - The **Work Items** page :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More Actions** menu
-- The Kanban board card :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu
+- The board card :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu
 - A backlog or query results page
 - [REST API](/rest/api/azure/devops/wit/work-items/delete-work-items?view=azure-devops-rest-7.1&preserve-view=true&tabs=HTTP)
 
@@ -154,10 +154,10 @@ You can delete work items in one of the following ways:
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of backlog multi-select Actions menu, choose Delete.](media/move-change-delete/multi-delete.png) 
 
-	- To delete a work item from your Kanban or Taskboard, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu for the card and select **Delete**. 
+	- To delete a work item from your board or Taskboard, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu for the card and select **Delete**. 
  
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Kanban board card context menu, choose Delete.](media/move-change-delete/delete-work-items-from-kanban-board.png)
+	> ![Screenshot of board card context menu, choose Delete.](media/move-change-delete/delete-work-items-from-kanban-board.png)
 	>
 2. Confirm you want to delete the item(s).  
 

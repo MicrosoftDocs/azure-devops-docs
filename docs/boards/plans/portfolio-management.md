@@ -62,7 +62,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 ## Feature team backlog ownership and view of progress 
 
-Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and Taskboards. These pages only show work relevant to each team. The relevance is based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+Each feature team has its own team home page or dashboards, product and portfolio backlogs, boards, and Taskboards. These pages only show work relevant to each team. The relevance is based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 > [!TIP]
 > Add **Node Name** to the column options to show the team assigned to the work item.   
@@ -153,5 +153,5 @@ To view feature progress based on linked requirements, you can view the Feature 
 - [Kanban quickstart](../boards/kanban-quickstart.md)
 - [Assign work to sprints](../sprints/assign-work-sprint.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)
-- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md)
+- [Limitations of multi-team board views](../boards/kanban-overview.md)
  

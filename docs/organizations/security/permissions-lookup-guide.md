@@ -183,7 +183,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)
    - [Iteration paths (Object)](set-permissions-access-work-tracking.md)
-   - [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)
+   - [Board, customize (Team)](../../organizations/settings/manage-teams.md)
    - [Labels, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Library (Object, Role)](about-security-roles.md#library-asset-security-roles-variable-groups-and-secure-files)
    - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)

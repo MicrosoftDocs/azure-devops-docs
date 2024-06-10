@@ -1,13 +1,13 @@
-- name: About Kanban boards
+- name: About boards
   href: kanban-overview.md
-- name: Use your Kanban board
+- name: Use your board
   href: kanban-quickstart.md
 - name: Add tasks or child items as checklists
   href: add-task-checklists.md
   displayname: tasks, subtasks, todo lists, bugs, tests, features, epics, user stories, product backlog items, requirements, annotations, parent
 - name: Add features & epics
   href: kanban-epics-features-stories.md
-- name: Filter your Kanban board
+- name: Filter your board
   href: ../backlogs/filter-backlogs-boards-plans.md
   displayname: reorder, group, parent, tags
 - name: Manage inline tests

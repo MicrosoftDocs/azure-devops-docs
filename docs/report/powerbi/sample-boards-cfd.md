@@ -19,7 +19,7 @@ This article shows you how to display the Stories CFD for a specified team. This
 
 An example is shown in the following image that shows a count of user stories over time in the *Researching*, *Committed*, *In Progress*, and *In Review* states. Hovering over a date provides information on data for that date.
 
-:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Power BI Cumulative Flow stacked area chart report, columns sorted in Kanban board column order."::: 
+:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Power BI Cumulative Flow stacked area chart report, columns sorted in board column order."::: 
 
 To learn more about cumulative flow, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -29,7 +29,7 @@ To learn more about cumulative flow, see [Cumulative flow, lead time, and cycle 
 
 ## Sample queries
 
-Queries in this section support returning cumulative flow data for User Stories. These queries specify the `WorkItemBoardSnapshot` entity set as they return data calculated for the Kanban board over time.  
+Queries in this section support returning cumulative flow data for User Stories. These queries specify the `WorkItemBoardSnapshot` entity set as they return data calculated for the board over time.  
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
@@ -209,13 +209,13 @@ In the following example, the query was renamed to *CFD*, but no columns were re
 	:::image type="content" source="media/reports-boards/cfd-columnname-filters.png" alt-text="Screenshot of Power BI Filters for ColumnName. ":::
 
 
-The example report displays the columns in alphabetic order. However, the preferred order is to sort the data according to the Kanban column order, or progressive order. 
+The example report displays the columns in alphabetic order. However, the preferred order is to sort the data according to the column order, or progressive order. 
 
 :::image type="content" source="media/reports-boards/cfd-stacked-area-chart.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in alphabetic order.":::
 
 ### Sort columns in progressive order
 
-To sort the chart columns in the order specific on the Kanban board, do the following steps:
+To sort the chart columns in the order specific on the board, do the following steps:
 
 1. Create a new query in Power BI per the following queries. When done, rename the query to *ColumnOrder*. 
 
@@ -265,9 +265,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 
 1. In the report created above, in the **Legend**, replace `CFD.ColumnName` with `ColumnOrder.ColumnName` to **Legend**.
 
-	The report refreshes with columns sorted in the same order used by the Kanban board.  
+	The report refreshes with columns sorted in the same order used by the board.  
 
-	:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in Kanban board column order."::: 
+	:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in board column order."::: 
 
 
 > [!NOTE]
