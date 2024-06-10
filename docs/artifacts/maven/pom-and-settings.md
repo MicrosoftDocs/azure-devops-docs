@@ -25,7 +25,65 @@ With Azure Artifacts, you can seamlessly publish and restore Maven packages from
 
 - [Download](https://maven.apache.org/download.cgi) and [Install](https://maven.apache.org/install.html) Apache Maven.
 
-[!INCLUDE [](../includes/maven/pom-and-settings.md)]
+## Project setup
+
+::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed**, and then select **Maven** from the left navigation area.
+
+1. If this is your first time using Azure Artifacts with Maven, make sure you've installed the prerequisites. Otherwise select **Get the tools** in the top-right corner to install them.
+
+1. Follow the instructions in the **Project setup** section to set up your *pom.xml* and *settings.xml* files. Your files should resemble the following examples:
+
+    - **pom.xml**:
+        
+    ```xml
+      <repositories>
+        <repository>
+          <id>MavenDemo</id>
+          <url>https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <distributionManagement>
+        <repository>
+          <id>MavenDemo</id>
+          <url>https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </distributionManagement>
+    ```
+
+    - **settings.xml**:
+    
+    ```xml
+      <servers>
+        <server>
+          <id>MavenDemo</id>
+          <username><ORGANIZATION_NAME></username>
+          <password>[PERSONAL_ACCESS_TOKEN]</password>
+        </server>
+      </servers>
+    ```
+
+1. Generate a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope, and then paste it into the `<password>` tag.
+
+::: moniker-end
+
 
 > [!NOTE]
 > If your `settings.xml` file is shared within your team, you can use mvn to [encrypt your passwords](https://maven.apache.org/guides/mini/guide-encryption.html).
