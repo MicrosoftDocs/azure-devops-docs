@@ -70,7 +70,7 @@ The following entity types and entity sets are supported with the indicated API 
 > |----------------------|-------------|------|------|--------------|--------------|
 > |**Area**/<br/>**Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ | ✔️ |  
 > |**Iteration**/<br/>**Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ | ✔️ |  
-> |**BoardLocation**/<br/>**BoardLocations** |The board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each board field, see [Workflow and board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| ✔️|✔️|✔️ | ✔️ |  
+> |**BoardLocation**/<br/>**BoardLocations** |The board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each board field, see [Workflow and board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-board-fields).| ✔️|✔️|✔️ | ✔️ |  
 > |**CalendarDate**/<br/>**Dates** | The dates used to filter and group other entities using relationships.  | ✔️|✔️|✔️ | ✔️ |  
 > |**Project**/<br/>**Projects** |All projects defined for an organization (cloud) or project collection (on-premises). |✔️|✔️|✔️ | ✔️ |  
 > |**Process**/<br/>**Processes** |Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). |  |✔️|✔️ | ✔️ |  

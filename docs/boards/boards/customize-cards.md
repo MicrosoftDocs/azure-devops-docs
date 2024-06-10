@@ -31,7 +31,7 @@ You can show fields on cards based on what your team frequently refers to or upd
 > [!NOTE]  
 > You can customize a work item type which is different than customizing the card displayed on the board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
-Within the [Settings dialog for a board](#open-your-kanban-board-settings), you have the following customization options. 
+Within the [Settings dialog for a board](#open-your-board-settings), you have the following customization options. 
 
 ::: moniker range=">= azure-devops-2020"
 |Setting |Customization action  |
