@@ -1,6 +1,6 @@
 ---
-title: Set up your Maven project
-description: Learn how to set up your Maven project and connect to an Azure Artifacts feed.ss
+title: Connect your Maven project with Azure Artifacts
+description: Learn how to set up your Maven project and connect to an Azure Artifacts feed.
 ms.service: azure-devops-artifacts
 ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
 ms.topic: conceptual
@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Connect your Maven project with Azure Artifacts
+# Connect your Maven project to an Azure Artifacts feed
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -41,45 +41,45 @@ With Azure Artifacts, you can seamlessly publish and restore Maven packages from
 
     - **pom.xml**:
         
-    ```xml
-      <repositories>
-        <repository>
-          <id>MavenDemo</id>
-          <url>https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </repositories>
-      <distributionManagement>
-        <repository>
-          <id>MavenDemo</id>
-          <url>https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </distributionManagement>
-    ```
+        ```xml
+          <repositories>
+            <repository>
+              <id>MavenDemo</id>
+              <url>https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
+              <releases>
+                <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                <enabled>true</enabled>
+              </snapshots>
+            </repository>
+          </repositories>
+          <distributionManagement>
+            <repository>
+              <id>MavenDemo</id>
+              <url>https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
+              <releases>
+                <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                <enabled>true</enabled>
+              </snapshots>
+            </repository>
+          </distributionManagement>
+        ```
 
     - **settings.xml**:
     
-    ```xml
-      <servers>
-        <server>
-          <id>MavenDemo</id>
-          <username><ORGANIZATION_NAME></username>
-          <password>[PERSONAL_ACCESS_TOKEN]</password>
-        </server>
-      </servers>
-    ```
-
+        ```xml
+          <servers>
+            <server>
+              <id>MavenDemo</id>
+              <username><ORGANIZATION_NAME></username>
+              <password>[PERSONAL_ACCESS_TOKEN]</password>
+            </server>
+          </servers>
+        ```
+    
 1. Generate a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope, and then paste it into the `<password>` tag.
 
 ::: moniker-end
@@ -98,44 +98,44 @@ With Azure Artifacts, you can seamlessly publish and restore Maven packages from
 
     - **pom.xml**:
         
-    ```xml
-      <repositories>
-        <repository>
-          <id>MavenDemo</id>
-          <url>http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </repositories>
-      <distributionManagement>
-        <repository>
-          <id>MavenDemo</id>
-          <url>http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </distributionManagement>
-    ```
+        ```xml
+          <repositories>
+            <repository>
+              <id>MavenDemo</id>
+              <url>http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
+              <releases>
+                <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                <enabled>true</enabled>
+              </snapshots>
+            </repository>
+          </repositories>
+          <distributionManagement>
+            <repository>
+              <id>MavenDemo</id>
+              <url>http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
+              <releases>
+                <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                <enabled>true</enabled>
+              </snapshots>
+            </repository>
+          </distributionManagement>
+        ```
 
     - **settings.xml**:
     
-    ```xml
-      <servers>
-        <server>
-          <id>MavenDemo</id>
-          <username><COLLECTION_NAME></username>
-          <password>[PERSONAL_ACCESS_TOKEN]</password>
-        </server>
-      </servers>
-    ```
+        ```xml
+          <servers>
+            <server>
+              <id>MavenDemo</id>
+              <username><COLLECTION_NAME></username>
+              <password>[PERSONAL_ACCESS_TOKEN]</password>
+            </server>
+          </servers>
+        ```
 
 1. Generate a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope, and then paste it into the `<password>` tag.
 
