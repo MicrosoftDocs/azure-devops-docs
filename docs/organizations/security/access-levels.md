@@ -141,7 +141,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Advanced portfolio management**  
-      Includes full access to define features and epics from a [portfolio backlog](../../boards/backlogs/define-features-epics.md) or [Kanban board](../../boards/boards/kanban-epics-features-stories.md).  
+      Includes full access to define features and epics from a [portfolio backlog](../../boards/backlogs/define-features-epics.md) or [board](../../boards/boards/kanban-epics-features-stories.md).  
    :::column-end:::
    :::column span="1":::
        
@@ -159,7 +159,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders get limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders use drag-and-drop to create and change work items, but only change the State field on cards. They also can’t [see or adjust capacity](../../boards/sprints/set-capacity.md).
+      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders use drag-and-drop to create and change work items, but only change the State field on cards. They also can’t [see or adjust capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -177,7 +177,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders get limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
+      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -194,7 +194,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
-      Includes limited access to [portfolio backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
+      Includes limited access to [portfolio backlogs](../../boards/backlogs/define-features-epics.md) and [ boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
    :::column-end:::
    :::column span="1":::
       ✔️

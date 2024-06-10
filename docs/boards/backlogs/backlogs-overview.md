@@ -241,7 +241,7 @@ You can only use dragging to reorder or reparent work items assigned to area pat
 
 ## Display leaf node work items  
 
-For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For TFS 2018 and earlier versions, the board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
 

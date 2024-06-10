@@ -65,7 +65,7 @@ Default rules and behaviors that govern these fields include:
 1. These rules are needed when a work item type has custom states, or the work item type is a custom work item type.
 1. These rules only apply to inherited processes; they are never generated for the Hosted XML or On-premises XML processes. 
 
-Workflow states are associated with state categories to support the workflow on Kanban boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
+Workflow states are associated with state categories to support the workflow on boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
  
 
 ### State Change Date field rules

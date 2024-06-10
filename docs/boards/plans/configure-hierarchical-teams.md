@@ -99,7 +99,7 @@ You do this by opening each area path associated with a feature team and changin
 By including subarea paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude subarea paths. 
 
 > [!NOTE]   
-> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. For more information, see [Exercising select features with shared area paths](#op-issues) later in this article. 
+> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the board Column, Done, and Lane fields. For more information, see [Exercising select features with shared area paths](#op-issues) later in this article. 
 
 ::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly go to it from **Teams**. 
@@ -174,7 +174,7 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 
 When you share area paths across two or more teams, you'll want to understand how Azure Boards manages conflicts that can arise when exercising these features: 
 - Reordering or reparenting work items on a backlog or board
-- Updates made to  Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields when dragging items to a different column 
+- Updates made to  K**Board Column**, **Board Column Done**, and **Board Lane** fields when dragging items to a different column 
 
 ### Reordering and reparenting work items 
 
@@ -185,11 +185,11 @@ You can only use drag-and-drop to reorder or reparent work items assigned to are
 :::image type="content" source="media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
 
-### Kanban board column updates  
+### Board column updates  
 
-Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
+Because each team can customize the board columns and swimlanes, the values assigned to board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's board won't be reflected on another team's board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
 
-By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are non-deterministic.  
+By design, the team with the longest area path wins the conflict and determines the values for the **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are non-deterministic.  
  
 ::: moniker range=">= azure-devops-2019"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For more information, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 

@@ -142,7 +142,7 @@ Each team plans the features to deliver. They have the autonomy to determine how
 
 As your organization grows, you can scale your Agile tools in the following ways.     
 
-- **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, Kanban boards, sprint backlogs, Taskboards, and others.
+- **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, boards, sprint backlogs, Taskboards, and others.
 
     Also, you can configure teams to support a hierarchy of backlogs and portfolio backlogs so that portfolio managers can review priority and progress across several teams.
 

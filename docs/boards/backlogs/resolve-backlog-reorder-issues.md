@@ -157,4 +157,4 @@ A: No, not at this time. You can always check the entire list of items assigned 
 ## Related articles
 
 - [Set up your backlogs and boards](set-up-your-backlog.md)  
-- [About boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md)  
+- [About boards and Kanban, Limitations of multi-team board views](../boards/kanban-overview.md)  

@@ -484,7 +484,7 @@ For each project that you create, the system creates the followings project-leve
    Create and manage team alerts
    Create and manage team rooms
    Configure team backlogs
-   Customize the Kanban board (Add columns, Swimlanes, Customize Cards, Definition of Done ...
+   Customize the board (Add columns, Swimlanes, Customize Cards, Definition of Done ...
    Manage team dashboards
    Select team area paths
    Select team sprints

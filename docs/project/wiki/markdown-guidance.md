@@ -27,24 +27,24 @@ Not all Markdown syntax is supported across all features in Azure DevOps. The fo
 
 |Markdown type |Supported features  |
 |---------|---------|
-|[Headers](#headers)   | Definition of Done (Kanban board), Markdown widget, pull request, README, wiki |
-|[Paragraphs and line breaks](#paragraphs-and-line-breaks)| Definition of Done (Kanban board), Markdown widget, pull request, README files, wiki|
-|[Blockquotes](#blockquotes)  | [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
-|[Horizontal rules](#horizontal-rules)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
-|[Emphasis](#emphasis-bold-italics-strikethrough)    | [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
+|[Headers](#headers)   | Definition of Done (board), Markdown widget, pull request, README, wiki |
+|[Paragraphs and line breaks](#paragraphs-and-line-breaks)| Definition of Done (board), Markdown widget, pull request, README files, wiki|
+|[Blockquotes](#blockquotes)  | [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
+|[Horizontal rules](#horizontal-rules)    |[Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
+|[Emphasis](#emphasis-bold-italics-strikethrough)    | [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
 |[Code highlighting](#code-highlighting)   | [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)        |
 |[Suggest change](#suggest-change)   | [pull request](../../repos/git/pull-requests.md)        |
 |[Tables](#tables)    | [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)       |
-|[Lists](#lists)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
-|[Links](#links)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
+|[Lists](#lists)    |[Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
+|[Links](#links)    |[Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
 |[Images](#images)    | [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)        |
 |[Checklist or task list](#checklist-or-task-list)    |  [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)       |
 |[Emoji](#emoji)     | [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)        |
-|[Ignore or escape Markdown syntax](#ignore-or-escape-markdown-syntax-to-enter-specific-or-literal-characters)    |  [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)     |
+|[Ignore or escape Markdown syntax](#ignore-or-escape-markdown-syntax-to-enter-specific-or-literal-characters)    |  [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)     |
 | [Attachments](#attachments) |  [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)  |
 | [Mathematical notation and characters](#mathematical-notation-and-characters)| [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)     |
 
-For more information, see [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), and [wiki](add-edit-wiki.md).
+For more information, see [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), and [wiki](add-edit-wiki.md).
 
 
 
