@@ -1,72 +1,101 @@
 ---
-title: "Azure DevOps docs: What's new for April 1, 2024 - April 30, 2024"
-description: "What's new in the Azure DevOps docs for April 1, 2024 - April 30, 2024."
-ms.date: 05/07/2024
+title: "Azure DevOps docs: What's new for May 1, 2024 - May 31, 2024"
+description: "What's new in the Azure DevOps docs for May 1, 2024 - May 31, 2024."
+ms.date: 06/10/2024
 ---
 
-# Azure DevOps docs: What's new for April 1, 2024 - April 30, 2024
+# Azure DevOps docs: What's new for May 1, 2024 - May 31, 2024
 
-Welcome to what's new in the Azure DevOps docs from April 1, 2024 through April 30, 2024. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from May 1, 2024 through May 31, 2024. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
 ### Updated articles
 
-- [User and permissions management FAQs](/azure/devops/organizations/accounts/faq-user-and-permissions-management)
-- [Data protection overview](/azure/devops/organizations/security/data-protection)
+- [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions)
+- [Set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs)
+- [About permissions and security groups](/azure/devops/organizations/security/about-permissions)
+- [About access levels](/azure/devops/organizations/security/access-levels)
+- [Change project-level permissions](/azure/devops/organizations/security/change-project-level-permissions)
+- [Security groups, service accounts, and permissions reference](/azure/devops/organizations/security/permissions)
+- [Manage personal access tokens (PATs) using REST API](/azure/devops/organizations/accounts/manage-personal-access-tokens-via-api)
 
 ## Artifacts
 
 ### Updated articles
 
-- [Connect to Azure Artifacts feeds (dotnet)](/azure/devops/artifacts/nuget/dotnet-setup)
-- [Connect to Azure Artifacts feeds (NuGet.exe)](/azure/devops/artifacts/nuget/nuget-exe)
-- [Publish and restore NuGet packages from the command line (NuGet.exe)](/azure/devops/artifacts/nuget/publish)
-- [Publish and restore NuGet packages from the command line (dotnet)](/azure/devops/artifacts/nuget/dotnet-exe)
-- [Use packages from NuGet Gallery](/azure/devops/artifacts/nuget/upstream-sources)
-- [Publish and download Universal Packages in Azure Artifacts](/azure/devops/artifacts/quickstarts/universal-packages)
-- [Connect your npm project to Azure Artifacts feeds](/azure/devops/artifacts/npm/npmrc)
+- [Get started with npm packages in Azure Artifacts](/azure/devops/artifacts/get-started-npm)
+- [Publish and restore npm packages from the command line](/azure/devops/artifacts/npm/publish)
+- [Connect your npm project to Azure Artifacts](/azure/devops/artifacts/npm/npmrc)
+- [Quickstart: Get started with NuGet packages in Azure Artifacts](/azure/devops/artifacts/get-started-nuget)
+- [Monitor Artifacts storage consumption](/azure/devops/artifacts/artifact-storage)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Use work item templates](/azure/devops/boards/backlogs/work-item-template)
-- [Add tasks or child items as checklist items](/azure/devops/boards/boards/add-task-checklists)
-- [Copy or clone work items and more](/azure/devops/boards/backlogs/copy-clone-work-items)
-- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items)
+- [Add or edit a Delivery Plan](/azure/devops/boards/plans/add-edit-delivery-plan)
+- [Query by numeric fields](/azure/devops/boards/queries/query-numeric)
+- [Connect Azure Boards to GitHub (cloud)](/azure/devops/boards/github/connect-to-github)
+- [Use the Dependency Tracker extension](/azure/devops/boards/extensions/dependency-tracker)
+
+## Azure DevOps Reporting and Analytics service
+
+### Updated articles
+
+- [Connect to Analytics data by using the Power BI OData feed](/azure/devops/report/powerbi/access-analytics-power-bi)
 
 ## Azure Pipelines
 
 ### Updated articles
 
-- [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
-- [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent)
-- [Expressions](/azure/devops/pipelines/process/expressions)
-- [UI testing considerations](/azure/devops/pipelines/test/ui-testing-considerations)
-- [Self-hosted Windows agents (2.x)](/azure/devops/pipelines/agents/v2-windows-agent)
-- [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
-- [Add an admin role to a protected resource](/azure/devops/pipelines/library/add-resource-protection)
-- [Define variables](/azure/devops/pipelines/process/variables)
-- [Self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent)
-- [Azure Pipelines agents](/azure/devops/pipelines/agents/agents)
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
+- [Publish npm packages with Azure Pipelines (YAML/Classic)](/azure/devops/pipelines/artifacts/npm)
+- [Use a PowerShell script to customize your pipeline](/azure/devops/pipelines/scripts/powershell)
+- [Self-hosted Linux agents (2.x)](/azure/devops/pipelines/agents/v2-linux-agent)
+- [Build and test PHP apps](/azure/devops/pipelines/ecosystems/php)
+- [Troubleshoot Azure Resource Manager (ARM) service connections](/azure/devops/pipelines/release/azure-rm-endpoint)
+- [Agent software version 3](/azure/devops/pipelines/agents/v3-agent)
 
-## Azure Repos
+## Azure Test Plans
+
+### Updated articles
+
+- [Bulk import or export of test cases](/azure/devops/test/bulk-import-export-test-cases)
+
+## Extend
+
+### Updated articles
+
+- [Extend the work item form](/azure/devops/extend/develop/add-workitem-extension)
+- [Extension samples](/azure/devops/extend/develop/samples-overview)
+- [Add a dashboard widget](/azure/devops/extend/develop/add-dashboard-widget)
+
+## Get started
+
+### Updated articles
+
+- [Get started with Azure DevOps documentation](/azure/devops/get-started/index)
+
+## Integrate
+
+### Updated articles
+
+- [Use service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
+
+## Migrate
 
 ### New articles
 
-- [Security overview](/azure/devops/repos/security/github-advanced-security-security-overview)
+- [Get started with Azure DevOps Data Migration Tool](/azure/devops/migrate/migration-get-started)
+- [Migrate to Azure DevOps Services](/azure/devops/migrate/migration-migrate)
+- [Complete post migration tasks](/azure/devops/migrate/migration-post-migration)
+- [Prepare for test run migration](/azure/devops/migrate/migration-prepare-test-run)
+- [Complete prerequisites for migration](/azure/devops/migrate/migration-prerequisites)
+- [Do test run migration](/azure/devops/migrate/migration-test-run)
+- [Validate and prepare server environment for migration](/azure/devops/migrate/migration-validate)
 
 ### Updated articles
 
-- [Azure Repos with Slack](/azure/devops/repos/integrations/repos-slack)
-- [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
-- [Secret scanning](/azure/devops/repos/security/github-advanced-security-secret-scanning)
-
-## Project
-
-### Updated articles
-
-- [Project management and navigation glossary](/azure/devops/project/navigation/glossary)
+- [Migration overview](/azure/devops/migrate/migration-overview)
+- [Resolve migration errors](/azure/devops/migrate/migration-troubleshooting)
 
