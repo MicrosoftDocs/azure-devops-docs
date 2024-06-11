@@ -214,13 +214,13 @@
     href: ../../pipelines/security/approach.md?toc=/azure/devops/organizations/security/toc.json
   - name: Repository protection
     displayName: security, repo
-    href: ../../pipelines/security/repos.md?toc=/azure/devops/organizations/security/toc.json
+    href: ../../pipelines/security/misc.md#protect-repositories?toc=/azure/devops/organizations/security/toc.json
   - name: Pipeline resources
     displayName: permissions, access, information
     href: ../../pipelines/security/resources.md?toc=/azure/devops/organizations/security/toc.json
   - name: Project structure
     displayName: about, build, security
-    href: ../../pipelines/security/projects.md?toc=/azure/devops/organizations/security/toc.json
+    href: ../../pipelines/security/misc.md#protect-projects?toc=/azure/devops/organizations/security/toc.json
   - name: Security through templates
     displayName: access, permissions
     href: ../../pipelines/security/templates.md?toc=/azure/devops/organizations/security/toc.json
@@ -229,7 +229,7 @@
     href: ../../pipelines/security/inputs.md?toc=/azure/devops/organizations/security/toc.json
   - name: Shared infrastructure
     displayName: security
-    href: ../../pipelines/security/infrastructure.md?toc=/azure/devops/organizations/security/toc.json
+    href: ../../pipelines/security/misc.md#protect-shared-infrastructure?toc=/azure/devops/organizations/security/toc.json
   - name: Other security considerations
     displayName: miscellaneous, secure, details, information
     href: ../../pipelines/security/misc.md?toc=/azure/devops/organizations/security/toc.json

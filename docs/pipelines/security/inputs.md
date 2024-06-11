@@ -137,4 +137,4 @@ To resolve this issue, adjust the arguments by escaping special characters as in
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Secure your [shared infrastructure](infrastructure.md)
+> Secure your [shared infrastructure](misc.md#protect-shared-infrastructure)

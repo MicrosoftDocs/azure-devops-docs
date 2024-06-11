@@ -8,6 +8,8 @@ monikerRange: '>= azure-devops-2020'
 
 # Secure access to Azure Repos from pipelines
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Your repositories are vital for your business success as they house the code powering your operations. Access to repositories should be carefully controlled. This article guides you on enhancing [Build pipeline](#build-pipelines) and [Classic release pipeline](#classic-release-pipelines) security when accessing Azure Repos to mitigate the risk of unauthorized access.
 
 To ensure secure access to Azure repositories, enable the following toggles: 

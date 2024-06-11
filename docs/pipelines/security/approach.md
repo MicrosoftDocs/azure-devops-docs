@@ -17,7 +17,7 @@ Consider adopting an incremental approach to enhance the security of your pipeli
 
 Security recommendations are interdependent. Your posture relies on the specific recommendations you implement, which, in turn, align with your DevOps and security teams’ concerns and organizational policies.
 
-Consider prioritizing security in critical areas while accepting some trade-offs for convenience in other aspects. For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](infrastructure.md#separate-agents-for-each-project).
+Consider prioritizing security in critical areas while accepting some trade-offs for convenience in other aspects. For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](misc.md#separate-agents-for-each-project).
 
 ## Begin with a nearly empty template
 
@@ -57,4 +57,5 @@ To improve the security of newly created organizations, starting with [Sprint 22
 
 ## Next steps
 
-After you plan your security approach, consider how your [repositories](repos.md) provide protection.
+>[!div class="nextstepaction"]
+> [Protect repositories](misc.md#repository-protection)

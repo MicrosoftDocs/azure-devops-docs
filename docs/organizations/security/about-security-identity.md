@@ -273,12 +273,12 @@ Since repositories and build and release pipelines pose unique security challeng
 
 - [Securing Azure Pipelines](../../pipelines/security/overview.md)
 - [Plan how to secure your YAML pipelines](../../pipelines/security/approach.md)
-- [Repository protection](../../pipelines/security/repos.md)
+- [Repository protection](../../pipelines/security/misc.md#protect-repositories)
 - [Pipeline resources](../../pipelines/security/resources.md)
-- [Recommendations to securely structure projects in your pipeline](../../pipelines/security/projects.md)
+- [Recommendations to securely structure projects in your pipeline](../../pipelines/security/misc.md#protect-projects)
 - [Security through templates](../../pipelines/security/templates.md)
 - [How to securely use variables and parameters in your pipeline](../../pipelines/security/inputs.md)
-- [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/infrastructure.md)
+- [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/misc.md#protect-shared-infrastructure)
 - [Other security considerations](../../pipelines/security/misc.md) 
 
 ## Next steps

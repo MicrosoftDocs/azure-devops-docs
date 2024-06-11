@@ -497,6 +497,18 @@
     {
       "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
       "redirect_url": "/azure/devops/user-guide/provide-feedback"
+    },
+    {
+      "source_path": "docs/pipelines/security/infrastructure.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-shared-infrastructure"
+    },
+    {
+      "source_path": "docs/pipelines/security/projects.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-projects"
+    },
+    {
+      "source_path": "docs/pipelines/security/repos.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-repositories"
     }
   ]
 }
