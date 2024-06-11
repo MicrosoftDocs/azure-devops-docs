@@ -76,6 +76,7 @@ The primary errors we find are process template issues. These issues stem from e
 - Some customizations don’t work in Azure DevOps Services. Review the supported customization list.
 - For projects using older templates, run the [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to update templates with recent features and reduce error count. 
 - Ensure `witadmin` is available on the machine where you fix process errors. It’s essential for making changes to process templates. 
+- For and Not rules should be commented out or removed from the process template before attempting the migration. These rules are supported in Azure DevOps Service, but they are not supported as part of the migration process. Once your collection is migrated, you can add these rules back to the process template.
 
 Consider the following tools for resolving process errors: 
 
