@@ -11,7 +11,7 @@ Tasks in the pipeline are executed using a runner, with Node.js used in most cas
 
 ### Access Azure Bus from Pipelines using Entra ID authentication
 
-You can now use [Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
+You can now use [Entra ID authentication](/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
 
 Identities accessing Azure Service Bus will need to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
 
@@ -44,7 +44,6 @@ If you are using a task from the Marketplace or a home-grown custom task to depl
 > [!div class="mx-imgBorder"]
 > ![Screenshot of oidc collaboration.](../../media/240-pipelines-01.png "Screenshot of oidc collaboration")
 
-<img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/oidc-collaboration-4.png" alt="Image oidc collaboration" width="1250" height="543" class="aligncenter size-full wp-image-67562" />
 
 Tasks that take a `connectedService:AzureRM` input in [task.json](https://learn.microsoft.com/azure/devops/extend/develop/integrate-build-task?view=azure-devops#custom-build-task-json) can be updated so support workload identity federation with the following steps:
 
