@@ -3,7 +3,7 @@ title: Securing Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.reviewer: vijayma
-ms.date: 10/31/2023
+ms.date: 06/10/2024
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -11,43 +11,63 @@ monikerRange: '> azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Azure Pipelines poses unique security challenges.
-You can use a pipeline to run scripts or deploy code to production environments.
-But you want to ensure your CI/CD pipelines don't become avenues to run malicious code.
-You also want to ensure only code you intend to deploy is deployed.
-Security must be balanced with giving teams the flexibility and power they need to run their own pipelines.
+[Azure Pipelines](../get-started/what-is-azure-pipelines.md) presents distinct security challenges. While pipelines allow you to execute scripts or deploy code to production environments, it’s crucial to prevent them from becoming conduits for malicious code. Balancing security with the flexibility and power needed by development teams is essential.
 
 > [!NOTE]
-> Azure Pipelines is one among a collection of Azure DevOps Services, all built on the same secure infrastructure in Azure.
-> To understand the main concepts around security for all of Azure DevOps Services, see [Azure DevOps Data Protection Overview](../../organizations/security/data-protection.md) and [Azure DevOps Security and Identity](../../organizations/security/about-security-identity.md).
+> Azure Pipelines is part of a suite of Azure DevOps Services, all built on a secure infrastructure within Azure.
+> To gain a comprehensive understanding of security concepts across all Azure DevOps Services, we recommend viewing the following resources: 
+> - [Azure DevOps Data Protection Overview](../../organizations/security/data-protection.md)
+> - [Azure DevOps Security and Identity](../../organizations/security/about-security-identity.md)
 
-Traditionally, organizations implemented security through draconian lock-downs.
-Code, pipelines, and production environments had severe restrictions on access and use.
-In small organizations with a few users and projects, this stance was relatively easy to manage.
-However, that's not the case in larger organizations.
-Where many users have contributor access to code, one must "assume breach".
-Assuming breach means behaving as if an adversary has contributor access to some (if not all) of the repositories.
+Traditionally, organizations enforce security through strict lock-downs. Code, pipelines, and production environments face severe access restrictions. While this approach works well in small organizations with limited users and projects, larger organizations face a different reality.
+With numerous contributors having access to code, the principle of 'assume breach' becomes crucial. It involves operating as if an adversary possesses contributor access to repositories, necessitating heightened vigilance.
 
-The goal in this case is to prevent that adversary from running malicious code in the pipeline.
-Malicious code may steal secrets or corrupt production environments.
-Another goal is to prevent lateral exposure to other projects, pipelines, and repositories from the compromised pipeline.
+To achieve security goals, consider the following points:
 
-YAML pipelines offer the best security for your Azure Pipelines. In contrast to classic build and release pipelines, YAML pipelines:
+- **Prevent malicious code execution:**
+  - Ensure that your pipelines are configured to prevent unauthorized execution of malicious code, which includes the following tasks:
+    - Restrict access to sensitive secrets and credentials.
+    - Validate input parameters and arguments to prevent unintended behavior.
+    - Review and audit pipeline scripts for potential security risks regularly.
+    - Implement security practices such as:
+      - Use parameterized queries in scripts to prevent SQL injection.
+      - Escape special characters in arguments to avoid shell command injection.
+      - Limit permissions for pipeline service connections.
+  - Consider using YAML pipelines, which provide fine-grained control over execution and are less prone to security risks.
 
-* _Can be code reviewed_. YAML pipelines are no different from any other piece of code. You can prevent malicious actors from introducing malicious steps in your pipelines by enforcing the use of Pull Requests to merge changes. [Branch policies](../../repos/git/branch-policies-overview.md) make it easy for you to set this up.
-* _Provide resource access management_. Resource owners decide if a YAML pipeline can access a resource or not. This security feature control attacks like [stealing another repository](https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/). [Approvals and checks](../process/approvals.md) provide access control for _each_ pipeline run.
-* _Support runtime parameters_. [Runtime parameters](../process/runtime-parameters.md) help you avoid a host of security issues related to variables, such as [Argument Injection](https://devblogs.microsoft.com/devops/pipeline-argument-injection/).
+- **Mitigate lateral exposure:**
+  - Isolate pipelines to prevent lateral movement within your organization’s projects and repositories.
+  - Limit access to only the necessary repositories and resources for each pipeline.
+  - Monitor pipeline activity and set up alerts for suspicious behavior.
+  - Review and update permissions to minimize exposure regularly.
 
-This series of articles outlines recommendations to help you put together a secure YAML-based CI/CD pipeline.
-It also covers the places where you can make trade-offs between security and flexibility.
-The series also assumes familiarity with [Azure Pipelines](../get-started/what-is-azure-pipelines.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
+- **Use YAML Pipelines:**
+  - YAML pipelines offer the following advantages in terms of security:
+    - Explicitly define pipeline steps and dependencies.
+    - Version control for pipeline definitions.
+    - Clear visibility into pipeline configuration.
+    - Reduced risk of accidental misconfigurations.
+    - Code review and pull requests:
+      - Treat YAML pipelines like any other code.
+      - Enforce pull requests for merging changes to prevent malicious steps.
+      - Use [branch policies](../../repos/git/branch-policies-overview.md) to set up this review process.
+    - Resource access management:
+      - Resource owners control whether a YAML pipeline can access specific resources. 
+      - This security feature prevents attacks like [stealing another repository](https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/). 
+      - [Approvals and checks](../process/approvals.md) provide access control for each pipeline run.
+    - Runtime parameters:
+      - [Runtime parameters](../process/runtime-parameters.md) help avoid security issues related to variables, such as [Argument Injection](https://devblogs.microsoft.com/devops/pipeline-argument-injection/).
+  - Consider migrating existing pipelines to YAML format for improved security and maintainability.
 
+Security is an ongoing process, and regular assessments and updates are essential. YAML pipelines offer the best security for your Azure Pipelines.
 
-Topics covered:
+The following articles outline recommendations to help you develop a secure YAML-based pipeline:
+
+- [Azure DevOps security constructs](../../organizations/security/about-security-identity.md)
 - [Incremental approach to improving security](approach.md)
 - [Repository protection](repos.md)
 - [Secure access to repositories](secure-access-to-repos.md)
-- [Using secrets](secrets.md)
+- [Secrets](secrets.md)
 - [Pipeline resources](resources.md)
 - [Project structure](projects.md)
 - [Security through templates](templates.md)

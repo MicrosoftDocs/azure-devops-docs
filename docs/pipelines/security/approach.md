@@ -1,35 +1,27 @@
 ---
-title: Plan an approach to secure your YAML pipelines
-description: Apply security recommendations incrementally in your YAML pipelines. Incremental improvements add up.
+title: Determine your approach for securing YAML pipelines
+description: Apply security recommendations incrementally in your YAML pipelines because incremental improvements add up.
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
 ms.reviewer: vijayma
-ms.date: 11/27/2023
-monikerRange: '> azure-devops-2019'
+ms.date: 06/10/2024
+monikerRange: '>= azure-devops-2020'
 ---
 
-# Plan how to secure your YAML pipelines
+# Determine your approach for securing YAML pipelines
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-We recommend that you use an incremental approach to secure your pipelines.
-Ideally, you would implement all of the guidance that we offer.
-But don't be daunted by the number of recommendations.
-And don't hold off making *some* improvements just because you can't make all the changes right now.
+Consider adopting an incremental approach to enhance the security of your pipelines. While it’s ideal to implement all the guidance we provide, don’t get overwhelmed by the number of recommendations. Start by making some improvements, even if you can’t address everything immediately.
 
-## Security recommendations depend on each other
+## Security interdependence
 
-Security recommendations have complex interdependencies.
-Your security posture depends heavily on which recommendations you choose to implement.
-The recommendations that you choose, in turn, depend on the concerns of your DevOps and security teams. 
-They also depend on the policies and practices of your organization.
+Security recommendations are interdependent. Your posture relies on the specific recommendations you implement, which, in turn, align with your DevOps and security teams’ concerns and organizational policies.
 
-You might choose to tighten security in one critical area and accept less security but more convenience in another area.
-For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](infrastructure.md#separate-agents-for-each-project).
+Consider prioritizing security in critical areas while accepting some trade-offs for convenience in other aspects. For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](infrastructure.md#separate-agents-for-each-project).
 
 ## Begin with a nearly empty template
 
-A good place to start is by enforcing extension from a nearly empty template.
-This way, as you start to apply security practices, you have a centralized place that already catches every pipeline.
+Begin with a minimal template and gradually enforce extensions. This approach ensures that as you implement security practices, you have a centralized starting point that covers all pipelines.
 
 For more information, see [Templates](templates.md).
 
@@ -47,19 +39,19 @@ For more information, see [Templates](templates.md).
 
 :::moniker range=">= azure-devops-2022"
 
-If you develop *only* YAML pipelines, disable creation of classic build and release pipelines. Doing so prevents a security concern that stems from YAML and classic pipelines sharing the same resources, for example the same service connections. 
+Disable the creation of classic build and release pipelines if you exclusively use YAML pipelines. This precaution prevents a security concern arising from YAML and classic pipelines sharing the same resources, such as service connections.
 
-You can disable the creation of classic build pipelines and classic release pipelines independently. When you disable both, no classic build pipeline, classic release pipeline, task groups, and deployment groups can be created using either the user interface or the REST API.
+Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API.
 
-You can disable creation of classic pipelines by turning on two toggles at either organization level or project level. To turn them on, navigate to your *Organization / Project settings*, then under the *Pipelines* section choose *Settings*. In the *General* section, toggle on *Disable creation of classic build pipelines* and *Disable creation of classic release pipelines*.
+To disable the creation of classic pipelines, go to your **Organization settings** or **Project settings**, then under the *Pipelines* section select **Settings**. In the *General* section, toggle on **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines**.
 
-When you turn them on at organization level, it is on for all projects in that organization. If you leave them off, you can choose for which projects you wish to turn them on.
+If you enable this feature at the organization level, it applies to all projects within that organization. However, if you leave it disabled, you can selectively enable it for specific projects.
 
 :::moniker-end
 
 :::moniker range="> azure-devops-2022"
 
-To improve the security of newly created organizations, starting with [Sprint 226](/azure/devops/release-notes/2023/sprint-225-update#disable-creation-of-classic-pipelines-for-new-organizations-pre-announcement), by default we will disable creating classic build and release pipelines for new organizations.
+To improve the security of newly created organizations, starting with [Sprint 226](/azure/devops/release-notes/2023/sprint-225-update#disable-creation-of-classic-pipelines-for-new-organizations-pre-announcement), by default we disable creating classic build and release pipelines for new organizations.
 
 :::moniker-end
 
