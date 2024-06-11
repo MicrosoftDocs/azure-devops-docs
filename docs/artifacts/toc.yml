@@ -93,8 +93,8 @@
     - name: Project setup
       displayName: maven pom, maven artifacts, maven packages, maven authentication
       href: maven/pom-and-settings.md
-    - name: Install Maven artifacts
-      displayName: maven artifacts, maven packages, maven feeds
+    - name: Restore Maven packages
+      displayName: maven, restore, install
       href: maven/install.md
     - name: Publish artifacts with Gradle
       displayName: gradle, publish
