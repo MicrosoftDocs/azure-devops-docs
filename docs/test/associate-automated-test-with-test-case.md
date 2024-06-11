@@ -91,7 +91,7 @@ See the following frequently asked questions (FAQs).
   However, these tests can't be run using Microsoft Test Manager and XAML builds.
 * Tests that use other test frameworks such as Chutzpah (for JavaScript tests
   such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
-* Associating generic tests **may** work, but running these tests isn't supported.
+* Generic tests are not available in Visual Studio 2022.  
 
 <a name="xaml-build"></a>
 
