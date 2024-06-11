@@ -199,10 +199,10 @@ With Azure Artifacts, you can publish and restore Maven packages from Azure Arti
 
 ## Restore packages
 
-Run the following command in an elevated command prompt to download your Maven packages. Maven automatically downloads all your dependencies to your local repository when the `build` command is executed.
+Run the following command in your project directory to restore your packages:
 
-```Command
-mvn build
+```
+mvn install
 ```
 
 > [!NOTE]
