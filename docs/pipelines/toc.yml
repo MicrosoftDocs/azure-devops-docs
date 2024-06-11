@@ -616,7 +616,7 @@
       displayName: template permissions, repositories
       href: security/approach.md
     - name: Secure repositories
-      href: security/repos.md
+      href: security/misc.md#protect-repositories
     - name: Secure access to Azure repositories from pipelines
       displayName: forks, branches, access token
       href: security/secure-access-to-repos.md
@@ -627,7 +627,7 @@
       href: security/resources.md
     - name: Project structure
       displayName: separate projects
-      href: security/projects.md
+      href: security/misc.md#protect-projects
     - name: Security through templates
       displayName: conditionals, extends, scripts, templates
       href: security/templates.md
@@ -636,7 +636,7 @@
       href: security/inputs.md
     - name: Shared infrastructure
       displayName: low privileges, hosted, infrastructure
-      href: security/infrastructure.md
+      href: security/misc.md#protect-shared-infrastructure
     - name: Other security considerations
       displayName: PATH, containers, control tasks, auditing
       href: security/misc.md
