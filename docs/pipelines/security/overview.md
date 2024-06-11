@@ -72,5 +72,5 @@ The following articles outline recommendations to help you develop a secure YAML
 - [Variables and parameters](inputs.md)
 - [Other security considerations](misc.md)
    - [Project structure](misc.md#protect-projects)
-   - [Repository protection](misc.md#repository-protection)
+   - [Repository protection](misc.md#protect-repositories)
    - [Shared infrastructure](misc.md#protect-shared-infrastructure)

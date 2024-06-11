@@ -58,4 +58,4 @@ To improve the security of newly created organizations, starting with [Sprint 22
 ## Next steps
 
 >[!div class="nextstepaction"]
-> [Protect repositories](misc.md#repository-protection)
+> [Protect repositories](misc.md#protect-repositories)
