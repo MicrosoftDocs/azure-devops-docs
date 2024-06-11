@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for May 1, 2024 - May 31, 2024"
 description: "What's new in the Azure DevOps docs for May 1, 2024 - May 31, 2024."
-ms.date: 06/10/2024
+ms.date: 06/11/2024
 ---
 
 # Azure DevOps docs: What's new for May 1, 2024 - May 31, 2024
@@ -14,10 +14,15 @@ Welcome to what's new in the Azure DevOps docs from May 1, 2024 through May 31, 
 
 - [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions)
 - [Set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs)
+- [Pipeline security roles](/azure/devops/organizations/security/about-security-roles)
+- [Security namespace and permission reference for Azure DevOps](/azure/devops/organizations/security/namespace-reference)
+- [Permissions lookup guide for Azure DevOps](/azure/devops/organizations/security/permissions-lookup-guide)
+- [Security groups, service accounts, and permissions reference](/azure/devops/organizations/security/permissions)
+- [Security and permission management tools for Azure DevOps](/azure/devops/organizations/security/security-tools-reference)
+- [Set object-level permissions](/azure/devops/organizations/security/set-object-level-permissions)
 - [About permissions and security groups](/azure/devops/organizations/security/about-permissions)
 - [About access levels](/azure/devops/organizations/security/access-levels)
 - [Change project-level permissions](/azure/devops/organizations/security/change-project-level-permissions)
-- [Security groups, service accounts, and permissions reference](/azure/devops/organizations/security/permissions)
 - [Manage personal access tokens (PATs) using REST API](/azure/devops/organizations/accounts/manage-personal-access-tokens-via-api)
 
 ## Artifacts
@@ -47,9 +52,22 @@ Welcome to what's new in the Azure DevOps docs from May 1, 2024 through May 31, 
 
 ## Azure Pipelines
 
+### New articles
+
+- [Configure agent pool security in Azure Pipelines](/azure/devops/pipelines/policies/agent-pool-permissions)
+- [Configure deployment group security in Azure Pipelines](/azure/devops/pipelines/policies/deployment-group-permissions)
+- [Configure security for environments in Azure Pipelines](/azure/devops/pipelines/policies/environment-permissions)
+- [Configure library security in Azure Pipelines](/azure/devops/pipelines/policies/library-permissions)
+- [Configure pipeline permissions in Azure Pipelines](/azure/devops/pipelines/policies/pipeline-permissions)
+- [Configure release pipeline permissions in Azure Pipelines](/azure/devops/pipelines/policies/release-pipeline-permissions)
+- [Configure service connection security in Azure Pipelines](/azure/devops/pipelines/policies/service-connection-permissions)
+- [Configure task group permissions in Azure Pipelines](/azure/devops/pipelines/policies/task-group-permissions)
+
 ### Updated articles
 
 - [Publish npm packages with Azure Pipelines (YAML/Classic)](/azure/devops/pipelines/artifacts/npm)
+- [Azure Pipelines security](/azure/devops/pipelines/policies/permissions)
+- [Deployment control using approvals](/azure/devops/pipelines/release/approvals/approvals)
 - [Use a PowerShell script to customize your pipeline](/azure/devops/pipelines/scripts/powershell)
 - [Self-hosted Linux agents (2.x)](/azure/devops/pipelines/agents/v2-linux-agent)
 - [Build and test PHP apps](/azure/devops/pipelines/ecosystems/php)
