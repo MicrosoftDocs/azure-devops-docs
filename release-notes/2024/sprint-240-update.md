@@ -2,36 +2,43 @@
 title: TBD
 author: ckanyika
 ms.author: ckanyika
-ms.date: 6/11/2024
+ms.date: 6/12/2024
 description: TBD
 ---
 # TBD
 
 
-### Azure Boards
+### Azure Boards:
 
 [!INCLUDE [sprint-240-update-links](includes/boards/sprint-240-update-links.md)]
-
-### Azure Pipelines
-
-[!INCLUDE [sprint-240-update-links](includes/pipelines/sprint-240-update-links.md)]
 
 ### Azure Repos
 
 [!INCLUDE [sprint-240-update-links](includes/repos/sprint-240-update-links.md)]
 
+### Azure Pipelines
+
+[!INCLUDE [sprint-240-update-links](includes/pipelines/sprint-240-update-links.md)]
+
+### Azure Test Plans:
+
+[!INCLUDE [sprint-240-update-links](includes/testplans/sprint-240-update-links.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-240-update](includes/boards/sprint-240-update.md)]
-
-## Azure Pipelines
-
-[!INCLUDE [sprint-240-update](includes/pipelines/sprint-240-update.md)]
 
 ## Azure Repos
 
 [!INCLUDE [sprint-240-update](includes/repos/sprint-240-update.md)]
 
+## Azure Pipelines
+
+[!INCLUDE [sprint-240-update](includes/pipelines/sprint-240-update.md)]
+
+## Azure Test Plans
+
+[!INCLUDE [sprint-240-update](includes/testplans/sprint-240-update.md)]
 
 
 ## Next steps

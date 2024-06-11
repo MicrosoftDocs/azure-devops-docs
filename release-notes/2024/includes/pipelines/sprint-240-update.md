@@ -9,6 +9,32 @@ ms.topic: include
 
 Tasks in the pipeline are executed using a runner, with Node.js used in most cases. Azure Pipelines tasks that utilize a Node as a runner now all use Node 20.
 
+### Access Azure Bus from Pipelines using Entra ID authentication
+
+You can now use [Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
+
+Identities accessing Azure Service Bus will need to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
+
+
+## PublishToAzureServiceBus@2 task
+
+The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
+
+```yaml
+- task: PublishToAzureServiceBus@2
+  inputs:
+    azureSubscription: my-azure-service-connection
+    serviceBusQueueName: my-service-bus-queue
+    serviceBusNamespace: my-service-bus-namespace
+    useDataContractSerializer: false
+    messageBody: |
+      {
+        "foo": "bar"
+      }
+```
+
+
+
 ### Pipelines and tasks populate variables to customize Workload identity federation authentication
 
 We now expose the REST API endpoint to request OIDC tokens in the `System.OidcRequestUri` pipeline variable. Task developers can use this variable to create an idToken and use that to authenticate with Entra ID.
@@ -82,4 +108,21 @@ The `System.OidcRequestUri` pipeline variable and `AZURESUBSCRIPTION_SERVICE_CON
       # New az-cli session
       az login --service-principal -u $servicePrincipalId --tenant $tenantId --allow-no-subscriptions --federated-token $ARM_OIDC_TOKEN
       az account set --subscription $ARM_SUBSCRIPTION_ID
+```
+
+### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
+
+Docker Compose v1 is end-of-life and will be removed from Hosted agents July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode instead.
+
+### Tasks that use an end-of-life Node runner version to execute emit warnings
+
+Pipeline tasks that are using Node version to execute that is no longer [maintained](https://nodejs.org/en/about/previous-releases) will start receiving warnings:
+
+> Task `TaskName` version `<version>` is dependent on a Node version (10) that is end-of-life. Contact the extension owner for an updated version of the task. Task maintainers should review Node upgrade guidance: https://aka.ms/node-runner-guidance
+
+Warnings can be suppressed at pipeline (job) or task level by setting an environment or pipeline variable e.g.
+
+```yaml
+variables:
+  AZP_AGENT_CHECK_IF_TASK_NODE_RUNNER_IS_DEPRECATED: false
 ```
