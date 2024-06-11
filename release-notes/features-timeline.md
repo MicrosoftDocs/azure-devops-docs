@@ -183,7 +183,13 @@ These investments include:
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
-      </tr>     
+      </tr>   
+    <tr>
+         <td><a href="/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview)">Show more details about a GitHub pull request (preview)</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
+         <td>Future</td>
+      </tr>   
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
          <td>Boards</td>
@@ -195,13 +201,7 @@ These investments include:
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
          <td>Future</td>
-      </tr>
-       <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview)">Show more details about a GitHub pull request (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
-         <td>Future</td>
-      </tr>   
+      </tr>       
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
          <td>Boards</td>
