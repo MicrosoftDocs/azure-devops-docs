@@ -59,7 +59,7 @@ For more information, see [Configure an SMTP server and customize email for aler
 
 #### Unexpected notification
 
-If you get an unexpected PAT notification, it might mean that an administrator or tool create a PAT for you. Here are some examples.
+If you get an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you. Here are some examples.
 
 - A token named "git: `https://MyOrganization.visualstudio.com/` on MyMachine" gets created when you connect to an Azure DevOps Git repo via git.exe.
 - A token named "Service Hooks: : Azure App Service: : Deploy web app" gets created when an Azure App Service web app deployment is set up by you or an administrator.
