@@ -66,8 +66,8 @@ Universal packages must conform to the following restrictions.
 
 ## Azure Boards 
 
-<a id="WorkItems"/>
-<a id="work-items-work-item-types-and-customizations"/>
+<a id="WorkItems"></a>
+<a id="work-items-work-item-types-and-customizations"></a>
 
 You use work items to capture information to plan and track your software development projects. With work items, you can describe the work to be done, assign work, track status, and coordinate efforts within your team. Different types of work items&mdash;such as user stories, tasks, bugs, and issues&mdash;track different types of information. For more information, see [Azure Boards documentation](../../boards/index.yml).
 

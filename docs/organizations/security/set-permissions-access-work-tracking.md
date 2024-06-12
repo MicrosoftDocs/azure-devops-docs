@@ -131,7 +131,7 @@ For more information, see [Add groups](add-remove-manage-user-group-security-gro
 
 [!INCLUDE [temp](includes/boards-sprints.md)]
 
-<a name="set-permissions-area-path" /> 
+<a id="set-permissions-area-path"></a>
 
 ## Create child nodes, modify work items under an area or iteration path   
 

@@ -256,7 +256,7 @@ witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollectio
 
 When you delete a work item type that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).
 
-<a name="rename-wit" />
+<a id="rename-wit"></a>
 
 ## Rename a work item type
 

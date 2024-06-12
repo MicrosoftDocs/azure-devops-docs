@@ -22,7 +22,7 @@ Each workflow consists of a set of states, valid transitions between  states, an
 
 Most work items move from a *New*, *Active*, or *Proposed* state to a *Done* or *Closed* state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it's reassigned to the tester who created it.  
 
-<a id="reactivated"/> 
+<a id="reactivated"></a>
 
 For example, you can find all work items that were closed but then reactivated. By specifying the **Changed Date** field, you can focus on reactivations that occurred today, yesterday, or in the last week.
 
@@ -95,7 +95,7 @@ Use the `In` and `Not In` operators to filter for or exclude two or more pick li
 
 
 
-<a id="me"/>
+<a id="me"></a>
 
 ## Identity-based queries  
 
@@ -174,7 +174,7 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 - Microsoft Entra ID and Active Directory security groups
 - Work item categories
 
-<a id="workflow-change"/> 
+<a id="workflow-change"></a>
 
 ## Queries based on workflow changes
 
@@ -235,7 +235,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 :::row-end:::
 ---
 
-<a id="workflow-change-who"/> 
+<a id="workflow-change-who"></a>
 
 ## Workflow changes and identity-based queries
 
