@@ -14,7 +14,7 @@ Identities accessing Azure Service Bus needs to be granted one of the [Azure bui
 
 ## PublishToAzureServiceBus@2 task
 
-The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
+The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
 
 ```yaml
 - task: PublishToAzureServiceBus@2
