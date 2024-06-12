@@ -23,7 +23,10 @@ ServiceHooks security namespace id is defined under [List Security Namespaces](.
 
 ## Prerequisites
 1. Install Azure CLI to run `az devops` command. [How to install the Azure CLI](/cli/azure/install-azure-cli)
-2. Create PAT under Azure DevOps profile
+2. Create PAT under Azure DevOps profile. The user should be member of project collection administrator (PCA) group. 
+ - Identity (Read)
+ - Graph (Read)
+ - Security (Manage) 
 3. Login to azure devops with `az devops login`. Please install extension if you install `az devops` first time.
 ```
 > az devops login
@@ -47,6 +50,7 @@ Name                                             Descriptor
 -----------------------------------------------  --------------------------------------------------------------------------------------------------------------------------------------------------
 [TEAM FOUNDATION]\EntraServiceHooksRead          aadgp.Uy0xLTktMTU1MTM3NDI0NS0xMjA0NDAwOTY5LTI0MDI5ODY0MTMtMjE3OTQwODYxNi0zLTM5NTQxNzM3ODYtMTUyMTA4MTkyNS0yNTQwNTA4MjYzLTMzNDgxNjQxNjg
 ```
+- If you want to filter by group name, you can use `findstr` or `grep` command depends on your command prompt.
 
 2. Get permission token.
 ```
@@ -169,7 +173,7 @@ If you need to reset permission for group or user, you can call `reset-all`
 Are you sure you want to reset all explicit permissions for this user/group and token? (y/n): Y
 true
 
-> az devops security permission list --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject "[TEAM FOUNDATION]\EntraServiceHooksRead" --output table
+> az devops security permission list --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --output table
 Token                                                   Effective Allow    Effective Deny
 ------------------------------------------------------  -----------------  ----------------
 PublisherSecurity                                       0                  0
