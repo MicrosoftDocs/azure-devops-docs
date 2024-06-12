@@ -50,8 +50,8 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzureFunctionApp@2                       | Y |
 | AzureFunctionAppContainer@1              | Y |
 | AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
-| AzureFunctionOnKubernetes@1              | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
-| AzureIoTEdge@2                           | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureFunctionOnKubernetes@1              | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureIoTEdge@2                           | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | AzureKeyVault@1                          | Y |
 | AzureKeyVault@2                          | Y |
 | AzureMonitor@0                           | Use AzureMonitor@1 |
@@ -65,7 +65,7 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzurePowerShell@5                        | Y |
 | AzureResourceGroupDeployment@2           | Y |
 | AzureResourceManagerTemplateDeployment@3 | Y |
-| AzureRmWebAppDeployment@3                | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
+| AzureRmWebAppDeployment@3                | Azure service connection: Y<br/> Docker Registry service connection: N |
 | AzureRmWebAppDeployment@4                | Y |
 | AzureSpringCloud@0                       | Y |
 | AzureVmssDeployment@0                    | Y |
@@ -73,24 +73,23 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzureWebAppContainer@1                   | Y |
 | ContainerBuild@0                         | N |
 | ContainerStructureTest@0                 | N |
-| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
-| Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
-| Docker@2                                 | 2024 Q2 |
-| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
-| DockerCompose@0                          | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
+| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
+| Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 |
+| Docker@2                                 | 2024 Q3 |
+| DockerCompose@0                          | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 |
 | HelmDeploy@0                             | Azure service connection: Y<br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | InvokeRESTAPI@1                          | Y |
 | JavaToolInstaller@0                      | Y |
 | JenkinsDownloadArtifacts@1               | Y |
 | Kubernetes@0                             | Use Kubernetes@1  |
-| Kubernetes@1                             | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| Kubernetes@1                             | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | KubernetesManifest@0                     | Use KubernetesManifest@1 |
-| KubernetesManifest@1                     | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
-| Notation@0                               | 2024 |
-| PackerBuild@0                            | 2024 |
-| PackerBuild@1                            | 2024 |
+| KubernetesManifest@1                     | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| Notation@0                               | Y |
+| PackerBuild@0                            | Use PackerBuild@1 |
+| PackerBuild@1                            | Y |
 | PublishToAzureServiceBus@1               | PublishToAzureServiceBus@2 will support workload identity federation |
-| PublishToAzureServiceBus@2               | 2024 Q2 |
+| PublishToAzureServiceBus@2               | Y |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
 | SqlAzureDacpacDeployment@1               | Y |
