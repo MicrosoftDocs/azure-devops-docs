@@ -155,7 +155,7 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-<a id="add-areas"></a><br/>
+<a id="add-areas"></a>
 <a id="add-areas-team-services"></a>
 <a id="tfs-15-area-paths"></a>
 

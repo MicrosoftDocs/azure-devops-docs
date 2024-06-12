@@ -51,7 +51,7 @@ The **History** window displays the historical data about the item in two tabs:
 
 -   The [Labels tab](get-history-item.md#labels_tab) lists every label that has been applied to the item.
 
-<a name="changesets_tab"><a/>
+<a name="changesets_tab"></a>
 
 ## Changesets tab
 
@@ -185,7 +185,7 @@ By using the **Changesets** tab, you can do the following tasks:
    :::column-end:::
 :::row-end:::
 
-<a name="labels_tab"><a/>
+<a name="labels_tab"></a>
 
 ## Labels tab
 

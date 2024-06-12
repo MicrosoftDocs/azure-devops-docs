@@ -145,7 +145,7 @@ A subscription lets you control what your team is notified of and how the team r
 
   
 
-<a name="manage" />
+<a name="manage"></a>
 
 > [!TIP]
 > If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).

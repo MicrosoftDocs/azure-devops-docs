@@ -127,7 +127,7 @@ To learn more about link types, see [Link type reference](link-type-reference.md
 
 
 
-<a id="my-shared"/>
+<a id="my-shared"></a>
 
 ## My Queries, Shared Queries, and Favorites
 
