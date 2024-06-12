@@ -71,8 +71,8 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzureVmssDeployment@0                    | Y |
 | AzureWebApp@1                            | Y |
 | AzureWebAppContainer@1                   | Y |
-| ContainerBuild@0                         | N |
-| ContainerStructureTest@0                 | N |
+| ContainerBuild@0                         | 2024 Q3 |
+| ContainerStructureTest@0                 | 2024 Q3 |
 | Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
 | Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 |
 | Docker@2                                 | 2024 Q3 |
@@ -88,7 +88,7 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | Notation@0                               | Y |
 | PackerBuild@0                            | Use PackerBuild@1 |
 | PackerBuild@1                            | Y |
-| PublishToAzureServiceBus@1               | PublishToAzureServiceBus@2 will support workload identity federation |
+| PublishToAzureServiceBus@1               | Use PublishToAzureServiceBus@2 |
 | PublishToAzureServiceBus@2               | Y |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
