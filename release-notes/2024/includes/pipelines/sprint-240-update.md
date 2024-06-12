@@ -5,10 +5,6 @@ ms.date: 6/11/2024
 ms.topic: include
 ---
 
-### Azure Pipelines tasks use Node 20
-
-Tasks in the pipeline are executed using a runner, with Node.js used in most cases. Azure Pipelines tasks that utilize a Node as a runner now all use Node 20.
-
 ### Access Azure Bus from Pipelines using Entra ID authentication
 
 You can now use [Entra ID authentication](/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
@@ -33,7 +29,9 @@ The new PublishToAzureServiceBus@2 tasks can be configured using an Azure servic
       }
 ```
 
+## Server tasks
 
+Custom server (agent-less) tasks that use `ServiceBus` execution can specify an Azure Service Connection as `EndpointId` and omit `ConnectionString`. See [Server task authoring](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md#server-task-authoring).
 
 ### Pipelines and tasks populate variables to customize Workload identity federation authentication
 
@@ -109,9 +107,30 @@ The `System.OidcRequestUri` pipeline variable and `AZURESUBSCRIPTION_SERVICE_CON
       az account set --subscription $ARM_SUBSCRIPTION_ID
 ```
 
-### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
+### Retries for server tasks
 
-Docker Compose v1 is end-of-life and will be removed from Hosted agents July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode instead.
+Server tasks that call an external system, such as `AzureFunction` or `InvokeRESTAPI`, can fail due to transient errors, such as compute resource exhaustion. In such cases, the job fails, which may cause the pipeline to fail.
+
+To better handle transient errors, we're adding support for the `retryCountOnTaskFailure` property of server tasks. Assume you have the following YAML code in your pipeline:
+
+```yml
+- stage: deploy
+  jobs:
+  - job:
+    pool: server
+    steps:
+    - task: AzureFunction@1
+      retryCountOnTaskFailure: 2
+      inputs:
+        function: 'https://api.fabrikamfiber.com'
+        key: $(functionKey)
+        method: 'POST'
+        waitForCompletion: 'false'
+```
+
+Imagine `https://api.fabrikamfiber.com` is experiencing a transient error. Azure Pipelines makes the request at most three times: the first is the normal call, the last two are due to the value of the `retryCountOnTaskFailure` property. Before each retry, there is an increasing wait period. The maximum number of retries is 10.
+
+The `retryCountOnTaskFailure` is not available for the `ManualValidation` task and other tasks that do not involve making a call to an external system.
 
 ### Tasks that use an end-of-life Node runner version to execute emit warnings
 
@@ -125,3 +144,8 @@ Warnings can be suppressed at pipeline (job) or task level by setting an environ
 variables:
   AZP_AGENT_CHECK_IF_TASK_NODE_RUNNER_IS_DEPRECATED: false
 ```
+
+### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
+
+Docker Compose v1 is end-of-life and will be removed from Hosted agents July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode instead.
+
