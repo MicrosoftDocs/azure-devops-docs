@@ -66,7 +66,7 @@ Visual Studio doesn't put a solution back online automatically. You must do that
 
    The changes that you made offline are added to TFVC as pending changes.
 
-<a name="Admin_Settings"><a/>
+<a name="Admin_Settings"></a>
 
 ## Manage project collection workspace settings for your team
 
