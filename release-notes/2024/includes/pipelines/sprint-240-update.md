@@ -35,22 +35,22 @@ Custom server (agent-less) tasks that use `ServiceBus` execution can specify an 
 
 ### Pipelines and tasks populate variables to customize Workload identity federation authentication
 
-We now expose the REST API endpoint to request OIDC tokens in the `System.OidcRequestUri` pipeline variable. Task developers can use this variable to create an idToken and use that to authenticate with Entra ID.
+We now expose the REST API endpoint to request OIDC tokens in the `System.OidcRequestUri` pipeline variable. Task developers can leverage this variable to generate an idToken for authentication with Entra ID.
 
-If you're using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation yet. In these cases, we ask task developers to support workload identity federation to improve security.
+For those utilizing Marketplace tasks or custom tasks to deploy to Azure, please note that these tasks may not yet support workload identity federation. We encourage task developers to enable workload identity federation to enhance security measures.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of oidc collaboration.](../../media/240-pipelines-01.png "Screenshot of oidc collaboration")
 
 
-Tasks that take a `connectedService:AzureRM` input in [task.json](https://learn.microsoft.com/azure/devops/extend/develop/integrate-build-task?view=azure-devops#custom-build-task-json) can be updated so support workload identity federation with the following steps:
+Tasks that take a `connectedService:AzureRM` input in [task.json](https://learn.microsoft.com/azure/devops/extend/develop/integrate-build-task?view=azure-devops#custom-build-task-json) can be updated to support workload identity federation by following these steps:
 
-*   Request an idToken using the [Oidctoken REST API](/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.1&preserve-view=true) (arrow 1 in above diagram).
+*  Utilize the [Oidctoken REST API](/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.1&preserve-view=true) to request an idToken (arrow 1 in above diagram).
 *   Exchange the idToken for an access token using the federated credential flow of the [OAuth API](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential), specifying the idToken as `client_assertion` (arrows 2 & 4 in above diagram);  
     or:
 *   For tasks that act as a wrapper around a tool that performs authentication itself, use the tools' authentication method to specify the federated token.
 
-Node tasks can use the [azure-pipelines-tasks-artifacts-common](https://www.npmjs.com/package/azure-pipelines-tasks-artifacts-common?activeTab=explore) npm package to get the idToken, see [code example](https://github.com/microsoft/azure-pipelines-terraform/blob/main/Tasks/TerraformTask/TerraformTaskV4/src/id-token-generator.ts)
+Node tasks can use the [azure-pipelines-tasks-artifacts-common](https://www.npmjs.com/package/azure-pipelines-tasks-artifacts-common?activeTab=explore) npm package to obtain the idToken. Refer to the [code example](https://github.com/microsoft/azure-pipelines-terraform/blob/main/Tasks/TerraformTask/TerraformTaskV4/src/id-token-generator.ts) for implementation details.
 
 
 #### Requesting a fresh idToken
@@ -109,9 +109,9 @@ The `System.OidcRequestUri` pipeline variable and `AZURESUBSCRIPTION_SERVICE_CON
 
 ### Retries for server tasks
 
-Server tasks that call an external system, such as `AzureFunction` or `InvokeRESTAPI`, can fail due to transient errors, such as compute resource exhaustion. In such cases, the job fails, which may cause the pipeline to fail.
+Server tasks that call external systems, such as `AzureFunction` or `InvokeRESTAPI`, can occasionally fail due to transient errors like compute resource exhaustion. Previously, such failures would cause the entire job, and potentially the pipeline, to fail. 
 
-To better handle transient errors, we're adding support for the `retryCountOnTaskFailure` property of server tasks. Assume you have the following YAML code in your pipeline:
+To improve resilience against transient errors, we have introduced support for the `retryCountOnTaskFailure` property in server tasks. Assume you have the following YAML code in your pipeline:
 
 ```yml
 - stage: deploy
@@ -128,17 +128,17 @@ To better handle transient errors, we're adding support for the `retryCountOnTas
         waitForCompletion: 'false'
 ```
 
-Imagine `https://api.fabrikamfiber.com` is experiencing a transient error. Azure Pipelines makes the request at most three times: the first is the normal call, the last two are due to the value of the `retryCountOnTaskFailure` property. Before each retry, there's an increasing wait period. The maximum number of retries is 10.
+If `https://api.fabrikamfiber.com` experiences a transient error, Azure Pipelines will retry the request up to three times (the initial attempt plus two retries specified by `retryCountOnTaskFailure`). Each retry includes an increasing wait period. The maximum number of retries allowed is 10. 
 
-The `retryCountOnTaskFailure` isn't available for the `ManualValidation` task and other tasks that don't involve making a call to an external system.
+The `retryCountOnTaskFailure` isn't available for the `ManualValidation` task and other tasks that don't involve external system calls.
 
 ### Tasks that use an end-of-life Node runner version to execute emit warnings
 
-Pipeline tasks that are using Node version to execute that is no longer [maintained](https://nodejs.org/en/about/previous-releases) will start receiving warnings:
+Pipeline tasks that rely on a Node version no longer [maintained](https://nodejs.org/en/about/previous-releases) will start receiving warnings:
 
 > Task `TaskName` version `<version>` is dependent on a Node version (10) that is end-of-life. Contact the extension owner for an updated version of the task. Task maintainers should review Node upgrade guidance: https://aka.ms/node-runner-guidance
 
-Warnings can be suppressed at pipeline (job) or task level by setting an environment or pipeline variable for example:
+To suppress these warnings, you can set an environment or pipeline variable at either the pipeline (job) or task level. For example:
 
 ```yaml
 variables:
@@ -147,6 +147,4 @@ variables:
 
 ### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
 
-Docker Compose v1 is end-of-life and will be removed from Hosted agents July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode instead.
-
-
+Docker Compose v1 will reach its end-of-life and be removed from Hosted Agents in July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode.
