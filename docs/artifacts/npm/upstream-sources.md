@@ -50,11 +50,11 @@ If you checked the upstream sources checkbox during the creation of your feed, n
 
 1. Select **Public source**, and then select **npmjs (https://registry.npmjs.org/)** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** at the top right corner to save your changes.
+1. Select **Add** when you're done, and then select **Save** at the top right corner to save your changes.
 
 ## Install packages from npmjs
 
-Before you save packages from npmjs, make sure your project is set up to connect to your feed. If you haven't done this yet, follow the instructions in the [project setup](npmrc.md#project-setup) to configure your npm project and connect to your feed. In this example, we'll install the *Axios* library for making HTTP requests:
+Before you save packages from npmjs, make sure your project is set up to connect to your feed. If you haven't done this yet, follow the provided instructions to [set up your npm project](npmrc.md#connect-to-feed) and connect to your feed. In this example, we'll install the *Axios* library for making HTTP requests:
 
 1. Navigate to npmjs at `https://www.npmjs.com//`.
 

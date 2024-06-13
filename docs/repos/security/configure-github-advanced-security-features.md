@@ -97,7 +97,7 @@ As mentioned, secret scanning repository scanning is automatically kicked off up
 Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. It's recommended that you add the dependency scanning task to all the pipelines you'd like to be scanned. 
 
 >[!TIP] 
-> For the most accurate scanning results, be sure to add the dependency scanning task following the build steps of a pipeline that builds the code you wish to scan.
+> For the most accurate scanning results, be sure to add the dependency scanning task following the build steps and/or package restore step of a pipeline that builds the code you wish to scan.
 
 #### [YAML](#tab/yaml)
 
@@ -156,7 +156,8 @@ steps:
 #   Add your custom build steps here
 # - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you are building from a clean state).
 # - Disable the use of any build caching mechanisms as this can interfere with CodeQL's ability to capture all the necessary data during the build.
-# - Disable the use of any distributed/multithreaded/incremental builds as CodeQL needs to monitor executions of the compiler to construct an accurate representation of the application. 
+# - Disable the use of any distributed/multithreaded/incremental builds as CodeQL needs to monitor executions of the compiler to construct an accurate representation of the application.
+# - For dependency scanning, ensure you have a package restore step for more accurate results.
 
 # If you had a Maven app:
 #   - task: Maven@4

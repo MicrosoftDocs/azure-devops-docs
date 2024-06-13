@@ -1,7 +1,7 @@
 ---
 title: Namespace reference  
 titleSuffix: Azure DevOps
-description: Understand the set of namespaces used to manage security  
+description: Understand the set of namespaces used to manage security.  
 ms.subservice: azure-devops-security
 ms.custom: quarterly-review
 ms.topic: reference
@@ -30,11 +30,11 @@ Each family of resources, such as work items or Git repositories, is secured thr
 
 ## Permission management tools 
 
-The recommended method for managing permissions is through the web portal. However, if you need to set a permission that isn't surfaced through the web portal or to set more granular permissions, you can use one of the command line tools or REST API.  
+The recommended method for managing permissions is through the web portal. However, to set a permission that isn't surfaced through the web portal or set more granular permissions, you can use one of the command line tools or REST API.  
 - For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
 - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
-- For Azure DevOps git repositories,[Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
-- For Team Foundation Version Control (TFVC) repositories, [Tf TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
+- For Azure DevOps git repositories,[tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
+- For Team Foundation Version Control (TFVC) repositories, [TF TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
 
 For all Azure DevOps instances, you can use the [Security REST API](/rest/api/azure/devops/security). 
 
@@ -90,7 +90,7 @@ The following table describes the namespaces that manage object-level permission
       `ManagePermissions`   
    :::column-end:::
    :::column span="2":::
-      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](../../report/powerbi/analytics-security.md).  
+      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-object-level) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](../../report/powerbi/analytics-security.md).  
       <br/>
       **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
       **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`   
@@ -167,7 +167,7 @@ The following table describes the namespaces that manage object-level permission
       `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
-      [Manages dashboard object-level permissions](permissions.md#dashboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
+      [Manages dashboard object-level permissions](permissions.md#dashboards-object-level) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
       **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
@@ -196,9 +196,9 @@ The following table describes the namespaces that manage object-level permission
       `PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
-      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
+      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
       <br/>
-      The `Administer` permission was divided into several more granular permissions [in 2017](/previous-versions/azure/devops/2017/jan-25-team-services#repo-admin-permission-changes), and should not be used.
+      The `Administer` permission was divided into several more granular permissions [in 2017](/previous-versions/azure/devops/2017/jan-25-team-services#repo-admin-permission-changes), and shouldn't be used.
       <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
       You need to append `RepositoryID` to update repository-level permissions.  
@@ -249,13 +249,13 @@ The following table describes the namespaces that manage object-level permission
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#set-task-group-permissions). 
+      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/task-group-permissions.md). 
       <br/><br/>
       **Token format for project-level permissions**: `PROJECT_ID`
       <br/>
       **Token format for metaTask-level permissions**: `PROJECT_ID/METATASK_ID`
       <br/><br/>
-      If MetaTask has parentTaskId then the Security token looks as follows: 
+      If MetaTask has parentTaskId, then the Security token looks as follows: 
       <br/>
       **Token Format**: `PROJECT_ID/PARENT_TASK_ID/METATASK_ID`
       <br/><br/>
@@ -330,7 +330,7 @@ The following table describes the namespaces that manage object-level permission
       `RecordQueryExecutionInfo`   
    :::column-end:::
    :::column span="2":::
-      [Manages permissions for work item queries and query folders](permissions.md#query). To manage these through the web portal, see [Set permissions and access for work tracking, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries).  
+      [Manages permissions for work item queries and query folders](permissions.md#query). To manage these permissions through the web portal, see [Set permissions and access for work tracking, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries).  
       <br/>
       **ID:** `71356614-aad7-4757-8f2c-0fb3bff6f680`
    :::column-end:::
@@ -444,7 +444,7 @@ The following table describes the namespaces that manage project-level permissio
       `ManageBranch`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There is only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/tfvc/set-tfvc-repository-permissions.md).  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There's only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/tfvc/set-tfvc-repository-permissions.md).  
       <br/>
       **ID:** `a39371cf-0841-4c16-bbd3-276e341bc052`
    :::column-end:::
@@ -455,7 +455,7 @@ The following table describes the namespaces that manage project-level permissio
 
 ## Organization-level namespaces and permissions 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions.  To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions. To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -610,7 +610,7 @@ The following table describes the namespaces that manage organization-level perm
 
 ## Server-level namespaces and permissions  
 
-The following table describes those security namespaces and permissions defined for on-premises instances of Azure DevOps Server.  You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). For descriptions of these permissions, see [Permissions and groups, Server-level permissions](permissions.md#server-permissions).  
+The following table describes those security namespaces and permissions defined for on-premises instances of Azure DevOps Server. You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). For descriptions of these permissions, see [Permissions and groups, Server-level permissions](permissions.md#server-permissions).  
  
 
 ---
@@ -652,7 +652,7 @@ The following table describes those security namespaces and permissions defined 
       `TriggerEvent`   
    :::column-end:::
    :::column span="2":::
-      Manages permissions set at the server-level. This includes permissions to edit instance-level information, make requests on behalf of others, and trigger events.  
+      Manages permissions set at the server-level. Includes permissions to edit instance-level information, make requests on behalf of others, and trigger events.  
       <br/>
       **ID:** `1f4179b3-6bac-4d01-b421-71ea09171400`
    :::column-end:::
@@ -767,7 +767,7 @@ The following table describes the security namespaces and permissions used to ma
       `Owner`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions to create and manage library items, which include secure files and variable groups. Role memberships for individual items are automatically inherited from those of the Library node. By default, the following permissions are assigned: 
+      Manages permissions to create and manage library items, which include secure files and variable groups. Role memberships for individual items are automatically inherited from the Library. By default, the following permissions are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
@@ -789,7 +789,7 @@ The following table describes the security namespaces and permissions used to ma
       `ViewEndpoint`        
    :::column-end:::
    :::column span="2":::
-      Manages permissions to create and manage service connections. Role memberships for individual items are automatically inherited from those defined at the project-level.  By default, the following roles are assigned: 
+      Manages permissions to create and manage service connections. Role memberships for individual items are automatically inherited from the project-level roles. By default, the following roles are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
       - **Creator** role (`View`, `Use`, and `Create` permissions) to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
@@ -803,7 +803,7 @@ The following table describes the security namespaces and permissions used to ma
 
 ## Internal namespaces and permissions
 
-The following table describes the security namespaces and permissions that aren't surfaced through the web portal. They are primarily used to grant access to members of default security groups or to internal resources. We strongly recommend that you don't alter these permission settings in any way.    
+The following table describes the security namespaces and permissions that aren't surfaced through the web portal. They're primarily used to grant access to members of default security groups or to internal resources. We strongly recommend that you don't alter these permission settings in any way.    
  
 ---
 :::row:::
@@ -887,7 +887,7 @@ The following table describes the security namespaces and permissions that aren'
       `Manage`          
    :::column-end:::
    :::column span="2":::
-      Manages permissions and access to Kanban boards.  
+      Manages permissions and access to boards.  
       <br/>
       **ID:** `251e12d9-bea3-43a8-bfdb-901b98c0125e`
    :::column-end:::
@@ -1071,7 +1071,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::

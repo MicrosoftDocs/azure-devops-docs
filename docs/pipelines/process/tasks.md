@@ -11,8 +11,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 A **task** performs an action in a pipeline and is a packaged script or procedure that's
 abstracted with a set of inputs. Tasks are the building blocks for defining automation in a pipeline. 
 
@@ -251,11 +249,11 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ### Number of retries if task failed
 
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. 
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. For more information in task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
 
 ```yml
 - task: <name of task>
-   retryCountOnTaskFailure: <max number of retries>
+  retryCountOnTaskFailure: <max number of retries>
    ...
 ```
 

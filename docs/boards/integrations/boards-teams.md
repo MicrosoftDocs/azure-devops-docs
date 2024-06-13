@@ -17,7 +17,7 @@ ms.date: 10/26/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can create work items and monitor work item activity in your Azure Boards project from your Teams channel. You accomplish this by adding the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to your Teams channel.
+If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can create work items and monitor work item activity in your Azure Boards project from your Teams channel. You accomplish this by adding the Azure Boards app for Microsoft Teams to your Teams channel.
 
 The Azure Boards app for Microsoft Teams enables users to complete the following tasks: 
 - Set up and manage subscriptions for creating and updating work items
@@ -210,13 +210,13 @@ The following table lists all the `@azure boards` commands you can use in your M
 
 ## Configure Azure DevOps Services tabs in Microsoft Teams
 
-1. To bring your Kanban board or Dashboard into Microsoft Teams, select the '+' ('add new tab') button on the top nav of your team channel. 
+1. To bring your board or dashboard into Microsoft Teams, select the '+' ('add new tab') button on the top nav of your team channel. 
 
 	The **Add a tab** dialog displays. Icons are arranged typically according to most recent access. You can select A-Z for an alphabetized list.
 
 	:::image type="content" source="media/teams-as-website.png" alt-text="Screenshot to add a new tab to Teams channel.":::
 
-2. Choose the **Azure DevOps** icon and authenticate your identity. Optionally, you can choose the **Website** icon and add the URL of your Kanban board or dashboard to the channel.  
+2. Choose the **Azure DevOps** icon and authenticate your identity. Optionally, you can choose the **Website** icon and add the URL of your board or dashboard to the channel.  
 
 3. Choose the organization whose board or dashboard you want to add. 
 
@@ -224,7 +224,7 @@ The following table lists all the `@azure boards` commands you can use in your M
 
 	:::image type="content" source="media/integrations-teams/dialog-add-dashboard-kanban-board.png" alt-text="Dialog to add a team dashboard to a Teams channel.":::
  
-2. The Kanban board or dashboard you selected displays. 
+2. The board or dashboard you selected displays. 
    
  ## Multi-tenant support
 
@@ -356,7 +356,7 @@ This scenario isn't supported today
   
  ## Troubleshoot errors
 
-If you're experiencing the following errors when using the [Azure Boards App for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview), follow the procedures in this section.
+If you're experiencing the following errors when using the Azure Boards App for Microsoft Teams, follow the procedures in this section.
 
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 

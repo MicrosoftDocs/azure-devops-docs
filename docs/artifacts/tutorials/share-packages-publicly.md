@@ -62,7 +62,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Universal Packages](#tab/universalpackages)
 
-- [Publish Universal Packages](../quickstarts/universal-packages.md#publish-packages)
+- [Publish Universal Packages](../quickstarts/universal-packages.md#publish-universal-packages)
 
 - - -
 
@@ -70,7 +70,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [NuGet](#tab/nuget)
 
-- [Publish NuGet packages](../../pipelines/artifacts/nuget.md#publish-nuget-packages)
+- [Publish NuGet packages](../../pipelines/artifacts/nuget.md#publish-packages-to-internal-feeds)
 
 #### [Npm](#tab/npm)
 

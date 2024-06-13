@@ -13,8 +13,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 You can use an Azure Resource Manager service connection to connect to Azure resources through service principal authentication or through an Azure managed service identity. If you use a Resource Manager service connection, you can use a pipeline to deploy to an Azure resource like an Azure App Service app without authenticating each time.
 
 You have multiple options for connecting to Azure by using Azure Resource Manager service connections:
@@ -39,7 +37,6 @@ We recommend that you use this approach if all the following items are true for 
 
 * You have the Owner role for your Azure subscription.
 * You're not connecting to [Azure Stack](#connect-stack) or to an [Azure Government Cloud](#connect-govt).
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of Azure Visual Studio Team Foundation Server.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
 ### Create a new workload identity federation service connection
@@ -99,7 +96,8 @@ To convert a service connection:
 
 Use a script to update multiple service connections at once to now use workload identity federation for authentication.
 
-This example PowerShell script requires two parameters: Azure DevOps organization (example: `https://dev.azure.com/fabrikam-tailspin`) and Azure DevOps project (example: `Space game web agent`). The script then retrieves the associated service connections for your Azure DevOps project and organization. You'll be asked to confirm that you want to convert each associated service connection that does not use workload identity federation. If you confirm, the script uses the Azure DevOps REST API to update each service connection to now use workload identity federation. 
+This example PowerShell script requires two parameters: Azure DevOps organization (example: `https://dev.azure.com/fabrikam-tailspin`) and Azure DevOps project (example: `Space game web agent`). The script then retrieves the associated service connections for your Azure DevOps project and organization. You'll be asked to confirm that you want to convert each associated service connection that does not use workload identity federation. If you confirm, the script uses the Azure DevOps REST API to update each service connection to now use workload identity federation.
+The script requires [PowerShell 7.3 or newer](/powershell/scripting/install/installing-powershell-on-windows) and [Azure CLI](/cli/azure/install-azure-cli) to run. Save the script to a .ps1 file and run it using Powershell 7.
 
 ```powershell
 #!/usr/bin/env pwsh

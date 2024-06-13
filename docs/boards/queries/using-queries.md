@@ -69,7 +69,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [Identity searches](./query-by-workflow-changes.md#me) 
       - [History and Discussion](./history-and-auditing.md) 
-      - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
+      - [Board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
       - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
       - [Search across projects](#query-across-or-within-projects)
       ::: moniker-end

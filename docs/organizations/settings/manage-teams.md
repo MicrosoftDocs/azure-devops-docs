@@ -1,7 +1,7 @@
 ---
 title: Manage teams, configure team tools 
 titleSuffix: Azure DevOps
-description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
+description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, boards, and more in Azure DevOps. 
 ms.subservice: azure-devops-settings
 ms.custom: teams
 ms.author: chcomley
@@ -98,7 +98,7 @@ Most of these team settings can be easily configured from the common configurati
 ::: moniker range=">= azure-devops-2022"
 
 1. Check that you selected the correct project, and then choose **Boards** > **Boards**, and select the correct team from the team selector dropdown menu. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md).
-   :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the kanban board.":::
+   :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the board.":::
 
 2. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
@@ -115,7 +115,7 @@ Most of these team settings can be easily configured from the common configurati
 1. Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
+	> ![Open board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
 
 2. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -135,7 +135,7 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end  
 
-Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Kanban overview](../../boards/boards/kanban-overview.md) and [Kanban quickstart](../../boards/boards/kanban-quickstart.md).
+Team administrators have complete control over customizing their team's boards for both the product and portfolio backlogs. To set up a board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Board overview](../../boards/boards/kanban-overview.md) and [Board quickstart](../../boards/boards/kanban-quickstart.md).
 
 For detailed information on each configuration option, you can explore the following articles:
 
@@ -173,13 +173,13 @@ For detailed information on each configuration option, you can explore the follo
 
 ::: moniker range=">= azure-devops-2020" 
 
-Similar to Kanban boards, you can customize each sprint taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
+Similar to boards, you can customize each sprint Taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020" 
 
-Similar to Kanban boards, each sprint taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
+Similar to boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 

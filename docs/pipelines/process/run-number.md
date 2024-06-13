@@ -11,8 +11,6 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`. 
 
 In Azure DevOps `$(Rev:r)` is a special variable format that only works in the build number field. When a build is completed, if nothing else in the build number has changed, the `Rev` integer value increases by one.

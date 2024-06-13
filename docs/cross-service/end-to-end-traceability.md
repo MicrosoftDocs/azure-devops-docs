@@ -30,9 +30,9 @@ The link types used for Git repositories&mdash;as illustrated in the following i
 
 ## Create a branch from a requirement  
 
-You can accomplish many tasks with a single select from the product Kanban board. Shown in the following image, you can create a branch from a requirement by opening the work item card menu. When you create a branch from the default main branch, you can give it a name and a label. The branch is automatically linked to the work item with the *Branch* link type.
+You can accomplish many tasks with a single select from the product board. Shown in the following image, you can create a branch from a requirement by opening the work item card menu. When you create a branch from the default main branch, you can give it a name and a label. The branch is automatically linked to the work item with the *Branch* link type.
 
-![Screenshot of Kanban board card, menu, choose New branch option.](media/traceability/board-card-menu-new-branch.png)      
+![Screenshot of board card, menu, choose New branch option.](media/traceability/board-card-menu-new-branch.png)      
 
 Or, select **create a branch** in the work item form.  
 
@@ -44,15 +44,15 @@ Once the code changes are done in the new branch, developers can create a pull r
 
 ![Screenshot of Work item form, Create a pull request.](media/traceability/work-item-form-pull-request.png)   
 
-Using the Kanban board and the work item to drive software development also has another benefit. It encourages developers to add comments as they work, which helps to document the changes they make and the reasons behind them. This way, the work item becomes a rich source of information and history for the code changes. 
+Using the board and the work item to drive software development also has another benefit. It encourages developers to add comments as they work, which helps to document the changes they make and the reasons behind them. This way, the work item becomes a rich source of information and history for the code changes. 
  
 ## Add and run tests from requirements 
 
-Link a test to a set of requirements and validate that the application works as expected. From the Kanban board, you can add tests to the work item. Then, you can run your new tests from the Kanban board and set the test status. 
+Link a test to a set of requirements and validate that the application works as expected. From the board, you can add tests to the work item. Then, you can run your new tests from the board and set the test status. 
 
-![Screenshot of Kanban board card, menu, choose Add test option.](media/traceability/board-card-menu-add-test.png)
+![Screenshot of board card, menu, choose Add test option.](media/traceability/board-card-menu-add-test.png)
 
-Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities provided by Azure Test Plans. The Kanban board shows the test added to support the requirement when test cases are created from the Kanban board or when requirement-based test suites are created under Test Plans. 
+Test integration with the board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities provided by Azure Test Plans. The board shows the test added to support the requirement when test cases are created from the board or when requirement-based test suites are created under Test Plans. 
 
 ### Manual and automated testing
 

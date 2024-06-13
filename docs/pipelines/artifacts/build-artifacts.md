@@ -192,7 +192,7 @@ When your pipeline run is completed, navigate to **Summary** to explore or downl
 
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
-- Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
+- Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines.
 
 - `Build.ArtifactStagingDirectory` and `Build.StagingDirectory` are interchangeable.
 

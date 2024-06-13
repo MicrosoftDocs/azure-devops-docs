@@ -1,7 +1,5 @@
 - name: Security, Permissions, & Access
   href: index.yml
-- name: Security quick reference index
-  href: quick-reference-index-security.md
 - name: Security best practices
   href: security-best-practices.md
 - name: Get started
@@ -41,9 +39,9 @@
   - name: Remove users from Azure DevOps
     displayName: delete, revoke, organization, members
     href: ../accounts/delete-organization-users.md
-  - name: Remove user accounts from Active Directory
+  - name: Remove user accounts from Microsoft Entra ID
     displayName: delete, revoke, organization, members
-    href: remove-users-prohibit-access.md
+    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user
   - name: Manage access with Microsoft Entra ID
     items:
     - name: Connect organization to Microsoft Entra ID
@@ -77,7 +75,7 @@
     href: ../accounts/delete-organization-users.md
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
-    href: remove-users-prohibit-access.md
+    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
 - name: Billing
   href: ../billing/toc.yml
 - name: Authenticate, PATs, & secure applications
@@ -119,7 +117,7 @@
   - name: Set object-level permissions
     displayName: artifacts, boards, repos, projects, area, iteration, path, work items, access
     href: set-object-level-permissions.md
-  - name: Grant or restrict permissions to select tasks
+  - name: Manage permissions for specific tasks
     displayName: give, revoke, access, users
     href: restrict-access.md
   - name: Set dashboard permissions
@@ -214,24 +212,15 @@
   - name: Approach to securing YAML pipelines
     displayName: security, access, how, to
     href: ../../pipelines/security/approach.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Repository protection
-    displayName: security, repo
-    href: ../../pipelines/security/repos.md?toc=/azure/devops/organizations/security/toc.json
   - name: Pipeline resources
     displayName: permissions, access, information
     href: ../../pipelines/security/resources.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Project structure
-    displayName: about, build, security
-    href: ../../pipelines/security/projects.md?toc=/azure/devops/organizations/security/toc.json
   - name: Security through templates
     displayName: access, permissions
     href: ../../pipelines/security/templates.md?toc=/azure/devops/organizations/security/toc.json
   - name: Variables and parameters
     displayName: inputs, security
     href: ../../pipelines/security/inputs.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Shared infrastructure
-    displayName: security
-    href: ../../pipelines/security/infrastructure.md?toc=/azure/devops/organizations/security/toc.json
   - name: Other security considerations
     displayName: miscellaneous, secure, details, information
     href: ../../pipelines/security/misc.md?toc=/azure/devops/organizations/security/toc.json
@@ -272,10 +261,8 @@
     href: troubleshoot-permissions.md
   - name: User & permissions management FAQs
     href: ../accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/organizations/security/toc.json
-  - name: Access and permissions FAQs
-    href: faq-permissions.yml
-  - name: Authenticate & invite with GitHub
-    href: faq-github-authentication.yml
+  - name: Connect to GitHub, FAQs
+    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/security/toc.json
   - name: Access with Microsoft Entra FAQs
     href: ../accounts/faq-azure-access.yml?toc=/azure/devops/organizations/security/toc.json
   - name: Set up Visual Studio
@@ -306,9 +293,6 @@
     href: manage-tokens-namespaces.md
   - name: Enable DevSecOps with Azure and GitHub
     href: /devops/devsecops/enable-devsecops-azure-github
-  - name: Security key concepts
-    displayName: definitions, terms, manage, authentication, permission
-    href: security-glossary.md
 - name: Resources
   items:
   - name: Get started

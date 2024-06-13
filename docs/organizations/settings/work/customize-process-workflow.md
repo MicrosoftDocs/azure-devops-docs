@@ -57,7 +57,7 @@ Within each category, you can move custom states up or down.
 
 ## Impact to teams with workflow changes
 
-Teams may need to update their Kanban board configuration when the following customizations are made: 
+Teams may need to update their board configuration when the following customizations are made: 
 
 - You add a custom State  
 - You change the category of a custom State  
@@ -108,7 +108,7 @@ States you add appear in the drop-down menu for the States field shown in work i
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Triaged state added](media/process/cpw-added-triage-state-in-form.png) 
 
-1. Remember, when you add a State to a WIT, which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
+2. Remember, when you add a State to a WIT, which is associated with a backlog level, each team that uses the board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
 <a id="edit-state"></a>
 
@@ -123,7 +123,7 @@ You can edit the category or the color of a custom state. However, you can't cha
 
 1. Modify the category or color, and then choose <strong>Save</strong>. 
 
-1. If you change the category, teams that use the Kanban board need to update their [column settings](../../../boards/boards/add-columns.md).    
+2. If you change the category, teams that use the board need to update their [column settings](../../../boards/boards/add-columns.md).    
  
 <a id="remove-state"></a>
 
@@ -149,9 +149,9 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 	> ![Hide an inherited state](media/process/cpworkflow-hide-state.png)  
 
 	> [!NOTE]    
-	> If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
+	> If you hide the state of a WIT tracked on a board, each team  that uses the board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
-1. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
+2. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
  
 
 <a id="remove-state"></a>
@@ -189,8 +189,8 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 - [Add and manage fields](customize-process-field.md)  
 - [Customize a form](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md) 
-- [Add or edit Kanban columns](../../../boards/boards/add-columns.md)  
-- [Query by workflow or Kanban board changes](../../../boards/queries/query-by-workflow-changes.md)    
+- [Add or edit board columns](../../../boards/boards/add-columns.md)  
+- [Query by workflow or board changes](../../../boards/queries/query-by-workflow-changes.md)    
 
 
 

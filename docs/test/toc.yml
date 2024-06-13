@@ -40,7 +40,7 @@
   - name: Repeat a test with different data
     displayName: data, testing, shared steps, shared parameters
     href: repeat-test-with-different-data.md
-  - name: Test from the Kanban board
+  - name: Test from your board
     displayName: inline testing
     href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json
   - name: Perform user acceptance testing

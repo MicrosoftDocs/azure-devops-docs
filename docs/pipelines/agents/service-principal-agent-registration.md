@@ -2,7 +2,7 @@
 title: Register an agent using a service principal
 description: Learn how to register a self-hosted agent using a Service Principal
 ms.topic: conceptual
-ms.date: 10/09/2023
+ms.date: 04/26/2024
 monikerRange: 'azure-devops'
 ms.custom: arm2024
 ---
@@ -14,6 +14,11 @@ You can register an agent using a Service Principal starting with [agent version
 ## Grant the Service Principal access to the agent pool
 
 Before registering an agent using a Service Principal you must have [created a Service Principal](../../integrate/get-started/authentication/service-principal-managed-identity.md) and granted it permission to access the agent pool.
+
+> [!IMPORTANT]
+> To grant a Service Principal access to the agent pool, you must be an agent pool administrator, an [Azure DevOps organization owner](../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
+>
+> If your agent is a [deployment group](../release/deployment-groups/index.md) agent, you must be a deployment group administrator, an [Azure DevOps organization owner](../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
 1. Open a browser and navigate to the **Agent pools** tab for your Azure Pipelines organization.
 
@@ -48,4 +53,4 @@ Before registering an agent using a Service Principal you must have [created a S
 
 1. Specify the name of the agent pool for which you granted administrator permission for the Service Principal, and continue the agent registration steps.
 
-
+For more information about using Service Principal with Azure DevOps, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).

@@ -18,7 +18,7 @@ Enabling upstream sources for your feed extends your developers' access to packa
 - [NuGet.exe](https://www.nuget.org/downloads)
 - [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider)
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
 ## Add PowerShell Gallery upstream source
 
@@ -34,7 +34,7 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
 
     :::image type="content" source="media/add-upstream-source.png" alt-text="A screenshot showing how to add a new upstream source.":::
 
-1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Save** when you're done.
+1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Add** when you're done.
 
     :::image type="content" source="media/add-powershell-gallery-upstream.png" alt-text="A screenshot showing how to add the PowerShell Gallery as an upstream source.":::
 

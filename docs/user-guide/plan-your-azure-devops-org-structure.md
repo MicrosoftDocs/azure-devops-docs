@@ -40,7 +40,7 @@ An organization in Azure DevOps is a mechanism for organizing and connecting gro
 Each organization gets its own *free tier* of services (up to five users for each service type) as follows. You can use all the services, or choose only what you need to complement your existing workflows.
 
 * [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
-* [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
+* [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and boards
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
 * Unlimited Stakeholders
@@ -148,7 +148,7 @@ Configure your project in **Project settings**.
 
 ![Screenshot showing the Project settings button.](../media/settings/open-project-settings-vert-brn.png)
 
-For more information about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/about-projects.md). You can move a project to a different organization by migrating the data. For more information about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
+For more information about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/about-projects.md). You can move a project to a different organization by migrating the data. For more information about migrating your project, see the [Migration overview](../migrate/migration-overview.md).
 
 ## Manage version control
 

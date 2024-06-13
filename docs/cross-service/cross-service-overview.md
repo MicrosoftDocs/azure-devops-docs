@@ -545,7 +545,7 @@ The Bug work item type supports the following integrations that you should be aw
       Create inline tests linked to bugs or user stories
    :::column-end::: 
    :::column span="3":::
-      When your team tracks bugs as requirements, you can use the Kanban board to [add tests](../boards/boards/add-run-update-tests.md) to verify bug fixes or user stories.
+      When your team tracks bugs as requirements, you can use the board to [add tests](../boards/boards/add-run-update-tests.md) to verify bug fixes or user stories.
    :::column-end:::
 :::row-end:::
 ---

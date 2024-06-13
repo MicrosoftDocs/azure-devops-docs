@@ -42,6 +42,6 @@ For more information, see [Frequently asked questions about Azure access](faq-az
 
 * [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
-* [Disconnect your organization from Microsoft Entra ID](./disconnect-organization-from-azure-ad.md)
+* [Disconnect your organization from Microsoft Entra ID](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
 * [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

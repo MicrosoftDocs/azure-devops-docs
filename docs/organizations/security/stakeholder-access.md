@@ -8,20 +8,20 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2023
+ms.date: 04/12/2024
 --- 
 
 # Stakeholder access quick reference
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-**Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards, Azure Pipelines, and collaboration tools. They have no access to code repositories. 
+**Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards and collaboration tools. They have no access to code repositories. 
 
-**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
+**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.
 
 If you're assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you're tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
  
-## Assign Stakeholder access users to a security group 
+## Assign Stakeholder access users to a security group
 
 In general, use the following guidance when assigning **Stakeholder** access users to a security group: 
 
@@ -38,7 +38,7 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 ## Public versus private feature access
 
-Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
+Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders have limited access to specific work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
 
 
 > [!div class="mx-tdBreakAll"]  

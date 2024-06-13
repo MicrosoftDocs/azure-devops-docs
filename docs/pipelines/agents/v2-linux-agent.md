@@ -2,6 +2,7 @@
 title: Deploy an Azure Pipelines agent on Linux (2.x)
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS) (2.x).
 ms.topic: conceptual
+ms.custom: linux-related-content
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 05/05/2023
 monikerRange: '<= azure-devops'
@@ -20,7 +21,7 @@ monikerRange: '<= azure-devops'
 
 
 
-To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
+To run your jobs, you need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu and Red Hat.
 
 > Before you begin:
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
@@ -36,7 +37,6 @@ The agent is based on .NET Core 3.1.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 - x64
-  - CentOS 7, 6 (see note 1)
   - Debian 9
   - Fedora 30, 29
   - Linux Mint 18, 17
@@ -54,7 +54,7 @@ We support the following subset of .NET Core supported distributions:
   - Ubuntu 21.04, 20.04, 18.04
 
 > [!NOTE]
-> Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
+> Note 1: RHEL 6 requires installing the specialized `rhel.6-x64` version of the agent.
 
 > [!IMPORTANT]
 > As of February 2023, no more agent releases support RHEL 6. For more information, see [Customers using Red Hat Enterprise Linux (RHEL) 6 should upgrade the OS on Self-hosted agents](https://devblogs.microsoft.com/devops/customers-using-red-hat-enterprise-linux-rhel-6-should-upgrade-the-os-on-self-hosted-agents/).
@@ -67,7 +67,7 @@ We support the following subset of .NET Core supported distributions:
 > Azure Linux OS distribution currently has partial support from the Azure DevOps Agent.
 > We are providing a mechanism for detection of this OS distribution in `installdependencies.sh` script, but due to lack of support from the [.Net Core](https://github.com/dotnet/core/issues/6379) side, we couldn't guarantee full operability of all agent functions when running on this OS distribution.
 
-Regardless of your platform, you will need to install Git 2.9.0 or higher.
+Regardless of your platform, you need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 
 > [!NOTE]
@@ -94,18 +94,18 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFVC
 
-If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+If you are using TFVC, you also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
 
 [TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+It has an EULA, which you need to accept during configuration if you plan to work with TFVC.
 
-Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
+Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin is downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin is removed after the job execution.
 
 > [!NOTE]
 > Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
 
-If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+If the agent is running behind a proxy or a firewall, you need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin is downloaded from this address.
 
 If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
 1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
@@ -208,7 +208,7 @@ To run the agent interactively:
   To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
-If you didn't choose a different pool, your agent will be in the **Default** pool.
+If you didn't choose a different pool, your agent is placed in the **Default** pool.
 
 ### Run once
 
@@ -229,7 +229,7 @@ If your agent is running on these operating systems you can run the agent as a `
 * Red Hat 7.1 or newer
 
 We provide an example `./svc.sh` script for you to run and manage your agent as a `systemd` service.
-This script will be generated after you configure the agent.
+This script is generated after you configure the agent.
 We encourage you to review, and if needed, update the script before running it.
 
 Some important caveats:
@@ -321,7 +321,7 @@ A systemd service file is created:
 
 `/etc/systemd/system/vsts.agent.{tfs-name}.{agent-name}.service`
 
-For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
+For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file is either:
 
 * **Azure Pipelines**: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 

@@ -396,7 +396,7 @@
     },
     {
       "source_path": "docs/organizations/projects/restore-project.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-project#restore-a-deleted-project"
+      "redirect_url": "/azure/devops/organizations/projects/delete-project#restore-a-deleted-project"
     },
     {
       "source_path": "docs/organizations/projects/save-project-data.md",
@@ -437,6 +437,78 @@
     {
       "source_path": "docs/boards/work-items/automate-work-item-state-transitions.md",
       "redirect_url": "/azure/devops/boards/backlogs/automate-work-item-state-transitions"
+    },
+    {
+      "source_path": "docs/organizations/security/quick-reference-index-security.md",
+      "redirect_url": "/azure/devops/organizations/security/index"
+    },
+    {
+      "source_path": "docs/organizations/security/security-glossary.md",
+      "redirect_url": "/azure/devops/project/navigation/glossary"
+    },
+    {
+      "source_path": "docs/organizations/security/faq-permissions.yml",
+      "redirect_url": "/azure/devops/organizations/accounts/faq-user-and-permissions-management"
+    },
+    {
+      "source_path": "docs/organizations/organizations/security/remove-users-prohibit-access.md",
+      "redirect_url": "/azure/active-directory/add-users-azure-active-directory#delete-a-user"
+    },
+    {
+      "source_path": "docs/organizations/security/faq-github-authentication.yml",
+      "redirect_url": "/azure/devops/boards/github/connect-to-github#faqs"
+    },
+    {
+      "source_path": "docs/migrate/migrate-from-tfs.md",
+      "redirect_url": "/azure/devops/migrate/migration-overview"
+    },
+    {
+      "source_path": "docs/migrate/migration-import-large-collections.md",
+      "redirect_url": "/azure/devops/migrate/migration-prepare-test-run#migrate-large-collections"
+    },
+    {
+      "source_path": "docs/migrate/migration-restricting-access-to-azure-devops-services.md",
+      "redirect_url": "/azure/devops/migrate/migration-prepare-test-run#restrict-access-to-azure-devops-services"
+    },
+    {
+      "source_path": "docs/migrate/migration-import.md",
+      "redirect_url": "/azure/devops/migrate/migration-test-run"
+    },
+    {
+      "source_path": "docs/migrate/migration-processtemplates.md",
+      "redirect_url": "/azure/devops/migrate/migration-validate"
+    },
+    {
+      "source_path": "docs/migrate/faqs.yml",
+      "redirect_url": "/azure/devops/migrate/migration-troubleshooting"
+    },
+    {
+      "source_path": "docs/migrate/migration-post-import.md",
+      "redirect_url": "/azure/devops/migrate/migration-post-migration"
+    },
+    {
+      "source_path": "docs/report/sql-reports/analytics-insights-comparable-sql-reports.md",
+      "redirect_url": "/azure/devops/report/dashboards/overview#sql-server-reports"
+    },
+    {
+      "source_path": "docs/extend/develop/use-control.md",
+      "redirect_url": "https://azdevinternal.azureedge.net/"
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
+      "redirect_url": "/azure/devops/user-guide/provide-feedback"
+    },
+    {
+      "source_path": "docs/pipelines/security/infrastructure.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-shared-infrastructure"
+    },
+    {
+      "source_path": "docs/pipelines/security/projects.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-projects"
+    },
+    {
+      "source_path": "docs/pipelines/security/repos.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-repositories"
     }
   ]
 }

@@ -52,7 +52,7 @@ Complete the following steps to create a custom view.
 5.	[Verify and save the view](#5-verify-and-save-the-view)
 
 > [!NOTE]   
-> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics view - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
+> The board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics view - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
 
 ### 1. Name the view and choose a sharing option
 

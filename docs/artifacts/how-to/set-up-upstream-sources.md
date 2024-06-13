@@ -38,7 +38,7 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 1. Select **Public source**, and then select a **Public source** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** once more in the top right corner to preserve your changes.
+1. Select **Add** when you're done, and then select **Save** once more in the top right corner to preserve your changes.
 
 > [!NOTE]
 > Custom public upstream sources are only supported with npm registries.
@@ -55,7 +55,7 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 1. Select the desired **Feed** from the dropdown menu to add it as an upstream source. Then, select the **View** and choose the **Package type(s)** you wish to use. Optionally, you can also modify the name of your upstream source.
 
-1. Select **Save** when you're done.
+1. Select **Add** when you're done.
 
     :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot showing how to add a feed in your organization as an upstream source.":::
 
@@ -85,7 +85,7 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 1. Select the **Package type(s)** you wish to use and provide a name for your upstream source.
 
-1. Select **Save** when you're done.
+1. Select **Add** when you're done.
 
     :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
 

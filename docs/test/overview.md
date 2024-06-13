@@ -5,7 +5,7 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 12/13/2021
@@ -42,7 +42,7 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 
 - [**Automated testing**](#automated): Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.  
 
-- [**Traceability**](#traceability): Test cases and test suites linked to user stories, features, or requirements supports end-to-end traceability. Tests and defects are automatically linked to the requirements and builds being tested, which also helps tracking the quality of requirements. Users can add and run tests from the Kanban board, or for larger teams, use the Test plans hub to define test plans and test suites. Pipeline results and the Requirements widget provide a means to track testing of requirements.  
+- [**Traceability**](#traceability): Test cases and test suites linked to user stories, features, or requirements supports end-to-end traceability. Tests and defects are automatically linked to the requirements and builds being tested, which also helps tracking the quality of requirements. Users can add and run tests from the board, or for larger teams, use the Test plans hub to define test plans and test suites. Pipeline results and the Requirements widget provide a means to track testing of requirements.  
 
 - [**Reporting and analysis**](#reporting): Test result tracking and progress monitoring is supported through configurable tracking charts, test-specific widgets that you can add to dashboards, and built-in reports, such as Progress report, pipeline test result reports, and the Analytics service. 
 
@@ -59,7 +59,7 @@ Azure Test Plans provides software development teams the following benefits.
 
 - **Rich diagnostic data collection**: Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-- **End to End traceability**: Azure DevOps provides end-to-end traceability of your requirements, builds, tests and bugs with [linking work items to other objects](../boards/backlogs/add-link.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+- **End to End traceability**: Azure DevOps provides end-to-end traceability of your requirements, builds, tests and bugs with [linking work items to other objects](../boards/backlogs/add-link.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 - **Integrated analytics**: The Analytics service provides data that feeds into built-in reports, configurable dashboard widgets, and customizable reports using Power BI. Data tracks test plan progress and trends for both manual and automated tests. Test analytics provides near real-time visibility into test data for builds and releases. Teams can act on this data to improve test collateral to help maintain healthy pipelines. 
 
@@ -314,7 +314,7 @@ Azure Test Plans supports automated testing in the following ways:
 Azure Test Plans supports linking bugs and requirements to test cases and test suites. In addition, the following web portal, test-related tools support traceability:
 
 - [**View items linked to a test case**](#review-linking): View the test plans, test suites, requirements, and bugs that a test case links to. 
-- [**Add and run tests from the Kanban board**](#kanban): An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
+- [**Add and run tests from the board**](#kanban): An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
 - [**Requirements quality widget**](#requirements-quality): Configurable widget used to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability. For example, requirements not meeting the quality, requirements not tested, and so on.
 
 
@@ -337,11 +337,11 @@ From the **Test plans** hub, you can view and open the test suites, requirements
 
 <a id="kanban"></a>
 
-### Add and run tests from the Kanban board
+### Add and run tests from the board
 
-From the Azure Boards Kanban boards, you can add tests from a user story or feature, automatically linking the test case to the user story or feature. You can  view, run, and interact with test cases directly from the Kanban board, and progressively monitor status directly from the card. Learn more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
+From the Azure Boards boards, you can add tests from a user story or feature, automatically linking the test case to the user story or feature. You can  view, run, and interact with test cases directly from the board, and progressively monitor status directly from the card. Learn more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
 
-:::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
+:::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of board showing inline tests added to work items.":::
  
 <a id="requirements-quality"></a> 
 
@@ -618,7 +618,7 @@ product owners, user experience advocates, and more.
 
 Manual testing has evolved with the software development process
 into a more agile-based approach. Azure DevOps and TFS integrate manual testing into your agile processes; the team
-can begin manual testing right from their Kanban boards in the Work
+can begin manual testing right from their boards in the Work
 hub. Teams that need more advanced capabilities can use the Test
 hub for all their test management needs.
 

@@ -328,4 +328,3 @@ az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0
 - [Manage tokens and namespaces](manage-tokens-namespaces.md)
 - [Security REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd) 
-- [Security glossary](security-glossary.md)

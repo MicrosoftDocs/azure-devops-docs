@@ -194,10 +194,10 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query on Kanban board fields](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board)
+      [Query on board fields](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board)
    :::column-end:::
    :::column span="1":::
-      Find work items based on their Kanban column, swimlane, or Doing/Done status.
+      Find work items based on their column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
       Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  

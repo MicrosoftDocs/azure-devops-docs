@@ -179,8 +179,8 @@ Do the following steps to view object-level permissions for you or other users.
    - [Git branch](../../repos/git/branch-permissions.md)
    - [Git repository](../../repos/git/set-git-repository-permissions.md)
    - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Builds](../../pipelines/policies/set-permissions.md)
-   - [Release pipeline security](../../pipelines/policies/set-permissions.md)
+   - [Builds](../../pipelines/policies/pipeline-permissions.md)
+   - [Release pipeline security](../../pipelines/policies/release-pipeline-permissions.md)
    - [Approvals and approvers](../../pipelines/release/approvals/index.md) 
    :::column-end:::
 :::row-end:::

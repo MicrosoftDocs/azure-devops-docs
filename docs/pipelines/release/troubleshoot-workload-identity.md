@@ -27,17 +27,72 @@ The following sections describe the issues and how to resolve them.
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections.
+Not all pipelines tasks support workload identity. Specifically, only Azure Resource Manager service connection properties on tasks use workload identity federation. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
 
-The following tasks currently don't support workload identity federation:
-
-- AzureCloudPowerShellDeploymentV1
-- AzCopy (AzureFileCopyV1, AzureFileCopyV2, AzureFileCopyV3, AzureFileCopyV4, AzureFileCopyV5)
-- AzureMonitorAlertsV0
-- AzureNLBManagementV1
-- PackerBuild (PackerBuildV0, PackerBuildV1)
-- ServiceFabricComposeDeployV0
-- ServiceFabricDeployV1
+| Task                                     | Workload identity federation support                                                                                            |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| AutomatedAnalysis@0                      | Y |
+| AzureAppServiceManage@0                  | Y |
+| AzureAppServiceSettings@1                | Y |
+| AzureCLI@1                               | Y |
+| AzureCLI@2                               | Y |
+| AzureCloudPowerShellDeployment@1         | Use AzureCloudPowerShellDeployment@2 |
+| AzureCloudPowerShellDeployment@2         | Y |
+| AzureContainerApps@0                     | Y |
+| AzureContainerApps@1                     | Y |
+| AzureFileCopy@1                          | Use AzureFileCopy@6 |
+| AzureFileCopy@2                          | Use AzureFileCopy@6 |
+| AzureFileCopy@3                          | Use AzureFileCopy@6 |
+| AzureFileCopy@4                          | Use AzureFileCopy@6 |
+| AzureFileCopy@5                          | Use AzureFileCopy@6 |
+| AzureFileCopy@6                          | Y |
+| AzureFunctionApp@1                       | Y |
+| AzureFunctionApp@2                       | Y |
+| AzureFunctionAppContainer@1              | Y |
+| AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
+| AzureFunctionOnKubernetes@1              | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureIoTEdge@2                           | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureKeyVault@1                          | Y |
+| AzureKeyVault@2                          | Y |
+| AzureMonitor@0                           | Use AzureMonitor@1 |
+| AzureMonitor@1                           | Y |
+| AzureMysqlDeployment@1                   | Y |
+| AzureNLBManagement@1                     | N |
+| AzurePolicyCheckGate@0                   | Y |
+| AzurePowerShell@2                        | Y |
+| AzurePowerShell@3                        | Y |
+| AzurePowerShell@4                        | Y |
+| AzurePowerShell@5                        | Y |
+| AzureResourceGroupDeployment@2           | Y |
+| AzureResourceManagerTemplateDeployment@3 | Y |
+| AzureRmWebAppDeployment@3                | Azure service connection: Y<br/> Docker Registry service connection: N |
+| AzureRmWebAppDeployment@4                | Y |
+| AzureSpringCloud@0                       | Y |
+| AzureVmssDeployment@0                    | Y |
+| AzureWebApp@1                            | Y |
+| AzureWebAppContainer@1                   | Y |
+| ContainerBuild@0                         | 2024 Q3 |
+| ContainerStructureTest@0                 | 2024 Q3 |
+| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
+| Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 |
+| Docker@2                                 | 2024 Q3 |
+| DockerCompose@0                          | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 |
+| HelmDeploy@0                             | Azure service connection: Y<br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| InvokeRESTAPI@1                          | Y |
+| JavaToolInstaller@0                      | Y |
+| JenkinsDownloadArtifacts@1               | Y |
+| Kubernetes@0                             | Use Kubernetes@1  |
+| Kubernetes@1                             | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| KubernetesManifest@0                     | Use KubernetesManifest@1 |
+| KubernetesManifest@1                     | Azure service connection: Y<br/> Docker Registry service connection: 2024 Q3 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| Notation@0                               | Y |
+| PackerBuild@0                            | Use PackerBuild@1 |
+| PackerBuild@1                            | Y |
+| PublishToAzureServiceBus@1               | Use PublishToAzureServiceBus@2 |
+| PublishToAzureServiceBus@2               | Y |
+| ServiceFabricComposeDeploy@0             | N |
+| ServiceFabricDeploy@1                    | N |
+| SqlAzureDacpacDeployment@1               | Y |
 
 ### Verify that workload identity federation is active
 
@@ -70,7 +125,7 @@ You have two options to resolve the issue:
 
 ### I use a container resource that specifies an instance of Azure Container Registry
 
-[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation service connection that's specified in `azureSubscription`.
+[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation yet.
 
 ## Error messages
 
@@ -83,7 +138,7 @@ The following table identifies common error messages and issues that might gener
 | **Could not fetch access token for Azure** | The task doesn't support workload identity federation. |
 | **AADSTS700016: Application with identifier '****' wasn't found** | The identity that is used for the service connection no longer exists or it might have been removed from the service connection. In this scenario, create a new service connection. |
 | **AADSTS7000215:  Invalid client secret provided.** | You're using a service connection that has an expired secret. [Convert the service connection to workload identity federation](https://aka.ms/azdo-rm-workload-identity-conversion) and replace the expired secret with federated credentials. |
-| **AADSTS700024: Client assertion is not within its valid time range** | This error might occur in the following cases:<br />- You're using an AzureCLI task with `addSpnToEnvironment` set to `true` to consume the `idToken` environment variable. The `idToken` environment variable expires after 10 minutes.<br />- Some Azure data plane (non-Azure Resource Manager) operations require a separate bearer token to authenticate. You request a bearer token in the Azure CLI by using `az account get-access-token` or in Azure PowerShell by using Get-AzAccessToken. These tokens have a lifetime of one hour. Using the token after one hour results in an `AADSTS700024` error. Some tools and SDKs (for example, [Azure GO SDK](https://github.com/Azure/azure-sdk-for-go) and [Azure Python SDK](/azure/developer/python/sdk/azure-sdk-overview)) use the Azure CLI and `az account get-access-token` indirectly to obtain a bearer token. If you have tasks that (directly or indirectly) obtain a bearer token and run longer than one hour, use a service connection with a secret instead. |
+| **AADSTS700024: Client assertion is not within its valid time range** | If the error happens after approximately 1 hour, use a service connection with [Workload identity federation and a Managed Identity](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication) instead. Managed Identity tokens have a [lifetime of around 24 hours](/entra/identity/managed-identities-azure-resources/managed-identities-faq#are-managed-identities-tokens-cached). <br/> If the error happens before 1 hour but after 10 minutes, move commands that (implicitly) request an access token to e.g. access Azure storage to the beginning of your script. The access token will be cached for subsequent commands. |
 | **AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`.** | The issuer URL isn't correct. The correct issuer URL has the format `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and then saving a service connection. If Azure DevOps didn't create your identity, you must manually update the issuer. You can find the correct issuer in the edit dialog of the service connection or in the response (under authorization parameters) if you use the REST API. |
 | **AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer:  `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. Assertion Subject: `sc://<org>/<project>/<service-connection>.`** | Either the issuer URL or the federation subject doesn't match. The Azure DevOps organization or project was renamed or a manually created service connection was renamed without updating the federation subject on the identity. |
 | **AADSTS700211: No matching federated identity record found for presented assertion issuer** | Either the issuer URL, the federation subject, or both are rejected by a Microsoft Entra policy. |

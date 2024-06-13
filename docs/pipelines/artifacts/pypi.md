@@ -24,7 +24,7 @@ Using Azure Pipelines, developers can publish Python packages to Azure Artifacts
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a feed](../../artifacts/concepts/feeds.md#create-public-feeds) if you don't have one already.
+- An Azure Artifacts feed. [Create a feed](../../artifacts/concepts/feeds.md#create-a-public-feed) if you don't have one already.
 
 ## Authenticate with Azure Artifacts
 

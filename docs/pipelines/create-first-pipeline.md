@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 08/18/2023
+ms.date: 04/03/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -222,8 +222,6 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     [24] Python package
     [25] Ruby
     [26] Universal Windows Platform
-    [27] Xamarin.Android
-    [28] Xamarin.iOS
     [29] Xcode
     Please enter a choice [Default choice(1)]:
     ```
@@ -338,8 +336,6 @@ From the **More actions** :::image type="icon" source="../media/icons/more-actio
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
-
-[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 

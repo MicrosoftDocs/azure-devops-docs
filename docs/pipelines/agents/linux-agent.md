@@ -2,8 +2,9 @@
 title: Deploy an Azure Pipelines agent on Linux
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: conceptual
+ms.custom: linux-related-content
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 11/27/2023
+ms.date: 05/06/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,14 +14,11 @@ monikerRange: '<= azure-devops'
 
 :::moniker range="<=azure-devops"
 
-> [!IMPORTANT]
-> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Linux agents (Agent version 2.x)](v2-linux-agent.md).
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services and current versions of Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 :::moniker-end
 
-
-
-To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
+To run your jobs, you need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
 
 > [!NOTE]
 > This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Linux agent.
@@ -37,7 +35,6 @@ We support the following subset of .NET 6 supported distributions:
 
 * Supported distributions
   * x64
-    * CentOS 7, 8
     * Debian 10+
     * Fedora 36+
     * openSUSE 15+
@@ -46,12 +43,13 @@ We support the following subset of .NET 6 supported distributions:
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
     * Azure Linux 2.0
+    * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
   * Alpine x64
     * [Alpine Linux](https://alpinelinux.org/) 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
-* **Git** - Regardless of your platform, you will need to install Git 2.9.0 or higher.
+* **Git** - Regardless of your platform, you need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
@@ -83,7 +81,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1. Log on to the machine using the account for which you've prepared permissions as explained in the previous section.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
@@ -135,7 +133,7 @@ To run the agent interactively:
   To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
-If you didn't choose a different pool, your agent will be in the **Default** pool.
+If you didn't choose a different pool, your agent is placed in the **Default** pool.
 
 ### Run once
 
@@ -146,7 +144,7 @@ To run in this configuration:
 ./run.sh --once
 ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
+Agents in this mode accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ## Run as a systemd service
 
@@ -186,7 +184,7 @@ Command:
 sudo ./svc.sh install [username]
 ```
 
-This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified then the username is taken from the $SUDO_USER environment variable which is set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
+This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified, the username is taken from the $SUDO_USER environment variable set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
 
 #### Start
 
@@ -244,7 +242,7 @@ When you install the service, some service files are put in place.
 
 #### systemd service file
 
-A systemd service file is created:
+A `systemd` service file is created:
 
 `/etc/systemd/system/vsts.agent.{tfs-name}.{agent-name}.service`
 
@@ -268,7 +266,7 @@ You can use the template described above as to facilitate generating other kinds
 
 ## Use a cgroup to avoid agent failure
 
-It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using cgroups and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure cgroups and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
+It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using `cgroups` and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure `cgroups` and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
 
 [!INCLUDE [include](includes/v3/replace-agent.md)]
 
@@ -334,14 +332,14 @@ If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.
 (The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
 
 [TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+It has an EULA, which you need to accept during configuration if you plan to work with TFVC.
 
 Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
 
 > [!NOTE]
 > Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
 
-If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+If the agent is running behind a proxy or a firewall, you need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
 
 If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
 1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
