@@ -4,7 +4,7 @@
    
   If you don't see your desired branch in the list, type the desired branch name manually in the "Default branch for manual and scheduled builds" field.
  
-  If you click the ellipsis and open the "Select a branch" dialogue and close it without choosing a valid branch from the drop-down list, you may see “Some settings need attention” 
-  message and "This setting is required" message under "Default Branch for manual and scheduled builds" field. To work around this message, reopen the pipeline and enter the name 
+  If you click the ellipsis and open the **Select a branch** dialogue and close it without choosing a valid branch from the drop-down list, you may see a **Some settings need attention** 
+  message and a **This setting is required** message below **Default Branch for manual and scheduled builds**. To work around this message, reopen the pipeline and enter the name 
   directly in the "Default branch for manual and scheduled builds" field.
 
