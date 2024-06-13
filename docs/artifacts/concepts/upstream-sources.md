@@ -149,7 +149,7 @@ Upstream sources serve as a valuable safeguard for your consumers and infrastruc
 
 ##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
 
-A: Packages belonging to an upstream are available downstream soon after they are published. However, the package will only appear in your feed's UI after it has been ingested. Ingestion is triggered when a **Feed and Upstream Reader (Collaborator)** or higher installs the package version from upstream.
+A: Packages from upstream sources become available in the downstream feed soon after they're published. However, the package will only be visible to readers after it has been saved to the feed. A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#permissions-table) or higher permissions installs the version in the downstream feed. This triggers the downstream to save a copy of the package from upstream, after which it is permanently saved and available in the downstream to all readers. This is when the package version becomes visible in the package versions section of the web UI.
 
 ##### Q: What are feed views?
 
