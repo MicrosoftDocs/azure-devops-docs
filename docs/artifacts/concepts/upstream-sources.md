@@ -149,11 +149,11 @@ Upstream sources serve as a valuable safeguard for your consumers and infrastruc
 
 ##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
 
-A: Packages from upstream sources become available downstream as soon as they're published. However, the package will only appear in your feed's UI after it has been ingested. Ingestion is triggered when a **Feed and Upstream Reader (Collaborator)** or higher installs the package version from upstream.
+A: Packages belonging to an upstream are available downstream soon after they are published. However, the package will only appear in your feed's UI after it has been ingested. Ingestion is triggered when a **Feed and Upstream Reader (Collaborator)** or higher installs the package version from upstream.
 
 ##### Q: What are feed views?
 
-A:  Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. For more information, see [What are feed views](./views.md).
+A: Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. For more information, see [What are feed views](./views.md).
 
 ##### Q: I can't find the feed that I want to configure as an upstream source?
 
