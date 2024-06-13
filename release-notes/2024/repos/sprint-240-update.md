@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Repos Sprint 240 Update
 description: See the Sprint 240 feature updates for Azure Repos, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 6/11/2024
+ms.date: 6/13/2024
 ---
 
 # Azure Repos - Sprint 240 Update

@@ -24,13 +24,13 @@ See the image below showing the pipeline named "Sandbox" disabled (greyed out) i
 > [!div class="mx-imgBorder"]
 > ![Screenshot of add build policy.](../../media/234-repos-02.png "Screenshot of add build policy")
 
-When the build policy configured to run the pipeline named "Sandbox" already exists, then the user with no **Queue builds**  permission will not be able to edit or view the build policy. This case is shown on the following image.
+When the build policy configured to run the pipeline named "Sandbox" already exists, then the user with no **Queue builds**  permission won't be able to edit or view the build policy. This case is shown on the following image.
 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of build validation.](../../media/234-repos-03.png "Screenshot of build validation")
 
-When the user will try to delete such policy the pop-up dialog asking for deletion confirmation will be shown.
+When you try to delete this policy the pop-up dialog asking for deletion confirmation will be shown.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of confirm deletion.](../../media/234-repos-04.png "Screenshot of confirm deletion")

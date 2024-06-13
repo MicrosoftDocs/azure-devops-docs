@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 6/11/2024
+ms.date: 6/13/2024
 ms.topic: include
 ---
 
@@ -12,7 +12,7 @@ You can now use [Entra ID authentication](/azure/service-bus-messaging/service-b
 Identities accessing Azure Service Bus needs to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
 
 
-## PublishToAzureServiceBus@2 task
+#### PublishToAzureServiceBus@2 task
 
 The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
 
@@ -29,7 +29,7 @@ The new PublishToAzureServiceBus@2 tasks can be configured using an Azure servic
       }
 ```
 
-## Server tasks
+#### Server tasks
 
 Custom server (agent-less) tasks that use `ServiceBus` execution can specify an Azure Service Connection as `EndpointId` and omit `ConnectionString`. See [Server task authoring](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md#server-task-authoring).
 
