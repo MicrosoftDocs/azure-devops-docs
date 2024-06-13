@@ -64,7 +64,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
     <td rowspan="5"><a href="2024/sprint-235-update.md" data-raw-source="[29 February 2024](2024/sprint-235-update.md)"> 29 February  2024</a></td>
     <td>Show GitHub pull request details (preview)</td><td>Boards</td><td>Future</td></tr>
-    <td>SSH-RSA deprecation</td><td>Repos</td><td>2022.2</td></tr>
+    <td>Preparation for SSH-RSA deprecation in future Server version</td><td>Repos</td><td>2022.2</td></tr>
     <td>Rerun a single stage</td><td>Pipelines</td><td>Future</td></tr>
     <td>Quick Copy and Import with Test Plan or Suite ID</td><td>Test Plans</td><td>2022.2</td></tr>
     <td>Update for Azure Test Runner</td><td>Test Plans</td><td>2022.2</td></tr>
