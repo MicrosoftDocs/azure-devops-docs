@@ -13,6 +13,9 @@ Additionally, we are excited to share that in Boards, Area and Iteration paths c
 
 Check out the release notes for details.
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-240-update-links](includes/ghazdo/sprint-240-update-links.md)]
 
 ### Azure Boards:
 
@@ -29,6 +32,10 @@ Check out the release notes for details.
 ### Azure Test Plans:
 
 [!INCLUDE [sprint-240-update-links](includes/testplans/sprint-240-update-links.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-240-update](includes/ghazdo/sprint-240-update.md)]
 
 ## Azure Boards
 
