@@ -158,11 +158,11 @@ If you configured the agent to run interactively, run the following the command 
 
 To restart the agent, press Ctrl+C to stop the agent, and then run `run.cmd` to restart it. 
 
-> [!Note]
-> Please, be aware that if you are running the agent from PowerShell Core to execute Windows PowerShell tasks, your pipeline may fail with an error such as `Error in TypeData "System.Security.AccessControl.ObjectSecurity": The member is already present`. This is because 
+> [!NOTE]
+> If you are running the agent from PowerShell Core to execute Windows PowerShell tasks, your pipeline may fail with an error such as `Error in TypeData "System.Security.AccessControl.ObjectSecurity": The member is already present`. This is because 
 > Windows PowerShell inherits the `PSModulePath` environment variable, which includes PowerShell Core module locations, from its parent process. 
 >
-> As a workaround, you can set the agent's knob `AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL` to `"true"` in the pipeline. This will allow the agent to reset `PSModulePath` 
+> As a workaround, you can set the agent's knob `AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL` to `true` in the pipeline. This will allow the agent to reset `PSModulePath` 
 > before executing tasks.
 > 
 > ```yml    
