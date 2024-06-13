@@ -4,7 +4,7 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 04/05/2024
+ms.date: 06/12/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,67 +12,81 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2019"
+Azure Pipelines enables developers to continuously test, build, and deploy their code to various environments. By defining pipelines, developers can automate the processes of continuous integration (CI) and continuous delivery (CD), streamlining their workflows.
 
-Azure Pipelines supports continuous integration (CI) and continuous 
-delivery (CD) to continuously test, build, and deploy your code. You accomplish this by defining a pipeline. 
+Azure Pipelines supports a wide range of languages, platforms, and tools, and offers both [YAML-based](yaml-pipeline-editor.md) and [Classic pipeline](../release/define-multistage-release-process.md) editors for creating and managing pipelines.
 
-The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeline-editor.md). You can also use Classic pipelines with the [Classic editor](../release/define-multistage-release-process.md). 
+## Continuous integration and continuous delivery
 
-::: moniker-end
+Continuous integration (CI) automates testing and building processes for your project. CI helps detecting bugs early in development for quicker fixes. CI systems produce a binary (artifact) that is consumed by continuous delivery (CD) pipelines to automate deployments.
 
-## Automate tests, builds, and delivery
+Continuous delivery (CD) automates code deployment and testing across multiple stages to ensure quality. CD pipelines consume these generated artifacts from CI systems to deploy new versions to the target of your choice such as Azure App Service, Azure Container Registry, etc.
 
-Continuous integration (CI) automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
+|          Continuous integration (CI)                      |          Continuous delivery (CD)                   |
+| --------------------------------------------------------- | --------------------------------------------------- |
+| - Enhances code coverage                                  | - Automates deployment to production                |
+| - Prevents shipping of broken code                        | - Ensures deployment targets have latest code       |
+| - Executes continuous testing                             | - Uses tested code from CI pipelines                |                                           |
 
-Continuous delivery automatically deploys and tests code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
+## Define pipelines using YAML
 
-| Continuous integration (CI)                         |  Continuous delivery (CD)                       |
-| ----------------------------------------------------|-------------------------------------------------|
-|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process|
+Your pipeline configuration resides in a YAML file named `azure-pipelines.yml`, alongside your application.
 
+- The YAML file is versioned alongside your application code, adhering to the same branching structure. 
 
-## Define pipelines using YAML syntax
+- Each branch can customize the pipeline by editing the `azure-pipelines.yml` file. See [Branch consideration for triggers in YAML pipelines](../build/triggers.md#branch-considerations) for more details.
 
-::: moniker range=">= azure-devops-2019"
+- Keeping the pipeline configuration in version control ensures that any changes that cause issues or unexpected outcomes can be easily identified within your codebase.
 
-You define your pipeline in a YAML file called `azure-pipelines.yml` with the rest of your app.
+To define your YAML pipeline, follow these basic steps:
 
-![Pipelines YAML intro image](../media/pipelines-image-yaml.png)
+1. Configure Azure Pipelines to use your Git repository.
 
-* The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the pipeline by modifying the `azure-pipelines.yml` file. Learn more about [branch consideration for YAML pipelines](../build/triggers.md#branch-considerations).
-* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+1. Edit your `azure-pipelines.yml` file to define your pipeline.
 
-Follow these basic steps:
+1. Push your code to your version control repository to trigger your pipeline.
 
-1. Configure Azure Pipelines to use your Git repo.
-1. Edit your `azure-pipelines.yml` file to define your build.
-1. Push your code to your version control repository. This action kicks off the default trigger to build and deploy and then monitor the results.
-
-Your code is now updated, built, tested, and packaged. It can be deployed to any target.
-
-::: moniker-end
-
-
+Your code is now updated, built, tested, and packaged, ready for deployment to any target.
 
 ## Define pipelines using the Classic interface 
- 
-Create and configure pipelines in the Azure DevOps web portal with the Classic user interface editor. 
-You define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
 
-![Pipelines designer intro image](../media/pipelines-image-designer.png)
+::: moniker range="> azure-devops-2019"
 
-Follow these basic steps:
+Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. 
+You can define a *pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
 
-1. Configure Azure Pipelines to use your Git repo.
-1. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
+To define your Classic pipeline, follow these basic steps:
+
+1. Configure Azure Pipelines to use your Git repository.
+
+1. Use the Azure Pipelines classic editor to create and configure your pipeline and release pipelines.
+
 1. Push your code to your version control repository. This action triggers your pipeline and runs tasks such as building or testing code.
 
-The build creates an artifact that's used by the rest of your pipeline to run tasks such as deploying to staging or production.
+Your pipeline generates a binary (artifact) that can be consumed by the release pipeline for deployment to staging or production.
 
-Your code is now updated, built, tested, and packaged. It can be deployed to any target.
+Your code is now updated, built, tested, and packaged, ready for deployment to any target.
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. 
+You can define a *build pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
+
+To define your Classic pipeline, follow these basic steps:
+
+1. Configure Azure Pipelines to use your Git repository.
+
+1. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
+
+1. Push your code to your version control repository. This action triggers your build pipeline and runs tasks such as building or testing code.
+
+Your build pipeline generates a binary (artifact) that can be consumed by the release pipeline for deployment to staging or production.
+
+Your code is now updated, built, tested, and packaged, ready for deployment to any target.
+
+::: moniker-end
 
 ## Feature availability 
 
