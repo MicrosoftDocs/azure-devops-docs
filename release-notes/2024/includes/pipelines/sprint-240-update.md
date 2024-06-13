@@ -9,10 +9,10 @@ ms.topic: include
 
 You can now use [Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
 
-Identities accessing Azure Service Bus needs to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
+Identities accessing Azure Service Bus need to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
 
 
-#### PublishToAzureServiceBus@2 task
+##### PublishToAzureServiceBus@2 task
 
 The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops&preserve-view=true) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
 
@@ -29,7 +29,7 @@ The new PublishToAzureServiceBus@2 tasks can be configured using an Azure servic
       }
 ```
 
-#### Server tasks
+##### Server tasks
 
 Custom server (agent-less) tasks that use `ServiceBus` execution can specify an Azure Service Connection as `EndpointId` and omit `ConnectionString`. See [Server task authoring](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md#server-task-authoring).
 
@@ -53,11 +53,11 @@ Tasks that take a `connectedService:AzureRM` input in [task.json](https://learn.
 Node tasks can use the [azure-pipelines-tasks-artifacts-common](https://www.npmjs.com/package/azure-pipelines-tasks-artifacts-common?activeTab=explore) npm package to obtain the idToken. Refer to the [code example](https://github.com/microsoft/azure-pipelines-terraform/blob/main/Tasks/TerraformTask/TerraformTaskV4/src/id-token-generator.ts) for implementation details.
 
 
-#### Requesting a fresh idToken
+##### Requesting a fresh idToken
 
 The `System.OidcRequestUri` pipeline variable and `AZURESUBSCRIPTION_SERVICE_CONNECTION_ID` environment variable exposed in the `AzureCLI@2` and `AzurePowerShell@5` tasks allow pipeline authors to authenticate from their own script:
 
-#### PowerShell Az
+##### PowerShell Az
 
 ```powershell
 - task: AzurePowerShell@5
@@ -85,7 +85,7 @@ The `System.OidcRequestUri` pipeline variable and `AZURESUBSCRIPTION_SERVICE_CON
                       -FederatedToken $idToken
 ```
 
-#### Azure CLI
+##### Azure CLI
 
 ```bash
 - task: AzureCLI@2

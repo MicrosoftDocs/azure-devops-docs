@@ -9,7 +9,7 @@ description: Secure Azure Bus Access with Entra ID Authentication
 
 We're excited to announce that with this update, Azure Pipelines now enable secure access to Azure Service Bus using Entra ID authentication. This improvement eliminates the need for secrets management and Azure RBAC.
 
-Additionally, we are excited to share that in Boards, Area and Iteration paths can now only be deleted if they are no longer used by any work items. This change prevents disruptions caused by moving work items to new paths and helps teams maintain access to their boards and backlogs.
+With this update, we also introduce in Boards, Area and Iteration paths can now only be deleted if they are no longer used by any work items. This change prevents disruptions caused by moving work items to new paths and helps teams maintain access to their boards and backlogs.
 
 Check out the release notes for details.
 
