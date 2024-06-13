@@ -7,9 +7,10 @@ ms.topic: include
 
 ## New "Disable creation of TFVC repositories" setting
 
-Over the past several years, we added no new features to Team Foundation Version Control (TFVC). Git is the preferred version control system in Azure Repos. Furthermore, all the improvements we made in the past few years in terms of security, performance, and accessibility were only made to Git repositories. We have seen a continuous decline in the usage of TFVC over these years. A few customers still use TFVC, and we do not plan to remove this feature set for those customers. However, we gradually plan to phase out TFVC in all new projects and organizations, or in projects that do not have any current usage of TFVC.
+In recent years, we have no added any new features to Team Foundation Version Control (TFVC) because Git has become the preferred version control system in Azure Repos. All recent improvements in security, performance, and accessibility have been made exclusively to Git repositories, leading to a continuous decline in TFVC usage. While some  still rely on TFVC and we do not intend to remove this feature set, we plan to phase out TFVC gradually for new projects and organizations, as well as for projects that currently do not use TFVC.
 
-As a step in that direction, we are now introducing a setting to "Disable creation of TFVC repositories." It only changes the creation of new TFVC repositories; there is no impact on existing ones.
+As part of this transition, we are introducing a new setting to "Disable creation of TFVC repositories," which will only affect the creation of new TFVC repositories and will not impact existing ones.
+
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Disable creation of TFVC repositories.](../../media/240-repos-01.gif "gif to Disable creation of TFVC repositories")
