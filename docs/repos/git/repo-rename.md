@@ -53,7 +53,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 
 
-<a name="repos-rename" />
+<a name="repos-rename"></a>
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

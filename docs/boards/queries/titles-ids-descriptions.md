@@ -96,7 +96,7 @@ While the `Contains` operator runs a table scan, which isn't only slower, but al
 >
 > When a user then runs a query on this field using the `Contains Words` operator, the search will be run against the unique keywords stored in the index. For long-text fields, this makes searching much more efficient and quicker than doing a substring search. By default, SQL defines a "word" as a set of characters between punctuation. For example, periods signify the end of a word, but the period is not considered to be part of the word. Because the full-text search index contains keywords instead of exact phrases, you'll end up getting all the results that contain the same keywords, as determined by the indexing.
 
-<a id="keyword"/>
+<a id="keyword"></a>
 
 ## Keyword or phrase query with wildcards
 
@@ -113,7 +113,7 @@ For example, specify **Contains Words** and **inform&#42;** to filter on a text 
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
-<a id="undefined-value"/>
+<a id="undefined-value"></a>
 
 
 
@@ -135,8 +135,8 @@ You can find work items that have an undefined field value by using the equals o
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
-<a id="empty"/>
-<a id="empty-or-not-empty-html-field-queries"/>
+<a id="empty"></a>
+<a id="empty-or-not-empty-html-field-queries"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -157,7 +157,7 @@ For example, the following query filters list all work items where some entries 
 > The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
 
 
-<a id="category"/>
+<a id="category"></a>
 
 ## Category-based queries
 
@@ -165,7 +165,7 @@ To filter work items based on the category they belong to, use the **In Group** 
 
 ![Query clause to find work items by category](media/example-work-item-queries/IC720125.png)
 
-<a id="category"/>
+<a id="category"></a>
 
 ### What items appear in the Requirement or Task categories? 
 

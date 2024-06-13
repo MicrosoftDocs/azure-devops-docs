@@ -18,7 +18,7 @@ If your pipeline run fails to complete, you can use the diagnostic information a
 
 :::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
 
-<a name="get-logs-to-diagnose-problems" />
+<a id="get-logs-to-diagnose-problems"></a>
 
 ## View logs
 
@@ -72,7 +72,7 @@ In this example, you can see that there's an error in the `Value` of the `Script
 
 If the issue isn't apparent from the pipeline run summary page or browsing the logs, check the following [Common issues](#common-issues) section, and see [Review logs to diagnose pipeline issues](./review-logs.md) for information on downloading complete logs which include additional diagnostic information.
 
-<a name="my-pipeline-starts-but-fails-to-complete-successfully" />
+<a name="my-pipeline-starts-but-fails-to-complete-successfully"></a>
 
 ## Common issues
 

@@ -354,7 +354,7 @@ If your team *tracks bugs as requirements*, view the list of active bugs from yo
 
 If your team *tracks bugs as tasks*, use managed queries to list and triage bugs. Then, within each sprint, you'll see the bugs assigned to the sprint from the Sprint backlog or [Taskboard](../sprints/task-board.md).  
 
-<a id="task-board-items"/> 
+<a id="task-board-items"></a>
 
 ### Taskboard items versus query list items
 

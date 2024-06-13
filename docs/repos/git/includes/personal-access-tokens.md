@@ -4,11 +4,11 @@ ms.topic: include
 
 ## Create a PAT
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
   
 2. From your home page, open user settings :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
-   :::image type="content" source="../media/select-personal-access-tokens.jpg" alt-text="Screenshot showing selection, Personal Access Tokens.":::
+   :::image type="content" source="../media/select-personal-access-tokens.png" alt-text="Screenshot showing selection, Personal Access Tokens.":::
 
 3. Select **+ New Token**.
 
@@ -21,33 +21,29 @@ ms.topic: include
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**.
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps, limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**.
 
    :::image type="content" source="../media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
    > [!NOTE]
-   > You may be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID has enabled a policy which limits you to a specific custom defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
+   > You might be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID enabled a policy which limits you to a specific custom defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
    > For a custom defined PAT, the required scope for accessing the Component Governance API, `vso.governance`, isn't selectable in the UI.
 
 6. When you're done, copy the token and store it in a secure location. For your security, it doesn't display again.
 
    :::image type="content" source="../media/copy-token-to-clipboard.png" alt-text="Screenshot showing how to copy the token to your clipboard.":::
 
-> [!WARNING]
-> Treat and use a PAT like your password and keep it a secret.
-
-
-
 Use your PAT anywhere your user credentials are required for authentication in Azure DevOps.
 
 > [!IMPORTANT]
-> For organizations backed by Microsoft Entra ID, you have 90 days to sign in with your new PAT, otherwise it's considered inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
+> - Handle a PAT with the same caution as your password and keep it a secret. 
+> - For organizations backed by Microsoft Entra ID, it's necessary to sign in with your new PAT within 90 days; failure to do so renders the PAT inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
 
 ### Notifications
 
-Users receive two notifications during the lifetime of a PAT - one upon creation and the other seven days before the expiration.
+During the lifespan of a PAT, users receive two notifications - the first one at the time of creation and the second one seven days prior to its expiration.
 
-After you create a PAT, you receive a notification similar to the following example. This notification confirms that your PAT was added to your organization.
+After you create a PAT, you receive a notification similar to the following example. This notification serves as confirmation that your PAT was successfully added to your organization.
 
    :::image type="content" source="/azure/devops/organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="Screenshot showing PAT created notification.":::
 
@@ -63,19 +59,20 @@ For more information, see [Configure an SMTP server and customize email for aler
 
 #### Unexpected notification
 
-If you receive an unexpected PAT notification, an administrator or tool might have created a PAT on your behalf. See the following examples.
+If you get an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you. Here are some examples.
 
-- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
-- When you or an administrator sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
-- When you or an administrator sets up web load testing as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken."
-- When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration."
+- A token named "git: `https://MyOrganization.visualstudio.com/` on MyMachine" gets created when you connect to an Azure DevOps Git repo via git.exe.
+- A token named "Service Hooks: : Azure App Service: : Deploy web app" gets created when an Azure App Service web app deployment is set up by you or an administrator.
+- A token named "WebAppLoadTestCDIntToken" gets created when web load testing is set up as part of a pipeline by you or an administrator.
+- A token named "Microsoft Teams Integration" gets created when a Microsoft Teams Integration Messaging Extension is set up.
+
 
 > [!WARNING]
-> If you believe that a PAT exists in error, we suggest you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As a Microsoft Entra user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+> If you suspect that a PAT exists in error, consider [revoking the PAT](../../../organizations/accounts/admin-revoke-user-pats.md) and changing your password. As a Microsoft Entra user, check with your administrator to see if your organization was used by an unknown source or location. Also, refer to the FAQ on [accidental PAT check-ins to public GitHub repositories](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 
-Your PAT is your identity and represents you when you use it, just like a password. 
+Your PAT serves as your digital identity, representing you when utilized, much like a password does.
 
 **Git**
 
@@ -127,7 +124,7 @@ You can use a PAT in your code.
 
 #### [Windows](#tab/Windows/)
 
-If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.
+To provide the PAT through an HTTP header, first convert it to a `Base64` string. The following example shows how to convert to `Base64` using C#.
 
 ```cs
 
@@ -227,15 +224,13 @@ For more information and examples of how to use PATs, see the following articles
 - [REST APIs](/rest/api/azure/devops)
 - [NuGet on a Mac](../../../artifacts/nuget/consume.md)
 - [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
-- [Get started with Azure DevOps CLI](../../../cli/index.md).
-
-
+- [Get started with Azure DevOps CLI](../../../cli/index.md)
 
 ::: moniker range="azure-devops"
 
 ## Modify a PAT
 
-You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes). After regeneration, the previous PAT is no longer authorized.
+You can regenerate, extend a PAT, or alter its [scope](../../../integrate/get-started/authentication/oauth.md#scopes). Once regenerated, the previous PAT becomes unauthorized.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
@@ -243,15 +238,15 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
 2. Under Security, select **Personal access tokens**. Select the token you want to modify, and then  **Edit**.
 
-   :::image type="content" source="/azure/devops/repos/git/media/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
+   :::image type="content" source="../media/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
 
-3. Edit the token name, token expiration, or the scope of access that's associated with the token, and then select **Save**.
+3. Edit the token name, token expiration, or the scope of access associated with the token, and then select **Save**.
 
    :::image type="content" source="../media/modify-pat.png" alt-text="Screenshot showing modified PAT.":::
 
 ## Revoke a PAT
 
-You can revoke a PAT at any time, for various reasons.
+You can revoke a PAT at any time, for many reasons.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
