@@ -35,19 +35,19 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 1. To view the tags in your repo, navigate to your project in the web portal, choose **Repos**, **Tags**, and select the desired repo.
 
-   ![View tags in Tags view.](media/git-tags/view-tags-new-nav.png)
+   :::image type="content" source="media/git-tags/view-tags-new-nav.png" alt-text="Screenshot of tags navigation in the web portal.":::
 
    Annotated tags are displayed with a tag name, message, commit, tagger, and creation date. Lightweight tags are displayed with a tag name and commit.
 
 2. To filter the list of tags, type a search term into the **Search tag name** box and press **Enter**.
 
-   ![Filter tags](media/git-tags/filter-tags.png)
+    ::: image source="media/git-tags/filter-tags.png" alt-text="Screenshot of filter tags in the web portal." :::
 
 ### View tags in the Commits view
 
 To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Repos**, **Commits**, and select your branch.
 
-![View tags in Commits view.](media/git-tags/view-tags-from-commits-new-nav.png)
+::: image type="content" source="media/git-tags/view-tags-from-commits-new-nav.png" alt-text="Screenshot of tags in the Commits view in the web portal." :::
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -59,7 +59,7 @@ You can view tags in the **History** view.
 
 1. To view history, select a branch.
 
-   ![View tags in the History view.](media/git-tags/view-tags-from-commits-vs.png)
+   :::image type="content" source="media/git-tags/view-tags-from-commits-vs.png" alt-text="Screenshot of Visual Studio view tags in the History view.":::
 
    The red shapes are branches, and the green shapes are tags.
 
@@ -69,23 +69,23 @@ You can view tags in the **History** view.
 
 1. To view all tags in a repo, select **Tags** from the **Home** view.
 
-   ![Tags button](media/git-tags/navigate-tags-pane-vs.png)
+   ::: image type="content" source="media/git-tags/navigate-tags-pane-vs.png" alt-text="Screenshot of Visual Studio tags button" ::: 
 
 2. Tags are displayed under the currently connected repo name. 
 
-   ![View tags under the currently connected repo name.](media/git-tags/view-tags-vs.png)
+   ::: image type="content" source="media/git-tags/view-tags-vs.png" alt-text="Screenshot of Visual Studio tags view." :::
 
    Annotated tags display a tooltip that contains the tag name, tagger, tag date, and message. Lightweight tags have only the tag name in the tooltip.
 
-   ![View annotated tags.](media/git-tags/tag-style-vs.png)
+   ::: image type="content" source="media/git-tags/tag-style-vs.png" alt-text="Screenshot of Visual Studio annotated tags view." :::
 
    For more information about the tagged commit, right-click the tag and select **View Commit Details**.
 
-   ![Commit details](media/git-tags/view-commit-details-vs.png)
+   ::: image type="content" source="media/git-tags/view-commit-details-vs.png" alt-text="Screenshot of Visual Studio view commit details." :::
 
 3. To filter the list of tags, type a search term into the **Type here to filter the list** box.
 
-   ![Filter tags in the Tags view.](media/git-tags/filter-tags-vs.png)
+   ::: image type="content" source="media/git-tags/filter-tags-vs.png" alt-text="Screenshot of Visual Studio filter tags in the tags view." :::
 
 To retrieve the current list of tags from the source repo, perform a [fetch](pulling.md?tabs=visual-studio#download-changes-with-fetch) operation.
 
@@ -109,21 +109,21 @@ You can create annotated tags using the web portal from both the **Tags** view a
 
 1. Select **Create tag** from the **Tags** view in the web portal to create a new annotated tag.
 
-   ![Create tag](media/git-tags/create-tag-button.png)
+   ::: image type="content" source="media/git-tags/create-tag-button.png" alt-text="Screenshot of create tag button in the web portal." :::
 
 2. Specify a **Name**, select the branch to **Tag from**, enter a **Description** (required since you're creating an annotated tag), and select **Create**.
 
-   ![Select Create.](media/git-tags/create-tag.png)
+   ::: image type="content" source="media/git-tags/create-tag.png" alt-text="Screenshot of create tag dialog in the web portal." :::
 
 3. The new tag is displayed in the tag list.
 
-   ![View new tag](media/git-tags/tag-created.png)
+   ::: image type="content" source="media/git-tags/tag-created.png" alt-text="Screenshot of new tag in the web portal." :::
 
 ### Create tags from the Commits view
 
 To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
 
-![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
+::: image type="content" source="media/git-tags/create-tag-from-commit.png" alt-text="Screenshot of create tag from commits view in the web portal." :::
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -137,7 +137,7 @@ You can view tags in the **History** view.
 
 1. Select a branch to view history, right-click a commit, and select **New Tag**.
 
-   ![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
+   ::: image type="content" source="media/git-tags/create-tag-from-commit-vs.png" alt-text="Screenshot of create tag from history view in Visual Studio." :::
 
 1. In the **Create a new tag** dialog, enter a **Tag name** only for a lightweight tag or a **Tag name** and **Tag message** for an annotated tag. Select **Create**.
 
@@ -147,19 +147,19 @@ You can view tags in the **History** view.
 
 1. Select **New Tag** in the **Tags** view to create a new tag.
 
-   ![Create tag in Visual Studio.](media/git-tags/create-tag-button-vs.png)
+   ::: image type="content" source="media/git-tags/create-tag-button-vs.png" alt-text="Screenshot of create tag button in Visual Studio." :::
 
 2. To create a tag against the tip of the current branch, specify a name in the **Enter a tag name** box, optionally provide a tag message, and select **Create tag**.
 
-   ![Select Create Tag in Visual Studio.](media/git-tags/create-tag-current-branch-vs.png)
+   ::: image type="content" source="media/git-tags/create-tag-vs.png" alt-text="Screenshot of create tag dialog in Visual Studio." :::
 
    To select the branch to create the tag from, clear the **Create tag against tip of current branch** check box, and select a branch from the **Select a branch** drop-down.
 
-   ![Select a branch.](media/git-tags/create-tag-select-branch-vs.png)
+   ::: image type="content" source="media/git-tags/create-tag-select-branch-vs.png" alt-text="Screenshot of select a branch dialog in Visual Studio." :::
 
 3. The new tag is created locally. Right-click the new tag and choose **Push** to push it to the remote repo. Select **Push All** to push all new local tags to the remote repo.
 
-   ![Push new tag](media/git-tags/tag-created-vs.png)
+   ::: image type="content" source="media/git-tags/tag-created-vs.png" alt-text="Screenshot of push new tag in Visual Studio." :::
 
 ---
 
@@ -181,15 +181,15 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 1. To delete a tag, select the ellipsis to the right of the tag name and choose **Delete tag**.
 
-   ![Delete tag](media/git-tags/delete-tag.png)
+   ::: image type="content" source="media/git-tags/delete-tag.png" alt-text="Screenshot of delete tag in the web portal." :::
 
 2. Select **Delete** to confirm.
 
-   ![Select Delete.](media/git-tags/delete-tag-confirm.png)
+   ::: image type="content" source="media/git-tags/delete-tag-confirm.png" alt-text="Screenshot of delete tag confirmation in the web portal." :::
 
 3. The tag is deleted, and won't be displayed the next time you navigate to the **Tags** view.
 
-   ![Tag deleted](media/git-tags/tag-deleted.png)
+   ::: image type="content" source="media/git-tags/tag-deleted.png" alt-text="Screenshot of tag deleted in the web portal." :::
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -199,7 +199,7 @@ The steps in this procedure show you how to delete a tag in the local repo using
 
 Right-click the tag to delete and choose **Delete Locally**
 
-![Delete tag using Visual Studio 2017 Update 6.](media/git-tags/delete-tag-vs.png)
+::: image type="content" source="media/git-tags/delete-tag-vs.png" alt-text="Screenshot of delete tag in Visual Studio 2017." :::
 
 >[!IMPORTANT]
 >If your tag has already been pushed to the remote repo, you should not delete it. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags.
@@ -212,15 +212,15 @@ Right-click the tag to delete and choose **Delete Locally**
 
 1. To create a branch from a tag, select the ellipsis to the right of the tag name and choose **New branch**.
 
-   ![New branch from tag](media/git-tags/branch-from-tag.png)
+   ::: image type="content" source="media/git-tags/branch-from-tag.png" alt-text="Screenshot of create branch from tag selection in the web portal." :::
 
 2. Specify a **Name**, optionally select any **Work items to link**, and choose **Create branch**.
 
-   ![Choose Create branch.](media/git-tags/branch-from-tag-create.png)
+   ::: image type="content" source="media/git-tags/branch-from-tag-create.png" alt-text="Screenshot of create branch from tag dialog in the web portal." :::
 
 3. The branch is created and you're taken to the new branch in the web portal.
 
-   ![Branch created.](media/git-tags/branch-from-tag-created.png)
+   ::: image type="content" source="media/git-tags/branch-from-tag-created.png" alt-text="Screenshot of branch created from tag in the web portal." :::
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -230,19 +230,19 @@ The steps in this procedure show you how to create a branch from a tag using Vis
 
 1. To create a branch from a tag, right-click the tag and choose **New Local Branch From**. You can also choose **Create Branch From Tag**.
 
-   ![New branch from tag, Visual Studio.](media/git-tags/branch-from-tag-vs.png)
+   ::: image type="content" source="media/git-tags/branch-from-tag-vs.png" alt-text="Screenshot of create branch from tag selection in Visual Studio." :::
 
 2. Specify a branch name, verify the desired tag, and choose **Create Branch**. To check out the new branch, choose **Checkout branch**.
 
-   ![Choose Create Branch, Visual Studio.](media/git-tags/branch-from-tag-create-vs.png)
+   ::: image type="content" source="media/git-tags/branch-from-tag-create-vs.png" alt-text="Screenshot of create branch from tag dialog in Visual Studio." :::   
 
 3. To view your newly created branch, select **Branches** from the **Home** view.
 
-   ![View newly created branch.](media/git-tags/navigate-branches-pane.png)
+   ::: image type="content" source="media/git-tags/navigate-branches-pane.png" alt-text="Screenshot of new branch pane in Visual Studio." :::
 
 4. Your new branch is created locally. To push the branch, right-click it and choose **Push Branch**.
 
-   ![Push new branch from tag in Visual Studio.](media/git-tags/branch-from-tag-created.vs.png)
+   ::: image type="content" source="media/git-tags/push-branch-vs.png" alt-text="Screenshot of push branch in Visual Studio." :::
 
 ---
 
@@ -253,11 +253,11 @@ The steps in this procedure show you how to create a branch from a tag using Vis
 
 1. To view the history for a tag, select the ellipsis to the right of the tag name and choose **View history**.
 
-   ![View tag history](media/git-tags/view-history.png)
+   ::: image type="content" source="media/git-tags/view-history.png" alt-text="Screenshot of view tag history in the web portal." :::
 
 2. You're taken to the commits view for the tag.
 
-   ![Tag history](media/git-tags/commits-new-nav.png)
+   ::: image type="content" source="media/git-tags/commits.png" alt-text="Screenshot of tag history in the web portal." :::
 
 
 #### [Visual Studio](#tab/visual-studio)
@@ -268,10 +268,10 @@ The steps in this procedure show you how to view tag history using Visual Studio
 
 1. To view the history for a tag, right-click the tag and choose **View History**.
 
-   ![View tag history in Visual Studio.](media/git-tags/view-history-vs.png)
+   ::: image type="content" source="media/git-tags/view-history-vs.png" alt-text="Screenshot of view tag history selection in Visual Studio." :::
 
 2. The history is displayed in the **History** view.
 
-   ![Tag history in Visual Studio.](media/git-tags/commits-vs.png)
+   ::: image type="content" source="media/git-tags/commits-vs.png" alt-text="Screenshot of tag history in Visual Studio." :::
 
 ---
