@@ -36,6 +36,9 @@ The default user and group role assignments are:
 
 The creator of an environment is automatically assigned the **Administrator** role for that environment, and this assignment can't be changed.
 
+>[!NOTE]
+> The Project Administrators group doesn't have the **Administrator** role for environments by default. To ensure that project administrators have the necessary permissions to manage environments, you can change the Project Administrators group role to **Administrator** at the project level.
+
 ## Prerequisites
 
 - You must be a member of an administrator group or be assigned an administrator role to manage project-level environment security.
