@@ -1,11 +1,11 @@
 ---
-title: Improved repository and security management 
+title: Setting to disable creation of TFVC repositories
 author: ckanyika
 ms.author: ckanyika
 ms.date: 6/14/2024
-description: Improved repository and security management 
+description: Setting to disable creation of TFVC repositories
 ---
-# Improved repository and security management 
+# Setting to disable creation of TFVC repositories
 
 With this update, we're introducing a new setting to disable creation of TFVC repositories. This change focuses on new projects while ensuring that your existing TFVC repositories remain unaffected.
 
