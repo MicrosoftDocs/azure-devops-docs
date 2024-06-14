@@ -26,7 +26,7 @@ Continuous delivery (CD) automates code deployment and testing across multiple s
 | --------------------------------------------------------- | --------------------------------------------------- |
 | - Enhances code coverage                                  | - Automates deployment to production                |
 | - Prevents shipping of broken code                        | - Ensures deployment targets have latest code       |
-| - Executes continuous testing                             | - Uses tested code from CI pipelines                |                                           |
+| - Executes continuous testing                             | - Uses tested code from CI pipelines                |
 
 ## Define pipelines using YAML
 
@@ -114,8 +114,8 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 | **Tasks**                         | The building blocks that define the steps that make up a pipeline job.                                           |  [YAML](../process/tasks.md?tabs=yaml)   |       [Classic](../process/tasks.md?tabs=classic)       |        [Classic release](../process/tasks.md?tabs=classic)          |
 | **Templates**                 | Define reusable content, logic, and parameters.                                               |  [YAML](../process/templates.md)   |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::         |
 | **Triggers**                      | Define the event that causes a pipeline to run.                                               |  [YAML](../process/pipeline-triggers.md)  |       [Classic](../process/pipeline-triggers-classic.md)       |        [Classic release](../release/triggers.md)        |
-| **Variables**                  | A placeholder for values that can be used throughout your pipeline's execution.                            |  [YAML](../process/variables.md#set-variables-in-pipeline?tabs=yaml)  |       [Classic](../process/variables.md#set-variables-in-pipeline?tabs=classic)       |        [Classic release](../process/variables.md#set-variables-in-pipeline?tabs=classic)        |
-| **Variable groups**      | Use to store values and secrets that you want to manage and share across multiple pipelines.     |  [YAML](../library/variable-groups.md#use-a-variable-group?tabs=yaml)  |       [Classic](../library/variable-groups.md#use-a-variable-group?tabs=classic)       |        [Classic release](../library/variable-groups.md#use-a-variable-group?tabs=classic)        | 
+| **Variables**                  | A placeholder for values that can be used throughout your pipeline's execution.                            |  [YAML](../process/variables.md?tabs=yaml#set-variables-in-pipeline)  |       [Classic](../process/variables.md?tabs=classic#set-variables-in-pipeline)       |        [Classic release](../process/variables.md?tabs=classic#set-variables-in-pipeline)        |
+| **Variable groups**      | Use to store values and secrets that you want to manage and share across multiple pipelines.     |  [YAML](../library/variable-groups.md?tabs=yaml#use-a-variable-group)  |       [Classic](../library/variable-groups.md?tabs=classic#use-a-variable-group)       |        [Classic release](../library/variable-groups.md?tabs=classic#use-a-variable-group)        | 
 
 ::: moniker-end
 
