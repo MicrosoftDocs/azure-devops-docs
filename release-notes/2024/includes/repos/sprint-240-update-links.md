@@ -5,4 +5,4 @@ ms.date: 6/14/2024
 ms.topic: include
 ---
 
-- [New disable creation of TFVC repositories setting](#new-disable-creation-of-tfvc-repositories-setting)
+- [New setting to disable creation of TFVC repositories](#new-setting-to-disable-creation-of-tfvc-repositories)

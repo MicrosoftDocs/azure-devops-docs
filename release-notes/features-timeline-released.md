@@ -45,7 +45,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Retries for server tasks </td><td>Pipelines</td><td>Future</td></tr>
     <td>Tasks that use an end-of-life Node runner version to execute emit warnings</td><td>Pipelines</td><td>Future</td></tr>
     <td>DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode</td><td>Pipelines</td><td>Future</td></tr>
-    <td>New "Disable creation of TFVC repositories" setting</td><td>Repos</td><td>Future</td></tr>
+    <td>New setting to disable creation of TFVC repositories</td><td>Repos</td><td>Future</td></tr>
     <td>Test and Feedback Extension in Manifest V3 </td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[2 May 2024](2024/sprint-238-update.md)"> 2 May  2024</a></td>

@@ -1,15 +1,17 @@
 ---
-title: TBD
+title: Improved repository and security management 
 author: ckanyika
 ms.author: ckanyika
 ms.date: 6/14/2024
-description: TBD
+description: Improved repository and security management 
 ---
-# TBD
+# Improved repository and security management 
 
-We're excited to announce that in Azure Pipelines, a new REST API endpoint is available for requesting OIDC tokens, allowing task developers to generate idTokens for Entra ID authentication.
+With this update, we're introducing a new setting to disable creation of TFVC repositories. This change focuses on new projects while ensuring that your existing TFVC repositories remain unaffected.
 
-In Azure Boards, Area and Iteration paths can now only be deleted if they are no longer associated with any work items. This improvement prevents disruptions and ensures teams retain access to their boards and backlogs.
+In addition, we're excited to announce that in Azure Pipelines, a new REST API endpoint is available for requesting OIDC tokens! This allows task developers to generate idTokens for Entra ID authentication, enhancing security and ease of use.
+
+Lastly, in Azure Boards, area and iteration paths can now only be deleted if they are no longer associated with any work items. This improvement prevents disruptions and ensures teams retain access to their boards and backlogs.
 
 Check out the release notes for details.
 

@@ -5,7 +5,7 @@ ms.date: 6/14/2024
 ms.topic: include
 ---
 
-- [Access Azure Bus from Pipelines using Entra ID authentication](#access-azure-bus-from-pipelines-using-entra-id-authentication)
+- [Access Azure Service Bus from Pipelines using Entra ID authentication](#access-azure-service-bus-from-pipelines-using-entra-id-authentication)
 - [Pipelines and tasks populate variables to customize Workload identity federation authentication](#pipelines-and-tasks-populate-variables-to-customize-workload-identity-federation-authentication)
 - [Retries for server tasks](#retries-for-server-tasks)
 - [Tasks that use an end-of-life Node runner version to execute emit warnings](#tasks-that-use-an-end-of-life-node-runner-version-to-execute-emit-warnings)
