@@ -163,7 +163,7 @@ You can view tags in the **History** view.
 
 ---
 
-  You can programmatically create annotated tags via the Azure DevOps [REST API](/rest/api/azure/devops/git/annotated/tags/create). To create tags via an Azure pipeline using the `git tag` command. For more information, see [git tag](https://git-scm.com/docs/git-tag).
+  You can programmatically create annotated tags via the Azure DevOps [REST API](/rest/api/azure/devops/git/annotated-tags/create). To create tags via an Azure pipeline using the `git tag` command. For more information, see [git tag](https://git-scm.com/docs/git-tag).
 
 
 ## Delete tag
