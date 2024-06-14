@@ -90,50 +90,39 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 
 ## Feature availability 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
-Certain pipeline features are only available when using YAML or when defining build or release pipelines with the Classic interface. The following table indicates which features are supported and for which tasks and methods. 
-
-
-| Feature | YAML | Classic Build |  Classic Release |Notes| 
-|---|:-:|:-:|:-:|---|
-| [Agents](../agents/agents.md) | ✅ | ✅ | ✅ | Specifies a required resource on which the pipeline runs.|
-| [Approvals](../release/approvals/index.md) | ✅ | ❌ | ✅ | Defines a set of validations required prior to completing a deployment stage. |
-| [Artifacts](../artifacts/artifacts-overview.md) | ✅ | ✅ | ✅ | Supports publishing or consuming different package types. |
-| [Caching](../release/caching.md) | ✅ | ✅ | ❌ | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
-| [Conditions](../process/conditions.md) | ✅ | ✅ | ✅ | Specifies conditions to be met prior to running a job.     |
-| [Container jobs](../process/container-phases.md) |  ✅ | ❌ | ❌ | Specifies jobs to run in a container.  |
-| [Demands](/azure/devops/pipelines/yaml-schema/pool-demands) | ✅ | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
-| [Dependencies](../process/stages.md) | ✅ | ✅ | ✅ | Specifies a requirement that must be met in order to run the next job or stage.  |
-| [Deployment groups](../release/deployment-groups/index.md) | ❌ | ❌ | ✅ | Defines a logical set of deployment target machines. | 
-| [Deployment group jobs](../process/deployment-group-phases.md)| ❌ | ❌ | ✅ | Specifies a job to release to a deployment group. | 
-| [Deployment jobs](../process/deployment-jobs.md) | ✅ | ❌ | ❌ | Defines the deployment steps. | 
-| [Environment](../process/environments.md) | ✅ | ❌ | ❌ | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
-| [Gates](../release/approvals/gates.md) | ❌ | ❌ | ✅ | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Classic Release only. |
-| [Jobs](key-pipelines-concepts.md) | ✅ | ✅ | ✅ | Defines the execution sequence of a set of steps.|
-| [Service connections](../library/service-endpoints.md) | ✅ | ✅ | ✅ | Enables a connection to a remote service that is required to execute tasks in a job.   |
-| [Service containers](../process/service-containers.md) | ✅ | ❌ | ❌ |Enables you to manage the lifecycle of a containerized service.   |
-| [Stages](key-pipelines-concepts.md) | ✅ | ❌ | ✅ |Organizes jobs within a pipeline. |
-| [Task groups](../library/task-groups.md) | ❌ | ✅  | ✅ | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
-| [Tasks](../process/tasks.md) | ✅ | ✅ | ✅ | Defines the building blocks that make up a pipeline.  |
-| [Templates](../process/templates.md) | ✅ |  ❌ | ❌ | Defines reusable content, logic, and parameters.   |
-| [Triggers](../build/triggers.md) | ✅ | ✅| ✅ | Defines the event that causes a pipeline to run.  |
-| [Variables](../process/variables.md) | ✅ | ✅ | ✅ | Represents a value to be replaced by data to pass to the pipeline.    |
-| [Variable groups](../library/variable-groups.md) | ✅ | ✅ | ✅ | Use to store values that you want to control and make available across multiple pipelines.| 
+|                   Feature                             |                                              Description                                       | YAML  | Classic Pipeline | Classic Release | 
+|-------------------------------------------------------|------------------------------------------------------------------------------------------------|-------|------------------|-----------------|
+| [Agents](../agents/agents.md)                         | A software component that runs on a virtual machine or a physical machine and is responsible for executing the tasks defined in your Azure Pipelines.                                      |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::       |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |
+| [Approvals](../release/approvals/index.md)            | Control your deployment workflow by requiring designated approvers to approve before deploying to a stage.                  |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/delete-icon.png"       |        [Classic release](../release/approvals/approvals.md#predeployment-approvals)        |
+| **Artifacts**      | Download and publish your binaries and various types of packages to different destinations.          |  [YAML](../artifacts/pipeline-artifacts.md?&tabs=yaml-task)  |       [Classic](../artifacts/pipeline-artifacts.md?&tabs=yaml-task)       |        [Classic release](../release/deploy-multiple-branches.md#set-up-a-release-pipeline)          |
+| **Caching**                     | Reduce build time by caching and reusing dependencies from previous runs. |  [YAML](../release/caching.md)   |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::       |        :::image type="icon" source="../../media/icons/delete-icon.png"         | 
+| **Conditions**               | Specify conditions under which a step, job, or stage should run.                                         |  [YAML](../process/conditions.md?tabs=yaml)    |       [Classic](../process/conditions.md?tabs=classic)       |        [Classic release](../process/conditions.md?tabs=classic)        |
+| **Container jobs**      | Specifies jobs to run in a container.                                                          |  [YAML](../process/container-phases.md)  |       :::image type="icon" source="../../media/icons/delete-icon.png"       |        :::image type="icon" source="../../media/icons/delete-icon.png"        |
+| **Demands** | Ensure that the capabilities your pipeline needs are present on the running agent.  |  [YAML](../agents/agents.md#configure-demands)  |       [Classic](../agents/agents.md#configure-demands?tabs=classic)       |        [Classic release](../agents/agents.md#configure-demands?tabs=classic)        |
+| **Dependencies**                  | Specify a requirement that must be met in order to run the next stage.                |  [YAML](../process/stages.md#specify-dependencies?tabs=yaml)  |       :::image type="icon" source="../../media/icons/delete-icon.png"       |        [Classic release](../process/stages.md#specify-dependencies?tabs=classic)        |
+| **Deployment groups** | Define a set of target machines each equipped with a deployment agent. Use in conjunction with [Deployment group jobs](../process/deployment-group-phases.md) to execute tasks on some or all of your designated target machines.                                         |  :::image type="icon" source="../../media/icons/delete-icon.png"   |       :::image type="icon" source="../../media/icons/delete-icon.png"        |        [Classic release](../release/deployment-groups/index.md#create-a-deployment-group)        |  
+| **Deployment jobs**      | A collection of deployment steps that are run sequentially against the environment.                                                                  |  [YAML](../process/deployment-jobs.md)  |       :::image type="icon" source="../../media/icons/delete-icon.png"       |        :::image type="icon" source="../../media/icons/delete-icon.png"        |
+| **Environment**            | A collection of resources targeted for deployment. |  [YAML](../process/environments.md)   |       :::image type="icon" source="../../media/icons/delete-icon.png"       |        :::image type="icon" source="../../media/icons/delete-icon.png"        |
+| **Gates**               |  Automate release controls by evaluating health signals from external services before completing a deployment. |  :::image type="icon" source="../../media/icons/delete-icon.png"   |       :::image type="icon" source="../../media/icons/delete-icon.png"        |        [Classic release](../release/approvals/deploy-using-approvals.md#set-up-gates)        |
+| **Jobs**                    | A series of sequential steps that form the smallest unit of work that can be scheduled to run.                                            |  [YAML](../process/phases.md?tabs=yaml)  |       [Classic](../process/phases.md?tabs=classi)        |        [Classic release](../process/phases.md?tabs=classic)         |
+| [Service connections](../library/service-endpoints.md#create-a-service-connection) | Enable connection to an external service required to execute tasks in a job.          |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::         |
+| **Service containers** | Enable you to manage the lifecycle of a containerized service. most commonly used with container jobs.                                |  [YAML](../process/service-containers.md)  |       :::image type="icon" source="../../media/icons/delete-icon.png"       |        :::image type="icon" source="../../media/icons/delete-icon.png"        |
+| **Stages**                  | Organize jobs within a pipeline.                                                              |  [YAML](../process/stages.md#specify-stages?tabs=yaml)  |       :::image type="icon" source="../../media/icons/delete-icon.png"        |        [Classic release](../process/stages.md#specify-stages?tabs=classic)        |
+| **Task groups**              | Encapsulate a sequence of tasks into a single reusable task.    |  :::image type="icon" source="../../media/icons/delete-icon.png"  |       [Classic](../library/task-groups.md)       |        [Classic release](../library/task-groups.md)        | 
+| **Tasks**                         | The building blocks that define the steps that make up a pipeline job.                                           |  [YAML](../process/tasks.md?tabs=yaml)   |       [Classic](../process/tasks.md?tabs=classic)       |        [Classic release](../process/tasks.md?tabs=classic)          |
+| **Templates**                 | Define reusable content, logic, and parameters.                                               |  [YAML](../process/templates.md)   |       :::image type="icon" source="../../media/icons/delete-icon.png"        |        :::image type="icon" source="../../media/icons/delete-icon.png"         |
+| **Triggers**                      | Define the event that causes a pipeline to run.                                               |  [YAML](../process/pipeline-triggers.md)  |       [Classic](../process/pipeline-triggers-classic.md)       |        [Classic release](../release/triggers.md)        |
+| **Variables**                  | A placeholder for values that can be used throughout your pipeline's execution.                            |  [YAML](../process/variables.md#set-variables-in-pipeline?tabs=yaml)  |       [Classic](../process/variables.md#set-variables-in-pipeline?tabs=classic)       |        [Classic release](../process/variables.md#set-variables-in-pipeline?tabs=classic)        |
+| **Variable groups**      | Use to store values and secrets that you want to control and make available across multiple pipelines.     |  [YAML](../library/variable-groups.md#use-a-variable-group?tabs=yaml)  |       [Classic](../library/variable-groups.md#use-a-variable-group?tabs=classic)       |        [Classic release](../library/variable-groups.md#use-a-variable-group?tabs=classic)        | 
 
 ::: moniker-end
-
-
-
-
-
-
 
 ## Next steps
 
 > [!div class="nextstepaction"]
+> [Sign up for Azure Pipelines](pipelines-sign-up.md)
 > [Create your first pipeline](../create-first-pipeline.md)
+> [Customize your pipeline](../customize-pipeline.md)
 
-## Related articles
-
-- [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md) 
