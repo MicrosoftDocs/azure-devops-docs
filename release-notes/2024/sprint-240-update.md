@@ -7,7 +7,7 @@ description: TBD
 ---
 # TBD
 
-We're excited to announce that with Azure Pipelines, a new REST API endpoint is available for requesting OIDC tokens, allowing task developers to generate idTokens for Entra ID authentication.
+We're excited to announce that in Azure Pipelines, a new REST API endpoint is available for requesting OIDC tokens, allowing task developers to generate idTokens for Entra ID authentication.
 
 In Azure Boards, Area and Iteration paths can now only be deleted if they are no longer associated with any work items. This improvement prevents disruptions and ensures teams retain access to their boards and backlogs.
 
