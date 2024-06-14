@@ -35,9 +35,9 @@ Custom server (agent-less) tasks that use `ServiceBus` execution can specify an 
 
 ### Pipelines and tasks populate variables to customize Workload identity federation authentication
 
-We now expose the REST API endpoint to request OIDC tokens in the `System.OidcRequestUri` pipeline variable. Task developers can leverage this variable to generate an idToken for authentication with Entra ID.
+The REST API endpoint for requesting OIDC tokens is now available in the `System.OidcRequestUri` pipeline variable. Task developers can leverage this variable to generate an idToken for authentication with Entra ID.
 
-For those utilizing Marketplace tasks or custom tasks to deploy to Azure, please note that these tasks may not yet support workload identity federation. We encourage task developers to enable workload identity federation to enhance security measures.
+If you are using Marketplace tasks or custom tasks to deploy to Azure, please be aware that these tasks may not support workload identity federation yet. We recommend task developers to enable workload identity federation to improve security measures.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of oidc collaboration.](../../media/240-pipelines-01.png "Screenshot of oidc collaboration")

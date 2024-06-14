@@ -5,7 +5,7 @@ ms.date: 6/14/2024
 ms.topic: include
 ---
 
-### Test and Feedback Extension in Manifest V3
+### Test and Feedback extension in Manifest V3
 
 We're excited to announce a new update to the Azure DevOps Test and Feedback extension! This upgrade transitions our implementation from Manifest Version 2 to Version 3, aligning with Google's deprecation schedule for Manifest V2.
 
