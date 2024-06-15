@@ -151,7 +151,7 @@ You can view tags in the **History** view.
 
 2. To create a tag against the tip of the current branch, specify a name in the **Enter a tag name** box, optionally provide a tag message, and select **Create tag**.
 
-   :::image type="content" source="media/git-tags/create-tag-vs.png" alt-text="Screenshot of create tag dialog in Visual Studio." :::
+   :::image type="content" source="media\git-tags\create-tag-current-branch-vs.png" alt-text="Screenshot of create tag dialog in Visual Studio." :::
 
    To select the branch to create the tag from, clear the **Create tag against tip of current branch** check box, and select a branch from the **Select a branch** drop-down.
 
@@ -242,7 +242,7 @@ The steps in this procedure show you how to create a branch from a tag using Vis
 
 4. Your new branch is created locally. To push the branch, right-click it and choose **Push Branch**.
 
-   :::image type="content" source="media/git-tags/push-branch-vs.png" alt-text="Screenshot of push branch in Visual Studio." :::
+   :::image type="content" source="media\git-tags\branch-from-tag-created.vs.png" alt-text="Screenshot of push branch in Visual Studio." :::
 
 ---
 
