@@ -37,6 +37,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="9"><a href="2024/sprint-240-update.md" data-raw-source="[14 June 2024](2024/sprint-240-update.md)"> 14 June  2024</a></td>
+    <td>Security overview API documentation now available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Change for deleting area and iteration paths</td><td>Boards</td><td>Future</td></tr>
+    <td>Access Azure Bus from Pipelines using Entra ID authentication</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipelines and tasks populate variables to customize Workload identity federation authentication</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Retries for server tasks </td><td>Pipelines</td><td>Future</td></tr>
+    <td>Tasks that use an end-of-life Node runner version to execute emit warnings</td><td>Pipelines</td><td>Future</td></tr>
+    <td>DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New setting to disable creation of TFVC repositories</td><td>Repos</td><td>Future</td></tr>
+    <td>Test and Feedback Extension in Manifest V3 </td><td>Test Plans</td><td>Future</td></tr>
+<tr>
     <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[2 May 2024](2024/sprint-238-update.md)"> 2 May  2024</a></td>
     <td>Improve Search Results with wildcard prefixes and substrings</td><td>General</td><td>Future</td></tr>
     <td>Security overview risk view links to repository alerts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
