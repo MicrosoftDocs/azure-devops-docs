@@ -199,7 +199,7 @@ For more information on adding policies to your offering, see the [extension man
 > [!NOTE]
 > Through this program, it is the publisher that is being certified. This doesn't cover the software or security of their extensions and integrations. We recommend you be aware of the [safety information](../overview.md#safety-information) when you're evaluating the offerings from a publisher.
 
-If you got an extension from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first. Afterward, if you're still unsatisfied, [contact the Marketplace team](https://github.com/microsoft/vsmarketplace/issues/new/choose).
+If you got an extension from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first.
 
 ## Apply to be a Top Publisher
 
