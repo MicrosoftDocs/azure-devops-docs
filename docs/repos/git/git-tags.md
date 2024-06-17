@@ -69,7 +69,7 @@ You can view tags in the **History** view.
 
 1. To view all tags in a repo, select **Tags** from the **Home** view.
 
-   :::image type="content" source="media/git-tags/navigate-tags-pane-vs.png" alt-text="Screenshot of Visual Studio tags button" ::: 
+   :::image type="content" source="media/git-tags/navigate-tags-pane-vs.png" alt-text="Screenshot of the Visual Studio tags button." ::: 
 
 2. Tags are displayed under the currently connected repo name. 
 
