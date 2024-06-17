@@ -620,7 +620,7 @@ The Marketplace only supports badges from the following trusted services:
 > [!NOTE]
 > Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
 
-To show a badge from another service, contact *vsmarketplace@microsoft.com*.
+To show a badge from another service, contact [Customer Support at the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps).
 
 <a name="example"></a>
 

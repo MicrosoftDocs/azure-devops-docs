@@ -252,7 +252,7 @@ Certain criteria must be met for an extension to be unpublished or removed:
 | Remove    | Your extension must have **zero (0)** installs to be removed. |
 
 > [!IMPORTANT]
-> If you must remove your extension because of legal or security problems, contact the [Marketplace team](mailto:vsmarketplace@microsoft.com). We review the request and manually delete the extension. 
+> If you must remove your extension because of legal or security problems, contact [Customer Support at the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps). We review the request and manually delete the extension. 
 
 1. Select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu. 
 
