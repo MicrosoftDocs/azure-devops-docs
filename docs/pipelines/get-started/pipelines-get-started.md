@@ -25,7 +25,7 @@ Continuous delivery (CD) automates code deployment and testing across multiple s
 |          Continuous integration (CI)                      |          Continuous delivery (CD)                   |
 | --------------------------------------------------------- | --------------------------------------------------- |
 | - Enhances code coverage                                  | - Automates deployment to production                |
-| - Prevents shipping of broken code                        | - Ensures deployment targets have latest code       |
+| - Prevents the release of broken code                     | - Ensures deployment targets have the latest code   |
 | - Executes continuous testing                             | - Uses tested code from CI pipelines                |
 
 ## Define pipelines using YAML
@@ -52,8 +52,7 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 
 ::: moniker range="> azure-devops-2019"
 
-Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. 
-You can define a *pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
+Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. You can define a *pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
 
 To define your Classic pipeline, follow these basic steps:
 
@@ -63,16 +62,13 @@ To define your Classic pipeline, follow these basic steps:
 
 1. Push your code to your version control repository. This action triggers your pipeline and runs tasks such as building or testing code.
 
-Your pipeline generates a binary (artifact) that can be consumed by the release pipeline for deployment to staging or production.
-
-Your code is now updated, built, tested, and packaged, ready for deployment to any target.
+Your pipeline produces a binary (artifact) that the release pipeline can consume to deploy your application to various targets.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. 
-You can define a *build pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
+Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. You can define a *build pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
 
 To define your Classic pipeline, follow these basic steps:
 
@@ -82,9 +78,7 @@ To define your Classic pipeline, follow these basic steps:
 
 1. Push your code to your version control repository. This action triggers your build pipeline and runs tasks such as building or testing code.
 
-Your build pipeline generates a binary (artifact) that can be consumed by the release pipeline for deployment to staging or production.
-
-Your code is now updated, built, tested, and packaged, ready for deployment to any target.
+Your build pipeline produces a binary (artifact) that the release pipeline can consume to deploy your application to various targets.
 
 ::: moniker-end
 
@@ -107,6 +101,7 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 | **Environments**            | A collection of resources targeted for deployment. |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/environments.md":::   |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::       |        :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |
 | **Gates**               |  Automate release controls by evaluating health signals from external services before completing a deployment. |  :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::   |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../release/deploy-using-approvals.md#set-up-gates":::        |
 | **Jobs**                    | A series of sequential steps that form the smallest unit of work that can be scheduled to run.                                            |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=yaml":::  |       :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=classic":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=classic":::         |
+| [Library](../library/index.md)                         | A collection of assets that can be used in your Azure Pipelines. The Library contains two types of assets: [Variable groups](../library/variable-groups.md) and [Secure files](../library/secure-files.md).                                     |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::       |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |
 | [Service connections](../library/service-endpoints.md#create-a-service-connection) | Enable connection to an external service required to execute tasks in a job.          |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::         |
 | **Service containers** | Enable you to manage the lifecycle of a containerized service. most commonly used with container jobs.                                |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/service-containers.md":::  |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::       |        :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |
 | **Stages**                  | Organize jobs within a pipeline.                                                              |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/stages.md?tabs=yaml#specify-stages":::  |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/stages.md?tabs=classic#specify-stages":::        |
@@ -135,6 +130,7 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 | **Environments**            | A collection of resources targeted for deployment. |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/environments.md":::   |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::       |        :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |
 | **Gates**               |  Automate release controls by evaluating health signals from external services before completing a deployment. |  :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::   |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../release/deploy-using-approvals.md#set-up-gates":::        |
 | **Jobs**                    | A series of sequential steps that form the smallest unit of work that can be scheduled to run.                                            |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=yaml":::  |       :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=classic":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=classic":::         |
+| [Library](../library/index.md)                         | A collection of assets that can be used in your Azure Pipelines. The Library contains two types of assets: [Variable groups](../library/variable-groups.md) and [Secure files](../library/secure-files.md).                                     |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::       |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |
 | [Service connections](../library/service-endpoints.md#create-a-service-connection) | Enable connection to an external service required to execute tasks in a job.          |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::         |
 | **Stages**                  | Organize jobs within a pipeline.                                                              |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/stages.md?tabs=yaml#specify-stages":::  |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/stages.md?tabs=classic#specify-stages":::        |
 | **Task groups**              | Encapsulate a sequence of tasks into a single reusable task.    |  :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::  |       :::image type="icon" source="../../media/icons/link.png" border="false" link="../library/task-groups.md":::       |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../library/task-groups.md":::        | 
@@ -161,6 +157,7 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 | **Deployment jobs**      | A collection of deployment steps that are run sequentially against the environment.                                                                  |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/deployment-jobs.md":::  |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::       |        :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |
 | **Gates**               |  Automate release controls by evaluating health signals from external services before completing a deployment. |  :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::   |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../release/deploy-using-approvals.md#set-up-gates":::        |
 | **Jobs**                    | A series of sequential steps that form the smallest unit of work that can be scheduled to run.                                            |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=yaml":::  |       :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=classic":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/phases.md?tabs=classic":::         |
+| [Library](../library/index.md)                         | A collection of assets that can be used in your Azure Pipelines. The Library contains two types of assets: [Variable groups](../library/variable-groups.md) and [Secure files](../library/secure-files.md).                                     |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::       |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |
 | [Service connections](../library/service-endpoints.md#create-a-service-connection) | Enable connection to an external service required to execute tasks in a job.          |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::         |
 | **Stages**                  | Organize jobs within a pipeline.                                                              |  :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/stages.md?tabs=yaml#specify-stages":::  |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::        |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../process/stages.md?tabs=classic#specify-stages":::        |
 | **Task groups**              | Encapsulate a sequence of tasks into a single reusable task.    |  :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::  |       :::image type="icon" source="../../media/icons/link.png" border="false" link="../library/task-groups.md":::       |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../library/task-groups.md":::        | 
