@@ -43,10 +43,10 @@ az pipelines run [--branch]
 ### Parameters
 
 - **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/main*.
-- **commit-id**: Commit-id on which the pipeline run is to be queued.
+- **commit-id**: Commit ID on which the pipeline run is to be queued.
 - **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** is not supplied. ID of the pipeline to queue.
-- **name**: Required if **ID** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
+- **id**: Required if **name** isn't supplied. ID of the pipeline to queue.
+- **name**: Required if **ID** isn't supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
 - **open**: Open the pipeline results page in your web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
@@ -85,8 +85,8 @@ az pipelines update [--branch]
 
 - **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/main*.
 - **description**: New description for the pipeline.
-- **id**: Required if **name** is not supplied. ID of the pipeline to update.
-- **name**: Required if **ID** is not supplied. Name of the pipeline to update.
+- **id**: Required if **name** isn't supplied. ID of the pipeline to update.
+- **name**: Required if **ID** isn't supplied. Name of the pipeline to update.
 - **new-folder-path**: New full path of the folder to which the pipeline is moved, for example, *user1/production_pipelines*.
 - **new-name**: New updated name of the pipeline.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
@@ -130,8 +130,8 @@ az pipelines show [--folder-path]
 ### Parameters
 
 - **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** is not supplied. ID of the pipeline to show details.
-- **name**: Required if **name** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
+- **id**: Required if **name** isn't supplied. ID of the pipeline to show details.
+- **name**: Required if **name** isn't supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
 - **open**: Open the pipeline summary page in your web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
@@ -175,3 +175,15 @@ You can [customize your pipeline](../customize-pipeline.md) or learn more about 
 ### Can I run multiple pipelines in Azure DevOps Services using a single command?
 
 Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](../build/triggers.md).
+
+### How do I skip a stage in a pipeline run?
+
+You can use the `az rest` command to use the Azure DevOps REST API to skip a stage in a pipeline run using the `stagesToSkip` parameter. 
+
+For example:
+
+```azurecli
+az rest --method post --uri https://dev.azure.com/{organization}/{project}/_apis/pipelines/{pipelineId}/runs?api-version=7.1-preview.1 --body "{stagesToSkip: ['stageName']}"
+```
+
+For more information, see [Azure DevOps Services REST API Reference](/azure/devops/pipelines/runs/run-pipeline).
