@@ -178,7 +178,7 @@ Currently, the Azure CLI and Azure APIs don't offer commands that run multiple p
 
 ### How do I skip a stage in a pipeline run?
 
-You can use the `az rest` command to use the Azure DevOps REST API to skip a stage in a pipeline run using the `stagesToSkip` parameter. 
+You can use the `az rest` command to use the `run pipeline` Azure DevOps REST API to skip a stage in a pipeline run using the `stagesToSkip` parameter. 
 
 For example:
 
@@ -186,4 +186,4 @@ For example:
 az rest --method post --uri https://dev.azure.com/{organization}/{project}/_apis/pipelines/{pipelineId}/runs?api-version=7.1-preview.1 --body "{stagesToSkip: ['stageName']}"
 ```
 
-For more information, see [Azure DevOps Services REST API Reference](/azure/devops/pipelines/runs/run-pipeline).
+For more information, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/pipelines/runs/run-pipeline).
