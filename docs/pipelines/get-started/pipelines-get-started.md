@@ -84,6 +84,9 @@ Your build pipeline produces a binary (artifact) that the release pipeline can c
 
 ## Feature availability 
 
+> [!NOTE]
+> If you are new to Azure Pipelines, it is recommended to start with YAML pipelines. For existing Classic pipelines, you can choose to continue using them or [migrate to YAML pipelines](../migrate/from-classic-pipelines.md).
+
 ::: moniker range="azure-devops"
 
 |                   Feature                             |                                              Description                                       | YAML  | Classic Pipeline | Classic Release | 
@@ -144,7 +147,7 @@ Your build pipeline produces a binary (artifact) that the release pipeline can c
 
 ::: moniker range="azure-devops-2019"
 
-|                   Feature                             |                                              Description                                       | YAML  | Classic Pipeline | Classic Release | 
+|                   Feature                             |                                              Description                                       | YAML  | Classic Build | Classic Release | 
 |-------------------------------------------------------|------------------------------------------------------------------------------------------------|-------|------------------|-----------------|
 | [Agents](../agents/agents.md)                         | A software component that runs on a virtual machine or a physical machine and is responsible for executing the tasks defined in your Azure Pipelines.                                      |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::       |        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::        |
 | **Approvals**            | Control your deployment workflow by requiring designated approvers to approve before deploying to a stage.                  |  :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  |       :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::       |        :::image type="icon" source="../../media/icons/link.png" border="false" link="../release/approvals/approvals.md#predeployment-approvals":::        |
