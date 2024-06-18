@@ -109,6 +109,9 @@ Here is an example that uses a secret variable named `myGitHubAccessToken` for t
 
 Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-test-v1) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid. 
 
+> [!WARNING]
+> Visual Studio App Center is scheduled for retirement on March 31, 2025. [Learn more about support timelines and recommended alternatives.](https://aka.ms/appcenter/retire)
+
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
 ```yml
