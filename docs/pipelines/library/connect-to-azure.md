@@ -47,7 +47,7 @@ We recommend that you use this approach if all the following items are true for 
 
 1. Select **New service connection**, and then select **Azure Resource Manager**.
 
-   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing a workload identity service connection type.":::
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
 
 1. Select **Workload identity federation (automatic)**.
 
@@ -205,9 +205,15 @@ To revert a service connection:
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Create an Azure Resource Manager service connection that uses a service principal secret
+
+
+
+You can set up a service connection to authenticate with Azure resources by using a service principal secret. This approach is useful when you need to further limit permissions for Azure resources that users access through the service connection. 
+
+You can choose to configure the service connection manually or automatically. It's best practice to use the automatic approach if you're signed in as the owner of the Azure Pipelines organization and the Azure subscription, and you don't need to further limit permissions for Azure resources that users access through the service connection.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
@@ -220,30 +226,35 @@ To create the service connection:
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
-   In Team Foundation Server, select the **Settings** icon in the top menu bar to go to the **Services** page.
-
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-1. Select **New service connection**, and then select **Azure Resource Manager**.
+1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
 
-   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
+
+1. Select **Service principal (automatic)** and **Next**.
 
 1. Enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
    | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
-   | **Scope level** | Select **Subscription** or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. |
-   | **Subscription** | If you select **Subscription** for the scope, select an existing Azure subscription. If no Azure subscriptions or instances appear, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-   | **Management Group** | If you select **Management Group** for the scope, select an existing Azure management group. For more information, see [Create management groups](/azure/azure-resource-manager/management-groups-create). |
-   | **Resource Group** | Leave empty to allow users to access all resources that are defined within the subscription. To restrict user access to resources, enter a resource group name. Users can then access only the resources that are defined for that resource group. |
+   | **Scope level** | Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.|
+   | **Subscription** | If you selected **Subscription** or **Machine Learning Workspace** for the scope level, select an existing Azure subscription. If no Azure subscriptions or instances appear, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
+   | **Resource Group** | If you selected **Subscription** or **Machine Learning Workspace** for the scope, you can specify the **Resource group**. If you selected the **Subscription** scope, you can leave it empty to allow users to access all resources that are defined within the subscription or select a resource group to restrict user access to resources. Users can then access only the resources that are defined for that resource group.|  
+   | **Management Group** | If you selected **Management Group** for the scope, select an existing Azure management group. For more information, see [Create management groups](/azure/azure-resource-manager/management-groups-create). |
+   | **Machine Learning Workspace** | If you selected **Machine Learning Workspace** for the scope, select an existing Azure Machine Learning workspace. |
+   | **Service connection name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
+   | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
 
-1. After the new service connection is created:
+1. Select **Save**.
+
+After the new service connection is created:
 
    * If you use the classic editor, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you use a YAML file, copy the connection name into your code as the value for `azureSubscription`.
 
-1. To deploy to a specific Azure resource, add more information about the resource to the task:
+To deploy to a specific Azure resource, add more information about the resource to the task:
 
    * If you use the classic editor, select data to add to the task. For example, select the App Service name.
    * If you use a YAML file, go to the resource in the Azure portal. Copy the data that you need and paste into your task code. For example, to deploy a web app, copy the name of the App Service app and paste it as the value for `WebAppName` in the task YAML.
@@ -267,54 +278,68 @@ If you have problems using this approach (such as no subscriptions shown in the 
 
 ## Create an Azure Resource Manager service connection that uses an existing service principal
 
-1. If you want to use a predefined set of access permissions and you don't already have a service principal defined for this purpose, follow one of these tutorials to create a new service principal:
+If you want to use a predefined set of access permissions and you don't already have a service principal defined for this purpose, follow one of these tutorials to create a new service principal:
 
    * [Use the portal to create a Microsoft Entra application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [Use Azure PowerShell to create an Azure service principal that has a certificate](/azure/active-directory/develop/howto-create-service-principal-portal#option-1-upload-a-certificate)
 
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
+To create a service connection that uses an existing service principal:
 
-   In Team Foundation Server, select the **Settings** icon in the top menu bar to go to the **Services** page.
+1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-1. Select **New service connection**, and then select **Azure Resource Manager**.
+1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
 
-   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
 
-1. Select the **Service Principal (manual)** option, and then enter the service principal details.
+1. Select **Service principal (manual)** and **Next**.
 
-   :::image type="content" source="media/rm-endpoint-link.png" alt-text="Screenshot that shows opening the full version of the service dialog.":::
+1. From the **New Azure service connection** dialog select the **Environment**.  If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. 
 
-1. For **Connection name**, enter a display name to use to refer to this service connection.
+1. Select the **Scope Level**.  
 
-1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or **Azure Government Cloud**).
+    For the **Subscription** scope, enter the following parameters:
+    1. **Subscription Id**: Required. Enter the Azure subscription Id.
+    1. **Subscription Name**: Required. Enter the Azure subscription name.
+    
+    For the **Management Group** scope, enter the following parameters:
+    1. **Management Group Id**: Required. Enter the Azure management group Id.
+    1. **Management Group Name**: Required. Enter the Azure management group name.
+    
+    For the **Machine Learning Workspace** scope, enter the following parameters:
+    1. **Subscription Id**: Required. Enter the Azure subscription Id.
+    1. **Subscription Name**: Required. Enter the Azure subscription name.
+    1. **Resource Group**: Required. Select the resource group containing the workspace.
+    1. **ML Workspace Name**: Required. Enter the name of the existing Azure Machine Learning workspace.
+    1. **ML Workspace Location**: Required. Enter the location of the existing Azure Machine Learning workspace.
 
-1. If you *don't* select **Azure Cloud**, enter the environment URL. For Azure Stack, the environment URL is something like `https://management.local.azurestack.external`.
+1. In the **Authentication** section enter or select the following parameters:
 
-1. For **Scope level**, select the scope for the connection:
+    | Parameter | Description |
+    | --------- | ----------- |
+    | **Service Principal Id** | Required. Enter the service principal Id. |
+    | **Credential** | Select **Service Principal Key** or **Certificate**. If you selected **Service Principal Key**, enter the key (password). If you selected **Certificate**, enter the certificate. |
+    | **Tenant Id** | Required. Enter the tenant Id. |
+    | **Verify** | Select to validate the settings you entered. |
 
-   * If you select **Subscription**, select an existing Azure subscription. If no Azure subscriptions or instances appear, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
-   * If you select **Management Group**, select an existing Azure management group. For more information, see [Create management groups](/azure/azure-resource-manager/management-groups-create).
+1. In the **Details** section enter the following parameters:
 
-1. In the Azure subscription dialog, enter the following information about your service principal:
+    | Parameter | Description |
+    | --------- | ----------- |
+    | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
+    | **Description** | Optional.  Enter a description of the service connection.|
 
-   * Subscription ID
-   * Subscription name
-   * Service principal ID
-   * Either the service principal client key or, if you selected **Certificate**, enter the contents of both the certificate and the private key sections of the _*.pem_ file.
-   * Tenant ID
+1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
-   You can get this information by downloading and running an [Azure PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1). When you're prompted, enter your subscription name, password, role (optional), and the type of cloud, such as Azure Cloud (the default), Azure Stack, or an Azure Government Cloud.
+1. Select **Verify and save** to validate and create the service connection.
 
-1. Select **Verify connection** to validate the settings you entered.
-
-1. After the new service connection is created:
+After the new service connection is created:
 
    * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
    * If you use the service connection in a YAML file, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
-1. If necessary, modify the service principal to expose the appropriate permissions.
+If necessary, modify the service principal to expose the appropriate permissions.
 
    For more information about authenticating by using a service principal, see [Use role-based access control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal) or the blog post [Automate an Azure resource group deployment by using a service principal in Visual Studio](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
 
