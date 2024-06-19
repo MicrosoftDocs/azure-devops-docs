@@ -205,6 +205,8 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for repository-specific permissions**: `repoV2/PROJECT_ID/REPO_ID`  
       <br/>
+      **Token format for branch-level permissions** is described in [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
+      <br/>
       **ID:** `2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87`
    :::column-end:::
 :::row-end:::
@@ -1261,5 +1263,4 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
-- [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
 
