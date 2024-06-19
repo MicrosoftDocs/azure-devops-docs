@@ -205,7 +205,7 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for repository-specific permissions**: `repoV2/PROJECT_ID/REPO_ID`  
       <br/>
-      **Token format for branch-level permissions** is described in [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
+      **Token format for branch-level permissions** is described in [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/).
       <br/><br/>
       **ID:** `2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87`
    :::column-end:::
