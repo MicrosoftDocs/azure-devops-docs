@@ -17,21 +17,20 @@ This article describes how to specify conditions under which an Azure Pipelines 
 
 - By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
 
-You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails, or by specifying a custom condition.
+You can override or customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails, or by specifying a custom condition. In the pipeline definition YAML file, you can specify the following conditions under which a stage, job, or step runs.
+
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
+- Custom conditions
 
 > [!NOTE]
-> For Classic pipelines, you can specify the conditions under which the task or job will run in the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
+> For Classic pipelines, you can specify the conditions under which the task or job runs in the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 > [!NOTE]
 > YAML isn't supported in Team Foundation Server.
 ::: moniker-end
 
-::: moniker range=">=azure-devops"
-In the pipeline definition YAML file, you can specify the following conditions under which a stage, job, or step runs.
-
-[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-- Custom conditions
+## Conditions under which a stage, job, or step runs
 
 By default, stages, jobs, and steps run if all direct and indirect dependencies succeed. This status is the same as specifying `condition: succeeded()`. For more information, see [succeeded status function](expressions.md#succeeded).
 
@@ -75,7 +74,7 @@ stages:
 ```
 
 > [!IMPORTANT]
-> Conditions are evaluated to decide whether to start a stage, job, or step. Therefore, nothing computed at runtime inside that unit of work is available. For example, if you have a job that sets a variable using a runtime expression with `$[ ]` syntax, you can't use that variable in your custom condition.
+> Conditions are evaluated to determine whether to start a stage, job, or step. Therefore, nothing computed at runtime inside that unit of work is available. For example, if you have a job that sets a variable using a runtime expression with `$[ ]` syntax, you can't use that variable in your custom condition.
 
 ## Custom conditions
 
@@ -91,13 +90,15 @@ When you cancel a build, that doesn't mean all its stages, jobs, or steps stop r
 
 If your condition doesn't take into account the state of your stage, job, or step's parent, your stage, job, or step runs whenever the condition evaluates to `true`. The stage, job, or step might run even if its parent is canceled. If the stage, job, or step's parent is skipped, the stage, job, or step doesn't run.
 
-To prevent stages, jobs, or steps with conditions from running when a build is canceled, make sure you consider their parents' states when you write the conditions. For more information, see [Job status functions](expressions.md#job-status-functions).
+To prevent stages, jobs, or steps with conditions from running when a build is canceled, make sure you consider their parents' states when you write the conditions. For more information, see [Job status check functions](expressions.md#job-status-functions).
 
 The following examples show the outcomes of various conditions set on stages, jobs, or steps.
 
 # [Stages](#tab/stages/)
 
-In the following pipeline, by default `stage2` would depend on `stage1`, but `stage2` has a `condition` set to run when the source branch is `main`. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
+#### Example 1
+
+In the following pipeline, by default `stage2` would depend on `stage1`, but `stage2` has a `condition` set to run whenever the source branch is `main`. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
 ```yml
 stages:
@@ -114,9 +115,11 @@ stages:
       - script: echo 2
 ```
 
+#### Example 2
+
 In the following pipeline, `stage2` depends on `stage1`, and job `B` in `stage 2` has a `condition` set. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a job whose condition evaluates to `true`.
 
-The reason is because `stage2` keeps the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
+The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
 ```yml
 stages:
@@ -133,7 +136,11 @@ stages:
       - script: echo 2
 ```
 
-In the following pipeline, by default `stage2` depends on `stage1`, and the step `script: echo 2` inside job `B` has a `condition` set. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a step in job `B` whose condition evaluates to `true`. The reason is because `stage2` is skipped in response to `stage1` being canceled.
+#### Example 3
+
+In the following pipeline, by default `stage2` depends on `stage1`, and the step `script: echo 2` inside job `B` has a `condition` set.
+
+If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a step in job `B` whose condition evaluates to `true`. The reason is because `stage2` is skipped in response to `stage1` being canceled.
 
 ```yaml
 stages:
@@ -152,6 +159,8 @@ stages:
 
 # [Jobs](#tab/jobs/)
 
+#### Example 1
+
 In the following YAML pipeline, job `B` depends on job `A`, and job `B` has a `condition` set to run when the source branch is `main`. If you queue a build on the `main` branch and cancel it while job `A` is running, job `B` still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
 ```yml
@@ -166,7 +175,9 @@ jobs:
     - script: echo step 2.1
 ```
 
-If you want job `B` to run only when job `A` succeeds and the build source is the `main` branch, your `condition` should read `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))`.
+If you want job `B` to run only when job `A` succeeds and the build source is the `main` branch, your `condition` should be `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))`.
+
+#### Example 2
 
 In the following pipeline, job `B` depends on job `A`. If you queue a build on the `main` branch and cancel it while job `A` is running, job `B` doesn't run, even though `step 2.1` has a `condition` that evaluates to `true`.
 
@@ -201,7 +212,7 @@ steps:
 
 ---
 
-### Examples
+### Condition examples
 
 The following snippets show example `condition` settings to produce various outcomes.
 
@@ -272,13 +283,9 @@ jobs:
     condition: eq(variables.testEmpty, '')
 ```
 
-### Use a template parameter as part of a condition
+### Template parameters used as part of conditions
 
-When you declare a parameter in the same pipeline as a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in the following YAML file runs because `parameters.doThing` is true.
-
-The `condition` in the pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns `true` because there was no previous step.
-
-The `eq('${{ parameters.doThing }}', true)` function checks whether the `doThing` parameter is equal to `true`. Since the default value for `doThing` is `true`, the condition returns `true` by default unless the pipeline sets a different value. 
+When you declare a parameter in the same pipeline as a condition, parameter expansion happens before conditions are considered. Therefore, you can embed parameters inside conditions. The script in the following YAML file runs because `parameters.doThing` is true.
 
 ```yaml
 parameters:
@@ -291,12 +298,13 @@ steps:
   condition: ${{ eq(parameters.doThing, true) }}
 ```
 
-For more template parameter examples, see the [Template usage reference](templates.md).
+The `condition` in the preceding pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns `true` because there was no previous step.
 
-When you pass a parameter to a template, you need to set the parameter's value in your template or [use templateContext to pass properties to templates](template-parameters.md?view=azure-devops#use-templatecontext-to-pass-properties-to-templates).
+The `eq('${{ parameters.doThing }}', true)` function checks whether the `doThing` parameter is equal to `true`. Since the default value for `doThing` is `true`, the condition returns `true` by default unless the pipeline sets a different value.
 
-The output of the following pipeline is `I did a thing` because the parameter `doThing` is true.
+When you pass a parameter to a template, you need to set the parameter's value in your template or [use templateContext to pass the parameter to the template](template-parameters.md?view=azure-devops&preserve-view=true#use-templatecontext-to-pass-properties-to-templates).
 
+The following *parameters.yml* file declares the `doThing` parameter and default value.
 ```yaml
 # parameters.yml
 parameters:
@@ -310,6 +318,8 @@ jobs:
     - script: echo I did a thing
     condition: ${{ eq(parameters.doThing, true) }}
 ```
+
+The following pipeline references the *parameters.yml* file. The output of the pipeline is `I did a thing` because the parameter `doThing` is true.
 
 ```yaml
 # azure-pipeline.yml
@@ -325,7 +335,9 @@ extends:
   template: parameters.yml
 ```
 
-### Use the output variable from a job in a condition in a subsequent job
+For more template parameter examples, see the [Template usage reference](templates.md).
+
+### Output variable from a job used in a condition in a subsequent job
 
 You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable) by using `isOutput=true`, as in the following code.
 
@@ -344,7 +356,7 @@ jobs:
   - script: echo "Job Foo ran and doThing is Yes."
 ```
 
-### Use a variable created from a step in a condition in a subsequent step
+### Variable created from a step used in a condition in a subsequent step
 
 You can create a variable that's available for future steps to specify in a condition. Variables created from steps are available to future steps by default and don't need to be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable).
 
@@ -376,10 +388,9 @@ steps:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-
 ### How can I trigger a job if a previous job succeeded with issues? 
 
-You can use the result of the previous job in a condition. For example, in the following YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows Job `B` to run because Job `A` succeeded with issues. 
+You can use the result of the previous job in a condition. For example, in the following YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows job `B` to run because job `A` succeeded with issues. 
 
 ```yaml
 jobs:
@@ -400,14 +411,13 @@ jobs:
 
 ### I canceled my build, but it's still running. Why?
 
-You experience this issue if a condition that's configured in a stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue stage but not running, the entire job is canceled, including all the other stages.
+You experience this issue if a condition that's configured in a stage doesn't include a job status check function. To resolve the issue, add a [job status check function](expressions.md?view=azure-devops&preserve-view=true#job-status-functions) to the condition.
 
-For more information, see Learn more about a [pipeline's behavior when a build is canceled](#pipeline-behavior-when-build-is-canceled).
+If you cancel a job while it's in the queue stage but not running, the entire job is canceled, including all the other stages. For more information, see [Condition outcomes when a build is canceled](#condition-outcomes-when-a-build-is-canceled) earlier in this article.
 
 <!-- ENDSECTION -->
-::: moniker-end
 
 ## Related articles
 
 - [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, & conditions](../process/stages.md)
+- [Add stages, dependencies, and conditions](../process/stages.md)
