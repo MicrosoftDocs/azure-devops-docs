@@ -13,24 +13,20 @@ monikerRange: '<= azure-devops'
 
 This article describes how to specify conditions under which an Azure Pipelines stage, job, or step runs.
 
-- By default, a job or stage runs if it doesn't depend on any other job or stage, or if all of the jobs or stages it depends on have completed and succeeded. This condition applies not only to direct dependencies, but to their dependencies, computed recursively.
+- By default, a job or stage runs if it doesn't depend on any other job or stage, or if all its dependencies completed and succeeded. This condition applies not only to direct dependencies, but to their dependencies, computed recursively.
 
-- By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
+- By default, a step runs if nothing in its job failed yet and the step immediately preceding it finished.
 
-You can override or customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails, or by specifying a custom condition. In the pipeline definition YAML file, you can specify the following conditions under which a stage, job, or step runs.
+You can override or customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails, or by specifying a custom condition.
 
+## Conditions under which a stage, job, or step runs
+
+In the pipeline definition YAML, you can specify the following conditions under which a stage, job, or step runs:
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 - Custom conditions
 
 > [!NOTE]
 > For Classic pipelines, you can specify the conditions under which the task or job runs in the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
-
-::: moniker range="< azure-devops-2019"
-> [!NOTE]
-> YAML isn't supported in Team Foundation Server.
-::: moniker-end
-
-## Conditions under which a stage, job, or step runs
 
 By default, stages, jobs, and steps run if all direct and indirect dependencies succeed. This status is the same as specifying `condition: succeeded()`. For more information, see [succeeded status function](expressions.md#succeeded).
 
@@ -80,13 +76,13 @@ stages:
 
 If the built-in conditions don't meet your needs, you can specify *custom conditions*. You write conditions as expressions in YAML pipeline definitions.
 
-The agent evaluates the expression beginning with the innermost function, and works its way out. The final result is a boolean value that determines whether the task, job, or stage should run or not. For a full guide to the syntax, see [Expressions](expressions.md).
+The agent evaluates the expression beginning with the innermost function and proceeding outward. The final result is a boolean value that determines whether the task, job, or stage should run or not. For a full guide to the syntax, see [Expressions](expressions.md).
 
 If any of your conditions make it possible for the task to run even after the build is canceled, specify a reasonable value for [cancel timeout](phases.md#timeouts) so that these tasks have enough time to complete after the user cancels a run.
 
 ### Condition outcomes when a build is canceled
 
-When you cancel a build, that doesn't mean all its stages, jobs, or steps stop running. Which stages, jobs, or steps stop running depends on the conditions you specified, and at what point of the pipeline's execution you canceled the build.
+Canceling a build doesn't mean that all its stages, jobs, or steps stop running. Which stages, jobs, or steps stop running depends on the conditions you specified, and at what point of the pipeline's execution you canceled the build.
 
 If your condition doesn't take into account the state of your stage, job, or step's parent, your stage, job, or step runs whenever the condition evaluates to `true`. The stage, job, or step might run even if its parent is canceled. If the stage, job, or step's parent is skipped, the stage, job, or step doesn't run.
 
@@ -304,7 +300,8 @@ The `eq('${{ parameters.doThing }}', true)` function checks whether the `doThing
 
 When you pass a parameter to a template, you need to set the parameter's value in your template or [use templateContext to pass the parameter to the template](template-parameters.md?view=azure-devops&preserve-view=true#use-templatecontext-to-pass-properties-to-templates).
 
-The following *parameters.yml* file declares the `doThing` parameter and default value.
+For example, the following *parameters.yml* file declares the `doThing` parameter and default value:
+
 ```yaml
 # parameters.yml
 parameters:
@@ -319,7 +316,7 @@ jobs:
     condition: ${{ eq(parameters.doThing, true) }}
 ```
 
-The following pipeline references the *parameters.yml* file. The output of the pipeline is `I did a thing` because the parameter `doThing` is true.
+The pipeline code references the *parameters.yml* file. The output of the pipeline is `I did a thing` because the parameter `doThing` is true.
 
 ```yaml
 # azure-pipeline.yml
@@ -411,7 +408,7 @@ jobs:
 
 ### I canceled my build, but it's still running. Why?
 
-You experience this issue if a condition that's configured in a stage doesn't include a job status check function. To resolve the issue, add a [job status check function](expressions.md?view=azure-devops&preserve-view=true#job-status-functions) to the condition.
+You experience this issue if a condition configured in a stage doesn't include a [job status check function](expressions.md?view=azure-devops&preserve-view=true#job-status-functions). To resolve the issue, add a job status check function to the condition.
 
 If you cancel a job while it's in the queue stage but not running, the entire job is canceled, including all the other stages. For more information, see [Condition outcomes when a build is canceled](#condition-outcomes-when-a-build-is-canceled) earlier in this article.
 
