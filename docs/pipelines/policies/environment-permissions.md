@@ -37,7 +37,7 @@ The default user and group role assignments are:
 The creator of an environment is automatically assigned the **Administrator** role for that environment, and this assignment can't be changed.
 
 >[!NOTE]
-> The Project Administrators group doesn't have the **Administrator** role for environments by default. To ensure that project administrators have the necessary permissions to manage environments in your project, you can change the Project Administrators group role to **Administrator** at the project level..
+> Though not explicitly listed in the permissions dialog, the Project Collection Administrators group has full access to all environments in a project, whether inheritance is enabled or disabled for an environment.
 
 ## Prerequisites
 
