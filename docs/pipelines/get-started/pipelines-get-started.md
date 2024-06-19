@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines enables developers to automate a wide variety of tasks, ranging from executing a batch file to setting up a complete continuous integration (CI) and continuous delivery (CD) solution for your application.
+Azure Pipelines enables developers to automate a wide variety of tasks, ranging from executing a batch file to setting up a complete continuous integration (CI) and continuous delivery (CD) solution for their applications.
 
 Azure Pipelines supports a wide range of languages, platforms, and tools, and offers two types of pipelines to choose from: [YAML-based](yaml-pipeline-editor.md) and [Classic pipeline](../release/define-multistage-release-process.md) editors.
 
