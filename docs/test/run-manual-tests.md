@@ -716,6 +716,11 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
+### Q: Some of the attachments for the test run are not showing preview option?
+
+**A:** You can only preview files with txt and log extensions.
+       Click on preview option for txt or log extension file, another UI will open up with the drop down field showing all the attachments for the test run, however, if you select the file with extension type other than txt or log, a message will be shown: "You can only preview files with txt and log extensions, click here download the attachment"
+
 ### Q: How do I control how long I keep my test data?
 
 **A:** For more information, see [Set test retention policies](how-long-to-keep-test-results.md).
