@@ -183,7 +183,10 @@ You can use the `az rest` command to use the `run pipeline` Azure DevOps REST AP
 For example:
 
 ```azurecli
-az rest --method post --uri https://dev.azure.com/{organization}/{project}/_apis/pipelines/{pipelineId}/runs?api-version=7.1-preview.1 --body "{stagesToSkip: ['stageName']}"
+az rest --method post `
+    --uri https://dev.azure.com/{organization}/{project}/_apis/pipelines/{pipelineId}/runs?api-version=7.1-preview.1 `
+    --body "{stagesToSkip: ['stageName']}"`
+    --resource 499b84ac-1321-427f-aa17-267ca6975798
 ```
 
 For more information, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/pipelines/runs/run-pipeline).
