@@ -16,6 +16,9 @@ Azure Pipelines enables developers to automate a wide variety of tasks, ranging 
 
 Azure Pipelines supports a wide range of languages, platforms, and tools, and offers two types of pipelines to choose from: [YAML-based](yaml-pipeline-editor.md) and [Classic pipeline](../release/define-multistage-release-process.md) editors.
 
+> [!NOTE]
+> If you are new to Azure Pipelines, it is recommended to start with YAML pipelines. For existing Classic pipelines, you can choose to continue using them or [migrate to YAML pipelines](../migrate/from-classic-pipelines.md).
+
 ## Define pipelines using YAML
 
 Your pipeline configuration resides in a YAML file named `azure-pipelines.yml`, alongside your application.
@@ -26,15 +29,7 @@ Your pipeline configuration resides in a YAML file named `azure-pipelines.yml`, 
 
 - Keeping the pipeline configuration in version control ensures that any changes that cause issues or unexpected outcomes can be easily identified within your codebase.
 
-To define your YAML pipeline, follow these basic steps:
-
-1. Configure Azure Pipelines to use your Git repository.
-
-1. Edit your `azure-pipelines.yml` file to define your pipeline.
-
-1. Push your code to your version control repository to trigger your pipeline.
-
-Your code is now updated, built, tested, and packaged, ready for deployment to any target.
+For instructions, see [Create your first pipeline](../create-first-pipeline.md) for a step by step guide to building a sample application from a Git repository.
 
 ## Define pipelines using the Classic interface 
 
@@ -42,38 +37,17 @@ Your code is now updated, built, tested, and packaged, ready for deployment to a
 
 Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. You can define a *pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
 
-To define your Classic pipeline, follow these basic steps:
-
-1. Configure Azure Pipelines to use your Git repository.
-
-1. Use the Azure Pipelines classic editor to create and configure your pipeline and release pipelines.
-
-1. Push your code to your version control repository. This action triggers your pipeline and runs tasks such as building or testing code.
-
-Your pipeline produces a binary (artifact) that the release pipeline can consume to deploy your application to various targets.
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 Classic pipelines are created in the Azure DevOps web portal with the Classic user interface editor. You can define a *build pipeline* to build, test your code, and then publish your artifact (binary). Additionally, you can define a *release pipeline* to consume your binary (artifact) and deploy it to specific targets.
 
-To define your Classic pipeline, follow these basic steps:
-
-1. Configure Azure Pipelines to use your Git repository.
-
-1. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
-
-1. Push your code to your version control repository. This action triggers your build pipeline and runs tasks such as building or testing code.
-
-Your build pipeline produces a binary (artifact) that the release pipeline can consume to deploy your application to various targets.
-
 ::: moniker-end
 
-## Feature availability 
+For instructions, see [build](../build/ci-build-git.md) and [deploy](../release/define-multistage-release-process.md) for step by step guides to building and deploying your application with Classic Pipelines.
 
-> [!NOTE]
-> If you are new to Azure Pipelines, it is recommended to start with YAML pipelines. For existing Classic pipelines, you can choose to continue using them or [migrate to YAML pipelines](../migrate/from-classic-pipelines.md).
+## Feature availability 
 
 ::: moniker range="azure-devops"
 
