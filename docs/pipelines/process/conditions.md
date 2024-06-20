@@ -111,7 +111,7 @@ stages:
 
 ### Stage example 2
 
-In the following pipeline, `stage2` depends on `stage1` by default. Job `B` in `stage 2` has a `condition` set. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a job whose condition evaluates to `true`.
+In the following pipeline, `stage2` depends on `stage1` by default. Job `B` in `stage2` has a `condition` set. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a job whose condition evaluates to `true`.
 
 The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
@@ -209,7 +209,7 @@ The following table shows example `condition` settings to produce various outcom
 > [!NOTE]
 > `Release.Artifacts.{artifact-alias}.SourceBranch` is equivalent to `Build.SourceBranch`.
 
-| Desired outcome | Condition setting |
+| Desired outcome | Example condition setting |
 | --------------- | ----------------- |
 | Run if the source branch is main, even if the parent or preceding stage, job, or step failed or was canceled. | `eq(variables['Build.SourceBranch'], 'refs/heads/main')` |
 | Run if the source branch is main and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))` |
@@ -237,7 +237,7 @@ The following table shows example `condition` settings to produce various outcom
 
 ### Parameters in conditions
 
-Parameter expansion happens before conditions are considered. Therefore, when you declare a parameter in the same pipeline as a condition, you can embed the parameter inside the condition. The script in the following YAML file runs because `parameters.doThing` is true.
+Parameter expansion happens before conditions are considered. Therefore, when you declare a parameter in the same pipeline as a condition, you can embed the parameter inside the condition. The script in the following YAML runs because `parameters.doThing` is true.
 
 ```yaml
 parameters:
@@ -345,7 +345,7 @@ steps:
 
 ### How can I trigger a job if a previous job succeeded with issues? 
 
-You can use the result of the previous job in a condition. For example, in the following YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows job `B` to run because job `A` succeeded with issues. 
+You can use the result of the previous job in a condition. For example, in the following YAML, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows job `B` to run because job `A` succeeded with issues. 
 
 ```yaml
 jobs:
