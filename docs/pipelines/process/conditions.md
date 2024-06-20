@@ -30,7 +30,7 @@ In the pipeline definition YAML, you can specify the following conditions under 
 
 By default, stages, jobs, and steps run if all direct and indirect dependencies succeed. This status is the same as specifying `condition: succeeded()`. For more information, see [succeeded status function](expressions.md#succeeded).
 
-When you specify a `condition` property for a stage, job, or step, you overwrite the default `condition: succeeded()`. Specifying your own condition can lead to your stage, job, or step running even if the build is canceled. Make sure the conditions you write take into account the state of the parent stage or job.
+When you specify a `condition` property for a stage, job, or step, you overwrite the default `condition: succeeded()`. Specifying your own conditions can cause your stage, job, or step to run even if the build is canceled. Make sure the conditions you write take into account the state of the parent stage or job.
 
 The following YAML example shows the `always()` and `failed()` conditions. The step in the first job runs even if dependencies fail or the build is canceled. The second job runs only if the first job fails.
 
@@ -94,7 +94,7 @@ In the following pipeline, by default `stage2` would depend on `stage1`, but `st
 
 If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
-```yml
+```yaml
 stages:
 - stage: stage1
   jobs:
@@ -115,7 +115,7 @@ In the following pipeline, `stage2` depends on `stage1` by default. Job `B` in `
 
 The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
-```yml
+```yaml
 stages:
 - stage: stage1
   jobs:
@@ -155,7 +155,7 @@ stages:
 
 In the following YAML pipeline, job `B` depends on job `A` by default, but job `B` has a `condition` set to run whenever the source branch is `main`. If you queue a build on the `main` branch and cancel it while job `A` is running, job `B` still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
-```yml
+```yaml
 jobs:
 - job: A
   steps:
@@ -175,7 +175,7 @@ In the following pipeline, job `B` depends on job `A` by default. If you queue a
 
 The reason is because job `B` has the default `condition: succeeded()`, which evaluates to `false` when job `A` is canceled. Therefore, job `B` is skipped, and none of its steps run.
 
-```yml
+```yaml
 jobs:
 - job: A
   steps:
@@ -192,9 +192,9 @@ jobs:
 
 You can also have conditions on steps.
 
-In the following pipeline, step 2.3 has a `condition` set to run when the source branch is `main`. If you queue a build on the `main` branch and cancel it while steps 2.1 or 2.2 are running, step 2.3 still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
+In the following pipeline, step 2.3 has a `condition` set to run whenever the source branch is `main`. If you queue a build on the `main` branch and cancel it while steps 2.1 or 2.2 are running, step 2.3 still runs, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
-```yml
+```yaml
 steps:
   - script: echo step 2.1
   - script: echo step 2.2; sleep 30
@@ -220,21 +220,20 @@ The following table shows example `condition` settings to produce various outcom
 | Run for a scheduled build, even if the parent or preceding stage, job, or step failed or was canceled. | `eq(variables['Build.Reason'], 'Schedule')` |
 | Run if a variable is set to true, even if the parent or preceding stage, job, or step failed or was canceled. | `eq(variables['System.debug'], true)` |
 
-### Run if a variable is null (empty string)
-
-Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in the following pipeline:
-
-```yaml
-variables:
-- name: testEmpty
-  value: ''
-
-jobs:
-  - job: A
-    steps:
-    - script: echo testEmpty is blank
-    condition: eq(variables.testEmpty, '')
-```
+> [!NOTE]
+> You can set a condition to run if a variable is null (empty string). Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in the following pipeline:
+> 
+> ```yaml
+> variables:
+> - name: testEmpty
+>   value: ''
+> 
+> jobs:
+>   - job: A
+>     steps:
+>     - script: echo testEmpty is blank
+>     condition: eq(variables.testEmpty, '')
+> ```
 
 ### Parameters in conditions
 
@@ -367,7 +366,7 @@ jobs:
 
 ### I canceled my build, but it's still running. Why?
 
-You experience this issue if a condition configured in a stage doesn't include a [job status check function](expressions.md?view=azure-devops&preserve-view=true#job-status-functions). To resolve the issue, add a job status check function to the condition.
+You can experience this issue if a condition configured in a stage doesn't include a [job status check function](expressions.md?view=azure-devops&preserve-view=true#job-status-functions). To resolve the issue, add a job status check function to the condition.
 
 If you cancel a job while it's in the queue stage but not running, the entire job is canceled, including all the other stages. For more information, see [Condition outcomes when a build is canceled](#condition-outcomes-when-a-build-is-canceled) earlier in this article.
 
