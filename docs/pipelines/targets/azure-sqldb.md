@@ -308,7 +308,7 @@ SqlPackage.exe /action:Extract /tf:"<Target location of dacpac file>"
 **Example:**
 
 ```command
-SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net.placeholder"
  /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
@@ -332,7 +332,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Publish /TargetServe
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb4" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
@@ -356,7 +356,7 @@ SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /S
 **Example:**
 
 ```command
-SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net.placeholder"
 /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
@@ -380,7 +380,7 @@ SqlPackage.exe /SourceFile:"<Bacpac file location>" /Action:Import /TargetServer
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
@@ -404,7 +404,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:DeployReport /Target
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\deployReport.xml" 
 ```
 
@@ -428,7 +428,7 @@ SqlPackage.exe /Action:DriftReport /TargetServerName:"<ServerName>.database.wind
 **Example:**
 
 ```command
-SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net" /TargetDatabaseName:"Testdb"
+SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net.placeholder" /TargetDatabaseName:"Testdb"
 /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\driftReport.xml"
 ```
 
@@ -452,7 +452,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Script /TargetServer
 **Example:**
 
 ```command
-SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\test.sql"
 /Variables:StagingDatabase="Staging DB Variable value"
 ```
