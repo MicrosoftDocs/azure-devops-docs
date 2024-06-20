@@ -19,10 +19,10 @@ This article describes the conditions under which an Azure Pipelines stage, job,
 
 You can override or customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails, or by specifying a custom condition.
 
+## Conditions under which a stage, job, or step runs
+
 > [!NOTE]
 > For Classic pipelines, you can specify the conditions under which the task or job runs in the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline.
-
-## Conditions under which a stage, job, or step runs
 
 In the pipeline definition YAML, you can specify the following conditions under which a stage, job, or step runs:
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
