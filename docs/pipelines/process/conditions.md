@@ -212,20 +212,20 @@ steps:
 
 The following examples show `condition` settings to produce various outcomes.
 
-> [!NOTE]
-> `Release.Artifacts.{artifact-alias}.SourceBranch` is equivalent to `Build.SourceBranch`.
-
 | Desired outcome | Condition setting |
 | --------------- | ----------------- |
-| Run if the source branch is main, even if the parent or preceding stage, job, or step failed or was canceled.| `eq(variables['Build.SourceBranch'], 'refs/heads/main')` |
-| Run if the source branch is main and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main')) |
-| Run if the source branch isn't main, and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main')) |
-| Run for user topic branches, if the parent or preceding stage, job, or step succeeded. | `and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/users/')) |
+| Run if the source branch is main, even if the parent or preceding stage, job, or step failed or was canceled. | `eq(variables['Build.SourceBranch'], 'refs/heads/main')` |
+| Run if the source branch is main and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))` |
+| Run if the source branch isn't main, and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main'))` |
+| Run for user topic branches, if the parent or preceding stage, job, or step succeeded. | `and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/users/'))` |
 | Run for continuous integration (CI) builds, if the parent or preceding stage, job, or step succeeded. | `and(succeeded(), in(variables['Build.Reason'], 'IndividualCI', 'BatchedCI'))` |
 | Run if the build was triggered by a branch policy for a pull request, and the parent or preceding stage, job, or step failed. | `and(failed(), eq(variables['Build.Reason'], 'PullRequest'))` |
 | Run for a scheduled build, even if the parent or preceding stage, job, or step failed or was canceled. | `eq(variables['Build.Reason'], 'Schedule')` |
 | Run if a variable is set to true, even if the parent or preceding stage, job, or step failed or was canceled. | `eq(variables['System.debug'], true)` |
 | Run if a variable is null (empty string). | Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in the following pipeline.<br><br>`variables:`<br>`- name: testEmpty`<br>`  value: ''`<br><br>`jobs:`<br>`  - job: A`<br>`    steps:`<br>`    - script: echo testEmpty is blank`<br>`    condition: eq(variables.testEmpty, '')` |
+
+> [!NOTE]
+> `Release.Artifacts.{artifact-alias}.SourceBranch` is equivalent to `Build.SourceBranch`.
 
 ## Parameters in conditions
 
@@ -246,7 +246,7 @@ The `condition` in the preceding pipeline combines two functions: `succeeded()` 
 
 The `eq('${{ parameters.doThing }}', true)` function checks whether the `doThing` parameter is equal to `true`. Since the default value for `doThing` is `true`, the condition returns `true` by default unless the pipeline sets a different value.
 
-## Template parameters in conditions
+### Template parameters in conditions
 
 When you pass a parameter to a template, you need to either set the parameter's value in your template or [use templateContext to pass the parameter to the template](template-parameters.md?view=azure-devops&preserve-view=true#use-templatecontext-to-pass-properties-to-templates).
 
