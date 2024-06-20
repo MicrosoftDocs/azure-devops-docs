@@ -2,7 +2,7 @@
   href: index.yml
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
-- name: Use Azure Pipelines
+- name: YAML vs Classic Pipelines
   href: get-started/pipelines-get-started.md
 - name: Get started
   items:
