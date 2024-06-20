@@ -216,6 +216,7 @@ The following examples show `condition` settings to produce various outcomes.
 > `Release.Artifacts.{artifact-alias}.SourceBranch` is equivalent to `Build.SourceBranch`.
 
 | Desired outcome | Condition setting |
+| --------------- | ----------------- |
 | Run if the source branch is main, even if the parent or preceding stage, job, or step failed or was canceled.| `eq(variables['Build.SourceBranch'], 'refs/heads/main')` |
 | Run if the source branch is main and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main')) |
 | Run if the source branch isn't main, and the parent or preceding stage, job, or step succeeded. | `and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main')) |
