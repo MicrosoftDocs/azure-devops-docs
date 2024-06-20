@@ -274,7 +274,7 @@ Ensure the following domain URLs are allowed for NuGet connections:
 
 ``` NuGetDomainURLs
 https://azurewebsites.net
-*nuget.org
+https://*.nuget.org
 ```
 
 > [!NOTE]
