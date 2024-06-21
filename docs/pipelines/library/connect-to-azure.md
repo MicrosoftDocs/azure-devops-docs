@@ -247,9 +247,6 @@ To revert a service connection:
 
 1. Select **Revert** again to confirm your choice.
 
-::: moniker-end
-
-::: moniker range="azure-devops"
 
 ## Create an Azure Resource Manager service connection that uses a service principal secret
 
@@ -387,6 +384,9 @@ For more information about authenticating by using a service principal, see [Use
 
 For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
+
+::: moniker range="azure-devops"
+
 <a name="use-msi"></a>
 
 ## Create an Azure Resource Manager service connection to a VM that uses a managed identity
@@ -498,4 +498,6 @@ For information about connecting to Azure Stack, see these articles:
 * [Connect Azure Stack to Azure by using a VPN](/azure/azure-stack/azure-stack-connect-vpn)
 * [Connect Azure Stack to Azure by using Azure ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+::: moniker-end
+
+[!INCLUDE [rm-help-support-shared](../includes/rm-help:::-support-shared.md)]
