@@ -185,7 +185,7 @@ For example:
 ```azurecli
 az rest --method post `
     --uri https://dev.azure.com/{organization}/{project}/_apis/pipelines/{pipelineId}/runs?api-version=7.1-preview.1 `
-    --body "{stagesToSkip: ['stageName']}"`
+    --body "{'stagesToSkip': [''], 'resources': {'repositories': {'self': {'refName': 'refs/heads/{branch}'}}}}" `
     --resource 499b84ac-1321-427f-aa17-267ca6975798
 ```
 
