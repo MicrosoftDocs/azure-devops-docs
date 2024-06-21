@@ -88,9 +88,9 @@ In order for a pipeline to access a project-scoped feed in a different project, 
 
 A: If you want to download a pipeline artifact from another project within the same organization, make sure that the following permissions are set for both your downstream project and the pipeline generating the artifact:
 
-On the pipeline generating the artifact (downstream project): select the ellipsis for more options > **Manage security** > search for your upstream project's build service and allow the following: **Update build information**, **View build pipeline**, and **View builds**.
+On the pipeline generating the artifact (upstream project): select the ellipsis for more options > **Manage security** > search for your downstream project's build service and allow the following: **Update build information**, **View build pipeline**, and **View builds**.
 
-On the downstream project: **Project Settings** > **Permissions** > **Users** > search for your upstream project's name and then select **Expand search** > select your upstream project's build service and allow the following: **View project-level information**.
+On the upstream project: **Project Settings** > **Permissions** > **Users** > search for your downstream project's name and then select **Expand search** > select your downstream project's build service and allow the following: **View project-level information**.
 
 ## Related articles
 
