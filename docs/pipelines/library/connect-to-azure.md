@@ -464,7 +464,7 @@ You can create a service connection by using a publish profile. You can use a pu
 
 1. Select **Publish profile** for the authentication method and select **Next**.
 
-   :::image type="content" source="media/new-service-publish-profile.png" alt-text="Screenshot of Publish profile selection.":
+   :::image type="content" source="media/new-service-publish-profile.png" alt-text="Screenshot of Publish profile selection.":::
 
 1. Enter the following parameters:
 
@@ -500,4 +500,4 @@ For information about connecting to Azure Stack, see these articles:
 
 ::: moniker-end
 
-[!INCLUDE [rm-help-support-shared](../includes/rm-help:::-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
