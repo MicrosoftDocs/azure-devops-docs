@@ -47,10 +47,10 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Git branch](../../repos/git/branch-permissions.md)  
      - [Git repositories](../../repos/git/set-git-repository-permissions.md)  
      - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
-     - [Build and release pipelines](../../pipelines/policies/pipeline-permissions.md)  
+     - [Build and release pipelines](../../pipelines/policies/permissions.md#pipeline-permissions)  
      - [Approvals and approvers](../../pipelines/release/approvals/index.md)  
      - [Task groups](../../pipelines/policies/task-group-permissions.md)   
-     - [Variable groups](../../pipelines/policies/library-permissions.md)  
+     - [Variable groups](../../pipelines/policies/permissions.md#library-permissions)  
      - [Role-based resources](../../pipelines/policies/permissions.md)  
    :::column-end:::
    :::column span="1":::
@@ -1660,7 +1660,7 @@ By default, team administrators are granted all permissions for their team dashb
 
 ## Pipeline or Build (object-level)
 
-Manage pipeline permissions [for each pipeline defined in the web portal](../../pipelines/policies/pipeline-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all pipeline permissions and Build Administrators are assigned most of these permissions. You can set pipeline permissions for all pipelines defined for a project or for each pipeline definition.
+Manage pipeline permissions [for each pipeline defined in the web portal](../../pipelines/policies/permissions.md#pipeline-permissions) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all pipeline permissions and Build Administrators are assigned most of these permissions. You can set pipeline permissions for all pipelines defined for a project or for each pipeline definition.
 
 ::: moniker range="azure-devops"
 :::image type="content" source="media/permissions/pipeline-object-level-permissions-cloud.png" alt-text="Screenshot of pipeline object-level security dialog, cloud."::: 
@@ -2643,7 +2643,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
 
 ## Release (object-level) 
 
-Manage permissions [for each release defined in the web portal](../../pipelines/policies/pipeline-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions work in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
+Manage permissions [for each release defined in the web portal](../../pipelines/policies/permissions.md#pipeline-permissions). Project Administrators and Release Administrators are granted all release management permissions. These permissions work in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
 :::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Screenshot showing Releases object-level permissions.":::
 
@@ -2831,7 +2831,7 @@ Default values for all of these permissions are set for team project collections
 
 ## Task group (Build and Release) permissions
 
-Manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/pipeline-permissions.md) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group definition.
+Manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/permissions.md#pipeline-permissions) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group definition.
 
 Use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. [Define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
  
