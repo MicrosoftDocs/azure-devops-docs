@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 06/21/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
@@ -61,3 +61,71 @@ The RootNamespace property in the artifacts-github-copilot.csproj file is set to
 ```
 
 ## Connect to a feed
+
+::: moniker range="azure-devops"
+
+1. Select **Artifacts** and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed**, and then select **dotnet** from the **NuGet** section.
+
+    :::image type="content" source="media/dotnet-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed with dotnet.":::
+
+1. Follow the instructions in the **Project setup** to set up your *nuget.config* file. The structure of your file should look similar to this:
+
+    - **Project-scoped feed**:
+
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+
+    - **Organization-scoped feed**:
+
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020 || azure-devops-2022"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to Feed**, and then select **dotnet** from the left navigation pane.
+
+1. Follow the instructions in the **Project setup** section to configure your *nuget.config* file and connect to your feed.
+
+    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022.":::
+
+::: moniker-end
+
+> [!TIP]
+> You can ask GitHub Copilot, "how to add a new package source to an existing *nuget.config* file". Copilot will guide you through using the `nuget sources Add` command to add your new feed source URL to your *nuget.config* file.
+
+## Publish your package
+
+Now that we've created a feed, set up our project, packed our package, configured our *nuget.config* file, and connected to our feed, we're ready to publish our first package. Run the following command from your project directory to publish your package. The ApiKey is required, but you can use any string value when publishing to an Azure Artifacts feed.
+
+```dotnetcli
+dotnet nuget push --source <FEED_NAME> --api-key az <PACKAGE_PATH>
+```
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Publish and restore packages from the command line](nuget/publish.md)
+> [Monitor Artifacts storage consumption](artifact-storage.md)
+> [Manage permissions](feeds/feed-permissions.md)
