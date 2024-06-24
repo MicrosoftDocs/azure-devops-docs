@@ -163,5 +163,5 @@ dotnet nuget push --source <FEED_NAME> --api-key az <PACKAGE_PATH>
 
 > [!div class="nextstepaction"]
 > [Monitor Artifacts storage](artifact-storage.md)
-> [Share packages publicly](tutorials/share-packages-publicly)
+> [Share packages publicly](tutorials/share-packages-publicly.md)
 > [Manage permissions](feeds/feed-permissions.md)
