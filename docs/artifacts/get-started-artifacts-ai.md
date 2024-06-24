@@ -106,8 +106,6 @@ The RootNamespace property in the artifacts-github-copilot.csproj file is set to
 
 1. Select **Connect to feed**, and then select **dotnet** from the **NuGet** section.
 
-    :::image type="content" source="media/dotnet-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed with dotnet.":::
-
 1. Follow the instructions in the **Project setup** to set up your *nuget.config* file. The structure of your file should look similar to this:
 
     - **Project-scoped feed**:
@@ -146,7 +144,7 @@ The RootNamespace property in the artifacts-github-copilot.csproj file is set to
 
 1. Follow the instructions in the **Project setup** section to configure your *nuget.config* file and connect to your feed.
 
-    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022.":::
+    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot that shows how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022.":::
 
 ::: moniker-end
 
@@ -164,6 +162,6 @@ dotnet nuget push --source <FEED_NAME> --api-key az <PACKAGE_PATH>
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Publish and restore packages from the command line](nuget/publish.md)
-> [Monitor Artifacts storage consumption](artifact-storage.md)
+> [Monitor Artifacts storage](artifact-storage.md)
+> [Share packages publicly](tutorials/share-packages-publicly)
 > [Manage permissions](feeds/feed-permissions.md)
