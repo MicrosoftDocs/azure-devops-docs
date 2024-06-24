@@ -26,7 +26,45 @@ With Azure Artifacts, you can manage your dependencies and store various package
 
 ## Create a feed
 
-[!INCLUDE [](includes/create-feed.md)]
+::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+1. Provide a descriptive **Name** for your feed and set its **Visibility** (who can view packages in your feed). Define the **Scope** of your feed, and if you  want to include packages from public sources, check the **Upstream sources** checkbox.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="media/create-new-feed-azure-devops.png" alt-text="Screenshot that shows how to create a new feed in Azure DevOps Services.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022 || azure-devops-2020"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+2. Select **Artifacts**, and then select **Create Feed**.
+
+3. Provide a descriptive **Name** for your feed and set its **Visibility** (who can view packages in your feed). Define the **Scope** of your feed, and if you  want to include packages from public sources, check the **Upstream sources** checkbox.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+4. Select **Create** when you're done.
+
+    :::image type="content" source="media/create-new-feed-server-2022.png" alt-text="Screenshot that shows how to create a new feed in Azure DevOps Server 2022.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+4. Select **Create** when you're done.
+
+    :::image type="content" source="media/create-new-feed-server-2020.png" alt-text="Screenshot that shows how to create a new feed in Azure DevOps Server 2020.":::
+
+::: moniker-end
 
 ## Project setup
 
