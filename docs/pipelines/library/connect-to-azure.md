@@ -45,7 +45,7 @@ We recommend that you use this approach if all the following items are true for 
 * You're not connecting to the [Azure Stack](#connect-stack) or the [Azure US Government](#connect-govt) environments.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
-### Create a new workload identity federation service connection
+### Create a service connection with workload identity federation (automatic)
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
@@ -57,7 +57,7 @@ We recommend that you use this approach if all the following items are true for 
 
 1. Select **Workload identity federation (automatic)** and **Next**.
 
-   :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot that shows selecting a workload identity service connection type.":::
+   :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot of Workload Identity federation (automatic) authentication method selection.":::
 
 1. Select a **Scope level**. 
 
@@ -82,7 +82,7 @@ After the new service connection is created, copy the connection name and paste 
 
 To deploy to a specific Azure resource, the task needs more data about that resource. Go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, copy the name of the Azure App Service app and paste it into your code as the value for `WebAppName`.
 
-### Create an Azure Resource Manager service connection using workload identity federation manually
+### Create service connection with workload identity federation (manual)
 
 You can manually create a service connection that uses an existing workload identity federation for authentication. 
 
@@ -91,7 +91,13 @@ You can manually create a service connection that uses an existing workload iden
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
+   
+      :::image type="content" source="media\new-azure-resource-mgr-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
+
 1. Select **Workload identity federation (manual)** and **Next**.
+
+
+   :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot that shows selecting a workload identity service connection type.":::
 1. In **Step 1: Basics**:
     1. Enter a **Service connection name** 
     1. Optionally, enter a **Description**.
@@ -273,6 +279,8 @@ To create the service connection:
 
 1. Select **Service principal (automatic)** and **Next**.
 
+    :::image type="content" source="media\new-azure-resource-mgr-conn-sp-auto-selection.png" alt-text="Screenshot that shows selecting a service principal (automatic) authentication method selection.":::
+
 1. Enter or select the following parameters:
 
    | Parameter | Description |
@@ -333,6 +341,8 @@ To create a service connection that uses an existing service principal:
    :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
 
 1. Select **Service principal (manual)** and **Next**.
+
+    :::image type="content" source="media\new-azure-resource-mgr-conn-sp-manual-selection.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
 
 1. From the **New Azure service connection** dialog, select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. 
 
@@ -395,7 +405,7 @@ For more information, see [Troubleshoot Azure Resource Manager service connectio
 >
 > To use a managed identity to authenticate, you must use a self-hosted agent on an Azure virtual machine (VM).
 
-You can configure Azure VM-based agents to use an [Azure managed identity](/azure/active-directory/managed-service-identity/overview) in Microsoft Entra ID. In this scenario, you use the system-assigned identity (service principal) to grant the Azure VM-based agents access to any Azure resource that supports Microsoft Entra ID, such as an instance of Azure Key Vault, instead of persisting credentials in Azure DevOps for the connection.
+You can configure self-hosted agents on Azure VMs to use an [Azure managed identity](/azure/active-directory/managed-service-identity/overview) in Microsoft Entra ID. In this scenario, you use the system-assigned managed identity (service principal) to grant the agents access to any Azure resource that supports Microsoft Entra ID, such as an instance of Azure Key Vault.
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
@@ -407,7 +417,7 @@ You can configure Azure VM-based agents to use an [Azure managed identity](/azur
 
 1. Select **Managed identity** for the authentication method.
 
-   :::image type="content" source="media/rm-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity settings.":::
+   :::image type="content" source="media/rm-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity authentication method selection.":::
 
 1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or **Azure US Government**).
 
@@ -464,7 +474,7 @@ You can create a service connection by using a publish profile. You can use a pu
 
 1. Select **Publish profile** for the authentication method and select **Next**.
 
-   :::image type="content" source="media/new-service-publish-profile.png" alt-text="Screenshot of Publish profile selection.":::
+   :::image type="content" source="media/new-service-publish-profile.png" alt-text="Screenshot of Publish profile authentication method selection.":::
 
 1. Enter the following parameters:
 
