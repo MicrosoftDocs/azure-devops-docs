@@ -590,7 +590,7 @@
     - name: Release pipeline permissions
       href: policies/permissions.md#release-pipeline-permissions
     - name: Task group permissions
-      href: policies/task-group-permissions.md
+      href: policies/permissions.md#task-group-permissions.md
     - name: Agent pool security
       href: policies/permissions.md#agent-pool-permissions
     - name: Service connection security

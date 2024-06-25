@@ -515,7 +515,7 @@ To add project users or groups that aren't listed in the security dialog, do the
 1. Select the **Role**.
 1. Select **Add** to save the changes.
 
-<a id="release-pipeline-permissions>
+<a id="release-pipeline-permissions"> </a>
 
 ## Set release pipeline permissions in Azure Pipelines
 
@@ -722,7 +722,7 @@ To set permissions for a stage, do the following steps:
 
 When you explicitly set an inherited user or group permission, inheritance is disabled for that specific permission. To restore inheritance, set the permission to **Not set**. Select **Clear explicit permissions** to reset all explicitly set permissions to their inherited settings. To disable inheritance for all user and group permissions, turn off the **Inheritance** setting. Upon re-enabling inheritance, the permissions for all users and groups revert to their project-level settings.
 
-<a id="service-connection-permissions> />
+<a id="service-connection-permissions"> </a>
 
 ## Set service connection security in Azure Pipelines
 
@@ -891,7 +891,7 @@ To remove a user or group from the list, select the user or group and select **D
 
 If you're having trouble with permissions and service connections, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
-<a id="task-group-permissions> </a>
+<a id="task-group-permissions"> </a>
 
 ## Set task group permissions in Azure Pipelines
 
@@ -922,7 +922,7 @@ To set permissions for project-level task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of task group menu item.":::
+    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of task group menu item.":::
 
 1. Select **Security**.
 
@@ -963,7 +963,7 @@ To set permissions for project-level task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of task group selection.":::
+    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of task group selection.":::
 
 1. Select **Security**.
 
@@ -989,7 +989,7 @@ To set permissions for individual task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
+    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
 
 1.  Select a task group. 
 
@@ -1034,7 +1034,7 @@ To set permissions for individual task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
+    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
 
 1.  Select a task group. 
 

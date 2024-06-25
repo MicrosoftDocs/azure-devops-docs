@@ -523,7 +523,7 @@
       "redirect_url": "/azure/devops/pipelines/policies/permissions#library-permissions"
     },
     {
-      "source_path": "docs/pipelines/policies/pieline-permissions.md",
+      "source_path": "docs/pipelines/policies/pipeline-permissions.md",
       "redirect_url": "/azure/devops/pipelines/policies/permissions#pipeline-permissions"
     },
     {
@@ -537,6 +537,10 @@
     {
       "source_path": "docs/pipelines/policies/agent-pool-permissions.md",
       "redirect_url": "/azure/devops/pipelines/policies/permissions#agent-pool-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/task-group-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#task-group-permissions"
     }
   ]
 }
