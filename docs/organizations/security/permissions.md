@@ -49,7 +49,7 @@ To learn how to add users to a group or set a specific permission that you can m
      - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
      - [Build and release pipelines](../../pipelines/policies/permissions.md#pipeline-permissions)  
      - [Approvals and approvers](../../pipelines/release/approvals/index.md)  
-     - [Task groups](../../pipelines/policies/permissions.md#task-group-permissions.md)   
+     - [Task groups](../../pipelines/policies/permissions.md#task-group-permissions)   
      - [Variable groups](../../pipelines/policies/permissions.md#library-permissions)  
      - [Role-based resources](../../pipelines/policies/permissions.md)  
    :::column-end:::

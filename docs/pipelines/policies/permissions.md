@@ -5,7 +5,7 @@ description: Manage security in Azure Pipelines.
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: chcomley
 author: chcomley
-ms.date: 06/24/2024
+ms.date: 06/25/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -68,16 +68,14 @@ To manage project-level permissions for users and groups across all build pipeli
     
     :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selection.":::
     
-1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**. 
+2. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
 
-    :::image type="content" source="media/set-security-all-pipelines.png" alt-text="Screenshot showing pipelines security selection. ":::
-
-1. Select users or groups and set permissions to **Allow**, **Deny**, or **Not set**.
+3. Select users or groups and set permissions to **Allow**, **Deny**, or **Not set**.
 
     :::image type="content" source="media/pipelines-project-level-security-dialog.png" alt-text="Screenshot of project-level pipelines security dialog.":::
 
-1. Repeat the previous step to change the permissions for more groups and users.
-1. Close permissions dialog to save the changes. 
+4. Repeat the previous step to change the permissions for more groups and users.
+5. Close permissions dialog to save the changes. 
 
 #### Add users or groups to the permissions dialog
  
@@ -110,20 +108,17 @@ To manage project-level permissions for users and groups across all build pipeli
     
     :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selections.":::
     
-1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**. 
-
-    :::image type="content" source="media/set-security.png" alt-text="Screenshot showing security selection for all pipelines in a project. ":::
-
-1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
-1. Select a user or group and set the permissions.
+2. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
+3. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
+4. Select a user or group and set the permissions.
 
     :::image type="content" source="media/pipelines-project-level-permissions-2020.png" alt-text="Screenshot showing project-level pipeline security dialog.":::
 
-1. Repeat the previous step to change the permissions for more groups and users.
-1. Select **Save changes** or you can select **Undo changes** to undo the changes.
+5. Repeat the previous step to change the permissions for more groups and users.
+6. Select **Save changes** or you can select **Undo changes** to undo the changes.
 
-1. To remove a user or group from the list, select the user or group and select **Remove**.
-1. Select **Close**.
+7. To remove a user or group from the list, select the user or group and select **Remove**.
+8. Select **Close**.
 
 Your project-level pipelines permissions are set.
 
@@ -922,17 +917,17 @@ To set permissions for project-level task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of task group menu item.":::
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of task group menu item.":::
 
-1. Select **Security**.
+2. Select **Security**.
 
     :::image type="content" source="media/task-group-security-project.png" alt-text="Screenshot of task groups security selection.":::
 
-1. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
+3. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
 
     :::image type="content" source="media/task-groups-project-level-permissions.png" alt-text="Screenshot of task group security dialog.":::
 
-1. When you're done, close the dialog to save your changes.
+4. When you're done, close the dialog to save your changes.
 
 #### Add users or groups to the permissions dialog
  
@@ -963,21 +958,21 @@ To set permissions for project-level task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of task group selection.":::
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of task group selection.":::
 
-1. Select **Security**.
+2. Select **Security**.
 
     :::image type="content" source="media/task-group-security-project.png" alt-text="Screenshot of task groups security selection.":::
 
-1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
+3. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
 
-1. Select a user or group to set the permissions to **Allow**, **Deny** or **Not set**.
+4. Select a user or group to set the permissions to **Allow**, **Deny** or **Not set**.
 
     :::image type="content" source="media/task-group-project-level-permissions-2019.png" alt-text="Screenshot of pipeline task groups security dialog.":::
 
-1. Select **Save changes** or you can select **Undo changes** to undo the changes. You must save the changes to apply the permissions before selecting another user or group.
-1. You can select more users and groups to change their permissions.
-1. Select **Close** when you're finished.
+5. Select **Save changes** or you can select **Undo changes** to undo the changes. You must save the changes to apply the permissions before selecting another user or group.
+6. You can select more users and groups to change their permissions.
+7. Select **Close** when you're finished.
 
 ::: moniker-end
 
@@ -989,17 +984,17 @@ To set permissions for individual task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
 
-1.  Select a task group. 
+2.  Select a task group. 
 
-1. Select **More commands** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: and select **Security**. 
+3. Select **More commands** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: and select **Security**. 
 
-1. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
+4. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
 
     :::image type="content" source="media\task-group-individual-permission.png" alt-text="Screenshot of object-level task group security dialog.":::
 
-1. When you're done, close the dialog to save your changes.
+5. When you're done, close the dialog to save your changes.
 
 When a permission for an inherited user or group is explicitly set, inheritance is disabled for that specific permission. Change the permission to **Not set** to restore inheritance. To disable inheritance for all user and group permissions, turn off the **Inheritance** setting. Upon re-enabling inheritance, the settings for all permissions revert to the project level.
 
@@ -1034,17 +1029,17 @@ To set permissions for individual task groups, do the following steps:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/permissions.md#task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
 
-1.  Select a task group. 
+2.  Select a task group. 
 
-1. Select **More commands** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: and select **Security**. 
+3. Select **More commands** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: and select **Security**. 
 
-1. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
+4. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
 
     :::image type="content" source="media\task-group-individual-permission.png" alt-text="Screenshot of object-level task group security dialog.":::
 
-1. When you're done, close the dialog to save your changes.
+5. When you're done, close the dialog to save your changes.
 
 When a permission for an inherited user or group is explicitly set, inheritance is disabled for that specific permission. Change the permission to **Not set** to restore inheritance. To disable inheritance for all user and group permissions, turn off the **Inheritance** setting. Upon re-enabling inheritance, the settings for all permissions revert to the project level.
 
