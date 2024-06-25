@@ -6,12 +6,7 @@ ms.topic: include
 ms.date: 08/18/2021
 ---
 
-<!--- Azure DevOps Server 2019 and 2020 Pipelines Build only 
- 
-
--->
- 
-
+<!--- Azure DevOps Server 2019 and 2020 Pipelines Build only-->
 
 | Task | Readers | Contributors | Build Admins | Project Admins | 
 |------|:-------:|:------------:|:------------:|:--------------:|
