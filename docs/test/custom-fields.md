@@ -24,8 +24,8 @@ Project administrator can [manage (add/delete) the set of the custom fields](#ma
 ## Managing the custom fields
 
 There are two ways to manage the custom fields - either via [REST API](/rest/api/azure/devops/testresults/extensionfields)
-or project administrator can do that through the "Project settings" while choosing "Test management" under "Pipelines".
-On that page new custom field can be added by clicking on the "+ Add new" button.
+or project administrator can do that through the **Project settings** while choosing **Test management** under **Pipelines**.
+On that page new custom field can be added by clicking on the **+ Add new** button.
 :::image type="content" source="./media/custom-fields/test-management-settings.png" alt-text="Screenshot of project settings with the test management settings selected and the button to add a new custom field marked by red rectangle.":::
 
 Choose **+ Add new** to add a new custom field. Each custom field must have a name, type configured, and indicate what type of artifact it applies to.
@@ -41,6 +41,7 @@ Type can be one of the following:
 -	Float
 -	String
 -	Guid
+
 The existing custom fields can either be edited (only name can be changed) or removed. 
 
 > [!NOTE]
