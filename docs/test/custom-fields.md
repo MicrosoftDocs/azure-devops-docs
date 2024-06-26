@@ -53,7 +53,7 @@ The existing custom fields can either be edited (only name can be changed) or re
 
 You can store your custom data into the configured custom fields either as part of the test run/result creation or after the test run/result was created.
 Both can be done using REST API for now. In the future we will allow the custom data to be picked up from the test results file.
-To get the values stored in these custom fields for the existing test run/result, user need to use the REST API.
+To get the values stored in your custom fields for the existing test run/result, you must use the REST API.
 For the moment we do not display the custom fields and values stored in these on the Azure DevOps UI (we will be adding that ability in the future).
 
 When you’re creating test run and/or result via REST API and want to store custom data to existing custom field, then the best option for you is to send the custom data as part of the test run and/or result creation.
