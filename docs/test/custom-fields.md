@@ -6,7 +6,7 @@ ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: bjanousek
-author: bohdan-janousek
+author: bjanousek
 ms.date: 06/26/2024
 monikerRange: '= azure-devops'
 ---
