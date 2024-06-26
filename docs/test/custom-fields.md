@@ -1,6 +1,6 @@
 ---
 title: Custom fields for test runs and test results
-description: Store custom data against the test runs an test results
+description: Store custom data against the test runs and test results
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
@@ -24,15 +24,16 @@ Project administrator can [manage (add/delete) the set of the custom fields](#ma
 ## Managing the custom fields
 
 There are two ways to manage the custom fields - either via [REST API](/rest/api/azure/devops/testresults/extensionfields)
-or project administrator can do that through the “Project settings” while choosing “Test management” under “Pipelines”.
-On that page new custom field can be added by clicking on the “+ Add new” button.
-:::image type="content" source="./media/custom-fields/test-management-settings.png" alt-text="Screenshot of project settings with the test managment settings selected and the button to add new custome field marked by red rectangle.":::
+or project administrator can do that through the "Project settings" while choosing "Test management" under "Pipelines".
+On that page new custom field can be added by clicking on the "+ Add new" button.
+:::image type="content" source="./media/custom-fields/test-management-settings.png" alt-text="Screenshot of project settings with the test management settings selected and the button to add a new custom field marked by red rectangle.":::
 
-Each custom field must have a name, type configured and indicate what type of the artifact it applies to. The UI allowing to set these (after clicking on the “+ Add new” button) is below.
-:::image type="content" source="./media/custom-fields/add-custom-field.png" alt-text="Screenshot of a dialog used to add new custom field.":::
+Choose **+ Add new** to add a new custom field. Each custom field must have a name, type configured, and indicate what type of artifact it applies to.
 
-The name of custom field cannot be longer than 50 characters (space, numbers and special characters are not allowed) and must be unique in the project.
-The names are case insensitive, so you cannot have one custom field named “Test” and the other one named “test”.
+:::image type="content" source="./media/custom-fields/add-custom-field.png" alt-text="Screenshot of a dialog used to add a new custom field.":::
+
+The name of custom field cannot be longer than 50 characters (spaces, numbers, and special characters are not allowed) and must be unique in the project.
+The names are case insensitive, so you cannot have one custom field named "Test" and the other one named "test".
 Type can be one of the following:
 -	Bit
 -	DateTime
@@ -67,7 +68,7 @@ Then you can call [REST API Runs - Query](/rest/api/azure/devops/test/runs/query
 and [REST API Results - Get](/rest/api/azure/devops/test/results/get) for the test result.
 
 The custom data for the custom fields are sent or received in an array.
-Each item of that array contains two properties “fieldname” and “value” and you can see example fo thet [here](/rest/api/azure/devops/test/results/get#customtestfield).
+Each item of that array contains two properties "fieldname" and "value" and you can see an example of that [here](/rest/api/azure/devops/test/results/get#customtestfield).
 The value is object of the type that matches the type configured for the custom field.
 To understand the type of the custom field you may want to use [REST API](/rest/api/azure/devops/testresults/extensionfields/query) that provides array of the custom fields.
 For each field you can find there its ID, name, type and scope. You may also hardcode the type if you know what the type of the custom field of given name is.
