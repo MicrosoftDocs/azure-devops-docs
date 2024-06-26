@@ -7,14 +7,13 @@ ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: bjnaousek
 author: bohdan-janousek
-ms.date: 26/07/2024
-monikerRange: '<= azure-devops'
+ms.date: 06/26/2024
+monikerRange: '>= azure-devops'
 ---
 
 # Custom fields
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-gt-eq-azure-devops](../includes/version-gt-eq-azure-devops.md)]
 
 Using the custom fields allows [storing the custom data](#store-custom-data) against the test run and/or test result.
 There can be up to 100 custom fields defined for a single Azure DevOps project.
