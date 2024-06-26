@@ -218,9 +218,9 @@ stages:
 To work with a variable group, you must authorize the group. If you only name the variable group in YAML, then anyone who can push code to your repository could extract the contents of secrets in the variable group.
 To authorize the group, use one of the following techniques:
 
-- To authorize any pipeline to use the variable group, go to Azure Pipelines. This might be a good option if you don't have any secrets in the group. Select **Library** > **Variable groups**, and then select the variable group in question and enable the setting **Allow access to all pipelines**.
-
 - To authorize a variable group for a specific pipeline, open the pipeline, select **Edit**, and then queue a build manually. You see a resource authorization error and an "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an authorized user of the variable group.
+
+- To authorize any pipeline to use the variable group, go to Azure Pipelines. This might be a good option if you don't have any secrets in the group. Select **Library** > **Variable groups**, and then select the variable group in question and enable the setting **Allow access to all pipelines**.
 
 > [!Note]
 > If you add a variable group to a pipeline and don't get a resource authorization error in your build when you expected one, turn off the **Allow access to all pipelines** setting.
