@@ -31,6 +31,9 @@
     href: run-manual-tests.md
   - name: Default permissions (Security)
     href: manual-test-permissions.md
+  - name: Store custom data in test plan and/or test result
+    displayName: manual test, automated, run, test runs, result, test results, custom data, custom fields
+    href: custom-fields.md
   expanded: true
 - name: Manual tests
   items:
