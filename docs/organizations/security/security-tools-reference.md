@@ -62,7 +62,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Builds, Task groups](../../pipelines/policies/permissions.md)  |   ✔️  |   ✔️  |     |  
 | [Build resources](change-organization-collection-level-permissions.md)      |   ✔️  |   ✔️  |     |  
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️  |     |  
-| [Releases](../../pipelines/policies/release-pipeline-permissions.md)              |   ✔️  |   ✔️  |     | 
+| [Releases](../../pipelines/policies/permissions.md#release-pipeline-permissions)              |   ✔️  |   ✔️  |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |   ✔️  |     |  
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path)  |   ✔️  |   ✔️  |     |  
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)           |   ✔️  |   ✔️  |      | 
@@ -84,10 +84,10 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Project-level, test management, create tags](change-project-level-permissions.md) |   ✔️  |  ✔️ |     | 
 | [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)          |   ✔️  |  ✔️ |  ✔️   | 
-| [Builds](../../pipelines/policies/pipeline-permissions.md              |   ✔️  |  ✔️ |     | 
+| [Builds](../../pipelines/policies/permissions.md#pipeline-permissions              |   ✔️  |  ✔️ |     | 
 | [Build resources](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
-| [Releases](../../pipelines/policies/release-pipeline-permissions.md)             |   ✔️  |  ✔️ |     | 
+| [Releases](../../pipelines/policies/permissions.md#release-pipeline-permissions)             |   ✔️  |  ✔️ |     | 
 | [Area path](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |  ✔️ |     | 
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)          |   ✔️  |  ✔️ |     | 
