@@ -60,8 +60,8 @@ For the moment we do not display the custom fields and values stored in these on
 When you’re creating test run and/or result via REST API and want to store custom data to existing custom field, then the best option for you is to send the custom data as part of the test run and/or result creation.
 To create a test run call [REST API Runs - Create](/rest/api/azure/devops/test/runs/create) and to create test result call [REST API Results - Add](/rest/api/azure/devops/test/results/add).
 
-When the test run and/or result is not created via REST API but by other means, then you must first find the identification of the test run or result for which you want to set (or update)
-the custom data in the custom fields and the call [REST API Runs - Update](/rest/api/azure/devops/test/runs/update) for the test run
+When the test run and/or result is not created via REST API, but by other means, then you must first find the identification of the test run or result for which you want to set (or update)
+the custom data in the custom fields and then call [REST API Runs - Update](/rest/api/azure/devops/test/runs/update) for the test run
 and [REST API Results - Update](/rest/api/azure/devops/test/results/update) for the test result.
 
 To retrieve the custom data from the custom fields stored previously against the test run and/or result, you must first find the identification of the test run or result.
