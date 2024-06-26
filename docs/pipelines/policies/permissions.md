@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines security controls access to pipelines and their resources through a hierarchy of security groups and users. Resources like release pipelines, task groups, agent pools, and service connections, though external to pipelines, are governed by this system. Upon creation, pipelines and resources inherit project-level permissions from predefined security groups and users, affecting all project pipelines. 
+Azure Pipelines security controls access to pipelines and their resources through a hierarchy of security groups and users. This system governs resources like release pipelines, task groups, agent pools, and service connections, though external to pipelines. Upon creation, pipelines and resources inherit project-level permissions from predefined security groups and users, affecting all project pipelines. 
 
 Administrators typically have unrestricted access, contributors oversee resources, and readers have view-only permissions, with user roles determining group assignments. For more information, see [About pipeline security roles](../../organizations/security/about-security-roles.md).
 
@@ -25,7 +25,7 @@ Administrators typically have unrestricted access, contributors oversee resource
 | [Agent pool security](#set-agent-pool-security-in-azure-pipelines) | - To manage agent pool security at the organization, collection, or project level, you must be a member of the **Project Collection Administrators** group or have the **Administrator** role for agent pools.<br>- To manage agent pool security at the object level, you must have the **Administrator** role for the agent pool.                |
 |[Deployment group security](#set-deployment-group-security-in-azure-pipelines)    | - To manage project-level deployment group security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual deployment groups, you must be assigned an administrator role.          |
 |[Environment security](#set-security-for-environments-in-azure-pipelines)   | - To manage project-level environment security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage object-level security for individual environments, you must be assigned an administrator role.          |
-|[Library security](#set-library-security-in-azure-pipelines)   | - To manage library security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual library assets, you must be an an administrator or have the appropriate role.        |
+|[Library security](#set-library-security-in-azure-pipelines)   | - To manage library security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual library assets, you must be an administrator or have the appropriate role.        |
 |[Release pipeline security](#set-release-pipeline-permissions-in-azure-pipelines)   | - To manage release pipeline security, you must be a member of an administrator group or be allowed *Administer release permissions*.<br> - A release pipeline must be created.        |
 |[Service connection security](#set-service-connection-security-in-azure-pipelines)    | - To manage service connection security, you must be a member of the **Project Administrators** group or have an administrator role. - To manage security at the project level, you must be a member of the **Project Administrators** group or have the **Administrator** role for service connections.<br> - To manage security at the object level, you must have the **Administrator** role for the service connection.       |
 |[Task group security](#set-task-group-permissions-in-azure-pipelines)    |  To manage task group security, you must be a member of an administrator group or be allowed *Administer task group permissions*.<br>- A task group must exist.        |
@@ -34,7 +34,7 @@ Administrators typically have unrestricted access, contributors oversee resource
 
 ## Set pipeline permissions in Azure Pipelines
 
-Pipeline security follows a hierarchical model of user and group permissions. Project-level permissions are inherited at the object level by all pipelines in the project. You can change inherited and default user and group permissions for all pipelines at the project- and object-levels. You can't change permissions set by the system.
+Pipeline security follows a hierarchical model of user and group permissions. Project-level permissions are inherited at the object level by all pipelines in the project. You can change inherited and default user and group permissions for all pipelines at the project- and object-levels. You can't change the permissions set by the system.
 
 The following table shows the default security groups for pipelines:
 
@@ -153,7 +153,7 @@ To manage project-level permissions for users and groups across all build pipeli
 
 ::: moniker range=">= azure-devops-2022"
 
-By default, object-level permissions for individual pipelines inherit the project-level permissions. You can override the inherited project-level permissions. 
+By default, object-level permissions for individual pipelines are inherited from the project-level permissions. You can override the inherited project-level permissions. 
 
 You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
 
@@ -1212,26 +1212,26 @@ To manage security roles for all agent pools in the organization, do the followi
 
 Individual agent pools inherit the organization-level security assignments. The **Default** and **Azure Pipelines** agent pools include the **Project Valid Users** group for each project in the organization.  
 
-Agent pools that are created at the project-level are automatically assigned the **[\<project name\>]\Project Valid Users** group and the creator of the agent pool. The creator can't be deleted or modified. Any organization-level users and groups that are added from the project settings are listed here.  
+Agent pools created at the project-level are automatically assigned the **[\<project name\>]\Project Valid Users** group and the creator of the agent pool. The creator can't be deleted or modified. Any organization-level users and groups that are added from the project settings are listed here.  
 
 You can add and remove organization-level users and groups and set security roles for an individual agent pool. The security roles at this level are **Reader**, **Service Account**, and **Administrator**.
 
 To manage security roles for all agent pools in the collection, do the following steps:
 
 1. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
-1. Select an agent pool.
-1. Select **Security**. 
-1. To add users and groups:
+2. Select an agent pool.
+3. Select **Security**. 
+4. To add users and groups:
     1. Select **Add**
-    1. Enter a user or group and select it from the search results.
-    1. Repeat the previous step to add more users and groups.
-    1. Select a role and select **Add**.   
+    2. Enter a user or group and select it from the search results.
+    3. Repeat the previous step to add more users and groups.
+    4. Select a role and select **Add**.   
         :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of organization-level add user for an agent pool.":::
-1. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
-1. To change a security role, select the user or group and select the role from the dropdown list.
-1. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
+5. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
+6. To change a security role, select the user or group and select the role from the dropdown list.
+7. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
     :::image type="content" source="media\agent-pools-organization-level-security-for-individual-pool.png" alt-text="Screenshot of organization-level security dialog for an individual agent pool.":::
-1. Close the dialog.
+8. Close the dialog.
 
 ::: moniker-end
 
@@ -1275,31 +1275,31 @@ To manage security roles for all agent pools in the collection, do the following
 
 Individual agent pools inherit the collection-level security assignments. The **Default** and **Azure Pipelines** agent pools include the **Project Valid Users** group for each project in the collection.  
 
-Agent pools that are created at the project-level are automatically assigned the **[\<project name\>]\Project Valid Users** group and the creator of the agent pool. The creator can't be deleted or modified. Any collection-level users and groups that are added from the project settings are listed here.  
+Agent pools created at the project-level are automatically assigned the **[\<project name\>]\Project Valid Users** group and the creator of the agent pool. The creator can't be deleted or modified. Any collection-level users and groups that are added from the project settings are listed here.  
 
 You can add and remove collection-level users and groups and set security roles for an individual agent pool. The security roles at this level are **Reader**, **Service Account**, and **Administrator**. To lower the privilege level of an inherited role, inheritance must be disabled.
 
 To manage security roles for all agent pools in the collection, do the following steps:
 
 1. Go to **Collection settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
-1. Select an agent pool.
-1. Select **Security**. 
-1. To add users and groups:
+2. Select an agent pool.
+3. Select **Security**. 
+4. To add users and groups:
     1. Select **Add**
-    1. Enter a user or group and select it from the search results.
-    1. Repeat the previous step to add more users and groups.
-    1. Select a role and select **Add**.
+    2. Enter a user or group and select it from the search results.
+    3. Repeat the previous step to add more users and groups.
+    4. Select a role and select **Add**.
      
         
         :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of collection-level add user dialog.":::
 
-1. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
-1. To change a security role, select the user or group and select the role from the dropdown list.
-2. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
+5. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
+6. To change a security role, select the user or group and select the role from the dropdown list.
+7. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
 
     :::image type="content" source="media\agent-pools-organization-level-security-for-individual-pool.png" alt-text="Screenshot of collection-level security dialog for an individual agent pool.":::
 
-3. Close the dialog.
+8. Close the dialog.
 
 ::: moniker-end
 
@@ -1389,7 +1389,7 @@ To add project users or groups that aren't listed in the security dialog:
 
 ### Set object-level agent pool security
 
-You can override project-level user and group role assignments, and set pipeline permissions for an individual agent pool. To remove an inherited user or group, or lower the privilege level of an inherited role, you must disable inheritance.
+You can override project-level user and group role assignments and set pipeline permissions for an individual agent pool. To remove an inherited user or group, or lower the privilege level of an inherited role, you must disable inheritance.
 
 ::: moniker range=">= azure-devops-2022"
 

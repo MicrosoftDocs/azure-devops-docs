@@ -115,10 +115,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 
 You can't remove or delete the default server level groups. 
 
-> [!NOTE]   
-> The full name of each of these groups is **[Team Foundation]\\{group name}**.
-> So the full name of the server level administrators group is
-> **[Team Foundation]\\Team Foundation Administrators**.
+The full name of each of these groups is **[Team Foundation]\\{group name}**. So the full name of the server level administrators group is **[Team Foundation]\\Team Foundation Administrators**.
  
 :::row:::
    :::column span="1":::
@@ -156,9 +153,9 @@ You can't remove or delete the default server level groups.
    Has service level permissions for Azure DevOps Server Proxy,
    and some service-level permissions.
    > [!NOTE]   
-   > This account is created when you [install the Azure DevOps proxy service](/azure/devops/server/install/install-proxy-setup-remote). 
+   > This account gets created when you [install the Azure DevOps proxy service](/azure/devops/server/install/install-proxy-setup-remote). 
    :::column-end:::
-   :::column span="1":::   
+   :::column span="2":::   
    This group should contain only service accounts and not user accounts or groups
    that contain user accounts.
    :::column-end:::
@@ -464,7 +461,7 @@ For each project that you create, the system creates the followings project-leve
    :::column span="2":::
    Assign to users who define and manage release pipelines.
    > [!NOTE]   
-   > The Release Administrator group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created. 
+   > The Release Administrator group gets created at the same time the first release pipeline is defined. It isn't created by default when the project is created. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -582,10 +579,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
    
    Can edit server-level permissions for users and groups,
    and add or remove server level groups from the collection.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
+
    > [!NOTE]   
    > **Edit instance-level information** includes the ability to perform these tasks defined in all collections defined for the instance:  
    > - Modify **Extensions** and **Analytics** settings
@@ -595,6 +589,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
    > - Create and modify global lists 
    >
    > To grant all these permissions at a command prompt, you must use the `tf.exe Permission` command to grant the `AdminConfiguration` and `AdminConnections` permissions in addition to `GENERIC_WRITE`.
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -624,13 +619,11 @@ Manage server-level permissions through the [Team Foundation Administration Cons
    :::column-end:::
    :::column span="2":::
    
-   Can use all on-premises Web portal features. This permission is deprecated with Azure DevOps Server 2019 and later versions. 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
+   Can use all on-premises Web portal features. This permission is deprecated with Azure DevOps Server 2019 and later versions.
+
    > [!NOTE]   
    > If the **Use full Web Access** features permission is set to **Deny**, the user only sees those features permitted for the **Stakeholder** group (see [Change access levels](change-access-levels.md)). A Deny overrides any implicit Allow, even for accounts that are members of administrative groups such as Team Foundation Administrators.
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -686,6 +679,7 @@ Manage organization-level permissions through the [web portal admin context](../
   `Collection, DIAGNOSTIC_TRACE`
    :::column-end:::
    :::column span="2":::
+   
    Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
    :::column-end:::
 :::row-end:::
@@ -696,6 +690,7 @@ Manage organization-level permissions through the [web portal admin context](../
   `Collection, CREATE_PROJECTS`
    :::column-end:::
    :::column span="2":::
+   
    Can [add a project](../projects/create-project.md) to an organization or project collection. More permissions may be required depending on your on-premises deployment. 
    :::column-end:::
 :::row-end:::
@@ -705,7 +700,8 @@ Manage organization-level permissions through the [web portal admin context](../
   `Project, DELETE`
    :::column-end:::
    :::column span="2":::
-   Can [delete a project](../projects/delete-project.md).  Deleting a project deletes all data that is associated with the project. You can't undo the deletion of a project except by restoring the collection to a point before the project was deleted.  
+   
+   Can [delete a project](../projects/delete-project.md). Deleting a project deletes all data that is associated with the project. You can't undo the deletion of a project except by restoring the collection to a point before the project was deleted.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -715,16 +711,13 @@ Manage organization-level permissions through the [web portal admin context](../
    :::column-end:::
    :::column span="2":::
    Can set organization and project-level settings.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
+
    > [!NOTE]   
    > **Edit instance-level information** includes the ability to perform these tasks for all projects defined in an organization or collection:  
    > - Modify organization **Overview** settings and **Extensions**
    > - Modify version control permissions and repository settings
    > - Edit [event subscriptions](#alerts) or alerts for global notifications, project-level, and team-level events 
-   > - Edit all project and team-level settings for projects defined in the collections   
+   > - Edit all project and team-level settings for projects defined in the collections
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -738,6 +731,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Service Account
    :::column-end:::
 :::row-end:::
@@ -772,6 +766,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Boards  
    :::column-end:::
 :::row-end:::
@@ -824,6 +819,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Repos  
    Applies only to Team Foundation version control (TFVC)
    :::column-end:::
@@ -857,6 +853,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Pipelines  
    :::column-end:::
 :::row-end:::
@@ -871,6 +868,7 @@ Manage organization-level permissions through the [web portal admin context](../
    - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)
    - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
    - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
+   
    > [!NOTE]   
    > In addition to this permission, Azure DevOps provides role-based permissions governing the [security of agent pools](../../pipelines/policies/permissions.md). Other, [object-level settings](#build-object-level) will override those set at the organization or project-level. 
    :::column-end:::
@@ -913,6 +911,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Test Plans
    :::column-end:::
 :::row-end:::
@@ -928,6 +927,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="4":::
    <a id="audit-streams-permissions"></a> 
+   
    #### Auditing
    :::column-end:::
 :::row-end:::
@@ -960,6 +960,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Policies  
    :::column-end:::
 :::row-end:::
@@ -1147,6 +1148,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, BYPASS_RULES`
    :::column-end:::
    :::column span="2":::
+   
    Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Useful scenarios are migrations where you don't want to update the by/date fields on import or when you want to skip the validation of a work item.  <br />
    Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypass rules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
    :::column-end:::
@@ -1157,6 +1159,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, CHANGE_PROCESS`
    :::column-end:::
    :::column span="2":::
+   
    When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. For more information, see [Create and manage inherited processes](../settings/work/manage-process.md).  
    :::column-end:::
 :::row-end:::
@@ -1166,11 +1169,9 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Tagging, Create`
    :::column-end:::
    :::column span="2":::
+   
    [Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). By default, all members of the Contributors group have this permission. Also, you can set more tagging permissions through security management tools. For more information, see [Security namespace and permission reference, Tagging](namespace-reference.md). 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
+
    > [!NOTE] 
    > All users granted Stakeholder access for a private project can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. For more information, see [Stakeholder access quick reference](stakeholder-access.md).  
   > Although the **Create tag definition**  permission appears
@@ -1181,6 +1182,7 @@ Manage project-level permissions through the [web portal admin context](change-p
   > you must provide the GUID for the project as part of the command syntax.
   > Otherwise, your change applies to the entire collection.
   > Keep this in mind when changing or setting these permissions.
+  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1190,6 +1192,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, WORK_ITEM_DELETE`
    :::column-end:::
    :::column span="2":::
+   
    Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
    :::column-end:::
 :::row-end:::
@@ -1199,6 +1202,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, WORK_ITEM_MOVE`
    :::column-end:::
    :::column span="2":::
+   
    Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection.
    :::column-end:::
 :::row-end:::
@@ -1208,11 +1212,13 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, WORK_ITEM_PERMANENTLY_DELETE`
    :::column-end:::
    :::column span="2":::
+   
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Analytics
    In addition to the `AnalyticsView` namespace permissions listed in this section, you can set [object-level permissions on each view](#analytics). 
    :::column-end:::
@@ -1223,6 +1229,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `AnalyticsViews, Delete`  
    :::column-end:::
    :::column span="2":::
+   
    Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md)
    under the Shared area. 
    :::column-end:::
@@ -1233,6 +1240,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `AnalyticsViews, Edit`
    :::column-end:::
    :::column span="2":::
+   
    Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md).   
    :::column-end:::
 :::row-end:::
@@ -1247,6 +1255,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    #### Test Plans 
    :::column-end:::
 :::row-end:::
@@ -1256,6 +1265,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
+   
    Can add and remove test results and add or modify test runs. For more information, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
    :::column-end:::
 :::row-end:::
@@ -2245,7 +2255,9 @@ Members of the Project Administrators group are automatically granted permission
    :::column span="2":::
    Can create area nodes.
    Users who have both this permission and the **Edit this node** permission
-   can move or reorder any child area nodes. Consider adding this permission to any manually added users or groups that might need to delete, add, or rename area nodes.
+   can move or reorder any child area nodes. 
+   
+   Consider adding this permission to any manually added users or groups that might need to delete, add, or rename area nodes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2258,8 +2270,8 @@ Members of the Project Administrators group are automatically granted permission
    Users who have both this permission and the **Edit this node** permission for another node
    can delete area nodes and reclassify existing work items from the deleted node. 
    If the deleted node has child nodes, those nodes are also deleted.
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to delete, add, or rename area nodes.
+   
+   Consider adding this permission to any manually added users or groups that might need to delete, add, or rename area nodes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2269,8 +2281,8 @@ Members of the Project Administrators group are automatically granted permission
    :::column-end:::
    :::column span="2":::
    Can set permissions for this node and rename area nodes. 
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to delete, add, or rename area nodes.
+   
+   Consider adding this permission to any manually added users or groups that might need to delete, add, or rename area nodes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2280,8 +2292,8 @@ Members of the Project Administrators group are automatically granted permission
    :::column-end:::
    :::column span="2":::
    Can edit work items in this area node.
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to edit work items under the area node.
+   
+   Consider adding this permission to any manually added users or groups that might need to edit work items under the area node.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2291,8 +2303,8 @@ Members of the Project Administrators group are automatically granted permission
    :::column-end:::
    :::column span="2":::
    Can modify test plan properties such as build and test settings.
-   > [!NOTE]   
-   > Consider adding this permission  to any manually added users or groups that might need to manage test plans or test suites under this area node.
+   
+   Consider adding this permission to any manually added users or groups that might need to manage test plans or test suites under this area node.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2305,8 +2317,8 @@ Members of the Project Administrators group are automatically granted permission
    add, and remove test cases from test suites,
    change test configurations associated with test suites,
    and modify suite hierarchy (move a test suite).
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to manage test plans or test suites under this area node.
+   
+   Consider adding this permission to any manually added users or groups that might need to manage test plans or test suites under this area node.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2362,8 +2374,8 @@ Members of the Project Administrators group are automatically granted these perm
    Can create iteration nodes.
    Users who have both this permission and the **Edit this node** permission
    can move or reorder any child iteration nodes.
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to delete, add, or rename iteration nodes.
+
+   Consider adding this permission to any manually added users or groups that might need to delete, add, or rename iteration nodes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2375,8 +2387,8 @@ Members of the Project Administrators group are automatically granted these perm
    Users who have both this permission and the **Edit this node** permission for another node
    can delete iteration nodes and reclassify existing work items from the deleted node.
    If the deleted node has child nodes, those nodes are also deleted.
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to delete, add, or rename iteration nodes.
+   
+   Consider adding this permission to any manually added users or groups that might need to delete, add, or rename iteration nodes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2386,8 +2398,8 @@ Members of the Project Administrators group are automatically granted these perm
    :::column-end:::
    :::column span="2":::
    Can set permissions for this node and rename iteration nodes.
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that might need to delete, add, or rename iteration nodes.
+   
+   Consider adding this permission to any manually added users or groups that might need to delete, add, or rename iteration nodes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2583,14 +2595,11 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    `Tagging, Create`  
    :::column-end:::
    :::column span="2":::
+   
    [Can create new tags and apply them to work items.](../../boards/queries/add-tags-to-work-items.md)
    Users without this permission can only select from the existing set of tags for the project.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-   > [!NOTE]   
-   > By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when you're using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change applies to the entire collection. Keep this in mind when changing or setting these permissions.
+
+   By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when you're using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change applies to the entire collection. Keep this in mind when changing or setting these permissions.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2600,12 +2609,8 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column-end:::
    :::column span="2":::
    Can remove a tag from the list of available tags for that project.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-   > [!NOTE]   
-   > This permission doesn't appear in the UI. It can only be set by using a command-line tool. There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, the system automatically deletes it.
+   
+   This permission doesn't appear in the UI. You can only set it by using a command-line tool. There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, the system automatically deletes it.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2617,13 +2622,8 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    Can view a list of tags available for the work item within the project.
    Users without this permission don't have a list of available tags
    from which to choose in the work item form or in the query editor.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-   > [!NOTE]   
-   > This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
-   > The **View project-level information** implicitly allows users to view existing tags.
+ 
+   This permission doesn't appear in the UI. It can only be set by using a command-line tool. The **View project-level information** implicitly allows users to view existing tags.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2633,8 +2633,8 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column-end:::
    :::column span="2":::
    Can rename a tag by using the REST API.
-   > [!NOTE]
-   > This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
+   
+   This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
    :::column-end:::
 :::row-end:::
 
@@ -2648,7 +2648,7 @@ Manage permissions [for each release defined in the web portal](../../pipelines/
 :::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Screenshot showing Releases object-level permissions.":::
 
 > [!NOTE]   
-> The project-level Release Administrator's group is created at the same time the first release pipeline is defined. 
+> The project-level Release Administrator's group gets created when you define your first release pipeline. 
 
 In addition, you can assign approvers to specific steps within a release pipeline to ensure that the applications being deployed meet quality standards.
 
@@ -2818,6 +2818,7 @@ The following permissions are defined in Release Management. The scope column ex
    Project, Release pipeline 
    :::column-end:::
 :::row-end:::
+
 
 Default values for all of these permissions are set for team project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
