@@ -201,7 +201,7 @@ To delegate tasks to other members within your organization, consider creating a
    - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
    - [Manage Git branch permissions](../../repos/git/branch-permissions.md)
    - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Administer build and release permissions](../../pipelines/policies/pipeline-permissions.md)
+   - [Administer build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).
 
    :::column-end:::
@@ -281,7 +281,7 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
    :::column span="1":::
    Edit build pipeline, View build pipeline  
    Edit release pipeline, View release pipeline  
-   You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/pipeline-permissions.md).
+   You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions).
    :::column-end:::
 :::row-end:::
 :::row:::

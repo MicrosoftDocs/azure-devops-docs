@@ -339,7 +339,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set dashboard permissions](../security/../../report/dashboards/dashboard-permissions.md)
       - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
       - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
-      - [Set build and release permissions](../../pipelines/policies/pipeline-permissions.md)
+      - [Set build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions)
    :::column-end:::
    :::column span="2":::
       Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).

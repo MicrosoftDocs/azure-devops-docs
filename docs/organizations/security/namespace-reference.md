@@ -251,7 +251,7 @@ The following table describes the namespaces that manage object-level permission
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/task-group-permissions.md). 
+      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#task-group-permissions). 
       <br/><br/>
       **Token format for project-level permissions**: `PROJECT_ID`
       <br/>
