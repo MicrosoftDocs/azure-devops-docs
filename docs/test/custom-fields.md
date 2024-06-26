@@ -1,6 +1,6 @@
 ---
 title: Custom fields for test runs and test results
-description: Store additional attrobutes again the test runs an test results
+description: Store custom data against the test runs an test results
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
@@ -23,9 +23,9 @@ Project administrator can [manage (add/delete) the set of the custom fields](#ma
 
 ## Managing the custom fields
 
-There are two ways to manage the custom fields. This can be done either via [REST API](/rest/api/azure/devops/testresults/extensionfields)
+There are two ways to manage the custom fields - either via [REST API](/rest/api/azure/devops/testresults/extensionfields)
 or project administrator can do that through the “Project settings” while choosing “Test management” under “Pipelines”.
-On that page (see below) new custom field can be added by clicking on the “+ Add new” button.
+On that page new custom field can be added by clicking on the “+ Add new” button.
 :::image type="content" source="./media/custom-fields/test-management-settings.png" alt-text="Screenshot of project settings with the test managment settings selected and the button to add new custome field marked by red rectangle.":::
 
 Each custom field must have a name, type configured and indicate what type of the artifact it applies to. The UI allowing to set these (after clicking on the “+ Add new” button) is below.
