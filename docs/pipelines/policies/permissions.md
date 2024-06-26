@@ -9,7 +9,7 @@ ms.date: 06/25/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Manage security Azure Pipelines
+# Manage security in Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -21,14 +21,14 @@ Administrators typically have unrestricted access, contributors oversee resource
 
 |Security area|Prerequisites |
 |---------|---------|
-|[Pipelines security](#set-pipeline-permissions-in-azure-pipelines)  | - To manage project collection groups, you must be a member of the **Project Collection Administrators** group.</b>- To manage project level users and groups, you must be a member of an administrator group or be allowed *Administer build permissions*.        |
-| [Agent pool security](#set-agent-pool-security-in-azure-pipelines) | - To manage agent pool security at the organization, collection, or project level, you must be a member of the **Project Collection Administrators** group or have the **Administrator** role for agent pools.</b>- To manage agent pool security at the object level, you must have the **Administrator** role for the agent pool.                |
-|[Deployment group security](#set-deployment-group-security-in-azure-pipelines)    | - To manage project-level deployment group security, you must be a member of an administrator group or be assigned an administrator role.</b>- To manage security for individual deployment groups, you must be assigned an administrator role.          |
-|[Environment security](#set-security-for-environments-in-azure-pipelines)   | - To manage project-level environment security, you must be a member of an administrator group or be assigned an administrator role.</b>- To manage object-level security for individual environments, you must be assigned an administrator role.          |
-|[Library security](#set-library-security-in-azure-pipelines)   | - To manage library security, you must be a member of an administrator group or be assigned an administrator role.</b>- To manage security for individual library assets, you must be an an administrator or have the appropriate role.        |
-|[Release pipeline security](#set-release-pipeline-permissions-in-azure-pipelines)   | - To manage release pipeline security, you must be a member of an administrator group or be allowed *Administer release permissions*.</b> - A release pipeline must be created.        |
-|[Service connection security](#set-service-connection-security-in-azure-pipelines)    | - To manage service connection security, you must be a member of the **Project Administrators** group or have an administrator role. - To manage security at the project level, you must be a member of the **Project Administrators** group or have the **Administrator** role for service connections.</b> - To manage security at the object level, you must have the **Administrator** role for the service connection.       |
-|[Task group security](#set-task-group-permissions-in-azure-pipelines)    |  To manage task group security, you must be a member of an administrator group or be allowed *Administer task group permissions*.</b>- A task group must exist.        |
+|[Pipelines security](#set-pipeline-permissions-in-azure-pipelines)  | - To manage project collection groups, you must be a member of the **Project Collection Administrators** group.<br>- To manage project level users and groups, you must be a member of an administrator group or be allowed *Administer build permissions*.        |
+| [Agent pool security](#set-agent-pool-security-in-azure-pipelines) | - To manage agent pool security at the organization, collection, or project level, you must be a member of the **Project Collection Administrators** group or have the **Administrator** role for agent pools.<br>- To manage agent pool security at the object level, you must have the **Administrator** role for the agent pool.                |
+|[Deployment group security](#set-deployment-group-security-in-azure-pipelines)    | - To manage project-level deployment group security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual deployment groups, you must be assigned an administrator role.          |
+|[Environment security](#set-security-for-environments-in-azure-pipelines)   | - To manage project-level environment security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage object-level security for individual environments, you must be assigned an administrator role.          |
+|[Library security](#set-library-security-in-azure-pipelines)   | - To manage library security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual library assets, you must be an an administrator or have the appropriate role.        |
+|[Release pipeline security](#set-release-pipeline-permissions-in-azure-pipelines)   | - To manage release pipeline security, you must be a member of an administrator group or be allowed *Administer release permissions*.<br> - A release pipeline must be created.        |
+|[Service connection security](#set-service-connection-security-in-azure-pipelines)    | - To manage service connection security, you must be a member of the **Project Administrators** group or have an administrator role. - To manage security at the project level, you must be a member of the **Project Administrators** group or have the **Administrator** role for service connections.<br> - To manage security at the object level, you must have the **Administrator** role for the service connection.       |
+|[Task group security](#set-task-group-permissions-in-azure-pipelines)    |  To manage task group security, you must be a member of an administrator group or be allowed *Administer task group permissions*.<br>- A task group must exist.        |
 
 <a id="pipeline-permissions">  </a>
 
@@ -131,11 +131,17 @@ To manage project-level permissions for users and groups across all build pipeli
 1. From your project, select **Builds**.
 2. Select the folders icon and select the **All build pipelines** folder.
 3. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: > **Security**.
+    
     :::image type="content" source="media/all-pipelines-security-selection-2019.png" alt-text="Screenshot showing all pipelines security selections.":::
+
 4. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
+    
     :::image type="content" source="media/pipeline-security-add-user-2019.png" alt-text="Screenshot of pipeline security add user or group selection.":::
+
 5. Select a user or group and set the permissions.
+    
     :::image type="content" source="media/individual-pipeline-permissions-dialog-2019.png" alt-text="Screenshot of pipeline security dialog.":::
+
 6. Select **Save changes** or **Undo changes**, if necessary.
 7. Repeat the previous step to change the permissions for more groups and users.
 8. To remove a user or group from the list, select the user or group, and then **Remove**.
@@ -154,11 +160,17 @@ You can set the permissions to **Allow**, **Deny**, or to **Not set** if the per
 To manage permissions for a pipeline, do the following steps:
 
 1. From your project, select **Pipelines** .
+   
    :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selection.":::
+
 2. Select a pipeline, then select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**. 
+   
    :::image type="content" source="media/individual-pipeline-more-actions-menu.png" alt-text="Screenshot showing selected security option from a pipeline's more actions menu.":::
+
 3. Select a user or group and set the permissions.
+    
     :::image type="content" source="media/individual-pipeline-security-dialog.png" alt-text="Screenshot of object-level pipeline security dialog.":::
+
 4. Repeat the previous step to change the permissions for more groups and users.
 5. When you're finished, close the dialog to save your changes.
 
@@ -178,7 +190,9 @@ Inherited users and groups can't be removed unless inheritance is disabled. To r
 
 1. Select the user or group.
 2. Select **Remove and clear explicit permissions**.
+    
     :::image type="content" source="media\delete-user-in-security-dialog.png" alt-text="Screenshot of remove user or group selection.":::
+
 3. When you're done, close the dialog to save your changes.
 
 ::: moniker-end 
@@ -192,9 +206,13 @@ You can set the permissions to **Allow**, **Deny**, or to **Not set** if the per
 To set permissions for an individual pipeline, do the following steps:
 
 1. From your project, select **Pipelines** .
+   
    :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines ordered menu selections.":::
+
 2. Select a pipeline, then select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**. 
+    
     :::image type="content" source="media/individual-pipeline-more-actions-menu.png" alt-text="Screenshot showing selected Manage security option from a pipeline's more actions menu.":::
+
 3. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
 4. Select users and groups and set the permissions.
 5. Select **Save changes** or **Undo changes*, if necessary.
@@ -275,9 +293,13 @@ Do the following steps to set project-level security roles for all deployment gr
 
 1. From your project, select **Deployment groups** under **Pipelines**.
 1. Select **Security**.
+    
     :::image type="content" source="media/deployment-group-security-selection.png" alt-text="Screenshot of security selection for all deployment groups.":::
+
 1. Set roles for users and groups.
+    
     :::image type="content" source="media/deployment-group-project-level-security-dialog.png" alt-text="Screenshot of security dialog for all deployment groups.":::
+
 1. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::.
 1. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
 
@@ -295,9 +317,13 @@ Do the following steps to set security roles for an individual deployment group:
 1. From your project, select **Deployment groups** under **Pipelines**.
 2. Select a deployment group under **Groups**.
 3. Select **Security**.
+    
     :::image type="content" source="media/deployment-group-single-group-security-selection.png" alt-text="Screenshot of security selection for an individual deployment group.":::
+
 4. Set roles for users and groups. To lower the privilege level of an inherited role, disable inheritance.
+    
     :::image type="content" source="media/deployment-groups-single-group-security-dialog.png" alt-text="Screenshot of object-level deployment group security dialog.":::
+
 5. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. Inherited users and groups can't be removed unless inheritance is disabled.
 6. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
 
@@ -436,11 +462,17 @@ For individual library assets, the creator is automatically assigned the *Admini
 To manage access for all library assets, such as [variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), do the following steps:
 
 1. From your project, select **Pipelines** > **Library**.
+   
    :::image type="content" source="media/pipeline-library-permissions.png" alt-text="Screenshot of the Library menu item.":::
+
 2. Select **Security**.
+   
    :::image type="content" source="media/pipelines-security-library.png" alt-text="Screenshot of the library Security button.":::
+
 3. Select a user or group and change the role to **Reader**, **User**, **Creator**, or **Administrator**.
+   
    :::image type="content" source="media/library-project-level-permissions-dialog.png" alt-text="Screenshot of the library security dialog.":::
+
 4. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 5. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
 
