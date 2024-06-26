@@ -43,7 +43,9 @@ Type can be one of the following:
 -	Guid
 The existing custom fields can either be edited (only name can be changed) or removed. 
 
-NOTE: After removing the custom field, you cannot use its name for about a day. The background process that is removing the deleted custom fields permanently is run ones a day.
+> [!NOTE]
+> After removing the custom field, you cannot use its name for about a day.
+> The background process that is removing the deleted custom fields permanently is run ones a day.
 
 <a name="store-custom-data"></a>
 
