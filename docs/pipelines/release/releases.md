@@ -50,15 +50,15 @@ Releases can be created in several ways:
 
 ## Q&A
 
-Q: Why my deployment did not get triggered?
+#### Q: Why wasn't my deployment triggered?
 
-A: Creating a release pipeline does not necessarily mean that it will automatically/immediately start a deployment. Below are few reasons why this might happen:
+A: Creating a release pipeline doesn't automatically start a deployment. Here are a few reasons why this might happen:
 
-- Defined [deployment triggers](triggers.md) forcing the deployment to pause.This can happen with scheduled triggers or when a delay is imposed until deployment to another stage is complete.   
+- [Deployment Triggers](triggers.md): defined deployment triggers may cause the deployment to pause. This can occur with scheduled triggers or when there's a delay until deployment to another stage is complete.
 
-- Defined [queuing policies](../process/stages.md#queuing-policies) dictating the order of execution and when releases are queued for deployment.
+- [Queuing Policies](../process/stages.md#queuing-policies): these policies dictate the order of execution and when releases are queued for deployment.
 
-- [Pre-deployment approvals or gates](approvals/index.md) for a specific stage preventing deployment until all the defined conditions are met.
+- [Pre-Deployment Approvals or Gates](approvals/index.md): specific stages may require pre-deployment approvals or gates, preventing deployment until all defined conditions are met.
 
 ## Related articles
 
