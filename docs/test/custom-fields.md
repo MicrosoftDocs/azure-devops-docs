@@ -63,7 +63,7 @@ the custom data in the custom fields and the call [REST API Runs - Update](/rest
 and [REST API Results - Update](/rest/api/azure/devops/test/results/update) for the test result.
 
 To retrieve the custom data from the custom fields stored previously against the test run and/or result, you must first find the identification of the test run or result.
-Then you can call [REST API Runs - Quesry](/rest/api/azure/devops/test/runs/query) for the test run
+Then you can call [REST API Runs - Query](/rest/api/azure/devops/test/runs/query) for the test run
 and [REST API Results - Get](/rest/api/azure/devops/test/results/get) for the test result.
 
 The custom data for the custom fields are sent or received in an array.
