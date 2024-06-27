@@ -152,7 +152,7 @@ In Azure Repos, to merge into the original repo the changes that you pushed to y
    For more information about how to create a PR using your browser, Visual Studio, or the Azure DevOps CLI, see [Create a PR](pull-requests.md#create-a-pull-request).
 
    >[!IMPORTANT]
-   >Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission on the upstream repo can open a PR to it. If the upstream repo has a PR build [pipeline](../../pipelines/repos/azure-repos-git.md) that's configured to run on PR creation, a build will run on the changes introduced by your PR.
+   >Anyone in Project Valid Users and with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission on the upstream repo can open a PR to it. If the upstream repo has a PR build [pipeline](../../pipelines/repos/azure-repos-git.md) that's configured to run on PR creation, a build will run on the changes introduced by your PR.
 
 1. For your PR to complete, all required reviewers must approve the PR changes and all target branch policies must be met. On PR approval and [completion](complete-pull-requests.md#complete-a-pull-request), the changes in the PR source branch will merge into the PR target branch.
 
