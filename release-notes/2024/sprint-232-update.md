@@ -15,17 +15,17 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-232-update-links](includes/general/sprint-232-update-links.md)]
 
-### Reporting
+### Azure Test Plans
 
-[!INCLUDE [sprint-232-update-links](includes/reporting/sprint-232-update-links.md)]
+[!INCLUDE [sprint-232-update-links](includes/testplans/sprint-232-update-links.md)]
 
 ## General
 
 [!INCLUDE [sprint-232-update](includes/general/sprint-232-update.md)]
 
-## Reporting
+## Azure Test Plans
 
-[!INCLUDE [sprint-232-update](includes/reporting/sprint-232-update.md)]
+[!INCLUDE [sprint-232-update](includes/testplans/sprint-232-update.md)]
 
 
 ## Next steps
