@@ -5,7 +5,7 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 09/06/2023
+ms.date: 06/27/2024
 monikerRange: '>= azure-devops'
 "recommendations": "true"
 ---
@@ -53,7 +53,7 @@ You might need to manually create a managed identity that uses federated credent
 
     |Field  |Description  |
     |---------|---------|
-    |Issuer     |  Enter `https://app.vstoken.visualstudio.com/<unique-identifier>`.      |
+    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the GUID of your Azure DevOps organization.      |
     |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. The service connection doesn't need to be already created.      |
 
 1. Select **Save**.
@@ -145,7 +145,7 @@ You might need to manually create a service principal that has federated credent
 
     |Field  |Description  |
     |---------|---------|
-    |Issuer     |  Enter `https://app.vstoken.visualstudio.com/<unique-identifier>`.      |
+    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. You'll replace the `unique-identifier` value with the GUID of your Azure DevOps organization later. If you already know your Azure DevOps GUID value, you can enter it now.  |
     |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. Your service connection doesn't need to already be created.      |
 
 1. Select **Save**.
