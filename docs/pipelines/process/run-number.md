@@ -1,5 +1,5 @@
 ---
-title: Run or build numbers
+title: Run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
@@ -7,7 +7,7 @@ ms.date: 06/27/2024
 monikerRange: "<=azure-devops"
 ---
 
-# Run or build numbers
+# Run and build numbers
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
