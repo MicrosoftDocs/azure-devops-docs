@@ -8,9 +8,9 @@ monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Access private key vaults from your pipeline
+# Access a private key vault from your pipeline
 
-Azure key vaults offer a robust solution for managing credentials such as keys, secrets, and certificates with seamless security. Using Azure Pipelines, you can streamline the process of accessing and using key vaults, making it effortless to store and retrieve credentials.
+Azure Key Vault offers a secure solution for managing credentials such as keys, secrets, and certificates with seamless security. Using Azure Pipelines, you can streamline the process of accessing and using key vaults, making it effortless to store and retrieve credentials.
 
 In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications.
 
@@ -22,11 +22,11 @@ This article will walk you through configuring your inbound access points to acc
 
 - An Azure subscription. [Create a free Azure account](https://azure.microsoft.com/free) if you don't have one already.
 
-- An Azure key vault. [Create a new Azure key vault](/azure/key-vault/general/quick-create-portal) if you haven't already.
+- An Azure Key Vault. [Create a new Azure Key Vault](/azure/key-vault/general/quick-create-portal) if you haven't already.
 
-## Access private key vaults
+## Access a private key vault
 
-Azure Pipelines enables developers to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
+Azure Pipelines enables developers to link an Azure Key Vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
 
 I. From Azure DevOps, during the variable group configuration time.
 
@@ -36,7 +36,7 @@ II. From a Self-hosted agent, during the pipeline job runtime.
 
 ## Create a service principal
 
-Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure key vault from Azure Pipelines.
+Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure Key Vault from Azure Pipelines.
 
 1. Navigate to [Azure portal](https://ms.portal.azure.com/).
 
@@ -87,9 +87,11 @@ Let's start by creating a new service principal, this will enable us to access A
 > [!TIP]
 > If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
 
-### [Access from Azure DevOps](#tab/devops/)
+::: zone pivot="Access from Azure Devops"
 
-In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure key vault from a Variable Group. Therefore, by adding inbound connections to the Azure key vault firewall, we can successfully connect to our Azure key vault.
+## I. Access a private key vault from Azure Devops
+
+In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure Key Vault from a Variable Group. Therefore, by adding inbound connections to the Azure Key Vault firewall, we can successfully connect to our Azure Key Vault.
 
 For our second approach, we'll demonstrate dynamically adding the Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion. This second approach is for demonstration purposes and is not the recommended approach by Azure Pipelines.
 
@@ -99,15 +101,15 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 1. Select **Pipelines** > **Library**, and then select **+ Variable group**
 
-1. Name your variable group, and then select the toggle button to enable the **Link secrets from an Azure key vault as variable** button.
+1. Name your variable group, and then select the toggle button to enable the **Link secrets from an Azure Key Vault as variable** button.
 
 1. Select your Azure service connection you created earlier from the dropdown menu, and then select your key vault.
 
-    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot showing how to link a variable group to an Azure key vault with an error indicating missing get and list permissions."::: 
+    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot showing how to link a variable group to an Azure Key Vault with an error indicating missing get and list permissions."::: 
 
 1. If you encounter the error message: *Specified Azure service connection needs to have "Get, List" secret management permissions on the selected key vault.* as shown above. Navigate to your key vault in Azure portal, select **Access control (IAM)** > **Add role assignment** > **key vault secrets user** > **Next**, then add your service principal, then select **Review + assign** when you're done.
 
-    :::image type="content" source="media/add-role-assignment-secret-user-service-principal.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure key vault."::: 
+    :::image type="content" source="media/add-role-assignment-secret-user-service-principal.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure Key Vault."::: 
 
 1. Add your secrets and then select **Save** when you're done.
 
@@ -127,9 +129,9 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
-## 1.3. Query private key vaults with a variable group
+## 1.3. Query a private key vault with a variable group
 
-In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure key vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure key vault from a Variable Group, so make sure you have [configured inbound access](#12-configure-inbound-access-from-azure-devops) for this to work properly:
+In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure Key Vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure Key Vault from a Variable Group, so make sure you have [configured inbound access](#12-configure-inbound-access-from-azure-devops) for this to work properly:
 
 ```yml
 variables:
@@ -193,7 +195,11 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
 > [!IMPORTANT]
 > Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
-### [Access from a self-hosted agent](#tab/selfhostedagent/)
+::: zone-end
+
+::: zone pivot="Access from a self-hosted agent"
+
+## II. Access a private key vault from a self-hosted agent
 
 To have the ability to access a private key vault from an Azure Pipelines agent, you'll need to use either a Self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [Mac](../agents/osx-agent.md)) or [Scale Set agents](../agents/scale-set-agents.md). This is because Microsoft Hosted agents, like other generic compute services, are not included in the key vault's list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
 
@@ -203,21 +209,21 @@ To establish connectivity with your private key vault, you must provide a [line 
 
 1. Follow the provided instruction to [Create a virtual network](/azure/virtual-network/quick-create-portal).
 
-1. In [Azure portal](https://portal.azure.com/), use the search bar at the top of the page to find your Azure key vault.
+1. In [Azure portal](https://portal.azure.com/), use the search bar at the top of the page to find your Azure Key Vault.
 
 1. Once you've located your key vault in the search results, select it, and then navigate to **Settings** > **Networking**.
 
 1. Select **Private endpoint connections**, and then select **Create** to create a new private endpoint.
 
-    :::image type="content" source="media/key-vault-private-endpoint.png" alt-text="A screenshot showing how to create a new private endpoint connection for an Azure key vault.":::   
+    :::image type="content" source="media/key-vault-private-endpoint.png" alt-text="A screenshot showing how to create a new private endpoint connection for an Azure Key Vault.":::   
 
 1. Select the **Resource Group** that hosts the virtual network that you created earlier. Provide a **Name** and a **Network Interface Name** for your instance, and make sure that you select the same **Region** as the virtual network you created earlier. Select **Next** when you're done.
 
-    :::image type="content" source="media/key-vault-new-private-endpoint.png" alt-text="A screenshot showing how to configure the basics tab when creating a new private endpoint instance for your Azure key vault.":::   
+    :::image type="content" source="media/key-vault-new-private-endpoint.png" alt-text="A screenshot showing how to configure the basics tab when creating a new private endpoint instance for your Azure Key Vault.":::   
 
 1. Select **Connect to an Azure resource in my directory** for the **Connection method**, and then choose **Microsoft.KeyVault/vaults** from the dropdown menu for the **Resource type**. Select your **Resource** from the dropdown menu. The **Target sub-resource** will be auto-populated with the value: *vault*. Select **Next** when you're done. 
 
-    :::image type="content" source="media/key-vault-private-endpoint-resource.png" alt-text="A screenshot showing how to configure the resource tab when creating a new private endpoint instance for your Azure key vault.":::  
+    :::image type="content" source="media/key-vault-private-endpoint-resource.png" alt-text="A screenshot showing how to configure the resource tab when creating a new private endpoint instance for your Azure Key Vault.":::  
 
 1. Under the **Virtual Network** tab, select the **Virtual network** and **Subnet** that you created earlier and leave the rest of the fields as default. Select **Next** when you're done.
 
@@ -229,7 +235,7 @@ To establish connectivity with your private key vault, you must provide a [line 
 
 ## 2. Allow your virtual network
 
-1. Navigate to [Azure portal](https://portal.azure.com/), and then find your Azure key vault.
+1. Navigate to [Azure portal](https://portal.azure.com/), and then find your Azure Key Vault.
  
 1. Select **Settings** > **Networking**, and make sure you're under the **Firewalls and virtual networks** tab.
 
@@ -239,9 +245,9 @@ To establish connectivity with your private key vault, you must provide a [line 
 
 1. Select **Add** when you're done, and then scroll to the bottom of the page and select **Apply** to save your changes.
 
-    :::image type="content" source="media/add-new-virtual-network-key-vault-firewall.png" alt-text="A screenshot showing how to add an existing virtual network to Azure key vault firewall.":::  
+    :::image type="content" source="media/add-new-virtual-network-key-vault-firewall.png" alt-text="A screenshot showing how to add an existing virtual network to Azure Key Vault firewall.":::  
 
-## 3. Query private key vaults from a self-hosted Agent
+## 3. Query a private key vault from a self-hosted Agent
 
 The following example uses an agent set up on the virtual network's VM to query the private key vault through the variable group:
 
@@ -296,7 +302,7 @@ steps:
     publishLocation: 'Container'
 ```
 
-* * *
+::: zone-end
 
 ## Troubleshoot
 
