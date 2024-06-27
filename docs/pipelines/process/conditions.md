@@ -3,7 +3,7 @@ title: Pipeline conditions
 description: Learn about how to specify the conditions under which each Azure Pipelines stage, job, or step runs.
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 06/20/2024
+ms.date: 06/27/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -11,9 +11,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes the conditions under which an Azure Pipelines stage, job, or step runs, and how to specify different conditions.
+This article describes the conditions under which an Azure Pipelines stage, job, or step runs, and how to specify different conditions. For more context on stages, jobs, and steps, see [Key concepts for Azure Pipelines](../get-started/key-pipelines-concepts.md).
 
-- By default, a job or stage runs if it doesn't depend on any other job or stage, or if all its dependencies completed and succeeded. This requirement applies not only to direct dependencies, but to their dependencies, computed recursively.
+- By default, a job or stage runs if it doesn't depend on any other job or stage, or if all its dependencies completed and succeeded. This requirement applies not only to direct dependencies, but to their indirect dependencies, computed recursively.
 
 - By default, a step runs if nothing in its job failed yet and the step immediately preceding it completed.
 
