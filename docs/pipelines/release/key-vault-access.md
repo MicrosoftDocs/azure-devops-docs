@@ -87,7 +87,7 @@ Let's start by creating a new service principal, this will enable us to access A
 > [!TIP]
 > If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
 
-::: zone pivot="Access from Azure Devops"
+::: zone pivot="access-from-azure-devops"
 
 ## I. Access a private key vault from Azure Devops
 
@@ -197,7 +197,7 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
 
 ::: zone-end
 
-::: zone pivot="Access from a self-hosted agent"
+::: zone pivot="access-from-self-hosted-agent"
 
 ## II. Access a private key vault from a self-hosted agent
 
