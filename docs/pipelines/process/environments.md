@@ -11,7 +11,9 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-An Azure DevOps environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. An environment represents a logical target where your pipeline deploys software. Typical environment names are Dev, Test, QA, Staging, and Production.
+This article explains how to create and target Azure Pipelines environments. An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline.
+
+An environment represents a logical target where your pipeline deploys software. Typical environment names are Dev, Test, QA, Staging, and Production.
 
 >[!NOTE]
 >Azure DevOps environments aren't available in Classic pipelines. For Classic pipelines, [deployment groups](../release/deployment-groups/index.md) offer similar functionality.
@@ -19,8 +21,11 @@ An Azure DevOps environment is a collection of [resources](about-resources.md) t
 Environments provide the following benefits.
 
 - **Deployment history**. Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, you can use [deployment history](#deployment-history) of an environment to identify the source of changes.
+
 - **Traceability of commits and work items**. You can view jobs within the pipeline run that target an environment. You can also view the [commits and work items](#deployment-history) that were newly deployed to the environment. Traceability also lets you track whether a code change commit or feature/bug-fix work item reached an environment.
+
 - **Diagnostic resource health**. You can validate whether the application is functioning at its desired state.
+
 - **Security**. You can secure environments by specifying which users and pipelines are allowed to target an environment.
 
 An environment is a grouping of resources where the resources themselves represent actual deployment targets. Azure Pipelines environments currently support the [Kubernetes](environments-kubernetes.md) and [virtual machine](environments-virtual-machines.md) resource types.
@@ -28,6 +33,7 @@ An environment is a grouping of resources where the resources themselves represe
 If a YAML pipeline refers to an environment that doesn't exist:
 
 - When the user performing the operation is known and permissions can be assigned, Azure Pipelines automatically creates the environment.
+
 - When Azure Pipelines doesn't have information about the user performing the operation, for example in a YAML update from an external code editor, the pipeline fails.
 
 ## Prerequisites
@@ -60,7 +66,7 @@ You can use Azure Pipelines to deploy to environments. For more information, see
 <a name="target-from-deployment-job"></a>
 ## Target an environment from a deployment job
 
-A [deployment job](deployment-jobs.md) is a collection of steps to run sequentially. You can use a deployment job to target an entire environment group of resources, as shown in the following example YAML snippet. The pipeline runs on the `myVM` machine because that resource name is specified.
+A [deployment job](deployment-jobs.md) is a collection of steps that run sequentially. You can use a deployment job to target an entire environment group of resources, as shown in the following example YAML snippet. The pipeline runs on the `myVM` machine because that resource name is specified.
 
 ```YAML
 - stage: deploy
@@ -84,7 +90,9 @@ A [deployment job](deployment-jobs.md) is a collection of steps to run sequentia
 <a name="target-resource-from-deployment-job"></a>
 ## Target a specific environment resource from a deployment job
 
-You can scope the deployment target to a particular resource within the environment, so you can record deployment history on the specific resource. The steps of the deployment job automatically inherit the service connection details from the resource the deployment job targets. In the following example, the value for the `kubernetesServiceConnection` input automatically passes down to the task from the `environment.resource` input.
+You can scope the deployment target to a particular resource within the environment, so you can record deployment history on the specific resource. The steps of the deployment job automatically inherit the service connection details from the resource the deployment job targets.
+
+In the following example, the value for the `kubernetesServiceConnection` input automatically passes down to the task from the `environment.resource` input.
 
 
 ```YAML
@@ -108,12 +116,14 @@ strategy:
 
 To control deployments to production environments, you can manually control when a stage should run by using approval checks. Checks are available to resource owners to control when a stage in a pipeline consumes the resource.
 
-Azure Pipelines supports manual approval checks on environments. As the owner of the environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts. The **Creator**, **Administrator**, and **User** roles, but not the **Reader** role, can manage approvals and checks. For more information, see [Define approvals and checks](approvals.md).
+Azure Pipelines supports manual approval checks on environments. As the owner of the environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts.
+
+The **Creator**, **Administrator**, and **User** roles, but not the **Reader** role, can manage approvals and checks. For more information, see [Define approvals and checks](approvals.md).
 
 <a name="in-run-details"></a>
 ## See environments in run details
 
-You can see all environments that were targeted by deployment jobs of a pipeline run under the **Environments** tab of the pipeline run details.
+Under the **Environments** tab of the pipeline run details, you can see all environments that were targeted by deployment jobs of a pipeline run.
 
 ![Screenshot that shows Environments in run details.](media/environments-run.png)
   
@@ -125,11 +135,11 @@ You can see all environments that were targeted by deployment jobs of a pipeline
 
 You can select the **Deployments** tab in **Environments** to view deployment history.
 
-- View jobs from all pipelines that target a specific environment. For example, two microservices, each having its own pipeline, deploy to the same environment. The deployment history list helps identify all pipelines that affect this environment, and also helps visualize the sequence of deployments by each pipeline.
+- View jobs from all pipelines that target a specific environment. For example, two microservices that each have their own pipeline can deploy to the same environment. The deployment history helps identify all pipelines that affect this environment, and also helps visualize the sequence of deployments by each pipeline.
 
   ![Screenshot that shows deployment history listing.](media/environments-deployment-history.png)
 
-- Select the tabs on a deployment page to drill down into the job details. To see the list of commits and work items that deployed to the environment, select the **Changes** and **Work items** tabs. The lists of commits and work items represent the new items between deployments.
+- To drill down into the job details, select the tabs on a deployment page. The **Changes** and **Work items** tabs show the list of commits and work items that deployed to the environment. The lists of commits and work items represent the new items between deployments.
 
   On the **Changes** tab, the first listing includes all the commits, and the following listings just include changes. If multiple commits are tied to the same pull request, there are multiple results on the **Changes** tab.
 
@@ -145,16 +155,16 @@ You can secure your environments with user permissions and pipeline permissions.
 
 ### User permissions
 
-You can control who can create, view, use, and manage your environments with user permissions. There are four roles: **Creator** with a scope of all environments, **Reader**, **User**, and **Administrator**.
+User permissions control who can create, view, use, and manage environments. There are four roles: **Creator** with a scope of all environments, **Reader**, **User**, and **Administrator**.
 
-To use the environment's **User permissions** panel to add a user:
+To use an environment's **User permissions** panel to add a user:
 
 1. Go to the specific **Environment** that you want to authorize.
 1. Select the **More actions** icon and then select **Security**.
 1. In the **User permissions** pane of the **Security** page, select **Add**.
 1. On the **Add user** screen, select a **User or group** and suitable **Role**, and select **Add**.
 
-In the **User permissions** panel, you can also set the permissions that are inherited and override the roles for your environment.
+In the **User permissions** panel, you can also set the permissions that are inherited, and override the roles for your environment.
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
@@ -163,13 +173,14 @@ In the **User permissions** panel, you can also set the permissions that are inh
 Use the **Pipeline permissions** panel of the **Security** page to authorize all or selected pipelines for deployment to the environment.
 
 - To remove open access on the environment or resource, select **Restrict permission** in **Pipeline permissions**.
+
 - When permissions are restricted, you can allow specific pipelines to deploy to the environment or specific resource. Select **+** and choose from the list of pipelines to allow.
 
 ## FAQ
 
 ### Why do I get an error message when I try to create an environment?
 
-If you see the message **Access denied: {User} needs Create permissions to do the action**, go to **Organization Settings** > **Users** and check if you have the **Stakeholder** role. The **Stakeholder** role can't create environments because stakeholders don't have access to the repository.
+If you see the message **Access denied: {User} needs Create permissions to do the action**, go to **Organization Settings** > **Users** to check if you have the **Stakeholder** role. The **Stakeholder** role can't create environments because stakeholders don't have access to the repository.
 
 Change your access level and then check to see if you can create environments. For more information, see [User and permissions management FAQ](../../organizations/accounts/faq-user-and-permissions-management.yml).
 
@@ -177,13 +188,13 @@ Change your access level and then check to see if you can create environments. F
 
 There are several the possible reasons for the failure.
 
-- You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create an environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). [Runtime parameters](runtime-parameters.md) don't work when creating environments, because the parameters are expanded at run time.
+- [Runtime parameters](runtime-parameters.md) don't work when creating environments, because the parameters are expanded only at run time. You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create an environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). 
 
 - If Azure Pipelines doesn't have information about the user creating the environment, the pipeline fails.
 
   When you refer to an environment that doesn't exist in a YAML pipeline file, Azure Pipelines automatically creates the environment in the following cases:
 
-  - You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
+  - You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that isn't created yet.
   - You update the YAML file by using the Azure Pipelines web editor and save the pipeline after adding the reference to an environment that doesn't exist.
 
   In the following flows, Azure Pipelines doesn't have information about the user creating the environment, so the pipeline fails.

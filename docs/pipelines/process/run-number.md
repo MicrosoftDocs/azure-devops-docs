@@ -23,6 +23,8 @@ If your build number is `MyBuild_20230621.1`, the next build number that day is 
 
 If your build number format is `1.0.$(Rev:r)`, the build number resets to `1.0.1` when you change part of the number. For example, if your last build number was `1.0.3`, and you change the build number to `1.1.$(Rev:r)` to indicate a version change, the next build number is `1.1.1`.
 
+If you don't specify a build name in YAML, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
+
 ::: moniker range=">=azure-devops-2020"
 
 In YAML, the build name property is called `name` and must be at the root level of a pipeline. Items specified at the root level of a YAML file are [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) properties.
@@ -30,21 +32,16 @@ In YAML, the build name property is called `name` and must be at the root level 
 >[!NOTE]
 >The `name` property doesn't work in template files. 
 
-If you don't specify a build name, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
-
 The following example code outputs a customized build number like **project_def_master_20240828.1**.
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 
 steps:
-  - script: echo '$(Build.BuildNumber)' # 
+  - script: echo '$(Build.BuildNumber)'
 ```
 
 ::: moniker-end
-
->[!NOTE]
->In Classic pipelines, if you leave the **Name** field blank, your build gets a unique integer as its name. You can give builds more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
 
 ## Example
 
@@ -54,8 +51,8 @@ Consider the following data for a build run:
 - Pipeline name: CIBuild
 - Branch: main
 - Build ID/Run ID: 752
-- Date: May 6, 2024.
-- Time: 9:07:03 PM.
+- Date: May 6, 2024
+- Time: 9:07:03 PM
 - One run completed earlier today.
 
 If you specify the following build number format:
@@ -71,9 +68,9 @@ The second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 The following table shows how each token resolves, based on the previous example. You can use these tokens only to define run numbers. They don't work anywhere else in a pipeline.
 
 | Token | Example value | Notes |
-| ----- | ------------------------- |
+| ----- | --------------|----------- |
 | `$(Build.DefinitionName)` | CIBuild | The pipeline name can't contain invalid or whitespace characters.||
-| `$(Build.BuildId)` | 752 | `$(Build.BuildId)` is an internal, immutable ID that's also called the Run ID and is unique across the Azure DevOps organization.|
+| `$(Build.BuildId)` | 752 | `$(Build.BuildId)` is an internal, immutable ID, also called the Run ID, that is unique across the Azure DevOps organization.|
 | `$(DayOfMonth)` | 6 ||
 | `$(DayOfYear)` | 126 ||
 | `$(Hours)` | 21 ||
@@ -89,7 +86,7 @@ The following table shows how each token resolves, based on the previous example
 
 If you want to show prefix zeros in the run number, you can add more `r` characters. For example, specify `$(Rev:rr)` if you want the `Rev` number to begin with `01`, `02`, and so on.
 
-If you use a zero-padded `Rev` as part of a version numbering scheme, note that some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros, which causes a version number mismatch in the artifacts that are produced.
+If you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
 
 ## Variables
 
@@ -111,7 +108,7 @@ If you use an expression to set the build number, you can't use some tokens, bec
 
 ### How large can a run number be, and what characters can I use?
 
-Run numbers can be up to 255 characters. You can't use the characters `"`, `/`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, or `*`, and you can't end the number with a `.`.
+Run numbers can be up to 255 characters. You can't use the characters `"`, `/`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, or `*`, and you can't end the number with `.`.
 
 ### What time zone are the build number time values expressed in?
 
@@ -131,7 +128,7 @@ The time zone is the same as the time zone of the operating system of the machin
 
 ### How can I set the build number dynamically with conditions?
 
-You can use variables as part of your run number. In this example, the variable `why` is used as part of the run number, and its value changes depending on the `Build.Reason`.
+You can use variables as part of your run number. In the following example, the variable `why` is used as part of the run number, and its value changes depending on the `Build.Reason`.
 
 ```yaml
 variables:

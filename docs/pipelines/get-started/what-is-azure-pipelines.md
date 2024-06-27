@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines is a component of Azure DevOps that automatically builds, tests, and deploys code projects. Azure Pipelines supports all major languages and project types, and combines [continuous integration](#continuous-integration) (CI), [continuous testing](#continuous-testing), and [continuous delivery](#continuous-delivery) (CD) to build, test, and deliver your code to any destination.
+Azure Pipelines is a component of Azure DevOps that automatically builds, tests, and deploys code projects. Azure Pipelines combines [continuous integration](#continuous-integration) (CI), [continuous testing](#continuous-testing), and [continuous delivery](#continuous-delivery) (CD) to build, test, and deliver your code to any destination. Azure Pipelines supports all major languages and project types.
 
 :::image type="content" source="media/pipelines-overview.png" alt-text="Screenshot of Azure Pipelines overview.":::
 
@@ -41,7 +41,7 @@ To use Azure Pipelines, you must:
 
 Azure Pipelines offers tasks to build and test .NET, Java, Node, Android, Xcode, and C++ applications. There are tasks to run tests in many testing frameworks and services. You can also run command line, PowerShell, or shell scripts in your automation.
 
-You can build, test, and deploy Node.js, Python, Java, PHP, Ruby, C#, C++, Go, XCode, .NET, Android, and iOS applications, and run these apps in parallel on Linux, macOS, and Windows.
+You can build, test, and deploy Node.js, Python, Java, PHP, Ruby, C#, C++, Go, XCode, .NET, Android, and iOS applications. You can run these apps in parallel on Linux, macOS, and Windows.
 
 ## Continuous integration
 
@@ -62,7 +62,9 @@ Azure Pipelines requires your source code to be in a version control system. Azu
 Azure Pipelines can automate build-deploy-test workflows in your chosen technologies and frameworks, whether your app is on-premises or in the cloud. You can [test your changes continuously](../ecosystems/dotnet-core.md#run-your-tests) in a fast, scalable, and efficient manner. Continuous testing lets you:
 
 - Maintain quality and find problems during development. You can find problems earlier by running tests automatically with each build, ensuring your app still works after every check-in and build.
+
 - Use any test type and test framework. Choose your preferred test technologies.
+
 - View rich analytics and reporting. When your build is done, you can review your test results to resolve any issues. Actionable build-on-build reports let you instantly see if your builds are getting healthier. Detailed and customizable test results measure the quality of your app.
 
 ## Continuous delivery
@@ -79,7 +81,7 @@ Once you have CI in place, you can create a release definition to automate the d
 
 ## Package formats
 
-To produce packages that external users can consume, you can publish NuGet, npm, or Maven packages to the built-in package management repository in Azure Pipelines. You also can use any other package management repository of your choice.
+To produce packages that external users can consume, you can publish NuGet, npm, or Maven packages to the built-in Azure Pipelines package management repository. You also can use any other package management repository you choose.
 
 ## Azure Pipelines pricing
 
@@ -94,7 +96,7 @@ and [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/deta
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-With five or fewer active users, [Azure DevOps Express](https://azure.microsoft.com/services/devops/server/) is free, simple to set up, and installs on both client and server operating systems. It supports all the same features as Azure DevOps Server 2019.
+For five or fewer active users, [Azure DevOps Express](https://azure.microsoft.com/services/devops/server/) is free, simple to set up, and installs on both client and server operating systems. It supports all the same features as Azure DevOps Server 2019.
 
 For more information, see [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 
