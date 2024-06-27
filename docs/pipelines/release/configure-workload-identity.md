@@ -49,7 +49,7 @@ You might need to manually create a managed identity that uses federated credent
 
 1. Select the **Other issuer** scenario.
 
-1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later.
+1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later when you create a service connection.
 
     |Field  |Description  |
     |---------|---------|
@@ -141,7 +141,7 @@ You might need to manually create a service principal that has federated credent
 
     :::image type="content" source="approvals/media/federated-credential-scenario.png" alt-text="Screenshot that shows selecting a federated credentials scenario.":::
 
-1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later.
+1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later when you create a service connection.
 
     |Field  |Description  |
     |---------|---------|
