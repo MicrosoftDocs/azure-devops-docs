@@ -6,6 +6,7 @@ author: ramiMSFT
 ms.date: 05/02/2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
+zone_pivot_groups: key-vault-access-path
 ---
 
 # Access a private key vault from your pipeline
