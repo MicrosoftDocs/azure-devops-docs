@@ -19,7 +19,7 @@ By default, only project administrators have view or edit permissions. To grant 
 
 ![ServiceHooks page without permission](media/permissions/no-permission-service-hooks.png)
 
-ServiceHooks security namespace id is defined under [List Security Namespaces](../organizations/security/manage-tokens-namespaces.md#list-security-namespaces) as `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046`
+ServiceHooks security namespace ID is defined under [List Security Namespaces](../organizations/security/manage-tokens-namespaces.md#list-security-namespaces) as `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046`
 
 ## Prerequisites
 1. Install Azure CLI to run `az devops` command. [How to install the Azure CLI](/cli/azure/install-azure-cli)
@@ -27,7 +27,7 @@ ServiceHooks security namespace id is defined under [List Security Namespaces](.
  - Identity (Read)
  - Graph (Read)
  - Security (Manage) 
-3. Login to azure devops with `az devops login`. Please install extension if you install `az devops` first time.
+3. Sign-in to Azure DevOps with `az devops login`. If you don't have `az devops` extension, you should install `az devops` extension.
 ```
 > az devops login
 The command requires the extension azure-devops. Do you want to install it now? The command will continue to run after the extension is installed. (Y/n): Y
@@ -116,7 +116,7 @@ PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  0                  0
   }
 ```
 
-2. Give view access to the group. `--allow-bit` is defined as 1 which is equal to View ServiceHooks subscriptions.
+2. Give view access for the group. View ServiceHooks Subscriptions equals 1 for `--allow-bit`.
 
 ```
 > az devops security permission update --namespace-id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --token PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b --allow-bit 1
@@ -181,6 +181,6 @@ PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  0                  0
 
 ```
 
-Then, the user cannot view to service hooks subscriptions after permission reset.
+Then, the user can't view to service hooks subscriptions after permission reset.
 
 ![ServiceHooks page without permission](media/permissions/no-permission-service-hooks.png)
