@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2022
+ms.date: 06/28/2024
 ---
 
 # Integrate with service hooks
@@ -109,14 +109,14 @@ check out the information on the service that you're interested in.
 
 ## FAQs
 
-<a id="subscription-permissions"></a>
+<a id="subscription-s"></a>
 
 ### Q: What permissions do I need to set up a subscription?
 
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
 have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
-To grant view permission for a group, you can follow steps under [How to define view permission for a group in ServiceHooks](view-permission.md) page.
+To grant *View* permission for a group, see [How to define *View* permission for a group in ServiceHooks](view-permission.md) page.
 
 ### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
