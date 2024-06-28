@@ -94,7 +94,7 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 ## 1 - Map key vault secrets with a variable group
 
-1. Sign in to your Azure DevOps organization, and the navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Pipelines** > **Library**, and then select **+ Variable group**.
 
