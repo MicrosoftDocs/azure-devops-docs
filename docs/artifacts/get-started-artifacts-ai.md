@@ -1,6 +1,6 @@
 ---
-title: Publish your first package to an Azure Artifacts feed
-description: Learn how to publish your first package to your Azure Artifacts feed.
+title: Publish a package to an Azure Artifacts feed
+description: Learn how to publish your first package to an Azure Artifacts feed.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.author: rabououn
@@ -9,7 +9,7 @@ ms.date: 06/21/2024
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Publish your first package to an Azure Artifacts feed
+# Publish a package to an Azure Artifacts feed
 
 Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing your packages within your team, across organizations, or publicly on the internet. Azure Artifacts feeds support a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
@@ -71,9 +71,9 @@ This article will guide you through the process of publishing your first package
 
 #### [With GitHub Copilot](#tab/githubcopilot/)
 
-Before publishing a package to the feed we just created, let's ensure we pack our project and prepare a package for publishing. 
+Before publishing a package to the feed we created earlier, let's ensure we pack our project and prepare a package for publishing. 
 
-In this example, we will leverage GitHub copilot to guide us through creating a sample .Net Core class library, defining our package metadata, and generating a NuGet package from the command line.
+In this example, we'll leverage GitHub copilot to guide us through creating a sample .NET Core class library, defining our package metadata, and generating a NuGet package from the command line.
 
 You could also use GitHub Copilot to generate other types of projects such as npm or Python projects.
 
