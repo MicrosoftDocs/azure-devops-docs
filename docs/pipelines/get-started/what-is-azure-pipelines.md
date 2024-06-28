@@ -2,7 +2,7 @@
 title: What is Azure Pipelines?
 description: Learn how to automatically build, test, and deploy your code with Azure Pipelines
 ms.topic: overview
-ms.date: 06/26/2024
+ms.date: 06/28/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines is a component of Azure DevOps that automatically builds, tests, and deploys code projects. Azure Pipelines combines [continuous integration](#continuous-integration) (CI), [continuous testing](#continuous-testing), and [continuous delivery](#continuous-delivery) (CD) to build, test, and deliver your code to any destination. Azure Pipelines supports all major languages and project types.
+Azure Pipelines is a component of Azure DevOps that automatically builds, tests, and deploys code projects. Azure Pipelines combines [continuous integration](#continuous-integration), [continuous testing](#continuous-testing), and [continuous delivery](#continuous-delivery) to build, test, and deliver your code to any destination. Azure Pipelines supports all major languages and project types.
 
 :::image type="content" source="media/pipelines-overview.png" alt-text="Screenshot of Azure Pipelines overview.":::
 
@@ -20,12 +20,12 @@ Azure Pipelines provides a quick, easy, and safe way to automate building your p
 
 Azure Pipelines offers the following benefits:
 
-- Works with any language or platform
-- Deploys to different types of targets at the same time
-- Integrates with Azure deployments
-- Builds on Windows, Linux, or Mac machines
-- Integrates with GitHub
-- Works with open-source projects
+- Works with any language or platform.
+- Deploys to different types of targets at the same time.
+- Integrates with Azure deployments.
+- Builds on Windows, Linux, or Mac machines.
+- Integrates with GitHub.
+- Works with open-source projects.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ You can build, test, and deploy Node.js, Python, Java, PHP, Ruby, C#, C++, Go, X
 
 ## Continuous integration
 
-Continuous integration is a practice that development teams use to automate merging and testing code. CI helps to catch bugs early in the development cycle, making them less expensive to fix.
+Continuous integration (CI) is a practice development teams use to automate merging and testing code. CI helps to catch bugs early in the development cycle, making them less expensive to fix.
 
 To ensure quality, Azure Pipelines executes automated tests as part of the CI process. Azure Pipelines CI systems produce artifacts and feed them to release processes to drive continuous deployments.
 
@@ -61,7 +61,7 @@ Azure Pipelines requires your source code to be in a version control system. Azu
 
 Azure Pipelines can automate build-deploy-test workflows in your chosen technologies and frameworks, whether your app is on-premises or in the cloud. You can [test your changes continuously](../ecosystems/dotnet-core.md#run-your-tests) in a fast, scalable, and efficient manner. Continuous testing lets you:
 
-- Maintain quality and find problems during development. You can find problems earlier by running tests automatically with each build, ensuring your app still works after every check-in and build.
+- Maintain quality and find problems during development. You can find problems earlier by running tests automatically with each build, ensuring your app still works after every checkin and build.
 
 - Use any test type and test framework. Choose your preferred test technologies.
 
@@ -69,7 +69,7 @@ Azure Pipelines can automate build-deploy-test workflows in your chosen technolo
 
 ## Continuous delivery
 
-Continuous delivery is the process of building, testing, and deploying code to one or more test or production environments. Deploying and testing in multiple environments optimizes quality.
+Continuous delivery (CD) is the process of building, testing, and deploying code to one or more test or production environments. Deploying and testing in multiple environments optimizes quality.
 
 Azure Pipelines CD systems produce deployable artifacts, including infrastructure and apps. Automated release processes consume these artifacts to release new versions and fixes to existing systems. Systems that continually monitor and send alerts drive visibility into the CD process.
 

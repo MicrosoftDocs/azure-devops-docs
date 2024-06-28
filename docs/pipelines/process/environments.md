@@ -3,7 +3,7 @@ title: Create and target environments
 description: Learn how to create, target, secure, and view deployment history for environments, which are collections of deployment targets for pipelines.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 06/26/2024
+ms.date: 06/28/2024
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -18,7 +18,7 @@ An environment represents a logical target where your pipeline deploys software.
 >[!NOTE]
 >Azure DevOps environments aren't available in Classic pipelines. For Classic pipelines, [deployment groups](../release/deployment-groups/index.md) offer similar functionality.
 
-Environments provide the following benefits.
+Environments provide the following benefits:
 
 - **Deployment history**. Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, you can use [deployment history](#deployment-history) of an environment to identify the source of changes.
 
@@ -52,7 +52,7 @@ To create your first environment:
 
 1. Select **Pipelines** > **Environments** > **Create environment**.
 
-   :::image type="content" source="media/environments-run.png" alt-text="Screenshot that shows Environments.":::
+   :::image type="content" source="media/environments-nav.png" alt-text="Screenshot that shows Environments.":::
 
 1. Enter information for the environment, and then select **Create**. You can add resources to an existing environment later.
 
@@ -114,11 +114,9 @@ strategy:
 
 ## Use manual approval checks
 
-To control deployments to production environments, you can manually control when a stage should run by using approval checks. Checks are available to resource owners to control when a stage in a pipeline consumes the resource.
+To control deployments to production environments, Azure Pipelines supports manual approval checks on environments. Approval checks are available to resource owners to control when a stage in a pipeline consumes the resource. Resource owners can define approvals and checks that must be satisfied before a stage consuming that resource can begin.
 
-Azure Pipelines supports manual approval checks on environments. As the owner of the environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts.
-
-The **Creator**, **Administrator**, and **User** roles, but not the **Reader** role, can manage approvals and checks. For more information, see [Define approvals and checks](approvals.md).
+The environment **Creator**, **Administrator**, and **User** roles, but not the **Reader** role, can manage approvals and checks. As an environment owner, you can manually control when a stage should run by using approval checks. For more information, see [Define approvals and checks](approvals.md).
 
 <a name="in-run-details"></a>
 ## See environments in run details
@@ -151,7 +149,7 @@ You can select the **Deployments** tab in the Azure Pipelines **Environments** s
 
 ## Security
 
-You can secure your environments with user permissions and pipeline permissions.
+You can secure your environments by setting user permissions and pipeline permissions.
 
 ### User permissions
 
@@ -181,13 +179,13 @@ If you see the message **Access denied: {User} needs Create permissions to do th
 
 Change your access level and then check to see if you can create environments. For more information, see [User and permissions management FAQ](../../organizations/accounts/faq-user-and-permissions-management.yml).
 
-### Why do I get the error "Job XXXX: Environment XXXX could not be found. The environment does not exist or has not been authorized for use"?
+### Why do I get an error that an environment can't be found?
 
-There are several possible reasons for the failure.
+If you see the message **Job XXXX: Environment XXXX could not be found. The environment does not exist or has not been authorized for use.**, there are several possible reasons for the failure.
 
 - [Runtime parameters](runtime-parameters.md) don't work when creating environments, because the parameters are expanded only at run time. You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create an environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). 
 
-- If Azure Pipelines doesn't have information about the user creating the environment, the pipeline fails.
+- Azure Pipelines might not have information about the user creating the environment.
 
   When you refer to an environment that doesn't exist in a YAML pipeline file, Azure Pipelines automatically creates the environment in the following cases:
 
@@ -199,7 +197,7 @@ There are several possible reasons for the failure.
   - You update the YAML file by using another external code editor.
   - You add a reference to an environment that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered.
 
-  Previously, Azure Pipelines handled these cases by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment.
+  Previously, Azure Pipelines handled these cases by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. To prevent this outcome, Azure Pipelines now fails these jobs.
 
 ## Related articles
 

@@ -3,7 +3,7 @@ title: Run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 06/27/2024
+ms.date: 06/28/2024
 monikerRange: "<=azure-devops"
 ---
 
@@ -82,10 +82,10 @@ The following table shows how each token resolves, based on the previous example
 | `$(Year:yy)` | 24 ||
 | `$(Year:yyyy)` | 2024 ||
 
->[!NOTE]
+>[!IMPORTANT]
 >If you want to show prefix zeros in the run number, you can add more `r` characters to the `Rev` token. For example, specify `$(Rev:rr)` if you want the `Rev` number to begin with `01`, `02`, and so on.
 >
->If you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
+>If you use a zero-padded `Rev` as part of a version numbering scheme, be aware that some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
 
 ## Expressions
 
