@@ -14,7 +14,7 @@ ms.date: 06/28/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Service hooks let you run tasks on other services when events happen in your project in Azure DevOps.
+Service Hooks let you run tasks on other services when events happen in your project in Azure DevOps.
 
 For example, you can create a card in Trello when a work item gets created or send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
@@ -109,7 +109,7 @@ check out the information on the service that you're interested in.
 
 ## FAQs
 
-<a id="subscription-s"></a>
+<a id="subscription-permissions"></a>
 
 ### Q: What permissions do I need to set up a subscription?
 
