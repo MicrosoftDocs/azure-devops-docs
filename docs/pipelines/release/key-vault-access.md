@@ -5,7 +5,6 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/02/2024
 monikerRange: '>= azure-devops-2019'
-"recommendations": "true"
 zone_pivot_groups: key-vault-access-path
 ---
 
@@ -87,6 +86,8 @@ Let's start by creating a new service principal, this will enable us to access A
 
 > [!TIP]
 > If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
+
+
 
 ::: zone pivot="access-from-azure-devops"
 
@@ -196,7 +197,10 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
 > [!IMPORTANT]
 > Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
+
 ::: zone-end
+
+
 
 ::: zone pivot="access-from-self-hosted-agent"
 
@@ -303,7 +307,10 @@ steps:
     publishLocation: 'Container'
 ```
 
+
 ::: zone-end
+
+
 
 ## Troubleshoot
 
