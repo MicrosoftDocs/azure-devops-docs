@@ -5,7 +5,7 @@ description: Learn how to use an Azure Resource Manager service connection to co
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 06/23/2024
+ms.date: 06/28/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,22 +13,21 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use an Azure Resource Manager service connection to connect to Azure resources. If you use a Resource Manager service connection, you can use a pipeline to deploy to an Azure resource like an Azure App Service app without authenticating each time.
+You can use an Azure Resource Manager service connection to connect to Azure resources such as Azure Key Vault. If you use a Resource Manager service connection, you can use a pipeline to deploy to an Azure resource like an Azure App Service app without authenticating each time.
 
 ::: moniker range="azure-devops"
-You have multiple options for connecting to Azure by using Azure Resource Manager service connections:
+You have authentication multiple options for connecting to Azure by using Azure Resource Manager service connections:
 
 * Service principal with workload identity federation
 * Service principal with secret
-* Agent-assigned managed identity
+* System-assigned managed identity
 * Public profile
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-The service connection uses a service principal to authenticate with Azure resources. By using an Azure Resource Manager service connection. 
-
+The service connection uses a service principal to authenticate with Azure resources. 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -37,7 +36,7 @@ The service connection uses a service principal to authenticate with Azure resou
 
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
-[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.  You can automatically create the workload identity federation for authentication or manually create it.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
@@ -46,6 +45,8 @@ We recommend that you use this approach if all the following items are true for 
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
 ### Create a service connection with workload identity federation (automatic)
+
+With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a workload identity federation for authentication.
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
@@ -84,7 +85,7 @@ To deploy to a specific Azure resource, the task needs more data about that reso
 
 ### Create service connection with workload identity federation (manual)
 
-You can manually create a service connection that uses an existing workload identity federation for authentication. 
+Use this option to manually create a service connection that uses an existing workload identity federation for authentication. 
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
@@ -106,7 +107,7 @@ You can manually create a service connection that uses an existing workload iden
 1. In **Step 2: Service Principal Details**:
     1. Select the **Environment**.
     1. Select the **Scope level**.
-    1. Enter the information for the selected scope level.
+    1. Enter the parameters specific to the selected scope level.
     1. Enter the **Service principal Id**.
     1. Enter the **Tenant Id**.
     1. Select **Verify and save**.
