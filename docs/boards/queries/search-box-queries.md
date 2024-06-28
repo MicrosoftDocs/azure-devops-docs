@@ -17,7 +17,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-<a id="search-box"/>
+<a id="search-box"></a>
 
 You can find work items by using shortcut filters or by specifying keywords or phrases. You can also use specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching isn't case-sensitive. Use semantic searches when you want to do the following tasks:
 
@@ -74,32 +74,7 @@ Free text search easily searches across all work item fields, including custom f
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
-
-   ![The Work Item Search textbox in the title bar](../../project/search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
-
-1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon) to start your search. 
-
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
-
-   ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
-
-   This search is a full text search that uses simple search strings for words or phrases.
-   Work item search matches derived forms of your search terms; for example, a search for
-   "updating" also finds instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
-
-2. Select a snippet of a work item to display it in the right window. 
-
-   Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab. 
-
-::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../includes/previous-navigation-not-supported-azd.md)] 
@@ -142,36 +117,7 @@ Free text search easily searches across all work item fields, including custom f
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
-   to search for all items assigned to that user.
 
-   :::image type="content" source="../../project/search/media/get-started/work-item-search-filters.png" alt-text="Title bar Search":::
-
-   The quick filters you can use are:
-
-   * `a:` for **Assigned to:** 
-   * `c:` for **Created by:** 
-   * `s:` for **State** 
-   * `t:` for **Work item type**<p />
-
-2. Start entering the name of a field in your work items; for example, type `ta`.
-
-   ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
-
-   The dropdown list shows work item field name suggestions 
-   that match user input and help the user to complete the search faster. For example, a search such as 
-   `tags:Critical` finds all work items tagged "Critical". 
-
-3. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if necessary. For example, 
-   `a: Chris t: Bug s: Active` finds all active bugs assigned
-   to a user named "Chris".
-
-4. Narrow your search to specific types
-   and states, by using the drop-down selector lists at the top of the results page.
-
-::: moniker-end
 
 <a id="start-an-improvised-search-and-use-shortcut-filters"></a>
  
@@ -181,7 +127,7 @@ Free text search easily searches across all work item fields, including custom f
 Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
 
 ::: moniker-end
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)   

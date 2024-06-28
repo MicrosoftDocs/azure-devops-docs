@@ -21,7 +21,7 @@ With NuGet Package Restore you can install all your project's dependency without
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 - An Azure DevOps project. If you don't have one yet, you can [create a new project](../../organizations/projects/create-project.md).
-- An Azure Artifacts feed. [Create a new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
 - Connect to Azure Artifacts feed: [NuGet.exe](../../artifacts/nuget/nuget-exe.md), [dotnet](../../artifacts/nuget/dotnet-setup.md).
 - [Set up your pipeline permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
@@ -139,17 +139,7 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
 
 A: The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
 
-::: moniker range="tfs-2018" 
-
-### Q: How do I use the latest version of NuGet?
-
-A: For new pipelines, the **NuGet Tool Installer** will be added automatically to any pipeline that uses a NuGet task. We periodically update the NuGet default version around the same time we install Visual Studio updates on the Hosted build agents.
-
-For existing pipelines, add the **NuGet Tool Installer** to your pipeline and select the NuGet version for all the subsequent tasks. Check out the [dist.nuget](https://dist.nuget.org/tools.json) to see all the available versions.
-
-:::image type="content" source="media/nuget-tool-installer.png" alt-text="Screenshot showing the NuGet tool installer task.":::
-
-::: moniker-end 
+ 
 
 ## Related articles
 

@@ -4,35 +4,13 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 01/09/2024
+ms.date: 04/05/2024
 monikerRange: '<= azure-devops'
 ---
 
 # Create and manage agent pools
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-::: moniker range="tfs-2018"
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
-
-An **agent queue** provides access to an **agent pool** within a project. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer, so you can only use them across build and release pipelines within a project.
-
-To share an agent pool with multiple projects, in each of those projects, you create an agent queue pointing to the same agent pool. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the same agent pool. Also, each agent queue can use only one agent pool.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-![TFS 2017 and TFS 2018 build system architecture](media/build-system-architecture.png)
-
-::: moniker-end
 
 ::: moniker range="= azure-devops"
 
@@ -52,29 +30,25 @@ In Azure DevOps Server, agent pools are scoped to the entire server; so you can 
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2018"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]
 > Agent pool jobs run a job on a single agent. If you need to run a job on all agents, such as a deployment group for classic release pipelines, see [Provision deployment groups](../release/deployment-groups/index.md).
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-You create and manage agent pools from the agent pools tab in admin settings.
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
+
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+
 ::: moniker-end
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range="tfs-2018"
-You create and manage agent queues from the agent queues tab in project settings.
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
+
 If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
+
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
@@ -92,7 +66,6 @@ The following agent pools are provided by default:
    > [!NOTE]
    > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
-
 By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted agents.
 
 ::: moniker-end
@@ -100,12 +73,6 @@ By default, all contributors in a project are members of the **User** role on ho
 ## Designate a pool in your pipeline
 
 # [YAML](#tab/yaml)
-
-:::moniker range="<azure-devops-2019"
-
-YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
-
-:::moniker-end
 
 :::moniker range=">=azure-devops-2019"
 
@@ -138,19 +105,11 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 #### [Browser](#tab/browser)
 
-::: moniker range="tfs-2018"
-You create and manage agent pools from the agent pools tab in admin settings.
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
-
-::: moniker range="tfs-2018"
-You create and manage agent queues from the agent queues tab in project settings.
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
@@ -341,11 +300,6 @@ az pipelines queue show --id 14
 
 * * *
 
-
-
-
-
-
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
 If you've got a lot of self-hosted agents intended for different teams or purposes, you might want to create additional pools as explained below.
@@ -371,7 +325,7 @@ Here are some typical situations when you might want to create self-hosted agent
 * You want to share a set of agent machines with multiple projects, but not all of them. First, navigate to the settings for one of the projects, add an agent pool, and select the option to create a **new** pool at the organization level. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing agent pool from the organization**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 * You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pool for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
@@ -423,7 +377,7 @@ Pipeline permissions for the *Azure Pipelines* agent pool cannot be configured, 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
@@ -454,15 +408,9 @@ Choose the desired pool and choose **Settings** to configure maintenance job set
 > [!IMPORTANT]
 > You must have the [Manage build queues](../../organizations/security/permissions-access.md) permission to configure maintenance job settings. If you don't see the **Settings** tab or the **Maintenance History** tab, you don't have that permission, which is granted by default to the **Administrator** role. For more information, see [Security of agent pools](#security).
 
-:::moniker range="> tfs-2018"
+:::moniker range="<=azure-devops"
 
 :::image type="content" source="media/maintenance-job-settings.png" alt-text="Maintenance job settings":::
-
-:::moniker-end
-
-:::moniker range="<= tfs-2018"
-
-:::image type="content" source="media/maintenance-job-settings-tfs.png" alt-text="Maintenance job settings for TFS":::
 
 :::moniker-end
 
@@ -470,7 +418,7 @@ Configure your desired settings and choose **Save**.
 
 Select **Maintenance History** to see the maintenance job history for the current agent pool. You can download and review logs to see the cleaning steps and actions taken.
 
-:::moniker range="> tfs-2018"
+:::moniker range="<=azure-devops"
 
 :::image type="content" source="media/maintenance-job-history.png" alt-text="Maintenance job history":::
 

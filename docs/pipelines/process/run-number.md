@@ -4,14 +4,12 @@ description: Customize pipeline run number in Azure Pipelines or Azure DevOps Se
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 03/21/2023
-monikerRange: '>= tfs-2018'
+monikerRange: "<=azure-devops"
 ---
 
 # Configure run or build numbers
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`. 
 
@@ -134,7 +132,7 @@ The time zone is UTC.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range="<azure-devops"
 
 The time zone is the same as the time zone of the operating system of the machine where you're running your application tier server.
 

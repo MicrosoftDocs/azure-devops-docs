@@ -62,25 +62,7 @@ In this article learn how to do the following tasks:
 >- [Delete work item links](#delete-work-item-links)
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-In this article learn how to do the following tasks:  
-> [!div class="checklist"]    
->- [Link work items to various objects](#link-work-items-to-various-objects)
->- [Link work items to other work items](#link-work-items-to-other-work-items)
->- [Link several work items](#link-several-work-items) 
->- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
->- [Link work items to new work items](#link-work-items-to-new-work-items)
->- [Link work items to pull requests](#link-work-items-to-pull-requests)
->- [Link work items to builds](#link-work-items-to-builds)
->- [Link work items to deployments](#link-work-items-to-deployments)
->- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
->- [Link work items to tests](#link-work-items-to-tests)
->- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document) 
->- [View dependencies and track related work](#view-dependencies-and-track-related-work)
->- [Query for linked work items](#query-for-linked-work-items) 
->- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
->- [Delete work item links](#delete-work-item-links)
-::: moniker-end
+
 
 ## Prerequisites
 
@@ -170,9 +152,7 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/bulk-modify/query-results-bulk-save-items.png" alt-text="Screenshot of Query results page, save bulk modified items.":::
 ::: moniker-end 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/bulk-modify-link-existing-bulk-save-ts.png" alt-text="Screenshot of Query results page, multi-select items, bulk save modified work items, TFS-2018 and earlier versions.":::
-::: moniker-end
+
 
 ## Link several work items 
 
@@ -356,13 +336,7 @@ The link types used to construct these links&mdash;as illustrated in the followi
 :::image type="content" source="../queries/media/link-type-reference/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of devops link types.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
 
-![Screenshot of Artifact-to-artifact link types.](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
-
-For more information, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control?view=tfs-2017&preserve-view=true).
-::: moniker-end
 
 > [!TIP]
 > We recommend that you drive development from the work item at the time you create it. You can also add the work item ID when you create branches, commits, and pull requests. Git lets you link work items to commits by using the **Commit** link type. You can do so in the following ways.
@@ -480,33 +454,7 @@ For query examples, see [Link and attachment queries](../queries/linking-attachm
 
 You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the [**Test** > **Test Plans** page](../../test/create-a-test-plan.md). 
 
-::: moniker range="tfs-2018"
 
-## Find work items to link to
-
-From the **Add link** dialog, you can open a secondary dialog to help you choose one or more work items to link to. If you're going to find and list work items to link to by using a saved query, first [define the query](../queries/using-queries.md) that you want to use. 
-
-1.  From the **Add link** dialog, choose the &hellip; context menu or select **Browse** (Visual Studio) to open the following dialog. 
-
-   :::image type="content" source="media/add-link-choose-linked-work-item-by-title.png" alt-text="Screenshot of linked work items."::: 
-
-   If the work items are in another project, open that project and then, make your selections: 
-
-   - **Query**: When you defined a query that you know contains the set or superset of the work items that you want.   
-   - **IDs**: When you know the IDs of the work items that you want to link to. 
-    In the **IDs** box, type the IDs of the work items that you want to find, separated by commas or spaces. 
-   - **Title contains**: To find work items that have a common word or phrase in the title field. In the **and type** list, select the type of work item that you want to retrieve.   
-
-   To minimize the time required to run the query, narrow the filter criteria of the search.  
-
-2.  Select the **Find** button. Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title.
-
-3.  In the list of returned work items, select one or more work items.   
-
-    - From the web portal: Hold down the shift key to select several items in a sequence. Use the Ctrl key to select several nonsequential items.   
-
-    - From Visual Studio: Select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
-::: moniker-end
 
 <a id="azure-cli"></a>
 

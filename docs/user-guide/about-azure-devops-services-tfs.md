@@ -49,7 +49,7 @@ Although Azure DevOps Services is a hosted version of Azure DevOps Server, there
 - [Reporting](#reporting)
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
-If you're using Azure DevOps Server and considering a move to Azure DevOps Services, understand your  [migration options](../migrate/migrate-from-tfs.md).
+If you're using Azure DevOps Server and considering a move to Azure DevOps Services, see the [Migration overview](../migrate/migration-overview.md).
 
 ## Scope and scale data 
 
@@ -198,7 +198,7 @@ Many of the featured services in VSTS are now offered as standalone services in 
 |----------------------|----------------------|-------------|
 | Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
 | Code                 | Azure Repos          | Unlimited cloud-hosted private Git and Team Foundation Version Control (TFVC) repositories for your project. |
-| Work                 | Azure Boards         | Work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. |
+| Work                 | Azure Boards         | Work tracking with boards, backlogs, team dashboards, and custom reporting. |
 | Test                 | Azure Test Plans     | All-in-one planned and exploratory testing solution. |
 | Packages (extension) | Azure Artifacts      | Maven, npm, Python, Universal Package, and NuGet package feeds from public and private sources. |
 

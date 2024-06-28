@@ -20,7 +20,7 @@ You add work items to plan and manage your project. Different types of work item
 
 
 > [!NOTE]  
-> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or Kanban board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your Kanban board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
+> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -62,29 +62,7 @@ Create as many work items as you need of the type you need to track the work you
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
-
-    <img src="media/add-work-items-choose-user-story.png" alt="Add a work item" /> 
-
-    > [!NOTE]  
-    >Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
-    or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create are different. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
-    >
-    > For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
-
-    Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
-
-3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
-
-    ![Agile process, User story work item form](media/add-new-work-item-vsts-user-story.png)  
-
-    You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
-
-    Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json).
-
-::: moniker-end
 
 
 ### [Visual Studio 2019](#tab/visual-studio/)
@@ -129,11 +107,7 @@ The following image shows the workflow states for a user story. If you want to d
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For more information, see [Remove or delete a work item](remove-delete-work-items.md).    
-
-::: moniker-end
 
 :::row:::
    :::column span="2":::
@@ -296,7 +270,7 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md) or 
-> [Kanban quickstart](../boards/kanban-quickstart.md) 
+> [Kanban board quickstart](../boards/kanban-quickstart.md) 
 
 
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/about-work-items.md#work-item-form-controls).  

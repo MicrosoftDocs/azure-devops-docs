@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 08/18/2023
+ms.date: 04/03/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -222,8 +222,6 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     [24] Python package
     [25] Ruby
     [26] Universal Windows Platform
-    [27] Xamarin.Android
-    [28] Xamarin.iOS
     [29] Xcode
     Please enter a choice [Default choice(1)]:
     ```
@@ -339,8 +337,6 @@ From the **More actions** :::image type="icon" source="../media/icons/more-actio
 
 ::: moniker range="<= azure-devops-2020"
 
-[!INCLUDE [temp](includes/concept-rename-note.md)]
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -349,11 +345,7 @@ We'll show you how to use the classic editor in Azure DevOps Server 2019 to crea
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-We'll show you how to use the classic editor in TFS to create a build and a release that prints "Hello world".
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -380,15 +372,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-1. Navigate to your repository by clicking **Code** in the top navigation. 
-
-2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
-
-   ![Initialize repository](media/initialize-repo.png)
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -424,41 +408,11 @@ Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Go to the **Code** hub.
 
-2. Add a file.
+   
 
-   ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-
-   #### [TFS 2018.2](#tab/tfs-2018-2)
-   ![On the Files tab, from the repo node, select the 'New -> File' option](media/get-started-designer/add-a-file-tfs-2018-2.png) 
-
-   #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   ![Select the 'New -> File' option](media/get-started-designer/add-a-file-tfs-2018.png) 
-
-   * * * 
-
-   ::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-1. In the dialog box, name your new file and create it.
-   ```
-   HelloWorld.ps1
-   ```
-
-2. Copy and paste this script.
-   ```ps
-   Write-Host "Hello world"
-   ```
-
-3. **Commit** (save) the file.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -514,33 +468,7 @@ Create a build pipeline that prints "Hello world."
 
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-
-10. Select **Build and Release**, and then choose **Builds**.
-
-    ![Choose build tab](media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
-
-11. Create a new pipeline.
-
-    ![Create a new pipeline](media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
-
-12. Start with an **empty pipeline**
-
-13. Select **Pipeline** and specify whatever **Name** you want to use. For the **Agent pool**, select **Default**.
-
-14. On the left side, select **+ Add Task** to add a task to the job, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
-
-    ![Add the task to the job](media/get-started-designer/builds-tab-add-task-tfs-2018.png)
-
-15. On the left side, select your new **PowerShell** script task.
-
-16. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
-
-    ![Select the PowerShell task](media/get-started-designer/powershell-task-1-tfs-2018.png)
-
-17. Select **Save & queue**, and then select **Save**.
-
-    ::: moniker-end
+   
 
 
 ::: moniker range="<= azure-devops-2020"
@@ -570,21 +498,7 @@ A typical build produces an artifact that can then be deployed to various stages
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1. On the **Tasks** tab, select **Add Task**.
-
-2. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
-
-   ![Select add to add the publish artifact task](media/get-started-designer/publish-artifact-task.png)
-
-   **Path to Publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
-
-   **Artifact Name**: Enter `drop`.
-
-   **Artifact Type**: Select **Server**.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -631,39 +545,7 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Save & queue**, and then select **Save & queue**.
-
-2. On the dialog box, select **Save & queue** once more.
-
-   This queues a new build on the Microsoft-hosted agent.
-   
-3. You see a link to the new build on the top of the page.
-
-   ![Go to the build console](media/get-started-designer/build-console-link-to-new-build-tfs-2018-2.png)
-
-   Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
-
-   #### [TFS 2018.2](#tab/tfs-2018-2)
-   ![See the build console](media/get-started-designer/build-console.png)
-
-   #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   ![Go to the build console for TFS 2018](media/get-started-designer/build-console-vsts.png)
-
-   * * *
-
-4. Go to the build summary.
-
-   ![build console link to build summary](media/get-started-designer/build-console-link-to-build-summary.png)
-
-5. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
-
-   ![artifacts explorer](media/get-started-designer/artifacts-explorer.png)
-
-> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Azure Pipelines**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -686,17 +568,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-
-   #### [TFS 2018.2](#tab/tfs-2018-2)
-   ![PowerShell task - TFS 2018.2](media/get-started-designer/powershell-task-2-tfs-2018-2.png)
-
-   #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   ![PowerShell task - 2018 RTM](media/get-started-designer/powershell-task-2.png)
-
-   * * *
-
-   ::: moniker-end
+   
 
    ::: moniker range="<= azure-devops-2020"
 
@@ -735,11 +607,7 @@ Now you can see the results of your changes. Go to **Azure Pipelines** and selec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Now you can see the results of your changes. Go to the **Build and Release** page and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -756,12 +624,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-
-   > [!div class="mx-imgBorder"]
-   > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log.png)
-
-   ::: moniker-end
+   
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -829,63 +692,7 @@ Define the process for running the script in two stages.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Go to the **Build and Release** tab, and then select **Releases**.
-
-2. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create a release definition**.
-
-3. Select the action to start with an **Empty definition**.
-
-4. Name the stage **QA**.
-
-5. In the Artifacts panel, select **+ Add** and specify a **Source (Build pipeline)**. Select **Add**.
-
-6. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
-  
-   #### [TFS 2018.2](#tab/tfs-2018-2)
-   > [!div class="mx-imgBorder"] 
-   > ![trigger continuous deployment - TFS 2018.2](media/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
-
-   #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   > [!div class="mx-imgBorder"] 
-   > ![trigger continuous deployment - TFS 2018 RTM](media/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-rtm-new-editor.png)
-
-   * * *
-
-7. Select the **Tasks** tab and select your **QA** stage.
-
-8. Select the plus sign **( + )** for the job to add a task to the job.
-
-9. On the **Add tasks** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button.
-
-10. On the left side, select your new **PowerShell** script task.
-
-11. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
-
-12. Add these **Arguments**:
-
-    ```
-    -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
-    ```
-
-13. On the **Pipeline** tab, select the **QA** stage and select **Clone**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![clone the release environment](media/get-started-designer/clone-release-environment-tfs-2018-2.png)
-    >
-   
-14. Rename the cloned stage **Production**.
-
-15. Rename the release pipeline **Hello world**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![rename the release pipeline](media/get-started-designer/rename-release-definition-tfs-2018-2.png)
-    >   
-
-16. Save the release pipeline.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -922,23 +729,7 @@ Run the script in each stage.
 
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-
-4. Create a new release.
-
-   ![create release - TFS 2018](media/get-started-designer/create-release-tfs-2018-2.png)
-
-   When **Create new release** appears, select **Create** (TFS 2018.2) or **Queue** (TFS 2018 RTM).
-
-5. Open the release that you created.
-
-   ![release created - TFS 2018](media/get-started-designer/release-created-tfs-2018-2.png)
-
-6. View the logs to get real-time data about the release.
-
-   ![release logs - TFS 2018](media/get-started-designer/release-logs-tfs-2018-2.png)
-
-   ::: moniker-end
+   
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -978,13 +769,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!div class="mx-imgBorder"] 
-> ![release script step final log - - TFS 2018](media/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
->
-   
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -1003,7 +788,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 :::moniker-end
 
-::: moniker range=">= tfs-2018 <= azure-devops-2020"
+::: moniker range="<=azure-devops-2020"
 
 You've learned the basics of creating and running a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
@@ -1088,11 +873,7 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Screenshot showing how to replicate a pipeline.](media/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
-
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -1121,11 +902,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Screenshot that shows saving as draft.](media/get-started-designer/save-as-draft.png)
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -1155,11 +932,7 @@ When you're ready, you can publish the draft to merge the changes into your buil
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![publish draft - TFS 2018](media/get-started-designer/publish-draft.png)
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -1226,19 +999,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 ### Where can I learn more about pipeline settings?
 
-::: moniker range="tfs-2018"
 
-To learn more about build pipeline settings, see:
-
-* [Getting sources](repos/index.md)
-* [Tasks](tasks/index.md)
-* [Variables](build/variables.md)
-* [Triggers](build/triggers.md)
-* [Options](build/options.md)
-* [Retention](policies/retention.md)
-* [History](build/history.md)
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 

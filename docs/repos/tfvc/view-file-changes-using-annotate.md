@@ -1,32 +1,38 @@
 ---
-title: View file changes using annotate
+title: View file changes using annotate in Visual Studio
 titleSuffix: Azure Repos
-description: Annotate a file in Team Foundation Version Control to see who made changes and what changes they made in all earlier versions of the file.
+description: Use annotate to a see changes in earlier versions of a file in Team Foundation Version Control using Visual Studio.
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 05/30/2024
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# View file changes using annotate
+# View file changes using annotate in Visual Studio
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-In Team Foundation Version Control (TFVC), you can annotate a file to learn who made changes and what changes they made in all earlier versions of the file.
+In Team Foundation Version Control (TFVC), you can use annotate in Visual Studio to view the changes in earlier versions of file. You can see information about the change, view the changeset details, compare with previous versions, and more.
 
 ## Prerequisites
 
-To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+- Install [Visual Studio](https://visualstudio.microsoft.com/downloads).
+
+- An Azure DevOps project with a TFVC repository. If you don't have a project, create one. For more information, see [Create a project](../../organizations/projects/create-project.md).
+
+- You must have the **Read** permission set to **Allow** for the repository. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+- You must connect to the team project. For more information, see [Connect to a your project](./share-your-code-in-tfvc-vs.md#connect-to-your-project).
 
 ### To annotate a file
 
-1. On the Visual Studio menu bar, select **View** > **Other Windows** > **Source Control Explorer**.
+1. On the Visual Studio menu bar, select **View** > **Solution Explorer**.
 
-1. In **Source Control Explorer**, right-click the version of the file that you want to annotate, and then select **Annotate**.
+1. In **Solution Explorer**, right-click the version of the file that you want to annotate, select **Source Control**, and select **Annotate**.
 
    The **Annotated** window displays the annotated file.
 
@@ -66,7 +72,7 @@ To perform these procedures, you must have the **Read** permission set to **Allo
 
    - **Annotate This Version** to view annotation information for the selected version and all earlier versions of the file. This information appears in an **Annotate** window.
 
-   - **Track Changeset** to see to which branches the changeset has been merged into. For more information, see [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
+   - **Track Changeset** to see to which branches the changeset was merged into. For more information, see [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
 
    - **Get This Version** to download the selected version of the file to your local workspace.
 

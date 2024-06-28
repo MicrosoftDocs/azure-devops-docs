@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 03/16/2023 
+  ms.date: 04/24/2024 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -68,15 +68,15 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Kanban board quickstart
+          - text: Board quickstart
             url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Kanban board overview
+          - text: Board overview
             url: ./boards/kanban-overview.md
           - text: Add columns
             url: ./boards/add-columns.md
-          - text: Customize your Kanban board
+          - text: Customize your board
             url: ./configure-customize.md
   - title: Implement Scrum
     linkLists:
@@ -98,7 +98,7 @@ landingContent:
         links:
           - text: Create managed queries
             url: ./queries/using-queries.md
-          - text: Perform ad hoc searches
+          - text: Do ad hoc searches
             url: ./queries/search-box-queries.md
           - text: Define, triage, & manage bugs
             url: ./backlogs/manage-bugs.md
@@ -144,7 +144,7 @@ landingContent:
             url: ../organizations/settings/work/customize-process-workflow.md
           - text: See more...
             url: ../reference/index.yml
-  - title: Agile at Scale
+  - title: Agile at scale
     linkLists:
       - linkListType: tutorial
         links:

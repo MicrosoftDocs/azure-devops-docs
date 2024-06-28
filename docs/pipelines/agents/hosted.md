@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 03/04/2024
+ms.date: 04/03/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,9 +33,10 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
+| macOS 14 Sonoma (preview) | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 | macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
-| macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
+| macOS 11 Big Sur (deprecated) | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -44,6 +45,8 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The macOS-14 Sonoma image is available in preview
+* The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
 * All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
 * The macOS 13 image is generally available
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
@@ -66,6 +69,10 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 Customers are encouraged to migrate to newer versions or a [self-hosted agent](windows-agent.md).
 
 For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
+
+> [!NOTE]
+> macOS capacity is currently limited. Unlike Linux and Windows images, where our capacity is restrained by Azure's all up capacity, macOS capacity is constrained by the amount of hardware we have available. While we are working to make additional capacity available over Spring 2024, some jobs may experience delayed execution.
+> Wherever possible, e.g. for jobs that do not create Apple ecosystem apps, customers should choose Linux or Windows images.
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
@@ -267,7 +274,7 @@ Microsoft-hosted agents:
 Microsoft-hosted agents do not offer:
 
 * The ability to remotely connect.
-* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#publish-from-tfs-to-a-unc-file-share).
+* The ability to [drop artifacts to a UNC file share](/previous-versions/azure/devops/pipelines/artifacts/build-artifacts?view=tfs-2018&preserve-view=true#publish-from-tfs-to-a-unc-file-share).
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
@@ -359,28 +366,6 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 <a name="mac-pick-tools"></a>
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
-#### Xamarin
-
-  **Hosted macOS** agent stores Xamarin SDK versions and the associated Mono versions as a set of symlinks to Xamarin SDK locations that are available by a single bundle symlink.
-
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, execute the following bash command before your Xamarin build task as a part of your build, specifying the symlink to Xamarin versions bundle that you need.
-
-  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
-
-  The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 11](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xamarin)
-  - [macOS 12](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xamarin)
-  
-This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
-
-  In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
-
-  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
-  
-  where `$(xcodeRoot)` = `/Applications/Xcode_13.2.app`
-
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
-
 #### Xcode
 
   If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
@@ -393,7 +378,7 @@ This command does not select the Mono version beyond the Xamarin SDK. To manuall
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version (list of all available symlinks can be found in the [Xamarin section](#xamarin) above):
+  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
 
   ```bash
   SYMLINK=<symlink>

@@ -25,8 +25,8 @@
 - name: Add users or groups to a project
   displayName: create, new, account, default, custom, access, permission
   href: ../security/add-users-team-project.md
-- name: Work across projects FAQs 
-  href: ../../project/work-across-projects-faqs.yml?toc=/azure/devops/organizations/toc.json 
+- name: Work across projects FAQs
+  href: ../../project/work-across-projects-faqs.yml?toc=/azure/devops/organizations/toc.json
 - name: Project configuration
   items:
   - name: Area & iteration paths

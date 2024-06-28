@@ -43,9 +43,7 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -77,9 +75,7 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -117,9 +113,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -160,9 +154,7 @@ YAML isn't supported in TFS.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -190,33 +182,9 @@ When your pipeline run is completed, navigate to **Summary** to explore or downl
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-When your pipeline run is completed, select **Artifacts** to download your artifact.
 
-> [!div class="mx-imgBorder"]
-> ![Published build artifact TFS](media/build-artifact-tab.png)
 
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-## Publish from TFS to a UNC file share
-
-If you're using a private Windows agent, you can set the **artifact publish location** option (**TFS 2018 RTM and older**: artifact type) to publish your files to a UNC **file share**.
-
-> [!NOTE]
-> Use a Windows build agent. This option doesn't work for macOS and Linux agents.
-
-Choose **file share** to copy the artifact to a file share. Common reasons to do this:
-
-* The size of your drop is large and consumes too much time and bandwidth to copy.
-
-* You need to run some custom scripts or other tools against the artifact.
-
-If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build by using [variables](../build/variables.md). For example: ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
-
-::: moniker-end
 
 ## Tips
 
@@ -224,7 +192,7 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
-- Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
+- Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines.
 
 - `Build.ArtifactStagingDirectory` and `Build.StagingDirectory` are interchangeable.
 

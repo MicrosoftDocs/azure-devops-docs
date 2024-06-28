@@ -52,7 +52,7 @@ You can add and assign an access level to users one-by-one, which is referred to
 Understand the following three key definitions when you manage your user base:
 
 * **Access** indicates a user can sign into your organization, and at a minimum view information about your organization.
-* **Access levels** grant or restrict access to select web portal features. Access levels enable administrators to provide their user base access to the features they need and only pay for those features.
+* **Access levels** manage access to specific web portal features. Access levels enable administrators to provide their user base access to the features they need and only pay for those features.
 * **Permissions**, granted through security groups, provide and restrict users from completing specific tasks.
 
 For an overview of default assignments, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).

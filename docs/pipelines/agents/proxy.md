@@ -11,18 +11,14 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration.
 This allows your agent to connect to Azure Pipelines or TFS through the proxy.
 This in turn allows the agent to get sources and download artifacts.
 Finally, it passes the proxy details through to tasks which also need proxy settings in order to reach the web.
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 
 ## Azure Pipelines, TFS 2018 RTM and newer
 

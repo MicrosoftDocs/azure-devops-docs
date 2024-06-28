@@ -16,11 +16,7 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 ## Create a personal access token for agent registration
 
-::: moniker range="< azure-devops-2019"
 
-1. Sign in with the user account you plan to use in your Team Foundation Server web portal (`https://{your-server}:8080/tfs/`).
-
-::: moniker-end
 
 ::: moniker range=" >= azure-devops-2019 < azure-devops"
 
@@ -55,7 +51,7 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![Screenshot of security details.](../../repos/git/media/select-personal-access-tokens.jpg)
+   ![Screenshot of security details.](../../repos/git/media/select-personal-access-tokens.png)
 
 3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 

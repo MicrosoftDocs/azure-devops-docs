@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: how-to
 ms.custom: work-items
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2023
+ms.date: 04/29/2024
 ---
 
 # Use work item templates
@@ -19,11 +19,11 @@ ms.date: 10/25/2023
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. You can use work item templates to create work items or make bulk updates to several work items. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. For examples showing usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
+With work item templates, you can quickly create work items with prepopulated values for your team's commonly used fields. You can use work item templates to create work items or make bulk updates to several work items. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. For examples showing usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
 Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
-## Supported template tasks   
+## Supported template tasks
 
 The availability of template task options depends on your client and platform version. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. For more information, see the [prerequisites](#prerequisites) in this article.
 
@@ -143,21 +143,11 @@ As shown in the following table, a ✔️ indicates the task is available from t
 > [!TIP]    
 > The templates you define through the web portal are distinct from those you define through Visual Studio. Web portal templates can only be managed and applied to work items through the web portal. Similarly, Visual Studio templates can only be managed, viewed, and applied to work items in Visual Studio. But, you can use the URLs of both template types to add work items through the web portal. 
 
-## Prerequisites  
-
-::: moniker range=">= azure-devops-2019"
+## Prerequisites
 
 - To manage work item templates in the web portal, you need to join the team that owns them. You can then add, edit, or delete templates as needed.
 
 - You need to be a project Contributor and a team member to use work item templates in the web portal. You can then apply templates to existing work items. 
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-- To add, capture, edit, or delete work item templates through the web portal, you must be a team administrator.   
-
-- To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.   
-::: moniker-end
 
 - To add, capture, or edit work item templates through Visual Studio Team Explorer, install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
 
@@ -171,13 +161,11 @@ Depending on the platform, version, and client you use, you might need to follow
 
 <a id="team-services-capture"></a> 
 
-::: moniker range=">= azure-devops-2019"  
-
 Templates captured through the web portal get assigned a GUID. 
 
 1. From the web portal, open a work item to use as the basis for a template.  
 
-2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
+2. Select the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and then choose **Templates** > **Capture**.   
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of Capture work item field definitions as a template, latest version.](media/templates/wi-templates-capture-bug-vsts-s136.png) 
@@ -191,33 +179,7 @@ Templates captured through the web portal get assigned a GUID.
 
 4. You can paste the URL link into a browser to create a work item, or provide it to others for their use to add work items. For example, you can add it as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md), a [dashboard via a Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), or other shared network resource.
 
-	Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
-
-::: moniker-end  
-
-::: moniker range="tfs-2018"  
-
-Templates captured through the web portal are assigned a GUID. 
-
-1. From the web portal, open a work item to use as the basis for a template.  
-
-    Within the web portal, work item templates are associated with a team. Only those templates that are defined for a team are accessible when you go to [apply a template](#apply) to work items using the web portal.  
-
-2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
-
-    ![Capture work item field definitions as a template](media/templates/wi-templates-capture-bug-tfs.png) 
-
-    Name the template and optionally define or clear fields. Save the template when finished. The template is saved under the team you selected in the first step. 
-
-    ![Capture template dialog](media/wi-templates-capture-template-dialog.png) 
-
-3. Once you've saved the template, choose **Copy link** to capture the URL for the template that you can use to add work items using the template.
-
-4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
-
-    You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
-
-::: moniker-end  
+	Use the URL whenever you want to add a work item of the same type with predefined values.
 
 <a id="tfs-portal-capture"></a> 
 
@@ -225,13 +187,13 @@ Templates captured through the web portal are assigned a GUID.
 
 <a id="team-explorer-capture"></a>
 
-To create work items from templates in Visual Studio or Team Explorer, you can use work item template files (.wt extension). These files are accessible from the Work Items page.
+To create work items from templates in Visual Studio or Team Explorer, you can use work item template files, for example, .wt extension. These files are accessible from the Work Items page.
  
-1. If you haven't yet installed [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power), do so now. You need this software installed to access the Work Item Templates power tool for Visual Studio.  
+1. Sign in to Visual Studio.
 
 1. Open or run a query that lists the work item whose fields you want to capture.
 
-2. Right-click the work item of the type and whose fields you want to capture, and select Capture Template from the context menu.
+2. Right-click the work item of the type and whose fields you want to capture, and select **Capture Template** from the context menu.
 
    :::image type="content" source="media/wi-templates-te-capture-wi-as-template.png" alt-text="Screenshot of Capture work item field definitions as a template from Visual Studio with Power Tools installed.":::
 
@@ -239,19 +201,17 @@ To create work items from templates in Visual Studio or Team Explorer, you can u
 
    :::image type="content" source="media/wi-templates-capture-template-dialog-te.png" alt-text="Screenshot of Capture template dialog from Visual Studio with Power Tools installed.":::
 
-4. Save the template and it appears in the root of the Team Explorer pane under the Templates section.  
+4. **Save** the template, which appears in the root of the Team Explorer pane under the Templates section.  
 
 * * *
 
 <a id="manage"> </a> 
 
-## Manage work item templates 
+## Manage work item templates
 
-For each work item type, you can see and manage the templates that your team has defined. You can perform various actions on the templates, such as adding, editing, copying, deleting, renaming, and getting the link. 
+For each work item type, you can see and manage the templates that your team defined. You can perform various actions on the templates, such as adding, editing, copying, deleting, renaming, and getting the link. 
 
 ### [Web portal](#tab/browser/)
-
-::: moniker range=">= azure-devops-2019"
 
 <a id="team-services-manage"></a> 
 
@@ -261,55 +221,19 @@ For each work item type, you can see and manage the templates that your team has
 
     Expand **Boards** and choose **Team configuration**. If you need to switch to a different team, use the team selector.
 
-2. Select **Templates**.  
-
-    Choose any work item type to view or add templates for that type.  
-
-::: moniker-end
+2. Select **Templates**.
+3. Choose any work item type to view or add templates for that type.  
 
 <a id="team-services-manage"></a> 
 
-::: moniker range="tfs-2018"
+### Manage templates for a work item type
 
-Manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
+1. Select **Project settings** > **Team configuration** > **Templates**. 
+2. Select a work item type to view its defined templates. 
 
-1. From the web portal, open settings for a team. 
-
-    Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
-
-    Here we open the admin page for the Web team. 
-
-    :::image type="content" source="media/wit-templates-open-team-admin-context.png" alt-text="Screenshot of admin page.":::
-
-2. Choose **Work** > **Templates**.  
-
-    :::image type="content" source="media/wit-templates-work-templates-page.png" alt-text="Screenshot of Open Work - Templates page for team.":::
-
-    From here, you can select any work item type to view or add templates for that type.  
-
-::: moniker-end
-
-### Manage templates for a work item type   
-
-::: moniker range=">= azure-devops-2019"
-
-Select **Project settings** > **Team configuration** > **Templates**. a work item type to view its defined templates. 
-
-For example, choose **User Story** to view templates defined for capturing user stories.
+For example, select **User Story** to view templates defined for capturing user stories.
 
 :::image type="content" source="media/templates/templates-user-story-type-selected.png" alt-text="Screenshot of User Story templates selection.":::  
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-Select a work item type to view its defined templates. 
-
-For example, choose **User Story** to view templates defined for capturing user stories.
-
-:::image type="content" source="media/wi-templates-user-stories-list.png" alt-text="Screenshot of managing user story templates.":::
-
-::: moniker-end
 
 <a id="define-template"></a>
 
@@ -330,15 +254,15 @@ From the work item type page, choose  :::image type="icon" source="../media/icon
 :::image type="content" source="media/wi-templates-template-action-menu.png" alt-text="Screenshot of Open template action menu."::: 
 
 - Edit: Select **Edit** and **Save** your changes.
-- Delete: Select **Delete**, and then **Delete** again from the Delete template confirmation dialog. Once you delete a template, you can't recover it.
-- Copy link: Select **Copy link**. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget). 
+- Delete: Select **Delete**, and then **Delete** again from the template confirmation dialog. Once you delete a template, you can't recover it.
+- Copy link: Select **Copy link**. Use the URL whenever you want to add a work item of the same type with predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget). 
 - Create copy: Select **Create copy**. Name the template, optionally add and remove fields, and then **Save** it when you're done. 
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-manage"></a>
 
-You can use Visual Studio with power tools to manage your own work item templates. For each work item type, you can see your defined templates and perform various actions on them. You can add, edit, delete, copy, and copy templates. You can share your templates with others by sending them the template URL or saving the template as a .wt file.
+You can use Visual Studio with power tools to manage your own work item templates. For each work item type, you can see your defined templates and perform various actions on them. You can add, edit, delete, copy, and copy templates. You can share your templates with others by sending them the template URL or saving the template as a `.wt` file.
 
 - Manage templates from the Team Explorer pane.  
 
@@ -382,15 +306,13 @@ The main method used to add a work item using a template is to open the template
 
 <a id="apply"> </a>
 
-## Apply a template to new or existing work item(s)  
+## Apply a template to new or existing work items  
 
 You can apply a template to a single work item or do a bulk update of several work items.  
 
 <a id="team-services-apply"></a>
 
 ### [Web portal](#tab/browser/)
-
-::: moniker range=">= azure-devops-2019"  
 
 ### Apply a template within a work item 
 
@@ -405,28 +327,9 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field.
 
-::: moniker-end
-
-::: moniker range="tfs-2018"  
-
-### Apply a template within a work item 
-
-1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates**, and then select the name of a predefined template.  
-
-   :::image type="content" source="media/wi-templates-apply-user-story-template-vsts.png" alt-text="Screenshot of Apply a template to an existing work item within the form.":::
-
-   > [!TIP]  
-   > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
-
-2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
-
-::: moniker-end
-
 <a id="apply-multiple"> </a>
 
-### Apply a template to several work items 
-
-::: moniker range=">= azure-devops-2019"
+### Apply a template to several work items
 
 1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
 
@@ -436,25 +339,11 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
-::: moniker-end 
-
-::: moniker range="tfs-2018"
-
-1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
-
-2. Choose the template to apply. 
-
-   ![Screenshot of Bulk updating several work items.](media/wi-templates-bulk-update-list-vsts.png)
-
-3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
-
-::: moniker-end 
-
 ### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-apply"></a>
 
-1. Open or run a query that lists the work item(s) whose fields you want to capture.  
+1. Open or run a query that lists one or more work items whose fields you want to capture.  
 
 2. Right-click the work items—which must be of the same type—and choose **Apply Template** from the context menu.  
 
@@ -485,7 +374,7 @@ If you don't specify tags to remove, then all tags present in a work item remain
 
 ## Define an unplanned work item template using a hyperlink 
 
-You can specify a work item template that specifies several field values using the following syntax. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
+You can specify a work item template that specifies several field values using the following syntax. Use the URL whenever you want to add a work item of the same type with predefined values. 
 
 ::: moniker range="azure-devops"
 
@@ -551,7 +440,7 @@ You can save the URL as a text file or add the URL to a dashboard or web page as
 
 <a id="markdown-widget"> </a>
 
-## Add a template link to a team dashboard   
+## Add a template link to a team dashboard
 
 You can add links to a Markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
 
@@ -559,7 +448,8 @@ For example, the following widget contains links to three templates.
 
 ![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
 
-To learn more about the Markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md). 
+For more information, see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md). 
+
 ## Related articles
 
 - [Azure Boards FAQs](../faqs.yml) 

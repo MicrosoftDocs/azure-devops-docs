@@ -1,7 +1,7 @@
 ---
 title: Plan and track work in Azure Boards
 titleSuffix: Azure Boards 
-description: Learn how to plan and track work on your Kanban board.
+description: Learn how to plan and track work on your board.
 ms.custom: boards-get-started
 ms.service: azure-devops-boards
 ms.author: chcomley
@@ -99,16 +99,13 @@ In each work item form, describe work, assign contributors, track status, and co
 
 For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md).
 
-::: moniker range="tfs-2018"
-> [!NOTE]   
-> The images shown in this article correspond to the latest version of Azure Boards. While they may differ from those shown in earlier, on-premises versions of Azure DevOps, they are similar in the functions described unless otherwise noted. 
-::: moniker-end
+
 
 <a id="define-new-work">  </a>
 
-## Open your Kanban board 
+## Open your board 
 
-A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+A board is provisioned with the addition of each project and each team. You can only create or add boards to a project by adding another team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 1. Sign in to your organization (```https://dev.azure.com/{your_organization}```) and go to your project.
 2. Select **Boards** > **Boards**.  
@@ -128,7 +125,7 @@ Work items on your board are automatically assigned the default **Area Path** an
 1. From the Stories board, choose **New item** and the stories you want to track. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add new item, Kanban board, Agile process.](media/plan-track-work/new-user-story-kanban-board.png) 
+	> ![Add new item, board, Agile process.](media/plan-track-work/new-user-story-kanban-board.png) 
 
 1. Enter return and the system assigns a work item ID to the user story. 
 
@@ -156,7 +153,7 @@ Work items on your board are automatically assigned the default **Area Path** an
 3. Add as many issues as you need.  
 
 > [!TIP]
-> The Epics Kanban board is the best tool for quickly adding epics and issues that are children of those epics. To open the Epics board from the Issues board, choose **Epics** from the board selector. 
+> The Epics board is the best tool for quickly adding epics and issues that are children of those epics. To open the Epics board from the Issues board, choose **Epics** from the board selector. 
 > :::image type="content" source="media/track-issues/choose-epics-board.png" alt-text="Screenshot to Open the Epics board, Basic process."::: 
 
 #### [Scrum process](#tab/scrum-process) 
@@ -174,7 +171,7 @@ Work items on your board are automatically assigned the default **Area Path** an
 1. Add as many backlog items as you need.  
 
 > [!TIP]
-> The Features Kanban board is the best tool for quickly adding features and product backlog items that are children of those features. To open the Features board from the Backlog items board, choose **Features** from the board selector. 
+> The Features board is the best tool for quickly adding features and product backlog items that are children of those features. To open the Features board from the Backlog items board, choose **Features** from the board selector. 
 >:::image type="content" source="media/plan-track-work/choose-features-board-scrum.png" alt-text="Screenshot to Open the Features board, Scrum process.":::
 
 The default Scrum process configuration doesn't enable the Epic backlog level for a team. To enable it, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
@@ -194,7 +191,7 @@ The default Scrum process configuration doesn't enable the Epic backlog level fo
 1. Add as many requirements as you need.  
 
 > [!TIP]
-> The Features Kanban board is the best tool for quickly adding features and requirements that are children of those features. To open the Features board from the Requirements board, choose **Features** from the board selector. 
+> The Features board is the best tool for quickly adding features and requirements that are children of those features. To open the Features board from the Requirements board, choose **Features** from the board selector. 
 >:::image type="content" source="media/plan-track-work/choose-features-board-requirements.png" alt-text="Screenshot to Open the Features board, CMMI process.":::
 
 * * *
@@ -252,35 +249,35 @@ Choose **Save & Close** when you're done.
 
 ## Update work status
 
-The State field tracks the status of a work item. With the Kanban board, you can quickly update the status of backlog items by dragging and dropping them to a different column.
+The State field tracks the status of a work item. With the board, you can quickly update the status of backlog items by dragging and dropping them to a different column.
 
 #### [Agile process](#tab/agile-process) 
 
 As work begins, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move it to the **Resolved** column. After it's reviewed and accepted, move it to the **Closed** column. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing updating status on Kanban board, Agile process.](media/plan-track-work/update-status.png) 
+> ![Screenshot showing updating status on board, Agile process.](media/plan-track-work/update-status.png) 
 
 #### [Basic process](#tab/basic-process) 
 
 As work begins, drag the issue from the **To Do** column to the **Doing** column. Once it's completed, move it to the **Done** column. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing updating status on Kanban board, Basic process.](media/track-issues/update-status.png) 
+> ![Screenshot showing updating status on board, Basic process.](media/track-issues/update-status.png) 
 
 #### [Scrum process](#tab/scrum-process) 
 
 Once a backlog item is approved to start work, drag the backlog item card from the **New** column to the **Approved** column.  When work begins, drag the card to the **Committed** column. Once work has completed, move it to the **Done** column. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing updating status on Kanban board, Scrum process.](media/plan-track-work/update-status-scrum.png) 
+> ![Screenshot showing updating status on board, Scrum process.](media/plan-track-work/update-status-scrum.png) 
 
 #### [CMMI process](#tab/cmmi-process) 
 
 As work begins, drag the requirement card from the **Backlog** column to the **Active** column. Once work is ready for review, move it to the **Resolved** column. After it's reviewed and accepted, move it to the **Closed** column. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing updating status on Kanban board, CMMI process.](media/plan-track-work/update-status-cmmi.png) 
+> ![Screenshot showing updating status on board, CMMI process.](media/plan-track-work/update-status-cmmi.png) 
 
 * * *
 
@@ -292,9 +289,9 @@ As work begins, drag the requirement card from the **Backlog** column to the **A
 Task checklists provide a quick and easy way to track elements of work that are important to support completing a backlog item. Also, you can assign individual tasks to different team members. 
 
 > [!TIP]   
-> Tasks that you create from the Kanban board are automatically assigned the **Area Path** and **Iteration Path** of their parent work item and show up on your sprint taskboard. 
+> Tasks that you create from the board are automatically assigned the **Area Path** and **Iteration Path** of their parent work item and show up on your sprint taskboard. 
 
-Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) show up within tasks checklists on the Kanban board.  
+Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) show up within tasks checklists on the board.  
 
 #### [Agile process](#tab/agile-process) 
 

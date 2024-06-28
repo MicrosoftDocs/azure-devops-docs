@@ -72,29 +72,7 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Go to your project Service Hooks page: 
-
-    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
-
-    ![Screenshot of project administration page, TFS.](./media/add-service-hook.png)
-
-    Select **Create Subscription**.
-
-2. Add Jenkins.
-
-   <img alt="Select target service dialog box, Jenkins selected" src="./media/jenkins/target-service.png" />
-
-3. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
-
-   <img alt="Configure event dialog box" src="./media/jenkins/configure-event.png" />
-
-4. Configure the action to take in Jenkins.
-
-   <img alt="New service hook subscription dialog box" src="./media/jenkins/subscription.png" />
-
-::: moniker-end
 
 Now, when that event occurs in Azure DevOps Services, your Jenkins build gets triggered.
 

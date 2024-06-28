@@ -94,7 +94,7 @@ At this point, your Azure Boards-GitHub integration is complete. You can skip th
 3. Select the repository and enter the pull request ID and an optional comment.
 4. Select **Add link**.
 
-   :::image type="content" source="media/troubleshoot/add-link-to-pull-request.png" alt-text="Screenshot of Add link action in user story, showing repository selection and empty boxes for input of pull request ID and optional comment."::: 
+   :::image type="content" source="media/troubleshoot/add-link-to-pull-request-2.png" alt-text="Screenshot of Add link action in user story, showing repository selection and empty boxes for input of pull request ID and optional comment."::: 
 
 	The following actions occur in the background.  
 	- Adds a badge to the README file of the first repository in the list of connected GitHub repositories.  

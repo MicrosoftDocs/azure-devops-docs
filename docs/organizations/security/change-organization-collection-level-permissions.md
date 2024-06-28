@@ -152,31 +152,7 @@ Here we show how to add a user to the **Project Collection Administrators** grou
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
-
-1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
-
-2. Choose **Security**, **Project Administrators** group, **Members**, and then **Add**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Security, Add member](media/project-level-permissions-add-member.png) 
-
-3. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Add users and group dialog, TFS 2018 and earlier versions.](media/project-level-permissions-add-a-user.png)  
-
-    > [!NOTE]   
-    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
-
-4. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
-
-::: moniker-end
 
 
 ## Change permissions for a group 

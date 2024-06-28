@@ -1,6 +1,6 @@
 ---
 title: Deploy to Azure SQL Database
-description: Deploy to an Azure SQL database from Azure Pipelines or TFS
+description: Deploy to an Azure SQL database from Azure Pipelines
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
 ms.date: 04/20/2022
@@ -10,8 +10,6 @@ monikerRange: '<= azure-devops'
 # Azure SQL database deployment
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
@@ -38,11 +36,7 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
@@ -194,11 +188,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -216,7 +206,7 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 ## Azure service connection
 
-The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
+The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure.
 
 ::: moniker range="azure-devops"
 
@@ -262,11 +252,7 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -322,7 +308,7 @@ SqlPackage.exe /action:Extract /tf:"<Target location of dacpac file>"
 **Example:**
 
 ```command
-SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net.placeholder"
  /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
@@ -346,7 +332,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Publish /TargetServe
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb4" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
@@ -370,7 +356,7 @@ SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /S
 **Example:**
 
 ```command
-SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net.placeholder"
 /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
@@ -394,7 +380,7 @@ SqlPackage.exe /SourceFile:"<Bacpac file location>" /Action:Import /TargetServer
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
@@ -418,7 +404,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:DeployReport /Target
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\deployReport.xml" 
 ```
 
@@ -442,7 +428,7 @@ SqlPackage.exe /Action:DriftReport /TargetServerName:"<ServerName>.database.wind
 **Example:**
 
 ```command
-SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net" /TargetDatabaseName:"Testdb"
+SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net.placeholder" /TargetDatabaseName:"Testdb"
 /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\driftReport.xml"
 ```
 
@@ -466,7 +452,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Script /TargetServer
 **Example:**
 
 ```command
-SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\test.sql"
 /Variables:StagingDatabase="Staging DB Variable value"
 ```

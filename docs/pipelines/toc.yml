@@ -2,7 +2,7 @@
   href: index.yml
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
-- name: Use Azure Pipelines
+- name: YAML vs Classic Pipelines
   href: get-started/pipelines-get-started.md
 - name: Get started
   items:
@@ -200,12 +200,14 @@
   - name: Ecosystem support
     displayName: language, platform
     href: ecosystems/ecosystems.md
-  - name: .NET Core
-    displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild, DotNetCore
-    href: ecosystems/dotnet-core.md
-  - name: .NET Framework
-    displayName: ASP, ASPNET, web
-    href: apps/aspnet/build-aspnet-4.md
+  - name: .NET
+    items:
+    - name: .NET Core
+      displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild, DotNetCore
+      href: ecosystems/dotnet-core.md
+    - name: .NET Framework
+      displayName: ASP, ASPNET, web
+      href: apps/aspnet/build-aspnet-4.md
   - name: JavaScript
     items:
     - name: JavaScript quickstart
@@ -216,18 +218,20 @@
       href: ecosystems/customize-javascript.md
     - name: Node.js tutorial
       href: ecosystems/nodejs-tutorial.md
-  - name: Python quickstart
-    displayName: flake, python
-    href: ecosystems/python.md
-  - name: Customize Python
-    displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
-    href: ecosystems/customize-python.md
-  - name: Python to web app
-    displayName: django, webapp
-    href: ecosystems/python-webapp.md
-  - name: Anaconda
-    displayName: data science, python, miniconda, conda
-    href: ecosystems/anaconda.md
+  - name: Python
+    items:
+    - name: Python quickstart
+      displayName: flake, python
+      href: ecosystems/python.md
+    - name: Customize Python
+      displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
+      href: ecosystems/customize-python.md
+    - name: Python to web app
+      displayName: django, webapp
+      href: ecosystems/python-webapp.md
+    - name: Anaconda
+      displayName: data science, python, miniconda, conda
+      href: ecosystems/anaconda.md
   - name: Java
     items:
     - name: Java apps
@@ -249,9 +253,6 @@
   - name: Ruby
     displayName: rails, bundler, rake, simplecov, cobertura
     href: ecosystems/ruby.md
-  - name: Xamarin
-    displayName: xamarin.android, xamarin.ios, macOS, AppStore, Xamarin SDK
-    href: ecosystems/xamarin.md
   - name: Xcode
     displayName: app certificate, test flight
     href: ecosystems/xcode.md
@@ -320,109 +321,109 @@
       href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
-    - name: Create a multistage pipeline
-      href: process/create-multistage-pipeline.md
-      displayName: multi stage, multi stage pipelines 
-    - name: Deploy apps to environments
-      items:
-        - name: Define and target environments
-          href: process/environments.md
-          displayName: clusters, vms, resources
-        - name: Kubernetes resource
-          href: process/environments-kubernetes.md
-          displayName: clusters, aks, manifest, service account
-        - name: Virtual machine resource
-          href: process/environments-virtual-machines.md
-    - name: Deploy apps using VMs
-      items:
-        - name: Linux virtual machines
-          href: ecosystems/deploy-linux-vm.md
-    - name: Deploy mobile apps
-      items:
-        - name: Manage signing certificates
-          href: apps/mobile/app-signing.md
+  - name: Create a multistage pipeline
+    displayName: multi stage, multi stage pipelines
+    href: process/create-multistage-pipeline.md
+  - name: Deploy apps to environments
+    items:
+    - name: Define and target environments
+      displayName: clusters, vms, resources
+      href: process/environments.md
+    - name: Kubernetes resource
+      displayName: clusters, aks, manifest, service account
+      href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtual-machines.md
+  - name: Deploy apps using VMs
+    items:
+    - name: Linux virtual machines
+      href: ecosystems/deploy-linux-vm.md
+  - name: Deploy mobile apps
+    items:
+    - name: Manage signing certificates
+      href: apps/mobile/app-signing.md
 - name: Deploy apps (Classic)
   items:
-    - name: Release pipelines overview
-      href: release/index.md
-      displayName: release, deploy, deployment
-    - name: Deploy from multiple branches
-      href: release/deploy-multiple-branches.md
-      displayName: multiple branches, deployment
-    - name: Deploy pull request Artifacts
-      href: release/deploy-pull-request-builds.md
-      displayName: pr release, deployment
-    - name: Classic release pipelines
-      href: release/define-multistage-release-process.md
-      displayName: classic release, classic deployment
-    - name: Stage templates in Azure Pipelines
-      href: release/env-templates.md
-      displayName: environment, templates, stages
-    - name: Deploy to a Windows VM
-      href: release/deploy-webdeploy-iis-deploygroups.md
-      displayName: windows vm, deployment vm
+  - name: Release pipelines overview
+    displayName: release, deploy, deployment
+    href: release/index.md
+  - name: Deploy from multiple branches
+    displayName: multiple branches, deployment
+    href: release/deploy-multiple-branches.md
+  - name: Deploy pull request Artifacts
+    displayName: pr release, deployment
+    href: release/deploy-pull-request-builds.md
+  - name: Classic release pipelines
+    displayName: classic release, classic deployment
+    href: release/define-multistage-release-process.md
+  - name: Stage templates in Azure Pipelines
+    displayName: environment, templates, stages
+    href: release/env-templates.md
+  - name: Deploy to a Windows VM
+    displayName: windows vm, deployment vm
+    href: release/deploy-webdeploy-iis-deploygroups.md
 - name: Deploy to Azure
   items:
-    - name: Overview
-      href: overview-azure.md
-    - name: Connect to Azure
-      items:
-        - name: Azure Resource Manager service connection
-          href: library/connect-to-azure.md
-          displayName: resource manager, service connection, service principal
-        - name: Troubleshoot workload identity service connections
-          href: release/troubleshoot-workload-identity.md
-        - name: Manually configure workload identity service connections
-          href: release/configure-workload-identity.md
-    - name: Azure App Service (Web Apps)
-      items:
-        - name: App Service
-          href: /azure/app-service/deploy-azure-pipelines
-        - name: Azure Web App for Containers
-          href: apps/cd/deploy-docker-webapp.md
-          displayName: containers, docker, azure web app
-    - name: Azure Functions
-      href: /azure/azure-functions/functions-how-to-azure-devops
-    - name: Azure Resource Manager (ARM) templates
-      items:
-       - name: Use a Resource Manager template to deploy
-         displayName: Resource Manager, ARM, azure
-         href: apps/cd/azure/deploy-arm-template.md
-    - name: Azure Databricks
-      items:
-       - name: Data pipeline overview
-         displayName: data science, machine learning
-         href: apps/cd/azure/cicd-data-overview.md
-       - name: Build a data pipeline
-         href: apps/cd/azure/build-data-pipeline.md
-    - name: Azure Machine Learning
-      href: /azure/machine-learning/how-to-devops-machine-learning
-    - name: Azure Databases
-      items:
-       - name: Azure SQL database
-         href: targets/azure-sqldb.md
-       - name: Azure MySQL database
-         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
-    - name: Azure Virtual Machine Scale Set
-      items:
-       - name: Deploy a virtual machine scale set
-         displayName: vmss, custom image
-         href: apps/cd/azure/deploy-virtual-scale-set-java.md
-    - name: Azure Stack
-      href: targets/azure-stack.md
-    - name: Azure Container Registry
-      items:
-       - name: Build and push to Azure Container Registry with a Docker template
-         href: ecosystems/containers/acr-template.md
-       - name: Build and push to Azure Container Registry - Managed Service Identity
-         href: ecosystems/containers/publish-to-acr.md
-    - name: Azure Kubernetes Service
-      items:
-       - name: Build and deploy to Azure Kubernetes Service
-         href: /azure/aks/devops-pipeline
-    - name: Azure Policy Compliance (Classic)
-      displayName: policy, compliance
-      href: /azure/governance/policy/tutorials/policy-devops-pipelines
+  - name: Overview
+    href: overview-azure.md
+  - name: Connect to Azure
+    items:
+    - name: Azure Resource Manager service connection
+      displayName: resource manager, service connection, service principal
+      href: library/connect-to-azure.md
+    - name: Troubleshoot workload identity service connections
+      href: release/troubleshoot-workload-identity.md
+    - name: Manually configure workload identity service connections
+      href: release/configure-workload-identity.md
+  - name: Azure App Service (Web Apps)
+    items:
+    - name: App Service
+      href: /azure/app-service/deploy-azure-pipelines
+    - name: Azure Web App for Containers
+      displayName: containers, docker, azure web app
+      href: apps/cd/deploy-docker-webapp.md
+  - name: Azure Functions
+    href: /azure/azure-functions/functions-how-to-azure-devops
+  - name: Azure Resource Manager (ARM) templates
+    items:
+    - name: Use a Resource Manager template to deploy
+      displayName: Resource Manager, ARM, azure
+      href: apps/cd/azure/deploy-arm-template.md
+  - name: Azure Databricks
+    items:
+    - name: Data pipeline overview
+      displayName: data science, machine learning
+      href: apps/cd/azure/cicd-data-overview.md
+    - name: Build a data pipeline
+      href: apps/cd/azure/build-data-pipeline.md
+  - name: Azure Machine Learning
+    href: /azure/machine-learning/how-to-devops-machine-learning
+  - name: Azure Databases
+    items:
+    - name: Azure SQL database
+      href: targets/azure-sqldb.md
+    - name: Azure MySQL database
+      href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
+  - name: Azure Virtual Machine Scale Set
+    items:
+    - name: Deploy a virtual machine scale set
+      displayName: vmss, custom image
+      href: apps/cd/azure/deploy-virtual-scale-set-java.md
+  - name: Azure Stack
+    href: targets/azure-stack.md
+  - name: Azure Container Registry
+    items:
+    - name: Build and push to Azure Container Registry with a Docker template
+      href: ecosystems/containers/acr-template.md
+    - name: Build and push to Azure Container Registry - Managed Service Identity
+      href: ecosystems/containers/publish-to-acr.md
+  - name: Azure Kubernetes Service
+    items:
+    - name: Build and deploy to Azure Kubernetes Service
+      href: /azure/aks/devops-pipeline
+  - name: Azure Policy Compliance (Classic)
+    displayName: policy, compliance
+    href: /azure/governance/policy/tutorials/policy-devops-pipelines
 - name: Deploy apps using containers
   items:
   - name: Build images
@@ -583,9 +584,26 @@
   - name: Configure and pay for parallel jobs
     displayName: parallel jobs, microsoft-hosted, self-hosted
     href: licensing/concurrent-jobs.md
-  - name: Set pipeline permissions
-    displayName: release permissions, task group permissions, service permissions, environment permissions
-    href: policies/permissions.md
+  - name: Permissions
+    items:
+    - name: Manage permissions
+      href: policies/permissions.md
+    - name: Pipeline permissions
+      href: policies/permissions.md#pipeline-permissions
+    - name: Agent pool permissions
+      href: policies/permissions.md#agent-pool-permissions
+    - name: Deployment group permissions
+      href: policies/permissions.md#deployment-group-permissions
+    - name: Environment permissions
+      href: policies/permissions.md#environment-permissions
+    - name: Library permissions
+      href: policies/permissions.md#library-permissions
+    - name: Release pipeline permissions
+      href: policies/permissions.md#release-pipeline-permissions
+    - name: Service connection permissions
+      href: policies/permissions.md#service-connection-permissions
+    - name: Task group permissions
+      href: policies/permissions.md#task-group-permissions
   - name: Add users to contribute to pipelines
     displayName: add administrators, add users
     href: policies/set-permissions.md
@@ -601,7 +619,7 @@
       displayName: template permissions, repositories
       href: security/approach.md
     - name: Secure repositories
-      href: security/repos.md
+      href: security/misc.md#protect-repositories
     - name: Secure access to Azure repositories from pipelines
       displayName: forks, branches, access token
       href: security/secure-access-to-repos.md
@@ -612,7 +630,7 @@
       href: security/resources.md
     - name: Project structure
       displayName: separate projects
-      href: security/projects.md
+      href: security/misc.md#protect-projects
     - name: Security through templates
       displayName: conditionals, extends, scripts, templates
       href: security/templates.md
@@ -621,7 +639,7 @@
       href: security/inputs.md
     - name: Shared infrastructure
       displayName: low privileges, hosted, infrastructure
-      href: security/infrastructure.md
+      href: security/misc.md#protect-shared-infrastructure
     - name: Other security considerations
       displayName: PATH, containers, control tasks, auditing
       href: security/misc.md
@@ -640,14 +658,14 @@
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
-    href: integrations/microsoft-teams.md
     displayName: integrations, teams
+    href: integrations/microsoft-teams.md
   - name: Slack
     displayName: integrations, slack
     href: integrations/slack.md
   - name: Integrate with ServiceNow
-    href: release/approvals/servicenow.md
     displayName: integrations, servicenow
+    href: release/approvals/servicenow.md
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines

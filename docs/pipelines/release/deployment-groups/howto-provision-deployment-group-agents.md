@@ -1,7 +1,7 @@
 ---
 title: Provision agents for deployment groups
 ms.custom: devx-track-arm-template
-description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
+description: How to provision agents for deployment groups in Azure Pipelines
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.topic: conceptual
 ms.author: ronai
@@ -14,12 +14,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
-and install the required agent on each machine. This topic explains how to create a deployment group,
+and install the required agent on each machine. This article explains how to create a deployment group,
 and how to install and provision the agent on each virtual or physical machine in your deployment group.
 
 You can install the agent in any one of these ways:
@@ -30,7 +28,6 @@ You can install the agent in any one of these ways:
 
 For information about agents and pipelines, see:
 
-* [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
 * [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
 * [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
@@ -48,7 +45,7 @@ For information about agents and pipelines, see:
 
 1. Choose **Copy the script to clipboard**.
 
-1. Log onto each target machine in turn using the account with the [appropriate permissions](../../agents/windows-agent.md#permissions) and:
+1. Sign in to each target machine in turn using the account with the [appropriate permissions](../../agents/windows-agent.md#permissions) and:
 
    - Open an Administrator PowerShell command prompt, paste in the script you copied, then execute it to register the machine with this group.
  
@@ -56,7 +53,7 @@ For information about agents and pipelines, see:
 
      `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12` 
    
-   - When prompted to configure tags for the agent, press `Y` and enter any tags you will use to identify subsets of the machines in the group for partial deployments.
+   - When prompted to configure tags for the agent, press `Y` and enter any tags you'll use to identify subsets of the machines in the group for partial deployments.
 
      > Tags you assign allow you to limit deployment to specific servers when 
      the deployment group is used in a [**Run on machine group** job](../../process/deployment-group-phases.md).
@@ -65,7 +62,7 @@ For information about agents and pipelines, see:
 
    - Wait for the script to finish with the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.<p />
 
-1. In the **Deployment groups** page of **Azure Pipelines**, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
+1. In the **Deployment groups** page of **Azure Pipelines**, open the **Machines** tab and verify that the agents are running. If the tags you configured aren't visible, refresh the page.
  
 <a name="azureext"></a>
 
@@ -89,7 +86,7 @@ For information about agents and pipelines, see:
 1. Enter the [Personal Access Token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to use for authentication against Azure Pipelines.
 
 1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
-   Tags are not case-sensitive, and each must be no more than 256 characters.
+   Tags aren't case-sensitive, and each must be no more than 256 characters.
    
 1. Choose **OK** to begin installation of the agent on this VM.
 
@@ -200,14 +197,14 @@ For a Windows VM, create an ARM template and add a resources element under the
 
 
 
-where:
+Where:
 
 * **VSTSAccountName** is required. The Azure Pipelines subscription to use. Example: If your URL is `https://dev.azure.com/contoso`, just specify `contoso`
 * **TeamProject** is required. The project that has the deployment group defined within it
 * **DeploymentGroup** is required. The deployment group against which deployment agent will be registered
 * **AgentName** is optional. If not specified, the VM name with `-DG` appended will be used
-* **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
-* **PATToken** is required. The Personal Access Token that will be used to authenticate against Azure Pipelines to download and configure the agent
+* **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags aren't case sensitive and each must be no more than 256 characters
+* **PATToken** is required. The Personal Access Token that is used to authenticate against Azure Pipelines to download and configure the agent
 
 > [!NOTE]
 > If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
@@ -218,7 +215,7 @@ These are some known issues with the extension:
 
 * **Status file getting too big**: This issue occurs on Windows VMs; it has not been observed on Linux VMs. The status file contains a JSON object that describes the current status of the extension. The object is a placeholder to list the operations performed so far. Azure reads this status file and passes the status object as response to API requests. The file has a maximum allowed size; if the size exceeds the threshold, Azure cannot read it completely and gives an error for the status. On each machine reboot, some operations are performed by the extension (even though it might be installed successfully earlier), which append the status file. If the machine is rebooted a large number of times, the status file size exceeds the threshold, which causes this error. The error message reads: `Handler Microsoft.VisualStudio.Services.TeamServicesAgent:1.27.0.2 status file 0.status size xxxxxx bytes is too big. Max Limit allowed: 131072 bytes`. Note that extension installation might have succeeded, but this error hides the actual state of the extension.
 
-  We have fixed this issue for machine reboots (version `1.27.0.2` for Windows extension and `1.21.0.1` for Linux extension onward), so on a reboot, nothing will be added to the status file. If you had this issue with your extension before the fix was made (that is, you were having this issue with earlier versions of the extension) and your extension was auto-upadted to the versions with the fix, the issue will still persist. This is because on extension update, the newer version of the extension still works with the earlier status file. Currently, you could still be facing this issue if you are using an earlier version of the extension with the flag to turn off minor version auto-updates, or if a large status file was carried from an earlier extension version to the newer versions that contains the fix, or for any other reason. If that is the case, you can get past this issue by uninstalling and re-installing the extension. Uninstalling the extension cleans up the entire extension directory, so a new status file will be created for fresh install. You need to install latest version of the extension. This solution is a permanent fix, and after following this, you should not face the issue again.
+  We have fixed this issue for machine reboots (version `1.27.0.2` for Windows extension and `1.21.0.1` for Linux extension onward), so on a reboot, nothing will be added to the status file. If you had this issue with your extension before the fix was made (that is, you were having this issue with earlier versions of the extension) and your extension was autoupadted to the versions with the fix, the issue will still persist. This is because on extension update, the newer version of the extension still works with the earlier status file. Currently, you could still be facing this issue if you are using an earlier version of the extension with the flag to turn off minor version auto-updates, or if a large status file was carried from an earlier extension version to the newer versions that contains the fix, or for any other reason. If that is the case, you can get past this issue by uninstalling and re-installing the extension. Uninstalling the extension cleans up the entire extension directory, so a new status file will be created for fresh install. You need to install latest version of the extension. This solution is a permanent fix, and after following this, you should not face the issue again.
 
 * **Issue with custom data**: This issue is not with the extension, but some customers have reported confusion regarding the custom data location on the VM on switching OS versions. We suggest the following workaround. Python 2 has been deprecated, so we have made the extension to work with Python 3. If you are still using earlier OS versions that don't have Python 3 installed by default, to run the extension, you should either install Python 3 on the VM  or switch to OS versions that have Python 3 installed by default. On linux VMs, [custom data](/azure/virtual-machines/custom-data#linux) is copied to the file `/var/lib/waagent/ovf-env.xml` for earlier Microsoft Azure Linux Agent versions, and to `/var/lib/waagent/CustomData` for newer Microsoft Azure Linux Agent versions. It appears that customers who have hardcoded only one of these two paths face issues while switching OS versions because the file does not exist on the new OS version, but the other file is present. So, to avoid breaking the VM provisioning, you should consider both the files in the template so that if one fails, the other should succeed. 
 

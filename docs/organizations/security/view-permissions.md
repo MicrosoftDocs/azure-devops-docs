@@ -144,19 +144,7 @@ Do the following steps to view organization or collection-level permissions for 
 
 ::: moniker-end    
 
-::: moniker range="tfs-2018"
 
-1. Choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: settings icon and select **Collection settings**.  
-
-    :::image type="content" source="../../media/settings/open-account-settings.png" alt-text="Screenshot shows opening collection settings."::: 
-
-2. Select **Security** > **Project Collection Administrators** > **Members**. 
-
-   :::image type="content" source="media/view-permissions/collection-admins.png" alt-text="Screenshot shows Security, Project Collection Administrators group, Members tab.":::
-
-3. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
-
-::: moniker-end
 
 ## View object-level permissions 
 
@@ -191,8 +179,8 @@ Do the following steps to view object-level permissions for you or other users.
    - [Git branch](../../repos/git/branch-permissions.md)
    - [Git repository](../../repos/git/set-git-repository-permissions.md)
    - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Builds](../../pipelines/policies/set-permissions.md)
-   - [Release pipeline security](../../pipelines/policies/set-permissions.md)
+   - [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)
+   - [Release pipeline security](../../pipelines/policies/permissions.md#release-pipeline-permissions)
    - [Approvals and approvers](../../pipelines/release/approvals/index.md) 
    :::column-end:::
 :::row-end:::

@@ -93,60 +93,17 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-## Install Azure Artifacts
-
-Azure Artifacts is pre-installed in TFS 2018. If the extension is removed, you can reinstall it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-## Assign licenses
-
-1. Navigate to your collection `http://ServerName:8080/tfs/DefaultCollection`.
-
-1. Hover over the **Settings** icon, and then select **Users**.
-
-    :::image type="content" source="media/users-hub-tfs.png" alt-text="A screenshot showing the package management view in TFS.":::
-
-1. Select **Assign**, enter the user to assign licenses, and then select **Ok**.
-
-   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
-   * Ensure that your Visual Studio Enterprise subscribers are assigned [VS Enterprise Access level](../organizations/security/change-access-levels.md).
-
-## Get started with Azure Artifacts
-
-With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
-
-# [NuGet](#tab/nugettfs)
-
-- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [Npm](#tab/npmtfs)
-
-- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/maventfs)
-
-- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradletfs)
-
-- [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
----
-
-::: moniker-end
-
 ## Feature availability
 
-| Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
-|-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
-| **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Gradle packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
-| **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                        |
-| **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
+|      Package type      |                        Azure DevOps Services                                  |                              Azure DevOps Server                               |
+|------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **NuGet packages**     | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   |
+| **npm packages**       | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   |
+| **Maven packages**     | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   |
+| **Gradle packages**    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   |
+| **Python packages**    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   |
+| **Cargo packages**     | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false"::: |
+| **Universal Packages** | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false"::: |
 
 ::: moniker range="azure-devops"
 

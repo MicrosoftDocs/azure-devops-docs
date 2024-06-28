@@ -13,8 +13,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
 This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they're mostly for internal use.
 
@@ -129,11 +127,7 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [include](includes/variables-tfs2018.md)]
-
-::: moniker-end
 
 
 <a name="identity_values"></a>

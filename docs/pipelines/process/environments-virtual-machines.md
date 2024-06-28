@@ -26,7 +26,7 @@ You must have at least a Basic license and access to the following areas:
 
 For more information about security for Azure Pipelines, see [Pipeline security resources](../security/resources.md).
 
-To add a VM to an environment, you must have the [Administrator role](../agents/pools-queues.md#security) for the corresponding deployment pool. A deployment pool is a set of target servers available to the organization. Learn more about [deployment pool and environment permissions](../policies/permissions.md#set-deployment-pool-permissions). 
+To add a VM to an environment, you must have the [Administrator role](../agents/pools-queues.md#security) for the corresponding deployment pool. A deployment pool is a set of target servers available to the organization. Learn more about [deployment pool and environment permissions](../policies/permissions.md#deployment-group-permissions). 
 
 > [!NOTE]
 > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**.

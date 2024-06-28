@@ -1,7 +1,7 @@
 ---
 title: Set TFVC repository permissions
 titleSuffix: Azure Repos
-description: Follow steps to grant or restrict access to a Team Foundation Version Control (TFVC) repository feature or function.
+description: Follow steps to manage access to a Team Foundation Version Control (TFVC) repository feature or function.
 ms.assetid:  
 ms.service: azure-devops-repos
 ms.topic: quickstart
@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can grant or restrict access to a Team Foundation Version Control (TFVC) repository to lock down who can contribute to your source code. There's only one TFVC repository per project. For guidance on who to give greater permission levels, see [Grant or restrict access using permissions](../../organizations/security/restrict-access.md).
+You can manage access to a Team Foundation Version Control (TFVC) repository to lock down who can contribute to your source code. There's only one TFVC repository per project. For guidance on who to give greater permission levels, see [Manage access using permissions](../../organizations/security/restrict-access.md).
 
 ## Prerequisites
 
@@ -103,27 +103,11 @@ To set the permissions for the TFVC repository for a project:
 
 ::: moniker-end    
 
-::: moniker range="tfs-2018"
 
-1. In the web portal for the project where you want to set permissions, select **Settings** and then select **Version Control**. Choose the TFVC repository for the project.
-
-1. Choose the security group whose permissions you want to manage.
-
-1. Change the permission setting to **Allow** or **Deny**. 
-
-   For example, here you change the **Manage branch** permission to **Allow** for all members of the **Contributors** group. 
-
-   ![Image that shows setting TFVC repository security permissions for the Contributors group.](media/tfvc-permissions/set-repo-tfvc-permissions.png)  
-
-   [!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
-
-1. Save your changes. 
-
-::: moniker-end
 
 ## Related articles
 
-- [Grant or restrict access using permissions](../../organizations/security/restrict-access.md)
+- [Manage access using permissions](../../organizations/security/restrict-access.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)  
 - [Permission command](permission-command.md)

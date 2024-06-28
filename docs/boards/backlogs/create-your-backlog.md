@@ -39,23 +39,14 @@ The backlogs defined for each default process are:
 - [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2019" 
-- [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
-- [**Scrum**](../work-items/guidance/scrum-process.md): **Backlog items**, **Features**, and **Epics** 
-- [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
-
-::: moniker-end 
+ 
 
 ::: moniker range=">= azure-devops-2019" 
 
 To customize your backlogs with custom work item types, add portfolio backlogs or other supported options, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md) or [On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2019"
-
-To customize your backlogs to add custom work item types, add portfolio backlogs, or other supported options, see [On-premises XML process model](../../reference/on-premises-xml-process-model.md).
-
-::: moniker-end   
+   
 
 ## Open your backlog  
 
@@ -112,17 +103,7 @@ From your web browser, do the following steps to open your product backlog.
 [!INCLUDE [temp](../includes/tip-configure-backlog-view.md)]
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
-
-:::image type="content" source="../sprints/media/assign-items-sprint/open-work-backlogs-standard.png" alt-text="Screenshot of Open the Boards > Backlogs page .":::
-
-To select another team, open the project and team selector. Select a different team, or select the **Browse** option. 
-
-:::image type="content" source="../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png" alt-text="Screenshot of selection of another team."::: 
-
-::: moniker-end
 
 ## Track bugs on your backlog 
 
@@ -151,18 +132,7 @@ If you already defined a long list of items, you don't have to reenter them one 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**. Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. For more information, see [Configure team settings](../../organizations/settings/manage-teams.md). 
-
-:::image type="content" source="media/create-backlog/add-new-items-standard.png" alt-text="Screenshot of work items added to backlog.":::
-
-> [!NOTE]  
-> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-
-Repeat this step until you capture all your main ideas. 
-
-::: moniker-end
 
 Depending on whether you create your project with [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md), the items in your backlog might be called issues, user stories, PBIs, or requirements. All three are similar, as they describe the customer value to be delivered and the work to be performed.   
 
@@ -316,11 +286,7 @@ From the **View options** selector, you can turn on **In Progress Items**. If yo
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
-
-::: moniker-end
 
 You'd likely choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 

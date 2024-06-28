@@ -143,7 +143,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Auto complete work items with pull requests
@@ -324,7 +324,7 @@ The following table summarizes the integration points between Azure Boards and A
 --- 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 
 ## Azure Repos - Azure Pipelines 
 
@@ -333,7 +333,7 @@ Azure Pipelines provides support for building code stored in Azure Repos, either
 The following table summarizes the integration features between Azure Repos and Azure Pipelines. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Feature**
@@ -344,7 +344,7 @@ The following table summarizes the integration features between Azure Repos and 
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Report deployment status
@@ -545,7 +545,7 @@ The Bug work item type supports the following integrations that you should be aw
       Create inline tests linked to bugs or user stories
    :::column-end::: 
    :::column span="3":::
-      When your team tracks bugs as requirements, you can use the Kanban board to [add tests](../boards/boards/add-run-update-tests.md) to verify bug fixes or user stories.
+      When your team tracks bugs as requirements, you can use the board to [add tests](../boards/boards/add-run-update-tests.md) to verify bug fixes or user stories.
    :::column-end:::
 :::row-end:::
 ---
@@ -686,13 +686,7 @@ Azure Test Plans is fully integrated with Azure Pipelines to support testing wit
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops-2019" 
-
-## Dashboards and reporting
-
-[Dashboards](../report/dashboards/overview.md) provide an easy way to monitor progress and status. Teams can add configurable widgets to support their goals. [SQL Server reports](/sql/reporting-services/reports/reporting-services-reports-ssrs) provide other monitoring capabilities.
-
-::: moniker-end 
+ 
 
 You can add the following built-in widgets to your dashboard. They're organized under the service they support. You might find more widgets from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 

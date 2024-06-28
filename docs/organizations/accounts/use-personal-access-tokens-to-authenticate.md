@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 12/21/2023
+ms.date: 06/12/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,23 +17,20 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use a personal access token (PAT) as an alternate password to authenticate into Azure DevOps. In this article, we show you how to create, use, modify, and revoke PATs for Azure DevOps.
-
-The following video shows you how to create and use a PAT.
-> [!VIDEO 5a2c1619-4af3-4188-8016-aafd49db0d8f]
+A Personal Access Token (PAT) can serve as an alternative password for authenticating into Azure DevOps. This article guides you through the process of creating, utilizing, modifying, and revoking PATs for Azure DevOps.
 
 ## About PATs
 
-A personal access token contains your security credentials for Azure DevOps. A PAT identifies you, your accessible organizations, and scopes of access. As such, they're as critical as passwords, so you should treat them the same way.
+A Personal Access Token (PAT) serves as your security credentials for Azure DevOps. This PAT not only identifies you but also determines your accessibility and scope of access. Hence, PATs are as important as passwords and should be handled with the same level of caution.
 
-If you're working within Microsoft tools, then your Microsoft account (MSA) or Microsoft Entra ID is an acceptable and well-supported approach. But, if you're working with third-party tools that don't support Microsoft or Microsoft Entra accounts – or you don't want to provide your primary credentials to the tool – use PATs to limit your risk.
+If you're utilizing Microsoft tools, then your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. However, if you're using third-party tools that don't support Microsoft or Microsoft Entra accounts, or if you're reluctant to share your primary credentials with these tools, PATs are a safer alternative.
 
-You can create and manage your PATs through one of the following ways:
+Create and manage PATs in the following two ways:
 
-* the user interface in your user settings, which is described in detail in this article
-* through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md)
+* **User interface (UI):** Through user settings, as detailed in this article
+* [**PAT Lifecycle Management API**](manage-personal-access-tokens-via-api.md)
 
-To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
+To establish PATs for non-Microsoft tools, you can either use [Git credential managers](../../repos/git/set-up-credential-managers.md) or generate them manually. We recommend you to review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the appropriate authentication mechanism. PATs serve as a straightforward alternative for smaller projects that don't need an extensive solution. Unless a credential manager is in use, users must input their credentials each time.
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
@@ -47,6 +44,10 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 ::: moniker range="azure-devops"
 
 ## FAQs
+
+### Q: Why can't I edit or regenerate a PAT that's scoped to a single organization?
+
+A: Ensure you're signed into the organization where your PAT is scoped. You can ***view*** all of your PATs while signed into any organization in the same Microsoft Entra ID, but you can only ***edit*** organization-scoped tokens when you're signed into the organization to which they're scoped.
 
 ### Q: What happens to a PAT if a user account is disabled?
 

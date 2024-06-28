@@ -20,7 +20,6 @@ Due to the extensive security and permission structure of Azure DevOps, you migh
 Before using this guide, we recommend that you're familiar with the following content: 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Default permissions and access quick reference.](permissions-access.md) 
-- [Quick reference index to Azure DevOps security](quick-reference-index-security.md)  
 
 > [!TIP]
 > When you're creating an Azure DevOps security group, label it in a way that is easy to discern if it's created to limit access.
@@ -137,24 +136,9 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1.	Go to the Security page for the project that the user is having access problems.
-2.	Enter their name into the box in the upper left-hand corner.
-   
-    :::image type="content" source="media/security-page-enter-user-name.png" alt-text="Screenshot of Enter user name to view permissions, TFS 2018.":::
 
-    You should have a user-specific view that shows what permissions they have.
-
-3.	Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
-
-    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Screenshot of Select Why to trace the permissions, TFS 2018.":::
-
-The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions provided to the groups they're in.
-
-::: moniker-end
-
-For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
+For more information, see [Manage access to specific features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
 
 <a id="refresh-permissions"></a>
 
@@ -208,7 +192,7 @@ Examples of restricted users include Stakeholders, Microsoft Entra guest users, 
 
 ::: moniker-end
 
-::: moniker range=" <= azure-devops"
+::: moniker range=" < azure-devops"
 
 Examples of restricted users include Stakeholders, or members of a security group. Once enabled, any user or group added to the Project-Scoped Users group gets restricted from accessing the Organization Settings pages, except for Overview and Projects. They're restricted to accessing only those projects to which they've been added. 
 
@@ -225,26 +209,7 @@ You can view, add, and manage permissions at a more granular level with the `az 
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops-2019"
 
-### Use tools to fix permission
-
-You can use the following tools to fix a user's permission issue.
-
-- TFSSecurity.exe - TFSSecurity is a command-line tool that can be used to view and update and delete permissions or groups. 
-
-   Example usage:
-   `tfssecurity /a+ Identity "81e4e4b5-bde0-4f2c-a7a5-4d25c2e8a81f\" Read "Project Collection Valid Users" ALLOW /collection:{collectionUrl}`
-`tfssecurity /a- Identity "3c7a0a47-27b4-4def-8d42-aab9b405fc8a\" Write n:"[Project1]\Contributors" DENY /collection:{collectionUrl}`
-
-- Use the public sproc
-
-   Example usage:
-   Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
-
-For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd).
-
-::: moniker-end
 
 
 <a id="group-rules-with-lesser-permissions"></a>

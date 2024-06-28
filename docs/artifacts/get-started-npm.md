@@ -1,10 +1,10 @@
 ---
-title: publish and download npm packages
-description: How to set up your .npmrc config file to publish and download npm packages
+title: Publish and download npm packages
+description: Learn how to set up your project to manage your npm packages in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.date: 10/16/2023
+ms.date: 05/28/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -13,153 +13,83 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Artifacts, you can publish and download npm packages from feeds and public registries like npmjs.com. This quickstart will walk you through the process of creating your feed, configuring your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
+Using Azure Artifacts, you can publish and download your npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your feed, configuring your project, and managing npm packages with your Azure Artifacts feed.
 
-::: moniker range="tfs-2018"
+## Prerequisites
 
-## License the Azure Artifacts extension
+- An Azure DevOps organization. [Create one for free](../organizations/accounts/create-organization.md).
 
-If the Azure Artifacts extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Each organization gets five free licenses. If you need more than five licenses, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed), and select **Get it free**.
+- An Azure DevOps project. Create a new [project](../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users. If you need additional licenses at this point, you can purchase them from Visual Studio Marketplace. If you have a license for Visual Studio Enterprise, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-> [!NOTE]
-> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends. 
-
-1. From any collection in Team Foundation Server, hover over the settings menu and select **Users**. Then select **Package Management**.
-
-    :::image type="content" source="media/users-hub-tfs.png" alt-text="Screenshot showing the user page in TFS 2018":::
-
-1. Select **Assign**, enter the users you want to assign licenses, and then select **OK**.
-
-   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. Make sure that your Visual Studio Enterprise subscribers have the appropriate access level. For more information, see [Change access levels](../organizations/security/change-access-levels.md).
-
-   * Users who are using an instance of Team Foundation Server that's disconnected from the internet (and thus can't purchase licenses from Visual Studio Marketplace) can still assign licenses purchased through an enterprise agreement.
-
-::: moniker-end
+- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
 ## Create a feed
 
-A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, Cargo, and Universal packages.
-
 [!INCLUDE [](includes/create-feed.md)]
 
-::: moniker range=">= azure-devops-2019"
-
-## Set up your .npmrc files
+## Connect to a feed
 
 > [!NOTE]
-> `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
+> `vsts-npm-auth` is not supported in Azure DevOps Server.
 
-We recommend using two .npmrc files. The first one should be located in the same directory as your package.json file. The second should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. The npm client will then be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+Azure Artifacts recommends using two .npmrc files. The first one should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. This allows the npm client to locate the file and retrieve your credentials for authentication, enabling you to share your config file without exposing your credentials. In this section, we will set up the second *.npmrc* file, which should be placed in the same directory as your *package.json* file.
+
+::: moniker range="azure-devops"   
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
-1. Select **npm** from the left navigation pane. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the steps to download Node.js and set up your machine.
+1. Select **npm** from the left navigation area. If this is your first time using Azure Artifacts with npm, make sure you've installed the prerequisites.
 
-1. Insert the following snippet into your .npmrc file, the one located in the same directory as your package.json file. Replace the placeholders with the appropriate values.
+1. Follow the instructions in the **Project setup** section to set up your config file and connect to your feed.
 
-    - **Organization-scoped feed**:
-    
-    ```npmrc
-    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
-                            
-    always-auth=true
-    ```
+    :::image type="content" source="media/npm-project-setup-azure-devops.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Services.":::
 
-    - **Project-scoped feed**:   
-    
-    ```npmrc
-    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
-                            
-    always-auth=true
-    ```
+::: moniker-end
 
-## Setup credentials
+::: moniker range="azure-devops-2022"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to Feed**.
+
+1. Select **npm** from the left, and then follow the instructions in the **Project setup** section to connect to your feed.
+
+   :::image type="content" source="media/npm-project-setup-server-2022-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2022.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+
+1. Select **npm** from the left, and then follow the instructions in **Project setup** to set up your config file and connect to your feed.
+
+   :::image type="content" source="media/npm-project-setup-server-2020-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2020.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+
+1. A new window will appear. From the left navigation pane, select **npm** and follow the instructions to set up your **project** and **user** *.npmrc* files.
+
+   :::image type="content" source="media/npm-project-setup-server-2019-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2019.":::
+
+::: moniker-end
 
 > [!IMPORTANT]
 > npm supports a single `registry` in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
 
-#### [Windows](#tab/Windows/)
-
-If you're developing on Windows, we recommend using *vsts-npm-auth* to authenticate with Azure Artifacts. Make sure you have *vsts-npm-auth* installed from **Get the tools** and then run vsts-npm-auth to get an Azure Artifacts token added to your user-level .npmrc file:
-
-```Command
-vsts-npm-auth -config .npmrc
-```
-
-#### [Other](#tab/Other/)
-
-If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you'll need to create a personal access token, encode it in Base64, and then add it to your user-level .npmrc file.
-
-1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
-
-1. Encode your newly generated personal access token as follows:
-
-    1. Run the following command in a command prompt window to encode your PAT: 
-        
-        ```Command
-        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-        ```
-
-    1. Paste your personal access token, and then press **Enter**.
- 
-    1. Copy the Base64 encoded personal access token.
-
-
-1. Copy the following code snippet to your user-level .npmrc file and replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder with your Base64 personal access token: 
-
-    - **Organization-scoped feed**:
-
-        ```Command
-        ; begin auth token
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
-        ; end auth token
-        ```
-    
-    - **Project-scoped feed**:
-
-        ```Command
-        ; begin auth token
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
-        ; end auth token
-        ```
-
-::: moniker-end
-
-* * * 
-
-::: moniker range="tfs-2018"
-
-## Connect to feed
-
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build & Release**, and then select **Packages**.
-
-1. Select **Connect to feed**, and then select **npm**.
-
-1. Select **Generate npm credentials**. Copy the credentials and add them to your user-level .npmrc file.
-
-    :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="A screenshot showing how to generate npm credentials in TFS 2018.":::
-
-::: moniker-end
-
 ## Publish packages
 
-To publish your npm package, run the following command in your project directory:
+Run the following command in your project directory to publish your npm packages:
 
 ```Command
 npm publish
@@ -170,16 +100,16 @@ npm publish
 
 ## Restore packages
 
-To restore an npm package, run the following command in your project directory:
-
-```Command
-npm install --save <package>
-```
-
-To restore all your npm packages, run the following command from your project directory:
+Run the following command in your project directory to restore your npm packages:
 
 ```Command
 npm install
+```
+
+To restore a specific npm package, run the following command from your project directory:
+
+```Command
+npm install --save <PACKAGE_NAME>
 ```
 
 ## Related articles

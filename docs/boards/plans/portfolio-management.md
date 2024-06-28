@@ -51,21 +51,9 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.   
 
-> [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership.](../backlogs/media/multi-ownership/management-team-backlog-epics-pre-nav.png)
 
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-> [!TIP]    
-> Program managers can also gain insight into progress across teams using [Delivery plans](review-team-plans.md). See also [Visibility across teams](visibility-across-teams.md).  
-
-::: moniker-end
 
 > [!IMPORTANT]
 > You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy won't be visible on the backlog for those child items residing in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
@@ -74,7 +62,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 ## Feature team backlog ownership and view of progress 
 
-Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and Taskboards. These pages only show work relevant to each team. The relevance is based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+Each feature team has its own team home page or dashboards, product and portfolio backlogs, boards, and Taskboards. These pages only show work relevant to each team. The relevance is based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 > [!TIP]
 > Add **Node Name** to the column options to show the team assigned to the work item.   
@@ -91,14 +79,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
-
-> [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
-
-::: moniker-end
  
 ## Assign work from a common backlog
 
@@ -124,24 +105,7 @@ Here, all backlog items have been assigned to feature teams while all features a
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
-
-> [!div class="mx-imgBorder"]  
-> ![Management team common backlog](media/portfolio/account-management-backlog-prev-nav.png) 
-
-During the planning meeting, you can open each item, make notes, and assign the item to the team to work on it. 
-
-> [!TIP]    
-> You can multi-select work items and perform a bulk edit of the area path. See [Bulk modify work items](../backlogs/bulk-modify-work-items.md).    
-
-Here, all backlog items have been assigned to feature teams while all features and epics remain owned by Account Management. 
-
-> [!div class="mx-imgBorder"]  
-> ![All backlog items have been assigned to feature teams.](media/portfolio/account-management-backlog-assigned.png) 
-
-::: moniker-end
  
 
 ## Add portfolio backlogs 
@@ -152,11 +116,7 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ::: moniker-end
  
-::: moniker range="tfs-2018"
 
-If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
-
-::: moniker-end
 
 ## Track dependencies across teams 
 
@@ -193,5 +153,5 @@ To view feature progress based on linked requirements, you can view the Feature 
 - [Kanban quickstart](../boards/kanban-quickstart.md)
 - [Assign work to sprints](../sprints/assign-work-sprint.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)
-- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md)
+- [Limitations of multi-team board views](../boards/kanban-overview.md)
  

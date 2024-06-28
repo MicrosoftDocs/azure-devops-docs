@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/17/2021
+ms.date: 02/29/2024
 ---
 
 # Time zone settings and usage
@@ -28,26 +28,15 @@ To configure the time zone settings, see [Change the time zone in Azure DevOps](
 
 ## Organization time zone
 
-The organization time zone setting is the main time zone setting. This setting is used by Azure DevOps to store all date and time data. In other words, when you set your organization to EST, all timestamps are stored in EST time zone.
+The organization time zone setting is the time zone setting that's used for data that doesn't specify a time zone. All date and time data is stored in UTC and localized using this setting if the time and date isn't localized using profile settings. In other words, when you set your organization to EST, all timestamps that don't follow client localization appear in EST time zone.
 
-The following objects display time stamps using the organization time zone setting.
+Most areas of Azure DevOps localize using your Profile settings, but the following areas don't: 
 
-- Boards: Work item fields such as Created Date, Changed Date, and other Date-Time fields
-- Repos:
-  - File History
-  - Commits, Pushes, Branches, Tags, and Pull Requests
-- Pipelines:
-  - Recent, All, Runs
-  - Environment
-  - Releases
-  - Library
-  - Task groups
-- Notifications
-- [Export Users](../security/export-users-audit-log.md)
+- Audit TimeStamps are always in UTC.
 
-By default, build pipeline `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's time zone. To learn more about configuring your pipeline to run with a `cron` job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
+- Scheduled triggers in code, for example, run with a `cron` job, don't require a time zone to be included. If you don't add a time zone to your trigger, the organization's time zone is used. In classic pipelines, the schedules are in the organization's time zone. For more information about configuring your pipeline to run with a `cron` job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
 
-If you change the organization time zone, it impacts future time stamps, but doesn't retroactively update existing time stamps.
+If you change the organization time zone, it doesn't retroactively update existing time stamps that aren't localized. For example, if your organization is set to UTC and you set up a YAML pipeline with a `cron` job set to 12PM without including EST, this pipeline runs at 5PM EST. If you change the organization's time zone to EST, then this pipeline runs at midnight. If you specify 5PM EST in the code, after the change, it continues to run at 5PM. 
 
 ## User profile time zone
 

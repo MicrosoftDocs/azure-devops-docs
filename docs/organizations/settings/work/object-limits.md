@@ -95,7 +95,7 @@ Each backlog can display up to 10,000 work items. This is a limit on what the ba
 
 - Completed or closed work items don't display on the backlogs and boards once their **Changed Date** is greater than a year old. You can still list these items using a query. If you want them to show up on a backlog or board, then you can make a minor change to them which resets the clock for display.
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md).
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team board views](../../../boards/boards/kanban-overview.md).
 - By default, work item limits might be initially configured to lower values.
 
 ::: moniker-end
@@ -119,7 +119,7 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 #### Additional notes:
 
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md).
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team board views](../../../boards/boards/kanban-overview.md).
 
 For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md).
 
@@ -194,31 +194,7 @@ The following table lists the maximum number of objects that you can define for 
 > For the On-premises XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs.
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-The following table lists the maximum number of objects that you can define for the ON-premises XML process model. While these represent hard limits, practical limits may apply.
-
-| Object                                              | On-premises XML |  
-| --------------------------------------------------- |  ---------: |  
-| Number of processes you can have in an organization |          64 |  
-| Work item types defined for a process               |          64 |  
-| Fields defined for a collection                     |        1024 |  
-| Fields defined for a process                        |        1024 |  
-| Fields defined for a work item type                 |        1024 |  
-| Picklists defined for a collection                  |         N/A |  
-| Picklist items defined for a list                   |        2048 |  
-| Picklist item character length                      |         N/A |  
-| Workflow states defined for a work item type        |          16 |  
-| Rules defined for a work item type                  |        1024 |  
-| Portfolio backlog levels defined for a process      |           5 |  
-| Categories defined for a process                    |          32 |
-| Global lists defined for a process                  |         256 |
-| List items defined within a global list             |        1024 |
-| Size of imported process template                   |        2 GB |
-
-> [!NOTE]
-> For the On-premises XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs.
-::: moniker-end
 
 ## Practical limits
 
@@ -289,14 +265,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- [Customize your work tracking experience](../../../reference/customize-work.md)
-- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
-- [Naming restrictions and conventions](../naming-restrictions.md)
-
-::: moniker-end
 
 ## Related resources
 

@@ -7,37 +7,75 @@ author: ramiMSFT
 ms.date: 03/15/2024
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
-1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
+1. For **Name**, enter a descriptive name for your feed.
+
+   For **Visibility**, select an option to indicate who can view packages within the feed.
+
+   If you want to include packages from public sources, select the checkbox under **Upstream sources**.
+
+   For **Scope**, specify whether the scope of your feed is the project or the organization.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps Services.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022 || azure-devops-2020"
+
+1. Sign in to your Azure DevOps server, and then go to your project.
+
+2. Select **Artifacts**, and then select **Create Feed**.
+
+3. For **Name**, enter a descriptive name for your feed.
+
+   For **Visibility**, select an option to indicate who can view packages within the feed.
+
+   If you want to include packages from public sources, select the checkbox under **Upstream sources**.
+
+   For **Scope**, specify whether the scope of your feed is the project or the organization.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+4. Select **Create** when you're done.
+
+    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2022.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+4. Select **Create** when you're done.
+
+    :::image type="content" source="../media/create-new-feed-server-2020.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2020.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps server, and then go to your project.
+
+1. Select **Artifacts**, and then select **New feed**.
+
+1. For **Name**, enter a descriptive name for your feed.
+
+   For **Visibility**, select an option to indicate who can view packages within the feed.
+
+   If you want to include packages from public sources, select the **Use packages from public sources through this feed** option.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/create-new-feed-server-2019.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2019.":::
+
+::: moniker-end
 
 > [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-Azure Artifacts comes pre-installed in TFS 2018. If this is your first time using your feed, you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses).
-
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build & Release**, and then select **Packages**.
-
-1. Select **+ New feed** to create a new feed.
-
-1. Provide a meaningful **Name** and **Description** for your feed. Specify the permissions for **who can read** and **who can contribute**, and decide whether to **Include external packages**.
-
-1. Select **Create** when you're done.
- 
-   :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to create a new feed in TFS 2018.":::
-
-::: moniker-end
+> By default, newly created feeds have their project's **Build Service** value set to **Feed and Upstream Reader (Collaborator)**.

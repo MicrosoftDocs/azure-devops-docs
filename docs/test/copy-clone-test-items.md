@@ -4,7 +4,7 @@ titleSuffix: Azure Test Plans
 description: Learn how to copy or clone test plans, test suites, and test cases in Azure Test Plans.  
 ms.service: azure-devops-test-plans
 ms.custom: cross-project, UpdateFrequency3
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
@@ -115,7 +115,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
       ✔️ [Copy](../boards/backlogs/copy-clone-work-items.md)
    :::column-end:::
 :::row-end:::
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 :::row:::
    :::column span="1":::
       **Microsoft Test Manager**<sup>1</sup>  
@@ -692,7 +692,7 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 
 [!INCLUDE [limitations-import](includes/limitations-import.md)]
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 ### Microsoft Test Manager (deprecated)
 

@@ -1,7 +1,7 @@
 ---
 title: Control deployments with release approvals
 ms.custom: engagement-fy23
-description: Understand release approvals in Azure Pipelines
+description: Understand release approvals in Azure Pipelines.
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.topic: conceptual
 ms.author: sandrica
@@ -14,45 +14,45 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure release pipelines, You can enable manual deployment approvals for each stage in a release pipeline to control your deployment workflow. When using approvals in your pipeline, the deployment is paused at each point where approval is required until the specified approver grants approval, rejects the release, or reassigns the approval to another user.
+With Azure release pipelines, you can enable manual deployment approvals for each stage in a release pipeline to control your deployment workflow. When you use manual approvals, the deployment is paused at each point where approval is required until the specified approver grants approval, rejects the release, or reassigns the approval to another user.
 
 ## Deployment approvals
 
-You can set up approvals at the start of a stage (pre-deployment approvals), at the end of a stage (post-deployment approvals), or for both.
+You can set up approvals at the start of a stage (predeployment approvals), at the end of a stage (post-deployment approvals), or for both.
 
-### Pre-deployment approvals
+### Predeployment approvals
 
-1. Select your classic release pipeline, and then select the **Pre-deployment conditions** icon and then click the toggle button to enable **Pre-deployment approvals**.
+1. Select your classic release pipeline, and then select the **Pre-deployment conditions** icon and then select the toggle button to enable **Pre-deployment approvals**.
 
 1. Add your **Approvers** and then choose the **Timeout** period. You can add multiple users or groups to the list of approvers. You can also select your **Approval policies** depending on your deployment workflow.
 
-    :::image type="content" source="media/pre-deployment-approvals.png" alt-text="A screenshot showing how to set up pre-deployment approvals.":::
+    :::image type="content" source="media/pre-deployment-approvals.png" alt-text="A screenshot showing how to set up predeployment approvals.":::
 
 > [!NOTE]
 > Azure DevOps doesn’t expand Azure Active Directory groups when delivering Notifications. If you must use Azure AD groups, we suggest that you add an email alias as an explicit recipient to your subscription and associate that alias with your AD group, if applicable to your scenario.
 
 ### Post-deployment approvals
 
-1. Select your classic release pipeline, and then select the **Post-deployment conditions** icon and then click the toggle button to enable **Post-deployment approvals**.
+1. Select your classic release pipeline, and then select the **Post-deployment conditions** icon and then select the toggle button to enable **Post-deployment approvals**.
 
 1. Add your **Approvers** and then choose the **Timeout** period. You can add multiple users or groups to the list of approvers. You can also select your **Approval policies** depending on your deployment workflow.
 
     :::image type="content" source="media/post-deployment-approvals.png" alt-text="A screenshot showing how to set up post-deployment approvals.":::
 
 > [!NOTE]
-> Deployment approvers must have **View releases** [permissions](../../policies/permissions.md#set-release-permissions).
+> Deployment approvers must have **View releases** [permissions](../../policies/permissions.md#release-pipeline-permissions).
 
 - **Approvers**:
 When a group is specified as approvers, only one user from that group is needed to approve, resume, or reject deployment.
 
 - **Timeout**:
-If no approval is granted within the **Timeout** period, the deployment will be rejected.
+If no approval is granted within the **Timeout** period, the deployment is rejected.
 
 - **Approval policies**:
 
    - For added security, you can add this approval policy to prevent the user who requested the release from approving it. If you're experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. See [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set) to learn more about identity variables.
-   - This policy lets you enforce multi-factor authentication in the release approval flow. If this policy is checked it will prompt approvers to re-sign in before approving releases. This feature is only available in Azure DevOps Services for Microsoft Entra backed accounts only.
-   - Reduce user workload by automatically approving subsequent prompts if the specified user has already approved the deployment to a previous stage in the pipeline (applies to pre-deployment approvals only).
+   - This policy lets you enforce multifactor authentication in the release approval flow. If this policy is checked, it prompts approvers to re-sign in before approving releases. This feature is only available in Azure DevOps Services for Microsoft Entra backed accounts only.
+   - Reduce user workload by automatically approving subsequent prompts if the specified user has already approved the deployment to a previous stage in the pipeline (applies to predeployment approvals only).
 
 ## Approval notifications
 

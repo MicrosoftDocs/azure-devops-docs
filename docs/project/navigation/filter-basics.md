@@ -24,16 +24,12 @@ You can filter most items using keywords or a user name for an author of an item
 
 ::: moniker range=">= azure-devops-2019"  
 - Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories  
-- Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards 
+- Work tracking: Work Items, Boards, Backlogs, Sprint Backlogs, and Taskboards 
 - Directories: Dashboards, Boards, Backlogs, Sprints, Queries, Builds, Releases  
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories  
-- Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards 
 
-::: moniker-end
 
 
 > [!NOTE]   
@@ -74,5 +70,5 @@ For example, here we turn filtering on for the dashboard directory.
 - [Commit history](../../repos/git/commit-history.md)
 - [Working with Git tags](../../repos/git/git-tags.md)
 - [Filter backlogs and queries](../../boards/backlogs/filter-backlogs-boards-plans.md)
-- [Filter your Kanban board](../../boards/backlogs/filter-backlogs-boards-plans.md)
+- [Filter your board](../../boards/backlogs/filter-backlogs-boards-plans.md)
 - [Add tags to work items](../../boards/queries/add-tags-to-work-items.md)

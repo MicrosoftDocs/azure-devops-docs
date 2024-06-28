@@ -5,7 +5,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: how-to
-ms.date: 12/04/2023
+ms.date: 04/02/2024
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -18,7 +18,7 @@ If your pipeline run fails to complete, you can use the diagnostic information a
 
 :::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
 
-<a name="get-logs-to-diagnose-problems" />
+<a id="get-logs-to-diagnose-problems"></a>
 
 ## View logs
 
@@ -72,7 +72,7 @@ In this example, you can see that there's an error in the `Value` of the `Script
 
 If the issue isn't apparent from the pipeline run summary page or browsing the logs, check the following [Common issues](#common-issues) section, and see [Review logs to diagnose pipeline issues](./review-logs.md) for information on downloading complete logs which include additional diagnostic information.
 
-<a name="my-pipeline-starts-but-fails-to-complete-successfully" />
+<a name="my-pipeline-starts-but-fails-to-complete-successfully"></a>
 
 ## Common issues
 
@@ -85,6 +85,7 @@ If the issue isn't apparent from the pipeline run summary page or browsing the l
 * [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Service Connection related issues](#service-connection-related-issues)
+* [Pipeline stopped hearing from agent](#pipeline-stopped-hearing-from-agent)
 
 :::moniker range="azure-devops"
 
@@ -356,6 +357,19 @@ D:\home\python364x64\python.exe -m pip install -r requirements.txt
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
+
+### Pipeline stopped hearing from agent
+
+If your pipeline fails with a message like `We stopped hearing from agent <agent name>. Verify the agent machine is running and has a healthy network connection.`, check the resource utilization of the agent to see if the agent machine is running out of resources. Starting with [Sprint 228](/azure/devops/release-notes/2023/sprint-228-update), [Azure Pipelines logs contain resource utilization metrics](/azure/devops/release-notes/2023/sprint-228-update#pipeline-logs-now-contain-resource-utilization) for each step.
+
+When using Azure DevOps Services, you can see resource utilization in the logs, including disk usage, memory usage, and CPU utilization, by enabling [verbose logs](review-logs.md#configure-verbose-logs). When the pipeline completes, [search the logs](review-logs.md#view-and-download-logs) for `Agent environment resources` entries for each step.
+
+```
+2024-02-28T17:41:15.1315148Z ##[debug]Agent environment resources - Disk: D:\ Available 12342.00 MB out of 14333.00 MB, Memory: Used 1907.00 MB out of 7167.00 MB, CPU: Usage 17.23%
+```
+
+For information on capturing additional resource utilization logs, see [Capture resource utilization details](review-logs.md#capture-resource-utilization-details).
+
 
 #### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
 

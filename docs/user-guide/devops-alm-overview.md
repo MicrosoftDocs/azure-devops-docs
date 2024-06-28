@@ -54,10 +54,9 @@ You can develop your code in Android Studio, Eclipse, IntelliJ, Visual Studio, V
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](media/overview/code-git-android-studio-1.png)](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
+[![Android Studio](media/overview/code-git-android-studio-1.png)](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![IntelliJ](media/overview/code-git-intellij-3.png)](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
 
-<br/>
-<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="media/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="media/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="media/overview/code-git-xcode.png" alt="Xcode"/></a>  
+[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&nbsp;[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)
 
 ### TFVC
 
@@ -125,7 +124,7 @@ Once you've signed up for Azure DevOps Services or installed Azure DevOps Server
 ### Azure DevOps Server updates
 
 - [What's new](/azure/devops/server/whats-new)
-- [Migrate data from TFS to Azure DevOps Services](../migrate/migrate-from-tfs.md)
+- [Migrate data from Azure DevOps Server to Azure DevOps Services overview](../migrate/migration-overview.md)
 
 ### Pricing, costs, and licenses</span>
 

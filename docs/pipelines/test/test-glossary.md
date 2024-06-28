@@ -4,7 +4,7 @@ description: Understand terms used in test report and test analytics
 ms.assetid: 7C6E8651-FD90-40EB-8E0F-1AE48360B5DB
 ms.topic: conceptual
 ms.custom: continuous-test
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 ms.date: 12/07/2018
 monikerRange: '<= azure-devops'
@@ -16,11 +16,7 @@ monikerRange: '<= azure-devops'
 
 This article describes commonly used terms used in pipeline [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md).
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 | Term | Definition |
 | ---- | ---------- |

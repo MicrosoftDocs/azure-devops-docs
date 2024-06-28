@@ -98,7 +98,7 @@ To take full advantage of the fast lookup feature, we recommend that you include
 
 ## Save packages from upstream sources
 
-When you enable upstream sources for your feed and install a package from an upstream source, an automatic copy of that package is saved to your feed. This practice enhances download performance and conserves network bandwidth, making it particularly beneficial for TFS servers in internal networks.
+When you enable upstream sources for your feed and install a package from an upstream source, an automatic copy of that package is saved to your feed. This practice enhances download performance and conserves network bandwidth.
 
 For instance, you can install packages directly from the upstream source using a command like *npm install express*. Alternatively, packages might be installed as part of a dependency resolution process. In the latter scenario, installing *express* would also save its dependencies, such as *accepts*.
 
@@ -149,11 +149,11 @@ Upstream sources serve as a valuable safeguard for your consumers and infrastruc
 
 ##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
 
-A: Packages from upstream sources become available downstream as soon as they're published. However, the package will only appear in your feed's UI after it has been ingested. Ingestion is triggered when a **Feed and Upstream Reader (Collaborator)** or higher installs the package version from upstream.
+A: Packages from upstream sources become available in the downstream feed soon after they're published. However, the package will only be visible to readers after it has been saved to the feed. A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#permissions-table) or higher permissions installs the version in the downstream feed. This triggers the downstream to save a copy of the package from upstream, after which it is permanently saved and available in the downstream to all readers. This is when the package version becomes visible in the package versions section of the web UI.
 
 ##### Q: What are feed views?
 
-A:  Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. For more information, see [What are feed views](./views.md).
+A: Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. For more information, see [What are feed views](./views.md).
 
 ##### Q: I can't find the feed that I want to configure as an upstream source?
 

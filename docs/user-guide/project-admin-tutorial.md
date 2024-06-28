@@ -30,7 +30,7 @@ If you created a project or you're added to the **Project Administrators** group
 
 ## Manage security and permissions
 
-Permissions and security groups control access to select tasks. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md).  
+Permissions and security groups control access to specific tasks. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md).  
 
 [!INCLUDE [project-level-permissions](../organizations/security/includes/project-level-permissions.md)]
 
@@ -54,7 +54,7 @@ As a member of the **Project Administrators** group, you can grant or restrict p
 
 - [Role-based permissions](../organizations/security/about-permissions.md#role-based-permissions)
 - [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
-- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
+- [Manage access to specific features and functions](../organizations/security/restrict-access.md)   
 - [Set object-level permissions](../organizations/security/set-object-level-permissions.md) 
 
 
@@ -126,7 +126,7 @@ Azure DevOps supports integration with Azure, GitHub, and many other services. A
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="<azure-devops"
 
 - [About projects](../organizations/projects/project-team-quick-reference.md)  
 - [Get started managing your organization or project collection](manage-organization-collection.md) 

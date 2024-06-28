@@ -45,13 +45,7 @@ You can plan and track work from the web portal **Boards** hub, and using Visual
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Work tracking
-
-You can plan and track work from the web portal **Work** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients.
-
-::: moniker-end
 
 > [!NOTE]
 > Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md).
@@ -62,16 +56,13 @@ Each user's access level or permission assignment controls access to the followi
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
 
-::: moniker range="tfs-2018"  
-> [!NOTE]  
-> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
-::: moniker-end  
+  
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
 ### Boards  
 
-You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop.
+You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban/Agile methods. Boards present work items as cards and support quick status updates through drag-and-drop.
 
 [!INCLUDE [temp](includes/boards-boards.md)]
 
@@ -177,21 +168,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Build and Release
-
-You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md).
-
-### Build
-
-[!INCLUDE [temp](includes/build.md)]
-
-### Release
-
-[!INCLUDE [temp](includes/release.md)]
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -201,13 +178,7 @@ Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access leve
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Test
-
-Users granted **Visual Studio Enterprise** or **Advanced** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set  several [test permissions at the project level](change-project-level-permissions.md)  from **Project Settings>Permissions**.
-
-::: moniker-end
 
 [!INCLUDE [temp](includes/test.md)]
 
@@ -229,13 +200,7 @@ You can manage feeds from the web portal, **Artifacts**. Users with Basic access
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-## Package management
-
-You can manage feeds from the web portal, **Build and release > Packages**. Users with Basic access or higher can access Package management features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
-::: moniker-end
 
 [!INCLUDE [temp](includes/package-feeds.md)]
 

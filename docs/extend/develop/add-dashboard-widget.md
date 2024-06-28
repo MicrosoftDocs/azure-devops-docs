@@ -107,7 +107,7 @@ Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS
 
 > Even though we are using an HTML file, most of the HTML head elements other than script and link are ignored by the framework.
 
-<a name="widget-javascript"/>
+<a name="widget-javascript"></a>
 
 ### Step 3: Your JavaScript
 

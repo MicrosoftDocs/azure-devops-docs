@@ -16,7 +16,7 @@ ms.date: 08/22/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To manage work tracking effectively, you can grant or restrict access to different features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
+To manage work tracking effectively, you can manage access to specific features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
 
 ::: moniker range="azure-devops"
 
@@ -110,9 +110,7 @@ The following table summarizes the different permissions you can set at the obje
       - [Manage process permissions (Inheritance process model)](change-organization-collection-level-permissions.md) 
       - [Edit collection level permissions](change-organization-collection-level-permissions.md) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
       ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - [Edit collection level permissions](change-organization-collection-level-permissions.md)
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---
@@ -133,11 +131,11 @@ For more information, see [Add groups](add-remove-manage-user-group-security-gro
 
 [!INCLUDE [temp](includes/boards-sprints.md)]
 
-<a name="set-permissions-area-path" /> 
+<a id="set-permissions-area-path"></a>
 
 ## Create child nodes, modify work items under an area or iteration path   
 
-Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
+Area path permissions let you manage access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
 > Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
@@ -194,23 +192,7 @@ Do the following steps to define both areas and iterations for a project.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. From the web portal for the project, select :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: **Settings**.  
-
-   :::image type="content" source="../settings/media/areas/modify-areas-its-open-admin-context-ts.png" alt-text="Screenshot showing opening Web portal, Open Admin context, project level for TFS 2018.":::
-
-   If you're working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and select **Project settings**.  
-
-   :::image type="content" source="../../media/settings/open-project-settings-horz.png" alt-text="Screenshot showing Open Project Settings for TFS 2018.":::
-
-2. Select **Work** > **Areas**.  
-
-3. Select the **...** context menu for the node you want to manage and choose **Security**.  
-
-   :::image type="content" source="media/work-tracking/set-permissions-area-node-open.png" alt-text="Screenshot showing context menu, select Security for TFS 2018.":::
-
-::: moniker-end   
+   
 
 ### Default permissions for work items
 
@@ -317,23 +299,7 @@ To edit the permissions for a Delivery Plan, you must be the creator of the plan
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"  
-
-1. Select  **Work** > **Plans**. For more information, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
-
-2. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
-
-   :::image type="content" source="../../boards/plans/media/permissions/open-plans-security.png" alt-text="Screenshot showing the Security button for plan permissions, highlighted by a red box.":::   
-
-3. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)). By default, nonadministrators can't delete or edit a plan. 
-
-4. With the user or group selected, set the permission you want them to have to **Allow**.
-   
-   :::image type="content" source="../../boards/plans/media/permissions/permissions-plans-dialog.png" alt-text="Screenshot showing the permissions dialog for a delivery plan.":::
-
-5. **Save** when you're done. 
-
-::: moniker-end  
+  
 
 ### Default permissions for Delivery Plans
 
@@ -448,7 +414,7 @@ If your on-premises deployment includes reporting, add users to those resources.
 
 ## Related articles 
 
-- [Grant or restrict access](restrict-access.md)  
+- [Manage access](restrict-access.md)  
 - [Rules and rule evaluation](../settings/work/rule-reference.md)  
 - [Permissions and groups reference](permissions.md)
 - [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites)

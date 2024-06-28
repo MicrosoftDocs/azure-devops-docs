@@ -58,21 +58,7 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-<a id="add-team-team-services"></a> 
-
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
-
-    ![Open project admin page](../../organizations/settings/media/add-team/open-admin-context-tfs-2017.png) 
-
-1. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. If you don't select this option, you'll have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
-
-    ![Create a sub-team with its own area path](../../organizations/settings/media/add-team/create-team-dialog.png)
-
-    Repeat this step for all feature and management teams you want to create. 
-
-::: moniker-end  
+  
 
 
 ## Move area paths into a hierarchical structure
@@ -105,30 +91,7 @@ You do this by opening each area path associated with a feature team and changin
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-
-1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.   
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Admin context, project level](../../organizations/settings/media/areas/modify-areas-its-open-admin-context-ts.png)
-
-    If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
-
-    > [!div class="mx-imgBorder"] 
-    > ![Open Project Settings, horz nav](../../media/settings/open-project-settings-horz.png)
-
-1. Choose **Work**.  
-
-2. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under its corresponding management team area path.  
-
-    For example, here we move the Customer Profile to under Account Management.
-
-    > [!div class="mx-imgBorder"]
-    > ![Edit area path dialog](media/config-teams/edit-area-path.png)
-
-    Repeat this step for all feature team area paths. 
-
-::: moniker-end   
+   
 
 
 ## Include subarea paths for management teams
@@ -136,7 +99,7 @@ You do this by opening each area path associated with a feature team and changin
 By including subarea paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude subarea paths. 
 
 > [!NOTE]   
-> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. For more information, see [Exercising select features with shared area paths](#op-issues) later in this article. 
+> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the board Column, Done, and Lane fields. For more information, see [Exercising select features with shared area paths](#op-issues) later in this article. 
 
 ::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly go to it from **Teams**. 
@@ -170,28 +133,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"   
 
-1. You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
-
-   > [!div class="mx-imgBorder"]  
-   > ![Open team settings](../../organizations/settings/media/team-defaults/open-team-settings-horz.png) 
-
-1. Choose **Work**, and then **Areas**. 
-
-2. Choose **Select area(s)**, and select the area path for **Account Management** and check the **Include sub areas** checkbox. 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Select areas for Account Management team](media/config-teams/include-sub-area-paths.png)   
-
-    Verify that only this area path is selected for the team and is the default area path. Remove any other area paths that may have been previously selected.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Verify area paths for Account Management team](media/config-teams/verify-area-path-assignments.png)   
-
-    Repeat this step for all your management areas. If you want to enable rollup across all feature teams and management areas to the top-level area, repeat this step for the default team. In our example, that corresponds to Fabrikam Fiber.   
-
-::: moniker-end
 
 
 ## Define a single sprint cadence for all teams 
@@ -224,12 +166,7 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 > ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
 
-> [!div class="mx-imgBorder"]  
-> ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
-::: moniker-end
 
 <a id="op-issues"></a>
 
@@ -237,7 +174,7 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 
 When you share area paths across two or more teams, you'll want to understand how Azure Boards manages conflicts that can arise when exercising these features: 
 - Reordering or reparenting work items on a backlog or board
-- Updates made to  Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields when dragging items to a different column 
+- Updates made to  K**Board Column**, **Board Column Done**, and **Board Lane** fields when dragging items to a different column 
 
 ### Reordering and reparenting work items 
 
@@ -248,20 +185,18 @@ You can only use drag-and-drop to reorder or reparent work items assigned to are
 :::image type="content" source="media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
 
-### Kanban board column updates  
+### Board column updates  
 
-Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
+Because each team can customize the board columns and swimlanes, the values assigned to board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's board won't be reflected on another team's board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
 
-By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are non-deterministic.  
+By design, the team with the longest area path wins the conflict and determines the values for the **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are non-deterministic.  
  
 ::: moniker range=">= azure-devops-2019"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For more information, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
- The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For more information, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
-::: moniker-end
+
 
 
 ## Next steps

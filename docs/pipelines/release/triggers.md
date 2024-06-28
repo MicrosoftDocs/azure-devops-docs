@@ -13,9 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 ::: moniker range="azure-devops"
 > [!NOTE] 
@@ -46,7 +44,7 @@ Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Dis
 > [!div class="mx-imgBorder"]
 > ![Defining schedules to trigger releases](media/trigger-04.png)
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 <a id="prsettrigger"></a>
 

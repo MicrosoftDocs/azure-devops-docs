@@ -5,7 +5,7 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 09/06/2023
+ms.date: 06/27/2024
 monikerRange: '>= azure-devops'
 "recommendations": "true"
 ---
@@ -49,11 +49,11 @@ You might need to manually create a managed identity that uses federated credent
 
 1. Select the **Other issuer** scenario.
 
-1. Enter values for **Issuer** and **Subject identifier**. You replace these values later.
+1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later when you create a service connection.
 
     |Field  |Description  |
     |---------|---------|
-    |Issuer     |  Enter `https://app.vstoken.visualstudio.com/<unique-identifier>`.      |
+    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).      |
     |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. The service connection doesn't need to be already created.      |
 
 1. Select **Save**.
@@ -141,11 +141,11 @@ You might need to manually create a service principal that has federated credent
 
     :::image type="content" source="approvals/media/federated-credential-scenario.png" alt-text="Screenshot that shows selecting a federated credentials scenario.":::
 
-1. Enter values for **Issuer** and **Subject identifier**:
+1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later when you create a service connection.
 
     |Field  |Description  |
     |---------|---------|
-    |Issuer     |  Enter `https://app.vstoken.visualstudio.com/<unique-identifier>`.      |
+    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).  |
     |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. Your service connection doesn't need to already be created.      |
 
 1. Select **Save**.

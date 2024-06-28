@@ -143,55 +143,9 @@ A subscription lets you control what your team is notified of and how the team r
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018" 
+  
 
-1. Open the **Notifications** page in **Team settings**: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
-
-    > [!div class="mx-imgBorder"] 
-    >![Go to team notifications page](media/nav-team-notifications-hub.png) 
-
-2. Select **New subscription**. 
-
-   ![New subscription](media/new-subscription.png)
-
-3. Select the type of activity you want your team to be notified of.
-
-    ![Select event category and template](media/new-sub-page1.png)
-
-4. Provide a description to help you identify the subscription later.
-
-    ![Provide a description.](media/new-sub-description.png)
-
-5. Choose which team members should receive a notification:
-
-    ![Select role](media/new-sub-team-delivery-by-role.png)
-
-   Choose from one of the following delivery options:
-
-   |Deliver to  |Description  |
-   |---------|---------|
-   |**Members of Azure DevOps by role**    |  Only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.       |
-   |**Team preference**   | use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).        |
-   |**Custom email address**    |  Send an email to a specified email address.       |
-   |**Members of Azure DevOps**   |  Send an individual email to each member of the team.       |
-   |**SOAP**    | Send to an email address.      |
-
-
-    For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
-
-6. Choose whether you want to receive notifications about activity in all projects or only a specific project.
-
-    ![Select scope](media/new-sub-scope.png)
-
-7. Optionally, configure more filter criteria.
-
-    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
-
-8. Select **Finish** to save the new subscription.
-
-::: moniker-end  
-
-<a name="manage" />
+<a name="manage"></a>
 
 > [!TIP]
 > If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).
@@ -221,41 +175,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
- 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
-
-   ![Group notification settings](media/group-notification-settings.png) 
-
-4. Choose which option best fits your group's needs, and then select **Save**.  
-
-   ![Delivery settings options for group.](media/group-delivery-settings.png)
-
-Your group delivery settings are updated for notifications.
-
-## Manage team and project delivery settings
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-1. Select **Project settings** > **Notifications**.
-
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted.":::
-
-2. Choose **Delivery settings**:
-
-   ![Delivery settings](media/delivery-settings-newnav.png)
-
-3. Choose which option best fits your team's needs:  
-
-    ![Delivery settings options for team and project.](media/delivery-settings-options.png)
-
-Your team delivery settings are updated for notifications.
-
-::: moniker-end
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 

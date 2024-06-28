@@ -18,7 +18,7 @@ ms.date: 03/03/2023
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. Or, they can schedule bugs to be fixed within a sprint along with other tasks.
 
-When you *track bugs as **requirements***, they appear on the product Backlogs and Kanban boards. When you *track bugs as **tasks***, the bugs appear on Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
+When you *track bugs as **requirements***, they appear on the product Backlogs and boards. When you *track bugs as **tasks***, the bugs appear on Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -46,7 +46,7 @@ In the following steps, we show how to change it from the board view.
 ::: moniker range=">= azure-devops-2019"  
 
 1.  Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select your project.
-2.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+2.  [Open your board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the board.
 3. Choose **Board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
@@ -59,29 +59,11 @@ In the following steps, we show how to change it from the board view.
 
 5. When you're done with your changes, choose **Save**.  
 
-6. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-overview.md). 
+6. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [board](../../boards/boards/kanban-overview.md). 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-2. Choose **Board settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the settings dialog.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
-
-3. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
-
-	> [!div class="mx-imgBorder"]
-	> ![Settings, working with bugs dialog](media/show-bugs-dialog.png)  
-
-4. When done with your changes, choose **Save**.  
-
-5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-overview.md).
-
-::: moniker-end
 
 
 ## Nest items   
@@ -89,7 +71,7 @@ In the following steps, we show how to change it from the board view.
 When you manage bugs with requirements or tasks, they appear on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md).
 
 > [!TIP]  
-> If, after refreshing a backlog or board, you don't see bugs where you expect to see them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the Kanban or task boards.  
+> If, after refreshing a backlog or board, you don't see bugs where you expect to see them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the or task boards.  
 > 
 <a id="add-other-wits"></a> 
 
@@ -107,17 +89,11 @@ You can add other work item types&#8212;such as change requests, issues, or impe
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"    
-
-You can add other work item types&#8212;such as change requests, issues, or impediments—by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
-
-::: moniker-end
-
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
 ## Create, list, and manage bugs 
 
-Bugs that are managed with requirements can be added through the [product backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-quickstart.md). When bugs are managed along with tasks, you can add them to a [sprint backlog or task board](../../boards/sprints/add-tasks.md). Or, capture them using other tools. For more information, see [Define, triage, and manage bugs](../../boards/backlogs/manage-bugs.md).
+Bugs that are managed with requirements can be added through the [product backlog](../../boards/backlogs/create-your-backlog.md) or [board](../../boards/boards/kanban-quickstart.md). When bugs are managed along with tasks, you can add them to a [sprint backlog or task board](../../boards/sprints/add-tasks.md). Or, capture them using other tools. For more information, see [Define, triage, and manage bugs](../../boards/backlogs/manage-bugs.md).
 
 > [!TIP]
 > Effort should automatically be part of a bug, but if you don't see it, customize the bug work item type for it to appear.

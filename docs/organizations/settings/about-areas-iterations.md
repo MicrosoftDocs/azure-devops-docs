@@ -60,7 +60,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 > [!NOTE]  
 > Projects are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
 > 
-> Also, while you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md).  
+> Also, while you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).  
 
 As needed, you can do the following actions at any time: 
 
@@ -147,13 +147,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 
 <a name="field-rules"></a>
 
-::: moniker range="tfs-2018"
 
-## Supported field rules  
-
-You can [specify only a small subset of rules](../../organizations/settings/work/rule-reference.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
-
-::: moniker-end
 
 
 ## Related articles 

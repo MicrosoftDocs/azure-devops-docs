@@ -52,27 +52,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From the repo drop-down, select **Import repository**.
-
-![Import Repository Option](media/Import-Repo/ImportRepository.png)
-
-1. Select TFVC from the **Source type** dropdown
-
-2. Type the path to the repository / branch / folder that you want to import to the Git repository. For example, `$/Fabrikam/FabrikamWebsite`
-
-3. If you want to migrate history from the TFVC repository, click **Migrate history** and select the number of days. You can migrate up to 180 days of history starting from the most recent changeset. 
-A link to the TFVC repository is added in the commit message of the 1st changeset that is migrated to Git. This makes it easy to find older history when needed.
-
-4. Give a name to the new Git repository and click **Import**. Depending on the size of the import, your Git repository would be ready in a few minutes. 
-
-![Import Repository Dialog](media/Import-Repo/ImportRepoDialog-TFVC.png)
-
-> [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we recommend that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
-
-::: moniker-end
 
 ### Troubleshooting
 

@@ -5,7 +5,7 @@ description: Learn how to share steps between test cases when you want to test w
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
@@ -47,7 +47,7 @@ If you reopen the work item, you can select the shared step to open a new shared
    ![Screenshot shows the new work item with the shared steps.](media/shared-steps/shared-steps-work-item.png)  
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 While you edit a test case, select a sequence of steps that you want to share:  
   
@@ -82,7 +82,7 @@ You can add shared steps to other test cases.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Now you can use the shared steps in another test case:  
   
@@ -102,7 +102,7 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 When you [run a test](run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
   

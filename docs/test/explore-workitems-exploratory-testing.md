@@ -1,11 +1,11 @@
 ---
 title: Explore work items when exploratory testing
-description: Test tools - Manual and exploratory testing - explore work items from the Kanban board or by using the Microsoft Test & Feedback extension
+description: Test tools - Manual and exploratory testing - explore work items from the board or by using the Microsoft Test & Feedback extension
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
@@ -22,24 +22,24 @@ in the current session are automatically linked to that work item, which enables
 
 Explore the following items:
 - Work items belonging to a requirement category, a feature category, or an epic category and requirements-based test suites and test cases
-- A work item from the [Kanban board](#kanban) or from the [extension](#extension)
+- A work item from the [board](#kanban) or from the [extension](#extension)
 - [Multiple work items in the same session](#multipleitems)
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 <a name="kanban"></a>
 
-## Explore work items from the Kanban board
+## Explore work items from the board
 
-1. In the Kanban board, open the shortcut menu of the work item you want to explore, and select **Do exploratory testing**.
+1. In the board, open the shortcut menu of the work item you want to explore, and select **Do exploratory testing**.
 
    ![Screenshot showing opening the Do exploratory testing menu item.](media/explore-workitems-exploratory-testing/explore-workitems-01.png)
    
-1. A banner in the Work hub shows which work item is associated with your session.
+2. A banner in the Work hub shows which work item is associated with your session.
 
    ![Screenshot showing the banner with the work item for your session.](media/explore-workitems-exploratory-testing/explore-workitems-02.png)
 
-2. Launch the Test & Feedback extension. 
+3. Launch the Test & Feedback extension. 
    Any acceptance criteria for the work item are shown.
 
    ![Screenshot showing launching the Test - Feedback extension.](media/explore-workitems-exploratory-testing/explore-workitems-03.png)
@@ -47,7 +47,7 @@ Explore the following items:
    If you didn't already start a session, start one now. 
    The work item automatically associates with the current or new session. 
 
-3. All bugs, tasks, and test cases you create automatically link to the current work item.
+4. All bugs, tasks, and test cases you create automatically link to the current work item.
 
    ![Screenshot showing view of the current work item.](media/explore-workitems-exploratory-testing/explore-workitems-04.png)
 

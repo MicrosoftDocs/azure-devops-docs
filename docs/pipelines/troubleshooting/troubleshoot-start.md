@@ -5,7 +5,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
-ms.date: 10/12/2023
+ms.date: 04/02/2024
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -156,7 +156,7 @@ If the above error is received while configuring the agent, log on to your TFS m
 ![is TFS anonymous authentication enabled](../media/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=846610 -->
-<a name="renew-lock" />
+<a id="renew-lock"></a>
 
 ### Agent lost communication
 

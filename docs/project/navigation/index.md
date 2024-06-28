@@ -34,10 +34,7 @@ Each service provides you with one or more pages that support many features and 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-The web portal for Team Foundation Server is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages that support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact. 
-::: moniker-end
 
 Here's what you need to know to get up and running using the web portal.  
 
@@ -54,18 +51,7 @@ Here's what you need to know to get up and running using the web portal.
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
-- [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-- [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
-- [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or your favorite items 
-- [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
-- [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
-- [**Search box**](../search/get-started-search.md): use to find code, work items, or wiki content 
-- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
-- [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): use to add teams, manage security, and configure other project and organization-level resources. 
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 > [!NOTE]  
@@ -81,12 +67,7 @@ You select services—such as **Boards**, **Repos**, and **Pipelines—from the 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-You select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
 
-![Horizontal navigation](media/gif-images/horizontal-nav.gif)
-
-::: moniker-end
 
 
 Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are numerous features and functionality.  
@@ -107,7 +88,7 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 You connect to the web portal through a supported web browser&mdash;such as the latest versions of Microsoft Edge, Chrome, Safari, or Firefox. Only users who [added to a project](../../organizations/security/add-users-team-project.md) can connect, which is typically done by a member of the Project Administrators group.
 
@@ -141,7 +122,7 @@ Although you can access source code, work items, and builds from both clients, s
 :::row:::
    :::column span="2":::
       - [Product backlog](../../boards/backlogs/create-your-backlog.md), [Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md), [Sprint backlogs](../../boards/sprints/assign-work-sprint.md), [Taskboards](../../boards/sprints/task-board.md), [Capacity planning](../../boards/sprints/set-capacity.md) 
-      - [Kanban boards](../../boards/boards/kanban-overview.md) 
+      - [Boards](../../boards/boards/kanban-overview.md) 
       - [Dashboards](../../report/dashboards/dashboards.md), [Widgets](../../report/dashboards/widget-catalog.md), [Charts](../../report/dashboards/charts.md) 
       - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Web-based Test Management](../../test/overview.md)  

@@ -158,7 +158,7 @@ If you typically organize your user stories under features, you can quickly find
 Or, you can find unparented backlog items using a **Work items and direct links** query. For example, the following query lists active user stories for the Azure DevOps team that don't have a Parent link. 
 
 :::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal, unparented user stories.":::
-<a id="table-field"/>
+<a id="table-field"></a>
 <a id="fields"></a>
 
 ## Fields associated with links and attachments

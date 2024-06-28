@@ -105,19 +105,7 @@ From your web browser, open your product backlog.
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Open the Boards, Backlogs page, TFS-2018 version.](../sprints/media/assign-items-sprint/open-work-backlogs-standard.png) 
-
-To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Choose another team, TFS-2018 version.](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
-	
-::: moniker-end
 
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)]
@@ -168,17 +156,7 @@ You can set various options to view backlog work items using the **View options*
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag items to reparent items from this view.   
-
-![Hierarchical view of backlogs](media/org-backlog-intro-show-parents-ts-new-nav.png) 
-
-Use the :::image type="icon" source="../media/icons/expand_icon.png" border="false"::: **Expand** and :::image type="icon" source="../media/icons/collapse_icon.png" border="false"::: **Collapse** icons to expand or collapse one level of the hierarchy.  
-  
-![Collapsed hierarchical view](media/org-backlog-collapse-backlog-ts-new-nav.png) 
-
-::: moniker-end
 
 
 <a id="mapping">  </a>
@@ -225,15 +203,7 @@ If you've already created your backlog, and now you want to organize it, you can
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-To map a backlog item under a feature, you first turn on mapping from your backlog (Backlog items, Stories, or Requirements). Next, find the Unparented backlog items group by turning the **Parents** control to **Show**. Unparented backlog items appear at the end of the parented set of backlog items. 
- 
-Drag items that are currently unparented to the feature under which they belong. Also, you can drag a backlog item to a different feature to change its parent. This mapping creates parent-child links from feature to user stories, which is captured in the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png) (links) tab.
-
-![Screenshot of Map a backlog item to a portfolio backlog work item.](media/org-backlog-map-pbi-to-feature-ts-new-nav.png) 
-
-::: moniker-end
 
 You can multi-select backlog and sprint backlog items in the same way as you [multi-select items from query results](../backlogs/bulk-modify-work-items.md).   
 

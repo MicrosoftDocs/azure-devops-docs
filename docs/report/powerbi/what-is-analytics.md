@@ -95,7 +95,7 @@ If you want to develop your own widget based on Analytics, see [Create an Analyt
 
 ## In-context reports and roll-up columns 
 
-Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and Kanban boards. Also, there are some pipelines and test in-context reports. To learn more, see the following articles: 
+Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and boards. Also, there are some pipelines and test in-context reports. To learn more, see the following articles: 
 
 - [Cumulative flow](../dashboards/cumulative-flow.md)
 - [Team velocity](../dashboards/team-velocity.md)

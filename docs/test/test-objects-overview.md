@@ -5,7 +5,7 @@ description: Understand the different test objects and terms that support manual
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
@@ -70,7 +70,7 @@ The following table describes the work item types used to support the Azure DevO
       - [**Manual**](create-test-cases.md): Test cases that define different steps that you run using Test Runner or other supported client. 
       - [**Automated**](run-automated-tests-from-test-hub.md): Test cases that are designed to run within an Azure Pipeline.
       > [!TIP]
-      > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
+      > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
    :::column-end:::
 :::row-end:::
 :::row:::

@@ -290,7 +290,7 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 
 ## Restrict state transitions 
 
-For inherited processes, any-to-any state transitions are automatically defined. This allows users to advanced the workflow state from new to completed, but also to move backwards in case that is needed. When defining custom rules to restrict a transition, keep in mind that if a user makes a mistake in updating the workflow, they may not be able to correct it. For example, they could update the status by moving a work item card to a later stage on the Kanban board, but not move it back. 
+For inherited processes, any-to-any state transitions are automatically defined. This allows users to advanced the workflow state from new to completed, but also to move backwards in case that is needed. When defining custom rules to restrict a transition, keep in mind that if a user makes a mistake in updating the workflow, they may not be able to correct it. For example, they could update the status by moving a work item card to a later stage on the board, but not move it back. 
 
 > [!TIP]  
 > Consider restricting a state transition for some but not all users. That way, if a user makes a mistake, they can ask another team member to reset the State value to bypass the restriction.

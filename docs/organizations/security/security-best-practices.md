@@ -16,7 +16,7 @@ ms.date: 11/09/2023
 
 When you're working with information and data, particularly in a cloud-based solution like Azure DevOps Services, prioritizing security should always be your primary concern. While Microsoft maintains the security of the underlying cloud infrastructure, it's your responsibility to configure security in Azure DevOps.
 
-Although it's not mandatory, incorporating best practices while using Azure DevOps can enhance your experience and make it more secure. We've compiled the following best practices that aim to keep your Azure DevOps environment secure:
+Although it's not mandatory, incorporating best practices while using Azure DevOps can enhance your experience and make it more secure. The following best practices aim to keep your Azure DevOps environment secure:
 
 - Securing your [Azure DevOps environment](#secure-azure-devops-environment)
 - Restrict access through [scoped permissions](#scoped-permissions) at the organization/collection, project, or object level
@@ -32,7 +32,7 @@ Although it's not mandatory, incorporating best practices while using Azure DevO
 - If your organization uses MSA accounts, then remove inactive users directly from the organization, as you have no other way to prevent access. When you do so, you can't create a query for work items assigned to the removed user account. For more information, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
 - If your organization is connected to Microsoft Entra ID, then you can disable or delete the Microsoft Entra user account and leave your Azure DevOps user account active. In this way, you can continue to query work item history using your Azure DevOps user ID.
 - [Revoke user PATs](../accounts/admin-revoke-user-pats.md).
-- Revoke any special permissions that may have been granted to individual user accounts.
+- Revoke any special permissions that were granted to individual user accounts.
 - Reassign work from users you’re removing to current team members.
 
 <a name='use-azure-ad'></a>
@@ -41,14 +41,14 @@ Although it's not mandatory, incorporating best practices while using Azure DevO
 
 Integrate Azure DevOps with Microsoft Entra ID to have a single plane for identity. Consistency and a single authoritative source increases clarity and reduces security risks from human errors and configuration complexity. The key to end governance is to have multiple role assignments (with different role definitions and different resource scopes to the same Microsoft Entra groups). Without Microsoft Entra ID, you're solely responsible for controlling organization access. 
 
-Using Microsoft Entra ID also allows you to access other security features, like multi-factor authentication or other conditional access policies.
+Using Microsoft Entra ID also allows you to access other security features, like multifactor authentication or other conditional access policies.
 
 For more information, see the following articles:
 - [About accessing your organization with Microsoft Entra ID](../accounts/access-with-azure-ad.md)
 - [Add Active Directory / Microsoft Entra users or groups to a built-in security groups](add-ad-aad-built-in-security-groups.md)
 - [Limit access by location or IP addresses](/azure/active-directory/conditional-access/howto-conditional-access-policy-location)
 - [Manage conditional access](../accounts/change-application-access-policies.md)
-- [Require all users to use multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Require all users to use multifactor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)
 
 ### Review auditing events
 
@@ -70,7 +70,7 @@ A few ways to do so might include:
 The system manages permissions at different levels - individual, collection, project, and object - and assigns them to one or more built-in groups by default.
 
 - Only give users and services the minimum amount of access needed to perform their business functions.
-- Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance-and-security-groups). 
+- Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance). 
 - Learn more about permissions here:
   - [Permissions and role lookup guide](permissions-lookup-guide.md)
   - [Permissions, security groups, and service accounts reference](permissions.md)
@@ -205,7 +205,7 @@ If possible, we recommended to always use identity services for authentication i
 ## Secure Azure Pipelines
 
 - [Use extends templates](../../pipelines/security/templates.md#use-extends-templates).
-- For more information about how to set permission levels for pipelines, see [Set pipeline permissions](../../pipelines/policies/set-permissions.md). 
+- For more information about how to set permission levels for pipelines, see [Set pipeline permissions](../../pipelines/policies/permissions.md). 
 - For more information about Azure Pipelines security best practices, see [Securing Azure Pipelines](../../pipelines/security/overview.md).
 
 ### Policies
@@ -241,7 +241,7 @@ If possible, we recommended to always use identity services for authentication i
 
 - Avoid remotely fetched resources, but, if necessary, use versioning and hash checking. 
 - Don’t log secrets. 
-- Don’t store secrets in pipeline variables, use Azure Key Vault. Regularly scan your build pipelines to ensure secrets aren’t being stored in build pipeline variables. 
+- Don’t store secrets in pipeline variables. Use Azure Key Vault. Regularly scan your build pipelines to ensure secrets aren’t being stored in build pipeline variables. 
 - Don’t let users run builds against arbitrary branches or tags on security-critical pipelines. 
 - Disable inheritance on the pipeline, as inherited permissions are broad and don’t accurately reflect your needs for permissions. 
 - Limit job authorization scopes in all cases. 
@@ -253,11 +253,11 @@ If possible, we recommended to always use identity services for authentication i
 - Store production secrets in a separate Key Vault and ensure that access is only granted on a need-to-know basis to keep nonproduction builds separate.  
 - Don’t mix test environments with production, including use of credentials.  
 - Disable forking. The more forks there are, the harder it's to keep track of each fork’s security. Also, a user can easily fork a copy of a repository to their own private account.
-- [Don't provide secrets to fork builds](../../pipelines/security/repos.md#dont-provide-secrets-to-fork-builds).
-- [Consider manually triggering fork builds](../../pipelines/security/repos.md#consider-manually-triggering-fork-builds).
-- [Use Microsoft-hosted agents for fork builds](../../pipelines/security/repos.md#use-microsoft-hosted-agents-for-fork-builds).
+- [Don't provide secrets to fork builds](../../pipelines/security/misc.md#dont-provide-secrets-to-fork-builds).
+- [Consider manually triggering fork builds](../../pipelines/security/misc.md#consider-manually-triggering-fork-builds).
+- [Use Microsoft-hosted agents for fork builds](../../pipelines/security/misc.md#use-microsoft-hosted-agents-for-fork-builds).
 - For Git, check your production build definitions in the project’s git repository, so they can be scanned for credentials.
-- Configure a branch control check so that only pipelines running in the context of the `production` branch may use the `prod-connection`.
+- Configure a branch control check so that only pipelines running in the context of the `production` branch might use the `prod-connection`.
 - For more information, see [Other security considerations](../../pipelines/security/misc.md).
 
 ## Secure Azure Repos

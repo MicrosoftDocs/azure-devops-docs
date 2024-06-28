@@ -104,7 +104,7 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 > [!IMPORTANT]
 > We recommend storing each of the following passwords in a [secret variable](../process/variables.md#secret-variables).
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: AndroidSigning@2
@@ -156,7 +156,7 @@ Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-tes
 
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yml
 # App Center test v1
@@ -211,7 +211,7 @@ Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-tes
 
 Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. Your APK gets stored with the build record or test, and gets deployed in later pipelines. For more information, see [Artifacts](../artifacts/pipeline-artifacts.md).
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: CopyFiles@2
@@ -229,7 +229,7 @@ Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and 
 
 Add the [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3) task to distribute an application to a group of testers or beta users, or promote the application to Intune or Google Play. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yml
 # App Center distribute v3
@@ -271,7 +271,7 @@ using a [service connection](..//library/service-endpoints.md) that you configur
 Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release)
 task to release a new Android app version to the Google Play store.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: GooglePlayRelease@4
@@ -288,7 +288,7 @@ task to release a new Android app version to the Google Play store.
 Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote)
 task to promote a previously released Android application update from one track to another, such as `alpha` &rarr; `beta`.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: GooglePlayPromote@3
@@ -306,7 +306,7 @@ task to promote a previously released Android application update from one track 
 Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout)
 task to increase the rollout percentage of an application that was previously released to the `rollout` track.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: GooglePlayIncreaseRollout@2
@@ -323,7 +323,7 @@ task to increase the rollout percentage of an application that was previously re
 Add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update)
 task to update the rollout status for the application that was previously released to the `rollout` track.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
   - task: GooglePlayStatusUpdate@2
@@ -354,7 +354,7 @@ Next, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/dow
 
 In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: DownloadSecureFile@1

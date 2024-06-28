@@ -4,7 +4,7 @@ description: Learn how to review pipeline diagnostic logs to troubleshoot
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
-ms.date: 03/06/2024
+ms.date: 04/02/2024
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -31,7 +31,7 @@ A typical starting point is to review the logs in your completed build or releas
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.debug` variable to `true`.
 * To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.debug`, set its value to `true`, and select to **Allow at Queue Time**.
@@ -71,7 +71,7 @@ To download all logs, navigate to the build results for the run, select **...**,
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 To download all logs, navigate to the build results for the run, choose **Download all logs as zip**.
 

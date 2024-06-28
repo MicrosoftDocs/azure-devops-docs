@@ -33,11 +33,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-![Screenshot of Sprint planning, TFS 2018.](media/sp-intro.png) 
-
-::: moniker-end
 	
 In this article you'll learn how to:  
 
@@ -123,23 +119,7 @@ From your web browser, open your product backlog.
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot, Open the Boards>Backlogs page, TFS 2018.](media/assign-items-sprint/open-work-backlogs-standard.png)  
-
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Choose another team](media/assign-items-sprint/team-selector-backlogs-standard.png)  
-
-	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
-
-1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. For more information, see [Change column options](../backlogs/set-column-options.md).
-
-::: moniker-end  
+  
 
 
 <a id="drag-drop"></a>
@@ -181,17 +161,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-Select one or more items and drag them to one of the listed sprints.  
-
-> [!NOTE]   
-> The **Iteration Paths** listed only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. Only a team administrator or member of the **Project Administrators** group can [select iterations for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
-	
-> [!div class="mx-imgBorder"]
-> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](media/sp-assign-to-sprints.png)    
-
-::: moniker-end
 
 
 <a id="bulk-modify">  </a>

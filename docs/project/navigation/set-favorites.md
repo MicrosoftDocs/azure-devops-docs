@@ -36,16 +36,7 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
->[!div class="checklist"]  
-> - Project 
-> - Shared query 
-> - Repository
-> - Build and release definition   
-> - Test plans  
-
-::: moniker-end
 
 ## Prerequisites
 
@@ -59,7 +50,7 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 * You must connect to a project through the web portal. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
 * You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
@@ -88,19 +79,7 @@ Access views that you have favorited by choosing the :::image type="icon" source
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Access views that you have favorited by choosing the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
-
-2. Choose **My Favorites** to quickly access any view or item that you've marked as a favorite. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Projects page, Favorites page](media/favorites/project-page-favorites-horz.png)   
-
-::: moniker-end
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -126,18 +105,7 @@ Access views that you have favorited by choosing the :::image type="icon" source
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Favorite a project
-
-To favorite a project, open the project **Summary** page and choose the ![favorites](../../media/icons/icon-favorite-star.png) star icon.
-
-> [!div class="mx-imgBorder"]  
-> ![web portal, Azure DevOps logo](media/favorites/favorite-project-horz-brn.png)
-
-Or, you can favorite a project from the **Projects** page by choosing the ![favorites](../../media/icons/icon-favorite-star.png) star icon next to the project. 
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -168,7 +136,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 
 ::: moniker range=">= azure-devops-2019"
 
-## Favorite a team's backlog, Kanban board, or other view
+## Favorite a team's backlog, board, or other view
 
 You can favorite several Agile tools for a team from a **Boards** page. 
 1. Choose **Boards**, and then choose the page of interest, such as **Boards**, **Backlogs**, or **Sprints**.  
@@ -209,13 +177,7 @@ You can also set a query as a personal favorite by opening the query and choosin
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Open **Work>Queries**. Next, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
-
-![Web portal, Work, Queries, Add to my favorites](media/set-favorites-shared-query.png)
-
-::: moniker-end
 
 
 ## Favorite a delivery plan 
@@ -227,11 +189,7 @@ To learn more about delivery plans, see [Review team Delivery Plans](../../board
 To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the Delivery Plan. 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
 
-To mark a delivery plan as a favorite, open the **Work>Plans** page and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the Delivery Plan.
-
-::: moniker-end
 
 
 ## Favorite a repository
@@ -245,14 +203,7 @@ From any **Repos** page, open the repository selector and choose the :::image ty
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From any **Code** page, open the repository selector and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the repository you want to favorite. 
-
-> [!div class="mx-imgBorder"]  
-> ![Web portal, Code, Favorite a repo](media/set-favorites-repository.png) 
-
-::: moniker-end
 
 
 ## Favorite a build pipeline  
@@ -267,14 +218,7 @@ Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Ch
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-Open **Build and Release>Builds** and choose either **Mine** or **Definitions** page. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
-
-> [!div class="mx-imgBorder"]  
-> ![Build & Release, Builds, Add to my favorites or team favorites, previous navigation](media/favorites/set-favorites-build-definitions.png)
-
-::: moniker-end
 
 ## Favorite a test plan 
 
@@ -286,11 +230,7 @@ To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-To mark a test plan as a favorite, open the **Test>Test Plans** page and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to a test plan from the menu that shows All test plans. 
-
-::: moniker-end
 
 
 <a id="unfavorite"> </a>
@@ -307,13 +247,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can unfavorite an artifact from the **Projects>Favorites** page and choose the :::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon of a currently favorited artifact. 
-
-Similarly, you can unfavorite an artifact from the same page where you favorited it. 
-
-::: moniker-end
 
 
 
@@ -352,20 +286,7 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-
-> [!div class="mx-tdCol2BreakAll"]  
-> > |Service/area |  Artifacts  | Page |
-> |---------------|---------|---------| 
-> | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
-> | Code | Repositories | **Code>Branches**  (personal favorites only) | 
-> | Work  | Queries | **Work>Queries** |
-> | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) | 
-> | Build and Release | Pipeline definitions | **Build & Release>Build** or **Release**  | 
-> | Test | Test plans | **Test>Test Plans** (personal favorites only) |
-
-::: moniker-end
 
 
 -->

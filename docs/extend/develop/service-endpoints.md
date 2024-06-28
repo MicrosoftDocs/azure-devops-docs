@@ -23,11 +23,7 @@ Service endpoints are a way for Azure DevOps to connect to external systems or s
 - Certificates or tokens
 - User names and passwords
 
-::: moniker range="tfs-2018"
-> [!NOTE]
-> _Service endpoints_ are called _service connections_ in TFS 2018 and earlier versions.
-> _Pipelines_ are called _build definitions_ in TFS 2018 and and earlier versions.
-::: moniker-end
+
   
 Extensions are then able to use the service endpoint to acquire the stored details to do the necessary operations on that service. 
 Follow this guide to create a new service endpoint contribution and use it in your extension.
@@ -50,7 +46,7 @@ The steps involved in completing this task are:
 > [!NOTE]
 > This tutorial refers to the home directory for your project as "home".
 
-<a name="step1" />
+<a name="step1"></a>
 
 ## Create the manifest file: `vss-extension.json`
 
@@ -196,7 +192,7 @@ For this tutorial, this REST call returns nothing and is meant to be replaced by
 It's possible to use other parameters than the endpoint URL for the REST URL, for instance some endpoint properties.
 For instance, assuming that we had a property in the endpoint named subscriptionId, the REST URL could use it with the following syntax: $(endpoint.subscription).
 
-<a name="step2" />
+<a name="step2"></a>
 
 ## Create the build task
 

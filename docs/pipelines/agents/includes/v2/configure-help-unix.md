@@ -12,7 +12,7 @@ ms.date: 02/12/2020
 The agent can be set up from a script with no human intervention.
 You must pass `--unattended` and the answers to all questions.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 [!INCLUDE [unattend](./unattended-config.md)]
 

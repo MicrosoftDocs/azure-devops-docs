@@ -1,9 +1,9 @@
 ---
 title: Deploy an Azure Pipelines agent on Windows (2.x)
-description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (2.x)
+description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and Azure DevOps Server (2.x)
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 05/05/2023
+ms.date: 04/17/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,11 +14,11 @@ monikerRange: '<= azure-devops'
 :::moniker range="azure-devops"
 
 > [!IMPORTANT]
-> This article provides guidance for using the 2.x version agent software with Azure DevOps Server and TFS. If you're using Azure DevOps Services, see [Self-hosted Windows agents](windows-agent.md).
+> This article provides guidance for using the 2.x version agent software with Azure DevOps Server. If you're using Azure DevOps Services, see [Self-hosted Windows agents](windows-agent.md).
 
 :::moniker-end
 
-To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
+To build and deploy Windows, Azure, and other Visual Studio solutions you need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
@@ -48,8 +48,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Hardware specs 
 
-The hardware specs for your agents will vary with your needs, team size, etc.
-It's not possible to make a general recommendation that will apply to everyone.
+The hardware specs for your agents vary with your needs, team size, etc.
+It's not possible to make a general recommendation that applies to everyone.
 As a point of reference, the Azure DevOps team builds the hosted agents code using pipelines that utilize [hosted agents](hosted.md).
 On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
 running 4 self-hosted agents apiece.
@@ -65,7 +65,7 @@ running 4 self-hosted agents apiece.
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1. Log on to the machine using the account for which you've prepared permissions as explained in the previous section.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
@@ -83,7 +83,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Follow the instructions on the page to download the agent.
 
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
+1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`, and respond to a series of questions to configure the agent.
 
 ::: moniker-end
 
@@ -113,27 +113,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### TFS 2018
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **Windows**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page to download the agent.
-
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. 
-
-::: moniker-end
 
 > [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.
@@ -172,20 +152,20 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
 
-When you configure your agent to connect to TFS, you've got the following options:
+When you configure your agent to connect to Azure DevOps Server, you've got the following options:
 
-* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
+* **Alternate** Connect to Azure DevOps Server using Basic authentication. After you select Alternate you're prompted for your credentials.
 
-* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* **Negotiate** Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you're prompted for credentials.
 
-* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
+* **Integrated** (Default) Connect a Windows agent to Azure DevOps Server using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
-* **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
+* **PAT** After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your Azure DevOps Server instance and the agent machine are not in a trusted domain. PAT authentication is handled by your Azure DevOps Server instance instead of the domain controller.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. If the PAT needs to be regenerated, no further changes are needed to the agent. 
 
-Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
+Learn more at [Communication with Azure Pipelines or Azure DevOps Server](agents.md#communication).
 
 ::: moniker-end
 
@@ -221,9 +201,17 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 ### Run as a service
 
 If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
-- "Azure Pipelines Agent (*name of your agent*)".
-- "VSTS Agent (*name of your agent*)".
-- "vstsagent.(*organization name*).(*name of your agent*)".
+- `Azure Pipelines Agent (*name of your agent*)`
+- `VSTS Agent (*name of your agent*)`
+- `vstsagent.(*organization name*).(*name of your agent*)`
+
+> [!Note]
+> To allow more flexibility with access control of an agent running as a service it
+> is possible to set up the agent service SID type as [`SERVICE_SID_TYPE_UNRESTRICTED`] via
+> flag or prompt during interactive configuration flow.
+> By default, the agent service is configured with `SERVICE_SID_TYPE_NONE`.
+>
+> For more details about [SID](/windows-server/identity/ad-ds/manage/understand-security-identifiers) types please check this [documentation](/windows/win32/api/winsvc/ns-winsvc-service_sid_info#members).
 
 To restart the agent, right-click the entry and choose **Restart**.
 
@@ -304,7 +292,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ### How do I restart the agent
 
-If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
+If you're running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you're running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
 
 ::: moniker range="azure-devops"
 ### How do I set different environment variables for each individual agent?

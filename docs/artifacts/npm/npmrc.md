@@ -1,95 +1,79 @@
 ---
-title: Set up your client's npmrc
-description: How to set up your project and connect to Azure Artifacts feeds
+title: Connect your npm project to Azure Artifacts
+description: Learn how to set up your npm project and connect to Azure Artifacts
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 05/20/2024
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
-# Set up your project and connect to Azure Artifacts
+# Connect your npm project to Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables you to publish various package types to your feeds and install packages from both feeds and public registries like npmjs.com. Before we can authenticate with Azure Artifacts, we need to configure our *.npmrc* file, which stores the feed URLs and credentials that npm uses. This file can be used to customize the behavior of the npm client, such as setting up proxies, specifying default package locations, or configuring private package feeds. The *.npmrc* file is located in the user's home directory and can also be created at the project level to override the default settings. By editing the *.npmrc* file, users can customize their npm experience and make it more tailored to their needs.
+Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *.npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
 
-## Project setup
+## Prerequisites
 
-For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
 
-### [Windows](#tab/windows/)
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
+
+- An Azure Artifacts feed. [Create one for free](../get-started-npm.md#create-a-feed).
+
+- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+## Connect to Feed
+
+Azure Artifacts recommends using two separate configuration files. The first is dedicated to authenticating with Azure Artifacts, while the second should be kept locally to store your credentials. This approach allows you to share your configuration file while keeping your credentials secure.
+
+To set up the second file, simply place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
+
+The following steps will guide you through setting up the first configuration file:
+
+::: moniker range="< azure-devops"
+
+> [!NOTE]
+> `vsts-npm-auth` is not supported in Azure DevOps Server.
+
+::: moniker-end
 
 ::: moniker range="azure-devops"   
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
- 
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
-
-1. Select **npm** from the left navigation pane.
-
-1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
-
-1. Follow the instructions in **Project setup** to set up your config file.
-
-    :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
+### [Windows](#tab/windows/)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select **Connect to feed**.
+1. Select **Artifacts**, and then select **Connect to Feed**.
  
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../media/npm-connect-to-feed-azure-devops.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Services.":::
 
-1. Select **npm** from the left navigation pane.
+1. Select **npm** from the left sidebar. If this is the first time using Azure Artifacts with npm, make sure you've installed the prerequisites.
 
-1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
+1. Follow the instructions in the **Project setup** section to connect to your feed.
 
-1. Follow the instructions in **Project setup** to set up your config file.
-
-   :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed.":::
-
-1. Select **npm** from the left navigation pane.
-
-1. Follow the instructions provided in the **Other** tab to set up your project.
-
-::: moniker-end
-
-
-> [!TIP]
-> Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
+    :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
 
 ### [Other](#tab/other/)
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and copy the following snippet into it. 
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
-    ```Command
-    registry=https://pkgs.dev.azure.com/ramiMSFTDevOps/_packaging/OrgScopedDemo/npm/registry/ 
+    ```
+    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
                         
     always-auth=true
     ```
 
-1. Copy the following snippet into your user-level *.npmrc* file (~/.npmrc). Make sure that you don't add it to the *.npmrc* file in your source repository:
+### Setup credentials
+
+1. Copy the following snippet and paste it into your user-level *npmrc* file:
 
     - **Organization-scoped feed**:
 
-        ```Command
+        ```
         ; begin auth token
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
@@ -102,7 +86,7 @@ For best practice, we suggest using two separate configuration files. The first 
 
     - **Project-scoped feed**:
 
-        ```Command
+        ```
         ; begin auth token
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
@@ -115,80 +99,218 @@ For best practice, we suggest using two separate configuration files. The first 
 
 1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
-1. Encode your newly generated personal access token as follows:
+1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
 
-    1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
+    ```
+    node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+    ```
 
-        ```Command
-        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-        ```
+1. If you're on Linux/Mac, you can alternatively use the following command to convert your personal access token to Base 64. Copy the resulting Base64 encoded value.
 
-        You can also use the following command to convert your personal access token to Base64. 
+    ```
+    echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
+    ```
 
-        - **Linux/Mac**:
-            ```Command
-            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
-            ```
-    1. Copy the Base64 encoded value.
-
-1. Open your *.npmrc* file and replace the placeholder *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* with your encoded personal access token that you created in the previous step.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step.
 
 * * *
 
-> [!NOTE]
-> `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
+::: moniker-end
 
-## Pipeline authentication
+::: moniker range="azure-devops-2022"
 
-For authentication with your pipeline, Azure Artifacts recommends using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). When using a task runner like gulp or Grunt, it's important to add the npm authenticate task to the beginning of your pipeline. By doing so, your credentials are injected into your project's *.npmrc* file and persisted during the pipeline run, enabling subsequent steps to use the credentials in the configuration file.
+### [Windows](#tab/windows/)
 
-### [Classic](#tab/classic)
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-::: moniker range=">= azure-devops-2019"
+1. Select **Artifacts**, and then select **Connect to Feed**.
+ 
+    :::image type="content" source="../media/server-2022-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2022.1.":::
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Select **npm** from the left sidebar, and then follow the instructions in the **Project setup** section to set up your config file.
 
-1. Select **Azure Pipelines**, and then select your pipeline definition.
+   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
-1. Select **Edit** to modify your pipeline.
+### [Other](#tab/other/)
 
-1. Select `+` to add a task to your pipeline.
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
-    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
+    ```
+    registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+                        
+    always-auth=true
+    ```
+### Setup credentials
 
-1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
+1. Copy the following snippet and paste it into your user-level *.npmrc* file:
 
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase-newnav.png" alt-text="Screenshot showing the npm authenticate task added to the pipeline.":::
+    - **Collection-scoped feed**:
 
-1. Select your *.npmrc* file.
+        ```
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
 
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your *.npmrc* file.":::
+    - **Project-scoped feed**:
 
-1. Select **Save & queue** when you're done.
+        ```
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
+
+1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
+
+    ```
+    node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+    ```
+
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step.
+
+* * *
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="azure-devops-2020"
 
-1. Select **Build and Release**, and then select **Builds**.
+### [Windows](#tab/windows/)
 
-    :::image type="content" source="../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png" alt-text="Screenshot showing how to access your builds.":::
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-1. Select your pipeline, and then select **Edit**.
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2020-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2020.1.":::
 
-1. Select `+` to add a task to your pipeline.
+1. Select **npm** from the left, and then follow the instructions in **Project setup** to set up your config file.
 
-    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png" alt-text="Screenshot showing how to add a new task to your pipeline.":::
+   :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
 
-1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
+### [Other](#tab/other/)
 
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase.png" alt-text="Screenshot showing the npm authenticate task.":::
+1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and paste the following snippet into it:
 
-1. Select your *.npmrc* file.
+    ```
+    registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+                        
+    always-auth=true
+    ```
+### Setup credentials
 
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to configure the npm authenticate task to use your .npmrc file.":::
+1. Copy the following snippet and paste it into your user-level *.npmrc* file:
 
-1. Select **Save & queue** when you're done.
+    - **Collection-scoped feed**:
+
+        ```
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+    - **Project-scoped feed**:
+
+        ```
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
+
+1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
+
+    ```
+    node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+    ```
+
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step.
+
+* * *
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2019-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2019.1.":::
+
+1. A new window will appear. From the left-hand navigation pane, select **npm**.
+
+1. Follow the provided instructions to configure your **project** and **user** .npmrc files.
+
+   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to set up your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
+
+::: moniker-end
+
+> [!TIP]
+> Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
+
+## Pipeline authentication
+
+To authenticate with your pipeline, Azure Artifacts recommends using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). 
+
+When using task runners such as gulp or Grunt, it's to prioritize setting your *npm authenticate task* at the beginning of your pipeline. This step guarantees that your credentials are injected into your project's .npmrc file and retained throughout the pipeline run, enabling subsequent steps to access the credentials in the configuration file.
+
+### [Classic](#tab/classic)
+
+::: moniker range="azure-devops-2020 || azure-devops-2022 || azure-devops"
+
+1. Navigate to your project, select **Pipelines**, and then select your pipeline definition.
+
+2. Select **Edit** to modify your pipeline.
+
+3. Select `+` to add a new task to your pipeline.
+
+    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Navigate to your project, select **Pipelines** > **Builds**, and then select your build definition.
+
+2. Select **Edit** to modify your build pipeline.
+
+3. Select `+` to add a new task to your build pipeline.
+
+    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+4. Search for the **npm Authenticate** task, and then select **Add**.
+
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase-newnav.png" alt-text="Screenshot showing the npm authenticate task added to the pipeline.":::
+
+5. Select your *.npmrc* file, and then select **Save & queue** when you're done.
+
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your *.npmrc* file.":::
 
 ::: moniker-end
 
@@ -204,62 +326,59 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 * * *
 
 > [!NOTE]
-> To grant your pipeline access to your feed, make sure you set the build service role to **Feed And Upstream Reader (Contributor)** in your feed settings.
+> To access your feed from your pipeline, make sure that the build service role is set to **Feed And Upstream Reader (Contributor)** in your **Feed settings** > **Permissions**.
 
 :::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
 
 > [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. For more information, please refer to the list of [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
+> If your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for details.
+
+::: moniker range="azure-devops"   
 
 ## Troubleshoot
 
-##### vsts-npm-auth isn't recognized
+#### vsts-npm-auth is not recognized
 
-If you encounter the following error while running your project:
+This error indicates that the npm modules folder hasn't been added to your path. Rerun the Node.js setup and make sure to select the `Add to PATH` option. Alternatively, you can add the npm modules folder to your path by modifying the PATH variable to `%APPDATA%\npm` in Command Prompt or `$env:APPDATA\npm` in PowerShell.
 
-- Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
-- PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
+:::image type="content" source="./media/node-setup.png" alt-text="A Screenshot showing how to set up node.js.":::  
 
-Then it's likely that the npm modules folder isn't added to your path. To resolve this issue, rerun the Node.js setup and make sure to select the `Add to PATH` option.
+#### Unable to authenticate
 
-:::image type="content" source="./media/node-setup.png" alt-text="A Screenshot showing how to set up node.js.":::
+- Error: *code E401 npm ERR! Unable to authenticate*: -> Run the `vsts-npm-auth` command with **-F** flag to reauthenticate:
 
-As an alternative solution, you can add the npm modules folder to your path by editing the PATH variable `%APPDATA%\npm` in Command Prompt or `$env:APPDATA\npm` in PowerShell.
+    ```
+    vsts-npm-auth -config .npmrc -F
+    ```
 
-##### Unable to authenticate
+#### Reset vsts-npm-auth
 
-If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
+Follow these steps to reset your vsts-npm-auth credentials:
 
-```Command
-vsts-npm-auth -config .npmrc -F
-```
+1. Uninstall vsts-npm-auth:
 
-##### Reset vsts-npm-auth
-
-Follow these steps to modify/reset your vsts-npm-auth credentials:
-
-- Uninstall vsts-npm-auth.
-
-    ```command
+    ```
     npm uninstall -g vsts-npm-auth
     ```
 
-- Clear your npm cache.
+1. Clear your npm cache:
 
-    ```command
+    ```
     npm cache clean --force
     ```
 
-- Delete your *.npmrc* file.
+1. Delete your *.npmrc* file.
 
-- Reinstall vsts-npm-auth.
+1. Reinstall vsts-npm-auth:
 
-    ```command
+    ```
     npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
     ```
 
+::: moniker-end
+
 ## Related articles
 
+- [Publish and restore npm packages (CLI)](./publish.md)
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
-- [Use npm scopes](./scopes.md)
-- [Use npm audit](./npm-audit.md)
+- [Use packages from npmjs.com](./upstream-sources.md)

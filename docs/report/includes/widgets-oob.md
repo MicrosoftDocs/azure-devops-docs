@@ -18,13 +18,6 @@ Widgets are annotated as follows:
 - **User**: Widget is scoped to the signed-in user account.
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- **Build**: Widget derives data for a selected build pipeline.
-- **Release**: Widget derives data for a selected release pipeline.
-- **Team**: Widget is scoped to a single team.
-- **User**: Widget is scoped to the signed-in user account.
-::: moniker-end
-
 ---
 :::row:::
    :::column span="1":::
@@ -65,24 +58,9 @@ Widgets are annotated as follows:
       - [Velocity](../dashboards/widget-catalog.md#velocity-widget) (Analytics)
       - [Work links](../dashboards/widget-catalog.md#work-links-widget)
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      **Work**
-      - [Assigned to me](../dashboards/widget-catalog.md#assigned-to-me-widget) (User)
-      - [Chart for work items](../dashboards/widget-catalog.md#chart-wit-widget)
-      - [New Work item](../dashboards/widget-catalog.md#new-work-item-widget)
-      - [Query results](../dashboards/widget-catalog.md#query-results-widget)
-      - [Query tile](../dashboards/widget-catalog.md#query-tile-widget)
-      - [Sprint burndown](../dashboards/widget-catalog.md#sprint-burndown-widget)
-      - [Sprint capacity](../dashboards/widget-catalog.md#sprint-capacity-widget)
-      - [Sprint overview](../dashboards/widget-catalog.md#sprint-overview-widget)
-      - [Work links](../dashboards/widget-catalog.md#work-links-widget)
-      ::: moniker-end
+      
       ---
-      ::: moniker range="tfs-2018"
-      **Code**
-      - [Code tile](../dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](../dashboards/widget-catalog.md#pull-request-widget) (Team, User)
-      ::: moniker-end
+      
       ::: moniker range=">= azure-devops-2019"
       **Code**
       - [Code tile](../dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
@@ -110,27 +88,9 @@ Widgets are annotated as follows:
       - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget)
       - [Welcome](../dashboards/widget-catalog.md#how-to-widget)
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      **Build & Release**
-      - [Build history](../dashboards/widget-catalog.md#build-history-widget) (Build pipeline)
-      - [Deployment status](../dashboards/widget-catalog.md#deployment-status-widget) (Build pipeline)
-      - [Release pipeline overview](../dashboards/widget-catalog.md#release-definition-widget) (Release pipeline)
-      - [Requirements quality](../dashboards/widget-catalog.md#requirements-quality-widget) (Query, Build, or Release pipeline)
+      
       ---
-      **Test**
-      - [Chart for test plans](../dashboards/widget-catalog.md#chart-test-plan-widget)
-      - [Test results trend](../dashboards/widget-catalog.md#test-trend-results) (Build or Release pipeline)
-      ::: moniker-end
-      ---
-      ::: moniker range="tfs-2018"
-      **Information and links**
-      - [Embedded web page](../dashboards/widget-catalog.md#embedded-webpage-widget)
-      - [Markdown](../dashboards/widget-catalog.md#markdown-widget)
-      - [Other links](../dashboards/widget-catalog.md)
-      - [Team members](../dashboards/widget-catalog.md#team-members-widget) (Team)
-      - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget)
-      - [Welcome](../dashboards/widget-catalog.md#how-to-widget)
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---

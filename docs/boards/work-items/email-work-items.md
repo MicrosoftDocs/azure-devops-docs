@@ -118,7 +118,7 @@ Emailing lists of work items is a common way to share work tracking information.
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 > [!NOTE]   
-> Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, Kanban boards, and dashboards.  
+> Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, boards, and dashboards.  
 
 
 <a id="email-print-send-links"></a>

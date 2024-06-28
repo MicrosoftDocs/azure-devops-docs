@@ -13,9 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 ::: moniker range="azure-devops"
 
@@ -57,12 +55,12 @@ To view the full list, see [View the current values of all variables](#view-vars
 
 | Variable name | Description |
 |---------------|-------------|
-| System.TeamFoundationServerUri | The URL of the service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call Azure Pipelines REST APIs.<br/><br />Example: `https://fabrikam.vsrm.visualstudio.com/` |
+| System.TeamFoundationServerUri | The URL of the service connection in Azure Pipelines. Use this from your scripts or tasks to call Azure Pipelines REST APIs.<br/><br />Example: `https://fabrikam.vsrm.visualstudio.com/` |
 | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control.<br/><br />Example: `https://dev.azure.com/fabrikam/` |
-| System.CollectionId | The ID of the collection to which this build or release belongs. Not available in TFS 2015.<br/><br />Example: `6c6f3423-1c84-4625-995a-f7f143a1e43d` |
-| System.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
+| System.CollectionId | The ID of the collection to which this build or release belongs.<br/><br />Example: `6c6f3423-1c84-4625-995a-f7f143a1e43d` |
+| System.DefinitionId | The ID of the release pipeline to which the current release belongs.<br/><br />Example: `1` |
 | System.TeamProject | The name of the project to which this build or release belongs.<br/><br />Example: `Fabrikam` |
-| System.TeamProjectId | The ID of the project to which this build or release belongs. Not available in TFS 2015.<br/><br />Example: `79f5c12e-3337-4151-be41-a268d2c73344` |
+| System.TeamProjectId | The ID of the project to which this build or release belongs.<br/><br />Example: `79f5c12e-3337-4151-be41-a268d2c73344` |
 | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory.<br/><br />Example: `C:\agent\_work\r1\a`  |
 | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory.<br/><br />Example: `C:\agent\_work\r1\a` |
 | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder.<br/><br />Example: `C:\agent\_work`  |
@@ -72,13 +70,13 @@ To view the full list, see [View the current values of all variables](#view-vars
 
 | Variable name | Description |
 |---------------|-------------|
-| Release.AttemptNumber | The number of times this release is deployed in this stage. Not available in TFS 2015.<br/><br />Example: `1` |
-| Release.DefinitionEnvironmentId | The ID of the stage in the corresponding release pipeline. Not available in TFS 2015.<br/><br />Example: `1` |
-| Release.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
+| Release.AttemptNumber | The number of times this release is deployed in this stage.<br/><br />Example: `1` |
+| Release.DefinitionEnvironmentId | The ID of the stage in the corresponding release pipeline.<br/><br />Example: `1` |
+| Release.DefinitionId | The ID of the release pipeline to which the current release belongs.<br/><br />Example: `1` |
 | Release.DefinitionName | The name of the release pipeline to which the current release belongs.<br/><br />Example: `fabrikam-cd` |
-| Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `Mateo Escobedo` |
-| Release.Deployment.RequestedForEmail | The email address of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `mateo@fabrikam.com` |
-| Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
+| Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. <br/><br />Example: `Mateo Escobedo` |
+| Release.Deployment.RequestedForEmail | The email address of the identity that triggered (started) the deployment currently in progress. <br/><br />Example: `mateo@fabrikam.com` |
+| Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. <br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
 | Release.DeploymentID | The ID of the deployment. Unique per job.<br/><br />Example: `254` |
 | Release.DeployPhaseID | The ID of the phase where deployment is running.<br/><br />Example: `127` |
 | Release.EnvironmentId | The ID of the stage instance in a release to which the deployment is currently in progress.<br/><br />Example: `276` |
@@ -102,7 +100,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 
 | Variable name | Description |
 |---------------|-------------|
-| Release.Environments.{stage name}.Status | The status of deployment of this release within a specified stage. Not available in TFS 2015.<br/><br />Example: `NotStarted` |
+| Release.Environments.{stage name}.Status | The status of deployment of this release within a specified stage. <br/><br />Example: `NotStarted` |
 
 ## Agent
 
@@ -116,7 +114,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory.<br/><br />Example: `C:\agent\_work\r1\a` |
 | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder.<br/><br />Example: `C:\agent\_work` |
 | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder.<br/><br />Example: `C:\agent\_work` |
-| Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs. Not available in TFS 2018 Update 1.<br/><br />Example: `1` |
+| Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs.<br/><br />Example: `1` |
 
 <a id="artifact-variables"></a>
 

@@ -89,19 +89,19 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
 	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
 
 	> [!NOTE] 
-	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, Kanban boards, and Taskboards. To learn more, see [Manage and configure team tools](manage-teams.md).   
+	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, boards, and Taskboards. To learn more, see [Manage and configure team tools](manage-teams.md).   
 
-1. When finished, select **Create**.  
+2. When finished, select **Create**.  
 
-1. Select the team to add a team image, or configure other team elements.  
+3. Select the team to add a team image, or configure other team elements.  
 
-1. Choose **Settings** to upload an image, change the team name, add a team administrator, or delete the team.   
+4. Choose **Settings** to upload an image, change the team name, add a team administrator, or delete the team.   
 
 	:::image type="content" source="media/add-team/team-settings-dialog-new-teams-preview.png" alt-text="Screenshot of Team Settings dialog, New Teams preview feature enabled.":::
 
-1. Choose **Save** to save any changes you made. 
+5. Choose **Save** to save any changes you made. 
 
-1.  Choose **Iterations and areas** to set the **Area Paths** and **Iteration Paths** for the team to use.   
+6.  Choose **Iterations and areas** to set the **Area Paths** and **Iteration Paths** for the team to use.   
 
 	:::image type="content" source="media/add-team/team-settings-select-iterations-areas-new-teams-preview.png" alt-text="Screenshot of team settings, Iterations and areas highlighted, New Teams preview feature enabled.":::
 
@@ -124,12 +124,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 	![Screenshot of Open Project settings button, and then Teams button selection on Current page](media/shared/open-project-settings-team-new-nav.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-1. From the web portal, choose **Project settings > Overview** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.    
 
-	 ![Open project admin page](media/add-team/open-team-settings-tfs-2018.png) 
-
-::: moniker-end
 2. Choose **New team**. Give the team a name, and optionally a description. Choose a security group to add team members to.  
 
 	 ![Screenshot of New team subteam with its own area path on Current page](media/add-team/create-new-team-new-nav.png)
@@ -305,9 +300,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 ::: moniker range=">= azure-devops-2019" 
 1. Open **Project settings > Teams** as indicated in the previous section. 
 ::: moniker-end
-::: moniker range="tfs-2018" 
-1. Open **Project Settings > Overview** as indicated in the previous section. 
-::: moniker-end 
+ 
 1. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
 
 	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-current.png)  

@@ -67,6 +67,19 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 
 	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
 
+## Check to see if add-in is disabled
+
+1.	From the Excel **File** menu, choose **Options**.
+2.	Choose Add-ins and from the **Manage** picklist, choose **Disabled Items**, and then choose **Go**.
+
+	> [!div class="mx-imgBorder"]
+   	> ![Screenshot of Excel Options, Add-ins, Choose Disabled Items.](media/excel-com-disabled-items.png)
+
+3. 	If you see "Azure DevOps Add In" in the list, select it and click **Enable**.
+
+   	> [!div class="mx-imgBorder"]
+   	> ![Screenshot of disabled items dialog, Azure DevOps Add In checked.](media/excel-com-list-of-disabled-items.png) 
+
 ## Office add-in doesn't load or open in Excel when Visual Studio fails
 
 To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you might need to repair Visual Studio. 

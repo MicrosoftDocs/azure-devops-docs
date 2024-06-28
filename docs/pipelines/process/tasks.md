@@ -11,15 +11,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 A **task** performs an action in a pipeline and is a packaged script or procedure that's
 abstracted with a set of inputs. Tasks are the building blocks for defining automation in a pipeline. 
 
-::: moniker range="< azure-devops-2019"
-When you add a task to your pipeline, it might also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands is chosen.
 
-::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
@@ -33,7 +28,7 @@ You might optionally use [step targets](#step-target) to control context for an 
 Learn more about how to specify properties for a task with the [built-in tasks](../tasks/index.md). 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 When you run a [job](phases.md), all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
 
@@ -98,7 +93,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 YAML pipelines aren't available in TFS.
 
@@ -254,11 +249,11 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ### Number of retries if task failed
 
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. 
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. For more information in task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
 
 ```yml
 - task: <name of task>
-   retryCountOnTaskFailure: <max number of retries>
+  retryCountOnTaskFailure: <max number of retries>
    ...
 ```
 
@@ -272,7 +267,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 YAML pipelines aren't available in TFS.
 
@@ -338,11 +333,7 @@ Select this check box if you want the task to run even if the build or deploymen
 
 #### [YAML](#tab/yaml/)
 
-:::moniker range="< azure-devops-2019"
 
-YAML pipelines are supported in Azure DevOps Server 2019 and higher.
-
-:::moniker-end
 
 :::moniker range=">= azure-devops-2019"
 
@@ -426,7 +417,7 @@ The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 YAML pipelines aren't available in TFS.
 

@@ -65,9 +65,9 @@ Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www
  
 All of these artifacts and practices are supported by Azure Boards. 
 
-- **Stories, Features**, and **Enablers**: Implemented as work items that capture information and status of work. These work items automatically appear on team backlogs and Kanban boards. 
+- **Stories, Features**, and **Enablers**: Implemented as work items that capture information and status of work. These work items automatically appear on team backlogs and boards. 
 - **Team Backlogs** and **Program Backlogs**: Implemented as team backlogs that filter work items assigned to a team and support prioritizing and grouping of work.  
-- **Scrum** and **Kanban**: Practices that are fully supported using Kanban boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
+- **Scrum** and **Kanban**: Practices that are fully supported using boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
 - **Iterations**, **Innovation and Planning (IP) Iteration**, **Program Increments (PI)**, **Milestones**, and **Release Trains**: Implemented via a flat-list or a hierarchical configuration of Iteration Paths. 
 - **Agile Release Train**: Implemented by a set of Agile teams and Program teams configured to support specific team and program views. 
 - **PI Objectives**, **Team Goals**, and  **Solution context**: Teams can use the built-in project wiki to share objectives, goals, customer information, and solution requirements.   
@@ -214,7 +214,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Portfolio Kanban
    :::column-end:::
    :::column span="3":::
-      [**Portfolio Epics board**](safe-plan-track-boards.md#portfolio-team-board). The Portfolio team's board displays the Epics backlog as cards in an interactive, configurable, and filterable Kanban board.  
+      [**Portfolio Epics board**](safe-plan-track-boards.md#portfolio-team-board). The Portfolio team's board displays the Epics backlog as cards in an interactive, configurable, and filterable board.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -238,7 +238,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Program Kanban
    :::column-end:::
    :::column span="3":::
-      [**Program Features board**](safe-plan-track-boards.md#program-team-board). The Program board displays the Features backlog as cards in an interactive, configurable, and filterable Kanban board.  
+      [**Program Features board**](safe-plan-track-boards.md#program-team-board). The Program board displays the Features backlog as cards in an interactive, configurable, and filterable board.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -318,7 +318,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Team Kanban
    :::column-end:::
    :::column span="3":::
-      [**Stories board**](safe-plan-track-boards.md#agile-team-board). The Stories board displays the Stories backlog as cards in an interactive, configurable, and filterable Kanban board.  
+      [**Stories board**](safe-plan-track-boards.md#agile-team-board). The Stories board displays the Stories backlog as cards in an interactive, configurable, and filterable board.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -385,18 +385,6 @@ The articles in this series were updated from a previous white paper developed i
 
 
 <!---
-::: moniker range="tfs-2018" 
 
-![SAFe® architectural overview &copy; D. Leffingwell](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
-
-### SAFe® 5.0 
-
-![SAFe® overview 5.0 &copy; D. Leffingwell](media/safe/safe-overview-v5.0.png) 
-
-Business Agility 
-Enterprise Solution Delivery
-Agile Product Delivery 
-
-::: moniker-end
 
 -->

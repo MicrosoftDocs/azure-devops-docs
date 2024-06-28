@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 02/18/2022
+  ms.date: 04/22/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -127,16 +127,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Security quick reference index
-            url: quick-reference-index-security.md
           - text: Default permissions quick reference 
             url: permissions-access.md 
           - text: Security management tools 
             url: security-tools-reference.md
-      - linkListType: concept
-        links:
-          - text: Security key concepts
-            url: security-glossary.md
       - linkListType: reference
         links:
           - text: Permissions lookup guide

@@ -5,7 +5,7 @@ ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
@@ -104,7 +104,7 @@ Do the following steps to capture screen recordings from your apps.
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
-   ::: moniker range="<=azure-devops-2019"
+   ::: moniker range="=azure-devops-2019"
    ![Screenshot showing choosing the screen or app to record.](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
    ::: moniker-end
 

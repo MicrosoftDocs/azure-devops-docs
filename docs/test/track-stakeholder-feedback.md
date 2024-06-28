@@ -5,7 +5,7 @@ ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 ms.date: 11/30/2021
 monikerRange: '<= azure-devops'
@@ -57,25 +57,7 @@ To create a feedback query, do the following steps.
 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2019"
-1. Select your project and open **Boards>Queries** or **Work>Queries**. For more information, see [Web portal navigation](../project/navigation/index.md).
 
-1. In the list of shared queries, select **Feedback**. 
-   This query displays a list of all the feedback responses received.
-
-   ![Screenshot shows view of feedback responses.](media/track-stakeholder-feedback/track-stakeholder-feedback-31.png)
-
-	Or, create a feedback query with the parameters, as shown.
-
-	![Editor view for flat-list feedback query](../project/feedback/media/ALM_GF_FeedbackQueryEditor.png)  
-
-1.	You should see a list of all active feedback responses for your team project. 
-
-	![Results view of feedback responses](../project/feedback/media/ALM_GF_FeedbackQueryResults.png)  
-
-1. Open the response work item to see the details of the feedback.
-
-::: moniker-end
 
 ## Related articles
 

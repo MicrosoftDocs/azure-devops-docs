@@ -20,7 +20,7 @@ Use work items to track features and requirements you're developing, code defect
 
 Each work item represents an object stored in the work item data store, and is assigned a unique identifier within an organization or project collection. The available work item types depend on the [process you used when you created your project](guidance/choose-process.md).  
 
-If you're just getting started, read this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
+If you're just getting started, read this article. To jump right in and start tracking work on a board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
 
 <a id="wit"></a>
@@ -50,7 +50,7 @@ For a list of other work item types, see [Work item types to track testing, revi
 
 ### Track bugs as requirements or tasks 
 
-Your team can choose how to track bugs. They can track them along with requirements and have them show up on their product backlog and Kanban board. Or, they track them similar to tasks, in which case they typically link the bugs to a user story or product backlog item. A third option exists to not track them as requirements or tasks.  
+Your team can choose how to track bugs. They can track them along with requirements and have them show up on their product backlog and board. Or, they track them similar to tasks, in which case they typically link the bugs to a user story or product backlog item. A third option exists to not track them as requirements or tasks.  
  
 To configure the team bug tracking option, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
  
@@ -110,7 +110,7 @@ From the web portal, copy the URL from the web browser address or hover over the
 
 :::image type="content" source="../backlogs/media/add-work-item-copy-URL.png" alt-text="Screenshot of copy hyperlink for a work item from web portal.":::
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 <a id="start-storyboarding">  </a>
 
@@ -161,7 +161,7 @@ The four main states that are defined for the User Story (Agile process) describ
 > [!NOTE]
 > - A work item can exist in one and only one state. 
 > - When all work is complete, set the work item **State** to Closed.
-> - The Kanban board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. For more information, see [Start using your Kanban board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
+> - The board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. For more information, see [Start using your board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
 > - Depending on the :::image type="icon" source="../media/icons/view-options-icon.png" border="false"::: **View Options** you select, work items in a *Closed* or *Completed* state won't appear on the backlog. 
 > - The *Removed* state supports removing a work item from appearing on the backlog. For more information, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
 > - You can query work items by **State** and other fields to list work in progress, resolved, or completed. For more information, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
@@ -249,22 +249,7 @@ The **Deployment** control provides a quick view of whether a feature or user st
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Development and Related Work controls
-
-The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work. The following table provides a short description of each control.  
- 
-:::row:::
-   :::column span="1":::
-      ![Screenshot of Development control.](media/about-work-items/development-control.png)
-   :::column-end:::
-   :::column span="1":::
-      ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
 
 The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. For more information, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
 

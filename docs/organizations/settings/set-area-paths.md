@@ -58,7 +58,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
 > [!NOTE]
-> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md).
+> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
 
 
 As needed, you can do the following actions at any time:
@@ -85,11 +85,7 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
-
-::: moniker-end
 
 #### [Browser](#tab/browser/)
 
@@ -105,21 +101,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 <a id="admin-intro-team-services"></a> 
 
-::: moniker range="tfs-2018"
-
-1. From the web portal for the project, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
-
-    If you're currently working from a team context, then hover over **Settings** ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
-
-2. Choose **Work**.  
-
-::: moniker-end   
+   
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -173,7 +155,7 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-<a id="add-areas"></a><br/>
+<a id="add-areas"></a>
 <a id="add-areas-team-services"></a>
 <a id="tfs-15-area-paths"></a>
 
@@ -277,14 +259,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
-
-> [!div class="mx-imgBorder"]  
-> ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
-
-::: moniker-end
 
 
 
@@ -363,7 +338,7 @@ All work items that are assigned to a team area path appear on the backlogs and 
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
 > [!IMPORTANT]  
-> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+> Work items that appear on more than one team's board can yield query results that don't meet your expectations. Because each team can customize the board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
  
 #### [Browser](#tab/browser/)

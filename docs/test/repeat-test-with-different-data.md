@@ -5,7 +5,7 @@ ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
@@ -39,7 +39,7 @@ Do the following steps to add parameters to your tests.
    You might need to scroll down to see them.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Create a parameter by typing a name preceded by "**@**" in the 
    actions and expected results of your test steps.
@@ -91,7 +91,7 @@ You can also copy the data from your grid back into Excel.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Convert existing parameters to shared parameters so that you 
    can use them and the associated data in other test cases.
@@ -152,7 +152,7 @@ Do the following steps to run a test case that uses parameters.
 1. If any of the parameter values are incorrect, fix them without canceling the test by choosing **Edit** from step's shortcut menu.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Select a test case with parameters and start running it.
    The Test Runner shows the first row of parameter values.
@@ -186,7 +186,7 @@ You can view the results in the **Test Case Results** dialog box.
 ![Screenshot shows test results for a test point.](media/repeat-test-with-different-data/view-test-results.png)
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable, and Unspecified (Active). For example, if you marked any iteration as *failed* and all the rest as *passed*, the outcome of the entire test shows as *failed*. This result is different from test cases that don't have parameters, where the outcome displays the status of the last run.
 
@@ -200,25 +200,6 @@ The outcome of the test is based on a precedence hierarchy of all the iteration 
    ![Screenshot shows viewing the test run details.](media/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
 ::: moniker-end
 
-## Speed up test iterations by using record and playback
-
-It can be error-prone and tedious to work through a long table of 
-parameter combinations. To speed up things, create an action 
-recording when you run the test with the first set of parameter 
-values, and then play it back for the other sets.
-
-1. Use Azure Test Plans to [run the test](run-manual-tests.md).
-
-1. Select **Create action recording** before you choose **Start**.
-
-1. Complete the first test iteration and then move on to the next one.
-
-1. Mark each step as passed or failed as you work. Enter parameter values in the application exactly as displayed in the test script.
-
-1. Select **Play** to run the test with the next set of parameter values. 
-   Your actions play back automatically, but you must still verify the results. 
-
-   Record and playback don't work with all applications. For more information, see [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## Related articles
 

@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 10/09/2023
+ms.date: 04/02/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,11 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
 
@@ -28,7 +24,7 @@ Azure Pipelines provides several different types of agents.
 | Agent type | Description | Availability |
 |------------|-------------|--------------|
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
-| [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
+| [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server |
 | [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be auto-scaled to meet demands | Azure DevOps Services |
 
 ::: moniker range=">= azure-devops-2019"
@@ -133,7 +129,7 @@ Microsoft provides a free tier of service by default in every organization that 
 
 You might need more parallel jobs to use multiple agents at the same time:
 
-* [Parallel jobs in TFS](../licensing/concurrent-pipelines-tfs.md)
+* [Parallel jobs in Azure DevOps Server](../licensing/concurrent-pipelines-tfs.md)
 
 ::: moniker-end
 
@@ -180,11 +176,7 @@ You can check for the existence of a capability, or make a comparison with the v
 
 :::moniker-end
 
-:::moniker range="<azure-devops-2019"
 
-YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
-
-:::moniker-end
 
 # [Classic](#tab/classic)
 
@@ -352,17 +344,13 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-::: moniker range=">tfs-2018 <azure-devops"
+::: moniker range="<azure-devops"
 
 ### Communication with Azure DevOps Server
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### Communication with TFS
-
-::: moniker-end
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
@@ -421,17 +409,17 @@ When you register an agent, choose from the following authentication types, and 
 
 :::moniker range="<= azure-devops-2022"
 
-Windows agents have the following two additional authentication options on Azure DevOps Server and TFS.
+Windows agents have the following two additional authentication options on Azure DevOps Server.
 
-* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
-* [**Integrated**](./agent-authentication-options.md#integrated) (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
+* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* [**Integrated**](./agent-authentication-options.md#integrated) (Default) Connect a Windows agent to Azure DevOps Server using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
 > [!IMPORTANT]
 > Your server must be [configured to support the authentication method](agents.md#configure-tfs-authentication) to use Alternate, Negotiate, or Integrated authentication.
 
 :::moniker-end
 
-The authentication method used for registering the agent is used only during agent registration. To learn more about how agents communicate with Azure Pipelines after registration, see [Communication with Azure Pipelines or TFS](#communication).
+The authentication method used for registering the agent is used only during agent registration. To learn more about how agents communicate with Azure Pipelines after registration, see [Communication with Azure Pipelines or Azure DevOps Server](#communication).
 
 
 <h2 id="interactive-or-service">Interactive vs. service</h2>
@@ -528,11 +516,11 @@ Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker range="< azure-devops"
 
-We update the agent software with every update in Azure DevOps Server and TFS.
+We update the agent software with every update in Azure DevOps Server.
 We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
-When your Azure DevOps Server or TFS server has a newer version of the agent, and that newer agent is only different in _minor_ version, it can usually be automatically upgraded.
+When your Azure DevOps Server has a newer version of the agent, and that newer agent is only different in _minor_ version, it can usually be automatically upgraded.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 Starting with Azure DevOps Server 2019, you don't have to wait for a new server release.
 You can [upload a new version of the agent to your application tier](#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool), and that version will be offered as an upgrade.
@@ -611,7 +599,7 @@ POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/
 ```
 
 > [!NOTE]
-> For more information in API and Azure DevOps Server and TFS version mapping, see [API and TFS version mapping](/rest/api/azure/devops#api-and-tfs-version-mapping)
+> For more information in API and Azure DevOps Server version mapping, see [API and Azure DevOps Server version mapping](/rest/api/azure/devops#api-and-tfs-version-mapping)
 
 ::: moniker-end
 

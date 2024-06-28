@@ -32,10 +32,4 @@ ms.subservice: azure-devops-repos-git
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../../organizations/security/add-users-team-project.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-
-::: moniker-end

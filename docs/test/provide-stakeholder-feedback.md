@@ -5,7 +5,7 @@ ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
 monikerRange: '<= azure-devops'

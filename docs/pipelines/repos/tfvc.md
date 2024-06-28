@@ -14,9 +14,7 @@ monikerRange: '<= azure-devops'
 > [!IMPORTANT]
 > TFVC is supported by classic pipelines only, and does not support YAML.
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 ## Choose the repository to build
 

@@ -49,9 +49,7 @@ The **Development** control records all Git development processes that support c
 :::image type="content" source="media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-![Screenshot of work item form, Development control, TFS 2018.](media/drive-git-development-dev-section.png)  
-::: moniker-end
+
 
 
 
@@ -89,9 +87,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 	::: moniker range=">= azure-devops-2019"  
 	:::image type="content" source="media/git/development-control-git-github-create-branch.png" alt-text="Screenshot of Development control, Create branch link.":::
 	::: moniker-end
-	::: moniker range="< azure-devops-2019"  
-	<img src="media/git/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" /> 
-	::: moniker-end
+	
 
 	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
 
@@ -152,7 +148,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 ## Create a branch for several work items  
 
-You can also add a new branch from the work item listed on the backlog or Kanban board without having to open the work item. Using [multi-select](bulk-modify-work-items.md), you can select several work items and create a new branch where they're all linked to the branch. 
+You can also add a new branch from the work item listed on the backlog or board without having to open the work item. Using [multi-select](bulk-modify-work-items.md), you can select several work items and create a new branch where they're all linked to the branch. 
 
 For example, here we select the first five items to link to a new branch.  
 
@@ -215,14 +211,9 @@ The link types you can add within the development section are Branch, Build, Cha
 <img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-The link types you can add within the development section are Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
 
-<img src="media/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
 
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
  
 ::: moniker-end

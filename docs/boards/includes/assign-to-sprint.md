@@ -25,13 +25,4 @@ From any product, sprint, or portfolio backlog, you can drag a multi-selected li
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-From any backlog or board, you can drag a multi-selected list of work items and drop it onto a sprint to change it's iteration path. From a Kanban or taskboard, you can drag a single work item onto a sprint. (Not supported for users with **Stakeholder** access.)
-
-> [!div class="mx-imgBorder"]  
-> ![Drop work items onto a sprint](../sprints/media/sp-assign-to-sprints.png)  
-
-Child items of the work items whose iteration path you change are also updated with the new iteration path. 
-
-::: moniker-end

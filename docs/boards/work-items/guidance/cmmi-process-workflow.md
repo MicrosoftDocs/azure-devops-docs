@@ -18,7 +18,7 @@ ms.date: 01/04/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
+Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using your board, track progress by updating the status of requirements.
  
 ![Conceptual image of CMMI process work item types.](media/cmmi-process-plan-wits.png)
 
@@ -39,7 +39,7 @@ Create requirements from the quick add panel on the [product backlog page](../..
 Or, you can bulk add requirements using a [cvs file](../../queries/import-work-items-from-csv.md). 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Or, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
 ::: moniker-end
 
@@ -140,7 +140,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column span="3":::
    
   Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. 
- By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-overview.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+ By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The [Cumulative Flow Diagram](../../boards/kanban-overview.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
   :::row-end:::
@@ -295,13 +295,13 @@ The typical workflow progression for a requirement is:
 -   The team updates the status to **Resolved** when code development is finished and system tests have passed.  
 -   Lastly, the team or product owner moves the requirement to **Closed** when the product owner agrees that it has been implemented according to the Acceptance Criteria and passed all validation tests.  
 
-### Update work status with Kanban or Taskboards
+### Update work status with a board or Taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-:::image type="content" source="../../boards/media/alm-cc-move-card.png" alt-text="Screenshot of web portal, track progress on the Kanban board.":::
+:::image type="content" source="../../boards/media/alm-cc-move-card.png" alt-text="Screenshot of web portal, track progress on the board.":::
 
-You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more customization options, see [Customize your work tracking experience](#customize-work-tracking).
+You can customize the board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md).
 
 ## Map requirements to features
 

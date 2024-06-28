@@ -6,7 +6,7 @@ ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
@@ -92,7 +92,7 @@ Add existing test cases to a test suite with the following actions.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 1. If you haven't already, [create a test plan and requirement-based test suites](create-a-test-plan.md).
 
 1. Select a requirement-based test suite. In the right-hand pane, choose **+** (New)
@@ -125,7 +125,7 @@ After reordering the tests, you can sort them by the **Order** field and then ru
 ::: moniker-end
 
 > [!TIP]
-> You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
+> You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
 
 ## Use the Grid view to edit test cases
 ::: moniker range=">=azure-devops-2020"
@@ -154,7 +154,7 @@ Do the following steps to copy and paste test cases into the **Grid** view.
    View and edit these fields when you switch to the **Grid** view.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Switch between **Grid** and **List** views using the **View** menu at the right of the window.
 
 ![Screenshot showing the View menu to switch between List and Grid views.](media/create-test-cases/GridViewSwitch.png)
@@ -197,7 +197,7 @@ Copying doesn't copy test step formatting, other than multiline, into the worksh
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 You can copy test cases and test steps from an existing Excel worksheet, which is supported only with Internet Explorer and Chrome browsers.
 
 Copy the columns from Excel that you want to use for the title, action, and expected results fields.
@@ -243,7 +243,7 @@ You can assign an individual test case to a tester.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 1. You can reassign test cases so that another tester can 
    run them. Select the tests that you want to reassign. Then 
    open the shortcut menu (choose the "..." ellipses or right-click) 
@@ -322,7 +322,7 @@ Or you can remove the test case from the test suite. From the context menu for t
 To permanently delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 You can tag test cases and view test cases only with specific tags.
 For example, tag all the tests related to signing in so that you can rerun these tests if a bug is fixed for that page.
 Then you can filter on that tag from the **Test Plans** web portal.

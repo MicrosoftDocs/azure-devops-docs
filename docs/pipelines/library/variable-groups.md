@@ -18,8 +18,6 @@ Variable groups store values and secrets that you might want to be [passed into 
 
 Secret variables in Variables groups are [protected resources](../security/resources.md). You can add combinations of approvals, checks, and pipeline permissions to limit access to secret variables in a variable group. Access to non-secret variables is not limited by approvals, checks, and pipeline permissions.
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 ## Create a variable group
 
 #### [YAML](#tab/yaml/)
@@ -152,7 +150,7 @@ ID    Name               Type    Description               Is Authorized    Numb
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 To use a variable from a variable group, add a reference to the group in your YAML file:
 
@@ -220,20 +218,16 @@ stages:
 To work with a variable group, you must authorize the group. If you only name the variable group in YAML, then anyone who can push code to your repository could extract the contents of secrets in the variable group.
 To authorize the group, use one of the following techniques:
 
-- To authorize any pipeline to use the variable group, go to Azure Pipelines. This might be a good option if you don't have any secrets in the group. Select **Library** > **Variable groups**, and then select the variable group in question and enable the setting **Allow access to all pipelines**.
-
 - To authorize a variable group for a specific pipeline, open the pipeline, select **Edit**, and then queue a build manually. You see a resource authorization error and an "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an authorized user of the variable group.
+
+- To authorize any pipeline to use the variable group, go to Azure Pipelines. This might be a good option if you don't have any secrets in the group. Select **Library** > **Variable groups**, and then select the variable group in question and enable the setting **Allow access to all pipelines**.
 
 > [!Note]
 > If you add a variable group to a pipeline and don't get a resource authorization error in your build when you expected one, turn off the **Allow access to all pipelines** setting.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML builds aren't available on TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -540,9 +534,7 @@ When you set a variable in a group and use it in a YAML file, it's equal to othe
 For more information about precedence of variables, see [Variables](../process/variables.md#expansion-of-variables).
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 

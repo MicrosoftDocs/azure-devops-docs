@@ -65,7 +65,7 @@ Default rules and behaviors that govern these fields include:
 1. These rules are needed when a work item type has custom states, or the work item type is a custom work item type.
 1. These rules only apply to inherited processes; they are never generated for the Hosted XML or On-premises XML processes. 
 
-Workflow states are associated with state categories to support the workflow on Kanban boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
+Workflow states are associated with state categories to support the workflow on boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
  
 
 ### State Change Date field rules
@@ -279,7 +279,7 @@ If you don't see a field listed in the drop-down menu of the rule user interface
 
 Default and copy rules modify the values of work item fields. They define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
-::: moniker range="tfs-2018 || azure-devops-2020 || azure-devops"
+::: moniker range="=azure-devops-2020 || =azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
@@ -411,7 +411,7 @@ These rules support setting defaults, copying values from one field to another, 
 
 Constraint rules restrict changing the value of a field. They define the valid states for a work item. Each constraint operates on a single field. Constraints are evaluated on the server on work item save, and if any constraint is violated the save operation is rejected.  
  
-::: moniker range="tfs-2018 || azure-devops-2020 || azure-devops"
+::: moniker range="=azure-devops-2020 || =azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  

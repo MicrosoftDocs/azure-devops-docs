@@ -3,10 +3,11 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
 ms.topic: conceptual
-ms.date: 11/27/2023
+ms.date: 05/17/2024
 ---
 
 # Agent software version 3
+
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
@@ -24,7 +25,6 @@ The following operating systems are supported by the 3.x agent.
 
 * **Linux**
   * x64
-    * CentOS 7, 8
     * Debian 10+
     * Fedora 36+
     * openSUSE 15+
@@ -33,6 +33,7 @@ The following operating systems are supported by the 3.x agent.
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
     * Azure Linux 2.0
+    * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
@@ -44,11 +45,12 @@ The following operating systems are supported by the 3.x agent.
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
+    * macOS 14.0 "Sonoma"
   * ARM64
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
-    * Note: Not all Azure Pipelines tasks have been updated to support ARM64 yet
+    * macOS 14.0 "Sonoma"
 * **Windows**
   * Client OS
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
@@ -66,7 +68,6 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 
 | System/Distribution | Version not supported by .NET 6 |
 |---------------------|---------------------------------|
-| CentOS | < 7 |
 | Debian | <= 4.9 |
 | Fedora | <= 32 |
 | RedHat Enterprise Linux | <= 6 |
@@ -125,7 +126,21 @@ The version of .NET used to run the 3.x agent is self-contained in the agent ins
 
 ### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
 
-No. The new agent is only applicable for Azure DevOps Service customers at this time. However, a future version of Azure DevOps Server will include the new agent. The pipelines team recommends that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
+Yes, if you are using any of the versions of Azure DevOps Server listed in the following section.
+
+The pipelines team recommends that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
+
+### Does Azure DevOps Server support the 3.x agent
+
+Azure DevOps Server versions support the version of the agent that is deployed with that version. The following versions of Azure DevOps Server include a version of the 3.x agent that is supported for that Azure DevOps Server version. To get the 3.x agent installed in your Azure DevOps Server installation, update your Azure DevOps Server version to one of the following versions.
+
+* [Azure DevOps Server 2022 Update 2](/azure/devops/server/release-notes/azuredevops2022u2)
+* [Azure DevOps Server 2022 Update 1](/azure/devops/server/release-notes/azuredevops2022u1)
+* [Azure DevOps Server 2022 Update 0.1 Patch 4 and later](/azure/devops/server/release-notes/azuredevops2022#azure-devops-server-2022-update-01-patch-4-release-date-october-10-2023)
+* [Azure DevOps Server 2020 Update 1.2 Patch 9 and later](/azure/devops/server/release-notes/azuredevops2020u1#azure-devops-server-2020-update-12-patch-9-release-date-october-10-2023)
+* [Azure DevOps Server 2020 Update 0.2 Patch 4 and later](/azure/devops/server/release-notes/azuredevops2020#azure-devops-server-2020-update-02-patch-4-release-date-september-12-2023)
+* [Azure DevOps Server 2019 Update 1.2 Patch 5 and later](/azure/devops/server/release-notes/azuredevops2019u1#azure-devops-server-2019-update-12-patch-5-release-date-september-12-2023)
+* [Azure DevOps Server 2019 - patch 15 and later](/azure/devops/server/release-notes/azuredevops2019#azure-devops-server-201901-patch-15-release-date-september-12-2023)
 
 ### What is the timeline for agent version 3 deployment?
 

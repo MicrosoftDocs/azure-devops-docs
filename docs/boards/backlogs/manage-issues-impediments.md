@@ -21,7 +21,7 @@ If you have known issues you want to track, you can do so by defining an impedim
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to fix feature ambiguity, personnel or resource issues, problems with environments, or other risks that influence scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 > [!IMPORTANT]  
 > Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
@@ -31,12 +31,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-> [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
-
-::: moniker-end
 
 In this article you'll learn: 
 
@@ -71,7 +66,7 @@ Define tasks when you want to create a [checklist of tasks](../boards/add-task-c
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]  
-> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Set up your backlogs and boards, Customize your Kanban Board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
+> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product board. To learn how, see [Set up your backlogs and boards, Customize your board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
 
 ::: moniker-end
 
@@ -95,13 +90,7 @@ Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="fa
 
 ::: moniker-end   
 
-::: moniker range="tfs-2018"
 
-From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
-
-![Screenshot to add an Impediment from the New Work Item list, TFS 2018.](media/cyb-new-work-item-impediment.png) 
-  
-::: moniker-end
 
 
 <a id="customize"> </a>
@@ -123,11 +112,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
-
-::: moniker-end
  
 <a id="add-to-backlog"></a> 
 
@@ -144,10 +129,7 @@ If you want to track issues or impediments along with your requirements or a por
 - **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your On-premise XML process. For more information, see [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 
-::: moniker-end
 
 
 ## Related articles 
