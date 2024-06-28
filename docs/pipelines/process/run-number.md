@@ -11,23 +11,21 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how Azure Pipelines build numbers and run numbers are constructed, and how you can configure them in your pipelines.
+This article explains how Azure Pipelines build numbers and run numbers are constructed, and how you can customize them in your pipelines.
 
-The default value for a run number is `$(Date:yyyyMMdd).$(Rev:r)`. You can customize how your pipeline runs are numbered.
-
-In Azure DevOps, `$(Rev:r)` is a special variable format that only works in the build number field. When a build completes, if nothing else in the build number changes, the `Rev` integer value increases by one.
+The default value for a run number in Azure Pipelines is `$(Date:yyyyMMdd).$(Rev:r)`. `$(Rev:r)` is a special variable format that only works in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
 
 `$(Rev:r)` resets to `1` when another part of the build number changes. For example, if you configure your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd).$(Rev:r)`, the build number resets when the date changes.
 
-If your build number is `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The next day, the first build number is `MyBuild_20230622.1`.
+If the previous build number was `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The first build number the next day is `MyBuild_20230622.1`.
 
-If your build number format is `1.0.$(Rev:r)`, the build number resets to `1.0.1` when you change part of the number. For example, if your last build number was `1.0.3`, and you change the build number to `1.1.$(Rev:r)` to indicate a version change, the next build number is `1.1.1`.
+If you change the build number to indicate a version change, `$(Rev:r)` also resets to `1`. For example, your build format is `1.0.$(Rev:r)` and your last build number was `1.0.3`. If you change the version number to `1.1.$(Rev:r)`, the next build number is `1.1.1`.
 
 If you don't specify a build name in YAML, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
 
 ::: moniker range=">=azure-devops-2020"
 
-In YAML, the build name property is called `name` and must be at the root level of a pipeline. Items specified at the root level of a YAML file are [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) properties.
+In YAML pipelines, the build name property is called `name` and must be at the root level of a pipeline. Items specified at the root level of a YAML file are [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) properties.
 
 >[!NOTE]
 >The `name` property doesn't work in template files. 
@@ -55,38 +53,41 @@ Consider the following data for a build run:
 - Time: 9:07:03 PM
 - One run completed earlier today.
 
-If you specify the following build number format:
+If you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
 ```yaml
 $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:.r)
 ```
-
-The second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
 ## Tokens
 
 The following table shows how each token resolves, based on the previous example. You can use these tokens only to define run numbers. They don't work anywhere else in a pipeline.
 
 | Token | Example value | Notes |
-| ----- | --------------|----------- |
-| `$(Build.DefinitionName)` | CIBuild | The pipeline name can't contain invalid or whitespace characters.||
+| ----- | -------------- | ----------- |
+| `$(Build.DefinitionName)` | CIBuild | The pipeline name can't contain invalid or whitespace characters.|
 | `$(Build.BuildId)` | 752 | `$(Build.BuildId)` is an internal, immutable ID, also called the Run ID, that is unique across the Azure DevOps organization.|
 | `$(DayOfMonth)` | 6 ||
 | `$(DayOfYear)` | 126 ||
 | `$(Hours)` | 21 ||
 | `$(Minutes)` | 7 ||
 | `$(Month)` | 5 ||
-| `$(Rev:r)` | 2 | The third run is `3`, and so on. Use `$(Rev:r)` to ensure that every completed build has a unique name.|
+| `$(Rev:r)` | 2 | The third daily run is `3`, and so on. Use `$(Rev:r)` to ensure that every completed build has a unique name. |
 | `$(Date:yyyyMMdd)` | 20240506 | You can specify other date formats such as `$(Date:MMddyy)`. |
 | `$(Seconds)` | 3 ||
 | `$(SourceBranchName)` | main ||
 | `$(TeamProject)` | Fabrikam ||
 | `$(Year:yy)` | 24 ||
-| `$(Year:yyyy)` | 2024 |
+| `$(Year:yyyy)` | 2024 ||
 
-If you want to show prefix zeros in the run number, you can add more `r` characters. For example, specify `$(Rev:rr)` if you want the `Rev` number to begin with `01`, `02`, and so on.
+>[!NOTE]
+>If you want to show prefix zeros in the run number, you can add more `r` characters to the `Rev` token. For example, specify `$(Rev:rr)` if you want the `Rev` number to begin with `01`, `02`, and so on.
+>
+>If you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
 
-If you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
+## Expressions
+
+If you use an expression to set the build number, you can't use some tokens, because their values aren't set at the time expressions are evaluated. These tokens include `$(Build.BuildId)`, `$(Build.BuildURL)`, and `$(Build.BuildNumber)`.
 
 ## Variables
 
@@ -96,11 +97,7 @@ You can use user-defined and predefined variables that have a scope of **All** i
 $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build.BuildId)_$(My.Variable)
 ```
 
-In the preceding example, the first four variables are predefined. For information on how to define your user variable, see [Set variables in pipelines](variables.md#set-variables-in-pipeline).
-
-## Expressions
-
-If you use an expression to set the build number, you can't use some tokens, because their values aren't set at the time expressions are evaluated. These tokens include `$(Build.BuildId)`, `$(Build.BuildURL)`, and `$(Build.BuildNumber)`.
+In the preceding example, the first four variables are predefined. For information on how to define user variables, see [Set variables in pipelines](variables.md#set-variables-in-pipeline).
 
 ## FAQ
 

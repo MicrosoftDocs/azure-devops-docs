@@ -52,7 +52,7 @@ To create your first environment:
 
 1. Select **Pipelines** > **Environments** > **Create environment**.
 
-   ![Screenshot that shows Environments.](media/environments-nav.png)
+   :::image type="content" source="media/environments-run.png" alt-text="Screenshot that shows Environments.":::
 
 1. Enter information for the environment, and then select **Create**. You can add resources to an existing environment later.
 
@@ -92,7 +92,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps that run sequent
 
 You can scope the deployment target to a particular resource within the environment, so you can record deployment history on the specific resource. The steps of the deployment job automatically inherit the service connection details from the resource the deployment job targets.
 
-In the following example, the value for the `kubernetesServiceConnection` input automatically passes down to the task from the `environment.resource` input.
+In the following example, the value for the `kubernetesServiceConnection` automatically passes down to the task from the `environment.resource` input.
 
 
 ```YAML
@@ -125,29 +125,29 @@ The **Creator**, **Administrator**, and **User** roles, but not the **Reader** r
 
 Under the **Environments** tab of the pipeline run details, you can see all environments that were targeted by deployment jobs of a pipeline run.
 
-![Screenshot that shows Environments in run details.](media/environments-run.png)
-  
+:::image type="content" source="media/environments-run.png" alt-text="Screenshot that shows Environments in run details.":::
+
 >[!NOTE]
 >If you're using an Azure Kubernetes Service (AKS) private cluster, the **Environments** tab isn't available.
 
 <a name="deployment-history"></a>
 ## View deployment history
 
-You can select the **Deployments** tab in **Environments** to view deployment history.
+You can select the **Deployments** tab in the Azure Pipelines **Environments** section to view deployment history.
 
-- View jobs from all pipelines that target a specific environment. For example, two microservices that each have their own pipeline can deploy to the same environment. The deployment history helps identify all pipelines that affect this environment, and also helps visualize the sequence of deployments by each pipeline.
+- View jobs from all pipelines that target a specific environment. For example, two microservices that each have their own pipeline can deploy to the same environment. The deployment history helps identify all pipelines that affect the environment, and also helps visualize the sequence of deployments by each pipeline.
 
-  ![Screenshot that shows deployment history listing.](media/environments-deployment-history.png)
+  :::image type="content" source="media/environments-deployment-history.png" alt-text="Screenshot that shows deployment history listing.":::
 
 - To drill down into the job details, select the tabs on a deployment page. The **Changes** and **Work items** tabs show the list of commits and work items that deployed to the environment. The lists of commits and work items represent the new items between deployments.
 
   On the **Changes** tab, the first listing includes all the commits, and the following listings just include changes. If multiple commits are tied to the same pull request, there are multiple results on the **Changes** tab.
 
-  ![Screenshot of commits under deployment history.](media/environment-deployment-history-changes.png)
+  :::image type="content" source="media/environment-deployment-history-changes.png" alt-text="Screenshot of commits under deployment history.":::
 
 - If multiple work items are tied to the same pull request, there are multiple results on the **Work items** tab.
 
-  ![Screenshot of work items under deployment history.](media/environment-deployment-history-workitems.png)
+  :::image type="content" source="media/environment-deployment-history-workitems.png" alt-text="Screenshot of work items under deployment history.":::
 
 ## Security
 
@@ -186,7 +186,7 @@ Change your access level and then check to see if you can create environments. F
 
 ### Why do I get the error "Job XXXX: Environment XXXX could not be found. The environment does not exist or has not been authorized for use"?
 
-There are several the possible reasons for the failure.
+There are several possible reasons for the failure.
 
 - [Runtime parameters](runtime-parameters.md) don't work when creating environments, because the parameters are expanded only at run time. You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create an environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). 
 
@@ -195,9 +195,9 @@ There are several the possible reasons for the failure.
   When you refer to an environment that doesn't exist in a YAML pipeline file, Azure Pipelines automatically creates the environment in the following cases:
 
   - You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that isn't created yet.
-  - You update the YAML file by using the Azure Pipelines web editor and save the pipeline after adding the reference to an environment that doesn't exist.
+  - You update the YAML file by using the Azure Pipelines web editor and save the pipeline after adding the reference to the environment.
 
-  In the following flows, Azure Pipelines doesn't have information about the user creating the environment, so the pipeline fails.
+  In the following cases, Azure Pipelines doesn't have information about the user creating the environment, so the pipeline fails.
 
   - You update the YAML file by using another external code editor.
   - You add a reference to an environment that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered.
