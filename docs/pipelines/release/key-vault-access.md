@@ -101,7 +101,7 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 1. Sign in to your Azure DevOps organization, and the navigate to your project.
 
-1. Select **Pipelines** > **Library**, and then select **+ Variable group**
+1. Select **Pipelines** > **Library**, and then select **+ Variable group**.
 
 1. Name your variable group, and then select the toggle button to enable the **Link secrets from an Azure Key Vault as variable** button.
 
