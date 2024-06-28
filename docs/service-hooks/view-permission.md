@@ -23,7 +23,7 @@ ServiceHooks security namespace id is defined under [List Security Namespaces](.
 
 ## Prerequisites
 1. Install Azure CLI to run `az devops` command. [How to install the Azure CLI](/cli/azure/install-azure-cli)
-2. Create PAT under Azure DevOps profile. The user should be member of project collection administrator (PCA) group. 
+2. Create PAT under Azure DevOps profile. The user should be member of **Project Collection Administrator (PCA)** group. 
  - Identity (Read)
  - Graph (Read)
  - Security (Manage) 
