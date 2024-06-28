@@ -116,7 +116,7 @@ check out the information on the service that you're interested in.
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
 have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
-To grant *View* permission for a group, see [How to define *View* permission for a group in ServiceHooks](view-permission.md) page.
+To grant *View* permission for a group, see [Set *View* permission for a group in Service Hooks](view-permission.md) page.
 
 ### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
@@ -157,7 +157,7 @@ A: Yes. You can revoke authorizations from your profile.
 	
 ### Q: Why can't we set up service hooks for HipChat anymore?
 
-A: Atlassian officially dropped support for HipChat. See more on that announcement [here](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
+A: Atlassian officially dropped support for HipChat. For more information, see [the announcement](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
 
 ## Related articles
 
