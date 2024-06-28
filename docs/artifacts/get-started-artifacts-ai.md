@@ -7,12 +7,13 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 06/21/2024
 monikerRange: '>= azure-devops-2020'
-"recommendations": "true"
 ---
 
 # Publish your first package to an Azure Artifacts feed
 
-With Azure Artifacts, you can manage your dependencies and store various package types from multiple sources in a single feed. This article will guide you through the process of publishing your first package to an Azure Artifacts feed. You'll also have the option to leverage the power of GitHub Copilot to streamline this process and explore the capabilities of the GitHub Copilot Chat right from your Visual Studio Code interface. 
+Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing your packages within your team, across organizations, or publicly on the internet. Azure Artifacts feeds support a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
+
+This article will guide you through the process of publishing your first package to an Azure Artifacts feed. You'll also have the option to leverage the power of GitHub Copilot to streamline this process and explore the capabilities of the GitHub Copilot Chat right from your Visual Studio Code interface. 
 
 ## Prerequisites
 
@@ -22,7 +23,7 @@ With Azure Artifacts, you can manage your dependencies and store various package
 
 * Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-* (Optional) A [GitHub Copilot Subscription](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-code-suggestions-in-your-editor?tool=vscode). Sign up for a 30-day free trial if you haven't already.
+* (Optional) [Set up GitHub Copilot and Visual Studio Code](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-code-suggestions-in-your-editor?tool=vscode). A 30-day GitHub Copilot free trial is available if you haven't signed up yet.
 
 ## Create a feed
 
@@ -66,9 +67,15 @@ With Azure Artifacts, you can manage your dependencies and store various package
 
 ::: moniker-end
 
-## Project setup
+## Get the code
 
-Before publishing a package to the feed we just created, let's ensure we pack our application and prepare a package for publishing. In this example, we will leverage GitHub copilot to guide us through creating a sample .Net Core class library, defining our package metadata, and generating a NuGet package from the command line.
+#### [With GitHub Copilot](#tab/githubcopilot/)
+
+Before publishing a package to the feed we just created, let's ensure we pack our project and prepare a package for publishing. 
+
+In this example, we will leverage GitHub copilot to guide us through creating a sample .Net Core class library, defining our package metadata, and generating a NuGet package from the command line.
+
+You could also use GitHub Copilot to generate other types of projects such as npm or Python projects.
 
 1. Open your Visual Studio Code and select the chat icon from the left navigation panel to open the GitHub Copilot Chat.
 
@@ -78,25 +85,60 @@ Before publishing a package to the feed we just created, let's ensure we pack ou
 
 1. Follow the provided steps to generate your project, define your package ID and version, and pack your project.
 
-You can ask GitHub Copilot to explain the structure of your project, and it will provide an overview of your application's structure and the roles of your files. Make sure you have opened your project's folder in Visual Studio Code to use the `@workspace` command.  This command allows you to interact with the files and folders within your current workspace. When you open a folder in Visual Studio Code, that folder and its contents become your workspace.
+You can also ask GitHub Copilot to explain your project structure using the `@workspace` command, which lets you interact with the files and folders in your current workspace.
 
 > `@workspace` explain my app structure
 
-You can also explore how specific files are related in your project. For example, you can ask how the *csproj* file is related to the *Class1.cs* file:
+:::image type="content" source="media/github-copilot-app-structure.png" alt-text="A screenshot that shows GitHub Copilot explaining workspace app structure.":::
+
+Another useful method to understand new source code is to ask GitHub Copilot how specific files are related within the project. For example, you can ask how the *csproj* file is related to the *Class1.cs* file:
 
 > #file:artifacts-github-copilot.csproj #file:Class1.cs how are these files related
 
-GitHub Copilot's response would be something like this:
+:::image type="content" source="media/github-copilot-csproj-class-relation.png" alt-text="A screenshot that shows GitHub Copilot response in Visual Studio Code.":::
 
-```
-The artifacts-github-copilot.csproj file is the project file for your .NET application. It contains the configuration and settings for your project, such as the target framework, package ID, version, authors, company, and root namespace.
+#### [Without GitHub Copilot](#tab/withoutgithubcopilot/)
 
-The Class1.cs file is a source code file in your project. It contains the definition for a class named Class1.
+Follow these steps to create a basic Class Library project from the command line, set up your package's metadata, and generate a NuGet package:
 
-The relationship between these two files is that the artifacts-github-copilot.csproj file references the Class1.cs file as part of the project. When the project is built, the code in Class1.cs is compiled into a .NET assembly as specified by the settings in the artifacts-github-copilot.csproj file.
+1. On your local machine, create a new folder and give it a name.
 
-The RootNamespace property in the artifacts-github-copilot.csproj file is set to artifacts_github_copilot. This means that unless otherwise specified, all classes in the project, including Class1, will be under the artifacts_github_copilot namespace.
-```
+1. Open a command prompt window and navigate to the folder you just created.
+
+1. Run the following command to create a new Class Library project:
+
+    ```dotnetcli
+    dotnet new classlib
+    ```
+
+1. Open your *csproj* file and add your package metadata within the `<PropertyGroup>` tag. Your file structure should resemble the following:
+
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>demo_class_library</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <PackageId>YOUR_PACKAGE_NAME</PackageId>
+        <Version>YOUR_PACKAGE_VERSION</Version>
+        <Authors>YOUR_NAME</Authors>
+        <Company>YOUR_COMPANY</Company>
+
+      </PropertyGroup>
+    
+    </Project>
+    ```
+
+1. Run the following command to package your project and generate a *.nupkg* artifact. your NuGet package will be generated in the `bin\release` directory.
+
+    ```dotnetcli
+    dotnet pack
+    ```
+    
+* * *
 
 ## Connect to a feed
 
