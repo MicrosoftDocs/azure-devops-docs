@@ -139,13 +139,13 @@ You can select the **Deployments** tab in the Azure Pipelines **Environments** s
 
   :::image type="content" source="media/environments-deployment-history.png" alt-text="Screenshot that shows deployment history listing.":::
 
-- To drill down into the job details, select the tabs on a deployment page. The **Changes** and **Work items** tabs show the list of commits and work items that deployed to the environment. The lists of commits and work items represent the new items between deployments.
+- To drill down into the job details, select the **Changes** and **Work items** tabs on a deployment page. The tabs show lists of commits and work items that deployed to the environment. Each list item represent new items in that deployment.
 
-  On the **Changes** tab, the first listing includes all the commits, and the following listings just include changes. If multiple commits are tied to the same pull request, there are multiple results on the **Changes** tab.
+  On the **Changes** tab, the first listing includes all the commits to that point, and the following listings include just the changes for that job. If multiple commits are tied to the same job, there are multiple results on the **Changes** tab.
 
   :::image type="content" source="media/environment-deployment-history-changes.png" alt-text="Screenshot of commits under deployment history.":::
 
-- If multiple work items are tied to the same pull request, there are multiple results on the **Work items** tab.
+- If multiple work items are tied to the same job, there are multiple results on the **Work items** tab.
 
   :::image type="content" source="media/environment-deployment-history-workitems.png" alt-text="Screenshot of work items under deployment history.":::
 
@@ -155,14 +155,11 @@ You can secure your environments with user permissions and pipeline permissions.
 
 ### User permissions
 
-User permissions control who can create, view, use, and manage environments. There are four roles: **Creator** with a scope of all environments, **Reader**, **User**, and **Administrator**.
+You can control who can create, view, use, and manage environments with user permissions. There are four roles: **Creator** with a scope of all environments, **Reader**, **User**, and **Administrator**.
 
-To use an environment's **User permissions** panel to add a user:
+To add a user by using an environment's **User permissions** panel, go to the specific **Environment** you want to authorize, select the **More actions** icon, and select **Security**.
 
-1. Go to the specific **Environment** that you want to authorize.
-1. Select the **More actions** icon and then select **Security**.
-1. In the **User permissions** pane of the **Security** page, select **Add**.
-1. On the **Add user** screen, select a **User or group** and suitable **Role**, and select **Add**.
+In the **User permissions** panel of the **Security** page, select **Add** and then select a **User or group** and suitable **Role**.
 
 In the **User permissions** panel, you can also set the permissions that are inherited, and override the roles for your environment.
 
@@ -174,7 +171,7 @@ Use the **Pipeline permissions** panel of the **Security** page to authorize all
 
 - To remove open access on the environment or resource, select **Restrict permission** in **Pipeline permissions**.
 
-- When permissions are restricted, you can allow specific pipelines to deploy to the environment or specific resource. Select **+** and choose from the list of pipelines to allow.
+- When permissions are restricted, you can allow specific pipelines to deploy to the environment or to a specific resource. Select **+** and choose from the list of pipelines to allow.
 
 ## FAQ
 

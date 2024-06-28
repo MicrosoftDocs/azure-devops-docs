@@ -13,15 +13,7 @@ monikerRange: "<=azure-devops"
 
 This article explains how Azure Pipelines build numbers and run numbers are constructed, and how you can customize them in your pipelines.
 
-The default value for a run number in Azure Pipelines is `$(Date:yyyyMMdd).$(Rev:r)`. `$(Rev:r)` is a special variable format that only works in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
-
-`$(Rev:r)` resets to `1` when another part of the build number changes. For example, if you configure your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd).$(Rev:r)`, the build number resets when the date changes.
-
-If the previous build number was `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The first build number the next day is `MyBuild_20230622.1`.
-
-If you change the build number to indicate a version change, `$(Rev:r)` also resets to `1`. For example, your build format is `1.0.$(Rev:r)` and your last build number was `1.0.3`. If you change the version number to `1.1.$(Rev:r)`, the next build number is `1.1.1`.
-
-If you don't specify a build name in YAML, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
+If you don't specify a build name in YAML pipelines, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -40,6 +32,16 @@ steps:
 ```
 
 ::: moniker-end
+
+## Run number
+
+The default value for a run number in Azure Pipelines is `$(Date:yyyyMMdd).$(Rev:r)`. `$(Rev:r)` is a special variable format that only works in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
+
+`$(Rev:r)` resets to `1` when any other part of the build number changes. For example, if you configure your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd).$(Rev:r)`, the build number resets when the date changes.
+
+If the previous build number was `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The first build number the next day is `MyBuild_20230622.1`.
+
+`$(Rev:r)` also resets to `1` if you change the build number to indicate a version change. For example, if your build format is `1.0.$(Rev:r)` and your last build number was `1.0.3`, if you change the build number to `1.1.$(Rev:r)`, the next build number is `1.1.1`.
 
 ## Example
 
@@ -91,7 +93,7 @@ If you use an expression to set the build number, you can't use some tokens, bec
 
 ## Variables
 
-You can use user-defined and predefined variables that have a scope of **All** in your build number. For example, if you define `My.Variable`, you can specify the following number format:
+You can use user-defined and predefined variables in your build number. For example, if you define `My.Variable`, you can specify the following number format:
 
 ```yaml
 $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build.BuildId)_$(My.Variable)
