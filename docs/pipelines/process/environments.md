@@ -137,7 +137,7 @@ You can select the **Deployments** tab in the Azure Pipelines **Environments** s
 
   :::image type="content" source="media/environments-deployment-history.png" alt-text="Screenshot that shows deployment history listing.":::
 
-- To drill down into the job details, select the **Changes** and **Work items** tabs on a deployment page. The tabs show lists of commits and work items that deployed to the environment. Each list item represent new items in that deployment.
+- To drill down into the job details, select the **Changes** and **Work items** tabs on a deployment page. The tabs show lists of commits and work items that deployed to the environment. Each list item represents new items in that deployment.
 
   On the **Changes** tab, the first listing includes all the commits to that point, and the following listings include just the changes for that job. If multiple commits are tied to the same job, there are multiple results on the **Changes** tab.
 
