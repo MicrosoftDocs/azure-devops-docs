@@ -167,7 +167,7 @@ The following example shows that the user can see the service hooks subscription
 
 ## Reset all Service Hooks permissions of a group
 
-- If you need to all Service Hooks permissions of a group or user, you can call `reset-all`.
+- If you need to reset all Service Hooks permissions of a group or user, you can call `reset-all`.
 
     ```
     > az devops security permission reset-all --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --token PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b
