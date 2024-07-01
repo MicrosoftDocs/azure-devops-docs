@@ -3,7 +3,7 @@ title: Create and target environments
 description: Learn how to create, target, secure, and view deployment history for environments, which are collections of deployment targets for pipelines.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 06/28/2024
+ms.date: 07/01/2024
 monikerRange: '>= azure-devops-2020'
 ---
 

@@ -2,7 +2,7 @@
 title: What is Azure Pipelines?
 description: Learn how to automatically build, test, and deploy your code with Azure Pipelines
 ms.topic: overview
-ms.date: 06/28/2024
+ms.date: 07/01/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines is a component of Azure DevOps that automatically builds, tests, and deploys code projects. Azure Pipelines combines [continuous integration](#continuous-integration), [continuous testing](#continuous-testing), and [continuous delivery](#continuous-delivery) to build, test, and deliver your code to any destination. Azure Pipelines supports all major languages and project types.
+Azure Pipelines is the part of Azure DevOps that automatically builds, tests, and deploys code projects. Azure Pipelines combines [continuous integration](#continuous-integration), [continuous testing](#continuous-testing), and [continuous delivery](#continuous-delivery) to build, test, and deliver your code to any destination. Azure Pipelines supports all major languages and project types.
 
 :::image type="content" source="media/pipelines-overview.png" alt-text="Screenshot of Azure Pipelines overview.":::
 
@@ -39,9 +39,9 @@ To use Azure Pipelines, you must:
 
 ## Languages and applications
 
-Azure Pipelines offers tasks to build and test .NET, Java, Node, Android, Xcode, and C++ applications. There are tasks to run tests in many testing frameworks and services. You can also run command line, PowerShell, or shell scripts in your automation.
+Azure Pipelines offers tasks to build, test, and deploy Node.js, Python, Java, PHP, Ruby, C#, C++, Go, XCode, .NET, Android, and iOS applications. You can run these apps in parallel on Linux, macOS, and Windows.
 
-You can build, test, and deploy Node.js, Python, Java, PHP, Ruby, C#, C++, Go, XCode, .NET, Android, and iOS applications. You can run these apps in parallel on Linux, macOS, and Windows.
+There are tasks to run tests in many testing frameworks and services. You can also run command line, PowerShell, or shell scripts in your automation.
 
 ## Continuous integration
 
@@ -55,7 +55,7 @@ The Build service in [Azure DevOps Server](https://azure.microsoft.com/services/
 
 ### Version control systems
 
-Azure Pipelines requires your source code to be in a version control system. Azure DevOps supports two forms of version control, [Git](../../repos/get-started/what-is-repos.md) and [Azure Repos](../../repos/get-started/what-is-repos.md). You can set up Azure Pipelines to automatically build and validate any changes you push to your version control repository.
+Azure Pipelines requires your source code to be in a version control system. Azure DevOps supports several forms of version control, including [Git](../../repos/get-started/what-is-repos.md) and [Azure Repos](../../repos/get-started/what-is-repos.md). You can set up Azure Pipelines to automatically build and validate any changes you push to your version control repository.
 
 ## Continuous testing
 
@@ -81,7 +81,7 @@ Once you have CI in place, you can create a release definition to automate the d
 
 ## Package formats
 
-To produce packages that external users can consume, you can publish NuGet, npm, or Maven packages to the built-in Azure Pipelines package management repository. You also can use any other package management repository you choose.
+To produce packages that external users can consume, you can integrate package management into your CI/CD pipelines. You can publish NuGet, npm, Maven, or Python packages as artifacts to the built-in Azure Pipelines package management repository, or any other package management repository you choose. For more information about Azure Artifacts, see [Artifacts in Azure Pipelines](../artifacts/artifacts-overview.md).
 
 ## Azure Pipelines pricing
 
