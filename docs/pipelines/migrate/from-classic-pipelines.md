@@ -4,7 +4,7 @@ titleSuffix: Azure Pipelines
 description: How to migrate from Classic pipelines to YAML.
 ms.subservice: azure-devops-pipelines-migrate
 ms.topic: quickstart
-ms.date: 07/03/2023
+ms.date: 07/01/2024
 monikerRange: azure-devops
 ---
 
@@ -57,25 +57,27 @@ Do the following steps to create a sample YAML pipeline, which you'll update lat
 
 ## Export your Classic pipeline
 
-Do the following steps to export your Classic pipeline to a YAML file that you can use in the editor.
+Do the following steps to export your Classic pipeline to a YAML file that you can use in the editor. 
 
-1. Open your Classic pipeline.
+1. Go to **Pipelines** > **Pipelines**. 
+ 
+1. Open your Classic pipeline in the classic build designer.
 
-2. Select the ellipses (...), and then select **Export to YAML**.
+1. Select the ellipses (...), and then select **Export to YAML**.
 
     :::image type="content" source="media/export-yaml.png" alt-text="Screenshot of context menu, to export your pipeline to YAML.":::
 
-3. Open the downloaded YAML file in your code editor.
+1. Open the downloaded YAML file in your code editor.
 
-4. If your YAML pipeline includes variables defined in the Classic UI, define the variables again in your pipeline settings UI or in your YAML file. For more information, see [Define variables](../process/variables.md).
+1. If your YAML pipeline includes variables defined in the Classic UI, define the variables again in your pipeline settings UI or in your YAML file. For more information, see [Define variables](../process/variables.md).
 
-5. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In Classic pipelines, they are in the organization's timezone. For more information, see [Configure schedules for pipelines](../process/scheduled-triggers.md).
+1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In Classic pipelines, they are in the organization's timezone. For more information, see [Configure schedules for pipelines](../process/scheduled-triggers.md).
 
-6. Use the Task Assistant to make any other changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps.
+1. Use the Task Assistant to make any other changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps.
 
     :::image type="content" source="media/task-assistant-yaml.png" alt-text="Configure your pipeline task with Task Assistant.":::
 
-7. **Save and run** your pipeline.
+1. **Save and run** your pipeline.
 
 ## Clean up resources
 
