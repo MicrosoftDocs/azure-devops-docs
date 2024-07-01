@@ -34,6 +34,16 @@ To establish PATs for non-Microsoft tools, you can either use [Git credential ma
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
+## Changes to Format
+
+As of July 2024, we will be making updates to the format of personal access tokens issued by Azure DevOps. These changes will provide additional security benefits and improve secret detection tooling available through our partner offerings, like [Github Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits will improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
+
+Some notable changes:
+* The length of our tokens will increase from 52 characters to 84 characters, 52 of which will be randomized data. This will improve overall entropy of the token generation, enabling us to be more resistant to potential brute forcing attacks.
+* Tokens issued by our service will include a fixed `AZDO` signature at characters 76-80.
+
+Customers are advised to regenerate all PATs currently in use immediately to benefit from these changes. Integrators are also recommended to support both this new token length and the current token length, while customers adapt to this new format. Both existing and new formats will be accepted for now, but as more customers adopt the new format, we will explore retiring our past 52-character format.
+
 ## Related articles
 
 * [About security, authentication, and authorization](../security/about-security-identity.md)
