@@ -55,7 +55,7 @@ The Build service in [Azure DevOps Server](https://azure.microsoft.com/services/
 
 ### Version control systems
 
-Azure Pipelines requires your source code to be in a version control system. Azure DevOps supports several forms of version control, including [Git](../../repos/get-started/what-is-repos.md) and [Azure Repos](../../repos/get-started/what-is-repos.md). You can set up Azure Pipelines to automatically build and validate any changes you push to your version control repository.
+Azure Pipelines requires your source code to be in a version control system. Azure Pipelines supports several forms of version control, including [Azure Repos Git, GitHub, and TFVC](../repos/index.md). You can set up Azure Pipelines to automatically build and validate any changes you push to your version control repository.
 
 ## Continuous testing
 
