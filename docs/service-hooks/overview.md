@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2022
+ms.date: 06/28/2024
 ---
 
 # Integrate with service hooks
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Service hooks let you run tasks on other services when events happen in your project in Azure DevOps.
+Service Hooks let you run tasks on other services when events happen in your project in Azure DevOps.
 
 For example, you can create a card in Trello when a work item gets created or send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
@@ -116,6 +116,8 @@ check out the information on the service that you're interested in.
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
 have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
+To grant *View* permission for a group, see [Set *View* permission for a group in Service Hooks](view-permission.md) page.
+
 ### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
 A: The user with these permissions can see all subscriptions created in the 
@@ -155,7 +157,7 @@ A: Yes. You can revoke authorizations from your profile.
 	
 ### Q: Why can't we set up service hooks for HipChat anymore?
 
-A: Atlassian officially dropped support for HipChat. See more on that announcement [here](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
+A: Atlassian officially dropped support for HipChat. For more information, see [the announcement](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
 
 ## Related articles
 
