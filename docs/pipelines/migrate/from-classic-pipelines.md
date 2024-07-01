@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 Get started with Azure Pipelines by converting your existing Classic pipeline to use YAML. With a YAML-based pipeline, you can implement your CI/CD strategy as code and see its history, compare versions, blame, annotate, and so on.
 
-When you convert your Classic pipeline, the end product is two pipelines. You'll have one new YAML pipeline and a Classic pipeline that can be retired. Your Classic pipeline's run history will remain in the Classic pipeline. 
+When you convert your Classic pipeline, the end product is two pipelines. You'll have one new YAML pipeline and a Classic pipeline that can be retired. Your Classic pipeline's run history remains in the Classic pipeline. 
 
 ## Prerequisites
 
@@ -105,6 +105,5 @@ Learn about the feature differences between YAML and Classic pipelines.
 ## Related articles
 
 - [Customize your pipeline](../customize-pipeline.md)
-- [YAML pipeline editor basics](../get-started/yaml-pipeline-editor.md)
-- [Library of assets](../library/index.md)
+- [Learn YAML pipeline editor basics](../get-started/yaml-pipeline-editor.md)
 - [Define approvals and checks](../release/approvals/approvals.md)
