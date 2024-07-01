@@ -45,7 +45,7 @@ If you are using Marketplace tasks or custom tasks to deploy to Azure, please be
 
 Tasks that take a `connectedService:AzureRM` input in [task.json](https://learn.microsoft.com/azure/devops/extend/develop/integrate-build-task?view=azure-devops#custom-build-task-json) can be updated to support workload identity federation by following these steps:
 
-*  Utilize the [Oidctoken REST API](/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.1&preserve-view=true) to request an idToken (arrow 1 in above diagram).
+*  Utilize the [Oidctoken REST API](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.2) to request an idToken (arrow 1 in above diagram).
 *   Exchange the idToken for an access token using the federated credential flow of the [OAuth API](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential), specifying the idToken as `client_assertion` (arrows 2 & 4 in above diagram);  
     or:
 *   For tasks that act as a wrapper around a tool that performs authentication itself, use the tools' authentication method to specify the federated token.
