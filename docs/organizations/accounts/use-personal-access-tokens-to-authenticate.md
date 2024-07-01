@@ -42,7 +42,7 @@ Some notable changes:
 * The length of our tokens will increase from 52 characters to 84 characters, 52 of which will be randomized data. This will improve overall entropy of the token generation, enabling us to be more resistant to potential brute forcing attacks.
 * Tokens issued by our service will include a fixed `AZDO` signature at characters 76-80.
 
-Customers are advised to regenerate all PATs currently in use immediately to benefit from these changes. Integrators are also recommended to support both this new token length and the current token length, while customers adapt to this new format. Both existing and new formats will be accepted for now, but as more customers adopt the new format, we will explore retiring our past 52-character format.
+Customers are advised to regenerate all PATs currently in use immediately to benefit from these changes. Integrators are also recommended to support both this new token length and the current token length, while customers adapt to this new format. Both existing and new formats will continue to be accepted for the foreseeable future. As more customers adopt the new format, we will begin to explore retiring our past 52-character format and all tokens issued in the older format.
 
 ## Related articles
 
