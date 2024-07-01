@@ -13,6 +13,8 @@ monikerRange: "<=azure-devops"
 
 This article explains how Azure Pipelines build numbers and run numbers are constructed, and how you can customize them in your pipelines.
 
+The run number is used to identify a specific execution of a pipeline or build. The build number is synonymous with the run number. 
+
 If you don't specify a build name in YAML pipelines, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
 
 ::: moniker range=">=azure-devops-2020"
