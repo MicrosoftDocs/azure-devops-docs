@@ -7,7 +7,7 @@ description: TBD
 ---
 # Improved security with new personal access token format
 
- We are excited to announce improvements to the format of personal access tokens (PATs), aimed at enhancing security and boosting secret detection capabilities through partners like GitHub Advanced Security! 
+ We are excited to announce improvements to the format of personal access tokens (PATs), aimed at enhancing security and boosting secret detection capabilities! 
 
 Check out the release notes for details.
 
