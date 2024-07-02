@@ -21,15 +21,14 @@ The script demonstrates the following three operations:
 
 - Defines an [Azure Pipeline](../../index.yml) by using a [YAML](/azure/devops/pipelines/yaml-schema/) file.
 - Creates a [variable group](../../library/variable-groups.md) with nonsecret and secret variables to use in the pipeline.
-- Runs the pipeline using the [Azure DevOps CLI](../../../cli/index.md), and opens a web page to monitor pipeline run processing and output.
+- Runs the pipeline using the [Azure DevOps CLI](../../../cli/index.md), and lets you monitor pipeline run processing and output.
 
 [!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
 To run the sample, you need:
 
-- [A GitHub repository](https://www.github.com) to store the sample in.
-- An [Azure DevOps organization and Azure Pipelines installed and linked to your GitHub account](../../get-started/pipelines-sign-up.md).
-- An Azure DevOps [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) for authentication.
+- A [GitHub repository](https://www.github.com) with Azure Pipelines installed and a GitHub personal access token (PAT) created for access.
+- An [Azure DevOps organization](../../get-started/pipelines-sign-up.md) with **Project Collection Administrator** permissions and a [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) created for authentication.
 
 ## Save the sample file
 
@@ -103,12 +102,12 @@ steps:
 
 After you store the YAML file in GitHub, run the following Azure DevOps CLI script in a Bash shell in Cloud Shell or locally. The script creates the pipeline, variable group, and secret and nonsecret variables, and then modifies the variable values.
 
-Before you run the script, replace the following placeholders with your own values:
+Before you run the script, replace the following placeholders with your values:
 
-- \<azure-devops-pat>: Your Azure DevOps PAT.
-- \<azure-devops-organization>: Your Azure DevOps organization name.
+- \<devops-organization>: Your Azure DevOps organization name.
 - \<github-organization>: Your GitHub organization name.
 - \<github-repository>: Your GitHub repository name.
+- \<github-pat>: The value of the GitHub PAT you created.
 
 Replace the following placeholders with values you choose:
 
@@ -119,11 +118,11 @@ Replace the following placeholders with values you choose:
 ```azurecli
 #!/bin/bash
 
-# Provide variable definitions.
-devopsToken="<azure-devops-pat>"
-devopsOrg="https://dev.azure.com/<azure-devops-organization>"
+# Provide placeholder variables.
+devopsOrg="https://dev.azure.com/<devops-organization>"
 githubOrg="<github-organization>"
 githubRepo="<github-repository>"
+githubPat="<github-pat>"
 pipelineName="<pipelinename>"
 resourceGroupLocation="<azure-resource-group-location>"
 storageAccountLocation="<azure-storage-account-location>"
@@ -139,11 +138,11 @@ devopsProject="Contoso DevOps Project $uniqueId"
 serviceConnectionName="Contoso Service Connection $uniqueId"
 variableGroupName="Contoso Variable Group"
 
-# Sign in to Azure CLI and follow the directions if necessary.
+# Sign in to Azure CLI and follow the sign-in instructions, if necessary.
 echo "Sign in."
 az login
 
-# Sign in to Azure DevOps with your PAT if necessary.
+# Sign in to Azure DevOps with your Azure DevOps PAT, if necessary.
 echo "Sign in to Azure DevOps."
 az devops login
 
@@ -153,16 +152,16 @@ az storage account create --name "$storageAccountName" \
     --resource-group "$resourceGroupName" --location "$storageAccountLocation"
 
 # Set the environment variable used for Azure DevOps token authentication.
-export AZURE_DEVOPS_EXT_GITHUB_PAT=$devopsToken
+export AZURE_DEVOPS_EXT_GITHUB_PAT=$githubPat
 
-# Create the Azure DevOps project. Set the default organization and project.
+# Create the Azure DevOps project and set defaults.
 projectId=$(az devops project create \
-    --name "$devopsProject" --organization "$devopsOrg" --visibility public --query id)
+    --name "$devopsProject" --organization "$devopsOrg" --visibility private --query id)
 projectId=${projectId:1:-1}  # Just set to GUID; drop enclosing quotes.
 az devops configure --defaults organization="$devopsOrg" project="$devopsProject"
 pipelineRunUrlPrefix="$devopsOrg/$projectId/_build/results?buildId="
 
-# Create GitHub service connection (requires AZURE_DEVOPS_EXT_GITHUB_PAT to be set).
+# Create GitHub service connection.
 githubServiceEndpointId=$(az devops service-endpoint github create \
     --name "$serviceConnectionName" --github-url "https://www.github.com/$repoName" --query id)
 githubServiceEndpointId=${githubServiceEndpointId:1:-1}  # Just set to GUID; drop enclosing quotes.
