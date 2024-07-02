@@ -3,7 +3,7 @@ title: PowerShell scripts to customize pipelines
 description: Learn about using PowerShell scripts to customize your pipelines by adding business logic.
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 05/24/2024
+ms.date: 07/02/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how you can move beyond the basics of compiling and testing code and use PowerShell scripts to add business logic to pipelines. The Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) runs PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
+This article explains how you can move beyond compiling and testing code and use PowerShell scripts to add business logic to pipelines. The Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) runs PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
 
 You can use variables in your PowerShell scripts. For more information, see [Define variables](../process/variables.md).
 
@@ -19,7 +19,7 @@ You can use variables in your PowerShell scripts. For more information, see [Def
 - For information on creating and using custom variables, see [Use custom variables](../release/variables.md#use-custom-variables).
 - For how to make a variable available to future jobs, see [Set a multi-job output variable](../process/variables.md#set-a-multi-job-output-variable).
 
-You can use named parameters in your scripts. Other kinds of parameters, such as switch parameters, aren't supported and cause errors if you try to use them. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
+You can use named parameters in your PowerShell scripts. Other kinds of parameters, such as switch parameters, aren't supported and cause errors if you try to use them. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
 
 ## Add a PowerShell script to a pipeline
 
@@ -73,7 +73,7 @@ To customize your build number in a Classic pipeline, when you add the build tas
 
 ---
 
-The following PowerShell example script applies versions to assemblies. For example, if your defined build number format `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces build number `Build HelloWorld_2013.07.19.1`, the script applies version `2013.07.19.1` to your assemblies.
+The following PowerShell example script applies a version to assemblies. For example, if your defined build number format `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces build number `Build HelloWorld_2013.07.19.1`, the script applies version `2013.07.19.1` to your assemblies.
 
 ```powershell
 # Enable -Verbose option

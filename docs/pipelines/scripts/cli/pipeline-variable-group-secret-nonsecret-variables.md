@@ -1,34 +1,39 @@
 ---
-title: Use secret and nonsecret variables in a variable group
-description: Use this Azure DevOps CLI sample to create and manage secret and nonsecret variables in a variable group in Azure Pipeline.
+title: Use Azure Devops CLI to manage variables in a variable group
+description: Use this Azure DevOps CLI sample to create and manage secret and nonsecret variables in an Azure Pipelines variable group.
 author: juliakm
 ms.author: jukullam
 manager: mijacobs
-ms.date: 07/01/2024
+ms.date: 07/02/2024
 ms.topic: sample
 ms.devlang: azurecli 
 monikerRange: '>=azure-devops-2020'
 ms.custom: devx-track-azurecli
 ---
 
-# Use secret and nonsecret variables in a variable group
+# Use Azure Devops CLI to manage variables in a variable group
 
 [!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
-This sample uses the Azure DevOps extension to the Azure CLI, `az devops`, to create an Azure pipeline that accesses a variable group containing both secret and nonsecret variables.
+This sample uses the `az devops` Azure DevOps extension to the Azure CLI to create and run an Azure pipeline that accesses a variable group containing both secret and nonsecret variables.
 
 The script demonstrates the following three operations:
 
-- Defines an [Azure Pipeline](../../index.yml) by using a [YAML](/azure/devops/pipelines/yaml-schema/) file.
-- Creates a [variable group](../../library/variable-groups.md) with nonsecret and secret variables to use in the pipeline.
-- Runs the pipeline using the [Azure DevOps CLI](../../../cli/index.md), and lets you monitor pipeline run processing and output.
+- Define an [Azure Pipelines](../../index.yml) pipeline by using a [YAML](/azure/devops/pipelines/yaml-schema/) file stored in GitHub.
+- Create a [variable group](../../library/variable-groups.md) with nonsecret and secret variables to use in the pipeline.
+- Run the pipeline using the [Azure DevOps CLI](../../../cli/index.md), and show pipeline run processing and output.
 
 [!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
 To run the sample, you need:
 
-- A [GitHub repository](https://www.github.com) with Azure Pipelines installed and a GitHub personal access token (PAT) created for access.
-- An [Azure DevOps organization](../../get-started/pipelines-sign-up.md) with **Project Collection Administrator** permissions and a [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) created for authentication.
+- A [GitHub repository with Azure Pipelines installed](.../../get-started/pipelines-sign-up.md)
+
+- A [GitHub personal access token (PAT)](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for access.
+
+- An [Azure DevOps organization](../../get-started/pipelines-sign-up.md) with a [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) for authentication.
+
+- **Project Collection Administrator** permissions in the Azure DevOps organization.
 
 ## Save the sample file
 
@@ -107,7 +112,7 @@ Before you run the script, replace the following placeholders with your values:
 - \<devops-organization>: Your Azure DevOps organization name.
 - \<github-organization>: Your GitHub organization name.
 - \<github-repository>: Your GitHub repository name.
-- \<github-pat>: The value of the GitHub PAT you created.
+- \<github-pat>: Your GitHub PAT.
 
 Replace the following placeholders with values you choose:
 
