@@ -1,54 +1,31 @@
 ---
-title: TBD
+title: View third-party providers code scan results in Azure DevOps
 author: ckanyika
 ms.author: ckanyika
 ms.date: 7/2/2024
-description: TBD
+description: View third-party providers code scan results in Azure DevOps
 ---
-# TBD
+# View third-party providers code scan results in Azure DevOps
 
+ 
 
+Check out the release notes for details.
 
-### GitHub Advanced Security for Azure DevOps
+### General
 
-[!INCLUDE [sprint-241-update-links](includes/ghazdo/sprint-241-update-links.md)]
-
-### Azure Boards:
-
-[!INCLUDE [sprint-241-update-links](includes/boards/sprint-241-update-links.md)]
-
-### Azure Repos
-
-[!INCLUDE [sprint-241-update-links](includes/repos/sprint-241-update-links.md)]
+[!INCLUDE [sprint-241-update-links](includes/general/sprint-241-update-links.md)]
 
 ### Azure Pipelines
 
 [!INCLUDE [sprint-241-update-links](includes/pipelines/sprint-241-update-links.md)]
 
-### Azure Test Plans:
+## General
 
-[!INCLUDE [sprint-241-update-links](includes/testplans/sprint-241-update-links.md)]
-
-## GitHub Advanced Security for Azure DevOps
-
-[!INCLUDE [sprint-241-update](includes/ghazdo/sprint-241-update.md)]
-
-## Azure Boards
-
-[!INCLUDE [sprint-241-update](includes/boards/sprint-241-update.md)]
-
-## Azure Repos
-
-[!INCLUDE [sprint-241-update](includes/repos/sprint-241-update.md)]
+[!INCLUDE [sprint-241-update](includes/general/sprint-241-update.md)]
 
 ## Azure Pipelines
 
 [!INCLUDE [sprint-241-update](includes/pipelines/sprint-241-update.md)]
-
-## Azure Test Plans
-
-[!INCLUDE [sprint-241-update](includes/testplans/sprint-241-update.md)]
-
 
 ## Next steps
 
@@ -72,4 +49,3 @@ You can also get advice and your questions answered by the community on [Stack O
 Thanks,
 
 Silviu Andrica
-
