@@ -1,40 +1,41 @@
 ---
-title: 'Azure CLI sample for Azure Pipelines and variable groups'
-description: Azure CLI sample for accessing secret and nonsecret variables from a variable group in an Azure Pipeline. This sample uses the azure-devops extension.
+title: Use secret and nonsecret variables in a variable group
+description: Use this Azure DevOps CLI sample to create and manage secret and nonsecret variables in a variable group in Azure Pipeline.
 author: juliakm
 ms.author: jukullam
 manager: mijacobs
-ms.date: 01/12/2023
+ms.date: 07/01/2024
 ms.topic: sample
 ms.devlang: azurecli 
 monikerRange: '>=azure-devops-2020'
 ms.custom: devx-track-azurecli
 ---
 
-# Use a variable group's secret and nonsecret variables in an Azure Pipeline
+# Use secret and nonsecret variables in a variable group
 
 [!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
-In this sample, use the Microsoft Azure DevOps CLI (azure-devops extension) to create an Azure Pipeline that accesses a variable group containing both secret and nonsecret variables.
+This sample uses the Azure DevOps extension to the Azure CLI, `az devops`, to create an Azure pipeline that accesses a variable group containing both secret and nonsecret variables.
 
-This script demonstrates three operations:
+The script demonstrates the following three operations:
 
-* Defining a [Azure Pipeline](../../index.yml) using [YAML](/azure/devops/pipelines/yaml-schema/) files
-* Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
-* Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run's processing and output
+- Defines an [Azure Pipeline](../../index.yml) by using a [YAML](/azure/devops/pipelines/yaml-schema/) file.
+- Creates a [variable group](../../library/variable-groups.md) with nonsecret and secret variables to use in the pipeline.
+- Runs the pipeline using the [Azure DevOps CLI](../../../cli/index.md), and opens a web page to monitor pipeline run processing and output.
 
 [!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
-* [Sign up for Azure Pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization.
-* [Create an Azure DevOps personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) (PAT) for authentication.
-* Use or create a [GitHub](https://www.github.com) repository to place the Azure Pipeline in.
-* In the GitHub Marketplace, [install the Azure Pipelines application](https://github.com/marketplace/azure-pipelines/) so that Azure Pipelines can access your GitHub repository.
+To run the sample, you need:
 
-## Sample script
+- [A GitHub repository](https://www.github.com) to store the sample in.
+- An [Azure DevOps organization and Azure Pipelines installed and linked to your GitHub account](../../get-started/pipelines-sign-up.md).
+- An Azure DevOps [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) for authentication.
 
-First, save the following YAML file, which defines the Azure Pipeline, to *azure-pipelines.yml* in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
+## Save the sample file
 
-```yml
+Save the following YAML pipeline definition as a file called *azure-pipelines.yml* in the root directory and `main` branch of your GitHub repository.
+
+```yaml
 parameters:
 - name: image
   displayName: 'Pool image'
@@ -98,19 +99,34 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-After you've published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
+## Run the sample
+
+After you publish the YAML file in GitHub, run the following script in a Bash shell in Azure Cloud Shell or locally. The script creates the pipeline, variable group, and secret and nonsecret variables, and then modifies the variable values.
+
+In the script, replace the following placeholders with your own values:
+
+- \<azure-devops-pat>: Your Azure DevOps PAT.
+- \<azure-devops-organization>: Your Azure DevOps organization name.
+- \<github-organization>: Your GitHub organization name.
+- \<github-repository>: Your GitHub repository name.
+
+Replace the following placeholders with values you choose:
+
+- \<pipeline-name>: A name for the pipeline.
+- \<azure-resource-group-location>: Azure region for the resource group that contains the resources for this sample.
+- \<azure-storage-account-location>: Same as the resource group location.
 
 ```azurecli
 #!/bin/bash
 
 # Provide variable definitions.
-devopsToken="<azure-devops-personal-access-token>"
-devopsOrg="https://dev.azure.com/<my-azure-devops-account-or-organization-name>"
-resourceGroupLocation="<resource-group-location-name-or-id>"
-storageAccountLocation="<storage-account-location-name-or-id>"
-pipelineName="<my-build>"
-githubOrg="<my-github-organization-name>"
-githubRepo="<my-github-repository-name>"
+devopsToken="<azure-devops-pat>"
+devopsOrg="https://dev.azure.com/<azure-devops-organization>"
+githubOrg="<github-organization>"
+githubRepo="<github-repository>"
+pipelineName="<pipeline-name>"
+resourceGroupLocation="<azure-resource-group-location>"
+storageAccountLocation="<azure-storage-account-location>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
 branch="main"
@@ -123,11 +139,11 @@ devopsProject="Contoso DevOps Project $uniqueId"
 serviceConnectionName="Contoso Service Connection $uniqueId"
 variableGroupName="Contoso Variable Group"
 
-# Sign in to Azure CLI and follow the directions. May be unnecessary in some environments.
+# Sign in to Azure CLI and follow the directions if necessary.
 echo "Sign in. (For Cloud Shell, provide the device login code.)"
 az login
 
-# Sign in using an Azure DevOps personal access token (PAT). May be unnecessary in some environments.
+# Sign in using an Azure DevOps personal access token (PAT) if necessary.
 echo "Sign in to Azure DevOps."
 az devops login
 
@@ -195,7 +211,7 @@ read -p "Press Enter to continue:"
 
 ## Clean up resources
 
-After the script sample has been run, the following commands can be used to remove the resource group and all resources associated with it.
+To avoid incurring Azure storage charges, after you run the script sample, you can remove the Azure resource group and all its resources by running the following script.
 
 ```azurecli
 az pipelines variable-group delete --group-id $variableGroupId --yes
@@ -208,7 +224,9 @@ az group delete --name $resourceGroupName --yes
 az devops configure --defaults organization="" project=""
 ```
 
-## Azure CLI references used in this article
+## Azure CLI references
+
+The sample in this article used the following Azure CLI commands:
 
 - [az devops configure](/cli/azure/devops#az-devops-configure)
 - [az devops project create](/cli/azure/devops/project#az-devops-project-create)
