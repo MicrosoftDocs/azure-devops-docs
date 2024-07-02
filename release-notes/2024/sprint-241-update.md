@@ -1,11 +1,11 @@
 ---
-title: View third-party providers code scan results in Azure DevOps
+title: TBD
 author: ckanyika
 ms.author: ckanyika
 ms.date: 7/2/2024
-description: View third-party providers code scan results in Azure DevOps
+description: TBD
 ---
-# View third-party providers code scan results in Azure DevOps
+# TBD
 
  
 
