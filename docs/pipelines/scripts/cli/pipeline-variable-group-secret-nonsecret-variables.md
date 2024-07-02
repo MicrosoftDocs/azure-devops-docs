@@ -101,7 +101,7 @@ steps:
 
 ## Run the sample
 
-After you publish the YAML file in GitHub, run the following script in a Bash shell in Azure Cloud Shell or locally. The script creates the pipeline, variable group, and secret and nonsecret variables, and then modifies the variable values.
+After you store the YAML file in GitHub, run the following Azure DevOps CLI script in a Bash shell in Cloud Shell or locally. The script creates the pipeline, variable group, and secret and nonsecret variables, and then modifies the variable values.
 
 Before you run the script, replace the following placeholders with your own values:
 
@@ -112,8 +112,8 @@ Before you run the script, replace the following placeholders with your own valu
 
 Replace the following placeholders with values you choose:
 
-- \<pipeline-name>: A name for the pipeline.
-- \<azure-resource-group-location>: Azure region for the resource group that contains the resources for this sample.
+- \<pipelinename>: A name for the pipeline that is between 3-19 characters and contains only numerals and lowercase letters. The script adds a 5-character unique identifier.
+- \<azure-resource-group-location>: Azure region for the resource group that contains the resources for this sample, for example `eastus`.
 - \<azure-storage-account-location>: Same as the resource group location.
 
 ```azurecli
@@ -124,7 +124,7 @@ devopsToken="<azure-devops-pat>"
 devopsOrg="https://dev.azure.com/<azure-devops-organization>"
 githubOrg="<github-organization>"
 githubRepo="<github-repository>"
-pipelineName="<pipeline-name>"
+pipelineName="<pipelinename>"
 resourceGroupLocation="<azure-resource-group-location>"
 storageAccountLocation="<azure-storage-account-location>"
 repoName="$githubOrg/$githubRepo"
@@ -133,17 +133,17 @@ branch="main"
 
 # Declare other variables.
 uniqueId=$RANDOM
-resourceGroupName="contoso-storage-rg$uniqueId"
-storageAccountName="contosostoracct$uniqueId"  # needs to be lowercase
+resourceGroupName="$pipelineName$uniqueId"
+storageAccountName="$pipelineName$uniqueId"
 devopsProject="Contoso DevOps Project $uniqueId"
 serviceConnectionName="Contoso Service Connection $uniqueId"
 variableGroupName="Contoso Variable Group"
 
 # Sign in to Azure CLI and follow the directions if necessary.
-echo "Sign in. (For Cloud Shell, provide the device login code.)"
+echo "Sign in."
 az login
 
-# Sign in using an Azure DevOps personal access token (PAT) if necessary.
+# Sign in to Azure DevOps with your PAT if necessary.
 echo "Sign in to Azure DevOps."
 az devops login
 
@@ -211,7 +211,7 @@ read -p "Press Enter to continue:"
 
 ## Clean up resources
 
-To avoid incurring Azure storage charges after you run the script sample, you can remove the Azure resource group and all its resources by running the following script.
+To avoid incurring Azure storage charges after you run the script sample, you can remove the Azure resource group and all its resources by running the following script:
 
 ```azurecli
 az pipelines variable-group delete --group-id $variableGroupId --yes

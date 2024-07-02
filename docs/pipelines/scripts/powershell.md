@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how you can move beyond the basics of compiling and testing code and use PowerShell scripts to add business logic to pipelines. You can use the Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) to run PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
+This article explains how you can move beyond the basics of compiling and testing code and use PowerShell scripts to add business logic to pipelines. The Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) runs PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
 
 You can use variables in your PowerShell scripts. For more information, see [Define variables](../process/variables.md).
 
@@ -55,7 +55,7 @@ Add the PowerShell Script task to your pipeline, and add your script file to the
 
 ## Example script to apply version to assemblies
 
-The example script in this section applies versions to assemblies. For the script to run successfully, the defined build number format must have four periods, for example `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. Build number is also called run number.
+The example script in this section applies a version to assembly property files. For the script to run successfully, the defined build number format must have four periods, for example `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. Build number is also called run number.
 
 ### [YAML](#tab/yaml)
 
@@ -73,7 +73,7 @@ To customize your build number in a Classic pipeline, when you add the build tas
 
 ---
 
-The following PowerShell example script applies versions to assemblies. For example, if your defined build number format `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces build numbers like `Build HelloWorld_2013.07.19.1`, the script applies version `2013.07.19.1` to your assemblies.
+The following PowerShell example script applies versions to assemblies. For example, if your defined build number format `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces build number `Build HelloWorld_2013.07.19.1`, the script applies version `2013.07.19.1` to your assemblies.
 
 ```powershell
 # Enable -Verbose option
@@ -184,13 +184,13 @@ The following inline PowerShell script in a YAML pipeline uses the OAuth token t
 
 #### [Classic](#tab/classic)
 
-To enable your script to use the build process OAuth token, in the **Tasks** tab of the build definition, select an **Agent job**, and then select **Allow scripts to access the OAuth token** under **Additional options**.
+To enable your script to use the build process OAuth token, select the **Agent job** for the PowerShell script task, and then select **Allow scripts to access the OAuth token** under **Additional options**.
 
 :::image type="content" source="media\Allow-scripts-to-access-oauth-token.png" alt-text="Screenshot of enabling OAuth token access for scripts.":::
 
 Your script can now use the `SYSTEM_ACCESSTOKEN` environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
-Add the following inline PowerShell script in the **PowerShell Script** task to use the Azure Pipelines REST API to retrieve the pipeline definition.
+The following inline script in a **PowerShell Script** task uses the Azure Pipelines REST API to retrieve the pipeline definition.
 
 ```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
