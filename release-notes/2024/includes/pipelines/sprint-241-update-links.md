@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [AzureFileCopy, AzurePowerShell and SqlAzureDacpacDeployment tasks can no longer use AzureRM modules](#azurefilecopy-azurepowershell-and-sql-azuredacpacdeployment-tasks-can-no-longer-use-azurerm-modules)
-- [Pipelines and tasks populate variables to customize Workload identity federation authentication](#pipelines-and-tasks-populate-variables-to-customize-workload-identity-federation-authentication)
+- [Use Workload identity federation for container jobs, resources & tasks](#use-workload-identity-federation-for-container-jobs-resources-tasks)
