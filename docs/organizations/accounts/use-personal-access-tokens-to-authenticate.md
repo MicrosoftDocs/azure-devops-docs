@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2024
+ms.date: 07/02/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -34,15 +34,19 @@ To establish PATs for non-Microsoft tools, you can either use [Git credential ma
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
-## Changes to Format
+## Changes to format
 
-As of July 2024, we've updated the format of personal access tokens issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits to improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
+As of July 2024, we made significant changes to the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits will improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
 
-Some notable changes:
-* The length of our tokens increases from 52 characters to 84 characters, 52 of which will be randomized data. This improves overall entropy of the generated token, enabling us to be more resistant to potential brute forcing attacks.
-* Tokens issued by our service includes a fixed `AZDO` signature at characters 76-80.
+Key changes:
+* **Increased token length:** The new tokens are longer, now 84 characters in total. Out of these, 52 characters are randomized data. This increased length improves overall entropy, making the tokens more resistant to potential brute force attacks.
+* **Fixed signature:** Tokens issued by our service include a fixed `AZDO` signature at positions 76-80.
 
-Customers are advised to regenerate all PATs currently in use immediately to benefit from these changes. Integrators are also recommended to support both this new token length and the current token length, while customers adapt to this new format. Both existing and new formats will continue to be accepted for the foreseeable future. As more customers adopt the new format, we'll begin exploring retiring our past 52-character format and all tokens issued in the older format.
+Action required:
+* **Regenerate existing PATs:** We strongly recommend regenerating all PATs currently in use to take advantage of these security enhancements.
+* **Integrator support:** Integrators should update their systems to accommodate both the new and existing token lengths.
+
+As both formats remain valid for the foreseeable future, we are actively encouraging customers to transition to the new 84-character format. As adoption of the new format increases, we will consider retiring the older 52-character format and all tokens issued in that style.
 
 ## Related articles
 
