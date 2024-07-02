@@ -116,7 +116,7 @@ For existing repositories, if you already added the origin using the username, r
 
 Otherwise, run the following command.
 
-``git remote add origin https://<PAT>@<company_machineName>.dev.azure.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
+``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
 
 ### Use a PAT in your code
 
