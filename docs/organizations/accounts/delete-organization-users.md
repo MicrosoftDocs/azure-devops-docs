@@ -74,7 +74,7 @@ Your bill doesn't show the changes until the next month because paid users are m
 
     ![Screenshot showing selected Users button in organization settings.](../../media/settings/open-organization-settings-users-vert.png)
 
-4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**. If this option isn't available, see the [prerequisites](#prerequisites).
 
    ![Screenshot showing removal of user from organization.](media/delete-user/remove-user-from-organization-new.png)
 
