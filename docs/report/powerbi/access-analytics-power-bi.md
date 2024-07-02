@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 05/01/2024
 ---
 
-# Connect to Analytics data by using the Power BI OData feed
+# Connect to Analytics data using the Power BI OData feed
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
