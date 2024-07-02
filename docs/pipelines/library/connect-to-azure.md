@@ -60,19 +60,25 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 
    :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot of Workload Identity federation (automatic) authentication method selection.":::
 
-1. Select a **Scope level**. 
+1. Select a **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
 
-    For the **Subscription** scope, enter the following parameters:
-    1. **Subscription**: Required. Select the Azure subscription.
-    1. **Resource group**: Required. Enter the Azure subscription name.
+    * For the **Subscription** scope, enter the following parameters:
     
-    For the **Management Group** scope, enter the following parameter:
-    * **Management Group**: Required. Select the Azure management group.
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription** | Required. Select the Azure subscription. |
+        | **Resource group** | Required. Enter the Azure subscription name. |
     
-    For the **Machine Learning Workspace** scope, enter the following parameters:
-    1. **Subscription**: Required. Select the Azure subscription.
-    1. **Resource Group**: Required. Select the resource group containing the workspace.
-    1. **Machine Learning Workspace**: Required. Select the Azure Machine Learning workspace.
+    * For the **Management Group** scope, select the **Azure management group**.
+    
+    * For the **Machine Learning Workspace** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription** | Required. Select the Azure subscription. |
+        | **Resource Group** | Required. Select the resource group containing the workspace. |
+        | **Machine Learning Workspace** | Required. Select the Azure Machine Learning workspace. |
+|
 
 1. Enter a **Service connection name**.
 1. Optionally, enter a description for the service connection.
@@ -114,29 +120,33 @@ Use this option to manually create a service connection that uses an existing wo
    | **Issuer** | Required. DevOps automatically creates the issuer URL is automatically created |
    | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
    | **Environment** | Required. Chose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
-   | **Scope level** | Required. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.|
 
-    1. Select the **Scope Level**.  
-        For the **Subscription** scope, enter the following parameters:
-          | Parameter | Description |
-          | --------- | ----------- |
-          | **Subscription Id** | Required. Enter the Azure subscription ID. |
-          | **Subscription Name** | Required. Enter the Azure subscription name. |
+
+    1. Select the **Scope Level**.  Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
+    
+        * For the **Subscription** scope, enter the following parameters:
+
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
         
-        For the **Management Group** scope, enter the following parameters:
-          | Parameter | Description |
-          | --------- | ----------- |
-          | **Management Group Id** | Required. Enter the Azure management group ID. |
-          | **Management Group Name** | Required. Enter the Azure management group name. |
+        * For the **Management Group** scope, enter the following parameters:
+
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Management Group Id** | Required. Enter the Azure management group ID. |
+            | **Management Group Name** | Required. Enter the Azure management group name. |
         
-        For the **Machine Learning Workspace** scope, enter the following parameters:
-          | Parameter | Description |
-          | --------- | ----------- |
-          | **Subscription Id** | Required. Enter the Azure subscription ID. |
-          | **Subscription Name** | Required. Enter the Azure subscription name. |
-          | **Resource Group** | Required. Select the resource group containing the workspace. |
-          | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
-          | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
+        * For the **Machine Learning Workspace** scope, enter the following parameters:
+
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
+            | **Resource Group** | Required. Select the resource group containing the workspace. |
+            | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
+            | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
     
     1. In the **Authentication** section, enter or select the following parameters:
     
@@ -326,19 +336,30 @@ To create the service connection:
 
     :::image type="content" source="media\new-azure-resource-manager-conn-sp-auto-selection.png" alt-text="Screenshot that shows selecting a service principal (automatic) authentication method selection.":::
 
-1. Enter or select the following parameters:
+1. Select the **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
 
-   | Parameter | Description |
-   | --------- | ----------- |
-   | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
-   | **Scope level** | Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.|
-   | **Subscription** | If you selected **Subscription** or **Machine Learning Workspace** for the scope level, select an existing Azure subscription. If no Azure subscriptions or instances appear, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-   | **Resource Group** | If you selected **Subscription** or **Machine Learning Workspace** for the scope, you can specify the **Resource group**. If you selected the **Subscription** scope, you can leave it empty to allow users to access all resources that are defined within the subscription or select a resource group to restrict user access to resources. Users can then access only the resources that are defined for that resource group.|  
-   | **Management Group** | If you selected **Management Group** for the scope, select an existing Azure management group. For more information, see [Create management groups](/azure/azure-resource-manager/management-groups-create). |
-   | **Machine Learning Workspace** | If you selected **Machine Learning Workspace** for the scope, select an existing Azure Machine Learning workspace. |
-   | **Service connection name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
-   | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
+    * For the **Subscription** scope, enter the following parameters:
 
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
+    
+    * For the **Management Group** scope, enter the following parameters, select the Azure management group.
+    
+    * For the **Machine Learning Workspace** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
+        | **Resource Group** | Required. Select the resource group containing the workspace. |
+        | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
+        | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |
+
+1. Enter a **Service connection name**.
+1. Optionally, enter a description for the service connection.
+1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 1. Select **Save**.
 
 After the new service connection is created:
@@ -391,29 +412,32 @@ To create a service connection that uses an existing service principal:
 
 1. From the **New Azure service connection** dialog, select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. 
 
-1. Select the **Scope Level**.  
+1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
 
-    For the **Subscription** scope, enter the following parameters:
-      | Parameter | Description |
-      | --------- | ----------- |
-      | **Subscription Id** | Required. Enter the Azure subscription ID. |
-      | **Subscription Name** | Required. Enter the Azure subscription name. |
-    
-    For the **Management Group** scope, enter the following parameters:
-      | Parameter | Description |
-      | --------- | ----------- |
-      | **Management Group Id** | Required. Enter the Azure management group ID. |
-      | **Management Group Name** | Required. Enter the Azure management group name. |
-    
-    For the **Machine Learning Workspace** scope, enter the following parameters:
-      | Parameter | Description |
-      | --------- | ----------- |
-      | **Subscription Id** | Required. Enter the Azure subscription ID. |
-      | **Subscription Name** | Required. Enter the Azure subscription name. |
-      | **Resource Group** | Required. Select the resource group containing the workspace. |
-      | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
-      | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
+    * For the **Subscription** scope, enter the following parameters:
 
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
+    
+    * For the **Management Group** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Management Group Id** | Required. Enter the Azure management group ID. |
+        | **Management Group Name** | Required. Enter the Azure management group name. |
+    
+    * For the **Machine Learning Workspace** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
+        | **Resource Group** | Required. Select the resource group containing the workspace. |
+        | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
+        | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
+    
 1. In the **Authentication** section, enter or select the following parameters:
 
     | Parameter | Description |
@@ -422,15 +446,14 @@ To create a service connection that uses an existing service principal:
     | **Credential** | Select **Service Principal Key** or **Certificate**. If you selected **Service Principal Key**, enter the key (password). If you selected **Certificate**, enter the certificate. |
     | **Tenant Id** | Required. Enter the tenant ID. |
     | **Verify** | Select to validate the settings you entered. |
-
+    
 1. In the Details section, enter the following parameters:
 
     | Parameter | Description |
     | --------- | ----------- |
     | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
     | **Description** | Optional. Enter a description of the service connection.|
-
-1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+    | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
 
 1. Select **Verify and save** to validate and create the service connection.
 
@@ -470,30 +493,33 @@ You can configure self-hosted agents on Azure VMs to use an [Azure managed ident
 
    :::image type="content" source="media/resource-manager-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity authentication method selection.":::
 
-1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or **Azure US Government**).
+1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or Government cloud options).
 
-1. Select the **Scope level**. 
+1. Select the **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
 
-    For the **Subscription** scope, enter the following parameters:
-    | Parameter | Description |
-    | --------- | ----------- |
-    | **Subscription Id** | Required. Enter the Azure subscription ID. |
-    | **Subscription Name** | Required. Enter the Azure subscription name. |
+    * For the **Subscription** scope, enter the following parameters:
 
-    For the **Management Group** scope, enter the following parameters:
-    | Parameter | Description |
-    | --------- | ----------- |
-    | **Management Group Id** | Required. Enter the Azure management group ID. |
-    | **Management Group Name** | Required. Enter the Azure management group name. |
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
 
-    For the **Machine Learning Workspace** scope, enter the following parameters:
-      | Parameter | Description |
-      | --------- | ----------- |
-      | **Subscription Id** | Required. Enter the Azure subscription ID. |
-      | **Subscription Name** | Required. Enter the Azure subscription name. |
-      | **Resource Group** | Required. Select the resource group containing the workspace. |
-      | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
-      | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |
+    * For the **Management Group** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Management Group Id** | Required. Enter the Azure management group ID. |
+        | **Management Group Name** | Required. Enter the Azure management group name. |
+
+    * For the **Machine Learning Workspace** scope, enter the following parameters:
+    
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
+        | **Resource Group** | Required. Select the resource group containing the workspace. |
+        | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
+        | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |
     
 1. Enter the **Tenant Id**.
 1. Enter the **Service connection name**.
