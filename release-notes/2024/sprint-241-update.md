@@ -5,9 +5,9 @@ ms.author: ckanyika
 ms.date: 7/2/2024
 description: TBD
 ---
-# TBD
+# Improved security with new personal access token format
 
- 
+ We are excited to announce improvements to the format of personal access tokens (PATs), aimed at enhancing security and boosting secret detection capabilities through partners like GitHub Advanced Security! 
 
 Check out the release notes for details.
 
