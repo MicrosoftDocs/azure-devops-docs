@@ -103,7 +103,7 @@ steps:
 
 After you publish the YAML file in GitHub, run the following script in a Bash shell in Azure Cloud Shell or locally. The script creates the pipeline, variable group, and secret and nonsecret variables, and then modifies the variable values.
 
-In the script, replace the following placeholders with your own values:
+Before you run the script, replace the following placeholders with your own values:
 
 - \<azure-devops-pat>: Your Azure DevOps PAT.
 - \<azure-devops-organization>: Your Azure DevOps organization name.
@@ -211,7 +211,7 @@ read -p "Press Enter to continue:"
 
 ## Clean up resources
 
-To avoid incurring Azure storage charges, after you run the script sample, you can remove the Azure resource group and all its resources by running the following script.
+To avoid incurring Azure storage charges after you run the script sample, you can remove the Azure resource group and all its resources by running the following script.
 
 ```azurecli
 az pipelines variable-group delete --group-id $variableGroupId --yes
@@ -226,7 +226,7 @@ az devops configure --defaults organization="" project=""
 
 ## Azure CLI references
 
-The sample in this article used the following Azure CLI commands:
+The sample in this article uses the following Azure CLI commands:
 
 - [az devops configure](/cli/azure/devops#az-devops-configure)
 - [az devops project create](/cli/azure/devops/project#az-devops-project-create)

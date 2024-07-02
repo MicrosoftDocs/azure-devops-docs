@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how you can move beyond the basics of compiling and testing code in Azure Pipelines by using PowerShell scripts to add business logic to pipelines. When you use the Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2), your PowerShell script runs in your pipeline. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
+This article explains how you can move beyond the basics of compiling and testing code and use PowerShell scripts to add business logic to pipelines. You can use the Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) to run PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
 
 You can use variables in your PowerShell scripts. For more information, see [Define variables](../process/variables.md).
 
@@ -59,7 +59,7 @@ The example script in this section applies versions to assemblies. For the scrip
 
 ### [YAML](#tab/yaml)
 
-Customize your build number in the YAML pipeline by using the the `name` property. The `name` property must be at the root level of the pipeline. For more information, see [Configure run or build numbers](../process/run-number.md).
+Customize your build number in the YAML pipeline by using the `name` property. The `name` property must be at the root level of the pipeline. For more information, see [Configure run or build numbers](../process/run-number.md).
 
 ```yaml
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
@@ -156,7 +156,7 @@ else
 ```
 
 <a name="oauth"></a>
-
+<a name="example-powershell-script-access-rest-api"></a>
 ## Example script to access the REST API
 
 This example uses the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md).
@@ -184,13 +184,13 @@ The following inline PowerShell script in a YAML pipeline uses the OAuth token t
 
 #### [Classic](#tab/classic)
 
-To enable your script to use the build process OAuth token, in the **Tasks** tab of the build definition, select an **Agent job**, and then select **Allow Scripts to Access OAuth Token** under **Additional options**.
+To enable your script to use the build process OAuth token, in the **Tasks** tab of the build definition, select an **Agent job**, and then select **Allow scripts to access the OAuth token** under **Additional options**.
 
 :::image type="content" source="media\Allow-scripts-to-access-oauth-token.png" alt-text="Screenshot of enabling OAuth token access for scripts.":::
 
 Your script can now use the `SYSTEM_ACCESSTOKEN` environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
-You can add the following inline PowerShell script to use the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
+Add the following inline PowerShell script in the **PowerShell Script** task to use the Azure Pipelines REST API to retrieve the pipeline definition.
 
 ```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
@@ -201,7 +201,7 @@ $pipeline = Invoke-RestMethod -Uri $url -Headers @{
 Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
 
---- 
+---
 
 ## Related content
 
