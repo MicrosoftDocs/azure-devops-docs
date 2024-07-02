@@ -67,7 +67,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
     1. **Resource group**: Required. Enter the Azure subscription name.
     
     For the **Management Group** scope, enter the following parameters:
-    1. **Management Group**: Required. Select the Azure management group.
+    * **Management Group**: Required. Select the Azure management group.
     
     For the **Machine Learning Workspace** scope, enter the following parameters:
     1. **Subscription**: Required. Select the Azure subscription.
@@ -93,7 +93,7 @@ Use this option to manually create a service connection that uses an existing wo
 
 1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
    
-      :::image type="content" source="media\new-azure-resource-mgr-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
+      :::image type="content" source="media\new-azure-resource-manager-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
 
 1. Select **Workload identity federation (manual)** and **Next**.
 
@@ -280,7 +280,7 @@ To create the service connection:
 
 1. Select **Service principal (automatic)** and **Next**.
 
-    :::image type="content" source="media\new-azure-resource-mgr-conn-sp-auto-selection.png" alt-text="Screenshot that shows selecting a service principal (automatic) authentication method selection.":::
+    :::image type="content" source="media\new-azure-resource-manager-conn-sp-auto-selection.png" alt-text="Screenshot that shows selecting a service principal (automatic) authentication method selection.":::
 
 1. Enter or select the following parameters:
 
@@ -343,7 +343,7 @@ To create a service connection that uses an existing service principal:
 
 1. Select **Service principal (manual)** and **Next**.
 
-    :::image type="content" source="media\new-azure-resource-mgr-conn-sp-manual-selection.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
+    :::image type="content" source="media\new-azure-resource-manager-conn-sp-manual-selection.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
 
 1. From the **New Azure service connection** dialog, select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. 
 
@@ -418,7 +418,7 @@ You can configure self-hosted agents on Azure VMs to use an [Azure managed ident
 
 1. Select **Managed identity** for the authentication method.
 
-   :::image type="content" source="media/rm-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity authentication method selection.":::
+   :::image type="content" source="media/resource-manager-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity authentication method selection.":::
 
 1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or **Azure US Government**).
 
@@ -475,7 +475,7 @@ You can create a service connection by using a publish profile. You can use a pu
 
 1. Select **Publish profile** for the authentication method and select **Next**.
 
-   :::image type="content" source="media/new-service-publish-profile.png" alt-text="Screenshot of Publish profile authentication method selection.":::
+   :::image type="content" source="media/new-service-connection-publish-profile.png" alt-text="Screenshot of Publish profile authentication method selection.":::
 
 1. Enter the following parameters:
 
