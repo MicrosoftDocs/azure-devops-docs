@@ -49,9 +49,9 @@ sections:
           Subscriptions made at one level are fully and completely independent of each other. There is no interaction. If you turn something off at the project level but not at the user level, then you get the notification. 
 
       - question: |
-          Is it possible to translate notification messages? Even though my profile is in a different language, the email messages arrive in English.
+          Is it possible to translate notification messages in Azure DevOps? Even though my profile is in a different language, the email messages arrive in English.
         answer: |
-          No. You can't customize the language of notification messages. Consider [integrating with a custom application or service](../../integrate/index.md?view=azure-devops) to achieve your desired results.
+          No. You can't customize the language of notification messages via Azure DevOps. Consider [integrating with a custom application or service](../../integrate/index.md?view=azure-devops) to achieve your desired results.
 
 additionalContent: |
 
