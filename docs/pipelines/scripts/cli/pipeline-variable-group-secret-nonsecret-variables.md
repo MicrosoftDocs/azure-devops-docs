@@ -27,7 +27,7 @@ The script demonstrates the following three operations:
 
 To run the sample, you need:
 
-- A [GitHub repository with Azure Pipelines installed](.../../get-started/pipelines-sign-up.md)
+- A [GitHub repository with Azure Pipelines installed](../../get-started/pipelines-sign-up.md)
 
 - A [GitHub personal access token (PAT)](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for access.
 
