@@ -1,10 +1,10 @@
 ---
-title: Use Azure Artifacts feeds as a private PowerShell repository
-description: How to use Azure Artifacts feeds as a private PowerShell repository
+title: Use an Azure Artifacts feed as a private PowerShell repository
+description: Learn how to use an Azure Artifacts feed as a private PowerShell repository
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 08/19/2022
+ms.date: 07/03/2024
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -13,23 +13,26 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Artifacts provides an easy way to share PowerShell scripts across teams to promote collaboration and maximize effectiveness. By storing PowerShell modules in a private repository, you can give members of your team the ability to download or update those scripts quickly using the command line.
+Azure Artifacts provides a convenient solution for sharing PowerShell scripts. By using Azure Artifacts feeds, you can seamlessly publish your PowerShell modules from the command line and control access to them through your feed settings. 
+This article will guide you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules.
 
-This article will guide you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules. You'll learn how to:
+You'll learn how to:
 
 >[!div class="checklist"]
 > * Create a Personal Access Token
-> * Create a new feed to store PowerShell modules
-> * Create, package, and publish PowerShell modules
-> * Connect to a feed with PowerShell
-> * Use the private PowerShell repository with Azure Pipelines
+> * Create, package, and publish a PowerShell module
+> * Connect to an Azure Artifact feed
+> * Register and install a PowerShell module using Azure Pipelines
 
 ## Prerequisites
 
-- [NuGet.exe](https://www.nuget.org/downloads)
-- [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider)
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+
+- Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
+
+- Install [NuGet](https://www.nuget.org/downloads).
 
 ## Create a personal access token
 
