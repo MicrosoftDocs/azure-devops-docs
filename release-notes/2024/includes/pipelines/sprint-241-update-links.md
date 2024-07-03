@@ -5,5 +5,5 @@ ms.date: 7/3/2024
 ms.topic: include
 ---
 
-- [Transitioning from AzureRM to the Az Module](#transitioning-from-azurerm-to-the-az-module)
+- [AzureFileCopy, AzurePowerShell and SqlAzureDacpacDeployment tasks use Az modules only](#azurefilecopy-azurepowershell-and-sqlazuredacpacdeployment-tasks-use-az-modules-only)
 - [Use Workload identity federation for container jobs, resources and tasks](#use-workload-identity-federation-for-container-jobs-resources-and-tasks)
