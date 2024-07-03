@@ -1,9 +1,9 @@
 ---
-title: TBD
+title: Improved security with new personal access token format
 author: ckanyika
 ms.author: ckanyika
-ms.date: 7/2/2024
-description: TBD
+ms.date: 7/3/2024
+description: Improved security with new personal access token format
 ---
 # Improved security with new personal access token format
 

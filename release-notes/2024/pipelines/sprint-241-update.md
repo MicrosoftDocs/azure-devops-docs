@@ -3,7 +3,7 @@ title: Azure DevOps release notes - Azure Pipelines Sprint 241 update
 description: See the Sprint 241 feature updates for Azure Pipelines, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 7/2/2024
+ms.date: 7/3/2024
 ---
 
 # Azure Pipelines - Sprint 241 Update

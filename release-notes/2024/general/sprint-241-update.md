@@ -3,7 +3,7 @@ title: Azure DevOps release notes - Azure DevOps Sprint 241 Update
 description: See the Sprint 241 feature updates for Azure DevOps, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 7/2/2024
+ms.date: 7/3/2024
 ---
 
 # Azure DevOps - Sprint 241 Update
