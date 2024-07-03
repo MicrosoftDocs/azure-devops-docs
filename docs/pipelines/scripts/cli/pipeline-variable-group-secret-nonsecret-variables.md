@@ -4,7 +4,7 @@ description: Use this Azure DevOps CLI sample to create and manage secret and no
 author: juliakm
 ms.author: jukullam
 manager: mijacobs
-ms.date: 07/02/2024
+ms.date: 07/03/2024
 ms.topic: sample
 ms.devlang: azurecli 
 monikerRange: '>=azure-devops-2020'
@@ -28,12 +28,9 @@ The script demonstrates the following three operations:
 To run the sample, you need:
 
 - A [GitHub repository with Azure Pipelines installed](../../get-started/pipelines-sign-up.md)
-
-- A [GitHub personal access token (PAT)](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for access.
-
-- An [Azure DevOps organization](../../get-started/pipelines-sign-up.md) with a [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) for authentication.
-
-- **Project Collection Administrator** permissions in the Azure DevOps organization.
+- A [GitHub personal access token (PAT)](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for access
+- An [Azure DevOps organization](../../get-started/pipelines-sign-up.md) with a [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) for authentication
+- [Project Collection Administrator permissions in the Azure DevOps organization](../../../organizations/security/change-organization-collection-level-permissions.md)
 
 ## Save the sample file
 
