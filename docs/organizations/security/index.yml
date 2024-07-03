@@ -25,6 +25,8 @@ landingContent:
         links:
           - text: About permissions, access, and security groups
             url: about-permissions.md
+          - text: Security best practices
+            url: security-best-practices.md
       - linkListType: quickstart
         links:
           - text: View permissions
