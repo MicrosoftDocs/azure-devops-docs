@@ -20,7 +20,7 @@ This sample uses the `az devops` Azure DevOps extension to the Azure CLI to crea
 The script demonstrates the following three operations:
 
 - Define an [Azure Pipelines](../../index.yml) pipeline by using a [YAML](/azure/devops/pipelines/yaml-schema/) file stored in GitHub.
-- Create a [variable group](../../library/variable-groups.md) with nonsecret and secret variables to use in the pipeline.
+- Create a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in the pipeline.
 - Run the pipeline using the [Azure DevOps CLI](../../../cli/index.md), and show pipeline run processing and output.
 
 [!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
@@ -107,18 +107,18 @@ steps:
 
 After you store the YAML file in GitHub, run the following Azure DevOps CLI script in a Bash shell in Cloud Shell or locally. The script creates the pipeline, variable group, and secret and nonsecret variables, and then modifies the variable values.
 
-Before you run the script, replace the following placeholders with your values:
+Before you run the script, replace the following placeholders as follows:
 
-- \<devops-organization>: Your Azure DevOps organization name.
-- \<github-organization>: Your GitHub organization name.
-- \<github-repository>: Your GitHub repository name.
-- \<github-pat>: Your GitHub PAT.
+- `<devops-organization>` Your Azure DevOps organization name
+- `<github-organization>` Your GitHub organization name
+- `<github-repository>` Your GitHub repository name
+- `<github-pat>` Your GitHub PAT
 
 Replace the following placeholders with values you choose:
 
-- \<pipelinename>: A name for the pipeline that is between 3-19 characters and contains only numerals and lowercase letters. The script adds a 5-character unique identifier.
-- \<azure-resource-group-location>: Azure region for the resource group that contains the resources for this sample, for example `eastus`.
-- \<azure-storage-account-location>: Same as the resource group location.
+- `<pipelinename>` A name for the pipeline that is between 3-19 characters and contains only numerals and lowercase letters. The script adds a 5-digit unique identifier.
+- `<azure-resource-group-location>` Azure region for the resource group that contains the Azure Storage account, for example `eastus`.
+- `<azure-storage-account-location>` Same as the resource group location.
 
 ```azurecli
 #!/bin/bash
