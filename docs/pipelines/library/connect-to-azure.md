@@ -36,7 +36,7 @@ The service connection uses a service principal to authenticate with Azure resou
 
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
-[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.  You can automatically create the workload identity federation for authentication or manually create it.
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets. You can automatically create the workload identity federation for authentication or manually create it.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
@@ -119,10 +119,10 @@ Use this option to manually create a service connection that uses an existing wo
    | --------- | ----------- |
    | **Issuer** | Required. DevOps automatically creates the issuer URL is automatically created |
    | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
-   | **Environment** | Required. Chose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
+   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
 
 
-    1. Select the **Scope Level**.  Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
+    1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
     
         * For the **Subscription** scope, enter the following parameters:
 
@@ -201,7 +201,10 @@ To convert a service connection:
 
 Use a script to update multiple service connections at once to now use workload identity federation for authentication.
 
-This example PowerShell script requires two parameters: Azure DevOps organization (example: `https://dev.azure.com/fabrikam-tailspin`) and Azure DevOps project (example: `Space game web agent`). The script then retrieves the associated service connections for your Azure DevOps project and organization. You're asked to confirm that you want to convert each associated service connection that doesn't use workload identity federation. If you confirm, the script uses the Azure DevOps REST API to update each service connection to now use workload identity federation.
+This example PowerShell script requires two parameters: Azure DevOps organization (example: `https://dev.azure.com/fabrikam-tailspin`) and Azure DevOps project (example: `Space game web agent`). The script then retrieves the associated service connections for your Azure DevOps project and organization. 
+
+When converting service connections to use workload identity federation, you are prompted to confirm the update for each connection not already using it. Upon confirmation, the script updates these service connections via the Azure DevOps REST API to utilize workload identity federation.
+
 The script requires [PowerShell 7.3 or newer](/powershell/scripting/install/installing-powershell-on-windows) and [Azure CLI](/cli/azure/install-azure-cli) to run. Save the script to a `.ps1` file and run it using PowerShell 7.
 
 ```powershell
@@ -313,7 +316,7 @@ To revert a service connection:
 
 You can set up a service connection to authenticate with Azure resources by using a service principal secret. This approach is useful when you need to further limit permissions for Azure resources that users access through the service connection. 
 
-You can choose to configure the service connection manually or automatically. It's best practice to use the automatic approach if you're signed in as the owner of the Azure Pipelines organization and the Azure subscription, and you don't need to further limit permissions for Azure resources that users access through the service connection.
+You can choose to configure the service connection manually or automatically. It's best practice to use the automatic approach if you signed in as the owner of the Azure Pipelines organization and the Azure subscription, and you don't need to further limit permissions for Azure resources that users access through the service connection.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
