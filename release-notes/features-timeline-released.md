@@ -37,6 +37,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2024/sprint-241-update.md" data-raw-source="[3 July 2024](2024/sprint-241-update.md)"> 3 July  2024</a></td>
+    <td>New authentication format for Azure DevOps personal access tokens available</td><td>General</td><td>Future</td></tr>
+    <td>AzureFileCopy, AzurePowerShell, and SqlAzureDacpacDeployment tasks use Az modules only</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation for container jobs, resources, and tasks</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
     <td rowspan="9"><a href="2024/sprint-240-update.md" data-raw-source="[14 June 2024](2024/sprint-240-update.md)"> 14 June  2024</a></td>
     <td>Security overview API documentation now available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Change for deleting area and iteration paths</td><td>Boards</td><td>Future</td></tr>
