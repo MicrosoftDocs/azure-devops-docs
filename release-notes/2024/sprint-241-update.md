@@ -15,6 +15,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-241-update-links](includes/general/sprint-241-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-241-update-links](includes/ghazdo/sprint-241-update-links.md)]
+
 ### Azure Pipelines
 
 [!INCLUDE [sprint-241-update-links](includes/pipelines/sprint-241-update-links.md)]
@@ -22,6 +26,10 @@ Check out the release notes for details.
 ## General
 
 [!INCLUDE [sprint-241-update](includes/general/sprint-241-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-241-update](includes/ghazdo/sprint-241-update.md)]
 
 ## Azure Pipelines
 

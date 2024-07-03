@@ -1,13 +1,14 @@
 ---
 author: ckanyika
 ms.author: ckanyika
+ms.service: azure-devops
 ms.date: 7/3/2024
 ms.topic: include
 ---
 
 ### New authentication format for Azure DevOps personal access tokens available
 
-We have made updates to the format of personal access tokens (PATs) issued by Azure DevOps. These changes provide additional security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits will improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
+We have made updates to the format of personal access tokens (PATs) issued by Azure DevOps. These changes provide additional security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/&preserve-view=true). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits will improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
 
 Notably, the length of our tokens increase from 52 characters to 84 characters, 52 of which will be randomized data. This improves overall entropy of the token generation, enabling us to be more resistant to potential brute forcing attacks. 
 
