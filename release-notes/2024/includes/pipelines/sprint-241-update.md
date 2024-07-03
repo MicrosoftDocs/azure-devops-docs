@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Transitioning from AzureRM to the Az Module
 
-As of February 2024, the AzureRM PowerShell module was deprecated and is no longer supported. While the AzureRM module may still function, it’s no longer maintained, placing any continued use at your discretion. We recommend transitioning to the [Az module](https://learn.microsoft.com/powershell/azure/migrate-from-azurerm-to-az?view=azps-12.0.0) for tasks accessing Azure with PowerShell. If you use these tasks on self-hosted agents, please ensure the Az module is pre-installed on your images.
+As of February 2024, the AzureRM PowerShell module was deprecated and is no longer supported. While the AzureRM module may still function, it’s no longer maintained, placing any continued use at your discretion. We recommend transitioning to the [Az module](https://learn.microsoft.com/powershell/azure/migrate-from-azurerm-to-az?view=azps-12.0.0&preserve-view=true) for tasks accessing Azure. If you use these tasks on self-hosted agents, please ensure the Az module is pre-installed on your images.
 
 ##### Use Workload identity federation for container jobs, resources and tasks
 
