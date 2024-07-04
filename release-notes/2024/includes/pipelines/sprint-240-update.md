@@ -147,9 +147,9 @@ variables:
 
 ### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
 
-Docker Compose v1 will reach its end-of-life and be removed from Hosted Agents in July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode.
+Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents in July 24 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available.
 
-Some users will need more time to update their tasks for Docker Compose v2 compatibility. In those cases, follow these instructions to use **DockerComposeV0** task with **docker-compose v1**.
+However, compatibility mode does not all compatibility issues. Some users will need more time to update their tasks for Docker Compose v2 compatibility. In those cases, follow these instructions to use the **DockerComposeV0** task with **docker-compose v1**.
 
 > **_NOTE_**: This guide based on [Install Compose standalone](https://docs.docker.com/compose/install/standalone) documentation
 
