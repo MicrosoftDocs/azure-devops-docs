@@ -260,4 +260,6 @@ You can revoke a PAT at any time, for many reasons.
 
    :::image type="content" source="../media/revoke-token-confirmation-dialog-preview.png" alt-text="Screenshot showing confirmation screen to revoke PAT.":::
 
+For more information, see [Revoke user PATs for admins](../../../organizations/accounts/admin-revoke-user-pats.md).
+
 ::: moniker-end
