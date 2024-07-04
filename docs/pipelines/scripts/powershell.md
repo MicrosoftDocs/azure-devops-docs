@@ -185,7 +185,7 @@ The following inline PowerShell script in a YAML pipeline uses the OAuth token t
 
 To enable your script to use the build process OAuth token, select the **Agent job** for the PowerShell script task, and then select **Allow scripts to access the OAuth token** under **Additional options**.
 
-:::image type="content" source="media\Allow-scripts-to-access-oauth-token.png" alt-text="Screenshot of enabling OAuth token access for scripts.":::
+:::image type="content" source="media\allow-scripts-to-access-oauth-token.png" alt-text="Screenshot of enabling OAuth token access for scripts.":::
 
 Your script can now use the `SYSTEM_ACCESSTOKEN` environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
