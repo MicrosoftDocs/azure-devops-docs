@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2024
+ms.date: 07/02/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -34,6 +34,20 @@ To establish PATs for non-Microsoft tools, you can either use [Git credential ma
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
+## Changes to format
+
+As of July 2024, we made significant changes to the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits will improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
+
+Key changes:
+* **Increased token length:** The new tokens are longer, now 84 characters in total. Out of these, 52 characters are randomized data. This increased length improves overall entropy, making the tokens more resistant to potential brute force attacks.
+* **Fixed signature:** Tokens issued by our service include a fixed `AZDO` signature at positions 76-80.
+
+Action required:
+* **Regenerate existing PATs:** We strongly recommend regenerating all PATs currently in use to take advantage of these security enhancements.
+* **Integrator support:** Integrators should update their systems to accommodate both the new and existing token lengths.
+
+As both formats remain valid for the foreseeable future, we are actively encouraging customers to transition to the new 84-character format. As adoption of the new format increases, we will consider retiring the older 52-character format and all tokens issued in that style.
+
 ## Related articles
 
 * [About security, authentication, and authorization](../security/about-security-identity.md)
@@ -45,7 +59,7 @@ To establish PATs for non-Microsoft tools, you can either use [Git credential ma
 
 ## FAQs
 
-### Q: Why can't I edit or regenerate a PAT that's scoped to a single organization?
+### Q: Why can't I edit or regenerate a PAT scoped to a single organization?
 
 A: Ensure you're signed into the organization where your PAT is scoped. You can ***view*** all of your PATs while signed into any organization in the same Microsoft Entra ID, but you can only ***edit*** organization-scoped tokens when you're signed into the organization to which they're scoped.
 
@@ -74,6 +88,6 @@ If you want to publish your packages using Azure Pipelines, use the [NuGet Authe
 
 ### Q: Why did my PAT stop working?
 
-A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days is sufficient for many, but you may need to sign in more often than that depending upon your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
+A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days are sufficient for many, but you may need to sign in more often than that depending upon your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
 
 ::: moniker-end
