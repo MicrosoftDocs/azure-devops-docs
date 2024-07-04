@@ -147,11 +147,11 @@ variables:
 
 ### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
 
-Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents in July 24 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available.
+Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents July 24 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available on the agent.
 
-However, compatibility mode does not all compatibility issues. Some users will need more time to update their tasks for Docker Compose v2 compatibility. In those cases, follow these instructions to use the **DockerComposeV0** task with **docker-compose v1**.
+However, compatibility mode does not address all compatibility issues. See [Migrate to Compose V2](https://docs.docker.com/compose/migrate/). Some users will need more time to update their Docker Compose projects for Docker Compose v2 compatibility. In those cases, follow these instructions to use the **DockerComposeV0** task with **docker-compose v1**.
 
-> **_NOTE_**: This guide based on [Install Compose standalone](https://docs.docker.com/compose/install/standalone) documentation
+> **_NOTE_**: This guide is based on [Install Compose standalone](https://docs.docker.com/compose/install/standalone) documentation
 
 #### Use docker-compose v1 on Windows
 Add the powershell step to your pipeline to download the **docker-Compose v1.29.2** and use it with the **DockerComposeV0** task on **Windows**:
