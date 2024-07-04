@@ -5,9 +5,9 @@ ms.date: 6/14/2024
 ms.topic: include
 ---
 
-### Access Azure Service Bus from Pipelines using Entra ID authentication
+### Access Azure Service Bus from Pipelines using Microsoft Entra ID authentication
 
-You can now use [Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
+You can now use [Microsoft Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
 
 Identities accessing Azure Service Bus need to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
 
