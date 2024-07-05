@@ -23,7 +23,9 @@ To learn how to build a container image to deploy with Azure Pipelines, see [Bui
 
 You'll use the [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build or push Docker images, login or logout, start or stop containers, or run a Docker command.
 
-The task uses a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to log in and push to a container registry. The process for creating a Docker registry service connection differs depending on your registry. 
+The task uses a [Docker registry service connection for Azure Container Registry](../../library/service-endpoints.md#azure-container-registry) to log in and push to a container registry. The process for creating a Docker registry service connection differs depending on your registry. 
+
+
 
 The Docker registry service connection stores credentials to the container registry before pushing the image. You can also directly reference service connections in Docker without an additional script task.   
 
@@ -34,6 +36,9 @@ You'll need to follow a different process to create a service connection for Azu
 #### [Azure Container Registry](#tab/azure)
 
 With the Azure Container Registry option, the subscription (associated with the Microsoft Entra identity of the user signed into Azure DevOps) and container registry within the subscription are used to create the service connection. 
+
+> [!NOTE]
+> This service connection method uses a service principal and not workload identity federation for authentication. To learn how to use workload identity instead with Azure Container Registry, see [Manage service connections for Azure Container Registry](/azure/devops/pipelines/library/service-endpoints#azure-container-registry).
 
 When you create a new pipeline for a repository that contains a Dockerfile, Azure Pipelines will detect Dockerfile in the repository. To start this process, create a new pipeline and select the repository with your Dockerfile. 
 
@@ -60,7 +65,7 @@ For a more detailed overview, see [Build and Push to Azure Container Registry do
 
 #### [Docker Hub](#tab/docker)
 
-Choose the Docker Hub option under [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) and provide your username and password to create a Docker service connection.
+Choose the Docker Hub option under [Docker registry service connection](../../library/service-endpoints.md#docker-hub-or-others) and provide your username and password to create a Docker service connection.
 
 #### [Google Container Registry](#tab/google)
 
