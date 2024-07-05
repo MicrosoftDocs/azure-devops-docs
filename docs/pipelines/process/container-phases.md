@@ -33,7 +33,9 @@ The following requirements and limitations apply to agent hosts and containers f
 - To run containers, Windows and Linux agent hosts must have Docker installed, and must have permission to access the Docker daemon.
 - Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
 
-### Linux-based containers
+### Containers
+
+### [Linux](#tab/linux)
 
 Linux-based containers must meet the following requirements:
 
@@ -47,7 +49,7 @@ Linux-based containers must meet the following requirements:
 
 Some stripped-down containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these minimum requirements. Containers with an `ENTRYPOINT` might not work, because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running. For more information, see [Non glibc-based containers](#non-glibc-based-containers).
 
-### Windows-based containers
+### [Windows](#tab/windows)
 
 [Windows containers](/virtualization/windowscontainers/about/) must meet the following requirements:
 
@@ -57,11 +59,13 @@ Some stripped-down containers available on Docker Hub, especially those based on
   > [!NOTE]
   > A base Windows Nano Server container doesn't have the required dependencies to run Node.js.
 
+---
+
 ## Single job examples
 
 The following examples define a Windows or Linux container for a single job.
 
-### Linux single job example
+### [Linux](#tab/linux)
 
 The following simple example defines a Linux container:
 
@@ -77,7 +81,7 @@ steps:
 
 The preceding example tells the system to fetch the `ubuntu` image tagged `18.04` from [Docker Hub](https://hub.docker.com) and then start the container. The `printenv` command runs inside the `ubuntu:18.04` container.
 
-### Windows single job example
+### [Windows](#tab/windows)
 
 The following example defines a Windows container:
 
@@ -92,6 +96,8 @@ steps:
 ```
 
 For Windows, the kernel version of the host and container must match. Since the preceding example uses a Windows 2019 host image, it uses the `2019` tag for the container.
+
+---
 
 ## Multiple jobs example
 

@@ -1,89 +1,64 @@
 ---
-title: Quickstart - Use Azure Pipelines to build and publish a Node.js package
-description:  Build, deploy, and test JavaScript and Node.js apps with Azure Pipelines
+title: Build and publish a Node.js package
+description:  Learn how to use Azure Pipelines to build, deploy, and test a Node.js app.
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: devx-track-js, freshness-fy22q2
-ms.date: 04/17/2023
+ms.date: 07/05/2024
 monikerRange: '<= azure-devops'
-zone_pivot_groups: pipelines-version
 ---
 
-# Quickstart - Use Azure Pipelines to build and publish a Node.js package
+# Build and publish a Node.js package
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use an Azure DevOps pipeline to build, deploy, and test JavaScript apps. 
-
-This quickstart walks through how to use a pipeline to create a Node.js package with Node Package Manager (npm) and publish a pipeline artifact. 
-
-::: moniker range=">=azure-devops-2020"
+In this quickstart, you use a pipeline to create a Node.js package with Node Package Manager (npm), and publish a pipeline artifact. You see how to use Azure Pipelines to build, deploy, and test your JavaScript apps.
 
 ## Prerequisites
 
-You must have the following items in Azure DevOps:
+- A GitHub account where you can create a repository. [Create a GitHub account for free](https://github.com).
+- An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
+- An Azure DevOps project. [Create one using the Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
 
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
-* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
+::: moniker range=">=azure-devops"
 
-::: moniker-end
-
-::: zone pivot="pipelines-yaml"
-
-
-
-::: moniker range=">=azure-devops-2020"
-
-## 1 - Fork the sample code
-
-Fork the following sample Express.js server app at GitHub.
-
-```
-https://github.com/Azure-Samples/js-e2e-express-server
-```
-
-## 2 - Create your pipeline
- 
-
-1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
-
-1. Go to your project and select **Pipelines** > **Create a new pipeline**.
-
-1. Select **GitHub** as the location of your source code.
-
-1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
-
-1. When the list of repositories appears, select your Node.js sample repository.
-
-1. Azure Pipelines analyzes the code in your repository and recommends the `Node.js` template for your pipeline. Select that template.
-
-1. Azure Pipelines generates a YAML file for your pipeline. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
-
-1. A new run starts. Wait for the run to finish.
-
-When you're done, you have a working YAML file *azure-pipelines.yml* in your repository that's ready for you to customize.
+- An ability to run pipelines on Microsoft-hosted agents. You need to [request the free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request) or purchase a [parallel job](../licensing/concurrent-jobs.md).
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019" 
+::: moniker range="< azure-devops"
 
-1. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
-
-1. Set the **Agent pool** and **YAML file path** for your pipeline. 
-
-1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+- A self-hosted agent. To create one, see [Self-hosted agents](../agents/agents.md#self-hosted-agents).
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+## Fork the sample code
 
-## 3 - Build your package and publish an artifact
+Fork the sample Express.js server app.
 
-1. **Edit** your *azure-pipelines.yml* file.
+1. Go to the [js-e2e-express-server](https://github.com/Azure-Samples/js-e2e-express-server) repository.
+1. Select **Fork** in the upper-right corner of the page.
+1. Select your GitHub account. By default, the fork is named the same as the parent repository, but you can name it something different.
 
-1. Update the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/reference/node-tool-v0) to use Node.js version 16 LTS.
+## Create your pipeline
+
+>[!IMPORTANT]
+>If you're redirected to GitHub at any point during the following process, follow the onscreen instructions to sign in to GitHub, install Azure Pipelines, **Authorize AzurePipelines**, or **Authorize using OAuth**.
+
+### [YAML](#tab/yaml)
+
+1. In your Azure DevOps project, select **Pipelines** > **Create Pipeline**, and then select **GitHub** as the location of your source code.
+1. On the **Select a repository** screen, select your forked sample repository.
+1. On the **Configure your pipeline** screen, select **Starter pipeline**. Azure Pipelines generates a YAML file called *azure-pipelines.yml* for your pipeline.
+1. Select the dropdown caret next to **Save and run** and select **Save**, and then select **Save** again. The file is saved to your forked GitHub repository.
+1. On the next screen, select **Edit**.
+
+## Build your package and publish an artifact
+
+Edit your *azure-pipelines.yml* file as follows.
+
+1. Replace the contents of the file with the following code. The code updates the [Node.js tool installer task](/azure/devops/pipelines/tasks/reference/node-tool-v0) to use Node.js version 16 LTS.
 
     ```yaml
     trigger:
@@ -107,7 +82,11 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
       displayName: 'npm build'
     ``` 
 
-1. Add new tasks to your pipeline to copy your npm package, package.json, and to publish your artifact. The [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies files from local path on the agent where your source code files are downloaded and saves files to a local path on the agent where any artifacts are copied to before being pushed to their destination. Only the `src` and `public` folders get copies. The [Publish Pipeline Artifact task](../artifacts/pipeline-artifacts.md) downloads the files from the earlier Copy Files tasks and makes them available as pipeline artifacts that will be published with your pipeline build.  
+1. Add the following new tasks to your pipeline that copy the npm package and *package.json* and publish them as artifacts.
+
+   - The [copy files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies files from the local download path on the agent and saves them to a local artifact staging path on the agent. Only the *src* and *public* folders are copied.
+
+   - The [publish pipeline artifact task](../artifacts/pipeline-artifacts.md) gets the files from the artifact staging location and publishes them as artifacts to be output with pipeline builds.
 
     ```yaml
     - task: CopyFiles@2
@@ -127,58 +106,52 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
       displayName: 'Publish npm artifact'
     ```
 
-## 4 - Run your pipeline
+## Run your pipeline
 
-Save and run your pipeline. After your pipeline runs, verify that the job ran successfully and that you see a published artifact. 
-    
-:::image type="content" source="media/node-artifact-run.png" alt-text="Screenshot of successful pipeline run with an artifact. ":::
+Select **Validate and save**, then select **Save**, select **Run**, and select **Run** again.
+
+After your pipeline runs, verify that the job ran successfully and that you see a published artifact.
+
+::: moniker range=">=azure-devops-2020"
+
+:::image type="content" source="media/node-artifact-run.png" alt-text="Screenshot of successful pipeline run with an artifact.":::
 
 ::: moniker-end
 
-::: zone-end
+### [Classic](#tab/classic)
 
+1. Select **GitHub** as the source for your code.
+1. Under **Repository**, select your forked repository, and select **Continue**.
+1. Select **Empty pipeline**, and select **Apply**.
+1. Under **Agent specification** in the right pane, select **ubuntu-latest**.
 
+1. In the left pane, add the following tasks to the pipeline in order. For each task, select the **+**  in **Agent job 1**, select the task on the right and select **Add**, and configure the task if necessary.
 
-::: zone pivot="pipelines-classic"
+   1. **npm**
 
-1. Fork the following repo at GitHub.
+   1. **npm**
+      - **Display name:** *npm test*
+      - **Command:** **custom**
+      - **Command and arguments:** *test*
 
-    ```
-    https://github.com/Azure-Samples/js-e2e-express-server
-    ```
+   1. **Publish Test Results**
 
-2. After you have the sample code in your own repository, [create your first pipeline](../create-first-pipeline.md) and select the **Empty process** template.
+   1. **Archive files**
+      - **Root folder or file to archive:** *$(System.DefaultWorkingDirectory)*
+      - **Prepend root folder name to archive paths:** Uncheck
 
-3. Select **Process** under the **Tasks** tab in the pipeline editor and change the properties as follows:
-   * **Agent queue:** `Hosted Ubuntu Latest`
+   1. **Publish build artifacts**
 
-4. Add the following tasks to the pipeline in the specified order:
-   * **npm**
-     * **Command:** `install`
+1. Select **Save & queue**, and then select **Save and run**.
 
-   * **npm**
-     * **Display name:** `npm test`
-     * **Command:** `custom`
-     * **Command and arguments:** `test`
+:::image type="content" source="media/classic-node.png" alt-text="Screenshot of the classic pipeline. ":::
 
-   * **Publish Test Results**
-     * Leave all the default values for properties
-
-   * **Archive Files**
-     * **Root folder or file to archive:** `$(System.DefaultWorkingDirectory)`
-     * **Prepend root folder name to archive paths:** Unchecked
-
-   * **Publish Build Artifacts**
-     * Leave all the default values for properties
-
-5. Save the pipeline and queue a build to see it in action.
-
-
-::: zone-end
+---
 
 ## Next steps
 
-Congratulations, you've successfully completed this quickstart!
+Congratulations, you successfully created and ran a pipeline that built and tested a Node.js package. Now you can use Azure Pipelines to build, test, and deploy Node.js apps as part of your continuous integration and continuous delivery (CI/CD) system.
 
 > [!div class="nextstepaction"]
 > [Configure JavaScript](customize-javascript.md)
+
