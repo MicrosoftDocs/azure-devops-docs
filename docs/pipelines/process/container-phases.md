@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains container jobs in Azure Pipelines. By default, Azure Pipelines [jobs](phases.md) run on host machines where the [agent](../agents/agents.md) is installed. Hosted jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
+This article explains container jobs in Azure Pipelines. By default, Azure Pipelines [jobs](phases.md) run on host machines where the [agent](../agents/agents.md) is installed. Microsoft-hosted jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
 
 If you want more control over task context, you can define and run jobs in containers. Linux and Windows agents can run jobs on the host or in containers. Container jobs aren't available on macOS.
 
@@ -47,7 +47,7 @@ Linux-based containers must meet the following requirements:
   > [!NOTE]
   > Node.js must be pre-installed for Linux containers on Windows hosts.
 
-Some stripped-down containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these minimum requirements. Containers with an `ENTRYPOINT` might not work, because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running. For more information, see [Non glibc-based containers](#non-glibc-based-containers).
+Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these minimum requirements. Containers with an `ENTRYPOINT` might not work, because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running. For more information, see [Nonglibc-based containers](#non-glibc-based-containers).
 
 ### [Windows](#tab/windows)
 
@@ -124,7 +124,7 @@ steps:
 
 ## Service endpoints
 
-You can host containers on other registries than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in a container definition, as follows.
+You can host containers on other registries than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in a container definition as follows.
 
 Reference a private Docker Hub connection:
 
@@ -149,8 +149,9 @@ steps:
 ```
 
 >[!NOTE]
->You can't set up a connection for Amazon Elastic Container Registry (ECR) because Amazon ECR requires other client tools to convert AWS credentials into something Docker can use to authenticate.
+>Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert AWS credentials into something Docker can use to authenticate.
 
+<a name="options"></a>
 ## Startup options
 
 You can specify `options` to control container startup, as in the following example:
@@ -170,7 +171,7 @@ For more information, see the [docker create](https://docs.docker.com/engine/ref
 
 ## Reusable container definition
 
-The following example defines the containers in the `resources` section. Each container is then referenced by its assigned alias. The `jobs` keyword is explicitly listed for clarity.
+The following example defines the containers in the `resources` section, and then references them by their assigned aliases. The `jobs` keyword is explicitly listed for clarity.
 
 ```yaml
 resources:
@@ -204,13 +205,13 @@ jobs:
   - script: printenv
 ```
 
-## Non glibc-based containers
+## Nonglibc-based containers
 
 The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts. To find out the version of Node.js for a hosted agent, see [Microsoft-hosted agents](../agents/hosted.md#software).
 
 The version of Node.js compiles against the C runtime used in the hosted cloud, typically glibc. Some Linux variants use other C runtimes. For instance, Alpine Linux uses musl.
 
-If you want to use a non-glibc-based container, you need to:
+If you want to use a nonglibc-based container, you need to:
 
 - Supply your own copy of Node.js.
 - Add a label to your image telling the agent where to find the Node.js binary.
@@ -258,7 +259,7 @@ CMD [ "node" ]
 
 The container job uses the underlying host agent's Docker configuration file for image registry authorization. This file logs out at the end of the Docker registry container initialization.
 
-Later registry image pulls might be denied for `unauthorized authentication`, because the Docker configuration file registered in the system for authentication was already logged out by one of the other container jobs that are running in parallel.
+Later registry image pulls might be denied for `unauthorized authentication` because one of the other container jobs running in parallel already logged out the Docker configuration file registered in the system for authentication.
 
 The solution is to set a Docker environment variable `DOCKER_CONFIG` that's specific to each agent pool service running on the hosted agent. Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script, as follows:
 
