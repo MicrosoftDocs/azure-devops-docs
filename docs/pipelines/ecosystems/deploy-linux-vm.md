@@ -43,7 +43,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 https://github.com/spring-projects/spring-petclinic
 ```
 > [!NOTE]
-> Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/).
+> Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/#build-image).
 
 
 * * * 
