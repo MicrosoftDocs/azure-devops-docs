@@ -11,21 +11,21 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains container jobs in Azure Pipelines. By default, Azure Pipelines [jobs](phases.md) run on host machines where the [agent](../agents/agents.md) is installed. Microsoft-hosted jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
+This article explains container jobs in Azure Pipelines. By default, Azure Pipelines [jobs](phases.md) run on host machines where the [agent](../agents/agents.md) is installed. Hosted agent jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
 
 If you want more control over task context, you can define and run jobs in containers. Linux and Windows agents can run jobs on the host or in containers. Container jobs aren't available on macOS.
 
 Containers are a lightweight abstraction over the host operating system that provides isolation from the host. When you run jobs in containers, you can select the exact versions of operating systems, tools, and dependencies that your build requires.
 
 ::: moniker range="> azure-devops-2019"
-If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) let you choose a container or host for each step.
+If you need fine-grained control at the individual build step level, [step targets](tasks.md#step-target) let you choose a container or host for each step.
 ::: moniker-end
 
 When you specify a container in your YAML pipeline, the agent first fetches and starts the container. Then each step of the job runs inside the container.
 
 ## Requirements and limitations
 
-The following requirements and limitations apply to agent hosts and containers for Azure Pipelines.
+The following requirements and limitations apply to Azure Pipelines agent hosts or containers.
 
 ### Agent hosts
 
@@ -37,7 +37,7 @@ The following requirements and limitations apply to agent hosts and containers f
 
 ### [Linux](#tab/linux)
 
-Linux-based containers must meet the following requirements:
+Linux-based containers should meet the following requirements. For workarounds, [Nonglibc-based containers](#nonglibc-based-containers).
 
 - Bash installed
 - GNU C Library (glibc)-based
@@ -47,7 +47,7 @@ Linux-based containers must meet the following requirements:
   > [!NOTE]
   > Node.js must be pre-installed for Linux containers on Windows hosts.
 
-Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these minimum requirements. Containers with an `ENTRYPOINT` might not work, because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running. For more information, see [Nonglibc-based containers](#non-glibc-based-containers).
+Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements. Containers with an `ENTRYPOINT` might not work, because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running.
 
 ### [Windows](#tab/windows)
 
@@ -99,7 +99,7 @@ For Windows, the kernel version of the host and container must match. Since the 
 
 ---
 
-## Multiple jobs example
+## Multiple jobs
 
 You can use containers to run the same step in multiple jobs. The following example runs the same step in multiple versions of Ubuntu Linux. You don't have to mention the `jobs` keyword because only a single job is defined.
 
@@ -120,6 +120,18 @@ container: $[ variables['containerImage'] ]
 
 steps:
 - script: printenv
+```
+
+### Multiple jobs with agent pools on a single agent host
+
+A container job uses the underlying host agent's Docker configuration file for image registry authorization. This file signs out at the end of the Docker registry container initialization.
+
+Subsequent registry image pulls might be denied for `unauthorized authentication` because another container job running in parallel already signed out the Docker configuration file registered in the system for authentication.
+
+The solution is to set a Docker environment variable `DOCKER_CONFIG` that's specific to each agent pool running on the hosted agent. Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script as follows:
+
+```bash
+export DOCKER_CONFIG=./.docker
 ```
 
 ## Service endpoints
@@ -219,7 +231,7 @@ If you want to use a nonglibc-based container, you need to:
 
 ### Supply your own Node.js
 
-You're responsible for adding a Node binary to your container. Node 18 is a safe choice. Start from the `node:18-alpine` image.
+If you use a nonglibc-based container, you're responsible for adding a Node binary to your container. Node 18 is a safe choice. Start from the `node:18-alpine` image.
 
 ### Tell the agent about Node.js
 
@@ -253,18 +265,6 @@ RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
 
 CMD [ "node" ]
-```
-
-### Multiple jobs with agent pools on a single host agent
-
-The container job uses the underlying host agent's Docker configuration file for image registry authorization. This file logs out at the end of the Docker registry container initialization.
-
-Later registry image pulls might be denied for `unauthorized authentication` because one of the other container jobs running in parallel already logged out the Docker configuration file registered in the system for authentication.
-
-The solution is to set a Docker environment variable `DOCKER_CONFIG` that's specific to each agent pool service running on the hosted agent. Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script, as follows:
-
-```bash
-export DOCKER_CONFIG=./.docker
 ```
 
 ## Related content
