@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this quickstart, you use a pipeline to create a Node.js package with Node Package Manager (npm) and publish a pipeline artifact. You see how to use Azure Pipelines to build, deploy, and test your JavaScript apps.
+In this quickstart, you use a pipeline to create a Node.js package with Node Package Manager (npm) and publish a pipeline artifact. You learn how to use Azure Pipelines to build, deploy, and test your JavaScript apps.
 
 ## Prerequisites
 

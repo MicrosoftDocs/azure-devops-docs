@@ -45,6 +45,9 @@ Fork the sample Python repository to your GitHub account.
 
 ## Create your pipeline
 
+>[!IMPORTANT]
+>If you're redirected to GitHub at any point during the following process, follow the onscreen instructions to sign in to GitHub, install Azure Pipelines, or authorize Azure Pipelines.
+
 1. In your Azure DevOps project, select **Pipelines** > **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
 1. On the **Configure your pipeline** screen, select **Starter pipeline**.
@@ -170,24 +173,12 @@ To view your build artifact, select the **published** link in the **Summary** ta
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-Select **Run**.
-
-The build number is displayed at the top of the page. Select the build number to see the details of the build.
-
-:::image type="content" source="media/server-2019-build-link.png" alt-text="Screenshot of pipeline build link.":::
-
-::: moniker-end
-
 ::: moniker range=">=azure-devops"
 
 :::image type="content" source="media/published-artifacts-link.png" alt-text="Screenshot of published build artifacts link.":::
 
 The **Artifacts** page shows the published build artifacts.
 :::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published build artifacts.":::
-
-To view the test results, select the **Tests** tab.
-:::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
 
 ::: moniker-end
 
@@ -198,6 +189,10 @@ To view the test results, select the **Tests** tab.
 The **Artifacts** page shows the published build artifacts.
 :::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts link.":::
 
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
 To view the test results, select the **Tests** tab.
 
 :::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
@@ -205,6 +200,12 @@ To view the test results, select the **Tests** tab.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
+Select **Run**.
+
+The build number is displayed at the top of the page. Select the build number to see the details of the build.
+
+:::image type="content" source="media/server-2019-build-link.png" alt-text="Screenshot of pipeline build link.":::
 
 The **Summary** tab shows the status of your pipeline run.
 
