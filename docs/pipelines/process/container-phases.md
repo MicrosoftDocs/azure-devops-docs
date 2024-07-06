@@ -37,7 +37,7 @@ The following requirements and limitations apply to Azure Pipelines agent hosts 
 
 ### [Linux](#tab/linux)
 
-Linux-based containers should meet the following requirements. For workarounds, [Nonglibc-based containers](#nonglibc-based-containers).
+Linux-based containers should meet the following requirements. For workarounds, see [Nonglibc-based containers](#nonglibc-based-containers).
 
 - Bash installed
 - GNU C Library (glibc)-based
@@ -134,35 +134,6 @@ The solution is to set a Docker environment variable `DOCKER_CONFIG` that's spec
 export DOCKER_CONFIG=./.docker
 ```
 
-## Service endpoints
-
-You can host containers on other registries than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in a container definition as follows.
-
-Reference a private Docker Hub connection:
-
-```yaml
-container:
-  image: registry:ubuntu1804
-  endpoint: private_dockerhub_connection
-
-steps:
-- script: echo hello
-```
-
-Reference an Azure Container Registry connection:
-
-```yaml
-container:
-  image: myprivate.azurecr.io/windowsservercore:1803
-  endpoint: my_acr_connection
-
-steps:
-- script: echo hello
-```
-
->[!NOTE]
->Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert AWS credentials into something Docker can use to authenticate.
-
 <a name="options"></a>
 ## Startup options
 
@@ -216,6 +187,35 @@ jobs:
   steps:
   - script: printenv
 ```
+
+## Service endpoints
+
+You can host containers on other registries than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in a container definition as follows.
+
+Reference a private Docker Hub connection:
+
+```yaml
+container:
+  image: registry:ubuntu1804
+  endpoint: private_dockerhub_connection
+
+steps:
+- script: echo hello
+```
+
+Reference an Azure Container Registry connection:
+
+```yaml
+container:
+  image: myprivate.azurecr.io/windowsservercore:1803
+  endpoint: my_acr_connection
+
+steps:
+- script: echo hello
+```
+
+>[!NOTE]
+>Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert AWS credentials into something Docker can use to authenticate.
 
 ## Nonglibc-based containers
 
