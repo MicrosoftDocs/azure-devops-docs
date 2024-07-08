@@ -8,7 +8,7 @@ ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/01/2024
+ms.date: 07/08/2024
 ---
 
 # Connect to Analytics data using the Power BI OData feed
@@ -52,9 +52,10 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
     :::image type="content" source="media/pbi3.png" alt-text="Screenshot of Enter OData Feed URL.":::
 
    > [!NOTE]  
-   > Alternatively, you can enter the URL with the *ProjectName* specified, as shown in the following example:  
+   > - Alternatively, you can enter the URL with the *ProjectName* specified, as shown in the following example:  
    >`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/`
-   >Using this format trims the results by the specified project across all entities related to that project.
+   > Using this format trims the results by the specified project across all entities related to that project.
+   > - The data scope is always at the project level by design, so you can't connect at the organization level. If you want to get all the data for all your projects, you must connect to one at a time.
 
 6. At the prompt, [authenticate against the service](client-authentication-options.md).
 
