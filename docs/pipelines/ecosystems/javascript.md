@@ -39,10 +39,10 @@ Fork the sample Express.js server app.
 1. Select **Fork** in the upper-right corner of the page.
 1. Select your GitHub account. By default, the fork is named the same as the parent repository, but you can name it something different.
 
-## Create your pipeline
-
 >[!IMPORTANT]
->If you're redirected to GitHub at any point during the following process, follow the onscreen instructions to sign in to GitHub, install Azure Pipelines, or authorize Azure Pipelines.
+>During the following procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+
+## Create your pipeline
 
 ### [YAML](#tab/yaml)
 

@@ -1,5 +1,5 @@
 ---
-title: YAML container jobs
+title: Container jobs in YAML
 description: Learn about configuring and running pipeline jobs inside containers.
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
@@ -7,22 +7,23 @@ ms.date: 07/08/2024
 monikerRange: '>= azure-devops-2019'
 ---
 
-# YAML container jobs
+# Container jobs in YAML pipelines
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains container jobs in Azure Pipelines. 
+This article explains container jobs in Azure Pipelines.
 
 By default, Azure Pipelines [jobs](phases.md) run directly on the host machines where the agent is installed. Hosted agent jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
 
 If you want more control over task context, you can define and run jobs in containers. Containers are a lightweight abstraction over the host operating system that provides isolation from the host. When you run jobs in containers, you can select the exact versions of operating systems, tools, and dependencies that your build requires.
+
+Linux and Windows [agents](../agents/agents.md) can run pipeline jobs directly on the host or in containers. Container jobs aren't available on macOS.
+
+For a container job, the agent first fetches and starts the container. Then each step of the job runs inside the container.
+
 ::: moniker range="> azure-devops-2019"
 If you need fine-grained control at the individual build step level, [step targets](tasks.md#step-target) let you choose a container or host for each step.
 ::: moniker-end
-
-When you specify a container in your YAML pipeline, the agent first fetches and starts the container. Then each step of the job runs inside the container.
-
-Linux and Windows [agents](../agents/agents.md) can run pipeline jobs directly on the host or in containers. Container jobs aren't available on macOS.
 
 ## Requirements and limitations
 
@@ -30,7 +31,7 @@ The following requirements and limitations apply to Azure Pipelines agent hosts 
 
 ### Agent hosts
 
-- Only `windows-*` and `ubuntu-*` images support running containers. The `macOS-*` images don't support running containers.
+- Only `windows-*` and `ubuntu-*` images support running containers. The `macos-*` images don't support running containers.
 - To run containers, Windows and Linux agent hosts must have Docker installed, and must have permission to access the Docker daemon.
 - Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
 

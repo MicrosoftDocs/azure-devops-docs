@@ -43,10 +43,10 @@ Fork the sample Python repository to your GitHub account.
 1. Select **Fork** in the upper-right corner of the page.
 1. Select your GitHub account. By default, the fork is named the same as the parent repository, but you can name it something different.
 
-## Create your pipeline
-
 >[!IMPORTANT]
->If you're redirected to GitHub at any point during the following process, follow the onscreen instructions to sign in to GitHub, install Azure Pipelines, or authorize Azure Pipelines.
+>During the following procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+
+## Create your pipeline
 
 1. In your Azure DevOps project, select **Pipelines** > **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
