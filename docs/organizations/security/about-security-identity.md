@@ -132,7 +132,7 @@ Throughout these docs, users can refer to all identities that have been added to
 
 ::: moniker-end
 
-The most effective means for managing accounts is by [adding them to security groups](about-permissions.md#security-group-membership). 
+The most effective means for managing accounts is by [adding them to security groups](about-permissions.md#security-groups-and-membership). 
 
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
@@ -191,7 +191,7 @@ For more information about how to choose the right authentication mechanism, see
 
 Authorization verifies that the identity that is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection isn't authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group didn't have authorization to perform that action.
 
-Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. For more information about these authorization methods, see [Get started with permissions, access, and security groups](../security/about-permissions.md). 
+Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also manage access to a specific feature. For more information about these authorization methods, see [Get started with permissions, access, and security groups](../security/about-permissions.md). 
 
 <a id="namespaces"></a> 
 
@@ -273,12 +273,12 @@ Since repositories and build and release pipelines pose unique security challeng
 
 - [Securing Azure Pipelines](../../pipelines/security/overview.md)
 - [Plan how to secure your YAML pipelines](../../pipelines/security/approach.md)
-- [Repository protection](../../pipelines/security/repos.md)
+- [Repository protection](../../pipelines/security/misc.md#protect-repositories)
 - [Pipeline resources](../../pipelines/security/resources.md)
-- [Recommendations to securely structure projects in your pipeline](../../pipelines/security/projects.md)
+- [Recommendations to securely structure projects in your pipeline](../../pipelines/security/misc.md#protect-projects)
 - [Security through templates](../../pipelines/security/templates.md)
 - [How to securely use variables and parameters in your pipeline](../../pipelines/security/inputs.md)
-- [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/infrastructure.md)
+- [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/misc.md#protect-shared-infrastructure)
 - [Other security considerations](../../pipelines/security/misc.md) 
 
 ## Next steps

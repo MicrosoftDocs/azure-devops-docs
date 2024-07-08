@@ -30,7 +30,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
-<a id="flat-list-query"/>
+<a id="flat-list-query"></a>
 <a id="save"></a>
 
 ## Run, edit, and save a query  

@@ -23,7 +23,7 @@ ms.date: 04/30/2021
    :::column span="3":::
       - Prioritize (stack rank) bugs along with requirements 
       - Estimate Bug effort for forecasting 
-      - Update bug status on Kanban board 
+      - Update bug status on board 
       - Include Bugs in [Velocity charts](../../report/dashboards/team-velocity.md) and [Cumulative Flow Diagrams](../../report/dashboards/cumulative-flow.md) 
       - Can use the [**Forecast** tool](../sprints/forecast.md) to support sprint planning
       - Can drag and drop bugs onto [**Planning**](../sprints/assign-work-sprint.md#assign-work-from-your-backlog-to-a-sprint) pane to assign bugs to a sprint 

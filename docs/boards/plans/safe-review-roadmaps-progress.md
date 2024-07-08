@@ -70,12 +70,12 @@ By assigning Story Points to each User Story, a team can determine how much work
 
 Each Azure Boards backlog and board provide configurable CFD views. So each team at every level of SAFe® implementation can monitor progress using these built-in charts. 
 
-The following image shows an example CFD chart for User Stories with all Kanban columns displayed. 
+The following image shows an example CFD chart for User Stories with all columns displayed. 
 
 > [!div class="mx-imgBorder"]  
 > ![CFD chart](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
-Teams can use their CFD to identify bottlenecks and monitor the batch size of work in their various Kanban states. 
+Teams can use their CFD to identify bottlenecks and monitor the batch size of work in their various states. 
 
 In-context CFD charts are quickly accessible from each backlog and board view. Also, CFD charts can be added to team and project dashboards. For more information, see [View/configure a Cumulative Flow Diagram](../../report/dashboards/cumulative-flow.md).  
 

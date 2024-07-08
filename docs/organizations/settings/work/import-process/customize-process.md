@@ -143,20 +143,29 @@ The following section lists limitations that the system imposes.
 
 You can import up to 32 processes into Azure DevOps Services. Your custom processes must conform to all of the following summarized rules. Otherwise, validation error messages might appear upon import.
 
-* [Process](#process)
-  * [Process configuration](#process-configuration)
-  * [Categories](#categories) 
-  * [Work item types](#work-item-types)
-    * [Fields](#work-item-fields)
-      * [Limits](#limits)
-      * [Required fields](#required-fields) 
-      * [Rule restrictions](#rule-restrictions)
-      * [Consistent names and attributes](#consistent-names-attributes) 
-      * [Identity fields](#identity-fields)
-      * [Workflow](resolve-errors.md#wit-workflow-definitions) 
-      * [Global lists](#wit-global-list-definitions) 
-    * [Workflow](#work-item-workflow) 
-    * [Form layout](#work-item-form-layout)
+- [Customize a Hosted XML process](#customize-a-hosted-xml-process)
+  - [How to customize a process](#how-to-customize-a-process)
+    - [Export and import a process](#export-and-import-a-process)
+  - [Supported customizations](#supported-customizations)
+  - [Restrictions](#restrictions)
+    - [Process template](#process-template)
+    - [Process configuration](#process-configuration)
+    - [Categories](#categories)
+    - [Work item types](#work-item-types)
+    - [Work item fields](#work-item-fields)
+      - [Limit restrictions](#limit-restrictions)
+      - [Required fields](#required-fields)
+      - [Rule restrictions](#rule-restrictions)
+      - [Consistent names and attributes](#consistent-names-and-attributes)
+      - [Identity fields](#identity-fields)
+        - [Add a custom identity field](#add-a-custom-identity-field)
+        - [Rule restrictions on identity fields](#rule-restrictions-on-identity-fields)
+        - [Correct example](#correct-example)
+        - [Incorrect example](#incorrect-example)
+    - [Workflow](#workflow)
+    - [Global lists](#global-lists)
+    - [Form layout](#form-layout)
+  - [Related articles](#related-articles)
 
 <a id="process"></a>
 
@@ -345,7 +354,7 @@ For a description of state category and mappings, see [Workflow states and state
 For the Hosted XML process model, the following limits are placed on global-list import:
 
 * There are at most 64 global lists.
-* There are at most 512 items per list.
+* There are at most 1,024 items per list.
 * Approximately 10,000 items can be defined in total among all global lists that are specified across all WITs.
 
 <a id="work-item-form-layout"></a>

@@ -53,7 +53,7 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
 
 1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** one more time at the top right corner to save your changes.
+1. Select **Add** when you're done, and then select **Save** one more time at the top right corner to save your changes.
 
 ::: moniker-end
 

@@ -1,7 +1,7 @@
 ---
 title: Set Git repository permissions
 titleSuffix: Azure Repos
-description: Steps for how to grant or restrict access to a Git repository feature 
+description: Steps for how to grant or restrict access to a Git repository feature. 
 ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.author: vijayma
@@ -17,12 +17,12 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You grant or restrict access to repositories to lock down who can contribute to your source code and manage other features.  You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. 
+Manage access to repositories to lock down who can contribute to your source code and manage other features.  You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. 
 
 > [!NOTE]   
 > Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](branch-permissions.md) and [Improve code quality with branch policies](branch-policies.md).
  
-For guidance on who to provide greater permission levels, see [Grant or restrict access using permissions](../../organizations/security/restrict-access.md).
+For guidance on who to provide greater permission levels, see [Manage access using permissions](../../organizations/security/restrict-access.md).
 
 
 ## Prerequisites
@@ -84,7 +84,7 @@ You set Git repository permissions from **Project Settings>Repositories**.
 
 ## Set permissions for a repository
 
-You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
+You can manage access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
 ::: moniker-end 
 
@@ -156,7 +156,7 @@ To set permissions for a custom security group, you must have defined that group
 	> [!div class="mx-imgBorder"]  
 	> ![Enable or disable inheritance for a specific repository.](media/git-permissions/disable-inheritance-specific-repo.png)  
 
-	To learn about inheritance, see [About permissions and groups, Inheritance and security groups](../../organizations/security/about-permissions.md#inheritance). 
+	To learn about inheritance, see [About permissions and groups, Inheritance and security groups](../../organizations/security/about-permissions.md#permission-inheritance). 
 
 ::: moniker-end
 
@@ -180,7 +180,7 @@ By granting the first permission and denying the second, a user can use the bypa
 
 ## Related articles
 
-- [Grant or restrict access using permissions](../../organizations/security/restrict-access.md)
+- [Manage access using permissions](../../organizations/security/restrict-access.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)  
 - [Tf git permission command-line tool](../tfvc/git-permission-command.md)  

@@ -1,7 +1,7 @@
 ---
-title: Grant or restrict access to select features
+title: Manage access to specific features
 titleSuffix: Azure DevOps 
-description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions.  
+description: How to set permissions to grant or restrict access to specific build, version control, or work tracking functions.  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: overview
 ms.subservice: azure-devops-security
@@ -11,11 +11,11 @@ monikerRange: '<= azure-devops'
 ms.date: 03/23/2023 
 --- 
 
-# Grant or restrict access using permissions
+# Manage access using permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can grant or restrict access to resources that you manage in Azure DevOps. You might want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you might need more security requirements not met by these assignments.
+Manage access to specific resources in Azure DevOps. You might want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you might need more security requirements not met by these assignments.
 
 If you're new to administrating permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md) to learn about permission states and inheritance.
 
@@ -201,7 +201,7 @@ To delegate tasks to other members within your organization, consider creating a
    - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
    - [Manage Git branch permissions](../../repos/git/branch-permissions.md)
    - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Administer build and release permissions](../../pipelines/policies/pipeline-permissions.md)
+   - [Administer build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).
 
    :::column-end:::
@@ -281,7 +281,7 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
    :::column span="1":::
    Edit build pipeline, View build pipeline  
    Edit release pipeline, View release pipeline  
-   You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/pipeline-permissions.md).
+   You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions).
    :::column-end:::
 :::row-end:::
 :::row:::

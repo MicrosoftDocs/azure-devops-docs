@@ -240,7 +240,7 @@ To connect to a project, you need your user account added to the project. The **
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-You can also provide access to Stakeholders in your organization with limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
+You can also provide access to Stakeholders in your organization with limited access to specific features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 

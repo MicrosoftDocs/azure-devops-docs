@@ -1,7 +1,5 @@
 - name: Migrate to Analytics from SQL Reporting Services
-  href: migration-guide.md  
-- name: Get Analytics insights comparable to SQL Reporting Services
-  href: analytics-insights-comparable-sql-reports.md
+  href: migration-guide.md
 - name: Reporting Services Reports
   href: /previous-versions/azure/devops/report/sql-reports/reporting-services-reports
 - name: Create status and trend reports from a work item query

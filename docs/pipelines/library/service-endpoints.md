@@ -204,7 +204,7 @@ Once you've [created your service connection](#create-a-service-connection), com
 
 ---
 
-1. Authorize the service connection using one of the following techniques:
+2. Authorize the service connection using one of the following techniques:
 
 * To authorize any pipeline to use the service connection, go to Azure Pipelines, open the Settings page, select Service connections, and enable the setting **Allow all pipelines to use this connection** option for the connection.
 
@@ -369,17 +369,16 @@ Use the following parameters to define and secure a connection to a Docker host.
 
 For more information about protecting your connection to the Docker host, see [Protect the Docker daemon socket](https://docs.docker.com/engine/security/https/).
 
-### Docker Registry service connection
-
-Use the following parameters to define a connection to a container registry for either [Azure Container Registry](#azure-container-registry) or [Docker Hub or others](#docker-hub-or-others).
-
 #### Azure Container Registry
 
 | Parameter | Description |
 | --------- | ----------- |
+| Authentication type | Required. The options are workload identity federation, managed service identity, or service principal. |
 | Connection name | Required. The name you use to refer to the service connection in task inputs. |
 | Azure subscription | Required. The Azure subscription containing the container registry to be used for service connection creation. |
 | Azure Container Registry | Required. The Azure Container Registry to be used for creation of service connection. |
+
+There are three options for authenticating with Azure Container Registry - workload identity federation, managed service identity, or a service principal. For more information about what tasks work with workload identity federation connections, see [Troubleshoot a workload identity service connection](../release/troubleshoot-workload-identity.md).
 
 #### Docker Hub or others
 

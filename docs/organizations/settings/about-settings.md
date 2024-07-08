@@ -194,7 +194,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
    :::column-end:::
    :::column span="2":::
-      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
+      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). Configure boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -339,7 +339,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set dashboard permissions](../security/../../report/dashboards/dashboard-permissions.md)
       - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
       - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
-      - [Set build and release permissions](../../pipelines/policies/pipeline-permissions.md)
+      - [Set build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions)
    :::column-end:::
    :::column span="2":::
       Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
@@ -391,7 +391,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Define iteration paths or sprints](set-iteration-paths-sprints.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -406,7 +406,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set retention policies](../../pipelines/policies/retention.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -750,7 +750,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Look up the organization owner](../security/look-up-organization-owner.md)
       - [Look up a project collection administrator ](../security/look-up-project-collection-administrators.md)
       - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md) 
+      - [Manage access to specific features](../security/restrict-access.md) 
    :::column-end:::
    :::column span="2":::
       For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).

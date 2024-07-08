@@ -5,7 +5,7 @@ ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 01/11/2022
@@ -715,6 +715,10 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
+
+### Q: Some of the attachments for the test run are not showing the preview option?
+
+**A:** You can only preview files with txt and log extensions. Click on the preview option for txt or log extension files, and another UI will open up with the drop down field showing all the attachments for the test run. If you select a file with an extension type other than txt or log, the following message is shown: "You can only preview files with txt and log extensions, click here to download the attachment"
 
 ### Q: How do I control how long I keep my test data?
 

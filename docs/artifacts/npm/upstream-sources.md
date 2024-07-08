@@ -50,7 +50,7 @@ If you checked the upstream sources checkbox during the creation of your feed, n
 
 1. Select **Public source**, and then select **npmjs (https://registry.npmjs.org/)** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** at the top right corner to save your changes.
+1. Select **Add** when you're done, and then select **Save** at the top right corner to save your changes.
 
 ## Install packages from npmjs
 

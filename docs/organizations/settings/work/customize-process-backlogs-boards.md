@@ -200,7 +200,7 @@ Deleting a backlog level removes the backlog and board associated with the level
 
 ## Edit or rename the requirement backlog 
 
-The Requirement backlog, also referred to as the product backlog, defines the work item types that appear on the product backlog and Kanban board. The default work item type for Agile is User Story; for Basic, Issue; for Scrum, Product Backlog Item; and for CMMI, Requirement. 
+The Requirement backlog, also referred to as the product backlog, defines the work item types that appear on the product backlog and board. The default work item type for Agile is User Story; for Basic, Issue; for Scrum, Product Backlog Item; and for CMMI, Requirement. 
 
 You can rename the backlog, change the color, add work item types, and change the default work item type. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
  

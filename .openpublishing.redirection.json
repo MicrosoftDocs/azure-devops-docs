@@ -485,6 +485,62 @@
     {
       "source_path": "docs/migrate/migration-post-import.md",
       "redirect_url": "/azure/devops/migrate/migration-post-migration"
+    },
+    {
+      "source_path": "docs/report/sql-reports/analytics-insights-comparable-sql-reports.md",
+      "redirect_url": "/azure/devops/report/dashboards/overview#sql-server-reports"
+    },
+    {
+      "source_path": "docs/extend/develop/use-control.md",
+      "redirect_url": "https://azdevinternal.azureedge.net/"
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
+      "redirect_url": "/azure/devops/user-guide/provide-feedback"
+    },
+    {
+      "source_path": "docs/pipelines/security/infrastructure.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-shared-infrastructure"
+    },
+    {
+      "source_path": "docs/pipelines/security/projects.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-projects"
+    },
+    {
+      "source_path": "docs/pipelines/security/repos.md",
+      "redirect_url": "/azure/devops/pipelines/security/misc#protect-repositories"
+    },
+    {
+      "source_path": "docs/pipelines/policies/deployment-group-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#deployment-group-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/environment-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#environment-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/library-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#library-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/pipeline-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#pipeline-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/release-pipeline-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#release-pipeline-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/service-connection-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#service-connection-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/agent-pool-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#agent-pool-permissions"
+    },
+    {
+      "source_path": "docs/pipelines/policies/task-group-permissions.md",
+      "redirect_url": "/azure/devops/pipelines/policies/permissions#task-group-permissions"
     }
   ]
 }

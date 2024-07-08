@@ -16,7 +16,7 @@ ms.date: 08/22/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To manage work tracking effectively, you can grant or restrict access to different features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
+To manage work tracking effectively, you can manage access to specific features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
 
 ::: moniker range="azure-devops"
 
@@ -131,11 +131,11 @@ For more information, see [Add groups](add-remove-manage-user-group-security-gro
 
 [!INCLUDE [temp](includes/boards-sprints.md)]
 
-<a name="set-permissions-area-path" /> 
+<a id="set-permissions-area-path"></a>
 
 ## Create child nodes, modify work items under an area or iteration path   
 
-Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
+Area path permissions let you manage access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
 > Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
@@ -414,7 +414,7 @@ If your on-premises deployment includes reporting, add users to those resources.
 
 ## Related articles 
 
-- [Grant or restrict access](restrict-access.md)  
+- [Manage access](restrict-access.md)  
 - [Rules and rule evaluation](../settings/work/rule-reference.md)  
 - [Permissions and groups reference](permissions.md)
 - [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites)

@@ -146,15 +146,14 @@ ms.date: 10/19/2022
    :::column-end:::
    :::column span="2":::
    Can set organization and project-level settings.
-:::row-end:::
-:::row:::
-   :::column span="4":::
+
    > [!NOTE]   
    > **Edit collection-level information** includes the ability to perform these tasks for all projects defined in an organization or collection:  
    > - Modify **Extensions**, and **Analytics**  settings
    > - Modify version control permissions and repository settings
    > - Edit [event subscriptions](#alerts) or alerts for global notifications, project-level, and team-level events 
-   > - Edit all project and team-level settings for projects defined in the collections.   
+   > - Edit all project and team-level settings for projects defined in the collections.
+   
    :::column-end:::
 :::row-end:::
 ::: moniker-end

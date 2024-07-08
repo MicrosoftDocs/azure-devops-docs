@@ -111,11 +111,11 @@ The Development section within the work item form lists the links created to Git
 
 Choose the link provided to open the commit or pull request in GitHub.  
 
-## View GitHub objects on Kanban board
+## View GitHub objects on board
 
-With GitHub annotations enabled on the Kanban board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. For more information, see [Customize cards](../boards/customize-cards.md).
+With GitHub annotations enabled on the board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. For more information, see [Customize cards](../boards/customize-cards.md).
 
-:::image type="content" source="media/link/board-view-github-links.png" alt-text="Screenshot of Kanban board that shows GitHub links on work item cards.":::
+:::image type="content" source="media/link/board-view-github-links.png" alt-text="Screenshot of board that shows GitHub links on work item cards.":::
 
 ::: moniker range="azure-devops-2019"
 

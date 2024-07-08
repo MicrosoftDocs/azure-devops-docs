@@ -70,7 +70,7 @@ A few ways to do so might include:
 The system manages permissions at different levels - individual, collection, project, and object - and assigns them to one or more built-in groups by default.
 
 - Only give users and services the minimum amount of access needed to perform their business functions.
-- Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance-and-security-groups). 
+- Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance). 
 - Learn more about permissions here:
   - [Permissions and role lookup guide](permissions-lookup-guide.md)
   - [Permissions, security groups, and service accounts reference](permissions.md)
@@ -253,9 +253,9 @@ If possible, we recommended to always use identity services for authentication i
 - Store production secrets in a separate Key Vault and ensure that access is only granted on a need-to-know basis to keep nonproduction builds separate.  
 - Don’t mix test environments with production, including use of credentials.  
 - Disable forking. The more forks there are, the harder it's to keep track of each fork’s security. Also, a user can easily fork a copy of a repository to their own private account.
-- [Don't provide secrets to fork builds](../../pipelines/security/repos.md#dont-provide-secrets-to-fork-builds).
-- [Consider manually triggering fork builds](../../pipelines/security/repos.md#consider-manually-triggering-fork-builds).
-- [Use Microsoft-hosted agents for fork builds](../../pipelines/security/repos.md#use-microsoft-hosted-agents-for-fork-builds).
+- [Don't provide secrets to fork builds](../../pipelines/security/misc.md#dont-provide-secrets-to-fork-builds).
+- [Consider manually triggering fork builds](../../pipelines/security/misc.md#consider-manually-triggering-fork-builds).
+- [Use Microsoft-hosted agents for fork builds](../../pipelines/security/misc.md#use-microsoft-hosted-agents-for-fork-builds).
 - For Git, check your production build definitions in the project’s git repository, so they can be scanned for credentials.
 - Configure a branch control check so that only pipelines running in the context of the `production` branch might use the `prod-connection`.
 - For more information, see [Other security considerations](../../pipelines/security/misc.md).

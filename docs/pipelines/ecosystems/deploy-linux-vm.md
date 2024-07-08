@@ -3,7 +3,7 @@ title: Deploy a Linux VM to an environment
 description: Deploy a web application to a web server on a Linux VM with an environment.
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
-ms.custom: freshness-fy22q2
+ms.custom: freshness-fy22q2, linux-related-content
 ms.date: 01/24/2023
 monikerRange: 'azure-devops'
 ---
@@ -43,7 +43,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 https://github.com/spring-projects/spring-petclinic
 ```
 > [!NOTE]
-> Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/).
+> Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/#build-image).
 
 
 * * * 

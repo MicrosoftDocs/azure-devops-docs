@@ -40,7 +40,7 @@ For more information, see [Cumulative flow, lead time, and cycle time guidance](
 
 ## Add the widget to your dashboard   
 
-1. Configure your team's Kanban board, if you haven't already. 
+1. Configure your team's board, if you haven't already. 
    - Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 2. [Add the widget to your dashboard](./add-widget-to-dashboard.md). There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Select the one you want to display and configure.
 

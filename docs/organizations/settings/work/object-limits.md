@@ -95,7 +95,7 @@ Each backlog can display up to 10,000 work items. This is a limit on what the ba
 
 - Completed or closed work items don't display on the backlogs and boards once their **Changed Date** is greater than a year old. You can still list these items using a query. If you want them to show up on a backlog or board, then you can make a minor change to them which resets the clock for display.
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md).
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team board views](../../../boards/boards/kanban-overview.md).
 - By default, work item limits might be initially configured to lower values.
 
 ::: moniker-end
@@ -119,7 +119,7 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 #### Additional notes:
 
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md).
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team board views](../../../boards/boards/kanban-overview.md).
 
 For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md).
 
