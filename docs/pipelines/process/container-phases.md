@@ -250,7 +250,7 @@ If you depend on any in-box or Marketplace tasks, also supply the binaries they 
 ### Full Dockerfile example
 
 ```dockerfile
-FROM node:10-alpine
+FROM node:18-alpine
 
 RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
   && apk add bash sudo shadow \
