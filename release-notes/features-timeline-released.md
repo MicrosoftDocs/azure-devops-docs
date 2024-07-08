@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 2/8/2024
+ms.date: 7/8/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -56,7 +56,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="4"><a href="2024/sprint-236-update.md" data-raw-source="[26 March 2024](2024/sprint-236-update.md)"> 26 March  2024</a></td>
-    <td>Personal access token (PAT) APIs to return maximum allowed lifespan</td><td>General</td><td>Future</td></tr>
+    <td>Personal access token (PAT) APIs to return maximum allowed lifespan</td><td>General</td><td>N/A</td></tr>
     <td>Azure service connections indicate when a secret has expired</td><td>Pipelines</td><td>Future</td></tr>
     <td>New AzureFileCopy@6 task supports secret-less configurations</td><td>Pipelines</td><td>Future</td></tr>
     <td>Resource utilization alerts for Azure Pipeline agents</td><td>Pipelines</td><td>Future</td></tr>
@@ -73,7 +73,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="15"><a href="2024/sprint-234-update.md" data-raw-source="[9 February 2024](2024/sprint-234-update.md)"> 9 February  2024</a></td>
     <td>Code snippets now available in alert details view</td><td>General</td><td>Future</td></tr>
     <td>Final notice of alternate credentials deprecation</td><td>General</td><td>N/A</td></tr>
-    <td>Azure Devops OAuth self-service secret rotation</td><td>General</td><td>Future</td></tr>
+    <td>Azure Devops OAuth self-service secret rotation</td><td>General</td><td>N/A</td></tr>
     <td>Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>    
     <td>New Boards Hub Improvements</td><td>Boards</td><td>Future</td></tr>
     <td>Development and Deployment Controls</td><td>Boards</td><td>2022.2</td></tr>
@@ -129,8 +129,8 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-228-update.md" data-raw-source="[4 October 2023](2023/sprint-227-update.md)"> 4 October 2023</a></td>
-    <td>Managed identity and service principal support for Azure DevOps now in general availability (GA)</td><td>General</td><td>Future</td></tr>
-    <td>New Azure DevOps scopes available for Microsoft Identity OAuth delegated flow apps</td><td>General</td><td>Future</td></tr>
+    <td>Managed identity and service principal support for Azure DevOps now in general availability (GA)</td><td>General</td><td>N/A</td></tr>
+    <td>New Azure DevOps scopes available for Microsoft Identity OAuth delegated flow apps</td><td>General</td><td>N/A</td></tr>
     <td>Changes to Code Scanning (CodeQL) user input task and variables</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Publish task is no longer required for Setting up code Scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>CodeQL code scanning now supports Swift</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>    
@@ -205,7 +205,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Analytics Views are now generally available</td><td>Reporting</td><td>2022.1</td></tr>
 <tr>
     <td rowspan="3"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
-    <td>Service principal and managed identity support in Azure DevOps (public preview) </td><td>General</td><td>Future</td></tr>
+    <td>Service principal and managed identity support in Azure DevOps (public preview) </td><td>General</td><td>N/A</td></tr>
     <td>REST API support for connecting GitHub repositories (preview)</td><td>Boards</td><td>Future</td></tr>   
     <td>Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others</td><td>Pipelines</td><td>N/A</td></tr>
  <tr>
