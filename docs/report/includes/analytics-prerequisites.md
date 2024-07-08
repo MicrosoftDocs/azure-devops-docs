@@ -3,7 +3,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/02/2024
+ms.date: 07/08/2024
 ---
 
 <a id="prerequisites">  </a>
