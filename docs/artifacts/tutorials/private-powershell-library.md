@@ -36,25 +36,21 @@ You'll learn how to:
 
 ## Create a personal access token
 
-Using a personal access token (PAT) is a great way to authenticate with Azure DevOps without using your primary credentials. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
+A personal access token acts as your digital identity and serves as an alternative password to authenticate you with Azure DevOps.
 
 1. Navigate to your Azure DevOps organization `https://dev.azure.com/<ORGANIZATION_NAME>/`
 
-1. Select the user settings icon, and then select **Personal access tokens**.
+1. Select the user settings icon, select **Personal access tokens**, and then select **New Token**.
 
-    :::image type="content" source="../media/user-settings-pat.png" alt-text="A screenshot showing how to create a personal access token.":::
+1. Enter a name for your PAT, set an **Expiration** date, select **Custom defined**, and then select **Packaging** > **Read, write & manage**.
 
-1. Select **New Token**
+1. Select **Create** when you're done, and make sure you copy and store your PAT in a safe location.
 
-1. Enter a name for your PAT and then choose an **Expiration** date.
+    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot that shows how to set up a new personal access token.":::
 
-1. Select **Custom defined**, and then select **Packaging** > **Read, write & manage**.
+## Create a PowerShell module
 
-1. Select **Create** when you're done. Copy and store your PAT in a safe location.
-
-    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot showing how to set up a new personal access token.":::
-
-## Create a module
+If you don't have your own module, follow the instructions in this section to create a sample PowerShell module. Otherwise, skip to the next step:
 
 1. Create a new folder *Get-Hello*. Navigate inside your folder and create a new file *Get-Hello.psm1*.
 
