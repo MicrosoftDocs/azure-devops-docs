@@ -204,7 +204,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Stage quick actions</td><td>Pipelines</td><td>2022.1</td></tr>
     <td>Analytics Views are now generally available</td><td>Reporting</td><td>2022.1</td></tr>
 <tr>
-    <td rowspan="4"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
+    <td rowspan="3"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
     <td>Service principal and managed identity support in Azure DevOps (public preview) </td><td>General</td><td>Future</td></tr>
     <td>REST API support for connecting GitHub repositories (preview)</td><td>Boards</td><td>Future</td></tr>   
     <td>Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others</td><td>Pipelines</td><td>N/A</td></tr>
