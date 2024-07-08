@@ -5,9 +5,9 @@ ms.date: 6/14/2024
 ms.topic: include
 ---
 
-### Access Azure Service Bus from Pipelines using Entra ID authentication
+### Access Azure Service Bus from Pipelines using Microsoft Entra ID authentication
 
-You can now use [Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
+You can now use [Microsoft Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
 
 Identities accessing Azure Service Bus need to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
 
@@ -147,4 +147,53 @@ variables:
 
 ### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
 
-Docker Compose v1 will reach its end-of-life and be removed from Hosted Agents in July 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode.
+Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents July 24 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available on the agent.
+
+However, compatibility mode does not address all compatibility issues. See [Migrate to Compose V2](https://docs.docker.com/compose/migrate/). Some users will need more time to update their Docker Compose projects for Docker Compose v2 compatibility. In those cases, follow these instructions to use the **DockerComposeV0** task with **docker-compose v1**.
+
+> **_NOTE_**: This guide is based on [Install Compose standalone](https://docs.docker.com/compose/install/standalone) documentation
+
+#### Use docker-compose v1 on Windows
+Add the powershell step to your pipeline to download the **docker-Compose v1.29.2** and use it with the **DockerComposeV0** task on **Windows**:
+
+```yaml
+variables:
+    dockerComposePath: C:\docker-compose
+
+steps:
+- powershell: |
+    mkdir -f $(dockerComposePath)
+    # GitHub now requires TLS1.2. In PowerShell, run the following
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-windows-x86_64.exe" -Destination $(dockerComposePath)\docker-compose.exe
+  displayName: Download docker-compose
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run a Docker Compose command'
+    dockerComposeCommand: 'run'
+    dockerComposePath: $(dockerComposePath)\docker-compose.exe
+```
+
+#### Use docker-compose v1 on Linux
+Add the bash step to your pipeline to download **Docker-Compose v1.29.2** and use it with the **DockerComposeV0** task on **Linux**:
+
+```yaml
+variables:
+    dockerComposePath: /tmp/docker-compose
+
+steps:
+- bash: |
+    sudo mkdir $(dockerComposePath)
+    sudo curl -SL https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64 -o $(dockerComposePath)/docker-compose
+    sudo chmod 755 $(dockerComposePath)/docker-compose
+  displayName: Download docker-compose
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    dockerComposeFile: $(Build.SourcesDirectory)/DockerComposeV0/docker-compose.yml
+    action: 'Run a Docker Compose command'
+    dockerComposeCommand: 'run'
+    dockerComposePath: $(dockerComposePath)/docker-compose
+```

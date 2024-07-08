@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 11/28/2023
+ms.date: 07/02/2024
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -27,7 +27,7 @@ If users no longer require access to a team, project, or organization, you can r
 
 ## Prerequisites  
 
-- To remove users, you must be a member of the **Project Collection Administrators** group.  For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+- To remove users, you must be a member of the **Project Collection Administrators** group.  For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md) and [Troubleshoot access and permission issues](../security/troubleshoot-permissions.md).
 
 ## Remove users from your organization
 
@@ -47,7 +47,7 @@ If users no longer require access to a team, project, or organization, you can r
 
     ![Screenshot showing highlighted Users button within Organization settings.](../../media/open-organization-settings-users-preview.png)
 
-4. Select **...**  for the user to be removed. Select **Remove from organization**.
+4. Select **...**  for the user to be removed. Select **Remove from organization**. If this option isn't available, see the [prerequisites](#prerequisites).
 
    ![Screenshot showing removal of a user from your organization.](media/delete-user/remove-user-from-organization-preview.png)
 

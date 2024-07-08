@@ -62,9 +62,8 @@ helm install --name sampleapp  prometheus-community/kube-prometheus-stack
 ## Create service connections
 
 1. Go to **Project settings** > **Pipelines** > **Service connections** in the Azure DevOps menu.
-1. Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
+1. Create a [Docker registry service connection](../../library/service-endpoints.md#azure-container-registry) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
 1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
-
 
 > [!NOTE]
 > If you're using Azure Kubernetes Service, the [Azure Resource Manager service connection type](../../library/service-endpoints.md#azure-resource-manager-service-connection) is the best way to connect to a private cluster, or a cluster that has local accounts disabled.
@@ -374,7 +373,7 @@ You can deploy a stable version with YAML or Classic.
 For the first run of the pipeline the stable version of the workloads, and their baseline or canary versions don't exist in the cluster. To deploy the stable version:
 
 1. In *app/app.py*, change `success_rate = 5` to `success_rate = 10`. This change triggers the pipeline, leading to a build and push of the image to the container registry. It will also trigger the `DeployCanary` stage. 
-1. Because you configured an approval on the `akspromote` environment, the release will wait before running that stage. 
+1. Because you configured an approval on the `akspromote` environment, the release waits before running that stage. 
 1. In the summary of the run, select **Review** > **Approve**. This deploys the stable version of the workloads (the `sampleapp` deployment in *manifests/deployment.yml*) to the namespace.
 
 ### [Classic](#tab/classic/)
