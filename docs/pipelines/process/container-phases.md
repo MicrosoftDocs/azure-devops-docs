@@ -3,7 +3,7 @@ title: YAML container jobs
 description: Learn about configuring and running pipeline jobs inside containers.
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 07/03/2024
+ms.date: 07/08/2024
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -11,17 +11,18 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains container jobs in Azure Pipelines. Linux and Windows [agents](../agents/agents.md) can run jobs on the host or in containers.
+This article explains container jobs in Azure Pipelines. 
 
-By default, Azure Pipelines [jobs](phases.md) run on the host machines where the agent is installed. Hosted agent jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
+By default, Azure Pipelines [jobs](phases.md) run directly on the host machines where the agent is installed. Hosted agent jobs are convenient, require little initial setup and infrastructure to maintain, and are well-suited for basic projects.
 
 If you want more control over task context, you can define and run jobs in containers. Containers are a lightweight abstraction over the host operating system that provides isolation from the host. When you run jobs in containers, you can select the exact versions of operating systems, tools, and dependencies that your build requires.
-
 ::: moniker range="> azure-devops-2019"
 If you need fine-grained control at the individual build step level, [step targets](tasks.md#step-target) let you choose a container or host for each step.
 ::: moniker-end
 
 When you specify a container in your YAML pipeline, the agent first fetches and starts the container. Then each step of the job runs inside the container.
+
+Linux and Windows [agents](../agents/agents.md) can run pipeline jobs directly on the host or in containers. Container jobs aren't available on macOS.
 
 ## Requirements and limitations
 
@@ -29,7 +30,7 @@ The following requirements and limitations apply to Azure Pipelines agent hosts 
 
 ### Agent hosts
 
-- Only `windows-*` and `ubuntu-*` images support running containers. Container jobs aren't available on macOS.
+- Only `windows-*` and `ubuntu-*` images support running containers. The `macOS-*` images don't support running containers.
 - To run containers, Windows and Linux agent hosts must have Docker installed, and must have permission to access the Docker daemon.
 - Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
 
@@ -37,17 +38,17 @@ The following requirements and limitations apply to Azure Pipelines agent hosts 
 
 ### [Linux](#tab/linux)
 
-Linux-based containers should meet the following requirements. For workarounds, see [Nonglibc-based containers](#nonglibc-based-containers).
+Linux-based containers have the following requirements. For workarounds, see [Nonglibc-based containers](#nonglibc-based-containers).
 
 - Bash installed
 - GNU C Library (glibc)-based
-- No `ENTRYPOINT` defined
+- No `ENTRYPOINT`
 - Provide `USER` with access to `groupadd` and other privileged commands without using `sudo`
 - Can run Node.js, which the agent provides
   > [!NOTE]
   > Node.js must be pre-installed for Linux containers on Windows hosts.
 
-Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements. Containers with an `ENTRYPOINT` might not work, because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running.
+Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements. Containers with an `ENTRYPOINT` might not work because Azure Pipelines `docker create` and `docker exec` expect that the container is always up and running.
 
 ### [Windows](#tab/windows)
 
@@ -124,9 +125,7 @@ steps:
 
 ### Multiple jobs with agent pools on a single agent host
 
-A container job uses the underlying host agent's Docker configuration file for image registry authorization. This file signs out at the end of the Docker registry container initialization.
-
-Subsequent registry image pulls might be denied for `unauthorized authentication` because another container job running in parallel already signed out the Docker configuration file registered in the system for authentication.
+A container job uses the underlying host agent's Docker configuration file for image registry authorization. This file signs out at the end of the Docker registry container initialization. Registry image pulls for subsequent container jobs might be denied for `unauthorized authentication` because another job running in parallel already signed out the Docker configuration file.
 
 The solution is to set a Docker environment variable `DOCKER_CONFIG` that's specific to each agent pool running on the hosted agent. Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script as follows:
 
@@ -190,28 +189,22 @@ jobs:
 
 ## Service endpoints
 
-You can host containers on other registries than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in a container definition as follows.
+You can host containers on other registries than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in the container definition.
 
-Reference a private Docker Hub connection:
+Private Docker Hub connection:
 
 ```yaml
 container:
   image: registry:ubuntu1804
   endpoint: private_dockerhub_connection
-
-steps:
-- script: echo hello
 ```
 
-Reference an Azure Container Registry connection:
+Azure Container Registry connection:
 
 ```yaml
 container:
   image: myprivate.azurecr.io/windowsservercore:1803
   endpoint: my_acr_connection
-
-steps:
-- script: echo hello
 ```
 
 >[!NOTE]
@@ -231,7 +224,7 @@ If you want to use a nonglibc-based container, you need to:
 
 ### Supply your own Node.js
 
-If you use a nonglibc-based container, you're responsible for adding a Node binary to your container. Node 18 is a safe choice. Start from the `node:18-alpine` image.
+If you use a nonglibc-based container, you're responsible for adding a Node binary to your container. Node.js 18 is a safe choice. Start from the `node:18-alpine` image.
 
 ### Tell the agent about Node.js
 

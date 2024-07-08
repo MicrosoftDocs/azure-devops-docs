@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: devx-track-js, freshness-fy22q2
-ms.date: 07/05/2024
+ms.date: 07/08/2024
 monikerRange: '<= azure-devops'
 ---
 
