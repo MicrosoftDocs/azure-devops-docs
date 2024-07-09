@@ -80,6 +80,8 @@ The script is the same for all the Windows VMs added to the environment. For mor
 
 1. Select **Close**, and note that the new environment is created. You can select **Add resource** to copy the script again.
 
+   :::image type="content" source="media/environment-new.png" alt-text="Screenshot of the new environment created message.":::
+
 1. Run the copied script on each target VM that you want to register with this environment.
 
    > [!NOTE]
@@ -87,14 +89,14 @@ The script is the same for all the Windows VMs added to the environment. For mor
 
 Once the VM is registered, it appears as a resource under the **Resources** tab of the environment.
 
-:::image type="content" source="media/vm-resourceview.png" alt-text="View resources.":::
+:::image type="content" source="media/vm-resourceview.png" alt-text="Screenshot of the Resources tab.":::
 
 ## Use VMs in pipelines
 
 In your YAML pipeline, you can target VMs by referencing their environment. By default, the job targets all the VMs registered for that environment's `resourceName`.
 
 >[!NOTE]
->When you retry a stage, it reruns the deployment on all VMs and not just on failed targets.
+>When you retry a stage, the deployment reruns on all VMs and not just on failed targets.
 
 ```yaml
 trigger: 
