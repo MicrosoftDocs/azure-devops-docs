@@ -1,5 +1,5 @@
 ---
-title: Code scanning alerts for GitHub Advanced Security for Azure DevOps 
+title: Code scanning for GitHub Advanced Security for Azure DevOps 
 titleSuffix: Azure Repos
 description: Set up code scanning with GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
@@ -284,3 +284,10 @@ The code scanning build task uses the pipeline identity to call the Advanced Sec
 
 Troubleshooting steps:
 * Grant `Advanced Security: View alerts` and `Advanced Security: Manage and dismiss alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
+
+### Manual installation of CodeQL bundle to self-hosted agent 
+Install the CodeQL bundle to the agent tool cache by utilizing the setup script for your architecture, available on [GitHub](https://github.com/microsoft/GHAzDO-Resources/tree/main/src/agent-setup). These scripts require the
+`$AGENT_TOOLSDIRECTORY` environment variable to be set to the location of the agent tools directory on the agent, e.g. `C:/agent/_work/_tool`. Alternatively, you may manually implement the following steps: 
+    1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
+    2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
+    3.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`.
