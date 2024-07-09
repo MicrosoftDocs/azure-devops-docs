@@ -22,7 +22,11 @@ Pipelines rely on resources such as environments, service connections, agent poo
 A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. 
 
 There are five categories of approvals and checks and they run in the order they were created within each category. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage isn't executed.
-If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. However, you can retry a stage when approvals and checks time out.
+If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. 
+
+::: moniker range=">=azure-devops-2022"
+You can retry a stage when approvals and checks time out.
+:::moniker-end
 
 Static checks run first and then pre-check approvals run. The categories in order are:
 
@@ -68,6 +72,8 @@ The list of users who can review an Approval is fixed at the time approvals & ch
 > [!NOTE]
 > If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
+::: moniker range=">=azure-devops-2022"
+
 ### Deferred approvals
 
 There are situations when the time when an approval is given and the time the deployment should start don't match. For example, you might want to wait to deploy a new release until a low-traffic time in the evening. 
@@ -84,6 +90,7 @@ To address this scenario, you can defer an approval and set the time the approva
 
 You'll see the approval in the **Checks** panel as a pre-approval. The approval will be effective at the set time. 
 
+::: moniker-end
 
 ## Branch control
 
@@ -169,7 +176,8 @@ You can have multiple required templates for the same service connection. In thi
 
 :::image type="content" source="media/checks/required-template.png" alt-text="Configuring required template check.":::
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2022"
+
 
 ## Disable a check
 
