@@ -16,12 +16,12 @@ monikerRange: 'azure-devops'
 Azure Artifacts provides a convenient solution for sharing PowerShell scripts. By using Azure Artifacts feeds, you can seamlessly publish your PowerShell modules from the command line and control access to them through your feed settings. 
 This article guides you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules.
 
-You'll learn how to:
+In this article, you'll learn how to:
 
 >[!div class="checklist"]
 > * Create a Personal Access Token
 > * Create, package, and publish a PowerShell module
-> * Connect to an Azure Artifact feed
+> * Connect to a feed as a PowerShell repository
 > * Register and install a PowerShell module using Azure Pipelines
 
 ## Prerequisites
@@ -125,7 +125,7 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Connect to a feed as a PowerShell repository
 
-This section guides you through authenticating with a feed as a PowerShell repository and consuming modules hosted in your feed:
+This section guides you through authenticating with a feed as a PowerShell repository and consuming a module hosted in your feed:
 
 1. Run the following command in a PowerShell prompt window to set up your credentials for authenticating with Azure Artifacts. Replace the placeholders with the appropriate information.
 
