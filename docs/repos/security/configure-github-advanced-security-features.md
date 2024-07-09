@@ -47,12 +47,8 @@ If your organization uses self-hosted agents, there are more requirements:
 
 * Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
-* Install the CodeQL bundle to the agent tool cache by utilizing the setup script for your architecture, available on [GitHub](https://github.com/microsoft/GHAzDO-Resources/tree/main/src/agent-setup). These scripts require the
-`$AGENT_TOOLSDIRECTORY` environment variable to be set to the location of the agent tools directory on the agent, e.g. `C:/agent/_work/_tool`. Alternatively, you may manually implement the following steps: 
-    1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
-    2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
-    3.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`.
-
+* Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You may utilize the `enableAutomaticCodeQLInstall: true` variable with the `Advanced-Security-CodeQL@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
+  
 ## Enable GitHub Advanced Security
 
 You can enable Advanced Security at the organization, project, or repository level. To access each of the scanning tools and results, you need to first enable Advanced Security. Once you enable Advanced Security, any future pushes containing secrets to a repository with this policy enabled are blocked, and repository secret scanning happens in the background.
@@ -69,7 +65,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 1. Go to your **Project settings** for your Azure DevOps project. 
 1. Select **Repos**. 
 1. Select the **Settings** tab. 
-1. Select **Enable all** and you'll see an estimate for the number of active committers for your project appear. 
+1. Select **Enable all** and see an estimate for the number of active committers for your project appear. 
 1. Select **Begin billing** to activate Advanced Security for every existing repository in your project. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created repositories have Advanced Security enabled upon creation. 
 
@@ -78,7 +74,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
 1. Select **Repositories**. 
-1. Select **Enable all** and you'll see an estimate for the number of active committers for your organization appear. 
+1. Select **Enable all** and see see an estimate for the number of active committers for your organization appear. 
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created projects have Advanced Security enabled upon creation. 
 
@@ -132,7 +128,7 @@ Add the tasks in the following order:
 
 :::image type="content" source="media/code-scanning-config-yaml-tasks.png" lightbox="media/code-scanning-config-yaml-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML.":::
 
-Additionally, you'll need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`.  
+Additionally, you need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`. If you're utilizing self-hosted agents, you may also add the `enableAutomaticCodeQLInstall: true` variable to automatically install the latest CodeQL bits for your agent.
 
 Here is an example starter pipeline:
 
@@ -152,9 +148,11 @@ steps:
       languages: "java"
       # Supported languages: csharp, cpp, go, java, javascript, python, ruby, swift
       # You can customize the initialize task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1?view=azure-pipelines
+      # If you're using a self-hosted agent to run CodeQL, use `enableAutomaticCodeQLInstall` to automatically use the latest CodeQL bits on your agent:
+      enableAutomaticCodeQLInstall: true
 
 #   Add your custom build steps here
-# - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you are building from a clean state).
+# - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you're building from a clean state).
 # - Disable the use of any build caching mechanisms as this can interfere with CodeQL's ability to capture all the necessary data during the build.
 # - Disable the use of any distributed/multithreaded/incremental builds as CodeQL needs to monitor executions of the compiler to construct an accurate representation of the application.
 # - For dependency scanning, ensure you have a package restore step for more accurate results.
@@ -193,12 +191,14 @@ If the language specified is `cpp, java, csharp` or `swift` either custom or `Au
 
 Add the tasks in the following order: 
 1. `Advanced Security Initialize CodeQL`
-1. `Advanced Security AutoBuild` (language-dependent) or replace this with your own custom build steps
+1. Add your own custom build steps
 1. `Advanced Security Perform CodeQL Analysis`
 
 :::image type="content" source="media/code-scanning-config-classic-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML." lightbox="media/code-scanning-config-classic-tasks.png" :::
 
-Additionally, you will need to specify which language(s) you are analyzing in the Initialize CodeQL task. If the language specified is `cpp, java, csharp` or `swift,` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action. 
+Additionally, you will need to specify which language(s) you're analyzing in the Initialize CodeQL task. If the language specified is `cpp, java, csharp` or `swift,`  custom build steps are required.
+
+If you're running on a self-hosted agent, select the `Enable automatic CodeQL detection and installation` to automatically use the latest CodeQL bits on your agent if you did not manually install the latest CodeQL bundle to your agent tool cache.
 
 To generate alerts, run your first scan with a pipeline with the code scanning tasks included.
 
