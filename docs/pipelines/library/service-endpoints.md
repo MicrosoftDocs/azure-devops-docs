@@ -423,8 +423,8 @@ Use the following parameters to define a connection to a GitHub repository.
 > [!TIP]
 > There's a specific service connection for [Other Git servers](#other-git-service-connection) and [GitHub Enterprise Server connections](#github-enterprise-server-service-connection).
 
-|Parameter | Description  |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Parameter | Description |
+| --------- | ----------- |
 | Choose authorization |  Required. Either **Grant authorization** or **Personal access token**. See notes below.|
 |  Token| Required for Personal access token authorization. See notes below. |
 |Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
@@ -447,8 +447,8 @@ Use the following parameters to define a connection to a GitHub repository.
 > [!TIP]
 > There's a specific service connection for [Other Git servers](#other-git-service-connection) and [standard GitHub service connections](#github-service-connection).
 
-|  Parameter| Description  |
-|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Parameter | Description |
+| --------- | ----------- |
 |Choose authorization| Required. Either **Personal access token**, **Username and Password**, or **OAuth2**. See notes below. |
 |  Connection name| Required. The name you use to refer to the service connection in task properties. This isn't the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 |  Server URL  |  Required. The URL of the service.|
@@ -472,8 +472,8 @@ Then, complete the following steps to register your GitHub account in your profi
 
 Use the following parameters to define a connection to the Jenkins service.
 
-| Parameter | Description  |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Parameter | Description |
+| --------- | ----------- |
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 |Server URL |  Required. The URL of the service.|
 | Accept untrusted TLS/SSL certificates |  Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md).|
@@ -484,11 +484,12 @@ For more information, see [Azure Pipelines Integration with Jenkins](https://azu
 
 ### Kubernetes service connection
 
-Use the following parameters when you define a connection to a Kubernetes cluster. Choose from the following service connection options:
+Azure DevOps supports Kubernetes deployments for [AzureFunctionOnKubernetes](/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1), [HelmDeploy](/azure/devops/pipelines/tasks/reference/helm-deploy-v0), [Kubernetes](/azure/devops/pipelines/tasks/reference/kubernetes-v1), and [KubernetesManifest](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1). You can target a Kubernetes cluster with the `connectionType` property for these tasks set to **Kubernetes Service Connection**. 
 
-* Azure subscription
-* Service account
-* Kubeconfig
+* Azure subscription: Import an AKS instance. Requires Kubernetes cluster access at service connection configuration time
+* Service account: Specify a service account
+* Kubeconfig: Provide a kubeconfig file
+
 
 #### Azure subscription option
 
@@ -502,6 +503,11 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 For an Azure RBAC enabled cluster, a ServiceAccount gets created in the chosen namespace along with RoleBinding object, so that the created ServiceAccount can do actions only on the chosen namespace.
 
 For an Azure RBAC disabled cluster, a ServiceAccount gets created in the chosen namespace, but, the created ServiceAccount has cluster-wide privileges (across namespaces).
+
+For the Azure subscription option, Kubernetes must be accessible to Azure DevOps when you configure the service connection. If your configuration process freezes with the message `Loading namespaces`, Azure DevOps cannot connect to your cluster. 
+
+Common reasons for this error are that you created a [private cluster](/azure/aks/private-clusters) or that your cluster has [local accounts disabled](/azure/aks/enable-authentication-microsoft-entra-id#disable-local-accounts). A third possible reason is that your task does not have access to a permanent token and can't access your cluster. Since Kubernetes 1.24, [long-lived tokens are no longer created by default](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.24.md#urgent-upgrade-notes).  For AKS customers, the Azure Resource Manager service connection type provides the best method to connect to a private cluster, or a cluster with local accounts disabled. Using the Azure Resource Manager service connection type is also recommended for issues with long-lived tokens and [follows Kubernetes guidance](https://kubernetes.io/docs/concepts/configuration/secret/#service-account-token-secrets). 
+
 
 > [!NOTE]
 > This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you can't see subscriptions from other Azure tenants, check your Microsoft Entra permissions in those tenants.
