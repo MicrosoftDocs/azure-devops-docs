@@ -1,21 +1,29 @@
 ---
-title: Customize Python for Azure Pipelines
-description:  Customize how you use Python with Azure Pipelines
+title: Customize Python
+description:  See how to use Azure Pipelines to customize, build, test, package, and deliver Python apps and code.
 ms.topic: conceptual
 ms.custom: devx-track-python
-ms.date: 12/14/2022
+ms.date: 07/09/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Customize Python for Azure Pipelines
+# Customize Python
 
-You can use Azure Pipelines to build your Python apps without having to set up any infrastructure of your own. Tools that you commonly use to build, test, and run Python apps - like pip - get pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. 
+This article describes how to customize, build, test, package, and deliver Python apps and code in Azure Pipelines. To create your first pipeline with Python, see the [Python quickstart](python.md).
 
-To create your first pipeline with Python, see the [Python quickstart](python.md).
+::: moniker range=">=azure-devops"
+With [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines, you can build your Python apps without having to set up your own infrastructure. Tools that you commonly use to build, test, and run Python apps, including `pip`, are preinstalled.
+
+You might need to [request the free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request) or purchase a [parallel job](../licensing/concurrent-jobs.md) to run your pipelines.
+::: moniker-end
+
+::: moniker range="< azure-devops"
+To build Python apps with Azure Pipelines, you need a [self-hosted agent](../agents/agents.md#self-hosted-agents) with Python installed. To install Python on your agent, see [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task).
+::: moniker-end
 
 ### Use a specific Python version
 
-To use a specific version of Python in your pipeline, add the [Use Python Version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.11:
+To use a specific version of Python in your pipeline, add the [Use Python version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. The following snippet from a YAML pipeline definition sets the pipeline to use Python 3.11:
 
 ```yaml
 steps:
@@ -48,17 +56,17 @@ jobs:
       versionSpec: '$(python.version)'
 
 ```
-You can add tasks to run using each Python version in the matrix.
+You can add tasks that use each Python version in the matrix.
 
 ## Run Python scripts
 
-To run Python scripts in your repository, use a `script` element and specify a filename. For example:
+To run Python scripts from your repository, use a `script` element and specify a filename. For example:
 
 ```yaml
 - script: python src/example.py
 ```
 
-You can also run inline Python scripts with the [Python Script task](/azure/devops/pipelines/tasks/reference/python-script-v0):
+You can also use the [Python script task](/azure/devops/pipelines/tasks/reference/python-script-v0) to run inline Python scripts.
 
 ```yaml
 - task: PythonScript@0
@@ -69,7 +77,7 @@ You can also run inline Python scripts with the [Python Script task](/azure/devo
       print('Hello world 2')
 ```
 
-To parameterize script execution, use the `PythonScript` task with `arguments` values to pass arguments into the executing process. You can use `sys.argv` or the more sophisticated `argparse` library to parse the arguments.
+To parameterize script execution, use the `PythonScript` task with `arguments` values to pass arguments into the running process. You can use `sys.argv` or the more sophisticated `argparse` library to parse the arguments.
 
 ```yaml
 - task: PythonScript@0
@@ -89,7 +97,7 @@ To parameterize script execution, use the `PythonScript` task with `arguments` v
 
 ### Install dependencies
 
-You can use scripts to install specific PyPI packages with `pip`. For example, this YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
+You can use scripts to install specific PyPI packages with `pip`. For example, the following snippet installs or upgrades `pip` and the `setuptools` and `wheel` packages.
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
@@ -98,7 +106,7 @@ You can use scripts to install specific PyPI packages with `pip`. For example, t
 
 ### Install requirements
 
-After you update `pip` and friends, a typical next step is to install dependencies from *requirements.txt*:
+After you update `pip` and friends, a typical next step is to install dependencies from *requirements.txt*.
 
 ```yaml
 - script: pip install -r requirements.txt
@@ -106,14 +114,13 @@ After you update `pip` and friends, a typical next step is to install dependenci
 ```
 
 <a name="test"></a>
-
 ## Run tests
 
-Use scripts to install and run various tests in your pipeline.
+You can use scripts to install and run various tests in your pipeline.
 
 ### Run lint tests with flake8
 
-To install or upgrade `flake8` and use it to run lint tests, use this YAML:
+Use the following YAML code to install or upgrade `flake8` and use it to run lint tests.
 
 ```yaml
 - script: |
@@ -124,7 +131,7 @@ To install or upgrade `flake8` and use it to run lint tests, use this YAML:
 
 ### Test with pytest and collect coverage metrics with pytest-cov
 
-Use this YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format:
+Use the following YAML code to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format.
 
 ```yaml
 - script: |
@@ -136,7 +143,7 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 ::: moniker range=">=azure-devops-2020"
 ### Run tests with Tox
 
-Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
+Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. The following example uses `tox -e py` to run whichever version of Python is active for the current job.
 
 ```yaml
 - job:
@@ -167,7 +174,7 @@ Azure Pipelines can run parallel Tox test jobs to split up the work. On a develo
 
 ### Publish test results
 
-Add the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) to publish JUnit or xUnit test results to the server:
+Add the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) to publish JUnit or xUnit test results to the server.
 
 ```yaml
 - task: PublishTestResults@2
@@ -179,7 +186,7 @@ Add the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publ
 
 ### Publish code coverage results
 
-Add the [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results to the server. You can see coverage metrics in the build summary and download HTML reports for further analysis.
+Add the [Publish code coverage results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results to the server. You can see coverage metrics in the build summary, and download HTML reports for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -190,7 +197,7 @@ Add the [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/refer
 
 ## Package and deliver code
 
-To authenticate with `twine`, use the [Twine Authenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) to store authentication credentials in the `PYPIRC_PATH` environment variable.
+To authenticate with `twine`, use the [Python twine upload authenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) to store authentication credentials in the `PYPIRC_PATH` environment variable.
 
 ```yaml
 - task: TwineAuthenticate@0
@@ -199,7 +206,7 @@ To authenticate with `twine`, use the [Twine Authenticate task](/azure/devops/pi
     pythonUploadServiceConnection: '<twine service connection from external organization>'
 ```
 
-Then, add a custom [script](/azure/devops/pipelines/yaml-schema/steps-script) that uses `twine` to publish your packages.
+Then add a custom [script](/azure/devops/pipelines/yaml-schema/steps-script) that uses `twine` to publish your packages.
 
 ```yaml
 - script: |
@@ -210,7 +217,10 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 ::: moniker-end
 
-## Related extensions
+## Related content
 
-- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-- [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  
+- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981)
+- [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python)
+- [Build and publish a Python app](python.md)
+- [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference)
+- [Azure Pipelines agents](../agents/agents.md)

@@ -78,11 +78,11 @@ The script is the same for all the Windows VMs added to the environment. For mor
 
 ### Run the copied script
 
-1. Select **Close**, and note that the new environment is created. You can select **Add resource** to copy the script again.
+1. Select **Close**, and note that the new environment is created. To copy the script again, for example if your PAT expires, select **Add resource**.
 
    :::image type="content" source="media/environment-new.png" alt-text="Screenshot of the new environment created message.":::
 
-1. Run the copied script on each target VM that you want to register with this environment.
+1. Run the copied script on each target VM that you want to register with the environment.
 
    > [!NOTE]
    > If the VM already has another agent running on it, provide a unique name for **agent** to register with the environment.
@@ -96,7 +96,7 @@ Once the VM is registered, it appears as a resource under the **Resources** tab 
 In your YAML pipeline, you can target VMs by referencing their environment. By default, the job targets all the VMs registered for that environment's `resourceName`.
 
 >[!NOTE]
->When you retry a stage, the deployment reruns on all VMs and not just on failed targets.
+>When you retry a stage, the deployment reruns on all VMs, not just failed targets.
 
 ```yaml
 trigger: 
@@ -122,7 +122,7 @@ jobs:
 > [!NOTE]
 > The `resourceType` values are case sensitive. Incorrect casing results in no matching resources found.
 
-You can select specific VMs from the environment to receive the deployment by specifying them in `resourceName`. The following example deploys only to the VM resource named `USHAN-PC` in the `VMenv` environment.
+You can deploy to specific VMs in the environment by specifying them in `resourceName`. The following example deploys only to the VM resource named `USHAN-PC` in the `VMenv` environment.
 
 ```yaml
 trigger: 
@@ -151,13 +151,11 @@ To learn more about YAML pipeline deployment jobs, see the [YAML pipelines schem
 
 Tags are a way to target a specific set of VMs in an environment for deployment. Tags are limited to 256 characters each. There's no limit to the number of tags that you can use.
 
-You can add tags to the VM in the interactive registration script or through the UI.
-
-Add or remove tags from the resource view in the UI by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a VM resource.
+You can add tags or remove tags for VMs in the interactive registration script or through the UI by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a VM resource.
 
 :::image type="content" source="media/vm-tags.png" alt-text="Screenshot that shows setting VM tags.":::
 
-If you select multiple tags, the pipeline uses only VMs that include all the tags. The following example targets only VMs that have both the `windows` and `prod` tags. VMs that have only one or none of the tags aren't targeted.
+If you specify multiple tags, the pipeline uses only VMs that include all the tags. The following example targets only VMs that have both the `windows` and `prod` tags. VMs that have only one or none of the tags aren't targeted.
 
 ```yaml
 trigger: 
@@ -182,7 +180,7 @@ jobs:
 
 ## Apply deployment strategy
 
-You can apply a deployment `strategy` to define how your application gets rolled out. The `runOnce` strategy and the `rolling` strategy are both supported for VMs. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
+You can apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` strategy and the `rolling` strategy. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
 
 ## View deployment history
 
