@@ -477,7 +477,7 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Dependency scanning not identifying any components
 
-If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task.  
+If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task.  
 
 ### Dependency scanning not picking up new vulnerabilities 
 
