@@ -52,63 +52,57 @@ A personal access token acts as your digital identity and serves as an alternati
 
 If you don't have your own module, follow the instructions in this section to create a sample PowerShell module. Otherwise, skip to the next step:
 
-1. Create a new folder *Get-Hello*. Navigate inside your folder and create a new file *Get-Hello.psm1*.
-
-    ```
-    |--- Get-Hello               // Parent folder     
-        |--- Get-Hello.psm1     // This will become our PowerShell Module
-        |--- Get-Hello.psd1    // This will become our module manifest
-    ```
+1. Create a new folder *Get-Hello*. Navigate into your folder and create a new file *Get-Hello.psm1*.
 
 1. Paste the following script into your *Get-Hello.psm1* file:
 
     ```powershell
     Function Get-Hello{
-        Write-Host "Hello from my Azure DevOps Services Package."
+        Write-Host "Hello Azure DevOps!"
     }
     ```
 
-1. Create the module manifest by running the following command in your *Get-Hello* directory path.
+1. Generate the module manifest by running the following command in your *Get-Hello* directory:
 
     ```powershell
     New-ModuleManifest -Path .\Get-Hello.psd1
     ```
 
-1. Open your *Get-Hello.psd1* file and find the `RootModule` variable. Replace the empty string with the path to your *Get-Hello.psm1* file as follows:
+1. Open your *Get-Hello.psd1* file and locate the `RootModule` variable. This setting specifies the main script file that PowerShell loads when the module is imported. Replace the empty string with the path to your *Get-Hello.psm1* file:
 
     ```powershell
     RootModule = 'Get-Hello.psm1'
     ```
 
-1. The `FunctionsToExport` section is meant to define the list of functions that will be exported from this module. Add your *Get-Hello* function as follows:
+1. The `FunctionsToExport` section specifies which functions are accessible to users when they import your module. Include your *Get-Hello* function:
 
     ```powershell
     FunctionsToExport = @('Get-Hello')
     ```
 
-1. Find the `FileList` section, and add the following list of files that should be packaged with your module.
+1. Find the `FileList` section, which specifies the files included when packaging the module. Add the file you wish to package with your module:
 
     ```powershell
     FileList = @('./Get-Hello.psm1')
     ```
 
-## Pack and publish module
+## Pack and publish a module
 
-1. Create *nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to pack the module.
+1. Generate a *nuspec* file for your module. This command creates a *Get-Hello.nuspec* file containing the necessary metadata for packing the module:
 
     ```powershell
     nuget spec Get-Hello
     ```
 
-1. Run the following command to pack your module.
+1. Run the following command to package your module:
 
     ```powershell
     nuget pack Get-Hello.nuspec
     ```
 
-1. Run the following command to add your feed source URL. NuGet v3 is not supported, make sure you use v2 in your feed source URL.
+1. Run the following command to add your feed source URL. Make sure that you use V2 in your feed source URL, as NuGet V3 is not supported.
 
-    - Org-scoped feed:
+    - Organization-scoped feed:
     
         ```powershell
         nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
@@ -120,32 +114,28 @@ If you don't have your own module, follow the instructions in this section to cr
         nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
         ```
     
-1. Publish the package to your feed.
+1. Publish the package to your feed:
 
     ```powershell
     nuget push -Source "<FEED_NAME>" -ApiKey "<ANY_STRING>" "<PACKAGE_PATH>"
     ```
 
-    :::image type="content" source="../../repos/git/media/artifact-package-powershell.png" alt-text="A screenshot showing the published package.":::
-
 > [!IMPORTANT]
-> The version number in your Module Manifest (.psd1) and the .nuspec file must match.
+> The version number in your *Module Manifest (.psd1)* must be identical to the version number in your *.nuspec* file.
 
-## Connect to feed as a PowerShell repository
+## Connect to a feed as a PowerShell repository
 
-1. Open an elevated PowerShell prompt window.
+This section will guide you through authenticating with a feed as a PowerShell repository and consuming modules hosted in your feed:
 
-1. Set up your credentials to authenticate with Azure Artifacts. Replace the placeholders with the appropriate information.
+1. Run the following command in a PowerShell prompt window to set up your credentials for authenticating with Azure Artifacts. Replace the placeholders with the appropriate information.
 
     ```powershell
     $patToken = "<PERSONAL_ACCESS_TOKEN>" | ConvertTo-SecureString -AsPlainText -Force
-    ```
 
-    ```powershell
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("<USER_NAME>", $patToken)
     ```
 
-1. Register your PowerShell repository. The `SourceLocation` link can be found by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe** under **Project setup** source URL.
+1. Run the following command to register your PowerShell repository. You can find the `SourceLocation` link by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe**, under the **Project setup** section > source URL.
 
     - Project-scoped feed:
 
@@ -153,30 +143,16 @@ If you don't have your own module, follow the instructions in this section to cr
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
-    - Org-scoped feed:
+    - Organization-scoped feed:
 
         ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
-    If you're still using the older `visualstudio.com` URLs, use the following command instead:
-
-    - Project-scoped feed:
-
-        ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
-        ```
-
-    - Org-scoped feed:
-
-        ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
-        ```
-
     > [!TIP]
-    > Certain versions of PowerShell require restarting a new session after executing the `Register-PSRepository` cmdlet to avoid the *Unable to resolve package source* warning.
+    > Some versions of PowerShell may require starting a new session after running the `Register-PSRepository` cmdlet to prevent encountering the *Unable to resolve package source* warning.
 
-1. Register your package source:
+1. Run the following command to register your package source:
 
     - Project-scoped feed:
 
@@ -184,38 +160,26 @@ If you don't have your own module, follow the instructions in this section to cr
         Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
         ```
 
-    - Org-scoped feed:
+    - Organization-scoped feed:
 
         ```powershell
         Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
         ```
 
-1. Run the following command to confirm if the repository was registered successfully. This command gets all the registered repositories for the current user:
+1. To verify if the repository was successfully registered, run the following command to retrieve all registered repositories for the current user:
 
     ```powershell
     Get-PSRepository
     ```
 
-1. Run the following command if you want to find all modules in the repository.
-
-    ```powershell
-    Find-Module -Repository PowershellAzureDevopsServices
-    ```
-
-1. Run the following command if you want to install the *Get-Hello* module.
+1. Run the following command to install the *Get-Hello* module.
 
     ```powershell
     Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
     ```
 
-If the *Install-Module* command is returning the following error: *Unable to resolve package source*, run the `Register-PackageSource` cmdlet again with the `Trusted` flag as follows:
-
-```powershell
-Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
-```
-
 > [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
+> If your organization uses a firewall or a proxy server, make sure that you allow access to [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Register and install module using Azure Pipelines
 
