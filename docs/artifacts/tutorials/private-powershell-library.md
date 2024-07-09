@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Artifacts provides a convenient solution for sharing PowerShell scripts. By using Azure Artifacts feeds, you can seamlessly publish your PowerShell modules from the command line and control access to them through your feed settings. 
-This article will guide you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules.
+This article guides you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules.
 
 You'll learn how to:
 
@@ -125,7 +125,7 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Connect to a feed as a PowerShell repository
 
-This section will guide you through authenticating with a feed as a PowerShell repository and consuming modules hosted in your feed:
+This section guides you through authenticating with a feed as a PowerShell repository and consuming modules hosted in your feed:
 
 1. Run the following command in a PowerShell prompt window to set up your credentials for authenticating with Azure Artifacts. Replace the placeholders with the appropriate information.
 
@@ -181,21 +181,19 @@ This section will guide you through authenticating with a feed as a PowerShell r
 > [!NOTE]
 > If your organization uses a firewall or a proxy server, make sure that you allow access to [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
-## Register and install module using Azure Pipelines
+## Install a module using Azure Pipelines
 
-This example illustrates the process of authenticating and installing a PowerShell Module using a YAML pipeline. To use your personal access token within the pipeline, you should include it as a pipeline variable, as follows:
+This example guides you through the steps to authenticate with an Azure Artifacts feed and install a PowerShell Module from your pipeline. To use your personal access token within the pipeline, include it as a pipeline variable, as shown below:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Pipelines**, select your pipeline and then select **Edit** to edit your pipeline.
+1. Select **Pipelines**, select your pipeline definition, and then select **Edit** to modify your pipeline.
 
-1. Select **Variables** at the top right corner, and then select the **+** sign to create a new variable.
+1. Select **Variables** at the top right corner, and then select **New variable**.
 
-1. Provide a **Name** for your variable, and then paste your personal access token in the **Value** textbox. 
+1. Enter a **Name** for your variable, and then paste your personal access token into the **Value** textbox. 
  
-1. Make sure you select the **Keep this value secret** checkbox. Select **Ok** when you're done. You are now ready to use your variable in your pipeline.
-
-##### [Windows](#tab/windows/)
+1. Make sure that you select the **Keep this value secret** checkbox. Select **Ok** when you're done.
 
 ```yaml
 trigger:
@@ -225,8 +223,6 @@ steps:
   env:
     VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
 ```
-
----
 
 ## Related articles
 
