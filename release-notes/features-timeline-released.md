@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/8/2024
+ms.date: 7/9/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
