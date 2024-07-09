@@ -144,7 +144,7 @@ If the server doesn't receive a heartbeat for five consecutive minutes, it assum
 
 ## Manage runs through the Azure DevOps CLI
 
-You can manage pipelines and runs by using the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).
+You can manage pipeline runs by using `az pipelines runs` in the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).
 
 Use the following commands to list the pipeline runs in your project and view details about a specific run. You can also add, list, and delete tags in your pipeline runs.
 
