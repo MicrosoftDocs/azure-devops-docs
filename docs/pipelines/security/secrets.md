@@ -1,7 +1,7 @@
 ---
 title: Protect secrets in Azure Pipelines
 description: Learn best practices for protecting secrets in Azure Pipelines.
-ms.date: 06/10/2024
+ms.date: 07/05/2024
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -77,6 +77,31 @@ To audit and rotate secrets, follow these best practices:
     - **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
     - **[Azure Key Vault secrets](/azure/key-vault/general/overview):** Use Azure Key Vault to store and manage secrets securely.
     - **[Service connections](../library/service-endpoints.md):** These service connections allow your pipeline to connect to external services (for example, Azure, GitHub, Docker Hub). Ensure proper configuration and secure handling of service connection secrets.
+
+## Use YAML templates 
+
+Instead of including inline scripts with secret parameters directly in your pipeline YAML, use [templates](templates.md). This approach enhances security by abstracting sensitive information away from the main pipeline.
+
+To implement this approach, create a separate YAML file for your script and then store that script in a separate, secure repository. You can then reference the template and pass a secret variable in your YAML as a parameter. The secure variable should come from Azure Key Vault, a variable group, or the pipeline UI. For more information on using templates, see the [Template usage reference](../process/templates.md).
+
+## Limit secrets with branch policies and variable group permissions
+
+To make sure that secrets are tied to the `main` branch and not accessible to random branches, you can use a combination of variable group permissions, conditional job insertion, and branch policies.
+
+With branch policies, you can enforce [build validation policies](../../repos/git/branch-policies.md#build-validation) that only allow builds from the main branch. Then, you can use [variable group permissions](../library/variable-groups.md) to make sure that only authorized pipelines have access the secrets stored in your variable group. Last, you can use a condition in your pipeline to make sure that the variable group can only be referenced by a push to the `main` branch. 
+
+```yaml
+jobs:
+- job: ExampleJob
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - script: echo "This runs only for the main branch"
+    displayName: 'Conditional Step'
+  variables:
+  - group: your-variable-group-name
+```
 
 ## Next steps
 
