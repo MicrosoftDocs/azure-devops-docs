@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Auth and Security | Extensions for Azure DevOps 
+title: Authenticate and Secure | Extensions for Azure DevOps 
 description: Learn how to authenticate requests to your service and call REST APIs from your Azure DevOps extension.
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: how-to
@@ -10,11 +10,11 @@ author: chcomley
 ms.date: 07/10/2024
 ---
 
-# Authentication and security
+# Authenticate and secure web extensions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1).
+This article pertains only to authentication and security for _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1).
 
 ## Call REST APIs from your extension
 
