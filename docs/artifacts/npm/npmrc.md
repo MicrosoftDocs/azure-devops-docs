@@ -377,6 +377,10 @@ Follow these steps to reset your vsts-npm-auth credentials:
 
 ::: moniker-end
 
+#### Unable to publish
+
+If you encounter a 403 error, it may indicate a name conflict. In Azure Artifacts, packages are immutable, meaning that once you publish a package to your feed, its version number is permanently reserved. Even if you delete it, you cannot publish a new package with the same version number. To address this issue, update the package version in your *package.json* file, and then try again.
+
 ## Related articles
 
 - [Publish and restore npm packages (CLI)](./publish.md)
