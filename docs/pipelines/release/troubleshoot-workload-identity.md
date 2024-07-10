@@ -76,7 +76,6 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | Docker@0                                 | Y |
 | Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
 | Docker@2                                 | Y |
-| Docker@0                                 | Y |
 | DockerCompose@0                          | Y |
 | DockerCompose@1                          | Y |
 | HelmDeploy@0                             | Azure service connection: Y |
