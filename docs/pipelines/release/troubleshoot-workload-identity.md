@@ -91,7 +91,7 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | Notation@0                               | Y |
 | PackerBuild@0                            | Use PackerBuild@1 |
 | PackerBuild@1                            | Y |
-| PublishToAzureServiceBus@1               | PublishToAzureServiceBus@2 will support workload identity federation |
+| PublishToAzureServiceBus@1               | Use PublishToAzureServiceBus@2 with Azure service connection |
 | PublishToAzureServiceBus@2               | Y |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
