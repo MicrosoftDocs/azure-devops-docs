@@ -3,33 +3,33 @@ ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
 ms.custom: freshness-fy22q2, cross-service
-title: Integrate Azure Pipelines and Microsoft Teams
-description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelines in your channel and subscribe to notifications. 
+title: Integrate Microsoft Teams
+description: Connect Azure Pipelines to Microsoft Teams, monitor your pipelines in your channel, and subscribe to notifications.
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 03/21/2023
+ms.date: 07/09/2024
 monikerRange: 'azure-devops'
 ---
  
-# Use Azure Pipelines with Microsoft Teams
+# Integrate Azure Pipelines with Microsoft Teams
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-The Azure Pipelines app for Microsoft Teams lets you monitor events for your pipelines. You can set up and get notifications in your Teams channel for releases, pending approvals, completed builds, and so on. You can also approve releases from within your Teams channel.
+The Azure Pipelines app for Microsoft Teams lets you monitor pipelines events. You can set up and get notifications in your Teams channel for releases, pending approvals, and completed builds. You can also approve releases from within your Teams channel.
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 ## Prerequisites
 
-- You must have an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md).
-- To set up pipeline subscriptions, you must be a Project Administrator.
+- Permissions to create a Team in Microsoft Teams.
+- To set up pipeline subscriptions, you must have Project Administrator [permissions](../policies/permissions.md) in an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md) and [Pipeline security resources](../security/resources.md).
 
 ## Set up the Azure Pipelines app
 
 1. In Microsoft Teams, go to the **Apps** store, search for **Azure Pipelines**, and then select **Azure Pipelines**.
    
-   :::image type="content" source="media/integrations-teams/select-azure-pipelines-from-microsot-teams.png" alt-text="Screenshot of selecting the Apps button, then Azure Pipelines button.":::
+   :::image type="content" source="media/integrations-teams/select-azure-pipelines.png" alt-text="Screenshot of selecting the Apps button, then Azure Pipelines button.":::
 
 2. Select the **Open** dropdown arrow, and then select **Add to a team**.
  
