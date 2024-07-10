@@ -101,7 +101,7 @@ Follow these steps to create a basic Class Library project from the command line
 
 1. On your local machine, create a new folder and give it a name.
 
-1. Open a command prompt window and navigate to the folder you just created.
+1. Open a command prompt window and navigate to the folder you created.
 
 1. Run the following command to create a new Class Library project:
 
@@ -130,7 +130,7 @@ Follow these steps to create a basic Class Library project from the command line
     </Project>
     ```
 
-1. Run the following command to package your project and generate a *.nupkg* artifact. your NuGet package will be generated in the `bin\release` directory.
+1. Run the following command to package your project and generate a *.nupkg* artifact. your NuGet package is generated in the `bin\release` directory.
 
     ```dotnetcli
     dotnet pack
@@ -191,7 +191,7 @@ Follow these steps to create a basic Class Library project from the command line
 > [!TIP]
 > You can ask GitHub Copilot, "how to add a new package source to an existing *nuget.config* file". Copilot will guide you through using the `nuget sources Add` command to add your new feed source URL to your *nuget.config* file.
 
-## Publish your package
+## Publish packages
 
 Run the following command from your project directory to publish your package. The ApiKey is required, but you can use any string value when publishing to an Azure Artifacts feed.
 
