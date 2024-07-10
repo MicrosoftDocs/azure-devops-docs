@@ -86,11 +86,11 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | Kubernetes@1                             | Azure service connection: Y<br/> Docker Registry service connection: Y |
 | KubernetesManifest@0                     | Use KubernetesManifest@1 |
 | KubernetesManifest@1                     | Azure service connection: Y<br/> Docker Registry service connection: Y |
-| Notation@0                               | 2024 |
-| PackerBuild@0                            | 2024 |
-| PackerBuild@1                            | 2024 |
+| Notation@0                               | Y |
+| PackerBuild@0                            | Use PackerBuild@1 |
+| PackerBuild@1                            | Y |
 | PublishToAzureServiceBus@1               | PublishToAzureServiceBus@2 will support workload identity federation |
-| PublishToAzureServiceBus@2               | 2024 Q2 |
+| PublishToAzureServiceBus@2               | Y |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
 | SqlAzureDacpacDeployment@1               | Y |
