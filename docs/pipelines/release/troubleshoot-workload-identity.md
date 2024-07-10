@@ -50,8 +50,8 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzureFunctionApp@2                       | Y |
 | AzureFunctionAppContainer@1              | Y |
 | AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
-| AzureFunctionOnKubernetes@1              | Azure service connection: Y<br/> Docker Registry service connection: Y |
-| AzureIoTEdge@2                           | Azure service connection: Y<br/> Docker Registry service connection: Y |
+| AzureFunctionOnKubernetes@1              | Y |
+| AzureIoTEdge@2                           | Y |
 | AzureKeyVault@1                          | Y |
 | AzureKeyVault@2                          | Y |
 | AzureMonitor@0                           | Use AzureMonitor@1 |
@@ -65,32 +65,33 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzurePowerShell@5                        | Y |
 | AzureResourceGroupDeployment@2           | Y |
 | AzureResourceManagerTemplateDeployment@3 | Y |
-| AzureRmWebAppDeployment@3                | Azure service connection: Y<br/> Docker Registry service connection: Y |
+| AzureRmWebAppDeployment@3                | Y |
 | AzureRmWebAppDeployment@4                | Y |
 | AzureSpringCloud@0                       | Y |
 | AzureVmssDeployment@0                    | Y |
 | AzureWebApp@1                            | Y |
 | AzureWebAppContainer@1                   | Y |
-| ContainerBuild@0                         | N |
-| ContainerStructureTest@0                 | N |
-| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: Y |
+| ContainerBuild@0                         | Y |
+| ContainerStructureTest@0                 | Y |
+| Docker@0                                 | Y |
 | Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
 | Docker@2                                 | Y |
-| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: Y |
-| DockerCompose@0                          | Azure service connection: Y<br/> Docker Registry service connection: Y |
+| DockerCompose@0                          | Y |
+| DockerCompose@1                          | Y |
 | HelmDeploy@0                             | Azure service connection: Y |
+| HelmDeploy@1                             | Azure service connection: Y |
 | InvokeRESTAPI@1                          | Y |
 | JavaToolInstaller@0                      | Y |
 | JenkinsDownloadArtifacts@1               | Y |
 | Kubernetes@0                             | Use Kubernetes@1  |
-| Kubernetes@1                             | Azure service connection: Y<br/> Docker Registry service connection: Y |
+| Kubernetes@1                             | Y |
 | KubernetesManifest@0                     | Use KubernetesManifest@1 |
-| KubernetesManifest@1                     | Azure service connection: Y<br/> Docker Registry service connection: Y |
-| Notation@0                               | 2024 |
-| PackerBuild@0                            | 2024 |
-| PackerBuild@1                            | 2024 |
-| PublishToAzureServiceBus@1               | PublishToAzureServiceBus@2 will support workload identity federation |
-| PublishToAzureServiceBus@2               | 2024 Q2 |
+| KubernetesManifest@1                     | Y |
+| Notation@0                               | Y |
+| PackerBuild@0                            | Use PackerBuild@1 |
+| PackerBuild@1                            | Y |
+| PublishToAzureServiceBus@1               | Use PublishToAzureServiceBus@2 with Azure service connection |
+| PublishToAzureServiceBus@2               | Y |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
 | SqlAzureDacpacDeployment@1               | Y |
