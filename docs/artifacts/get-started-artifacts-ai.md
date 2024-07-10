@@ -1,5 +1,5 @@
 ---
-title: Publish a package to an Azure Artifacts feed
+title: Publish a package to an Azure Artifacts feed - Copilot
 description: Learn how to publish your first package to an Azure Artifacts feed.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2020'
 
 Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing your packages within your team, across organizations, or publicly on the internet. Azure Artifacts feeds support a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
-This article will guide you through the process of publishing your first package to an Azure Artifacts feed. You'll also have the option to leverage the power of GitHub Copilot to streamline this process and explore the capabilities of the GitHub Copilot Chat right from your Visual Studio Code interface. 
+This article walks you through the process of publishing your first package to an Azure Artifacts feed. You also have the option to use GitHub Copilot to streamline this process and explore the capabilities of the GitHub Copilot Chat in Visual Studio Code. 
 
 ## Prerequisites
 
@@ -67,17 +67,15 @@ This article will guide you through the process of publishing your first package
 
 ::: moniker-end
 
-## Get the code
+## Prepare the code
 
 #### [With GitHub Copilot](#tab/githubcopilot/)
 
-Before publishing a package to the feed we created earlier, let's ensure we pack our project and prepare a package for publishing. 
+Before publishing a package to the feed you created earlier, you must first pack your project and prepare it for publishing. 
 
-In this example, we'll leverage GitHub copilot to guide us through creating a sample .NET Core class library, defining our package metadata, and generating a NuGet package from the command line.
+The following example walks you through using GitHub Copilot to create a sample .NET Core class library and generate a NuGet package from the command line. You can also use GitHub Copilot to generate other types of projects, such as npm or Python projects.
 
-You could also use GitHub Copilot to generate other types of projects such as npm or Python projects.
-
-1. Open your Visual Studio Code and select the chat icon from the left navigation panel to open the GitHub Copilot Chat.
+1. Open Visual Studio Code and select the chat icon from the left navigation panel to open the GitHub Copilot Chat.
 
 1. In the prompt box. ask GitHub copilot: "How do I create a .NET Core project and package it as a NuGet package?". GitHub Copilot's response might be something similar to the following:
 
@@ -195,7 +193,7 @@ Follow these steps to create a basic Class Library project from the command line
 
 ## Publish your package
 
-Now that we've created a feed, set up our project, packed our package, configured our *nuget.config* file, and connected to our feed, we're ready to publish our first package. Run the following command from your project directory to publish your package. The ApiKey is required, but you can use any string value when publishing to an Azure Artifacts feed.
+Run the following command from your project directory to publish your package. The ApiKey is required, but you can use any string value when publishing to an Azure Artifacts feed.
 
 ```dotnetcli
 dotnet nuget push --source <FEED_NAME> --api-key az <PACKAGE_PATH>
