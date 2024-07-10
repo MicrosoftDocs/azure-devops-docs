@@ -71,8 +71,8 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | AzureVmssDeployment@0                    | Y |
 | AzureWebApp@1                            | Y |
 | AzureWebAppContainer@1                   | Y |
-| ContainerBuild@0                         | N |
-| ContainerStructureTest@0                 | N |
+| ContainerBuild@0                         | Y |
+| ContainerStructureTest@0                 | Y |
 | Docker@0                                 | Y |
 | Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
 | Docker@2                                 | Y |
