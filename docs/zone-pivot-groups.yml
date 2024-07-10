@@ -16,3 +16,11 @@ groups:
     title: Includes templates
   - id: templates-extends
     title: Extends templates
+- id: key-vault-access-path
+  title: Private Key Vault access
+  prompt: Select a method to access a private Azure Key Vault
+  pivots:
+  - id: access-from-azure-devops
+    title: Access from Azure DevOps
+  - id: access-from-self-hosted-agent
+    title: Access from a self-hosted agent
