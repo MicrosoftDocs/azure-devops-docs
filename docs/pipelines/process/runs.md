@@ -40,18 +40,20 @@ To process a pipeline for a run, Azure Pipelines first:
 1. Expands [templates](templates.md) and evaluates [template expressions](template-expressions.md).
 2. Evaluates dependencies at the [stage](stages.md) level to pick the first stage to run.
 
-Next, for each stage it selects to run, Azure Pipelines:
+For each stage it selects to run, Azure Pipelines:
 
 1. Gathers and validates all job resources for [authorization](approvals.md) to run.
 2. Evaluates [dependencies at the job level](phases.md#dependencies) to pick the first job to run.
 
-Finally, Azure Pipelines does the following activities for each job selected to run:
+Azure Pipelines does the following activities for each job it selects to run:
 
-1. Expands YAML `strategy: matrix` or `strategy: parallel` [multi-configs](phases.md#parallelexec) into multiple runtime jobs.
+1. Expands YAML `strategy: matrix` or `strategy: parallel` [multi-configurations](phases.md#parallelexec) into multiple runtime jobs.
 5. Evaluates [conditions](conditions.md) to decide whether the job is eligible to run.
 6. Requests an agent for each eligible job.
 
 As runtime jobs complete, Azure Pipelines checks whether there are new jobs eligible to run. Similarly, as stages complete, Azure Pipelines checks if there are any more stages.
+
+### Variables
 
 Understanding the processing order clarifies why you can't use certain variables in [template parameters](template-parameters.md). The first template expansion step operates only on the text of the YAML file. Runtime variables don't yet exist during that step. After that step, template parameters are already resolved.
 
@@ -149,9 +151,9 @@ If the server doesn't receive a heartbeat for five consecutive minutes, it assum
 ::: moniker range=">=azure-devops-2020"
 ## Manage runs through the Azure DevOps CLI
 
-You can manage pipeline runs by using `az pipelines runs` in the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).
+You can manage pipeline runs by using [az pipelines runs](/cli/azure/pipelines/runs) in the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).
 
-The following examples show how to list the pipeline runs in your project, view details about a specific run, and manage tags for pipeline runs.
+The following examples show how to use the Azure DevOps CLI to list the pipeline runs in your project, view details about a specific run, and manage tags for pipeline runs.
 
 ### Prerequisites
 

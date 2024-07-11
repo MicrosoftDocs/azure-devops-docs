@@ -118,7 +118,7 @@ jobs:
 ```
 
 > [!NOTE]
-> The `resourceType` values are case sensitive. Incorrect casing results in no matching resources found.
+> The `resourceType` values like `virtualMachine` are case sensitive. Incorrect casing results in no matching resources found.
 
 You can deploy to specific VMs in the environment by specifying them in `resourceName`. The following example deploys only to the VM resource named `USHAN-PC` in the `VMenv` environment.
 
