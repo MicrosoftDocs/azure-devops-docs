@@ -12,13 +12,11 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains the sequence of Azure Pipelines runs. A run represents one execution of a pipeline.
-
-Both continuous integration (CI) and continuous delivery (CD) pipelines consist of runs. During a run, Azure Pipelines processes the pipeline, and agents process one or more [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md).
+This article explains the sequence of activities in Azure Pipelines pipeline runs. A run represents one execution of a pipeline. Both continuous integration (CI) and continuous delivery (CD) pipelines consist of runs. During a run, Azure Pipelines processes the pipeline, and [agents](../agents/agents.md) process one or more [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md).
 
 ![Diagram showing a pipeline overview.](media/run-overview.png)
 
-At a high level, Azure Pipelines:
+For each run, Azure Pipelines:
 - Processes the pipeline.
 - Requests one or more agents to run jobs.
 - Hands off jobs to agents and collects the results.
@@ -32,32 +30,37 @@ Jobs might succeed, fail, be canceled, or not complete. Understanding these outc
 
 The following sections describe the pipeline run process in detail.
 
-## Process the pipeline
+## Pipeline processing
 
 ![Diagram that shows expanding YAML templates.](media/run-expansion.png)
 
-To process a pipeline for a run, Azure Pipelines does the following steps in order:
+To process a pipeline for a run, Azure Pipelines:
 
 1. Expands [templates](templates.md) and evaluates [template expressions](template-expressions.md).
 2. Evaluates dependencies at the [stage](stages.md) level to pick the first stage to run.
-3. For each stage selected to run:
-   - Gathers and validates all job resources for [authorization](approvals.md) to run.
-   - Evaluates [dependencies at the job level](phases.md#dependencies) to pick the first job to run.
-4. For each job selected to run, expands YAML `strategy: matrix` or `strategy: parallel` [multi-configs](phases.md#parallelexec) into multiple runtime jobs.
-5. For each runtime job, evaluates [conditions](conditions.md) to decide whether that job is eligible to run.
-6. Requests an agent for each eligible runtime job.
 
-As runtime jobs complete, Azure Pipelines checks whether there are new jobs eligible to run. Similarly, as stages complete, Azure Pipelines checks if there are any new stages.
+For each stage it selects to run, Azure Pipelines:
 
-Understanding the processing order helps understand why you can't use certain variables in [template parameters](template-parameters.md). The first, template expansion step operates only on the text of the YAML file. Runtime variables don't yet exist during that step. After that step, template parameters have been resolved.
+1. Gathers and validates all job resources for [authorization](approvals.md) to run.
+2. Evaluates [dependencies at the job level](phases.md#dependencies) to pick the first job to run.
 
-You also can't use [variables](variables.md) to resolve service connection or environment names, because the pipeline authorizes resources before a stage can start running. Stage- and job-level variables aren't available yet.
+For each job selected to run, Azure Pipelines:
 
-You can use pipeline-level variables, but only those explicitly included in the pipeline resource. Variable groups are themselves a resource subject to authorization, so their data isn't available when checking resource authorization.
+1. Expands YAML `strategy: matrix` or `strategy: parallel` [multi-configs](phases.md#parallelexec) into multiple runtime jobs.
+5. Evaluates [conditions](conditions.md) to decide whether the job is eligible to run.
+6. Requests an agent for each eligible job.
 
-## Request an agent
+As runtime jobs complete, Azure Pipelines checks whether there are new jobs eligible to run. Similarly, as stages complete, Azure Pipelines checks if there are any more stages.
 
-When Azure Pipelines needs to run a job, it requests an [agent](../agents/agents.md) from the [pool](../agents/pools-queues.md). [Microsoft-hosted](../agents/hosted.md) and [self-hosted](../agents/pools-queues.md) agent pools work slightly differently.
+Understanding the processing order clarifies why you can't use certain variables in [template parameters](template-parameters.md). The first template expansion step operates only on the text of the YAML file. Runtime variables don't yet exist during that step. After that step, template parameters have been resolved.
+
+You also can't use [variables](variables.md) to resolve service connection or environment names, because the pipeline authorizes resources before a stage can start running. Stage- and job-level variables aren't available yet. Variable groups are themselves a resource subject to authorization, so their data isn't available when checking resource authorization.
+
+You can use pipeline-level variables that are explicitly included in the [pipeline resource definition](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline). For more information, see [Pipeline resource metadata as predefined variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#pipeline-resource-metadata-as-predefined-variables).
+
+## Agents
+
+When Azure Pipelines needs to run a job, it requests an [agent](../agents/agents.md) from the [pool](../agents/pools-queues.md). The process works differently for [Microsoft-hosted](../agents/hosted.md) and [self-hosted](../agents/pools-queues.md) agent pools.
 
 >[!NOTE]
 >[Server jobs](phases.md#server-jobs) don't use a pool because they run on the Azure Pipelines server itself.
@@ -66,17 +69,17 @@ When Azure Pipelines needs to run a job, it requests an [agent](../agents/agents
 
 ### Parallel jobs
 
-First, Azure Pipelines checks on your organization's parallel jobs. The service adds up all running jobs on all agents and compares that with the number of parallel jobs granted or purchased.
+First, Azure Pipelines checks on your organization's [parallel jobs](../licensing/concurrent-jobs.md). The service adds up all running jobs on all agents and compares that with the number of parallel jobs granted or purchased.
 
 If there are no available parallel slots, the job has to wait on a slot to free up. Once a parallel slot is available, the job routes to the appropriate agent type.
 
-### Microsoft-hosted agent pool requests
+### Microsoft-hosted agents
 
-Conceptually, the Microsoft-hosted pool is one giant, global pool of machines, although it's actually many different physical pools split by geography and operating system type. Based on the YAML `vmImage` or Classic editor pool name requested, Azure Pipelines selects an agent.
+Conceptually, the Microsoft-hosted pool is one global pool of machines, although it's physically many different pools split by geography and operating system type. Based on the YAML `vmImage` or Classic editor pool name requested, Azure Pipelines selects an agent.
 
 All agents in the Microsoft pool are fresh, new virtual machines (VMs) that have never run any pipelines. When the job completes, the agent VM is discarded.
 
-### Self-hosted agent pool requests
+### Self-hosted agents
 
 Once a parallel slot is available, Azure Pipelines examines the self-hosted pool for a compatible agent. Self-hosted agents offer [capabilities](../agents/agents.md#capabilities), which indicate that particular software is installed or settings configured. The pipeline has [demands](/azure/devops/pipelines/yaml-schema/pool-demands), which are the capabilities required to run the job.
 
@@ -84,21 +87,22 @@ If Azure Pipelines can't find a free agent whose capabilities match the pipeline
 
 Self-hosted agents are typically reused from run to run. For self-hosted agents, a pipeline job can have side effects, such as warming up caches or having most commits already available in the local repo.
 
-## Prepare to run the job
+## Job preparation
 
-Once an agent accepts a job, it does some preparation work. The agent downloads all the [tasks](tasks.md) needed to run the job and caches them for future use. The agent creates working space on disk to hold the source code, artifacts, and outputs used in the run. Then it begins running steps.
+Once an agent accepts a job, it does the following preparation work:
 
-## Run each step
+1. Downloads all the [tasks](tasks.md) needed to run the job and caches them for future use.
+2. Creates working space on disk to hold the source code, artifacts, and outputs used in the run.
+
+## Step execution
 
 The agent runs steps sequentially in order. Before a step can start, all previous steps must be finished or skipped.
 
 ![Diagram that shows running each task.](media/run-tasks.png)
 
-Steps are implemented by [tasks](tasks.md), which can be implemented as Node.js or PowerShell scripts. The task system routes inputs and outputs to the backing scripts. Tasks also provide common services such as altering the system path and creating new [pipeline variables](variables.md).
+Steps are implemented by [tasks](tasks.md), which can be Node.js, PowerShell, or other scripts. The task system routes inputs and outputs to the backing scripts. Tasks also provide common services such as altering the system path and creating new [pipeline variables](variables.md).
 
-Each step runs in its own process, isolating it from the environment left by previous steps. Because of this process-per-step model, environment variables aren't preserved between steps.
-
-However, tasks and scripts have a mechanism called [logging commands](../scripts/logging-commands.md) to communicate back to the agent. When a task or script writes a logging command to standard output, the agent takes whatever action the command requests.
+Each step runs in its own process, isolating its environment from previous steps. Because of this process-per-step model, environment variables aren't preserved between steps. However, tasks and scripts can use a mechanism called [logging commands](../scripts/logging-commands.md) to communicate back to the agent. When a task or script writes a logging command to standard output, the agent takes whatever action the command requests.
 
 You can use a logging command to create new pipeline variables. Pipeline variables are automatically converted into environment variables in the next step. A script can set a new variable `myVar` with a value of `myValue` as follows:
 
@@ -110,11 +114,11 @@ echo '##vso[task.setVariable variable=myVar]myValue'
 Write-Host "##vso[task.setVariable variable=myVar]myValue"
 ```
 
-## Report and collect results
+## Result reporting and collection
 
-Each step can report warnings, errors, and failures. The step reports errors and warnings on the pipeline summary page by marking the tasks as **succeeded with issues**, or reports failures by marking the task as **failed**. A step fails if it either explicitly reports failure by using a `##vso` command or ends the script with a non-zero exit code.
+Each step can report warnings, errors, and failures. The step reports errors and warnings on the pipeline summary page by marking the tasks as succeeded with issues, or reports failures by marking the task as failed. A step fails if it either explicitly reports failure by using a `##vso` command or ends the script with a non-zero exit code.
 
-As steps run, the agent constantly sends output lines to the service, so you can see a live feed of the console. At the end of each step, the entire output from the step is also uploaded as a log file. You can download the log once the pipeline finishes.
+As steps run, the agent constantly sends output lines to Azure Pipelines, so you can see a live feed of the console. At the end of each step, the entire output from the step is uploaded as a log file. You can download the log once the pipeline finishes.
 
 ![Diagram showing how logs and results flow from agent to service.](media/run-logging.png)
 
@@ -124,34 +128,33 @@ The agent can also upload [artifacts](../artifacts/pipeline-artifacts.md) and [t
 
 The agent keeps track of each step's success or failure. As steps succeed with issues or fail, the job's status is updated. The job always reflects the worst outcome from each of its steps. If a step fails, the job also fails.
 
-Before running a step, the agent checks that step's [condition](conditions.md) to determine whether it should run. By default, a step only runs when the job's status is succeeded or succeeded with issues.
+Before running a step, the agent checks that step's [condition](conditions.md) to determine whether it should run. By default, a step only runs when the job's status is succeeded or succeeded with issues, but you can set other conditions.
 
-Many jobs have cleanup steps that need to run no matter what else happens, so they can specify a condition of `always()`. Cleanup steps can also be set to run only on cancellation.
+Many jobs have cleanup steps that need to run no matter what else happens, so they can specify a condition of `always()`. Cleanup or other steps can also be set to run only on cancellation.
 
 A successful cleanup step can't save the job from failing. Jobs can never go back to success after entering failure.
 
 ## Timeouts and disconnects
 
-Each job has a timeout. If the job doesn't complete in the specified time, the server cancels the job. The server attempts to signal the agent to stop, and marks the job as canceled.
-
-On the agent side, cancellation means canceling all remaining steps and uploading any remaining results.
+Each job has a timeout. If the job doesn't complete in the specified time, the server cancels the job. The server attempts to signal the agent to stop, and marks the job as canceled. On the agent side, cancellation means canceling all remaining steps and uploading any remaining results.
 
 Jobs have a grace period called the cancel timeout in which to complete any cancellation work. You can also mark steps to run even on cancellation. After a job timeout plus a cancel timeout, if the agent doesn't report that work has stopped, the server marks the job as a failure.
 
-Agent machines can stop responding to the server from time to time. This situation can happen if the agent's host machine loses power or is turned off, or if there's a network failure. To help detect these conditions, the agent sends a heartbeat message once per minute to let the server know it's still operating.
+Agent machines can stop responding to the server if the agent's host machine loses power or is turned off, or if there's a network failure. To help detect these conditions, the agent sends a heartbeat message once per minute to let the server know it's still operating.
 
 If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent won't come back. The job is marked as a failure, letting the user know they should retry the pipeline.
 
+::: moniker range=">=azure-devops-2020"
 ## Manage runs through the Azure DevOps CLI
 
 You can manage pipeline runs by using `az pipelines runs` in the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).
 
-Use the following commands to list the pipeline runs in your project and view details about a specific run. You can also add, list, and delete tags in your pipeline runs.
+The following examples show how to list the pipeline runs in your project, view details about a specific run, and add, list, or delete tags for pipeline runs.
 
 ### Prerequisites
 
 - Azure CLI with the Azure DevOps CLI extension installed as described in [Get started with Azure DevOps CLI](../../cli/index.md). Sign into Azure using `az login`.
-- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+- Set the default organization by using `az devops configure --defaults organization=<YourOrganizationURL>`.
 
 ### List pipeline runs
 
@@ -173,7 +176,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/pipelines/runs#az-pipelines-runs-show) command.
 
-The following command shows details for the pipeline run with the ID **123** and returns the results in table format. The command also opens your web browser to the build results page.
+The following command shows details for the pipeline run with the ID **123**, returns the results in table format, and opens your web browser to the Azure Pipelines build results page.
 
 ```azurecli 
 az pipelines runs show --id 122 --open --output table
@@ -217,9 +220,11 @@ Delete a tag from a pipeline run in your project with the [az pipelines runs tag
 az pipelines runs tag delete --run-id 123 --tag YAML
 ```
 
+::: moniker-end
+
 ## Related content
 
 - [Key Azure Pipelines concepts](../get-started/key-pipelines-concepts.md)
 - [Stages, dependencies, and conditions](stages.md)
 - [Jobs in pipelines](phases.md)
-- [Azure Pipelines agents]((../agents/agents.md))
+- [Azure Pipelines agents](../agents/agents.md)

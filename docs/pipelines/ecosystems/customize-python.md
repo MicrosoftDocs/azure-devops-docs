@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 
 # Customize Python
 
-This article describes how to customize, build, test, package, and deliver Python apps and code in Azure Pipelines. To create your first pipeline with Python, see the [Python quickstart](python.md).
+This article describes how to customize building, testing, packaging, and delivering Python apps and code in Azure Pipelines. To create your first pipeline with Python, see the [Python quickstart](python.md).
 
 ::: moniker range=">=azure-devops"
 With [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines, you can build your Python apps without having to set up your own infrastructure. Tools that you commonly use to build, test, and run Python apps, including `pip`, are preinstalled.
@@ -23,7 +23,7 @@ To build Python apps with Azure Pipelines, you need a [self-hosted agent](../age
 
 ### Use a specific Python version
 
-To use a specific version of Python in your pipeline, add the [Use Python version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. The following snippet from a YAML pipeline definition sets the pipeline to use Python 3.11:
+To use a specific version of Python in your pipeline, add the [Use Python version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. The following example YAML pipeline definition sets the pipeline to use Python 3.11.
 
 ```yaml
 steps:
@@ -34,13 +34,13 @@ steps:
 
 ### Use multiple Python versions
 
-To run a pipeline with multiple Python versions, for example to test a package against those versions, define a `job` with a `matrix` of Python versions. Then set the `UsePythonVersion` task to reference the `matrix` variable.
+To run a pipeline with multiple Python versions, for example to test a package against those versions, define a `job` with a `matrix` of Python versions. Then set the `UsePythonVersion` task to reference the `matrix` variable. For example:
 
 ```yaml
 jobs:
 - job: 'Test'
   pool:
-    vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
+    vmImage: 'ubuntu-latest'
   strategy:
     matrix:
       Python38:
@@ -97,7 +97,7 @@ To parameterize script execution, use the `PythonScript` task with `arguments` v
 
 ### Install dependencies
 
-You can use scripts to install specific PyPI packages with `pip`. For example, the following snippet installs or upgrades `pip` and the `setuptools` and `wheel` packages.
+You can use scripts to install specific PyPI packages with `pip`. The following example installs or upgrades `pip` and the `setuptools` and `wheel` packages.
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
@@ -120,7 +120,7 @@ You can use scripts to install and run various tests in your pipeline.
 
 ### Run lint tests with flake8
 
-Use the following YAML code to install or upgrade `flake8` and use it to run lint tests.
+The following YAML code to install or upgrade `flake8` and use it to run lint tests.
 
 ```yaml
 - script: |
@@ -131,7 +131,7 @@ Use the following YAML code to install or upgrade `flake8` and use it to run lin
 
 ### Test with pytest and collect coverage metrics with pytest-cov
 
-Use the following YAML code to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format.
+The following YAML code installs `pytest` and `pytest-cov` and runs tests, outputting test results in JUnit format and outputting code coverage results in Cobertura XML format.
 
 ```yaml
 - script: |

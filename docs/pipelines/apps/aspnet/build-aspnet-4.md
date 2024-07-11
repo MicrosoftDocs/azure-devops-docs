@@ -69,10 +69,9 @@ You might need to build your app in multiple configurations. The following steps
 
 You can use the [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) to install and update NuGet package dependencies. You can also use the NuGet task to download NuGet packages from Azure Artifacts, NuGet.org, or other external or internal NuGet repositories.
 
-The following code restores a solution from a project-scoped feed in the same organization.
+The following example restores a solution from a project-scoped feed in the same organization.
 
 ```yaml
-# Restore from a project scoped feed in the same organization
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
