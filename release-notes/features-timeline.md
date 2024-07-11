@@ -44,27 +44,21 @@ New capabilities we expect to deliver include:
     </thead>
     <tbody>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif" data-raw-source="[Display code scanning alerts for third-party tools that produce SARIF)">Display code scanning alerts for third-party tools that produce SARIF</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2024 Q2</td>
+        <td>2024 Q3</td>        
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2024 Q2</td>        
-        <td>N/A</td>
-      </tr>      
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Determine detected partner secrets validity](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Determine detected partner secrets validity</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2024 Q2</td>
+        <td>2024 Q4</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2024 Q2</td>
+        <td>TBD</td>
         <td>N/A</td>
       </tr>
    </tbody>
