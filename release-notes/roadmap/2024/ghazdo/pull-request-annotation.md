@@ -1,7 +1,7 @@
 ---
 title: PR Annotations
 author: ncouraud
-ms.author: niour
+ms.author: nicour
 ms.date: 04/22/2024
 ms.topic: article
 ms.service: azure-devops
