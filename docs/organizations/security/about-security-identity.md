@@ -112,8 +112,8 @@ While human user accounts are the primary focus, Azure DevOps also supports vari
 
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To find the owner for your organization, see [Look up the organization owner](look-up-organization-owner.md). 
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals or managed identities**: [Microsoft Entra applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
+- **Service accounts**: Internal Azure DevOps organization used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
+- **Service principals or managed identities**: [Microsoft Entra applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps organization to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
@@ -122,8 +122,8 @@ Throughout our security-related articles, "users" refers to all identities added
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals or managed identities**: Microsoft Entra applications or managed identities added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
+- **Service accounts**: Internal Azure DevOps organization used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
+- **Service principals or managed identities**: Microsoft Entra applications or managed identities added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps organization to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
@@ -153,7 +153,7 @@ Other applications and services can integrate with Azure DevOps. To access your 
 
 - [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) to generate tokens on your behalf for:  
 	- Accessing specific resources or activities, like builds or work items
-	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Microsoft Entra features like multi-factor authentication 
+	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Microsoft Entra features like multifactor authentication 
 	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
 
 - [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth.md) 
