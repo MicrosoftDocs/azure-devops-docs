@@ -184,7 +184,7 @@ jobs:
   dependsOn: A 
   steps:
     - script: echo step 2.1
-      condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+      condition: eq(variables['Build.SourceBranch'], 'refs/heads/main', succeeded())
       
 ```
 
