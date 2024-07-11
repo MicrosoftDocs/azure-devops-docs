@@ -1,5 +1,5 @@
 ---
-title: PR Annotations
+title: Dependency PR Annotation
 author: ncouraud
 ms.author: nicour
 ms.date: 07/11/2024
