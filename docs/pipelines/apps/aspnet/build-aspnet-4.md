@@ -45,9 +45,11 @@ You can also use a [self-hosted agent](../../agents/agents.md#install) to run yo
 
 ::: moniker range="< azure-devops"
 
-Your builds run on a [self-hosted agent](../../agents/agents.md#install). Make sure that you have the necessary version of the Visual Studio installed on the agent.
+Your builds run on a [self-hosted agent](../../agents/agents.md#install). Make sure that you have the necessary version of Visual Studio installed on the agent.
 
-### Build multiple configurations
+::: moniker-end
+
+## Build multiple configurations
 
 You might need to build your app in multiple configurations. The following steps build the example app on four configurations: `Debug, x86`, `Debug, x64`, `Release, x86`, and `Release, x64`.
 
@@ -62,8 +64,6 @@ You might need to build your app in multiple configurations. The following steps
    - Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
 1. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
-
-::: moniker-end
 
 ## Restore dependencies
 

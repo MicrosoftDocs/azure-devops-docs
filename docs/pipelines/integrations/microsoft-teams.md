@@ -18,17 +18,15 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
-The Azure Pipelines app for Microsoft Teams lets you monitor pipeline events. You can set up and get notifications in your Teams channel for pipeline builds, releases, and approvals.  Approvers can also approve releases from within the Teams channel.
+This article shows you how to use the Azure Pipelines app for Microsoft Teams to monitor pipeline events. You can set up and get notifications in your Teams channel for pipeline builds, releases, and approvals. Approvers can also approve releases from within the Teams channel.
 
 > [!NOTE]
-> Notifications aren't supported inside chat or direct messages.
+> Azure Pipelines notifications aren't supported inside Teams chat or direct messages.
 
 ## Prerequisites
 
-You need the following permissions to set up pipeline subscriptions:
-
-- Permission to install an app in a Team in Microsoft Teams.
-- Project Administrator [permissions](../policies/permissions.md) in an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md) and [Pipeline security resources](../security/resources.md).
+- Access to a Team in Microsoft Teams where you can add an app.
+- Project Administrator or Build Administrator [permissions](../policies/permissions.md) in an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md) and [Pipeline security resources](../security/resources.md).
 
 ## Set up the Azure Pipelines app
 
@@ -36,7 +34,7 @@ You need the following permissions to set up pipeline subscriptions:
    
    :::image type="content" source="media/integrations-teams/select-azure-pipelines.png" alt-text="Screenshot of selecting the Apps button, then Azure Pipelines button.":::
 
-1. Select the **Add** dropdown arrow, and then select **Add to a team**.
+1. Select the dropdown arrow next to **Add**, and select **Add to a team**.
  
    :::image type="content" source="media/integrations-teams/open-and-add-to-a-team.png" alt-text="Screenshot of selecting Open button and then Add to a team button.":::
 
@@ -65,15 +63,15 @@ The Azure Pipelines Teams app supports the following commands:
 
 ### Subscribe to pipelines
 
-Use the following commands to subscribe to and monitor all pipelines or only specific pipelines in a project.
+Use the following commands to subscribe to and monitor all pipelines in a project or only specific pipelines.
 
-- **Monitor all pipelines in a project.** The URL can be to your project or any page within your project, except to a pipeline. For example:
+- **All pipelines in a project:** The URL can be to your project or any page within your project, except to a pipeline. For example:
 
   ```
   @azure pipelines subscribe https://dev.azure.com/myorg/myproject/
   ```
 
-- **Monitor a specific pipeline:** The pipeline URL can be to any page within a pipeline that has a `definitionId` or `buildId/releaseId` in the URL. For example:
+- **A specific pipeline:** The pipeline URL can be to any page within a pipeline that has a `definitionId` or `buildId/releaseId` in the URL. For example:
 
   ```
   @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123
@@ -83,25 +81,23 @@ Use the following commands to subscribe to and monitor all pipelines or only spe
 
 When you subscribe to a pipeline, a few subscriptions get created by default without any filters applied. These subscriptions include **Run state changed** and **Run stage waiting for approval** for YAML pipelines, and **Release deployment approval pending** for Classic releases.
 
-You can remove or customize these subscriptions, or add more subscriptions. For example, you might want to get notified only when builds fail or when deployments get pushed to a production environment. The Azure Pipelines app supports filters to customize what you see in your channel.
+You can remove these subscriptions, or add more subscriptions. The Azure Pipelines app also supports filters to customize what you see in your channel. For example, you might want to get notified only when builds fail or when deployments get pushed to a production environment.
 
 To manage your subscriptions, complete the following steps.
 
-1. Run the `@azure pipelines subscriptions` command.
+1. To list all pipelines subscriptions, run the `@azure pipelines subscriptions` command.
 
    :::image type="content" source="media/integrations-teams/subscriptions-list-teams.png" alt-text="Screenshot showing view of list of subscriptions.":::
 
-1. To remove a subscription, select **View all subscriptions**, select **Remove** under the subscription you don't want, and then select **OK**.
+1. To remove a subscription, select **View all subscriptions**. Select **Remove** under any subscription you don't want, and then select **OK**.
 
 1. To add a subscription, select **Add subscription**.
 
-1. Select the event you want to subscribe to, and select **Next**.
-
-1. Select the pipeline you want, and select **Next**.
+1. Select the event and the pipeline you want to subscribe to, and select **Next**.
 
 1. Choose any **Stage** and **Environment** filters you want, select **Submit**, and then select **OK**.
 
-   For example, the following subscription provides notifications only for the **\_default** stage when the **Completed** state is **Failed**.
+   For example, the following subscription provides notifications for the **\_default** stage only when the **Completed** state is **Failed**.
 
    :::image type="content" source="media/integrations-teams/build-failure-notification.png" alt-text="Screenshot showing filters for notifications.":::
 
@@ -110,17 +106,11 @@ To manage your subscriptions, complete the following steps.
 
 ### See approval notifications
 
-To see approval notifications in Teams, make sure you subscribe to the **Run stage waiting for approval** notification for YAML pipelines or the **Release deployment approval pending** notification for Classic releases. These subscriptions are created by default when you subscribe to the pipeline.
+To see approval notifications, make sure you subscribe to the **Run stage waiting for approval** notification for YAML pipelines or the **Release deployment approval pending** notification for Classic releases. These subscriptions are created by default when you subscribe to the pipeline.
 
 If you subscribe to the **Run stage approval completed** notification, you can also see when the stage is approved.
 
 :::image type="content" source="media/integrations-teams/approved-teams.png" alt-text="Card showing approved deployment.":::
-
-The following example subscribes to *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications.
-
-```
-@azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases
-```
 
 > [!NOTE]
 > You can't subscribe to deployment approvals that have the **Revalidate identity of approver before completing the approval** policy applied.
@@ -129,7 +119,7 @@ The following example subscribes to *Release deployment started*, *Release deplo
 
 If you're an approver, you can approve deployments from within your Teams channel. The Azure Pipelines app supports all Azure Pipelines checks and approval scenarios. You can approve requests as an individual or for a team.
 
-Whenever the running of a stage is pending for approval, a notification card with options to **Approve** or **Reject** the request posts in the channel. You can review the details of the request in the notification and take appropriate action.
+Whenever the running of a stage is pending your approval, a notification card with options to **Approve** or **Reject** the request posts in the channel. You can review the details of the request in the notification and take appropriate action.
 
 :::image type="content" source="media/integrations-teams/approve-teams.png" alt-text="Screenshot showing ready for approval notification.":::
 
@@ -150,7 +140,7 @@ Use the `unsubscribe` command to unsubscribe from all pipelines in a project. Th
 > [!IMPORTANT] 
 > Only Project Administrators can run this command.
 
-## Search and share pipeline information using compose extension
+## Use the compose extension
 
 To help users search and share information about pipelines, the Azure Pipelines app for Teams supports the compose extension. You can search for pipelines in a project by pipeline ID or by pipeline name. Users must sign in to the Azure Pipelines project by running `@azure pipelines signin` or by signing in to the compose extension directly.
 
@@ -176,7 +166,7 @@ All notifications for a particular run of a pipeline are linked together.
 
 :::image type="content" source="media/integrations-teams/threads-pipelines-compact-view.png" alt-text="Screenshot showing the compact thread view.":::
 
-Select the compacted thread link to expand the thread.
+To expand the thread, select the compacted thread link.
 
 :::image type="content" source="media/integrations-teams/threads-pipelines-expanded-view.png" alt-text="Screenshot showing the expanded thread view.":::
 
@@ -186,18 +176,16 @@ If you use different emails or tenants for Microsoft Teams and Azure DevOps, fol
 
 |Microsoft Teams |Azure DevOps  |Sign in action |
 |---------|---------|---------|
-|email1@abc.com (tenant 1)        |  email1@abc.com (tenant 1)     | Select **Sign in**        |
-|email1@abc.com (tenant 1)      | email2@pqr.com (tenant 2)       | 1. Sign in to Azure DevOps. <br> 2. In the same browser, start a new tab and go to https://teams.microsoft.com/.<br> 3. Run the `sign in` command and select **Sign in**.        |
-|email1@abc.com (tenant 1)         |  email2@pqr.com (tenant 2)       | 1. Select **Sign in with different email address**.<br> 2. In the email ID picker, use the email2 to sign in.       |
-| email1@abc.com (tenant 1)        | email2@pqr.com (non-default tenant 3)        | Currently not supported.       |
+|email1@abc.com (tenant1)        |  email1@abc.com (tenant1)     | Select **Sign in**        |
+|email1@abc.com (tenant1)      | email2@pqr.com (tenant2)       | 1. Sign in to Azure DevOps. <br> 2. In the same browser, start a new tab and go to https://teams.microsoft.com/.<br> 3. Run the `sign in` command and select **Sign in**.        |
+|email1@abc.com (tenant1)         |  email2@pqr.com (tenant2)       | 1. Select **Sign in with different email address**.<br> 2. In the email ID picker, use the email2 to sign in.       |
+| email1@abc.com (tenant1)        | email2@pqr.com (nondefault tenant3)        | Not supported.       |
 
 ## Troubleshoot authentication issues
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Pipelines signout` command and then run the `@Azure Pipelines signin` command in the channel where the Azure Pipelines app for Microsoft Teams is installed.
 
 Select the **Sign in** button, and complete the sign-in process. Ensure that the directory shown is the same as what you chose in the previous step. 
-
-:::image type="content" source="media/troubleshooting/consent-page-teams.png" alt-text="Screenshot showing consent to the requested app permissions.":::
 
 If these steps don't resolve your authentication issue, reach out to the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

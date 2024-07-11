@@ -30,21 +30,22 @@ Jobs might succeed, fail, be canceled, or not complete. Understanding these outc
 
 The following sections describe the pipeline run process in detail.
 
+<a name="process-the-pipeline"></a>
 ## Pipeline processing
 
 ![Diagram that shows expanding YAML templates.](media/run-expansion.png)
 
-To process a pipeline for a run, Azure Pipelines:
+To process a pipeline for a run, Azure Pipelines first:
 
 1. Expands [templates](templates.md) and evaluates [template expressions](template-expressions.md).
 2. Evaluates dependencies at the [stage](stages.md) level to pick the first stage to run.
 
-For each stage it selects to run, Azure Pipelines:
+Next, for each stage it selects to run, Azure Pipelines:
 
 1. Gathers and validates all job resources for [authorization](approvals.md) to run.
 2. Evaluates [dependencies at the job level](phases.md#dependencies) to pick the first job to run.
 
-For each job selected to run, Azure Pipelines:
+Finally, Azure Pipelines does the following activities for each job selected to run:
 
 1. Expands YAML `strategy: matrix` or `strategy: parallel` [multi-configs](phases.md#parallelexec) into multiple runtime jobs.
 5. Evaluates [conditions](conditions.md) to decide whether the job is eligible to run.
@@ -52,7 +53,7 @@ For each job selected to run, Azure Pipelines:
 
 As runtime jobs complete, Azure Pipelines checks whether there are new jobs eligible to run. Similarly, as stages complete, Azure Pipelines checks if there are any more stages.
 
-Understanding the processing order clarifies why you can't use certain variables in [template parameters](template-parameters.md). The first template expansion step operates only on the text of the YAML file. Runtime variables don't yet exist during that step. After that step, template parameters have been resolved.
+Understanding the processing order clarifies why you can't use certain variables in [template parameters](template-parameters.md). The first template expansion step operates only on the text of the YAML file. Runtime variables don't yet exist during that step. After that step, template parameters are already resolved.
 
 You also can't use [variables](variables.md) to resolve service connection or environment names, because the pipeline authorizes resources before a stage can start running. Stage- and job-level variables aren't available yet. Variable groups are themselves a resource subject to authorization, so their data isn't available when checking resource authorization.
 
@@ -94,6 +95,7 @@ Once an agent accepts a job, it does the following preparation work:
 1. Downloads all the [tasks](tasks.md) needed to run the job and caches them for future use.
 2. Creates working space on disk to hold the source code, artifacts, and outputs used in the run.
 
+<a name="run-each-step"></a>
 ## Step execution
 
 The agent runs steps sequentially in order. Before a step can start, all previous steps must be finished or skipped.
@@ -116,7 +118,7 @@ Write-Host "##vso[task.setVariable variable=myVar]myValue"
 
 ## Result reporting and collection
 
-Each step can report warnings, errors, and failures. The step reports errors and warnings on the pipeline summary page by marking the tasks as succeeded with issues, or reports failures by marking the task as failed. A step fails if it either explicitly reports failure by using a `##vso` command or ends the script with a non-zero exit code.
+Each step can report warnings, errors, and failures. The step reports errors and warnings on the pipeline summary page by marking the tasks as succeeded with issues, or reports failures by marking the task as failed. A step fails if it either explicitly reports failure by using a `##vso` command or ends the script with a nonzero exit code.
 
 As steps run, the agent constantly sends output lines to Azure Pipelines, so you can see a live feed of the console. At the end of each step, the entire output from the step is uploaded as a log file. You can download the log once the pipeline finishes.
 
@@ -128,7 +130,7 @@ The agent can also upload [artifacts](../artifacts/pipeline-artifacts.md) and [t
 
 The agent keeps track of each step's success or failure. As steps succeed with issues or fail, the job's status is updated. The job always reflects the worst outcome from each of its steps. If a step fails, the job also fails.
 
-Before running a step, the agent checks that step's [condition](conditions.md) to determine whether it should run. By default, a step only runs when the job's status is succeeded or succeeded with issues, but you can set other conditions.
+Before the agent runs a step, it checks that step's [condition](conditions.md) to determine whether the step should run. By default, a step only runs when the job's status is succeeded or succeeded with issues, but you can set other conditions.
 
 Many jobs have cleanup steps that need to run no matter what else happens, so they can specify a condition of `always()`. Cleanup or other steps can also be set to run only on cancellation.
 
@@ -136,25 +138,25 @@ A successful cleanup step can't save the job from failing. Jobs can never go bac
 
 ## Timeouts and disconnects
 
-Each job has a timeout. If the job doesn't complete in the specified time, the server cancels the job. The server attempts to signal the agent to stop, and marks the job as canceled. On the agent side, cancellation means canceling all remaining steps and uploading any remaining results.
+Each job has a timeout. If the job doesn't complete in the specified time, the server cancels the job. The server attempts to signal the agent to stop, and marks the job as canceled. On the agent side, cancellation means to cancel all remaining steps and upload any remaining results.
 
-Jobs have a grace period called the cancel timeout in which to complete any cancellation work. You can also mark steps to run even on cancellation. After a job timeout plus a cancel timeout, if the agent doesn't report that work has stopped, the server marks the job as a failure.
+Jobs have a grace period called the cancel timeout in which to complete any cancellation work. You can also mark steps to run even on cancellation. After a job timeout plus a cancel timeout, if the agent doesn't report that work is stopped, the server marks the job as a failure.
 
 Agent machines can stop responding to the server if the agent's host machine loses power or is turned off, or if there's a network failure. To help detect these conditions, the agent sends a heartbeat message once per minute to let the server know it's still operating.
 
-If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent won't come back. The job is marked as a failure, letting the user know they should retry the pipeline.
+If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent is not coming back. The job is marked as a failure, letting the user know they should retry the pipeline.
 
 ::: moniker range=">=azure-devops-2020"
 ## Manage runs through the Azure DevOps CLI
 
 You can manage pipeline runs by using `az pipelines runs` in the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).
 
-The following examples show how to list the pipeline runs in your project, view details about a specific run, and add, list, or delete tags for pipeline runs.
+The following examples show how to list the pipeline runs in your project, view details about a specific run, and manage tags for pipeline runs.
 
 ### Prerequisites
 
 - Azure CLI with the Azure DevOps CLI extension installed as described in [Get started with Azure DevOps CLI](../../cli/index.md). Sign into Azure using `az login`.
-- Set the default organization by using `az devops configure --defaults organization=<YourOrganizationURL>`.
+- The default organization set by using `az devops configure --defaults organization=<YourOrganizationURL>`.
 
 ### List pipeline runs
 

@@ -19,8 +19,6 @@ VM resources can exist in [environments](environments.md), such as Development, 
 
 ## Prerequisites
 
-To add VMs to an environment, you must have the following roles or permissions:
-
 ### [Linux](#tab/linux)
 
 - Access to a source repository that's connected to your pipeline.
@@ -31,7 +29,7 @@ To add VMs to an environment, you must have the following roles or permissions:
 ### [Windows](#tab/windows)
 
 - Access to a source repository that's connected to your pipeline.
-- Access and PowerShell administrator permissions on VMs you want to connect to the environment.
+- Access to and PowerShell administrator permissions on VMs you want to connect to the environment.
 - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in the Azure DevOps project that contains the environment. For more information, see [Pipeline security resources](../security/resources.md).
 - [Administrator role](../agents/pools-queues.md#security) for the *deployment pool*, or set of target servers available to the organization. For more information, see [deployment pool and environment permissions](../policies/permissions.md#deployment-group-permissions).
 
@@ -40,34 +38,34 @@ To add VMs to an environment, you must have the following roles or permissions:
 > [!NOTE]
 > To configure a deployment group agent, or if you see an error when registering a VM environment resource, make sure you set your personal access token (PAT) scope to **All accessible organizations**.
 
-## Create a VM resource
+## Create the environment
 
 Use the following procedure to add a VM resource to an environment. You can use the same process to set up physical machines.
 
-### Create the environment
+### Add a VM resource
 
 1. In your Azure DevOps project, go to **Pipelines** > **Environments** and then select **Create environment** or **New environment**.
-1. On the **New environment** screen, add a **Name** and an optional **Description**.
+1. On the first **New environment** screen, add a **Name** and an optional **Description**.
 1. Under **Resource**, select **Virtual machines**, and then select **Next**.
 
    :::image type="content" source="media/create-environment.png" alt-text="Screenshot that shows adding an environment.":::
 
 ### Copy the registration script
 
-The agent scripts for VM resources are like the scripts for self-hosted agents, and use the same commands. The scripts include an Azure DevOps Personal Access Token (PAT) for the signed-in user, which expires on the day the script is generated.
+The agent scripts for VM resources are like the scripts for self-hosted agents, and use the same commands. The scripts include an Azure DevOps Personal Access Token (PAT) for the signed-in user, which expires three hours after the script is generated.
 
 ### [Linux](#tab/linux)
 
-1. On the next screen, choose Linux under **Operating system**.
+1. On the next **New environment** screen, choose Linux under **Operating system**.
 1. Copy the Linux registration script.
 
-   :::image type="content" source="media/vm-creation-linux.png" alt-text="Screenshot that shows adding a virtual machine.":::    
+   :::image type="content" source="media/vm-creation-linux.png" alt-text="Screenshot that shows adding a virtual machine.":::
 
 The script is the same for all the Linux VMs added to the environment. For more information about installing the agent script, see [Self-hosted Linux agents](../agents/linux-agent.md).
 
 ### [Windows](#tab/windows)
 
-1. On the next screen, choose Windows under **Operating system**.  
+1. On the next **New environment** screen, choose Windows under **Operating system**.
 1. Copy the [PowerShell](/powershell/scripting/overview) registration script.
 
    :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
@@ -180,7 +178,7 @@ jobs:
 
 ## Apply deployment strategy
 
-You can apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` strategy and the `rolling` strategy. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
+You can apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` and the `rolling` strategies. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
 
 ## View deployment history
 

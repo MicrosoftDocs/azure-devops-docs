@@ -120,7 +120,7 @@ You can use scripts to install and run various tests in your pipeline.
 
 ### Run lint tests with flake8
 
-The following YAML code to install or upgrade `flake8` and use it to run lint tests.
+The following YAML code installs or upgrades `flake8` and uses it to run lint tests.
 
 ```yaml
 - script: |
