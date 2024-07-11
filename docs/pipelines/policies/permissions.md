@@ -881,6 +881,14 @@ To change a service connection from restricted to open access, select **More act
 
 ### Set service connection project permissions
 
+You can chare a service connection across multiple projects. Project permissions control which projects can use the service connection. By default, service connections aren't shared with any other projects.
+
+* Only the organization-level administrators from User permissions can share the service connection with other projects.
+* The user who's sharing the service connection with a project must have at least Create service connection permission in the target project.
+* The user who shares the service connection with a project becomes the project-level Administrator for that service connection. The project-level inheritance is set to on in the target project.
+* The service connection name is appended with the project name and it can be renamed in the target project scope.
+* Organization-level administrator can unshare a service connection from any shared project.
+
 Access is restricted to the current project by default. To grant access to other projects in the organization or collection, select **Add projects**.
 
    :::image type="content" source="media/service-connection-project-permissions.png" alt-text="Screenshot of project permissions selection for individual service connections.":::
