@@ -27,6 +27,7 @@ This article shows you how to use the Azure Pipelines app for Microsoft Teams to
 
 - Access to a Team in Microsoft Teams where you can add an app.
 - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md) and [Pipeline security resources](../security/resources.md).
+- **Third party application access via OAuth** enabled in Azure DevOps organizational settings.
 
 ## Set up the Azure Pipelines app
 
