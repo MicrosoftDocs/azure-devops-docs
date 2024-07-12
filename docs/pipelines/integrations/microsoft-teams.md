@@ -31,7 +31,7 @@ This article shows you how to use the Azure Pipelines app for Microsoft Teams to
 
 ## Set up the Azure Pipelines app
 
-1. In Microsoft Teams, select **Apps**, search for *azure pipelines*, and then select **Azure Pipelines**.
+1. In Microsoft Teams, select **Apps**, search for *Azure Pipelines*, and then select **Azure Pipelines**.
    
    :::image type="content" source="media/integrations-teams/select-azure-pipelines.png" alt-text="Screenshot of selecting the Apps button, then Azure Pipelines button.":::
 
