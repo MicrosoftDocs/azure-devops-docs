@@ -8,7 +8,7 @@ description: Connect Azure Pipelines to Microsoft Teams, monitor your pipelines 
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/09/2024
+ms.date: 07/12/2024
 monikerRange: 'azure-devops'
 ---
  

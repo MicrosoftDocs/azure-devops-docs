@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: mijacobs
-ms.date: 07/08/2024
+ms.date: 07/12/2024
 monikerRange: '>= azure-devops-2020'
 ---
 

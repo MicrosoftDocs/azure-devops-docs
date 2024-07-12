@@ -4,7 +4,7 @@ description: Use .NET Framework to build ASP.NET apps in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: devx-track-dotnet
-ms.date: 07/09/2024
+ms.date: 07/12/2024
 monikerRange: '<= azure-devops'
 ---
 

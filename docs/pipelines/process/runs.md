@@ -4,7 +4,7 @@ description: Learn how Azure Pipelines runs jobs, tasks, and scripts.
 ms.topic: conceptual
 ms.custom: devx-track-azurecli
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.date: 07/08/2024
+ms.date: 07/12/2024
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -148,7 +148,7 @@ Agent machines can stop responding to the server if the agent's host machine los
 
 If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent is not coming back. The job is marked as a failure, letting the user know they should retry the pipeline.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">=azure-devops"
 ## Manage runs through the Azure DevOps CLI
 
 You can manage pipeline runs by using [az pipelines runs](/cli/azure/pipelines/runs) in the Azure DevOps CLI. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). For a complete command reference, see [Azure DevOps CLI command reference](/cli/azure/service-page/devops).

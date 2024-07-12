@@ -3,7 +3,7 @@ title: Customize Python pipelines
 description:  See how to use Azure Pipelines to customize, build, test, package, and deliver Python apps and code.
 ms.topic: conceptual
 ms.custom: devx-track-python
-ms.date: 07/09/2024
+ms.date: 07/12/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -140,7 +140,6 @@ The following YAML code installs `pytest` and `pytest-cov` and runs tests, outpu
     pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
   displayName: 'pytest'
 ```
-::: moniker range=">=azure-devops-2020"
 ### Run tests with Tox
 
 Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. The following example uses `tox -e py` to run whichever version of Python is active for the current job.
@@ -186,10 +185,10 @@ Add the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publ
 
 ### Publish code coverage results
 
-Add the [Publish code coverage results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results to the server. You can see coverage metrics in the build summary, and download HTML reports for further analysis.
+Add the [Publish code coverage results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results to the server. You can see coverage metrics in the build summary, and download HTML reports for further analysis.
 
 ```yaml
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
@@ -214,8 +213,6 @@ Then add a custom [script](/azure/devops/pipelines/yaml-schema/steps-script) tha
 ```
 
 You can also use Azure Pipelines to [build an image](containers/build-image.md) for your Python app and [push it to a container registry](containers/push-image.md).
-
-::: moniker-end
 
 ## Related content
 
