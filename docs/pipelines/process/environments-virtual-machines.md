@@ -120,7 +120,7 @@ jobs:
 > [!NOTE]
 > The `resourceType` values like `virtualMachine` are case sensitive. Incorrect casing results in no matching resources found.
 
-You can deploy to specific VMs in the environment by specifying them in `resourceName`. The following example deploys only to the VM resource named `USHAN-PC` in the `VMenv` environment.
+You can deploy to specific VMs in the environment by specifying them in `resourceName`. The following example deploys only to the VM resource named `RESOURCE-PC` in the `VMenv` environment.
 
 ```yaml
 trigger: 
@@ -135,7 +135,7 @@ jobs:
   environment: 
     name: VMenv
     resourceType: virtualMachine
-    resourceName: USHAN-PC # only deploy to the VM resource named USHAN-PC
+    resourceName: RESOURCE-PC # only deploy to the VM resource named RESOURCE-PC
   strategy:
     runOnce:
       deploy:   
