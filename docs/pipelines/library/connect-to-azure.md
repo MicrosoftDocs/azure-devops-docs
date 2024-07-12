@@ -3,9 +3,9 @@ title: Use an Azure Resource Manager service connection
 ms.custom: devx-track-arm-template, arm2024
 description: Learn how to use an Azure Resource Manager service connection to connect Azure Pipelines to Azure services.
 ms.topic: conceptual
-ms.author: ronai
-author: RoopeshNair
-ms.date: 07/02/2024
+ms.author: v-catherbund
+author: cebundy
+ms.date: 07/11/2024
 monikerRange: '<= azure-devops'
 ---
 
