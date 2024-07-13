@@ -41,7 +41,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
 1. Choose an authentication method, and then select **Next**.
 1. Enter the parameters for the service connection. The parameters vary based on the service connection type and authentication method.
 
-    :::image type="content" source="..\release\_img\azure-rm-endpoint\new-azure-rm-connection-01.png alt-text="Screenshot of service connection parameters.":::
+    :::image type="content" source="..\release\_img\azure-rm-endpoint\new-azure-rm-connection-01.png" alt-text="Screenshot of service connection parameters.":::
 
 1. Depending on the service connection type and authentication method, there might be a link to validate the connection. The validation link uses a REST call to the external service with the information that you entered, and indicates whether the call succeeded.
 1. Enter the required **Connection name**. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. 
@@ -198,7 +198,7 @@ Use the following parameters to define and secure a connection to a Microsoft Az
 | Parameter  | Description  |
 |---|--|
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
-| Service Bus Connection string |  Primary or secondary connection string for your queue. For information about how to get the connection string see, [Get the connection string](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queuesg#authenticate-the-app-to-azure).|
+| Service Bus Connection string |  Primary or secondary connection string for your queue. For information about how to get the connection string see, [Get the connection string](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues#authenticate-the-app-to-azure).|
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
@@ -668,6 +668,7 @@ Use the following parameters when you define and secure a connection to a remote
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
+
 For more information, see [SSH task](/azure/devops/pipelines/tasks/reference/ssh-v0) and [Copy files over SSH](/azure/devops/pipelines/tasks/reference/copy-files-over-ssh-v0).
 
 ### Subversion service connection
