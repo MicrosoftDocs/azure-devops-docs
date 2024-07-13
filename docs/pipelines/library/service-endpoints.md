@@ -41,7 +41,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
 1. Choose an authentication method, and then select **Next**.
 1. Enter the parameters for the service connection. The parameters vary based on the service connection type and authentication method.
 
-    :::image type="content" source="media/new-service-connection-01.png" alt-text="Screenshot of new service connection dialog.":::
+    :::image type="content" source="..\release\_img\azure-rm-endpoint\new-azure-rm-connection-01.png alt-text="Screenshot of service connection parameters.":::
 
 1. Depending on the service connection type and authentication method, there might be a link to validate the connection. The validation link uses a REST call to the external service with the information that you entered, and indicates whether the call succeeded.
 1. Enter the required **Connection name**. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. 
@@ -72,8 +72,6 @@ Complete the following steps to edit a service connection.
     :::image type="content" source="../release/_img/azure-rm-endpoint/azure-rm-approvals-checks.png" alt-text="Screenshot of Azure Resource Manager approvals and checks.":::
 
 1. To update the service connection, select **Edit**. The parameters that you can edit depend on the service connection type and authentication method.
-
-    :::image type="content" source="../release/_img/azure-rm-endpoint/azure-rm-edit-connection.png" alt-text="Screenshot of Azure Resource Manager edit connection.":::
 
 1. **Security**, and **Delete** are part of the more options at the top-right corner.
 
@@ -200,7 +198,7 @@ Use the following parameters to define and secure a connection to a Microsoft Az
 | Parameter  | Description  |
 |---|--|
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
-| Service Bus Connection string |  Primary or secondary connection string for your queue. For information about how to get the connection string see, [Get the connection string](azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=connection-string#get-the-connection-string).|
+| Service Bus Connection string |  Primary or secondary connection string for your queue. For information about how to get the connection string see, [Get the connection string](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queuesg#authenticate-the-app-to-azure).|
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
@@ -397,7 +395,7 @@ Then, complete the following steps to register your GitHub account in your profi
 2. Choose **Personal access tokens**.
 3. Select **Add** and enter the information required to create the token.
 
-### Incoming WebHook
+### Incoming WebHook service connection
 
 Use the following parameters to create an incoming Webhook service connection.
 
@@ -660,8 +658,8 @@ When creating a service connection to a Service Fabric cluster, you have three o
 
 Use the following parameters when you define and secure a connection to a remote host using Secure Shell (SSH).
 
-| Parameter  | Description  |
-|------------------------|----------|
+|  Parameter  | Description  |
+|-------------------------------|-------------------|
 | Host name  |  Required. The name of the remote host machine or the IP address. |
 | Port number |  Required. The port number of the remote host machine. The default is port 22. |
 | Private Key |  The entire contents of the private key file if using this type of authentication.|
