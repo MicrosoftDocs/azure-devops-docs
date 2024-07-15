@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you don't have to use Azure services with Azure Pipelines, you can use Azure Pipelines to integrate your CI/CD process with most Azure services. Azure Pipelines CI/CD helps you take advantage of your Azure services.
+Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you don't have to use Azure services with Azure Pipelines, you can use Azure Pipelines to integrate your CI/CD process with most Azure services. Azure Pipelines CI/CD helps you take the best advantage of your Azure services.
 
 The following articles describe how different Azure services support CI and CD with Azure Pipelines.
 

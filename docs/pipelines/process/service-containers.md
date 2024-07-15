@@ -84,9 +84,9 @@ steps:
     echo $AGENT_SERVICES_REDIS_PORTS_6379
 ```
 
-This pipeline starts the latest `nginx` containers. Since the job isn't running in a container, there's no automatic name resolution. Instead, you can reach services by using `localhost`. The preceding example provides the port explicitly: `8080:80`.
+This pipeline starts the latest `nginx` containers. Since the job isn't running in a container, there's no automatic name resolution. Instead, you can reach services by using `localhost`. The preceding example explicitly provides the `8080:80` port.
 
-An alternative approach is to let a random port get assigned dynamically at runtime. You can then access these dynamic ports by using [variables](variables.md). In a Bash script, you can access variables by using the process environment. These variables take the form: `agent.services.<serviceName>.ports.<port>`.
+An alternative approach is to let a random port get assigned dynamically at runtime. You can then access these dynamic ports by using [variables](variables.md). These variables take the form: `agent.services.<serviceName>.ports.<port>`. In a Bash script, you can access variables by using the process environment.
 
 In the preceding example, `redis` is assigned a random available port on the host. The `agent.services.redis.ports.6379` variable contains the port number.
 
@@ -177,9 +177,10 @@ If any service container specifies a [HEALTHCHECK](https://docs.docker.com/engin
 
 The following example has a Django Python web container connected to PostgreSQL and MySQL database containers.
 
-- The PostgreSQL database is the primary database, and its container is named `db`. The `db` container uses volume `/data/db:/var/lib/postgresql/data`, and there are three database variables passed to the container via `env`.
-  The `mysql` container uses port `3306:3306`, and there are also database variables passed via `env`.
-  The `web` container is open with port `8000`.
+- The PostgreSQL database is the primary database, and its container is named `db`.
+- The `db` container uses volume `/data/db:/var/lib/postgresql/data`, and there are three database variables passed to the container via `env`.
+- The `mysql` container uses port `3306:3306`, and there are also database variables passed via `env`.
+- The `web` container is open with port `8000`.
 
 In the steps, `pip` installs dependencies and then Django tests run.
 
