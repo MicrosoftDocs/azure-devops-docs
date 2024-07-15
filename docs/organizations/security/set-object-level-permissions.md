@@ -48,167 +48,26 @@ To access the Permissions dialog for an object, follow these steps:
 
 You can set permissions at the project-level and organization/collection-level for some general items, such as creating, deleting, and renaming projects. The following table provides information about setting permissions at the object-level for Dashboards, Wiki, and Analytic views.
 
-:::row:::
-   :::column span="1":::
-   **Object**
-   :::column-end:::
-   :::column span="1":::
-   **Default group membership**
-   :::column-end:::
-   :::column span="1":::
-   **How to access security**
-   :::column-end:::
-   :::column span="1":::
-   **Inherited?**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Dashboards](../../report/dashboards/dashboard-permissions.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor
-   :::column-end:::
-   :::column span="1":::
-   Open **Dashboards**, select the area path, and then  **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   ✔️ (project settings for team dashboard)
-   :::column-end:::
-:::row-end:::
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="1":::
-   [Wiki](../../project/wiki/manage-readme-wiki-permissions.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor
-   :::column-end:::
-   :::column span="1":::
-   Open the wiki, choose **More** ... > **Wiki security**. For more information, see [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Analytic views](../../report/powerbi/analytics-security.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor and Basic
-   :::column-end:::
-   :::column span="1":::
-   Open the analytic view, choose **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+|Object  |Default group membership  |How to access security|Inherited?  |
+|---------|---------|---------|---------|
+|[Dashboards](../../report/dashboards/dashboard-permissions.md)| Contributor  | Open **Dashboards**, select the area path, and then  **More** ... > **Security**. | ✔️ (project settings for team dashboard)|
+|[Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |Contributor |Open the wiki, choose **More** ... > **Wiki security**. For more information, see [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md). | no        |
+|[Analytic views](../../report/powerbi/analytics-security.md) | Contributor & Basic|Open the analytic view, choose **More** ... > **Security**.  | no |
+
 
 ## Set permissions for Boards objects
 
 The following table provides information about setting permissions at the object-level for area and iteration paths, work items, and more.
 
-:::row:::
-   :::column span="1":::
-   **Object**
-   :::column-end:::
-   :::column span="1":::
-   **Default group membership**
-   :::column-end:::
-   :::column span="1":::
-   **How to access security**
-   :::column-end:::
-   :::column span="1":::
-   **Inherited?**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Area path](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Open **Project settings** > **Project configuration** > **Areas** > next to an area, **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-    ✔️ (child node from parent node)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Iteration path](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Open **Project settings** > **Project configuration** > **Iterations** > next to an iteration, **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-    ✔️ (child node from parent node)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-    [Work item](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor
-   :::column-end:::
-   :::column span="1":::
-   Open **Project settings** > **Project configuration** > **Areas** > **Area path** > the work item.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Work item query and query folder](../../boards/queries/set-query-permissions.md)
-   :::column-end:::
-   :::column span="1":::
-   Creator of the query or folder or [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Open the work item query or query folder > **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Delivery Plans](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups) or creator of the Delivery Plan.
-   :::column-end:::
-   :::column span="1":::
-   Open **Boards** > **Delivery Plans** > next to a delivery plan, **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Process](../../boards/get-started/permissions-access-boards.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Select **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-    ✔️ (from Organization/Collection settings)
-   :::column-end:::
-:::row-end:::
+
+|Object  |Default group membership  |How to access security  |Inherited?  |
+|---------|---------|---------|---------|
+|[Area path](set-permissions-access-work-tracking.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) |Open **Project settings** > **Project configuration** > **Areas** > next to an area, **More** ... > **Security**.         | ✔️ (child node from parent node) |
+|[Iteration path](set-permissions-access-work-tracking.md)    | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        | Open **Project settings** > **Project configuration** > **Iterations** > next to an iteration, **More** ... > **Security**.        | ✔️ (child node from parent node)    |
+|[Work item](set-permissions-access-work-tracking.md)    | Contributor        | Open **Project settings** > **Project configuration** > **Areas** > **Area path** > the work item.        | no        |
+|[Work item query and query folder](../../boards/queries/set-query-permissions.md)  | Creator of the query or folder or [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        |Open the work item query or query folder > **More** ... > **Security**.         | no        |
+|[Delivery Plans](set-permissions-access-work-tracking.md)    | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) or creator of the Delivery Plan  |Open **Boards** > **Delivery Plans** > next to a delivery plan, **More** ... > **Security**.         | no        |
+|[Process](../../boards/get-started/permissions-access-boards.md)  | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        | Select **More** ... > **Security**.        | ✔️ (from Organization/Collection settings)        |
 
 > [!NOTE]
 > Work item tags - permissions get set at the project level, **Create tag definition**. Work item tags don't qualify as an object, they're defined through work items.
