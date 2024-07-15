@@ -1,82 +1,75 @@
 ---
-title: Secure pipeline resources
-description: Permissions and approvals on important resources.
+title: Resource security
+description: Learn about permissions, checks, and approvals for Azure Pipeline resources.
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
 ms.reviewer: vijayma
-ms.date: 06/10/2024
+ms.date: 07/15/2024
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Secure pipeline resources
+# Resource security
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Azure Pipelines provides robust security features to protect your pipelines and resources. When YAML pipelines run, access to resources goes through a system called [checks](../process/approvals.md). Checks can suspend or even fail a pipeline run to keep resources safe. A pipeline can access two types of resources, [protected](#protected-resources) and [open](#open-resources).
+This article describes Azure Pipelines security features that protect your pipelines and resources. Pipelines can access two types of resources, open or protected.
+
+Artifacts, pipelines, test plans, and work items are considered *open resources* that don't have the same restrictions as protected resources. You can fully automate workflows by subscribing to trigger events on open resources. For more information about protecting open resources, see [Protect projects](misc.md#protect-projects).
+
+Pipelines use permissions and approval checks to access *protected resources* during pipeline runs. To keep protected resources safe, checks can suspend or fail a pipeline run.
 
 ## Protected resources
 
-Protected resources allow you to apply approvals and checks to limit access. Examples include [agent pools](../agents/agents.md), [secret variables in variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), [service connections](../library/service-endpoints.md), [environments](../process/environments.md), and [repositories](../process/repository-resource.md).
+Protected means that only specific users and pipelines within the project can access the resource. Examples of protected resources include:
 
-"Protected" means only specific users and pipelines within the project have access. You can define checks that must be satisfied before a stage consuming a protected resource can start. For example, manual approval before using a protected resource.
+- [Agent pools](../agents/agents.md)
+- [Secret variables in variable groups](../library/variable-groups.md)
+- [Secure files](../library/secure-files.md)
+- [Service connections](../library/service-endpoints.md)
+- [Environments](../process/environments.md)
+- [Repositories](../process/repository-resource.md)
 
-Azure Pipelines requires the **Administrator** role when opening up access to a resource to all pipelines for all protected resources except for Environments. For Environments, you need the **Creator** role.
+You can define checks that must be satisfied before a stage that consumes a protected resource can start. For example, you can require manual approval before a stage can use the protected resource.
 
-For more information, see [About pipeline resources](../process/about-resources.md) and [Add resource protection](../library/add-resource-protection.md).
+### Repository protection
 
-### Repository resources
+You can optionally protect repositories by limiting the scope of the Azure Pipelines access token. You provide agents with the access token only for repositories explicitly mentioned in the pipeline's `resources` section.
 
-- Repositories can optionally be protected.
-- By limiting the scope of the Azure Pipelines access token to specific repositories, you add extra protections.
-- The access token given to agents only has access to explicitly mentioned repositories in the pipeline’s `resources` section.
-- Repositories added to the pipeline need authorization from a user with **Contribute** access to the repository.
+Adding a repository to a pipeline requires authorization from a user with **Contribute** access to the repository. For more information, see [Protect a repository resource](../process/repository-resource.md).
 
-### Permissions
+## Permissions
 
-- **User permissions:**
-  - User permissions are the frontline of defense for protected resources.
-  - Only grant permissions to users who require them.
-  - Members of the user role for a resource can manage approvers and checks.
+There are two types of permissions to protected resources, *user permissions* and *pipeline permissions*.
 
-    ![Screenshot of user permissions on pipelines](media/user-permissions.png)
+User permissions are the first line of defense for protected resources. You should grant permissions only to users who require them. Members of the **User** role for a resource can manage approvals and checks.
 
-- **Pipeline permissions:**
-  - Pipeline permissions protect against copying protected resource names to other pipelines.
-  - Disable the option to grant access to "all pipelines" for each protected resource.
-  - Explicitly grant access to specific pipelines you trust.
+Pipeline permissions protect against copying protected resources to other pipelines. You must have the **Administrator** role to enable access to a protected resource across all pipelines in a project.
 
-    ![Screenshot of pipeline permissions](media/pipeline-permissions.png)
+![Screenshot of user and pipeline permissions.](media/pipeline-permissions.png)
 
-## Open resources
+To manage pipeline permissions, explicitly grant access to specific pipelines you trust. Make sure not to enable **Open access**, which allows all pipelines in the project to use the resource. For more information, see [About pipeline resources](../process/about-resources.md) and [Add resource protection](../library/add-resource-protection.md).
 
-- Artifacts, pipelines, test plans, and work items are considered "open" resources.
-- They don't have the same restrictions as protected resources.
-- You can fully automate workflows by subscribing to trigger events on open resources.
-
-For more information about which pipelines can access what resources in the section on [projects](projects.md).
 
 ## Checks
 
-When you're securing your protected resources in YAML pipelines, relying solely on user and pipeline permissions isn’t sufficient, which is where **checks** come into play. Let’s explore them in more detail:
-
-- **Manual approval check:**
-  - Whenever a YAML pipeline uses a protected resource, it can be blocked until you manually approve it.
-  - This gives you the chance to review the code and ensure it’s coming from the correct branch or source.
-  - Manual approval provides an extra layer of security before proceeding with the pipeline run.
-- **Protected branch check:**
-  - If you have manual code review processes for specific branches, you can extend this protection to pipelines.
-  - Configure a protected branch check for each of your resources.
-  - This automatically prevents your pipeline from running on top of any user branches.
-  - It ensures that only authorized branches can access protected resources.
-- **Protected resource check:**
-  - You can add checks to various resources, including environments, service connections, repositories, variable groups, agent pools, and secure files.
-  - These checks specify conditions that must be satisfied before a stage in any pipeline can consume a resource.
-  - For example, you might require specific approvals or other criteria before using a protected resource.
-
-For more information, see [Checks and approvals](../process/approvals.md).
+User and pipeline permissions don't completely secure protected resources in pipelines. You can also add *checks* that specify conditions to be satisfied before a stage in any pipeline can consume the resource. You can require specific approvals or other criteria before pipelines can use the protected resource. For more information, see [Define approvals and checks](../process/approvals.md).
 
 ![Screenshot of configuring checks.](media/configure-checks.png)
 
-## Next steps
+### Manual approval check
+
+You can block pipeline requests to use a protected resource until manually approved by specified users or groups. This check gives you the chance to review the code and provides an extra layer of security before proceeding with a pipeline run.
+
+### Protected branch check
+
+If you have manual code review processes for specific branches, you can extend this protection to pipelines. Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches.
+
+### Business Hours check
+
+Use this check to ensure that a pipeline deployment starts within a specified day and time window.
+
+## Next step
 
 > [!div class="nextstepaction"]
-> [Group resources into a project structure](projects.md).
+> [Group resources into a project structure](projects.md)
+
