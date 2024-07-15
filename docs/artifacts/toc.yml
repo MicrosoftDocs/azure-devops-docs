@@ -203,7 +203,7 @@
     - name: Search for packages in upstream sources
       displayName: search packages, upstreams
       href: how-to/search-upstream.md
-    - name: Configure upstream behavior
+    - name: Safeguard against malicious public packages
       displayName: upstreams, behavior, configure upstreams
       href: concepts/upstream-behavior.md
 - name: Artifacts in Azure Pipelines
