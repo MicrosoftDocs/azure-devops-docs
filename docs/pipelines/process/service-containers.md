@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per job. For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
 
-A container provides a simple and portable way to run a service that your pipeline depends on. A *service container* lets you automatically create, network, and manage the lifecycle of a containerized service. Each service container is accessible only to the [job](phases.md) that requires it. Service containers work with any kind of job, but they're most commonly used with [container jobs](container-phases.md).
+A container provides a simple and portable way to run a service that your pipeline depends on. A *service container* lets you automatically create, network, and manage the lifecycle of a containerized service. Each service container is accessible only to the [job](phases.md) that requires it. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
 
 ## Requirements
 
@@ -169,7 +169,7 @@ services:
 
 Service containers share the same container resources as container jobs. This means that you can use the same [startup options](container-phases.md?tabs=yaml#options).
 
-## Healthcheck
+## Health check
 
 If any service container specifies a [HEALTHCHECK](https://docs.docker.com/engine/reference/builder/#healthcheck), the agent can optionally wait until the container is healthy before running the job.
 

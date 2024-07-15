@@ -41,7 +41,7 @@ Adding a repository to a pipeline requires authorization from a user with **Cont
 
 There are two types of permissions to protected resources, *user permissions* and *pipeline permissions*.
 
-User permissions are the first line of defense for protected resources. You should grant permissions only to users who require them. Members of the **User** role for a resource can manage approvals and checks.
+User permissions are the frontline of defense for protected resources. You should grant permissions only to users who require them. Members of the **User** role for a resource can manage approvals and checks.
 
 Pipeline permissions protect against copying protected resources to other pipelines. You must have the **Administrator** role to enable access to a protected resource across all pipelines in a project.
 
