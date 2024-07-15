@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per job. For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
 
-A container provides a simple and portable way to run a service that your pipeline depends on. A *service container* lets you automatically create, network, and manage the lifecycle of a containerized service. Each service container is accessible only to the [job](phases.md) that requires it. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
+A *container* provides a simple and portable way to run a service that your pipeline depends on. A *service container* lets you automatically create, network, and manage the lifecycle of a containerized service. Each service container is accessible only to the [job](phases.md) that requires it. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
 
 ## Requirements
 
@@ -84,7 +84,7 @@ steps:
     echo $AGENT_SERVICES_REDIS_PORTS_6379
 ```
 
-This pipeline starts the latest `nginx` containers. Since the job isn't running in a container, there's no automatic name resolution. Instead, you can reach services by using `localhost`. The preceding example explicitly provides the `8080:80` port.
+The preceding pipeline starts the latest `nginx` containers. Since the job isn't running in a container, there's no automatic name resolution. Instead, you can reach services by using `localhost`. The example explicitly provides the `8080:80` port.
 
 An alternative approach is to let a random port get assigned dynamically at runtime. You can then access these dynamic ports by using [variables](variables.md). These variables take the form: `agent.services.<serviceName>.ports.<port>`. In a Bash script, you can access variables by using the process environment.
 
@@ -124,7 +124,7 @@ steps:
 
 ## Ports
 
-When you invoke a container resource or an inline container, you can specify an array of `ports` to expose on the container.
+When you invoke a container resource or an inline container, you can specify an array of `ports` to expose on the container, as in the following example.
 
 ```yaml
 resources:
@@ -184,7 +184,7 @@ The following example has a Django Python web container connected to PostgreSQL 
 
 In the steps, `pip` installs dependencies and then Django tests run.
 
-To set up a working example, you need a [Django site set up with two databases](https://docs.djangoproject.com/en/3.2/topics/db/multi-db/). The example assumes your *manage.py* file is in the root directory and your Django project is also within that directory. You might need to update the `/__w/1/s/` path in `/__w/1/s/manage.py test`.
+To set up a working example, you need a [Django site set up with two databases](https://docs.djangoproject.com/en/3.2/topics/db/multi-db/). The example assumes your *manage.py* file is in the root directory and your Django project is also within that directory. If not, you might need to update the `/__w/1/s/` path in `/__w/1/s/manage.py test`.
 
 ```yaml
 resources:

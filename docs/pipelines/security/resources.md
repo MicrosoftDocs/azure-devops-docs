@@ -16,7 +16,7 @@ This article describes Azure Pipelines security features that protect your pipel
 
 Artifacts, pipelines, test plans, and work items are considered *open resources* that don't have the same restrictions as protected resources. You can fully automate workflows by subscribing to trigger events on open resources. For more information about protecting open resources, see [Protect projects](misc.md#protect-projects).
 
-Pipelines use permissions and approval checks to access *protected resources* during pipeline runs. To keep protected resources safe, checks can suspend or fail a pipeline run.
+Permissions and approval checks allow pipelines to access *protected resources* during pipeline runs. To keep protected resources safe, checks can suspend or fail a pipeline run.
 
 ## Protected resources
 
@@ -29,7 +29,7 @@ Protected means that only specific users and pipelines within the project can ac
 - [Environments](../process/environments.md)
 - [Repositories](../process/repository-resource.md)
 
-You can define checks that must be satisfied before a stage that consumes a protected resource can start. For example, you can require manual approval before a stage can use the protected resource.
+You can define checks that must be satisfied before a stage that consumes a protected resource can start. For example, you can require manual approval before the stage can use the protected resource.
 
 ### Repository protection
 

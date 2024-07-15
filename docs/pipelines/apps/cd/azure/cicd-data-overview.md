@@ -41,7 +41,9 @@ Continuous integration and continuous delivery (CI/CD) is a software development
 
 Building machine learning models is similar to traditional software development in that data scientists write code to train and score machine learning models. But unlike traditional software based on code, data science machine learning models are based on both code, such as algorithms and hyperparameters, and the data used to train the models. Most data scientists say they spend 80% of their time doing data preparation, cleaning, and feature engineering.
 
-To ensure the quality of machine learning models, techniques such as A/B testing are also used to compare and maintain model performance. A/B testing usually uses one control model and one or more treatment models. Multiple machine learning models might be used concurrently, adding another layer of complexity for the CI/CD of machine learning models. A CI/CD data pipeline is crucial for the data science team to deliver quality machine learning models to the business in a timely manner.
+To ensure the quality of machine learning models, techniques such as A/B testing are also used to compare and maintain model performance. A/B testing usually uses one control model and one or more treatment models.
+
+Multiple machine learning models might be used concurrently, adding another layer of complexity for the CI/CD of machine learning models. A CI/CD data pipeline is crucial for the data science team to deliver quality machine learning models to the business in a timely manner.
 
 ## Next steps
 > [!div class="nextstepaction"]

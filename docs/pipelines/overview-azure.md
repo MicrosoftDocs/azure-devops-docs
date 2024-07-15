@@ -47,7 +47,7 @@ The following articles describe how different Azure services support CI and CD w
 **Azure Monitor**
 - [Query Azure Monitor Alerts](process/approvals.md#query-azure-monitor-alerts)
 
-**Azure MySQL Database**
+**Azure Database for MySQL - Flexible Server**
 - [Azure Pipelines for Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/azure-pipelines-deploy-database-task)
 
 **Azure Service Fabric**
