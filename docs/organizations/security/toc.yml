@@ -271,7 +271,7 @@
   - name: Resolve connection issues
     displayName: problem, project, access, organization
     href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Resolve 'TF31002: Unable to connect'
+  - name: 'Resolve TF31002: Unable to connect'
     displayName: error, troubleshoot, permission, credentials, account, license
     href: ../projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/security/toc.json
 - name: Billing

@@ -214,7 +214,7 @@ For more information, see [Common service connection types](../../pipelines/libr
 - **Scope [Azure Resource Manager](/azure/azure-resource-manager/management/overview) service connections:**
   - To limit access, scope your service connections to specific resources and groups. Avoid granting broad contributor rights across the entire Azure subscription.
   - Use workload identity federation for authentication. This allows secret-free service connections in Azure Pipelines.
-- **[Use workload identity federation](../../pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation):**
+- **[Use workload identity federation](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation):**
   - Workload identity federation uses OpenID Connect (OIDC) to authenticate with Azure resources without using secrets.
   - You can create workload identity federation automatically or manually. Consider this approach if:
     - You have the Owner role for your Azure subscription.
