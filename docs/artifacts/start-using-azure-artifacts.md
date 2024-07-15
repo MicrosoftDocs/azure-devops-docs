@@ -23,7 +23,7 @@ Azure Artifacts enables developers to efficiently manage all their dependencies 
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
 > [!NOTE]
-> If you expect to exceed the allocated 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
+> The free tier is designed to help you assess if Azure Artifacts suits your workflow. As your organization begins to handle more critical tasks, we recommend that you [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ::: moniker range="azure-devops"
 
