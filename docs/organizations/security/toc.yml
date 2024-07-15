@@ -16,7 +16,7 @@
   - name: Request change in permissions
     displayName: security, role, refresh, object, collection
     href: request-changes-permissions.md
-  - name: Add or remove users or groups
+  - name: Manage users or groups
     href: add-remove-manage-user-group-security-group.md
   expanded: true
 - name: Access levels and Stakeholder access
@@ -47,7 +47,7 @@
     - name: Connect organization to Microsoft Entra ID
       displayName: link, attach, security
       href: ../accounts/connect-organization-to-azure-ad.md
-    - name: Add or delete users in Microsoft Entra ID
+    - name: Manage users in Microsoft Entra ID
       displayName: create, remove, account
       href: /azure/active-directory/fundamentals/add-users-azure-active-directory?toc=/azure/devops/organizations/security/toc.json
     - name: Add Active Directory / Microsoft Entra security groups to built-in security groups
@@ -76,9 +76,7 @@
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
     href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
-- name: Billing
-  href: ../billing/toc.yml
-- name: Authenticate, PATs, & secure applications
+- name: Authenticate, use PATs, & secure applications
   items:
   - name: About security, authentication, & authorization
     displayName: concepts, understand, credentials, accounts, authorization, policies
@@ -171,6 +169,11 @@
     - name: Credential storage (cloud)
       displayName: password, user, name, token, safety
       href: credential-storage.md
+- name: Secure Azure Artifacts
+  items:
+  - name: Set feed permissions
+    displayName: artifact, create, settings
+    href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/security/toc.json
 - name: Secure Azure Boards
   items:
   - name: Set work tracking & plan permissions
@@ -180,24 +183,9 @@
     href: ../settings/add-team-administrator.md?toc=/azure/devops/organizations/security/toc.json
   - name: Set query permissions
     href: ../../boards/queries/set-query-permissions.md?toc=/azure/devops/organizations/security/toc.json
-- name: Secure Azure Repos
-  items:
-  - name: Default Git repository and branch permissions
-    href: default-git-permissions.md
-  - name: Set Git repository permissions
-    displayName: settings, access, security
-    href: ../../repos/git/set-git-repository-permissions.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Set Git branch permissions
-    displayName: settings, access, security
-    href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Default TFVC permissions
-    href: default-tfvc-permissions.md
-  - name: Set TFVC repository permissions
-    displayName: settings, access, security
-    href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Download repository permissions report
-    displayName: json
-    href: download-permissions-report.md
+  - name: Default permissions and access to Azure Boards
+    displayName: settings, access, security, default, permissions
+    href: ../../boards/get-started/permissions-access-boards.md?toc=/azure/devops/organizations/security/toc.json
 - name: Secure Azure Pipelines
   items:
   - name: About pipeline security roles
@@ -227,16 +215,29 @@
   - name: Download release permissions report
     displayName: json
     href: download-permissions-report-release.md
+- name: Secure Azure Repos
+  items:
+  - name: Default Git repository and branch permissions
+    href: default-git-permissions.md
+  - name: Set Git repository permissions
+    displayName: settings, access, security
+    href: ../../repos/git/set-git-repository-permissions.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Set Git branch permissions
+    displayName: settings, access, security
+    href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Default TFVC permissions
+    href: default-tfvc-permissions.md
+  - name: Set TFVC repository permissions
+    displayName: settings, access, security
+    href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Download repository permissions report
+    displayName: json
+    href: download-permissions-report.md
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing
     displayName: create, update, add, user, group, security, settings
     href: set-permissions-access-test.md
-- name: Secure Azure Artifacts
-  items:
-  - name: Set package feed permissions
-    displayName: artifact, create, settings
-    href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/security/toc.json
 - name: Secure on-premises deployments
   items:
   - name: Set up secure sockets layer
@@ -270,34 +271,8 @@
   - name: Resolve connection issues
     displayName: problem, project, access, organization
     href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/security/toc.json
-  - name: 'TF31002: Unable to connect'
+  - name: Resolve 'TF31002: Unable to connect'
     displayName: error, troubleshoot, permission, credentials, account, license
     href: ../projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/security/toc.json
-- name: Reference
-  items:
-  - name: Default permissions
-    displayName: security, group, role, Basic, administrator
-    href: permissions-access.md
-  - name: Permission lookup guide
-    displayName: index, reference, manage, roles, groups
-    href: permissions-lookup-guide.md
-  - name: Permissions & groups
-    href: permissions.md
-  - name: Security management tools
-    href: security-tools-reference.md
-  - name: Security namespaces & permissions
-    href: namespace-reference.md
-  - name: Manage security groups with CLI
-    href: add-manage-security-groups.md
-  - name: Manage permissions with CLI
-    href: manage-tokens-namespaces.md
-  - name: Enable DevSecOps with Azure and GitHub
-    href: /devops/devsecops/enable-devsecops-azure-github
-- name: Resources
-  items:
-  - name: Get started
-    href: ../../get-started/index.yml
-  - name: Settings & Usage
-    href: ../index.yml
-  - name: DevOps Resource Center
-    href: /devops/
+- name: Billing
+  href: ../billing/toc.yml
