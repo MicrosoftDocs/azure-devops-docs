@@ -6,7 +6,7 @@ ms.subservice: azure-devops-security
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/03/2024
+ms.date: 07/16/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,13 +14,14 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In the event of a Personal Access Token (PAT) being compromised, it is crucial to act swiftly. Administrators have the capability to revoke a user's PAT as a security measure to safeguard the organization. Additionally, disabling a user's account will also revoke their PAT. There's a delay,up to one hour, before the PAT becomes inactive. This latency period persists until the disable or delete operation is fully processed in Microsoft Entra ID.
+If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT as a security measure to safeguard the organization. Additionally, disabling a user's account also revokes their PAT. There's a delay, up to one hour, before the PAT becomes inactive. This latency period persists until the disable or delete operation is fully processed in Microsoft Entra ID.
 
 ## Prerequisites
 
 **Access level:** [**Organization owner**](../security/look-up-organization-owner.md) or [member of the **Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md)
 
-For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
+> [!TIP]
+> For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
 ## Revoke PATs
 
@@ -42,11 +43,19 @@ A FedAuth token gets issued when you sign in. It's valid for a seven-day sliding
 
 Users can choose an expiry date for their personal access token, not to exceed one year. We recommend you use shorter time periods, generating new PATs upon expiry. Users receive a notification email one week before token expiry. Users can generate a new token, extend expiry of the existing token, or change the scope of the existing token, if needed.
 
+:::moniker range="azure-devops"
+
+## Auditing logs
+
+If your organization is connected to Microsoft Entra ID, you have access to audit logs that track various events, including permissions changes, deleted resources, and log access, among other things. If you need to check for revocations or investigate any activity, the audit logs are a valuable resource. For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md).
+
+:::moniker-end
+
 ## Frequently asked questions (FAQs)
 
-### Q: What if a user leaves my company?
+### Q: What happens to a PAT if a user leaves my company?
 
-A: Once a user's removed from Microsoft Entra ID, the PATs and FedAuth tokens invalidate within an hour, since the refresh token is valid only for one hour.
+A: Once a user gets removed from Microsoft Entra ID, the PATs and FedAuth tokens invalidate within an hour, since the refresh token is valid only for one hour.
 
 ### Q: Should I revoke JSON web tokens (JWTs)?
 
