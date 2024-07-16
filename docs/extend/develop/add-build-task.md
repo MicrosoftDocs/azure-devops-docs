@@ -44,7 +44,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 > The dev machine must run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of `azure-pipelines-task-lib`. Update your task.json file as per the following command:
 >```
 >"execution": {
->    "Node16": {
+>    "Node20": {
 >      "target": "index.js"
 >    }
 >  }
@@ -150,7 +150,7 @@ Now that the scaffolding is complete, we can create our custom task.
         }
     ],
     "execution": {
-        "Node": {
+        "Node20": {
             "target": "index.js"
         }
     }
@@ -764,6 +764,7 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## FAQs
+
 See the following frequently asked questions (FAQs) about adding custom build or release tasks in extensions for Azure DevOps.
 
 ### Q: How can I restrict Azure Pipelines commands usage for task?
@@ -813,6 +814,48 @@ A: We don't support the automatic deletion of tasks. Automatic deletion isn't sa
 ### Q: How can I upgrade a task to the latest Node?
 
 A: We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 16](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md).
+
+
+
+As Microsoft Hosted agents and various Azure DevOps Server versions have different lifecycles, there can be different Node runner versions installed depending on where a task is running. To be able to run the same task on agents with different Node runner versions, task.json can contain multiple execution sections. In the following example, Azure Pipeline agents which include the Node 16 runner will choose it by default, and those which don't will fall back to the Node 10 implementation.
+
+```nodejs
+  "execution": {
+    "Node10": {
+      "target": "bash.js",
+      "argumentFormat": ""
+    },
+    "Node16": {
+      "target": "bash.js",
+      "argumentFormat": ""
+    }
+```
+
+To upgrade your tasks:
+
+* Test your task(s) on the various Node runner versions to ensure your code behaves as expected.
+* In your task's execution section, update from `Node` or `Node10` to `Node20`.
+* To support older server versions, you should leave the `Node`/`Node10` target. Older Azure DevOps Server versions may not have the latest Node runner version included.
+* You can choose to share the entry point defined in the target or have targets optimized to the Node version used.
+
+   ```nodejs
+   "execution": {
+     "Node10": {
+       "target": "bash10.js",
+       "argumentFormat": ""
+   },
+   "Node16": {
+     "target": "bash16.js",
+     "argumentFormat": ""
+   },
+   "Node20": {
+     "target": "bash20.js",
+     "argumentFormat": ""
+   }
+   ```
+   
+> [!IMPORTANT]
+> Not adding support for the Node 20 runner will cause tasks to fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
 
 ## Related articles
 

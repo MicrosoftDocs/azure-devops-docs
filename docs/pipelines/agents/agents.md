@@ -91,7 +91,7 @@ After you've installed the agent on a machine, you can install any other softwar
 
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
-All official Azure DevOps tasks use Node 10 as a universal handler, however, customers might still use custom tasks
+All official Azure DevOps tasks use Node 20 as a universal handler, however, customers might still use custom tasks
 that use the outdated Node 6 library. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
 
 * Manually install the Node 6 runner. For more information on manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
