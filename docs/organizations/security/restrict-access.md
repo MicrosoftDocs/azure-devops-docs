@@ -32,11 +32,11 @@ Managing permissions for a small number of users individually might seem feasibl
 
 As an administrator or account owner, delegating administrative tasks to team members who oversee specific areas is a strategic approach. The primary built-in roles equipped with predefined permissions and role assignments include:
 
-**Readers:** Have read-only access to the project.
-**Contributors:** Can contribute to the project by adding or modifying content.
-**Team Administrator:** Manage team-related settings and permissions.
-**Project Administrators:** Have administrative rights over the project.
-**Project Collection Administrators:** Oversee the entire project collection and have the highest level of permissions.
+- **Readers:** Have read-only access to the project.
+- **Contributors:** Can contribute to the project by adding or modifying content.
+- **Team Administrator:** Manage team-related settings and permissions.
+- **Project Administrators:** Have administrative rights over the project.
+- **Project Collection Administrators:** Oversee the entire project collection and have the highest level of permissions.
 
 These roles facilitate the distribution of responsibilities and streamline the management of project areas.
 
