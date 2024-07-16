@@ -4,7 +4,7 @@ ms.author: chcomley
 author: chcomley
 ms.prod: azure-devops
 ms.topic: include
-ms.date: 04/07/2021 
+ms.date: 07/16/2024
 ---
 
 
@@ -46,29 +46,47 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 :::row-end:::
 ---
  
-
 **What you can't customize**  
 
 ::: moniker range=">= azure-devops-2020"
 
-- You can't remove an inherited portfolio level from the product (but you can rename the portfolio level and you can disable an inherited work item type)
-- You can't insert a backlog level within the existing set of defined backlogs
-- You can't reorder the backlog levels  
-- You can't add a work item type to two different backlog levels  
-- You can't create a custom task backlog level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+- **Removing an inherited portfolio level:**
+  - While you can’t directly remove an inherited portfolio level from a product, you have a couple of options:
+    - **Rename the portfolio level:** You can rename the inherited portfolio level to better suit your needs.
+    - **Disable an inherited WIT:** If the inherited portfolio level includes WITs that you don’t want to use, you can disable them. This prevents teams from creating new work items of those types.
+- **Inserting a backlog level:**
+  - You cannot insert a new backlog level within the existing set of defined backlogs. The predefined backlog levels are typically fixed (for example, Epics, Features, User Stories, Tasks), and you can’t add custom ones in between.
+- **Reordering backlog levels:**
+  - Unfortunately, you cannot reorder the backlog levels. They usually follow a predefined hierarchy, and changing their order isn’t supported.
+- **Adding a WIT to multiple backlog levels:**
+  - Each WIT can only belong to one backlog level. You cannot add a WIT to two different backlog levels simultaneously.
+- **Creating a custom task backlog level:**
+  - Although you cannot create a custom task-specific backlog level, you can still add custom WITs to the iteration backlog. For example, you could create a custom WIT called “Enhancement” or “Maintenance” and associate it with the iteration backlog.
+- **Managing bugs:**
+  - The Bug WIT doesn’t belong to any specific backlog level by default. Instead, each team can decide how they want to manage bugs. You can choose to [show bugs on backlogs and boards or handle them separately](../show-bugs-on-backlog.md).
 
 ::: moniker-end  
 
-
 ::: moniker range="azure-devops-2019"
 
-- You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog    
-- You can't remove an inherited portfolio level from the product (but you can rename the portfolio level and you can disable an inherited work item type)  
-- You can't insert a backlog level within the existing set of defined backlogs
-- You can't reorder the backlog levels  
-- You can't add a work item type to two different backlog levels  
-- You can't create a custom task level, although you can add custom work item types to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+- **Adding or removing an inherited WIT from a backlog:**
+  - You cannot directly add or remove an inherited WIT to or from a backlog. For instance, adding the “Issue” WIT to the product backlog isn’t supported.
+  - However, you can:
+    - **Rename the portfolio level:** If the inherited portfolio level includes WITs you don’t want to use, consider renaming it to better suit your needs.
+    - **Disable an inherited WIT:** If there are specific inherited WITs you want to exclude, you can disable them. This prevents teams from creating new work items of those types.
+- **Removing an inherited portfolio level:**
+  - While you can’t remove an inherited portfolio level from a product, you have a couple of options:
+    - **Rename the portfolio level:** Give it a more fitting name.
+    - **Disable inherited WITs:** Prevent teams from using specific inherited WITs.
+- **Inserting a backlog level:**
+  - Unfortunately, you cannot insert a new backlog level within the existing set of defined backlogs. The predefined backlog levels remain fixed (e.g., Epics, Features, User Stories, Tasks).
+- **Reordering backlog levels:**
+  - Backlog levels typically follow a predefined hierarchy, and changing their order isn’t supported. You cannot reorder them.
+- **Adding a WIT to multiple backlog levels:**
+  - Each WIT (for example, Bug, Task, User Story) can only belong to one backlog level. You cannot add a WIT to two different backlog levels simultaneously.
+- **Creating a custom task level:**
+  - Although you cannot create a custom task-specific backlog level, you can still add custom WITs to the iteration backlog. For example, create a custom WIT called “Enhancement” or “Maintenance” and associate it with the iteration backlog.
+- **Managing bugs:**
+  - The Bug WIT doesn’t belong to any specific backlog level by default. Instead, each team can decide how they want to manage bugs. You can choose to [show bugs on backlogs and boards or handle them separately](../show-bugs-on-backlog.md).
 
 ::: moniker-end
