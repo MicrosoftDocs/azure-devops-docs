@@ -811,13 +811,13 @@ A: The pipeline agent sends `SIGINT` and `SIGTERM` signals to the relevant child
 
 A: We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, [bump the task version](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and [mark the task as deprecated](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
-### Q: How can I upgrade a task to the latest Node?
+### Q: How can I upgrade my custom task to the latest Node?
 
 A: We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 16](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md).
 
 
 
-As Microsoft Hosted agents and various Azure DevOps Server versions have different lifecycles, there can be different Node runner versions installed depending on where a task is running. To be able to run the same task on agents with different Node runner versions, task.json can contain multiple execution sections. In the following example, Azure Pipeline agents which include the Node 16 runner will choose it by default, and those which don't will fall back to the Node 10 implementation.
+As Microsoft Hosted agents and various Azure DevOps Server versions have different lifecycles, there can be different Node runner versions installed depending on where a task is running. To be able to run the same task on agents with different Node runner versions, the **task.json** file can contain multiple execution sections. In the following example, Azure Pipeline agents which include the Node 20 runner will choose it by default, and those which don't will fall back to the Node 10 implementation.
 
 ```nodejs
   "execution": {
@@ -825,7 +825,7 @@ As Microsoft Hosted agents and various Azure DevOps Server versions have differe
       "target": "bash.js",
       "argumentFormat": ""
     },
-    "Node16": {
+    "Node20": {
       "target": "bash.js",
       "argumentFormat": ""
     }
@@ -834,7 +834,7 @@ As Microsoft Hosted agents and various Azure DevOps Server versions have differe
 To upgrade your tasks:
 
 * Test your task(s) on the various Node runner versions to ensure your code behaves as expected.
-* In your task's execution section, update from `Node` or `Node10` to `Node20`.
+* In your task's execution section, update from `Node` or `Node10` to `Node16` or `Node20`.
 * To support older server versions, you should leave the `Node`/`Node10` target. Older Azure DevOps Server versions may not have the latest Node runner version included.
 * You can choose to share the entry point defined in the target or have targets optimized to the Node version used.
 
@@ -855,7 +855,7 @@ To upgrade your tasks:
    ```
    
 > [!IMPORTANT]
-> Not adding support for the Node 20 runner will cause tasks to fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
+> Not adding support for the Node 20 runner on your custom tasks will cause tasks to fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
 
 ## Related articles
 
