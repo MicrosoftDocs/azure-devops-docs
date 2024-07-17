@@ -20,7 +20,7 @@ ms.date: 02/13/2020
 | Agent.HomeDirectory | The directory the agent is installed into. This contains the agent software. For example: `c:\agent`. |
 | Agent.Id | The ID of the agent. |
 | Agent.JobName | The name of the running job. This will usually be "Job" or "__default", but in multi-config scenarios, will be the configuration. |
-| Agent.JobStatus | The status of the build.<br>    <ul>        <li>`Canceled`        <li>`Failed`        <li>`Succeeded`        <li>`SucceededWithIssues` (partially successful)   <li> Skipped (last job) </ul>The environment variable should be referenced as `AGENT_JOBSTATUS`. The older `agent.jobstatus` is available for backwards compatibility. |
+| Agent.JobStatus | The status of the build.<br>    <ul>        <li>`Canceled`        <li>`Failed`        <li>`Succeeded`        <li>`SucceededWithIssues` (partially successful)   <li> `Skipped` (last job) </ul>The environment variable should be referenced as `AGENT_JOBSTATUS`. The older `agent.jobstatus` is available for backwards compatibility. |
 | Agent.MachineName | The name of the machine on which the agent is installed. |
 | Agent.Name | The name of the agent that is registered with the pool. <br><br>If you're using a self-hosted agent, then this name gets set by you. See [agents](../../agents/agents.md). |
 | Agent.OS | The operating system of the agent host. Valid values are:<br><ul><li>`Windows_NT`<li>`Darwin`<li>`Linux`</ul>If you're running in a container, the agent host and container might be running different operating systems. |
