@@ -46,7 +46,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 :::row-end:::
 ---
  
-**What you can't customize**  
+**Unsupported customizations:**
 
 ::: moniker range=">= azure-devops-2020"
 

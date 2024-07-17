@@ -21,7 +21,7 @@ But, if your project requires more portfolio backlogs, you can create them.
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-**Why portfolio backlogs matter:**
+**Benefits of portfolio backlogs:**
 - **Organizing work:** Portfolio backlogs allow you to organize work based on business initiatives, user scenarios, or other relevant criteria.
 - **Hierarchical view:** By [structuring backlogs into portfolios](../../../boards/backlogs/organize-backlog.md), you gain a hierarchical view of work, which includes items defined in lower-level backlogs (such as user stories, features, or tasks).
 - **Cross-team visibility:** Program managers can track the status of backlog items across multiple teams. They can drill down to ensure that all work is adequately represented.
@@ -118,17 +118,11 @@ These same work item types, along with any custom work item types, appear in the
 
 When you add a WIT to a backlog level, certain fields are automatically added to the WIT definition as hidden fields. These fields don't appear on the work item form but are essential for supporting specific Agile tool features.
 
-| Backlog level | Fields added | 
-|---------------|--------------|
-| Portfolio backlog |- Stack rank (Agile, CMMI)<br/>- Backlog Priority (Scrum) | 
-| Requirement backlog |- Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |
-| Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |
-
-The Stack Rank and Backlog Priority fields capture the relative priority of work items as they get reordered on a backlog or board. For more information, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/). 
-
-The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).  
-
-And, lastly, Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md). 
+| Backlog level | Fields added | Description |
+|---------------|--------------|-------------|
+| Portfolio backlog |- Stack rank (Agile, CMMI)<br/>- Backlog Priority (Scrum) | The Stack Rank and Backlog Priority fields capture the relative priority of work items as they get reordered on a backlog or board. For more information, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/).   |
+| Requirement backlog |- Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
+| Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
  
