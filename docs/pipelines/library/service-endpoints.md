@@ -65,7 +65,7 @@ Complete the following steps to edit a service connection.
 
 1. The **Usage history** tab shows the list of pipelines that used the service connection.
 
-    :::image type="content" source="../release/_img/azure-rm-endpoint/azure-rm-usage-history.png" alt-text="Screenshot of Azure Resource Manager usage history":::
+    :::image type="content" source="../release/_img/azure-rm-endpoint/azure-rm-usage-history.png" alt-text="Screenshot of Azure Resource Manager usage history.":::
 
 1. The **Approvals and checks** tab lets you manage the [approvals and checks](../process/approvals.md) to allow a stage in a pipeline to use the service connection. 
 
@@ -467,6 +467,7 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
+
 Use the following command to fetch the Server URL.
 
 ```
