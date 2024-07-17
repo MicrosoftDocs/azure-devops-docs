@@ -241,7 +241,7 @@ steps:
 
 - Install [PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget?view=powershellget-3.x#install-microsoftpowershellpsresourceget).
 
-- (Optional) To save credentials and avoid passing them with each call, you can install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore?view=ps-modules) modules.
+- Install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore?view=ps-modules) modules.
 
 > [!NOTE]
 > Azure Artifacts Credential Provider is not supported with PSResourceGet.
@@ -292,7 +292,7 @@ If you don't have your own module, follow the instructions in this section to cr
     FunctionsToExport = @('PowerShell-Demo')
     ```
 
-1. Find the `FileList` section, which specifies the files included when packaging the module. Add the file you wish to package with your module:
+1. Locate the `FileList` section, which lists the files included when packaging the module. Add the file you wish to package with your module:
 
     ```powershell
     FileList = @('./PowerShell-Demo.psm1')
@@ -300,7 +300,7 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Register repository
 
-1. Run the following command to create a credential object. Replace the placeholders with the appropriate information.
+1. Run the following command to create a credential object. Replace the placeholders with the correct information.
 
     ```powershell
     $username = "<USER_NAME>"
@@ -309,12 +309,12 @@ If you don't have your own module, follow the instructions in this section to cr
     $credentials = New-Object System.Management.Automation.PSCredential($username, $patToken)
     ```
 
-1. Make sure you have installed *SecretManagement* and *SecretStore* and run the following command to create a vault and add a secret:
+1. Ensure that *SecretManagement* and *SecretStore* are installed, then run the following command to create a vault and add a secret:
 
     ```powershell
     Register-SecretVault -Name "MySecretVault" -ModuleName Microsoft.PowerShell.SecretStore -DefaultVault
 
-    Set-Secret -Name "MyCredential" -Secret $credentials -Vault "MySecretVault"
+    Set-Secret -Name "MyNewCredential" -Secret $newCredentials -Vault "MySecretVault"
 
     $CredentialInfo = [Microsoft.PowerShell.PSResourceGet.UtilClasses.PSCredentialInfo]::new('MySecretVault', 'MyCredential')
     ```
@@ -340,14 +340,19 @@ If you don't have your own module, follow the instructions in this section to cr
         ```
 
     > [!TIP]
-    > Some versions of PowerShell may require starting a new session after running the `Register-PSRepository` cmdlet to prevent encountering the *Unable to resolve package source* warning.
+    > Some versions of PowerShell may require starting a new session after running the `Register-PSResourceRepository` cmdlet to prevent encountering the *Unable to resolve package source* warning.
+
+1. To verify if the repository was successfully registered, run the following command to retrieve all registered repositories for the current user:
+
+    ```powershell
+    Get-PSResourceRepository
+    ```
+
+> [!NOTE]
+> If you encounter the error: *Response status code does not indicate success: 404 (Not Found).*, make sure that 
 
 
-
-
-
-
-
+:::zone-end
 
 
 
