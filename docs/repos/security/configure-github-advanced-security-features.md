@@ -184,7 +184,7 @@ steps:
 > Use `java` to analyze code written in Java, Kotlin or both.
 > Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
-If the language specified is `cpp, java, csharp` or `swift` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action.
+If the language specified is `cpp, java, csharp` or `swift` custom build steps are required.
 
 
 #### [Classic](#tab/classic)
