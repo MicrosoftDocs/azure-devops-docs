@@ -9,7 +9,7 @@ We recommend checking out [Configure and customize Azure Boards](../../../boards
 ::: moniker range="azure-devops"
 
 - You must have [an organization in Azure DevOps](../../accounts/create-organization.md).
-- To create, edit, and manage processes, you must be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md), or have the corresponding collection-level permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. For more information, see [Set permissions and access for work tracking, Customize an inherited process](../../security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+- To create, edit, and manage processes, you must be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md) or have the corresponding collection-level permissions, **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization**, set to **Allow**. For more information, see [Set permissions and access for work tracking, Customize an inherited process](../../security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 ::: moniker-end
 
