@@ -5,7 +5,7 @@ description: Choose between HTTPS, SSH, and personal access tokens to securely s
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 11/13/2020
+ms.date: 07/11/2024
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -14,18 +14,11 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Choose a method to securely access the code in Azure Repos, Azure DevOps Server 2019, or Team Foundation Server (TFS) Git repositories.
-Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.
-Limit the scope of access and revoke these credentials when they're no longer needed.
+Selecting the right authentication method is crucial for secure access to your Azure Repos and Azure DevOps Server Git repositories. Whether you're working from a command prompt or using a Git client that supports HTTPS or SSH, it's important to choose credentials that not only provide the necessary access but also limit the scope to what's needed for your tasks. 
+
+Always revoke credentials when they're no longer required to maintain the security of your repositories. This approach ensures that you have the flexibility to work with your code securely and efficiently, while also safeguarding it against unauthorized access.
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
-
-Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
-
-> [!TIP]
-> Using Visual Studio? Team Explorer handles authentication with Azure Repos for you.
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 ## Authentication comparison
 
@@ -34,13 +27,14 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 | Personal access tokens | You need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
 | SSH | You already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 ## Personal access tokens
 
-Personal access tokens (PATs) give you access to Azure DevOps and Team Foundation Server (TFS), without using your username and password directly.
-These tokens have an expiration date from when they're created. You can restrict the scope of the data they can access.
-Use PATs to authenticate if you don't already have SSH keys set up on your system or if you need to restrict the permissions that are granted by the credential.
+Personal access tokens (PATs) provide access to Azure DevOps without using your username and password directly. These tokens expire and allow you to restrict the scope of the data they can access.
+Use PATs to authenticate if you don't have SSH keys set up on your system or need to limit the permissions granted by the credential.
 
-* [Learn more about personal access tokens and how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 
 ### <a name="use-credential-managers-to-generate-tokens"></a>Use Git Credential Manager to generate tokens
 
@@ -66,7 +60,7 @@ You decrypt the data on your computer with the private key, which is never share
 SSH is a great option if you've already got it set up on your system&mdash;just add a public key to Azure DevOps and clone your repos using SSH. 
 If you don't have SSH set up on your computer, you should use PATs and HTTPS instead - it's secure and easier to set up.
 
-Learn more about [setting up SSH with Azure DevOps](use-ssh-keys-to-authenticate.md)
+For more information, see [Set up SSH with Azure DevOps](use-ssh-keys-to-authenticate.md).
 
 ## OAuth
 
@@ -81,3 +75,10 @@ or Windows running [Git for Windows](https://www.git-scm.com/download/win)
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
+
+## Related articles
+- [Use Git Credential Manager to authenticate to Azure Repos](set-up-credential-managers.md)
+- [Create and manage personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Use SSH key authentication](use-ssh-keys-to-authenticate.md)
+- [About security, authentication, and authorization in Azure DevOps](../../organizations/security/about-security-identity.md)
+- [About permissions and security groups in Azure DevOps](../../organizations/security/about-permissions.md)
