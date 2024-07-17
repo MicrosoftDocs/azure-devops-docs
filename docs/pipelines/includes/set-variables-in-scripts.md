@@ -53,8 +53,7 @@ set sauceArgument=%~1
 set secretSauceArgument=%~2
 @echo No problem reading %sauceArgument% or %SAUCE%
 @echo But I cannot read %SECRET_SAUCE%
-@echo But I can read %secretSauceArgument% (but the log is redacted so I do not spoil
-      the secret)
+@echo But I can read %secretSauceArgument% (but the log is redacted so I do not spoil the secret)
 ```
 
 # [PowerShell](#tab/powershell)
@@ -86,8 +85,18 @@ Param(
 )
 Write-Host No problem reading $env:SAUCE or $sauceArgument
 Write-Host But I cannot read $env:SECRET_SAUCE
-Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do not
-           spoil the secret)"
+Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do not spoil the secret)"
+```
+
+**Inline PowerShell script**
+
+Set the `sauce` and `secret.Sauce` variables
+
+```yaml
+- pwsh: |
+      Write-Host No problem reading $(sauce)
+      Write-Host But I cannot read $env:SECRET_SAUCE
+      Write-Host But I can read $(secret.Sauce) "(but the log is redacted so I do not spoil the secret)"
 ```
 
 # [Shell](#tab/shell)
