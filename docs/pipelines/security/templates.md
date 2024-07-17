@@ -260,7 +260,8 @@ jobs:
 
 Templates are a valuable security mechanism, but their effectiveness relies on enforcement. The key control points for enforcing template usage are [protected resources](resources.md). You can configure approvals and checks for your agent pool or other protected resources such as repositories. For an example, see [Add a repository resource check](../process/repository-resource.md#add-a-repository-resource-check).
 
-### Required template
+<a name="set-required-templates"></a>
+### Required templates
 
 To enforce the use of a specific template, configure the [required template check](../process/approvals.md#required-template) for a resource. This check applies only when the pipeline extends from a template.
 

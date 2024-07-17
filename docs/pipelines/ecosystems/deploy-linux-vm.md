@@ -106,7 +106,7 @@ Select **Edit**, and replace the contents of the *azure-pipelines.yml* file with
 
 The following code builds your Node.js project with npm.
 
-    ```yaml
+```yaml
     trigger:
     - main
     
@@ -209,6 +209,7 @@ After your pipeline runs, verify that the job ran successfully and that you see 
    - `runOnce` is the simplest deployment strategy. The `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks are each executed once. Then either `on:` `success` or `on:` `failure` executes.
 
      The following example shows a deployment job for `runOnce`:
+     
      ```yaml
      jobs:
      - deployment: VMDeploy
