@@ -217,10 +217,7 @@ steps:
 # you must include a GitHub access token with the scope of `read:packages`.
   env:
     GITHUB_TOKEN: $(githubtoken)
- 
-- task: AdvancedSecurity-Codeql-Autobuild@1
-  displayName: AutoBuild
- 
+
 - task: AdvancedSecurity-Codeql-Analyze@1
   displayName: Perform CodeQL Analysis
  ```

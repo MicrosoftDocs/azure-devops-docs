@@ -25,9 +25,6 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 
 - Set your project visibility to [public](../../organizations/projects/make-project-public.md).
 
-> [!IMPORTANT]
-> Package lock files assist with reproducible builds and minimizing the scenarios where an anonymous user will be prompted for credentials when using public feeds.
-
 ## Create a public feed
 
 A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project.
@@ -43,6 +40,9 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
     :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot showing how to create a new public feed.":::
 
 1. Select **Create** when you're done.
+
+> [!IMPORTANT]
+> Public feeds do not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
 
 ## Add an upstream source
 
@@ -69,7 +69,7 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
     :::image type="content" source="../media/save-upstream.png" alt-text="A screenshot showing how to save the newly added upstream source.":::
 
 > [!IMPORTANT]
-> Public feeds do not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
+> [Package lock files](https://devblogs.microsoft.com/nuget/enable-repeatable-package-restores-using-a-lock-file/) are required to save NuGet and Dotnet packages from upstream sources to a public feed.
 
 ## Restore packages
 
