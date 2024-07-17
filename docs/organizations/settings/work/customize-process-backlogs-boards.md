@@ -148,6 +148,8 @@ You can add a custom WIT or select one that you previously added. Keep in mind t
 
 You can add a portfolio backlog and custom work item type following these steps. 
 
+:::moniker range="azure-devops"
+
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
@@ -181,7 +183,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 	::: moniker-end 
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showingWeb portal, Add a portfolio backlog dialog, Add new work item type.](media/process/process-add-portfolio-backlog-dialog.png) 
+	> ![Screenshot showing Web portal, Add a portfolio backlog dialog, Add new work item type.](media/process/process-add-portfolio-backlog-dialog.png) 
 	::: moniker-end 
 
 6. If you're associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
