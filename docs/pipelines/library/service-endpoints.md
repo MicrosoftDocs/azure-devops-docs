@@ -44,7 +44,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
     :::image type="content" source="..\release\_img\azure-rm-endpoint\new-azure-rm-connection-01.png" alt-text="Screenshot of service connection parameters.":::
 
 1. Depending on the service connection type and authentication method, there might be a link to validate the connection. The validation link uses a REST call to the external service with the information that you entered, and indicates whether the call succeeded.
-1. Enter the required **Connection name**. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. 
+1. Enter the required **Connection name**. The name you use to refer to the service connection in task properties. If you're using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. 
 1. Optionally, enter a **Description**.
 1. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must edit the service connection to explicitly authorize each pipeline that uses it.
 1. Select **Save** or **Verify and save**.
@@ -158,7 +158,7 @@ Use the following parameters to define and secure a connection to a Microsoft Az
 | Username | Required for Credentials authentication. User name of a work or school account (for example @fabrikam.com). Microsoft accounts (for example @live or @hotmail) are't supported. |
 | Password | Required for Credentials authentication. Password for the specified user. |
 | Management Certificate | Required for Certificate-based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -178,7 +178,7 @@ Use the following parameters to define and secure a connection to another Azure 
 | Username | Required for Basic authentication. The username to connect to the service.|
 | Password  |  Required for Basic authentication. The password for the specified username.|
 | Personal Access Token | Required for Token Based authentication. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -199,7 +199,7 @@ Use the following parameters to define and secure a connection to a Microsoft Az
 |---|--|
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
 | Service Bus Connection string |  Primary or secondary connection string for your queue. For information about how to get the connection string see, [Get the connection string](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues#authenticate-the-app-to-azure).|
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -215,7 +215,7 @@ Use OAuth with **Grant authorization** or a username and password with **Basic A
 | OAuth configuration | Required for Grant authorization. OAuth connection to Bitbucket. |
 | Username | Required for Basic authentication. The username to connect to the service.|
 | Password  |  Required for Basic authentication. The password for the specified username.|
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -234,7 +234,7 @@ Use the following parameters to define and secure a connection to a [Cargo](../.
 | Password | Required when Basic authentication is selected. Password for connecting to the endpoint. Personal access tokens are applicable for Azure DevOps Services organizations. |
 | Token | Required when **Authorization value** authentication is selected. |
 | Service connection name | Name for the service connection |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -248,7 +248,7 @@ Use the following parameters to define and secure a connection to a [Chef](https
 | Node Name (Username) | Required. The name of the node to connect to. Typically this parameter is your username. |
 | Client Key | Required. The key specified in the Chef .pem file. |
 | Service connection name | Name for the service connection |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -263,7 +263,7 @@ Use the following parameters to define and secure a connection to a Docker host.
 | Certificate | Required. A client certificate to use to authenticate with the host. |
 | Key | Required. The key specified in the Docker key.pem file. |
 | Service connection name | Name for the service connection |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -289,7 +289,7 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 | Docker ID | Required. The identifier of the Docker account user. |
 | Docker Password | Required. The password for the Docker ID. (Docker Hub requires a PAT instead of a password.) |
 | Email | Optional. An email address to receive notifications. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -307,7 +307,7 @@ Enter the following parameters to define a connection to an Azure Container Regi
 | --------- | ----------- |
 | Subscription | Required. The Azure subscription containing the container registry to be used for service connection creation. |
 | Azure Container Registry | Required. The Azure Container Registry to be used for creation of service connection. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -321,7 +321,7 @@ Enter the following parameters to define a connection to an Azure Container Regi
 | Subscription name | Required. The name of your Microsoft Azure subscription. |
 | Tenant ID | Required. The GUID-like identifier for your Azure Active Directory tenant. You can copy the tenant ID from the Azure portal. |
 | Azure container registry login server | Required. The login server of the Azure Container Registry. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -334,7 +334,7 @@ Use the following parameters to define and secure a connection to any generic ty
 | Server URL | Required. The URL of the service. |
 | Username | Optional. The username to connect to the service. |
 | Password/Token key | Optional. The password or access token for the specified username. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -350,7 +350,7 @@ Use the following parameters to define a connection to a GitHub repository.
 | Choose authorization |  Required. Either **Grant authorization** or **Personal access token**. |
 | Token| Required for Personal access token authorization. Your GitHub Personal Access Token (PAT). |
 | Grant authorization | Required for Grant authorization. The OAuth Configuration to use to connect to the service. For example, select **AzurePipelines** to connect the Azure Pipeline. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -382,7 +382,7 @@ Use the following parameters to define a connection to a GitHub Enterprise repos
 | Password | Required for Username and Password authentication. The password for the specified username. |
 | OAuth configuration | Required for OAuth2 authorization. You can use an existing OAuth configuration or create a new configuration. |
 | GitHub Enterprise Server configuration URL |The URL is fetched from OAuth configuration.|
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -404,7 +404,7 @@ Use the following parameters to create an incoming Webhook service connection.
 | WebHook Name | Required. The name of the WebHook. |
 | Secret | Optional. The secret to use to authenticate with the WebHook. |
 | HTTP Header | Optional. The headers name on which checksum is sent. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -418,7 +418,7 @@ Use the following parameters to define a connection to the Jenkins service.
 | Accept untrusted TLS/SSL certificates |  Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md).|
 | Username | Required. The username to connect to the service. |
 | Password  | Required. The password for the specified username.|
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -434,7 +434,7 @@ Use the following parameters to define a connection to the Jira service.
 | Parameter | Description  |
 |--|--|
 | Server URL | Required. The URL of the Jira server. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -453,7 +453,7 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 | Kubeconfig | Required. Contents of the kubeconfig file. |
 | Cluster context | Optional. Context within the kubeconfig file that is to be used for identifying the cluster. |
 | Accept untrusted certificates | Set this option to allow clients to accept a self-signed certificate. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -464,7 +464,7 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 | --------- | ----------- |
 | Server URL | Required. Cluster's API server URL. |
 | Secret | Secret associated with the service account to be used for deployment. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 Use the following command to fetch the Server URL.
@@ -497,7 +497,7 @@ Copy and paste the Secret object fetched in YAML form into the Secret text-field
 | Azure subscription | Required. The Azure subscription containing the cluster to be used for service connection creation. |
 | Cluster | Name of the Azure Kubernetes Service cluster. |
 | Namespace | Namespace within the cluster. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -520,7 +520,7 @@ Use the following parameters when you define and secure a connection to a Maven 
 | Username  | Required when connection type is **Username and Password**. The username for authentication.|
 | Password  | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -535,7 +535,7 @@ Use the following parameters when you define and secure a connection to an npm s
 | Username  | Required when connection type is **Username and Password**. The username for authentication.|
 | Password  | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required **Authentication Token** is selected. The personal access token (PAT) to authenticate with the service or registry. PATs are applicable to repositories that support them, for example https://registry.npmjs.org DevOps Services organizations or Azure DevOps Server. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -551,7 +551,7 @@ Use the following parameters when you define and secure a connection to a NuGet 
 | Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with NuGet feeds on other Azure Services organizations or Azure DevOps Server. the service. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).|
 | Username  | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password  | Required when connection type is **Basic authentication**. The password for the username. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -570,7 +570,7 @@ There's a specific service connection for [GitHub](#github-service-connection) a
 | Attempt accessing this Git server from Azure Pipelines | When checked, Azure Pipelines attempts to connect to the repository before queuing a pipeline run. You can disable this setting to improve performance when working with repositories that aren't publicly accessible. [CI triggers](../repos/pipeline-options-for-git.md#trigger-options-for-other-git) don't work when an **Other Git** repository isn't publicly accessible. You can only start manual or scheduled pipeline runs. |
 | Username | Optional. The username to connect to the Git repository server. |
 | Password/Token | Optional. The password or access token for the specified username. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -587,7 +587,7 @@ Use the following parameters when you define and secure a connection to a Python
 | Personal Access Token  | Required when connection type is **Authentication Token**. The personal access token (PAT) to use to authenticate with Python feeds that support them and DevOps Services organizations. For more information see, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 |  Username  | Required when connection type is **Username and Password**. The username for authentication.|
 |  Password  | Required when connection type is **Username and Password**. The password for the username. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -603,7 +603,7 @@ Use the following parameters when you define and secure a connection to a Python
 | Personal Access Token | see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Username and Password**. The username for authentication.|
 | Password | Required when connection type is **Username and Password**. The password for the username. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -623,7 +623,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Password|  Required when connection type is **Microsoft Entra credential**. Optional when the authentication method is **Certificate based**. The certificate password.|
 | Unsecured | Optional. Select this option to skip windows security authentication. |
 | Cluster SPN | Optional. Applicable if Unsecured is selected. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -639,7 +639,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Password|  Required when connection type is **Microsoft Entra credential**. Optional when the authentication method is **Certificate based**. The certificate password.|
 | Unsecured | Optional. Select this option to skip windows security authentication. |
 | Cluster SPN | Optional. Applicable if Unsecured is selected. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -650,7 +650,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Cluster Endpoint | Required. The client connection endpoint for the cluster. Prefix the value with *tcp://*. This value overrides the publish profile. |
 | Unsecured | Optional. Select this option to skip windows security authentication. |
 | Cluster SPN | Optional. Fully qualified domain SPN for gMSA account. This parameter is applicable only if **Unsecured** option is disabled. For more information about using gMSA with a cluster, see [Configure Windows security using gMSA](/azure/service-fabric/service-fabric-windows-cluster-windows-security#configure-windows-security-using-gmsa) |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -665,7 +665,7 @@ Use the following parameters when you define and secure a connection to a remote
 | Private Key |  The entire contents of the private key file if using this type of authentication.|
 | Username  | Required. The username to use when connecting to the remote host machine. |
 | Password/Passphrase |  The password or passphrase for the specified username if using a keypair as credentials. |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -682,7 +682,7 @@ Use the following parameters when you define and secure a connection to the Subv
 | Realm name | Required if the service connection for Subversion externals. If you use multiple credentials in a build or release pipeline, use this parameter to specify the realm containing the credentials specified for the service connection. |
 | User name | Required. The username to connect to the service. |
 | Password  | Required. The password for the specified username.|
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
@@ -702,7 +702,7 @@ Use the following parameters when you define and secure a connection to Visual S
 |-----------------|---------|
 | Server URL | Required. The URL of the App Center service. |
 | API Token | Required. The token to use to authenticate with the service. For more information, see the [API docs](/appcenter/api-docs/). |
-| Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
