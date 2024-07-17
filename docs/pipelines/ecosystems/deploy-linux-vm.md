@@ -91,7 +91,7 @@ You can add tags or remove tags for VMs in the interactive registration script o
 You need a continuous integration (CI) build pipeline that publishes your web app, and a deployment script to run locally on the Linux server. Set up your CI build pipeline based on the runtime you want to use.
 
 >[!IMPORTANT]
->During the following procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 1. In your Azure DevOps project, select **Pipelines** > **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
@@ -187,7 +187,7 @@ After your pipeline runs, verify that the job ran successfully and that you see 
 
 ## Deploy to the Linux VMs
 
-1. Edit your pipeline to add the following [deployment job](../process/deployment-jobs.md). Reference the `<environment name>` that you created earlier. Select specific VMs from the environment to receive the deployment by specifying the `tags` that you defined for each VM.
+1. Edit your pipeline to add the following [deployment job](../process/deployment-jobs.md). Replace `<environment name>` with the name of the environment you created earlier. Select specific VMs from the environment to receive the deployment by specifying the `<VM tag>` that you defined for each VM.
 
     ```yaml
     jobs:  
@@ -206,9 +206,9 @@ After your pipeline runs, verify that the job ran successfully and that you see 
 
 1. Specify either `runOnce` or `rolling` as a deployment `strategy`.
 
-   - `runOnce` is the simplest deployment strategy. The `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks are each executed once. Then either `on:` `success` or `on:` `failure` executes.
+   - `runOnce` is the simplest deployment strategy. The `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks each execute once. Then either `on:` `success` or `on:` `failure` executes.
 
-     The following example shows a deployment job for `runOnce`:
+     The following code shows a deployment job for `runOnce`:
      
      ```yaml
      jobs:
@@ -225,7 +225,7 @@ After your pipeline runs, verify that the job ran successfully and that you see 
              - script: echo my first deployment
      ```
 
-   - The following example shows a YAML snippet for the rolling deployment strategy, using a Java pipeline. You can update up to five targets in each iteration. The `maxParallel` parameter specifies the number of targets that can be deployed to in parallel.
+   - The following code shows a YAML snippet for the `rolling` deployment strategy, using a Java pipeline. You can update up to five targets in each iteration. The `maxParallel` parameter specifies the number of targets that can be deployed to in parallel.
 
      The `maxParallel` selection accounts for absolute number or percentage of targets that must remain available at any time, excluding the targets being deployed to, and determines success and failure conditions during deployment.
 
@@ -277,17 +277,13 @@ The environment **Deployments** view provides complete traceability of commits a
 
 :::image type="content" source="media/vm-deployments.png" alt-text="Screenshot of deployments view.":::
 
-## Related articles
+## Related content
  
+- [Jobs](../process/phases.md)
 - [Tasks](../process/tasks.md)
 - [Catalog of tasks](../tasks/index.md)
 - [Variables](../process/variables.md)
 - [Triggers](../build/triggers.md)
 - [Troubleshooting](../troubleshooting/troubleshooting.md)
 - [YAML schema reference](/azure/devops/pipelines/yaml-schema)
-
-## Next step
-
-> [!div class="nextstepaction"]
-> [Learn more about jobs](../process/phases.md)
 

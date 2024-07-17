@@ -77,7 +77,7 @@ The YAML pipeline syntax includes several built-in protections. Extends template
 
 ### Step targets
 
-Restrict certain steps to run in a container rather than on the host. Steps in containers don't have access to the agent's host, preventing these steps from modifying agent configuration or leaving malicious code for later execution.
+You can restrict certain steps to run in a container rather than on the host. Steps in containers don't have access to the agent's host, preventing these steps from modifying agent configuration or leaving malicious code for later execution.
 
 For example, consider limiting network access. Without open network access, user steps can't retrieve packages from unauthorized sources or upload code and secrets to external network locations.
 
@@ -114,7 +114,7 @@ In restricted mode, the `setvariable` command remains permissible, but caution i
 
 To mitigate this risk, pipeline authors can explicitly declare which variables are settable by using the `setvariable` logging command. When you specify an empty list, all variable setting is disallowed.
 
-The following example task fails because the task is only allowed to set the `'expectedVar'` variable or a variable prefixed with `ok`.
+The following example task fails because the task is only allowed to set the `expectedVar` variable or a variable prefixed with `ok`.
 
 ```yaml
 - task: PowerShell@2
@@ -144,7 +144,7 @@ jobs:
     - script: echo Building the restricted part that only builds for main branch
 ```
 
-### Syntax enforcement using extends templates
+### Syntax modification
 
 Azure Pipelines templates have the flexibility to iterate over and modify YAML syntax. By using iteration, you can enforce specific YAML security features.
 
@@ -318,4 +318,4 @@ extends:
 - [Template usage reference](../process/templates.md)
 - [Secure variables and parameters in pipelines](inputs.md)
 - [Resource security](resources.md)
-- [Approvals and checks]((../process/approvals.md)
+- [Approvals and checks](../process/approvals.md)
