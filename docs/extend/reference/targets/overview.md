@@ -130,11 +130,11 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  |   | 
 | Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![Backlog Board Pivot Filter Actions.](media/work/backlogBoardPivotFilterActions.png)| 
 | Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    |   | 
-| Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Product Backlog Custom Tab](media/work/productBacklogTab.png)| 
-| Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![Iterations Backlog Custom Tab](media/work/iterationBacklogTab.png)| 
-| Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![Portfolio Backlog Custom Pane](media/work/portfolioBacklogPane.png)| 
-| Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![Product Backlog Custom Pane](media/work/productBacklogPane.png)| 
-| Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![Iteration Backlog Custom Pane](media/work/iterationBacklogPane.png)| 
+| Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Screenshot of product Backlog Custom Tab.](media/work/product-backlog-tab.png)| 
+| Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![Screenshot of iterations Backlog Custom Tab.](media/work/iteration-backlog-tab.png)| 
+| Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![Screenshot of Portfolio Backlog Custom Pane.](media/work/portfolio-backlog-pane.png)| 
+| Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![Screenshot of Product Backlog Custom Pane.](media/work/product-backlog-pane.png)| 
+| Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![Screenshot of Iteration Backlog Custom Pane.](media/work/iteration-backlog-pane.png)| 
 
 ::: moniker-end
 
