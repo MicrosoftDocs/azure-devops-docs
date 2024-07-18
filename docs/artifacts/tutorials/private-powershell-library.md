@@ -314,9 +314,20 @@ If you don't have your own module, follow the instructions in this section to cr
     ```powershell
     Register-SecretVault -Name "MySecretVault" -ModuleName Microsoft.PowerShell.SecretStore -DefaultVault
 
-    Set-Secret -Name "MyNewCredential" -Secret $newCredentials -Vault "MySecretVault"
+    Set-Secret -Name "MyCredential" -Secret $credentials -Vault "MySecretVault"
 
     $CredentialInfo = [Microsoft.PowerShell.PSResourceGet.UtilClasses.PSCredentialInfo]::new('MySecretVault', 'MyCredential')
+    ```
+
+1. To verify if the vault and secret were successfully created, run the following command to list all your secrets:
+
+    ```powershell
+    PS > Get-SecretInfo
+    
+    Name            Type         VaultName
+    ----            ----         ---------
+    MyCredential    PSCredential MySecretVault
+
     ```
 
 1. Run the following command to register your PowerShell repository. You can find the `SourceLocation` link by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe**, under the **Project setup** section > source URL.
@@ -325,7 +336,7 @@ If you don't have your own module, follow the instructions in this section to cr
 
         ```powershell
         Register-PSResourceRepository -Name "PowershellPSResourceRepository" `
-            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" `
+            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" `
             -Trusted `
             -CredentialInfo $CredentialInfo
         ```
@@ -334,9 +345,9 @@ If you don't have your own module, follow the instructions in this section to cr
 
         ```powershell
         Register-PSResourceRepository -Name "PowershellPSResourceRepository" `
-            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" `
+            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" `
             -Trusted `
-            -CredentialInfo $credentials
+            -CredentialInfo $CredentialInfo
         ```
 
     > [!TIP]
@@ -349,8 +360,32 @@ If you don't have your own module, follow the instructions in this section to cr
     ```
 
 > [!NOTE]
-> If you encounter the error: *Response status code does not indicate success: 404 (Not Found).*, make sure that 
+> If you encounter the error: *Response status code does not indicate success: 404 (Not Found).*, make sure that your source URL points to `nuget/v3/index.json` instead of `nuget/v2`.
 
+## Publish a package
+
+Run the following command to publish the package to your feed:
+
+```powershell
+Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -ApiKey (Get-Secret <SECRET_NAME>) 
+```
+
+**Example**:
+
+```powershell
+PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -ApiKey (Get-Secret MyNewCredential) -verbose
+VERBOSE: Performing the operation "Publish-PSResource" on target "Publish resource
+'C:\AzureDevOps\Demos\PowerShellDemo\scripts\' from the machine".
+VERBOSE: The newly created nuspec is:
+C:\Users\xxxx\AppData\Local\Temp\xxxxxxxxx\PowerShell-Demo.nuspec
+VERBOSE: credential successfully read from vault and set for repository: FabrikamFiberFeed
+VERBOSE: Successfully packed the resource into a .nupkg
+VERBOSE: Successfully published the resource to
+'https://pkgs.dev.azure.com/ramiMSFTDevOps/DemoProject/_packaging/FabrikamFiberFeed/nuget/v3/index.json'
+VERBOSE: Deleting temporary directory 'C:\Users\xxxx\AppData\Local\Temp\xxxxxxx'
+```
+
+:::image type="content" source="media/publish-psresource-example-package.png" alt-text="A screenshot displaying the PowerShell demo package published to the feed.":::
 
 :::zone-end
 
