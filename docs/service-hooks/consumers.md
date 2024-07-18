@@ -21,9 +21,7 @@ Select the consumer that you want to use in your subscription from the following
 
 - [Azure Service Bus](#azure-service-bus)
 - [Azure Storage](#azure-storage)
-- [Campfire](#campfire)
 - [Jenkins](#jenkins)
-- [Kato](#kato)
 - [Trello](#trello)
 - [Web Hooks](#webhooks)
 - [Zendesk](#zendesk)
@@ -177,41 +175,6 @@ This action inserts a JSON string representation of the event to the specified A
     * Data type: **string**
     * Required: **No**
 
-<a id="campfire"></a>
-
-## Campfire
-
-Campfire is similar to instant messaging, but designed exclusively for groups.
-
-### Post a message to a room
-
-Post a message about the event to a room in Campfire.
-
-* Consumer ID: **campfire**
-* Action ID: **postMessageToRoom**
-* Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
-* Settings:
-  * **accountName**
-    * Account name
-    * Account name like ```https://{account name}.campfirenow.com```
-    * Data type: **string**
-    * Required: **Yes**
-  * **authToken**
-    * API authentication token
-    * API authentication token for the user that messages are posted from. You can get this token visiting the user profile page at Campfire.
-    * Data type: **string**
-    * Required: **Yes**
-  * **roomId**
-    * Room
-    * Room to post the message to.
-    * Data type: **number**
-    * Required: **Yes**
-  * **showDetails**
-    * Send a detailed message
-    * Post a short or detailed message about the event.
-    * Data type: **boolean**
-    * Required: **No**
-
 ## Jenkins
 
 Jenkins is a continuous integration server, which allows building and testing software projects continuously.
@@ -284,28 +247,6 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * Data type: **string**
     * Required: **No**
 
-## Kato
-
-Kato provides a messaging service for modern organizations.
-
-### Post event to room
-
-Posts an event to a Kato room
-
-* Consumer ID: **kato**
-* Action ID: **postEventToRoom**
-* Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
-* Settings:
-  * **roomToken**
-    * Room token
-    * The token for interacting with a room using the Kato API
-    * Data type: **string**
-    * Required: **Yes**
-  * **roomName**
-    * Room name
-    * Room name as seen in Kato
-    * Data type: **string**
-    * Required: **No**
 ## Trello
 
 Provides integration with Trello.

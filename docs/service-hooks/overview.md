@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/28/2024
+ms.date: 07/19/2024
 ---
 
 # Integrate with service hooks
@@ -41,31 +41,53 @@ when events occur.
 The following services are available as the target of service hooks. For more information about other apps and services that integrate with Azure DevOps, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices).
 
 
+::: moniker range="= azure-devops"
+
+
 |Service  |Supported events  | Supported actions |
 |---------|---------|-------|
-|[App Center](/appcenter/dashboard/bugtracker/)   |Work item updated | Send notification |
-|[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build |
-|[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All        | Post event to FLO |
-|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed        | Deploy web app   |
-|[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All        | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic  |
-|[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue |
-|[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build |
-|[Campfire](https://go.microsoft.com/fwlink/?LinkID=393613)   |  All | Post a message to a room |
-|[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog |
-|[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database |
-|HipChat    | (No longer supported)        | |
-|[HockeyApp](https://aka.ms/vsts-hockeyapp-integration)   | Work item updated| Send notification |
-|[Jenkins](./services/jenkins.md)     |  Build completed, code pushed, PR merge attempted, release deployment completed | Trigger generic or Git build |
-|[Microsoft Teams](./services/teams.md)    |   All  | Post a message to a channel |
-|[MyGet](https://docs.myget.org/docs/reference/webhooks)  | Build completed, code pushed | Publish NuGet package to MyGet, trigger a MyGet build |
-|[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group |
-|[Slack](./services/slack.md)   |  All       | Post a message to a channel |
-|[Trello](./services/trello.md)  | All | Create a card or list |
-|[UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)    |  Work item created or updated       | Send linked work item event |
-|[Web Hooks](./services/webhooks.md) | All | Post via HTTP |
-|[Workplace Message Apps](https://aka.ms/WorkplaceMessagingApps-Integration) | All | Send notifications |
-|[Zapier](https://zapier.com/apps/webhook/integrations) | All | Send notification |
-| [Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) | Work item commented on | Create a private comment in a ticket |
+|[App Center](/appcenter/dashboard/bugtracker/)   | Work item updated | Send notification. Subscriptions are managed through App Center. |
+|[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build. Subscriptions are managed through AppVeyor. |
+|[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All | Post event to FLO. Subscriptions are managed through Azuqua. |
+|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed | Deploy web app.  Subscriptions are managed through Azure App Service. |
+|[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic. Subscription is managed through Azure App Service.  |
+|[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue. |
+|[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build. |
+|[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog. |
+|[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database.|
+|[Jenkins](./services/jenkins.md)     |  Build completed, code pushed, PR merge attempted, release deployment completed | Trigger generic or Git build. |
+|[Microsoft Teams](./services/teams.md)    |   All  | Post a message to a channel. Subscriptions are managed in Microsoft Teams. |
+|[MyGet](https://docs.myget.org/docs/reference/webhooks)  | Build completed, code pushed | Publish NuGet package to MyGet, trigger a MyGet build. Subscriptions are managed by MyGet. |
+|[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group. |
+|[Slack](./services/slack.md)   |  All | Post a message to a channel. |
+|[Trello](./services/trello.md)  | All | Create a card or list. |
+|[UserVoice]((https://www.uservoice.com/9) | Work item created, work item updated | Send linked work item event.  Subscriptions are managed through UserVoice. |
+|[Web Hooks](./services/webhooks.md) | All | Post via HTTP. |
+|[Workplace Message Apps](https://aka.ms/WorkplaceMessagingApps-Integration) | All | Send notifications. Subscriptions are managed through Workplace Message Apps.|
+|[Zapier](https://zapier.com/apps/webhook/integrations) | All | Send notification. Subscriptions are managed through Zapier. |
+| [Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) | Work item commented on | Create a private comment in a ticket. |
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2022"
+
+|Service  |Supported events  | Supported actions |
+|---------|---------|-------|
+|[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic. Subscription is managed through Azure App Service.  |
+|[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue. |
+|[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build. |
+|[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog. |
+|[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database.|
+|[Jenkins](./services/jenkins.md)     |  Build completed, code pushed, PR merge attempted, release deployment completed | Trigger generic or Git build. |
+|[Microsoft Teams](./services/teams.md)    |   All  | Post a message to a channel. Subscriptions are managed in Microsoft Teams. |
+|[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group. |
+|[Slack](./services/slack.md)   |  All | Post a message to a channel. |
+|[Trello](./services/trello.md)  | All | Create a card or list. |
+|[UserVoice]((https://www.uservoice.com/9) | Work item created, work item updated | Send linked work item event.  Subscriptions are managed through UserVoice. |
+|[Web Hooks](./services/webhooks.md) | All | Post via HTTP. |
+| [Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) | Work item commented on | Create a private comment in a ticket. |
+
+::: range-end
 
 ## Create a subscription
 
