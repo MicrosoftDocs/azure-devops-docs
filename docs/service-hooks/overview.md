@@ -49,7 +49,7 @@ The following services are available as the target of service hooks. For more in
 |[App Center](/appcenter/dashboard/bugtracker/)   | Work item updated | Send notification. Subscriptions are managed through App Center. |
 |[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build. Subscriptions are managed through AppVeyor. |
 |[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All | Post event to FLO. Subscriptions are managed through Azuqua. |
-|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed | Deploy web app.  Subscriptions are managed through Azure App Service. |
+|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed | Deploy web app. Subscriptions are managed through Azure App Service. |
 |[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic. Subscription is managed through Azure App Service.  |
 |[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue. |
 |[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build. |
@@ -57,11 +57,11 @@ The following services are available as the target of service hooks. For more in
 |[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database.|
 |[Jenkins](./services/jenkins.md)     |  Build completed, code pushed, PR merge attempted, release deployment completed | Trigger generic or Git build. |
 |[Microsoft Teams](./services/teams.md)    |   All  | Post a message to a channel. Subscriptions are managed in Microsoft Teams. |
-|[MyGet](https://docs.myget.org/docs/reference/webhooks)  | Build completed, code pushed | Publish NuGet package to MyGet, trigger a MyGet build. Subscriptions are managed by MyGet. |
+|[MyGet](https://docs.myget.org/docs/reference/webhooks)  | Build completed, code pushed | Publish NuGet package to MyGet. Trigger a MyGet build. Subscriptions are managed by MyGet. |
 |[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group. |
 |[Slack](./services/slack.md)   |  All | Post a message to a channel. |
 |[Trello](./services/trello.md)  | All | Create a card or list. |
-|[UserVoice]((https://www.uservoice.com/9) | Work item created, work item updated | Send linked work item event.  Subscriptions are managed through UserVoice. |
+|[UserVoice]((https://www.uservoice.com) | Work item created, work item updated | Send linked work item event. Subscriptions are managed through UserVoice. |
 |[Web Hooks](./services/webhooks.md) | All | Post via HTTP. |
 |[Workplace Message Apps](https://aka.ms/WorkplaceMessagingApps-Integration) | All | Send notifications. Subscriptions are managed through Workplace Message Apps.|
 |[Zapier](https://zapier.com/apps/webhook/integrations) | All | Send notification. Subscriptions are managed through Zapier. |
@@ -83,16 +83,15 @@ The following services are available as the target of service hooks. For more in
 |[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group. |
 |[Slack](./services/slack.md)   |  All | Post a message to a channel. |
 |[Trello](./services/trello.md)  | All | Create a card or list. |
-|[UserVoice]((https://www.uservoice.com/9) | Work item created, work item updated | Send linked work item event.  Subscriptions are managed through UserVoice. |
+|[UserVoice]((https://www.uservoice.com) | Work item created, work item updated | Send linked work item event. Subscriptions are managed through UserVoice. |
 |[Web Hooks](./services/webhooks.md) | All | Post via HTTP. |
 | [Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) | Work item commented on | Create a private comment in a ticket. |
 
-::: range-end
+::: moniker-end
 
 ## Create a subscription
 
-When you integrate one of these services with Azure DevOps, you must create a new subscription. In many cases, you need to do some work in the other service, too. For specific details, 
-check out the information on the service that you're interested in.
+When you integrate one of these services with Azure DevOps, you must create a new subscription. In many cases, you need to do some configuration in the other service, too. For specific details, check out the information for the service that you're interested in.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -144,16 +143,10 @@ To grant *View* permission for a group, see [Set *View* permission for a group i
 
 A: The user with these permissions can see all subscriptions created in the 
 project and the notification history for those subscriptions. That user can then 
-create any type of service hook subscription in that project. If the user sets up a 
-subscription for a resource that they don't otherwise have permission to access, the 
-subscription won't get triggered. 
+create any type of service hook subscription in that project. If the user sets up a subscription for a resource that they don't otherwise have permission to access, the subscription won't be triggered. 
 
-**For example:** If you don't have access to work items in area path XYZ, and you set up a 
-subscription to the work item update events, you don't get notifications for updates 
-to work items in area path XYZ. But, if another user, who does have access to the work 
-items in area path XYZ, receives those "work item update" events, then you could see the 
-notification history of the other user's events, which includes work item data that you 
-don't otherwise have access to.
+**For example:** 
+Subscriptions you create for work item update events in area path XYZ won't send notifications if you lack access to those work items. However, you can see the notification history of other users who do have access to those work items.
 
 ### Q: Can I create service hook subscriptions for a project programmatically?
 
