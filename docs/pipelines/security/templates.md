@@ -3,7 +3,7 @@ title: Use templates for security
 description: Learn about using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: vijayma
-ms.date: 07/17/2024
+ms.date: 07/18/2024
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
 ---
@@ -14,8 +14,7 @@ monikerRange: '>= azure-devops-2020'
 
 This article describes how templates can streamline security for Azure Pipelines. Templates can define the outer structure of your pipeline and help prevent malicious code infiltration. Templates can also automatically include steps to do tasks such as credential scanning. If multiple pipelines within your team or organization share the same structure, consider using templates.
 
->[!IMPORTANT]
->[Checks on protected resources](resources.md) form the fundamental security framework for Azure Pipelines. These checks apply regardless of pipeline structure, stages, and jobs.
+[Checks on protected resources](resources.md) form the fundamental security framework for Azure Pipelines. These checks apply regardless of pipeline structure, stages, and jobs. You can use templates to help enforce these checks. 
 
 ## Includes and extends templates
 
@@ -110,7 +109,7 @@ The following example task fails because its `target` property instructs the age
     commands: restricted
 ```
 
-In restricted mode, the `setvariable` command remains permissible, but caution is necessary because pipeline variables are exported as environment variables to subsequent tasks. If tasks output user-provided data, such as open issues retrieved via a REST API, they might be vulnerable to injection attacks. Malicious user content could set environment variables that might be exploited to compromise the agent host.
+In `restricted` mode, the `setvariable` command remains permissible, so caution is necessary because pipeline variables are exported as environment variables to subsequent tasks. If tasks output user-provided data, such as open issues retrieved via a REST API, they might be vulnerable to injection attacks. Malicious user content could set environment variables that might be exploited to compromise the agent host.
 
 To mitigate this risk, pipeline authors can explicitly declare which variables are settable by using the `setvariable` logging command. When you specify an empty list, all variable setting is disallowed.
 
@@ -178,7 +177,7 @@ steps:
           displayName: 'Disabled by template: ${{ step.displayName }}'
 ```
 
-In the following pipeline that extends the preceding template, the script steps are stripped out and not run.
+In the following pipeline that extends this template, the script steps are stripped out and not run.
 
 ```yaml
 # azure-pipelines.yml
