@@ -255,6 +255,26 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
     :::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
 
+### [Workload Identity Federation](#tab/wif)
+
+1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+
+1. Select **Service connections** from the left pane.
+
+1. Select **New service connection**, and then select **Docker Registry** then **Next**.
+
+1. Select **Azure Container Registry**, and then select *Workload Identity federation* as your **Authentication Type**.
+
+1. Select your **Subscription** from the dropdown menu.
+
+1. Select your **Azure container registry** from the list.
+
+1. Enter a name for your service connection.
+
+1. Select **Save** when you are done.
+
+    :::image type="content" source="../media/docker-wif-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection for workload identity federation.":::
+
 * * *
 
 ## Build and publish to Azure Container Registry

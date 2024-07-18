@@ -500,7 +500,7 @@ From the administrative **Project settings** page, you can configure settings av
       **Service connections**
    :::column-end:::
    :::column span="2":::
-      - [Manage service connections in Azure Pipelines](../../pipelines/library/service-endpoints.md#project-level-permissions)
+      - [Manage service connections in Azure Pipelines](../../pipelines/policies/permissions.md#set-service-connection-project-permissions)
    :::column-end:::
    :::column span="2":::
       For more information, see a [list of common service connection types](../../pipelines/library/service-endpoints.md#common-service-connection-types).

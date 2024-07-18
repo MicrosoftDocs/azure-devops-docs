@@ -50,7 +50,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Maven](#tab/maven)
 
-- [Publish Maven Artifacts](../get-started-maven.md#publish-artifacts)
+- [Publish Maven Artifacts](../get-started-maven.md#publish-packages)
 
 #### [Gradle](#tab/gradle)
 
