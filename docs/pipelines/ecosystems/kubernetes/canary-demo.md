@@ -33,7 +33,7 @@ This tutorial uses Azure Kubernetes Service (AKS) with [Azure Resource Manager s
   >[!IMPORTANT]
   >During the following procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-### Repository files
+### GitHub repository files
 
 The GitHub repository contains the following files:
 
@@ -61,19 +61,19 @@ helm install sampleapp prometheus-community/kube-prometheus-stack
 ## Create service connections
 
 1. In your Azure DevOps project, go to **Project settings** > **Pipelines** > **Service connections**.
-1. Create a [Docker registry service connection](../../library/service-endpoints.md#azure-container-registry) named **azure-pipelines-canary-acr** that's associated with your Azure Container Registry instance.
-1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) named **azure-pipelines-canary-k8s** for your Kubernetes cluster and namespace you want to deploy to.
+1. Create a [Docker Registry service connection](../../library/service-endpoints.md#azure-container-registry) named **azure-pipelines-canary-acr** that's associated with your Azure Container Registry instance.
+1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) named **azure-pipelines-canary-k8s** for your Kubernetes cluster in the default namespace.
 
 ## Set up continuous integration
 
-1. In your Azure DevOps project, go to **Pipelines** > **New pipeline**.
-1. Select **GitHub** for your code location, and select your forked repository.
+1. In your Azure DevOps project, go to **Pipelines** > **Create Pipeline** or **New pipeline**.
+1. Select **GitHub** for your code location, and select your forked **azure-pipelines-canary-k8s** repository.
 1. On the **Configure** tab, choose **Starter pipeline**.
 1. On the **Review** tab, replace the pipeline YAML with the following code.
 
     ```YAML
     trigger:
-    - main
+    - master
     
     pool:
       vmImage: ubuntu-latest
@@ -93,12 +93,17 @@ helm install sampleapp prometheus-community/kube-prometheus-stack
           $(Build.BuildId)
     ```
 
-1. If the Docker registry service connection that you created is associated with `example.azurecr.io`, then the image is to `example.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)`. In *manifests/deployment.yml*, replace `<foobar>` with your container registry's URL, for example `example.azurecr.io/azure-pipelines-canary-k8s`.
-1. Select **Save and run** to save and run the pipeline.
+   If the Docker registry service connection that you created is associated with a container registry named `example.azurecr.io`, then the image is to `example.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)`.
+
+1. Select **Save and run** and ensure the job runs successfully.
+
+### Edit the manifest file
+
+In your repository fork, edit *manifests/deployment.yml* to replace `<foobar>` with your container registry's URL, for example `example.azurecr.io/azure-pipelines-canary-k8s`. 
 
 ## Set up continuous deployment
 
-Next, set up continuous deployment, including deploying the canary stage and promoting or rejecting the canary through manual approval.
+Now, set up continuous deployment, deploy the canary stage, and promote or reject the canary through manual approval.
 
 ### Create an environment
 
@@ -118,7 +123,7 @@ You can deploy with YAML or Classic.
 ### Add the canary stage
 
 1. Go to **Pipelines**, select the pipeline you created, and select **Edit**.
-1. Replace the pipeline YAML with the following code.
+1. Replace the entire pipeline YAML with the following code.
 
    This code changes the `Docker@2` step you ran previously to use a stage, and adds two more steps to copy the manifests and *misc* directories as artifacts for consecutive stages to use.
 
@@ -126,7 +131,7 @@ You can deploy with YAML or Classic.
 
     ```YAML
     trigger:
-    - main
+    - master
     
     pool:
       vmImage: ubuntu-latest
@@ -256,7 +261,7 @@ You can intervene manually with YAML or Classic.
 
 #### [YAML](#tab/yaml/)
 
-1. Follow the previous instructions for creating an environment to create a new environment called *akspromote* in the existing **canarydemo** namespace you created previously.
+1. Create a new Kubernetes environment called *akspromote* in the **canarydemo** namespace you created previously.
 1. Open the new **akspromote** environment from the list of environments, and select **Approvals** on the **Approvals and checks** tab.
 1. On the **Approvals** screen, add your own user account under **Approvers**.
 1. Expand **Advanced**, and make sure **Allow approvers to approve their own runs** is selected.
@@ -265,7 +270,7 @@ You can intervene manually with YAML or Classic.
 ### Add promote and reject stages to the pipeline
 
 1. Go to **Pipelines**, select the pipeline you created, and select **Edit**.
-1. Add the following `PromoteRejectCanary` stage at the end of your YAML file to promote the changes.
+1. Add the following `PromoteRejectCanary` stage at the end of your YAML file that promotes the changes.
 
     ```YAML
     - stage: PromoteRejectCanary
@@ -293,7 +298,7 @@ You can intervene manually with YAML or Classic.
                   imagePullSecrets: '$(imagePullSecret)'
     ```
 
-1. Add the following `RejectCanary`stage at the end of the file to roll back the changes.
+1. Add the following `RejectCanary`stage at the end of the file that rolls back the changes.
     
     ```YAML
     - stage: RejectCanary
@@ -356,12 +361,13 @@ You can intervene manually with YAML or Classic.
 
 ## Deploy a stable version
 
-For the first run of the pipeline the stable version of the workloads, and their baseline or canary versions, don't exist in the cluster. Deploy a stable version of the `sampleapp` workload as follows.
+For the first run of the pipeline, the stable version of the workloads, and their baseline or canary versions, don't exist in the cluster. Deploy a stable version of the `sampleapp` workload as follows.
+
 You can deploy a stable version with YAML or Classic.
 
 ### [YAML](#tab/yaml/)
 
-1. In *app/app.py*, change `success_rate = 5` to `success_rate = 10`. This change triggers the pipeline, building and pushing the image to the container registry, and also triggers the `DeployCanary` stage.
+1. In *app/app.py*, change `success_rate = 50` to `success_rate = 100`. This change triggers the pipeline, building and pushing the image to the container registry, and also triggers the `DeployCanary` stage.
 1. Because you configured an approval on the `akspromote` environment, the release waits before running that stage. On the build run summary page, select **Review** and then select **Approve**.
 
 Once approved, the pipeline deploys the stable version of the `sampleapp` workload in *manifests/deployment.yml* to the namespace.
@@ -378,7 +384,7 @@ Once approved, the pipeline deploys the stable version of the `sampleapp` worklo
 
 The stable version of the `sampleapp` workload now exists in the cluster. Next, make the following change to the simulation application:
  
-In *app/app.py*, change `success_rate = 10` to `success_rate = 20`.
+In *app/app.py*, change `success_rate = 100` to `success_rate = 20`.
 
 This change triggers the build pipeline, resulting in the build and push of the image to the container registry. This process in turn triggers the release pipeline and begins the **Deploy canary** stage.
 
