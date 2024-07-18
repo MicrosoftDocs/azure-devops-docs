@@ -130,7 +130,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![Sprint Board Pivot Filter Actions.](media/work/sprintBoardPivotFilterActions.png)| 
 | Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![Backlog Board Pivot Filter Actions.](media/work/backlogBoardPivotFilterActions.png)| 
 | Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    |   | 
-| Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Product Backlog Custom Tab](../../media/backlog-tab/product-backlog-tab.png)| 
+| Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Product Backlog Custom Tab](media/work/productBacklogTab.png)| 
 | Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![Iterations Backlog Custom Tab](../../media/backlog-tab/iteration-backlog-tab.png)| 
 | Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![Portfolio Backlog Custom Pane](../../media/backlog-pane/portfolio-backlog-pane.png)| 
 | Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![Product Backlog Custom Pane](../../media/backlog-pane/product-backlog-pane.png)| 
