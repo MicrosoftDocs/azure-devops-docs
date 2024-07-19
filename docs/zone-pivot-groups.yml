@@ -30,5 +30,5 @@ groups:
   pivots:
   - id: psresourceget
     title: PSResourceGet
-  - id: PowerShellGet
-    title: powershelget
+  - id: powershelget
+    title: PowerShellGet

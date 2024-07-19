@@ -33,9 +33,9 @@ In this article, you'll learn how to:
 
 - Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
-- Install [PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget).
+- Install [PSResourceGet](/powershell/gallery/powershellget/install-powershellget).
 
-- Install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore) modules.
+- Install the [SecretManagement and SecretStore](/powershell/utility-modules/secretmanagement/get-started/using-secretstore) modules.
 
 > [!NOTE]
 > Azure Artifacts Credential Provider is not supported with PSResourceGet.
