@@ -24,3 +24,11 @@ groups:
     title: Access from Azure DevOps
   - id: access-from-self-hosted-agent
     title: Access from a self-hosted agent
+- id: powershell-versions
+  title: PSResourceGet and PowerShellGet 
+  prompt: Choose a version
+  pivots:
+  - id: PSResourceGet
+    title: PSResourceGet
+  - id: PowerShellGet
+    title: PowerShellGet

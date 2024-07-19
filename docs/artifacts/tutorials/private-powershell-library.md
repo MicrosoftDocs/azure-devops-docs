@@ -7,6 +7,7 @@ author: ramiMSFT
 ms.date: 07/03/2024
 monikerRange: 'azure-devops'
 "recommendations": "true"
+zone_pivot_groups: powershell-versions
 ---
 
 # Use an Azure Artifacts feed as a private PowerShell repository
@@ -16,6 +17,176 @@ monikerRange: 'azure-devops'
 Azure Artifacts provides a convenient solution for sharing PowerShell scripts. By using Azure Artifacts feeds, you can seamlessly publish your PowerShell modules from the command line and control access to them through your feed settings. 
 This article guides you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules.
 
+::: zone pivot="PSResourceGet"  
+
+In this article, you'll learn how to:
+
+>[!div class="checklist"]
+> * Create a Personal Access Token
+> * Create a PowerShell module
+> * Create a SecretStore vault and register a repository
+> * Publish and consume packages from a feed
+
+## Prerequisites
+
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+
+- Install [PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget?view=powershellget-3.x#install-microsoftpowershellpsresourceget).
+
+- Install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore?view=ps-modules) modules.
+
+> [!NOTE]
+> Azure Artifacts Credential Provider is not supported with PSResourceGet.
+
+## Create a personal access token
+
+A personal access token acts as your digital identity and serves as an alternative password to authenticate you with Azure DevOps.
+
+1. Navigate to your Azure DevOps organization `https://dev.azure.com/<ORGANIZATION_NAME>/`
+
+1. Select the user settings icon, select **Personal access tokens**, and then select **New Token**.
+
+1. Enter a name for your PAT, set an **Expiration** date, select **Custom defined**, and then select **Packaging** > **Read, write & manage**.
+
+1. Select **Create** when you're done, and make sure you copy and store your PAT in a safe location.
+
+    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot that shows how to set up a new personal access token.":::
+
+## Create a PowerShell module
+
+If you don't have your own module, follow the instructions in this section to create a sample PowerShell module. Otherwise, skip to the next step:
+
+1. Create a new folder *PowerShell-Demo*. Navigate into your folder and create a new file *PowerShell-Demo.psm1*.
+
+1. Paste the following script into your *PowerShell-Demo.psm1* file:
+
+    ```powershell
+    Function PowerShell-Demo{
+        Write-Host "Hello World!"
+    }
+    ```
+
+1. Generate the module manifest by running the following command in your *PowerShell-Demo* directory:
+
+    ```powershell
+    New-ModuleManifest -Path .\PowerShell-Demo.psd1
+    ```
+
+1. Open your *PowerShell-Demo.psd1* file and locate the `RootModule` variable. This setting specifies the main script file that PowerShell loads when the module is imported. Replace the empty string with the path to your *PowerShell-Demo.psm1* file:
+
+    ```powershell
+    RootModule = 'PowerShell-Demo.psm1'
+    ```
+
+1. The `FunctionsToExport` section specifies which functions are accessible to users when they import your module. Include your *PowerShell-Demo* function:
+
+    ```powershell
+    FunctionsToExport = @('PowerShell-Demo')
+    ```
+
+1. Locate the `FileList` section, which lists the files included when packaging the module. Add the file you wish to package with your module:
+
+    ```powershell
+    FileList = @('./PowerShell-Demo.psm1')
+    ```
+
+## Register a repository
+
+1. Run the following command to create a credential object. Replace the placeholders with the correct information.
+
+    ```powershell
+    $username = "<USER_NAME>"
+    $patToken = "<PERSONAL_ACCESS_TOKEN>" | ConvertTo-SecureString -AsPlainText -Force
+
+    $credentials = New-Object System.Management.Automation.PSCredential($username, $patToken)
+    ```
+
+1. Ensure that *SecretManagement* and *SecretStore* are installed, then run the following command to create a vault and add a secret:
+
+    ```powershell
+    Register-SecretVault -Name "MySecretVault" -ModuleName Microsoft.PowerShell.SecretStore -DefaultVault
+
+    Set-Secret -Name "MyCredential" -Secret $credentials -Vault "MySecretVault"
+
+    $CredentialInfo = [Microsoft.PowerShell.PSResourceGet.UtilClasses.PSCredentialInfo]::new('MySecretVault', 'MyCredential')
+    ```
+
+1. To verify if the vault and secret were successfully created, run the following command to list all your secrets:
+
+    ```powershell
+    PS > Get-SecretInfo
+    
+    Name            Type         VaultName
+    ----            ----         ---------
+    MyCredential    PSCredential MySecretVault
+
+    ```
+
+1. Run the following command to register your PowerShell repository. You can find the `SourceLocation` link by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe**, under the **Project setup** section > source URL.
+
+    - Project-scoped feed:
+
+        ```powershell
+        Register-PSResourceRepository -Name "PowershellPSResourceRepository" `
+            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" `
+            -Trusted `
+            -CredentialInfo $CredentialInfo
+        ```
+
+    - Organization-scoped feed:
+
+        ```powershell
+        Register-PSResourceRepository -Name "PowershellPSResourceRepository" `
+            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" `
+            -Trusted `
+            -CredentialInfo $CredentialInfo
+        ```
+
+    > [!TIP]
+    > Some versions of PowerShell may require starting a new session after running the `Register-PSResourceRepository` cmdlet to prevent encountering the *Unable to resolve package source* warning.
+
+1. To verify if the repository was successfully registered, run the following command to retrieve all registered repositories for the current user:
+
+    ```powershell
+    Get-PSResourceRepository
+    ```
+
+> [!NOTE]
+> If you encounter the error: *Response status code does not indicate success: 404 (Not Found).*, make sure that your source URL points to `nuget/v3/index.json` instead of `nuget/v2`.
+
+## Publish a package
+
+Run the following command to publish the package to your feed:
+
+```powershell
+Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -ApiKey (Get-Secret <SECRET_NAME>) 
+```
+
+**Example**:
+
+```powershell
+PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -ApiKey (Get-Secret MyNewCredential) -verbose
+VERBOSE: Performing the operation "Publish-PSResource" on target "Publish resource
+'C:\AzureDevOps\Demos\PowerShellDemo\scripts\' from the machine".
+VERBOSE: The newly created nuspec is:
+C:\Users\xxxx\AppData\Local\Temp\xxxxxxxxx\PowerShell-Demo.nuspec
+VERBOSE: credential successfully read from vault and set for repository: FabrikamFiberFeed
+VERBOSE: Successfully packed the resource into a .nupkg
+VERBOSE: Successfully published the resource to
+'https://pkgs.dev.azure.com/ramiMSFTDevOps/DemoProject/_packaging/FabrikamFiberFeed/nuget/v3/index.json'
+VERBOSE: Deleting temporary directory 'C:\Users\xxxx\AppData\Local\Temp\xxxxxxx'
+```
+
+:::image type="content" source="media/publish-psresource-example-package.png" alt-text="A screenshot displaying the PowerShell demo package published to the feed.":::
+
+:::zone-end
+
+
+
+::: zone pivot="PowerShellGet"
+
 In this article, you'll learn how to:
 
 >[!div class="checklist"]
@@ -23,8 +194,6 @@ In this article, you'll learn how to:
 > * Create, package, and publish a PowerShell module
 > * Connect to a feed as a PowerShell repository
 > * Register and install a PowerShell module using Azure Pipelines
-
-::: zone pivot="PowerShellGet"
 
 ## Prerequisites
 
@@ -228,166 +397,6 @@ steps:
 
 :::zone-end
 
-
-::: zone pivot="PSResourceGet"  
-
-
-
-## Prerequisites
-
-- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-
-- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
-
-- Install [PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget?view=powershellget-3.x#install-microsoftpowershellpsresourceget).
-
-- Install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore?view=ps-modules) modules.
-
-> [!NOTE]
-> Azure Artifacts Credential Provider is not supported with PSResourceGet.
-
-## Create a personal access token
-
-A personal access token acts as your digital identity and serves as an alternative password to authenticate you with Azure DevOps.
-
-1. Navigate to your Azure DevOps organization `https://dev.azure.com/<ORGANIZATION_NAME>/`
-
-1. Select the user settings icon, select **Personal access tokens**, and then select **New Token**.
-
-1. Enter a name for your PAT, set an **Expiration** date, select **Custom defined**, and then select **Packaging** > **Read, write & manage**.
-
-1. Select **Create** when you're done, and make sure you copy and store your PAT in a safe location.
-
-    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot that shows how to set up a new personal access token.":::
-
-## Create a PowerShell module
-
-If you don't have your own module, follow the instructions in this section to create a sample PowerShell module. Otherwise, skip to the next step:
-
-1. Create a new folder *PowerShell-Demo*. Navigate into your folder and create a new file *PowerShell-Demo.psm1*.
-
-1. Paste the following script into your *PowerShell-Demo.psm1* file:
-
-    ```powershell
-    Function PowerShell-Demo{
-        Write-Host "Hello World!"
-    }
-    ```
-
-1. Generate the module manifest by running the following command in your *PowerShell-Demo* directory:
-
-    ```powershell
-    New-ModuleManifest -Path .\PowerShell-Demo.psd1
-    ```
-
-1. Open your *PowerShell-Demo.psd1* file and locate the `RootModule` variable. This setting specifies the main script file that PowerShell loads when the module is imported. Replace the empty string with the path to your *PowerShell-Demo.psm1* file:
-
-    ```powershell
-    RootModule = 'PowerShell-Demo.psm1'
-    ```
-
-1. The `FunctionsToExport` section specifies which functions are accessible to users when they import your module. Include your *PowerShell-Demo* function:
-
-    ```powershell
-    FunctionsToExport = @('PowerShell-Demo')
-    ```
-
-1. Locate the `FileList` section, which lists the files included when packaging the module. Add the file you wish to package with your module:
-
-    ```powershell
-    FileList = @('./PowerShell-Demo.psm1')
-    ```
-
-## Register repository
-
-1. Run the following command to create a credential object. Replace the placeholders with the correct information.
-
-    ```powershell
-    $username = "<USER_NAME>"
-    $patToken = "<PERSONAL_ACCESS_TOKEN>" | ConvertTo-SecureString -AsPlainText -Force
-
-    $credentials = New-Object System.Management.Automation.PSCredential($username, $patToken)
-    ```
-
-1. Ensure that *SecretManagement* and *SecretStore* are installed, then run the following command to create a vault and add a secret:
-
-    ```powershell
-    Register-SecretVault -Name "MySecretVault" -ModuleName Microsoft.PowerShell.SecretStore -DefaultVault
-
-    Set-Secret -Name "MyCredential" -Secret $credentials -Vault "MySecretVault"
-
-    $CredentialInfo = [Microsoft.PowerShell.PSResourceGet.UtilClasses.PSCredentialInfo]::new('MySecretVault', 'MyCredential')
-    ```
-
-1. To verify if the vault and secret were successfully created, run the following command to list all your secrets:
-
-    ```powershell
-    PS > Get-SecretInfo
-    
-    Name            Type         VaultName
-    ----            ----         ---------
-    MyCredential    PSCredential MySecretVault
-
-    ```
-
-1. Run the following command to register your PowerShell repository. You can find the `SourceLocation` link by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe**, under the **Project setup** section > source URL.
-
-    - Project-scoped feed:
-
-        ```powershell
-        Register-PSResourceRepository -Name "PowershellPSResourceRepository" `
-            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" `
-            -Trusted `
-            -CredentialInfo $CredentialInfo
-        ```
-
-    - Organization-scoped feed:
-
-        ```powershell
-        Register-PSResourceRepository -Name "PowershellPSResourceRepository" `
-            -Uri "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" `
-            -Trusted `
-            -CredentialInfo $CredentialInfo
-        ```
-
-    > [!TIP]
-    > Some versions of PowerShell may require starting a new session after running the `Register-PSResourceRepository` cmdlet to prevent encountering the *Unable to resolve package source* warning.
-
-1. To verify if the repository was successfully registered, run the following command to retrieve all registered repositories for the current user:
-
-    ```powershell
-    Get-PSResourceRepository
-    ```
-
-> [!NOTE]
-> If you encounter the error: *Response status code does not indicate success: 404 (Not Found).*, make sure that your source URL points to `nuget/v3/index.json` instead of `nuget/v2`.
-
-## Publish a package
-
-Run the following command to publish the package to your feed:
-
-```powershell
-Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -ApiKey (Get-Secret <SECRET_NAME>) 
-```
-
-**Example**:
-
-```powershell
-PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -ApiKey (Get-Secret MyNewCredential) -verbose
-VERBOSE: Performing the operation "Publish-PSResource" on target "Publish resource
-'C:\AzureDevOps\Demos\PowerShellDemo\scripts\' from the machine".
-VERBOSE: The newly created nuspec is:
-C:\Users\xxxx\AppData\Local\Temp\xxxxxxxxx\PowerShell-Demo.nuspec
-VERBOSE: credential successfully read from vault and set for repository: FabrikamFiberFeed
-VERBOSE: Successfully packed the resource into a .nupkg
-VERBOSE: Successfully published the resource to
-'https://pkgs.dev.azure.com/ramiMSFTDevOps/DemoProject/_packaging/FabrikamFiberFeed/nuget/v3/index.json'
-VERBOSE: Deleting temporary directory 'C:\Users\xxxx\AppData\Local\Temp\xxxxxxx'
-```
-
-:::image type="content" source="media/publish-psresource-example-package.png" alt-text="A screenshot displaying the PowerShell demo package published to the feed.":::
-
-:::zone-end
 
 
 
