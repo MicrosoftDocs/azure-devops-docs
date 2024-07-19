@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 To sign and provision a mobile app for Android or Apple operating systems, you need to manage signing certificates and Apple [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage certificates and profiles for signing and provisioning your app.
 
 > [!NOTE]  
-> You can use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. For more information, see [Build and release agents](../../agents/agents.md).
+> You need at least one agent to run a build or release. You can use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. For more information, see [Build and release agents](../../agents/agents.md).
 
 <a name="android"></a>
 ## Sign your Android app
@@ -26,7 +26,7 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
 1. Obtain a keystore file that contains your signing certificate. The [Android documentation](https://developer.android.com/studio/publish/app-signing.html#generate-key) describes the process of generating a keystore file and its corresponding key.
 
-1. In Azure Pipelines, go to **Libraries** > **Secure files**. Select the **+ Secure file** and upload your keystore file to the [secure files library](../../library/secure-files.md). During upload, your keystore is encrypted and securely stored.
+1. In Azure Pipelines, go to **Libraries** > **Secure files**. Select **+ Secure file** and upload your keystore file to the [secure files library](../../library/secure-files.md). During upload, your keystore is encrypted and securely stored.
 
 ### Add the signing task to the pipeline
 
@@ -220,7 +220,9 @@ sudo security import <certificate.p12> -P <password>
 
 #### Preinstall the provisioning profile
 
-To install the provisioning profile, run the following command from a macOS Terminal window of the build agent machine . Replace `<profile>` with the path to your provisioning profile file, and replace `<UUID>` with the provisioning profile UUID, which is the provisioning profile filename before the *.mobileprovision* extension.
+Find the full name of your signing identity by opening the Terminal app and entering `security find-identity -v -p codesigning`. You see a list of signing identities in the form `iPhone Developer/Distribution: Developer Name (ID)`. If the identity is invalid, you see something like `(CSSMERR_TP_CERT_REVOKED)` after the identity.
+
+To install the provisioning profile, run the following command from a macOS Terminal window of the build agent machine. Replace `<profile>` with the path to your provisioning profile file, and replace `<UUID>` with the provisioning profile UUID, which is the provisioning profile filename before the *.mobileprovision* extension.
 
 ```
 sudo cp <profile> ~/Library/MobileDevice/Provisioning Profiles/<UUID>.mobileprovision
@@ -268,6 +270,8 @@ For Xamarin.iOS:
 
 ---
 
+Save your build pipeline. The build agent can now securely sign and provision your app.
+
 #### Authorize the agent to access the keychain
 
 If you use the Xamarin.iOS task and run the build agent as a launchd service, you need to set up the build to unlock the default keychain.
@@ -275,13 +279,9 @@ If you use the Xamarin.iOS task and run the build agent as a launchd service, yo
 1. Go to the **Variables** tab and add a new variable named **KEYCHAIN_PWD**. Set the value as the password to the default keychain, which is normally the password for the user that starts the agent. Be sure to select the **lock** icon to secure this password.
 1. For the Xamarin.iOS task, under the **Signing & Provisioning** section, enable the **Unlock default keychain** checkbox and set the **Default keychain password** field to `$(KEYCHAIN_PWD)`.
 
-Save your build pipeline. The build agent can now securely sign and provision your app.
-
----
-
 ## Related content
 
-- You need at least one agent to run a build or release. For more information about agents, see [Azure Pipelines agents](../../agents/agents.md).
+- For more information about agents, see [Azure Pipelines agents](../../agents/agents.md).
 - For more information about selecting agent pools and queueing builds and releases, see [Create and manage agent pools](../../agents/pools-queues.md).
 - For more information about setting variables in pipelines, see [Define variables](../../process/variables.md).
 - For pipeline troubleshooting, see [Troubleshoot pipeline runs](../../troubleshooting/troubleshooting.md).
