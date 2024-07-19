@@ -17,7 +17,7 @@ zone_pivot_groups: powershell-versions
 Azure Artifacts provides a convenient solution for sharing PowerShell scripts. By using Azure Artifacts feeds, you can seamlessly publish your PowerShell modules from the command line and control access to them through your feed settings. 
 This article guides you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules.
 
-::: zone pivot="PSResourceGet"  
+::: zone pivot="psresourceget"  
 
 In this article, you'll learn how to:
 
@@ -33,9 +33,9 @@ In this article, you'll learn how to:
 
 - Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
-- Install [PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget?view=powershellget-3.x#install-microsoftpowershellpsresourceget).
+- Install [PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget).
 
-- Install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore?view=ps-modules) modules.
+- Install the [SecretManagement and SecretStore](https://learn.microsoft.com/en-us/powershell/utility-modules/secretmanagement/get-started/using-secretstore) modules.
 
 > [!NOTE]
 > Azure Artifacts Credential Provider is not supported with PSResourceGet.
@@ -202,7 +202,7 @@ VERBOSE: Deleting temporary directory 'C:\Users\xxxx\AppData\Local\Temp\xxxxxxx'
 
 
 
-::: zone pivot="PowerShellGet"
+::: zone pivot="powershelget"
 
 In this article, you'll learn how to:
 

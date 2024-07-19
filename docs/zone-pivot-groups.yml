@@ -28,7 +28,7 @@ groups:
   title: PSResourceGet and PowerShellGet 
   prompt: Choose a version
   pivots:
-  - id: PSResourceGet
+  - id: psresourceget
     title: PSResourceGet
   - id: PowerShellGet
-    title: PowerShellGet
+    title: powershelget
