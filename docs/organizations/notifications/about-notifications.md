@@ -143,10 +143,9 @@ The preferred email address for your organization profile gets notifications, by
 
 ## Integrating with other services
 
-If your team uses an external service to collaborate&mdash;such as Campfire or Slack&mdash;you can configure notifications for these services. We support the following out of the box services.
+If your team uses an external service to collaborate&mdash;such as Trello or Slack&mdash;you can configure notifications for these services. We support the following out of the box services.
 
-- [Campfire](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
-- [HipChat](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
+- [Trello](../../service-hooks/services/trello.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
 - [Slack](../../service-hooks/services/slack.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)  
 - [Microsoft Teams](../../service-hooks/services/teams.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
 
