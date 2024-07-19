@@ -487,14 +487,14 @@ For the past several years, all our pipelines investments have been in the area 
 <table>
     <thead>
         <tr>
-            <th>Version - Timeframe</th>
+            <th>Timeframe</th>
             <th>Feature</th>
             <th>Area</th>
         </tr>
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="15"><strong>2022.3 - 2025 H1</strong></td>
+        <td rowspan="15"><strong>2025 H1 (Azure DevOps Server 2022.3)</strong></td>
         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
         <td>Boards</td>
       </tr>
@@ -555,7 +555,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Pipelines</td>
       </tr>
       <tr>
-      <td rowspan="5"><strong>2022.4 - 2025 H2</strong></td>
+      <td rowspan="5"><strong>2025 H2 (Azure DevOps Server 2022.4)</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
         <td>Test Plans</td>
       </tr>
@@ -575,7 +575,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
          <td>Boards</td>         
       </tr> 
-      <td rowspan="25"><strong>TBD - Future</strong></td>
+      <td rowspan="25"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
