@@ -181,6 +181,23 @@ VERBOSE: Deleting temporary directory 'C:\Users\xxxx\AppData\Local\Temp\xxxxxxx'
 
 :::image type="content" source="media/publish-psresource-example-package.png" alt-text="A screenshot displaying the PowerShell demo package published to the feed.":::
 
+## Install a package
+
+1. To confirm if the module is available in your repository, use the following command to search for it:
+
+    ```powershell
+    Find-PSResource -Name <RESOURCE_NAME> -Repository <REPOSITORY_NAME> -verbose
+    ```
+
+1. Run the following command to install the latest stable version of your module:
+
+    ```powershell
+    Install-PSResource <MODULE_NAME>
+    ```
+
+> [!TIP]
+> If you encounter the error: *Exception calling "WriteObject".*, start a new PowerShell window and run `Get-SecretInfo`. Enter your vault password before running *Find-PSResource* and *Install-PSResource*, as the SecretStore timeout period can expire. The default *PasswordTimeout* is 900 seconds, but you can modify this value as needed. See [Use the SecretStore in automation](/powershell/utility-modules/secretmanagement/how-to/using-secrets-in-automation) for more details.
+
 :::zone-end
 
 
