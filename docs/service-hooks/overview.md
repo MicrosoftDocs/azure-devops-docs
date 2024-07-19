@@ -61,7 +61,7 @@ The following services are available as the target of service hooks. For more in
 |[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group. |
 |[Slack](./services/slack.md)   |  All | Post a message to a channel. |
 |[Trello](./services/trello.md)  | All | Create a card or list. |
-|[UserVoice]((https://www.uservoice.com) | Work item created, work item updated | Send linked work item event. Subscriptions are managed through UserVoice. |
+|[UserVoice](https://www.uservoice.com) | Work item created, work item updated | Send linked work item event. Subscriptions are managed through UserVoice. |
 |[Web Hooks](./services/webhooks.md) | All | Post via HTTP. |
 |[Workplace Message Apps](https://aka.ms/WorkplaceMessagingApps-Integration) | All | Send notifications. Subscriptions are managed through Workplace Message Apps.|
 |[Zapier](https://zapier.com/apps/webhook/integrations) | All | Send notification. Subscriptions are managed through Zapier. |
