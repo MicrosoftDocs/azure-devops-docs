@@ -25,13 +25,27 @@ If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the follow
 
 Some Azure DevOps CLI commands that don't call into Azure DevOps, like `az devops configure` and `az devops -h`, do not require any authentication, but most commands interact with Azure DevOps and do require authentication. You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
 
+#[Bash](#tab/bash)
+
 ```yml
 - bash: |
-    az pipelines build list
+    az pipelines build list --organization '$(System.TeamFoundationCollectionUri)' --project '$(System.TeamProject)'
   displayName: 'Show build list'
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 ```
+
+#[PowerShell](#tab/powershell)
+
+```yml
+- pwsh: |
+    az pipelines build list --organization '$(System.TeamFoundationCollectionUri)' --project '$(System.TeamProject)'
+  displayName: 'Show build list '
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+```
+
+---
 
 If you have multiple steps that require authentication, add the `AZURE_DEVOPS_EXT_PAT` environment variable to each step.
 
@@ -47,6 +61,8 @@ The following example shows how to log in to Azure DevOps and run a few commands
 
 This example authenticates with Azure DevOps CLI using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
 
+#[Bash](#tab/bash)
+
 ```yml
 trigger:
 - main
@@ -58,7 +74,7 @@ steps:
 - bash: az --version
   displayName: 'Show Azure CLI version'
 
-- bash: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
+- bash: az devops configure --defaults organization='$(System.TeamFoundationCollectionUri)' project='$(System.TeamProject)' --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - bash: |
@@ -69,6 +85,31 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 
 ```
+#[PowerShell](#tab/powershell)
+
+```yml
+trigger:
+- main
+
+pool:
+  vmImage: `windows-latest`
+
+steps:
+- bash: az --version
+  displayName: 'Show Azure CLI version'
+
+- pwsh: az devops configure --defaults organization='$(System.TeamFoundationCollectionUri)' project='$(System.TeamProject)' --use-git-aliases true
+  displayName: 'Set default Azure DevOps organization and project'
+
+- pwsh: |
+    az pipelines build list
+    git pr list
+  displayName: 'Show build list and PRs'
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+```
+
+---
 
 ## Azure DevOps CLI with macOS hosted agents
 
@@ -89,6 +130,8 @@ Microsoft-hosted agents [typically deploy weekly updates](https://github.com/act
 
 If a newer version of Azure CLI is released and the hosted images do not yet have the latest version, you can upgrade the Azure CLI version to the latest version by running the following commands in your pipeline.
 
+#[Bash](#tab/bash)
+
 ```yml
 # Specify python version
 - task: UsePythonVersion@0
@@ -101,10 +144,28 @@ If a newer version of Azure CLI is released and the hosted images do not yet hav
   displayName: 'Upgrade Azure CLI'
 ```
 
+#[PowerShell](#tab/powershell)
+
+```yml
+# Specify python version
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    architecture: 'x64'
+
+# Update to latest Azure CLI version
+- pwsh: pip install --pre azure-cli
+  displayName: 'Upgrade Azure CLI'
+```
+
+---
+
 
 ## Conditionally install the Azure DevOps CLI extension
 
 If you have a pipeline that runs on several Microsoft-hosted VM images, some of which do not have the Azure DevOps CLI extension installed, you can perform that step conditionally, as shown in the following example.
+
+#[Bash](#tab/bash)
 
 ```yml
 trigger:
@@ -143,7 +204,7 @@ steps:
 
 # Azure DevOps CLI extension call that does not require login or credentials
 # since it configures the local environment
-- bash: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
+- bash: az devops configure --defaults organization='$(System.TeamFoundationCollectionUri)' project='$(System.TeamProject)' --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 # Call that does require credentials, use the System.AccessToken PAT
@@ -155,6 +216,60 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'Show build list and PRs'
 ```
+
+#[PowerShell](#tab/powershell)
+
+```yml
+trigger:
+- main
+
+# Run on multiple Microsoft-hosted agent images
+strategy:
+  matrix:
+    linux22:
+      imageName: "ubuntu-22.04"
+    linux20:
+      imageName: "ubuntu-20.04"
+    mac13:
+      imageName: "macos-13"
+    mac12:
+      imageName: "macos-12"
+    mac11:
+      imageName: "macos-11"
+    windows2019:
+      imageName: "windows-2019"
+    windows2022:
+      imageName: "windows-2022"
+  maxParallel: 3
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+- pwsh: az --version
+  displayName: 'Show Azure CLI version'
+
+# Install Azure DevOps CLI extension only on macOS images
+- pwsh: az extension add -n azure-devops
+  condition: contains(variables.imageName, 'windows')
+  displayName: 'Install Azure DevOps extension'
+
+# Azure DevOps CLI extension call that does not require login or credentials
+# since it configures the local environment
+- pwsh: az devops configure --defaults organization='$(System.TeamFoundationCollectionUri)' project='$(System.TeamProject)' --use-git-aliases true
+  displayName: 'Set default Azure DevOps organization and project'
+
+# Call that does require credentials, use the System.AccessToken PAT
+# and assign to AZURE_DEVOPS_EXT_PAT which is known to Azure DevOps CLI extension
+- pwsh: |
+    az pipelines build list
+    git pr list
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+  displayName: 'Show build list and PRs'
+```
+
+---
 
 ## Azure DevOps CLI with self-hosted agents
 
@@ -177,6 +292,8 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 * Install Azure CLI using Python
   * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
 
+#[Bash](#tab/bash)
+
   ```yml
   # Specify python version if you have side-by-side versions
   - task: UsePythonVersion@0
@@ -193,9 +310,32 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
     displayName: 'Upgrade Azure CLI'
   ```
 
+#[PowerShell](#tab/powershell)
+
+  ```yml
+  # Specify python version if you have side-by-side versions
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+      architecture: 'x64'
+  
+  # Update pip to latest
+  - pwsh: python -m pip install --upgrade pip
+    displayName: 'Upgrade pip'
+  
+  # Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
+  - pwsh: pip install --pre azure-cli
+    displayName: 'Upgrade Azure CLI'
+  ```
+
+---
+
 * Install Azure CLI DevOps extension
   * Azure CLI version [2.10.1](index.md) or higher is installed. 
   * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](/azure/devops/pipelines/tasks/reference/bash-v3).
+
+#[Bash](#tab/bash)
+
   ```yml
   # Install Azure DevOps extension
   - bash: az extension add -n azure-devops
@@ -205,7 +345,22 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
   # ...
   ```
 
+#[PowerShell](#tab/powershell)
+
+  ```yml
+  # Install Azure DevOps extension
+  - pwsh: az extension add -n azure-devops
+    displayName: 'Install Azure DevOps extension'
+  
+  # Now you can make calls into Azure DevOps CLI
+  # ...
+  ```
+
+---
+
 The following example installs Azure CLI followed by the Azure DevOps CLI extension.
+
+#[Bash](#tab/bash)
 
 ```yml
 steps:
@@ -231,9 +386,39 @@ steps:
 # ...
 ```
 
+#[PowerShell](#tab/powershell)
+
+```yml
+steps:
+# Specify python version if you have side-by-side versions
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    architecture: 'x64'
+
+# Update pip to latest
+- bash: python -m pip install --upgrade pip
+  displayName: 'Upgrade pip'
+
+# Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
+- bash: pip install --pre azure-cli
+  displayName: 'Upgrade Azure CLI'
+
+# Install Azure DevOps extension
+- bash: az extension add -n azure-devops
+  displayName: 'Install Azure DevOps extension'
+
+# Now you can make calls into Azure DevOps CLI
+# ...
+```
+
+---
+
 ## Assign the results of an Azure DevOps CLI call to a variable
 
 To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example retrieves the ID of a variable group named **Fabrikam-2023** and then uses this value in a subsequent step.
+
+#[Bash](#tab/bash)
 
 ```yml
 variables:
@@ -245,7 +430,7 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
-- bash: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
+- bash: az devops configure --defaults organization='$(System.TeamFoundationCollectionUri)' project='$(System.TeamProject)' --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - bash: echo "##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name Fabrikam-2023 --query [].id -o tsv)"
@@ -253,11 +438,39 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'Get Fabrikam-2023 variable group id'
 
-- bash: az pipelines variable-group variable list --group-id $(variableGroupId)
+- bash: az pipelines variable-group variable list --group-id '$(variableGroupId)'
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'List variables in Fabrikam-2023 variable group'
 ```
+
+#[PowerShell](#tab/powershell)
+
+```yml
+variables:
+- name: variableGroupId
+
+trigger: none
+
+pool:
+  vmImage: "windows-latest"
+
+steps:
+- pwsh: az devops configure --defaults organization='$(System.TeamFoundationCollectionUri)' project='$(System.TeamProject)' --use-git-aliases true
+  displayName: 'Set default Azure DevOps organization and project'
+
+- pwsh: echo "##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name Fabrikam-2023 --query [].id -o tsv)"
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+  displayName: 'Get Fabrikam-2023 variable group id'
+
+- pwsh: az pipelines variable-group variable list --group-id '$(variableGroupId)'
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+  displayName: 'List variables in Fabrikam-2023 variable group'
+```
+
+---
 
 For more examples of working with variables, including working with variables across jobs and stages, see [Define variables](../pipelines/process/variables.md). For examples of the query syntax used in the previous example, see [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli).
 
