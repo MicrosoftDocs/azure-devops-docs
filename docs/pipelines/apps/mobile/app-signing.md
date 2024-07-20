@@ -162,7 +162,7 @@ Install the certificate and profile during the build when you don't have endurin
 
 # [YAML](#tab/yaml)
 
-The following code uses variables for the `signingIdentity`, which is the common name of the certificate signer, and the `provisioningProfileUuid`, which is the provisioning profile filename without the *.mobileprovision* extension.
+The following code uses variables for the `signingIdentity`, or common name of the certificate signer, and the `provisioningProfileUuid`, which is the provisioning profile filename without the `.mobileprovision` extension.
 
 For Xcode:
 
@@ -218,9 +218,7 @@ sudo security import <certificate.p12> -P <password>
 
 #### Preinstall the provisioning profile
 
-Find the full name of your signing identity by opening the Terminal app and entering `security find-identity -v -p codesigning`. You see a list of signing identities in the form `iPhone Developer/Distribution: Developer Name (ID)`. If an identity is invalid, you see something like `(CSSMERR_TP_CERT_REVOKED)` after the identity.
-
-To install the provisioning profile, run the following command from a macOS Terminal window of the build agent machine. Replace `<profile>` with the path to your provisioning profile file, and replace `<UUID>` with the provisioning profile UUID, which is the provisioning profile filename before the *.mobileprovision* extension.
+To install the provisioning profile, run the following command from a macOS Terminal window of the build agent machine. Replace `<profile>` with the path to your provisioning profile file, and replace `<UUID>` with the provisioning profile UUID, which is the provisioning profile filename without the `.mobileprovision` extension.
 
 ```
 sudo cp <profile> ~/Library/MobileDevice/Provisioning Profiles/<UUID>.mobileprovision
@@ -228,20 +226,22 @@ sudo cp <profile> ~/Library/MobileDevice/Provisioning Profiles/<UUID>.mobileprov
 
 ### Reference the preinstalled files in your Xcode or Xamarin.iOS task
 
+Find the full name of your signing identity by opening the Terminal app and entering `security find-identity -v -p codesigning`. You see a list of signing identities in the form `iPhone Developer/Distribution: Developer Name (ID)`. If an identity is invalid, you see something like `(CSSMERR_TP_CERT_REVOKED)` after the identity.
+
 Add a new variable to your pipeline named **KEYCHAIN_PWD**. Set the value as the password to the default keychain, which is normally the password for the user that starts the agent. Be sure to select the **lock** icon to secure this password.
 
 # [YAML](#tab/yaml)
 
-In the `InstallAppleCertificate@2` task in your YAML pipeline, set `keychain` to `default` to allow access to the default keychain, and set `keychainPassword` to the keychain password variable.
+In the `InstallAppleCertificate@2` task in your YAML pipeline, set `keychain` to `default` to allow access to the default keychain, and set `keychainPassword` to the keychain password variable. For `signingIdentity`, provide the full name of your signing identity.
 
   ```yaml
   - task: InstallAppleCertificate@2
     inputs:
       certSecureFile: '<secure-file.p12>'
       certPwd: '$(P12password)'
+      signingIdentity: <full-signing-identity>
       keychain: default
       keychainPassword: `$(KEYCHAIN_PWD)
-      signingIdentity: <full-signing-identity>
   ```
 
 In the `InstallAppleProvisioningProfile@1` task in your YAML pipeline, set `removeProfile` to false so the profile is retained between builds.
@@ -252,26 +252,6 @@ In the `InstallAppleProvisioningProfile@1` task in your YAML pipeline, set `remo
         provProfileSecureFile: '<secure-file.mobileprovision>'
         removeProfile: false
   ```
-
-To reference the files, for Xcode:
-
-```yaml
-- task: Xcode@5
-  inputs:
-    signingOption: 'manual'
-    signingIdentity: '<full-signing-identity>'
-    provisioningProfileUuid: '<provisioning-profile-uuid>'
-```
-
-To reference the files, for Xamarin.iOS:
-
-```yaml
-- task: XamariniOS@2
-    inputs:
-      solutionFile: '**/*.iOS.csproj'
-      signingIdentity: '<full-signing-identity>'
-      signingProvisioningProfileID: '<provisioning-profile-uuid>'
-```
 
 # [Classic](#tab/classic)
 
