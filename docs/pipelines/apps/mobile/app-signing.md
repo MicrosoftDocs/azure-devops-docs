@@ -253,7 +253,7 @@ In the `InstallAppleProvisioningProfile@1` task in your YAML pipeline, set `remo
         removeProfile: false
   ```
 
-For Xcode:
+To reference the files, for Xcode:
 
 ```yaml
 - task: Xcode@5
@@ -263,7 +263,7 @@ For Xcode:
     provisioningProfileUuid: '<provisioning-profile-uuid>'
 ```
 
-For Xamarin.iOS:
+To reference the files, for Xamarin.iOS:
 
 ```yaml
 - task: XamariniOS@2
@@ -289,24 +289,23 @@ For Xamarin.iOS:
 1. In the **Signing identity** field, enter the full signing identity.
 1. In the **Provisioning profile UUID** field, enter the UUID of the provisioning profile.
 
----
-
-The build agent can now securely sign and provision your app.
-
 #### Authorize the agent to access the keychain
 
 If you use the Xamarin.iOS task and run the build agent as a launchd service, you need to set up the build to unlock the default keychain.
 
-1. Go to the **Variables** tab and add a new variable named **KEYCHAIN_PWD**. Set the value as the password to the default keychain, which is normally the password for the user that starts the agent. Be sure to select the **lock** icon to secure this password.
-1. For the Xamarin.iOS task, under the **Signing & Provisioning** section, enable the **Unlock default keychain** checkbox and set the **Default keychain password** field to `$(KEYCHAIN_PWD)`.
+Under the **Signing & Provisioning** section, enable the **Unlock default keychain** checkbox and set the **Default keychain password** field to `$(KEYCHAIN_PWD)`.
+
+---
+
+The build agent can now securely sign and provision your app.
 
 ## Related content
 
-- For more information about agents, see [Azure Pipelines agents](../../agents/agents.md).
-- For more information about selecting agent pools and queueing builds and releases, see [Create and manage agent pools](../../agents/pools-queues.md).
-- For more information about setting variables in pipelines, see [Define variables](../../process/variables.md).
-- For pipeline troubleshooting, see [Troubleshoot pipeline runs](../../troubleshooting/troubleshooting.md).
-When you connect to the repository that holds your Android app, Azure Pipelines searches for an appropriate template and automatically provides a starter Android build pipeline. For more information, see [Build, test, and deploy Android apps](../../ecosystems/android.md).
+For more information about:
 
-When you connect to the repository that holds your iOS app, Azure Pipelines searches for an appropriate template and automatically provides a starter Xcode or Xamarin.iOS YAML build pipeline. For more information, see [Build, test, and deploy Xcode apps](../../ecosystems/xcode.md).
-
+- Pipelines for Android apps, see [Build, test, and deploy Android apps](../../ecosystems/android.md).
+- Pipelines for iOS apps, see [Build, test, and deploy Xcode apps](../../ecosystems/xcode.md).
+- Agents, see [Azure Pipelines agents](../../agents/agents.md).
+- Agent pools and queues, see [Create and manage agent pools](../../agents/pools-queues.md).
+- Variables in pipelines, see [Define variables](../../process/variables.md).
+- Pipeline troubleshooting, see [Troubleshoot pipeline runs](../../troubleshooting/troubleshooting.md).
