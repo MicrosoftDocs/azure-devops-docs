@@ -32,8 +32,6 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
 # [YAML](#tab/yaml)
 
-When you connect to the repository that holds your Android app, Azure Pipelines searches for an appropriate template and automatically provides a starter Android build pipeline. For more information, see [Build, test, and deploy Android apps](../../ecosystems/android.md).
-
 Add the [AndroidSigning@3](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to your YAML pipeline after the step that builds your app. In the `AndroidSigning@3` task:
 
 - `<apkFiles>` is required and is the path and names of the APK files to be signed. The default is `**/*.apk`.
@@ -87,7 +85,7 @@ steps:
 
 ---
 
-Save the pipeline. Any build agent can now securely sign your app without any certificate management on the build machine itself.
+Any build agent can now securely sign your app without any certificate management on the build machine itself.
 
 <a name="apple"></a>
 ## Sign your Apple iOS, macOS, tvOS, or watchOS app
@@ -129,27 +127,25 @@ Install the certificate and profile during the build when you don't have endurin
 
 # [YAML](#tab/yaml)
 
-When you connect to the repository that holds your iOS app, Azure Pipelines searches for an appropriate template and automatically provides a starter Xcode or Xamarin.iOS YAML build pipeline. For more information, see [Build, test, and deploy Xcode apps](../../ecosystems/xcode.md).
+- Add the [InstallAppleCertificate@2](/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2) task to your YAML pipeline before the Xcode or Xamarin.iOS task. In the code, replace `<secure-file.p12>` with the name of your uploaded *.p12* file. You use a variable for the secure `P12password`.
 
-1. Add the [InstallAppleCertificate@2](/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2) task to your YAML pipeline before the Xcode or Xamarin.iOS task. In the code, replace `<secure-file.p12>` with the name of your uploaded *.p12* file.
+  ```yaml
+  - task: InstallAppleCertificate@2
+      inputs:
+        certSecureFile: '<secure-file.p12>'
+        certPwd: '$(P12password)'
+  ```
 
-   ```yaml
-   - task: InstallAppleCertificate@2
-       inputs:
-         certSecureFile: '<secure-file.p12>'
-         certPwd: '$(P12password)'
-   ```
+- Add the [InstallAppleProvisioningProfile@1](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) task to your YAML before the Xcode or Xamarin.iOS task. Replace `<secure-file.mobileprovision>` with the name of your provisioning profile file.
 
-1. Add the [InstallAppleProvisioningProfile@1](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) task to your YAML before the Xcode or Xamarin.iOS task. Replace `<secure-file.mobileprovision>` with the name of your provisioning profile file.
+  ```yaml
+  - task: InstallAppleProvisioningProfile@1
+      inputs:
+        provProfileSecureFile: '<secure-file.mobileprovision>'
+  ```
 
-   ```yaml
-   - task: InstallAppleProvisioningProfile@1
-       inputs:
-         provProfileSecureFile: '<secure-file.mobileprovision'
-   ```
-
-   >[!NOTE]
-   >In the `InstallAppleProvisioningProfile@1` task, the `removeProfile` parameter defaults to `true` and removes the profile after build.
+  >[!NOTE]
+  >In the `InstallAppleProvisioningProfile@1` task, the `removeProfile` parameter defaults to `true` and removes the profile after build.
 
 # [Classic](#tab/classic)
 
@@ -162,9 +158,11 @@ When you connect to the repository that holds your iOS app, Azure Pipelines sear
 
 ---
 
-### Reference the secure files in your Xcode or Xamarin.iOS task
+### Reference the secure files in the Xcode or Xamarin.iOS task
 
 # [YAML](#tab/yaml)
+
+The following code uses variables for the `signingIdentity`, which is the common name of the certificate signer, and the `provisioningProfileUuid`, which is the provisioning profile filename without the *.mobileprovision* extension.
 
 For Xcode:
 
@@ -204,11 +202,11 @@ For Xamarin.iOS:
 
 ---
 
-Save your build pipeline. The build agent can now securely sign and provision your app.
+The build agent can now securely sign and provision your app.
 
-### Preinstall the certificate and provisioning profile on a macOS build agent
+### Preinstall the files on a macOS build agent
 
-You can also preinstall the signing certificate and provisioning profiles on a macOS build agent. The files are then available for continued use by builds. Use this method only when you trust the people and processes that have access to the macOS keychain on the agent machine.
+Instead of installing the signing certificate and provisioning profiles during the build, you can preinstall them on a macOS build agent. The files are then available for continued use by builds. Use this method only when you trust the people and processes that have access to the macOS keychain on the agent machine.
 
 #### Preinstall the P12 certificate
 
@@ -220,7 +218,7 @@ sudo security import <certificate.p12> -P <password>
 
 #### Preinstall the provisioning profile
 
-Find the full name of your signing identity by opening the Terminal app and entering `security find-identity -v -p codesigning`. You see a list of signing identities in the form `iPhone Developer/Distribution: Developer Name (ID)`. If the identity is invalid, you see something like `(CSSMERR_TP_CERT_REVOKED)` after the identity.
+Find the full name of your signing identity by opening the Terminal app and entering `security find-identity -v -p codesigning`. You see a list of signing identities in the form `iPhone Developer/Distribution: Developer Name (ID)`. If an identity is invalid, you see something like `(CSSMERR_TP_CERT_REVOKED)` after the identity.
 
 To install the provisioning profile, run the following command from a macOS Terminal window of the build agent machine. Replace `<profile>` with the path to your provisioning profile file, and replace `<UUID>` with the provisioning profile UUID, which is the provisioning profile filename before the *.mobileprovision* extension.
 
@@ -230,7 +228,30 @@ sudo cp <profile> ~/Library/MobileDevice/Provisioning Profiles/<UUID>.mobileprov
 
 ### Reference the preinstalled files in your Xcode or Xamarin.iOS task
 
+Add a new variable to your pipeline named **KEYCHAIN_PWD**. Set the value as the password to the default keychain, which is normally the password for the user that starts the agent. Be sure to select the **lock** icon to secure this password.
+
 # [YAML](#tab/yaml)
+
+In the `InstallAppleCertificate@2` task in your YAML pipeline, set `keychain` to `default` to allow access to the default keychain, and set `keychainPassword` to the keychain password variable.
+
+  ```yaml
+  - task: InstallAppleCertificate@2
+    inputs:
+      certSecureFile: '<secure-file.p12>'
+      certPwd: '$(P12password)'
+      keychain: default
+      keychainPassword: `$(KEYCHAIN_PWD)
+      signingIdentity: <full-signing-identity>
+  ```
+
+In the `InstallAppleProvisioningProfile@1` task in your YAML pipeline, set `removeProfile` to false so the profile is retained between builds.
+
+  ```yaml
+  - task: InstallAppleProvisioningProfile@1
+      inputs:
+        provProfileSecureFile: '<secure-file.mobileprovision>'
+        removeProfile: false
+  ```
 
 For Xcode:
 
@@ -258,19 +279,19 @@ For Xcode:
 
 1. Select the **Xcode** task.
 1. For the **Signing style** option, choose **Manual signing**.
-1. In the **Signing identity** field, enter the full signing identity you got from the preceding procedure.
-1. In the **Provisioning profile UUID** field, enter the UUID of the provisioning profile you got from the preceding procedure.
+1. In the **Signing identity** field, enter the full signing identity.
+1. In the **Provisioning profile UUID** field, enter the UUID of the provisioning profile.
 
 For Xamarin.iOS:
 
 1. Select the **Xamarin.iOS** task.
 1. For the **Override using** option, choose **Identifiers**.
-1. In the **Signing identity** field, enter the full signing identity you got from the preceding procedure.
-1. In the **Provisioning profile UUID** field, enter the UUID of the provisioning profile you got from the preceding procedure.
+1. In the **Signing identity** field, enter the full signing identity.
+1. In the **Provisioning profile UUID** field, enter the UUID of the provisioning profile.
 
 ---
 
-Save your build pipeline. The build agent can now securely sign and provision your app.
+The build agent can now securely sign and provision your app.
 
 #### Authorize the agent to access the keychain
 
@@ -285,3 +306,7 @@ If you use the Xamarin.iOS task and run the build agent as a launchd service, yo
 - For more information about selecting agent pools and queueing builds and releases, see [Create and manage agent pools](../../agents/pools-queues.md).
 - For more information about setting variables in pipelines, see [Define variables](../../process/variables.md).
 - For pipeline troubleshooting, see [Troubleshoot pipeline runs](../../troubleshooting/troubleshooting.md).
+When you connect to the repository that holds your Android app, Azure Pipelines searches for an appropriate template and automatically provides a starter Android build pipeline. For more information, see [Build, test, and deploy Android apps](../../ecosystems/android.md).
+
+When you connect to the repository that holds your iOS app, Azure Pipelines searches for an appropriate template and automatically provides a starter Xcode or Xamarin.iOS YAML build pipeline. For more information, see [Build, test, and deploy Xcode apps](../../ecosystems/xcode.md).
+
