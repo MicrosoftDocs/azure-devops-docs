@@ -36,7 +36,7 @@ Once the app is installed in your Slack workspace, you can connect the app to an
 
 ## Subscribe to pipelines
 
-To start monitoring all pipelines in a project, enter `/azpipelines subscribe <project url>` in a channel, replacing `<project url>` with your Azure DevOps project URL. The project URL can link to any page within your project except to pipeline pages, for example `/azpipelines subscribe https://dev.azure.com/myorg/myproject/`.
+To start monitoring all pipelines in a project, enter `/azpipelines subscribe <project url>` in a channel, replacing `<project url>` with your Azure DevOps project URL. The project URL can link to any page within your project except pipeline pages, for example `/azpipelines subscribe https://dev.azure.com/myorg/myproject/`.
 
 You can monitor a specific pipeline by using `/azpipelines subscribe <pipeline url>`. The pipeline URL can link to any page within your pipeline that has a `definitionId` or a `buildId/releaseId` in the URL. For example:
 
@@ -67,7 +67,7 @@ To manage the subscriptions for a channel, enter `/azpipelines subscriptions`. T
 
 ## Customize subscriptions
 
-The default subscriptions don't have any filters applied, but you often want to customize these subscriptions according to your preferences. For instance, you might want to receive notifications only for failed builds or deployments to production. You can apply filters to customize which messages you receive in your channel.
+The default subscriptions don't have any filters applied, but you can customize these subscriptions according to your preferences. For instance, you might want to receive notifications only for failed builds or deployments to production. You can apply filters to customize which messages you receive in your channel.
 
 To customize a subscription:
 
@@ -96,7 +96,7 @@ To declutter your channel, you can use the `/azpipelines unsubscribe all <projec
 > [!IMPORTANT] 
 > Only Project Administrators can run this command.
 
-## Commands reference
+## Command reference
 
 The Azure Pipelines app for Slack supports the following commands:
 
