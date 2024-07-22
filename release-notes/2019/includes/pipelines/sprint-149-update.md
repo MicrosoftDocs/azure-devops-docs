@@ -20,7 +20,7 @@ In this example, your code will be checked out to the `my-great-repo` directory 
 
 Until now, a free account (that is, one which hadn't purchased parallel jobs) would run a job for up to 30 minutes at a time, up to 1,800 minutes per month. With this update, we have increased the limit from 30 to 60 minutes for free accounts.  
 
-If you need to run your pipeline for more than 60 minutes, you can pay for additional capacity per parallel job or run in a self-hosted agent. Self-hosted agents don't have a job length restrictions.
+If you need to run your pipeline for more than 60 minutes, you can pay for additional capacity per parallel job or run in a self-hosted agent. Self-hosted agents don't have job length restrictions.
 
 ### Updates to hosted pipeline images
 
@@ -67,4 +67,4 @@ With this update, we’ve added support to publish test results from a [CTest]( 
 > [!div class="mx-imgBorder"]
 > ![Publish CTest and PHPUnit test results.](../../media/149_11.png)
 
-In addition, we included publishing for [PHPUnit](https://docs.phpunit.de/en/11.2/configuration.html) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here](/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-devops&preserve-view=true&tabs=yaml).
+In addition, we included publishing for [PHPUnit](https://docs.phpunit.de/en/11.2/configuration.html) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results, see the documentation [here](/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-devops&preserve-view=true&tabs=yaml).
