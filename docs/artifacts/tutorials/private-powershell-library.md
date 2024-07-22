@@ -369,9 +369,9 @@ This section guides you through authenticating with a feed as a PowerShell repos
 > [!NOTE]
 > If your organization uses a firewall or a proxy server, make sure that you allow access to [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
-## Install a module using Azure Pipelines
+## Install a package from your pipeline
 
-This example guides you through the steps to authenticate with an Azure Artifacts feed and install a PowerShell Module from your pipeline. To use your personal access token within the pipeline, include it as a pipeline variable, as shown below:
+This example walks you through authenticating with an Azure Artifacts feed and installing a PowerShell module from your pipeline. To use your personal access token, add it as a pipeline variable, as shown below:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -383,6 +383,10 @@ This example guides you through the steps to authenticate with an Azure Artifact
  
 1. Make sure that you select the **Keep this value secret** checkbox. Select **Ok** when you're done.
 
+1. Add a second variable for your *userName*. Enter a **Name** for your variable, then input your userName in the **Value** textbox.
+
+1. Select **Save** when you're done.
+
 ```yaml
 trigger:
 - main
@@ -391,27 +395,22 @@ pool:
   vmImage: 'Windows-latest'
 
 variables:
-  PackageFeedEndpoint: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2'  ## For project scoped feeds use: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2'
-  PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"Admin", "password":"$(AZURE_DEVOPS_PAT)"}]}'
+  PackageFeedEndpoint: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2' ## For organization scoped feeds use'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2'
 
 steps:
 - powershell: |
-    Register-PSRepository -Name "psRepoPipeline" -SourceLocation '$(PackageFeedEndpoint)' -InstallationPolicy Trusted
-  displayName: 'Register Azure Artifacts Feed as PSRepository'
+    $pat = ConvertTo-SecureString ${env:pat_token} -AsPlainText -Force
+    $credential = New-Object System.Management.Automation.PSCredential("${env:userName}", $pat)
+    Register-PSRepository -Name <REPOSITORY_NAME> -SourceLocation "$(PackageFeedEndpoint)" -InstallationPolicy Trusted -Credential $credential
+  displayName: 'Register PSRepository'
   env:
-    VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
+    pat_token: $patToken
+    userName: $userName
 
 - powershell: |
-     echo (Get-PSRepository)
-  displayName: 'Get all module repositories'
-
-- powershell: |
-    Find-Module -Name "Get-Hello" | Install-Module -Confirm:$false -Force
-  displayName: 'Install the Get-Hello PowerShell module'
-  env:
-    VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
+    nuget install <PACKAGE_NAME> -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json"
+  displayName: 'Install module'
 ```
-
 :::zone-end
 
 
