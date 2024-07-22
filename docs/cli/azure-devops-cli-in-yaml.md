@@ -25,7 +25,7 @@ If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the follow
 
 Some Azure DevOps CLI commands that don't call into Azure DevOps, like `az devops configure` and `az devops -h`, do not require any authentication, but most commands interact with Azure DevOps and do require authentication. You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
 ```yml
 - bash: |
@@ -35,7 +35,7 @@ Some Azure DevOps CLI commands that don't call into Azure DevOps, like `az devop
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```yml
 - pwsh: |
@@ -61,7 +61,7 @@ The following example shows how to log in to Azure DevOps and run a few commands
 
 This example authenticates with Azure DevOps CLI using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
 ```yml
 trigger:
@@ -85,7 +85,7 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 
 ```
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```yml
 trigger:
@@ -130,7 +130,7 @@ Microsoft-hosted agents [typically deploy weekly updates](https://github.com/act
 
 If a newer version of Azure CLI is released and the hosted images do not yet have the latest version, you can upgrade the Azure CLI version to the latest version by running the following commands in your pipeline.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
 ```yml
 # Specify python version
@@ -144,7 +144,7 @@ If a newer version of Azure CLI is released and the hosted images do not yet hav
   displayName: 'Upgrade Azure CLI'
 ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```yml
 # Specify python version
@@ -165,7 +165,7 @@ If a newer version of Azure CLI is released and the hosted images do not yet hav
 
 If you have a pipeline that runs on several Microsoft-hosted VM images, some of which do not have the Azure DevOps CLI extension installed, you can perform that step conditionally, as shown in the following example.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
 ```yml
 trigger:
@@ -217,7 +217,7 @@ steps:
   displayName: 'Show build list and PRs'
 ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```yml
 trigger:
@@ -292,7 +292,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 * Install Azure CLI using Python
   * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
   ```yml
   # Specify python version if you have side-by-side versions
@@ -310,7 +310,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
     displayName: 'Upgrade Azure CLI'
   ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
   ```yml
   # Specify python version if you have side-by-side versions
@@ -334,7 +334,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
   * Azure CLI version [2.10.1](index.md) or higher is installed. 
   * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](/azure/devops/pipelines/tasks/reference/bash-v3).
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
   ```yml
   # Install Azure DevOps extension
@@ -345,7 +345,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
   # ...
   ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
   ```yml
   # Install Azure DevOps extension
@@ -360,7 +360,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 
 The following example installs Azure CLI followed by the Azure DevOps CLI extension.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
 ```yml
 steps:
@@ -386,7 +386,7 @@ steps:
 # ...
 ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```yml
 steps:
@@ -418,7 +418,7 @@ steps:
 
 To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example retrieves the ID of a variable group named **Fabrikam-2023** and then uses this value in a subsequent step.
 
-#[Bash](#tab/bash)
+# [Bash](#tab/bash)
 
 ```yml
 variables:
@@ -444,7 +444,7 @@ steps:
   displayName: 'List variables in Fabrikam-2023 variable group'
 ```
 
-#[PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```yml
 variables:
