@@ -315,7 +315,7 @@ If you don't have your own module, follow the instructions in this section to cr
 
 This section guides you through authenticating with a feed as a PowerShell repository and consuming a module hosted in your feed:
 
-1. Run the following command in a PowerShell prompt window to set up your credentials for authenticating with Azure Artifacts. Replace the placeholders with the appropriate information.
+1. In a PowerShell prompt window, run the following command to set up your credentials. Replace the placeholders with the appropriate information.
 
     ```powershell
     $patToken = "<PERSONAL_ACCESS_TOKEN>" | ConvertTo-SecureString -AsPlainText -Force
@@ -323,36 +323,40 @@ This section guides you through authenticating with a feed as a PowerShell repos
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("<USER_NAME>", $patToken)
     ```
 
-1. Run the following command to register your PowerShell repository. You can find the `SourceLocation` link by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe**, under the **Project setup** section > source URL.
+1. Register your PowerShell repository. You can find the `SourceLocation` link by navigating to **Artifacts** > **Connect to Feed** > **NuGet.exe**, under the **Project setup** section > source URL.
 
     - Project-scoped feed:
 
         ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name <REPOSITORY_NAME> -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
     - Organization-scoped feed:
 
         ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name <REPOSITORY_NAME> -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
     > [!TIP]
     > Some versions of PowerShell may require starting a new session after running the `Register-PSRepository` cmdlet to prevent encountering the *Unable to resolve package source* warning.
 
-1. Run the following command to register your package source:
+1. Register your package source:
 
     - Project-scoped feed:
 
         ```powershell
-        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
+        Register-PackageSource -Name <REPOSITORY_NAME> -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
         ```
 
     - Organization-scoped feed:
 
         ```powershell
-        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
+        Register-PackageSource -Name <REPOSITORY_NAME> -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
         ```
+
+    > [!NOTE]
+    > Register-PSRepository: Used for registering a PowerShell repository to find and install modules.
+    > Register-PackageSource: Used to register a package source for finding and publishing packages.
 
 1. To verify if the repository was successfully registered, run the following command to retrieve all registered repositories for the current user:
 
@@ -363,7 +367,7 @@ This section guides you through authenticating with a feed as a PowerShell repos
 1. Run the following command to install the *Get-Hello* module.
 
     ```powershell
-    Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
+    Install-Module -Name <PACKAGE_NAME> -Repository <REPOSITORY_NAME>
     ```
 
 > [!NOTE]
