@@ -45,15 +45,15 @@ You can monitor a specific pipeline by using `/azpipelines subscribe <pipeline u
 
 The `subscribe` command subscribes you to the following notifications by default:
 
-- For build pipelines, *Builds completed*
-- For release pipelines:
-  - *Release deployment started*
-  - *Release deployment completed*
-  - *Release deployment approval pending*
 - For YAML pipelines:
-  - *Run stage state changed*
-  - *Run stage waiting for approval*
-
+  - **Run stage state changed**
+  - **Run stage waiting for approval**
+- For Classic build pipelines, **Builds completed**
+- For Classic release pipelines:
+  - **Release deployment started**
+  - **Release deployment completed**
+  - **Release deployment approval pending**
+  
 :::image type="content" source="media/integrations-slack/events-subscription.png" alt-text="A screenshot showing notification example." lightbox="media/integrations-slack/events-subscription.png":::
 
 ## Manage subscriptions
@@ -67,7 +67,7 @@ To manage the subscriptions for a channel, enter `/azpipelines subscriptions`. T
 
 ## Customize subscriptions
 
-The default subscriptions don't have any filters applied, but you often want to customize these subscriptions according to your preferences. For instance, you might want receive notifications only for failed builds or deployments to production. You can apply filters to customize which messages you receive in your channel.
+The default subscriptions don't have any filters applied, but you often want to customize these subscriptions according to your preferences. For instance, you might want to receive notifications only for failed builds or deployments to production. You can apply filters to customize which messages you receive in your channel.
 
 To customize a subscription:
 
@@ -82,7 +82,7 @@ For example, to get notifications only for failed builds, select **Failed** unde
 
 ## Approve deployments
 
-You can approve deployments from within your Slack channel without going to Azure Pipelines by subscribing to the *Release deployment approval pending* notifications for Classic releases or the *Run stage waiting for approval* notifications for YAML pipelines. Both of these subscriptions are created by default when you subscribe to a pipeline.
+You can approve deployments from within your Slack channel without going to Azure Pipelines. Subscribe to the **Run stage waiting for approval** notifications for YAML pipelines or the **Release deployment approval pending** notifications for Classic releases. Both of these subscriptions are created by default when you subscribe to a pipeline.
 
 :::image type="content" source="media/integrations-slack/approve.png" alt-text="A screenshot showing pipeline approval in Slack.":::
 
@@ -107,7 +107,7 @@ The Azure Pipelines app for Slack supports the following commands:
 | `/azpipelines feedback` | Report a problem or suggest a feature.      |
 | `/azpipelines help`     | Get help on the commands. |
 | `/azpipelines signin`  | Sign in to your Azure Pipelines account. |
-| `/azpipelines signout`  | Sign out from your Azure Pipelines account. |
+| `/azpipelines signout`  | Sign out of your Azure Pipelines account. |
 | `/azpipelines unsubscribe all <project url>` | Remove all project pipelines and their associated subscriptions from a channel. |
 
 ### Notifications in private channels
@@ -117,10 +117,10 @@ The Azure Pipelines app can also help you monitor pipelines activity in your pri
 ## Conditions and limitations
 
 - You can use the Azure Pipelines app for Slack only with Azure DevOps Services.
-- To set up the subscriptions, you must be the an admin of the project containing the pipeline.
+- To set up the subscriptions, you must be an admin of the project containing the pipeline.
 - Notifications aren't supported inside direct messages.
 - Deployment approvals that have the **Revalidate identity of approver before completing the approval** policy applied aren't supported.
-- **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
+- To use the app, **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
 
 ## Troubleshooting
 
@@ -129,4 +129,4 @@ The Azure Pipelines app can also help you monitor pipelines activity in your pri
 ## Related articles
 - [Azure Boards with Slack](../../boards/integrations/boards-slack.md)
 - [Azure Repos with Slack](../../repos/integrations/repos-slack.md)
-- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
+- [Service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
