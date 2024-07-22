@@ -1,0 +1,21 @@
+---
+author: ckanyika
+ms.author: ckanyika
+ms.date: 7/23/2024
+ms.topic: include
+---
+
+### Connect to GitHub repository search improvements
+
+We are excited to announce a significant enhancement to the process of connecting an Azure DevOps project to a GitHub organization, particularly for those with thousands of repositories. Previously, users encountered challenges such as timeout errors and long wait times. Our latest update optimizes the search and selection experience, eliminating the risk of timeout errors and making the connection process smoother and more efficient. 
+
+> [!div class="mx-imgBorder"]
+> ![Screenshots of add GitHub repositories.](../../media/242-boards-01.png "Screenshot of add github repositories.")
+
+### Create GitHub branch from work item
+
+We are excited to announce a new feature that allows you to create a GitHub branch directly from a work item within Azure DevOps. The "New GitHub Branch" link is available whenever a [GitHub connection is configured](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) for your project. You can find this link in all work item context menus, including the work item form, card, backlog, and queries.
+To create a new branch, simply enter the branch name and select the desired repository and base branch.
+
+> [!div class="mx-imgBorder"]
+> ![Gif to demo create GitHub branch from work item.](../../media/242-boards-01.gif "gif to create GitHub branch from work item")
