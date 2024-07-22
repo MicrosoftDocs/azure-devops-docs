@@ -123,7 +123,7 @@ In Azure Pipelines, upload your provisioning profile to the [secure files librar
 
 ### Add the signing and provisioning tasks to the pipeline
 
-To sign and provision your app, you can either install the certificates and profiles during each build, or [preinstall them on a macOS build agent](#preinstall-the-files-on-a-macos-build-agent).
+To sign and provision your app, you can either install the certificate and profile during each build, or [preinstall the files on a macOS build agent](#preinstall-the-certificate-and-profile-on-a-macos-build-agent).
 
 #### Install the certificate and profile during each build
 
