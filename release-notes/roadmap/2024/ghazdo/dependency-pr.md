@@ -1,5 +1,5 @@
 ---
-title: Dependency PR Annotation
+title: Dependency pull request annotations
 author: ncouraud
 ms.author: nicour
 ms.date: 07/11/2024

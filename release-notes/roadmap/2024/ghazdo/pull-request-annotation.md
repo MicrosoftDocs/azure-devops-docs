@@ -1,5 +1,5 @@
 ---
-title: PR Annotations
+title: Pull request annotations
 author: ncouraud
 ms.author: nicour
 ms.date: 04/22/2024
