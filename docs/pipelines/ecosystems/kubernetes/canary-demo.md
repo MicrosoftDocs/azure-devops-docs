@@ -3,7 +3,7 @@ title: Use a canary deployment strategy for Kubernetes
 description: Learn how to perform and evaluate canary deployments on Kubernetes clusters by using Azure Pipelines.
 ms.topic: tutorial
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
-ms.date: 07/16/2024
+ms.date: 07/22/2024
 ms.custom: fasttrack-edit
 monikerRange: '>= azure-devops-2022'
 ---
@@ -31,7 +31,7 @@ This tutorial uses Azure Kubernetes Service (AKS) with [Azure Resource Manager s
 - A fork of the [https://github.com/MicrosoftDocs/azure-pipelines-canary-k8s](https://github.com/MicrosoftDocs/azure-pipelines-canary-k8s) GitHub repository.
 
   >[!IMPORTANT]
-  >During the following procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+  >During the following procedures, you might be prompted to create a [GitHub service connection](../../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../../repos/github.md#access-to-github-repositories).
 
 ### GitHub repository files
 
