@@ -22,7 +22,7 @@ This article shows you how to use the [Azure Pipelines app for Slack](https://sl
 - A Slack account with permission to install an app to your Slack workspace.
 - An Azure DevOps project with **Project Collection Administrators** or **Project Administrators** permissions.
 
-## Install Azure Pipelines app
+## Install the Azure Pipelines app
 
 [Install the Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to your Slack workspace. Once the app installs, you see the following welcome message. Enter `/azpipelines` to start interacting with the app.
 
@@ -110,7 +110,7 @@ The Azure Pipelines app for Slack supports the following commands:
 | `/azpipelines signout`  | Sign out of your Azure Pipelines account. |
 | `/azpipelines unsubscribe all <project url>` | Remove all project pipelines and their associated subscriptions from a channel. |
 
-### Notifications in private channels
+## Notifications in private channels
 
 The Azure Pipelines app can also help you monitor pipelines activity in your private channels. You need to invite the bot to your private channel by using `/invite @azpipelines`. Once you add the bot, you can configure and control your notifications the same way as for a public channel.
 
