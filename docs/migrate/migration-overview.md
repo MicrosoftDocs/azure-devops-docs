@@ -45,7 +45,7 @@ For example, when the Azure DevOps team at Microsoft chose to move from Azure De
    - Scripting permission changes: If you have many projects or repositories, you might need to script them. You can use the [Azure CLI DevOps extension](../cli/index.md) to list all permissions and update them as needed.
    - Disable repository feature: Disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning. Go to **Project settings** > **Repositories** > your repo, and next to Disable Repository, move the toggle to **On**. 
 
-## Option 2: Azure DevOps Migration Tool
+## Option 2: Azure DevOps Data Migration Tool
 
 The [Azure DevOps Data Migration Tool](https://www.microsoft.com/download/details.aspx?id=54274) is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.  
 
@@ -131,7 +131,7 @@ When migrating into Azure DevOps Services, keep in mind the following key princi
 ## Next steps 
 
 > [!div class="nextstepaction"]
-> [Get started with Azure DevOps Migration Tool](migration-get-started.md)
+> [Get started with the Azure DevOps Data Migration Tool](migration-get-started.md)
 
 ## Related articles
 
