@@ -370,7 +370,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
-      <td rowspan="7"><strong>2024 Q3</strong></td>
+      <td rowspan="6"><strong>2024 Q3</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
          <td>Pipelines</td>
          <td>Future</td>
