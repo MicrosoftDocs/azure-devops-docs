@@ -12,14 +12,14 @@ monikerRange: '>= azure-devops-2022'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-gt-eq-2022.md)]
 
-This step-by-step guide covers how to use the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) with the `canary` strategy to set up canary deployments for Kubernetes. A *canary* deployment strategy deploys new versions of an application next to stable, production versions.
+This step-by-step guide covers how to use the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) with the `canary` strategy. A *canary* deployment strategy deploys new versions of an application next to stable, production versions.
 
 You use the associated workflow to evaluate the code and compare the baseline and canary app deployments. Based on the evaluation, you decide whether to promote or reject the canary deployment.
 
-This tutorial uses Azure Kubernetes Service (AKS) with [Azure Resource Manager service connections](../../library/service-endpoints.md#azure-resource-manager-service-connection) to connect to an Azure Container Registry cluster. This service connection type is the best way to connect to a private cluster or a cluster that has local accounts disabled.
+This tutorial uses Docker Registry and Kubernetes service connections to connect to Azure resources. For an Azure Kubernetes Service (AKS) private cluster or a cluster that has local accounts disabled, an [Azure Resource Manager service connections](../../library/service-endpoints.md#azure-resource-manager-service-connection) is a better way to connect.
 
 > [!NOTE]
-> This guide uses [Prometheus](https://prometheus.io/) for code instrumentation and monitoring. You can use equivalent solutions. For more information, see [Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core), can be used as an alternative.
+> This guide uses [Prometheus](https://prometheus.io/) for code instrumentation and monitoring. You can use equivalent solutions, such as [Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core), as an alternative.
 
 ## Prerequisites
 
