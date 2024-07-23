@@ -370,7 +370,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
-      <td rowspan="4"><strong>2024 Q3</strong></td>
+      <td rowspan="7"><strong>2024 Q3</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
          <td>Pipelines</td>
          <td>Future</td>
@@ -390,7 +390,9 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Future</td>       
       </tr> 
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a></td>
+        <td>
+            <a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a>
+        </td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
@@ -405,13 +407,13 @@ For the past several years, all our pipelines investments have been in the area 
          <td>N/A</td>
       </tr>
       <tr>
-      <td rowspan="21"><strong>2024 Q4</strong></td>
+      <td rowspan="1"><strong>2024 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
       <tr>
-      <td rowspan="21"><strong>Future</strong></td>
+      <td rowspan="23"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
