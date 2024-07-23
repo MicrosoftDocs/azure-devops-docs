@@ -8,7 +8,7 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 07/16/2024
+ms.date: 07/23/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -49,6 +49,8 @@ You must be an owner of your organization to change its location. For more infor
 > - United States
 >
 > By default, your organization is associated with the closest region based on your location. However, changing to a different data center within the same region isn't possible.
+
+[!INCLUDE [region-move-paused-warning](../../includes/region-move-paused-warning.md)]
 
 To change your organization region, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
 
