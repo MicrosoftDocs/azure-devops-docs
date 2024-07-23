@@ -15,7 +15,7 @@ ms.date: 07/23/2024
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-Our team of engineers around the world work 24/7 to ensure that our customers are always productive and successful with our service. We respond quickly during performance slowdowns and stability issues. Our top priority is to communicate the incident status and our next steps to mitigate the issue. Check the status of our services through the [Azure DevOps Services status API](/rest/api/azure/devops/status/?view=azure-devops-rest-7.2).
+Our team of engineers around the world work 24/7 to ensure that our customers are always productive and successful with our service. We respond quickly during performance slowdowns and stability issues. Our top priority is to communicate the incident status and our next steps to mitigate the issue. Check the status of our services through the [Azure DevOps Services status API](/rest/api/azure/devops/status).
 
 Our Customer Impact Assessment (CIA) is modeled after our availability model, which measures real customer experiences representing both reliability and performance. Many of the events we post are based on the CIA.
 
