@@ -355,8 +355,8 @@ This section guides you through authenticating with a feed as a PowerShell repos
         ```
 
     > [!NOTE]
-    > Register-PSRepository: Used for registering a PowerShell repository to find and install modules.
-    > Register-PackageSource: Used to register a package source for finding and publishing packages.
+    > - Register-PSRepository: Used for registering a PowerShell repository to find and install modules. <br />
+    > - Register-PackageSource: Used to register a package source for finding and publishing packages.
 
 1. To verify if the repository was successfully registered, run the following command to retrieve all registered repositories for the current user:
 
