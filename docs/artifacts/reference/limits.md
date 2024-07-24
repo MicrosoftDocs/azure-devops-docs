@@ -13,6 +13,9 @@ monikerRange: '<= azure-devops'
 
 Azure Artifacts is a highly scalable package management solution that enables developers to create, host, and share different types of packages. In this article, we will cover the size and count limits that developers should be aware of when using Azure Artifacts. Some of these limits are imposed by the client tools that Azure Artifacts integrates with (example nuget.exe).
 
+> [!NOTE]
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, we recommend [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to ensure you have the appropriate resources.
+
 ## Count limits
 
 - **5000 versions** per package ID.
