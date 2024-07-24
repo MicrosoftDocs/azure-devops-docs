@@ -371,7 +371,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    {
      "Data": {
        "DefaultConnection": {
-         "ConnectionString": "Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;"
+         "ConnectionString": "Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf;"
        },
        "DebugMode": "disabled",
        "DBAccess": {
