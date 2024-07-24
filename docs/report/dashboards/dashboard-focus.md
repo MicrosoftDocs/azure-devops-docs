@@ -109,7 +109,7 @@ To view or edit dashboards, the following conditions must be met.
 - All project members with **Basic** access can create a dashboard. 
 - All team members with **Basic** access can create a team dashboard unless permissions have been revoked for the team. For details, see [Set dashboard permissions, Set default team dashboard permissions](dashboard-permissions.md#set-default-team-dashboard permissions). 
 - All team members have permissions to edit all team dashboards, unless the **Edit dashboard** permission has been revoked for a specific dashboard or all team dashboards. For details, see [Set dashboard permissions](dashboard-permissions.md). 
-- Select dashboard charts and widgets contain data that is subject to their own permissions and access levels. To learn more, see [FAQs on Azure DevOps dashboards, charts, and reports, Are their restrictions on what charts or data project members can view in a dashboard?](faqs.yml#are-there-restrictions-on-what-charts-or-data-project-members-can-view-in-a-dashboard)
+- Select dashboard charts and widgets contain data that is subject to their own permissions and access levels. For more information, see [FAQs on Azure DevOps dashboards, charts, and reports, Are their restrictions on what charts or data project members can view in a dashboard?](faqs.yml#are-there-restrictions-on-what-charts-or-data-project-members-can-view-in-a-dashboard)
 
 ## Review and fine tune 
 
@@ -199,7 +199,7 @@ This sprint dashboard includes several query tiles and the following widgets:
 
 ## Release dashboard 
 
-Major software releases often have contributions from one or more teams. Release burndown and burnup charts can help product managers keep track of how work is progressing across a number of teams. Burndown charts are highly configurable. You can choose one or more teams, backlog work items or work item types, field criteria, countdown metrics, and time interval. To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).   
+Major software releases often have contributions from one or more teams. Release burndown and burnup charts can help product managers keep track of how work is progressing across a number of teams. Burndown charts are highly configurable. You can choose one or more teams, backlog work items or work item types, field criteria, countdown metrics, and time interval. For more information, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).   
 
 ### Burndown chart
 The following burndown chart shows the completion of planned work from July 1 through September 30, 2022. 

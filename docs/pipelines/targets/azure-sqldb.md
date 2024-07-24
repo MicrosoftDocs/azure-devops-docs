@@ -267,7 +267,7 @@ In your release pipeline, you can implement various checks and conditions to con
 * Configure **gates** as a pre-condition for deployment to a stage.
 * Specify conditions for a task to run.
 
-To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
+For more information, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
 ## More SQL actions

@@ -43,7 +43,7 @@ Do the following steps to set team rules for each backlog level.
 > [!NOTE]
 > Work items must belong to the same team; when you close a task in a different team or project, it doesn't trigger the closure of the parent item.
 
-1. Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
 2. Select **Boards** > **Backlogs** > :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: **Configure team settings**.
 

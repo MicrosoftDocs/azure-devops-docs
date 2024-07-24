@@ -15,7 +15,7 @@ ms.date: 12/08/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
-View the status of planned tests or monitor testing progress by defining test case or test result charts. To learn more about test planning, see [Create test plans and test suites](create-a-test-plan.md). For information about test result terms, see [Test objects and terms](test-objects-overview.md#test-terms).
+View the status of planned tests or monitor testing progress by defining test case or test result charts. For more information about test planning, see [Create test plans and test suites](create-a-test-plan.md). For information about test result terms, see [Test objects and terms](test-objects-overview.md#test-terms).
 
 ::: moniker range=">= azure-devops-2020"
 To track the progress of more than one test plan or test suite, open the [Progress Report](progress-report.md).

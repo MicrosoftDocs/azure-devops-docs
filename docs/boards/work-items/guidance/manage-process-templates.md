@@ -17,7 +17,7 @@ ms.date: 01/05/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)] 
 
-When you create a project, a process is used to specify the work item types to configure and other settings. Each process template primarily defines the building blocks of the work item tracking system for Azure Boards. For the Hosted XML and On-premises XML process models, you can upload a process template to either update an existing project or create a project. For the Inheritance process model, you customize work tracking through the web portal. To learn more about these different processes, see [Customize your work tracking experience](../../../reference/customize-work.md).  
+When you create a project, a process is used to specify the work item types to configure and other settings. Each process template primarily defines the building blocks of the work item tracking system for Azure Boards. For the Hosted XML and On-premises XML process models, you can upload a process template to either update an existing project or create a project. For the Inheritance process model, you customize work tracking through the web portal. For more information about these different processes, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
@@ -80,7 +80,7 @@ To manage process templates, you must be a member of the **Project Collection Ad
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Import process actions menu, Create new team project from imported process.](../../../organizations/settings/work/import-process/media/import-process-new-team-project.png)
 
-5. Complete the form that appears. To learn more about the different options, see [Create a project](../../../organizations/projects/create-project.md).
+5. Complete the form that appears. For more information about the different options, see [Create a project](../../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Dialog for Create new project.](../../../organizations/settings/work/import-process/media/create-project-from-hosted.png)
