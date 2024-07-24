@@ -36,7 +36,7 @@ To exercise the TCM command-line tool, you must have the following in place:
 	|**/teamproject**:`project`|Required. The name of the project that contains the test objects you want to clone or import automated tests into.|
 	|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if you're using basic authentication, you're not connected to a domain, or your Windows credentials don't have the appropriate permissions. |
 
-- You must be a valid member of the project you want to access and have the required permissions based on the commands you run. To learn more, see [Manual test access and permissions](manual-test-permissions.md). 
+- You must be a valid member of the project you want to access and have the required permissions based on the commands you run. For more information, see [Manual test access and permissions](manual-test-permissions.md). 
  
 ## TCM commands
 

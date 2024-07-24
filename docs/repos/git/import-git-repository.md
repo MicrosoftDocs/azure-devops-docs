@@ -22,7 +22,7 @@ This article shows you how to import an existing Git repo from GitHub, Bitbucket
 
 ::: moniker range="azure-devops"
 - An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-- To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 - To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
 - To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo using git CLI](#manual-import-git-cli).
 - If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
@@ -30,7 +30,7 @@ This article shows you how to import an existing Git repo from GitHub, Bitbucket
 
 ::: moniker range="< azure-devops"
 - An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-- To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 - To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
 - To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo using git CLI](#manual-import-git-cli).
 ::: moniker-end

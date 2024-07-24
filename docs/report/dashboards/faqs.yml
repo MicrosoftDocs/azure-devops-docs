@@ -30,7 +30,7 @@ sections:
 
       - question: Can I restrict who can view my dashboards? 
         answer: |
-          **Yes**. From the user interface, you can't set read permissions on a dashboard. However, using permission management command-line tools, you can set more granular permissions, such as `Read`, `Create`, and `MaterializeDashboard` permissions. To learn more, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
+          **Yes**. From the user interface, you can't set read permissions on a dashboard. However, using permission management command-line tools, you can set more granular permissions, such as `Read`, `Create`, and `MaterializeDashboard` permissions. For more information, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
 
       - question: Can I share a dashboard with a non-project member? 
         answer: |
@@ -64,7 +64,7 @@ sections:
 
       - question: Can I create a private dashboard?  
         answer: |
-          **No**. You can only create a dashboard and set permissions on the dashboard. To limit who can view the dashboard, you can use a permission management command-line tool. To learn more, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
+          **No**. You can only create a dashboard and set permissions on the dashboard. To limit who can view the dashboard, you can use a permission management command-line tool. For more information, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
 
       - question: I added a widget but it isn't displaying any data, what's going on? 
         answer: |
@@ -95,7 +95,7 @@ sections:
       - question: Can I copy a query chart? 
         answer: |
           ::: moniker range="azure-devops"
-          **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). Also, when you copy a dashboard, it copies any query charts added to the dashboard and configures them for the team you select. This essentially adds new queries and configures the charts. To learn more, see [Copy a dashboard](copy-dashboard.md). 
+          **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). Also, when you copy a dashboard, it copies any query charts added to the dashboard and configures them for the team you select. This essentially adds new queries and configures the charts. For more information, see [Copy a dashboard](copy-dashboard.md). 
           ::: moniker-end
           ::: moniker range="< azure-devops"
           **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget).  
@@ -116,7 +116,7 @@ sections:
 
       - question: Can I create a query chart from a direct links or tree query? 
         answer: | 
-          **No**.  All query-based charts require configuration of flat-list queries. To learn more, see [Track progress with status and trend query-based charts](charts.md).   
+          **No**.  All query-based charts require configuration of flat-list queries. For more information, see [Track progress with status and trend query-based charts](charts.md).   
 
       - question: How do I view project dependencies? 
         answer: | 
@@ -146,14 +146,14 @@ sections:
  
       - question: Do sprint burndown or burnup charts reference team capacity settings?  
         answer: | 
-          **Yes**. Team days off and team member capacity are referenced in sprint burndown charts and reports. To learn more about setting team capacity, see [Determine and set sprint capacity](../../boards/sprints/set-capacity.md).  
+          **Yes**. Team days off and team member capacity are referenced in sprint burndown charts and reports. For more information about setting team capacity, see [Determine and set sprint capacity](../../boards/sprints/set-capacity.md).  
 
   - name: Cross-project data views 
     questions: 
       - question: How do I view data from several projects in one dashboard? 
         answer: | 
           There are a few ways to view data from several projects in a single dashboard. 
-          - **Query-based widgets**: Queries can be defined in any project that target all or select projects. Charts based on these queries can be added to any dashboard. To learn more, see [Define a work item query, Query across or within projects](../../boards/queries/using-queries.md).   
+          - **Query-based widgets**: Queries can be defined in any project that target all or select projects. Charts based on these queries can be added to any dashboard. For more information, see [Define a work item query, Query across or within projects](../../boards/queries/using-queries.md).   
           - **Burndown and Burnup charts**: The [Burndown and Burnup charts](configure-burndown-burnup-widgets.md) can be configured for any project and team. Therefore, you can add several of these charts to a single chart and configure them to gain a view of progress across several teams and projects.
  
 

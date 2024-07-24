@@ -34,7 +34,7 @@ As a member of the Project Administrators group, you can set the default dashboa
 
 
 
-To learn more about adding and viewing dashboards, see [Add, rename, and delete dashboards](dashboards.md).   
+For more information about adding and viewing dashboards, see [Add, rename, and delete dashboards](dashboards.md).   
 
 > [!TIP]    
 > If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default project team. For details, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). 

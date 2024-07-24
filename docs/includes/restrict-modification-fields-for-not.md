@@ -20,7 +20,7 @@ Using one of the following two conditions, you can make select fields required f
 
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](../organizations/settings/work/rule-reference.md).
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](../organizations/settings/work/rule-reference.md).
 
 For example, you can make the Title or the State field Read-only for select users or groups. 
 
@@ -28,6 +28,6 @@ For example, the Priority field, for the User Story work item type, becomes read
 
 :::image type="content" source="../organizations/settings/work/media/rules/rule-priority-field-read-only-for-not.png" alt-text="Custom rule, Current user is not a member of a group, make Priority field read-only":::
 
-To learn more, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md). 
+For more information, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md). 
 
 ::: moniker-end

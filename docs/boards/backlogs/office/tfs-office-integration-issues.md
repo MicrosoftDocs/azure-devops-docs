@@ -65,7 +65,7 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
  
 4.	Select **OK** and restart Excel. 
 
-	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
+	For more information about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
 
 ## Check to see if add-in is disabled
 

@@ -44,7 +44,7 @@ Team Foundation Server (TFS) 2018 and earlier versions don't support Analytics.
 
 ::: moniker-end
 
-To learn more, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We're working to add all reportable data to Analytics. For more information, see [Data Available in Analytics](data-available-in-analytics.md).
+For more information, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We're working to add all reportable data to Analytics. For more information, see [Data Available in Analytics](data-available-in-analytics.md).
 
 ## Azure DevOps Server, TFS, and SQL Server Reporting
 

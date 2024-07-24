@@ -621,7 +621,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ## Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). For more information about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
 
 <a id="related-notes"></a>  
 

@@ -429,7 +429,7 @@ aggregate(
 
 ## Change column data type 
 
-From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 ## (Optional) Rename column fields
 

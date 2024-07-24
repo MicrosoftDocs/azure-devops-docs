@@ -43,9 +43,9 @@ Several new features have been introduced to support data insights that weren't 
 
 - **Dashboard widgets**: Many widgets have been added to support status and trend views, including ones based on Analytics data. For an overview, see the [widget catalog](../dashboards/widget-catalog.md).  
 - **Built-in Analytics reports**: Severa in-context reports have been added to support Azure Boards, Pipelines, and Test Plans. These reports display Analytics data as described in [About dashboards, charts, reports, & widgets](../dashboards/overview.md).
-- **Rollup**: Rollup columns allow you to view progress bars or totals of numeric fields for descendant items within a work item hierarchy. You can add them to any backlog view. To learn more, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md). 
+- **Rollup**: Rollup columns allow you to view progress bars or totals of numeric fields for descendant items within a work item hierarchy. You can add them to any backlog view. For more information, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md). 
 - **Query-based charts grouped by tags**: You can now generate query charts and add them to dashboards based on grouping by tags. 
-- **Traceability**: Increased support for tracking work from requirements to deployment. End-to-end traceability is supported by linking various objects such as work items, branches, commits, pull requests, builds, and releases. Built-in reports based on the Analytics service support the ability to monitor traceability in real time. To learn more, see [End-to-end traceability](../../cross-service/end-to-end-traceability.md).
+- **Traceability**: Increased support for tracking work from requirements to deployment. End-to-end traceability is supported by linking various objects such as work items, branches, commits, pull requests, builds, and releases. Built-in reports based on the Analytics service support the ability to monitor traceability in real time. For more information, see [End-to-end traceability](../../cross-service/end-to-end-traceability.md).
 - **Release pipelines**: Release pipelines were introduced with TFS 2018. Dashboard widgets that provide insights into release pipelines include [Release pipeline overview](../dashboards/widget-catalog.md#release-definition-widget) and [Requirements quality](../dashboards/widget-catalog.md#requirements-quality-widget).  
   
 
@@ -65,7 +65,7 @@ The following tools support interaction with the Analytics service:
 
 ### Query guidelines, query performance and latency 
 
-Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. To learn more, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
+Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. For more information, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 
 ### Analytics permissions
@@ -76,7 +76,7 @@ Access to data from the Analytics service requires the following project-level p
 - **Delete Shared Analytics views**
 - **Edit Shared Analytics views**
 
-In addition, users can set permissions for individual shared Analytics views they create. To learn more, see [Set permissions to access Analytics and Analytics views](../powerbi/analytics-security.md). 
+In addition, users can set permissions for individual shared Analytics views they create. For more information, see [Set permissions to access Analytics and Analytics views](../powerbi/analytics-security.md). 
 
 ## Recommended resources
 

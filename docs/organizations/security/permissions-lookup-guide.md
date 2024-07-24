@@ -18,7 +18,7 @@ ms.date: 04/04/2022
 Use this index to locate the article on how to manage a specific permission. Most permissions are managed through the user interface for an object, project, or collection. Other permissions are managed by adding users and groups to a role. 
 
 > [!NOTE]
-> You can manage permissions through a command line tool or REST API. Some permissions are only managed through these tools. To learn more, see [Security and permission management tools](security-tools-reference.md) and [Security namespace and permission reference](namespace-reference.md).  
+> You can manage permissions through a command line tool or REST API. Some permissions are only managed through these tools. For more information, see [Security and permission management tools](security-tools-reference.md) and [Security namespace and permission reference](namespace-reference.md).  
 
 If you're new to Azure DevOps, review [Get started with permissions, access, and security groups](about-permissions.md) and [About security roles](about-security-roles.md). 
 

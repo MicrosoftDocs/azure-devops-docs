@@ -180,7 +180,7 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
 > - You can assign a work item to one and only one user at a time. If work is split across two or more users, consider creating separate work items that you'll assign to each user responsible for the work to complete. 
 > - Over time, the drop-down menu of identity fields display the names you have most recently selected.
 > - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
-> - To learn more about identity fields, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
+> - For more information about identity fields, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
  
 When configured with Microsoft Entra ID or Active Directory, Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 
 
