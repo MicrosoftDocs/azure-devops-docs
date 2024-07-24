@@ -25,7 +25,7 @@ Finding the right package for your project can be challenging, especially when t
 
 ## Search packages
 
-1. Sign in to your project (```https://dev.azure.com/{your_organization}/{your_project}```).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 2. **Enter** "package" in the search box.
 
 3. Select from the dropdown menus to search by feeds, views, or package types.

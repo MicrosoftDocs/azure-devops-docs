@@ -52,7 +52,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 - To view a query-based widget added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
 ::: moniker-end
  
-To learn more about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
+For more information about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
 
 ### Define and save a flat-list query 
 
@@ -162,7 +162,7 @@ To group a chart by tags, perform the same steps provided in the previous sectio
 
 :::image type="content" source="media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
 
-To learn more about using tags, see [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). 
+For more information about using tags, see [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). 
 
 ::: moniker-end
  

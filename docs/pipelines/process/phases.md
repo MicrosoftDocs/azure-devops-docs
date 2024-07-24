@@ -594,7 +594,7 @@ Timeouts have the following level of precedence.
 From a single job you author, you can run multiple jobs on multiple agents in parallel. Some examples include:
 
 * **Multi-configuration builds:** You can build multiple configurations in parallel. For
-  example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. To learn more, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
+  example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. For more information, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
 
 * **Multi-configuration deployments:** You can run multiple deployments
    in parallel, for example, to different geographic regions.

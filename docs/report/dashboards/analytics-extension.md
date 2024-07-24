@@ -29,7 +29,7 @@ Analytics is in Preview for Azure DevOps Server 2019. For Azure DevOps Server 20
 > [!NOTE]
 > The Analytics Marketplace extension and Analytics are **not supported** for TFS 2018 or earlier versions.
 
-Analytics supports access to Analytics widgets for all projects defined in the project collection. To learn more, see [What is Analytics?](../powerbi/what-is-analytics.md) and [Widgets based on Analytics](analytics-widgets.md). Data available in Analytics is summarized in [Data available from Analytics](../powerbi/data-available-in-analytics.md).
+Analytics supports access to Analytics widgets for all projects defined in the project collection. For more information, see [What is Analytics?](../powerbi/what-is-analytics.md) and [Widgets based on Analytics](analytics-widgets.md). Data available in Analytics is summarized in [Data available from Analytics](../powerbi/data-available-in-analytics.md).
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ If you've upgraded to Azure DevOps Server 2019.1, you can enable Analytics for a
    > [!div class="mx-imgBorder"]  
    > ![Enable Analytics](media/enable-analytics/enable-analytics.png) 
 
-    Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
+    Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. For more information about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
 
 ## Pause or disable Analytics
 
@@ -135,7 +135,7 @@ With Analytics disabled or removed, the following actions occur:
 
 ::: moniker-end
 
-To learn more about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
+For more information about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
 
 ::: moniker range="azure-devops-2019" 
 

@@ -39,7 +39,7 @@ In this example, the Voice team sets the <strong>Area Path</strong>=`Fabrikam Fi
 > [!div class="mx-imgBorder"]  
 > ![Specify the Area Path.](media/template/area-path.png) 
 
-To learn more about area paths, see [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md). 
+For more information about area paths, see [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md). 
 
 
 <a id="rich-text"> </a> 
@@ -76,7 +76,7 @@ For example, here we add Web and Sept Release.
 > [!div class="mx-imgBorder"]  
 > ![Add tags to work items.](media/template/add-tags.png) 
 
-To learn more about tags, see [Add work item tags to categorize and filter lists and boards](../queries/add-tags-to-work-items.md). 
+For more information about tags, see [Add work item tags to categorize and filter lists and boards](../queries/add-tags-to-work-items.md). 
 
 You can also use the <strong>Tags (Remove)</strong> template field to remove tags from work items. For example, if many work items were tagged with Milestone 1, and that no longer applies, you could query for all those work items and remove the tag by doing a bulk apply of a template that removed the Milestone 1 tag. 
 

@@ -38,7 +38,7 @@ In addition, you can manage access to various manual test features by granting u
 	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
 	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
 - **Organization or collection-level** 
-	- **Manage test controllers**: Permission associated with a deprecated feature for TFS 2018 and later versions. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) and [Install test agents and test controllers](/visualstudio/test/lab-management/install-configure-test-agents).   
+	- **Manage test controllers**: Permission associated with a deprecated feature for TFS 2018 and later versions. For more information, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) and [Install test agents and test controllers](/visualstudio/test/lab-management/install-configure-test-agents).   
  
 ## Prerequisites 
 

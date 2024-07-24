@@ -54,7 +54,7 @@ From your web browser, do the following steps to open your product backlog.
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Sign in to your project (``https://dev.azure.com/{yourorganization}/{yourproject}``).
+1. Sign in to your project (``https://dev.azure.com/{Your_Organization}/{Your_Project}``).
 2. Select (1) **Boards** > (2) **Backlogs**. 
    
    :::image type="content" source="media/create-backlog/open-backlogs.png" alt-text="Screenshot of sequence selection for opening Backlogs in Boards.":::
@@ -145,7 +145,7 @@ By default, user stories appear on Agile backlogs, issues on Basic backlogs, PBI
 
 Reorder your items to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
-You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 To reorder your backlog, drag the work items. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 

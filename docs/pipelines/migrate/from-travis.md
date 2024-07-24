@@ -489,7 +489,7 @@ The `TRAVIS_OS_NAME` variable contains values that map to values provided by the
 | `osx`     | `Darwin`        | The build is running on macOS.   |
 | `windows` | `Windows_NT`    | The build is running on Windows. |
 
-To learn more, see [Predefined environment variables](../build/variables.md).
+For more information, see [Predefined environment variables](../build/variables.md).
 
 If there isn't a variable for the data you need, then you can use a shell
 command to get it.  For example, a good substitute of an environment

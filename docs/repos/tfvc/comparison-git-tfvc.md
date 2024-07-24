@@ -35,7 +35,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 >[!NOTE]
 >Git in Visual Studio, Azure DevOps Services, and Azure DevOps Server is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with Azure DevOps Server.
  
-To learn more, see [Git and Azure Repos](../../repos/git/index.yml).
+For more information, see [Git and Azure Repos](../../repos/git/index.yml).
 
 ### TFVC (centralized)
  
@@ -47,7 +47,7 @@ TFVC has two [workflow models](decide-between-using-local-server-workspace.md):
 
   - **Local workspaces** - Each team member takes a copy of the latest version of the codebase with them and works offline as needed. Developers check in their changes and resolve conflicts as necessary. Another system that works this way is Subversion.
 
-To learn more, see [What is Team Foundation Version Control?](./what-is-tfvc.md)
+For more information, see [What is Team Foundation Version Control?](./what-is-tfvc.md)
  
 <a name="tfvc_or_git_details"></a>
 
