@@ -14,7 +14,7 @@ We are excited to announce a significant enhancement to the process of connectin
 
 ### Create GitHub branch from work item
 
-We are excited to announce a new feature that allows you to create a GitHub branch directly from a work item within Azure DevOps. The "New GitHub Branch" link is available whenever a [GitHub connection is configured](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) for your project. You can find this link in all work item context menus, including the work item form, card, backlog, and queries.
+We are excited to announce a new feature that allows you to create a GitHub branch directly from a work item within Azure DevOps. The "New GitHub Branch" link is available whenever a [GitHub connection is configured](/azure/devops/boards/github/connect-to-github?view=azure-devops) for your project. You can find this link in all work item context menus, including the work item form, card, backlog, and queries.
 To create a new branch, simply enter the branch name and select the desired repository and base branch.
 
 > [!div class="mx-imgBorder"]
