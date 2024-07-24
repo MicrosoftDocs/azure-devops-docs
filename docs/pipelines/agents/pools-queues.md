@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 07/24/2024
+ms.date: 04/05/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -116,10 +116,6 @@ If you are a project team member, you create and manage agent pools from the age
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
-
-To delete a pool, go to the **Agent pools** list, choose **More options**, **Delete**.
-
-:::image type="content" source="media/agent-pool-delete.png" alt-text="Screenshot of deleting an agent pool.":::
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
