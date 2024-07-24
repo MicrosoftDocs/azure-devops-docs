@@ -8,14 +8,14 @@ ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/23/2024
+ms.date: 07/24/2024
 ---
 
 # Azure DevOps Services status
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-Our team of engineers around the world work 24/7 to ensure that our customers are always productive and successful with our service. We respond quickly during performance slowdowns and stability issues. Our top priority is to communicate the incident status and our next steps to mitigate the issue. Check the status of our services through the [Azure DevOps Services status API](/rest/api/azure/devops/status).
+Our team of engineers around the world work 24/7 to ensure that our customers are always productive and successful with our service. We respond quickly during performance slowdowns and stability issues. Our top priority is to communicate the incident status and our next steps to mitigate the issue. Check the status of our services through the [Azure DevOps Services status portal](https://status.dev.azure.com).
 
 Our Customer Impact Assessment (CIA) is modeled after our availability model, which measures real customer experiences representing both reliability and performance. Many of the events we post are based on the CIA.
 
@@ -50,7 +50,7 @@ Subscribe to [the RSS feed](https://status.dev.azure.com/_rss) to receive update
 
 ## Use REST APIs to build automated solutions
 
-The [Azure Resource health REST API](/rest/api/resourcehealth/) can retrieve the current health status of each of the Azure DevOps Services. You can use it to build an automated solution to [monitor the infrastructure incidents](/azure/service-health/service-health-overview).  
+The [Azure Resource health REST API](/rest/api/azure/devops/status) can retrieve the current health status of each of the Azure DevOps Services. You can use it to build an automated solution to monitor the infrastructure incidents.  
 
 [!INCLUDE [rest-api-docs-rollout](../includes/rest-api-docs-rollout.md)] 
 
