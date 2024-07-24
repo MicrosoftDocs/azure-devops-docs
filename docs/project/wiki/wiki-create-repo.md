@@ -123,11 +123,6 @@ az devops wiki create [--mapped-path]
 - **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
 - **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
 
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
-
-::: moniker range="azure-devops"
 
 #### Example 
 

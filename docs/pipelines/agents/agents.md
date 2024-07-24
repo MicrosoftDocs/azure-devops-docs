@@ -205,9 +205,9 @@ You can view the details of an agent, including its version and system capabilit
 
 1. To register a new capability with the agent, choose **Add a new capability**.
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+::: moniker range="azure-devops"
 
-::: moniker range="> azure-devops-2019"
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent) Azure CLI methods.
 
@@ -313,7 +313,7 @@ This command group is in preview. It might be changed/removed in a future releas
   "userCapabilities": null,
   "version": "2.160.1"
 }
-}
+
 ```
 
 You can also use `--output table` which returns an abbreviated version of the same information.
@@ -326,11 +326,11 @@ ID    Name                             Is Hosted    Pool Type
 4     Hosted Windows 2019 with VS2019  True         automation
 ```
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-* * *
+::: moniker-end
+
+
 
 > [!TIP]
 >
@@ -349,7 +349,6 @@ ID    Name                             Is Hosted    Pool Type
 ### Communication with Azure DevOps Server
 
 ::: moniker-end
-
 
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.

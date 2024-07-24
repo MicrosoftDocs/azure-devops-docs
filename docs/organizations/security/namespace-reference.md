@@ -31,7 +31,7 @@ Each family of resources, such as work items or Git repositories, is secured thr
 ## Permission management tools 
 
 The recommended method for managing permissions is through the web portal. However, to set a permission that isn't surfaced through the web portal or set more granular permissions, you can use one of the command line tools or REST API.  
-- For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
+- For Azure DevOps Services, you can use the `az devops security permission` commands. 
 - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
 - For Azure DevOps git repositories,[tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
 - For Team Foundation Version Control (TFVC) repositories, [TF TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
@@ -394,13 +394,15 @@ The following table describes the namespaces that manage project-level permissio
       <br/>
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
-      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
+      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.
+::: moniker range=">= azure-devops"  
       Assume you have a project named `Test Project 1`.  
       You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
-      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`  
+      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`
+::: moniker-end  
       <br/>
       **ID:** `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::
