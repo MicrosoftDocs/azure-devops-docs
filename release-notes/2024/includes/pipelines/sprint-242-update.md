@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Unskippable stages
 
-You can use [YAML templates]() as a security mechanism, for example, such as to inject a stage that performs malware detection in all pipelines. However, Pipeline end users can choose which stages to run, potentially skipping the malware detection stage.
+You can use [YAML templates]() as a security mechanism, for example, to inject a stage that performs malware detection in all pipelines. However, Pipeline end users can choose which stages to run, potentially skipping the malware detection stage.
 
-Starting with this sprint, you can mark a YAML stage as non-skippable using the new `isSkippable` property. By default, the value of this property is `true`. To prevent skipping a stage set it to `false`, like in the following example.
+Starting with this sprint, you can mark a YAML stage as not skippable using the new `isSkippable` property. By default, the value of this property is `true`. To prevent skipping a stage set it to `false`, as shown in the example below:
 ``` yaml
 - stage: sdl_check_stage
   displayName: SDL Stage
