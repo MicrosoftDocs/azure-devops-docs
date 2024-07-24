@@ -19,7 +19,7 @@ Starting with this sprint, you can mark a YAML stage as not skippable using the 
     ...
 ```
 
-These stages will always execute and cannot be deselected in the _Stages to run_ configuration panel.
+These stages will always execute and can't be deselected in the _Stages to run_ configuration panel.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of stages to run.](../../media/242-pipelines-01.png "Screenshot of stages to run")
