@@ -1,11 +1,11 @@
 ---
-title: TBD
+title: Enhancements to GitHub Integration and Pipeline Security
 author: ckanyika
 ms.author: ckanyika
 ms.date: 7/23/2024
-description: TBD
+description: Enhancements to GitHub Integration and Pipeline Security
 ---
-# TBD
+# Enhancements to GitHub Integration and Pipeline Security
 
 
 
