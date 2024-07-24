@@ -61,7 +61,7 @@ Do the following steps to identify members of the **Project Administrators** gro
 	> ![Add users and group dialog](media/project-collection/add-member-project-admin.png)  
 
 	> [!NOTE]   
-	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
 5. Select **Save**. 
 

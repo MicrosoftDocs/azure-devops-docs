@@ -99,7 +99,7 @@ For more information, see [Application management best practices](/azure/active-
 
 The system handles permissions at various levels—individual, collection, project, and object—and assigns them to one or more built-in groups by default. To enhance security, do the following actions:
 
-- **Provide minimal access:** Give users and services the minimum necessary access to perform their business functions.
+- **Provide least privilege access:** Give users and services the minimum necessary access to perform their business functions.
 - **Disable inheritance:** 
   - Whenever possible, disable inheritance. 
   - Inheritance can inadvertently grant access or permissions to unexpected users due to its allow-by-default nature. 

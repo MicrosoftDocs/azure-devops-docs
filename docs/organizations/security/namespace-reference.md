@@ -457,7 +457,7 @@ The following table describes the namespaces that manage project-level permissio
 
 ## Organization-level namespaces and permissions 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions. To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions. For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -465,7 +465,7 @@ The following table describes the namespaces that manage organization-level perm
 ## Collection-level namespaces and permissions 
 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ::: moniker-end
 
@@ -774,7 +774,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-      To learn more, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
+      For more information, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
       **ID:** `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
 :::row-end:::
@@ -1073,7 +1073,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::
@@ -1173,7 +1173,7 @@ The following table describes the security namespaces and permissions that aren'
       `QueryUsageSummary`
    :::column-end:::
    :::column span="2":::
-      Manages permissions to query usage. By default, all members of the Project Collection Administrators groups and users granted Stakeholder access are granted permission to query usage summary for everyone. To learn more, see [Rate limits](../../integrate/concepts/rate-limits.md).
+      Manages permissions to query usage. By default, all members of the Project Collection Administrators groups and users granted Stakeholder access are granted permission to query usage summary for everyone. For more information, see [Rate limits](../../integrate/concepts/rate-limits.md).
       <!--- Update link when new article on Utilization is published. --> 
       **Token format**: `/`
       <br/>

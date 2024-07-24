@@ -147,7 +147,7 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 
 1. Add `Team.TeamName` to **Field**.
 
-To learn more about working with slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+For more information about working with slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
 
 ## Related articles

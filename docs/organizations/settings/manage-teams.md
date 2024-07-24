@@ -117,7 +117,7 @@ Most of these team settings can be easily configured from the common configurati
 	> [!div class="mx-imgBorder"]
 	> ![Open board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
 
-2. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+2. Make sure that you select the team backlog or board that you want to configure using the team selector. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
 3. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]

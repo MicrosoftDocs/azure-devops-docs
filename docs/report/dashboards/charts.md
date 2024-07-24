@@ -73,7 +73,7 @@ If you want to add the chart to a dashboard, then you need to save the query und
 - To view a query chart added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
 ::: moniker-end
  
-To learn more about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
+For more information about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
  
 ### Create a flat-list query  
 
@@ -269,7 +269,7 @@ In addition to query-based burndown charts, you can [Configure a burndown or bur
 
 ## Add chart to a dashboard 
 
-A chart added to a dashboard is added through the addition of a **Chart for Work Items** widget. You can add the chart to a dashboard as shown in the following procedure, or by adding the **Chart for Work Items** widget directly. To learn more, see [Configure a chart for work items widget](configure-chart-work-items-widget.md). 
+A chart added to a dashboard is added through the addition of a **Chart for Work Items** widget. You can add the chart to a dashboard as shown in the following procedure, or by adding the **Chart for Work Items** widget directly. For more information, see [Configure a chart for work items widget](configure-chart-work-items-widget.md). 
 
 > [!TIP]    
 > All query charts are limited in size. However, charts added to a dashboard can be re-sized and re-configured by opening the **Chart for Work Items** widget used to display them.  

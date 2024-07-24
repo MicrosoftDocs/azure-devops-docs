@@ -95,7 +95,7 @@ The following entity types and entity sets are supported with the **v3.0-preview
 > |EntityType/EntitySet | Description | v3.0-preview | v4.0-preview |
 > |----------------------|-------------|--------------|--------------|
 > |**Branch**/<br/>**Branches** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  ✔️ | ✔️ |
-> |**ParallelPipelineJobsSnapshot**/<br/>**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   | ✔️ |
+> |**ParallelPipelineJobsSnapshot**/<br/>**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. For more information about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   | ✔️ |
 > |**Pipeline**/<br/>**Pipelines**| Properties for a pipeline. |  ✔️ | ✔️ |
 > |**PipelineJob**/<br/>**PipelineJobs** |Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
 > |**PipelineRun**/<br/>**PipelineRuns** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  ✔️ | ✔️ |

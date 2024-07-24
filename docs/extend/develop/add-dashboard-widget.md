@@ -343,7 +343,7 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 
 ### Step 7: Add widget from the catalog
 
-1. Go to your project in Azure DevOps, `http://dev.azure.com/{yourOrganization}/{yourProject}`
+1. Go to your project in Azure DevOps, `http://dev.azure.com/{Your_Organization}/{Your_Project}`
 2. Select **Overview**, and then select **Dashboards**.
 3. Choose **Add a widget**.
 4. Highlight your widget, and then select **Add**.
@@ -641,7 +641,7 @@ If you've already published the extension, you can repackage the extension and d
 
 ### Step 7: Add Widget From the Catalog
 
-Now, go to your team dashboard at `https:\//dev.azure.com/{yourOrganization}/{yourProject}`. If this page is already open, then refresh it. 
+Now, go to your team dashboard at `https:\//dev.azure.com/{Your_Organization}/{Your_Project}`. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. The widget catalog opens where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
@@ -985,7 +985,7 @@ If you have not published your extension yet, then read [this section](#package-
 If you have already published the extension before this point, you can repackage the extension and directly update it to the Marketplace.
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at https:\//dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
+Now, go to your team dashboard at https:\//dev.azure.com/{Your_Organization}/{Your_Project}. If this page is already open, refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 

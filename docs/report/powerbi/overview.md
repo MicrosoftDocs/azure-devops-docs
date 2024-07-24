@@ -24,7 +24,7 @@ The integration of Power BI with Analytics enables you to go beyond the built-in
 You can pull data from Analytics into Power BI in one of the three ways described in the following table.
 
 > [!NOTE]  
-> OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
+> OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/).
 
 :::row:::
    :::column span="1":::

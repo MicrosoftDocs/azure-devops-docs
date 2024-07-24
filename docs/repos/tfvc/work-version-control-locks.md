@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 When you use Team Foundation Version Control (TFVC) to manage files, you can lock a file or folder to prevent it from being checked out and altered.
 
-To learn more, see any of the following articles:
+For more information, see any of the following articles:
 
 - [Understand lock types](understand-lock-types.md): Explains the various types of TFVC locks that you can apply against the source control server, and shows how to use them.
 - [Lock and unlock folders or files](lock-unlock-folders-files.md): Explains the steps that you can use to lock and unlock source control items.

@@ -388,7 +388,7 @@ sections:
       - question: |
           Q: Why don't I see Team Projects in the Azure portal?
         answer: |
-          A: You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{your_organization}`). You can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
+          A: You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{Your_Organization}`). You can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
           
       - question: |
           Q: Why is my organization already linked to an Azure subscription?

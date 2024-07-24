@@ -12,8 +12,8 @@ ms.date: 01/27/2023
     :::image type="content" source="../media/browse-to-team-project.png" alt-text="Screenshot of Browse to project. ":::
 
 1. (If you don't see your project listed on the home page, select **Browse**.)
-    * On-premises TFS: `http://{your_server}:8080/tfs/DefaultCollection/{your_project}`
-    * Azure Pipelines: `https://dev.azure.com/{your_organization}/{your_project}`
+    * On-premises TFS: `http://{your_server}:8080/tfs/DefaultCollection/{Your_Project}`
+    * Azure Pipelines: `https://dev.azure.com/{Your_Organization}/{Your_Project}`
 
 1. Create a build pipeline (**Pipelines** > **Builds**).
 

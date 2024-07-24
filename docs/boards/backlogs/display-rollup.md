@@ -128,7 +128,7 @@ If an error occurs in retrieving rollup data, you'll see an  :::image type="icon
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Error getting data.](media/rollup/error-getting-data.png)
 
-To learn more about the service, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
+For more information about the service, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
 
 ## Change the column order or remove a rollup column
 
