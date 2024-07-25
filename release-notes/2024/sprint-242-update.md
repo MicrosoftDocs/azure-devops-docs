@@ -2,7 +2,7 @@
 title: Enhancements to GitHub Integration and Pipeline Security
 author: ckanyika
 ms.author: ckanyika
-ms.date: 7/23/2024
+ms.date: 7/25/2024
 description: Enhancements to GitHub Integration and Pipeline Security
 ---
 # Enhancements to GitHub Integration and Pipeline Security
