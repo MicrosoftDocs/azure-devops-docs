@@ -7,6 +7,9 @@ description: Enhancements to GitHub Integration and Pipeline Security
 ---
 # Enhancements to GitHub Integration and Pipeline Security
 
+With this update, we introduce two new features in Boards—an optimized process for connecting Azure DevOps projects to GitHub organizations and the ability to create GitHub branches directly from work items within Azure DevOps.
+
+In addition, we’re excited to announce that in Azure Pipelines, you can enhance pipeline security by making any YAML stage unskippable using a new property setting.
 
 
 Check out the release notes for details.
@@ -51,5 +54,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Silviu Andrica
-
+Dan Hellem
