@@ -6,3 +6,4 @@ ms.topic: include
 ---
 
 - [Connect to GitHub repository search improvements](#connect-to-github-repository-search-improvements)
+- [Create GitHub branch from work item](#create-github-branch-from-work-item)
