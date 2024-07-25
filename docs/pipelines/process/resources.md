@@ -459,6 +459,9 @@ resources:
 > [!NOTE]
 > Service connections that use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) aren't supported in `azureSubscription`.
 
+> [!NOTE]
+> Trigger evaluation only occurs on the default branch. Make sure to set the correct default branch or merge the YAML file into the current default branch. For more information on how to change the pipeline default branch, visit [The pipeline default branch](/azure/devops/pipelines/process/pipeline-default-branch?view=azure-devops).
+
 ### Container resource variables
 
 Once you define a container as a resource, container image metadata passes to the pipeline as variables. Information like image, registry, and connection details are accessible across all the jobs used in your container deployment tasks.
