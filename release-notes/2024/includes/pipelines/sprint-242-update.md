@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Unskippable stages
 
-You can use [YAML templates]() as a security mechanism, for example, to inject a stage that performs malware detection in all pipelines. However, Pipeline end users can choose which stages to run, potentially skipping the malware detection stage.
+You can use [YAML templates](/azure/devops/pipelines/security/templates) as a security mechanism, for example, to inject a stage that performs malware detection in all pipelines. However, Pipeline end users can choose which stages to run, potentially skipping the malware detection stage.
 
 With this sprint, you can mark a YAML stage as unskippable using the new `isSkippable` property. By default, the value of this property is `true`. To prevent skipping a stage set it to `false`, as shown in the example below:
 ``` yaml
