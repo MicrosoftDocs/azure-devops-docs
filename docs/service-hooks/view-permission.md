@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.custom: cross-service
 ms.author: rgundogmus
 author: rgundogmusm
-monikerRange: 'azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 06/28/2024
 ---
 

@@ -6,7 +6,7 @@ ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.custom: devx-track-azurecli
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 03/31/2022
 ms.subservice: azure-devops-repos-git
 ---

@@ -294,11 +294,11 @@ az pipelines queue show --id 14
 }
 ```
 
-
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-::: moniker-end
+
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 

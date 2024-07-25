@@ -106,6 +106,9 @@ accepted values: `ascii`, `utf-16be`, `utf-16le`, `utf-8`
 -  **--file-path**: Optional. Path of the file input if the content is specified in the file.    
 -  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using the az devops configure `-d project=NAME_OR_ID`. 
 
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range="azure-devops"
 
 ### Examples
 
@@ -186,6 +189,10 @@ az devops wiki page update --path
 - **--file-path**: Optional. Path of the file input if the content is specified in the file.
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range="azure-devops"
 
 
 ### Examples
