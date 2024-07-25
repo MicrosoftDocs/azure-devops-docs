@@ -686,6 +686,8 @@
             href: 2024/testplans/sprint-240-update.md
           - name: February 29
             href: 2024/testplans/sprint-235-update.md
+          - name: January 11
+            href: 2024/testplans/sprint-232-update.md
           expanded: false
         - name: "2020"
           items:
@@ -924,8 +926,6 @@
         items:
         - name: "2024"
           items:
-          - name: January 11
-            href: 2024/reporting/sprint-232-update.md
           expanded: true 
         - name: "2023"
           items:
