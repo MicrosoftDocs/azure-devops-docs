@@ -15,20 +15,20 @@ Check out the release notes for details.
 
 ### Azure Boards:
 
-[!INCLUDE [sprint-240-update-links](includes/boards/sprint-240-update-links.md)]
+[!INCLUDE [sprint-242-update-links](includes/boards/sprint-242-update-links.md)]
 
 
 ### Azure Pipelines
 
-[!INCLUDE [sprint-240-update-links](includes/pipelines/sprint-240-update-links.md)]
+[!INCLUDE [sprint-242-update-links](includes/pipelines/sprint-242-update-links.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-240-update](includes/boards/sprint-240-update.md)]
+[!INCLUDE [sprint-242-update](includes/boards/sprint-242-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-240-update](includes/pipelines/sprint-240-update.md)]
+[!INCLUDE [sprint-242-update](includes/pipelines/sprint-242-update.md)]
 
 
 
