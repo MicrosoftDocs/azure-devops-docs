@@ -314,7 +314,7 @@ sections:
           Can I control access to my organization for external users in the connected directory?
         answer: |
           Yes, but only for external users who are [added as guests through Microsoft 365](https://support.office.com/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
-          or [added using B2B collaboration by your Microsoft Entra administrator](/azure/active-directory/external-identities/what-is-b2b). These external users are managed outside the connected directory. To learn more, contact your Microsoft Entra administrator. The following setting doesn't affect [users who are added directly to your organization's directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+          or [added using B2B collaboration by your Microsoft Entra administrator](/azure/active-directory/external-identities/what-is-b2b). These external users are managed outside the connected directory. For more information, contact your Microsoft Entra administrator. The following setting doesn't affect [users who are added directly to your organization's directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
           
           Before you start, make sure you have at least Basic access, not Stakeholder.
           

@@ -124,7 +124,7 @@ Figure out how many parallel jobs you need by first seeing how many parallel job
 
    :::image type="content" source="media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png" alt-text="Location of parallel jobs in organization settings.":::
 
-   URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
+   URL example: `https://{Your_Organization}/_admin/_buildQueue?_a=resourceLimits`
 
 2. View the maximum number of parallel jobs that are available in your organization.
 

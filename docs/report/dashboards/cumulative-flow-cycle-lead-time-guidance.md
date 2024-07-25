@@ -206,7 +206,7 @@ If a work item enters a Completed state and then is reactivated, any extra time 
 
 If your team uses the board, you'll want to understand how your columns map to workflow states. For more information on configuring your board, see [Add columns](../../boards/boards/add-columns.md). 
 
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
+For more information about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times
   

@@ -195,7 +195,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 - You can't change the field name or data type once you've defined it
 - You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
-- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. For more information, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
 
 ::: moniker-end
 
@@ -207,7 +207,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - You can't modify the Description help text of inherited fields
-- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
+- Import or define a global list as supported by the Hosted XML and On-premises XML process models. For more information, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
 
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of predefined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
@@ -285,7 +285,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 ### Restrict modification of work items based on Area Path 
 
-You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. For more information, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 ## Work item type (WIT) customizations 
 

@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 07/15/2024
 --- 
 
 # Set object-level permissions
@@ -20,21 +20,24 @@ As you manage security for your organization, you can set permissions at the org
 The following items are considered objects:
 
 - General: Dashboards, Analytic views, Wikis, and notifications
-- Boards: Area Paths, Iteration Paths, Shared queries and query folders, and more
-- Pipelines: Build and release pipelines, deployment groups, task groups, and more
-- Repos: Git repositories and branches, TFVC folders or branches
-- Artifacts: Artifacts and feeds
+- Azure Boards: Area Paths, Iteration Paths, Shared queries and query folders, and more
+- Azure Pipelines: Build and release pipelines, deployment groups, task groups, and more
+- Azure Repos: Git repositories and branches, TFVC folders or branches
+- Azure Artifacts: Artifacts and feeds
 
-Work items, work item tags, Git repository tags, test plans, test suites, test cases, and other test artifacts aren't objects, but are subject to the security settings or permissions, typically set at the project level or for an area path.
+Work items, tags, test plans, and other test artifacts are subject to the security settings typically set at the project level or for an area path.
 
-To set most object-level permissions, you must be a member of the Project Administrators group, or granted explicit permission through the individual object security dialog. Any permissions granted to Project Administrators are also granted to members of the Project Collection Administrators group.
+To set object-level permissions, you must be a member of the **Project Administrators** group or have explicit permissions through the individual object security dialog.
 
 > [!NOTE]
 > TFVC only supports a single repository per project. You can set permissions for the repository or repo folders/branches, which inherit from the repo.
 
 ## Open the permissions dialog for an object section
 
-There are various ways to get to the Permissions dialog for an object. The simplest way is to start from the object, and then selects **More** ... > **Security**. 
+To access the Permissions dialog for an object, follow these steps:
+1. Go to the specific object.
+2. Select **More** `...`.
+3. Select **Security** from the dropdown menu. 
 
 :::image type="content" source="media/permissions-dialog.png" alt-text="Screenshot showing how to get to permission settings for an object.":::
 
@@ -45,176 +48,43 @@ There are various ways to get to the Permissions dialog for an object. The simpl
 
 You can set permissions at the project-level and organization/collection-level for some general items, such as creating, deleting, and renaming projects. The following table provides information about setting permissions at the object-level for Dashboards, Wiki, and Analytic views.
 
-:::row:::
-   :::column span="1":::
-   **Object**
-   :::column-end:::
-   :::column span="1":::
-   **Default group membership**
-   :::column-end:::
-   :::column span="1":::
-   **How to access security**
-   :::column-end:::
-   :::column span="1":::
-   **Inherited?**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Dashboards](../../report/dashboards/dashboard-permissions.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor
-   :::column-end:::
-   :::column span="1":::
-   Open **Dashboards**, select the area path, and then  **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   ✔️ (project settings for team dashboard)
-   :::column-end:::
-:::row-end:::
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="1":::
-   [Wiki](../../project/wiki/manage-readme-wiki-permissions.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor
-   :::column-end:::
-   :::column span="1":::
-   Open the wiki, choose **More** ... > **Wiki security**. For more information, see [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Analytic views](../../report/powerbi/analytics-security.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor and Basic
-   :::column-end:::
-   :::column span="1":::
-   Open the analytic view, choose **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+|Object  |Default group membership  |How to access security|Inherited?  |
+|---------|---------|---------|---------|
+|[Dashboards](../../report/dashboards/dashboard-permissions.md)| Contributor  | Open **Dashboards**, select the area path, and then  **More** ... > **Security**. | ✔️ (project settings for team dashboard)|
+|[Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |Contributor |Open the wiki, choose **More** ... > **Wiki security**. For more information, see [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md). | no        |
+|[Analytic views](../../report/powerbi/analytics-security.md) | Contributor & Basic|Open the analytic view, choose **More** ... > **Security**.  | no |
+
 
 ## Set permissions for Boards objects
 
 The following table provides information about setting permissions at the object-level for area and iteration paths, work items, and more.
 
-:::row:::
-   :::column span="1":::
-   **Object**
-   :::column-end:::
-   :::column span="1":::
-   **Default group membership**
-   :::column-end:::
-   :::column span="1":::
-   **How to access security**
-   :::column-end:::
-   :::column span="1":::
-   **Inherited?**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Area path](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Open **Project settings** > **Project configuration** > **Areas** > next to an area, **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-    ✔️ (child node from parent node)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Iteration path](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Open **Project settings** > **Project configuration** > **Iterations** > next to an iteration, **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-    ✔️ (child node from parent node)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-    [Work item](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   Contributor
-   :::column-end:::
-   :::column span="1":::
-   Open **Project settings** > **Project configuration** > **Areas** > **Area path** > the work item.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Work item query and query folder](../../boards/queries/set-query-permissions.md)
-   :::column-end:::
-   :::column span="1":::
-   Creator of the query or folder or [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Open the work item query or query folder > **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Delivery Plans](set-permissions-access-work-tracking.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups) or creator of the Delivery Plan.
-   :::column-end:::
-   :::column span="1":::
-   Open **Boards** > **Delivery Plans** > next to a delivery plan, **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-   no
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Process](../../boards/get-started/permissions-access-boards.md)
-   :::column-end:::
-   :::column span="1":::
-   [Project Administrator](../../organizations/security/permissions.md#project-level-groups)
-   :::column-end:::
-   :::column span="1":::
-   Select **More** ... > **Security**.
-   :::column-end:::
-   :::column span="1":::
-    ✔️ (from Organization/Collection settings)
-   :::column-end:::
-:::row-end:::
+
+|Object  |Default group membership  |How to access security  |Inherited?  |
+|---------|---------|---------|---------|
+|[Area path](set-permissions-access-work-tracking.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) |Open **Project settings** > **Project configuration** > **Areas** > next to an area, **More** ... > **Security**.         | ✔️ (child node from parent node) |
+|[Iteration path](set-permissions-access-work-tracking.md)    | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        | Open **Project settings** > **Project configuration** > **Iterations** > next to an iteration, **More** ... > **Security**.        | ✔️ (child node from parent node)    |
+|[Work item](set-permissions-access-work-tracking.md)    | Contributor        | Open **Project settings** > **Project configuration** > **Areas** > **Area path** > the work item.        | no        |
+|[Work item query and query folder](../../boards/queries/set-query-permissions.md)  | Creator of the query or folder or [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        |Open the work item query or query folder > **More** ... > **Security**.         | no        |
+|[Delivery Plans](set-permissions-access-work-tracking.md)    | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) or creator of the Delivery Plan  |Open **Boards** > **Delivery Plans** > next to a delivery plan, **More** ... > **Security**.         | no        |
+|[Process](../../boards/get-started/permissions-access-boards.md)  | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        | Select **More** ... > **Security**.        | ✔️ (from Organization/Collection settings)        |
 
 > [!NOTE]
 > Work item tags - permissions get set at the project level, **Create tag definition**. Work item tags don't qualify as an object, they're defined through work items.
 
 ### Tips
 
-For [**Team members by role**](../../organizations/notifications/manage-team-group-global-organization-notifications.md), the following two roles are explained.
-   - **Changed reviewers** applies to any reviewer that was added or deleted, because of policies defined for the set of files. For example, a push to a pull request (PR) can introduce a change to File1.cs. If a policy says Person A needs to review changes to File1.cs, they're in the Changed reviewers role for that iteration of the PR.
-   - The **Reset reviewers** role is related to the reset votes policy. For example, the repository has the policy “Reset votes on new pushes” configured. Person B, who was required on the PR, already approved this PR. Because of the reset votes policy, their vote is reset. So, they're in the Reset reviewers role for that iteration.
+Let's break down the following roles related to reviewers:
+
+- **Changed reviewers:**
+  - This role applies to any reviewer who was added or removed, due to policies defined for a set of files. 
+  - For example, consider a pull request (PR) where changes are made to `File1.cs`. 
+  - If a policy specifies that Person A needs to review changes to `File1.cs`, they fall into the "Changed reviewers" role for that iteration of the PR.
+- **Reset reviewers:** 
+  - This role is related to the "reset votes" policy. 
+  - Suppose the repository has the policy “Reset votes on new pushes” configured. 
+  - If Person B, who was required to review the PR, already approved it, their vote gets reset due to the policy. 
+  - As a result, they're in the "Reset reviewers" role for that iteration.
 
 ## Set permissions for Repos objects
 
@@ -229,11 +99,19 @@ The following table provides information about setting permissions at the object
 
 ### Tips
 
-- Branches inherit a subset of permissions from assignments made at the repository level. For more information about branch permissions and policies, see [Set branch permissions](../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../repos/git/branch-policies.md)
-- Create a shared query folder for each team and provide permissions to create and edit queries under that folder to all members of the team.
-- If you add a user to the Contributors group, they can add and modify work items. You can restrict user and group permissions based on the area path. For more information, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
+- **Branch permissions:**
+  - Branches inherit a subset of permissions from assignments made at the repository level. 
+  - For more information, see [Set branch permissions](../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../repos/git/branch-policies.md)
+- **Shared query folders:**
+  - Create a shared query folder for each team.
+  - Provide permissions to create and edit queries under that folder to all team members.
+- **Contributors group:**
+  - Adding a user to the Contributors group allows them to add and modify work items. 
+  - You can restrict user and group permissions based on the area path. For more information, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
 ::: moniker range="azure-devops"
-- Project Collection Administrators can [download the permissions report for a repository](download-permissions-report.md). The user interface button doesn't appear for users who aren't members of this group.
+- **Permissions report:**
+  - Project Collection Administrators can [download the permissions report for a repository](download-permissions-report.md). 
+  - The user interface button for this feature doesn't appear for users who aren't members of the Project Collection Administrators group.
 ::: moniker-end
 
 ## Set permissions for Pipelines objects
@@ -244,14 +122,14 @@ The following table provides information about setting permissions at the object
 |--|--|--|--|
 | [**Pipelines**](../../pipelines/policies/permissions.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open **Pipelines** > **Pipelines** > **All** > your pipeline > **More** ... >  **Manage security**. | ✔️ |
 | [Build pipelines](../../pipelines/policies/permissions.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open your build pipeline > **More** ... > **Manage security.** | ✔️ |
-|[Build pipeline runs](../../pipelines/policies/pipeline-permissions.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open your build pipeline run > **More** ... > **Manage security.** | ✔️ |
-| [Release pipelines](../../pipelines/policies/release-pipeline-permissions.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open your release pipeline > **More** ... > **Manage security.** | ✔️ |
-| [Task groups (Classic)](../../pipelines/policies/task-group-permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your task group > **More** ... > **Manage security.**  | ✔️ |
-| [Deployment groups](../../pipelines/policies/deployment-group-permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your deployment group > **More** ... > **Manage security.**   | ✔️   |
-| [Deployment pools](../../pipelines/policies/deployment-group-permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)  |Open your deployment pool > **More** ... > **Manage security.**   | ✔️  |
-| [Environments](../../pipelines/policies/environment-permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your environment > **More** ... > **Manage security.**   | ✔️ (from Environments permission settings) |
-| [Variable groups](../../pipelines/policies/library-permissions.md)  |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your variable group > **More** ... > **Manage security.**  |✔️ (from Library permission settings)  |
-| [Secure files](../../pipelines/policies/library-permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your secure file > **More** ... > **Manage security.**  |✔️ (from Library permission settings)   |
+|[Build pipeline runs](../../pipelines/policies/permissions.md#pipeline-permissions) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open your build pipeline run > **More** ... > **Manage security.** | ✔️ |
+| [Release pipelines](../../pipelines/policies/permissions.md#release-pipeline-permissions) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open your release pipeline > **More** ... > **Manage security.** | ✔️ |
+| [Task groups (Classic)](../../pipelines/policies/permissions.md#task-group-permissions) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your task group > **More** ... > **Manage security.**  | ✔️ |
+| [Deployment groups](../../pipelines/policies/permissions.md#deployment-group-permissions) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your deployment group > **More** ... > **Manage security.**   | ✔️   |
+| [Deployment pools](../../pipelines/policies/permissions.md#deployment-group-permissions) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)  |Open your deployment pool > **More** ... > **Manage security.**   | ✔️  |
+| [Environments](../../pipelines/policies/permissions.md#environment-permissions) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your environment > **More** ... > **Manage security.**   | ✔️ (from Environments permission settings) |
+| [Variable groups](../../pipelines/policies/permissions.md#library-permissions)  |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your variable group > **More** ... > **Manage security.**  |✔️ (from Library permission settings)  |
+| [Secure files](../../pipelines/policies/permissions.md#library-permissions) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your secure file > **More** ... > **Manage security.**  |✔️ (from Library permission settings)   |
 
 ## Set permissions for Artifacts objects
 
@@ -271,14 +149,14 @@ The following table provides information about setting permissions at the object
 
 ## Set object permissions through the command line
 
-You can use the [az devops security command line tool](manage-tokens-namespaces.md) to view and manage permissions.
+You can use the [az devops security command line tool](manage-tokens-namespaces.md), which allows you to view and manage permissions for various objects and features.
 
-Some more granular permissions and permissions for select objects and features can only be managed through the command line. For example:
+Here are some examples of more granular permissions that can be managed through the command line:
 
-- Notifications using the `EventSubscription` and `EventSubscriber` namespaces
-- Read or create dashboards using the `DashboardPriveliges` namespace
-- Use, manage, or view service endpoints through the `ServiceEndpoints` namespace
-- View delivery plans through the `Plans` namespace
+- **Notifications:** Use the `EventSubscription` and `EventSubscriber` namespaces.
+- **Dashboards:** Read or create dashboards using the `DashboardPrivileges` namespace.
+- **Service endpoints:** Use, manage, or view service endpoints through the `ServiceEndpoints` namespace.
+- **Delivery plans:** View delivery plans through the `Plans` namespace.
 
 For more information about namespaces, see [Security namespace and permission reference](namespace-reference.md).
 
@@ -286,20 +164,28 @@ For more information about namespaces, see [Security namespace and permission re
 
 ## Set permissions for object notifications
 
-Notifications can be set at the user, team, project, and organization/collection level. While there isn't a user interface for setting notification permissions, some permissions can be set through command line tools and the `EventSubscription` namespace. For more information, see [Security namespace and permission reference](namespace-reference.md).
+While there isn't a user interface for setting notification permissions, some permissions can be set through command line tools and the `EventSubscription` namespace. For more information, see [Security namespace and permission reference](namespace-reference.md).
 
-Here are some more tips for managing notifications.
+Here are some more tips for managing notifications:
 
-- If you don't want to receive a notification for an event that you started, you can turn on the option, **Skip initiator**. For more information, see [Exclude yourself from notification emails for events that you start](../../organizations/notifications/exclude-self-from-email.md).
-- We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. Also, you can generate a banner with the `az devops banner` command that all users see when they sign in.
+- **Notification levels:**
+  - Notifications can be set at different levels: User, team, project, and organization/collection.
+  - Unfortunately, there isn’t a user interface specifically for setting notification permissions.
+  - However, some permissions can be configured through command-line tools and the EventSubscription namespace.
+- **Skip initiator option:**
+  - If you don’t want to receive notifications for events that you initiated, enable the Skip initiator option.
+  - This prevents notifications for actions you started.
+  - For more information, see [Exclude yourself from notification emails for events that you start](../../organizations/notifications/exclude-self-from-email.md).
+- **Organization-wide notifications:**
+  - Azure DevOps doesn’t directly support organization-wide notifications.
+  - As an alternative, consider providing an email distribution list that reaches your entire organization.
+  - Additionally, you can create a banner using the `az devops banner` command that all users see when they sign in.
 
 ## Related articles
 
-- [Change project-level permissions](change-project-level-permissions.md)
-- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
-- [Download permissions report for a repository](download-permissions-report.md)
+- [Manage permissions for specific tasks](restrict-access.md)
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Download permissions report for a repository](download-permissions-report.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)
-- [Permissions lookup reference](permissions-lookup-guide.md)
-- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 - [Security and permission management tools](security-tools-reference.md)

@@ -21,9 +21,7 @@ Select the consumer that you want to use in your subscription from the following
 
 - [Azure Service Bus](#azure-service-bus)
 - [Azure Storage](#azure-storage)
-- [Campfire](#campfire)
 - [Jenkins](#jenkins)
-- [Kato](#kato)
 - [Trello](#trello)
 - [Web Hooks](#webhooks)
 - [Zendesk](#zendesk)
@@ -148,7 +146,7 @@ This action inserts a JSON string representation of the event to the specified A
     * Required: **Yes**
   * **queueName**
     * Queue name
-    * The lowercase-only name of the queue to be used within Azure storage.  A queue by this name gets created if it doesn't already exist.
+    * The lowercase-only name of the queue to be used within Azure storage. A queue by this name gets created if it doesn't already exist.
     * Data type: **string**
     * Required: **Yes**
   * **visiTimeout**
@@ -177,41 +175,6 @@ This action inserts a JSON string representation of the event to the specified A
     * Data type: **string**
     * Required: **No**
 
-<a id="campfire"></a>
-
-## Campfire
-
-Campfire is similar to instant messaging, but designed exclusively for groups.
-
-### Post a message to a room
-
-Post a message about the event to a room in Campfire.
-
-* Consumer ID: **campfire**
-* Action ID: **postMessageToRoom**
-* Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
-* Settings:
-  * **accountName**
-    * Account name
-    * Account name like ```https://{account name}.campfirenow.com```
-    * Data type: **string**
-    * Required: **Yes**
-  * **authToken**
-    * API authentication token
-    * API authentication token for the user that messages are posted from. You can get this token visiting the user profile page at Campfire.
-    * Data type: **string**
-    * Required: **Yes**
-  * **roomId**
-    * Room
-    * Room to post the message to.
-    * Data type: **number**
-    * Required: **Yes**
-  * **showDetails**
-    * Send a detailed message
-    * Post a short or detailed message about the event.
-    * Data type: **boolean**
-    * Required: **No**
-
 ## Jenkins
 
 Jenkins is a continuous integration server, which allows building and testing software projects continuously.
@@ -236,7 +199,7 @@ Triggers a build configured to use a Git repository using the [Jenkins Git Plugi
     * Required: **Yes**
   * **password**
     * User API token (or password)
-    * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.
+    * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins, the real user password must be specified.
     * Data type: **string**
     * Required: **Yes**
 
@@ -260,7 +223,7 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * Required: **Yes**
   * **password**
     * User API token (or password)
-    * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.
+    * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins, the real user password must be specified.
     * Data type: **string**
     * Required: **Yes**
   * **buildName**
@@ -284,28 +247,6 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * Data type: **string**
     * Required: **No**
 
-## Kato
-
-Kato provides a messaging service for modern organizations.
-
-### Post event to room
-
-Posts an event to a Kato room
-
-* Consumer ID: **kato**
-* Action ID: **postEventToRoom**
-* Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
-* Settings:
-  * **roomToken**
-    * Room token
-    * The token for interacting with a room using the Kato API
-    * Data type: **string**
-    * Required: **Yes**
-  * **roomName**
-    * Room name
-    * Room name as seen in Kato
-    * Data type: **string**
-    * Required: **No**
 ## Trello
 
 Provides integration with Trello.
@@ -320,7 +261,7 @@ This action creates a card on an existing list in Trello. A card can represent a
 * Settings:
   * **userToken**
     * User token (Need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
-    * Your user token provided by Trello.  Select the link in the previously described action description to learn how to obtain this token.
+    * Your user token provided by Trello. To learn how to obtain this token, select the link in the previously described action description.
     * Data type: **string**
     * Required: **Yes**
   * **boardId**
@@ -354,7 +295,7 @@ This action creates a list on an existing board in Trello. A list is used to org
 * Settings:
   * **userToken**
     * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
-    * Your user token provided by Trello.  Select the link in the previously described action description to learn how to obtain this token.
+    * Your user token provided by Trello. To learn how to obtain this token, select the link in the previously described action description.
     * Data type: **string**
     * Required: **Yes**
   * **boardId**
@@ -382,7 +323,7 @@ This action posts a JSON object representation of the event to the specified URL
 * Settings:
   * **url**
     * URL
-    * The URL to which an HTTP POST gets sent.
+    * The URL to which an HTTP POST is sent.
     * Data type: **uri**
     * Required: **Yes**
   * **httpHeaders**
@@ -392,12 +333,12 @@ This action posts a JSON object representation of the event to the specified URL
     * Required: **No**
   * **basicAuthUsername**
     * Basic authentication username
-    * Enter a username for standard HTTP authentication.  Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
+    * Enter a username for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
     * Data type: **string**
     * Required: **No**
   * **basicAuthPassword**
     * Basic authentication password
-    * Enter a password for standard HTTP authentication.  Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via SSL.
+    * Enter a password for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via SSL.
     * Data type: **string**
     * Required: **No**
   * **resourceDetailsToSend**

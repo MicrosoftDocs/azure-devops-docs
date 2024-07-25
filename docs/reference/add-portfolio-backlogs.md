@@ -259,7 +259,7 @@ We've just shown how to add another portfolio backlog level. You can add up to f
 
 If you want to add another WIT to your backlogs or boards, see [work item types to backlogs and boards](add-wits-to-backlogs-and-boards.md). 
 
-To learn more about the syntax for a definition file or command line tool, see these topics:  
+For more information about the syntax for a definition file or command line tool, see these topics:  
 
 - [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)  
 - [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  

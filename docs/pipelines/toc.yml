@@ -146,6 +146,9 @@
     - name: Use Azure Key Vault in your YAML Pipeline
       displayName: key vault, secrets, YAML pipeline
       href: release/key-vault-in-own-project.md
+    - name: Access private key vaults from your pipeline
+      displayName: secret, key vault
+      href: release/key-vault-access.md
   - name: Approvals, checks, & gates
     items:
     - name: Release approval and gates overview
@@ -583,24 +586,24 @@
     href: licensing/concurrent-jobs.md
   - name: Permissions
     items:
-    - name: Permissions overview
+    - name: Manage permissions
       href: policies/permissions.md
     - name: Pipeline permissions
-      href: policies/pipeline-permissions.md
+      href: policies/permissions.md#pipeline-permissions
+    - name: Agent pool permissions
+      href: policies/permissions.md#agent-pool-permissions
+    - name: Deployment group permissions
+      href: policies/permissions.md#deployment-group-permissions
+    - name: Environment permissions
+      href: policies/permissions.md#environment-permissions
+    - name: Library permissions
+      href: policies/permissions.md#library-permissions
     - name: Release pipeline permissions
-      href: policies/release-pipeline-permissions.md
+      href: policies/permissions.md#release-pipeline-permissions
+    - name: Service connection permissions
+      href: policies/permissions.md#service-connection-permissions
     - name: Task group permissions
-      href: policies/task-group-permissions.md
-    - name: Agent pool security
-      href: policies/agent-pool-permissions.md
-    - name: Service connection security
-      href: policies/service-connection-permissions.md
-    - name: Library security
-      href: policies/library-permissions.md
-    - name: Deployment group security
-      href: policies/deployment-group-permissions.md
-    - name: Environment security
-      href: policies/environment-permissions.md
+      href: policies/permissions.md#task-group-permissions
   - name: Add users to contribute to pipelines
     displayName: add administrators, add users
     href: policies/set-permissions.md

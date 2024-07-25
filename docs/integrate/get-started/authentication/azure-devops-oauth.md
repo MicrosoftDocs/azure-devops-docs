@@ -5,7 +5,7 @@ description: How to use the Azure DevOps OAuth 2.0 implementation for existing w
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/10/2023
+ms.date: 07/10/2024
 ---
 
 # Use Azure DevOps OAuth 2.0 to create a web app
@@ -171,10 +171,12 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 
 #### HTTP request headers - refresh token
 
-|  Header           | Value
-|-------------------|------------------------------------------------------------------
-| Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see the following example)
+
+|  Header           | Value  |
+|-------------------|------------------------------------------------------------------|
+| Content-type      | `application/x-www-form-urlencoded`|
+| Content-length    | Calculated string length of the request body (see the following example)|
+
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
@@ -247,42 +249,42 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 
 ### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
 
-A: Verify that **Third-party application access via OAuth** wasn't disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
+A: Verify that your organization's admin didn't disable **Third-party application access via OAuth** at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
 In this scenario, the flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
 
 ### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
 
-A: No. OAuth is only supported in the REST APIs at this point.
+A: No. OAuth is only supported in the REST APIs.
 
 ### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
 
-A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work-items?preserve-view=true&view=azure-devops-rest-6.1) REST API:
+A: Do the following steps:
 
-```REST
-GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
-```
+1. Get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work-items?preserve-view=true&view=azure-devops-rest-6.1) REST API:
 
-To get the attachments details, you need to add the following parameter to the URL:
+   ```REST
+   GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
+   ```
 
-```REST
-$expand=all
-```
+2. To get the attachments details, add the following parameter to the URL:
 
-With the results, you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
+   ```REST
+   $expand=all
+   ```
 
-```REST API
-$url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=5.0
+3. With the results, you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
 
-$workItem = Invoke-RestMethod -Uri $url -Method Get -ContentType application/json
+   ```REST API
+   $url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=6.0
 
-$split = ($workitem.relations.url).Split('/')
+   $workItem = Invoke-RestMethod -Uri $url -Method Get -ContentType application/json
 
-$attachmentId = $split[$split.count - 1]
+   $split = ($workItem.relations.url).Split('/')
 
-# Result: 1244nhsfs-ff3f-25gg-j64t-fahs23vfs
-```
+   $attachmentId = $split[$split.count - 1]
 
-<!-- ENDSECTION -->
+   # Result: 1244nhsfs-ff3f-25gg-j64t-fahs23vfs
+   ```
 
 ## Related articles
 

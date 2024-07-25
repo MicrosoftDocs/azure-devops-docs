@@ -107,7 +107,7 @@ For more information, see [Default permissions and access for Azure Boards](perm
 
 A board is provisioned with the addition of each project and each team. You can only create or add boards to a project by adding another team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
-1. Sign in to your organization (```https://dev.azure.com/{your_organization}```) and go to your project.
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```) and go to your project.
 2. Select **Boards** > **Boards**.  
 
    :::image type="content" source="media/plan-track-work/open-boards.png" alt-text="Screenshot showing two selections highlighted with red boxes, to open boards.":::

@@ -476,8 +476,38 @@ This action only dismisses the alert for your selected branch. Other branches th
 ## Troubleshooting dependency scanning 
 
 ### Dependency scanning not identifying any components
+If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task. 
 
-If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task.  
+For example, for a C# (.NET Core) project, here is a sample YAML snippet: 
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+- task: DotNetCoreCLI@2
+  displayName: 'Restore NuGet packages'
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
+
+    # If you are using a private package feed such as Azure Artifacts, you will need additional variables.
+    # For more information, see https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines 
+    feedsToUse: 'select'
+    ...
+
+- task: AdvancedSecurity-Dependency-Scanning@1
+```
+
+For a JavaScript project, here is a sample YAML snippet:
+>[!div class="tabbedCodeSnippets"]
+```yaml
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    command: 'install'
+    workingDir: '$(System.DefaultWorkingDirectory)'
+
+- task: AdvancedSecurity-Dependency-Scanning@1
+```
+
 
 ### Dependency scanning not picking up new vulnerabilities 
 

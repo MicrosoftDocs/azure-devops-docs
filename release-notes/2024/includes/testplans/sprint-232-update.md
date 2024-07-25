@@ -11,3 +11,4 @@ Results for code coverage are now available for every individual file and folder
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of Multiple repository widget to GA.](../../media/232-testplans-01.png "Screenshots of Multiple repository widget to GA.")
+

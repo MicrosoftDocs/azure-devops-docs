@@ -36,11 +36,11 @@ A project defines a process and data storage in which you manage your software p
 ## Connect from the web portal
 
 ::: moniker range="azure-devops"
-- Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
+- Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 ::: moniker-end
 
 ::: moniker range=" < azure-devops" 
-- Sign in to your project (```http://ServerName/{DefaultCollection}/{ProjectName}```). 
+- Sign in to your project (```http://ServerName/{DefaultCollection}/{Project_Name}```). 
 ::: moniker-end
 
 For more information, see [Web portal navigation](../../project/navigation/index.md).

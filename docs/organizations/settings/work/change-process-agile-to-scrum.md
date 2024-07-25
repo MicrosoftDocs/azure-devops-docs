@@ -95,7 +95,7 @@ Steps to manually update your work items and board settings:
 
 ## Update board column-to-state settings
 
-You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. To learn more, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
+You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
 1. For each team, [open your board](../../../boards/get-started/plan-track-work.md).
 

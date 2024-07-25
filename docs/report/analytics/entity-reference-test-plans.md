@@ -298,7 +298,7 @@ The following table lists the navigation properties that are valid for a **TestR
 
 ## TestRuns  
 
-Test runs occur when you manually run a test or include test tasks within a pipeline definition. To learn more, see [Build, test, and deploy .NET Core apps, Run your tests](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).  
+Test runs occur when you manually run a test or include test tasks within a pipeline definition. For more information, see [Build, test, and deploy .NET Core apps, Run your tests](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).  
 
 The following properties are valid for **TestRuns** and its surrogate key `TestRunSK`.
 
@@ -350,7 +350,7 @@ The following table lists the navigation properties that are valid for a **TestR
  
 ## TestSuites 
 
-Test suites are defined for test plans and specify the tests to run. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md).
+Test suites are defined for test plans and specify the tests to run. For more information, see [Create test plans and test suites](../../test/create-a-test-plan.md).
 
 The following properties are valid for  **TestSuites** and its surrogate key `TestSuiteSK`.
 

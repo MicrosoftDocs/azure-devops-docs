@@ -13,7 +13,7 @@ metadata:
   ms.topic: landing-page 
   ms.author: jeom
   author: raviLiftr
-  ms.date: 09/30/2019 
+  ms.date: 06/26/2024 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -29,6 +29,8 @@ landingContent:
             url: ../test/overview.md
           - text: Navigate Test Plans
             url: ../test/navigate-test-plans.md
+          - text: Store custom data in test plan and/or test result
+            url: ../test/custom-fields.md
   - title: Run manual tests
     linkLists:
       - linkListType: quickstart
