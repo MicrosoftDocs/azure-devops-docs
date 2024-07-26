@@ -15,7 +15,7 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-232-update-links](includes/general/sprint-232-update-links.md)]
 
-### Azure Test Plans:
+### Azure Test Plans
 
 
 [!INCLUDE [sprint-232-update-links](includes/testplans/sprint-232-update-links.md)]
