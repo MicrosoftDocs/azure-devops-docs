@@ -37,6 +37,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2024/sprint-242-update.md" data-raw-source="[25 July 2024](2024/sprint-242-update.md)"> 25 July  2024</a></td>
+    <td>Connect to GitHub repository search improvements</td><td>Boards</td><td>Future</td></tr>
+    <td>Create GitHub branch from work item</td><td>Boards</td><td>Future</td></tr>
+    <td>Unskippable stages</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
     <td rowspan="4"><a href="2024/sprint-241-update.md" data-raw-source="[3 July 2024](2024/sprint-241-update.md)"> 3 July  2024</a></td>
     <td>New authentication format for Azure DevOps personal access tokens available</td><td>General</td><td>Future</td></tr>
     <td>Automated self-hosted agent install for code scanning bits in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
