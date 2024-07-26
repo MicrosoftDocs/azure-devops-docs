@@ -1,11 +1,11 @@
 ---
-title: Enhanced GitHub Integration and Pipeline Security
+title: Enhanced GitHub integration and Azure Pipelines Security
 author: ckanyika
 ms.author: ckanyika
 ms.date: 7/25/2024
-description: Enhanced GitHub Integration and Pipeline Security
+description: Enhanced GitHub integration and Azure Pipelines Security
 ---
-# Enhanced GitHub Integration and Pipeline Security
+# Enhanced GitHub integration and Azure Pipelines Security
 
 With this update, we have two new GitHub integration improvements to share. First, you can now create a new GitHub branch directly from a work item. Secondly, we have improved the connection experience to GitHub Repositories, reducing the risk of timeout errors and long wait times for customers with thousands of repositories.
 
@@ -13,7 +13,7 @@ In addition, we’re excited to announce that in Azure Pipelines, you can enhanc
 
 Check out the release notes for details.
 
-### Azure Boards:
+### Azure Boards
 
 [!INCLUDE [sprint-242-update-links](includes/boards/sprint-242-update-links.md)]
 

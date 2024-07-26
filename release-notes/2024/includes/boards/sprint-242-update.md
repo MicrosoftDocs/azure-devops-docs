@@ -10,7 +10,7 @@ ms.topic: include
 We're excited to announce an improved process for connecting an Azure DevOps project to a GitHub organization, especially beneficial for those with thousands of repositories. Previously, you might have faced challenges like timeout errors and long wait times. Our latest update optimizes the search and selection experience, eliminating the risk of timeout errors and making the connection process smoother and more efficient. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshots of add GitHub repositories.](../../media/242-boards-01.png "Screenshot of add github repositories.")
+> ![Screenshot of add GitHub repositories.](../../media/242-boards-01.png "Screenshot of add github repositories.")
 
 ### Create GitHub branch from work item
 
