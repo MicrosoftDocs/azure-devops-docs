@@ -36,7 +36,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root":"docs/pipelines/tasks/transforms-variable-substitution.md",
+      "source_path_from_root":"/docs/pipelines/tasks/transforms-variable-substitution.md",
       "redirect_url":"/previous-versions/azure/devops/pipelines/tasks/transforms-variable-substitution?view=tfs-2018"
     },
     {
