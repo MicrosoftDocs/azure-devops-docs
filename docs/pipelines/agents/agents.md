@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 
 
-To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
+To build your code or deploy your software using Azure Pipelines, you need at least one agent. As your codebase and team grow, you'll need more agents.
 
 When your pipeline runs, the system begins one or more jobs.
 An agent is computing infrastructure with installed agent software that runs one job at a time.
@@ -25,7 +25,7 @@ Azure Pipelines provides several different types of agents.
 |------------|-------------|--------------|
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server |
-| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be auto-scaled to meet demands | Azure DevOps Services |
+| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands | Azure DevOps Services |
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
@@ -78,7 +78,7 @@ You can install the agent on Linux, macOS, or Windows machines. You can also ins
 > tar xvfz vsts-agent-osx-x64-V.v.v.tar.gz
 > ```
 
-After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
+After you install the agent on a machine, you can install any other software on that machine as required by your jobs.
 
 ::: moniker range="azure-devops"
 
@@ -92,24 +92,24 @@ After you've installed the agent on a machine, you can install any other softwar
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
 All official Azure DevOps tasks use Node 10 as a universal handler, however, customers might still use custom tasks
-that use the outdated Node 6 library. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
+that use the outdated Node 6 library. To support backward compatibility with Node that reached end-of-life, we provide the following self-service methods to install the designated Node runner manually.
 
-* Manually install the Node 6 runner. For more information on manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
+* Manually install the Node 6 runner. For more information about manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
 * Use the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node 6 library.
 * Install an agent package that includes Node 6.
   
   Azure Pipelines provides two versions of agent packages.
 
   * **vsts-agent-\*** packages support Node 6.
-  * **pipelines-agent-\*** packages do not support Node 6. This version of the package will become the default agent package in the future.
+  * **pipelines-agent-\*** packages don't support Node 6. This version of the package will become the default agent package in the future.
 
-  If you know that you are not using any Node 6 dependant tasks, and you don't want Node 6 installed on your agent machine, you can install the agent from the **Alternate Agent Downloads** section from [https://github.com/microsoft/azure-pipelines-agent/releases](https://github.com/microsoft/azure-pipelines-agent/releases).
+  If you know that you aren't using any Node 6 dependant tasks, and you don't want Node 6 installed on your agent machine, you can install the agent from the **Alternate Agent Downloads** section from [https://github.com/microsoft/azure-pipelines-agent/releases](https://github.com/microsoft/azure-pipelines-agent/releases).
 
 ## Azure Virtual Machine Scale Set agents
 
-Azure Virtual Machine Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
+Azure Virtual Machine Scale Set agents are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
 
-You specify a Virtual Machine Scale Set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
+You specify a Virtual Machine Scale Set, the number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
 
 For more information, see [Azure Virtual Machine Scale Set agents](scale-set-agents.md).
 
@@ -119,7 +119,7 @@ For more information, see [Azure Virtual Machine Scale Set agents](scale-set-age
 
 ::: moniker range="azure-devops"
 
-**Parallel jobs** represents the number of jobs you can run at the same time in your organization. If your organization has a single parallel job, you can run a single job at a time in your organization, with any additional concurrent jobs being queued until the first job completes. To run two jobs at the same time, you need two parallel jobs. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
+**Parallel jobs** represents the number of jobs you can run at the same time in your organization. If your organization has a single parallel job, you can run a single job at a time in your organization, with any other concurrent jobs being queued until the first job completes. To run two jobs at the same time, you need two parallel jobs. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
 
 Microsoft provides a free tier of service by default in every organization that includes at least one parallel job. Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time. For more information on parallel jobs and different free tiers of service, see [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md).
 
@@ -142,7 +142,7 @@ You might need more parallel jobs to use multiple agents at the same time:
 
 <h2 id="capabilities">Capabilities</h2>
 
-Every self-hosted agent has a set of capabilities that indicate what it can do. Capabilities are name-value pairs that are either automatically discovered by the agent software, in which case they are called **system capabilities**, or those that you define, in which case they are called **user capabilities**.
+Every self-hosted agent has a set of capabilities that indicate what it can do. Capabilities are name-value pairs that are either automatically discovered by the agent software, called **system capabilities**, or capabilities that you define, called **user capabilities**.
 
 The agent software automatically determines various system capabilities such as the name of the machine, type of operating system, and versions of certain software installed on the machine. Also, environment variables defined in the machine automatically appear in the list of system capabilities.
 
@@ -209,7 +209,7 @@ You can view the details of an agent, including its version and system capabilit
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent) Azure CLI methods.
+You can view the details of an agent, including its version and capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent) Azure CLI methods.
 
 [List agents](#list-agents) | [Show agent details](#show-agent-details)
 
@@ -279,19 +279,9 @@ az pipelines agent show --agent-id
 - **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
 - **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
 - **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+- To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service. in pipelines or variable groups when exchanged with the agent.
 
-#### Example
-
-The following example displays agent details for the agent with the ID of `3`. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
-
-```azurecli
-az pipelines agent show --agent-id 3 --pool-id 4 --include-capabilities true
-This command group is in preview. It might be changed/removed in a future release.
-{
-  "accessPoint": null,
-  "assignedAgentCloudRequest": null,
+The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key.gentCloudRequest": null,
  
   <Some properties omitted for space>
 
@@ -308,28 +298,13 @@ This command group is in preview. It might be changed/removed in a future releas
     "sh": "",
     "subversion": "",
     "svn": "",
-    "xcode": ""
-  },
-  "userCapabilities": null,
-  "version": "2.160.1"
-}
+    "To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service.
 
-```
+However, if you're running UI tests such as Selenium or Coded UI tests that require a browser, the browser is launched in the context of the agent account.
 
-You can also use `--output table` which returns an abbreviated version of the same information.
+On Windows, you should consider using a service account such as Network Service or Local Service. These accounts have restricted permissions and nonexpiring passwords, reducing the need for agent management over time.
 
-```azurecli
-az pipelines pool show --id 4 --output table
-
-ID    Name                             Is Hosted    Pool Type
-----  -------------------------------  -----------  -----------
-4     Hosted Windows 2019 with VS2019  True         automation
-```
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
-::: moniker-end
-
+These credentials are different from the credentials that you use when you register the agent with Azure Pipelines or Azure DevOps Server.
 
 
 > [!TIP]
@@ -351,7 +326,7 @@ ID    Name                             Is Hosted    Pool Type
 ::: moniker-end
 
 
-The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
+The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. The agent always initiates this communication. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown by the following examples.
 
 ::: moniker range="< azure-devops"
 ![Agent topologies in on-premises installations.](media/agent-topologies-tfs.png)
@@ -361,15 +336,15 @@ The agent communicates with Azure Pipelines or Azure DevOps Server to determine 
 ![Agent topologies in Azure DevOps Services.](media/agent-topologies-devops.png)
 ::: moniker-end
 
-Here is a common communication pattern between the agent and Azure Pipelines or Azure DevOps Server.
+Here's a common communication pattern between the agent and Azure Pipelines or Azure DevOps Server.
 
-1. The user registers an agent with Azure Pipelines or Azure DevOps Server by adding it to an [agent pool](pools-queues.md). You need to be an [agent pool administrator](pools-queues.md#security) to register an agent in that agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is it used in any further communication between the agent and Azure Pipelines or Azure DevOps Server. Once the registration is complete, the agent downloads a _listener OAuth token_ and uses it to listen to the job queue.
+1. The user registers an agent with Azure Pipelines or Azure DevOps Server by adding it to an [agent pool](pools-queues.md). You need to be an [agent pool administrator](pools-queues.md#security) to register an agent in that agent pool. The identity of agent pool administrator is needed only at the time of registration and isn't persisted on the agent. It isn't used in any further communication between the agent and Azure Pipelines or Azure DevOps Server. Once the registration is complete, the agent downloads a _listener OAuth token_ and uses it to listen to the job queue.
 
-2. The agent listens to see if a new job request has been posted for it in the job queue in Azure Pipelines/Azure DevOps Server using an HTTP long poll. When a job is available, the agent downloads the job as well as a _job-specific OAuth token_. This token is generated by Azure Pipelines/Azure DevOps Server for the scoped identity [specified in the pipeline](../build/options.md). That token is short lived and is used by the agent to access resources (for example, source code) or modify resources (for example, upload test results) on Azure Pipelines or Azure DevOps Server within that job.
+2. The agent listens to see if a new job request is posted for it in the job queue in Azure Pipelines/Azure DevOps Server using an HTTP long poll. When a job is available, the agent downloads the job and a _job-specific OAuth token_. Azure Pipelines/Azure DevOps Server generates a short-lived token for the scoped identity [specified in the pipeline](../build/options.md). The token is used by the agent to access or modify resources on Azure Pipelines or Azure DevOps Server within that job. For example, to access source code or upload test results.
 
-3. After the job is completed, the agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
+3. The agent discards the job-specific OAuth token after the job is completed, then goes back to checking if there's a new job request using the listener OAuth token.
 
-The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in pipelines or variable groups are secured as they are exchanged with the agent.
+The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This method secures secrets stored in pipelines or variable groups when exchanged with the agent.
 
 > [!NOTE]
 > The agent provides support for UTF-8 client encoding output. 
@@ -388,10 +363,7 @@ connectivity to Azure websites and servers running in Azure.
 > [Agent IP ranges](hosted.md#agent-ip-ranges) where Microsoft-hosted agents are deployed 
 > so you can configure the firewall rules for your Azure VNet to allow access by the agent.
 
-If your on-premises environments do not have connectivity to a Microsoft-hosted agent pool
-(which is typically the case due to intermediate firewalls), you'll need to
-manually configure a self-hosted agent on on-premises computer(s). The agents must have connectivity to the target
-on-premises environments, and access to the Internet to connect to Azure Pipelines or Team Foundation Server,
+If your on-premises environments don't have connectivity to a Microsoft-hosted agent pool, which is typically the case due to intermediate firewalls, you need to manually configure self-hosted agents on on-premises computers. The agents must have connectivity to the target on-premises environments, and access to the internet to connect to Azure Pipelines or Team Foundation Server,
 as shown in the following schematic.
 
 ![Agent connectivity for on-premises environments](media/agent-connections-devops.png)
@@ -400,17 +372,17 @@ as shown in the following schematic.
 <a name="configure-tfs-authentication"></a>
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent.
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and isn't persisted on the agent. It isn't used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent.
 
-When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
 :::moniker range="<= azure-devops-2022"
 
-Windows agents have the following two additional authentication options on Azure DevOps Server.
+Additionally, Windows agents have the following two authentication options on Azure DevOps Server.
 
-* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as New Technology LAN Manager (NTLM) or Kerberos. After selecting Negotiate, you're prompted for credentials.
 * [**Integrated**](./agent-authentication-options.md#integrated) (Default) Connect a Windows agent to Azure DevOps Server using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
 > [!IMPORTANT]
@@ -424,25 +396,21 @@ The authentication method used for registering the agent is used only during age
 <h2 id="interactive-or-service">Interactive vs. service</h2>
 
 You can run your self-hosted agent as either a service or an interactive process.
-After you've configured the agent, we recommend you first try it
+
+After you configure the agent, we recommend you first try it
 in interactive mode to make sure it works. Then, for production use,
 we recommend you run the agent in one of the following modes so
 that it reliably remains in a running state. These modes also
 ensure that the agent starts automatically if the machine is restarted.
 
-1. **As a service**. You can leverage the service manager of the
-   operating system to manage the lifecycle of the agent. In addition, the
-   experience for auto-upgrading the agent is better when it is run
-   as a service.
+1. **As a service**. You can use the service manager of the
+   operating system to manage the lifecycle of the agent. In addition, the experience for autoupgrading the agent is better when you run the agent as a service.
 
 1. **As an interactive process with auto-logon enabled**. In some cases,
    you might need to run the agent interactively for production use -
    such as to run UI tests. When the agent is configured to run in this
    mode, the screen saver is also disabled. Some domain policies might
-   prevent you from enabling auto-logon or disabling the screen saver. In
-   such cases, you might need to seek an exemption from the domain policy,
-   or run the agent on a workgroup computer where the domain policies
-   do not apply.
+   prevent you from enabling auto-logon or disabling the screen saver. In such cases, you might need to seek an exemption from the domain policy, or run the agent on a workgroup computer where the domain policies don't apply.
 
    > [!NOTE]
    > There are security risks when you enable automatic logon
@@ -461,19 +429,14 @@ ensure that the agent starts automatically if the machine is restarted.
 <h2 id="account">Agent account</h2>
 
 Whether you run an agent as a service or interactively, you can choose
-which computer account you use to run the agent. (Note that this is different
-from the credentials that you use when you register the agent with
-Azure Pipelines or Azure DevOps Server.) The choice of agent account depends solely on the needs
-of the tasks running in your build and deployment jobs.
+which computer account you use to run the agent. The choice of agent account depends solely on the needs of the tasks running in your build and deployment jobs.
 
-For example, to run tasks that use Windows authentication to access an external
-service, you must run the agent using an account that has access
-to that service. However, if you are running UI tests such as Selenium or Coded UI tests that
-require a browser, the browser is launched in the context of the agent account.
 
-On Windows, you should consider using a service account such as Network Service or Local Service.
-These accounts have restricted permissions and their passwords don't expire, meaning
-the agent requires less management over time.
+For example, to run tasks using Windows authentication to access an external service, the agent must run using an account with access to that service. However, if you're running UI tests such as Selenium or Coded UI tests that require a browser, the browser is launched in the context of the agent account.
+
+On Windows, you should consider using a service account such as Network Service or Local Service. These accounts permissions are restricted and their passwords don't expire, meaning the agent requires less management over time.
+
+These credentials are different from the credentials that you use when you register the agent with Azure Pipelines or Azure DevOps Server.
 
 ## Agent version and upgrades
 
@@ -481,15 +444,11 @@ the agent requires less management over time.
 
 We update the agent software every few weeks in Azure Pipelines.
 We indicate the agent version in the format `{major}.{minor}`.
-For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
+For instance, if the agent version is `2.1`, then the major version is `2` and the minor version is `1`.
 
-Microsoft-hosted agents are always kept up-to-date.
-If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
-An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
+Microsoft-hosted agents are always kept up-to-date. If the newer version of the agent is only different in _minor_ version, Azure Pipelines can automatically update self-hosted agents. You can configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled. An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
-If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you might have to manually upgrade the agents.
-You can do this easily from the **Agent pools** tab under your organization.
-Your pipelines won't run until they can target a compatible agent.
+If you run a self-hosted agent interactively, or if there's a newer _major_ version of the agent available, then you might have to manually upgrade the agents. You can upgrade the agents easily from the **Agent pools** tab under your organization. Pipelines can't run without a compatible agent
 
 ### To update self-hosted agents
 
@@ -522,17 +481,15 @@ For instance, if the agent version is `2.1`, then the major version is 2 and the
 When your Azure DevOps Server has a newer version of the agent, and that newer agent is only different in _minor_ version, it can usually be automatically upgraded.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 Starting with Azure DevOps Server 2019, you don't have to wait for a new server release.
-You can [upload a new version of the agent to your application tier](#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool), and that version will be offered as an upgrade.
+You can [upload a new version of the agent to your application tier](#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool), and that version is offered as an upgrade.
 
-If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you might have to manually upgrade the agents.
-You can do this easily from the **Agent pools** tab under your project collection.
-Your pipelines won't run until they can target a compatible agent.
+If you run the agent interactively, or if there's a newer _major_ version of the agent available, then you might have to manually upgrade the agents. You can easily upgrade the agent from the **Agent pools** tab under your project collection. Pipelines can't run without a compatible agent.
 
 ::: moniker-end
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [Configure agent capabilities](#configure-agent-capabilities).
 
-To trigger agent update programmatically you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
+To trigger agent update programmatically, you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
 
 > [!NOTE]
 > For servers with no internet access, manually copy the agent zip file to the following folder to use as a local file. Create the **Agents** folder if it is not present.
@@ -540,7 +497,7 @@ To trigger agent update programmatically you can use Agent update API as describ
 > * Linux: `usr/share/Microsoft/Azure DevOps/Agents`
 > * macOS: `usr/share/Microsoft/Azure DevOps/Agents`
 
-  Create the **Agents** folder if it is not present.
+  Create the **Agents** folder if it isn't present.
 
 ## FAQ
 
@@ -550,7 +507,7 @@ To trigger agent update programmatically you can use Agent update API as describ
 
 In many cases, yes. Specifically:
 
-* If you use a self-hosted agent, you can run incremental builds. For example, if you define a pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits (unless you use features such as [caching](../release/caching.md)) because the agent is destroyed after the build or release pipeline is completed.
+* If you use a self-hosted agent, you can run incremental builds. For example, if you define a pipeline that doesn't clean the repo and doesn't perform a clean build, your builds typically run faster. You don't get these benefits with a Microsoft-hosted agent unless you use features such as [caching](../release/caching.md) because the agent is destroyed after the pipeline is completed.
 
 * A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
 
@@ -570,7 +527,14 @@ For Microsoft-hosted agents, the agent is torn down and returned to the Azure Pi
 
 For self-hosted agents:
 
-When a pipeline is canceled, the agent sends a sequence of commands to the process executing the current step. The first command is sent with a timeout of 7.5 seconds. If the process has not terminated, a second command is sent with a timeout of 2.5 seconds. If the process has not terminated, the agent issues a command to kill the process. If the process does not honor the two initial termination requests, it will be killed. From the initial request to termination takes approximately 10 seconds.
+When a pipeline is canceled, the agent sends a sequence of commands to the process executing the current step. 
+
+* The first command is sent with a timeout of 7.5 seconds. 
+* If the process doesn't terminate, a second command is sent with a 2.5-second timeout.
+* If the process doesn't terminate, the agent commands it to be killed.
+* If the process ignores the two initial termination requests, it's forcibly killed.
+
+From the initial request to termination takes approximately 10 seconds.
 
 The commands issued to the process to cancel the pipeline differ based on the agent operating system.
 
@@ -608,10 +572,10 @@ POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/
 
 | Name           | In    | Required | Type          | Description                                                                            |
 | -------------- | ----- | -------- | ------------- | -------------------------------------------------------------------------------------- |
-| `agentId`      | query | False    | string        | The agent to update. If not specified - update will be triggered for all agents.       |
+| `agentId`      | query | False    | string        | The agent to update. If not specified - update is triggered for all agents.       |
 | `organization` | path  | True     | string        | The name of the Azure DevOps organization.                                             |
 | `poolId`       | path  | True     | integer int32 | The agent pool to use                                                                  |
-| `api-version`  | query | False    | string        | Version of the API to use. This should be set to '6.0' to use this version of the api. |
+| `api-version`  | query | False    | string        | Version of the API to use. The value should be set to '6.0' to use this version of the API. |
 
 
 

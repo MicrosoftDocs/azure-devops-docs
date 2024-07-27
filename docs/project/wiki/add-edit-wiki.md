@@ -228,8 +228,6 @@ az devops wiki page delete --path
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 - **--yes -y**: Optional. Don't prompt for confirmation.
 
-[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
-
 ### Example
 
 Delete a wiki page with the path 'my wiki' in a wiki named 'myprojectwiki.'
