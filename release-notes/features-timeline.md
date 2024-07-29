@@ -315,12 +315,12 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>     
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a>
+            <a href="/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a>
          </td>
          <td>Boards</td>         
          <td>Future</td>
       </tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available)">Add link to GitHub commit or pull request from work item</a></td>
          <td>Boards</td>         
          <td>Future</td>
       </tr> 
@@ -384,7 +384,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr> 
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item (preview)</a>
+            <a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a>
          </td>
          <td>Boards</td> 
          <td>Future</td>       
