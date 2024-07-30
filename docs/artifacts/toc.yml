@@ -54,6 +54,9 @@
     - name: Install NuGet packages with Visual Studio
       displayName: install package, nuget, visual studio
       href: nuget/consume.md
+    - name: Share PowerShell modules with Azure Artifacts
+      displayName: powershell, module, package
+      href: tutorials/private-powershell-library.md
     - name: Use packages from NuGet.org
       displayName: upstream, nuget, install, package
       href: nuget/upstream-sources.md
@@ -166,9 +169,6 @@
     - name: Delete and recover packages
       displayName: delete, recover, packages, artifacts
       href: how-to/delete-and-recover-packages.md
-    - name: Share PowerShell modules with Azure Artifacts feed
-      displayName: powershell artifacts, artifact feeds, powershell module, powershell library
-      href: tutorials/private-powershell-library.md
     - name: Use public feeds to share your packages publicly
       displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
       href: tutorials/share-packages-publicly.md
@@ -203,7 +203,7 @@
     - name: Search for packages in upstream sources
       displayName: search packages, upstreams
       href: how-to/search-upstream.md
-    - name: Configure upstream behavior
+    - name: Safeguard against malicious public packages
       displayName: upstreams, behavior, configure upstreams
       href: concepts/upstream-behavior.md
 - name: Artifacts in Azure Pipelines

@@ -477,7 +477,7 @@ Share it with your organization so that you can install and test it.
 Right-select your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 > [!IMPORTANT]
-> Publishers must be verified to share extensions publicly. To learn more, see [Package/Publish/Install](../publish/overview.md).
+> Publishers must be verified to share extensions publicly. For more information, see [Package/Publish/Install](../publish/overview.md).
 
 Now that your extension is shared in the Marketplace, anyone who wants to use it must install it.
 

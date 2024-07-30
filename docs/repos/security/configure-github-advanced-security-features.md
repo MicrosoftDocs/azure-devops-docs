@@ -28,7 +28,7 @@ At this time, GitHub Advanced Security for Azure DevOps is only available for Az
 
 ## Prerequisites
 
-You must have permissions allocated as a member of the Project Collection Administrators group.  To add members to the Project Collection Administrators group or change a project collection-level permission see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
+You must have permissions allocated as a member of the Project Collection Administrators group. To add members to the Project Collection Administrators group or change a project collection-level permission see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
 
 ### Extra prerequisites for self-hosted agents
 
@@ -184,7 +184,7 @@ steps:
 > Use `java` to analyze code written in Java, Kotlin or both.
 > Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
-If the language specified is `cpp, java, csharp` or `swift` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action.
+If the language specified is `cpp, java, csharp` or `swift` custom build steps are required.
 
 
 #### [Classic](#tab/classic)

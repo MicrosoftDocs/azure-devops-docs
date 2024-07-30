@@ -36,6 +36,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root":"/docs/pipelines/tasks/transforms-variable-substitution.md",
+      "redirect_url":"/previous-versions/azure/devops/pipelines/tasks/transforms-variable-substitution?view=tfs-2018"
+    },
+    {
       "source_path_from_root":"/docs/pipelines/targets/webapp-on-container-linux.md",
       "redirect_url":"/azure/devops/pipelines/apps/cd/deploy-docker-webapp",
       "redirect_document_id": false
@@ -208,6 +212,10 @@
     {
       "source_path_from_root": "/docs/pipelines/ecosystems/xamarin.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/process/parameters.md",
+      "redirect_url": "/azure/devops/pipelines/release/parameters"
     }
   ]
 }

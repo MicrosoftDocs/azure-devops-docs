@@ -55,10 +55,6 @@ In this section, we'll cover best practices for consuming packages with Azure Ar
 
     The feed will sequentially check each upstream source, and return the package from the first source that has it.
 
-- **Place public upstreams FIRST in your resolution order**:
-
-    This prevents other sources from overriding well-known packages with altered or incompatible versions.
-
 ## Related articles
 
 - [Package sizes and count limits](../reference/limits.md)

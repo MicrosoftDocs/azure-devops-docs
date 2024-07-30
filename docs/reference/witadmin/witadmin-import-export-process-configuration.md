@@ -380,7 +380,7 @@ If you modify the test suite workflow, then you have to make a similar update if
    
    You can have only one State mapped to `type="Complete"`  
    
-   To learn more, see [Support bug update status using My Work](../xml/support-bug-update-status-using-my-work.md).
+   For more information, see [Support bug update status using My Work](../xml/support-bug-update-status-using-my-work.md).
    :::column-end:::
 :::row-end:::
 :::row:::

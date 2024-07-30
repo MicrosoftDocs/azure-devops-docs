@@ -46,7 +46,7 @@ To adjust permissions for a specific repository:
 
 ### Use personal access tokens (PATs)
 
-You can use a personal access token to use the Advanced Security APIs. To learn more about PATs on Azure DevOps and how to create them, refer to [About PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+You can use a personal access token to use the Advanced Security APIs. For more information about PATs on Azure DevOps and how to create them, refer to [About PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 Advanced Security offers three extra scopes for a PAT: `read`, `read and write`, and `read, write, and manage`. 
 

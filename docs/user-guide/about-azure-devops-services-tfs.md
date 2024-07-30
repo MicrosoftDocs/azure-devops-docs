@@ -181,7 +181,7 @@ Azure DevOps Services and Azure DevOps Server offer the following tools that giv
 - [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 - [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
-- [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization. To learn more about the Analytics service, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
+- [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization. For more information about the Analytics service, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 
 **Azure DevOps Server 2018**
 

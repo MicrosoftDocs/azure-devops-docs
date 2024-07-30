@@ -215,7 +215,7 @@ Azure DevOps doesn't move or replicate customer data outside the chosen location
 > [!NOTE]
 > For builds and releases that run on Microsoft-provided macOS agents, your data is transferred to a GitHub datacenter in the United States.
 
-To learn more, see [Data locations for Azure DevOps](data-location.md).
+For more information, see [Data locations for Azure DevOps](data-location.md).
 
 ### Law enforcement access
 

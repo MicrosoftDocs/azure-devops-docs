@@ -20,7 +20,7 @@ Members of the **Project Administrators** group can add users to a project.  Add
 
  Once users have been added to a project or organization, you can browse for their display name or user name (email alias) from any people-picker tool. Users can connect to a project and access features available through a supported client or the web portal. 
  
-To learn more, see the following articles: 
+For more information, see the following articles: 
 - [Add users or groups to a team or project](../../organizations/security/add-users-team-project.md) 
 - [Manage your organization or project collection, Add users to your organization](../../user-guide/manage-organization-collection.md)
 - [Connect to a project](../../organizations/projects/connect-to-projects.md) 

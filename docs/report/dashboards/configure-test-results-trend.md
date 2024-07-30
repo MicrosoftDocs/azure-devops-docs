@@ -46,7 +46,7 @@ With the Test Results Trend charts, you can gain the following insights:
 - Obtain insights into specific areas of interest to you based on test file, branch, or stage you own by configuring specific filters.  
 - Obtain insights into a specific area you test by configuring the widget to focus on a test file, branch, or stage. 
 
-Test Results Trend charts require that you set up continuous testing in your build pipeline. To get deeper insights and data you can view the Test Failure report in the pipeline. To learn more, see details [Analyze test results](../../pipelines/test/test-analytics.md#view-test-analytics-for-builds). 
+Test Results Trend charts require that you set up continuous testing in your build pipeline. To get deeper insights and data you can view the Test Failure report in the pipeline. For more information, see details [Analyze test results](../../pipelines/test/test-analytics.md#view-test-analytics-for-builds). 
 
 ## Prerequisites
 

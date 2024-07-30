@@ -138,7 +138,7 @@ For example, here we've chosen to track bugs along with tasks, and  enable Task,
 
 ::: moniker range=">= azure-devops-2019"
 
-To learn more about checklists, see the following articles: 
+For more information about checklists, see the following articles: 
 - [Add tasks or child items as checklists](../boards/add-task-checklists.md)  
 - [Add, run, and update inline tests](../boards/add-run-update-tests.md)
 - [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md)
@@ -157,7 +157,7 @@ To learn more about checklists, see the following articles:
 
 If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose if these types appear within a checklist on your product board. You make this choice by opening **Board Settings**, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to five annotations. For more information, see [Customize cards](../boards/customize-cards.md). 
 
-For example, here  we've chosen to track bugs along with tasks, and we enable Issue and Ticket and Task and Bug. To learn more about checklists, see [Add tasks or child items as checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
+For example, here  we've chosen to track bugs along with tasks, and we enable Issue and Ticket and Task and Bug. For more information about checklists, see [Add tasks or child items as checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
 
 > [!div class="mx-imgBorder"]
 > ![On the settings page, the Annotations tab is selected and five Annotation types (Task, Bug, Tests, Issue, Ticket) are listed. All but Tests are enabled.](media/setup-backlog/annotations-on-prem.png)

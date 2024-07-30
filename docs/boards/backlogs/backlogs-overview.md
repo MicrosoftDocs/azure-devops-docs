@@ -250,7 +250,7 @@ For TFS 2018 and earlier versions, the board only shows the leaf node with neste
 You can use the following controls to change or filter your product backlog view. 
 
 > [!IMPORTANT]  
-> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state won't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
 ::: moniker range=">= azure-devops-2019"
 For more information about using each of these controls, see [Configure your backlog view](configure-your-backlog-view.md).

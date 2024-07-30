@@ -49,7 +49,7 @@ To customize the workflow, follow these two steps:
 
 2.  [Modify the process configuration to map new workflow states to metastates](process-configuration-xml-element.md).  
 
-    This second step is required when you change the workflow for a WIT that appears on an Agile tool page. These WITs belong to either the Requirement or Task categories. To learn more about state categories, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).  
+    This second step is required when you change the workflow for a WIT that appears on an Agile tool page. These WITs belong to either the Requirement or Task categories. For more information about state categories, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).  
 
 
 <a name="DesignGuidelines"></a> 
@@ -66,7 +66,7 @@ As you design or modify a workflow, consider the following guidelines:
 
 -  Use the `STATE` element to define a unique state for each team member role that will take a specific action on a work item. The more states you define, the more transitions you must define. Regardless of the sequence in which you define the states, they are listed in alphanumeric order in the drop-down menu for the **State** field.  
 
-     If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. To learn more, review [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).  
+     If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. For more information, review [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).  
 
 -   Use the `TRANSITION` element to define a transition for each valid progression and regression from one state to another.  
 
@@ -249,7 +249,7 @@ You can define rules that update fields whenever the following events occur:
 
 - Assign a field rule under `DEFAULTREASON` or `REASON` when you want the rules to apply only for that specific reason.  
 
-  If a field should always contain the same value, you define the rule under the `FIELD` element that defines that field. To learn more about rule usage, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
+  If a field should always contain the same value, you define the rule under the `FIELD` element that defines that field. For more information about rule usage, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
 
   You should try to minimize the number of conditions that you define for any one type of work item. With each conditional rule that you add, you increase the complexity of the validation process that occurs every time that a team member saves a work item. Complex rule sets might increase the time that is required to save the work item.  
 

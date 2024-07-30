@@ -163,7 +163,7 @@ With work items selected, open the context menu for any selected item, and reass
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Queries Results page, bulk modify, Assign to selection from More actions menu.](media/bulk-modify/assign-from-query.png)  
 
-To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
+For more information about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
 
@@ -173,7 +173,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
+1. For audit purposes, you can type a description for your bulk update task. For more information about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Edit work items dialog.](media/bulk-modify/edit-work-items-new-text-editor.png)  

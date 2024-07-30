@@ -48,7 +48,7 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 
 
 > [!NOTE]   
-> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing is available. Azure Load Testing is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/all/load-test/overview).
+> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing is available. Azure Load Testing is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. For more information, see [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/all/load-test/overview).
 
 
 ### Key benefits 
@@ -68,7 +68,7 @@ Azure Test Plans provides software development teams the following benefits.
 
 ### Supported scenarios and access requirements 
 
-Access to Azure DevOps web portal features are managed through access levels assigned to users. The three main access levels are **Stakeholder**, **Basic**, and **Basic+Test** plans as described in [About access levels](../organizations/security/access-levels.md). The following table indicates the access-level required to exercise the associated tasks with Azure Test Plans. In addition to access levels, select features require permissions to execute. To learn more, see [Manual test access and permissions](manual-test-permissions.md).   
+Access to Azure DevOps web portal features are managed through access levels assigned to users. The three main access levels are **Stakeholder**, **Basic**, and **Basic+Test** plans as described in [About access levels](../organizations/security/access-levels.md). The following table indicates the access-level required to exercise the associated tasks with Azure Test Plans. In addition to access levels, select features require permissions to execute. For more information, see [Manual test access and permissions](manual-test-permissions.md).   
   
  
 :::row:::
@@ -238,7 +238,7 @@ You can perform the following tasks using the indicated tools.
 
 ###  Execute tests 
 
-From the **Test plans** hub, **Execute** tab, team members can initiate test execution for one or more test cases defined for a test suite. Choices include running **Test Runner** for a web or desktop application. Optionally, team members can select **Run with options** to choose other supported clients for manual testing, or to select a build for automated testing. To learn more, see [Run manual tests](run-manual-tests.md).
+From the **Test plans** hub, **Execute** tab, team members can initiate test execution for one or more test cases defined for a test suite. Choices include running **Test Runner** for a web or desktop application. Optionally, team members can select **Run with options** to choose other supported clients for manual testing, or to select a build for automated testing. For more information, see [Run manual tests](run-manual-tests.md).
 
 :::image type="content" source="media/overview/execute-tests.png" alt-text="Screenshot of execution of multiple test cases.":::
  
@@ -246,7 +246,7 @@ From the **Test plans** hub, **Execute** tab, team members can initiate test exe
 
 **Test Runner** runs tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all captured diagnostic data 
-to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
+to help your developers reproduce the issues. For more information, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
 !
 :::image type="content" source="media/overview/test-runner.png" alt-text="Screenshot of Test Runner with annotations.":::
@@ -323,7 +323,7 @@ Azure Test Plans supports linking bugs and requirements to test cases and test s
 
 ### View items linked to a test case
 
-From the **Test plans** hub, you can view and open the test suites, requirements, and bugs linked to a test case. The **Test Suites** tab also indicates the test plans and projects that reference the test case. The **Requirements** tab lists work items linked to the test case that belong to the requirements category. In addition, you can create a direct-links query that lists items that link to test cases via the **Tests/Tested by** link type. To learn more, see [Create test cases](create-test-cases.md) and [Use direct links to view dependencies](../boards/queries/using-queries.md#use-direct-links-to-view-dependencies). 
+From the **Test plans** hub, you can view and open the test suites, requirements, and bugs linked to a test case. The **Test Suites** tab also indicates the test plans and projects that reference the test case. The **Requirements** tab lists work items linked to the test case that belong to the requirements category. In addition, you can create a direct-links query that lists items that link to test cases via the **Tests/Tested by** link type. For more information, see [Create test cases](create-test-cases.md) and [Use direct links to view dependencies](../boards/queries/using-queries.md#use-direct-links-to-view-dependencies). 
 
 :::row:::
    :::column span="":::
@@ -347,7 +347,7 @@ From the Azure Boards boards, you can add tests from a user story or feature, au
 
 ### Requirements quality widget 
 
-The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate** for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
+The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate** for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). For more information, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
 
 :::image type="content" source="../pipelines/test/media/requirements-traceability/requirements-quality-widget.png" alt-text="Screenshot of Requirements traceability widget added to dashboard.":::
 
@@ -397,7 +397,7 @@ With the [Progress report](progress-report.md) hub, teams can track progress of 
 The [Runs](insights-exploratory-testing.md) hub displays the results of test runs. This includes all test runs, both manual and automated. 
 
 > [!NOTE]  
-> The **Runs** hub is available with Azure DevOps Server 2020 and later versions. It requires enabling the Analytics service which is used to store and manage test run data. To learn more about the service, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md)
+> The **Runs** hub is available with Azure DevOps Server 2020 and later versions. It requires enabling the Analytics service which is used to store and manage test run data. For more information about the service, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md)
 
 :::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
@@ -425,7 +425,7 @@ Hover over any build summary, and you can view more details, specifically the nu
 
 ### Test results trend (Advanced)
 
-The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline. The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more. To learn more, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md).
+The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline. The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more. For more information, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md).
  
 :::image type="content" source="../report/dashboards/media/test-results-trend-widget/passed-bypriority-pass.png" alt-text="Screenshot of Test results trend widget, Advanced version based on Analytics service."::: 
   
@@ -434,11 +434,11 @@ The Test Results Trend (Advanced) widget provides near real-time visibility into
 
 ### Test Analytics
 
-The built-in tests and test-supported widgets derive their data from the Analytics service. The Analytics service is the reporting platform for Azure DevOps. Test Analytics data is available for Azure DevOps Server 2019 and later versions. It supports the **Analytics** and **Tests** tab and drill-down reports available from the **Pipelines** hub. The **Test failure** drill down report provides a summary of passed and failing tests. To learn more, see [Test Analytics](../pipelines/test/test-analytics.md). 
+The built-in tests and test-supported widgets derive their data from the Analytics service. The Analytics service is the reporting platform for Azure DevOps. Test Analytics data is available for Azure DevOps Server 2019 and later versions. It supports the **Analytics** and **Tests** tab and drill-down reports available from the **Pipelines** hub. The **Test failure** drill down report provides a summary of passed and failing tests. For more information, see [Test Analytics](../pipelines/test/test-analytics.md). 
 
 :::image type="content" source="media/overview/pipeline-analytics.png" alt-text="Screenshot of Pipelines Analytics summary page."::: 
   
-In addition, you can create custom reports by querying the Analytics service. To learn more, see [Overview of sample reports using OData queries](../report/powerbi/sample-odata-overview.md). 
+In addition, you can create custom reports by querying the Analytics service. For more information, see [Overview of sample reports using OData queries](../report/powerbi/sample-odata-overview.md). 
 
 <!--- TCM commands: 
 

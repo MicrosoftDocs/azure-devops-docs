@@ -31,6 +31,6 @@ Under the **Coverage** tab, security overview shows all repositories in your ent
 
 :::image type="content" source="media/security-overview-coverage.png" lightbox="media/security-overview-coverage.png" alt-text="Screenshot of Coverage tab in security overview for an organization."::: 
 
-By hovering on a specific repository, security overview directs you to that repository's settings pane where you can enable Advanced Security. To learn more about configuring Advanced Security features, refer to [Configure GitHub Advanced Security](configure-github-advanced-security-features.md).
+By hovering on a specific repository, security overview directs you to that repository's settings pane where you can enable Advanced Security. For more information about configuring Advanced Security features, refer to [Configure GitHub Advanced Security](configure-github-advanced-security-features.md).
 
 :::image type="content" source="media/enable-github-advanced-security.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::

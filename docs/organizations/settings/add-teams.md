@@ -89,7 +89,7 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
 	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
 
 	> [!NOTE] 
-	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, boards, and Taskboards. To learn more, see [Manage and configure team tools](manage-teams.md).   
+	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, boards, and Taskboards. For more information, see [Manage and configure team tools](manage-teams.md).   
 
 2. When finished, select **Create**.  
 
@@ -265,7 +265,7 @@ url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a9
 
 Upon creation of a team, the following items are automatically configured:  
 - Security group with the team name containing the members assigned to the team, for example, **[Fabrikam Fiber]\Production Planning**. You can use this name to filter queries or to **@mention** all members of the team. 
-- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
+- Default notifications assigned to the team. For more information, see [Manage notifications for a team, project, or organization](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 - Default dashboard named **Overview** assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
 
 > [!IMPORTANT]   

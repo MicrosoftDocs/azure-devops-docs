@@ -366,7 +366,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Configure service hooks](../../service-hooks/overview.md)
    :::column-end:::
    :::column span="2":::
-      With service hooks, you can automate a task on other services, such as [Campfire, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
+      With service hooks, you can automate a task on other services, such as [Trello, Datadog, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
    :::column-end:::
 :::row-end:::
 ---
@@ -500,7 +500,7 @@ From the administrative **Project settings** page, you can configure settings av
       **Service connections**
    :::column-end:::
    :::column span="2":::
-      - [Manage service connections in Azure Pipelines](../../pipelines/library/service-endpoints.md#project-level-permissions)
+      - [Manage service connections in Azure Pipelines](../../pipelines/policies/permissions.md#set-service-connection-project-permissions)
    :::column-end:::
    :::column span="2":::
       For more information, see a [list of common service connection types](../../pipelines/library/service-endpoints.md#common-service-connection-types).

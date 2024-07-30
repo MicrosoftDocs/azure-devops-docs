@@ -25,7 +25,7 @@ Share progress and status with your team using configurable team dashboards. Das
 ::: moniker-end
 
  
-When a project is first created, a default team and default team dashboard is created labeled *Overview*. You can customize this dashboard by adding widgets. Each widget provides access to one or more features or functions. To learn more about each widget, see [Widget catalog](widget-catalog.md). 
+When a project is first created, a default team and default team dashboard is created labeled *Overview*. You can customize this dashboard by adding widgets. Each widget provides access to one or more features or functions. For more information about each widget, see [Widget catalog](widget-catalog.md). 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -214,7 +214,7 @@ When you're finished with your changes, select **Done Editing** to exit dashboar
 
 ## Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). For more information about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
 
 
 ## Try this next 
