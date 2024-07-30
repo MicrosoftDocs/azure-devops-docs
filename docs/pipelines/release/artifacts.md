@@ -38,45 +38,58 @@ The following sections describe how to work with the different types of artifact
 
 ## Azure Pipelines
 
-You can link a release pipeline to any Azure Pipelines build. You can also link multiple build pipelines and specify their default values and set up deployment triggers on multiple build sources. When any of the builds completes, it will trigger the creation of a release.
-
-The following features are available when using Azure Pipelines as an artifact source:
+You can link your Classic release pipeline to any pipeline artifact. Additionally, you can link multiple artifacts and set up deployment triggers on multiple build sources. This setup will create a release each time a new build becomes available. The following features are available when using Azure Pipelines as an artifact source:
 
 | Feature | Description                      |
 |---------|----------------------------------|
-| Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
-| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
-| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
-| Deployment stages | The build summary list all the deployment stages where the artifact was deployed to. |
+| Auto-trigger releases | New releases can be created automatically when a new artifact is available (including XAML builds). See [Classic release triggers](triggers.md) for more details.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for artifacts referenced in a Classic release. |
+| Work items and commits | Link work items to see them displayed in the release details. Commits will be shown when using Git or TFVC.|
+| Artifact download | By default, pipeline artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) the artifact if needed. |
+| Deployment stages | The pipeline summary lists all the deployment stages where the artifact has been deployed. |
 
 > [!NOTE]
-> You must include a **Publish Artifacts** task in your build pipeline. For YAML build pipelines, an artifact with the name **drop** is published implicitly.
+> To publish your pipeline artifact in a Classic pipeline, you must add a [PublishPipelineArtifact](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task to your pipeline.  In YAML pipelines, a **drop** artifact is published implicitly.
 
-::: moniker range="> azure-devops-2022"
+::: moniker range="azure-devops"
 
-By default, releases run with a collection level job authorization scope. This means that releases can access resources in all projects in the organization (or collection for Azure DevOps Server). This is useful when linking build artifacts from other projects. You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to a project's artifact.
+### Limit job authorization scope
 
-**To set job authorization scope for the organization**:
+By default, releases run with an organization-level job authorization scope, allowing them to access resources across all projects in the organization. This is useful when linking pipeline artifacts from other projects. To restrict access to a project's artifacts, you can enable **Limit job authorization scope to current project for release pipelines** in the project settings
 
-- Navigate to your **Organization settings**.
-- Select **Settings** under Pipelines.
-- Turn on the toggle **Limit job authorization scope to current project for release pipelines** to limit the scope to current project. This is the recommended setting for a good security measures.
+**To set the job authorization scope for the organization**:
 
-**To set job authorization scope for a specific project**:
+1. Sign in to your Azure DevOps organization.
 
-- Navigate to your **Project settings**.
-- Select **Settings** under Pipelines.
-- Turn on the toggle **Limit job authorization scope to current project for release pipelines** to limit the scope to the current project. This is the recommended setting, as it enhances security for your pipelines.
+1. Select **Organization settings** at the bottom left.
+
+1. Select **Pipelines** > ***Settings**.
+
+1. Turn on the toggle **Limit job authorization scope to current project for release pipelines** to restrict the scope to the current project. This is recommended to enhance security.
+
+    :::image type="content" source="media/authorization-scope-organization-level.png" alt-text="A screenshot that shows how to set the job authorization scope for the organization.":::
+
+**To set the job authorization scope for a specific project**:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings** at the bottom left.
+
+1. Select **Pipelines** > ***Settings**.
+
+1. Turn on the toggle **Limit job authorization scope to current project for release pipelines** to restrict the scope to the current project. This setting is recommended for enhancing the security of your pipelines.
+
+    :::image type="content" source="media/authorization-scope-project-level.png" alt-text="A screenshot that shows how to set the job authorization scope for a project.":::
 
 > [!NOTE] 
-> If the scope is set to project at the organization level, you cannot change the scope in each project.
+> If the scope is set at the organization level, it cannot be changed individually in each project.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-All jobs in a release run with the job authorization scope set to collection. In other words, these jobs have access to resources in all projects in your project collection. 
+> [!NOTE]
+> By default, releases run with a collection-level job authorization scope, allowing them to access resources across all projects in the collection.
 
 ::: moniker-end
 
