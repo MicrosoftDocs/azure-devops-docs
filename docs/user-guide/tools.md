@@ -36,7 +36,7 @@ To get started with client libraries, see [Client library samples](../integrate/
 
 **Team Explorer plug-in**
 
-Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio to projects defined in Azure DevOps. You can manage source code, work items, and builds. To learn more, see [Work in Team Explorer](work-team-explorer.md).
+Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio to projects defined in Azure DevOps. You can manage source code, work items, and builds. For more information, see [Work in Team Explorer](work-team-explorer.md).
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git |Home page with TFVC |

@@ -25,7 +25,7 @@ sections:
 
       - question: Can sub hubs within Azure Boards be disabled? 
         answer: | 
-          **No**. While you can disable an entire service&mdash; such as Azure Boards, Azure Repos, Azure Pipelines&mdash; you can't disable individual pages within a service. To learn more, see [Turn a service on or off](../set-services.md). 
+          **No**. While you can disable an entire service&mdash; such as Azure Boards, Azure Repos, Azure Pipelines&mdash; you can't disable individual pages within a service. For more information, see [Turn a service on or off](../set-services.md). 
 
       - question: Are there set limits regarding configuration or customization?  
         answer: | 
@@ -38,7 +38,7 @@ sections:
       - question: Who has permissions to configure Azure Boards?  
         answer: | 
 
-          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Change project-level permissions](../../security/change-project-level-permissions.md). 
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. For more information, see [Change project-level permissions](../../security/change-project-level-permissions.md). 
           - [Area Paths](../set-area-paths.md)
           - [Modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
           - [Iteration Paths](../set-iteration-paths-sprints.md)
@@ -91,7 +91,7 @@ sections:
       - question: Is there a way to determine who changed what within a process?  
         answer: | 
           ::: moniker range=">= azure-devops-2019"
-          Auditing of process changes is available for Azure DevOps Services (cloud) only. To learn more, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).
+          Auditing of process changes is available for Azure DevOps Services (cloud) only. For more information, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).
           ::: moniker-end
           A best practice is to maintain process templates under source control. In that way, changes made to a process is available through standard source control versioning.  
 
@@ -99,7 +99,7 @@ sections:
         answer: | 
           Picklist value entries are dependent on the data type. Refer to the following articles based on the field type of interest:  
           - **Numeric or string picklist fields**: You can customize the menu values for fields such as [Priority](../../../boards/queries/planning-ranking-priorities.md), [Activity](../../../boards/queries/query-numeric.md), [Discipline](../../../boards/queries/query-numeric.md), and so on. See [Add and manage fields (Inherited process)](customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../../reference/add-modify-field.md).  
-          - **Area Path or Iteration Path**: These tree-path fields are configured for each project. To learn more, see [About area and iteration (sprint) paths](../about-areas-iterations.md).  
+          - **Area Path or Iteration Path**: These tree-path fields are configured for each project. For more information, see [About area and iteration (sprint) paths](../about-areas-iterations.md).  
           - **Person-name or Identity fields**: To add values for fields associated with user accounts such as Assigned To, [add users to a project security group or a team](../../security/add-users-team-project.md). By default, the list for these fields contain the account names for all users and groups that have been added to your organization or on-premises collection. These accounts are often synchronized with Active Directory or Microsoft Entra ID. See [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../../security/add-ad-aad-built-in-security-groups.md).
 
       - question: Can I add or rename a portfolio backlog?  

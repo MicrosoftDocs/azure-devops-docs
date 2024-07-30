@@ -58,7 +58,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
 > [!NOTE]
-> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
+> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. For more information, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
 
 
 As needed, you can do the following actions at any time:
@@ -333,7 +333,7 @@ All work items that are assigned to a team area path appear on the backlogs and 
 
 
 > [!NOTE]  
-> Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
+> Teams can be assigned a maximum of 300 **Area Paths**. For more information, see [Work tracking, process, and project limits](work/object-limits.md). 
 
 The default area path determines the default area path assigned to work items that are created from the team context.  
 

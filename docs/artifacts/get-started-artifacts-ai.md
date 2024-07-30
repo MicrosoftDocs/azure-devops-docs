@@ -70,32 +70,6 @@ This article walks you through the process of publishing your first package to a
 
 ## Prepare the code
 
-#### [With GitHub Copilot](#tab/githubcopilot/)
-
-Before publishing a package to the feed you created earlier, you must first pack your project and prepare it for publishing. 
-
-The following example walks you through using GitHub Copilot to create a sample .NET Core class library and generate a NuGet package from the command line. You can also use GitHub Copilot to generate other types of projects, such as npm or Python projects.
-
-1. Open Visual Studio Code and select the chat icon from the left navigation panel to open the GitHub Copilot Chat.
-
-1. In the prompt box. ask GitHub copilot: "How do I create a .NET Core project and package it as a NuGet package?". GitHub Copilot's response might be something similar to the following:
-
-    :::image type="content" source="media/create-project-github-copilot-response.png" alt-text="A screenshot that shows a response from GitHub Copilot Chat.":::
-
-1. Follow the provided steps to generate your project, define your package ID and version, and pack your project.
-
-You can also ask GitHub Copilot to explain your project structure using the `@workspace` command, which lets you interact with the files and folders in your current workspace.
-
-> `@workspace` explain my app structure
-
-:::image type="content" source="media/github-copilot-app-structure.png" alt-text="A screenshot that shows GitHub Copilot explaining workspace app structure.":::
-
-Another useful method to understand new source code is to ask GitHub Copilot how specific files are related within the project. For example, you can ask how the *csproj* file is related to the *Class1.cs* file:
-
-> #file:artifacts-github-copilot.csproj #file:Class1.cs how are these files related
-
-:::image type="content" source="media/github-copilot-csproj-class-relation.png" alt-text="A screenshot that shows GitHub Copilot response in Visual Studio Code.":::
-
 #### [Without GitHub Copilot](#tab/withoutgithubcopilot/)
 
 Follow these steps to create a basic Class Library project from the command line, set up your package's metadata, and generate a NuGet package:
@@ -136,7 +110,34 @@ Follow these steps to create a basic Class Library project from the command line
     ```dotnetcli
     dotnet pack
     ```
-    
+
+#### [With GitHub Copilot](#tab/githubcopilot/)
+
+Before publishing a package to the feed you created earlier, you must first pack your project and prepare it for publishing. 
+
+The following example walks you through using GitHub Copilot to create a sample .NET Core class library and generate a NuGet package from the command line. You can also use GitHub Copilot to generate other types of projects, such as npm or Python projects.
+
+1. Open Visual Studio Code and select the chat icon from the left navigation panel to open the GitHub Copilot Chat.
+
+1. In the prompt box. ask GitHub copilot: "How do I create a .NET Core project and package it as a NuGet package?". GitHub Copilot's response might be something similar to the following:
+
+    :::image type="content" source="media/create-project-github-copilot-response.png" alt-text="A screenshot that shows a response from GitHub Copilot Chat.":::
+
+1. Follow the provided steps to generate your project, define your package ID and version, and pack your project.
+
+You can also ask GitHub Copilot to explain your project structure using the `@workspace` command, which lets you interact with the files and folders in your current workspace.
+
+> `@workspace` explain my app structure
+
+:::image type="content" source="media/github-copilot-app-structure.png" alt-text="A screenshot that shows GitHub Copilot explaining workspace app structure.":::
+
+Another useful method to understand new source code is to ask GitHub Copilot how specific files are related within the project. For example, you can ask how the *csproj* file is related to the *Class1.cs* file:
+
+> #file:artifacts-github-copilot.csproj #file:Class1.cs how are these files related
+
+:::image type="content" source="media/github-copilot-csproj-class-relation.png" alt-text="A screenshot that shows GitHub Copilot response in Visual Studio Code.":::
+
+
 * * *
 
 ## Connect to a feed

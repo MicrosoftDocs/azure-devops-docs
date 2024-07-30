@@ -257,7 +257,7 @@ For an Inheritance process, you can prevent users from modifying a work item by 
 
 It's not possible to define a custom rule that restricts modification of work items of a specific type. You can only specify restriction by state. If the user doesn't change the state, then they can modify other fields, unless all fields are made read-only for the group. 
 
-Instead, if you want to restrict a group of users from modifying select work items of any type, you can assign those work items to an Area Path. Define a security group, and then set restrictions for editing work items for that Area Path for that group as shown in the following image. To learn more, see [Set permissions and access for work tracking, Create child nodes and modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
+Instead, if you want to restrict a group of users from modifying select work items of any type, you can assign those work items to an Area Path. Define a security group, and then set restrictions for editing work items for that Area Path for that group as shown in the following image. For more information, see [Set permissions and access for work tracking, Create child nodes and modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
 
 :::image type="content" source="media/sample-rules/restrict-modifications-by-area-path-permissions.png" alt-text="Screenshot of Permissions dialog for an Area Path to restrict modifications of work items.":::
 
@@ -381,7 +381,7 @@ Using one of the following two conditions, you can make select fields required f
 - `current user is not a member of a group...`
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md).
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](rule-reference.md).
 
 For example, you can make the **Title** or the **State** fields **Read-only** for select users or groups. 
 

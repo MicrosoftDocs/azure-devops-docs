@@ -158,7 +158,7 @@ To view the test summary of a pipeline for a particular branch, use the followin
 - Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
-To learn more about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
 #### [Power BI query](#tab/powerbi/)
 

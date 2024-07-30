@@ -1,5 +1,5 @@
 ---
-title: Secret Validity Checking
+title: Secret validity checking
 author: ncouraud
 ms.author: nicour
 ms.date: 11/8/2023

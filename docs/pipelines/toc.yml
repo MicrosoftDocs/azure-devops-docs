@@ -135,8 +135,8 @@
     - name: Use runtime parameters
       displayName: parameters in pipelines, conditionals, loop, data types
       href: process/runtime-parameters.md
-    - name: Use classic process parameters
-      href: process/parameters.md
+    - name: Process parameters (Classic)
+      href: release/parameters.md
     - name: Use classic release and artifacts variables
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
       href: release/variables.md
@@ -703,8 +703,6 @@
     href: process/expressions.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
-  - name: File and variable transform
-    href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
   - name: Artifact policy checks
@@ -718,16 +716,6 @@
   - name: Use feature flags
     displayName: feature-flags
     href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb/toc.json&toc=/azure%2fdevops%2fpipelines/toc.json
-  - name: Legacy content
-    items:
-    - name: NuGet Packager 0.*
-      href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0?view=tfs-2017&preserve-view=true
-    - name: NuGet Publisher 0.*
-      href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0?view=tfs-2017&preserve-view=true
-    - name: NuGet Installer 0.*
-      href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
-    - name: Deploy to AKS with Jenkins
-      href: /previous-versions/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks?view=tfs-2017&preserve-view=true
 - name: Developer resources
   items:
   - name: REST API reference

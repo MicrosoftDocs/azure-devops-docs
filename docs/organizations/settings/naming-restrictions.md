@@ -230,7 +230,7 @@ For more information, see [Azure Pipelines documentation](../../pipelines/index.
 
 ## Azure Repos (Git)
 
-Each Azure DevOps project can contain multiple Git repositories. The names you assign to Git repositories must conform to the following restrictions. To learn more, see [Azure Repos Git documentation](../../repos/git/index.yml). For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format). 
+Each Azure DevOps project can contain multiple Git repositories. The names you assign to Git repositories must conform to the following restrictions. For more information, see [Azure Repos Git documentation](../../repos/git/index.yml). For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format). 
 
 > [!IMPORTANT]
 > Although you can include spaces within repo names, we don't recommend that you do so.
@@ -245,7 +245,7 @@ Each Azure DevOps project can contain multiple Git repositories. The names you a
 
 ## Azure Repos (TFVC) 
  
-Team Foundation version control (TFVC) provides a central repository for files and the commands that are required to manage those files across a team. It also provides customizable check-in policies, branching, merging, shelving, and many other features. To learn more, see [Azure Repos TFVC documentation](../../repos/tfvc/index.yml)
+Team Foundation version control (TFVC) provides a central repository for files and the commands that are required to manage those files across a team. It also provides customizable check-in policies, branching, merging, shelving, and many other features. For more information, see [Azure Repos TFVC documentation](../../repos/tfvc/index.yml)
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](../../repos/tfvc/optimize-your-workspace.md).
 

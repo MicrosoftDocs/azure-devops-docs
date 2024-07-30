@@ -27,7 +27,7 @@ Each backlog&mdash;product or portfolio&mdash;is a tool you share with your team
 To effectively perform select tasks, it's good to know how to set your view options to support those tasks.  
 
 > [!TIP]  
-> You can't sort your backlog on a column. To view a sorted listed, select **Create query** from your backlog. Save and open the query. Modify the query if needed to be a flat list query. You can then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+> You can't sort your backlog on a column. To view a sorted listed, select **Create query** from your backlog. Save and open the query. Modify the query if needed to be a flat list query. You can then sort the query results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 
 ## Backlog configuration options
@@ -96,7 +96,7 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
 
       - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story Points**, **Effort**, or **Size**.   
 
-      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
       - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column. 
           
@@ -119,7 +119,7 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
 
       - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story Points**, **Effort**, or **Size**.   
 
-      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
       - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column. 
 

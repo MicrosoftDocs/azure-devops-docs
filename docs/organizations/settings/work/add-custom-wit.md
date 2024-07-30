@@ -54,7 +54,7 @@ For more information, see [Create inherited process](manage-process.md#create-an
 
 	Choose **Create** to save. 
 
-	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. To learn more, see [About work items](../../../boards/work-items/about-work-items.md).
+	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. For more information, see [About work items](../../../boards/work-items/about-work-items.md).
  
 	![WIT header details](media/process/weblayout-system-controls-details-page.png)
 

@@ -296,7 +296,7 @@ az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --
 You can set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
 
 > [!NOTE]  
-> Teams can be assigned a maximum of 300 **Iteration Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
+> Teams can be assigned a maximum of 300 **Iteration Paths**. For more information, see [Work tracking, process, and project limits](work/object-limits.md). 
 
 #### [Browser](#tab/browser) 
 

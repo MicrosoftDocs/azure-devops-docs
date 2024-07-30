@@ -88,7 +88,7 @@ To add the Markdown widget to the dashboard, select :::image type="icon" source=
 
 2. Select the ![gear icon](../../media/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
 
-	To edit a Markdown widget, you may need to be a team admin, a member of the Project Administrators group, or be granted permissions. To learn more, see [Set dashboard permissions](dashboard-permissions.md). 
+	To edit a Markdown widget, you may need to be a team admin, a member of the Project Administrators group, or be granted permissions. For more information, see [Set dashboard permissions](dashboard-permissions.md). 
 
 3. Adjust the widget size as needed to fit the contents of the Markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
 

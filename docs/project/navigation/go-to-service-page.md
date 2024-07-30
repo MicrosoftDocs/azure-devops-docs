@@ -67,7 +67,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
     :::image type="content" source="media/go-to-app/team-configurations-new-nav.png" alt-text="Screenshot of team configuration selection.":::
 
-1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
+1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. For more information, see [Manage teams](../../organizations/settings/manage-teams.md). 
 
 1. If you need to switch to a different team, use the team selector within the breadcrumbs.
 

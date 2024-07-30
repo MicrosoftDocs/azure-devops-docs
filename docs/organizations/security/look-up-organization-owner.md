@@ -1,43 +1,45 @@
 ---
-title: Find or lookup the organization owner 
+title: Find or look up the organization owner 
 titleSuffix: Azure DevOps
-description: How-to guide to learn who is the owner of your organization   
+description: How-to guide for finding the owner of your organization.
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 02/7/2022
+ms.date: 07/29/2024
 ---
 
 # Look up the organization owner
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Each organization has one and only one owner. The **Organization owner** has permissions to add users, change the access level for a user or group, manage permissions at all levels, and configure and customize all projects defined for the organization.  
+Each organization has a single owner who can add users, adjust access levels, manage permissions, and customize projects. You can find the owner in your organization settings.
 
 To change the **Organization owner**, see [Change organization owner](../accounts/change-organization-ownership.md). 
 
 ## Prerequisites
 
-* You must be a member of the **Project Collection Valid Users** group to look up the organization owner or view organization settings. Users added to a project are automatically added to this group. 
- 
+* To look up the owner or view organization settings, you must be a member of the **Project Collection Valid Users** group. Users added to a project are automatically included in this group. 
 
 <a name="find-owner"></a>
 
-## Look up the organization owner 
+## Find the organization owner 
 
-1. Choose the Azure DevOps logo :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-	![Open organization settings](../../media/open-organization-settings-preview.png)  
+   :::image type="content" source="../../media/open-organization-settings-preview.png" alt-text="Screenshot showing Organization settings button in Azure DevOps."::: 
 
-2. Choose **Overview** and scroll down to show the **Organization owner**.
+2. Select **Overview**.
+
+   :::image type="content" source="../accounts/media/shared/organization-settings-select-overview.png" alt-text="Screenshot showing the Overview button highlighted in Azure DevOps.":::
+
+3. Scroll to view the **Organization owner**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Organization settings, Organization owner](../../media/settings/organization-settings-info.png)
+   > ![Screenshot showing the Organization owner on the Overview page.](../../media/settings/organization-settings-info.png)
 
- 
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -47,6 +49,5 @@ To change the **Organization owner**, see [Change organization owner](../account
 
 - [Request an increase in permission levels](request-changes-permissions.md)
 - [Look up a project administrator](look-up-project-administrators.md)
-- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
-- [Default permissions and access](permissions-access.md).
+- [About permissions, access, & security](about-permissions.md)

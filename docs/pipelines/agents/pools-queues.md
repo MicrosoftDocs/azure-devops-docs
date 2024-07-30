@@ -117,6 +117,10 @@ If you are a project team member, you create and manage agent pools from the age
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
+To delete a pool, go to the **Agent pools** list, choose **More options**, **Delete**.
+
+:::image type="content" source="media/agent-pool-delete.png" alt-text="Screenshot of deleting an agent pool.":::
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range="azure-devops"

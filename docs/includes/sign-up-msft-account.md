@@ -10,7 +10,7 @@ ms.topic: include
 
    ![Sign in with your Microsoft account](../media/sign-in-with-microsoft-account.png)
 
-   If you don't have a Microsoft account, choose **Create one**. To learn more, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create).
+   If you don't have a Microsoft account, choose **Create one**. For more information, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create).
 
 3. Enter your password and select **Sign in**.
 
@@ -22,7 +22,7 @@ ms.topic: include
 
 An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 
-You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
+You can rename and delete your organization, or change the organization location. For more information, see the following articles:
 
 - [Rename an organization](../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../organizations/accounts/change-organization-location.md)

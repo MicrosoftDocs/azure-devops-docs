@@ -26,7 +26,7 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 ::: moniker range="azure-devops"
 
-1. Sign in with the user account you plan to use in your Azure DevOps organization (`https://dev.azure.com/{your_organization}`).
+1. Sign in with the user account you plan to use in your Azure DevOps organization (`https://dev.azure.com/{Your_Organization}`).
 
 ::: moniker-end
 

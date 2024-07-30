@@ -514,7 +514,7 @@ For more information, see the following resources:
 :::row-end:::
 --- 
 
-To learn more, see [Save your work with commits](commits.md).
+For more information, see [Save your work with commits](commits.md).
 
 ## Compare files and versions
  
@@ -575,7 +575,7 @@ To learn more, see [Save your work with commits](commits.md).
 :::row-end:::
 ---
 
-To learn more, see [Compare versions and review history](review-history.md).
+For more information, see [Compare versions and review history](review-history.md).
 
 ## Sync changes
 

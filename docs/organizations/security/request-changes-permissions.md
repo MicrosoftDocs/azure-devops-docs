@@ -24,11 +24,11 @@ Prior to requesting a change in permission levels, make sure you understand the 
 Most users added to the **Contributors** group are granted the permissions they need to perform most tasks. However, the following tasks require membership in the **Project Administrators** group or a change in permissions. 
 
 - **Work tracking** 
-	- Add or change **Area Paths** or **Iteration Paths**: Requires elevated permissions to an Area Path or Iteration Path node. To learn more, see [Set work tracking permissions, Create child nodes](set-permissions-access-work-tracking.md#set-permissions-area-path). 
-	- Create shared queries or query folders: Requires elevated permissions set for a shared query folder. To learn more, see [Set work tracking permissions, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries). 
-	- Change team settings&mdash;such as board settings: Requires addition as a team administrator. To learn more, see  [Add or remove a team administrator](../settings/add-team-administrator.md)
+	- Add or change **Area Paths** or **Iteration Paths**: Requires elevated permissions to an Area Path or Iteration Path node. For more information, see [Set work tracking permissions, Create child nodes](set-permissions-access-work-tracking.md#set-permissions-area-path). 
+	- Create shared queries or query folders: Requires elevated permissions set for a shared query folder. For more information, see [Set work tracking permissions, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries). 
+	- Change team settings&mdash;such as board settings: Requires addition as a team administrator. For more information, see  [Add or remove a team administrator](../settings/add-team-administrator.md)
 
-- **Source code, Git repositories**, the following tasks require elevated permissions for Git repositories or a specific repository. To learn more, see [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
+- **Source code, Git repositories**, the following tasks require elevated permissions for Git repositories or a specific repository. For more information, see [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
 	- Create, delete, or rename a Git repository 
 	- Manage repository permissions 
 	- Bypass policies 
@@ -44,7 +44,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Prerequisites
 
-- To view permissions, you must be a member of the **Project Valid Users** group. Users added to a project are automatically added to this security group. To learn more, see [View permissions for yourself or others](view-permissions.md).
+- To view permissions, you must be a member of the **Project Valid Users** group. Users added to a project are automatically added to this security group. For more information, see [View permissions for yourself or others](view-permissions.md).
 - To look up an administrator for your project or project collection, you must be a member of the **Project Valid Users** group. 
 
 

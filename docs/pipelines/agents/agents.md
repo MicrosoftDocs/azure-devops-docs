@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 04/02/2024
+ms.date: 07/30/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -91,8 +91,8 @@ After you install the agent on a machine, you can install any other software on 
 
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
-All official Azure DevOps tasks use Node 10 as a universal handler, however, customers might still use custom tasks
-that use the outdated Node 6 library. To support backward compatibility with Node that reached end-of-life, we provide the following self-service methods to install the designated Node runner manually.
+All official Azure DevOps tasks use Node 20 as a universal handler, however, customers might still use custom tasks
+that use the end-of-life Node 6, Node 10, or Node 16 libraries. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
 
 * Manually install the Node 6 runner. For more information about manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
 * Use the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node 6 library.

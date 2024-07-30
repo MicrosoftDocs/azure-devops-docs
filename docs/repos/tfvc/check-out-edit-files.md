@@ -25,7 +25,7 @@ In rare situations, for example if you want to check out and lock the file to ma
 
 ## Prerequisites  
 
-You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Check out items manually
 

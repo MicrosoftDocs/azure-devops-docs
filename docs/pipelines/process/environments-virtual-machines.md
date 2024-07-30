@@ -143,7 +143,7 @@ jobs:
           - script: echo "Hello world"
 ```
 
-To learn more about YAML pipeline deployment jobs, see the [YAML pipelines schema](/azure/devops/pipelines/yaml-schema/jobs-deployment).
+For more information about YAML pipeline deployment jobs, see the [YAML pipelines schema](/azure/devops/pipelines/yaml-schema/jobs-deployment).
 
 ## Add and manage tags
 
