@@ -407,6 +407,8 @@ The following table summarizes the policies you can define to customize a branch
 
 ::: moniker range=">= azure-devops-2020"
 - To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+::: moniker-end
+::: moniker range="azure-devops"
 - If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
  
