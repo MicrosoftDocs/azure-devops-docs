@@ -24,7 +24,8 @@ Variable groups follow the [library security model](index.md#library-security) f
 
 You can create variable groups for the pipeline runs in your project.
 
-To create a secret variable group to link secrets from an Azure key vault as variables, follow the instructions at [Link secrets from an Azure key vault](#link-secrets-from-an-azure-key-vault).
+>[!NOTE]
+>To create a secret variable group to link secrets from an Azure key vault as variables, follow the instructions at [Link secrets from an Azure key vault](#link-secrets-from-an-azure-key-vault).
 
 #### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
@@ -128,11 +129,11 @@ In Azure DevOps Services, you can update variable groups by using the Azure DevO
 ::: moniker range="azure-devops"
 ### List variable groups
 
-To update a variable group or the variables within it by using the Azure DevOps CLI, you use the variable `group-id`.
+To update a variable group or the variables within it by using the Azure DevOps CLI, you use the variable group `group-id`.
 
 You can get the value of the variable group ID from the output of the variable group creation command, or use the [az pipelines variable-group list](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-list) command.
 
-For example, the following command lists the first three project variable groups in ascending order and returns the results, including group ID, in table format.
+For example, the following command lists the first three project variable groups in ascending order and returns the results, including variable group ID, in table format.
 
 ```azurecli
 az pipelines variable-group list --top 3 --query-order Asc --output table
@@ -151,7 +152,7 @@ ID    Name               Type    Number of Variables
 <a id="update-variable-group"></a>  
 ### Update a variable group
 
-Use the [az pipelines variable-group update](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-update) command to update a variable group.
+To update a variable group, use the [az pipelines variable-group update](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-update) command.
 
 For example, the following command updates the variable group with ID `4` to change the `name` and `description`, and outputs results in table format.
 
@@ -267,7 +268,6 @@ Name            Is Secret    Value
 --------------  -----------  -----------
 app-location    False        home-office
 app-name        False        contoso
-requires-login  False        True
 ```
 
 ### Add variables to a variable group
@@ -324,13 +324,13 @@ To manage secret variables, use the [az pipelines variable-group variable update
 <a id="delete-variables-group"></a>  
 ### Delete variables from a variable group
 
-To delete a variable from a variable group, use the [az pipelines variable-group variable delete](/cli/azure/pipelines/variable-group/variable#ext-azure-devops-az-pipelines-variable-group-variable-delete) command. For example, the following command deletes the `requires-login` variable from the variable group with ID `4`. The command prompts for confirmation because that is the default.
+To delete a variable from a variable group, use the [az pipelines variable-group variable delete](/cli/azure/pipelines/variable-group/variable#ext-azure-devops-az-pipelines-variable-group-variable-delete) command. For example, the following command deletes the `requires-login` variable from the variable group with ID `4`.
 
 ```azurecli
 az pipelines variable-group variable delete --group-id 4 --name requires-login
 ```
 
-Output:
+The command prompts for confirmation because that is the default.
 
 ```output
 Are you sure you want to delete this variable? (y/n): y
@@ -344,11 +344,15 @@ Deleted variable 'requires-login' successfully.
 <a name="use-a-variable-group"></a>
 ## Use variable groups in pipelines
 
-You can use your variable groups in your YAML or Classic pipelines.
+You can use variable groups in YAML or Classic pipelines. Changes that you make to a variable group are automatically available to all the definitions or stages the variable group is linked to.
 
-### Authorize YAML pipelines to use variable groups
+### Use variable groups in YAML pipelines
 
-If you only name the variable group in YAML pipelines, anyone who can push code to your repository could extract the contents of secrets in the variable group. To use a variable group in YAML pipelines, you must authorize the pipeline to use the group. Classic pipelines can use variable groups without separate authorization.
+Once you authorize a YAML pipeline to use a variable group, you can use the variable group or variables within it in the pipeline.
+
+#### Authorize the YAML pipeline to use the variable group
+
+If you only name the variable group in YAML pipelines, anyone who can push code to your repository could extract the contents of secrets in the variable group. Therefore, to use a variable group with YAML pipelines, you must authorize the pipeline to use the group. Classic pipelines can use variable groups without separate authorization.
 
 #### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
@@ -375,18 +379,16 @@ To authorize all project pipelines to use the variable group, set the `authorize
 
 ---
 
-### Use variable groups in YAML pipelines
+#### Use the variable group in the YAML pipeline
 
 To use a variable from a variable group, add a reference to the group name in your YAML pipeline file. You can then use variables from the variable group in your file.
-
-Changes that you make to a variable group are automatically available to all the definitions or stages the variable group is linked to.
 
 ```yaml
 variables:
 - group: my-variable-group
 ```
 
-You can reference multiple variable groups in the same pipeline. If multiple variable groups include the same variable, the last variable group in your YAML file sets the variable's value. For more information about precedence of variables, see [Expansion of variables](../process/variables.md#expansion-of-variables).
+You can reference multiple variable groups in the same pipeline. If multiple variable groups include the same variable, the last variable group that uses the variable in the file sets the variable's value. For more information about precedence of variables, see [Expansion of variables](../process/variables.md#expansion-of-variables).
 
 You can also reference a variable group in a template. The following *variables.yml* template file references the variable group `my-variable-group`. The variable group includes a variable named `myhello`.
 
@@ -408,7 +410,7 @@ stages:
     - script: echo $(myhello)
 ```
 
-## Use variable group variables in pipelines
+#### Use variable group variables in YAML pipelines
 
 You access the variable values in a linked variable group the same way as you access variables you define within the pipeline. For example, to access the value of a variable named `customer` in a variable group linked to the pipeline, you can use `$(customer)` in a task parameter or a script.
 
@@ -420,8 +422,6 @@ variables:
 - name: my-standalone-variable
   value: 'my-standalone-variable-value'
 ```
-
-However, you can't access secret variables, including encrypted variables and key vault variables, directly in scripts. You must pass these variables as arguments to a task. For more information, see [Secret variables](../process/variables.md#secret-variables)
 
 To reference a variable in a variable group, you can use macro syntax or a runtime expression. In the following examples, the group `my-variable-group` has a variable named `myhello`.
 
@@ -444,6 +444,8 @@ variables:
 steps:
 - script: echo $(myhello)
 ```
+
+You can't access secret variables, including encrypted variables and key vault variables, directly in scripts. You must pass these variables as arguments to a task. For more information, see [Secret variables](../process/variables.md#secret-variables)
 
 ### Use variable groups in Classic pipelines
 

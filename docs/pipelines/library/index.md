@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-An Azure Pipelines *library* is a collection of assets for the Azure DevOps project. You can use library assets in multiple pipelines in a project.
+An Azure Pipelines *library* is a collection of assets for an Azure DevOps project. You can use library assets in multiple pipelines in a project.
 
 You can access the **Library** under **Pipelines** in the left menu of your Azure DevOps project. The library contains two types of assets, *variable groups* and *secure files*.
 
@@ -33,7 +33,7 @@ Role memberships for individual items are automatically inherited from the overa
 | **Reader** | Can view the item. |
 | **User** | Can use the item in pipelines. For example, you must be a **User** for a variable group to use it in a release pipeline. |
 | **Creator** | Can create a new library item. The **Creator** role doesn't include **Reader** or **User** permissions, and can't manage permissions for other users. |
-| **Administrator** | Has **Reader**, **User**, and **Creator** privileges, and can also manage membership of all other roles for the item. <br><br>The **Creator** of an item is automatically added to the **Administrator** role for that item.<br><br>By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups are also members of the library **Administrator** role.
+| **Administrator** | Has **Reader**, **User**, and **Creator** privileges, and can also manage membership of all other roles for the item. The **Creator** of an item automatically belongs to the **Administrator** role for that item. By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups are also members of the library **Administrator** role.
 
 For more information on pipeline security roles, see [About pipeline security roles](../../organizations/security/about-security-roles.md).
 
