@@ -1,54 +1,42 @@
 ---
-title: Release pipelines and artifact sources
-description: Understand release pipelines and the different artifact sources.
+title: Artifact sources in Classic release pipelines
+description: Learn about the list of artifact sources that can be used in a Classic release pipeline.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 01/12/2023
+ms.date: 07/31/2024
 ms.custom: engagement-fy23, devx-track-jenkins
 monikerRange: '<= azure-devops'
 ---
 
-# Release pipelines and Artifact sources
+# Artifact sources in Classic release pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Pipelines, you can deploy your artifacts from a wide range of artifact sources and integrate your workflow with different types of artifact repositories. Releases can be linked to multiple artifact sources, where  one is designated as the primary source.
+With Classic release pipelines, you can deploy your artifacts from a wide range of sources. Using the graphical interface, you can set up your pipeline to integrate and consume artifacts from various services. Additionally, you can link multiple artifacts from different sources and designate one as the primary source based on your needs.
 
 ## Artifact sources
 
-Azure Pipelines supports a wide range of repositories, source control tools, and continuous integration systems. 
+Azure Pipelines supports a wide range of repositories, services, and CI/CD platforms. When creating a release, you can specify the version of your artifact source. By default, releases use the latest version of the source artifact. You can also choose to use the latest build from a specific branch by specifying the tags, a specific version, or allow the user to specify the version at the time of release creation.
 
-When creating a release, you can specify the version of your artifact source. By default, releases use the latest version of the source artifact. You can also choose to use the latest build from a specific branch by specifying the tags, a specific version, or allow the user to specify the version at the time of release creation.
+:::image type="content" source="media/classic-release-pipeline-add-artifact-souce.png" alt-text="A screenshot that shows how to add an artifact to a classic release pipeline.":::
 
-:::image type="content" source="media/artifacts-02.png" alt-text="Screenshot showing how to add an artifact to a classic release pipeline.":::
+If you link multiple artifacts, you can specify which one is the primary source (default). The primary artifact source is used to set several predefined [variables](variables.md#artifact-variables) and can also be used for [naming releases](index.md#q-how-do-i-manage-the-naming-of-new-releases).
 
-If you link more than one artifact, you can specify which one is the primary source (default). The primary artifact source is used to set a number of predefined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#q-how-do-i-manage-the-naming-of-new-releases).
+:::image type="content" source="media/classic-release-pipeline-set-primary-souce.png" alt-text="A screenshot that shows how to set a primary source artifact.":::
 
+The **Default version** dropdown options depend on the source type of the linked build definition. The options `Specify at the time of release creation`, `Specific version`, and `Latest` are supported by all repository types. However, the `Latest from the build pipeline default branch with tags` is not supported by *XAML* build definitions.
 
-:::image type="content" source="media/artifacts-02a.png" alt-text="Screenshot showing how to set a primary source artifact.":::
+The following sections describe how to work with the different types of artifact sources:
 
-> [!NOTE]
-> The `Default version` dropdown items depend on the source type of the linked build definition.
+> [Azure Pipelines](#artifact-sources---azure-pipelines)
+> [Azure Repos, GitHub, and TFVC](#artifact-sources---version-control)
+> [Azure Artifacts](#artifact-sources---azure-artifacts)
+> [Azure Container Repository and Docker Hub](#artifact-sources---containers)
+> [Jenkins](#artifact-sources---jenkins)
 
-- The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
-
-- `Latest from a specific branch with tags` and `Latest from the build pipeline default branch with tags` options are supported by the following repository types: `TfsGit`, `GitHub`, `Bitbucket`, and `GitHubEnterprise`.
-
-- `Latest from the build pipeline default branch with tags` is not supported by `XAML` build definitions.
-
-The following sections describe how to work with the different types of artifact sources.
-
-- [Azure Pipelines](#artifact-sources---azure-pipelines)
-- [Version control](#artifact-sources---version-control)
-- [Jenkins](#artifact-sources---jenkins)
-- [Azure Container Registry, Docker, and Kubernetes](#artifact-sources---containers)
-- [Azure Artifacts](#artifact-sources---azure-artifacts)
-- [TFS server](#artifact-sources---tfs-server)
-- [TeamCity](#artifact-sources---teamcity)
-
-## Artifact sources - Azure Pipelines
+## Azure Pipelines
 
 You can link a release pipeline to any Azure Pipelines build. You can also link multiple build pipelines and specify their default values and set up deployment triggers on multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
