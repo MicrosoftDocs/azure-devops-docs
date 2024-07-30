@@ -44,7 +44,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 > The dev machine must run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of `azure-pipelines-task-lib`. Update your task.json file as per the following command:
 >```
 >"execution": {
->    "Node20": {
+>    "Node20_1": {
 >      "target": "index.js"
 >    }
 >  }
@@ -150,7 +150,7 @@ Now that the scaffolding is complete, we can create our custom task.
         }
     ],
     "execution": {
-        "Node20": {
+        "Node20_1": {
             "target": "index.js"
         }
     }
@@ -813,7 +813,7 @@ A: We don't support the automatic deletion of tasks. Automatic deletion isn't sa
 
 ### Q: How can I upgrade my custom task to the latest Node?
 
-A: We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 16](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md).
+A: We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 20](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode20.md).
 
 
 
@@ -825,7 +825,7 @@ As Microsoft Hosted agents and various Azure DevOps Server versions have differe
       "target": "bash.js",
       "argumentFormat": ""
     },
-    "Node20": {
+    "Node20_1": {
       "target": "bash.js",
       "argumentFormat": ""
     }
@@ -848,7 +848,7 @@ To upgrade your tasks:
      "target": "bash16.js",
      "argumentFormat": ""
    },
-   "Node20": {
+   "Node20_1": {
      "target": "bash20.js",
      "argumentFormat": ""
    }
