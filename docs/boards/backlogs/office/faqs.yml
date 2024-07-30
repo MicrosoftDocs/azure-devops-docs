@@ -118,18 +118,13 @@ sections:
       - question: Can I bulk-edit link types other than tree-topology link types? 
         answer: |
           **No**. Excel only supports adding and modifying hierarchical links. To bulk edit links of other types, you can use the following clients: 
-          ::: moniker range=">= azure-devops-2020" 
+          ::: moniker range="<= azure-devops-2022" 
           - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
           - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+          ::: moniker-end
+          ::: moniker range "azure-devops"
           - Use the [az boards work-item relation add](/cli/azure/boards/work-item/relation) command.
           ::: moniker-end 
-
-          ::: moniker range="azure-devops-2019" 
-          - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
-          - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-          ::: moniker-end 
-
-           
 
 
   - name: Work with test work items 
@@ -257,12 +252,12 @@ sections:
 
       - question: Can I delete work items from Excel?
         answer: |
-          ::: moniker range=">= azure-devops-2020" 
+          ::: moniker range="azure-devops" 
           **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For more information, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
           ::: moniker-end 
 
-          ::: moniker range="< azure-devops-2020" 
-          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For more information, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+          ::: moniker range="< azure-devops" 
+          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or **witadmin** command-line tools. For more information, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
           ::: moniker-end 
 
   - name: Use built-in Excel functions

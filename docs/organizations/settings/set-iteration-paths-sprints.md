@@ -605,10 +605,18 @@ az boards iteration project delete --path
 
 You can't export or import the structure of tree paths for one project to use with another project. 
 
-::: moniker range=">= azure-devops-2020"
+However, you can list the iterations defined for project and then add them to another project. Once they are added, add them to a team and set the default and backlog iteration path for the team.
 
-However, using the `az boards iteration` commands you can list the iterations defined for one project and then add them to another project. Once they are added, you can then use the `az boards iteration team` commands to add them to a team and set the default and backlog iteration path for the team. Using the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) and [Teams (REST API)](/rest/api/azure/devops/core/teams), you can perform similar actions.
+::: moniker range="azure-devops"
 
+Using the Azure CLI, you can use the `az boards iteration` commands you can list the iterations defined for one project and then add them to another project. Once they are added, you can then use the `az boards iteration team` commands to add them to a team and set the default and backlog iteration path for the team. 
+
+You can use the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) and [Teams (REST API)](/rest/api/azure/devops/core/teams) to perform similar actions.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+ You can use the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) to list the iterations defined in one project.  Once they're added to another project, use the [Teams (REST API)](/rest/api/azure/devops/core/teams) to add them to a team and set the default and backlog iteration path for the team. 
 ::: moniker-end
 
 

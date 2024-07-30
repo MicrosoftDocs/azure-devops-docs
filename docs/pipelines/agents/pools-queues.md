@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="= azure-devops"
 
-An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, you register it with a single pool. When you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from the pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
+An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ In Azure DevOps Server, agent pools are scoped to the entire server; so you can 
 
 ::: moniker range=">= azure-devops-2019"
 
-If you're an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ If you're an organization administrator, you create and manage agent pools from 
 
 ::: moniker range=">= azure-devops-2019"
 
-If you're a project team member, you create and manage agent pools from the agent pools tab in project settings.
+If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ If you're a project team member, you create and manage agent pools from the agen
 
 The following agent pools are provided by default:
 
-* **Default** pool: Use it to register [self-hosted agents](agents.md) that you set up.
+* **Default** pool: Use it to register [self-hosted agents](agents.md) that you've set up.
 
 ::: moniker range="azure-devops"
 
@@ -66,7 +66,7 @@ The following agent pools are provided by default:
    > [!NOTE]
    > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
-By default, all contributors in a project are members of the **User** role on hosted pools. This role allows every contributor in a project to author and run pipelines using Microsoft-hosted agents.
+By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted agents.
 
 ::: moniker-end
 
@@ -106,13 +106,13 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 #### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
-If you're an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range=">= azure-devops-2019"
-If you're a project team member, you create and manage agent pools from the agent pools tab in project settings.
+If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
@@ -231,7 +231,7 @@ az pipelines queue list [--action {manage, none, use}]
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **queue-name**: Filter the list with matching queue name regex, for example, *ubuntu* for queue with name *Hosted Ubuntu 1604*.
+- **queue-name**: Filter the list with matching queue name regex, e.g., *ubuntu* for queue with name 'Hosted Ubuntu 1604'.
 
 #### Example
 
@@ -298,11 +298,11 @@ az pipelines queue show --id 14
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
----
+
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
-If you've got many self-hosted agents intended for different teams or purposes, you might want to create more pools.
+If you've got a lot of self-hosted agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
 ## Create agent pools
 
@@ -326,9 +326,9 @@ Here are some typical situations when you might want to create self-hosted agent
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2019"
-* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
-* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pool for existing projects, and in the future it does so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pool for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You want to share a set of agent machines with multiple projects, but not all of them. First create a project agent pool in one of the projects and select the option to **Create a new organization agent pool** while creating that pool. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing organization agent pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
@@ -343,11 +343,11 @@ Understanding how security works for agent pools helps you control sharing and u
 
 | Role on an agent pool in organization settings | Purpose |
 |------|---------|
-| Reader | Members of this role can view the agent pool and agents. You typically use this role to add operators that are responsible for monitoring the agents and their health.  |
-| Service Account | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the guidelines for creating new project agent pools, you typically don't have to add any members here. |
+| Reader | Members of this role can view the agent pool as well as agents. You typically use this to add operators that are responsible for monitoring the agents and their health.  |
+| Service Account | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the guidelines above for creating new project agent pools, you typically do not have to add any members here. |
 | Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when creating a project agent pool in a project. Finally, they can also manage membership for all roles of the organization agent pool. The user that created the organization agent pool is automatically added to the Administrator role for that pool. |
 
-The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from the 'All agent pools' node. By default, TFS and Azure DevOps Server administrators are also administrators of the 'All agent pools' node when using TFS or Azure DevOps Server.
+The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All agent pools' node. By default, TFS and Azure DevOps Server administrators are also administrators of the 'All agent pools' node when using TFS or Azure DevOps Server.
 
 ### Project-level security settings
 
@@ -355,7 +355,7 @@ Roles are also defined on each project agent pool, and memberships in these role
 
 | Role on an agent pool in project settings | Purpose |
 |------|---------|
-| Reader | Members of this role can view the project agent pool. You typically use this role to add operators that are responsible for monitoring the build and deployment jobs in that project agent pool.  |
+| Reader | Members of this role can view the project agent pool. You typically use this to add operators that are responsible for monitoring the build and deployment jobs in that project agent pool.  |
 | User | Members of this role can use the project agent pool when authoring pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. The user that created the pool is automatically added to the Administrator role for that pool.
 
@@ -363,23 +363,23 @@ Roles are also defined on each project agent pool, and memberships in these role
 
 #### Pipeline permissions
 
-Pipeline permissions control which YAML pipelines are authorized to use an agent pool. Pipeline permissions don't restrict access from Classic pipelines.
+Pipeline permissions control which YAML pipelines are authorized to use an agent pool. Pipeline permissions do not restrict access from Classic pipelines.
 
 You can choose from the following options:
 
 * Open access for all pipelines to use the agent pool from the more options at top-right corner of the **Pipeline permissions** section in security tab of an agent pool.
 
-* Lock down the agent pool and only allow selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request is raised, which requires approval by an agent pool Administrator. This option doesn't limit access from Classic pipelines.
+* Lock down the agent pool and only allow selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request gets raised, which must be approved by an agent pool Administrator. This does not limit access from Classic pipelines.
 
 :::image type="content" source="media/agent-pools-pipeline-permissions.png" alt-text="Screenshot of the pipeline permissions user experience for an agent pool.":::
 
-Pipeline permissions for the *Azure Pipelines* agent pool can't be configured, as the pool is accessible, by default, to all pipelines.
+Pipeline permissions for the *Azure Pipelines* agent pool cannot be configured, as the pool is accessible, by default, to all pipelines.
 
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2019"
 
-The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
+The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
 ::: moniker-end
 
@@ -393,11 +393,11 @@ The **Security** action in the Agent pools tab is used to control the security o
 
 ### If I don't schedule a maintenance window, when will the agents run maintenance?
 
-If no window is scheduled, then the agents in that pool won't run the maintenance job.
+If no window is scheduled, then the agents in that pool will not run the maintenance job.
 
 ### What is a maintenance job?
 
-You can configure agent pools to periodically clean stale working directories and repositories, which should reduce the potential for the agents to run out of disk space. Maintenance jobs are configured at the organization level in agent pool settings.
+You can configure agent pools to periodically clean stale working directories and repositories. This should reduce the potential for the agents to run out of disk space. Maintenance jobs are configured at the organization level in agent pool settings.
 
 To configure maintenance job settings:
 
@@ -424,19 +424,19 @@ Select **Maintenance History** to see the maintenance job history for the curren
 
 :::moniker-end
 
-The maintenance is done per agent pool, not per machine; so if you have multiple agent pools on a single machine, you could still run into disk space issues.
+The maintenance is done per agent pool, not per machine; so if you have multiple agent pools on a single machine, you may still run into disk space issues.
 
 ### The maintenance job of my self-hosted agent pool looks stuck. Why?
 
-Typically, a maintenance job gets "stuck" when it's waiting to run on an agent that is no longer in the agent pool. This situation happens when, for example, the agent is purposefully taken offline or when there are issues communicating with it.
+Typically, a maintenance job gets "stuck" when it's waiting to run on an agent that is no longer in the agent pool. This happens when, for example, the agent has been purposefully taken offline or when there are issues communicating with it.
 
-Maintenance jobs that are queued to run can wait up to seven days to run. Afterward, the jobs are automatically set to failed state if not run. This time limit can't be changed.
+Maintenance jobs that have been queued to run will wait seven days to run. Afterward, they'll be automatically set to failed state if not run. This time limit cannot be changed.
 
 The seven-day limit is different from the _maintenance job timeout_ setting. The latter controls the maximum number of minutes an agent can spend doing maintenance. The timer starts when the job starts, not when the job is queued on an agent.
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 
-On the 'Create a project agent pool' dialog box, you can't use an existing organization agent pool if it's already referenced by another project agent pool. 
+On the 'Create a project agent pool' dialog box, you can't use an existing organization agent pool if it is already referenced by another project agent pool. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
 
 ::: moniker range="azure-devops"
 
