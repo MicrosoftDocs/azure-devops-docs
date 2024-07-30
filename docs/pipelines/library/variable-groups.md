@@ -25,7 +25,7 @@ You can create variable groups for the pipeline runs in your project.
 >[!NOTE]
 >To create a secret variable group to **Link secrets from an Azure key vault as variables**, follow the instructions at [Link secrets from an Azure key vault](#link-secrets-from-an-azure-key-vault).
 
-#### [Azure Pipelines UI](#tab/azure-devops-cli)
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
 You can create a variable group in the Azure Pipelines user interface.
 
@@ -107,7 +107,7 @@ For more information, see [Use Azure Key Vault secrets](../release/azure-key-vau
 
 ## Update variable groups
 
-#### [Azure Pipelines UI](#tab/azure-devops-cli)
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
 You can update variable groups by using the Azure Pipelines user interface.
 
@@ -125,7 +125,7 @@ In Azure DevOps Services, you can update variable groups by using the Azure DevO
 
 To update a variable group or the variables within it by using the Azure DevOps CLI, you use the variable `group-id`.
 
-You can get the value of the variable group ID from the output of the variable group creation command or by using the [az pipelines variable-group list](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-list) command.
+You can get the value of the variable group ID from the output of the variable group creation command, or use the [az pipelines variable-group list](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-list) command.
 
 For example, the following command lists the top three variable groups in ascending order and returns the results, including group ID, in table format.
 
@@ -197,7 +197,7 @@ variables:
 <a id="delete-variable-group"></a>  
 ## Delete a variable group
 
-#### [Azure Pipelines UI](#tab/azure-devops-cli)
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
 You can delete variable groups in the Azure Pipelines user interface.
 
@@ -223,7 +223,7 @@ az pipelines variable-group delete --group-id 1 --yes
 
 ## Manage variables in variable groups
 
-#### [Azure Pipelines UI](#tab/azure-devops-cli)
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
 You can change, add, or delete variables in variable groups by using the Azure Pipelines user interface.
 
@@ -326,6 +326,7 @@ Deleted variable 'requires-login' successfully.
 
 ---
 
+<a name="use-a-variable-group"></a>
 ## Use variable groups in pipelines
 
 You can use your variable groups in your YAML or Classic pipelines.
@@ -334,7 +335,7 @@ You can use your variable groups in your YAML or Classic pipelines.
 
 To use a variable group in YAML pipelines, you must authorize the pipeline to use the group. If you only name the variable group in YAML, anyone who can push code to your repository could extract the contents of secrets in the variable group. Classic pipelines can use variable groups without separate authorization.
 
-#### [Azure Pipelines UI](#tab/azure-devops-cli)
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
 You can authorize pipelines to use your variable groups by using the Azure Pipelines user interface.
 
@@ -353,7 +354,7 @@ In Azure DevOps Services, you can authorize variable groups by using the Azure D
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ::: moniker range="azure-devops"
-Set the `authorize` parameter in the [az pipelines variable-group create](/cli/azure/pipelines/variable-group?view=azure-cli-latest#az-pipelines-variable-group-create) command to `true` to authorize all project pipelines to use the variable group. Open access might be a good option if you don't have any secrets in the group.
+To authorize all project pipelines to use the variable group, set the `authorize` parameter in the [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az-pipelines-variable-group-create) command to `true`. Open access might be a good option if you don't have any secrets in the group.
 
 ::: moniker-end
 

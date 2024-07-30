@@ -17,7 +17,7 @@ Although Key Vault supports storing and managing cryptographic keys and secrets 
 ### Prerequisites
 
 - An Azure key vault that contains your secrets. You can create a key vault by using the [Azure portal](https://portal.azure.com).
-- An Azure [service connection](service-endpoints) for your project that has at least **Get** and **List** management permissions on the key vault. You can provide these permissions when you create the variable group with the linked key vault, or you can provide them in the Azure portal by following these steps:
+- An Azure [service connection](../../library/service-endpoints.md) for your project that has at least **Get** and **List** management permissions on the key vault. You can provide these permissions when you create the variable group with the linked key vault, or you can provide them in the Azure portal by following these steps:
   1. Open **Settings** for the key vault, and then choose **Access configuration** > **Go to access policies**.
   1. On the **Access policies** page, if your Azure Pipelines project isn't listed under **Applications** with at least **Get** and **List** permissions, select **Create**.
   1. Under **Secret permissions**, select **Get** and **List**, and then select **Next**.
