@@ -58,7 +58,7 @@ Also, machine-level caches and configuration persist from run to run, which can 
 > [!TIP]
 > Before you install a self-hosted agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
 
-:::moniker-end
+::: moniker-end
 
 You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Docker container. For more information about installing a self-hosted agent, see:
 
@@ -205,9 +205,10 @@ You can view the details of an agent, including its version and system capabilit
 
 1. To register a new capability with the agent, choose **Add a new capability**.
 
-::: moniker range="azure-devops"
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
 
 You can view the details of an agent, including its version and capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent) Azure CLI methods.
 
@@ -281,9 +282,13 @@ az pipelines agent show --agent-id
 - **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
 - To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service in pipelines or variable groups when exchanged with the agent.
 
-The payload of the messages exchanged between the agent and Azure Pipelines are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key.gentCloudRequest": null,
- 
-  <Some properties omitted for space>
+The payload of the messages exchanged between the agent and Azure Pipelines are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key.gentCloudRequest": null
+
+Some properties are omitted from the following example for space.
+
+```json
+
+...
 
   "status": "offline",
   "statusChangedOn": null,
@@ -293,12 +298,14 @@ The payload of the messages exchanged between the agent and Azure Pipelines are 
     "Agent.Name": "Hosted Agent",
     "Agent.Version": "2.160.1",
 
-    <Some capabilities omitted for space>
+...
 
     "sh": "",
     "subversion": "",
     "svn": "",
     "To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service.
+```
+
 
 However, if you're running UI tests such as Selenium or Coded UI tests that require a browser, the browser is launched in the context of the agent account.
 
@@ -313,13 +320,19 @@ These credentials are different from the credentials that you use when you regis
 
 <h2 id="communication">Communication</h2>
 
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+
+* * *
+
 ::: moniker range="azure-devops"
 
 ### Communication with Azure Pipelines
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
 ### Communication with Azure DevOps Server
 

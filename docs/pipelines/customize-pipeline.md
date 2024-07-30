@@ -267,7 +267,7 @@ To support security of your pipeline operations, you can add users to a built-in
 ## Create work item on failure
 
 
-::: moniker range="devops"
+::: moniker range="azure-devops"
 
 YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 
 
@@ -386,7 +386,7 @@ jobs:
 
 The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The second `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
-The second job in the pipeline has a dependency on the first job and only runs if the first job fails. The second job uses the Azure DevOps REST API [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) command to create a bug. 
+The second job in the pipeline has a dependency on the first job and only runs if the first job fails. The second job uses the Azure DevOps API [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command to create a bug. 
 
 ::: moniker-end
 
