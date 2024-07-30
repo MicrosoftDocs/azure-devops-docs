@@ -6,51 +6,72 @@ ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.author: vijayma
 author: vijayma
 monikerRange: '<= azure-devops'
-ms.date: 07/14/2021
+ms.date: 07/30/2024
 ---
 
 # Use secure files
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Secure files give you a way to store files that you can share across pipelines. Use the secure files library to store files such as:
+This article describes secure files and how to use them in Azure Pipelines. Secure files are a way to store files that you can use in pipelines without having to commit them to your repository.
 
-- signing certificates
-- Apple Provisioning Profiles
-- Android Keystore files
-- SSH keys
+You can use the secure files [library](index.md) to store files such as:
 
-These files can be stored on the server without having to commit them to your repository.
-
-The contents of the secure files are encrypted and can only be used when you consume them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#library-security).
+- Signing certificates.
+- Apple provisioning profiles.
+- Android keystore files.
+- SSH keys.
 
 The size limit for each secure file is 10 MB.
 
+Secure files are stored on the server in encrypted form and can be consumed only from a pipeline task. Secure files are a [protected resource](../security/resources.md). You can use approvals, checks, and pipeline permissions to limit access to the files. Secure files also use [library security model](index.md#library-security) roles.
 
+## Prerequisites
+
+- An Azure DevOps project where you have permissions to create pipelines and add library items.
+- A file you want to use securely in your pipeline without adding it to your code repository.
 
 ## Add a secure file
 
-1. Go to **Pipelines** > **Library** > **Secure files**.
+1. In your Azure DevOps project, go to **Pipelines** > **Library**, and then select the **Secure files** tab.
 
-   :::image type="content" source="media/secure-files-tab.png" alt-text="Select the Secure Files tab.":::
+   :::image type="content" source="media/secure-files-tab.png" alt-text="Screenshot of selecting the Secure Files tab.":::
 
-2. Select :::image type="icon" source="../../report/media/icons/blue-plus.png" border="false"::: **Secure file** to upload a new secure file. Browse to upload or drag and drop your file. You can delete this file, but you can't replace it.
+1. To upload a secure file, select **+ Secure file**, then browse to upload or drag and drop your file.
 
-   :::image type="content" source="media/upload-secure-file.png" alt-text="Upload your file. ":::
+   :::image type="content" source="media/upload-secure-file.png" alt-text="Screenshot of uploading your file.":::
 
-3. Add permissions to your file.
-    1. Apply security role restrictions for all files from the **Security** tab at **Pipelines** > **Library**.
-    2. To add permissions for an individual file, in the file's edit view, select **Pipeline permissions** to set per-pipeline permissions. Or, select **Security** to set security roles.
-       - You can also set **Approvals and Checks** for the file. For more information, see [Approvals and checks](../process/approvals.md).
+1. Select **OK**. You can delete the uploaded file, but you can't replace it.
 
-    :::image type="content" source="media/pipeline-security-options.png" alt-text="Set Pipeline security for secure files.":::
+### Define security roles and permissions
+
+You can define security role restrictions and permissions for all items in a library, or for individual items.
+
+- To assign security roles for all items in a library, select **Security** on the **Library** page.
+- To define permissions for an individual file:
+  1. Select the file from the **Secure files** list.
+  1. At the top of the **Secure file** page, select:
+     - **Pipeline permissions** to allow YAML pipelines to access the file.
+     - **Security** to set users and security roles that can access the file.
+     - **Approvals and checks** to set approvers and other checks for using the file. For more information, see [Approvals and checks](../process/approvals.md).
+
+  :::image type="content" source="media/pipeline-security-options.png" alt-text="Set pipeline security for secure files.":::
+
+<a name="secure-file-authorization"></a>
+#### Authorize a pipeline to use a secure file
+
+To use a secure file in YAML pipelines, you must authorize the pipeline to use the file. All Classic pipelines can access secure files.
+
+To authorize a pipeline or all pipelines to use a secure file:
+
+1. At the top of the page for the secure file, select **Pipeline permissions**.
+1. On the **Pipeline permissions** screen, select **+**, and then select a project pipeline to authorize. Or, to authorize all pipelines to use the file, select the **More actions** icon, select **Open access**, and select **Open access** again to confirm.
 
 ## Consume a secure file in a pipeline
 
-Use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) utility task to consume secure files in a pipeline.
+To consume secure files in a pipeline, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) utility task. The agent must be running version of 2.182.1 or greater. For more information, see [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
 
-::: moniker range=">=azure-devops-2019"
-The following YAML pipeline example downloads a secure certificate file and installs it in a Linux environment.
+The following example YAML pipeline downloads a secure certificate file and installs it in a Linux environment.
 
 ```yaml
 - task: DownloadSecureFile@1
@@ -66,45 +87,16 @@ The following YAML pipeline example downloads a secure certificate file and inst
     sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath)
 ```
 
+::: moniker range="< azure-devops"
+>[!NOTE]
+>If you see an `Invalid Resource` error when downloading a secure file with Azure DevOps Server on-premises, make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the server.
 ::: moniker-end
 
-## FAQ
+## Related content
 
-### Q: How can I create a custom task using secure files?
+- To create a custom task that uses secure files, use inputs with type `secureFile` in the *task.json*. For more information, see [Learn how to build a custom task](../../extend/develop/add-build-task.md).
 
-A: Build your own tasks that use secure files by using inputs with type `secureFile` in the `task.json`.
-[Learn how to build a custom task](../../extend/develop/add-build-task.md).
+- The [Install Apple Provisioning Profile](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1 task is a simple example that uses a secure file. For the source code, see [InstallAppleProvisioningProfileV1](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallAppleProvisioningProfileV1).
 
-The Install Apple Provisioning Profile task is a simple example of a task using a secure file. See the [reference documentation](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) and [source code](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallAppleProvisioningProfileV1).
+- To handle secure files during build or release, see the [Common module](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common) for tasks.
 
-To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common).
-
-### Q: My task can't access the secure files. What do I do?
-
-A: Make sure your agent is running version of 2.116.0 or higher. See [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
-
-<a name="secure-file-authorization"></a>
-
-### Q: How do I authorize a secure file for use in a specific pipeline?
-
-A:
-
- 1. In **Azure Pipelines**, select the **Library** tab.
- 1. Select the **Secure files** tab at the top.
- 1. Select the secure file you want to authorize.
- 1. Select the **Pipeline permissions** button.
- 1. Review and modify the access for each available pipeline.
-
-### Q: Why do I see an `Invalid Resource` error when downloading a secure file with Azure DevOps Server/TFS on-premises?
-
-A: Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server.
-
-### Q: How are secure files secured?
-
-A: Secure files, variable groups, and service connections are all secured in the same way in Azure DevOps. They're also all [protected resources](../security/resources.md).
-
-Secrets are encrypted and stored in the database. The keys to decrypt secrets are stored in Azure Key Vault. The keys are specific to each scale unit. So, two regions don't share the same keys. The keys are also rotated with every deployment of Azure DevOps.
-
-The rights to retrieve secure keys are only given to the Azure DevOps service principals and (on special occasions) on-demand to diagnose problems. The secure storage doesn't have any certifications.
-
-[Azure Key Vault](/azure/key-vault/general/basic-concepts) is another, more secure option for securing sensitive information. If you decide to use Azure Key Vault, you can [use it with variable groups](../release/azure-key-vault.md).

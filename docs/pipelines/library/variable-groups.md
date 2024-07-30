@@ -16,7 +16,9 @@ monikerRange: '<= azure-devops'
 
 This article explains how to create and use variable groups in Azure Pipelines. Variable groups store values and secrets that you can pass into a YAML pipeline or make available across multiple pipelines in a project.
 
-Variable groups follow the [library security model](index.md#library-security). Secret variables in variable groups are [protected resources](../security/resources.md). You can add combinations of approvals, checks, and pipeline permissions to limit access to secret variables in a variable group. Access to nonsecret variables isn't limited by approvals, checks, or pipeline permissions.
+Secret variables in variable groups are [protected resources](../security/resources.md). You can add combinations of approvals, checks, and pipeline permissions to limit access to secret variables in a variable group. Access to nonsecret variables isn't limited by approvals, checks, or pipeline permissions.
+
+Variable groups follow the [library security model](index.md#library-security) for roles and permissions.
 
 ## Create a variable group
 
@@ -346,7 +348,7 @@ You can use your variable groups in your YAML or Classic pipelines.
 
 ### Authorize YAML pipelines to use variable groups
 
-To use a variable group in YAML pipelines, you must authorize the pipeline to use the group. If you only name the variable group in YAML, anyone who can push code to your repository could extract the contents of secrets in the variable group. Classic pipelines can use variable groups without separate authorization.
+If you only name the variable group in YAML pipelines, anyone who can push code to your repository could extract the contents of secrets in the variable group. To use a variable group in YAML pipelines, you must authorize the pipeline to use the group. Classic pipelines can use variable groups without separate authorization.
 
 #### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
