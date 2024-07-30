@@ -135,6 +135,10 @@ az devops wiki create [--mapped-path]
 - **`type`**: Type of wiki to create. The accepted values are **`projectwiki`** (default) and **`codewiki`**.
 - **`version`**: Required for the **`codewiki`** type. Repo branch name from which to publish the code wiki.
 
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range="azure-devops"
+
 #### Example 
 
 The following command creates a `codewiki` named "My New Wiki" published from the `MyRepo` repo. The wiki is published in the `wikis` folder in the `main` branch and the result is shown in table format.

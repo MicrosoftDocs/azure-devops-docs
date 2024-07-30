@@ -2846,7 +2846,10 @@ Use task groups to encapsulate a sequence of tasks already defined in a build or
 
 ## Notifications or alerts 
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range=">= azure-devops-2020"
+There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using [az devops security permission](manage-tokens-namespaces.md) or [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools.
+::: moniker-end
+::: moniker range="< azure-devops-2020"
 There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
 ::: moniker-end
 

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 ms.author: sandrica
 author: silviuandrica
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 11/12/2021
 ---
 

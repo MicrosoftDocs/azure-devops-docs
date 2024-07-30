@@ -179,7 +179,7 @@ Here are some more tips for managing notifications:
 - **Organization-wide notifications:**
   - Azure DevOps doesn’t directly support organization-wide notifications.
   - As an alternative, consider providing an email distribution list that reaches your entire organization.
-  - In Azure DevOps Services you can create a banner using the `az devops banner` command that all users see when they sign in.
+  - Additionally, you can create a banner using the `az devops banner` command that all users see when they sign in.
 
 ## Related articles
 

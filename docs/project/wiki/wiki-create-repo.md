@@ -125,7 +125,7 @@ az devops wiki create [--mapped-path]
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md]
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
 
 ::: moniker range="azure-devops"
 
