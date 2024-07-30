@@ -20,12 +20,7 @@ Although Key Vault supports storing and managing cryptographic keys and certific
 ### Prerequisites
 
 - An Azure key vault that contains your secrets. You can create a key vault by using the [Azure portal](https://portal.azure.com).
-- An Azure [service connection](../../library/service-endpoints.md) for your project that has at least **Get** and **List** management permissions on the key vault. You can provide these permissions when you link the variable group to the key vault, or you can provide them in the Azure portal by following these steps:
-  1. Open **Settings** for the key vault, and then choose **Access configuration** > **Go to access policies**.
-  1. On the **Access policies** page, if your Azure Pipelines project isn't listed under **Applications** with at least **Get** and **List** permissions, select **Create**.
-  1. Under **Secret permissions**, select **Get** and **List**, and then select **Next**.
-  1. Select your service principal, and then select **Next**.
-  1. Select **Next** again, review the settings, and then select **Create**.
+- An Azure [service connection](../../library/service-endpoints.md) for your project.
 
 ### Create the variable group
 
@@ -33,9 +28,17 @@ Although Key Vault supports storing and managing cryptographic keys and certific
 1. On the **Variable groups** page, enter a name and optional description for the variable group.
 1. Enable the **Link secrets from an Azure key vault as variables** toggle.
 1. Select your Azure subscription endpoint and key vault name.
-1. If you didn't set permissions in the Azure portal, enable Azure DevOps to access the key vault by selecting **Authorize** next to the vault name.
+1. Enable Azure DevOps to access the key vault by selecting **Authorize** next to the vault name.
 1. On the **Choose secrets** screen, select specific secrets from your vault for mapping to this variable group, and then select **OK**.
 1. Select **Save** to save the secret variable group.
 
 :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
 
+>[!NOTE]
+>Your Azure service connection must have at least **Get** and **List** permissions on the key vault, which you can authorize in the preceding steps. You can also provide these permissions from the Azure portal by following these steps:
+>
+>1. Open **Settings** for the key vault, and then choose **Access configuration** > **Go to access policies**.
+>1. On the **Access policies** page, if your Azure Pipelines project isn't listed under **Applications** with at least **Get** and **List** permissions, select **Create**.
+>1. Under **Secret permissions**, select **Get** and **List**, and then select **Next**.
+>1. Select your service principal, and then select **Next**.
+>1. Select **Next** again, review the settings, and then select **Create**.

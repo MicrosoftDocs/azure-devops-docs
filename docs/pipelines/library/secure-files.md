@@ -44,7 +44,7 @@ Secure files are stored on the server in encrypted form and can be consumed only
 
 1. Select **OK**. Once you upload the file, you can delete it but not replace it.
 
-### Define security roles and permissions
+## Define security roles and permissions
 
 You can define security role restrictions and permissions for all items in a library, or for individual items.
 
@@ -59,7 +59,7 @@ You can define security role restrictions and permissions for all items in a lib
   :::image type="content" source="media/pipeline-security-options.png" alt-text="Set pipeline security for secure files.":::
 
 <a name="secure-file-authorization"></a>
-#### Authorize a pipeline to use a secure file
+## Authorize a YAML pipeline to use a secure file
 
 To use a secure file in YAML pipelines, you must authorize the pipeline to use the file. All Classic pipelines can access secure files.
 
