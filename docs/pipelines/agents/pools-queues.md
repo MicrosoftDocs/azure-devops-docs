@@ -123,7 +123,7 @@ To delete a pool, go to the **Agent pools** list, choose **More options**, **Del
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="azure-devops"
 
 [List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [Show agent queue details](#show-agent-queue-details)
 
@@ -302,7 +302,7 @@ az pipelines queue show --id 14
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-* * *
+
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 

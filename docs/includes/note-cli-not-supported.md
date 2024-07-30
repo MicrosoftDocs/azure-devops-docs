@@ -7,6 +7,6 @@ ms.date: 07/09/2020
 ---
 
 ::: moniker range="< azure-devops"
-Azure DevOps CLI commands aren't supported for Azure DevOps Server on-premises.  
+Azure DevOps CLI commands aren't supported for Azure DevOps Server.  
 ::: moniker-end
  
