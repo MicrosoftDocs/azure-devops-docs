@@ -279,9 +279,9 @@ az pipelines agent show --agent-id
 - **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
 - **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
 - **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
-- To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service. in pipelines or variable groups when exchanged with the agent.
+- To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service in pipelines or variable groups when exchanged with the agent.
 
-The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key.gentCloudRequest": null,
+The payload of the messages exchanged between the agent and Azure Pipelines are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key.gentCloudRequest": null,
  
   <Some properties omitted for space>
 

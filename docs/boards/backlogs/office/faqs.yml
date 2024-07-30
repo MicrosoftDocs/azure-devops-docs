@@ -19,7 +19,7 @@ summary: |
 
   Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
-  If you're having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also be sure you've reviewed the information in [Azure Boards and Office integration](track-work.md). 
+  If you're having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also be sure you review the information in [Azure Boards and Office integration](track-work.md). 
   
   ::: moniker range=">= azure-devops-2020" 
    > [!TIP]  
@@ -47,15 +47,15 @@ sections:
           > 
           > However, full support for Microsoft Excel integration is maintained and is the recommended alternative.
 
-          Once you've installed the add-in, open Excel and look for the **Team** ribbon.
+          Once you install the add-in, open Excel and look for the **Team** ribbon.
 
       - question: Can I use Excel on my Mac?
         answer: |
-          **No**. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
+          **No**. macOS isn't supported. Even if you install Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
 
       - question: Can I open a query in Excel from the web portal?  
         answer: |
-          **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you've created in the web portal or from Team Explorer. 
+          **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you created in the web portal or from Team Explorer. 
 
           > [!div class="mx-imgBorder"]  
           > [Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
@@ -162,12 +162,12 @@ sections:
             A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
 
           - [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
-            If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
+            If hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
 
       - question: How do I resolve invalid links tree list in Excel?
         answer: |
 
-          If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items. It occurs if the title of a work item title is missing or occurs in the wrong title column.  
+          If you try to publish a tree list containing an invalid link, the **Work Item Publishing Errors** dialog box appears with an error message stating why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items. It occurs if the title of a work item title is missing or occurs in the wrong title column.  
           
           To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md).
           
@@ -175,11 +175,11 @@ sections:
 
           If you add a value to multiple Title columns of a work item, when you try to publish the tree, the error message **TF208000** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link.  
   
-          1.  Note the row number that appears in the dialog box.    
-          2.  Close the **Work Item Publishing Errors** dialog box.   
-          3.  In the work item list, find the row that the error message specified.   
-          4.  Delete the duplicate title or titles so that only one title column has a value.   
-          5.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
+          1. Note the row number that appears in the dialog box.    
+          2. Close the **Work Item Publishing Errors** dialog box.   
+          3. In the work item list, find the row that the error message specified.   
+          4. Delete the duplicate title or titles so that only one title column has a value.   
+          5. On the **Team** tab, in the **Work Items** group, choose **Publish**.  
  
           **Error message TF208001: Child work item disconnected from parent**  
 
@@ -189,11 +189,11 @@ sections:
   
           **Resolve an orphaned work item**
   
-          1.  Note the row number that appears in the dialog box.    
-          2.  Close the **Work Item Publishing Errors** dialog box.    
-          3.  Find the row that the error message specified. The misplaced title might be in this row, or it might be in the next row.  
-          4.  Move the title to the correct column to fix the invalid link.  
-          5.  On the **Team** tab, in the **Work Items** group, choose **Publish**.
+          1. Note the row number that appears in the dialog box.    
+          2. Close the **Work Item Publishing Errors** dialog box.    
+          3. Find the row that the error message specified. The misplaced title might be in this row, or it might be in the next row.  
+          4. To fix the invalid link, move the title to the correct column .  
+          5. On the **Team** tab, in the **Work Items** group, choose **Publish**.
 
           **Error message TF208017: Missing Title 1 in the first row**  
 
@@ -207,7 +207,7 @@ sections:
 
           **Error message TF208022: Sorted tree list**  
 
-          If you haven't installed Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you've sorted the work items in a tree list:  
+          If you didn't install Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you sort the work items in a tree list:  
   
           TF208022: Can't publish a sorted tree list. Before you can publish, you must clear any sort criteria applied to this work item list. The order of work items has changed. Removing sort criteria won't return the list to its original order. Verify that all of the parent-child relationships in the tree are correct before you publish.   
   
@@ -227,12 +227,12 @@ sections:
           You can still publish the changes you have made to individual work items. After you publish, the list restores to previous hierarchy.
           In general, you shouldn't sort a tree list whose hierarchy has been modified.|
 
-          This message indicates that you can publish the changes that you made to the fields, but all changes that you made to the link hierarchy have been discarded. The tree hierarchy automatically reverts to its original structure.  
+          This message indicates that you can publish the changes that you made to the fields, but all changes that you made to the link hierarchy were discarded. The tree hierarchy automatically reverts to its original structure.  
   
           **Publish changes and retrieve the tree hierarchy**
   
-          1.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
-          2.  Choose **Refresh**.  
+          1. On the **Team** tab, in the **Work Items** group, choose **Publish**.  
+          2. Choose **Refresh**.  
  
           **Error message TF208104: Hierarchical link Relationship is locked**
           

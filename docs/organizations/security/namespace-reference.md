@@ -30,7 +30,7 @@ Each family of resources, such as work items or Git repositories, is secured thr
 
 ## Permission management tools 
 
-The recommended method for managing permissions is through the web portal. However, to set a permission that isn't surfaced through the web portal or set more granular permissions, you can use one of the command line tools or REST API.  
+The recommended method for managing permissions is through the web portal. However, to set permissions unavailable through the portal or granular permissions, use command line tools or the REST API.
 - For Azure DevOps Services, you can use the `az devops security permission` commands. 
 - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
 - For Azure DevOps git repositories,[tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
@@ -40,7 +40,7 @@ For all Azure DevOps instances, you can use the [Security REST API](/rest/api/az
 
 ## Security namespaces and their IDs
 
-This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories based on how they're managed through the web portal. 
+This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces are grouped into the following categories based on how they're managed through the web portal. 
 
 
 - Object-level 
