@@ -6,7 +6,7 @@ ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/29/2024
+ms.date: 07/31/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -445,7 +445,7 @@ steps:
 - script: echo $(myhello)
 ```
 
-You can't access secret variables, including encrypted variables and key vault variables, directly in scripts. You must pass these variables as arguments to a task. For more information, see [Secret variables](../process/variables.md#secret-variables)
+You can't access secret variables, including encrypted variables and key vault variables, directly in scripts. You must pass these variables as arguments to a task. For more information, see [Secret variables](../process/variables.md#secret-variables).
 
 ### Use variable groups in Classic pipelines
 

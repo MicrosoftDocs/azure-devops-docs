@@ -6,7 +6,7 @@ ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.author: vijayma
 author: vijayma
 monikerRange: '<= azure-devops'
-ms.date: 07/30/2024
+ms.date: 07/31/2024
 ms.topic: how-to
 ---
 
@@ -52,8 +52,8 @@ You can define security role restrictions and permissions for all items in a lib
 - To define permissions for an individual file:
   1. Select the file from the **Secure files** list.
   1. At the top of the **Secure file** page, select:
-     - **Pipeline permissions** to select YAML pipelines that can access the file.
      - **Security** to set users and security roles that can access the file.
+     - **Pipeline permissions** to select YAML pipelines that can access the file.
      - **Approvals and checks** to set approvers and other checks for using the file. For more information, see [Approvals and checks](../process/approvals.md).
 
   :::image type="content" source="media/pipeline-security-options.png" alt-text="Set pipeline security for secure files.":::
@@ -99,5 +99,5 @@ The following example YAML pipeline downloads a secure certificate file and inst
 
 - The [Install Apple Provisioning Profile](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) task is a simple example that uses a secure file. For the source code, see [InstallAppleProvisioningProfileV1](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallAppleProvisioningProfileV1).
 
-- To handle secure files during build or release, see the [Common module](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common) for tasks.
+- To handle secure files during build or release tasks, see the [Common module](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common) for tasks.
 
