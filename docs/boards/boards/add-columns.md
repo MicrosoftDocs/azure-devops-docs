@@ -133,13 +133,13 @@ Do the following steps to add and edit your columns:
 4. Select from the following actions, as appropriate:
    - **Rename your column titles** to map to your workflow stages. You can add, rename, and move columns to support more stages. In the following examples, we rename the first three columns to **Backlog**, **Analyze**, and **Develop** and add a column labeled **Test**. 
 
-	Rename a column directly from the board. 
+	  Rename a column directly from the board. 
 
-	:::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot showing renaming a column directly on a board.":::
+	  :::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot showing renaming a column directly on a board.":::
 
-	Or, you can open the dialog and change one or more settings for a column. 
+	  Or, you can open the dialog and change one or more settings for a column. 
 
-   :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot that shows the Settings dialog and selections for adding a Test column.":::
+     :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot that shows the Settings dialog and selections for adding a Test column.":::
 
    - **Change the column order** by dragging the column tab to the position that you want.  
 
