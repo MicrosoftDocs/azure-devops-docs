@@ -16,8 +16,6 @@ monikerRange: '>= azure-devops-2020'
 
 Build tags in Azure DevOps let you categorize and organize your builds. Tags make it easier to filter and search for specific builds. In this article, learn how to add, remove, and use build tags in Azure DevOps.
 
-See `az pipelines build tag` in [the Azure CLI guide](/cli/azure/pipelines/build/tag) to learn how to use tags with the azure-devops extension.
-
 ## Prerequisites
 
 An Azure DevOps organization and access to a project where you are a member of the **Contributors** group.
