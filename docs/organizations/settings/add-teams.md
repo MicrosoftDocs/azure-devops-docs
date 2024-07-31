@@ -259,7 +259,7 @@ url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a9
  
 ::: moniker-end
 
-[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 * * *
 

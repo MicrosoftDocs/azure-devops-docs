@@ -91,8 +91,7 @@ After you install the agent on a machine, you can install any other software on 
 
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
-All official Azure DevOps tasks use Node 20 as a universal handler, however, customers might still use custom tasks
-that use the end-of-life Node 6, Node 10, or Node 16 libraries. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
+All official Azure DevOps tasks use Node 20 as a universal handler, however, customers might still use custom tasks that use the end-of-life Node 6, Node 10, or Node 16 libraries. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
 
 * Manually install the Node 6 runner. For more information about manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
 * Use the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node 6 library.
@@ -205,9 +204,9 @@ You can view the details of an agent, including its version and system capabilit
 
 1. To register a new capability with the agent, choose **Add a new capability**.
 
-::: moniker range="azure-devops"
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
 
 You can view the details of an agent, including its version and capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent) Azure CLI methods.
 
@@ -283,6 +282,10 @@ az pipelines agent show --agent-id
 
 The payload of the messages exchanged between the agent and Azure Pipelines are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key.gentCloudRequest": null,
  
+
+```json
+
+
   <Some properties omitted for space>
 
   "status": "offline",
@@ -299,6 +302,9 @@ The payload of the messages exchanged between the agent and Azure Pipelines are 
     "subversion": "",
     "svn": "",
     "To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service.
+```
+
+
 
 However, if you're running UI tests such as Selenium or Coded UI tests that require a browser, the browser is launched in the context of the agent account.
 
@@ -306,6 +312,11 @@ On Windows, you should consider using a service account such as Network Service 
 
 These credentials are different from the credentials that you use when you register the agent with Azure Pipelines or Azure DevOps Server.
 
+::: moniker-end
+
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
+
+---
 
 > [!TIP]
 >
