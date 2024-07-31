@@ -18,7 +18,7 @@ This article explains *task groups* in Classic build and release pipelines in Az
 > [!NOTE]
 > Task groups aren't supported in YAML pipelines. Instead, you can use templates. For more information, see [Templates](../process/templates.md).
 
-In Classic pipelines, a task group encapsulates a sequence of tasks that are already defined in a pipeline into a single reusable task. The new task group is automatically added to the task catalog, and can be added to other pipelines in the project just like other tasks. Task groups are stored at the project level, and aren't accessible outside the project scope.
+In Classic pipelines, a task group encapsulates a sequence of tasks that are already defined in a pipeline into a single reusable task. The new task group is automatically added to the task catalog, and can be added to pipelines in the project just like other tasks. Task groups are stored at the project level, and aren't accessible outside the project scope.
 
 Task groups are a way to standardize and centrally manage deployment steps for all your applications. When you make a change centrally to a task group, the change is automatically reflected in all the pipeline definitions that use the task group. You don't need to change each definition individually.
 
@@ -39,17 +39,19 @@ You can also configure task conditions in a task group, such as **Run this task 
 
 ## Create a task group
 
-When you save a new task group, you provide a name and description and select a category for the task group in the **Task catalog**.
+When you save a new task group, you provide a name and description and select a category for the task group in the task catalog.
+
+1. Open the build or release pipeline where you want to create a new task group.
 
 1. To ensure that none of the tasks you intend to include contain any linked parameters, select **Unlink all** in the pipeline settings panel, and then select **Confirm**.
 
    :::image type="content" source="media/unlink-task-group.png" alt-text="Screenshot that shows unlinking parameters for all tasks.":::
 
-1. Select a sequence of tasks in a build or release pipeline, open the shortcut menu, and then choose **Create task group**.
+1. Select a sequence of pipeline tasks that you want to turn into a task group, right-click to open the context menu, and then choose **Create task group**.
 
    :::image type="content" source="media/create-task-group.png" alt-text="Screenshot that shows creating a task group from a release pipeline list of tasks.":::
 
-1. Specify a name and description for the new task group, and the category or tab in the **Add tasks** pane) you want to add it to.
+1. Specify a name and description for the new task group, and the category in the **Add tasks** pane you want to add it to.
 
 1. Select **Create**. The new task group is created and replaces the selected tasks in your pipeline.
 
@@ -65,17 +67,21 @@ All the task groups in the current project are listed in the **Task groups** pag
 
 :::image type="content" source="media/list-task-group.png" alt-text="Screenshot that shows listing task groups.":::
 
-To manage a task group, right-click the group or select the **More actions** icon, and select one of the following options from the context menu:
+At the top of the **Task groups** page, you can select **Import** to import previously saved task group definitions. You can use this feature to transfer task groups between projects and enterprises, or replicate and save copies of your task groups.
 
-- Use the **Export** shortcut command to save a copy of the task group as a JSON pipeline.
-- Use the **Import** icon to import previously saved task group definitions. You can use this feature to transfer task groups between projects and enterprises, or replicate and save copies of your task groups.
+You can also select **Security** at the top of the page to define who can use, edit, delete, or set permissions for all task groups in the project.
+
+To manage a task group, right-click or select the **More actions** icon for the group, and select one of the following options from the context menu:
+
+- Select **Delete** to delete the task group, and then select **Delete** again on the confirmation screen.
+- Select **Export** to save a copy of the task group as a JSON pipeline.
 - Select **Security** to define who can use, edit, delete, or set permissions for the task group.
 
 To open the task group details page for editing, select the task group name on the **Task groups** page.
 
 :::image type="content" source="media/manage-task-group.png" alt-text="Screenshot that shows managing a task group.":::
 
-- On the **Tasks** tab, you can edit the tasks that make up the task group. For each encapsulated task you can change the parameter values for the non-variable parameters, edit the existing parameter variables, or convert parameter values to and from variables. When you save the changes, all definitions that use the task group pick up the changes.
+- On the **Tasks** tab, you can edit the tasks that make up the task group. For each encapsulated task you can change the parameter values for the nonvariable parameters, edit the existing parameter variables, or convert parameter values to and from variables. When you save the changes, all definitions that use the task group pick up the changes.
   
   All the variable parameters of the task group appear as mandatory parameters in the pipeline definition. You can also set the default values for the task group parameters.
 
@@ -95,7 +101,7 @@ All built-in Azure Pipelines tasks are [versioned](../process/tasks.md#task-vers
 
    :::image type="content" source="media/publish-preview-task-group.png" alt-text="Screenshot that shows publishing a draft version of a task group.":::
  
-1. You can now use the updated task group in your build and release processes. You can either by change the version number of the task group in an existing pipeline, or choose the versioned task group from the **Add tasks** panel. As with built-in tasks, the default when you add a task group is the highest non-preview version.
+1. You can now use the updated task group in your build and release processes. You can either change the version number in pipelines that already use the task group, or choose the versioned task group from the **Add tasks** pane. As with built-in tasks, the default when you add a task group is the highest non-preview version.
 
    :::image type="content" source="media/use-preview-task-group.png" alt-text="Screenshot that shows using a draft version of a task group.":::
 
@@ -111,27 +117,29 @@ All built-in Azure Pipelines tasks are [versioned](../process/tasks.md#task-vers
 
 Task group updates can be minor or major version updates.
 
-### Minor version 
+### Create a minor version update
 
-To create a minor version update, you directly save the task group after editing it instead of saving it as draft. 
+To create a minor version update, you directly save the task group after editing it instead of saving it as a draft.
 
 The version number doesn't change, and the latest changes show up in the pipeline definition automatically. For example, if your task group is version `1`, you can have any number of minor version updates such as `1.1`, `1.2`, and `1.3`. In your pipeline, the task group version shows as `1.*`.
 
 Use minor version updates for small changes in the task group, when you expect pipelines to use the new change without editing the version in the pipeline definition.
 
-### Major version
+### Create a major version update
 
 To create a new major version, you save the task group updates as draft and create a preview, validate the changes, and then publish the preview.
 
 This process bumps up the task group to a new version. If you had a task group with version `1.*`, new versions are published as `2.*`, `3.*`, `4.*`, and so on.
 
-A notification about new version availability appears in all the pipeline definitions that use the task group. Users must explicitly update to the new task group version in their pipelines.
+A notification about new version availability appears in all the pipeline definitions that use the task group. Users must explicitly update to the new task group version if they want to use it in their pipelines.
 
-When you make substantial changes that might break existing pipelines, you want to test and roll out the changes as a new version. Users can choose to upgrade to new version or stay on the current version. This functionality is the same as a regular task version update.
+When you make substantial changes that might break existing pipelines, you can test and roll out the changes as a new major version. Users can choose to upgrade to new version or stay on the current version. This functionality is the same as a regular task version update.
+
+### Test a minor version update
 
 If your task group update isn't a breaking change, but you want to test first and then force all pipelines to use the latest changes, follow these steps:
 
-1. Save the task group changes as a draft. A new draft task group **\<Taskgroupname>(Draft)** is created with your changes.
+1. Save the task group changes as a draft. A new draft task group named **\<Taskgroupname> (Draft)** is created with your changes.
 1. Add this draft task group directly to your test pipeline.
 1. Validate the changes in your test pipeline. Once you're confident in the changes, go back to your main task group, do the same changes, and save them directly. The changes are saved as a minor version update.
 1. The new changes now show up in all the pipelines that use this task group. Now you can delete your draft task group.
