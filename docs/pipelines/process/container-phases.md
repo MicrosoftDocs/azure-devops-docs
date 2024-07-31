@@ -29,7 +29,7 @@ If you need fine-grained control at the individual build step level, [step targe
 
 - Use a YAML pipeline. Classic pipelines do not support container jobs. 
 - Use a hosted Windows or Ubuntu agent. Only `windows-*` and `ubuntu-*` agents support running containers. The `macos-*` agents don't support running containers.
-- Your agent must be set up for container jobs.  
+- Your agent is set up for container jobs.  
     - Windows and Linux agents must have Docker installed, and need permission to access the Docker daemon. 
     - Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
 
