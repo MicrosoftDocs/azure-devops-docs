@@ -247,7 +247,7 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: ${{ eq(parameters.doThing, true) }}
+  condition: and (succeeded(), ${{ eq(parameters.doThing, true) }})
 ```
 
 The `condition` in the preceding pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns `true` because there was no previous step.
