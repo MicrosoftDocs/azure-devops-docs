@@ -391,7 +391,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-3. **Default iteration**. The default iteration defines the iteration that to use when you create a work item from the team backlog or board. specify any iteration defined under the **Backlog iteration** path. To assign new work items to the current iteration, specify **@CurrentIteration**. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
+3. **Default iteration**. The default iteration defines the iteration to use when you create a work item from the team backlog or board. specify any iteration defined under the **Backlog iteration** path. To assign new work items to the current iteration, specify **@CurrentIteration**. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
 
 	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.
 
@@ -410,7 +410,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Work, Iterations page for team, activates sprint list.](media/team-defaults/selected-iterations.png) 
 
-	If you don't see the sprints or dates that you need,  add or edit iterations for the project, provided you have the required permissions. For more information, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
+	If you don't see the sprints or dates that you need, add or edit iterations for the project, provided you have the required permissions. For more information, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
@@ -622,7 +622,7 @@ You can use the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/cla
 After a while, you might want to archive iteration paths that were used for sprints that are a year or more out of date. You can do so by moving the iteration path under a node that you label "Archive". All work items are updated with the moved iteration path. Also, teams can de-select those sprints that have past. All data is maintained in the data store with the new iteration path assignments. 
 
 <!--- Implications for reporting --> 
-Before you archive the iterations, consider if you captured all the reports that you might want. 
+Before you archive the iterations, consider if you captured all the reports that you will want. 
 
 
 ## Chart progress by iteration
