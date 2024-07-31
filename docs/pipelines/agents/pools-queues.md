@@ -103,7 +103,7 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 ### Manage pools and queues
 
-#### [Browser](#tab/browser)
+#### [Azure Pipelines UI](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.

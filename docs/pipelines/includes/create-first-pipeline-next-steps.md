@@ -30,7 +30,7 @@ To find out what else you can do in YAML pipelines, see [YAML schema reference](
 
 If you created any test pipelines, they're easy to delete when you finish with them. 
 
-#### [Browser](#tab/browser)
+#### [Azure Pipelines UI](#tab/browser)
 
 To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu at the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
 

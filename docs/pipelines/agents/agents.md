@@ -190,7 +190,7 @@ In the Tasks tab of the pipeline, add the demand to your agent job.
 
 ### Configure agent capabilities
 
-#### [Browser](#tab/browser)
+#### [Azure Pipelines UI](#tab/browser)
 
 You can view the details of an agent, including its version and system capabilities, and manage its user capabilities, by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
