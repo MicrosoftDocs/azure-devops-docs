@@ -179,7 +179,7 @@ These investments include:
          <td>Future</td>
       </tr>   
     <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview)">Show more details about a GitHub pull request (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements)">Show more details about a GitHub pull request</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
@@ -197,9 +197,9 @@ These investments include:
          <td>Future</td>
       </tr>       
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a></td>
          <td>Boards</td>
-         <td>2024 Q3</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
          <td>Future</td>
       </tr>      
     </tbody>
@@ -207,7 +207,7 @@ These investments include:
 
 ### YAML and release pipelines feature parity
 
-For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens?view=azure-devops&tabs=yaml#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We will continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
+For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We will continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
 
 <table>
     <thead>
@@ -315,18 +315,18 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>     
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a>
+            <a href="/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a>
          </td>
          <td>Boards</td>         
          <td>Future</td>
       </tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available)">Add link to GitHub commit or pull request from work item</a></td>
          <td>Boards</td>         
          <td>Future</td>
       </tr> 
       <tr>
        <td>
-         <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request</a>
+         <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request (preview)</a>
        </td>
          <td>Boards</td>         
          <td>Future</td>
@@ -384,7 +384,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr> 
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item (preview)</a>
+            <a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a>
          </td>
          <td>Boards</td> 
          <td>Future</td>       
