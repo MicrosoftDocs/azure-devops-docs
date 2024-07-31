@@ -65,20 +65,6 @@ Output:
 
 ---
 
-## Add a build tag to a future build
-
-To add a build tag to a build in a YAML pipeline, use the [`addbuildtag` logging command](../scripts/logging-commands.md#addbuildtag-add-a-tag-to-the-build). 
-
-In the following example a new tag gets added in a script task with a variable that includes the current date.
-
-```yaml
-steps:
-- script: |
-    last_scanned="last_scanned-$(date +%Y%m%d)"
-    echo "##vso[build.addbuildtag]$last_scanned"
-  displayName: 'Apply last scanned tag'
-```
-
 
 ## Remove a build tag
 
