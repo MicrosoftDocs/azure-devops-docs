@@ -5,6 +5,8 @@ ms.topic: how-to
 ms.date: 06/18/2023
 ms.custom: template-how-to-pattern
 ai-usage: ai-assisted
+ms.author: jukullam
+author: juliakm
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -14,9 +16,13 @@ monikerRange: '>= azure-devops-2020'
 
 Build tags in Azure DevOps let you categorize and organize your builds. Tags make it easier to filter and search for specific builds. In this article, learn how to add, remove, and use build tags in Azure DevOps.
 
-See `az pipelines build tag` in [the Azure CLI guide](/cli/azure/pipelines/build/tag) to learn how to use tags with the azure-devops extension.
+## Prerequisites
+
+An Azure DevOps organization and access to a project where you are a member of the **Contributors** group.
 
 ## Add a build tag to a completed build
+
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
 
 To add a tag to a completed build:
 
@@ -35,6 +41,66 @@ To add a tag to a completed build:
 
 1. Press **Enter**  to save the tags.
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+To create a build tag, use the [az pipelines build tag add](/cli/azure/pipelines/build/tag#az-pipelines-build-tag-add) command.
+
+For example, the following command creates a build tag named `prod` in the `contoso` organization and `webapp` project for the build `1234`.
+
+```azurecli
+az pipelines build tag add --build-id 1234
+                           --tags prod
+                           --org https://dev.azure.com/Contoso/
+                           --project contoso
+```
+Output:
+
+```json
+[
+  "prod"
+]
+```
+
+---
+
+
+## Remove a build tag
+
+#### [Azure Pipelines UI](#tab/azure-pipelines-ui)
+
+To remove build tags from your builds in Azure DevOps, follow these steps:
+
+1. Open your Azure DevOps project and go to **Pipelines**.
+1. Select the pipeline where you want to remove a tag.
+1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and choose **Edit tags**. 
+1. Select the **X** next to the tag name to remove your tag.
+
+    :::image type="content" source="media/tags/remove-build-tag.png" alt-text="Screenshot of removing build tag.":::
+
+1. Press **Save** to save the changes.
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+To remove a build tag, use the [az pipelines build tag delete](/cli/azure/pipelines/build/tag#az-pipelines-build-tag-delete) command.
+
+For example, the following command removes a build tag named `prod` in the `contoso` organization and `webapp` project for the build `1234`.
+
+```azurecli
+az pipelines build tag delete --build-id 1234
+                           --tag prod
+                           --org https://dev.azure.com/Contoso/
+                           --project contoso
+```
+
+Output:
+
+```json
+[
+]
+```
+
+---
+
 ## Add a build tag to a future build
 
 To add a build tag to a build in a YAML pipeline, use the [`addbuildtag` logging command](../scripts/logging-commands.md#addbuildtag-add-a-tag-to-the-build). 
@@ -48,20 +114,7 @@ steps:
     echo "##vso[build.addbuildtag]$last_scanned"
   displayName: 'Apply last scanned tag'
 ```
-
-
-## Remove a build tag
-
-To remove build tags from your builds in Azure DevOps, follow these steps:
-
-1. Open your Azure DevOps project and go to **Pipelines**.
-1. Select the pipeline where you want to remove a tag.
-1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and choose **Edit tags**. 
-1. Select the **X** next to the tag name to remove your tag.
-
-    :::image type="content" source="media/tags/remove-build-tag.png" alt-text="Screenshot of removing build tag.":::
-
-1. Press **Save** to save the changes.
+---
 
 ## Filter with a build tag
 
