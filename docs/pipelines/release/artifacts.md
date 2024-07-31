@@ -30,11 +30,12 @@ The **Default version** dropdown options depend on the source type of the linked
 
 The following sections describe how to work with the different types of artifact sources:
 
-> [Azure Pipelines](#artifact-sources---azure-pipelines)
-> [Azure Repos, GitHub, and TFVC](#artifact-sources---version-control)
-> [Azure Artifacts](#artifact-sources---azure-artifacts)
-> [Azure Container Repository and Docker Hub](#artifact-sources---containers)
-> [Jenkins](#artifact-sources---jenkins)
+>[!div class="checklist"]  
+> - [Azure Pipelines](#azure-pipelines)
+> - [Azure Repos, GitHub, and TFVC](#azure-repos-github-and-tfvc)
+> - [Azure Artifacts](#azure-artifacts)
+> - [Azure Container Repository and Docker Hub](#azure-container-repository-and-docker-hub)
+> - [Jenkins](#jenkins)
 
 > [!NOTE]
 > When using multiple artifact sources, mapping an artifact source to trigger a particular stage is not supported. If you need this functionality, Azure Pipelines recommends splitting your release pipeline into multiple releases.
