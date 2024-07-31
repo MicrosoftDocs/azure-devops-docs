@@ -30,8 +30,8 @@ Each family of resources, such as work items or Git repositories, is secured thr
 
 ## Permission management tools 
 
-The recommended method for managing permissions is through the web portal. However, to set a permission that isn't surfaced through the web portal or set more granular permissions, you can use one of the command line tools or REST API.  
-- For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
+The recommended method for managing permissions is through the web portal. However, to set permissions unavailable through the portal or granular permissions, use command line tools or the REST API.
+- For Azure DevOps Services, you can use the `az devops security permission` commands. 
 - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
 - For Azure DevOps git repositories,[tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
 - For Team Foundation Version Control (TFVC) repositories, [TF TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
@@ -40,7 +40,7 @@ For all Azure DevOps instances, you can use the [Security REST API](/rest/api/az
 
 ## Security namespaces and their IDs
 
-This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories based on how they're managed through the web portal. 
+This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces are grouped into the following categories based on how they're managed through the web portal. 
 
 
 - Object-level 
@@ -394,13 +394,15 @@ The following table describes the namespaces that manage project-level permissio
       <br/>
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
-      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
+      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.
+::: moniker range=">= azure-devops"  
       Assume you have a project named `Test Project 1`.  
       You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
-      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`  
+      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`
+::: moniker-end  
       <br/>
       **ID:** `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::

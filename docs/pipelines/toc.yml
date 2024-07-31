@@ -176,6 +176,9 @@
     - name: Information pipeline runs
       displayName: information run
       href: process/information-run.md
+    - name: Use build tags
+      displayName: build tags, tags
+      href: build/build-tag.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports
