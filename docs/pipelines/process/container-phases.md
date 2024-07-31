@@ -25,17 +25,15 @@ For a container job, the agent first fetches and starts the container. Then each
 If you need fine-grained control at the individual build step level, [step targets](tasks.md#step-target) let you choose a container or host for each step.
 ::: moniker-end
 
-## Requirements and limitations
+## Prerequisites
 
-The following requirements and limitations apply to Azure Pipelines agent hosts or containers.
+- Have a YAML pipeline. 
+- Use a hosted Windows or Ubuntu agent. Only `windows-*` and `ubuntu-*` agents support running containers. The `macos-*` agents don't support running containers.
+- Your agent must be set up for container jobs.  
+    - Windows and Linux agents must have Docker installed, and need permission to access the Docker daemon. 
+    - Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
 
-### Agent hosts
-
-- Only `windows-*` and `ubuntu-*` images support running containers. The `macos-*` images don't support running containers.
-- To run containers, Windows and Linux agent hosts must have Docker installed, and must have permission to access the Docker daemon.
-- Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
-
-### Containers
+### Additional container requirements
 
 ### [Linux](#tab/linux)
 
