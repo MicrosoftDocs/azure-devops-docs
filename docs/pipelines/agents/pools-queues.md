@@ -302,7 +302,7 @@ az pipelines queue show --id 14
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-
+* * *
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
