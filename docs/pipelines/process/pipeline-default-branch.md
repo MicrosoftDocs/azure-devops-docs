@@ -1,34 +1,43 @@
 ---
 title: Pipeline default branch
-description: Configure a pipeline's default branch
+description: See how to configure a pipeline's default branch in Azure Pipelines.
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 02/01/2022
+ms.date: 07/31/2024
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
-# The pipeline default branch
+# Pipeline default branch
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-A pipeline's default branch defines the pipeline version used for manual builds, [scheduled builds](scheduled-triggers.md),  [retention policies](../policies/retention.md), and in [pipeline resource triggers](pipeline-triggers.md).
+This article describes how to view and edit a pipeline's default branch. A pipeline's default branch defines the pipeline version used for manual builds, scheduled builds, retention policies, and in pipeline resource triggers. By default, a pipeline's default branch is the default branch of the repository.
 
-By default, a pipeline's default branch is the default branch of the repository.
+## View and update the default branch
 
 To view and update the **Default branch for manual and scheduled builds** setting:
 
-1. [Go to the pipeline details](../create-first-pipeline.md#view-and-manage-your-pipelines) for your pipeline, and choose **Edit**.
+1. In your Azure DevOps project, select your pipeline from the **Pipelines** list.
+1. On the pipeline page, select **Edit**.
 
-    :::image type="content" source="media/pipeline-triggers/pipeline-edit.png" alt-text="Edit pipeline."::: 
+   :::image type="content" source="media/pipeline-triggers/pipeline-edit.png" alt-text="Screenshot that shows selecting Edit for a pipeline."::: 
 
-2. Choose **...** and select **Triggers**.
+1. In the **More actions** menu, select **Triggers**.
 
-    :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+   :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Screenshot that shows selecting Triggers for edit."::: 
 
-3. Select **YAML**, **Get sources**, and view the **Default branch for manual and scheduled builds** setting. If you change it, choose **Save** or **Save & queue** to save the change.
+1. Select **YAML** > **Get sources**, and view the **Default branch for manual and scheduled builds** setting.
 
-    :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 
+1. To change the branch, select the **Browse** icon next to the branch name, select a different branch name, and select **Select**. Then select **Save** or **Save & queue** on the triggers page.
+
+   :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Screenshot that shows the Default branch for manual and scheduled builds setting."::: 
 
 > [!IMPORTANT]
-> Azure Pipelines loads a maximum of 2000 branches from a repository into the **Default branch for manual and scheduled builds**. If you don't see your desired branch in the list, type the desired branch name manually.
+> Azure Pipelines loads a maximum of 2,000 branches from a repository into the **Default branch for manual and scheduled builds** selector. If you don't see your desired branch in the list, enter the desired branch name manually.
+
+## Related content
+- [View and manage your pipelines](../create-first-pipeline.md#view-and-manage-your-pipelines)
+- [Configure schedules for pipelines](scheduled-triggers.md)
+- [Trigger pipelines](pipeline-triggers.md)
+- [Set retention policies for builds, releases, and tests](../policies/retention.md)
