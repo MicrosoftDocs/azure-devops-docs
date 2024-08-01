@@ -82,7 +82,10 @@ We recommend keeping a reasonable number of tag objects, as advised in the `Numb
 
 Display the count of binary files or media assets for which we were unable to calculate a diff. 
 
-Storing such files in Git isn't advised. Different versions of such files don’t delta well against each other, meaning Git can’t store them efficiently. Consider using  [Git-LFS](https://git-lfs.com/), [Scalar](https://git-scm.com/docs/scalar), or [Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts), which allow you to store such files and keep your repository healthy and maintainable. 
+Storing such files in Git isn't advised. Different versions of such files don’t delta well against each other, meaning Git can’t store them efficiently. Consider using  [Git-LFS](https://git-lfs.com/), [Scalar](https://git-scm.com/docs/scalar), or [Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts), which allow you to store such files and keep your repository healthy and maintainable.  For more information, see [Manage and store large files in Git](manage-large-files.md).
+
+>[!NOTE]
+>If you use the [REST Pushes](/rest/api/azure/devops/git/pushes/create.md) API, your files are not diffed and this is very inefficient for pushing objects that are normally diffable.
 
 ## Size of reachable blobs
 
