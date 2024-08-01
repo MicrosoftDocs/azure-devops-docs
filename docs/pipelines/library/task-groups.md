@@ -13,8 +13,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains the concept of *task groups* in Classic pipelines, and describes how to create, manage, and version task groups.
-
 > [!NOTE]
 > Task groups aren't supported in YAML pipelines. Instead, you can use templates. For more information, see [Templates](../process/templates.md).
 
@@ -36,6 +34,9 @@ You can also change the default values for the parameters when you save the new 
 Before you create a task group, make sure to define any parameters that you want to be able to configure in pipeline runs as variables, such as **$(MyVariable)**. Any task parameters that have no values or have specified values instead of variables become fixed parameters and aren't exposed to the task group as configurable parameters.
 
 You can also configure task conditions in a task group, such as **Run this task only when a previous task has failed** for a **PowerShell Script** task, and these conditions are persisted with the task group.
+
+> [!NOTE]
+> Task groups are supported in Classic pipelines and Classic release pipelines.
 
 ## Create a task group
 
