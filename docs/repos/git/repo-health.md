@@ -58,6 +58,10 @@ We recommend maintaining a reasonable number of blob files, as mentioned in the 
 
 "Number of reachable trees" shows the total number of reachable [tree](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_tree_objects) objects in the repository.
 
+A large number of tree files can make traversing through history expensive and may slow down several git features, such as `git blame`.
+
+Tree objects grow as the number of directories and files increases. Git needs to create a copy of every tree that leads to a file whenever the file is changed. Therefore, changing only one file multiple times can result in a large number of tree files.
+
 We recommend maintaining a reasonable number of tree objects, as suggested in the section on `Number of reachable objects`. It’s also crucial to allocate some space for objects of other types.
 
 ## Number of reachable commits
