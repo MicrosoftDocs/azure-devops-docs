@@ -103,7 +103,7 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 ### Manage pools and queues
 
-#### [Browser](#tab/browser)
+#### [Azure Pipelines UI](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
@@ -123,7 +123,7 @@ To delete a pool, go to the **Agent pools** list, choose **More options**, **Del
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="azure-devops"
 
 [List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [Show agent queue details](#show-agent-queue-details)
 
