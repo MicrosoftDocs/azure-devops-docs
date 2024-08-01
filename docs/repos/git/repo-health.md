@@ -20,7 +20,7 @@ To keep optimal repository health you can use "Repository health and usage" pane
 
 From your web browser, navigate to the Azure Repos Git repo. Select Repo > Files and then choose "Health and usage" from the ellipsis menu to open the "Repository health and usage" panel.
 
- :::image type="content" source="media/repo-health/ado-repo-health.png" border="true"  alt-text="Screenshot of the Health and usage menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="repo-health/ado-repo-health-lrg.png":::
+ :::image type="content" source="media/repo-health/ado-repo-health.png" border="true"  alt-text="Screenshot of the Health and usage menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="media/repo-health/ado-repo-health-lrg.png":::
 
 The "Repository health and usage" panel shows you factors that t contribute to the health of a repository
 
