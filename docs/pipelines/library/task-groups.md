@@ -13,12 +13,12 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-> [!NOTE]
-> Task groups aren't supported in YAML pipelines. Instead, you can use templates. For more information, see [Templates](../process/templates.md).
-
 In Classic pipelines, a task group encapsulates a sequence of tasks that are already defined in a pipeline into a single reusable task. The new task group is automatically added to the task catalog, and can be added to pipelines in the project just like other tasks. Task groups are stored at the project level, and aren't accessible outside the project scope.
 
 Task groups are a way to standardize and centrally manage deployment steps for all your applications. When you make a change centrally to a task group, the change is automatically reflected in all the pipeline definitions that use the task group. You don't need to change each definition individually.
+
+> [!NOTE]
+> Task groups are not supported in YAML pipelines. Instead, you can use [Templates](../process/templates.md).
 
 ## Prerequisites
 
