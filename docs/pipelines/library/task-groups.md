@@ -1,6 +1,6 @@
 ---
 title: Task groups in Classic pipelines
-description: Understand, create, and manage task groups in Classic build and release pipelines for Azure Pipelines.
+description: Understand, create, and manage task groups in Classic pipelines for Azure Pipelines.
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.topic: how-to
 ms.author: ronai
@@ -9,11 +9,11 @@ ms.date: 07/31/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Task groups in Classic build and release pipelines
+# Task groups in Classic pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains *task groups* in Classic build and release pipelines in Azure Pipelines.
+This article explains the concept of *task groups* in Classic pipelines, and describes how to create, manage, and version task groups.
 
 > [!NOTE]
 > Task groups aren't supported in YAML pipelines. Instead, you can use templates. For more information, see [Templates](../process/templates.md).
@@ -25,13 +25,13 @@ Task groups are a way to standardize and centrally manage deployment steps for a
 ## Prerequisites
 
 - An Azure DevOps organization and project where you have permission to create pipelines.
-- A Classic build or release pipeline created in the project.
+- A Classic release pipeline created in the project.
 
 ## Extract task parameters as variables
 
 When you create a task group, you can choose to extract the parameters from the encapsulated tasks as configuration variables, and abstract the rest of the task information. Variables used in the tasks are automatically extracted and converted into parameters for the task group, and values of these configuration variables are converted into default values for the task group.
 
-You can also change the default values for the parameters when you save the new task group. When you queue a build or a release, the encapsulated tasks are extracted and the values you entered for the task group parameters are applied to the tasks.
+You can also change the default values for the parameters when you save the new task group. When you queue a pipeline or release, the encapsulated tasks are extracted and the values you entered for the task group parameters are applied to the tasks.
 
 Before you create a task group, make sure to define any parameters that you want to be able to configure in pipeline runs as variables, such as **$(MyVariable)**. Any task parameters that have no values or have specified values instead of variables become fixed parameters and aren't exposed to the task group as configurable parameters.
 
@@ -41,7 +41,7 @@ You can also configure task conditions in a task group, such as **Run this task 
 
 When you save a new task group, you provide a name and description and select a category for the task group in the task catalog.
 
-1. Open the build or release pipeline where you want to create a new task group.
+1. Open the release pipeline where you want to create a new task group.
 
 1. To ensure that none of the tasks you intend to include contain any linked parameters, select **Unlink all** in the pipeline settings panel, and then select **Confirm**.
 
@@ -91,7 +91,7 @@ To open the task group details page for editing, select the task group name on t
 
 ## Create preview and updated versions of task groups
 
-All built-in Azure Pipelines tasks are [versioned](../process/tasks.md#task-versions). Versioning allows build and release pipelines to continue using the existing version of a task while new versions are developed, tested, and released. You can version your custom task groups the same way to provide the same advantages.
+All built-in Azure Pipelines tasks are [versioned](../process/tasks.md#task-versions). Versioning allows pipelines to continue using the existing version of a task while new versions are developed, tested, and released. You can version your custom task groups the same way to provide the same advantages.
 
 1. To version a task group, after you finish editing it, select **Save as draft** instead of **Save**.
 
@@ -101,7 +101,7 @@ All built-in Azure Pipelines tasks are [versioned](../process/tasks.md#task-vers
 
    :::image type="content" source="media/publish-preview-task-group.png" alt-text="Screenshot that shows publishing a draft version of a task group.":::
  
-1. You can now use the updated task group in your build and release processes. You can either change the version number in pipelines that already use the task group, or choose the versioned task group from the **Add tasks** pane. As with built-in tasks, the default when you add a task group is the highest non-preview version.
+1. You can now use the updated task group in your release processes. You can either change the version number in pipelines that already use the task group, or choose the versioned task group from the **Add tasks** pane. As with built-in tasks, the default when you add a task group is the highest non-preview version.
 
    :::image type="content" source="media/use-preview-task-group.png" alt-text="Screenshot that shows using a draft version of a task group.":::
 
@@ -109,7 +109,7 @@ All built-in Azure Pipelines tasks are [versioned](../process/tasks.md#task-vers
 
    :::image type="content" source="media/publish-version-task-group.png" alt-text="Screenshot that shows publishing a preview version of a task group.":::
 
-1. You can now select the new production-ready version in a build or release pipeline that already contains the task group. When you add the task group from the **Add tasks** panel, it automatically selects the new production-ready version. You can edit the pipeline to use an earlier version.
+1. You can now select the new production-ready version in a pipeline that already contains the task group. When you add the task group from the **Add tasks** panel, it automatically selects the new production-ready version. You can edit the pipeline to use an earlier version.
 
    :::image type="content" source="media/use-version-task-group.png" alt-text="Screenshot that shows using an updated version of a task group.":::
 
