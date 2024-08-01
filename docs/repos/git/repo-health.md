@@ -16,13 +16,25 @@ At Azure DevOps, our goal is to provide an excellent quality of service for all 
 
 To promote this goal, we actively monitor various factors that contribute to the health of a repository. These factors include size, commit frequency, contents, structure, and more. If your repository excessively impacts our infrastructure, you might receive an email from our support team asking you to take corrective action. By effectively managing your repository’s size and overall health, you can prevent it from negatively impacting our infrastructure and performance.
 
+To keep optimal repository health you can use "Repository health and usage" panel.
+
+From your web browser, navigate to the Azure Repos Git repo. Select Repo > Files and then choose "Health and usage" from the ellipsis menu to open the "Repository health and usage" panel.
+
+ :::image type="content" source="media/repo-health/ado-repo-health.png" border="true"  alt-text="Screenshot of the Health and usage menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="repo-health/ado-repo-health-lrg.png":::
+
+The "Repository health and usage" panel shows you factors that t contribute to the health of a repository
+
+ :::image type="content" source="media/repo-health/repo-health-panel.png" border="true"  alt-text="Screenshot of the Repository health and usage" lightbox="media/repo-health/repo-health-panel-lrg.png":::
+
+Factors that are considered unhealthy will be highlighted in red, while factors that are close to being unhealthy will be highlighted in amber.
+
 On this page are descriptions and advice for some of the common metrics.
 
 ## Overall reachable repository size
 
 This parameter shows how much space the repository consumes on the disk.
 
-We recommend keeping your repository size under 10 GB for optimal performance. Smaller repositories are quicker to clone and easier to manage and maintain. If your repository exceeds this size, consider using [Git-LFS](https://git-lfs.com/), [Scalar](https://git-scm.com/docs/scalar), or [Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts) to refactor your development artifacts.
+We recommend keeping your repository size under 100 GB for optimal performance. Smaller repositories are quicker to clone and easier to manage and maintain. If your repository exceeds this size, consider using [Git-LFS](https://git-lfs.com/), [Scalar](https://git-scm.com/docs/scalar), or [Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts) to refactor your development artifacts.
 
 ## Number of reachable objects
 
