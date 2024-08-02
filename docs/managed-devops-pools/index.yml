@@ -50,7 +50,7 @@ landingContent:
           - text: Configure security settings
             url: configure-security.md
           - text: Configure Identity
-            url: index.yml
+            url: configure-identity.md
   - title: Key concepts
     linkLists:
       - linkListType: concept
