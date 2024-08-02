@@ -116,7 +116,7 @@ For the complete command reference, see [az pipelines delete](/cli/azure/pipelin
 
 ## Programmatically create and configure pipelines
 
-To use the Azure DevOps CLI to create a YAML pipeline, see [az pipelines create](/cli/azure/pipelines?view=azure-cli-latest&branch=main#az-pipelines-create). To run Azure CLI commands in YAML pipelines, see [Azure DevOps CLI in Azure Pipelines YAML](/azure/devops/cli/azure-devops-cli-in-yaml).
+To use the Azure DevOps CLI to create a YAML pipeline, see [az pipelines create](/cli/azure/pipelines#az-pipelines-create). To run Azure CLI commands in YAML pipelines, see [Azure DevOps CLI in Azure Pipelines YAML](/azure/devops/cli/azure-devops-cli-in-yaml).
 
 You can create YAML pipelines to build, configure, test, and deploy apps in the language of your choice. For more information, see the following articles:
 s
