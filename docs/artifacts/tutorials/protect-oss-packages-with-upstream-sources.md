@@ -39,8 +39,8 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-
-
+> [!NOTE]
+> To add a feed from a different organization as an upstream source, the target feed administrator must grant you **Collaborator** or higher permissions.
 ## Set up the configuration file
 
 Now that we created our feed, we need to update the config file to point to our feed. To do this we must:
