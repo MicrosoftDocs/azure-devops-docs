@@ -89,6 +89,9 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
     :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
 
+> [!NOTE]
+> To add a feed from a different organization as an upstream source, the target feed administrator must grant you **Collaborator** or higher permissions.
+
 ## Examples
 
 # [NuGet](#tab/nuget)
