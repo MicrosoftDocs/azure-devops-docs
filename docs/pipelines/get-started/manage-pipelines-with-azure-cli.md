@@ -1,6 +1,6 @@
 ---
 title: Manage pipelines with the Azure DevOps CLI
-description: Learn about the Azure DevOps CLI extension and about the az pipelines list, show, run, and update commants for managing your pipelines.
+description: Learn about the Azure DevOps CLI extension and about the az pipelines list, show, run, and update commands for managing your pipelines.
 ms.topic: conceptual
 ms.custom: devx-track-azurecli
 ms.author: sandrica
@@ -19,7 +19,7 @@ This article describes how you can manage existing pipelines in your Azure DevOp
 - [az pipelines show](/cli/azure/pipelines#az-pipelines-show) to show the details of a pipeline
 - [az pipelines run](/cli/azure/pipelines#az-pipelines-run) to run a pipeline
 - [az pipelines update](/cli/azure/pipelines#az-pipelines-update) to update a pipeline
-- [az pipelines delete](/cli/azure/pipelines#az-pipelines-delete0 to delete a pipeline
+- [az pipelines delete](/cli/azure/pipelines#az-pipelines-delete) to delete a pipeline
 
 >[!NOTE]
 >The Azure DevOps CLI extension is available only for Azure DevOps Services, and doesn't support any version of Azure DevOps Server.
@@ -38,7 +38,7 @@ If you don't detect the organization or configure a default organization or proj
 
 The `run`, `show`, `update`, and `delete` pipeline commands require either the `name` or `id` of the pipeline you want to manage. If you use `id`, the `name` parameter is ignored. To get a list of project pipelines, including their IDs, use the [az pipelines list](/cli/azure/pipelines#ext-azure-devops-az-pipelines-list) command. You can filter or format the results list by using parameters.
 
-For example, the following command lists the IDs for project pipelines that have names beginning with `python*`, in table format.
+For example, the following command lists the project pipelines that have names beginning with `python*`, in table format.
 
 ```azurecli
 az pipelines list --name python* --output table
@@ -53,16 +53,13 @@ ID    Path    Name                        Status    Default Queue
 24    \       python-sample-get-started   enabled   Azure Pipelines
 ```
 
+<a name="show-pipeline"></a>
 ## Show details for a pipeline
 
 To view the details of an existing pipeline, use the [az pipelines show](/cli/azure/pipelines#ext-azure-devops-az-pipelines-show) command. For example, the following command shows the details of the pipeline with the `ID` of `12`, and opens the pipeline summary page in your web browser.
 
 ```azurecli 
 az pipelines show --id 12 --open
-
-ID    Name                        Status    Default Queue
-----  --------------------------  --------  ------------------
-12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
 ```
 
 ## Run a pipeline
@@ -109,15 +106,6 @@ az pipelines delete --id 12 --yes
 
 ## Programmatically create and configure pipelines
 
-You can use pipelines to build, configure, test, and deploy apps in the language of your choice. For more information, see the following articles:
-
-- [Build, test, and deploy .NET Core apps](../ecosystems/dotnet-core.md)
-- [Build and test Go projects](../ecosystems/go.md)
-- [Build Java apps](../ecosystems/java.md)
-- [Build and publish a Node.js package](../ecosystems/javascript.md)
-- [Build and publish a Python app](../ecosystems/python.md)
-- [Build a container image to deploy apps](../ecosystems/containers/build-image.md)
-
 You can build custom applications or services that integrate with Azure DevOps by using the REST APIs to make direct HTTP calls. For more information, see the [Azure DevOps Services REST API Reference](/rest/api/azure/devops). You can also use the [client libraries](/rest/api/azure/devops#client-libraries) for these APIs.
 
 ### Skip a stage in a pipeline run
@@ -133,9 +121,20 @@ az rest --method post `
     --resource 499b84ac-1321-427f-aa17-267ca6975798
 ```
 
+## Next steps
+
+You can use Azure Pipelines to build, configure, test, and deploy apps in the language of your choice. For more information, see the following articles:
+
+- [Build, test, and deploy .NET Core apps](../ecosystems/dotnet-core.md)
+- [Build and test Go projects](../ecosystems/go.md)
+- [Build Java apps](../ecosystems/java.md)
+- [Build and publish a Node.js package](../ecosystems/javascript.md)
+- [Build and publish a Python app](../ecosystems/python.md)
+- [Build a container image to deploy apps](../ecosystems/containers/build-image.md)
+- [Customize your pipeline](../customize-pipeline.md)
+
 ## Related content
 
 - [Get started with Azure DevOps CLI](../../cli/index.md)
 - [Specify events that trigger pipelines](../build/triggers.md)
 - [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
-- [Customize your pipeline](../customize-pipeline.md)

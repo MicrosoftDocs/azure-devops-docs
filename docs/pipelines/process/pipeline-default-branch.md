@@ -4,7 +4,7 @@ description: See how to configure a pipeline's default branch in Azure Pipelines
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 07/31/2024
+ms.date: 08/01/2024
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
@@ -29,7 +29,7 @@ To view and update the **Default branch for manual and scheduled builds** settin
 
 1. Select **YAML** > **Get sources**, and view the **Default branch for manual and scheduled builds** setting.
 
-1. To change the branch, select the **Browse** icon next to the branch name, select a different branch name, and select **Select**. Then select **Save** or **Save & queue** on the triggers page.
+1. To change the branch, select the **Browse** icon next to the branch name, select a different branch name, and select **Select**. Then select **Save** or **Save & queue** on the pipeline page.
 
    :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Screenshot that shows the Default branch for manual and scheduled builds setting."::: 
 
