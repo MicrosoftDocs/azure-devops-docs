@@ -134,7 +134,7 @@ You can build custom applications or services that integrate with Azure DevOps b
 
 ### Skip a stage in a pipeline run
 
-You can use the `az rest` command with the [Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API to skip a stage in a pipeline run, using the `stagesToSkip` parameter.
+You can use the [az rest](/cli/azure/use-azure-cli-rest-command) command with the [Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API to skip a stage in a pipeline run, using the `stagesToSkip` parameter.
 
 For example:
 
@@ -144,6 +144,8 @@ az rest --method post `
     --body "{'stagesToSkip': [''], 'resources': {'repositories': {'self': {'refName': 'refs/heads/{branch}'}}}}" `
     --resource 499b84ac-1321-427f-aa17-267ca6975798
 ```
+
+For more information, see [Use the Azure REST API with Azure CLI](/cli/azure/use-azure-cli-rest-command).
 
 ## Related content
 
