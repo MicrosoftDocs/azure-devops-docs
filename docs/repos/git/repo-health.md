@@ -22,7 +22,7 @@ From your web browser, navigate to the Azure Repos Git repo. Select Repo > Files
 
  :::image type="content" source="media/repo-health/ado-repo-health.png" border="true"  alt-text="Screenshot of the Health and usage menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="media/repo-health/ado-repo-health-lrg.png":::
 
-The "Repository health and usage" panel shows you factors that t contribute to the health of a repository
+The "Repository health and usage" panel shows you factors that contribute to the health of a repository
 
  :::image type="content" source="media/repo-health/repo-health-panel.png" border="true"  alt-text="Screenshot of the Repository health and usage" lightbox="media/repo-health/repo-health-panel-lrg.png":::
 
@@ -40,7 +40,7 @@ We recommend keeping your repository size under 100 GB for optimal performance. 
 
 This parameter indicates the number of objects in the repository, which are accessible from any reference or tag. Objects include not only files (blobs), but also directories, commits, and tags. More details [Git-Internals-Git-Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects). 
 
-The greater the number of objects, the longer Git takes to traverse the repository’s history affecting time to display the history of commits, and other objects. Additionally ADO's implementation has a hard limit object limit.  Azure Repos can't contain more than 10 million objects in a single repository.
+The greater the number of objects, the longer Git takes to traverse the repository’s history affecting time to display the history of commits, and other objects. Additionally ADO's implementation has a hard limit object limit.  Azure Repos can't contain more than 100 million objects in a single repository.
 
 ## Number of refs
 
@@ -91,22 +91,22 @@ Storing such files in Git isn't advised. Different versions of such files don’
 
 "Size of reachable blobs" parameter displays the total size of blobs on a disk in gigabytes.
 
-As per the "Overall reachable repository size" section, it’s advisable to keep it less than 10 GB and leave some space for objects of other types.
+As per the "Overall reachable repository size" section, it’s advisable to keep it less than 100 GB and leave some space for objects of other types.
 
 ## Size of reachable trees
 
 "Size of reachable trees" parameter shows total size of tree objects on a disk in gigabytes.
 
-As per the "Overall reachable repository size" section, it’s advisable to keep it less than 10 GB and leave some space for objects of other types.
+As per the "Overall reachable repository size" section, it’s advisable to keep it less than 100 GB and leave some space for objects of other types.
 
 ## Size of reachable commits
 
 "Size of reachable commits" parameter shows total size of commit objects on a disk in megabytes.
 
-As per the "Overall reachable repository size" section, it’s advisable to keep it less than 10 GB and leave some space for objects of other types.
+As per the "Overall reachable repository size" section, it’s advisable to keep it less than 100 GB and leave some space for objects of other types.
 
 ## Size of reachable tags
 
 "Size of reachable tags" parameter shows total size of tag objects on a disk in megabytes.
 
-As per the "Overall reachable repository size" section, it’s advisable to keep it less than 10 GB and leave some space for objects of other types.
+As per the "Overall reachable repository size" section, it’s advisable to keep it less than 100 GB and leave some space for objects of other types.
