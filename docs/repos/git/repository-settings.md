@@ -407,6 +407,8 @@ The following table summarizes the policies you can define to customize a branch
 
 ::: moniker range=">= azure-devops-2020"
 - To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+::: moniker-end
+::: moniker range="azure-devops"
 - If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
  
@@ -474,10 +476,10 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker range="azure-devops" 
 
-You can use Azure DevOps CLI to list respositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
+You can use Azure DevOps CLI to list repositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
 
 [List repositories](#repos-list) &#124; [List repository details](#repos-show) &#124; [Update or rename a repository](#repos-update)  
-[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update respository policy](#update-policy)
+[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update repository policy](#update-policy)
 
 
 You can use Azure CLI to list, show, and update policies for a branch or repository, or for all repositories in a project.
