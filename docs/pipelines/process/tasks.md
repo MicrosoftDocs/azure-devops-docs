@@ -335,17 +335,17 @@ Select this check box if you want the task to run even if the build or deploymen
 
 
 
-:::moniker range=">= azure-devops-2019"
-
 Each task has an `env` property that is a list of string pairs that represent environment variables mapped into the task process.
 
+:::moniker range="azure-devops"
+
 ```yml
-task: AzureCLI@2
-displayName: Azure CLI
-inputs: # Specific to each task
-env:
-  ENV_VARIABLE_NAME: value
-  ENV_VARIABLE_NAME2: value
+- task: AzureCLI@2
+  displayName: Azure CLI
+  inputs: # Specific to each task
+  env:
+    ENV_VARIABLE_NAME: value
+    ENV_VARIABLE_NAME2: value
   ...
 ```
 
@@ -369,6 +369,38 @@ The following example runs the `script` step, which is a shortcut for the [Comma
 ```
 
 :::moniker-end
+
+::: moniker range="< azure-devops"
+
+```yml
+- task: Bash@3
+  inputs:
+     targetType: # specific to each task
+  env:
+    ENV_VARIABLE_NAME: value
+    ENV_VARIABLE_NAME2: value
+  ...
+```
+
+The following example runs the `script` step, which is a shortcut for the [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3), followed by the equivalent task syntax. This example assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
+
+```yml
+# Using the script shortcut syntax
+- script: echo "This is " $ENV_VARIABLE_NAME
+  env:
+    ENV_VARIABLE_NAME: "my value"
+  displayName: 'echo environment variable'
+
+# Using the task syntax
+- task: Bash@2
+  inputs:
+    script: echo "This is " $ENV_VARIABLE_NAME
+  env:
+    ENV_VARIABLE_NAME: "my value"
+  displayName: 'echo environment variable'
+```
+
+::: moniker-end
 
 
 #### [Classic](#tab/classic/)
