@@ -548,7 +548,7 @@ To mark items as completed by checking the boxes, you need to manually edit the 
 
 ## Emoji
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support [most emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support [*most* emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
 **Example:**
 
