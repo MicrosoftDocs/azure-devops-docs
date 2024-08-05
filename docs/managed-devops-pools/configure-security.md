@@ -204,10 +204,6 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
 
 * * *
 
-* **Creator only** - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **Off** in the agent pool security settings. **Creator only** is the default setting.
-* **Inherit permissions from project** - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **On** in the agent pool security settings.
-* **Specific accounts** - Specify the accounts to be added as administrators of the created agent pool in Azure DevOps. By default the Managed DevOps Pool creator is added to the list.
-
 
 ## See also
 
