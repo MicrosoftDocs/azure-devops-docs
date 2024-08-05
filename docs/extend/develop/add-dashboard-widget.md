@@ -25,9 +25,9 @@ This article is divided into three parts, each building on the previous - beginn
 ## Prerequisites
 
 - **Knowledge:** Some knowledge of JavaScript, HTML, CSS is required for widget development.
-- An **organization** in Azure DevOps for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
-- **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
-- The latest version of **node**, which can be downloaded [here](https://nodejs.org/download/)
+- An **organization** in Azure DevOps.
+- A **text editor**. For many of the tutorials, we use [Visual Studio Code](https://code.visualstudio.com/).
+- The [latest version of **node**](https://nodejs.org/download/).
 - **Cross-platform CLI for Azure DevOps (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A home directory for your project. This directory is referred to as `home` throughout the tutorial.
@@ -48,15 +48,15 @@ This article is divided into three parts, each building on the previous - beginn
 
 ## In this tutorial
 
-1. [Part 1](#part-1-hello-world) of this guide shows you how to create a new widget, which prints a simple "Hello World" message. 
-2. [Part 2](#part-2) builds on the first one by adding a call to an Azure DevOps REST API. 
-3. [Part 3](#part-3) explains how to add configuration to your widget. 
+1. [Part 1](#part-1-hello-world): Shows you how to create a new widget, which prints a simple "Hello World" message. 
+2. [Part 2](#part-2): Builds on the first part by adding a call to an Azure DevOps REST API. 
+3. [Part 3](#part-3): Explains how to add configuration to your widget. 
 
 > [!NOTE]   
 > If you're in a hurry and want to get your hands on the code right away, you can download the [samples](https://github.com/Microsoft/azure-devops-extension-sample). 
 > Once downloaded, go to the `widgets` folder, then follow [Step 6](#package-publish-share) and [Step 7](#add-from-catalog) directly to publish the sample extension which has the three sample widgets of varying complexities.
 
-Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out of the box and some guidance on widget structure.
+Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out- of-the-box and some guidance on widget structure.
 
 <a id="part-1"></a>
 
@@ -79,7 +79,7 @@ npm install vss-web-extension-sdk
 
 For more information, see the [Client SDK GitHub page](https://github.com/Microsoft/vss-sdk).
 
-### Step 2: Your HTML page - `hello-world.html`
+### Step 2: Set up your HTML page - `hello-world.html`
 
 Your HTML page is the glue that holds your layout together and includes references to CSS and JavaScript. You can name this file anything. Update all references to `hello-world` with the name you use.
 
@@ -100,11 +100,11 @@ Add the following HTML in `hello-world.html`. We add the mandatory reference to 
 </html>
 ```
 
-> Even though we are using an HTML file, most of the HTML head elements other than script and link are ignored by the framework.
+Even though we're using an HTML file, most of the HTML head elements other than script and link are ignored by the framework.
 
 <a name="widget-javascript"></a>
 
-### Step 3: Your JavaScript
+### Step 3: Update JavaScript
 
 We use JavaScript to render content in the widget. In this article, we wrap all of our JavaScript code inside a `&lt;script&gt;` element in the HTML file. You can choose to have this code in a separate JavaScript file and refer it in the HTML file.
 The code renders the content. This JavaScript code also initializes the VSS SDK, maps the code for your widget to your widget name, and notifies the extension framework of widget successes or failures.
@@ -136,33 +136,20 @@ In our case, the following code prints "Hello World" in the widget. Add this `sc
 
 <a name="vss-methods"></a>
 
-`VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
-We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when it's done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded.
-We pass `usePlatformStyles: true` so that the widget can use Azure DevOps core styles for HTML elements (such as body, div, and so on). If the widget prefers to not use these styles, they can pass in `usePlatformStyles: false`.
-
-`VSS.require` is used to load the required VSS script libraries. A call to this method automatically loads general libraries like [JQuery](https://jquery.com/)  and [JQueryUI](https://jqueryui.com/). 
-In our case, we depend on the WidgetHelpers library, which is used to communicate widget status to the widget framework.
-So, we pass the corresponding module name `TFS/Dashboards/WidgetHelpers` and a callback to `VSS.require`.
-The callback is called once the module is loaded.
-The callback has the rest of the JavaScript code needed for the widget. At the end of the callback, we call `VSS.notifyLoadSucceeded` to notify load completion.
-
-`WidgetHelpers.IncludeWidgetStyles` includes a stylesheet with some [basic css](./styles-from-widget-sdk.md) to get you started. To make use of these styles, wrap your content inside an HTML element with class `widget`.
-
-`VSS.register` is used to map a function in JavaScript, which uniquely identifies the widget among the different contributions in your extension. The name should match the `id` that identifies your contribution as described in [Step 5](#widget-extension-manifest). For widgets, the function that is passed to `VSS.register` should return an object that satisfies the `IWidget` contract,
-for example, the returned object should have a load property whose value is another function that has the core logic to render the widget. 
-In our case, it's to update the text of the `h2` element to "Hello World."
-It's this function that is called when the widget framework instantiates your widget.
-We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` as success.
-
+- `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
+- We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when it's done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded. We pass `usePlatformStyles: true` so that the widget can use Azure DevOps core styles for HTML elements (such as body, div, and so on). If the widget prefers to not use these styles, they can pass in `usePlatformStyles: false`.
+- `VSS.require` is used to load the required VSS script libraries. A call to this method automatically loads general libraries like [JQuery](https://jquery.com/)  and [JQueryUI](https://jqueryui.com/). In our case, we depend on the WidgetHelpers library, which is used to communicate widget status to the widget framework. So, we pass the corresponding module name `TFS/Dashboards/WidgetHelpers` and a callback to `VSS.require`. The callback is called once the module is loaded. The callback has the rest of the JavaScript code needed for the widget. At the end of the callback, we call `VSS.notifyLoadSucceeded` to notify load completion.
+- `WidgetHelpers.IncludeWidgetStyles` includes a stylesheet with some [basic css](./styles-from-widget-sdk.md) to get you started. To make use of these styles, wrap your content inside an HTML element with class `widget`.
+- `VSS.register` is used to map a function in JavaScript, which uniquely identifies the widget among the different contributions in your extension. The name should match the `id` that identifies your contribution as described in [Step 5](#widget-extension-manifest). For widgets, the function that is passed to `VSS.register` should return an object that satisfies the `IWidget` contract, for example, the returned object should have a load property whose value is another function that has the core logic to render the widget. In our case, it's to update the text of the `h2` element to "Hello World." It's this function that is called when the widget framework instantiates your widget. We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` as success.
 
 > [!WARNING]
 > If the name used to register the widget doesn't match the ID for the contribution in the manifest, then the widget functions unexpectedly.
 
-The `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
+- `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
 
 <a id="image"></a>
 
-### Step 4: Your extension logo: `logo.png`
+### Step 4: Update your extension logo: `logo.png`
 
 Your logo is displayed in the Marketplace and in the widget catalog once a user installs your extension.
 
@@ -170,13 +157,13 @@ You need a 98 px x 98-px catalog icon. Choose an image, name it `logo.png`, and 
 
 You can name these images however you want as long as the extension manifest in the next step is updated with the names you use.
 
-### Step 5: Your extension manifest: `vss-extension.json`
+### Step 5: Create your extension manifest: `vss-extension.json`
 
-* ***Every*** extension must have an extension manifest file
-* Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in [Extensibility points](../reference/targets/overview.md)
+***Every*** extension must have an extension manifest file.
 
-Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
+* Read the [extension manifest reference](./manifest.md).
+* Find out more about the contribution points in [Extensibility points](../reference/targets/overview.md).
+* Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
 ```json
 {
@@ -287,7 +274,7 @@ You can install or update the Cross-platform CLI for Azure DevOps (tfx-cli) usin
 npm i -g tfx-cli
 ```
 
-<a name="package-the-extension"/>
+<a id="package-the-extension"></a>
 
 #### Package your extension
 
@@ -297,9 +284,9 @@ Packaging your extension into a .vsix file is effortless once you have the tfx-c
 tfx extension create --manifest-globs vss-extension.json
 ```
 
->[!NOTE]
+> [!NOTE]
 > An extension/integration version must be incremented on every update. <br>
-> When updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This increments the *patch* version number of your extension and save the new version to your manifest.
+> When you update an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This increments the *patch* version number of your extension and save the new version to your manifest.
 
 After you package your extension in a .vsix file, you're ready to publish your extension to the Marketplace.
 
@@ -319,13 +306,13 @@ Now your publisher is defined. In a future release, you can grant permissions to
 
 Publishing extensions under a common publisher simplifies the process for teams and organizations, offering a more secure approach. This method eliminates the need to distribute a single set of credentials among multiple users, enhancing security and
 
-**Update the `vss-extension.json` manifest file in the samples to replace the dummy publisher ID `fabrikam` with your publisher ID.**
+Update the `vss-extension.json` manifest file in the samples to replace the dummy publisher ID `fabrikam` with your publisher ID.
 
 #### Publish and share the extension
 
 Now, you can now upload your extension to the Marketplace.
 
-1. Select **Upload new extension**, go to your packaged .vsix file, and select **Upload**.
+Select **Upload new extension**, go to your packaged .vsix file, and select **Upload**.
 
 You can also upload your extension via the command line by using the ```tfx extension publish``` command instead of ```tfx extension create``` to package and publish your extension in one step.
 You can optionally use ```--share-with``` to share your extension with one or more accounts after publishing.
@@ -357,7 +344,7 @@ In the following example, we use the REST API for WorkItemTracking to fetch info
 
 <a id="step-1-files"></a>
 
-### Step 1: HTML 
+### Step 1: Add HTML file
 
 Copy the file `hello-world.html` from the previous example, and rename the copy to `hello-world2.html`. Your folder now looks like the following example:
 
@@ -443,7 +430,7 @@ To include other properties, you should list them explicitly, for example:
 ```
 
 > [!WARNING]  
-> Adding or changing scopes after publishing an extension is currently not supported. If you already uploaded your extension, remove it from the Marketplace. Go to ![Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher), right-click your extension and select &quot;Remove&quot;.
+> Adding or changing scopes after publishing an extension is currently not supported. If you already uploaded your extension, remove it from the Marketplace. Go to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher), right-select your extension and select **Remove**.
 
 ### Step 3: Make the REST API Call 
 
@@ -497,9 +484,9 @@ VSS.require(["AzureDevOps/Dashboards/WidgetHelpers", "AzureDevOps/WorkItemTracki
 Notice the use of the Failure method from `WidgetStatusHelper`. 
 It allows you to indicate to the widget framework that an error occurred and take advantage to the standard error experience provided to all widgets.
 
-> If you do not have the `Feedback` query under the `Shared Queries` folder, then replace `Shared Queries\Feedback` in the code with the path of a query that exists in your project.
+If you don't have the `Feedback` query under the `Shared Queries` folder, then replace `Shared Queries\Feedback` in the code with the path of a query that exists in your project.
 
-### Step 4: Display the Response
+### Step 4: Display the response
 
 The last step is to render the query information inside the widget. 
 The `getQuery` function returns an object of type `Contracts.QueryHierarchyItem` inside a promise.
@@ -587,7 +574,7 @@ Your final `hello-world2.html` is like the following example:
 
 <a id="widget-extension-manifest"></a>
 
-### Step 5: Extension Manifest Updates
+### Step 5: Update extension manifest
 
 In this step, we update the extension manifest to include an entry for our second widget.
 Add a new contribution to the array in the `contributions` property and add the new file `hello-world2.html` to the array in the files property.
@@ -656,7 +643,7 @@ To add it to your dashboard, choose your widget and select **Add**.
 
 <a id="part-3"></a>
 
-## Part 3: Hello World with configuration
+## Part 3: Configure Hello World
 
 In [Part 2](#part-2) of this guide, you saw how to create a widget that shows query information for a hard-coded query. 
 In this part, we add the ability to configure the query to be used instead of the hard-coded one.
@@ -664,7 +651,7 @@ When in configuration mode, the user gets to see a live preview of the widget ba
 
 ![Screenshot of Overview dashboard live preview of the widget based on changes.](../media/add-dashboard-widget/sampleConfiguration.png)
 
-### Step 1: HTML
+### Step 1: Add HTML file
 
 Implementations of Widgets and Widget Configurations are a lot alike. Both are implemented in the extension framework as contributions. Both use the same SDK file, `VSS.SDK.min.js`. Both are based on HTML, JavaScript, and CSS.
 
@@ -686,7 +673,6 @@ Your folder now looks like the following example:
 |--- hello-world3.html              // renamed copy of hello-world2.html
 |--- vss-extension.json             // extension's manifest
 ```
-
 
 Add the following HTML in `configuration.html`. We basically add the mandatory reference to the `VSS.SDK.min.js` file and a `select` element for the dropdown to select a query from a preset list.
 
@@ -712,7 +698,7 @@ Add the following HTML in `configuration.html`. We basically add the mandatory r
     </html>
 ```
 
-### Step 2: JavaScript - Configuration
+### Step 2: Configure JavaScript
 
 Use JavaScript to render content in the widget configuration just like we did for the widget in [Step 3](#widget-javascript) of Part 1 in this guide.
 This JavaScript code renders content, initializes the VSS SDK, maps the code for your widget configuration to the configuration name, 
@@ -754,17 +740,9 @@ Open the file `configuration.html` and the following `<script>` element to the `
 </script>
 ```
 
-`VSS.init`, `VSS.require`, and `VSS.register` play the same role they played for the widget as described in [Part 1](#vss-methods).
-The only difference is that for widget configurations, the function that is passed to `VSS.register` should return an object that satisfies the `IWidgetConfiguration` contract.
-
-The `load` property of the `IWidgetConfiguration` contract should have a function as its value.
-This function has the set of steps to render the widget configuration. 
-In our case, it's to update the selected value of the dropdown element with existing settings if any.
-This function gets called when the framework instantiates your `widget configuration`
-
-The `onSave` property of the `IWidgetConfiguration` contract should have a function as its value.
-This function gets called by the framework when the user selects **Save** in the configuration pane.
-If the user input is ready to save, then serialize it to a string, form the `custom settings` object and use `WidgetConfigurationSave.Valid()` to save the user input.
+- `VSS.init`, `VSS.require`, and `VSS.register` play the same role they played for the widget as described in [Part 1](#vss-methods). The only difference is that for widget configurations, the function that is passed to `VSS.register` should return an object that satisfies the `IWidgetConfiguration` contract.
+- The `load` property of the `IWidgetConfiguration` contract should have a function as its value. This function has the set of steps to render the widget configuration. In our case, it's to update the selected value of the dropdown element with existing settings if any. This function gets called when the framework instantiates your `widget configuration`
+- The `onSave` property of the `IWidgetConfiguration` contract should have a function as its value. This function gets called by the framework when the user selects **Save** in the configuration pane. If the user input is ready to save, then serialize it to a string, form the `custom settings` object and use `WidgetConfigurationSave.Valid()` to save the user input.
 
 In this guide, we use JSON to serialize the user input into a string. You can choose any other way to serialize the user input to string. 
 It's accessible to the widget via the customSettings property of the `WidgetSettings` object.
@@ -855,7 +833,7 @@ At the end, your `configuration.html` looks like the following example:
 
 <a id="reload-widget"></a>
 
-### Step 4: JavaScript - Implement reload in the widget
+### Step 4: Implement reload in the widget - Javascript
 
 We set up widget configuration to store the query path selected by the user.
 We now have to update the code in the widget to use this stored configuration instead of the hard-coded `Shared Queries/Feedback` from the previous example.
@@ -899,12 +877,12 @@ if (!settings || !settings.queryPath) {
 ```
 At this point, your widget is ready to render with the configured settings.
 
-> Both the `load` and the `reload` properties have a similar function. This is the case for most simple widgets.
+Both the `load` and the `reload` properties have a similar function. This is the case for most simple widgets.
 For complex widgets, there would be certain operations that you would want to run just once no matter how many times the configuration changes.
 Or there might be some heavy-weight operations that need not run more than once. Such operations would be part of the function corresponding to the `load` property and not the `reload` property.
 
+### Step 5: Update extension manifest
 
-### Step 5: Extension Manifest Updates
 Open the `vss-extension.json` file to include two new entries to the array in the `contributions` property. One for the `HelloWorldWidget3` widget and the other for its configuration.
 You need yet another preview image for the third widget. Name this `preview3.png` and place it in the `img` folder.
 Update the array in the `files` property to include the two new HTML files we added in this example.
@@ -1009,9 +987,9 @@ The live preview shows the updated results.
 Select **Save** and your widget displays the updated results.
 
 
-### Step 8: Configure More (optional)
+### Step 8: Configure more (optional)
 You can add as many HTML form elements as you need in the `configuration.html` for more configuration.
-There are two configurable features that are available out of the box: widget name and widget size.
+There are two configurable features available out-of-the-box: Widget name and widget size.
 
 By default, the name that you provide for your widget in the extension manifest is stored as the widget name for every instance of your widget that ever gets added to a dashboard.
 You can allow users to configure, so that they can add any name they want to their instance of your widget.
@@ -1061,7 +1039,7 @@ Open the configuration mode for your widget, you should now be able to see the o
 
 ![Screenshot showing Widget where name and size can be configured.](../media/add-dashboard-widget/sampleConfigureNameAndSize.png)
 
-Go ahead and choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
+Choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
 
 Changing the name of the widget doesn't result in any visible change in the widget because our sample widgets don't display the widget name anywhere. Let us modify the sample code to display the widget name instead of the hard-coded text "Hello World."
 
@@ -1089,5 +1067,7 @@ return {
 }
 ```
 
-[Repackage](#package-the-extension) and [update](../publish/overview.md) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
+[Repackage](#package-the-extension) and [update](../publish/overview.md) your extension again. Refresh the dashboard that has this widget. 
+
+Any changes to the widget name, in the configuration mode, update the widget title now.
 
