@@ -10,20 +10,22 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= azure-devops-2020'
-ms.date: 02/26/2024
+ms.date: 08/05/2024
 ---
 
 # Add comments to wiki pages
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Learn how to add comments to wiki pages for better collaboration.
+Learn how to add comments to wiki pages to enhance collaboration among team members.
 
 ## Add a comment
 
 You can add a comment at the bottom of any wiki page. Comments get posted on a per-branch basis. For example, if you make a comment on a wiki page on the main branch, it doesn't appear in another published branch of a file of the same name. Comments are stored on the internal database. For more information, see [Data locations for Azure DevOps](../../organizations/security/data-location.md).
 
 ![Screenshot of Created comment on wiki page.](media/wiki/add-wiki-comment.png)
+
+When a user reacts to a comment on a wiki, an email notification gets sent to the commenter and optionally the followers. When a user adds a comment on a wiki, an email notification gets sent to all followers of the wiki regardless of who is tagged in the comment.
 
 ## View Markdown and preview tabs
 
