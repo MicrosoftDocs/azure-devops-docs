@@ -62,6 +62,9 @@ A large number of tree files can make traversing through history expensive and m
 
 Tree objects grow as the number of directories and files increases. Git needs to create a copy of every tree that leads to a file whenever the file is changed. Therefore, changing only one file multiple times can result in a large number of tree files.
 
+>[!NOTE]
+>Distributing files across multiple directories and subdirectories is preferable to having a single directory with numerous direct entries.
+
 We recommend maintaining a reasonable number of tree objects, as suggested in the section on `Number of reachable objects`. It’s also crucial to allocate some space for objects of other types.
 
 ## Number of reachable commits
