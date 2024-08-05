@@ -192,7 +192,7 @@ sections:
           1. Note the row number that appears in the dialog box.    
           2. Close the **Work Item Publishing Errors** dialog box.    
           3. Find the row that the error message specified. The misplaced title might be in this row, or it might be in the next row.  
-          4. To fix the invalid link, move the title to the correct column .  
+          4. To fix the invalid link, move the title to the correct column.  
           5. On the **Team** tab, in the **Work Items** group, choose **Publish**.
 
           **Error message TF208017: Missing Title 1 in the first row**  

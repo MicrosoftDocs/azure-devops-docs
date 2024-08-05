@@ -382,7 +382,7 @@ The following example runs the `script` step, which is a shortcut for the [Comma
   ...
 ```
 
-The following example runs the `script` step, which is a shortcut for the [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3), followed by the equivalent task syntax. This example assigns a value to the `ENV_VARIABLE_NAME` environment variable and echos the value.
+The following example runs the `script` step, which is a shortcut for the [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3), followed by the equivalent task syntax. This example assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
 
 ```yml
 # Using the script shortcut syntax

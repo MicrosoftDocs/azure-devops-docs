@@ -476,10 +476,10 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker range="azure-devops" 
 
-You can use Azure DevOps CLI to list respositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
+You can use Azure DevOps CLI to list repositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
 
 [List repositories](#repos-list) &#124; [List repository details](#repos-show) &#124; [Update or rename a repository](#repos-update)  
-[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update respository policy](#update-policy)
+[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update repository policy](#update-policy)
 
 
 You can use Azure CLI to list, show, and update policies for a branch or repository, or for all repositories in a project.
