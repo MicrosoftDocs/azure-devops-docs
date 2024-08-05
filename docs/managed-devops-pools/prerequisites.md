@@ -64,7 +64,7 @@ az provider register --namespace 'Microsoft.DevOpsInfrastructure'
 If you prefer using PowerShell to register the Azure Resource Provider, please execute the following command from the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider)
 
 ```PowerShell
-Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'`
+Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'
 ```
 
 * * *
