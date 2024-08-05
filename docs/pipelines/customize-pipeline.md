@@ -263,7 +263,11 @@ You can configure pipelines security on a project level from the **More actions*
 ![Screenshot of pipeline security menu options.](get-started/media/pipelines-context-menu.png)
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to predefined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](policies/permissions.md).
+
 ## Create work item on failure
+
+
+::: moniker range="azure-devops"
 
 YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 
 
@@ -317,6 +321,74 @@ jobs:
 The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The second `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
 The second job in the pipeline has a dependency on the first job and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call at the desired point in your pipeline. 
+
+The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a bug in the same project as the pipeline.
+
+```yml
+# When manually running the pipeline, you can select whether it
+# succeeds or fails.
+parameters:
+- name: succeed
+  displayName: Succeed or fail
+  type: boolean
+  default: false
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job: Work
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
+
+  # This malformed command causes the job to fail
+  # Only run this command if the succeed variable is set to false
+  - script: git clone malformed input
+    condition: eq(${{ parameters.succeed }}, false)
+
+# This job creates a work item, and only runs if the previous job failed
+- job: ErrorHandler
+  dependsOn: Work
+  condition: failed()
+  steps: 
+  - bash: |
+      curl \
+        -X POST \
+        -H 'Authorization: Basic $(System.AccessToken)' \
+        -H 'Content-Type: application/json-patch+json' \
+        -d '[
+              {
+                "op": "add",
+                "path": "/fields/System.Title",
+                "from": null,
+                "value": "git clone failed"
+              }
+            ]' \
+        "$(System.CollectionUri)$(System.TeamProject)/_apis//wit/workitems/$Bug?api-version=7.1-preview.3
+"
+    env:
+        SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+    displayName: 'Create work item on failure'
+```
+
+> [!NOTE] 
+> Azure Boards allows you to configure your work item tracking using several different processes, such as Agile or Basic. Each process has different work item types, and not every work item type is available in each process. For a list of work item types supported by each process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#track-work-with-different-work-item-types).
+
+The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The second `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
+
+The second job in the pipeline has a dependency on the first job and only runs if the first job fails. The second job uses the Azure DevOps API [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command to create a bug. 
+
+::: moniker-end
 
 This example uses two jobs, but this same approach could be used across [multiple stages](process/stages.md).
 
