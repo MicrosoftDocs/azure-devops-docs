@@ -1,5 +1,5 @@
 ---
-title: Add a user to manage billing
+title: Add a user who can manage billing
 titleSuffix: Azure DevOps Services
 description: Add a user who can set up and manage billing for Azure DevOps.
 ms.custom: freshness-fy22q1, engagement-fy23
@@ -8,11 +8,11 @@ ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/26/2024
+ms.date: 08/05/2024
 monikerRange: 'azure-devops'
 ---
 
-# Add a user to manage billing
+# Add a user who can manage billing
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -21,28 +21,30 @@ monikerRange: 'azure-devops'
 
 Give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change the Azure subscription used for billing](change-azure-subscription.md) for your Azure DevOps organization. 
 
-Assign any of the following roles to a user under the subscription your organization uses for billing: [Owner](/azure/role-based-access-control/built-in-roles#owner), [Contributor](/azure/role-based-access-control/built-in-roles#contributor), [Service admin](/azure/billing/billing-add-change-azure-subscription-administrator), and [Co-admin](/azure/billing/billing-add-change-azure-subscription-administrator). For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Assign any of the following roles to a user under the subscription your organization uses for billing: [Owner](/azure/role-based-access-control/built-in-roles#owner), [Contributor](/azure/role-based-access-control/built-in-roles#contributor), or [Service admin](/azure/billing/billing-add-change-azure-subscription-administrator). For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
-- You must be the [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator) to give another user access to manage billing.
+You must be the [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator) to give another user access to manage billing.
 
 ## Give a user access to manage billing
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure Account Administrator.
-
 2. Enter *subscriptions* in the search box and select **Subscriptions**. 
-3. Choose the **subscription** > **Access control (IAM)** > **+ Add**, and then **Add co-administrator** from the dropdown menu.
+3. Select the **subscription** > **Access control (IAM)** > **+ Add**.
+4. Select the appropriate role from the dropdown menu.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of sequence of buttons to add co-administrator.](media/add-backup-billing-manager/add-co-administrator-to-subscription.png)
+   > ![Screenshot of sequence of buttons to add role.](media/add-backup-billing-manager/add-role-to-subscription.png)
 
-4. Select the **user**, and then select **Add**.
+5. Choose **+ Select members**, search for a user by name or email address, highlight the user, and then choose **Select**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of Add co-administrator pop-out pane.](media/add-backup-billing-manager/select-user-add.png)
+   > ![Screenshot of Add role assignment pop-out pane.](media/add-backup-billing-manager/add-role-assignment.png)
+
+6. Select **Review + assign**.
 
 > [!NOTE]
 > The user must accept their email invitation before they can access the Azure subscription, if they aren't in your directory.
