@@ -61,7 +61,7 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
     * When connecting to a private project scoped feed from an Azure Pipelines pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. For more information, see [Package permissions](./feed-permissions.md#pipelines-permissions).
 
 > [!NOTE]
-> To add a feed from a different organization as an upstream source, the target feed administrator must grant you **Collaborator** or higher permissions.
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
 
 ## Security policies
 

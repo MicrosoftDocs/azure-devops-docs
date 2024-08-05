@@ -40,7 +40,8 @@ In this tutorial, you will:
 ::: moniker-end
 
 > [!NOTE]
-> To add a feed from a different organization as an upstream source, the target feed administrator must grant you **Collaborator** or higher permissions.
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
+
 ## Set up the configuration file
 
 Now that we created our feed, we need to update the config file to point to our feed. To do this we must:
