@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli
 ms.author: sandrica
 author: silviuandrica
 monikerRange: 'azure-devops'
-ms.date: 08/01/2024
+ms.date: 08/06/2024
 ---
 
 # Manage pipelines with the Azure DevOps CLI
@@ -119,7 +119,7 @@ For the complete command reference, see [az pipelines delete](/cli/azure/pipelin
 To use the Azure DevOps CLI to create a YAML pipeline, see [az pipelines create](/cli/azure/pipelines#az-pipelines-create). To run Azure CLI commands in YAML pipelines, see [Azure DevOps CLI in Azure Pipelines YAML](/azure/devops/cli/azure-devops-cli-in-yaml).
 
 You can create YAML pipelines to build, configure, test, and deploy apps in the language of your choice. For more information, see the following articles:
-s
+
 - [Build, test, and deploy .NET Core apps](../ecosystems/dotnet-core.md)
 - [Build and test Go projects](../ecosystems/go.md)
 - [Build Java apps](../ecosystems/java.md)

@@ -4,7 +4,7 @@ description: See how to configure a pipeline's default branch in Azure Pipelines
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 08/01/2024
+ms.date: 08/06/2024
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
