@@ -56,7 +56,7 @@ This article is divided into three parts, each building on the previous - beginn
 > If you're in a hurry and want to get your hands on the code right away, you can download the [samples](https://github.com/Microsoft/azure-devops-extension-sample). 
 > Once downloaded, go to the `widgets` folder, then follow [Step 6](#package-publish-share) and [Step 7](#add-from-catalog) directly to publish the sample extension which has the three sample widgets of varying complexities.
 
-Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out- of-the-box and some guidance on widget structure.
+Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out-of-the-box and some guidance on widget structure.
 
 <a id="part-1"></a>
 
@@ -833,7 +833,7 @@ At the end, your `configuration.html` looks like the following example:
 
 <a id="reload-widget"></a>
 
-### Step 4: Implement reload in the widget - Javascript
+### Step 4: Implement reload in the widget - JavaScript
 
 We set up widget configuration to store the query path selected by the user.
 We now have to update the code in the widget to use this stored configuration instead of the hard-coded `Shared Queries/Feedback` from the previous example.
