@@ -64,9 +64,19 @@ Check the **Override the YAML trigger from here** setting for the types of trigg
 
 If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](../repos/azure-repos-git.md#pr-triggers).
 
-:::moniker range=">azure-devops-2022"
+:::moniker range=">=azure-devops-2022"
 
 ## Disable implied YAML CI trigger setting is enabled
+
+:::moniker-end
+
+:::moniker range="=azure-devops-2022"
+
+[!INCLUDE [feature-added-2022-2](../../includes/feature-added-2022-2.md)]
+
+:::moniker-end
+
+:::moniker range=">=azure-devops-2022"
 
 YAML pipelines are configured by default with a CI trigger on all branches, unless the [Disable implied YAML CI trigger](/azure/devops/release-notes/2023/sprint-227-update#prevent-unintended-pipeline-runs) setting, introduced in [Azure DevOps sprint 227](/azure/devops/release-notes/2023/sprint-227-update), is enabled. The **Disable implied YAML CI trigger** setting can be configured at the organization level or at the project level, and by default, the setting is not enabled.
 
