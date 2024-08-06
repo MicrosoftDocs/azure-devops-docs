@@ -8,6 +8,14 @@ ms.date: 08/06/2024
 
 Welcome to what's new in the Azure DevOps docs from July 1, 2024 through July 31, 2024. This article lists some of the major changes to docs during this period.
 
+## Managed DevOps Pools
+
+- [Announcing Public Preview of Managed DevOps Pools (MDP) for Azure DevOps](https://devblogs.microsoft.com/devops/managed-devops-pools/)
+
+### New articles
+
+- [Managed DevOps Pools documentation](/azure/devops/managed-devops-pools/)
+
 ## Administration
 
 ### Updated articles
