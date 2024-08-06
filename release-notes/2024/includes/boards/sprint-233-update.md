@@ -16,6 +16,9 @@ After several weeks of testing and feedback, this feature is now available to al
 
 This is the first of several features we're making to improve the current integration. Be sure to check out the other [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration&preserve-view=true) we have planned on the public roadmap.
 
+> [!IMPORTANT]
+> As of 8/6/2024, the Azure Boards App in GitHub will no longer validate AB# links. You can still use the `AB#` syntax to link work items in your GitHub pull requests, commits, and issues as you could prior to this change.
+
 ### Team Automation Rules is generally available
 
 We're happy to announce the release of this feature to all customers of Azure DevOps Service. 
