@@ -9,8 +9,8 @@ metadata:
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   ms.topic: hub-page 
   ms.subservice: azure-devops-projects
-  author: KathrynEE 
-  ms.author: kaelli 
+  ms.author: chcomley
+  author: chcomley
   ms.date: 09/17/2022
 
 # highlightedContent section (optional)
