@@ -16,7 +16,7 @@ author: steved0x
 
 If a pipeline doesn't start at all, check the following common trigger related issues. 
 
-::: moniker range=">azure-devops-2022"
+::: moniker range=">=azure-devops-2022"
 
 * [UI settings override YAML trigger setting](#ui-settings-override-yaml-trigger-setting)
 * [Disable implied YAML CI trigger setting is enabled](#disable-implied-yaml-ci-trigger-setting-is-enabled)
@@ -27,7 +27,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2022"
+::: moniker range="<azure-devops-2022"
 
 * [UI settings override YAML trigger setting](#ui-settings-override-yaml-trigger-setting)
 * [Pull request triggers not supported with Azure Repos](#pull-request-triggers-not-supported-with-azure-repos)
