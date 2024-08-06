@@ -3,25 +3,29 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 08/10/2020
+ms.date: 08/06/2024
 ---
 
 
 ## Connect to an Analytics view 
 
 1. Open Power BI Desktop.
-1. Sign in to the service. Upon first-time access, you're required to sign in and have your credentials authenticated. Choose between **Windows** or **Personal Access Token** to authenticate. Power BI Desktop saves your credentials so you only have to do so once.
+2. Sign in to the service. First-time access requires you to sign in and have your credentials authenticated. Choose between **Windows** or a **Personal Access Token** to authenticate. Power BI Desktop saves your credentials so you only have to do so once.
+
+> [!NOTE]
+> Azure DevOps doesn't support cross-tenant scenarios using OAuth. Instead, [use service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+
 1. Select **Connect** upon verification of your credentials.
 
    :::image type="content" source="../powerbi/media/powerbi-successful-organizational-signin.png" alt-text="Screenshot that shows the Power BI Connection dialog.":::
 
-1. Select **Get Data** > **Online Services**, **Azure DevOps (Boards only)** for cloud services or select **Azure DevOps Server (Boards only)** for on-premises. Then select **Connect**. Analytics views only support queries against work items and test cases.
+2. Select **Get Data** > **Online Services**, **Azure DevOps (Boards only)** for cloud services or select **Azure DevOps Server (Boards only)** for on-premises. Then select **Connect**. Analytics views only support queries against work items and test cases.
 
    :::image type="content" source="../powerbi/media/data-connector/get-data-azure-devops.png" alt-text="Screenshot that shows the Get Data flow.":::
 
-1. Specify the basic parameters to connect to your data.
+3. Specify the basic parameters to connect to your data.
 
-	::: moniker range="azure-devops"
+	::: moniker range=" azure-devops"
 	:::image type="content" source="../powerbi/media/create-report/specify-account.png" alt-text="Screenshot that shows specifying the organization and project name.":::
 	::: moniker-end
 	::: moniker range="< azure-devops"
@@ -33,7 +37,7 @@ ms.date: 08/10/2020
      > [!IMPORTANT]
      > Don't confuse the team name with the project name, which is a common mistake. For example, if the URL that you use is `http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`, then `Fabrikam-Fiber-Git` is the project name and `Device` is the team name.
 
-	After successful sign-in, Power BI verifies if your user credentials have permissions to access the specified project. If any errors arise, see the [Q&A](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
+	After successful sign-in, Power BI verifies if your user credentials have permissions to access the specified project. If any errors arise, see the [FAQs](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
 
 ## Select the Analytics view
 
@@ -63,7 +67,7 @@ ms.date: 08/10/2020
 	> [!NOTE]
 	> [Analytics views](../powerbi/what-are-analytics-views.md) don't apply filters defined by using Power BI on the server. Any filters applied in Power BI limit the data shown to end users but don't reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, apply it by [customizing the view](../powerbi/analytics-views-create.md).
 
-1. Wait for the data to load. You can observe its progress by looking at the status messages, which appear directly under the table name. If you see any errors, see the [Q&A](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
+1. Wait for the data to load. You can observe its progress by looking at the status messages, which appear directly under the table name. If you see any errors, see the [FAQs](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows the Apply query changes loading dialog.](/azure/devops/report/powerbi/media/power-bi-data-loading-onprem.png)
