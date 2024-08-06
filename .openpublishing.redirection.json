@@ -541,6 +541,10 @@
     {
       "source_path": "docs/pipelines/policies/task-group-permissions.md",
       "redirect_url": "/azure/devops/pipelines/policies/permissions#task-group-permissions"
+    },
+    {
+      "source_path": "docs/migrate/phase-rollout-with-rings.md",
+      "redirect_url": "/training/modules/manage-release-cadence"
     }
   ]
 }
