@@ -20,11 +20,11 @@ To keep optimal repository health you can use "Repository health and usage" pane
 
 From your web browser, navigate to the Azure Repos Git repo. Select Repo > Files and then choose "Health and usage" from the ellipsis menu to open the "Repository health and usage" panel.
 
- :::image type="content" source="media/repo-health/ado-repo-health.png" border="true"  alt-text="Screenshot of the Health and usage menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="media/repo-health/ado-repo-health-lrg.png":::
+ :::image type="content" source="media/repo-health/azure-devops-repo-health.png" border="true"  alt-text="Screenshot of the Health and usage menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="media/repo-health/azure-devops-repo-health-lrg.png":::
 
 The "Repository health and usage" panel shows you factors that contribute to the health of a repository
 
- :::image type="content" source="media/repo-health/repo-health-panel.png" border="true"  alt-text="Screenshot of the Repository health and usage" lightbox="media/repo-health/repo-health-panel-lrg.png":::
+ :::image type="content" source="media/repo-health/repo-health-panel.png" border="true"  alt-text="Screenshot of the Repository health and usage." lightbox="media/repo-health/repo-health-panel-lrg.png":::
 
 Factors that are considered unhealthy will be highlighted in red, while factors that are close to being unhealthy will be highlighted in amber.
 
@@ -88,7 +88,7 @@ Display the count of binary files or media assets for which we were unable to ca
 Storing such files in Git isn't advised. Different versions of such files don’t delta well against each other, meaning Git can’t store them efficiently. Consider using  [Git-LFS](https://git-lfs.com/), [Scalar](https://git-scm.com/docs/scalar), or [Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts), which allow you to store such files and keep your repository healthy and maintainable.  For more information, see [Manage and store large files in Git](manage-large-files.md).
 
 >[!NOTE]
->If you use the [REST Pushes](/rest/api/azure/devops/git/pushes/create.md) API, your files are not diffed and this is very inefficient for pushing objects that are normally diffable.
+>If you use the [REST Pushes](/rest/api/azure/devops/git/pushes/create) API, your files are not diffed and this is very inefficient for pushing objects that are normally diffable.
 
 ## Size of reachable blobs
 
