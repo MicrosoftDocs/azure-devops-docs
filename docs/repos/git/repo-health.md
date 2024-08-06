@@ -46,7 +46,7 @@ The greater the number of objects, the longer Git takes to traverse the reposito
 
 "Number of refs" displays the total number of references in the repository.
 
-If your Git repository contains more than 10,000 refs, you should consider enabling [Limited Refs](https://learn.microsoft.com/previous-versions/azure/devops/all/git/limited-refs?view=tfs-2018). As the number of refs increases, so does the data that needs to be negotiated between the client and server. The more data that has to be negotiated the heavier the load on the server and the more data that potentially is transferred to the client causing a degraded user experience.
+If your Git repository contains more than 10,000 refs, you should consider enabling [Limited Refs](/previous-versions/azure/devops/all/git/limited-refs). As the number of refs increases, so does the data that needs to be negotiated between the client and server. The more data that has to be negotiated the heavier the load on the server and the more data that potentially is transferred to the client causing a degraded user experience.
 
 ## Number of reachable blobs
 
