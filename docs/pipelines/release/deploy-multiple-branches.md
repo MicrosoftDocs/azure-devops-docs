@@ -1,25 +1,30 @@
 ---
-title: Deploy from multiple branches
-description: DevOps CI CD - Use release pipelines to deploy from multiple branches to multiple stages.
+title: Deploy to different stages from multiple branches
+description: Learn how to use Classic release pipelines to deploy to different stages from multiple branches.
 ms.topic: tutorial
-ms.author: ninallam
-author: ninallam
-ms.date: 03/22/2021
+ms.date: 08/06/2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Deploy from multiple branches using Azure Pipelines
+# Deploy to different stages from multiple branches using Classic release pipelines
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Artifact filters can be used with release triggers to deploy from multiple branches. Applying the artifact filter to a specific branch enables deployment to a specific stage when all the conditions are met.
+Classic release pipelines provide a convenient graphical user interface for setting up a continuous delivery solution for your application. Classic releases can be configured to trigger deployments automatically whenever a new artifact is available. Artifact filters can be used with release triggers to deploy from multiple branches. By applying artifact filters to specific branches, you can control deployment to particular stages based on your needs.
+
+In this article, you'll learn how to: 
+
+> [!div class="checklist"]  
+> * Enable continuous deployment triggers.
+> * Release from multiple branches.
+> * Deploy to multiple stages.
 
 ## Prerequisites
 
-- A Git repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
+- A GitHub repository to create a CI pipeline. [Create your first pipeline](../create-first-pipeline.md) if you don't have one already.
 
-- A working build for your repository.
+- A working pipeline set up for your repository to build your project.
 
 ## Set up a release pipeline
 
