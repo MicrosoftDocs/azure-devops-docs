@@ -10,7 +10,7 @@ ms.date: 08/06/2024
 ## Connect to an Analytics view 
 
 1. Open Power BI Desktop.
-2. Sign in to the service. First-time access requires you to sign in and have your credentials authenticated. Choose between **Windows** or a **Personal Access Token** to authenticate. Power BI Desktop saves your credentials so you only have to do so once.
+2. Sign in to the service. First-time access requires you to sign in and have your credentials authenticated. Power BI Desktop saves your credentials so you only have to do so once.
 
 > [!NOTE]
 > Azure DevOps doesn't support cross-tenant scenarios using OAuth. Instead, [use service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
@@ -25,14 +25,14 @@ ms.date: 08/06/2024
 
 3. Specify the basic parameters to connect to your data.
 
-	::: moniker range=" azure-devops"
-	:::image type="content" source="../powerbi/media/create-report/specify-account.png" alt-text="Screenshot that shows specifying the organization and project name.":::
-	::: moniker-end
-	::: moniker range="< azure-devops"
-	:::image type="content" source="../powerbi/media/onprem-credentials.png" alt-text="Screenshot that shows specifying the organization and project name, on-premises version.":::
+   ::: moniker range="azure-devops"
+   :::image type="content" source="../powerbi/media/create-report/specify-account.png" alt-text="Screenshot that shows specifying the organization and project name.":::
+   ::: moniker-end
+   ::: moniker range="< azure-devops"
+   :::image type="content" source="../powerbi/media/onprem-credentials.png" alt-text="Screenshot that shows specifying the organization and project name, on-premises version.":::
 	- **Collection URL**: Enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is `http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`.
 	- **Team project**: Enter only the project name. For example, use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is `http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`.
-	::: moniker-end
+   ::: moniker-end
 
      > [!IMPORTANT]
      > Don't confuse the team name with the project name, which is a common mistake. For example, if the URL that you use is `http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`, then `Fabrikam-Fiber-Git` is the project name and `Device` is the team name.
@@ -45,7 +45,7 @@ ms.date: 08/06/2024
 
 	The following image shows the default Analytics views. Your list of views might differ based on the process model used to create your project. All views listed, except the views appended with "Today," provide historical trend data.
 
-	Here you select **Stories - Last 30 days**, which filters for product backlog items.
+	In the following example, we select **Stories - Last 30 days**, which filters for product backlog items.
 
 	![Screenshot that shows the Navigator dialog with the Choose an Analytics view.](/azure/devops/report/powerbi/media/create-report/choose-view.png)
 

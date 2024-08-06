@@ -38,7 +38,7 @@ Do the following steps to grant organization access.
 	
 2. Select **Applications** under **Integrations**.  
 
-3. Select **Authorized OAuth Apps** > **Azure Boards**. 
+3. Select **Authorized GitHub Apps** > **Azure Boards**. 
 
    :::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::   
 
@@ -56,7 +56,7 @@ Do the following steps to grant organization access.
 
    :::image type="content" source="media/github-app/install-azure-boards-app-from-marketplace.png" alt-text="Screenshot of GitHub Marketplace, Set up a plan button.":::
 
-3. Choose the GitHub organization you want to connect to Azure Boards. 
+3. Choose the GitHub organization you want to connect to Azure Boards.
 
    :::image type="content" source="media/github-app/choose-github-account.png" alt-text="Screenshot showing Install Azure Boards dialog.":::
 
