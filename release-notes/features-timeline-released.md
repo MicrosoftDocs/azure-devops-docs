@@ -110,8 +110,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January 2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
-    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>GitHub Integration - Improved AB# validation</td><td>Boards</td><td>Future</td></tr>
+    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>    
     <td>Team Automation Rules</td><td>Boards</td><td>Future</td></tr>
     <td>Update deprecated tasks before January 31</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Microsoft hosted agents use PowerShell 7.4</td><td>Pipelines</td><td>N/A</td></tr>
