@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/06/2024
+ms.date: 08/06/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -17,15 +17,15 @@ monikerRange: 'azure-devops'
 
 Azure DevOps provides group-based access levels for Microsoft Entra groups and Azure DevOps groups. These groups allow you to manage permissions efficiently by assigning access levels to entire groups of users. In this article, learn how to add a group rule to assign an access level to that group of users. Azure DevOps resources get assigned to all members of a group.
 
-Assign group rules to support both access levels and project memberships. Users get the highest access level when they're assigned to more than one rule or Microsoft Entra group, which specify different levels of access. For example, if John is assigned to two Microsoft Entra groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
+Assign a group rule to manage both access levels and project memberships. When a user is assigned to multiple rules or Microsoft Entra groups with different access levels, they receive the highest access level among them. For example, if John is assigned to two Microsoft Entra groups and two different group rules, one specifying Stakeholder access and the other Basic access, John receives Basic access.
 
-When users leave the Microsoft Entra group, Azure DevOps adjusts their access level based on the rules defined for that group. The user remains in Azure DevOps but may have different permissions or access rights. The highest access level assigned to the user determines their final permissions.
+When a user leaves a Microsoft Entra group, Azure DevOps adjusts their access level according to the group’s defined rules. If the group was the user’s sole source of access, Azure DevOps automatically removes them from the organization. If the user belongs to other groups, their access level and permissions are reevaluated.
 
 [!INCLUDE [note-group-rules](../security/includes/note-group-rules.md)]
 
 ## Prerequisites
 
-- To manage group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, [get added as one](../security/change-organization-collection-level-permissions.md).
+To manage group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, [get added as one](../security/change-organization-collection-level-permissions.md).
 
 ## Add group rule
 
