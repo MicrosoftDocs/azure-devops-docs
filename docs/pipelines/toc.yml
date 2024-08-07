@@ -589,8 +589,6 @@
       href: reports/pipelinereport.md
     - name: Add widgets to a dashboard
       href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json
-    - name: Test Results Trend (Advanced)
-      href: ../report/dashboards/analytics-widgets.md?toc=/azure/devops/pipelines/toc.json#test-results-trend-advanced
 - name: Security
   items:
   - name: Set retention policies
