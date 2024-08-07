@@ -153,7 +153,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 
 [GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This  workflow automates the process of building, testing, packaging, and publishing a .NET project to Azure Artifacts using a managed identity and federated authentication. The workflow:
 
-* Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to log in to Azure using a managed identity
+* Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to log in to Azure using a managed identity.
 * Installs the [credential provider for Azure Artifacts](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider). 
 * Extracts an access token using Azure CLI and configures the authentication provider to use the Azure DevOps token.
 * Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
