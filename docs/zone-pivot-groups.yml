@@ -32,3 +32,11 @@ groups:
     title: PSResourceGet
   - id: powershelget
     title: PowerShellGet
+- id: github-actions-auth
+  title: Authentication version
+  prompt: Choose an authentication method
+  pivots:
+  - id: pat
+    title: PAT
+  - id: managed-identity
+    title: Managed identity
