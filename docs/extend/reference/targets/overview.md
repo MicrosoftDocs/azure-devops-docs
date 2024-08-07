@@ -108,7 +108,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 | Name                              | Target ID                                           |  
 | ----------------------------------|-----------------------------------------------------| 
-| Organization/collection) overview toolbar | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
+| Organization/collection overview toolbar | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
 | Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               | 
 | Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    | 
 | Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  | 
