@@ -227,7 +227,6 @@ ms.date: 04/02/2024
 | PlanetScale              | PlanetScaleOAuthToken                                 | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | PlanetScale              | PlanetScaleServiceToken                               | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Plivo                    | PlivoCredentials                                      |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
-| Postman                  | PostmanApiKey                                         | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Prefect                  | PrefectServerApiToken                                 | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Prefect                  | PrefectUserApiToken                                   | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Proctorio                | ProctorioConsumerKey                                  |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
