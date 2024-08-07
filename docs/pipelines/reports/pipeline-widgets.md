@@ -13,7 +13,7 @@ ms.date: 08/11/2024
 
 # Monitor your pipelines with dashboard widgets
 
-You can monitor your pipelines through widgets to your team dashboards in Azure DevOps. You can add widgets to view and track the status of your build and release pipelines and monitor test results trends.  For for information about team dashboards, see [About dashboards, charts, reports, and widgets](../../report/dashboards/overview.md).
+You can monitor your pipelines through widgets to your team dashboards in Azure DevOps. You can add widgets to view and track the status of your build and release pipelines and monitor test results trends. For for information about team dashboards, see [About dashboards, charts, reports, and widgets](../../report/dashboards/overview.md).
 
 ## Pipeline widgets
 
@@ -23,8 +23,8 @@ The pipeline widgets include:
 - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget): View the status of the deployment status and test pass rate for a recent set of builds.
 - [Release pipeline overview](../../report/dashboards/widget-catalog.md#release-definition-widget): View and track the status of a release pipeline.
 - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget): Track quality continuously from a build or release pipeline.
-- [Test results trend](../../report/dashboards/widget-catalog.md#test-trend-results): View test result trends for a build or release pipeline.
-- [Test results trend (Advanced)](../../report/dashboards/analytics-widgets#test-results-trend-advanced)): View the test result trends for multiple builds and releases in near real-time with Analytics. For more information about Analytics widgets, see [Analytics widgets](../../report/dashboards/analytics-widgets.md).
+- [Test results trend](../../report/dashboards/widget-catalog.md#test-trend-results): View trends of test results for a build or release pipeline.
+- [Test results trend (Advanced)](../../report/dashboards/analytics-widgets#test-results-trend-advanced)): View trends of test results for multiple builds and releases in near real-time with Analytics. For more information about Analytics widgets, see [Analytics widgets](../../report/dashboards/analytics-widgets.md).
 
 ## Manage your dashboard widgets
 
