@@ -101,6 +101,8 @@ The Development section within the work item form lists the links created to Git
 
 Choose the link provided to open the commit or pull request in GitHub.  
 
+<a id="view-github-objects-on-board"> </a>
+
 ## View GitHub objects on a board
 
 With GitHub annotations enabled on the board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. For more information, see [Customize cards](../boards/customize-cards.md).
