@@ -58,7 +58,7 @@ To use key-based authentication, you first need to generate public/private key p
 To generate key files using the RSA algorithm, run the following command from a PowerShell or another shell such as `bash` on your client:
 
 ```powershell
-ssh-keygen
+ssh-keygen -t rsa
 ```
 
 The output from the command should display the following output (where `username` is replaced by your username):
