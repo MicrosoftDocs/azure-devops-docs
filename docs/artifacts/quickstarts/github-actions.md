@@ -124,10 +124,28 @@ Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure
     -  Copy the values for **Client ID**, **Subscription ID**, and **Directory (tenant) ID** to use later in your GitHub Actions workflow.
     - [Assign an appropriate role to your user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities#manage-access-to-user-assigned-managed-identities).
     - [Configure a federated identity credential on a user-assigned managed identity](/entra/workload-id/workload-identity-federation-create-trust-user-assigned-managed-identity) to trust tokens issued by GitHub Actions to your GitHub repository. 
+- Permission to assign a managed identity to the **Contributor** group in Azure DevOps. **Project Administrators** and **Collection Administrators** both have this permission. 
 
 ## Add DevOps permissions for the managed identity 
 
+To assign the **Contributor** role to a managed identity, follow these steps:
+
+1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
+1. Go to **Project settings**. 
+1. Select **General** > **Permissions**.
+1. Choose the **Contributors** group. 
+
+    :::image type="content" source="media/select-contributors-group.png" alt-text="Screenshot of contributors group permission option.":::
+
+1. Select the **Members** tab and then select **Add**.
+1. Search and find the managed identity. 
+1. Select **Save** to add the identity to the **Contributors** group. 
+
+    :::image type="content" source="media/invite-managed-identity.png" alt-text="Screenshot of adding a managed identity. ":::
+
 ## Create GitHub secrets 
+
+[!INCLUDE [include](~/../docs/reusable-content/github-actions/create-secrets-managed-identity-only.md)]
 
 
 ## Create a GitHub workflow that builds an artifact
