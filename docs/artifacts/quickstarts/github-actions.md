@@ -151,8 +151,11 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 ## Create a GitHub workflow that builds an artifact
 
 
-[GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This workflow:
+[GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This  workflow automates the process of building, testing, packaging, and publishing a .NET project to Azure Artifacts using a managed identity and federated authentication. The workflow:
 
+* Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to log in to Azure using a managed identity
+* Installs the [credential provider for Azure Artifacts](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider). 
+* Extracts an access token using Azure CLI and configures the authentication provider to use the Azure DevOps token.
 * Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
 * Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
 * Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
@@ -175,7 +178,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
           - main
     
     permissions:
-      id-token: write # Require write permission to Fetch an OIDC token.
+      id-token: write # Require write permission to Fetch an federated identity token.
       contents: read # Require read permission to access the repository contents.
     
     env:
