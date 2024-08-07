@@ -263,8 +263,6 @@
         items:
         - name: "2024"
           items:
-          - name: August 13
-            href: 2024/boards/sprint-243-update.md
           - name: July 25
             href: 2024/boards/sprint-242-update.md
           - name: June 14

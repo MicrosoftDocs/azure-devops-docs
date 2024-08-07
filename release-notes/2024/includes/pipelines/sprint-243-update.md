@@ -1,24 +1,20 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/13/2024
+ms.date: 7/25/2024
 ms.topic: include
 ---
 
-### Advanced Security meter usage API now returns user identities
+### Azure Pipelines tasks use Node 20
 
-To better help you estimate your Advanced Security users, the Meter Usage estimate APIs for Advanced Security will now return the user's Azure DevOps identity, including their display name, CUID, email identifier and identity descriptor. This is available at the organization, project, and repository level. To use this new endpoint, the syntax is similar to the existing meter usage API endpoints, appending `/details` to the endpoint: 
-
-- At the organization level: GET 
-- At the project level: GET 
-- At the repository level: GET 
+Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20, see https://aka.ms/node-runner-guidance for upgrade guidance.
 
 ### Create build pipeline permission
 
 To increase pipeline security, we are introducing a new permission, _Create build pipeline_, at Pipelines level. 
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of create build pipeline permission.](../../media/243-ghazdo-01.png "Screenshot of create build pipeline permission")](../../media/243-ghazdo-01.png#lightbox)
+> [![Screenshot of create build pipeline permission.](../../media/243-pipelines-01.png "Screenshot of create build pipeline permission")](../../media/243-pipelines-01.png#lightbox)
 
 Previously, users required the _Edit build pipeline_ permission to either create a pipeline or edit a pipeline. This posed a security concern, because it meant that all users who should be able to create a pipeline could also edit pipelines they didn't create by default. Preventing this was tedious.
 

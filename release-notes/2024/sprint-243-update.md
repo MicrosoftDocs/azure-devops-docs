@@ -14,10 +14,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-243-update-links](includes/ghazdo/sprint-243-update-links.md)]
 
-### Azure Boards:
-
-[!INCLUDE [sprint-243-update-links](includes/boards/sprint-243-update-links.md)]
-
 ### Azure Pipelines
 
 [!INCLUDE [sprint-243-update-links](includes/pipelines/sprint-243-update-links.md)]
@@ -25,10 +21,6 @@ Check out the release notes for details.
 ## GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-243-update](includes/ghazdo/sprint-243-update.md)]
-
-## Azure Boards
-
-[!INCLUDE [sprint-243-update](includes/boards/sprint-243-update.md)]
 
 ## Azure Pipelines
 
