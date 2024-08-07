@@ -587,8 +587,8 @@
     items:
     - name: View pipeline reports
       href: reports/pipelinereport.md
-    - name: Add widgets to a dashboard
-      href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json
+    - name: Monitor your pipelines with dashboard widgets
+      href: reports/pipeline-widgets.md
 - name: Security
   items:
   - name: Set retention policies
