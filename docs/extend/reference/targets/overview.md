@@ -108,7 +108,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 | Name                              | Target ID                                           |  
 | ----------------------------------|-----------------------------------------------------| 
-| Organization/collection) overview toolbar | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
+| Organization/collection overview toolbar | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
 | Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               | 
 | Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    | 
 | Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  | 
@@ -127,7 +127,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![Query toolbar custom pivot tab ](media/work/queryResultsPivotTab.png)| 
 | Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu` | ![Custom work item toolbar actions.](media/work/workItemToolbarActions.png)| 
 | Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![Backlog item actions custom menu options.  ](media/work/backlogItemActions.png)| 
-| Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  |   | 
+| Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![Sprint board pivot filter menu](media/work/sprintBoardPivotFilterActions.png)  | 
 | Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![Backlog Board Pivot Filter Actions.](media/work/backlogBoardPivotFilterActions.png)| 
 | Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    |   | 
 | Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Screenshot of product Backlog Custom Tab.](media/work/product-backlog-tab.png)| 
