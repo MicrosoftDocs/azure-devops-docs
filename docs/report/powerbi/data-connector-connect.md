@@ -8,14 +8,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms date: 10/04/2021
+ms date: 08/06/2024
 ---
 
 # Connect Analytics with Power BI Data Connector
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-In this article, you learn how to establish a seamless connection between Power BI and Azure DevOps by using Data Connector. This integration allows you to extract valuable insights from your Azure DevOps data and create compelling reports within Power BI. Power BI Data Connector uses [Analytics views](what-are-analytics-views.md).
+In this article, learn how to establish a seamless connection between Power BI and Azure DevOps by using Data Connector. This integration allows you to extract valuable insights from your Azure DevOps data and create compelling reports within Power BI. Power BI Data Connector uses [Analytics views](what-are-analytics-views.md).
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
@@ -25,7 +25,7 @@ In this article, you learn how to establish a seamless connection between Power 
 
 - Get familiar with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).
 - Install the *Power BI Desktop* *October 2018 Update* or a [newer version](https://aka.ms/pbidesktopstore).
-- Ensure that you're added as a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
+- Ensure that you're a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
 - Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report.
@@ -37,7 +37,7 @@ In this article, you learn how to establish a seamless connection between Power 
 - Get familiar with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).
 - Install the *Power BI Desktop* *October 2018 Update* or a [newer version](https://aka.ms/pbidesktopstore).
 - Ensure that you're a member of a project with Basic access or higher. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-- Ensure that you're added as a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
+- Ensure that you're a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
 - [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true) is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
 - Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
@@ -49,9 +49,9 @@ In this article, you learn how to establish a seamless connection between Power 
 
 [!INCLUDE [temp](../includes/connect-analytics-view.md)]
 
-## Create your report
+## Create a report
 
-Create reports based on the loaded data. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Data Connector - Example reports](data-connector-examples.md).
+Create a report based on the loaded data. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Data Connector - Example reports](data-connector-examples.md).
 
 :::image type="content" source="media/data-connector-visual.png" alt-text="Screenshot that shows the Power BI Desktop report view.":::
 
@@ -59,7 +59,7 @@ Create reports based on the loaded data. After the load operation finishes, you 
 
 <a id="q-a">  </a>
 
-## Q&A
+## FAQs
 
 Find answers to common questions about Power BI Data Connector and Analytics error messages.
 
@@ -80,7 +80,7 @@ The following example shows the error message returned from the connector. The m
 
 "Failed to save modifications to the server. Error returned: 'OLE DB or ODBC error: 
 &#91;DataSource.Error&#93; VSTS: Request failed: The remote server returned an error: (400) Bad Request. 
-(Query result exceeds maximum size. Please reduce the number of records by applying additional filters).'"
+(Query result exceeds maximum size. Reduce the number of records by applying additional filters).'"
 
 This error typically occurs when your project has a large number of work items. Reduce the size of the dataset by [customizing the view](analytics-views-create.md). Do this step before you use it in Power BI.
 
@@ -90,7 +90,7 @@ This error typically occurs when your project has a large number of work items. 
 
 ### Q: How do I resolve the "user wasn't authorized" error?
 
-**A:** You might get this error if you try to access a project that you don't have permissions to. You might also see it if Power BI doesn't recognize your credentials. To check your permissions, see [Set permissions to access Analytics and Analytics views](analytics-security.md). If it's a credential issue, work with your administrator to see if they can help resolve the problem. For more information, see [Power BI security, user authentication](/power-bi/admin/service-admin-power-bi-security#user-authentication) and [Troubleshooting sign-in issues for Power BI](/power-bi/admin/power-bi-cannot-sign-in).
+**A:** You might get this error if you try to access a project that you don't have permissions to. You might also see it if Power BI doesn't recognize your credentials. To check your permissions, see [Set permissions to access Analytics and Analytics views](analytics-security.md). If it's a credential issue, work with your administrator to see if they can help resolve the problem. For more information, see [Power BI security, user authentication](/power-bi/admin/service-admin-power-bi-security#user-authentication), and [Troubleshooting sign-in issues for Power BI](/power-bi/admin/power-bi-cannot-sign-in).
 
 :::image type="content" source="media/AccessDeniedError.png" alt-text="Screenshot that shows the access-denied error.":::
 
@@ -107,7 +107,7 @@ This error typically occurs when your project has a large number of work items. 
 
 <a id="ProjectNotFoundError">  </a>
 
-### Q: How do I resolve the "Project 'X' does not exist or you do not have permissions to access it" error?
+### Q: How do I resolve the "Project 'X' doesn't exist or you don't have permissions to access it" error?
 
 **A:** This error indicates that the value you entered for **Project name** doesn't correspond to any project. A common mistake that users make is to confuse the project name with a team name.
 
