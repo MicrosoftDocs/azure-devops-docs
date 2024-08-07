@@ -7,4 +7,3 @@ ms.topic: include
 
 - [Advanced Security meter usage API now returns user identities](#advanced-security-meter-usage-api-now-returns-user-identities)
  
-- [Create build pipeline permission](#create-build-pipeline-permission)
