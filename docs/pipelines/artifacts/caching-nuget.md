@@ -15,6 +15,9 @@ monikerRange: 'azure-devops'
 
 With pipeline caching, you can reduce your build time by caching your dependencies to be reused in later runs. In this article, you'll learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
 
+> [!NOTE]
+> Pipeline caching is currently supported in agent jobs for classic build and YAML pipeline, but not classic release and deployment jobs for YAML Pipeline.
+
 ## Lock dependencies
 
 To set up the cache task, we must first lock our project's dependencies and create a **package.lock.json** file. We'll use the hash of the content of this file to generate a unique key for our cache.
