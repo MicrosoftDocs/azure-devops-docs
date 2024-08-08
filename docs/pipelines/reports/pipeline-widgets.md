@@ -13,7 +13,7 @@ ms.date: 08/11/2024
 
 # Monitor your pipelines with dashboard widgets
 
-You can monitor your pipelines through widgets to your team dashboards in Azure DevOps. You can add widgets to view and track the status of your build and release pipelines and monitor test results trends. For for information about team dashboards, see [About dashboards, charts, reports, and widgets](../../report/dashboards/overview.md).
+You can monitor your pipelines by adding widgets to team dashboards in Azure DevOps. Widgets give you visibility to the status of your build and release pipelines and monitor test results trends. For for information about team dashboards, see [About dashboards, charts, reports, and widgets](../../report/dashboards/overview.md).
 
 ## Pipeline widgets
 
