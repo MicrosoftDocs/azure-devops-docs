@@ -7,7 +7,7 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 03/15/2024
+ms.date: 07/23/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,13 +17,15 @@ monikerRange: '<= azure-devops'
 
 Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process!
 
+[!INCLUDE [region-move-paused-warning](../includes/region-move-paused-warning.md)]
+
 |Action |More info  |
 |---------|---------|
 |Find out what's new in Azure DevOps   | Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks. |
-|Get **Virtual Agent** support   | Chat with our [Virtual Agent](https://go.microsoft.com/fwlink/?linkid=2160944) to get help with common issues, including troubleshooting and changing the region your Azure DevOps instance is hosted in.        |
+|Get **Virtual Agent** support   | Chat with our [Virtual Agent](https://go.microsoft.com/fwlink/?linkid=2160944) to get help with common issues, including troubleshooting and changing the region your Azure DevOps instance is hosted in.    |
 |Get advice  | Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).        |
-|Report a bug   | Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).        |
-|Suggest a feature or fix    | Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).        |
+|Report a bug   | Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).        |
+|Suggest a feature or fix    | Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS).        |
 | Contact Support     | Contact Support by creating a support ticket. To create a support ticket, visit the [Microsoft Azure Support Ticket page](https://azure.microsoft.com/support/create-ticket/) and follow the instructions to create and manage support requests for Azure DevOps Services.                      |
 |Report security flaws | See the [Microsoft webpage for reporting a computer security vulnerability.](https://www.microsoft.com/msrc/faqs-report-an-issue?rtc=1)                                |
 

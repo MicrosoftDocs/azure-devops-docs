@@ -13,6 +13,9 @@ monikerRange: '>= azure-devops-2019'
 
 With Azure Artifacts upstream sources, you can streamline your package management by using a single feed to store both the packages you publish and those you consume from external feeds and public registries such as npmjs.com, NuGet.org. When an upstream source is enabled on your feed, Azure Artifacts will automatically save a copy of any package installed by a collaborator or higher from upstream.
 
+> [!NOTE]
+> Maven snapshots are not supported in upstream sources.
+
 ## Enable upstream sources in a new feed
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -25,8 +28,8 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a new feed.":::
 
-> [!IMPORTANT]
-> Maven snapshots are not supported in upstream sources.
+> [!NOTE]
+> You must be a feed owner or a feed administrator to add or remove upstream sources.
 
 ## Enable upstream sources in an existing feed
 
@@ -38,7 +41,7 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 1. Select **Public source**, and then select a **Public source** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** once more in the top right corner to preserve your changes.
+1. Select **Add** when you're done, and then select **Save** once more in the top right corner to preserve your changes.
 
 > [!NOTE]
 > Custom public upstream sources are only supported with npm registries.
@@ -55,7 +58,7 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 1. Select the desired **Feed** from the dropdown menu to add it as an upstream source. Then, select the **View** and choose the **Package type(s)** you wish to use. Optionally, you can also modify the name of your upstream source.
 
-1. Select **Save** when you're done.
+1. Select **Add** when you're done.
 
     :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot showing how to add a feed in your organization as an upstream source.":::
 
@@ -85,9 +88,12 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 1. Select the **Package type(s)** you wish to use and provide a name for your upstream source.
 
-1. Select **Save** when you're done.
+1. Select **Add** when you're done.
 
     :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
+
+> [!NOTE]
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
 
 ## Examples
 

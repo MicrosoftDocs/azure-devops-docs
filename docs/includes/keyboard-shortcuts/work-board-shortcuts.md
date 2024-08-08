@@ -5,7 +5,7 @@ ms.date: 04/04/2022
 
 <a id="kanban-board-shortcuts"></a>
 
-You can use the following keyboard shortcuts when you work on a Kanban board on a **Boards** > **Boards** page or a **Work** > **Boards** page.  
+You can use the following keyboard shortcuts when you work on a board on a **Boards** > **Boards** page or a **Work** > **Boards** page.  
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -33,7 +33,7 @@ You can use the following keyboard shortcuts when you work on a Kanban board on 
 
 The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
-:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt-text="Screenshot that shows Azure DevOps 2020 Kanban board shortcuts.":::
+:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt-text="Screenshot that shows Azure DevOps 2020 board shortcuts.":::
 
 ::: moniker-end
 
@@ -63,6 +63,6 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
-:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 Kanban board shortcuts.":::
+:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 board shortcuts.":::
 
 ::: moniker-end

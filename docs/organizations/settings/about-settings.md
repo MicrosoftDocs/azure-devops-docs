@@ -194,7 +194,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
    :::column-end:::
    :::column span="2":::
-      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
+      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). Configure boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -339,7 +339,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set dashboard permissions](../security/../../report/dashboards/dashboard-permissions.md)
       - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
       - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
-      - [Set build and release permissions](../../pipelines/policies/pipeline-permissions.md)
+      - [Set build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions)
    :::column-end:::
    :::column span="2":::
       Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
@@ -366,7 +366,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Configure service hooks](../../service-hooks/overview.md)
    :::column-end:::
    :::column span="2":::
-      With service hooks, you can automate a task on other services, such as [Campfire, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
+      With service hooks, you can automate a task on other services, such as [Trello, Datadog, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
    :::column-end:::
 :::row-end:::
 ---
@@ -391,7 +391,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Define iteration paths or sprints](set-iteration-paths-sprints.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -406,7 +406,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set retention policies](../../pipelines/policies/retention.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -500,7 +500,7 @@ From the administrative **Project settings** page, you can configure settings av
       **Service connections**
    :::column-end:::
    :::column span="2":::
-      - [Manage service connections in Azure Pipelines](../../pipelines/library/service-endpoints.md#project-level-permissions)
+      - [Manage service connections in Azure Pipelines](../../pipelines/policies/permissions.md#set-service-connection-project-permissions)
    :::column-end:::
    :::column span="2":::
       For more information, see a [list of common service connection types](../../pipelines/library/service-endpoints.md#common-service-connection-types).

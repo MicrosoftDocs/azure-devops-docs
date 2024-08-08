@@ -42,7 +42,7 @@ For example, here we show **Progress by Work Items** which displays progress bar
 
 ## Rollup and hierarchical work items
 
-The default set of backlog work items that supports a natural hierarchical grouping varies depending on the process chosen for your project. The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. For more information, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
+The default set of backlog work items that supports a natural hierarchical grouping varies depending on the process chosen for your project. The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a board. For more information, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Board features and epics](../boards/kanban-epics-features-stories.md).
 
 #### [Agile process](#tab/agile-process)
 
@@ -128,7 +128,7 @@ If an error occurs in retrieving rollup data, you'll see an  :::image type="icon
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Error getting data.](media/rollup/error-getting-data.png)
 
-To learn more about the service, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
+For more information about the service, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
 
 ## Change the column order or remove a rollup column
 

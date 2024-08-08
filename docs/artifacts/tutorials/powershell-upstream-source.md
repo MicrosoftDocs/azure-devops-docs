@@ -34,7 +34,7 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
 
     :::image type="content" source="media/add-upstream-source.png" alt-text="A screenshot showing how to add a new upstream source.":::
 
-1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Save** when you're done.
+1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Add** when you're done.
 
     :::image type="content" source="media/add-powershell-gallery-upstream.png" alt-text="A screenshot showing how to add the PowerShell Gallery as an upstream source.":::
 

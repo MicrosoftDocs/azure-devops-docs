@@ -46,7 +46,7 @@ Teams make their selections as follows:
 - Additionally, management teams may only focus on Features and Epics, while Feature teams may focus only on product backlog items such as User Stories (Agile), Product Backlog Items (Scrum), and Requirements (CMMI).
 
 > [!NOTE]  
-> Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
+> Teams can be assigned a maximum of 300 **Area Paths**. For more information, see [Work tracking, process, and project limits](work/object-limits.md). 
 
 For steps to define area paths and assign them to a team, see [Define area paths and assign to a team](set-area-paths.md). 
 
@@ -101,7 +101,7 @@ When you define a team, you define the team's:
 
 All Agile tools reference the Area Path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current **State** of a work item or its parent-child status.   
 
-Several tools also reference the team's default and selected Iteration Path or sprints. When you add a new work item from a team's backlog or Kanban board, the system assigns the team's **Default Area Path** and **Default Iteration Path** to it.  
+Several tools also reference the team's default and selected Iteration Path or sprints. When you add a new work item from a team's backlog or board, the system assigns the team's **Default Area Path** and **Default Iteration Path** to it.  
 
 > [!NOTE]   
 > New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint backlog or taskboard. 
@@ -139,7 +139,7 @@ Several tools also reference the team's default and selected Iteration Path or s
 
 :::row::: 
    :::column span="1":::
-   Kanban boards (see note 4)
+   Boards (see note 4)
    :::column-end:::
    :::column span="1":::
    Selected area path(s)
@@ -202,13 +202,13 @@ Several tools also reference the team's default and selected Iteration Path or s
 > 1. Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths).  
 > 2. Work items whose **State** equals *Closed*, *Done*, or *Removed* (corresponding to a *Completed* category state) don't appear on portfolio and product backlogs.  
 > 3. You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md)"> determine which work items appear on backlog and board views.   
-> 4. Kanban boards, sprint backlogs, and taskboards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md).  
+> 4. Boards, sprint backlogs, and taskboards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the board, sprint backlog, and task board. For more information, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md).  
 > 5. Work items whose **State** equals *Removed* don't appear on boards.   
 
 
 ## Structure hierarchical teams or scale agility within an enterprise 
 
-Although there's no concept of subteams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](../../organizations/settings/add-teams.md).
+Although there's no concept of subteams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. For more information, see [Add another team](../../organizations/settings/add-teams.md).
 
 Also, the following articles walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations: 
 - [Portfolio management](../../boards/plans/portfolio-management.md)
@@ -222,7 +222,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ![Web portal, Queries page, Query that uses In Group operator and team group name](../../boards/plans/media/query-in-group-email-team-work-in-progress.png)
 
-You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../organizations/notifications/at-mentions.md).  
+You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. For more information, see [Use &#64;mentions to further discussion](../../organizations/notifications/at-mentions.md).  
 
 ## Work on more than one team
 
@@ -241,8 +241,8 @@ Limit access to specific features by making a user a [Stakeholder](../security/g
 ## Summary 
 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
-- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-overview.md) you can use to track progress and update status  
-- The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
+- Every backlog has a corresponding [board](../../boards/boards/kanban-overview.md) you can use to track progress and update status  
+- The team's specified area and iteration paths determine which work items appear on the backlog and board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)   
 - To have work done by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md) 

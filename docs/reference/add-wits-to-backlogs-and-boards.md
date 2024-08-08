@@ -20,7 +20,7 @@ ms.date: 08/03/2021
 > [!IMPORTANT]  
 > This article applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](customize-work.md).   
 
-To satisfy select business processes, your team may want to track additional work item types (WITs) as requirements or as tasks. This way, you can add them and track them within the product and sprint backlogs or Kanban and task boards. 
+To satisfy select business processes, your team may want to track additional work item types (WITs) as requirements or as tasks. This way, you can add them and track them within the product and sprint backlogs or board and Taskboards. 
 
 For example, you may want to track different types of requirements based on their target customer, or different types of bugs based on their source. Here the Fabrikam Fiber team has added the Service App WIT to track work that supports their customer service team.   
 
@@ -72,7 +72,7 @@ You'll first export your work tracking definition files, update them, and then i
 
 ## Add a WIT to track it like a requirement   
 
-WITs that you add to the Requirement Category show up on the product backlog and Kanban board. You must make sure that the WIT definition contains required fields to support the Agile planning tools.  
+WITs that you add to the Requirement Category show up on the product backlog and board. You must make sure that the WIT definition contains required fields to support the Agile planning tools.  
 
 1. Export your process (Hosted XML) or your definition files (On-premises XML) as indicated in [First steps](#first-steps).
 2. Edit the WIT definition to support planning tools. 
@@ -191,7 +191,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
 
 4. Update or verify ProcessConfiguration definition: `RequirementBacklog` section for the WIT you're adding. Specifically, make sure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"` 
-	- Map each intermediate workflow state you want to have show up on the Kanban board to `type="InProgress"` 
+	- Map each intermediate workflow state you want to have show up on the board to `type="InProgress"` 
 	- Map the end of each workflow state to `type="Complete"`
 	- Make sure that you have only one State mapped to `type="Complete"`  
    For example, add the Pending workflow state:  
@@ -432,7 +432,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 
    Specifically, make sure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"` 
-	- Map each intermediate workflow state you want to have show up on the Kanban or task board to `type="InProgress"` 
+	- Map each intermediate workflow state you want to have show up on the board or Taskboard to `type="InProgress"` 
 	- Map the end of each workflow state to `type="Complete"` 
 	- Make sure that you have only one State mapped to `type="Complete"`  
    

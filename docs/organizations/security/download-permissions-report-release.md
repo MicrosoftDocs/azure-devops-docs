@@ -53,7 +53,7 @@ You can download the report for a specific release from the release's Security d
 
 ## Related articles  
 
-- [Set different levels of pipeline permissions](../../pipelines/policies/pipeline-permissions.md) 
+- [Set different levels of pipeline permissions](../../pipelines/policies/permissions.md#pipeline-permissions) 
 - [Manage permissions with command line tool](manage-tokens-namespaces.md) 
 - [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true)
 

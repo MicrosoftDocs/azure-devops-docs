@@ -68,15 +68,15 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Kanban board quickstart
+          - text: Board quickstart
             url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Kanban board overview
+          - text: Board overview
             url: ./boards/kanban-overview.md
           - text: Add columns
             url: ./boards/add-columns.md
-          - text: Customize your Kanban board
+          - text: Customize your board
             url: ./configure-customize.md
   - title: Implement Scrum
     linkLists:

@@ -88,11 +88,7 @@ SAFe® backlogs map to team, program, and portfolio backlogs. Out of the box, th
 
 You can customize your backlog and boards, even adding portfolio backlogs, as described in [Customize Azure Boards, Customize backlogs](safe-customize.md#custom-backlog).  
 
-The Kanban board view of each backlog is configurable by each team. 
-
-
-
-
+The board view of each backlog is configurable by each team. 
 
 <a id="iterations"></a>
 
@@ -126,7 +122,7 @@ You can use tags for a quick and easy way to map Features and Epics to their Val
 
 With tags that you add to work items, you can:
 
-- Filter any backlog or Kanban board
+- Filter any backlog or board
 - Create queries based on tags, and filter query results by tags
 - Create progress and trend charts or reports based on tags 
 

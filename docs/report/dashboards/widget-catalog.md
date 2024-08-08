@@ -185,7 +185,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="cfd-widget"></a>   
-      Displays the cumulative flow of backlog items based on the time frame, team, backlog level, and swimlane you select. Hover over each color within the chart to see the count of items for a particular Kanban column.  
+      Displays the cumulative flow of backlog items based on the time frame, team, backlog level, and swimlane you select. Hover over each color within the chart to see the count of items for a particular board column.  
       
       From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget). 
    :::column-end:::
@@ -354,8 +354,8 @@ In addition to the widgets listed here, you can add a work item query chart to y
       Provides quick access to open these Agile tools and team resources:     
       
       - [Backlog](../../boards/backlogs/create-your-backlog.md)   
-      - [Kanban board](../../boards/boards/kanban-overview.md)    
-      - [Task board](../../boards/sprints/task-board.md)    
+      - [Board](../../boards/boards/kanban-overview.md)    
+      - [Taskboard](../../boards/sprints/task-board.md)    
       - [Queries](../../boards/queries/using-queries.md)  
    :::column-end:::
 :::row-end:::
@@ -621,7 +621,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ## Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). For more information about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
 
 <a id="related-notes"></a>  
 

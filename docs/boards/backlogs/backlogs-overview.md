@@ -241,7 +241,7 @@ You can only use dragging to reorder or reparent work items assigned to area pat
 
 ## Display leaf node work items  
 
-For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For TFS 2018 and earlier versions, the board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
 
@@ -250,7 +250,7 @@ For TFS 2018 and earlier versions, the Kanban board only shows the leaf node wit
 You can use the following controls to change or filter your product backlog view. 
 
 > [!IMPORTANT]  
-> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state won't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
 ::: moniker range=">= azure-devops-2019"
 For more information about using each of these controls, see [Configure your backlog view](configure-your-backlog-view.md).

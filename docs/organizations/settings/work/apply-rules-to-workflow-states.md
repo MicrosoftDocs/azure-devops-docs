@@ -213,7 +213,7 @@ When defining workflow states and rules, we recommend that you consider the foll
 
 Workflow rules are applied when adding or modifying work items through any of the following interfaces: 
 - Web portal: Work item form, bulk updates, updates in query view  ​
-- Web portal: Kanban board or Taskboard, move work item to column​
+- Web portal: Board or Taskboard, move work item to column​
 - Visual Studio 2017 and earlier versions, work item form 
 - CSV file format: bulk import or update 
 - Excel​: bulk import or update 
@@ -537,9 +537,9 @@ To implement the above restrictions, the process administrator adds a custom *Ap
 
 #### Verify state transition restrictions 
 
-Once the rules are defined for the process and the project updated with the process, refresh your browser and check the operations through the work item form and from the Kanban browser.  
+Once the rules are defined for the process and the project updated with the process, refresh your browser and check the operations through the work item form and from the browser.  
 
-For the rules defined in the previous table, you should see the following State drop-down menus. Open the Kanban board and check the ability to move from one State to another. 
+For the rules defined in the previous table, you should see the following State drop-down menus. Open the board and check the ability to move from one State to another. 
 
 |**Proposed**|**Research**|**Design**|**Approved**|    
 |:----------:|:----------:|:--------:|:--------:|    

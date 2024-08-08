@@ -59,7 +59,7 @@ For an overview of all burndown/burnup charts available to you, see [Burndown an
 ::: moniker-end
 
 > [!NOTE]  
-> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
+> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
 ## The in-context Burndown Trend report
 

@@ -14,6 +14,8 @@ ms.date: 11/13/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+> [!NOTE]
+> The Azure DevOps Office integration is now considered feature complete. There are no plans to deprecate the functionality, however there will no longer be updates or improvements to this add in. Future investment will be made to the native tooling [Bulk import or update work items using CSV files](https://github.com/SamGrantham/azure-devops-docs-pr/blob/docs-editor/tfs-office-integration-issues-1719507337/docs/boards/queries/import-work-items-from-csv.md). If you are experiencing issues with the Azure DevOps Office integration that this article cannot solve, we encourage you to see if this alternative will meet your needs. All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). The software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in. For a list of prerequisites, see [Azure Boards and Office integration](https://github.com/SamGrantham/azure-devops-docs-pr/blob/docs-editor/tfs-office-integration-issues-1719507337/docs/boards/backlogs/office/track-work.md).
 All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). The software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in.  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
 
 If you don't see the **Team** ribbon in Microsoft Excel, as shown in the following image, you might want to resolve the issue with the procedures provided in this article. 
@@ -26,27 +28,25 @@ If you don't see the **Team** ribbon in Microsoft Excel, as shown in the followi
 ## Enable the Azure DevOps add-in 
 
 1.	From the Excel **File** menu, choose **Options**.  
-2.	Choose Add-ins and from the **Manage** picklist, choose **COM Add-ins**, and then choose **Go**.
+1. Choose Add-ins and from the **Manage** picklist, choose **COM Add-ins**, and then choose **Go**.
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Excel Options, Add-ins, Choose Com Add-ins.](media/excel-com-add-ins.png)
+> [!div class="mx-imgBorder"]
+1. Make sure that a check is placed in the **Team Foundation Add-in** checkbox. 
 
-3.	Make sure that a check is placed in the **Team Foundation Add-in** checkbox. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
-
+> [!div class="mx-imgBorder"]
+> ![Screenshot of COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
+   
 4.	Restart Excel. You should now see the **Team** ribbon. 
 
 If the **Team** ribbon doesn't appear at next launch, the load behavior of the add-in might be changed, so complete the following steps: 
 
 ### Update the registry 
 
-1.	Launch the Registry Editor from your Windows Start Menu by entering `regedit` in the Search or Run box.
+1. Launch the Registry Editor from your Windows Start Menu by entering `regedit` in the Search or Run box.
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
-
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
+   
 1. Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 
 > [!NOTE]
@@ -65,8 +65,21 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
  
 4.	Select **OK** and restart Excel. 
 
-	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
+	For more information about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
 
+## Check to see if add-in is disabled
+
+1.	From the Excel **File** menu, choose **Options**.
+1. Choose Add-ins and from the **Manage** picklist, choose **Disabled Items**, and then choose **Go**.
+
+      > [!div class="mx-imgBorder"]
+   > ![Screenshot of Excel Options, Add-ins, Choose Disabled Items.](media/excel-com-disabled-items.png)
+   
+1. If you see "Azure DevOps Add In" in the list, select it and click **Enable**.
+
+      > [!div class="mx-imgBorder"]
+   > ![Screenshot of disabled items dialog, Azure DevOps Add In checked.](media/excel-com-list-of-disabled-items.png) 
+   
 ## Office add-in doesn't load or open in Excel when Visual Studio fails
 
 To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you might need to repair Visual Studio. 
@@ -87,10 +100,10 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
 
 1. Open the Visual Studio Command Prompt and choose to run it as an administrator. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
-
-
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
+   
+   
 4. **For Microsoft 365**, run the following commands:   
 
    ```

@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 05/28/2024
+ms.date: 08/06/2024
 monikerRange: 'azure-devops'
 ---
 # Data protection overview
@@ -77,7 +77,7 @@ Regarding data redundancy and failover:
 
 To safeguard against accidental data loss, Microsoft employs point-in-time backups for both blobs stored in Azure Blob Storage and databases within Azure SQL Database. Each storage account maintains a separate copy of all blobs, with changes being appended to the existing data. These backups are immutable, eliminating the need to rewrite any existing storage during backup procedures.
 
-Azure SQL Database includes standard backup features, which are utilized by Azure DevOps. Your data is retained for 28 days, with these backups also being replicated in a paired region to facilitate recovery during a regional outage.
+Azure SQL Database includes standard backup features utilized by Azure DevOps. Your data is retained for 28 days, with these backups also being replicated in a paired region to facilitate recovery during a regional outage.
 
 You can recover deleted organizations or projects within the 28-day window following deletion. But, once this time period elapses, these entities are permanently deleted and can't be restored. While these backups serve as a crucial component for disaster recovery, it's essential for customers to practice appropriate data management and backup strategies to ensure comprehensive protection of their data.
 
@@ -148,7 +148,28 @@ The team reviews the results of these tests to identify other areas of improveme
 
 ### Credential security
 
-We use industry best practices to store your credentials in Azure DevOps. [Learn more about credential storage](credential-storage.md).
+Microsoft is committed to ensuring that your projects remain safe and secure, without exception. In Azure DevOps, your projects benefit from multiple layers of security and governance technologies, operational practices, and compliance policies. We enforce data privacy and integrity both at rest and in transit. In addition, we adhere to the following practices with respect to the credentials or secrets that Azure DevOps stores. To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
+
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+
+#### Personal access tokens (PATs)
+
+* We store a hash of the PAT.
+* Raw PATs generate in-memory on the server side. 32 bytes randomly generate through the RNGCryptoServiceProvider and get shared with the caller as a base-32-encoded string. This value is NOT stored.
+* PAT hash generates in-memory on the server side as an *HMACSHA256Hash* of the raw PAT using a 64-byte symmetric signing key stored in our key vault. 
+* Hash gets stored in our database.
+
+#### Secure shell (SSH) keys
+
+* We store a hash of the enclosing organization ID and the SSH public key.
+* Raw public keys get provided directly by the caller over SSL.
+* SSH hash generates in-memory on the server side as an *HMACSHA256Hash* of the organization ID and raw public key using a 64-byte symmetric signing key stored in our key vault.
+* Hash gets stored in our database.
+
+#### OAuth credentials (JWTs)
+
+* OAuth credentials issue as fully self-describing JSON web tokens (JWTs) and aren't stored in our service.
+* The claims in JWTs issued and presented to our service get validated using a certificate stored in our key vault.
 
 ### Reporting security flaws
 
@@ -215,7 +236,7 @@ Azure DevOps doesn't move or replicate customer data outside the chosen location
 > [!NOTE]
 > For builds and releases that run on Microsoft-provided macOS agents, your data is transferred to a GitHub datacenter in the United States.
 
-To learn more, see [Data locations for Azure DevOps](data-location.md).
+For more information, see [Data locations for Azure DevOps](data-location.md).
 
 ### Law enforcement access
 
@@ -247,7 +268,7 @@ You can be confident in other efforts that Microsoft makes on behalf of Azure De
 
 ### Internal adoption
 
-Teams across Microsoft are adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. We established guidelines to enable the adoption plans for other teams.
+Microsoft teams are adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. We established guidelines to enable the adoption plans for other teams.
 
 Large teams move more gradually than smaller ones, because of their investments in existing DevOps systems. For teams that move quickly, we established a project classification approach. It assesses risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases, with more planning.
 

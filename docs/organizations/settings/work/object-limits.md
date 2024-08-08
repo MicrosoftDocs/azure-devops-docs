@@ -94,8 +94,8 @@ Each backlog can display up to 10,000 work items. This is a limit on what the ba
 #### Additional notes:
 
 - Completed or closed work items don't display on the backlogs and boards once their **Changed Date** is greater than a year old. You can still list these items using a query. If you want them to show up on a backlog or board, then you can make a minor change to them which resets the clock for display.
-- Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md).
+- Avoid nesting backlog items of the same type. For more information, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
+- Avoid assigning the same area paths to more than one team. For more information, see [Limitations of multi-team board views](../../../boards/boards/kanban-overview.md).
 - By default, work item limits might be initially configured to lower values.
 
 ::: moniker-end
@@ -118,8 +118,8 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 
 #### Additional notes:
 
-- Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md).
+- Avoid nesting backlog items of the same type. For more information, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
+- Avoid assigning the same area paths to more than one team. For more information, see [Limitations of multi-team board views](../../../boards/boards/kanban-overview.md).
 
 For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md).
 
@@ -227,7 +227,7 @@ We recommend that you consider the following guidance in order to minimize perfo
 
 To reduce costs and to enhance scalability and performance, Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy. To ensure good performance and reduce the likelihood of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked.
 
-Most rate limits are reached through REST API calls or non-optimized queries. To learn more, see the following articles:
+Most rate limits are reached through REST API calls or non-optimized queries. For more information, see the following articles:
 
 - [Rate limits](../../../integrate/concepts/rate-limits.md)
 - [Best practices (to avoid hitting rate limits)](../../../integrate/concepts/integration-bestpractices.md)
@@ -242,7 +242,7 @@ When determining to migrate from on-premises to Azure DevOps Services, there are
 - Largest table size is above the recommended size
 - The database metadata size is above the supported size
 
-To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md) and [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md).
+For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md) and [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md).
 
 ## Related articles
 

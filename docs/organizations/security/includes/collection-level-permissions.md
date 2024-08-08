@@ -7,7 +7,7 @@ ms.date: 02/28/2022
 ---
 
  
-The following table lists the permissions assigned at the organization or collection-level. All of these permissions, except for the **Make requests on behalf of others** permission, are granted to members of the **Project Collection Administrators** group. For a description of each permission, see [Permissions and groups reference, Groups](../permissions.md#collection-level).
+The following table lists the permissions assigned at the organization or collection level. All of these permissions, except for the **Make requests on behalf of others** permission, are granted to members of the **Project Collection Administrators** group. For more information, see [Permissions and groups reference, Groups](../permissions.md#collection-level).
  
 :::row:::
    :::column span="":::

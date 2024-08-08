@@ -100,7 +100,7 @@ The following sections describe arguments and options of the `unlabel` command.
 
 The `unlabel` command of the `tf` command-line utility removes an item from an existing label in the Azure DevOps server. For an introduction to labels, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md). For information about how to assign a label to a set of files and folders, see [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
 
-If you remove all items from a label in the Azure DevOps server, that label is deleted. You can also delete a label by using the `tf label /delete` command. To learn more about the existing labels in the system, see [Labels command](labels-command.md).
+If you remove all items from a label in the Azure DevOps server, that label is deleted. You can also delete a label by using the `tf label /delete` command. For more information about the existing labels in the system, see [Labels command](labels-command.md).
 
 For more information about how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 

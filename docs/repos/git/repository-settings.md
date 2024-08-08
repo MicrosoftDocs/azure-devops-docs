@@ -406,12 +406,14 @@ The following table summarizes the policies you can define to customize a branch
 
 
 ::: moniker range=">= azure-devops-2020"
-- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+::: moniker-end
+::: moniker range="azure-devops"
 - If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
  
 ::: moniker range="< azure-devops-2020"
-- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 ::: moniker-end
 
 
@@ -474,15 +476,15 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker range="azure-devops" 
 
-You can use Azure DevOps CLI to list respositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
+You can use Azure DevOps CLI to list repositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
 
 [List repositories](#repos-list) &#124; [List repository details](#repos-show) &#124; [Update or rename a repository](#repos-update)  
-[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update respository policy](#update-policy)
+[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update repository policy](#update-policy)
 
 
 You can use Azure CLI to list, show, and update policies for a branch or repository, or for all repositories in a project.
 
-<a name="repos-list" />
+<a name="repos-list"></a>
 
 ### List repositories
 
@@ -521,7 +523,7 @@ ac228555-ea89-4881-9ace-dfa065baf7d3  Test 1-2-3      main              Fabrikam
 ```
 
 
-<a name="repos-show" />
+<a name="repos-show"></a>
 
 ### List repository details
 
@@ -590,7 +592,7 @@ az repos show --repository contosoREPO
 }
 ```
 
-<a name="repos-update" />
+<a name="repos-update"></a>
 
 ### Update a repository  
 
@@ -684,7 +686,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ```
 
-<a id="update-policy"/> 
+<a id="update-policy"></a>
 
 
 ### Update policies
@@ -886,7 +888,7 @@ Enable this setting to automatically complete work items when linked pull reques
 
 ### Commit mention work item resolution
 
-Enable this setting to automatically complete those work items when you successfully complete the PR. To learn more, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
+Enable this setting to automatically complete those work items when you successfully complete the PR. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
 ### Work item transition preferences

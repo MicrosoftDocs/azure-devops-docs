@@ -748,8 +748,8 @@ You must use YAML to consume output variables in a different job.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
-There's no [**az pipelines**](/cli/azure/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker range="azure-devops"
+There's no [**az pipelines**](/cli/azure/pipelines) command that applies to using output variables from tasks.
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
@@ -1044,8 +1044,8 @@ You can't pass a variable from one job to another job of a build pipeline, unles
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
-There's no [**az pipelines**](/cli/azure/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker range="azure-devops"
+There's no [**az pipelines**](/cli/azure/pipelines) command that applies to setting variables in scripts.
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
@@ -1090,8 +1090,8 @@ For more information about counters and other expressions, see [expressions](exp
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
-There's no [**az pipelines**](/cli/azure/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker range="azure-devops"
+There's no [**az pipelines**](/cli/azure/pipelines) command that applies to setting variables using expressions.
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
@@ -1316,8 +1316,8 @@ Variables are expanded once when the run is started, and again at the beginning 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
-There's no [**az pipelines**](/cli/azure/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker range="azure-devops"
+There's no [**az pipelines**](/cli/azure/pipelines) command that applies to the expansion of variables.
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]

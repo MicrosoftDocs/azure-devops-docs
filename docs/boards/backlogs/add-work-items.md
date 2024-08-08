@@ -20,7 +20,7 @@ You add work items to plan and manage your project. Different types of work item
 
 
 > [!NOTE]  
-> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or Kanban board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your Kanban board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
+> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -270,7 +270,7 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md) or 
-> [Kanban quickstart](../boards/kanban-quickstart.md) 
+> [Kanban board quickstart](../boards/kanban-quickstart.md) 
 
 
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/about-work-items.md#work-item-form-controls).  

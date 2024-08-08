@@ -40,7 +40,7 @@ You can set up approvals at the start of a stage (predeployment approvals), at t
     :::image type="content" source="media/post-deployment-approvals.png" alt-text="A screenshot showing how to set up post-deployment approvals.":::
 
 > [!NOTE]
-> Deployment approvers must have **View releases** [permissions](../../policies/release-pipeline-permissions.md).
+> Deployment approvers must have **View releases** [permissions](../../policies/permissions.md#release-pipeline-permissions).
 
 - **Approvers**:
 When a group is specified as approvers, only one user from that group is needed to approve, resume, or reject deployment.

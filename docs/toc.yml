@@ -223,7 +223,7 @@
     displayName: oauth, secure, resources, access, credentials, account, approve
     href: ./service-hooks/authorize.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Service hook consumers
-    displayName: subscription, event, consumer, action, storage, webhooks, bus, campfire, hipchat, jenkins, kato, trello, zendesk
+    displayName: subscription, event, consumer, action, storage, webhooks, bus, jenkins, trello, zendesk
     href: ./service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Service hook events
     displayName: build, release, deployment, created, updated, deleted, restored, commented, changed, approval

@@ -16,7 +16,7 @@ ms.date: 12/15/2017
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
-Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
+Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, board, and task board and are customizable for each team you add to project.
 
 Configuration elements specify the work item types (WITs), default columns, fields used by the tools, and other elements. The main configurations made determine which items will display for the portfolio, product, and sprint backlogs by defining the **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog** sections of the process configuration XML definition file. In addition, process configuration defines the workflow mapping of state-to-state category for all WITs that require mapping.
 
@@ -59,7 +59,7 @@ To update the process configuration for a project, you export the XML definition
 
 You can customize the following elements for the product backlog, sprint backlogs, and portfolio backlogs:
 
--   **State category mappings**:&#160;&#160;Map workflow states to state categories  (previously referred to as a metastate). These mappings support the display of all Agile planning tools, including the Kanban and task boards.
+-   **State category mappings**:&#160;&#160;Map workflow states to state categories  (previously referred to as a metastate). These mappings support the display of all Agile planning tools, including the board and Taskboards.
 
 -   **Quick add panel**:&#160;&#160;Specify the WITs and work item fields that appear for quickly adding items to the backlog.
 
@@ -201,7 +201,7 @@ You configure backlogs within the XML sections that appear in the following samp
 
 Several WITs require their workflow states to be mapped to a state category. Workflow states define how a work item progresses from first activation or creation to closed or complete. For example, the states defined for the Scrum product backlog item define a progression of four states, from **New**, **Approved**, **Committed**, to **Done**, and also includes a fifth state, **Removed**, to account for a state removed from the backlog without being implemented. Workflow states are associated with the `value` attribute. 
 
-State categories, on the other hand, determine how the Agile planning tools treat each workflow state. The primary state categories used by the backlog and task board are **Proposed**, **InProgress**, and **Complete**. State categories are associated with the `type` attribute. To learn more, see  [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). 
+State categories, on the other hand, determine how the Agile planning tools treat each workflow state. The primary state categories used by the backlog and task board are **Proposed**, **InProgress**, and **Complete**. State categories are associated with the `type` attribute. For more information, see  [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). 
 
 By associating each workflow state to a state category, the background operations performed to display the backlog and task boards know how to correctly interpret the status of each work item. For example, the following mappings are defined for the Scrum product backlog.
 
@@ -249,8 +249,8 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    - Agile: Use for all work item types.   
      - **Proposed**: Indicates work items that are new, not yet committed, or not yet being worked on. 
      - **InProgress**: Indicates work items that have been committed or are actively being worked on.
-     - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-overview.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
-     Once a workflow state transitions to a state that is associated with the **Complete** metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.<br/><br/>
+     - **Complete**: Indicates work items that have been implemented. For the [board](../../boards/boards/kanban-overview.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
+     Once a workflow state transitions to a state that is associated with the **Complete** metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the board.<br/><br/>
    Work items in a workflow state that aren&#39;t mapped to one of the state categories don&#39;t appear on the backlog or board.
    - Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the **Resolved** state category which indicates bugs that have been resolved.<br/><br/>
    > [!NOTE]  
@@ -463,7 +463,7 @@ The following table describes the additional elements used to define the state c
 
    :::column-end:::
    :::column span="2":::
-   Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the **My Work** feature in Team Explorer updates the bug state as developers move bugs using **My Work**. To learn more, see [Get your code reviewed (TFVC)](../../repos/tfvc/get-code-reviewed-vs.md).
+   Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the **My Work** feature in Team Explorer updates the bug state as developers move bugs using **My Work**. For more information, see [Get your code reviewed (TFVC)](../../repos/tfvc/get-code-reviewed-vs.md).
 
    ```
    <BugWorkItems category="CategoryName"  
@@ -561,7 +561,7 @@ The following table describes the additional elements used to define the state c
 :::row-end:::
 
 > [!NOTE]    
-><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](/previous-versions/azure/devops/reference/upgrade/new-features-added#test-management).  
+><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. For more information, see [Test Plan and Test Suite features](/previous-versions/azure/devops/reference/upgrade/new-features-added#test-management).  
 
 
 <a id="fields">  </a>
@@ -908,7 +908,7 @@ The color you associate with your work item states will appear across the produc
 
 - Work item form (web portal, see [New work item experience](../process/new-work-item-experience.md))  
 - Work item form links control (web portal, see [LinksControlOptions XML elements reference](linkscontroloptions-xml-elements.md))     
-- Cards displayed on the [Kanban board](../../boards/boards/kanban-overview.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
+- Cards displayed on the [board](../../boards/boards/kanban-overview.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
 - All backlogs (add State via column options)  
 - Query results (add State via column options)
 

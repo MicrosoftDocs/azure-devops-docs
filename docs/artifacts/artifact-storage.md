@@ -59,7 +59,7 @@ The project-level view provides an overview of your total storage usage as well 
     :::image type="content" source="media/packages-proj-scoped-feeds.png" alt-text="A screenshot showing the total storage for packages in project-scoped feeds.":::
 
 > [!NOTE]
-> Azure Artifacts provides 2GiB of free storage for each organization. After reaching the maximum storage limit, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, we recommend [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to ensure you have the appropriate resources.
 
 ## Related articles
 

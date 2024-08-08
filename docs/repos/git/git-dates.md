@@ -73,7 +73,7 @@ Many `git log` options can help you understand dates better.
 For example, if you pass the `--date` flag, you can determine how dates are displayed.
 This flag can be useful for normalizing time zones, because Git displays dates in their original time zone by default. It can also be useful for changing the date display string.
 
-To learn more about the formatting options, see the [git-log man page](https://git-scm.com/docs/git-log).
+For more information about the formatting options, see the [git-log man page](https://git-scm.com/docs/git-log).
 
 ## Change Git dates
 

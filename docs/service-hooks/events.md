@@ -57,6 +57,7 @@ ms.date: 03/04/2024
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
+  * [Pull request commented on](#git.pullrequest.commented-on)
 
 * **Work items**
   * [Work item commented on](#workitem.commented)
@@ -2421,6 +2422,156 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
     }
   },
   "createdDate": "2016-09-19T13:03:27.2813828Z"
+}
+```
+
+<a name="git.pullrequest.commented-on"></a>
+
+### Pull request commented on
+
+Event: A pull request is commented on.
+
+* Publisher ID: `tfs`
+* Event ID: `git-pullrequest-comment-event`
+* Resource Name: `pullrequest`
+
+#### Settings
+
+ * `repository`: The repository that pull request was commented on
+   * Data type: `guid`
+ * `branch`: The target branch of the pull request
+
+#### Sample payload
+
+```json
+{
+    "id": "af07be1b-f3ad-44c8-a7f1-c4835f2df06b",
+    "eventType": "ms.vss-code.git-pullrequest-comment-event",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Jamal Hartnett has edited a pull request comment",
+        "html": "Jamal Hartnett has <a href=\"https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1?discussionId=5\">edited</a> a pull request comment",
+        "markdown": "Jamal Hartnett has [edited](https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1?discussionId=5) a pull request comment"
+    },
+    "detailedMessage": {
+        "text": "Jamal Hartnett has edited a pull request comment\r\nThis is my comment.\r\n",
+        "html": "Jamal Hartnett has <a href=\"https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1?discussionId=5\">edited</a> a pull request comment<p>This is my comment.</p>",
+        "markdown": "Jamal Hartnett has [edited](https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1?discussionId=5) a pull request comment\r\nThis is my comment.\r\n"
+    },
+    "resource": {
+        "comment": {
+            "id": 2,
+            "parentCommentId": 1,
+            "author": {
+                "displayName": "Jamal Hartnett",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
+                "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+                "uniqueName": "fabrikamfiber4@hotmail.com",
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+            },
+            "content": "This is my comment.",
+            "publishedDate": "2014-06-17T16:55:46.589889Z",
+            "lastUpdatedDate": "2014-06-17T16:58:33.123889Z",
+            "lastContentUpdatedDate": "2014-06-17T16:58:33.123889Z",
+            "commentType": "text",
+            "_links": {
+                "self": {
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1/threads/5/comments/2"
+                },
+                "repository": {
+                    "href": "http://joscol2/DefaultCollection/ebed510c-62eb-474b-965f-fd151ebb82e4/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079"
+                },
+                "threads": {
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1/threads/5"
+                }
+            }
+        },
+        "pullRequest": {
+            "repository": {
+                "id": "4bc14d40-c903-45e2-872e-0462c7748079",
+                "name": "Fabrikam",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+                "project": {
+                    "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                    "name": "Fabrikam",
+                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                    "state": "wellFormed",
+                    "visibility": "unchanged",
+                    "lastUpdateTime": "0001-01-01T00:00:00"
+                },
+                "defaultBranch": "refs/heads/master",
+                "remoteUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam"
+            },
+            "pullRequestId": 1,
+            "status": "active",
+            "createdBy": {
+                "displayName": "Jamal Hartnett",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
+                "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+                "uniqueName": "fabrikamfiber4@hotmail.com",
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+            },
+            "creationDate": "2014-06-17T16:55:46.589889Z",
+            "title": "my first pull request",
+            "description": " - test2\r\n",
+            "sourceRefName": "refs/heads/mytopic",
+            "targetRefName": "refs/heads/master",
+            "mergeStatus": "succeeded",
+            "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+            "lastMergeSourceCommit": {
+                "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+            },
+            "lastMergeTargetCommit": {
+                "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+            },
+            "lastMergeCommit": {
+                "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+            },
+            "reviewers": [
+                {
+                    "reviewerUrl": null,
+                    "vote": 0,
+                    "displayName": "[Mobile]\\Mobile Team",
+                    "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+                    "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
+                    "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+                    "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
+                    "isContainer": true
+                }
+            ],
+            "commits": [
+                {
+                    "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
+                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+                }
+            ],
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1",
+            "_links": {
+                "web": {
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1#view=discussion"
+                },
+                "statuses": {
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1/statuses"
+                }
+            }
+        }
+    },
+    "resourceVersion": "2.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+        },
+        "account": {
+            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+        },
+        "project": {
+            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+        }
+    },
+    "createdDate": "2024-07-17T21:34:22.338Z"
 }
 ```
 

@@ -337,7 +337,7 @@ You can apply a template to a single work item or do a bulk update of several wo
  
    :::image type="content" source="media/templates/bulk-apply-template-vsts-s136.png" alt-text="Screenshot of Bulk update several work items.":::
 
-3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
+3. Field changes are automatically applied and work items saved. For more information about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 

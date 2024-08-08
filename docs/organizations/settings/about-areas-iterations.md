@@ -58,9 +58,9 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 > [!NOTE]  
-> Projects are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
+> Projects are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. For more information, see [Work tracking, process, and project limits](work/object-limits.md).
 > 
-> Also, while you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md).  
+> Also, while you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. For more information, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).  
 
 As needed, you can do the following actions at any time: 
 
@@ -101,7 +101,7 @@ Use the following guidance to configure **Iteration Paths** for your project and
 5. Each team should assign an iteration path to their work items that falls under the **Backlog iteration** path. Those work items will then show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 > [!NOTE]  
-> Projects are limited to defining a maximum of 10,000 **Iteration Paths**, and assigning a maximum of 300 **Iteration Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
+> Projects are limited to defining a maximum of 10,000 **Iteration Paths**, and assigning a maximum of 300 **Iteration Paths** to a single team. For more information, see [Work tracking, process, and project limits](work/object-limits.md).
 
 
 As needed, you can do the following actions at any time: 

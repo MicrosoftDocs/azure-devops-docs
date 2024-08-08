@@ -28,9 +28,6 @@ Query clauses that specify a string or integer field can use the operators liste
 - In, Not In  
 - Was Ever  
 
-<a id= "picklist-query-examples" />
-
-
 ## Picklist query examples 
 
 Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).   

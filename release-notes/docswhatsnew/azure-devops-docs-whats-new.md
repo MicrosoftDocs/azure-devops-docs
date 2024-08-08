@@ -1,72 +1,79 @@
 ---
-title: "Azure DevOps docs: What's new for April 1, 2024 - April 30, 2024"
-description: "What's new in the Azure DevOps docs for April 1, 2024 - April 30, 2024."
-ms.date: 05/07/2024
+title: "Azure DevOps docs: What's new for June 1, 2024 - June 30, 2024"
+description: "What's new in the Azure DevOps docs for June 1, 2024 - June 30, 2024."
+ms.date: 07/09/2024
 ---
 
-# Azure DevOps docs: What's new for April 1, 2024 - April 30, 2024
+# Azure DevOps docs: What's new for June 1, 2024 - June 30, 2024
 
-Welcome to what's new in the Azure DevOps docs from April 1, 2024 through April 30, 2024. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from June 1, 2024 through June 30, 2024. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
 ### Updated articles
 
-- [User and permissions management FAQs](/azure/devops/organizations/accounts/faq-user-and-permissions-management)
-- [Data protection overview](/azure/devops/organizations/security/data-protection)
+- [Permissions lookup guide for Azure DevOps](/azure/devops/organizations/security/permissions-lookup-guide)
+- [Security groups, service accounts, and permissions reference](/azure/devops/organizations/security/permissions)
+- [Use personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
 
 ## Artifacts
 
+### New articles
+
+- [Publish a package to an Azure Artifacts feed](/azure/devops/artifacts/get-started-artifacts-ai)
+
 ### Updated articles
 
-- [Connect to Azure Artifacts feeds (dotnet)](/azure/devops/artifacts/nuget/dotnet-setup)
-- [Connect to Azure Artifacts feeds (NuGet.exe)](/azure/devops/artifacts/nuget/nuget-exe)
-- [Publish and restore NuGet packages from the command line (NuGet.exe)](/azure/devops/artifacts/nuget/publish)
-- [Publish and restore NuGet packages from the command line (dotnet)](/azure/devops/artifacts/nuget/dotnet-exe)
-- [Use packages from NuGet Gallery](/azure/devops/artifacts/nuget/upstream-sources)
-- [Publish and download Universal Packages in Azure Artifacts](/azure/devops/artifacts/quickstarts/universal-packages)
-- [Connect your npm project to Azure Artifacts feeds](/azure/devops/artifacts/npm/npmrc)
+- [Restore Maven packages from your Azure Artifacts feed](/azure/devops/artifacts/maven/install)
+- [Connect your Maven project to an Azure Artifacts feed](/azure/devops/artifacts/maven/pom-and-settings)
+- [What are Azure Artifacts feeds?](/azure/devops/artifacts/concepts/feeds)
+- [Quickstart: Get started with NuGet packages in Azure Artifacts](/azure/devops/artifacts/get-started-nuget)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Use work item templates](/azure/devops/boards/backlogs/work-item-template)
-- [Add tasks or child items as checklist items](/azure/devops/boards/boards/add-task-checklists)
-- [Copy or clone work items and more](/azure/devops/boards/backlogs/copy-clone-work-items)
-- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items)
+- [Resolve Azure DevOps Office integration issues](/azure/devops/boards/backlogs/office/tfs-office-integration-issues)
 
 ## Azure Pipelines
 
+### New articles
+
+- [Access a private key vault from your pipeline](/azure/devops/pipelines/release/key-vault-access)
+
 ### Updated articles
 
-- [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
-- [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent)
-- [Expressions](/azure/devops/pipelines/process/expressions)
-- [UI testing considerations](/azure/devops/pipelines/test/ui-testing-considerations)
-- [Self-hosted Windows agents (2.x)](/azure/devops/pipelines/agents/v2-windows-agent)
+- [Access a private key vault from your pipeline](/azure/devops/pipelines/release/key-vault-access)
+- [Manage security in Azure Pipelines](/azure/devops/pipelines/policies/permissions)
+- [Pipeline conditions](/azure/devops/pipelines/process/conditions)
+- [Manage your pipeline with Azure CLI](/azure/devops/pipelines/get-started/manage-pipelines-with-azure-cli)
+- [YAML vs Classic Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
 - [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
-- [Add an admin role to a protected resource](/azure/devops/pipelines/library/add-resource-protection)
-- [Define variables](/azure/devops/pipelines/process/variables)
-- [Self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent)
-- [Azure Pipelines agents](/azure/devops/pipelines/agents/agents)
+- [Determine your approach for securing YAML pipelines](/azure/devops/pipelines/security/approach)
+- [Securely use variables and parameters in your pipeline](/azure/devops/pipelines/security/inputs)
+- [Other security considerations for Azure Pipelines](/azure/devops/pipelines/security/misc)
+- [Securing Azure Pipelines](/azure/devops/pipelines/security/overview)
+- [Secure pipeline resources](/azure/devops/pipelines/security/resources)
+- [Protect secrets in Azure Pipelines](/azure/devops/pipelines/security/secrets)
+- [Secure access to Azure Repos from pipelines](/azure/devops/pipelines/security/secure-access-to-repos)
+- [Use templates for security](/azure/devops/pipelines/security/templates)
+- [Publish NuGet packages with Azure Pipelines (YAML/Classic)](/azure/devops/pipelines/artifacts/nuget)
+- [Run a self-hosted agent in Docker](/azure/devops/pipelines/agents/docker)
 - [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
 
 ## Azure Repos
 
-### New articles
-
-- [Security overview](/azure/devops/repos/security/github-advanced-security-security-overview)
-
 ### Updated articles
 
-- [Azure Repos with Slack](/azure/devops/repos/integrations/repos-slack)
+- [Use Git tags](/azure/devops/repos/git/git-tags)
 - [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
 - [Secret scanning](/azure/devops/repos/security/github-advanced-security-secret-scanning)
+- [Branch policies and settings](/azure/devops/repos/git/branch-policies)
+- [View file changes using annotate in Visual Studio](/azure/devops/repos/tfvc/view-file-changes-using-annotate)
 
-## Project
+## Azure Test Plans
 
-### Updated articles
+### New articles
 
-- [Project management and navigation glossary](/azure/devops/project/navigation/glossary)
+- [Custom fields](/azure/devops/test/custom-fields)
 

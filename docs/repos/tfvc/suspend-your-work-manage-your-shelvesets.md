@@ -19,7 +19,7 @@ For various reasons, sometimes you need to set aside some or all of your work th
 
 - **Interruption:** You have pending changes that aren't ready to check in, but you need to work on a different task.  
 - **Collaboration:** You have pending changes that aren't ready to check in, but you need to share them with another team member.  
-- **Code review:** You want another team member to review your pending changes. To learn more about code reviews, see [Day in the life of a devops developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
+- **Code review:** You want another team member to review your pending changes. For more information about code reviews, see [Day in the life of a devops developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
 - **Private build:** Before you check in your changes, you want to use your automated build system to build and test your code.  
 - **Backup:** You have work in progress that you can't finish but want to make a backup copy of. You want the backup copy to be stored on your server and available to other team members.  
 - **Handoff:** You have work in progress that you want to hand off to another team member.
@@ -28,7 +28,7 @@ In these scenarios and others, you can move your [pending changes](develop-code-
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 [!INCLUDE [Visual Studio versions with My Work and Code Review features](includes/note-my-work-code-review-support.md)]
  

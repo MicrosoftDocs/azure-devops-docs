@@ -145,10 +145,10 @@ For more information, see:
 
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards. You can also use them to query on work items. For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md).
 
-The following image illustrates a Kanban board filtered on the **web** keyword that displays cards with the `Web` tag.
+The following image illustrates a board filtered on the **web** keyword that displays cards with the `Web` tag.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot that shows a Kanban board filtered by using keyword search.](backlogs/media/filter-boards/filter-kb-text-web-services.png)
+> ![Screenshot that shows a board filtered by using keyword search.](backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 #### Best practice tips
 
@@ -159,7 +159,7 @@ The following image illustrates a Kanban board filtered on the **web** keyword t
 For more information, see:
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
-- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
+- [Filter your board](./backlogs/filter-backlogs-boards-plans.md)
 - [Create a wiki for your project](../project/wiki/wiki-create-repo.md)
 
 ## Forecast and milestone planning
@@ -193,7 +193,7 @@ Getting good at estimates and having predictable team velocities are useful team
 
 ### Update your Features board
 
-With a forecast of when a feature ships, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the Kanban board, as shown in the following image.
+With a forecast of when a feature ships, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the board, as shown in the following image.
 
 :::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Screenshot that shows a Features board with updated iteration paths.":::
 
@@ -295,11 +295,11 @@ For more information, see:
 
 The three main tools you should use to review progress and deliverables are:
 
-- Features Kanban board
+- Features board
 - Features backlog with rollup columns
 - Delivery plans
 
-### Features Kanban board
+### Features board
 
 Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board, including in-progress columns like **Need more info**, **On Deck**, **In Progress**, and **Customer Rollout**. These columns provide a more natural set of states as features get proposed, researched, designed, developed, and then deployed to production.
 
@@ -329,7 +329,7 @@ To review features delivered across several teams, configure a delivery plan. De
 
 ### Best practice tips
 
-- Customize your Features Kanban board to support your team's processes.
+- Customize your Features board to support your team's processes.
 - Add fields to cards so that you can update their values quickly and easily.
 - Update the iteration path (sprint) of features as you gain clarity about when they ship.
 - Review the Features board to talk through status, blocks/issues/risks/changes, and update status.
@@ -339,9 +339,9 @@ To review features delivered across several teams, configure a delivery plan. De
 
 For more information, see:
 
-- [Add columns to your Kanban board](boards/add-columns.md)
+- [Add columns to your board](boards/add-columns.md)
 - [Customize cards](boards/customize-cards.md)
-- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
+- [Filter your board](./backlogs/filter-backlogs-boards-plans.md)
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team delivery plans](plans/review-team-plans.md)
 

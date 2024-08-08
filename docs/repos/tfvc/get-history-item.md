@@ -34,7 +34,7 @@ Use the Visual Studio **History** window to get detailed historical data about a
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Open the History window
 
@@ -51,7 +51,7 @@ The **History** window displays the historical data about the item in two tabs:
 
 -   The [Labels tab](get-history-item.md#labels_tab) lists every label that has been applied to the item.
 
-<a name="changesets_tab"><a/>
+<a name="changesets_tab"></a>
 
 ## Changesets tab
 
@@ -185,7 +185,7 @@ By using the **Changesets** tab, you can do the following tasks:
    :::column-end:::
 :::row-end:::
 
-<a name="labels_tab"><a/>
+<a name="labels_tab"></a>
 
 ## Labels tab
 

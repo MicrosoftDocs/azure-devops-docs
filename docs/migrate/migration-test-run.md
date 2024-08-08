@@ -528,19 +528,19 @@ Start a migration by using the Data Migration Tool's **import** command. The mig
 To get started, open a Command Prompt window, and change directories to the path to the Data Migration Tool. We recommended that you review the help text provided with the tool. Run the following command to see the guidance and help for the migration command:
 
 ```cmdline
-Migrator migration /help
+Migrator import /help
 ```
 
 The command to queue a migration has the following structure:
 
 ```cmdline
-Migrator migration /importFile:{location of migration specification file}
+Migrator import /importFile:{location of migration specification file}
 ```
 
 The following example shows a completed migration command:
 
 ```cmdline
-Migrator migration /importFile:C:\DataMigrationToolFiles\migration.json
+Migrator import /importFile:C:\DataMigrationToolFiles\migration.json
 ```
 
 After the validation passes, sign in to Microsoft Entra ID with an identity that's a member of the same Microsoft Entra tenant as the identity map log file was built against. The signed in user is the owner of the imported organization. 

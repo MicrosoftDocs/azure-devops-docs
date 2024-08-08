@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 12/21/2023
+ms.date: 07/02/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,25 +17,36 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use a personal access token (PAT) as an alternate password to authenticate into Azure DevOps. In this article, we show you how to create, use, modify, and revoke PATs for Azure DevOps.
-
-The following video shows you how to create and use a PAT.
-> [!VIDEO 5a2c1619-4af3-4188-8016-aafd49db0d8f]
+A Personal Access Token (PAT) can serve as an alternative password for authenticating into Azure DevOps. This article guides you through the process of creating, utilizing, modifying, and revoking PATs for Azure DevOps.
 
 ## About PATs
 
-A personal access token contains your security credentials for Azure DevOps. A PAT identifies you, your accessible organizations, and scopes of access. As such, they're as critical as passwords, so you should treat them the same way.
+A Personal Access Token (PAT) serves as your security credentials for Azure DevOps. This PAT not only identifies you but also determines your accessibility and scope of access. Hence, PATs are as important as passwords and should be handled with the same level of caution.
 
-If you're working within Microsoft tools, then your Microsoft account (MSA) or Microsoft Entra ID is an acceptable and well-supported approach. But, if you're working with third-party tools that don't support Microsoft or Microsoft Entra accounts – or you don't want to provide your primary credentials to the tool – use PATs to limit your risk.
+If you're utilizing Microsoft tools, then your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. However, if you're using third-party tools that don't support Microsoft or Microsoft Entra accounts, or if you're reluctant to share your primary credentials with these tools, PATs are a safer alternative.
 
-You can create and manage your PATs through one of the following ways:
+Create and manage PATs in the following two ways:
 
-* the user interface in your user settings, which is described in detail in this article
-* through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md)
+* **User interface (UI):** Through user settings, as detailed in this article
+* [**PAT Lifecycle Management API**](manage-personal-access-tokens-via-api.md)
 
-To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
+To establish PATs for non-Microsoft tools, you can either use [Git credential managers](../../repos/git/set-up-credential-managers.md) or generate them manually. We recommend you to review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the appropriate authentication mechanism. PATs serve as a straightforward alternative for smaller projects that don't need an extensive solution. Unless a credential manager is in use, users must input their credentials each time.
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
+
+## Changes to format
+
+As of July 2024, we made significant changes to the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This change in PAT format follows the new format recommended across all Microsoft products. We anticipate that the inclusion of more identifiable bits will improve the false positive detection rate of these secret detection tools and enable us to better mitigate any detected leaks faster.
+
+Key changes:
+* **Increased token length:** The new tokens are longer, now 84 characters in total. Out of these, 52 characters are randomized data. This increased length improves overall entropy, making the tokens more resistant to potential brute force attacks.
+* **Fixed signature:** Tokens issued by our service include a fixed `AZDO` signature at positions 76-80.
+
+Action required:
+* **Regenerate existing PATs:** We strongly recommend regenerating all PATs currently in use to take advantage of these security enhancements.
+* **Integrator support:** Integrators should update their systems to accommodate both the new and existing token lengths.
+
+As both formats remain valid for the foreseeable future, we are actively encouraging customers to transition to the new 84-character format. As adoption of the new format increases, we will consider retiring the older 52-character format and all tokens issued in that style.
 
 ## Related articles
 
@@ -47,6 +58,10 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 ::: moniker range="azure-devops"
 
 ## FAQs
+
+### Q: Why can't I edit or regenerate a PAT scoped to a single organization?
+
+A: Ensure you're signed into the organization where your PAT is scoped. You can ***view*** all of your PATs while signed into any organization in the same Microsoft Entra ID, but you can only ***edit*** organization-scoped tokens when you're signed into the organization to which they're scoped.
 
 ### Q: What happens to a PAT if a user account is disabled?
 
@@ -73,6 +88,6 @@ If you want to publish your packages using Azure Pipelines, use the [NuGet Authe
 
 ### Q: Why did my PAT stop working?
 
-A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days is sufficient for many, but you may need to sign in more often than that depending upon your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
+A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days are sufficient for many, but you may need to sign in more often than that depending upon your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
 
 ::: moniker-end

@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/26/2024
+ms.date: 06/19/2024
 ---
 
 # Allowed IP addresses and domain URLs
@@ -274,7 +274,7 @@ Ensure the following domain URLs are allowed for NuGet connections:
 
 ``` NuGetDomainURLs
 https://azurewebsites.net
-https://nuget.org
+https://*.nuget.org
 ```
 
 > [!NOTE]

@@ -206,7 +206,7 @@ You can define bugs from several different Azure DevOps tools. These include bac
 
 ### Add a bug from your backlog or board 
 
-If your team chose to *manage bugs with requirements*, you can define bugs from your product backlog or Kanban board. For more information, see [Create your product backlog](create-your-backlog.md) or [Start using your Kanban board](../boards/kanban-quickstart.md). 
+If your team chose to *manage bugs with requirements*, you can define bugs from your product backlog or board. For more information, see [Create your product backlog](create-your-backlog.md) or [Start using your board](../boards/kanban-quickstart.md). 
 
 - **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
@@ -214,20 +214,20 @@ If your team chose to *manage bugs with requirements*, you can define bugs from 
 
 - **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to add a bug from  Kanban board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
+	> ![Screenshot to add a bug from board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
 
 > [!TIP]    
-> When you add a bug from your product backlog or Kanban board, the bug is automatically assigned the default Area Path and Iteration Path defined for the team. For more information, see [Team defaults referenced by backlogs and boards](../../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
+> When you add a bug from your product backlog or board, the bug is automatically assigned the default Area Path and Iteration Path defined for the team. For more information, see [Team defaults referenced by backlogs and boards](../../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
 
 
 ### Add a bug from your sprint backlog or Taskboard 
 
-If your team chose to *manage bugs with tasks*, you can define bugs from your Kanban board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item.  
+If your team chose to *manage bugs with tasks*, you can define bugs from your board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item.  
 
-- **Add a linked child bug from the Kanban board**  
+- **Add a linked child bug from the board**  
     You add a bug in the same way you add a task to a backlog item. For more information, see [Add tasks or child items as checklists](../boards/add-task-checklists.md). 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to add a bug from Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
+	> ![Screenshot to add a bug from board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
 
 - **Add a linked child bug from the Sprint Backlog**  
 	You add a bug in the same way you add a task to a Sprint backlog. For more information, see [Add tasks to backlog items](../sprints/add-tasks.md). 
@@ -354,7 +354,7 @@ If your team *tracks bugs as requirements*, view the list of active bugs from yo
 
 If your team *tracks bugs as tasks*, use managed queries to list and triage bugs. Then, within each sprint, you'll see the bugs assigned to the sprint from the Sprint backlog or [Taskboard](../sprints/task-board.md).  
 
-<a id="task-board-items"/> 
+<a id="task-board-items"></a>
 
 ### Taskboard items versus query list items
 
@@ -370,20 +370,20 @@ These reasons can cause work items that belong to the Task Category to not appea
 
 ## Create inline tests linked to bugs  
 
-When your team *tracks bugs as requirements*, you can use the Kanban board to add tests to verify bug fixes. 
+When your team *tracks bugs as requirements*, you can use the board to add tests to verify bug fixes. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, 3 columns showing inline tests added and linked to bugs.](media/manage-bugs/add-tests-inline-kanban-board.png) 
+> ![Screenshot of board, 3 columns showing inline tests added and linked to bugs.](media/manage-bugs/add-tests-inline-kanban-board.png) 
 
 
 ## Update bug status 
 
 You can update the bug status by dragging and dropping bugs to a new column on a board. 
 
-- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  For more information, see [Get started with your Kanban board](../boards/kanban-quickstart.md#update-status).  
+- If your team *tracks bugs as requirements*, you use the board as shown in the following image.  For more information, see [Get started with your board](../boards/kanban-quickstart.md#update-status).  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Kanban board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
+	> ![Screenshot of board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
 
 - If your team *tracks bugs as tasks*, you use the Taskboard. For more information, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
@@ -396,16 +396,16 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 ::: moniker range=">= azure-devops-2020"
 
-- [Add columns to your Kanban board](../boards/add-columns.md)
+- [Add columns to your board](../boards/add-columns.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
+- [Board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-- [Add columns to your Kanban board](../boards/add-columns.md)
-- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
+- [Add columns to your board](../boards/add-columns.md)
+- [Board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
 
@@ -432,7 +432,7 @@ When you merge the pull request, the system reads the description and updates th
 
 ::: moniker range="azure-devops-2020"
 > [!NOTE]   
-> This feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
+> This feature requires installation of Azure DevOps Server 2020.1 update. For more information, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
 ::: moniker-end
 
 ## Integration across Azure DevOps 
@@ -483,7 +483,7 @@ You can track the bug status, assignments, and trends using queries that you can
 ![Bug trend chart from query](media/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](media/manage-bugs-priority-chart.png)   
 -->
 
-To learn more about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).   
+For more information about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -498,7 +498,7 @@ Analytics views provide pre-built filters to view work items. Four Analytic view
 - Bugs - Last 30 days
 - Bugs - Today 
 
-To learn more about using Analytic views, see [What are Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Create an active bugs report in Power BI based on a custom Analytics view](../../report/powerbi/active-bugs-sample-report.md).
+For more information about using Analytic views, see [What are Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Create an active bugs report in Power BI based on a custom Analytics view](../../report/powerbi/active-bugs-sample-report.md).
 
 You can use Power BI to create more complex reports than what you can get from a query. For more information, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
@@ -536,7 +536,7 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 - [Move, change type, or delete work items](remove-delete-work-items.md) 
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
-### Product backlog and Kanban board
+### Product backlog and board
 
 - [Backlogs, portfolios, and Agile project management](backlogs-overview.md) 
 - [Create your backlog](create-your-backlog.md)  
@@ -545,10 +545,10 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)  
 - [Forecast your product backlog](../sprints/forecast.md)  
 
-### Kanban board
+### Board
 
 - [About Boards and Kanban](../boards/kanban-overview.md) 
-- [Kanban board quickstart](../boards/kanban-quickstart.md) 
+- [Board quickstart](../boards/kanban-quickstart.md) 
 - [Reorder cards](../boards/customize-cards.md#reorder-cards) 
 - [Add tasks or child items as checklists](../boards/add-task-checklists.md) 
 

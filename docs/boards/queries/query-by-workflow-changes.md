@@ -1,7 +1,7 @@
 ---
 title: Query by account, user, workflow, or board changes in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to list work items based on changes made to their assignment, state, or Kanban board column or swimlane in Azure Boards. 
+description: Learn how to list work items based on changes made to their assignment, state, or board column or swimlane in Azure Boards. 
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
@@ -16,13 +16,13 @@ ms.date: 06/29/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The states in the workflow support tracking work status as it moves from a new state to a closed or done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
+The states in the workflow support tracking work status as it moves from a new state to a closed or done state. Query fields support tracking the status of work as it moves from one column or swimlane to another on the board.  
 
 Each workflow consists of a set of states, valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types and default processes used to create your project. 
 
 Most work items move from a *New*, *Active*, or *Proposed* state to a *Done* or *Closed* state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it's reassigned to the tester who created it.  
 
-<a id="reactivated"/> 
+<a id="reactivated"></a>
 
 For example, you can find all work items that were closed but then reactivated. By specifying the **Changed Date** field, you can focus on reactivations that occurred today, yesterday, or in the last week.
 
@@ -31,13 +31,13 @@ For example, you can find all work items that were closed but then reactivated. 
 You can also use the **Activated By** and **Activated Date** fields, or other workflow fields.
 
 > [!TIP]  
-> Not all fields are valid for all work item types. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which work item types they apply to.  
+> Not all fields are valid for all work item types. Jump to [Workflow and query fields](#workflow-fields) for the set of fields you can include in queries and which work item types they apply to.  
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  
 
 ## Supported operators and macros 
 
-Query clauses that specify an identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
+Query clauses that specify an identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and board fields](#workflow-fields) provided later in this article. 
 
 ---
 :::row:::
@@ -95,7 +95,7 @@ Use the `In` and `Not In` operators to filter for or exclude two or more pick li
 
 
 
-<a id="me"/>
+<a id="me"></a>
 
 ## Identity-based queries  
 
@@ -174,7 +174,7 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 - Microsoft Entra ID and Active Directory security groups
 - Work item categories
 
-<a id="workflow-change"/> 
+<a id="workflow-change"></a>
 
 ## Queries based on workflow changes
 
@@ -235,7 +235,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 :::row-end:::
 ---
 
-<a id="workflow-change-who"/> 
+<a id="workflow-change-who"></a>
 
 ## Workflow changes and identity-based queries
 
@@ -282,13 +282,13 @@ To list work items that have changed state within a specific date range, you can
 <a id="kanban-query-fields"></a>
 <a id="kanban_query_fields"></a>
 
-## Query changes to a Kanban board 
+## Query changes to a board 
 
-Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
+Using the query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 
-You can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
+You can list items based on the team area path, and if they are in a specific custom column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
-![Screenshot of Query Editor, filter on Kanban Board Column and Board Lane fields.](media/query-kanban-fields.png)  
+![Screenshot of Query Editor, filter on board Column and Board Lane fields.](media/query-kanban-fields.png)  
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
@@ -349,9 +349,9 @@ You can list items based on the team area path, and if they are in a specific cu
 <a id="workflow-fields">  </a>
 <a id="fields"></a>
 
-## Workflow and Kanban board fields
+## Workflow and board fields
 
-The following fields are useful to filter queries. Some of these fields get updated as a work item progresses from one state to another. Or they're updated as you  move a work item in the [Kanban board](../boards/kanban-overview.md) to a different column or swimlane. Several of these fields don't appear on the work item form, but they're tracked for those work item types listed in the following table.
+The following fields are useful to filter queries. Some of these fields get updated as a work item progresses from one state to another. Or they're updated as you  move a work item in the [board](../boards/kanban-overview.md) to a different column or swimlane. Several of these fields don't appear on the work item form, but they're tracked for those work item types listed in the following table.
 
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
@@ -427,7 +427,7 @@ For more information about field attributes, see [Work item fields and attribute
       Board Column
    :::column-end:::
    :::column span="2":::
-      The current Kanban board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
+      The current board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
         
       Reference name=`System.BoardColumn`  
       Data type=String  
@@ -446,7 +446,7 @@ For more information about field attributes, see [Work item fields and attribute
       Board Column Done 
    :::column-end:::
    :::column span="2":::
-      The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a Kanban board column.  
+      The current assignment of the work item to Doing (False) or Done (True) column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a board column.  
       
       Reference name=`System.BoardColumnDone`  
       Data type=Boolean  
@@ -465,7 +465,7 @@ For more information about field attributes, see [Work item fields and attribute
       Board Lane
    :::column-end:::
    :::column span="2":::
-      The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment. 
+      The current board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment. 
       Reference name=`System.BoardLane`  
       Data type=String  
    :::column-end:::
@@ -688,7 +688,7 @@ For more information about field attributes, see [Work item fields and attribute
 > 1. See [Date and Identity fields](#date-identity).  
 > 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in Active Directory or Microsoft Entra ID or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups). 
 > 3. See [Activated By/Date and Resolved By/Date fields](#activated-by-and-activated-date-transition-assignments).   
-> 4. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).  
+> 4. The Requirement Category applies to all work item types that appear on the product backlog and board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).  
 
 > [!NOTE]  
 > Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
@@ -705,7 +705,7 @@ For more information about field attributes, see [Work item fields and attribute
     For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
 3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 4.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
-5. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board. The category includes those items added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
+5. The Requirement Category applies to all work item types that appear on the product backlog and board. The category includes those items added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
 
 > [!NOTE]  
 > Even if you add a board-related field, such as **Board Column** or **Board Lane**, to a work item form, you can't modify the field from the form.
