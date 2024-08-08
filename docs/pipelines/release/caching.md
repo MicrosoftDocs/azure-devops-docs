@@ -17,7 +17,8 @@ Pipeline caching can help reduce build time by allowing the outputs or downloade
 
 Caching can be effective at improving build time provided the time to restore and save the cache is less than the time to produce the output again from scratch. Because of this, caching may not be effective in all scenarios and may actually have a negative impact on build time.
 
-Caching is currently supported in CI and deployment jobs, but not classic release jobs.
+> [!NOTE]
+> Caching is currently supported in agent jobs for classic build and YAML pipeline, but not classic release and deployment jobs for YAML Pipeline.
 
 ### When to use artifacts versus caching
 
