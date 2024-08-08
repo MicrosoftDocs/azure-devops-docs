@@ -318,7 +318,7 @@ When you connect to Azure DevOps for the first time, you're prompted for credent
 
     ```
     [global]
-    extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@<FEED_URL>
+    index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@<FEED_URL>
     ```
 
 1. To install your package, run the following command replacing \<PACKAGE_NAME\> with the package name from your feed.

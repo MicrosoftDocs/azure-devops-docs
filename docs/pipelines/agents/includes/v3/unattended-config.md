@@ -18,7 +18,8 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 - `--unattended` - agent setup will not prompt for information, and all settings must be provided on the command line
 - `--url <url>` - URL of the server. For example: https://dev.azure.com/myorganization or http://my-azure-devops-server:8080/tfs
 - `--auth <type>` - authentication type. Valid values are:
-  - `pat` (Personal access token) - PAT is the only scheme that works with Azure DevOps Services.
+  - `pat` (Personal access token)
+  - `SP` (Service Principal) (Requires [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1) or newer)
   - `negotiate` (Kerberos or NTLM)
   - `alt` (Basic authentication)
   - `integrated` (Windows default credentials)
@@ -27,10 +28,16 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 
 - If you chose `--auth pat`:
   - `--token <token>` - specifies your personal access token
-  -  PAT is the only scheme that works with Azure DevOps Services.
+  - You can also pass an OAuth 2.0 token as the `--token` parameter.
 - If you chose `--auth negotiate` or `--auth alt`:
   - `--userName <userName>` - specifies a Windows username in the format `domain\userName` or `userName@domain.com`
   - `--password <password>` - specifies a password
+- If you chose `--auth SP`:
+  - `--clientID <clientID>` - specifies the Client ID of the Service Principal with access to register agents
+  - `--tenantId <tenantID>` - specifies the Tenant ID which the Service Principal is registered in
+  - `--clientSecret <clientSecret>` - specifies the Client Secret of the Service Principal
+  - See [Register an agent using a service principal](../../service-principal-agent-registration.md) for more information
+
 
 ### Pool and agent names
 - `--pool <pool>` - pool name for the agent to join

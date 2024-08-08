@@ -82,7 +82,7 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
 
 To access our Azure Key Vault, we need to set up a service principal to grant access to Azure Pipelines. Follow [this guide](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal) to create a service principal with Azure CLI, and then continue with the next steps in this section.
 
-1. Navigate to [Azure portal](https://azure.microsoft.com/), and then use the search bar to find the key vault you created earlier.
+1. Navigate to [Azure portal](https://portal.azure.com/), and then use the search bar to find the key vault you created earlier.
 
     :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
 
@@ -103,7 +103,7 @@ To access our Azure Key Vault, we need to set up a service principal to grant ac
 
 In the next step, we'll create an ARM service connection using service principal. Before we can verify the connection, we need to grant the service principal **Read** access at the subscription level:
 
-1. Navigate to [Azure portal](https://azure.microsoft.com/)
+1. Navigate to [Azure portal](https://portal.azure.com/)
 
 1. Select **Subscriptions** from the left navigation panel, and then find and select your subscription.
 
