@@ -135,10 +135,11 @@ If you encounter a problem with a connection, we recommend that you remove the c
 
 ::: moniker range=">= azure-devops-2020"
 
-1.From your project in Azure DevOps, go to **Project settings** > **GitHub connections**.
-2. To add or remove repositories, choose  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the connection and choose **Add repositories** or **Remove repositories** from the menu. 
+1. From your project in Azure DevOps, go to **Project settings** > **GitHub connections**.
 
-	:::image type="content" source="media/connect-cloud/connection-menu.png" alt-text="Screenshot of GitHub connection menu of More options.":::
+2. To add or remove repositories, select the **More options** ellipses for the connection and choose **Add repositories** or **Remove repositories** from the menu. 
+
+   :::image type="content" source="media/connect-cloud/connection-menu.png" alt-text="Screenshot of GitHub connection menu of More options.":::
 
 3. To remove all repositories and the connection, choose the **Remove connection** option. Then, choose **Remove** to confirm.
 
