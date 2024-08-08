@@ -35,7 +35,6 @@ The following table outlines the recommended authentication mechanisms for diffe
 
 For more information, see the following articles:
 - [About security and identity](../../../organizations/security/about-security-identity.md).
-- [Credential storage for Azure DevOps](../../../organizations/security/credential-storage.md).
 - [OAuth authentication](oauth.md)
 - [Service principals and managed identities](service-principal-managed-identity.md)
 - [Azure DevOps Client Libraries](../../concepts/dotnet-client-libraries.md)
