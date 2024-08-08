@@ -55,3 +55,13 @@ Managed DevOps Pools provide the following benefits to creating, configuring, an
 ## Get Started
 
 To start using Managed DevOps Pools, see [Get started with Managed DevOps Pools](./quickstart-azure-portal.md).
+
+## See also
+
+See what our MVPs are saying about Managed DevOps Pools. The following links take you to the respective author's external sites outside of Microsoft Learn.
+
+* [A first look at revolutionizing your cloud deployments with Azure Managed DevOps Pools by Haflidi Fridthjofsson](https://www.azureviking.com/post/a-first-look-at-revolutionizing-your-cloud-deployments-with-azure-managed-devops-pools)
+* [A first look at using Azure Managed DevOps Pools by Richard Fennell](https://blogs.blackmarble.co.uk/rfennell/a-first-look-at-using-azure-mdp/)
+* [Azure DevOps Managed DevOps pools by bjompen](https://bjompen.com/#/posts/azdo.mdp?id=azure-devops-managed-devops-pools)
+* [Deploying in a private Azure environment using Managed DevOps Pools by Gora LEYE](https://logcorner.com/deploying-in-a-private-azure-environment-using-managed-devops-pools/)
+
