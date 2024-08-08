@@ -2,94 +2,80 @@
 ms.subservice: azure-devops-service-hooks
 ms.custom: devx-track-jenkins
 ms.topic: conceptual
-title: Create a service hook with Jenkins
-description: Use Jenkins with your Azure DevOps organization
+title: Create a service hook for Jenkins
+description: See how to set up a service hook subscription to trigger a Jenkins build for your Azure DevOps project.
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 monikerRange: '<= azure-devops'
-ms.date: 10/01/2020
+ms.date: 08/08/2024
 ---
 
-# Create a service hook for Azure DevOps with Jenkins
+# Create a service hook for Jenkins
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If you use Jenkins to build your apps, you can store your code in Azure DevOps and continue to use Jenkins for your continuous integration builds.
-You can trigger a Jenkins build when you push code to your project's
-Git repository or when you check in code to Team Foundation version control.
+This article describes how to set up a service hook for your Azure DevOps project to trigger a Jenkins build. If you use Jenkins to build your apps, you can store your code in a Git repository and use Jenkins for your continuous integration builds. You can trigger a Jenkins build when you push code to your Git repository or when you check in code to a [Team Foundation Version Control (TFVC)](../../repos/tfvc/what-is-tfvc.md) repository.
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+You can build part of your app in Azure Pipelines and part in Jenkins. You can trigger a Jenkins build when your Azure Pipelines build is completed so that you use both systems to build your app.
 
-## Configure Jenkins
+Azure DevOps doesn't charge for setting up service hooks or integrating with external services, and Jenkins is fully open-source and free to use.
 
-1. If you haven't already, set up a [Jenkins](https://jenkins-ci.org/) server.
+## Create a Jenkins service hook
 
-2. If you're setting up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
+To manage service hooks for an Azure DevOps organization or project, you must have **Owner** or **Project Collection Administrator** role in the organization.
 
-3. Add or change `hudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL` [system property](https://plugins.jenkins.io/git/#plugin-content-push-notification-from-repository) as **disabled** before -jar parameter inside of `<arguments>` tag in _jenkins.xml_ configuration file.
+### Configure Jenkins
 
-   `
-   -Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled
-   `
+1. If you don't have one, set up a [Jenkins](https://jenkins-ci.org/) server.
 
-## Set up a Jenkins build
+1. If you set up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
+
+1. In your *jenkins.xml* configuration file, set the [hudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL system property](https://plugins.jenkins.io/git/#plugin-content-push-notification-from-repository) to `disabled` by adding or updating the following line in the `<arguments>` tag, before the `-jar` parameter:<br><br>`-Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled`.
+
+### Set up a Jenkins build
 
 1. In Jenkins, create a new item.
 
-   <img alt="New item link in Jenkins" src="./media/jenkins/new-item.png" />
+   :::image type="content" source="./media/jenkins/new-item.png" alt-text="Screenshot showing New item link in Jenkins.":::
 
-2. Create the type of build that's appropriate for your project.
+1. Select the type of build that's appropriate for your project.
 
-   <img alt="Build name and type in Jenkins" src="./media/jenkins/my-build.png" />
+   :::image type="content" source="./media/jenkins/my-build.png" alt-text="Screenshot showing Build name and type in Jenkins.":::
 
-3. Set the URL for your Git repository in Azure DevOps Services.
-The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git/{projectName}```.
+1. Enter the URL for your Git repository.
 
-   <img alt="Source code management settings with Git selected" src="./media/jenkins/source-code-management-settings.png" />
+   :::image type="content" source="./media/jenkins/source-code-management-settings.png" alt-text="Screenshot showing Source code management settings in Jenkins with Git selected.":::
 
-## Trigger Jenkins
+### Set up the Jenkins service hook
 
-::: moniker range=">= azure-devops-2019"
+1. In your Azure DevOps project, go to **Project settings** > **Service hooks** at `https://<organization-name>/<project-name>/_settings/serviceHooks`.
 
-1. Go to your project Service Hooks page: 
+   :::image type="content" source="./media/add-devops-service-hook.png" alt-text="Screenshot of the Service hooks choice in Project settings.":::
 
-    `https://{orgName}/{project_name}/_settings/serviceHooks`
+1. On the **Service Hooks** page, select the **+** icon or **Create subscription**.
 
-    ![Screenshot of project administration page, Azure DevOps Server 2019 and on.](./media/add-devops-service-hook.png)
+   :::image type="content" source="./media/add-service-hook.png" alt-text="Screenshot of selecting Create subscription on the Service Hooks page.":::
 
-    Select **Create Subscription**.
+1. On the **Service** screen, select **Jenkins**, and then select **Next**.
 
-2. Add Jenkins.
+   :::image type="content" source="./media/jenkins/target-service.png" alt-text="Screenshot of selecting Jenkins on the Service page.":::
 
-   <img alt="Select target service dialog box, Jenkins selected" src="./media/jenkins/target-service.png" />
+1. On the **Trigger** screen, select and configure the Azure DevOps event you want to trigger a Jenkins build, and then select **Next**.
 
-3. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
+   :::image type="content" source="./media/jenkins/configure-event.png" alt-text="Screenshot of selecting and configuring the trigger event.":::
 
-   <img alt="Configure event dialog box" src="./media/jenkins/configure-event.png" />
+1. On the **Action** screen, configure the Jenkins action to take when the event occurs.
 
-4. Configure the action to take in Jenkins.
+   :::image type="content" source="./media/jenkins/subscription.png" alt-text="Screenshot of configuring the Action dialog box.":::
 
-   <img alt="New service hook subscription dialog box" src="./media/jenkins/subscription.png" />
+1. Select **Test** to test the service hook, and **Finish** to finish the configuration.
 
-::: moniker-end
+Now when the event occurs in the Git repository, it triggers a Jenkins build.
 
+>[!TIP]
+>You can also create a service hook subscription programmatically with REST APIs. For more information, see [Create a service hook subscription programmatically](../create-subscription.md).
 
+## Related content
 
-Now, when that event occurs in Azure DevOps Services, your Jenkins build gets triggered.
-
-## Pricing
-Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
-for pricing related to their services. 
-
-## Q & A
-
-<!-- BEGINSECTION class="m-qanda" -->
-
-#### Q: Can I build part of my app in Azure DevOps Services and part in Jenkins?
-
-A: Yes. You can trigger a Jenkins build when your Azure DevOps Services build is completed so that you use both systems to build your app.
-
-#### Q: Can I programmatically create subscriptions?
-
-A: Yes, use [REST APIs](../create-subscription.md).
-
-<!-- ENDSECTION -->
+- [Integrate with service hooks](../overview.md)
+- [Service hooks events](../events.md)
+- [Create a service hook subscription programmatically](../create-subscription.md)
