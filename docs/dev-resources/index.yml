@@ -9,8 +9,8 @@ metadata:
   description: Use command line interface, REST APIs, typescript tools and more to interface with Azure DevOps .
   ms.subservice: azure-devops-reference
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  ms.author: rabououn
+  author: ramiMSFT
   ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

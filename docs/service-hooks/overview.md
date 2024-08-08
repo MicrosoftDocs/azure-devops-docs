@@ -168,7 +168,7 @@ A: Yes. You can revoke authorizations from your profile.
 	
 3.	Revoke any authorizations you no longer want to allow.
 
-	:::image type="content" source="media/Authorizations.png" alt-text="Screenshot showing Revoke option for authorizations.":::
+	:::image type="content" source="media/authorizations.png" alt-text="Screenshot showing Revoke option for authorizations.":::
 	
 ### Q: Why can't we set up service hooks for HipChat anymore?
 

@@ -128,6 +128,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 | System.JobDisplayName | The human-readable name given to a job. | No |
 | System.JobId | A unique identifier for a single attempt of a single job. The value is unique to the current pipeline. | No |
 | System.JobName | The name of the job, typically used for expressing dependencies and accessing output variables. | No |
+| System.OidcRequestUri | Generate an `idToken` for authentication with Entra ID using OpenID Connect (OIDC). [Learn more](/azure/devops/release-notes/2024/sprint-240-update#pipelines-and-tasks-populate-variables-to-customize-workload-identity-federation-authentication). | Yes |
 | System.PhaseAttempt | Set to 1 the first time this phase is attempted, and increments every time the job is retried.<br><br>Note: "Phase" is a mostly redundant concept, which represents the design-time for a job (whereas job was the runtime version of a phase). We've mostly removed the concept of "phase" from Azure Pipelines. Matrix and multi-config jobs are the only place where "phase" is still distinct from "job." One phase can instantiate multiple jobs, which differ only in their inputs. | No |
 | System.PhaseDisplayName | The human-readable name given to a phase. | No |
 | System.PhaseName | A string-based identifier for a job, typically used for expressing dependencies and accessing output variables. | No |

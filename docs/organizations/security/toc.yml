@@ -166,9 +166,6 @@
       displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
     - name: Data Subject Requests for the GDPR & CCPA
       href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/security/toc.json
-    - name: Credential storage (cloud)
-      displayName: password, user, name, token, safety
-      href: credential-storage.md
 - name: Secure Azure Artifacts
   items:
   - name: Set feed permissions
