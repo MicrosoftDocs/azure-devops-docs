@@ -22,35 +22,40 @@ In this article, you'll learn how to:
 
 ## Prerequisites
 
-- A GitHub repository to create a CI pipeline. [Create your first pipeline](../create-first-pipeline.md) if you don't have one already.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- A working pipeline set up for your repository to build your project.
+- A working pipeline set up for your repository to build your project and generate a pipeline artifact. [Create your first pipeline](../create-first-pipeline.md) if you don't have one already.
 
-## Set up a release pipeline
+## Create a release pipeline
 
-1. Select **Releases** under **Pipelines**. If this is your first release pipeline, select **New Pipeline**, otherwise select **Create a release**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Start with an empty job** when prompted to select a template.
+1. Select **Pipelines** > **Releases**. If this is your first release pipeline, select **New Pipeline**, otherwise select **New** > **New release pipeline**.
 
-1. Select **Add an artifact** and specify the project, the build pipeline, and the default version. Select **Add** when you are done.
+1. When prompted to select a template, select **Start with an empty job**.
 
-    :::image type="content" source="media/add-artifact.png" alt-text="Add build artifact to release pipeline":::
+1. Under **Stages**, select the stage and rename it to **Dev**. The following steps walks through configuring this stage to be triggered when an artifact is published from the *Dev* branch.
 
-1. Select the **Continuous deployment trigger** icon and enable the **Continuous deployment trigger** to create a release every time a new build is available.
+    :::image type="content" source="media/dev-stage.png" alt-text="A screenshot displaying how to rename a stage in a Classic release pipeline.":::
 
-    :::image type="content" source="media/deploy-multiple-branches/ci-trigger.png" alt-text="Enable continuous deployment trigger":::
+1. Under **Artifacts**, select **Add** to add an artifact. Specify your **Source type** and fill out the required fields (these vary based on the selected source type). Select **Add** when you're done.
 
-1. Under **Stages**, select the stage and rename it to **Dev**. This stage will be triggered when a build artifact is published from the dev branch.
+    :::image type="content" source="media/add-artifact.png" alt-text="A screenshot that shows how to add an artifact to a Classic release pipeline.":::
 
-    :::image type="content" source="media/dev-stage.png" alt-text="Configure Dev stage":::
+1. Select the **Continuous deployment trigger** icon, and then enable the **Continuous deployment trigger** to create a release whenever a new artifact is available.
 
-1. Select the **Pre-deployment conditions** icon in the _Dev_ stage and set the deployment trigger to **After release** to trigger a deployment to this stage every time a new release is created.
+    :::image type="content" source="media/enable-continuous-deployment-trigger.png" alt-text="A screenshot displaying how to enable the continuous deployment trigger.":::
 
-    :::image type="content" source="media/predeployment-trigger.png" alt-text="Set pre-deployment trigger to after release":::
+1. In the Dev stage, select the **Pre-deployment conditions** icon and set the deployment trigger to **After release**. This will trigger a deployment to this stage whenever a new release is created.
 
-1. Enable the **Artifact filters**. Select Add and specify your artifact and build branch.
+    :::image type="content" source="media/predeployment-trigger.png" alt-text="A screenshot that shows how to configure the pre-deployment conditions.":::
 
-    :::image type="content" source="media/deploy-multiple-branches/artifact-filter1.png" alt-text="Enable Artifact filters":::  
+1. while still in **Pre-deployment conditions**, enable **Artifact filters**, select **Add**, and then specify the artifact you selected earlier and the **Build branch**.
+
+    :::image type="content" source="media/predeployment-conditions-artifact-filters.png" alt-text="A screenshot displaying how to set up the Artifact filters in Pre-deployment conditions.":::
+
+
+
 
 1. Under **Stage**, select **Add** then **New stage** to add a new stage. Select **Start with an empty job** when prompted to select a template, and rename the stage to **Prod**. This stage will be triggered when a build artifact is published from the main branch. Repeat the steps 6-8 and replace the **Build branch** for this stage to main.
 
