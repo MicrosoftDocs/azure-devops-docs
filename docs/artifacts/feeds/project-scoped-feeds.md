@@ -92,6 +92,9 @@ On the pipeline generating the artifact (downstream project): select the ellipsi
 
 On the downstream project: **Project Settings** > **Permissions** > **Users** > search for your upstream project's name and then select **Expand search** > select your upstream project's build service and allow the following: **View project-level information**.
 
+#### Q: When I enable upstream sources in a new feed and set the visibility to 'Members of your Microsoft Entra tenant,' do I still need to add Entra users specifically to the Azure DevOps Organization that contains the feed?
+A: Yes, users must still be added to the Azure DevOps Organization to access the packages in the feed. You can add users as Project Collection Valid Users. All standard Azure DevOps identity and license requirements will apply. 
+
 ## Related articles
 
 - [Configure permissions](./feed-permissions.md)
