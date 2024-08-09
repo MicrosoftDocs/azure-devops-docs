@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/08/2024
+ms.date: 08/08/2024
 ---
 
 # Functional code search  
@@ -19,41 +19,57 @@ Find the code you need faster with functional code search. This article explains
 
 ## Prerequisites
 
-- Install [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+::: moniker range=" azure-devops"
+
+- **Access levels:**
+  - **Basic access:**
+    - To use code search, you must have at least Basic access.
+    - To access code in a private project, you must have at least Basic access.
+  - **Stakeholder access:**
+    - Users with Stakeholder access don’t have access to code, so they can’t search for code.
+    - Users with Stakeholder access for a public project have full access to code, so they can search for code.
+- **Search results:**
+  - **Access-based results:** When you're searching across the organization or collection, only results for which a project member has access are listed.
+::: moniker-end
+
 ::: moniker range="< azure-devops"
-  For more information, see [Install and configure search](install-configure-search.md).
+
+- **Access levels:**
+  - **Basic access:**
+    - To use code search, you must have at least Basic access.
+    - To access code in a private project, you must have at least Basic access.
+  - **Stakeholder access:**
+    - Users with Stakeholder access don’t have access to code, so they can’t search for code.
+- **Search results:**
+  - **Access-based results:** When you're searching across the organization or collection, only results for which a project member has access are listed.
+- **Tools:**
+  - Install [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 ::: moniker-end
-- To use Code Search, you must have at least Basic access.
-- Users with Stakeholder access don't have access to code, so they can't search for code.
-::: moniker range="azure-devops"
-- Users with Stakeholder access for a public project have [full access to code](../../organizations/security/access-levels.md), so they can search for code. To access code in a private project, you must have at least Basic access.
-::: moniker-end
-- When you're searching across the organization or collection, only results for which a project member has access are listed.
 
 ## Code search best practices
 
-- Start with a broad search and then use filter operators to narrow it down by project, repository, path, file name, and more.
-- If you don’t know the exact term, use [wildcards](get-started-search.md#search-features-usage-and-examples) to expand your search and [Boolean operators](get-started-search.md#search-features-usage-and-examples) to refine it.
-- To get more information about a code item, hover over it and use the shortcut menu to search for that text in all your projects and files.
-- To trace how your code works, use the shortcut menu to search for related items like definitions and references in a file or in the search results.
-- To find the implementation of an API or other code element, use code type filters to search for specific kinds of code such as:
-  - definitions
-  - references
-  - functions
-  - comments
-  - strings
-  - namespaces, and more.
+- **Start broad:** Begin with a broad search and then use filter operators to narrow it down by project, repository, path, file name, and more.
+- **Use [wildcards](get-started-search.md#search-features-usage-and-examples) and [boolean operators](get-started-search.md#search-features-usage-and-examples):** If you don’t know the exact term, use wildcards to expand your search and boolean operators to refine it.
+- **Hover for more info:** To get more information about a code item, hover over it and use the shortcut menu to search for that text in all your projects and files.
+- **Trace code functionality:** Use the shortcut menu to search for related items like definitions and references in a file or in the search results to trace how your code works.
+- **Use code type filters:** To find the implementation of an API or other code element, use code type filters to search for specific kinds of code such as:
+  - Definitions
+  - References
+  - Functions
+  - Comments
+  - Strings
+  - Namespaces, and more
 
 > [!NOTE]
-> Code search does not work for forked repositories.
+> Code search doesn't work for forked repositories.
 
 ## Functions to find specific types of code
 
-To create your query faster, choose functions and keywords from the drop-down list as you type. Select **Show more** to see all the options. You can combine different functions as needed.
+To create your query faster, choose functions and keywords from the drop-down list as you enter text. Select **Show more** to see all the options. You can combine different functions as needed.
 
 You can also use filters from the left column to narrow your search. **Show more** shows you all the functions and keywords.
 
-Or, you can type the functions and parameters in the search box. The table below lists the functions for finding specific types or members in your C#, C, C++, Java, and Visual Basic.NET code.
+Or, you can type the functions and parameters in the search box. The following table lists the functions for finding specific types or members in your C#, C, C++, Java, and Visual Basic.NET code.
 
 | To find code where _findThis_ appears as a ... | ... search for argument **arg:**_findThis_ |
 | --- | --- |
@@ -106,7 +122,7 @@ Functions make it easy to narrow the search to specified locations, specific typ
 |Find all occurrences of the word *QueueJobsNow* in the Fabrikam project.     | `QueueJobsNow proj:Fabrikam`        |
 |Find all occurrences of the word *QueueJobsNow* in the Contoso repository.    |  `QueueJobsNow repo:Contoso`       |
 |Find all occurrences of the word *QueueJobsNow* in the path *VisualStudio/Services/Framework* and its subpaths.  | `QueueJobsNow path:VisualStudio/Services/Framework`        |
-|Find all occurrences of the word *QueueJobsNow* in the path *\*/Doc\*/Framework/\** and *\*/Doc\*/\*/\*/Framework/\** and its subpaths.  Globbing Pattern (\*\*) matches zero or more characters across multiple segments. For example, path:\*\*/Doc\*\*/Framework will also match abc/*Doc*Test/gh/ijk/mnop/*Framework*/ | `QueueJobsNow path:**/Doc**/Framework`        |
+|Find all occurrences of the word *QueueJobsNow* in the path *\*/Doc\*/Framework/\** and *\*/Doc\*/\*/\*/Framework/\** and its subpaths. Globbing Pattern (\*\*) matches zero or more characters across multiple segments. For example, path:\*\*/Doc\*\*/Framework also matches abc/*Doc*Test/gh/ijk/mnop/*Framework*/ | `QueueJobsNow path:**/Doc**/Framework`        |
 |Find all occurrences of the word *QueueJobsNow* in the path *\*/Doc\*/Framework/\** and its subpaths and file name Test*.txt (Use Globbing Pattern \*\*). For example, path:\*\*/Doc\*\*/Framework/\*\*/Test\*.txt also matches abc/def/*Doc*A/gh/*Framework*/*Test*Misc.*txt*  | `QueueJobsNow path:**/Doc**/Framework/**/Test*.txt`        |
 |Enclose the argument to the filter in double-quotes if it contains a space.   | `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`        |
 |Find all occurrences of the word *QueueJobsNow* in all files where the filename starts with *queueRegister*. | `QueueJobsNow file:queueRegister*`         |
@@ -115,17 +131,11 @@ Functions make it easy to narrow the search to specified locations, specific typ
 
 ## Find related items or other terms
 
-Code Search lets you interactively expand your search based on previous results. For example, you can widen your search to related files when you are tracing or debugging code.
+Code Search lets you interactively expand your search based on previous results. For example, you can widen your search to related files when you're tracing or debugging code.
 
-Right-click on a term in the file and start a new search for other files with the same term. You can search for it as text, or as a definition or reference if it is an object name.
+Right-click on a term in the file and start a new search for other files with the same term. You can search for it as text, or as a definition or reference if it's an object name.
 
-For more information about the following search functions, see [Get started with search](get-started-search.md#search-features-usage-and-examples)
-
-- Keyword
-- Exact match
-- Wildcard
-- Boolean operators
-- Proximity
+For more information, see [Get started with search](get-started-search.md#search-features-usage-and-examples).
 
 ## More code search operations
 
@@ -142,7 +152,7 @@ Here are some more code search functions. You can search for code types in C#, C
 
 A Git project has a list of repositories. To expand your search, check the project and repository boxes. You can search all or more projects, or fewer projects and repositories. If there are many projects or repositories, select **Show more** to see them all.
 
-Code Search can index different branches in a Git repository. It only indexes files in the default branch of your Git repositories by default. The default branch is usually main. To index other branches, go to the **Options** tab in the **Repositories** section of the [project settings page](../navigation/go-to-service-page.md#open-project-settings).
+Code Search can index different branches in a Git repository. It only indexes files in the default branch of your Git repositories by default. The default branch is main. To index other branches, go to the **Options** tab in the **Repositories** section of the [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
 > [!NOTE]
 > By default, code search looks for the specified string in the main or default branch of a repository. But, you can narrow down the search by specifying a filter for a specific branch.
