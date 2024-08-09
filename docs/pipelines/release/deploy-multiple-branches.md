@@ -50,26 +50,36 @@ In this article, you'll learn how to:
 
     :::image type="content" source="media/predeployment-trigger.png" alt-text="A screenshot that shows how to configure the pre-deployment conditions.":::
 
-1. while still in **Pre-deployment conditions**, enable **Artifact filters**, select **Add**, and then specify the artifact you selected earlier and the **Build branch**.
+1. while still in **Pre-deployment conditions**, enable **Artifact filters**, select **Add**, and then specify the artifact you selected earlier and set the **Build branch** to *Dev*.
 
     :::image type="content" source="media/predeployment-conditions-artifact-filters.png" alt-text="A screenshot displaying how to set up the Artifact filters in Pre-deployment conditions.":::
 
+## Add a new stage
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
+1. Select **Pipelines** > **Releases**, select your release pipeline, and then select **Edit**.
 
-1. Under **Stage**, select **Add** then **New stage** to add a new stage. Select **Start with an empty job** when prompted to select a template, and rename the stage to **Prod**. This stage will be triggered when a build artifact is published from the main branch. Repeat the steps 6-8 and replace the **Build branch** for this stage to main.
+1. Under **Stages**, select **Add** > **New stage** to add a new stage.
+ 
+1. Select **Start with an empty job** when prompted to select a template. 
 
-    :::image type="content" source="media/deploy-multiple-branches/artifact-filter2.png" alt-text="Set up Prod with the main branch":::  
+1. Select your new stage and rename it to **Prod**. The following steps walks through configuring this stage to trigger when an artifact is published from the *main* branch.
 
-1. Add to each stage all the relevant deployment tasks to your environment.
+1. Select your *Prod* stage, select the **Pre-deployment conditions** icon, and set the deployment trigger to **After release**. This ensures deployment to this stage whenever a new release is created.
 
-Now the next time you have a successful build, the pipeline will detect which branch triggered that build and trigger deployment to the appropriate stage only.
+1. Select the toggle button to enable **Artifact filters**. Select **Add**, and then specify the artifact you selected earlier and set the **Build branch** to *main*.
 
-:::image type="content" source="media/deploy-multiple-branches/after-release.png" alt-text="Deployment status":::  
+    :::image type="content" source="media/predeployment-conditions-prod.png" alt-text="A screenshot displaying how to configure predeployment conditions for the Prod stage.":::  
+
+## Deploy to a specific stage
+
+Now that you've set up your stages, every time a new artifact is available, the release pipeline will detect which branch triggered the build and deploy only to the appropriate stage.
+
+:::image type="content" source="media/deploy-to-specific-stage.png" alt-text="A screenshot displaying deployment to a specific staged.":::  
 
 ## Related articles
 
+- [Artifact sources](artifacts.md)
 - [Release triggers](triggers.md)
-- [Build Artifacts](../artifacts/build-artifacts.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
-- [Publish and download artifacts](../artifacts/pipeline-artifacts.md)
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
