@@ -34,7 +34,7 @@ In this article, you'll learn how to:
 
 1. When prompted to select a template, select **Start with an empty job**.
 
-1. Under **Stages**, select the stage and rename it to **Dev**. The following steps walks through configuring this stage to be triggered when an artifact is published from the *Dev* branch.
+1. Under **Stages**, select the stage and rename it to **Dev**. The following steps show how to configure this stage to be triggered when an artifact is published from the *Dev* branch.
 
     :::image type="content" source="media/dev-stage.png" alt-text="A screenshot displaying how to rename a stage in a Classic release pipeline.":::
 
@@ -64,7 +64,7 @@ In this article, you'll learn how to:
  
 1. Select **Start with an empty job** when prompted to select a template. 
 
-1. Select your new stage and rename it to **Prod**. The following steps walks through configuring this stage to trigger when an artifact is published from the *main* branch.
+1. Select your new stage and rename it to **Prod**. The following steps show how to configure this stage to trigger when an artifact is published from the *main* branch.
 
 1. Select your *Prod* stage, select the **Pre-deployment conditions** icon, and set the deployment trigger to **After release**. This ensures deployment to this stage whenever a new release is created.
 
@@ -76,7 +76,7 @@ In this article, you'll learn how to:
 
 Now that you've set up your stages, every time a new artifact is available, the release pipeline will detect which branch triggered the build and deploy only to the appropriate stage.
 
-:::image type="content" source="media/deploy-to-specific-stage.png" alt-text="A screenshot displaying deployment to a specific staged.":::  
+:::image type="content" source="media/deploy-to-specific-stage.png" alt-text="A screenshot displaying deployment to a specific stage.":::  
 
 ## Related articles
 
