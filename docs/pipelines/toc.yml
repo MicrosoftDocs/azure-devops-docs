@@ -157,12 +157,17 @@
     - name: Set variables in scripts
       displayName: variables, task, setname, scripts
       href: process/set-variables-scripts.md
-    - name: Add & use variable groups
-      displayName: Azure key vault, link secrets, expansion, expand variables
-      href: library/variable-groups.md
-    - name: Use variables in a variable group
-      displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
-      href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
+      - name: Varible groups
+        items:
+        - name: Manage variable groups
+          displayName: Azure key vault, link secrets, expansion, expand variables
+          href: library/variable-groups.md
+        - name: Link variable groups to Azure key vaults
+          displayName: Azure key vault, link secrets, expansion, expand variables
+          href: library/link-variable-groups-to-key-vaults.md
+        - name: Use variables in a variable group
+          displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
+          href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
     - name: Use classic release and artifacts variables
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
       href: release/variables.md
