@@ -64,4 +64,6 @@ See what our MVPs are saying about Managed DevOps Pools. The following links tak
 * [A first look at using Azure Managed DevOps Pools by Richard Fennell](https://blogs.blackmarble.co.uk/rfennell/a-first-look-at-using-azure-mdp/)
 * [Azure DevOps Managed DevOps pools by bjompen](https://bjompen.com/#/posts/azdo.mdp?id=azure-devops-managed-devops-pools)
 * [Deploying in a private Azure environment using Managed DevOps Pools by Gora LEYE](https://logcorner.com/deploying-in-a-private-azure-environment-using-managed-devops-pools/)
+* [Managed DevOps Pools: Simplifying Self-Hosted Azure Pipeline Agents by Vladimir Gusarov](
+https://blog.almguru.com/managed-devops-pools-simplifying-self-hosted-azure-pipeline-agents-cd5f9c60640c)
 
