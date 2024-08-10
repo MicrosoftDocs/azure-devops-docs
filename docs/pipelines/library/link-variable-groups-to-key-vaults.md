@@ -1,15 +1,16 @@
 ---
 title: Link variable groups to secrets in Azure key vaults
-ms.custom: devx-track-azurecli, pipelinesresourcesrefresh
-description: Share common variables across pipelines using variable groups.
+description: Link pipeline variable groups to secrets in Azure key vaults.
 ms.topic: tutorial
 ms.author: v-catherbund
 author: cebundy
-ms.date: 008/25/2024
+ms.date: 08/25/2024
 monikerRange: '<= azure-devops'
 ---
 
-## Link variable groups to secrets in Azure key vaults
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+# Link variable groups to secrets in Azure key vaults
 
 [!INCLUDE [set secret variable in UI](../process/includes/variable-groups-link-secrets.md)]
 
@@ -17,4 +18,5 @@ For more information, see [Use Azure Key Vault secrets](../release/azure-key-vau
 
 ## Related articles
 
-* [Manage variable groups](../release/define-variables.md)
+* [Manage variable groups](./variable-groups.md)
+* [Set secret variables](../process/set-secret-variables.md)
