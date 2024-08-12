@@ -32,7 +32,7 @@ Variable groups follow the [library security model](index.md#library-security) f
 You can create variable groups for the pipeline runs in your project.
 
 >[!NOTE]
->To create a secret variable group to link secrets from an Azure key vault as variables, follow the instructions at [Link variable groups to secrets in Azure key vaults](./link-varialbe-groups-to-key-vaults.md).
+>To create a secret variable group to link secrets from an Azure key vault as variables, follow the instructions at [Link variable groups to secrets in Azure key vaults](./link-variable-groups-to-key-vaults.md).
 
 
 # [Azure Pipelines UI](#tab/azure-pipelines-ui)

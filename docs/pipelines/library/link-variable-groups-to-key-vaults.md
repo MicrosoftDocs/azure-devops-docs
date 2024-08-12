@@ -8,9 +8,9 @@ ms.date: 08/25/2024
 monikerRange: '<= azure-devops'
 ---
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
 # Link variable groups to secrets in Azure key vaults
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [set secret variable in UI](../process/includes/variable-groups-link-secrets.md)]
 
