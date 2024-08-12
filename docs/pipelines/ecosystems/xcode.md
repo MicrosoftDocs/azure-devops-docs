@@ -34,7 +34,7 @@ Azure Pipelines provides a starter pipeline based on the [Xcode](https://github.
 
 ### Build environment
 
-The [Microsoft-hosted macOS agents](../agents/hosted.md) in Azure Pipelines have Xcode preinstalled, so you don't have to set up any infrastructure. For the exact versions of Xcode that are preinstalled, see [Microsoft-hosted agents software](../agents/hosted.md#software).
+Xcode is preinstalled on the [Microsoft-hosted macOS agents](../agents/hosted.md) in Azure Pipelines, so you don't have to set up any infrastructure. For the exact versions of Xcode that are preinstalled, see [Microsoft-hosted agents software](../agents/hosted.md#software).
 
 The `pool` node at the top of your *azure-pipelines.yml* file selects the appropriate agent pool.
 
@@ -61,7 +61,7 @@ steps:
 
 ## Save and run the pipeline
 
-When you're done reviewing the code in *azure-pipelines.yml*, select **Save and run**.
+When you finish reviewing the code in *azure-pipelines.yml*, select **Save and run**.
 
    :::image type="content" source="media/save-and-run-button-new-yaml-pipeline.png" alt-text="Screenshot of the Save and run button in a new YAML pipeline.":::
 

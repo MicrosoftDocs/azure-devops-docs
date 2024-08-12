@@ -224,7 +224,11 @@ To update the rollout status for an application that was previously released to 
 
 ## Create an app bundle
 
-You can build and sign an app bundle with an inline script and a secure file. First, download your keystore and store it as a [secure file](../library/secure-files.md) in the Azure Pipelines library. Then, create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md).
+You can build and sign an app bundle with an inline script and a secure file.
+
+1. Download your keystore and store it as a [secure file](../library/secure-files.md) in the Azure Pipelines library.
+
+1. Create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md).
 
 In your YAML pipeline:
 
@@ -260,7 +264,7 @@ In your YAML pipeline:
        TargetFolder: 'drop'
    ```
 
-1. From here, you can either create and save an artifact with the [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish the app bundle.
+From here, you can either create and save an artifact with the [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish the app bundle.
 
 ## Related extensions
 
