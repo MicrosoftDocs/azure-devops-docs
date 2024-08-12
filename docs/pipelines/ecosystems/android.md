@@ -19,7 +19,7 @@ This quickstart shows you how to set up a YAML pipeline in Azure Pipelines to au
 
 ## Prerequisites
 
-- An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOpsw](../../organizations/projects/create-project.md).
+- An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
 - A GitHub account.
 
   >[!IMPORTANT]
@@ -30,7 +30,7 @@ This quickstart shows you how to set up a YAML pipeline in Azure Pipelines to au
 Do the following tasks to set up a pipeline for a simple Android application.
 
 1. To get the code for the sample app, fork the [Android sample app](https://github.com/MicrosoftDocs/pipelines-android) repository to your GitHub account.
-1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this is the first pipeline in the project.
+1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this pipeline is the first in the project.
 1. Select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked Android sample repository.
 1. On the **Configure your pipeline** screen, select **Android**.

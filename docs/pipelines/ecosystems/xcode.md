@@ -25,7 +25,7 @@ This quickstart shows you how to build and deploy Xcode projects with YAML pipel
 >[!IMPORTANT]
 >During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this is the first pipeline in the project.
+1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this pipeline is the first in the project.
 1. Select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select the repository for your Xcode project.
 1. On the **Configure your pipeline** screen, select **Xcode**.

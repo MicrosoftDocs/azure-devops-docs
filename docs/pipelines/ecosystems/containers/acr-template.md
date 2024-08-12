@@ -31,7 +31,7 @@ In GitHub, fork or clone the [Sample Docker and Kubernetes Node.JS app](https://
 
 ## Create a container registry
 
-1. From the [Azure portal](https://portal.azure.com) sign in to Azure Cloud Shell by selecting the icon at upper-right. Make sure to use the **Bash** shell.
+1. From the [Azure portal](https://portal.azure.com), sign in to Azure Cloud Shell by selecting the icon in the top menu bar. Make sure to use the **Bash** shell.
 
    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Azure Cloud Shell button":::
 
@@ -52,7 +52,7 @@ Alternatively, you can use the Azure portal UI to create your Azure container re
 
 ## Create the pipeline
 
-1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this is the first pipeline in the project.
+1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this pipeline is the first in the project.
 
    :::image type="content" source="../media/new-pipeline.png" alt-text="Screenshot that shows the Create a new pipeline screen.":::
    
