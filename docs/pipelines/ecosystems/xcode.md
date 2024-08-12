@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
 ms.author: vijayma
 author: vijayma
-ms.date: 08/08/2024
+ms.date: 08/12/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -65,7 +65,7 @@ When you're done reviewing the code in *azure-pipelines.yml*, select **Save and 
 
    :::image type="content" source="media/save-and-run-button-new-yaml-pipeline.png" alt-text="Screenshot of the Save and run button in a new YAML pipeline.":::
 
-Optionally edit the **Commit message** and provide a description, then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
+Optionally, edit the **Commit message** and provide a description, then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
 The build run page shows build details and progress. If you want to watch your pipeline in action, select **Job** on the lower part of the page.
 
@@ -101,7 +101,7 @@ To test your app in a hosted lab of iOS devices in the Visual Studio App Center,
 
 This task requires an [App Center](https://appcenter.ms) free trial account, which must be converted to paid after 30 days to continue to use the test lab. [Sign up for an App Center account](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) before you use this task.
 
-The following example runs an App Center test suite. The task uses a service connection that you must set up.
+The following example runs an App Center test suite. The task uses a [service connection](../library/service-endpoints.md#visual-studio-app-center-service-connection) that you must set up.
 
 For the complete task syntax and reference, see [App Center Test task](/azure/devops/pipelines/tasks/reference/app-center-test-v1). For more information, see [Using Azure DevOps for UI Testing](/appcenter/test-cloud/vsts-plugin).
 
@@ -114,12 +114,12 @@ For the complete task syntax and reference, see [App Center Test task](/azure/de
     appiumBuildDirectory: test/upload
     serverEndpoint: 'My App Center service connection'
     appSlug: username/appIdentifier
-    devices: 0123456
+    devices: 'devicelist'
 ```
 
 ### Keep artifacts with the build record
 
-To store your IPA file with the build record or test and deploy it in subsequent pipelines, add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks to your pipeline. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md).
+To store your iOS AppStore Package (IPA) file with the build record or test and deploy it in subsequent pipelines, add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks to your pipeline. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md).
 
 ```yaml
 - task: CopyFiles@2
@@ -183,11 +183,11 @@ To automate the promotion of a previously submitted app from iTunes Connect to t
 
 ## Related extensions
 
-- [Apple App Store](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store) (Microsoft)
-- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
-- [MacinCloud](https://marketplace.visualstudio.com/items?itemName=moboware.macincloud) (Moboware Inc.)
-- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
-- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)
-- [Raygun](https://marketplace.visualstudio.com/items?itemName=Raygun.vsts-extension) (Raygun)
-- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
-- [Version Setter](https://marketplace.visualstudio.com/items?itemName=tomgilder.version-setter) (Tom Gilder)
+- [Apple App Store](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store) from Microsoft
+- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) from Codified Security
+- [MacinCloud](https://marketplace.visualstudio.com/items?itemName=moboware.macincloud) from Moboware Inc.
+- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) from James Montemagno
+- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) from Perfecto Mobile
+- [Raygun](https://marketplace.visualstudio.com/items?itemName=Raygun.vsts-extension) from Raygun
+- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) from Microsoft
+- [Version Setter](https://marketplace.visualstudio.com/items?itemName=tomgilder.version-setter) from Tom Gilder

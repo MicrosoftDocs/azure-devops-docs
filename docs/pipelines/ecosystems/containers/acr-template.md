@@ -5,16 +5,16 @@ ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: ericvan
 author: geekzter
-ms.date: 08/09/2024
+ms.date: 08/12/2024
 monikerRange: 'azure-devops'
 ---
-# Build and push Docker images to Azure Container Registry
+# Use Docker YAML task to Build and push Docker images to Azure Container Registry
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-This tutorial shows you how to use the Azure Pipelines Docker template to build a containerized application and push it to Azure Container Registry. The template sets up a continuous integration YAML pipeline. New code repository changes trigger the pipeline to build and publish updated Docker images to the registry.
+This tutorial shows you how to use a pipeline based on the Azure Pipelines Docker template to build a containerized application and push it to Azure Container Registry. The template sets up a continuous integration YAML pipeline where new code repository changes trigger the pipeline to build and publish updated Docker images to the registry.
 
-The Docker template-based pipeline uses Microsoft-hosted agents and creates a service connection to connect to Azure Container Registry. For a tutorial that does the same process using self-hosted agents and a managed service identity, see [Build and push Docker images to Azure Container Registry](publish-to-acr.md).
+The Docker template-based pipeline uses Microsoft-hosted agents and creates a service connection to connect to Azure Container Registry. For a pipeline that does a similar process by using self-hosted agents and a managed service identity, see [Build and push Docker images to Azure Container Registry](publish-to-acr.md).
 
 ## Prerequisites
 
@@ -42,15 +42,13 @@ In GitHub, fork or clone the [Sample Docker and Kubernetes Node.JS app](https://
    az acr create --resource-group myapp-rg --name mycontainerregistry --sku Basic
    ```
 
-1. To deploy a Docker image to the Azure container registry, you must enable the admin user account for the registry, which is disabled by default. To enable the admin user for your registry, use the `--admin-enabled` parameter of the `az acr update` command.
+1. To deploy a Docker image to the Azure container registry, you must enable the admin user account for the registry, which is disabled by default. To enable the admin user for your registry, use the `--admin-enabled` parameter with the `az acr update` command. For more information and instructions, see [Admin account](/azure/container-registry/container-registry-authentication#admin-account).
 
    ```azurecli
    az acr update -n <acrName> --admin-enabled true
    ```
 
-   For more information and instructions, see [Admin account](/azure/container-registry/container-registry-authentication#admin-account).
-
-Alternatively, you can use the Azure portal UI to create your Azure container registry. For instructions, see [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry).
+Alternatively, you can use the Azure portal UI to create your Azure container registry. For instructions, see [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry). Enable the admin account when you create the registry.
 
 ## Create the pipeline
 
@@ -109,7 +107,7 @@ The Docker task uses a Docker registry [service connection](../../library/servic
 
 ## Clean up resources
 
-When you finish using the resources you created in this tutorial, you can delete them to avoid incurring further charges. Run the following Cloud Shell command to delete your resource group.
+When you finish using the resources you created in this tutorial, you can delete them to avoid incurring further charges. Run the following Cloud Shell command to delete your resource group and all the resources within it.
 
 ```azurecli
 az group delete --name myapp-rg

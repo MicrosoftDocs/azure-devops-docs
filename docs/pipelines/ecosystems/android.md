@@ -6,7 +6,7 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2
-ms.date: 08/09/2024
+ms.date: 08/12/2024
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -34,16 +34,16 @@ Do the following tasks to set up a pipeline for a simple Android application.
 1. Select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked Android sample repository.
 1. On the **Configure your pipeline** screen, select **Android**.
-1. Azure Pipelines provides a starter pipeline based on the [Android](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/android.yml) template.
+1. Azure Pipelines provides a starter pipeline based on the [Android](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/android.yml) template. Review the pipeline code.
 1. Select **Save and run**.
 
-   :::image type="content" source="media/save-and-run-button-new-yaml-pipeline.png" alt-text="Screenshot of the Save and run button in a new YAML pipeline.":::
+   :::image type="content" source="media/save-and-run-button-new-yaml-pipeline-android.png" alt-text="Screenshot of the Save and run button in a new Android YAML pipeline.":::
 
 1. Optionally edit the **Commit message** and provide a description, then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
 The build run page shows build details and progress. If you want to watch your pipeline in action, select **Job** on the lower part of the page.
 
-You now have a working YAML pipeline, *azure-pipelines.yml*, in your repository that's ready to customize.
+You now have a working Android YAML pipeline, *azure-pipelines.yml*, in your repository that's ready to customize.
 
 ## Customize your pipeline
 
@@ -74,9 +74,9 @@ The `workingDirectory` should be similar to the root of the repository, such as 
 
 ### Sign and align the Android package (APK)
 
-An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM the application consumes. If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK, add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the pipeline. For more information, see [Sign your mobile app](../apps/mobile/app-signing.md).
+To run on a device instead of an emulator, the Android Application Package (APK) must be signed. Zipaligning reduces the RAM the application consumes. If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK, add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the pipeline. For more information, see [Sign a mobile app](../apps/mobile/app-signing.md).
 
-You should store the following passwords in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
+You should store the `jarsignerKeystorePassword` and `jarsignerKeyPassword` in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
 
 ```yaml
 - task: AndroidSigning@2
@@ -122,7 +122,7 @@ To test your app in a hosted lab of Android devices in the Visual Studio App Cen
 
 This task requires an [App Center](https://appcenter.ms) free trial account, which must be converted to paid after 30 days to continue to use the test lab. [Sign up for an App Center account](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) before you use this task.
 
-The following example runs an App Center test suite. The task uses a service connection that you must set up.
+The following example runs an App Center test suite. The task uses a [service connection](../library/service-endpoints.md#visual-studio-app-center-service-connection) that you must set up.
 
 For the complete task syntax and reference, see [App Center Test task](/azure/devops/pipelines/tasks/reference/app-center-test-v1). For more information, see [Using Azure DevOps for UI Testing](/appcenter/test-cloud/vsts-plugin).
 
@@ -135,7 +135,7 @@ For the complete task syntax and reference, see [App Center Test task](/azure/de
     appiumBuildDirectory: test/upload
     serverEndpoint: 'My App Center service connection'
     appSlug: username/appIdentifier
-    devices: 0123456
+    devices: 'devicelist'
 ```
 
 ### Keep artifacts with the build record
@@ -170,7 +170,7 @@ The following example distributes an app to users. For the complete task syntax 
 
 ### Install the Google Play extension and deploy to Google Play
 
-To automate interaction with Google Play, install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and then use the following tasks. By default, these tasks authenticate to Google Play by using a [service connection](../library/service-endpoints.md) that you must configure.
+To automate interaction with Google Play, install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and then use the following tasks. By default, these tasks authenticate to Google Play by using a [service connection](..//library/service-endpoints.md) that you must configure.
 
 #### Release
 
@@ -224,39 +224,49 @@ To update the rollout status for an application that was previously released to 
 
 ## Create an app bundle
 
-You can build and sign an app bundle with an inline script and a secure file. First, download your keystore and [store it as a secure file in the Library](../library/secure-files.md). Then, create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md).
+You can build and sign an app bundle with an inline script and a secure file. First, download your keystore and store it as a [secure file](../library/secure-files.md) in the Azure Pipelines library. Then, create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md).
 
-Next, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) tasks to download your keystore and build and sign your app bundle in your YAML pipeline.
+In your YAML pipeline:
 
-In this YAML file, download an `app.keystore` secure file and use a Bash script to generate an app bundle. Then use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+1. Add the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) task to download the *app.keystore* secure file.
 
-```yaml
-- task: DownloadSecureFile@1
-  name: keyStore
-  displayName: "Download keystore from secure files"
-  inputs:
-    secureFile: app.keystore
+   ```yaml
+   - task: DownloadSecureFile@1
+     name: keyStore
+     displayName: "Download keystore from secure files"
+     inputs:
+       secureFile: app.keystore
+   ```
 
-- task: Bash@3
-  displayName: "Build and sign App Bundle"
-  inputs:
-    targetType: "inline"
-    script: |
-      msbuild -restore $(Build.SourcesDirectory)/myAndroidApp/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
+1. Use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task with a Bash script to build and sign the app bundle.
 
-- task: CopyFiles@2
-  displayName: 'Copy deliverables'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/myAndroidApp/bin/$(buildConfiguration)'
-    Contents: '*.aab'
-    TargetFolder: 'drop'
-```
+   ```yaml
+   - task: Bash@3
+     displayName: "Build and sign App Bundle"
+     inputs:
+       targetType: "inline"
+       script: |
+         msbuild -restore $(Build.SourcesDirectory)/myAndroidApp/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
+   ```
+
+1. Use the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) task to copy the app bundle.
+
+   ```yaml
+   - task: CopyFiles@2
+     displayName: 'Copy deliverables'
+     inputs:
+       SourceFolder: '$(Build.SourcesDirectory)/myAndroidApp/bin/$(buildConfiguration)'
+       Contents: '*.aab'
+       TargetFolder: 'drop'
+   ```
+
+1. From here, you can either create and save an artifact with the [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish the app bundle.
 
 ## Related extensions
 
-- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
-- [Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (Microsoft)  
-- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
-- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
-- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) from Codified Security
+- [Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) from Microsoft
+- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) from James Montemagno
+- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) from Perfecto Mobile
+- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) from Microsoft
 
