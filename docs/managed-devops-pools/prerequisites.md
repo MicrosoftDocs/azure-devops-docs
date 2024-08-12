@@ -6,7 +6,7 @@ ms.subservice: azure-devops-managed-devops-pools
 author: steved0x
 ms.author: sdanie
 ms.topic: conceptual
-ms.date: 07/18/2024
+ms.date: 08/12/2024
 ---
 
 # Prerequisites
@@ -35,17 +35,23 @@ If the two directories don't match, or your Azure DevOps organization isn't conn
 
 ## Register the Managed DevOps Pools resource provider in your Azure Subscription
 
+Before you use a resource provider, you must make sure your Azure subscription is registered for the resource provider. Registration configures your subscription to work with the resource provider. The following steps show how to register the **Microsoft.DevOpsInfrastructure** provider in your subscription. For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
+
 #### [Azure portal](#tab/azure-portal/)
 
-### Azure Portal
+### Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the Azure portal menu, search for **Subscriptions**. Select it from the available options.
 1. Select the Azure subscription you plan to use for Managed DevOps Pools.
 1. On the left menu, under **Settings**, select **Resource providers**.
-1. Search for **Microsoft.DevOpsInfrastructure**, choose it from the list, and choose **Register**.
+1. Search for **Microsoft.DevOpsInfrastructure**, select the check box from the list, and choose **Register**.
 
-   ![Screenshot of registering an Azure Resource provider](./media/prerequisites/register-resource-provider.png)
+   :::image type="content" source="./media/prerequisites/register-resource-provider.png" alt-text="Screenshot of registering the Managed DevOps Pools Azure Resource provider.":::
+
+1. To see the Azure regions that support Managed DevOps Pools in your subscription after it is registered, select **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
+
+   :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
 
 #### [Azure CLI](#tab/azure-cli/)
 
