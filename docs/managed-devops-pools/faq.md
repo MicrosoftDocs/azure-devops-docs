@@ -6,7 +6,7 @@ ms.subservice: azure-devops-managed-devops-pools
 author: steved0x
 ms.author: sdanie
 ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 08/12/2024
 ---
 
 # Frequently asked questions
@@ -39,7 +39,7 @@ To see the Azure regions that support Managed DevOps Pools in your subscription,
 
 1. Choose **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
 
-  :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
+   :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
 
 > [!IMPORTANT]
 > If the **Microsoft.DevOpsInfrastructure** is not registered in your subscription, you won't see any locations. [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription) before you check for supported regions. For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/).
