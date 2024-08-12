@@ -47,7 +47,7 @@ If the two directories don't match, or your Azure DevOps organization isn't conn
 
    :::image type="content" source="./media/prerequisites/register-resource-provider.png" alt-text="Screenshot of registering the Managed DevOps Pools Azure Resource provider.":::
 
-1. To see the Azure regions that support Managed DevOps Pools, select **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
+1. To see the Azure regions that support Managed DevOps Pools in your subscription, select **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
 
    :::image type="content" source="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
 
