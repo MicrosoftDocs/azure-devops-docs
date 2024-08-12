@@ -39,7 +39,7 @@ Before you use a resource provider, you must make sure your Azure subscription i
 
 #### [Azure portal](#tab/azure-portal/)
 
-### Azure Portal
+### Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the Azure portal menu, search for **Subscriptions**. Select it from the available options.
