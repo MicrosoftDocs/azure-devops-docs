@@ -77,8 +77,6 @@ steps:
    |**key-alias**|The key alias for the signing certificate you generated.|
    |**key-password**|The password for the key associated with the specified alias. Be sure to select the **lock** icon.|
 
-   ![Screenshot that shows Android signing variables.](media/secure-certs/android-signing-variables.png)
-
 1. On the **Tasks** tab, select the Android signing task and reference the names of your newly created variables in the **Signing Options** as `$(keystore-password)`, `$(key-alias)`, and `$(key-password)`.
 ---
 
