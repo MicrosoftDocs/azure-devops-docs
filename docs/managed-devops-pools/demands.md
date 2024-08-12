@@ -47,8 +47,8 @@ If multiple jobs are queued at the same time, it is possible that a lower priori
 
 For the case of a single pipeline with multiple jobs:
 
-* If your pipeline has [dependencies that define sequential jobs](../pipelines/process/phases.md##dependencies), the sequential jobs run in the order specified by the pipeline regardless of the priority setting for each job.
-* If your pipeline has multiple jobs configured to run in parallel ([the default for YAML pipelines](../pipelines/process/phases.md##dependencies)), the jobs are queued at the same time, and jobs in the pipeline with lower priority might be run before jobs in the pipeline with higher priority.
+* If your pipeline has [dependencies that define sequential jobs](../pipelines/process/phases.md#dependencies), the sequential jobs run in the order specified by the pipeline regardless of the priority setting for each job.
+* If your pipeline has multiple jobs configured to run in parallel ([the default for YAML pipelines](../pipelines/process/phases.md#dependencies)), the jobs are queued at the same time, and jobs in the pipeline with lower priority might be run before jobs in the pipeline with higher priority.
 
 
 ## ImageOverride
