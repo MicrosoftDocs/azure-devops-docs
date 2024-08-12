@@ -41,9 +41,15 @@ pool:
   - Priority -equals Low
 ```
 
-Jobs are selected to run for the queue in order of priority. For example, you have a pool which has a maximum agents setting of 10 and a pipeline configured to use this pool. The pool is already running 10 pipelines, and 20 more are queued. IF you have a priority pipeline to run, for example to push out a hot fix, it would normally run after the 10 running pipelines and the 20 queued pipelines complete. If you set priority to high when queuing your hotfix pipeline, it will get an agent and run before the 20 previously queued pipelines.
+Jobs are selected to run from the queue in order of priority. For example, you have a pool which has a maximum agents setting of 10 and a pipeline configured to use this pool. The pool is already running 10 pipelines, and 20 more are queued. If you have a priority pipeline to run, for example to push out a hot fix, it would normally run after the 10 running pipelines and the 20 queued pipelines complete. If you set priority to high when queuing your hotfix pipeline, it will get an agent and run before the 20 previously queued pipelines.
 
-If multiple jobs are queued at the same time, it is possible that a lower priority job will run before a higher priority job. For example, if your pipeline has multiple jobs with different priorities, the jobs are queued in the order they appear in the pipeline, and it is possible that the first job might get an agent and start to run before the remainder of the agents are queued. If your pipelines have [dependencies that define sequential jobs](../pipelines//process/phases.md##dependencies), the sequential jobs will run in the order specified by the pipeline regardless of the priority setting for each job.
+If multiple jobs are queued at the same time, it is possible that a lower priority job will run before a higher priority job.
+
+For the case of a single pipeline with multiple jobs:
+
+* If your pipeline has [dependencies that define sequential jobs](../pipelines/process/phases.md##dependencies), the sequential jobs run in the order specified by the pipeline regardless of the priority setting for each job.
+* If your pipeline has multiple jobs configured to run in parallel ([the default for YAML pipelines](../pipelines/process/phases.md##dependencies)), the jobs are queued at the same time, and jobs in the pipeline with lower priority might be run before jobs in the pipeline with higher priority.
+
 
 ## ImageOverride
 
