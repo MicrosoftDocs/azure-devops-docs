@@ -78,7 +78,7 @@ A question that typically comes up with migration is what type of licensing a co
 - ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription 
 - ***Each Azure DevOps Services organization gets five free users 
 
-For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md) and the [Azure Pricing Calculator]( https://aka.ms/AzureDevOpsPricing). 
+For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md) and the [Azure Pricing Calculator](https://aka.ms/AzureDevOpsPricing). 
 
 Buy any needed Azure DevOps Services user licenses through the Visual Studio Marketplace or the Azure portal. We delve into this process during the [Prepare for test run phase](migration-prepare-test-run.md). 
 
