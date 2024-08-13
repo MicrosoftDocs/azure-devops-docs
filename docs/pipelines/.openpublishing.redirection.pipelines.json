@@ -216,6 +216,22 @@
     {
       "source_path_from_root": "/docs/pipelines/process/parameters.md",
       "redirect_url": "/azure/devops/pipelines/release/parameters"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/library/task-groups.md",
+      "redirect_url": "/azure/devops/pipelines/release/task-groups"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/process/pipeline-triggers-classic.md",
+      "redirect_url": "/azure/devops/pipelines/release/pipeline-triggers-classic"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/build/options.md",
+      "redirect_url": "/azure/devops/pipelines/release/options"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/publish-pipeline-artifact.md",
+      "redirect_url": "/azure/devops/pipelines/release/publish-pipeline-artifact"
     }
   ]
 }
