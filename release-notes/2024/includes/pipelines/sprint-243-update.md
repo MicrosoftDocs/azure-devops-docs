@@ -13,11 +13,11 @@ We're excited to announce the public preview of [Managed DevOps Pools (MDP)](htt
 
 Key benefits of Managed DevOps Pools include:
 
-* Hosted on your behalf: MDP is hosted and managed by Microsoft, with the virtual machines powering the agents created and maintained within Microsoft-owned Azure subscriptions.
-* Time spent in Management: MDP significantly reduces the time spent managing agents, particularly those based on on-premises infrastructure or manually maintained systems.
-* Specific Pools: Due to the ease with which new pools can be created, organizations can easily create multiple team-specific or workload-specific pools.
-* DevOps Billing: MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
-* Scalable: MDP scales to 1000s of agents in a single pool.
+* **Hosted on your behalf:** MDP is hosted and managed by Microsoft, with the virtual machines powering the agents created and maintained within Microsoft-owned Azure subscriptions.
+* **Time spent in Management:** MDP significantly reduces the time spent managing agents, particularly those based on on-premises infrastructure or manually maintained systems.
+* **Specific Pools:** Due to the ease with which new pools can be created, organizations can easily create multiple team-specific or workload-specific pools.
+* **DevOps Billing:** MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
+* **Scalable:** MDP scales to 1000s of agents in a single pool.
 
 Teams can create pools with [quick-starter images](https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-images?view=azure-devops&tabs=azure-portal#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images the team has created with pre-requisites that are unique to their scenario.
 
