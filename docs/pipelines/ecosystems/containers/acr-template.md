@@ -12,9 +12,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-This tutorial shows you how to use a pipeline based on the Azure Pipelines Docker template to build a containerized application and push it to Azure Container Registry. The template sets up a continuous integration YAML pipeline where new code repository changes trigger the pipeline to build and publish updated Docker images to the registry.
+This tutorial shows you how to use a pipeline based on an Azure Pipelines Docker template to build a containerized application and push it to Azure Container Registry. The template sets up a continuous integration YAML pipeline where new code repository changes trigger the pipeline to build and publish updated Docker images to the registry.
 
-This Docker container template-based pipeline uses Microsoft-hosted agents and creates a service connection to connect to Azure Container Registry. For a pipeline that does a similar process by using self-hosted agents and a managed service identity, see [Build and push Docker images to Azure Container Registry](publish-to-acr.md).
+The Docker container template pipeline uses Microsoft-hosted agents and creates a service principal-based service connection to Azure Container Registry. For a pipeline that does a similar process by using self-hosted agents and a service connection you create yourself, see [Build and push Docker images to Azure Container Registry](publish-to-acr.md).
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ In GitHub, fork or clone the [Sample Docker and Kubernetes Node.JS app](https://
    az acr update -n <acrName> --admin-enabled true
    ```
 
-Alternatively, you can use the Azure portal UI to create your Azure container registry. For instructions, see [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry). Enable the admin account when you create the registry.
+Alternatively, you can use the Azure portal UI to create your Azure container registry. For instructions, see [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry). Enable the admin account in **Properties** after you create the registry.
 
 ## Create the pipeline
 
@@ -75,15 +75,15 @@ Alternatively, you can use the Azure portal UI to create your Azure container re
 
 1. Optionally edit the **Commit message** and provide a description. Then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
-1. The build run page shows build details and progress. To watch your pipeline in action, select **Job** on the lower part of the page.
+1. The build run page shows build details and progress. To watch your pipeline in action, select **Build** under **Jobs**.
 
-   :::image type="content" source="../media/jobs-build.png" alt-text="Monitor builds":::
+   :::image type="content" source="../media/jobs-build.png" alt-text="Screenshot that shows the Build link on the job run page.":::
 
 ## Pipeline details
 
 The pipeline is generated from the [Docker container template](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml). The build stage uses the [Docker v2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build and push your Docker image to the container registry.
 
-The Docker task uses a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to enable your pipeline to push images to your container registry. Azure Pipelines generates this service connection when it creates this pipeline.
+The Docker task uses a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) with service principal authentication to enable your pipeline to push images to your container registry. The Docker container template generates this service connection when it creates the pipeline.
 
 ```yaml
 - stage: Build
