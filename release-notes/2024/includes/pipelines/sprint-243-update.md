@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/13/2024
+ms.date: 8/13/2024_Edit build pipeline_ permission
 ms.topic: include
 ---
 
@@ -16,25 +16,27 @@ To increase pipeline security, we are introducing a new permission, _Create buil
 > [!div class="mx-imgBorder"]
 > [![Screenshot of create build pipeline permission.](../../media/243-pipelines-01.png "Screenshot of create build pipeline permission")](../../media/243-pipelines-01.png#lightbox)
 
-Previously, users required the _Edit build pipeline_ permission to either create a pipeline or edit a pipeline. This posed a security concern, because it meant that all users who should be able to create a pipeline could also edit pipelines they didn't create by default. Preventing this was tedious.
+Previously, the _Edit build pipeline_ permission was required to create or edit a pipeline. This posed a security risk, as it allowed all users with the ability to create pipelines to also edit pipelines they did not create. Preventing this was time-consuming.
 
-To prevent negatively impacting your pipeline experience, all users and groups who have _Edit build pipeline_ permission will get the _Create build pipeline_ permission. 
+To enhance your pipeline experience without compromising security, all users and groups with the _Edit build pipeline_ permission will now also receive the _Create build pipeline_ permission.
 
-When a pipeline is created, its creator gets the _Edit build pipeline_ permission. 
+When a pipeline is created, its creator is granted the _Edit build pipeline_ permission.
 
-You may choose to remove the _Edit build pipeline_ permission from user groups such as _Contributors_ and _Readers_, to improve your pipelines' security. This means that, by default, only a pipeline's creator is able to edit the pipeline.
+For improved pipeline security, you may choose to remove the _Edit build pipeline_ permission from user groups such as _Contributors_ and _Readers_. This ensures that, by default, only the pipeline's creator can edit it.
 
-Note: The _Edit build pipeline_ permission does not protect a YAML pipeline from being edited by those who don't have this permission. It protects the pipeline from having its properties edited.
+> [!NOTE]  
+> The **_Edit build pipeline_** permission does not prevent others from editing a YAML pipeline; it only protects the pipeline's properties from being edited.
 
-Note: For new projects, users and group who have the _Edit build pipeline_ permission also get the _Create build pipeline_ permission. This is subject to change in the future.
+For new projects, users and groups with the _Edit build pipeline_ permission will also have the _Create build pipeline_ permission. This is subject to change in the future.
 
 ### Exclusive lock check at stage level
 
-There are use cases that require only a single run of a pipeline access a specific resource at any point in time. To support this use case, we have the [Exclusive lock](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#exclusive-lock) check.
+Some use cases require a pipeline to access a specific resource only once at any given time. To support this case, we have the [Exclusive lock](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#exclusive-lock) check.
 
-A similar use case is when only a single pipeline run should access a stage at any point in time. For example, you have a stage that deploys to an Azure resource group, and you don't want multiple pipeline runs to concurrently update the same resource group. Today, to obtain this behavior, you have to use a proxy resource, for example, an environment, and place the Exclusive lock check on that environment. This is tedious, adds complexity, and increases maintenance efforts.
+A similar situation arises when only one pipeline run should access a stage at any point in time. For instance, if you have a stage that deploys to an Azure resource group, you may want to prevent multiple pipeline runs from simultaneously updating the same resource group. Currently, achieving this requires using a proxy resource, such as an environment, and placing the Exclusive lock check on that environment. This approach can be time-consuming, add complexity, and increase maintenance efforts.
 
-In this sprint we're adding support for specifying the exclusive lock at stage level. If you have a stage that has an id and you specify its `lockBehavior` property, a lock is automatically created for that stage. The `sequential` behavior is the same for resource-level and stage-level locks. The `runLatest` behavior differs in that it cancels only the `runLatest` builds for the same branch, not for all branches of the pipeline. 
+In this sprint, we’re introducing support for specifying the exclusive lock at the stage level. If you have a stage with an ID and specify its `lockBehavior` property, a lock will be automatically created for that stage. The `sequential` behavior remains consistent for both resource-level and stage-level locks. However, the `runLatest` behavior differs, as it only cancels `runLatest` builds for the same branch, not for all branches of the pipeline.
+
 
 ### Template information in pipeline runs
 
@@ -83,11 +85,11 @@ The new REST API will have the following new properties:
 
 ### Manually triggered YAML pipeline stages
 
-One of the frequent asks we received is about manually triggered YAML pipeline stages. They are useful when you want to have a unified pipeline, but don't wish to always run the pipeline to completion.
+We frequently receive requests about manually triggered YAML pipeline stages. These are helpful when you want a unified pipeline but don’t always want it to run to completion.
 
-For example, your pipeline can build, test, deploy to a staging environment, and, finally, deploy to production. You may wish to always run all stages but the one that deploys to production. For production deployments, you wish to manually run the stage, at your convenience.
+For instance, your pipeline might include stages for building, testing, deploying to a staging environment, and deploying to production. You might want all stages to run automatically except for the production deployment, which you prefer to trigger manually when ready.
 
-Starting with this sprint, we're adding support for manually triggered YAML pipeline stages. To use this feature, you need to add the `trigger: manual` property to a stage.
+With this sprint, we're adding support for manually triggered YAML pipeline stages. To use this feature, you need to add the `trigger: manual` property to a stage.
 
 Consider the following YAML pipeline example.
 ```yaml
@@ -127,13 +129,14 @@ Manually triggered stages have no dependencies and can be run at any time. The p
 
 ### Managed DevOps Pools (Public Preview)
 
-Engineering teams ideally want to spend all their time writing code to create applications and services for their users! In reality, many end up spending a significant portion of their time on other tasks, such as maintaining DevOps infrastructure.
+Engineering teams excel when they can focus on writing code to develop applications and services for their users. However, in practice, a substantial amount of time is often spent managing other tasks, such as maintaining DevOps infrastructure. 
 
-Today, we’re excited to announce the public preview of [Managed DevOps Pools (MDP)](https://aka.ms/mdp-docs), a feature of Azure DevOps that enables dev teams or platform engineering teams to quickly spin up custom DevOps pools that suit their team’s unique needs. It combines the flexibility of Scale Set agents and the ease of maintenance of Microsoft Hosted agents. It enables engineering teams to establish consistency and best practices while maximizing performance, security, compliance, and cost-efficiency for their custom DevOps Pools.
+We are excited to announce the public preview of [Managed DevOps Pools (MDP)](https://aka.ms/mdp-docs), a new Azure DevOps feature designed to help development and platform engineering teams deploy custom DevOps pools tailored to their unique needs. MDP combines the flexibility of Scale Set agents with the ease of maintenance associated with Microsoft-hosted agents, enabling teams to establish consistency and best practices while optimizing performance, security, compliance, and cost-efficiency.
 
-By using Managed DevOps Pools, teams can expect to see the following key benefits:
-* Hosted on your behalf: MDP is a fully managed service where VMs powering the agents are created/managed by Microsoft services in Microsoft owned Azure subscriptions.
-* Time spent in Management: MDP drastically reduces time spent in management of agents that are based on on-premises infrastructure or manually maintained.
+Key benefits of Managed DevOps Pools include:
+
+* Hosted on your behalf: MDP is hosted and managed by Microsoft, with the virtual machines powering the agents created and maintained within Microsoft-owned Azure subscriptions.
+* Time spent in Management: MDP significantly reduces the time spent managing agents, particularly those based on on-premises infrastructure or manually maintained systems.
 * Specific Pools: Due to the ease with which new pools can be created, organizations can very easily create multiple team-specific or workload-specific pools.
 * DevOps Billing: MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
 * Scalable: MDP scales to 1000s of agents in a single pool.
