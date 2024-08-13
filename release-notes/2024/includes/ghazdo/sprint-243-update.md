@@ -21,7 +21,7 @@ However, CodeQL, the static analysis engine behind GitHub Advanced Security for 
 
 For all compiled languages, the default build mode is **"manual."** However, for C# and Java, you can change the build mode to **"none."** 
 
-You can configure the build mode during the AdvancedSecurity-Codeql-Init@1 setup. For detailed instructions on configuring code scanning in GitHub Advanced Security with Azure DevOps, see Set up [code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops&tabs=yaml#set-up-code-scanning)
+You can configure the build mode during the AdvancedSecurity-Codeql-Init@1 setup. For detailed instructions on configuring code scanning in GitHub Advanced Security with Azure DevOps, see Set up [code scanning](/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops&tabs=yaml#set-up-code-scanning)
 
 Consideration:
 - If **"none"** is selected and a language other than supported complied languages C# or Java, the pipeline task may not work as expected. 
