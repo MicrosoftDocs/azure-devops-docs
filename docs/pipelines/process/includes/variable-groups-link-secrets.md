@@ -8,7 +8,7 @@ ms.date: 04/29/2022
 ms.custom: arm2024
 ---
 
-You can create a variable group that links to an existing Azure key vault and map selected Key Vault secrets to the variable group. Only the secret names are mapped to the variable group, not the secret values. Pipeline runs that link to the variable group fetch the latest secret values from the vault.
+You can create a variable group that links to existing Azure key vaults and maps selected key vault secrets to the variable group. Only the secret names are mapped to the variable group, not the secret values. When pipelines run, they link to the variable group to fetch the latest secret values from the vault at runtime.
 
 Any changes made to existing secrets in the key vault are automatically available to all the pipelines that use the variable group. However, if secrets are added to or deleted from the vault, the associated variable groups don't automatically update. You must explicitly update the secrets to include in the variable group.
 
@@ -47,7 +47,7 @@ Create an Azure key vault.
 1. Enable the **Link secrets from an Azure key vault as variables** toggle.
 1. Select your service connection and select **Authorize**
 1. Select your key vault name and enable Azure DevOps to access the key vault by selecting **Authorize** next to the vault name.
-1. Select **+ Add** and on the **Choose secrets** screen, select specific secrets from your vault for mapping to this variable group, then select **OK**.
+1. Select **+ Add** and on the **Choose secrets** screen, select the secrets from your vault for mapping to this variable group, then select **OK**.
 1. Select **Save** to save the secret variable group.
 
 :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
