@@ -26,7 +26,7 @@ Learn more about Managed DevOps Pools by reading our [blog post](https://devblog
 
 ### Azure Pipelines tasks use Node 20
 
-Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20. See https://aka.ms/node-runner-guidance for upgrade guidance.
+Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20. For guidance on how to upgrade see, [How can I upgrade my custom task to the latest Node?](https://aka.ms/node-runner-guidance). 
 
 ### Create build pipeline permission
 
