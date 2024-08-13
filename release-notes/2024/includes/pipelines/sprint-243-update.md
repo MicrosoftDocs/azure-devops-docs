@@ -5,18 +5,37 @@ ms.date: 8/13/2024_Edit build pipeline_ permission
 ms.topic: include
 ---
 
+### Managed DevOps Pools (Preview)
+
+Engineering teams excel when they can focus on writing code to develop applications and services for their users. However, in practice, a substantial amount of time is often spent managing other tasks, such as maintaining DevOps infrastructure. 
+
+We're excited to announce the public preview of [Managed DevOps Pools (MDP)](https://aka.ms/mdp-docs), a new Azure DevOps feature designed to help development and platform engineering teams deploy custom DevOps pools tailored to their unique needs. MDP combines the flexibility of Scale Set agents with the ease of maintenance associated with Microsoft-hosted agents, enabling teams to establish consistency and best practices while optimizing performance, security, compliance, and cost-efficiency.
+
+Key benefits of Managed DevOps Pools include:
+
+* Hosted on your behalf: MDP is hosted and managed by Microsoft, with the virtual machines powering the agents created and maintained within Microsoft-owned Azure subscriptions.
+* Time spent in Management: MDP significantly reduces the time spent managing agents, particularly those based on on-premises infrastructure or manually maintained systems.
+* Specific Pools: Due to the ease with which new pools can be created, organizations can easily create multiple team-specific or workload-specific pools.
+* DevOps Billing: MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
+* Scalable: MDP scales to 1000s of agents in a single pool.
+
+Teams can create pools with [quick-starter images](https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-images?view=azure-devops&tabs=azure-portal#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images the team has created with pre-requisites that are unique to their scenario.
+
+Learn more about Managed DevOps Pools by reading our [blog post](https://devblogs.microsoft.com/devops/managed-devops-pools/) or its [documentation](https://aka.ms/mdp-docs).
+
+
 ### Azure Pipelines tasks use Node 20
 
-Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20, see https://aka.ms/node-runner-guidance for upgrade guidance.
+Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20. See https://aka.ms/node-runner-guidance for upgrade guidance.
 
 ### Create build pipeline permission
 
-To increase pipeline security, we are introducing a new permission, _Create build pipeline_, at Pipelines level. 
+To increase pipeline security, we're introducing a new permission, _Create build pipeline_, at Pipelines level. 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of create build pipeline permission.](../../media/243-pipelines-01.png "Screenshot of create build pipeline permission")](../../media/243-pipelines-01.png#lightbox)
 
-Previously, the _Edit build pipeline_ permission was required to create or edit a pipeline. This posed a security risk, as it allowed all users with the ability to create pipelines to also edit pipelines they did not create. Preventing this was time-consuming.
+Previously, the _Edit build pipeline_ permission was required to create or edit a pipeline. This posed a security risk, as it allowed all users with the ability to create pipelines to also edit pipelines they didn't create. Preventing this was time-consuming.
 
 To enhance your pipeline experience without compromising security, all users and groups with the _Edit build pipeline_ permission will now also receive the _Create build pipeline_ permission.
 
@@ -35,7 +54,7 @@ Some use cases require a pipeline to access a specific resource only once at any
 
 A similar situation arises when only one pipeline run should access a stage at any point in time. For instance, if you have a stage that deploys to an Azure resource group, you may want to prevent multiple pipeline runs from simultaneously updating the same resource group. Currently, achieving this requires using a proxy resource, such as an environment, and placing the Exclusive lock check on that environment. This approach can be time-consuming, add complexity, and increase maintenance efforts.
 
-In this sprint, we’re introducing support for specifying the exclusive lock at the stage level. If you have a stage with an ID and specify its `lockBehavior` property, a lock will be automatically created for that stage. The `sequential` behavior remains consistent for both resource-level and stage-level locks. However, the `runLatest` behavior differs, as it only cancels `runLatest` builds for the same branch, not for all branches of the pipeline.
+In this sprint, we’re introducing support for specifying the exclusive lock at the stage level. If you have a stage with an ID and specify its `lockBehavior` property, a lock is automatically created for that stage. The `sequential` behavior remains consistent for both resource-level and stage-level locks. However, the `runLatest` behavior differs, as it only cancels `runLatest` builds for the same branch, not for all branches of the pipeline.
 
 
 ### Template information in pipeline runs
@@ -55,7 +74,7 @@ extends:
         - template: template-step.yml
 ```
 
-The new REST API will have the following new properties:
+The new REST API has the following new properties:
 ```yml
 "yamlDetails":
     {
@@ -126,21 +145,3 @@ When you run this pipeline, the experience is the following.
 > ![Screenshot of manually triggered YAML pipeline stages.](../../media/243-pipelines-02.png "Screenshot of manually triggered YAML pipeline stages")
 
 Manually triggered stages have no dependencies and can be run at any time. The pipeline run completes when there are only manually triggered stages left to execute.
-
-### Managed DevOps Pools (Public Preview)
-
-Engineering teams excel when they can focus on writing code to develop applications and services for their users. However, in practice, a substantial amount of time is often spent managing other tasks, such as maintaining DevOps infrastructure. 
-
-We are excited to announce the public preview of [Managed DevOps Pools (MDP)](https://aka.ms/mdp-docs), a new Azure DevOps feature designed to help development and platform engineering teams deploy custom DevOps pools tailored to their unique needs. MDP combines the flexibility of Scale Set agents with the ease of maintenance associated with Microsoft-hosted agents, enabling teams to establish consistency and best practices while optimizing performance, security, compliance, and cost-efficiency.
-
-Key benefits of Managed DevOps Pools include:
-
-* Hosted on your behalf: MDP is hosted and managed by Microsoft, with the virtual machines powering the agents created and maintained within Microsoft-owned Azure subscriptions.
-* Time spent in Management: MDP significantly reduces the time spent managing agents, particularly those based on on-premises infrastructure or manually maintained systems.
-* Specific Pools: Due to the ease with which new pools can be created, organizations can very easily create multiple team-specific or workload-specific pools.
-* DevOps Billing: MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
-* Scalable: MDP scales to 1000s of agents in a single pool.
-
-Teams can create pools with [quick-starter images](https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-images?view=azure-devops&tabs=azure-portal#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images the team has created with pre-requisites that are unique to their scenario.
-
-Learn more about Managed DevOps Pools by reading our [blogpost](https://devblogs.microsoft.com/devops/managed-devops-pools/) or its [documentation](https://aka.ms/mdp-docs).
