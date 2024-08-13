@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/13/2024_Edit build pipeline_ permission
+ms.date: 8/13/2024
 ms.topic: include
 ---
 
@@ -30,23 +30,23 @@ Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS a
 
 ### Create build pipeline permission
 
-To increase pipeline security, we're introducing a new permission, _Create build pipeline_, at Pipelines level. 
+To increase pipeline security, we're introducing a new permission, `Create build pipeline`, at Pipelines level. 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of create build pipeline permission.](../../media/243-pipelines-01.png "Screenshot of create build pipeline permission")](../../media/243-pipelines-01.png#lightbox)
 
-Previously, the _Edit build pipeline_ permission was required to create or edit a pipeline. This posed a security risk, as it allowed all users with the ability to create pipelines to also edit pipelines they didn't create. Preventing this was time-consuming.
+Previously, the `Edit build pipeline` permission was required to create or edit a pipeline. This posed a security risk, as it allowed all users with the ability to create pipelines to also edit pipelines they didn't create. Preventing this was time-consuming.
 
-To enhance your pipeline experience without compromising security, all users and groups with the _Edit build pipeline_ permission will now also receive the _Create build pipeline_ permission.
+To enhance your pipeline experience without compromising security, all users and groups with the `Edit build pipeline`  permission will now also receive the `Create build pipeline` permission.
 
-When a pipeline is created, its creator is granted the _Edit build pipeline_ permission.
+When a pipeline is created, its creator is granted the `Edit build pipeline` permission.
 
-For improved pipeline security, you may choose to remove the _Edit build pipeline_ permission from user groups such as _Contributors_ and _Readers_. This ensures that, by default, only the pipeline's creator can edit it.
+For improved pipeline security, you may choose to remove the `Edit build pipeline` permission from user groups such as **Contributors** and **Readers**. This ensures that, by default, only the pipeline's creator can edit it.
 
 > [!NOTE]  
-> The **_Edit build pipeline_** permission does not prevent others from editing a YAML pipeline; it only protects the pipeline's properties from being edited.
+> The **Edit build pipeline** permission does not prevent others from editing a YAML pipeline; it only protects the pipeline's properties from being edited.
 
-For new projects, users and groups with the _Edit build pipeline_ permission will also have the _Create build pipeline_ permission. This is subject to change in the future.
+For new projects, users and groups with the `Edit build pipeline` permission will also have the *`Create build pipeline`* permission. This is subject to change in the future.
 
 ### Exclusive lock check at stage level
 
