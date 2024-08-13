@@ -1,12 +1,15 @@
 ---
-title: TBD
+title: Managed DevOps Pools for Azure DevOps (preview)
 author: ckanyika
 ms.author: ckanyika
 ms.date: 8/13/2024
-description: TBD
+description: Managed DevOps Pools for Azure DevOps (preview)
 ---
-# TBD
+# Managed DevOps Pools for Azure DevOps (preview)
 
+We’re excited to announce the preview of Managed DevOps Pools, designed to help development and platform engineering teams quickly set up and manage custom DevOps pools.
+
+Additionally, we've enhanced the Meter Usage estimate APIs for Advanced Security, providing new capabilities that help you identify users
 
 Check out the release notes for details.
 
