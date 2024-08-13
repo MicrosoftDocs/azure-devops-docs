@@ -10,3 +10,4 @@ ms.topic: include
 - [Exclusive lock check at stage level](#exclusive-lock-check-at-stage-level)
 - [Template information in pipeline runs](#template-information-in-pipeline-runs)
 - [Manually triggered YAML pipeline stages](#manually-triggered-yaml-pipeline-stages)
+- [Managed DevOps Pools (Public Preview)](#managed-devops-pools-public-preview)

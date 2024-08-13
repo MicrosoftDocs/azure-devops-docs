@@ -137,6 +137,6 @@ Time spent in Management: MDP drastically reduces time spent in management of ag
 Specific Pools: Due to the ease with which new pools can be created, organizations can very easily create multiple team-specific or workload-specific pools.
 DevOps Billing: MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
 Scalable: MDP scales to 1000s of agents in a single pool.
-Teams can create pools with [quick-starter images](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-images?view=azure-devops&tabs=azure-portal#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images that the team has created with pre-requisites that are unique to their scenario.
+Teams can create pools with [quick-starter images](https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-images?view=azure-devops&tabs=azure-portal#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images that the team has created with pre-requisites that are unique to their scenario.
 
 Learn more about Managed DevOps Pools by reading our [blogpost](https://devblogs.microsoft.com/devops/managed-devops-pools/) or its [documentation](https://aka.ms/mdp-docs).
