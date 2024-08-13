@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Publish Pipeline Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enable developers to store and manage their packages and control who they want to share it with. Pipeline Artifacts are generated after you build your application. The output can then be deployed or consumed by another job in your pipeline.
 
@@ -28,7 +28,7 @@ You can use [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/
     artifact: 'drop'
 ```
 
-- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](./build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
+- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](../build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
 
 - **publishLocation**: (Required). Artifacts publish location: choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline.
 
@@ -81,5 +81,5 @@ When your pipeline run is completed, you can view or download your published Art
 ## Related articles
 
 - [Releases in Azure Pipelines](/rest/api/azure/devops/release/releases)
-- [Multi-stage release pipeline](./release/define-multistage-release-process.md)
-- [Deploy from multiple branches](./release/deploy-multiple-branches.md)
+- [Multi-stage release pipeline](define-multistage-release-process.md)
+- [Deploy from multiple branches](deploy-multiple-branches.md)
