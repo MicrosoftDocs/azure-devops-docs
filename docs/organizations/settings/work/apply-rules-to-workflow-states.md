@@ -16,7 +16,7 @@ ms.date: 04/07/2021
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-After you add or modify your workflow states for a work item type, you may want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
+After you add or modify your workflow states for a work item type, you might want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 
 
 ::: moniker range="azure-devops"
@@ -106,7 +106,7 @@ The second group supports restricting state transitions. In this second group, y
 
 ::: moniker range="azure-devops-2019"
 
-Workflow conditions and actions you can set are illustrated in the following images. You can apply standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or make a field read-only or required. For this set of rules you can specify one or two conditions and several actions. 
+Workflow conditions and actions you can set are illustrated in the following images. You can apply standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or make a field read-only or required. For this set of rules, you can specify one or two conditions and several actions. 
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ The following table summarizes the workflow state and rule limits for the Inheri
 
 When defining workflow states and rules, we recommend that you consider the following guidance in order to minimize performance issues.  
 - Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.  
-- Minimize the number of custom WITs you define.  
+- Minimize the number of custom work item types.  
 
 Workflow rules are applied when adding or modifying work items through any of the following interfaces: 
 - Web portal: Work item form, bulk updates, updates in query view  ​
@@ -222,7 +222,7 @@ Workflow rules are applied when adding or modifying work items through any of th
 
 ## Define a rule  
 
-Prior to defining a rule based on workflow states, make sure you first define the following elements: 
+Before you define a rule based on workflow states, define the following elements: 
 - The workflow states that you want as described in [Customize a workflow](customize-process-workflow.md)
 - If your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-field.md)
 - If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add or remove users or groups, manage security groups](../../security/add-remove-manage-user-group-security-group.md). 
@@ -234,7 +234,7 @@ For the basics of defining rules, see [Add a custom rule](custom-rules.md). You 
 
 With the first grouping of rules, you can specify one or two conditions and up to 10 actions per rule.  
 
-#### Example of ensuring team lead approval prior to active work 
+#### Example of ensuring team lead approval before active work 
 
 In this example, development teams want to ensure that no User Story is worked on until approved by a team lead. The default workflow states are in use and only a single custom field, *Approved By*, and security group, *Team Leads Group*, are added. 
 
@@ -245,7 +245,7 @@ In this example, development teams want to ensure that no User Story is worked o
 
 #### Rule requirements 
 
-To ensure approval prior to active work, the following rules must be defined:  
+To ensure approval before active work, define the following rules:  
 
 - Require the *Approved By* field be filled in when the State moves from *New* to *Active*  
 - Restrict users who don't belong to the *Team Leads Group* to fill in the *Approved By* field  
@@ -333,7 +333,7 @@ When specifying the condition, `A work item state moved from ...`, you can speci
 
 #### Example of restricting state transitions and Approved state
 
-In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
+The following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three more States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
 > ![User Story, workflow states](media/customize-workflow/user-story-states-renamed.png)
@@ -349,7 +349,7 @@ To support a more controlled workflow, the business group decided to institute r
 - *Design* can only move to *Research*, *Approved*, and *Cut* 
 - *Approved* can only move to *Design*, *Active*, and *Cut*
 - *Active* can only move to *In Review*  
-- *In Review* can only move to *Active* (Additional work found), *Closed* or *Cut* 
+- *In Review* can only move to *Active* (More work found), *Closed* or *Cut* 
 - *Closed* can move to *Research*, *Design*, *Active*, *In Review* (Allows for cases where user closed the work item in error)
 - *Cut* can only move to *Proposed*. 
 
@@ -365,7 +365,7 @@ Additionally, the business group wants to apply rules for required fields:
  
 #### Rule definitions 
 
-To implement the above restrictions, the process administrator adds a custom *Approved By* identity field, an *Authorized Approvers* security group, and the following eleven rules. 
+To implement the above restrictions, the process administrator adds a custom *Approved By* identity field, an *Authorized Approvers* security group, and the following 11 rules. 
 
 &nbsp;&nbsp;&nbsp;
 
@@ -553,7 +553,7 @@ For the rules defined in the previous table, you should see the following State 
 
 ## Restrict state transition based on user or group membership 
 
-When specifying one of the two conditions based on user or group membership, `Current user is member of group ...` or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
+When specifying one of the two conditions based on user or group membership, `Current user is member of group ...`, or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
 
 
 [!INCLUDE [temp](../../../boards/includes/note-work-item-caching-rules-simple.md)]
@@ -563,25 +563,18 @@ When specifying one of the two conditions based on user or group membership, `Cu
 
 ## Automate state transitions of parent work items 
 
-To automate State transitions of parent work items based on the State assignments made to their child work items, you can add a web hook and use the code and configuration provided in the [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project. 
-
-> [!NOTE]   
-> The [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, raise them in the GitHub project page.   
-
-
+To automate State transitions for parent work items based on the State assignments of their child work items, see [Automate work item state transitions](../../../boards/backlogs/automate-work-item-state-transitions.md).
 <a id="reassign"></a>
 
 ::: moniker range=">= azure-devops-2020"
 
 ## Automate reassignment based on state change 
 
-The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been removed from the default system process. You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
+The Agile process bug work item type previously had a rule that reassigned the bug to its creator. We removed this rule from the default system process. You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
 
 **When** `A work item state changes to` *Resolved* **Then** `Copy the value from `*Created By* **to** *Assigned To*.
 
 ::: moniker-end
-
-
 
 ## Related articles
 
