@@ -1,6 +1,6 @@
 ---
-title: Use a Docker template pipeline to build and push images to Azure Container Registry
-description: Learn how to use the Azure Pipelines Docker template to create a YAML pipeline that builds and pushes a Docker image to Azure Container Registry.
+title: Use Docker YAML to build and push images to Azure Container Registry
+description: Use an Azure Pipelines Docker template to create a YAML pipeline that builds and pushes a Docker image to Azure Container Registry.
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: ericvan
@@ -8,13 +8,13 @@ author: geekzter
 ms.date: 08/12/2024
 monikerRange: 'azure-devops'
 ---
-# Use Docker YAML task to Build and push Docker images to Azure Container Registry
+# Use Docker YAML to build and push Docker images to Azure Container Registry
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 This tutorial shows you how to use a pipeline based on the Azure Pipelines Docker template to build a containerized application and push it to Azure Container Registry. The template sets up a continuous integration YAML pipeline where new code repository changes trigger the pipeline to build and publish updated Docker images to the registry.
 
-The Docker template-based pipeline uses Microsoft-hosted agents and creates a service connection to connect to Azure Container Registry. For a pipeline that does a similar process by using self-hosted agents and a managed service identity, see [Build and push Docker images to Azure Container Registry](publish-to-acr.md).
+This Docker container template-based pipeline uses Microsoft-hosted agents and creates a service connection to connect to Azure Container Registry. For a pipeline that does a similar process by using self-hosted agents and a managed service identity, see [Build and push Docker images to Azure Container Registry](publish-to-acr.md).
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ In GitHub, fork or clone the [Sample Docker and Kubernetes Node.JS app](https://
 
    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Azure Cloud Shell button":::
 
-1. In the Cloud Shell, run the following commands to create a resource group and an Azure container registry by using the Azure CLI. A Container Registry name must be lowercase.
+1. In the Cloud Shell, run the following commands to create a resource group and an Azure container registry by using the Azure CLI. The Container Registry name must be lowercase.
 
    ```azurecli
    az group create --name myapp-rg --location eastus
@@ -73,7 +73,7 @@ Alternatively, you can use the Azure portal UI to create your Azure container re
 
    :::image type="content" source="../media/review-your-pipeline.png" alt-text="Screenshot of the Save and run button in a new YAML pipeline.":::
 
-1. Optionally edit the **Commit message** and provide a description, then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
+1. Optionally edit the **Commit message** and provide a description. Then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
 1. The build run page shows build details and progress. To watch your pipeline in action, select **Job** on the lower part of the page.
 
@@ -83,7 +83,7 @@ Alternatively, you can use the Azure portal UI to create your Azure container re
 
 The pipeline is generated from the [Docker container template](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml). The build stage uses the [Docker v2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build and push your Docker image to the container registry.
 
-The Docker task uses a Docker registry [service connection](../../library/service-endpoints.md) to enable your pipeline to push images to your container registry. Azure Pipelines generates this service connection when it creates this pipeline.
+The Docker task uses a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to enable your pipeline to push images to your container registry. Azure Pipelines generates this service connection when it creates this pipeline.
 
 ```yaml
 - stage: Build

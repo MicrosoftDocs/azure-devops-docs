@@ -65,7 +65,7 @@ When you finish reviewing the code in *azure-pipelines.yml*, select **Save and r
 
    :::image type="content" source="media/save-and-run-button-new-yaml-pipeline.png" alt-text="Screenshot of the Save and run button in a new YAML pipeline.":::
 
-Optionally, edit the **Commit message** and provide a description, then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
+Optionally, edit the **Commit message** and provide a description. Then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
 The build run page shows build details and progress. If you want to watch your pipeline in action, select **Job** on the lower part of the page.
 

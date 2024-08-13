@@ -39,7 +39,7 @@ Do the following tasks to set up a pipeline for a simple Android application.
 
    :::image type="content" source="media/save-and-run-button-new-yaml-pipeline-android.png" alt-text="Screenshot of the Save and run button in a new Android YAML pipeline.":::
 
-1. Optionally edit the **Commit message** and provide a description, then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
+1. Optionally, edit the **Commit message** and provide a description. Then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
 The build run page shows build details and progress. If you want to watch your pipeline in action, select **Job** on the lower part of the page.
 
@@ -54,8 +54,6 @@ To make changes to your pipeline, select **Edit** on the pipeline page. The foll
 The starter YAML pipeline uses Gradle, a common open-source build tool for Android projects. For more information, see the [Gradle task](/azure/devops/pipelines/tasks/reference/gradle-v3).
 
 In the example task, the `tasks` parameter builds the `assembleDebug` build type. You can adjust the `tasks` value for the build variants you want, such as `build`, `test`, and `assembleRelease`.
-
-For more information about using Gradle tasks, see [Using tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html) in the Gradle documentation. For more information about build tasks, see [Build a debug APK](https://developer.android.com/studio/build/building-cmdline#DebugMode) and [Configure build variants](https://developer.android.com/studio/build/build-variants.html) in the Google Android development documentation.
 
 The example task also assumes that your `gradlew` file is at the root of the repository. If not, adjust the `workingDirectory` and `gradleWrapperFile` values accordingly.
 
@@ -72,11 +70,13 @@ The `workingDirectory` should be similar to the root of the repository, such as 
     tasks: 'assembleDebug'
 ```
 
+For more information about using Gradle tasks, see [Using tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html) in the Gradle documentation. For more information about build tasks, see [Build a debug APK](https://developer.android.com/studio/build/building-cmdline#DebugMode) and [Configure build variants](https://developer.android.com/studio/build/build-variants.html) in the Google Android development documentation.
+
 ### Sign and align the Android package (APK)
 
 To run on a device instead of an emulator, the Android Application Package (APK) must be signed. Zipaligning reduces the RAM the application consumes. If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK, add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the pipeline. For more information, see [Sign a mobile app](../apps/mobile/app-signing.md).
 
-You should store the `jarsignerKeystorePassword` and `jarsignerKeyPassword` in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
+For security, store the `jarsignerKeystorePassword` and `jarsignerKeyPassword` in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
 
 ```yaml
 - task: AndroidSigning@2
@@ -148,7 +148,10 @@ To store your APK file with the build record or test and deploy it in subsequent
     contents: '**/*.apk'
     targetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
-```
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: MyBuildOutputs
+    ```
 
 ### Deploy to App Center
 
