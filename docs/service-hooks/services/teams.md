@@ -4,7 +4,7 @@ ms.topic: conceptual
 title: Azure DevOps integration with Microsoft Teams
 description: See how to set up Azure DevOps notifications and approvals in your Microsoft Teams channels.
 monikerRange: '<= azure-devops'
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 ---
 
 # Azure DevOps integration with Microsoft Teams

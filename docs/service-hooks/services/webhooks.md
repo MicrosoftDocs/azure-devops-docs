@@ -5,7 +5,7 @@ title: Webhooks with Azure DevOps
 description: Set up a webhook subscription that sends JSON representations of Azure DevOps events to any service that has a public endpoint.
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 monikerRange: '<= azure-devops'
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 ---
 
 # Webhooks
@@ -31,7 +31,7 @@ You need the following prerequisites to manage webhooks for an Azure DevOps orga
 
 1. In your Azure DevOps project, go to **Project settings** > **Service hooks** at `https://<organization-name>/<project-name>/_settings/serviceHooks`.
 
-   ![Screenshot of the Service hooks choice in Project settings.](./media/add-devops-service-hook.png)
+   ![Screenshot of the Service hooks choice in Project settings.](./media/add-devops-service-hook-new-name.png)
 
 1. On the **Service Hooks** page, select the **+** icon or **Create subscription**.
 

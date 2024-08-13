@@ -6,7 +6,7 @@ title: Create a service hook for Jenkins
 description: See how to set up a service hook subscription to trigger a Jenkins build for your Azure DevOps project.
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 monikerRange: '<= azure-devops'
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 ---
 
 # Create a service hook for Jenkins
@@ -49,7 +49,7 @@ To manage service hooks for an Azure DevOps organization or project, you must ha
 
 1. In your Azure DevOps project, go to **Project settings** > **Service hooks** at `https://<organization-name>/<project-name>/_settings/serviceHooks`.
 
-   :::image type="content" source="./media/add-devops-service-hook.png" alt-text="Screenshot of the Service hooks choice in Project settings.":::
+   :::image type="content" source="./media/add-devops-service-hook-new-name.png" alt-text="Screenshot of the Service hooks choice in Project settings.":::
 
 1. On the **Service Hooks** page, select the **+** icon or **Create subscription**.
 
