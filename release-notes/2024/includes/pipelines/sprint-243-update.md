@@ -110,7 +110,7 @@ For instance, your pipeline might include stages for building, testing, deployin
 
 With this sprint, we're adding support for manually triggered YAML pipeline stages. To use this feature, you need to add the `trigger: manual` property to a stage.
 
-Consider the following YAML pipeline example.
+Consider the following YAML pipeline example:
 ```yaml
 stages:
 - stage: stage_WUS1
@@ -139,7 +139,7 @@ stages:
         inlineScript: 'Write-host ''hello, world'''
 ```
 
-When you run this pipeline, the experience is the following.
+When you run this pipeline, the experience is as follows:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of manually triggered YAML pipeline stages.](../../media/243-pipelines-02.png "Screenshot of manually triggered YAML pipeline stages")
