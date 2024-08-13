@@ -232,6 +232,14 @@
     {
       "source_path_from_root": "/docs/pipelines/publish-pipeline-artifact.md",
       "redirect_url": "/azure/devops/pipelines/release/publish-pipeline-artifact"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/process/deployment-group-phases.md",
+      "redirect_url": "/azure/devops/pipelines/release/deployment-group-phases"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/migrate/from-classic-pipelines.md",
+      "redirect_url": "/azure/devops/pipelines/release/from-classic-pipelines"
     }
   ]
 }

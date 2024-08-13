@@ -417,7 +417,7 @@
         - name: Provision agents for deployment groups
           href: release/deployment-groups/howto-provision-deployment-group-agents.md
         - name: Add a deployment group job to a release pipeline
-          href: process/deployment-group-phases.md
+          href: release/deployment-group-phases.md
         - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
           href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
   - name: Pipeline Artifacts
@@ -693,7 +693,7 @@
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines
-    href: migrate/from-classic-pipelines.md
+    href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md
   - name: Migrate from Travis
