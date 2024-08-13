@@ -151,7 +151,7 @@ To store your APK file with the build record or test and deploy it in subsequent
   inputs:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
-    ```
+```
 
 ### Deploy to App Center
 
