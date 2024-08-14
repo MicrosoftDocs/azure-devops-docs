@@ -6,8 +6,9 @@ ms.subservice: azure-devops-security
 ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
-monikerRange: '<= azure-devops' 
-ms.date: 07/15/2024
+monikerRange: '<= azure-devops'
+ai-usage: ai-assisted 
+ms.date: 08/13/2024
 ---
 
 # Security best practices
@@ -24,8 +25,8 @@ Employ the following best practices for [removing users](#remove-users), [review
 
 ### Remove users
 
-- **Remove inactive users from MSA accounts:**
-  - If your organization uses MSA accounts, [directly remove inactive users from the organization](../accounts/delete-organization-users.md).
+- **Remove inactive users from Microsoft accounts (MSAs):**
+  - If your organization uses MSAs, [directly remove inactive users from the organization](../accounts/delete-organization-users.md).
   - Unfortunately, there's no other way to prevent access for these users. 
   - Keep in mind that you can't create queries for work items assigned to removed MSA accounts.
 - **Disable or delete Microsoft Entra user accounts:**
@@ -49,13 +50,13 @@ Employ the following best practices for [removing users](#remove-users), [review
   - By connecting Azure DevOps to Microsoft Entra ID, you establish a unified identity system.
   - Consistency across services reduces confusion and minimizes security risks arising from manual configuration errors.
 - **End-to-end governance:**
-  - Leveraging Microsoft Entra ID allows you to implement fine-grained governance.
+  - Use Microsoft Entra ID to implement fine-grained governance.
   - Assign different roles and permissions to specific Microsoft Entra groups across various resource scopes.
   - This approach ensures controlled access and aligns with security best practices.
 - **Security features:**
-  - Microsoft Entra ID enables additional security features, such as:
-    - **Multifactor Authentication (MFA):** Enhance user authentication by requiring multiple factors (e.g., password and phone verification).
-    - **Conditional access policies:** Define access rules based on conditions (e.g., location, device, or risk level).
+  - Microsoft Entra ID enables other security features, such as:
+    - **Multifactor Authentication (MFA):** Enhance user authentication by requiring multiple factors (for example, password and phone verification).
+    - **Conditional access policies:** Define access rules based on conditions (for example, location, device, or risk level).
 
 For more information, see the following articles:
 - [About accessing your organization with Microsoft Entra ID](../accounts/access-with-azure-ad.md)
@@ -66,12 +67,10 @@ For more information, see the following articles:
 
 ### Review auditing events
 
-Once your organization is backed by Microsoft Entra, do the following tasks to enhance security and monitor usage patterns:
-- **Enable auditing:**
-  - Within your Security policies, enable auditing.
-  - Auditing helps track and log events related to user actions, permissions, and changes.
+With your organization connected to Microsoft Entra, do the following tasks to enhance security and monitor usage patterns:
+- **[Enable auditing](../audit/azure-devops-auditing.md#enable-and-disable-auditing):**
+  - Track and view events related to user actions, permissions, and changes.
 - **[Regularly review audit events](../audit/azure-devops-auditing.md#review-audit-log):**
-  - Review the audit log periodically.
   - Look for unexpected usage patterns, especially by administrators and other users.
 
 ### Secure your network
@@ -89,7 +88,7 @@ The following functions are effective ways to enhance the security of your netwo
   - Ensure that certificates are valid and issued by trusted authorities.
 - **Web application firewalls (WAFs):**
   - Implement WAFs to filter, monitor, and block malicious web-based traffic.
-  - WAFs provide an additional layer of protection against common attacks.
+  - WAFs provide an extra layer of protection against common attacks.
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
 
@@ -103,7 +102,7 @@ The system handles permissions at various levels—individual, collection, proje
 - **Disable inheritance:** 
   - Whenever possible, disable inheritance. 
   - Inheritance can inadvertently grant access or permissions to unexpected users due to its allow-by-default nature. 
-  - For more information, refer to the [section on permission inheritance](about-permissions.md#permission-inheritance)
+  - For more information, see the [section on permission inheritance](about-permissions.md#permission-inheritance)
 
 For more information about permissions, see the following articles: 
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
@@ -117,7 +116,7 @@ For more information about permissions, see the following articles:
   - Use either the built-in security groups or custom security groups to manage permissions. For more information, see [Grant or restrict permissions to specific tasks](restrict-access.md).
 - **Disable *“Allow public projects”*:**
   - In your organization’s policy settings, disable the option to create public projects.
-  - Azure DevOps Services allows you to switch project visibility from public to private (and vice versa).
+  - Switch project visibility from public to private (and vice versa).
   - Users who haven’t signed into your organization have read-only access to public projects.
   - Signed-in users can be granted access to private projects and make permitted changes.
 - **Restrict project creation:**
@@ -129,13 +128,13 @@ For more information about permissions, see the following articles:
   - Disable the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list) to prevent external guest access.
   - Consider this step if there's no business need for external guests.
 - **Use a different email or UPN for your personal and business accounts:**
-  - Even though it’s allowed, use distinct email addresses or user principal names (UPNs) for personal and business accounts.
+  - Use distinct email addresses or user principal names (UPNs) for personal and business accounts.
   - This practice eliminates ambiguity when disambiguating between your personal and work-related accounts.
 - **Group external guest users:**
   - Place all external guest users in a single Microsoft Entra group.
   - Manage permissions for this group appropriately.
   - Remove direct assignments to ensure group rules apply to these users. For more information, see [Add a group rule to assign access levels](../accounts/assign-access-levels-by-group-membership.md).
-  - Regularly reevaluate rules on the Group rules tab of the Users page. Consider any group membership changes in Microsoft Entra ID that might impact your organization. Microsoft Entra ID can take up to 24 hours to update dynamic group membership. Rules are automatically reevaluated every 24 hours and whenever a group rule changes.
+  - Regularly reevaluate rules on the Group rules tab of the Users page. Consider any group membership changes in Microsoft Entra ID that might affect your organization. Microsoft Entra ID can take up to 24 hours to update dynamic group membership. Rules are automatically reevaluated every 24 hours and whenever a group rule changes.
 
 For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations).
 
@@ -149,14 +148,12 @@ The following table shows recommendations for assigning permissions to security 
 
 |**Do** :::image type="icon" source="../../media/icons/checkmark.png" border="false":::|**Don't** :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: |
 |---------|---------|
-|Use Microsoft Entra ID, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the *Project Valid Users* group. This group can access and view project information.        |
-|When you're adding teams, consider what permissions you want to assign to team members who need to create and modify area paths, iteration paths, and queries.   | Don't add users to multiple security groups that contain different permission levels. In certain cases, a *Deny* permission level may override an *Allow* permission level.        |
-|When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | Don't change the default assignments made to the *Project Valid Users* groups. If you remove or set *View instance-level information* to *Deny* for one of the *Project Valid Users* groups, no users in the group can access whatever project, collection, or deployment you set the permission on.        |
-|Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.        |
+|Use Microsoft Entra ID, Active Directory, or Windows security groups when you're managing lots of users.    | **Don’t change the default permissions for the *Project Valid Users* group.** This group can access and view project information. For more information, see [Valid user groups](about-permissions.md#valid-user-groups).        |
+|When you're adding teams, consider what permissions you want to assign to team members who need to create and modify area paths, iteration paths, and queries.   | **Don't add users to multiple security groups that contain different permission levels.** In certain cases, a *Deny* permission level might override an *Allow* permission level. For example, imagine you have two security groups in your Azure DevOps project: **Developers** and **Testers**. The **Developers** group has the permission to edit work items set to **Allow**. But, ensure that certain sensitive work items aren't edited by anyone except a few key individuals. To do so, create a new security group called **Sensitive Items Editors** and set the permission to **edit work items** to **Deny** for this group. If a user is a member of both the **Developers** group and the **Sensitive Items Editors** group, the **Deny** permission from the **Sensitive Items Editors** group takes precedence over the **Allow** permission from the **Developers** group. As a result, this user can't edit the sensitive work items, even though they have the **Allow** permission in the **Developers** group. This behavior ensures that **Deny** permissions are enforced strictly, providing a higher level of security and control over sensitive actions within your Azure DevOps environment.        |
+|When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | **Don't change the default assignments made to the *Project Valid Users* groups.** If you remove or set *View instance-level information* to *Deny* for one of the *Project Valid Users* groups, no users in the group can access whatever project, collection, or deployment you set the permission on.        |
+|Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | **Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.**        |
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
-
-For more information, see [Valid user groups](about-permissions.md#valid-user-groups).
 
 ### Just-in-time access for admin groups 
 
@@ -196,7 +193,7 @@ If you have [Project Collection Administrator](../../user-guide/manage-organizat
   - Avoid interactive sign-in rights for service accounts.
 - **Use separate identities for report readers:**
   - If you're using domain accounts for service accounts, use a different identity for report readers.
-  - Isolate permissions to prevent unnecessary access. For more information, see [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies?view=azure-devops&preserve-view=true).
+  - Isolate permissions, preventing unnecessary access. For more information, see [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies?view=azure-devops&preserve-view=true).
 - **Use local accounts for workgroup installations:** 
   - When installing components in a workgroup, use local accounts for user accounts.
   - Avoid domain accounts in this scenario. For more information, see [Service account requirements](/azure/devops/server/account-requirements?view=azure-devops-2020&viewFallbackFrom=azure-devops&preserve-view=true).
@@ -213,7 +210,7 @@ For more information, see [Common service connection types](../../pipelines/libr
 
 - **Scope [Azure Resource Manager](/azure/azure-resource-manager/management/overview) service connections:**
   - To limit access, scope your service connections to specific resources and groups. Avoid granting broad contributor rights across the entire Azure subscription.
-  - Use workload identity federation for authentication. This allows secret-free service connections in Azure Pipelines.
+  - Use workload identity federation for authentication, which allows secret-free service connections in Azure Pipelines.
 - **[Use workload identity federation](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation):**
   - Workload identity federation uses OpenID Connect (OIDC) to authenticate with Azure resources without using secrets.
   - You can create workload identity federation automatically or manually. Consider this approach if:
@@ -252,7 +249,7 @@ Explore alternatives like [service principals and managed identities](../../inte
   - Provide identities for Azure resources.
   - Allow services supporting Microsoft Entra authentication to share credentials.
   - Azure handles credential management and rotation automatically.
-  - Ideal when you want seamless login details management.
+  - Ideal when you want seamless sign-in details management.
 
 ### Use PATs sparingly
 
@@ -260,13 +257,13 @@ Explore alternatives like [service principals and managed identities](../../inte
   - Assign PATs only the necessary permissions required for specific tasks. Avoid granting global access to multiple organizations or repositories.
   - Scoping PATs ensures that they have the minimum privileges needed, reducing the risk of accidental misuse.
 - **Avoid *write* or *manage* permissions on builds and releases:**
-  - PATs should not have write or manage permissions on builds, releases, or other critical resources.
-  - Restricting these permissions helps prevent unintended actions that could impact your pipelines or deployments.
+  - PATs shouldn't have write or manage permissions on builds, releases, or other critical resources.
+  - Restricting these permissions helps prevent unintended actions that could affect your pipelines or deployments.
 - **Set expiration dates and keep PATs secret:**
   - Always set an expiration date for PATs. Regularly review and renew them as needed.
   - Treat PATs as critical as passwords. Keep them confidential and avoid sharing them publicly or hardcoding them in your application code.
 - **Avoid hardcoding PATs in application code:**
-  - While it may seem convenient, avoid embedding PATs directly in your code.
+  - While it might seem convenient, avoid embedding PATs directly in your code.
   - Instead, use secure configuration files or environment variables to store and retrieve PATs dynamically.
 - **Regularly audit and revoke unused PATs:**
   - Administrators should periodically review all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list).
@@ -300,7 +297,7 @@ For more information, check out the following articles:
 
 - **Require reviewers outside the original requester:**
   - Having at least one reviewer outside the original requester ensures a more thorough review process.
-  - The approver shares co-ownership of the changes and should be held equally accountable for any potential impact.
+  - The approver shares coownership of the changes and should be held equally accountable for any potential effect.
 - **Require CI build to pass:**
   - Requiring the Continuous Integration (CI) build to pass before merging a PR establishes a baseline for code quality.
   - CI checks include code linting, unit tests, and security scans (for example, virus and credential checks).
@@ -312,12 +309,12 @@ For more information, check out the following articles:
   - This action encourages addressing all feedback before merging.
 - **Reset code reviewer votes on pushed changes:**
   - When recent changes are pushed to the PR, reset reviewer votes.
-  - This action ensures that reviewers re-evaluate the updated code.
+  - This action ensures that reviewers reevaluate the updated code.
 - **Lock down release pipelines to specific production branches:**
   - Limit release pipelines to specific branches (usually production or main).
   - Avoid accidental deployments from other branches.
 - **Enforce settable variables at queue time:**
-  - Enable the “Enforce settable at queue time” option for pipeline variables.
+  - Enable the "Enforce settable at queue time" option for pipeline variables.
   - This action prevents users from overriding variable values during pipeline execution.
 - **Disallow variable overrides in the editor:**
   - For variables set in the pipeline editor, disallow user overrides. 
@@ -336,7 +333,7 @@ For more information, check out the following articles:
   - This action ensures that vulnerable code isn’t running, reducing the risk of exploitation.
 - **Separate agent pool for production artifacts:**
   - Use a distinct agent pool for build artifacts destined for production.
-  - Isolating production artifacts helps prevent accidental deployments from non-production branches.
+  - Isolating production artifacts helps prevent accidental deployments from nonproduction branches.
 - **Segment sensitive pools:**
   - Create separate pools for sensitive and nonsensitive workloads.
   - Only allow credentials in build definitions associated with the appropriate pool.
@@ -353,11 +350,11 @@ For more information, check out the following articles:
 
 ### Input 
 
-- **Include sanity checks for variables in build scripts:** 
-  - Implement sanity checks within your build scripts to mitigate potential command injection attacks through settable variables.
+- **Include checks for variables in build scripts:** 
+  - Implement checks within your build scripts, which mitigate potential command injection attacks through settable variables.
   - These checks can validate input values and prevent unintended or malicious commands.
 - **Limit the number of “settable at release time” build variables:**
-  - Set as few build variables as possible to be “settable at release time.”
+  - Set as few build variables as possible to be "settable at release time."
   - Minimizing the number of such variables reduces the attack surface and simplifies configuration management.
 
 ### Tasks 
@@ -375,7 +372,7 @@ For more information, check out the following articles:
   - For security-critical pipelines, limit users from running builds against any branch or tag.
   - Define specific authorized branches or tags to prevent accidental or unauthorized executions.
 - **Disable inheritance for pipeline permissions:**
-  - Inherited permissions can be overly broad and may not accurately reflect your needs.
+  - Inherited permissions can be overly broad and might not accurately reflect your needs.
   - Disable inheritance and set permissions explicitly to align with your security requirements.
 - **Limit job authorization scopes:**
   - Always restrict job authorization scopes to the minimum necessary.
@@ -384,17 +381,16 @@ For more information, check out the following articles:
 ### Repositories and branches
 
 - **Require a minimum number of reviewers:**
-  - Enable the “Require a minimum number of reviewers” policy to ensure that every pull request receives reviews from at least two approvers.
-  - This promotes thorough code review and accountability.
+  - Enable the "Require a minimum number of reviewers" policy, which ensures that every pull request receives reviews from at least two approvers. This action promotes thorough code review and accountability.
 - **Configure repository-specific security policies:**
   - Instead of project-wide policies, tailor security policies to each repository or branch.
   - Customized policies reduce risk, enforce change management standards, and enhance code quality.
 - **Isolate production secrets in a separate key vault:**
   - Store production secrets separately in an Azure Key Vault.
-  - Limit access to a need-to-know basis to maintain separation from non-production builds.
+  - Limit access to a need-to-know basis to maintain separation from nonproduction builds.
 - **Segregate test environments from production:**
   - Avoid mixing test environments with production.
-  - Ensure that credentials and secrets are not used in non-production contexts.
+  - Ensure that credentials and secrets aren't used in nonproduction contexts.
 - **Disable forking:**
   - Disabling forking helps manage security.
   - Forks can proliferate, making it challenging to track security across all copies.
@@ -402,17 +398,15 @@ For more information, check out the following articles:
   - Refrain from sharing secrets with forked builds.
   - Secrets should remain confidential and not be exposed to forks.
 - **[Consider manually triggering fork builds](../../pipelines/security/misc.md#consider-manually-triggering-fork-builds):**
-  - Manually trigger builds for forks rather than allowing automatic triggers.
-  - This provides better control over security checks.
+  - Manually trigger builds for forks rather than allowing automatic triggers. This action provides better control over security checks.
 - **[Use Microsoft-hosted agents for fork builds](../../pipelines/security/misc.md#use-microsoft-hosted-agents-for-fork-builds):**
-  - Leverage Microsoft-hosted agents for forked builds.
+  - Use Microsoft-hosted agents for forked builds.
   - These agents are maintained and secure.
 - **Scan production build definitions in Git repositories:**
   - Regularly check production build definitions stored in your project’s Git repository.
   - Scan for any credentials or sensitive information.
 - **Configure branch control checks for production context:**
-  - Set up branch control checks to restrict the use of sensitive connections (e.g., prod-connection) to pipelines running in the context of the production branch.
-  - This ensures proper authorization and prevents accidental misuse.
+  - Set up branch control checks to restrict the use of sensitive connections (for example, prod-connection) to pipelines running in the context of the production branch. This action ensures proper authorization and prevents accidental misuse.
 
 For more information, see [Other security considerations](../../pipelines/security/misc.md).
 
