@@ -9,9 +9,9 @@ ms.topic: include
 
 To help you identify your Advanced Security users, the Meter Usage Estimate APIs now return each user’s Azure DevOps identity, including their display name, CUID, email identifier, and identity descriptor. This feature is available at the organization, project, and repository levels. To use this new endpoint, the syntax is similar to the existing meter usage API endpoints, appending `/details` to the endpoint: 
 
-- At the organization level: GET `https://advsec.dev.azure.com/{organization}/_apis/management/meterUsageEstimate?api-version=7.2-preview.1/details`
-- At the project level: GET `https://advsec.dev.azure.com/{organization}/{project}/_apis/management/meterUsageEstimate?api-version=7.2-preview.1/details`
-- At the repository level: GET `https://advsec.dev.azure.com/{organization}/{project}/_apis/management/repositories/{repository}/meterUsageEstimate?api-version=7.2-preview.1/details`
+- At the organization level: GET `https://advsec.dev.azure.com/{organization}/_apis/management/meterUsageEstimate/details?api-version=7.2-preview.1`
+- At the project level: GET `https://advsec.dev.azure.com/{organization}/{project}/_apis/management/meterUsageEstimate/details?api-version=7.2-preview.1`
+- At the repository level: GET `https://advsec.dev.azure.com/{organization}/{project}/_apis/management/repositories/{repository}/meterUsageEstimate/details?api-version=7.2-preview.1`
 
 ### GitHub Advanced Security code scanning for C# and Java projects without builds
 
