@@ -60,15 +60,15 @@ Managing permissions in Azure DevOps involves two key groups: Project Collection
 Assign permissions to grant or restrict access:
 
 **User or group has permission:**
-- **Allow**
-- **Allow (inherited)**
-- **Allow (system)**
+- Allow
+- Allow (inherited)
+- Allow (system)
 
 **User or group doesn't have permission:**
-- **Deny**
-- **Deny (inherited)**
-- **Deny (system)**
-- **Not set**
+- Deny
+- Deny (inherited)
+- Deny (system)
+- Not set
 
 |Permission state  |Description  |
 |---------|---------|
@@ -89,24 +89,36 @@ Members of the **Project Collection Administrators** or **Team Foundation Admini
 
 ## Permission inheritance
 
-Permissions follow a hierarchy, allowing inheritance from a parent or by overriding.
+Permissions follow a hierarchy, allowing inheritance from a parent node or overriding it.
 
-- **Group inheritance:** Users inherit permissions from the groups they belong to. If a user has an **Allow** permission directly or through group membership, but also has a **Deny** permission through another group, the Deny permission takes precedence. However, members of **Project Collection Administrators** or **Team Foundation Administrators** retain most allowed permissions, even if they belong to other groups that deny those permissions (except for work item operations).
-- **Object-Level inheritance:** Object-level permissions (assigned to nodes like areas, iterations, version control folders, and work item query folders) are inherited down the hierarchy.
+**Group inheritance:** 
 
-For example, let’s break down the permission inheritance and specificity rules and remember, explicit permissions always take precedence over inherited ones:
+- Users inherit permissions from the groups they belong to. 
+- If a user has an **Allow** permission directly or through group membership but also has a **Deny** permission through another group, the **Deny** permission takes precedence. 
+- Members of Project Collection Administrators or Team Foundation Administrators retain most allowed permissions, even if they belong to other groups that deny those permissions (except for work item operations).
 
-- When a user’s permissions are set at a higher-level node (area-1), those permissions get inherited by all subnodes (area-1/sub-area-1) unless explicitly overridden.
-- If a permission is **not** explicitly allowed or denied for a subnode, it inherits the permission from its parent.
-- But, if a permission is explicitly set for a subnode (area-1/sub-area-1), the parent’s permission is **not** inherited, regardless of whether it's allowed or denied.
+**Object-level inheritance:** 
+
+Object-level permissions, assigned to nodes like areas, iterations, version control folders, and work item query folders, are inherited down the hierarchy.
+
+**Permission inheritance and specificity rules:**
+
+- Explicit permissions always take precedence over inherited ones.
+- Permissions set at a higher-level node are inherited by all subnodes unless explicitly overridden.
+- If a permission isn't explicitly allowed or denied for a subnode, it inherits the permission from its parent.
+- If a permission is explicitly set for a subnode, the parent’s permission isn't inherited, regardless of whether allowed or denied.
+
 **Specificity:**
-- In the object hierarchy, specificity trumps inheritance. This means that if conflicting permissions exist, the most specific permission takes precedence.
-- For example, consider a user:
-  - Explicitly **Deny** on ‘area-1’ (parent node).
-  - Explicitly **Allow** for ‘area-1/sub-area-1’ (child node).
+
+In the object hierarchy, specificity trumps inheritance. The most specific permission takes precedence if conflicting permissions exist.
+
+**Example:**
+
+- Explicitly **Deny** on ‘area-1’ (parent node).
+- Explicitly **Allow** for ‘area-1/sub-area-1’ (child node).
 - In this case, the user receives an **Allow** on ‘area-1/sub-area-1’, overriding the inherited **Deny** from the parent node.
 
-To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
+To understand why a permission is inherited, you can pause over a permission setting, and then select **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
 ::: moniker range="= azure-devops"
 
@@ -300,7 +312,7 @@ The following image illustrates how security groups defined at the project and c
 
 Members of the Project Administrators or Project Collection Administrators groups can manage all team tools for all teams.
 
-## Manage preview features
+## Preview features
 
 Feature flags control access to new features. Azure DevOps periodically introduces new features behind a feature flag. Project members and organization owners can enable or disable preview features. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
