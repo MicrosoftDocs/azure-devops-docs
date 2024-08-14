@@ -5,7 +5,7 @@ ms.date: 8/13/2024
 ms.topic: include
 ---
 
-### Managed DevOps Pools (Preview)
+### Managed DevOps Pools (preview)
 
 Engineering teams excel when they can focus on writing code to develop applications and services for their users. However, in practice, a substantial amount of time is often spent managing other tasks, such as maintaining DevOps infrastructure. 
 
