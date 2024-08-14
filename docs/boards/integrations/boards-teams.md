@@ -1,5 +1,5 @@
 ---
-title: Use Azure Boards with Microsoft Teams
+title: Use Azure Boards in Microsoft Teams
 titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from a Microsoft Teams channel.
 ms.service: azure-devops
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 ms.date: 08/13/2024
 ---
  
-# Use the Azure Boards app in Microsoft Teams
+# Use Azure Boards in Microsoft Teams
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
