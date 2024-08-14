@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/23/2024
+ai-usage: ai-assisted
+ms.date: 08/13/2024
 ---
 
 # About permissions and security groups
@@ -18,11 +19,13 @@ ms.date: 05/23/2024
 
 In this article, learn about access levels and permissions via inheritance, security groups, roles, and more in Azure DevOps.
 
-For an overview of default permissions, see [Default permissions quick reference](permissions-access.md). For a description of each default security group, see [Security groups, service accounts, and permissions reference](permissions.md#groups).
+For an overview of default permissions, see [Default permissions quick reference](permissions-access.md).
+
+For more information, see [Security best practices](security-best-practices.md).
 
 ## Access levels 
 
-All users added to Azure DevOps are assigned an *access level*, which grants or restricts access to specific web portal features.  
+All Azure DevOps users have an *access level*, which grants or restricts access to specific web portal features.  
 
 There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Stakeholder access provides free access to an unlimited number of users to a limited set of features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
@@ -30,39 +33,42 @@ To give a user access to Agile portfolio management or test case management feat
  
 ## Permissions   
 
-All users added to Azure DevOps are added to one or more default *security groups*. Security groups are assigned *permissions*, which either **Allow** or **Deny** access to a feature or task. 
-- Members of a security group *inherit the permissions* assigned to the group.
-- Permissions are defined at different levels: organization/collection, project, or object. 
-- Other permissions are managed through *role-based assignments*, such as team administrator, extension management, and various pipeline resource roles.  
+All users in Azure DevOps belong to one or more default *security groups*. Security groups get assigned *permissions* that either **Allow** or **Deny** access to features or tasks.
+
+- Members inherit the permissions assigned to their security group.
+- Permissions get defined at different levels: organization/collection, project, or object.
+- Some permissions get managed through *role-based assignments* (for example, team administrator, extension management, or pipeline resource roles).
 - Administrators can define custom security groups to manage permissions for different functional areas.
 
-When it comes to managing permissions in Azure DevOps, there are two key groups involved: Project Collection Administrators and Project Administrators. Let’s break it down:
+For more information, see [Security best practices, Security and user groups](security-best-practices.md#security-and-user-groups).
+
+Managing permissions in Azure DevOps involves two key groups: Project Collection Administrators and Project Administrators.
 
 **Project Collection Administrators:**
-- These individuals have the highest level of authority within an organization or project collection.
-- They can perform all operations for the entire collection.
-- Their responsibilities include managing settings, policies, and processes for the organization.
-- Additionally, they can create and manage all projects and extensions within the organization.
+- Hold the highest authority within an organization or project collection.
+- Perform all operations for the entire collection.
+- Manage settings, policies, and processes for the organization.
+- Create and manage all projects and extensions.
 
 **Project Administrators:**
-- Project Administrators operate at the project level.
-- They manage security groups and permissions primarily from the web portal’s Project settings.
-- Contributors, on the other hand, handle permissions for specific objects they create within the project.
+- Operate at the project level.
+- Manage security groups and permissions from the Project settings in the web portal.
+- Contributors handle permissions for specific objects they create within the project.
 
 ### Permission states 
 
-You can assign permissions in the following ways, granting or restricting access as indicated.
+Assign permissions to grant or restrict access:
 
-User or group *has* permissions to perform a task: 
-- **Allow** 
-- **Allow (inherited)**
-- **Allow (system)** 
+**User or group has permission:**
+- Allow
+- Allow (inherited)
+- Allow (system)
 
-User or group *doesn't have* permission to perform a task: 
-- **Deny** 
-- **Deny (inherited)**
-- **Deny (system)**
-- **Not set** 
+**User or group doesn't have permission:**
+- Deny
+- Deny (inherited)
+- Deny (system)
+- Not set
 
 |Permission state  |Description  |
 |---------|---------|
@@ -74,31 +80,45 @@ User or group *doesn't have* permission to perform a task:
 |**Deny (system)**   | Restricts permission that takes precedence before user permissions. Uneditable and stored in a configuration database, invisible to users.         |
 |**Not set**    | Implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission to take precedence, also known as **Allow (inherited)** or **Deny (inherited)**.         |
 
-In some cases, members of the **Project Collection Administrators** or **Team Foundation Administrators** groups might always get the permission even if they're denied that permission in a different group. In other cases such as work item deletion or pipelines, being a member of Project Collection Administrators group doesn't bypass **Deny** permissions set elsewhere.
-	
+Members of the **Project Collection Administrators** or **Team Foundation Administrators** groups might always receive permissions even if denied in another group. The following examples explain this scenario further:
+- A user might still access project settings or manage users. However, for tasks like work item deletion or pipeline management, being a member of the Project Collection Administrators group doesn't override **Deny** permissions set elsewhere. 
+- If a user is denied permission to delete work items in a specific project, they can't delete work items even if they're part of the Project Collection Administrators group. Similarly, if pipeline permissions are denied, they can't manage or run pipelines despite their administrative role.
+
 > [!WARNING]
 > When you modify a permission for a group it affects all users in that group. Even a single permission change can impact hundreds of users, so it’s crucial to consider the potential effects before making any adjustments.
 
 ## Permission inheritance
 
-Permissions follow a hierarchy, allowing inheritance from a parent or by overriding.
+Permissions follow a hierarchy, allowing inheritance from a parent node or overriding it.
 
-- **Group inheritance:** Users inherit permissions from the groups they belong to. If a user has an **Allow** permission directly or through group membership, but also has a **Deny** permission through another group, the Deny permission takes precedence. However, members of **Project Collection Administrators** or **Team Foundation Administrators** retain most allowed permissions, even if they belong to other groups that deny those permissions (except for work item operations).
-- **Object-Level inheritance:** Object-level permissions (assigned to nodes like areas, iterations, version control folders, and work item query folders) are inherited down the hierarchy.
+**Group inheritance:** 
 
-For example, let’s break down the permission inheritance and specificity rules and remember, explicit permissions always take precedence over inherited ones:
+- Users inherit permissions from the groups they belong to. 
+- If a user has an **Allow** permission directly or through group membership but also has a **Deny** permission through another group, the **Deny** permission takes precedence. 
+- Members of Project Collection Administrators or Team Foundation Administrators retain most allowed permissions, even if they belong to other groups that deny those permissions (except for work item operations).
 
-- When a user’s permissions are set at a higher-level node (area-1), those permissions get inherited by all subnodes (area-1/sub-area-1) unless explicitly overridden.
-- If a permission is **not** explicitly allowed or denied for a subnode, it inherits the permission from its parent.
-- However, if a permission is explicitly set for a subnode (area-1/sub-area-1), the parent’s permission is **not** inherited, regardless of whether it's allowed or denied.
+**Object-level inheritance:** 
+
+Object-level permissions, assigned to nodes like areas, iterations, version control folders, and work item query folders, are inherited down the hierarchy.
+
+**Permission inheritance and specificity rules:**
+
+- Explicit permissions always take precedence over inherited ones.
+- Permissions set at a higher-level node are inherited by all subnodes unless explicitly overridden.
+- If a permission isn't explicitly allowed or denied for a subnode, it inherits the permission from its parent.
+- If a permission is explicitly set for a subnode, the parent’s permission isn't inherited, regardless of whether allowed or denied.
+
 **Specificity:**
-- In the object hierarchy, specificity trumps inheritance. This means that if conflicting permissions exist, the most specific permission takes precedence.
-- For example, consider a user:
-  - Explicitly **Deny** on ‘area-1’ (parent node).
-  - Explicitly **Allow** for ‘area-1/sub-area-1’ (child node).
+
+In the object hierarchy, specificity trumps inheritance. The most specific permission takes precedence if conflicting permissions exist.
+
+**Example:**
+
+- Explicitly **Deny** on ‘area-1’ (parent node).
+- Explicitly **Allow** for ‘area-1/sub-area-1’ (child node).
 - In this case, the user receives an **Allow** on ‘area-1/sub-area-1’, overriding the inherited **Deny** from the parent node.
 
-To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
+To understand why a permission is inherited, you can pause over a permission setting, and then select **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
 ::: moniker range="= azure-devops"
 
@@ -292,22 +312,9 @@ The following image illustrates how security groups defined at the project and c
 
 Members of the Project Administrators or Project Collection Administrators groups can manage all team tools for all teams.
 
-### Best practices for permissions
- 
-**Do:**  
-- Use Microsoft Entra ID, Active Directory, or Windows security groups when you manage lots of users.  
-- When you add a team, consider which permissions you want to assign to team leads, scrum masters, and other team members. Consider who creates and modifies area paths, iteration paths, and queries.
-- When you add many teams, consider creating a **Team Administrators** custom group where you can allocate a subset of the permissions available to **Project Administrators**.  
-- Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.  
+## Preview features
 
-**Don't:**  
-- Don't add users to multiple security groups, which contain different permission levels. In certain cases, a **Deny** permission level might override an **Allow** permission level.  
-- Don't change the default assignments made to the Valid Users groups. If you remove or set the **View instance-level information** permission to **Deny** for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
-- Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
-
-## Preview features 
- 
-Feature flags control access to specific, new features. Periodically, Azure DevOps introduces new features by placing them behind a feature flag. Project members and organization owners can enable or disable preview features. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
+Feature flags control access to new features. Azure DevOps periodically introduces new features behind a feature flag. Project members and organization owners can enable or disable preview features. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 ## Next steps
 
@@ -319,18 +326,18 @@ Feature flags control access to specific, new features. Periodically, Azure DevO
 ::: moniker range="= azure-devops"
 
 - [Troubleshoot access and permission issues](troubleshoot-permissions.md)
-- [About security, authentication, and authorization](about-security-identity.md)
-- [Permissions and groups reference](permissions.md)  
-- [Security and permission management tools](security-tools-reference.md)  
+- [Learn about security, authentication, and authorization](about-security-identity.md)
+- [Reference permissions and groups](permissions.md)  
+- [Use security and permission management tools](security-tools-reference.md)  
 - [Add and manage security groups](add-manage-security-groups.md)   
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops" 
 
-- [AD DS Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
-- [Permissions and groups reference](permissions.md)  
-- [Security and permission management tools](security-tools-reference.md)  
+- [Get started with AD DS](/windows-server/identity/ad-ds/ad-ds-getting-started)
+- [Reference permissions and groups](permissions.md)  
+- [Use security and permission management tools](security-tools-reference.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
 
