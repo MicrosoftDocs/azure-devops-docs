@@ -13,7 +13,7 @@ monikerRange: ">=azure-devops-2019"
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 > [!div class="op_single_selector"]
-> - [YAML pipelines](pipeline-triggers.md)
+> - [YAML pipelines](../process/pipeline-triggers.md)
 > - [Classic pipelines](pipeline-triggers-classic.md)
 
 Large products have several components that are dependent on each other.
@@ -28,7 +28,7 @@ In the classic editor, pipeline triggers are called **build completion triggers*
 After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 > [!NOTE]
-> Keep in mind that in some cases, a single [multi-job build](phases.md) could meet your needs.
+> Keep in mind that in some cases, a single [multi-job build](../process/phases.md) could meet your needs.
 > However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent pipeline.
 
 ## Download artifacts from the triggering build
