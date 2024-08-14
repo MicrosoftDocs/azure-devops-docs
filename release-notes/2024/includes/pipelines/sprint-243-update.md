@@ -24,13 +24,13 @@ Teams can create pools with [quick-starter images](https://learn.microsoft.com/a
 Learn more about Managed DevOps Pools by reading our [blog post](https://devblogs.microsoft.com/devops/managed-devops-pools/) or its [documentation](https://aka.ms/mdp-docs).
 
 
-### Azure Pipelines tasks use Node 20
+### Azure pipelines tasks use Node 20
 
-Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20. For guidance on how to upgrade see, [How can I upgrade my custom task to the latest Node?](https://aka.ms/node-runner-guidance). 
+Most pipeline tasks use Node as a runner. Azure pipelines task that use NodeJS as a runner now all use NodeJS 20. Authors of task extensions should update their tasks to use Node 20. For guidance on how to upgrade see, [How can I upgrade my custom task to the latest Node?](https://aka.ms/node-runner-guidance). 
 
 ### Create build pipeline permission
 
-To increase pipeline security, we're introducing a new permission, `Create build pipeline`, at Pipelines level. 
+To increase pipeline security, we're introducing a new permission, `Create build pipeline`, at pipelines level. 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of create build pipeline permission.](../../media/243-pipelines-01.png "Screenshot of create build pipeline permission")](../../media/243-pipelines-01.png#lightbox)

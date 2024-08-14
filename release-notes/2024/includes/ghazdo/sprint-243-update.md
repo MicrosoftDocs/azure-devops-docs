@@ -13,7 +13,7 @@ To help you identify your Advanced Security users, the Meter Usage Estimate APIs
 - At the project level: GET `https://advsec.dev.azure.com/{organization}/{project}/_apis/management/meterUsageEstimate?api-version=7.2-preview.1/details`
 - At the repository level: GET `https://advsec.dev.azure.com/{organization}/{project}/_apis/management/repositories/{repository}/meterUsageEstimate?api-version=7.2-preview.1/details`
 
-### Advanced Security code scanning for C# and Java projects without builds
+### GitHub Advanced Security code scanning for C# and Java projects without builds
 
 Code scanning with CodeQL involves running queries on databases that represent the code in your repository for a single language. For compiled languages like C/C++, C#, Go, Java, and Swift, this typically requires building the code first.
 
