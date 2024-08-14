@@ -6,7 +6,7 @@ ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/14/2024
+ms.date: 08/15/2024
 monikerRange: '<= azure-devops'
 ---
 

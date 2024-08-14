@@ -165,7 +165,7 @@
       - name: Link variable groups to Azure key vaults
         displayName: Azure key vault, link secrets, expansion, expand variables
         href: library/link-variable-groups-to-key-vaults.md
-      - name: Use variables in a variable group
+      - name: Manage variables in variable groups with the Azure DevOps CLI
         displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
         href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
     - name: Use classic release and artifacts variables
