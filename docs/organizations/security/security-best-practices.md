@@ -67,7 +67,7 @@ For more information, see [Application management best practices](/azure/active-
 
 -----
 
-## Scoped permissions
+## Scope permissions
 
 The system handles permissions at various levels—individual, collection, project, and object—and assigns them to one or more built-in groups by default. To enhance security, do the following actions:
 
@@ -134,14 +134,14 @@ If you have [Project Collection Administrator](../../user-guide/manage-organizat
 
 ## Scope service accounts
 
-**Create single-purpose service accounts:** Each service should have its dedicated account to minimize risk. Avoid using regular user accounts as [service accounts](permissions.md#service-accounts).
-**Follow naming and documentation conventions:** Use clear, descriptive names for service accounts and document their purpose and associated services.
-**Identify and disable unused service accounts:** Regularly review and identify accounts no longer in use. Disable unused accounts before considering deletion.
-**Restrict privileges:** Limit service account privileges to the minimum necessary. Avoid interactive sign-in rights for service accounts.
-**Use separate identities for report readers:** If using domain accounts for service accounts, use a different identity for report readers to [isolate permissions and prevent unnecessary access](/azure/devops/server/admin/service-accounts-dependencies?view=azure-devops&preserve-view=true).
-**Use local accounts for workgroup installations:** When installing components in a workgroup, use local accounts for user accounts. Avoid domain accounts in this scenario.
-**[Leverage service connections](#scope-service-connections):** Use service connections whenever possible to securely connect to services without passing secret variables directly to builds. Restrict connections to specific use cases.
-**Monitor service account activity:** Implement auditing and create [audit streams](../audit/auditing-streaming.md) to monitor service account activity.
+- **Create single-purpose service accounts:** Each service should have its dedicated account to minimize risk. Avoid using regular user accounts as [service accounts](permissions.md#service-accounts).
+- **Follow naming and documentation conventions:** Use clear, descriptive names for service accounts and document their purpose and associated services.
+- **Identify and disable unused service accounts:** Regularly review and identify accounts no longer in use. Disable unused accounts before considering deletion.
+- **Restrict privileges:** Limit service account privileges to the minimum necessary. Avoid interactive sign-in rights for service accounts.
+- **Use separate identities for report readers:** If using domain accounts for service accounts, use a different identity for report readers to [isolate permissions and prevent unnecessary access](/azure/devops/server/admin/service-accounts-dependencies?view=azure-devops&preserve-view=true).
+- **Use local accounts for workgroup installations:** When installing components in a workgroup, use local accounts for user accounts. Avoid domain accounts in this scenario.
+- **[Leverage service connections](#scope-service-connections):** Use service connections whenever possible to securely connect to services without passing secret variables directly to builds. Restrict connections to specific use cases.
+- **Monitor service account activity:** Implement auditing and create [audit streams](../audit/auditing-streaming.md) to monitor service account activity.
 
 For more information, see [Common service connection types](../../pipelines/library/service-endpoints.md#use-a-service-connection).
 
