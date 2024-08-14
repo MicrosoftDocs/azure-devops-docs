@@ -123,7 +123,7 @@ git remote set-url upstream <clone URL>
 
 ## Push local changes to your fork
 
-When you fork, you create a personal version of the original repository ("upstream"). This version is independent of the original, though it shares the code and retains a link to the original repository, allowing for future synchronization. So, there's nothing to prevent you from working directly in the `main` branch of the local clone and then pushing that work to the `main` branch of your fork. However, it's generally better to use [feature branches](git-branching-guidance.md#use-feature-branches-for-your-work) for your work. By using feature branches:
+When you fork, you create a personal version of the original repository (original repository is referred as "upstream"). Fork is independent from the upstream, but fork shares the code and retains a link to the upstream, allowing for future synchronization. So, there's nothing to prevent you from working directly in the `main` branch of the local clone and then pushing that work to the `main` branch of your fork. However, it's generally better to use [feature branches](git-branching-guidance.md#use-feature-branches-for-your-work) for your work. By using feature branches:
 
 - You can maintain multiple, independent workstreams simultaneously.
 
