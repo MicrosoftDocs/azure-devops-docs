@@ -25,7 +25,7 @@ The Azure Boards app for Microsoft Teams lets you:
 
 - Set up and manage subscriptions to create and manage work items and work item events in your Teams channels.
 - Create work items from conversations in a channel.
-- Search and share work items with other channel using the messaging extension.
+- Search and share work items with other channels using the messaging extension.
 - View work item previews from URLs.
 
 > [!NOTE]
@@ -45,7 +45,7 @@ In this article, you:
 ## Prerequisites
 
 - Access to a Team and channel in Microsoft Teams where you can install an app.
-- Project Administrator or Team Administrator [role](../policies/permissions.md) in an Azure DevOps project.
+- Project Administrator or Team Administrator [role](../../organizations/security/permissions.md) in an Azure DevOps project.
 - **Third party application access via OAuth** enabled in Azure DevOps organizational settings.
 
 For more information, see the following resources:
@@ -57,7 +57,7 @@ For more information, see the following resources:
 
 ## Add the Azure Boards app to Teams
 
-You add the app to your Teams channel in Teams.
+You can add the Azure Boards app to your Teams channels.
 
 1. In Microsoft Teams, select **Apps**, search for *Azure Boards*, and then select **Azure Boards**.
 
@@ -71,13 +71,13 @@ You add the app to your Teams channel in Teams.
 
    :::image type="content" source="media/integrations-teams/signin2.png" alt-text="Screenshot of selecting Set up a bot.":::
 
-After the app installs, you see a welcome message in the conversation pane.
+After the app installs, you see a welcome message in the Teams conversation pane.
 
 :::image type="content" source="media/integrations-teams/welcome-message.png" alt-text="Screenshot of the Welcome message in the conversation pane.":::
 
 ### Azure Pipelines app commands
 
-Use the following `@azure boards` commands to interact with the app in your Teams channel.
+You can use the following `@azure boards` commands to interact with the Azure Boards app in your Teams channel.
 
 | Command        | Functionality  |
 | -------------------- |----------------|
@@ -90,7 +90,7 @@ Use the following `@azure boards` commands to interact with the app in your Team
 |@azure boards feedback	| Report a problem or suggest a feature. |
 |@azure boards help | Get help on the commands. |
 
-## Link your Azure Boards project to the Azure Boards app
+## Link your Azure Boards project to the app
 
 To use the app, sign in to Azure Boards and link your Azure Boards project to your Teams channel.
 
@@ -102,11 +102,14 @@ To use the app, sign in to Azure Boards and link your Azure Boards project to yo
    @azure boards link https://dev.azure.com/myorg/myproject/
    ```
 
-Once the project is linked, you can [create work items](#create-work-items) in the project by using message actions.
+1. Select the **Add subscription** button in the linked project notification to start monitoring your project.
+
+   :::image type="content" source="media/integrations-teams/add-subscription.png" alt-text="Screenshot of the linked project notification with the Add subscription button.":::
+
 
 ### Set up subscriptions
 
-After your project is linked, start monitoring project work items by selecting the **Add subscription** button. You can add a subscription any time by using the `@azure boards subscriptions` command.
+After your project is linked, begin monitoring project work items by selecting the **Add subscription** button. You can add more subscriptions anytime by using the `@azure boards subscriptions` command.
 
 1. Select the event you want to subscribe to and select **Next**.
 
@@ -193,6 +196,7 @@ To return to the channel and collapse the thread, select **Go to channel**.
 
 :::image type="content" source="media/integrations-teams/threads-boards-expanded-view.png" alt-text="Screenshot showing the expanded thread view.":::
 
+<a name="configure-azure-devops-services-tabs-in-microsoft-teams"></a>
 ## Configure Azure DevOps tabs
 
 To bring your project dashboard or Kanban board into Teams, you can install the Azure DevOps app in a tab in your Teams channel. The Azure DevOps app lets you insert content from the app in messages, and get notifications from the app in your channels.
