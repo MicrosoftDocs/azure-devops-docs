@@ -105,7 +105,7 @@
       href: process/tasks.md
       displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
     - name: Task groups (classic)
-      href: library/task-groups.md
+      href: release/task-groups.md
     - name: Add a custom task extension
       href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json
     - name: Upload tasks to project collection
@@ -198,7 +198,7 @@
       href: process/pipeline-triggers.md
     - name: Build completion triggers (classic)
       displayName: build completion, completion trigger
-      href: process/pipeline-triggers-classic.md
+      href: release/pipeline-triggers-classic.md
     - name: Release triggers (classic)
       displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
       href: release/triggers.md
@@ -288,10 +288,10 @@
       href: artifacts/caching-nuget.md
     - name: Classic Build options
       displayName: classic build, build options
-      href: build/options.md
+      href: release/options.md
     - name: Publish Pipeline artifacts
       displayName: publish, artifacts
-      href: publish-pipeline-artifact.md
+      href: release/publish-pipeline-artifact.md
     - name: Publish & download build artifacts
       displayName: build, artifacts
       href: artifacts/build-artifacts.md
@@ -417,7 +417,7 @@
         - name: Provision agents for deployment groups
           href: release/deployment-groups/howto-provision-deployment-group-agents.md
         - name: Add a deployment group job to a release pipeline
-          href: process/deployment-group-phases.md
+          href: release/deployment-group-phases.md
         - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
           href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
   - name: Pipeline Artifacts
@@ -693,7 +693,7 @@
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines
-    href: migrate/from-classic-pipelines.md
+    href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md
   - name: Migrate from Travis
