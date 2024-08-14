@@ -17,15 +17,15 @@ monikerRange: '<= azure-devops'
 
 You can select specific sets of servers from a deployment group to receive the deployment by specifying the machine tags that you've defined for each server in the deployment group. You can also specify the proportion of the target servers that the pipeline should deploy to at the same time. This ensures that the app running on these servers is capable of handling requests while the deployment is taking place.
 
-If you're using a YAML pipeline, you should use [Environments](environments.md) with [virtual machines](environments-virtual-machines.md) instead. 
+If you're using a YAML pipeline, you should use [Environments](../process/environments.md) with [virtual machines](../process/environments-virtual-machines.md) instead. 
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
 > [!NOTE]
-> Deployment group jobs are not supported in YAML. You can use [Virtual machine resources in Environments](environments-virtual-machines.md) to do a rolling deployment to VMs in YAML pipelines. 
+> Deployment group jobs are not supported in YAML. You can use [Virtual machine resources in Environments](../process/environments-virtual-machines.md) to do a rolling deployment to VMs in YAML pipelines. 
 
-Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node of a [deployment job](deployment-jobs.md). 
+Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node of a [deployment job](../process/deployment-jobs.md). 
 
 ```YAML
 strategy:
@@ -69,9 +69,9 @@ You add a deployment group job in the editor by selecting '...' on **Process** c
 
 Use the job timeout to specify the timeout in minutes for jobs in this job. A zero
   value for this option means that the timeout is effectively infinite and so, by default, jobs run until they complete or fail.
-  You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
+  You can also set the timeout for each task individually - see [task control options](../process/tasks.md#controloptions). Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 
 ## Related articles
 
-* [Jobs](phases.md)
-* [Conditions](conditions.md)
+* [Jobs](../process/phases.md)
+* [Conditions](../process/conditions.md)
