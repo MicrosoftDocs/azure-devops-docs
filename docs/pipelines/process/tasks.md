@@ -140,7 +140,7 @@ Control options are available as keys on the `task` section.
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019 < azure-devops"
+::: moniker range=" azure-devops-2020"
 
 Control options are available as keys on the `task` section.
 
@@ -157,12 +157,11 @@ Control options are available as keys on the `task` section.
     string: string # Name/value pairs
   name: string # ID of the step.
   timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
-  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Control options are available as keys on the `task` section.
 
@@ -219,7 +218,7 @@ steps:
 
 ::: moniker-end
 
-:::moniker range="> azure-devops-2019"
+:::moniker range="> azure-devops-2020"
 
 ### Step target
 
@@ -245,7 +244,7 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Number of retries if task failed
 
