@@ -52,7 +52,7 @@ Create an Azure DevOps project to establish a repository for source code and to 
 
 ::: moniker range="azure-devops"
 
-You can create up to 1000 projects within an organization in Azure DevOps. For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md). 
+You can create up to 1,000 projects within an organization in Azure DevOps. For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md). 
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 1. Sign in to your DevOps Server collection (```https://<your-devops-server>/<your-organization>```). 
 
-2. Select **New project**.
+2. Select **New project**. You can also [create a project from a process](../settings/work/manage-process.md).
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of listed projects and highlighted New projects button.](media/create-project/select-new-project.png)
