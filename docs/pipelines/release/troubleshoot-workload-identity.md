@@ -125,10 +125,6 @@ You have two options to resolve the issue:
 - [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication)
 - [Solution 2: Manually configure workload identity by using service principal authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-service-principal-authentication)
 
-### I use a container resource that specifies an instance of Azure Container Registry
-
-[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation yet.
-
 ## Error messages
 
 The following table identifies common error messages and issues that might generate them:
