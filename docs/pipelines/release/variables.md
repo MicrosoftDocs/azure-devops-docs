@@ -160,20 +160,50 @@ To use a default variable in your script, you must first replace the `.` in the 
 
 :::image type="content"  source="media/variables-02.png" alt-text="A screenshot displaying how to use a default variable in an inline PowerShell script.":::  
 
-### View the current values of all variables
+## Custom variables
 
-1. Open the pipelines view of the summary for the release, and choose the stage you are interested in.
-   In the list of steps, choose **Initialize job**.
+Custom variables can be defined at various scopes.
 
-   ![Opening the log for a release](media/view-variable-values-link.png)
+- **Variable Groups**: Use variable groups to share values across all definitions in a project. This is useful when you want to use the same values throughout definitions, stages, and tasks within a project, and manage them from a single location. Define and manage variable groups in the **Pipelines** > **Library**.
 
-1. This opens the log for this step. Scroll down to see the values used by the agent for this job.   
+- **Release Pipeline Variables**: Use release pipeline variables to share values across all stages within a release pipeline. This is ideal for scenarios where you need a consistent value across stages and tasks, with the ability to update it from a single location. Define and manage these variables in the **Variables** tab of the release pipeline. In the Pipeline Variables page, set the **Scope** drop-down list to *Release* when adding a variable.
 
-   ![Viewing the values of the variables in a release](media/view-variable-values.png)
+- **Stage Variables**: Use stage variables to share values within a specific stage of a release pipeline. This is useful for values that differ from stage to stage but are consistent across all tasks within a stage. Define and manage these variables in the **Variables** tab of the release pipeline. In the Pipeline Variables page, set the **Scope** drop-down list to appropriate environment when adding a variable.
+  
+Using custom variables at the project, release pipeline, and stage levels helps you to:
 
-<a name="debug-mode"></a>
+- Avoid duplicating values, making it easier to update all occurrences with a single change.
 
-### Run a release in debug mode
+- Secure sensitive values by preventing them from being viewed or modified by users. To mark a variable as secure (secret), select the ![padlock](media/padlock-icon.png) icon next to the variable.
+
+  > [!IMPORTANT]
+  > The values of the hidden variables (secret) are securely stored on the server and cannot be viewed by users after they are saved. During deployment, Azure Pipelines decrypts these values when referenced by tasks and passes them to the agent over a secure HTTPS channel.
+
+> [!NOTE]
+> Creating custom variables can overwrite standard variables. For example, if you define a custom **Path** variable on a Windows agent, it will overwrite the *$env:Path* variable, which may prevent PowerShell from running properly.
+
+## Use custom variables
+
+To use custom variables in your tasks, enclose the variable name in parentheses and precede it with a **$** character. For example, if you have a variable named *adminUserName*, you can insert its current value into a task as `$(adminUserName)`.
+
+> [!NOTE]
+> Variables from different groups linked to a pipeline at the same scope (e.g., job or stage) may conflict, leading to unpredictable results. To avoid this, ensure that variables across all your variable groups have unique names.
+ 
+[!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
+
+## View the current values of all variables
+
+1. Select **Pipelines** > **Releases**, and then select your release pipeline.
+
+1. Open the summary view for your release, and select the stage you're interested in. In the list of steps, choose **Initialize job**.
+
+    :::image type="content"  source="media/view-variable-values-link.png" alt-text="A screenshot displaying the initialize job step.":::  
+
+1. This opens the logs for this step. Scroll down to see the values used by the agent for this job.   
+
+    :::image type="content"  source="media/view-variable-values.png" alt-text="A screenshot displaying the variables used by the agent.":::  
+
+## Run a release in debug mode
 
 Show additional information as a release executes and in the log files
 by running the entire release, or just the tasks in an individual
@@ -195,57 +225,3 @@ release stage, in debug mode. This can help you resolve issues and failures.
 > [!TIP]
 > If you get an error related to an Azure RM service connection,
 see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
-
-## Custom variables
-
-Custom variables can be defined at various scopes.
-
-* Share values across all of the definitions
-  in a project by using [variable groups](../library/variable-groups.md). Choose a variable
-  group when you need to use the same values across all
-  the definitions, stages,   and tasks in a project, and you want to be able to change
-  the values in a single place. You define and manage variable groups in the **Library** tab.
-
-* Share values across all of the stages by using
-  **release pipeline variables**. Choose a release pipeline
-  variable when you need to use the same value across all
-  the stages and tasks in the release pipeline, and you
-  want to be able to change the value in a single place.
-  You define and manage these variables in the **Variables** tab in a release pipeline.
-  In the Pipeline Variables page, open the Scope drop-down list and select "Release".
-  By default, when you add a variable, it is set to Release scope.  
-
-* Share values across all of the tasks within one specific stage by using **stage variables**.
-  Use a stage-level variable for values that vary from stage to stage (and are the same for
-  all the tasks in an stage). You define and manage these variables in the **Variables** tab of a release pipeline.
-  In the Pipeline Variables page, open the Scope drop-down list and select the required stage.
-  When you add a variable, set the Scope to the appropriate environment.
-  
-Using custom variables at project, release pipeline, and stage scope helps you to:
-
-* Avoid duplication of values, making it easier to update
-  all occurrences as one operation.
-
-* Store sensitive values in a way that they cannot be seen
-  or changed by users of the release pipelines. Designate a  configuration property to be a secure (secret) variable by selecting the ![padlock](media/padlock-icon.png) (padlock) icon next to the variable.
-
-  > [!IMPORTANT]
-  > The values of the hidden (secret) variables are securely stored on
-  the server and cannot be viewed by users after they are saved.
-  During a deployment, the Azure Pipelines release service
-  decrypts these values when referenced by the tasks and passes them
-  to the agent over a secure HTTPS channel.
-
-> [!NOTE]
-> Creating custom variables can overwrite standard variables. For example, the PowerShell **Path** environment variable. If you create a custom `Path` variable on a Windows agent, it will overwrite the `$env:Path` variable and PowerShell won't be able to run.
-
-## Use custom variables
-
-To use custom variables in your build and release tasks, simply enclose the 
-variable name in parentheses and precede it with a **$** character. For example,
-if you have a variable named **adminUserName**, you can insert the current
-value of that variable into a parameter of a task as `$(adminUserName)`.
-
-[!INCLUDE [variable-collision](../includes/variable-collision.md)]
- 
-[!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
