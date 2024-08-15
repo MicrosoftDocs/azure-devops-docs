@@ -119,8 +119,13 @@ Before you run the script, replace the following placeholders as follows:
 - `<devops-organization>` Your Azure DevOps organization name
 - `<github-organization>` Your GitHub organization or user name
 - `<github-repository>` Your GitHub repository name
-- `<github-pat>` Your GitHub PAT
 - `<pipelinename>` A name for the pipeline that is between 3-19 characters and contains only numerals and lowercase letters. The script adds a five-digit unique identifier.
+
+Save your GitHub PAT in your local environment.
+
+```bash
+AZURE_DEVOPS_EXT_GITHUB_PAT=<your-github-pat>
+```
 
 
 After you store the YAML file in GitHub, run the following Azure DevOps CLI script in a Bash shell in Cloud Shell or locally. 
@@ -132,7 +137,6 @@ After you store the YAML file in GitHub, run the following Azure DevOps CLI scri
 devopsOrg="https://dev.azure.com/<devops-organization>"
 githubOrg="<github-organization>"
 githubRepo="<github-repository>"
-githubPat="<github-pat>"
 pipelineName="<pipelinename>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
@@ -150,9 +154,6 @@ az login
 # Sign in to Azure DevOps with your Azure DevOps PAT, if necessary.
 echo "Sign in to Azure DevOps."
 az devops login
-
-# Set the environment variable used for Azure DevOps token authentication.
-export AZURE_DEVOPS_EXT_GITHUB_PAT=$githubPat
 
 # Create the Azure DevOps project and set defaults.
 projectId=$(az devops project create \
