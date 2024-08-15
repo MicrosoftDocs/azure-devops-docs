@@ -11,9 +11,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
-
 A stage is a logical boundary in an Azure DevOps pipeline. Stages can be used to group actions in your software development process (for example, build the app, run tests, deploy to preproduction). Each stage contains one or more jobs. 
 
 When you define multiple stages in a pipeline, by default, they run one after the other. Stages can also depend on each other. You can use the `dependsOn` keyword to define [dependencies](#specify-dependencies). Stages also can run based on the result of a previous stage with [conditions](#conditions). 
@@ -412,5 +409,58 @@ Approvals aren't yet supported in YAML pipelines in this version of Azure DevOps
 
 You can add manual approvals at the start or end of each stage in the pipeline. For more information, see [Release approvals and gates overview](../release/approvals/index.md).
 
-
 * * *
+
+## Add a manual trigger
+
+::: moniker range="> azure-devops-2020"
+
+Manually triggered YAML pipeline stages enable you to have a unified pipeline without always running it to completion. 
+
+For instance, your pipeline might include stages for building, testing, deploying to a staging environment, and deploying to production. You might want all stages to run automatically except for the production deployment, which you prefer to trigger manually when ready.
+
+To use this feature, add the `trigger: manual` property to a stage.
+
+In the following example, the development stage runs automatically, while the production stage requires manual triggering. Both stages run a simple script that outputs "hello, world".
+
+```yaml
+stages:
+- stage: development
+  displayName: Deploy to development
+  jobs:
+  - job: DeployJob
+    steps:
+    - script: echo 'hello, world'
+      displayName: 'Run script'
+- stage: production
+  displayName: Deploy to production
+  trigger: manual
+  jobs:
+  - job: DeployJob
+    steps:
+    - script: echo 'hello, world'
+      displayName: 'Run script'
+```
+
+## Mark a stage as unskippable
+
+Mark a stage as `isSkippable: false` to prevent Pipeline users from skipping stages. For example, you may have a YAML template that injects a stage that performs malware detection in all pipelines. If you set `isSkippable: false` for this stage, Pipeline won't be able to skip malware detection.
+
+In the following example, the Malware detection stage is marked as non-skippable, meaning it must be executed as part of the pipeline run. 
+
+```yaml
+- stage: malware_detection
+  displayName: Malware detection
+  isSkippable: false
+  jobs:
+  - job: check_job
+    ...
+```
+
+When a stage is non-skippable, it will show with a disabled checkbox in the **Stages to run** configuration panel.
+
+:::image type="content" source="media/stages/stages-run-skip-stage.png" alt-text="Screenshot of stages to run with disabled stage. ":::
+
+::: moniker-end
+
+
