@@ -17,7 +17,7 @@ ms.date: 08/13/2024
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-This article describes how to use the Azure Boards and Azure DevOps apps for Microsoft Teams to create work items and monitor Azure Boards work item activity from your Teams channels.
+This article describes how to use the Azure Boards and Azure DevOps apps for Microsoft Teams to create and monitor Azure Boards work items from your Teams channels.
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
@@ -186,7 +186,7 @@ Unlinking a project deletes all the project subscriptions and added area paths f
 
 ## Expand and collapse threads
 
-A Teams channel groups posts in threads to logically link and reduce related posts in the channel. All replies for a particular post are linked together.
+A Teams channel collapses posts in threads to logically link and reduce related posts in the channel. All replies to a particular post are linked together.
 
 To expand the thread, select the compacted thread link.
 
