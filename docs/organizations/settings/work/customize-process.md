@@ -18,35 +18,33 @@ ms.date: 06/03/2024
 
 ::: moniker range=">= azure-devops-2020"
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md). 
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[**Agile**](../../../boards/work-items/guidance/agile-process.md), [**Basic**](../../../boards/get-started/plan-track-work.md), [**Scrum**](../../../boards/work-items/guidance/scrum-process.md), or [**CMMI**](../../../boards/work-items/guidance/cmmi-process.md). 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md). 
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[**Agile**](../../../boards/work-items/guidance/agile-process.md), [**Scrum**](../../../boards/work-items/guidance/scrum-process.md), or [**CMMI**](../../../boards/work-items/guidance/cmmi-process.md). 
 
 ::: moniker-end
 
-You can only customize inherited processes. Any changes you make to the inherited process automatically appears in the projects that use that process. 
+You can only customize inherited processes. Any changes you make to the inherited process automatically appear in the projects that use that process. You can quickly customize a process by adding or modifying a work item type (WIT) that's part of the process. Otherwise, use the following sequence to customize a project:
+
+1. **Customize an inherited process:** Modify the inherited process to align with your specific requirements by modifying fields, WITs, workflows, forms, and backlogs.
+2. **Verify your customizations:** Create a test project and validate your changes.
+3. **Apply inherited process to a project:** Add a new project based on inherited process and change the process used by an existing team project.
+4. **Refresh and verify your customizations:** Refresh the web portal and open a work item of the type you modified.
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-The sequence for customizing a project is to customize an inherited process, verify your customizations, and then change the process of the project to use that process. 
-
-[![Create an inherited process](media/process/customize-work-phase2-step1.png)](manage-process.md)[![Customize the inherited process](media/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to  project(s)](media/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](media/process/customize-work-phase2-step4.png)  
-
-Customize a process by adding or modifying a work item type (WIT) that's part of the process.
- 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
+- **Project requirement:** Ensure that you have a [project that uses an inherited process](../work/manage-process.md). For more information, see [Create an inherited process](manage-process.md#create-an-inherited-process).
 
 [!INCLUDE [temp](../includes/automatic-update-project.md)]
 
 ## Add or modify a field 
-
-After you [create an inherited process](manage-process.md#create-an-inherited-process), you can customize it.
 
 Locked :::image type="icon" source="media/process/locked-icon.png" border="false"::: fields and inherited :::image type="icon" source="media/process/inherited-icon.png" border="false"::: fields correspond to inherited fields from a system process. You can't customize locked fields, but you can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
@@ -54,21 +52,16 @@ Locked :::image type="icon" source="media/process/locked-icon.png" border="false
 2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
    ![Screenshot showing highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)
+
 3. Select **Process** > your **inherited process** > the **WIT** you want to customize. 
 4. To add a field, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Process Work Item Types page, Add a field to a WIT.](media/field/bug-new-field.png)
 
-	In the resulting dialog, choose the type of field that you want to add. For more information, see the following articles:   
-	- [Integer](customize-process-field.md#add-field)  
-	- [Picklist (drop-down menu)](customize-process-field.md#pick-list)  
-	- [Person-name/Identity](customize-process-field.md#identity)  
-	- [Rich-text or HTML](customize-process-field.md#html)  
-	- [Checkbox (Boolean)](customize-process-field.md#boolean-field)
+	In the resulting dialog, choose the type of field that you want to add. For example: [integer](customize-process-field.md#add-field), [picklist (drop-down menu)](customize-process-field.md#pick-list), [person-name/Identity](customize-process-field.md#identity), [rich-text or HTML](customize-process-field.md#html), or [checkbox (boolean)](customize-process-field.md#boolean-field).
 
-5. To modify an existing field, you can exercise the following choices: 
-
+5. Modify an existing field in the following ways: 
 	- [Change the field label](customize-process-field.md#rename-field)  
 	- [Show/Hide field on form](customize-process-field.md#show-hide-field)  
 	- [Set Required/Default options](customize-process-field.md#options)  
@@ -164,7 +157,10 @@ An extension is an installable unit that contributes new capabilities to your pr
 
 ## Modify the backlog and boards 
 
-You can add more WITs to a backlog level or add another portfolio backlog. As shown in the following example, we added a third level portfolio backlog labeled *Initiatives*, which tracks the custom *Initiative* WIT. We renamed the product backlog to *Stories and Tickets* to indicate that we track *User stories* and *Customer tickets* on the product backlog. 
+You can add more WITs to a backlog level or create another portfolio backlog. For instance, consider the following example:
+
+- We introduced a third-level portfolio backlog called **Initiatives**, specifically designed to track the custom **Initiative** WIT.
+- We also renamed the product backlog to **Stories** and **Tickets**, signifying that it now encompasses both **User stories** and **Customer tickets**.
  
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Changes made to the backlog levels.](media/process/backlog-levels.png) 
@@ -237,5 +233,4 @@ For more information, see [Change a project's process](manage-process.md#migrate
 
 - [Use the REST API to manage processes](/rest/api/azure/devops/processes/processes/list)
 - [Create an inherited process and change the project to use that process](manage-process.md). 
-- [Work tracking object limits](object-limits.md)
-- [What is an inherited process?](inheritance-process-model.md)
+- [Learn work tracking object limits](object-limits.md)
