@@ -9,7 +9,7 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/14/2024
+ms.date: 08/15/2024
 ---
 
 # Overview of services
@@ -29,20 +29,20 @@ Azure DevOps offers a spectrum of service models to accommodate the unique needs
 
 - **Azure DevOps navigation:** The left navigational bar in Azure DevOps is your gateway to its extensive features. It allows for intuitive access and management of the various services provided.
 
-:::row:::
-   :::column span="2":::  
-      :::image type="content" source="../organizations/projects/media/about-projects/services-hubs-vert.png" alt-text="Screenshot of services on the left navigational menu.":::
-   :::column-end:::
-   :::column span="1":::
-- [Dashboards](../report/dashboards/overview.md) 
-- [Wiki](../project/wiki/about-readme-wiki.md)
-- [Boards](../boards/get-started/what-is-azure-boards.md)
-- [Repos](..//repos/get-started/what-is-repos.md)
-- [Pipelines](../pipelines/get-started/pipelines-get-started.md)
-- [Test Plans](../test/overview.md)
-- [Artifacts](../artifacts/start-using-azure-artifacts.md)
-:::column-end:::
-:::row-end:::
+    :::row:::
+       :::column span="1":::  
+          :::image type="content" source="../organizations/projects/media/about-projects/services-hubs-vert.png" alt-text="Screenshot of services on the left navigational menu.":::
+       :::column-end:::
+       :::column span="1":::
+    - [Dashboards](../report/dashboards/overview.md) 
+    - [Wiki](../project/wiki/about-readme-wiki.md)
+    - [Boards](../boards/get-started/what-is-azure-boards.md)
+    - [Repos](..//repos/get-started/what-is-repos.md)
+    - [Pipelines](../pipelines/get-started/pipelines-get-started.md)
+    - [Test Plans](../test/overview.md)
+    - [Artifacts](../artifacts/start-using-azure-artifacts.md)
+    :::column-end:::
+    :::row-end:::
 
 For more information, see [Tools and clients that connect to Azure DevOps](tools.md).
 
@@ -53,7 +53,7 @@ Azure DevOps provides a powerful dashboard interface that allows you to create a
 - **Add, configure, and manage dashboards:** Create multiple dashboards to reflect different aspects of your project. You can customize each dashboard by adding and arranging various widgets that display project data in real-time.
 - **Configure widgets:** Enhance your dashboards with widgets that provide insights into your project. Choose from a wide range of widgets to display information such as build status, test results, and work item queries.
 - **Navigate quickly:** Use dashboards as a central hub for navigating to various areas of your project. Set up links and shortcuts that allow you to access important sections of Azure DevOps with just a selection.
-- **Use extensibility points:** Use Azure DevOps [extensibility points](../extend/targets/overview.md) to further customize your dashboards. You can add new capabilities by integrating non-Microsoft services or creating your own extensions1.
+- **Use extensibility points:** Use Azure DevOps extensibility points to further customize your dashboards. You can add new capabilities by integrating non-Microsoft services or creating your own extensions1.
 
 For more information, see the [Dashboards documentation](../report/dashboards/dashboards.md).
 
@@ -63,9 +63,7 @@ For more information, see the [Dashboards documentation](../report/dashboards/da
 
 In the dynamic world of software development, efficient information sharing and meticulous tracking of work, tasks, issues, and code defects are essential. While tools like Microsoft Excel, Microsoft Project, or various bug tracking systems were used historically, the adoption of Agile methodologies revolutionizes planning and development processes.
 
-**Azure Boards:** Your Agile Command Center
-
-With Azure Boards, you unlock a plethora of Agile tools designed to streamline planning and tracking across your projects:
+**Azure Boards provides the following Agile tools designed to streamline planning and tracking across your projects:**
 
 - **Work item management:** Seamlessly add and update various work items to keep your project organized and on track.
 - **Queries and charts:** Define custom queries for work items and generate insightful status and trend charts to visualize progress.
@@ -90,6 +88,8 @@ For an in-depth understanding of how backlogs, boards, and plans can transform y
 
 Source or version control systems are pivotal in enabling developers to collaborate seamlessly on codebases and maintain a comprehensive history of changes. These systems are indispensable for projects involving multiple developers, ensuring consistency and coordination throughout the development process.
 
+:::image type="content" source="media/repos-git-hub.png" alt-text="Screenshot of Azure Repos landing page.":::
+
 Azure DevOps supports two primary types of source control to suit diverse project needs, [Git](../repos/git/index.yml) and [Team Foundation Version Control (TFVC)](../repos/tfvc/index.yml).
 
 ### Git
@@ -99,7 +99,7 @@ Git is a version control system where each developer has a local copy of the ent
 > [!NOTE]
 > Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
 
-You can do the following tasks with Azure Repos for Git:
+**You can do the following tasks with Azure Repos for Git:**
 
 - **Review files:** Examine the details and history of changes made to each file within your repository.
 - **Download and edit files:** Obtain a local copy of files from the repository and make necessary modifications.
@@ -111,23 +111,21 @@ You can do the following tasks with Azure Repos for Git:
 
 Team Foundation Version Control (TFVC) is a centralized version control system that simplifies code management. Developers work with a single version of each file on their local machines, while the server retains the full history of changes, providing a single source of truth.
 
-The key features of TFVC include:
+**TFVC includes the following key features:**
 
 - **Single version workflow:** Each developer’s machine holds the current version of files, reducing complexity and ensuring consistency across the team.
 - **Server-side history:** All historical data, including changes and versions, are securely stored on the server, preserving the integrity of your project’s evolution.
 - **Path-based branching:** Branches are created and managed on the server using a path-based approach, allowing for clear organization and straightforward merging processes.
 
-:::image type="content" source="media/repos-git-hub.png" alt-text="Screenshot of Azure Repos landing page.":::
-
 ## Pipelines
 
 Achieving rapid and reliable software releases is a hallmark of modern development practices, and Azure Pipelines stands at the forefront of this endeavor by automating the build, test, and release processes.
 
-**Automated builds:** Set up your Azure Pipelines to trigger automated builds upon code check-ins, ensuring that every change is promptly integrated and verified.
-**Test integration:** Incorporate test runs post-build to validate changes, maintaining high code quality and detecting issues early.
-**Release pipelines:** Manage the deployment of your software builds across various environments, from staging to production, with Azure Pipelines’ robust release management capabilities.
+- **Automated builds:** Set up your Azure Pipelines to trigger automated builds upon code check-ins, ensuring that every change is promptly integrated and verified.
+- **Test integration:** Incorporate test runs post-build to validate changes, maintaining high code quality and detecting issues early.
+- **Release pipelines:** Manage the deployment of your software builds across various environments, from staging to production, with Azure Pipelines’ robust release management capabilities.
 
-**Features of Azure Pipelines include:**
+**Azure Pipelines includes the following features:**
 
 - **Continuous integration (CI):** Implement CI to automatically merge code changes into a central repository, followed by automated builds and tests.
 - **Continuous delivery (CD):** Ensure that your software can be reliably released at any time with CD practices, streamlining the path from development to production.
@@ -146,18 +144,18 @@ For a detailed guide on implementing continuous integration and delivery with Az
 
 Azure Test Plans is a comprehensive service designed to facilitate the creation, management, and execution of various testing methodologies, including manual, exploratory, and automated tests.
 
-**Key features of Azure Test Plans:**
+**Azure Test Plans includes the following key features:**
 
-**Workflow customization:** Tailor your testing workflow with customizable test plans, suites, and cases, ensuring alignment with your project’s needs.
-**Traceability:** Achieve end-to-end traceability, linking requirements directly to test cases and bugs, with requirement-based test suites.
-**Test selection:** Utilize query-based test suites for criteria-based test selection, streamlining the testing process.
-**User-friendly interface:** Benefit from an Excel-like grid interface, simplifying the creation and management of test cases.
-**Reusable elements:** Enhance efficiency with reusable test steps and shared parameters, promoting consistency across tests.
-**Collaboration:** Share test plans, suites, and cases with stakeholders for review and feedback, fostering a collaborative testing environment.
-**Cross-platform execution:** Execute tests directly from your browser on any platform, which offers flexibility and convenience.
-**Activity monitoring:** Monitor testing activities with real-time charts, providing visibility into test progress and outcomes.
+- **Workflow customization:** Tailor your testing workflow with customizable test plans, suites, and cases, ensuring alignment with your project’s needs.
+- **Traceability:** Achieve end-to-end traceability, linking requirements directly to test cases and bugs, with requirement-based test suites.
+- **Test selection:** Utilize query-based test suites for criteria-based test selection, streamlining the testing process.
+- **User-friendly interface:** Benefit from an Excel-like grid interface, simplifying the creation and management of test cases.
+- **Reusable elements:** Enhance efficiency with reusable test steps and shared parameters, promoting consistency across tests.
+- **Collaboration:** Share test plans, suites, and cases with stakeholders for review and feedback, fostering a collaborative testing environment.
+- **Cross-platform execution:** Execute tests directly from your browser on any platform, which offers flexibility and convenience.
+- **Activity monitoring:** Monitor testing activities with real-time charts, providing visibility into test progress and outcomes.
 
-For a detailed exploration of how Azure Test Plans can streamline your testing processes, see the[Azure Test Plans documentation](../test/index.ym.
+For a detailed exploration of how Azure Test Plans can streamline your testing processes, see the[Azure Test Plans documentation](../test/index.yml).
 
 ![Screenshot of Test Plans landing page.](media/test-plans-vert.png)
 
