@@ -17,11 +17,11 @@ ms.date: 08/13/2024
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-This article describes how to use the Azure Boards app for Microsoft Teams to create work items and monitor Azure Boards work item activity from your Teams channels.
+This article describes how to use the Azure Boards and Azure DevOps apps for Microsoft Teams to create work items and monitor Azure Boards work item activity from your Teams channels.
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
-The Azure Boards app for Microsoft Teams lets you:
+By using the Azure Boards app for Microsoft Teams, you can:
 
 - Set up and manage subscriptions to create and manage work items and work item events in your Teams channels.
 - Create work items from conversations in a channel.
@@ -31,11 +31,11 @@ The Azure Boards app for Microsoft Teams lets you:
 > [!NOTE]
 > Azure Boards notifications aren't supported inside Teams chat or direct messages.
 
-In this article, you:
+In this article, you learn how to:
 
 - Add the Azure Boards app to your team in Microsoft Teams.
 - Link your Azure Boards project to the Azure Boards app.
-- Set up subscriptions to work item related events in your Teams channel.
+- Set up subscriptions to work item events in your Teams channel.
 - Create work items from your Teams channel.
 - Monitor work item activity in your Teams channel.
 
@@ -111,11 +111,11 @@ To use the app, sign in to Azure Boards and link your Azure Boards project to yo
 
 After your project is linked, begin monitoring project work items by selecting the **Add subscription** button. You can add more subscriptions anytime by using the `@azure boards subscriptions` command.
 
-1. Select the event you want to subscribe to and select **Next**.
+1. Under **Choose event**, select the event you want to subscribe to and select **Next**.
 
    :::image type="content" source="media/integrations-teams/add-event.png" alt-text="Screenshot of selecting the event to monitor.":::
 
-1. Select the **Area path**, **Work item type**, and optionally specify **Tags** or a specific string, and then select **Submit**.
+1. Under **Choose filters**, select the **Area path**, **Work item type**, and optionally specify **Tags** or a specific string to filter on, and then select **Submit**.
 
    :::image type="content" source="media/integrations-teams/add-subscriptions.png" alt-text="Screenshot of setting up the subscription.":::
 
@@ -151,7 +151,7 @@ You can use the Azure Boards app to create work items from your channel by using
 
    :::image type="content" source="media/integrations-teams/message-action-1.png" alt-text="Screenshot of configuring the work item.":::
 
-The new work item appears in Azure Boards and contains a link back to the Teams item that generated the item.
+The new work item appears in Azure Boards and contains a link back to the Teams item that generated the work item.
 
 :::image type="content" source="media/integrations-teams/message-action-2.png" alt-text="Screenshot of the new work item in Azure Boards.":::
 
@@ -184,9 +184,9 @@ A Teams channel can link to only one Azure Boards project at a time. To link to 
 
 Unlinking a project deletes all the project subscriptions and added area paths from the channel. If the channel has no subscriptions, any user can unlink a project. If the channel has subscriptions, only Project Administrators can unlink the project.
 
-## Use threaded notifications
+## Expand and collapse threads
 
-A Teams channel threads notifications to logically link and reduce related notifications in the channel. All replies for a particular post are linked together.
+A Teams channel groups posts in threads to logically link and reduce related posts in the channel. All replies for a particular post are linked together.
 
 To expand the thread, select the compacted thread link.
 
