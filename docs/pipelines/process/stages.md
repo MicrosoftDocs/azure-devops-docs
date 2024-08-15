@@ -421,7 +421,7 @@ For instance, your pipeline might include stages for building, testing, deployin
 
 To use this feature, add the `trigger: manual` property to a stage.
 
-In the following example, the development stage runs automatically, while the production stage requires manual triggering. Both stages run a simple script that outputs "hello, world".
+In the following example, the development stage runs automatically, while the production stage requires manual triggering. Both stages run a hello world output script.
 
 ```yaml
 stages:
@@ -444,7 +444,7 @@ stages:
 
 ## Mark a stage as unskippable
 
-Mark a stage as `isSkippable: false` to prevent Pipeline users from skipping stages. For example, you may have a YAML template that injects a stage that performs malware detection in all pipelines. If you set `isSkippable: false` for this stage, Pipeline won't be able to skip malware detection.
+Mark a stage as `isSkippable: false` to prevent pipeline users from skipping stages. For example, you may have a YAML template that injects a stage that performs malware detection in all pipelines. If you set `isSkippable: false` for this stage, Pipeline won't be able to skip malware detection.
 
 In the following example, the Malware detection stage is marked as non-skippable, meaning it must be executed as part of the pipeline run. 
 
