@@ -91,7 +91,7 @@ For an in-depth understanding of how backlogs, boards, and plans can transform y
 Source or version control systems are pivotal in enabling developers to collaborate seamlessly on codebases and maintain a comprehensive history of changes. These systems are indispensable for projects involving multiple developers, ensuring consistency and coordination throughout the development process.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure Repos landing page.](media/repos-git-hub.png)
+> ![Screenshot of Azure Repos landing page.](media/repos-github.png)
 
 Azure DevOps supports two primary types of source control to suit diverse project needs, [Git](../repos/git/index.yml) and [Team Foundation Version Control (TFVC)](../repos/tfvc/index.yml).
 
