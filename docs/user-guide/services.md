@@ -57,7 +57,8 @@ Azure DevOps provides a powerful dashboard interface that allows you to create a
 
 For more information, see the [Dashboards documentation](../report/dashboards/dashboards.md).
 
-![Screenshot of the Dashboards landing page.](media/dashboard-overview.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Dashboards landing page.](media/dashboard-overview.png)
 
 ## Boards
 
@@ -82,13 +83,15 @@ Project managers and developers can share information and track progress using t
 
 For an in-depth understanding of how backlogs, boards, and plans can transform your project management experience, see [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md)
 
-![Screenshot of the Azure Boards backlogs page.](media/boards-backlogs.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Azure Boards backlogs page.](media/boards-backlogs.png)
 
 ## Repos
 
 Source or version control systems are pivotal in enabling developers to collaborate seamlessly on codebases and maintain a comprehensive history of changes. These systems are indispensable for projects involving multiple developers, ensuring consistency and coordination throughout the development process.
 
-:::image type="content" source="media/repos-git-hub.png" alt-text="Screenshot of Azure Repos landing page.":::
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure Repos landing page.](media/repos-git-hub.png)
 
 Azure DevOps supports two primary types of source control to suit diverse project needs, [Git](../repos/git/index.yml) and [Team Foundation Version Control (TFVC)](../repos/tfvc/index.yml).
 
@@ -157,7 +160,8 @@ Azure Test Plans is a comprehensive service designed to facilitate the creation,
 
 For a detailed exploration of how Azure Test Plans can streamline your testing processes, see the[Azure Test Plans documentation](../test/index.yml).
 
-![Screenshot of Test Plans landing page.](media/test-plans-vert.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Test Plans landing page.](media/test-plans-vert.png)
 
 ## Collaboration services
 
