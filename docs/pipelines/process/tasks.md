@@ -257,7 +257,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 ```
 
 > [!NOTE]
-> * Requires agent version 2.194.0 or later. On Azure DevOps Server 2022 and lower, retries are not supported for [agentless tasks](./phases.md#agentless-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task) , and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks). 
+> * Requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries are not supported for [agentless tasks](./phases.md#agentless-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task) , and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks). 
 > * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
