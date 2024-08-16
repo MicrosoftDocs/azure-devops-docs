@@ -7,7 +7,7 @@ ms.topic: include
 
 ### New Boards Hub on by default
 
-In March 2022, we announced the preview of the New Boards Hub. Since then, we have been collecting feedback, [adding features](../../../features-timeline.md#updated-boards-experience), and fixing bugs.
+In March 2022, we announced the preview of the New Boards Hub. Since then, we have been collecting feedback, adding features, and fixing bugs.
 
  Now, after a long journey, we are ready to take the next step by making New Boards Hub the default experience. The rollout process will take a couple of months as we carefully deploy it to all organizations. You will see the following banner when you open Boards for the first time after your organization has been updated.
 
