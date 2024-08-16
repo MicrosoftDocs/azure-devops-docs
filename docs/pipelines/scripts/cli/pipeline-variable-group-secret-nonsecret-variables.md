@@ -21,7 +21,7 @@ With the sample in this guide, you learn how to:
 
 - Define an Azure Pipelines pipeline using a YAML file stored in GitHub.
 - Create a variable group containing both secret and nonsecret variables.
-- Execute the pipeline using the Azure DevOps CLI and monitor its run processing and output.
+- Execute the pipeline using the Azure DevOps CLI and monitor the run processing and output.
 
 [!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 

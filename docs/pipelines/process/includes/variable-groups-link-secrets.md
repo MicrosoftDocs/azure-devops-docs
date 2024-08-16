@@ -20,8 +20,8 @@ Although Key Vault supports storing and managing cryptographic keys and certific
 ### Prerequisites
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/).
-- An Azure DevOps organization. [Sign up for free](https://dev.azure.com/) or a Azure DevOps Server.
-- A DevOps project. [Create a project](../../../organizations/projects/create-project.md) if you do not already have one. 
+- An Azure DevOps organization. [Sign up for free](https://dev.azure.com/) or an Azure DevOps Server.
+- A DevOps project. [Create a project](../../../organizations/projects/create-project.md) if you don't already have one. 
 - An [Azure Resource Manager service connection](../../library/connect-to-azure.md) for your project.
 
 ### Create a key vault

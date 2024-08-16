@@ -1,6 +1,6 @@
 ---
 title: Link a variable group to secrets in Azure Key Vault
-description: Create a variable group that links to secrets in a Azure key vault.
+description: Create a variable group that links to secrets in an Azure key vault.
 ms.topic: tutorial
 ms.author: v-catherbund
 author: cebundy
