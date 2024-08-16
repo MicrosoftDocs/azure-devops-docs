@@ -166,7 +166,7 @@ Deployment logs help you monitor and debug the release of your application. To c
 
    ![downloading logs](media/define-multistage-release-process/download-logs.png)
 
-1. If you need additional information to debug your deployment, you can [run the release in debug mode](../../pipelines/release/variables.md#debug-mode).
+1. If you need additional information to debug your deployment, you can [run the release in debug mode](../../pipelines/release/variables.md#run-a-release-in-debug-mode).
 
 ## Next step
 

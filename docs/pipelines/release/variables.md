@@ -36,7 +36,7 @@ Default variables provide essential information about the execution context to y
 
 With the exception of *System.Debug*, default variables are read-only, with their values automatically set by the system.
 
-Some of the most significant variables are described in the following tables. To view the full list, see [View the current values of all variables](#view-vars).
+Some of the most significant variables are described in the following tables. To view the full list, see [View the current values of all variables](#view-the-current-values-of-all-variables).
 
 ### System variables
 
@@ -51,7 +51,7 @@ Some of the most significant variables are described in the following tables. To
 | **System.ArtifactsDirectory**   | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory.<br/><br />Example: `C:\agent\_work\r1\a`  |
 | **System.DefaultWorkingDirectory** | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory.<br/><br />Example: `C:\agent\_work\r1\a` |
 | **System.WorkFolder**           | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder.<br/><br />Example: `C:\agent\_work`  |
-| **System.Debug**                | This is the only system variable that can be _set_ by the users. Set this to true to [run the release in debug mode](#debug-mode) to assist in fault-finding.<br/><br />Example: `true` |
+| **System.Debug**                | This is the only system variable that can be _set_ by the users. Set this to true to [run the release in debug mode](#run-a-release-in-debug-mode) to assist in fault-finding.<br/><br />Example: `true` |
 
 ### Release variables
 

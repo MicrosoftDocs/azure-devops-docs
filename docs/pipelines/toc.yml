@@ -580,8 +580,8 @@
     href: troubleshooting/troubleshoot-triggers.md
   - name: Pipeline queues but never starts
     href: troubleshooting/troubleshoot-start.md
-  - name: Debug deployment issues
-    href: release/variables.md#debug-mode
+  - name: Debug release issues
+    href: release/variables.md#run-a-release-in-debug-mode
   - name: Troubleshoot ARM service connections
     href: release/azure-rm-endpoint.md
   - name: Review logs
