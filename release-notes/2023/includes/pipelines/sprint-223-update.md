@@ -44,7 +44,7 @@ We have updated our [release tasks](/azure/devops/pipelines/tasks/reference/?vie
 
 ### Specify agent version in Agent VM extension
 
-Azure VM's can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally specify the desired agent version to be installed:
+Azure VM's can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally specify the desired agent version to be installed:
 ```
     "properties": {
       ...
