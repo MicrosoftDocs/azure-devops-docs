@@ -7,14 +7,14 @@ ms.topic: include
 
 ### Access Azure Service Bus from Pipelines using Microsoft Entra ID authentication
 
-You can now use [Microsoft Entra ID authentication](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
+You can now use [Microsoft Entra ID authentication](/azure/service-bus-messaging/service-bus-authentication-and-authorization#microsoft-entra-id) to access Azure Service Bus from Azure Pipelines. This allows you to take advantage of Workload identity federation to remove secrets management and Azure RBAC for fine grained access control.
 
-Identities accessing Azure Service Bus need to be granted one of the [Azure built-in roles for Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
+Identities accessing Azure Service Bus need to be granted one of the [Azure built-in roles for Azure Service Bus](/azure/service-bus-messaging/authenticate-application#azure-built-in-roles-for-azure-service-bus) on the Service Bus accessed.
 
 
 ##### PublishToAzureServiceBus@2 task
 
-The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops&preserve-view=true) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
+The new PublishToAzureServiceBus@2 tasks can be configured using an Azure service connection. Create an [Azure service connection](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops&preserve-view=true) and populate the `serviceBusQueueName` and `serviceBusNamespace` properties of the new task:
 
 ```yaml
 - task: PublishToAzureServiceBus@2
@@ -43,9 +43,9 @@ If you are using Marketplace tasks or custom tasks to deploy to Azure, please be
 > ![Screenshot of oidc collaboration.](../../media/240-pipelines-01.png "Screenshot of oidc collaboration")
 
 
-Tasks that take a `connectedService:AzureRM` input in [task.json](https://learn.microsoft.com/azure/devops/extend/develop/integrate-build-task?view=azure-devops#custom-build-task-json) can be updated to support workload identity federation by following these steps:
+Tasks that take a `connectedService:AzureRM` input in [task.json](/azure/devops/extend/develop/integrate-build-task#custom-build-task-json) can be updated to support workload identity federation by following these steps:
 
-*  Utilize the [Oidctoken REST API](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.2) to request an idToken (arrow 1 in above diagram).
+*  Utilize the [Oidctoken REST API](/rest/api/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.2&preserve-view=true) to request an idToken (arrow 1 in above diagram).
 *   Exchange the idToken for an access token using the federated credential flow of the [OAuth API](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential), specifying the idToken as `client_assertion` (arrows 2 & 4 in above diagram);  
     or:
 *   For tasks that act as a wrapper around a tool that performs authentication itself, use the tools' authentication method to specify the federated token.
@@ -147,7 +147,7 @@ variables:
 
 ### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
 
-Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents July 24 2024. We have updated the [DockerCompose@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available on the agent.
+Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents July 24 2024. We have updated the [DockerCompose@0](/azure/devops/pipelines/tasks/reference/docker-compose-v0) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available on the agent.
 
 However, compatibility mode does not address all compatibility issues. See [Migrate to Compose V2](https://docs.docker.com/compose/migrate/). Some users will need more time to update their Docker Compose projects for Docker Compose v2 compatibility. In those cases, follow these instructions to use the **DockerComposeV0** task with **docker-compose v1**.
 
