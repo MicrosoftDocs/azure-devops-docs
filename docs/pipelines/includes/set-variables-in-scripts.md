@@ -4,27 +4,23 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 08/19/2020
+ms.date: 08/16/2024
 ---
 
-<h3 id="set-in-script">Define and modify your variables in a script</h3>
+#### Define and modify your variables in a script
 
-To define or modify a variable from a script, use the `task.setvariable` logging command.
-The updated variable value is scoped to the job being executed, and doesn't flow across jobs or stages.
-Variable names are transformed to uppercase, and the characters "." and " " are replaced with "_".
+To define or modify a variable from a script, use the `task.setvariable` logging command. The updated variable value is scoped to the job being executed, does not persist across jobs or stages. Note that variable names are transformed to uppercase, with "." and " " replaced with "_".
 
 For example, `Agent.WorkFolder` becomes `AGENT_WORKFOLDER`.
-On Windows, you access this variable as `%AGENT_WORKFOLDER%` or `$env:AGENT_WORKFOLDER`.
-On Linux and macOS, you use `$AGENT_WORKFOLDER`.
+- On Windows, access this variable as `%AGENT_WORKFOLDER%` or `$env:AGENT_WORKFOLDER`.
+- On Linux and macOS, use `$AGENT_WORKFOLDER`.
 
 > [!TIP]
 > 
-> You can run a script on a:
+> You can run a script on:
 > 
-> * [Windows agent](../agents/windows-agent.md) using either a [Batch script task](/azure/devops/pipelines/tasks/reference/batch-script-v1) or [PowerShell script task](/azure/devops/pipelines/tasks/reference/powershell-v2).
-> * [macOS](../agents/osx-agent.md) or [Linux](../agents/linux-agent.md) agent using a [Shell script task](/azure/devops/pipelines/tasks/reference/shell-script-v2).
-
-
+> - A [Windows agent](../agents/windows-agent.md) using either a [Batch script task](/azure/devops/pipelines/tasks/reference/batch-script-v1) or [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
+> - A [macOS](../agents/osx-agent.md) or [Linux](../agents/linux-agent.md) agent using a [Shell script task](/azure/devops/pipelines/tasks/reference/shell-script-v2).
 
 # [Batch](#tab/batch)
 

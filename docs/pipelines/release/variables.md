@@ -205,23 +205,21 @@ To use custom variables in your tasks, enclose the variable name in parentheses 
 
 ## Run a release in debug mode
 
-Show additional information as a release executes and in the log files
-by running the entire release, or just the tasks in an individual
-release stage, in debug mode. This can help you resolve issues and failures.
+Running a release in debug mode can help you diagnose and resolve issues or failures by displaying additional information during the release execution. You can enable debug mode for the entire release or just for the tasks within a specific release stage.
 
-* To initiate debug mode for an entire release, add a variable
-  named `System.Debug` with the value `true` to the **Variables**
-  tab of a release pipeline.
+- To enable debug mode for an entire release, add a variable named `System.Debug` with the value `true` to the **Variables** tab of the release pipeline.
 
-* To initiate debug mode for a single stage, open the
-  **Configure stage** dialog from the shortcut menu
-  of the stage and add a variable named `System.Debug`
-  with the value `true` to the **Variables** tab.
+- To enable debug mode for a specific stage, open the **Configure stage** dialog from the shortcut menu of the stage, and add a variable named `System.Debug` with the value `true` to the **Variables** tab.
 
-* Alternatively, create a [variable group](../library/variable-groups.md)
-  containing a variable named `System.Debug` with the value `true`
-  and link this variable group to a release pipeline.
+- Alternatively, create a [variable group](../library/variable-groups.md) containing a variable named `System.Debug` with the value `true`, and link this variable group to the release pipeline.
 
 > [!TIP]
-> If you get an error related to an Azure RM service connection,
-see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
+> If you encounter an error related to Azure ARM service connections, see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md) for more details.
+
+## Related content
+
+- [Artifact sources in Classic release pipelines](artifacts.md)
+
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
+
+- [Use variables in a variable group](../scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md)
