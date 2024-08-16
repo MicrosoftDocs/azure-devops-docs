@@ -26,7 +26,7 @@ The pipeline widgets include:
 - [Release pipeline overview](../../report/dashboards/widget-catalog.md#release-definition-widget): View and track the status of a release pipeline.
 - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget): Track quality continuously from a build or release pipeline.
 - [Test results trend](../../report/dashboards/widget-catalog.md#test-trend-results): View trends of test results for a build or release pipeline.
-- [Test results trend (Advanced)](../../report/dashboards/analytics-widgets#test-results-trend-advanced): View trends of test results for multiple builds and releases in near real-time with Analytics. For more information about Analytics widgets, see [Analytics widgets](../../report/dashboards/analytics-widgets.md).
+- [Test results trend (Advanced)](../../report/dashboards/analytics-widgets.md#test-results-trend-advanced): View trends of test results for multiple builds and releases in near real-time with Analytics. For more information about Analytics widgets, see [Analytics widgets](../../report/dashboards/analytics-widgets.md).
 
 ## Manage your dashboard widgets
 
