@@ -38,6 +38,6 @@ If you're interested in participating in the preview, please reach out to us dir
 
 ### Connect to GitHub repository search improvements (preview)
 
-Previously, [connecting](/azure/devops/boards/github/connect-to-github?view=azure-devops) an Azure DevOps project to a GitHub organization with thousands of repositories was challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
+Previously, [connecting](/azure/devops/boards/github/connect-to-github) an Azure DevOps project to a GitHub organization with thousands of repositories was challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
 
 We're happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).
