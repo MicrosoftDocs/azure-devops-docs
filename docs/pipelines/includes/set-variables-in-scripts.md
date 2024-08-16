@@ -9,7 +9,7 @@ ms.date: 08/16/2024
 
 #### Define and modify your variables in a script
 
-To define or modify a variable from a script, use the `task.setvariable` logging command. The updated variable value is scoped to the job being executed, does not persist across jobs or stages. Note that variable names are transformed to uppercase, with "." and " " replaced with "_".
+To define or modify a variable from a script, use the `task.setvariable` logging command. The updated variable value is scoped to the job being executed and doesn't persist across jobs or stages. Note that variable names are transformed to uppercase, with "." and " " replaced with "_".
 
 For example, `Agent.WorkFolder` becomes `AGENT_WORKFOLDER`.
 - On Windows, access this variable as `%AGENT_WORKFOLDER%` or `$env:AGENT_WORKFOLDER`.
