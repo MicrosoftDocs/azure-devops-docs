@@ -22,7 +22,7 @@ There are two options for authentication: use a managed identity or use a servic
 
 You might need to manually create a managed identity that uses federated credentials, and then grant the required permissions. You can also use the REST API for this process.
 
-### Create a managed identity
+### Create a managed identity in Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -34,45 +34,19 @@ You might need to manually create a managed identity that uses federated credent
 
     - **Subscription**: Select the subscription in which to create the user-assigned managed identity.
     - **Resource group**: Select a resource group to create the user-assigned managed identity in, or select **Create new** to create a new resource group.
-    - **Region**: Select a region to deploy the user-assigned managed identity, for example, **East US**.
-    - **Name**: Enter the name for your user-assigned managed identity, for example, **UADEVOPS**.
+    - **Region**: Select a region to deploy the user-assigned managed identity (example: **East US**).
+    - **Name**: Enter the name for your user-assigned managed identity (example: **UADEVOPS**).
 
-1. Copy the **Subscription ID** and  **Client ID**  values for your managed identity to use later.
+1. Select **Review + create** to create a new managed identity. When your deployment is complete, select **Go to resources**. 
 
-1. Go to **Settings** > **Properties**.
+1. Copy the **Subscription ID**, **Subscription** and **Client ID**  values for your managed identity to use later.
+
+1. Within your managed identity in Azure portal, go to **Settings** > **Properties**.
 
 1. Copy the **Tenant Id** value to use later.
 
-1. Go to **Settings** > **Federated credentials**.
 
-1. Select **Add credentials**.
-
-1. Select the **Other issuer** scenario.
-
-1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later when you create a service connection.
-
-    |Field  |Description  |
-    |---------|---------|
-    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).      |
-    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. The service connection doesn't need to be already created.      |
-
-1. Select **Save**.
-
-1. Keep this window open. Later in the process, you return to the window and update your app registration federated credentials.
-
-### Grant permissions to the managed identity
-
-1. In the Azure portal, go to the Azure resource that you want to grant permissions for (for example, a resource group).
-
-1. Select **Access control (IAM)**.
-
-    :::image type="content" source="approvals/media/access-control-resource-group.png" alt-text="Screenshot that shows selecting Access control in the resource menu.":::
-
-1. Select **Add role assignment**. Assign the required role to your managed identity (for example, Contributor).
-
-1. Select **Review and assign**.
-
-### Create a service connection for managed identity authentication
+### Create a service connection for managed identity authentication in Azure DevOps
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**.
 
@@ -110,6 +84,41 @@ You might need to manually create a managed identity that uses federated credent
 1. In the Azure portal, select **Update** to save the updated credentials.
 
 1. In Azure DevOps, select **Verify and save**.
+
+### Add a federated credential in Azure portal
+
+1. Within your managed identity in Azure portal, go to **Settings** > **Federated credentials**.
+
+1. Select **Add credentials**.
+
+1. Select the **Other issuer** scenario.
+
+1. Enter values for **Issuer**, **Subject identifier**, and **Name**. You'll replace the values for **Issuer** and **Subject identifier** later when you create a service connection.
+
+    |Field  |Description  |
+    |---------|---------|
+    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).      |
+    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. The service connection doesn't need to be already created.      |
+    |Name     |   The name of your managed identity.      |
+
+1. Select **Add**.
+
+1. Keep this window open. Later in the process, you return to the window and update your app registration federated credentials.
+
+### Grant permissions to the managed identity in Azure portal
+
+1. Open the Azure portal in a second browser window. 
+
+1. Go to the Azure resource that you want to grant permissions for (for example, a resource group).
+
+1. Select **Access control (IAM)**.
+
+    :::image type="content" source="approvals/media/access-control-resource-group.png" alt-text="Screenshot that shows selecting Access control in the resource menu.":::
+
+1. Select **Add role assignment**. Assign the required role to your managed identity (for example, Contributor).
+
+1. Select **Review and assign**.
+
 
 ## Set a workload identity service connection to use service principal authentication
 
