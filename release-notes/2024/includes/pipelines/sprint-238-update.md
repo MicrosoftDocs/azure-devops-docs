@@ -41,7 +41,7 @@ To manage this, we have two Pipeline agents [packages](https://github.com/micros
 | `vsts-agent-*`       | 6, 10, 16, 20 | Includes all Node versions that can be used as task execution handler |
 | `pipelines-agents-*` | 16, 20        | Includes only recent Node versions. The goal for these packages is to not include any end-of-life version of Node. |
 
-If you want to run a task that requires the Node 10 execution handler on an agent that doesn't have Node 10 bundled, you can install the execution handler by inserting the [NodeTaskRunnerInstaller@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0?view=azure-pipelines) task in your pipeline:
+If you want to run a task that requires the Node 10 execution handler on an agent that doesn't have Node 10 bundled, you can install the execution handler by inserting the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0?view=azure-pipelines) task in your pipeline:
 
 ```yaml
   steps:

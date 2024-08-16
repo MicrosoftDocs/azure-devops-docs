@@ -15,13 +15,13 @@ For more information, please see our [latest blog post here](https://devblogs.mi
 
 ### Add link to GitHub commit or pull request is generally available
 
-After several weeks [in preview](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we're excited to announce an enhanced experience for linking work items to GitHub. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
+After several weeks [in preview](/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we're excited to announce an enhanced experience for linking work items to GitHub. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Add link improvements.](../../media/237-boards-01.gif "gif to Add link improvements")
 
 > [!NOTE]
-> This feature is only available in the [New Boards Hub preview](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
+> This feature is only available in the [New Boards Hub preview](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
 
 
 ### AB# links on GitHub pull requests (preview)
@@ -38,6 +38,6 @@ If you're interested in participating in the preview, please reach out to us dir
 
 ### Connect to GitHub repository search improvements (preview)
 
-Previously, [connecting](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) an Azure DevOps project to a GitHub organization with thousands of repositories was challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
+Previously, [connecting](/azure/devops/boards/github/connect-to-github?view=azure-devops) an Azure DevOps project to a GitHub organization with thousands of repositories was challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
 
 We're happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).
