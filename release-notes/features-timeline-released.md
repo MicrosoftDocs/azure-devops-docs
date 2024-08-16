@@ -37,6 +37,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="8"><a href="2024/sprint-243-update.md" data-raw-source="[13 August 2024](2024/sprint-242-update.md)"> 13 August 2024</a></td>
+    <td>Advanced Security meter usage API now returns user identities</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Advanced Security code scanning for C# and Java projects without builds</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Managed DevOps Pools (Preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Pipelines tasks use Node 20</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Create build pipeline permission</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Exclusive lock check at stage level</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Template information in pipeline runs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Manually triggered YAML pipeline stages</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
     <td rowspan="3"><a href="2024/sprint-242-update.md" data-raw-source="[25 July 2024](2024/sprint-242-update.md)"> 25 July  2024</a></td>
     <td>Connect to GitHub repository search improvements</td><td>Boards</td><td>Future</td></tr>
     <td>Create GitHub branch from work item</td><td>Boards</td><td>Future</td></tr>
@@ -4770,7 +4780,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
           <td>December 6, 2022</td>
           <td>19.205.33122.1</td>
         </tr>

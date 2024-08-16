@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Publish Pipeline Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enable developers to store and manage their packages and control who they want to share it with. Pipeline Artifacts are generated after you build your application. The output can then be deployed or consumed by another job in your pipeline.
 
@@ -28,7 +28,7 @@ You can use [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/
     artifact: 'drop'
 ```
 
-- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](./build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
+- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](../build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
 
 - **publishLocation**: (Required). Artifacts publish location: choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline.
 
@@ -38,7 +38,7 @@ You can use [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/
 
 1. From your pipeline definition, select + to add a new task.
 
-1. Search for the **Publish Pipeline Artifacts** task :::image type="icon" source="tasks/utility/media/publish-pipeline-artifact.png" border="false"::: and then select **Add** to add it to your pipeline.
+1. Search for the **Publish Pipeline Artifacts** task :::image type="icon" source="../tasks/utility/media/publish-pipeline-artifact.png" border="false"::: and then select **Add** to add it to your pipeline.
 
 1. Fill out the following fields:
     - **Display name**: the task display name.
@@ -46,7 +46,7 @@ You can use [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/
     - **Artifact name**: name of the Artifact to publish.
     - **Artifact publish location**: choose whether to store the Artifact in Azure Pipelines, or to copy it to a file share.
 
-    :::image type="content"  source="./media/publish-pipeline-artifacts.png" alt-text="Publish Pipeline Artifacts task":::    
+    :::image type="content"  source="../media/publish-pipeline-artifacts.png" alt-text="Publish Pipeline Artifacts task":::    
 
 ---
 
@@ -70,16 +70,16 @@ When your pipeline run is completed, you can view or download your published Art
 
 1. Select the published Artifact in the related section.
 
-    :::image type="content"  source="./media/published-artifact.png" alt-text="View published Artifact"::: 
+    :::image type="content"  source="../media/published-artifact.png" alt-text="View published Artifact"::: 
 
 1. Expand the drop folder and find your Artifact.
 
-    :::image type="content"  source="./media/drop-artifacts.png" alt-text="View the drop content":::
+    :::image type="content"  source="../media/drop-artifacts.png" alt-text="View the drop content":::
 
 1. Download your pipeline Artifact and explore its content.
 
 ## Related articles
 
 - [Releases in Azure Pipelines](/rest/api/azure/devops/release/releases)
-- [Multi-stage release pipeline](./release/define-multistage-release-process.md)
-- [Deploy from multiple branches](./release/deploy-multiple-branches.md)
+- [Multi-stage release pipeline](define-multistage-release-process.md)
+- [Deploy from multiple branches](deploy-multiple-branches.md)

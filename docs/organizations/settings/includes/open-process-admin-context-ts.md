@@ -7,19 +7,20 @@ ms.date: 08/03/2022
 
 <a id="open-process-wit">  </a>
 
-## Open Settings > Process
+## Open organization process settings
 
 ::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Screenshot showing Organization settings button highlights.](../../../media/settings/open-admin-settings-vert.png) 
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot showing Organization settings button highlights.](../../../media/settings/open-admin-settings-vert.png) 
 
 3. Select **Process**. 
    
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Process button for selection.](../work/media/process/open-process-page-s150.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot showing highlighted Process button for selection.](../work/media/process/open-process-page-s150.png) 
 
 ::: moniker-end
 
@@ -29,7 +30,7 @@ ms.date: 08/03/2022
 2. Select **Collection Settings** or **Admin settings**.
 3. Select **Process**. 
    
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Process button in Collection settings.](../work/media/process/open-process-2020.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot showing highlighted Process button in Collection settings.](../work/media/process/open-process-2020.png) 
 
 ::: moniker-end
