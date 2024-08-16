@@ -6,7 +6,7 @@ ms.date: 11/8/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Advanced Security displays Code Scanning alerts for third-party tools that produce SARIF 
+description: Advanced Security displays Code Scanning alerts for third party tools that produce SARIF 
 hide_comments: true
 ---
 
