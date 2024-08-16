@@ -105,7 +105,7 @@ This sample does the following tasks:
 * Create the DevOps resources
 * Run the pipeline
 * Modify the variable values three times
-* Run the pipeline again each time the variable values
+* Run the pipeline again each time the variable values are changed
 
 The script creates the following resources in Azure DevOps:
 
@@ -213,7 +213,7 @@ read -p "Press Enter to continue:"
 
 To avoid incurring charges for the Azure project, you can delete the sample project, which also deletes its resource.
 
-Copy the id of the sample project from the output of the following command:
+Copy the `id` of the sample project from the output of the following command:
 
 ```azurecli
 az devops project list --org <your-organization>
@@ -239,6 +239,7 @@ The sample in this article uses the following Azure CLI commands:
 - [az devops configure](/cli/azure/devops#az-devops-configure)
 - [az devops project create](/cli/azure/devops/project#az-devops-project-create)
 - [az devops project delete](/cli/azure/devops/project#az-devops-project-delete)
+- [az devops project delete](/cli/azure/devops/project#az-devops-project-list)
 - [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az-devops-service-endpoint-github-create)
 - [az login](/cli/azure/reference-index#az-login)
 - [az pipelines create](/cli/azure/pipelines#az-pipelines-create)

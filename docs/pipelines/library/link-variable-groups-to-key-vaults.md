@@ -1,6 +1,6 @@
 ---
-title: Link variable groups to secrets in Azure key vaults
-description: Link pipeline variable groups to secrets in Azure key vaults.
+title: Link a variable group to secrets in Azure Key Vault
+description: Create a variable group that links to secrets in a Azure key vault.
 ms.topic: tutorial
 ms.author: v-catherbund
 author: cebundy
@@ -8,9 +8,9 @@ ms.date: 08/25/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Link variable groups to secrets in Azure key vaults
+# Link a variable group to secrets in Azure Key Vault
 
-This article shows you how to create a variable group that links to secrets stored in Azure Key Vaults.  You can access secrets in a key vault from your pipelines by linking to a variable group that maps the secrets to variables. By linking the variable group to the key vault, you can ensure that your pipelines always have access to the latest secret values at runtime.
+This article shows you how to create a variable group that links to secrets stored in an Azure key vault. By linking the variable group to the key vault, you can ensure that your secrets are stored securely and your pipelines always have access to the latest secret values at runtime.
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

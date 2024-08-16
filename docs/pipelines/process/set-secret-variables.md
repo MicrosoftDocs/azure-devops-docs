@@ -104,7 +104,7 @@ Variable groups follow the [library security model](../library/index.md#library-
 
 ### Link secrets from an Azure key vault
  
-You can link your variable groups to an existing Azure Key Vault. This allows you to map selected Key Vault secrets to the variable group. Only the secret names are mapped to the variable group, not the secret values. Pipeline runs that link to the variable group fetch the latest secret values from the vault.  For more infomration, see [Link variable groups to secrets in Azure key vaults](../library/link-variable-groups-to-key-vaults.md).
+You can link your variable groups to an existing Azure Key Vault. This allows you to map selected Key Vault secrets to the variable group. Only the secret names are mapped to the variable group, not the secret values. Pipeline runs that link to the variable group fetch the latest secret values from the vault.  For more infomration, see [Link a variable group to secrets in Azure Key Vault](../library/link-variable-groups-to-key-vaults.md).
 
 
 ## Use the Azure Key Vault task

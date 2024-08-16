@@ -45,7 +45,7 @@ Create an Azure key vault.
 1. In your Azure DevOps project, select **Pipelines** > **Library** > **+ Variable group**.
 1. On the **Variable groups** page, enter a name and optional description for the variable group.
 1. Enable the **Link secrets from an Azure key vault as variables** toggle.
-1. Select your service connection and select **Authorize**
+1. Select your service connection and select **Authorize**.
 1. Select your key vault name and enable Azure DevOps to access the key vault by selecting **Authorize** next to the vault name.
 1. Select **+ Add** and on the **Choose secrets** screen, select the secrets from your vault for mapping to this variable group, then select **OK**.
 1. Select **Save** to save the secret variable group.

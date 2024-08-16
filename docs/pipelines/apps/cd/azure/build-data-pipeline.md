@@ -270,7 +270,7 @@ You'll use Azure Key Vault to store all connection information for your Azure se
    ```
 
 1. Create a second variable group named `keys-vg`. This group will pull data variables from Key Vault. 
-1. Select **Link secrets from an Azure key vault as variables**. For more information, see [Link variable groups to secrets in Azure key vaults](../../../library/link-variable-groups-to-key-vaults.md). 
+1. Select **Link secrets from an Azure key vault as variables**. For more information, see [Link a variable group to secrets in Azure Key Vault](../../../library/link-variable-groups-to-key-vaults.md). 
 1. Authorize the Azure subscription. 
 1. Choose all of the available secrets to add as variables (`databricks-token`,`StorageConnectString`,`StorageKey`).
 
