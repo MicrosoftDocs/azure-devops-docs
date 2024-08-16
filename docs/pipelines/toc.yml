@@ -162,7 +162,7 @@
       - name: Manage variable groups
         displayName: Azure key vault, link secrets, expansion, expand variables
         href: library/variable-groups.md
-      - name: Link a variable groups to Azure Key Vault
+      - name: Link a variable group to Azure Key Vault
         displayName: Azure key vault, link secrets, expansion, expand variables
         href: library/link-variable-groups-to-key-vaults.md
       - name: Manage variables in variable groups
