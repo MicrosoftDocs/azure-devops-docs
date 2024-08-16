@@ -45,7 +45,7 @@ If you are using Marketplace tasks or custom tasks to deploy to Azure, please be
 
 Tasks that take a `connectedService:AzureRM` input in [task.json](/azure/devops/extend/develop/integrate-build-task#custom-build-task-json) can be updated to support workload identity federation by following these steps:
 
-*  Utilize the [Oidctoken REST API](/rest/api/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.2) to request an idToken (arrow 1 in above diagram).
+*  Utilize the [Oidctoken REST API](/rest/api/azure/devops/distributedtask/oidctoken/create?view=azure-devops-rest-7.2&preserve-view=true) to request an idToken (arrow 1 in above diagram).
 *   Exchange the idToken for an access token using the federated credential flow of the [OAuth API](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential), specifying the idToken as `client_assertion` (arrows 2 & 4 in above diagram);  
     or:
 *   For tasks that act as a wrapper around a tool that performs authentication itself, use the tools' authentication method to specify the federated token.
@@ -147,7 +147,7 @@ variables:
 
 ### DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode
 
-Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents July 24 2024. We have updated the [DockerCompose@0](/azure/devops/pipelines/tasks/reference/docker-compose-v0?view=azure-pipelines) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available on the agent.
+Docker Compose v1 will reach its end-of-life and will be removed from Hosted Agents July 24 2024. We have updated the [DockerCompose@0](/azure/devops/pipelines/tasks/reference/docker-compose-v0) task to use Docker Compose v2 in v1 compatibility mode if Docker Compose v1 is not available on the agent.
 
 However, compatibility mode does not address all compatibility issues. See [Migrate to Compose V2](https://docs.docker.com/compose/migrate/). Some users will need more time to update their Docker Compose projects for Docker Compose v2 compatibility. In those cases, follow these instructions to use the **DockerComposeV0** task with **docker-compose v1**.
 
