@@ -13,7 +13,7 @@ ms.custom: devx-track-azurecli
 
 # Manage variables in variable groups with the Azure DevOps CLI
 
-![INCLUDE [version-gt-2022](../../../includes/version-gt-2022.md)]
+[!INCLUDE [version-gt-2022](../../../includes/version-gt-2022.md)]
 
 Managing variables in Azure Pipelines is crucial for maintaining flexibility and security in your CI/CD workflows. This guide demonstrates how to use the Azure DevOps CLI to create and manage both secret and nonsecret variables within an Azure Pipelines variable group. By using variable groups, you can centralize the management of variables and ensure that sensitive information is securely handled.
 
