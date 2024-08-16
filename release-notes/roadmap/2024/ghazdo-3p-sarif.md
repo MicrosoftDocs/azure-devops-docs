@@ -1,5 +1,5 @@
 ---
-title: Third party SARIF support
+title: Third-party SARIF support
 author: sull8000
 ms.author: bryans
 ms.date: 11/8/2023

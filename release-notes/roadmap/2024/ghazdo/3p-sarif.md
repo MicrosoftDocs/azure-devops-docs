@@ -1,5 +1,5 @@
 ---
-title: Third-party SARIF support
+title: Third party SARIF support
 author: sull8000
 ms.author: bryans
 ms.date: 11/8/2023
@@ -10,6 +10,6 @@ description: Advanced Security displays Code Scanning alerts for third-party too
 hide_comments: true
 ---
 
-# Advanced Security displays Code Scanning alerts for third-party tools that produce SARIF
+# Advanced Security displays Code Scanning alerts for third party tools that produce SARIF
 
 Code Scanning results from arbitrary third-party scanning tools that produce conforming SARIF will appear in the Advanced Security Code Scanning alert hub.

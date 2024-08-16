@@ -7,7 +7,7 @@ ms.topic: include
 
 ###  Resolved issue that allowed users to bypass restrict global personal access token (PAT) creation
 
-Resolved an issue that allowed users to bypass the ["Restrict global personal access token creation" organization policy](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators?view=azure-devops#restrict-creation-of-global-pats) by using the Visual Studio client.
+Resolved an issue that allowed users to bypass the ["Restrict global personal access token creation" organization policy](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators#restrict-creation-of-global-pats) by using the Visual Studio client.
 
 Any global PATs, i.e. PATs that can access multiple organizations, that have been created using this API will remain active after this gap has been closed. If you are a tenant admin (an Azure DevOps Administrator in Azure AD), you can deactivate these PATs using the Token Administration APIs.
 
