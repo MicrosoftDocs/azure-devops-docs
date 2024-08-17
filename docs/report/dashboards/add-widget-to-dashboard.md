@@ -59,7 +59,7 @@ To add widgets to the dashboard, select :::image type="icon" source="media/icons
 
 The [widget catalog](widget-catalog.md) automatically opens. Add all the widgets that you want and drag their tiles into the sequence you want. 
 
-When you're finished with your additions, select  **Done editing** to exit dashboard editing. The widget catalog closes. You can then [configure the widgets](#configure) as needed.
+When you finish your additions, select  **Done editing** to exit dashboard editing. The widget catalog closes. You can then [configure the widgets](#configure) as needed.
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.
@@ -79,6 +79,8 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 ::: moniker range=">= azure-devops-2019"
 
 ## Add an Analytics widget
+
+Analytics widget data is calculated from the Analytics service. The Analytics service must be installed and enabled for your organization or on-premises Azure DevOps Server.
 
 This example shows how to add the Velocity widget available from Analytics to a dashboard. 
 
@@ -138,7 +140,7 @@ To remove a widget, select the ![actions icon](../../media/icons/actions-icon.pn
 
 :::image type="content" source="media/dashboards/delete-widget.png" alt-text="Screenshot of delete widget from a dashboard."::: 
 
-When you're finished with your changes, select  **Done Editing** to exit dashboard editing.
+When you finish your changes, select  **Done Editing** to exit dashboard editing.
   
 ::: moniker-end
 
