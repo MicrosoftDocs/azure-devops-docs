@@ -1,12 +1,12 @@
 ---
 title: Provision agents for deployment groups
 ms.custom: devx-track-arm-template
-description: How to provision agents for deployment groups in Azure Pipelines
+description: Learn how to install and provision deployment agents on machines in an Azure Pipelines deployment group.
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.topic: how-to
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/04/2021
+ms.date: 08/18/2024
 monikerRange: '<= azure-devops'
 ---
 

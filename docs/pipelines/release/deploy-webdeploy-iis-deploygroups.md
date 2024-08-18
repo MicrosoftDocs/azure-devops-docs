@@ -1,6 +1,6 @@
 ---
 title: Deploy apps to an IIS server on a Windows VM (Classic)
-description: Deploy web apps to an IIS web server on a Windows virtual machine using Deployment Groups.
+description: Deploy web apps to an IIS web server on a Windows virtual machine using deployment groups.
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.author: ronai
