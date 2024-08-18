@@ -1,15 +1,15 @@
 ---
-title: Deploy apps to an IIS server on a Windows VM (Classic)
-description: Deploy web apps to an IIS web server on a Windows virtual machine using deployment groups.
+title: Deploy web apps to an IIS server on a Windows VM
+description: Use deployment groups with a Classic pipeline to deploy web apps to an IIS web server on a Windows virtual machine.
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.author: ronai
 author: RoopeshNair
-ms.date: 04/25/2022
+ms.date: 08/18/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Deploy web apps to a Windows virtual machine
+# Deploy web apps to an IIS server on a Windows VM
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
