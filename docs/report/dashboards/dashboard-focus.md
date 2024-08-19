@@ -143,9 +143,9 @@ The following table describes the dashboard types:
     - **My backlog by work item type:** Work assigned to `@Me` by type (query chart). 
     - **New work < 7 days:** Active work assigned to `@Me` and `Created Date >= @Today-7` (query chart).<br>
    Select any query tile or widget to quickly navigate to the query and view a complete list of work items. Consider adding the following widgets to the personal focus dashboard:
-   - **New Work Item**: Create new work items.
-   - **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
-   - **Assigned to Me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
+     - **New work item**: Create new work items.
+     - **Work links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
+     - **Assigned to me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
    :::image type="content" source="media/dashboard-focus/work-assigned-to-me.png" alt-text="Screenshot of Dashboard, Assigned to me widget.":::
    :::column-end:::
 :::row-end:::
@@ -157,18 +157,18 @@ The following table describes the dashboard types:
    :::column-end:::
    :::column span="2":::
    Create your team dashboard to help members meet goals, monitor status, track progress, identify bottlenecks, and ensure backlog items are well defined. Include one or more of the following team-scoped widgets:<br>
-  - [CFD chart](cumulative-flow.md)<br>
-  - [Velocity](team-velocity.md)<br>
-  - [Cycle time](cycle-time-and-lead-time.md)<br>
-  - [Lead time](cycle-time-and-lead-time.md)<br>
+    - [CFD chart](cumulative-flow.md)<br>
+    - [Velocity](team-velocity.md)<br>
+    - [Cycle time](cycle-time-and-lead-time.md)<br>
+    - [Lead time](cycle-time-and-lead-time.md)<br>
    Velocity helps teams understand how well they're planning and executing sprints. Lead and cycle time show the average time for work to move from inception to completion. Consider adding a [pivot table](charts.md#add-a-pivot-table) to quickly see the number of work items and their assignments. Use these charts to determine if the team needs to better balance the workload.<br>
   :::image type="content" source="media/dashboard-focus/load-balance-work.png" alt-text="Screenshot of Dashboard, Assigned work pivot and stacked bar chart widgets.":::<br>
    If your team manages code, tests, builds, and releases using Azure DevOps, add these widgets to your team dashboard:<br>
-  - [Code tile](widget-catalog.md#code-tile-widget)<br>
-  - [Test results trend (Advanced)](widget-catalog.md#test-results-trend-advanced)<br>
-  - [Pull request (Team)](widget-catalog.md#pull-request-widget)<br>
-  - [Build history](widget-catalog.md#build-history-widget)<br>
-  - [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
+    - [Code tile](widget-catalog.md#code-tile-widget)<br>
+    - [Test results trend (Advanced)](widget-catalog.md#test-results-trend-advanced)<br>
+    - [Pull request (Team)](widget-catalog.md#pull-request-widget)<br>
+    - [Build history](widget-catalog.md#build-history-widget)<br>
+    - [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -212,12 +212,12 @@ The following table describes the dashboard types:
     - [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
     - [Release Pipeline overview](widget-catalog.md#release-definition-widget)
     - [Requirements quality](widget-catalog.md#requirements-quality-widget)<br>
-    **Build History**
-    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::<br>
-    **Release pipeline overview**
-    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::<br>
-    **Deployment status** 
-    :::image type="content" source="media/dashboard-focus/deployment-status-widget.png" alt-text="Screenshot of Deployment status widget.":::
+   **Build History**
+   :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::<br>
+   **Release pipeline overview**
+   :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::<br>
+   **Deployment status** 
+   :::image type="content" source="media/dashboard-focus/deployment-status-widget.png" alt-text="Screenshot of Deployment status widget.":::
    :::column-end:::
 :::row-end:::
 
