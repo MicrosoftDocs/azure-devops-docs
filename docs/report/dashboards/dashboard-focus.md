@@ -34,7 +34,7 @@ The focus of your dashboard determines whether you create a team or project dash
 |[**Team**](#team-dashboard)|Provide information for a team to monitor status, track progress, identify bottlenecks, and ensure backlog items are well defined. |Team |
 |[**Sprint**](#sprint-dashboard)|Review in daily stand-ups to ensure the team is on track to meet sprint goals and address any issues that affect those goals.|Team |
 |[**Release**](#release-dashboard)|Monitor status and track progress toward a major release that might involve contributions from several teams. |Project |
-|[**Test and deploy**](#test-and-deploy-dashboard)| Monitor continuous integration, builds, deployments, and releases. | Project or Team|  
+|[**Test and deploy**](#test-deploy-dashboard)| Monitor continuous integration, builds, deployments, and releases. | Project or Team|  
 
 ::: moniker-end 
 
@@ -129,26 +129,25 @@ The following table describes the dashboard types:
    :::column-end:::
    :::column span="2":::
    Set up a personal focus dashboard for all team members using the **Assigned to me** widget and other query tiles or charts that reference an `Assigned To = @Me` query clause.<br>
-    The following image shows a personal dashboard titled *My Work Focus*. Each team member can review this dashboard for work assigned to them, work they're following, or work where they're mentioned.<br>
-    :::image type="content" source="media/dashboard-focus/my-work-focus.png" alt-text="Screenshot of Dashboard work query tiles and query charts.":::<br>
-    The following table provides more information for each widget shown in the dashboard. For details on constructing queries for these examples, see [Example query charts](../../boards/queries/example-query-charts.md).<br>
-    | **Title** | **Description** | **Widget type** |
-    |-----------|-----------------|--------------------|
-    | Current sprint | Work assigned to `@Me` for the current sprint. | Query tile |
-    | Next sprint |Work assigned to `@Me`  for the next sprint. | Query tile |
-    | Completed last sprint |Work completed last sprint assigned to `@Me`. | Query tile |
-    | My backlog | Work assigned to `@Me` new, proposed, or active. | Query tile |
-    | I created last 30 days |Active work with the following clauses: `Created By = @Me` and `Created Date >= @Today-30`.| Query tile |
-    | I recently updated|Active work whose `ID In @MyRecentActivity`. | Query tile |
-    | Work I'm following|Active work whose `ID In @MyFollows`. | Query tile |
-    | My backlog by state|Stacked area chart showing work assigned to `@Me` by for the past four weeks. | Query chart |
-    | My work - Current sprint by work item type |Active work by type assigned to `@Me` for the current sprint. | Query chart |
-    | My backlog by work item type |Work assigned to `@Me` by type. | Query chart|
-    | New work < 7 days  |Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
-    <br>
-    > [!TIP]
-    > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
-    Consider adding the following widgets to the personal focus dashboard:
+   The following image shows a personal dashboard titled *My Work Focus*. Each team member can review this dashboard for work assigned to them, work they're following, or work where they're mentioned.<br>
+   :::image type="content" source="media/dashboard-focus/my-work-focus.png" alt-text="Screenshot of Dashboard work query tiles and query charts.":::<br>
+   The following table provides more information for each widget shown in the dashboard. For details on constructing queries for these examples, see [Example query charts](../../boards/queries/example-query-charts.md).<br>
+   | **Title** | **Description** | **Widget type** |
+   |-----------|-----------------|--------------------|
+   | Current sprint | Work assigned to `@Me` for the current sprint. | Query tile |
+   | Next sprint |Work assigned to `@Me`  for the next sprint. | Query tile |
+   | Completed last sprint |Work completed last sprint assigned to `@Me`. | Query tile |
+   | My backlog | Work assigned to `@Me` new, proposed, or active. | Query tile |
+   | I created last 30 days |Active work with the following clauses: `Created By = @Me` and 'Created Date >= @Today-30`.| Query tile |
+   | I recently updated|Active work whose `ID In @MyRecentActivity`. | Query tile |
+   | Work I'm following|Active work whose `ID In @MyFollows`. | Query tile |
+   | My backlog by state|Stacked area chart showing work assigned to `@Me` by for the past four weeks. | Query chart |
+   | My work - Current sprint by work item type |Active work by type assigned to `@Me` for the current sprint. | Query chart |
+   | My backlog by work item type |Work assigned to `@Me` by type. | Query chart|
+   | New work < 7 days  |Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
+   > [!TIP]
+   > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
+   Consider adding the following widgets to the personal focus dashboard:
     - **New Work Item**: Create new work items.
     - **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
     - **Assigned to Me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
