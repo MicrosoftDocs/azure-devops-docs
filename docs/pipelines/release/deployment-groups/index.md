@@ -14,12 +14,12 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to create and use deployment groups for Classic release pipelines in Azure Pipelines. Similar to an [agent pool](../agents/pools-queues.md), a deployment group is a logical set of target machines that each have a deployment agent installed.
+This article explains how to create and use deployment groups for Classic release pipelines in Azure Pipelines. Similar to an [agent pool](../../agents/pools-queues.md), a deployment group is a logical set of target machines that each have a deployment agent installed.
 
 Deployment groups can represent environments such as "Development," "Test," or "Production." Every physical or virtual machine (VM) in the deployment group interacts with Azure Pipelines to coordinate the deployment tasks.
 
 >[!NOTE]
->Deployment groups are available only for Classic release pipelines and are different from [deployment jobs](../process/deployment-jobs.md), which are collections of task-related steps defined in YAML pipelines.
+>Deployment groups are available only for Classic release pipelines and are different from [deployment jobs](../../process/deployment-jobs.md), which are collections of task-related steps defined in YAML pipelines.
 
 By using deployment groups, you can:
 
@@ -31,7 +31,7 @@ By using deployment groups, you can:
 ## Prerequisites
 
 - An Azure DevOps organization and project.
-- At least one Windows or Linux physical or virtual machine to use as a deployment target.
+- Administrative access to at least one Windows or Linux physical or virtual machine to use as a deployment target.
 
 ## Create a deployment group
 
@@ -57,23 +57,25 @@ To create a deployment group:
 
 ## Register target servers
 
-To register target servers:
+To register each target server in the deployment group:
 
-1. Sign in to each machine in the group and run the copied script from an elevated PowerShell command prompt.
+1. Sign in to the machine with an administrative account and run the copied script. For Windows machines, use an elevated PowerShell command prompt.
 
    :::image type="content" source="media/register-servers.png" alt-text="A screenshot that shows registering deployment groups servers.":::
 
-1. To assign tags that let you limit deployments to certain servers in a [deployment group job](../../process/deployment-group-phases.md), enter *Y* when prompted to enter tags, and then enter a tag or tags. Tags are limited to 256 characters each, are case insensitive, and there's no limit to the number of tags you can use.
+1. To assign tags that let you limit deployments to certain servers in a [deployment group job](../../process/deployment-group-phases.md), enter *Y* when prompted to enter tags, and then enter a tag or tags.
+
+   Tags are limited to 256 characters each, are case insensitive, and there's no limit to the number of tags you can use.
 
 After you set up a target server, the script should return the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.
 
 ## Install and upgrade agents
 
-Every target server in the deployment group requires a deployment agent. The generated registration script for target servers installs an agent. You can also use the following methods to install agents:
+Every target server in the deployment group requires a deployment agent. The generated registration script for target servers installs an agent. Alternatively, you can use the following methods to install agents:
 
 - If the target servers are Azure VMs, you can easily set up your servers by [installing the Azure Pipelines agent extension](./howto-provision-deployment-group-agents.md#install-the-azure-pipelines-agent-azure-vm-extension) on each VM.
 
-- You can use the [AzureResourceGroupDeploymentV2](./howto-provision-deployment-group-agents.md#use-the-azureresourcegroupdeploymentv2) in your release pipeline to create and register a deployment group dynamically.
+- You can use the [AzureResourceGroupDeploymentV2 task](./howto-provision-deployment-group-agents.md#use-the-azureresourcegroupdeploymentv2-task) in your release pipeline to create and register a deployment group dynamically.
 
 For more information about these methods, see [Provision agents for deployment groups](howto-provision-deployment-group-agents.md).
 
@@ -85,9 +87,9 @@ To upgrade the agents on target servers to the latest version without having to 
 
 A deployment pool is a set of target servers that are available to the entire Azure DevOps organization. To create and update deployment pools, you need Project Collection Administrator permissions in the Azure DevOps organization.
 
-When an organization administrator creates a new deployment pool for an organization, they can automatically provision corresponding deployment groups for selected or all projects in the organization. These deployment groups have the same target servers as the deployment pool.
+When you create a new deployment pool for an organization, you can automatically provision corresponding deployment groups for selected projects or all projects in the organization. These deployment groups have the same target servers as the deployment pool.
 
-Organization administrators can manually trigger an agent version upgrade for all servers in the pool by selecting the **More actions** ellipsis next to the deployment pool in **Deployment pools** and selecting **Update targets**.
+You can manually trigger an agent version upgrade for all servers in the pool by selecting the **More actions** ellipsis next to the deployment pool in **Deployment pools** and selecting **Update targets**.
 
 :::image type="content" source="media/update-targets-pools.png" alt-text="A screenshot showing how to update targets in deployment pools.":::
 
@@ -107,7 +109,7 @@ You can share deployment groups with other projects in the organization. To prov
 
    :::image type="content" source="media/manage-deployment-group.png" alt-text="A screenshot showing Manage in the deployment group.":::
 
-1. Select projects from the list and then select **Save**.
+1. Select projects from the list to share to, and then select **Save**.
 
    :::image type="content" source="media/deployment-group-share-with-project.png" alt-text="A screenshot showing sharing a deployment group with a project.":::
 

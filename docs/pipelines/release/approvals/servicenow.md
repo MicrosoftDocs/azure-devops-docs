@@ -1,28 +1,28 @@
 ---
 title: Integrate with ServiceNow change management
-description: Learn how to integrate ServiceNow and the Azure Pipelines ServiceNow extension to configure gated releases in Azure Pipelines.
+description: Learn how to integrate ServiceNow change management by using gated releases with the Azure Pipelines ServiceNow extension.
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: tutorial
 ms.author: ericvan
 author: geekzter
-ms.date: 08/17/2024
+ms.date: 08/19/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Integrate with ServiceNow change management
+# Integrate Azure Pipelines with ServiceNow change management
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This tutorial explains how to integrate Azure Pipelines with ServiceNow change management by using gated releases. Teams can follow service management methodologies such as Information Technology Infrastructure Library (ITIL) while taking full advantage of Azure Pipelines. Including change management in release pipelines helps improve collaboration between development and IT teams and reduce the risks associated with changes.
+To improve collaboration between development and IT teams, Azure Pipelines supports integration with ServiceNow. Teams can reduce the risks associated with changes and follow service management methodologies such as Information Technology Infrastructure Library (ITIL) by including change management in gated release pipelines.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
 > - Configure ServiceNow instances.
-> - Include ServiceNow change management process as a release gate.
-> - Monitor change management process from release pipelines.
+> - Include the ServiceNow change management process as a release gate.
+> - Monitor the change management process from release pipelines.
 > - Keep ServiceNow change requests updated with deployment results.
 
 ## Prerequisites 
@@ -44,13 +44,11 @@ In this tutorial, you learn how to:
 
 1. Install the [ServiceNow Change Management extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) on your Azure DevOps organization.
 
-    :::image type="content" source="media/servicenow-02.png" alt-text="A screenshot showing the ServiceNow Change Management extension.":::
+   :::image type="content" source="media/servicenow-02.png" alt-text="A screenshot showing the ServiceNow Change Management extension.":::
 
-1. In your Azure DevOps project, create a new ServiceNow service connection by following instructions at [Create a service connection](../../library/service-endpoints.md#create-a-service-connection).
+1. In your Azure DevOps project, create a new ServiceNow service connection by using either **Basic authentication** or [OAuth2 authentication](https://github.com/microsoft/azure-pipelines-extensions/blob/master/Extensions/ServiceNow/Src/readme.md#create-service-connection-for-servicenow-in-azure-pipelines). For more information, see [Create a service connection](../../library/service-endpoints.md#create-a-service-connection).
 
-    :::image type="content" source="media/servicenow-03.png" alt-text="A screenshot showing how to configure ServiceNow service connection.":::
-
-   Alternatively, you can use [OAuth2 authentication](https://github.com/microsoft/azure-pipelines-extensions/blob/master/Extensions/ServiceNow/Src/readme.md#create-service-connection-for-servicenow-in-azure-pipelines).
+   :::image type="content" source="media/servicenow-03.png" alt-text="A screenshot showing how to configure ServiceNow service connection.":::
 
 #### [Classic](#tab/classic/)
 
@@ -62,45 +60,47 @@ In this tutorial, you learn how to:
  
    :::image type="content" source="media/servicenow-04.png" alt-text="A screenshot showing how to add a pre-deployment gate.":::
 
-1. Under **ServiceNow connection**, select the ServiceNow service connection you created earlier.
+1. In the **ServiceNow Change Management** settings, under **ServiceNow connection**, select the ServiceNow service connection you created earlier.
 
-1. Fill out or select the rest of the fields as follows:
+1. Complete the rest of the fields as follows:
 
    |Setting|Description|
    |-------|-----------|
-   | **Short description** | A summary of the change.|
-   | **Description** | A detailed description of the change.|
-   | **Category** | The category of the change, for example **Hardware**, **Network**, or **Software**.|
+   | **Action** | Select **Create new change request** or **Use existing change request**.
+   | **Change type** | Select **Normal**, **Standard**, or **Emergency**.
+   | **Short description** | Enter a summary of the change.|
+   | **Schedule of change request** | Schedule of the change as honored by the ServiceNow workflow. Under **Planned start date** and **Planned end date**, enter UTC date and time in format *yyyy-MM-ddTHH:mm:ssZ*.|
+   |**Optional inputs**|
+   | **Description** | Detailed description of the change.|
+   | **Category** | Category of the change, such as **Hardware**, **Network**, or **Software**.|
    | **Priority** | Priority of the change.|
-   | **Risk** | The risk level for the change.|
-   | **Impact** | The effect that the change has on business.|
-   | **Configuration Item** | Configuration item that the change applies to.|
-   | **Assignment group** |  The group that the change is assigned to.|
-   | **Schedule of change request** | Schedule of the change as honored by the ServiceNow workflow. UTC date and time in format *yyyy-MM-ddTHH:mm:ssZ*.
-   | **Additional change request parameters** | Name must be field name, not label, prefixed with 'u_', such as *u_backout_plan*. Value must be valid in ServiceNow. Invalid entries are ignored.
-   | **Advanced** | An expression that controls when this gate should succeed. The change request is defined as `root['result']` in the response from ServiceNow. For example `and(eq(root['result'].state, 'New'),eq(root['result'].risk, 'Low'))`. For more information, see [Expressions](../../process/expressions.md).
+   | **Risk** | Risk level for the change.|
+   | **Impact** | Effect that the change has on business.|
+   | **Configuration item** | Configuration item that the change applies to.|
+   | **Assignment group** |  Group that the change is assigned to.|
+   | **Advanced** > **Additional change request parameters** | Select the ellipsis and then select **Add**. Name must be field name, not label, prefixed with `u_`, such as `u_backout_plan`. Value must be valid in ServiceNow. Invalid entries are ignored.|
+   | **Success criteria** | Select either **Desired state of change request** or **Advanced success criteria**.
    | **Desired state of change request** | The gate succeeds and the pipeline continues when the change request status is this value.
-   | **Output Variables**  | To be able to use output variables in your deployment workflow, you must specify a reference name. You can access gate variables by using `PREDEPLOYGATE` as a prefix in an agentless job. For example, when the reference name is set to *gate1*, you can get the change request number by using the variable | `$(PREDEPLOYGATE.gate1.CHANGE_REQUEST_NUMBER)`.
-   | **CHANGE_REQUEST_NUMBER**  | Number of the change request.
-   | **CHANGE_SYSTEM_ID**  | System Id of the change request.
+   | **Advanced success criteria** | An expression that controls when this gate should succeed. The change request is defined as `root['result']` in the response from ServiceNow. For example, `and(eq(root['result'].state, 'New'),eq(root['result'].risk, 'Low'))`. For more information, see [Expressions](../../process/expressions.md).
+   | **Output Variables** |
+   | **Reference name** | To be able to use output variables in your deployment workflow, you must specify a reference name. You can access gate variables by using `PREDEPLOYGATE` as a prefix in an agentless job. For example, when the reference name is set to *gate1*, you can get the change request number by using the variable `$(PREDEPLOYGATE.gate1.CHANGE_REQUEST_NUMBER)`.
+   | **Variables list** | **CHANGE_REQUEST_NUMBER** is the number of the change request.<br> **CHANGE_SYSTEM_ID** is the System ID of the change request.|
 
-   :::image type="content" source="media/servicenow-05.png" alt-text="A screenshot showing how to configure the ServiceNow Change Management gate.":::
+   :::image type="content" source="media/servicenow-newform.png" alt-text="A screenshot showing how to configure the ServiceNow Change Management gate.":::
 
 1. At the end of your release pipeline, add an **Agentless job** with the task **Update ServiceNow Change Request**.
 
-1. Configure the settings as follows:
-
-   - **ServiceNow connection**: ServiceNow service connection.
-   - **Change request number**: Change request number to update.
-   - Select **Update status**, and then under **Updated status of change request**, choose or enter the status to set for the change request.
-   - **Work Notes** under **Advanced**: Work notes to be added for the change request update.
+1. In the settings form, under **ServiceNow connection**, select your ServiceNow service connection.
+1. Under **Change request number**, enter the ServiceNow change request number to update.
+1. Select **Update status**, and then under **Updated status of change request**, choose or enter the status to set for the change request.
+1. In **Work Notes** under **Advanced**, optionally enter any work notes to be added for the change request update.
 
     :::image type="content" source="media/servicenow-06.png" alt-text="A screenshot showing how to configure the Update ServiceNow Change Request task.":::
 
 > [!NOTE]
-> The Update ServiceNow Change Request task fails if none of the change request fields are updated during execution. ServiceNow ignores invalid fields and values passed to the task. 
+> The Update ServiceNow Change Request task fails if none of the change request fields are updated during execution. ServiceNow ignores invalid fields and values passed to the task.
 
-## Create a release pipeline
+## Create a release
 
 Select **Create release** to start a new release.
 
@@ -136,33 +136,37 @@ The change request closes automatically after deployment.
 
     :::image type="content" source="media/servicenow-12.png" alt-text="A screenshot showing how to add a ServiceNow Change Management check.":::
 
-1. Under **ServiceNow connection**, select the ServiceNow service connection you created earlier.
+1. In the **ServiceNow Change Management** settings, under **ServiceNow connection**, select the ServiceNow service connection you created earlier.
 
-1. Fill out or select the rest of the fields as follows:
+1. Complete the rest of the fields as follows:
 
    |Setting|Description|
    |-------|-----------|
-   | **Short description** | A summary of the change.|
-   | **Description** | A detailed description of the change.|
-   | **Category** | The category of the change, for example **Hardware**, **Network**, or **Software**.|
+   | **Action** | Select **Create new change request** or **Use existing change request**.
+   | **Change type** | Select **Normal**, **Standard**, or **Emergency**.
+   | **Short description** | Enter a summary of the change.|
+   | **Schedule of change request** | Schedule of the change as honored by the ServiceNow workflow. Under **Planned start date** and **Planned end date**, enter UTC date and time in format *yyyy-MM-ddTHH:mm:ssZ*.|
+   |**Optional inputs**|
+   | **Description** | Detailed description of the change.|
+   | **Category** | Category of the change, such as **Hardware**, **Network**, or **Software**.|
    | **Priority** | Priority of the change.|
-   | **Risk** | The risk level for the change.|
-   | **Impact** | The effect that the change has on business.|
-   | **Configuration Item** | Configuration item that the change applies to.|
-   | **Assignment group** |  The group that the change is assigned to.|
-   | **Schedule of change request** | Schedule of the change as honored by the ServiceNow workflow. UTC date and time in format *yyyy-MM-ddTHH:mm:ssZ*.
-   | **Additional change request parameters** | Name must be field name, not label, prefixed with 'u_', such as *u_backout_plan*. Value must be valid in ServiceNow. Invalid entries are ignored.
-   | **Advanced** | An expression that controls when this gate should succeed. The change request is defined as `root['result']` in the response from ServiceNow. For example `and(eq(root['result'].state, 'New'),eq(root['result'].risk, 'Low'))`. For more information, see [Expressions](../../process/expressions.md).
+   | **Risk** | Risk level for the change.|
+   | **Impact** | Effect that the change has on business.|
+   | **Configuration item** | Configuration item that the change applies to.|
+   | **Assignment group** |  Group that the change is assigned to.|
+   | **Advanced** > **Additional change request parameters** | Select the ellipsis and then select **Add**. Name must be field name, not label, prefixed with `u_`, such as `u_backout_plan`. Value must be valid in ServiceNow. Invalid entries are ignored.|
+   | **Success criteria** | Select either **Desired state of change request** or **Advanced success criteria**.
    | **Desired state of change request** | The gate succeeds and the pipeline continues when the change request status is this value.
-   | **Output Variables**  | To be able to use output variables in your deployment workflow, you must specify a reference name. You can access gate variables by using `PREDEPLOYGATE` as a prefix in an agentless job. For example, when the reference name is set to *gate1*, you can get the change request number by using the variable | `$(PREDEPLOYGATE.gate1.CHANGE_REQUEST_NUMBER)`.
-   | **CHANGE_REQUEST_NUMBER**  | Number of the change request.
-   | **CHANGE_SYSTEM_ID**  | System Id of the change request.
+   | **Advanced success criteria** | An expression that controls when this gate should succeed. The change request is defined as `root['result']` in the response from ServiceNow. For example, `and(eq(root['result'].state, 'New'),eq(root['result'].risk, 'Low'))`. For more information, see [Expressions](../../process/expressions.md).
+   | **Output Variables** |
+   | **Reference name** | To be able to use output variables in your deployment workflow, you must specify a reference name. You can access gate variables by using `PREDEPLOYGATE` as a prefix in an agentless job. For example, when the reference name is set to *gate1*, you can get the change request number by using the variable `$(PREDEPLOYGATE.gate1.CHANGE_REQUEST_NUMBER)`.
+   | **Variables list** | **CHANGE_REQUEST_NUMBER** is the number of the change request.<br> **CHANGE_SYSTEM_ID** is the System ID of the change request.|
 
-   :::image type="content" source="media/servicenow-05.png" alt-text="A screenshot showing how to configure the ServiceNow Change Management check.":::
+   :::image type="content" source="media/servicenow-newform.png" alt-text="A screenshot showing how to configure the ServiceNow Change Management gate.":::
 
 ## Add the YAML task
 
-To update the change request, add the following agentless [server job](../../process/phases.md#server-jobs) and `UpdateServiceNowChange Request@2` task to the stage in your pipeline.
+To update the change request, add the following [server job](../../process/phases.md#server-jobs) and `UpdateServiceNowChange Request@2` task to your YAML pipeline.
 
 ```yaml
 stages:
@@ -170,6 +174,7 @@ stages:
   jobs:
   - deployment: DeployLatest
     environment: <environment-name>
+  ...
   - job: UpdateChangeRequest
     steps:
     - task: UpdateServiceNowChangeRequest@2
@@ -182,11 +187,15 @@ stages:
 pool: server
 ```
 
-   :::image type="content" source="media/servicenow-13.png" alt-text="A screenshot showing the agentless task.":::
+:::image type="content" source="media/servicenow-13.png" alt-text="A screenshot showing the agentless task.":::
 
-Save and run your pipeline. A new change request is automatically created, and the pipeline pauses and waits for the checks to complete. When the checks complete, the pipeline resumes execution. The change request closes automatically after deployment.
+Save and run your pipeline. A new change request is automatically created, and the pipeline pauses and waits for the checks to complete. When the checks complete, the pipeline resumes execution.
 
 :::image type="content" source="media/servicenow-14.png" alt-text="A screenshot showing the pipeline execution.":::
+
+The change request closes automatically after deployment.
+
+---
 
 ## FAQs
 
@@ -216,9 +225,9 @@ Save and run your pipeline. A new change request is automatically created, and t
 
 **A**: If you define custom fields in the change request, you must [add mapping for custom fields in Import set transform map](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/Extensions/ServiceNow/Src#steps-to-add-mapping-for-custom-fields-in-import-set-transform-map-).
 
-### Q: How can I see drop-down values populated for Category, Status, and other fields?
+### Q: How can I see dropdown values populated for Category, Status, and other fields?
 
-**A**: Change Management Core and Change Management - State Model plugins must be active on your ServiceNow instance for the drop-downs to work. For more information, see [Upgrade change management](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html) and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/state-model-activate-tasks.html).
+**A**: Change Management Core and Change Management - State Model plugins must be active on your ServiceNow instance for the dropdowns to work. For more information, see [Upgrade change management](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html) and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/state-model-activate-tasks.html).
 
 ## Resources
 
