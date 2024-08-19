@@ -21,6 +21,7 @@ hide_comments: true
 ---
 
 ## Released features
+## Azure DevOps Services
 
 The released features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
 Versions in the "Server" column are linked to the appropriate download location. 
@@ -4764,6 +4765,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </tbody>
 </table>
 
+## Azure DevOps Server
+
+
 ## Azure DevOps Server Build Numbers
 
 
@@ -4780,7 +4784,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
           <td>December 6, 2022</td>
           <td>19.205.33122.1</td>
         </tr>
@@ -5009,6 +5013,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
       </tbody>
     </table>
+
 
 ## How to provide feedback
 

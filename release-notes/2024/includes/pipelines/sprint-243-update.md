@@ -19,7 +19,7 @@ Key benefits of Managed DevOps Pools include:
 * **DevOps Billing:** MDP helps optimize a team’s DevOps bill through many features. It makes it easy for teams to find an optimal balance between a pool’s QoS/performance and cost.
 * **Scalable:** MDP scales to 1000s of agents in a single pool.
 
-Teams can create pools with [quick-starter images](https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-images?view=azure-devops&tabs=azure-portal#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images the team has created with prerequisites that are unique to their scenario.
+Teams can create pools with [quick-starter images](/azure/devops/managed-devops-pools/configure-images#azure-pipelines-images) that contain the same software present in Microsoft hosted agents or with images the team has created with prerequisites that are unique to their scenario.
 
 Learn more about Managed DevOps Pools by reading our [blog post](https://devblogs.microsoft.com/devops/managed-devops-pools/) or its [documentation](https://aka.ms/mdp-docs).
 
@@ -50,7 +50,7 @@ For new projects, users and groups with the `Edit build pipeline` permission wil
 
 ### Exclusive lock check at stage level
 
-Some use cases require a pipeline to access a specific resource only once at any given time. To support this case, we have the [Exclusive lock](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#exclusive-lock) check.
+Some use cases require a pipeline to access a specific resource only once at any given time. To support this case, we have the [Exclusive lock](/azure/devops/pipelines/process/approvals#exclusive-lock) check.
 
 A similar situation arises when only one pipeline run should access a stage at any point in time. For instance, if you have a stage that deploys to an Azure resource group, you may want to prevent multiple pipeline runs from simultaneously updating the same resource group. Currently, achieving this requires using a proxy resource, such as an environment, and placing the Exclusive lock check on that environment. This approach can be time-consuming, add complexity, and increase maintenance efforts.
 
@@ -59,7 +59,7 @@ In this sprint, we’re introducing support for specifying the exclusive lock at
 
 ### Template information in pipeline runs
 
-We updated the [Pipelines Runs - Get](https://learn.microsoft.com/rest/api/azure/devops/pipelines/runs/get?view=azure-devops-rest-7.2#run) REST API with information about the templates extended and included in a pipeline run.
+We updated the [Pipelines Runs - Get](/rest/api/azure/devops/pipelines/runs/get#run) REST API with information about the templates extended and included in a pipeline run.
 
 For example, consider you have the following YAML pipeline code:
 ```yml

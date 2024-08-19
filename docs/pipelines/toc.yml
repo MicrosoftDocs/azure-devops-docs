@@ -163,8 +163,8 @@
     - name: Use variables in a variable group
       displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
       href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
-    - name: Use classic release and artifacts variables
-      displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
+    - name: Release variables (Classic)
+      displayName: release, deploy, variables
       href: release/variables.md
   - name: Library, resources, & secure files
     items:
@@ -392,6 +392,9 @@
       - name: Artifact sources
         displayName: artifacts, source, release artifacts
         href: release/artifacts.md
+      - name: Release variables
+        displayName: release, deploy, variables
+        href: release/variables.md
       - name: Deploy pull request Artifacts
         displayName: pr release, deployment
         href: release/deploy-pull-request-builds.md
@@ -577,8 +580,8 @@
     href: troubleshooting/troubleshoot-triggers.md
   - name: Pipeline queues but never starts
     href: troubleshooting/troubleshoot-start.md
-  - name: Debug deployment issues
-    href: release/variables.md#debug-mode
+  - name: Debug release issues
+    href: release/variables.md#run-a-release-in-debug-mode
   - name: Troubleshoot ARM service connections
     href: release/azure-rm-endpoint.md
   - name: Review logs
@@ -587,10 +590,8 @@
     items:
     - name: View pipeline reports
       href: reports/pipelinereport.md
-    - name: Add widgets to a dashboard
-      href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json
-    - name: Test Results Trend (Advanced)
-      href: ../report/dashboards/analytics-widgets.md?toc=/azure/devops/pipelines/toc.json#test-results-trend-advanced
+    - name: Monitor your pipelines with dashboard widgets
+      href: reports/pipeline-widgets.md
 - name: Security
   items:
   - name: Set retention policies
