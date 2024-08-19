@@ -148,7 +148,6 @@ The following table describes the dashboard types:
 | My backlog by work item type | Work assigned to `@Me` by type. | Query chart |
 | New work < 7 days | Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
 
-:::row-end
    > [!TIP]
    > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
    Consider adding the following widgets to the personal focus dashboard:
