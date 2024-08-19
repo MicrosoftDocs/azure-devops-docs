@@ -147,6 +147,7 @@ The following table describes the dashboard types:
 | My work - Current sprint by work item type | Active work by type assigned to `@Me` for the current sprint. | Query chart |
 | My backlog by work item type | Work assigned to `@Me` by type. | Query chart |
 | New work < 7 days | Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
+
 :::row-end
    > [!TIP]
    > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
@@ -169,9 +170,9 @@ The following table describes the dashboard types:
   - [Velocity](team-velocity.md)<br>
   - [Cycle time](cycle-time-and-lead-time.md)<br>
   - [Lead time](cycle-time-and-lead-time.md)<br>
-  Velocity helps teams understand how well they're planning and executing sprints. Lead and cycle time show the average time for work to move from inception to completion. Consider adding a [pivot table](charts.md#add-a-pivot-table) to quickly see the number of work items and their assignments. Use these charts to determine if the team needs to better balance the workload.<br>
+   Velocity helps teams understand how well they're planning and executing sprints. Lead and cycle time show the average time for work to move from inception to completion. Consider adding a [pivot table](charts.md#add-a-pivot-table) to quickly see the number of work items and their assignments. Use these charts to determine if the team needs to better balance the workload.<br>
   :::image type="content" source="media/dashboard-focus/load-balance-work.png" alt-text="Screenshot of Dashboard, Assigned work pivot and stacked bar chart widgets.":::<br>
-  If your team manages code, tests, builds, and releases using Azure DevOps, add these widgets to your team dashboard:<br>
+   If your team manages code, tests, builds, and releases using Azure DevOps, add these widgets to your team dashboard:<br>
   - [Code tile](widget-catalog.md#code-tile-widget)<br>
   - [Test results trend (Advanced)](widget-catalog.md#test-results-trend-advanced)<br>
   - [Pull request (Team)](widget-catalog.md#pull-request-widget)<br>
@@ -219,11 +220,11 @@ The following table describes the dashboard types:
     - [Build history](widget-catalog.md#build-history-widget)
     - [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
     - [Release Pipeline overview](widget-catalog.md#release-definition-widget)
-    - [Requirements quality](widget-catalog.md#requirements-quality-widget)
+    - [Requirements quality](widget-catalog.md#requirements-quality-widget)<br>
     **Build History**
-    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::
+    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::<br>
     **Release pipeline overview**
-    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::
+    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::<br>
     **Deployment status** 
     :::image type="content" source="media/dashboard-focus/deployment-status-widget.png" alt-text="Screenshot of Deployment status widget.":::
    :::column-end:::
