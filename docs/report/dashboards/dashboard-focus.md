@@ -148,13 +148,12 @@ The following table describes the dashboard types:
 | My backlog by work item type | Work assigned to `@Me` by type. | Query chart |
 | New work < 7 days | Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
 
-   > [!TIP]
-   > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
-   Consider adding the following widgets to the personal focus dashboard:
-    - **New Work Item**: Create new work items.
-    - **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
-    - **Assigned to Me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
-    :::image type="content" source="media/dashboard-focus/work-assigned-to-me.png" alt-text="Screenshot of Dashboard, Assigned to me widget.":::
+> [!TIP]
+> Select any query tile or widget to quickly navigate to the query and view a complete list of work items. Consider adding the following widgets to the personal focus dashboard:
+   - **New Work Item**: Create new work items.
+   - **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
+   - **Assigned to Me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
+   :::image type="content" source="media/dashboard-focus/work-assigned-to-me.png" alt-text="Screenshot of Dashboard, Assigned to me widget.":::
    :::column-end:::
 :::row-end:::
 :::row:::
