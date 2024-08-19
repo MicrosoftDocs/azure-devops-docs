@@ -133,139 +133,139 @@ The following table describes the dashboard types:
    :::image type="content" source="media/dashboard-focus/my-work-focus.png" alt-text="Screenshot of Dashboard work query tiles and query charts.":::<br>
    The following table provides more information for each widget shown in the dashboard. For details on constructing queries for these examples, see [Example query charts](../../boards/queries/example-query-charts.md).<br>
    :::column-end
-       :::row:::
-       :::column span="1":::
-       **Title**
-       :::column-end:::
-       :::column span="1":::
-       **Description**
-       :::column-end:::
-       :::column span="1":::
-       **Widget type**
-       :::column-end:::
-       :::row-end:::
-       ---
-       :::row:::
-       :::column span="1":::
-       Current sprint
-       :::column-end:::
-       :::column span="1":::
-       Work assigned to `@Me` for the current sprint.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       Next sprint
-       :::column-end:::
-       :::column span="1":::
-       Work assigned to `@Me`  for the next sprint.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       Completed last sprint
-       :::column-end:::
-       :::column span="1":::
-       Work completed last sprint assigned to `@Me`.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       My backlog
-       :::column-end:::
-       :::column span="1":::
-       Work assigned to `@Me` new, proposed, or active.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       I created last 30 days
-       :::column-end:::
-       :::column span="1":::
-       Active work with the following clauses: `Created By = @Me` and 'Created Date >= @Today-30`.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       I recently updated
-       :::column-end:::
-       :::column span="1":::
-       Active work whose `ID In @MyRecentActivity`.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       Work I'm following
-       :::column-end:::
-       :::column span="1":::
-       Active work whose `ID In @MyFollows`.
-       :::column-end:::
-       :::column span="1":::
-       Query tile
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       My backlog state
-       :::column-end:::
-       :::column span="1":::
-       Stacked area chart showing work assigned to`@Me` by for the past four weeks.
-       :::column-end:::
-       :::column span="1":::
-       Query chart
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       My work - Current sprint by work item type
-       :::column-end:::
-       :::column span="1":::
-       Active work by type assigned to `@Me` for the current sprint.
-       :::column-end:::
-       :::column span="1":::
-       Query chart
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       My backlog by work item type
-       :::column-end:::
-       :::column span="1":::
-       Work assigned to `@Me` by type.
-       :::column-end:::
-       :::column span="1":::
-       Query chart
-       :::column-end:::
-       :::row-end:::
-       :::row:::
-       :::column span="1":::
-       New work < 7 days
-       :::column-end:::
-       :::column span="1":::
-       Active work assigned to `@Me` and `Created Date >= @Today-7`.
-       :::column-end:::
-       :::column span="1":::
-       Query chart
-       :::column-end:::
-       :::row-end:::
+      :::row:::
+      :::column span="1":::
+      **Title**
+      :::column-end:::
+      :::column span="1":::
+      **Description**
+      :::column-end:::
+      :::column span="1":::
+      **Widget type**
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      ---
+      :::column span="1":::
+      Current sprint
+      :::column-end:::
+      :::column span="1":::
+      Work assigned to `@Me` for the current sprint.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      Next sprint
+      :::column-end:::
+      :::column span="1":::
+      Work assigned to `@Me`  for the next sprint.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      Completed last sprint
+      :::column-end:::
+      :::column span="1":::
+      Work completed last sprint assigned to `@Me`.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      My backlog
+      :::column-end:::
+      :::column span="1":::
+      Work assigned to `@Me` new, proposed, or active.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      I created last 30 days
+      :::column-end:::
+      :::column span="1":::
+      Active work with the following clauses: `Created By = @Me` and 'Created Date >= @Today-30`.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      I recently updated
+      :::column-end:::
+      :::column span="1":::
+      Active work whose `ID In @MyRecentActivity`.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      Work I'm following
+      :::column-end:::
+      :::column span="1":::
+      Active work whose `ID In @MyFollows`.
+      :::column-end:::
+      :::column span="1":::
+      Query tile
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      My backlog state
+      :::column-end:::
+      :::column span="1":::
+      Stacked area chart showing work assigned to`@Me` by for the past four weeks.
+      :::column-end:::
+      :::column span="1":::
+      Query chart
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      My work - Current sprint by work item type
+      :::column-end:::
+      :::column span="1":::
+      Active work by type assigned to `@Me` for the current sprint.
+      :::column-end:::
+      :::column span="1":::
+      Query chart
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      My backlog by work item type
+      :::column-end:::
+      :::column span="1":::
+      Work assigned to `@Me` by type.
+      :::column-end:::
+      :::column span="1":::
+      Query chart
+      :::column-end:::
+      :::row-end:::
+      :::row:::
+      :::column span="1":::
+      New work < 7 days
+      :::column-end:::
+      :::column span="1":::
+      Active work assigned to `@Me` and `Created Date >= @Today-7`.
+      :::column-end:::
+      :::column span="1":::
+      Query chart
+      :::column-end:::
+      :::row-end:::
 :::row-end
    > [!TIP]
    > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
