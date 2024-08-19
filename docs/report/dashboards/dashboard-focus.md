@@ -141,7 +141,7 @@ The following table describes the dashboard types:
     - **My backlog state:** Stacked area chart showing work assigned to `@Me` for the past four weeks (query chart).
     - **My work - Current sprint by work item type:** Active work by type assigned to `@Me` for the current sprint (query chart).
     - **My backlog by work item type:** Work assigned to `@Me` by type (query chart). 
-    - **New work < 7 days:** Active work assigned to `@Me` and `Created Date >= @Today-7` (query chart).
+    - **New work < 7 days:** Active work assigned to `@Me` and `Created Date >= @Today-7` (query chart).<br>
    Select any query tile or widget to quickly navigate to the query and view a complete list of work items. Consider adding the following widgets to the personal focus dashboard:
    - **New Work Item**: Create new work items.
    - **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
