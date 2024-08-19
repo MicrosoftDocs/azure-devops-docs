@@ -40,7 +40,30 @@ CodeQL supports both compiled and interpreted languages and can find vulnerabili
 * Ruby 
 * Swift
 
+> [!TIP]
+> * Use `java-kotlin` to analyze code written in Java, Kotlin or both.
+> * Use `javascript-typescript` to analyze code written in JavaScript, TypeScript or both.
+
 For more information, see the documentation on the CodeQL website on [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/).
+
+CodeQL uses the following language identifiers:
+
+| Language               | Identifier            | Optional alternative identifiers (if any) |
+|------------------------|-----------------------|-------------------------------------------|
+| C/C++                  | `c-cpp`                 | `c` or `cpp`                                  |
+| C#                     | `csharp`                |                                           |
+| Go                     | `go`                    |                                           |
+| Java/Kotlin            | `java-kotlin`           |                           |
+| JavaScript/TypeScript  | `javascript-typescript` |                  |
+| Python                 | `python`                |                                           |
+| Ruby                   | `ruby`                  |                                           |
+| Swift                  | `swift`                 |                                           |
+
+> [!TIP]
+> * Use `c-cpp` to analyze code written in C, C++ or both
+> * Use `java-kotlin` to analyze code written in Java, Kotlin or both
+> * Use `javascript-typescript` to analyze code written in JavaScript, TypeScript or both
+
 
 You can view the specific queries and task details used by CodeQL by looking through the build log, similar to dependency scanning. 
 
