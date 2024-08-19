@@ -98,12 +98,12 @@ Use this option to manually create a service connection that uses an existing wo
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
-   
-      :::image type="content" source="media\new-azure-resource-manager-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
 
+    :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
+   
 1. Select **Workload identity federation (manual)** and **Next**.
 
-   :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot that shows selecting a workload identity service connection type.":::
+    :::image type="content" source="media\new-azure-resource-manager-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
 
 1. In **Step 1: Basics**:
     1. Enter a **Service connection name** 
