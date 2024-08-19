@@ -53,8 +53,8 @@ CodeQL uses the following language identifiers:
 | C/C++                  | `c-cpp`                 | `c` or `cpp`                                  |
 | C#                     | `csharp`                |                                           |
 | Go                     | `go`                    |                                           |
-| Java/Kotlin            | `java-kotlin`           | `java` or `kotlin`                            |
-| JavaScript/TypeScript  | `javascript-typescript` | `javascript` or `typescript`                  |
+| Java/Kotlin            | `java-kotlin`           |                           |
+| JavaScript/TypeScript  | `javascript-typescript` |                  |
 | Python                 | `python`                |                                           |
 | Ruby                   | `ruby`                  |                                           |
 | Swift                  | `swift`                 |                                           |
