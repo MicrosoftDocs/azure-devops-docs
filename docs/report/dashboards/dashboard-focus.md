@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 08/16/2024
+ms.date: 08/19/2024
 ---
 
 
@@ -47,9 +47,9 @@ The following table lists several types of dashboards you might want to create.
 |[**Stakeholder**](#stakeholder-dashboard)|Share team and organizational goals, information, links to work item templates to create bugs or new feature requests, and more. |
 |[**Personal**](#personal-dashboard)|Help each team member to focus on their backlog and current work.| 
 |[**Team**](#team-dashboard)|Provide information for a team to monitor status, track progress, identify bottlenecks, and ensure backlog items are well defined. |
-|[**Sprint**](#sprint-dashboard)|Review in daily standups to ensure the team is on track to meet sprint goals and address any issues that affect those goals.|
+|[**Sprint**](#sprint-dashboard)|Review in daily stand ups to ensure the team is on track to meet sprint goals and address any issues that affect those goals.|
 |[**Release**](#release-dashboard)|Monitor status and track progress toward a major release, which might involve contributions from several teams. |
-|[**Test and deploy**](#test-and-deploy-dashboard)| Monitor continuous integration, builds, deployments, and releases. | 
+|[**Test and deploy**](#test-deploy-dashboard)| Monitor continuous integration, builds, deployments, and releases. | 
 
 ::: moniker-end 
 
@@ -97,84 +97,135 @@ After creating your dashboard, fine-tune it based on feedback. Update queries as
 
 The following table describes the dashboard types:
 
-|Dashboard type  |Description  |
-|---------|---------|
-|Stakeholder dashboard      | Stakeholders include any project members interested in your work. Use a combination of markdown widgets and team-focused widgets to address: 
-- Team goals<br>
-- Team information<br>
-- Team members and key contacts<br>
-- Links to work item templates<br>
-- Team guidance linked to wiki content        |
-|Personal dashboard      | Set up a personal focus dashboard for all team members using the **Assigned to me** widget and other query tiles or charts that reference an `Assigned To = @Me` query clause.<br>
-The following image shows a personal dashboard titled *My Work Focus*. Each team member can review this dashboard for work assigned to them, work they're following, or work where they're mentioned.<br>
-:::image type="content" source="media/dashboard-focus/my-work-focus.png" alt-text="Screenshot of Dashboard work query tiles and query charts.":::<br>
-The following table provides more information for each widget shown in the dashboard. For details on constructing queries for these examples, see [Example query charts](../../boards/queries/example-query-charts.md).<br>
-| **Title** | **Description** | **Widget type** |
-|-----------|-----------------|--------------------|
-| Current sprint | Work assigned to `@Me` for the current sprint. | Query tile |
-| Next sprint |Work assigned to `@Me`  for the next sprint. | Query tile |
-| Completed last sprint |Work completed last sprint assigned to `@Me`.   | Query tile |
-| My backlog | Work assigned to `@Me` new, proposed, or active. | Query tile |
-| I created last 30 days |Active work with the following clauses: `Created By = @Me` and `Created Date >= @Today-30`.| Query tile |
-| I recently updated|Active work whose `ID In @MyRecentActivity`.  | Query tile |
-| Work I'm following|Active work whose `ID In @MyFollows`.  | Query tile |
-| My backlog by state|Stacked area chart showing work assigned to `@Me` by for the past four weeks.  | Query chart |
-| My work - Current sprint by work item type |Active work by type assigned to `@Me` for the current sprint. | Query chart |
-| My backlog by work item type |Work assigned to `@Me` by type.  | Query chart|
-| New work < 7 days  |Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
-<br>
-> [!TIP]
-> Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
-Consider adding the following widgets to the personal focus dashboard:
-- **New Work Item**: Create new work items.
-- **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
-- **Assigned to Me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
-:::image type="content" source="media/dashboard-focus/work-assigned-to-me.png" alt-text="Screenshot of Dashboard, Assigned to me widget.":::        |
-|Team dashboard   | Create your team dashboard to help members meet goals, monitor status, track progress, identify bottlenecks, and ensure backlog items are well defined. Include one or more of the following team-scoped widgets:<br>
-- [CFD chart](cumulative-flow.md)<br>
-- [Velocity](team-velocity.md)<br>
-- [Cycle time](cycle-time-and-lead-time.md)<br>
-- [Lead time](cycle-time-and-lead-time.md)<br>
-Velocity helps teams understand how well they're planning and executing sprints. Lead and cycle time show the average time for work to move from inception to completion. Consider adding a [pivot table](charts.md#add-a-pivot-table) to quickly see the number of work items and their assignments. Use these charts to determine if the team needs to better balance the workload.<br>
-:::image type="content" source="media/dashboard-focus/load-balance-work.png" alt-text="Screenshot of Dashboard, Assigned work pivot and stacked bar chart widgets.":::<br>
-If your team manages code, tests, builds, and releases using Azure DevOps, add these widgets to your team dashboard:<br>
-- [Code tile](widget-catalog.md#code-tile-widget)<br>
-- [Test results trend (Advanced)](widget-catalog.md#test-results-trend-advanced)<br>
-- [Pull request (Team)](widget-catalog.md#pull-request-widget)<br>
-- [Build history](widget-catalog.md#build-history-widget)<br>
-- [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)<br>        |
-|Sprint dashboard    | Azure DevOps offers several sprint and team-specific widgets to track sprint progress, including Sprint overview, Sprint capacity, and Sprint burndown. Sprint capacity is useful only if your team tracks work using tasks and sets the Sprint capacity as described in [Determine and set sprint capacity](../../boards/sprints/set-capacity.md).<br>
-The following image shows a sample sprint focus dashboard.<br>
-:::image type="content" source="media/dashboard-focus/sprint-focus.png" alt-text="Screenshot of Dashboard, Sprint focus query tiles, Team Velocity, and Sprint Burndown widgets.":::<br>
-This sprint dashboard includes several query tiles and the following widgets:
-- [Sprint overview chart](widget-catalog.md#sprint-overview-widget)
-- [New work items](widget-catalog.md#new-work-item-widget)
-- [Velocity](team-velocity.md) (team-configurable)
-- [Sprint burndown chart](configure-sprint-burndown.md) (team-configurable)        |
-|Release dashboard    | Major software releases often involve contributions from multiple teams. Release burndown and burnup charts help product managers track progress across teams. These charts are highly configurable, allowing you to choose teams, backlog work items or work item types, field criteria, countdown metrics, and time intervals. For more information, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).<br>
-> [!NOTE]
-> Analytics-based charts use the `WorkItemsSnapshot` EntitySet, which models data as daily snapshots. Data is aggregated based on assignments made on the date they are assigned. To filter a Burndown/Burnup widget by field or tag assignments, assign them before the period you want to monitor. Otherwise, the widget won't register them until the date they are applied.         |
+:::row:::
+   :::column span="1":::
+   **Dashboard type**
+   :::column-end:::
+   :::column span="2":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+   <a id="stakeholder-dashboard">  </a>
 
-## Test and deploy dashboard
+   **Stakeholder dashboard**
+   :::column-end:::
+   :::column span="2":::
+   Stakeholders include any project members interested in your work. Use a combination of markdown widgets and team-focused widgets to address: 
+    - Team goals
+    - Team information
+    - Team members and key contacts
+    - Links to work item templates
+    - Team guidance linked to wiki content
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="personal-dashboard">  </a>
 
-Create a dedicated dashboard to track the progress of tests, builds, and deployments by adding the following widgets:
+   **Personal dashboard**
+   :::column-end:::
+   :::column span="2":::
+   Set up a personal focus dashboard for all team members using the **Assigned to me** widget and other query tiles or charts that reference an `Assigned To = @Me` query clause.<br>
+    The following image shows a personal dashboard titled *My Work Focus*. Each team member can review this dashboard for work assigned to them, work they're following, or work where they're mentioned.<br>
+    :::image type="content" source="media/dashboard-focus/my-work-focus.png" alt-text="Screenshot of Dashboard work query tiles and query charts.":::<br>
+    The following table provides more information for each widget shown in the dashboard. For details on constructing queries for these examples, see [Example query charts](../../boards/queries/example-query-charts.md).<br>
+    | **Title** | **Description** | **Widget type** |
+    |-----------|-----------------|--------------------|
+    | Current sprint | Work assigned to `@Me` for the current sprint. | Query tile |
+    | Next sprint |Work assigned to `@Me`  for the next sprint. | Query tile |
+    | Completed last sprint |Work completed last sprint assigned to `@Me`. | Query tile |
+    | My backlog | Work assigned to `@Me` new, proposed, or active. | Query tile |
+    | I created last 30 days |Active work with the following clauses: `Created By = @Me` and `Created Date >= @Today-30`.| Query tile |
+    | I recently updated|Active work whose `ID In @MyRecentActivity`. | Query tile |
+    | Work I'm following|Active work whose `ID In @MyFollows`. | Query tile |
+    | My backlog by state|Stacked area chart showing work assigned to `@Me` by for the past four weeks. | Query chart |
+    | My work - Current sprint by work item type |Active work by type assigned to `@Me` for the current sprint. | Query chart |
+    | My backlog by work item type |Work assigned to `@Me` by type. | Query chart|
+    | New work < 7 days  |Active work assigned to `@Me` and `Created Date >= @Today-7`. | Query chart |
+    <br>
+    > [!TIP]
+    > Select any query tile or widget to quickly navigate to the query and view a complete list of work items.<br>
+    Consider adding the following widgets to the personal focus dashboard:
+    - **New Work Item**: Create new work items.
+    - **Work Links**: Access links to a team's Backlog, Board, current sprint Taskboard, and the queries page.
+    - **Assigned to Me**: View a list of work items assigned to the currently signed-in user, as shown in the following image.<br>
+    :::image type="content" source="media/dashboard-focus/work-assigned-to-me.png" alt-text="Screenshot of Dashboard, Assigned to me widget.":::
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="team-dashboard">  </a>
 
-- [Build history](widget-catalog.md#build-history-widget)
-- [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
-- [Release Pipeline overview](widget-catalog.md#release-definition-widget)
-- [Requirements quality](widget-catalog.md#requirements-quality-widget)
+   **Team dashboard**
+   :::column-end:::
+   :::column span="2":::
+   Create your team dashboard to help members meet goals, monitor status, track progress, identify bottlenecks, and ensure backlog items are well defined. Include one or more of the following team-scoped widgets:<br>
+  - [CFD chart](cumulative-flow.md)<br>
+  - [Velocity](team-velocity.md)<br>
+  - [Cycle time](cycle-time-and-lead-time.md)<br>
+  - [Lead time](cycle-time-and-lead-time.md)<br>
+  Velocity helps teams understand how well they're planning and executing sprints. Lead and cycle time show the average time for work to move from inception to completion. Consider adding a [pivot table](charts.md#add-a-pivot-table) to quickly see the number of work items and their assignments. Use these charts to determine if the team needs to better balance the workload.<br>
+  :::image type="content" source="media/dashboard-focus/load-balance-work.png" alt-text="Screenshot of Dashboard, Assigned work pivot and stacked bar chart widgets.":::<br>
+  If your team manages code, tests, builds, and releases using Azure DevOps, add these widgets to your team dashboard:<br>
+  - [Code tile](widget-catalog.md#code-tile-widget)<br>
+  - [Test results trend (Advanced)](widget-catalog.md#test-results-trend-advanced)<br>
+  - [Pull request (Team)](widget-catalog.md#pull-request-widget)<br>
+  - [Build history](widget-catalog.md#build-history-widget)<br>
+  - [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="sprint-dashboard">  </a>
 
-### Build history
+   **Sprint dashboard**
+   :::column-end:::
+   :::column span="2":::
+   Azure DevOps offers several sprint and team-specific widgets to track sprint progress, including Sprint overview, Sprint capacity, and Sprint burndown. Sprint capacity is useful only if your team tracks work using tasks and sets the Sprint capacity as described in [Determine and set sprint capacity](../../boards/sprints/set-capacity.md).<br>
+    The following image shows a sample sprint focus dashboard.<br>
+    :::image type="content" source="media/dashboard-focus/sprint-focus.png" alt-text="Screenshot of Dashboard, Sprint focus query tiles, Team Velocity, and Sprint Burndown widgets.":::<br>
+    This sprint dashboard includes several query tiles and the following widgets:
+    - [Sprint overview chart](widget-catalog.md#sprint-overview-widget)
+    - [New work items](widget-catalog.md#new-work-item-widget)
+    - [Velocity](team-velocity.md) (team-configurable)
+    - [Sprint burndown chart](configure-sprint-burndown.md) (team-configurable)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="release-dashboard">  </a>
 
-:::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::
+   **Release dashboard**
+   :::column-end:::
+   :::column span="2":::
+   Major software releases often involve contributions from multiple teams. Release burndown and burnup charts help product managers track progress across teams. These charts are highly configurable, allowing you to choose teams, backlog work items or work item types, field criteria, countdown metrics, and time intervals. For more information, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).<br>
+    > [!NOTE]
+    > Analytics-based charts use the `WorkItemsSnapshot` EntitySet, which models data as daily snapshots. Data aggregates based on assignments made on the date they're assigned. To filter a Burndown/Burnup widget by field or tag assignments, assign them before the period you want to monitor. Otherwise, the widget doesn't register them until the date they're applied.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="test-deploy-dashboard">  </a>
 
-### Release pipeline overview
-
-:::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::
-
-### Deployment status 
-
-:::image type="content" source="media/dashboard-focus/deployment-status-widget.png" alt-text="Screenshot of Deployment status widget.":::
+   **Test & deploy dashboard**
+   :::column-end:::
+   :::column span="2":::
+   Create a dedicated dashboard to track the progress of tests, builds, and deployments by adding the following widgets:
+    - [Build history](widget-catalog.md#build-history-widget)
+    - [Deployment status (Build pipeline)](widget-catalog.md#deployment-status-widget)
+    - [Release Pipeline overview](widget-catalog.md#release-definition-widget)
+    - [Requirements quality](widget-catalog.md#requirements-quality-widget)
+    **Build History**
+    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::
+    **Release pipeline overview**
+    :::image type="content" source="media/dashboard-focus/release-pipeline-widget.png" alt-text="Screenshot of Release pipeline overview chart.":::
+    **Deployment status** 
+    :::image type="content" source="media/dashboard-focus/deployment-status-widget.png" alt-text="Screenshot of Deployment status widget.":::
+   :::column-end:::
+:::row-end:::
 
 ## Extend your dashboard visibility 
 
