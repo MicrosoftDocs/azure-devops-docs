@@ -35,7 +35,7 @@ The Azure DevOps Administrator in Microsoft Entra can restrict users from creati
 
    ![Screenshot showing Choose the gear icon, Organization settings.](../../media/settings/open-admin-settings-vert.png)
 
-3. In the Microsoft Entra ID tab, find the *Restrict global personal access token creation* policy and move the toggle to *on*.
+3. Select **Microsoft Entra**, find the *Restrict global personal access token creation* policy and move the toggle to *on*.
 
    :::image type="content" source="media/policies/restrict-global-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for Restrict global PAT creation policy.":::
 
@@ -47,7 +47,7 @@ The Azure DevOps Administrator in Microsoft Entra can restrict users from creati
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-3. In the Microsoft Entra ID tab, find the *Restrict full-scoped personal access token creation* policy and move the toggle to *on*.
+3. Select **Microsoft Entra**, find the *Restrict full-scoped personal access token creation* policy and move the toggle to *on*.
 
    :::image type="content" source="media/policies/restrict-full-scoped-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for the Restrict full-scoped PAT creation policy.":::
 
@@ -59,7 +59,7 @@ The Azure DevOps Administrator in Microsoft Entra ID can define the maximum life
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-3. In the Microsoft Entra ID tab, find the *Enforce maximum personal access token lifespan* policy and move the toggle to *on*.
+3. Select **Microsoft Entra**, find the *Enforce maximum personal access token lifespan* policy and move the toggle to *on*.
 
    :::image type="content" source="media/policies/enforce-maximum-pat-lifespan-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for Enforce maximum PAT lifespan policy.":::
 
@@ -87,7 +87,7 @@ The [Azure DevOps Administrator in Microsoft Entra ID](azure-ad-tenant-policy-re
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-3. In the Microsoft Entra ID tab, find the *Automatically revoke leaked personal access tokens* policy and move the toggle to *off*.
+3. Select **Microsoft Entra**, find the *Automatically revoke leaked personal access tokens* policy and move the toggle to *off*.
 
 The policy is disabled and any PATs checked into public GitHub repositories remain active.
 
