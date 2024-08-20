@@ -42,6 +42,8 @@ Variable groups follow the [library security model](index.md#library-security) f
 
 ## Set up the CLI
 
+If you're using the Azure DevOps CLI, you need to set up the CLI to work with your Azure DevOps organization and project.
+
 1. Sign in to your Azure DevOps organization by using the [az login](/cli/azure/authenticate-azure-cli) command.
 
     ```azurecli
@@ -63,7 +65,7 @@ Variable groups follow the [library security model](index.md#library-security) f
     az devops configure --defaults organization=<YourOrganizationURL> project=<Project Name or ID>`
     ```
 
-    Or you can use the `detect=true` parameter in the commands to detect the organization and project context from the directory you're in. If you don't detect the organization or configure a default organization or project, you must specify the `org` and `project` parameters in the commands.
+    If you haven't set the default organization and project, you can use the `detect=true` parameter in your commands to automatically detect the organization and project context based on your current directory. If the defaults aren't configured or detected, you need to explicitly specify the `org` and `project` parameters in your commands.
 
 ::: moniker-end
 
