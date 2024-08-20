@@ -23,22 +23,22 @@ Variable groups follow the [library security model](index.md#library-security) f
 ## Prerequisites
 
 
-:::moniker range="=devops"
+::: moniker range="azure-devops"
 
 * An Azure DevOps Services organization and project where you have permissions to create pipelines and variables.
 * A project in your Azure DevOps organization or Azure DevOps Server collection. [Create a project](../../organizations/projects/create-project.md) if you don't have one.
 * If you're using the Azure DevOps CLI, you need Azure CLI version 2.30.0 or higher with the Azure DevOps CLI extension. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-:::moniker-end
+::: moniker-end
 
-::: moniker range="< devops"
+::: moniker range="< azure-devops"
 
 * An Azure DevOps Server collection and project where you have permissions to create pipelines and variables.
 * A project in your Azure DevOps organization or Azure DevOps Server collection. [Create a project](../../organizations/projects/create-project.md) if you don't have one.
 
 ::: moniker-end
-
-:::moniker range="devops"
+ 
+::: moniker range="azure-devops"
 
 ## Set up the CLI
 
@@ -65,7 +65,7 @@ Variable groups follow the [library security model](index.md#library-security) f
 
     Or you can use the `detect=true` parameter in the commands to detect the organization and project context from the directory you're in. If you don't detect the organization or configure a default organization or project, you must specify the `org` and `project` parameters in the commands.
 
-:::moniker-end
+::: moniker-end
 
 ## Create a variable group
 
