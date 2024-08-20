@@ -76,7 +76,7 @@ In the [Azure portal](https://portal.azure.com), install the Azure Pipelines Age
 1. On the **Extension** tab, select **Add**.
 1. On the **Install an Extension** page, search for and select **Azure Pipelines Agent**, and then select **Next**.
 
-   ![Screenshot that shows selecting the Azure Pipelines Agent extension.](media/howto-provision-azure-vm-agents/azure-vm-create.png)
+   :::image type="content" source="media/howto-provision-azure-vm-agents/azure-vm-create.png" alt-text="Screenshot that shows selecting the Azure Pipelines Agent extension.":::
 
 1. On the **Configure Azure Pipelines Agent Extension** screen, specify the following information:
 
