@@ -17,8 +17,6 @@ monikerRange: '<= azure-devops'
 
 Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process!
 
-[!INCLUDE [region-move-paused-warning](../includes/region-move-paused-warning.md)]
-
 |Action |More info  |
 |---------|---------|
 |Find out what's new in Azure DevOps   | Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks. |
