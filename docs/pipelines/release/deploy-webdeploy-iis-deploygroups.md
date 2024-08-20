@@ -42,19 +42,19 @@ Learn how to use a Classic pipeline to deploy an ASP.NET, ASP.NET Core, or Node.
 
 A deployment group is a logical set of target machines that each have an Azure Pipelines deployment agent installed. Deployment groups make it easier to organize the servers that you want to use to host your app. Each machine interacts with Azure Pipelines to coordinate the deployment of your app.
 
-To create a deployment group:
+To create the deployment group:
 
 1. From your Azure DevOps project, select **Pipelines** > **Deployment groups** from the left menu.
 1. On the **Deployment groups** screen, select **New**, or select **Add a deployment group** if this deployment group is the first one in the project.
 1. Enter a **Deployment group name** and optional **Description**, and then select **Create**.
-1. In the machine registration section, select **Windows** for the **Type of target to register**. A registration script is generated.
+1. On the next screen, in the machine registration section, select **Windows** for the **Type of target to register**. A registration script is generated.
 1. Select **Use a personal access token in the script for authentication**. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 1. Select **Copy script to the clipboard**.
 
 On each of your target VMs:
 
-1. Sign in to the VM by using an account with administrative permissions.
-1. Open an Administrator PowerShell command prompt and run the script you copied to register the machine and install the agent.
+1. Use an account with administrative permissions to sign in to the VM.
+1. To register the machine and install the agent, open an Administrator PowerShell command prompt and run the script you copied.
 
    When you're prompted to configure optional tags for the agent, press Enter to skip. When you're prompted for the user account, press Enter to accept the defaults.
 
@@ -67,7 +67,7 @@ On the **Targets** tab of the Azure Pipelines **Deployment groups** page, you ca
 
 ## Create a release pipeline
 
-You can deploy the artifacts from your build pipeline to your IIS server by using a release pipeline.
+Deploy the artifacts from your build pipeline to your IIS server by using a release pipeline.
 
 1. From your Azure DevOps project, select **Pipelines** > **Releases**, and then select **New** > **New release pipeline**.
 1. On the **Select a template** screen, search for and select **IIS website deployment**, and then select **Apply**.

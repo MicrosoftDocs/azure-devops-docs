@@ -45,11 +45,11 @@ When you create a deployment group, a script is generated that you can run on ea
 
    As the script runs:
 
-   - To assign tags that let you limit deployments to certain servers in a [deployment group job](../../process/deployment-group-phases.md), enter *Y* when prompted to enter tags, and then enter a tag or tags.
+   - To assign tags that let you limit deployments to certain servers in a [deployment group job](../../process/deployment-group-phases.md), enter *Y* when prompted to enter tags, and then enter a tag or tags for this VM.
 
      Tags are limited to 256 characters each, are case insensitive, and there's no limit to the number of tags you can use.
 
-   - When prompted for the user account, accept the defaults.
+   - When prompted for a user account, accept the defaults.
 
    >[!NOTE]
    >If you get an error when running the script that a secure channel couldn't be created, run the following command at the Administrator PowerShell prompt:
@@ -62,7 +62,7 @@ On the **Targets** tab of the Azure Pipelines **Deployment groups** page, you ca
 
 ## Install the Azure Pipelines Agent Azure VM extension
 
-If you use Azure VMs as your deployment machines, you can install the Azure Pipelines Agent extension on each VM. The extension automatically registers the agent with a specified deployment group in your Azure DevOps project.
+If you use Azure VMs as your deployment machines, you can install the Azure Pipelines Agent extension on each VM. The extension automatically registers the agent with the specified deployment group in your Azure DevOps project.
 
 To install the agent by using the extension, first create the deployment group:
 
@@ -70,7 +70,7 @@ To install the agent by using the extension, first create the deployment group:
 1. On the **Deployment groups** screen, select **New**, or select **Add a deployment group** if this deployment group is the first one in the project.
 1. Enter a **Deployment group name** and optional **Description**, and then select **Create**.
 
-In the [Azure portal](https://portal.azure.com), install the extension on each target VM:
+In the [Azure portal](https://portal.azure.com), install the Azure Pipelines Agent extension on each target VM:
 
 1. On the VM page, select **Settings** > **Extensions + Applications** in the left navigation.
 1. On the **Extension** tab, select **Add**.
@@ -82,12 +82,12 @@ In the [Azure portal](https://portal.azure.com), install the extension on each t
 
    - **Azure DevOps Organization Url**: Enter the URL of your Azure DevOps organization, such as `https://dev.azure.com/contoso`.
    - **Team Project**: Enter your project name, such as *myProject*.
-   - **Deployment Group**: Enter the name of the deployment group you just created.
+   - **Deployment Group**: Enter the name of the deployment group you created.
    - **Agent Name**: Optionally, enter a name for the agent. If you don't enter anything, the agent is named the VM name appended with `-DG`.
    - **Personal Access Token**: Enter the [Personal Access Token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to use for authenticating to Azure Pipelines.
    - **Tags**: Optionally, specify a comma-separated list of tags to configure on the agent. Tags are limited to 256 characters each, are case insensitive, and there's no limit to the number of tags you can use.
 
-1. Select **Review & create**, and when validation passes, select **Create**.
+1. Select **Review + create**, and when validation passes, select **Create**.
 
 ## Use the AzureResourceGroupDeploymentV2 task
 
@@ -107,7 +107,7 @@ First create the deployment group:
 
 An ARM template is a JSON file that declaratively defines a set of Azure resources. Azure automatically reads the template and provisions the resources. You can deploy multiple services and their dependencies in a single template.
 
-To register and install the deployment agent, add a resources element to an ARM template under the `Microsoft.Compute/virtualMachine` resource, as shown in the following code.
+To register and install the deployment agent by using an ARM template, add a resources element under the `Microsoft.Compute/virtualMachine` resource, as shown in the following code.
 
 ```json
 "resources": [
