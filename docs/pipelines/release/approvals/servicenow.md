@@ -80,7 +80,7 @@ You can add ServiceNow integration to a Classic release pipeline or to a YAML pi
 
 1. On the **ServiceNow Change Management** settings screen, under **ServiceNow connection**, select the ServiceNow service connection you created earlier.
 
-   :::image type="content" source="media/servicenow-newform.png" alt-text="A screenshot showing how to configure the ServiceNow Change Management gate.":::
+   :::image type="content" source="media/servicenow-05.png" alt-text="A screenshot showing how to configure the ServiceNow Change Management gate.":::
 
 1. Complete the rest of the form as follows:
 
@@ -149,7 +149,7 @@ The change request closes automatically after deployment.
 
 ### Add the YAML task
 
-To update the change request, add the following [server job](../../process/phases.md#server-jobs) and `UpdateServiceNowChange Request@2` task to your YAML pipeline.
+To update the change request, add the following [server job](../../process/phases.md#server-jobs) and `UpdateServiceNowChangeRequest@2` task to your YAML pipeline.
 
 ```yaml
 stages:
@@ -163,12 +163,14 @@ stages:
     - task: UpdateServiceNowChangeRequest@2
       displayName: 'Update ServiceNow Change Request'
       inputs:
-        ServiceNowConnection: '<servicenow connection name>'
-        NewStatus: 'Assess'
-        WorkNotes: 'sample work notes'
-        otherParameters: '{"u_hello": "hello"}'
+        ServiceNowConnection: '<service-connection-name>'
+        NewStatus: '<status-to-set>'
+        WorkNotes: '<work-notes-for-change-request>'
+        otherParameters: '{"u_<field-name>": "<valid-value>"}'
 pool: server
 ```
+
+For example:
 
 :::image type="content" source="media/servicenow-13.png" alt-text="A screenshot showing the agentless task.":::
 
@@ -184,35 +186,35 @@ The change request closes automatically after deployment.
 
 ## FAQs
 
-### Q: What versions of ServiceNow are supported?
+### What versions of ServiceNow are supported?
 
 ::: moniker range="azure-devops"
-**A**: The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, Quebec, Rome, San Diego, Tokyo, and Utah releases.
+The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, Quebec, Rome, San Diego, Tokyo, and Utah releases.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
-**A**: The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, Quebec, San Diego, Tokyo, and Utah releases.
+The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, Quebec, San Diego, Tokyo, and Utah releases.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2022"
-**A**: The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, and Quebec releases.
+The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, and Quebec releases.
 ::: moniker-end
 
-### Q: What types of change request are supported?
+### What types of change request are supported?
 
-**A**: Azure Pipelines ServiceNow integration supports normal, standard, and emergency change requests.
+Azure Pipelines ServiceNow integration supports normal, standard, and emergency change requests.
 
-### Q: How do I set more change properties?
+### How do I set other change properties?
 
-**A**: You can specify more change properties from the **Additional change request parameters** field. Use a key-value pairs JSON format, with the name being the field name, not the label, prefixed with `u_`.
+You can specify more change properties from the **Additional change request parameters** field or in `otherParameters`. Use a key-value pairs JSON format, with the name being the field name, not the label, prefixed with `u_`.
 
-### Q: Can I update custom fields in the change request with more change request parameters?
+### Can I update custom fields in the change request with more change request parameters?
 
-**A**: If you define custom fields in the change request, you must [add mapping for custom fields in Import set transform map](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/Extensions/ServiceNow/Src#steps-to-add-mapping-for-custom-fields-in-import-set-transform-map-).
+If you define custom fields in the change request, you must [add mapping for custom fields in Import set transform map](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/Extensions/ServiceNow/Src#steps-to-add-mapping-for-custom-fields-in-import-set-transform-map-).
 
-### Q: How can I see dropdown values populated for Category, Status, and other fields?
+### How can I see dropdown values populated for Category, Status, and other fields?
 
-**A**: Change Management Core and Change Management - State Model plugins must be active on your ServiceNow instance for the dropdowns to work. For more information, see [Upgrade change management](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html) and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/state-model-activate-tasks.html).
+Change Management Core and Change Management - State Model plugins must be active on your ServiceNow instance for the dropdowns to work. For more information, see [Upgrade change management](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html) and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/state-model-activate-tasks.html).
 
 ## Resources
 

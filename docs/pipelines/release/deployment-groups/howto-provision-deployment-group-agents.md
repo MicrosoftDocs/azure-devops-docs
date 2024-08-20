@@ -109,6 +109,8 @@ An ARM template is a JSON file that declaratively defines a set of Azure resourc
 
 To register and install the deployment agent by using an ARM template, add a resources element under the `Microsoft.Compute/virtualMachine` resource, as shown in the following code.
 
+:::moniker range=">= azure-devops-2022"
+
 ```json
 "resources": [
   {
@@ -143,9 +145,50 @@ To register and install the deployment agent by using an ARM template, add a res
 
 > [!NOTE]
 > For a Linux VM, the `type` parameter under `properties` in the code should be `TeamServicesAgentLinux`.
- 
+
+:::moniker-end
+
+:::moniker range="= azure-devops-2022"
+
 > [!NOTE]
-> In Azure DevOps Server 2022.0 and earlier, the allowable values for `AgentMajorVersion` are `auto|N`. In Azure DevOps Server 2022.1 and higher, the allowable values for `AgentMajorVersion` are `auto|2|3`.
+> In Azure DevOps Server 2022.1 and higher, the allowable values for `AgentMajorVersion` are `auto|2|3`. In Azure DevOps Server 2022.0 and earlier, the allowable values for `AgentMajorVersion` are `auto|N`.
+
+:::moniker-end
+
+:::moniker range="< azure-devops-2022"
+
+```json
+"resources": [
+  {
+    "name": "[concat(parameters('vmNamePrefix'),copyIndex(),'/TeamServicesAgent')]",
+    "type": "Microsoft.Compute/virtualMachines/extensions",
+    "location": "[parameters('location')]",
+    "apiVersion": "2015-06-15",
+    "dependsOn": [
+        "[resourceId('Microsoft.Compute/virtualMachines/',
+                      concat(parameters('vmNamePrefix'),copyindex()))]"
+    ],
+    "properties": {
+      "publisher": "Microsoft.VisualStudio.Services",
+      "type": "TeamServicesAgent",
+      "typeHandlerVersion": "1.0",
+      "autoUpgradeMinorVersion": true,
+      "settings": {
+        "VSTSAccountName": "[parameters('VSTSAccountName')]",
+        "TeamProject": "[parameters('TeamProject')]",
+        "DeploymentGroup": "[parameters('DeploymentGroup')]",
+        "AgentName": "[parameters('AgentName')]",
+        "AgentMajorVersion": "auto|N",
+        "Tags": "[parameters('Tags')]"
+      },
+      "protectedSettings": {
+      "PATToken": "[parameters('PATToken')]"
+     }
+   }
+  }
+]
+```
+:::moniker-end
 
 In the preceding code:
 
@@ -185,13 +228,13 @@ Alternatively, you can install the agent by using advanced deployment options. F
 
    - Select **Copy Azure VM tags to agents** to copy any tags already configured on the Azure VM to the corresponding deployment group agent.
 
-     By default, all [Azure tags](/azure/azure-resource-manager/resource-group-using-tags) are copied using the `Key: Value`format, for example `Role: Web`.
+     By default, all [Azure tags](/azure/azure-resource-manager/resource-group-using-tags) are copied using the `Key: Value` format, for example `Role: Web`.
 
 1. Save the pipeline, and create a release to install the agents.
 
 ## Troubleshoot the extension
 
-These are some known issues with the Azure Pipelines Agent extension.
+There are some known issues with the Azure Pipelines Agent extension.
 
 #### Status file is too large
 
