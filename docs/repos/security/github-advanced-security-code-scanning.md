@@ -65,7 +65,7 @@ CodeQL uses the following language identifiers:
 > * Use `javascript-typescript` to analyze code written in JavaScript, TypeScript or both
 
 
-You can view the specific queries and task details used by CodeQL by looking through the build log, similar to dependency scanning. 
+You can view the specific queries and task details used by CodeQL by looking through the build log. 
 
 ![Screenshot of code scanning publish results task](./media/code-scanning-build-log.png)
 
@@ -130,6 +130,61 @@ To dismiss an alert:
 ![Screenshot of how to dismiss a code scanning alert](./media/code-scanning-dismiss-alert.png)
 
 This action only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
+
+## Code scanning build mode customization
+Code scanning supports two build modes when setting up a pipeline for scanning:
+* `none` - the CodeQL database is created directly from the codebase without building the codebase (supported for all interpreted languages, and additionally supported for C# and Java).
+* `manual` - you define the build steps to use for the codebase in the workflow (supported for all compiled languages).
+
+For more information on the different build modes including a comparison on the benefits of each build mode, see [CodeQL code scanning for compiled languages](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages). 
+
+For running code scanning analysis through GitHub Advanced Security for Azure DevOps, the `autobuild` build mode is instead a separate build task, [`AdvancedSecurity-CodeQL-Autobuild@1`](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1?view=azure-pipelines).
+
+> [!TIP]
+> If build mode `none` is specified and a language other than supported complied languages C# or Java, the pipeline task may not work as expected.
+> Build mode `none` currently works in conjunction with other interpreted languages (e.g., JavaScript, Python, Ruby).
+
+Here is an example of a valid configuration with multiple languages and `none` build mode:
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger: none
+ 
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: AdvancedSecurity-Codeql-Init@1
+  displayName: Initialize CodeQL
+  inputs:
+# build mode `none` is supported for C# and Java, and JavaScript is an interpreted language
+# and build mode `none` has no impact on JavaScript analysis
+    languages: 'csharp, java, javascript' 
+    buildtype: 'none'
+
+- task: AdvancedSecurity-Codeql-Analyze@1
+  displayName: Perform CodeQL Analysis
+ ```
+
+Here is an example of an invalid configuration with multiple languages and `none` build mode:
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger: none
+ 
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: AdvancedSecurity-Codeql-Init@1
+  displayName: Initialize CodeQL
+  inputs:
+# build mode `none` is supported for C# but build mode `none` is NOT supported for Swift
+# so this pipeline definition will result in a failed run
+    languages: 'csharp, swift'
+    buildtype: 'none'
+
+- task: AdvancedSecurity-Codeql-Analyze@1
+  displayName: Perform CodeQL Analysis
+ ```
 
 ## Using custom queries with CodeQL
 By default, if you do not have a custom configuration file specified in your pipeline setup, CodeQL runs the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. You also need to create a custom configuration file to modify CodeQL's default analysis.
