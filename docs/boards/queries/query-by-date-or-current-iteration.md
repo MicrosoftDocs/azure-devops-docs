@@ -99,7 +99,7 @@ Not all fields are valid for all work item types. Jump to [date fields](#date_fi
 
 > [!TIP]
 > - Remember to enter dates in the **Date Pattern** field that you set for your [personal profile](../../organizations/settings/set-your-preferences.md).
-> - To understand how `AND/OR` clauses are grouped, see the **Group clauses** section in [Define a work item query in Azure Boards](../queries/using-queries.md#group-clauses). To view the WIQL syntax for a query, install the [WIQL editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor), which allows you to see the WIQL version of any Query Editor entry.
+> - To understand how `AND/OR` clauses are grouped, see the **Group clauses** section in [Define a work item query in Azure Boards](../queries/using-queries.md#group-clauses). To view the WIQL syntax for a query, install the [WIQL editor extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor), which allows you to see the WIQL version of any Query Editor entry.
 
 ---
 :::row:::
