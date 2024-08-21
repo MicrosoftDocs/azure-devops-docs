@@ -1,9 +1,7 @@
 
-
-> [!div class="mx-tdCol2BreakAll"]  
 > | Role | Description |
 > |------|---------|
-> | **Reader** | Can only view deployment groups.   |
-> | **Creator** | Can view and create deployment groups.   |
-> | **User** | Can view and use but cannot manage or create deployment groups. |
-> | **Administrator** | Can administer roles, manage, view and use deployment groups.  |
+> | **Reader** | View deployment groups. |
+> | **Creator** | View and create deployment groups. |
+> | **User** | View and use deployment groups, but cannot manage or create them. |
+> | **Administrator** | Administer roles, manage, view, and use deployment groups. |
