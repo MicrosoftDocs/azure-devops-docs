@@ -127,17 +127,17 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
 
 - **Example**:
 
-```HTTP
-PATCH https://pkgs.dev.azure.com/fabrikam-fiber-inc/litware/_apis/packaging/feeds/litware-tools/nuget/packages/LitWare.Common/versions/1.0.0?api-version=5.1-preview.1 HTTP/1.1
-Content-Type: application/json-patch+json
-
-{
+```
+$ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1" \
+-h 'Content-Type: application/json' \
+-u ':${PAT}' \
+-d $'{
   "views": {
     "op": "add",
     "path": "/views/-",
     "value": "Release"
   }
-}
+}'
 ```
 
 ## Manage views
