@@ -125,7 +125,9 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
 
 ---
 
-- **Example**:
+### Examples
+
+### [Curl](#tab/curl)
 
 ```
 $ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1" \
@@ -139,6 +141,27 @@ $ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/pac
   }
 }'
 ```
+
+### [PowerShell](#tab/powershell)
+
+```
+$uri = "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1"
+$headers = @{
+    "Content-Type" = "application/json"
+    Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$env:PAT"))
+}
+$body = @{
+    views = @{
+        op    = "add"
+        path  = "/views/-"
+        value = "Release"
+    }
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri $uri -Method Patch -Headers $headers -Body $body
+```
+
+---
 
 ## Manage views
 
