@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 08/20/2024
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -267,63 +267,11 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="11"><strong>2024 Q2</strong></td>
-       <td>
+      <td rowspan="9"><strong>2024 Q3</strong></td>
+        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
        <td>General</td>
-      </tr>     
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a>
-         </td>
-         <td>Boards</td> 
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available)">Add link to GitHub commit or pull request from work item</a></td>
-         <td>Boards</td>         
-      </tr> 
-      <tr>
-       <td>
-         <a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[Show AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">Show AB# links on GitHub pull request (preview)</a>
-       </td>
-         <td>Boards</td>         
-       </tr>        
-       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments</a></td>
-        <td>Boards</td>
-      </tr>
-       <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-area-path" data-raw-source="[Prevent deleting of an active area or iteration path](/azure/devops/release-notes/roadmap/2024/boards-delete-area-path)">Prevent deleting of an active area or iteration path</a>
-         </td>
-         <td>Boards</td>        
-       </tr>      
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/no-tfvc-in-new-projects" data-raw-source="[Removal of TFVC from new projects](/azure/devops/release-notes/roadmap/2024/no-tfvc-in-new-projects)">Removal of TFVC from new projects</a>
-         </td>
-         <td>Repos</td>        
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
-         <td>Pipelines</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets" data-raw-source="[Improved secret detection](/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets)">Improved secret detection</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif)">Third-party SARIF support</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <td rowspan="6"><strong>2024 Q3</strong></td>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
-         <td>Pipelines</td>
       </tr>
       <tr>
          <td>
@@ -337,6 +285,20 @@ For the past several years, all our pipelines investments have been in the area 
          </td>
          <td>Boards</td> 
       </tr> 
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+      </tr>
+      <tr>
+       <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>Pipelines</td>
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/no-tfvc-in-new-projects" data-raw-source="[Removal of TFVC from new projects](/azure/devops/release-notes/roadmap/2024/no-tfvc-in-new-projects)">Removal of TFVC from new projects</a>
+         </td>
+         <td>Repos</td>        
+      </tr>    
       <tr>
         <td>
             <a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a>
