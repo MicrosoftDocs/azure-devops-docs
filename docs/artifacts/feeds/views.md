@@ -127,9 +127,9 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
 
 ### Examples
 
-### [Curl](#tab/curl)
+### [curl](#tab/curl)
 
-```
+```curl
 $ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1" \
 -h 'Content-Type: application/json' \
 -u ':${PAT}' \
@@ -144,7 +144,7 @@ $ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/pac
 
 ### [PowerShell](#tab/powershell)
 
-```
+```PowerShell
 $uri = "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1"
 $headers = @{
     "Content-Type" = "application/json"
