@@ -5,7 +5,9 @@ description: Learn how to authenticate to Azure Repos Git repositories with SSH 
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 06/21/2023
+ms.date: 08/20/2024
+ms.author: v-catherbund
+author: cebundy
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -181,13 +183,13 @@ Proceed only if they match!
 
    [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
-2. Run `git clone` from the command prompt.
+1. Run `git clone` from the command prompt.
 
    ```bash
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
    ```
 
-   If an SSH Agent isn't managing your SSH keys, you should now be prompted to enter your passphrase:
+   If you are not using an SSH Agent, you are prompted to enter your passphrase:
 
    ```Output
    Cloning into 'FabrikamFiber'...
