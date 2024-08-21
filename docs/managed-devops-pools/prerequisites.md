@@ -6,7 +6,7 @@ ms.subservice: azure-devops-managed-devops-pools
 author: steved0x
 ms.author: sdanie
 ms.topic: conceptual
-ms.date: 08/21/2024
+ms.date: 08/20/2024
 ---
 
 # Prerequisites
