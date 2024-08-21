@@ -57,13 +57,20 @@ To use key-based authentication, you first need to generate public/private key p
 >[!NOTE]
 > The only SSH key type supported by Azure DevOps is _RSA_.
 
-To generate key files using the RSA algorithm, run the following command from a PowerShell or another shell such as `bash` on your client:
+To generate key files using the RSA algorithm supported by Azure DevOps (either RSA-SHA2-256 or RSA-SHA2-512), run one of the following commands from a PowerShell or another shell such as `bash` on your client:
 
 ```powershell
-ssh-keygen -t rsa
+ssh-keygen -t rsa-sha2-256
 ```
 
-The output from the command should display the following output where `username` is replaced the username that you're logged in as:
+or
+
+```powershell
+ssh-keygen -t rsa-sha2-512
+```
+
+
+The output from the command should display the following output (where `username` is replaced by your username):
 
 ```Output
 Generating public/private rsa key pair.

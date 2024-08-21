@@ -508,7 +508,6 @@ For a JavaScript project, here is a sample YAML snippet:
 - task: AdvancedSecurity-Dependency-Scanning@1
 ```
 
-
 ### Dependency scanning not picking up new vulnerabilities 
 
 If you are running a new build but not seeing new vulnerabilities as expected, ensure that the build is run with a new commit.

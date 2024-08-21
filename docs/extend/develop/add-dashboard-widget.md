@@ -102,7 +102,7 @@ Add the following HTML in `hello-world.html`. We add the mandatory reference to 
 
 Even though we're using an HTML file, most of the HTML head elements other than script and link are ignored by the framework.
 
-<a name="widget-javascript"></a>
+<a id="widget-javascript"></a>
 
 ### Step 3: Update JavaScript
 
@@ -134,7 +134,7 @@ In our case, the following code prints "Hello World" in the widget. Add this `sc
 </script>
 ```
 
-<a name="vss-methods"></a>
+<a id="vss-methods"></a>
 
 - `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
 - We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when it's done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded. We pass `usePlatformStyles: true` so that the widget can use Azure DevOps core styles for HTML elements (such as body, div, and so on). If the widget prefers to not use these styles, they can pass in `usePlatformStyles: false`.
@@ -352,11 +352,11 @@ Copy the file `hello-world.html` from the previous example, and rename the copy 
 |--- node_modules           
 |--- SDK    
     |--- scripts
-        |--- VSS.SDK.min.js       
-|--- img                        
-    |--- logo.png                           
+        |--- VSS.SDK.min.js
+|--- img
+    |--- logo.png
 |--- scripts                        
-|--- hello-world.html               // html page to be used for your widget  
+|--- hello-world.html               // html page to be used for your widget
 |--- hello-world2.html              // renamed copy of hello-world.html
 |--- vss-extension.json             // extension's manifest
 
@@ -368,8 +368,8 @@ This action allows the framework to uniquely identify the widget within the exte
 ```html
 <!DOCTYPE html>
 <html>
-    <head>                          
-        <script src="sdk/scripts/VSS.SDK.min.js"></script>              
+    <head>
+        <script src="sdk/scripts/VSS.SDK.min.js"></script>
         <script type="text/javascript">
             VSS.init({
                 explicitNotifyLoaded: true,
@@ -378,7 +378,7 @@ This action allows the framework to uniquely identify the widget within the exte
 
             VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
                 WidgetHelpers.IncludeWidgetStyles();
-                VSS.register("HelloWorldWidget2", function () {                
+                VSS.register("HelloWorldWidget2", function () {
                     return {
                         load: function (widgetSettings) {
                             var $title = $('h2.title');
@@ -389,7 +389,7 @@ This action allows the framework to uniquely identify the widget within the exte
                     }
                 });
                 VSS.notifyLoadSucceeded();
-            });       
+            });
         </script>
     </head>
     <body>
@@ -1070,4 +1070,3 @@ return {
 [Repackage](#package-the-extension) and [update](../publish/overview.md) your extension again. Refresh the dashboard that has this widget. 
 
 Any changes to the widget name, in the configuration mode, update the widget title now.
-

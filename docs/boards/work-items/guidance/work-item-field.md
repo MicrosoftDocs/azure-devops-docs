@@ -9,36 +9,28 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/17/2023
+ms.date: 08/19/2024
 ---
 
 # Field descriptions for default and work item fields used in process templates
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
+Use this index to find descriptions of each field used to track work items. This reference covers all fields defined within the core system processes/templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you selected when you [created your project](../../../organizations/projects/create-project.md).
 
 ::: moniker range="azure-devops"  
 
-To support other tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
+To support other tracking needs, [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"  
 
-To support other tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).  
-
+To support other tracking needs, define your own custom work item fields using the Inheritance process model. If your project collection uses the On-premises XML process model, see [Modify or add a custom field](../../../reference/add-modify-field.md).
 ::: moniker-end  
-
-  
-
-
-::: moniker range=">= azure-devops-2019"  
 
 > [!NOTE]   
 > The [Analytics Service](../../../report/powerbi/what-is-analytics.md) doesn't support reporting on plain text and HTML fields. 
-
-::: moniker-end  
 
 ## Alphabetical index 
 
@@ -48,8 +40,7 @@ Values in parenthesis indicate the following criteria:
 - **Agile**: Used only by the [Agile process](agile-process.md)  
 - **CMMI**: Used only by the [CMMI process](cmmi-process.md)  
 - **Scrum**: Used only by the [Scrum process](scrum-process.md)  
-- **TCM**: Used to support Test case management   
-
+- **TCM**: Used to support test case management   
 
 :::row:::
    :::column span="1":::
@@ -239,11 +230,11 @@ Values in parenthesis indicate the following criteria:
 > 1. This field is available from Azure DevOps Services and Azure DevOps Server 2020 and later versions.
 > 2. This field is available for Azure DevOps Services only.
 
-Using the system fields or other fields you added to your project collection, you can enable meaningful cross-project reports and queries. Also, any nonsystem field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any nonsystem field that you might want to use to generate a query or report in the **FIELDS** section.  
+Use system fields or custom fields added to your project collection to enable meaningful cross-project reports and queries. Any nonsystem field referenced in the workflow or forms section of the work item type definition must have a **FIELD** element defined in the **FIELDS** section of the work item type definition XML file. Specify any nonsystem field you want to use for generating queries or reports in the **FIELDS** section. 
 
 ## Field reference articles 
 
-The following articles describe fields that are used in common by several WITs, or those fields that are functionally specific to just one or a few WITs.  
+The following articles describe fields that are commonly used by several WITs or are functionally specific to one or a few WITs. For more information, see [Work item field and attributes in Azure Boards](../work-item-fields.md).
 
 ### Fields common to many work types
 
@@ -278,20 +269,20 @@ The following articles describe fields that are used in common by several WITs, 
 
 ::: moniker range=">= azure-devops-2022"  
 
-- [About work item fields](../work-item-fields.md)
-- [About managed queries](../../queries/about-managed-queries.md)
+- [Learn about work item fields](../work-item-fields.md)
+- [Learn about managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
-- [About processes and process templates](choose-process.md)  
+- [Learn about processes and process templates](choose-process.md)  
   
 ::: moniker-end  
 
 ::: moniker range="< azure-devops-2022"  
 
-- [About work item fields](../work-item-fields.md)
-- [About managed queries](../../queries/about-managed-queries.md)
+- [Learn about work item fields](../work-item-fields.md)
+- [Learn about managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
-- [About processes and process templates](choose-process.md)  
-- [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)  
+- [Learn about processes and process templates](choose-process.md)  
+- [Learn about reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)  
 
 ::: moniker-end     
 
