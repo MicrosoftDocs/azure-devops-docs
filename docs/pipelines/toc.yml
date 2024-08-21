@@ -233,6 +233,9 @@
   - name: About agents & agent pools
     displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
     href: agents/agents.md
+  - name: Managed DevOps pools
+    href: /azure/devops/managed-devops-pools/overview
+    displayName: pools, agents
   - name: Agent version 3.x
     href: agents/v3-agent.md
   - name: Create & manage agent pools
@@ -532,7 +535,7 @@
     - name: Xcode
       displayName: app certificate, test flight
       href: ecosystems/xcode.md
-  - name: Microsoft Learn course
+  - name: Microsoft Learn courses
     items:
     - name: Create a build pipeline
       href: /training/modules/create-a-build-pipeline/

@@ -87,7 +87,7 @@ You can use the `@CurrentIteration` macro in a query from the following clients:
 - Visual Studio 2019 or later versions connected to Azure Boards
 - The REST API
 
-You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter. An example is `@CurrentIteration('[Project]/Team')`.
+You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter. An example is `@CurrentIteration('[Project]\Team')`.
 
 An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Microsoft Excel or Microsoft Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
@@ -99,7 +99,7 @@ Not all fields are valid for all work item types. Jump to [date fields](#date_fi
 
 > [!TIP]
 > - Remember to enter dates in the **Date Pattern** field that you set for your [personal profile](../../organizations/settings/set-your-preferences.md).
-> - To understand how `AND/OR` clauses are grouped, see the **Group clauses** section in [Define a work item query in Azure Boards](../queries/using-queries.md#group-clauses). To view the WIQL syntax for a query, install the [WIQL editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor), which allows you to see the WIQL version of any Query Editor entry.
+> - To understand how `AND/OR` clauses are grouped, see the **Group clauses** section in [Define a work item query in Azure Boards](../queries/using-queries.md#group-clauses). To view the WIQL syntax for a query, install the [WIQL editor extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor), which allows you to see the WIQL version of any Query Editor entry.
 
 ---
 :::row:::
