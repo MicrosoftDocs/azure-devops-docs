@@ -6,12 +6,12 @@ ms.topic: include
 ---
 
  
-> |  Role (project-level)  | Description |
-> |------|---------|
-> | **Reader** | View the pool. Typically, add operators to this role to monitor build and deployment jobs in the pool. |
-> | **User** | View and use the pool when authoring build or release pipelines. |
-> | **Creator** | Create and use the pool when authoring build or release pipelines. |
-> | **Administrator** | Manage membership for all roles of the pool, and view and use the pools. The user who created a pool is automatically added to the Administrator role for that pool.
+| Role (project-level) | Description |
+|------|---------|
+| **Reader** | View the pool. Typically, add operators to this role to monitor build and deployment jobs in the pool. |
+| **User** | View and use the pool when authoring build or release pipelines. |
+| **Creator** | Create and use the pool when authoring build or release pipelines. |
+| **Administrator** | Manage membership for all roles of the pool, and view and use the pools. The user who created a pool is automatically added to the Administrator role for that pool. |
 
 Manage the security of all project agent pools from the **Security** tab. Role memberships for individual project agent pools automatically inherit from these roles. 
 
