@@ -1028,6 +1028,3 @@
     href: /azure/devops/server/release-notes/azuredevops2020
 - name: Documentation updates
   href: ./docswhatsnew/toc.yml
-
-- name: Subscribe to updates
-  href: https://azure.microsoft.com/updates/
