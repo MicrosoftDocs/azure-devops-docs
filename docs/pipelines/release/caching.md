@@ -156,7 +156,8 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Scope                                             | Read | Write |
 |---------------------------------------------------|------|-------|
 | Source branch                                     | Yes  | Yes   |
-| main branch (default branch)                      | Yes  | No    |
+| `main` branch                                     | Yes  | No    |
+| `master` branch                                   | Yes  | No    |
 
 ### Pull request runs
 
@@ -165,7 +166,8 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Source branch                                     | Yes  | No    |
 | Target branch                                     | Yes  | No    |
 | Intermediate branch (such as `refs/pull/1/merge`) | Yes  | Yes   |
-| main branch (default branch)                      | Yes  | No    |
+| `main` branch                                     | Yes  | No    |
+| `master` branch                                   | Yes  | No    |
 
 ### Pull request fork runs
 
@@ -173,7 +175,8 @@ When a cache step is encountered during a run, the cache identified by the key i
 |---------------------------------------------------|------|-------|
 | Target branch                                     | Yes  | No    |
 | Intermediate branch (such as `refs/pull/1/merge`) | Yes  | Yes   |
-| main branch (default branch)                      | Yes  | No    |
+| `main` branch                                     | Yes  | No    |
+| `master` branch                                   | Yes  | No    |
 
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
