@@ -56,5 +56,4 @@ The [Azure Resource health REST API](/rest/api/azure/devops/status) can retrieve
 
 ## Related articles
 
-- [Azure Service Health overview](/azure/service-health/service-health-overview)  
 - [Blog post: How do you measure quality of a service?](https://devblogs.microsoft.com/bharry/how-do-you-measure-quality-of-a-service/) 
