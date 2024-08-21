@@ -56,16 +56,13 @@ Before registering an agent using a Service Principal you must have [created a S
 For more information about using Service Principal with Azure DevOps, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 > [!NOTE]
-> If you are configruing an agent from Azure China Cloud to Azure DevOps organization in Azure Public Cloud using an SPN (in Azure Public Cloud), you may get the following error:
+> If you are configuring an agent from Azure China Cloud to an Azure DevOps organization in Azure Public Cloud using a service principal (in Azure Public Cloud), you may get the following error:
 >
-> ClientSecretCredential authentication failed: AADSTS90002: Tenant 'xxxxxxxxxxxxxx' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Check with your subscription administrator, this may happen if there are no active subscriptions for the tenant.
+> `ClientSecretCredential authentication failed: AADSTS90002: Tenant 'xxxxxxxxxxxxxx' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Check with your subscription administrator, this may happen if there are no active subscriptions for the tenant.`
 >
-> To resolve this error, set the login URL to Azure Public Cloud login by setting the environment variable, $AZURE_AUTHORITY_HOST to 
-"https://login.microsoftonline.com". Then run the agent config.cmd.
+> To resolve this error, set the login URL to Azure Public Cloud login by setting the environment variable `$AZURE_AUTHORITY_HOST` to 
+`https://login.microsoftonline.com`, then run the agent config.cmd.
 > 
-> See [Azure AD logon](https://learn.microsoft.com/en-us/azure/china/resources-developer-guide)
-> 
-> [Help on other options](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/windows-agent?view=azure-devops#help-on-other-options)
->
-> [EnvironmentCredentialClass](https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.environmentcredential?view=azure-python)
->
+> For more information, see [Azure in China developer guide](/azure/china/resources-developer-guide), 
+> [Help on agent registration options](/azure/devops/pipelines/agents/windows-agent#help-on-other-options), and
+> [EnvironmentCredentialClass](/python/api/azure-identity/azure.identity.environmentcredential).
