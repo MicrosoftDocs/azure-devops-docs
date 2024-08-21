@@ -138,12 +138,12 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "ravikum",
+        "pipelines/test/**": "jeom",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "vijayma",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma",
-        "test/**": "ravikum"
+        "test/**": "jeom"
       },
       "author": {
         "artifacts/**": "ramiMSFT",

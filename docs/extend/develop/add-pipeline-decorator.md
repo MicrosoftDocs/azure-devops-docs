@@ -86,6 +86,7 @@ Let's take a look at the properties and what they're used for:
 > [!NOTE] 
 > [Deployment jobs](../../pipelines/process/deployment-jobs.md) in a YAML pipeline only support `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks` targets.
 > [Jobs](../../pipelines/process/phases.md) support all YAML pipeline targets.
+> Deployment jobs are not supported in classic release pipelines.
 
 In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` because we want to run at the end of all build jobs.
 
