@@ -6,14 +6,14 @@ ms.subservice: azure-devops-managed-devops-pools
 author: steved0x
 ms.author: sdanie
 ms.topic: conceptual
-ms.date: 08/12/2024
+ms.date: 08/21/2024
 ---
 
 # Prerequisites
 
 Before getting started with Managed DevOps Pools, you must perform the following steps.
 
-1. [Connect your Azure DevOps organization to Microsoft Entra ID and verify membership in your Azure subscription tenant](#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership-in-your-azure-subscription-tenant)
+1. [Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership)
 1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription)
 1. [Verify Azure DevOps permissions](#verify-azure-devops-permissions)
 1. [Review Managed DevOps Pools quotas](#review-managed-devops-pools-quotas)
@@ -24,7 +24,7 @@ Managed DevOps Pools requires a Dev Center and Dev Center project. You can creat
 
 After completing the prerequisites, you can get started creating your first [Managed DevOps Pool](./quickstart-azure-portal.md).
 
-## Connect your Azure DevOps organization to Microsoft Entra ID and verify membership in your Azure subscription tenant
+## Connect your Azure DevOps organization to Microsoft Entra ID and verify membership
 
 To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the Microsoft Entra ID tenant for both your Azure DevOps organization and your Azure subscription.
 
