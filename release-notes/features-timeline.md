@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 08/20/2024
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -321,9 +321,11 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="6"><strong>2024 Q3</strong></td>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
-         <td>Pipelines</td>
+      <td rowspan="9"><strong>2024 Q3</strong></td>
+        <td>
+         <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
+       </td>
+       <td>General</td>
       </tr>
       <tr>
          <td>
@@ -337,6 +339,20 @@ For the past several years, all our pipelines investments have been in the area 
          </td>
          <td>Boards</td> 
       </tr> 
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+      </tr>
+      <tr>
+       <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>Pipelines</td>
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/no-tfvc-in-new-projects" data-raw-source="[Removal of TFVC from new projects](/azure/devops/release-notes/roadmap/2024/no-tfvc-in-new-projects)">Removal of TFVC from new projects</a>
+         </td>
+         <td>Repos</td>        
+      </tr>    
       <tr>
         <td>
             <a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a>
