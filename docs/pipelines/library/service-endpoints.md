@@ -372,7 +372,7 @@ Then, complete the following steps to register your GitHub account in your profi
 2. Choose **Personal access tokens**.
 3. Select **Add** and enter the information required to create the token.
 
-For more information, see [Artifact sources - version control](../release/artifacts.md#artifact-sources---version-control).
+For more information, see [Artifact sources - version control](../release/artifacts.md#azure-repos-github-and-tfvc).
 
 ### GitHub Enterprise Server service connection
 
@@ -433,7 +433,7 @@ Use the following parameters to define a connection to the Jenkins service.
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#artifact-sources---jenkins).
+For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
 
 
 ### Jira service connection
@@ -719,12 +719,6 @@ Use the following parameters when you define and secure a connection to Visual S
 ## Extensions for other service connections
 
 Other service connection types and tasks can be installed as extensions. See the following examples of service connections available through extensions:
-
-* [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
-  Even when the Azure DevOps/TFS machine is unreachable from Azure Pipelines, you can deploy on-premises builds with Azure Pipelines through a service connection and the **Team Build (external)** artifact. For more information, see [External TFS](../release/artifacts.md#artifact-sources---tfs-server) and [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
-
-* [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
-  This extension provides integration with TeamCity through a TeamCity service connection, enabling artifacts produced in TeamCity to be deployed by using Azure Pipelines. For more information, see [TeamCity](../release/artifacts.md#artifact-sources---teamcity).
 
 * [System Center Virtual Machine Manager (SCVMM) Integration](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp).
   Connect to an SCVMM server to provision virtual machines and do actions on them such as:

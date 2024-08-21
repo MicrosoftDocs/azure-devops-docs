@@ -8,22 +8,22 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 05/22/2023
+  ms.date: 08/12/2024
 
 
-title: Work in Excel connected to Azure Boards FAQs   
+title: FAQs about working in Excel connected to Azure Boards  
 
  
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]  
 
-  Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
+  Find answers to frequently asked questions about using Microsoft Excel to add or modify work items in Azure DevOps. 
 
-  If you're having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also be sure you've reviewed the information in [Azure Boards and Office integration](track-work.md). 
+  If you encounter connection issues, ensure you meet the prerequisites in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also, review the information in [Azure Boards and Office integration](track-work.md). 
   
   ::: moniker range=">= azure-devops-2020" 
    > [!TIP]  
-   > The recommended approach for bulk import or update of work items is to use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
+   > For bulk importing or updating work items, we recommend using the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
   ::: moniker-end 
 
 sections:
@@ -32,10 +32,6 @@ sections:
 
     questions: 
 
-      - question: What versions of Azure DevOps work with Excel?
-        answer: |
-          All versions from TFS 2013 through Azure DevOps Server 2020 and Azure DevOps Services/Azure Boards support integration with Microsoft Excel.
-
       - question: What do I need to use Excel to add or modify work items?
         answer: |
           You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools, and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
@@ -43,19 +39,19 @@ sections:
           > [!IMPORTANT]  
           > Microsoft Project Integration and the **TFSFieldMapping** command aren't supported for:  
           > - Visual Studio 2019 and Azure DevOps Office® Integration 2019  
-          > - Azure DevOps Server 2019 and later versions, including Azure DevOps Services. 
+          > - Azure DevOps Server 2019 and newer, including Azure DevOps Services 
           > 
-          > However, full support for Microsoft Excel integration is maintained and is the recommended alternative.
+          > But, we fully support Microsoft Excel integration, which is the recommended alternative.
 
-          Once you've installed the add-in, open Excel and look for the **Team** ribbon.
+          Once you install the add-in, open Excel and look for the **Team** ribbon.
 
       - question: Can I use Excel on my Mac?
         answer: |
-          **No**. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
+          **No**. macOS isn't supported. Even if you install Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
 
       - question: Can I open a query in Excel from the web portal?  
         answer: |
-          **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you've created in the web portal or from Team Explorer. 
+          **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you created in the web portal or from Team Explorer. 
 
           > [!div class="mx-imgBorder"]  
           > [Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
@@ -71,19 +67,17 @@ sections:
           **No**. For Azure DevOps Server 2019, Excel is the only supported method.
           ::: moniker-end  
 
-            
-
       - question: How do I connect an existing Excel workbook to Azure DevOps?  
         answer: |
           See [Connect Azure Boards to an Office client](track-work.md). 
 
       - question: How do I share an Excel workbook with others? 
         answer: |
-          If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For more information, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md).
+          To share an Excel workbook that has work items listed within it, you might want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For more information, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md).
 
       - question:  How do I connect when special protocols are in use on my network?   
         answer: |
-          If your network uses TLS 1.1 or TLS 1.2 security protocol, then you may have network connection issues. To resolve these issues, see [Allowed address lists and network connections, Domain URLs to allow](../../../organizations/security/allow-list-ip-url.md).
+          If your network uses TLS 1.1 or TLS 1.2 security protocol, then you might have network connection issues. To resolve these issues, see [Allowed address lists and network connections, Domain URLs to allow](../../../organizations/security/allow-list-ip-url.md).
 
       - question: How do I disable the Team menu?   
         answer: |
@@ -114,22 +108,16 @@ sections:
         answer: |
           When you open a direct-links query in Excel, the add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
 
-
       - question: Can I bulk-edit link types other than tree-topology link types? 
         answer: |
           **No**. Excel only supports adding and modifying hierarchical links. To bulk edit links of other types, you can use the following clients: 
-          ::: moniker range=">= azure-devops-2020" 
+          ::: moniker range="<= azure-devops-2022" 
           - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
           - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+          ::: moniker-end
+          ::: moniker range "azure-devops"
           - Use the [az boards work-item relation add](/cli/azure/boards/work-item/relation) command.
           ::: moniker-end 
-
-          ::: moniker range="azure-devops-2019" 
-          - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
-          - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-          ::: moniker-end 
-
-           
 
 
   - name: Work with test work items 
@@ -167,12 +155,12 @@ sections:
             A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
 
           - [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
-            If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
+            If hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
 
       - question: How do I resolve invalid links tree list in Excel?
         answer: |
 
-          If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items. It occurs if the title of a work item title is missing or occurs in the wrong title column.  
+          If you try to publish a tree list containing an invalid link, the **Work Item Publishing Errors** dialog box appears with an error message stating why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items. It occurs if the title of a work item title is missing or occurs in the wrong title column.  
           
           To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md).
           
@@ -180,11 +168,11 @@ sections:
 
           If you add a value to multiple Title columns of a work item, when you try to publish the tree, the error message **TF208000** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link.  
   
-          1.  Note the row number that appears in the dialog box.    
-          2.  Close the **Work Item Publishing Errors** dialog box.   
-          3.  In the work item list, find the row that the error message specified.   
-          4.  Delete the duplicate title or titles so that only one title column has a value.   
-          5.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
+          1. Note the row number that appears in the dialog box.    
+          2. Close the **Work Item Publishing Errors** dialog box.   
+          3. In the work item list, find the row that the error message specified.   
+          4. Delete the duplicate title or titles so that only one title column has a value.   
+          5. On the **Team** tab, in the **Work Items** group, choose **Publish**.  
  
           **Error message TF208001: Child work item disconnected from parent**  
 
@@ -194,11 +182,11 @@ sections:
   
           **Resolve an orphaned work item**
   
-          1.  Note the row number that appears in the dialog box.    
-          2.  Close the **Work Item Publishing Errors** dialog box.    
-          3.  Find the row that the error message specified. The misplaced title might be in this row, or it might be in the next row.  
-          4.  Move the title to the correct column to fix the invalid link.  
-          5.  On the **Team** tab, in the **Work Items** group, choose **Publish**.
+          1. Note the row number that appears in the dialog box.    
+          2. Close the **Work Item Publishing Errors** dialog box.    
+          3. Find the row that the error message specified. The misplaced title might be in this row, or it might be in the next row.  
+          4. To fix the invalid link, move the title to the correct column.  
+          5. On the **Team** tab, in the **Work Items** group, choose **Publish**.
 
           **Error message TF208017: Missing Title 1 in the first row**  
 
@@ -212,9 +200,9 @@ sections:
 
           **Error message TF208022: Sorted tree list**  
 
-          If you haven't installed Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you've sorted the work items in a tree list:  
+          If you didn't install Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you sort the work items in a tree list:  
   
-          TF208022: Can't publish a sorted tree list. Before you can publish, you must clear any sort criteria applied to this work item list. The order of work items has changed. Removing sort criteria won't return the list to its original order. Verify that all of the parent-child relationships in the tree are correct before you publish.   
+          TF208022: Can't publish a sorted tree list. Before you can publish, you must clear any sort criteria applied to this work item list. The order of work items changed. Removing sort criteria doesn't return the list to its original order. Verify that all of the parent-child relationships in the tree are correct before you publish.   
   
           You can't publish your changes until you re-establish the tree hierarchy. You can resolve this error either by discarding your changes and refreshing the list or by manually restoring the hierarchy and then publishing the list.  
   
@@ -228,22 +216,22 @@ sections:
 
           The following error message appears if you sort the work items in a tree list in Excel:  
   
-          TF208102: You have performed an Excel sort on a tree list. This action removed the modified or newly introduced hierarchical link relationships of the tree.
-          You can still publish the changes you have made to individual work items. After you publish, the list restores to previous hierarchy.
-          In general, you shouldn't sort a tree list whose hierarchy has been modified.|
+          TF208102: You performed an Excel sort on a tree list. This action removed the modified or newly introduced hierarchical link relationships of the tree.
+          You can still publish the changes you made to individual work items. After you publish, the list restores to previous hierarchy.
+          In general, you shouldn't sort a tree list whose hierarchy was modified.|
 
-          This message indicates that you can publish the changes that you made to the fields, but all changes that you made to the link hierarchy have been discarded. The tree hierarchy automatically reverts to its original structure.  
+          This message indicates that you can publish the changes that you made to the fields, but all changes that you made to the link hierarchy were discarded. The tree hierarchy automatically reverts to its original structure.  
   
           **Publish changes and retrieve the tree hierarchy**
   
-          1.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
-          2.  Choose **Refresh**.  
+          1. On the **Team** tab, in the **Work Items** group, choose **Publish**.  
+          2. Choose **Refresh**.  
  
           **Error message TF208104: Hierarchical link Relationship is locked**
           
           If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](media/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
             
-          TF208104: You have modified one or more hierarchical link relationships that might be locked by other processes, such as Project Server.
+          TF208104: You modified one or more hierarchical link relationships that might be locked by other processes, such as Project Server.
           Changes that you made to individual work items were published. Changes that you made to locked links were autocorrected.  
             
           This error appears when you change the link hierarchy that contains locked links. This message indicates that the changes that you made to the fields are published. All changes you made to the link hierarchy, whether locked or not locked, aren't published and were reverted to their original assignments.  
@@ -257,12 +245,12 @@ sections:
 
       - question: Can I delete work items from Excel?
         answer: |
-          ::: moniker range=">= azure-devops-2020" 
+          ::: moniker range="azure-devops" 
           **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For more information, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
           ::: moniker-end 
 
-          ::: moniker range="< azure-devops-2020" 
-          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For more information, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+          ::: moniker range="< azure-devops" 
+          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or **witadmin** command-line tools. For more information, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
           ::: moniker-end 
 
   - name: Use built-in Excel functions
@@ -277,12 +265,12 @@ sections:
 
       - question: Can I use Excel cut and paste functions? 
         answer: |
-          **Yes**. You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas.  You can cut and paste rows to resequence items within a list and change link relationships among work items.
+          **Yes**. You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas. You can cut and paste rows to resequence items within a list and change link relationships among work items.
           
-          To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](media/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
+          To drag a work item, select the work item or contiguous set of work items that you want to move. Open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](media/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
           > [!TIP]  
-          > When you refresh the work item list, not all formats may be retained. For example, date formats get set by the server data store. Changes you make to a date format field are overwritten with the date format used by the server.  
+          > When you refresh the work item list, not all formats might be retained. For example, date formats get set by the server data store. Changes you make to a date format field are overwritten with the date format used by the server.  
 
       - question: How do I enable the Developer tab? 
         answer: |

@@ -54,8 +54,6 @@
     href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json
   - name: Data location
     href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json
-  - name: Credential storage
-    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE

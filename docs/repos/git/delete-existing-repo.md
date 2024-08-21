@@ -63,7 +63,7 @@ Remove unused Git repos from your project when they are no longer needed. The st
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can use Azure DevOps CLI to delete an Azure DevOps Git repository.  
 
@@ -102,7 +102,7 @@ Are you sure you want to delete this repository? (y/n): y
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
 

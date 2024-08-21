@@ -51,7 +51,7 @@ If your collection contains numerous projects, Azure DevOps Services imposes a l
 Before you dive too deeply into planning your migration, it’s important to understand at an elevated level how the database migration process functions. Migrations operate on the following main concepts: 
 
 - **Team Project Collection**: Collections in Azure DevOps Server are a physical container for team projects and their artifacts. Each collection equates to a single SQL database and is the source of migrations to Azure DevOps Services.
-- **Azure DevOps Services organization**: Organizations are the management unit in the cloud-hosted service. Logically they map 1:1 to the concept of a team project collection in Azure DevOps Server. Therefore, organizations are the destination of migrations to Azure DevOps Services. For example, Azure DevOps Services organizations are represented as https://dev.azure.com/Contoso where Contoso represents the name of the Azure DevOps Services organization. 
+- **Azure DevOps Services organization**: Organizations are the management unit in the cloud-hosted service. Logically they map 1:1 to the concept of a team project collection in Azure DevOps Server. Therefore, organizations are the destination of migrations to Azure DevOps Services. For example, Azure DevOps Services organizations are represented as `https://dev.azure.com/Contoso` where Contoso represents the name of the Azure DevOps Services organization. 
 
 When you migrate a team project collection SQL database, the Data Migration Tool creates a new Azure DevOps organization with a user-provided name. Migrating a collection database into an existing Azure DevOps Services organization or consolidating multiple collection databases into a single Azure DevOps Services organization isn't possible. The mapping is strictly one-to-one between team project collections and Azure DevOps Services organizations. 
 
@@ -78,7 +78,7 @@ A question that typically comes up with migration is what type of licensing a co
 - ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription 
 - ***Each Azure DevOps Services organization gets five free users 
 
-For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md) and the [Azure Pricing Calculator]( https://aka.ms/AzureDevOpsPricing). 
+For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md) and the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops). 
 
 Buy any needed Azure DevOps Services user licenses through the Visual Studio Marketplace or the Azure portal. We delve into this process during the [Prepare for test run phase](migration-prepare-test-run.md). 
 

@@ -16,13 +16,13 @@ ms.date: 10/20/2023
 
 GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. 
 
-GitHub Advanced Security for Azure includes:
+GitHub Advanced Security for Azure DevOps includes:
 * Secret Scanning push protection: check if code pushes include commits that expose secrets such as credentials  
 * Secret Scanning repo scanning: scan your repository and look for exposed secrets that were committed accidentally
 * Dependency Scanning – search for known vulnerabilities in open source dependencies (direct and transitive)
 * Code Scanning – use CodeQL static analysis engine to identify code-level application vulnerabilities such as SQL injection and authentication bypass 
 
-At this time, GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Services and there are no plans to bring this product to Azure DevOps Server. 
+At this time, GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Services and there are no plans to bring this product to Azure DevOps Server. GitHub Advanced Security for Azure DevOps is also only available for code Git repositories. 
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
