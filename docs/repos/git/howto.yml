@@ -61,7 +61,7 @@ sections:
           
           - Abandon the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.  
           - Commit the changes. See [saving your work in Git with commits](commits.md). 
-          - [Stashing](howto.yml#faq) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
+          - [Stashing](howto.yml#i-did-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
 
       - question: |
           Pull request is unable to merge with this message: 'Unable to merge automatically: One of internal git objects (blob, tree, commit or tag) is too large which caused TF401022 exception. You can try to use LFS, split your merge or big commit into several small.'
