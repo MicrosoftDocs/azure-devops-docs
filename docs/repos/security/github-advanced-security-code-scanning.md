@@ -138,7 +138,7 @@ Code scanning supports two build modes when setting up a pipeline for scanning:
 
 For more information on the different build modes including a comparison on the benefits of each build mode, see [CodeQL code scanning for compiled languages](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages). 
 
-For running code scanning analysis through GitHub Advanced Security for Azure DevOps, the `autobuild` build mode is instead a separate build task, [`AdvancedSecurity-CodeQL-Autobuild@1`](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1?view=azure-pipelines).
+For running code scanning analysis through GitHub Advanced Security for Azure DevOps, the `autobuild` build mode is instead a separate build task, [`AdvancedSecurity-CodeQL-Autobuild@1`](../../pipelines/tasks/reference/advanced-security-codeql-autobuild-v1?view=azure-pipelines).
 
 > [!TIP]
 > If build mode `none` is specified and a language other than supported complied languages C# or Java, the pipeline task may not work as expected.
