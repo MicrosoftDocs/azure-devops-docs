@@ -137,7 +137,7 @@ $ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/pac
   "views": {
     "op": "add",
     "path": "/views/-",
-    "value": "Release"
+    "value": "{viewName}"
   }
 }'
 ```
@@ -154,7 +154,7 @@ $body = @{
     views = @{
         op    = "add"
         path  = "/views/-"
-        value = "Release"
+        value = "{viewName}"
     }
 } | ConvertTo-Json
 
