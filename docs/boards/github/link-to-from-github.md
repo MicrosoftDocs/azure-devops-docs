@@ -15,7 +15,7 @@ ms.date: 08/22/2024
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-After you connect your Azure Boards project with a GitHub repository, you can link work items to GitHub commits and pull requests. Use the **#mention** syntax or add a GitHub commit or pull request link directly from the Azure Boards work item.
+In this article, learn how to link work items to GitHub commits and pull requests after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax or add a GitHub commit or pull request link directly from the Azure Boards work item.
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
@@ -45,9 +45,9 @@ From a GitHub commit, pull request or issue, use the following syntax to create 
 AB#{ID}
 ```
 
-For example, `AB#125` links to work item ID 125. 
+For example, `AB#125` links to work item ID 125.
 
-You can also enter a commit or pull request message to transition the work item. The system recognizes `fix, fixes, fixed` and applies it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If there's no **State** associated with *Resolved*, then it transitions to the **State** associated with the *Completed* workflow category state. For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
+You can also enter a commit or pull request message to transition the work item. The system recognizes `fix`, `fixes`, and `fixed`, and applies it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If no **State** is associated with *Resolved*, the work item transitions to the **State** associated with the *Completed* workflow category state. For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
 Review the following table of examples:
 
