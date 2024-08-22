@@ -262,7 +262,7 @@ For more information, see the [blog post](https://devblogs.microsoft.com/devops/
 
 - **No matching host key**
 
-   This problem should happen not on Azure DevOps Service or on more recent Azure DevOps Server versions as mentioned in the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
+   This problem shouldn't happen on Azure DevOps Service or on more recent Azure DevOps Server versions as mentioned in the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
 
    ```Output
    Unable to negotiate with <IP> port 22: no matching host key type found. Their offer: ssh-rsa
