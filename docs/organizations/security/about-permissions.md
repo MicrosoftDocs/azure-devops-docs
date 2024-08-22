@@ -328,7 +328,6 @@ Feature flags control access to new features. Azure DevOps periodically introduc
 - [Troubleshoot access and permission issues](troubleshoot-permissions.md)
 - [Learn about security, authentication, and authorization](about-security-identity.md)
 - [Reference permissions and groups](permissions.md)  
-- [Use security and permission management tools](security-tools-reference.md)  
 - [Add and manage security groups](add-manage-security-groups.md)   
 
 ::: moniker-end  
@@ -337,7 +336,6 @@ Feature flags control access to new features. Azure DevOps periodically introduc
 
 - [Get started with AD DS](/windows-server/identity/ad-ds/ad-ds-getting-started)
 - [Reference permissions and groups](permissions.md)  
-- [Use security and permission management tools](security-tools-reference.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
 
