@@ -80,7 +80,7 @@ To explore another work item, first dissociate the current work item from the in
 
 2. Associate the new work item with the in-progress session as [previously described](#extension).
 
-## View Your Exploratory Session Results
+## View your exploratory session results
 
 After you file bugs, create tasks, or create test cases, they appear on the "Recent exploratory sessions" page in Azure Test Plans.
 
