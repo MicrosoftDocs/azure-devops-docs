@@ -1,12 +1,7 @@
 ---
 title: Prerequisites
-suffix: Managed DevOps Pools
 description: Learn what you need to do before creating your Managed DevOps Pool.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 08/21/2024
+ms.date: 08/22/2024
 ---
 
 # Prerequisites

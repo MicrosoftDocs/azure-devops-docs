@@ -1,12 +1,7 @@
 ---
 title: Configure identity
-suffix: Managed DevOps Pools
 description: Learn how to configure a managed identity for Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 08/22/2024
 ---
 
 # Configure Managed DevOps Pools identity
