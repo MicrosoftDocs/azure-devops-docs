@@ -38,11 +38,9 @@ By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**,
 
 ## Promote packages using the REST API
 
-In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API. The URI varies based on the package type:
+In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API.
 
-Use the actual user-facing name and version of the package for the `{packageName}` and `{packageVersion}` fields, respectively. If your feed is organization-scoped, omit the `{project}` field.
-
-The body of the request is a [JSON Patch](https://jsonpatch.com/) document adding the view to the end of the `views` array. See [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) for more information on how to interact with Azure DevOps REST API.
+The request body should be a [JSON Patch](https://jsonpatch.com/) document that adds the view to the end of the `views` array. For more details on how to interact with the Azure DevOps REST API, see the [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md).
 
 ### [NuGet](#tab/nuget)
 
@@ -125,20 +123,43 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
 
 ---
 
-- **Example**:
+#### Examples
 
-```HTTP
-PATCH https://pkgs.dev.azure.com/fabrikam-fiber-inc/litware/_apis/packaging/feeds/litware-tools/nuget/packages/LitWare.Common/versions/1.0.0?api-version=5.1-preview.1 HTTP/1.1
-Content-Type: application/json-patch+json
+### [curl](#tab/curl)
 
-{
+```curl
+$ curl -X "PATCH" "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1" \
+-h 'Content-Type: application/json' \
+-u ':${PAT}' \
+-d $'{
   "views": {
     "op": "add",
     "path": "/views/-",
-    "value": "Release"
+    "value": "{viewName}"
   }
-}
+}'
 ```
+
+### [PowerShell](#tab/powershell)
+
+```PowerShell
+$uri = "https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1"
+$headers = @{
+    "Content-Type" = "application/json"
+    Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$env:PAT"))
+}
+$body = @{
+    views = @{
+        op    = "add"
+        path  = "/views/-"
+        value = "{viewName}"
+    }
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri $uri -Method Patch -Headers $headers -Body $body
+```
+
+---
 
 ## Manage views
 
