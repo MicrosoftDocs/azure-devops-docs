@@ -6,7 +6,7 @@ ms.date: 08/22/2024
 
 # Configure your Azure subscription and Azure DevOps organization for Managed DevOps Pools
 
-Before getting started, you must configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pool. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
+Before getting started, you must configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Poos. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
 
 ## Configure your Azure subscription
 
@@ -105,7 +105,7 @@ The default agent size for new Managed DevOps Pools resources is **Standard D2ad
 
    :::image type="content" source="./media/quotas/new-quota-request.png" alt-text="Screenshot of selecting an increased number of cores.":::
 
-3. The quota request takes a few moments to process. The following example shows a successful adjustment.
+3. The quota request takes a few moments to process. The following example shows the result of a successful quota adjustment.
 
    :::image type="content" source="./media/quotas/quota-request-granted.png" alt-text="Screenshot of granted quota request.":::
 
@@ -115,7 +115,7 @@ The default agent size for new Managed DevOps Pools resources is **Standard D2ad
 
 If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message:
 
-`Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription id placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`.
+`Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`.
 
 1. Go to the link to start a **New support request** to request a quota increase. Choose **Next**.
 
@@ -141,7 +141,7 @@ Within 24 hours, the Managed DevOps Pools support team will evaluate your reques
 
 ### Create a Dev Center and Dev Center project
 
-Managed DevOps Pools requires a Dev Center and Dev Center project. You have the option to create a Dev Center and Dev Center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps.
+Managed DevOps Pools requires a Dev Center and Dev Center project. If you don't have one, you have the option to create a Dev Center and Dev Center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps.
 
 * [Create a Dev Center](#create-a-dev-center)
 * [Create a Dev Center Project](#create-a-dev-center-project)
