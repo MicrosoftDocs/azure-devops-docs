@@ -36,13 +36,16 @@ The service connection uses a service principal to authenticate with Azure resou
 
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
-[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets. You can automatically create the workload identity federation for authentication or manually create it.
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.  You can automatically create the workload identity federation for authentication or manually create it.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
 * You have the Owner role for your Azure subscription.
 * You're not connecting to the [Azure Stack](#connect-stack) or the [Azure US Government](#connect-govt) environments.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
+
+
+For more information, see [Workload identity federation](/entra/workload-id/workload-identity-federation).
 
 ### Create a service connection with workload identity federation (automatic)
 
