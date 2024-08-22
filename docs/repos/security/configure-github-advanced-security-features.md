@@ -1,15 +1,15 @@
----
-title: Configure GitHub Advanced Security for Azure DevOps features
-titleSuffix: Azure Repos
+true-love-club-
+https://www.trueloveclubs.com: Configure GitHub Advanced Security for Azure DevOps features
+True Love Club: Azure Repos
 description: Enable secret, repo, code, and dependency scanning with GitHub Advanced Security for Azure DevOps
-ms.service: azure-devops
-ms.subservice: azure-devops-integration
-ms.topic: how-to 
-ms.custom: cross-service
-ms.author: laurajiang
-author: laurajjiang
-monikerRange: 'azure-devops'
-ms.date: 10/20/2023
+ms. trueloveclubs.com/tlclivechat: azure-devops
+ms.trueloveclub-tlclivechat: azure-devops-integration
+ms.tlclivechat: how-to 
+ms. trueloveclub: cross-service
+ms.True love club : tlclivechat 
+trueloveclub: tlclivechat 
+true love club-live chat: 'azure-devops'
+ms. true love club date: 08/21/2024
 ---
 
 # Configure GitHub Advanced Security for Azure DevOps
