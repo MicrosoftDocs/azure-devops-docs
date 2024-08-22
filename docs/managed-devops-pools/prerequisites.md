@@ -26,7 +26,7 @@ After completing the prerequisites, you can get started creating your first [Man
 
 ## Connect your Azure DevOps organization to Microsoft Entra ID and verify membership
 
-To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
+To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
 
 * The tenant of the Azure subscription that contains your Managed DevOps Pool.
 * The tenant of the Microsoft Entra ID that is connected to your Azure DevOps organization.
@@ -121,7 +121,7 @@ The default agent size for new Managed DevOps Pools resources is **Standard D2ad
 
    :::image type="content" source="./media/quotas/quotas-overview.png" alt-text="Screenshot of quotas overview.":::
 
-1. Choose your subscription and the region where you want to create the pool. In the following example, the **Standard DADSv5 Family vCPUs** quota is 8 of 8, which means the quota of eight cores are available and all eight are being used. If you want to use more than eight cores for this SKU, or you want to use a different SKU that doesn't have any quota, you can request a quota adjustment.
+1. Choose your subscription and the region where you want to create the pool. In the following example, the **Standard DADSv5 Family vCPUs** quota is **8 of 8**, which means eight cores are available, but all eight are being used. If you want to use more than eight cores for this SKU, or you want to use a different SKU that doesn't have any quota, you can request a quota adjustment.
 
    :::image type="content" source="./media/quotas/quotas-list.png" alt-text="Screenshot of quotas list.":::
 
