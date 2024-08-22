@@ -81,7 +81,7 @@ sections:
           HEAD is now at be26067
           ```
       
-          When you run [`git stash apply`], the most recently stashed changes get applied to your current branch. If there's a conflict, [`stash`](command:_github.copilot.openSymbolFromReferences?%5B%22stash%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22c%3A%5C%5CUsers%5C%5Cchcomley%5C%5CGit%5C%5Cazure-devops-docs-pr%5C%5Cdocs%5C%5Crepos%5C%5Cgit%5C%5Chowto.yml%22%2C%22_sep%22%3A1%2C%22external%22%3A%22file%3A%2F%2F%2Fc%253A%2FUsers%2Fchcomley%2FGit%2Fazure-devops-docs-pr%2Fdocs%2Frepos%2Fgit%2Fhowto.yml%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2Fchcomley%2FGit%2Fazure-devops-docs-pr%2Fdocs%2Frepos%2Fgit%2Fhowto.yml%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A73%2C%22character%22%3A16%7D%7D%5D%5D "Go to definition") restores the changes for the files that don't conflict and creates conflict markers in the files that do. You should merge the changes manually in this case.
+          When you run [`git stash apply`], the most recently stashed changes get applied to your current branch. If there's a conflict, [`stash`] restores the changes for the files that don't conflict and creates conflict markers in the files that do. You should merge the changes manually in this case.
       
           Once you're done with the stash, delete it with [`git stash drop`]. This command removes the last set of stashed changes.
       
