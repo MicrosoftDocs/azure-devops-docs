@@ -552,7 +552,7 @@
     },
     {
       "source_path": "docs/organizations/security/security-tools-reference.md",
-      "redirect_url": "/organizations/security/manage-tokens-namespaces"
+      "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces"
     }
   ]
 }
