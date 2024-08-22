@@ -1,12 +1,7 @@
 ---
 title: View agents
-suffix: Managed DevOps Pools
 description: View the status of agents in the pool.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/18/2024
+ms.date: 08/22/2024
 ---
 
 # View agents

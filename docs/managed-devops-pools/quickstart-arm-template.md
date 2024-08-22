@@ -1,12 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using an ARM template
-suffix: Managed DevOps Pools
 description: Create your first Managed DevOps Pool using an Azure Resource Manager template (ARM template).
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/22/2024
+ms.date: 08/22/2024
 ---
 
 # Quickstart: Create a Managed DevOps Pool using an ARM template
