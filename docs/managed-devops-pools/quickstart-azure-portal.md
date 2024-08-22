@@ -1,12 +1,7 @@
 ---
 title: Get started with Managed DevOps pools
-suffix: Managed DevOps Pools
 description: Learn how to get started with Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 04/18/2024
+ms.date: 08/22/2024
 ---
 
 # Create your first Managed DevOps Pool
