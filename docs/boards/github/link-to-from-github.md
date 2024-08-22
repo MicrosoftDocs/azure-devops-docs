@@ -68,21 +68,21 @@ Review the following table of examples:
 
 To create a GitHub branch directly from a work item, do these steps:
 
-1. Open the work item from which you want to create a GitHub branch.
+1. From your board, find the work item from which you want to create a GitHub branch.
 
-2. In the **Development** section, select **Create a branch**.
+2. Select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Work item actions** > **New GitHub branch**.
 
-   :::image type="content" source="media/link/create-branch-from-work-item.png" alt-text="Screenshot of work item form, Development section, Create a branch option.":::
+   :::image type="content" source="media/link/create-github-branch-work-item-action.png" alt-text="Screenshot of work item More actions select and highlighted New GitHub branch option.":::
 
-3. In the **Create a branch** dialog, select the GitHub repository where you want to create the branch.
+3. In the **Create a GitHub branch** dialog, enter the branch name, and select the GitHub repository and base branch.
 
-4. Enter the branch name and select the base branch from which the new branch gets created.
+4. Select **Create**.
 
-5. Select **Create branch**.
+   :::image type="content" source="media/link/create-github-branch-dialog.png" alt-text="Screenshot of Create a GitHub Branch dialog.":::
 
-   Azure Boards creates the branch in the specified GitHub repository and links it to the work item.
+   Azure Boards creates the branch in the specified GitHub repository and links it to the work item. For more information, see [Azure Boards-GitHub integration](index.md).
 
-For more information, see [Azure Boards-GitHub integration](index.md).
+<a id="link-work-item-to-branch-commit-pr">  </a>
 
 ## Add work item link to GitHub branch, commit, or pull request
 
