@@ -6,7 +6,7 @@ ms.date: 08/22/2024
 
 # Configure your Azure subscription and Azure DevOps organization for Managed DevOps Pools
 
-Before getting started, you must configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
+Before getting started with Managed DevOps Pools, you must configure your Azure subscription and Azure DevOps organization. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
 
 ## Configure your Azure subscription
 

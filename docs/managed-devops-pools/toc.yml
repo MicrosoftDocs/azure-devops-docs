@@ -4,7 +4,7 @@
   href: overview.md
 - name: Architecture overview
   href: architecture-overview.md
-- name: Configure prerequisites
+- name: Prerequisites
   href: prerequisites.md
 - name: Quickstarts
   items:
