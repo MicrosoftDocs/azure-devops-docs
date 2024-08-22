@@ -26,12 +26,18 @@ After completing the prerequisites, you can get started creating your first [Man
 
 ## Connect your Azure DevOps organization to Microsoft Entra ID and verify membership
 
-To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the Microsoft Entra ID tenant for both your Azure DevOps organization and your Azure subscription.
+To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
 
-1. [View your current directory in the Azure portal](/azure/azure-portal/set-preferences#directories--subscriptions)
-1. [View the directory for your Azure DevOps organization](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id). You can go directly to this page in the Azure DevOps portal here: `https://dev.azure.com/<your-organization>/_settings/organizationAad`.
-1. If your Azure DevOps organization isn't connected to Microsoft Entra ID, follow the steps in [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id) and connect to the desired directory, such as the same directory as your Azure subscription.
-2. If your Azure DevOps organization and Azure subscription are in different tenants, verify that you are a member of both tenants.
+* The tenant of the Azure subscription that contains your Managed DevOps Pool.
+* The tenant of the Microsoft Entra ID that is connected to your Azure DevOps organization.
+  * These can both be the same tenant, but they are not required to be.
+
+To view your tenants:
+
+1. [View your current directory (Azure tenant) in the Azure portal](/azure/azure-portal/set-preferences#directories--subscriptions).
+1. [View the tenant for your Azure DevOps organization](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id). You can go directly to this page in the Azure DevOps portal here: `https://dev.azure.com/<your-organization>/_settings/organizationAad`.
+1. If your Azure DevOps organization isn't connected to Microsoft Entra ID, follow the steps in [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id) and connect to the desired tenant, such as the same tenant as your Azure subscription.
+2. If your Azure DevOps organization and Managed DevOps Pools Azure subscription are in different tenants, verify that you are a member of both tenants.
 
 ## Register the Managed DevOps Pools resource provider in your Azure Subscription
 
@@ -57,7 +63,7 @@ Before you use a resource provider, you must make sure your Azure subscription i
 
 ### Azure CLI
 
-If you prefer using Azure CLI to register the Azure Resource Provider, please execute the following command in [Azure CLI](/cli/azure/)
+If you prefer using Azure CLI to register the Azure Resource Provider, run the following command using [Azure CLI](/cli/azure/).
 
 ```bash
 az provider register --namespace 'Microsoft.DevOpsInfrastructure'
@@ -67,7 +73,7 @@ az provider register --namespace 'Microsoft.DevOpsInfrastructure'
 
 ### PowerShell
 
-If you prefer using PowerShell to register the Azure Resource Provider, please execute the following command from the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider)
+If you prefer using PowerShell to register the Azure Resource Provider, run the following command using the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider).
 
 ```PowerShell
 Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'`
@@ -115,7 +121,7 @@ The default agent size for new Managed DevOps Pools resources is **Standard D2ad
 
    :::image type="content" source="./media/quotas/quotas-overview.png" alt-text="Screenshot of quotas overview.":::
 
-1. Choose your subscription and the region where you want to create the pool. In the following example, the **Standard DADSv5 Family vCPUs** quota is 8 of 8, which means the quota of eight cores are available and all eight are being used. If you want to use more than eight cores for this SKU, or you want to use a different SKU that doesn't have any quota, you can request a quota adjustment.
+1. Choose your subscription and the region where you want to create the pool. In the following example, the **Standard DADSv5 Family vCPUs** quota is **8 of 8**, which means eight cores are available, but all eight are being used. If you want to use more than eight cores for this SKU, or you want to use a different SKU that doesn't have any quota, you can request a quota adjustment.
 
    :::image type="content" source="./media/quotas/quotas-list.png" alt-text="Screenshot of quotas list.":::
 
