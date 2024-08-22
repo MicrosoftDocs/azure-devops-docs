@@ -1,42 +1,22 @@
 ---
-title: Prerequisites
-description: Learn what you need to do before creating your Managed DevOps Pool.
+title: Configure your Azure subscription and Azure DevOps organization for Managed DevOps Pools
+description: Learn what you need to do before you can use Managed DevOps Pools.
 ms.date: 08/22/2024
 ---
 
-# Prerequisites
+# Configure your Azure subscription and Azure DevOps organization for Managed DevOps Pools
 
-Before getting started with Managed DevOps Pools, you must perform the following steps.
+Before getting started, you must configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pool. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
 
-1. [Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership)
+## Configure your Azure subscription
+
 1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription)
-1. [Verify Azure DevOps permissions](#verify-azure-devops-permissions)
 1. [Review Managed DevOps Pools quotas](#review-managed-devops-pools-quotas)
-
-These steps need to performed only once per Azure DevOps organization and Azure subscription.
-
-Managed DevOps Pools requires a Dev Center and Dev Center project. You can create these as part of the Managed DevOps Pool creation process, but if you want to create them ahead of time, follow the steps in [Create a Dev Center and Dev Center project](#create-a-dev-center-and-dev-center-project).
-
-After completing the prerequisites, you can get started creating your first [Managed DevOps Pool](./quickstart-azure-portal.md).
-
-## Connect your Azure DevOps organization to Microsoft Entra ID and verify membership
-
-To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
-
-* The tenant of the Azure subscription that contains your Managed DevOps Pool.
-* The tenant of the Microsoft Entra ID that is connected to your Azure DevOps organization.
-  * These can both be the same tenant, but they are not required to be.
-
-To view your tenants:
-
-1. [View your current directory (Azure tenant) in the Azure portal](/azure/azure-portal/set-preferences#directories--subscriptions).
-1. [View the tenant for your Azure DevOps organization](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id). You can go directly to this page in the Azure DevOps portal here: `https://dev.azure.com/<your-organization>/_settings/organizationAad`.
-1. If your Azure DevOps organization isn't connected to Microsoft Entra ID, follow the steps in [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id) and connect to the desired tenant, such as the same tenant as your Azure subscription.
-2. If your Azure DevOps organization and Managed DevOps Pools Azure subscription are in different tenants, verify that you are a member of both tenants.
+1. [Create a Dev Center and Dev Center project](#create-a-dev-center-and-dev-center-project)
 
 ## Register the Managed DevOps Pools resource provider in your Azure Subscription
 
-Before you use a resource provider, you must make sure your Azure subscription is registered for the resource provider. Registration configures your subscription to work with the resource provider. The following steps show how to register the **Microsoft.DevOpsInfrastructure** provider in your subscription. For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
+Before using Managed DevOps Pools, you must register the **Microsoft.DevOpsInfrastructure** resource provider with your Azure subscription.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -76,12 +56,7 @@ Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'`
 
 * * *
 
-## Verify Azure DevOps permissions
-
-When you create a Managed DevOps Pool, your identity is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool you must have one of the following Azure DevOps permissions in your organization. These permissions are listed in order from least privileged to most privileged.
-
-* **Organization-level Agent pools administrator** - Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). For instructions on adding users to this group, see [Configure organization security for agent pools - Set organization security for all agent pools](../pipelines/policies/agent-pool-permissions.md#set-organization-security-for-all-agent-pools).
-* **Project Collection Administrator** - The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. For information about this group and how to see its members, see [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 ## Review Managed DevOps Pools quotas
 
@@ -138,7 +113,9 @@ The default agent size for new Managed DevOps Pools resources is **Standard D2ad
 
 #### Create a quota support request
 
-If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message. `Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`.
+If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message:
+
+`Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription id placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`.
 
 1. Go to the link to start a **New support request** to request a quota increase. Choose **Next**.
 
@@ -164,7 +141,7 @@ Within 24 hours, the Managed DevOps Pools support team will evaluate your reques
 
 ## Create a Dev Center and Dev Center project
 
-Managed DevOps Pools provides you with an option to create a Dev Center and Dev Center project when you create your pool. If you want to create them ahead of time, perform the following steps.
+Managed DevOps Pools requires a Dev Center and Dev Center project. You have the option to create a Dev Center and Dev Center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps.
 
 * [Create a Dev Center](#create-a-dev-center)
 * [Create a Dev Center Project](#create-a-dev-center-project)
@@ -198,3 +175,32 @@ Managed DevOps Pools provides you with an option to create a Dev Center and Dev 
 ## Next steps
 
 * [Create your first Managed DevOps Pool](./quickstart-azure-portal.md)
+
+## Configure your Azure DevOps organization
+
+1. [Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership)
+1. [Verify Azure DevOps permissions](#verify-azure-devops-permissions)
+
+## Connect your Azure DevOps organization to Microsoft Entra ID and verify membership
+
+To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
+
+* The tenant of the Azure subscription that contains your Managed DevOps Pool.
+* The tenant of the Microsoft Entra ID that is connected to your Azure DevOps organization.
+
+The Azure subscription and Azure DevOps organization tenant can both be the same tenant, but they are not required to be. To view your tenants:
+
+1. [View your current directory (Azure tenant) in the Azure portal](/azure/azure-portal/set-preferences#directories--subscriptions).
+1. [View the tenant for your Azure DevOps organization](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id). You can go directly to this page in the Azure DevOps portal here: `https://dev.azure.com/<your-organization>/_settings/organizationAad`.
+1. If your Azure DevOps organization isn't connected to Microsoft Entra ID, follow the steps in [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id) and connect to the desired tenant, such as the same tenant as your Azure subscription.
+2. If your Azure DevOps organization and Managed DevOps Pools Azure subscription are in different tenants, verify that you are a member of both tenants.
+
+These steps need to performed only once per Azure DevOps organization and Azure subscription.
+
+## Verify Azure DevOps permissions
+
+When you create a Managed DevOps Pool, your identity is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool you must have one of the following Azure DevOps permissions in your organization. These permissions are listed in order from least privileged to most privileged.
+
+* **Organization-level Agent pools administrator** - Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). For instructions on adding users to this group, see [Configure organization security for agent pools - Set organization security for all agent pools](../pipelines/policies/agent-pool-permissions.md#set-organization-security-for-all-agent-pools).
+* **Project Collection Administrator** - The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. For information about this group and how to see its members, see [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+

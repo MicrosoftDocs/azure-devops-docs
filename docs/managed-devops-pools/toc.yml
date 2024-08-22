@@ -4,10 +4,10 @@
   href: overview.md
 - name: Architecture overview
   href: architecture-overview.md
+- name: Configure prerequisites
+  href: prerequisites.md
 - name: Quickstarts
   items:
-  - name: Configure prerequisites
-    href: prerequisites.md
   - name: Azure portal
     href: quickstart-azure-portal.md
   - name: ARM template
