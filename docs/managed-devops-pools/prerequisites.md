@@ -63,7 +63,7 @@ Before you use a resource provider, you must make sure your Azure subscription i
 
 ### Azure CLI
 
-If you prefer using Azure CLI to register the Azure Resource Provider, please execute the following command in [Azure CLI](/cli/azure/)
+If you prefer using Azure CLI to register the Azure Resource Provider, run the following command using [Azure CLI](/cli/azure/).
 
 ```bash
 az provider register --namespace 'Microsoft.DevOpsInfrastructure'
@@ -73,7 +73,7 @@ az provider register --namespace 'Microsoft.DevOpsInfrastructure'
 
 ### PowerShell
 
-If you prefer using PowerShell to register the Azure Resource Provider, please execute the following command from the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider)
+If you prefer using PowerShell to register the Azure Resource Provider, run the following command using the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider).
 
 ```PowerShell
 Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'`
