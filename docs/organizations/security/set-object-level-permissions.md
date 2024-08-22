@@ -188,4 +188,3 @@ Here are some more tips for managing notifications:
 - [Change project-level permissions](change-project-level-permissions.md)
 - [Download permissions report for a repository](download-permissions-report.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)
-- [Security and permission management tools](security-tools-reference.md)
