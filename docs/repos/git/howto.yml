@@ -43,11 +43,11 @@ sections:
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
-          > git blame foo.js -L 20,+40  # show the blame output for the next 40 lines starting at line 20
+          > git blame Example_repo -L 20,+40  # show the blame output for the next 40 lines starting at line 20
 
-          215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 20) line 20 of the code
-          215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 21) line 21 of the code
-          215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 22) line 22 of the code
+          215d1108 (Example User 2015-11-21 09:54:23 -0800 20) line 20 of the code
+          215d1108 (Example User 2015-11-21 09:54:23 -0800 21) line 21 of the code
+          215d1108 (Example User 2015-11-21 09:54:23 -0800 22) line 22 of the code
           ```
           
           `Blame` searches the commit history for you. You can also review  a file's history in the web portal to determine
@@ -122,8 +122,8 @@ sections:
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
-          > git config --global user.email "frank@fabrikam.com"
-          > git config --global user.name "Francis Totten"
+          > git config --global user.email "example-user@example-site.com"
+          > git config --global user.name "Example User"
           ```
           
           The `--global` option sets the email and name included in commits for all Git repositories on this system. If you want to change the settings for a single
