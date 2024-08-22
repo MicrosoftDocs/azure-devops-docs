@@ -549,6 +549,10 @@
     {
       "source_path": "docs/migrate/phase-rollout-with-rings.md",
       "redirect_url": "/training/modules/manage-release-cadence"
+    },
+    {
+      "source_path": "docs/organizations/security/security-tools-reference.md",
+      "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces"
     }
   ]
 }
