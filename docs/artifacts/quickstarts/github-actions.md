@@ -283,7 +283,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
     ```
 3. Go to your Azure Artifacts feed to verify that you see the package you pushed.
     
-    :::image type="content" source="media/artifacts-nuget-package.png" alt-text="Screenshot of review for new Azure Artifacts feed." lightbox-"media/artifacts-nuget-package.png" ::: 
+    :::image type="content" source="media/artifacts-nuget-package.png" alt-text="Screenshot of review for new Azure Artifacts feed." lightbox="media/artifacts-nuget-package.png" ::: 
 
 :::zone-end
 
