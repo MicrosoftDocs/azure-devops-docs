@@ -59,13 +59,15 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 
 [GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This  workflow automates the process of building, testing, packaging, and publishing a .NET project to Azure Artifacts using a managed identity and federated authentication. The workflow:
 
-* Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to log in to Azure using a managed identity.
-* Installs the [credential provider for Azure Artifacts](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider). 
-* Extracts an access token using Azure CLI and configures the authentication provider to use the Azure DevOps token.
-* Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
-* Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
-* Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
-* Publishes the NuGet package to Azure Artifacts. 
+1. Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to log in to Azure using a managed identity.
+1. Installs the [credential provider for Azure Artifacts](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider). 
+1. Extracts an access token using Azure CLI and configures the authentication provider to use the Azure DevOps token.
+1. Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
+1. Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
+1. Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
+1. Publishes the NuGet package to Azure Artifacts. 
+
+### Create a new YAML file
 
 1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
 
@@ -211,7 +213,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 1. Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
 1. Publishes the NuGet package to Azure Artifacts. 
 
-### Create a YAML file
+### Create a new YAML file
 
 1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
 
