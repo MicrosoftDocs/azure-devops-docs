@@ -195,9 +195,9 @@ Managed DevOps Pools requires a Dev Center and Dev Center project. You have the 
 To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
 
 * The tenant of the Azure subscription that contains your Managed DevOps Pool.
-* The tenant of the Microsoft Entra ID that is connected to your Azure DevOps organization.
+* The tenant your Azure DevOps organization is connected to.
 
-The Azure subscription and Azure DevOps organization tenant can both be the same tenant, but they are not required to be. To view your tenants:
+If the tenants are different, your account must be a member of both tenants. To view your tenants:
 
 1. [View your current directory (Azure tenant) in the Azure portal](/azure/azure-portal/set-preferences#directories--subscriptions).
 1. [View the tenant for your Azure DevOps organization](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id). You can go directly to this page in the Azure DevOps portal here: `https://dev.azure.com/<your-organization>/_settings/organizationAad`.
