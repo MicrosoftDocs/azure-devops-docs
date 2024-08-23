@@ -1,12 +1,7 @@
 ---
 title: Configure pool settings
-suffix: Managed DevOps Pools
 description: Learn how to configure Managed DevOps Pools settings.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 08/22/2024
 ---
 
 # Configure pool settings

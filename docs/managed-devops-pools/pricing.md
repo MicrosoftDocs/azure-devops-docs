@@ -1,12 +1,7 @@
 ---
 title: Managed DevOps Pools pricing
-suffix: Managed DevOps Pools
 description: Learn about pricing for your Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 06/12/2024
+ms.date: 08/22/2024
 ---
 
 # Pricing

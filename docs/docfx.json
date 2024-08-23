@@ -100,6 +100,7 @@
         "notifications/**/**.md": "Azure DevOps",
         "organizations/**/**.md": "Azure DevOps",
         "pipelines/**/**.md": "Azure Pipelines",
+        "managed-devops-pools/**/**.md": "Managed DevOps Pools",
         "project/**/**.md": "Azure DevOps",
         "reference/**/**.md": "Azure DevOps",
         "report/**/**.md": "Azure DevOps",
@@ -114,6 +115,7 @@
       },
       "ms.author": {
         "artifacts/**": "rabououn",
+        "managed-devops-pools/**": "sdanie",
         "pipelines/*.md": "sdanie",
         "pipelines/agents/**": "sdanie",
         "pipelines/apps/**": "jukullam",
@@ -147,6 +149,7 @@
       },
       "author": {
         "artifacts/**": "ramiMSFT",
+        "managed-devops-pools/**": "steved0x",
         "pipelines/*.md": "steved0x",
         "pipelines/agents/**": "steved0x",
         "pipelines/apps/**": "juliakm",
@@ -182,6 +185,7 @@
         "pipelines/ecosystems/**": "azure-devops"
       },
       "ms.subservice": {
+        "managed-devops-pools/**": "azure-devops-managed-devops-pools",
         "pipelines/agents/**": "azure-devops-pipelines-agents",
         "pipelines/apps/**": "azure-devops-pipelines-apps",
         "pipelines/artifacts/**": "azure-devops-pipelines-artifacts",
