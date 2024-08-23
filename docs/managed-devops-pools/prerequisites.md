@@ -1,12 +1,20 @@
 ---
-title: Configure your Azure subscription and Azure DevOps organization for Managed DevOps Pools
-description: Learn what you need to do before you can use Managed DevOps Pools.
+title: Prerequisites for Managed DevOps Pools
+description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
 ms.date: 08/22/2024
 ---
 
-# Configure your Azure subscription and Azure DevOps organization for Managed DevOps Pools
+# Prerequisites for Managed DevOps Pools
 
-Before getting started with Managed DevOps Pools, you must configure your Azure subscription and Azure DevOps organization. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
+There are a few things you need to prepare before using Managed DevOps Pools for the first time.
+
+At a high level, you need:
+
+> [!div class="checklist"]
+> - An Azure account with an active subscription, with the Managed DevOps Pools resource provider registered
+> - An Azure DevOps organization, connected to the Microsoft Entra ID tenant of your users
+
+This article shows you how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
 
 ## Configure your Azure subscription
 
