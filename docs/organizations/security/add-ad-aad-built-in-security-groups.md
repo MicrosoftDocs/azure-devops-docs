@@ -1,5 +1,5 @@
 ---
-title: Add users or groups to security groups in Active Directory / Microsoft Entra 
+title: Add Active Directory / Microsoft Entra group to a built-in security group
 titleSuffix: Azure DevOps
 description: Efficiently manage large user groups by adding Active Directory / Microsoft Entra groups to built-in security groups.
 ms.subservice: azure-devops-security
@@ -9,26 +9,38 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 08/21/2024
+ms.date: 08/23/2024
 --- 
 
-# Add users or groups to built-in security groups in Active Directory and Microsoft Entra
+# Add Active Directory / Microsoft Entra groups to a built-in security group
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this article, learn how to manage large user groups by adding Active Directory / Microsoft Entra groups to built-in security groups. As outlined in [About security, authentication, and authorization](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. Typically, you add users and groups to project-level groups like Contributors and Readers. For users who need to manage specific features and functions, add them or their associated groups to the Build Administrators or Project Administrators groups.
+::: moniker range="azure-devops"
 
-For more information, see [Default permissions and access](permissions-access.md).
+In this article, learn how to manage large user groups by adding Microsoft Entra groups to built-in security groups in Azure DevOps. As outlined in [About security, authentication, and authorization](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. Typically, you add groups to project-level groups like Contributors and Readers. For more information, see [Default permissions and access](permissions-access.md).
 
-The method for adding a user or group to a built-in security group is consistent, regardless of the level at which you add them.
+The process for adding a Microsoft Entra group to a built-in security group is the same, no matter the access level at which you add them.
 
-::: moniker range="azure-devops"  
+::: moniker-end
 
-> [!IMPORTANT]  
-> - If you're adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json). To manage Microsoft Entra group permissions in Azure DevOps, first add the group to a built-in security group. After that, you can manage the group's permissions throughout Azure DevOps.
-> - Enabling the **[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)** preview feature prevents users in the **Project-Scoped Users** group from accessing projects they aren't added to.
+::: moniker range=" < azure-devops"
 
-[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
+In this article, learn how to manage large user groups by adding Active Directory groups to built-in security groups in Azure DevOps. As outlined in [About security, authentication, and authorization](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. Typically, you add groups to project-level groups like Contributors and Readers. For more information, see [Default permissions and access](permissions-access.md).
+
+The process for adding an Active Directory group to a built-in security group is the same, no matter the access level at which you add them.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Prerequisites
+
+- **Organization connection:** Have your Azure DevOps organization [connected to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md)
+- **Permissions:** 
+  - Have Microsoft Entra Administrator permissions. The Directory Administrator can delegate those permissions to you in the [Azure portal](https://ms.portal.azure.com/#home)
+  - Be a member of the **Project Collection Administrators** group in Azure DevOps
+- **Access:** Ensure you have at least **Basic** access in Azure DevOps.
 
 ::: moniker-end
 
@@ -38,7 +50,7 @@ The method for adding a user or group to a built-in security group is consistent
 
 <a name='add-azure-ad-user-or-group-to-a-built-in-security-group'></a>
 
-## Add Microsoft Entra user or group to a built-in security group 
+## Add a Microsoft Entra group to a built-in security group 
 
 > [!NOTE]   
 > To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -51,10 +63,10 @@ The method for adding a user or group to a built-in security group is consistent
 
 	![Screenshot shows selections, Project settings and Permissions.](media/permissions/choose-project-settings-permissions.png)
 
-3. Open **Security** and under the **Groups** section and choose one of the following actions:
+3. Do one of the following actions:
     - Select **Readers** to add users who require read-only access to the project.
-    - Select **Contributors** to add users who need full contribution access or have been granted Stakeholder access.
-    - Select **Project Administrators** for users who need to administrate the project.
+    - Select **Contributors** to add users who need full contribution access or Stakeholder access.
+    - Select **Project Administrators** to add users who need administrative access to the project.
 
 4. Select **Members**.
 
@@ -63,16 +75,16 @@ The method for adding a user or group to a built-in security group is consistent
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot shows Contributors group, Membership page.](media/add-users/add-members-to-contributors-group.png)  
 
-	By default, the default team group and any additional teams you add to the project are included as members of the Contributors group. Therefore, you can [add a new user as a member of a team](add-users-team-project.md#add-team-members), and the user automatically inherits Contributor permissions.
+	The default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user automatically inherits Contributor permissions. 
 
-5. Select :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
+5. Select :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a group.
 
-6. Enter the name of the user into the text box. You can enter multiple identities, separated by commas. The system automatically searches for matches. Select the matching identity or identities that meet your criteria.
+6. Enter the group name into the text box. You can enter multiple identities, separated by commas. The system automatically searches for matches. Select the matching identity or identities that meet your criteria.
 
-	![Screenshot shows the Add users and group dialog.](media/project-level-permissions-add-a-user.png)  
+   ![Screenshot shows the Add users and group dialog.](media/project-level-permissions-add-a-user.png)  
 
 	> [!NOTE]
-	> The first time you add a user or group, you can't browse for it or check the friendly name. After adding the identity, you can enter the friendly name directly.
+	> The first time you add a group, you can't browse for it or check the friendly name. After adding the identity, you can enter the friendly name directly.
 
 #### [Current page](#tab/current-page)
 
@@ -82,43 +94,37 @@ The method for adding a user or group to a built-in security group is consistent
 
 	[![Screenshot show selections, Project settings, Security page.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
-3. Open **Security** and under the **Groups** section, choose one of the following actions:
-    - To add users who require read-only access to the project, choose **Readers**.
-    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
-    - For users who need to administrate the project, choose **Project Administrators**.
+3. Do one of the following actions:
+    - Select **Readers** to add users who require read-only access to the project.
+    - Select **Contributors** to add users who need full contribution access or Stakeholder access.
+    - Select **Project Administrators** to add users who need administrative access to the project.
 
-4. Next, choose the **Members** tab.
+4. Select **Members**.
 
 	Here we choose the **Contributors** group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Admin context, Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
+	> ![Screenshot shows Admin context, Security page, Contributors group, Membership page selections.](media/add-users/add-members-to-contributors-group.png)  
 
-	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
+	The default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user automatically inherits Contributor permissions. 
 
-5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
+5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a group.
 
-6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
+6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match that meets your choice.
 
 	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
 
-	> [!NOTE]
-	> The first time you add a user or group, 
-	> you can't browse to it or check the friendly name.
-	> After the identity has been added, you can just enter the friendly name.
+	> [!TIP]
+	> The first time you add a group, you can't browse or check the friendly name.
+	> After you add the identity, you can enter the friendly name directly.
 
 ::: moniker-end
 
 ---
 
-
 ::: moniker range="< azure-devops"
 
-## Add an Active Directory user or group to a built-in security group 
-
-::: moniker-end
-
-::: moniker range="= azure-devops-2019 || azure-devops-2020" 
+## Add an Active Directory group to a built-in security group
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -126,36 +132,31 @@ The method for adding a user or group to a built-in security group is consistent
 
 	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
-3. Open **Security** and under the **Groups** section, choose one of the following actions:
-    - To add users who require read-only access to the project, choose **Readers**.
-    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
-    - For users who need to administrate the project, choose **Project Administrators**.
+3. Select **Security** and under the **Groups** section, do one of the following actions:
+    - Select **Readers** to add users who require read-only access to the project.
+    - Select **Contributors** to add users who need full contribution access or Stakeholder access.
+    - Select **Project Administrators** to add users who need administrative access to the project.
 
 4. Next, choose the **Members** tab.
 
 	Here we choose the **Contributors** group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Admin context, Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
+	> ![Screenshot showing selection sequence, Admin context, Security page, Contributors group, Membership page.](media/add-users/add-members-to-contributors-group.png)  
 
-	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
+	The default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user automatically inherits Contributor permissions. 
 
-5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
+5. Select :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a group.
 
-6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
+6. Enter the group name in the text box. You can enter multiple groups, separated by commas. The system automatically searches for matches. Select the match that meets your criteria.
 
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
+	![Screenshot showing the Add users and group dialog.](media/project-level-permissions-add-a-user.png)  
 
-	> [!NOTE]
-	> The first time you add a user or group, 
-	> you can't browse to it or check the friendly name.
-	> After the identity has been added, you can just enter the friendly name.
+	> [!TIP]
+	> The first time you add a group, you can't browse or check the friendly name.
+	> After you add the identity, you can enter the friendly name directly.
 
 ::: moniker-end
-
-
-
-
 
 ## Next steps
 
@@ -167,4 +168,4 @@ The method for adding a user or group to a built-in security group is consistent
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Change project-level permissions](change-project-level-permissions.md)
 - [Change project collection-level permissions](change-organization-collection-level-permissions.md)
-- [About security, authentication, and authorization](about-security-identity.md)
+- [Learn about security, authentication, and authorization](about-security-identity.md)
