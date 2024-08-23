@@ -206,10 +206,12 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 
 [GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This workflow:
 
-* Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
-* Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
-* Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
-* Publishes the NuGet package to Azure Artifacts. 
+1. Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
+1. Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
+1. Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
+1. Publishes the NuGet package to Azure Artifacts. 
+
+### Create a YAML file
 
 1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
 
@@ -281,7 +283,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
     ```
 3. Go to your Azure Artifacts feed to verify that you see the package you pushed.
     
-    :::image type="content" source="media/artifacts-nuget-package.png" alt-text="Review new Azure Artifacts feed."::: 
+    :::image type="content" source="media/artifacts-nuget-package.png" alt-text="Screenshot of review for new Azure Artifacts feed." lightbox-"media/artifacts-nuget-package.png" ::: 
 
 :::zone-end
 
