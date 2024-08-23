@@ -152,7 +152,7 @@ Within 24 hours, the Managed DevOps Pools support team will evaluate your reques
 
 ### Create a Dev Center and Dev Center project
 
-Managed DevOps Pools requires a Dev Center and Dev Center project. You have the option to create a Dev Center and Dev Center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps.
+Managed DevOps Pools requires a Dev Center and Dev Center project. You have the option to create a Dev Center and Dev Center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps. Multiple Managed DevOps Pools can use the same Dev Center and Dev Center project.
 
 * [Create a Dev Center](#create-a-dev-center)
 * [Create a Dev Center Project](#create-a-dev-center-project)
@@ -194,8 +194,8 @@ Managed DevOps Pools requires a Dev Center and Dev Center project. You have the 
 
 To create a Managed DevOps Pool in your Azure DevOps organization, your Azure DevOps organization must be connected to Microsoft Entra ID, and your user account must be a member of the following Microsoft Entra ID [tenants](/entra/identity-platform/developer-glossary#tenant):
 
-* The tenant of the Azure subscription that contains your Managed DevOps Pool.
-* The tenant your Azure DevOps organization is connected to.
+* The tenant of the Azure subscription that contains your Managed DevOps Pool
+* The tenant your Azure DevOps organization is connected to
 
 If the tenants are different, your account must be a member of both tenants. To view your tenants:
 
