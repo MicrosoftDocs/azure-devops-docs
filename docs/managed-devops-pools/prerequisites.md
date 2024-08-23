@@ -20,13 +20,13 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription)
 1. [Review Managed DevOps Pools quotas](#review-managed-devops-pools-quotas)
-1. [Create a Dev Center and Dev Center project](#create-a-dev-center-and-dev-center-project)
+1. [Create a Dev Center and Dev Center project](#create-a-dev-center-and-dev-center-project) (If you plan to create your Managed DevOps Pools using the Azure portal, you can create the Dev Center and Dev Center project during the pool creation process.)
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
-To use Managed DevOps Pools, you must register the **Microsoft.DevOpsInfrastructure** resource provider with your Azure subscription.
+To use Managed DevOps Pools, register the **Microsoft.DevOpsInfrastructure** resource provider with your Azure subscription.
 
-You must have permission to register a resource provider, which requires the `*/register/action` operation. This is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
+Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
 
 #### [Azure portal](#tab/azure-portal/)
