@@ -65,8 +65,6 @@ To manage service hooks for an Azure DevOps organization or project, you must ha
 
 1. On the **Action** screen, configure the Jenkins action to take when the event occurs.
 
-   :::image type="content" source="./media/jenkins/subscription.png" alt-text="Screenshot of configuring the Action dialog box.":::
-
 1. Select **Test** to test the service hook, and **Finish** to finish the configuration.
 
 Now when the event occurs in the Git repository, it triggers a Jenkins build.
