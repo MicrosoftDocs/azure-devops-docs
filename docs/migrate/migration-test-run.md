@@ -136,7 +136,7 @@ The two files are described in greater detail in the next sections.
 
 The migration specification, *migration.json*, is a JSON file that provides migration settings. It includes the desired organization name, storage account information, and other information. Most of the fields are autopopulated, and some fields require your input before you attempt a migration.
 
-![Screenshot of a newly generated migration specification file.](media/migration-import/importSpecNotFilledOut.png)
+![Screenshot of a newly generated migration specification file.](media/migration-import/importSpecHalfFilledOut.png)
 
 The *migration.json* file's displayed fields and required actions are described in the following table:
 
@@ -470,9 +470,7 @@ Imports can be queued as either a test run or a production run. The **ImportType
 - **ProductionRun**: Use a production run when you want to keep the resulting migration and use the organization full time in Azure DevOps Services after the migration finishes. 
 
 > [!TIP] 
-> We always recommend that you complete a test run migration first. 
-
-![Screenshot of completed migration specification file with migration type.](media/migration-import/importSpecCompleted.png)
+> We always recommend that you complete a test run migration first.
 
 ### Test run organizations
 

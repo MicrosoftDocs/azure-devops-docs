@@ -63,7 +63,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 3. Select **Project Administrators** group > **Members** > **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Screenshot showing button selections, Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add-s154.png) 
+    > ![Screenshot showing button selections, Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add.png) 
 
 4. Enter the name of the user account or custom security group into the text box. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose one or more matches. 
 
