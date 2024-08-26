@@ -23,9 +23,11 @@ Before completing the steps in this article, you must have configured your Azure
 1. Specify the **Subscription**, **Resource group**, **Dev Center**, and **Dev Center project**. If you haven't yet created a resource group, Dev Center, or Dev Center project, you can create them in this step.
    :::image type="content" source="./media/get-started/create-managed-devops-pools-initial-settings.png" alt-text="Screenshot of Create Managed DevOps Pools initial configuration settings.":::
 
-1. Specify the Azure DevOps organization you want to use with your pool, the name of the pool, and the region for your pool. By default pools are configured for all projects in a single organization. You can configure additional organizations or limit the projects on the [Security](./configure-security.md) tab. Choose a region that is close to the other Azure resources you're using for [best cost and performance](./manage-costs.md#pool-region-co-location).
+1. Specify the **Azure DevOps organization** you want to use with your pool, the name of the pool, and the region for your pool.
 
    :::image type="content" source="./media/get-started/azure-devops-organization-and-pool.png" alt-text="Screenshot of Azure DevOps organization field.":::
+
+   By default pools are configured for all projects in a single organization. You can configure additional organizations or limit the projects on the [Security](./configure-security.md) tab. Choose a region that is close to the other Azure resources you're using for [best cost and performance](./manage-costs.md#pool-region-co-location).
 
 1. Specify the maximum number of agents you wish to be available ([Maximum agents](./configure-pool-settings.md#maximum-agents)), the virtual machine size of the agents ([Agent size](./configure-pool-settings.md#agent-size)), and the [OS disk type](./configure-pool-settings.md#os-disk-type) for the agents. [D2adsV5](/azure/virtual-machines/dasv5-dadsv5-series#dadsv5-series) is the default **Agent size**; choose **Change size** to pick a different size if desired.
 
@@ -37,14 +39,14 @@ Before completing the steps in this article, you must have configured your Azure
 
    :::image type="content" source="./media/configure-images/configure-pool-image.png" alt-text="Screenshot if Images section.":::
 
-1. Configure any desired additional settings for your pool by choosing the corresponding tab. View each tab to see the default settings for Managed DevOps Pools, and see the following links for more information about the settings available on each tab. To use the default settings, continue to **Review + create**.
+1. Configure any desired additional settings for your pool by choosing the corresponding tab. View each tab to see the default settings for Managed DevOps Pools, and see the following links for more information about the settings available on each tab. To use the default settings for the following sections, continue to **Review + create**.
 
    :::image type="content" source="./media/get-started/create-managed-devops-pools-tabs.png" alt-text="Screenshot of tabs of settings.":::
 
-   * [Scaling](./configure-scaling.md) - Configure scaling settings to manage the performance and cost of your Managed DevOps Pool.
-   * [Networking](./configure-networking.md) - Add agents from your Managed DevOps Pool to your virtual network.
-   * [Storage](./configure-storage.md) - Attach an empty data disk to your agents.
-   * [Security](./configure-security.md) - Configure organization and project access, specify pool permissions, and configure interactive mode for testing.
+   * [Scaling](./configure-scaling.md) - Configure scaling settings to manage the performance and cost of your Managed DevOps Pool. Th default setting is stateless agents with no standby agents.
+   * [Networking](./configure-networking.md) - Add agents from your Managed DevOps Pool to your virtual network. The default setting is an isolated virtual network for your agents.
+   * [Storage](./configure-storage.md) - Attach an empty data disk to your agents. The default is no attached data disk.
+   * [Security](./configure-security.md) - Configure organization and project access, specify pool permissions, and configure interactive mode for testing. The default is a pool configured for all projects in the organization specified in **Azure DevOps organization**.
    * [Tags](/azure/azure-resource-manager/management/tag-resources) - Use tags to organize your Azure resources and management hierarchy.
 
 1. Choose **Review + create**, and choose **Create** to confirm.
