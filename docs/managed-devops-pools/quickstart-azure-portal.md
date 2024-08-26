@@ -1,7 +1,7 @@
 ---
 title: Get started with Managed DevOps pools
 description: Learn how to get started with Managed DevOps Pools.
-ms.date: 08/22/2024
+ms.date: 08/26/2024
 ---
 
 # Create your first Managed DevOps Pool
@@ -16,7 +16,7 @@ Before completing the steps in this article, you must have configured your Azure
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Search for **Managed DevOps Pools** and select it from the available options.
-1. Choose **Create** or **Create Managed DevOps Pools** if this is your first pool.
+1. Choose **Create**, or **Create Managed DevOps Pools** if this is your first pool.
 
    :::image type="content" source="./media/get-started/create-managed-devops-pools-button.png" alt-text="Screenshot of Create Managed DevOps Pools button.":::
 
@@ -27,9 +27,11 @@ Before completing the steps in this article, you must have configured your Azure
 
    :::image type="content" source="./media/get-started/azure-devops-organization-and-pool.png" alt-text="Screenshot of Azure DevOps organization field.":::
 
-1. Specify the maximum number of agents you wish to be available ([Maximum agents](./configure-pool-settings.md#maximum-agents)), the virtual machine size of the agents ([Agent size](./configure-pool-settings.md#agent-size)), and the [OS disk type](./configure-pool-settings.md#os-disk-type) for the agents. [D2adsV5](/azure/virtual-machines/dasv5-dadsv5-series#dadsv5-series) is the default **Agent size**; choose **Change size** to pick a different size if desired. [Verify that your desired agent size is available in your region](./prerequisites.md#view-your-quotas).
+1. Specify the maximum number of agents you wish to be available ([Maximum agents](./configure-pool-settings.md#maximum-agents)), the virtual machine size of the agents ([Agent size](./configure-pool-settings.md#agent-size)), and the [OS disk type](./configure-pool-settings.md#os-disk-type) for the agents. [D2adsV5](/azure/virtual-machines/dasv5-dadsv5-series#dadsv5-series) is the default **Agent size**; choose **Change size** to pick a different size if desired.
 
    :::image type="content" source="./media/get-started/agent-size-count-os-disk-type.png" alt-text="Screenshot of agent size, count, and OS disk type.":::
+
+   Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked as **Available**. You can request more quota for **Not Available** SKUs. Once a quota request for a **Not Available** SKU is approved, it will then be listed as **Available**. [Learn more about Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
 
 1. Configure the images for your pool. By default pools are created with a [single image](./configure-images.md). To change the image or [configure multiple images](./configure-images.md#use-multiple-images-per-pool-with-aliases), choose **Add from Image Library** and select the image or images you want to use for your pool.
 
