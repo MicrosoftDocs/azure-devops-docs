@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 08/23/2024
+ms.date: 08/26/2024
 --- 
 
 # Add an Active Directory / Microsoft Entra group to a built-in security group
@@ -37,9 +37,7 @@ The process for adding an Active Directory group to a built-in security group is
 ## Prerequisites
 
 - **Organization connection:** Have your Azure DevOps organization [connected to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).
-- **Permissions:** 
-  - Have Microsoft Entra Administrator permissions. The Directory Administrator can delegate those permissions to you in the [Azure portal](https://ms.portal.azure.com/#home).
-  - Be a member of the **Project Collection Administrators** group in Azure DevOps.
+- **Permissions:** Be a member of the **Project Collection Administrators** group in Azure DevOps.
 - **Access:** Ensure you have at least **Basic** access in Azure DevOps.
 
 ::: moniker-end
