@@ -1713,6 +1713,16 @@ You can define the following permissions in Build at both levels.
 :::row-end:::
 :::row:::
    :::column span="2":::
+   <a id="create-build-pipeline"></a> 
+   Create build pipeline
+   `Build,  CreateBuildPipeline`
+   :::column-end:::
+   :::column span="2":::
+   Can create pipleine lines and edit the pipelines they create.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
    <a id="delete-build-definition-permission"></a> Delete build definition  
    `Build, DeleteBuildDefinition`
    :::column-end:::

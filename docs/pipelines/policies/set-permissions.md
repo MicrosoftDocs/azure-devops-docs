@@ -46,18 +46,6 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ::: moniker-end
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Related articles 
 
 - [Grant version control permissions to the build service](../scripts/git-commands.md)
