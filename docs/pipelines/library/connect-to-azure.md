@@ -70,7 +70,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
         | Parameter | Description |
         | --------- | ----------- |
         | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource group** | Required. Enter the Azure subscription name. |
+        | **Resource group** | Required. Select the Azure resource group. |
     
     * For the **Management Group** scope, select the **Azure management group**.
     
