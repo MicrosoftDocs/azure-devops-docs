@@ -49,7 +49,7 @@ For more information, see [Supported languages and frameworks](https://codeql.gi
 
 You can view the specific queries and task details executed by CodeQL in the build log. 
 
-![Screenshot of code scanning publish results task](./media/code-scanning-build-log.png)
+[![Screenshot of code scanning publish results task.](./media/code-scanning-build-log.png)](./media/code-scanning-build-log.png#lightbox)
 
 ### Code scanning build mode customization
 Code scanning supports two build modes when setting up a pipeline for scanning:
@@ -232,7 +232,7 @@ There's no effect to results if pipelines or branches are renamed - it may take 
 
 If you choose to run custom CodeQL queries, there isn't by default a separate filter for alerts generated from different query packs. You can filter by rule, which is distinct for each query. 
 
-![Screenshot of code scanning alerts for a repository](./media/code-scanning-alerts.png) 
+[![Screenshot of code scanning alerts for a repository.](./media/code-scanning-alerts.png)](./media/code-scanning-alerts.png#lightbox) 
 
 If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task does not fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
@@ -241,7 +241,7 @@ If you turn off Advanced Security for your repository, you lose access to the re
 Select an alert for more details, including remediation guidance. Each alert includes  a location, description, example, and severity. 
 
 
-![Screenshot of code scanning alert detail](./media/code-scanning-detail.png)
+[![Screenshot of code scanning alert detail.](./media/code-scanning-detail.png)](./media/code-scanning-detail.png#lightbox)
 
 | Section  | Explanation  |
 |---|---|
@@ -277,7 +277,7 @@ To dismiss an alert:
 1. Select **Close** to submit and close the alert.
 1. The alert state changes from **Open** to **Closed** and your dismissal reason displays.
 
-![Screenshot of how to dismiss a code scanning alert](./media/code-scanning-dismiss-alert.png)
+[![Screenshot of how to dismiss a code scanning alert.](./media/code-scanning-dismiss-alert.png)](./media/code-scanning-dismiss-alert.png#lightbox)
 
 This action only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
 
