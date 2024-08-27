@@ -29,6 +29,11 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
@@ -60,6 +65,11 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
@@ -132,6 +142,10 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 - Artifact name: drop
 
 * * *
+
+
+> [!NOTE]
+> `Build.ArtifactStagingDirectory` path is cleaned up after each build. If you're using this path to publish your artifact, make sure you copy the content you wish to publish into this directory before the publishing step.
 
 ## Download artifacts
 
