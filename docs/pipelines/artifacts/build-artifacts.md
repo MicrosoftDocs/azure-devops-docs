@@ -133,6 +133,10 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 * * *
 
+
+> [!NOTE]
+> `Build.ArtifactStagingDirectory` path is cleaned up after each build. If you're using this path to publish your artifact, make sure you copy the content you wish to publish into this directory before the publishing step.
+
 ## Download artifacts
 
 #### [YAML](#tab/yaml/)
