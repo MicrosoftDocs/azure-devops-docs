@@ -1719,7 +1719,7 @@ You can define the following permissions in Build at both levels.
    `Build,  CreateBuildPipeline`
    :::column-end:::
    :::column span="2":::
-   Can create pipleine lines and edit those pipelines.
+   Can create pipeline lines and edit those pipelines.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
