@@ -13,6 +13,7 @@ ms.date: 08/18/2021
 | View builds             |✔️|✔️|✔️|✔️| 
 | View build pipeline      |✔️|✔️|✔️|✔️| 
 | Administer build permissions| | |✔️|✔️| 
+| Create build pipeline| |✔️|✔️|✔️|
 | Delete or edit build pipeline| |✔️|✔️|✔️| 
 | Delete or destroy builds | | |✔️|✔️| 
 |Edit build quality        | |✔️|✔️|✔️| 
