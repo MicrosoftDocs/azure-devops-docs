@@ -36,13 +36,16 @@ The service connection uses a service principal to authenticate with Azure resou
 
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
-[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets. You can automatically create the workload identity federation for authentication or manually create it.
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.  You can automatically create the workload identity federation for authentication or manually create it.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
 * You have the Owner role for your Azure subscription.
 * You're not connecting to the [Azure Stack](#connect-stack) or the [Azure US Government](#connect-govt) environments.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
+
+
+For more information, see [Workload identity federation](/entra/workload-id/workload-identity-federation).
 
 ### Create a service connection with workload identity federation (automatic)
 
@@ -67,7 +70,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
         | Parameter | Description |
         | --------- | ----------- |
         | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource group** | Required. Enter the Azure subscription name. |
+        | **Resource group** | Required. Select the Azure resource group. |
     
     * For the **Management Group** scope, select the **Azure management group**.
     
@@ -98,12 +101,12 @@ Use this option to manually create a service connection that uses an existing wo
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
-   
-      :::image type="content" source="media\new-azure-resource-manager-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
 
+    :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
+   
 1. Select **Workload identity federation (manual)** and **Next**.
 
-   :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot that shows selecting a workload identity service connection type.":::
+    :::image type="content" source="media\new-azure-resource-manager-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
 
 1. In **Step 1: Basics**:
     1. Enter a **Service connection name** 

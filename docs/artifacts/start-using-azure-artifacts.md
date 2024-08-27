@@ -18,7 +18,7 @@ Azure Artifacts enables developers to efficiently manage all their dependencies 
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+- Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
@@ -27,9 +27,13 @@ Azure Artifacts enables developers to efficiently manage all their dependencies 
 
 ::: moniker range="azure-devops"
 
-## Get started with Azure Artifacts
+## Create a feed
 
-With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
+[!INCLUDE [](includes/create-feed.md)]
+
+## Get started
+
+With Azure Artifacts, you can publish and consume various package types from feeds and public registries such as nuget.org, npmjs.com, Maven Central, etc. Select your package type to get started:
 
 # [NuGet](#tab/nuget)
 
@@ -65,7 +69,7 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
 
-## Get started with Azure Artifacts
+## Get started
 
 With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 

@@ -140,7 +140,7 @@ Control options are available as keys on the `task` section.
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019 < azure-devops"
+::: moniker range=" azure-devops-2020"
 
 Control options are available as keys on the `task` section.
 
@@ -157,12 +157,11 @@ Control options are available as keys on the `task` section.
     string: string # Name/value pairs
   name: string # ID of the step.
   timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
-  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Control options are available as keys on the `task` section.
 
@@ -219,7 +218,7 @@ steps:
 
 ::: moniker-end
 
-:::moniker range="> azure-devops-2019"
+:::moniker range="> azure-devops-2020"
 
 ### Step target
 
@@ -245,7 +244,7 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Number of retries if task failed
 
@@ -258,7 +257,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 ```
 
 > [!NOTE]
-> * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
+> * Requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries are not supported for [agentless tasks](./phases.md#agentless-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task), and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks). 
 > * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.

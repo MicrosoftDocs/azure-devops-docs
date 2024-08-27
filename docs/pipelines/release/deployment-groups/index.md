@@ -5,7 +5,7 @@ ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.topic: how-to
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/18/2024
+ms.date: 08/27/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -14,12 +14,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to create and use deployment groups for Classic release pipelines in Azure Pipelines. Similar to an [agent pool](../../agents/pools-queues.md), a deployment group is a logical set of target machines that each have a deployment agent installed.
-
-Deployment groups can represent environments such as "Development," "Test," or "Production." Every physical or virtual machine (VM) in the deployment group interacts with Azure Pipelines to coordinate the deployment tasks.
+Similar to an [agent pool](../../agents/pools-queues.md), a deployment group is a logical set of target machines that each have a deployment agent installed. Deployment groups can represent environments such as "Development," "Test," or "Production." Every physical or virtual machine (VM) in the deployment group interacts with Azure Pipelines to coordinate the deployment tasks. Deployment groups are different from [deployment jobs](../../process/deployment-jobs.md), which are collections of task-related steps defined in YAML pipelines.
 
 >[!NOTE]
->Deployment groups are available only for Classic release pipelines and are different from [deployment jobs](../../process/deployment-jobs.md), which are collections of task-related steps defined in YAML pipelines.
+>Deployment groups are available only for Classic release pipelines.
 
 By using deployment groups, you can:
 
@@ -30,12 +28,10 @@ By using deployment groups, you can:
 
 ## Prerequisites
 
-- An Azure DevOps organization and project.
+- An Azure DevOps organization and project. To create an organization and project, see [Create a new organization](../../../organizations/accounts/create-organization.md) or [Create a project in Azure DevOps](../../../organizations/projects/create-project.md).
 - Administrative access to at least one Windows or Linux physical or virtual machine to use as a deployment target.
 
 ## Create a deployment group
-
-To create a deployment group:
 
 1. From your Azure DevOps project, select **Pipelines** > **Deployment groups**.
 
@@ -51,9 +47,9 @@ To create a deployment group:
 
 1. Select **Use a personal access token in the script for authentication**, and then select **Copy script to the clipboard**.
 
-   :::image type="content" source="media/generated-script.png" alt-text="A screenshot showing the generated registration script and other settings.":::
-
 1. Save the copied script to run on all the target machines in your deployment group.
+
+   :::image type="content" source="media/generated-script.png" alt-text="A screenshot showing the generated registration script and other settings.":::
 
 ## Register target servers
 
@@ -126,13 +122,10 @@ When new target servers are added to a deployment group, you can configure the e
 1. Under **Select events**, select **New target with required tags becomes available**.
 1. Under **Select action**, select **Redeploy the last successful deployment on this environment**.
 
-:::image type="content" source="../media/deployment-group-add-targets.png" alt-text="A screenshot showing the Auto redeploy trigger settings.":::
+   :::image type="content" source="../media/deployment-group-add-targets.png" alt-text="A screenshot showing the Auto redeploy trigger settings.":::
 
 ## Related articles
 
 - [Deployment group jobs](../../process/deployment-group-phases.md)
 - [Deploy to Azure VMs using deployment groups](./deploying-azure-vms-deployment-groups.md)
 - [Provision agents for deployment groups](./howto-provision-deployment-group-agents.md)
-- [Self-hosted Windows agents](../../agents/windows-agent.md)
-- [Self-hosted macOS agents](../../agents/osx-agent.md)
-- [Self-hosted Linux agents](../../agents/linux-agent.md)

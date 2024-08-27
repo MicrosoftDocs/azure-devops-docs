@@ -5,7 +5,7 @@ ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/19/2024
+ms.date: 08/27/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,27 +13,20 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to use a Classic pipeline to deploy an ASP.NET, ASP.NET Core, or Node.js web app to an IIS web server virtual machine (VM) in a Windows deployment group.
+Learn how to use a Classic pipeline to deploy an ASP.NET Core or Node.js web app to an IIS web server virtual machine (VM) in a Windows deployment group.
 
 ## Prerequisites
 
 - An Azure DevOps organization and project. To create an organization and project, see [Create a new organization](../../organizations/accounts/create-organization.md) or [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- [Administrative access](../agents/windows-agent.md#permissions) to at least one Windows deployment target VM.
-
-#### [.NET](#tab/net/)
-- A Classic build pipeline created in Azure Pipelines. For instructions, see [Build ASP.NET apps](../apps/aspnet/build-aspnet-4.md).
-- A configured IIS web server.
-
-  [!INCLUDE [prepare-aspnet-windows-vm](../apps/includes/prepare-aspnet-windows-vm.md)]
 
 #### [.NET Core](#tab/netcore/)
 
-- A Classic build pipeline created in Azure Pipelines. For instructions, see [Build .NET Core apps](../ecosystems/dotnet-core.md).
+- A Classic pipeline to build your project. For instructions, see [Build .NET Core apps](../ecosystems/dotnet-core.md).
 - A configured IIS web server. For instructions, see [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/).
 
 #### [Node](#tab/node/)
 
-- A Classic build pipeline created in Azure Pipelines. For instructions, see [Build Node.js apps](../ecosystems/javascript.md).
+- A Classic pipeline to build your project. For instructions, see [Build Node.js apps](../ecosystems/javascript.md).
 - A configured IIS web server. For instructions, see [Hosting node.js applications in IIS on Windows](https://github.com/Azure/iisnode).
 
 ---
@@ -50,6 +43,8 @@ To create the deployment group:
 1. On the next screen, in the machine registration section, select **Windows** for the **Type of target to register**. A registration script is generated.
 1. Select **Use a personal access token in the script for authentication**. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 1. Select **Copy script to the clipboard**.
+
+   :::image type="content" source="media/generated-script.png" alt-text="A screenshot showing the generated registration script and other settings.":::
 
 On each of your target VMs:
 
@@ -81,10 +76,9 @@ Deploy the artifacts from your build pipeline to your IIS server by using a rele
 1. Under **Build branch filters**, add the **main** build branch as a filter.
 1. On the release pipeline screen, select **Tasks**, and then select **IIS Deployment**.
 1. On the settings screen, under **Deployment group**, select the deployment group you created earlier.
+1. Select **Save**.
 
    :::image type="content" source="media/iis-deployment-group.png" alt-text="A screenshot showing how to set up the IIS deployment group.":::
-
-1. Select **Save**.
 
 ## Deploy your app
 

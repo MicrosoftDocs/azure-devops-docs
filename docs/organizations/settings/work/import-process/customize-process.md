@@ -216,7 +216,7 @@ The Categories.xml definition file must conform to the syntax and rules describe
 
 A **WITD** element and its child elements must conform to the syntax and rules described in [WITD XML element reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference). Also, it must meet the following conditions:
 
-* There are at most 512 fields within a single WIT and 512 fields across all WITs.
+* There are at most 1024 fields within a single WIT and 1024 fields across all WITs.
 * The friendly name and required **refname** attribute assigned to a WIT are unique within the set of WIT definition files.
 * The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System.*Name* and Microsoft.*Name*.
 * Reference names contain at least one period (.), and all other characters are letters with no spaces.
@@ -238,7 +238,7 @@ A **FIELD** element and its child elements can contain a **GLOBALLIST** element.
 
 #### Limit restrictions
 
-* A **FIELDS** element is limited to 512 fields.
+* A **FIELDS** element is limited to 1024 fields.
 * A work item type is limited to 64 person-name fields. A person-name field is one with the attribute and value ```syncnamechanges=true```.
 * An **ALLOWEDVALUES** or **SUGGESTEDVALUES** element is limited to 512 **LISTITEM** elements.
 * A field is limited to 1,024 rules.

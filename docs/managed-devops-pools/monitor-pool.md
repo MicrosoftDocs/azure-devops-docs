@@ -1,12 +1,7 @@
 ---
 title: Monitor
-suffix: Managed DevOps Pools
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/18/2024
+ms.date: 08/22/2024
 ---
 
 # Monitor Managed DevOps Pools

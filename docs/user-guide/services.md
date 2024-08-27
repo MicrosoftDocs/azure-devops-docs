@@ -9,6 +9,7 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ms.date: 08/15/2024
 ---
 

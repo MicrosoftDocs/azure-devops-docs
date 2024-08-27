@@ -1,12 +1,7 @@
 ---
 title: Frequently asked questions
-suffix: Managed DevOps Pools
 description: Learn the answers to frequently asked questions for Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 08/12/2024
+ms.date: 08/22/2024
 ---
 
 # Frequently asked questions

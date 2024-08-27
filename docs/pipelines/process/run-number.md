@@ -60,7 +60,7 @@ Consider the following data for a build run:
 If you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
 ```yaml
-$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:.r)
+$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 ```
 
 ## Tokens
@@ -143,7 +143,7 @@ variables:
     ${{ else }}:
       value: other
 
-name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd).$(Rev:.r)
+name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd).$(Rev:r)
 
 pool:
   vmImage: 'ubuntu-latest'

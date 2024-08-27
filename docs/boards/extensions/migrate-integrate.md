@@ -34,13 +34,15 @@ The [Azure DevOps Migration Tools marketplace extension](https://github.com/nkdA
 - Edit work items in bulk
 - Migrate test suites and test plans 
 
-For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/) and [OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/).
+For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/) and [OM4ADO](https://www.opshub.com/products/opshub-azure-devops-migrator/).
 
-[OpsHub Azure DevOps Migrator](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OADOM), formerly known as OpsHub Visual Studio Migration Utility(OVSMU), gives a seamless migration between Azure DevOps Server and Azure DevOps Services.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
+[OpsHub Migrator for Microsoft Azure DevOps](https://www.opshub.com/products/opshub-azure-devops-migrator/) (OM4ADO), formerly known as OpsHub Visual Studio Migration Utility(OVSMU), gives a seamless migration between Azure DevOps Server and Azure DevOps Services.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
 
-- All version control information and history
-- All work items and history
-- All test cases and test results
+- Version control information and history
+- Work items and history
+- Test cases and test results
+- Iteration, Area Path, Group, Team, User
+- Dashboard, Query, Widget and Pipeline
 - Supports Team Foundation Server 2018 and Azure DevOps Server versions 2019, 2020, and 2022
 - Supports Azure DevOps Services
  
