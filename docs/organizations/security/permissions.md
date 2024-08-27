@@ -1711,6 +1711,7 @@ You can define the following permissions in Build at both levels.
    Can administer the build permissions for other users.
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
    <a id="create-build-pipeline"></a> 
@@ -1718,9 +1719,10 @@ You can define the following permissions in Build at both levels.
    `Build,  CreateBuildPipeline`
    :::column-end:::
    :::column span="2":::
-   Can create pipleine lines and edit the pipelines they create.
+   Can create pipleine lines and edit those pipelines.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
    <a id="delete-build-definition-permission"></a> Delete build definition  
@@ -1807,6 +1809,7 @@ You can define the following permissions in Build at both levels.
    They can also stop the builds that they have queued.
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
    <a id="edit-pipeline-queue-configuration-permission"></a> Edit queue build configuration
@@ -1816,6 +1819,7 @@ You can define the following permissions in Build at both levels.
    Can specify values for free-text parameters (e.g., of type `object` or `array`) and pipeline variables when queueing new builds.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
    <a id="retain-indefinitely-permission"></a> Retain indefinitely  
