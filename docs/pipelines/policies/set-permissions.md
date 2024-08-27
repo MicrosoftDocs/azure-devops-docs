@@ -42,17 +42,17 @@ To verify the permissions for your project's contributors, make sure you're a me
 
 1. On the permissions dialog box, make sure the following **Contributors** permissions are set to Allow.
 
-::: moniker range="azure-devops"
+    ::: moniker range="azure-devops"
 
     :::image type="content" source="media/builds-permissions-dialog-box.png" alt-text="Set up the contributors permissions":::
 
-::: moniker-end
+    ::: moniker-end
 
-::: moniker range="< azure-devops"
+:   :: moniker range="< azure-devops"
 
     :::image type="content" source="media/builds-permissions-dialog-box-server.png" alt-text="Set up the contributors permissions":::
 
-::: moniker-end
+    ::: moniker-end
 
 ## Related articles 
 
