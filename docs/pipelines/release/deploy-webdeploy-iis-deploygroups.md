@@ -1,121 +1,93 @@
 ---
-title: Deploy apps to an IIS server on a Windows VM (Classic)
-description: Deploy web apps to an IIS web server on a Windows virtual machine using Deployment Groups
+title: Deploy web apps to an IIS server on a Windows VM
+description: Use a Classic pipeline to deploy web apps to an IIS web server on a Windows virtual machine in a deployment group.
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.author: ronai
 author: RoopeshNair
-ms.date: 04/25/2022
+ms.date: 08/27/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Deploy apps to a Windows Virtual Machine
+# Deploy web apps to an IIS server on a Windows VM
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to use Azure Pipelines to build and deploy your ASP.NET, ASP.NET Core, or Node.js web app to an IIS web server running on a Windows Virtual Machine.
+Learn how to use a Classic pipeline to deploy an ASP.NET Core or Node.js web app to an IIS web server virtual machine (VM) in a Windows deployment group.
 
 ## Prerequisites
 
-- An Azure DevOps Organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- [Build pipeline](#build-pipeline)
-- [Configure IIS web server](#configure-iis-web-server)
-
-### Build Pipeline
-
-Set up a build pipeline if you don't have one already.
-
-#### [.NET](#tab/net/)
-
-- [Build ASP.NET apps](../apps/aspnet/build-aspnet-4.md)
+- An Azure DevOps organization and project. To create an organization and project, see [Create a new organization](../../organizations/accounts/create-organization.md) or [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
 
 #### [.NET Core](#tab/netcore/)
 
-- [Build .NET Core apps](../ecosystems/dotnet-core.md)
+- A Classic pipeline to build your project. For instructions, see [Build .NET Core apps](../ecosystems/dotnet-core.md).
+- A configured IIS web server. For instructions, see [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/).
 
 #### [Node](#tab/node/)
 
-- [Build Node.js apps](../ecosystems/javascript.md)
-
----
-
-### Configure IIS web server
-
-Configure your IIS server if you haven't done so already
-
-#### [.NET](#tab/net/)
-
-[!INCLUDE [prepare-aspnet-windows-vm](../apps/includes/prepare-aspnet-windows-vm.md)]
-
-#### [.NET Core](#tab/netcore/)
-
-- [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/).
-
-#### [Node](#tab/node/)
-
-- [Hosting node.js applications in IIS on Windows](https://github.com/Azure/iisnode)
+- A Classic pipeline to build your project. For instructions, see [Build Node.js apps](../ecosystems/javascript.md).
+- A configured IIS web server. For instructions, see [Hosting node.js applications in IIS on Windows](https://github.com/Azure/iisnode).
 
 ---
 
 ## Create a deployment group
 
-Deployment groups make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate the deployment of your app.
+A deployment group is a logical set of target machines that each have an Azure Pipelines deployment agent installed. Deployment groups make it easier to organize the servers that you want to use to host your app. Each machine interacts with Azure Pipelines to coordinate the deployment of your app.
 
-1. Select **Pipelines**, and then select **Deployment groups**.
+To create the deployment group:
 
-1. Select **Add a deployment group** (or **New** if there are already deployment groups in place).
+1. From your Azure DevOps project, select **Pipelines** > **Deployment groups** from the left menu.
+1. On the **Deployment groups** screen, select **New**, or select **Add a deployment group** if this deployment group is the first one in the project.
+1. Enter a **Deployment group name** and optional **Description**, and then select **Create**.
+1. On the next screen, in the machine registration section, select **Windows** for the **Type of target to register**. A registration script is generated.
+1. Select **Use a personal access token in the script for authentication**. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+1. Select **Copy script to the clipboard**.
 
-1. Enter a name for your group, and then select **Create**.
+   :::image type="content" source="media/generated-script.png" alt-text="A screenshot showing the generated registration script and other settings.":::
 
-1. In the machine registration section, make sure that **Windows** is selected from the dropdown menu, and that the **Use a personal access token in the script for authentication** checkbox is also selected. Select **Copy script to clipboard** when you are done. The script that you've copied to your clipboard will download and configure an agent on the VM so that it can receive new web deployment packages and apply them to IIS.
+On each of your target VMs:
 
-1. Log in to your VM, open an elevated PowerShell command prompt window and run the script.
+1. Use an account with administrative permissions to sign in to the VM.
+1. To register the machine and install the agent, open an Administrator PowerShell command prompt and run the script you copied.
 
-1. When you're prompted to configure tags for the agent, press Enter to skip. (tags are optional)
-
-1. When you're prompted for the user account, press **Enter** to accept the defaults.
+   When you're prompted to configure optional tags for the agent, press Enter to skip. When you're prompted for the user account, press Enter to accept the defaults.
 
    > [!NOTE]
-   > The agent running the pipeline must have access to the *C:\Windows\system32\inetsrv\* directory. See [Security groups, service accounts, and permissions](../../organizations/security/permissions-access.md) for more details.
+   > The agent running the pipeline must have access to the *C:\\Windows\\system32\\inetsrv\\* directory. For more information, see [Security groups, service accounts, and permissions](../../organizations/security/permissions-access.md).
 
-1. You should see the following message when the script is done *Service vstsagent.account.computername started successfully*.
+After you set up a target server, the script should return the message `Service vstsagent.{computer-name} started successfully`.
 
-1. Navigate to **Deployment groups**, and then select your deployment group. Select the **Targets** tab and make sure your VM is listed.
+On the **Targets** tab of the Azure Pipelines **Deployment groups** page, you can verify that the VMs are listed and the agents are running. Refresh the page if necessary.
 
 ## Create a release pipeline
 
-Using release pipelines, you can deploy your build artifacts to your IIS servers.
+Deploy the artifacts from your build pipeline to your IIS server by using a release pipeline.
 
-1. Select **Pipelines**, and then select **Releases**. Select **New pipeline**.
+1. From your Azure DevOps project, select **Pipelines** > **Releases**, and then select **New** > **New release pipeline**.
+1. On the **Select a template** screen, search for and select **IIS website deployment**, and then select **Apply**.
 
-1. Use the search bar to find the **IIS Website Deployment** template, and then select **Apply**.
+   :::image type="content" source="media/iis-web-template.png" alt-text="A screenshot showing how to add the IIS website deployment template.":::
 
-    :::image type="content" source="media/iis-web-template.png" alt-text="A screenshot showing how to add the IIS website deployment template.":::
+1. In your release pipeline, select **Add an artifact**.
+1. On the **Add an artifact** screen, select **Build**, select your **Project** and your **Source (build pipeline)**, and then select **Add**.
+1. On the release pipeline screen, select the **Continuous deployment trigger** icon in the **Artifacts** section.
+1. On the **Continuous deployment** screen, enable the **Continuous deployment trigger**,
+1. Under **Build branch filters**, add the **main** build branch as a filter.
+1. On the release pipeline screen, select **Tasks**, and then select **IIS Deployment**.
+1. On the settings screen, under **Deployment group**, select the deployment group you created earlier.
+1. Select **Save**.
 
-1. Select **Add an artifact** to add your build artifact.
-
-1. Select **Build**, and then select your **Project** and your **Source (build pipeline)**. Select **Add** when you are done.
-
-1. Select the **Continuous deployment trigger** icon in the **Artifacts** section. Enable the **Continuous deployment trigger**,
-   and add the **main** branch as a filter.
-
-1. Select **Tasks**, and then select **IIS Deployment**. Select the deployment group you created earlier from the dropdown menu.
-
-    :::image type="content" source="media/iis-deployment-group.png" alt-text="A screenshot showing how to set up the IIS deployment group.":::
-
-1. Select **Save** when you are done.
+   :::image type="content" source="media/iis-deployment-group.png" alt-text="A screenshot showing how to set up the IIS deployment group.":::
 
 ## Deploy your app
 
-1. Select **Pipelines** > **Releases**, and then select **Create release**.
-
-1. Check that the artifact version you want to use is selected and then select **Create**.
-
-1. Select the release link in the information bar message. For example: "Release **Release-1** has been queued".
-
-1. Navigate to your pipeline **Logs** to see the logs and agent output.
+1. From **Pipelines** > **Releases**, select the release pipeline you just created, and then select **Create release**.
+1. Check that the artifact version you want to use is selected, and then select **Create**.
+1. Select the release name link in the information bar message **Release \<release name link> has been queued**.
+1. Select **View logs** to see the logs and agent output.
 
 ## Related articles
 
 - [Deploy from multiple branches](deploy-multiple-branches.md)
-- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
+- [Deploy pull request artifacts](deploy-pull-request-builds.md)
