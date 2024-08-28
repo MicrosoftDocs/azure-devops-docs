@@ -6,7 +6,7 @@ ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.custom: devx-track-azurecli
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 03/31/2022
 ms.subservice: azure-devops-repos-git
 ---
@@ -17,7 +17,7 @@ ms.subservice: azure-devops-repos-git
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
-The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
+The instructions in this article use the default bash shell used on Linux and macOS, but the Git commands work in any shell, including Git Bash from Git for Windows.
 
 ## Prerequisites
 
@@ -31,8 +31,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 3. Run the `az login` command.
 
-    If the CLI can open your default browser, it will do so and load a sign-in page. Otherwise, you need to open a
-    browser page and follow the instructions on the command line to enter an authorization code after navigating to
+    If the CLI can open your default browser, it does so and loads a sign-in page. Otherwise, you need to open a browser page and follow the instructions on the command line to enter an authorization code after navigating to
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
     [Azure CLI login page](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest).
   
@@ -61,13 +60,13 @@ brew install git
 
 ### Linux and Unix
 
-Use your distribution's package management system to download and install Git. For example, on Ubuntu:
+To download and install Git, use your distribution's package management system. For example, on Ubuntu:
 
 ```bash
 sudo apt-get install git
 ```
 
-Refer to the [list of install commands](https://git-scm.com/download/linux) for the most up to date instructions for your Linux distribution.
+Refer to the [list of install commands](https://git-scm.com/download/linux) for the most up-to-date instructions for your Linux distribution.
 
 ## Create your local repo
 
@@ -79,7 +78,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
     cd /home/fabrikam/fiber
     ```
 
-2. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next section.
+2. Create a Git repo on your machine to store your code. You'll connect this repo to Azure Repos in the next section.
 
     ```bash
     git init .

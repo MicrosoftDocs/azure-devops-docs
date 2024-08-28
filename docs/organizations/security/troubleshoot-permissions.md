@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/23/2024
+ms.date: 08/05/2024
 --- 
 
 # Troubleshoot access and permission issues
@@ -100,7 +100,7 @@ Users can receive their effective permissions either directly or via groups.
 
 Complete the following steps so administrators can understand where exactly those permissions are coming from and adjust them, as needed.
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
 
 1. Select **Project settings** > **Permissions** > **Users**, and then select the user.
 
@@ -116,7 +116,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
 
@@ -158,13 +158,9 @@ Users get added to an Azure DevOps group. This action grants inherited access to
 
 ### Solution
 
-::: moniker range=" <= azure-devops"
-
-Within **User settings**, on the **Permissions** page, you can select **Re-evaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
+Go to :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings** > **Permissions** > **Re-evaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
 
 :::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Screenshot of Reevaluate permissions control.":::
-
-::: moniker-end
 
 ## Rules applied to a work item type that restrict select operations
 
@@ -250,8 +246,6 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-
 ## Other areas where permissions might be applied
 
 - [Area path permissions](set-permissions-access-work-tracking.md)
@@ -264,12 +258,9 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
 
-::: moniker-end
-
 ## Related articles
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
 - [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)
-- [Security best practices](security-best-practices.md)
-- [Security and permission management tools](security-tools-reference.md)    
+- [Security best practices](security-best-practices.md)  
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)

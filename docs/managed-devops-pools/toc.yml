@@ -1,0 +1,54 @@
+- name: Managed DevOps Pools
+  href: index.yml
+- name: Overview
+  href: overview.md
+- name: Architecture overview
+  href: architecture-overview.md
+- name: Prerequisites
+  href: prerequisites.md
+- name: Quickstarts
+  items:
+  - name: Azure portal
+    href: quickstart-azure-portal.md
+  - name: ARM template
+    href: quickstart-arm-template.md
+- name: Configure
+  items:
+  - name: Configure pool settings
+    href: configure-pool-settings.md
+  - name: Configure scaling
+    href: configure-scaling.md
+  - name: Configure networking
+    href: configure-networking.md
+  - name: Configure additional storage
+    href: configure-storage.md
+  - name: Configure images
+    href: configure-images.md
+  - name: Configure security settings
+    href: configure-security.md
+  - name: Configure identity
+    href: configure-identity.md
+  - name: View agent status
+    href: view-agents.md
+  - name: Demands
+    href: demands.md
+- name: Monitor and troubleshoot
+  items:
+  - name: Monitor
+    href: monitor-pool.md
+  - name: Diagnostic logs
+    href: diagnostics.md
+- name: Manage cost and performance
+  items:
+  - name: Pricing
+    href: pricing.md
+  - name: Manage cost and performance
+    href: manage-costs.md
+- name: FAQs
+  items:
+  - name: Frequently asked questions
+    href: faq.md
+- name: Reference
+  items:
+  - name: Azure CLI
+    href: /cli/azure/service-page/managed%20devops%20pools

@@ -22,8 +22,6 @@ Currently, we publish syntax highlighting for a subset of languages supported by
 
 With this update, we added an extensibility point that allows extensions to add syntax highlighting and autocomplete to the file explorer and pull requests views.
 
-You can find an example of an extension demonstrating this feature [here](https://github.com/Microsoft/azure-devops-extension-sample/tree/master/src/Samples/CodeEditorContribution).
-
 In addition, we added support for [Kusto language](/azure/kusto/query/) syntax highlighting.
 
 ### Manage git references from the command line

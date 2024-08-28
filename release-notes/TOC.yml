@@ -10,6 +10,8 @@
       items:
         - name: "2024"
           items:
+          - name: August 13
+            href: 2024/sprint-243-update.md
           - name: July 25
             href: 2024/sprint-242-update.md
           - name: July 3
@@ -479,6 +481,8 @@
         items:
         - name: "2024"
           items:
+          - name: August 13
+            href: 2024/pipelines/sprint-243-update.md
           - name: July 25
             href: 2024/pipelines/sprint-242-update.md
           - name: July 3
@@ -781,6 +785,8 @@
         items:
         - name: "2024"
           items:
+          - name: August 13
+            href: 2024/ghazdo/sprint-243-update.md
           - name: July 3
             href: 2024/ghazdo/sprint-241-update.md
           - name: June 14
@@ -1022,6 +1028,3 @@
     href: /azure/devops/server/release-notes/azuredevops2020
 - name: Documentation updates
   href: ./docswhatsnew/toc.yml
-
-- name: Subscribe to updates
-  href: https://azure.microsoft.com/updates/

@@ -112,6 +112,11 @@ strategy:
          containers: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
+> [!NOTE]
+> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the the API server endpoint is not exposed through a public IP address.
+> 
+> Azure Pipelines recommends setting up a self-hosted agent within a VNET that has access to the cluster's virtual network. See [Options for connecting to the private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster) for details.
+
 ## Use manual approval checks
 
 To control deployments to production environments, Azure Pipelines supports manual approval checks on environments. Approval checks are available to resource owners to control when a stage in a pipeline consumes the resource. Resource owners can define approvals and checks that must be satisfied before a stage consuming that resource can begin.

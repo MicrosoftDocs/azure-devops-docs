@@ -1,5 +1,5 @@
 ---
-title: Differences between provisioned and published wiki
+title: Differences between provisioned and published as code wiki
 titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps. 
 ms.subservice: azure-devops-wiki
@@ -10,33 +10,33 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2023  
+ms.date: 08/05/2024  
 ---
 
-# Provisioned wikis vs. published code as a wiki
+# Provisioned wiki vs. published as code wiki
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
-In Azure DevOps, you can maintain your wiki content in a [team project wiki](wiki-create-repo.md) or a [published as code wiki](publish-repo-to-wiki.md). With a published as code wiki, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
+You can maintain your wiki content in a [team project wiki](wiki-create-repo.md) or a [published as code wiki](publish-repo-to-wiki.md). With a published as code wiki, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
 
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs.
 
 > [!NOTE]  
-> The publish code as wiki feature is currently available on Azure DevOps Server 2018 and later versions. For older versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
+> The published as code wiki feature is currently available on Azure DevOps Server 2018 and later versions. For older versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
 
 ## Wiki page menu options
 
 With a *provisioned wiki*, you can add and edit pages directly within the **wiki**. All content updates to a *provisioned wiki* occur within the **wiki**.
 
-With a *publish code as wiki*, you can add, edit, and update content from **Repos** or **Code**.
+With a *published as code wiki*, you can add, edit, and update content from **Repos** or **Code**.
 
-The following image shows options for a provisioned wiki. Several of these options aren't supported for the **publish as code wiki** pages.
+The following image shows options for a provisioned wiki. Several of these options aren't supported for the **published as code wiki** pages.
 
 :::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Screenshot of Provisioned wiki page menu options.":::
 
-For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates that you make to a page in the branch you selected for the wiki get automatically published to the wiki.
+For example, the **Edit in Repos** option for the published as code wiki takes you to the **Repo** page to edit that specific page. Updates that you make to a page in the branch you selected for the wiki get automatically published to the wiki.
 
 ## Supported features and operational differences
 
@@ -56,7 +56,7 @@ Both types of wiki support the following features:
 The following table summarizes those operations or features that might differ, depending on the wiki type.  
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Operation |    Provisioned wiki    | Publish code as wiki |
+> |Operation |    Provisioned wiki    | Published as code wiki |
 > |--------|--------------|--------------|  
 > |[Support multiple wikis, name wiki](publish-repo-to-wiki.md)  |  | ✔️|
 > |[Add or edit pages from **Repos** > **Files** or **Code** > **Files**](publish-repo-to-wiki.md) |  |✔️ |
@@ -78,11 +78,11 @@ For both types of wiki, select **New page** or **Add subpage**. For more informa
 
 The *provisioned wiki* manages the page sequence and page list automatically as you add or move pages within the navigation pane.
 
-To structure the list of pages in the navigation pane for a *publish code as wiki*, define the *.order* file at the root, and for each subfolder or parent page that contains subpages.
+To structure the list of pages in the navigation pane for a *published as code wiki*, define the `*.order*` file at the root, and for each subfolder or parent page that contains subpages.
 
-Both types of wikis follow the same file structure, it's just that the publish code as wiki requires you to maintain the page sequence manually.
+Both types of wikis follow the same file structure, it's just that the published as code wiki requires you to maintain the page sequence manually.
 
-For more information about working with *.order* files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
+For more information about working with *`.order`* files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
 
 <a id="revisions"></a>
 
@@ -93,13 +93,13 @@ From the **wiki**, you can view the revisions of any wiki page. Select **Revisio
 But, the revert process differs depending on the wiki page type.  
 
 - For a *provisioned wiki* page, select **Revert**, as described in [Revert a commit to a provisioned wiki page](wiki-view-history.md#revert-provision)
-- For a *publish as code wiki* page, work from a local branch and submit a pull request to update the branch you're working from.
+- For a *published as code wiki* page, work from a local branch and submit a pull request to update the branch you're working from.
 
 <a id="versioning"></a>
 
 ## Versioning and unpublishing a wiki
 
-With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing a wiki, is supported only for wikis that you created by publishing code to a wiki. For more information, see [Publish a code wiki/Unpublish a code wiki](publish-repo-to-wiki.md#unpublish-wiki).
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. You can version and unpublish a wiki only if you are the one who created it by publishing code to a wiki. For more information, see [Unpublish a code wiki](publish-repo-to-wiki.md#unpublish-wiki).
 
 ## Delete a project wiki
 

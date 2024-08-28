@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms date: 03/04/2024
+ms date: 08/23/2024
 ---
 
 # Add a time-in-state measure to your Power BI report
@@ -466,14 +466,14 @@ Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks f
     >         SUM ( 'View Name'[Date Diff in Days] ),
     >         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
     >         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-    >         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
+    >         'View Name'[State Change Count] <= EARLIER ( 'View Name'[State Change Count - First Completed] ),
     >         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
     >     ) + 0
     > )
     > ```
     > 
     > [!NOTE]
-    > You might need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
+    > You might need to revise the previous definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
 
 <a id="dax-functions"></a>
 
@@ -495,9 +495,9 @@ Additional information is provided in this section for the DAX functions used to
 
 ## Related articles
 
-- [Power BI integration overview](overview.md) 
+- [Learn about Power BI integration](overview.md)
 - [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
-- [Dataset design for the Power BI Connector](data-connector-dataset.md)
-- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
-- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
+- [Design datasets for the Power BI Connector](data-connector-dataset.md)
+- [Understand workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Explore the data model for Analytics](../extend-analytics/data-model-analytics-service.md)

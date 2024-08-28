@@ -119,8 +119,6 @@ landingContent:
         links:
           - text: Default permissions quick reference 
             url: permissions-access.md 
-          - text: Security management tools 
-            url: security-tools-reference.md
       - linkListType: reference
         links:
           - text: Permissions lookup guide
