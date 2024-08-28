@@ -1,184 +1,140 @@
 ---
-title: Manage your pipeline with Azure CLI
-titleSuffix: Azure DevOps 
-description: Use Azure DevOps extension command line interface to manage your pipelines
+title: Manage pipelines with the Azure DevOps CLI
+description: Learn about the Azure DevOps CLI extension and about the az pipelines list, show, run, and update commands for managing your pipelines.
 ms.topic: conceptual
 ms.custom: devx-track-azurecli
 ms.author: sandrica
 author: silviuandrica
 monikerRange: 'azure-devops'
-ms.date: 11/12/2021
+ms.date: 08/06/2024
 ---
 
-# Manage your pipeline with Azure CLI
+# Manage pipelines with the Azure DevOps CLI
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-You can manage the pipelines in your organization using these `az pipelines` commands:
+This article describes how you can manage existing pipelines in your Azure DevOps project by using the following [az pipelines](/cli/azure/pipelines) commands:
 
-- [az pipelines run](#run-a-pipeline): Run an existing pipeline
-- [az pipelines update](#update-a-pipeline): Update an existing pipeline
-- [az pipelines show](#show-pipeline): Show the details of an existing pipeline
+- [az pipelines list](/cli/azure/pipelines#az-pipelines-list) to list pipelines in a project
+- [az pipelines show](/cli/azure/pipelines#az-pipelines-show) to show the details of a pipeline
+- [az pipelines run](/cli/azure/pipelines#az-pipelines-run) to run a pipeline
+- [az pipelines update](/cli/azure/pipelines#az-pipelines-update) to update a pipeline
+- [az pipelines delete](/cli/azure/pipelines#az-pipelines-delete) to delete a pipeline
 
-These commands require either the name or ID of the pipeline you want to manage. You can get the ID of a pipeline using the [az pipelines list](/cli/azure/pipelines#ext-azure-devops-az-pipelines-list) command.
+>[!NOTE]
+>The Azure DevOps CLI extension is available only for Azure DevOps Services, and doesn't support any version of Azure DevOps Server.
 
-To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+## Azure DevOps CLI extension
+
+The `az-pipelines` command group is a part of the [DevOps](/cli/azure/service-page/devops) extension to the Azure CLI, which requires Azure CLI version 2.30.0 or higher. The Azure DevOps extension installs automatically the first time you run an `azure pipelines` command. For more information on getting started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+You can also use global Azure CLI parameters, such as `debug`, `help`, `only-show-errors`, `query`, `output`, and `verbose`, in your Azure DevOps CLI commands. The `table` value for the `--output` global parameter presents output in a friendly format. For more information, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
+
+You can set the default Azure DevOps organization for Azure DevOps CLI commands by using `az devops configure --defaults organization=<YourOrganizationURL>`, or use the `--detect true` parameter to automatically detect the organization. You can configure the default Azure DevOps project by using `az devops configure -d project=<Project Name or ID>`.
+
+If you don't detect the organization or configure a default organization or project, or pick up the organization and project via `git config`, you must specify the `org` and `project` parameters in each command.
+
+## List existing pipelines
+
+The `run`, `show`, `update`, and `delete` pipeline commands require either the `name` or `id` of the pipeline you want to manage. If you use `id`, the `name` parameter is ignored. To get a list of project pipelines, including their IDs, use the [az pipelines list](/cli/azure/pipelines#az-pipelines-list) command. You can filter or format the results list by using parameters.
+
+For example, the following command lists the project pipelines that have names beginning with `python*`, in table format.
+
+```azurecli
+az pipelines list --name python* --output table
+```
+
+Output:
+
+```output
+ID    Path    Name                        Status    Default Queue
+----  ------  --------------------------  --------  ---------------
+17    \       python-sample-vscode-flask  disabled  Azure Pipelines
+24    \       python-sample-get-started   enabled   Azure Pipelines
+```
+
+For the complete command reference, see [az pipelines list](/cli/azure/pipelines#az-pipelines-list).
+
+<a name="show-pipeline"></a>
+## Show details for a pipeline
+
+To view the details of an existing pipeline, use the [az pipelines show](/cli/azure/pipelines#az-pipelines-show) command. For example, the following command shows the details of the pipeline with the `ID` of `12`, and opens the pipeline summary page in your web browser.
+
+```azurecli 
+az pipelines show --id 12 --open
+```
+
+For the complete command reference, see [az pipelines show](/cli/azure/pipelines#az-pipelines-show).
 
 ## Run a pipeline
 
-You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/pipelines#ext-azure-devops-az-pipelines-run) command. 
+To queue and run an existing pipeline, use the [az pipelines run](/cli/azure/pipelines#az-pipelines-run) command. You can set `parameters` and `variables` to use in the run.
+
+For example, the following command runs the pipeline with `name` of `myGithubname.pipelines-java` in the `pipeline` branch, sets the value of variable `var1` to `100` for the run, and outputs results in `table` format.
 
 ```azurecli 
-az pipelines run [--branch]
-                 [--commit-id]
-                 [--folder-path]
-                 [--id]
-                 [--name]
-                 [--open]
-                 [--org]
-                 [--project]
-                 [--variables]
-``` 
-
-### Parameters
-
-- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/main*.
-- **commit-id**: Commit ID on which the pipeline run is to be queued.
-- **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** isn't supplied. ID of the pipeline to queue.
-- **name**: Required if **ID** isn't supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
-- **open**: Open the pipeline results page in your web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **variables**: Space separated "name=value" pairs for the variables you would like to set.
-
-### Example
-
-The following command runs the pipeline named **myGithubname.pipelines-java** in the branch **pipeline** and shows the result in table format.  
-
-```azurecli 
-az pipelines run --name myGithubname.pipelines-java --branch pipeline --output table
-
-Run ID    Number      Status      Result    Pipeline ID    Pipeline Name                Source Branch    Queued Time               Reason
---------  ----------  ----------  --------  -------------  ---------------------------  ---------------  --------------------------  --------
-123       20200123.2  notStarted            12             myGithubname.pipelines-java  pipeline           2020-01-23 11:55:56.633450  manual
+az pipelines run --name myGithubname.pipelines-java --branch pipeline --variables var1=100 --output table
 ```
+
+Output:
+
+```output
+Run ID    Number      Status      Result    Pipeline ID    Pipeline Name                Source Branch    Queued Time                 Reason
+--------  ----------  ----------  --------  -------------  ---------------------------  ---------------  --------------------------  --------
+123       20200123.2  notStarted            12             myGithubname.pipelines-java  pipeline         2020-01-23 11:55:56.633450  manual
+```
+
+For the complete command reference, see [az pipelines run](/cli/azure/pipelines#az-pipelines-run).
 
 ## Update a pipeline
 
-You can update an existing pipeline with the [az pipelines update](/cli/azure/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-```azurecli 
-az pipelines update [--branch]
-                    [--description]
-                    [--id]
-                    [--name]
-                    [--new-folder-path]
-                    [--new-name]
-                    [--org]
-                    [--project]
-                    [--queue-id]
-                    [--yaml-path]
-``` 
-
-### Parameters
-
-- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/main*.
-- **description**: New description for the pipeline.
-- **id**: Required if **name** isn't supplied. ID of the pipeline to update.
-- **name**: Required if **ID** isn't supplied. Name of the pipeline to update.
-- **new-folder-path**: New full path of the folder to which the pipeline is moved, for example, *user1/production_pipelines*.
-- **new-name**: New updated name of the pipeline.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
-- **yaml-path**: Path of the pipeline's yaml file in the repo.
-
- Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output`, and `verbose`.
-
-> [!TIP]
-> There are also global parameters you can use such as `--output`.
-> The `--output` parameter is available for all commands. The **table** value presents output in a friendly format. For more information, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
-
-### Example 
-
-The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
+To update an existing pipeline, use the [az pipelines update](/cli/azure/pipelines#az-pipelines-update) command. For example, the following command updates the pipeline with the `id` of `12` with a new name and description, and outputs the result in table format.
 
 ```azurecli 
 az pipelines update --id 12 --description "rename pipeline" --new-name updatedname.pipelines-java --output table
+```
 
+Output:
+
+```output
 ID    Name                        Status    Default Queue
 ----  --------------------------  --------  ------------------
 12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
 ```
 
-## Show pipeline
+For the complete command reference, see [az pipelines update](/cli/azure/pipelines#az-pipelines-update).
 
-You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+## Delete a pipeline
 
-```azurecli 
-az pipelines show [--folder-path]
-                  [--id]
-                  [--name]
-                  [--open]
-                  [--org]
-                  [--project]
-                  [--query-examples]
-                  [--subscription]
-``` 
+To delete a pipeline, run the [az-pipelines-delete](/cli/azure/pipelines#az-pipelines-delete) command. For example, the following command deletes the pipeline with ID of `12`, and doesn't prompt for confirmation. If you don't include the `--yes` parameter, the command prompts for confirmation by default.
 
-### Parameters
-
-- **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** isn't supplied. ID of the pipeline to show details.
-- **name**: Required if **name** isn't supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
-- **open**: Open the pipeline summary page in your web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **query examples**: Recommend a JMESPath string for you.
-- **subscription**: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-
-#### Example 
-
-The following command shows the details of the pipeline with the **ID** of 12 and returns the result in table format.  
-
-```azurecli 
-az pipelines show --id 12 --output table
-
-ID    Name                        Status    Default Queue
-----  --------------------------  --------  ------------------
-12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
+```azurecli
+az pipelines delete --id 12 --yes
 ```
 
-## Next steps
+For the complete command reference, see [az pipelines delete](/cli/azure/pipelines#az-pipelines-delete).
 
-You can [customize your pipeline](../customize-pipeline.md) or learn more about configuring pipelines in the language of your choice:
+## Programmatically create and configure pipelines
 
-* [.NET Core](../ecosystems/dotnet-core.md)
-* [Go](../ecosystems/go.md)
-* [Java](../ecosystems/java.md)
-* [Node.js](../ecosystems/javascript.md)
-* [Python](../ecosystems/python.md)
-* [Containers](../ecosystems/containers/build-image.md)
+To use the Azure DevOps CLI to create a YAML pipeline, see [az pipelines create](/cli/azure/pipelines#az-pipelines-create). To run Azure CLI commands in YAML pipelines, see [Azure DevOps CLI in Azure Pipelines YAML](/azure/devops/cli/azure-devops-cli-in-yaml).
 
-## FAQ
+You can create YAML pipelines to build, configure, test, and deploy apps in the language of your choice. For more information, see the following articles:
 
-### How do I programmatically create a build pipeline?
+- [Build, test, and deploy .NET Core apps](../ecosystems/dotnet-core.md)
+- [Build and test Go projects](../ecosystems/go.md)
+- [Build Java apps](../ecosystems/java.md)
+- [Build and publish a Node.js package](../ecosystems/javascript.md)
+- [Build and publish a Python app](../ecosystems/python.md)
+- [Build a container image to deploy apps](../ecosystems/containers/build-image.md)
+- [Customize your pipeline](../customize-pipeline.md)
 
-[REST API Reference: Create a build pipeline](../../integrate/index.md)
+### Azure DevOps Services REST API
 
-> [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/).
+You can build custom applications or services that integrate with Azure DevOps by using the REST APIs to make direct HTTP calls. For more information, see the [Azure DevOps Services REST API Reference](/rest/api/azure/devops). You can also use the [client libraries](/rest/api/azure/devops#client-libraries) for these APIs.
 
-<!-- ENDSECTION -->
+### Skip a stage in a pipeline run
 
-### Can I run multiple pipelines in Azure DevOps Services using a single command?
-
-Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](../build/triggers.md).
-
-### How do I skip a stage in a pipeline run?
-
-You can use the `az rest` command to use the `run pipeline` Azure DevOps REST API to skip a stage in a pipeline run using the `stagesToSkip` parameter. 
+You can use the [az rest](/cli/azure/use-azure-cli-rest-command) command with the [Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API to skip a stage in a pipeline run, using the `stagesToSkip` parameter.
 
 For example:
 
@@ -189,4 +145,10 @@ az rest --method post `
     --resource 499b84ac-1321-427f-aa17-267ca6975798
 ```
 
-For more information, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/pipelines/runs/run-pipeline).
+For more information, see [Use the Azure REST API with Azure CLI](/cli/azure/use-azure-cli-rest-command).
+
+## Related content
+
+- [Get started with Azure DevOps CLI](../../cli/index.md)
+- [Specify events that trigger pipelines](../build/triggers.md)
+- [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
