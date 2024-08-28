@@ -325,11 +325,15 @@ Copy your public key directly from the PuTTYgen window and paste into the **Key 
 **A:** You can verify the fingerprint of the public key uploaded with the one displayed in your profile through the following `ssh-keygen` command run against your public key using
   the command line. You need to change the path and the public key filename if you aren't using the defaults.
 
+>[!NOTE]
+> As of August/September 2024, we are migrating from MD5 to SHA-256 hashes. You may need to choose the correct function during the transition period.
+
 ```powershell
-ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
+ssh-keygen -l -E md5 -f <path_to_your_public_key> -- use this for MD5 fingerprints
+ssh-keygen -l -E sha256 -f <path_to_your_public_key> -- use this for SHA-256 fingerprints
 ```
 
-You can then compare the MD5 signature to the one in your profile. This check is useful if you have connection problems or have concerns about incorrectly
+You can then compare the signature to the one in your profile. This check is useful if you have connection problems or have concerns about incorrectly
 pasting in the public key into the **Key Data** field when adding the key to Azure DevOps.
 
 <a name="migrate"></a>
