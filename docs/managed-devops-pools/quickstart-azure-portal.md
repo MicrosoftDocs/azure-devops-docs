@@ -10,7 +10,7 @@ This article shows you how to create a Managed DevOps pool and run a pipeline in
 
 ## Prerequisites
 
-Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
+Before completing the steps in this article, you must configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
 ## Create the Managed DevOps Pools resource
 
@@ -43,7 +43,7 @@ Before completing the steps in this article, you must have configured your Azure
 
    :::image type="content" source="./media/get-started/create-managed-devops-pools-tabs.png" alt-text="Screenshot of tabs of settings.":::
 
-   * [Scaling](./configure-scaling.md) - Configure scaling settings to manage the performance and cost of your Managed DevOps Pool. Th default setting is stateless agents with no standby agents.
+   * [Scaling](./configure-scaling.md) - Configure scaling settings to manage the performance and cost of your Managed DevOps Pool. The default setting is stateless agents with no standby agents.
    * [Networking](./configure-networking.md) - Add agents from your Managed DevOps Pool to your virtual network. The default setting is an isolated virtual network for your agents.
    * [Storage](./configure-storage.md) - Attach an empty data disk to your agents. The default is no attached data disk.
    * [Security](./configure-security.md) - Configure organization and project access, specify pool permissions, and configure interactive mode for testing. The default is a pool configured for all projects in the organization specified in **Azure DevOps organization**.
@@ -55,7 +55,7 @@ Before completing the steps in this article, you must have configured your Azure
 
       The provisioning process can take a few moments. When the agent pool creation is complete, you can view the pool in Azure DevOps and run pipelines in that pool.
 
-      If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message. `Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`. To resolve the issue, see [Review Managed DevOps quotas](./prerequisites.md#review-managed-devops-pools-quotas).
+      If your subscription doesn't have the capacity to configure your pool with the desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message. `Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`. To resolve the issue, see [Review Managed DevOps quotas](./prerequisites.md#review-managed-devops-pools-quotas).
 
 ## View the agent pool in Azure DevOps
 
