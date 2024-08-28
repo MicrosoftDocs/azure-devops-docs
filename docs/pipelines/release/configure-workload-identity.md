@@ -123,58 +123,36 @@ You can also use the REST API for this process.
 
 ## Set a workload identity service connection to use service principal authentication
 
-You might need to manually create a service principal that has federated credentials, and then grant the required permissions. You can also use the REST API for this process.
+This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. You'll need to complete these steps in the following order:
 
-### Create an app registration and federated credentials
+1. Create the app registration with service principal authentication in Azure portal. 
+1. Create the service connection in Azure DevOps and save as a draft. 
+1. Add a federated credential to your app registration in Azure portal.
+1. Grant permissions to the app registration in Azure portal.
+1. Save your service connection in Azure DevOps.
 
-1. In the Azure portal, go to [app registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
+You can also use the REST API for this process.
+
+### Create an app registration and federated credentials in Azure portal
+
+1. In the Azure portal, search for [app registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
 
 1. Select **New registration**.
 
     :::image type="content" source="approvals/media/new-app-registration.png" alt-text="Screenshot that shows a new app registration.":::
 
-1. For **Name**, enter a name for your app registration, and then select **Who can use this application or access this API**.
+1. For **Name**, enter a name for your app registration, and then select **Who can use this application or access this API**. 
 
-1. Copy the values for **Application (client) ID** and **Directory (tenant) ID** from your app registration to use later.
+1. Select **Register**. 
+
+1. When your new app registration loads, copy the values for **Application (client) ID** and **Directory (tenant) ID**  to use later.
 
     :::image type="content" source="approvals/media/app-registration-client-tenant.png" alt-text="Screenshot that shows the app registration client ID and tenant ID.":::
 
-1. Go to **Manage** > **Certificates & secrets**.
 
-1. Select **Federated credentials**.
+### Create a service connection for service principal authentication in Azure DevOps
 
-    :::image type="content" source="approvals/media/federated-credentials-choice.png" alt-text="Screenshot that shows the federated credentials tab.":::
-
-1. Select **Add credentials**.
-
-1. Select the **Other issuer** scenario.
-
-    :::image type="content" source="approvals/media/federated-credential-scenario.png" alt-text="Screenshot that shows selecting a federated credentials scenario.":::
-
-1. Enter values for **Issuer** and **Subject identifier**. You will replace these values later when you create a service connection.
-
-    |Field  |Description  |
-    |---------|---------|
-    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).  |
-    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. Your service connection doesn't need to already be created.      |
-
-1. Select **Save**.
-
-1. Keep this window open. Later in the process, you return to the window and update your app registration federated credentials.
-
-### Grant permissions to the app registration
-
-1. In the Azure portal, go to the Azure resource that you want to grant permissions for (for example, a resource group).
-
-1. Select **Access control (IAM)**.
-
-    :::image type="content" source="approvals/media/access-control-resource-group.png" alt-text="Screenshot that shows selecting Access control in the resource menu.":::
-
-1. Select **Add role assignment**. Assign the required role to the app registration (for example, Contributor).
-
-1. Select **Review and assign**.
-
-### Create a service connection for service principal authentication
+1. Open a new browser window. 
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**.
 
@@ -186,7 +164,8 @@ You might need to manually create a service principal that has federated credent
 
     :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot that shows selecting the workload identity service connection.":::
 
-1. For **Service connection name**, enter the value of **Subject identifier** from your federated credentials.
+1. For **Service connection name**, enter a value such as `uaappregistration`. You'll use this value in your federated credential subject identifier.
+
 
 1. For **Subscription ID** and **Subscription Name**, enter the values for the subscription in your Azure portal account.
 
@@ -202,6 +181,46 @@ You might need to manually create a service principal that has federated credent
 
     :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot that shows DevOps credentials for federated authentication.":::
 
+1. Select **Keep as draft** to save a draft credential. You can't complete setup until your app registration has a federated credential in Azure portal. 
+
+
+### Add a federated credential to your app registration in Azure portal
+
+1. In Azure portal, open your app registration and go to **Manage** > **Certificates & secrets**.
+
+1. Select **Federated credentials**.
+
+    :::image type="content" source="approvals/media/federated-credentials-choice.png" alt-text="Screenshot that shows the federated credentials tab.":::
+
+1. Select **Add credentials**.
+
+1. Select the **Other issuer** scenario.
+
+    :::image type="content" source="approvals/media/federated-credential-scenario.png" alt-text="Screenshot that shows selecting a federated credentials scenario.":::
+
+1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
+
+    |Field  |Description  |
+    |---------|---------|
+    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).  |
+    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`.      |
+
+1. Select **Save**.
+
+### Grant permissions to the app registration in Azure portal
+
+1. In the Azure portal, go to the Azure resource that you want to grant permissions for (for example, a resource group).
+
+1. Select **Access control (IAM)**.
+
+    :::image type="content" source="approvals/media/access-control-resource-group.png" alt-text="Screenshot that shows selecting Access control in the resource menu.":::
+
+1. Select **Add role assignment**. Assign the required role to the app registration (for example, Contributor).
+
+1. Select **Review and assign**.
+
+###  Save your app registration Azure DevOps service connection
+
 1. In the Azure portal, return to your app registration federated credentials.
 
 1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
@@ -210,4 +229,4 @@ You might need to manually create a service principal that has federated credent
 
 1. In the Azure portal, select **Update** to save the updated credentials.
 
-1. In Azure DevOps, select **Verify and save**.
+1. In Azure DevOps, select **Verify and save**.  Once this step successfully completes, your app registration is fully configured.
