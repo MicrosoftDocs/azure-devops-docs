@@ -36,7 +36,7 @@ If you've made changes to a file but haven't committed those changes, you can us
 Git `checkout` can also revert a file to any committed version, when you specify the commit ID.
 
 > [!WARNING]
-> If there's a chance you might want to reapply the changes that Git `checkout` would discard, consider [stashing](howto.yml#i-ve-done-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) those changes instead.
+> If there's a chance you might want to reapply the changes that Git `checkout` would discard, consider [stashing](howto.yml#i-did-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) those changes instead.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 

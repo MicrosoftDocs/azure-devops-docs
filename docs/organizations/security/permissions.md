@@ -499,11 +499,11 @@ For each team that you add, you can assign one or more team members as administr
 ## Permissions
 
 ::: moniker range="azure-devops"
-The system manages permissions at different levels&mdash;organization, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. You can manage more permissions by using one or more [security management tools](security-tools-reference.md), specifying a namespace permission.
+The system manages permissions at different levels&mdash;organization, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. Manage more permissions with the [command line tool (CLI)](manage-tokens-namespaces.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-The system manages permissions at different levels&mdash;server, collection, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. You can manage more permissions by using one or more [security management tools](security-tools-reference.md), specifying a namespace permission.
+The system manages permissions at different levels&mdash;server, collection, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. Manage more permissions with the [command line tool (CLI)](manage-tokens-namespaces.md).
 ::: moniker-end
 
 In the following sections, the namespace permission is provided following the permission label that displays in the user interface. For example:   
@@ -1711,6 +1711,18 @@ You can define the following permissions in Build at both levels.
    Can administer the build permissions for other users.
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+   <a id="create-build-pipeline"></a> 
+   Create build pipeline
+   `Build,  CreateBuildPipeline`
+   :::column-end:::
+   :::column span="2":::
+   Can create pipeline lines and edit those pipelines.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
    <a id="delete-build-definition-permission"></a> Delete build definition  
@@ -1797,6 +1809,7 @@ You can define the following permissions in Build at both levels.
    They can also stop the builds that they have queued.
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
    <a id="edit-pipeline-queue-configuration-permission"></a> Edit queue build configuration
@@ -1806,6 +1819,7 @@ You can define the following permissions in Build at both levels.
    Can specify values for free-text parameters (e.g., of type `object` or `array`) and pipeline variables when queueing new builds.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
    <a id="retain-indefinitely-permission"></a> Retain indefinitely  
@@ -2939,8 +2953,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 
 ## Related articles
 
-- [Get started with permissions, access, and security groups](about-permissions.md)  
-- [Security and permission management tools](security-tools-reference.md)  
+- [Get started with permissions, access, and security groups](about-permissions.md)   
 - [Security namespace and permission reference for Azure DevOps](namespace-reference.md)    
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)     
