@@ -20,7 +20,15 @@ There are two options for authentication: use a managed identity or use a servic
 
 ## Set a workload identity service connection to use managed identity authentication
 
-You might need to manually create a managed identity that uses federated credentials, and then grant the required permissions. You can also use the REST API for this process.
+To manually set up managed identity authentication for your Azure DevOps pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
+
+1. Create managed identity in Azure portal. 
+1. Create service connection in Azure DevOps and save as draft. 
+1. Add federated credential in Azure portal.
+1. Grant permissions in Azure portal.
+1. Save service connection in Azure DevOps.
+
+You can also use the REST API for this process.
 
 ### Create a managed identity in Azure portal
 
@@ -39,12 +47,13 @@ You might need to manually create a managed identity that uses federated credent
 
 1. Select **Review + create** to create a new managed identity. When your deployment is complete, select **Go to resources**. 
 
-1. Copy the **Subscription ID**, **Subscription** and **Client ID**  values for your managed identity to use later.
+1. **Go to resource** when your new managed identity is ready. 
+
+1. Copy the **Subscription**, **Subscription ID**, and **Client ID**  values for your managed identity to use later.
 
 1. Within your managed identity in Azure portal, go to **Settings** > **Properties**.
 
 1. Copy the **Tenant Id** value to use later.
-
 
 ### Create a service connection for managed identity authentication in Azure DevOps
 
@@ -58,7 +67,7 @@ You might need to manually create a managed identity that uses federated credent
 
     :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
 
-1. For **Service connection name**, enter the value that you used for **Subject identifier** when you created your federated credentials.
+1. For **Service connection name**, enter a value such as `uamanagedidentity`. You'll use this value in your federated credential subject identifier.
 
 1. For **Subscription ID** and **Subscription Name**, enter the values for the subscription in your Azure portal account.
 
@@ -83,17 +92,18 @@ You might need to manually create a managed identity that uses federated credent
 
 1. In the Azure portal, select **Update** to save the updated credentials.
 
-1. In Azure DevOps, select **Verify and save**.
+1. In Azure DevOps, select **Keep as draft**.
+
 
 ### Add a federated credential in Azure portal
 
-1. Within your managed identity in Azure portal, go to **Settings** > **Federated credentials**.
+1. In a new browser window, within your managed identity in Azure portal, go to **Settings** > **Federated credentials**.
 
 1. Select **Add credentials**.
 
 1. Select the **Other issuer** scenario.
 
-1. Enter values for **Issuer**, **Subject identifier**, and **Name**. You'll replace the values for **Issuer** and **Subject identifier** later when you create a service connection.
+1. Enter values for **Issuer**, **Subject identifier**, and **Name**. You should have the values of **Issuer** and **Subject identifier** from when you created a draft service connection in Azure DevOps.
 
     |Field  |Description  |
     |---------|---------|
@@ -107,7 +117,7 @@ You might need to manually create a managed identity that uses federated credent
 
 ### Grant permissions to the managed identity in Azure portal
 
-1. Open the Azure portal in a second browser window. 
+1. Return to your second browser window with Azure portal. 
 
 1. Go to the Azure resource that you want to grant permissions for (for example, a resource group).
 
@@ -119,6 +129,11 @@ You might need to manually create a managed identity that uses federated credent
 
 1. Select **Review and assign**.
 
+### Save your Azure DevOps service connection 
+
+1. Return to your Azure DevOps service connection. 
+
+1. Select **Verify and save**. 
 
 ## Set a workload identity service connection to use service principal authentication
 
