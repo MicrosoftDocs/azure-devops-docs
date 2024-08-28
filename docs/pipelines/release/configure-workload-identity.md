@@ -5,7 +5,7 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 06/27/2024
+ms.date: 08/28/2024
 monikerRange: '>= azure-devops'
 "recommendations": "true"
 ---
