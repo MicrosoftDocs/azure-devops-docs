@@ -200,10 +200,7 @@ You can also use the REST API for this process.
 
 1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
 
-    |Field  |Description  |
-    |---------|---------|
-    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).  |
-    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`.      |
+    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot comparison of federated credentials in Azure DevOps and the Azure portal.":::
 
 1. Select **Save**.
 
@@ -221,12 +218,8 @@ You can also use the REST API for this process.
 
 ###  Save your app registration Azure DevOps service connection
 
-1. In the Azure portal, return to your app registration federated credentials.
+1. In Azure DevOps, return to your draft service connection. 
 
-1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
+1. Select **Finish setup**. 
 
-    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot comparison of federated credentials in Azure DevOps and the Azure portal.":::
-
-1. In the Azure portal, select **Update** to save the updated credentials.
-
-1. In Azure DevOps, select **Verify and save**.  Once this step successfully completes, your app registration is fully configured.
+1. Select **Verify and save**. Once this step successfully completes, your azure resource manager service connection is fully configured.
