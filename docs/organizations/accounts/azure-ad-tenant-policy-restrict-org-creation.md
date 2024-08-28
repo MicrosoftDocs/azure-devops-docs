@@ -35,8 +35,6 @@ If you don't see the policy section in Azure DevOps, then you aren't an administ
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 3. Select **Microsoft Entra ID**, and then switch the toggle to turn on the policy, restricting organization creation.
 
-   ![Turn on Microsoft Entra policy](media/azure-ad-tenant-policy/azure-ad-turn-policy-on.png)
-
 ## Optional
 
 ### Create allowlist
@@ -46,9 +44,7 @@ If you don't see the policy section in Azure DevOps, then you aren't an administ
 
 With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users with an allowlist. Users on the allowlist can create new organizations, but they can't manage the policy.
 
-1. Select **Add Microsoft Entra user or group**.
-
-![Option, Create allow list and add Microsoft Entra users or groups](media/azure-ad-tenant-policy/add-azure-ad-user-group.png)
+Select **Add Microsoft Entra user or group**.
 
 ### Create error message
 
@@ -60,7 +56,6 @@ Customize this error message in the policy settings in Azure DevOps.
 
 1. Select **Edit display message**.
 
-   ![Select Edit display message to customize](media/azure-ad-tenant-policy/edit-display-message.png)
 2. Enter your customized message, and then choose **Save**.
 
    ![Customize error message dialog](media/azure-ad-tenant-policy/display-error-message-dialog.png)
