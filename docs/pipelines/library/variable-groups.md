@@ -175,7 +175,10 @@ ID    Name               Type    Number of Variables
 
 ### Update a variable group
 
-To update a variable group, use the [az pipelines variable-group update](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-update) command. You can't update a variable group of type `AzureKeyVault` using the Azure DevOps CLI.
+To update a variable group, use the [az pipelines variable-group update](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-update) command. 
+
+> [!NOTE]
+> You can't update a variable group of type `AzureKeyVault` using the Azure DevOps CLI.
 
 For example, the following command updates the variable group with ID `4` to change the `name` and `description`, and outputs results in table format.
 
@@ -311,10 +314,12 @@ Name            Is Secret    Value
 requires-login  False        true
 ```
 
-
 ### Update variables in a variable group
 
 To update variables in a variable group, use the [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#ext-azure-devops-az-pipelines-variable-group-variable-update) command.
+
+> [!NOTE]
+> You can't update a variable group of type `AzureKeyVault` using the Azure DevOps CLI.  You can update variable via the `az keyvault` commands.
 
 For example, the following command updates the `requires-login` variable with the new value `false` in the variable group with ID `4`, and shows the result in YAML format. The command specifies that the variable is a `secret`.
 
