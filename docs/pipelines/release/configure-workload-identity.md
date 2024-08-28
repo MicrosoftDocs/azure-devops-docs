@@ -45,9 +45,7 @@ You can also use the REST API for this process.
     - **Region**: Select a region to deploy the user-assigned managed identity (example: **East US**).
     - **Name**: Enter the name for your user-assigned managed identity (example: **UADEVOPS**).
 
-1. Select **Review + create** to create a new managed identity. When your deployment is complete, select **Go to resources**. 
-
-1. **Go to resource** when your new managed identity is ready. 
+1. Select **Review + create** to create a new managed identity. When your deployment is complete, select **Go to resource**. 
 
 1. Copy the **Subscription**, **Subscription ID**, and **Client ID**  values for your managed identity to use later.
 
@@ -84,7 +82,7 @@ You can also use the REST API for this process.
 
     :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot that shows DevOps credentials for federated authentication.":::
 
-1. In Azure DevOps, select **Keep as draft**.
+1. Select **Keep as draft** to save a draft credential. You can't complete setup until your managed identity has a federated credential in Azure portal. 
 
 
 ### Add a federated credential in Azure portal
@@ -101,7 +99,7 @@ You can also use the REST API for this process.
 
 1. Enter the **Name** of your federated credential.
 
-1. Select **Add** or **Update**.
+1. Select **Add**.
 
 ### Grant permissions to the managed identity in Azure portal
 
@@ -117,9 +115,11 @@ You can also use the REST API for this process.
 
 ### Save your Azure DevOps service connection 
 
-1. Return to your Azure DevOps service connection. 
+1. In Azure DevOps, return to your draft service connection. 
 
-1. Select **Verify and save**. 
+1. Select **Finish setup**. 
+
+1. Select **Verify and save**. Once this step successfully completes, your managed identity is fully configured. 
 
 ## Set a workload identity service connection to use service principal authentication
 
