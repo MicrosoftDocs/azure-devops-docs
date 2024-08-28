@@ -22,11 +22,11 @@ There are two options for authentication: use a managed identity or use a servic
 
 To manually set up managed identity authentication for your Azure DevOps pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
 
-1. Create managed identity in Azure portal. 
-1. Create service connection in Azure DevOps and save as draft. 
-1. Add federated credential in Azure portal.
-1. Grant permissions in Azure portal.
-1. Save service connection in Azure DevOps.
+1. Create the managed identity in Azure portal. 
+1. Create the service connection in Azure DevOps and save as a draft. 
+1. Add a federated credential to your managed identity in Azure portal.
+1. Grant permissions to the managed identity in Azure portal.
+1. Save your service connection in Azure DevOps.
 
 You can also use the REST API for this process.
 
