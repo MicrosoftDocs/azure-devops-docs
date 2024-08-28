@@ -84,7 +84,7 @@ Do the following steps to add users to the **Project Administrators** group or a
 3. Select **Project Administrators** group, **Members**, and then **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Screenshot showing Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add-s154.png) 
+    > ![Screenshot showing Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add.png) 
 
 4. Enter the name of the user account or custom security group into the text box and select the matching result. You can enter multiple identities into the **Add users and/or groups** box, and the system automatically searches for matches. Select the appropriate matches. 
 

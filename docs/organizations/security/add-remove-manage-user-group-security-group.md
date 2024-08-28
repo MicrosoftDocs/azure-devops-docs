@@ -204,9 +204,9 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 	For example, here we choose the **Project Administrators** group, **Members**, and then **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings > Permissions, Add member](media/project-collection/project-admin-members-add-s154.png) 
+    > ![Project Settings > Permissions, Add member](media/project-collection/project-admin-members-add.png) 
 
-4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+2. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
     > [!div class="mx-imgBorder"]  
     > ![Add users and group dialog, preview page.](media/project-collection/add-member-project-admin.png)  
@@ -214,7 +214,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
     > [!NOTE]   
     > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
-5. Select **Save**. 
+3. Select **Save**. 
 
 #### [Current page](#tab/current-page) 
 
