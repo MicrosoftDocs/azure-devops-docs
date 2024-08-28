@@ -487,7 +487,7 @@ Before you can run a second test run migration or the final production migration
 > Optional information to help a user be more successfulAny test run migration that follows the first is expected to take longer given the extra time required to clean up resources from previous test runs. 
 
 It can take up to one hour for an organization name to become available after deleting or renaming. 
-For more information,, see the [Post migration tasks](migration-post-migration.md) article. 
+For more information, see the [Post migration tasks](migration-post-migration.md) article. 
 
 If you encounter any migration problems, see [Troubleshoot migration and migration errors](migration-troubleshooting.md#resolve-migration-errors). 
 
