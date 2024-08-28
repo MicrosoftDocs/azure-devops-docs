@@ -84,14 +84,6 @@ You can also use the REST API for this process.
 
     :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot that shows DevOps credentials for federated authentication.":::
 
-1. In the Azure portal, return to your app registration federated credentials.
-
-1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
-
-    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot that shows a comparison of federated credentials in Azure DevOps and the Azure portal.":::
-
-1. In the Azure portal, select **Update** to save the updated credentials.
-
 1. In Azure DevOps, select **Keep as draft**.
 
 
@@ -103,23 +95,17 @@ You can also use the REST API for this process.
 
 1. Select the **Other issuer** scenario.
 
-1. Enter values for **Issuer**, **Subject identifier**, and **Name**. You should have the values of **Issuer** and **Subject identifier** from when you created a draft service connection in Azure DevOps.
+1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
 
-    |Field  |Description  |
-    |---------|---------|
-    |Issuer     |  Enter `https://vstoken.dev.azure.com/<unique-identifier>`. The `unique-identifier` is the [GUID of your Azure DevOps organization](../../extend/develop/work-with-urls.md#with-the-organizations-name).      |
-    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<project name>/<service connection name>`. The service connection doesn't need to be already created.      |
-    |Name     |   The name of your managed identity.      |
+    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot that shows a comparison of federated credentials in Azure DevOps and the Azure portal.":::
 
-1. Select **Add**.
+1. Enter the **Name** of your federated credential.
 
-1. Keep this window open. Later in the process, you return to the window and update your app registration federated credentials.
+1. Select **Add** or **Update**.
 
 ### Grant permissions to the managed identity in Azure portal
 
-1. Return to your second browser window with Azure portal. 
-
-1. Go to the Azure resource that you want to grant permissions for (for example, a resource group).
+1. In Azure portal, go to the Azure resource that you want to grant permissions for (for example, a resource group).
 
 1. Select **Access control (IAM)**.
 
