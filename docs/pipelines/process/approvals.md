@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.author: sandrica
 author: silviuandrica
-ms.date: 07/18/2023
+ms.date: 08/29/2024
 monikerRange: ">= azure-devops-2020"
 ---
 
@@ -19,7 +19,7 @@ Approvals and other checks aren't defined in the yaml file. Users modifying the 
 
 Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) ensures that deployment to that environment only happens after the designated user  reviews the changes being deployed. 
 
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. 
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline before each stage, and waits for all pending checks to be completed. 
 
 There are five categories of approvals and checks and they run in the order they were created within each category. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage isn't executed.
 If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. 
@@ -63,7 +63,7 @@ You can manually control when a stage should run using approval and checks. This
 
     :::image type="content" source="media/create-new-approval.png" alt-text="A screenshot showing how to create a new approval.":::
 
-1. Once the approval check is triggered, a prompt window, as shown in the example below, is presented in the user interface. This window provides the option for approvers to either reject or approve the run, along with any accompanying instructions.
+1. Once the approval check is triggered, a prompt window, as shown in the following example, is presented in the user interface. This window provides the option for approvers to either reject or approve the run, along with any accompanying instructions.
 
     :::image type="content" source="media/approval-prompt.png" alt-text="A screenshot showing the approval prompt window.":::
 
@@ -88,7 +88,7 @@ To address this scenario, you can defer an approval and set the time the approva
 
     :::image type="content" source="media/defer-approval-set-time.png" alt-text="Screenshot of setting the time for an approval. ":::
 
-You'll see the approval in the **Checks** panel as a pre-approval. The approval will be effective at the set time. 
+You'll see the approval in the **Checks** panel as a pre-approval. The approval is effective at the set time. 
 
 ::: moniker-end
 
@@ -123,7 +123,7 @@ The check fails if execution of the stage doesn't start within the **Timeout** p
 ## Invoke Azure function
 
 Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
-Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](/azure/devops/pipelines/tasks/reference/azure-function-v1)
+Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time, and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](/azure/devops/pipelines/tasks/reference/azure-function-v1)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
@@ -258,15 +258,18 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 The **exclusive lock** check allows only a single run from the pipeline to proceed. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage is allowed to continue.
 
-The behavior of any other stages that attempt to take a lock is configured by the `lockBehavior` value that is configured in the YAML file for the pipeline.
+The `lockBehavior` property in the YAML file determines how other stages handle locks. When you specify the `lockBehavior` property for a stage with an ID, a lock is automatically created for that stage. There are two possible `lockBehavior` values:
 
 * `runLatest` - Only the latest run acquires the lock to the resource. `runLatest` is the default if no `lockBehavior` is specified.
-* `sequential` - All runs acquire the lock sequentially to the protected resource.
+* `sequential` - All runs acquire the lock to the protected resource sequentially.
 
 To use exclusive lock check with `sequential` deployments or `runLatest`, follow these steps:
 
- 1. Enable the exclusive lock check on the environment (or another protected resource).
- 2. In the YAML file for the pipeline, specify a property called `lockBehavior`. This can be specified for the whole [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) or for a given [stage](/azure/devops/pipelines/yaml-schema/stages-stage):
+ 1. Enable the exclusive lock check on the environment (or another protected resource). The exclusive lock option is an available check. 
+ 
+    :::image type="content" source="media/exclusive-lock-option.png" alt-text="Screenshot of exclusive lock option in UI. ":::
+
+ 1. In the YAML file for the pipeline, specify a property called `lockBehavior`. This can be specified for the whole [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) or for a given [stage](/azure/devops/pipelines/yaml-schema/stages-stage):
 
 Set on a stage:
 
@@ -332,7 +335,7 @@ A possible checks execution is shown in the following diagram.
 :::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous check's executions.":::
 
 In this execution:
-- Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
+- Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it is retried. 
 - At minute 7, _Deployment Reason Valid_ is retried and this time it passes. 
 - At minute 15, _External Approval Granted_ calls back into Azure Pipelines with a successful decision. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
 
@@ -344,11 +347,11 @@ A possible checks execution is shown in the following diagram.
 :::image type="content" source="media/checks/checks-timeline-sync.png" alt-text="Diagram that shows the timeline of two synchronous checks' executions.":::
 
 In this execution:
-- Both checks, _Sync Check 1_ and _Sync Check 2_, are invoked at the same time. _Sync Check 1_ passes, but it will be retried, because _Sync Check 2_ fails. 
-- At minute 5, _Sync Check 1_ is retried but fails, so it will be retried.
-- At minute 7, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
-- At minute 10, _Sync Check 1_ is retried but fails, so it will be retried.
-- At minute 14, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
+- Both checks, _Sync Check 1_ and _Sync Check 2_, are invoked at the same time. _Sync Check 1_ passes, but it is retried, because _Sync Check 2_ fails. 
+- At minute 5, _Sync Check 1_ is retried but fails, so it is retried.
+- At minute 7, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ is retried.
+- At minute 10, _Sync Check 1_ is retried but fails, so it is retried.
+- At minute 14, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ is retried.
 - At minute 15, _Sync Check 1_ is retried and succeeds. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
 
 Let us look at an example that involves an approval and a synchronous check. Imagine you configured a synchronous check and an approval for a service connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check runs every 5 minutes, regardless of decision.
