@@ -267,7 +267,7 @@ To use exclusive lock check with `sequential` deployments or `runLatest`, follow
 
  1. Enable the exclusive lock check on the environment (or another protected resource). The exclusive lock option is an available check. 
  
-    :::image type="content" source="media/exclusive-lock-option.png" alt-text="Screenshot of exclusive lock option in UI. ":::
+    :::image type="content" source="media/exclusive-lock-option.png" alt-text="Screenshot of exclusive lock option Approvals tab. ":::
 
  1. In the YAML file for the pipeline, specify a property called `lockBehavior`. This can be specified for the whole [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) or for a given [stage](/azure/devops/pipelines/yaml-schema/stages-stage):
 
