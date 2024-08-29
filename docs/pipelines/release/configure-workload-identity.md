@@ -16,7 +16,9 @@ When you [troubleshoot an Azure Resource Manager workload identity service conne
 
 We recommend that you [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) before you begin a manual configuration.
 
-There are two options for authentication: use a managed identity or use a service principal. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+There are two options for authentication: use a managed identity or use a service principal with an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+
+#### [Managed identity](#tab/managed-identity)
 
 ## Set a workload identity service connection to use managed identity authentication
 
@@ -121,6 +123,8 @@ You can also use the REST API for this process.
 
 1. Select **Verify and save**. Once this step successfully completes, your managed identity is fully configured. 
 
+#### [Service principal](#tab/service-principal)
+
 ## Set a workload identity service connection to use service principal authentication
 
 This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. You'll need to complete these steps in the following order:
@@ -223,3 +227,6 @@ You can also use the REST API for this process.
 1. Select **Finish setup**. 
 
 1. Select **Verify and save**. Once this step successfully completes, your azure resource manager service connection is fully configured.
+
+--- 
+
