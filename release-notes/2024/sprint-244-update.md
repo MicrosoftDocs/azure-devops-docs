@@ -11,21 +11,38 @@ description: TBD
 
 Check out the release notes for details.
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-244-update-links](includes/ghazdo/sprint-244-update-links.md)]
+
 ### Azure Boards
 
 [!INCLUDE [sprint-244-update-links](includes/boards/sprint-244-update-links.md)]
+
+### Azure Pipelines
+
+[!INCLUDE [sprint-244-update-links](includes/pipelines/sprint-244-update-links.md)]
 
 ### Reporting
 
 [!INCLUDE [sprint-244-update-links](includes/reporting/sprint-244-update-links.md)]
 
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-244-update](includes/ghazdo/sprint-244-update.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-244-update](includes/boards/sprint-244-update.md)]
 
+## Azure Pipelines
+
+[!INCLUDE [sprint-244-update](includes/pipelines/sprint-244-update.md)]
+
 ## Reporting
 
 [!INCLUDE [sprint-244-update](includes/reporting/sprint-244-update.md)]
+
 
 ## Next steps
 

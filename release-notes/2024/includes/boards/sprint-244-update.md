@@ -24,8 +24,9 @@ We are excited to announce a set of REST API endpoints for customers who want to
 
 These endpoints include:
 
-Listing current connections
-Listing connected repositories
-Adding and removing repositories
+* Listing current connections
+* Listing connected repositories
+* Adding and removing repositories
+
 We have also [provided sample code](https://github.com/danhellem/github-boards-connection-sample) to help you get started.
 

@@ -485,6 +485,8 @@
         items:
         - name: "2024"
           items:
+          - name: September 4
+            href: 2024/pipelines/sprint-244-update.md
           - name: August 13
             href: 2024/pipelines/sprint-243-update.md
           - name: July 25
@@ -789,6 +791,8 @@
         items:
         - name: "2024"
           items:
+          - name: September 4
+            href: 2024/ghazdo/sprint-244-update.md
           - name: August 13
             href: 2024/ghazdo/sprint-243-update.md
           - name: July 3
