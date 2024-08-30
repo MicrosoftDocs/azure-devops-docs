@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/22/2023
+ms.date: 08/30/2024
 ---
 
 | Data type | Notes |
@@ -26,56 +26,63 @@ The step, stepList, job, jobList, deployment, deploymentList, stage, and stageLi
 
 ```yaml
 parameters:
-- name: myString
-  type: string
-  default: a string
-- name: myMultiString
-  type: string
-  default: default
-  values:
-  - default
-  - ubuntu
-- name: myNumber
-  type: number
-  default: 2
-  values:
-  - 1
-  - 2
-  - 4
-  - 8
-  - 16
-- name: myBoolean
-  type: boolean
-  default: true
-- name: myObject
-  type: object
-  default:
-    foo: FOO
-    bar: BAR
-    things:
-    - one
-    - two
-    - three
-    nested:
-      one: apple
-      two: pear
-      count: 3
-- name: myStep
-  type: step
-  default:
-    script: echo my step
-- name: mySteplist
-  type: stepList
-  default:
-    - script: echo step one
-    - script: echo step two
+- name: myString  # Define a parameter named 'myString'
+  type: string  # The parameter type is string
+  default: a string  # Default value is 'a string'
 
-trigger: none
+- name: myMultiString  # Define a parameter named 'myMultiString'
+  type: string  # The parameter type is string
+  default: default  # Default value is 'default'
+  values:  # Allowed values for 'myMultiString'
+  - default  
+  - ubuntu  
+
+- name: myNumber  # Define a parameter named 'myNumber'
+  type: number  # The parameter type is number
+  default: 2  # Default value is 2
+  values:  # Allowed values for 'myNumber'
+  - 1  
+  - 2  
+  - 4  
+  - 8  
+  - 16  
+
+- name: myBoolean  # Define a parameter named 'myBoolean'
+  type: boolean  # The parameter type is boolean
+  default: true  # Default value is true
+
+- name: myObject  # Define a parameter named 'myObject'
+  type: object  # The parameter type is object
+  default:  # Default value is an object with nested properties
+    foo: FOO  # Property 'foo' with value 'FOO'
+    bar: BAR  # Property 'bar' with value 'BAR'
+    things:  # Property 'things' is a list
+    - one  
+    - two  
+    - three  
+    nested:  # Property 'nested' is an object
+      one: apple  # Property 'one' with value 'apple'
+      two: pear  # Property 'two' with value 'pear'
+      count: 3  # Property 'count' with value 3
+
+- name: myStep  # Define a parameter named 'myStep'
+  type: step  # The parameter type is step
+  default:  # Default value is a step
+    script: echo my step 
+
+- name: mySteplist  # Define a parameter named 'mySteplist'
+  type: stepList  # The parameter type is stepList
+  default:  # Default value is a list of steps
+    - script: echo step one  
+    - script: echo step two  
+
+trigger: none  
 
 jobs: 
-- job: stepList
-  steps: ${{ parameters.mySteplist }}
-- job: myStep
+- job: stepList  # Define a job named 'stepList'
+  steps: ${{ parameters.mySteplist }}  # Use the steps from the 'mySteplist' parameter
+
+- job: myStep  # Define a job named 'myStep'
   steps:
-    - ${{ parameters.myStep }}
+    - ${{ parameters.myStep }}  # Use the step from the 'myStep' parameter
 ```
