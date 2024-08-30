@@ -72,7 +72,7 @@ The list of users who can review an Approval is fixed at the time approvals & ch
 > [!NOTE]
 > If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
-::: moniker range=">=azure-devops-2022"
+::: moniker range=">azure-devops-2022"
 
 ### Deferred approvals
 
