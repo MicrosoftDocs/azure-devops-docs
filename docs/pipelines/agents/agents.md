@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 07/30/2024
+ms.date: 08/30/2024
 monikerRange: '<= azure-devops'
 ---
 

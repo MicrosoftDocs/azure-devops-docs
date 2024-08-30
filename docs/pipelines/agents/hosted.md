@@ -282,7 +282,7 @@ Microsoft-hosted agents do not offer:
 * The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 * The ability to roll back to a previous VM image version. You always use the latest version.
 
-If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
+If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install), use [scale set agents](scale-set-agents.md), or [Managed DevOps Pools agents](../../managed-devops-pools/index.yml).
 
 ## FAQ
 
