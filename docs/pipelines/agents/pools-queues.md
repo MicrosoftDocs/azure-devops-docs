@@ -17,7 +17,7 @@ monikerRange: '<= azure-devops'
 An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
 
 > [!NOTE]
-> Managed DevOps Pools agents are managed in the Azure Portal. If you're using Managed DevOps Pools, see [Create your first Managed DevOps Pool](../../managed-devops-pools/quickstart-azure-portal.md).
+> Managed DevOps Pools agent pools are managed in the Azure Portal. If you're using Managed DevOps Pools, see [Create your first Managed DevOps Pool](../../managed-devops-pools/quickstart-azure-portal.md).
 
 ::: moniker-end
 
