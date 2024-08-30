@@ -170,7 +170,6 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![Definition Explorer Toolbar Menu](media/release/definitionExplorerToolbarMenu.png)| 
 | Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`           | ![Release Summary Toolbar Menu](media/release/releaseSummaryToolbarMenu.png)| 
 | Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                   | ![Release Summary Tab](media/release/releaseSummaryTab.png)| 
-| Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`            | ![Release Summary Section](media/release/releaseSummarySection.png)| 
 | Pipeline details view, header button                  | `ms.vss-build-web.pipelines-header-menu`            | ![Pipeline details view, header menu](media/build/header-menu.png)| 
 | Pipeline details view, folder context menu                  | `ms.vss-build-web.pipelines-folder-menu`            | ![Pipeline details view, folder context menu](media/build/folder-menu.png)| 
 
