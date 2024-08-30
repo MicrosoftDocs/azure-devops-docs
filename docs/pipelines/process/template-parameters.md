@@ -4,6 +4,7 @@ description: How to use parameters in templates
 ms.topic: conceptual
 ms.date: 08/30/2024
 monikerRange: '>=azure-devops-2019'
+ai-usage: ai-assisted
 ---
 
 # Template parameters
