@@ -410,6 +410,8 @@
         items:
         - name: "2024"
           items:
+          - name: September 4
+            href: 2024/repos/sprint-244-update.md
           - name: June 14
             href: 2024/repos/sprint-240-update.md
           - name: February 29

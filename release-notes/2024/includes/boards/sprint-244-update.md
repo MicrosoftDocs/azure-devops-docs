@@ -7,6 +7,8 @@ ms.topic: include
 
 ### Cut and paste images
 
+TBD 
+
 ### Area and iteration level fields
 
 Area and iteration level fields have long been a valuable part of the product, allowing users to query or display results based on the specific levels at which they are defined:

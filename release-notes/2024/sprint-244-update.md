@@ -19,6 +19,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-244-update-links](includes/boards/sprint-244-update-links.md)]
 
+### Azure Repos
+
+[!INCLUDE [sprint-244-update-links](includes/repos/sprint-244-update-links.md)]
+
 ### Azure Pipelines
 
 [!INCLUDE [sprint-244-update-links](includes/pipelines/sprint-244-update-links.md)]
@@ -34,6 +38,10 @@ Check out the release notes for details.
 ## Azure Boards
 
 [!INCLUDE [sprint-244-update](includes/boards/sprint-244-update.md)]
+
+## Azure Repos
+
+[!INCLUDE [sprint-244-update](includes/repos/sprint-244-update.md)]
 
 ## Azure Pipelines
 
