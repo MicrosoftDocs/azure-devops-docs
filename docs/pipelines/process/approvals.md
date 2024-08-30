@@ -256,14 +256,14 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::moniker range="> azure-devops-2020"
 
-The **exclusive lock** check allows only a single run from the pipeline to proceed. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage is allowed to continue.
+The **exclusive lock** check allows only a single run from the pipeline to proceed and can be set at the stage or pipeline level. 
 
-The `lockBehavior` property in the YAML file determines how other stages handle locks. When you specify the `lockBehavior` property for a stage with an ID, a lock is automatically created for that stage. There are two possible `lockBehavior` values:
+The `lockBehavior` property determines how other stages handle locks. When you specify the `lockBehavior` property for a stage, a lock is automatically created for that stage. There are two possible `lockBehavior` values:
 
 * `runLatest` - Only the latest run acquires the lock to the resource. `runLatest` is the default if no `lockBehavior` is specified.
 * `sequential` - All runs acquire the lock to the protected resource sequentially.
 
-To use exclusive lock check with `sequential` deployments or `runLatest`, follow these steps:
+To use an exclusive lock check with `sequential` deployments or `runLatest`, follow these steps:
 
  1. Enable the exclusive lock check on the environment (or another protected resource). The exclusive lock option is an available check. 
  
@@ -294,7 +294,7 @@ stages:
     - script: Hey!
 ```
 
-If you don't specify a `lockBehavior`, the default value of `runLatest` is used. 
+If you don't specify a `lockBehavior` and a lock is set on a resource, the default value of `runLatest` is used. 
 
 :::moniker-end
 
