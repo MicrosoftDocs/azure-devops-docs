@@ -256,7 +256,7 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::moniker range="> azure-devops-2020"
 
-The **exclusive lock** check allows only a single run from the pipeline to proceed and can be set at the stage or pipeline level. 
+The **exclusive lock** check allows only a single run from the pipeline to proceed and can be set at the stage or pipeline level. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage is allowed to continue.
 
 The `lockBehavior` property determines how other stages handle locks. When you specify the `lockBehavior` property for a stage, a lock is automatically created for that stage. There are two possible `lockBehavior` values:
 
