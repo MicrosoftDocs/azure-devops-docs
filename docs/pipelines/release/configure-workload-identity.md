@@ -226,7 +226,7 @@ You can also use the REST API for this process.
 
 1. Select **Finish setup**. 
 
-1. Select **Verify and save**. Once this step successfully completes, your azure resource manager service connection is fully configured.
+1. Select **Verify and save**. When this step successfully finishes, your Azure Resource Manager service connection is fully configured.
 
 --- 
 
