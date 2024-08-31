@@ -155,7 +155,7 @@ To manage project-level permissions for users and groups across all build pipeli
 
 By default, object-level permissions for individual pipelines are inherited from the project-level permissions. You can override the inherited project-level permissions. 
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To manage permissions for a pipeline, do the following steps:
 
@@ -201,7 +201,7 @@ Inherited users and groups can't be removed unless inheritance is disabled. To r
 
 By default, object-level permissions for individual pipelines inherit the project-level permissions. You can override the inherited permissions. 
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for an individual pipeline, do the following steps:
 
@@ -230,7 +230,7 @@ When you explicitly set an inherited user or group permission, inheritance is di
 
 Object-level permissions for individual pipelines inherit the project-level permissions by default. You can override these inherited permissions for an individual pipeline.
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set object-level permissions for a pipeline, do the following steps:
 
@@ -340,7 +340,7 @@ Do the following steps to add project users or groups that aren't listed in the 
 
 ## Set security for environments in Azure Pipelines
 
-Environments bundle deployment targets for YAML pipelines but aren't compatible with classic pipelines. Security roles, assigned at the project level to default users and groups, are inherited by all environments. These security settings can be adjusted at both the project and individual environment levels.
+Environments bundle deployment targets for YAML pipelines but aren't compatible with classic pipelines. All environments inherit, security roles, assigned at the project level to default users and groups. You can customize these settings for individual environments, including removing inherited users or groups and adjusting privilege levels, by disabling inheritance. Additionally, you have the option to manage pipeline access for each environment.
 
 The following table shows security roles for environments:
 
@@ -387,7 +387,7 @@ To add project users or groups that aren't listed in the security dialog, do the
 
 ### Set object-level environment security
 
-By default, object-level security roles inherit from project-level settings. But, you can customize these settings for individual environments, including removing inherited users or groups and adjusting privilege levels, by disabling inheritance. Additionally, you have the option to manage pipeline access for each environment.
+By default, object-level security roles inherit from project-level settings. But, you can customize these settings for individual environments, including removing inherited users or groups and adjusting privilege levels, by disabling inheritance. Additionally, you can manage pipeline access for each environment.
 
 #### Set object-level environment user and group security roles
 
@@ -694,7 +694,7 @@ Users and groups can be removed from a release pipeline. Inherited users and gro
 
 ::: moniker range="< azure-devops-2020"
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 1. From your project, select **Pipelines** > **Releases**.
 1. Select the file view icon:::image type="icon" source="media/folder-icon.png":::.
@@ -1063,7 +1063,7 @@ Users and groups can be removed from the task group. Inherited users and groups 
 
 ::: moniker range="azure-devops-2020"
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for individual task groups, do the following steps:
 
@@ -1108,7 +1108,7 @@ Users and groups can be removed from the task group. Inherited users and groups 
 
 ::: moniker range="< azure-devops-2020"
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for a task group, do the following steps:
 

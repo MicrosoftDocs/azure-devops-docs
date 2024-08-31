@@ -15,13 +15,13 @@ Permissions for build and release pipelines are primarily set at the object-leve
 
 You can manage security for different types of resources such as variable groups, secure files, and deployment groups by granting permissions to that resource to users or groups. Project administrators can manage access to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so.
 
-::: moniker range="<=azure-devops"
+
 
 ## Add users to your project
 
 1. Navigate to your project's summary page: `https://dev.azure.com/{your-organization}/{your-project}`
 
-1. Select the **Invite** button to add a user to your project, and then fill out the required fields. Select **Add** when you are done.
+1. Select the **Invite** button to add a user to your project, and then fill out the required fields. Select **Add** when you're done.
 
     :::image type="content" source="media/project-invite-button.png" alt-text="Invite button":::
 
@@ -34,29 +34,25 @@ You can manage security for different types of resources such as variable groups
 > [!NOTE]
 > A security best practice is to only grant permissions to required users or groups. The **Contributors** group may be too broad in a given project.  
 
-To verify the permissions for your project's contributors, make sure you are a member of the **Build Administrators** group or the **Project Administrators** group. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) for more details.
+To verify the permissions for your project's contributors, make sure you're a member of the **Build Administrators** group or the **Project Administrators** group. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
-1. From within your project, select **Pipelines** > **Pipelines**. Select the **All** tab, and then select the more actions menu then **Manage security**.
+1. From within your project, select **Pipelines** > **Pipelines**. Select the **All** tab, and then select the more actions menu than **Manage security**.
 
     :::image type="content" source="media/security-menu-item.png" alt-text="Manage pipeline security":::
 
 1. On the permissions dialog box, make sure the following **Contributors** permissions are set to Allow.
 
+    ::: moniker range="azure-devops"
+
     :::image type="content" source="media/builds-permissions-dialog-box.png" alt-text="Set up the contributors permissions":::
 
-::: moniker-end
+    ::: moniker-end
 
+    ::: moniker range="< azure-devops"
 
+    :::image type="content" source="media/builds-permissions-dialog-box-server.png" alt-text="Set up the contributors permissions":::
 
-
-
-
-
-
-
-
-
-
+    ::: moniker-end
 
 ## Related articles 
 

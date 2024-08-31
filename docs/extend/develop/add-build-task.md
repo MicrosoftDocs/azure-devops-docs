@@ -520,7 +520,7 @@ Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudi
 Pipeline library variable group
    :::column-end:::
    :::column span="2":::
-Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-variable-groups-in-pipelines) within this group in your pipeline. Also, declare the following variables in the variable group:
 
 - `publisherId`: ID of your marketplace publisher</br>
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>

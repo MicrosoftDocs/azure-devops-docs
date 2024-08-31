@@ -57,8 +57,6 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
 
 4. Copy the Web Hook URL and go to Azure DevOps.
 
-	![Screenshot of Copy Web Hook.](./media/slack/copy-webhook.png)
-
 ::: moniker-end
 
 ::: moniker range="<= azure-devops"

@@ -10,10 +10,7 @@ This article shows you how to create a Managed DevOps Pool using an ARM template
 
 ## Prerequisites
 
-Before completing the steps in this article, you must have completed the following steps from the [Prerequisites](./prerequisites.md) article.
-
-1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
-1. Verify that you have permission to create an agent pool in your organization by following the **Verify Azure DevOps permissions** steps in [Prerequisites](./prerequisites.md#verify-azure-devops-permissions).
+Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
 ## Sign in to the Azure CLI
 
