@@ -156,7 +156,7 @@ Specify the maximum count of agents that are available for use in your pool. For
 
 :::image type="content" source="./media/pool-settings/agent-size.png" alt-text="Screenshot of Agent size setting.":::
 
-Choose **Change size** to view and select an Azure virtual machine size that is available in your Azure region.
+Choose **Change size** to view and select an Azure virtual machine size that is available in your Azure region. Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked as **Available**. You can request more quota for **Not Available** SKUs. Once a quota request for a **Not Available** SKU is approved, it will then be listed as **Available**. [Learn more about Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
 
 #### [ARM template](#tab/arm/)
 

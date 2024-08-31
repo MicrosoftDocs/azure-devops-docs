@@ -39,18 +39,15 @@
   - name: Remove users from Azure DevOps
     displayName: delete, revoke, organization, members
     href: ../accounts/delete-organization-users.md
-  - name: Remove user accounts from Microsoft Entra ID
-    displayName: delete, revoke, organization, members
-    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user
   - name: Manage access with Microsoft Entra ID
     items:
-    - name: Connect organization to Microsoft Entra ID
+    - name: Connect organization to Entra ID
       displayName: link, attach, security
       href: ../accounts/connect-organization-to-azure-ad.md
-    - name: Manage users in Microsoft Entra ID
+    - name: Manage users in Entra ID
       displayName: create, remove, account
       href: /azure/active-directory/fundamentals/add-users-azure-active-directory?toc=/azure/devops/organizations/security/toc.json
-    - name: Add Active Directory / Microsoft Entra security groups to built-in security groups
+    - name: Add AD or Entra ID security groups to built-in security groups
       displayName: update, permission, access, security
       href: add-ad-aad-built-in-security-groups.md
     - name: Manage groups
@@ -59,13 +56,13 @@
     - name: Manage group rules
       displayName: update, add, assignment
       href: ../accounts/assign-access-levels-by-group-membership.md
-    - name: Change Microsoft Entra connection
+    - name: Change Entra ID connection
       displayName: update, add, remove
       href: ../accounts/change-azure-ad-connection.md
-    - name: Disconnect from Microsoft Entra ID
+    - name: Disconnect from Entra ID
       displayName: remove, update, detach, unlink
       href: ../accounts/disconnect-organization-from-azure-ad.md
-    - name: Get list of organizations backed by Microsoft Entra ID
+    - name: Get list of organizations backed by Entra ID
       displayName: record, catalog, inventory, name, owner, URL, ID
       href: ../accounts/get-list-of-organizations-connected-to-azure-active-directory.md
 - name: Manage user access (on-premises)
@@ -261,7 +258,7 @@
     href: ../accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/organizations/security/toc.json
   - name: Connect to GitHub, FAQs
     href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Access with Microsoft Entra FAQs
+  - name: Access Microsoft Entra ID FAQs
     href: ../accounts/faq-azure-access.yml?toc=/azure/devops/organizations/security/toc.json
   - name: Set up Visual Studio
     href: ../accounts/faq-set-up-vs.yml?toc=/azure/devops/organizations/security/toc.json
