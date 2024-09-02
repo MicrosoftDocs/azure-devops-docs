@@ -250,9 +250,9 @@ steps:
   condition: and(succeeded(), ${{ eq(parameters.doThing, true) }})
 ```
 
-The `condition` in the preceding pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns `true` because there was no previous step.
+The `condition` in the preceding pipeline combines two functions: `succeeded()` and `${{ eq(parameters.doThing, true) }}`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns `true` because there was no previous step.
 
-The `eq('${{ parameters.doThing }}', true)` function checks whether the `doThing` parameter is equal to `true`. Since the default value for `doThing` is `true`, the condition returns `true` by default unless the pipeline sets a different value.
+The `${{ eq(parameters.doThing, true) }}` function checks whether the `doThing` parameter is equal to `true`. Since the default value for `doThing` is `true`, the condition returns `true` by default unless the pipeline sets a different value.
 
 ### Template parameters in conditions
 
