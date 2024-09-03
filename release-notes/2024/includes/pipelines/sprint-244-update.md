@@ -53,3 +53,6 @@ Deprecated tasks will emit a warning and guidance on alternatives. Here is the l
 | XamarinTestCloud@1               | [Xamarin support ended on May 1, 2024](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin) |
 | XamariniOS@2                     | [Xamarin support ended on May 1, 2024](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin) |
 
+### The Pipelines agent will show warnings for agents running Operating Systems not supported by .NET 8
+
+We will upgrade the Pipelines agent to use .NET 8 instead of .NET 6. To prepare customers who may be using older Operating Systems, we are showing warnings for agents running on an Operating System that is not compatible with .NET 8.
