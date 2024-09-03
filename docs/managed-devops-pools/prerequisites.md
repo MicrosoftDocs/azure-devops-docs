@@ -24,7 +24,12 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
-To use Managed DevOps Pools, register the **Microsoft.DevOpsInfrastructure** resource provider with your Azure subscription.
+To use Managed DevOps Pools, register the following  **Microsoft.DevOpsInfrastructure** resource providers with your Azure subscription.
+
+| Resource Provider | Description |
+|-------------------|-------------|
+| **Microsoft.DevOpsInfrastructure** | Resource provider for Managed DevOps Pools |
+| **Microsoft.DevCenter** | Resource provider for Dev Center and Dev Center project |
 
 Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
@@ -41,10 +46,9 @@ Registering a resource provider uses the `/register/action` operation. Permissio
 
    :::image type="content" source="./media/prerequisites/register-resource-provider.png" alt-text="Screenshot of registering the Managed DevOps Pools Azure Resource provider.":::
 
-   > [!NOTE]
-   > Managed DevOps Pools uses a Dev Center and Dev Center project. If you haven't previously used any services that reply on a Dev Center, like Microsoft DevBox, verify that the **Microsoft.DevCenter** resource provider is registered in your subscription in addition to **Microsoft.DevOpsInfrastructure**.
+1. Search for **Microsoft.DevCenter**. If **Microsoft.DevCenter** isn't registered, select the check box from the list, and choose **Register**.
 
-1. To see the Azure regions that support Managed DevOps Pools in your subscription after it is registered, select **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
+1. To see the Azure regions that support Managed DevOps Pools in your subscription, select **Microsoft.DevOpsInfrastructure** from the list, verify that it's registered, and choose **Locations**.
 
    :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
 
