@@ -256,5 +256,4 @@ For more information, see [Migrate data from Azure DevOps Server to Azure DevOps
 ## Related resources
 
 - [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview)
-- [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
-- [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
+- [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor)
