@@ -21,6 +21,10 @@ ms.date: 09/20/2023
 
 ### Default permissions and access levels 
 
+* Advanced Security: read alerts grants permission to view security alerts for the repository.
+* Advanced Security: manage and dismiss alerts grants permission to dismiss alerts for the repository.
+* Advanced Security: manage settings grants permission to enable Advanced Security, which is a billable action. 
+
 | Azure DevOps group  | Default permissions |
 | ----------- | ----------- |
 | Contributors | Advanced Security: read alerts |
