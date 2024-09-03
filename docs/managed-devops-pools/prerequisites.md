@@ -24,7 +24,7 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
-To use Managed DevOps Pools, register the following  **Microsoft.DevOpsInfrastructure** resource providers with your Azure subscription.
+To use Managed DevOps Pools, register the following resource providers with your Azure subscription.
 
 | Resource Provider | Description |
 |-------------------|-------------|
