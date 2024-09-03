@@ -41,6 +41,9 @@ Registering a resource provider uses the `/register/action` operation. Permissio
 
    :::image type="content" source="./media/prerequisites/register-resource-provider.png" alt-text="Screenshot of registering the Managed DevOps Pools Azure Resource provider.":::
 
+   > [!NOTE]
+   > Managed DevOps Pools uses a Dev Center and Dev Center project. If you haven't previously used any services that reply on a Dev Center, like Microsoft DevBox, verify that the **Microsoft.DevCenter** resource provider is registered in your subscription in addition to **Microsoft.DevOpsInfrastructure**.
+
 1. To see the Azure regions that support Managed DevOps Pools in your subscription after it is registered, select **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
 
    :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
