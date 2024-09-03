@@ -109,4 +109,4 @@ Configure specific actions when multiple releases are queued for deployment.
         
         - **Deploy latest and cancel the others**: select this option if you're producing builds faster than releases, and you only want to deploy the latest build. See [Specify queuing policies](../process/stages.md&tabs=classic#queuing-policies) for more details.
 
-    :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot showing deployment queue settings.":::
+    :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot displaying the deployment queue settings.":::
