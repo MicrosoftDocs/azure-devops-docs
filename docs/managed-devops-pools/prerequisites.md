@@ -26,7 +26,7 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 To use Managed DevOps Pools, register the following resource providers with your Azure subscription.
 
-| Resource Provider | Description |
+| Resource provider | Description |
 |-------------------|-------------|
 | **Microsoft.DevOpsInfrastructure** | Resource provider for Managed DevOps Pools |
 | **Microsoft.DevCenter** | Resource provider for Dev Center and Dev Center project |
@@ -48,7 +48,7 @@ Registering a resource provider uses the `/register/action` operation. Permissio
 
 1. Search for **Microsoft.DevCenter**. If **Microsoft.DevCenter** isn't registered, select the check box from the list, and choose **Register**.
 
-1. To see the Azure regions that support Managed DevOps Pools in your subscription, select **Microsoft.DevOpsInfrastructure** from the list, verify that it's registered, and choose **Locations**.
+1. To see the Azure regions that support Managed DevOps Pools in your subscription, first register the **Microsoft.DevOpsInfrastructure** provider, select it from the list, and choose **Locations**.
 
    :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
 
