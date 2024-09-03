@@ -53,7 +53,3 @@ Deprecated tasks will emit a warning and guidance on alternatives. Here is the l
 | XamarinTestCloud@1               | [Xamarin support ended on May 1, 2024](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin) |
 | XamariniOS@2                     | [Xamarin support ended on May 1, 2024](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin) |
 
-
-### Create unique and human readable names for Service Principals created for a Service Connection
-
-Update Pending
