@@ -57,4 +57,4 @@ Here is the list of tasks deprecated and guidance on alternatives:
 
 ### The Pipelines agent will show warnings for agents running Operating Systems not supported by .NET 8
 
-We will upgrade the Pipelines agent to use .NET 8 instead of .NET 6. To prepare customers who may be using older Operating Systems, we are showing warnings for agents running on an Operating System that is not compatible with .NET 8.
+We will upgrade the Pipelines agent to be built with .NET 8 instead of .NET 6. To prepare customers who may be using older Operating Systems, we are showing pipeline warnings for agents running on an Operating System that is not compatible with .NET 8. 
