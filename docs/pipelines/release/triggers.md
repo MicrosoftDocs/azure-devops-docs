@@ -98,6 +98,15 @@ Enable the toggle button to set up specific gates to evaluate before trigger dep
     :::image type="content" source="media/gates.png" alt-text="A screenshot showing pre-deployment gates."::: 
 
 - **Deployment queue settings**:
+
 Configure specific actions when multiple releases are queued for deployment.
 
-    :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot showing deployment queue settings."::: 
+    - **Number of parallel deployments**: options: *Specific* or *Unlimited*. Specify how many deployments can occur simultaneously within the same stage. If you set the number to '1', deployments will occur one after another in sequence.
+    
+    - **Subsequent releases**: options: *Deploy all in sequence* or *Deploy latest and cancel the others* This option is activated if you select *Specific* under the *Number of parallel deployments*.
+    
+        - **Deploy all in sequence**: select this option if you need releases to deploy one after the other. This approach ensures that pre-deployment approval requests are processed in the correct order.
+        
+        - **Deploy latest and cancel the others**: select this option if you're producing builds faster than releases, and you only want to deploy the latest build. See [Specify queuing policies](../process/stages.md&tabs=classic#queuing-policies) for more details.
+
+    :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot showing deployment queue settings.":::
