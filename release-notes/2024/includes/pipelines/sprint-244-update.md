@@ -7,10 +7,12 @@ ms.topic: include
 
 ### Announcing deprecation or Pipeline Tasks
 
-Azure Pipelines has around 200 tasks [included in the product](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). Many of those are versions of the same task. Our AzureFileCopy task even has 6 versions! To educate users they are on an older version and may not be taking advantage of the latest functionality, we are deprecating some of the older tasks. 
-We have no planned date for task retirement. Retirement of tasks will be communicated separately at a later time.
+Azure Pipelines has around 200 tasks [included in the product](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). Many of those are versions of the same task e.g. AzurePowerShell@2 and AzurePowerShell@5. Our AzureFileCopy task even has 6 versions. Whenever we change the behavior of a task or the task is wrapping a new major version of a tool, we introduce a new task version. Recent examples are the [PublishToAzureServiceBus@2](https://learn.microsoft.com/azure/devops/release-notes/2024/pipelines/sprint-240-update#publishtoazureservicebus2-task), [AzureFileCopy@6](https://learn.microsoft.com/azure/devops/release-notes/2024/pipelines/sprint-236-update#new-azurefilecopy6-task-supports-secret-less-configurations) and [PublishCodeCoverageResults@1](https://devblogs.microsoft.com/devops/new-pccr-task) tasks.
 
-Deprecated tasks will emit a warning and guidance on alternatives. Here is the list:
+To educate users they are on an older version and may not be taking advantage of the latest functionality, we are deprecating some of the older tasks. Deprecated tasks will emit a warning and guidance on alternatives, their behavior is unchanged.
+Deprecated tasks will ultimately get removed. However, we have no planned date for retirement for the tasks in this list. Retirement of tasks will be communicated separately at a later time.
+
+Here is the list of tasks deprecated and guidance on alternatives:
 
 | Task                             | Guidance           |
 |----------------------------------|--------------------|
