@@ -60,6 +60,7 @@ If you prefer using Azure CLI to register the Azure Resource Provider, run the f
 
 ```bash
 az provider register --namespace 'Microsoft.DevOpsInfrastructure'
+az provider register --namespace 'Microsoft.DevCenter'
 ```
 
 #### [PowerShell](#tab/powershell/)
@@ -69,7 +70,8 @@ az provider register --namespace 'Microsoft.DevOpsInfrastructure'
 If you prefer using PowerShell to register the Azure Resource Provider, run the following command using the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider).
 
 ```PowerShell
-Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'`
+Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'
+Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevCenter'
 ```
 
 * * *
