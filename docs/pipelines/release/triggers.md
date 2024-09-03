@@ -70,17 +70,17 @@ Stage triggers allow you set up specific conditions to trigger deployment to a s
 - **Select trigger**:
   Set the trigger that will start the deployment to your stage automatically. Use the **Stages** dropdown to trigger a release after a successful deployment to the selected stage. Select **Manual only** to only allow manual trigger.
 
-    :::image type="content" source="media/trigger-02a.png" alt-text="A screenshot showing pre-deployment triggers.":::
+    :::image type="content" source="media/trigger-02a.png" alt-text="A screenshot showing predeployment triggers.":::
 
 - **Artifacts filter**:
   Enable the toggle button to trigger a new deployment based on specific artifacts. In this example, a release will be deployed when a new artifact is available from the specified branch.
 
-    :::image type="content" source="media/trigger-02b.png" alt-text="A screenshot showing pre-deployment artifact filters.":::
+    :::image type="content" source="media/trigger-02b.png" alt-text="A screenshot showing predeployment artifact filters.":::
 
 - **Schedule**:
   Trigger a new deployment to your specified stage at a specific time.
 
-    :::image type="content" source="media/trigger-02.png" alt-text="A screenshot showing pre-deployment schedule settings.":::    
+    :::image type="content" source="media/trigger-02.png" alt-text="A screenshot showing predeployment schedule settings.":::    
 
 - **Pull-request deployment**:
   Enable the toggle button to trigger a new release every time a new pull request is created. It's recommended to disable this feature for production environment.
@@ -90,23 +90,23 @@ Stage triggers allow you set up specific conditions to trigger deployment to a s
 - **Pre-deployment approvals**:
 Select the users who can approve or reject deployments to your selected stage. By default, when this feature is enabled, all project users must approve the deployment. If a group is added to the approvers list, at least one user in the group must approve the deployment. You can also specify the *Approval policies* and *Timeout* (the maximum time for an approval to remain in pending state before it is automatically rejected).
 
-    :::image type="content" source="media/pre-deployment-approval.png" alt-text="A screenshot showing pre-deployment approvals."::: 
+    :::image type="content" source="media/pre-deployment-approval.png" alt-text="A screenshot showing predeployment approvals."::: 
 
 - **Gates**:
 Enable the toggle button to set up specific gates to evaluate before trigger deployment.
 
-    :::image type="content" source="media/gates.png" alt-text="A screenshot showing pre-deployment gates."::: 
+    :::image type="content" source="media/gates.png" alt-text="A screenshot showing predeployment gates."::: 
 
 - **Deployment queue settings**:
 
 Configure specific actions when multiple releases are queued for deployment.
 
-    - **Number of parallel deployments**: options: *Specific* or *Unlimited*. Specify how many deployments can occur simultaneously within the same stage. If you set the number to '1', deployments will occur one after another in sequence.
+  - **Number of parallel deployments**: options: *Specific* or *Unlimited*. Specify how many deployments can occur simultaneously within the same stage. If you set the number to '1', deployments will occur one after another in sequence.
     
-    - **Subsequent releases**: options: *Deploy all in sequence* or *Deploy latest and cancel the others* This option is activated if you select *Specific* under the *Number of parallel deployments*.
+  - **Subsequent releases**: options: *Deploy all in sequence* or *Deploy latest and cancel the others* This option is activated if you select *Specific* under the *Number of parallel deployments*.
     
-        - **Deploy all in sequence**: select this option if you need releases to deploy one after the other. This approach ensures that pre-deployment approval requests are processed in the correct order.
+    - **Deploy all in sequence**: select this option if you need releases to deploy one after the other. This approach ensures that pre-deployment approval requests are processed in the correct order.
         
-        - **Deploy latest and cancel the others**: select this option if you're producing builds faster than releases, and you only want to deploy the latest build. See [Specify queuing policies](../process/stages.md&tabs=classic#queuing-policies) for more details.
+    - **Deploy latest and cancel the others**: select this option if you're producing builds faster than releases, and you only want to deploy the latest build. See [Specify queuing policies](../process/stages.md&tabs=classic#queuing-policies) for more details.
 
-    :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot displaying the deployment queue settings.":::
+  :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot displaying the deployment queue settings.":::
