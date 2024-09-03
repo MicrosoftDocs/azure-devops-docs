@@ -24,7 +24,12 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
-To use Managed DevOps Pools, register the **Microsoft.DevOpsInfrastructure** resource provider with your Azure subscription.
+To use Managed DevOps Pools, register the following resource providers with your Azure subscription.
+
+| Resource provider | Description |
+|-------------------|-------------|
+| **Microsoft.DevOpsInfrastructure** | Resource provider for Managed DevOps Pools |
+| **Microsoft.DevCenter** | Resource provider for Dev Center and Dev Center project |
 
 Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
@@ -41,7 +46,9 @@ Registering a resource provider uses the `/register/action` operation. Permissio
 
    :::image type="content" source="./media/prerequisites/register-resource-provider.png" alt-text="Screenshot of registering the Managed DevOps Pools Azure Resource provider.":::
 
-1. To see the Azure regions that support Managed DevOps Pools in your subscription after it is registered, select **Microsoft.DevOpsInfrastructure** from the list, and choose **Locations**.
+1. Search for **Microsoft.DevCenter**. If **Microsoft.DevCenter** isn't registered, select the check box from the list, and choose **Register**.
+
+1. To see the Azure regions that support Managed DevOps Pools in your subscription, first register the **Microsoft.DevOpsInfrastructure** provider, select it from the list, and choose **Locations**.
 
    :::image type="content" source="media/prerequisites/view-provider-regions-small.png" lightbox="media/prerequisites/view-provider-regions.png" alt-text="Screenshot of Azure regions that support Managed DevOps Pools.":::
 
@@ -53,6 +60,7 @@ If you prefer using Azure CLI to register the Azure Resource Provider, run the f
 
 ```bash
 az provider register --namespace 'Microsoft.DevOpsInfrastructure'
+az provider register --namespace 'Microsoft.DevCenter'
 ```
 
 #### [PowerShell](#tab/powershell/)
@@ -62,7 +70,8 @@ az provider register --namespace 'Microsoft.DevOpsInfrastructure'
 If you prefer using PowerShell to register the Azure Resource Provider, run the following command using the [Az.Resources module](/powershell/module/az.resources/register-azresourceprovider).
 
 ```PowerShell
-Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'`
+Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevOpsInfrastructure'
+Register-AzResourceProvider -ProviderNamespace 'Microsoft.DevCenter'
 ```
 
 * * *
