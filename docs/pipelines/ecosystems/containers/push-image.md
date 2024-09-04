@@ -1,106 +1,75 @@
 ---
-title: Push an image
-description: Push container images
+title: Use Azure Pipelines to build and push container images to registries
+description: Use Azure Pipelines to build and push container images to Docker Hub and Google Container Registry.
 ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
-ms.author: ericvan
-author: geekzter
-ms.date: 10/31/2022
-monikerRange: 'azure-devops'
+ms.author: v-catherbund
+author: cebundy
+ms.date: 08/05/2024
+monikerRange: '<= azure-devops'
 ---
 
-# Push an image
+[!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
 
-[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
-
-Use Azure Pipelines to push your image to a container registry such as [Azure Container Registry](/azure/container-registry/), Docker Hub, or Google Container Registry. Azure Container Registry is a managed registry service based on the open-source Docker Registry 2.0. 
-
-For a tutorial on building and pushing images to a container registry, see [Build and push Docker images to Azure Container Registry](/azure/devops/pipelines/ecosystems/containers/acr-template).
-
-To learn how to build a container image to deploy with Azure Pipelines, see [Build container images to deploy apps](build-image.md). 
-
-## About the Docker task
-
-You'll use the [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build or push Docker images, login or logout, start or stop containers, or run a Docker command.
-
-The task uses a [Docker registry service connection for Azure Container Registry](../../library/service-endpoints.md#azure-container-registry) to log in and push to a container registry. The process for creating a Docker registry service connection differs depending on your registry. 
+# Use Azure Pipelines to build and push container images to registries
 
 
+This article guides you through the setup and configuration of Azure Pipelines, using the Docker@2 task to build and push images to Docker Hub and Google Container Registry. Additionally, it covers the use of the `System.AccessToken` for secure authentication within your pipeline.
 
-The Docker registry service connection stores credentials to the container registry before pushing the image. You can also directly reference service connections in Docker without an additional script task.   
+To learn how to build and push container images to Azure Container Registry, see [Use Docker YAML to build and push images to Azure Container Registry](acr-template.md).
 
-## Create a Docker service connection
+## Prerequisites
 
-You'll need to follow a different process to create a service connection for Azure Container Registry, Docker Hub, and Google Container Registry. 
-
-#### [Azure Container Registry](#tab/azure)
-
-With the Azure Container Registry option, the subscription (associated with the Microsoft Entra identity of the user signed into Azure DevOps) and container registry within the subscription are used to create the service connection. 
-
-> [!NOTE]
-> This service connection method uses a service principal and not workload identity federation for authentication. To learn how to use workload identity instead with Azure Container Registry, see [Manage service connections for Azure Container Registry](/azure/devops/pipelines/library/service-endpoints#azure-container-registry).
-
-When you create a new pipeline for a repository that contains a Dockerfile, Azure Pipelines will detect Dockerfile in the repository. To start this process, create a new pipeline and select the repository with your Dockerfile. 
-
-1. From the **Configure** tab, select the **Docker - Build and push an image to Azure Container Registry** task.
-
-    :::image type="content" source="../media/docker-task.png" alt-text="Screenshot of Build and push Docker images to Azure Container Registry.":::
-
-1. Select your **Azure Subscription**, and then select **Continue**.
-
-1. Select your **Container registry** from the dropdown menu, and then provide an **Image Name** to your container image.
-
-1. Select **Validate and configure** when you are done.
-    
-    :::image type="content" source="../media/docker-container-registry.png" alt-text="A screenshot showing how to configure a docker pipeline to build and publish an image to Azure Container Registry.":::
-
-    As Azure Pipelines creates your pipeline, it will:
-    
-    * Create a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
-    
-    * Generate an *azure-pipelines.yml* file, which defines your pipeline.
-
-For a more detailed overview, see [Build and Push to Azure Container Registry document](acr-template.md).
+- An Azure DevOps project
+- A container registry (Docker Hub or Google Container Registry)
+- A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the following sample repository and fork it to your GitHub account.
+- Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges.
 
 
-#### [Docker Hub](#tab/docker)
+## Create a Docker Service Connection
+
+Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry.
+
+There are different processes to create a service connection for a Docker Hub and a Google Container Registry. 
+
+# [Docker Hub](#tab/docker)
 
 Choose the Docker Hub option under [Docker registry service connection](../../library/service-endpoints.md#docker-hub-or-others) and provide your username and password to create a Docker service connection.
 
-#### [Google Container Registry](#tab/google)
+## [Google Container Registry](#tab/google)
 
 To create a Docker service connection associated with Google Container Registry:
 
 1. Open your project in the GCP Console and then open Cloud Shell
 1. To save time typing your project ID and Compute Engine zone options, set default configuration values by running the following commands:
 
-   ```
+   ```console
    gcloud config set project [PROJECT_NAME]
    gcloud config set compute/zone [ZONE]
    ```
 
 1. Replace `[PROJECT_NAME]` with the name of your GCP project and replace `[ZONE]` with the name of the zone that you're going to use for creating resources. If you're unsure about which zone to pick, use `us-central1-a`. For example:
 
-   ```
+   ```console
    gcloud config set project azure-pipelines-test-project-12345
    gcloud config set compute/zone us-central1-a
    ```
 
 1. Enable the Container Registry API for your project:
 
-   ```
+   ```console
    gcloud services enable containerregistry.googleapis.com
    ```
 
 1. Create a service account for Azure Pipelines to publish Docker images:
 
-   ```
+   ```console
    gcloud iam service-accounts create azure-pipelines-publisher --display-name "Azure Pipelines Publisher"
    ```
 
 1. Assign the Storage Admin IAM role to the service account:
 
-   ```
+   ```console
    PROJECT_NUMBER=$(gcloud projects describe \
    $(gcloud config get-value core/project) \
    --format='value(projectNumber)')
@@ -117,18 +86,19 @@ To create a Docker service connection associated with Google Container Registry:
 
 1. Generate a service account key:
 
-   ```
+   ```console
    gcloud iam service-accounts keys create \
    azure-pipelines-publisher.json --iam-account $AZURE_PIPELINES_PUBLISHER
 
    tr -d '\n' < azure-pipelines-publisher.json > azure-pipelines-publisher-oneline.json
    ```
+
    Launch Code Editor by clicking the button in the upper-right corner of Cloud Shell:
 
-   > [!div class="mx-imgBorder"]
-   > ![Badge](../media/gcp-code-editor.png "GCP code editor")
+   :::image type="content" source="../media/gcp-code-editor.png" alt-text="GCP code editor":::
 
-1. Open the file `named azure-pipelines-publisher-oneline.json`. You'll need the content of this file in one of the following steps:
+
+1. Open the file `named azure-pipelines-publisher-oneline.json`. You need the content of this file in one of the following steps:
 
 1. In your Azure DevOps organization, select **Project settings** and then select **Pipelines -> Service connections**.
 
@@ -143,4 +113,141 @@ To create a Docker service connection associated with Google Container Registry:
 
 1. Select **Save** to create the service connection
 
----
+## Create an Azure Pipeline to build and push a Docker image
+
+The Docker@2 task is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
+
+With the Docker@2 task, you can easily integrate Docker operations into your Azure Pipelines, ensuring that your container images are consistently built and pushed to your preferred container registry. Whether you're working with Azure Container Registry, Docker Hub, or Google Container Registry, the Docker@2 task simplifies the process by handling the complexities of Docker commands and authentication.
+
+The following steps outline how to create a YAML pipeline that uses the Docker@2 task to build and push the image.
+
+::: moniker range="azure-devops"
+
+1. Navigate to your Azure DevOps project and select **Pipelines** from the left-hand menu.
+
+1. Select **New pipeline** to create a new pipeline.
+1. Select the GitHub repository containing your Dockerfile.
+    - If you're redirected to GitHub to sign in, enter your GitHub credentials.
+    - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
+1. Select the **Starter pipeline** template to create a basic pipeline configuration.
+1. Replace the contents of **azure-pipelines.yml** with the following code. 
+    1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
+    1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
+    1. Replace `<target-repository-name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
+
+   ```yaml
+    trigger:
+    - main
+    
+    pool:
+      vmImage: 'ubuntu-latest' 
+    
+    variables:
+       repositoryName: '<target-repository-name>'
+    
+    steps:
+    - task: Docker@2
+      inputs:
+         containerRegistry: '<docker connection>'
+         repository: $(repositoryName)
+         command: 'buildAndPush'
+         Dockerfile: '**/Dockerfile'
+    ```
+
+1. When you're done, select **Save and run**.
+
+1. When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
+
+When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with elevated privileges.  
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+To build the image, Docker must be installed on the agent's host and the Docker engine/daemon must be running with elevated privileges. Use the following steps to create your pipeline using the YAML pipeline editor.
+
+1. Go to your collection and create a project.
+1. In your project, select **Pipelines**.
+1. Select **Create Pipeline**.
+1. Select **GitHub Enterprise Server** as the location for your source code.
+1. If you haven't already, authorize Azure Pipelines to connect to your GitHub Enterprise Server account.
+    1. Select **Connect to GitHub Enterprise Server**.
+    1. Enter your account details, and then select **Verify and save**.
+1. Select your repository.
+   If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
+1. To configure your pipeline, select the **Build a Docker image** template.
+1. In the YAML pipeline editor, replace the contents of the YAML file with the following code. Replace the pool name with the name of the pool that contains your self-hosted agent with Docker capability.
+    1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
+    1. Replace `<target-repository-name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
+    1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
+
+    ```yml
+    trigger:
+    - main
+    
+    pool:
+      name: default
+      demands: docker
+    
+    variables:
+       repositoryName: '<target-repository-name>'
+    
+    steps:
+    - task: Docker@2
+      inputs:
+         containerRegistry: '<docker connection>'
+         repository: $(repositoryName)
+         command: 'buildAndPush'
+         Dockerfile: '**/Dockerfile'
+    
+    ```
+
+1. Select **Save and run**.
+1. On the **Save and run** page, select **Save and run** again.
+
+::: moniker-end
+
+
+## Using System.AccessToken for Authentication in Docker@2 Task
+
+You can authenticate with a container registry using the `System.AccessToken` provided by Azure DevOps. This token allows secure access to resources within your pipeline without exposing sensitive credentials.
+
+The following YAML pipeline example, the Docker@2 task is used to sign in to the container registry and push the Docker image. The System.AccessToken is set as an environment variable to authenticate the Docker commands.
+
+Replace `<docker connection>` with your Docker registry service connection name.
+Replace `<your repository>` with the name of your Docker repository.
+
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+steps:
+- task: Docker@2
+  inputs:
+    command: login
+    containerRegistry: '<docker connection>'
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+- task: Docker@2
+  inputs:
+    command: buildAndPush
+    repository: '<your repository>'
+    dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
+
+## Related articles
+
+- [Use Docker YAML to build and push images to Azure Container Registry](acr-template.md)
+- [Use Docker YAML to build and push images to Azure Container Registry (self-hosted agent)](acr-template-self-hosted.md)
