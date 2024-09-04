@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/9/2024
+ms.date: 9/4/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2024/sprint-244-update.md" data-raw-source="[4 September 2024](2024/sprint-244-update.md)"> 4 September 2024</a></td>
+    <td>New Advanced Security API endpoint to retrieve all branches with successful Advanced Security analyses</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Advanced Security List Alerts API return all alerts across all branches</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Area and iteration level fields</td><td>Boards</td><td>Future</td></tr>
+    <td>UI support of Git Submodules</td><td>Repos</td><td>Future</td></tr>
+    <td>Announcing deprecation or Pipeline Tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>The Pipelines agent will show warnings for agents running Operating Systems not supported by .NET 8</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Enhanced Visibility for Usage Limits in Azure DevOps</td><td>Reporting</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="8"><a href="2024/sprint-243-update.md" data-raw-source="[13 August 2024](2024/sprint-242-update.md)"> 13 August 2024</a></td>
     <td>Advanced Security meter usage API now returns user identities</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
