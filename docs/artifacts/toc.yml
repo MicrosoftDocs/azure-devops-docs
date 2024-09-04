@@ -189,20 +189,20 @@
       displayName: upstream, sources, upstreams
       href: concepts/upstream-sources.md
     - name: Set up upstream sources
-      displayName: upstreams, set up upstreams
       href: how-to/set-up-upstream-sources.md
+      displayName: configure, upstreams
+    - name: Use upstream sources with public feeds
+      href: how-to/public-feeds-upstream-sources.md
+      displayName: upstream, public feed
+    - name: Search for packages in upstream sources
+      href: how-to/search-upstream.md
+      displayName: search, upstreams
     - name: Manage dependencies with upstream sources
       displayName: dependecies, artifacts, upstreams, public package
       href: tutorials/protect-oss-packages-with-upstream-sources.md
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
       href: tutorials/powershell-upstream-source.md
-    - name: Use upstream sources with public feeds
-      displayName: upstream, public feed
-      href: how-to/public-feeds-upstream-sources.md
-    - name: Search for packages in upstream sources
-      displayName: search packages, upstreams
-      href: how-to/search-upstream.md
     - name: Safeguard against malicious public packages
       displayName: upstreams, behavior, configure upstreams
       href: concepts/upstream-behavior.md
