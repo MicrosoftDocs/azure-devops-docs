@@ -293,7 +293,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr> 
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-permanently-delete-attachment" data-raw-source="[Enable area and iteration level fields](/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields">Enable area and iteration level fields</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields" data-raw-source="[Enable area and iteration level fields](/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields">Enable area and iteration level fields</a>
          </td>
          <td>Boards</td> 
       </tr> 

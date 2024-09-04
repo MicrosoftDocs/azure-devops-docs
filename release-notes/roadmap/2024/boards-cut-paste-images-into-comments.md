@@ -15,4 +15,4 @@ hide_comments: true
 Improve the experience of cutting and pasting images to work item comments from sources like email, word documents, and Teams conversations.
 
 > [!NOTE]
-> This feature is only available in the New Boards Hub preview.
+> This feature will only be available in the New Boards Hub preview.

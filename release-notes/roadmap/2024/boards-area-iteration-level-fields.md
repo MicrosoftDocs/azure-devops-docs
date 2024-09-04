@@ -19,4 +19,4 @@ Area and iteration level fields have long been a valuable part of the product, a
 Enable the area level and iteration level fields for all organizations.
 
 > [!NOTE]
-> This feature is only available in the New Boards Hub preview.
+> This feature will only be available in the New Boards Hub preview.
