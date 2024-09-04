@@ -24,7 +24,7 @@ Active committers are deduplicated across an Azure subscription. Users can contr
 
 ### Active committer count for Advanced Security 
 
-Total active committers are the number of committers who contributed to at least one repository with Advanced Security enabled. Regardless of their Azure DevOps access level, they must be a member of your Azure DevOps organization. 
+Total active committers are the number of committers who contributed to at least one repository with Advanced Security enabled. For each pushed change, any valid identity that contributed to that change is considered an active committer, even if the commit was made before the 90-day span. Regardless of their Azure DevOps access level, they must be a member of your Azure DevOps organization.
 
 Prior to enabling Advanced Security for your organization, project, or repository, you can see an estimate of the number of active committers you may be charged for. 
 
@@ -37,8 +37,7 @@ You can find the exact number of consumed licenses (active committer count in Ad
 If you disable Advanced Security for all repositories in your organization, the active committer estimate disappears but you can watch your billing on your Azure subscription in the Azure portal.
 
 ### Understanding active committer count 
-
-Use the following table for an example of how active committers and your potential bill may change over time. 
+Use the following table for an example of how active committers and your potential bill may change over time.
 
 | Date | Events during the month | Total active committers |
 | ---------- | ----------- | ------ |
