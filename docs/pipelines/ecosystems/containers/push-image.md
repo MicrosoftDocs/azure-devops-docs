@@ -9,12 +9,13 @@ ms.date: 08/05/2024
 monikerRange: '<= azure-devops'
 ---
 
-[!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
-
 # Use Azure Pipelines to build and push container images to registries
 
+[!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
 
-This article guides you through the setup and configuration of Azure Pipelines, using the Docker@2 task to build and push images to Docker Hub and Google Container Registry. Additionally, it covers the use of the `System.AccessToken` for secure authentication within your pipeline.
+This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to Docker Hub and Google Container Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+
+You learn how to create a YAML pipeline to build and push a Docker image to a container registry. The pipeline is triggered by changes to the main branch of the repository. The Docker@2 task is used to build and push the image to the container registry.
 
 To learn how to build and push container images to Azure Container Registry, see [Use Docker YAML to build and push images to Azure Container Registry](acr-template.md).
 
@@ -22,8 +23,8 @@ To learn how to build and push container images to Azure Container Registry, see
 
 - An Azure DevOps project
 - A container registry (Docker Hub or Google Container Registry)
-- A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the following sample repository and fork it to your GitHub account.
-- Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges.
+- A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the sample repository and fork it to your GitHub account.
+- Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges.  Microsoft-hosted agents have Docker pre-installed.
 
 
 ## Create a Docker Service Connection
@@ -113,11 +114,11 @@ To create a Docker service connection associated with Google Container Registry:
 
 1. Select **Save** to create the service connection
 
+---
+
 ## Create an Azure Pipeline to build and push a Docker image
 
-The Docker@2 task is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
-
-With the Docker@2 task, you can easily integrate Docker operations into your Azure Pipelines, ensuring that your container images are consistently built and pushed to your preferred container registry. Whether you're working with Azure Container Registry, Docker Hub, or Google Container Registry, the Docker@2 task simplifies the process by handling the complexities of Docker commands and authentication.
+The [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
 
 The following steps outline how to create a YAML pipeline that uses the Docker@2 task to build and push the image.
 
@@ -133,7 +134,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
 1. Replace the contents of **azure-pipelines.yml** with the following code. 
     1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
     1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
-    1. Replace `<target-repository-name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
+    1. Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
 
    ```yaml
     trigger:
@@ -143,7 +144,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
       vmImage: 'ubuntu-latest' 
     
     variables:
-       repositoryName: '<target-repository-name>'
+       repositoryName: '<target repository name>'
     
     steps:
     - task: Docker@2
@@ -156,7 +157,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
 
 1. When you're done, select **Save and run**.
 
-1. When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
+1. When you save the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
 
 When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with elevated privileges.  
 
@@ -178,7 +179,7 @@ To build the image, Docker must be installed on the agent's host and the Docker 
 1. To configure your pipeline, select the **Build a Docker image** template.
 1. In the YAML pipeline editor, replace the contents of the YAML file with the following code. Replace the pool name with the name of the pool that contains your self-hosted agent with Docker capability.
     1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
-    1. Replace `<target-repository-name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
+    1. Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
     1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
 
     ```yml
@@ -190,7 +191,7 @@ To build the image, Docker must be installed on the agent's host and the Docker 
       demands: docker
     
     variables:
-       repositoryName: '<target-repository-name>'
+       repositoryName: '<target repository name>'
     
     steps:
     - task: Docker@2
@@ -249,5 +250,5 @@ steps:
 
 ## Related articles
 
-- [Use Docker YAML to build and push images to Azure Container Registry](acr-template.md)
-- [Use Docker YAML to build and push images to Azure Container Registry (self-hosted agent)](acr-template-self-hosted.md)
+- [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md)
+- [Use Docker YAML to build and push images to Azure Container Registry (self-hosted agent)](./publish-to-acr.md)
