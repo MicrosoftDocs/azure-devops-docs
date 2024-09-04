@@ -4,6 +4,8 @@ description: Learn how to access a private key vault from your pipeline.
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/02/2024
+ms.service: azure-devops-pipelines
+ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 zone_pivot_groups: key-vault-access-path
 ---
@@ -14,7 +16,14 @@ Azure Key Vault offers a secure solution for managing credentials such as keys, 
 
 In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications.
 
-This article will walk you through configuring your inbound access points to access and use a private key vault in your pipeline.
+In this tutorial, you will learn how to:
+
+> [!div class="checklist"]
+>
+> - Create a service principal
+> - Create a service connection
+> - Configure your inbound access points
+> - Query a private Azure key vault from your pipeline
 
 ## Prerequisites
 
