@@ -340,7 +340,7 @@ This error message indicates that the key vault's public access has been disable
 Make sure you add your geography's IPV4 ranges to your key vault allowlist. See [Configure inbound access from Azure DevOps](#2---configure-inbound-access-from-azure-devops) for details. 
 Alternatively, you can jump to [Dynamically allow Microsoft-hosted agent IP](#alternative-method---dynamically-allow-microsoft-hosted-agent-ip) to learn how to add your client IP to the key vault's firewall during runtime.
 
-## Related articles
+## Related content
 
 - [Manage service connections](../library/service-endpoints.md)
 - [Library & shared resources](../library/index.md)
