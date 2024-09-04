@@ -1,13 +1,14 @@
 ---
-title:  TBD
+title:  Retrieve all branches with successful Advanced Security analyses
+
 author: ckanyika
 ms.author: ckanyika
 ms.date: 9/4/2024
 description: TBD
 ---
-# TBD
+# Retrieve all branches with successful Advanced Security analyses
 
- 
+You can now retrieve a list of branches in a particular repository where Advanced Security analysis has been performed. In addition, you can use the List Alerts API to retrieve a list of all alerts across all branches with Advanced Security results.
 
 Check out the release notes for details.
 
