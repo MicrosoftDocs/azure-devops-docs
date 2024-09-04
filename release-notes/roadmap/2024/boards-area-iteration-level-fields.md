@@ -16,7 +16,7 @@ Area and iteration level fields have long been a valuable part of the product, a
 
 (Root) Level 1 / Level 2 / Level 3 / etc.
 
-Enable the area level and iteration level fields for all organizations.
+Historically these fields have only been available on a few select organizations. Lets change that by enabling the Area level and Iteration level fields for all organizations.
 
 > [!NOTE]
 > This feature will only be available in the New Boards Hub preview.
