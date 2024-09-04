@@ -73,7 +73,7 @@ helm install sampleapp prometheus-community/kube-prometheus-stack
 
     ```YAML
     trigger:
-    - master
+    - main
     
     pool:
       vmImage: ubuntu-latest
@@ -93,7 +93,7 @@ helm install sampleapp prometheus-community/kube-prometheus-stack
           $(Build.BuildId)
     ```
 
-   If the Docker registry service connection that you created is associated with a container registry named `example.azurecr.io`, then the image is to `example.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)`.
+   If the Docker registry service connection that you created is associated with a container registry named `example.azurecr.io`, then the image is set to `example.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)`.
 
 1. Select **Save and run** and ensure the job runs successfully.
 
@@ -131,7 +131,7 @@ You can deploy with YAML or Classic.
 
     ```YAML
     trigger:
-    - master
+    - main
     
     pool:
       vmImage: ubuntu-latest
@@ -182,7 +182,7 @@ You can deploy with YAML or Classic.
         displayName: Deploy canary
         pool:
           vmImage: ubuntu-latest
-        environment: 'akscanary.canarydemo'
+        environment: 'akscanary'
         strategy:
           runOnce:
             deploy:
@@ -311,7 +311,7 @@ You can intervene manually with YAML or Classic.
         displayName: Reject Canary
         pool: 
           vmImage: ubuntu-latest
-        environment: 'akscanary.canarydemo'
+        environment: 'akscanary'
         strategy:
           runOnce:
             deploy:
