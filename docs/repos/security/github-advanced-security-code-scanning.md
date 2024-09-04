@@ -35,7 +35,7 @@ CodeQL supports and uses the following language identifiers:
 | C#                     | `csharp`                |                                           |
 | Go                     | `go`                    |                                           |
 | Java/Kotlin            | `java-kotlin`           |                           |
-| JavaScript/TypeScript  | `javascript-typescript` |                  |
+| JavaScript/TypeScript  | `javascript`            |                                           |
 | Python                 | `python`                |                                           |
 | Ruby                   | `ruby`                  |                                           |
 | Swift                  | `swift`                 |                                           |
@@ -43,7 +43,7 @@ CodeQL supports and uses the following language identifiers:
 > [!TIP]
 > * Use `c-cpp` to analyze code written in C, C++ or both.
 > * Use `java-kotlin` to analyze code written in Java, Kotlin or both.
-> * Use `javascript-typescript` to analyze code written in JavaScript, TypeScript or both.
+> * Use `javascript` to analyze code written in JavaScript, TypeScript or both.
 
 For more information, see [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/). 
 
