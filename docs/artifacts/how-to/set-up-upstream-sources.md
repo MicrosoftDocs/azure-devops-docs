@@ -115,6 +115,10 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 - [Use packages from Google Maven Repository](../maven/google-maven.md)
 
+- [Use packages from Gradle Plugins](../maven/gradle-plugins.md)
+
+- [Use packages from JitPack](../maven/jitpack-upstream.md)
+
 # [Cargo](#tab/cargo)
 
 - [Use packages from Crates.io](../cargo/cargo-upstream-source.md)
@@ -123,9 +127,9 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 - [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
 
-# [PowerShell Gallery](#tab/powershellgallery)
+# [PowerShell](#tab/powershell)
 
-- [Use packages from PowerShell Gallery](../tutorials/powershell-upstream-source.md)
+- [Use packages from the PowerShell Gallery](../tutorials/powershell-upstream-source.md)
 
 ---
 
