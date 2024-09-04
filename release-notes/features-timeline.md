@@ -267,7 +267,7 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="9"><strong>2024 Q3</strong></td>
+      <td rowspan="11"><strong>2024 Q3</strong></td>
         <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
@@ -282,6 +282,18 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
          <td>
             <a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a>
+         </td>
+         <td>Boards</td> 
+      </tr> 
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API suppport for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API suppport for connecting GitHub repositories (general availability)</a>
+         </td>
+         <td>Boards</td> 
+      </tr> 
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields" data-raw-source="[Enable area and iteration level fields](/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields">Enable area and iteration level fields</a>
          </td>
          <td>Boards</td> 
       </tr> 
@@ -314,12 +326,21 @@ For the past several years, all our pipelines investments have been in the area 
          <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-      <td rowspan="1"><strong>2024 Q4</strong></td>
+      <td rowspan="3"><strong>2024 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
+      <td>
+         <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
+        </td>
+        <td>Boards</td>
+      </tr>  
       <tr>
-      <td rowspan="23"><strong>Future</strong></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments" data-raw-source="[Improve cut and paste of images into work item comments](/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments)">Improve cut and paste of images into work item comments</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+      <td rowspan="22"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
@@ -338,12 +359,7 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/pr-search" data-raw-source="[PR search](/azure/devops/release-notes/roadmap/2024/pr-search)">PR search</a></td>
         <td>General</td>
-      </tr>   
-      <td>
-         <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
-        </td>
-        <td>Boards</td>
-      </tr>  
+      </tr>     
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
