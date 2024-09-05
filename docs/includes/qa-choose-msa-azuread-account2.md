@@ -1,3 +1,3 @@
-* Select **Work or school account** if you used this identity to create your organization, or if you previously signed in with this identity. Your identity is authenticated by your organization's directory in Microsoft Entra ID, which controls access to your organization.
+* Select **Work or school account** if you used this identity to create your organization or previously signed in with it. Your organization's directory in Microsoft Entra ID authenticates your identity and controls access to your organization.
 
-* Select **Personal account** if you used your Microsoft account with Azure DevOps. Your identity is authenticated by the global directory for Microsoft accounts.
+* Select **Personal account** if you used your Microsoft account with Azure DevOps. The global directory for Microsoft accounts authenticates your identity.
