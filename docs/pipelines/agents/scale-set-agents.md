@@ -480,7 +480,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
   - [Troubleshooting issues](#troubleshooting-issues)
     - [Unhealthy Agents](#unhealthy-agents)
   - [FAQs](#faqs)
-    - [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
     - [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
     - [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
       - [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
@@ -495,10 +494,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
       - [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
       - [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
       - [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
-
-### How much do scale set agents cost?
-
-Pricing for scale set agents is similar to other self-hosted agents. You provide the infrastructure on which to run the agent software and the jobs, and you pay for the desired number of jobs that can run concurrently by purchasing parallel jobs.
 
 For scale set agents, the infrastructure to run the agent software and jobs is Azure Virtual Machine Scale Sets, and the pricing is described in [Virtual Machine Scale Sets pricing](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/).
 
