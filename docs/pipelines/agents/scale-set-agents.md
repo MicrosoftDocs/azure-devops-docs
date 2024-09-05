@@ -41,9 +41,9 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 > [!NOTE]
 > - You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
 > 
-> - Using VMSS agent pools for Azure DevOps Services is only supported for Azure Public (global service) cloud. Currently, VMSS agent pools does not support any other [national cloud offerings](/azure/active-directory/develop/authentication-national-cloud). 
+> - Using Virtual Machine Scale Sets agent pools for Azure DevOps Services is only supported for Azure Public (global service) cloud. Currently, Virtual Machine Scale Sets agent pools does not support any other [national cloud offerings](/azure/active-directory/develop/authentication-national-cloud). 
 >
-> - You should not associate a VMSS to multiple pools.
+> - You should not associate a virtual machine scale sets to multiple pools.
 
 
 ## Create the scale set
@@ -482,14 +482,14 @@ To delete the saved agent when you're done with your investigation, navigate to 
   - [FAQs](#faqs)
     - [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
       - [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
-      - [VMSS scale up isn't happening in the expected five-minute interval](#vmss-scale-up-isnt-happening-in-the-expected-five-minute-interval)
+      - [Virtual Machine Scale Sets scale up isn't happening in the expected five-minute interval](#virtual-machine-scale-sets-scale-up-isnt-happening-in-the-expected-five-minute-interval)
       - [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
       - [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't re-imaging as they should and just pick up new jobs as they're queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-arent-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-theyre-queued)
-      - [VMSS shows the agent as offline if the VM restarts](#vmss-shows-the-agent-as-offline-if-the-vm-restarts)
-      - [You can see multiple tags like \_AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
+      - [Virtual Machine Scale Sets shows the agent as offline if the VM restarts](#virtual-machine-scale-sets-shows-the-agent-as-offline-if-the-vm-restarts)
+      - [You can see multiple tags like \_AzureDevOpsElasticPoolTimeStamp for Virtual Machine Scale Sets in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-virtual-machine-scale-sets-in-cost-management)
       - [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
-      - [VMSS maintenance job isn't running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
-      - [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
+      - [Virtual Machine Scale Sets maintenance job isn't running on agents or getting logs](#virtual-machine-scale-sets-maintenance-job-isnt-running-on-agents-or-getting-logs)
+      - [If you specify `AzDevOps` as the primary administrator in your script for Virtual Machine Scale Sets, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-virtual-machine-scale-sets-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
       - [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
       - [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
       - [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
@@ -500,7 +500,7 @@ To delete the saved agent when you're done with your investigation, navigate to 
 
 To better understand why this happens, see [How Azure Pipelines manages the scale set](#how-azure-pipelines-manages-the-scale-set). Throughout the scaling operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. This is an expected behavior as Azure Pipelines converges gradually to the constraints that you specify.
 
-#### VMSS scale up isn't happening in the expected five-minute interval
+#### Virtual Machine Scale Sets scale up isn't happening in the expected five-minute interval
 
  The scaling job runs every five minutes, but if only one operation is processed, you may observe that scale up isn’t happening within five minutes; this is currently by design. 
 
@@ -518,14 +518,14 @@ Only VMs for which agents fail to start are saved. If a VM has a failed state du
 
 The option to tear down the VM after each build will only work for Windows Server and supported Linux images. It isn’t supported for Windows client images.
 
-#### VMSS shows the agent as offline if the VM restarts
+#### Virtual Machine Scale Sets shows the agent as offline if the VM restarts
 
 Showing the agents as offline if the VM restarts is the expected behavior. The agent service runs in the systemd context only. However, if the machine restarts for some reason, it's considered an unhealthy VM and deleted. For more information, see [Unhealthy Agents](#unhealthy-agents).
 
 When agents or virtual machines fail to start, can't connect to Azure DevOps, or go offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots may cause these issues. 
 To avoid the issue, disable the software update on the image. You can also connect to the VM to debug and gather logs to help investigate the issue. 
 
-#### You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management
+#### You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for Virtual Machine Scale Sets in cost management
 
 When the pool is created, a tag is added to the scale set to mark the scale set as in use (to avoid two pools using the same scale set), and another tag is added for the timestamp that updates each time the configuration job runs (every two hours).
 
@@ -533,11 +533,11 @@ When the pool is created, a tag is added to the scale set to mark the scale set 
 
 You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it's deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap, in which a Virtual Machine Scale Set that isn't used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
 
-#### VMSS maintenance job isn't running on agents or getting logs
+#### Virtual Machine Scale Sets maintenance job isn't running on agents or getting logs
 
 The maintenance job runs once every 24 hours. It's possible that VMs are getting filled up before this time. Consider increasing the disk size on the VM and adding a script in the pipeline to delete the contents.
 
-#### If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances
+#### If you specify `AzDevOps` as the primary administrator in your script for Virtual Machine Scale Sets, you may observe issues with the agent configurations on scale set instances
 
 If you specify `AzDevOps` as the primary administrator in your script for Virtual Machine Scale Set, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists).
 
