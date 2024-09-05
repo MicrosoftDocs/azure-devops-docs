@@ -461,7 +461,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
 
 ## FAQs
 
-* [How can I delete agents?](#how-can-i-delete-agents)
 - [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
   - [Create the scale set](#create-the-scale-set)
     - [Orchestration modes](#orchestration-modes)
@@ -481,7 +480,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
   - [Troubleshooting issues](#troubleshooting-issues)
     - [Unhealthy Agents](#unhealthy-agents)
   - [FAQs](#faqs)
-    - [How can I delete agents?](#how-can-i-delete-agents)
     - [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
     - [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
     - [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
@@ -497,11 +495,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
       - [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
       - [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
       - [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
-Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it's currently running and won't pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
-
-### Can I configure the scale set agent pool to have zero agents on standby?
-
-Yes, if you set **Number of agents to keep on standby** to zero, for example to conserve cost for a low volume of jobs, Azure Pipelines starts a VM only when it has a job.
 
 ### How much do scale set agents cost?
 
