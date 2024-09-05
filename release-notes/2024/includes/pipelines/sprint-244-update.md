@@ -5,7 +5,7 @@ ms.date: 9/4/2024
 ms.topic: include
 ---
 
-### Announcing deprecation or Pipeline Tasks
+### Announcing deprecation of Pipeline Tasks
 
 Azure Pipelines has around 200 tasks [included in the product](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). Many of those are versions of the same task e.g. AzurePowerShell@2 and AzurePowerShell@5. Our AzureFileCopy task even has 6 versions. Whenever we change the behavior of a task or the task is wrapping a new major version of a tool, we introduce a new task version. Recent examples are the [PublishToAzureServiceBus@2](https://learn.microsoft.com/azure/devops/release-notes/2024/pipelines/sprint-240-update#publishtoazureservicebus2-task), [AzureFileCopy@6](https://learn.microsoft.com/azure/devops/release-notes/2024/pipelines/sprint-236-update#new-azurefilecopy6-task-supports-secret-less-configurations) and [PublishCodeCoverageResults@1](https://devblogs.microsoft.com/devops/new-pccr-task) tasks.
 
