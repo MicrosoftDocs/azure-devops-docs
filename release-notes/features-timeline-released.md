@@ -43,7 +43,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Advanced Security List Alerts API return all alerts across all branches</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Area and iteration level fields</td><td>Boards</td><td>Future</td></tr>
     <td>UI support of Git Submodules</td><td>Repos</td><td>Future</td></tr>
-    <td>Announcing deprecation or Pipeline Tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Announcing deprecation of Pipeline Tasks</td><td>Pipelines</td><td>Future</td></tr>
     <td>The Pipelines agent will show warnings for agents running Operating Systems not supported by .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Enhanced Visibility for Usage Limits in Azure DevOps</td><td>Reporting</td><td>Future</td></tr>
 <tr>
