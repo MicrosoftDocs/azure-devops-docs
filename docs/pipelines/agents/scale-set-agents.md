@@ -458,11 +458,14 @@ To delete the saved agent when you're done with your investigation, navigate to 
 :::image type="content" source="media/scale-set-agents/saved-agents-card-delete.png" alt-text="Saved agents card delete button.":::
      
 <a name="q-a"></a>
-## FAQ
 
-* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+## FAQs
+
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
+- [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
+  - [Create the scale set](#create-the-scale-set)
+    - [Orchestration modes](#orchestration-modes)
 - [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
   - [Create the scale set](#create-the-scale-set)
     - [Orchestration modes](#orchestration-modes)
@@ -478,8 +481,7 @@ To delete the saved agent when you're done with your investigation, navigate to 
     - [Known issues](#known-issues)
   - [Troubleshooting issues](#troubleshooting-issues)
     - [Unhealthy Agents](#unhealthy-agents)
-  - [FAQ](#faq)
-    - [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+  - [FAQs](#faqs)
     - [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
     - [How can I delete agents?](#how-can-i-delete-agents)
     - [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
@@ -497,10 +499,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
       - [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
       - [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
       - [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
-
-### How do I configure scale set agents to run UI tests?
-
-Create a Scale Set with a Windows Server OS and when creating the Agent Pool select the "Configure VMs to run interactive tests" option.
 
 ### How can I delete agents?
 `
