@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot Azure Resource Manager (ARM) service connections
+title: Troubleshoot Azure Resource Manager service connections
 ms.custom: devx-track-arm-template, arm2024
-description: How to troubleshoot Azure Resource Manager (ARM) service connections in Azure Pipelines
+description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Troubleshoot Azure Resource Manager (ARM) service connections
+# Troubleshoot Azure Resource Manager service connections
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -19,7 +19,7 @@ This article presents the common troubleshooting scenarios to help you resolve i
 
 <a name="what-happens"></a>
 
-## What happens when you create an Azure Resource Manager (ARM) service connection?
+## What happens when you create an Azure Resource Manager service connection?
 
 If you don't have a service connection, you can create one as follows:
 
@@ -31,13 +31,13 @@ If you don't have a service connection, you can create one as follows:
 
     :::image type="content" source="media/arm-service-connection.png" alt-text="Screenshot showing the service connections types.":::
 
-1. Select **Service principal (automatic)**, and then select **Next.
+1. Select **Service principal (automatic)**, and then select **Next**.
 
 1. Select **Subscription**, and then select your subscription from the drop-down list. Fill out the form and then select **Save** when you're done.
 
     :::image type="content" source="media/new-arm-service-connection.png" alt-text="Screenshot showing the new Azure Resource Manager service connection form.":::
 
-When you save your new Azure Resource Manager (ARM) service connection, Azure DevOps does the following actions:
+When you save your new Azure Resource Manager service connection, Azure DevOps does the following actions:
 
 1. Connects to the Microsoft Entra tenant for to the selected subscription.
 1. Creates an application in Microsoft Entra ID on behalf of the user.
@@ -53,11 +53,11 @@ When you save your new Azure Resource Manager (ARM) service connection, Azure De
 
 The following issues might occur when you create service connections:
 
-- [Troubleshoot Azure Resource Manager (ARM) service connections](#troubleshoot-azure-resource-manager-arm-service-connections)
-  - [What happens when you create an Azure Resource Manager (ARM) service connection?](#what-happens)
+- [Troubleshoot Azure Resource Manager service connections](#troubleshoot-azure-resource-manager-service-connections)
+  - [What happens when you create an Azure Resource Manager service connection?](#what-happens)
   - [Troubleshooting scenarios](#troubleshooting-scenarios)
-- [Troubleshoot Azure Resource Manager (ARM) service connections](#troubleshoot-azure-resource-manager-arm-service-connections)
-  - [What happens when you create an Azure Resource Manager (ARM) service connection?](#what-happens-when-you-create-an-azure-resource-manager-arm-service-connection)
+- [Troubleshoot Azure Resource Manager service connections](#troubleshoot-azure-resource-manager-service-connections)
+  - [What happens when you create an Azure Resource Manager service connection?](#what-happens-when-you-create-an-azure-resource-manager-service-connection)
   - [Troubleshooting scenarios](#troubleshooting-scenarios)
       - [The user has only guest permission in the directory](#the-user-has-only-guest-permission-in-the-directory)
       - [The user isn't authorized to add applications in the directory](#the-user-isnt-authorized-to-add-applications-in-the-directory)
