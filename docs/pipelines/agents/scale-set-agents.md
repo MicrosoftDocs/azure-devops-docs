@@ -167,7 +167,7 @@ The Flexible orchestration mode enables Azure Pipelines to queue multiple scale 
 2. Select **Azure Virtual Machine Scale Set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired Virtual Machine Scale Set from that subscription. If you have an existing [service connection](../library/service-endpoints.md), you can choose that from the list instead of the subscription.
 
     > [!IMPORTANT]
-    > - To configure a scale set agent pool, you must have either [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#user-administrator-permissions) permissions on the selected subscription. If you have one of these permissions but get an error when you choose **Authorize**, see [troubleshooting](../release/azure-rm-endpoint.md#insufficient-privileges-to-complete-the-operation).
+    > - To configure a scale set agent pool, you must have either [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#user-administrator-permissions) permissions on the selected subscription. If you have one of these permissions but get an error when you choose **Authorize**, see [troubleshooting](../release/azure-rm-endpoint.md).
     > 
     > - The only service connection currently supported is an Azure Resource Manager (ARM) service connection based on a service principal key. ARM service connections based on a certificate credential or a Managed Identity will fail. When you attempt to list the existing scale sets in your subscription, you'll see an error like this:
     >
@@ -463,25 +463,40 @@ To delete the saved agent when you're done with your investigation, navigate to 
 * [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
-* [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
-* [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
-* [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
-  * [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
-  * [VMSS scale up isn't happening in the expected five-minute interval](#vmss-scale-up-isnt-happening-in-the-expected-five-minute-interval)
-  * [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
-  * [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't re-imaging as they should and just pick up new jobs as they're queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-arent-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-theyre-queued)
-  * [VMSS shows the agent as offline if the VM restarts](#vmss-shows-the-agent-as-offline-if-the-vm-restarts)
-  * [You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
-  * [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
-  * [VMSS maintenance job isn't running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
-  * [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
-  * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
-  * [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
-  * [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
-
-### Where can I find the images used for Microsoft-hosted agents?
-
-Licensing considerations limit us from distributing Microsoft-hosted images. We're unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/runner-images/tree/main/images) that we use to generate these images are open source. You're free to use these scripts and create your own custom images.
+- [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
+  - [Create the scale set](#create-the-scale-set)
+    - [Orchestration modes](#orchestration-modes)
+  - [Create the scale set agent pool](#create-the-scale-set-agent-pool)
+  - [Use scale set agent pool](#use-scale-set-agent-pool)
+  - [How Azure Pipelines manages the scale set](#how-azure-pipelines-manages-the-scale-set)
+  - [Customizing Pipeline Agent Configuration](#customizing-pipeline-agent-configuration)
+  - [Customizing Virtual Machine Startup via the Custom Script Extension](#customizing-virtual-machine-startup-via-the-custom-script-extension)
+  - [Lifecycle of a Scale Set Agent](#lifecycle-of-a-scale-set-agent)
+  - [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size)
+  - [Update an existing scale set with a new custom image](#update-an-existing-scale-set-with-a-new-custom-image)
+  - [Supported Operating Systems](#supported-operating-systems)
+    - [Known issues](#known-issues)
+  - [Troubleshooting issues](#troubleshooting-issues)
+    - [Unhealthy Agents](#unhealthy-agents)
+  - [FAQ](#faq)
+    - [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+    - [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
+    - [How can I delete agents?](#how-can-i-delete-agents)
+    - [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
+    - [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
+    - [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
+      - [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
+      - [VMSS scale up isn't happening in the expected five-minute interval](#vmss-scale-up-isnt-happening-in-the-expected-five-minute-interval)
+      - [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
+      - [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't re-imaging as they should and just pick up new jobs as they're queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-arent-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-theyre-queued)
+      - [VMSS shows the agent as offline if the VM restarts](#vmss-shows-the-agent-as-offline-if-the-vm-restarts)
+      - [You can see multiple tags like \_AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
+      - [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
+      - [VMSS maintenance job isn't running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
+      - [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
+      - [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
+      - [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
+      - [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
 
 ### How do I configure scale set agents to run UI tests?
 

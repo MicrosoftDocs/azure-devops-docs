@@ -17,7 +17,7 @@ monikerRange: '<= azure-devops'
 
 This article presents the common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
-<a name="whathappens"></a>
+<a name="what-happens"></a>
 
 ## What happens when you create an Azure Resource Manager (ARM) service connection?
 
@@ -51,15 +51,14 @@ When you save your new Azure Resource Manager (ARM) service connection, Azure De
 
 ## Troubleshooting scenarios
 
-Below are some of the issues that may occur when creating service connections:
+The following issues might occur when you create service connections:
 
 - [Troubleshoot Azure Resource Manager (ARM) service connections](#troubleshoot-azure-resource-manager-arm-service-connections)
-  - [What happens when you create an Azure Resource Manager (ARM) service connection?](#what-happens-when-you-create-an-arm-service-connection)
+  - [What happens when you create an Azure Resource Manager (ARM) service connection?](#what-happens)
   - [Troubleshooting scenarios](#troubleshooting-scenarios)
 - [Troubleshoot Azure Resource Manager (ARM) service connections](#troubleshoot-azure-resource-manager-arm-service-connections)
   - [What happens when you create an Azure Resource Manager (ARM) service connection?](#what-happens-when-you-create-an-azure-resource-manager-arm-service-connection)
   - [Troubleshooting scenarios](#troubleshooting-scenarios)
-    - [Insufficient privileges to complete the operation](#insufficient-privileges-to-complete-the-operation)
       - [The user has only guest permission in the directory](#the-user-has-only-guest-permission-in-the-directory)
       - [The user isn't authorized to add applications in the directory](#the-user-isnt-authorized-to-add-applications-in-the-directory)
     - [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found)
@@ -71,10 +70,6 @@ Below are some of the issues that may occur when creating service connections:
     - [Azure subscription isn't passed from the previous task output](#azure-subscription-isnt-passed-from-the-previous-task-output)
     - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
   - [Related articles](#related-articles)
-
-This permissions issue typically occurs when the system attempts to create an application in Microsoft Entra ID on your behalf.
-
-This issue might be due to the following causes:
 
 * [The user has only guest permission in the directory](#guestonly)
 * [The user isn't authorized to add applications in the directory](#notauthtoadd)
