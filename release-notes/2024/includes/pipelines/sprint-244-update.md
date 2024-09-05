@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Announcing deprecation of Pipeline Tasks
 
-Azure Pipelines has around 200 tasks [included in the product](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). Many of those are versions of the same task e.g. AzurePowerShell@2 and AzurePowerShell@5. Our AzureFileCopy task even has 6 versions. Whenever we change the behavior of a task or the task is wrapping a new major version of a tool, we introduce a new task version. Recent examples are the [PublishToAzureServiceBus@2](/azure/devops/release-notes/2024/pipelines/sprint-240-update#publishtoazureservicebus2-task), [AzureFileCopy@6](/azure/devops/release-notes/2024/pipelines/sprint-236-update#new-azurefilecopy6-task-supports-secret-less-configurations) and [PublishCodeCoverageResults@1](https://devblogs.microsoft.com/devops/new-pccr-task) tasks.
+Azure Pipelines has around 200 tasks [included in the product](/azure/devops/pipelines/tasks/reference). Many of those are versions of the same task e.g. AzurePowerShell@2 and AzurePowerShell@5. Our AzureFileCopy task even has 6 versions. Whenever we change the behavior of a task or the task is wrapping a new major version of a tool, we introduce a new task version. Recent examples are the [PublishToAzureServiceBus@2](/azure/devops/release-notes/2024/pipelines/sprint-240-update#publishtoazureservicebus2-task), [AzureFileCopy@6](/azure/devops/release-notes/2024/pipelines/sprint-236-update#new-azurefilecopy6-task-supports-secret-less-configurations) and [PublishCodeCoverageResults@1](https://devblogs.microsoft.com/devops/new-pccr-task) tasks.
 
 To inform users they are using an older version of a task and may not be taking advantage of the latest functionality, we are deprecating some of the older tasks. Deprecated tasks will emit a warning and guidance on alternatives, their behavior is unchanged.
 Deprecated tasks will ultimately get removed. However, we have no planned date for retirement for the tasks in the below list. Retirement of tasks will be communicated separately at a later time.
@@ -44,7 +44,7 @@ Here is the list of tasks deprecated and guidance on alternatives:
 | Maven@2                          | Use the Maven@4 task |
 | Maven@3                          | Use the Maven@4 task |
 | MysqlDeploymentOnMachineGroup@1  | Consider Azure Database for MySQL and the AzureMysqlDeployment@1 task |
-| PackerBuild@0                    | Use the PackerBuild@0 task to take advantage of latest features e.g. [Workload identity federation](shttps://aka.ms/azdo-rm-workload-identity-tasks) |
+| PackerBuild@0                    | Use the PackerBuild@0 task to take advantage of latest features e.g. [Workload identity federation](https://aka.ms/azdo-rm-workload-identity-tasks) |
 | PowerShellOnTargetMachines@1     | Use the PowerShellOnTargetMachines@3 task |
 | PowerShellOnTargetMachines@2     | Use the PowerShellOnTargetMachines@3 task |
 | PublishCodeCoverageResults@1     | Use the PublishCodeCoverageResults@1 task, see [blog post](https://devblogs.microsoft.com/devops/new-pccr-task)             |
