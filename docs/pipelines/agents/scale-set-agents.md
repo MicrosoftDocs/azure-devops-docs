@@ -120,7 +120,7 @@ In the following example, a new resource group and Virtual Machine Scale Set are
     > [!IMPORTANT]
     > Ephemeral OS disks are not supported on all VM sizes. For list of supported VM sizes, see [Ephemeral OS disks for Azure VMs](/azure/virtual-machines/ephemeral-os-disks).
 
-    Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Don't pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
+    Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Don't pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faqs).
     
     Select any VM SKU and storage SKU.
 
@@ -461,7 +461,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
 
 ## FAQs
 
-* [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
 - [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
   - [Create the scale set](#create-the-scale-set)
@@ -482,7 +481,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
   - [Troubleshooting issues](#troubleshooting-issues)
     - [Unhealthy Agents](#unhealthy-agents)
   - [FAQs](#faqs)
-    - [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
     - [How can I delete agents?](#how-can-i-delete-agents)
     - [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
     - [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
@@ -499,10 +497,6 @@ To delete the saved agent when you're done with your investigation, navigate to 
       - [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
       - [Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windows-defender-on-the-agent)
       - [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
-
-### How can I delete agents?
-`
-Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Select the tab labeled **Agents**.
 Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it's currently running and won't pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
 
 ### Can I configure the scale set agent pool to have zero agents on standby?
