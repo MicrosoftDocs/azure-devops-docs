@@ -24,10 +24,10 @@ In YAML pipelines, the build name property is called `name` and must be at the r
 >[!NOTE]
 >The `name` property doesn't work in template files. 
 
-The following example code outputs a customized build number like **project_def_master_20240828.1**.
+The following example code outputs a customized build number like **project_def_master_202408281**.
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
 
 steps:
   - script: echo '$(Build.BuildNumber)'
