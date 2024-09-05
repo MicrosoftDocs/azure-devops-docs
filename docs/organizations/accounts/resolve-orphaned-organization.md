@@ -48,7 +48,7 @@ When your Microsoft Entra tenant doesn't have an Azure DevOps Administrator, do 
 
 ## When your Azure DevOps Administrator is a member of the target organization
 
-When your Azure DevOps Administrator in Microsoft Entra ID *is* a member of the target Azure DevOps organization., do the following steps.
+When your Azure DevOps Administrator in Microsoft Entra ID *is* a member of the target Azure DevOps organization, do the following steps.
 
 1. As the Azure DevOps Administrator, sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
