@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/05/2024
+ms.date: 09/06/2024
 ---
 
 # Use Markdown in Azure DevOps
@@ -406,7 +406,7 @@ When you link to another Markdown page in the same Git or Team Foundation Versio
 - URL: `[text to display](http://address.com)`
 
 > [!NOTE]  
-> - Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
+> - Links to documents on file shares using `file://` aren't supported for security purposes.
 > - For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#source-control-relative-links).
 
 **Example:**  
@@ -978,8 +978,8 @@ To add a collapsible section in a wiki page, use the following syntax:
 
 Make sure to add an empty line in the following areas:
 
-- after the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
-- after the closing `</details>` tag if you have multiple collapsible sections
+- After the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
+- After the closing `</details>` tag if you have multiple collapsible sections
 
 ## Embed videos in a wiki page
 
@@ -1047,8 +1047,6 @@ Use the batch API `pagesBatch` to see the daily quantity of visits to all pages 
 ## Link to work items from a wiki page
 
 Enter the pound sign (`#`), and then enter a work item ID.
-
-
 
 <a name="html"></a>
 
