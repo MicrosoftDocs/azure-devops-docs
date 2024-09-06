@@ -15,7 +15,7 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
 
 ## Prerequisites
 
-- Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - A working Classic pipeline. 
 
