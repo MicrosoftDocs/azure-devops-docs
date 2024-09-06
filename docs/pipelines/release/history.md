@@ -50,7 +50,7 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
     :::image type="content" source="media/pipeline-history-compare-difference.png" alt-text="A screenshot displaying the Classic pipeline history difference.":::
 
 > [!NOTE]
-> When viewing the compare difference in Classic pipeline history, the JSON files are read-only, and you cannot edit the JSON source directly.
+> When viewing the compare difference in Classic pipeline history, the JSON files are read-only and cannot be edited directly.
 
 ## Related content
 
