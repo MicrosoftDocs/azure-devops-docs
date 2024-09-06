@@ -45,9 +45,9 @@ Use templates to define your logic once and then reuse it several times. Templat
 
 ::: zone pivot="templates-extends"
 
-::: moniker range=">=azure-devops-2020"
-
 ## Extend from a template
+
+::: moniker range=">=azure-devops-2020"
 
 To increase security, you can enforce that a pipeline extends from a particular template. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
 In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
@@ -104,7 +104,7 @@ extends:
       - script: echo "Script Test"
 ```
 
-### Extend from a template with resources
+## Extend from a template with resources
 
 You can also use `extends` to extend from a template in your Azure pipeline that contains resources. 
 
