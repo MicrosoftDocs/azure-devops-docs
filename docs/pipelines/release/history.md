@@ -54,7 +54,7 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
 
 ## Related content
 
-- [Build multiple branches in Azure Pipelines](ci-build-git.md)
+- [Build multiple branches in Azure Pipelines](../build/ci-build-git.md)
 
 - [Configure build run numbers](../process/run-number.md)
 
