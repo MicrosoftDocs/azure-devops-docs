@@ -71,7 +71,7 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 | User interface |  Limit |
 |--------|-------|
 | Backlogs | 10,000 work items |
-| Boards | 1,000 cards (excluding those cards in the *[Proposed](../../../boards/work-items/workflow-and-state-categories.md)*[and](../../../boards/work-items/workflow-and-state-categories.md)*[Completed](../../../boards/work-items/workflow-and-state-categories.md)*[workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
+| Boards | 1,000 cards (excluding those cards in the *Proposed* and *Completed* [workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
 | Taskboard | 1,000 tasks  |
 | Area Paths | 10,000 per project |
 | Area Path Depth | 14 |
