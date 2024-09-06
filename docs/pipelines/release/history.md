@@ -29,7 +29,7 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
 
 1. Select the **History** tab to view a list of changes, including who made the changes and when they occurred.
 
-    :::image type="content" source="../release/media/classic-pipeline-history-devops.png" alt-text="A screenshot displaying how to view Classic pipeline history in Azure DevOps Services.":::
+    :::image type="content" source="media/classic-pipeline-history-devops.png" alt-text="A screenshot displaying how to view Classic pipeline history in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -41,13 +41,13 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
 
 1. Select the **History** tab to view a list of changes, including who made the changes and when they occurred.
 
-    :::image type="content" source="../release/media/classic-pipeline-history.png" alt-text="A screenshot displaying how to view Classic pipeline history.":::
+    :::image type="content" source="media/classic-pipeline-history.png" alt-text="A screenshot displaying how to view Classic pipeline history.":::
 
 ::: moniker-end
 
 4. To take action on a change, select it, select the ellipsis button **...**, and then choose either **Compare Difference** or **Revert Pipeline**.
     
-    :::image type="content" source="../release/media/pipeline-history-compare-difference.png" alt-text="A screenshot displaying the Classic pipeline history difference.":::
+    :::image type="content" source="media/pipeline-history-compare-difference.png" alt-text="A screenshot displaying the Classic pipeline history difference.":::
 
 > [!NOTE]
 > When viewing the compare difference in Classic pipeline history, the JSON files are read-only, and you cannot edit the JSON source directly.
