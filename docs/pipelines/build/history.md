@@ -19,10 +19,35 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
 
 - A working Classic pipeline. 
 
-From the **History** tab you can see a list of changes that includes who made the change and when the change occurred.
+## View pipeline history
 
-To work with a change, select it, click **...**, and then click **Compare Difference** or **Revert Pipeline**.
+::: moniker range=" azure-devops"   
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your Classic pipeline, and then select **Edit**.
+
+1. Select the **History** tab to view a list of changes, including who made the changes and when they occurred.
+
+    :::image type="content" source="../release/media/classic-pipeline-history-devops.png" alt-text="A screenshot displaying how to view Classic pipeline history in Azure DevOps Services.":::
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Pipelines**, select your Classic pipeline, and then select **Edit**.
+
+1. Select the **History** tab to view a list of changes, including who made the changes and when they occurred.
+
+    :::image type="content" source="../release/media/classic-pipeline-history.png" alt-text="A screenshot displaying how to view Classic pipeline history.":::
+
+::: moniker-end
+
+4. To take action on a change, select it, select the ellipsis button **...**, and then choose either **Compare Difference** or **Revert Pipeline**.
+    
+    :::image type="content" source="../release/media/pipeline-history-compare-difference.png" alt-text="A screenshot displaying the Classic pipeline history difference.":::
 
 ## FAQ 
 
