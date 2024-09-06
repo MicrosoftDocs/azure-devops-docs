@@ -1,6 +1,6 @@
 ---
 title: Use Azure Pipelines to build and push container images to registries
-description: Use Azure Pipelines to build and push container images to Docker Hub and Google Container Registry.
+description: Use Azure Pipelines to build and push container images to Docker Hub and Google Artifact Registry.
 ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: v-catherbund
@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
 
-This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to Docker Hub and Google Container Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to Docker Hub and Google Artifact Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
 
 You learn how to create a YAML pipeline to build and push a Docker image to a container registry. The pipeline is triggered by changes to the main branch of the repository. The Docker@2 task is used to build and push the image to the container registry.
 
@@ -22,7 +22,7 @@ To learn how to build and push container images to Azure Container Registry, see
 ## Prerequisites
 
 - An Azure DevOps project
-- A container registry (Docker Hub or Google Container Registry)
+- A container registry (Docker Hub or Google Artifact Registry)
 - A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the sample repository and fork it to your GitHub account.
 - Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges.  Microsoft-hosted agents have Docker pre-installed.
 
@@ -31,15 +31,15 @@ To learn how to build and push container images to Azure Container Registry, see
 
 Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry.
 
-There are different processes to create a service connection for a Docker Hub and a Google Container Registry. 
+There are different processes to create a service connection for a Docker Hub and a Google Artifact Registry. 
 
 # [Docker Hub](#tab/docker)
 
 Choose the Docker Hub option under [Docker registry service connection](../../library/service-endpoints.md#docker-hub-or-others) and provide your username and password to create a Docker service connection.
 
-## [Google Container Registry](#tab/google)
+## [Google Artifact Registry](#tab/google)
 
-To create a Docker service connection associated with Google Container Registry:
+To create a Docker service connection associated with Google Artifact Registry:
 
 1. Open your project in the GCP Console and then open Cloud Shell
 1. To save time typing your project ID and Compute Engine zone options, set default configuration values by running the following commands:
@@ -56,9 +56,10 @@ To create a Docker service connection associated with Google Container Registry:
    gcloud config set compute/zone us-central1-a
    ```
 
-1. Enable the Container Registry API for your project:
+1. Enable the Artifact Registry API for your project:
 
    ```console
+   gcloud services enable artifactregistry.googleapis.com
    gcloud services enable containerregistry.googleapis.com
    ```
 
@@ -134,25 +135,25 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
 1. Replace the contents of **azure-pipelines.yml** with the following code. 
     1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
     1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
-    1. Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`.
+    1. Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`, to push to a Google repository, use `<your-project-id>/<your-image-name>`.
 
    ```yaml
-    trigger:
-    - main
-    
-    pool:
-      vmImage: 'ubuntu-latest' 
-    
-    variables:
-       repositoryName: '<target repository name>'
-    
-    steps:
-    - task: Docker@2
-      inputs:
-         containerRegistry: '<docker connection>'
-         repository: $(repositoryName)
-         command: 'buildAndPush'
-         Dockerfile: '**/Dockerfile'
+   trigger:
+   - main
+   
+   pool:
+   vmImage: 'ubuntu-latest' 
+   
+   variables:
+      repositoryName: '<target repository name>'
+   
+   steps:
+   - task: Docker@2
+   inputs:
+      containerRegistry: '<docker connection>'
+      repository: $(repositoryName)
+      command: 'buildAndPush'
+      Dockerfile: '**/Dockerfile'
     ```
 
 1. When you're done, select **Save and run**.
@@ -183,23 +184,23 @@ To build the image, Docker must be installed on the agent's host and the Docker 
     1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
 
     ```yml
-    trigger:
-    - main
-    
-    pool:
-      name: default
-      demands: docker
-    
-    variables:
-       repositoryName: '<target repository name>'
-    
-    steps:
-    - task: Docker@2
-      inputs:
-         containerRegistry: '<docker connection>'
-         repository: $(repositoryName)
-         command: 'buildAndPush'
-         Dockerfile: '**/Dockerfile'
+   trigger:
+   - main
+   
+   pool:
+   name: default
+   demands: docker
+   
+   variables:
+      repositoryName: '<target repository name>'
+   
+   steps:
+   - task: Docker@2
+   inputs:
+      containerRegistry: '<docker connection>'
+      repository: $(repositoryName)
+      command: 'buildAndPush'
+      Dockerfile: '**/Dockerfile'
     
     ```
 
