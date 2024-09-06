@@ -49,18 +49,14 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
     
     :::image type="content" source="../release/media/pipeline-history-compare-difference.png" alt-text="A screenshot displaying the Classic pipeline history difference.":::
 
-## FAQ 
+> [!NOTE]
+> When viewing the compare difference in Classic pipeline history, the JSON files are read-only, and you cannot edit the JSON source directly.
 
-<!-- BEGINSECTION class="md-qanda" -->
+## Related content
 
-### Can I edit the JSON source directly?
+- [Build multiple branches in Azure Pipelines](ci-build-git.md)
 
-No
+- [Configure build run numbers](../process/run-number.md)
 
-[!INCLUDE [temp](../includes/qa-agents.md)]
+- [Pipeline caching](../release/caching.md)
 
-::: moniker range="< azure-devops"
-[!INCLUDE [temp](../includes/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
