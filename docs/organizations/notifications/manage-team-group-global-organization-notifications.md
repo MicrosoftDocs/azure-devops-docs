@@ -1,5 +1,5 @@
 ---
-title: Manage notifications for a team, project, organization or collection
+title: Manage notifications for a team, project, organization, or collection
 titleSuffix: Azure DevOps
 description: Learn how to configure team, project, and organization/collection notifications for when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.subservice: azure-devops-notifications
@@ -8,7 +8,7 @@ ms.custom: cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 04/24/2023
+ms.date: 09/05/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -175,14 +175,12 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-
-
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 
 ## Related articles
 
-- [Manage personal notification settings](manage-your-personal-notifications.md)
-- [Set your preferences](../../organizations/settings/set-your-preferences.md)
-- [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../../boards/work-items/follow-work-items.md)  
+- [Manage your personal notification settings](manage-your-personal-notifications.md)
+- [Set your notification preferences](../../organizations/settings/set-your-preferences.md)
+- [Review default and supported notifications](oob-built-in-notifications.md)
+- [Follow a specific work item](../../boards/work-items/follow-work-items.md)
 - [Change your preferred email address](change-email-address.md)

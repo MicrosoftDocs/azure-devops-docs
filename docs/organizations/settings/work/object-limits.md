@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 08/19/2024
+ms.date: 09/05/2024
 ---
 
 # Work tracking, process, and project limits
@@ -71,7 +71,7 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 | User interface |  Limit |
 |--------|-------|
 | Backlogs | 10,000 work items |
-| Boards | 1,000 cards (excluding those cards in the *[Proposed](../../../boards/work-items/workflow-and-state-categories.md)*[ and ](../../../boards/work-items/workflow-and-state-categories.md)*[Completed](../../../boards/work-items/workflow-and-state-categories.md)*[workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
+| Boards | 1,000 cards (excluding those cards in the *Proposed* and *Completed* [workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
 | Taskboard | 1,000 tasks  |
 | Area Paths | 10,000 per project |
 | Area Path Depth | 14 |
@@ -79,14 +79,22 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 | Iteration Paths | 10,000 per project |
 | Iteration Path Depth | 14 |
 | Iteration Paths per team | 300 |
-| Project Dashboards | 500 per project |
-| Team Dashboards | 500 per team |
+| Project Dashboards | 500 per project. Accessible at the project level and anyone with access to the project can use. |
+| Team Dashboards | 500 per team. Specific to the team and used to track team-specific metrics and data. |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per organization or collection |
 | Delivery plans per project | 1,000 |
 | Templates per work item type | 100 |
 
 Each backlog can display up to 10,000 work items. This limit applies to what the backlog can display, not to the number of work items you can define, as there's no specific limit. If your backlog exceeds this limit, consider adding a team and moving some work items to the new team's backlog.
+
+> [!TIP]
+> If you're approaching the dashboards limits, see the following steps to manage and clean up your dashboards:
+> - **Review usage:** Identify dashboards that are no longer in use or are duplicates. You can do this by checking the last accessed date or by consulting with team members.
+> - **Consolidate dashboards:** Combine similar dashboards to reduce the total number. This can be done by adding multiple widgets to a single dashboard.
+> - **Archive old dashboards:** If certain dashboards are no longer needed but you want to keep the data, consider exporting the data and archiving the dashboards.
+> - **Use the Object Limit Tracker feature:** Provides real-time visibility into resource usage, including dashboards. This feature can help you [proactively manage your limits and avoid potential issues](https://devblogs.microsoft.com/devops/introducing-object-limit-tracker-in-azure-devops/).
+
 
 #### Other notes:
 
@@ -126,7 +134,7 @@ For the On-premises XML process model, you can modify the backlog and Taskboard 
 Azure DevOps Services limits each organization to 1,000 projects per organization, an increase over the previous limit of 300 projects.
 
 > [!NOTE]
-> Above 300 projects, certain experiences, like connecting to a project from Visual Studio, may degrade. For on-premises Azure DevOps Server, there are no hard limits, but performance issues may arise as the number of projects nears 300. When migrating to Azure DevOps Services, observe the maximum limit of 1,000 projects. If your collection exceeds this limit, split the collection or delete older projects.
+> Above 300 projects, certain experiences, like connecting to a project from Visual Studio, might degrade. For on-premises Azure DevOps Server, there are no hard limits, but performance issues may arise as the number of projects nears 300. When migrating to Azure DevOps Services, observe the maximum limit of 1,000 projects. If your collection exceeds this limit, split the collection or delete older projects.
 
 For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md).
 
@@ -136,7 +144,7 @@ Many limits are imposed on the number of objects you can define for a process. F
 
 ::: moniker range="azure-devops"
 
-The following table lists the maximum number of objects you can define for the Inheritance and Hosted XML process models. While these are hard limits, practical limits might also apply.
+The following table lists the maximum number of objects you can define for the Inheritance and Hosted XML process models. While these limits are hard limits, practical limits might also apply.
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
@@ -165,7 +173,7 @@ For other restrictions and conformance requirements of the Hosted XML process mo
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-The following table lists the maximum number of objects you can define for the Inheritance and On-premises XML process models. While these are hard limits, practical limits might also apply.
+The following table lists the maximum number of objects you can define for the Inheritance and On-premises XML process models. While these limits are hard limits, practical limits might also apply.
 
 | Object                                              | Inheritance | On-premises XML |
 | --------------------------------------------------- | ----------: | ---------: |
@@ -195,7 +203,7 @@ To minimize performance issues, we recommend following this guidance:
 ::: moniker range="azure-devops"
 
 - Limit the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. You can specify different behaviors, such as rules and picklists, for the same field in different WITs.
-- Limit the number of rules you define for a WIT. While you can create multiple rules for a WIT, additional rules can negatively affect performance when users add or modify work items. When users save work items, the system validates all rules associated with the fields for that work item type. In some cases, the rule validation expression may be too complex for SQL to evaluate efficiently.
+- Limit the number of rules you define for a WIT. While you can create multiple rules for a WIT, other rules can negatively affect performance when users add or modify work items. When users save work items, the system validates all rules associated with the fields for that work item type. In some cases, the rule validation expression might be too complex for SQL to evaluate efficiently.
 - Limit the number of custom WITs you define.
 
 ::: moniker-end
@@ -203,9 +211,9 @@ To minimize performance issues, we recommend following this guidance:
 ::: moniker range="< azure-devops"
 
 - Limit the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. You can specify different behaviors, such as rules and picklists, for the same field in different WITs.
-- Limit the number of rules you define for a WIT. While you can create multiple rules for a WIT, additional rules can negatively affect performance when users add or modify work items. When users save work items, the system validates all rules associated with the fields for that work item type. In some cases, the rule validation expression may be too complex for SQL to evaluate efficiently.
+- Limit the number of rules you define for a WIT. While you can create multiple rules for a WIT, other rules can negatively affect performance when users add or modify work items. When users save work items, the system validates all rules associated with the fields for that work item type. In some cases, the rule validation expression might be too complex for SQL to evaluate efficiently.
 - Limit the number of custom WITs you define.
-- Limit the number of reportable fields you define. Reportable fields can impact the performance of your data warehouse.
+- Limit the number of reportable fields you define. Reportable fields can affect the performance of your data warehouse.
 
 ::: moniker-end
 
@@ -216,9 +224,9 @@ To minimize performance issues, we recommend following this guidance:
 
 ## Rate limits
 
-To reduce costs and enhance scalability and performance, Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy. To ensure good performance and minimize the risk of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be delayed or blocked.
+To reduce costs and enhance scalability and performance, Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy. To ensure good performance and minimize the risk of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests might be delayed or blocked.
 
-Most rate limits are reached through REST API calls or non-optimized queries. For more information, see [Rate limits](../../../integrate/concepts/rate-limits.md) and [Best practices (to avoid hitting rate limits)](../../../integrate/concepts/integration-bestpractices.md).
+Most rate limits are reached through REST API calls or nonoptimized queries. For more information, see [Rate limits](../../../integrate/concepts/rate-limits.md) and [Best practices (to avoid hitting rate limits)](../../../integrate/concepts/integration-bestpractices.md).
 
 ::: moniker-end
 
@@ -236,20 +244,20 @@ For more information, see [Migrate data from Azure DevOps Server to Azure DevOps
 
 ::: moniker range="azure-devops"
 
-- [About process customization and inherited processes](inheritance-process-model.md)
-- [Create an Inheritance process](manage-process.md)
-- [Best practices](../../../integrate/concepts/integration-bestpractices.md)
-- [Naming restrictions and conventions](../naming-restrictions.md)
+- [Learn about process customization and inherited processes](inheritance-process-model.md)
+- [Create an inheritance process](manage-process.md)
+- [Follow best practices](../../../integrate/concepts/integration-bestpractices.md)
+- [Adhere to naming restrictions and conventions](../naming-restrictions.md)
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
 - [Customize your work tracking experience](../../../reference/customize-work.md)
-- [About process customization and inherited processes](inheritance-process-model.md)
-- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
-- [Naming restrictions and conventions](../naming-restrictions.md)
+- [Learn about process customization and inherited processes](inheritance-process-model.md)
+- [Customize on-premises XML processes](../../../reference/on-premises-xml-process-model.md)
+- [Understand rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
+- [Follow naming restrictions and conventions](../naming-restrictions.md)
 
 ::: moniker-end
 
