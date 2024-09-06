@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms date: 10/17/2022
+ms date: 09/06/2024
 ---
 
 # Create a Power BI report with an OData Query
@@ -16,14 +16,7 @@ ms date: 10/17/2022
 
 With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
 
-If you don't have Power BI Desktop, you can [download](/power-bi/desktop-what-is-desktop) and install it for free.
- 
-Follow the steps to create a report in Power BI desktop that shows a **daily trend of bugs**.
-
-> [!div class="checklist"] 
-> * Create a Power BI query
-> * Create Power BI transforms
-> * Create an Open Bugs trend report
+If you don't have Power BI Desktop, [download](/power-bi/desktop-what-is-desktop) and install it for free.
 
 <a id="prerequisites">  </a>
 
@@ -33,68 +26,71 @@ To create a Power BI report, you must meet the following criteria:
 
 ::: moniker range="azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](../../user-guide/sign-up-invite-teammates.md). 
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
-- **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). 
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-- Have tracked work items for some period of time on which to generate a trend report. 
+- Be a project member. If you aren't, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions for Analytics access](./analytics-security.md).
+- Enable **Boards**. To re-enable Boards, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have *[Power BI Desktop](/power-bi/desktop-what-is-desktop)* *October 2018 Update* or later version.
+- Track work items for some period of time on which to generate a trend report. 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
-- **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-- Have tracked work items for some period of time on which to generate a trend report. 
+- Be a project member. If you aren't, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- [Enable or install Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
+- Enable **Boards**. To re-enable Boards, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions for Analytics access](./analytics-security.md).
+- Have *[Power BI Desktop](/power-bi/desktop-what-is-desktop)* *October 2018 Update* or later version.
+- Track work items for some period of time on which to generate a trend report. 
 
 ::: moniker-end
 
-
-## Create a Power BI Query
+## Create a Power BI query
     
-Create a Power BI Query to pull the data into Power BI as follows:
+Create a Power BI query to pull the data into Power BI as follows:
 
 1. Choose **Get Data**, and then **Blank Query**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Blank Query](media/BlankQuery.png)
+    > ![Screenshot shows Power BI - Blank Query.](media/BlankQuery.png)
 
 2. From the Power BI Query editor, choose **Advanced Editor**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Select Advanced Editor](media/AdvancedEditor.png)
+    > ![Screenshot shows Power BI - Select Advanced Editor.](media/AdvancedEditor.png)
 
 3. The Advanced Editor window opens.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor](media/odatapowerbi-advancededitor.png)
+    > ![Screenshot shows Power BI - Advanced Editor.](media/odatapowerbi-advancededitor.png)
 
-4. Replace the contents with the following query.
+4. Replace the contents with the following query:
  
     ```
     let
-       Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/WorkItemSnapshot? "
-          $apply=filter(
-              WorkItemType eq 'Bug'  
-          AND StateCategory ne 'Completed'  
-          AND startswith(Area/AreaPath,'{areapath}')  
-          AND DateValue ge {startdate} )/
-          groupby((DateValue,State,WorkItemType,Area/AreaPath), aggregate($count as Count))  
-          &$orderby=DateValue"
-         ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-    in
-        Source
-    ```
+       The query you provided has a syntax issue due to the placement of double quotes. Specifically, the `$apply` and `$orderby` parameters should be part of the URL string, but they are not correctly concatenated. Here is the corrected version:
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
+```markdown
+let
+   Source = OData.Feed (
+      "https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/WorkItemSnapshot?"
+      &"$apply=filter("
+      &"WorkItemType eq 'Bug' "
+      &"AND StateCategory ne 'Completed' "
+      &"AND startswith(Area/AreaPath,'{areapath}') "
+      &"AND DateValue ge {startdate} )/"
+      &"groupby((DateValue,State,WorkItemType,Area/AreaPath), aggregate($count as Count))"
+      &"&$orderby=DateValue",
+      null, [Implementation="2.0", OmitValues = ODataOmitValues.Nulls, ODataVersion = 4]
+   )
+in
+    Source
+```
 
-5. Substitute your values within the sample query.
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
+
+1. Substitute your values within the sample query.
 
     The sample query has strings that you must replace with your values:
 
@@ -106,9 +102,9 @@ Create a Power BI Query to pull the data into Power BI as follows:
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of Power BI, Advanced Editor, Replaced Strings in Query.](media/odatapowerbi-advancededitor-replaced.png)
 
-6. Choose **Done** to execute the query.
+2. Choose **Done** to execute the query.
 
-    If you've never connected to your account, Power BI may require you to authenticate. For more information, see [Client authentication options](client-authentication-options.md).
+   Power BI might require you to authenticate. For more information, see [Client authentication options](client-authentication-options.md).
 
 
 ## Expand Area, Iteration, AssignedTo columns
@@ -125,24 +121,24 @@ After closing the **Advanced Editor** and while remaining in the **Power Query E
 	> [!NOTE]   
 	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. For more information about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
 	
-1. The table now contains entity field(s).
+1. The table now contains entity fields.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of expanded Area columns.](media/transform-data/expanded-area-columns.png)
 
-1. Repeat steps 1 through 3 for all fields representing entities that need expanding. These appear with *Record* listed in the table column when unexpanded. 
+1. Repeat steps 1 through 3 for all fields representing entities that need to expand. These fields appear with *Record* listed in the table column when unexpanded. 
 
 
 ## Rename fields and query, then Close & Apply
 
-When finished, you may choose to rename columns. 
+When finished, you might choose to rename columns. 
 
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
+1. You also might want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
@@ -152,27 +148,24 @@ When finished, you may choose to rename columns.
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
 
-
 ## Create the report
 
 Power BI shows you the fields you can report on. 
 
 > [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
+> The following example assumes that no one renamed any columns. 
+> :::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
 
 For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue," rather than Date Hierarchy
 1. Add the field "State" to **Legend**
 1. Add the field "Count" to **Values**
     - Right-click WorkItemId field and ensure **Sum** is selected
 
-The example report:
-
+Example report:
 
 :::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
  
@@ -180,7 +173,6 @@ The example report:
 
 > [!div class="nextstepaction"]
 > [Create an Open bugs report](sample-boards-openbugs.md)
-
 
 ## Related articles
 
