@@ -12,4 +12,4 @@ Many teams actively use Git submodules to organize their codebase. We're excited
 This addresses a feature request from Developer Community: [[Azure DevOps Repos] Git submodule preview in UI](https://developercommunity.visualstudio.com/t/azure-devops-repos-git-submodule-preview-in-ui/1033995)
 
 > [!div class="mx-imgBorder"]
-> ![Gif to demo navigate to a submodule repository.](../../media/240-repos-01.gif "gif to navigate to a submodule repository")
+> ![Gif to demo navigate to a submodule repository.](../../media/244-repos-01.gif "gif to navigate to a submodule repository")
