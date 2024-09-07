@@ -92,7 +92,7 @@ The following features apply to all searches, including work items, code, and pa
       Search based on an exact match, enclosed in double-quotes.
    :::column-end:::
    :::column span="2":::
-      `"Client not found"` finds instances that contain the exact phrase match *Client not found*.
+      `"Client not found"` finds instances that contain the exact phrase match *Client not found*. Search might not handle special characters as expected. Try escaping special characters or simplifying the search phrase.
    :::column-end:::
 :::row-end:::
 ---
@@ -126,8 +126,8 @@ The following features apply to all searches, including work items, code, and pa
    :::column span="2":::
       - `Validate AND revisit` finds files that contain both the words *validate* and *revisit*.
       - `Validate OR revisit` finds files that contain either of the words *validate* or *revisit*.
-      - `Validate NOT revisit` finds files that contain the word *validate* but not the word *revisit*.
-      - `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word *revisit* or files that contain the phrase *release delayed*.
+      - `Validate NOT revisit` finds files that contain the word *validate* but not the word, *revisit*.
+      - `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word, *revisit, or files that contain the phrase *release delayed*.
    :::column-end:::
 :::row-end:::
 ---

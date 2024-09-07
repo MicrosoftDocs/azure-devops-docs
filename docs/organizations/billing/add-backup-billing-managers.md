@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> Classic admins retire August 31, 2024. Starting on February 26, you can't add a new co-administrator using the Access control blade. Remove co-administrators and use Azure RBAC for fine-grained access control. For more information, see [Azure classic subscription administrators](/azure/role-based-access-control/classic-administrators).
+> Classic admins retired August 31, 2024. Starting on February 26, you can't add a new co-administrator using the Access control blade. Remove co-administrators and use Azure RBAC for fine-grained access control. For more information, see [Azure classic subscription administrators](/azure/role-based-access-control/classic-administrators).
 
 Give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change the Azure subscription used for billing](change-azure-subscription.md) for your Azure DevOps organization. 
 
