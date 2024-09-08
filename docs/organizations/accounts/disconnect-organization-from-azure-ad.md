@@ -7,7 +7,7 @@ ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/14/2019
+ms.date: 09/05/2024
 monikerRange: 'azure-devops'
 ---
 # Disconnect your organization from Microsoft Entra ID
@@ -16,22 +16,21 @@ monikerRange: 'azure-devops'
 
 <a name="DisconnectDirectory"></a>
 
-To stop using your organization's Microsoft Entra ID and return to signing in with Microsoft accounts, disconnect your organization from your directory.
+To stop using your organization's Microsoft Entra ID and return to signing in with Microsoft accounts, disconnect your organization from the directory.
 
 For more information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-* Before you disconnect your organization from your directory, make sure to **change the organization owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
+* **Organization owner:** Change the organization owner to a Microsoft account and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
+* **Permissions:** Add your Microsoft account to the Project Collection Administrator group in Organization settings.
 
-* Add your Microsoft account to the Project Collection Administrator group in Organization Settings and confirm that you have Global Administrator Permissions in your Microsoft Entra ID for your Microsoft account. You need both because Microsoft Entra users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
-
-Learn about how to [Manage Azure administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+For more information, see [Manage Azure administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 **What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
 > [!IMPORTANT]
-> If you want to connect your organization to a different Microsoft Entra ID at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organization to the new directory so users can regain access. Learn more about [connecting your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
+> If you want to connect your organization to a different Microsoft Entra ID, first disconnect any connected organizations from the original directory before deleting it. Once the new directory is established, connect your organization to it so users can regain access. For more information, see [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md) or [Change your organization connection to a different Microsoft Entra ID](change-azure-ad-connection.md).
 
 ## Disconnect organization from directory
 
@@ -47,11 +46,11 @@ Learn about how to [Manage Azure administrators](/azure/active-directory/users-g
 
 4. Enter the name of your organization, and then select **Disconnect**.
 
-   ![Disconnection confirmation](media/shared/disconnection-confirmation.png)
+   ![Screenshot showing Disconnection confirmation.](media/shared/disconnection-confirmation.png)
 
 5. Select **Sign out**.
 
-   ![Select Sign out](media/shared/sign-out-azure-devops.png)
+   ![Screenshot showing Sign out button.](media/shared/sign-out-azure-devops.png)
 
 Your organization is disconnected from Microsoft Entra ID. Only users with Microsoft accounts can sign in.
 

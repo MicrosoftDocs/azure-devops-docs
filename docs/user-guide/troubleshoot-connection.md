@@ -6,7 +6,7 @@ ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 01/08/2024
+ms.date: 09/05/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 
 ## Troubleshoot connectivity
 
-Complete the following steps to resolve connectivity issues.
+To resolve connectivity issues, complete the following steps:
 
 1. Sign out of your browser. To do so, select the [Visual Studio sign out](https://aka.ms/VsSignout) link.
 2. Delete the cookies in your browser. To delete cookies in most browsers, select **Ctrl**+**Shift**+**Delete**.
@@ -87,7 +87,7 @@ When you get redirected back to the original sign-in page, we recommend that you
 |-------------|----------------|  
 |You don't have an active account or license.|Check with your administrator that you're a member of the account and have an active, valid license. For more information, see [Assign licenses to users](../organizations/accounts/add-organization-users.md).| 
 |Your Azure DevOps Services organization is connected to the Microsoft Entra ID.|When your Azure DevOps Services organization is connected to a directory that is associated with a Microsoft 365 or Microsoft Azure subscription, only members in the directory can access the account.<br /><br /> Check with your directory administrator to have them [create an organizational account for you or add your account to the directory as external member](/azure/active-directory/active-directory-create-users).|  
-|You can't switch between different organizational accounts.|If you work with several organizations that connect to different directories, such as accounts created from the Microsoft Azure portal, the sign out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, you see a flashing blank sign in dialog box several times. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in the dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](https://visualstudio.microsoft.com/downloads) .<br /><br /> For more information, see [You can't switch between different organizational accounts in Visual Studio Codespace](/troubleshoot/visualstudio/general/cannot-switch-accounts).|  
+|You can't switch between different organizational accounts.|If you work with several organizations that connect to different directories, such as accounts created from the Microsoft Azure portal, the sign out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, there's a flashing blank sign in dialog box. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in the dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](https://visualstudio.microsoft.com/downloads) .<br /><br /> For more information, see [You can't switch between different organizational accounts in Visual Studio Codespace](/troubleshoot/visualstudio/general/cannot-switch-accounts).|  
 |You want to sign in to Azure DevOps Services from Visual Studio using different credentials.|See [Connect to projects, Sign in with different credentials](../organizations/projects/connect-to-projects.md).|  
 
 ::: moniker-end
@@ -103,10 +103,11 @@ Here's a list of the most frequently reported connection problems and what to do
 2. Verify that your computer is connected to the network and that it can access network resources.
 3. Verify that Azure DevOps Server isn't offline. Check with your Azure DevOps Server administrator.
 4. Check whether your project was moved to another project collection in Azure DevOps Server. If it was moved, you must create a connection to the new server name.
+5. Verify you're using a [supported version of Azure DevOps Server](/azure/devops/server/requirements).
 
 ## TF31002: Unable to connect
   
-If you determine that you're receiving this error from one computer but not others, or others aren't receiving this error, then check the following resolutions.  
+If you get this error from one computer but not others, or others aren't receiving this error, then check the following resolutions.  
   
 |Problem|Resolution|  
 |-------------|----------------|  
@@ -114,8 +115,8 @@ If you determine that you're receiving this error from one computer but not othe
 |You entered an incorrect server URL.|Verify that you entered the server URL correctly including the server name, port number, and protocol (http/https). For more information, see [Connect to projects](../organizations/projects/connect-to-projects.md).|  
 |The configuration changed.|If the configuration for the on-premises Azure DevOps Server changed, you must create a new connection. You might also need to [clear the client cache](../organizations/projects/connect-to-projects.md).|  
 |You work remotely and need to connect to an Azure DevOps Proxy server to check in files to Azure DevOps Server version control.| [Configure Visual Studio to connect to Azure DevOps Proxy](../organizations/projects/connect-to-projects.md).|  
-|You're connecting to a later version of Azure DevOps Server than your Visual Studio client version.|Your version of Visual Studio or Team Explorer might be incompatible with Azure DevOps Server. You might need to install one or more GDR packs. For more information, see [Requirements and compatibility](/azure/devops/server/requirements).|  
-|Your firewall is blocking Azure DevOps services.|See [Allow a program to communicate through Windows Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766312(v=ws.10)).|  
+|You're connecting to a later version of Azure DevOps Server than your Visual Studio client version.|Your version of Visual Studio or Team Explorer might be incompatible with Azure DevOps Server. You might need to install one or more General Distribution Release (GDR) packs. For more information, see [Requirements and compatibility](/azure/devops/server/requirements).|  
+|Your firewall is blocking Azure DevOps.|See [Allow a program to communicate through Windows Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766312(v=ws.10)).|  
 |Visual Studio stops responding when you run a query in Visual Studio.|Your computer might be configured to bypass the proxy server. Verify the configuration of the BypassProxyOnLocal setting on your computer. For more information, see [BypassProxyOnLocal Configuration](/previous-versions/visualstudio/visual-studio-2008/ee248646(v=vs.90)).|  
   
 ### Several users can't connect to Azure DevOps Server 
@@ -126,7 +127,7 @@ As an administrator, check the event logs for the application-tier server to try
   
 |Problem|Resolution|
 |-------------|----------------|
-|The *TFSService* account password expired or is incorrect.|Many services for Azure DevOps Server stop running when the service account expires. For more information, see [Change the service account or password for Azure DevOps Server](/azure/devops/server/admin/change-service-account-password).|  
+|The *TFSService* account password is expired or incorrect.|Many services for Azure DevOps Server stop running when the service account expires. For more information, see [Change the service account or password for Azure DevOps Server](/azure/devops/server/admin/change-service-account-password).|  
 |The application-tier server for Azure DevOps Server is unavailable.|Verify whether each required service is running. If a required service isn't running, you must restart it. If necessary, set it to start automatically. For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).|  
 |The network is unavailable.|Verify whether your network is operational.|  
 |A website identity for Azure DevOps Server is configured incorrectly.|Verify or correct the server binding assignments that are made to websites for Azure DevOps Server. |

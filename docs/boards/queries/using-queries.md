@@ -1,7 +1,7 @@
 ---
 title: Define a work item query in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices.
+description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink, or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices.
 ms.custom: boards-queries, linked-from-support, cross-project, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 08/10/2023
+ms.date: 09/06/2024
 ---
 
 # Define a work item query in Azure Boards
@@ -23,8 +23,7 @@ Work item queries generate lists of work items based on the filter criteria prov
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
 ::: moniker-end
 
-
-Check out our recommended best practices, later in this article.
+Check out our recommended [best practices](#best-practices), later in this article.
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -33,10 +32,8 @@ Check out our recommended best practices, later in this article.
 From the Query Editor, you can select the filter to jump to an article with sample queries. 
 Along with the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).
 
-::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
 > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work item search](../../project/search/functional-work-item-search.md).
-::: moniker-end
 
 ---
 :::row:::
@@ -123,17 +120,17 @@ Modify the **Values** and [add or remove clauses](#define-a-clause), or change t
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend using the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. This view is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
-Select **New Query** from the **Work Items** page. 
+1. Select **New Query** from the **Work Items** page. 
 
-:::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
+   :::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
 
-The Query Editor displays with the following default settings: **Flat list (Default)**, **Team Project=current project**, **Work Item Type=[Any]**, and **State=[Any]**. 
+   The Query Editor displays with the following default settings: **Flat list (Default)**, **Team Project=current project**, **Work Item Type=[Any]**, and **State=[Any]**. 
 
-:::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
+   :::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
 
-You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies).
+2. Modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies).
 
 ---
 
@@ -221,12 +218,9 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 ### Checklist for defining a query clause
 
 1. In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list. For more information, see [Query Fields and Values](query-operators-variables.md#field-values).
-
 2. In the same row, under the **Operator** column heading, select the down arrow to display the list of available operators, and then choose an item in the list. For more information, see [Operators](query-operators-variables.md#operators).
-
 3. In the same row, under the **Value** column heading, either enter a value, or select the down arrow, and then choose an item in the list. For more information about how to use a macro or variable to specify the current project, user, date, or other selection, see [Variables](query-operators-variables.md#variables).
-
-5. To add a clause, choose **Add new clause**.
+4. To add a clause, choose **Add new clause**.
 
 	You can add a clause to the end of the query, or perform the following tasks with the corresponding icons: 
 	- :::image type="icon" source="../media/icons/add-green-icon.png" border="false"::: **Insert new filter line**
@@ -355,7 +349,16 @@ If your query results don't return expected results, do the following steps:
 
 To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
----
+## Set default column width in query results
+
+To set the default column width in query results, do the following steps:
+
+1. Open the query you want to modify.
+2. Manually adjust the column widths to your desired size by dragging the edges of the column headers.
+3. Select **Save** or **Save As** if you want to save it as a new query.
+4. Close and reopen the query to ensure that the column widths are retained.
+
+Azure DevOps doesn't currently support setting a default column width that persists across all sessions. The column widths are saved per query, so you need to adjust and save them for each query individually.
 
 ## View query results in a dashboard 
 
@@ -481,7 +484,7 @@ The `Contains` operator runs a table scan, which is a slower operation than the 
 
 The `In Group` operator filters work items based on matches within a group of values. The group of values correspond to the values contained within a team, security group, or [work tracking category](../work-items/agile-glossary.md#categories). For example, you can create a query to find all work items that are assigned to any member of a team. Or, find all work items that belong to the requirements category (`Microsoft.RequirementCategory`). 
 
-When you filter on a group that contains a large number of members, your result set tends to be larger and nonselective.  Also, if a group corresponds to a large Microsoft Entra group, the query generates a fairly large cost to resolve that group from Microsoft Entra ID.  
+When you filter on a group that contains a large number of members, your result set tends to be larger and nonselective. Also, if a group corresponds to a large Microsoft Entra group, the query generates a fairly large cost to resolve that group from Microsoft Entra ID.  
 
 ### Avoid use of negated operators 
 

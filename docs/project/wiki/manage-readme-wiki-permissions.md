@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ai-usage: ai-assisted
-ms.date: 08/19/2024
+ms.date: 09/06/2024
 monikerRange: "<=azure-devops"
 ---
 
@@ -37,7 +37,7 @@ If you don't have access to create a wiki page, contact an Administrator, who ca
 
 ## Grant Edit permissions to an individual or group
 
-Do the following steps to grant *Edit* permissions to an individual or group.
+To grant *Edit* permissions to an individual or group, do the following steps.
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).
 2. Select **Wiki** > :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** > **Wiki security**.
@@ -45,11 +45,11 @@ Do the following steps to grant *Edit* permissions to an individual or group.
   > [!div class="mx-imgBorder"]  
   > ![Screenshot of Wiki, Choose More, select security.](media/wiki/wiki-open-security.png)
 
-3. Select **Add**.
-4. Enter the name of the user or group you want to grant permissions to and select the user or group from the search results.
+1. Select **Add**. If this button isn't available, check your [permissions](../../organizations/security/about-permissions.md).
+2. Enter the name of the user or group you want to grant permissions to and select the user or group from the search results.
    After you add the user or group, they're listed in the Wiki security pane.
-5. To grant *Edit* permissions, set the **Contribute permission** to **Allow**.
-6. **Save** the changes.
+3. To grant *Edit* permissions, set the **Contribute permission** to **Allow**.
+4. **Save** the changes.
 
 ### Other considerations
 
