@@ -240,6 +240,10 @@
     {
       "source_path_from_root": "/docs/pipelines/migrate/from-classic-pipelines.md",
       "redirect_url": "/azure/devops/pipelines/release/from-classic-pipelines"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/build/history.md",
+      "redirect_url": "/azure/devops/pipelines/release/history"
     }
   ]
 }

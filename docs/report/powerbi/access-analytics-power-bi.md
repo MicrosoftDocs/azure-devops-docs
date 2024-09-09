@@ -8,7 +8,7 @@ ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/08/2024
+ms.date: 09/06/2024
 ---
 
 # Connect to Analytics data using the Power BI OData feed
@@ -47,7 +47,7 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 5. In a supported browser, enter the URL in the following format 
 `https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/`.  
 
-   For example, if {*OrganizationName*} is **fabrikam** and {*version*} is **v1.0**, the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
+   For example, if {*OrganizationName*} is **fabrikam** and {*version*} is **v1.0**, the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`. The version you should use depends on the [latest supported version for Analytics OData](../extend-analytics/odata-api-version.md).
 
     :::image type="content" source="media/pbi3.png" alt-text="Screenshot of Enter OData Feed URL.":::
 
