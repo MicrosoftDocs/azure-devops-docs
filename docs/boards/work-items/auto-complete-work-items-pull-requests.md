@@ -7,7 +7,7 @@ ms.custom: cross-service
 ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/02/2024
+ms.date: 09/09/2024
 ---
 
 
@@ -40,7 +40,7 @@ As shown in the following image, check the box to **Complete linked work items a
 In the following circumstances, the system doesn't automatically update the work item state to **Done**, **Closed**, or **Completed** categories for the work item type (WIT): 
 - The work item, whose WIT is managed with the Inheritance process model, is already in the **Resolved** state. In this instance, the system doesn't update the State. For example, if a bug derived from the Agile process is in a **Resolved** state, the system doesn't transition it to **Closed**.   
 - The work item is already in the **Completed** state. No further transition is required. 
-- The WIT includes workflow field rules that prevent the work item from advancing to the next state. For instance, a rule might require that another field be defined when closing the work item. 
+- The WIT includes workflow field rules that prevent the work item from advancing to the next state. For instance, a rule might require that another field gets defined when closing the work item. 
 - For on-premises deployments and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. For more information, see [Change the workflow for a WIT, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
 
 For more information, see [Customize your work tracking experience](../../reference/customize-work.md). 
@@ -59,11 +59,20 @@ To transition a work item to a specific workflow state, you can enter the inform
 
 ::: moniker range=">= azure-devops-2020"
 
-The following example shows user stories that have transitioned - one to the **Resolved** state and the other to the **Review** state. Also, two tasks are marked as **Done**. 
+The following example shows user stories that transitioned - one to the **Resolved** state and the other to the **Review** state. Also, two tasks are marked as **Done**. 
 
 :::image type="content" source="media/automate-state-transition/pull-request-set-workflow-state-to-transition-to.png" alt-text="Screenshot of pull request, set workflow state to transition #ID work items.":::
 
 ::: moniker-end 
+
+## Disable automatic completion of associated work items
+
+To disable the automatic completion of associated work items when users complete a pull request, follow these steps:
+
+1. Go to **Project settings** > **Repositories** > select the repository.
+2. In the **Settings** tab, move the toggle to **Off** for **Commit mention work item resolution**.
+
+Mentions in commit comments to close work items (for example, "Fixes #123") isn't allowed.
 
 ## Related articles
 
