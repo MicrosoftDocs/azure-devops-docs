@@ -51,9 +51,6 @@ Use the following queries to view the test summary of a pipeline for a **Build**
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
-```
-The query you provided is mostly correct, but it has a minor issue with the placement of double quotes and concatenation. Here is the corrected version:
-
 ```markdown
 let
    Source = OData.Feed (
