@@ -73,7 +73,6 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 - [Deploy to different stages from multiple branches using Classic release pipelines](/azure/devops/pipelines/release/deploy-multiple-branches)
 - [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
 - [Manage pipelines with the Azure DevOps CLI](/azure/devops/pipelines/get-started/manage-pipelines-with-azure-cli)
-- [Title not found in: #6969](/azure/devops/pipelines/library/task-groups.md)
 - [Customize your pipeline](/azure/devops/pipelines/customize-pipeline)
 - [Task types & usage](/azure/devops/pipelines/process/tasks)
 
