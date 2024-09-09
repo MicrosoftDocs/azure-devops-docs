@@ -20,7 +20,6 @@ ms.date: 11/22/2023
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. **Analytics views** only support Azure Boards data (work items). Analytics views don't support other data types, such as pipelines and tests.  Each view corresponds to a flat-list of work items. Work item hierarchies aren't supported. 
 
-
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 You can use a default Analytics view or [create a custom view](analytics-views-create.md). You create custom views in the web portal for Azure DevOps. Once you define a view that supports the data of interest, you can then open the view using [Power BI Data Connector](data-connector-connect.md) to create a report. 
@@ -30,7 +29,6 @@ You can use a default Analytics view or [create a custom view](analytics-views-c
 Users with Stakeholder access have no access to view or edit Analytics views.
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
-
 
 ## Default Analytics views
 
@@ -111,7 +109,6 @@ Two fields that are reported on are only available from Analytics data, Cycle Ti
 
 For more information on how the dataset is modeled when using the Power BI Data Connector, see [Analytics views dataset design](data-connector-dataset.md).
 
-
 <a id="q-a"> </a>
 
 ## Next steps
@@ -124,6 +121,6 @@ For more information on how the dataset is modeled when using the Power BI Data 
 - [Manage Analytics views](analytics-views-manage.md) 
 - [Create a Power BI report with a default Analytics view](create-quick-report.md) 
 - [Connect to Analytics with Power BI Data Connector](data-connector-connect.md)
-- [Data available from Analytics](data-available-in-analytics.md) 
-- [Wiql to OData Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
-- [What is Power BI Desktop?](/power-bi/fundamentals/desktop-what-is-desktop) 
+- [Expedite work using swimlanes](../../boards/boards/expedite-work.md)
+- [Manage columns on your board](../../boards/boards/add-columns.md)
+- [Query by account, use, workflow, or board changes](../../boards/queries/query-by-workflow-changes.md)
