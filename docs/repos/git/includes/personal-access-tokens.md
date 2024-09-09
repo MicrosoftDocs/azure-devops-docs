@@ -103,9 +103,9 @@ In Bash, enter the following code.
 
 ```bash
 MY_PAT=yourPAT # replace "yourPAT" with "PatStringFromWebUI"
-HEADER_VALUE=$(echo -n "Authorization: Basic " $(printf ":%s" "$MY_PAT" | base64))
+export HEADER_VALUE=$(echo -n "Authorization: Basic " $(printf ":%s" "$MY_PAT" | base64))
 
-git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+git --config-env=http.extraheader=$HEADER_VALUE clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
