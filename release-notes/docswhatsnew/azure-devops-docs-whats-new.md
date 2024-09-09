@@ -94,7 +94,6 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 - [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
 - [Manage pipelines with the Azure DevOps CLI](/azure/devops/pipelines/get-started/manage-pipelines-with-azure-cli)
 - [Pipeline default branch](/azure/devops/pipelines/process/pipeline-default-branch)
-- [Title not found in: #6969](/azure/devops/pipelines/library/task-groups.md)
 - [Customize your pipeline](/azure/devops/pipelines/customize-pipeline)
 - [Task types & usage](/azure/devops/pipelines/process/tasks)
 - [Register an agent using a service principal](/azure/devops/pipelines/agents/service-principal-agent-registration)
