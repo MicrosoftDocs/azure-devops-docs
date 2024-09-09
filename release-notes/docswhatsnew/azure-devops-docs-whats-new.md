@@ -12,13 +12,23 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 
 ### Updated articles
 
+- [Security groups, service accounts, and permissions reference](/azure/devops/organizations/security/permissions)
 - [Add an Active Directory / Microsoft Entra group to a built-in security group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups)
+- [Use personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
 - [About area and iteration paths](/azure/devops/organizations/settings/about-areas-iterations)
+- [About pipeline security roles](/azure/devops/organizations/security/about-security-roles)
 - [Work tracking, process, and project limits](/azure/devops/organizations/settings/work/object-limits)
+- [Use policies to manage personal access tokens for users](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators)
+- [Change permissions at the organization or collection-level](/azure/devops/organizations/security/change-organization-collection-level-permissions)
+- [Buy access to Azure Test Plans](/azure/devops/organizations/billing/buy-access-tfs-test-hub)
+- [Customize a project using an inherited process](/azure/devops/organizations/settings/work/customize-process)
 - [About permissions and security groups](/azure/devops/organizations/security/about-permissions)
 - [Security best practices](/azure/devops/organizations/security/security-best-practices)
+- [Apply rules to workflow states (Inheritance process)](/azure/devops/organizations/settings/work/apply-rules-to-workflow-states)
 - [Rename or remove a team](/azure/devops/organizations/settings/rename-remove-team)
 - [Data protection overview](/azure/devops/organizations/security/data-protection)
+- [Add a user who can manage billing](/azure/devops/organizations/billing/add-backup-billing-managers)
+- [Find or change your organization geography](/azure/devops/organizations/accounts/change-organization-location)
 - [Define iteration paths (sprints) and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints)
 
 ## Artifacts
@@ -35,11 +45,14 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 - [Connect Azure Boards to GitHub (cloud)](/azure/devops/boards/github/connect-to-github)
 - [Link GitHub commits, pull requests, and issues to work items in Azure Boards](/azure/devops/boards/github/link-to-from-github)
 - [Add or modify work items in bulk with Microsoft Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)
+- [Field descriptions for default and work item fields used in process templates](/azure/devops/boards/work-items/guidance/work-item-field)
 - [Use Azure Boards in Microsoft Teams](/azure/devops/boards/integrations/boards-teams)
+- [FAQs about working in Excel connected to Azure Boards](/azure/devops/boards/backlogs/office/faqs)
 - [Resolve Azure DevOps and Office integration issues](/azure/devops/boards/backlogs/office/tfs-office-integration-issues)
+- [About workflow states in backlogs and boards](/azure/devops/boards/work-items/workflow-and-state-categories)
+- [Install the Azure Boards app for GitHub](/azure/devops/boards/github/install-github-app)
 - [Import & update bulk work items with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
 - [Manage columns on your board](/azure/devops/boards/boards/add-columns)
-- [FAQs about working in Excel connected to Azure Boards](/azure/devops/boards/backlogs/office/faqs)
 
 ## Azure DevOps Reporting and Analytics service
 
@@ -47,6 +60,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 
 - [Design effective dashboards in Azure DevOps](/azure/devops/report/dashboards/dashboard-focus)
 - [View and configure team velocity](/azure/devops/report/dashboards/team-velocity)
+- [Connect Analytics with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect)
 
 ## Azure Pipelines
 
@@ -58,11 +72,15 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 ### Updated articles
 
 - [Template parameters](/azure/devops/pipelines/process/template-parameters)
+- [Define approvals and checks](/azure/devops/pipelines/process/approvals)
 - [Manually set an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/configure-workload-identity)
+- [Add users to Azure Pipelines](/azure/devops/pipelines/policies/set-permissions)
+- [Publish and download build artifacts](/azure/devops/pipelines/artifacts/build-artifacts)
 - [Integrate Azure Pipelines with ServiceNow change management](/azure/devops/pipelines/release/approvals/servicenow)
 - [Deploy web apps to an IIS server on a Windows VM](/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups)
 - [Provision agents for deployment groups](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents)
 - [Use deployment groups in Classic release pipelines](/azure/devops/pipelines/release/deployment-groups/index)
+- [Define your Classic pipeline](/azure/devops/pipelines/release/define-multistage-release-process)
 - [Use variables in Classic release pipelines](/azure/devops/pipelines/release/variables)
 - [Add stages, dependencies, & conditions](/azure/devops/pipelines/process/stages)
 - [Manage variable groups](/azure/devops/pipelines/library/variable-groups)
@@ -71,11 +89,16 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 - [Use Docker YAML to build and push Docker images to Azure Container Registry](/azure/devops/pipelines/ecosystems/containers/acr-template)
 - [Build, test, and deploy Xcode apps](/azure/devops/pipelines/ecosystems/xcode)
 - [Deploy to different stages from multiple branches using Classic release pipelines](/azure/devops/pipelines/release/deploy-multiple-branches)
+- [Pipeline caching](/azure/devops/pipelines/release/caching)
+- [Troubleshoot pipeline triggers](/azure/devops/pipelines/troubleshooting/troubleshoot-triggers)
 - [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
 - [Manage pipelines with the Azure DevOps CLI](/azure/devops/pipelines/get-started/manage-pipelines-with-azure-cli)
+- [Pipeline default branch](/azure/devops/pipelines/process/pipeline-default-branch)
 - [Title not found in: #6969](/azure/devops/pipelines/library/task-groups.md)
 - [Customize your pipeline](/azure/devops/pipelines/customize-pipeline)
 - [Task types & usage](/azure/devops/pipelines/process/tasks)
+- [Register an agent using a service principal](/azure/devops/pipelines/agents/service-principal-agent-registration)
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
 
 ## Azure Repos
 
@@ -86,8 +109,10 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 ### Updated articles
 
 - [Git FAQs](/azure/devops/repos/git/howto)
+- [Git limits](/azure/devops/repos/git/limits)
 - [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
 - [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
+- [Create pull requests](/azure/devops/repos/git/pull-requests)
 
 ## Azure Test Plans
 
@@ -105,6 +130,8 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 
 ### New articles
 
+- [Demands](/azure/devops/managed-devops-pools/demands)
+- [Frequently asked questions](/azure/devops/managed-devops-pools/faq)
 - [Microsoft Managed DevOps Pools architecture overview](/azure/devops/managed-devops-pools/architecture-overview)
 - [Configure Managed DevOps Pools identity](/azure/devops/managed-devops-pools/configure-identity)
 - [Configure Managed DevOps Pools images](/azure/devops/managed-devops-pools/configure-images)
@@ -113,15 +140,17 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 - [Configure scaling](/azure/devops/managed-devops-pools/configure-scaling)
 - [Configure Managed DevOps Pools security settings](/azure/devops/managed-devops-pools/configure-security)
 - [Configure storage](/azure/devops/managed-devops-pools/configure-storage)
-- [Demands](/azure/devops/managed-devops-pools/demands)
 - [Diagnostics logs](/azure/devops/managed-devops-pools/diagnostics)
-- [Frequently asked questions](/azure/devops/managed-devops-pools/faq)
 - [Managed DevOps Pools documentation](/azure/devops/managed-devops-pools/index)
 - [Manage cost and performance](/azure/devops/managed-devops-pools/manage-costs)
 
 ### Updated articles
 
+- [Create your first Managed DevOps Pool](/azure/devops/managed-devops-pools/quickstart-azure-portal)
 - [Prerequisites for Managed DevOps Pools](/azure/devops/managed-devops-pools/prerequisites)
+- [Demands](/azure/devops/managed-devops-pools/demands)
+- [Frequently asked questions](/azure/devops/managed-devops-pools/faq)
+- [Overview](/azure/devops/managed-devops-pools/overview)
 
 ## Project
 
@@ -129,7 +158,10 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 
 - [Manage wiki permissions](/azure/devops/project/wiki/manage-readme-wiki-permissions)
 - [Functional code search](/azure/devops/project/search/functional-code-search)
+- [Functional work item search](/azure/devops/project/search/functional-work-item-search)
 - [Get started with search](/azure/devops/project/search/get-started-search)
+- [Provisioned wiki vs. published as code wiki](/azure/devops/project/wiki/provisioned-vs-published-wiki)
+- [Use Markdown in Azure DevOps](/azure/devops/project/wiki/markdown-guidance)
 
 ## Service-hooks
 
