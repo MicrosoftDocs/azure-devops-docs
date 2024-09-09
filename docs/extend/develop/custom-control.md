@@ -8,16 +8,26 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/14/2022
+ms.date: 09/09/2024
 ---
 
 # Add a custom control to the work item form
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Custom controls allow you to change how users view and interact with a field on the work item form. The following article walks you through how this sample custom control was built.  Learn how to build your own custom control.
+Custom controls allow you to change how users view and interact with a field on the work item form. The following article walks you through how this sample custom control was built. This article shows you how to build your own custom control.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
+## Prerequisites
+
+Include the azure-devops-extension-sdk in your project:
+    1. Install the SDK via npm: `npm install azure-devops-extension-sdk`.
+    2. Initialize it in your JavaScript code: 
+    ```javascript
+    import * as SDK from "azure-devops-extension-sdk";
+    SDK.init();
+    ```
 
 ## Add the custom control
 
@@ -39,7 +49,11 @@ and it should target the `ms.vss-work-web.work-item-form` contribution.
             "height": 600
         }
     }
-]
+],
+"manifestVersion": 1.0,
+    "scopes": [
+        "vso.work"
+    ]
 ```
 
 The work item form adds an IFrame to host the custom control.
@@ -82,6 +96,7 @@ The values for the inputs get provided by the users when they add to the work it
     {
         "id": "Colors",
         "description": "The colors that match the values in the control.",
+        "type": "string",
         "validation": {
             "dataType": "String",
             "isRequired": false
@@ -129,28 +144,33 @@ A control extension works like a group or page extension with one difference tha
 
 ```typescript
 import { Control } from "control";
-import * as ExtensionContracts from "TFS/WorkItemTracking/ExtensionContracts";
+import * as SDK from "azure-devops-extension-sdk";
+import * as ExtensionContracts from "azure-devops-extension-api/WorkItemTracking/WorkItemTracking";
 
-var control: Control;
+let control;
 
-var provider = () => {
+const provider = () => {
     return {
-        onLoaded: (workItemLoadedArgs: ExtensionContracts.IWorkItemLoadedArgs) => {
+        onLoaded: (workItemLoadedArgs) => {
             // create the control
-            var fieldName = VSS.getConfiguration().witInputs["FieldName"];
-            var colors = VSS.getConfiguration().witInputs["Colors"];
+            const config = SDK.getConfiguration();
+            const fieldName = config.witInputs["FieldName"];
+            const colors = config.witInputs["Colors"];
             control = new Control(fieldName, colors);
         },
-        onFieldChanged: (fieldChangedArgs: ExtensionContracts.IWorkItemFieldChangedArgs) => {
-            var changedValue = fieldChangedArgs.changedFields[control.getFieldName()];
+        onFieldChanged: (fieldChangedArgs) => {
+            const changedValue = fieldChangedArgs.changedFields[control.getFieldName()];
             if (changedValue !== undefined) {
                 control.updateExternal(changedValue);
             }
         }
-    }
+    };
 };
 
-VSS.register(VSS.getContribution().id, provider);
+SDK.init();
+SDK.ready().then(() => {
+    SDK.register(SDK.getContributionId(), provider);
+});
 ```
 
 The following screenshot shows a sample custom work item control for the *Priority* field.
