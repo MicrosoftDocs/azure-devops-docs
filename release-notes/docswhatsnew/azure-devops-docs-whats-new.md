@@ -130,27 +130,22 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2024 through Augus
 
 ### New articles
 
-- [Demands](/azure/devops/managed-devops-pools/demands)
-- [Frequently asked questions](/azure/devops/managed-devops-pools/faq)
+- [Managed DevOps Pools documentation](/azure/devops/managed-devops-pools/index)
+- [Overview](/azure/devops/managed-devops-pools/overview)
 - [Microsoft Managed DevOps Pools architecture overview](/azure/devops/managed-devops-pools/architecture-overview)
-- [Configure Managed DevOps Pools identity](/azure/devops/managed-devops-pools/configure-identity)
-- [Configure Managed DevOps Pools images](/azure/devops/managed-devops-pools/configure-images)
-- [Configure Managed DevOps Pools networking](/azure/devops/managed-devops-pools/configure-networking)
+- [Prerequisites for Managed DevOps Pools](/azure/devops/managed-devops-pools/prerequisites)
+- [Create your first Managed DevOps Pool](/azure/devops/managed-devops-pools/quickstart-azure-portal)
 - [Configure pool settings](/azure/devops/managed-devops-pools/configure-pool-settings)
 - [Configure scaling](/azure/devops/managed-devops-pools/configure-scaling)
-- [Configure Managed DevOps Pools security settings](/azure/devops/managed-devops-pools/configure-security)
+- [Configure Managed DevOps Pools networking](/azure/devops/managed-devops-pools/configure-networking)
 - [Configure storage](/azure/devops/managed-devops-pools/configure-storage)
-- [Diagnostics logs](/azure/devops/managed-devops-pools/diagnostics)
-- [Managed DevOps Pools documentation](/azure/devops/managed-devops-pools/index)
-- [Manage cost and performance](/azure/devops/managed-devops-pools/manage-costs)
-
-### Updated articles
-
-- [Create your first Managed DevOps Pool](/azure/devops/managed-devops-pools/quickstart-azure-portal)
-- [Prerequisites for Managed DevOps Pools](/azure/devops/managed-devops-pools/prerequisites)
+- [Configure Managed DevOps Pools images](/azure/devops/managed-devops-pools/configure-images)
+- [Configure Managed DevOps Pools security settings](/azure/devops/managed-devops-pools/configure-security)
+- [Configure Managed DevOps Pools identity](/azure/devops/managed-devops-pools/configure-identity)
 - [Demands](/azure/devops/managed-devops-pools/demands)
+- [Diagnostics logs](/azure/devops/managed-devops-pools/diagnostics)
+- [Manage cost and performance](/azure/devops/managed-devops-pools/manage-costs)
 - [Frequently asked questions](/azure/devops/managed-devops-pools/faq)
-- [Overview](/azure/devops/managed-devops-pools/overview)
 
 ## Project
 
