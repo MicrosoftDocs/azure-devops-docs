@@ -12,8 +12,9 @@
         "Microsoft",
         "MicrosoftDocs"
       ],
-      "minAdditionsToFile": 10,
-      "omitPullRequestTitles": true
+      "minAdditionsToFile": 25,
+      "omitPullRequestTitles": true,
+      "maxFilesChanged": 1000
     },
     "areas": [
       {
