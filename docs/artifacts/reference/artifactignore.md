@@ -1,23 +1,21 @@
 ---
 title: Use the .artifactignore file
-description: Use .artifactignore to exclude files and folders when you publish Artifacts
+description: Learn how to use the .artifactignore file to exclude specific files and folders when publishing artifacts in Azure Pipelines.
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
 ms.service: azure-devops-artifacts
 ms.topic: reference
-ms.date: 01/26/2022
+ms.date: 09/09/2024
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Use .artifactignore
+# Use the .artifactignore file
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-The *.artifactignore* is a text file that controls which files are uploaded when you publish a Universal Package or a Pipeline Artifact.
+The `artifactignore` file works similarly to a `gitignore` file but serves a different purpose. Instead of specifying files to be ignored by Git, it is used in Azure Pipelines to control which files are excluded when publishing pipeline artifacts or Universal Packages. This file can help reduce your pipeline execution and improve its efficiency by preventing unnecessary files from being copied into the staging directory before publishing.
 
-*.artifactignore* is typically checked into your version control repository and the syntax is similar to that of *.gitignore*.
-
-Using the *.artifactignore* file can help reduce your pipeline execution time by avoiding copying files into your staging directory before publishing your artifacts.
+The *artifactignore* file has a similar syntax to that of a *gitignore* file and is typically stored in your version control system. However, unlike *gitignore*, the *artifactignore* file doesn't always need to be in the root of your repository. Its location depends on the path specified in the publish task. If placed incorrectly, the task won't recognize it, leading to unintended results. For example, if the path is *$(System.DefaultWorkingDirectory)/bin/artifacts*, the *artifactignore* file should be placed in the */bin/artifacts* directory.
 
 ## Example
 
