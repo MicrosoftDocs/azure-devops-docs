@@ -35,8 +35,8 @@
   - name: Informational runs
     href: process/information-run.md
     displayName: information run
-  - name: Build history
-    href: build/history.md
+  - name: View pipeline history (Classic)
+    href: release/history.md
 - name: Pipeline structure & logic
   items:
   - name: Repositories
@@ -294,6 +294,9 @@
     - name: Cache NuGet packages
       displayName: caching, cache
       href: artifacts/caching-nuget.md
+    - name: View pipeline history (Classic)
+      href: release/history.md
+      displayName: history
     - name: Classic Build options
       displayName: classic build, build options
       href: release/options.md
