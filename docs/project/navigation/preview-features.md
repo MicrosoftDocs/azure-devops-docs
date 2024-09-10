@@ -110,7 +110,7 @@ The following table shows the features you can turn on or off based on your role
 
 ::: moniker-end
 
-::: moniker-range="azure-devops-2022"
+::: moniker range="azure-devops-2022"
 
 You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
 
@@ -124,7 +124,7 @@ You can turn on or off the [Selective artifacts download feature for collection/
 ::: moniker-end
 
 
-::: moniker-range=">= azure-devops-2022"
+::: moniker range=">= azure-devops-2022"
 
 ## Pull request summary - Load of large files
 
