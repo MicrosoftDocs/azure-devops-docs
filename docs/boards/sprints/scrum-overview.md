@@ -247,5 +247,3 @@ If you work with several teams, and each team wants their own backlog view, you 
 - [Navigate the web portal](../../project/navigation/index.md)
 - [Manage backlogs, portfolios, and Agile projects](../backlogs/backlogs-overview.md)
 - [Understand work items](../work-items/about-work-items.md)
-- [Learn what Scrum is](https://devops/plan/what-is-scrum)
-- [Learn what Agile development is](https://devops/plan/what-is-agile-development)

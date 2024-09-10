@@ -23,8 +23,8 @@ Custom controls allow you to change how users view and interact with a field on 
 
 Include the azure-devops-extension-sdk in your project:
 
-    1. Install the SDK via npm: `npm install azure-devops-extension-sdk`.
-    2. Initialize it in your JavaScript code: 
+1. Install the SDK via npm: `npm install azure-devops-extension-sdk`.
+2. Initialize it in your JavaScript code: 
 
     ```javascript
     import * as SDK from "azure-devops-extension-sdk";
