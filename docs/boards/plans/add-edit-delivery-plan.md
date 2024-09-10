@@ -15,25 +15,27 @@ ms.date: 05/30/2024
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
-Delivery Plans provide a highly interactive calendar view of multiple team backlogs. In this article, learn how to add and edit a plan. For the use cases, benefits, and interactions you can do, see [Review team Delivery Plans](review-team-plans.md).
+Delivery Plans provide a highly interactive calendar view of multiple team backlogs. This article shows how to add and edit a plan. For the use cases, benefits, and interactions you can do, see [Review team Delivery Plans](review-team-plans.md).
 
 > [!NOTE]   
 > This article describes how to add or edit Delivery Plans 2.0 which is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. For information on the Delivery Plans Marketplace extension which supports Azure DevOps Server 2020 and earlier versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md).
 
 ## Prerequisites
 
-- To add or edit a Delivery Plan, you must be a member of the **Contributors** group for the project where you add the plan. 
-- To add team backlogs to a plan, you must have **View** permissions to those projects. 
-- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.
-- To manage permissions, edit, or delete a plan, you must be the creator of the plan. Or, you must be a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md).
-- The following elements must be configured before you can create a plan:
-  - [Teams and team backlogs](../../organizations/settings/add-teams.md).
-  - [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
-  - [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md).
-  - [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
-  	- **Iteration Paths** must be assigned **Start** and **End Dates** or they don't appear on the plan. 
-  	- Also, **Iteration Paths** must be selected for the team whose backlogs you select, or work items associated with those **Iteration Paths** don't appear on the plan.   
-  - Each team must have [product backlog items](../backlogs/create-your-backlog.md), or [portfolio backlogs](../backlogs/define-features-epics.md) defined and assigned those items to either a **Start Date** and **End Date** or an **Iteration Path**.
+- **Permissions:**
+  - To add or edit a Delivery Plan, be a member of the **Contributors** group for the project where you add the plan. 
+  - To add team backlogs to a plan, have **View** permissions to those projects. 
+  - To view a Delivery Plan, be a member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.
+  - To manage permissions, edit, or delete a plan, be the creator of the plan, or a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md).
+
+- **Configuration:**:
+  - Set up [teams and team backlogs](../../organizations/settings/add-teams.md).
+  - Enable [team product or portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md). 
+  - Assign [area paths and team area paths](../../organizations/settings/set-area-paths.md).
+  - Assign [iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+  	- Assign **Iteration Paths** **Start** and **End Dates** or they don't appear on the plan. 
+  	- Select **Iteration Paths** for the team whose backlogs you select, or work items associated with those iteration paths don't appear on the plan.   
+  - Define [product backlog items](../backlogs/create-your-backlog.md) or [portfolio backlogs](../backlogs/define-features-epics.md) and assign those items to either a **Start Date** and **End Date** or an **Iteration Path**.
 
 <a id="teams"></a>
 
@@ -62,6 +64,8 @@ Delivery Plans provide a highly interactive calendar view of multiple team backl
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Dialog for New Delivery Plan.](media/plans/new-delivery-plan-dialog.png)  
+
+For more information, see [Query fields, operators, and macros in Azure Boards](../queries/query-operators-variables.md).
 
 <a id="field-criteria"></a>
 
@@ -194,10 +198,11 @@ Before you set tag colors, [add tags to backlog items](../queries/add-tags-to-wo
 
 ## Related articles  
 <a id="plans-rest-api">  </a>
-- [Use the REST API to manage Delivery Plans](/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0&preserve-view=true ).
+
+- [Manage Delivery Plans using the REST API](/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0&preserve-view=true)
 - [Review team plans](review-team-plans.md)
-- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
-- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)    
-- [Add teams](../../organizations/settings/add-teams.md)  
-- [Portfolio management](portfolio-management.md)
+- [Filter backlogs, boards, queries, and plans interactively](../backlogs/filter-backlogs-boards-plans.md)
+- [Understand backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
+- [Add teams](../../organizations/settings/add-teams.md)
+- [Manage portfolio](portfolio-management.md)
  

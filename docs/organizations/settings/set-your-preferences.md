@@ -21,18 +21,19 @@ You can set user preferences on the user profile page in Azure DevOps. Changes c
 > [!TIP]
 > - To change the settings for your work or school account, see [Change work or school account settings in the My Account portal](https://support.microsoft.com/account-billing/change-work-or-school-account-settings-in-the-my-account-portal-e50bfccb-58e9-4d42-939c-a60cb6d56ced).
 > - You can't change the UI theme if you're using Internet Explorer. For more information about the browsers we support, see [Azure DevOps client compatibility](/azure/devops/server/compatibility?view=azure-devops&preserve-view=true).
-> - Language settings apply only to your profile page.
 
 See the following articles for setting other user preferences:
 
 - [Change time and locale](../accounts/change-time-zone.md#change-user-profile-time-zone): Change the preferred language, date and time patterns, and time zone.  
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md): Add or review subscriptions to event changes.  
-- [Refresh or re-evaluate your permissions](../security/troubleshoot-permissions.md#refresh-permissions): Use to refresh permissions and make any recent changes take effect.  
+- [Refresh or reevaluate your permissions](../security/troubleshoot-permissions.md#refresh-permissions): Use to refresh permissions and make any recent changes take effect.  
 - [Manage preview features](../../project/navigation/preview-features.md): Enable or disable a preview feature for your user account.  
 
+> [!NOTE]
+> Language settings apply only to your profile page and don't affect the UI language.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 On the Azure DevOps user profile page, you can change the user picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
 
@@ -44,7 +45,6 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-
 ## Set preferences
 
 ::: moniker range="azure-devops"
@@ -53,13 +53,13 @@ See the following articles for setting more user preferences:
 
    ![Screenshot to open Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
 
-2. From the **Profile** page, you can change the profile picture, display name, contact information, and country/region. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
+2. From the **Profile** page, you can change the profile picture, display name, contact information, and region. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
 
    ![Screenshot to choose and edit the Profile page.](media/edit-about-page-preview.png)
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 1. To change the user preferences, open the user profile menu, and then select **My profile**.
 
@@ -82,14 +82,12 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-
-
 User profile settings are updated.
 
 ## Related articles
 
-- [Time zone settings and usage](../settings/timezone-settings-usage.md)
-- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
-- [Usage](../../integrate/concepts/rate-limits.md)  
-- [Set favorites](../../organizations/notifications/manage-your-personal-notifications.md)  
-- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
+- [Set your time zone](../settings/timezone-settings-usage.md)
+- [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+- [Understand usage and rate limits](../../integrate/concepts/rate-limits.md)
+- [Set your favorites](../../organizations/notifications/manage-your-personal-notifications.md)
+- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
