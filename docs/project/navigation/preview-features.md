@@ -98,12 +98,8 @@ The following table shows the preview features you can turn on or off based on y
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
 
-
-::: moniker-end
-
-::: moniker range="= azure-devops-2020"
+::: moniker range="azure-devops-2020"
 
 The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
 
@@ -114,7 +110,7 @@ The following table shows the features you can turn on or off based on your role
 
 ::: moniker-end
 
-::: moniker-range="= azure-devops-2022"
+::: moniker-range="azure-devops-2022"
 
 You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
 
@@ -135,6 +131,7 @@ You can turn on or off the [Selective artifacts download feature for collection/
 Turns on a file content load experience for large files in the Pull request summary.
 
 ::: moniker-end
+
 
 ::: moniker range="azure-devops"
 
