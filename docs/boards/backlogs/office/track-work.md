@@ -27,7 +27,7 @@ To support your work tracking efforts, you can use Microsoft Excel. You can eith
 ## Supported Office clients and Azure DevOps versions
 
 The following table indicates the Office clients supported for each Azure DevOps version. 
-MacOS isn't supported. Even if you installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.
+macOS isn't supported. Even if you installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.
 
 ---
 
