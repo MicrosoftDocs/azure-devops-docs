@@ -84,7 +84,7 @@ The following table shows the preview features you can turn on or off based on y
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
 |New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
-|[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
+|[New Boards Hubs](../../boards/work-items/quick-ref.md) | ✔️ | ✔️ |
 |[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |
 | New Settings Search in the organization settings panel| ✔️ |✔️   |    
 |[New workflow identity authentication option](../../pipelines/library/connect-to-azure.md)| ✔️ | ✔️ |    
@@ -100,7 +100,12 @@ The following table shows the preview features you can turn on or off based on y
 
 ::: moniker range="< azure-devops"
 
-The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2020"
+
+The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
 
 |**Feature**|**User**|**Project** | **Collection**|
 |--------------------|--------------|-----------------||-----------------|
@@ -109,12 +114,29 @@ The following table shows the features you can turn on or off based on your role
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker-range="= azure-devops-2022"
+
+You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You can turn on or off the [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download) feature on a per project or collection basis.
+
+::: moniker-end
+
+
+::: moniker-range=">= azure-devops-2022"
 
 ## Pull request summary - Load of large files
 
 Turns on a file content load experience for large files in the Pull request summary.
 
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Experimental themes  
 
