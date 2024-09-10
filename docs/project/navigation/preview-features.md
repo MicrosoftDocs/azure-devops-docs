@@ -8,13 +8,13 @@ ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2020'
+monikerRange: '<= azure-devops'
 ms.date: 10/18/2023
 ---
 
 # Manage preview features 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -25,7 +25,7 @@ As some new features get introduced, you can turn them on or off. You can try th
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="< azure-devops"
 
 As some new features get introduced, you can turn them on or off. You can try them out, provide feedback, and work with the ones that meet your requirements. Some preview features provide access to new functionality, while others reflect a change to the user interface, but little or no change in functionality. 
 
@@ -46,7 +46,7 @@ Enabling a feature at the organization level activates it for all users. They ca
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="< azure-devops"
 
 1. Open your profile menu by choosing your image icon and select **Manage features**.  
 
@@ -80,7 +80,7 @@ The following table shows the preview features you can turn on or off based on y
 
 |**Preview features**|**Per user**|**Per organization**|
 |--------------------|--------------|-----------------|
-|[Pull Request Summary - Load of large files](#pull-request-summary)  | ✔️ |   |   
+|[Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files)  | ✔️ |   |   
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
 |New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
@@ -98,7 +98,7 @@ The following table shows the preview features you can turn on or off based on y
 
 ::: moniker-end
 
-:::moniker range="azure-devops-2020"
+::: moniker range="< azure-devops"
 
 The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
 
@@ -111,13 +111,10 @@ The following table shows the features you can turn on or off based on your role
 
 ::: moniker range="azure-devops"
 
-<a id="pull-request-summary">  </a>
-
 ## Pull request summary - Load of large files
 
 Turns on a file content load experience for large files in the Pull request summary.
 
-<a id="experimental-themes">  </a>
 
 ## Experimental themes  
 
