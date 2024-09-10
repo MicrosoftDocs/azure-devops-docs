@@ -17,9 +17,19 @@ The `artifactignore` file works similarly to a `gitignore` file but serves a dif
 
 The *artifactignore* file has a similar syntax to that of a *gitignore* file and is typically stored in your version control system. However, unlike *gitignore*, the *artifactignore* file doesn't always need to be in the root of your repository. Its location depends on the path specified in the publish task. If placed incorrectly, the task won't recognize it, leading to unintended results. For example, if the path is *$(System.DefaultWorkingDirectory)/bin/artifacts*, the *artifactignore* file should be placed in the */bin/artifacts* directory.
 
+> [!Note]
+> The artifactignore file does not work with the [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task, use the [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task instead.
+
+## Syntax
+
+The *.artifactignore* follows the same syntax as the [.gitignore](https://git-scm.com/docs/gitignore) with a few exceptions. The plus sign character `+` is not supported in URL paths, and certain package types, such as Maven, may have limitations with semantic versioning metadata.
+
+> [!Note]
+> By default, the *.gitignore* file is ignored unless you have an *.artifactignore* file. To include it, simply create an empty *.artifactignore* file.
+
 ## Example
 
-In the following example, we will be ignoring all files except the ones in the *src/MyApp/bin/Release* directory.
+In this example, all files will be ignored except for those located in the *src/MyApp/bin/Release* directory.
 
 ```artifactignore
 **/*
@@ -27,18 +37,11 @@ In the following example, we will be ignoring all files except the ones in the *
 ```
 
 > [!IMPORTANT]
-> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
+> The *.artifactignore* file must be placed in the directory specified in the `targetPath` argument in your [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
-## Syntax
-
-The *.artifactignore* follows the same syntax as the [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
-
-> [!Note]
-> The *.gitignore* file is ignored by default if you don't have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
-
-## Related articles
+## Related content
 
 - [Publish and download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
-- [Limits on package sizes and counts](limits.md)
-- [Package componentization](../collaborate-with-packages.md)
+- [Publish and download Universal Packages](../../pipelines/artifacts/universal-packages.md)
+- [Artifact sources](../../pipelines/release/artifacts.md)
 
