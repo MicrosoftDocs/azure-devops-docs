@@ -96,9 +96,6 @@ To access our Azure Key Vault, we need to set up a service principal to grant ac
 
 1. Review your policies, and then select **Create** when you're done.
 
-> [!NOTE]
-> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
-
 ## Add role assignment
 
 In the next step, we'll create an ARM service connection using service principal. Before we can verify the connection, we need to grant the service principal **Read** access at the subscription level:
