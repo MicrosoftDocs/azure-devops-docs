@@ -9,16 +9,16 @@ monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Use the .artifactignore file
+# Use the *.artifactignore* file
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-The `artifactignore` file works similarly to a `gitignore` file but serves a different purpose. Instead of specifying files to be ignored by Git, it is used in Azure Pipelines to control which files are excluded when publishing pipeline artifacts or Universal Packages. This file can help reduce your pipeline execution and improve its efficiency by preventing unnecessary files from being copied into the staging directory before publishing.
+The `artifactignore` file works similarly to a `gitignore` file but serves a different purpose. Instead of specifying files to be ignored by Git, it's used in Azure Pipelines to control which files are excluded when publishing pipeline artifacts or Universal Packages. This file can help reduce your pipeline execution and improve its efficiency by preventing unnecessary files from being copied into the staging directory before publishing.
 
 The *artifactignore* file has a similar syntax to that of a *gitignore* file and is typically stored in your version control system. However, unlike *gitignore*, the *artifactignore* file doesn't always need to be in the root of your repository. Its location depends on the path specified in the publish task. If placed incorrectly, the task won't recognize it, leading to unintended results. For example, if the path is *$(System.DefaultWorkingDirectory)/bin/artifacts*, the *artifactignore* file should be placed in the */bin/artifacts* directory.
 
 > [!Note]
-> The artifactignore file does not work with the [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task, use the [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task instead.
+> The *artifactignore* file does not work with the [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task, use the [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task instead.
 
 ## Syntax
 
