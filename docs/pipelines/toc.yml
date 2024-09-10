@@ -449,7 +449,7 @@
       displayName: artifacts, source, release artifacts
       href: release/artifacts.md
     - name: Use the .artifactignore file
-      href: ../artifacts/reference/artifactignore.md
+      href: ../artifacts/reference/artifactignore.md?toc=/azure/devops/pipelines/toc.json
       displayName: artifactignore, gitignore
     - name: NuGet
       items:
