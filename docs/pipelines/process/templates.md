@@ -362,20 +362,6 @@ In the following templates:
 - The `stage-template.yml` template defines four parameters: stageName, jobName, vmImage, and scriptPath, all of type string. The template creates a stage using the `stageName` parameter to set the stage name, defines a job with `jobName`, and includes a step to run a script. 
 - The pipeline, `azure-pipeline.yml`, then dynamically define stages and jobs using parameters and runs a job that executes a script, `build-script.sh`.
 
-# azure-pipelines.yml
-trigger:
-- main
-
-stages:
-- template: stage-template.yml
-  parameters:
-    stageName: 'BuildStage'
-    jobName: 'BuildJob'
-    scriptPath: 'build-script.sh' # replace with script in your repository
-    vmImage: 'ubuntu-latest'
-in the foll
-
-
 
 ```yaml
 # stage-template.yml
