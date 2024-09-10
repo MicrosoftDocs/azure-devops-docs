@@ -122,7 +122,7 @@ sections:
         answer: | 
           The best way to view work item dependencies are to use **Delivery Plans** as described in [Track dependencies](../../boards/plans/track-dependencies.md). To view dependencies in a dashboard, you can add a query results widget that lists a direct links query. 
 
-      - question: What charts or widgets support PERT or Gannt charts? 
+      - question: What charts or widgets support PERT or Gantt charts? 
         answer: | 
           Two project management tools in wide use are  Program Evaluation Review Technique (PERT) charts and Gantt charts. PERT charts provide support for calculating the amount of time it will take to realistically finish a project.  Horizontal bar charts developed by Henry Gantt provide support for visualizing project schedules. Azure DevOps doesn't provide native support for either PERT or Gantt charts. However, it does provide the following tools and extensions that support visualizing schedules and dependencies:  
           ::: moniker range=">= azure-devops-2022"

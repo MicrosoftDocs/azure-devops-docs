@@ -15,9 +15,9 @@ ms.date: 06/28/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-As the Analytics service matures, we're dedicated to providing consistency and reliability to our users. As such, Analytics for Azure DevOps provides a versioned OData API that is compatible with clients designed for those versions. Each version may be enhanced with more functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
+Analytics for Azure DevOps offers a versioned OData API compatible with clients designed for specific versions. Each version might include enhancements and non-breaking changes, while breaking changes get introduced in future versions.
 
-The API version follows the _odata element in the request path and has value as one of our supported versions: **v1.0**, **v2.0**, **v3.0-preview**, or **v4.0-preview**.
+The API version follows the `_odata` element in the request path and can be one of the supported versions: **v1.0**, **v2.0**, **v3.0-preview**, or **v4.0-preview**.
 
 ::: moniker range="azure-devops"
 
@@ -28,7 +28,7 @@ The API version follows the _odata element in the request path and has value as 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
