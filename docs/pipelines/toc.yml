@@ -434,7 +434,7 @@
           href: release/deployment-group-phases.md
         - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
           href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
-  - name: Pipeline Artifacts
+  - name: Artifacts
     items:
     - name: Artifacts in Azure Pipelines
       displayName: artifacts, artifacts overview
@@ -448,6 +448,9 @@
     - name: Artifact sources
       displayName: artifacts, source, release artifacts
       href: release/artifacts.md
+    - name: Use the .artifactignore file
+      href: ../artifacts/reference/artifactignore.md
+      displayName: artifactignore, gitignore
     - name: NuGet
       items:
       - name: Quickstart
