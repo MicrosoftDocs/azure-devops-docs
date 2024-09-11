@@ -4,7 +4,7 @@ description: Learn how to publish NuGet packages to internal and external feeds 
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: tutorial
 ms.date: 09/11/2024
-monikerRange: '<= azure-devops-2020'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
