@@ -134,9 +134,6 @@ For more information on how the dataset is modeled when you use the Power BI Dat
 
 <a id="q-a"> </a>
 
-> [!div class="nextstepaction"]
-> [Create an Analytics view](analytics-views-create.md) 
-
 ## Related content
 
 > [!div class="nextstepaction"]
