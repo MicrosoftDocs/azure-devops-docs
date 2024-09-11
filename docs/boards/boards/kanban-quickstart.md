@@ -8,7 +8,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/07/2024
+ms.date: 09/11/2024
 ---
 
 # Use your board
@@ -95,7 +95,7 @@ As work completes in one stage, update the status of an item by dragging it to a
 
 ## Update card fields
 
-You can quickly update a field or reassign ownership directly from the board. If the field you want to update isn't showing, then customize the card, so it displays. For more information, see [Customize cards](../../boards/boards/customize-cards.md). 
+You can quickly update a field or reassign ownership directly from the board. If the field you want to update isn't showing, then customize the card, so it displays. You can also show other work item types besides bug and user stories, like change requests, incidents, issues, or other custom work item types. For more information, see [Customize cards](../../boards/boards/customize-cards.md) and [About configuring and customizing Azure Boards](../configure-customize.md). 
 
 :::image type="content" source="media/alm-cc-update-card-field.png" alt-text="Screenshot showing update of card field.":::
 
