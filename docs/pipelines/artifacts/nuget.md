@@ -111,47 +111,57 @@ steps:
 
 ::: moniker-end
 
-## Publish packages to external feeds
+## Publish NuGet packages to an external feed
 
-To publish your packages to external NuGet feeds or public registries, such as feeds in other Azure DevOps organizations or nuget.org, you must first create a service connection to authenticate with the respective service:
+To publish your NuGet packages to external feeds or public registries, such as feeds in other Azure DevOps organizations or on platforms like *nuget.org*, you must set up a service connection for authentication first.
 
-1. From your Azure DevOps project navigate to **Project settings** > **Service connections** > 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **New service connection** > **NuGet** > **Next**. 
+1. Navigate to your **Project settings** > **Service connections**. 
 
-1. Fill out the required fields and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.  
+1. Select **New service connection**, select **NuGet**, and then select **Next**. 
+
+1. Select **ApiKey** for the **Authentication method**, and then enter your **Feed URL**. Provide your **Username** and **Password**, give your service connection a name, and check **Grant access permission to all pipelines** if applicable to your scenario.
+
+1. Select **Save** when you're done.
+
+    :::image type="content" source="media/nuget/nuget-service-connection-external-feed.png" alt-text="A screenshot displaying how to set up a NuGet service connection to authenticate with a feed in other organizations.":::
+
+::: moniker range="=> azure-devops-2022"
+
+> [!NOTE]
+> The [NuGetAuthenticate@1](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task supports service connections with basic authentication but does not support ApiKey authentication. If you need to use ApiKey authentication, you must use the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task instead.
 
 #### [YAML](#tab/yaml/)
 
-> [!NOTE]
-> The [NuGetAuthenticate@1 task](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) supports service connections with basic authentication but does not support Apikey authentication. To use ApiKey authentication, you must use the [NuGetCommand@2 task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) instead.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-To publish your NuGet packages to a feed in a different organization, add the following snippet to your YAML pipeline:
+1. Select **Pipelines**, and then select your pipeline definition.
 
-- **Using the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) and NuGet.exe**:
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+- **NuGet.exe**:
 
     ```yaml
       - task: NuGetAuthenticate@1
         inputs:
-          nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+          nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
           
       - script: |
           nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
         displayName: "Push"          
     ```
 
-- **Using the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) and dotnet**:
+- **dotnet**:
   
     ```yaml
         - task: NuGetAuthenticate@1
           inputs:
-            nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+            nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
             
         - script: |
-            dotnet build <CSPROJ_PATH> --configuration <CONFIGURATION>
-            dotnet pack <CSPROJ_PATH> -p:PackageVersion=<YOUR_PACKAGE_VERSION> --output <OUTPUT_DIRECTORY> --configuration <CONFIGURATION>
             dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
-          displayName: "Build, pack and push"          
+          displayName: "Push"          
       ```
 
 > [!NOTE]
@@ -159,30 +169,26 @@ To publish your NuGet packages to a feed in a different organization, add the fo
 
 #### [Classic](#tab/classic/)
 
-::: moniker range="azure-devops-2019"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
+1. Select **Pipelines**, and then select your pipeline definition. 
 
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition and configure them as follows:
 
-::: moniker-end
+    :::image type="content" source="media/nuget/authenticate-and-publish-tasks-external-feed.png" alt-text="A screenshot displaying how to configure the publish task to a feed in other organization.":::
 
-::: moniker range="> azure-devops-2019"
+    1. **NuGet Authenticate task**: select your service connection from the *Service connection credentials for feeds outside this organization* dropdown menu.
+    
+    1. **NuGet task**:
 
-1. Navigate to the Azure DevOps portal, and then select your project.
-
-2. Select **Pipelines**, and then select your pipeline definition. 
-
-::: moniker-end
-
-3. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet task* to your pipeline definition and configure it as follows:
-
-    - **Command**: *push*.
-    - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
-    - **Target feed location**: choose *External NuGet server (including other accounts/collections)*.
-    - **NuGet server**: select the NuGet service connection that you created earlier.
+        - **Command**: *push*.
+        - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
+        - **Target feed location**: select *External NuGet server (including other accounts/collections)*.
+        - **NuGet server**: select the NuGet service connection that you created earlier.
 
 - - -
+
+::: moniker-end
 
 ## Publish to NuGet.org
 
