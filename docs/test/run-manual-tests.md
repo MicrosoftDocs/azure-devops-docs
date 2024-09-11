@@ -740,7 +740,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Azure Test Runner is blocked due to conditional access policy?
 
-**A:** Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web  runner in this scenario.
+**A:** Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web runner in this scenario.
 
 ### Q: Can I opt out of telemetry for the Test Runner client?
 
