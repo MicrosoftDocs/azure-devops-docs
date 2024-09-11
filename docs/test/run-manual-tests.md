@@ -250,7 +250,8 @@ If you want to collect more diagnostic data for your desktop application, run yo
    ![Screenshot shows the Run for desktop application dialog box with options to download and launch Test Runner.](media/run-manual-tests/tr-atp-launch.png)
 
    > [!NOTE]
-   > Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
+   > - Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
+   > - Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview#common-decisions)
 
 1. Select **Launch** and start testing as described in the previous section. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
 
