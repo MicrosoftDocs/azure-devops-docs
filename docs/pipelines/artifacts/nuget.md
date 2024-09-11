@@ -4,7 +4,7 @@ description: Learn how to publish NuGet packages to internal and external feeds 
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: tutorial
 ms.date: 09/11/2024
-monikerRange: '<= azure-devops'
+monikerRange: '<= azure-devops-2020'
 "recommendations": "true"
 ---
 
@@ -26,12 +26,60 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 
 - Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
 
-## Publish packages to internal feeds
+## Publish NuGet packages to an internal feed
 
 > [!NOTE]
 > To publish your packages to a feed using Azure Pipelines, make sure that both the **Project Collection Build Service** and your project's **Build Service** identities are granted the **Feed Publisher (Contributor)** role assigned in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for more details.
 
+::: moniker range="azure-devops-2020"
+
 #### [YAML](#tab/yaml/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+```yaml
+steps:
+- task: NuGetAuthenticate@0
+  displayName: 'NuGet Authenticate'
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    publishVstsFeed: '<projectName>/<feed>'
+```
+
+#### [Classic](#tab/classic/)
+
+1. Navigate to the Azure DevOps portal, and then select your project.
+
+1. Select **Pipelines**, and then select your pipeline definition. 
+
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition. You can leave the *nugetAuthenticate* with the default settings and configure the *nuget* task as follows:
+
+    :::image type="content" source="media/nuget/authenticate-and-publish-tasks.png" alt-text="A screenshot displaying how to configure the publish task in Azure Pipelines.":::
+
+- **Command**: the NuGet command to run. Select *push*.
+- **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
+- **Target feed location**: select *This organization/collection*.
+- **Target feed**: select the feed that you want to publish to.
+
+- - -
+
+::: moniker-end
+
+::: moniker range="=> azure-devops-2022"
+
+#### [YAML](#tab/yaml/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
 ```yaml
 steps:
@@ -42,37 +90,26 @@ steps:
   inputs:
     command: push
     publishVstsFeed: '<projectName>/<feed>'
-    allowPackageConflicts: true
 ```
 
 #### [Classic](#tab/classic/)
 
-::: moniker range="azure-devops-2019"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
+1. Select **Pipelines**, and then select your pipeline definition. 
 
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition. You can leave the *nugetAuthenticate* with the default settings and configure the *nuget* task as follows:
 
-::: moniker-end
+    :::image type="content" source="media/nuget/authenticate-and-publish-tasks.png" alt-text="A screenshot displaying how to configure the NuGet publish task in Azure Pipelines.":::
 
-::: moniker range="> azure-devops-2019"
-
-1. Navigate to the Azure DevOps portal, and then select your project.
-
-2. Select **Pipelines**, and then select your pipeline definition. 
-
-::: moniker-end
-
-3. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet task* to your pipeline definition and configure it as follows:
-
-- **Command**: *push*.
+- **Command**: the NuGet command to run. Select *push*.
 - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
-- **Target feed location**: you can publish to your current organization or an external NuGet server.
-- **Target feed**: the feed that you want to publish to.
-
-:::image type="content" source="media/nuget/publish-packages-from-team-build.png" alt-text="A screenshot that shows how to configure the NuGet publish task in Azure Pipelines.":::
+- **Target feed location**: select *This organization/collection*.
+- **Target feed**: select the feed that you want to publish to.
 
 - - -
+
+::: moniker-end
 
 ## Publish packages to external feeds
 
