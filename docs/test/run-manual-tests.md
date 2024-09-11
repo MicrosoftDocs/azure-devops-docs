@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: rbatra
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 09/11/2024
 ---
 
 # Run manual tests
@@ -251,7 +251,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
    > [!NOTE]
    > - Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
-   > - Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview#common-decisions)
+   > - Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions)
 
 1. Select **Launch** and start testing as described in the previous section. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
 
@@ -740,7 +740,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Does the Azure Test Runner desktop client work on devices with Microsoft Entra Conditional Access enabled?
 
-**A:** Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web runner in this scenario.
+**A:** Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web runner in this scenario.
 
 ### Q: Can I opt out of telemetry for the Test Runner client?
 
