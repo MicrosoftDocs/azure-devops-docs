@@ -28,6 +28,8 @@ landingContent:
             url: quickstart-azure-portal.md
           - text: ARM template
             url: quickstart-arm-template.md
+          - text: Azure CLI
+            url: quickstart-azure-cli.md
   - title: Configure Managed DevOps Pools
     linkLists:
       - linkListType: concept

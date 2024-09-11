@@ -1,12 +1,12 @@
 ---
-title: Create a Managed DevOps Pool using an ARM template
-description: Learn how to create a Managed DevOps Pool using an Azure Resource Manager template (ARM template).
-ms.date: 08/22/2024
+title: Create a Managed DevOps Pool using Azure CLI
+description: Learn how to create a Managed DevOps Pool using Azure CLI.
+ms.date: 08/26/2024
 ---
 
-# Quickstart: Create a Managed DevOps Pool using an ARM template
+# Quickstart: Create a Managed DevOps Pool using Azure CLI
 
-This article shows you how to create a Managed DevOps Pool using an ARM template, and run a pipeline in it.
+This article shows you how to create a Managed DevOps Pool using Azure CLI, and run a pipeline in it.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
    ```azurecli
    az login
    ```
+
 2. If you have more than one Azure subscription, set your default Azure subscription.
 
    ```azurecli
@@ -35,7 +36,64 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
    If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli). 
 
-## Create a resource group, Dev Center, and Dev Center Project
+## Create a resource group
+
+1. Configure a default location for your resources. In this example, `eastus` is used.
+
+   ```azurecli
+   az configure --defaults location=eastus
+   ```
+
+1. Create the resource group in which you want to create the Managed DevOps Pools and associated resources for this quickstart.
+
+   ```azurecli
+   az group create -n <resourceGroupName>
+   ```
+
+1. Configure the default resource group as the resource group you created:
+
+   ```azurecli
+   az config set defaults.group=<resourceGroupName>
+   ```
+
+## Create a Dev Center and Dev Center Project
+
+1. Install the Azure CLI *devcenter* extension.
+
+   ```azurecli
+   az extension add --name devcenter --upgrade
+   ```
+1. Create a dev center.
+
+   ```azurecli
+   az devcenter admin devcenter create -n <devcenterName>
+   ```
+
+   After a few moments, the output indicates that the Dev center was created. Make a note of the `id` for the following step.
+
+   ```
+    {
+       "devCenterUri": "https://...",
+       "id": "/subscriptions/.../<devcenterName>",
+       "location": "eastus",
+       "name": "<devcenter name>",
+       "provisioningState": "Succeeded",
+       "resourceGroup": "<resourceGroupName>",
+       "systemData": {
+          "createdAt": "...",
+          "createdBy": "...",
+          ...
+       },
+       "type": "microsoft.devcenter/devcenters"
+    }
+   ```
+
+1. Create a dev center project. Specify the desired `projectName`, and for `devCenterID`, use the `id` from the previous step. You can also retrieve the ID by running the following command: `az devcenter admin devcenter show -n <devcenterName> --query id -o tsv`.
+
+   ```azurecli
+   az devcenter admin project create -n <projectName> --description "My first project." --dev-center-id <devCenterID>
+   ```
+   
 
 1. Follow the [Create a dev center](/azure/deployment-environments/how-to-create-configure-dev-center#create-a-dev-center) steps in [Create and configure a dev center for Azure Deployment Environments by using the Azure CLI](/azure/deployment-environments/how-to-create-configure-dev-center).
 
