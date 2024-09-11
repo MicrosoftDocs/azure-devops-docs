@@ -71,7 +71,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="=> azure-devops-2022"
+::: moniker range=">= azure-devops-2022"
 
 #### [YAML](#tab/yaml/)
 
@@ -127,7 +127,7 @@ To publish your NuGet packages to external feeds or public registries, such as f
 
     :::image type="content" source="media/nuget/nuget-service-connection-external-feed.png" alt-text="A screenshot displaying how to set up a NuGet service connection to authenticate with a feed in other organizations.":::
 
-::: moniker range="=> azure-devops-2022"
+::: moniker range=">= azure-devops-2022"
 
 > [!NOTE]
 > The [NuGetAuthenticate@1](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task supports service connections with basic authentication but does not support ApiKey authentication. If you need to use ApiKey authentication, you must use the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task instead.
@@ -190,7 +190,7 @@ To publish your NuGet packages to external feeds or public registries, such as f
 
 ::: moniker-end
 
-::: moniker range="=> azure-devops-2020"
+::: moniker range=">= azure-devops-2020"
 
 #### [YAML](#tab/yaml/)
 
