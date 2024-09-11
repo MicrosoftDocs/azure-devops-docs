@@ -527,17 +527,17 @@ To create a service connection that uses an existing service principal:
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
+1. Select **New service connection**, then select **Azure Resource Manager**.
 
-   :::image type="content" source="media/new-service-connection-azure-resource-manager-2019.png" alt-text="Screenshot that shows the Azure Resource Manager selection-2019.":::
+   :::image type="content" source="media/new-service-connection-azure-resource-manager-2019.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
 
-1. On the **Add an Azure Resource Manager service connection** dialog, Fill in the fields as follows:
+1. On the **Add an Azure Resource Manager service connection** dialog, fill in the fields as follows:
 
-    :::image type="content" source="media\new-azure-resource-manager-conn-sp-manual-selection-server-2019.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
+    :::image type="content" source="media\new-azure-resource-manager-conn-sp-manual-selection-server-2019.png" alt-text="Screenshot of Add an Azure Resource Manager service connection.":::
     
     1. Enter the **Connection name**.
     1. Select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`.
-    1. Select the **Scope level**. Select **Subscription** or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions.
+    1. Select the **Scope level**, **Subscription** or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions.
 
         * For the **Subscription** scope, enter the following parameters:
     
@@ -555,11 +555,11 @@ To create a service connection that uses an existing service principal:
     1. Enter the **Service principal Id**.
     1. Select the credential type: 
         * **Service principal key**: Enter the **Service principal key** (password).
-        * **Certificate**: Enter the contents of the *.perm* file including both the certifcate and private key sections.
+        * **Certificate**: Enter the contents of the *.perm* file including both the certificate and private key sections.
     1. Enter the **Tenant Id**.
     
     1. Select **Verify connection** to validate the service connection.
-    1. Select **Allow all pipelines to use this connection.** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+    1. Optionally, select **Allow all pipelines to use this connection**. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
     1. Select **Save** to create the service connection.
     
 ::: moniker-end
