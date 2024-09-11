@@ -1,9 +1,9 @@
 ---
 title: Publish NuGet packages with Azure Pipelines
-description: Learn how to publish your NuGet packages using YAML and Classic Pipelines.
+description: Learn how to publish NuGet packages to internal and external feeds using Classic and YAML Pipelines.
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: tutorial
-ms.date: 05/31/2024
+ms.date: 09/11/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -12,135 +12,19 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Pipelines, you can use either classic or YAML pipelines to publish your NuGet packages to your Azure Artifacts feed, external feeds, or public registries such as *nuget.org*. In this article, you will learn how to: 
+Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts feeds, external feeds, or public registries like nuget.org, using either classic or YAML pipelines. In this article, you'll learn how to: 
 
 > [!div class="checklist"]
 >
-> * Generate a NuGet package in Azure Pipelines
-> * Publish packages to internal and external feeds
-> * Publish packages to NuGet.org
+> * Publish packages to an internal feed
+> * Publish packages to a feed in a different organization
+> * Package versioning
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
-
-- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-npm.md#create-a-feed).
-
-## Create a NuGet package
-
-There are several ways to [create your NuGet packages](/nuget/create-packages/overview-and-workflow), such as using the dotnet or nuget.exe CLI to pack your packages. If you are already using MSBuild or other tasks to create your packages, you can skip this section and proceed to the next one.
-
-#### [YAML](#tab/yaml/)
-
-To create a NuGet package, add the following snippet to your YAML file. See [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
-
-```yaml
-- task: NuGetCommand@2
-  inputs:
-    command: pack
-    packagesToPack: '**/*.csproj'
-    packDestination: '$(Build.ArtifactStagingDirectory)'
-```
-
-- **packagesToPack**: the pattern that the task uses to search for csproj directories to pack.
-- **packDestination**: directory where packages are created. If empty, packages will be created at the source root.
-
-#### [Classic](#tab/classic/)
-
-From your pipeline definition, add the **NuGet task** to your pipeline to create a NuGet package. Make sure to add this task below the one building your application and above any tasks that require your NuGet package.
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *NuGet task*, and then select **Add** to add it to your pipeline.
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
-
-1. Navigate to the Azure DevOps portal, and then select your project.
-
-2. Select **Pipelines**, and then select your pipeline definition. 
-
-3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *NuGet task*, and then select **Add** to add it to your pipeline.
-
-::: moniker-end
-
-4. Fill out the required fields as follows:
-
-    - **Command:**: *pack*.
-    - **Path to csproj or nuspec file(s) to pack**: the pattern that the task uses to search for csproj directories to pack.
-    - **Configuration to package**: specifies the configuration to package when using a *.csproj* file.
-    - **Package folder**: directory where packages are created. If empty, packages will be created at the source root.
-
-    :::image type="content" source="media/nuget/create-packages-in-team-build.png" alt-text="A screenshot that shows how to configure the NuGet task in Azure Pipelines.":::
-
-- - -
-
-## Package versioning
-
-NuGet packages are defined by their names and version numbers. Using Semantic Versioning is a recommended approach for effectively managing package versions. Semantic versions are comprised of three numeric components: Major, Minor, and Patch.
-
-The *Patch* number is incremented after fixing a bug. When releasing a new backward-compatible feature, you increment the *Minor* version and reset the *Patch* version to 0. Conversely, when making a backward-incompatible change, you increment the *Major* version and reset both the *Minor* and *Patch* versions to 0.
-
-Semantic Versioning also supports the use of prerelease labels to tag packages. Simply append a hyphen followed by your prerelease tag, for example: **1.0.0-beta**. 
-
-Azure Pipelines supports Semantic Versioning and offers the following configuration options for NuGet tasks:
-
-- **Use the date and time** (Classic) | **byPrereleaseNumber** (YAML):
-    Your package version follows the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to customize the Major, Minor, and Patch values.
-
-- **Use an environment variable** (Classic) | **byEnvVar** (YAML): 
-    Your package version is set to the value of the specified environment variable. 
-
-- **Use the build number** (Classic) | **byBuildNumber** (YAML): 
-    Your package version is set to the build number. Make sure you define the build number format in your pipeline  **Options** as `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To specify the format in YAML, add a `name:` property at the root of your pipeline and define your format.
-
-Below is an example demonstrating how to use the date and time versioning to generate a SemVer-compliant package formatted as: *Major.Minor.Patch-ci-datetime*.
-
-#### [YAML](#tab/yaml/)
-
-```yaml
-variables:
-  Major: '1'
-  Minor: '0'
-  Patch: '0'
-
-steps:
-- task: NuGetCommand@2
-  inputs:
-    command: pack
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
-```
-
-> [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) for more details.
-
-```yaml
-task: DotNetCoreCLI@2
-inputs:
-    command: pack
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
-```
-
-#### [Classic](#tab/classic/)
-
-From your classic pipeline definition, select your NuGet task, choose **Pack** from the commands dropdown, and then select **Use the date and time**.
-
-:::image type="content" source="media/package-versioning-classic.png" alt-text="A screenshot that shows how to enable package versioning in a classic pipeline.":::
-
-- - -
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
 
 ## Publish packages to internal feeds
 
