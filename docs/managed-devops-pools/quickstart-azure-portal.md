@@ -8,7 +8,7 @@ ms.topic: quickstart
 
 # Quickstart: Create a Managed DevOps Pool using the Azure portal
 
-This article shows you how to create a Managed DevOps pool and run a pipeline in it.
+This article shows you how to create a Managed DevOps pool, and run a pipeline in the new pool.
 
 ## Prerequisites
 
