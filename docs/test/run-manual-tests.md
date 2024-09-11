@@ -734,11 +734,11 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 **A:** The Test Runner desktop client is currently supported only on Windows x64 platform.
 
-### Q: I am observing test run failure with Test Runner client?
+### Q: I am observing test run failures when using the Azure Test Runner desktop client.
 
 **A:** Make sure you are using latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
 
-### Q: Azure Test Runner is blocked due to conditional access policy?
+### Q: Does the Azure Test Runner desktop client work on devices with Microsoft Entra Conditional Access enabled?
 
 **A:** Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web runner in this scenario.
 
