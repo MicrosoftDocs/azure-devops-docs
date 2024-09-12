@@ -63,7 +63,7 @@ To add a column with the last refresh date of the dataset, do the following step
        #"{AnalyticsViewsID_Table}"
    ```
 
-   ---
+   ***
 
 4. Modify the query according to the following syntax.  
 
@@ -89,8 +89,8 @@ To add a column with the last refresh date of the dataset, do the following step
    in
        #"Added Refresh Date"
    ```
- 
-   ---
+
+   ***
 
    > [!NOTE]  
    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
