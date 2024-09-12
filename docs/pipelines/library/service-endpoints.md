@@ -274,7 +274,9 @@ Select the registry type:
 
 * [Docker Hub](#docker-hub-or-others)
 * [Others](#docker-hub-or-others)
+::: moniker range="azure-devops"
 * [Azure Container Registry](#azure-container-registry)
+:::moniker-end
 
 #### Docker Hub or Others
 
@@ -292,6 +294,7 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
+::: moniker range="azure-devops"
 #### Azure Container Registry
 
 You can connect to an Azure Container Registry using either a [Service Principal](#service-principal-authentication-type), [Managed Identity](#managed-identity-authentication-type), or [Workload Identity federation](#workload-identity-federation-authentication-type) **Authentication Type**.
@@ -333,6 +336,7 @@ Enter the following parameters to define a connection to an Azure Container Regi
 | Connection name | Required. A name to use to refer to the service connection in task properties. For YAML pipelines, use the name as the **azureSubscription** or other connection name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
+::: moniker-end
 
 ### Generic service connection
 
