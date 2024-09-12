@@ -272,11 +272,15 @@ You can create a service connection to a Docker container registry.
 
 Select the registry type:
 
+::: moniker range="azure-devops"
 * [Docker Hub](#docker-hub-or-others)
 * [Others](#docker-hub-or-others)
-::: moniker range="azure-devops"
 * [Azure Container Registry](#azure-container-registry)
-:::moniker-end
+::: moniker-end
+::: monkier range="< azure-devops"
+* [Docker Hub](#docker-hub-or-others)
+* [Others](#docker-hub-or-others)
+::: moniker-end
 
 #### Docker Hub or Others
 
