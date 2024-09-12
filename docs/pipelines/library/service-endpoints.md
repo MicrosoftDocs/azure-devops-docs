@@ -277,7 +277,7 @@ Select the registry type:
 * [Others](#docker-hub-or-others)
 * [Azure Container Registry](#azure-container-registry)
 ::: moniker-end
-::: monkier range="< azure-devops"
+::: moniker range="< azure-devops"
 * [Docker Hub](#docker-hub-or-others)
 * [Others](#docker-hub-or-others)
 ::: moniker-end
