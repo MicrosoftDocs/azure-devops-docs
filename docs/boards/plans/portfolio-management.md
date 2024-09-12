@@ -18,7 +18,7 @@ ms.date: 09/12/2024
 
 Portfolio backlogs give product owners insight into the work of multiple agile feature teams. Product owners define high-level goals as Epics or Features, which feature teams break down into user stories to prioritize and develop.
 
-[!INCLUDE configure-customize]
+[!INCLUDE [note-configure-customize](../includes/note-configure-customize.md)]
 
 Setting up a team structure like the one shown provides each feature team with a distinct backlog to plan, prioritize, and track their work. Portfolio or product owners can create their vision, roadmap, and goals for each release, monitor progress across projects, and manage risks and dependencies.
 
