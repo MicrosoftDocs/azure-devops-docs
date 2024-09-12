@@ -3,7 +3,7 @@ title: Use a canary deployment strategy for Kubernetes
 description: Learn how to perform and evaluate canary deployments on Kubernetes clusters by using Azure Pipelines.
 ms.topic: tutorial
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
-ms.date: 07/22/2024
+ms.date: 09/12/2024
 ms.custom: fasttrack-edit
 monikerRange: '>= azure-devops-2022'
 ---
@@ -16,17 +16,15 @@ This step-by-step guide covers how to use the [Kubernetes manifest task](/azure/
 
 You use the associated workflow to evaluate the code and compare the baseline and canary app deployments. Based on the evaluation, you decide whether to promote or reject the canary deployment.
 
-This tutorial uses Docker Registry and Kubernetes service connections to connect to Azure resources. For an Azure Kubernetes Service (AKS) private cluster or a cluster that has local accounts disabled, an [Azure Resource Manager service connections](../../library/service-endpoints.md#azure-resource-manager-service-connection) is a better way to connect.
+This tutorial uses Docker Registry and Azure Resource Manager service connections to connect to Azure resources. For an Azure Kubernetes Service (AKS) private cluster or a cluster that has local accounts disabled, an [Azure Resource Manager service connections](../../library/service-endpoints.md#azure-resource-manager-service-connection) is a better way to connect.
 
-> [!NOTE]
-> This guide uses [Prometheus](https://prometheus.io/) for code instrumentation and monitoring. You can use equivalent solutions, such as [Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core), as an alternative.
 
 ## Prerequisites
 
 - An Azure DevOps project with at least **User** permissions.
 - An Azure account. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) instance with push privileges.
-- An [Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster) deployed. You can attach the AKS cluster to your Azure Container registry cluster, and enable Prometheus and Grafana, when you deploy the AKS cluster or afterwards.
+- An [Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster) deployed. You can attach the AKS cluster to your Azure Container registry cluster when you deploy the AKS cluster or afterwards.
 - A GitHub account. [Create a free GitHub account](https://github.com/join).
 - A fork of the [https://github.com/MicrosoftDocs/azure-pipelines-canary-k8s](https://github.com/MicrosoftDocs/azure-pipelines-canary-k8s) GitHub repository.
 
@@ -39,30 +37,17 @@ The GitHub repository contains the following files:
 
 |File|Description|
 |----|-----------|
-|*./app/app.py*|A simple, Flask-based web server instrumented with the [Prometheus instrumentation library for Python applications](https://github.com/prometheus/client_python). The file sets up a custom counter for the number of good and bad responses, based on the value of the `success_rate` variable.|
+|*./app/app.py*|A simple, Flask-based web server . The file sets up a custom counter for the number of good and bad responses, based on the value of the `success_rate` variable.|
 |*./app/Dockerfile*|Used for building the image with each change to *app.py*. Each change triggers the build pipeline to build the image and push it to the container registry.|
 |*./manifests/deployment.yml*|Contains the specification of the `sampleapp` deployment workload corresponding to the published image. You use this manifest file for the stable version of the deployment object and for deriving the baseline and canary variants of the workloads.|
 |*./manifests/service.yml*|Creates the `sampleapp` service. This service routes requests to the pods spun up by the stable, baseline, and canary deployments.|
-|*./misc/service-monitor.yml*|Sets up a [ServiceMonitor](https://github.com/coreos/prometheus-operator#customresourcedefinitions) object that sets up Prometheus metric scraping.|
-|*./misc/fortio-deploy.yml*|Sets up a fortio deployment. This deployment is a load-testing tool that sends a stream of requests to the deployed `sampleapp` service. The request stream routes to pods under the three deployments: stable, baseline, and canary.|
-
-## Install Prometheus
-
-To install `prometheus-operator` on your cluster, run the following commands from your development machine or from Azure Cloud Shell. You must have kubectl and Helm installed, and you must set the context to the cluster you want to deploy against. Azure Cloud Shell already has kubectl and Helm installed.
-
-You first add the [Prometheus Community Kubernetes Helm Charts repository](https://prometheus-community.github.io/helm-charts/) to your Helm installation. [Grafana](https://grafana.com), which you use later to visualize the baseline and canary metrics on dashboards, is installed as part of this Helm chart. Then you install the [kube-prometheus stack](https://github.com/prometheus-operator/kube-prometheus), a collection of Kubernetes manifests, Grafana dashboards, and Prometheus rules.
-
-```bash
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo update
-helm install sampleapp prometheus-community/kube-prometheus-stack
-```
+|*./misc/fortio.yml*|Sets up a fortio deployment. This deployment is a load-testing tool that sends a stream of requests to the deployed `sampleapp` service. The request stream routes to pods under the three deployments: stable, baseline, and canary.|
 
 ## Create service connections
 
 1. In your Azure DevOps project, go to **Project settings** > **Pipelines** > **Service connections**.
 1. Create a [Docker Registry service connection](../../library/service-endpoints.md#azure-container-registry) named **azure-pipelines-canary-acr** that's associated with your Azure Container Registry instance.
-1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) named **azure-pipelines-canary-k8s** for your Kubernetes cluster in the default namespace.
+1. Create a [Azure Resource Manager service connection with workload identity](../../library/service-endpoints.md##create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) named **azure-pipelines-canary-k8s** for your resource group.
 
 ## Set up continuous integration
 
@@ -79,18 +64,30 @@ helm install sampleapp prometheus-community/kube-prometheus-stack
       vmImage: ubuntu-latest
     
     variables:
-      imageName: azure-pipelines-canary-k8s
+      imageName: azure-pipelines-canary-k8s # name of ACR image
+      dockerRegistryServiceConnection: azure-pipelines-canary-acr # name of ACR service connection
+      imageRepository: 'azure-pipelines-canary-k8s' # name of image repostory
+      containerRegistry: example.azurecr.io # name of Azure container registry
+      tag: '$(Build.BuildId)'
     
-    steps:
-    - task: Docker@2
-      displayName: Build and push image
-      inputs:
-        containerRegistry: azure-pipelines-canary-acr
-        repository: $(imageName)
-        command: buildAndPush
-        Dockerfile: app/Dockerfile
-        tags: |
-          $(Build.BuildId)
+    stages:
+    - stage: Build
+      displayName: Build stage
+      jobs:  
+      - job: Build
+        displayName: Build
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+        - task: Docker@2
+          displayName: Build and push image
+          inputs:
+            containerRegistry: $(dockerRegistryServiceConnection)
+            repository: $(imageName)
+            command: buildAndPush
+            Dockerfile: app/Dockerfile
+            tags: |
+              $(tag)
     ```
 
    If the Docker registry service connection that you created is associated with a container registry named `example.azurecr.io`, then the image is set to `example.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)`.
