@@ -42,63 +42,63 @@ Widgets listed in the following table are provided out-of-box. They're organized
    :::column span="1":::
       ::: moniker range=">= azure-devops-2020"
       **Boards**
-      - [Assigned to me](#assigned-to-me-widget) (User)
-      - [Burndown chart](#burndown-analytics-widget) (Analytics, Project, Teams)
-      - [Burnup chart](#burnup-analytics-widget) (Analytics, Project, Teams)
-      - [Chart for work items](#chart-wit-widget)  
-      - [Cumulative flow diagram](#cfd-widget) (Team)
-      - [Cycle time (Analytics)](#cycle-time-widget) (Analytics, Team)  
-      - [Lead time (Analytics)](#lead-time-widget) (Analytics, Team)
-      - [New Work item](#new-work-item-widget)  
-      - [Query results](#query-results-widget)  
-      - [Query tile](#query-tile-widget)  
-      - [Sprint burndown](#sprint-burndown-analytics-widget) (Analytics, Team)  
-      - [Sprint burndown (Legacy)](#sprint-burndown-widget) (Team)
-      - [Sprint capacity](#sprint-capacity-widget) (Team)
-      - [Sprint overview](#sprint-overview-widget) (Team)
+      - [Assigned to Me](#assigned-to-me-widget) (User)
+      - [Burndown](#burndown-analytics-widget) (Analytics, Project, Teams)
+      - [Burnup](#burnup-analytics-widget) (Analytics, Project, Teams)
+      - [Chart for Work Items](#chart-wit-widget)  
+      - [Cumulative Flow Diagram](#cfd-widget) (Team)
+      - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team)  
+      - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team)
+      - [New Work Item](#new-work-item-widget)  
+      - [Query Results](#query-results-widget)  
+      - [Query Tile](#query-tile-widget)  
+      - [Sprint Burndown](#sprint-burndown-analytics-widget) (Analytics, Team)  
+      - [Sprint Burndown (Legacy)](#sprint-burndown-widget) (Team)
+      - [Sprint Capacity](#sprint-capacity-widget) (Team)
+      - [Sprint Overview](#sprint-overview-widget) (Team)
       - [Velocity](#velocity-widget) (Analytics, Team)  
-      - [Work links](#work-links-widget)  
+      - [Work Links](#work-links-widget)  
       ::: moniker-end
       ::: moniker range="azure-devops-2019"
       **Boards**
-      - [Assigned to me](#assigned-to-me-widget) (User)
-      - [Burndown chart](#burndown-analytics-widget)  (Analytics, Teams)
-      - [Burnup chart](#burnup-analytics-widget) (Analytics, Teams)
-      - [Chart for work items](#chart-wit-widget)  
-      - [Cumulative flow diagram](#cfd-widget) (Team)  
-      - [Cycle time (Analytics)](#cycle-time-widget)  (Analytics, Team)
-      - [Lead time (Analytics)](#lead-time-widget)  (Analytics, Team)
-      - [New Work item](#new-work-item-widget)  
-      - [Query results](#query-results-widget)  
-      - [Query tile](#query-tile-widget)  
-      - [Sprint burndown](#sprint-burndown-widget) (Team)
-      - [Sprint capacity](#sprint-capacity-widget) (Team)
-      - [Sprint overview](#sprint-overview-widget) (Team)
+      - [Assigned to Me](#assigned-to-me-widget) (User)
+      - [Burndown](#burndown-analytics-widget)  (Analytics, Teams)
+      - [Burnup](#burnup-analytics-widget) (Analytics, Teams)
+      - [Chart for Work Items](#chart-wit-widget)  
+      - [Cumulative Flow Diagram](#cfd-widget) (Team)  
+      - [Cycle Time (Analytics)](#cycle-time-widget)  (Analytics, Team)
+      - [Lead Time (Analytics)](#lead-time-widget)  (Analytics, Team)
+      - [New Work Item](#new-work-item-widget)  
+      - [Query Results](#query-results-widget)  
+      - [Query Tile](#query-tile-widget)  
+      - [Sprint Burndown](#sprint-burndown-widget) (Team)
+      - [Sprint Capacity](#sprint-capacity-widget) (Team)
+      - [Sprint Overview](#sprint-overview-widget) (Team)
       - [Velocity](#velocity-widget) (Analytics) (Team)
-      - [Work links](#work-links-widget)  
+      - [Work Links](#work-links-widget)  
       ::: moniker-end
       ---
       **Repos**
-      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](#pull-request-widget) (Team)
+      - [Code Tile](#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull Request](#pull-request-widget) (Team)
    :::column-end:::
    :::column span="1":::
       **Pipelines**
-      - [Build history](#build-history-widget) (Build)
+      - [Build History](#build-history-widget) (Build)
       - [Deployment status](#deployment-status-widget) (Build)
-      - [Release pipeline overview](#release-definition-widget) (Release)
+      - [Release Pipeline Overview](#release-definition-widget) (Release)
       - [Requirements quality](#requirements-quality-widget) (Query, Build, Release)
       ---
       **Test Plans**
-      - [Chart for test plans](#chart-test-plan-widget)
-      - [Test results trend](#test-trend-results) (Build, Release)  
+      - [Chart for Test Plans](#chart-test-plan-widget)
+      - [Test Results Trend](#test-trend-results) (Build, Release)  
       - [Test Results Trend (Advanced)](#test-trend-results-advanced) (Analytics, Build, Release)
       ---
       **Information and links**
       - [Embedded Webpage](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
-      - [Other links](#other-links-widget)  (Team)  
-      - [Team members](#team-members-widget) (Team)
+      - [Other Links](#other-links-widget)  (Team)  
+      - [Team Members](#team-members-widget) (Team)
       - [Visual Studio Shortcuts](#visual-studio-widget)
       - [Welcome](#how-to-widget)
    :::column-end:::
@@ -378,7 +378,7 @@ Add code tracking widgets to track changes made within a repository or get quick
 :::row-end:::
 :::row:::
    :::column span="1":::
-      ### Pull request
+      ### Pull Request
       :::image type="icon" source="media/widget-catalog-pull-request.png":::  
    :::column-end:::
    :::column span="1":::
@@ -393,7 +393,7 @@ Add code tracking widgets to track changes made within a repository or get quick
 ::: moniker range="= azure-devops"
 :::row:::
    :::column span="1":::
-      ### Pull request (multiple repos)
+      ### Pull Request (multiple repos)
       :::image type="icon" source="media/widget-catalog-pull-request-multi.png":::  
    :::column-end:::
    :::column span="1":::
@@ -485,7 +485,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 :::row-end:::
 :::row:::
    :::column span="1":::
-      ### Test results trend
+      ### Test Results Trend
       :::image type="icon" source="media/widget-test-results-trend.png":::
    :::column-end:::
    :::column span="1":::
