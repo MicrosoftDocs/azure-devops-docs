@@ -190,7 +190,7 @@ To publish your NuGet packages to external feeds or public registries, such as f
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops-2020"
 
 #### [YAML](#tab/yaml/)
 
