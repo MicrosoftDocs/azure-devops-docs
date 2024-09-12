@@ -99,7 +99,7 @@ At this point, your Azure Boards-GitHub integration is complete. You can skip th
 
    :::image type="content" source="media/troubleshoot/add-link-to-pull-request-2.png" alt-text="Screenshot of Add link action in user story, showing repository selection and empty boxes for input of pull request ID and optional comment."::: 
 
-	The following actions occur in the background.  
+	The following actions occur in the background, automatically:  
 	- Adds a badge to the README file of the first repository in the list of connected GitHub repositories.  
 	- Creates a GitHub commit for the update made by adding the badge to the README file.
 	- Creates a GitHub pull request to merge the changes made to the README file.  
