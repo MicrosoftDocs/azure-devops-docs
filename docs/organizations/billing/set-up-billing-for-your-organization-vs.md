@@ -52,7 +52,6 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 
    > [!TIP]
    > If you can't see an Azure Subscription associated with a different tenant ID, it’s likely due to authentication issues. Here’s how you can address this situation:
-   e to authentication issues. Here’s how you can address this situation:
    >**Tenant context:**
    > - Your organization might be connected to 'Tenant A,' where your user account is registered.
    > - But, the Azure subscription you’re trying to access is associated with 'Tenant B,' a different Microsoft Entra ID tenant.
