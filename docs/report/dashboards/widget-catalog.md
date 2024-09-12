@@ -226,6 +226,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="new-work-item-widget"></a>
+
       Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default **Area Path**. The **Iteration Path** assigned matches the last **Iteration Path** assigned to a work item by the currently signed in user.  
 
       To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
