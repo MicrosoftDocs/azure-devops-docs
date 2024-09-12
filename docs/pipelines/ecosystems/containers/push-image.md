@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: v-catherbund
 author: cebundy
-ms.date: 08/05/2024
+ms.date: 08/11/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,29 +13,33 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
 
-This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to Docker Hub and Google Artifact Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to an Azure Container Registry, Docker Hub and Google Artifact Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
 
 You learn how to create a YAML pipeline to build and push a Docker image to a container registry. The pipeline is triggered by changes to the main branch of the repository. The Docker@2 task is used to build and push the image to the container registry.
-
-To learn how to build and push container images to Azure Container Registry, see [Use Docker YAML to build and push images to Azure Container Registry](acr-template.md).
 
 ## Prerequisites
 
 - An Azure DevOps project
-- A container registry (Docker Hub or Google Artifact Registry)
+- A container registry (Docker Hub, Google Artifact Registry, or Azure Container Registry)
 - A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the sample repository and fork it to your GitHub account.
 - Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges.  Microsoft-hosted agents have Docker pre-installed.
 
-
 ## Create a Docker Service Connection
 
-Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry.
+Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry.  Go to the [Service connections](../../library/service-endpoints.md) page in your Azure DevOps project to create a new service connection and select the **Docker Registry** connection type.
 
 There are different processes to create a service connection for a Docker Hub and a Google Artifact Registry. 
 
 # [Docker Hub](#tab/docker)
 
 Choose the Docker Hub option under [Docker registry service connection](../../library/service-endpoints.md#docker-hub-or-others) and provide your username and password to create a Docker service connection.
+
+# [Azure Container Registry](#tab/azure)
+
+
+Choose the Azure Container Registry option under [Docker registry service connection](../../library/service-endpoints.md#azure-container-registry) and provide the information required by the authentication method you choose.
+
+You can also create your pipeline using the Docker template to build and push an image to Azure Container Registry.  This template automatically creates a service connection and an YAML pipeline for you.  For more information, see [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md).
 
 ## [Google Artifact Registry](#tab/google)
 
