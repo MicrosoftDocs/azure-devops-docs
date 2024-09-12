@@ -6,8 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
+ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/28/2022
+ms.date: 09/12/2024
 ---
 
 # OData API versioning
@@ -40,52 +41,50 @@ The API version follows the `_odata` element in the request path and can be one 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
-## Preview versions
+## Differences between versions
 
-- **v3.0-preview** 
-- **v4.0-preview** 
+**v1.0 and v2.0:** These are the **released** versions of the OData API. They are stable and do not include breaking changes. v2.0 includes enhancements and additional functionality compared to v1.0.
 
-## Released versions
+**v3.0-preview and v4.0-preview:** These are **preview** versions, which means they may include breaking changes and are not guaranteed to have the same features in the final release. They offer early access to new features and improvements that are not yet available in the released versions.
 
-- **v1.0**
-- **v2.0**
+### Why choose a specific version?
+
+- **Stability:** If you need a stable and reliable API without breaking changes, you should choose one of the released versions (v1.0 or v2.0).
+- **New features:** If you want to take advantage of the latest features and improvements, you might opt for one of the preview versions (v3.0-preview or v4.0-preview). However, be aware that these versions might include breaking changes and are subject to change.
+- **Compatibility:** Ensure that the version you choose is compatible with your existing clients and systems. The API version follows the `_odata` element in the request path and can be one of the supported versions: v1.0, v2.0, v3.0-preview, or v4.0-preview.
 
 ## Entity sets supported in each version
 
 For information on which EntitySets are supported with each API version, see [Data model for Analytics, Entities](data-model-analytics-service.md#entities). 
 
-
 ## Version lifecycle
 
-Each version of the OData API will go through three phases during its lifecycle. 
+Each version of the OData API goes through the following three phases during its lifecycle. 
 
-### Preview
+### 1. Preview phase
 
-All breaking changes will be combined and released together in future versions of the API. To make this functionality available as early as possible, well release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode. Also, there's no guarantee that what is included in a preview version will be included in a released version.
+We combine and release all breaking changes together in future versions of the API. To make this functionality available as early as possible, we release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode, and there's no guarantee that what is included in a preview version will be included in the released version. The preview of a version remains available for a minimum of six weeks after its release.
 
-The preview of a version will be available for a minimum of six weeks after it's released.
+### 2. Released
 
-### Released
+Once a preview version matures and is ready for release, it becomes available without the **-preview** suffix. Released versions don't include breaking changes, although the data model might still expand with additional functionality. We support released versions for a minimum of 12 months.
 
-Once a preview version matures enough for release, it will be made available without the **-preview** suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. 
+### 3. Deprecated
 
-### Deprecated
-
-Deprecated versions are no longer supported. Requests made to a deprecated version won't be fulfilled. If you attempt to request a deprecated or unsupported version, you'll receive an HTTP 410 response code and a message like:
+Deprecated versions are no longer supported, and requests to these versions aren't fulfilled. If you attempt to request a deprecated or unsupported version, you receive an HTTP 410 response code and a message such as:
 
 > *The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818*
  
 ## Breaking vs non-breaking changes
 
-The data model exposed by Analytics defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model. Breaking changes will be introduced in future versions. For more information, see 
-[OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
+The data model exposed by Analytics defines the contract between the service and its clients. According to the OData specification, clients must be tolerant of additive changes to the data model. Breaking changes get introduced in future versions. For more information, see [OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208).
 
 > [!NOTE]  
-> The system doesn't version any custom work item fields. Also, it's possible to cause breaking changes to your model by removing, or changing the types of work items or custom fields. All work items, and their revisions, will reflect the current custom field configuration.
+> The system doesn't version any custom work item fields. The system doesn't version any custom work item fields. Removing or changing the types of work items or custom fields can cause breaking changes to your model. All work items and their revisions reflect the current custom field configuration.
 
 ### Example of non-breaking changes
 
-Consider a scenario where a new `UserType` property is added to the `User` entity. For example, the metadata for **v1.0** version is as shown in the following syntax. 
+Consider a scenario where a new `UserType` property is added to the `User` entity. For example, the metadata for **v1.0** version is shown in the following syntax. 
 
 
 > [!div class="tabbedCodeSnippets"]
@@ -112,7 +111,7 @@ Consider a scenario where a new `UserType` property is added to the `User` entit
 > </EntityType>
 > ```
 
-For **v4.0-preview** version, the metadata has been augmented. Changes are additive and can be made available in previous versions.
+In the **v4.0-preview** version, the metadata is augmented with additive changes. These changes can also be made available in previous versions.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -142,12 +141,9 @@ For **v4.0-preview** version, the metadata has been augmented. Changes are addit
 > </EntityType>
 > ```
 
-
-
 ### Example of breaking changes
 
-Now consider a scenario where we revert to the original structure of the User entity, causing the removal of a previously available feature.
-
+Consider a scenario where we revert to the original structure of the `User` entity, resulting in the removal of a previously available feature.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -169,8 +165,7 @@ Now consider a scenario where we revert to the original structure of the User en
 > </EntityType>
 > ```
 
-Since removal of the `UserType` field is a breaking change, the field won't be removed until version **v2.0** of the API. Version **v1.0** of the data model continues to include the `UserType` field.
-
+Since removal of the `UserType` field is a breaking change, the field isn't removed until version **v2.0** of the API. Version **v1.0** of the data model continues to include the `UserType` field.
 
 ## Related articles
 
