@@ -19,7 +19,7 @@ ms.date: 09/12/2024
 
 Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. For more information, see [Add a widget to a dashboard](add-widget-to-dashboard.md).
 
-For example, you can add the **Build History** widget from the dashboard's **Add Widget** dialog box.
+For example, you can add the **Build History** widget from the dashboard's **Add Widget** dialog.
 
 :::image type="content" source="media/widget-build-history-chart.png" alt-text="Screenshot shows the Build History Widget which includes an icon and description.":::
 
@@ -175,7 +175,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <a id="chart-wit-widget"></a>
       Displays a progress or trend chart that builds off a shared work item query.
 
-      From the configuration dialog box, select a shared query and [specify the chart type and values](charts.md).      
+      From the configuration dialog, select a shared query and [specify the chart type and values](charts.md).      
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -255,7 +255,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <br/>
       <a id="query-tile-widget"></a> 
       A configurable tile to display the summary of shared query results.
-      From the configuration dialog box, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query.
+      From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query.
 
       To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
    :::column-end:::
@@ -422,7 +422,7 @@ Add build and release pipeline widgets to track the health of your builds and re
       <br/>
       <a id="build-history-widget"></a> 
       Displays a histogram of all builds run for the configured build pipeline.
-      From the configuration dialog box, select the build you want to monitor.
+      From the configuration dialog, select the build you want to monitor.
       Hover over a bar to learn how long the build took to complete. Select the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests.
    :::column-end:::
 :::row-end:::
@@ -494,7 +494,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
       <a id="test-trend-results"></a> <a id="test-results-widget"></a>
       A configurable tile that displays the trend of test results for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time. The widget surfaces patterns about test failures, test duration, and others.
 
-      From the configuration dialog box, select the build or release whose test results to monitor. There are multiple chart options to choose from, such as Line, Column, and Stacked Column, based on your preference. Optionally, map the trend of test duration on the existing chart by adding a secondary line chart.    
+      From the configuration dialog, select the build or release whose test results to monitor. There are multiple chart options to choose from, such as Line, Column, and Stacked Column, based on your preference. Optionally, map the trend of test duration on the existing chart by adding a secondary line chart.    
       
       To get deeper insights and higher configurability, see [Test Analytics](../../pipelines/test/test-analytics.md)
    :::column-end:::
@@ -547,7 +547,7 @@ To support adding, add one or more of the following widgets:
       <br/>
       <a id="markdown-widget"></a>  <a id="markdown"></a>   
 
-      A configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog box, add the information you want to share with your team.    
+      A configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team.    
       
       For more information, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md).  
    :::column-end:::
@@ -577,7 +577,7 @@ To support adding, add one or more of the following widgets:
       <a name="team-members-widget"></a> 
       Shows team member profiles and, on-hover, their user alias.
 
-      For team admins, supports access to the quick dialog box to [add or remove team members](../../organizations/settings/add-teams.md).     
+      For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).     
       
       > [!NOTE]  
       > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members).  
