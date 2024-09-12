@@ -25,6 +25,7 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 ## Prerequisites
 
 * If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
+* You must have the [Owner or Contributor role for the Azure subscription](add-backup-billing-managers.md) you want to use for billing.
 * You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 > [!NOTE]
@@ -34,25 +35,25 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Billing**.
+   
+1. Select **Billing**.
 
    ![Screenshot showing highlighted Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
-
-4. Select **Set up billing**.
+   
+1. Select **Set up billing**.
 
    ![Select Set up billing](media/shared/set-up-billing.png)
-
-5. Select your Azure subscription, and then select **Save**.
+   
+1. Select your Azure subscription, and then select **Save**.
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
-
-   > [!TIP]
+   
+      > [!TIP]
    > If you can't see an Azure Subscription associated with a different tenant ID, it’s likely due to authentication issues. Here’s how you can address this situation:
-   e to authentication issues. Here’s how you can address this situation:
+      e to authentication issues. Here’s how you can address this situation:
    >**Tenant context:**
    > - Your organization might be connected to 'Tenant A,' where your user account is registered.
    > - But, the Azure subscription you’re trying to access is associated with 'Tenant B,' a different Microsoft Entra ID tenant.
