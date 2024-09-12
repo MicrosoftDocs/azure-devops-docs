@@ -74,7 +74,7 @@ Questions that you might address during the review include:
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
 - *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can the issue be mitigated?*  
 
-For example, you might use delivery plans internally to share the schedule of features. By seeing the work that many teams have planned for the next three sprints, you can easily see if a plan has the right priorities and spot dependencies. 
+For example, you might use delivery plans internally to share the schedule of features. By seeing the work that many teams planned for the next three sprints, you can easily see if a plan has the right priorities and spot dependencies. 
 
 In this way, a delivery plan is a driver of alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences, if needed, and manage different work item types (stories, features, or epics). Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. Customize the card fields so that you see only the data fields that interest you and that apply for each work item type.  
 
@@ -136,7 +136,7 @@ A benefit of Delivery Plans is the ability to view multiple teams across the pro
 * Collapse all teams to focus on summary data. 
 * Minimize the number of fields displayed on cards.
 
-To gain a summary view of work that's scheduled, collapse all teams. You can then more easily look for gaps in the forecast.
+To gain a summary view of work scheduled, collapse all teams. You can then more easily look for gaps in the forecast.
 
 Expand or collapse each team row by selecting **Expand team row** or **Collapse team row** next to the team name.
 
@@ -156,7 +156,7 @@ The collapsed card view allows you to quickly switch back and forth between card
 
 ## View the rollup of features and epics 
 
-A rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable rollups, open your plan settings, select **Fields**, and then select **Show child rollup data**.
+A rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you added to your project. To enable rollups, open your plan settings, select **Fields**, and then select **Show child rollup data**.
 
 For example, here's a plan view of four scenarios with a rollup of the child features, user stories, and bugs for a single team.   
 
@@ -180,13 +180,16 @@ Here are some tips for printing portions of a plan:
 - Expand or collapse one or more teams and zoom in or out to get the view that you want. 
 - Take a screenshot of the plan view, or select the **Print** function of your browser. 
 
+> [!TIP]
+> To share a delivery plan with a team member, copy the URL and send the copied URL to your team member via email, chat, or any other communication tool your team uses.
+
 ## Related articles  
  
 - [Add or edit a delivery plan](add-edit-delivery-plan.md)
-- [Track dependencies by using Delivery Plans](track-dependencies.md)
-- [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md)
-- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
-- [Add teams](../../organizations/settings/add-teams.md)  
-- [Portfolio management](portfolio-management.md)  
-- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
+- [Track dependencies using Delivery Plans](track-dependencies.md)
+- [Filter backlogs, boards, and plans interactively](../backlogs/filter-backlogs-boards-plans.md)
+- [Understand backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
+- [Add teams](../../organizations/settings/add-teams.md)
+- [Manage portfolio](portfolio-management.md)
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
  

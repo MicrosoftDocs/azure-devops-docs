@@ -60,7 +60,7 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 ###  JavaScript sample
 
-This example shows how to register an object that's called when events occur on the work item form that may impact your contributed group. Please see [WorkItemFormGroup Sample](https://github.com/microsoft/azure-devops-extension-sample/blob/master/src/Samples/WorkItemFormGroup/WorkItemFormGroup.tsx) for more examples.
+This example shows how to register an object that's called when events occur on the work item form that may impact your contributed group.
 
 ```js   
 import { IWorkItemFormService, WorkItemTrackingServiceIds } from "azure-devops-extension-api/WorkItemTracking";

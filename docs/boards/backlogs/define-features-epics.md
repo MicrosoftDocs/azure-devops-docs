@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 01/04/2024
+ms.date: 09/11/2024
 ---
 
 # Define features and epics, organize your backlog
@@ -38,9 +38,12 @@ The following image shows a **features** portfolio backlog that consists of a fl
 
 ## What makes a feature or epic?  
 
-Epics and features are higher level containers. Typically user stories or backlog items roll up into features, and features roll up into epics, so keep this information in mind when you name your features and epics.
+Epics and features are higher-level containers used to organize work. Typically, user stories or backlog items roll up into features, and features roll up into epics. Keep this hierarchy in mind when naming your features and epics.
 
-As you define your features and epics, consider the time required to complete them. In general, you should complete backlog items, such as user stories or tasks, within a sprint. Features and epics might take one or more sprints to complete.
+- **Feature:** A feature is a significant piece of functionality that delivers value to the user. It usually encompasses multiple user stories or backlog items and might take one or more sprints to complete.
+- **Epic:** An epic is a large body of work that can be broken down into multiple features. It represents a major initiative or goal and might span several sprints or even releases.
+
+When you define features and epics, consider the time required to complete them. Generally, you should complete backlog items, such as user stories or tasks, within a sprint. Features and epics might take one or more sprints to complete.
 
 ## View a backlog
 

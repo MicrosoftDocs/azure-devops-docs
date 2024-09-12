@@ -4,6 +4,7 @@ description: Learn about the architecture, key concepts & terminology for Micros
 author: ElizaTar
 ms.author: elizatar
 ms.date: 08/22/2024
+ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand Managed DevOps Pools concepts and terminology so that I can set up a Managed DevOps Pool.
 ---
 
