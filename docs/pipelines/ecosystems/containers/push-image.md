@@ -39,7 +39,11 @@ Choose the Docker Hub option under [Docker registry service connection](../../li
 
 Choose the Azure Container Registry option under [Docker registry service connection](../../library/service-endpoints.md#azure-container-registry) and provide the information required by the authentication method you choose.
 
-You can also create your pipeline using the Docker template to build and push an image to Azure Container Registry.  This template automatically creates a service connection and an YAML pipeline for you.  For more information, see [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md).
+::: moniker range="azure-devops"
+
+You can also create your pipeline using the Docker template to build and push an image to Azure Container Registry.  This template automatically creates a service connection and a YAML pipeline for you.  For more information, see [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md).
+
+::: moniker-end
 
 ## [Google Artifact Registry](#tab/google)
 
@@ -137,7 +141,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
     - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 1. Select the **Starter pipeline** template to create a basic pipeline configuration.
 1. Replace the contents of **azure-pipelines.yml** with the following code. 
-    1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
+    1. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`. If you're using a self-hosted agent, set `vmImage` to the name of the pool that contains the self-hosted agent with Docker capability. You can add the `demands: docker` property to ensure an agent with Docker installed is selected.
     1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
     1. Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, to push to a Docker Hub repository, use `<your-docker-hub-username>/<repository-name>`, to push to a Google repository, use `<your-project-id>/<your-image-name>`.
 
