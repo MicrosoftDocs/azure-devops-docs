@@ -31,11 +31,11 @@ The steps to add a last refresh date vary based on the source of your Power BI r
 To add a column with the last refresh date of the dataset, do the following steps.  
 
 1. Load the Power BI *.pbix* file associated with your view in Power BI Desktop.  
-1. In the **Queries** section of the ribbon, select **Transform data** > **Transform data**.
+2. In the **Queries** section of the ribbon, select **Transform data** > **Transform data**.
 
    :::image type="content" source="media/edit-queries.png" alt-text="Screenshot of Power BI Desktop, Home tab, highlighted Transform Data button in Queries section." lightbox="media/edit-queries.png":::
 
-1. Select **Advanced Editor**.  
+3. Select **Advanced Editor**.  
 
    :::image type="content" source="media/advanced-editor.png" alt-text="Screenshot of highlighted Advanced Editor button." lightbox="media/advanced-editor.png":::
 
@@ -65,7 +65,7 @@ To add a column with the last refresh date of the dataset, do the following step
 
    ---
 
-1. Modify the query according to the following syntax.  
+4. Modify the query according to the following syntax.  
 
    ### [Private view](#tab/private/)
 
@@ -90,13 +90,13 @@ To add a column with the last refresh date of the dataset, do the following step
        #"Added Refresh Date"
    ```
  
-   ***
+   ---
 
    > [!NOTE]  
    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
-1. Select **Done**.
-1. Select **Close & Apply** to immediately refresh the dataset.
+5. Select **Done**.
+6. Select **Close & Apply** to immediately refresh the dataset.
 
    :::image type="content" source="media/transform-data/powerbi-close-apply.png" alt-text="Screenshot of Power BI Desktop, Home, highlighted Close & Apply button.":::
 
