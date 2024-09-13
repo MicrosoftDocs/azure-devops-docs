@@ -140,9 +140,9 @@ Choose **Refresh** to refresh report page data and the data model. After all que
 
 :::image type="content" source="media/last-refresh/refresh-data.png" alt-text="Screenshot of the Power BI Desktop refresh option.":::
 
-## Related content
+## Related articles
 
-- [About Power BI integration](overview.md)
+- [Learn about Power BI integration](overview.md)
 - [Create an Analytics view in Azure DevOps](analytics-views-create.md)
 - [Create a Power BI report using a default Analytics view](create-quick-report.md)
 - [Publish a Power BI Desktop file to Power BI](publish-power-bi-desktop-to-power-bi.md)
