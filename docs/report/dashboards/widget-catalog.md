@@ -628,9 +628,9 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 <a id="related-notes"></a>  
 
-## Related content
+## Related articles
 
-- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
+- [View FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Track progress with status and trend query-based charts](charts.md)
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add widgets to a dashboard](add-widget-to-dashboard.md)  
