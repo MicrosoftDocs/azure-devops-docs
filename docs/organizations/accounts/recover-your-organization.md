@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-After you delete an organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover the organization. After 28 days, the organization and data are permanently deleted.
+After you delete an organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover the organization. After 28 days, the organization and data are permanently deleted. In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 
 ## Related articles
 
-* [Delete your organization from Azure DevOps](delete-your-organization.md)
+* [Delete an organization](delete-your-organization.md)
 * [Create a new organization](create-organization.md)
 * [Change organization owner](change-organization-ownership.md)
 * [Change organization data region](change-organization-location.md)
