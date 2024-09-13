@@ -73,7 +73,7 @@ param
   [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIp -EndIPAddress $agentIP
+New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIP -EndIPAddress $agentIP
 ```
 
 ### Classic
@@ -91,12 +91,12 @@ $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIP -EndIPAddress $agentIP -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
 function Update-AzureSQLServerFirewallRule{
   $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIP -EndIPAddress $agentIP -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
 if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $FirewallRuleName -ErrorAction SilentlyContinue) -eq $null)
@@ -169,12 +169,6 @@ steps:
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
-
-- task: CmdLine@2
-  displayName: Run Sqlcmd
-  inputs:
-    filename: sqlcmd
-    arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@5
   displayName: 'Azure PowerShell script'
