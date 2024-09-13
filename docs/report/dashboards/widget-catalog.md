@@ -496,7 +496,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 
       From the configuration dialog, select the build or release whose test results to monitor. There are multiple chart options to choose from, such as Line, Column, and Stacked Column, based on your preference. Optionally, map the trend of test duration on the existing chart by adding a secondary line chart.    
       
-      To get deeper insights and higher configurability, see [Test Analytics](../../pipelines/test/test-analytics.md)
+      To get deeper insights and higher configurability, see [Test Analytics](../../pipelines/test/test-analytics.md).
    :::column-end:::
 :::row-end:::
 :::row:::
