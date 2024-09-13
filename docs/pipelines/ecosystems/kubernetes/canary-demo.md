@@ -305,7 +305,7 @@ You can deploy with YAML or Classic.
 
 ### (Optional) Add manual approval for promoting or rejecting canary
 
-You can intervene manually with YAML or Classic. To add a Kubernetes resource in a new environment, you'll need to have more than one AKS instance. 
+You can intervene manually with YAML or Classic. 
 
 #### [YAML](#tab/yaml/)
 
@@ -454,7 +454,7 @@ Once approved, the pipeline deploys the stable version of the `sampleapp` worklo
 
 ### [Classic](#tab/classic/)
 
-1. In *app/app.py*, change `success_rate = 5` to `success_rate = 10`. This change triggers the  pipeline, leading to a build and push of the image to the container registry. The continuous deployment trigger, set up earlier on the image push event, results in triggering the release pipeline.
+1. In *app/app.py*, change `success_rate = 50` to `success_rate = 100`. This change triggers the  pipeline, leading to a build and push of the image to the container registry. The continuous deployment trigger, set up earlier on the image push event, results in triggering the release pipeline.
 1. In the **CanaryK8sDemo** release pipeline, select the **Promote/reject canary** stage of the release, where it's waiting on manual intervention.
 1. Select **Resume/Reject**, and then select **Resume** in the subsequent dialog box. This deploys the stable version of the workloads (the `sampleapp` deployment in *manifests/deployment.yml*) to the namespace.
 
@@ -468,55 +468,3 @@ In *app/app.py*, change `success_rate = 100` to `success_rate = 20`.
 
 This change triggers the build pipeline, resulting in the build and push of the image to the container registry. This process in turn triggers the release pipeline and begins the **Deploy canary** stage.
 
-## Simulate requests
-
-On your development machine, run the following commands, and keep it running to send a constant stream of requests at the `sampleapp` service. `sampleapp` routes the requests to the pods spun by the stable `sampleapp` deployment, and to the pods spun up by the `sampleapp-baseline` and `sampleapp-canary` deployments. The selector specified for `sampleapp` is applicable to all of these pods.
-
-```
-FORTIO_POD=$(kubectl get pod | grep fortio | awk '{ print $1 }')
-kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-errors -t 0 http://sampleapp:8080/
-```
-
-## Set up Grafana dashboard
-
-1. Run the following port-forwarding command on your local development machine to be able to access Grafana.
-    ```
-    kubectl port-forward svc/sampleapp-grafana 3000:80
-    ```
-1. In a browser, open the following URL.
-    ```
-    http://localhost:3000/login
-    ```
-1. When you're prompted for credentials, unless the `adminPassword` value was overridden during the `prometheus-operator` Helm chart installation, you can use the following values:
-    - username: admin
-    - password: prom-operator
-1. From the menu on the left, choose **+** > **Dashboard** > **Graph**.
-1. Select anywhere on the newly added panel, and type `e` to edit the panel.
-1. On the **Metrics** tab, enter the following query:
-    ```
-    rate(requests_total{pod=~"sampleapp-.*", custom_status="good"}[1m])
-    ```
-1. On the **General** tab, change the name of this panel to **All sampleapp pods**.
-1. In the overview bar at the top of the page, change the duration range to **Last 5 minutes** or **Last 15 minutes**.
-1. To save this panel, select the save icon in the overview bar.
-1. The preceding panel visualizes success rate metrics from all the variants. These include stable (from the `sampleapp` deployment), baseline (from the `sampleapp-baseline` deployment), and canary (from the `sampleapp-canary` deployment). You can visualize just the baseline and canary metrics by adding another panel, with the following configuration: 
-    - On the **General** tab, for **Title**, select **sampleapp baseline and canary**.
-    - On the **Metrics** tab, use the following query: 
-    ```
-    rate(requests_total{pod=~"sampleapp-baseline-.*|sampleapp-canary-.*", custom_status="good"}[1m])
-    ```
-    
-    > [!NOTE]
-    > The panel for baseline and canary metrics will only have metrics available for comparison under certain conditions. These conditions are when the **Deploy canary** stage has successfully completed, and the **Promote/reject canary** stage is waiting on manual intervention.
-
-    > [!TIP]
-    > Set up [annotations for Grafana dashboards](../../../service-hooks/services/grafana.md) to visually depict stage completion events for **Deploy canary** and **Promote/reject canary**. This is helpful so that you know when to start comparing the baseline with the canary, and when the promotion or rejection of the canary has completed, respectively.
-
-## Compare baseline and canary
-
-1. At this point, the **Deploy canary** stage has successfully completed (based on the change of `success_rate` from `10` to `20`). The **Promote/reject canary** stage is waiting on manual intervention. You can now compare the success rate (as determined by `custom_status=good`) of the baseline and canary variants in the Grafana dashboard. It should look similar to the following: 
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows a comparison of baseline and canary metrics.](../media/k8s-baseline-canary.png)
-
-1. Based on the observation that the success rate is higher for canary, promote the canary. Select **Resume** in the manual intervention task.
