@@ -27,8 +27,6 @@ ms.date: 03/04/2024
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
-
-
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
 * **Pipelines**
@@ -42,7 +40,12 @@ ms.date: 03/04/2024
 ::: moniker range="=azure-devops"
 
 * **Pipelines**
-  * [Job state changed](#job.statechanged)
+  * Check updated
+  * Elastic agent pool resized
+  * REMOVE[Job state changed](#job.statechanged)
+  * Manual intervention pending
+  * Project-level agent pool created
+  * Project-level agent pool updated
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
@@ -55,9 +58,15 @@ ms.date: 03/04/2024
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
-  * [Pull request merge commit created](#git.pullrequest.merged)
+  * Pull request merge attempted
+  * REMOVE[Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
   * [Pull request commented on](#git.pullrequest.commented-on)
+  * Repository created
+  * Repository deleted
+  * Repository forked
+  * Repository renamed
+  * Repository status changed
 
 * **Work items**
   * [Work item commented on](#workitem.commented)
@@ -65,6 +74,9 @@ ms.date: 03/04/2024
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
+
+* Service connection created
+* Service connection updated
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving Webhooks from Azure DevOps.
