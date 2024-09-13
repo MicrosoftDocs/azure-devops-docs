@@ -212,12 +212,7 @@ To clean up your resource group:
     ```azurecli
     az group delete --name hello-world-nodejs-rg
     ```
-To delete your Azure DevOps project, including the build pipeline:
-
-1. In Azure DevOps, navigate to your project. 
-1. Select **Project settings**.
-1. In the **Project details**, select **Delete**.
-
+To delete your Azure DevOps project, including the build pipeline, see [Delete project](../../organizations/projects/delete-project.md).
 
 ## Related content
 

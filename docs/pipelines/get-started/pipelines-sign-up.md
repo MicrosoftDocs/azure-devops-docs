@@ -148,7 +148,7 @@ For more information, see [Add organization users for Azure DevOps Services](../
 
 You can rename and delete your organization, or change the organization location. For more information, see the following articles:
 
-- [Manage organizations](../../organizations/accounts/organization-management.md)
+- [Delete an organization](../../organizations/accounts/delete-your-organization.md)
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 
