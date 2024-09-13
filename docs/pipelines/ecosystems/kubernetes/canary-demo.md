@@ -325,26 +325,42 @@ You can intervene manually with YAML or Classic. To add a Kubernetes resource in
       displayName: Promote or Reject canary
       dependsOn: DeployCanary
       condition: succeeded()
-    
+        
       jobs:
       - deployment: PromoteCanary
         displayName: Promote Canary
         pool: 
           vmImage: ubuntu-latest
-        environment: 'akspromote.canarydemo'
+        environment: 'akspromote'
         strategy:
           runOnce:
             deploy:
-              steps:            
-              - task: KubernetesManifest@0
+              steps:      
+              - task: KubernetesManifest@1
+                displayName: Create Docker Registry Secret for akspromote
+                inputs:
+                  action: 'createSecret'
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'my-resource-group'
+                  kubernetesCluster: 'my-aks-cluster'
+                  secretType: 'dockerRegistry'
+                  secretName: 'my-acr-secret'
+                  dockerRegistryEndpoint: 'azure-pipelines-canary-acr'
+          
+              - task: KubernetesManifest@1
                 displayName: promote canary
                 inputs:
                   action: 'promote'
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'my-resource-group'
+                  kubernetesCluster: 'my-aks-cluster'
                   strategy: 'canary'
                   manifests: '$(Pipeline.Workspace)/manifests/*'
                   containers: '$(containerRegistry)/$(imageRepository):$(tag)'
-                  imagePullSecrets: '$(imagePullSecret)'
-    ```
+                  imagePullSecrets: 'my-acr-secret'
+        ```
 
 1. Add the following `RejectCanary`stage at the end of the file that rolls back the changes.
     
@@ -363,14 +379,30 @@ You can intervene manually with YAML or Classic. To add a Kubernetes resource in
         strategy:
           runOnce:
             deploy:
-              steps:            
-              - task: KubernetesManifest@0
-                displayName: reject canary
+              steps:        
+              - task: KubernetesManifest@1
+                displayName: Create Docker Registry Secret for reject canary
+                inputs:
+                  action: 'createSecret'
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'kubernetes-testing'
+                  kubernetesCluster: 'aksclustersept12'
+                  secretType: 'dockerRegistry'
+                  secretName: 'my-acr-secret'
+                  dockerRegistryEndpoint: 'azure-pipelines-canary-acr'    
+              - task: KubernetesManifest@1
+                displayName: Reject canary deployment
                 inputs:
                   action: 'reject'
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'my-resource-group'
+                  kubernetesCluster: 'my-aks-cluster'
+                  namespace: 'default'
                   strategy: 'canary'
                   manifests: '$(Pipeline.Workspace)/manifests/*'
-    ```
+        ```
 1. Select **Validate and save**, and save the pipeline directly to the main branch.
 
 #### [Classic](#tab/classic/)
