@@ -483,3 +483,4 @@ Once rejected, the pipeline prevents the code deployment.
 
 ## Clean up
 
+ If you're not going to continue to use this application, delete the resource group in Azure portal and the project in Azure DevOps.
