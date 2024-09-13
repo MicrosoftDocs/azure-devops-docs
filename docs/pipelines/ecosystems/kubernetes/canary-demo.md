@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2022'
 
 This step-by-step guide covers how to use the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) with the `canary` strategy. A *canary* deployment strategy deploys new versions of an application next to stable, production versions.
 
-You use the associated workflow to evaluate the code and compare the baseline and canary app deployments. Based on the evaluation, you decide whether to promote or reject the canary deployment.
+You use the associated workflow to deploy the code and compare the baseline and canary app deployments. Based on the evaluation, you decide whether to promote or reject the canary deployment.
 
 This tutorial uses Docker Registry and Azure Resource Manager service connections to connect to Azure resources. For an Azure Kubernetes Service (AKS) private cluster or a cluster that has local accounts disabled, an [Azure Resource Manager service connections](../../library/service-endpoints.md#azure-resource-manager-service-connection) is a better way to connect.
 
@@ -49,7 +49,7 @@ The GitHub repository contains the following files:
 1. Create a [Docker Registry service connection](../../library/service-endpoints.md#azure-container-registry) named **azure-pipelines-canary-acr** that's associated with your Azure Container Registry instance.
 1. Create a [Azure Resource Manager service connection with workload identity](../../library/service-endpoints.md##create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) named **azure-pipelines-canary-k8s** for your resource group.
 
-## Set up continuous integration
+## Add the build stage
 
 1. In your Azure DevOps project, go to **Pipelines** > **Create Pipeline** or **New pipeline**.
 1. Select **GitHub** for your code location, and select your forked **azure-pipelines-canary-k8s** repository.
@@ -303,7 +303,7 @@ You can deploy with YAML or Classic.
 
 * * *
 
-### (Optional) Add manual approval for promoting or rejecting canary
+### Add manual approval for promoting or rejecting canary deployment
 
 You can intervene manually with YAML or Classic. 
 
@@ -460,11 +460,26 @@ Once approved, the pipeline deploys the stable version of the `sampleapp` worklo
 
 * * *
 
-## Initiate the canary workflow
+## Initiate the canary workflow and reject the approval
 
-The stable version of the `sampleapp` workload now exists in the cluster. Next, make the following change to the simulation application:
- 
-In *app/app.py*, change `success_rate = 100` to `success_rate = 20`.
+The stable version of the `sampleapp` workload now exists in the cluster. Next, make the following change to the simulation application.
 
-This change triggers the build pipeline, resulting in the build and push of the image to the container registry. This process in turn triggers the release pipeline and begins the **Deploy canary** stage.
+
+### [YAML](#tab/yaml/)
+
+1. In *app/app.py*, change `success_rate = 50` to `success_rate = 100`. This change triggers the pipeline, building and pushing the image to the container registry, and also triggers the `DeployCanary` stage.
+1. Because you configured an approval on the `akspromote` environment, the release waits before running that stage. 
+1. On the build run summary page, select **Review** and then select **Reject** in the subsequent dialog box. This rejects  deployment.
+
+Once rejected, the pipeline prevents the code deployment.
+
+### [Classic](#tab/classic/)
+
+1. In *app/app.py*, change `success_rate = 50` to `success_rate = 100`. This change triggers the  pipeline, leading to a build and push of the image to the container registry. The continuous deployment trigger, set up earlier on the image push event, results in triggering the release pipeline.
+1. In the **CanaryK8sDemo** release pipeline, select the **Promote/reject canary** stage of the release, where it's waiting on manual intervention.
+1. Select **Resume/Reject**, and then select **Reject** in the subsequent dialog box. This rejects  deployment.
+
+* * *
+
+## Clean up
 
