@@ -47,7 +47,7 @@ The GitHub repository contains the following files:
 
 1. In your Azure DevOps project, go to **Project settings** > **Pipelines** > **Service connections**.
 1. Create a [Docker Registry service connection](../../library/service-endpoints.md#azure-container-registry) named **azure-pipelines-canary-acr** that's associated with your Azure Container Registry instance.
-1. Create a [Azure Resource Manager service connection with workload identity](../../library/service-endpoints.md##create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) named **azure-pipelines-canary-k8s** for your resource group.
+1. Create a [Azure Resource Manager service connection with workload identity](../../library/service-endpoints.md) named **azure-pipelines-canary-k8s** for your resource group.
 
 ## Add the build stage
 
