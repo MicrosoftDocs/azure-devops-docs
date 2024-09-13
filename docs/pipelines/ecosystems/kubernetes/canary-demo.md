@@ -166,9 +166,47 @@ You can deploy with YAML or Classic.
           artifact: misc
     ```
 
-1. Add another stage at the end of the YAML file to deploy the canary version.
+1. Add another stage at the end of the YAML file to deploy the canary version. Replace the values `my-resource-group` and `my-aks-cluster` with your resource group and Azure Kubernetes Service cluster name. 
 
     ```YAML
+    trigger:
+    - main
+    
+    pool:
+      vmImage: ubuntu-latest
+    
+    variables:
+      imageName: azure-pipelines-canary-k8s
+      dockerRegistryServiceConnection: azure-pipelines-canary-acr
+      imageRepository: 'azure-pipelines-canary-k8s'
+      containerRegistry: kubernetessept4.azurecr.io
+      tag: '$(Build.BuildId)'
+    
+    stages:
+    - stage: Build
+      displayName: Build stage
+      jobs:  
+      - job: Build
+        displayName: Build
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+        - task: Docker@2
+          displayName: Build and push image
+          inputs:
+            containerRegistry: $(dockerRegistryServiceConnection)
+            repository: $(imageName)
+            command: buildAndPush
+            Dockerfile: app/Dockerfile
+            tags: |
+              $(tag)
+              
+        - publish: manifests
+          artifact: manifests
+    
+        - publish: misc
+          artifact: misc
+    
     - stage: DeployCanary
       displayName: Deploy canary
       dependsOn: Build
@@ -184,30 +222,43 @@ You can deploy with YAML or Classic.
           runOnce:
             deploy:
               steps:
-              - task: KubernetesManifest@0
-                displayName: Create imagePullSecret
+              - task: KubernetesManifest@1
+                displayName: Create Docker Registry Secret
                 inputs:
-                  action: createSecret
-                  secretName: azure-pipelines-canary-k8s
-                  dockerRegistryEndpoint: azure-pipelines-canary-acr
-              - task: KubernetesManifest@0
+                  action: 'createSecret'
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'my-resource-group'
+                  kubernetesCluster: 'my-aks-cluster'
+                  secretType: 'dockerRegistry'
+                  secretName: 'my-acr-secret'
+                  dockerRegistryEndpoint: 'azure-pipelines-canary-acr'
+    
+              - task: KubernetesManifest@1
                 displayName: Deploy to Kubernetes cluster
                 inputs:
                   action: 'deploy'
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'my-resource-group'
+                  kubernetesCluster: 'my-aks-cluster'
                   strategy: 'canary'
                   percentage: '25'
                   manifests: |
                     $(Pipeline.Workspace)/manifests/deployment.yml
                     $(Pipeline.Workspace)/manifests/service.yml
                   containers: '$(containerRegistry)/$(imageRepository):$(tag)'
-                  imagePullSecrets: azure-pipelines-canary-k8s
+                  imagePullSecrets: 'my-acr-secret'
     
-              - task: KubernetesManifest@0
-                displayName: Deploy Forbio and ServiceMonitor
+              - task: KubernetesManifest@1
+                displayName: Deploy Forbio to Kubernetes cluster
                 inputs:
                   action: 'deploy'
-                  manifests: |
-                    $(Pipeline.Workspace)/misc/*
+                  connectionType: 'azureResourceManager'
+                  azureSubscriptionConnection: 'azure-pipelines-canary-sc'
+                  azureResourceGroup: 'my-resource-group'
+                  kubernetesCluster: 'my-aks-cluster'
+                  manifests: '$(Pipeline.Workspace)/misc/*'
     ```
 1. Select **Validate and save**, and save the pipeline directly to the main branch.
 
@@ -252,13 +303,13 @@ You can deploy with YAML or Classic.
 
 * * *
 
-### Add manual approval for promoting or rejecting canary
+### (Optional) Add manual approval for promoting or rejecting canary
 
-You can intervene manually with YAML or Classic.
+You can intervene manually with YAML or Classic. To add a Kubernetes resource in a new environment, you'll need to have more than one AKS instance. 
 
 #### [YAML](#tab/yaml/)
 
-1. Create a new Kubernetes environment called *akspromote* in the **canarydemo** namespace you created previously.
+1. Create a new Kubernetes environment called *akspromote*.
 1. Open the new **akspromote** environment from the list of environments, and select **Approvals** on the **Approvals and checks** tab.
 1. On the **Approvals** screen, add your own user account under **Approvers**.
 1. Expand **Advanced**, and make sure **Allow approvers to approve their own runs** is selected.
