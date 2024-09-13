@@ -199,13 +199,13 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 1. Use the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to invoke SQLCMD and execute your scripts. Add the following inline script to your task:
 
-    ```dotnetcli
+    ```PowerShell
     Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
     ```
 
 1. Use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
 
-:::image type="content" source="media/classic-sql.png" alt-text="A screenshot showing a classic pipeline to run SQL script.":::
+    :::image type="content" source="media/sql-add-firewall-rules.png" alt-text="A screenshot displaying a classic pipeline to add firewall rules and run SQL scripts.":::
 
 * * *
 
