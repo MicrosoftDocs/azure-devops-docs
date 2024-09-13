@@ -42,7 +42,6 @@ ms.date: 03/04/2024
 * **Pipelines**
   * Check updated
   * Elastic agent pool resized
-  * REMOVE[Job state changed](#job.statechanged)
   * Manual intervention pending
   * Project-level agent pool created
   * Project-level agent pool updated
@@ -58,8 +57,7 @@ ms.date: 03/04/2024
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
-  * Pull request merge attempted
-  * REMOVE[Pull request merge commit created](#git.pullrequest.merged)
+  * [Pull request merge attempted](#git.pullrequest.merge.attempted)
   * [Pull request updated](#git.pullrequest.updated)
   * [Pull request commented on](#git.pullrequest.commented-on)
   * Repository created
@@ -89,7 +87,7 @@ ms.date: 03/04/2024
 
 Event: A build completes.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `build.complete`
 * Resource Name: `build`
 
@@ -112,14 +110,14 @@ Event: A build completes.
   "eventType": "build.complete",
   "publisherId": "tfs",
   "message": {
-    "text": "Build 20221202.1 succeeded",
-    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20221202.1</a> succeeded",
-    "markdown": "Build [20221202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
+    "text": "Build 20241202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20241202.1</a> succeeded",
+    "markdown": "Build [20241202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
   },
   "detailedMessage": {
-    "text": "Build 20221202.1 succeeded",
-    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20221202.1</a> succeeded",
-    "markdown": "Build [20221202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
+    "text": "Build 20241202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20241202.1</a> succeeded",
+    "markdown": "Build [20241202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
   },
   "resource": {
     "_links": {
@@ -149,19 +147,19 @@ Event: A build completes.
     ],
     "triggerInfo": {},
     "id": 2727068,
-    "buildNumber": "20221202.1",
+    "buildNumber": "20241202.1",
     "status": "completed",
     "result": "succeeded",
-    "queueTime": "2022-12-02T12:18:45.7367977Z",
-    "startTime": "2022-12-02T12:18:56.6205723Z",
-    "finishTime": "2022-12-02T12:21:08.520904Z",
+    "queueTime": "2024-12-02T12:18:45.7367977Z",
+    "startTime": "2024-12-02T12:18:56.6205723Z",
+    "finishTime": "2024-12-02T12:21:08.520904Z",
     "url": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/Builds/2727068",
     "definition": {
       "drafts": [],
       "id": 4658,
       "name": "MainRepo (1)",
       "url": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/Definitions/4658?revision=1",
-      "uri": "vstfs:///Build/Definition/4658",
+      "uri": "azure-devops:///Build/Definition/4658",
       "path": "\\",
       "type": "build",
       "queueStatus": "enabled",
@@ -173,7 +171,7 @@ Event: A build completes.
         "state": "wellFormed",
         "revision": 876,
         "visibility": "organization",
-        "lastUpdateTime": "2022-04-06T14:51:16.337Z"
+        "lastUpdateTime": "2024-04-06T14:51:16.337Z"
       }
     },
     "buildNumberRevision": 1,
@@ -184,9 +182,9 @@ Event: A build completes.
       "state": "wellFormed",
       "revision": 876,
       "visibility": "organization",
-      "lastUpdateTime": "2022-04-06T14:51:16.337Z"
+      "lastUpdateTime": "2024-04-06T14:51:16.337Z"
     },
-    "uri": "vstfs:///Build/Build/2727068",
+    "uri": "azure-devops:///Build/Build/2727068",
     "sourceBranch": "refs/heads/main",
     "sourceVersion": "6e12f6141917f66a2964af55952ee33914d2d91f",
     "queue": {
@@ -201,7 +199,7 @@ Event: A build completes.
     "priority": "normal",
     "reason": "manual",
     "requestedFor": {
-      "displayName": "Jack Fabrikam",
+      "displayName": "Fabrikam Fiber",
       "url": "https://spsprodwus22.vssps.visualstudio.com/A9985ce4a-0206-43df-a8ea-076ae68596a9/_apis/Identities/57a5d794-9773-6c32-bbb6-550585695119",
       "_links": {
         "avatar": {
@@ -209,12 +207,12 @@ Event: A build completes.
         }
       },
       "id": "57a5d794-9473-6c32-bbb6-550585695119",
-      "uniqueName": "jack@FabrikamFiber.com",
+      "uniqueName": "chuck@FabrikamFiber.com",
       "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc1My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5",
       "descriptor": "aad.NTdhNWQ3OTQtOTc6My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5"
     },
     "requestedBy": {
-      "displayName": "Jack Fabrikam",
+      "displayName": "Chuck Reinhart",
       "url": "https://spsprodwus22.vssps.visualstudio.com/A9985ce4a-0206-43df-a8ea-076ae68596a9/_apis/Identities/57a5d794-9773-6c32-bbb6-550585695119",
       "_links": {
         "avatar": {
@@ -222,11 +220,11 @@ Event: A build completes.
         }
       },
       "id": "57a5d794-9473-6c32-bbb6-550585695119",
-      "uniqueName": "jack@FabrikamFiber.com",
+      "uniqueName": "chuck@FabrikamFiber.com",
       "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc1My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5",
       "descriptor": "aad.NTdhNWQ3OTQtOTc6My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5"
     },
-    "lastChangedDate": "2022-12-02T12:21:08.96Z",
+    "lastChangedDate": "2024-12-02T12:21:08.96Z",
     "lastChangedBy": {
       "displayName": "Microsoft.VisualStudio.Services.TFS",
       "url": "https://spsprodwus22.vssps.visualstudio.com/A9982ce4a-0206-43df-a8ea-076ae68596a9/_apis/Identities/00000002-0000-8888-8000-000000000000",
@@ -275,7 +273,7 @@ Event: A build completes.
       "baseUrl": "https://dev.azure.com/FabrikamFiber/"
     }
   },
-  "createdDate": "2022-12-02T12:21:13.8866607Z"
+  "createdDate": "2024-12-02T12:21:13.8866607Z"
 }
 ```
 
@@ -439,7 +437,7 @@ Event: A release was abandoned.
       "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     }
   },
-  "createdDate": "2016-09-19T13:03:27.784654Z"
+  "createdDate": "2024-09-19T13:03:27.784654Z"
 }
 ```
 
@@ -603,7 +601,7 @@ Event: A release was created.
       "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     }
   },
-  "createdDate": "2016-09-19T13:03:27.6570261Z"
+  "createdDate": "2024-09-19T13:03:27.6570261Z"
 }
 ```
 
@@ -811,7 +809,7 @@ Event: A deployment approval is completed.
       "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     }
   },
-  "createdDate": "2016-09-19T13:03:28.1594606Z"
+  "createdDate": "2024-09-19T13:03:28.1594606Z"
 }
 ```
 
@@ -1011,7 +1009,7 @@ Event: A deployment approval is requested.
       "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     }
   },
-  "createdDate": "2016-09-19T13:03:28.0320509Z"
+  "createdDate": "2024-09-19T13:03:28.0320509Z"
 }
 ```
 
@@ -1133,7 +1131,7 @@ Event: A deployment completed.
       "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     }
   },
-  "createdDate": "2016-09-19T13:03:28.5345098Z"
+  "createdDate": "2024-09-19T13:03:28.5345098Z"
 }
 ```
 
@@ -1290,81 +1288,13 @@ Event: A deployment started.
 ```
 
 ::: moniker range="=azure-devops"
+
 ## Pipelines
-
-<a name="job.statechanged"></a>
-
-### Job state changed
-
-Event: Overall statuses of a job changed. A job within a run transitioned to skip, run, or complete.
-
-* Publisher ID: `pipelines`
-* Event ID: `ms.vss-pipelines.job-state-changed-event`
-* Resource Name: `resource`
-
-#### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `state`: Filter events based on the new state of the job
-   * Valid values: 
-      * `Skipped` 
-      * `Running` 
-      * `Completed` 
-
-#### Sample payload
-```json
-{
-    "subscriptionId": "8d91ad83-1db5-4d43-8c5a-9bb2239644b1",
-    "notificationId": 29,
-    "id": "fcad4962-f3a6-4fbf-9653-2058c304503f",
-    "eventType": "ms.vss-pipelines.job-state-changed-event",
-    "publisherId": "pipelines",
-    "message":
-    {
-        "text": "Run 20221121.5 stage Build job Compile succeeded.",
-        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
-        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
-    },
-    "detailedMessage":
-    {
-        "text": "Run 20221121.5 stage Build job Compile succeeded.",
-        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
-        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
-    },
-    "resource":
-    {
-        "job":
-        {
-            "_links":
-            {
-                "web":
-                {
-                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088"
-                },
-                "pipeline.web":
-                {
-                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/definition?definitionId=4647"
-                }
-            },
-            "id": "e87e3d16-29b0-5003-7d86-82b704b96244",
-            "name": "Compile",
-            "state": "completed",
-            "result": "succeeded",
-            "startTime": "2022-11-21T16:10:28.49Z",
-            "finishTime": "2022-11-21T16:10:53.66Z"
-        },
-        "stage": { ... },
-        "run": { ... },
-        "pipeline": { ... },
-        "repositories": [ ... ]
-    },
-    "resourceVersion": "5.1-preview.1",
-    "createdDate": "2022-11-21T16:11:02.9207334Z"
-}
-```
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
+
 <a name="run.statechanged"></a>
 
 ### Run state changed
@@ -1446,13 +1376,13 @@ Event: Overall statuses of a pipeline run changed. A new run started, or a run t
           {
             "name": "Fabrikam John",
             "email": "john@fabrikamfiber.com",
-            "date": "2022-11-11T15:09:21Z"
+            "date": "2024-11-11T15:09:21Z"
           },
           "committer":
           {
             "name": "Fabrikam John",
             "email": "john@fabrikamfiber.com",
-            "date": "2022-11-11T15:09:21Z"
+            "date": "2024-11-11T15:09:21Z"
           },
           "message": "Added Viva support"
         },
@@ -1561,13 +1491,13 @@ Event: A new stage started, or a stage transitioned to canceling, canceled, fail
           {
             "name": "Fabrikam John",
             "email": "john@fabrikamfiber.com",
-            "date": "2022-11-11T15:09:21Z"
+            "date": "2024-11-11T15:09:21Z"
           },
           "committer":
           {
             "name": "Fabrikam John",
             "email": "john@fabrikamfiber.com",
-            "date": "2022-11-11T15:09:21Z"
+            "date": "2024-11-11T15:09:21Z"
           },
           "message": "Added Viva support"
         },
@@ -1804,15 +1734,15 @@ Event: A new job is running, or it completed, or is waiting for an agent.
     "publisherId": "pipelines",
     "message":
     {
-        "text": "Run 20221121.5 stage Build job Compile succeeded.",
-        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
-        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+        "text": "Run 20241121.5 stage Build job Compile succeeded.",
+        "html": "Run 20241121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20241121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
     },
     "detailedMessage":
     {
-        "text": "Run 20221121.5 stage Build job Compile succeeded.",
-        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
-        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+        "text": "Run 20241121.5 stage Build job Compile succeeded.",
+        "html": "Run 20241121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20241121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
     },
     "resource":
     {
@@ -1833,8 +1763,8 @@ Event: A new job is running, or it completed, or is waiting for an agent.
             "name": "__default",
             "state": "completed",
             "result": "succeeded",
-            "startTime": "2022-11-21T16:42:52.7761408Z",
-            "finishTime": "2022-11-21T16:42:52.7761408Z"
+            "startTime": "2024-11-21T16:42:52.7761408Z",
+            "finishTime": "2024-11-21T16:42:52.7761408Z"
         },
         "stage":
         {
@@ -1858,8 +1788,8 @@ Event: A new job is running, or it completed, or is waiting for an agent.
             },
             "state": "completed",
             "result": "succeeded",
-            "createdDate": "2022-11-21T16:42:52.7761408Z",
-            "finishedDate": "2022-11-21T16:42:52.7761408Z",
+            "createdDate": "2024-11-21T16:42:52.7761408Z",
+            "finishedDate": "2024-11-21T16:42:52.7761408Z",
             "id": 2,
             "name": "2"
         },
@@ -1881,13 +1811,13 @@ Event: A new job is running, or it completed, or is waiting for an agent.
                     {
                         "name": "Fabrikam John",
                         "email": "john@fabrikamfiber.com",
-                        "date": "2022-11-11T15:09:21Z"
+                        "date": "2024-11-11T15:09:21Z"
                     },
                     "committer":
                     {
                         "name": "Fabrikam John",
                         "email": "john@fabrikamfiber.com",
-                        "date": "2022-11-11T15:09:21Z"
+                        "date": "2024-11-11T15:09:21Z"
                     },
                     "message": "Added Viva support"
                 },
@@ -1901,13 +1831,13 @@ Event: A new job is running, or it completed, or is waiting for an agent.
                     {
                         "name": "Fabrikam John",
                         "email": "john@github.com",
-                        "date": "2022-08-11T15:05:20Z"
+                        "date": "2024-08-11T15:05:20Z"
                     },
                     "committer":
                     {
                         "name": "Fabrikam John",
                         "email": "john@github.com",
-                        "date": "2022-08-11T15:05:20Z"
+                        "date": "2024-08-11T15:05:20Z"
                     },
                     "message": "Added Viva open source REST API library"
                 },
@@ -1931,7 +1861,7 @@ Event: A new job is running, or it completed, or is waiting for an agent.
             "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
         }
     },
-    "createdDate": "2022-11-21T16:42:53.5254422Z"
+    "createdDate": "2024-11-21T16:42:53.5254422Z"
 }
 ```
 
@@ -1945,7 +1875,7 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 
 Event: A changeset is checked into TFVC.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `tfvc.checkin`
 * Resource Name: `changeset`
 
@@ -1965,24 +1895,24 @@ Event: A changeset is checked into TFVC.
   "message": {
     "text": "Normal Paulk checked in changeset 18: Dropping in new Java sample",
     "html": "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
-    "markdown": "Normal Paulk checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
+    "markdown": "Chuck Reinhart checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
   },
   "detailedMessage": {
-    "text": "Normal Paulk checked in changeset 18: Dropping in new Java sample",
-    "html": "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
-    "markdown": "Normal Paulk checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
+    "text": "Chuck Reinhart checked in changeset 18: Dropping in new Java sample",
+    "html": "Chuck Reinhart checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
+    "markdown": "Chuck Reinhart checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
   },
   "resource": {
     "changesetId": 18,
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/tfvc/changesets/18",
     "author": {
       "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
-      "displayName": "Normal Paulk",
+      "displayName": "Chuck Reinhart",
       "uniqueName": "fabrikamfiber16@hotmail.com"
     },
     "checkedInBy": {
       "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
-      "displayName": "Normal Paulk",
+      "displayName": "Chuck Reinhart",
       "uniqueName": "fabrikamfiber16@hotmail.com"
     },
     "createdDate": "2014-05-12T22:41:16Z",
@@ -1997,7 +1927,7 @@ Event: A changeset is checked into TFVC.
       "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     }
   },
-  "createdDate": "2016-09-19T13:03:26.2056408Z"
+  "createdDate": "2024-09-19T13:03:26.2056408Z"
 }
 ```
 
@@ -2007,7 +1937,7 @@ Event: A changeset is checked into TFVC.
 
 Event: Code was pushed to a Git repository.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `git.push`
 * Resource Name: `push`
 
@@ -2033,55 +1963,55 @@ Event: Code was pushed to a Git repository.
   },
   "detailedMessage": {
     "text": "Jamal Hartnett pushed 1 commit to branch master of repository Fabrikam-Fiber-Git.\n - Fixed bug in web.config file 33b55f7c",
-    "html": "Jamal Hartnett pushed 1 commit to branch <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster\">master</a> of repository <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>.\n<ul>\n- Fixed bug in web.config file <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74\">33b55f7c</a>\n</ul>",
-    "markdown": "Jamal Hartnett pushed 1 commit to branch [master](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster) of repository [Fabrikam-Fiber-Git](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/).\n* Fixed bug in web.config file [33b55f7c](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74)"
+    "html": "Jamal Hartnett pushed 1 commit to branch <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster\">master</a> of repository <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>.\n<ul>\n- Fixed bug in web.config file <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/abcdefghij-123456789\">33b55f7c</a>\n</ul>",
+    "markdown": "Jamal Hartnett pushed 1 commit to branch [master](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster) of repository [Fabrikam-Fiber-Git](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/).\n* Fixed bug in web.config file [33b55f7c](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/abcdefghij-123456789)"
   },
   "resource": {
     "commits": [
       {
-        "commitId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74",
+        "commitId": "abcdefghij-123456789",
         "author": {
           "name": "Jamal Hartnett",
           "email": "fabrikamfiber4@hotmail.com",
-          "date": "2015-02-25T19:01:00Z"
+          "date": "2024-02-25T19:01:00Z"
         },
         "committer": {
           "name": "Jamal Hartnett",
           "email": "fabrikamfiber4@hotmail.com",
-          "date": "2015-02-25T19:01:00Z"
+          "date": "2024-02-25T19:01:00Z"
         },
         "comment": "Fixed bug in web.config file",
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/abcdefghij-123456789"
       }
     ],
     "refUpdates": [
       {
         "name": "refs/heads/main",
         "oldObjectId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
-        "newObjectId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+        "newObjectId": "abcdefghij-123456789"
       }
     ],
     "repository": {
-      "id": "278d5cd2-584d-4b63-824a-2ba458937249",
+      "id": "abcd-1234-efgh-5678",
       "name": "Fabrikam-Fiber-Git",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/abcd-1234-efgh-5678",
       "project": {
-        "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "id": "abcd-1234-efgh-5678",
         "name": "Fabrikam-Fiber-Git",
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git"
     },
     "pushedBy": {
-      "id": "00067FFED5C7AF52@Live.com",
+      "id": "ABCDEFG1234567@Live.com",
       "displayName": "Jamal Hartnett",
       "uniqueName": "Windows Live ID\\fabrikamfiber4@hotmail.com"
     },
     "pushId": 14,
     "date": "2014-05-02T19:17:13.3309587Z",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/14"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/abcd-1234-efgh-5678/pushes/14"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2095,7 +2025,7 @@ Event: Code was pushed to a Git repository.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:27.0379153Z"
+  "createdDate": "2024-09-19T13:03:27.0379153Z"
 }
 ```
 
@@ -2105,7 +2035,7 @@ Event: Code was pushed to a Git repository.
 
 Event: A pull request is created in a Git repository.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `git.pullrequest.created`
 * Resource Name: `pullrequest`
 
@@ -2131,19 +2061,19 @@ Event: A pull request is created in a Git repository.
     "markdown": "Jamal Hartnett created a new pull request"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett created a new pull request\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+    "text": "Jamal Hartnett created a new pull request\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n",
+    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567\">eef717</a></br>\r\n</ul>",
+    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n"
   },
   "resource": {
     "repository": {
-      "id": "4bc14d40-c903-45e2-872e-0462c7748079",
+      "id": "abcdefg-1234567",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567",
       "project": {
-        "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "id": "abcd-1234-efgh-5678",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/main",
@@ -2152,30 +2082,30 @@ Event: A pull request is created in a Git repository.
     "pullRequestId": 1,
     "status": "active",
     "createdBy": {
-      "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+      "id": "1234-abcd-4567-efgh",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+      "url": "https://dev.azure.com/fabrikam/_apis/Identities/1234-abcd-4567-efgh",
+      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=1234-abcd-4567-efgh"
     },
-    "creationDate": "2014-06-17T16:55:46.589889Z",
+    "creationDate": "2024-06-17T11:22:33.456789Z",
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+    "mergeId": "a1234567-abcde-1234-abc
     "lastMergeSourceCommit": {
-      "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
     },
     "lastMergeTargetCommit": {
-      "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+      "commitId": "a12345bcdef6789",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/a12345bcdef6789"
     },
     "lastMergeCommit": {
-      "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
     },
     "reviewers": [
       {
@@ -2183,13 +2113,13 @@ Event: A pull request is created in a Git repository.
         "vote": 0,
         "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
-        "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "uniqueName": "azure-devops:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url": "https://dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "isContainer": true
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2203,18 +2133,127 @@ Event: A pull request is created in a Git repository.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:27.2879096Z"
+  "createdDate": "2024-09-19T13:03:27.2879096Z"
 }
 ```
 
-<a name="git.pullrequest.merged"></a>
+<a name="git.pullrequest.merge.attempted"></a>
 
-### Pull request merge commit created
+### Pull request merge attempted
 
-Event: A merge commit was created on a pull request.
+Event: A pull request merge is attempted in a Git repository.
 
-* Publisher ID: `tfs`
-* Event ID: `git.pullrequest.merged`
+* publisher ID: 'azure-devops'
+* Event ID: `git.pullrequest.merge.attempted`
+* Resource Name: `pullrequest`
+
+#### Settings
+
+ * `repository`: The repository that code was pushed to
+   * Data type: `guid`
+ * `pullrequestCreatedBy`: A group that has the requester as a member
+ * `pullrequestReviewersContains`: A group included in the reviewers list
+ * `branch`: The target branch of the pull request
+
+
+#### Sample payload
+
+```json
+{
+  "id": "2ab4e3d3-b7a6-425e-92b1-5a9982c1269e",
+  "eventType": "git.pullrequest.merge.attempted",
+  "publisherId": "tfs",
+  "scope": "all",
+  "message": {
+    "text": "Jamal Hartnett attempted to merge a pull request",
+    "html": "Jamal Hartnett attempted to merge a pull request",
+    "markdown": "Jamal Hartnett attempted to merge a pull request"
+  },
+  "detailedMessage": {
+    "text": "Jamal Hartnett attempted to merge a pull request\r\n\r\n- Merge status: Attempted\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n",
+    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n- Merge status: Attempted</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567\">eef717</a></br>\r\n</ul>",
+    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Attempted\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n"
+  },
+  "resource": {
+    "repository": {
+      "id": "abcdefg-1234567",
+      "name": "Fabrikam",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567",
+      "project": {
+        "id": "abcd-1234-efgh-5678",
+        "name": "Fabrikam",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
+        "state": "wellFormed"
+      },
+      "defaultBranch": "refs/heads/main",
+      "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
+    },
+    "pullRequestId": 1,
+    "status": "active",
+    "createdBy": {
+      "id": "1234-abcd-4567-efgh",
+      "displayName": "Jamal Hartnett",
+      "uniqueName": "fabrikamfiber4@hotmail.com",
+      "url": "https://dev.azure.com/fabrikam/_apis/Identities/1234-abcd-4567-efgh",
+      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=1234-abcd-4567-efgh"
+    },
+    "creationDate": "2024-06-17T11:22:33.456789Z",
+    "title": "my first pull request",
+    "description": " - test2\r\n",
+    "sourceRefName": "refs/heads/mytopic",
+    "targetRefName": "refs/heads/main",
+    "mergeStatus": "attempted",
+    "mergeId": "a1234567-abcde-1234-abc
+    "lastMergeSourceCommit": {
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
+    },
+    "lastMergeTargetCommit": {
+      "commitId": "a12345bcdef6789",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/a12345bcdef6789"
+    },
+    "lastMergeCommit": {
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
+    },
+    "reviewers": [
+      {
+        "reviewerUrl": null,
+        "vote": 0,
+        "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "displayName": "[Mobile]\\Mobile Team",
+        "uniqueName": "azure-devops:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url": "https://dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "isContainer": true
+      }
+    ],
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/pullRequests/1"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2024-09-19T13:03:27.2879096Z"
+}
+```
+
+<a name="git.pullrequest.approved"></a>
+
+### Pull request merge approved
+
+Event: A merge commit was approved on a pull request.
+
+* publisher ID: 'azure-devops'
+* Event ID: `git.pullrequest.approved`
 * Resource Name: `pullrequest`
 
 #### Settings
@@ -2234,24 +2273,24 @@ Event: A merge commit was created on a pull request.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Jamal Hartnett has created a pull request merge commit",
-    "html": "Jamal Hartnett has created a pull request merge commit",
-    "markdown": "Jamal Hartnett has created a pull request merge commit"
+    "text": "Jamal Hartnett has created a pull request merge approved",
+    "html": "Jamal Hartnett has created a pull request merge approved",
+    "markdown": "Jamal Hartnett has created a pull request merge approved"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett has created a pull request merge commit\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-    "html": "Jamal Hartnett has created a pull request merge commit\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett has created a pull request merge commit\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+    "text": "Jamal Hartnett has created a pull request merge approved\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n",
+    "html": "Jamal Hartnett has created a pull request merge approved\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567\">eef717</a></br>\r\n</ul>",
+    "markdown": "Jamal Hartnett has created a pull request merge approved\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n"
   },
   "resource": {
     "repository": {
-      "id": "4bc14d40-c903-45e2-872e-0462c7748079",
+      "id": "abcdefg-1234567",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567",
       "project": {
-        "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "id": "abcd-1234-efgh-5678",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/main",
@@ -2260,31 +2299,31 @@ Event: A merge commit was created on a pull request.
     "pullRequestId": 1,
     "status": "completed",
     "createdBy": {
-      "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+      "id": "1234-abcd-4567-efgh",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+      "url": "https://dev.azure.com/fabrikam/_apis/Identities/1234-abcd-4567-efgh",
+      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=1234-abcd-4567-efgh"
     },
-    "creationDate": "2014-06-17T16:55:46.589889Z",
-    "closedDate": "2014-06-30T18:59:12.3660573Z",
+    "creationDate": "2024-06-17T11:22:33.456789Z",
+    "closedDate": "2024-06-30T18:59:12.3660573Z",
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+    "mergeId": "a1234567-abcde-1234-abc
     "lastMergeSourceCommit": {
-      "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
     },
     "lastMergeTargetCommit": {
-      "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+      "commitId": "a12345bcdef6789",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/a12345bcdef6789"
     },
     "lastMergeCommit": {
-      "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
     },
     "reviewers": [
       {
@@ -2292,13 +2331,13 @@ Event: A merge commit was created on a pull request.
         "vote": 0,
         "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
-        "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "uniqueName": "azure-devops:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url": "https://dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "isContainer": true
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2312,7 +2351,7 @@ Event: A merge commit was created on a pull request.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:27.3156388Z"
+  "createdDate": "2024-09-19T13:03:27.3156388Z"
 }
 ```
 
@@ -2322,7 +2361,7 @@ Event: A merge commit was created on a pull request.
 
 Event: A pull request is updated; status, review list, reviewer vote changed, or the source branch is updated with a push.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `git.pullrequest.updated`
 * Resource Name: `pullrequest`
 
@@ -2354,19 +2393,19 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
     "markdown": "Jamal Hartnett marked the pull request as completed"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett marked the pull request as completed\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-    "html": "Jamal Hartnett marked the pull request as completed\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett marked the pull request as completed\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+    "text": "Jamal Hartnett marked the pull request as completed\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n",
+    "html": "Jamal Hartnett marked the pull request as completed\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567\">eef717</a></br>\r\n</ul>",
+    "markdown": "Jamal Hartnett marked the pull request as completed\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567)\r\n"
   },
   "resource": {
     "repository": {
-      "id": "4bc14d40-c903-45e2-872e-0462c7748079",
+      "id": "abcdefg1234567",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg1234567",
       "project": {
-        "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "id": "abcdefg1234567",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/abcdefg1234567",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/main",
@@ -2375,31 +2414,31 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
     "pullRequestId": 1,
     "status": "completed",
     "createdBy": {
-      "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+      "id": "abcdefg-1234567",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+      "url": "https://dev.azure.com/fabrikam/_apis/Identities/abcdefg1234567",
+      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=abcdefg1234567"
     },
-    "creationDate": "2014-06-17T16:55:46.589889Z",
-    "closedDate": "2014-06-30T18:59:12.3660573Z",
+    "creationDate": "2024-06-17T16:55:46.589889Z",
+    "closedDate": "2024-06-30T18:59:12.3660573Z",
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+    "mergeId": "abcdefg1234567",
     "lastMergeSourceCommit": {
-      "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+      "commitId": "abcdefg1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abc-defg-123-4567/commits/abcdefg1234567"
     },
     "lastMergeTargetCommit": {
-      "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+      "commitId": "a12345bcdef6789",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abc-defg-123-4567/commits/abcdefg1234567"
     },
     "lastMergeCommit": {
-      "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+      "commitId": "abcdefg-1234567",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abc-defg-123-4567/commits/abcdefg1234567"
     },
     "reviewers": [
       {
@@ -2407,19 +2446,19 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
         "vote": 0,
         "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
-        "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "uniqueName": "azure-devops:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url": "https://dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "isContainer": true
       }
     ],
     "commits": [
       {
-        "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+        "commitId": "abcdefg-1234567",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abcdefg-1234567/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2433,7 +2472,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:27.2813828Z"
+  "createdDate": "2024-09-19T13:03:27.2813828Z"
 }
 ```
 
@@ -2443,7 +2482,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
 
 Event: A pull request is commented on.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `git-pullrequest-comment-event`
 * Resource Name: `pullrequest`
 
@@ -2476,37 +2515,37 @@ Event: A pull request is commented on.
             "parentCommentId": 1,
             "author": {
                 "displayName": "Jamal Hartnett",
-                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-                "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/1234-abcd-4567-efgh",
+                "id": "1234-abcd-4567-efgh",
                 "uniqueName": "fabrikamfiber4@hotmail.com",
-                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=1234-abcd-4567-efgh"
             },
             "content": "This is my comment.",
-            "publishedDate": "2014-06-17T16:55:46.589889Z",
-            "lastUpdatedDate": "2014-06-17T16:58:33.123889Z",
-            "lastContentUpdatedDate": "2014-06-17T16:58:33.123889Z",
+            "publishedDate": "2024-06-17T11:22:33.456789Z",
+            "lastUpdatedDate": "2024-06-17T16:58:33.123889Z",
+            "lastContentUpdatedDate": "2024-06-17T16:58:33.123889Z",
             "commentType": "text",
             "_links": {
                 "self": {
-                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1/threads/5/comments/2"
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/pullRequests/1/threads/5/comments/2"
                 },
                 "repository": {
-                    "href": "http://joscol2/DefaultCollection/ebed510c-62eb-474b-965f-fd151ebb82e4/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079"
+                    "href": "http://joscol2/DefaultCollection/ebed510c-62eb-474b-965f-fd151ebb82e4/_apis/git/repositories/abcdefg-1234567"
                 },
                 "threads": {
-                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1/threads/5"
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/pullRequests/1/threads/5"
                 }
             }
         },
         "pullRequest": {
             "repository": {
-                "id": "4bc14d40-c903-45e2-872e-0462c7748079",
+                "id": "abcdefg-1234567",
                 "name": "Fabrikam",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567",
                 "project": {
-                    "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                    "id": "abcd-1234-efgh-5678",
                     "name": "Fabrikam",
-                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
                     "state": "wellFormed",
                     "visibility": "unchanged",
                     "lastUpdateTime": "0001-01-01T00:00:00"
@@ -2518,29 +2557,29 @@ Event: A pull request is commented on.
             "status": "active",
             "createdBy": {
                 "displayName": "Jamal Hartnett",
-                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-                "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/1234-abcd-4567-efgh",
+                "id": "1234-abcd-4567-efgh",
                 "uniqueName": "fabrikamfiber4@hotmail.com",
-                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=1234-abcd-4567-efgh"
             },
-            "creationDate": "2014-06-17T16:55:46.589889Z",
+            "creationDate": "2024-06-17T11:22:33.456789Z",
             "title": "my first pull request",
             "description": " - test2\r\n",
             "sourceRefName": "refs/heads/mytopic",
             "targetRefName": "refs/heads/master",
             "mergeStatus": "succeeded",
-            "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+            "mergeId": "a1234567-abcde-1234-abc
             "lastMergeSourceCommit": {
-                "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+                "commitId": "abcdefg-1234567",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
             },
             "lastMergeTargetCommit": {
-                "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+                "commitId": "a12345bcdef6789",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/commits/a12345bcdef6789"
             },
             "lastMergeCommit": {
-                "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+                "commitId": "abcdefg-1234567",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
             },
             "reviewers": [
                 {
@@ -2549,24 +2588,24 @@ Event: A pull request is commented on.
                     "displayName": "[Mobile]\\Mobile Team",
                     "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
                     "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
-                    "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+                    "uniqueName": "azure-devops:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
                     "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
                     "isContainer": true
                 }
             ],
             "commits": [
                 {
-                    "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+                    "commitId": "abcdefg-1234567",
+                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/commits/abcdefg-1234567"
                 }
             ],
-            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/pullRequests/1",
             "_links": {
                 "web": {
                     "href": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1#view=discussion"
                 },
                 "statuses": {
-                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1/statuses"
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/abcdefg-1234567/pullRequests/1/statuses"
                 }
             }
         }
@@ -2595,7 +2634,7 @@ Event: A pull request is commented on.
 
 Filter events to include only newly created work items.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `workitem.created`
 * Resource Name: `workitem`
 
@@ -2671,7 +2710,7 @@ Filter events to include only newly created work items.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:29.7688022Z"
+  "createdDate": "2024-09-19T13:03:29.7688022Z"
 }
 ```
 
@@ -2681,7 +2720,7 @@ Filter events to include only newly created work items.
 
 Filter events to include only newly deleted work items.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `workitem.deleted`
 * Resource Name: `resource`
 
@@ -2751,7 +2790,7 @@ Filter events to include only newly deleted work items.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:30.0657064Z"
+  "createdDate": "2024-09-19T13:03:30.0657064Z"
 }
 ```
 
@@ -2761,7 +2800,7 @@ Filter events to include only newly deleted work items.
 
 Filter events to include only newly restored work items.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `workitem.restored`
 * Resource Name: `resource`
 
@@ -2843,7 +2882,7 @@ Filter events to include only newly restored work items.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:30.1456784Z"
+  "createdDate": "2024-09-19T13:03:30.1456784Z"
 }
 ```
 
@@ -2853,7 +2892,7 @@ Filter events to include only newly restored work items.
 
 Filter events to include only changed work items.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `workitem.updated`
 * Resource Name: `workitem`
 
@@ -2941,7 +2980,7 @@ Filter events to include only changed work items.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:30.1456784Z"
+  "createdDate": "2024-09-19T13:03:30.1456784Z"
 }
 ```
 
@@ -2962,7 +3001,7 @@ Do the following steps to create a service hooks subscription for each work item
 
 Filter events to include only work items commented on.
 
-* Publisher ID: `tfs`
+* publisher ID: 'azure-devops'
 * Event ID: `workitem.commented`
 * Resource Name: `workitem`
 
@@ -3040,7 +3079,7 @@ Filter events to include only work items commented on.
       "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
     }
   },
-  "createdDate": "2016-09-19T13:03:28.9695265Z"
+  "createdDate": "2024-09-19T13:03:28.9695265Z"
 }
 ```
 ## Resource containers
