@@ -54,7 +54,7 @@ In this article, learn how to establish a seamless connection between Power BI a
 
 Create a report based on the loaded data. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Data Connector - Example reports](data-connector-examples.md).
 
-:::image type="content" source="media/data-connector-visual.png" alt-text="Screenshot that shows the Power BI Desktop report view.":::
+:::image type="content" source="media/data-connector-visual.png" alt-text="Screenshot that shows the Power BI Desktop report view." lightbox="media/data-connector-visual.png":::
 
 <a id="PowerBILimitations">  </a>
 
@@ -112,7 +112,7 @@ This error typically occurs when your project has a large number of work items. 
 
 **A:** This error indicates that the value you entered for **Project name** doesn't correspond to any project. A common mistake that users make is to confuse the project name with a team name.
 
-For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`, then `Fabrikam-Fiber-Git` is the project name and it should be used in the parameter. `Device` is the team name.
+For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`, then *Fabrikam-Fiber-Git* is the project name and it should be used in the parameter. *Device* is the team name.
 
 :::image type="content" source="media/ProjecNotFoundError.png" alt-text="Screenshot that shows the Project not found error.":::
 
