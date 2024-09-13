@@ -14,9 +14,43 @@ This article shows you how to create a Managed DevOps Pool using Azure CLI, and 
 
 Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
+## Install or run in Azure Cloud Shell
+
+The easiest way to learn how to use the Azure CLI is by running a Bash environment in [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) through your browser. To learn about Cloud Shell, see [Quickstart for Bash in Azure Cloud Shell](/azure/cloud-shell/quickstart).
+
+When you're ready to install the Azure CLI, see the [installation instructions](/cli/azure/install-azure-cli)
+for Windows, Linux, macOS, and Docker container.
+
+Check your version by running `az --version`. Azure Cloud Shell always has the latest version of the Azure CLI preinstalled.
+
+```azurecli-interactive
+az version
+```
+
+## Define environment variables
+
+```bash
+export RANDOM_ID="$(openssl rand -hex 3)"
+export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
+export REGION=EastUS2
+export POOL_NAME="mdpPool$RANDOM_ID"
+export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
+export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
+```
+
+Review your resource names.
+
+```bash
+echo $RESOURCE_GROUP_NAME
+echo $POOL_NAME
+echo $DEV_CENTER_NAME
+echo $DEV_CENTER_PROJECT_NAME
+```
+
+
 ## Sign in to the Azure CLI
 
-Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands.
+Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands. If you're using [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) you don't need to run `az login` unless you want to use a different account.
 
 1. Sign in the to Azure CLI.
  
@@ -40,10 +74,17 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 ## Create a resource group
 
+1. Run the following command to create a resource group
+
+```azurecli
+az group create --name $RESOURCE_GROUP_NAME --location $REGION
+```
+
+
 1. Configure a default location for your resources. In this example, `eastus` is used.
 
    ```azurecli
-   az configure --defaults location=eastus
+   az config set defaults.location=eastus
    ```
 
 1. Create the resource group in which you want to create the Managed DevOps Pools and associated resources for this quickstart.
@@ -65,185 +106,60 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
    ```azurecli
    az extension add --name devcenter --upgrade
    ```
+
 1. Create a dev center.
 
    ```azurecli
-   az devcenter admin devcenter create -n <devcenterName>
+   az devcenter admin devcenter create -n <devCenterName>
    ```
 
    After a few moments, the output indicates that the Dev center was created. Make a note of the `id` for the following step.
 
-   ```
+   ```json
     {
        "devCenterUri": "https://...",
-       "id": "/subscriptions/.../<devcenterName>",
+       "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/devcenters/devCenterName",
        "location": "eastus",
-       "name": "<devcenter name>",
+       "name": "devCenterName",
        "provisioningState": "Succeeded",
-       "resourceGroup": "<resourceGroupName>",
-       "systemData": {
-          "createdAt": "...",
-          "createdBy": "...",
-          ...
-       },
+       "resourceGroup": "resourceGroupName",
+       "systemData": { ... },
        "type": "microsoft.devcenter/devcenters"
     }
    ```
 
-1. Create a dev center project. Specify the desired `projectName`, and for `devCenterID`, use the `id` from the previous step. You can also retrieve the ID by running the following command: `az devcenter admin devcenter show -n <devcenterName> --query id -o tsv`.
+1. Create a dev center project. Specify the desired `devCenterProjectName`, and for `devCenterID`, use the `id` from the previous step. You can also retrieve the ID by running the following command: `az devcenter admin devcenter show -n <devcenterName> --query id -o tsv`.
 
    ```azurecli
-   az devcenter admin project create -n <projectName> --description "My first project." --dev-center-id <devCenterID>
+   az devcenter admin project create -n <devCenterProjectName> --description "My dev center project." --dev-center-id <devCenterID>
    ```
-   
 
-1. Follow the [Create a dev center](/azure/deployment-environments/how-to-create-configure-dev-center#create-a-dev-center) steps in [Create and configure a dev center for Azure Deployment Environments by using the Azure CLI](/azure/deployment-environments/how-to-create-configure-dev-center).
-
-   You only need to follow the steps in the [Create a dev center](/azure/deployment-environments/how-to-create-configure-dev-center#create-a-dev-center) section. Make a note of the resource group name and Dev Center name.
-
-1. Follow the [Create a project](/azure/deployment-environments/how-to-create-configure-projects#create-a-project) steps in [Create and configure a project by using the Azure CLI](/azure/deployment-environments/how-to-create-configure-projects).
-
-   Make a note of the `id` of the created project (not the `devCenterId`).
-
-## Review and save the template
-
-1. Create a local file name **mdp-azure-deploy.json** with the following contents. This file is a parameterized ARM template that creates a `microsoft.devopsinfrastructure/pools` resource.
+   After a few moments, the output indicates that the Dev center project was created. Make a note of the `id` for the created Dev center project for use when you create your Managed DevOps Pool (not the `devCenterId`).
 
     ```json
     {
-        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-        "contentVersion": "1.0.0.0",
-        "parameters": {
-            "poolName": {
-                "type": "string"
-            },
-            "adoOrg": {
-                "type": "string"
-            },
-            "devCenterResourceId": {
-                "type": "string"
-            },
-            "imageName": {
-                "type": "string"
-            },
-            "poolSize": {
-                "type": "int"
-            },
-            "location": {
-                "type": "string",
-                "defaultValue": "eastus"
-            }
-        },
-        "variables": {},
-        "resources": [
-            {
-                "name": "[parameters('poolName')]",
-                "type": "microsoft.devopsinfrastructure/pools",
-                "apiVersion": "2024-04-04-preview",
-                "location": "[parameters('location')]",
-                "tags": {},
-                "properties": {
-                    "organizationProfile": {
-                        "organizations": [
-                            {
-                                "url": "[parameters('adoOrg')]",
-                                "parallelism": 1
-                            }
-                        ],
-                        "permissionProfile": {
-                            "kind": "CreatorOnly"
-                        },
-                        "kind": "AzureDevOps"
-                    },
-                    "devCenterProjectResourceId": "[parameters('devCenterResourceId')]",
-                    "maximumConcurrency": "[parameters('poolSize')]",
-                    "agentProfile": {
-                        "kind": "Stateless"
-                    },
-                    "fabricProfile": {
-                        "sku": {
-                            "name": "Standard_D2ads_v5"
-                        },
-                        "images": [
-                            {
-                                "wellKnownImageName": "[parameters('imageName')]",
-                                "buffer": "*"
-                            }
-                        ],
-                        "kind": "Vmss"
-                    }
-                }
-            }
-        ]
-    }
-    ```
-
-2. Create another local file named **mdp-azure-deploy-parameters.json** and save it in the same folder as the first file. Update the following properties to match the details of your environment.
-
-    | Parameter | Value |
-    |----------|-------|
-    | `poolName` | Update `value` with the desired name of your pool. The name must consist of alphanumeric characters, `.`, `-`, or `_`, and be between 3 and 44 characters in length. The name must be globally unique in Azure. |
-    | `adoOrg` | Update `value` and replace `your-organization` with the name of your Azure DevOps organization. |
-    | `devCenterResourceId` | Update `value` with the `id` from the previous [Create a resource group, Dev Center, and Dev Center Project](#create-a-resource-group-dev-center-and-dev-center-project) step. |
-    | `imageName` | This example is configured to use an [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and uses the Windows Server 2022 image. If you want to change it, choose from the [Azure Pipelines image predefined aliases](./configure-images.md#azure-pipelines-image-predefined-aliases). Managed DevOps Pools also supports Azure Compute Gallery images and selected marketplace images. For information on configuring a Managed DevOps Pools resource for these image types, see [Configure Managed DevOps Pools images](./configure-images.md). |
-    | `poolSize` | Update `value` with the maximum number of agents you want to be able to run concurrent jobs. In this example the `poolSize` is `1`.|
-    | `location` | The Azure region for the pool. In this example the region is `eastus`. |
-    
-    ```json
-    {
-        "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-        "contentVersion": "1.0.0.0",
-        "parameters": {
-            "poolName": {
-                "value": "my-first-managed-pool"
-            },
-            "adoOrg": {
-                "value": "https://dev.azure.com/your-organization"
-            },
-            "devCenterResourceId": {
-                "value": "/subscriptions/subscription_id_placeholder/resourceGroups/fabrikam-managed-devops-pools/providers/Microsoft.DevCenter/projects/fabrikam-dev-center-project"
-            },
-            "imageName": {
-                "value": "windows-2022"
-            },
-            "poolSize": {
-                "value": 1
-            },
-            "location": {
-                "value": "eastus"
-            }
-        }
+      "description": "My dev center project.",
+      "devCenterId": "...",
+      "devCenterUri": "https://...",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/projects/devCenterProjectName",
+      "location": "eastus",
+      "name": "devCenterProjectName",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "resourceGroupName",
+      "systemData": { ... },
+      "type": "microsoft.devcenter/projects"
     }
     ```
 
 ## Create the Managed DevOps Pool
 
-Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands. You can skip the first two commands if your Azure CLI session from the first procedure is still active.
-
-1. Sign in the to Azure CLI.
- 
-   ```azurecli
-   az login
-   ```
-2. If you have more than one Azure subscription, set your default Azure subscription.
+1. Install the `mdp` extension.
 
    ```azurecli
-   az account set --subscription "My subscription name"
+    az extension add --name mdp
    ```
 
-   To get a list of your subscriptions, you can run the following command.
-
-   ```azurecli
-   az account list -o table
-   ```
-
-   If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli). 
-   
-3. Go to the folder when you saved the two JSON files from the previous step. In this example, the files are saved to `C:\examples`.
-
-   ```azurecli
-   cd c:\examples
-   ```
+1. Create the Managed DevOps Pool by running the following [az mdp pool create](/cli/azure/mdp/pool?view=azure-cli-latest#az-mdp-pool-create) command. \
 
 4. Create the Managed DevOps Pool. Replace `<resourceGroupName>` with the resource group created in the first step.
 
