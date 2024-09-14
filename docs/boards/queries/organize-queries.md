@@ -41,7 +41,7 @@ The following example shows how to find all closed bugs by modifying the
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
@@ -63,6 +63,34 @@ The following example shows how to find all closed bugs by modifying the
    > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
 
    To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md).  
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+
+   > [!div class="mx-imgBorder"]  
+   > ![Run Active bugs query](media/view-run-queries/run-active-bugs.png)  
+
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md). 
+
+   > [!div class="mx-imgBorder"]
+   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png) 
+
+1. Save the query to your **My Queries** folder.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
+
+    > [!NOTE]
+    > When the **New Boards Hubs** feature is enabled, the **Save As** selection is available in the more actions ![More actions](../../media/icons/more-actions.png) menu.
+
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md). 
 
 ::: moniker-end
 
