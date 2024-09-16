@@ -87,7 +87,8 @@ There are four different types of output variables with distinct syntaxes:
 * [Output variables set in a future job](#set-an-output-variable-for-use-in-future-jobs). To reference these variables, you'll reference the variable in the `variables` section with `dependency` syntax.  
 * [Output variables set in future stages](#set-an-output-variable-for-use-in-future-stages). To reference these variables, you'll reference the variable in the `variables` section with `stageDependencies` syntax.  
 
-> [!NOTE] Future stages or jobs can only access output variables if they depend on the stage or job where the variable was set. To make an output variable accessible, make sure that the next stage or job depends on the stage or job where you created the variable. If multiple stages or jobs need to use the same output variable, use the `dependsOn` condition to establish this dependency.
+> [!NOTE]
+> Future stages or jobs can only access output variables if they depend on the stage or job where the variable was set. To make an output variable accessible, make sure that the next stage or job depends on the stage or job where you created the variable. If multiple stages or jobs need to use the same output variable, use the `dependsOn` condition to establish this dependency.
 
 ## Set an output variable for use in the same job
 
