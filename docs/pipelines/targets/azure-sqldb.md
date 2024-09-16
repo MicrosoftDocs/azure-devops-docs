@@ -173,7 +173,9 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
+    script: |
+    Install-Module -Name SqlServer -Force -AllowClobber
+    Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
 
 - task: AzurePowerShell@5
   displayName: 'Azure PowerShell script'
@@ -200,6 +202,7 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 1. Use the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to invoke SQLCMD and execute your scripts. Add the following inline script to your task:
 
     ```PowerShell
+    Install-Module -Name SqlServer -Force -AllowClobber
     Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
     ```
 
