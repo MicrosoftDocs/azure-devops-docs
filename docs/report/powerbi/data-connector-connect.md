@@ -1,14 +1,15 @@
 ---
 title: Connect to Power BI Data Connector
 titleSuffix: Azure DevOps
-description: Learn how to connect to Power BI Data Connector and Analytics to access Azure DevOps data.
+description: Learn how to connect to Power BI Data Connector and Analytics to access Azure DevOps data. You can extract valuable insights and create compelling reports.
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms date: 08/06/2024
+ms date: 09/16/2024
+#customer intent: As a team member or administrator, I want to connect to Azure DevOps Analitics with Power BI to create reports. 
 ---
 
 # Connect Analytics with Power BI Data Connector
@@ -17,7 +18,7 @@ ms date: 08/06/2024
 
 In this article, learn how to establish a seamless connection between Power BI and Azure DevOps by using Data Connector. This integration allows you to extract valuable insights from your Azure DevOps data and create compelling reports within Power BI. Power BI Data Connector uses [Analytics views](what-are-analytics-views.md).
 
-[!INCLUDE [temp](includes/analytics-views-warning.md)]
+[!INCLUDE [analytics note](includes/analytics-views-warning.md)]
 
 ## Prerequisites
 
@@ -47,13 +48,13 @@ In this article, learn how to establish a seamless connection between Power BI a
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-[!INCLUDE [temp](../includes/connect-analytics-view.md)]
+[!INCLUDE [connect to an analytics view](../includes/connect-analytics-view.md)]
 
 ## Create a report
 
 Create a report based on the loaded data. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Data Connector - Example reports](data-connector-examples.md).
 
-:::image type="content" source="media/data-connector-visual.png" alt-text="Screenshot that shows the Power BI Desktop report view.":::
+:::image type="content" source="media/data-connector-visual.png" alt-text="Screenshot that shows the Power BI Desktop report view." lightbox="media/data-connector-visual.png":::
 
 <a id="PowerBILimitations">  </a>
 
@@ -111,17 +112,17 @@ This error typically occurs when your project has a large number of work items. 
 
 **A:** This error indicates that the value you entered for **Project name** doesn't correspond to any project. A common mistake that users make is to confuse the project name with a team name.
 
-For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`, then `Fabrikam-Fiber-Git` is the project name and it should be used in the parameter. `Device` is the team name.
+For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`, then *Fabrikam-Fiber-Git* is the project name and it should be used in the parameter. *Device* is the team name.
 
-![Screenshot that shows the Project not found error.](media/ProjecNotFoundError.png)
+:::image type="content" source="media/ProjecNotFoundError.png" alt-text="Screenshot that shows the Project not found error.":::
 
 <!-- ENDSECTION -->
 
-## Related articles
+## Related content
 
-- [Permissions required to access Analytics](analytics-security.md)
-- [Power BI integration overview](overview.md)
-- [Analytics security](analytics-security.md)
-- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
-- [Dataset design for Power BI Data Connector](data-connector-dataset.md)
-- [Data Connector - Example reports](data-connector-examples.md)
+- [Set permissions to access Analytics and Analytics views](analytics-security.md)
+- [About Power BI integration](overview.md)
+- [Set permissions to access Analytics and Analytics views](analytics-security.md)
+- [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Analytics views dataset design](data-connector-dataset.md)
+- [Example reports based on Analytics views](data-connector-examples.md)
