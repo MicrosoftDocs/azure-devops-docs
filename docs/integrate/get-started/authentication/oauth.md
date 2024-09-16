@@ -28,7 +28,8 @@ Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to aut
 
 ## Available OAuth models
 
-When you create an OAuth 2.0 app use [**Microsoft Entra ID OAuth**](/azure/active-directory/fundamentals/auth-oauth2). [Azure DevOps OAuth 2.0](azure-devops-oauth.md) is on the path of deprecation for October 2025.
+> [!IMPORTANT]
+> When you create an OAuth 2.0 app use [**Microsoft Entra ID OAuth**](/azure/active-directory/fundamentals/auth-oauth2). [Azure DevOps OAuth 2.0](azure-devops-oauth.md) is on the path of deprecation for October 2025. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69491).
 
 <a name='azure-active-directory-oauth'></a>
 
