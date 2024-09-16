@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.date: 02/21/2024
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ---
 
 # Task types & usage
@@ -248,7 +249,7 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ### Number of retries if task failed
 
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. For more information in task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero retries. For more information on task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
 
 ```yml
 - task: <name of task>
