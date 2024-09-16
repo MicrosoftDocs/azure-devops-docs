@@ -87,6 +87,8 @@ There are four different types of output variables with distinct syntaxes:
 * [Output variables set in a future job](#set-an-output-variable-for-use-in-future-jobs). To reference these variables, you'll reference the variable in the `variables` section with `dependency` syntax.  
 * [Output variables set in future stages](#set-an-output-variable-for-use-in-future-stages). To reference these variables, you'll reference the variable in the `variables` section with `stageDependencies` syntax.  
 
+> [!NOTE] Future stages or jobs can only access output variables if they depend on the stage or job where the variable was set. To make an output variable accessible, make sure that the next stage or job depends on the stage or job where you created the variable. If multiple stages or jobs need to use the same output variable, use the `dependsOn` condition to establish this dependency.
+
 ## Set an output variable for use in the same job
 
 When you use an output variable in the same job, you don't have to use the `isoutput` property. By default, the variable will be available to downstream steps within the same job. However, if you do add the `isoutput` property, you'll need to reference the variable with the task name. 
@@ -230,7 +232,7 @@ Output variables can be used across stages in pipelines. You can use output vari
 
 When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#dependencies). 
 
-Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition.
+Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition. 
 
 # [Bash](#tab/bash)
 
