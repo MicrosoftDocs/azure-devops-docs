@@ -72,7 +72,7 @@ Building on a new platform can be overwhelming. Below, we provide some helpful l
 ### Azure DevOps OAuth
 
 > [!IMPORTANT]
-> Azure DevOps OAuth is slated for deprecation in October 2025. See this blog post for more.
+> Azure DevOps OAuth is slated for deprecation in October 2025. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69491).
 
 For existing apps, look at the [Azure DevOps OAuth guide](./azure-devops-oauth.md). You can also [manage which Azure DevOps apps are authorized](../../../organizations/settings/manage-authorizations.md) to access your resources.
 
