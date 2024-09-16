@@ -45,7 +45,7 @@ Building on a new platform can be overwhelming. Below, we provide some helpful l
 * [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app)
 * [Add permissions to access Microsoft Graph](/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-microsoft-graph)
   * Helpful to understand how to add delegatd permissions from the Azure DevOps resource, instead of Microsoft Graph. When you create an app, select `Azure DevOps` from the list of resources instead.
-  * Azure DevOps OAuth does not support application permissions through Entra. To learn more about application identity support for Azure DevOps, read more about [managed identities and service principal support](service-principal-managed-identity?view=azure-devops).
+  * Azure DevOps OAuth does not support application permissions through Entra. To learn more about application identity support for Azure DevOps, read more about [managed identities and service principal support](service-principal-managed-identity.md).
 * [Scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc)
   * Read up on the `.default` scope.
 * [Requesting permissions through consent](/entra/identity-platform/consent-types-developer)
@@ -57,16 +57,16 @@ Building on a new platform can be overwhelming. Below, we provide some helpful l
 * [Support and help options for developers](/entra/identity-platform/developer-support-help-options)
 
 #### Good resources for admins
-* [What is application management in Microsoft Entra ID?](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/what-is-application-management)
-* [Quickstart: Add an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal)
-* [Consent experience for applications in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity-platform/application-consent-experience)
+* [What is application management in Microsoft Entra ID?](/entra/identity/enterprise-apps/what-is-application-management)
+* [Quickstart: Add an enterprise application](/entra/identity/enterprise-apps/add-application-portal)
+* [Consent experience for applications in Microsoft Entra ID](/entra/identity-platform/application-consent-experience)
 
 #### Building & migrating tips
 * Azure DevOps
   * Entra resource identifier: `499b84ac-1321-427f-aa17-267ca6975798`
   * Resource Uri: `https://app.vssps.visualstudio.com`
   * Use the `.default` scope when requesting a token with all scopes that the app has been permissioned for.
-* When building an Azure DevOps OAuth app, you may have relied on Azure DevOps user identifiers that do not exist in Entra. Use the [ReadIdentities API](https://learn.microsoft.com//rest/api/azure/devops/ims/identities/read-identities) to resolve and match the different identities in use.
+* When building an Azure DevOps OAuth app, you may have relied on Azure DevOps user identifiers that do not exist in Entra. Use the [ReadIdentities API](/rest/api/azure/devops/ims/identities/read-identities) to resolve and match the different identities in use.
 
 
 ### Azure DevOps OAuth
