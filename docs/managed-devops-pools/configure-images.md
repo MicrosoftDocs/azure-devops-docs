@@ -143,7 +143,7 @@ Choose **Selected marketplace images**, choose the desired image, and choose the
 
 #### [ARM template](#tab/arm/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify a selected marketplace image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [
@@ -157,7 +157,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 
 ## Azure Compute Gallery images
 
-Choose **Azure Compute Gallery images** to specify an image from any Azure Compute Galleries that are available in your subscriptions. Images with the following operating systems are supported
+Choose **Azure Compute Gallery images** to specify an image from any Azure Compute Galleries that are available in your subscriptions. [Generalized](/azure/virtual-machines/generalize) images with the following operating systems are supported.
 
 * Windows Server 2019
 * Windows Server 2022
@@ -170,13 +170,16 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 * SUSE 12
 * SUSE 15
 
+> [!IMPORTANT]
+> Managed DevOps Pools supports only [generalized](/azure/virtual-machines/generalize) Azure Compute Gallery images.
+
 #### [Azure portal](#tab/azure-portal/)
 
 :::image type="content" source="./media/configure-images/image-library-compute-gallery-images.png" alt-text="Screenshot of Azure Compute Gallery images.":::
 
 #### [ARM template](#tab/arm/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify an Azure Compute Gallery image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [
