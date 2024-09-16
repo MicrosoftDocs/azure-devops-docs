@@ -157,7 +157,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 
 ## Azure Compute Gallery images
 
-Choose **Azure Compute Gallery images** to specify an image from any Azure Compute Galleries that are available in your subscriptions. Images with the following operating systems are supported
+Choose **Azure Compute Gallery images** to specify an image from any Azure Compute Galleries that are available in your subscriptions. [Generalized](/azure/virtual-machines/generalize) images with the following operating systems are supported.
 
 * Windows Server 2019
 * Windows Server 2022
@@ -169,6 +169,9 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 * RHEL 9
 * SUSE 12
 * SUSE 15
+
+> [!IMPORTANT]
+> Managed DevOps Pools supports only [generalized](/azure/virtual-machines/generalize) Azure Compute Gallery images.
 
 #### [Azure portal](#tab/azure-portal/)
 
