@@ -145,7 +145,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > Securely persist the **refresh_token** so your app doesn't need to prompt the user to authorize again. Access tokens expire quickly and shouldn't be persisted.
 
 ### 4. Use the access token
@@ -211,7 +211,7 @@ Replace the placeholder values in the previous sample request body:
 }
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > A new refresh token gets issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
 
 ### Samples
@@ -221,6 +221,7 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 ## Regenerate client secret
 
 Every 5 years, your application secret will expire. You are expected to regenerate your app secret to continue to be able to create and use access tokens and refresh tokens. To do so, you can click the "Regenerate secret" button, which will pop up a dialog to confirm you want to complete this action.
+
 
 :::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
 
@@ -232,41 +233,41 @@ When you confirm that you want to regenerate, the previous app secret will no lo
 2. Make sure you are on the correct tenant's page by clicking the dropdown menu under your name in the sidebar.
 3. Find the app under the **Applications and services** header on the left sidebar.
 4. Click "Delete" on the application registration page. A modal will appear to confirm your deletion. 
-:::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Delete button on app metadata page highlighted":::
+   :::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Delete button on app metadata page highlighted":::
 5. Once you delete the app registration, the app will break, and we will stop minting new tokens or accepting minted tokens for this app.
 
 ## Frequently asked questions (FAQs)
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Q: Can I use OAuth with my mobile phone app?
+#### Q: Can I use OAuth with my mobile phone app?
 
 A: No. Azure DevOps Services only supports the web server flow, so there's no way to implement OAuth, as you can't securely store the app secret.
 
-### Q: What errors or special conditions do I need to handle in my code?
+#### Q: What errors or special conditions do I need to handle in my code?
 
 A: Make sure that you handle the following conditions:
 * If your user denies your app access, no authorization code gets returned. Don't use the authorization code without checking for denial.
 * If your user revokes your app's authorization, the access token is no longer valid. When your app uses the token to access data, a 401 error returns. Request authorization again.
 
-### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
+#### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
 A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure you use `https://localhost` as the beginning of your callback URL when you register your app.
 
-### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
+#### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
 
 A: Check that you set the content type to application/x-www-form-urlencoded in your request header.
 
-### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
+#### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
 
 A: Verify that your organization's admin didn't disable **Third-party application access via OAuth** at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
 In this scenario, the flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
 
-### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
+#### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
 
 A: No. OAuth is only supported in the REST APIs.
 
-### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
+#### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
 
 A: Do the following steps:
 
