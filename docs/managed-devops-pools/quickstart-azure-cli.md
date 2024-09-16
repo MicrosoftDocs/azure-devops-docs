@@ -45,6 +45,7 @@ echo $RESOURCE_GROUP_NAME
 echo $POOL_NAME
 echo $DEV_CENTER_NAME
 echo $DEV_CENTER_PROJECT_NAME
+echo $REGION
 ```
 
 
@@ -74,30 +75,11 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 ## Create a resource group
 
-1. Run the following command to create a resource group
+1. Run the following command to create the resource group to contain the resources used in this quickstart.
 
 ```azurecli
 az group create --name $RESOURCE_GROUP_NAME --location $REGION
 ```
-
-
-1. Configure a default location for your resources. In this example, `eastus` is used.
-
-   ```azurecli
-   az config set defaults.location=eastus
-   ```
-
-1. Create the resource group in which you want to create the Managed DevOps Pools and associated resources for this quickstart.
-
-   ```azurecli
-   az group create -n <resourceGroupName>
-   ```
-
-1. Configure the default resource group as the resource group you created:
-
-   ```azurecli
-   az config set defaults.group=<resourceGroupName>
-   ```
 
 ## Create a Dev Center and Dev Center Project
 
@@ -110,10 +92,13 @@ az group create --name $RESOURCE_GROUP_NAME --location $REGION
 1. Create a dev center.
 
    ```azurecli
-   az devcenter admin devcenter create -n <devCenterName>
+   az devcenter admin devcenter create -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME -l $REGION
+
+   DEVCID=$(az devcenter admin devcenter show -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
+   echo $DEVCID
    ```
 
-   After a few moments, the output indicates that the Dev center was created. Make a note of the `id` for the following step.
+   After a few moments, the output indicates that the Dev center was created. The `id` of the created Dev center is saved in `DEVCID` for use in the following step.
 
    ```json
     {
@@ -128,13 +113,20 @@ az group create --name $RESOURCE_GROUP_NAME --location $REGION
     }
    ```
 
-1. Create a dev center project. Specify the desired `devCenterProjectName`, and for `devCenterID`, use the `id` from the previous step. You can also retrieve the ID by running the following command: `az devcenter admin devcenter show -n <devcenterName> --query id -o tsv`.
+1. Create a dev center project under the newly created dev center, and save the dev center project in `DEVCPID` for use when creating the Managed DevOps Pool.
 
    ```azurecli
-   az devcenter admin project create -n <devCenterProjectName> --description "My dev center project." --dev-center-id <devCenterID>
+   az devcenter admin project create -n $DEV_CENTER_PROJECT_NAME \
+      --description "My dev center project." \
+      -g $RESOURCE_GROUP_NAME \
+      -l $REGION\
+      --dev-center-id $DEVCID
+
+   DEVCPID=$(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
+   echo $DEVCPID
    ```
 
-   After a few moments, the output indicates that the Dev center project was created. Make a note of the `id` for the created Dev center project for use when you create your Managed DevOps Pool (not the `devCenterId`).
+   After a few moments, the output indicates that the Dev center project was created.
 
     ```json
     {
@@ -159,7 +151,7 @@ az group create --name $RESOURCE_GROUP_NAME --location $REGION
     az extension add --name mdp
    ```
 
-1. Create the Managed DevOps Pool by running the following [az mdp pool create](/cli/azure/mdp/pool?view=azure-cli-latest#az-mdp-pool-create) command. \
+1. Create the Managed DevOps Pool by running the following [az mdp pool create](/cli/azure/mdp/pool?view=azure-cli-latest#az-mdp-pool-create) command.
 
 4. Create the Managed DevOps Pool. Replace `<resourceGroupName>` with the resource group created in the first step.
 
@@ -242,10 +234,13 @@ In this step, we'll create a simple pipeline in the default repository of an Azu
 
 ## Clean up resources
 
-When you have completed the quickstart, delete the created resources if you don't want to continue to use them.
+If you're not going to continue to use this application, delete the resource group, Dev center, Dev center project, and the Managed DevOps Pool by using the [az group delete](/cli/azure/group#az-group-delete) command.
 
-To delete the Managed DevOps Pool, Dev Center, and Dev Center Project, you can delete them by [deleting the resource group](/azure/azure-resource-manager/management/delete-resource-group#delete-resource-group) that contains them.
+
+```azurecli
+az group delete -n $RESOURCE_GROUP_NAME
+```
 
 ## See also
 
-* [Review the Managed DevOps Pools resource schema](https://github.com/Azure/azure-resource-manager-schemas/blob/main/schemas/2024-04-04-preview/Microsoft.DevOpsInfrastructure.json)
+* [Review the Managed DevOps Pools Azure CLI reference](/cli/azure/service-page/managed%20devops%20pools)
