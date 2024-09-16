@@ -13,13 +13,16 @@ ms.date: 07/10/2024
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> This information is for existing Azure DevOps OAuth apps only. New app developers should use  [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps.
+> This information is for existing Azure DevOps OAuth apps only. New app developers should use [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps since Azure DevOps OAuth will be deprecated in October 2025. New app creation will be blocked starting November 2024. Read this blog post to learn more. 
 
 Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
 
 ## Get started with Azure DevOps OAuth
 
 ### 1. Register your app
+
+> [!IMPORTANT]
+> New app creation will be blocked starting November 2024.
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
@@ -209,8 +212,6 @@ Replace the placeholder values in the previous sample request body:
 
 > [!IMPORTANT]
 > A new refresh token gets issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
-
-<a name="scopes"></a>
 
 ### Samples
 
