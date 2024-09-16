@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.date: 02/21/2024
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ---
 
 # Task types & usage
@@ -248,7 +249,7 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ### Number of retries if task failed
 
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. For more information in task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero retries. For more information on task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
 
 ```yml
 - task: <name of task>
@@ -258,7 +259,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 
 > [!NOTE]
 > * Requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries are not supported for [agentless tasks](./phases.md#agentless-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task), and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks). 
-> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
+> * The wait time between each retry increases after each failed attempt. The first retry happens in seconds. 
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
 > * A warning is added to the task logs indicating that it has failed before it is retried.
