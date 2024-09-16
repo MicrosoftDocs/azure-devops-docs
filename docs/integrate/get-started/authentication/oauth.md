@@ -47,7 +47,7 @@ Building on a new platform can be overwhelming. Below, we provide some helpful l
   * Helpful to understand how to add delegatd permissions from the Azure DevOps resource, instead of Microsoft Graph. When you create an app, select `Azure DevOps` from the list of resources instead.
   * Azure DevOps OAuth does not support application permissions through Entra. To learn more about application identity support for Azure DevOps, read more about [managed identities and service principal support](service-principal-managed-identity?view=azure-devops).
 * [Scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc)
-  * Read up on how to use the `.default` scope
+  * Read up on the `.default` scope.
 * [Requesting permissions through consent](/entra/identity-platform/consent-types-developer)
 
 * [Microsoft identity platform authentication libraries](/entra/identity-platform/reference-v2-libraries)
