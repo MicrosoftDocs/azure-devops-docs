@@ -226,6 +226,14 @@ Every 5 years, your application secret will expire. You are expected to regenera
 
 When you confirm that you want to regenerate, the previous app secret will no longer work and all previous tokens minted with this secret will also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
 
+## Delete your app
+
+1. If you no longer need your app, delete it from your profile `https://app.vssps.visualstudio.com/profile/view`.
+2. Make sure you are on the correct tenant's page by clicking the dropdown menu under your name in the sidebar.
+3. Find the app under the **Applications and services** header on the left sidebar.
+4. Click "Delete" on the application registration page. A modal will appear to confirm your deletion. 
+:::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Delete button on app metadata page highlighted":::
+5. Once you delete the app registration, the app will break, and we will stop minting new tokens or accepting minted tokens for this app.
 
 ## Frequently asked questions (FAQs)
 
