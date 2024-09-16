@@ -174,8 +174,17 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-    Install-Module -Name SqlServer -Force -AllowClobber
+      if (-not (Get-Module -ListAvailable -Name SqlServer)) {
+          Install-Module -Name SqlServer -Force -AllowClobber
+      }
+  displayName: 'Install SqlServer module if not present'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
     Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
+  displayName: 'Run SQL script'
 
 - task: AzurePowerShell@5
   displayName: 'Azure PowerShell script'
@@ -189,8 +198,6 @@ steps:
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
@@ -202,7 +209,10 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 1. Use the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to invoke SQLCMD and execute your scripts. Add the following inline script to your task:
 
     ```PowerShell
-    Install-Module -Name SqlServer -Force -AllowClobber
+    if (-not (Get-Module -ListAvailable -Name SqlServer)) {
+      Install-Module -Name SqlServer -Force -AllowClobber
+    }
+
     Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
     ```
 
