@@ -71,7 +71,7 @@ Building on a new platform can be overwhelming. Below, we provide some helpful l
 
 ### Azure DevOps OAuth
 
-> [!NOTE]
+> [!IMPORTANT]
 > Azure DevOps OAuth is slated for deprecation in October 2025. See this blog post for more.
 
 For existing apps, look at the [Azure DevOps OAuth guide](./azure-devops-oauth.md). You can also [manage which Azure DevOps apps are authorized](../../../organizations/settings/manage-authorizations.md) to access your resources.
@@ -84,7 +84,7 @@ To find out what scopes you need for your app, look under the `scopes` header on
 
 Some scopes might be inclusive of other scopes, for example, `vso.code_manage` includes `vso.code_write`. `vso.profile` is inherited by many other scopes. Consider what is the minimal number of scopes you need when requesting scope consent from users.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Scopes only enable access to REST APIs and select Git endpoints. SOAP API access isn't supported.
 
 [!INCLUDE [scopes table](../../includes/scopes.md)]
