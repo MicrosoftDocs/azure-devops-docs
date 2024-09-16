@@ -53,7 +53,7 @@ Building on a new platform can be overwhelming. Below, we provide some helpful l
 * [Microsoft identity platform authentication libraries](/entra/identity-platform/reference-v2-libraries)
 * [Microsoft identity platform code samples](/entra/identity-platform/sample-v2-code?tabs=apptype)
 * [Manage PATs via API](../../../organizations/accounts/manage-personal-access-tokens-via-api.md)
-  * A guide on setting up an Entra app used for our PAT lifecycle management APIs. This sample guide and walkthrough might be helpful for you to get started.
+  * A guide on setting up an Entra app used for our PAT lifecycle management APIs. This walkthrough and its [associated sample app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) might be helpful for you to get started with Entra.
 * [Support and help options for developers](/entra/identity-platform/developer-support-help-options)
 
 #### Good resources for admins
