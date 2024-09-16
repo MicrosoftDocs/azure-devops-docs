@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2022'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-gt-eq-2022.md)]
 
-This step-by-step guide covers how to use the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) with the `canary` strategy. A *canary* deployment strategy deploys new versions of an application next to stable, production versions.
+This step-by-step guide covers how to use the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1) with the `canary` strategy. A *canary* deployment strategy deploys new versions of an application next to stable, production versions.
 
 You use the associated workflow to deploy the code and compare the baseline and canary app deployments. Based on the evaluation, you decide whether to promote or reject the canary deployment.
 
@@ -179,7 +179,7 @@ You can deploy with YAML or Classic.
       imageName: azure-pipelines-canary-k8s
       dockerRegistryServiceConnection: azure-pipelines-canary-acr
       imageRepository: 'azure-pipelines-canary-k8s'
-      containerRegistry: kubernetessept4.azurecr.io
+      containerRegistry: yourcontainerregistry.azurecr.io #update with container registry
       tag: '$(Build.BuildId)'
     
     stages:
@@ -274,7 +274,7 @@ You can deploy with YAML or Classic.
     - Confirm your inputs by choosing **Add**.
 1. Select **Add an artifact**, and choose **Azure container registry** or **Docker Hub**, depending on the container registry you chose earlier, in the "Prerequisites" section. Provide appropriate values for the input dropdown lists to locate your container registry. Provide *image* as the alias for this artifact, and confirm the inputs by choosing **Add**. When the artifact has been added, select the lightning bolt icon on the artifact card to enable the continuous deployment trigger.
 1. In the **Deploy Canary** stage that you created, select the **1 job, 0 task** link to go to the window for adding jobs and stages.
-1. Select  **Agent job**. In the configuration window, in the **Agent pool** dropdown list, choose **Hosted Ubuntu 1604**.
+1. Select  **Agent job**. In the configuration window, in the **Agent pool** dropdown list, choose **Hosted Ubuntu 22.04**.
 1. Select the **+** sign on the agent job row to add a new task. Add the **Deploy Kubernetes manifests** task, with the following configuration:
     - **Display name**: Create secret
     - **Action**: Create secret
@@ -387,7 +387,7 @@ You can intervene manually with YAML or Classic.
                   connectionType: 'azureResourceManager'
                   azureSubscriptionConnection: 'azure-pipelines-canary-sc'
                   azureResourceGroup: 'kubernetes-testing'
-                  kubernetesCluster: 'aksclustersept12'
+                  kubernetesCluster: 'my-aks-cluster'
                   secretType: 'dockerRegistry'
                   secretName: 'my-acr-secret'
                   dockerRegistryEndpoint: 'azure-pipelines-canary-acr'    
@@ -412,7 +412,7 @@ You can intervene manually with YAML or Classic.
 1. Add a **Manual Intervention** task to this job, and change the display name of the task to *Promote or reject canary*.
 1. Configure the currently empty agent job placed after the **Promote/reject input** agentless job. 
     - **Display name**: Promote canary
-    - **Agent pool**: Hosted Ubuntu 1604
+    - **Agent pool**: Hosted Ubuntu 22.04
     - **Run this job**: Choose to run only when all previous jobs have succeeded.
 1. Add the **Deploy Kubernetes manifests** task, with the following configuration to the **Promote canary** job.
     - **Display name**: Promote canary
@@ -426,7 +426,7 @@ You can intervene manually with YAML or Classic.
     - **ImagePullSecrets**: *azure-pipelines-canary-k8s*
 1. Add another agent job with the following configuration, after the **Promote canary** agent job.
     - **Display name**: Reject canary
-    - **Agent pool**: Hosted Ubuntu 1604
+    - **Agent pool**: Hosted Ubuntu 22.04
     - **Run this job**: Choose to run only when a previous job has failed.
 1. Add the **Deploy Kubernetes manifests** task, with the following configuration to the **Reject canary** job.
     - **Display name**: Reject canary
