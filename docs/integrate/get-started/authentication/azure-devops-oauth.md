@@ -13,7 +13,7 @@ ms.date: 07/10/2024
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> **Azure DevOps OAuth is due for deprecation in October 2025.** Read this blog post to learn more. 
+> Azure DevOps OAuth is slated for deprecation in October 2025. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69491).
 > <br />This information is for existing Azure DevOps OAuth apps only. New app developers should use [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps.
 
 Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
