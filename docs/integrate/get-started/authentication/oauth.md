@@ -82,7 +82,7 @@ For existing apps, look at the [Azure DevOps OAuth guide](./azure-devops-oauth.m
 Developers are expected to specify what scopes they require from their users. Scopes are available on both OAuth models. The following scopes are available via delegated (on-behalf-of user) flows only.
 To find out what scopes you need for your app, look under the `scopes` header on the API Reference page for each API you're using. 
 
-Some scopes might be inclusive of other scopes, for example, `code_manage` includes `code_write`. Consider what is the minimal number of scopes you need when requesting scope consent from users.
+Some scopes might be inclusive of other scopes, for example, `vso.code_manage` includes `vso.code_write`. `vso.profile` is inherited by many other scopes. Consider what is the minimal number of scopes you need when requesting scope consent from users.
 
 > [!IMPORTANT]
 > Scopes only enable access to REST APIs and select Git endpoints. SOAP API access isn't supported.
