@@ -143,7 +143,7 @@ Choose **Selected marketplace images**, choose the desired image, and choose the
 
 #### [ARM template](#tab/arm/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify a selected marketplace image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [
@@ -179,7 +179,7 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 
 #### [ARM template](#tab/arm/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify an Azure Compute Gallery image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [
