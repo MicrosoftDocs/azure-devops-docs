@@ -26,7 +26,7 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 
 - Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
 
-## Publish NuGet packages to an internal feed
+## Publish NuGet packages to a feed in the same organization
 
 > [!NOTE]
 > To publish your packages to a feed using Azure Pipelines, make sure that both the **Project Collection Build Service** and your project's **Build Service** identities are granted the **Feed Publisher (Contributor)** role assigned in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for more details.
@@ -111,7 +111,7 @@ steps:
 
 ::: moniker-end
 
-## Publish NuGet packages to an external feed
+## Publish NuGet packages to a feed in another organization
 
 To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization. Navigate to the organization hosting your target feed and [Create a personal access token](../..organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) with **Packaging** > **Read & write** scope. 
 Once the PAT is created, copy and store it in a secure location, as you'll need it in the following section to set up a service connection.
@@ -126,7 +126,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Save** when you're done.
 
-    :::image type="content" source="media/nuget/nuget-service-connection-external-feed.png" alt-text="A screenshot displaying how to set up a NuGet service connection to authenticate with a feed in other organizations.":::
+    :::image type="content" source="media/nuget/nuget-service-connection-external-devops-server.png" alt-text="A screenshot displaying how to set up a NuGet service connection to authenticate with an external feed in a different organization.":::
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -141,29 +141,29 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
-- **NuGet.exe**:
-
-    ```yaml
-      - task: NuGetAuthenticate@1
-        inputs:
-          nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-          
-      - script: |
-          nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
-        displayName: "Push"          
-    ```
-
-- **dotnet**:
-  
-    ```yaml
-        - task: NuGetAuthenticate@1
-          inputs:
-            nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-            
-        - script: |
-            dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
-          displayName: "Push"          
-      ```
+    - **NuGet.exe**:
+    
+        ```yaml
+          - task: NuGetAuthenticate@1
+            inputs:
+              nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+              
+          - script: |
+              nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+            displayName: "Push"          
+        ```
+    
+    - **dotnet**:
+      
+        ```yaml
+            - task: NuGetAuthenticate@1
+              inputs:
+                nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+                
+            - script: |
+                dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
+              displayName: "Push"          
+          ```
 
 > [!NOTE]
 > The `ApiKey` is required, but you can use any string when publishing to an Azure Artifacts feed.
