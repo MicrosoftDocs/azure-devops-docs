@@ -8,7 +8,7 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2024
+ms.date: 09/17/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -50,7 +50,7 @@ You must be an owner of your organization to change its location. For more infor
 
 > By default, your organization is associated with the closest geography based on your location. However, changing to a different data center (region) within the same geography isn't possible.
 
-To change your organization geography, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
+To change your organization geography, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2160944).
 
 We can't provide a specific time frame for your organization's relocation due to potential delays from various factors and the automated nature of the migration process. The process might be rescheduled to take place over the weekend until all necessary changes are successfully completed.
 
