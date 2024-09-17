@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 04/22/2024 
+  ms.date: 09/17/2024 
   manager: jillfra
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -33,6 +33,10 @@ landingContent:
             url: ../repos/get-started/what-is-repos.md 
           - text: What is Azure Pipelines?
             url: ../pipelines/get-started/what-is-azure-pipelines.md 
+          - text: What is Azure Artifacts?
+            url: ../artifacts/get-started/what-is-azure-artifacts.md
+          - text: What is Azure Test Plans?
+            url: ../test/get-started/what-is-azure-test-plans.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md 
   - title: Sign up for free
@@ -47,6 +51,10 @@ landingContent:
             url: ../repos/get-started/sign-up-invite-teammates.md
           - text: Azure Pipelines 
             url: ../pipelines/get-started/pipelines-sign-up.md
+          - text: Azure Artifacts
+            url: ../artifacts/get-started/artifacts-sign-up.md
+          - text: Azure Test Plans
+            url: ../test/get-started/test-plans-sign-up.md
       - linkListType: how-to-guide
         links:
           - text: Connect to a project
