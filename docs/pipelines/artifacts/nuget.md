@@ -115,7 +115,7 @@ steps:
 
 ## Publish NuGet packages to a feed in another organization
 
-To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization. Navigate to the organization hosting your target feed and [Create a personal access token](../..organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) with **Packaging** > **Read & write** scope. 
+To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. 
 Once the PAT is created, copy and store it in a secure location, as you'll need it in the following section to set up a service connection.
 
 1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
