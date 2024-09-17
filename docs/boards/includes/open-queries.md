@@ -9,7 +9,7 @@ ms.date: 07/27/2021
 #### [Browser](#tab/browser/)
 
 
-::: moniker range="<> azure-devops\"
+::: moniker range="< azure-devops"
 
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
  
