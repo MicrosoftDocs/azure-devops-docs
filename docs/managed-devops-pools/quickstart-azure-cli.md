@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
-ms.date: 08/26/2024
+ms.date: 09/17/2024
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
 ---
@@ -119,7 +119,7 @@ az group create --name $RESOURCE_GROUP_NAME --location $REGION
    az devcenter admin project create -n $DEV_CENTER_PROJECT_NAME \
       --description "My dev center project." \
       -g $RESOURCE_GROUP_NAME \
-      -l $REGION\
+      -l $REGION \
       --dev-center-id $DEVCID
 
    DEVCPID=$(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
@@ -143,6 +143,77 @@ az group create --name $RESOURCE_GROUP_NAME --location $REGION
     }
     ```
 
+## Prepare the Managed DevOps Pool configuration files
+
+Create the following three files and save them to the folder where you plan to run the Azure CLI commands to create the pool.
+
+1. Create a file name **agent-profile.json** with the following contents.
+
+    ```json
+    {
+      "Stateless": {}
+    }
+    ```
+
+   This configuration specifies a [stateless agent](./configure-scaling.md#stateless-pools) for your pool.
+
+
+2. Create a file named **fabric-profile.json** with the following contents.
+
+    ```json
+    {
+      "vmss": {
+        "sku": {
+          "name": "Standard_D2as_v5"
+        },
+        "images": [
+          {
+            "aliases": [
+              "ubuntu-22.04"
+            ],
+            "buffer": "*",
+            "wellKnownImageName": "ubuntu-22.04/latest"
+          }
+        ],
+        "osProfile": {
+          "secretsManagementSettings": {
+            "observedCertificates": [],
+            "keyExportable": false
+          },
+          "logonType": "Service"
+        },
+        "storageProfile": {
+          "osDiskStorageAccountType": "Standard",
+          "dataDisks": []
+        }
+      }
+    }
+    ```
+
+   This configuration specifices a pool using the **Standard_D2as_v5** image, the **ubuntu-22.04** [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md#os-disk-type) with no [attached data disk](./configure-storage.md).
+
+1. Create a file named **organization-profile.json** with the following contents. Replace `<organization-name>` with the name for your Azure DevOps organization.
+
+    ```json
+    {
+      "azure-dev-ops": {
+        "organizations": [
+          {
+            "url": "https://dev.azure.com/<organization-name>",
+            "projects": [],
+            "parallelism": 1
+          }
+        ],
+        "permissionProfile": {
+          "kind": "CreatorOnly"
+        }
+      }
+    }
+    ```
+
+   This configuration specifies a pool that is available to [all projects in your Azure DevOps organization](./configure-security.md#configure-organization-access).
+
+
 ## Create the Managed DevOps Pool
 
 1. Install the `mdp` extension.
@@ -151,15 +222,20 @@ az group create --name $RESOURCE_GROUP_NAME --location $REGION
     az extension add --name mdp
    ```
 
-1. Create the Managed DevOps Pool by running the following [az mdp pool create](/cli/azure/mdp/pool?view=azure-cli-latest#az-mdp-pool-create) command.
+1. Create the Managed DevOps Pool by running the following [az mdp pool create](/cli/azure/mdp/pool#az-mdp-pool-create) command.
 
-4. Create the Managed DevOps Pool. Replace `<resourceGroupName>` with the resource group created in the first step.
+    ```azurecli
+    az mdp pool create -n $POOL_NAME \
+       -g $RESOURCE_GROUP_NAME \
+       -l $REGION \
+       --devcenter-project-id $DEVCPID \
+       --maximum-concurrency 1 \
+       --agent-profile agent-profile.json \
+       --fabric-profile fabric-profile.json \
+       --organization-profile organization-profile.json
+    ```
 
-   ```azurecli
-   az deployment group create --resource-group <resourceGroupName> --template-file mdp-azure-deploy.json --parameters mdp-azure-deploy-parameters.json
-   ```
-
-   If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message. `Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`. To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
+   If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message. `Cores needed to complete this request is 2, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`. To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
    
 ## View your created pool in the Azure portal
 
