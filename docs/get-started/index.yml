@@ -124,7 +124,7 @@ landingContent:
           - text: YAML schema
             url: /azure/devops/pipelines/yaml-schema/
           - text: Pipeline variables
-            url: /azure/devops/pipelines/process/variables.md
+            url: ../pipelines/process/variables.md
   - title: Set your preferences
     linkLists:
       - linkListType: quickstart
@@ -146,7 +146,7 @@ landingContent:
           - text: Team Explorer navigation
             url: ../user-guide/work-team-explorer.md
           - text: Use the command line
-            url: ../repos/git/use-the-command-line.md
+            url: ../repos/git/command-prompt.md
   - title: Migrate
     linkLists:
       - linkListType: concept
