@@ -74,19 +74,17 @@ landingContent:
           - text: Delete or restore a project
             url: ../organizations/projects/delete-project.md?toc=/azure/devops/get-started/toc.json
           - text: Set up billing for your Organization
-            url: ../organizations/billing/set-up-billing.md?toc=/azure/devops/get-started/toc.json
+            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md?toc=/azure/devops/get-started/toc.json
       - linkListType: concept
         links:
           - text: Default permissions and access
             url: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json
           - text: Permission lookup guide
             url: ../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/get-started/toc.json
-          - text: Manage project settings
-            url: ../organizations/settings/manage-project-settings.md?toc=/azure/devops/get-started/toc.json
-          - text: Project collection management
-            url: ../organizations/projects/manage-project-collections.md?toc=/azure/devops/get-started/toc.json
-          - text: Security and access control
-            url: ../organizations/security/security-access-control.md?toc=/azure/devops/get-started/toc.json
+          - text: About settings
+            url: ../organizations/settings/about-settings.md?toc=/azure/devops/get-started/toc.json
+          - text: Security best practices
+            url: ../organizations/security/security-best-practices.md?toc=/azure/devops/get-started/toc.json
   - title: Plan and track work
     linkLists:
       - linkListType: quickstart
@@ -95,10 +93,10 @@ landingContent:
             url: ../boards/get-started/plan-track-work.md
           - text: Create your backlog
             url: ../boards/backlogs/create-your-backlog.md
-          - text: Manage sprints
-            url: ../boards/sprints/manage-sprints.md
-          - text: Use Kanban boards
-            url: ../boards/boards/kanban-boards.md
+          - text: Define sprints
+            url: ../boards/sprints/define-sprints.md
+          - text: Use boards
+            url: ../boards/boards/kanban-quickstart.md
   - title: Collaborate on code
     linkLists:
       - linkListType: quickstart
@@ -111,16 +109,16 @@ landingContent:
             url: ../repos/git/use-ssh-keys-to-authenticate.md
           - text: Search code across projects
             url: ../project/search/functional-code-search.md
-          - text: Create a pull request
-            url: ../repos/git/create-pull-request.md
+          - text: Set Git repo permissions
+            url: ../repos/git/set-git-repository-permissions.md
   - title: Build and deploy your apps
     linkLists:
       - linkListType: quickstart
         links:
           - text: Create your first pipeline
             url: ../pipelines/get-started/pipelines-get-started.md
-          - text: Set up continuous integration
-            url: ../pipelines/get-started/continuous-integration.md
+          - text: Build multiple branches
+            url: ../pipelines/build/ci-build-git.md
       - linkListType: reference
         links:
           - text: YAML schema
