@@ -113,15 +113,16 @@ steps:
 
 ## Publish NuGet packages to an external feed
 
-To publish your NuGet packages to external feeds or public registries, such as feeds in other Azure DevOps organizations or on platforms like *nuget.org*, you must set up a service connection for authentication first.
+To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization. Navigate to the organization hosting your target feed and [Create a personal access token](../..organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) with **Packaging** > **Read & write** scope. 
+Once the PAT is created, copy and store it in a secure location, as you'll need it in the following section to set up a service connection.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
 
 1. Navigate to your **Project settings** > **Service connections**. 
 
 1. Select **New service connection**, select **NuGet**, and then select **Next**. 
 
-1. Select **ApiKey** for the **Authentication method**, and then enter your **Feed URL**. Provide your **Username** and **Password**, give your service connection a name, and check **Grant access permission to all pipelines** if applicable to your scenario.
+1. Select **External Azure DevOps Server** as the **Authentication method**, and then enter your target **Feed URL**. Paste the **Personal Access Token** you created earlier, provide a name for your service connection, and check **Grant access permission to all pipelines** if applicable to your scenario.
 
 1. Select **Save** when you're done.
 
@@ -130,7 +131,7 @@ To publish your NuGet packages to external feeds or public registries, such as f
 ::: moniker range=">= azure-devops-2022"
 
 > [!NOTE]
-> The [NuGetAuthenticate@1](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task supports service connections with basic authentication but does not support ApiKey authentication. If you need to use ApiKey authentication, you must use the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task instead.
+> The [NuGetAuthenticate@1](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task does not support service connections that use ApiKey authentication.
 
 #### [YAML](#tab/yaml/)
 
