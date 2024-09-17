@@ -174,6 +174,11 @@ These investments include:
          <td><a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
+      </tr>  
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[GH! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">GH! mentions support</a></td>
+         <td>Boards</td>
+         <td>2024 Q4</td>
       </tr>      
     </tbody>
 </table>
@@ -326,7 +331,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-      <td rowspan="3"><strong>2024 Q4</strong></td>
+      <td rowspan="4"><strong>2024 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -337,6 +342,10 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>  
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments" data-raw-source="[Improve cut and paste of images into work item comments](/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments)">Improve cut and paste of images into work item comments</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[GH! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">GH! mentions support</a></td>
          <td>Boards</td>
       </tr>
       <tr>
