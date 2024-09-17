@@ -23,6 +23,8 @@ monikerRange: '<= azure-devops'
 
 Use the Test & Feedback extension to provide voluntary feedback, even if you don't receive a  [feedback request](request-stakeholder-feedback.md#request). 
 
+[!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
+
 1. Open the Test & Feedback extension in your browser using the ![launch exploratory testing](media/shared/exp-test-icon.png) icon in the toolbar. 
 
 2. In the **Connection settings** page, select **Connected**.

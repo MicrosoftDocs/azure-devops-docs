@@ -220,6 +220,9 @@
   - name: Set up retention policies
     displayName: policies, retention, pipeline artifact
     href: ../pipelines/policies/retention.md
+  - name: Use the .artifactignore file
+    href: reference/artifactignore.md
+    displayName: artifactignore, gitignore
 - name: Symbols
   items:
   - name: Symbols overview
@@ -242,9 +245,6 @@
   - name: Package graphs
     displayName: graph, artifacts, packages
     href: concepts/package-graph.md
-  - name: Use the .artifactignore file
-    displayName: artifactignore, gitignore
-    href: reference/artifactignore.md
   - name: Componentization
     displayName: componentization, artifacts, packages, concepts
     href: collaborate-with-packages.md

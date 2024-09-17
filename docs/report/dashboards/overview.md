@@ -1,7 +1,7 @@
 ---
 title: Understand dashboards, charts, reports, and widgets
 titleSuffix: Azure DevOps  
-description: Learn about OOB charts, widgets, dashboards, and reports available to monitor status and trends in Azure DevOps.
+description: Learn about charts, widgets, dashboards, and reports available to monitor status and trends in Azure DevOps.
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.subservice: azure-devops-analytics
@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 08/03/2022
+ms.date: 09/17/2024
+#customer intent:  As an administrator or team member, I want to understand how using a dashboard can provide visibility into projects for my team.
 ---
 
 # About dashboards, charts, reports, and widgets
@@ -18,9 +19,9 @@ ms.date: 08/03/2022
 
 Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. Each team can tailor their dashboards to share information and monitor their progress.
 
-If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). Looking for instructions on a specific task, in-context chart, widget, or report? See [Dashboards and widgets quick reference](quick-ref.md). For more information, see the [Reporting roadmap](../powerbi/reporting-roadmap.md).
+If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). Looking for instructions on a specific task, in-context chart, widget, or report? See [Dashboards, charts, and quick reference](quick-ref.md). For more information, see the [Reporting roadmap](../powerbi/reporting-roadmap.md).
 
-[!INCLUDE [temp](../../includes/version-selector.md)]
+[!INCLUDE [version selector](../../includes/version-selector.md)]
 
 ## Supported capabilities, permissions, and access
 
@@ -41,11 +42,11 @@ The following features provide support for viewing Azure DevOps data through the
 
 The following features provide support for viewing Azure DevOps data by using Power BI:
 
-- **Analytics views**: Provide a simplified way to specify the filter criteria for a Power BI report based on Analytics data for Azure Boards data. For more information, see [What are Analytics views?](../powerbi/what-are-analytics-views.md).
+- **Analytics views**: Provide a simplified way to specify the filter criteria for a Power BI report based on Analytics data for Azure Boards data. For more information, see [About Analytics views](../powerbi/what-are-analytics-views.md).
 - **Power BI reports**: Allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data. For on-premises Azure DevOps environments, project collections must be configured to support the Inherited process.
 
-	> [!NOTE]
-	> Open Data Protocol (OData) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/).
+> [!NOTE]
+> Open Data Protocol (OData) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/).
 ::: moniker-end  
 
 ::: moniker range="< azure-devops-2022"
@@ -57,17 +58,18 @@ SQL Server Reporting Services is the legacy reporting solution available with Az
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+
 - **Excel status and trend reports**: Support generating custom work tracking reports by using Excel starting with a flat-list query. For more information, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
+
 ::: moniker-end  
-   
 
 ### Supported features for access levels
 
 Users with **Stakeholder** access get restricted privileges, granting them access to only those features outlined in the following table. For more information, see [About access levels](../../organizations/security/access-levels.md). In addition to access levels, certain features require permissions to execute.
 
 > [!NOTE]
-> Data displayed within a chart or widget is subject to permissions granted to the signed-in user. For more information, see [FAQs on Azure DevOps dashboards, charts, and reports in the Access and permissions section](faqs.yml).
+> Data displayed within a chart or widget is subject to permissions granted to the signed-in user. For more information, see [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml).
 
 :::row:::
    :::column span="3":::
@@ -174,27 +176,25 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 ::: moniker-end
 
+---
+
 ### Default permissions
 
-**Dashboards**
-
 ::: moniker range="azure-devops"
-Set [individual dashboard permissions](dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards.
+For Dashboards, set [individual dashboard permissions](dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-Set [dashboard permissions at the team level](dashboard-permissions.md) for team dashboards.
+For Dashboards, set [dashboard permissions](dashboard-permissions.md) at the team level for team dashboards.
 ::: moniker-end
 
-[!INCLUDE [temp](../../organizations/security/includes/report.md)]
+[!INCLUDE [report dashboard permissions](../../organizations/security/includes/report.md)]
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range=">= azure-devops-2019"
 
-**Power BI Integration and Analytics views**
+For Power BI Integration and Analytics views, you set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level.
 
-You set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level.
-
-[!INCLUDE [temp](../../organizations/security/includes/analytics.md)]
+[!INCLUDE [analytics dashboard permissions](../../organizations/security/includes/analytics.md)]
 
 ::: moniker-end
 
@@ -210,13 +210,13 @@ Each team can [add and configure multiple dashboards](dashboards.md) to:
 
 Easily add and rearrange widgets on the dashboard to show recent changes made to view build status, bug trends, and more.
 
-![Screenshot that shows an example dashboard.](media/dashboard-view-with-widgets.png)
+:::image type="content" source="media/dashboard-view-with-widgets.png" alt-text="Screenshot that shows an example dashboard.":::
 
 #### Sequence for adding and customizing a dashboard
 
 Select one of the following boxes to open the corresponding article.
 
-[![Tile link to Add dashboard article.](media/gs-add-dashboard.png)](dashboards.md)[![Tile link to Add widget article.](media/gs-add-widget.png)](add-widget-to-dashboard.md)
+[:::image type="content" source="media/gs-add-dashboard.png" alt-text="Diagram is a link to Add dashboard article.":::](dashboards.md) [:::image type="content" source="media/gs-add-widget.png" alt-text="Diagram is a link to Add widget article.":::](add-widget-to-dashboard.md)
 
 <a id="monitor-progress">  </a>
 
@@ -232,80 +232,45 @@ For more information, see [Define a query](../../boards/queries/using-queries.md
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot that shows Active bug charts added to dashboards.](media/overview/active-bug-charts-on-dashboards-2019.png)
+:::image type="content" source="media/overview/active-bug-charts-on-dashboards-2019.png" alt-text="Screenshot that shows Active bug charts added to dashboards.":::
 
 ::: moniker-end
-
-
 
 #### Sequence for adding query-based charts to a dashboard
 
 Select one of the following boxes to open the corresponding article.
 
-[![Tile link to Edit query article.](media/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Tile link to Create chart article.](media/gs-chart-create.png)](charts.md)[![Tile link to Add chart to dashboard article.](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md)
+[:::image type="content" source="media/gs-chart-query.png" alt-text="Diagram that is a link to Edit query article.":::](../../boards/queries/using-queries.md) [:::image type="content" source="media/gs-chart-create.png" alt-text="Diagram is a link to create a chart article.":::](add-charts-to-dashboard.md) [:::image type="content" source="media/gs-chart-add-dashboard.png" alt-text="Diagram is a link to Add chart to dashboard article.":::](add-charts-to-dashboard.md)
 
 ## Charts: Manual testing progress, results, and trends
 
-The steps to creating charts that track manual testing progress and results are similar to the ones for tracking work. The starting point begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. And, just like work item query-based charts, you can add these charts to a dashboard.
+The steps to creating charts that track manual testing progress and results are similar to the ones for tracking work. The starting point is the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. And, just like work item query-based charts, you can add these charts to a dashboard.
 
 For more information, see:
 
 - [Create test plans and test suites](../../test/create-a-test-plan.md)
 - [Create manual test cases](../../test/create-test-cases.md)
-- [Track test status charts](../../test/track-test-status.md#charts)
+- [Track testing progress](../../test/track-test-status.md#charts)
 
 #### Sample lightweight test charts
   
-![Screenshot that shows the Web Team test plan is a chart showing counts of tests in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
+:::image type="content" source="media/gs-monitor-test-charts.png" alt-text="Screenshot that shows the Web Team test plan is a chart showing counts of tests in various stages, with tests broken down by suite.":::
 
 ## Widgets
 
 You add widgets to a dashboard to display a chart, information, or set of links. Most widgets are configurable. For a description of each supported widget for your platform and version, see the [Widget catalog](widget-catalog.md). Here are the widgets that support the indicated service.
 
-[!INCLUDE [temp](../includes/widgets-oob.md)]
-
----
-:::row:::
-   :::column span="1":::
-      **Work**
-      - [Chart for work items](widget-catalog.md#chart-wit-widget)
-      - [New Work item](widget-catalog.md#new-work-item-widget)
-      - [Query results](widget-catalog.md#query-results-widget)
-      - [Query tile](widget-catalog.md#query-tile-widget)
-      - [Sprint burndown](widget-catalog.md#sprint-burndown-widget)
-      - [Sprint capacity](widget-catalog.md#sprint-capacity-widget)
-      - [Sprint overview](widget-catalog.md#sprint-overview-widget)
-      - [Work links](widget-catalog.md#work-links-widget)
-      ---
-      **Code**
-      - [Code tile](widget-catalog.md#code-tile-widget)
-      - [Pull request](widget-catalog.md#pull-request-widget)
-   :::column-end:::
-   :::column span="1":::
-      **Build**
-      - [Chart for build history](widget-catalog.md#build-history-widget)
-      ---
-      **Information and links**
-      - [Markdown](widget-catalog.md#markdown-widget)
-      - [Other links](widget-catalog.md)
-      - [Team members](widget-catalog.md#team-members-widget)
-      - [Team room](widget-catalog.md)
-      - [Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)
-      - [Welcome](widget-catalog.md#how-to-widget)
-   :::column-end:::
-:::row-end:::
----
+[!INCLUDE [widget catalog links](../includes/widgets-oob.md)]
 
 ### Sprint chart widgets
 
-![Tile link to Sprint capacity widget.](media/widget-sprint-capacity.png)  ![Tile link to Sprint burndown widget](media/widget-sprint-burndown.png)
+[:::image type="icon" source="media/widget-sprint-capacity.png":::](widget-catalog.md#sprint-capacity-widget) [:::image type="icon" source="media/widget-sprint-burndown.png":::](widget-catalog.md#sprint-burndown-analytics-widget)
 
 ::: moniker range=">= azure-devops-2019"
 
 ### Sprint scope change
 
-There's no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint by using the Query Editor. For more information, see [About Sprints, Scrum and project management, Sprint scope change](../../boards/sprints/scrum-overview.md#sprint-scope-change).
+There's no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint by using the Query Editor. For more information, see [Query sprint scope changes](../../boards/sprints/scrum-overview.md#sprint-scope-change).
 
 ::: moniker-end
 
@@ -313,7 +278,7 @@ There's no chart or widget that tracks changes to sprint scope. However, you can
 
 ### Sample Cumulative Flow Diagram widget
 
-![Screenshot that shows a Cumulative Flow Diagram widget.](media/cfd-exampe-rolling-30-days.png)
+:::image type="content" source="media/cfd-exampe-rolling-30-days.png" alt-text="Screenshot that shows a Cumulative Flow Diagram widget.":::
 
 ::: moniker-end
 
@@ -323,8 +288,13 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 #### Code, build, and release chart widgets
 
-![Screenshot that shows a Code tile widget.](media/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Screenshot that shows a Pull request widget.](media/widget-catalog-pull-request.png)
-![Screenshot that shows a Build history widget.](media/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot that shows a Deployment status widget.](media/widget-deployment-status.png)
+:::image type="content" source="media/widget-code-tile.png" alt-text="Screenshot that shows a Code tile widget.":::
+
+:::image type="content" source="media/widget-catalog-pull-request.png" alt-text="Screenshot that shows a Pull request widget.":::
+
+:::image type="content" source="media/widget-deployment-status.png" alt-text="Screenshot that shows a Build history widget.":::
+
+:::image type="content" source="media/widget-build-history-chart.png" alt-text="Screenshot that shows a Deployment status widget.":::
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -334,7 +304,7 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ::: moniker range=">= azure-devops-2020"
 
-The Analytics service is the reporting platform for Azure DevOps. As described in [What is the Analytics service?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets, [in-context Analytics reports](#work-tracking-analytics), and [Analytics views for Power BI reporting](../powerbi/what-are-analytics-views.md).
+The Analytics service is the reporting platform for Azure DevOps. As described in [What is Analytics?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets, [in-context Analytics reports](#work-tracking-analytics), and Analytics views for Power BI reporting. For more information, see [About Analytics views](../powerbi/what-are-analytics-views.md).
 
 ::: moniker-end
 
@@ -351,12 +321,9 @@ The Analytics service is the reporting platform for Azure DevOps. As described i
 
 #### Sample Lead time widget
 
-![Screenshot that shows a Lead time widget.](media/lead-time-control-chart.png)
+:::image type="content" source="media/lead-time-control-chart.png" alt-text="Screenshot that shows a Lead time widget.":::
 
-For more information, see:
-
-- [Widgets based on Analytics](../dashboards/analytics-widgets.md)
-- [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)
+For more information, see [Widgets based on Analytics data](../dashboards/analytics-widgets.md) and [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget).
 
 ::: moniker-end
 
@@ -372,22 +339,19 @@ Azure Boards provides several in-context reports that derive from Analytics data
 
 Use the interactive controls to choose the time frame, swimlanes, and workflow states or board columns.
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot that shows open CFD analytics.](media/cfd/analytics-cfd-azure-devops.png)
+:::image type="content" source="media/cfd/analytics-cfd-azure-devops.png" alt-text="Screenshot that shows open CFD analytics." lightbox="media/cfd/analytics-cfd-azure-devops.png":::
 
 ### Velocity
 
 Use the interactive controls to choose the count or sum field and number of iterations.
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot that shows open Velocity analytics.](media/velocity/analytics-velocity-azure-devops.png)
+:::image type="content" source="media/velocity/analytics-velocity-azure-devops.png" alt-text="Screenshot that shows open Velocity analytics.":::
 
 ### Sprint Burndown Trend
 
-Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks.
+Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items or tasks.
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot that shows Burndown Trend based on Remaining Work.](../../boards/sprints/media/burndown/analytics-burndown-remaining-work.png)
+:::image type="content" source="../../boards/sprints/media/burndown/analytics-burndown-remaining-work.png" alt-text="Screenshot that shows Burndown Trend based on Remaining Work." lightbox="../../boards/sprints/media/burndown/analytics-burndown-remaining-work.png":::
 
 ::: moniker-end
 
@@ -399,22 +363,21 @@ Azure Boards provides several in-context reports that derive from the work-track
 
 The CFD report shows the count of work items in the backlog based on their state over time.
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot that shows an opened CFD chart.](media/cfd/data-store-cumulative-flow-opened.png)
+:::image type="content" source="media/cfd/data-store-cumulative-flow-opened.png" alt-text="Screenshot that shows an opened CFD chart.":::
 
 ### Velocity
 
 Velocity is based on the values entered for **Effort**, **Story Points**, or **Size** fields for work items that belong to the **Requirement** category.
 
-![Screenshot that shows a web portal Velocity chart showing seven sprints of in-progress and completed work.](media/team-velocity-chart-web-7-iterations.png)
+:::image type="content" source="media/team-velocity-chart-web-7-iterations.png" alt-text="Screenshot that shows a web portal Velocity chart showing seven sprints of in-progress and completed work.":::
 
 ### Sprint burndown
 
-Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](configure-sprint-burndown.md) for remaining work.
+Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities, such as Development, Test, or Design, and individual team members. The second tracks the [sprint burndown](configure-sprint-burndown.md) for remaining work.
 
 | Capacity bars | Burndown  |
 |-------| ----- |
-|![Screenshot that shows Capacity bars.](../../boards/sprints/media/ALM_DS_CapacityBars_S.png) | ![Screenshot that shows a Burndown chart.](../../boards/sprints/media/ALM_DS_SprntBD_Chrt_S.png)  |
+|:::image type="content" source="../../boards/sprints/media/ALM_DS_CapacityBars_S.png" alt-text="Screenshot that shows Capacity bars."::: | :::image type="content" source="../../boards/sprints/media/ALM_DS_SprntBD_Chrt_S.png" alt-text="Screenshot that shows a Burndown chart."::: |
 
 ::: moniker-end
 
@@ -436,7 +399,7 @@ For more information about these reports, see:
 
 - [Cumulative flow](cumulative-flow.md)
 - [Team velocity](team-velocity.md)
-- [View/configure sprint burndown](configure-sprint-burndown.md)
+- [Sprint burndown](configure-sprint-burndown.md)
 
 <a id="incontext-reports"></a>  
 
@@ -444,7 +407,7 @@ For more information about these reports, see:
 
 ## In-context reports: Pipelines and Test
 
-Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for **Test failures**) to view the reports and select the **Analytics** tab. Select **View full report** on a summary card for a detailed report.
+Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline or release summary for **Test failures** to view the reports and select the **Analytics** tab. Select **View full report** on a summary card for a detailed report.
 
 :::image type="content" source="../../pipelines/reports/media/pipelines-reports/analyticstab.png" alt-text="Screenshot that shows the Analytics tab.":::
 
@@ -452,6 +415,7 @@ For more information on each in-context Analytics report for pipeline runs, see:
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 - [Historical graph for agent pools (preview)](../../pipelines/agents/pool-consumption-report.md)
 - [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
 - [Test pass rate report](../../pipelines/reports/pipelinereport.md#test-failures-report)
@@ -487,7 +451,7 @@ For more information, see [Pipeline pass rate report](../../pipelines/reports/pi
 
 The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. Summary charts are also provided for builds that indicate code coverage and test failures or success.
 
-:::image type="content" source="../../pipelines/test/media/test-analytics/test-failures.png" alt-text="Screenshot that shows a Test analytics detail view.":::
+:::image type="content" source="../../pipelines/test/media/test-analytics/test-failures.png" alt-text="Screenshot that shows a Test analytics detail view." lightbox="../../pipelines/test/media/test-analytics/test-failures.png":::
 
 For more information, see [Test failures report](../../pipelines/test/test-analytics.md#test-failures).
 
@@ -522,31 +486,21 @@ Azure Pipelines provides an in-context **Test failures** report, derived from An
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
+Add data to support reporting requirements by adding a custom field: [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
-
-
 
 ## Marketplace widgets and extensibility
 
 In addition to the widgets available in the widget catalog, you might find interesting widgets in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).
 
-Or, you can [create your own widget by using the REST API](../../extend/develop/add-dashboard-widget.md).
+Or, you can create your own widget by using the REST API. For more information, see [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md).
 
-## Next steps
+## Related articles
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
 
-## Related articles
-
-- [FAQs on dashboards, charts, and reports](faqs.yml)
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Widget catalog](widget-catalog.md)
-- [Best practices for lightweight Agile project management by using Azure Boards](../../boards/best-practices-agile-project-management.md)
-- [Cross-service integration and collaboration overview](../../cross-service/cross-service-overview.md)
-
-[excel-adhoc-query-report]: ../admin/create-status-and-trend-excel-reports.md
-[add-a-team]: ../../organizations/settings/add-teams.md
-[team-assets]: ../../organizations/settings/manage-teams.md
-[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
-[add-team-admin]: ../../organizations/settings/add-team-administrator.md
+- [Best practices for Agile project management](../../boards/best-practices-agile-project-management.md)
+- [Cross-service overview](../../cross-service/cross-service-overview.md)

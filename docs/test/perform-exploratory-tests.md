@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 01/09/2024
+ms.date: 09/16/2024
 ---
 
 # Install the Test & Feedback extension
@@ -56,14 +56,14 @@ For more information, see [Visual Studio Marketplace](https://marketplace.visual
 
 1. Check the list of [supported browsers](#browser-support) and decide which you want to use.
 
-1. Download and install your chosen browser, if you haven't already, then open it.
+2. Download and install your chosen browser, if you haven't already, and then open it.
 
-2. Go to [Visual Studio Marketplace > Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
+3. Go to [Visual Studio Marketplace > Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
    and select **Install**.
 
    ![Screenshot showing Visual Studio Marketplace, Test & Feedback extension, Install.](media/perform-exploratory-tests/get-started-01.png)
 
-3. Follow the instructions shown to install the Test & Feedback extension in your browser.
+4. Follow the instructions shown to install the Test & Feedback extension in your browser.
 
    You only need to install the extension or add-on once. Afterwards your browser updates the extension automatically.
 
@@ -84,12 +84,12 @@ For more information, see [Visual Studio Marketplace](https://marketplace.visual
    Available to all users of Azure DevOps:
 
    - Users with **Basic** access or higher: Full capture and create capabilities
-     to submit bugs, tasks, and test cases. Includes collaboration capabilities, such as end-to-end traceability, rich insights across completed exploratory sessions, simplified tracking and triage for bugs and tasks, and more.
+     to submit bugs, tasks, and test cases. Includes collaboration capabilities, such as end-to-end traceability, rich insights across completed exploratory sessions, simplified tracking, and triage for bugs and tasks, and more.
    - Users with **Stakeholder** access: Full capture and create capabilities, except for test cases, to submit feedback and respond to feedback requests from the team. 
    - Feedback experience is available only in Azure DevOps.<p />
  
    **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Azure DevOps is required. Take notes and screenshots with inline annotations to capture issues. Create bugs and export a session report to share findings.
+   Available to everyone. No connection to Azure DevOps is required. Take notes and screenshots with inline annotations and capture issues. Create bugs and export a session report to share findings.
  
 If you have any issues connecting to Azure DevOps, see [Troubleshoot connection](../user-guide/troubleshoot-connection.md).
 

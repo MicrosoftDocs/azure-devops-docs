@@ -323,7 +323,7 @@ sections:
       - question: |
           Q: What happens if I delete my organization resource? 
         answer: |
-          A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.yml#q--can-i-use-azure-devops-for-free-). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
+          A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.yml#q--can-i-use-azure-devops-for-free-). When you [delete an organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. Ensure you're aware of the precautions contained within the linked article.
       
       - question: |
           Q: Can I apply tags to organizations from the Azure portal?

@@ -119,22 +119,22 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ## Azure Boards menu and toolbar
 
-| Name                            | Target ID                                         | Preview image | 
-| --------------------------------|---------------------------------------------------|------------------- |
-| Work item query menu            | `ms.vss-work-web.work-item-query-menu`            | ![Custom query action added to query menu. ](media/work/queryActions.png)| 
-| Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![Query Results custom toolbar menu action](media/work/queryResultsToolbarMenu.png)| 
-| Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![Query Result Item Menu custom action.](media/work/queryResultsItemMenu.png)| 
-| Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![Query toolbar custom pivot tab ](media/work/queryResultsPivotTab.png)| 
-| Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu` | ![Custom work item toolbar actions.](media/work/workItemToolbarActions.png)| 
-| Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![Backlog item actions custom menu options.  ](media/work/backlogItemActions.png)| 
-| Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![Sprint board pivot filter menu](media/work/sprintBoardPivotFilterActions.png)  | 
-| Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![Backlog Board Pivot Filter Actions.](media/work/backlogBoardPivotFilterActions.png)| 
-| Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    |   | 
-| Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Screenshot of product Backlog Custom Tab.](media/work/product-backlog-tab.png)| 
-| Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![Screenshot of iterations Backlog Custom Tab.](media/work/iteration-backlog-tab.png)| 
-| Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![Screenshot of Portfolio Backlog Custom Pane.](media/work/portfolio-backlog-pane.png)| 
-| Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![Screenshot of Product Backlog Custom Pane.](media/work/product-backlog-pane.png)| 
-| Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![Screenshot of Iteration Backlog Custom Pane.](media/work/iteration-backlog-pane.png)| 
+| Name                                 | Target ID                                              | Preview image                                                                          |
+| ------------------------------------ | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| Work item query menu                 | `ms.vss-work-web.work-item-query-menu`                 | ![Custom query action added to query menu. ](media/work/queryActions.png)              |
+| Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![Query Results custom toolbar menu action](media/work/queryResultsToolbarMenu.png)    |
+| Work item query results menu item    | `ms.vss-work-web.query-result-work-item-menu`          | ![Query Result Item Menu custom action.](media/work/queryResultsItemMenu.png)          |
+| Work item query results tab          | `ms.vss-work-web.query-tabs`                           | ![Query toolbar custom pivot tab ](media/work/queryResultsPivotTab.png)                |
+| Work item for context menu           | `ms.vss-work-web.work-item-toolbar-menu`               | ![Custom work item toolbar actions.](media/work/workItemToolbarActions.png)            |
+| Backlog item menu                    | `ms.vss-work-web.backlog-item-menu`                    | ![Backlog item actions custom menu options.  ](media/work/backlogItemActions.png)      |
+| Sprint board pivot filter menu       | `ms.vss-work-web.sprint-board-pivot-filter-menu`       | ![Sprint board pivot filter menu](media/work/sprintBoardPivotFilterActions.png)        |
+| Board pivot filter menu              | `ms.vss-work-web.backlog-board-pivot-filter-menu`      | ![Backlog Board Pivot Filter Actions.](media/work/backlogBoardPivotFilterActions.png)  |
+| Card menu                            | `ms.vss-work-web.backlog-board-card-item-menu`         |                                                                                        |
+| Product backlog tab                  | `ms.vss-work-web.product-backlog-tabs`                 | ![Screenshot of product Backlog Custom Tab.](media/work/product-backlog-tab.png)       |
+| Iteration backlog tab                | `ms.vss-work-web.iteration-backlog-tabs`               | ![Screenshot of iterations Backlog Custom Tab.](media/work/iteration-backlog-tab.png)  |
+| Portfolio backlog pane               | `ms.vss-work-web.portfolio-backlog-toolpane`           | ![Screenshot of Portfolio Backlog Custom Pane.](media/work/portfolio-backlog-pane.png) |
+| Product backlog pane                 | `ms.vss-work-web.requirement-backlog-toolpane`         | ![Screenshot of Product Backlog Custom Pane.](media/work/product-backlog-pane.png)     |
+| Iteration backlog pane               | `ms.vss-work-web.iteration-backlog-toolpane`           | ![Screenshot of Iteration Backlog Custom Pane.](media/work/iteration-backlog-pane.png) |
 
 ::: moniker-end
 
@@ -144,33 +144,31 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ## Azure Pipelines menu and toolbar
 
-| Name                      | Target ID                                   | Preview | 
-| --------------------------|---------------------------------------------|-------------------| 
-| Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![Completed Build Actions](media/build/completedBuildActions.png)| 
-| Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![Build Definition Actions](media/build/buildDefinitionActions.png)| 
-| Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![Test Results Toolbar Action](../../media/extension_test_custom_action.png)| 
-| Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![Test Result Details Tab](../../media/extension_test_custom_tab.png)| 
-| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![Definition Explorer Context Menu](media/release/definitionExplorerContextMenu.png)| 
-| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![Definition Explorer Toolbar Menu](media/release/definitionExplorerToolbarMenu.png)| 
-| Release summary toolbar menu | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu` | ![Release Summary Toolbar Menu](media/release/releaseSummaryToolbarMenu.png)|
-| Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                   | ![Release Summary Tab](media/release/releaseSummaryTab.png)| 
-| Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`            | ![Release Summary Section](media/release/releaseSummarySection.png)| 
+| Name                                   | Target ID                                                               | Preview                                                                              |
+| -------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Completed build menu                   | `ms.vss-build-web.completed-build-menu`                                 | ![Completed Build Actions](media/build/completedBuildActions.png)                    |
+| Build definitions menu                 | `ms.vss-build-web.build-definition-menu`                                | ![Build Definition Actions](media/build/buildDefinitionActions.png)                  |
+| Test results toolbar action            | `ms.vss-test-web.test-results-actions-menu`                             | ![Test Results Toolbar Action](../../media/extension_test_custom_action.png)         |
+| Test result details tab                | `ms.vss-test-web.test-result-details-tab-items`                         | ![Test Result Details Tab](../../media/extension_test_custom_tab.png)                |
+| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![Definition Explorer Context Menu](media/release/definitionExplorerContextMenu.png) |
+| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![Definition Explorer Toolbar Menu](media/release/definitionExplorerToolbarMenu.png) |
+| Release summary toolbar menu           | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![Release Summary Toolbar Menu](media/release/releaseSummaryToolbarMenu.png)         |
+| Release summary tab                    | `ms.vss-releaseManagement-web.release-details-view`                     | ![Release Summary Tab](media/release/releaseSummaryTab.png)                          |
+| Release summary section                | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![Release Summary Section](media/release/releaseSummarySection.png)                  |
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
 ## Azure Pipelines menu and toolbar
 
-| Name                      | Target ID                                   | Preview | 
-| --------------------------|---------------------------------------------|-------------------| 
-| Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![Completed Build Actions](media/build/completedBuildActions.png)| 
-| Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![Build Definition Actions](media/build/buildDefinitionActions.png)| 
-| Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![Test Results Toolbar Action](../../media/extension_test_custom_action.png)| 
-| Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![Test Result Details Tab](../../media/extension_test_custom_tab.png)| 
-| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![Definition Explorer Context Menu](media/release/definitionExplorerContextMenu.png)| 
-| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![Definition Explorer Toolbar Menu](media/release/definitionExplorerToolbarMenu.png)| 
-| Pipeline details view, header button                  | `ms.vss-build-web.pipelines-header-menu`            | ![Pipeline details view, header menu](media/build/header-menu.png)| 
-| Pipeline details view, folder context menu                  | `ms.vss-build-web.pipelines-folder-menu`            | ![Pipeline details view, folder context menu](media/build/folder-menu.png)| 
+| Name                                       | Target ID                                                               | Preview                                                                              |
+| ------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Completed build menu                       | `ms.vss-build-web.completed-build-menu`                                 | ![Completed Build Actions](media/build/completedBuildActions.png)                    |
+| Test results toolbar action                | `ms.vss-test-web.test-results-actions-menu`                             | ![Test Results Toolbar Action](media/build/extension-test-custom-action.png)         |
+| Test result details tab                    | `ms.vss-test-web.test-result-details-tab-items`                         | ![Test Result Details Tab](media/build/extension-test-custom-tab.png)                |
+| Release pipeline explorer context menu     | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![Definition Explorer Context Menu](media/release/definitionExplorerContextMenu.png) |
+| Pipeline details view, header button       | `ms.vss-build-web.pipelines-header-menu`                                | ![Pipeline details view, header menu](media/build/header-menu.png)                   |
+| Pipeline details view, folder context menu | `ms.vss-build-web.pipelines-folder-menu`                                | ![Pipeline details view, folder context menu](media/build/folder-menu.png)           |
 
 <a name="buildtasks"></a>
 
