@@ -68,7 +68,7 @@ productDirectory:
         - url: ./boards/get-started/plan-track-work.md
           text: Plan & track work
         - url: ./boards/backlogs/office/bulk-add-modify-work-items-excel.md
-          text: Bulk add or modify work items
+          text: Add or modify work items in bulk
         - url: ./boards/index.yml
           text: See more >
     # Card
@@ -192,7 +192,7 @@ additionalContent:
     - title: Configure & customize resources
       items:    
         # Card
-        - title: Settings & Usage
+        - title: Settings & usage
           links:
             - text: About settings
               url: ./organizations/settings/about-settings.md
@@ -215,7 +215,7 @@ additionalContent:
             - text: See more >
               url: ./organizations/index.yml 
         # Card
-        - title: Security, Permissions, & Access 
+        - title: Security, permissions, & access 
           links:
             - text: About permissions, access, and security groups
               url: ./organizations/security/about-permissions.md
@@ -234,7 +234,7 @@ additionalContent:
             - text: See more >
               url: ./organizations/security/index.yml 
         # Card
-        - title: Cross-service, Azure, & GitHub Integration 
+        - title: Cross-service, Azure, & GitHub integration 
           links:
             - text: Cross-service integration overview 
               url: ./cross-service/cross-service-overview.md 
@@ -251,7 +251,7 @@ additionalContent:
             - text: See more >
               url: ./cross-service/index.yml
           # Card
-        - title: Azure Boards Customization
+        - title: Azure Boards customization
           links:
             - text: Configure & customize Azure Boards
               url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json
@@ -269,10 +269,10 @@ additionalContent:
               url: ./reference/process-templates/index.md 
             - text: See more >
               url: ./reference/index.yml 
-    - title: Additional services
+    - title: Other services
       items:
         # Card
-        - title: Analytics & Reporting
+        - title: Analytics & reporting
           links:
             - text: Dashboards, charts, reports, & widgets
               url: ./report/dashboards/overview.md
@@ -287,7 +287,7 @@ additionalContent:
             - text: See more >
               url: ./report/index.yml
         # Card
-        - title: Wikis, Search, & Navigation
+        - title: Wiki, search, & navigation
           links:
             - text: Create a wiki for your project
               url: ./project/wiki/wiki-create-repo.md
