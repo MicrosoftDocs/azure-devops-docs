@@ -59,6 +59,7 @@ Widgets are annotated as follows:
       - [Work Links](../dashboards/widget-catalog.md#work-links-widget)
       ::: moniker-end
       ::: moniker range=">= azure-devops-2019"
+      ---
       **Code**
       - [Code Tile](../dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
       - [Pull Request](../dashboards/widget-catalog.md#pull-request-widget) (Team)
@@ -85,8 +86,6 @@ Widgets are annotated as follows:
       - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget)
       - [Welcome](../dashboards/widget-catalog.md#how-to-widget)
       ::: moniker-end
-      
-      ---
       
    :::column-end:::
 :::row-end:::

@@ -176,6 +176,8 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 ::: moniker-end
 
+---
+
 ### Default permissions
 
 ::: moniker range="azure-devops"
@@ -188,7 +190,7 @@ For Dashboards, set [dashboard permissions](dashboard-permissions.md) at the tea
 
 [!INCLUDE [report dashboard permissions](../../organizations/security/includes/report.md)]
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range=">= azure-devops-2019"
 
 For Power BI Integration and Analytics views, you set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level.
 
