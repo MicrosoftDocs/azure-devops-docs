@@ -152,7 +152,7 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 - Objectives
 - Customer-centric practices 
 
-To learn more about the project wiki, see [Share information](#share-information) later in this article. 
+For more information about the project wiki, see [Share information](#share-information) later in this article. 
 
 
 <a id="milestones"></a>
