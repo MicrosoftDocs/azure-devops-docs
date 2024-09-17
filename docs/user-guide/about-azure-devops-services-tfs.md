@@ -49,7 +49,7 @@ Azure DevOps Services and Azure DevOps Server offer similar core functionalities
   Azure DevOps Server: Organizations have complete control over their data and infrastructure.
 - **[User management:](#user-management)**
   Azure DevOps Services: Supports adding Microsoft Entra groups to Azure DevOps Services groups.
-  Azure DevOps Server: Access is granted through adding AD groups to various Azure DevOps groups2.
+  Azure DevOps Server: Access is granted through adding AD groups to various Azure DevOps groups.
 - **[Process customization:](#process-customization)**
   Azure DevOps Services: Inheritance process model with web UI and REST endpoint customization options.
   Azure DevOps Server: Offers both Inheritance and On-premises XML process models for customization.
