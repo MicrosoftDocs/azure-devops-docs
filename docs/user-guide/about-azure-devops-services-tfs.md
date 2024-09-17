@@ -99,7 +99,7 @@ When you compare Azure DevOps Services and Azure DevOps Server, it's important t
 ### Azure DevOps Services
 
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You can authenticate using either [Microsoft account](https://www.microsoft.com/account) credentials or [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) 
-credentials, depending on your organization setup. Microsoft Entra ID also allows you to enable features such as multi-factor-authentication, IP address restrictions, and more.
+credentials, depending on your organization setup. Microsoft Entra ID also allows you to enable features such as multifactor authentication, IP address restrictions, and more.
 
 We recommend configuring your organizations to use Microsoft Entra rather than Microsoft accounts. This approach provides a better experience in many scenarios and offers more options for enhanced security.
 
@@ -107,13 +107,13 @@ For more information, see [About accessing Azure DevOps Services with Microsoft 
 
 ### Azure DevOps Server
 
-With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). Authenticate using Windows Authentication and your Active Directory (AD) domain credentials. This process is seamless, and you never encounter sign-in experience.
+With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). Authenticate using Windows Authentication and your Active Directory (AD) domain credentials. This process is seamless, and you never encounter a sign-in experience.
 
 ## Data control
 
 Many entities seek information about data protection when considering a move to the cloud. We're committed to keeping Azure DevOps Services projects safe and secure. We have technical features and business processes in place to uphold this commitment. You can also take steps to secure your data. For more information, see the [Data protection overview](../organizations/security/data-protection.md).
 
-## User Management
+## User management
 
 When you manage users and groups in Azure DevOps Services and Azure DevOps Server, there are distinct methods and tools available for each platform to ensure proper access and organization.
 
@@ -156,7 +156,7 @@ With Azure DevOps Server, you can choose between the **Inheritance** process mod
   - The complexity of managing XML files can lead to errors and inconsistencies.
   - It might be challenging to maintain and troubleshoot customizations, especially in large or complex environments.
 
-To help you avoid issues, custom process templates and the **witadmin.exe** tool are always disabled. This approach ensures that all projects are automatically updated with each Azure DevOps Services upgrade. The product team is working to make process customization easier and more sustainable. More improvements are expected in the future.
+To help you avoid issues, custom process templates and the **witadmin.exe** tool are always disabled. This approach ensures that all projects are automatically updated with each Azure DevOps Services upgrade. The product team is working to make process customization easier and more sustainable.
 
 With the process customization capability, you can make changes directly within the web user interface (UI). If you prefer to customize your processes programmatically, you can use REST endpoints. Customizing projects this way ensures they're automatically updated when new versions of their base processes are released with Azure DevOps Services upgrades.
 
