@@ -36,7 +36,7 @@ The following features provide support for working with query results, saving an
       - [Open and run a query](../queries/view-run-query.md)  
       - [Publish/refresh a query (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)  
       - [Run REST API queries](/rest/api/azure/devops/wit/queries)  
-      - [Save queries](../queries/organize-queries.md#flat-list-query)  
+      - [Save queries](../queries/organize-queries.md#run-edit-and-save-a-query)  
       - [Set query permissions](../queries/set-query-permissions.md)  
    :::column-end:::  
 :::row-end:::

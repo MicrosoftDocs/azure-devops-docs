@@ -43,7 +43,7 @@ The following example shows how to find all closed bugs by modifying the
 
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
-    :::image type="content" source="media/view-run-queries/select-active-bugs.png" alt-text="Screenshot of the query selection.":::
+    :::image type="content" source="media/view-run-queries/run-active-bugs.png" alt-text="Screenshot of the query selection.":::
 
    > [!TIP]  
    > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
@@ -161,19 +161,19 @@ You add query folders from the **Boards > Queries > All** page.
  
 1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
-1. To add a folder, choose the  :::image type="icon" source="media/organize-queries/select-new-folder.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
-    :::image type="content" source="media/organize-queries/move-query-as-dialog.png" alt-text="Screenshot of Open Actions menu, choose New folder.":::
+    :::image type="content" source="media/organize-queries/select-new-folder.png" alt-text="Screenshot of Open Actions menu, choose New folder.":::
 
 1. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-    :::image type="content" source="media/organize-queries/new-folder-dialog.png" alt="Screenshot of new folder dialog.":::
+    :::image type="content" source="media/organize-queries/new-folder-dialog.png" alt-text="Screenshot of new folder dialog.":::
 
 1. To move items into a folder, drag-and-drop a query onto the folder. From the web portal, you can only drag a single query from outside a folder into a folder. 
 
 	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the **Save query** as dialog, choose the folder you want to save the query in. 
 
-    :::image type="content" source="media/organize-queries/move-query-as-dialog.png" alt-text="Screenshot of Save query as dialog.":::
+    :::image type="content" source="media/organize-queries/save-query-as-dialog.png" alt-text="Screenshot of Save query as dialog.":::
   
 ::: moniker-end
 
@@ -183,22 +183,19 @@ You add query folders from the **Boards > Queries > All** page.
  
 1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
-1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose  **New folder**. 
 
     :::image type="content" source="media/view-run-queries/select-new-folder-new-boards-hubs.png" alt-text="Screenshot of New folder selection.":::
     
 1. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-
     :::image type="content" source="media/view-run-queries/new-folder-dialog-new-boards-hubs.png" alt-text="Screenshot of new folder dialog.":::
-
 
 1. To move items into a folder, drag-and-drop a query onto the folder. From the web portal, you can only drag a single query from outside a folder into a folder. 
 
 	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the **Save query** as dialog, choose the folder you want to save the query in. 
     
     :::image type="content" source="media/view-run-queries/save-as-dialog-new-boards-hubs.png" alt-text="Screenshot of Save query as dialog.":::
-
 
 ::: moniker-end
 
@@ -226,11 +223,11 @@ All changes you make to your query folder structure in Visual Studio appear in t
 
 To save a shared query as a team favorite, you must be a member of the team.
 
-To add a query to a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
+You can add a shared query to team favorites.  Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
-Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+You can only add shared as team favorites if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
-You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
+::: moniker range="< azure-devops"
 
 1. To save a query as a team favorite, open :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** or :::image type="icon" source="media/22.png" border="false"::: the context menu for the query from  the **Queries** page. 
 
@@ -238,12 +235,26 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 	:::image type="content" source="media/organize-queries/save-query-team-favorite.png" alt-text="Screenshot of Save query as a team favorite.":::
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+1. To save a query as a team favorite, open **More actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: the context menu for the query from the **Shared Queries** on the **Queries** page. 
+
+1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you're a member are listed.
+
+	:::image type="content" source="media/organize-queries/save-query-team-favorite-new-boards-hubs.png" alt-text="Screenshot of Save query as a team favorite.":::
+
+::: moniker-end
+
 ## Add a query tile to a dashboard  
 
 A query tile displays a count of the work items in a query. You can also quickly open the query from the dashboard. You can add a query tile to a dashboard from the **Queries** page using the following steps, or by following the steps outlined in [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
  
 > [!NOTE]   
-> You can only add a shared query to a dashboard. And, to add or edit a widget of a team dashboard, you must be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
+> You must be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
+
+::: moniker range="< azure-devops"
 
 1. To add a query to a dashboard from the **Queries** page, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query.
 
@@ -256,6 +267,24 @@ A query tile displays a count of the work items in a query. You can also quickly
 1. Open the dashboard, and verify the query tile was added. You can configure the query tile to change the default color and to specify the color for the tile based on a conditional rule you specify.  
 
 	:::image type="content" source="media/organize-queries/configure-query-tile-widget.png" alt-text="Screenshot of Configure dialog for query tile widget.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+1. To add a query to a dashboard from the **Queries** page, open the  more actions meny:::image type="icon" source="../media/icons/more-actions.png" border="false"::: for the query.
+
+	:::image type="content" source="media/organize-queries/save-query-dashboard-new-boards-hubs.png" alt-text="Screenshot of More actions menu, select Add to dashboard.":::
+
+1. From the **Select a dashboard** dialog, choose the dashboard you want to add the query to. 
+
+	:::image type="content" source="media/organize-queries/select-dashboard.png" alt-text="Screenshot of Select a dashboard dialog.":::
+
+1. Open the dashboard, and verify the query tile was added. You can configure the query tile to change the default color and to specify the color for the tile based on a conditional rule you specify.  
+
+	:::image type="content" source="media/organize-queries/configure-query-tile-widget.png" alt-text="Screenshot of Configure dialog for query tile widget.":::
+
+::: moniker-end
  
 ## Related articles
 
