@@ -48,7 +48,7 @@ You can import work items using Excel. As shown in the following image, Epics, F
 
 Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details, and assigning work to team members and to sprints. 
 
-To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
+For more information about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 ### Document Portfolio Vision and Strategic Themes  
 
@@ -61,7 +61,7 @@ We recommend you use the project wiki to capture and share the Portfolio Vision,
 - Customer-centric programs 
 
 Information can be easily shared and updated by any member of the team. 
-To learn more about using the project wiki, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
+For more information about using the project wiki, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 
 ### Define and prioritize the Epics portfolio backlog
 
@@ -259,7 +259,7 @@ As shown in the following image, the App team plans their sprints.
 > [!div class="mx-imgBorder"]
 > ![App team, Backlogs, Sprint planning](media/safe-plan-track/plan-sprint.png)
 
-To learn more about planning and conducting sprints, see the tutorials for [Plan and work a sprint](../sprints/assign-work-sprint.md). 
+For more information about planning and conducting sprints, see the tutorials for [Plan and work a sprint](../sprints/assign-work-sprint.md). 
 
 ## Plan a release train  
 
