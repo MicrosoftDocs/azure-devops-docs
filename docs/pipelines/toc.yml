@@ -450,7 +450,7 @@
       href: release/artifacts.md
     - name: NuGet
       items:
-      - name: Quickstart
+      - name: Publish packages to internal and external feeds
         displayName: nuget, package
         href: artifacts/nuget.md
       - name: Restore NuGet packages

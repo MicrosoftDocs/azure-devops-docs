@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts feeds, external feeds, or public registries like nuget.org, using either classic or YAML pipelines. In this article, you'll learn how to: 
+Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as *nuget.org*, using either Classic or YAML pipelines. In this article, you'll learn how to: 
 
 > [!div class="checklist"]
 >
@@ -25,6 +25,8 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+
+- If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
 
 ## Publish NuGet packages to a feed in the same organization
 
@@ -253,28 +255,16 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 ## NuGet task package versioning
 
-Semantic Versioning is composed of three numeric components: Major, Minor, and Patch.
-
-- Patch: Increment this number after fixing a bug.
-- Minor: Increment this number when releasing a new backward-compatible feature, and reset Patch to 0.
-- Major: Increment this number for backward-incompatible changes, and reset both Minor and Patch to 0.
-
-Semantic Versioning also supports the use of prerelease labels to tag packages. Simply append a hyphen followed by your prerelease tag, for example: **1.0.0-beta**. 
-
-Azure Pipelines supports Semantic Versioning and provides the following configuration options for NuGet tasks::
+Azure Pipelines supports [Semantic Versioning](https://semver.org/) and provides the following configuration options for NuGet tasks::
 
 - **Use the date and time** (Classic) | **byPrereleaseNumber** (YAML):
-
     Your package version will follow the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to customize the Major, Minor, and Patch values.
 
 - **Use an environment variable** (Classic) | **byEnvVar** (YAML): 
-    
     Your package version is set to the value of the specified environment variable. 
 
 - **Use the build number** (Classic) | **byBuildNumber** (YAML): 
-    
     Your package version is set to the build number. Make sure you define the build number format in your pipeline **Options** as `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To specify the format in YAML, add a `name:` property at the root of your pipeline and define your format.
-
 
 Here is an example demonstrating how to use the date and time versioning to generate a SemVer-compliant package formatted as: *Major.Minor.Patch-ci-datetime*.
 
@@ -297,7 +287,7 @@ steps:
 ```
 
 > [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) for more details.
+> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task for more details.
 
 ```yaml
 task: DotNetCoreCLI@2
