@@ -253,6 +253,8 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 ::: moniker-end
 
+:::image type="content" source="media/nuget/package-published-to-external-feed.png" alt-text="A screenshot displaying the package successfully published to a feed in a different organization.":::
+
 ## NuGet task package versioning
 
 Azure Pipelines supports [Semantic Versioning](https://semver.org/) and provides the following configuration options for NuGet tasks::
@@ -266,7 +268,7 @@ Azure Pipelines supports [Semantic Versioning](https://semver.org/) and provides
 - **Use the build number** (Classic) | **byBuildNumber** (YAML): 
     Your package version is set to the build number. Make sure you define the build number format in your pipeline **Options** as `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To specify the format in YAML, add a `name:` property at the root of your pipeline and define your format.
 
-Here is an example demonstrating how to use the date and time versioning to generate a SemVer-compliant package formatted as: *Major.Minor.Patch-ci-datetime*.
+The following is an example demonstrating how to use the date and time versioning to generate a SemVer-compliant package formatted as: *Major.Minor.Patch-ci-datetime*.
 
 #### [YAML](#tab/yaml/)
 
