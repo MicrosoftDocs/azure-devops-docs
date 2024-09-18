@@ -322,7 +322,7 @@
   - name: How to buy Azure DevOps CALs >>
     href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Billing
-    href: ./organizations/billing/overview.md
+    href: organizations/index.yml
   - name: Build Visual Studio extensions >>
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
   - name: Build apps for Windows >>

@@ -103,6 +103,6 @@ Tell your team about installed extensions, so they can start using their capabil
 ## Related articles
 
 - [FAQs](faq-extensions.yml)
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Assign access levels by group membership](../organizations/accounts/assign-access-levels-by-group-membership.md)

@@ -245,5 +245,5 @@ The organizations are for the same company, but are mostly isolated from each ot
 - [Create an organization](../organizations/accounts/create-organization.md)
 - [Create a project](../organizations/projects/create-project.md)
 - [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 - [Set user preferences](../organizations/settings/set-your-preferences.md)

@@ -590,7 +590,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
    :::column span="2":::
       - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md)- [Recover](../accounts/recover-your-organization.md), [Find or change your organization location](../accounts/change-organization-location.md)
-      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
+      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
    :::column-end:::
    :::column span="2":::
       From the **Overview** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
@@ -634,11 +634,11 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Billing**
    :::column-end:::
    :::column span="2":::
-      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
+      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
       - [Try Azure Test Plans for free](../billing/try-additional-features-vs.md)
       - [Pay for users (Basic)](../billing/buy-basic-access-add-users.md)
       - [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-      - [Add a user to make purchases](../billing/add-backup-billing-managers.md)
+      - [Add a user to make purchases](../billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing)
    :::column-end:::
    :::column span="2":::
       All billing gets managed through Azure. For more information, see [Billing overview](../billing/overview.md).
@@ -798,7 +798,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Artifacts free tier and upgrade](../../artifacts/start-using-azure-artifacts.md#artifacts-free-tier-and-upgrade). 
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-storage-limit-for-azure-artifacts).
    :::column-end:::
 :::row-end:::
 ---
