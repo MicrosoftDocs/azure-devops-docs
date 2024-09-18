@@ -181,7 +181,7 @@ You can list work items based on the following criteria...
       ::: moniker range="< azure-devops"
       - [Rename a query or query folder](organize-queries.md#rename-or-delete-a-query) 
       - [Run a query](using-queries.md) 
-      - [Save a query](organize-queries.md##run-edit-and-save-a-query)
+      - [Save a query](organize-queries.md#run-edit-and-save-a-query)
       - [Save a query as a team favorite](organize-queries.md#save-a-query-as-a-team-favorite)  
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#use-a-work-item-tree-to-view-hierarchies) 
