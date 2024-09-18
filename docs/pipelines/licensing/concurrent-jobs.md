@@ -276,5 +276,5 @@ For each additional XAML build controller, you'll need an additional self-hosted
 - [Set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 - [Manage paid access](../../organizations/billing/buy-basic-access-add-users.md)
 - [Buy access to test hub](../../organizations/billing/buy-access-tfs-test-hub.md)
-- [Add user for billing management](../../organizations/billing/set-up-billing-for-your-organization-vs#add-backup-billing-managers)
+- [Add user for billing management](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing)
 - [Azure DevOps billing overview](../../organizations/billing/overview.md)

@@ -638,7 +638,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Try Azure Test Plans for free](../billing/try-additional-features-vs.md)
       - [Pay for users (Basic)](../billing/buy-basic-access-add-users.md)
       - [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-      - [Add a user to make purchases](../billing/set-up-billing-for-your-organization-vs#add-backup-billing-managers)
+      - [Add a user to make purchases](../billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing)
    :::column-end:::
    :::column span="2":::
       All billing gets managed through Azure. For more information, see [Billing overview](../billing/overview.md).
@@ -798,7 +798,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Artifacts free tier and upgrade](../../artifacts/start-using-azure-artifacts.md#artifacts-free-tier-and-upgrade). 
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-storage-limit-for-azure-artifacts).
    :::column-end:::
 :::row-end:::
 ---

@@ -33,8 +33,6 @@ landingContent:
             url: ../repos/get-started/what-is-repos.md 
           - text: What is Azure Pipelines?
             url: ../pipelines/get-started/what-is-azure-pipelines.md 
-          - text: What is Azure Artifacts?
-            url: ../artifacts/start-using-azure-artifacts.md
           - text: What is Azure Test Plans?
             url: ../test/overview.md
           - text: Get started as a Stakeholder
@@ -73,8 +71,8 @@ landingContent:
             url: ../organizations/projects/create-project.md?toc=/azure/devops/get-started/toc.json
           - text: Delete or restore a project
             url: ../organizations/projects/delete-project.md?toc=/azure/devops/get-started/toc.json
-          - text: Set up billing for your Organization
-            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing?toc=/azure/devops/get-started/toc.json
+          - text: Set up billing for your organization
+            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing
       - linkListType: concept
         links:
           - text: Default permissions and access

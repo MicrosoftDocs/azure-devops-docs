@@ -59,6 +59,6 @@ See the following articles for information about the paid services offered by Mi
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Add user who can make purchases or backup billing manager](set-up-billing-for-your-organization-vs#add-backup-billing-managers)
+- [Add user who can make purchases or backup billing manager](set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing)
 - [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
 - [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)

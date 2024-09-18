@@ -412,8 +412,8 @@ additionalContent: |
 
   ## Related articles
   
-  * [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing)
+  * [Set up billing](set-up-billing-for-your-organization-vs#set-up-billing)
   * [Add backup billing managers](set-up-billing-for-your-organization-vs#add-backup-billing-managers)
-  * [Change the Azure subscription for billing](change-azure-subscription.md)
+  * [Change the Azure subscription for billing](set-up-billing-for-your-organization-vs#change-azure-subscription)
   * [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
   * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

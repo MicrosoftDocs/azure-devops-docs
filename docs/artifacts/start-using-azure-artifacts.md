@@ -24,11 +24,11 @@ This article shows you how to increase your Azure Artifact storage limit and cre
 ## Prerequisites
 
 - **Project:** Have a [project](../organizations/projects/create-project.md#create-a-project) and be a member.
-- **Permissions:** Be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+- **Permissions:** Be a member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 - **Network configuration:** [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
 > [!NOTE]
-> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](increase-artifacts-storage-limit) to ensure you have the appropriate resources.
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
 
 ::: moniker range="azure-devops"
 

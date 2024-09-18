@@ -21,7 +21,7 @@
   href: try-additional-features-vs.md
 - name: Give user access to manage billing
   displayName: assign, subscription
-  href: set-up-billing-for-your-organization-vs#add-backup-billing-managers
+  href: set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing
 - name: Change or remove subscription
   displayName: update, remove, billing
   href: change-azure-subscription.md
