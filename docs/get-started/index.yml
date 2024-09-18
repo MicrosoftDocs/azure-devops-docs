@@ -74,7 +74,7 @@ landingContent:
           - text: Delete or restore a project
             url: ../organizations/projects/delete-project.md?toc=/azure/devops/get-started/toc.json
           - text: Set up billing for your Organization
-            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md?toc=/azure/devops/get-started/toc.json
+            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing?toc=/azure/devops/get-started/toc.json
       - linkListType: concept
         links:
           - text: Default permissions and access

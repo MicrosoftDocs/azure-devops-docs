@@ -1,35 +1,33 @@
 - name: Billing overview
   displayName: services, Azure, subscription, monthly, bill, pricing
-  href: overview.md
+  href: overview.md?toc=/azure/devops/organizations/toc.json
 - name: Set up billing
   displayName: Azure, subscription, pay
-  href: set-up-billing-for-your-organization-vs.md
+  href: set-up-billing-for-your-organization-vs.md#set-up-billing
 - name: Manage paid access for users
   displayName: billing, assign, default, Azure, licensing, subscription, group, rules, reduce, multi-org
   href: buy-basic-access-add-users.md
-- name: Try Azure Test Plans for free
-  displayName: billing, free, trial, access
-  href: try-additional-features-vs.md
-- name: Buy parallel jobs
-  displayName: configure, hosted, public, private, project, purchase, quantity
-  href: ../../pipelines/licensing/concurrent-jobs.md
+- name: Buy access to Azure Test Plans
+  displayName: monthly, basic, CALs, users
+  href: buy-access-tfs-test-hub.md
 - name: Buy Azure Artifacts
   displayName: signup, billing, basic, extension, license, storage
   href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json
-- name: Manage billing
-  items:
-  - name: Add user to manage billing
-    displayName: assign, subscription
-    href: add-backup-billing-managers.md
-  - name: Change Azure subscription
-    displayName: update, remove, billing
-    href: change-azure-subscription.md
-  - name: Buy access to Azure Test Plans
-    displayName: monthly, basic, CALs, users
-    href: buy-access-tfs-test-hub.md
-  - name: Billing FAQs
-    displayName: assignment, group, rules, basic, stakeholder, pro-rated, mulit-organization, subscription, charges
-    href: billing-faq.yml
+- name: Buy parallel jobs
+  displayName: configure, hosted, public, private, project, purchase, quantity
+  href: ../../pipelines/licensing/concurrent-jobs.md
+- name: Try Azure Test Plans for free
+  displayName: billing, free, trial, access
+  href: try-additional-features-vs.md
+- name: Give user access to manage billing
+  displayName: assign, subscription
+  href: set-up-billing-for-your-organization-vs#add-backup-billing-managers
+- name: Change or remove subscription
+  displayName: update, remove, billing
+  href: change-azure-subscription.md
+- name: Billing FAQs
+  displayName: assignment, group, rules, basic, stakeholder, pro-rated, mulit-organization, subscription, charges
+  href: billing-faq.yml
 - name: Cloud Solution Providers
   items:
   - name: 'CSPs: Buy Azure DevOps'

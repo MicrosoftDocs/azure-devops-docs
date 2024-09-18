@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If you need more than the *free tier* of resources in your organization, you can [set up billing](set-up-billing-for-your-organization-vs.md). When you set up billing you can also buy other features offered by Microsoft or other companies.
+If you need more than the *free tier* of resources in your organization, you can [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing). When you set up billing you can also buy other features offered by Microsoft or other companies.
 
 ## Free tier
 
@@ -54,11 +54,11 @@ See the following articles for information about the paid services offered by Mi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up billing](set-up-billing-for-your-organization-vs.md)
+> [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing)
 
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Add user who can make purchases or backup billing manager](add-backup-billing-managers.md)
+- [Add user who can make purchases or backup billing manager](set-up-billing-for-your-organization-vs#add-backup-billing-managers)
 - [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
 - [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)

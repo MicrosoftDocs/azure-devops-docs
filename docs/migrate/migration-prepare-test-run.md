@@ -270,7 +270,7 @@ For more information, see [Create a storage account](/azure/storage/common/stora
 
 A grace period is placed on the newly migrated Azure DevOps Services organization to allow your team to finish any steps it needs and correct license assignments. If you anticipate that you might want to purchase any more user plans, build or deployment pipelines, hosted build services, hosted load test services, for example, we highly recommend that you sure you have an Azure Subscription ready for linking to your migrated organization. The grace period ends on the first day of the following month after you completed your migration. 
 
-We remind you again in the Post-migration phase(link) for when you need to do the linking. This preparation step is more about making sure that you know which Azure Subscription you use in that later step. For more information, see [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md). 
+We remind you again in the Post-migration phase(link) for when you need to do the linking. This preparation step is more about making sure that you know which Azure Subscription you use in that later step. For more information, see [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing). 
 
 ## Next steps 
 
