@@ -221,7 +221,7 @@ You can populate security groups by adding individual users. But, for ease of ma
 If you only need to manage a small set of users, you can skip this step. But, if you anticipate that your organization might grow, consider setting up Active Directory or Microsoft Entra ID. Also, if you plan to use extra services, it's essential to configure Microsoft Entra ID for use with Azure DevOps to support billing.
  
 > [!NOTE]
-> Without Microsoft Entra ID, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, set up an [Azure subscription to manage billing](../billing/set-up-billing-for-your-organization-vs.md).
+> Without Microsoft Entra ID, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, set up an [Azure subscription to manage billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing).
 
 ::: moniker range="azure-devops"
 To set up Microsoft Entra ID for use with Azure DevOps Services, see [Connect your organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).

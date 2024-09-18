@@ -76,7 +76,7 @@ landingContent:
           - text: Buy Basic access
             url: ../billing/buy-basic-access-add-users.md
           - text: Set up billing for your organization
-            url: ../billing/set-up-billing-for-your-organization-vs.md
+            url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
           - text: Try Azure Test Plans for free
             url: ../billing/try-additional-features-vs.md
   - title: Authenticate, use PATs, & secure applications 
