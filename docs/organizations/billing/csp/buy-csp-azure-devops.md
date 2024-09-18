@@ -24,7 +24,7 @@ Before you enable your customer to purchase Azure DevOps by using a CSP-based Az
 - The customer is a member of the [**Project Collection Administrators** group](../../security/look-up-project-collection-administrators.md) or the [**organization Owner**](../../security/look-up-organization-owner.md).
 - The customer has [Contributor or Owner role permissions](../set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing) to the CSP-based Azure subscription.
 
-When your customer gains access to the CSP-based Azure subscription, they can [set up billing,](../set-up-billing-for-your-organization-vs#set-up-billing) or [change your subscription](../../set-up-billing-for-your-oragization-vs#change-azure-subscription) for their Azure DevOps organization. Any further charges are applied to your CSP subscription.
+When your customer gains access to the CSP-based Azure subscription, they can [set up billing,](../set-up-billing-for-your-organization-vs#set-up-billing-for-your-organization) or [change your subscription](../../set-up-billing-for-your-oragization-vs#change-your-billing-subscription) for their Azure DevOps organization. Any further charges are applied to your CSP subscription.
 
 ## Change billing to CSP Azure subscription
 
