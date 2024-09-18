@@ -67,7 +67,7 @@ The dev center project is specified by the `devcenter-project-id` parameter when
 
 ```azurecli
 az mdp pool create \
-   --devcenter-project-id /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/projects/devCenterProjectName \
+   --devcenter-project-id /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/projects/devCenterProjectName
    # other parameters omitted for space
 ```
 
@@ -122,7 +122,7 @@ If your pool is configured for multiple organizations, the **Azure DevOps organi
 
 ```azurecli
 az mdp pool create \
-   --organization-profile organization-profile.json \
+   --organization-profile organization-profile.json
    # other parameters omitted for space
 ```
 
@@ -182,29 +182,12 @@ Specify the maximum count of agents that are available for use in your pool. For
 
 #### [Azure CLI](#tab/azure-cli/)
 
-**Maximum agents** is configured using the `maximumConcurrency` property in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.  In the following example, **Maximum agents** is set to `4`.
+**Maximum agents** is configured using the `maximum-concurrency` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. In the following example, **Maximum agents** is set to `4`.
 
 ```azurecli
 az mdp pool create \
-   --organization-profile organization-profile.json \
+   --maximum-concurrency 5
    # other parameters omitted for space
-```
-
-The following example shows the `parallelism` section of the **organization-profile.json** file.
-
-```json
-{
-  "azure-dev-ops": {
-    "organizations": [
-      {
-        "url": "https://dev.azure.com/fabrikam-tailspin",
-        "projects": [],
-        "parallelism": 4
-      }
-    ],
-    "permissionProfile": {...}
-  }
-}
 ```
 
 * * *
@@ -255,7 +238,7 @@ Agent size is configured using the `sku` property in the `fabricProfile` section
 
 ```azurecli
 az mdp pool create \
-   --fabric-profile fabric-profile.json \
+   --fabric-profile fabric-profile.json
    # other parameters omitted for space
 ```
 
@@ -329,7 +312,7 @@ OS disk type is configured using the `osDiskStorageAccountType` property in the 
 
 ```azurecli
 az mdp pool create \
-   --fabric-profile fabric-profile.json \
+   --fabric-profile fabric-profile.json
    # other parameters omitted for space
 ```
 
