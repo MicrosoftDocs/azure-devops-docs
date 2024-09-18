@@ -47,6 +47,7 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 steps:
 - task: NuGetAuthenticate@0
   displayName: 'NuGet Authenticate'
+
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
@@ -87,6 +88,7 @@ steps:
 steps:
 - task: NuGetAuthenticate@1
   displayName: 'NuGet Authenticate'
+
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
@@ -143,32 +145,18 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
-    - **NuGet.exe**:
-    
-        ```yaml
-          - task: NuGetAuthenticate@1
-            inputs:
-              nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-              
-          - script: |
-              nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
-            displayName: "Push"          
-        ```
-    
-    - **dotnet**:
-      
-        ```yaml
-            - task: NuGetAuthenticate@1
-              inputs:
-                nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-                
-            - script: |
-                dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
-              displayName: "Push"          
-          ```
-
-> [!NOTE]
-> The `ApiKey` is required, but you can use any string when publishing to an Azure Artifacts feed.
+    ```yaml
+      - task: NuGetAuthenticate@1
+        inputs:
+          nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+          
+      - task: NuGetCommand@2
+        displayName: 'NuGet push'
+        inputs:
+          command: push
+          nuGetFeedType: external
+          publishFeedCredentials: <SERVICE_CONNECTION_NAME>       
+    ```
 
 #### [Classic](#tab/classic/)
 
@@ -203,32 +191,18 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
-- **NuGet.exe**:
-
     ```yaml
       - task: NuGetAuthenticate@0
         inputs:
           nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
           
-      - script: |
-          nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
-        displayName: "Push"          
+      - task: NuGetCommand@2
+        displayName: 'NuGet push'
+        inputs:
+          command: push
+          nuGetFeedType: external
+          publishFeedCredentials: <SERVICE_CONNECTION_NAME>        
     ```
-
-- **dotnet**:
-  
-    ```yaml
-        - task: NuGetAuthenticate@0
-          inputs:
-            nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-            
-        - script: |
-            dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
-          displayName: "Push"          
-      ```
-
-> [!NOTE]
-> The `ApiKey` is required, but you can use any string when publishing to an Azure Artifacts feed.
 
 #### [Classic](#tab/classic/)
 
