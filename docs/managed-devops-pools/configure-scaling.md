@@ -410,6 +410,8 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 }
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
 * * *
 
 ### Start From scratch
@@ -474,6 +476,8 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
     ]
 }
 ```
+
+#### [Azure CLI](#tab/azure-cli/)
 
 * * *
 
@@ -546,6 +550,8 @@ The following example configures four agents to be used during working hours wit
 }
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
 * * *
 
 ### All Week Scheme
@@ -589,6 +595,8 @@ If you choose the all week scheme, you can specify a number of agents you want a
     ]
 }
 ```
+
+#### [Azure CLI](#tab/azure-cli/)
 
 * * *
 
@@ -634,6 +642,8 @@ You can view the projected and actual usage for any specific day within the last
     ]
 }
 ```
+
+#### [Azure CLI](#tab/azure-cli/)
 
 * * *
 
