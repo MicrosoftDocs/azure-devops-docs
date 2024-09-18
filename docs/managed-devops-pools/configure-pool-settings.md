@@ -71,9 +71,13 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
+You can retrieve the `devcenter-project-id` for your dev center project in the Azure portal by using the JSON View from the overview page of your dev center project, or you can retrieve it using the Azure CLI to query the project for its `id` property. In the following example, the `devcenter-project-id` is retrieved from a dev center project named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
+
+```azurecli
+ az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
+```
+
 * * *
-
-
 
 ## Azure DevOps organization
 
@@ -186,7 +190,7 @@ Specify the maximum count of agents that are available for use in your pool. For
 
 ```azurecli
 az mdp pool create \
-   --maximum-concurrency 5
+   --maximum-concurrency 4
    # other parameters omitted for space
 ```
 

@@ -90,6 +90,83 @@ The following example defines three images. Standby agents are enabled, with 100
 ]
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+Images are configured in the `fabric-profile` section of the Managed DevOps Pools resource properties.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `images` section of the **fabric-profile.json** file and specifies three images. For more information on the schema for images, see the following sections in this article.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [
+        {
+            "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+            "aliases": [
+                "ubuntu-20.04-gen2"
+            ],
+            "buffer": "0"
+        },
+        {
+            "buffer": "100",
+            "wellKnownImageName": "windows-2022"
+        },
+        {
+            "buffer": "0",
+            "wellKnownImageName": "ubuntu-22.04"
+        }
+    ],
+    "osProfile": {...},
+    "storageProfile": {...}
+  }
+}
+```
+
+Each image can have the following properties.
+
+| Property | Description |
+|----------|-------------|
+| `aliases` | An optional list of aliases. You can then refer to the image using the aliases instead of the full resource ID of the image. |
+| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
+| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
+| `buffer` | When [standby agents](./configure-scaling.md#standby-agent-mode) are enabled, `buffer` designates which percentage of standby agents to be allocated to this image. The total of all image `buffer` values must equal 100. |
+
+The following example defines three images. Standby agents are enabled, with 100% of the standby agents allocated to the `windows-2022` image.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [
+        {
+            "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+            "aliases": [
+                "ubuntu-20.04-gen2"
+            ],
+            "buffer": "0"
+        },
+        {
+            "buffer": "100",
+            "wellKnownImageName": "windows-2022"
+        },
+        {
+            "buffer": "0",
+            "wellKnownImageName": "ubuntu-22.04"
+        }
+    ],
+    "osProfile": {...},
+    "storageProfile": {...}
+  }
+}
+```
+
 * * *
 
 If you choose a single image, all pipelines run in your pool use that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
@@ -109,6 +186,18 @@ Managed DevOps Pools provides several preconfigured images that have the same so
 :::image type="content" source="./media/configure-images/image-library-azure-pipelines-images.png" alt-text="Screenshot of Azure Pipelines images.":::
 
 #### [ARM template](#tab/arm/)
+
+To specify an Azure Pipelines image, provide the alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
+
+```json
+"images": [
+    {
+        "wellKnownImageName": "windows-2022"
+    }
+]
+```
+
+#### [Azure CLI](#tab/azure-cli/)
 
 To specify an Azure Pipelines image, provide the alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
 
@@ -153,6 +242,18 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ]
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+
+```json
+"images": [
+    {
+        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+    }
+]
+```
+
 * * *
 
 ## Azure Compute Gallery images
@@ -175,6 +276,18 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 :::image type="content" source="./media/configure-images/image-library-compute-gallery-images.png" alt-text="Screenshot of Azure Compute Gallery images.":::
 
 #### [ARM template](#tab/arm/)
+
+To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+
+```json
+"images": [
+    {
+        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+    }
+]
+```
+
+#### [Azure CLI](#tab/azure-cli/)
 
 To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
 
@@ -227,6 +340,21 @@ The following example shows a pool with two Azure Pipelines images and one selec
 :::image type="content" source="./media/configure-images/multiple-images-with-aliases.png" alt-text="Screenshot of a pool with multiple images with aliases."
 
 #### [ARM template](#tab/arm/)
+
+To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-20.04-gen2`.
+
+```json
+"images": [
+    {
+        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "aliases": [
+            "ubuntu-20.04-gen2"
+        ]
+    }
+]
+```
+
+#### [Azure CLI](#tab/azure-cli/)
 
 To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-20.04-gen2`.
 
