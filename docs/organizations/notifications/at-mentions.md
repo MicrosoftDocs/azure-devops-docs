@@ -20,10 +20,11 @@ ms.date: 03/23/2023
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker of the **@mention** control, you can select a project member or group from the search list, and they receive an email notifying them of your comment. 
 
-For organizations using Microsoft Entra ID, people pickers can search all users and groups added to Microsoft Entra ID, not just those users or groups in your project. For more information about limiting the set to project members and groups, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups added to Microsoft Entra ID, not only those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).  
 
 > [!NOTE]
-> To post an @mention via API, [get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0)
+> You can post an @mention via API. 
+> [Get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0)
 >
 > If your organization is using the existing HTML editor then add the following html code::
 > `<div><a href="#" data-vss-mention="version:2.0,{user id}">@John Doe</a> Testing mentioning</div>`
@@ -70,7 +71,7 @@ Use the **@mention** control to start or continue a discussion within the follow
 
 ## Identity search selection
 
-When you leave a code comment in a pull request, enter **\@** to trigger the **\@mention** people picker. From the people picker, a list of users you recently mentioned shows. To do a directory search, choose a name or enter the name of the user you're looking for. 
+When you leave a code comment in a pull request, enter **\@** to trigger the **\@mention** people picker. From the people picker, a list of users you recently mentioned is shown. To do a directory search, choose a name or enter the name of the user you're looking for. 
 
 ::: moniker range="azure-devops"
 
@@ -90,7 +91,7 @@ You can also use group mentions. Enter the name of a team or a security group, c
 
 ::: moniker-end
 
-To **\@mention** a user you didn't before, continue to enter the entire name to do your search against the full directory.  
+To **\@mention** a user you never selected previously, continue to enter the entire name to do your search against the full directory.  
 
 Names of mentioned users appear in blue text. Choose the **\@mention link name** to open the user's contact information. The contact information provides more context for why they were added to the conversation.  
 
@@ -108,10 +109,16 @@ Names of mentioned users appear in blue text. Choose the **\@mention link name**
 
 Upon completion of your selection and text entry, your **@mention** user receives an email alerting them about the mention.  
 
+> [!NOTE]
+> If you **@mention** a group that has no members, no email is sent even if the group is a member of other groups.
+
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Email sent in Outlook.](media/at-mention/at-mention-work-item.png)  
 ::: moniker-end
+
+
+
 
 Use the **\@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
@@ -138,4 +145,3 @@ When the **Limit user visibility and collaboration to specific projects** previe
 
 - [Work item form controls](../../boards/work-items/about-work-items.md#work-item-form-controls)  
 - [Pull requests](../../repos/git/pull-requests.md)
-- [Frequently asked questions (FAQs) about Notifications](faq-notifications.yml)
