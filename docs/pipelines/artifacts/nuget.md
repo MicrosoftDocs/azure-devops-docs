@@ -48,11 +48,9 @@ steps:
 - task: NuGetAuthenticate@0
   displayName: 'NuGet Authenticate'
 
-- task: NuGetCommand@2
-  displayName: 'NuGet push'
-  inputs:
-    command: push
-    publishVstsFeed: '<projectName>/<feed>'
+- script: |
+      dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+  displayName: Push
 ```
 
 #### [Classic](#tab/classic/)
@@ -89,11 +87,9 @@ steps:
 - task: NuGetAuthenticate@1
   displayName: 'NuGet Authenticate'
 
-- task: NuGetCommand@2
-  displayName: 'NuGet push'
-  inputs:
-    command: push
-    publishVstsFeed: '<projectName>/<feed>'
+- script: |
+      dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+  displayName: Push
 ```
 
 #### [Classic](#tab/classic/)
@@ -143,16 +139,13 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
     ```yaml
-      - task: NuGetAuthenticate@1
-        inputs:
-          nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-          
-      - task: NuGetCommand@2
-        displayName: 'NuGet push'
-        inputs:
-          command: push
-          nuGetFeedType: external
-          publishFeedCredentials: <SERVICE_CONNECTION_NAME>       
+    - task: NuGetAuthenticate@1
+      inputs:
+        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+        
+    - script: |
+          dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+      displayName: Push       
     ```
 
 #### [Classic](#tab/classic/)
@@ -193,12 +186,9 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
         inputs:
           nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
           
-      - task: NuGetCommand@2
-        displayName: 'NuGet push'
-        inputs:
-          command: push
-          nuGetFeedType: external
-          publishFeedCredentials: <SERVICE_CONNECTION_NAME>        
+      - script: |
+          dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+      displayName: Push          
     ```
 
 #### [Classic](#tab/classic/)
