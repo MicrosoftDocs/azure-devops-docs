@@ -147,6 +147,12 @@ echo $REGION
 
 ## Prepare the Managed DevOps Pool configuration files
 
+The `mdp pool create` method has four parameters that take JSON values that configure different aspects of the pool.
+
+* `agent-profile` specifies whether the pool is stateful or stateless, and contains the standby agent schedule. It is a dictionary with a single key named either `Stateful` or `Stateless` that maps to
+* `fabric-profile` specifies the agent size, VM images, OS disk, and attached storage.
+* `organization-profile` specifies the Azure DevOps organizations and their projects that can use the pool
+
 Create the following three files and save them to the folder where you plan to run the Azure CLI commands to create the pool.
 
 1. Create a file name **agent-profile.json** with the following contents.
