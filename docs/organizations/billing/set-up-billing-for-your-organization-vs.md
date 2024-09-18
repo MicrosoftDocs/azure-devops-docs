@@ -77,7 +77,7 @@ You might need to change the Azure subscription for your Azure DevOps organizati
 
 Before you change your billing subscription, keep the following considerations in mind:
 - **Reverting to Free Tier:** When you remove the billing subscription, any paid quantities of services like Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD revert to the free tier immediately.
-- **Resource groups:** When billing is cancelled or changed, a resouce group might be left behind in the old Azure subscription. These resource groups can be safely deleted if they're empty.
+- **Resource groups:** When billing is canceled or changed, a resource group might be left behind in the old Azure subscription. These resource groups can be safely deleted if they're empty.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
