@@ -54,6 +54,26 @@ Agents are configured using the `agentProfile` property in the Managed DevOps Po
 }
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+In the following example, a **Stateless** agent is specified with no standby agents.
+
+```azurecli
+az mdp pool create \
+   --agent-profile agent-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the contents of the **agent-profile.json** file.
+
+```json
+{
+  "Stateless": {}
+}
+```
+
 * * *
 
 When **Agent state** is set to **Fresh agent every time**, a new agent is procured for each job, and is discarded after the job completes.
@@ -87,6 +107,31 @@ When **Agent state** is set to **Fresh agent every time**, a new agent is procur
             }
         }
     ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+In the following example, a **Stateful** agent is specified with a seven day maximum lifetime and a thiry minute grace period.
+
+```azurecli
+az mdp pool create \
+   --agent-profile agent-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the contents of the **agent-profile.json** file.
+
+```json
+{
+  "Stateful": 
+  {
+      "maxAgentLifetime": "7.00:00:00",
+      "gracePeriodTimeSpan": "00:30:00",
+      "kind": "Stateful"
+  }
 }
 ```
 
@@ -149,6 +194,32 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
             }
         }
     ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"kind": "Automatic"` to configure automatic standby agents. Omit the `ResourcePredictionsProfile` section to disable standby agents. See the following sections for details on how to configure each scaling type.
+
+```azurecli
+az mdp pool create \
+   --agent-profile agent-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the contents of the **agent-profile.json** file.
+
+```json
+{
+  "Stateless": 
+  {
+    "resourcePredictionsProfile": {
+        "kind": "Manual"
+    },
+    "resourcePredictions": {...}
+  }
 }
 ```
 
