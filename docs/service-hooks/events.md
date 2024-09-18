@@ -8,8 +8,9 @@ ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 09/17/2024
+ms.date: 09/18/2024
 ---
 
 # Service hooks events
@@ -20,12 +21,12 @@ ms.date: 09/17/2024
 
 * **Build and release**
   * [Build completed](#build.complete)
-  * [Release created](#ms.vss-release.release-created-event)
-  * [Release abandoned](#ms.vss-release.release-abandoned-event)
-  * [Release deployment approval completed](#ms.vss-release.deployment-approval-completed-event)
-  * [Release deployment approval pending](#ms.vss-release.deployment-approval-pending-event)
-  * [Release deployment completed](#ms.vss-release.deployment-completed-event)
-  * [Release deployment started](#ms.vss-release.deployment-started-event)
+  * [Release created](#ms.azure-devops-release.release-created-event)
+  * [Release abandoned](#ms.azure-devops-release.release-abandoned-event)
+  * [Release deployment approval completed](#ms.azure-devops-release.deployment-approval-completed-event)
+  * [Release deployment approval pending](#ms.azure-devops-release.deployment-approval-pending-event)
+  * [Release deployment completed](#ms.azure-devops-release.deployment-completed-event)
+  * [Release deployment started](#ms.azure-devops-release.deployment-started-event)
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
@@ -104,6 +105,38 @@ Event: A build completes.
 #### Sample payload
 ```json
 {
+  "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
+  "notificationId": 1,
+  "id": "00000000-0000-0000-0000-000000000000",
+  "eventType": "build.complete",
+  "publisherId": "azure-devops",
+  "message": {
+    "text": "Build 20241202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20241202.1</a> succeeded",
+    "markdown": "Build [20241202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
+  },
+  "detailedMessage": {
+    "text": "Build 20241202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20241202.1</a> succeeded",
+    "markdown": "Build [20241202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
+  },
+  "resource": {
+    "id": 2727068,
+    "buildNumber": "20241202.1",
+    "status": "completed",
+    "result": "succeeded",
+    "url": "https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068",
+    "definition": {
+      "id": 1,
+      "name": "FabrikamFiber CI"
+    },
+    "project": {
+      "id": "54d02617-2ebd-42b0-b1e2-257059c4c03d",
+      "name": "FabrikamFiber"
+    }
+  },
+  "createdDate": "2024-12-02T12:21:13.8866607Z"
+}{
   "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
   "notificationId": 1,
   "id": "00000000-0000-0000-0000-000000000000",
@@ -277,178 +310,55 @@ Event: A build completes.
 }
 ```
 
-<a name="ms.vss-release.release-abandoned-event"></a>
+<a name="ms.azure-devops-release.release-abandoned-event"></a>
 
 ### Release abandoned
 
-Event: A release was abandoned.
+Event: A release is abandoned.
 
 * Publisher ID: `rm`
-* Event ID: `ms.vss-release.release-abandoned-event`
+* Event ID: `ms.azure-devops-release.release-abandoned-event`
 * Resource Name: `resource`
 
 #### Settings
 
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 
 ```json
 {
   "id": "00000000-0000-0000-0000-000000000000",
-  "eventType": "ms.vss-release.release-abandoned-event",
+  "eventType": "ms.azure-devops-release.release-abandoned-event",
   "publisherId": "rm",
   "scope": "all",
-  "message": {
-    "text": "Release Release-1 abandoned.",
-    "html": "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> abandoned.",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) abandoned."
-  },
-  "detailedMessage": {
-    "text": "Release Release-1 from release pipeline Fabrikam.CD abandoned.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "html": "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> from <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a> release pipeline abandoned.\\r\\n- Release description: QFE release for fixing title</br>\\r\\n- ContinuousIntegration Requested for Chuck Reinhart</br>\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more <\\li>",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) from release pipeline [Fabrikam.CD](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1) abandoned.\\r\\n- Release description: QFE release for fixing title</br>\\r\\n- ContinuousIntegration Requested for Chuck Reinhart</br>\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
-  },
   "resource": {
     "release": {
-      "id": 4,
-      "name": "Release-1",
+      "id": "release-id",
+      "name": "release-name",
       "status": "abandoned",
-      "createdOn": "2016-01-21T08:19:17.26Z",
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "modifiedBy": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
-      "createdBy": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
-      "environments": [
-        {
-          "id": 5,
-          "releaseId": 0,
-          "name": "Dev",
-          "status": "succeeded",
-          "variables": {},
-          "preDeployApprovals": [],
-          "postDeployApprovals": [],
-          "preApprovalsSnapshot": {
-            "approvals": [],
-            "approvalOptions": {
-              "requiredApproverCount": 0,
-              "releaseCreatorCanBeApprover": true
-            }
-          },
-          "postApprovalsSnapshot": {
-            "approvals": []
-          },
-          "deploySteps": [],
-          "rank": 1,
-          "definitionEnvironmentId": 1,
-          "queueId": 1,
-          "environmentOptions": {
-            "emailNotificationType": "OnlyOnFailure",
-            "emailRecipients": "release.environment.owner;release.creator",
-            "skipArtifactsDownload": false,
-            "timeoutInMinutes": 0,
-            "enableAccessToken": false
-          },
-          "demands": [],
-          "conditions": [],
-          "modifiedOn": "2016-01-21T08:19:17.26Z",
-          "workflowTasks": [
-            {
-              "taskId": "00000000-0000-0000-0000-000000000000",
-              "version": "*",
-              "name": "Deploy Website to Azure",
-              "enabled": true,
-              "alwaysRun": false,
-              "continueOnError": false,
-              "timeoutInMinutes": 0,
-              "definitionType": null,
-              "inputs": {
-                "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-                "WebSiteName": "$(webAppName)",
-                "WebSiteLocation": "Southeast Asia",
-                "Slot": "",
-                "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-              }
-            }
-          ],
-          "deployPhasesSnapshot": [],
-          "owner": {
-            "id": "00000000-0000-0000-0000-000000000000",
-            "displayName": "Chuck Reinhart"
-          },
-          "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-          "schedules": [],
-          "release": {
-            "id": 5,
-            "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
-          }
-        }
-      ],
-      "variables": {},
-      "artifacts": [
-        {
-          "sourceId": "31419848-1780-4137-b7e3-62092e986fd6:1",
-          "type": "Build",
-          "alias": "Fabrikam.CI",
-          "definitionReference": {
-            "Definition": {
-              "id": "00000000-0000-0000-0000-0000000000001",
-              "name": "Fabrikam.CI"
-            },
-            "Project": {
-              "id": "00000000-0000-0000-0000-00000000000031419848-1780-4137-b7e3-62092e986fd6",
-              "name": "Fabrikam"
-            }
-          },
-          "isPrimary": true
-        }
-      ],
       "releaseDefinition": {
-        "id": 1,
-        "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "id": "release-definition-id",
+        "name": "release-definition-name"
       },
-      "description": "QFE release for fixing title",
-      "reason": "continuousIntegration",
-      "releaseNameFormat": "Release-$(rev:r)",
-      "keepForever": false,
-      "definitionSnapshotRevision": 0,
-      "comment": "",
-      "logsContainerUrl": null,
-      "_links": {}
-    },
-    "project": {
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
+      "project": {
+        "id": "project-id",
+        "name": "project-name"
+      }
     }
   },
-  "resourceVersion": "3.0-preview.1",
-  "resourceContainers": {
-    "collection": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "account": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    }
-  },
-  "createdDate": "2024-09-19T13:03:27.784654Z"
+  "createdDate": "2024-12-02T12:21:13.8866607Z"
 }
 ```
 
-<a name="ms.vss-release.release-created-event"></a>
+<a name="ms.azure-devops-release.release-created-event"></a>
 
 ### Release created
 
-Event: A release was created.
+Event: A release is created.
 
 * Publisher ID: `rm`
-* Event ID: `ms.vss-release.release-created-event`
+* Event ID: `ms.azure-devops-release.release-created-event`
 * Resource Name: `resource`
 
 #### Settings
@@ -460,18 +370,18 @@ Event: A release was created.
 ```json
 {
   "id": "00000000-0000-0000-0000-000000000000d4d69db4-18d4-413e-bc43-07f56b531160",
-  "eventType": "ms.vss-release.release-created-event",
+  "eventType": "ms.azure-devops-release.release-created-event",
   "publisherId": "rm",
   "scope": "all",
   "message": {
     "text": "Release Release-1 created.",
-    "html": "<a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created.",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created."
+    "html": "<a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created.",
+    "markdown": "Release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created."
   },
   "detailedMessage": {
     "text": "Release Release-1 created from release pipeline Fabrikam.CD.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "html": "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created from release pipeline <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a>.\\r\\n- Release description: QFE release for fixing title</br>\\r\\n- ContinuousIntegration Requested for Chuck Reinhart</br>\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created from release pipeline [Fabrikam.CD](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1).\\r\\n- Release description: QFE release for fixing title</br>\\r\\n- ContinuousIntegrationRequested for Chuck Reinhart</br>\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
+    "html": "Release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created from release pipeline <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a>.\\r\\n- Release description: QFE release for fixing title</br>\\r\\n- ContinuousIntegration Requested for Chuck Reinhart</br>\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "markdown": "Release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created from release pipeline [Fabrikam.CD](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1).\\r\\n- Release description: QFE release for fixing title</br>\\r\\n- ContinuousIntegrationRequested for Chuck Reinhart</br>\\r\\n- Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
   },
   "resource": {
     "release": {
@@ -550,7 +460,7 @@ Event: A release was created.
           "release": {
             "id": 5,
             "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
+            "url": "http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
           }
         }
       ],
@@ -576,7 +486,7 @@ Event: A release was created.
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url": "http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "description": "QFE release for fixing title",
       "reason": "continuousIntegration",
@@ -605,14 +515,14 @@ Event: A release was created.
 }
 ```
 
-<a name="ms.vss-release.deployment-approval-completed-event"></a>
+<a name="ms.azure-devops-release.deployment-approval-completed-event"></a>
 
 ### Release deployment approval completed
 
 Event: A deployment approval is completed.
 
 * Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-approval-completed-event`
+* Event ID: `ms.azure-devops-release.deployment-approval-completed-event`
 * Resource Name: `resource`
 
 #### Settings
@@ -633,194 +543,66 @@ Event: A deployment approval is completed.
 ```json
 {
   "id": "00000000-0000-0000-0000-000000000000106acb39-c61e-4efd-995e-a9f5e71ba3cd",
-  "eventType": "ms.vss-release.deployment-approval-completed-event",
+  "eventType": "ms.azure-devops-release.deployment-approval-completed-event",
   "publisherId": "rm",
   "scope": "all",
   "message": {
     "text": "Pre Deployment approval for deployment of release Release-1 on environment Dev Succeeded.",
-    "html": "Pre Deployment approval for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a> Succeeded.",
-    "markdown": "Pre Deployment approval for deployment of release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded."
+    "html": "Pre Deployment approval for release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a> Succeeded.",
+    "markdown": "Pre Deployment approval for deployment of release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded."
   },
   "detailedMessage": {
-    "text": "Pre Deployment approval for release Release-1 on environment Dev Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving",
-    "html": "Pre Deployment approval for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a>  Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving",
-    "markdown": "Pre Deployment approval for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving"
+    "text": "Pre Deployment approval for release Release-1 on environment Dev Succeeded.\r\nApprover: Chuck Reinhart\r\nComment: Approving",
+    "html": "Pre Deployment approval for release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a> Succeeded.<br>Approver: Chuck Reinhart<br>Comment: Approving",
+    "markdown": "Pre Deployment approval for release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded.\r\nApprover: Chuck Reinhart\r\nComment: Approving"
   },
   "resource": {
     "approval": {
-      "id": 0,
-      "revision": 0,
-      "approver": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
-      "approvedBy": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
+      "id": 1,
+      "revision": 1,
       "approvalType": "preDeploy",
-      "createdOn": "2016-01-21T08:19:17.26Z",
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
       "status": "approved",
-      "comments": "",
+      "createdOn": "2024-12-02T12:21:13.8866607Z",
+      "modifiedOn": "2024-12-02T12:21:13.8866607Z",
+      "comments": "Approving",
       "isAutomated": false,
-      "isNotificationOn": true,
+      "isNotificationOn": false,
       "trialNumber": 1,
-      "attempt": 0,
-      "rank": 1,
-      "release": {
-        "id": 1,
-        "name": "Release-1"
-      },
-      "releaseDefinition": {
-        "id": 1,
-        "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
-      },
-      "releaseEnvironment": {
-        "id": 8,
-        "name": "Dev"
+      "attempt": 1,
+      "approver": {
+        "displayName": "Chuck Reinhart",
+        "id": "00000000-0000-0000-0000-000000000000"
       }
+    },
+    "environment": {
+      "id": 1,
+      "name": "Dev"
     },
     "release": {
       "id": 1,
       "name": "Release-1",
-      "status": "active",
-      "createdOn": "2016-01-21T08:19:17.26Z",
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "modifiedBy": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
-      "createdBy": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
-      "environments": [
-        {
-          "id": 1,
-          "releaseId": 0,
-          "name": "Dev",
-          "status": "succeeded",
-          "variables": {},
-          "preDeployApprovals": [],
-          "postDeployApprovals": [],
-          "preApprovalsSnapshot": {
-            "approvals": [],
-            "approvalOptions": {
-              "requiredApproverCount": 0,
-              "releaseCreatorCanBeApprover": true
-            }
-          },
-          "postApprovalsSnapshot": {
-            "approvals": []
-          },
-          "deploySteps": [],
-          "rank": 1,
-          "definitionEnvironmentId": 1,
-          "queueId": 1,
-          "environmentOptions": {
-            "emailNotificationType": "OnlyOnFailure",
-            "emailRecipients": "release.environment.owner;release.creator",
-            "skipArtifactsDownload": false,
-            "timeoutInMinutes": 0,
-            "enableAccessToken": false
-          },
-          "demands": [],
-          "conditions": [],
-          "modifiedOn": "2016-01-21T08:19:17.26Z",
-          "workflowTasks": [
-            {
-              "taskId": "00000000-0000-0000-0000-000000000000",
-              "version": "*",
-              "name": "Deploy Website to Azure",
-              "enabled": true,
-              "alwaysRun": false,
-              "continueOnError": false,
-              "timeoutInMinutes": 0,
-              "definitionType": null,
-              "inputs": {
-                "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-                "WebSiteName": "$(webAppName)",
-                "WebSiteLocation": "Southeast Asia",
-                "Slot": "",
-                "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-              }
-            }
-          ],
-          "deployPhasesSnapshot": [],
-          "owner": {
-            "id": "00000000-0000-0000-0000-000000000000",
-            "displayName": "Chuck Reinhart"
-          },
-          "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-          "schedules": [],
-          "release": {
-            "id": 1,
-            "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
-          }
-        }
-      ],
-      "variables": {},
-      "artifacts": [
-        {
-          "sourceId": "31419848-1780-4137-b7e3-62092e986fd6:1",
-          "type": "Build",
-          "alias": "Fabrikam.CI",
-          "definitionReference": {
-            "Definition": {
-              "id": "00000000-0000-0000-0000-0000000000001",
-              "name": "Fabrikam.CI"
-            },
-            "Project": {
-              "id": "00000000-0000-0000-0000-00000000000031419848-1780-4137-b7e3-62092e986fd6",
-              "name": "Fabrikam"
-            }
-          },
-          "isPrimary": true
-        }
-      ],
       "releaseDefinition": {
         "id": 1,
-        "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "name": "Release Definition"
       },
-      "description": "QFE release for fixing title",
-      "reason": "continuousIntegration",
-      "releaseNameFormat": "Release-$(rev:r)",
-      "keepForever": false,
-      "definitionSnapshotRevision": 0,
-      "comment": "",
-      "logsContainerUrl": null,
-      "_links": {}
-    },
-    "project": {
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
+      "project": {
+        "id": "project-id",
+        "name": "project-name"
+      }
     }
   },
-  "resourceVersion": "3.0-preview.1",
-  "resourceContainers": {
-    "collection": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "account": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    }
-  },
-  "createdDate": "2024-09-19T13:03:28.1594606Z"
+  "createdDate": "2024-12-02T12:21:13.8866607Z"
 }
 ```
 
-<a name="ms.vss-release.deployment-approval-pending-event"></a>
+<a name="ms.azure-devops-release.deployment-approval-pending-event"></a>
 
 ### Release deployment approval pending
 
 Event: A deployment approval is requested.
 
 * Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-approval-pending-event`
+* Event ID: `ms.azure-devops-release.deployment-approval-pending-event`
 * Resource Name: `resource`
 
 #### Settings
@@ -837,18 +619,68 @@ Event: A deployment approval is requested.
 ```json
 {
   "id": "00000000-0000-0000-0000-000000000000a73e7272-e96d-4249-93ac-7404eacd6801",
-  "eventType": "ms.vss-release.deployment-approval-pending-event",
+  "eventType": "ms.azure-devops-release.deployment-approval-pending-event",
   "publisherId": "rm",
   "scope": "all",
   "message": {
     "text": "Pre deployment approval pending for release Release-1 on environment Dev.",
-    "html": "Pre deployment approval pending for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.",
-    "markdown": "Pre deployment approval pending for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1)."
+    "html": "Pre deployment approval pending for release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.",
+    "markdown": "Pre deployment approval pending for release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1)."
+  },
+  "detailedMessage": {
+    "text": "Pre deployment approval pending for release Release-1 on environment Dev.\r\nPending on: Chuck Reinhart\r\nPending since: 09 May 2016 12:09:29 (UTC)",
+    "html": "Pre deployment approval pending for release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.<br>Pending on: Chuck Reinhart<br>Pending since: 09 May 2016 12:09:29 (UTC)",
+    "markdown": "Pre deployment approval pending for release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1).\r\nPending on: Chuck Reinhart\r\nPending since: 09 May 2016 12:09:29 (UTC)"
+  },
+  "resource": {
+    "approval": {
+      "id": 1,
+      "revision": 1,
+      "approvalType": "preDeploy",
+      "status": "pending",
+      "createdOn": "2016-05-09T12:09:29Z",
+      "modifiedOn": "2016-05-09T12:09:29Z",
+      "isAutomated": false,
+      "isNotificationOn": false,
+      "trialNumber": 1,
+      "attempt": 1,
+      "approver": {
+        "displayName": "Chuck Reinhart",
+        "id": "00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "environment": {
+      "id": 8,
+      "name": "Dev"
+    },
+    "release": {
+      "id": 1,
+      "name": "Release-1",
+      "releaseDefinition": {
+        "id": 1,
+        "name": "Release Definition"
+      },
+      "project": {
+        "id": "project-id",
+        "name": "project-name"
+      }
+    }
+  },
+  "createdDate": "2016-05-09T12:09:29Z"
+}{
+  "id": "00000000-0000-0000-0000-000000000000a73e7272-e96d-4249-93ac-7404eacd6801",
+  "eventType": "ms.azure-devops-release.deployment-approval-pending-event",
+  "publisherId": "rm",
+  "scope": "all",
+  "message": {
+    "text": "Pre deployment approval pending for release Release-1 on environment Dev.",
+    "html": "Pre deployment approval pending for release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.",
+    "markdown": "Pre deployment approval pending for release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1)."
   },
   "detailedMessage": {
     "text": "Pre deployment approval pending for release Release-1 on environment Dev.\\r\\nPending on: Chuck Reinhart\\r\\nPending since: 09 May 2016 12:09:29 (UTC)",
-    "html": "Pre deployment approval pending of release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)",
-    "markdown": "Pre deployment approval pending for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1).\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)"
+    "html": "Pre deployment approval pending of release <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)",
+    "markdown": "Pre deployment approval pending for release [Release-1](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1).\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)"
   },
   "resource": {
     "approval": {
@@ -875,7 +707,7 @@ Event: A deployment approval is requested.
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url": "http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "releaseEnvironment": {
         "id": 8,
@@ -958,7 +790,7 @@ Event: A deployment approval is requested.
           "release": {
             "id": 1,
             "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
+            "url": "http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
           }
         }
       ],
@@ -984,7 +816,7 @@ Event: A deployment approval is requested.
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url": "http://dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "description": "QFE release for fixing title",
       "reason": "continuousIntegration",
@@ -1013,14 +845,14 @@ Event: A deployment approval is requested.
 }
 ```
 
-<a name="ms.vss-release.deployment-completed-event"></a>
+<a name="ms.azure-devops-release.deployment-completed-event"></a>
 
 ### Release deployment completed
 
 Event: A deployment completed.
 
 * Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-completed-event`
+* Event ID: `ms.azure-devops-release.deployment-completed-event`
 * Resource Name: `resource`
 
 #### Settings
@@ -1039,110 +871,53 @@ Event: A deployment completed.
 ```json
 {
   "id": "00000000-0000-0000-0000-000000000000c3e52c57-187a-45c4-abe2-184a48291bad",
-  "eventType": "ms.vss-release.deployment-completed-event",
+  "eventType": "ms.azure-devops-release.deployment-completed-event",
   "publisherId": "rm",
   "scope": "all",
   "message": {
     "text": "Deployment of release Release-1 on environment Dev Succeeded.",
-    "html": "Deployment on environment <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded.",
-    "markdown": "Deployment on environment [Dev](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded."
+    "html": "Deployment on environment <a href='http://fabfiber.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded.",
+    "markdown": "Deployment on environment [Dev](http://fabfiber.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded."
   },
   "detailedMessage": {
     "text": "Deployment of release Release-1 on environment Dev Succeeded. Time to deploy: 0.11 minutes.",
-    "html": "Deployment on environment <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded. Time to deploy: 0.11 minutes.",
-    "markdown": "Deployment on environment [Dev](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded. Time to deploy: 0.11 minutes."
+    "html": "Deployment on environment <a href='http://fabfiber.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded. Time to deploy: 0.11 minutes.",
+    "markdown": "Deployment on environment [Dev](http://fabfiber.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded. Time to deploy: 0.11 minutes."
   },
   "resource": {
-    "environment": {
-      "id": 5,
-      "releaseId": 0,
-      "name": "Dev",
+    "deployment": {
+      "id": 1,
       "status": "succeeded",
-      "variables": {},
-      "preDeployApprovals": [],
-      "postDeployApprovals": [],
-      "preApprovalsSnapshot": {
-        "approvals": [],
-        "approvalOptions": {
-          "requiredApproverCount": 0,
-          "releaseCreatorCanBeApprover": true
-        }
-      },
-      "postApprovalsSnapshot": {
-        "approvals": []
-      },
-      "deploySteps": [],
-      "rank": 1,
-      "definitionEnvironmentId": 1,
-      "queueId": 1,
-      "environmentOptions": {
-        "emailNotificationType": "OnlyOnFailure",
-        "emailRecipients": "release.environment.owner;release.creator",
-        "skipArtifactsDownload": false,
-        "timeoutInMinutes": 0,
-        "enableAccessToken": false
-      },
-      "demands": [],
-      "conditions": [],
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "workflowTasks": [
-        {
-          "taskId": "00000000-0000-0000-0000-000000000000",
-          "version": "*",
-          "name": "Deploy Website to Azure",
-          "enabled": true,
-          "alwaysRun": false,
-          "continueOnError": false,
-          "timeoutInMinutes": 0,
-          "definitionType": null,
-          "inputs": {
-            "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-            "WebSiteName": "$(webAppName)",
-            "WebSiteLocation": "Southeast Asia",
-            "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-          }
-        }
-      ],
-      "deployPhasesSnapshot": [],
-      "owner": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Chuck Reinhart"
-      },
-      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-      "schedules": [],
       "release": {
         "id": 1,
         "name": "Release-1",
-        "url": "http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
+        "releaseDefinition": {
+          "id": 1,
+          "name": "Release Definition"
+        },
+        "project": {
+          "id": "project-id",
+          "name": "project-name"
+        }
+      },
+      "environment": {
+        "id": 8,
+        "name": "Dev"
       }
-    },
-    "project": {
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
     }
   },
-  "resourceVersion": "3.0-preview.1",
-  "resourceContainers": {
-    "collection": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "account": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    }
-  },
-  "createdDate": "2024-09-19T13:03:28.5345098Z"
+  "createdDate": "2024-12-02T12:21:13.8866607Z"
 }
 ```
 
-<a name="ms.vss-release.deployment-started-event"></a>
+<a name="ms.azure-devops-release.deployment-started-event"></a>
 
 ### Release deployment started
 
 Event: A deployment started.
 
 * Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-started-event`
+* Event ID: `ms.azure-devops-release.deployment-started-event`
 * Resource Name: `resource`
 
 #### Settings
@@ -1155,17 +930,17 @@ Event: A deployment started.
 ```json
 {
     "id": "00000000-0000-0000-0000-0000000000001f04688d-98bb-4206-850f-43389f4c8cb4",
-    "eventType": "ms.vss-release.deployment-started-event",
+    "eventType": "ms.azure-devops-release.deployment-started-event",
     "publisherId": "rm",
     "message": {
         "text": "Deployment of release Release-5 to stage Dev started.",
-        "html": "Deployment on stage <a href='http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4'>Dev</a> started.",
-        "markdown": "Deployment on stage [Dev](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started."
+        "html": "Deployment on stage <a href='http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4'>Dev</a> started.",
+        "markdown": "Deployment on stage [Dev](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started."
     },
     "detailedMessage": {
         "text": "Deployment of release Release-5 on stage Dev started.\r\nTrigger: Manual",
-        "html": "Deployment on stage <a href='Dev'>http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4</a> started.<br>Trigger: Manual",
-        "markdown": "Deployment on stage [Release-1](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started.\r\nTrigger: Dev"
+        "html": "Deployment on stage <a href='Dev'>http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4</a> started.<br>Trigger: Manual",
+        "markdown": "Deployment on stage [Release-1](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.azure-devops-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started.\r\nTrigger: Dev"
     },
     "resource": {
         "environment": {
@@ -1295,7 +1070,7 @@ Event: A deployment started.
 
 ### Check updated
 
-Filter events to include only updated checks.
+Event: A check is updated.
 
 * Publisher ID: `azure-devops`
 * Event ID: `check.updated`
@@ -1311,20 +1086,20 @@ Filter events to include only updated checks.
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "check.updated",
-    "resource": {
-        "check": {
-            "id": "00000000-0000-0000-0000-000000000000check-id",
-            "type": "check-type",
-            "status": "check-status",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
-        }
-    },
-    "updatedDate": "2024-07-17T21:34:22.338Z"
+  "publisherId": "azure-devops",
+  "eventId": "check.updated",
+  "resource": {
+    "check": {
+      "id": "00000000-0000-0000-0000-000000000000check-id",
+      "type": "check-type",
+      "status": "check-status",
+      "project": {
+        "id": "00000000-0000-0000-0000-000000000000project-id",
+        "name": "project-name"
+      }
+    }
+  },
+  "updatedDate": "2024-07-17T21:34:22.338Z"
 }
 ```
 
@@ -1332,7 +1107,7 @@ Filter events to include only updated checks.
 
 ### Elastic agent pool resized
 
-Filter events to include only resized elastic agent pools.
+Event: An elastic agent pool is resized.
 
 * Publisher ID: `azure-devops`
 * Event ID: `elasticagentpool.resized`
@@ -1349,21 +1124,21 @@ Filter events to include only resized elastic agent pools.
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "elasticagentpool.resized",
-    "resource": {
-        "elasticAgentPool": {
-            "id": "00000000-0000-0000-0000-000000000000pool-id",
-            "name": "pool-name",
-            "oldSize": "old-size",
-            "newSize": "new-size",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
-        }
-    },
-    "resizedDate": "2024-07-17T21:34:22.338Z"
+  "publisherId": "azure-devops",
+  "eventId": "elasticagentpool.resized",
+  "resource": {
+    "elasticAgentPool": {
+      "id": "00000000-0000-0000-0000-000000000000pool-id",
+      "name": "pool-name",
+      "oldSize": "old-size",
+      "newSize": "new-size",
+      "project": {
+        "id": "00000000-0000-0000-0000-000000000000project-id",
+        "name": "project-name"
+      }
+    }
+  },
+  "resizedDate": "2024-07-17T21:34:22.338Z"
 }
 ```
 
@@ -1371,7 +1146,7 @@ Filter events to include only resized elastic agent pools.
 
 ### Manual intervention pending
 
-Filter events to include only pending manual interventions.
+Event: A manual intervention is pending.
 
 * Publisher ID: `azure-devops`
 * Event ID: `manualintervention.pending`
@@ -1387,20 +1162,20 @@ Filter events to include only pending manual interventions.
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "manualintervention.pending",
-    "resource": {
-        "manualIntervention": {
-            "id": "00000000-0000-0000-0000-000000000000intervention-id",
-            "name": "intervention-name",
-            "status": "pending",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
-        }
-    },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+  "publisherId": "azure-devops",
+  "eventId": "manualintervention.pending",
+  "resource": {
+    "manualIntervention": {
+      "id": "00000000-0000-0000-0000-000000000000intervention-id",
+      "name": "intervention-name",
+      "status": "pending",
+      "project": {
+        "id": "00000000-0000-0000-0000-000000000000project-id",
+        "name": "project-name"
+      }
+    }
+  },
+  "createdDate": "2024-07-17T21:34:22.338Z"
 }
 ```
 
@@ -1408,7 +1183,7 @@ Filter events to include only pending manual interventions.
 
 ### Project-level agent pool created
 
-Filter events to include only newly created project-level agent pools.
+Event: A project-level agent pool is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `projectlevelagentpool.created`
@@ -1423,19 +1198,19 @@ Filter events to include only newly created project-level agent pools.
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "projectlevelagentpool.created",
-    "resource": {
-        "projectLevelAgentPool": {
-            "id": "00000000-0000-0000-0000-000000000000pool-id",
-            "name": "pool-name",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
-        }
-    },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+  "publisherId": "azure-devops",
+  "eventId": "projectlevelagentpool.created",
+  "resource": {
+    "projectLevelAgentPool": {
+      "id": "00000000-0000-0000-0000-000000000000pool-id",
+      "name": "pool-name",
+      "project": {
+        "id": "00000000-0000-0000-0000-000000000000project-id",
+        "name": "project-name"
+      }
+    }
+  },
+  "createdDate": "2024-07-17T21:34:22.338Z"
 }
 ```
 
@@ -1443,7 +1218,7 @@ Filter events to include only newly created project-level agent pools.
 
 ### Project-level agent pool updated
 
-Filter events to include only updated project-level agent pools.
+Event: A project-level agent pool is updated.
 
 * Publisher ID: `azure-devops`
 * Event ID: `projectlevelagentpool.updated`
@@ -1516,72 +1291,20 @@ Event: Overall statuses of a pipeline run changed. A new run started, or a run t
         },
         "web": {
           "href": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/results?buildId=11"
-        },
-        "pipeline.web": {
-          "href": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/definition?definitionId=1"
-        },
-        "pipeline": {
-          "href": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/1?revision=1"
         }
       },
       "pipeline": {
-        "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/1?revision=1",
-        "id": 11,
-        "revision": 1,
-        "name": "TEST-CI",
-        "folder": "\\"
+        "id": 1,
+        "name": "Pipeline-Name"
       },
       "state": "completed",
       "result": "succeeded",
-      "createdDate": "2019-12-13T04:46:13.613Z",
-      "finishedDate": "2019-12-13T04:46:13.613Z",
-      "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/1/runs/11",
-      "id": 11,
-      "name": "11"
-    },
-    "pipeline": {
-      "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/1?revision=1",
-      "id": 11,
-      "revision": 1,
-      "name": "TEST-CI",
-      "folder": "\\"
-    },
-    "repositories": [
-      {
-        "type": "Git",
-        "change":
-        {
-          "author":
-          {
-            "name": "Fabrikam John",
-            "email": "john@fabrikamfiber.com",
-            "date": "2024-11-11T15:09:21Z"
-          },
-          "committer":
-          {
-            "name": "Fabrikam John",
-            "email": "john@fabrikamfiber.com",
-            "date": "2024-11-11T15:09:21Z"
-          },
-          "message": "Added Viva support"
-        },
-        "url": "https://fabrikamfiber@dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_git/fabrikamfiber"
-      }
-    ]
-  },
-  "resourceVersion": "5.1-preview.1",
-  "resourceContainers": {
-    "collection": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "account": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000"
+      "createdDate": "2024-07-17T21:34:22.338Z",
+      "finishedDate": "2024-07-17T21:45:22.338Z",
+      "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/1/runs/11"
     }
   },
-  "createdDate": "2019-12-13T04:46:13.683Z"
+  "createdDate": "2024-07-17T21:34:22.338Z"
 }
 ```
 
@@ -2114,7 +1837,7 @@ Event: A changeset is checked into Team Foundation Version Control (TFVC).
 
 ### Code pushed
 
-Event: Code was pushed to a Git repository.
+Event: Code is pushed to a Git repository.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.push`
@@ -2122,9 +1845,9 @@ Event: Code was pushed to a Git repository.
 
 #### Settings
 
- * `branch`: The branch that code was pushed into
+ * `branch`: The branch that code is pushed into
  * `pushedBy`: A group that has the pusher as its member
- * `repository`: The repository that code was pushed to
+ * `repository`: The repository that code is pushed to
    * Data type: `guid`
 
 #### Sample payload
@@ -2220,7 +1943,7 @@ Event: A pull request is created in a Git repository.
 
 #### Settings
 
- * `repository`: The repository that code was pushed to
+ * `repository`: The repository that code is pushed to
    * Data type: `guid`
  * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
@@ -2328,7 +2051,7 @@ Event: A pull request merge is attempted in a Git repository.
 
 #### Settings
 
- * `repository`: The repository that code was pushed to
+ * `repository`: The repository that code is pushed to
    * Data type: `guid`
  * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
@@ -2429,7 +2152,7 @@ Event: A pull request merge is attempted in a Git repository.
 
 ### Pull request merge approved
 
-Event: A merge commit was approved on a pull request.
+Event: A merge commit is approved on a pull request.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.pullrequest.approved`
@@ -2437,7 +2160,7 @@ Event: A merge commit was approved on a pull request.
 
 #### Settings
 
- * `repository`: The repository that code was pushed to
+ * `repository`: The repository that code is pushed to
    * Data type: `guid`
  * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
@@ -2552,7 +2275,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
       * `ReviewersUpdateNotification` - Reviewers changed
       * `StatusUpdateNotification` - Status changed
       * `ReviewerVoteNotification` - Votes score changed
- * `repository`: The repository that code was pushed to
+ * `repository`: The repository that code is pushed to
    * Data type: `guid`
  * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
@@ -2667,7 +2390,7 @@ Event: A pull request is commented on.
 
 #### Settings
 
- * `repository`: The repository that pull request was commented on
+ * `repository`: The repository that pull request is commented on
    * Data type: `guid`
  * `branch`: The target branch of the pull request
 
@@ -2807,7 +2530,7 @@ Event: A pull request is commented on.
 
 ### Repository created
 
-Filter events to include only newly created repositories.
+Event: A new repository is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.created`
@@ -2841,7 +2564,7 @@ Filter events to include only newly created repositories.
 
 ### Repository deleted
 
-Filter events to include only deleted repositories.
+Event: A repository is deleted.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.deleted`
@@ -2875,7 +2598,7 @@ Filter events to include only deleted repositories.
 
 ### Repository forked
 
-Filter events to include only newly forked repositories.
+Event: A repository is forked.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.forked`
@@ -2951,7 +2674,7 @@ Filter events to include only renamed repositories.
 
 ### Repository status changed
 
-Filter events to include only repositories whose status changed.
+Event: A repository status is changed.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.statusChanged`
@@ -2989,7 +2712,7 @@ Filter events to include only repositories whose status changed.
 
 ### Service connection created
 
-Filter events to include only newly created service connections.
+Event: A new service connection is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `serviceendpoint.created`
@@ -3024,7 +2747,7 @@ Filter events to include only newly created service connections.
 
 ### Service connection updated
 
-Filter events to include only updated service connections.
+Event: A service connection is updated.
 
 * Publisher ID: `azure-devops`
 * Event ID: `serviceendpoint.updated`
@@ -3063,7 +2786,7 @@ Filter events to include only updated service connections.
 
 ### Work item created
 
-Filter events to include only newly created work items.
+Event: A new work item is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.created`
@@ -3149,7 +2872,7 @@ Filter events to include only newly created work items.
 
 ### Work item deleted
 
-Filter events to include only newly deleted work items.
+Event: A work item is deleted.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.deleted`
@@ -3229,7 +2952,7 @@ Filter events to include only newly deleted work items.
 
 ### Work item restored
 
-Filter events to include only newly restored work items.
+Event: A work item is newly restored.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.restored`
@@ -3321,7 +3044,7 @@ Filter events to include only newly restored work items.
 
 ### Work item updated
 
-Filter events to include only changed work items.
+Event: A work item is changed.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.updated`
@@ -3430,7 +3153,7 @@ Do the following steps to create a service hooks subscription for each work item
 
 ### Work item commented on
 
-Filter events to include only work items commented on.
+Event: A work item is commented on.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.commented`
