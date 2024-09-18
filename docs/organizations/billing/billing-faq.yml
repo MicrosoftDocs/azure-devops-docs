@@ -410,8 +410,7 @@ sections:
 
 additionalContent: |
 
-  ## Related articles
-  
-  * [Change the Azure subscription for billing](set-up-billing-for-your-organization-vs#change-your-billing-subscription)
+  ## Related articles  
+
   * [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
   * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
