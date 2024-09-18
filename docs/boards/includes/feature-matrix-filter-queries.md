@@ -152,7 +152,7 @@ The following table summarizes the query filter functions supported by each Azur
       **Supported operators**: `Is Empty, Is Not Empty`
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -200,7 +200,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on their column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -212,7 +212,7 @@ The following table summarizes the query filter functions supported by each Azur
       Filter query results based on a key word or select fields. 
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---

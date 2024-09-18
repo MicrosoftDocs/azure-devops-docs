@@ -98,7 +98,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
       Find work defined in +/- n of current iteration for a team.
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services   
+      All versions   
    :::column-end:::
 :::row-end:::
 ---
@@ -135,7 +135,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
       Find work where the selected date-time field is within the current day, month, week, or year with a plus/minus offset, example: `Closed Date>=@StartOfDay-7`.
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -147,7 +147,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
       Find work assigned to an Area Path or Iteration Path of specified team, for examples, see [Query by area or iteration path](../queries/query-by-area-iteration-path.md). 
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
