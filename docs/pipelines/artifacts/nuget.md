@@ -134,9 +134,6 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 ::: moniker range=">= azure-devops-2022"
 
-> [!NOTE]
-> The [NuGetAuthenticate@1](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task does not support service connections that use ApiKey authentication.
-
 #### [YAML](#tab/yaml/)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
