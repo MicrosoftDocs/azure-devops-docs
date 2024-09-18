@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 08/22/2024
+ms.date: 09/18/2024
 ---
 
 # Configure Managed DevOps Pools networking
@@ -100,6 +100,33 @@ If you are using ARM templates, add a `networkProfile` property if it doesn't al
         }
         ...
     }
+}
+```
+
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Networking is configured using the `networkProfile` property in the `fabricProfile` section when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. For an isolated network, omit the `networkProfile` property when creating a pool.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `networkProfile` section of the **fabric-profile.json** file.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {...},
+    "networkProfile": {
+        "subnetId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet"
+    }
+  }
 }
 ```
 
