@@ -59,14 +59,13 @@ steps:
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition. You can leave the *nugetAuthenticate* with the default settings and configure the *nuget* task as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *Command line* tasks to your pipeline definition. You can leave the *nugetAuthenticate* with the default settings and configure the *Command line* task as follows:
 
-    :::image type="content" source="media/nuget/authenticate-and-publish-tasks.png" alt-text="A screenshot displaying how to configure the publish task in Azure Pipelines.":::
+    :::image type="content" source="media/nuget/cli-push-nuget.png" alt-text="A screenshot displaying how to configure the publish task in Azure Pipelines.":::
 
-- **Command**: the NuGet command to run. Select *push*.
-- **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
-- **Target feed location**: select *This organization/collection*.
-- **Target feed**: select the feed that you want to publish to.
+- **Display name**: *Push*.
+- **Script**: 
+    ```dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg```
 
 - - -
 
@@ -98,14 +97,13 @@ steps:
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition. You can leave the *nugetAuthenticate* with the default settings and configure the *nuget* task as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *Command line* tasks to your pipeline definition. You can leave the *nugetAuthenticate* with the default settings and configure the *Command line* task as follows:
 
-    :::image type="content" source="media/nuget/authenticate-and-publish-tasks.png" alt-text="A screenshot displaying how to configure the NuGet publish task in Azure Pipelines.":::
+    :::image type="content" source="media/nuget/cli-push-nuget.png" alt-text="A screenshot displaying how to configure the CLI publish task in Azure Pipelines.":::
 
-- **Command**: the NuGet command to run. Select *push*.
-- **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
-- **Target feed location**: select *This organization/collection*.
-- **Target feed**: select the feed that you want to publish to.
+- **Display name**: *Push*.
+- **Script**: 
+    ```dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg```
 
 - - -
 
@@ -154,18 +152,16 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition and configure them as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
 
-    :::image type="content" source="media/nuget/authenticate-and-publish-tasks-external-feed.png" alt-text="A screenshot displaying how to configure the publish task to a feed in other organization.":::
+    :::image type="content" source="media/nuget/cli-push-nuget.png" alt-text="A screenshot displaying how to configure the publish task to a feed in other organization.":::
 
     1. **NuGet Authenticate task**: select your service connection from the *Service connection credentials for feeds outside this organization* dropdown menu.
     
-    1. **NuGet task**:
-
-        - **Command**: *push*.
-        - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
-        - **Target feed location**: select *External NuGet server (including other accounts/collections)*.
-        - **NuGet server**: select the NuGet service connection that you created earlier.
+    1. **Command line task**:
+        - **Display name**: *Push*.
+        - **Script**: 
+            ```dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg```
 
 - - -
 
@@ -197,18 +193,16 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *NuGet* tasks to your pipeline definition and configure them as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGetAuthenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
 
-    :::image type="content" source="media/nuget/authenticate-and-publish-tasks-external-feed.png" alt-text="A screenshot displaying how to configure the NuGet publish task to a feed in other organization.":::
+    :::image type="content" source="media/nuget/cli-push-nuget.png" alt-text="A screenshot displaying how to configure the CLI publish task to a feed in other organization.":::
 
     1. **NuGet Authenticate task**: select your service connection from the *Service connection credentials for feeds outside this organization* dropdown menu.
     
-    1. **NuGet task**:
-
-        - **Command**: *push*.
-        - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
-        - **Target feed location**: select *External NuGet server (including other accounts/collections)*.
-        - **NuGet server**: select the NuGet service connection that you created earlier.
+    1. **Command line task**:
+        - **Display name**: *Push*.
+        - **Script**: 
+            ```dotnet nuget push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg```
 
 - - -
 
