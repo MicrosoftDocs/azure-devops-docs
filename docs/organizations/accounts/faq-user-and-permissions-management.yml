@@ -253,7 +253,7 @@ sections:
       - question: |
           Q: Will my Azure DevOps or Microsoft Entra group get deleted if I remove its group rule?
         answer: |
-          A: No. Your groups don'g get deleted.
+          A: No. Your groups don't get deleted.
           
       - question: |
           Q: What does the option "Remove <group> from all project level groups" do?
