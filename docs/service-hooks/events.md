@@ -1996,7 +1996,7 @@ Event: A pull request is created in a Git repository.
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "a1234567-abcde-1234-abc
+    "mergeId": "a1234567-abcde-1234-abc",
     "lastMergeSourceCommit": {
       "commitId": "00000000-0000-0000-0000-000000000000",
       "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
@@ -2105,7 +2105,7 @@ Event: A pull request merge is attempted in a Git repository.
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "attempted",
-    "mergeId": "00000000-0000-0000-0000-000000000000
+    "mergeId": "00000000-0000-0000-0000-000000000000",
     "lastMergeSourceCommit": {
       "commitId": "00000000-0000-0000-0000-000000000000",
       "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
@@ -2214,7 +2214,7 @@ Event: A merge commit is approved on a pull request.
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "a1234567-abcde-1234-abc
+    "mergeId": "a1234567-abcde-1234-abc",
     "lastMergeSourceCommit": {
       "commitId": "00000000-0000-0000-0000-000000000000",
       "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
@@ -2470,7 +2470,7 @@ Event: A pull request is commented on.
             "sourceRefName": "refs/heads/mytopic",
             "targetRefName": "refs/heads/master",
             "mergeStatus": "succeeded",
-            "mergeId": "a1234567-abcde-1234-abc
+            "mergeId": "a1234567-abcde-1234-abc",
             "lastMergeSourceCommit": {
                 "commitId": "00000000-0000-0000-0000-000000000000",
                 "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
