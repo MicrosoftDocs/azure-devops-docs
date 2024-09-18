@@ -27,28 +27,6 @@ Check your version by running `az --version`. Azure Cloud Shell always has the l
 az version
 ```
 
-## Define environment variables
-
-```bash
-export RANDOM_ID="$(openssl rand -hex 3)"
-export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
-export REGION=EastUS2
-export POOL_NAME="mdpPool$RANDOM_ID"
-export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
-export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
-```
-
-Review your resource names.
-
-```bash
-echo $RESOURCE_GROUP_NAME
-echo $POOL_NAME
-echo $DEV_CENTER_NAME
-echo $DEV_CENTER_PROJECT_NAME
-echo $REGION
-```
-
-
 ## Sign in to the Azure CLI
 
 Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands. If you're using [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) you don't need to run `az login` unless you want to use a different account.
@@ -73,60 +51,84 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
    If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli). 
 
+
+## Define environment variables
+
+1. Run the following commands to generate the names for the resources in this quickstart. This example uses the `EastUS2` region. Replace `EastUS2` with your desired region.
+
+```bash
+export RANDOM_ID="$(openssl rand -hex 3)"
+export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
+export REGION=EastUS2
+export POOL_NAME="mdpPool$RANDOM_ID"
+export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
+export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
+```
+
+2. Run the following commands to review your resource names.
+
+```bash
+echo $RESOURCE_GROUP_NAME
+echo $POOL_NAME
+echo $DEV_CENTER_NAME
+echo $DEV_CENTER_PROJECT_NAME
+echo $REGION
+```
+
 ## Create a resource group
 
 1. Run the following command to create the resource group to contain the resources used in this quickstart.
 
-```azurecli
-az group create --name $RESOURCE_GROUP_NAME --location $REGION
-```
+    ```azurecli
+    az group create --name $RESOURCE_GROUP_NAME --location $REGION
+    ```
 
-## Create a Dev Center and Dev Center Project
+## Create a dev center and dev center Project
 
 1. Install the Azure CLI *devcenter* extension.
 
-   ```azurecli
-   az extension add --name devcenter --upgrade
-   ```
+    ```azurecli
+    az extension add --name devcenter --upgrade
+    ```
 
 1. Create a dev center.
 
-   ```azurecli
-   az devcenter admin devcenter create -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME -l $REGION
+    ```azurecli
+    az devcenter admin devcenter create -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME -l $REGION
+    
+    DEVCID=$(az devcenter admin devcenter show -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
+    echo $DEVCID
+    ```
 
-   DEVCID=$(az devcenter admin devcenter show -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
-   echo $DEVCID
-   ```
+    After a few moments, the output indicates that the Dev center was created. The `id` of the created Dev center is saved in `DEVCID` for use in the following step.
 
-   After a few moments, the output indicates that the Dev center was created. The `id` of the created Dev center is saved in `DEVCID` for use in the following step.
-
-   ```json
+    ```json
     {
-       "devCenterUri": "https://...",
-       "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/devcenters/devCenterName",
-       "location": "eastus",
-       "name": "devCenterName",
-       "provisioningState": "Succeeded",
-       "resourceGroup": "resourceGroupName",
-       "systemData": { ... },
-       "type": "microsoft.devcenter/devcenters"
+        "devCenterUri": "https://...",
+        "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/devcenters/devCenterName",
+        "location": "eastus",
+        "name": "devCenterName",
+        "provisioningState": "Succeeded",
+        "resourceGroup": "resourceGroupName",
+        "systemData": { ... },
+        "type": "microsoft.devcenter/devcenters"
     }
    ```
 
 1. Create a dev center project under the newly created dev center, and save the dev center project in `DEVCPID` for use when creating the Managed DevOps Pool.
 
-   ```azurecli
-   az devcenter admin project create -n $DEV_CENTER_PROJECT_NAME \
-      --description "My dev center project." \
-      -g $RESOURCE_GROUP_NAME \
-      -l $REGION \
-      --dev-center-id $DEVCID
+    ```azurecli
+    az devcenter admin project create -n $DEV_CENTER_PROJECT_NAME \
+        --description "My dev center project." \
+        -g $RESOURCE_GROUP_NAME \
+        -l $REGION \
+        --dev-center-id $DEVCID
+    
+    DEVCPID=$(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
+    echo $DEVCPID
+    ```
 
-   DEVCPID=$(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
-   echo $DEVCPID
-   ```
-
-   After a few moments, the output indicates that the Dev center project was created.
+    After a few moments, the output indicates that the dev center project was created.
 
     ```json
     {
