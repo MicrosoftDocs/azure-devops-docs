@@ -467,7 +467,7 @@ To create a service connection that uses an existing service principal:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2022 < azure-devops"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
