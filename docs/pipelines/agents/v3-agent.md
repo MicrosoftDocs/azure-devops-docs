@@ -142,6 +142,8 @@ Azure DevOps Server versions support the version of the agent that is deployed w
 
 Azure DevOps Server is serviced through security or servicing patches that provide targeted cumulative bug fixes for existing features in the product. For the best and most secure product experience, we strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, from the [Azure DevOps Server download page](/azure/devops/server/download/azuredevopsserver).
 
+After installing an Azure DevOps Server update or new version, [update your agents](/azure/devops/pipelines/agents/agents#to-update-self-hosted-agents).
+
 The following table lists the versions of Azure DevOps Server that first included a version of the 3.x agent.
 
 * [Azure DevOps Server 2022 Update 2](/azure/devops/server/release-notes/azuredevops2022u2)
