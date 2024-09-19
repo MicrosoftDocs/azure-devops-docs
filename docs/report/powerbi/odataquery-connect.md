@@ -40,9 +40,9 @@ The easiest way to write and test OData is to use [Visual Studio Code](https://a
 
 1. Install [Visual Studio Code](https://aka.ms/vscode).
 
-1. Open Visual Studio Code, select **Extensions**, and then search for **odata**. In the results list, select **vscode-odata**, and then install it.
+1. Open Visual Studio Code, select **Extensions**, and then search for *odata*. In the results list, select **vscode-odata**, and then install it.
 
-1. Create and save an OData file in Visual Studio Code, for example, `filename.odata`. Name it whatever you want, but it must have a `.odata` extension to enable the OData extension functionality.
+1. Create and save an OData file in Visual Studio Code, for example, *filename.odata*. Name it whatever you want, but it must have a *.odata* extension to enable the OData extension functionality.
 
 ### Write the OData query
 
@@ -66,14 +66,12 @@ For more information, see [Sample reports and quick reference index](../extend-a
 
 After you write the query in Visual Studio Code, you should see syntax highlighting.
 
-![](media/odataquery-syntaxhighlighting.png)
-
 :::image type="content" source="media/odataquery-syntaxhighlighting.png" alt-text="Screenshot that shows the Visual Studio Code OData extension with syntax highlighting.":::
 
 ### Test the OData query
 
 1. To test the OData query, place your cursor anywhere in the query text and select **View** > **Command Palette**.
-1. In the search box, enter **odata** to bring up all the OData commands.
+1. In the search box, enter *odata* to bring up all the OData commands.
 
    :::image type="content" source="media/odataquery-commandpallette.png" alt-text="Screenshot that shows the command palette for the Visual Studio Code OData extension.":::
 
@@ -100,7 +98,7 @@ Before you use the query in Power BI, you must convert the multiline OData query
 > [!NOTE]
 > In your *filename.odata* file, you might want to first create a copy of the multiline query text and then run **OData: Combine** on the copy. Do this step first because there's no way to convert the single-line query back to a readable multiline query.
 
-1. In Visual Studio Code, place your cursor anywhere in the query text, and then select **View** > **Command Palette**. In the search box, enter **odata**. Then in the results list, select **OData: Combine**.
+1. In Visual Studio Code, place your cursor anywhere in the query text, and then select **View** > **Command Palette**. In the search box, enter *odata*. Then in the results list, select **OData: Combine**.
 
    The multiline query gets converted into a single-line query.
 
@@ -126,7 +124,7 @@ Before you use the query in Power BI, you must convert the multiline OData query
 
 1. Select **Edit** on the preview page to open Power Query Editor.
 
-   :::image type="content" source="media/odataquery-powerbi-queryeditor.png" alt-text="Screenshot that shows Power Query Editor open for the Power BI OData feed.":::
+   :::image type="content" source="media/odataquery-powerbi-queryeditor.png" alt-text="Screenshot that shows Power Query Editor open for the Power BI OData feed." lightbox="media/odataquery-powerbi-queryeditor.png":::
 
 1. Select **Advanced Editor** on the ribbon.
 
