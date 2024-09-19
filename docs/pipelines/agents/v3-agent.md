@@ -132,7 +132,16 @@ The pipelines team recommends that you update your agent machines to newer opera
 
 ### Does Azure DevOps Server support the 3.x agent
 
-Azure DevOps Server versions support the version of the agent that is deployed with that version. The following versions of Azure DevOps Server include a version of the 3.x agent that is supported for that Azure DevOps Server version. To get the 3.x agent installed in your Azure DevOps Server installation, update your Azure DevOps Server version to one of the following versions.
+Azure DevOps Server versions support the version of the agent that is deployed with that version. The following table lists each [supported Azure DevOps Server version](/azure/devops/server/install/servicing#supported-versions) and its supported agent version.
+
+| Azure DevOps Server version | Agent version |
+| [Azure DevOps Server 2022.2](/azure/devops/server/release-notes/azuredevops2022u2) | 3.238.0 |
+| [Azure DevOps Server 2020.1.2](/azure/devops/server/release-notes/azuredevops2020u1) | 3.225.0 |
+| [Azure DevOps Server 2019.1.2](/azure/devops/server/release-notes/azuredevops2019u1) | 3.225.0 |
+
+Azure DevOps Server is serviced through security or servicing patches that provide targeted cumulative bug fixes for existing features in the product. For the best and most secure product experience, we strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, from the [Azure DevOps Server download page](/azure/devops/server/download/azuredevopsserver).
+
+The following table lists the versions of Azure DevOps Server that first included a version of the 3.x agent.
 
 * [Azure DevOps Server 2022 Update 2](/azure/devops/server/release-notes/azuredevops2022u2)
 * [Azure DevOps Server 2022 Update 1](/azure/devops/server/release-notes/azuredevops2022u1)
