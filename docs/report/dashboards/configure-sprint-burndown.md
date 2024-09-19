@@ -98,7 +98,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
    :::column-end:::
    :::column span="2":::
 
-   :::image type="content" source="media/burndown/ALM_SB_IntroHealthyChart.png" alt-text="Healthy sprint burndown chart":::
+   :::image type="content" source="media/burndown/ALM_SB_IntroHealthyChart.png" alt-text="Screenshot of a healthy sprint burndown chart.":::
    :::column-end:::
 :::row-end:::
 
