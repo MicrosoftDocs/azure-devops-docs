@@ -422,9 +422,3 @@ Teams can find it useful to review these reports periodically during their sprin
 - [Update and monitor your Taskboard](../../boards/sprints/task-board.md)
 - [Understand scrum and best practices](../../boards/sprints/best-practices-scrum.md)
 - [Understand the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)
-
-::: moniker range="< azure-devops"
-
-For projects that use the on-premises XML process model, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).
-
-::: moniker-end
