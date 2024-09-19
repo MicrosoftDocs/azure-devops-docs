@@ -284,7 +284,7 @@ The selections you make are only set for you, and persist across sessions until 
 
 ::: moniker range="azure-devops-2019"
 
-:::image type="content" source="media/burndown/open-burndown-chart-agile.png" alt-text="Screenshot shows how to open sprint burndown chart for Azure Devops 2019.":::
+:::image type="content" source="media/burndown/open-burndown-chart-agile.png" alt-text="Screenshot shows how to open sprint burndown chart for Azure DevOps 2019.":::
 
 ::: moniker-end
 
@@ -352,7 +352,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 1. **Advanced features**:  Select the following options that you want to add to your chart.
 
    - **Show total scope**: Displays both the historical and projected scope increase.  
-   - **Show non working days**: Displays non-working days on the burndown. When displayed, non-working days are shaded.  
+   - **Show non working days**: Displays nonworking days on the burndown. When displayed, nonworking days are shaded.  
    - **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.  
 
 ::: moniker-end
