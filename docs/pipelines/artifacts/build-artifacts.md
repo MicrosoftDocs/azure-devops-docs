@@ -196,9 +196,21 @@ When your pipeline run is completed, navigate to **Summary** to explore or downl
 
 ::: moniker-end
 
+## Download a specific artifact
 
-
-
+```yaml
+steps:
+- task: DownloadBuildArtifacts@1
+  displayName: 'Download Build Artifacts'
+  inputs:
+    buildType: specific
+    project: 'xxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxx'
+    pipeline: 20
+    buildVersionToDownload: specific
+    buildId: 128
+    artifactName: drop
+    extractTars: false
+```
 
 ## Tips
 
