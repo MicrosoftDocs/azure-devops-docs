@@ -135,6 +135,7 @@ The pipelines team recommends that you update your agent machines to newer opera
 Azure DevOps Server versions support the version of the agent that is deployed with that version. The following table lists each [supported Azure DevOps Server version](/azure/devops/server/install/servicing#supported-versions) and its supported agent version.
 
 | Azure DevOps Server version | Agent version |
+|-----------------------------|---------------|
 | [Azure DevOps Server 2022.2](/azure/devops/server/release-notes/azuredevops2022u2) | 3.238.0 |
 | [Azure DevOps Server 2020.1.2](/azure/devops/server/release-notes/azuredevops2020u1) | 3.225.0 |
 | [Azure DevOps Server 2019.1.2](/azure/devops/server/release-notes/azuredevops2019u1) | 3.225.0 |
