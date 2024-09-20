@@ -214,7 +214,7 @@ The Pivot table displays a table of configurable rows and columns, with columns 
 
 The following image shows an example of work item types and their current state.  
 
-:::image type="content" source="media/chart/config-pivot-item-state.png" alt-text="Screenshot of Configure Chart dialog, Pivot table.":::
+:::image type="content" source="media/charts/config-pivot-item-state.png" alt-text="Screenshot of Configure Chart dialog, Pivot table.":::
 
 ## Add a Trend chart
 
