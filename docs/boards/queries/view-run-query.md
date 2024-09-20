@@ -178,7 +178,7 @@ You can also select a favorite query or return to the **All** queries page from 
 
 ::: moniker range="< azure-devops"
 
-:::image type="content" source="../../project/navigation/media/breadcrumbs/query-bd-and-selector.png)" alt-text="Screenshot of query dropdown." :::
+:::image type="content" source="../../project/navigation/media/breadcrumbs/query-bd-and-selector.png" alt-text="Screenshot of query dropdown." :::
 
 ::: moniker-end
 
