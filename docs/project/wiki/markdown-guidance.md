@@ -1014,7 +1014,7 @@ You can also use the **toolbar** and the **query selector** to embed the query r
 
 ![Screenshot of selected Query Results icon.](media/query_selector_icon.png)
 
-For more information about how to copy the query URL, which provides a GUID for the query, see [Email query items or share query URL](../../boards/queries/view-run-query.md#email-query-items-or-share-a-query-url).
+For more information about how to copy the query URL, which provides a GUID for the query, see [Email query items or share query URL](../../boards/queries/view-run-query.md#email-query-items-or-share-a-query-url-items-or-share-a-query-url).
 
 ## @mention users and groups
 
