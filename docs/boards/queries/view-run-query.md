@@ -51,7 +51,7 @@ You can also run a query by using the [Azure DevOps command line interface](#run
 	
 1. Choose **All** to open the page where you can view all queries that you defined or are shared within your project. 
 
-    ::: image type="content" source="media/view-run-queries/queries-all.png" alt-text="Screenshot of all queries view." :::
+    :::image type="content" source="media/view-run-queries/queries-all.png" alt-text="Screenshot of all queries view." :::
 
 1. Choose **My Queries** as needed. 
    - To view all work items assigned to you, choose **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
@@ -61,7 +61,7 @@ You can also run a query by using the [Azure DevOps command line interface](#run
 
 1. Choose a folder within a breadcrumb to open a query folder.
 
-    ::: image type="content" source="media/view-run-queries/queries-breadcrumb-example.png" alt-text="Screenshot of queries breadcrumb example." :::
+    :::image type="content" source="media/view-run-queries/queries-breadcrumb-example.png" alt-text="Screenshot of queries breadcrumb example." :::
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ When you're working in the **Queries** pages, you can go to a folder, subfolder,
 
 ::: moniker range="azure-devops"
 
-::: image type="content" source="media/view-run-queries/query-navigation-new-boards-hubs.png" alt-text="Screenshot of queries page." :::
+:::image type="content" source="media/view-run-queries/query-navigation-new-boards-hubs.png" alt-text="Screenshot of queries page." :::
 
 ::: moniker-end
 
@@ -170,21 +170,21 @@ When you're working in the **Queries** pages, you can go to a folder, subfolder,
 
 As you make selections, the breadcrumbs are shown at the top of the page. You can navigate to a folder, subfolder, or query page.
 
-::: image type="content" source="../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png" alt-text="Screenshot of breadcrumbs on query page." :::
+:::image type="content" source="../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png" alt-text="Screenshot of breadcrumbs on query page." :::
 
 ::: moniker-end
 
 You can also select a favorite query or return to the **All** queries page from the drop-down menu of an open query.
 
-::: moniker range"< azure devops"
+::: moniker range="< azure devops"
 
-::: image type="content" source="../../project/navigation/media/breadcrumbs/query-bd-and-selector.png)" alt-text="Screenshot of query dropdown." :::
+:::image type="content" source="../../project/navigation/media/breadcrumbs/query-bd-and-selector.png)" alt-text="Screenshot of query dropdown." :::
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-::: image type="content" source="../../project/navigation/media/breadcrumbs/query-dropdown-new-boards-hubs.png" alt-text="Screenshot of query navigation dropdown." :::
+:::image type="content" source="../../project/navigation/media/breadcrumbs/query-dropdown-new-boards-hubs.png" alt-text="Screenshot of query navigation dropdown." :::
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ The **Work Items** page displays the same folder structure as defined in the web
 
 You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. For more information, see [Manage and organize queries](../queries/organize-queries.md)
 
-* * *
+---
 
 For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
 
@@ -226,13 +226,13 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 
 ::: moniker range="< azure-devops"
 
-::: image type="content" source="media/queries-all-filter.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
+:::image type="content" source="media/queries-all-filter.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-::: image type="content" source="media/view-run-queries/filter-queries-new-boards-hubs.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
+:::image type="content" source="media/view-run-queries/filter-queries-new-boards-hubs.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
 
 ::: moniker-end
 
@@ -248,7 +248,7 @@ From the **Query Editor** or **Results** view, you can email a formatted list of
 
 Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
 
-::: image type="content" source="media/view-run-queries/email-query-new-exp.png" alt-text="Screenshot of Choose Email query or Copy query URL." :::
+:::image type="content" source="media/view-run-queries/email-query-new-exp.png" alt-text="Screenshot of Choose Email query or Copy query URL." :::
 
 ::: moniker-end
 
@@ -256,7 +256,7 @@ Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border
 
 Choose the  more actions icon :::image type="icon" source="../media/icons/more-actions.png" border="false":::  to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
 
-::: image type="content" source="media/view-run-queries/email-query-new-boards-hubs.png" alt-text="Screenshot of Choose Email query or Copy query URL." :::
+:::image type="content" source="media/view-run-queries/email-query-new-boards-hubs.png" alt-text="Screenshot of Choose Email query or Copy query URL." :::
 
 ::: moniker-end
 
@@ -265,9 +265,6 @@ You can only send the email to individual address for a project member that the 
 > [!NOTE]  
 > To email a formatted list to people who aren't project members, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
-::: moniker-end
-
- 
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -278,7 +275,7 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 > [!NOTE]
 > This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
 
-* * * 
+---
 
 ## Next steps
 

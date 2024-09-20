@@ -25,6 +25,13 @@ By default, only members of the Project Administrators group can create and edit
 
 By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
 
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+
+::: moniker-end
+
 ## Prerequisites
 
 - To create or edit a shared query or manage permissions, you must be a member of the **Project Administrators** groups with **Basic** or higher access level. Or, you must have your **Contribute** permission set to **Allow** for the shared query folder. To get added to this group, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)

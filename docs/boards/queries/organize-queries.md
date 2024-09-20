@@ -20,9 +20,19 @@ ms.date: 02/02/2023
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer.
 
+::: moniker range="azure-devops-2019"
+
 > [!NOTE]  
 > To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. Also, you can perform bulk drag-and-drop of queries into query folders from Visual Studio but not from the web portal. 
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+
+::: moniker-end
  
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
