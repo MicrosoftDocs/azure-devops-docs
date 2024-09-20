@@ -36,9 +36,6 @@ Do the following tasks to set up a pipeline for a simple Android application.
 1. On the **Configure your pipeline** screen, select **Android**.
 1. Azure Pipelines provides a starter pipeline based on the [Android](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/android.yml) template. Review the pipeline code.
 1. Select **Save and run**.
-
-   :::image type="content" source="media/save-and-run-button-new-yaml-pipeline-android.png" alt-text="Screenshot of the Save and run button in a new Android YAML pipeline.":::
-
 1. Optionally, edit the **Commit message** and provide a description. Then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
 The build run page shows build details and progress. If you want to watch your pipeline in action, select **Job** on the lower part of the page.
@@ -60,7 +57,7 @@ The example task also assumes that your `gradlew` file is at the root of the rep
 The `workingDirectory` should be similar to the root of the repository, such as `AndroidApps/MyApp` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp`. The `gradleWrapperFile` path should be similar to the root of the repository, such as `AndroidApps/MyApp/gradlew` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp/gradlew`.
 
 ```yaml
-- task: Gradle@2
+- task: Gradle@3
   inputs:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
@@ -98,17 +95,17 @@ To install and run the Android emulator, add the [Bash](/azure/devops/pipelines/
 #!/usr/bin/env bash
 
 # Install AVD files
-echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-30;google_apis;x86'
 
 # Create emulator
-echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
+echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-30;google_apis;x86' --force
 
 $ANDROID_HOME/emulator/emulator -list-avds
 
 echo "Starting emulator"
 
 # Start emulator in background
-nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot -no-window -no-audio -no-boot-anim -accel off > /dev/null 2>&1 &
 $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
 
 $ANDROID_HOME/platform-tools/adb devices
