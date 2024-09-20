@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 009/21/2024
+ms.date: 09/21/2024
 ---
 
 
@@ -63,11 +63,11 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 	This example uses the name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
 
-    :::image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder selection.":::
+    :::image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder dialog.":::
 
 1. To set permissions for the folder you just added, choose the **More actions** icon :::image type="icon" source="../media/icons/more-actions.png" border="false"::: and select **Security**.
 
-    :::image type="content" source="media/permissions/select-query-security-new-boards-hubs.png" alt-text="Screenshot of Permissions dialog for a query folder.":::
+    :::image type="content" source="media/permissions/select-query-security-new-boards-hubs.png" alt-text="Screenshot of security selection for a query folder.":::
 
 1. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Enter the name of a user or group within the search box.   
 
@@ -107,7 +107,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
 
-    :::image type="content" source="media/permissions/service-delivery-folder-permissions-team-dialog.png)" alt-text="Screenshot of Permissions dialog for a query folder.":::
+    :::image type="content" source="media/permissions/service-delivery-folder-permissions-team-dialog.png" alt-text="Screenshot of Permissions dialog for a query folder.":::
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
@@ -169,7 +169,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="< azure-devops"
 
 1. Choose the **More actions** icon :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: and select **Security**.  
 

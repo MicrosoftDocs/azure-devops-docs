@@ -184,7 +184,7 @@ You can also select a favorite query or return to the **All** queries page from 
 
 ::: moniker range="azure-devops"
 
-::: image type="content" source="../../project/navigation/media/breadcrumbs/query-dropdown-new-boards-hubs.png") alt-text="Screenshot of query navigation dropdown." :::
+::: image type="content" source="../../project/navigation/media/breadcrumbs/query-dropdown-new-boards-hubs.png" alt-text="Screenshot of query navigation dropdown." :::
 
 ::: moniker-end
 
@@ -228,6 +228,7 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 
 ::: image type="content" source="media/queries-all-filter.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
 
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
