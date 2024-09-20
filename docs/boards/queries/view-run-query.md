@@ -61,7 +61,7 @@ You can also run a query by using the [Azure DevOps command line interface](#run
 
 1. Choose a folder within a breadcrumb to open a query folder.
 
-    :::image type="content" source="media/view-run-queries/queries-breadcrumb-example.png" alt-text="Screenshot of queries breadcrumb example." :::
+    :::image type="content" source="media/example-queries/queries-breadcrumb-example.png" alt-text="Screenshot of queries breadcrumb example." :::
 
 ::: moniker-end
 
@@ -176,7 +176,7 @@ As you make selections, the breadcrumbs are shown at the top of the page. You ca
 
 You can also select a favorite query or return to the **All** queries page from the drop-down menu of an open query.
 
-::: moniker range="< azure devops"
+::: moniker range="< azure-devops"
 
 :::image type="content" source="../../project/navigation/media/breadcrumbs/query-bd-and-selector.png)" alt-text="Screenshot of query dropdown." :::
 
