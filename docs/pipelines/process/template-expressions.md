@@ -245,6 +245,37 @@ steps:
   - script: echo "this is a test" # runs when foo=test
 ```
 
+You can also set variables based on the values of other variables. In the following pipeline, `myVar` is used to set the value of `conditionalVar`. 
+
+
+```yaml
+trigger:
+- main
+
+pool: 
+   vmImage: 'ubuntu-latest' 
+
+variables:
+  - name: myVar
+    value: 'baz'
+
+  - name: conditionalVar
+    ${{ if eq(variables['myVar'], 'foo') }}:
+      value: 'bar'
+    ${{ elseif eq(variables['myVar'], 'baz') }}:
+      value: 'qux'
+    ${{ else }}:
+      value: 'default'
+
+steps:
+- script: echo "start" # always runs
+- ${{ if eq(variables.conditionalVar, 'bar') }}:
+  - script: echo "the value of myVar is set in the if condition" # runs when myVar=foo
+- ${{ if eq(variables.conditionalVar, 'qux') }}:
+  - script: echo "the value of myVar is set in the elseif condition" # runs when myVar=baz
+```
+
+
 ### Iterative insertion
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
