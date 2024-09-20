@@ -5,4 +5,4 @@ ms.date: 9/25/2024
 ms.topic: include
 ---
 
-- [UI support of Git Submodules](#ui-support-of-git-submodules)
+- [New "Health and usage" panel in repo file hub ](#new-health-and-usage-panel-in-repo-file-hub)
