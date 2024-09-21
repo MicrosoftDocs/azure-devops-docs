@@ -95,7 +95,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query using macros or variables](../queries/about-managed-queries.md#macros) 
+      [Query using macros or variables](../queries/about-managed-queries.md#supported-macros) 
    :::column-end:::
    :::column span="1":::
       Use macros to create queries relative to a date, other tools, such as team area path, team iteration, and more.  

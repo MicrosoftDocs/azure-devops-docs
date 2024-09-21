@@ -7,7 +7,6 @@ ms.date: 01/14/2021
 ---
 
 
-### Supported macros 
 
 The following table summarizes the query macros or variables supported by the Azure DevOps versions. You can use some of these macros to filter notifications. 
 

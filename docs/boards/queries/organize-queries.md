@@ -222,7 +222,7 @@ All changes you make to your query folder structure in Visual Studio appear in t
 
 	:::image type="content" source="media/organize-queries/visual-studio-new-folder.png" alt-text="Screenshot of Visual Studio, open context menu and choose New Folder.":::
 
-	A **New Folder** is added under the area you selected. Select the folder to rename it. 
+	A **New Folder** is added under the area you selected. To rename a folder, select the folder.
 
 1. To move queries into a folder, drag-and-drop a query onto the folder. You can select multiple queries and drag them into a folder or from one folder into another folder.   
 
@@ -233,7 +233,7 @@ All changes you make to your query folder structure in Visual Studio appear in t
 
 To save a shared query as a team favorite, you must be a member of the team.
 
-You can add a shared query to team favorites.  Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+You can add a shared query to team favorites. Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared as team favorites if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
@@ -266,7 +266,7 @@ A query tile displays a count of the work items in a query. You can also quickly
 
 ::: moniker range="< azure-devops"
 
-1. To add a query to a dashboard from the **Queries** page, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query.
+1. To add a query to a dashboard from the **Queries** page, open the **More actions** menu :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) for the query.
 
 	:::image type="content" source="media/organize-queries/save-query-dashboard.png" alt-text="Screenshot of More actions menu, select Add to dashboard.":::
 
@@ -282,7 +282,7 @@ A query tile displays a count of the work items in a query. You can also quickly
 
 ::: moniker range="azure-devops"
 
-1. To add a query to a dashboard from the **Queries** page, open the  more actions meny:::image type="icon" source="../media/icons/more-actions.png" border="false"::: for the query.
+1. To add a query to a dashboard from the **Queries** page, open the **More actions** menu :::image type="icon" source="../media/icons/more-actions.png" border="false"::: for the query.
 
 	:::image type="content" source="media/organize-queries/save-query-dashboard-new-boards-hubs.png" alt-text="Screenshot of More actions menu, select Add to dashboard.":::
 

@@ -156,7 +156,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 #### [Browser](#tab/browser/) 
 
 
-The **Queries** page  a **Favorites** and an **All** tab. Each contains a directory-focused view that you can filter to find specific queries of interest. 
+The **Queries** page contains a **Favorites** and an **All** tab. Each contains a directory-focused view that you can filter to find specific queries of interest. 
 
 When you're working in the **Queries** pages, you can go to a folder, subfolder, or a query page.
 
