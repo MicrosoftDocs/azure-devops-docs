@@ -109,7 +109,7 @@ Start a new query from the **Queries** tab in the web portal or the **Work Items
 
 #### [Browser](#tab/browser/) 
 
-::: moniker range="< azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 Select **New query**.
 
@@ -171,9 +171,10 @@ To list work items defined in two or more projects, checkmark **Query across pro
 
 ::: moniker range="azure-devops"
 
-:::image type="content" source="media/using-queries/query-across-projects-new-boards-hubs.png" alt-text="Screenshot of Query Editor with Team Project and other fields added to filter.":::
+:::image type="content" source="media/using-queries/query-across-projects-new-boards-hubs.png" alt-text="Screenshot of Query across project selections.":::
 
 ::: moniker-end
+
 With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
 ::: moniker range="< azure-devops"

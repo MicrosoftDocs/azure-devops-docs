@@ -48,8 +48,6 @@ The following sections provide an overview of the functions supported to define 
 
 [!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
 
-[](#supported-macros)
-
 ### Supported macros 
 
 [!INCLUDE [temp](../includes/feature-matrix-query-macros.md)]
