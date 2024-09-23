@@ -47,7 +47,7 @@ You can pull data from Analytics into Power BI in three ways, described in the f
    Power BI can execute OData queries. OData queries are powerful and can filter and aggregate data before returning it to Power BI.
    :::column-end:::
    :::column span="2":::
-   **This is the recommended method**, except for simpler reports on Boards data. It requires you to write OData queries, which is similar to writing SQL queries. You can review several [sample reports](sample-odata-overview.md) to help you get started.
+   **We recommend this method**, except for simpler reports on Boards data. It requires you to write OData queries, which is similar to writing SQL queries. You can review several [sample reports](sample-odata-overview.md) to help you get started.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -55,7 +55,7 @@ You can pull data from Analytics into Power BI in three ways, described in the f
    [Connect using the Azure DevOps Data Connector](data-connector-connect.md)
    :::column-end:::
    :::column span="1":::
-   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md). To access **Analytics views**, you must enable the feature as described in [Enable preview features](../../project/navigation/preview-features.md)
+   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md). To access **Analytics views**, you must enable the feature as described in [Enable preview features](../../project/navigation/preview-features.md).
    :::column-end:::
    :::column span="2":::
    **This connector only works with Boards data (work items)**. It doesn't support other data types, such as Pipelines. It provides a flat-list of work items, and doesn't support work item hierarchies. There are no plans to update the connector to support other types of data. We recommend using OData queries unless you have a simpler report on Boards data.
@@ -104,7 +104,7 @@ For more information, see [Learn DAX basics in Power BI Desktop](/power-bi/trans
 
 ## Report visualizations, filters, sort operations
 
-Once you make any data transformations required for your report, use the **Visualizations** pane to craft changes in your repot. You can drag column fields onto the **Visualizations** pane. You can then use the **Filters** pane to filter all or select data based on one or more fields.
+After you make any data transformations required for your report, use the **Visualizations** pane to craft changes in your report. You can drag column fields onto the **Visualizations** pane. You can then use the **Filters** pane to filter all or select data based on one or more fields.
 
 To quickly get familiar with these Power BI basic features, see the following Power BI articles:
 
