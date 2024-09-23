@@ -32,7 +32,7 @@ You can create custom views in the web portal for Azure DevOps. Then load the vi
 
 From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
-:::image type="content" source="media/editable-views/directory-actions.png" alt-text="Screenshot shows the Analytics views page where you can see shared view.":::
+:::image type="content" source="media/editable-views/directory-actions.png" alt-text="Screenshot shows the Analytics views page where you can see shared view." lightbox="media/editable-views/directory-actions.png":::
 
 [!INCLUDE [differences per process](../includes/analytics-image-differences.md)]
 
@@ -59,7 +59,7 @@ Complete the following steps to create a custom view.
 
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
-:::image type="content" source="media/editable-views/general.png" alt-text="Screenshot shows the New View General tab where you can specify the Shared View option.":::
+:::image type="content" source="media/editable-views/general.png" alt-text="Screenshot shows the New View General tab where you can specify the Shared View option." lighbtbox="media/editable-views/general.png":::
 
 <a id="specify-wi-filters"></a>
 
@@ -67,7 +67,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data. For a description of each available field, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
 
-:::image type="content" source="media/editable-views/work-items-default.png" alt-text="Screenshot shows the New View Work items tab where you can specify Work items filters.":::
+:::image type="content" source="media/editable-views/work-items-default.png" alt-text="Screenshot shows the New View Work items tab where you can specify Work items filters." lightbox="media/editable-views/work-items-default.png":::
 
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
@@ -106,7 +106,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 In the next tab, **Fields**, you can add and remove fields that you use in your report. Choose :::image type="icon" source="../media/icons/blue-plus.png"::: **Add** to add a field. To start with a fresh list, choose **Remove All**.
 
-:::image type="content" source="media/analytics-views/fields-customize-no-common.png" alt-text="Screenshot shows the New View Fields tab where you can choose fields.":::
+:::image type="content" source="media/analytics-views/fields-customize-no-common.png" alt-text="Screenshot shows the New View Fields tab where you can choose fields." lightbox="media/analytics-views/fields-customize-no-common.png":::
 
 You can add any custom fields that you add through an inherited process.
 
@@ -121,7 +121,7 @@ In the next tab, **History**, choose the options that determine how much history
 
 In this example, if you have 10 work items and choose a rolling period of 14 days with a weekly granularity, your view contains 30 rows. If you refresh on Saturday, then you have a row on the last two Saturdays for each work item and a row for the most recent data on Saturday.
 
-:::image type="content" source="media/editable-views/history-example.png" alt-text="Screenshot shows the History tab, where you can select history and granularity options.":::
+:::image type="content" source="media/editable-views/history-example.png" alt-text="Screenshot shows the History tab, where you can select history and granularity options." lightbox="media/editable-views/history-example.png":::
 
 #### History
 
@@ -138,7 +138,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 
 To Exclude work items that were completed before a specific date, select the corresponding box under any of the options for history. It greatly reduces the amount of data loaded into Power BI and helps advanced calculations, like [time in state](create-timeinstate-report.md). For the **Rolling period** and **Date range**, the date to exclude work items gets set by the start of the period. For **Current only** and **All history**, you need to provide that date. For example, the following image excludes all work times that were completed before August 24, 2024.
 
-:::image type="content" source="media/editable-views/history-exclude.png" alt-text="Screenshot shows the History tab where you can exclude work items for a rolling period of 14 days.":::
+:::image type="content" source="media/editable-views/history-exclude.png" alt-text="Screenshot shows the History tab where you can exclude work items for a rolling period of 14 days." lightbox="media/editable-views/history-exclude.png":::
 
 #### Granularity
 
@@ -168,7 +168,7 @@ After your view successfully verifies, save it. You can then start using it in P
 
 If a view fails to verify successfully, you get an error explaining the issue and pointing to a possible fix. Try changing the definitions and verify the view again. When the view verifies successfully, you get an estimate of the row count included in your view.
 
-:::image type="content" source="media/editable-views/verify-success.png" alt-text="Screenshot shows the successful verification message, which includes an estimate of your row count.":::
+:::image type="content" source="media/editable-views/verify-success.png" alt-text="Screenshot shows the successful verification message, which includes an estimate of your row count." lightbox="media/editable-views/verify-success.png":::
 
 For example, if you try to filter by a field that is no longer defined for the project, you get an error. You can remove that field from the filters in the [Work Items filters](#specify-wi-filters) tab and verify again.
 
