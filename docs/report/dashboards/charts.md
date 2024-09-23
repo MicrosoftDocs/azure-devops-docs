@@ -43,7 +43,7 @@ For example, the following image illustrates two different charts created from t
 
 ## Prerequisites
 
-Prerequisites to meet include having **Basic** access or higher and to create a flat-list query. Only flat-list queries support charts.
+Prerequisites to meet include having **Basic** access or higher and creating a flat-list query. Only flat-list queries support charts.
 
 If you want to add the chart to a dashboard, save the query under the **Shared Queries** folder and create the dashboard where you want to add the chart.
 
@@ -214,7 +214,7 @@ The Pivot table displays a table of configurable rows and columns, with columns 
 
 The following image shows an example of work item types and their current state.  
 
-:::image type="content" source="media/charts/config-pivot-item-state.png" alt-text="Screenshot of Configure Chart dialog, Pivot table.":::
+:::image type="content" source="media/charts/configure-pivot-item-state.png" alt-text="Screenshot of Configure Chart dialog, Pivot table.":::
 
 ## Add a Trend chart
 
@@ -258,7 +258,7 @@ Only queries that are saved to a **Shared Queries** folder have the **Add to das
 
 In the dialog that opens, select the dashboard to add the chart to.
 
-:::image type="content" source="media/charts/select-dashboard-dialog.png" alt-text="Select a dashboard dialog":::  
+:::image type="content" source="media/charts/select-dashboard-dialog.png" alt-text="Screenshot shows the Select a dashboard dialog.":::  
 ::: moniker-end
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md).
