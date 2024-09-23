@@ -59,7 +59,7 @@ Complete the following steps to create a custom view.
 
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
-:::image type="content" source="media/editable-views/general.png" alt-text="Screenshot shows the New View General tab where you can specify the Shared View option." lighbtbox="media/editable-views/general.png":::
+:::image type="content" source="media/editable-views/general.png" alt-text="Screenshot shows the New View General tab where you can specify the Shared View option." lightbox="media/editable-views/general.png":::
 
 <a id="specify-wi-filters"></a>
 
@@ -131,7 +131,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 |------|---------|
 | **Current only** | Choose this option when you want a snapshot of work item status. Generates a single row per work item matching the work item's latest values in the Analytics data store. |
 | **Rolling period** | Choose this option and enter the number of days previous to the current day to include in the dataset. The sliding window changes each time you refresh your report. |
-| **Date range** | Choose this option and select a specific start and end date to include in the dataset, or check the to present checkbox to specify a rolling window with no fixed end date. When you select **to present**, the end date corresponds to the day the reports is refreshed. If you unselect it, the end date is always the date selected on the end date field. |
+| **Date range** | Choose this option and select a specific start and end date to include in the dataset, or select  **to present** to specify a rolling window with no fixed end date. When you select **to present**, the end date corresponds to the day the reports is refreshed. If you unselect it, the end date is always the date selected on the end date field. |
 | **All history** | Choose this option to include the complete history for all work items you selected in your filter criteria. If you have a significant history, specify a **Weekly** or **Monthly** granularity.|
 
 **Exclude work items that were completed before the start date** - Analytics stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view, if you select a rolling period of 14 days, your view includes the current revision for all work items that were closed before this period.
