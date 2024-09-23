@@ -13,7 +13,7 @@ ms.date: 07/27/2021
 
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
 
-::: iage type="content" source="../queries/media/view-run-queries/open-queries.png" alt-text="Screenshot of the queries page."::: 
+::: image type="content" source="../queries/media/view-run-queries/open-queries.png" alt-text="Screenshot of the queries page."::: 
 
 If it is your first time opening **Queries**, the page opens to **Favorites**. This page lists those queries that you have indicated are a favorite.  Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
