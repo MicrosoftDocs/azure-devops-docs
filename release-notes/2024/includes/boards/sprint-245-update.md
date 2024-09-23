@@ -20,9 +20,9 @@ We are excited to announce a set of REST API endpoints for customers who want to
 
 These endpoints include:
 
-* [Listing current connections](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP)
-* [Listing connected repositories](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/github-connections/get-github-connection-repositories?view=azure-devops-rest-7.2&tabs=HTTP)
-* [Adding and removing repositories](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/github-connections/update?view=azure-devops-rest-7.2&tabs=HTTP)
+* [Listing current connections](https://learn.microsoft.com/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP)
+* [Listing connected repositories](https://learn.microsoft.com/rest/api/azure/devops/wit/github-connections/get-github-connection-repositories?view=azure-devops-rest-7.2&tabs=HTTP)
+* [Adding and removing repositories](https://learn.microsoft.com/rest/api/azure/devops/wit/github-connections/update?view=azure-devops-rest-7.2&tabs=HTTP)
 
 We have also [provided sample code](https://github.com/danhellem/github-boards-connection-sample) to help you get started.
 
