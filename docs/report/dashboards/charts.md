@@ -17,7 +17,7 @@ ms.date: 09/20/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md#define-a-flat-list-query). Queries support different chart views, such as pie, column, pivot, or trend. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other system defined or custom field.
+You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md#define-a-flat-list-query). Queries support different chart views, such as pie, column, pivot, or trend. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other custom or system defined field.
 
 In this article you learn how to perform the following tasks:
 
@@ -79,7 +79,7 @@ When creating a query to support your chart, follow these guidelines.
 - Always select the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a flat-list query](../../boards/queries/using-queries.md#flat-list).
 - Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example:
 
-  - To group by Status, include the **State** field.
+  - To group by status, include the **State** field.
   - To group by work assignments, include the **Assigned To** field.
   - To group by sprints or iterations, include the **Iteration Path**.
   - To group by team, include the **Node Name** field that displays the leaf node of the Area Path.
@@ -94,7 +94,7 @@ When creating a query to support your chart, follow these guidelines.
   - Date-time, such as Created Date, Changed Date
   - Plain text, such as Title
   - Rich-text, such as Description, Repro Steps
-  - Tags (You can filter a query using tags, but you can't use tags to configure your chart)
+  - Tags
 
 > [!NOTE]
 > You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](configure-chart-work-items-widget.md).  
@@ -120,7 +120,7 @@ Charts display in browsers that support Scalable Vector Graphics (SVG). Supporte
 
 ::: moniker range=">= azure-devops-2020"
 > [!NOTE]
-> Internet Explorer is no longer supported for Azure DevOps Services, nor for Azure DevOps Server 2020.1.
+> Internet Explorer is no longer supported for Azure DevOps Services or for Azure DevOps Server 2020.1.
 
 ::: moniker-end
 
@@ -149,7 +149,7 @@ When a chart contains more than 8 or 12 items within the data series, values in 
 
 ## Create a query-based chart  
 
-1. From **Queries**, open the chart editor for a flat-list query. You must belong to the Contributors group to create charts.
+1. From **Queries**, open the chart editor for a flat-list query. To create charts, you must belong to the Contributors group.
 
    ::: moniker range=">= azure-devops-2019"
    :::image type="content" source="media/charts/new-chart-new-qe.png" alt-text="Screenshot of the Charts tab with the New chart button.":::
@@ -163,7 +163,7 @@ When a chart contains more than 8 or 12 items within the data series, values in 
    :::image type="content" source="media/charts/config-pie-chart-priority-qe.png" alt-text="Screenshot of pie chart configure dialog.":::  
    ::: moniker-end  
 
-   If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregation** options depend on the fields used in the query or the fields selected from the **Column Options**.  
+   If you don't see the field you want in the **Group by** dropdown list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregation** options depend on the fields used in the query or the fields selected from the **Column Options**.  
 
    If you receive an error message when you close the chart editor, you need to request Basic access. For more information, see [Change access levels](../../organizations/security/change-access-levels.md).
 
@@ -246,7 +246,7 @@ In addition to query-based burndown charts, you can [Configure a burndown or bur
 Add a chart to a dashboard is through the addition of a **Chart for Work Items** widget. You can add the chart to a dashboard as shown in the following procedure, or by adding the **Chart for Work Items** widget directly. For more information, see [Configure a chart for work items widget](configure-chart-work-items-widget.md).
 
 > [!TIP]
-> All query charts are limited in size. YOu can resize and configure charts that you add to a dashboard by opening the **Chart for Work Items** widget used to display them.
+> All query charts are limited in size. You can resize and configure charts that you add to a dashboard by opening the **Chart for Work Items** widget used to display them.
 
 - Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
 
