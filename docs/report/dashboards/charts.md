@@ -7,7 +7,7 @@ ms.subservice: azure-devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2024
 #customer intent: As an Azure Boards user, I want to create charts to track the status of work in progress.
