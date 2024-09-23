@@ -34,7 +34,7 @@ The following table summarizes the query filter functions supported by each Azur
       [Text string searches](../queries/titles-ids-descriptions.md) (single text, multi-line text, rich text) 
    :::column-end:::
    :::column span="4":::
-      Searches are not case sensitive.  
+      Searches aren't case sensitive.  
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -161,7 +161,7 @@ The following table summarizes the query filter functions supported by each Azur
       [In and Not In Group searches](../queries/planning-ranking-priorities.md) 
    :::column-end:::
    :::column span="1":::
-      Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
+      Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
    :::column-end:::
    :::column span="1":::
       All versions

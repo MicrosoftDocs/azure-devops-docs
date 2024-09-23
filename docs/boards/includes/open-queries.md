@@ -3,7 +3,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/27/2021
+ms.date: 09/25/2024
 ---
 
 #### [Browser](#tab/browser/)
@@ -11,11 +11,11 @@ ms.date: 07/27/2021
 
 ::: moniker range="< azure-devops"
 
-From your web browser, (1) check that you have selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
+From your web browser, (1) check that you selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
 
 ::: image type="content" source="../queries/media/view-run-queries/open-queries.png" alt-text="Screenshot of the queries page."::: 
 
-If it is your first time opening **Queries**, the page opens to **Favorites**. This page lists those queries that you have indicated are a favorite.  Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
+The **Queries** page opens to the **Favorites** tab that lists the queries you set as favorites. You can choose the **All** tab to view all queries you defined and shared queries for the project.  
 
 > [!TIP] 
 > Queries you or your team have chosen as favorites show up on the **Favorites** page. Favorite queries along with other objects also appear on your **Project** page. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
@@ -28,7 +28,7 @@ From your project, choose **Boards > Queries**, and then choose **All**.
 
 :::image type="content" source="../queries/media/view-run-queries/open-queries-new-boards-hubs.png" alt-text="Screenshot of the queries page.":::
 
-If it is your first time opening **Queries**, the page opens to **Favorites**. This page lists those queries that you have indicated are a favorite.  Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
+The **Queries** page opens to the **Favorites** tab that lists the queries you set as favorites. You can choose the **All** tab to view all queries you defined and shared queries for the project.  
 
 > [!TIP] 
 > Queries you or your team have chosen as favorites show up on the **Favorites** page. Favorite queries along with other objects also appear on your **Project** page. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
