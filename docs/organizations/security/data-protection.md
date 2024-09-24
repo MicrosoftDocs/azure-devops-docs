@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 08/27/2024
+ms.date: 09/13/2024
 monikerRange: 'azure-devops'
 ---
 # Data protection overview
@@ -82,9 +82,9 @@ Azure SQL Database includes standard backup features utilized by Azure DevOps. Y
 You can recover deleted organizations or projects within the 28-day window following deletion. But, once this time period elapses, these entities are permanently deleted and can't be restored. While these backups serve as a crucial component for disaster recovery, it's essential for customers to practice appropriate data management and backup strategies to ensure comprehensive protection of their data.
 
 >[!IMPORTANT]
-> *Accidental deletion* here refers to scenarios that arise as a result of an incident on our services. It doesn't include customers' accidental deletion of assets (for example, repositories, work items, attachments, or artifacts).
->
-> We don't support restoring assets that customers accidently delete. These backups are meant only for business continuity and to aid recovery from outage or disaster scenarios.
+> - *Accidental deletion* here refers to scenarios that arise as a result of an incident on our services. It doesn't include customers' accidental deletion of assets (for example, repositories, work items, attachments, or artifacts).
+> - We don't support restoring assets that customers accidentally delete. These backups are meant only for business continuity and to aid recovery from outage or disaster scenarios.
+> - In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
 
 ### Practice is critical
 
@@ -349,7 +349,7 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
 - [Data locations for Azure DevOps](data-location.md)
 - [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
-- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
+- [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Features and services included with Azure DevOps](../../user-guide/services.md)
 - [Azure Trust Center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

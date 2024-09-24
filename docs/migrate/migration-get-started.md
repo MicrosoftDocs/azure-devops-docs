@@ -88,7 +88,7 @@ In addition to the core features, the following value-added services are availab
 - Test Manager extensions: For comprehensive test management, consider using Test Manager extensions. These extensions enhance your testing capabilities by providing features like test case management, exploratory testing, and test execution tracking. 
 - More features: Azure DevOps offers various extensions and integrations that cater to specific needs. Whether it’s integrating with non-Microsoft tools, enhancing security, or automating deployment pipelines, there's a wide range of options. 
 
-Some of these services might come with extra costs, so it’s essential to evaluate your requirements and budget accordingly. These costs appear on your bill under the associated subscription. For more information, see [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md). If you have specific questions about your situation, contact your DevOps Partner, Microsoft Reseller, or your Microsoft Developer Solutions Sales Specialist for personalized guidance. 
+Some of these services might come with extra costs, so it’s essential to evaluate your requirements and budget accordingly. These costs appear on your bill under the associated subscription. For more information, see [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing). If you have specific questions about your situation, contact your DevOps Partner, Microsoft Reseller, or your Microsoft Developer Solutions Sales Specialist for personalized guidance. 
 
 ## Reserve your new organization 
 

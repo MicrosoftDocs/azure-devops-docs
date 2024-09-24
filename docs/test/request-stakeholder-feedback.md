@@ -21,8 +21,7 @@ monikerRange: '<= azure-devops'
 
 ## Request feedback from stakeholders
 
-> [!IMPORTANT]
-> The **Request feedback** shortcut menu is no longer available in the Azure DevOps service. However, there are alternative ways to request feedback, such as through email and chat, in addition to utilizing the [Test & Feedback extension](./voluntary-stakeholder-feedback.md).
+[!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
 
 Request feedback from stakeholders directly from an Azure DevOps work item. 
 

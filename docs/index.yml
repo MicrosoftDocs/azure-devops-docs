@@ -68,7 +68,7 @@ productDirectory:
         - url: ./boards/get-started/plan-track-work.md
           text: Plan & track work
         - url: ./boards/backlogs/office/bulk-add-modify-work-items-excel.md
-          text: Bulk add or modify work items
+          text: Add or modify work items in bulk
         - url: ./boards/index.yml
           text: See more >
     # Card
@@ -189,11 +189,11 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Configure & customize resources
-      items:    
-        # Card
-        - title: Settings & Usage
-          links:
+  - title: Configure & customize resources
+    items:    
+      # Card
+      - title: Settings & usage
+        links:
             - text: About settings
               url: ./organizations/settings/about-settings.md
             - text: Manage your project
@@ -214,9 +214,9 @@ additionalContent:
               url: ./organizations/audit/azure-devops-auditing.md
             - text: See more >
               url: ./organizations/index.yml 
-        # Card
-        - title: Security, Permissions, & Access 
-          links:
+      # Card
+      - title: Security, permissions, & access 
+        links:
             - text: About permissions, access, and security groups
               url: ./organizations/security/about-permissions.md
             - text: About access levels
@@ -233,9 +233,9 @@ additionalContent:
               url: ./organizations/accounts/organization-management.md
             - text: See more >
               url: ./organizations/security/index.yml 
-        # Card
-        - title: Cross-service, Azure, & GitHub Integration 
-          links:
+      # Card
+      - title: Cross-service, Azure, & GitHub integration 
+        links:
             - text: Cross-service integration overview 
               url: ./cross-service/cross-service-overview.md 
             - text: End-to-end traceability
@@ -250,9 +250,9 @@ additionalContent:
               url: ./boards/github/connect-to-github.md?toc=/azure/devops/cross-service/toc.json
             - text: See more >
               url: ./cross-service/index.yml
-          # Card
-        - title: Azure Boards Customization
-          links:
+      # Card
+      - title: Azure Boards customization
+        links:
             - text: Configure & customize Azure Boards
               url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json
             - text: Compare processes
@@ -269,10 +269,10 @@ additionalContent:
               url: ./reference/process-templates/index.md 
             - text: See more >
               url: ./reference/index.yml 
-    - title: Additional services
-      items:
+  - title: Other services
+    items:
         # Card
-        - title: Analytics & Reporting
+        - title: Analytics & reporting
           links:
             - text: Dashboards, charts, reports, & widgets
               url: ./report/dashboards/overview.md
@@ -287,7 +287,7 @@ additionalContent:
             - text: See more >
               url: ./report/index.yml
         # Card
-        - title: Wikis, Search, & Navigation
+        - title: Wiki, search, & navigation
           links:
             - text: Create a wiki for your project
               url: ./project/wiki/wiki-create-repo.md
@@ -322,9 +322,7 @@ additionalContent:
             - text: Git command reference
               url: ./repos/git/command-prompt.md 
             - text: Team Foundation version control commands
-              url: ./repos/tfvc/use-team-foundation-version-control-commands.md 
-            - text: Test case management (TCM) commands
-              url: ./test/test-case-managment-reference.md 
+              url: ./repos/tfvc/use-team-foundation-version-control-commands.md
             - text: Azure DevOps Services Demo Generator
               url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: REST APIs

@@ -71,8 +71,8 @@ With your organization, the following aspects are included in the free tier:
 ## Related articles
 
 * [Get started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
-* [Rename your organization](rename-organization.md)
+* [Rename an organization](rename-organization.md)
 * [Change organization time-zone](change-organization-location.md)
 * [Change organization owner](change-organization-ownership.md)
-* [Delete your organization](delete-your-organization.md)
+* [Delete an organization](delete-your-organization.md)
 * [Resolve orphaned organization](resolve-orphaned-organization.md)

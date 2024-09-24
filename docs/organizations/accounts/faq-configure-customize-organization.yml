@@ -305,7 +305,7 @@ sections:
       - question: |
           Q: How do I delete my organization?
         answer: |
-          A: See [Delete your organization](delete-your-organization.md), which includes prerequisites and helpful tips.
+          A: See [Delete your organization](delete-your-organization.md), which includes prerequisites, precautions, and helpful tips.
           
       - question: |
           Q: How do I restore my organization?

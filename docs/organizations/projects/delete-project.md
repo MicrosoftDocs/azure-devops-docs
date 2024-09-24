@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/05/2024
+ms.date: 09/13/2024
 ---
 
 # Delete a project
@@ -19,8 +19,9 @@ ms.date: 09/05/2024
 If a project becomes obsolete, you can [delete it](#delete-project) from your organization or collection in Azure DevOps. Likewise, if you're migrating from an on-premises Azure DevOps Server to Azure DevOps Services, it might be necessary to delete the project. The removal of projects can also enhance navigation by restricting it to only those projects that are currently in use.
 
 > [!CAUTION]
-> - When you soft-delete projects from the web portal, they're permanently removed if not restored within 28 days.
-> - When you hard-delete projects from the on-premises Azure DevOps Administration Console, you can't restore them.
+> - Soft-deleted projects from the web portal are permanently removed if not restored within 28 days.
+> - In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
+> - Hard-deleted projects from the on-premises Azure DevOps Administration Console cannot be restored.
 > For more information, see [Restore a project](#restore-a-deleted-project) and [Save project data](#save-project-data).
 
 ## Prerequisites

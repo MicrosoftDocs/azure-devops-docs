@@ -85,5 +85,5 @@ When your Azure DevOps Administrator in Microsoft Entra ID *isn't* a member of t
 
 - [Change the organization owner](change-organization-ownership.md)
 - [Review administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- [Delete your organization](delete-your-organization.md)
+- [Delete an organization](delete-your-organization.md)
 - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
