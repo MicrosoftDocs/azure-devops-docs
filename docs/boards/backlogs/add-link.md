@@ -41,7 +41,7 @@ Work item links are associations between two work items, or a work item and anot
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-In this article learn how to do the following tasks:  
+In this article, learn how to do the following tasks:  
 > [!div class="checklist"]    
 >- [Link work items to various objects](#link-work-items-to-various-objects)
 >- [Link work items to other work items](#link-work-items-to-other-work-items)
@@ -205,7 +205,6 @@ Organizations that use Microsoft Entra ID can link to work items that exist in d
 
 :::image type="content" source="media/add-link/link-tab-remote-links.png" alt-text="Screenshot of the User Story form, Link tab, showing two external links.":::
 
-::: moniker-end    
 Do the following steps to link work items to objects defined in other Azure DevOps organizations. You can only do so if both organizations use the same Microsoft Entra ID to manage users. 
 
 1. Choose from one of the following remote link types: 
@@ -290,7 +289,7 @@ Do the following steps to link work items to existing builds. These builds can b
 
 	To link to a build in a different project, first choose the **Project** whose build you want to link to.  
 
-	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**.  Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
+	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**. Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
 
 	:::image type="content" source="../../media/add-links/find-builds-dialog-filled-out.png" alt-text="Screenshot of Find builds dialog with project selected and builds listed.":::
 
@@ -307,7 +306,7 @@ You can link work items to existing builds from the **Add link** dialog.
 
 1. From the **Links** tab of a work item, choose **Add link** > **Existing item**. 
 
-2. From the **Add link** dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash; and specify the build number. 
+2. From the **Add link** dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash;and specify the build number. 
 
 	If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it by choosing the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: icon. 
 
@@ -315,7 +314,7 @@ You can link work items to existing builds from the **Add link** dialog.
  
 3. From the **Link builds** dialog, choose the parameters to filter your search of builds. 
 
-	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**.  Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
+	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**. Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
 
 	:::image type="content" source="media/add-link/find-builds-dialog-2020-and-previous-versions.png" alt-text="Screenshot of Find builds dialog, link to a build within your project.":::  
 
@@ -346,7 +345,7 @@ The link types used to construct these links&mdash;as illustrated in the followi
 > - Use the **Development** control, to [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
 
-As shown in the following image, the Deployment control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.
+As shown in the following image, the Deployment control displays release information for two release stages. It includes work items linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.
 
 :::image type="content" source="../work-items/media/deployments-control/releases-stages-1.png" alt-text="Screenshot of multiple environments that the release is targeting.":::
 
@@ -354,7 +353,12 @@ As shown in the following image, the Deployment control shows release informatio
 
 Work item forms provide two controls to show and quickly go to development objects. The Deployment control is described in this article, and the Development control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-The Deployment control appears by default on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types. It’s also automatically enabled for custom work item types that use the Inherited process. The Deployment control displays the release information for two stages of the release pipeline that's integrated with Azure Boards. This control only shows the work items that are linked to a Git commit or pull request for this pipeline. You can also gain visual insight into the status of a work item as it gets deployed to different release environments and quickly go to each release stage and run.
+
+By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types.
+
+Custom work item types that use the Inherited process is automated enabled. The Deployment control displays the release information for two stages of the release pipeline integrated with Azure Boards.
+
+This control only shows the work items that are linked to a Git commit or pull request for this pipeline. You can also gain visual insight into the status of a work item as it gets deployed to different release environments and quickly go to each release stage and run.
 
 :::image type="content" source="../work-items/media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Work item form, Deployment control.":::
 
@@ -448,7 +452,7 @@ Links prefaced with the :::image type="icon" source="../../media/icons/required-
 
 To filter items based on hierarchical links, use the **Tree of work items** query type. To filter items based on all link types, use **Work items and direct links**. 
 
-To find work items linked to other work items with specific link types, use a query that shows a primary and a secondary set of work items. The primary set meets the field criteria, and the secondary set is linked to the primary set. You can’t query for work items in releases, but you can query for work items with external links. Add more query filters to refine your search.
+To find work items linked to other work items with specific link types, use a query that shows a primary and a secondary set of work items. The primary set meets the field criteria, and the secondary set is linked to the primary set. You can’t query for work items in releases, but you can query for work items with external links. To refind your search, add more query filters.
 
 For query examples, see [Link and attachment queries](../queries/linking-attachments.md).
 
