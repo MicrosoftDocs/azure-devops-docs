@@ -1,5 +1,5 @@
 ---
-title: Add user stories & other work items to help manage your project
+title: Add and update a work item
 titleSuffix: Azure Boards 
 description: Add work items so you can plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Azure DevOps.  
 ms.custom: devx-track-azurecli
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: tutorial
-ms.date: 04/01/2022
+ms.date: 09/22/2024
 ---
 
 # Add and update a work item
@@ -20,7 +20,7 @@ You add work items to plan and manage your project. Different types of work item
 
 
 > [!NOTE]  
-> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
+> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash;is to use the backlog or board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -60,10 +60,6 @@ That's it!
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
 ::: moniker-end
-
-
-
-
 
 ### [Visual Studio 2019](#tab/visual-studio/)
 
@@ -114,8 +110,8 @@ The following image shows the workflow states for a user story. If you want to d
       **Typical workflow progression:**
       - The product owner creates a user story in the **New** state with the default reason, **New user story**   
       - The team updates the status to **Active** when they decide to complete the work during the sprint  
-      - A user story is moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass.  
-      - A user story is moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.  
+      - A user story is moved to **Resolved** when the team completes all its associated tasks and unit tests for the story pass.  
+      - A user story is moved to the **Closed** state when the product owner agrees that the story is implemented according to the Acceptance Criteria and acceptance tests pass.  
     
 **Atypical transitions**: 
       - Change the State from **Active** to **New**.  
@@ -177,6 +173,7 @@ az boards work-item update --id
 - **id**: Required. The ID of the work item.
 
 ### Optional parameters
+
 - **area**: Area the work item is assigned to (for example, **Demos**). 
 - **assigned-to**: Name of the person the work item is assigned-to (for example, **fabrikam**). 
 - **description**: Description of the work item. 
@@ -204,6 +201,7 @@ ID    Type    Title                Assigned To          State
 
 <a id="show-work-item"></a>  
 
+
 #### Add comments to a discussion
 
 Use the **discussion** parameter to add comments to the **Discussion** control of a work item. The following command adds the specified comment to the bug with the ID 864 and opens the bug in your default web browser, where you can view the comment.
@@ -211,6 +209,7 @@ Use the **discussion** parameter to add comments to the **Discussion** control o
 ```azurecli 
 az boards work-item update --id 864  --discussion  "This work item is about 50% complete" --open
 ```
+
 
 ### Show details for a work item
 
@@ -246,14 +245,22 @@ ID    Type    Title       Assigned To          State
 
 * * *
 
+### Add a link to a work item
+
+You can add links to work items to show relationships between the work item and other work items and objects. For example, you can link a bug to a user story to show that the bug is blocking the user story. You can also link work items to commits, pull requests, builds, and other objects.  
+
+You can set the link relationship to various types including **Parent**, **Child**, and **Duplicate**.  
+
+For more information, see [Link work items to objects](../backlogs/add-link.md).
+
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This action signals the system to notify you when changes are made to the work item.   
+When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: following icon. This action signals the system to notify you when changes are made to the work item.   
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](../work-items/media/follow-work/follow-work-item.png) 
 
-You'll only receive notifications when other project members modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
+You only receive notifications when other project members modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md).  
 
@@ -262,7 +269,7 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 ::: moniker range="< azure-devops"
 
 > [!IMPORTANT]
-> To support the follow feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.  
+> To support the **follow** feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.  
 
 ::: moniker-end
 
@@ -276,6 +283,6 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/about-work-items.md#work-item-form-controls).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../organizations/notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you add several work items, you can use other features to be [notified of changes](../../organizations/notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status, and trend charts](../../report/dashboards/charts.md), plus more.  
 
 For more clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json).
