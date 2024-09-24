@@ -67,6 +67,41 @@ The `organizationProfile` section has the following properties.
 | `permissionProfile` | Specify the permission granted to the Azure DevOps pool when it is created. This value can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 | `kind` | This value specifies the type of organization for the pool, and must be set to `Azure DevOps`. |
 
+#### [Azure CLI](#tab/azure-cli/)
+
+Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows an `organization-profile` object that is configured for all projects in the `fabrikam-tailspin` organization with `parallelism` set to `1`.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+      {
+          "url": "https://dev.azure.com/fabrikam-tailspin",
+          "projects": [],
+          "parallelism": 1
+      }
+    ]
+  }
+}
+```
+
+The `organizationProfile` section has the following properties.
+
+| Property | Description |
+|------|-------------|
+| `AzureDevOps` | This value is the name of the object defined in `organization-profile` and must be set to `Azure DevOps`. |
+| `organizations` | A list of the organizations that can use your pool. `url` specifies the URL of the organization, `projects` is a list of project names that can use the pool (an empty list supports all projects in the organization), and `parallelism` specifies the number of agents that can be used by this organization. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
+| `permissionProfile` | Specify the permission granted to the Azure DevOps pool when it is created. This value can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+
 * * *
 
 ### Use pool in multiple organizations
@@ -103,6 +138,38 @@ Add additional organizations to the organizations list to configure your pool fo
         "kind": "CreatorOnly"
     },
     "kind": "AzureDevOps"
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+Add additional organizations to the organizations list to configure your pool for use with multiple organizations. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organizations is limited to two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+        {
+            "url": "https://dev.azure.com/fabrikam-tailspin",
+            "projects": [],
+            "parallelism": 2
+        },
+        {
+            "url": "https://dev.azure.com/fabrikam-prime",
+            "projects": [ "fabrikam-dev", "fabrikam-test" ],
+            "parallelism": 2
+        }
+    ]
+  }
 }
 ```
 
@@ -146,6 +213,8 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
     ]
 }
 ```
+
+
 
 * * *
 
