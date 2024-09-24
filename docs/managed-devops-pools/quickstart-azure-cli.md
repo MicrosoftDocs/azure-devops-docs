@@ -56,24 +56,24 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 1. Run the following commands to generate the names for the resources in this quickstart. This example uses the `EastUS2` region. Replace `EastUS2` with your desired region.
 
-```bash
-export RANDOM_ID="$(openssl rand -hex 3)"
-export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
-export REGION=EastUS2
-export POOL_NAME="mdpPool$RANDOM_ID"
-export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
-export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
-```
+    ```bash
+    export RANDOM_ID="$(openssl rand -hex 3)"
+    export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
+    export REGION=EastUS2
+    export POOL_NAME="mdpPool$RANDOM_ID"
+    export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
+    export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
+    ```
 
 2. Run the following commands to review your resource names.
 
-```bash
-echo $RESOURCE_GROUP_NAME
-echo $POOL_NAME
-echo $DEV_CENTER_NAME
-echo $DEV_CENTER_PROJECT_NAME
-echo $REGION
-```
+    ```bash
+    echo $RESOURCE_GROUP_NAME
+    echo $POOL_NAME
+    echo $DEV_CENTER_NAME
+    echo $DEV_CENTER_PROJECT_NAME
+    echo $REGION
+    ```
 
 ## Create a resource group
 
