@@ -16,7 +16,7 @@ ms.date: 08/12/2024
   - You must have Basic access or greater.
   - You need [dashboard permissions](../dashboards/dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin.
 - **Feature enablement:**
-  - **Boards** must be enabled. If disabled, none of the work tracking Analytics widgets will display. To re-enable it, see [Turn a service on or off](../../organizations/settings/set-services.md).
+  - **Boards** must be enabled. If disabled, none of the work tracking Analytics widgets display. To re-enable it, see [Turn a service on or off](../../organizations/settings/set-services.md).
 - **Task awareness:**
   - Be aware of the required and recommended tasks, listed later in this article.
 
