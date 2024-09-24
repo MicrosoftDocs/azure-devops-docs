@@ -59,6 +59,7 @@ ms.date: 09/18/2024
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge attempted](#git.pullrequest.merge.attempted)
+  * [Pull request approved](#git.pullrequest.approved)
   * [Pull request updated](#git.pullrequest.updated)
   * [Pull request commented on](#git.pullrequest.commented-on)
   * [Repository created](#repository-created)
@@ -2150,7 +2151,7 @@ Event: A pull request merge is attempted in a Git repository.
 
 <a name="git.pullrequest.approved"></a>
 
-### Pull request merge approved
+### Pull request approved
 
 Event: A merge commit is approved on a pull request.
 
