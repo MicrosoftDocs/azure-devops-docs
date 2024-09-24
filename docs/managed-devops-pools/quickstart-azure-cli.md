@@ -149,9 +149,9 @@ echo $REGION
 
 The `mdp pool create` method has four parameters that take JSON values that configure different aspects of the pool.
 
-* `agent-profile` specifies whether the pool is stateful or stateless, and contains the standby agent schedule. It is a dictionary with a single key named either `Stateful` or `Stateless` that maps to
-* `fabric-profile` specifies the agent size, VM images, OS disk, and attached storage.
-* `organization-profile` specifies the Azure DevOps organizations and their projects that can use the pool
+* `agent-profile` specifies whether the pool is stateful or stateless, and contains the standby agent schedule. It is a dictionary with a single key named either `Stateful` or `Stateless`, depending on your desired agent configuration. For more information on `agent-profile` properties, see [Configure scaling](./configure-scaling.md?tabs=azure-cli).
+* `fabric-profile` specifies the agent size, VM images, OS disk, and attached storage. For more information on the `fabric-profile` properties, see [Configure pool settings](./configure-pool-settings.md?tabs=azure-cli) and [Configure additional storage](./configure-storage.md?tabs=azure-cli).
+* `organization-profile` specifies the Azure DevOps organizations and projects that can use the pool. For more information on `organization-profile` settings, see [Configure security settings = Configure organization access](./configure-security.md?tabs=azure-cli).
 
 Create the following three files and save them to the folder where you plan to run the Azure CLI commands to create the pool.
 
@@ -163,7 +163,7 @@ Create the following three files and save them to the folder where you plan to r
     }
     ```
 
-   This configuration specifies a [stateless agent](./configure-scaling.md#stateless-pools) for your pool.
+   This configuration specifies a [stateless agent](./configure-scaling.md?tabs=azure-cli#stateless-pools) for your pool.
 
 
 2. Create a file named **fabric-profile.json** with the following contents.
@@ -198,7 +198,7 @@ Create the following three files and save them to the folder where you plan to r
     }
     ```
 
-   This configuration specifices a pool using the **Standard_D2as_v5** image, the **ubuntu-22.04** [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md#os-disk-type) with no [attached data disk](./configure-storage.md).
+   This configuration specifices a pool using the **Standard_D2as_v5** image, the **ubuntu-22.04** [Azure Pipelines image](./configure-images.md?tabs=azure-cli#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md?tabs=azure-cli#os-disk-type) with no [attached data disk](./configure-storage.md?tabs=azure-cli).
 
 1. Create a file named **organization-profile.json** with the following contents. Replace `<organization-name>` with the name for your Azure DevOps organization.
 
@@ -219,7 +219,7 @@ Create the following three files and save them to the folder where you plan to r
     }
     ```
 
-   This configuration specifies a pool that is available to [all projects in your Azure DevOps organization](./configure-security.md#configure-organization-access).
+   This configuration specifies a pool that is available to [all projects in your Azure DevOps organization](./configure-security.md?tabs=azure-cli#configure-organization-access).
 
 
 ## Create the Managed DevOps Pool
