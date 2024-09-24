@@ -68,15 +68,16 @@ ms.date: 09/18/2024
   * [Repository renamed](#repository-renamed)
   * [Repository status changed](#repository-status-changed)
 
+* **Service Connections**
+  * [Service connection created](#service-connection-created)
+  * [Service connection updated](#service-connection-updated)
+
 * **Work items**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
-
-* [Service connection created](#service-connection-created)
-* [Service connection updated](#service-connection-updated)
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving Webhooks from Azure DevOps.
