@@ -2385,7 +2385,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
 Event: A pull request is commented on.
 
 * Publisher ID: `azure-devops`
-* Event ID: `git-pullrequest-comment-event`
+* Event ID: `ms.vss-code.git-pullrequest-comment-event`
 * Resource Name: `pullrequest`
 
 #### Settings
