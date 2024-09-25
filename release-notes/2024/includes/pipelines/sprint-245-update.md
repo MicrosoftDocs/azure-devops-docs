@@ -26,7 +26,7 @@ Please note, the ubuntu-latest image label will continue to point to ubuntu-22.0
 
 The Azure Pipelines agent v3 uses .NET 6 to run. As end-of-life of .NET 6 is approaching, we are upgrading the agent to use .NET 8. This change will roll out over the coming weeks.
 
-Customers using self-hosted agents on an operating system that is no longer supported by .NET 8 will not be upgraded to the v4 agent. Instead, pipelines running on an operating system that does not support .NET 8 will emit warnings in pipeline logs.
+Customers using self-hosted agents on an operating system that is no longer supported by .NET 8 will not be upgraded to the v4 agent. Instead, pipelines running on an operating system that does not support .NET 8 will emit warnings in pipeline logs. The [QueryAgentPoolsForCompatibleOS.ps1 script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) can be used to proactively find pipeline agents that are using an outdated operating system.
 
 The following operating system versions will not be supported by the updated v4 agent:
 
