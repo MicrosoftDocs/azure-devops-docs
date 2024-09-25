@@ -93,6 +93,21 @@ A team in Azure Boards is a group of project members who work in a specific prod
 
 Azure Boards integrates with popular chat tools such as [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) through ChatOps. It also offers extensions that add new capabilities to your projects and can be found in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). These extensions can help with planning and tracking work items, sprints, scrums, and other project management tasks, as well as collaboration among team members. 
 
+## New Azure Boards
+
+You may have noticed some changes in the user experience of Azure Boards. These updates are part of the new Azure Boards, designed to provide a faster interface, improve accessibility, and ensure consistency with other areas of the product.
+
+### What to Expect
+
+The core functionality of Azure Boards remains the same. It still contains the features you know and love such as Boards, Backlogs, Sprints, Queries, and Delivery Plans. However, the user experience has been refined to align with the rest of Azure DevOps. User interface changes include increased spacing between elements and strategically placed scroll bars to enhance accessibility.
+
+We understand that adjusting to changes can take time, and to ease the transition, we've also introduced some new features exclusive to the updated Azure Boards. You can see a full list of new features for New Boards in the [Azure DevOps release notes](../../../release-notes/features-timeline-released).
+
+### Provide feedback
+
+If you find some issues above and beyond spacing and cosmetic, please [provide your feedback](../../../docs/user-guide/provide-feedback) to our product team.
+
+
 ## Related articles
 
 - [Configure and customize Azure Boards](../configure-customize.md)
