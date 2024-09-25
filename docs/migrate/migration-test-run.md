@@ -370,10 +370,10 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 Following our Fabrikam example, the two SQL commands would look like the following example:
 
 ```sql
-ALTER DATABASE [Foo] SET RECOVERY SIMPLE;
+ALTER DATABASE [Fabrikam] SET RECOVERY SIMPLE;
 
 USE [Foo]
-CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'
+CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikampassword'
 CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
@@ -512,7 +512,7 @@ You can then contact Azure DevOps Services customer support for help with unders
 
 #### Detach your team project collection from Azure DevOps Server to prepare it for migration. 
 
-Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new TFS server or in this case, to Azure DevOps Services. 
+Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new server or in this case, to Azure DevOps Services. 
 
 Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection). 
 

@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/08/2024
+ms.date: 09/25/2024
 ---
 
 # What is Azure Boards?
@@ -92,6 +92,21 @@ A team in Azure Boards is a group of project members who work in a specific prod
 :::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" alt-text="Conceptual image of team tools":::   
 
 Azure Boards integrates with popular chat tools such as [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) through ChatOps. It also offers extensions that add new capabilities to your projects and can be found in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). These extensions can help with planning and tracking work items, sprints, scrums, and other project management tasks, as well as collaboration among team members. 
+
+## New Azure Boards
+
+You might notice some changes in the user experience of Azure Boards. These updates are part of the new Azure Boards, designed to provide a faster interface, improve accessibility, and ensure consistency with other areas of the product.
+
+### What to expect
+
+The core functionality of Azure Boards remains the same. It still contains the features you know and love such as Boards, Backlogs, Sprints, Queries, and Delivery Plans. However, the user experience is refined to align with the rest of Azure DevOps. User interface changes include increased spacing between elements and strategically placed scroll bars to enhance accessibility.
+
+We understand that adjusting to changes can take time, and to ease the transition, we also introduced some new features exclusive to the updated Azure Boards. You can see a full list of new features for New Boards in the [Azure DevOps release notes](https://learn.microsoft.com/azure/devops/release-notes/features-timeline-released).
+
+### Provide feedback
+
+If you find some issues above and beyond spacing and cosmetic, please [provide your feedback](../../../docs/user-guide/provide-feedback.md) to our product team.
+
 
 ## Related articles
 

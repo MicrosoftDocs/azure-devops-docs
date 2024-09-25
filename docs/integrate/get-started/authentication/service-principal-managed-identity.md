@@ -357,10 +357,10 @@ A helpful tip on how to get the access token from the Azure CLI to call git fetc
 git config -e
 ```
 
-1. Add the following lines, where the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`:
+1. Add the following lines, where the Azure DevOps resource's UUID is `00000000-0000-0000-0000-000000000000`:
 ```sh
 [credential]
-    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)\"; }; f" 
+    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource     00000000-0000-0000-0000-000000000000 --query accessToken -o tsv)\"; }; f" 
 ```
 
 1. Test that it works using: 

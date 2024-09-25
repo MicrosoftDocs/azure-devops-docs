@@ -224,7 +224,7 @@ See the following example of the SQL command:
     ALTER DATABASE [Foo] SET RECOVERY SIMPLE; 
      
     USE [Foo] 
-    CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!' 
+    CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikampassword' 
     CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo] 
     EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
