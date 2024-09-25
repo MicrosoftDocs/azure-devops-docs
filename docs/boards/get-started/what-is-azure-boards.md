@@ -101,7 +101,7 @@ You might notice some changes in the user experience of Azure Boards. These upda
 
 The core functionality of Azure Boards remains the same. It still contains the features you know and love such as Boards, Backlogs, Sprints, Queries, and Delivery Plans. However, the user experience is refined to align with the rest of Azure DevOps. User interface changes include increased spacing between elements and strategically placed scroll bars to enhance accessibility.
 
-We understand that adjusting to changes can take time, and to ease the transition, we also introduced some new features exclusive to the updated Azure Boards. You can see a full list of new features for New Boards in the [Azure DevOps release notes](../../../release-notes/features-timeline.md), and select **Release features**.
+We understand that adjusting to changes can take time, and to ease the transition, we also introduced some new features exclusive to the updated Azure Boards. You can see a full list of new features for New Boards in the [Azure DevOps release notes](https://learn.microsoft.com/azure/devops/release-notes/features-timeline-released).
 
 ### Provide feedback
 
