@@ -725,6 +725,8 @@ The `strategy` keyword is used to define the deployment strategy. The `runOnce` 
         steps:
 ```
 
+::: moniker range="azure-devops"
+
 The `steps` in the pipeline are:
 
 1. Use the [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task to specify the version of Python to use on the agent. The version is defined in the `pythonVersion` variable.
@@ -737,8 +739,6 @@ The `steps` in the pipeline are:
    ```
 
 1. Deploy the web app using the [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1). This task deploys the pipeline artifact `drop` to your web app.
-
-    ::: moniker range=">=azure-devops"
 
    ```yml
    - task: AzureWebApp@1
@@ -844,9 +844,39 @@ stages:
 ```
 
 
-    ::: moniker-end
+::: moniker-end
 
-    ::: moniker range="< azure-devops"
+::: moniker range="< azure-devops"
+
+The `steps` in the pipeline are:
+
+1. Use the [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task to specify the version of Python to use on the agent. The version is defined in the `pythonVersion` variable.
+
+   ```yml
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python version'
+   ```
+
+1. Deploy the web app using the [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1). This task deploys the pipeline artifact `drop` to your web app.
+
+   ```yml
+   - task: AzureWebApp@1
+      displayName: 'Deploy Azure Web App : <your-web-app-name>'
+      inputs:
+         azureSubscription: $(azureServiceConnectionId)
+         appName: $(webAppName)
+         package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+    ```
+
+   |**Parameter**|**Description**|
+   |--|---|
+   |`azureSubscription`|The Azure Resource Manager service connection ID or name to use.|
+   |`appName`|The name of the web app.|
+   |`package`|The location of the *.zip* file to deploy.|
+
+    Also, because the *python-vscode-flask-tutorial* repository contains the same startup command in a file named *startup.txt*, you can specify that file by adding the parameter: `startUpCommand: 'startup.txt'`.
 
     ```yml
       - task: AzureWebApp@1
@@ -856,7 +886,7 @@ stages:
            appName: $(webAppName)
            package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
            startUpCommand: 'startup.txt'
-   ```
+    ```
 
    |**Parameter**|**Description**|
    |--|---|
