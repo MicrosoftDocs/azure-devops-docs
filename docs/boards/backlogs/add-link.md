@@ -353,12 +353,11 @@ As shown in the following image, the Deployment control displays release informa
 
 Work item forms provide two controls to show and quickly go to development objects. The Deployment control is described in this article, and the Development control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-
 By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types.
 
-Custom work item types that use the Inherited process is automated enabled. The Deployment control displays the release information for two stages of the release pipeline integrated with Azure Boards.
+Custom work item types that use the Inherited process are automatically enabled. The Deployment control shows the release information for two stages of the release pipeline integrated with Azure Boards.
 
-This control only shows the work items that are linked to a Git commit or pull request for this pipeline. You can also gain visual insight into the status of a work item as it gets deployed to different release environments and quickly go to each release stage and run.
+This control only shows the work items that are linked to a Git commit or pull request for this pipeline. You can also gain visual insight into the status of a work item as it is deployed to different release environments and quickly go to each release stage and run.
 
 :::image type="content" source="../work-items/media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Work item form, Deployment control.":::
 
@@ -376,11 +375,13 @@ To populate the **Deployment** control, do the following steps:
 > The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline. 
 
 1. Define a Classic release pipeline and set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).  
-2. Configure the pipeline as described in [Configure pipelines to support work tracking, Report deployment status to Boards](../../pipelines/integrations/configure-pipelines-work-tracking.md#classic-report-boards).   
-3. Link work items to a commit or pull request in Azure Repos Git repository. For more information, see: 
-	-  [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)  
-	-  [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
-4.  Run the pipeline.
+1. Configure the pipeline as described in [Configure pipelines to support work tracking, Report deployment status to Boards](../../pipelines/integrations/configure-pipelines-work-tracking.md#classic-report-boards).   
+1. Link work items to a commit or pull request in Azure Repos Git repository. For more information, see: 
+
+    - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)  
+    - [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
+
+1. Run the pipeline.
 
 <!--- 
 ### Unsupported scenarios 

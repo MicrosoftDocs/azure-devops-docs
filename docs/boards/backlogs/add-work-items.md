@@ -95,7 +95,7 @@ As work progresses, team members can update the state and reassign it as needed.
 #### [Browser](#tab/browser/)
 
 > [!div class="mx-imgBorder"]  
-> ![Update the State of a User Story](media/add-work/update-state.png)   
+> ![Screenshot of updating the State of a User Story](media/add-work/update-state.png)   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -122,7 +122,7 @@ The following image shows the workflow states for a user story. If you want to d
       - Change the State from **Removed** to **New**.  
    :::column-end:::
    :::column span="2":::
-      ![User story workflow, Agile process](../work-items/guidance/media/alm_pt_agile_wf_userstory.png)  
+      ![Screenshot of User story workflow, Agile process](../work-items/guidance/media/alm_pt_agile_wf_userstory.png)  
    :::column-end:::
 :::row-end:::
 
@@ -130,7 +130,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, changes are recorded in the History field, which you can view through the **History** tab.  
 
-![View change history](media/add-work-item-history.png)  
+![Screenshot of View change history](media/add-work-item-history.png)  
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).  
 
@@ -273,7 +273,7 @@ You only receive notifications when other project members modify the work item, 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md).  
 
-To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
+To stop following changes, select the **Following** :::image type="icon" source="../media/icons/following-icon.png" border="false"::: button.
 
 ::: moniker range="< azure-devops"
 
