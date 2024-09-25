@@ -38,7 +38,7 @@ You can start adding work items once you connect to a project.
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
-> ![Work, add artifact](../../project/navigation/media/add-artifact/add-work-item-query-vert.png)
+> ![Screenshot of Work, add artifact](../../project/navigation/media/add-artifact/add-work-item-query-vert.png)
 
 
 > [!NOTE]
@@ -49,7 +49,7 @@ or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items 
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-![Agile process, User story work item form](media/add-new-work-item-vsts-user-story.png)  
+![Screenshot of Agile process, User story work item form.](media/add-new-work-item-vsts-user-story.png)  
 
 You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
@@ -66,17 +66,17 @@ Create as many work items as you need of the type you need to track the work you
 1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Visual Studio, Team Explorer, Choose Work Items](../work-items/media/view-add/open-work-items-vs-te-complete.png) 
+    > ![Screenshot of choose work items in Visual Studio Team Explorer.](../work-items/media/view-add/open-work-items-vs-te-complete.png) 
 
     If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Connect to a Project dialog, connect to a Project and Git repository](../work-items/media/view-add/connect-to-a-project-and-github.png)
+    > ![Screenshot of connect to a project and Git repository in Visual Studio.](../work-items/media/view-add/connect-to-a-project-and-github.png)
 
 1. Choose **New Work Item** and select the work item type you want. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Work Items, Add User Story](../work-items/media/view-add/add-user-story-vs-te.png)
+    > ![Screenshot of User story selection in New work item dialog in Visual Studio.](../work-items/media/view-add/add-user-story-vs-te.png)
 
     When you work within Visual Studio 2017 or later version, a browser window opens with the work item form to complete. If you work within Visual Studio 2015 or earlier version, a work item form opens within Visual Studio. 
 
@@ -255,10 +255,19 @@ For more information, see [Link work items to objects](../backlogs/add-link.md).
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: following icon. This action signals the system to notify you when changes are made to the work item.   
+When you want to track the progress of a single work item, select **Follow**. This action signals the system to notify you when changes are made to the work item.
 
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](../work-items/media/follow-work/follow-work-item.png) 
+::: moniker range="< azure-devops"
+
+::: image type="content" source="../work-items/media/follow-work/follow-work-item.png" alt-text="Screenshot of work item follow button." :::
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+::: image type="content" source="../work-items/media/follow-work/follow-work-item-new-boards-hubs.png" alt-text="Screenshot of work item follow button." :::
+
+::: moniker-end
 
 You only receive notifications when other project members modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
