@@ -7,9 +7,9 @@ description: Enhanced AB# link tracking in GitHub pull requests
 ---
 # Enhanced AB# link tracking in GitHub pull requests
 
-With this update, AB# links now appear directly in the Development section of your GitHub pull requests, provided they are included in the pull request description. This enhancement makes it easier than ever to access linked work items through the Azure Boards + GitHub integration.
+With this update, AB# links now appear directly in the Development section of your GitHub pull requests, provided they are included in the pull request description. This enhancement makes it easier to access linked work items through the Azure Boards + GitHub integration.
 
-We’re also excited to introduce new REST API endpoints in Azure Repos that simplify GitHub repository management. The connection limit has been increased to 2,000 repositories, offering greater flexibility for larger projects.
+We’re also excited to introduce enhanced monitoring tools that provide greater visibility into your repository’s health, helping you efficiently maintain its performance.
 
 Check out the release notes for details.
 
