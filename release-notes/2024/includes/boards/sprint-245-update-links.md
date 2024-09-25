@@ -6,5 +6,5 @@ ms.topic: include
 ---
 
 - [AB# links on GitHub pull requests](#ab-links-on-github-pull-requests)
-- [REST API Support for Connecting GitHub Repositories](#rest-api-support-for-connecting-github-repositories)
+- [REST API support for connecting GitHub repositories](#rest-api-support-for-connecting-github-repositories)
 - [Permanently delete attachments](#permanently-delete-attachments)
