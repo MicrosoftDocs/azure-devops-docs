@@ -7,11 +7,15 @@ description: Enhanced AB# link tracking in GitHub pull requests
 ---
 # Enhanced AB# link tracking in GitHub pull requests
 
-With this update, AB# links now appear directly in the Development section of your GitHub pull requests, provided they are included in the pull request description. This enhancement makes it easier to access linked work items through the Azure Boards + GitHub integration.
+With this update, AB# links now appear directly in the Development section of GitHub pull requests, as long as they are included in the pull request description. This enhancement simplifies access to linked work items through the Azure Boards and GitHub integration.
 
-We’re also excited to introduce enhanced monitoring tools that provide greater visibility into your repository’s health, helping you efficiently maintain its performance.
+We’re also excited to introduce enhanced monitoring tools, offering greater visibility into your repository’s health and helping you maintain its performance more efficiently!
 
 Check out the release notes for details.
+
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-245-update-links](includes/ghazdo/sprint-245-update-links.md)]
 
 ### Azure Boards:
 
@@ -28,6 +32,10 @@ Check out the release notes for details.
 ### Azure Test Plans:
 
 [!INCLUDE [sprint-245-update-links](includes/testplans/sprint-245-update-links.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-245-update](includes/ghazdo/sprint-245-update.md)]
 
 ## Azure Boards
 

@@ -16,7 +16,7 @@ These links will only appear when AB# is included in the pull request descriptio
 
 ### REST API support for connecting GitHub repositories
 
-We are excited to announce a set of REST API endpoints for customers who want to automate the addition and removal of GitHub repositories for an Azure DevOps project. Additionally, we have raised the limit from 500 to 2,000 repositories per connection when using these REST endpoints.
+We're introducing new REST API endpoints that enable you to automate the addition and removal of GitHub repositories in your Azure DevOps projects. Additionally, we’ve raised the repository limit per connection from 500 to 2,000 when using these endpoints.
 
 These endpoints include:
 

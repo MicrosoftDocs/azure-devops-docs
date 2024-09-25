@@ -38,9 +38,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="9"><a href="2024/sprint-245-update.md" data-raw-source="[25 September 2024](2024/sprint-245-update.md)"> 25 September 2024</a></td>
+    <td rowspan="12"><a href="2024/sprint-245-update.md" data-raw-source="[25 September 2024](2024/sprint-245-update.md)"> 25 September 2024</a></td>
+    <td>Pull request branches appear in Advanced Security branch picker </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Repository default branch changes now reflected in Advanced Security </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td> Pull request annotations feature in public preview </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>AB# links on GitHub pull requests</td><td>Boards</td><td>N/A</td></tr>
-    <td>REST API Support for Connecting GitHub Repositories</td><td>Boards</td><td>N/A</td></tr>
+    <td>REST API support for connecting GitHub repositories</td><td>Boards</td><td>N/A</td></tr>
     <td>Permanently delete attachments</td><td>Boards</td><td>Future</td></tr>
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
     <td>Pipeline Agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>

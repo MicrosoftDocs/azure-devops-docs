@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Seamless Build Pipeline Integration for Test Case Execution
 
-We're excited to introduce a new feature that streamlines the test case execution process by seamlessly integrating build pipeline configurations. With this update, build definitions and IDs set at the test plan level will now automatically propagate to the Web Runner, eliminating the need for manual configuration each time you execute test cases. This enhancement not only saves your time but also improves overall testing efficiency, allowing testers to focus on more critical tasks. Check our new feature and ensure that all relevant build pipelines are readily available! 
+We’ve simplified the test case execution process by seamlessly integrating build pipeline configurations. Build definitions and IDs set at the test plan level now automatically propagate to the Web Runner, eliminating the need for manual configuration each time. This improvement saves time and enhances efficiency, allowing you to focus on more critical tasks. 
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Pipeline Integration for Test Case Execution.](../../media/245-testplans-01.gif "gif to Pipeline Integration for Test Case Execution")

@@ -7,11 +7,11 @@ ms.topic: include
 
 ###  New "Health and usage" panel in repo file hub 
 
-As your Git repositories grow over time, they can accumulate a large number of commits, blobs, and other data. Frequent Git operations on these repositories, especially as they increase in size, can place additional load on Azure DevOps infrastructure, potentially affecting performance and user experience.
+As Git repositories grow, they accumulate commits, blobs, and other data, which can increase the load on Azure DevOps infrastructure, impacting performance and user experience. Maintaining a healthy repository is key to ensuring consistent performance and reliability.
 
-Ensuring the health of your repository is essential for maintaining optimal performance and reliability. To support this, we now monitor several factors that influence repository health, including size, commit frequency, contents, and structure. If your repository begins to significantly impact infrastructure, you may receive a notification from our support team with recommendations for corrective action. By managing your repository’s size and health, you can help avoid disruptions and maintain smooth operations.
+To support this, we now monitor several factors like repository size, commit frequency, contents, and structure. If your repository begins to strain the infrastructure, you may receive a notification with recommendations for corrective action. By managing your repository’s health, you can prevent disruptions and ensure smooth operations.
 
-To check the health of your repository, navigate to the Azure Repos Git repo, select Repo > Files, and choose “Health and usage” from the ellipsis menu to open the Repository health and usage panel.
+To check your repository’s health, go to Azure Repos Git, select Repo > Files, and choose “Health and usage” from the ellipsis menu to access the Repository health and usage panel.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Health and usage.](../../media/245-repos-01.png "Screenshot of Health and usage")
