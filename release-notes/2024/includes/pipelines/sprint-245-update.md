@@ -5,23 +5,6 @@ ms.date: 9/25/2024
 ms.topic: include
 ---
 
-### Ubuntu 24.04 on Azure Pipelines Hosted agents
-
-The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'ubuntu-24.04'`:  
-
-```yaml
-- job: ubuntu2404
-  pool:
-    vmImage: 'ubuntu-24.04'
-  steps:
-  - bash: |
-      echo Hello from Ubuntu 24.04 Preview
-      lsb_release -d
-```
-
-Please note, the ubuntu-latest image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
-
-
 ### Pipeline Agent v4 runs on .NET 8
 
 The Azure Pipelines agent v3 uses .NET 6 to run. As end-of-life of .NET 6 is approaching, we are upgrading the agent to use .NET 8. This change will roll out over the coming weeks.

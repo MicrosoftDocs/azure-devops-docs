@@ -38,12 +38,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="10"><a href="2024/sprint-245-update.md" data-raw-source="[25 September 2024](2024/sprint-245-update.md)"> 25 September 2024</a></td>
+    <td rowspan="9"><a href="2024/sprint-245-update.md" data-raw-source="[25 September 2024](2024/sprint-245-update.md)"> 25 September 2024</a></td>
     <td>AB# links on GitHub pull requests</td><td>Boards</td><td>N/A</td></tr>
     <td>REST API Support for Connecting GitHub Repositories</td><td>Boards</td><td>N/A</td></tr>
     <td>Permanently delete attachments</td><td>Boards</td><td>Future</td></tr>
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
-    <td>Ubuntu 24.04 on Azure Pipelines Hosted agents</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pipeline Agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
     <td>Newly created Azure Service Connections create App registrations with new naming convention</td><td>Pipelines</td><td>Future</td></tr>
