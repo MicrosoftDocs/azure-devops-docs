@@ -14,7 +14,7 @@ As part of our ongoing enhancements to the Azure Boards + GitHub integration, we
 
 These links will only appear when AB# is included in the pull request description. If you link directly from a work item, they won’t be displayed in the Development section. Additionally, removing the AB# link from the description will remove it from the Development control.
 
-### REST API Support for Connecting GitHub Repositories
+### REST API support for connecting GitHub repositories
 
 We are excited to announce a set of REST API endpoints for customers who want to automate the addition and removal of GitHub repositories for an Azure DevOps project. Additionally, we have raised the limit from 500 to 2,000 repositories per connection when using these REST endpoints.
 
