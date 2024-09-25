@@ -47,7 +47,7 @@ Shell tasks such as [Bash@3](https://learn.microsoft.com/azure/devops/pipelines/
 
 Enabling shell tasks arguments validation can break existing scripts as input is rejected by input validation. For example, some characters are considered a command separator and rejected when this setting is enabled.
 
-To help customers to identify what would happen it this setting is enabled, we not introduce a preview option. When preview is enabled, warnings will be shown in pipeline and audit logs. However, tasks will not fail.
+To make this transition smoother, we’ve added a preview mode. With preview mode enabled, you’ll receive warnings in your pipeline and audit logs, giving you visibility into potential issues without interrupting your tasks or workflows.
 
 Go to Organization Settings > Settings > Task restrictions or Project Settings > General to enable auditing:
 
