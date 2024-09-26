@@ -187,6 +187,8 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
 
+::: moniker range="azure-devops"
+
 # [npm](#tab/npmrestore)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
@@ -195,10 +197,10 @@ Remove the *node_modules* folder from your project and run the following command
 npm install --force
 ```
 
+Your feed now should have a saved copy of any packages you installed from upstream.
+
 > [!NOTE]
 > The `--force` argument will force pull remotes even if a local copy exists. 
-
-Your feed now should have a saved copy of any packages you installed from upstream.
 
 # [NuGet](#tab/nugetrestore)
 
@@ -216,9 +218,19 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Pip](#tab/piprestore)
+# [dotnet](#tab/dotnet)
 
-Run this command in your project directory:
+Run the following command in your project directory:
+
+```Command
+dotnet restore --interactive
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Python](#tab/python)
+
+Run the following command in your project directory:
 
 ```Command
 pip install
@@ -228,7 +240,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 # [Maven](#tab/mavenrestore)
 
-Run this command in your project directory:
+Run the following command in your project directory:
 
 ```Command
 mvn install
@@ -238,7 +250,92 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 # [Gradle](#tab/gradlerestore)
 
-Run this command in your project directory:
+Run the following command in your project directory:
+
+```Command
+gradle build
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Cargo](#tab/cargorestore)
+
+Run the following command in your project directory:
+
+```Command
+cargo build
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+- - -
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020 < azure-devops"
+
+# [npm](#tab/npmserver)
+
+Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
+
+```Command
+npm install --force
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+> [!NOTE]
+> The `--force` argument will force pull remotes even if a local copy exists. 
+
+# [NuGet](#tab/nugeserver)
+
+1. Clear your local cache:
+
+    ```Command
+    nuget locals -clear all
+    ```
+
+1. Restore your NuGet packages:
+
+    ```Command
+    nuget.exe restore
+    ```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [dotnet](#tab/dotnetserver)
+
+Run the following command in your project directory:
+
+```Command
+dotnet restore --interactive
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Python](#tab/pythonserver)
+
+Run the following command in your project directory:
+
+```Command
+pip install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Maven](#tab/mavenserver)
+
+Run the following command in your project directory:
+
+```Command
+mvn install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Gradle](#tab/gradleserver)
+
+Run the following command in your project directory:
 
 ```Command
 gradle build
@@ -247,6 +344,73 @@ gradle build
 Your feed now should have a saved copy of any packages you installed from upstream.
 
 - - -
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+# [npm](#tab/npmserver19)
+
+Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
+
+```Command
+npm install --force
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+> [!NOTE]
+> The `--force` argument will force pull remotes even if a local copy exists. 
+
+# [NuGet](#tab/nugetserver19)
+
+1. Clear your local cache:
+
+    ```Command
+    nuget locals -clear all
+    ```
+
+1. Restore your NuGet packages:
+
+    ```Command
+    nuget.exe restore
+    ```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Python](#tab/pythonserver19)
+
+Run the following command in your project directory:
+
+```Command
+pip install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Maven](#tab/mavenserver19)
+
+Run the following command in your project directory:
+
+```Command
+mvn install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Gradle](#tab/gradleserver19)
+
+Run the following command in your project directory:
+
+```Command
+gradle build
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+- - -
+
+::: moniker-end
 
 ## Related articles
 
