@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 9/25/2024
+ms.date: 9/26/2024
 ms.topic: include
 ---
 
@@ -20,9 +20,9 @@ We're introducing new REST API endpoints that enable you to automate the additio
 
 These endpoints include:
 
-* [Listing current connections](https://learn.microsoft.com/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP)
-* [Listing connected repositories](https://learn.microsoft.com/rest/api/azure/devops/wit/github-connections/get-github-connection-repositories?view=azure-devops-rest-7.2&tabs=HTTP)
-* [Adding and removing repositories](https://learn.microsoft.com/rest/api/azure/devops/wit/github-connections/update?view=azure-devops-rest-7.2&tabs=HTTP)
+* [Listing current connections](/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP)
+* [Listing connected repositories](/api/azure/devops/wit/github-connections/get-github-connection-repositories?view=azure-devops-rest-7.2&tabs=HTTP)
+* [Adding and removing repositories](/api/azure/devops/wit/github-connections/update?view=azure-devops-rest-7.2&tabs=HTTP)
 
 We have also [provided sample code](https://github.com/danhellem/github-boards-connection-sample) to help you get started.
 
