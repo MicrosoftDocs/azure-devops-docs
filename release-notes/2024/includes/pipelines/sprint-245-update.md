@@ -38,6 +38,6 @@ Go to Organization Settings > Settings > Task restrictions or Project Settings >
 > [!div class="mx-imgBorder"]
 > ![Screenshot of general to enable auditing.](../../media/245-pipelines-01.png "Screenshot of general to enable auditing")
 
-### Newly created Azure Service Connections create App registrations with new naming convention
+### Revised Naming Convention for Azure Service Connections and App Registrations
 
-Currently, a Service Connection is named `<azure devops org>-<azure devops project>-<azure subscription id>`. This makes it difficult to correlate App registrations with service connections that target the same Azure subscription. To make it easy to distinguish App registrations, the name of the app registration includes the name of the service connection: `<azure devops org>-<azure devops project>-<service connection name>`.
+Previously, service connections were named using the format:`<azure devops org>-<azure devops project>-<azure subscription id>`. This made it challenging to correlate app registrations with corresponding service connections targeting the same Azure subscription. To improve clarity, app registration names now include the service connection name, following this format: `<azure devops org>-<azure devops project>-<service connection name>` for easier identification.

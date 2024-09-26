@@ -5,14 +5,14 @@ ms.date: 9/26/2024
 ms.topic: include
 ---
 
-### Seamless Build Pipeline Integration for Test Case Execution
+### Seamless build Pipeline integration for test case execution
 
 We’ve simplified the test case execution process by seamlessly integrating build pipeline configurations. Build definitions and IDs set at the test plan level now automatically propagate to the Web Runner, eliminating the need for manual configuration each time. This improvement saves time and enhances efficiency, allowing you to focus on more critical tasks. 
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Pipeline Integration for Test Case Execution.](../../media/245-testplans-01.gif "gif to Pipeline Integration for Test Case Execution")
 
-### Test and Feedback extension in Manifest V3 (Edge Release)
+### Test and feedback extension in Manifest V3 (Edge release)
 
 We’ve been gradually releasing this upgrade in Chrome, and now we’re expanding the rollout to Edge. 
 

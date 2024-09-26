@@ -50,9 +50,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
     <td>Pipeline Agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Newly created Azure Service Connections create App registrations with new naming convention</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Seamless Build Pipeline Integration for Test Case Execution</td><td>Test Plans</td><td>Future</td></tr>
-    <td>Test and Feedback extension in Manifest V3 (Edge Release)</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Revised Naming Convention for Azure Service Connections and App Registrations</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Test and feedback extension in Manifest V3 (Edge release)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="7"><a href="2024/sprint-244-update.md" data-raw-source="[4 September 2024](2024/sprint-244-update.md)"> 4 September 2024</a></td>
