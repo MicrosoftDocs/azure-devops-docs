@@ -73,7 +73,57 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 ## Restore packages
 
-Run the following command in an elevated command prompt:
+Run the following command in your project directory to restore your packages:
+
+::: moniker range="azure-devops"
+
+#### [NuGet](#tab/nuget)
+
+```Command
+nuget.exe restore
+```
+
+#### [Dotnet](#tab/dotnet)
+
+```Command
+dotnet restore --interactive
+```
+
+#### [Npm](#tab/npm)
+
+```Command
+npm install
+```
+
+#### [Maven](#tab/maven)
+
+```Command
+mvn install
+```
+
+#### [Gradle](#tab/gradle)
+
+```Command
+gradle build
+```
+
+#### [Python](#tab/python)
+
+```Command
+pip install
+```
+
+#### [Cargo](#tab/cargo)
+
+```Command
+cargo build
+```
+
+- - -
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020 || azure-devops-2022"
 
 #### [NuGet](#tab/nuget)
 
@@ -112,6 +162,44 @@ pip install
 ```
 
 - - -
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+#### [NuGet](#tab/nuget)
+
+```Command
+nuget.exe restore
+```
+
+#### [Npm](#tab/npm)
+
+```Command
+npm install
+```
+
+#### [Maven](#tab/maven)
+
+```Command
+mvn install
+```
+
+#### [Gradle](#tab/gradle)
+
+```Command
+gradle build
+```
+
+#### [Python](#tab/python)
+
+```Command
+pip install
+```
+
+- - -
+
+::: moniker-end
 
 > [!NOTE]
 > You must be a **Feed and Upstream Reader (Collaborator)** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
