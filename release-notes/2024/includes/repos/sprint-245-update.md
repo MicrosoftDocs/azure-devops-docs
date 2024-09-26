@@ -14,4 +14,4 @@ To support this, we now monitor several factors like repository size, commit fre
 To check your repository’s health, go to Azure Repos Git, select Repo > Files, and choose “Health and usage” from the ellipsis menu to access the Repository health and usage panel.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Health and usage.](../../media/245-repos-01.png "Screenshot of Health and usage")
+> [![Screenshot of Health and usage.](../../media/245-repos-01.png "Screenshot of Health and usage")](../../media/245-repos-01.png#lightbox)

@@ -31,7 +31,7 @@ We have also [provided sample code](https://github.com/danhellem/github-boards-c
 In some cases, simply removing an attachment from a work item may not fully resolve security risks, especially if the file is flagged as malicious. Shared links to the attachment could still be accessible across other work items, comments, or external channels. To address this, we added a feature that allows users with "Permanently delete work items" permissions to permanently remove attachments.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of permanently delete work item attachments.](../../media/245-boards-02.png "Screenshot of permanently delete work item attachments.")
+> [![SScreenshot of permanently delete work item attachments.](../../media/245-boards-02.png "Screenshot of permanently delete work item attachments")](../../media/245-boards-02.png#lightbox)
 
 This action can be performed from the **Attachments** tab on the work item form, under a new section called **"Deleted Attachments"**. This section is visible only to users with the necessary permissions to permanently delete work items.
 
