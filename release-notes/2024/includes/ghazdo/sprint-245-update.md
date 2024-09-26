@@ -15,9 +15,10 @@ Pull request branches were previously hidden in the branch picker despite being 
 
 ### Repository default branch changes now reflected in Advanced Security 
 
-Previously, the Advanced Security repository tab did not automatically register changes to your default branch, resulting in needing to select your desired branch via the branch picker if your default branch changed. Now, the Advanced Security tab will recognize and, by default, load alerts for the newly designated default branch when you first visit the page. 
+Previously, the Advanced Security repository tab didn't automatically update to reflect changes to the default branch, requiring manual selection of the desired branch through the branch picker. Now, the tab automatically recognizes and loads alerts for the newly designated default branch when you visit the page.
 
-Security overview will now also respect default branch changes, although there is a longer delay in processing time before updated alert results appear after a default branch change.
+The Security Overview also updates to reflect default branch changes, though there may be a longer delay before the updated alert results are processed.
+
 
 ### Generic third-party SARIF support for Advanced Security 
 
@@ -30,17 +31,18 @@ Using a scanning tool that publishes a SARIF file to the `$(Agent.TempDirectory)
 
 ### Alert rule IDs now incorporated into result fingerprints 
 
-Any third-party tool results that had the same partial fingerprint, line rolling hash, tool, and rule name, despite the associated rule having a different rule ID, were bundled into one alert. 
+Previously, third-party tool results with the same fingerprint, hash, tool, and rule name were grouped into one alert, even with different rule IDs.
 
-Now, rule IDs will be considered a part of the result fingerprint and appropriately create their own alerts even if other results share similar metadata. This will also update any existing alerts that have been previously bundled erroneously, splitting them into separate alerts. 
+Now, rule IDs are included in the fingerprint, creating separate alerts for results with different rule IDs, even if other data is the same. Existing alerts will also be updated and split accordingly.
 
 ### Pull request annotations feature in (preview)
 
-As indicated in the Advanced Security roadmap item, [Pull-request annotations](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation), you will now receive in-line annotations on any pull requests that utilize a pipeline assigned to your build validation policy with dependency scanning and/or code scanning tasks included.
+As outlined in the Advanced Security roadmap item, [Pull-request annotations](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation), you will now receive in-line annotations on pull requests that use a pipeline linked to your build validation policy with dependency or code scanning tasks.
 
-There is no opt-in needed aside from creating a build validation policy to be applied against select branches.
+No opt-in is required—just create a build validation policy for the relevant branches.
 
-Clicking on `Show more details` in the annotation will bring you to the alert detail view for the alert in question. 
+Clicking `Show more details` in the annotation will take you to the alert detail view.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of In-line annotations.](../../media/245-ghazdo-02.png "Screenshot of in-line annotations")](../../media/245-ghazdo-02.png#lightbox)
+

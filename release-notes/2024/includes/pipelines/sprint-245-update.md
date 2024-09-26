@@ -8,9 +8,9 @@ ms.topic: include
 ### Pipeline Agent v4 runs on .NET 8
 
 
-The Azure Pipelines agent v3 currently uses .NET 6, but with the end-of-life for .NET 6 approaching, we are upgrading the agent to .NET 8. This update will be rolling out over the next few weeks.
+The Azure Pipelines agent v3 currently uses .NET 6, but with the end-of-life for .NET 6 approaching, we're upgrading the agent to .NET 8. This update will rolling out over the next few weeks.
 
-If you are using self-hosted agents on an operating system that is not supported by .NET 8, your agent won’t be upgraded to v4. Instead, pipelines running on unsupported operating systems will display warnings in the pipeline logs. You can use the[QueryAgentPoolsForCompatibleOS.ps1 script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to identify any pipeline agents running on outdated operating systems proactively.
+If you're using self-hosted agents on an operating system that isn't supported by .NET 8, your agent won’t be upgraded to v4. Instead, pipelines running on unsupported operating systems display warnings in the pipeline logs. You can use the[QueryAgentPoolsForCompatibleOS.ps1 script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to identify any pipeline agents running on outdated operating systems proactively.
 
 The following operating system versions will not be supported by the updated v4 agent:
 
@@ -31,7 +31,7 @@ Shell tasks such as [Bash@3](https://learn.microsoft.com/azure/devops/pipelines/
 
 Enabling shell tasks arguments validation can break existing scripts as input is rejected by input validation. For example, some characters are considered a command separator and rejected when this setting is enabled.
 
-To make this transition smoother, we’ve added a preview mode. With preview mode enabled, you’ll receive warnings in your pipeline and audit logs, giving you visibility into potential issues without interrupting your tasks or workflows.
+To make this transition smoother, we’ve added a preview mode. With preview mode enabled, you receive warnings in your pipeline and audit logs, giving you visibility into potential issues without interrupting your tasks or workflows.
 
 Go to Organization Settings > Settings > Task restrictions or Project Settings > General to enable auditing:
 
@@ -40,4 +40,4 @@ Go to Organization Settings > Settings > Task restrictions or Project Settings >
 
 ### Newly created Azure Service Connections create App registrations with new naming convention
 
-Currently, a Service Connection is named `<azure devops org>-<azure devops project>-<azure subscription id>`. This makes it difficult to correlate App registrations to service connections apart that target the same Azure subscription. To make it easy to distinguish App registrations, the name of the app registration will include the name of the service connection: `<azure devops org>-<azure devops project>-<service connection name>`.
+Currently, a Service Connection is named `<azure devops org>-<azure devops project>-<azure subscription id>`. This makes it difficult to correlate App registrations to service connections apart that target the same Azure subscription. To make it easy to distinguish App registrations, the name of the app registration includes the name of the service connection: `<azure devops org>-<azure devops project>-<service connection name>`.
