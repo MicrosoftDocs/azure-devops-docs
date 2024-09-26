@@ -27,7 +27,7 @@ The following operating system versions will not be supported by the updated v4 
 
 ### Preview mode for shell tasks arguments validation
 
-Shell tasks such as [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3?view=azure-pipelines), [BatchScript@1](/azure/devops/pipelines/tasks/reference/batch-script-v1?view=azure-pipelines), [CmdLine@2](/azure/devops/pipelines/tasks/reference/cmd-line-v2?view=azure-pipelines) and [PowerShell@2](/azure/devops/pipelines/tasks/reference/powershell-v2?view=azure-pipelines) can be protected from command injection by enabling [shell tasks arguments validation](/azure/devops/pipelines/security/inputs?view=azure-devops#enable-shell-tasks-arguments-parameter-validation) in organization or project settings.
+Shell tasks such as [Bash@3](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/bash-v3?view=azure-pipelines&preserve-view=true), [BatchScript@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/batch-script-v1?view=azure-pipelines), [CmdLine@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/cmd-line-v2?view=azure-pipelines) and [PowerShell@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/powershell-v2?view=azure-pipelines) can be protected from command injection by enabling [shell tasks arguments validation](https://learn.microsoft.com/azure/devops/pipelines/security/inputs?view=azure-devops#enable-shell-tasks-arguments-parameter-validation) in organization or project settings.
 
 Enabling shell tasks arguments validation can break existing scripts as input is rejected by input validation. For example, some characters are considered a command separator and rejected when this setting is enabled.
 
