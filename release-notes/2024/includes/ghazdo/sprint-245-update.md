@@ -5,20 +5,19 @@ ms.date: 9/26/2024
 ms.topic: include
 ---
 
-### Pull request branches appear in Advanced Security branch picker 
+### Pull request branches now visible in Advanced Security branch picker
 
-Pull request branches were previously hidden in the branch picker despite being able to scan on pull request branches. These results now show accordingly in the Advanced Security branch picker and are searchable. 
+Pull request branches were previously hidden in the branch picker, even though scanning on pull request branches was possible. Now, these branches are visible in the Advanced Security branch picker and can be searched.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pull request branches.](../../media/245-ghazdo-01.png "Screenshot of Pull request branches")](../../media/245-ghazdo-01.png#lightbox)
 
 
-### Repository default branch changes now reflected in Advanced Security 
+### Automatic updates for default branch changes in Advanced Security
 
-Previously, the Advanced Security repository tab didn't automatically update to reflect changes to the default branch, requiring manual selection of the desired branch through the branch picker. Now, the tab automatically recognizes and loads alerts for the newly designated default branch when you visit the page.
+In the past,the Advanced Security repository tab did not automatically update when the default branch changed, requiring manual selection of the new branch in the branch picker. Now, the tab automatically detects and displays alerts for the newly designated default branch upon visiting the page.
 
-The Security Overview also updates to reflect default branch changes, though there may be a longer delay before the updated alert results are processed.
-
+Additionally, the Security Overview updates to reflect default branch changes, although there may be a slight delay before the updated alert results are processed.
 
 ### Generic third-party SARIF support for Advanced Security 
 
@@ -29,11 +28,11 @@ Using a scanning tool that publishes a SARIF file to the `$(Agent.TempDirectory)
 > [!NOTE]
 > The file path associated with a result in the SARIF file must be accessible to the `AdvancedSecurity-Publish` task running in the build agent.
 
-### Alert rule IDs now incorporated into result fingerprints 
+### Alert rule IDs now integrated into result fingerprints 
 
-Previously, third-party tool results with the same fingerprint, hash, tool, and rule name were grouped into one alert, even with different rule IDs.
+Previously, third-party tool results with the same fingerprint, hash, tool, and rule name were grouped into one alert, even if they had different rule IDs.
 
-Now, rule IDs are included in the fingerprint, creating separate alerts for results with different rule IDs, even if other data is the same. Existing alerts will also be updated and split accordingly.
+With this update, rule IDs are now included in the fingerprint, creating separate alerts for results with different rule IDs, even if other data points are the same. Existing alerts will be updated and split accordingly.
 
 ### Pull request annotations feature in (preview)
 
