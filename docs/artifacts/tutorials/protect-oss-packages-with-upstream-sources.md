@@ -274,7 +274,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-# [npm](#tab/npmrestore)
+# [npm](#tab/npmserver)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
@@ -287,7 +287,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 > [!NOTE]
 > The `--force` argument will force pull remotes even if a local copy exists. 
 
-# [NuGet](#tab/nugetrestore)
+# [NuGet](#tab/nugeserver)
 
 1. Clear your local cache:
 
@@ -303,7 +303,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [dotnet](#tab/dotnet)
+# [dotnet](#tab/dotnetserver)
 
 Run the following command in your project directory:
 
@@ -313,7 +313,7 @@ dotnet restore --interactive
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Python](#tab/python)
+# [Python](#tab/pythonserver)
 
 Run the following command in your project directory:
 
@@ -323,7 +323,7 @@ pip install
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Maven](#tab/mavenrestore)
+# [Maven](#tab/mavenserver)
 
 Run the following command in your project directory:
 
@@ -333,7 +333,7 @@ mvn install
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Gradle](#tab/gradlerestore)
+# [Gradle](#tab/gradleserver)
 
 Run the following command in your project directory:
 
@@ -349,7 +349,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 ::: moniker range="azure-devops-2019"
 
-# [npm](#tab/npmrestore)
+# [npm](#tab/npmserver19)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
@@ -362,7 +362,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 > [!NOTE]
 > The `--force` argument will force pull remotes even if a local copy exists. 
 
-# [NuGet](#tab/nugetrestore)
+# [NuGet](#tab/nugetserver19)
 
 1. Clear your local cache:
 
@@ -378,7 +378,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Python](#tab/python)
+# [Python](#tab/pythonserver19)
 
 Run the following command in your project directory:
 
@@ -388,7 +388,7 @@ pip install
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Maven](#tab/mavenrestore)
+# [Maven](#tab/mavenserver19)
 
 Run the following command in your project directory:
 
@@ -398,7 +398,7 @@ mvn install
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
-# [Gradle](#tab/gradlerestore)
+# [Gradle](#tab/gradleserver19)
 
 Run the following command in your project directory:
 

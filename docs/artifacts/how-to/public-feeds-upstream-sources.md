@@ -125,37 +125,37 @@ cargo build
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-#### [NuGet](#tab/nuget)
+#### [NuGet](#tab/nugetserver)
 
 ```Command
 nuget.exe restore
 ```
 
-#### [Dotnet](#tab/dotnet)
+#### [Dotnet](#tab/dotnetserver)
 
 ```Command
 dotnet restore --interactive
 ```
 
-#### [Npm](#tab/npm)
+#### [Npm](#tab/npmserver)
 
 ```Command
 npm install
 ```
 
-#### [Maven](#tab/maven)
+#### [Maven](#tab/mavenserver)
 
 ```Command
 mvn install
 ```
 
-#### [Gradle](#tab/gradle)
+#### [Gradle](#tab/gradleserver)
 
 ```Command
 gradle build
 ```
 
-#### [Python](#tab/python)
+#### [Python](#tab/pythonserver)
 
 ```Command
 pip install
@@ -167,31 +167,31 @@ pip install
 
 ::: moniker range="azure-devops-2019"
 
-#### [NuGet](#tab/nuget)
+#### [NuGet](#tab/nugetserver19)
 
 ```Command
 nuget.exe restore
 ```
 
-#### [Npm](#tab/npm)
+#### [Npm](#tab/npmserver19)
 
 ```Command
 npm install
 ```
 
-#### [Maven](#tab/maven)
+#### [Maven](#tab/mavenserver19)
 
 ```Command
 mvn install
 ```
 
-#### [Gradle](#tab/gradle)
+#### [Gradle](#tab/gradleserver19)
 
 ```Command
 gradle build
 ```
 
-#### [Python](#tab/python)
+#### [Python](#tab/pythonserver19)
 
 ```Command
 pip install
