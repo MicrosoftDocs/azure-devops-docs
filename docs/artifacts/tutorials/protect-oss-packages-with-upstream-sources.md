@@ -272,7 +272,7 @@ Your feed now should have a saved copy of any packages you installed from upstre
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 # [npm](#tab/npmrestore)
 
