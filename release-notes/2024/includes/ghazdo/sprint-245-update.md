@@ -15,7 +15,7 @@ Pull request branches were previously hidden in the branch picker, even though s
 
 ### Automatic updates for default branch changes in Advanced Security
 
-In the past,the Advanced Security repository tab did not automatically update when the default branch changed, requiring manual selection of the new branch in the branch picker. Now, the tab automatically detects and displays alerts for the newly designated default branch upon visiting the page.
+In the past, the Advanced Security repository tab did not automatically update when the default branch changed, requiring manual selection of the new branch in the branch picker. Now, the tab automatically detects and displays alerts for the newly designated default branch upon visiting the page.
 
 Additionally, the Security Overview updates to reflect default branch changes, although there may be a slight delay before the updated alert results are processed.
 
@@ -23,10 +23,10 @@ Additionally, the Security Overview updates to reflect default branch changes, a
 
 You can now upload results from your third-party scanning tool to show in the Advanced Security code scanning tab. 
 
-Using a scanning tool that publishes a SARIF file to the `$(Agent.TempDirectory)/.advsec` directory, conforms to the SARIF 2.1 standard, and runs the [AdvancedSecurity-Publish](/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1?view=azure-pipelines) after the task will upload results to the code scanning tab.
+Using a scanning tool that publishes a SARIF file to the `$(Agent.TempDirectory)/.advsec` directory, conforms to the SARIF 2.1 standard, and runs the [AdvancedSecurity-Publish@1](/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1?view=azure-pipelines) after the task will upload results to the code scanning tab.
 
 > [!NOTE]
-> The file path associated with a result in the SARIF file must be accessible to the `AdvancedSecurity-Publish` task running in the build agent.
+> The file path associated with a result in the SARIF file must be accessible to the `AdvancedSecurity-Publish@1` task running in the build agent.
 
 ### Alert rule IDs now integrated into result fingerprints 
 

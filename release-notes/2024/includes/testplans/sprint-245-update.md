@@ -16,6 +16,6 @@ We’ve simplified the test case execution process by seamlessly integrating bui
 
 We’ve been gradually releasing this upgrade in Chrome, and now we’re expanding the rollout to Edge. 
 
-This update transitions our implementation from Manifest Version 2 to Version 3, in line with Google's deprecation schedule for Manifest V2. While the core features of the extension remain unchanged, the update enhances both security and performance.
+This update transitions our implementation from Manifest V2 to V3, in line with Google's deprecation schedule for Manifest V2. While the core features of the extension remain unchanged, the update enhances both security and performance.
 
 For more details, check out our recent blog post about this update. [Test & Feedback Extension in Manifest V3](https://devblogs.microsoft.com/devops/test-feedback-extension-v3/)

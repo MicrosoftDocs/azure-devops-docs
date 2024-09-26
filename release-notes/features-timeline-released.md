@@ -48,7 +48,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>REST API support for connecting GitHub repositories</td><td>Boards</td><td>N/A</td></tr>
     <td>Permanently delete attachments</td><td>Boards</td><td>Future</td></tr>
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
-    <td>Pipeline Agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
     <td>Revised naming convention for Azure service connections and App registrations</td><td>Pipelines</td><td>Future</td></tr>
     <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
