@@ -53,3 +53,13 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 1. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
 
+    :::image type="content" source="media/build-trigger-download-artifact.png" alt-text="A screenshot displaying how to download artifacts from a triggering build in a Classic pipeline.":::
+
+- **Download artifacts produced by**: *Specific build*.
+- **Project**: select your project from the dropdown menu.
+- **Build pipeline**: select your pipeline from the dropdown menu.
+- Check **When appropriate, download artifacts from the triggering build**.
+- **Build version to download**: select a build version.
+- **Download type**: *Specific artifact*.
+- **Artifact name**: select your artifact from the dropdown menu.
+- **Destination directory**: path on the agent machine where the artifacts will be downloaded.
