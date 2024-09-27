@@ -109,7 +109,7 @@ In the preceding example, the first four variables are predefined. For informati
 
 ### How large can a run number be, and what characters can I use?
 
-Run numbers can be up to 255 characters. You can't use the characters `"`, `/`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, or `*`, and you can't end the number with `.`.
+Run numbers can be up to 255 characters. You can't use the characters `"`, `/`, `\`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, or `*`, and you can't end the number with `.`.
 
 ### What time zone are the build number time values expressed in?
 
