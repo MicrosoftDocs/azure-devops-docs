@@ -105,7 +105,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 	Here we name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
 
-    ::: image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder dialog.":::
+    :::image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder dialog.":::
 
 1. To set permissions for the folder you just added, choose the **More actions** icon :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: and select **Security**.
 
@@ -123,7 +123,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 1. Reopen the Security dialog and choose Service Delivery to verify that the permissions are set. 
 
-    ::: image type="content" source="media/permissions/permissions-folder-dialog-s166.png" alt-text="Screenshot of Permissions dialog for a query folder, verify permission settings.":::
+    :::image type="content" source="media/permissions/permissions-folder-dialog-s166.png" alt-text="Screenshot of Permissions dialog for a query folder, verify permission settings.":::
   
 ::: moniker-end
 
@@ -139,7 +139,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 	Here we name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
 
-    ::: image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder dialog, Azure DevOps Server 2019.":::
+    :::image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder dialog, Azure DevOps Server 2019.":::
 
 1. To set permissions for the folder you just added, choose the **More actions** icon :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: and select **Security**.
 
@@ -147,7 +147,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
 
-    ::: image type="content" source="media/permissions/permissions-dialog-query-folder-service-delivery.png" alt-text="Screenshot of Permissions dialog for a query folder, Azure DevOps Server 2019.":::
+    :::image type="content" source="media/permissions/permissions-dialog-query-folder-service-delivery.png" alt-text="Screenshot of Permissions dialog for a query folder, Azure DevOps Server 2019.":::
 
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
