@@ -124,7 +124,7 @@ To save the query as a `.wiq` file, choose the **File** radio button and specify
 #### [Browser](#tab/browser/)
 
 
-From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
+From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/more-actions.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
 
 ::: moniker range="< azure-devops"
 
@@ -239,7 +239,7 @@ You can only add shared as team favorites if you have [team administrator or pro
 
 ::: moniker range="< azure-devops"
 
-1. To save a query as a team favorite, open :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** or :::image type="icon" source="media/22.png" border="false"::: the context menu for the query from  the **Queries** page. 
+1. To save a query as a team favorite, open **More actions** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: or the :::image type="icon" source="media/22.png" border="false"::: context menu for the query from  the **Queries** page. 
 
 1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you're a member are listed.
 
@@ -249,7 +249,7 @@ You can only add shared as team favorites if you have [team administrator or pro
 
 ::: moniker range="azure-devops"
 
-1. To save a query as a team favorite, open **More actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: the context menu for the query from the **Shared Queries** on the **Queries** page. 
+1. To save a query as a team favorite, open the **More actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: context menu for the query from the **Shared Queries** on the **Queries** page. 
 
 1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you're a member are listed.
 

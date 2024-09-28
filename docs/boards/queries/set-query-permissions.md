@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 09/21/2024
 ---
 
-
 # Set permissions on queries and query folders in Azure Boards and Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
