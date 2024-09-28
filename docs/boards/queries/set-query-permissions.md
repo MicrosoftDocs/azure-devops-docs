@@ -97,7 +97,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 1. Choose **All**. Expand **Shared Queries**. 
  
-1. To add a folder, choose :**More actions** icon ::image type="icon" source="../media/icons/actions-icon.png" border="false"::: for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the **More actions** icon :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: for an existing folder or the top container folder, and choose **New folder**. 
 
     :::image type="content" source="media/organize-queries/select-new-folder.png" alt-text="Screenshot that shows Open More actions menu, choose New folder.":::
 
