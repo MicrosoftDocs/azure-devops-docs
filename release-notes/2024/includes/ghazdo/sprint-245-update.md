@@ -45,3 +45,8 @@ Clicking `Show more details` in the annotation will take you to the alert detail
 > [!div class="mx-imgBorder"]
 > [![Screenshot of In-line annotations.](../../media/245-ghazdo-02.png "Screenshot of in-line annotations")](../../media/245-ghazdo-02.png#lightbox)
 
+### Expanded set of Secret Scanning detections
+
+We're expanding the set of partner patterns that can be detected with Secret Scanning. This expansion brings in several high confidence patterns for new token types.
+
+For more information on the types of partner patterns that GitHub Advanced Security Secret Scanning detects, see [Secret scanning alerts for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops&branch=main#secret-scanning-patterns&preserve-view=true).
