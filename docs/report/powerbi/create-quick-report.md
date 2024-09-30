@@ -69,7 +69,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 2. If your view successfully verifies, then go to the next step. If it's unsuccessful, select the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
-	To learn more about defining views, see [Create an Analytics view](analytics-views-create.md).  
+	For more information about defining views, see [Create an Analytics view](analytics-views-create.md).  
 
 [!INCLUDE [temp](../includes/connect-analytics-view.md)]
 

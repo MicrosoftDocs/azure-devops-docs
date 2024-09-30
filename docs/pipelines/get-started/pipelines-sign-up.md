@@ -132,7 +132,7 @@ Add and invite others to work on your project by adding their email address to y
       - **Stakeholder:** Assign to users for limited access to features to view, add, and modify work items. You can assign an unlimited amount of users Stakeholder access for free.
       - **Visual Studio Subscriber:** Assign to users who already have a Visual Studio subscription.
    - **Add to project:** Select the project you named in the preceding procedure.
-   - **Azure DevOps groups:** Select one of the following security groups that determines the permissions the users have to do select tasks. To learn more, see [Azure Pipelines resources](../security/resources.md).
+   - **Azure DevOps groups:** Select one of the following security groups that determines the permissions the users have to do select tasks. For more information, see [Azure Pipelines resources](../security/resources.md).
       - **Project Readers:** Assign to users who only require read-only access.
       - **Project Contributors:** Assign to users who contribute fully to the project.
       - **Project Administrators:** Assign to users who can configure project resources.
@@ -148,7 +148,7 @@ For more information, see [Add organization users for Azure DevOps Services](../
 
 You can rename and delete your organization, or change the organization location. For more information, see the following articles:
 
-- [Manage organizations](../../organizations/accounts/organization-management.md)
+- [Delete an organization](../../organizations/accounts/delete-your-organization.md)
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 

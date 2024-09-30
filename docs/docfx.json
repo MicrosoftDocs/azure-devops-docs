@@ -74,7 +74,7 @@
       "ms.date": "09/05/2018",
       "ms.service": "azure-devops",
       "ms.version": "ALM",
-      "zone_pivot_group_filename": "zone-pivot-groups.json",
+      "zone_pivot_group_filename": "devops/zone-pivot-groups.json",
       "searchScope": [
         "Azure DevOps Services"
       ],
@@ -100,6 +100,7 @@
         "notifications/**/**.md": "Azure DevOps",
         "organizations/**/**.md": "Azure DevOps",
         "pipelines/**/**.md": "Azure Pipelines",
+        "managed-devops-pools/**/**.md": "Managed DevOps Pools",
         "project/**/**.md": "Azure DevOps",
         "reference/**/**.md": "Azure DevOps",
         "report/**/**.md": "Azure DevOps",
@@ -114,6 +115,7 @@
       },
       "ms.author": {
         "artifacts/**": "rabououn",
+        "managed-devops-pools/**": "sdanie",
         "pipelines/*.md": "sdanie",
         "pipelines/agents/**": "sdanie",
         "pipelines/apps/**": "jukullam",
@@ -138,15 +140,16 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "ravikum",
+        "pipelines/test/**": "jeom",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "vijayma",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma",
-        "test/**": "ravikum"
+        "test/**": "jeom"
       },
       "author": {
         "artifacts/**": "ramiMSFT",
+        "managed-devops-pools/**": "steved0x",
         "pipelines/*.md": "steved0x",
         "pipelines/agents/**": "steved0x",
         "pipelines/apps/**": "juliakm",
@@ -182,6 +185,7 @@
         "pipelines/ecosystems/**": "azure-devops"
       },
       "ms.subservice": {
+        "managed-devops-pools/**": "azure-devops-managed-devops-pools",
         "pipelines/agents/**": "azure-devops-pipelines-agents",
         "pipelines/apps/**": "azure-devops-pipelines-apps",
         "pipelines/artifacts/**": "azure-devops-pipelines-artifacts",

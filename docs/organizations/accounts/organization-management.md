@@ -74,7 +74,7 @@ If you don't manage your user base with Microsoft Entra ID, as described in the 
 
 > [!TIP]
 > If you need more than the free users and services included with your organization,
-[set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md).
+[set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing).
 You can then pay for more users with Basic access, buy more services, and purchase extensions for your organization.
 
 For more information about adding users to your organization, see the following articles:

@@ -25,7 +25,7 @@ It’s crucial to assess the pros and cons of each approach to migration, based 
 |Options  |Recommended scenarios  |Limitations  |
 |---------|---------|---------|
 |[1: Manual migration](#option-1-manual-migration)   |  Use for smaller projects or specific data subsets.    | Not all data can be migrated with full fidelity and is subject to throttling. This migration doesn’t support migrating XML templates, so you need to recreate process templates as inherited templates.   |
-|[2: Azure DevOps Data Migration Tool](#option-2-azure-devops-migration-tool)  | Use for medium to large-scale migrations with varied data types and complex structures.      |  You can only "lift and shift" one Azure DevOps Server collection to one new Azure DevOps Services organization, with no modifications. For more information, see the [Limitations section](#migration-tool-limitations).  |
+|[2: Azure DevOps Data Migration Tool](#option-2-azure-devops-data-migration-tool)  | Use for medium to large-scale migrations with varied data types and complex structures.      |  You can only "lift and shift" one Azure DevOps Server collection to one new Azure DevOps Services organization, with no modifications. For more information, see the [Limitations section](#migration-tool-limitations).  |
 |[3: API-based migration](#option-3-api-based-migration)     | Offers flexibility and customization for organizations with unique migration requirements or automation needs.   | Low fidelity, data loss, and ID changes can occur. For more information, see the [Limitations section](#api-based-migration-limitations). |
 
 ## Option 1: Manual migration
@@ -45,7 +45,7 @@ For example, when the Azure DevOps team at Microsoft chose to move from Azure De
    - Scripting permission changes: If you have many projects or repositories, you might need to script them. You can use the [Azure CLI DevOps extension](../cli/index.md) to list all permissions and update them as needed.
    - Disable repository feature: Disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning. Go to **Project settings** > **Repositories** > your repo, and next to Disable Repository, move the toggle to **On**. 
 
-## Option 2: Azure DevOps Migration Tool
+## Option 2: Azure DevOps Data Migration Tool
 
 The [Azure DevOps Data Migration Tool](https://www.microsoft.com/download/details.aspx?id=54274) is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.  
 
@@ -82,7 +82,7 @@ You can purge data that you don’t need before or after the migration.
 
 ## Option 3: API-based migration
 
-If for some reason you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-migration-tool), you can choose from various tools that use public APIs to move data.  
+If for some reason you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), you can choose from various tools that use public APIs to move data.  
 
 ## API-based migration limitations
 
@@ -131,7 +131,7 @@ When migrating into Azure DevOps Services, keep in mind the following key princi
 ## Next steps 
 
 > [!div class="nextstepaction"]
-> [Get started with Azure DevOps Migration Tool](migration-get-started.md)
+> [Get started with the Azure DevOps Data Migration Tool](migration-get-started.md)
 
 ## Related articles
 

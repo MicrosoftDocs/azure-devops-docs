@@ -6,7 +6,7 @@ ms.topic: include
 ---
 ### New PAT Scope for managing pipeline authorization and approvals and checks
 
-To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`. You can use this PAT scope when managing pipeline authorization using a [protected resource](/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources), such as a service connection, or to manage [approvals and checks](/azure/devops/pipelines/process/approvals) for that resource.
+To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`. You can use this PAT scope when managing pipeline authorization using a [protected resource](/azure/devops/pipelines/security/resources#protected-resources), such as a service connection, or to manage [approvals and checks](/azure/devops/pipelines/process/approvals) for that resource.
 
 > [!div class="mx-imgBorder"]
 > ![Pipelines REST API Updates](../../media/215-pipelines-01.png)

@@ -8,14 +8,14 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/10/2023
+ms.date: 07/02/2024
 ---
 
 # C# client library samples 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The following samples show how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
+The following samples show you how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
 ## Samples in GitHub
 
@@ -163,7 +163,7 @@ public static void AADRestSample()
 
 ##### OAuth Authentication for REST services
 
-For more information, see [Azure DevOps auth samples](https://github.com/microsoft/azure-devops-auth-samples).
+For more information, see [Azure DevOps auth samples](https://github.com/microsoft/azure-devops-auth-samples) and [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow).
 
 ```cs
 public static void OAuthSample()

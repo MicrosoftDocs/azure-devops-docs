@@ -15,13 +15,13 @@ ms.date: 12/08/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to display the Stories CFD for a specified team. This data is also available through the built-in chart and dashboard widget. To learn more about these options, see [View and configure a Cumulative Flow Diagram](../dashboards/cumulative-flow.md). 
+This article shows you how to display the Stories CFD for a specified team. This data is also available through the built-in chart and dashboard widget. For more information about these options, see [View and configure a Cumulative Flow Diagram](../dashboards/cumulative-flow.md). 
 
 An example is shown in the following image that shows a count of user stories over time in the *Researching*, *Committed*, *In Progress*, and *In Review* states. Hovering over a date provides information on data for that date.
 
 :::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Power BI Cumulative Flow stacked area chart report, columns sorted in board column order."::: 
 
-To learn more about cumulative flow, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
+For more information about cumulative flow, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 

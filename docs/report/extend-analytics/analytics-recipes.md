@@ -366,7 +366,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 ```
 
 > [!NOTE]   
-> Anytime a change is made to a work item, including a change to it's stack rank value, a revision is created. To learn more about historical data, see [Applying filters to historical data](../powerbi/analytics-historical-filtering.md).
+> Anytime a change is made to a work item, including a change to it's stack rank value, a revision is created. For more information about historical data, see [Applying filters to historical data](../powerbi/analytics-historical-filtering.md).
 
 **Example query:**
 

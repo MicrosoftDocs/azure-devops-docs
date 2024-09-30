@@ -6,6 +6,9 @@
   - name: Azure Artifacts overview
     displayName: get started, introduction
     href: start-using-azure-artifacts.md
+  - name: Publish your first package
+    displayName: publish, dotnet
+    href: get-started-artifacts-ai.md
   - name: Monitor Artifacts storage
     displayName: storage, consumption, usage, billing
     href: artifact-storage.md
@@ -51,6 +54,9 @@
     - name: Install NuGet packages with Visual Studio
       displayName: install package, nuget, visual studio
       href: nuget/consume.md
+    - name: Share PowerShell modules with Azure Artifacts
+      displayName: powershell, module, package
+      href: tutorials/private-powershell-library.md
     - name: Use packages from NuGet.org
       displayName: upstream, nuget, install, package
       href: nuget/upstream-sources.md
@@ -163,9 +169,6 @@
     - name: Delete and recover packages
       displayName: delete, recover, packages, artifacts
       href: how-to/delete-and-recover-packages.md
-    - name: Share PowerShell modules with Azure Artifacts feed
-      displayName: powershell artifacts, artifact feeds, powershell module, powershell library
-      href: tutorials/private-powershell-library.md
     - name: Use public feeds to share your packages publicly
       displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
       href: tutorials/share-packages-publicly.md
@@ -186,21 +189,21 @@
       displayName: upstream, sources, upstreams
       href: concepts/upstream-sources.md
     - name: Set up upstream sources
-      displayName: upstreams, set up upstreams
       href: how-to/set-up-upstream-sources.md
+      displayName: configure, upstreams
+    - name: Use upstream sources with public feeds
+      href: how-to/public-feeds-upstream-sources.md
+      displayName: upstream, public feed
+    - name: Search for packages in upstream sources
+      href: how-to/search-upstream.md
+      displayName: search, upstreams
     - name: Manage dependencies with upstream sources
       displayName: dependecies, artifacts, upstreams, public package
       href: tutorials/protect-oss-packages-with-upstream-sources.md
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
       href: tutorials/powershell-upstream-source.md
-    - name: Use upstream sources with public feeds
-      displayName: upstream, public feed
-      href: how-to/public-feeds-upstream-sources.md
-    - name: Search for packages in upstream sources
-      displayName: search packages, upstreams
-      href: how-to/search-upstream.md
-    - name: Configure upstream behavior
+    - name: Safeguard against malicious public packages
       displayName: upstreams, behavior, configure upstreams
       href: concepts/upstream-behavior.md
 - name: Artifacts in Azure Pipelines
@@ -217,6 +220,9 @@
   - name: Set up retention policies
     displayName: policies, retention, pipeline artifact
     href: ../pipelines/policies/retention.md
+  - name: Use the .artifactignore file
+    href: reference/artifactignore.md
+    displayName: artifactignore, gitignore
 - name: Symbols
   items:
   - name: Symbols overview
@@ -239,9 +245,6 @@
   - name: Package graphs
     displayName: graph, artifacts, packages
     href: concepts/package-graph.md
-  - name: Use the .artifactignore file
-    displayName: artifactignore, gitignore
-    href: reference/artifactignore.md
   - name: Componentization
     displayName: componentization, artifacts, packages, concepts
     href: collaborate-with-packages.md

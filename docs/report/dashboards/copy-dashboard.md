@@ -34,7 +34,7 @@ To create a dashboard for a team or project, see [Add, rename, and delete dashbo
 
 Do the following steps to open the source dashboard.
 
-1. Sign in to your project (```https://dev.azure.com/{your_organization}/{your_project}```).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 2. Select **Overview** > **Dashboards**. The dashboard directory page opens. 
 
 	:::image type="content" source="media/dashboards/open-dashboards-vert.png" alt-text="Screenshot of Dashboards Directory.":::

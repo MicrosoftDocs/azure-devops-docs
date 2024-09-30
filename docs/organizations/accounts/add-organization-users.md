@@ -68,9 +68,9 @@ To give other users access to your organization, add their email addresses.
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
    * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [Connect to GitHub/FAQs](../../boards/github/connect-to-github.md#faqs). To add a service principal, enter the display name of the application or managed identity.
-   * **Access level:** Leave the access level as **Basic** for users who contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).  
+   * **Access level:** Leave the access level as **Basic** for users who contribute to the code base. For more information, see [About access levels](../security/access-levels.md).  
    * **Add to projects:** Select the project you want to add them to.  
-   * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).  
+   * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. For more information, see [Default permissions and access assignments](../security/permissions-access.md).  
 
    > [!NOTE]  
    > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
@@ -96,7 +96,7 @@ az devops user add –-email-id
 #### Parameters
 
 * **email-id**: Required. Enter the Microsoft account's email address for the user organization.
-* **license-type**: Required. Enter stakeholder, express, professional, or advanced based on the mapping provided in the following table. For Users who contribute to the code base require express or higher level of license-type. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+* **license-type**: Required. Enter stakeholder, express, professional, or advanced based on the mapping provided in the following table. For Users who contribute to the code base require express or higher level of license-type. For more information, see [About access levels](../../organizations/security/access-levels.md).
 * **send-email-invite**: Optional. Specify whether to send email invite for new user or not.
 * **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
@@ -125,7 +125,7 @@ ID                                    Display Name          Email               
 ```
 
 
-You can also add the user to the project-level **Contributors** group, the default Azure DevOps security group for people who contribute to your project. To learn more, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
+You can also add the user to the project-level **Contributors** group, the default Azure DevOps security group for people who contribute to your project. For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
 
 ```azurecli
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
@@ -311,7 +311,7 @@ After you add members to your project, each member gets an invitation email that
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
+> [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 
 ## Related articles
 

@@ -56,7 +56,7 @@ This article describes pull request guidelines and management considerations. Fo
 
 
 
-To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 <a name="pr-feedback"></a>
 ## Quality feedback for pull requests

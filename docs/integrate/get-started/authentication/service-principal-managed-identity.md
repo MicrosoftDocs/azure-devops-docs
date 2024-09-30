@@ -9,14 +9,14 @@ ms.custom: arm2024
 ms.author: wonga
 author: wonga
 ms.date: 11/10/2023
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ---
 
 # Use service principals & managed identities
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Add Microsoft Entra service principals and managed identities to your Azure DevOps organizations to grant access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
+Add Microsoft Entra service principals and managed identities to your Azure DevOps Services organizations to grant access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
 
 ## About service principals and managed identities
 
@@ -357,10 +357,10 @@ A helpful tip on how to get the access token from the Azure CLI to call git fetc
 git config -e
 ```
 
-1. Add the following lines, where the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`:
+1. Add the following lines, where the Azure DevOps resource's UUID is `00000000-0000-0000-0000-000000000000`:
 ```sh
 [credential]
-    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)\"; }; f" 
+    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource     00000000-0000-0000-0000-000000000000 --query accessToken -o tsv)\"; }; f" 
 ```
 
 1. Test that it works using: 

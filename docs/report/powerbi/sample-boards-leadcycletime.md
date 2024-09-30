@@ -21,7 +21,7 @@ The following image shows an example for average lead time broken down by priori
 
 :::image type="content" source="media/reports-boards/lead-time-trend-chart.png" alt-text="Screenshot of Power BI Lead Cycle Time trend chart report.":::
 
-To learn more about lead and cycle time, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
+For more information about lead and cycle time, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]

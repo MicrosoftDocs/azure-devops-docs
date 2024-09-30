@@ -1,25 +1,25 @@
 ---
-title: Troubleshoot Azure Resource Manager (ARM) service connections
+title: Troubleshoot Azure Resource Manager service connections
 ms.custom: devx-track-arm-template, arm2024
-description: How to troubleshoot Azure Resource Manager (ARM) service connections in Azure Pipelines
+description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 05/20/2024
+ms.date: 09/05/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Troubleshoot Azure Resource Manager (ARM) service connections
+# Troubleshoot Azure Resource Manager service connections
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
+This article presents the common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
-<a name="whathappens"></a>
+<a name="what-happens"></a>
 
-## What happens when you create an ARM service connection?
+## What happens when you create an Azure Resource Manager service connection?
 
 If you don't have a service connection, you can create one as follows:
 
@@ -31,32 +31,34 @@ If you don't have a service connection, you can create one as follows:
 
     :::image type="content" source="media/arm-service-connection.png" alt-text="Screenshot showing the service connections types.":::
 
-1. Select **Service principal (automatic)**, and then select **Next.
+1. Select **Service principal (automatic)**, and then select **Next**.
 
 1. Select **Subscription**, and then select your subscription from the drop-down list. Fill out the form and then select **Save** when you're done.
 
     :::image type="content" source="media/new-arm-service-connection.png" alt-text="Screenshot showing the new Azure Resource Manager service connection form.":::
 
-When you save your new ARM service connection, Azure DevOps then:
+When you save your new Azure Resource Manager service connection, Azure DevOps does the following actions:
 
 1. Connects to the Microsoft Entra tenant for to the selected subscription.
 1. Creates an application in Microsoft Entra ID on behalf of the user.
-1. After the application has been successfully created, assign the application as a contributor to the selected subscription.
+1. Assigns the application as a contributor to the selected subscription.
 1. Creates an Azure Resource Manager service connection using this application's details.
 
 > [!NOTE]
-> To create service connections you must be added to the Endpoint Creator group in your project settings: **Project settings** > **Service connections** > **Security**. Contributors are added to this group by default.
+> To create service connections, get added to the Endpoint Creator group in your project settings: **Project settings** > **Service connections** > **Security**. Contributors are added to this group by default.
 
 <a name="troubleshoot"></a>
 
 ## Troubleshooting scenarios
 
-Below are some of the issues that may occur when creating service connections:
+The following issues might occur when you create service connections:
 
-- [Troubleshoot ARM service connections](#troubleshoot-azure-resource-manager-arm-service-connections)
-  - [What happens when you create an ARM service connection?](#what-happens-when-you-create-an-arm-service-connection)
+- [Troubleshoot Azure Resource Manager service connections](#troubleshoot-azure-resource-manager-service-connections)
+  - [What happens when you create an Azure Resource Manager service connection?](#what-happens)
   - [Troubleshooting scenarios](#troubleshooting-scenarios)
-    - [Insufficient privileges to complete the operation](#insufficient-privileges-to-complete-the-operation)
+- [Troubleshoot Azure Resource Manager service connections](#troubleshoot-azure-resource-manager-service-connections)
+  - [What happens when you create an Azure Resource Manager service connection?](#what-happens-when-you-create-an-azure-resource-manager-service-connection)
+  - [Troubleshooting scenarios](#troubleshooting-scenarios)
       - [The user has only guest permission in the directory](#the-user-has-only-guest-permission-in-the-directory)
       - [The user isn't authorized to add applications in the directory](#the-user-isnt-authorized-to-add-applications-in-the-directory)
     - [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found)
@@ -69,14 +71,6 @@ Below are some of the issues that may occur when creating service connections:
     - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
   - [Related articles](#related-articles)
 
-<a name="privileges"></a>
-
-### Insufficient privileges to complete the operation
-
-This permissions issue typically occurs when the system attempts to create an application in Microsoft Entra ID on your behalf.
-
-This issue might be due to the following causes:
-
 * [The user has only guest permission in the directory](#guestonly)
 * [The user isn't authorized to add applications in the directory](#notauthtoadd)
 
@@ -86,7 +80,7 @@ This issue might be due to the following causes:
 
 The best approach to resolve this issue, while granting only the minimum permissions to the user, is to increase the Guest user permissions as follows.
 
-1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
+1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner) or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
 1. Select **Microsoft Entra ID** in the left navigation bar.
 
@@ -100,22 +94,22 @@ The best approach to resolve this issue, while granting only the minimum permiss
 
 1. Change the **Guest user permissions are limited** option  to **No**.
 
-Alternatively, if you're prepared to give the user administrator-level permissions, you can make the user a member of the **Global administrator** role. To do so follow the steps:
+Alternatively, if you're prepared to give the user administrator-level permissions, you can make the user a member of an Administrator role. Do the following steps:
 
 > [!WARNING]
-> Users who are assigned to the Global administrator role can read and modify every administrative setting in your Microsoft Entra organization. As a best practice, we recommend that you assign this role to fewer than five people in your organization. 
+> Assigning users to the Global Administrator role allows them to read and modify every administrative setting in your Microsoft Entra organization. As a best practice, assign this role to fewer than five people in your organization. 
 
-1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
+1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner) or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
-1. Select **Microsoft Entra ID** from the left navigation pane.
+2. Select **Microsoft Entra ID** from the left navigation pane.
 
-1. Ensure you're editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and sign in using the appropriate credentials if necessary.
+3. Ensure you're editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and sign in using the appropriate credentials if necessary.
 
-1. Select **Users** from the **Manage** section.
+4. Select **Users** from the **Manage** section.
    
-1. Use the search box to search for the user you want to manage.
+5. Use the search box to search for the user you want to manage.
 
-1. Select **Directory role** from the **Manage** section, and then change the role to **Global administrator**. Select **Save** when you're done.
+6. Select **Directory role** from the **Manage** section, and then change the role. Select **Save** when you're done.
 
 It typically takes 15 to 20 minutes to apply the changes globally. The user then can try recreating the service connection.
 
@@ -163,7 +157,7 @@ A maximum of 50 Azure subscriptions are listed in the various Azure subscription
 
 1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
 
-1. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+1. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing).
  
 1. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
 
@@ -259,4 +253,4 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 - [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
 - [Review pipeline logs](../troubleshooting/review-logs.md)
 - [Define variables](../process/variables.md)
-- [Classic release and artifacts variables](./variables.md)
+- [Use classic release and artifacts variables](./variables.md)

@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/08/2024
+ms.date: 09/06/2024
 ---
 
 # Use Markdown in Azure DevOps
@@ -52,7 +52,7 @@ For more information, see [Definition of Done (board)](../../boards/boards/add-c
 
 Structure your content using headers. Headers segment longer content, making it easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. You can use up to six levels of headings.
+To set a heading, start a line with a hash character `#`. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. You can use up to six levels of headings.
 
 **Example:**
 ```markdown
@@ -75,7 +75,7 @@ Make your text easier to read by breaking it into paragraphs or line breaks.
 
 ### Pull requests
 
-In pull request comments, select **Enter** to insert a line break and begin text on a new line.
+In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
 
 **Example - pull request comment:**
 
@@ -287,7 +287,7 @@ clear name to description mapping.
 - The first two lines of a table set the column headers and the alignment of elements in the table.
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right).
 - To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere).  
-- Make sure to end each row with a CR or LF.
+- Make sure to end each row with a carriage return (CR) or line feed (LF).
 - You must enter a blank space before and after work item or pull request (PR) mentioned inside a table cell.
 
 **Example:**
@@ -387,7 +387,7 @@ In Markdown files and widgets, you can set text hyperlinks for your URL using th
 [Link Text](Link URL)
 ```
 
-When you link to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
+When you link to another Markdown page in the same Git or Team Foundation Version Control (TFVC) repository, the link target can be a relative path or an absolute path in the repository.  
 
 **Supported links for Welcome pages:**
 
@@ -406,7 +406,7 @@ When you link to another Markdown page in the same Git or TFVC repository, the l
 - URL: `[text to display](http://address.com)`
 
 > [!NOTE]  
-> - Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
+> - Links to documents on file shares using `file://` aren't supported for security purposes.
 > - For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#source-control-relative-links).
 
 **Example:**  
@@ -437,10 +437,10 @@ For example:
 
 ### Anchor links
 
-Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. In general, the following conventions apply:
+Within Markdown files, anchor IDs get assigned to all headings when rendered as HTML. Anchor links also support special characters. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. The following conventions apply to anchor links:
 
 - Punctuation marks and leading white spaces within a file name are ignored
-- Upper case letters convert to lower case letter
+- Upper case letters convert to lower case letters
 - Spaces between letters convert to dashes (-)
 
 **Example:**
@@ -459,7 +459,7 @@ The syntax for an anchor link to a section...
 [Link to a heading in the page](#link-to-a-heading-in-the-page)
 </pre>
 <br/>
-The ID is all lower case, and the link is case-sensitive, so be sure to use lower case, even though the heading itself uses upper case.
+The ID is all lower case, and the link is case-sensitive, so be sure to use lower case, even though the heading uses upper case.
 
 You can also reference headings within another Markdown file:
 
@@ -548,7 +548,7 @@ To mark items as completed by checking the boxes, you need to manually edit the 
 
 ## Emoji
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support [most emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support [*most* emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
 **Example:**
 
@@ -604,7 +604,7 @@ To escape emojis, enclose them using the \` character.
       Enter `&#92;&#92;` to get \   
       Enter `&#92;&#95;` to get &#95;   
       Enter `&#92;#` to get #  
-      Enter `&#92;(` to get (  
+      Enter `&#92;(` to get (
       Enter `&#92;.` to get .  
       Enter `&#92;!` to get !  
       Enter `&#92;*` to get *  
@@ -621,7 +621,7 @@ In pull request comments and wiki pages, you can attach files to illustrate your
 
 If you have an image on your clipboard, you can paste it into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
-Attaching nonimage files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
+Attaching nonimage files creates a link to the file in your comment. To change the text displayed in the link, update the description text between the brackets.
 The attached image files render directly into your comment or wiki pages. Save or update your comment or wiki page with an attachment. Then, you can see the attached image and select links to download the attached files.
 
 Attachments support the following file formats:
@@ -978,8 +978,8 @@ To add a collapsible section in a wiki page, use the following syntax:
 
 Make sure to add an empty line in the following areas:
 
-- after the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
-- after the closing `</details>` tag if you have multiple collapsible sections
+- After the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
+- After the closing `</details>` tag if you have multiple collapsible sections
 
 ## Embed videos in a wiki page
 
@@ -1047,8 +1047,6 @@ Use the batch API `pagesBatch` to see the daily quantity of visits to all pages 
 ## Link to work items from a wiki page
 
 Enter the pound sign (`#`), and then enter a work item ID.
-
-
 
 <a name="html"></a>
 

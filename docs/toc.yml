@@ -223,7 +223,7 @@
     displayName: oauth, secure, resources, access, credentials, account, approve
     href: ./service-hooks/authorize.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Service hook consumers
-    displayName: subscription, event, consumer, action, storage, webhooks, bus, campfire, hipchat, jenkins, kato, trello, zendesk
+    displayName: subscription, event, consumer, action, storage, webhooks, bus, jenkins, trello, zendesk
     href: ./service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Service hook events
     displayName: build, release, deployment, created, updated, deleted, restored, commented, changed, approval
@@ -322,7 +322,7 @@
   - name: How to buy Azure DevOps CALs >>
     href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Billing
-    href: ./organizations/billing/overview.md
+    href: organizations/index.yml
   - name: Build Visual Studio extensions >>
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
   - name: Build apps for Windows >>

@@ -83,8 +83,6 @@ pool:
   vmImage: macos-11
 ```
 
-The macOS 11 pipeline image has different tools and tool, to learn more about this version you can see the full documentation [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md).
-
 ### Removal of Ubuntu 16.04 image on Microsoft-hosted agents
 
 As announced [earlier](/azure/devops/release-notes/2021/pipelines/sprint-187-update#ubuntu-1604-will-be-removed-from-microsoft-hosted-pools-in-september-2021), we'll be removing Ubuntu 16.04 image from Microsoft-hosted agents on September 20, 2021. Traditional 5-years support of Ubuntu 16.04 by Canonical ended in April, 2021. You'll need to migrate ubuntu-16.04 pipelines to ubuntu-18.04 or ubuntu-latest which will run on Ubuntu 20.04 LTS.

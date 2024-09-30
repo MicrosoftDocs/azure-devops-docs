@@ -70,7 +70,7 @@ The following table describes the work item types used to support the Azure DevO
       - [**Manual**](create-test-cases.md): Test cases that define different steps that you run using Test Runner or other supported client. 
       - [**Automated**](run-automated-tests-from-test-hub.md): Test cases that are designed to run within an Azure Pipeline.
       > [!TIP]
-      > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
+      > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -221,7 +221,7 @@ Several controls appear in several test-specific work items as described in the 
 
 ## Customize test-specific work item types
 
-For the Inherited process, you can customize test plans, test suites, and test cases. For the On-premises XML process, you can customize all test-specific work item types. To learn more, see [Customize work tracking objects to support your team's processes](../reference/customize-work.md). 
+For the Inherited process, you can customize test plans, test suites, and test cases. For the On-premises XML process, you can customize all test-specific work item types. For more information, see [Customize work tracking objects to support your team's processes](../reference/customize-work.md). 
  
 ## Permissions required to modify work items 
 
@@ -338,11 +338,11 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 
 
-To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Change project-level permissions](../organizations/security/change-project-level-permissions.md). 
+For more information about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Change project-level permissions](../organizations/security/change-project-level-permissions.md). 
 
 ## Export, import, and bulk update of test-specific work items 
 
-As with other work items, you can bulk edit test-specific work items. To learn more, see the following articles:  
+As with other work items, you can bulk edit test-specific work items. For more information, see the following articles:  
 
 ::: moniker range=">= azure-devops-2020"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
@@ -396,7 +396,7 @@ The following table describes several terms used in manual and exploratory testi
       - **Block Test**
       - **Not Applicable**  
       ---
-      To learn more, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
+      For more information, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
    :::column-end:::
 :::row-end:::
 :::row:::

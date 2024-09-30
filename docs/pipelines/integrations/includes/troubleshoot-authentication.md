@@ -5,27 +5,26 @@ title: Azure Pipelines with Slack
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 3/27/2023
+ms.date: 7/22/2024
 ---
 
-If you are experiencing the following errors when using the Azure Pipelines App for Slack, follow the procedures in this section. 
+If you get the following errors when using the Azure Pipelines App for Slack, try the procedures in this section.
 
-### Sorry, something went wrong. Please try again
+### Sorry, something went wrong. Please try again.
 
-The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth](../../../organizations/accounts/change-application-access-policies.md) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and turn on the **Third-party application access via OAuth for the organization**.
+The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth](../../../organizations/accounts/change-application-access-policies.md) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and enable **Third-party application access via OAuth**.
 
 :::image type="content" source="../media/troubleshooting/third-party-app-consent.png" alt-text="A screenshot showing how to enable third party access via OAuth.":::
 
-### Configuration failed. Please make sure that the organization exists and that you have sufficient permissions
+### Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.
 
-Sign out of Azure DevOps by navigating to this URL: `https://aka.ms/VsSignout`.
+1. Sign out of Azure DevOps by navigating to `https://aka.ms/VsSignout`.
 
-Open a private/incognito browser window and navigate to `https://aex.dev.azure.com/me` and sign in. Select the directory that contains the organization where the pipeline you want to subscribe to is located.
+1. In a private/incognito browser window, navigate to `https://aex.dev.azure.com/me` and sign in. Make sure to select the directory containing the organization that has your pipeline.
 
-:::image type="content" source="../media/troubleshooting/profile-page.png" alt-text="A screenshot showing how to select your pipeline directory.":::
+   :::image type="content" source="../media/troubleshooting/profile-page.png" alt-text="A screenshot showing how to select your pipeline directory.":::
 
-Using the **same browser**, open a new tab and go to `https://slack.com`. Log in to your workspace using the web client, and then run the `/azpipelines signout` command followed by the `/azpipelines signin`. 
+1. In the same browser, open a new tab and go to `https://slack.com`. Sign in to your workspace using the web client, and then run `/azpipelines signout` followed by `/azpipelines signin`. 
 
-Select the `Sign in` button and you'll be redirected to a consent page as shown in the example below. Verify that the directory displayed next to your email address matches the one selected in the previous step. Select **Accept** to complete the sign-in process.
+1. Select the `Sign in` button. If you're redirected to a consent page, verify that the directory displayed next to your email address matches the one you signed in to.
 
-:::image type="content" source="../media/troubleshooting/consent-page-slack.png" alt-text="A screenshot showing how to allow pipelines slack integration.":::

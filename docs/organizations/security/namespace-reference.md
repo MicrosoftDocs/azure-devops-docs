@@ -30,8 +30,8 @@ Each family of resources, such as work items or Git repositories, is secured thr
 
 ## Permission management tools 
 
-The recommended method for managing permissions is through the web portal. However, to set a permission that isn't surfaced through the web portal or set more granular permissions, you can use one of the command line tools or REST API.  
-- For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
+The recommended method for managing permissions is through the web portal. However, to set permissions unavailable through the portal or granular permissions, use command line tools or the REST API.
+- For Azure DevOps Services, you can use the `az devops security permission` commands. 
 - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
 - For Azure DevOps git repositories,[tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
 - For Team Foundation Version Control (TFVC) repositories, [TF TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
@@ -40,7 +40,7 @@ For all Azure DevOps instances, you can use the [Security REST API](/rest/api/az
 
 ## Security namespaces and their IDs
 
-This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories based on how they're managed through the web portal. 
+This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces are grouped into the following categories based on how they're managed through the web portal. 
 
 
 - Object-level 
@@ -205,6 +205,8 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for repository-specific permissions**: `repoV2/PROJECT_ID/REPO_ID`  
       <br/>
+      **Token format for branch-level permissions** is described in [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/).
+      <br/><br/>
       **ID:** `2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87`
    :::column-end:::
 :::row-end:::
@@ -249,7 +251,7 @@ The following table describes the namespaces that manage object-level permission
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/task-group-permissions.md). 
+      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#task-group-permissions). 
       <br/><br/>
       **Token format for project-level permissions**: `PROJECT_ID`
       <br/>
@@ -392,13 +394,15 @@ The following table describes the namespaces that manage project-level permissio
       <br/>
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
-      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
+      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.
+::: moniker range=">= azure-devops"  
       Assume you have a project named `Test Project 1`.  
       You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
-      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`  
+      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`
+::: moniker-end  
       <br/>
       **ID:** `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::
@@ -455,7 +459,7 @@ The following table describes the namespaces that manage project-level permissio
 
 ## Organization-level namespaces and permissions 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions. To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions. For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -463,7 +467,7 @@ The following table describes the namespaces that manage organization-level perm
 ## Collection-level namespaces and permissions 
 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ::: moniker-end
 
@@ -772,7 +776,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-      To learn more, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
+      For more information, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
       **ID:** `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
 :::row-end:::
@@ -1071,7 +1075,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::
@@ -1171,7 +1175,7 @@ The following table describes the security namespaces and permissions that aren'
       `QueryUsageSummary`
    :::column-end:::
    :::column span="2":::
-      Manages permissions to query usage. By default, all members of the Project Collection Administrators groups and users granted Stakeholder access are granted permission to query usage summary for everyone. To learn more, see [Rate limits](../../integrate/concepts/rate-limits.md).
+      Manages permissions to query usage. By default, all members of the Project Collection Administrators groups and users granted Stakeholder access are granted permission to query usage summary for everyone. For more information, see [Rate limits](../../integrate/concepts/rate-limits.md).
       <!--- Update link when new article on Utilization is published. --> 
       **Token format**: `/`
       <br/>
@@ -1261,5 +1265,4 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
-- [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
 

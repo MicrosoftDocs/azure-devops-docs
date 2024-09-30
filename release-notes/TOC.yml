@@ -10,6 +10,16 @@
       items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/sprint-245-update.md
+          - name: September 4
+            href: 2024/sprint-244-update.md
+          - name: August 13
+            href: 2024/sprint-243-update.md
+          - name: July 25
+            href: 2024/sprint-242-update.md
+          - name: July 3
+            href: 2024/sprint-241-update.md
           - name: June 14
             href: 2024/sprint-240-update.md
           - name: May 2
@@ -257,6 +267,12 @@
         items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/boards/sprint-245-update.md
+          - name: September 4
+            href: 2024/boards/sprint-244-update.md
+          - name: July 25
+            href: 2024/boards/sprint-242-update.md
           - name: June 14
             href: 2024/boards/sprint-240-update.md
           - name: April 10
@@ -398,6 +414,10 @@
         items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/repos/sprint-245-update.md
+          - name: September 4
+            href: 2024/repos/sprint-244-update.md
           - name: June 14
             href: 2024/repos/sprint-240-update.md
           - name: February 29
@@ -473,6 +493,16 @@
         items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/pipelines/sprint-245-update.md
+          - name: September 4
+            href: 2024/pipelines/sprint-244-update.md
+          - name: August 13
+            href: 2024/pipelines/sprint-243-update.md
+          - name: July 25
+            href: 2024/pipelines/sprint-242-update.md
+          - name: July 3
+            href: 2024/pipelines/sprint-241-update.md
           - name: June 14
             href: 2024/pipelines/sprint-240-update.md
           - name: May 2
@@ -672,10 +702,14 @@
         items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/testplans/sprint-245-update.md
           - name: June 14
             href: 2024/testplans/sprint-240-update.md
           - name: February 29
             href: 2024/testplans/sprint-235-update.md
+          - name: January 11
+            href: 2024/testplans/sprint-232-update.md
           expanded: false
         - name: "2020"
           items:
@@ -769,6 +803,14 @@
         items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/ghazdo/sprint-245-update.md
+          - name: September 4
+            href: 2024/ghazdo/sprint-244-update.md
+          - name: August 13
+            href: 2024/ghazdo/sprint-243-update.md
+          - name: July 3
+            href: 2024/ghazdo/sprint-241-update.md
           - name: June 14
             href: 2024/ghazdo/sprint-240-update.md
           - name: May 2
@@ -795,6 +837,8 @@
         items:
         - name: "2024"
           items:
+          - name: July 3
+            href: 2024/general/sprint-241-update.md 
           - name: May 2
             href: 2024/general/sprint-238-update.md
           - name: March 26
@@ -910,8 +954,8 @@
         items:
         - name: "2024"
           items:
-          - name: January 11
-            href: 2024/reporting/sprint-232-update.md
+        - name: September 4
+          href: 2024/reporting/sprint-244-update.md
           expanded: true 
         - name: "2023"
           items:
@@ -1008,6 +1052,3 @@
     href: /azure/devops/server/release-notes/azuredevops2020
 - name: Documentation updates
   href: ./docswhatsnew/toc.yml
-
-- name: Subscribe to updates
-  href: https://azure.microsoft.com/updates/

@@ -60,7 +60,7 @@ Tests you create from the board are automatically linked to the user story or ba
 
    ![Open test case from board](media/open-test-case-form-from-kanban-board.png)
 
-To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
+For more information about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
 Before you run the test, you must add details.
 

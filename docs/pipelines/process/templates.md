@@ -3,9 +3,10 @@ title: Templates
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 06/30/2023
+ms.date: 09/10/2024
 monikerRange: ">=azure-devops-2019"
 zone_pivot_groups: template-type
+ai-usage: ai-assisted
 ---
 
 # Template usage reference
@@ -309,6 +310,12 @@ stages:
 
 #### Job, stage, and step templates with parameters
 
+In the following templates:
+
+- `templates/npm-with-params.yml` defines two parameters: `name` and `vmImage` and creates a job with the name parameter for the job name and the vmImage parameter for the VM image. 
+- The pipeline (`azure-pipelines.yml`) references the template three times, each with different parameter values referring to the operating system and VM image names. 
+- The built pipeline runs on a different VM image and named according to the specified OS. Each job performs npm install and npm test steps.
+
 ```yaml
 # File: templates/npm-with-params.yml
 
@@ -349,9 +356,58 @@ jobs:
     name: Windows
     vmImage: 'windows-latest'
 ```
+**Stage templates with multiple parameters**
+
+In the following templates:
+- The `stage-template.yml` template defines four parameters: `stageName`, `jobName`, `vmImage`, and `scriptPath`, all of type string. The template creates a stage using the `stageName` parameter to set the stage name, defines a job with `jobName`, and includes a step to run a script. 
+- The pipeline, `azure-pipeline.yml`, then dynamically define stages and jobs using parameters and runs a job that executes a script, `build-script.sh`.
+
+
+```yaml
+# stage-template.yml
+
+parameters:
+  - name: stageName
+    type: string
+  - name: jobName
+    type: string
+  - name: vmImage
+    type: string
+  - name: scriptPath
+    type: string
+
+stages:
+  - stage: ${{ parameters.stageName }}
+    jobs:
+      - job: ${{ parameters.jobName }}
+        pool:
+          vmImage: ${{ parameters.vmImage }}
+        steps:
+          - script: ./${{ parameters.scriptPath }}
+```
+
+```yaml
+# azure-pipelines.yml
+trigger:
+- main
+
+stages:
+- template: stage-template.yml
+  parameters:
+    stageName: 'BuildStage'
+    jobName: 'BuildJob'
+    scriptPath: 'build-script.sh' # replace with script in your repository
+    vmImage: 'ubuntu-latest'
+```
+
+**Templates with steps and parameters**
 
 You can also use parameters with step or stage templates.
-For example, steps with parameters:
+
+In the following templates:
+
+- The template (`templates/steps-with-params.yml`) defines a parameter named `runExtendedTests` with a default value of false.
+- The pipeline (`azure-pipelines.yml`)  runs `npm test` and `npm test --extended` because the `runExtendedTests` parameter is true.
 
 ```yaml
 # File: templates/steps-with-params.yml
@@ -482,6 +538,79 @@ stages:
 
 :::zone-end
 
+## Extend from a template and use an include template with variables
+
+One common scenario is to have a pipeline with stages for development, testing, and production that uses both a template for variables and an extends template for stages or jobs. 
+
+In the following example, `variables-template.yml`  defines a set of virtual machine variables that are then used in `azure-pipeline.yml`. 
+
+```yaml
+# variables-template.yml
+
+variables:
+- name: devVmImage
+  value: 'ubuntu-latest'
+- name: testVmImage
+  value: 'ubuntu-latest'
+- name: prodVmImage
+  value: 'ubuntu-latest'
+```
+The following file, `stage-template.yml` defines a reusable stage configuration with three parameters (`name`, `vmImage`, `steps`) and a job named `Build`. 
+
+```yaml
+# stage-template.yml
+parameters:
+- name: name
+  type: string
+  default: ''
+- name: vmImage
+  type: string
+  default: ''
+- name: steps
+  type: stepList
+  default: []
+
+stages:
+- stage: ${{ parameters.name }}
+  jobs:
+  - job: Build
+    pool:
+      vmImage: ${{ parameters.vmImage }}
+    steps: ${{ parameters.steps }}
+```
+
+The following pipeline, `azure-pipelines.yml`, imports variables from `variables-template.yml`, and then uses the `stage-template.yml` template for each stage.  Each stage (Dev, Test, Prod) gets defined with the same template but with different parameters, leading to consistency across stages while allowing for customization. The Prod stage includes an environment variable as an example of something you might use for authentication. 
+
+```yaml
+# azure-pipelines.yml
+trigger:
+- main
+
+variables:
+- template: variables-template.yml
+
+stages:
+- template: stage-template.yml
+  parameters:
+    name: Dev
+    vmImage: ${{ variables.devVmImage }}
+    steps:
+      - script: echo "Building in Dev"
+- template: stage-template.yml
+  parameters:
+    name: Test
+    vmImage: ${{ variables.testVmImage }}
+    steps:
+      - script: echo "Testing in Test"
+- template: stage-template.yml
+  parameters:
+    name: Prod
+    vmImage: ${{ variables.prodVmImage }}
+    steps:
+      - script: echo "Deploying to Prod"
+        env:
+          SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
 ## Reference template paths
 
 Template paths can be an absolute path within the repository or relative to the file that does the including.

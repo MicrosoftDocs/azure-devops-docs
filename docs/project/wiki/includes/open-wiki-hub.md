@@ -4,6 +4,8 @@ ms.topic: include
 
 ## Open the Wiki  
 
+You can open and view a wiki page for your project.
+
 #### [Browser](#tab/browser) 
 
 Connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.
@@ -32,10 +34,6 @@ az devops wiki show --wiki
 - **--open**: Optional. Open the wiki page in your web browser.
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
 
 ### Example
 
@@ -81,6 +79,6 @@ az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hell
 
 ::: moniker-end
 
-
+[!INCLUDE [temp](../../../includes/note-cli-not-supported.md)] 
 
 * * *

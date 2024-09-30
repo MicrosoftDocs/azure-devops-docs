@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 04/12/2024
+ms.date: 09/06/2024
 ---
 
 # Add and edit wiki pages
@@ -54,9 +54,9 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ## Prerequisites
 
-* You must have a [provisioned wiki](wiki-create-repo.md).
-* You must be a member of the team project as a contributor to add or update wiki pages.
-* You must have Basic access level to edit the project wiki.
+* Have a [provisioned wiki](wiki-create-repo.md).
+* Be a member of the team project as a **Contributor** to add or update wiki pages.
+* Have **Basic** access level to edit the project wiki.
 
 <a id="open-wiki">  </a>
 
@@ -106,9 +106,6 @@ accepted values: `ascii`, `utf-16be`, `utf-16le`, `utf-8`
 -  **--file-path**: Optional. Path of the file input if the content is specified in the file.    
 -  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using the az devops configure `-d project=NAME_OR_ID`. 
 
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range="azure-devops"
 
 ### Examples
 
@@ -151,14 +148,14 @@ For code wikis, you can edit a page in the side-by-side editor, using the markdo
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Edit wiki page.](media/wiki/edit-in-repos.png)
 
-If your code wiki has branch policies, select **Edit in Repos** to create a branch and continue editing. The **Edit in Repos** option is specifically available for code wikis.
+If your code wiki has branch policies, select **Edit in Repos** to create a branch and continue editing. The **Edit in Repos** option is available for code wikis.
 
 ::: moniker-end
 
 To delete a page, open the context menu from the tree or the one inside the page and select **Delete**. Confirm the delete in the dialog that opens.
 
 > [!NOTE]  
-> When you delete a page, you also delete all the metadata and all its subpages (if any) in the hierarchy.
+> When you delete a wiki page, you also delete all its metadata and any subpages within its hierarchy.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -189,10 +186,6 @@ az devops wiki page update --path
 - **--file-path**: Optional. Path of the file input if the content is specified in the file.
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range="azure-devops"
 
 
 ### Examples
@@ -235,8 +228,6 @@ az devops wiki page delete --path
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 - **--yes -y**: Optional. Don't prompt for confirmation.
 
-[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
-
 ### Example
 
 Delete a wiki page with the path 'my wiki' in a wiki named 'myprojectwiki.'
@@ -261,13 +252,37 @@ You can reorder pages within the wiki tree view to have pages appear in the orde
 * Change the order of the page within the hierarchy.
 
 > [!NOTE]  
-> Moving a page in the hierarchy may break links to it from other pages. You can always fix the links manually after you move. Reordering a page within a hierarchy has no impact on page links.
+> Moving a page in the hierarchy might break links from other pages. You can manually fix these links after moving the page. Reordering a page within the hierarchy does not affect page links.
+
+### Manually fix a broken link after moving a page
+
+To manually fix a broken link after moving a page in the hierarchy, follow these steps:
+
+1. **Identify broken links:**
+   - Go to the pages that originally linked to the moved page.
+   - Look for broken links, which might appear as errors or missing content.
+2. **Edit the linking page:** Open the page with the broken link in edit mode.
+3. **Update the link:**
+   - Locate the broken link in the content.
+   - Update the link to point to the new location of the moved page, which typically involves changing the URL or path in the link.
+4. **Save changes:** Save the changes to the page to apply the updated link.
+5. **Verify the fix:** Go to the updated link to ensure it correctly points to the moved page.
+
+### Example
+
+If you moved a page from `/docs/old-path/page.md` to `/docs/new-path/page.md`, you'd do the following steps:
+
+1. Find the broken link in the content, such as `Link to Page`.
+2. Edit the link to the new path: `Link to Page`.
+3. Save the changes and verify that the link now correctly points to the new location.
+
+### Use keyboard shortcuts to reorder pages
 
 You can also use keyboard shortcuts to reorder pages. Select a page and press **CTRL + UP ARROW** or **CTRL + DOWN ARROW** to change page orders.
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
 
 > [!div class="mx-imgBorder"]  
-> ![Move wiki page in the hierarchy](media/wiki/wiki-move-page.png)
+> ![Screenshot showing moving a wiki page in the hierarchy.](media/wiki/wiki-move-page.png)
 
 For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts).
 
@@ -282,7 +297,7 @@ By default, the first page you add when you create a wiki is set as the wiki hom
 
 ## Related articles
 
-- [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
-- [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)
-- [Update wiki offline](wiki-update-offline.md)
-- [Wiki Markdown guidance](markdown-guidance.md)
+- [Follow a wiki page and receive notifications](follow-notifications-wiki-pages.md)
+- [Compare provisioned vs. published wiki](provisioned-vs-published-wiki.md)
+- [Update a wiki offline](wiki-update-offline.md)
+- [Use wiki Markdown guidance](markdown-guidance.md)

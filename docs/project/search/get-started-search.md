@@ -8,7 +8,7 @@ ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 09/28/2023
+ms.date: 08/08/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,53 +18,45 @@ monikerRange: '<= azure-devops'
 
 You can quickly find work items, code files, wiki pages, or packages based on a keyword, wildcards, and other supported search filters with the search function.
 
-See the following quick links to more information:
-- [Code Search Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
-- [Search features](#search-features-usage-and-examples), further in this article
+For more information, see the following links:
+
 - [Functional code search](functional-code-search.md)
+- [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+- [Functional work item search](functional-work-item-search.md)
+- [Functional package search](functional-package-search.md)
 
 ## Prerequisites
 
-- Every project member can use the search functions, including project members granted Stakeholder, Basic, and higher levels of access.
-- When you search across the organization or collection, only results for which a project member has access are listed.
-- Stakeholder wiki search results are limited to provisioned wikis. Because published wikis require access to regular repositories, which Stakeholders don't have access to, results for published wikis don't appear in the search results. Similarly, Code search results don't appear for Stakeholders.
+- **Access levels:**
+  - **All project members:** Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access.
+- **Search results:**
+  - **Access-based results:** When you're searching across the organization or collection, only results for which a project member has access are listed.
+  - **Stakeholder limitations:**
+    - **Wiki search:** Stakeholder wiki search results are limited to provisioned wikis. Published wiki results don’t appear because they require access to regular repositories, which Stakeholders don’t have.
+    - **Code search:** Code search results don’t appear for Stakeholders.
 
 ::: moniker range="< azure-devops"
-
 > [!IMPORTANT]
-> For Code search, a Collection Administrator must [Install and configure search](install-configure-search.md).
-
+> A Collection Administrator must [install and configure search](install-configure-search.md).
 ::: moniker-end
 
-## Start your search with a keyword
+## Search tips
 
-Start your search using a keyword. You can then apply other options, as needed, to broaden or narrow your search results.
-
-::: moniker range=">= azure-devops-2019"
-
-:::image type="content" source="media/shared/title-bar-search-box-select-type-tfs.png" alt-text="Search boxes in Azure DevOps":::
-
-::: moniker-end
-
-
-
-- To get results that match the input, you may need to remove filters and search again. After you see the search results, you can narrow them down by applying appropriate filters and searching again. 
-- Make sure your search terms are spelled correctly. Work item search doesn't ignore spelling errors. 
-- You might get a message that no matching files are found if you use a wildcard search with too many hits, such as a simple wildcard search string. In this situation, make your search more specific to decrease the number of matches. Add more characters of the word or words you want to find, or use a condition or filter to restrict the number of possible matches. 
-- Searches aren't case sensitive.
+- **Use keywords:** Start your search using a keyword. You can then apply other options, as needed, to broaden or narrow your search results.
+    :::image type="content" source="media/shared/title-bar-search-box-select-type-tfs.png" alt-text="Screenshot of search boxes in Azure DevOps":::
+- **Adjust filters:** If your initial search doesn’t yield the desired results, try removing filters and searching again. Once you see the search results, you can narrow them down by applying appropriate filters and searching again.
+- **Check spelling:** Ensure your search terms are spelled correctly, as work item search doesn't ignore spelling errors.
+- **Refine wildcard searches:** If you receive a message that no matching files are found due to a wildcard search with too many hits, make your search more specific. Add more characters of the word or words you want to find, or use a condition or filter to restrict the number of possible matches.
+- **Case insensitivity:** Searches aren't case-sensitive.
 
 ## Search features, usage, and examples
 
 ::: moniker range="azure-devops"
-
 The following features apply to all searches, including work items, code, wikis, and packages.
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
 The following features apply to all searches, including work items, code, and packages.
-
 ::: moniker-end
 
 ---  
@@ -100,7 +92,7 @@ The following features apply to all searches, including work items, code, and pa
       Search based on an exact match, enclosed in double-quotes.
    :::column-end:::
    :::column span="2":::
-      `"Client not found"` finds instances that contain the exact phrase match *Client not found*.
+      `"Client not found"` finds instances that contain the exact phrase match *Client not found*. Search might not handle special characters as expected. Try escaping special characters or simplifying the search phrase.
    :::column-end:::
 :::row-end:::
 ---
@@ -134,8 +126,8 @@ The following features apply to all searches, including work items, code, and pa
    :::column span="2":::
       - `Validate AND revisit` finds files that contain both the words *validate* and *revisit*.
       - `Validate OR revisit` finds files that contain either of the words *validate* or *revisit*.
-      - `Validate NOT revisit` finds files that contain the word *validate* but not the word *revisit*.
-      - `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word *revisit* or files that contain the phrase *release delayed*.
+      - `Validate NOT revisit` finds files that contain the word *validate* but not the word, *revisit*.
+      - `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word, *revisit, or files that contain the phrase *release delayed*.
    :::column-end:::
 :::row-end:::
 ---
@@ -185,8 +177,8 @@ You can search from any of the following pages:
 - Wiki page: Automatically go to a wiki page you recently opened.
 
 For more information, see the following articles:
-- [Filter backlogs, boards, and plans](../../boards/backlogs/filter-backlogs-boards-plans.md).
-- [Provisioned vs. published wiki](../wiki/provisioned-vs-published-wiki.md).
+- [Filter backlogs, boards, and plans](../../boards/backlogs/filter-backlogs-boards-plans.md)
+- [Provisioned vs. published wiki](../wiki/provisioned-vs-published-wiki.md)
 
 > [!TIP]
 > **No results found for ...**  
@@ -279,17 +271,15 @@ See the following table for more search tasks and actions.
 
 ::: moniker range="< azure-devops"
 
-## Search re-index requirements
+## Search reindex requirements
 
-Search for Azure DevOps Server has the following limitation:
-
-- If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [re-index all your collections](manage-search.md#reindex-a-repository-or-collection).
+Search has the following limitation: If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [reindex all your collections](manage-search.md#reindex-a-repository-or-collection).
 
 ::: moniker-end
 
 ## Marketplace extensions
 
-- [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) - Extends search with fast, flexible, and precise search results across all your code. Required for searching repositories.
+- [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) - Extends search with fast, flexible, and precise search results across all your code. Required for searching repositories.
 - [Azure Paths Search](https://marketplace.visualstudio.com/items?itemName=wavemotionio.ado-areapaths) - Adds a special search hub to Boards for searching within iterations and area paths without having to create and maintain custom queries.
 
 > [!NOTE]

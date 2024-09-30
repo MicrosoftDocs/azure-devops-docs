@@ -16,21 +16,21 @@ ms.date: 08/22/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To manage work tracking effectively, you can manage access to specific features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
+To manage work tracking effectively, assign specific permissions to users or groups for particular [objects, projects, or collections](#business-workflows). You can also [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, controlling their actions accordingly. For most features, we recommend adding users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> - For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 ::: moniker-end
 
 ## Prerequisites  
 ::: moniker range="azure-devops"
-- To set work tracking permissions, you must be a member of the [**Project Administrators** group](change-project-level-permissions.md) or have explicit permissions to manage the work tracking area as described in this article. 
+To set work tracking permissions, you must be a member of the [**Project Administrators** group](change-project-level-permissions.md) or have explicit permissions to manage the work tracking area as described in this article. 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-- To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
+To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
 ::: moniker-end
 
 <a id="business-workflows"></a> 
@@ -114,8 +114,6 @@ The following table summarizes the different permissions you can set at the obje
    :::column-end:::
 :::row-end:::
 ---
-  
-For more information, see [Add groups](add-remove-manage-user-group-security-group.md). 
 
 ### Default permissions for Boards, backlogs, and sprints
 
@@ -166,7 +164,7 @@ Do the following steps to define both areas and iterations for a project.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 Do the following steps to define both areas and iterations for a project.
 
@@ -235,7 +233,7 @@ For more information, see [Create managed queries to list, update, or chart work
 ### Default permissions for queries
 
 > [!TIP]    
-> By default, Contributors can't create and save shared queries. We recommend that Project Administrators create a query folder for each team and give the team administrators or the team group query permissions to manage their folder. You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To learn more, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
+> By default, Contributors can't create and save shared queries. We recommend that Project Administrators create a query folder for each team and give the team administrators or the team group query permissions to manage their folder. You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
 
 [!INCLUDE [temp](includes/boards-queries.md)]
 
@@ -279,7 +277,7 @@ To edit the permissions for a Delivery Plan, you must be the creator of the plan
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+::: moniker range="< azure-devops-2022"
 
 1. Open **Boards** > **Plans**. For more information, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
@@ -287,7 +285,7 @@ To edit the permissions for a Delivery Plan, you must be the creator of the plan
 
 	:::image type="content" source="../../boards/plans/media/permissions/open-plans-security.png" alt-text="Screenshot showing the Security button for plan permissions, highlighted by a red box.":::    
 
-3. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). By default, nonadministrators can't delete or edit a plan. 
+3. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
 
 4. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
 
@@ -388,7 +386,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
     :::image type="content" source="media/process/mprocess-security-dialog-inherited.png" alt-text="Screenshot showing permissions for a process dialog."::: 
 
 > [!NOTE]     
-> Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose the inherited processes. When you create a new inherited process, the process creator and project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
+> Processes are securable entities with distinct ACLs for creation, editing, and deletion. **Project Collection Administrators** at the collection level determine the inherited processes. New inherited processes grant full control to the creator and Project Collection Administrators, who can also assign ACLs to others for process management.
 
 ::: moniker-end
 
@@ -414,7 +412,7 @@ If your on-premises deployment includes reporting, add users to those resources.
 
 ## Related articles 
 
-- [Manage access](restrict-access.md)  
+- [Manage permissions for specific tasks](restrict-access.md)
 - [Rules and rule evaluation](../settings/work/rule-reference.md)  
-- [Permissions and groups reference](permissions.md)
-- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites)
+- [Set project-level permissions](set-permissions-access-work-tracking.md)
+- [Set object-level permissions](set-permissions-access-work-tracking.md)

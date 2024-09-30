@@ -1,8 +1,8 @@
 
 
-### Q: How do I get help or support for Azure DevOps?
+### How do I get help or support for Azure DevOps?
 
-A: You have the following options for support:
+Choose from the following support options:
 
 * Report a problem with Azure DevOps on [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 * Provide a suggestion on [Developer Community](https://developercommunity.visualstudio.com/content/idea/post.html?space=21)

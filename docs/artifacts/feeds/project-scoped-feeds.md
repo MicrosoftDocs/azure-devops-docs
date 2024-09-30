@@ -60,6 +60,9 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure Pipelines pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. For more information, see [Package permissions](./feed-permissions.md#pipelines-permissions).
 
+> [!NOTE]
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
+
 ## Security policies
 
 If you want to add an extra layer of security to your project-scoped feed and protect your feed's visibility, you can disable the **Allow public projects** policy from the [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
@@ -91,6 +94,9 @@ A: If you want to download a pipeline artifact from another project within the s
 On the pipeline generating the artifact (downstream project): select the ellipsis for more options > **Manage security** > search for your upstream project's build service and allow the following: **Update build information**, **View build pipeline**, and **View builds**.
 
 On the downstream project: **Project Settings** > **Permissions** > **Users** > search for your upstream project's name and then select **Expand search** > select your upstream project's build service and allow the following: **View project-level information**.
+
+#### Q: If I enable upstream sources in a new feed and set its visibility to 'Members of your Microsoft Entra tenant,' do I still need to add Entra users to the Azure DevOps Organization that contains the feed?
+A: Yes, you'll still need to add users to the Azure DevOps Organization for them to access the packages in the feed. You can add them as **Project Collection Valid Users** from **Organization Settings** > **Security** > **Permissions**. All standard Azure DevOps identity and licensing requirements will apply. 
 
 ## Related articles
 

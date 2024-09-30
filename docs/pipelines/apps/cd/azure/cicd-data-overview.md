@@ -1,43 +1,49 @@
 ---
-title: Overview of CI/CD data pipelines on Microsoft Azure 
-description: Learn why to use a CI/CD data pipeline to ingest, process, and share data
+title: CI/CD data pipelines in Azure
+description: Learn about continuous integration and continuous delivery (CI/CD) pipelines that ingest, process, and share data in Azure.
 ms.subservice: azure-devops-pipelines-apps
 ms.topic: conceptual
 ms.author: jukullam
 author: JuliaKM
-ms.date: 01/26/2023
+ms.date: 07/15/2024
 monikerRange: '=azure-devops'
 ---
 
-# Why data pipelines?
+# Azure CI/CD data pipelines
 
 [!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
+This article explains Azure continuous integration and continuous delivery (CI/CD) data pipelines and their importance for data science.
+
 You can use data pipelines to:
-* Ingest data from various data sources
-* Process and transform the data 
-* Save the processed data to a staging location for others to consume
 
-![Data pipeline overview](media/data-pipeline-overview.png)
+- Ingest data from various data sources.
+- Process and transform the data.
+- Save the processed data to a staging location for others to consume.
 
-Data pipelines in the enterprise can evolve into more complicated scenarios with multiple source systems and supporting various downstream applications.
+![Diagram that shows a data pipeline overview.](media/data-pipeline-overview.png)
+
+Enterprise data pipelines can evolve into more complicated scenarios with multiple source systems and various supported downstream applications.
 
 Data pipelines provide:
-* Consistency: Data pipelines transform data into a consistent format for users to consume
-* Error reduction: Automated data pipelines eliminate human errors when manipulating data
-* Efficiency: Data professionals save time spent on data processing transformation. Saving time allows then to focus on their core job function - getting the insight out of the data and helping business makes better decisions
 
-## What is CI/CD?
-Continuous integration and continuous delivery (CI/CD) is a software development approach where all developers work together on a shared repository of code – and as changes are made, there are automated build process for detecting code issues.  The outcome is a faster development life cycle and a lower error rate.   
+- Consistency, by transforming data into a consistent format for users to consume.
+- Error reduction, by using automated data pipelines to eliminate human errors when manipulating data.
+- Efficiency, by reducing time spent on data processing transformation.
 
-## What is a CI/CD data pipeline and why does it matter for data science?
-The building of machine learning models is similar to traditional software development in the sense that the data scientist needs to write code to train and score machine learning models. 
+Data pipelines let data professionals focus on their core job functions, getting insights from the data and helping businesses make better decisions.
 
-Unlike traditional software development where the product is based on code, data science machine learning models are based on both the code (algorithm, hyper parameters) and the data used to train the model.  That’s why most data scientists will tell you that they spend 80% of the time doing data preparation, cleaning and feature engineering.  
+## Continuous integration and continuous delivery (CI/CD)
 
-To complicate the matter even further – to ensure the quality of the machine learning models, techniques such as A/B testing are used. With A/B testing, there could be multiple machine learning models being used concurrently.  There's usually one control model and one or more treatment models for comparison – so that the model performance can be compared and maintained.  Having multiple models adds another layer of complexity for the CI/CD of machine learning models.
+Continuous integration and continuous delivery (CI/CD) is a software development approach where all developers work together in a shared code repository of code. As developers make changes, automated processes detect code issues. The outcome of using CI/CD is a faster development lifecycle with lower error rates.
 
-Having a CI/CD data pipeline is crucial for the data science team to deliver the machine learning models to the business in a timely and quality manner. 
+## CI/CD data pipelines in data science
+
+Building machine learning models is similar to traditional software development in that data scientists write code to train and score machine learning models. But unlike traditional software based on code, data science machine learning models are based on both code, such as algorithms and hyperparameters, and the data used to train the models. Most data scientists say they spend 80% of their time doing data preparation, cleaning, and feature engineering.
+
+To ensure the quality of machine learning models, techniques such as A/B testing are also used to compare and maintain model performance. A/B testing usually uses one control model and one or more treatment models.
+
+Multiple machine learning models might be used concurrently, adding another layer of complexity for the CI/CD of machine learning models. A CI/CD data pipeline is crucial for the data science team to deliver quality machine learning models to the business in a timely manner.
 
 ## Next steps
 > [!div class="nextstepaction"]

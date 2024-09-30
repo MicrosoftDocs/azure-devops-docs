@@ -432,7 +432,7 @@ When you merge the pull request, the system reads the description and updates th
 
 ::: moniker range="azure-devops-2020"
 > [!NOTE]   
-> This feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
+> This feature requires installation of Azure DevOps Server 2020.1 update. For more information, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
 ::: moniker-end
 
 ## Integration across Azure DevOps 
@@ -483,7 +483,7 @@ You can track the bug status, assignments, and trends using queries that you can
 ![Bug trend chart from query](media/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](media/manage-bugs-priority-chart.png)   
 -->
 
-To learn more about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).   
+For more information about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -498,7 +498,7 @@ Analytics views provide pre-built filters to view work items. Four Analytic view
 - Bugs - Last 30 days
 - Bugs - Today 
 
-To learn more about using Analytic views, see [What are Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Create an active bugs report in Power BI based on a custom Analytics view](../../report/powerbi/active-bugs-sample-report.md).
+For more information about using Analytic views, see [What are Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Create an active bugs report in Power BI based on a custom Analytics view](../../report/powerbi/active-bugs-sample-report.md).
 
 You can use Power BI to create more complex reports than what you can get from a query. For more information, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 

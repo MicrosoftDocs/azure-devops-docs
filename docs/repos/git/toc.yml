@@ -199,6 +199,8 @@
     href: howto.yml
   - name: Git limits
     href: limits.md
+  - name: Repository health
+    href: repo-health.md
   - name: Map TFVC actions to Git
     href: mapping-my-tfvc-actions-to-git.md
   - name: RPC failures & http.postBuffer

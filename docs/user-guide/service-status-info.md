@@ -8,7 +8,7 @@ ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 12/19/2023
+ms.date: 07/24/2024
 ---
 
 # Azure DevOps Services status
@@ -50,11 +50,10 @@ Subscribe to [the RSS feed](https://status.dev.azure.com/_rss) to receive update
 
 ## Use REST APIs to build automated solutions
 
-The [Azure Resource health REST API](/rest/api/resourcehealth/) can retrieve the current health status of each of the Azure DevOps Services. You can use it to build an automated solution to [monitor the infrastructure incidents](/azure/service-health/service-health-overview).  
+The [Azure Resource health REST API](/rest/api/azure/devops/status) can retrieve the current health status of each of the Azure DevOps Services. You can use it to build an automated solution to monitor the infrastructure incidents.  
 
 [!INCLUDE [rest-api-docs-rollout](../includes/rest-api-docs-rollout.md)] 
 
 ## Related articles
 
-- [Azure Service Health overview](/azure/service-health/service-health-overview)  
 - [Blog post: How do you measure quality of a service?](https://devblogs.microsoft.com/bharry/how-do-you-measure-quality-of-a-service/) 

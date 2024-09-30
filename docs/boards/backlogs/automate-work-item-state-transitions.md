@@ -26,13 +26,13 @@ Rules are established at the team backlog level and are applicable to all work i
 
 ::: moniker range="azure-devops"
 
-* To configure work item automation rules for your team, you must be added to the Team Administrator role or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
+**Permissions:** To configure work item automation rules for your team, be a [Team Administrator](../../organizations/settings/add-team-administrator.md)  or member of the [**Project Administrators** security group](../../organizations/security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* To configure team settings, you must be added to the Team Administrator role or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
+**Permissions:** To configure team settings, be a [Team Administrator](../../organizations/settings/add-team-administrator.md) or member of the [**Project Administrators** security group](../../organizations/security/change-project-level-permissions.md).
 
 ::: moniker-end
 
@@ -43,13 +43,13 @@ Do the following steps to set team rules for each backlog level.
 > [!NOTE]
 > Work items must belong to the same team; when you close a task in a different team or project, it doesn't trigger the closure of the parent item.
 
-1. Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
 2. Select **Boards** > **Backlogs** > :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: **Configure team settings**.
 
    :::image type="content" source="media/backlog-settings.png" alt-text="Screenshot of selection process, Boards, Backlogs, and then Configure team settings.":::
 
-3. Check the applicable box(es), which triggers the parent work items on this backlog level, and then select **Save**.
+3. Check one or more applicable boxes, which trigger the parent work items on this backlog level, and then select **Save**.
 
    :::image type="content" source="media/set-team-automation-rules.png" alt-text="Screenshot of team automation rules settings page.":::
 
@@ -71,7 +71,7 @@ The following example shows the rules applied to the user stories backlog level.
 
 The following example shows the rules applied to several backlog levels in sync.
 
-:::image type="content" source="media/rules-applied-several-backlog-levels.gif" alt-text="Animation of demo of automation rules applied to several backlog levels in sync, when you close all tasks, the parent user story closes, and when you close all user stories, their parent feature closes.":::
+:::image type="content" source="media/rules-applied-several-backlog-levels.gif" alt-text="Animation of demo of automation rules applied to several backlog levels in sync.":::
 
 ## FAQs
 

@@ -5,9 +5,10 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 02/10/2023
+ms.date: 08/22/2024
 ---
  
 > [!IMPORTANT]  
-> Deleting **Area Paths** or reconfiguring **Iteration Paths** can cause a loss of data and can't be reverted. For example, burndown or burnup widget charts, sprint burndown, and velocity charts for teams whose **Area Paths** are changed won't reflect correct data. Historical trend charts reference the **Area Path** and **Iteration Path** as defined at a point in the past for each work item. When an **Area Path** or **Iteration Path** is deleted, then the historical data for it can't be retrieved.  
+> - Deleting **Area Paths** or reconfiguring **Iteration Paths** causes irreversible data loss. For example, burndown and burnup widget charts, sprint burndown, and velocity charts for teams with changed **Area Paths** won't display accurate data. Historical trend charts reference the **Area Path** and **Iteration Path** as they were defined at the time for each work item. Once deleted, you can't retrieve historical data for these paths.
+> - You can only delete area and iteration paths that are no longer used by any work items.
  

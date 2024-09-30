@@ -56,5 +56,5 @@ A: The organization URL setting is two-way toggle. You can turn on the new domai
 ## Related articles
 
 - [Resolve orphaned organization](resolve-orphaned-organization.md)
-- [Delete your organization](delete-your-organization.md)
+- [Delete an organization](delete-your-organization.md)
 - [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)

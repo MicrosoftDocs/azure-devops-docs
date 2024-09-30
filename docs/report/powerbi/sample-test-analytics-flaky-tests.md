@@ -18,7 +18,7 @@ ms.date: 01/25/2023
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
  
-You can create a report, as shown in the following image, that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. To learn more about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+You can create a report, as shown in the following image, that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. For more information about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
 :::image type="content" source="media/pipeline-test-reports/flaky-tests-table-report.png" alt-text="Screenshot of Flaky Tests Table report.":::
  
@@ -169,7 +169,7 @@ To view the failed tests of a pipeline for a particular branch, use the followin
 - Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
-To learn more about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
 
 #### [Power BI query](#tab/powerbi/)
@@ -531,7 +531,7 @@ Expand the `Test` column to show the expanded entity `Test.TestName`. Expanding 
 
 1. Select the `FlakyRate` column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
 
-To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

@@ -19,7 +19,7 @@ This article shows you how to create a report that lists work items linked to ot
 
 :::image type="content" source="media/reports-boards/parent-child-links-table-report.png" alt-text="Screenshot of Parent-child links of Features and User Stories table report.":::
 
-To learn more about link types and linking work items, see [Link user stories, issues, bugs, and other work items](../../boards/backlogs/add-link.md).
+For more information about link types and linking work items, see [Link user stories, issues, bugs, and other work items](../../boards/backlogs/add-link.md).
 
 
 Other sample queries include listing bugs with a Duplicate link to another bug, and listing bugs that don't contain a Duplicate link to another bug.
