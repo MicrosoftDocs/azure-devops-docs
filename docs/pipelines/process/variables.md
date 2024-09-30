@@ -146,7 +146,7 @@ Runtime expression variables are only expanded when they're used for a value, no
 
 ### What syntax should I use?
 
-Use macro syntax if you're providing a secure string or a [predefined variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml) input for a task. 
+Use macro syntax if you're providing a secure string or a [predefined variable](/azure/devops/pipelines/build/variables) input for a task. 
 
 Choose a runtime expression if you're working with [conditions](conditions.md) and [expressions](expressions.md). However, don't use a runtime expression if you don't want your empty variable to print (example: `$[variables.var]`). For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a macro expression. 
 
