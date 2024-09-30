@@ -176,7 +176,7 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
       </tr>  
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[GH! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">GH! mentions support</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
          <td>2024 Q4</td>
       </tr>      
@@ -331,7 +331,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-      <td rowspan="4"><strong>2024 Q4</strong></td>
+      <td rowspan="5"><strong>2024 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -345,7 +345,11 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[GH! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">GH! mentions support</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td>Remove deleted tags from suggested list on work item form</td>
          <td>Boards</td>
       </tr>
       <tr>
