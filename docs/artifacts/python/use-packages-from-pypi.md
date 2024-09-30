@@ -32,7 +32,7 @@ In this article, you'll learn how to:
 
 ## Enable upstream sources when creating a new feed
 
-If you haven't created a feed yet, follow the steps below to create a new one. Make sure to check the box for *upstream sources* to enable upstream sources. If you already have a feed, skip to the [next step](#add-pypi-upstream) to add PyPI as an upstream source.
+If you haven't created a feed yet, follow the steps below to create a new one. Make sure to check the box for *upstream sources* to enable upstream sources. If you already have a feed, skip to the [next step](#add-pypi-as-a-new-upstream-source) to add PyPI as an upstream source.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
