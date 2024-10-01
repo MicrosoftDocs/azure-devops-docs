@@ -367,6 +367,22 @@ When migrating from build artifacts to pipeline artifacts:
 
 - **artifact**: (Optional) Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
 
+## View published Artifacts
+
+Once your pipeline run is complete, follow these steps to view or download your published artifact:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline run, and then select the **Summary** tab.
+
+1. In the related section, select the published artifact.
+
+    :::image type="content"  source="../media/published-artifact.png" alt-text="A screenshot showing how to find published artifacts in a pipeline run."::: 
+
+1. Expand the drop folder to locate your artifact. You can then download your Artifact and explore its content.
+
+    :::image type="content"  source="../media/drop-artifacts.png" alt-text="A screenshot displaying the content of a published artifact.":::
+
 ## FAQ
 
 #### Q: What are build artifacts?
