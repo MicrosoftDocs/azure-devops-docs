@@ -34,10 +34,9 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
-| macOS 14 Sonoma (preview) | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 14 Sonoma (preview) | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
-| macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
-| macOS 11 Big Sur (deprecated) | *macOS-11* | `macOS-11` | **deprecated** |
+| macOS 12 Monterey | *macOS-12* | `macOS-12` |  **deprecated** |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -46,6 +45,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
 * The Ubuntu-22.04 image is available
 * The macOS-14 Sonoma image is available in preview
 * The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
