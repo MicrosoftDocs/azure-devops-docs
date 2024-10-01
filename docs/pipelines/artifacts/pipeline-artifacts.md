@@ -65,11 +65,11 @@ steps:
 
 ---
 
-Although the artifact's name is optional, it is a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
+Although the artifact's name is optional, it's a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
 
 The path of the file/folder that you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
-Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
+Packages in Azure Artifacts are immutable. Once you publish a package, its version is permanently reserved. Rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
 
 ```yml
   jobs:
@@ -162,7 +162,7 @@ steps:
 ---
 
 To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-i-want-to-download-a-pipeline-artifact-from-another-project-but-my-pipeline-is-failing) configured for both your downstream project and downstream pipeline.
-By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
+By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name wasn't specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
 
 ```yml
 steps:
@@ -181,7 +181,7 @@ A single download step can download one or more artifacts. To download multiple 
 
 When an artifact name is specified:
 
-1. Only files for that specific artifact are downloaded. If the artifact does not exist, the task will fail.
+1. Only files for that specific artifact are downloaded. If the artifact doesn't exist, the task will fail.
 
 1. File matching patterns are evaluated relative to the root of the artifact. For example, the pattern `*.jar` matches all files with a `.jar` extension at the root of the artifact.
 
