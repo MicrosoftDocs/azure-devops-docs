@@ -298,9 +298,14 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
-::: moniker range="azure-devops"
+
 #### Azure Container Registry
 
+::: moniker range="< azure-devops"
+Azure Container Registry is not available in Azure DevOps Server. 
+::: moniker-end
+
+::: moniker range="azure-devops"
 You can connect to an Azure Container Registry using either a [Service Principal](#service-principal-authentication-type), [Managed Identity](#managed-identity-authentication-type), or [Workload Identity federation](#workload-identity-federation-authentication-type) **Authentication Type**.
 
 ##### Service Principal authentication type
