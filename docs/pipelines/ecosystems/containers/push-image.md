@@ -13,20 +13,41 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
 
-This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to an Azure Container Registry, Docker Hub and Google Artifact Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+::: moniker range="azure-devops"
 
-You learn how to create a YAML pipeline to build and push a Docker image to a container registry. The pipeline is triggered by changes to the main branch of the repository. The Docker@2 task is used to build and push the image to the container registry.
+This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to an Azure Container Registry, Docker Hub, and Google Artifact Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+
+::: moniker-end
+::: moniker range="< azure-devops"
+
+This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to a Docker Hub and Google Artifact Registry. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+
+::: moniker-end
+
+You learn how to create a YAML pipeline to build and push a Docker image to a container registry. The Docker@2 task is used to build and push the image to the container registry.
 
 ## Prerequisites
+
+::: moniker range="azure-devops"
 
 - An Azure DevOps project
 - A container registry (Docker Hub, Google Artifact Registry, or Azure Container Registry)
 - A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the sample repository and fork it to your GitHub account.
-- Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges.  Microsoft-hosted agents have Docker pre-installed.
+- Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.
+
+::: moniker-end
+::: moniker range="< azure-devops"
+
+- An Azure DevOps project
+- A container registry (Docker Hub or Google Artifact Registry)
+- A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the sample repository and fork it to your GitHub account.
+- Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.
+- 
+::: moniker-end
 
 ## Create a Docker Service Connection
 
-Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry.  Go to the [Service connections](../../library/service-endpoints.md) page in your Azure DevOps project to create a new service connection and select the **Docker Registry** connection type.
+Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry. Go to the [Service connections](../../library/service-endpoints.md) page in your Azure DevOps project to create a new service connection and select the **Docker Registry** connection type.
 
 There are different processes to create a service connection for a Docker Hub and a Google Artifact Registry. 
 
@@ -36,12 +57,16 @@ Choose the Docker Hub option under [Docker registry service connection](../../li
 
 # [Azure Container Registry](#tab/azure)
 
-
+::: moniker range="azure-devops"
 Choose the Azure Container Registry option under [Docker registry service connection](../../library/service-endpoints.md#azure-container-registry) and provide the information required by the authentication method you choose.
 
-::: moniker range="azure-devops"
+You can also create your pipeline using the Docker template to build and push an image to Azure Container Registry. This template automatically creates a service connection and a YAML pipeline for you. For more information, see [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md).
 
-You can also create your pipeline using the Docker template to build and push an image to Azure Container Registry.  This template automatically creates a service connection and a YAML pipeline for you.  For more information, see [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md).
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Pushing a Docker image to Azure Container Registry isn't supported in Azure DevOps Server.
 
 ::: moniker-end
 
@@ -49,7 +74,7 @@ You can also create your pipeline using the Docker template to build and push an
 
 To create a Docker service connection associated with Google Artifact Registry:
 
-1. Open your project in the GCP Console and then open Cloud Shell
+1. Open your project in the Google Cloud Platform (GCP) Console and then open Cloud Shell
 1. To save time typing your project ID and Compute Engine zone options, set default configuration values by running the following commands:
 
    ```console
@@ -77,7 +102,7 @@ To create a Docker service connection associated with Google Artifact Registry:
    gcloud iam service-accounts create azure-pipelines-publisher --display-name "Azure Pipelines Publisher"
    ```
 
-1. Assign the Storage Admin IAM role to the service account:
+1. Assign the Storage Admin identity and access management (IAM) role to the service account:
 
    ```console
    PROJECT_NUMBER=$(gcloud projects describe \
@@ -129,8 +154,7 @@ To create a Docker service connection associated with Google Artifact Registry:
 
 The [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
 
-The following steps outline how to create a YAML pipeline that uses the Docker@2 task to build and push the image.
-
+The following steps outline how to create a YAML pipeline that uses the Docker@2 task to build and push the image.  
 ::: moniker range="azure-devops"
 
 1. Navigate to your Azure DevOps project and select **Pipelines** from the left-hand menu.
@@ -216,6 +240,8 @@ To build the image, Docker must be installed on the agent's host and the Docker 
 1. On the **Save and run** page, select **Save and run** again.
 
 ::: moniker-end
+
+You can watch the pipeline run and view the logs to see the Docker image being built and pushed to the container registry.
 
 
 ## Using System.AccessToken for Authentication in Docker@2 Task
