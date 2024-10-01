@@ -300,12 +300,12 @@
     - name: Classic Build options
       displayName: classic build, build options
       href: release/options.md
-    - name: Publish Pipeline artifacts
-      displayName: publish, artifacts
-      href: release/publish-pipeline-artifact.md
+    - name: Publish & download pipeline artifacts
+      href: artifacts/pipeline-artifacts.md
+      displayName: publish, download, artifacts
     - name: Publish & download build artifacts
-      displayName: build, artifacts
       href: artifacts/build-artifacts.md
+      displayName: build, download, publish, artifacts
   - name: Deploy
     items:
     - name: Deploy to Azure
