@@ -425,9 +425,9 @@ For more information, see [Add widgets to a dashboard](../../report/dashboards/a
 
 You can view the results of a query with the **Parent** title displayed. To do so, perform these steps: 
 1. Create the query that filters the work items of interest. The query can be a flat-list, tree, or direct-links query. 
-2  Add the **Parent** field as a column. 
-3. Save the query as a Shared query or Team favorite. 
-4. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
+1.  Add the **Parent** field as a column. 
+1. Save the query as a Shared query or Team favorite. 
+1. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
 
 The following image illustrates a query results widget that displays the **Parent** field. 
 

@@ -78,7 +78,7 @@ The following example shows how to find all closed bugs by modifying the
     :::image type="content" source="media/view-run-queries/select-active-bugs-new-boards-hubs.png" alt-text="Screenshot of the query selection list.":::
 
    > [!TIP]  
-   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View > Team Explorer** from the top level menu.   
 
 1. Edit the query to find closed bugs and then run the query. 
    Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause. Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md). 
@@ -106,7 +106,7 @@ The following example shows how to find all closed bugs by modifying the
 
 To save a query as a new query, open the query results and then from the toolbar choose <strong>File>Save *QueryName* As...</strong>.
 
-:::image type="content" source="media/organize-queries/visual-studio-save-query-as.png" alt-text="Screenshot Visual Studio, File menu, save query as selection.":::
+:::image type="content" source="media/organize-queries/visual-studio-save-query-as.png" alt-text="Screenshot of Visual Studio > File menu save query as selection.":::
 
 Specify the query name and folder location for the query. 
 
@@ -128,7 +128,7 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 
 ::: moniker range="< azure-devops"
 
-![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png) 
+![Screenshot of new query experience, Favorites page, query context menu.](media/view-run-queries/query-context-menu-favorites-page.png) 
 
 ::: moniker-end
 
@@ -235,7 +235,7 @@ To save a shared query as a team favorite, you must be a member of the team.
 
 You can add a shared query to team favorites. Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
-You can only add shared as team favorites if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
+You can only add shared queries as team favorites if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
 ::: moniker range="< azure-devops"
 
