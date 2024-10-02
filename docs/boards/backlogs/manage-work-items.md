@@ -74,8 +74,6 @@ With each update, changes are recorded in the History field, which you can view 
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).
 
-[!INCLUDE [temp](../includes/discussion-tip-azure-devops.md)] 
-
 ### [Visual Studio 2019](#tab/visual-studio/)
 
 You can't update a work item using Visual Studio 2019 at this time.
