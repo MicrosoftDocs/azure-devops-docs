@@ -268,8 +268,6 @@ Added work items are automatically scoped to your team's default area path and i
 
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
-::: moniker-end
-
 ### [Visual Studio 2019](#tab/visual-studio/)
 
 1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
