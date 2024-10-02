@@ -83,7 +83,7 @@ There's no [**az boards**](/cli/azure//boards) command that opens the **Work Ite
 
 ## View work items
 
-Use the drop-down menu to focus on relevant items within a project using one of seven pivots. Additionally, [filter](#filter) and [sort](#sort) each pivot view. You can also use an Azure DevOps CLI command to view work item details.
+Use the drop-down menu to focus on relevant items within a project using one of seven pivots. Additionally, [filter](#filter) each pivot view. You can also use an Azure DevOps CLI command to view work item details.
 
 # [Web portal](#tab/browser)
  

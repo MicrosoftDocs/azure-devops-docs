@@ -507,7 +507,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [temp](../includes/discussion-tip.md)]
+[!INCLUDE [temp](../includes/discussion-tip-azure-devops.md)]
 
 ## Next steps  
  
