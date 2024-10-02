@@ -245,7 +245,7 @@ For more information, see [Link to work items from pull requests, commits, and c
 ## Link work items to GitHub objects
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
-When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. This way you can use GitHub for software development while you use Azure Boards to plan and track your work. 
+When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Commit**, **GitHub Pull Request**, **GitHub Branch**, and **GitHub Issue**. This way you can use GitHub for software development while you use Azure Boards to plan and track your work. 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
