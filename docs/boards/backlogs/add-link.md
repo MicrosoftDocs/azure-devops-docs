@@ -255,7 +255,7 @@ When you connect Azure Boards with GitHub repositories, you can link work items 
 > [!IMPORTANT]  
 > You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
-For more information, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
+For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 
 ## Link several work items to new git branches
 

@@ -345,7 +345,7 @@ When it updates, the section should appear as follows.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
+> [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
 ## Related articles
 
