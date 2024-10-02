@@ -264,6 +264,8 @@ The attachment is restored.
 
 ## Permanently delete attachments
 
+You can permanently delete attachments only if you enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+
 1. From your work item, select the **Attachments** tab. 
 2. Select **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Permanently delete attachment**.
 
