@@ -64,6 +64,10 @@ Review the following table of examples:
 
 <a id="link-existing"> </a>
 
+When you add a link to a work item using AB#, those links appear in the **Development** section of the pull request.
+
+:::image type="content" source="media/github/ab-links-development-control.png" alt-text="Screenshot of AB# links on the development section of GitHub pull request.":::
+
 ## Create GitHub branch from work item
 
 To create a GitHub branch directly from a work item, do these steps:
