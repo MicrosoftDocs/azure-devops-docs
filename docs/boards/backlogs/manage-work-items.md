@@ -1,7 +1,7 @@
 ---
 title: Manage work items
 titleSuffix: Azure Boards 
-description:  
+description: Learn how to update, link, and follow work items, as well as add, delete, restore, and permanently delete work item attachments.
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
@@ -181,6 +181,7 @@ ID    Type    Title       Assigned To          State
 
 * * *
 
+
 ### Link to a work item
 
 Add links to work items to show relationships between them and other work items or objects. For example, link a bug to a user story to indicate that the bug is blocking the user story. You can also link work items to commits, pull requests, builds, and other objects.
@@ -208,6 +209,8 @@ To stop following changes, select the :::image type="icon" source="../media/icon
 > To support the **follow** feature, configure an [SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.
 
 ::: moniker-end
+<a id="capture-comments-in-the-discussion-section"></a>
+[!INCLUDE [discussion-tip-azure-devops](../includes/discussion-tip-azure-devops.md)]
 
 <a id="sort"></a>
 

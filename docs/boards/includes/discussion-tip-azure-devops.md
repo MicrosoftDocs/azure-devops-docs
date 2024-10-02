@@ -15,18 +15,17 @@ Use the **Discussion** section to add and review comments made about the work be
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section within a work item form.](../backlogs/media/discussion-section.png)   
 
-The rich text editor tool bar displays below the text entry area. It appears when you select your cursor within each text box that supports text formatting. 
+The rich text editor toolbar appears below the text entry area when you place your cursor within any text box that supports text formatting.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section, New Rich Text Editor toolbar.](../queries/media/share-plans/discussion-rich-text-editor-toolbar.png)  
 
-
 > [!NOTE]  
-> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
+> A Discussion work item field doesn't exist. To query work items with comments from the Discussion area, filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered in the Discussion text box is added to the History field. 
 
 ### Mention someone, a group, work item, or pull request 
 
-Choose one of the following icons to open a menu of recent entries you made to mention someone, link to a work item, or link to a pull request. Or, to open the same menu you can enter **@**, **#**, or **!**.
+Select one of the following icons to open a menu of recent entries where you mentioned someone, linked to a work item, or linked to a pull request. Alternatively, you can open the same menu by entering **@**, **#**, or **!**.
 - :::image type="icon" source="../../media/icons/at-mention.png" border="false":::
 - :::image type="icon" source="../../media/icons/work-id.png" border="false":::
 - :::image type="icon" source="../../media/icons/pr-id.png" border="false":::
@@ -34,27 +33,22 @@ Choose one of the following icons to open a menu of recent entries you made to m
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section, at-mention drop-down menu people-picker.](../media/discussion-at-mention.png)
 
-Enter a name or number and the menu list filters to match your entry. Choose the entry you want to add. You can bring a group into the discussion by entering **@** and the group name, such as a team or security group. 
-
-::: moniker range=">= azure-devops-2019" 
+Enter a name or number to filter the menu list to match your entry. Select the entry you want to add. To bring a group into the discussion, enter **@** followed by the group name, such as a team or security group.
 
 ### Edit or delete a comment 
 
 If you need to edit or delete any of your discussion comments, choose :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit** or choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and then choose **Delete**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Discussion section, choose Edit or Delete actions.](../media/discussion-edit-delete.png)  
-::: moniker-end
+> ![Screenshot of Discussion section, choose Edit or Delete actions.](../media/discussion-edit-delete.png)
 
 ::: moniker range="azure-devops-2019"  
 > [!NOTE]   
 > Editing and deleting comments requires Azure DevOps Server 2019 Update 1 or later version. 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019" 
 After updating the comment, choose **Update**. To delete the comment, you need to confirm that you want to delete it.
-A full audit trail of all  edited and deleted comments is maintained in the <strong>History</strong> tab on the work item form. 
-::: moniker-end
+A full audit trail of all  edited and deleted comments is maintained in the **History** tab on the work item form. 
 
 ::: moniker range=">= azure-devops-2020"
 

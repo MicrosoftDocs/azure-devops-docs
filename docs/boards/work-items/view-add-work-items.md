@@ -27,10 +27,9 @@ This article shows how to add any type of work item. However, use the backlog or
 To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
 
 You can add work items in the following ways:
-- **[From the Work items page](#add-a-work-item-from-the-work-items-page):** Use the "New Work Item" button to create a new work item.
-- **[From a board or backlog](#add-a-work-item):** Right-select on a column or backlog item and select "New Work Item."
-- **[Using the Azure DevOps CLI](#add-a-work-item):** Use the `az boards work-item create` command to add work items programmatically.
-- **From a query result:** Select "New Work Item" from the query results page.
+- [Add work items from the Work items page](#add-a-work-item-from-the-work-items-page)
+- [Add work items from a Boards, Backlogs, or Sprints page](#add-a-work-item-from-a-boards-backlogs-or-sprints-page)
+- [Add work items using the Azure DevOps CLI](#add-a-work-item-from-a-boards-backlogs-or-sprints-page)
 
 These methods provide flexibility in how you manage and track your work items within Azure DevOps.
 
@@ -39,7 +38,7 @@ These methods provide flexibility in how you manage and track your work items wi
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
-## Open Work items
+## Open the Work items page
 
 <a id="browser"></a> 
 
@@ -243,9 +242,9 @@ A browser window opens, displaying the work item form for you to complete.
 
 [Add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags, while users with **Stakeholder** access can only add existing tags.
 
-## Add a work item from a boards, backlogs, or sprints page
+## Add a work item from a Boards, Backlogs, or Sprints page
 
-Do the following steps to add a work item from your board or backlog.
+Do the following steps to add a work item from your Boards, Backlogs, or Sprints page.
 
 ### [Browser](#tab/browser/)
 
@@ -302,13 +301,12 @@ Create as many work items as you need of the type you need to track the work you
 
 From the web portal, you can open any view, filtered view, or selected set of work items as a query. Choose **Open in Queries** or the **Open selected items in Queries** option from the context menu. 
 
-Queries provide other features that you can use, including: 
+Queries provide the following features and more: 
 * Edit one or more fields of several work items    
 * Add or remove tags from several work items 
 * Change the work item type 
 * Delete work items 
 * Apply work item templates
-* And more
 
 For more information, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json). For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 

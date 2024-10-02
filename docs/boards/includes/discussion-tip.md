@@ -9,7 +9,7 @@ ms.date: 06/07/2023
 <a id="discussion"></a>
 <a id="capture-comments-in-the-discussion-section"></a>
 
-## Capture comments in the Discussion section 
+## Capture comments in Discussion section 
 
 Use the **Discussion** section to add and review comments made about the work being performed. 
 
