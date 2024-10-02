@@ -36,7 +36,7 @@
   - name: Use @mentions in discussions
     href: ../../organizations/notifications/at-mentions.md?toc=/azure/devops/boards/toc.json
     displayname: people picker
-  - name: Add tags to work items
+  - name: Add tags for work items
     href: ../queries/add-tags-to-work-items.md
     displayname: chart, color-code, filter, show, query, bulk modify
   - name: Send email of items or print
