@@ -456,7 +456,6 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
             python -m venv antenv
             source antenv/bin/activate
             python -m pip install --upgrade pip
-            pip install setup
             pip install -r requirements.txt
           workingDirectory: $(projectRoot)
           displayName: "Install requirements"
