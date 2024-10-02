@@ -6,8 +6,6 @@ ms.topic: include
 ms.date: 10/02/2024
 ---
 
-<a id="capture-comments-in-the-discussion-section"></a>
-
 ## Capture comments in the Discussion section 
 
 Use the **Discussion** section to add and review comments made about the work being performed. 

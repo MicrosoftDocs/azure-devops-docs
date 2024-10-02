@@ -209,8 +209,6 @@ To stop following changes, select the :::image type="icon" source="../media/icon
 > To support the **follow** feature, configure an [SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.
 
 ::: moniker-end
-<a id="capture-comments-in-the-discussion-section"></a>
-[!INCLUDE [discussion-tip-azure-devops](../includes/discussion-tip-azure-devops.md)]
 
 <a id="sort"></a>
 
@@ -218,7 +216,7 @@ To stop following changes, select the :::image type="icon" source="../media/icon
 
 Sort your view by any column field selected from the **Column Options** dialog in the web portal. For more information, see [Change column options](../backlogs/set-column-options.md).
 
-[!INCLUDE [temp](../includes/discussion-tip-azure-devops.md)] 
+[!INCLUDE [discussion-tip-azure-devops](../includes/discussion-tip-azure-devops.md)]
 
 ## Copy selected items to the clipboard or email them
 
