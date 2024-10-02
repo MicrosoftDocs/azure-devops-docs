@@ -1,28 +1,28 @@
 ---
-title: Link GitHub commits, PRs, and issues to work items
+title: Link GitHub commits, PRs, branches,and issues to work items
 titleSuffix: Azure Boards 
-description: Learn how to links work items to GitHub commits, pull requests, and issues, and automatically transition work item states in Azure Boards.  
+description: Learn how to links work items to GitHub commits, pull requests, branches, and issues, and automatically transition work item states in Azure Boards.  
 ms.service: azure-devops-boards 
 ms.custom: work-items, github, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/22/2024
+ms.date: 10/02/2024
 ---
 
-# Link GitHub commits, pull requests, and issues to work items in Azure Boards
+# Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-In this article, learn how to link work items to GitHub commits and pull requests after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax or add a GitHub commit or pull request link directly from the Azure Boards work item.
+In this article, learn how to link work items to GitHub commits, pull requests, and branches after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
 ## Prerequisites 
 
 - **Project connection:**
-  - Ensure your Azure Boards project is connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).
+  - Ensure your Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).
 
 - **Permissions:**
   - Be a Contributor to both the Azure Boards project and the GitHub repository.
@@ -63,6 +63,10 @@ Review the following table of examples:
 > If you connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you might see unexpected **AB#** mention linking. For more information, see [Resolve connection issues](connect-to-github.md#resolve-connection-issues). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
 
 <a id="link-existing"> </a>
+
+When you add a link to a work item using AB#, those links appear in the **Development** section of the pull request.
+
+:::image type="content" source="media/github/ab-links-development-control.png" alt-text="Screenshot of AB# links on the development section of GitHub pull request.":::
 
 ## Create GitHub branch from work item
 

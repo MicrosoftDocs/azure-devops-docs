@@ -207,7 +207,7 @@ If you uninstall the Azure Boards app for GitHub, the following message displays
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
+> [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
 ## Related articles
  
