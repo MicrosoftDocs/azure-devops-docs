@@ -114,7 +114,8 @@ When you open the browser, it defaults to the **Assigned to me** page. From ther
 
 > [!TIP]
 > From your mobile device, you can perform most functions in Azure Boards, Azure Repos, Azure Pipelines, Azure Test Plans, and Azure Artifacts, just as you would via the web portal. The following example shows mobile access to Pull Requests.
-> :::image type="content" source="../media/mobile-azure-devops-hubs.png" alt-text="Screenshot showing Azure DevOps hubs accessible via mobile browser.":::
+> 
+>:::image type="content" source="../media/mobile-azure-devops-hubs.png" alt-text="Screenshot showing Azure DevOps hubs accessible via mobile browser.":::
 
 ## Related articles  
 
