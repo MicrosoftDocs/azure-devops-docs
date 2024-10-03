@@ -39,6 +39,18 @@ To see the Azure regions that support Managed DevOps Pools in your subscription,
 > [!IMPORTANT]
 > If the **Microsoft.DevOpsInfrastructure** is not registered in your subscription, you won't see any locations. [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription) before you check for supported regions. For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/).
 
-## What if the Azure region that contains my pool has an outage? 
+## Cross-region disaster recovery and business continuity
 
-Currently, a Managed DevOps Pool is deployed to single Azure region. In the event of an outage for that region, you would need to create a new Managed DevOps Pool in a different region, and manually update your pipelines to reference the new pool.
+Disaster recovery (DR) is about recovering from high-impact events, such as natural disasters or failed deployments that result in downtime and data loss. Regardless of the cause, the best remedy for a disaster is a well-defined and tested DR plan and an application design that actively supports DR. Before you begin to think about creating your disaster recovery plan, see [Recommendations for designing a disaster recovery strategy](/azure/well-architected/reliability/disaster-recovery). 
+
+When it comes to DR, Microsoft uses the [shared responsibility model](/azure/reliability/business-continuity-management-program#shared-responsibility-model). In a shared responsibility model, Microsoft ensures that the baseline infrastructure and platform services are available. At the same time, many Azure services don't automatically replicate data or fall back from a failed region to cross-replicate to another enabled region. For those services, you are responsible for setting up a disaster recovery plan that works for your workload.  Most services that run on Azure platform as a service (PaaS) offerings provide features and guidance to support DR and you can use [service-specific features to support fast recovery](/azure/reliability/overview-reliability-guidance) to help develop your DR plan.
+
+Managed DevOps Pools instances don't automatically replicate or switch from a failed region to another enabled region. In the event of a complete outage of the Azure region that hosts your Managed DevOps Pool, you would need to create a new Managed DevOps Pool in a different region, and manually update your pipelines to reference the new pool.
+
+This includes (but not limited to) the following resources:
+- The resource group for the replacemnt pool
+- The dev center and dev center project for the replacement pool
+- The Azure Compute Gallery images (if your pool uses them)
+- The Azure DevOps organization that uses your pool
+
+You can save the configuration of your existing pool (TODO properties) and create ARM templates or Azure CLI scripts to recreate your pool using the same settings (except for name and location), and manually update your pipelines to use the new pool.
