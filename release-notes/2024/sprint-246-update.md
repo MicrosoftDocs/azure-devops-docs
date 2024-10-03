@@ -43,10 +43,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-246-update](includes/pipelines/sprint-246-update.md)]
 
-## Azure Test Plans
-
-[!INCLUDE [sprint-246-update](includes/testplans/sprint-246-update.md)]
-
 ## Next steps
 
 > [!NOTE]
