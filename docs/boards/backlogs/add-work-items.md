@@ -103,8 +103,6 @@ The following image shows the workflow states for a user story. If you want to d
 
 ::: moniker-end
 
-
-
 :::row:::
    :::column span="2":::
       **Typical workflow progression:**
@@ -259,13 +257,13 @@ When you want to track the progress of a single work item, select **Follow**. Th
 
 ::: moniker range="< azure-devops"
 
-::: image type="content" source="../work-items/media/follow-work/follow-work-item.png" alt-text="Screenshot of work item follow button." :::
+:::image type="content" source="../work-items/media/follow-work/follow-work-item.png" alt-text="Screenshot of work item follow button." :::
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-::: image type="content" source="../work-items/media/follow-work/follow-work-item-new-boards-hubs.png" alt-text="Screenshot of work item follow button." :::
+:::image type="content" source="../work-items/media/follow-work/follow-work-item-new-boards-hubs.png" alt-text="Screenshot of work item follow button." :::
 
 ::: moniker-end
 
