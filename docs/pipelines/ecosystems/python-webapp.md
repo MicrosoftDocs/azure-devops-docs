@@ -531,7 +531,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '<service-connection-name>'
+  azureServiceConnectionId: '<GUID>'
 
   # Web app name
   webAppName: '<your-webapp-name>'
@@ -623,13 +623,13 @@ variables:
 azureServiceConnectionId: '<GUID>'
 
 # Web app name
-webAppName: '<your-web-app-name>'
+webAppName: '<your-webapp-name>'
 
 # Agent VM image name
 vmImageName: 'ubuntu-latest'
 
 # Environment name
-environmentName: '<your-web-app-name>'
+environmentName: '<your-webapp-name>'
 
 # Project root folder.
 projectRoot: $(System.DefaultWorkingDirectory)
