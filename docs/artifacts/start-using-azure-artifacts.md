@@ -28,6 +28,104 @@ Azure Artifacts provides developers with a streamlined way to manage all their d
 
 [!INCLUDE [](includes/create-feed.md)]
 
+## Get started with Azure Artifacts
+
+With Azure Artifacts, you can publish and consume various package types from feeds and public registries such as nuget.org, npmjs.com, Maven Central, etc. Select your package type to get started:
+
+::: moniker range="azure-devops"
+
+# [NuGet](#tab/nuget)
+
+- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [dotnet](#tab/dotnet)
+
+- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](/nuget/dotnet-exe.md)
+
+# [Npm](#tab/npm)
+
+- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradle)
+
+- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
+
+# [Python](#tab/python)
+
+- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Cargo](#tab/cargo)
+
+- **Quickstart:** [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
+
+# [Universal Packages](#tab/universalpackages)
+
+- **Quickstart:**  [started with Universal Packages in Azure Artifacts](./quickstarts/universal-packages.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020 || azure-devops-2022"
+
+# [NuGet](#tab/nugetserver)
+
+- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [dotnet](#tab/dotnet)
+
+- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](/nuget/dotnet-exe.md)
+
+# [Npm](#tab/npmserver)
+
+- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/mavenserver)
+
+- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradleserver)
+
+- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
+
+# [Python](#tab/pythonserver)
+
+- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+# [NuGet](#tab/nugetserver19)
+
+- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npmserver19)
+
+- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/mavenserver19)
+
+- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradleserver19)
+
+- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
+
+# [Python](#tab/pythonserver19)
+
+- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+---
+
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 <a name="increase-artifacts-storage-limit"></a>
@@ -47,74 +145,6 @@ Azure Artifacts is provided at no cost for every organization with up to 2 GiB o
 - [Project-level storage](./artifact-storage.md#project-level-storage)
 
 - [Organization-level storage](./artifact-storage.md#organization-level-storage)
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-## Get started with package type
-
-With Azure Artifacts, you can publish and consume various package types from feeds and public registries such as nuget.org, npmjs.com, Maven Central, etc. Select your package type to get started:
-
-# [NuGet](#tab/nuget)
-
-- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [Npm](#tab/npm)
-
-- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/maven)
-
-- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradle)
-
-- [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/python)
-
-- [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
-# [Cargo](#tab/cargo)
-
-- [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
-
-# [Universal Packages](#tab/universalpackages)
-
-- [Get started with Universal Packages in Azure Artifacts](./quickstarts/universal-packages.md)
-
----
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
-
-## Get started with package type
-
-With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
-
-# [NuGet](#tab/nugetserver)
-
-- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [Npm](#tab/npmserver)
-
-- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/mavenserver)
-
-- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradleserver)
-
-- [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/pythonserver)
-
-- [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
----
 
 ::: moniker-end
 

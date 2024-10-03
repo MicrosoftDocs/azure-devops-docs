@@ -9,17 +9,11 @@ ms.date: 03/15/2024
 
 ::: moniker range="azure-devops"
 
-1. Sign in to your Azure DevOps organization, and then go to your project.
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. For **Name**, enter a descriptive name for your feed.
-
-   For **Visibility**, select an option to indicate who can view packages within the feed.
-
-   If you want to include packages from public sources, select the checkbox under **Upstream sources**.
-
-   For **Scope**, specify whether the scope of your feed is the project or the organization.
+1. Provide a **Name** for your feed, choose the **Visibility** option that defines who can view your packages, check **Include packages from common public sources** if you want to include packages from sources like *nuget.org* or *npmjs.com*, and for **Scope**, decide whether the feed should be scoped to your project or the entire organization.
 
 1. Select **Create** when you're done.
 
@@ -33,13 +27,7 @@ ms.date: 03/15/2024
 
 2. Select **Artifacts**, and then select **Create Feed**.
 
-3. For **Name**, enter a descriptive name for your feed.
-
-   For **Visibility**, select an option to indicate who can view packages within the feed.
-
-   If you want to include packages from public sources, select the checkbox under **Upstream sources**.
-
-   For **Scope**, specify whether the scope of your feed is the project or the organization.
+3. Provide a **Name** for your feed, choose the **Visibility** option that defines who can view your packages, check **Include packages from common public sources** if you want to include packages from sources like *nuget.org* or *npmjs.com*, and for **Scope**, decide whether the feed should be scoped to your project or the entire organization.
 
 ::: moniker-end
 
