@@ -93,7 +93,7 @@ Use the following fields and [fields used in common across work item types](#def
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [temp](../../includes/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip-azure-devops.md)] 
 
 ## Track progress
 

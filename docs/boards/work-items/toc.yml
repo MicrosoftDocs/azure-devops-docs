@@ -7,8 +7,8 @@
 - name: View & add work items
   displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
   href: view-add-work-items.md
-- name: Add & update a work item
-  href: ../backlogs/add-work-items.md
+- name: Manage work items
+  href: ../backlogs/manage-work-items.md
   displayname: follow, update status, Discussion
 - name: Filter your work items
   href: ../backlogs/filter-backlogs-boards-plans.md
@@ -36,7 +36,7 @@
   - name: Use @mentions in discussions
     href: ../../organizations/notifications/at-mentions.md?toc=/azure/devops/boards/toc.json
     displayname: people picker
-  - name: Add tags to work items
+  - name: Add tags for work items
     href: ../queries/add-tags-to-work-items.md
     displayname: chart, color-code, filter, show, query, bulk modify
   - name: Send email of items or print

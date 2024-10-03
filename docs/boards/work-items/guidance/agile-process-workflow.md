@@ -105,7 +105,7 @@ Use the guidance in the following table and the [common fields used across work 
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [temp](../../includes/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip-azure-devops.md)] 
 
 ## Track progress
 

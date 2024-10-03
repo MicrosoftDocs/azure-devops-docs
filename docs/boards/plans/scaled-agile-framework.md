@@ -18,7 +18,7 @@ ms.date: 10/20/2021
 
 Many enterprises benefit from individual Agile teams. Greater interest grows to scale Agile practices as the organization grows. The need for enterprises to view progress of many Agile teams and across a portfolio continues to increase. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
-If you're familiar with Scrum but not familiar with SAFe®, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
+If you're familiar with Scrum but not familiar with SAFe®, see [SAFe Studio Framework](https://www.scaledagileframework.com).  
 
 Azure Boards supports SAFe® practices through its autonomous teams, backlogs, boards, reports, and metrics. This article introduces you to how Azure Boards artifacts support SAFe practices and artifacts.  
 >[!div class="checklist"]  
