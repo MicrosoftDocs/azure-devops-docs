@@ -247,7 +247,7 @@ The deleted attachment cannot be restored and is permenantly removed after 28 da
 
 ## Permanently delete attachments
 
-To permanently delete attachments, you must have **Permanently delete work items** permissions.
+To permanently delete attachments, you need **Permanently delete work items** permissions. This action is typically reserved for situations requiring immediate removal, such as when files are infected. Otherwise, deleted attachments will be automatically removed within 28 days.
 
 1. From your work item, select the **Attachments** tab. 
 2. Select **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Permanently delete attachment**.
