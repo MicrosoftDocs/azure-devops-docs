@@ -141,7 +141,7 @@ Do the following steps to set up swimlane rules for your board.
    :::image type="content" source="media/expedite/swimlane-rule-criteria.png" alt-text="Screenshot showing field, operator, and value selections for swimlane rule.":::
 
 > [!TIP]
-> - You can't assign rules to the Default lane, but you can optionally rename it.
+> You can't assign rules to the Default lane, but you can optionally rename it.
 
 When your board refreshes, your work items are listed within the appropriate swimlane. 
 
