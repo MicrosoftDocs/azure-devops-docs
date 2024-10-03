@@ -244,27 +244,11 @@ The attachment is added to the work item.
 
    :::image type="content" source="media/confirm-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming delete action.":::
 
-The attachment is deleted and remains in the Recycle Bin until you either [restore](#restore-deleted-attachment) or [permanently delete](#permanently-delete-attachments) it.
-
-## Restore deleted attachment
-
-1. From **Boards** > **Work items**, select :::image type="icon" source="media/recycle-bin-icon.png" border="false"::: **Recycle Bin**.
-
-   :::image type="content" source="media/work-items-recycle-bin.png" alt-text="Screenshot showing highlighted recycle bin in work items list.":::
-
-2. For the deleted work item, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **more actions** > **Restore**.
-
-   :::image type="content" source="media/restore-work-item.png" alt-text="Screenshot showing highlighted more actions and Restore buttons.":::
-
-3. Select **Restore** to confirm you want to restore the attachments.
-
-   :::image type="content" source="media/confirm-restore.png" alt-text="Screenshot showing final Restore button selection.":::
-
-The attachment is restored.
+The deleted attachment cannot be restored and is permenantly removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
 
 ## Permanently delete attachments
 
-You can permanently delete attachments only if you enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+To permanently delete attachments, you must have **Permanently delete work items** permissions.
 
 1. From your work item, select the **Attachments** tab. 
 2. Select **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Permanently delete attachment**.
@@ -276,6 +260,9 @@ You can permanently delete attachments only if you enable the **New Boards Hub**
    :::image type="content" source="media/confirm-permanently-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming permanent delete action.":::
 
 The attachment is permanently deleted and isn't accessible from any other links. 
+
+> [!NOTE]
+> This feature is only available in New Boards Hub.
 
 ## Next steps  
 
