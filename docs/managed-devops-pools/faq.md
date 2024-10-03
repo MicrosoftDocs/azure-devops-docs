@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions
 description: Learn the answers to frequently asked questions for Managed DevOps Pools.
-ms.date: 08/22/2024
+ms.date: 10/03/2024
 ---
 
 # Frequently asked questions
@@ -38,3 +38,7 @@ To see the Azure regions that support Managed DevOps Pools in your subscription,
 
 > [!IMPORTANT]
 > If the **Microsoft.DevOpsInfrastructure** is not registered in your subscription, you won't see any locations. [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription) before you check for supported regions. For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/).
+
+## What if the Azure region that contains my pool has an outage? 
+
+Currently, a Managed DevOps Pool is deployed to single Azure region. In the event of an outage for that region, you would need to create a new Managed DevOps Pool in a different region, and manually update your pipelines to reference the new pool.
