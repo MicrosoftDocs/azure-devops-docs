@@ -25,7 +25,6 @@ Once you [create work items](../work-items/view-add-work-items.md), managing wor
 - [Follow work items](#follow-a-work-item)
 - [Add attachments](#add-attachments)
 - [Delete attachments](#delete-attachments)
-- [Restore deleted attachments](#restore-deleted-attachment)
 - [Permanently delete attachments](#permanently-delete-attachments)
 
 By effectively managing work items, you can ensure that your project stays on track and that all team members are aligned on the work to be done.
