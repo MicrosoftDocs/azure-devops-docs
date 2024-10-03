@@ -1,12 +1,12 @@
 ---
 title: Start using Azure Artifacts
-description: Learn how to get started with Azure Artifacts by increasing the storage or usage limit in Billing, and create your first feed.
+description: Learn how to get started with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 09/18/2024
+ms.date: 10/02/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,21 +14,19 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts allows developers to manage dependencies in one place, for instance, they can: 
-- Publish packages to feeds and share them within teams, across organizations, or publicly. 
-- Consume packages from various feeds and public registries like NuGet.org or npmjs.com. 
-- Use supported package types include NuGet, npm, Python, Maven, Cargo, and Universal Packages.
-
-This article shows you how to increase your Azure Artifact storage limit and create your first feed.
+Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online. Azure Artifacts supports various package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 ## Prerequisites
 
-- **Project:** Have a [project](../organizations/projects/create-project.md#create-a-project) and be a member.
-- **Permissions:** Be a member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- **Network configuration:** [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
+- Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+- Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
 > [!NOTE]
 > Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
+
+## Create a new feed
+
+[!INCLUDE [](includes/create-feed.md)]
 
 ::: moniker range="azure-devops"
 
@@ -53,10 +51,6 @@ Azure Artifacts is provided at no cost for every organization with up to 2 GiB o
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
-## Create a feed
-
-[!INCLUDE [](includes/create-feed.md)]
 
 ## Get started with package type
 
