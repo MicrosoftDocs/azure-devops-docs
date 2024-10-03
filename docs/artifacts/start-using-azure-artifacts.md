@@ -22,7 +22,7 @@ Azure Artifacts provides developers with a streamlined way to manage all their d
 - Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
 > [!NOTE]
-> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-azure-artifacts-storage-limit) to ensure you have the appropriate resources.
 
 ## Create a new feed
 
@@ -40,7 +40,7 @@ With Azure Artifacts, you can publish and consume various package types from fee
 
 # [dotnet](#tab/dotnet)
 
-- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](/nuget/dotnet-exe.md)
+- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
 
 # [Npm](#tab/npm)
 
@@ -76,9 +76,9 @@ With Azure Artifacts, you can publish and consume various package types from fee
 
 - **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
 
-# [dotnet](#tab/dotnet)
+# [dotnet](#tab/dotnetserver)
 
-- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](/nuget/dotnet-exe.md)
+- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
 
 # [Npm](#tab/npmserver)
 
