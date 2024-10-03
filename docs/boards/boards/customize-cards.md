@@ -208,7 +208,7 @@ Complete the following steps to manage annotations.
    :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot showing a board, Settings dialog, Annotations tab.":::
 
 	> [!NOTE]   
-	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. For more information, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md).
 
 3. When you're done, select **Save**.
 
