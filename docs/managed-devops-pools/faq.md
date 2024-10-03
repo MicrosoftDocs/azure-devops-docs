@@ -48,9 +48,8 @@ When it comes to DR, Microsoft uses the [shared responsibility model](/azure/rel
 Managed DevOps Pools instances don't automatically replicate or switch from a failed region to another enabled region. In the event of a complete outage of the Azure region that hosts your Managed DevOps Pool, you would need to create a new Managed DevOps Pool in a different region, and manually update your pipelines to reference the new pool.
 
 This includes (but not limited to) the following resources:
-- The resource group for the replacemnt pool
+- The resource group for the replacement pool
 - The dev center and dev center project for the replacement pool
 - The Azure Compute Gallery images (if your pool uses them)
-- The Azure DevOps organization that uses your pool
 
 You can save the configuration of your existing pool (TODO properties) and create ARM templates or Azure CLI scripts to recreate your pool using the same settings (except for name and location), and manually update your pipelines to use the new pool.
