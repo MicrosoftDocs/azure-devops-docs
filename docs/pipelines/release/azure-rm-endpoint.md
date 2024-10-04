@@ -3,10 +3,11 @@ title: Troubleshoot Azure Resource Manager service connections
 ms.custom: devx-track-arm-template, arm2024
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/05/2024
+ms.date: 10/04/2024
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -70,9 +71,6 @@ The following issues might occur when you create service connections:
     - [Azure subscription isn't passed from the previous task output](#azure-subscription-isnt-passed-from-the-previous-task-output)
     - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
   - [Related articles](#related-articles)
-
-* [The user has only guest permission in the directory](#guestonly)
-* [The user isn't authorized to add applications in the directory](#notauthtoadd)
 
 <a name="guestonly"></a>
 
@@ -153,41 +151,49 @@ To resolve this issue, ask the subscription administrator to [assign you the app
 
 ### Subscription isn't listed when creating a service connection
 
-A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions aren't listed. In this scenario, complete the following steps:
+- **Maximum of 50 Azure subscriptions listed in the various Azure subscription drop-down menus** (billing, service connection, and so on): If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions aren't listed. In this scenario, complete the following steps:
 
-1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
+  1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
+  2. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing). 
+  3. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+  4. Sign in to Azure DevOps with the new user credentials, and set up a billing. You only see one Azure subscription in the list.
 
-1. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing).
- 
-1. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+- **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated.
 
-1. Sign in to Azure DevOps with the new user credentials, and set up a billing. You only see one Azure subscription in the list.
+  To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
+
+  1. Sign out of Azure DevOps Services and sign back in. This action can refresh the user token.
+  2. Clear your browser cache and cookies to ensure that any old tokens are removed.
+  3. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
 
 <a name="missingSubscriptions"></a>
 
 ### Some subscriptions are missing from the list of subscriptions
 
-This issue can be fixed by changing the **supported account types** settings and defining who can use your application. To do so, follow the steps:
+- **Change support account types settings:** This issue can be fixed by changing the **supported account types** settings and defining who can use your application. Do the following steps:
 
-1. Sign in to the Azure portal.
-
-1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
+  1. Sign in to the Azure portal.
+  2. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
 
     :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure portal.":::
 
-1. Select **Microsoft Entra ID** from the left pane.
-
-1. Select **App registrations**.
-
-1. Select your application from the list of registered applications.
-
-1. Under **Authentication**, select **Supported account types**.
-
-1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
+  3. Select **Microsoft Entra ID** from the left pane.
+  4. Select **App registrations**.
+  5. Select your application from the list of registered applications.
+  6. Under **Authentication**, select **Supported account types**.
+  7. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
     :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
 
-1. Select **Save** when you're done.
+  8. Select **Save** when you're done.
+
+- **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated.
+
+  To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
+
+  1. Sign out of Azure DevOps Services and sign back in. This action can refresh the user token.
+  2. Clear your browser cache and cookies to ensure that any old tokens are removed.
+  3. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
 
 <a name="autoCreatedSecretExpiration"></a>
 
