@@ -427,7 +427,7 @@ Deleted variable 'Configuration' successfully.
 <h2 id="secret-variables">Set secret variables</h2>
 
 > [!TIP]
-> Secret variables aren't automatically exported as environment variables. To use secret variables in your scripts, explicitly map them to environment variables.
+> Secret variables aren't automatically exported as environment variables. To use secret variables in your scripts, explicitly map them to environment variables. For more information, see [Set secret variables](set-secret-variables.md).
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
