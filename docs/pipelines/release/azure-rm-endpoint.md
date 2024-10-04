@@ -72,6 +72,10 @@ The following issues might occur when you create service connections:
     - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
   - [Related articles](#related-articles)
 
+<a name="the-user-has-only-guest-permission-in-the-directory"></a>
+
+#### The user has only guest permission in the directory
+
 1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner) or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
 1. Select **Microsoft Entra ID** in the left navigation bar.
