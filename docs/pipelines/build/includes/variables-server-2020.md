@@ -33,7 +33,7 @@ ms.date: 02/13/2020
 
 <a id="build-variables"></a>
 
-When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because it's value is not accessible within the template's scope. 
+When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because its value is not accessible within the template's scope. 
 
 
 | Variable | Description | Available in templates? |

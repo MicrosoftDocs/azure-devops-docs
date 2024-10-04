@@ -116,7 +116,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <a id="system-variables"></a>
 
-When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because it's value is not accessible within the template's scope. 
+When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because its value is not accessible within the template's scope. 
 
 | Variable | Description | Available in [templates](../../process/templates.md)? |
 |:---------|:------------|:------------------------------------------------------|
