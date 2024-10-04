@@ -72,10 +72,6 @@ The following issues might occur when you create service connections:
     - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
   - [Related articles](#related-articles)
 
-<a name="guestonly"></a>
-
-#### The user has only guest permission in the directory
-
 The best approach to resolve this issue, while granting only the minimum permissions to the user, is to increase the Guest user permissions as follows.
 
 1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner) or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
@@ -158,9 +154,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   3. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
   4. Sign in to Azure DevOps with the new user credentials, and set up a billing. You only see one Azure subscription in the list.
 
-- **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated.
-
-  To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
+- **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated. To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
 
   1. Sign out of Azure DevOps Services and sign back in. This action can refresh the user token.
   2. Clear your browser cache and cookies to ensure that any old tokens are removed.
@@ -187,9 +181,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
 
   8. Select **Save** when you're done.
 
-- **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated.
-
-  To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
+- **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated. To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
 
   1. Sign out of Azure DevOps Services and sign back in. This action can refresh the user token.
   2. Clear your browser cache and cookies to ensure that any old tokens are removed.
