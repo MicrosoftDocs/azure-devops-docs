@@ -136,6 +136,7 @@ If the pipeline run is manually triggered or scheduled, the values of the `versi
 | `branch`      | The artifacts from the latest build done on the specified branch |
 | `tags` list   | The artifacts from the latest build that has all the specified tags    |
 | `branch` and `tags` list   | The artifacts from the latest build done on the specified branch that has all the specified tags |
+| `version` and `branch` | The artifacts from the build with the specified run number and the specified branch. |
 | None    | The artifacts from the latest build across all the branches |
 
 The following `pipeline` resource definition uses the `branch` and `tags` properties to evaluate the default version when the pipeline is triggered manually or scheduled. When you manually trigger the pipeline to run, the `MyCIAlias` pipeline artifacts version is the latest build done on the `main` branch that has the `Production` and `PrepProduction` tags.
