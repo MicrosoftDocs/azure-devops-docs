@@ -4,7 +4,7 @@ ms.custom: devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 04/04/2024
+ms.date: 10/03/2024
 ai-usage: ai-assisted
 
 monikerRange: '<= azure-devops'
@@ -425,6 +425,9 @@ Deleted variable 'Configuration' successfully.
 
 * * *
 <h2 id="secret-variables">Set secret variables</h2>
+
+> [!TIP]
+> Secret variables aren't automatically exported as environment variables. To use secret variables in your scripts, explicitly map them to environment variables. For more information, see [Set secret variables](set-secret-variables.md).
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
