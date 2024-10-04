@@ -55,9 +55,6 @@ When you save your new Azure Resource Manager service connection, Azure DevOps d
 The following issues might occur when you create service connections:
 
 - [Troubleshoot Azure Resource Manager service connections](#troubleshoot-azure-resource-manager-service-connections)
-  - [What happens when you create an Azure Resource Manager service connection?](#what-happens)
-  - [Troubleshooting scenarios](#troubleshooting-scenarios)
-- [Troubleshoot Azure Resource Manager service connections](#troubleshoot-azure-resource-manager-service-connections)
   - [What happens when you create an Azure Resource Manager service connection?](#what-happens-when-you-create-an-azure-resource-manager-service-connection)
   - [Troubleshooting scenarios](#troubleshooting-scenarios)
       - [The user has only guest permission in the directory](#the-user-has-only-guest-permission-in-the-directory)
