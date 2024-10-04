@@ -47,6 +47,9 @@ Example of **Agent.ContainerMapping**:
 
 <a id="build-variables"></a>
 
+When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because it's value is not accessible within the template's scope. 
+
+
 | Variable | Description | Available in [templates](../../process/templates.md)? |
 |:---------|:------------|:------------------------------------------------------|
 | Build.ArtifactStagingDirectory | The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: `c:\agent_work\1\a`. <br><br>A typical way to use this folder is to publish your build artifacts with the [Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. <br><br>Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don't have to clean it up yourself.<br><br> See [Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md).<br><br>This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. | No |
