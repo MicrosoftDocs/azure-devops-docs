@@ -154,7 +154,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
   2. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing). 
   3. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
-  4. Sign in to Azure DevOps with the new user credentials, and set up a billing. You only see one Azure subscription in the list.
+  4. Sign in to Azure DevOps with the new user credentials, and set up billing. You only see one Azure subscription in the list.
 
 - **Old user token cached in Azure DevOps Services:** If your Azure subscription isn't listed when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated. To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
 
