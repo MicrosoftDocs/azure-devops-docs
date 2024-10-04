@@ -62,7 +62,7 @@ steps:
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* and *Nuget Authenticate* tasks with their default settings and configure the *Command line* task as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* and *NuGet Authenticate* tasks with their default settings and configure the *Command line* task as follows:
 
     :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the publish task in Azure Pipelines." lightbox="media/nuget/nuget-push-cli-task.png":::
 
@@ -105,7 +105,7 @@ steps:
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* and *Nuget Authenticate* tasks with their default settings and configure the *Command line* task as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* and *NuGet Authenticate* tasks with their default settings and configure the *Command line* task as follows:
 
     :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the CLI publish task in Azure Pipelines." lightbox="media/nuget/nuget-push-cli-task.png":::
 
@@ -167,7 +167,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
 
-    :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the publish task to a feed in other organization." lightbox="media/nuget/nuget-push-cli-task.png":::
+    :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the publish task to a feed in another organization." lightbox="media/nuget/nuget-push-cli-task.png":::
 
     1. **NuGet Authenticate task**: select your service connection from the *Service connection credentials for feeds outside this organization* dropdown menu.
     
@@ -213,7 +213,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
 
-    :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the CLI publish task to a feed in other organization." lightbox="media/nuget/nuget-push-cli-task.png":::
+    :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the CLI publish task to a feed in another organization." lightbox="media/nuget/nuget-push-cli-task.png":::
 
     1. **NuGet Authenticate task**: select your service connection from the *Service connection credentials for feeds outside this organization* dropdown menu.
     
@@ -232,7 +232,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 ## NuGet task package versioning
 
-Azure Pipelines supports [Semantic Versioning](https://semver.org/) and provides the following configuration options for NuGet tasks::
+Azure Pipelines supports [Semantic Versioning](https://semver.org/) and provides the following configuration options for NuGet tasks:
 
 - **Use the date and time** (Classic) | **byPrereleaseNumber** (YAML):
     Your package version will follow the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to customize the Major, Minor, and Patch values.
