@@ -116,6 +116,8 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <a id="system-variables"></a>
 
+When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because it's value is not accessible within the template's scope. 
+
 | Variable | Description | Available in [templates](../../process/templates.md)? |
 |:---------|:------------|:------------------------------------------------------|
 | System.AccessToken | [Use the OAuth token to access the REST API](../../scripts/powershell.md#example-powershell-script-access-rest-api).<br><br>[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken).<br><br>This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. | Yes |
