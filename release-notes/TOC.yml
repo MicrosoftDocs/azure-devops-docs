@@ -710,6 +710,8 @@
         items:
         - name: "2024"
           items:
+          - name: October 15
+            href: 2024/testplans/sprint-246-update.md
           - name: September 26
             href: 2024/testplans/sprint-245-update.md
           - name: June 14
@@ -811,6 +813,8 @@
         items:
         - name: "2024"
           items:
+          - name: October 15
+            href: 2024/ghazdo/sprint-246-update.md
           - name: September 26
             href: 2024/ghazdo/sprint-245-update.md
           - name: September 4
