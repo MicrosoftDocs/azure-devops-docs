@@ -15,6 +15,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-246-update-links](includes/general/sprint-246-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-246-update-links](includes/ghazdo/sprint-246-update-links.md)]
+
 ### Azure Boards:
 
 [!INCLUDE [sprint-246-update-links](includes/boards/sprint-246-update-links.md)]
@@ -30,6 +34,10 @@ Check out the release notes for details.
 ## General
 
 [!INCLUDE [sprint-246-update](includes/general/sprint-246-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-246-update](includes/ghazdo/sprint-246-update.md)]
 
 ## Azure Boards
 
