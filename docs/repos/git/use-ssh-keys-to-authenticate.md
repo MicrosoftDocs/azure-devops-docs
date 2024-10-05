@@ -167,10 +167,6 @@ Proceed only if they match!
 1. Enter `yes` to continue. If everything is configured correctly, the output should look like this:
 
    ```Output
-
-   If everything is configured correctly the output should look like this:
-
-   ```Output
     Warning: Permanently added 'ssh.dev.azure.com' (RSA) to the list of known hosts.
     remote: Shell access is not supported.
     shell request failed on channel 0
