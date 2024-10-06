@@ -13,10 +13,13 @@ pull_request_targets:
   - main
   - release/*
   - feature/*
+
+
 This configuration will prioritize the main branch, but will also consider branches starting with release/ or feature/ if they are more appropriate. The configuration will be used in the following scenarios:
 
-Pull Request Suggestions: After pushing a branch to Azure DevOps, the Repos page may suggest creating a pull request from that branch, dynamically choosing the target branch.
-Pull Request URL: When navigating directly to the pull request creation page using a sourceRef parameter but omitting the targetRef parameter, Azure DevOps will select a target branch based on this dynamic choice.
+- **Pull Request Suggestions:** After pushing a branch to Azure DevOps, the Repos page may suggest creating a pull request from that branch, dynamically choosing the target branch.
+- **Pull Request URL:** When navigating directly to the pull request creation page using a sourceRef parameter but omitting the targetRef parameter, Azure DevOps will select a target branch based on this dynamic choice.
+
 It is recommended to include only branches protected by pull request policies in your list of candidate branches. This ensures that the previous locations of the branch are present in the first-parent history of the tip commit.
 
 ### Support mermaid diagrams in markdown file preview
