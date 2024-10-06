@@ -179,6 +179,9 @@ Base your decision for one vs. many repos on the following factors and tips:
 - if you have many disconnected services, one repo per service is a good strategy  
 
 > [!Tip]
+> Your ephemeral environment and all its associated ephemeral resources such as Azure Functions, etc should have its own repo and pipeline. This way you can deploy and roll it back at the same time making it easier to spin-up and discard the ephemeral resources. Your shared resources with long spin-up time e.g. Azure SQL Database should have their own separate repo and pipeline. This way, your ephemeral environments can use these shared resources which makes their deployments faster and cheaper. Also you shared infrastructure resources such as VPC and subnet, also known as landing zone, should have its own repo and pipeline.
+
+> [!Tip]
 > Consider [managing your permissions](../organizations/security/permissions.md), so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). If you have too many repos, it's hard to keep track of who owns which code or other content stored in those repos.
 
 ### Shared repo vs. forked repos
