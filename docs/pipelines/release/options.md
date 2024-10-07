@@ -1,17 +1,29 @@
 ---
-title: Build options
-description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
+title: Classic pipelines configuration
+description: Learn about the options available to configure your agent and the different build properties for your Classic pipeline.
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 06/19/2021
+ms.date: 10/07/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Build options
+# Classic pipelines configuration
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Classic pipelines make it easier for developers to design their pipeline workflows using the user interface to add tasks and conditions tailored to their scenario. This article explains the available options to configure your agent job and explores the different build properties for your Classic pipeline.
 
+## Agent job
+
+1. Sign in to your Azure DevOps organization, and then go to your project.
+
+1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
+
+1. Select **Tasks**, and then select **Agent job**.
+
+#### Default agent pool:
+
+When you queue a build, it runs on an agent from your selected pool. You can choose a Microsoft-hosted pool or a self-hosted pool that you manage. Select the [pool](../agents/pools-queues.md) associated with the agents you want to run this pipeline on.
 
 ## Create a work item on failure
 
@@ -34,14 +46,6 @@ You can also select if you want to assign the work item to the requestor. For ex
 Select this check box in classic build pipelines if you want to enable your script to use the build pipeline OAuth token. This check box is located under the "additional settings" section after selecting the agent job in the pipeline.
 
 For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
-
-
-## Default agent pool
-
-Select the [pool](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
-
-> [!TIP]
-> If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
 ## Build job authorization scope
 
