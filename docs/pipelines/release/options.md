@@ -25,6 +25,30 @@ Classic pipelines make it easier for developers to design their pipeline workflo
 
 When you queue a build, it runs on an agent from your selected pool. You can choose a Microsoft-hosted pool or a self-hosted pool that you manage. Select the [pool](../agents/pools-queues.md) associated with the agents you want to run this pipeline on.
 
+#### Parallelism
+
+Defines how the job's tasks are executed in parallel:
+
+- None: tasks are executed on a single agent.
+
+- Multi-configuration: tasks are executed on multiple configurations, as specified in the multipliers. Configurations run in parallel, each using a single agent. The total number of agents depends on the number of configurations and can be limited by setting a maximum number of agents.
+
+- Multi-agent: tasks are executed on multiple agents using the specified number of agents.
+
+#### Timeout
+
+Specifies the maximum time, in minutes, that a deployment is allowed to run on an agent before being canceled by the server. The duration is measured after pre-approval is completed and before post-approval is requested. A value of zero will cause the timeout of the parent pipeline to be used.
+
+#### Job cancel timeout
+
+Specifies the maximum wait time for a deployment job to respond to a cancellation request before being terminated by the server. A value of zero will cause the timeout of the parent pipeline to be used.
+
+#### Allow scripts to access the OAuth token
+
+Enables scripts and other processes to access the OAuth token through the `System.AccessToken` variable. See the [example script for accessing the REST API](../scripts/powershell?view=azure-devops&tabs=classic) for more details.
+
+:::image type="content" source="media/classic-pipeline-agent-job-configuration.png" alt-text="A screenshot displaying how to configure the agent job in a Classic pipeline." lightbox="media/classic-pipeline-agent-job-configuration.png":::
+
 ## Create a work item on failure
 
 If the build pipeline fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
@@ -39,13 +63,6 @@ You can also select if you want to assign the work item to the requestor. For ex
 | ```System.Reason``` |  ```Build failure``` |
 
 **Q:** What other work item fields can I set? **A:**  [Work item field index](../../boards/work-items/guidance/work-item-field.md)
-
-
-## Allow scripts to access the OAuth token
-
-Select this check box in classic build pipelines if you want to enable your script to use the build pipeline OAuth token. This check box is located under the "additional settings" section after selecting the agent job in the pipeline.
-
-For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
 
 ## Build job authorization scope
 
