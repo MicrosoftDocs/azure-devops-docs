@@ -8,6 +8,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.date: 10/08/2024
 #customer intent:  As an administrator or team member, I want to understand how using a dashboard can provide visibility into projects for my team.
