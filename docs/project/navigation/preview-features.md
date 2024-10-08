@@ -7,9 +7,10 @@ ms.subservice: azure-devops-projects
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2023
+ms.date: 10/08/2024
 ---
 
 # Manage preview features 
@@ -98,7 +99,6 @@ The following table shows the preview features you can turn on or off based on y
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2020"
 
 The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
@@ -114,7 +114,6 @@ The following table shows the features you can turn on or off based on your role
 
 You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
 
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -123,7 +122,6 @@ You can turn on or off the [Selective artifacts download feature for collection/
 
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2022"
 
 ## Pull request summary - Load of large files
@@ -131,7 +129,6 @@ You can turn on or off the [Selective artifacts download feature for collection/
 Turns on a file content load experience for large files in the Pull request summary.
 
 ::: moniker-end
-
 
 ::: moniker range="azure-devops"
 
@@ -205,6 +202,13 @@ The following features are generally available for Azure DevOps.
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
 
 ::: moniker-end
+
+## Transition of Preview Features to General Availability
+
+While there's no fixed timeline for when a preview feature will move to general availability (GA), there are several indicators and resources you can use to stay informed about the status of preview features:
+
+- **Azure DevOps roadmap and release notes:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. For more information, see [Azure DevOps Roadmap](https://learn.microsoft.com/azure/devops/release-notes/features-timeline). 
+- **Azure DevOps blog:** The Azure DevOps blog often features posts about new releases, including when preview features transition to GA. Subscribing to the blog or regularly checking it can help you stay updated. For more information, see [Azure DevOps Blog](https://devblogs.microsoft.com/devops/).
 
 ## Related articles
 
