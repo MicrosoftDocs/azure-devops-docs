@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure Managed DevOps Pools settings.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Configure pool settings

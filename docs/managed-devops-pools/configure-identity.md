@@ -1,7 +1,7 @@
 ---
 title: Configure identity
 description: Learn how to configure a managed identity for Managed DevOps Pools.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Configure Managed DevOps Pools identity

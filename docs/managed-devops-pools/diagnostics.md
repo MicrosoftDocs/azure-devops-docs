@@ -1,7 +1,7 @@
 ---
 title: Diagnostic logs
 description: Learn how to troubleshoot using diagnostic logs.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Diagnostics logs

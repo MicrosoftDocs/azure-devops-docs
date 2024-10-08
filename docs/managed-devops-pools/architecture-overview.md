@@ -3,7 +3,7 @@ title: Microsoft Managed DevOps Pools architecture
 description: Learn about the architecture, key concepts & terminology for Microsoft Managed DevOps Pools.
 author: ElizaTar
 ms.author: elizatar
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand Managed DevOps Pools concepts and terminology so that I can set up a Managed DevOps Pool.
 ---

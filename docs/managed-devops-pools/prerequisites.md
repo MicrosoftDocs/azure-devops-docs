@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Prerequisites for Managed DevOps Pools

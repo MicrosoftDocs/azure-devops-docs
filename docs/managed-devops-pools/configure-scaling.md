@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Configure scaling
