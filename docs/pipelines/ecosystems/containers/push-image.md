@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: v-catherbund
 author: cebundy
-ms.date: 010/07/2024
+ms.date: 10/07/2024
 monikerRange: '<= azure-devops'
 ---
 
