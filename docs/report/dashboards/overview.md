@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/17/2024
+ms.date: 10/08/2024
 #customer intent:  As an administrator or team member, I want to understand how using a dashboard can provide visibility into projects for my team.
 ---
 
@@ -327,6 +327,8 @@ For more information, see [Widgets based on Analytics data](../dashboards/analyt
 
 ::: moniker-end
 
+
+
 <a id="work-tracking-analytics"></a>
 
 ## In-context reports: Work tracking
@@ -495,10 +497,34 @@ In addition to the widgets available in the widget catalog, you might find inter
 
 Or, you can create your own widget by using the REST API. For more information, see [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md).
 
-## Related articles
+## Azure reporting
+
+Azure provides various reporting tools and services to help you monitor and analyze the usage and performance of your resources, such as Virtual Machines (VMs), services, and overall usage.
+
+### Azure Monitor
+
+Azure Monitor is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. It helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on.
+
+For more information, see [Azure Monitor overview](/azure/azure-monitor/overview).
+
+### Azure Resource Graph
+
+Azure Resource Graph lets you explore and query your Azure resources at scale. It lets you query across subscriptions and management groups, making it easier to manage large environments.
+
+For more information, see [What is Azure Resource Graph](/azure/governance/resource-graph/overview).
+
+### Azure Advisor
+
+Azure Advisor is a personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It analyzes your resource configuration and usage telemetry and then recommends solutions to help improve the cost-effectiveness, performance, high availability, and security of your Azure resources.
+
+For more information, see [Introduction to Azure Advisor](/azure/advisor/advisor-overview).
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
+
+## Related articles
 
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Widget catalog](widget-catalog.md)
