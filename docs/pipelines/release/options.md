@@ -86,3 +86,10 @@ See [Understand job access tokens](../process/access-tokens.md) for more details
 
 Specify the capabilities that the agent must have to run this pipeline. See [Agent capabilities and demands](../agents/agents.md#capabilities) for more details.
 
+:::image type="content" source="media/classic-build-properties.png" alt-text="A screenshot displaying how to configure the different build properties in a Classic pipeline." lightbox="media/classic-build-properties.png":::
+
+## Related content
+
+- [Build multiple branches ](../build/ci-build-git.md)
+- [View Classic pipeline history](history.md)
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
