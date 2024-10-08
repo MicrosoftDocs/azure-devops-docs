@@ -209,4 +209,3 @@ The following features are generally available for Azure DevOps.
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)
