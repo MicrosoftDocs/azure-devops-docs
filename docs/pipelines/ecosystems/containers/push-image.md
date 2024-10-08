@@ -195,7 +195,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 
-```
+   ```
 
 1. When you're done, select **Save and run**.
 
