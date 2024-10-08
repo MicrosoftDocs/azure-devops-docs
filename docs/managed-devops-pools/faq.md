@@ -52,4 +52,4 @@ This includes the following resources that Managed DevOps Pools depends on:
 - The dev center and dev center project for the replacement pool
 - The Azure Compute Gallery images (if your pool uses them)
 
-You can save the configuration of your existing pool and create [ARM templates](./quickstart-arm-template.md) or Azure CLI scripts to recreate your pool using the same settings (except for name and location), and manually update your pipelines to use the new pool. When normal operations resume in the Azure region of your original pool, you can updates your pipelines to use the original pool, and delete the new pool and associated resources.
+You can save the configuration of your existing pool and create [ARM templates](./quickstart-arm-template.md) or Azure CLI scripts to recreate your pool using the same settings (except for name and location), and manually update your pipelines to use the new pool. When normal operations resume in the Azure region of your original pool, you can update your pipelines to use the original pool, and delete the new pool and associated resources.
