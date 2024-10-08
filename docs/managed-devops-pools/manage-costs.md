@@ -8,6 +8,10 @@ ms.topic: concept-article
 
 # Manage cost and performance
 
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 Managed DevOps Pools provides several different options for configuring the performance of your pool. This article describes options for matching your pool's performance to the demands of your workload, by increasing or reducing the performance and cost of your pools.
 
 ## Configure agent performance

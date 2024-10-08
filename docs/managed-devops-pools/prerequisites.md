@@ -6,6 +6,10 @@ ms.date: 08/22/2024
 
 # Prerequisites for Managed DevOps Pools
 
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 There are a few things you need to prepare before using Managed DevOps Pools for the first time.
 
 At a high level, you need:

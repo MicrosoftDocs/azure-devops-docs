@@ -6,6 +6,10 @@ ms.date: 08/22/2024
 
 # Configure pool settings
 
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 This article describes how to configure the basic settings of your Managed DevOps Pool.
 
 Go to **Overview** to view an overview of pool settings, [move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription), or configure [tags](/azure/azure-resource-manager/management/tag-resources). Managed DevOps Pools passes up to 20 tags to the VM, and the rest are ignored.

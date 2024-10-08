@@ -6,6 +6,10 @@ ms.date: 08/22/2024
 
 # Frequently asked questions
 
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 ## How many agents can I create?
 
 See [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas) for information about the default quota and how to increase the quota for your pool.

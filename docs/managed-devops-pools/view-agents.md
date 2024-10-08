@@ -6,6 +6,10 @@ ms.date: 08/22/2024
 
 # View agents
 
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 You can view the status of the agents in your pool on the **Agents** pane. You can use this information to get a quick overview of how many agents are running jobs and see how many standby agents are online.
 
 ## Agents list

@@ -6,6 +6,10 @@ ms.date: 08/22/2024
 
 # Diagnostics logs
 
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 Diagnostic settings in Azure are used to collect resource logs. An Azure resource emits resource logs and provides rich, frequent data about the operation of that resource. These logs are captured per request and are also referred to as "data plane logs". See [Diagnostic settings in Azure Monitor](/azure/azure-monitor/essentials/diagnostic-settings) for a recommended overview of the functionality in Azure. The content of these logs varies by resource type. In Managed DevOps Pools, two options are available to log:
 
 - **Managed DevOps Pools Metrics** (**AllMetrics**) used to [log metrics from Azure Monitor](/azure/azure-monitor/essentials/diagnostic-settings)
