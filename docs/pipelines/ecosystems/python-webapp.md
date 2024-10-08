@@ -660,10 +660,10 @@ variables:
 azureServiceConnectionId: '<your-service-connection-name>'
 
 # Web app name
-webAppName: '<your-web-app-name>'
+webAppName: '<your-webapp-name>'
 
 # Environment name
-environmentName: '<your-web-app-name>'
+environmentName: '<your-webapp-name>'
 
 # Project root folder. 
 projectRoot: $(System.DefaultWorkingDirectory)
@@ -721,7 +721,7 @@ The job contains multiple steps:
            displayName: 'Use Python $(pythonVersion)'
     ```
 
-1. This step uses a script to create a virtual Python environment and install the app's dependencies contained in the `requirements.txt` file. The `--target` parameter specifies the location to install the dependencies. The `workingDirectory` parameter specifies the location of the app code.
+1. This step uses a script to create a virtual Python environment and install the app's dependencies contained in the `requirements.txt` The `workingDirectory` parameter specifies the location of the app code.
 
     ```yml
       - script: |
@@ -729,7 +729,7 @@ The job contains multiple steps:
            source antenv/bin/activate
            python -m pip install --upgrade pip
            pip install setup
-           pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+           pip install  -r ./requirements.txt
          workingDirectory: $(projectRoot)
          displayName: "Install requirements"
    ```
