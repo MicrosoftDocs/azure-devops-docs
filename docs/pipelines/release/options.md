@@ -37,7 +37,7 @@ Defines how the job's tasks are executed in parallel:
 
 #### Timeout
 
-Specifies the maximum time, in minutes, that a deployment is allowed to run on an agent before being canceled by the server. The duration is measured after pre-approval is completed and before post-approval is requested. A value of zero will cause the timeout of the parent pipeline to be used.
+Specifies the maximum time, in minutes, that a deployment is allowed to run on an agent before being canceled by the server. The duration is measured after preapproval is completed and before post-approval is requested. A value of zero will cause the timeout of the parent pipeline to be used.
 
 #### Job cancel timeout
 
@@ -45,7 +45,7 @@ Specifies the maximum wait time for a deployment job to respond to a cancellatio
 
 #### Allow scripts to access the OAuth token
 
-Enables scripts and other processes to access the OAuth token through the `System.AccessToken` variable. See the [example script for accessing the REST API](../scripts/powershell?view=azure-devops&tabs=classic) for more details.
+Enables scripts and other processes to access the OAuth token through the `System.AccessToken` variable. See the [example script for accessing the REST API](../scripts/powershell.md) for more details.
 
 :::image type="content" source="media/classic-pipeline-agent-job-configuration.png" alt-text="A screenshot displaying how to configure the agent job in a Classic pipeline." lightbox="media/classic-pipeline-agent-job-configuration.png":::
 
@@ -65,7 +65,7 @@ When enabled, if the pipeline fails, a work item is automatically created to tra
 
 - Additional Fields: set additional fields when creating the work item. 
 
-For example, "System.Title" = "Build $(build.buildNumber) failed" formats the Work Item title, and "System.Reason" = "Build failure" sets the reason. see [Work item field index](../../boards/work-items/guidance/work-item-field.md) for other available fields.
+For example, "System.Title" = "Build $(build.buildNumber) failed" formats the Work Item title, and "System.Reason" = "Build failure" sets the reason. See [Work item field index](../../boards/work-items/guidance/work-item-field.md) for other available fields.
 
 #### Build job
 
