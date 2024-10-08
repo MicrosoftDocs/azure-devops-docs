@@ -176,7 +176,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
 1. Replace `<docker connection>` with the name of the Docker service connection you created earlier.
 1. Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, `<your-docker-hub-username>/<repository-name>`.
 
-```yaml
+   ```yaml
 
     trigger:
     - main
