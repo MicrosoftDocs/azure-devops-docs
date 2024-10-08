@@ -213,4 +213,3 @@ While there's no fixed timeline for when a preview feature will move to general 
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)
