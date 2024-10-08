@@ -115,11 +115,11 @@ Work items on your board are automatically assigned the default **Area Path** an
 
 1. From the Stories board, choose **New item** and the stories you want to track.
 
-:::image type="content" source="media/plan-track-work/new-user-story-kanban-board.png" alt-text="Screenshot shows the option to add a New item option for the Agile process.":::
+   :::image type="content" source="media/plan-track-work/new-user-story-kanban-board.png" alt-text="Screenshot shows the option to add a New item option for the Agile process.":::
 
 1. Select **Enter**. The system assigns a work item ID to the user story.
 
-:::image type="content" source="media/plan-track-work/users-stories-board-added-item.png" alt-text="Screenshot shows the added item in the Agile process.":::
+   :::image type="content" source="media/plan-track-work/users-stories-board-added-item.png" alt-text="Screenshot shows the added item in the Agile process.":::
 
 1. Add as many user stories as you need.  
 
@@ -277,7 +277,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 
    :::image type="content" source="media/plan-track-work/add-child-task.png" alt-text="Screenshot shows choosing Add Task from the User Story card menu in the Agile process.":::
 
-   Enter a title for the task and select **Enter**.
+1. Enter a title for the task and select **Enter**.
 
    :::image type="content" source="media/plan-track-work/prep-images-task.png" alt-text="Screenshot shows adding a task in the Agile process.":::
 
@@ -297,7 +297,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 
    :::image type="content" source="media/track-issues/add-tasks.png" alt-text="Screenshot shows choosing Add Task from the User Story card menu in the Basic process.":::
 
-   Enter a title for the task and select **Enter**.
+1. Enter a title for the task and select **Enter**.
 
    :::image type="content" source="media/track-issues/enter-first-task.png" alt-text="Screenshot shows adding a task in the Basic process.":::
 
@@ -317,7 +317,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 
    :::image type="content" source="media/plan-track-work/add-child-task.png" alt-text="Screenshot shows choosing Add Task from the User Story card menu in the Scrum process.":::
 
-   Enter a title for the task and type Enter when you're done.
+1. Enter a title for the task and type Enter when you're done.
 
    :::image type="content" source="media/plan-track-work/prep-images-task.png" alt-text="Screenshot shows adding a task in the Scrum process.":::
 
@@ -337,7 +337,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 
    :::image type="content" source="media/plan-track-work/add-child-task.png" alt-text="Screenshot shows choosing Add Task from the User Story card menu in the CMMI process.":::
 
-   Enter a title for the task and type Enter when you're done.
+1. Enter a title for the task and type Enter when you're done.
 
    :::image type="content" source="media/plan-track-work/prep-images-task.png" alt-text="Screenshot shows adding a task in the CMMI process.":::
 
