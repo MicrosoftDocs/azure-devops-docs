@@ -42,7 +42,7 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 - A container registry (Docker Hub or Google Artifact Registry).
 - A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository]( https://github.com/MicrosoftDocs/pipelines-javascript-docker)  In your browser, go the sample repository then fork it to your GitHub account.
 - Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.
-- 
+
 ::: moniker-end
 
 ## Create a Docker service connection
