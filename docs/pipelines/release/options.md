@@ -49,30 +49,40 @@ Enables scripts and other processes to access the OAuth token through the `Syste
 
 :::image type="content" source="media/classic-pipeline-agent-job-configuration.png" alt-text="A screenshot displaying how to configure the agent job in a Classic pipeline." lightbox="media/classic-pipeline-agent-job-configuration.png":::
 
-## Create a work item on failure
+## Build properties
 
-If the build pipeline fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
-You can also select if you want to assign the work item to the requestor. For example, if this is a CI build, and a team member checks in some code that breaks the build, then the work item is assigned to that person.
+1. Select **Pipelines**, select your pipeline definition, select **Edit**, and then select the **Options** tab.
 
-**Additional Fields:** You can set the value of work item fields. For example:
+#### Build number format
 
-| Field | Value |
-|---|---|
-| ```System.Title``` | ```Build $(Build.BuildNumber) failed``` |
-| ```System.Reason``` |  ```Build failure``` |
+Define the format to give meaningful names to completed builds. Leave it blank to give builds a unique integer as name. See [Configure build run numbers](../process/run-number.md) for more details.
 
-**Q:** What other work item fields can I set? **A:**  [Work item field index](../../boards/work-items/guidance/work-item-field.md)
+#### Create work items on failure
 
-## Build job authorization scope
+When enabled, if the pipeline fails, a work item is automatically created to track the issue. You can specify the type of work item and choose whether to assign it to the requestor.
 
-Specify the authorization scope for a build job. Select:
+- Additional Fields: set additional fields when creating the work item. 
 
-* **Project Collection** if the build needs access to multiple projects.
-* **Current Project** if you want to restrict this build to have access only the resources in the current project.
+For example, "System.Title" = "Build $(build.buildNumber) failed" formats the Work Item title, and "System.Reason" = "Build failure" sets the reason. see [Work item field index](../../boards/work-items/guidance/work-item-field.md) for other available fields.
 
-For more information, see [Understand job access tokens](../process/access-tokens.md).
+#### Build job
 
-## Build (run) number
+Define build job authorization and timeout settings.
 
-This documentation has moved to [Build (run) number](../process/run-number.md).
+- Build job authorization scope: specify the authorization scope for a build job. Select:
+
+    - Project Collection: if the pipeline needs access to multiple projects.
+    - Current Project: if you want to restrict this pipeline to only access the resources in the current project.
+
+See [Understand job access tokens](../process/access-tokens.md) for more details.
+
+- Build job timeout in minutes: specifies the maximum time a build job is allowed to execute on an agent before being canceled by the server. An empty or zero value indicates no timeout limit.
+
+- Build job cancel timeout in minutes: specifies the maximum wait time for a build job to respond to a cancellation request before being terminated by the server.
+
+#### Demands
+
+Specify the capabilities that the agent must have to run this pipeline. See [Agent capabilities and demands](../agents/agents.md#capabilities) for more details.
+
