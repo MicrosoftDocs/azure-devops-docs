@@ -207,12 +207,12 @@ The following features are generally available for Azure DevOps.
 
 While there's no fixed timeline for when a preview feature will move to general availability (GA), there are several indicators and resources you can use to stay informed about the status of preview features:
 
-- **Azure DevOps roadmap:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. For more information, see [Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline.md). 
+- **Azure DevOps roadmap:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. For more information, see [Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline). 
 ::: moniker range="azure-devops"
-- **Azure DevOps release notes:** Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. They often include information about the transition of preview features to GA. For more information, see [Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline.md), select **Release Notes** > **Azure DevOps Services**, and then choose between **By release date** and **By service**.
+- **Azure DevOps release notes:** Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. They often include information about the transition of preview features to GA. For more information, see [Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline), select **Release Notes** > **Azure DevOps Services**, and then choose between **By release date** and **By service**.
 ::: moniker-end
 ::: moniker range="< azure-devops"
-- **Azure DevOps release notes:** Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. They often include information about the transition of preview features to GA. For more information, see [Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline.md), select **Release Notes** > **Azure DevOps Server**.
+- **Azure DevOps release notes:** Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. They often include information about the transition of preview features to GA. For more information, see [Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline), select **Release Notes** > **Azure DevOps Server**.
 ::: moniker-end
 - **Azure DevOps blog:** The Azure DevOps blog often features posts about new releases, including when preview features transition to GA. Subscribing to the blog or regularly checking it can help you stay updated. For more information, see [Azure DevOps Blog](https://devblogs.microsoft.com/devops/).
 
