@@ -146,9 +146,8 @@ You can also use the REST API for this process.
 
 ### Prerequisites for service principal authentication
 
-To create a service connection, your Azure account needs to be able to create app registrations. 
-
-If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
+- To create a service connection, your Azure account needs to be able to create app registrations. 
+    - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
 
 
 ### Create an app registration and federated credentials in Azure portal
