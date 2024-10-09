@@ -106,6 +106,23 @@ To publish your package to your feed, run the following command. You can enter a
 nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
 ```
 
+**Examples:**
+
+- Project-scoped feed:
+
+    ```CLI
+    nuget.exe push -Source https://pkgs.dev.azure.com/myOrganization/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ release/myDemoPackage.1.0.0.nupkg
+    ```
+
+- Organization-scoped feed:
+
+    ```CLI
+    nuget.exe push -Source https://pkgs.dev.azure.com/myOrganization/_packaging/myFeed/nuget/v3/index.json -ApiKey AZ release/myDemoPackage.1.0.0.nupkg
+    ```
+
+> [!NOTE]
+> The `ApiKey` is required, but you can use any arbitrary value when publishing to Azure Artifacts feeds.
+
 ## Related content
 
 * [Publish NuGet packages with Azure Pipelines (YAML/classic)](../pipelines/artifacts/nuget.md)
