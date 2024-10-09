@@ -396,7 +396,7 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
 
 1. Select **Create Pipeline**.
 
-    ::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
+    :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
 
 1. In the **Where is your code** dialog, select **GitHub Enterprise Server**. You might be prompted to sign into GitHub.
 
@@ -523,7 +523,7 @@ The following explanation describes the YAML pipeline file. To learn about the p
 
 ::: moniker range="azure-devops"
 
-The complete pipeline YAML file is shown below:
+The complete example pipeline YAML file is shown below:
 
 ```yml
 trigger:
