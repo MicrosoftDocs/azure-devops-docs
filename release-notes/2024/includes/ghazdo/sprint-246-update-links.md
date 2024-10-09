@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [Pull request annotations for dependency and code scanning](#pull-request-annotations-for-dependency-and-code-scanning)
-
+- [New pip detection strategy for dependency scanning ](#new-pip-detection-strategy-for-dependency-scanning)

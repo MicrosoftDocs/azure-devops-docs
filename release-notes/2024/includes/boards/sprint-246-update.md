@@ -5,6 +5,10 @@ ms.date: 10/15/2024
 ms.topic: include
 ---
 
+### Improved Tag Management on Work Item Form
+
+We've enhanced tag functionality in Azure Boards. Now, when a tag is deleted, it will no longer appear in the suggested tags list on the work item form. This update ensures a cleaner and more accurate tagging experience by only showing active tags.
+
 ### Improved image support in work item comments
 
 We’ve improved our support for pasting images into work item comments. You can now paste images from sources such as Microsoft Teams, emails, and Word documents directly into the discussion section of a work item.
@@ -20,7 +24,3 @@ To enable this feature, make sure you go the Boards App in GitHub to accept the 
 
 > [!div class="mx-imgBorder"]
 > [![SScreenshot of updated permissions.](../../media/246-boards-01.png "Screenshot of updated permissions")](../../media/246-boards-01.png#lightbox)
-
-### Improved Tag Management on Work Item Form
-
-We've enhanced tag functionality in Azure Boards. Now, when a tag is deleted, it will no longer appear in the suggested tags list on the work item form. This update ensures a cleaner and more accurate tagging experience by only showing active tags.
