@@ -64,7 +64,7 @@ Depending on which conditions the user satisfies, you can then require multi-fac
 If you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID will always check that you can move forward by performing validation for any CAPs that were set by tenant administrators.
 
 Azure DevOps can also perform additional CAP validation once you're signed in and navigating through Azure DevOps on a Microsoft Entra ID-backed organization:
-* If the **“Enable IP Conditional Access policy Validation”** organization policy is enabled, we will check IP fencing policies on both web and non-interactive flows, such as third-party cient flows like using a PAT with git operations.
+* If the **“Enable IP Conditional Access policy Validation”** organization policy is enabled, we will check IP fencing policies on both web and non-interactive flows, such as third-party client flows like using a PAT with git operations.
 * Sign-in policies may be enforced for PATs as well. Using PATs to make Microsoft Entra ID calls requires the user to adhere to any sign-in policies that are set. For example, if a sign-in policy requires that a user sign in every seven days, you must also sign in every seven days, if you wish to continue using PATs to make requests to Microsoft Entra ID.
 * If you do not want any CAPs to be applied to Azure DevOps, remove Azure DevOps as a resource for the CAP. We will not be doing org-by-org enforcement of CAPs on Azure DevOps.
 
