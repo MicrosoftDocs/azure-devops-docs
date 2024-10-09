@@ -93,12 +93,13 @@ Do the following steps to import new work items.
 
 	> [!div class="tabbedCodeSnippets"]
 	```CSV
-	ID,Work Item Type,State,Assigned To,Title,Tags
-	"1043","Issue","To Do",,"Fix issues with code",
-	"1044","Issue","To Do",,"Merge testing modules",
-	"1045","Issue","To Do",,"Open private preview for select customers",
-	"1046","Issue","To Do",,"Enable feature for customer champs",
-	"1047","Issue","To Do",,"Remove old test code",
+ID,Work Item Type,Title,Assigned To,State,Tags
+"272","Issue","Fix issues with code","Active","",
+"273","Issue","Merge testing modules","Active","",
+"274","Issue","Open private preview for select customers","Active","",
+"275","Issue","Enable feature for customer champs","Active","",
+"276","Issue","Remove old test code","Active","",
+
 	```
 
 1. Make the edits to your work items. Your CSV file must contain the **ID**, **Work Item Type**, and **Title** fields. Any other fields you want to include are optional.
@@ -106,14 +107,16 @@ Do the following steps to import new work items.
    > [!NOTE]   
    > When you import identity fields, enter the name and email in the following format `"Display Name <email>"`. For example, to assign work to Jamal Hartnett, specify `"Jamal Hartnett <fabrikamfiber4@hotmail.com>"`. If you specify a value that isn't recognized as a valid user to the system, you may encounter problems with the import. 
 
-   In the following example, we change several values on existing working items.
+   In the following example, we change values on existing working items.
 
-   ```ID,Work Item Type,State,Assigned To,Title,Tags
-   "1043","Issue","To Do","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Fix issues with code",architecture
-   "1044","Issue","To Do","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Merge testing modules",testing
-   "1045","Issue","To Do","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Open private preview for select customers","customer focus"
-   "1046","Issue","To Do","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Enable feature for customer champs","customer focus"
-   "1047","Issue","To Do","Christie Church <fabrikamfiber1@hotmail.com>","Remove old test code",architecture```
+   ```csv
+ID,Work Item Type,Title,Assigned To,State,Tags
+"272","Issue","Fix issues with code","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Active",
+"273","Issue","Merge testing modules","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Active",
+"274","Issue","Open private preview for select customers","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Active",
+"275","Issue","Enable feature for suctomer champs","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Active",
+"276","Issue","Remove old test code","Christie Church <fabrikamfiber1@hotmail.com>","Active",
+```
 
 1. Save the file and import (see steps 4-6 from the previous [import section](#import-new-work-items).)
 
