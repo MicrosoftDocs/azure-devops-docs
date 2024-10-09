@@ -100,7 +100,7 @@
         "notifications/**/**.md": "Azure DevOps",
         "organizations/**/**.md": "Azure DevOps",
         "pipelines/**/**.md": "Azure Pipelines",
-        "managed-devops-pools/**/**.md": "Managed DevOps Pools",
+        "managed-devops-pools/**/**.md": "Managed DevOps Pools Preview",
         "project/**/**.md": "Azure DevOps",
         "reference/**/**.md": "Azure DevOps",
         "report/**/**.md": "Azure DevOps",
