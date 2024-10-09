@@ -148,7 +148,7 @@ For code wikis, you can edit a page in the side-by-side editor, using the markdo
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Edit wiki page.](media/wiki/edit-in-repos.png)
 
-If your code wiki has branch policies, select **Edit in Repos** to create a branch and continue editing. The **Edit in Repos** option is available for code wikis.
+Select **Edit in Repos** to create a branch and continue editing. The **Edit in Repos** button is available only for code wikis that have branch policies enabled. If you don't see the button, it might be because your wiki isn't a code wiki or branch policies aren't enabled. For more information on branch policies, see [Branch policies and settings](../../repos/git/branch-policies.md).
 
 ::: moniker-end
 
