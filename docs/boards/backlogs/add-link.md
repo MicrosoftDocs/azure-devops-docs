@@ -145,17 +145,17 @@ Do the following steps to add a link to another user story, epic, feature, bug, 
 
    The following example uses the **Related** link type to link three items to the bug with ID of *400*.
 
-::: moniker range="azure-devops"
+   ::: moniker range="azure-devops"
    :::image type="content" source="media/add-link/add-link-dialog-s136.png" alt-text="Screenshot of Add link dialog, web portal, to an existing work item.":::
 
    You can only add links one at a time. You can't enter their IDs separated by commas or spaces.
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="< azure-devops"
+   ::: moniker range="< azure-devops"
    To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**.
-::: moniker-end
+   ::: moniker-end
 
-1. (Optional) If you're working from the **Query Results** page, bulk save the work items you modified. When you work from a backlog, work items automatically get saved.
+   1. (Optional) If you're working from the **Query Results** page, bulk save the work items you modified. When you work from a backlog, work items automatically get saved.
 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/bulk-modify/query-results-bulk-save-items.png" alt-text="Screenshot of Query results page, save bulk modified items.":::
