@@ -104,7 +104,7 @@ The following types of links help you manage the various relationships between w
 | **GitHub link type**      | Connects a work item to a GitHub repository commit, issue, or pull request |
 | **Work link type**        | Connects work items including select test case management work items |
 
-For more information about link types, including parent/child, related, and predecessor-successor, see [Link type reference/Work link types](../queries/link-type-reference.md#work-link-type).
+For more information about link types, including parent/child, related, and predecessor-successor, see [Work link types](../queries/link-type-reference.md#work-link-type).
 
 ## Link work items to various objects
 
