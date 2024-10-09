@@ -5,10 +5,11 @@ ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: how-to
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 02/26/2024
+date: 10/09/2024
 ---
 
 # Add a custom pipelines task extension
@@ -308,7 +309,7 @@ Do unit tests to quickly test the task script, and not the external tools that i
 
 4. To run the task mock runner, add the following example success test to your `_suite.ts` file.
 
-    ```typescript
+   ```typescript
         it('should succeed with simple inputs', function(done: Mocha.Done) {
         this.timeout(1000);
 
@@ -328,7 +329,7 @@ Do unit tests to quickly test the task script, and not the external tools that i
             done(error); // Ensure the test case fails if there's an error
         });
     });
-    ```
+   ```
 
 5. Create a `failure.ts` file in your test directory as your task mock runner with the following contents:
 
@@ -349,26 +350,26 @@ Do unit tests to quickly test the task script, and not the external tools that i
 
 6. To run the task mock runner, add the following code to your `_suite.ts` file.
 
-```typescript
-it('should fail if tool returns 1', function(done: Mocha.Done) {
-    this.timeout(1000);
-
-    const tp = path.join(__dirname, 'failure.js');
-    const tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
-
-    tr.runAsync().then(() => {
-        console.log(tr.succeeded);
-        assert.equal(tr.succeeded, false, 'should have failed');
-        assert.equal(tr.warningIssues.length, 0, 'should have no warnings');
-        assert.equal(tr.errorIssues.length, 1, 'should have 1 error issue');
-        assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
-        assert.equal(tr.stdout.indexOf('Hello bad'), -1, 'Should not display Hello bad');
-        done();
+    ```typescript
+    it('should fail if tool returns 1', function(done: Mocha.Done) {
+        this.timeout(1000);
+    
+        const tp = path.join(__dirname, 'failure.js');
+        const tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+    
+        tr.runAsync().then(() => {
+            console.log(tr.succeeded);
+            assert.equal(tr.succeeded, false, 'should have failed');
+            assert.equal(tr.warningIssues.length, 0, 'should have no warnings');
+            assert.equal(tr.errorIssues.length, 1, 'should have 1 error issue');
+            assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
+            assert.equal(tr.stdout.indexOf('Hello bad'), -1, 'Should not display Hello bad');
+            done();
+        });
     });
-});
-```
+    ```
 
-1. Run the tests.
+7. Run the tests.
 
     ```
     tsc
