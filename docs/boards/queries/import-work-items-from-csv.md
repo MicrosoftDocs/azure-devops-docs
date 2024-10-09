@@ -172,7 +172,7 @@ Work Item Type,Title,Description
 
 ## Convert multi-line fields to plaintext
 
-To disable HTML in multi-line fields to ensure that they're plaintext, you can use the `witadmin changefield` command. For more infromation, see [Manage Work Item Fields](../../reference/witadmin/manage-work-item-fields.md).
+To disable HTML in multi-line fields to ensure that they're plaintext, you can use the `witadmin changefield` command. For more information, see [Manage Work Item Fields](../../reference/witadmin/manage-work-item-fields.md).
 
 Example command:
 
