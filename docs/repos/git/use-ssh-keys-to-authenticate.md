@@ -63,14 +63,14 @@ To generate key files using the RSA algorithm supported by Azure DevOps (either 
 ssh-keygen -t rsa-sha2-256
 ```
 
-or
+Or
 
 ```powershell
 ssh-keygen -t rsa-sha2-512
 ```
 
 
-The output from the command should display the following output (where `username` is replaced by your username):
+The output from the command should display the following output (where `username` is your username):
 
 ```Output
 Generating public/private rsa key pair.
@@ -78,7 +78,7 @@ Enter file in which to save the key (C:\Users\username/.ssh/id_rsa):
 ```
 
 You can press Enter to accept the default, or specify a path and/or filename where you would like your keys to be generated.
-At this point, you're prompted to use a passphrase to encrypt your private key files. The passphrase can be empty but it's not recommended.
+At this point, you're prompted to use a passphrase to encrypt your private key files. The passphrase can be empty but not recommended.
 The passphrase works with the key file to provide two-factor authentication.
 
 ```Output
@@ -196,7 +196,7 @@ Proceed only if they match!
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
    ```
 
-   If you are not using an SSH Agent, you are prompted to enter your passphrase:
+   If you aren't using an SSH Agent, you're prompted to enter your passphrase:
 
    ```Output
    Cloning into 'FabrikamFiber'...
@@ -317,7 +317,7 @@ For more information, see the [blog post](https://devblogs.microsoft.com/devops/
 ### Q: I use [PuTTY](https://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
 **A:** Yes. Load the private key with PuTTYgen, go to **Conversions** menu, and select **Export OpenSSH key**.
-Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
+Save the private key file and then follow the steps to [set up nondefault keys](use-ssh-keys-to-authenticate.md#newkeys).
 Copy your public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
 
 ### Q: How can I verify that the public key I uploaded is the same key as my local key?
@@ -356,7 +356,7 @@ Git commands accessing the remote called `origin` uses SSH.
 
 <a name="non-default-keys"></a>
 
-### Q: How can I use a non-default key location, that is, not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
+### Q: How can I use a nondefault key location, that is, not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
 
 **A:** To use a key stored in a different place than the default, perform these two tasks:
 
@@ -382,7 +382,7 @@ remote: Public key authentication failed.
 fatal: Could not read from remote repository.
 ```
 
-For Azure DevOps, you need to configure SSH to explicitly use a specific key file. The procedure is the same as when using a key stored in a [non-default location](use-ssh-keys-to-authenticate.md#non-default-keys). Tell SSH to use the correct SSH key for the Azure DevOps host.
+For Azure DevOps, you need to configure SSH to explicitly use a specific key file. The procedure is the same as when using a key stored in a [nondefault location](use-ssh-keys-to-authenticate.md#non-default-keys). Tell SSH to use the correct SSH key for the Azure DevOps host.
 
 ### Q: How do I use different SSH keys for different organizations on Azure DevOps?
 
