@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 09/20/2024
 ---
 
 
@@ -17,7 +17,14 @@ ms.date: 04/01/2022
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-To find work items assigned to you or your team, run a query. Many work item queries are predefined with your process. Members of your team may have created shared queries that you can view and run. Often, it's easier to define a new query by building on the query definition that's already available to you. 
+To locate work items assigned to you or your team, you can run a query. Your process could include several predefined queries that you can access and run. Often, it's easier to create a new query by modifying an existing query definition.
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+
+::: moniker-end
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -29,30 +36,49 @@ To find work items assigned to you or your team, run a query. Many work item que
 ## Run a query in Azure Boards
 
 To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. 
-::: moniker range=">= azure-devops-2020"
-You can also run a query by using the [Azure DevOps command line interface](#cli).
+
+::: moniker range="azure-devops"
+
+You can also run a query by using the [Azure DevOps command line interface](#run-a-query-from-the-command-line).
+
 ::: moniker-end
 
 #### [Browser](#tab/browser/) 
 
+::: moniker range="< azure-devops"
 > [!TIP]    
 > The **Queries** page, as with other web portal pages, remembers the view you last went to and returns you to that view.
 	
-::: moniker range=">= azure-devops-2019"
-1. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
+1. Choose **All** to open the page where you can view all queries that you defined or are shared within your project. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, choose Boards>Queries>All page](media/view-run-queries/queries-all.png)  
+    :::image type="content" source="media/view-run-queries/queries-all.png" alt-text="Screenshot of all queries view." :::
 
 1. Choose **My Queries** as needed. 
-   - To view all work items assigned to you, choose **Assigned to me**. This query uses the <strong>@Me</strong>  macro to list all work items assigned to you.  
-   - To view all work items you're following, choose **Followed work items**. This query uses the <strong>@Follows</strong>  macro (ID in @Follows) to list all work items you've chosen to follow. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).  
+   - To view all work items assigned to you, choose **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
+   - To view all work items you're following, choose **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you chose to follow. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).  
 
-2. Choose **Shared Queries** to expand the folder and access queries saved as shared queries. 
+1. Choose **Shared Queries** to expand the folder and access queries saved as shared queries. 
 
-3. Choose a folder within a breadcrumb to open a query folder.
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of queries breadcrumb example.](media/example-queries/queries-breadcrumb-example.png)
+1. Choose a folder within a breadcrumb to open a query folder.
+
+    :::image type="content" source="media/example-queries/queries-breadcrumb-example.png" alt-text="Screenshot of queries breadcrumb example." :::
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!TIP]    
+> The **Queries** page, as with other web portal pages, remembers the view you last went to and returns you to that view.
+	
+1. Choose **All** to open the page where you can view all queries you defined or that are shared within your project. 
+
+    :::image type="content" source="media/view-run-queries/open-queries-new-boards-hubs.png" alt-text="Screenshot of all queries view.":::
+
+1. Choose **My Queries** as needed. 
+   - To view all work items assigned to you, choose **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
+   - To view all work items you're following, choose **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you follow. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).  
+
+1. Choose **Shared Queries** to expand the folder and access queries saved as shared queries. 
 
 ::: moniker-end
 
@@ -67,9 +93,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 	:::image type="content" source="../media/team-explorer/open-query-from-team-explorer.png" alt-text="Screenshot of Team Explorer, open context menu for a query, choose View Results.":::
 
 
-* * * 
-
-<a id="cli"></a>
+---
 
 ::: moniker range="azure-devops"  
 
@@ -88,7 +112,7 @@ az boards query [--id]
 #### Parameters
 
 - **id**: The ID of an existing query. Required unless--path or--wiql is specified.
-- **wiql**: The query in Work Item Query Language format. Ignored if--id or--path is specified.
+- **wiql**: The query in Work Item Query Language (WIQL) format. Ignored if `--id` or `--path` is specified.
 - **path**: The path of an existing query. Ignored if--id is specified.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
@@ -124,17 +148,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 ``` 
 ::: moniker-end
 
-
-<a id="tips-queries-hub"> </a> 
-
-::: moniker range=">= azure-devops-2019"  
-
 ## Query directory, query folders, and breadcrumbs 
-
-::: moniker-end
-
-
-
 
 > [!NOTE]   
 > You can't add folders to **My Favorites** or **Team Favorites**. 
@@ -142,21 +156,37 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 #### [Browser](#tab/browser/) 
 
 
-::: moniker range=">= azure-devops-2019"
+The **Queries** page contains a **Favorites** and an **All** tab. Each contains a directory-focused view that you can filter to find specific queries of interest. 
 
-The **Queries** page  contains a directory-focused view that you can filter to find specific queries of interest. 
-When you're working in the **Queries** pages, you can go to a subfolder, folder, or page.
+When you're working in the **Queries** pages, you can go to a folder, subfolder, or a query page.
 
-![Queries breadcrumbs](../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png)
+::: moniker range="azure-devops"
 
-Also, you can choose a query that you've favorited from the selector menu, Or, you can choose to browse all queries, which returns you to the **All Queries** page. 
-  
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Queries, Query selector.](../../project/navigation/media/breadcrumbs/query-bd-and-selector.png) 
+:::image type="content" source="media/view-run-queries/query-navigation-new-boards-hubs.png" alt-text="Screenshot of queries page." :::
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
 
+As you make selections, the breadcrumbs are shown at the top of the page. You can navigate to a folder, subfolder, or query page.
+
+:::image type="content" source="../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png" alt-text="Screenshot of breadcrumbs on query page." :::
+
+::: moniker-end
+
+You can also select a favorite query or return to the **All** queries page from the drop-down menu of an open query.
+
+::: moniker range="< azure-devops"
+
+:::image type="content" source="../../project/navigation/media/breadcrumbs/query-bd-and-selector.png" alt-text="Screenshot of query dropdown." :::
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+:::image type="content" source="../../project/navigation/media/breadcrumbs/query-dropdown-new-boards-hubs.png" alt-text="Screenshot of query navigation dropdown." :::
+
+::: moniker-end
 
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -168,16 +198,9 @@ The **Work Items** page displays the same folder structure as defined in the web
 
 You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. For more information, see [Manage and organize queries](../queries/organize-queries.md)
 
-* * *
+---
 
 For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
-
-
-
-<a id="favorites"></a>
-
-
-::: moniker range=">= azure-devops-2019"
 
 ## All and Favorites supported tasks  
 
@@ -196,24 +219,24 @@ You can do most tasks for viewing and running queries from each of the queries l
 > |Unfavorite a query (for web portal, choose :::image type="icon" source="../../media/icons/icon-favorited.png" border="false":::) |✔️ |✔️ | ✔️ |   
 > |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | ✔️|  
 
-::: moniker-end	
-
-::: moniker range=">= azure-devops-2019"
 
 ## Filter the list of queries 
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).   
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
+::: moniker range="< azure-devops"
 
-For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml). 
+:::image type="content" source="media/queries-all-filter.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
 
 ::: moniker-end
- 
- 
 
-<a id="email-query"></a>
+::: moniker range="azure-devops"
+
+:::image type="content" source="media/view-run-queries/filter-queries-new-boards-hubs.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
+
+::: moniker-end
+
+For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
 
 ## Email query items or share a query URL 
 
@@ -221,21 +244,27 @@ For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
- 
-> [!div class="mx-imgBorder"]  
-> ![Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL](media/view-run-queries/email-query-new-exp.png)  
-	You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+
+:::image type="content" source="media/view-run-queries/email-query-new-exp.png" alt-text="Screenshot of Choose Email query or Copy query URL." :::
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Choose the  more actions icon :::image type="icon" source="../media/icons/more-actions.png" border="false":::  to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
+
+:::image type="content" source="media/view-run-queries/email-query-new-boards-hubs.png" alt-text="Screenshot of Choose Email query or Copy query URL." :::
+
+::: moniker-end
+
+You can only send the email to individual address for a project member that the system recognizes. Adding a team group or security group to the "To" line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email doesn't have permissions to read the mailed work items.  
 
 > [!NOTE]  
 > To email a formatted list to people who aren't project members, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
-::: moniker-end
-
-
- 
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -246,7 +275,7 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 > [!NOTE]
 > This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
 
-* * * 
+---
 
 ## Next steps
 
