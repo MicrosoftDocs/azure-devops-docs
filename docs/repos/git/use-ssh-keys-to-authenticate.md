@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect with HTTPS authentication.
+You can connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect with Azure DevOps.
 
 > [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs continue to work. If you've already set up SSH, update your remote URLs to the new format:
