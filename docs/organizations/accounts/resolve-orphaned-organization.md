@@ -30,8 +30,6 @@ But, organizations connected to Microsoft Entra ID can transfer ownership to an 
 
 ### Find your Azure DevOps Administrator
 
-### Find your Azure DevOps Administrator
-
 If you don't know who the Azure DevOps Administrator is for your organization, follow these steps to find out:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
