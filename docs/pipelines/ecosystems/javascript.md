@@ -87,7 +87,7 @@ Edit your *azure-pipelines.yml* file as follows.
 
 1. Add the following new tasks to the pipeline:
 
-   - The [copy files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies the files from the *src* and *public* folders.
+   - The [copy files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies the files from the *src* and *public* folders to the build artifact staging directory.
 
    - The [publish pipeline artifact task](../artifacts/pipeline-artifacts.md) gets the files from the artifact staging location and publishes them as artifacts to be output with pipeline builds.
 
