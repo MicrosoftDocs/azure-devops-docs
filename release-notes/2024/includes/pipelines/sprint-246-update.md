@@ -22,6 +22,63 @@ The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To us
 Please note, the ubuntu-latest image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
 
 
-### Enable Running Child Stages
+### Use AzurePipelinesCredential in integration tests
 
+In June, the Azure SDK [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/), so code executed from the [AzureCLI@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks can authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
 
+Many customers are using the Azure SDK in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Maven@4](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) and [VSTest@3](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines) tasks.
+
+You can set the `connectedService` property to an Azure service connection configured with workload identity federation. The `AzurePipelinesCredential` requires `SYSTEM_ACCESSTOKEN` to be set.
+
+```yaml
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'run'
+    connectedService: <Azure service connection configured with workload identity federation>
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
+
+For more information on `AzurePipelinesCredential`, see this [blog post](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/).
+
+### New Azure Service Connection Creation Experience with improved Managed Identity support
+
+The new Azure service connection creation experience aligns terminology with Azure and Entra ID portals and provides increased flexibility and secure defaults.
+
+When creating a new Azure Resource Manager service connection, the various options to configure identity are available in a single dialog:
+
+![Azure service connection top level options](armux-top-options.png)
+
+__Identity Type__ lists all authentication schemes the Azure service connection supports. Previously, these were distinct top level items.  
+
+![Azure service connection top level options](armux-options-short.png)
+
+For app registrations, you can independently select __Credential__ to be [workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/) or a secret.
+
+## Managed Identity support
+
+You can now select a pre-existing managed identity and use it to configure a service connection:
+
+![MSI+FIC](armux-options-mi.png)
+
+To prevent sharing over-privileged managed identities, it is recommended to use a managed identity with workload identity federation instead of assigned managed identities to agent pools.
+
+Managed identity is also the recommended option for users who can't create an App registration if that is [disabled in Entra ID](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
+
+To use a managed identity with workload identity federation, first select the subscription and resource group that holds your managed identity. This can be different from the subscription the service connection will access. Pick the managed identity that will be configured for workload identity federation.
+
+The user needs the [Managed Identity Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) role or equivalent permissions on the managed identity to create federated credentials on it.
+
+Continue to select the subscription for that is the deployment scope for the service connection.
+
+![MSI+FIC](armux-mi-selection.png)
+
+## Service Management Reference field
+
+Some organizations require the [Service Management Reference](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-1.0#properties) of an App registration to be populated with relevant context information from an ITSM database. If requires to do so, users can specify this reference at service connection creation time.
+
+## More information
+
+- [Azure service connection documentation](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
+- [Workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/)
+- [Troublespooting](https://aka.ms/azdo-rm-workload-identity-troubleshooting)
