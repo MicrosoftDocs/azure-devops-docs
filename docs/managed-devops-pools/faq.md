@@ -1,10 +1,14 @@
 ---
 title: Frequently asked questions
 description: Learn the answers to frequently asked questions for Managed DevOps Pools.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Frequently asked questions
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 ## How many agents can I create?
 

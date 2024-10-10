@@ -539,6 +539,10 @@
     {
       "source_path_from_root": "/docs/pipelines/tasks/deploy/copy-files-over-ssh.md",
       "redirect_url": "/azure/devops/pipelines/tasks/reference/copy-files-over-ssh-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/release/publish-pipeline-artifact.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/pipeline-artifacts"
     }
   ]
 }

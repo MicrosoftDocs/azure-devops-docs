@@ -561,6 +561,10 @@
     {
       "source_path": "docs/organizations/billing/change-azure-subscription.md",
       "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs#change-azure-subscription"
+    },
+    {
+      "source_path": "docs/boards/backlogs/add-work-items.md",
+      "redirect_url": "/azure/devops/boards/backlogs/manage-work-items"
     }
   ]
 }

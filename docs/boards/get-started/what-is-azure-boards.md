@@ -57,7 +57,7 @@ For more information, see our Training module, [What is Azure Boards?](/training
 
 ## Connect Azure Boards to GitHub
 
-You can connect Azure Boards with GitHub repositories to link GitHub commits, pull requests, and issues to work items. Use GitHub for software development and Azure Boards to plan and track work. Quickly open linked GitHub commits, pull requests, or issues from the board. For more information, see [GitHub & Azure Boards](../github/index.md).   
+You can connect Azure Boards with GitHub repositories to link GitHub commits, pull requests, branches, and issues to work items. Use GitHub for software development and Azure Boards to plan and track work. Quickly open linked GitHub commits, pull requests, or issues from the board. For more information, see [GitHub & Azure Boards](../github/index.md).   
 
 For more information, see [About default processes and process templates](../work-items/guidance/choose-process.md).
 
@@ -101,7 +101,7 @@ You might notice some changes in the user experience of Azure Boards. These upda
 
 The core functionality of Azure Boards remains the same. It still contains the features you know and love such as Boards, Backlogs, Sprints, Queries, and Delivery Plans. However, the user experience is refined to align with the rest of Azure DevOps. User interface changes include increased spacing between elements and strategically placed scroll bars to enhance accessibility.
 
-We understand that adjusting to changes can take time, and to ease the transition, we also introduced some new features exclusive to the updated Azure Boards. You can see a full list of new features for New Boards in the [Azure DevOps release notes](https://learn.microsoft.com/azure/devops/release-notes/features-timeline-released).
+We understand that adjusting to changes can take time, and to ease the transition, we also introduced some new features exclusive to the updated Azure Boards.
 
 ### Provide feedback
 
