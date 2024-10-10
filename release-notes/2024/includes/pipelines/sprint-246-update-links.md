@@ -6,5 +6,5 @@ ms.topic: include
 ---
 
 - [Ubuntu 24.04 on Azure Pipelines Hosted agents](#ubuntu-2404-on-azure-pipelines-hosted-agents)
-- [Use AzurePipelinesCredential in integration tests](#use-azure-pipelines-credential-in-integration-tests)
+- [Use Azure Pipelines Credential in integration tests](#use-azure-pipelines-credential-in-integration-tests)
 - [New Azure Service Connection Creation Experience with improved Managed Identity support](#new-azure-service-connection-creation-experience-with-improved-managed-identity-support)

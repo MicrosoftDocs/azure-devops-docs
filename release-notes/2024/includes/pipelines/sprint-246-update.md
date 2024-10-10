@@ -22,7 +22,7 @@ The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To us
 Please note, the ubuntu-latest image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
 
 
-### Use AzurePipelinesCredential in integration tests
+### Use Azure Pipelines Credential in integration tests
 
 In June, the Azure SDK [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/), so code executed from the [AzureCLI@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks can authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
 
@@ -47,11 +47,13 @@ The new Azure service connection creation experience aligns terminology with Azu
 
 When creating a new Azure Resource Manager service connection, the various options to configure identity are available in a single dialog:
 
-![Azure service connection top level options](armux-top-options.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure service connection top level options.](../../media/246-pipelines-01.png "Screenshot of Azure service connection top level options")
 
 __Identity Type__ lists all authentication schemes the Azure service connection supports. Previously, these were distinct top level items.  
 
-![Azure service connection top level options](armux-options-short.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Identity Type.](../../media/246-pipelines-02.png "Screenshot of Identity Type")
 
 For app registrations, you can independently select __Credential__ to be [workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/) or a secret.
 
@@ -59,7 +61,8 @@ For app registrations, you can independently select __Credential__ to be [worklo
 
 You can now select a pre-existing managed identity and use it to configure a service connection:
 
-![MSI+FIC](armux-options-mi.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Managed Identity support.](../../media/246-pipelines-03.png "Screenshot of Managed Identity support")
 
 To prevent sharing over-privileged managed identities, it is recommended to use a managed identity with workload identity federation instead of assigned managed identities to agent pools.
 
@@ -71,7 +74,8 @@ The user needs the [Managed Identity Contributor](https://learn.microsoft.com/az
 
 Continue to select the subscription for that is the deployment scope for the service connection.
 
-![MSI+FIC](armux-mi-selection.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Managed Identity selection.](../../media/246-pipelines-04.png "Screenshot of Managed Identity selection")
 
 ## Service Management Reference field
 
