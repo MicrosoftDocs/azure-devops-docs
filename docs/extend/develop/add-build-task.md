@@ -196,7 +196,7 @@ See the following descriptions of some of the components of the `task.json` file
 | `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
 | `groups`             | Describes the logical grouping of task properties in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
-| `execution`          | There are multiple xecution options for this task, including scripts, like `Node`, `PowerShell`, `PowerShell3`, or `Process`.                                                                       
+| `execution`          | There are multiple execution options for this task, including scripts, like `Node`, `PowerShell`, `PowerShell3`, or `Process`.                                                                       
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 
 > [!NOTE]
