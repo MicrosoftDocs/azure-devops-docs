@@ -158,8 +158,8 @@ You can use this feature to export work items from one project and import them t
 
 HTML fields, such as descriptions and acceptance criteria, include rich text formatting. To ensure this formatting is preserved, do the following tasks:
 
-- Ensure your CSV file includes HTML tags within the relevant fields.
-- Import the CSV file into Excel.
+1. Ensure your CSV file includes HTML tags within the relevant fields.
+1. Import the CSV file into Excel.
 
 Excel might handle multi-line text fields differently, so it's important to check the formatting after import. Replace lines ending in `CRLF` by surrounding sentences with `<p>... </p>`.
 
