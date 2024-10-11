@@ -222,10 +222,12 @@ For more information, see:
 
 ::: moniker-end
 
-## Related articles
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create your product backlog](../../boards/backlogs/create-your-backlog.md)
+ 
+## Related articles
 
 - [Add work items](../../boards/backlogs/add-work-items.md)
 - [Get started with Kanban boards](../../boards/boards/kanban-quickstart.md)
