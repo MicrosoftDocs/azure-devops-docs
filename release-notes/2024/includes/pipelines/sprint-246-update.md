@@ -24,9 +24,9 @@ Please note, the ubuntu-latest image label will continue to point to ubuntu-22.0
 
 ### Use Azure Pipelines Credential in integration tests
 
-In June, the Azure SDK [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/), so code executed from the [AzureCLI@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks can authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
+In June, the Azure SDK [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/), so code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks can authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
 
-Many customers are using the Azure SDK in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Maven@4](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) and [VSTest@3](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines) tasks.
+Many customers are using the Azure SDK in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) and [VSTest@3](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines) tasks.
 
 You can set the `connectedService` property to an Azure service connection configured with workload identity federation. The `AzurePipelinesCredential` requires `SYSTEM_ACCESSTOKEN` to be set.
 
@@ -83,6 +83,17 @@ Some organizations require the [Service Management Reference](https://learn.micr
 
 ## More information
 
-- [Azure service connection documentation](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
+- [Azure service connection documentation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
 - [Workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/)
 - [Troublespooting](https://aka.ms/azdo-rm-workload-identity-troubleshooting)
+
+### Run children stages when parent stage fails
+
+We made it easier to continue deployments using Azure Pipelines. This is useful, for example, when you use Pipelines to deploy new versions of your application across multiple Azure regions. 
+
+Say you need to deploy to five consecutive Azure regions. Assume your pipeline has a stage for each region, and each stage has a job that runs an `AzureResourceManagerTemplateDeployment` task, and then it logs some telemetry. The latter is nice to have, but not critical. Imagine there is an issue logging the telemetry. Now, the stage fails and the deployment stops. 
+
+Starting with this sprint, when a stage fails, you can resume running its children stages.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of running child stages if parent stage fails.](../../media/246-pipelines-05.png "Screenshot of running child stages if parent stage fails")
