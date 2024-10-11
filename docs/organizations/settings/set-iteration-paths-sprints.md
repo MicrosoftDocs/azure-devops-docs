@@ -40,7 +40,7 @@ Newly created projects contain a single, root area path that corresponds to the 
 If you're new to managing projects and teams, complete the following steps:
 
 1. Review [Configure and customize Azure Boards](../../boards/configure-customize.md).
-1. Define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
+1. Define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#get-started).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence. For guidance, review [About areas and iterations](about-areas-iterations.md).
 1. Determine if you want a flat structure or hierarchy of sprints and releases.
 1. Open **Project settings>Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#list-project-iterations) and [Add iterations and set iteration dates](#iterations). 

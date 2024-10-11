@@ -25,8 +25,6 @@ To understand how the system uses area paths, see [About area and iteration path
 
 ## Prerequisites
 
-<a name="permissions"></a>
-
 - If you don't have a project yet, [create one now](../projects/create-project.md).
 - Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Change project-level permissions](../security/change-project-level-permissions.md).
 - Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:   
@@ -40,7 +38,6 @@ To understand how the system uses area paths, see [About area and iteration path
 
 For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
-<a id="guidance"></a>
 
 ## Get started
 
@@ -52,14 +49,13 @@ If you're new to managing projects and teams, the most straight forward sequence
 
 1. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, add one area path for each team you define. For more information, review [About areas and iterations](about-areas-iterations.md).
 2. Determine the number and names of teams you want to support. For more information, review [About teams and Agile tools](about-teams-and-settings.md).
-3. Open **Project settings>Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
+3. Open **Project settings>Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings-list-project-areas) and [Add area paths](#add-an-area-path).
 4. Define the teams you need to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).  
 5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#list-team-iterations) and [Set team default area path(s)](#team-area-paths).
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
 > [!NOTE]
 > While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. For more information, see [About boards and Kanban, Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
-
 
 As needed, you can do the following actions at any time:
 
@@ -70,14 +66,9 @@ As needed, you can do the following actions at any time:
 - Rename a team
 - Change the area path assignments made to a team
 
-<a id="open-project-settings"></a>
-<a id="open-admin-context"></a>
-<a id="admin-intro-team-services"></a>
-
+## List project areas
 
 [!INCLUDE [temp](../../includes/version-selector.md)]
-
-## Open Project Settings, list project areas
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -98,19 +89,12 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker-end
 
-
-<a id="admin-intro-team-services"></a> 
-
-   
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
 
-[List project area paths](#list-areas) | [Add a project area path](#add-area) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-area-path-from-team)
+[List project area paths](#list-project-areas) | [Add a project area path](#add-an-area-path) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-an-area-path-from-a-team)
 
-<a id="list-areas"></a> 
 
 You can list the area paths defined for a project using [az boards area project list](/cli/azure/boards/area/project#az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -153,11 +137,7 @@ ID     Identifier                            Name                Path           
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
-<a id="add-areas"></a>
-<a id="add-areas-team-services"></a>
-<a id="tfs-15-area-paths"></a>
+---
 
 ## Add an area path 
 
@@ -177,8 +157,6 @@ Only one area is defined, by default. Add area paths under the root area path fo
     > ![Add a new area path](media/areas/new-area-preview.png) 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="add-area"></a> 
 
 ::: moniker range="azure-devops"  
 
@@ -233,13 +211,9 @@ ID     Identifier                            Name    Path                       
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+---
 
-
-
-<a id="open-team-settings"></a>
-
-## Open team settings, list team area paths  
+## List team area paths  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
  
@@ -260,12 +234,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 ::: moniker-end
 
 
-
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="list-team-area-paths"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -296,8 +265,7 @@ Fabrikam Fiber\Service Delivery  True                 True
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
+---
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -324,10 +292,7 @@ You define both areas and iterations from **Project Settings > Team configuratio
 
 ::: moniker-end
 
-<a id="default-iteration">  </a>
-<a id="team-area-paths">  </a>
-
-## Set team area path(s)
+## Set team area paths
 
 All work items that are assigned to a team area path appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas.
 
@@ -397,8 +362,6 @@ The default area path determines the default area path assigned to work items th
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="set-team-area-paths"></a> 
-
 ::: moniker range="azure-devops"
 
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
@@ -435,10 +398,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
-<a name="rename-delete"></a>
-<a id="rename-move-project-area-path"></a>   
+---
 
 ## Rename or move an Area Path
 
@@ -495,8 +455,6 @@ ID     Identifier                            Name           Path                
 55412  b00f86a2-3d49-4ad2-af01-da2537947baa  Voice and Web  \Fabrikam Fiber\Area\Voice and Web  False
 ```
 
-<a id="remove-area-path-from-team"></a> 
-
 ### Remove an area path from a team 
 
 To remove an area path from a team, use [`az boards area team remove`](/cli/azure/boards/area/team#az-boards-area-team-remove).
@@ -527,9 +485,7 @@ az boards area team remove --path "\Fabrikam Fiber\Service Delivery\Voice" --tea
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
-<a name="delete-area-path"></a>
+---
 
 ## Delete an Area Path
 
