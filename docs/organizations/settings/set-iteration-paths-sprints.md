@@ -20,12 +20,10 @@ Iteration Paths, also referred to as *sprints*, support assignment of work items
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
 
-For information about naming restrictions and limits placed on addition of Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+For information about naming restrictions and limits placed on addition of Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
 > [!TIP]
 > To quickly update iteration dates, see [Change sprint dates](../../boards/sprints/define-sprints.md). However, if you need to define the iteration paths and tree structure, then follow the guidance provided in this article. 
-
-<a name="permissions"></a>
 
 ## Prerequisites
 
@@ -56,8 +54,6 @@ As needed, do the following tasks at any time:
 - Move a child iteration path under another node 
 - Delete a child iteration path 
 - Change the default and selected iteration paths assigned to a team
-
-<a id="default_path">  </a>
 
 ### Team backlog iteration versus default iteration 
 

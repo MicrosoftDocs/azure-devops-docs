@@ -53,7 +53,7 @@ Sprints specified by iteration paths are defined for a project and then selected
 
 For more information about configuring sprints, see:
 
-- [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
+- [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#define-and-assign-iteration-paths)
 - [Define iteration paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Choose your work item types

@@ -44,8 +44,6 @@ The areas and iterations depend on the process used to create your project. This
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-<a id="area-path-guidance"></a>
-
 ## Define and assign area paths
 
 If you're new to managing projects and teams, do the following steps to configure your project and teams:
@@ -86,7 +84,6 @@ Each team can create a hierarchy of areas to organize their backlog items, user 
 
 Avoid creating an overly complex area structure. While you can use areas to partition permissions on work items, complex trees require significant overhead for permission management. Duplicating the structure and permissions in other projects might become too cumbersome.
 
-<a id="iteration-path-guidance"></a>
 
 ## Define and assign iteration paths
 
@@ -102,7 +99,8 @@ Follow these steps to configure **Iteration Paths** for your project and teams:
 > [!NOTE]  
 > You can define up to 10,000 **Iteration Paths** per project and assign up to 300 **Iteration Paths** to a single team. For more information, see [Work tracking, process, and project limits](work/object-limits.md).
 
-You can do the following actions at any time: 
+You can do the following actions at any time:
+ 
 - Add more child iteration nodes
 - Rename an iteration path (except the root path)
 - Move a child iteration path under another node 
@@ -111,7 +109,7 @@ You can do the following actions at any time:
 
 ## How many iterations should a team define?
 
-Define as many child iterations as needed to reflect your project lifecycle. These paths represent a series of events, such as sprints, pre-beta and beta results, and other release milestones. Teams usually leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
+Define as many child iterations as needed to reflect your project lifecycle. These paths represent a series of events, such as sprints, prebeta and beta results, and other release milestones. Teams usually leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
 
 Add iterations to support the following requirements:
 * Define sprints for your Scrum teams to [plan and execute their sprints](../../boards/sprints/assign-work-sprint.md)
@@ -131,7 +129,8 @@ For example, the Beta 1 iteration now contains three child nodes, one for each s
 
 Iterations don't enforce any rules. For example, you can assign a task to an iteration without closing or completing it during that iteration. At the end of an iteration, identify all work items that remain active or open and take appropriate action. You can move them to a different iteration or return them to the backlog.
 
-<a name="name-restrictions"></a>
+You can run queries to find features and work items that are assigned to a specific iteration or a set of iterations and then bulk modify the work items to change their iteration paths. For more information, see [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md) 
+
 
 ## Naming restrictions 
 
@@ -139,7 +138,6 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 
 [!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
 
-<a name="field-rules"></a>
 
 ## Related articles 
  

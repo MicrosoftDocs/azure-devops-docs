@@ -38,7 +38,7 @@ To understand how the system uses area paths, see [About area and iteration path
   By default, the user who created the project has these permissions already set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 - Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team area paths.  
 
-For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
 <a id="guidance"></a>
 
