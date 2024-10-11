@@ -194,8 +194,8 @@ Tasks perform work in a build or release. For more information, learn how to [co
 | Git branches tree menu           | `ms.vss-code-web.git-branches-tree-menu`        | ![Git Branches Tree](media/code/gitBranchesTreeActions.png)       |
 | Git pull request actions menu    | `ms.vss-code-web.pull-request-action-menu`      | ![Git Pull Request Actions](media/code/pullRequestActions.png)    |
 | Git pull request tabs (pivots)   | `ms.vss-code-web.pr-tabs`                       | ![Git Pull Request Tab](media/code/pullRequestTab.png)            |
-| Git commit listing menu          | `ms.vss-code-web.git-commit-list-menu`          | ![Git Commit List Menu](media/git-commit-list-menu.png)     |
-| Git commit detail menu           | `ms.vss-code-web.git-commit-details-menu`       | ![Git Commit Detail Menu](media/git-commit-detail-menu.png) |
+| Git commit listing menu          | `ms.vss-code-web.git-commit-list-menu`          | ![Git Commit List Menu](media/code/git-commit-list-menu.png)     |
+| Git commit detail menu           | `ms.vss-code-web.git-commit-details-menu`       | ![Git Commit Detail Menu](media/code/git-commit-detail-menu.png) |
 
 ::: moniker-end
 
