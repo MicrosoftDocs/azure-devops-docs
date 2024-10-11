@@ -202,10 +202,12 @@ For more information, see [Show bugs on backlogs and boards](../../organizations
 
 [!INCLUDE [display rollup section](../includes/display-rollup-section.md)]
 
-## Related articles
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Organize your backlog](organize-backlog.md)
+
+## Related articles
 
 - [Configure your backlog view](configure-your-backlog-view.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
