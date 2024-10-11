@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 08/21/2024
+ms.date: 10/17/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -45,7 +45,7 @@ New capabilities we expect to deliver include:
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2024 Q3</td>     
+        <td>2024 Q4</td>     
         </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Determine detected partner secrets validity](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Determine detected partner secrets validity</a></td>
@@ -120,12 +120,12 @@ Azure DevOps supports many different authentication mechanisms, including basic 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-acr-deployments" data-raw-source="[Workload identity federation for Docker service connection](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Docker service connection</a></td>
          <td>Pipelines</td>
-         <td>2024 H1</td>
+         <td>2024 H2</td>
       </tr>
        <tr>
          <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
          <td>General</td>
-         <td>2024 H1</td>
+         <td>2024 H2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
@@ -232,14 +232,14 @@ For the past several years, all our pipelines investments have been in the area 
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q1</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
-         <td>Pipelines</td>
-         <td>2024 Q3</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
          <td>Pipelines</td>
-         <td>2024 H2</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 H2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q3</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
@@ -272,24 +272,12 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="11"><strong>2024 Q3</strong></td>
+      <td rowspan="14"><strong>2024 Q4</strong></td>
         <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
-       </td>
-       <td>General</td>
+        </td>
+      <td>General</td>
       </tr>
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-permanently-delete-attachment" data-raw-source="[Permanently delete work item attachments](/azure/devops/release-notes/roadmap/2024/boards-permanently-delete-attachment">Permanently delete work item attachment</a>
-         </td>
-         <td>Boards</td> 
-      </tr> 
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a>
-         </td>
-         <td>Boards</td> 
-      </tr> 
       <tr>
          <td>
             <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API suppport for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API suppport for connecting GitHub repositories (general availability)</a>
@@ -298,16 +286,36 @@ For the past several years, all our pipelines investments have been in the area 
       </tr> 
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields" data-raw-source="[Enable area and iteration level fields](/azure/devops/release-notes/roadmap/2024/boards-area-iteration-level-fields">Enable area and iteration level fields</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
          </td>
-         <td>Boards</td> 
+         <td>Boards</td>         
       </tr> 
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
-         <td>Pipelines</td>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status" data-raw-source="[Show status of GitHub Actions work flow run](/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status)">Show status of GitHub Actions work flow run</a>
+         </td>
+         <td>Boards</td>         
       </tr>
       <tr>
-       <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>
+         <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
+        </td>
+        <td>Boards</td>
+      </tr>  
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments" data-raw-source="[Improve cut and paste of images into work item comments](/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments)">Improve cut and paste of images into work item comments</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td>Remove deleted tags from suggested list on work item form</td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
          <td>Pipelines</td>
       </tr>
       <tr>
@@ -331,28 +339,9 @@ For the past several years, all our pipelines investments have been in the area 
          <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-      <td rowspan="5"><strong>2024 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td>
-         <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
-        </td>
-        <td>Boards</td>
-      </tr>  
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments" data-raw-source="[Improve cut and paste of images into work item comments](/azure/devops/release-notes/roadmap/2024/boards-cut-paste-images-into-comments)">Improve cut and paste of images into work item comments</a></td>
-         <td>Boards</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
-         <td>Boards</td>
-      </tr>
-      <tr>
-         <td>Remove deleted tags from suggested list on work item form</td>
-         <td>Boards</td>
-      </tr>
-      <tr>
       <td rowspan="22"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
@@ -377,18 +366,6 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
       </tr>      
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
-         </td>
-         <td>Boards</td>         
-      </tr> 
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status" data-raw-source="[Show status of GitHub Actions work flow run](/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status)">Show status of GitHub Actions work flow run</a>
-         </td>
-         <td>Boards</td>         
-      </tr>    
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Repos</td>
