@@ -178,32 +178,26 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 ::: moniker-end
 
-
-
-
-
 <a name="menus_code"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Azure Repos menu and toolbar
 
-| Name                                | Target ID                                        | Preview image | 
-| ------------------------------------|--------------------------------------------------|-------------------| 
-| Source item (grid) menu             | `ms.vss-code-web.source-grid-item-menu`          | ![Repos Item Grid Actions](media/code/sourceGridItemActions.png)| 
-| Source item (tree) menu             | `ms.vss-code-web.source-tree-item-menu`          | ![Repos Item Tree Actions](media/code/sourceTreeItemActions.png)| 
-| Source item (grid and tree) menu    | `ms.vss-code-web.source-item-menu`               |  | 
-| Change list item menu               | `ms.vss-code-web.change-list-item-menu`          |  | 
-| Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-menu`  |  | 
-| Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![Git Branches Tree](media/code/gitBranchesTreeActions.png)| 
-| Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu`       | ![Git Pull Request Actions](media/code/pullRequestActions.png)| 
-| Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs`                        | ![Git Pull Request Tab](media/code/pullRequestTab.png)| 
-| Git commit listing menu             | `ms.vss-code-web.git-commit-list-menu`           | ![Git Commit List Menu](../../media/git-commit-list-menu.png)| 
-| Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu`        | ![Git Commit Detail Menu](../../media/git-commit-detail-menu.png)| 
+| Name                             | Target ID                                       | Preview image                                                     |
+| -------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------- |
+| Source item (grid) menu          | `ms.vss-code-web.source-grid-item-menu`         | ![Repos Item Grid Actions](media/code/sourceGridItemActions.png)  |
+| Source item (tree) menu          | `ms.vss-code-web.source-tree-item-menu`         | ![Repos Item Tree Actions](media/code/sourceTreeItemActions.png)  |
+| Source item (grid and tree) menu | `ms.vss-code-web.source-item-menu`              | ![Repos Item Actions](media/code/sourceItemActions.png)                                                                |
+| Change list item menu            | `ms.vss-code-web.change-list-item-menu`         |                                                                   |
+| Change list summary item menu    | `ms.vss-code-web.change-list-summary-item-menu` |                                                                   |
+| Git branches tree menu           | `ms.vss-code-web.git-branches-tree-menu`        | ![Git Branches Tree](media/code/gitBranchesTreeActions.png)       |
+| Git pull request actions menu    | `ms.vss-code-web.pull-request-action-menu`      | ![Git Pull Request Actions](media/code/pullRequestActions.png)    |
+| Git pull request tabs (pivots)   | `ms.vss-code-web.pr-tabs`                       | ![Git Pull Request Tab](media/code/pullRequestTab.png)            |
+| Git commit listing menu          | `ms.vss-code-web.git-commit-list-menu`          | ![Git Commit List Menu](media/git-commit-list-menu.png)     |
+| Git commit detail menu           | `ms.vss-code-web.git-commit-details-menu`       | ![Git Commit Detail Menu](media/git-commit-detail-menu.png) |
 
 ::: moniker-end
-
-
 
 <a name="menus_test"></a>
 
@@ -211,11 +205,11 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 ## Azure Test Plans menu and toolbar
 
-| Name                       | Target ID                                   | Preview image | 
-| ---------------------------|---------------------------------------------|-------------------| 
-| Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        | | 
-| Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` | | 
-| Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![Test Hub Pivot Tab](media/test/test-plan-hub-pivot-tab-preview.png)| 
+| Name                       | Target ID                                   | Preview image                                                         |
+| -------------------------- | ------------------------------------------- | --------------------------------------------------------------------- |
+| Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        | ![Test run grid menu](media/test/test-run-grid-menu.png)                                                                      |
+| Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` | ![Test plans suites context](media/test/test-plans-suites-context.png)                                                                     |
+| Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![Test hub pivot tab](media/test/test-plan-hub-pivot-tab-preview.png) |
 
 ::: moniker-end
 
