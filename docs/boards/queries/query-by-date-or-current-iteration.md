@@ -239,7 +239,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint that corresponds to the current iteration path for the team is found. For example, if a team is on Sprint 5, the query returns items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query returns items assigned to Sprint 6.
 
 > [!NOTE]
-> For the `@CurrentIteration` macro to work, the team must have selected an iteration path whose date range encompasses the current date. For more information, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the `@CurrentIteration` macro to work, the team must have selected an iteration path whose date range encompasses the current date. For more information, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). Also, queries that contain this macro are only valid when run from the web portal.
 >
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 
@@ -251,7 +251,7 @@ Azure Boards adds a team parameter when you select the **@CurrentIteration** or 
 > ![Screenshot that shows the Query filter by using the CurrentIteration macro with team parameter.](media/query-date-iteration/at-current-with-team-parameter.png)
 
 > [!TIP]
-> If the `@CurrentIteration` macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate).
+> If the `@CurrentIteration` macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations).
 
 To change the team parameter that the system automatically sets, you choose it by entering the name of the team in the parameter field added below the **@CurrentIteration** macro.
 
@@ -270,7 +270,7 @@ Use the `@CurrentIteration +/- <i>n</i>` macro when you want to track the work a
 
 > [!NOTE]
 > For the `@CurrentIteration +/- <i>n</i>` macro to work, the team must have selected iteration paths that meet the `+/- _n_`
-> criteria. Date ranges must encompass the current date for the `@CurrentIteration`. For more information about team selection of iteration paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate).
+> criteria. Date ranges must encompass the current date for the `@CurrentIteration`. For more information about team selection of iteration paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations).
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 

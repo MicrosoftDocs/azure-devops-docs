@@ -59,7 +59,7 @@ sections:
             
           In general, you need to be a member of a team or granted the [Team Administrator](../add-team-administrator.md) role to configure the following team-level objects.  
           - [Default and selected Area Paths](../set-area-paths.md#team-area-paths)
-          - [Default and selected Iteration Paths](../set-iteration-paths-sprints.md#activate)
+          - [Default and selected Iteration Paths](../set-iteration-paths-sprints.md#list-team-iterations)
           - [Define work item templates](../../../boards/backlogs/work-item-template.md) 
 
 

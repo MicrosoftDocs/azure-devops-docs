@@ -52,7 +52,7 @@ If you're new to managing projects and teams, do the following steps to configur
 2. Decide on the number and names of teams you want to support. For more information, see [About teams and Agile tools](about-teams-and-settings.md).
 3. Open **Project settings > Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow these steps: [Open Project Settings, Project configuration](set-area-paths.md#open-project-settings) and [Add area paths](set-area-paths.md#add-areas).
 4. Define the teams needed to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).
-5. Open the team configuration and assign the default and other area paths to each team. Follow these steps: [Open team settings](set-area-paths.md#open-team-settings) and [Set team default area paths](set-area-paths.md#team-area-paths).
+5. Open the team configuration and assign the default and other area paths to each team. Follow these steps: [Open team settings](set-area-paths.md#list-team-iterations) and [Set team default area paths](set-area-paths.md#team-area-paths).
 6. Assign work items to the area paths you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 > [!NOTE]
@@ -92,8 +92,8 @@ Follow these steps to configure **Iteration Paths** for your project and teams:
 1. Define the area paths and teams using the guidance in [Define area paths and assign to a team](set-area-paths.md#guidance).
 2. Determine the length of the iteration you want to support. We recommend that all teams use the same sprint cadence.
 3. Decide whether you want a flat structure or a hierarchy of sprints and releases.
-4. Open **Project settings > Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow these steps: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations).
-5. Open the team configuration and assign the default, backlog, and other iteration paths to each team. Follow these steps: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration paths](set-iteration-paths-sprints.md#activate).
+4. Open **Project settings > Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow these steps: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates.
+5. Open the team configuration and assign the default, backlog, and other iteration paths to each team. Follow these steps: [Open team settings](set-iteration-paths-sprints.md#list-team-iterations) and [Set team default iteration paths](set-iteration-paths-sprints.md#list-team-iterations).
 6. Each team should assign an iteration path to their work items that falls under the **Backlog iteration** path. These work items appear on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md).
 
 > [!NOTE]  

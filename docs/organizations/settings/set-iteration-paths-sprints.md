@@ -43,8 +43,8 @@ If you're new to managing projects and teams, complete the following steps:
 1. Define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence. For guidance, review [About areas and iterations](about-areas-iterations.md).
 1. Determine if you want a flat structure or hierarchy of sprints and releases.
-1. Open **Project settings>Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add iterations and set iteration dates](#iterations). 
-1. Open the team configuration and assign the default and other area paths to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default iteration paths](#activate).
+1. Open **Project settings>Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#list-project-iterations) and [Add iterations and set iteration dates](#iterations). 
+1. Open the team configuration and assign the default and other area paths to each team. Follow the steps provided later in this article: [Open team settings](#list-team-iterations) and [Set team default iteration paths](#select-team-sprints-and-set-the-default-iteration-path).
 1. Each team should assign the default iteration path they selected to their work items. Do so for those work items to show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 As needed, do the following tasks at any time: 
@@ -68,10 +68,7 @@ All work items that you create from your team context are automatically assigned
 [!INCLUDE [temp](../../includes/version-selector.md)]
 
 
-<a id="open-project-settings"></a>
-<a id="open-admin-context"></a>  
-
-## Open Project Settings, list project iterations    
+## List project iterations    
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -109,17 +106,11 @@ Define both areas and iterations for a project from the **Project configuration 
 
 ::: moniker-end
 
-<a id="admin-intro-tfs-2015"></a>
-
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
 
-[List project iteration paths](#iteration-project-list) | [Add a project iteration](#add-project-iteration) | [List team iteration paths](#list-team-iteration-paths) | [Set team iteration paths](#set-team-iteration-paths) | [Delete or update a project iteration path](#delete-update-iteration-paths)
-
-<a id="iteration-project-list"></a>
+[List project iteration paths](#list-project-iteration) | [Add a project iteration](#add-project-iteration) | [List team iteration paths](#list-team-iterations) | [Set team iteration paths](#select-team-sprints-and-set-the-default-iteration-path) | [Delete or update a project iteration path](#rename-or-move-an-iteration)
 
 List the iterations defined for a project using [az boards iteration project list](/cli/azure/boards/iteration/project#az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -164,10 +155,8 @@ ID     Identifier                            Name            Path               
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+---
 
-
-<a id="iterations"></a>  
 
 ## Add iterations and set iteration dates
 
@@ -195,15 +184,13 @@ ID     Identifier                            Name            Path               
 
    :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Iterations page, scheduled set of sprints.":::
 
-   Your next step is to [choose the sprints each team uses](#activate-team-services). 
+   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path-team-services). 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 From **Iterations**,  add iterations that teams can then select for their use.
-
-<a id="define-sprints-team-services"></a>
 
 1. Add and modify area paths from the **Work** > **Iterations** page from the project admin or settings context.   
 
@@ -221,16 +208,12 @@ From **Iterations**,  add iterations that teams can then select for their use.
 
    :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps Server 2019.":::
 
-   Your next step is to [choose the sprints each team uses](#activate-team-services).
+   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path-team-services).
 
 ::: moniker-end
 
-
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="add-project-iteration"></a>
 
 ::: moniker range="azure-devops"
 
@@ -281,12 +264,9 @@ az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+---
 
-
-<a id="open-team-settings"></a>
-
-## Open team settings, list team iterations  
+## List team iterations  
 
  Set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
 
@@ -321,8 +301,6 @@ You define both areas and iterations from **Project settings > Boards > Team con
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="list-team-iteration-paths"></a>
 
 ::: moniker range="azure-devops"
 
@@ -360,15 +338,16 @@ dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2   2019-01-21T00:00:00+00:00  2019
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+---
 
-<a id="activate">  </a>
+[](#select-team-sprints-and-set-the-default-iteration-path)
 
 ## Select team sprints and set the default iteration path
 
+[](#select-team-sprints-and-set-the-default-iteration-path)
+
 You [define sprints for the project](../../boards/sprints/define-sprints.md) and then select them to be active for each team. You assign the default iteration to use when creating new work items. 
 
-<a id="activate-team-services">  </a>
 
 #### [Browser](#tab/browser/)
 
@@ -412,14 +391,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end
 
-
-
-<a id="activate-sprints-tfs">  </a>
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="set-team-iteration-paths"></a> 
 
 ::: moniker range="azure-devops" 
 
@@ -443,7 +415,7 @@ az boards iteration team set-backlog-iteration --id --team
 
 - **team**: Required. Name or ID of the team.
 - **default-iteration-macro**: Optional. Default iteration macro, the only valid entry is @CurrentIteration.  
-- **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#iteration-project-list).  
+- **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#list-project-iteration).  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 
 #### Example 
@@ -470,9 +442,7 @@ az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "S
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
-<a name="rename"></a>
+---
 
 ## Rename or move an iteration 
 
@@ -503,7 +473,6 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 
  Rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
-<a id="delete-update-iteration-paths"></a> 
 
 ### Rename or move a project iteration path 
 
@@ -547,10 +516,7 @@ ID     Identifier                            Name      Start Date            Fin
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
-
-<a name="delete-path"></a>
+---
 
 ## Delete an Iteration Path
 
@@ -591,10 +557,7 @@ az boards iteration project delete --path
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
-
-
-<a name="export"></a>
+---
 
 ### Export/import iteration paths  
 

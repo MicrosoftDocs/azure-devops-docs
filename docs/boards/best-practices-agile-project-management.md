@@ -345,8 +345,6 @@ For more information, see:
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team delivery plans](plans/review-team-plans.md)
 
-<a id="process-improvement"></a>
-
 ## Process improvement
 
 Continuous improvement is at the heart of Agile methods. To improve your processes, you need to have shared goals and a shared plan. To initiate process improvement activities, consider adding them through regular practices. You might want to:
