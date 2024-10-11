@@ -1,7 +1,7 @@
 ---
 title: Default processes and process templates
 titleSuffix: Azure Boards
-description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project. 
+description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project.
 ms.custom: work-items 
 ms.service: azure-devops-boards
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
@@ -9,20 +9,21 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/02/2023
+ms.date: 10/11/2024
+#customer intent: As a team leader, I want to understand the processes that Azure Boards uses to manage work items for my project.
 ---
 
-# About default processes and process templates
+# Default processes and process templates
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Boards offers various processes to choose from for managing work items. Selecting the right process is essential for optimizing a project workflow and ensuring its success. In this article, explore the different processes available with Azure Boards. This article also provides guidance on how to choose the most suitable process for your project.
+Azure Boards offers various processes for managing work items. Selecting the right process helps optimize project workflow and ensure your project's success. In this article, explore the different processes available with Azure Boards. This article provides guidance on how to choose the most suitable process for your project.
 
-[!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
+[!INCLUDE [process terms](../../../includes/choose-process-introduction.md)]
 
-The work tracking objects contained within the default processes and process templates, which are Basic, Agile, Capability Maturity Model Integration (CMMI), and Scrum, are the same. They're summarized in this article.
+The default process types are *Basic*, *Agile*, *Capability Maturity Model Integration (CMMI)*, and *Scrum*. The work tracking objects in the default processes and process templates are the same. They're summarized in this article.
 
-[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
+[!INCLUDE [process templates](../../includes/get-latest-process-templates.md)]
 
 ## Default processes
 
@@ -42,7 +43,7 @@ The default processes differ mainly in the work item types they provide for plan
 
    Choose [Basic](../../get-started/plan-track-work.md) when your team wants the simplest model that uses Issue, Task, and Epic work item types to track work.
 
- Tasks support tracking Remaining Work.
+   Tasks support tracking Remaining Work.
 
    :::column-end:::
    :::column span="2":::
@@ -56,7 +57,7 @@ The default processes differ mainly in the work item types they provide for plan
 
    **Agile**
 
-   Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. This process works great for tracking User Stories and (optionally) bugs on the board. You can also track bugs and tasks on the taskboard.
+   Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. This process works great for tracking User Stories and, optionally, bugs on the board. You can also track bugs and tasks on the taskboard.
 
    For more information about Agile methodologies, see [Agile Alliance](https://www.agilealliance.org/).
 
@@ -318,9 +319,9 @@ The following table summarizes the main distinctions between the work item types
 
 Notes:
 
-1. Add work items from the [product backlog](../../backlogs/create-your-backlog.md) or [board](../../boards/kanban-overview.md). The product backlog shows a single view of the current backlog of work that can be dynamically reordered and grouped. Product owners can quickly prioritize work and outline dependencies and relationships. Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
+1. Add work items from the [product backlog](../../backlogs/create-your-backlog.md) or [board](../../boards/kanban-overview.md). The product backlog shows a single view of the current backlog of work that can be dynamically reordered and grouped. Product owners can prioritize work and outline dependencies and relationships. Each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
 1. Define a hierarchy of portfolio backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives. Each team configures which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
-1. Define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). With capacity planning, teams can quickly determine if they're over- or undercapacity for a sprint.
+1. Define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). With capacity planning, teams can determine if they're over capacity or under capacity for a sprint.
 
 <a id="workflow-states"></a>
 
@@ -331,9 +332,10 @@ Workflow states support tracking the status of work as it moves from a `New` sta
 > [!IMPORTANT]
 > For Azure DevOps Services and Azure DevOps Server 2019, the default workflow transitions support any state to any state transition. Customize these workflows to restrict some transitions. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 >
-> Also, view the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under **Boards** labeled **State Visualizer**. On that page, choose a work item type and view the workflow state model.
+> View the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under **Boards** labeled **State Visualizer**. On that page, choose a work item type and view the workflow state model.
 
 The following diagrams show the typical forward progression of those work item types used to track work and code defects for the three default processes. They also show some of the regressions to former states and transitions to removed states.
+
 Each image shows only the default reason associated with the transition.
 
 #### [Agile process](#tab/agile-process)
@@ -464,7 +466,7 @@ Each image shows only the default reason associated with the transition.
 
 * * *
 
-Most work item types used by Agile tools, the ones that appear on backlogs and boards, support any-to-any transitions. Update the status of a work item by using the board or the taskboard by dragging it to its corresponding state column.
+Most work item types used by Agile tools, the ones that appear on backlogs and boards, support any-to-any transitions. Update the status of a work item by using the board or the taskboard. Drag a work item to its corresponding state column.
 
 Change the workflow to support other states, transitions, and reasons. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
@@ -474,12 +476,12 @@ Change the workflow to support other states, transitions, and reasons. For more 
 
 When you change the state of a work item to `Removed`, `Closed`, or `Done`, the system responds as follows:
 
-- `Closed`/`Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. They do appear on the sprint backlog pages, board, and taskboard. Also, when you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
+- `Closed` or `Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. They do appear on the sprint backlog pages, board, and taskboard. When you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
 - `Removed`: Work items in this state don't appear on any backlog or board.
 
 Your project maintains work items as long as the project is active. Even if you set work items to `Closed`, `Done`, or `Removed`, the data store keeps a record. Use a record to create queries or reports.
 
-[!INCLUDE [temp](../../includes/note-closed-items.md)]
+[!INCLUDE [closed items](../../includes/note-closed-items.md)]
 
 If you need to permanently delete work items, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md).
 
