@@ -12,4 +12,4 @@ We’re excited to announce that, based on your feedback, Test Plans now allows 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Pipeline Integration for Test Case Execution.](../../media/246-testplans-01.gif "gif to Pipeline Integration for Test Case Execution")
 
-### Custom Column and Sorting in Test Plans Directory
+
