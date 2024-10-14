@@ -45,26 +45,28 @@ For more information on `AzurePipelinesCredential`, see this [blog post](https:/
 
 The new Azure service connection creation experience aligns terminology with Azure and Entra ID portals and provides increased flexibility and secure defaults.
 
-When creating a new Azure Resource Manager service connection, the various options to configure identity are available in a single dialog:
+When creating a new Azure Resource Manager service connection, the various options to configure identity are now available in a single dialog that replaces the distinct top level items used previously:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Azure service connection top level options.](../../media/246-pipelines-01.png "Screenshot of Azure service connection top level options")
 
-__Identity Type__ lists all authentication schemes the Azure service connection supports. Previously, these were distinct top level items.  
+__Identity Type__ lists all authentication schemes the Azure service connection supports.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Identity Type.](../../media/246-pipelines-02.png "Screenshot of Identity Type")
 
 For app registrations, you can independently select __Credential__ to be [workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/) or a secret.
 
-## Managed Identity support
+#### Managed Identity support
 
-You can now select a pre-existing managed identity and use it to configure a service connection:
+You can now select a pre-existing managed identity and use it to configure a service connection. First, [create a User-assigned Managed Identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
+
+Then, create an Azure service connection and select the _Managed identity_ Identity Type. This will configure workload identity federation.  
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Managed Identity support.](../../media/246-pipelines-03.png "Screenshot of Managed Identity support")
 
-To prevent sharing over-privileged managed identities, it is recommended to use a managed identity with workload identity federation instead of assigned managed identities to agent pools.
+The option to use a managed identity assigned to an agent (pool) has been renamed _Managed identity (agent-assigned)_. To prevent sharing over-privileged managed identities, it is recommended to use a managed identity with workload identity federation instead of managed identities assigned to agent pools.
 
 Managed identity is also the recommended option for users who can't create an App registration if that is [disabled in Entra ID](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
@@ -77,11 +79,13 @@ Continue to select the subscription for that is the deployment scope for the ser
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Managed Identity selection.](../../media/246-pipelines-04.png "Screenshot of Managed Identity selection")
 
-## Service Management Reference field
+#### Service Management Reference field
 
-Some organizations require the [Service Management Reference](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-1.0#properties) of an App registration to be populated with relevant context information from an ITSM database. If requires to do so, users can specify this reference at service connection creation time.
+Some organizations require the [Service Management Reference](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-1.0#properties) of an App registration to be populated with relevant context information from an ITSM database. If required to do so, users can specify this reference at service connection creation time.
 
-## More information
+#### More information
+
+This change is rolling out over the next few month. See also:
 
 - [Azure service connection documentation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
 - [Workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/)
