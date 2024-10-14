@@ -19,7 +19,7 @@ The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To us
       lsb_release -d
 ```
 
-Please note, the ubuntu-latest image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
+Please note that the `ubuntu-latest` image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
 
 
 ### Use Workload identity federation in Azure integration tests
