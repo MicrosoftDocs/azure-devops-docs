@@ -111,7 +111,8 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/extend-analytics/**": ">= azure-devops-2019"
+        "report/extend-analytics/**": ">= azure-devops-2019",
+        "managed-devops-pools/**": "=azure-devops"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
