@@ -22,11 +22,11 @@ The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To us
 Please note, the ubuntu-latest image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
 
 
-### Use Azure Pipelines Credential in integration tests
+### Use Workload identity federation in Azure integration tests
 
-In June, the Azure SDK [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/), so code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks can authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
+In June, the The Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/), so code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks can authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
 
-Many customers are using the Azure SDK in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) and [VSTest@3](/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines) tasks.
+Many customers are using the Azure Identity libraries in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) and [VSTest@3](/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines) tasks.
 
 You can set the `connectedService` property to an Azure service connection configured with workload identity federation. The `AzurePipelinesCredential` requires `SYSTEM_ACCESSTOKEN` to be set.
 
