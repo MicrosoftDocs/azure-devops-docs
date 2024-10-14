@@ -68,7 +68,7 @@ Then, create an Azure service connection and select the _Managed identity_ Ident
 
 The option to use a managed identity assigned to an agent (pool) has been renamed _Managed identity (agent-assigned)_. To prevent sharing over-privileged managed identities, it is recommended to use a managed identity with workload identity federation instead of managed identities assigned to agent pools.
 
-Managed identity is also the recommended option for users who can't create an App registration if that is [disabled in Entra ID](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
+Managed identity is also the recommended option for users who can't create an App registration if that is [disabled in Entra ID](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
 To use a managed identity with workload identity federation, first select the subscription and resource group that holds your managed identity. This can be different from the subscription the service connection will access. Pick the managed identity that will be configured for workload identity federation. The user needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) role or equivalent permissions on the managed identity to create federated credentials on it.
 
@@ -79,7 +79,7 @@ Continue to select the subscription for that is used as the deployment scope for
 
 #### Service Management Reference field
 
-Some organizations require the [Service Management Reference](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-1.0#properties) of an App registration to be populated with relevant context information from an ITSM database. If required to do so, users can specify this reference at service connection creation time.
+Some organizations require the [Service Management Reference]/graph/api/resources/application?view=graph-rest-1.0#properties) of an App registration to be populated with relevant context information from an ITSM database. If required to do so, users can specify this reference at service connection creation time.
 
 #### More information
 
