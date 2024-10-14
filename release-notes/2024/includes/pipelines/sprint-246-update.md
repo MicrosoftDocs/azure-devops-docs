@@ -43,7 +43,7 @@ For more information on `AzurePipelinesCredential`, see this [blog post](https:/
 
 ### New Azure Service Connection Creation Experience with improved Managed Identity support
 
-The new Azure service connection creation experience aligns terminology with Azure and Entra ID portals and provides increased flexibility and secure defaults.
+The new Azure service connection creation experience provides increased flexibility and secure defaults. It also aligns terminology with Entra ID, so that users who create Entra ID objects manually have a better reference when navigating different portals.
 
 When creating a new Azure Resource Manager service connection, the various options to configure identity are now available in a single dialog that replaces the distinct top level items used previously:
 
