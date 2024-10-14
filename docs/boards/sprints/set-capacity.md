@@ -107,7 +107,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
    :::image type="content" source="media/capacity/team-members-added-set-team-days-off.png" alt-text="Screenshot of setting time off.":::
 
-   In the **Days off for** dialog box, select the start and end days during the sprint for the team member or team days off.
+   In the **Days off for** dialog, select the start and end days during the sprint for the team member or team days off.
 
    > [!TIP]
    > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).

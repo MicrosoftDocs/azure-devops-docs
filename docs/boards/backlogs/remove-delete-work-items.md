@@ -148,7 +148,7 @@ You can delete work items in one of the following ways:
 1. Initiate your delete operation:
    - From the work item form, open the work item, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
 
-   :::image type="content" source="media/move-change-delete/delete-work-item.png" alt-text="Screenshot of work item form, Actions menu, choose Delete."::: 
+     :::image type="content" source="media/move-change-delete/delete-work-item.png" alt-text="Screenshot of work item form, Actions menu, choose Delete."::: 
 
    - To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md), choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu, and then select **Delete**. 
 
