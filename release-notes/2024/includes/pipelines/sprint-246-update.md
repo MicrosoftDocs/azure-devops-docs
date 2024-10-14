@@ -15,7 +15,7 @@ The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To us
     vmImage: 'ubuntu-24.04'
   steps:
   - bash: |
-      echo Hello from Ubuntu 24.04 Preview
+      echo Hello from Ubuntu 24.04
       lsb_release -d
 ```
 
