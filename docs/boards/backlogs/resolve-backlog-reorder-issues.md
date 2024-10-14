@@ -72,14 +72,9 @@ This message indicates that the **In Progress** filter for the backlog is turned
 
 When you refresh your browser, the work items display based on your selected filters. To reset the filters, do the following steps.
 
-::: moniker range=">= azure-devops-2019"
-
-1. Open your backlog.
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2020" 
 
+1. Open your backlog.
 1. From the **View options** selector, choose to show or hide **In Progress items**.
 
    :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control, version 2020 and later.":::
@@ -87,6 +82,7 @@ When you refresh your browser, the work items display based on your selected fil
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 
+1. Open your backlog.
 1. From the **View options** selector, choose to show or hide **In Progress items**.
 
    :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
