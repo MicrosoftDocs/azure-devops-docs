@@ -57,9 +57,9 @@ __Identity Type__ lists all authentication schemes the Azure service connection 
 
 For app registrations, you can independently select __Credential__ to be [workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/) or a secret.
 
-#### Managed Identity support
+#### Azure Service Connection Managed Identity support
 
-You can now select a pre-existing managed identity and use it to configure a service connection. First, [create a User-assigned Managed Identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
+You can now select a pre-existing managed identity and use it to configure a service connection that uses workload identity federation. First, [create a User-assigned Managed Identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
 
 Then, create an Azure service connection and select the _Managed identity_ Identity Type. This will configure workload identity federation.  
 
@@ -70,11 +70,9 @@ The option to use a managed identity assigned to an agent (pool) has been rename
 
 Managed identity is also the recommended option for users who can't create an App registration if that is [disabled in Entra ID](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
-To use a managed identity with workload identity federation, first select the subscription and resource group that holds your managed identity. This can be different from the subscription the service connection will access. Pick the managed identity that will be configured for workload identity federation.
+To use a managed identity with workload identity federation, first select the subscription and resource group that holds your managed identity. This can be different from the subscription the service connection will access. Pick the managed identity that will be configured for workload identity federation. The user needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) role or equivalent permissions on the managed identity to create federated credentials on it.
 
-The user needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) role or equivalent permissions on the managed identity to create federated credentials on it.
-
-Continue to select the subscription for that is the deployment scope for the service connection.
+Continue to select the subscription for that is used as the deployment scope for the service connection.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Managed Identity selection.](../../media/246-pipelines-04.png "Screenshot of Managed Identity selection")
@@ -85,7 +83,7 @@ Some organizations require the [Service Management Reference](https://learn.micr
 
 #### More information
 
-This change is rolling out over the next few month. See also:
+This new UX is rolling out over the next month. For more information, see:
 
 - [Azure service connection documentation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
 - [Workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/)
