@@ -499,7 +499,6 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     variables:
-      myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVar'] ]
       myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
     
     steps:
