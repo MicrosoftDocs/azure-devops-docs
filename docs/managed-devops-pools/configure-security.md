@@ -218,6 +218,37 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
 }
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+Add additional organizations to the organizations list to configure your pool for use with multiple organizations. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organizations is limited to two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+        {
+            "url": "https://dev.azure.com/fabrikam-tailspin",
+            "projects": [],
+            "parallelism": 2
+        },
+        {
+            "url": "https://dev.azure.com/fabrikam-prime",
+            "projects": [ "fabrikam-dev", "fabrikam-test" ],
+            "parallelism": 2
+        }
+    ]
+  }
+}
+```
 
 
 * * *
@@ -269,6 +300,38 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
        "kind": "AzureDevOps"
     }
    ```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+Add additional organizations to the organizations list to configure your pool for use with multiple organizations. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organizations is limited to two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+        {
+            "url": "https://dev.azure.com/fabrikam-tailspin",
+            "projects": [],
+            "parallelism": 2
+        },
+        {
+            "url": "https://dev.azure.com/fabrikam-prime",
+            "projects": [ "fabrikam-dev", "fabrikam-test" ],
+            "parallelism": 2
+        }
+    ]
+  }
+}
+```
 
 * * *
 
