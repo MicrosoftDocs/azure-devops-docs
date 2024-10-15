@@ -99,10 +99,10 @@ ms.date: 09/21/2020
    :::column-end:::
    :::column span="3":::
       A subjective rating of the issue or task it relates to the business. You can specify the following values:  
-      - **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.  
-      - **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.  
-      - **3**: Resolution of the work item is optional based on resources, time, and risk.  
-      - **4**: Resolution of the work item is not required. 
+      - **1**: Product can't ship without the successful resolution of the work item, and it should be addressed as soon as possible.  
+      - **2**: Product can't ship without the successful resolution of the work item, but it doesn't need to be addressed immediately.  
+      - **3**: Resolution of the work item is optional, based on resources, time, and risk.  
+      - **4**: Resolution of the work item isn't required.
    :::column-end:::
 :::row-end:::
 ---
@@ -112,7 +112,7 @@ ms.date: 09/21/2020
    :::column-end:::
    :::column span="3":::
       A subjective rating of the issue or task it relates to the business. You can specify the following values:  
-      - **Architectural**: Technical services to implement business features that deliver solution .  
+      - **Architectural**: Technical services to implement business features that deliver solution.  
       - **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default).  
    :::column-end:::
 :::row-end:::

@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 11/21/2023
+  ms.date: 10/14/2024
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -318,8 +318,13 @@ sections:
       - question: |
           Q: What happens if I delete my organization resource? 
         answer: |
-          A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.yml#q--can-i-use-azure-devops-for-free-). When you [delete an organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. Ensure you're aware of the precautions contained within the linked article.
-      
+          A: Deleting the Azure DevOps organization resource in the Azure portal results in an error if it's actively being used for billing. 
+          To delete the organization resource, first change billing to a different Azure subscription in the Azure DevOps organization (Organization settings > Billing > Change billing). For more information, see [Change billing in Azure DevOps](set-up-billing-for-your-organization-vs.md#change-your-billing-subscription).
+          
+          :::image type="content" source="media/delete-command-on-one-selected-item.png" alt-text="Screenshot of delete command on one selected item.":::
+          
+          If the user removing billing has permission on the Azure subscription, the resource in the Azure portal gets removed automatically. If the user removing billing in Azure DevOps doesn't have access to the Azure subscription, the organization resource persists and a user with access to the Azure subscription can safely remove it later without error.
+
       - question: |
           Q: Can I apply tags to organizations from the Azure portal?
         answer: |

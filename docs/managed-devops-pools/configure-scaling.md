@@ -1,10 +1,14 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 08/22/2024
+ms.date: 10/08/2024
 ---
 
 # Configure scaling
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Configure scaling settings to manage the performance and cost of your Managed DevOps Pool. For information on pricing and performance, see [Manage cost and performance](manage-costs.md).
 

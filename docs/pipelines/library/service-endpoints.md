@@ -190,16 +190,7 @@ For information about creating a service connection to an Azure Resource Manager
 
 ### Azure Service Bus service connection
 
-Use the following parameters to define and secure a connection to a Microsoft Azure Service Bus queue.
-
-| Parameter  | Description  |
-|---|--|
-| Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
-| Service Bus Connection string |  Primary or secondary connection string for your queue. For information about how to get the connection string see, [Get the connection string](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues#authenticate-the-app-to-azure).|
-| Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Description | Optional. The description of the service connection. |
-| Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
-
+For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2) instead of an Azure Service Bus service connection to send a message to Azure Service Bus. This version of the task supports Entra ID and workload identity federation. 
 
 ### Bitbucket Cloud service connection
 
@@ -272,9 +263,15 @@ You can create a service connection to a Docker container registry.
 
 Select the registry type:
 
+::: moniker range="azure-devops"
 * [Docker Hub](#docker-hub-or-others)
 * [Others](#docker-hub-or-others)
 * [Azure Container Registry](#azure-container-registry)
+::: moniker-end
+::: moniker range="< azure-devops"
+* [Docker Hub](#docker-hub-or-others)
+* [Others](#docker-hub-or-others)
+::: moniker-end
 
 #### Docker Hub or Others
 
@@ -292,8 +289,14 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
+
 #### Azure Container Registry
 
+::: moniker range="< azure-devops"
+Azure Container Registry is not available in Azure DevOps Server. 
+::: moniker-end
+
+::: moniker range="azure-devops"
 You can connect to an Azure Container Registry using either a [Service Principal](#service-principal-authentication-type), [Managed Identity](#managed-identity-authentication-type), or [Workload Identity federation](#workload-identity-federation-authentication-type) **Authentication Type**.
 
 ##### Service Principal authentication type
@@ -333,6 +336,7 @@ Enter the following parameters to define a connection to an Azure Container Regi
 | Connection name | Required. A name to use to refer to the service connection in task properties. For YAML pipelines, use the name as the **azureSubscription** or other connection name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
+::: moniker-end
 
 ### Generic service connection
 

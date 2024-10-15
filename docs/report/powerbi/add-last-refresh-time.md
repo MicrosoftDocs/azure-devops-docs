@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: how-to
 ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/12/2024
+ms.date: 10/08/2024
 #customer intent: As a report creator who works in Power BI, I want to add last refresh information to my reports to let users know that the data is current.
 ---
 
@@ -118,13 +118,28 @@ To add a column with the last refresh date of the dataset, do the following step
 
    :::image type="content" source="media/last-refresh/column-coverted-data.png" alt-text="Screenshot of converted date column. ":::
 
+   > [!TIP]
+   > If you don't see the **To Table** option, you can use the following alternative steps to add the last refresh date and time to your reports:
+   > 1. Select the **Home** tab and select **Get Data**. Choose **Blank Query** from the options.
+   > 2. In the Queries pane, right-select on the new query and select **Advanced Editor**. 
+   > 3. Replace the existing code with the following code to create a table with the current date and time:
+   > ```
+   > let
+   > Source = #table(
+   >     {"Last Refresh Date"}, 
+   >     {{DateTime.LocalNow()}}
+   > )
+   > in
+   > Source
+   >```
+
 1. From the **Transform** menu, select the **Data Type** dropdown menu and select **Date/Time** option.
 
    :::image type="content" source="media/last-refresh/change-data-type-date-time.png" alt-text="Screenshot of Transform menu, Change Data Type option to Date/Time. ":::
 
 1. Rename **Column1** to something more meaningful, such as *Last Refresh Date*.
 
-1. From the Home menu, choose **Close and Apply**.
+1. From the Home menu, select **Close and Apply**.
 
    :::image type="content" source="media/transform-data/powerbi-close-apply.png" alt-text="Screenshot of Power BI Desktop, Home, Close & Apply.":::
 
