@@ -87,8 +87,8 @@ The system generates a few service accounts to support specific operations. The 
 | Agent Pool Service | Has permission to listen to the message queue for the specific pool to receive work. In most cases, you don't need to manage group members directly - the agent registration process handles it for you. When you register the agent, the service account you specify (typically Network Service) automatically gets added. Responsible for performing Azure Boards read/write operations and updating work items when GitHub objects change.   |  
 | Azure Boards | Added when Azure Boards is [connected to GitHub](../../boards/github/connect-to-github.md). You shouldn't have to manage members of this group. Responsible for managing the link creation between GitHub and Azure Boards. |  
 | PipelinesSDK | Added as needed to support the Pipelines policy service scope tokens. This user account is similar to the build service identities but supports locking down permissions separately. In practice, the tokens that involve this identity are granted read-only permissions to pipeline resources and the one-time ability to approve policy requests. This account should be treated in the same way that the build service identities are treated.   |  
-| *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It's added to the Security Service Group, which is used to store users who are granted permissions, but not added to any other security group.  |  
-| Project Collection Build Service | Has permissions to run build services for the collection. It's added to the Security Service Group, which is used to store users who are granted permissions, but not added to any other security group.  |  
+| *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It's automatically a member of the Security Service Group, which is used to store users who are granted permissions, but no other security group.  |  
+| Project Collection Build Service | Has permissions to run build services for the collection. It's automatically a member of the Security Service Group, which is used to store users who are granted permissions, but no other security group. |  
 
 <a name="groups"></a>
 
@@ -326,7 +326,7 @@ So the full name of the administrator group for the default collection is
    Has limited access to view organization settings and projects other than those projects they are specifically added to. Also, people picker options are limited to those users and groups explicitly added to the project the user is connected to.
    :::column-end:::
    :::column span="2":::
-   Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
+   Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. don't add users to this group if they are also added to the Project Collection Administrators group.  
    > [!NOTE]   
    > The **Project-Scoped Users** group becomes available with limited access when the organization-level preview feature, **Limit user visibility and collaboration to specific projects** is enabled. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
    :::column-end:::
@@ -1047,8 +1047,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 ::: moniker-end
 
 
-::: moniker-end
-
 #### [Preview page](#tab/preview-page) 
 
 ::: moniker range="< azure-devops"
@@ -1134,7 +1132,7 @@ The permissions preview page is only available for Azure DevOps Services.
    `Project, SUPPRESS_NOTIFICATIONS`
    :::column-end:::
    :::column span="2":::
-   Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
+   Users with this permission can update work items without generating notifications. This feature is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
 
    Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
@@ -1819,7 +1817,7 @@ You can define the following permissions in Build at both levels.
    `Build, OverrideBuildCheckInValidation`
    :::column-end:::
    :::column span="2":::
-   Can commit a TFVC change set that affects a gated build definition
+   Can commit a TFVC changeset that affects a gated build definition
    without triggering the system to shelve and build their changes first.
    :::column-end:::
 :::row-end:::
@@ -1850,7 +1848,7 @@ You can define the following permissions in Build at both levels.
    `Build, RetainIndefinitely`  
    :::column-end:::
    :::column span="2":::
-   Can toggle the retain indefinitely flag on a build. This feature marks a build so that the system doesn't automatically delete it based on any applicable retention policy.
+   Can toggle the retain flag on a build to indefinately. This feature marks a build so that the system doesn't automatically delete it based on any applicable retention policy.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1895,7 +1893,7 @@ You can define the following permissions in Build at both levels.
 > - Turn **Inheritance Off** for a build definition when you want to control permissions for specific build definitions.
 >     - When **inheritance is On**, the build definition respects the build permissions defined at the project level or a group or user. For example, a custom Build Managers group has permissions set to manually queue a build for project Fabrikam. Any build definition with inheritance On for project Fabrikam would allow a member of the Build Managers group the ability to manually queue a build.
 >     - However, by turning **Inheritance Off** for project Fabrikam, you can set permissions that only allow Project Administrators to manually queue a build for a specific build definition. This would then allow me to set permissions for that build definition specifically.
-> - Assign the **Override check-in validation by build** permission only to service accounts for build services and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../../pipelines/build/triggers.md). This does not apply to PR builds. For more information, see [Check in to a folder that is controlled by a gated check-in build process](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
+> - Assign the **Override check-in validation by build** permission only to service accounts for build services and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../../pipelines/build/triggers.md). This doesn't apply to PR builds. For more information, see [Check in to a folder that is controlled by a gated check-in build process](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 ## Git repository (object-level)
 
@@ -2102,7 +2100,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
 
 ## TFVC (object-level)
 
-Manage the security of each TFVC branch from the [web portal](../../repos/tfvc/set-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions, which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+Manage the security of each TFVC branch from the [web portal](../../repos/tfvc/set-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions, which appear only for a project that was configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
 These permissions appear only for a project setup to use Team Foundation Version Control as the source control system.
 
@@ -2159,7 +2157,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can check out and make a pending change to items in a folder. 
    Examples of pending changes include adding, editing, renaming, deleting,
-   un-deleting, branching, and merging a file.
+   undeleting, branching, and merging a file.
    Pending changes must be checked in,
    so users also must have the Check-in permission
    to share their changes with the team.*
@@ -2191,11 +2189,11 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can convert any folder under that path into a branch,
    and also take the following actions on a branch:
-   edit its properties, re-parent it, and convert it to a folder.
+   edit its properties, reparent it, and convert it to a folder.
    Users who have this permission can branch this branch
    only if they also have the Merge permission for the target path.
    Users can't create branches from a branch
-   for which they do not have the Manage Branch permission.
+   for which they don't have the Manage Branch permission.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2226,7 +2224,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    Can read the contents of a file or folder.
    If a user has Read permissions for a folder,
    the user can see the contents of the folder and the properties of the files in it,
-   even if the user does not have permission to open the files. 
+   even if the user doesn't have permission to open the files. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2648,7 +2646,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column span="2":::
    Can remove a tag from the list of available tags for that project.
    
-   This permission doesn't appear in the UI. You can only set it by using a command-line tool. There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, the system automatically deletes it.
+   This permission doesn't appear in the UI. You can only set it by using a command-line tool. There's also no UI to explicitly delete a tag. Instead, when a tag has not been in use for three days, the system automatically deletes it.
    :::column-end:::
 :::row-end:::
 :::row:::
