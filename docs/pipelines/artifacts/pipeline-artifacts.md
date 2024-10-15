@@ -276,6 +276,66 @@ Not available.
 
 ---
 
+#### Download a specific artifact
+
+The following example demonstrates how to download pipeline artifacts from a specific build version produced by a particular run:
+
+# [YAML](#tab/yaml)
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: myPipeline
+    project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
+    source: '79'
+    version: '597'
+
+steps:
+- download: myPipeline
+  artifact: drop
+  patterns: '**'
+  displayName: 'Download Pipeline Artifact'
+```
+
+# [YAML (task)](#tab/yaml-task)
+
+```yaml
+steps:
+- task: DownloadPipelineArtifact@2
+  displayName: 'Download Pipeline Artifact'
+  inputs:
+    buildType: specific
+    project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
+    definition: 79
+    buildVersionToDownload: specific
+    pipelineId: 597
+    artifactName: drop
+```
+
+# [Classic](#tab/classic)
+
+- Add the :::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact** task.
+
+- Fill out the following fields:
+    - **Display name**: task display name
+    - **Download artifacts produced by**: specific run
+    - **Project**: the project from which to download the pipeline artifacts
+    - **Build pipeline**: select from the dropdown menu
+    - **Build version to download**: specific version
+    - **Build**: the build from which to download the artifacts
+    - **Artifact name**: the name of the artifact to download
+    - **Matching patterns**: one or more file matching patterns that limit which files get downloaded
+    - **Destination directory**: Default: $(Pipeline.Workspace)
+
+:::image type="content" source="media/download-pipeline-artifacts-specific-version.png" alt-text="A screenshot displaying how to configure the download pipeline artifacts task to download a specific artifact.":::
+
+# [Azure CLI](#tab/azure-cli)
+
+Not available.
+
+---
+
+
 ## Artifacts in release and deployment jobs
 
 Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `$(Pipeline.Workspace)`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
