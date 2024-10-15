@@ -288,6 +288,7 @@ resources:
   - pipeline: myPipeline
     project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
     source: '79'
+    version: '597'
 
 steps:
 - download: myPipeline
@@ -311,6 +312,28 @@ steps:
     artifactName: drop
 ```
 
+# [Classic](#tab/classic)
+
+- Add the :::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact** task.
+
+- Fill out the following fields:
+    - **Display name**: task display name
+    - **Download artifacts produced by**: specific run
+    - **Project**: the project from which to download the pipeline artifacts
+    - **Build pipeline**: select from the dropdown menu
+    - **Build version to download**: specific version
+    - **Build**: the build from which to download the artifacts
+    - **Artifact name**: the name of the artifact to download
+    - **Matching patterns**: one or more file matching patterns that limit which files get downloaded
+    - **Destination directory**: Default: $(Pipeline.Workspace)
+
+:::image type="content" source="media/download-pipeline-artifacts-specific-version.png" alt-text="A screenshot displaying how to configure the download pipeline artifacts task to download a specific artifact.":::
+
+# [Azure CLI](#tab/azure-cli)
+
+Not available.
+
+---
 
 
 ## Artifacts in release and deployment jobs
