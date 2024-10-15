@@ -151,7 +151,7 @@ The `mdp pool create` method has four parameters that take JSON values that conf
 
 * `agent-profile` specifies whether the pool is stateful or stateless, and contains the standby agent schedule. It is a dictionary with a single key named either `Stateful` or `Stateless`, depending on your desired agent configuration. For more information on `agent-profile` properties, see [Configure scaling](./configure-scaling.md?tabs=azure-cli).
 * `fabric-profile` specifies the agent size, VM images, OS disk, and attached storage. For more information on the `fabric-profile` properties, see [Configure pool settings](./configure-pool-settings.md?tabs=azure-cli) and [Configure additional storage](./configure-storage.md?tabs=azure-cli).
-* `organization-profile` specifies the Azure DevOps organizations and projects that can use the pool. For more information on `organization-profile` settings, see [Configure security settings = Configure organization access](./configure-security.md?tabs=azure-cli).
+* `organization-profile` specifies the Azure DevOps organizations and projects that can use the pool. For more information on `organization-profile` settings, see [Configure security settings - Configure organization access](./configure-security.md?tabs=azure-cli#configure-organization-access).
 
 Create the following three files and save them to the folder where you plan to run the Azure CLI commands to create the pool.
 
