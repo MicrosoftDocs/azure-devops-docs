@@ -73,7 +73,7 @@ The `organizationProfile` section has the following properties.
 
 #### [Azure CLI](#tab/azure-cli/)
 
-Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+Organizations are configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
 ```azurecli
 az mdp pool create \
@@ -147,7 +147,7 @@ Add additional organizations to the organizations list to configure your pool fo
 
 #### [Azure CLI](#tab/azure-cli/)
 
-Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+Organizations are configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
 ```azurecli
 az mdp pool create \
@@ -220,36 +220,29 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
 
 #### [Azure CLI](#tab/azure-cli/)
 
-Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+Interactive mode is configured using the `logonType` property in the `osProfile` section in the `fabric-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
 ```azurecli
 az mdp pool create \
-   --organization-profile organization-profile.json
+   --fabric-profile fabric-profile.json
    # other parameters omitted for space
 ```
 
-Add additional organizations to the organizations list to configure your pool for use with multiple organizations. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organizations is limited to two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+The following example shows the `osProfile` section of the **fabric-profile.json** file with `Interactive` mode enabled.
 
 ```json
 {
-  "AzureDevOps":
-  {
-      "organizations": [
-        {
-            "url": "https://dev.azure.com/fabrikam-tailspin",
-            "projects": [],
-            "parallelism": 2
-        },
-        {
-            "url": "https://dev.azure.com/fabrikam-prime",
-            "projects": [ "fabrikam-dev", "fabrikam-test" ],
-            "parallelism": 2
-        }
-    ]
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {
+      "secretsManagementSettings": {...},
+      "logonType": "Interactive"
+    },
+    "storageProfile": {...}
   }
 }
 ```
-
 
 * * *
 
@@ -303,7 +296,7 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
 
 #### [Azure CLI](#tab/azure-cli/)
 
-Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource.
+Pool administration permissions are configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create)a pool.
 
 ```azurecli
 az mdp pool create \
@@ -311,27 +304,36 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-Add additional organizations to the organizations list to configure your pool for use with multiple organizations. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organizations is limited to two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
-
 ```json
 {
   "AzureDevOps":
   {
-      "organizations": [
-        {
-            "url": "https://dev.azure.com/fabrikam-tailspin",
-            "projects": [],
-            "parallelism": 2
-        },
-        {
-            "url": "https://dev.azure.com/fabrikam-prime",
-            "projects": [ "fabrikam-dev", "fabrikam-test" ],
-            "parallelism": 2
-        }
-    ]
+    "organizations":  [...],
+    "permissionProfile": {
+        "kind": "CreatorOnly"
+    }
   }
 }
 ```
+
+The `permissionProfile` property can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. 
+
+* `CreatorOnly` - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **Off** in the agent pool security settings. **Creator only** is the default setting.
+* `Inherit` - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **On** in the agent pool security settings.
+* `SpecificAccounts` - Specify the accounts to be added as administrators of the created agent pool in Azure DevOps. By default the Managed DevOps Pool creator is added to the list. Provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. 
+
+   ```json
+    {
+        "AzureDevOps" : {
+            "organizationProfile": {
+            "organizations": [...],
+            "permissionProfile": {
+            "kind": "SpecificAccounts",
+            "users" : ["User1@fabrikam.com", "User2@fabrikam.com" ]
+            }
+        }
+    }
+   ```
 
 * * *
 

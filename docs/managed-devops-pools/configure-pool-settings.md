@@ -138,7 +138,7 @@ The following example shows the `organizations` list in the **organization-profi
 
 ```json
 {
-  "azure-dev-ops": {
+  "AzureDevOps": {
     "organizations": [
       {
         "url": "https://dev.azure.com/fabrikam-tailspin",
