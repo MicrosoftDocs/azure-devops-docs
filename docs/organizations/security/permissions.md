@@ -1057,8 +1057,6 @@ The permissions preview page is only available for Azure DevOps Services.
 
 ::: moniker range="azure-devops"
 
-
-
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors.png)
 
@@ -1325,6 +1323,8 @@ The permissions preview page is only available for Azure DevOps Services.
    Can view test plans under the project area path.
    :::column-end:::
 :::row-end:::
+
+::: moniker-end
 
 #### [Current page](#tab/current-page)
 
