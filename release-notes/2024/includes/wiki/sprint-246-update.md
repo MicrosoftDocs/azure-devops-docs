@@ -6,4 +6,4 @@ ms.topic: include
 ---
 ### Improve pasting of HTML based content into Wikis
 
-We made pasting HTML-based content into Wikis easier. With this improvement, HTML-based content (such as HTML links, lists, tables, images, Excel sheets, MS Teams messages, emails, Azure Data Explorer queries with charts, and much more) is automatically transformed into Markdown syntax.
+We’ve made it easier to paste HTML-based content into Wikis. Now, HTML elements like links, lists, tables, images, Excel sheets, Microsoft Teams messages, emails, and Azure Data Explorer queries are automatically converted to Markdown syntax for smoother editing.
