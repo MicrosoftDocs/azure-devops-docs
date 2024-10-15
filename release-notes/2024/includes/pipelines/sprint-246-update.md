@@ -19,12 +19,15 @@ The Ubuntu 24.04 image is now available for Azure Pipelines hosted agents. To us
       lsb_release -d
 ```
 
-Please note that the `ubuntu-latest` image label will continue to point to ubuntu-22.04 until later this year. See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
+> [!NOTE]
+> The `ubuntu-latest` image label will continue to point to ubuntu-22.04 until later this year.
+
+See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) for installed software.
 
 
 ### Use Workload identity federation in Azure integration tests
 
-In June, the Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/). This added the ability for code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) tasks to authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
+In June, the Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/). This added the ability for code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) tasks to authenticate with Microsoft Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
 
 Many customers are using the Azure Identity libraries in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4) and [VSTest@3](/azure/devops/pipelines/tasks/reference/vstest-v3) tasks.
 
@@ -66,11 +69,11 @@ Then, create an Azure service connection and select the _Managed identity_ Ident
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Managed Identity support.](../../media/246-pipelines-03.png "Screenshot of Managed Identity support")
 
-The option to use a managed identity assigned to an agent (pool) has been renamed _Managed identity (agent-assigned)_. To prevent sharing over-privileged managed identities, it is recommended to use a managed identity with workload identity federation instead of managed identities assigned to agent pools.
+The option to use a managed identity assigned to an agent (pool) has been renamed _Managed identity (agent-assigned)_. To prevent sharing over-privileged managed identities, it's recommended to use a managed identity with workload identity federation instead of managed identities assigned to agent pools.
 
 Managed identity is also the recommended option for users who can't create an App registration if that is [disabled in Entra ID](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
-To use a managed identity with workload identity federation, first select the subscription and resource group that holds your managed identity. This can be different from the subscription the service connection will access in pipeline jobs. Pick the managed identity that will be configured for workload identity federation. The user needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) role or equivalent permissions on the managed identity to create federated identity credentials on it.
+To use a managed identity with workload identity federation, first select the subscription and resource group that holds your managed identity. This can be different from the subscription the service connection accesses in pipeline jobs. Pick the managed identity that will be configured for workload identity federation. The user needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) role or equivalent permissions on the managed identity to create federated identity credentials on it.
 
 Continue to select the subscription that will be used as the deployment scope for the service connection.
 
@@ -87,7 +90,7 @@ The new Azure service connection creation experience is rolling out over the nex
 
 - [Azure service connection documentation](/azure/devops/pipelines/library/connect-to-azure)
 - [Workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/)
-- [Troublespooting](https://aka.ms/azdo-rm-workload-identity-troubleshooting)
+- [Troubleshooting](https://aka.ms/azdo-rm-workload-identity-troubleshooting)
 
 ### Run children stages when parent stage fails
 

@@ -15,7 +15,7 @@ We’ve improved our support for pasting images into work item comments. You can
 
 ### GitHub Pull Request Insights
 
-We’ve improved the GitHub pull request integration in Azure Boards. In addition to showing open and closed statuses, you can now see if a pull request is in draft mode, needs review, and Checks status. All without needing to open the pull request.
+We've enhanced the integration between GitHub pull requests and Azure Boards. In addition to showing open and closed statuses, you can now see if a pull request is in draft mode, needs review, and Checks status. All without needing to open the pull request.
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo enhanced GitHub pull request insights.](../../media/246-boards-01.gif "gif to enhanced GitHub pull request insights")

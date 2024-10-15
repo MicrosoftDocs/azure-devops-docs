@@ -1,17 +1,17 @@
 ---
-title: Enhanced security and collaboration features
+title: Enhanced security and workflow efficiency
 author: ckanyika
 ms.author: ckanyika
 ms.date: 10/15/2024
-description: Enhanced security and collaboration features
+description: Enhanced security and workflow efficiency
 ---
-# Enhanced security and collaboration features
+# Enhanced security and workflow efficiency
 
-This sprint introduces several improvements aimed at enhancing security and workflow efficiency. Among these improvements, the Service Connection Creation Experience in Azure Pipelines enables teams to configure service connections using pre-existing managed identities with workload identity federation, simplifying the setup and minimizing the risk of over-privileged identities.
+This sprint brings various improvements focused on boosting security and streamlining workflow efficiency. Among these improvements, the Service Connection Creation Experience in Azure Pipelines which allows teams to set up service connections utilizing existing managed identities with workload identity federation. This simplifies configuration and reduces the risk of over-privileged identities.
 
-In GitHub Advanced Security, Pull Request Annotations offer in-line alerts for dependency and code scanning, making it easier for teams to identify and resolve potential issues during code reviews.
+In GitHub Advanced Security, Pull Request Annotations deliver in-line notifications for dependency and code scanning, simplifying the process for teams to detect and address potential problems during code reviews.
 
-Additionally, in Azure Boards, GitHub Pull Request Insights enhance team collaboration by providing real-time visibility into pull request statuses, facilitating faster and more informed decision-making.
+Additionally, in Azure Boards, GitHub Pull Request Insights improve team collaboration by offering real-time updates on pull request statuses, aiding quicker and better decision-making.
 
 Check out the release notes for details.
 
