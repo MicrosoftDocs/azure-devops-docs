@@ -1028,6 +1028,9 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 
 ## Project-level permissions
 
+> [!IMPORTANT]
+> The "View project-level information" permission must be set to "Allow" for users to access project-level resources.  This permission gates all other project-level permissions.
+
 ::: moniker range="azure-devops" 
 
 Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md) or with the [az devops security group](add-manage-security-groups.md) commands. Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
@@ -1037,7 +1040,26 @@ Manage project-level permissions through the [web portal admin context](change-p
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+
+Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+
+::: moniker-end
+
+
+::: moniker-end
+
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range="< azure-devops"
+
+The permissions preview page is only available for Azure DevOps Services.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors.png)
@@ -1561,7 +1583,9 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-* * *
+---
+
+::: moniker-end
 
 ## Analytics views (object-level)  
 
