@@ -288,8 +288,8 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Delay task](/azure/devops/pipelines/tasks/reference/delay-v1)
 * [Invoke Azure Function task](/azure/devops/pipelines/tasks/reference/azure-function-v1)
 * [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
-* [Manual Validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v0)
-* [Publish To Azure Service Bus task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)
+* [Manual Validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1)
+* [Publish To Azure Service Bus task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2)
 * [Query Azure Monitor Alerts task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1)
 * [Query Work Items task](/azure/devops/pipelines/tasks/reference/query-work-items-v0)
 
