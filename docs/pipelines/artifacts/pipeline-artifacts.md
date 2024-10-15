@@ -276,6 +276,43 @@ Not available.
 
 ---
 
+#### Download a specific artifact
+
+The following example demonstrates how to download pipeline artifacts from a specific build version produced by a particular run:
+
+# [YAML](#tab/yaml)
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: myPipeline
+    project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
+    source: '79'
+
+steps:
+- download: myPipeline
+  artifact: drop
+  patterns: '**'
+  displayName: 'Download Pipeline Artifact'
+```
+
+# [YAML (task)](#tab/yaml-task)
+
+```yaml
+steps:
+- task: DownloadPipelineArtifact@2
+  displayName: 'Download Pipeline Artifact'
+  inputs:
+    buildType: specific
+    project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
+    definition: 79
+    buildVersionToDownload: specific
+    pipelineId: 597
+    artifactName: drop
+```
+
+
+
 ## Artifacts in release and deployment jobs
 
 Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `$(Pipeline.Workspace)`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
