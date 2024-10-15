@@ -21,7 +21,7 @@ To run your agent in Docker, you'll pass a few [environment variables](#environm
 
 This feature requires agent version 2.149 or later.
 Azure DevOps 2019 didn't ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
+However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
 
 ::: moniker-end
 
