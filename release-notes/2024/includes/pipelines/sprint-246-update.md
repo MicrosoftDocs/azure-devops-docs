@@ -24,9 +24,9 @@ Please note that the `ubuntu-latest` image label will continue to point to ubunt
 
 ### Use Workload identity federation in Azure integration tests
 
-In June, the Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/). This added the ability for code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5?view=azure-pipelines) tasks to authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
+In June, the Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/). This added the ability for code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) tasks to authenticate with Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
 
-Many customers are using the Azure Identity libraries in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) and [VSTest@3](/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines) tasks.
+Many customers are using the Azure Identity libraries in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4) and [VSTest@3](/azure/devops/pipelines/tasks/reference/vstest-v3) tasks.
 
 You can set the `connectedService` property to an Azure service connection configured with workload identity federation. The `AzurePipelinesCredential` requires `SYSTEM_ACCESSTOKEN` to be set.
 
@@ -79,13 +79,13 @@ Continue to select the subscription that will be used as the deployment scope fo
 
 #### Service Management Reference field
 
-Some organizations require the [Service Management Reference](/graph/api/resources/application?view=graph-rest-1.0#properties) of an App registration to be populated with relevant context information from an ITSM database. If necessary to do so, users can specify this reference at service connection creation time.
+Some organizations require the [Service Management Reference](/graph/api/resources/application#properties) of an App registration to be populated with relevant context information from an ITSM database. If necessary to do so, users can specify this reference at service connection creation time.
 
 #### More information
 
 The new Azure service connection creation experience is rolling out over the next month. For more information, see:
 
-- [Azure service connection documentation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
+- [Azure service connection documentation](/azure/devops/pipelines/library/connect-to-azure)
 - [Workload identity federation](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/)
 - [Troublespooting](https://aka.ms/azdo-rm-workload-identity-troubleshooting)
 
