@@ -27,7 +27,7 @@ See the [Ubuntu 24.04 image readme](https://github.com/actions/runner-images/blo
 
 ### Use Workload identity federation in Azure integration tests
 
-In June, the Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/). This added the ability for code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) tasks to authenticate with Microsoft Entra (e.g. to access Azure) with the `AzurePipelinesCredential` class.
+In June, the Azure Identity libraries for.NET, C++, Go, Java, JavaScript, and Python [added support for workload identity federation](https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/). This added the ability for code executed from the [AzureCLI@2](/azure/devops/pipelines/tasks/reference/azure-cli-v2) and [AzurePowerShell@5](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) tasks to authenticate with Microsoft Entra (for example,to access Azure) with the `AzurePipelinesCredential` class.
 
 Many customers are using the Azure Identity libraries in integration tests invoked from other tasks. We have now added support for `AzurePipelinesCredential` to the [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), [Maven@4](/azure/devops/pipelines/tasks/reference/maven-v4) and [VSTest@3](/azure/devops/pipelines/tasks/reference/vstest-v3) tasks.
 
