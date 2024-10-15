@@ -133,15 +133,14 @@ The following example shows the contents of the **agent-profile.json** file.
   "Stateful": 
   {
       "maxAgentLifetime": "7.00:00:00",
-      "gracePeriodTimeSpan": "00:30:00",
-      "kind": "Stateful"
+      "gracePeriodTimeSpan": "00:30:00"
   }
 }
 ```
 
 * * *
 
-When **Same agent can be used by multiple builds** (`"kind": "stateful"`) is enabled, agents in the pool are considered to be stateful. Stateful pools are configured using the following settings.
+When **Same agent can be used by multiple builds** (`"kind": "stateful"` in resources templates or `{ "stateful": {...} }` in Azure CLI) is enabled, agents in the pool are considered to be stateful. Stateful pools are configured using the following settings.
 
 * **Max time to live for standby agents** (`maxAgetLifetime`) configures the maximum duration an agent in a stateful pool can run before it is shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
 
@@ -205,7 +204,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
 
 Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
-Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"kind": "Automatic"` to configure automatic standby agents. Omit the `ResourcePredictionsProfile` section to disable standby agents. See the following sections for details on how to configure each scaling type.
+Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"kind": "Automatic"` to configure automatic standby agents. See the following sections for details on how to configure each scaling type.
 
 ```azurecli
 az mdp pool create \
