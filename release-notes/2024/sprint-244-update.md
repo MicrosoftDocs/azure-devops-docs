@@ -4,7 +4,7 @@ title:  Retrieve all branches with successful Advanced Security analyses
 author: ckanyika
 ms.author: ckanyika
 ms.date: 9/4/2024
-description: TBD
+description: Retrieve all branches with successful Advanced Security analyses
 ---
 # Retrieve all branches with successful Advanced Security analyses
 

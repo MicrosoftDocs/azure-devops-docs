@@ -38,7 +38,24 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="13"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
+    <td rowspan="13"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
+    <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
+    <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>New pip detection strategy for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Enhanced tag management on work item form </td><td>Boards</td><td>N/A</td></tr>
+    <td>Improved image support in work item comments</td><td>Boards</td><td>N/A</td></tr>
+    <td>GitHub pull request insights</td><td>Boards</td><td>N/A</td></tr>
+    <td>Configure target branches for pull requests</td><td>Repos</td><td>Future</td></tr>
+    <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Future</td></tr>
+    <td>Ubuntu 24.04 on Azure Pipelines hosted agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="14"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
     <td>Pull request branches now visible in Advanced Security branch picker </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Automatic updates for default branch changes in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Generic third-party SARIF support for Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>

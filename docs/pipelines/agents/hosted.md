@@ -45,6 +45,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The Ubuntu-24.04 image is available
 * The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
 * The Ubuntu-22.04 image is available
 * The macOS-14 Sonoma image is available in preview
