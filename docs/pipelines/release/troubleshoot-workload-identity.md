@@ -78,6 +78,7 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | Docker@2                                 | Y |
 | DockerCompose@0                          | Y |
 | DockerCompose@1                          | Y |
+| DotNetCoreCLI@2                          | Y |
 | HelmDeploy@0                             | Azure service connection: Y |
 | HelmDeploy@1                             | Azure service connection: Y |
 | InvokeRESTAPI@1                          | Y |
@@ -87,6 +88,7 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | Kubernetes@1                             | Y |
 | KubernetesManifest@0                     | Use KubernetesManifest@1 |
 | KubernetesManifest@1                     | Y |
+| Maven@4                                  | Y |
 | Notation@0                               | Y |
 | PackerBuild@0                            | Use PackerBuild@1 |
 | PackerBuild@1                            | Y |
@@ -95,6 +97,7 @@ Not all pipelines tasks support workload identity. Specifically, only Azure Reso
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
 | SqlAzureDacpacDeployment@1               | Y |
+| VSTest@3                                 | Y |
 
 ### Verify that workload identity federation is active
 
