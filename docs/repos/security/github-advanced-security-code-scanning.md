@@ -251,20 +251,6 @@ Select an alert for more details, including remediation guidance. Each alert inc
 | Example | The example section shows a simplified example of the identified weakness in your code. |
 | Severity | Severity levels can be low, medium, high, or critical. The severity score is based off of the given Common Vulnerability Scoring System (CVSS) score for the identified Common Weakness Enumeration (CWE). Learn more about how severity is scored at this [GitHub blog post](https://github.blog/changelog/2021-07-19-codeql-code-scanning-new-severity-levels-for-security-alerts/). |
 
-### Managing code scanning alerts on pull requests
-
-If alerts are created for new code changes in a pull request, the alert will reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
-
-You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
-
-[![Screenshot of active depenendency pull request annotation](../media/pull-request-annotation-code-scanning.png)](../media/pull-request-annotation-code-scanning.png#lightbox)
-
-To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
-
-[![Screenshot of closed dependency pull request annotation](../media/pull-request-annotation-code-scanning-dismissed.png)](../media/pull-request-annotation-code-scanning-closed.png#lightbox)
-
-To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab.
-
 ### Viewing alerts for a repository 
 
 Anyone with contributor permissions for a repository can view a summary of all alerts for a repository in the Advanced Security tab under Repos. Select the **Code scanning** tab to view all secret scanning alerts.
