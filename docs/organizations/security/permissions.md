@@ -206,10 +206,21 @@ When you create an organization or project collection in Azure DevOps, the syste
 > To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.
 ::: moniker-end  
 
-#### [Preview page](#tab/preview-page) 
+
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="< azure-devops"
+
+Preview page is not available for on-premises versions.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, new user interface.](media/permissions/collection-admin-permissions-vsts-new.png)
+
+::: moniker-end
 
 #### [Current page](#tab/current-page)
 
@@ -363,9 +374,19 @@ For each project that you create, the system creates the followings project-leve
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="< azure-devops"
+
+Preview page is not available for on-premises versions.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 :::image type="content" source="media/permissions/project-level-groups-new.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps preview version.":::
+
+::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
@@ -654,6 +675,14 @@ Manage organization-level permissions through the [web portal admin context](../
 
 #### [Preview page](#tab/preview-page)
 
+::: moniker range="< azure-devops"
+
+Preview page is not available for on-premises versions.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
@@ -912,6 +941,17 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="4":::
    
+   #### Auditing
+   :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="4":::
+        Audit permissions are assigned by the system and are not configurable.
+    :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+   
    #### Test Plans
    :::column-end:::
 :::row-end:::
@@ -973,6 +1013,8 @@ Manage organization-level permissions through the [web portal admin context](../
    Can enable and disable application connection policies as described in [Change application connection policies](../accounts/change-application-access-policies.md).
    :::column-end:::
 :::row-end:::
+
+::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
@@ -1047,11 +1089,11 @@ Manage project-level permissions through the [web portal admin context](change-p
 ::: moniker-end
 
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
 ::: moniker range="< azure-devops"
 
-The permissions preview page is only available for Azure DevOps Services.
+Preview page is not available for on-premises versions.
 
 ::: moniker-end
 
@@ -1583,7 +1625,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 
 ---
 
-::: moniker-end
 
 ## Analytics views (object-level)  
 
