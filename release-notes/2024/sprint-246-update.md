@@ -11,7 +11,7 @@ This sprint brings various improvements focused on boosting security and streaml
 
 Additionally, we're excited to announce that in Azure Repos, markdown files with mermaid syntax will now render as diagrams in file previews and pull requests, providing clearer visuals for your documentation.
 
-Lastly, GitHub Advanced Security, Pull Request Annotations deliver in-line notifications for dependency and code scanning, simplifying the process for teams to detect and address potential problems during code reviews.
+Lastly, in GitHub Advanced Security, pull request annotations now deliver in-line notifications for dependency and code scanning, simplifying the process for teams to detect and address potential problems during code reviews.
 
 Check out the release notes for details.
 

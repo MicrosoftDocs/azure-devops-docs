@@ -5,7 +5,7 @@ ms.date: 10/16/2024
 ms.topic: include
 ---
 
-### Configure Target Branches for Pull Requests
+### Configure target branches for pull requests
 
 Managing multiple branches in a repository can be challenging, especially when creating new pull requests. With the new Configure Target Branches for Pull Requests feature, you can now specify a list of preferred target branches, ensuring that pull request suggestions are more accurate and relevant. This helps streamline your workflow and reduces the chances of targeting the wrong branch.
 To use this feature, create a .azuredevops/pull_request_targets.yml file in your repository's default branch. This YAML file should contain a list titled pull_request_targets with the branch names or prefixes that match the candidate branches. For example:

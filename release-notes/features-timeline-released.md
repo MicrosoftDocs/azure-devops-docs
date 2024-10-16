@@ -45,12 +45,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Enhanced tag management on work item form </td><td>Boards</td><td>N/A</td></tr>
     <td>Improved image support in work item comments</td><td>Boards</td><td>N/A</td></tr>
-    <td>GitHub Pull Request Insights</td><td>Boards</td><td>N/A</td></tr>
-    <td>Configure Target Branches for Pull Requests</td><td>Repos</td><td>Future</td></tr>
+    <td>GitHub pull request insights</td><td>Boards</td><td>N/A</td></tr>
+    <td>Configure target branches for pull requests</td><td>Repos</td><td>Future</td></tr>
     <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Future</td></tr>
     <td>Ubuntu 24.04 on Azure Pipelines hosted agents</td><td>Pipelines</td><td>Future</td></tr>
     <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
-    <td>New Azure Service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
     <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
 <tr>

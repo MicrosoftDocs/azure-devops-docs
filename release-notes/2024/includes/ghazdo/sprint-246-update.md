@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Pull request annotations for dependency and code scanning
 
-As part of the Advanced Security roadmap, [Pull-request annotations](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation) are now available. You'll receive in-line annotations on any pull requests that use a pipeline associated with your build validation policy, which includes dependency and/or code scanning tasks. 
+As part of the Advanced Security roadmap, [pull-request annotations](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation) are now available. You'll receive in-line annotations on any pull requests that use a pipeline associated with your build validation policy, which includes dependency and/or code scanning tasks. 
 
 No additional opt-in is required beyond creating a build validation policy for the relevant branches. 
 
