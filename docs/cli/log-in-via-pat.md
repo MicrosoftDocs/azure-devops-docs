@@ -37,9 +37,13 @@ Token:
 ```
 
 > [!NOTE]   
-> If you have already signed in with `az login` interactively or if you're using a user name and password, you're not required to provide a token because the `az devops` commands now support sign-in through `az login`. 
+> If you have already signed in with `az login` interactively or if you're using a user name and password, you're not required to provide a token because the `az devops` commands now support sign-in through `az login`.
 
 When you're successfully signed in, this command also can set your default organization to Contoso, provided no default organization is configured.
+
+> [!NOTE]   
+> For Guest Users, only the `az devops login` is supported.
+
 
 ## Pipe PAT on StdIn to az devops login
 

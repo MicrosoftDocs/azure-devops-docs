@@ -22,6 +22,19 @@ monikerRange: '<= azure-devops'
 
 Release triggers are an automation tool to deploy your application. When the trigger conditions are met, the pipeline will deploy your artifacts to the environment/stages you already specified. 
 
+## Classic release pipeline triggers
+
+- Continuous deployment triggers: trigger a releases after a Classic or YAML pipeline completes and a new artifact becomes available.
+
+- Scheduled release triggers: trigger a release at specific times based on a defined schedule.
+
+- Pull request release triggers: a release is triggered whenever a new version of the selected artifact becomes available after being built by the pull request pipeline workflow.
+
+- Stage triggers: configure how each stage in a Classic release is triggered. Options: `After release`, `After stage` (if you have more than one stage), and `Manual only`. 
+    - After release: deploy to the stage every time a new release is created. 
+    - After stage: deploy to the stage after deployments to the selected stage(s) are successful. 
+    - Manual only: only allow manual deployments.
+
 <a id="release-triggers"></a>
 
 ## Continuous deployment triggers

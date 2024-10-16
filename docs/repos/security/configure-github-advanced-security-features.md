@@ -38,12 +38,12 @@ If your organization uses self-hosted agents, there are more requirements:
 
 | Domain URL  | Description |
 | ----------- | ----------- |
-| `https://governance.dev.azure.com/{organization_name}` | For organizations using the dev.azure.com domain to access their DevOps instance  |
-| `https://dev.azure.com/{organization_name}` | For organizations using the dev.azure.com domain to access their DevOps instance |
-| `https://advsec.dev.azure.com/{organization_name}` | For organizations using the dev.azure.com domain to access their DevOps instance |
-| `https://{organization_name}.governance.visualstudio.com/` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
+| `https://governance.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance  |
+| `https://dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
+| `https://advsec.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
+| `https://{organization_name}.governance.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
 | `https://{organization_name}.visualstudio.com`  | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance | 
-| `https://{organization_name}.advsec.visualstudio.com/` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
+| `https://{organization_name}.advsec.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
 
 * Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
@@ -74,7 +74,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
 1. Select **Repositories**. 
-1. Select **Enable all** and see see an estimate for the number of active committers for your organization appear. 
+1. Select **Enable all** and see an estimate for the number of active committers for your organization appear. 
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created projects have Advanced Security enabled upon creation. 
 
@@ -204,7 +204,13 @@ To generate alerts, run your first scan with a pipeline with the code scanning t
 
 --- 
 
-If, for whatever reason, you need to disable Advanced Security, any alerts and state of alerts will be retained for the next time you re-enable Advanced Security for your repository.
+## Set up pull request annotations 
+
+For both dependency scanning and code scanning, annotations are automatically configured for pull requests where a build validation policy applies with dependency scanning and/or code scanning tasks included in your pipeline. For more information on configuring build validation policies, see [Build validation](../git/branch-policies.md#build-validation).
+
+For more information on resolving alerts for pull request branches, see [Managing dependency scanning alerts on pull requests](github-advanced-security-dependency-scanning.md#managing-dependency-scanning-alerts-on-pull-requests) and [Managing code scanning alerts on pull requests](github-advanced-security-code-scanning.md#managing-code-scanning-alerts-on-pull-requests).
+
+If, for whatever reason, you need to disable Advanced Security, any alerts and state of alerts will be retained in the Advanced Security tab for the next time you re-enable Advanced Security for your repository.
 
 ## Next steps
 

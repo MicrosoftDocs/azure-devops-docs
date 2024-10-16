@@ -32,6 +32,12 @@ To manually set up managed identity authentication for your Azure DevOps pipelin
 
 You can also use the REST API for this process.
 
+### Prerequisites for managed identity authentication
+
+- To create a user-assigned managed identity, your Azure account needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) or higher role assignment.
+- To use a managed identity to access Azure resources in your pipeline, [assign the managed identity access to the resource](/entra/identity/managed-identities-azure-resources/how-to-assign-access-azure-resource).  
+
+
 ### Create a managed identity in Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
@@ -136,6 +142,13 @@ This section guides you through setting up an app registration and federated cre
 1. Save your service connection in Azure DevOps.
 
 You can also use the REST API for this process.
+
+
+### Prerequisites for service principal authentication
+
+- To create a service connection, your Azure account needs to be able to create app registrations. 
+    - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
+
 
 ### Create an app registration and federated credentials in Azure portal
 

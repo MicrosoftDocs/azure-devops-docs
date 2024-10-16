@@ -297,9 +297,9 @@
     - name: View pipeline history (Classic)
       href: release/history.md
       displayName: history
-    - name: Classic Build options
-      displayName: classic build, build options
+    - name: Classic pipelines configuration
       href: release/options.md
+      displayName: classic, build options
     - name: Publish & download pipeline artifacts
       href: artifacts/pipeline-artifacts.md
       displayName: publish, download, artifacts
