@@ -16,18 +16,15 @@ monikerRange: '<= azure-devops'
 You can use an Azure Resource Manager service connection to connect to Azure resources such as Azure Key Vault. If you use a Resource Manager service connection, you can use a pipeline to deploy to an Azure resource like an Azure App Service app without authenticating each time.
 
 ::: moniker range="azure-devops"
-You have multiple authentication options for connecting to Azure with a Azure Resource Manager service connection:
+You have multiple authentication options for connecting to Azure with a Azure Resource Manager service connection. The recommended option credential option is always to use workload identity federation. 
 
-* App registration (automatic)
-    * workload identity federation (recommended)
-    * secret
-* App registration or managed identity (manual)
-    * workload identity federation (recommended)
-    * secret
-* Managed identity
-* Public profile
+* App registration (automatic) with a workload identity federation  or a secret. 
+* App registration or managed identity (manual) with workload identity federation or a secret. 
+* Publish profile (not recommended).
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
 
 <a name="create-an-azure-resource-manager-service-connection-using-workload-identity-federation"></a>
 
@@ -44,7 +41,7 @@ We recommend that you use this approach if all the following items are true for 
 
 For more information, see [Workload identity federation](/entra/workload-id/workload-identity-federation).
 
-### Create an app registration with workload identity federation (automatic)
+### Create an Azure Resource Manager app registration with workload identity federation (automatic)
 
 <a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation"></a>
 
@@ -90,7 +87,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
 
-### Create an app registration with a secret (automatic)
+### Create an Azure Resource Manager app registration with a secret (automatic)
 
 With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a secret for authentication. 
 
@@ -145,7 +142,7 @@ You can use this approach if all the following items are true for your scenario:
 After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
 
-## Create an app registration or managed identity (manual)
+## Create an Azure Resource Manager app registration or managed identity (manual)
 
 Use this option to manually create a service connection that uses an existing app registration or managed identity for authentication with workload identity federation. 
 
@@ -224,6 +221,8 @@ Use this option to manually create a service connection that uses an existing ap
 
 After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 <a name="use-msi"></a>
@@ -298,7 +297,7 @@ For more information about the process, see [Troubleshoot Azure Resource Manager
 
 <a name="use-publish-profile"></a>
 
-## Create a service connection using a publish profile
+## Create a Azure Resource Manager service connection using a publish profile
 
 You can create a service connection by using a publish profile. You can use a publish profile to create a service connection to an Azure App Service.
 
