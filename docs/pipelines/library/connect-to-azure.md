@@ -29,8 +29,6 @@ You have multiple authentication options for connecting to Azure with a Azure Re
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
 <a name="create-an-azure-resource-manager-service-connection-using-workload-identity-federation"></a>
 
 ## Create an Azure Resource Manager app registration (automatic)
@@ -48,6 +46,8 @@ For more information, see [Workload identity federation](/entra/workload-id/work
 
 ### Create an app registration with workload identity federation (automatic)
 
+<a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation"></a>
+
 With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a workload identity federation for authentication.
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
@@ -60,7 +60,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 
 1. Select **App registration (automatic)** with the credential **Workload identity federation**.
 
-   :::image type="content" source="media/select-app-registration-workload-identity-service.png" alt-text="Screenshot of Workload Identity federation app registration (automatic) authentication method selection.":::
+   :::image type="content" source="media/select-app-registration-workload-identity-service.png" alt-text="Screenshot of app registration (automatic) authentication method selection with workload identity selected.":::
 
 1. Select a **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
 
