@@ -16,7 +16,7 @@ When you [troubleshoot an Azure Resource Manager workload identity service conne
 
 We recommend that you [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) before you begin a manual configuration.
 
-There are two options for authentication: use a managed identity or use a service principal with an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+There are two options for authentication: use a managed identity or use an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
 
 #### [Managed identity](#tab/managed-identity)
 
