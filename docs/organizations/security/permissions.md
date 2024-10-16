@@ -675,13 +675,6 @@ Manage organization-level permissions through the [web portal admin context](../
 
 #### [Preview page](#tab/preview-page)
 
-::: moniker range="< azure-devops"
-
-Preview page is not available for on-premises versions.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
@@ -1014,8 +1007,6 @@ Preview page is not available for on-premises versions.
    :::column-end:::
 :::row-end:::
 
-::: moniker-end
-
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]
@@ -1025,7 +1016,7 @@ Preview page is not available for on-premises versions.
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
-* * *
+---
 
 ::: moniker-end
 
