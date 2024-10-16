@@ -9,7 +9,11 @@ description: Enhanced security and workflow efficiency
 
 This sprint brings various improvements focused on boosting security and streamlining workflow efficiency. Among these improvements, the Service Connection Creation Experience in Azure Pipelines. This enables teams to set up service connections utilizing existing managed identities with workload identity federation. It also simplifies configuration and reduces the risk of over-privileged identities.
 
-Additionally, GitHub Advanced Security, Pull Request Annotations deliver in-line notifications for dependency and code scanning, simplifying the process for teams to detect and address potential problems during code reviews.
+Additionally, we're excited to announce that in Azure Repos, markdown files with mermaid syntax will now render as diagrams in file previews and pull requests, providing clearer visuals for your documentation.
+
+Lastly, GitHub Advanced Security, Pull Request Annotations deliver in-line notifications for dependency and code scanning, simplifying the process for teams to detect and address potential problems during code reviews.
+
+
 
 Check out the release notes for details.
 
