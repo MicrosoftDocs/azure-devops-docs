@@ -220,6 +220,35 @@ steps:
   displayName: Perform CodeQL Analysis
  ```
 
+### Pull request annotations 
+The integration of dependency scanning within the development workflow is crucial for maintaining codebase security. GitHub Advanced security for Azure DevOps supports this integration by providing annotations within Pull Requests to highlight dependency vulnerabilities, ensuring developers can address security concerns promptly and without leaving their development environment.
+
+### Integrating Dependency Scanning Annotations
+To benefit from the dependency scanning annotations:
+
+1. **Configure Build Validation Policies**: Set up a build validation policy in Azure DevOps for the branches you want to monitor. Include dependency scanning tasks within your pipeline configuration to ensure scans are performed with each pull request. For more information on build validation policy, please refer to the documentation [Setting Up Build Validation Policy in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#build-validation).
+2. **Automated Annotations**: When a developer raises a pull request that activates a pipeline associated with a build validation policy, Azure DevOps automatically generates in-line annotations for any identified dependency vulnerabilities.
+3. **No Additional Opt-In**: Once the build validation policy is established, there are no extra steps. The annotations will appear automatically for all subsequent pull requests that meet the criteria.
+#### Using Dependency Scanning Annotations
+- **In-line Information**: In the pull request view, annotations will appear alongside the code in question, pinpointing the exact locations of potential vulnerabilities.
+- **Detailed Analysis**: By clicking on `Show more details` within an annotation, developers are taken to the alert detail view. This view provides comprehensive information about the vulnerability, including its severity, impact, and recommended remediation steps.
+- **Streamlined Remediation Workflow**: With all the necessary information readily available within the PR, developers can address and resolve vulnerabilities quickly and efficiently.
+
+[![Screenshot of pr annotation detail.](./media/pr-annotation-detail.png)](./media/pr-annotation-detail.png#lightbox)
+
+Code scanning is a critical step in ensuring the integrity and security of the software development lifecycle. Github Advanced security for Azure DevOps enhances this process by incorporating code scanning results directly into pull requests (PRs) through annotations. This feature enables developers to efficiently identify and address security concerns within their code.
+### Setting up CodeQL Annotation
+To take advantage of code scanning annotations within Azure DevOps, follow these steps:
+1. **Establish Build Validation Policies**: Define and apply a build validation policy for the branches you wish to secure. Ensure that your pipeline includes code scanning tasks to perform automatic scans during pull request evaluations. For more information on build validation policy, please refer to the documentation [Setting Up Build Validation Policy in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#build-validation).
+2. **Automated Annotation Process**: When a pull request is created and triggers the predefined pipeline, Azure DevOps automatically annotates the code where potential issues are detected, based on the results of the code scan.
+3. **Seamless Integration**: There's no need for developers to opt-in separately; the annotations will be enabled through the existing build validation policy setup.
+#### Using CodeQL Annotations
+- **Visibility and Accessibility**: Annotations are displayed next to the affected lines in the pull request files, offering immediate insight into where potential problems are located.
+- **In-Depth Information**: By selecting `Show more details` on a particular annotation, developers will be redirected to a detailed page concerning the identified issue, providing essential information such as its nature, risk level, and corrective measures.
+- **Efficient Issue Resolution**: The integration of annotations into the PR streamlines the process of reviewing and fixing code, enabling developers to swiftly act on security findings without disrupting their workflow.
+
+[![Screenshot of pr annotation detail.](./media/pr-annotation-detail.png)](./media/pr-annotation-detail.png#lightbox)
+
 ## Code scanning alerts
 
 [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) code scanning alerts include code scanning flags by repository that alert of code-level application vulnerabilities. 
@@ -280,6 +309,21 @@ To dismiss an alert:
 [![Screenshot of how to dismiss a code scanning alert.](./media/code-scanning-dismiss-alert.png)](./media/code-scanning-dismiss-alert.png#lightbox)
 
 This action only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
+
+### Managing code scanning alerts on pull requests 
+
+If alerts are created for new code changes in a pull request, the alert will reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
+
+You can the affected lines of code, see a summary of the finding, and resolve the annotation in the Overview section.
+
+[![Screenshot of pr annotation detail.](./media/pull-request-annotation-code-scanning.png)](./media/pull-request-annotation-code-scanning.png#lightbox)
+
+To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
+
+To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab.
+
+> ![TIP]
+> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference.
 
 ## Troubleshooting code scanning 
 
