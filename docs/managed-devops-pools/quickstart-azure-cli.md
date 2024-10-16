@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
-ms.date: 09/17/2024
+ms.date: 10/16/2024
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
 ---
@@ -147,7 +147,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 ## Prepare the Managed DevOps Pool configuration files
 
-The `mdp pool create` method has four parameters that take JSON values that configure different aspects of the pool.
+The `mdp pool create` method has several parameters that take JSON values that configure different aspects of the pool.
 
 * `agent-profile` specifies whether the pool is stateful or stateless, and contains the standby agent schedule. It is a dictionary with a single key named either `Stateful` or `Stateless`, depending on your desired agent configuration. For more information on `agent-profile` properties, see [Configure scaling](./configure-scaling.md?tabs=azure-cli).
 * `fabric-profile` specifies the agent size, VM images, OS disk, and attached storage. For more information on the `fabric-profile` properties, see [Configure pool settings](./configure-pool-settings.md?tabs=azure-cli) and [Configure additional storage](./configure-storage.md?tabs=azure-cli).
