@@ -206,7 +206,7 @@ To generate alerts, run your first scan with a pipeline with the code scanning t
 
 ## Set up pull request annotations 
 
-For both dependency scanning and code scanning, annotations are automatically configured for pull requests where a build validation policy applies with dependency scanning and/or code scanning tasks included in your pipeline. For more information on configuring build validation policies, see [Build validation](../../git/branch-policies#build-validation).
+For both dependency scanning and code scanning, annotations are automatically configured for pull requests where a build validation policy applies with dependency scanning and/or code scanning tasks included in your pipeline. For more information on configuring build validation policies, see [Build validation](../git/branch-policies.md#build-validation).
 
 For more information on resolving alerts for pull request branches, see [Managing dependency scanning alerts on pull requests](github-advanced-security-dependency-scanning.md#managing-dependency-scanning-alerts-on-pull-requests) and [Managing code scanning alerts on pull requests](github-advanced-security-code-scanning.md#managing-code-scanning-alerts-on-pull-requests).
 
