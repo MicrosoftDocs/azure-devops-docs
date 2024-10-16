@@ -213,7 +213,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 ### Add link dialog
 
-Azure Boards supports many link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies. Create a query that's uses the tag, and then add the required links.
+Azure Boards supports many link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies. Create a query that uses the tag, and then add the required links.
 
 The following **Add link** dialog illustrates how two work items are linked by using the Successor link type.
 
