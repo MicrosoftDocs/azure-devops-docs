@@ -57,9 +57,9 @@ Use backlogs to do the following tasks:
 
 ## Product and portfolio backlogs
 
-Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information you need to track and share with your team.
+Backlogs present work items as lists. A *product backlog* represents r project plan, the roadmap for what r team plans to deliver. It also provides a repository of all the information  need to track and share with r team.
 
-In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* allows you to group and organize your backlog into a hierarchy. YOu can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
+In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* allows  to group and organize your backlog into a hierarchy. You can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
 
 ::: moniker range=">= azure-devops-2019"
 
