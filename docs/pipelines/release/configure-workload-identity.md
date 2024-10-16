@@ -18,9 +18,9 @@ We recommend that you [try the automated approach](../library/connect-to-azure.m
 
 There are two options for authentication: use a managed identity or use an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
 
-#### [Managed identity](#tab/managed-identity)
+## Set a workload identity service connection 
 
-## Set a workload identity service connection to use managed identity authentication
+#### [Managed identity](#tab/managed-identity)
 
 To manually set up managed identity authentication for your Azure DevOps pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
 
@@ -168,8 +168,6 @@ You can also use the REST API for this process.
 1. Select **Verify and save**. Once this step successfully completes, your managed identity is fully configured. 
 
 #### [App registration](#tab/app-registration)
-
-## Set a workload identity service connection with app registration
 
 This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. You'll need to complete these steps in the following order:
 
