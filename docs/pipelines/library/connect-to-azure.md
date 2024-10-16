@@ -309,9 +309,7 @@ You can create a service connection by using a publish profile. You can use a pu
 
    :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot of Azure Resource Manager selection.":::
 
-1. Select **Publish profile** for the authentication method and select **Next**.
-
-   :::image type="content" source="media/new-service-connection-publish-profile.png" alt-text="Screenshot of Publish profile authentication method selection.":::
+1. Select **Publish profile** for the identity type.
 
 1. Enter the following parameters:
 
@@ -329,28 +327,13 @@ After the new service connection is created:
 
    * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
    * If you use the service connection in a YAML file, copy the connection name and paste it into your code as the value for `azureSubscription`.
-<a name="connect-govt"></a>
-
-## Connect to an Azure Government Cloud
-
-For information about connecting to an Azure Government Cloud, see [Connect from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts).
-
-<a name="connect-stack"></a>
-
-## Connect to Azure Stack
-
-For information about connecting to Azure Stack, see these articles:
-
-* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure by using a VPN](/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure by using Azure ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
 ::: moniker-end
 
 
 ## Convert an existing Azure Resource Manager service connection to use workload identity federation
 
-You can quickly convert an existing Azure Resource Manager service connection to use workload identity federation for authentication instead of a service principal. You can use the service connection conversion tool in Azure DevOps if your service connection meets these requirements:
+You can quickly convert an existing Azure Resource Manager service connection to use workload identity federation for authentication instead of a secret. You can use the service connection conversion tool in Azure DevOps if your service connection meets these requirements:
 
 * Azure DevOps originally created the service connection. If you manually create your service connection, you can't convert the service connection by using the service connection conversion tool because Azure DevOps doesn't have permissions to modify its own credentials.
 * Only one project uses the service connection. You can't convert [cross-project service connections](../policies/permissions.md#set-service-connection-project-permissions).
@@ -367,7 +350,7 @@ To convert a service connection:
 
     :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot that shows selecting convert for federated credentials.":::
     
-    If you have an existing service principal credential with an expired secret, you see a different option to convert. 
+    If you have an existing credential with an expired secret, you see a different option to convert. 
 
     :::image type="content" source="media/secret-expired-workload-convert.png" alt-text="Screenshot that shows option to convert to use federated credentials when you have an expired certificate. ":::
 
@@ -471,7 +454,7 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
 }
 ```
 
-### Revert an existing Azure Resource Manager Service connection that uses a service principal secret
+### Revert an existing Azure Resource Manager Service connection that uses a secret
 
 You can revert a converted automatic service connection with its secret for seven days. After seven days, manually create a new secret.
 
@@ -494,9 +477,9 @@ To revert a service connection:
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-## Create an Azure Resource Manager service connection that uses a service principal secret
+## Create an Azure Resource Manager service connection that uses an app registration secret
 
-You can set up a service connection to authenticate with Azure resources by using a service principal secret. This approach is useful when you need to further limit permissions for Azure resources that users access through the service connection. 
+You can set up a service connection to authenticate with Azure resources by using an app registration secret. This approach is useful when you need to further limit permissions for Azure resources that users access through the service connection. 
 
 You can choose to configure the service connection manually or automatically. It's best practice to use the automatic approach if you signed in as the owner of the Azure Pipelines organization and the Azure subscription, and you don't need to further limit permissions for Azure resources that users access through the service connection.
 
@@ -684,6 +667,23 @@ If necessary, modify the service principal to expose the appropriate permissions
 For more information about authenticating by using a service principal, see [Use role-based access control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal) or the blog post [Automate an Azure resource group deployment by using a service principal in Visual Studio](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
 
 ::: moniker-end
+
+<a name="connect-govt"></a>
+
+## Connect to an Azure Government Cloud
+
+For information about connecting to an Azure Government Cloud, see [Connect from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts).
+
+<a name="connect-stack"></a>
+
+## Connect to Azure Stack
+
+For information about connecting to Azure Stack, see these articles:
+
+* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
+* [Connect Azure Stack to Azure by using a VPN](/azure/azure-stack/azure-stack-connect-vpn)
+* [Connect Azure Stack to Azure by using Azure ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
+
 
 For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
