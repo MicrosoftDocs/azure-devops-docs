@@ -67,7 +67,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
     <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Revised naming convention for Azure service connections and App registrations</td><td>Pipelines</td><td>Future</td></tr>
     <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
     <td>Test and feedback extension in Manifest V3 (Edge release)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
