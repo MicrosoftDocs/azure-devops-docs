@@ -38,7 +38,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="14"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
+    <td rowspan="13"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
     <td>Pull request branches now visible in Advanced Security branch picker </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Automatic updates for default branch changes in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Generic third-party SARIF support for Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -50,7 +50,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
     <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Revised naming convention for Azure service connections and App registrations</td><td>Pipelines</td><td>Future</td></tr>
     <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
     <td>Test and feedback extension in Manifest V3 (Edge release)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
