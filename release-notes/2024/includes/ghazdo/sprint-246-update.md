@@ -19,7 +19,6 @@ Clicking on `Show more details` in the annotation brings you to the alert detail
 
 ### New pip detection strategy for dependency scanning 
 
-Dependency scanning now uses a new detection strategy for Python: PipReport, based on the [pip installation report](https://pip.pypa.io/en/stable/reference/installation-report/) functionality. This update improves accuracy by respecting environment specifiers to determine the exact versions a real `pip install` would retrieve. By default, the detector uses `pypi.org` to build the dependency graph. Optionally, you can set a pipeline environment variable, `PIP_INDEX_URL` to construct the dependency graph instead.  Make sure the `PipAuthenticate@1` pipeline task is configured so that your feed can be accessed.
+Dependency scanning now uses a new detection strategy for Python: PipReport, based on the [pip installation report](https://pip.pypa.io/en/stable/reference/installation-report/) functionality. This update improves accuracy by respecting environment specifiers to determine the exact versions that a real `pip install` run would retrieve. By default, the detector uses `pypi.org` to build the dependency graph. Optionally, you can set a pipeline environment variable, `PIP_INDEX_URL` to construct the dependency graph instead. If there are authentication issues accessing your feed, you may need the `PipAuthenticate@1` pipeline task set up so that your feed can be accessed.
 
-For more information on the detection strategy, see the [Pip Detection](https://github.com/microsoft/component-detection/blob/main/docs/detectors/pip.md#installation-report-pipreportdetector) documentation.
-
+For more information on detection strategy, see [Pip Detection](https://github.com/microsoft/component-detection/blob/main/docs/detectors/pip.md#installation-report-pipreportdetector) documentation.
