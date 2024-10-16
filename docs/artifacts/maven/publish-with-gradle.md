@@ -1,30 +1,30 @@
 ---
-title: Publish a Maven artifact using Gradle
-description: How to publish Maven artifacts using Gradle 
+title: Publish artifacts using Gradle
+description: Learn how to connect to a feed and publish your packages with Gradle.
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 05/08/2023
+ms.date: 10/16/2024
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Publish Maven artifacts using Gradle
+# Publish artifacts with Gradle
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this article, you will learn how to connect to an Azure Artifacts feed and publish Maven artifacts using Gradle.
+With Azure Artifacts, you can efficiently manage your dependencies from a single feed, storing various types of packages in one place. Azure Artifacts enables developers to publish and consume packages from different sources, and sharing them according to the feed's visibility settings. In this article, you'll learn how to connect to an Azure Artifacts feed and publish your packages using Gradle.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a feed](../concepts/feeds.md#create-a-public-feed) if you don't have one already.
+- [Create a feed](../concepts/feeds.md#create-a-public-feed) if you don't have one already.
 
 - Download and install [Gradle](https://docs.gradle.org/current/userguide/installation.html).
 
-- Install [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- Install the [Java Development Kit (JDK)](https://jdk.java.net/) version 8 or higher.
 
 ## Project setup
 
