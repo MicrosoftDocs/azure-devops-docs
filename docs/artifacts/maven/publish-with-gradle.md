@@ -20,41 +20,46 @@ With Azure Artifacts, you can efficiently manage your dependencies from a single
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- [Create a feed](../concepts/feeds.md#create-a-public-feed) if you don't have one already.
+- [Create a feed](../get-started-maven.md#create-a-feed) if you don't have one already.
 
 - Download and install [Gradle](https://docs.gradle.org/current/userguide/installation.html).
 
 - Install the [Java Development Kit (JDK)](https://jdk.java.net/) version 8 or higher.
 
-## Project setup
+## Create a personal access token
 
-Before setting up your project, ensure that you have installed Gradle and added the Maven Settings plugin to your *build.gradle* file as follows:
-
-```groovy
-plugins {
-  id "net.linguica.maven-settings" version "0.5"
-}
-```
-
-### Create a personal access token
+To authenticate with your feed, you must first create a personal access token with packaging *Read & Write* scopes:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **User settings**, and then select **Personal access tokens**.
 
-    :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
+    :::image type="content" source="media/create-pat.png" alt-text="A screenshot showing how to locate the personal access token button.":::
 
-1. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope.
+1. Select **New Token** and fill out the required fields. Be sure to select the **Packaging** > **Read & write** scope.
 
-1. Select **Create** when you are done. Copy your token and save it in a secure location.
+1. Select **Create** when you're done. Copy your token and save it in a secure location, as you'll need it for the next step.
 
-    :::image type="content" source="media/gradle-pat.png" alt-text="Screenshot showing how to create a new personal access token with packaging read & write scopes.":::  
+    :::image type="content" source="media/gradle-pat.png" alt-text="A screenshot demonstrating how to create a new personal access token with packaging read & write scopes.":::  
 
-### Configure build.gradle
+## Project setup
+
+# [Older versions](#tab/older)
+
+Before setting up your project, make sure you have installed Gradle and included the Maven Settings plugin to your *build.gradle* file as follows:
+
+```groovy
+plugins {
+  id 'net.linguica.maven-settings' version '0.5'
+  id 'maven-publish'
+}
+```
+
+#### Configure build.gradle
 
 1. If a *build.gradle* file does not exist in the root of your project, create a new file and name it: *build.gradle*.
 
-1. Add the following section to your *build.gradle* file in both the **repositories** and **publishing.repositories** containers. 
+1. Add the following section to your *build.gradle* file within both the **repositories** and **publishing.repositories** containers: 
 
     ```groovy
     maven {
@@ -65,46 +70,46 @@ plugins {
         }
     }
     ```
-1. Here's an example of what your *build.gradle* file should look like:
 
-    ```groovy
-    publishing { 
-        publications { 
-            myPublication(MavenPublication) { 
-                groupId '<GROUP_ID>' 
-                artifactId '<ARTIFACT_ID>' 
-                version '<VERSION_NUMBER>'           
-                artifact '<PATH_TO_YOUR_JAR_FILE>'   
-            } 
-        } 
-    
-        // Repositories to publish artifacts 
-        repositories { 
-            maven {
-                url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
-                name '<FEED_NAME>'
-                authentication {
-                    basic(BasicAuthentication)
-                }
-            }
-        } 
-    } 
-     
-    // Repositories to fetch dependencies
+Here's an example of what your *build.gradle* file should look like:
+
+```groovy
+publishing { 
+    publications {
+        library(MavenPublication) {
+            from components.java
+        }
+    }
+
+    // Repositories to publish artifacts 
     repositories { 
-            maven {
-                url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
-                name '<FEED_NAME>'
-                authentication {
-                    basic(BasicAuthentication)
-                }
+        maven {
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+            name '<FEED_NAME>'
+            authentication {
+                basic(BasicAuthentication)
             }
+        }
     } 
-    ```
+} 
+    
+// Repositories to fetch dependencies
+repositories { 
+        maven {
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+            name '<FEED_NAME>'
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
+} 
+```
 
-### Configure settings.xml
+#### Configure settings.xml
 
-1. Open your *settings.xml* file in your home directory and add the following snippet. Replace the placeholders with your feed name, organization name, and the personal access token you created earlier.
+1. Open the *settings.xml* file located in the *.m2* directory of your home folder (typically found at ~/.m2/settings.xml on macOS and Linux, and at Users\<YourUsername>\.m2\settings.xml on Windows). If the file does not exist, you can create a new one.
+
+1. Add the following snippet, replacing the placeholders with your feed name, organization name, and the personal access token you created earlier.
 
     ```xml
     <server>
@@ -113,6 +118,8 @@ plugins {
         <password>[PERSONAL_ACCESS_TOKEN]</password>
     </server>
     ```
+
+---
 
 ## Publish artifacts
 
