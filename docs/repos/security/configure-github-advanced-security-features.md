@@ -206,12 +206,9 @@ To generate alerts, run your first scan with a pipeline with the code scanning t
 
 ## Set up pull request annotations 
 
-> ![TIP]
-> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference.
-
 For both dependency scanning and code scanning, annotations are automatically configured for pull requests where a build validation policy applies with dependency scanning and/or code scanning tasks included in your pipeline. For more information on build validation policy, see [Build validation](../git/branch-policies#build-validation).
 
-For more information on resolving alerts on pull request branches, see [Managing dependency scanning alerts on pull requests](github-advanced-security-dependency-scanning.md#managing-dependency-scanning-alerts-on-pull-requests) and [Managing code scanning alerts on pull requests](github-advanced-security-code-scanning.md#managing-code-scanning-alerts-on-pull-requests).
+For more information on resolving alerts for pull request branches, see [Managing dependency scanning alerts on pull requests](github-advanced-security-dependency-scanning.md#managing-dependency-scanning-alerts-on-pull-requests) and [Managing code scanning alerts on pull requests](github-advanced-security-code-scanning.md#managing-code-scanning-alerts-on-pull-requests).
 
 If, for whatever reason, you need to disable Advanced Security, any alerts and state of alerts will be retained in the Advanced Security tab for the next time you re-enable Advanced Security for your repository.
 
