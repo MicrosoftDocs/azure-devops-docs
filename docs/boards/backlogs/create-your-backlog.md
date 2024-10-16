@@ -70,7 +70,7 @@ From your web browser, do the following steps to open your product backlog.
 
 1. (Optional) To select which columns display and in what order, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md).
 
-   :::image type="content" source=".media/create-backlog/open-column-options.png" alt-text="Screenshot showing Column Options button selection.":::
+   :::image type="content" source="media/create-backlog/open-column-options.png" alt-text="Screenshot showing Column Options button selection.":::
 
 ::: moniker-end
 
