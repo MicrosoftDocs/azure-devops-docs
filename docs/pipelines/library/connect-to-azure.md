@@ -326,8 +326,6 @@ After the new service connection is created:
    * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
    * If you use the service connection in a YAML file, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
-::: moniker-end
-
 
 ## Convert an existing Azure Resource Manager service connection to use workload identity federation
 
@@ -471,88 +469,14 @@ To revert a service connection:
 1. Select **Revert** again to confirm your choice.
 
 
+::: moniker-end
+
 <a name="create-an-azure-resource-manager-service-connection-with-an-existing-service-principal"></a>
+
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-## Create an Azure Resource Manager service connection that uses an app registration secret
-
-You can set up a service connection to authenticate with Azure resources by using an app registration secret. This approach is useful when you need to further limit permissions for Azure resources that users access through the service connection. 
-
-You can choose to configure the service connection manually or automatically. It's best practice to use the automatic approach if you signed in as the owner of the Azure Pipelines organization and the Azure subscription, and you don't need to further limit permissions for Azure resources that users access through the service connection.
-
-We recommend that you use this approach if all the following items are true for your scenario:
-
-* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
-* You don't need to further limit permissions for Azure resources that users access through the service connection.
-* You're not connecting to [Azure Stack](#connect-stack) or to an [Azure Government Cloud](#connect-govt).
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of Team Foundation Server.
-
-To create the service connection:
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
-
-   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
-
-1. Select **Service principal (automatic)** and **Next**.
-
-    :::image type="content" source="media\new-azure-resource-manager-conn-sp-auto-selection.png" alt-text="Screenshot that shows selecting a service principal (automatic) authentication method selection.":::
-
-1. Select the **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
-
-    * For the **Subscription** scope, enter the following parameters:
-
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription Id** | Required. Enter the Azure subscription ID. |
-        | **Subscription Name** | Required. Enter the Azure subscription name. |
-    
-    * For the **Management Group** scope, enter the following parameters, select the Azure management group.
-    
-    * For the **Machine Learning Workspace** scope, enter the following parameters:
-
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription Id** | Required. Enter the Azure subscription ID. |
-        | **Subscription Name** | Required. Enter the Azure subscription name. |
-        | **Resource Group** | Required. Select the resource group containing the workspace. |
-        | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
-        | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |
-
-1. Enter a **Service connection name**.
-1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-1. Select **Save**.
-
-After the new service connection is created:
-
-   * If you use the classic editor, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-   * If you use a YAML file, copy the connection name into your code as the value for `azureSubscription`.
-
-To deploy to a specific Azure resource, add more information about the resource to the task:
-
-   * If you use the classic editor, select data to add to the task. For example, select the App Service name.
-   * If you use a YAML file, go to the resource in the Azure portal. Copy the data that you need and paste into your task code. For example, to deploy a web app, copy the name of the App Service app and paste it as the value for `WebAppName` in the task YAML.
-
-> [!NOTE]
->
-> When you follow this approach, Azure DevOps *connects with Microsoft Entra ID and creates an app registration with a secret that's valid for three months*. When the service connection is about to expire, Microsoft Entra ID displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
->
-> To refresh a service connection, in the Azure DevOps portal, edit the connection, and then select **Verify**. After you save the edit, the service connection is valid for another three months.
->
-> We recommend that you use workload identity federation instead of creating a secret. If you use workload identity federation, you don't need to rotate secrets, and app registration maintains its intended purpose. To start using workload identity federation, go to the service connection details page and select **Convert**. The service connection is converted to use workload identity federation instead of a secret. For more information, see [Convert an existing Azure Resource Manager service connection to use workload identity federation](#convert-an-existing-azure-resource-manager-service-connection-to-use-workload-identity-federation).
->
-
-For more information, see [Troubleshoot an Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
-
-If you have problems using this approach (such as no subscriptions shown in the dropdown list) or if you want to limit user permissions, you can instead use a [service principal](#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) or a [virtual machine with a managed identity](#use-msi).  
-
-
-### Create an Azure Resource Manager service connection that uses an existing service principal
+## Create an Azure Resource Manager service connection that uses an existing service principal
 
 If you want to use a predefined set of access permissions and you don't already have a service principal defined for this purpose, follow one of these tutorials to create a new service principal:
 
@@ -644,6 +568,7 @@ To create a service connection that uses an existing service principal:
             | --------- | ----------- |
             | **Management Group Id** | Required. Enter the Azure management group ID. |
             | **Management Group Name** | Required. Enter the Azure management group name. |
+
     1. Enter the **Service principal Id**.
     1. Select the credential type: 
         * **Service principal key**: Enter the **Service principal key** (password).
@@ -654,7 +579,6 @@ To create a service connection that uses an existing service principal:
     1. Optionally, select **Allow all pipelines to use this connection**. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
     1. Select **Save** to create the service connection.
     
-
 After the new service connection is created:
 
    * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
@@ -664,7 +588,10 @@ If necessary, modify the service principal to expose the appropriate permissions
 
 For more information about authenticating by using a service principal, see [Use role-based access control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal) or the blog post [Automate an Azure resource group deployment by using a service principal in Visual Studio](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
 
+For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+
 ::: moniker-end
+
 
 <a name="connect-govt"></a>
 
