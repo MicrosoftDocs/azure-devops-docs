@@ -170,7 +170,7 @@ Use this option to manually create a service connection that uses an existing ap
 
    | Parameter | Description |
    | --------- | ----------- |
-   | **Issuer** | Required. DevOps automatically creates the issuer URL is automatically created |
+   | **Issuer** | Required. DevOps automatically creates the issuer URL. |
    | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
    | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
 

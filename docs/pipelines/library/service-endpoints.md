@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/26/2024
+ms.date: 10/16/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -55,9 +55,10 @@ To create a service connection for Azure Pipelines:
    
 1. Select **Save** or **Verify and save**.
 
-The following example shows an Azure Resource Manager connection to an Azure subscription. You use the **Service connection name** as the `azureSubscription` or equivalent subscription name value in pipeline tasks.
+The following example shows an Azure Resource Manager connection to an Azure subscription. You use the **Service connection name** as the `MyAzureSubscription1
+` or equivalent subscription name value in pipeline tasks.
 
-:::image type="content" source="media/new-azure-resource-manager-connection.png" alt-text="Screenshot of the New Azure service connection screen.":::
+:::image type="content" source="media/azure-resource-manager-subscription.png" alt-text="Screenshot of the New Azure service connection screen with managed identity.":::
 
 ## View a service connection
 
