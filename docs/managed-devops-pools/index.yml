@@ -70,6 +70,8 @@ landingContent:
             url: monitor-pool.md
           - text: Diagnostic logs
             url: diagnostics.md
+          - text: Reliability
+            url: reliability-managed-devops-pools.md
   - title: Manage costs
     linkLists:
       - linkListType: concept

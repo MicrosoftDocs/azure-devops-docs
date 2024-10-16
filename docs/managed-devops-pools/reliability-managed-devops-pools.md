@@ -35,3 +35,4 @@ You can save the configuration of your existing pool and create [ARM templates](
 ## Related content
 
 - [Azure reliability documentation](/azure/reliability/overview)
+- [Azure DevOps data protection overview](/azure/devops/organizations/security/data-protection)
