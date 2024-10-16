@@ -233,19 +233,17 @@ After the new service connection is created, copy the connection name and paste 
 >
 > To use a managed identity to authenticate, you must use a self-hosted agent on an Azure virtual machine (VM).
 
-You can configure self-hosted agents on Azure VMs to use an [Azure managed identity](/azure/active-directory/managed-service-identity/overview) in Microsoft Entra ID. In this scenario, you use the system-assigned managed identity (service principal) to grant the agents access to any Azure resource that supports Microsoft Entra ID, such as an instance of Azure Key Vault.
+You can configure self-hosted agents on Azure VMs to use an [Azure managed identity](/azure/active-directory/managed-service-identity/overview) in Microsoft Entra ID. In this scenario, you use the agent-assigned managed identity to grant the agents access to any Azure resource that supports Microsoft Entra ID, such as an instance of Azure Key Vault.
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
+1. Select **New service connection**, then select **Azure Resource Manager**.
 
    :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
 
-1. Select **Managed identity** for the authentication method.
-
-   :::image type="content" source="media/resource-manager-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity authentication method selection.":::
+1. Select **Managed identity (agent assigned)** for the identity type.
 
 1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or Government cloud options).
 
