@@ -25,10 +25,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-246-update-links](includes/ghazdo/sprint-246-update-links.md)]
 
-### Wiki
-
-[!INCLUDE [sprint-246-update-links](includes/wiki/sprint-246-update-links.md)]
-
 ### Azure Boards:
 
 [!INCLUDE [sprint-246-update-links](includes/boards/sprint-246-update-links.md)]
@@ -41,9 +37,9 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-246-update-links](includes/pipelines/sprint-246-update-links.md)]
 
-### Azure Test Plans:
+### Wiki
 
-[!INCLUDE [sprint-246-update-links](includes/testplans/sprint-246-update-links.md)]
+[!INCLUDE [sprint-246-update-links](includes/wiki/sprint-246-update-links.md)]
 
 ## General
 
@@ -52,10 +48,6 @@ Check out the release notes for details.
 ## GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-246-update](includes/ghazdo/sprint-246-update.md)]
-
-## Wiki
-
-[!INCLUDE [sprint-246-update](includes/wiki/sprint-246-update.md)]
 
 ## Azure Boards
 
@@ -69,9 +61,9 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-246-update](includes/pipelines/sprint-246-update.md)]
 
-## Azure Test Plans
+## Wiki
 
-[!INCLUDE [sprint-246-update](includes/testplans/sprint-246-update.md)]
+[!INCLUDE [sprint-246-update](includes/wiki/sprint-246-update.md)]
 
 ## Next steps
 
