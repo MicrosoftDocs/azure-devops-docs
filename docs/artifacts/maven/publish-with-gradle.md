@@ -57,7 +57,7 @@ plugins {
 
 #### Configure build.gradle
 
-1. If a *build.gradle* file does not exist in the root of your project, create a new file and name it: *build.gradle*.
+1. If a *build.gradle* file doesn't exist in the root of your project, create a new file and name it: *build.gradle*.
 
 1. Add the following section to your *build.gradle* file within both the **repositories** and **publishing.repositories** containers: 
 
@@ -107,7 +107,7 @@ repositories {
 
 #### Configure settings.xml
 
-1. Open the *settings.xml* file located in the *.m2* directory of your home folder (typically found at *~/.m2/settings.xml* on macOS and Linux, and at *Users\<YourUsername>\.m2\settings.xml* on Windows). If the file does not exist, you can create a new one.
+1. Open the *settings.xml* file located in the *.m2* directory of your home folder (typically found at *~/.m2/settings.xml* on macOS and Linux, and at *Users\<YourUsername>\.m2\settings.xml* on Windows). If the file doesn't exist, you can create a new one.
 
 1. Add the following snippet, replacing the placeholders with your feed name, organization name, and the personal access token you created earlier.
 
@@ -131,7 +131,7 @@ plugins {
 
 #### Configure build.gradle
 
-1. If a *build.gradle* file does not exist in the root of your project, create a new file and name it: *build.gradle*.
+1. If a *build.gradle* file doesn't exist in the root of your project, create a new file and name it: *build.gradle*.
 
 1. Add the following section to your *build.gradle* file within both the **repositories** and **publishing.repositories** containers: 
 
@@ -184,7 +184,7 @@ publishing {
 
 #### Configure gradle.properties
 
-1. Open the *gradle.properties* file located in the *.gradle* directory of your home folder (~/.gradle/gradle.properties). If the file does not exist, create a new one.
+1. Open the *gradle.properties* file located in the *.gradle* directory of your home folder (~/.gradle/gradle.properties). If the file doesn't exist, create a new one.
 
 1. Add the following snippet, replacing the placeholders with your feed name, organization name, and the personal access token you created earlier.
 
@@ -205,7 +205,7 @@ Run the following command in your project directory to publish your package to y
 gradle publish
 ```
 
-:::image type="content" source="media/publish-package-gradle.png"A screenshot displaying a package successfully published to the feed.":::
+:::image type="content" source="media/publish-package-gradle.png" alt-text="A screenshot displaying a package successfully published to the feed.":::
 
 ## Related content
 
