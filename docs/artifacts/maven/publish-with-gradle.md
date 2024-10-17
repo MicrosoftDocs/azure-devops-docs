@@ -44,81 +44,6 @@ To authenticate with your feed, you must first create a personal access token wi
 
 ## Project setup
 
-# [Older versions](#tab/older)
-
-Before setting up your project, ensure Gradle is installed and that you've added the Maven Settings plugin to your *build.gradle* file as follows:
-
-```groovy
-plugins {
-  id 'net.linguica.maven-settings' version '0.5'
-  id 'maven-publish'
-}
-```
-
-#### Configure build.gradle
-
-1. If a *build.gradle* file doesn't exist in the root of your project, create a new file and name it: *build.gradle*.
-
-1. Add the following section to your *build.gradle* file within both the **repositories** and **publishing.repositories** containers: 
-
-    ```groovy
-    maven {
-        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
-        name '<FEED_NAME>'
-        authentication {
-            basic(BasicAuthentication)
-        }
-    }
-    ```
-
-Here's an example of what your *build.gradle* file should look like:
-
-```groovy
-publishing { 
-    publications {
-        library(MavenPublication) {
-            from components.java
-        }
-    }
-
-    // Repositories to publish artifacts 
-    repositories { 
-        maven {
-            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
-            name '<FEED_NAME>'
-            authentication {
-                basic(BasicAuthentication)
-            }
-        }
-    } 
-} 
-    
-// Repositories to fetch dependencies
-repositories { 
-        maven {
-            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
-            name '<FEED_NAME>'
-            authentication {
-                basic(BasicAuthentication)
-            }
-        }
-} 
-```
-
-#### Configure settings.xml
-
-1. Open the *settings.xml* file located in the *.m2* directory of your home folder (typically found at *~/.m2/settings.xml* on macOS and Linux, and at *Users\<YourUsername>\.m2\settings.xml* on Windows). If the file doesn't exist, you can create a new one.
-
-1. Add the following snippet, replacing the placeholders with your feed name, organization name, and the personal access token you created earlier.
-
-    ```xml
-    <server>
-        <id>[FEED_NAME]</id>
-        <username>[ORGANIZATION_NAME]</username>
-        <password>[PERSONAL_ACCESS_TOKEN]</password>
-    </server>
-    ```
-
 # [Gradle 8.2 and above](#tab/newer)
 
 Before setting up your project, ensure Gradle is installed and that you've added the Maven Settings plugin to your *build.gradle* file as follows:
@@ -195,15 +120,90 @@ publishing {
     [FEED_NAME]Password=[PERSONAL_ACCESS_TOKEN]
     ```
 
+# [Older versions](#tab/older)
+
+Before setting up your project, ensure Gradle is installed and that you've added the Maven Settings plugin to your *build.gradle* file as follows:
+
+```groovy
+plugins {
+  id 'net.linguica.maven-settings' version '0.5'
+  id 'maven-publish'
+}
+```
+
+#### Configure build.gradle
+
+1. If a *build.gradle* file doesn't exist in the root of your project, create a new file and name it: *build.gradle*.
+
+1. Add the following section to your *build.gradle* file within both the **repositories** and **publishing.repositories** containers: 
+
+    ```groovy
+    maven {
+        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+        name '<FEED_NAME>'
+        authentication {
+            basic(BasicAuthentication)
+        }
+    }
+    ```
+
+Here's an example of what your *build.gradle* file should look like:
+
+```groovy
+publishing { 
+    publications {
+        library(MavenPublication) {
+            from components.java
+        }
+    }
+
+    // Repositories to publish artifacts 
+    repositories { 
+        maven {
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+            name '<FEED_NAME>'
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
+    } 
+} 
+    
+// Repositories to fetch dependencies
+repositories { 
+        maven {
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+            name '<FEED_NAME>'
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
+} 
+```
+
+#### Configure settings.xml
+
+1. Open the *settings.xml* file located in the *.m2* directory of your home folder (typically found at *~/.m2/settings.xml* on macOS and Linux, and at *Users\<YourUsername>\.m2\settings.xml* on Windows). If the file doesn't exist, you can create a new one.
+
+1. Add the following snippet, replacing the placeholders with your feed name, organization name, and the personal access token you created earlier.
+
+    ```xml
+    <server>
+        <id>[FEED_NAME]</id>
+        <username>[ORGANIZATION_NAME]</username>
+        <password>[PERSONAL_ACCESS_TOKEN]</password>
+    </server>
+    ```
+
 ---
 
-## Publish packages
+## Publish your packages
 
-Run the following command in your project directory to publish your package to your feed.
+1. Run the following command in your project directory to publish your package to your feed:
 
-```command
-gradle publish
-```
+    ```command
+    gradle publish
+    ```
 
 :::image type="content" source="media/publish-package-gradle.png" alt-text="A screenshot displaying a package successfully published to the feed.":::
 
