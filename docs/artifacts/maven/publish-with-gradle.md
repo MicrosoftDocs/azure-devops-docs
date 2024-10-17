@@ -197,16 +197,18 @@ publishing {
 
 ---
 
-## Publish artifacts
+## Publish packages
 
-Run the following command in an elevated command prompt to publish your package to your feed. Your new package will be named: *groupId:artifactId*.
+Run the following command in your project directory to publish your package to your feed.
 
-```Command
+```command
 gradle publish
 ```
 
-## Related articles
+:::image type="content" source="media/publish-package-gradle.png"A screenshot displaying a package successfully published to the feed.":::
 
-- [Install Maven Artifacts](./install.md)
-- [Use packages from Maven Central](./upstream-sources.md)
-- [Google Maven Repository upstream source](./google-maven.md)
+## Related content
+
+- [Use packages from Maven Central](upstream-sources.md)
+- [Restore Maven packages](./install.md)
+- [Use packages from Google Maven Repository](google-maven.md)
