@@ -9,15 +9,15 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/06/2024
+ms.date: 10/17/2024
 ---
 
-# Define a work item query in Azure Boards
+# Define a work item query
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-Work item queries generate lists of work items based on the filter criteria provided by you. You can save and share these managed queries with others.
+Work item queries in Azure Boards generate lists of work items based on the filter criteria provided by you. You can save and share these managed queries with others.
 
 ::: moniker range=">= azure-devops-2020"
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
@@ -26,7 +26,7 @@ You can create queries from the web portal or from a supported client, such as V
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+> The browser images used in this article are from the New Boards Hubs feature, which is enabled by default. If this feature isn't enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
 
 ::: moniker-end
 
@@ -36,11 +36,11 @@ Check out our recommended [best practices](#best-practices), later in this artic
 
 ## Choose a query filter 
 
-From the Query Editor, you can select the filter to jump to an article with sample queries. 
+From the Query Editor, select the filter to jump to an article with sample queries. 
 Along with the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).
 
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work item search](../../project/search/functional-work-item-search.md).
+> Managed queries don't support proximity searches, however semantic searches do. Semantic searches also support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work item search](../../project/search/functional-work-item-search.md).
 
 ---
 :::row:::
@@ -95,7 +95,7 @@ Along with the query filters, you can [interactively apply filters to query resu
 :::row-end:::
 ---
 
-You can also [interactively filter a query](../backlogs/filter-backlogs-boards-plans.md) using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function.
+You can [interactively filter a query](../backlogs/filter-backlogs-boards-plans.md) using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function.
 
 ## Open Queries 
 
@@ -111,7 +111,7 @@ Start a new query from the **Queries** tab in the web portal or the **Work Items
 
 ::: moniker range="< azure-devops"  
 
-Select **New query**.
+1. Select **New** > **New query**.
 
 :::image type="content" source="media/view-run-queries/new-query-new-exp.png" alt-text="Screenshot to Add new query, new experience.":::
 
@@ -119,13 +119,13 @@ The Query Editor displays with the following default settings: **Flat list of wo
 
 :::image type="content" source="media/using-queries/new-query-web-portal.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
 
-Modify the **Values** and [add or remove clauses](#define-a-clause), or change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
+2. Modify the **Values** and [add or remove clauses](#define-a-clause), or change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 
 ::: moniker-end  
 
 ::: moniker range="azure-devops"
 
-Select **New query**.
+1. Select **New** > **New query**.
 
 :::image type="content" source="media/view-run-queries/new-query-new-boards-hubs.png" alt-text="Screenshot to Add new query, new experience.":::
 
@@ -133,7 +133,7 @@ The Query Editor displays with the following default settings: **Flat list of wo
 
 :::image type="content" source="media/using-queries/new-query-dialog-new-boards-hubs.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
 
-Modify the **Values** and [add or remove clauses](#define-a-clause), or change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
+2. Modify the **Values** and [add or remove clauses](#define-a-clause), or change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 
 ::: moniker-end
   
