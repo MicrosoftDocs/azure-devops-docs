@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/28/2024
+ms.date: 10/16/2024
 --- 
 
 # Security groups, service accounts, and permissions reference
@@ -934,17 +934,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="4":::
    
-   #### Auditing
-   :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="4":::
-        Audit permissions are assigned by the system and are not configurable.
-    :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-   
    #### Test Plans
    :::column-end:::
 :::row-end:::
@@ -1062,7 +1051,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ## Project-level permissions
 
 > [!IMPORTANT]
-> The "View project-level information" permission must be set to "Allow" for users to access project-level resources.  This permission gates all other project-level permissions.
+> To access project-level resources, the **View project-level information** permission must be set to **Allow**.  This permission gates all other project-level permissions.
 
 ::: moniker range="azure-devops" 
 
