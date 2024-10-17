@@ -16,6 +16,7 @@ Clicking on `Show more details` in the annotation brings you to the alert detail
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Clicking on Show more details.](../../media/246-ghazdo-01.png "Screenshot of Clicking on Show more details")](../../media/246-ghazdo-01.png#lightbox)
 
+For more information, please see our [latest blog post here](https://devblogs.microsoft.com/devops/introducing-pull-request-annotation-for-codeql-and-dependency-scanning-in-github-advanced-security-for-azure-devops/)
 
 ### New pip detection strategy for dependency scanning 
 
