@@ -20,7 +20,7 @@ You have multiple authentication options for connecting to Azure with an Azure R
 
 User-assigned managed identity with workload identity federation is the recommended option for users who [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
-Azure Resource Manager service connection options include:
+Secure Azure Resource Manager service connection options include:
 * App registration (automatic) with a workload identity federation  or a secret. 
 * Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). 
 * App registration or managed identity (manual) with workload identity federation or a secret. 
@@ -220,7 +220,6 @@ Use this option to manually create a service connection that uses an existing ap
     
     1. Select **Verify and save** to validate and create the service connection.
 
-After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
 ## Create an Azure Resource Manager service connection for an existing user-assigned managed identity
 
@@ -280,8 +279,6 @@ Use this option to automatically create a workload identity credential for an ex
     1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
     
     1. Select **Save** to validate and create the service connection.
-
-After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
 ::: moniker-end
 
