@@ -23,13 +23,18 @@ This article describes how to build a .NET Framework project with Azure Pipeline
 
 ## Get the sample app
 
-The sample app is a Visual Studio solution that uses .NET 4.8. To get the app, fork the GitHub repo at `https://github.com/Azure-Samples/app-service-web-dotnet-get-started`.
+The sample app is a Visual Studio solution that uses .NET 4.8. To get the app, fork the GitHub repo at: 
+
+``` html
+https://github.com/Azure-Samples/app-service-web-dotnet-get-started
+
+```
 
 ## Create and build the pipeline
 
 Once you have the sample code in your own repository, create a pipeline in your Azure DevOps project by using the instructions in [Create your first pipeline](../../create-first-pipeline.md).
 
-Select the **ASP.NET** template. This choice automatically adds the tasks required to build the code in the sample repository. The template includes the VSTest@2 task to run tests. The sample repository doesn't contain tests, so you can remove the VSTest@2 task from the pipeline.  
+Select the **ASP.NET** template. This choice automatically adds the *azure-pipelines.yml* file with the tasks required to build the code to the sample repository. The template includes the VSTest@2 task to run tests. The sample repository doesn't contain tests, so you can remove the VSTest@2 task from the pipeline.  
 
 Your pipeline should look like the following example:
 
