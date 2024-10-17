@@ -86,9 +86,9 @@ steps:
 trigger:
 - main
 
-pool: default
+pool: 
+  name: default
   
-
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
