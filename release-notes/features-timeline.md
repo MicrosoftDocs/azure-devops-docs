@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/17/2024
+ms.date: 10/16/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -342,7 +342,23 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="22"><strong>Future</strong></td>
+      <td rowspan="2"><strong>2025 Q1</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/junit-java-support" data-raw-source="[JUnit / Java support in Test Plans](/azure/devops/release-notes/roadmap/2022/junit-java-support)">JUnit / Java support in Test Plans</a></td>
+        <td>Test Plans</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/test-plan-task-in-pipelines" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2022/test-plan-task-in-pipelines)">Test Plan task in Pipelines</a></td>
+        <td>Test Plans</td>
+      </tr>
+      <td rowspan="2"><strong>2025 Q2</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[New Test Runs experience](/azure/devops/release-notes/roadmap/2022/improved-visibility)">New Test Runs experience</a></td>
+        <td>Test Plans</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
+        <td>Test Plans</td>
+      </tr>
+      <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
@@ -397,22 +413,6 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts" data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td>
         <td>Artifacts</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/test-plan-task-in-pipelines" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2022/test-plan-task-in-pipelines)">Test Plan task in Pipelines</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/junit-java-support" data-raw-source="[JUnit / Java support in Test Plans](/azure/devops/release-notes/roadmap/2022/junit-java-support)">JUnit / Java support in Test Plans</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[New Test Runs experience](/azure/devops/release-notes/roadmap/2022/improved-visibility)">New Test Runs experience</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
-        <td>Test Plans</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[DependaBot Security Update Support](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Dependabot Security Update Support</a></td>
