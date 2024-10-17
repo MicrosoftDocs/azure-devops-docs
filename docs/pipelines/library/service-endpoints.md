@@ -33,6 +33,8 @@ The first part of this article explains how to create, view, edit, and use servi
 
 ## Create a service connection
 
+::: moniker range="azure-devops"
+
 To create a service connection for Azure Pipelines:
 
 1. In your Azure DevOps project, select **Project settings** > **Service connections**.
@@ -59,6 +61,38 @@ The following example shows an Azure Resource Manager connection to an Azure sub
 ` or equivalent subscription name value in pipeline tasks.
 
 :::image type="content" source="media/azure-resource-manager-subscription.png" alt-text="Screenshot of the New Azure service connection screen with managed identity.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+To create a service connection for Azure Pipelines:
+
+1. In your Azure DevOps project, select **Project settings** > **Service connections**.
+
+1. Select **New service connection**, select the type of service connection that you need, and then select **Next**.
+
+1. Choose an authentication method, and then select **Next**.
+
+1. Enter the parameters for the service connection. The parameters vary based on the [service connection type](#common-service-connection-types) and authentication method.
+
+   Depending on the service connection type and authentication method, there might be a link to **Verify** the connection. The validation link uses a REST call to the external service with the information that you entered, and indicates whether the call succeeded.
+   
+1. Enter a **Service connection name** to use for the service connection in task properties.
+
+1. Optionally, enter a **Description**.
+
+1. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection.
+
+   If you don't select this option, you must later explicitly [authorize each pipeline to use the service connection](#authorize-pipelines).
+   
+1. Select **Save** or **Verify and save**.
+
+The following example shows an Azure Resource Manager connection to an Azure subscription. You use the **Service connection name** as the `azureSubscription` or equivalent subscription name value in pipeline tasks.
+
+:::image type="content" source="media/new-azure-resource-manager-connection.png" alt-text="Screenshot of the New Azure service connection screen.":::
+
+::: moniker-end
 
 ## View a service connection
 
