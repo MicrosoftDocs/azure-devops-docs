@@ -95,10 +95,15 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
     ```azurecli
     # Create a dev center
-    az devcenter admin devcenter create -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME -l $REGION
+    az devcenter admin devcenter create -n $DEV_CENTER_NAME \
+        -g $RESOURCE_GROUP_NAME \
+        -l $REGION
 
     # Save the id of the newly created dev center
-    DEVCID=$(az devcenter admin devcenter show -n $DEV_CENTER_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
+    DEVCID= \
+        $(az devcenter admin devcenter show -n $DEV_CENTER_NAME \
+        -g $RESOURCE_GROUP_NAME \
+        --query id -o tsv)
 
     # Create a dev center project
     az devcenter admin project create -n $DEV_CENTER_PROJECT_NAME \
@@ -109,7 +114,10 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
     # Save the dev center project for use when creating
     # the Managed DevOps Pool
-    DEVCPID=$(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME -g $RESOURCE_GROUP_NAME --query id -o tsv)
+    DEVCPID= \
+        $(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME \
+        -g $RESOURCE_GROUP_NAME \
+        --query id -o tsv)
     ```
 
     After a few moments, the output indicates that the Dev center was created. The `id` of the created dev center is saved in `DEVCID` and is used to create the dev center project.
