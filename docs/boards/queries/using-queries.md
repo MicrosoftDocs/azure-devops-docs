@@ -5,6 +5,7 @@ description: Learn how to use queries and perform tasks like define a flat-list,
 ms.custom: boards-queries, linked-from-support, cross-project, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -190,7 +191,8 @@ With the **Query across projects** checked, you can add the **Team Project** fie
 ::: moniker-end
 
 > [!NOTE]
-> Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma `,`. 
+> - Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma `,`. 
+> - When you use the 'State' field in a query across multiple projects, the displayed values are limited to those defined in the default project. This means that if you're querying across projects, you might not see all possible state values from each project, but only those from the project that is set as the default. For example, if you have three projects—Project A, Project B, and Project C—and only Project A has a state called 'In Review,' while Projects B and C have different states, querying across these projects only shows the states defined in Project A.
 
 - The **Team Project** field is available only after you check  **Query across projects**. 
 - When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.
