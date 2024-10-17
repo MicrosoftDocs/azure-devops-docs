@@ -112,22 +112,25 @@ To keep your token more secure, use credential managers so you don't have to ent
 
 ***
 
-**Existing repos**
+### Existing repositories
 
-For existing repositories, if you already added the origin using the username, run the following command first.
+- **Remove existing origin:** If you previously added the origin using a username, remove it by running the following command:
 
-``git remote remove origin``
+   ``git remote remove origin``
 
-If you encounter issues authenticating with your PAT using the standard method, you can run the following command to authenticate via the command line. The `path to git repo = /_git/do` refers to the URL path structure used in Azure DevOps for Git repositories. The `/_git/` segment indicates that you're accessing a Git repository, and you should replace `do` with the actual name of your repository. For example, if your repository is named `my-repo`, the path would be '`/_git/my-repo`'.
+- **Authenticate with a PAT:** If you encounter issues with standard authentication, run the following command to authenticate via the command line:  
 
-``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<project-name>/_git/<repo_name>``
-``git push -u origin --all``
+   ``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<project-name>/_git/<repo_name>``
 
-If you're using Git and need to authenticate, you can run the following command in your terminal:
+   ``git push -u origin --all``
 
-``git clone https://{organization}@dev.azure.com/{organization}/_git/{repository}``
+   The `path to git repo = /_git/do` refers to the URL path structure used in Azure DevOps for Git repositories. The `/_git/` segment indicates that you're accessing a Git repository, and you should replace `do` with the actual name of your repository. For example, if your repository is named `my-repo`, the path would be '`/_git/my-repo`'.
 
-Replace `{organization}` with your Azure DevOps organization name and `{repository}` with the name of your repository.
+- **Clone repository:** If you're using Git and need to authenticate, run the following command:
+
+   ``git clone https://{organization}@dev.azure.com/{organization}/_git/{repository}``
+
+   Replace `{organization}` with your Azure DevOps organization name and `{repository}` with the name of your repository.
 
 ### Use a PAT in your code
 
