@@ -21,7 +21,7 @@ ms.topic: include
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-      For example, to create a token for a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then click **Create**.
+      For example, to create a token for a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
 
    :::image type="content" source="../media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
@@ -41,7 +41,7 @@ Use your PAT anywhere your user credentials are required for authentication in A
 
 ### Notifications
 
-During the lifespan of a PAT, users receive two notifications - the first one at the time of creation and the second one seven days prior to its expiration.
+During the lifespan of a PAT, users receive two notifications: the first at the time of creation and the second seven days before its expiration.
 
 After you create a PAT, you receive a notification similar to the following example. This notification serves as confirmation that your PAT was successfully added to your organization.
 
@@ -62,7 +62,7 @@ For more information, see [Configure an SMTP server and customize email for aler
 If you get an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you. Here are some examples.
 
 - A token named "git: `https://dev.azure.com/{Your_Organization}` on YourMachine" gets created when you connect to an Azure DevOps Git repo via git.exe.
-- A token named "Service Hooks: : Azure App Service: : Deploy web app" gets created when an Azure App Service web app deployment is set up by you or an administrator.
+- A token named "Service Hooks: : Azure App Service: : Deploy web app" gets created when you or an administrator sets up an Azure App Service web app deployment.
 - A token named "WebAppLoadTestCDIntToken" gets created when web load testing is set up as part of a pipeline by you or an administrator.
 - A token named "Microsoft Teams Integration" gets created when a Microsoft Teams Integration Messaging Extension is set up.
 
@@ -118,9 +118,16 @@ For existing repositories, if you already added the origin using the username, r
 
 ``git remote remove origin``
 
-Otherwise, run the following command.
+If you encounter issues authenticating with your PAT using the standard method, you can run the following command to authenticate via the command line. The `path to git repo = /_git/do` refers to the URL path structure used in Azure DevOps for Git repositories. The `/_git/` segment indicates that you're accessing a Git repository, and you should replace `do` with the actual name of your repository. For example, if your repository is named `my-repo`, the path would be '`/_git/my-repo`'.
 
-``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
+``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<project-name>/_git/<repo_name>``
+``git push -u origin --all``
+
+If you're using Git and need to authenticate, you can run the following command in your terminal:
+
+``git clone https://{organization}@dev.azure.com/{organization}/_git/{repository}``
+
+Replace `{organization}` with your Azure DevOps organization name and `{repository}` with the name of your repository.
 
 ### Use a PAT in your code
 
@@ -224,10 +231,10 @@ When your code is working, it's a good time to switch from basic auth to [OAuth]
 
 For more information and examples of how to use PATs, see the following articles:
 
-- [Git credential managers](../set-up-credential-managers.md)
-- [REST APIs](/rest/api/azure/devops)
-- [NuGet on a Mac](../../../artifacts/nuget/consume.md)
-- [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
+- [Set up Git credential managers](../set-up-credential-managers.md)
+- [Access REST APIs](/rest/api/azure/devops)
+- [Use NuGet on a Mac](../../../artifacts/nuget/consume.md)
+- [Authenticate reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
 - [Get started with Azure DevOps CLI](../../../cli/index.md)
 
 ::: moniker range="azure-devops"
@@ -256,8 +263,8 @@ Do the following steps to:
 
 You can revoke a PAT at any time for these and other reasons:
 
-- Revoke a PAT if you suspect it has been compromised.
-- Revoke a PAT when it is no longer needed.
+- Revoke a PAT if you suspect it is compromised.
+- Revoke a PAT when it's no longer needed.
 - Revoke a PAT to enforce security policies or compliance requirements.
 
 1. From your home page, open your user settings, and then select **Profile**.
