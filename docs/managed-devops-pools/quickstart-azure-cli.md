@@ -85,7 +85,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 ## Create a dev center and dev center project
 
-1. Install the Azure CLI `devcenter` extension.
+1. Install the Azure CLI `devcenter` extension, and ensure it is upgraded to the latest version if it is already installed.
 
     ```azurecli
     az extension add --name devcenter --upgrade
@@ -231,10 +231,10 @@ Create the following three files and save them to the folder where you plan to r
 
 ## Create the Managed DevOps Pool
 
-1. Install the `mdp` extension.
+1. Install the `mdp` extension, and ensure it is upgraded to the latest version if it is already installed.
 
    ```azurecli
-    az extension add --name mdp
+    az extension add --name mdp --upgrade
    ```
 
 1. Create the Managed DevOps Pool by running the following [az mdp pool create](/cli/azure/mdp/pool#az-mdp-pool-create) command.
