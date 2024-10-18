@@ -62,7 +62,7 @@ plugins {
 
     ```groovy
     maven {
-        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'            //for organization-scoped feeds use this format: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/maven/v1'
         name '<FEED_NAME>'
         credentials(PasswordCredentials)
         authentication {
@@ -78,7 +78,7 @@ repositories {
     mavenCentral()
 
     maven {
-    url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+    url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'                //for organization-scoped feeds use this format: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/maven/v1'
     name '<FEED_NAME>'
     credentials(PasswordCredentials)
     authentication {
@@ -96,7 +96,7 @@ publishing {
 
     repositories {
         maven {
-        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'           //for organization-scoped feeds use this format: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/maven/v1'
         name '<FEED_NAME>'
         credentials(PasswordCredentials)
         authentication {
@@ -139,7 +139,7 @@ plugins {
 
     ```groovy
     maven {
-        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'        //for organization-scoped feeds use this format: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/maven/v1'
         name '<FEED_NAME>'
         authentication {
             basic(BasicAuthentication)
@@ -160,7 +160,7 @@ publishing {
     // Repositories to publish artifacts 
     repositories { 
         maven {
-            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'                //for organization-scoped feeds use this format: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/maven/v1'
             name '<FEED_NAME>'
             authentication {
                 basic(BasicAuthentication)
@@ -172,7 +172,7 @@ publishing {
 // Repositories to fetch dependencies
 repositories { 
         maven {
-            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'                //for organization-scoped feeds use this format: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/maven/v1'
             name '<FEED_NAME>'
             authentication {
                 basic(BasicAuthentication)
