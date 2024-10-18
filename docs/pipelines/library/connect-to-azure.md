@@ -44,7 +44,7 @@ When you create an Azure Resource Manager service connection, you'll choose betw
 You can use this approach if all the following items are true for your scenario:
 
 * You have the Owner role for your Azure subscription.
-* You're not connecting to the [Azure Stack](#connect-stack) or the [Azure US Government](#connect-govt) environments.
+* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government-cloud) environments.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
 With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a workload identity federation for authentication.
@@ -100,7 +100,7 @@ You can use this approach if all the following items are true for your scenario:
 
 * You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
 * You don't need to further limit permissions for Azure resources that users access through the service connection.
-* You're not connecting to [Azure Stack](#connect-stack) or to an [Azure Government Cloud](#connect-govt).
+* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government-cloud) environments.
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of Team Foundation Server.
 
 
