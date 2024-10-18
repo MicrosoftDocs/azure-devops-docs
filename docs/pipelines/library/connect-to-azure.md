@@ -27,7 +27,7 @@ You should use a user-assigned managed identity with workload identity federatio
 
 If you need to manually create an app registration or managed identity (manual) with workload identity federation or a secret, see [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md).  
 
-You can also configure an Azure Resource Manager service connection with an [agent-assigned managed identity or a publish profile](azure-resource-manager-alternate-approaches.md). These two methods are not recommended if you can use an authentication method that supports workload identity federation. 
+You can also configure an Azure Resource Manager service connection with an [agent-assigned managed identity or a publish profile](azure-resource-manager-alternate-approaches.md). These two methods aren't recommended if you can use an authentication method that supports workload identity federation. 
 
 ::: moniker-end
 
@@ -147,7 +147,7 @@ After the new service connection is created, copy the connection name and paste 
 
 ## Create an Azure Resource Manager service connection for an existing user-assigned managed identity
 
-Use this option to automatically create a workload identity credential for an existing user-assigned managed identity. You'll need to have an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity) before you start. 
+Use this option to automatically create a workload identity credential for an existing user-assigned managed identity. You need to have an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity) before you start. 
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
@@ -164,7 +164,7 @@ Use this option to automatically create a workload identity credential for an ex
 1. In **Step 1: Managed identity details**:
     1. Select **Subscription for Managed Identity**. This is the Azure subscription that contains your managed identity. 
     1. Select **Resource group for Managed Identity**. This is the resource group that contains your managed identity. 
-    1. Select **Managed Identity**. This is the managed identity within your resource group that you will use to access resources. 
+    1. Select **Managed Identity**. This is the managed identity within your resource group that you'll use to access resources. 
     
 1. In **Step 2: Azure Scope**:
 
@@ -241,7 +241,7 @@ Use a script to update multiple service connections at once to now use workload 
 
 This example PowerShell script requires two parameters: Azure DevOps organization (example: `https://dev.azure.com/fabrikam-tailspin`) and Azure DevOps project (example: `Space game web agent`). The script then retrieves the associated service connections for your Azure DevOps project and organization. 
 
-When converting service connections to use workload identity federation, you are prompted to confirm the update for each connection not already using it. Upon confirmation, the script updates these service connections via the Azure DevOps REST API to utilize workload identity federation.
+When converting service connections to use workload identity federation, you're prompted to confirm the update for each connection not already using it. Upon confirmation, the script updates these service connections via the Azure DevOps REST API to utilize workload identity federation.
 
 The script requires [PowerShell 7.3 or newer](/powershell/scripting/install/installing-powershell-on-windows) and [Azure CLI](/cli/azure/install-azure-cli) to run. Save the script to a `.ps1` file and run it using PowerShell 7.
 
@@ -434,7 +434,7 @@ To create a service connection that uses an existing service principal:
     
     1. Enter the **Connection name**.
     1. Select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`.
-    1. Select the **Scope level**, **Subscription** or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions.
+    1. Select the **Scope level**, **Subscription, or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions.
 
         * For the **Subscription** scope, enter the following parameters:
     

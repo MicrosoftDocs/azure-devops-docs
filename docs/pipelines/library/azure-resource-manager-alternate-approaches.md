@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-While the recommended option for Azure Resource Manager service connections is to [use workload identity federation with an app registration or managed identity](connect-to-azure.md), there are time when you might need to use an agent-assigned managed identity or a publish profile instead. In this article, you'll learn how to create an Azure Resource Manager service connection that connects to a self-hosted agent on an Azure virtual machine and how to use a publish profile to create a service connection to an Azure App Service app. 
+While the recommended option for Azure Resource Manager service connections is to [use workload identity federation with an app registration or managed identity](connect-to-azure.md), there are times when you might need to use an agent-assigned managed identity or a publish profile instead. In this article, you'll learn how to create an Azure Resource Manager service connection that connects to a self-hosted agent on an Azure virtual machine and how to use a publish profile to create a service connection to an Azure App Service app. 
 
 You can also use Azure Resource Manager to connect to Azure Government Cloud and Azure Stack. 
 
@@ -87,7 +87,7 @@ For more information about the process, see [Troubleshoot Azure Resource Manager
 
 <a name="use-publish-profile"></a>
 
-## Create a Azure Resource Manager service connection using a publish profile
+## Create an Azure Resource Manager service connection using a publish profile
 
 You can create a service connection by using a publish profile. You can use a publish profile to create a service connection to an Azure App Service.
 
