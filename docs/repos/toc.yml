@@ -57,7 +57,7 @@
       href: security/github-advanced-security-dependency-scanning.md
     - name: Troubleshoot dependency scanning
       href: security/github-advanced-security-dependency-scanning.md
- - name: Code Scanning for GitHub Advanced Security
+  - name: Code Scanning for GitHub Advanced Security
     items:
     - name: Configure code scanning
       href: security/github-advanced-security-code-scanning.md
