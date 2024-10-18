@@ -30,6 +30,9 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 ## Create an Azure Key Vault
 
+> [!NOTE]
+> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
+
 ### [Azure portal](#tab/portal/)
 
 1. Navigate to [Azure portal](https://portal.azure.com/).

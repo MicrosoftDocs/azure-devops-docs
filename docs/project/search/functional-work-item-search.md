@@ -4,10 +4,11 @@ description: How to use Work Item Search - functional options for Work Item Sear
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
+ai-usage: ai-assisted
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 08/08/2024
+ms.date: 10/17/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -21,7 +22,7 @@ Work Item Search lets you do the following tasks and more.
 
 |**Search task**  |**Description**  |
 |---------|---------|
-|[Search over all your projects](#search-across-all-fields)   | Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters.         |
+|[Search over all your projects](#search-across-all-fields)   | Search in your own and your partner teams' backlog. To search across your entire enterprise's work items, use cross-project searches. Narrow your search by using project and area path filters.         |
 |[Search across all work item fields](#search-across-all-fields)   | Quickly and easily find relevant work items by searching across all work item fields, including custom fields. Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.        |
 |[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
 |Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
@@ -111,7 +112,7 @@ For more information, see the following articles:
 
 ## Fine-tune your search
 
-1. Specify fields to fine-tune your search. Search all assigned items by entering `a:` and a user name.
+1. To fine-tune your search, specify fields. Search all assigned items by entering `a:` and a user name.
 
 	:::image type="content" source="media/get-started/search-work-vert.png" alt-text="Search from title bar":::    
 
@@ -147,12 +148,13 @@ For more information, see the following articles:
 
 Quick inline search filters let you refine work items in seconds. The dropdown list of suggestions helps complete your search faster. Mix and match the functions to create quick powerful searches. 
 
+
 |**Usage**  |**Example** |
 |---------|---------|
-| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |`tags:Critical` finds work items having a field 'tags' containing the term 'Critical.'         |
-|Use multiple inline search filters to scope your search by any work item field, including custom fields.    | `t: Bug path:"project\search"` finds all bugs in the area path "project\search."        |
-|Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  `t: Bug CreatedDate> @Today-7` finds all bugs created in the last week.       |
-|For the search query that contains multiple terms and users looking for exact match, embed the search term inside `" "`   | `BuildPath: "tools.demoproject.com"` finds all work items that necessarily contain the path "tools.demoproject.com."        |
+| Scope your search terms to match in any work item field, including custom fields. Enter the field name followed by the search terms.   |`tags:Critical` finds work items with a 'tags' field containing the term 'Critical.'         |
+| Use multiple inline search filters to scope your search by any work item field, including custom fields.    | `t: Bug path:"project\search"` finds all bugs in the area path "project\search."        |
+| Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  `t: Bug CreatedDate> @Today-7` finds all bugs created in the last week.       |
+| For search queries containing multiple terms, use quotes to group the terms. However, quotes don't yield exact matches as you might expect; results match any work items containing the grouped terms in any order.  | `BuildPath: "tools.demoproject.com"` finds work items that contain the path "tools.demoproject.com."        |
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="media/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
