@@ -16,17 +16,17 @@ monikerRange: '<= azure-devops'
 You can use an Azure Resource Manager service connection to connect to Azure resources such as Azure Key Vault. If you use a Resource Manager service connection, you can use a pipeline to deploy to an Azure resource like an Azure App Service app without authenticating each time.
 
 ::: moniker range="azure-devops"
-You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. The recommended options are to use workload identity federation with either an app registration or managed identity. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.  You can automatically create a workload identity federation credential for authentication or manually create it.
-
-User-assigned managed identity with workload identity federation is the recommended option for users who [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
+You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. The recommended options are to use [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity.  
 
 The recommended Azure Resource Manager service connection options are:
 * App registration (automatic) with a workload identity federation  or a secret. 
 * Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). 
 
+You should use a user-assigned managed identity with workload identity federation when you [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
+
 If you need to manually create an app registration or managed identity (manual) with workload identity federation or a secret, see [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md).  
 
-You can also configure an Azure Resource Manager service connection with an agent-assigned managed identity or a publish profile. These two methods are not recommended. 
+You can also configure an Azure Resource Manager service connection with an [agent-assigned managed identity or a publish profile](azure-resource-manager-alternate-approaches.md). These two methods are not recommended if you can use an authentication method that supports workload identity federation. 
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ You can also configure an Azure Resource Manager service connection with an agen
 
 ## Create an Azure Resource Manager app registration (automatic)
 
-When you create an Azure Resource Manager service connection, you'll choose between two different credential types - workload identity federation or a secret. Workload identity federation is the recommended credential approach. For more information, see [Workload identity federation](/entra/workload-id/workload-identity-federation).
+When you create an Azure Resource Manager service connection, you'll choose between two different credential types - [workload identity federation](/entra/workload-id/workload-identity-federation) or a secret. 
 
 ### Create an Azure Resource Manager app registration with workload identity federation (automatic)
 
@@ -147,7 +147,6 @@ After the new service connection is created, copy the connection name and paste 
 ## Create an Azure Resource Manager service connection for an existing user-assigned managed identity
 
 Use this option to automatically create a workload identity credential for an existing user-assigned managed identity. You'll need to have an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity) before you start. 
-
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
