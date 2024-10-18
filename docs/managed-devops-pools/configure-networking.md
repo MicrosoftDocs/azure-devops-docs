@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 10/08/2024
+ms.date: 10/18/2024
 ---
 
 # Configure Managed DevOps Pools networking
