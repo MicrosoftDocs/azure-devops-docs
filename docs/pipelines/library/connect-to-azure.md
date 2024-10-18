@@ -20,12 +20,13 @@ You have multiple authentication options for connecting to Azure with an Azure R
 
 User-assigned managed identity with workload identity federation is the recommended option for users who [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
-Secure Azure Resource Manager service connection options include:
+The recommended Azure Resource Manager service connection options are:
 * App registration (automatic) with a workload identity federation  or a secret. 
 * Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). 
-* App registration or managed identity (manual) with workload identity federation or a secret. 
-* Managed identity - agent assigned (not recommended). 
-* Publish profile (not recommended).
+
+If you need to manually create an app registration or managed identity (manual) with workload identity federation or a secret, see [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md).  
+
+You can also configure an Azure Resource Manager service connection with an agent-assigned managed identity or a publish profile. These two methods are not recommended. 
 
 ::: moniker-end
 
@@ -143,84 +144,6 @@ You can use this approach if all the following items are true for your scenario:
 After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
 
-## Create an Azure Resource Manager app registration or managed identity (manual)
-
-Use this option to manually create a service connection that uses an existing app registration or managed identity for authentication with workload identity federation. 
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
-
-    :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
-   
-1. Select **App registration or Managed identity (manual)** with the credential option **Workload identity federation** and **Next**.
-
-    :::image type="content" source="media\new-azure-resource-manager-conn-wif-manual-selection.png" alt-text="Screenshot of Workload Identity federation (manual) authentication method selection.":::
-
-1. In **Step 1: Basics**:
-    1. Enter a **Service connection name** 
-    1. Optionally, enter a **Description**.
-    1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-    1. Select **Next**.
-    
-1. In **Step 2: App registration details**:
-
-    **Step 2: App registration details** contains the following parameters. You can enter or select the following parameters:
-
-   | Parameter | Description |
-   | --------- | ----------- |
-   | **Issuer** | Required. DevOps automatically creates the issuer URL. |
-   | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
-   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
-
-
-    1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
-    
-        * For the **Subscription** scope, enter the following parameters:
-
-            | Parameter | Description |
-            | --------- | ----------- |
-            | **Subscription Id** | Required. Enter the Azure subscription ID. |
-            | **Subscription Name** | Required. Enter the Azure subscription name. |
-        
-        * For the **Management Group** scope, enter the following parameters:
-
-            | Parameter | Description |
-            | --------- | ----------- |
-            | **Management Group Id** | Required. Enter the Azure management group ID. |
-            | **Management Group Name** | Required. Enter the Azure management group name. |
-        
-        * For the **Machine Learning Workspace** scope, enter the following parameters:
-
-            | Parameter | Description |
-            | --------- | ----------- |
-            | **Subscription Id** | Required. Enter the Azure subscription ID. |
-            | **Subscription Name** | Required. Enter the Azure subscription name. |
-            | **Resource Group** | Required. Select the resource group containing the workspace. |
-            | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
-            | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
-    
-    1. In the **Authentication** section, enter or select the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Application (client) ID** | Required. Enter the Application (client) ID for your app registration or the Client ID for your managed identity. |
-        | **Directory (tenant) ID** | Required. Enter the Directory (tenant) ID for your app registration or the Tenant Id from your managed identity. |
-    
-    1. In the Details section, enter the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
-        | **Description** | Optional. Enter a description of the service connection.|
-    
-    1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-    
-    1. Select **Verify and save** to validate and create the service connection.
-
-
 ## Create an Azure Resource Manager service connection for an existing user-assigned managed identity
 
 Use this option to automatically create a workload identity credential for an existing user-assigned managed identity. You'll need to have an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity) before you start. 
@@ -283,107 +206,6 @@ Use this option to automatically create a workload identity credential for an ex
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
-<a name="use-msi"></a>
-
-## Create an Azure Resource Manager service connection to a VM that uses a managed identity
-
-> [!NOTE]
->
-> To use a managed identity to authenticate, you must use a self-hosted agent on an Azure virtual machine (VM).
-
-You can configure self-hosted agents on Azure VMs to use an [Azure managed identity](/azure/active-directory/managed-service-identity/overview) in Microsoft Entra ID. In this scenario, you use the agent-assigned managed identity to grant the agents access to any Azure resource that supports Microsoft Entra ID, such as an instance of Azure Key Vault.
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select **New service connection**, then select **Azure Resource Manager**.
-
-   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
-
-1. Select **Managed identity (agent assigned)** for the identity type.
-
-1. For **Environment**, select the environment name (**Azure Cloud**, **Azure Stack**, or Government cloud options).
-
-1. Select the **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
-
-    * For the **Subscription** scope, enter the following parameters:
-
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription Id** | Required. Enter the Azure subscription ID. |
-        | **Subscription Name** | Required. Enter the Azure subscription name. |
-
-    * For the **Management Group** scope, enter the following parameters:
-
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Management Group Id** | Required. Enter the Azure management group ID. |
-        | **Management Group Name** | Required. Enter the Azure management group name. |
-
-    * For the **Machine Learning Workspace** scope, enter the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription Id** | Required. Enter the Azure subscription ID. |
-        | **Subscription Name** | Required. Enter the Azure subscription name. |
-        | **Resource Group** | Required. Select the resource group containing the workspace. |
-        | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
-        | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |
-    
-1. Enter the **Tenant Id**.
-1. Enter the **Service connection name**.
-1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-1. Select **Save**.
-
-1. After the new service connection is created:
-
-   * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
-   * If you use the service connection in a YAML file, copy the connection name into your code as the value for `azureSubscription`.
-
-1. Ensure that the VM (agent) has the appropriate permissions.
-
-   For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role by using role-based access control (RBAC) in Microsoft Entra ID.
-
-   For more information, see [How can I use managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
-   [Use role-based access control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-
-For more information about the process, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
-
-<a name="use-publish-profile"></a>
-
-## Create a Azure Resource Manager service connection using a publish profile
-
-You can create a service connection by using a publish profile. You can use a publish profile to create a service connection to an Azure App Service.
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
-
-   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot of Azure Resource Manager selection.":::
-
-1. Select **Publish profile** for the identity type.
-
-1. Enter the following parameters:
-
-   | Parameter | Description |
-   | --------- | ----------- |
-   | **Subscription** | Required. Select an existing Azure subscription. If no Azure subscriptions or instances appear, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-   | **WebApp** | Required. Enter the name of the Azure App Service app. |
-   | **Service connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
-   | **Description** | Optional. The description of the service connection.|
-
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-1. Select **Save**.
-
-After the new service connection is created:
-
-   * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
-   * If you use the service connection in a YAML file, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
 
 ## Convert an existing Azure Resource Manager service connection to use workload identity federation
