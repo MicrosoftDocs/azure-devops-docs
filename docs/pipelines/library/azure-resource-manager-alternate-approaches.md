@@ -1,5 +1,5 @@
 ---
-title: Use an Azure Resource Manager service connection with an agent-assigned managed identity or a publish profile
+title: Azure Resource Manager service connection special cases
 description: Connect Azure Pipelines to Azure using an Azure Resource Manager service connection with either an agent-assigned managed identity or a publish profile.
 ms.topic: conceptual
 ms.author: jukullam
@@ -9,11 +9,13 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ---
 
-# Connect to Azure with an agent-assigned managed identity or publish profile
+# Azure Resource Manager service connection special cases
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 While the recommended option for Azure Resource Manager service connections is to [use workload identity federation with an app registration or managed identity](connect-to-azure.md), there are time when you might need to use an agent-assigned managed identity or a publish profile instead. In this article, you'll learn how to create an Azure Resource Manager service connection that connects to a self-hosted agent on an Azure virtual machine and how to use a publish profile to create a service connection to an Azure App Service app. 
+
+You can also use Azure Resource Manager to connect to Azure Government Cloud and Azure Stack. 
 
 <a name="use-msi"></a>
 
@@ -115,3 +117,25 @@ After the new service connection is created:
 
    * If you use the service connection in the UI, select the connection name that you assigned in the **Azure subscription** setting of your pipeline.
    * If you use the service connection in a YAML file, copy the connection name and paste it into your code as the value for `azureSubscription`.
+
+<a name="connect-govt"></a>
+
+## Connect to an Azure Government Cloud
+
+For information about connecting to an Azure Government Cloud, see [Connect from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts).
+
+<a name="connect-stack"></a>
+
+## Connect to Azure Stack
+
+For information about connecting to Azure Stack, see these articles:
+
+* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
+* [Connect Azure Stack to Azure by using a VPN](/azure/azure-stack/azure-stack-connect-vpn)
+* [Connect Azure Stack to Azure by using Azure ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
+
+
+For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+
+
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

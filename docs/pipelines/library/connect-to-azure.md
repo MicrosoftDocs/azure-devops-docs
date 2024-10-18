@@ -474,24 +474,4 @@ For more information, see [Troubleshoot Azure Resource Manager service connectio
 ::: moniker-end
 
 
-<a name="connect-govt"></a>
-
-## Connect to an Azure Government Cloud
-
-For information about connecting to an Azure Government Cloud, see [Connect from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts).
-
-<a name="connect-stack"></a>
-
-## Connect to Azure Stack
-
-For information about connecting to Azure Stack, see these articles:
-
-* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure by using a VPN](/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure by using Azure ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
-
-
-For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
-
-
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
