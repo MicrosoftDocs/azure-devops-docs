@@ -142,6 +142,7 @@ The following tables describe the type of events (or actions) that are available
 | Library.AgentPoolDeleted | Remove |	Deleted agent pool {AgentPoolName}. |
 | Library.AgentsDeleted	| Modify |	Removed multiple agents from pool {AgentPoolName}. |
 | Library.ServiceConnectionCreated |	Create |	Created Service Connection "{ConnectionName}" of type {ConnectionType}. |
+| Library.ServiceConnectionCreatedForMultipleProjects | Create | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | Library.ServiceConnectionDeleted |	Remove |	Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionDeletedFromMultipleProjects	| Remove |	Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple Projects. |
 | Library.ServiceConnectionExecuted	| Execute |	Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
