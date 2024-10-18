@@ -52,7 +52,7 @@ steps:
   displayName: 'NuGet Authenticate'
 
 - script: |
-      nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+      nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
   displayName: Push
 ```
 
@@ -69,7 +69,7 @@ steps:
     - **Display name**: *Push*.
     - **Script**: 
         ```script
-        nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+        nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
         ```
 
 - - -
@@ -95,7 +95,7 @@ steps:
   displayName: 'NuGet Authenticate'
 
 - script: |
-      nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+      nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
   displayName: Push
 ```
 
@@ -112,7 +112,7 @@ steps:
     - **Display name**: *Push*.
     - **Script**: 
         ```script
-        nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+        nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
         ```
 
 - - -
@@ -155,7 +155,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
         nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
         
     - script: |
-          nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+          nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
       displayName: Push       
     ```
 
@@ -175,7 +175,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
         - **Display name**: *Push*.
         - **Script**: 
             ```script
-            nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+            nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
             ```
 
 - - -
@@ -201,7 +201,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
         nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
         
     - script: |
-        nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+        nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
       displayName: Push          
     ```
 
@@ -221,7 +221,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
         - **Display name**: *Push*.
         - **Script**: 
             ```script
-            nuget.exe push --source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" --api-key az $(Build.ArtifactStagingDirectory)\*.nupkg
+            nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
             ```
 
 - - -
