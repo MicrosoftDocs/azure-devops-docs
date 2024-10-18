@@ -26,7 +26,7 @@ You must have an [organization](../organizations/accounts/create-organization.md
 Install one of the following Git command-line tools:
 
    - [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).
-   - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).
+   - [Git for macOS or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).
 
 ## 2. Clone the repo to your computer
 
