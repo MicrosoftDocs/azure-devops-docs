@@ -118,7 +118,7 @@ When **Agent state** is set to **Fresh agent every time**, a new agent is procur
 
 Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
-In the following example, a **Stateful** agent is specified with a seven day maximum lifetime and a thiry minute grace period.
+In the following example, a **Stateful** agent is specified with a seven day maximum lifetime and a thirty minute grace period.
 
 ```azurecli
 az mdp pool create \
