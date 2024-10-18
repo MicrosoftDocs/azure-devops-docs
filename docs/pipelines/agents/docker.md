@@ -218,9 +218,9 @@ Next, create the Dockerfile.
 
 4. Save the following content to `~/azp-agent-in-docker/azp-agent-linux.dockerfile`:
 
-    * For Alpine:
+    * For Alpine, using the technique described in [this issue](https://github.com/Azure/azure-cli/issues/19591):
       ```dockerfile
-      FROM alpine
+      FROM python:3-alpine
       ENV TARGETARCH="linux-musl-x64"
 
       # Another option:
@@ -229,7 +229,11 @@ Next, create the Dockerfile.
 
       RUN apk update
       RUN apk upgrade
-      RUN apk add bash curl git icu-libs jq
+      RUN apk add bash curl gcc git icu-libs jq musl-dev python3-dev libffi-dev openssl-dev cargo make
+
+      # Install Azure CLI
+      RUN pip install --upgrade pip
+      RUN pip install azure-cli
 
       WORKDIR /azp/
 
@@ -254,6 +258,9 @@ Next, create the Dockerfile.
       RUN apt update
       RUN apt upgrade -y
       RUN apt install -y curl git jq libicu70
+
+      # Install Azure CLI
+      RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
       WORKDIR /azp/
 
@@ -293,6 +300,14 @@ Next, create the Dockerfile.
       exit 1
     fi
 
+    if [ -n "$AZP_CLIENTID" ]; then
+      echo "Using service principal credentials to get token"
+      az login --allow-no-subscriptions --service-principal --username "$AZP_CLIENTID" --password "$AZP_CLIENTSECRET" --tenant "$AZP_TENANTID"
+      # adapted from https://learn.microsoft.com/en-us/azure/databricks/dev-tools/user-aad-token
+      AZP_TOKEN=$(az account get-access-token --query accessToken --output tsv)
+      echo "Token retrieved"
+    fi
+
     if [ -z "${AZP_TOKEN_FILE}" ]; then
       if [ -z "${AZP_TOKEN}" ]; then
         echo 1>&2 "error: missing AZP_TOKEN environment variable"
@@ -303,6 +318,7 @@ Next, create the Dockerfile.
       echo -n "${AZP_TOKEN}" > "${AZP_TOKEN_FILE}"
     fi
 
+    unset AZP_CLIENTSECRET
     unset AZP_TOKEN
 
     if [ -n "${AZP_WORK}" ]; then
@@ -421,10 +437,24 @@ You can control the agent name, the agent pool, and the agent work directory by 
 | Environment variable | Description                                                  |
 |----------------------|--------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools), at `AZP_URL`. |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) |
+| AZP_CLIENTID         | [Service principal](../../pipelines/agents/service-principal-agent-registration.md) client ID |
+| AZP_CLIENTSECRET     | Service principal client secret                              |
+| AZP_TENANTID         | Service principal tenant ID                                  |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname).          |
 | AZP_POOL             | Agent pool name (default value: `Default`).                  |
 | AZP_WORK             | Work directory (default value: `_work`).                     |
+
+### Authentication
+
+One of the following is required:
+
+- If using a PAT: `AZP_TOKEN`
+- If using a service principal: `AZP_CLIENTID`, `AZP_CLIENTSECRET`, and `AZP_TENANTID`
+
+### Authorization
+
+The token or service principal must have the **Agent Pools (read, manage)** scope at the Organization level of `AZP_URL`. If using a PAT, the token must be created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools).
 
 ## Add tools and customize the container
 
