@@ -14,9 +14,9 @@ In response to your feedback in the  [developer community](https://developercomm
 
 ### Entra Profile information (preview)
 
-We’re excited to introduce the integration of Entra profile information in Azure DevOps, removing the need for separate profile updates. To try the preview, enable Entra Profile Information in [Preview Features](https://learn.microsoft.com/azure/devops/project/navigation/preview-features?view=azure-devops).
+We’re excited to introduce the integration of Entra profile information in Azure DevOps, removing the need for separate profile updates. To try the preview, enable Entra Profile Information in [Preview Features](/azure/devops/project/navigation/preview-features?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of turn on Entra Profile Information.](../../media/246-general-02.png "Screenshot of turn on Entra Profile Information")
 
-Once enabled, your [profile settings](https://learn.microsoft.com/azure/devops/organizations/settings/set-your-preferences?view=azure-devops#set-preferences) will be read-only and automatically populated from Entra. To revert to your previous settings or provide feedback, simply turn off the preview and share your comments.
+Once enabled, your [profile settings](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops#set-preferences) are read-only and automatically populated from Entra. To revert to your previous settings or provide feedback, simply turn off the preview and share your comments.
