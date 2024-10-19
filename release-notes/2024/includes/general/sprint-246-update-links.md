@@ -7,4 +7,4 @@ ms.topic: include
 ---
 
 - [Copy code block to clipboard](#copy-code-block-to-clipboard)
-- [Entra Profile information (preview)](#entra-profile-information-preview)
+- [Microsoft Entra profile information (preview)](#microsoft-entra-profile-information-preview)
