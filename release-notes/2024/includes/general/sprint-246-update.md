@@ -12,11 +12,11 @@ In response to your feedback in the  [developer community](https://developercomm
 > [!div class="mx-imgBorder"]
 > ![Screenshot of copy to clipboard.](../../media/246-general-01.png "Screenshot of copy to clipboard")
 
-### Entra Profile information (preview)
+### Microsoft Entra Profile information (preview)
 
-We’re excited to introduce the integration of Entra profile information in Azure DevOps, removing the need for separate profile updates. To try the preview, enable Entra Profile Information in [Preview Features](/azure/devops/project/navigation/preview-features?view=azure-devops).
+We’re excited to introduce the integration of Microsoft Entra profile information in Azure DevOps, removing the need for separate profile updates. To try the preview, enable Microsoft Entra Profile Information in [Preview Features](/azure/devops/project/navigation/preview-features?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of turn on Entra Profile Information.](../../media/246-general-02.png "Screenshot of turn on Entra Profile Information")
+> ![Screenshot of turn on Microsoft Entra Profile Information.](../../media/246-general-02.png "Screenshot of turn on Microsoft Entra Profile Information")
 
-Once enabled, your [profile settings](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops#set-preferences) are read-only and automatically populated from Entra. To revert to your previous settings or provide feedback, simply turn off the preview and share your comments.
+Once enabled, your [profile settings](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops#set-preferences) are read-only and automatically populated from Microsoft Entra. To revert to your previous settings or provide feedback, turn off the preview and share your comments.
