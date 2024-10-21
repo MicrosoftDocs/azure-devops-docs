@@ -28,4 +28,4 @@ It’s recommended to include only branches protected by pull request policies t
 Markdown files containing mermaid syntax will now render as diagrams inside file previews in repos file browser and in pull requests. This can help you add richer documentation to your repositories.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of  mermaid diagrams in markdown file preview.](../../media/246-repos-01.png "Screenshot of  mermaid diagrams in markdown file preview")
+> ![Screenshot of  mermaid diagrams in markdown file preview.](../../media/246-repos-01.png "Screenshot of  mermaid diagrams in markdown file preview")(../../media/246-repos-01.png#lightbox)
