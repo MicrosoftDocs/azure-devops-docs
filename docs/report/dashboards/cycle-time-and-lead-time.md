@@ -150,7 +150,7 @@ To programmatically add a widget, use the following API endpoint:
 
    POST https://dev.azure.com/{organization}/{project}/{team}/_apis/dashboard/dashboards/{dashboardId}/widgets?api-version=7.1-preview.2
 
-For more information, see [REST API - Get widget](/rest/api/azure/devops/dashboard/widgets/get-widget?view=azure-devops-rest-7.1&tabs=HTTP).
+For more information, see [REST API - Get widget](/rest/api/azure/devops/dashboard/widgets/get-widget).
 
 ## Related articles
 
