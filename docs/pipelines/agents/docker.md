@@ -378,6 +378,7 @@ Next, create the Dockerfile.
 
     print_header "3. Configuring Azure Pipelines agent..."
 
+    # Despite it saying "PAT", it can be the token through the service principal
     ./config.sh --unattended \
       --agent "${AZP_AGENT_NAME:-$(hostname)}" \
       --url "${AZP_URL}" \
