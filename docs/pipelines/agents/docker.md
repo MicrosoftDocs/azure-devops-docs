@@ -227,9 +227,9 @@ Next, create the Dockerfile.
       # FROM arm64v8/alpine
       # ENV TARGETARCH="linux-musl-arm64"
 
-      RUN apk update
-      RUN apk upgrade
-      RUN apk add bash curl gcc git icu-libs jq musl-dev python3-dev libffi-dev openssl-dev cargo make
+      RUN apk update && \
+        apk upgrade && \
+        apk add bash curl gcc git icu-libs jq musl-dev python3-dev libffi-dev openssl-dev cargo make
 
       # Install Azure CLI
       RUN pip install --upgrade pip
@@ -255,9 +255,9 @@ Next, create the Dockerfile.
       ENV TARGETARCH="linux-x64"
       # Also can be "linux-arm", "linux-arm64".
 
-      RUN apt update
-      RUN apt upgrade -y
-      RUN apt install -y curl git jq libicu70
+      RUN apt update && \
+        apt upgrade -y && \
+        apt install -y curl git jq libicu70
 
       # Install Azure CLI
       RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
