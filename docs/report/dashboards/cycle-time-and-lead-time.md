@@ -23,7 +23,7 @@ The following diagram illustrates how lead time differs from cycle time. Lead ti
 
 :::image type="content" source="media/cycle-lead-time-concept-intro.png" alt-text="Conceptual image of how cycle time and lead time are measured.":::
 
-These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has. We recommend that your team review the lead time and cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.
+These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has. We recommend that your team check the lead time and cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.
 
 For more information, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -136,7 +136,7 @@ The chart dots represent completed work items, and their position on the horizon
 
 - The daily moving average value corresponds to the average of data points that fall within the moving average window. The time-based moving average window is calculated based on the current day and previous *N* days. *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number.
 
-  For example, if the chart displays the last 30 days, then *N* = 5 days. 20% of 30 days is six days rounded down to the nearest odd number, which is 5.
+  For example, if the chart displays the last 30 days, then *N* = five days. 20% of 30 days is six days rounded down to the nearest odd number, which is five.
 
 - The moving average window for April 10 corresponds to the previous five days. So, the April 10 moving average is the average of all data points that fall on April 5 through April 10.  
 
@@ -148,7 +148,9 @@ The chart dots represent completed work items, and their position on the horizon
 
 To programmatically add a widget, use the following API endpoint:
 
+```HTTP
    POST https://dev.azure.com/{organization}/{project}/{team}/_apis/dashboard/dashboards/{dashboardId}/widgets?api-version=7.1-preview.2
+```
 
 For more information, see [REST API - Get widget](/rest/api/azure/devops/dashboard/widgets/get-widget).
 
