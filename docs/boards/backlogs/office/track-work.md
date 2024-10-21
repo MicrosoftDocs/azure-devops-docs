@@ -235,7 +235,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
 
 1. Add a server. Select **Servers...**, choose **Add...**, enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a nondefault port number. The Preview entry should display the correct URL for your deployment. Choose **OK**.
 
-   :::image type="content" source="media/connect/connect-on-prem.png" alt-text="Screenshot shows the Connect to Azure Server dialogs, on-premises versions.":::
+   :::image type="content" source="media/connect/connect-on-premises.png" alt-text="Screenshot shows the Connect to Azure Server dialogs, on-premises versions.":::
 
    Choose **Close** to close the add/remove servers dialog. From the **Select an Azure DevOps Server** dialog, make sure the server you added is selected, and choose **Connect**.
 
