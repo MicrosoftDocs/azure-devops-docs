@@ -1869,7 +1869,7 @@ You can define the following permissions in Build at both levels.
    `Build, RetainIndefinitely`  
    :::column-end:::
    :::column span="2":::
-   Can toggle the retain flag on a build to indefinately. This feature marks a build so that the system doesn't automatically delete it based on any applicable retention policy.
+   Can toggle the retain flag on a build to indefinitely. This feature marks a build so that the system doesn't automatically delete it based on any applicable retention policy.
    :::column-end:::
 :::row-end:::
 :::row:::
