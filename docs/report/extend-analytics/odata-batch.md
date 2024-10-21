@@ -88,6 +88,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal; odata.streaming=true
 OData-Version: 4.0
 
-{"@odata.context":"https://{OrganizationName}.analytics.vsts.me/_odata/{version}/$metadata#Users(UserId,UserSK,UserName)","value":[{"UserId":"04713655-3724-6024-b9a4-f0b1c6202dbc","UserSK":"04713655-3724-6024-b9a4-f0b1c6202dbc","UserName":"John Smith"}]}
+{"@odata.context":"https://{OrganizationName}.analytics.vsts.me/_odata/{version}/$metadata#Users(UserId,UserSK,UserName)","value":[{"UserId":"00aa00aa-bb11-cc22-dd33-44ee44ee44ee","UserSK":"00aa00aa-bb11-cc22-dd33-44ee44ee44ee","UserName":"John Smith"}]}
 --batchresponse_0cc7749e-dcec-4b5e-9380-eb05859fe733--
 ```
