@@ -25,9 +25,10 @@ The recommended Azure Resource Manager service connection options are:
 
 You should use a user-assigned managed identity with workload identity federation when you [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
-If you need to manually create an app registration or managed identity (manual) with workload identity federation or a secret, see [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md).  
-
-You can also configure an Azure Resource Manager service connection with an [agent-assigned managed identity or a publish profile](azure-resource-manager-alternate-approaches.md). These two methods aren't recommended if you can use an authentication method that supports workload identity federation. 
+There are additional Azure Resource Manager service connection authentication options that are not included in this article: 
+* [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md).
+* [Agent-assigned managed identity (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity).
+* [Publish profile (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile).
 
 ::: moniker-end
 
