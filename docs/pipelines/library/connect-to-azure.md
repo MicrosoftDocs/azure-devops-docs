@@ -20,13 +20,13 @@ An Azure Resource Manager service connection allows you to connect to Azure reso
 You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. The recommended options are to use [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity.  
 
 The recommended Azure Resource Manager service connection options are:
-* App registration (automatic) with a workload identity federation  or a secret. 
+* App registration (automatic) with a workload identity federation  or a secret 
 * Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). Use this option when you [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
 
-There are additional Azure Resource Manager service connection authentication options that are not included in this article: 
-* [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md).
-* [Agent-assigned managed identity (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity).
-* [Publish profile (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile).
+There are other Azure Resource Manager service connection authentication options that aren't included in this article: 
+* [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md)
+* [Agent-assigned managed identity (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity)
+* [Publish profile (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile)
 
 ::: moniker-end
 
