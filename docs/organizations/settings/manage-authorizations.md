@@ -7,7 +7,7 @@ ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/10/2024
+ms.date: 10/21/2024
 ---
 
 #  Authorize other services to access Azure DevOps
