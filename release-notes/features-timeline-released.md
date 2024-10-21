@@ -38,8 +38,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="13"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
+    <td rowspan="14"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
     <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
+    <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
     <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>New pip detection strategy for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
