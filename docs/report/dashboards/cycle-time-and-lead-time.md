@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019' 
-ms.date: 09/24/2024
+ms.date: 10/21/2024
 #customer intent: As a team member, I want to create Lead Time or Cycle Time widgets to show team progress on the dashboard.
 ---
 
@@ -23,13 +23,7 @@ The following diagram illustrates how lead time differs from cycle time. Lead ti
 
 :::image type="content" source="media/cycle-lead-time-concept-intro.png" alt-text="Conceptual image of how cycle time and lead time are measured.":::
 
-These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
-
-In this article, learn how to do the following tasks:
-
-- Install and configure the Lead Time and Cycle Time widgets (Analytics)  
-- Interpret the scatter-plot control charts  
-- Learn how moving average and standard deviation are calculated in the charts
+These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has. We recommend that your team review the lead time and cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.
 
 For more information, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -43,7 +37,7 @@ For more information, see [Cumulative flow, lead time, and cycle time guidance](
 
    - Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
-1. [Add the widget to your dashboard](./add-widget-to-dashboard.md). There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Select the one you want to display and configure.
+1. [Add the widget to your dashboard](./add-widget-to-dashboard.md). There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Select the one you want to display and configure. For more information, see Use 
 
 <a id="configure-widget"></a>
 
@@ -142,7 +136,7 @@ The chart dots represent completed work items, and their position on the horizon
 
 - The daily moving average value corresponds to the average of data points that fall within the moving average window. The time-based moving average window is calculated based on the current day and previous *N* days. *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number.
 
-  For example, if the chart displays the last 30 days, then *N* = 5 days. 20% of 30 days is 6 days rounded down to the nearest odd number, which is 5.
+  For example, if the chart displays the last 30 days, then *N* = 5 days. 20% of 30 days is six days rounded down to the nearest odd number, which is 5.
 
 - The moving average window for April 10 corresponds to the previous five days. So, the April 10 moving average is the average of all data points that fall on April 5 through April 10.  
 
@@ -150,12 +144,18 @@ The chart dots represent completed work items, and their position on the horizon
 
 - The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
 
+## Use a REST API to add a widget
+
+To programmatically add a widget, use the following API endpoint:
+
+   POST https://dev.azure.com/{organization}/{project}/{team}/_apis/dashboard/dashboards/{dashboardId}/widgets?api-version=7.1-preview.2
+
+For more information, see [REST API - Get widget](/rest/api/azure/devops/dashboard/widgets/get-widget?view=azure-devops-rest-7.1&tabs=HTTP).
+
 ## Related articles
 
-We recommend that your team review the lead time and cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.
-
-- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  
-- [About Kanban boards](../../boards/boards/kanban-overview.md)  
+- [Get guidance on cumulative flow, lead time, and cycle time](cumulative-flow-cycle-lead-time-guidance.md)
+- [Learn about Kanban boards](../../boards/boards/kanban-overview.md)
 - [View and configure a Cumulative Flow Diagram](cumulative-flow.md)
-- [About workflow states in backlogs and boards](../../boards/work-items/workflow-and-state-categories.md)
-- [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes
+- [Understand workflow states in backlogs and boards](../../boards/work-items/workflow-and-state-categories.md)
+- [Explore Agile, Scrum, and CMMI processes](../../boards/work-items/guidance/agile-process.md)
