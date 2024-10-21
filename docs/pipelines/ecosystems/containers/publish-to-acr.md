@@ -255,6 +255,9 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
     :::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
 
+> [!NOTE]
+> No additional permissions are required at the organization level for your service principal. See [Authenticate your Azure deployment pipeline by using service principals](learn.microsoft.com/en-us/training/modules/authenticate-azure-deployment-pipeline-service-principals/) for more information.
+
 ### [Workload Identity Federation](#tab/wif)
 
 1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
