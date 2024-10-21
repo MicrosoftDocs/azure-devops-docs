@@ -107,7 +107,7 @@ Event: A build completes.
 #### Sample payload
 ```json
 {
-  "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
+  "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
   "notificationId": 1,
   "id": "00000000-0000-0000-0000-000000000000",
   "eventType": "build.complete",
@@ -139,7 +139,7 @@ Event: A build completes.
   },
   "createdDate": "2024-12-02T12:21:13.8866607Z"
 }{
-  "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
+  "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
   "notificationId": 1,
   "id": "00000000-0000-0000-0000-000000000000",
   "eventType": "build.complete",
@@ -1631,7 +1631,7 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 
 ```json
 {
-    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "notificationId": 3,
     "id": "00000000-0000-0000-0000-000000000000ac1dd6da-af30-43cb-8434-e1005864b0a3",
     "eventType": "ms.vss-pipelines.job-state-changed-event",
