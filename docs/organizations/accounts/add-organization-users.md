@@ -311,7 +311,7 @@ After you add members to your project, each member gets an invitation email that
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
+> [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 
 ## Related articles
 

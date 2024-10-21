@@ -471,7 +471,24 @@ To dismiss an alert:
 
 ![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
 
-This action only dismisses the alert for your selected branch. Other branches that may contain the same vulnerability stays active until otherwise acted upon. Any alert that has been previously dismissed can be manually reopened.
+This action only dismisses the alert for your selected branch. Other branches that may contain the same vulnerability stays active until otherwise acted upon. Any alert that has been previously dismissed can be manually reopened. 
+
+### Managing dependency scanning alerts on pull requests
+
+If alerts are created for new dependency changes in a pull request, the alert will reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
+
+You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
+
+[![Screenshot of active depenendency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
+
+To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
+
+[![Screenshot of closed dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning-closed.png)](./media/pull-request-annotation-dependency-scanning-closed.png#lightbox)
+
+To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab. 
+
+> [!TIP]
+> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference.
 
 ## Troubleshooting dependency scanning 
 

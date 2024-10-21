@@ -404,6 +404,8 @@ If you want to use a predefined set of access permissions and you don't already 
 
 To create a service connection that uses an existing service principal:
 
+::: moniker range="azure-devops"
+
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -462,6 +464,105 @@ To create a service connection that uses an existing service principal:
     | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
 
 1. Select **Verify and save** to validate and create the service connection.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020 < azure-devops"
+
+1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
+
+   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
+
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
+
+1. Select **Service principal (manual)** and **Next**.
+
+    :::image type="content" source="media\new-azure-resource-manager-conn-sp-manual-selection-server.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
+
+1. From the **New Azure service connection** dialog, select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. 
+
+1. Select the **Scope Level**. Select **Subscription** or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. 
+
+    * For the **Subscription** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Subscription Id** | Required. Enter the Azure subscription ID. |
+        | **Subscription Name** | Required. Enter the Azure subscription name. |
+    
+    * For the **Management Group** scope, enter the following parameters:
+
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Management Group Id** | Required. Enter the Azure management group ID. |
+        | **Management Group Name** | Required. Enter the Azure management group name. |
+    
+    
+1. In the **Authentication** section, enter or select the following parameters:
+
+    | Parameter | Description |
+    | --------- | ----------- |
+    | **Service Principal Id** | Required. Enter the service principal ID. |
+    | **Credential** | Select **Service Principal Key** or **Certificate**. If you selected **Service Principal Key**, enter the key (password). If you selected **Certificate**, enter the certificate. |
+    | **Tenant Id** | Required. Enter the tenant ID. |
+    | **Verify** | Select to validate the settings you entered. |
+    
+1. In the Details section, enter the following parameters:
+
+    | Parameter | Description |
+    | --------- | ----------- |
+    | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
+    | **Description** | Optional. Enter a description of the service connection.|
+    | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
+
+1. Select **Verify and save** to validate and create the service connection.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
+
+   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Select **New service connection**, then select **Azure Resource Manager**.
+
+   :::image type="content" source="media/new-service-connection-azure-resource-manager-2019.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
+
+1. On the **Add an Azure Resource Manager service connection** dialog, fill in the fields as follows:
+
+    :::image type="content" source="media\new-azure-resource-manager-conn-sp-manual-selection-server-2019.png" alt-text="Screenshot of Add an Azure Resource Manager service connection.":::
+    
+    1. Enter the **Connection name**.
+    1. Select the **Environment**. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`.
+    1. Select the **Scope level**, **Subscription** or **Management Group**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions.
+
+        * For the **Subscription** scope, enter the following parameters:
+    
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
+        
+        * For the **Management Group** scope, enter the following parameters:
+    
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Management Group Id** | Required. Enter the Azure management group ID. |
+            | **Management Group Name** | Required. Enter the Azure management group name. |
+    1. Enter the **Service principal Id**.
+    1. Select the credential type: 
+        * **Service principal key**: Enter the **Service principal key** (password).
+        * **Certificate**: Enter the contents of the *.perm* file including both the certificate and private key sections.
+    1. Enter the **Tenant Id**.
+    
+    1. Select **Verify connection** to validate the service connection.
+    1. Optionally, select **Allow all pipelines to use this connection**. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+    1. Select **Save** to create the service connection.
+    
+::: moniker-end
 
 After the new service connection is created:
 

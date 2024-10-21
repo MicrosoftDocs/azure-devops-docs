@@ -187,7 +187,7 @@ In the Column options dialog, choose **Add a column** to add a field that isn't 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 You can only change column options for queries in Visual Studio. To open, choose **Column Options**.
 

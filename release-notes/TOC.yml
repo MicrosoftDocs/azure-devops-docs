@@ -10,6 +10,10 @@
       items:
         - name: "2024"
           items:
+          - name: October 16
+            href: 2024/sprint-246-update.md
+          - name: September 26
+            href: 2024/sprint-245-update.md
           - name: September 4
             href: 2024/sprint-244-update.md
           - name: August 13
@@ -265,6 +269,10 @@
         items:
         - name: "2024"
           items:
+          - name: October  16
+            href: 2024/boards/sprint-246-update.md
+          - name: September 26
+            href: 2024/boards/sprint-245-update.md
           - name: September 4
             href: 2024/boards/sprint-244-update.md
           - name: July 25
@@ -410,6 +418,10 @@
         items:
         - name: "2024"
           items:
+          - name: October 16
+            href: 2024/repos/sprint-246-update.md
+          - name: September 26
+            href: 2024/repos/sprint-245-update.md
           - name: September 4
             href: 2024/repos/sprint-244-update.md
           - name: June 14
@@ -487,6 +499,10 @@
         items:
         - name: "2024"
           items:
+          - name: October 16
+            href: 2024/pipelines/sprint-246-update.md
+          - name: September 26
+            href: 2024/pipelines/sprint-245-update.md
           - name: September 4
             href: 2024/pipelines/sprint-244-update.md
           - name: August 13
@@ -694,6 +710,8 @@
         items:
         - name: "2024"
           items:
+          - name: September 26
+            href: 2024/testplans/sprint-245-update.md
           - name: June 14
             href: 2024/testplans/sprint-240-update.md
           - name: February 29
@@ -793,6 +811,10 @@
         items:
         - name: "2024"
           items:
+          - name: October 15
+            href: 2024/ghazdo/sprint-246-update.md
+          - name: September 26
+            href: 2024/ghazdo/sprint-245-update.md
           - name: September 4
             href: 2024/ghazdo/sprint-244-update.md
           - name: August 13
@@ -825,6 +847,8 @@
         items:
         - name: "2024"
           items:
+          - name: October 16
+            href: 2024/general/sprint-246-update.md 
           - name: July 3
             href: 2024/general/sprint-241-update.md 
           - name: May 2
@@ -1000,6 +1024,11 @@
         expanded: false
       - name: Wiki
         items:
+        - name: "2024"
+          items:
+          - name: October 16
+            href: 2024/wiki/sprint-246-update.md
+          expanded: false
         - name: "2023"
           items:
           - name: January 23

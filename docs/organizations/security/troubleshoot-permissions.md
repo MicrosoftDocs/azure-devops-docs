@@ -73,7 +73,7 @@ Users can lose access for the following reasons:
 |---------|---------|
 |The user's Visual Studio subscription expired.     | Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
 |The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
-|The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md)        |
+|The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)        |
 
 Otherwise, on the first day of the calendar month, users who didn't sign in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 

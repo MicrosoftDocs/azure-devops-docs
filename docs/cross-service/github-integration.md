@@ -67,7 +67,7 @@ Azure DevOps simplifies deployment from your repository with seamless access to 
 
 ## Azure Boards and GitHub integration
 
-By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. To get started, see [Azure Boards-GitHub integration](../boards/github/index.md).
+By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, branches, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. To get started, see [Azure Boards-GitHub integration](../boards/github/index.md).
 
 ---
 :::row:::
@@ -101,10 +101,10 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 ::: moniker-end 
 :::row:::
    :::column span="1":::
-      Link work items to GitHub commits, pull requests, and issues. Quickly view and open linked objects from the board. 
+      Link work items to GitHub commits, pull requests, branches, and issues. Quickly view and open linked objects from the board. 
    :::column-end::: 
    :::column span="2":::
-      Supports [linking GitHub commits, pull requests, and issues to Azure Boards work items](../boards/github/link-to-from-github.md). Mentioned work items in GitHub comments are configured as hyperlinks to support quick navigation to Azure Boards work items.   
+      Supports [linking GitHub commits, pull requests, branches, and issues to Azure Boards work items](../boards/github/link-to-from-github.md). Mentioned work items in GitHub comments are configured as hyperlinks to support quick navigation to Azure Boards work items.   
       :::image type="content" source="media/overview/development-control-plus-github.png" alt-text="Screenshot of Development control for GitHub."::: 
    :::column-end:::
 :::row-end:::

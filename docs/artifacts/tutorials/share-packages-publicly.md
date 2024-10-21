@@ -70,7 +70,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [NuGet](#tab/nuget)
 
-- [Publish NuGet packages](../../pipelines/artifacts/nuget.md#publish-packages-to-internal-feeds)
+- [Publish NuGet packages](../../pipelines/artifacts/nuget.md#publish-nuget-packages-to-a-feed-in-the-same-organization)
 
 #### [Npm](#tab/npm)
 

@@ -7,7 +7,8 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2024
+ai-usage: ai-assisted
+ms.date: 10/10/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -29,10 +30,13 @@ But, organizations connected to Microsoft Entra ID can transfer ownership to an 
 
 ### Find your Azure DevOps Administrator
 
-If you don't know who the Azure DevOps Administrator is for your organization, do the following steps to find out:
+If you don't know who the Azure DevOps Administrator is for your organization, follow these steps to find out:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/), as described in [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). For more information about Microsoft Entra roles, see [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
-2. As Azure DevOps Administrator, do the steps in [Change Azure DevOps owner](change-organization-ownership.md) to claim ownership of the target Azure DevOps organization.  
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+2. Go to the Microsoft Entra ID section as described in [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
+3. In the Microsoft Entra ID section, look for users assigned to the Azure DevOps Administrator role. For more information about Microsoft Entra roles, see [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+
+Once you identify the Azure DevOps Administrator, they can follow the steps in [Change Azure DevOps owner](change-organization-ownership.md) to claim ownership of the target Azure DevOps organization. 
 
 ## When you don't have an Azure DevOps Administrator
 
@@ -85,5 +89,5 @@ When your Azure DevOps Administrator in Microsoft Entra ID *isn't* a member of t
 
 - [Change the organization owner](change-organization-ownership.md)
 - [Review administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- [Delete your organization](delete-your-organization.md)
+- [Delete an organization](delete-your-organization.md)
 - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)

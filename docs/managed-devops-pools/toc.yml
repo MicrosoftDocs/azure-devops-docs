@@ -12,6 +12,8 @@
     href: quickstart-azure-portal.md
   - name: ARM template
     href: quickstart-arm-template.md
+  - name: Azure CLI
+    href: quickstart-azure-cli.md
 - name: Configure
   items:
   - name: Configure pool settings

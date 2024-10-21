@@ -8,7 +8,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 02/23/2022
+ms.date: 10/07/2024
 ---
 
 # Plan your organizational structure
@@ -172,11 +172,11 @@ If the products stored in multiple repos work on independent schedules or proces
 
 Base your decision for one vs. many repos on the following factors and tips:
 
-- code dependencies and architecture 
-- put each independently deploy-able product or service in its own repo
-- don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as no tools can help coordinate those changes 
-- if your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [How Microsoft develops modern software with DevOps](/devops/develop/how-microsoft-develops-devops) articles
-- if you have many disconnected services, one repo per service is a good strategy  
+- Code dependencies and architecture 
+- Put each independently deploy-able product or service in its own repo
+- Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as no tools can help coordinate those changes 
+- If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [How Microsoft develops modern software with DevOps](/devops/develop/how-microsoft-develops-devops) articles
+- If you have many disconnected services, one repo per service is a good strategy
 
 > [!Tip]
 > Consider [managing your permissions](../organizations/security/permissions.md), so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). If you have too many repos, it's hard to keep track of who owns which code or other content stored in those repos.
@@ -190,6 +190,19 @@ Forks can be useful when you're working with vendor teams that shouldn't have di
 The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
 
 ![Diagram showing organizational structure for a company.](media/azure-devops-org_project_team_visual.png)
+
+### Managing temporary and shared resources
+
+Consider how to manage temporary and shared resources effectively by employing the following best practices:
+
+- **Temporary environments:** Temporary environments are short-lived and used for tasks such as testing, development, or staging. To manage these environments efficiently:
+  - **Separate repositories and pipelines:** Each temporary environment and its associated resources, for example, Azure Functions, should have its own repository and pipeline. This separation allows you to deploy and roll back the environment and its resources simultaneously, making it easier to spin up and discard them as needed.
+  - **Example:** Create a repository and pipeline specifically for your development environment, including all necessary resources such as Azure Functions, storage accounts, and other services.
+- **Shared resources:** Shared resources are typically long-lived and used across multiple environments. These resources often have longer spin-up times and higher costs. To manage shared resources effectively:
+  - **Separate repositories and pipelines:** Shared resources, such as Azure SQL Database, should have their own repository and pipeline. This separation ensures that temporary environments can use these shared resources, making their deployments faster and more cost-effective.
+  - **Example:** Create a repository and pipeline for your Azure SQL Database, which can be used by multiple temporary environments.
+- **Shared infrastructure resources:** Shared infrastructure resources, such as Virtual Private Clouds (VPCs) and subnets, also known as landing zones, should also have their own repositories and pipelines. This approach ensures that your infrastructure is managed consistently and can be reused across different environments.
+  - **Example:** Create a repository and pipeline for your VPC and subnet configuration, which can be referenced by other repositories and pipelines.
 
 ## More about organizational structure
 
@@ -245,5 +258,5 @@ The organizations are for the same company, but are mostly isolated from each ot
 - [Create an organization](../organizations/accounts/create-organization.md)
 - [Create a project](../organizations/projects/create-project.md)
 - [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 - [Set user preferences](../organizations/settings/set-your-preferences.md)

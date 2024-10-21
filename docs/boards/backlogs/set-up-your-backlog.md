@@ -141,7 +141,7 @@ For example, here we've chosen to track bugs along with tasks, and  enable Task,
 For more information about checklists, see the following articles: 
 - [Add tasks or child items as checklists](../boards/add-task-checklists.md)  
 - [Add, run, and update inline tests](../boards/add-run-update-tests.md)
-- [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md)
+- [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md)
 
 ::: moniker-end
 

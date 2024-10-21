@@ -16,12 +16,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: August 2024
+          - text: September 2024
             url: azure-devops-docs-whats-new.md
+          - text: August 2024
+            url: azure-devops-docs-2024-08.md
           - text: July 2024
             url: azure-devops-docs-2024-07.md
-          - text: June 2024
-            url: azure-devops-docs-2024-06.md
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:

@@ -430,7 +430,7 @@ A: Only organization or project Administrators can invite new users to join the 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
+> [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
 ## Related articles
 

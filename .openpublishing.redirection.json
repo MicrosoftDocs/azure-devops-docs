@@ -553,6 +553,18 @@
     {
       "source_path": "docs/organizations/security/security-tools-reference.md",
       "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces"
+    },
+    {
+      "source_path": "docs/organizations/billing/add-backup-billing-managers.md",
+      "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs#add-backup-billing-managers"
+    },
+    {
+      "source_path": "docs/organizations/billing/change-azure-subscription.md",
+      "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs#change-azure-subscription"
+    },
+    {
+      "source_path": "docs/boards/backlogs/add-work-items.md",
+      "redirect_url": "/azure/devops/boards/backlogs/manage-work-items"
     }
   ]
 }
