@@ -40,7 +40,7 @@ The following table summarizes the options teams have for tracking bugs. Before 
 
 You can change settings from a backlog or board view, or from **Project settings** > **Team configuration**.
 
-:::image type="content" source="media/working-with-bugs-navigation.png" alt-text="Screenshot showing sequence of navigation selection for working with bugs from project settings.":::
+:::image type="content" source="media/working-with-bugs-navigation.png" alt-text="Screenshot showing sequence of navigation selection for working with bugs from project settings." lightbox="media/working-with-bugs-navigation.png":::
 
 The following steps show how to change it from the board view.
 
