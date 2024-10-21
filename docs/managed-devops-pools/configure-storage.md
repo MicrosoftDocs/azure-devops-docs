@@ -1,7 +1,7 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your Managed DevOps Pools agents.
-ms.date: 10/08/2024
+ms.date: 10/18/2024
 ---
 
 # Configure storage
@@ -63,6 +63,43 @@ Additional disk storage is configured in an ARM template in `dataDisks` section 
             }
         }
     ]
+}
+```
+
+To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `"dataDisks": []`.
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Additional disk storage is configured using the `datadiska` property in the `storageProfile` section in the `fabric-profile` parameter.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+In the following example, a 10 GB Standard_LRS disk is configured with  the drive letter `Q` and no caching.
+
+The following example shows the `storageProfile` section of the **fabric-profile.json** file.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {
+      "osDiskStorageAccountType": "Standard",
+      "dataDisks": [
+        {
+          "diskSizeGiB": 10,
+          "caching": "None",
+          "storageType": "Standard_LRS",
+          "driveLetter": "Q"
+        }
+      ]
+    }
+  }
 }
 ```
 

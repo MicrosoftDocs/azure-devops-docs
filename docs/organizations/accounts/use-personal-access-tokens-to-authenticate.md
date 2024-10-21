@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 09/09/2024
+ms.date: 10/17/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,7 +23,7 @@ A Personal Access Token (PAT) serves as an alternative password for authenticati
 
 Use a PAT as your security credentials for Azure DevOps. This PAT identifies you and determines your accessibility and scope of access. Therefore, treat PATs with the same level of caution as passwords.
 
-When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. But, if you use non-Microsoft tools that don't support Microsoft or Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs are an alternative.
+When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use non-Microsoft tools that don't support Microsoft or Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs are a suitable alternative.
 
 Create and manage PATs using the following methods:
 

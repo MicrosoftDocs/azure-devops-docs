@@ -1,7 +1,7 @@
 ---
 title: View agents
 description: View the status of agents in the pool.
-ms.date: 10/08/2024
+ms.date: 10/18/2024
 ---
 
 # View agents

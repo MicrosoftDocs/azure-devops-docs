@@ -1,7 +1,7 @@
 ---
 title: Overview
 description: Learn about Managed DevOps Pools.
-ms.date: 10/08/2024
+ms.date: 10/18/2024
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
 ---
