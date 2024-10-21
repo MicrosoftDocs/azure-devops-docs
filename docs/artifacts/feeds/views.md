@@ -1,23 +1,23 @@
 ---
-title: Promote packages in Azure Artifacts
-description: How to promote a package to a view in Azure Artifacts
+title: Promote packages and manage feed views 
+description: Learn how to promote packages in an Azure Artifacts feed.
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 08/25/2022
+ms.date: 10/21/2024
 monikerRange: '<= azure-devops'
 ---
  
-# Promote packages and manage feed views in Azure Artifacts
+# Promote packages and manage feed views
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Feed views are a way to enable users to share some packages while keeping other packages private. Views filter the feed to a subset of packages that meet a set of criteria defined by that view.
+Feed views allow users to control package visibility by sharing some packages while keeping others private. Each view filters the feed to display a subset of packages based on specific criteria defined for that view.
 
-By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages and all the packages saved from upstream sources. All views support NuGet, npm, Maven, Python, and Universal packages.
+By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. The `@Local` view is the default and contains all published packages as well as those saved from upstream sources. All views support NuGet, npm, Maven, Python, Cargo, and Universal Packages.
 
 > [!Note]
-> Azure Artifacts only supports publishing and restoring packages from and to the default view - *@Local*.
+> Azure Artifacts only supports publishing and restoring packages from the default view - *@Local*. You cannot publish directly to the *@Prerelease* or *@Release* views.
 
 ## Promote packages
 
