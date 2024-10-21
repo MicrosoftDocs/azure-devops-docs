@@ -5,7 +5,7 @@ description: How to use the Azure DevOps OAuth 2.0 implementation for existing w
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/10/2024
+ms.date: 10/21/2024
 ---
 
 # Use Azure DevOps OAuth 2.0 to create a web app
@@ -14,7 +14,7 @@ ms.date: 07/10/2024
 
 > [!IMPORTANT]
 > Azure DevOps OAuth is slated for deprecation in October 2025. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69491).
-> <br />This information is for existing Azure DevOps OAuth apps only. New app developers should use [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps.
+> <br />This information is for existing Azure DevOps OAuth apps only. To create new apps, use [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps.
 
 Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
 
@@ -23,7 +23,7 @@ Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of O
 ### 1. Register your app
 
 > [!IMPORTANT]
-> New app creation will be blocked starting November 2024.
+> New app creation is blocked starting November 2024.
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
@@ -220,23 +220,22 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Every 5 years, your application secret will expire. You are expected to regenerate your app secret to continue to be able to create and use access tokens and refresh tokens. To do so, you can click the "Regenerate secret" button, which will pop up a dialog to confirm you want to complete this action.
-
+Every five years, your application secret expires. Regenerate your app secret to continue to create and use access tokens and refresh tokens. To do so, select "Regenerate secret," which then confirms that you want to complete this action.
 
 :::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
 
-When you confirm that you want to regenerate, the previous app secret will no longer work and all previous tokens minted with this secret will also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
+When you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
 
 ## Delete your app
 
 1. If you no longer need your app, delete it from your profile `https://app.vssps.visualstudio.com/profile/view`.
-2. Make sure you are on the correct tenant's page by clicking the dropdown menu under your name in the sidebar.
+2. Ensure you're on the correct tenant's page by selecting from the dropdown menu under your name in the sidebar.
 3. Find the app under the **Applications and services** header on the left sidebar.
-4. Click "Delete" on the application registration page. A modal will appear to confirm your deletion.
+4. select "Delete" on the application registration page. A modal appears to confirm your deletion.
 
    :::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Delete button on app metadata page highlighted":::
 
-6. Once you delete the app registration, the app will break, and we will stop minting new tokens or accepting minted tokens for this app.
+6. Once you delete the app registration, the app breaks, and we stop minting new tokens or accepting minted tokens for this app.
 
 ## Frequently asked questions (FAQs)
 
