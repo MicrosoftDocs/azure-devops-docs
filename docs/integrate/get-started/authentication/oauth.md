@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/10/2023
+ms.date: 10/21/2024
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
