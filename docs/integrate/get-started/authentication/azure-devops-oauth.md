@@ -68,7 +68,7 @@ redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
-        ?client_id=88e2dd5f-4e34-45c6-a75d-524eb2a0399e
+        ?client_id=00001111-aaaa-2222-bbbb-3333cccc4444
         &response_type=Assertion
         &state=User1
         &scope=vso.work%20vso.code_write
