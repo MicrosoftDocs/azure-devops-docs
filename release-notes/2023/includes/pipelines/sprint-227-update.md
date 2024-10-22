@@ -47,7 +47,7 @@ The Pipeline agent now supports more arguments to use either a Service Principal
 
 To use a Service Principal to register a Pipelines agent with Azure DevOps Services, provide the following arguments:
 ```
---auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret --tenantid 12345678-1234-1234-abcd-1234567890ab
+--auth 'SP' --clientid 00001111-aaaa-2222-bbbb-3333cccc4444 --clientsecret --tenantid aaaabbbb-0000-cccc-1111-dddd2222eeee
 ```
 ####  Use a Service Principal in the Agent VM extension
 
@@ -101,6 +101,3 @@ With this sprint, the code coverage policy won't be overridden to 'Failed' if th
 This feature will be enabled for all customers.
 
 :::image type="content" source="../../media/227-pipelines-03.png" alt-text="Screenshot of results after change." lightbox="../../media/227-pipelines-03.png":::
-
-
-

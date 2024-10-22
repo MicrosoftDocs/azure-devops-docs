@@ -32,14 +32,16 @@ can add users who are already in the organization to their team       |
 
 You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
+Your organization must be backed by Microsoft Entra ID. For more information, see [Connect your organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).
+
 ## Turn off policy
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-   
-   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+   
 3. Under Security, select **Policies**, and then move the toggle to **off**.   
 
    :::image type="content" source="media/user-policy-invite-new-users.png" alt-text="Turn policy off to limit Team and Project administrators from inviting new users":::

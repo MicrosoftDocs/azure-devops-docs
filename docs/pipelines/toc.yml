@@ -297,9 +297,9 @@
     - name: View pipeline history (Classic)
       href: release/history.md
       displayName: history
-    - name: Classic Build options
-      displayName: classic build, build options
+    - name: Classic pipelines configuration
       href: release/options.md
+      displayName: classic, build options
     - name: Publish & download pipeline artifacts
       href: artifacts/pipeline-artifacts.md
       displayName: publish, download, artifacts
@@ -317,6 +317,9 @@
         - name: Azure Resource Manager service connection
           displayName: resource manager, service connection, service principal
           href: library/connect-to-azure.md
+        - name: Azure Resource Manager special cases 
+          displayName: agent-assigned identity, publish profile
+          href: library/azure-resource-manager-alternate-approaches.md
         - name: Manually configure workload identity service connections
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections

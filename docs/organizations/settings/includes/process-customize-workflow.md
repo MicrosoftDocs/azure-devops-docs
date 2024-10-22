@@ -7,7 +7,7 @@ ms.topic: include
 ms.date: 07/17/2020
 ---
 
-You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. Inherited states vary based on the system process—[Agile, Basic, Scrum, or CMMI](../../../boards/work-items/guidance/choose-process.md#workflow-states)—you selected to create your custom process.
+You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. Inherited states vary based on the system process that you selected to create your custom process. The options are *Agile*, *Basic*, *Scrum*, or *Capability Maturity Model Integration (CMMI)*. For more information, see [Workflow states, transitions, and reasons](../../../boards/work-items/guidance/choose-process.md#workflow-states).
 
 Each default workflow for each WIT defines between two and four states and specifies the following workflow operations:
 
@@ -26,7 +26,7 @@ Each default workflow for each WIT defines between two and four states and speci
 ---  
 :::row:::  
    :::column span="":::
-      ![Inherited icon](/azure/devops/organizations/settings/work/media/process/inherited-icon.png) Inherited states
+      :::image type="icon" source="/azure/devops/organizations/settings/work/media/process/inherited-icon.png"::: Inherited states
    :::column-end:::
    :::column span="2":::
       - [Hide or unhide a state](../work/customize-process-workflow.md#hide-state)
@@ -51,7 +51,7 @@ Each default workflow for each WIT defines between two and four states and speci
 
 - Define at least one state for either the *Proposed* or *In Progress* State categories.  
 	> [!NOTE]    
-	> Before you add a workflow state, see [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories.  
+	> Before you add a workflow state, see [About workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories.  
 - Define at least two workflow States.  
 - Define a maximum of 32 workflow States per work item type.  
 
@@ -60,7 +60,7 @@ Each default workflow for each WIT defines between two and four states and speci
 ::: moniker range=">= azure-devops-2020"
 
 - Hide inherited states if you don't want them visible (you can't change their name, color, or category).
-- Ensure only one state exists in the *Completed* state category. Adding a custom state to this category will remove or hide any other state.
+- Ensure only one state exists in the *Completed* state category. Adding a custom state to this category removes or hides any other state.
 - Keep the name of custom states as is; you can't change them.
 - Use default reasons for state transitions, such as *Moved to state Triaged* and *Moved out of state Triaged*; you can't specify custom reasons.
 - Accept the default location of the State and Reason fields on the form; you can't change their placement.
@@ -73,7 +73,7 @@ Each default workflow for each WIT defines between two and four states and speci
 - Hide inherited states if you don't want them visible (you can't change their name, color, or category).
 - Ensure only one state exists in the *Completed* state category; the system disallows adding any custom state to this category.
 - Keep the name of custom states as is; you can't change them.
-- Accept the natural sequence of states in the drop-down list on the work item form; you can't change their order.
+- Accept the natural sequence of states in the dropdown list on the work item form; you can't change their order.
 - Use default reasons for state transitions, such as *Moved to state Triaged* and *Moved out of state Triaged*; you can't specify custom reasons.
 - Accept the default location of the State and Reason fields on the form; you can't change their placement.
 - Allow transitions from any state to another; you can't restrict transitions.  
