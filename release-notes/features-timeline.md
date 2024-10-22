@@ -179,7 +179,12 @@ These investments include:
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
          <td>2024 Q4</td>
-      </tr>      
+      </tr>   
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td>Boards</td>
+         <td>2024 Q4</td>
+      </tr>     
     </tbody>
 </table>
 
@@ -272,7 +277,7 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="14"><strong>2024 Q4</strong></td>
+      <td rowspan="15"><strong>2024 Q4</strong></td>
         <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
         </td>
@@ -307,12 +312,16 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Boards</td>
       </tr>
       <tr>
-         <td>Remove deleted tags from suggested list on work item form</td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-246-update#enhanced-tag-management-on-work-item-form">Remove deleted tags from suggested list on work item form</a></td>
          <td>Boards</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td>Boards & Pipelines</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
