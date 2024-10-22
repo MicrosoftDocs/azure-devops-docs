@@ -107,7 +107,18 @@ Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/maven/upda
 
 ### [Cargo](#tab/cargo)
 
+- **Organization scoped feed**:
 
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/cargo/packages/{packageName}/versions/{packageVersion}?api-version=7.2-preview.1
+    ```
+- **Project scoped feed**:
+   
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/cargo/packages/{packageName}/versions/{packageVersion}?api-version=7.2-preview.1
+    ```
+
+Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/cargo/update-package-version#request-body) to construct the body of your request. See [Cargo - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/cargo/update-package-version) for more details.
 
 ### [Universal Packages](#tab/universalpackages)
     
