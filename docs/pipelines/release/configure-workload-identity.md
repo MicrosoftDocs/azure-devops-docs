@@ -24,7 +24,7 @@ There are two options for authentication: use a managed identity or use an app r
 
 <a name="set-a-workload-identity-service-connection-to-use-managed-identity-authentication"></a>
 
-To manually set up managed identity authentication for your Azure pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
+To manually set up managed identity authentication for your Azure Pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
 
 1. Create the managed identity in Azure portal. 
 1. Create the service connection in Azure DevOps and save as a draft. 
