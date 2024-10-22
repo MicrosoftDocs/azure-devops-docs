@@ -180,9 +180,9 @@
     - name: What are feed views?
       displayName: views, artifact feeds, feeds, artifacts
       href: concepts/views.md
-    - name: Promote a package to a view
-      displayName: promote, artifact feed, promote packages, feed views
+    - name: Promote packages and manage views
       href: feeds/views.md
+      displayName: promote, feed, view, package
   - name: Upstream sources
     items:
     - name: Upstream sources overview
