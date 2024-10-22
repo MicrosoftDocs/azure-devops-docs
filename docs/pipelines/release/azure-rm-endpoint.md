@@ -32,11 +32,9 @@ If you don't have a service connection, you can create one as follows:
 
     :::image type="content" source="media/arm-service-connection.png" alt-text="Screenshot showing the service connections types.":::
 
-1. Select **Service principal (automatic)**, and then select **Next**.
+1. Select **App registration (automatic)**, and **Workload identity federation** as the credential.
 
-1. Select **Subscription**, and then select your subscription from the drop-down list. Fill out the form and then select **Save** when you're done.
-
-    :::image type="content" source="media/new-arm-service-connection.png" alt-text="Screenshot showing the new Azure Resource Manager service connection form.":::
+1. Select **Subscription**, and then select your subscription from the drop-down list. Fill out the rest of the form and then select **Save** when you're done.
 
 When you save your new Azure Resource Manager service connection, Azure DevOps does the following actions:
 
