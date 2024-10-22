@@ -165,35 +165,32 @@ Invoke-RestMethod -Uri $uri -Method Patch -Headers $headers -Body $body
 
 ---
 
-## Manage views
-
-You can create your own views or rename and delete existing ones from your feed's settings.
-
 > [!NOTE]
 > All feed views in a public project are accessible to everyone on the internet.
 
-1. Select **Artifacts**.
+## Manage views
 
-1. Select your feed from the dropdown menu.
+Azure Artifacts offers three default views: *@Local*, *@Prerelease*, and *@Release*. You can also create new views and manage existing ones by renaming or deleting them directly from your feed's settings.
 
-1. Select the gear icon :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to access your feed's settings.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select the gear icon on the far right :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to access your feed's settings.
 
     :::image type="content" source="../media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings.":::
 
-1. Select **Views**.
-
-    :::image type="content" source="./media/views-settings.png" alt-text="A screenshot showing how to navigate to views.":::
-
-1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
+1. Select **Views**, select a view, and then select **Edit** to edit your view. If you want to add a new view, select **Add view**.
 
 1. Select **Save** when you're done.
 
+    :::image type="content" source="./media/manage-views.png" alt-text="A screenshot showing how to add, edit, or delete feed views.":::
+
 > [!IMPORTANT]
-> For public feeds, if you change the access permissions of a certain view to **Specific people** your view will not be available as an upstream source.
+> For public feeds, if you change the access permissions of a view to **Specific people**, that view will no longer be available as an upstream source.
 
-## Related articles
+## Related content
 
-- [Upstream sources overview](../concepts/upstream-sources.md)
-- [Configure permissions](./feed-permissions.md)
+- [Configure feed permissions](feed-permissions.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
