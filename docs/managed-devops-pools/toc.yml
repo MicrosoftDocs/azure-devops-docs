@@ -34,15 +34,15 @@
     href: view-agents.md
   - name: Demands
     href: demands.md
+  - name: Reliability
+    href: reliability-managed-devops-pools.md
+- name: Manage cost and performance
 - name: Monitor and troubleshoot
   items:
   - name: Monitor
     href: monitor-pool.md
   - name: Diagnostic logs
     href: diagnostics.md
-- name: Reliability
-  href: reliability-managed-devops-pools.md
-- name: Manage cost and performance
   items:
   - name: Pricing
     href: pricing.md
