@@ -312,7 +312,7 @@ For the past several years, all our pipelines investments have been in the area 
          <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="azure/devops/release-notes/2024/sprint-246-update#enhanced-tag-management-on-work-item-form">Remove deleted tags from suggested list on work item form</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-246-update#enhanced-tag-management-on-work-item-form">Remove deleted tags from suggested list on work item form</a></td>
          <td>Boards</td>
       </tr>
       <tr>
