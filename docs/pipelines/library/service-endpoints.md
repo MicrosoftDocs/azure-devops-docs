@@ -225,7 +225,7 @@ For information about creating a service connection to an Azure Resource Manager
 
 ### Azure Service Bus service connection
 
-For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2) instead of an Azure Service Bus service connection to send a message to Azure Service Bus. This version of the task supports Entra ID and workload identity federation. 
+For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2) instead of an Azure Service Bus service connection to send a message to Azure Service Bus. This version of the task supports Microsoft Entra ID and workload identity federation. 
 
 ### Bitbucket Cloud service connection
 

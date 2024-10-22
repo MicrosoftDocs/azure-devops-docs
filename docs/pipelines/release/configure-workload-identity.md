@@ -24,7 +24,7 @@ There are two options for authentication: use a managed identity or use an app r
 
 <a name="set-a-workload-identity-service-connection-to-use-managed-identity-authentication"></a>
 
-To manually set up managed identity authentication for your Azure DevOps pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
+To manually set up managed identity authentication for your Azure pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
 
 1. Create the managed identity in Azure portal. 
 1. Create the service connection in Azure DevOps and save as a draft. 
@@ -121,7 +121,7 @@ You can also use the REST API for this process.
         | Parameter | Description |
         | --------- | ----------- |
         | **Application (client) ID** | Required. Enter the Client ID for your managed identity. |
-        | **Directory (tenant) ID** | Required. Enter the Tenant Id from your managed identity. |
+        | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
     
     
     1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
