@@ -41,17 +41,16 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
 > [!IMPORTANT]
 > You can only change your organization's geography to one of the following locations:
-> 
-- Australia
-- Brazil
-- Canada
-- Asia Pacific
-- Europe
-- India
-- United Kingdom
-- United States
->
-> By default, your organization is associated with the closest geography based on your location. However, changing to a different data center (region) within the same geography isn't possible.
+> - Australia
+> - Brazil
+> - Canada
+> - Asia Pacific
+> - Europe
+> - India
+> - United Kingdom
+> - United States
+
+By default, your organization is associated with the closest geography based on your location. However, changing to a different data center (region) within the same geography isn't possible.
 
 To change your organization geography, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2160944).
 
