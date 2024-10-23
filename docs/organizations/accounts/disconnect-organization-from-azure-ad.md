@@ -7,25 +7,25 @@ ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2024
+ms.date: 10/23/2024
 monikerRange: 'azure-devops'
 ---
+
 # Disconnect your organization from Microsoft Entra ID
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 <a name="DisconnectDirectory"></a>
 
-To stop using your organization's Microsoft Entra ID and return to signing in with Microsoft accounts, disconnect your organization from the directory.
+To stop using your organization's Microsoft Entra ID and return to signing in with Microsoft accounts, you need to disconnect your organization from the directory. This process reverts the authentication method for your organization, allowing users to sign in using their Microsoft accounts instead of Microsoft Entra ID. You might disconnect if you no longer require the centralized management and security features provided by Microsoft Entra ID or if you need to simplify the sign-in process for your users. Follow the steps in this article to disconnect your organization from Microsoft Entra ID and switch back to using Microsoft accounts for authentication.
 
 For more information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-* **Organization owner:** Change the organization owner to a Microsoft account and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
-* **Permissions:** Add your Microsoft account to the Project Collection Administrator group in Organization settings.
+* **Permissions:** Add your Microsoft account to the Project Collection Administrator group in the Organization settings.
+* **Organization owner:** Change the organization owner to a Microsoft account instead of a school or work account. Ensure that your work or school account has the same email address as your Microsoft account; otherwise, you can't sign in to your organization.
 
-For more information, see [Manage Azure administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 **What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
@@ -54,12 +54,10 @@ For more information, see [Manage Azure administrators](/azure/active-directory/
 
 Your organization is disconnected from Microsoft Entra ID. Only users with Microsoft accounts can sign in.
 
-For answers to frequently asked questions about connecting to, disconnecting from, or switching your Microsoft Entra ID, see [FAQs](./faq-azure-access.yml#faq-connect).
-
 ## Related articles
 
 * [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
-* [About access with Microsoft Entra ID](access-with-azure-ad.md)
+* [Learn about access with Microsoft Entra ID](access-with-azure-ad.md)
 * [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 * [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Microsoft Entra ID](./faq-azure-access.yml)
