@@ -8,7 +8,7 @@ ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/20/2023
+ms.date: 10/22/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -21,16 +21,19 @@ As roles and responsibilities change, you can change the owner for your organiza
 > [!NOTE]  
 > When you change the organization owner, the old owner is not removed from the Project Collection Administrators group.
 
-[!INCLUDE [pca-prerequisite](includes/pca-prerequisite.md)]
-- The new owner must do the following tasks:
+## Prerequisites
 
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
+- **New owner tasks:**
   - Sign in to your organization, create a profile, and agree to the Terms of Service.
   - Access the organization at least once after creating your initial profile.
 
 > [!TIP]
-> For organizations connected to Microsoft Entra ID,  if your organization owner and any other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).  
+> For organizations connected to Microsoft Entra ID, if your organization owner and all other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).
 
 ## Change organization owner
+
+To change the organization owner, do the following steps:
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
@@ -38,7 +41,7 @@ As roles and responsibilities change, you can change the owner for your organiza
 
    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing Organization settings button emphasized.":::
 
-3. Select **Overview**, and then **Change owner**.  
+3. Select **Overview** > **Change owner**.  
 
    :::image type="content" source="media/change-organization-ownership/change-organization-owner.png" alt-text="Screenshot showing Overview, and then Change owner buttons emphasized.":::
 
@@ -46,7 +49,7 @@ As roles and responsibilities change, you can change the owner for your organiza
 
    :::image type="content" source="media/change-organization-ownership/save-new-organization-owner.png" alt-text="Screenshot showing Change button emphasized.":::
 
-Your organization has a new owner.
+Your organization has a new owner. The new owner has full administrative control over the organization, including the ability to manage users, projects, and settings. They can also configure security policies, access levels, and billing information. Ensure the new owner is aware of their responsibilities and has the necessary permissions to effectively manage the organization.
 
 ## Related articles
 
