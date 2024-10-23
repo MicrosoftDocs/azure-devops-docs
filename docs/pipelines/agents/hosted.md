@@ -46,7 +46,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
-* he macOS-14 Sequia image is available in preview
+* The macOS-15 Sequia image is available in preview
 * The Ubuntu-24.04 image is available
 * The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
 * The Ubuntu-22.04 image is available
