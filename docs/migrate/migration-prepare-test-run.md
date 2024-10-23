@@ -36,7 +36,7 @@ Do the following steps to generate the migration specification and related files
 
 ## Configure the migration specification file 
 
-The migration specification file is a JSON file that instructs the Data Migration Tool how to to the following actions.
+The migration specification file is a JSON file that instructs the Data Migration Tool how to do the following actions.
 - Configure your migrated organization
 - Specify the source locations
 - Customize the migration 
