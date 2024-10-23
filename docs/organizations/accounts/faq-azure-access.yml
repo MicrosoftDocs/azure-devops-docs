@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 09/05/2024
+  ms.date: 10/23/2024
   monikerRange: 'azure-devops'
 title: Access via Microsoft Entra FAQs
 summary: |
@@ -126,7 +126,7 @@ sections:
       - question: |
           Why are "no identities found" when I try to add users from Microsoft Entra ID to my Azure DevOps organization?
         answer: |
-          You're probably a *guest* in the Microsoft Entra ID that backs your Azure DevOps organization, rather than a *member*. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps. For example, Microsoft Entra guests can't use the Azure DevOps web portal to search for or select users who haven't already been added to the Azure DevOps organization. Learn how to [convert a Microsoft Entra guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
+          You're probably a *guest* in the Microsoft Entra ID that backs your Azure DevOps organization, rather than a *member*. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps. For example, Microsoft Entra guests can't use the Azure DevOps web portal to search for or select users who aren't added to the Azure DevOps organization. Learn how to [convert a Microsoft Entra guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
       
       - question: |
           What if we can't use the same sign-in addresses?
@@ -399,7 +399,7 @@ sections:
       - question: |
           Why and when should I request Support to manually clear my SSH keys?
         answer: |
-          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which might block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
+          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which might block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog to automatically delete the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you contact Support to delete those old SSH keys.
       
       - question: |
           My alternate credentials don't work anymore. What do I do?
@@ -424,8 +424,6 @@ sections:
         answer: |
           * Try again.
           * You might be a guest in Microsoft Entra ID. Request that an organization administrator, who is a member of Microsoft Entra ID,  do the mapping. Or, request that an admin of the Microsoft Entra ID converts you to a member.
-          
-            ![Screenshot showing an error when resolving disconnected users.](media/shared/guest-azure-ad-cannot-invite.png)
           
           * If the error message includes a user in your domain, but you don't see them active in your directory, the user likely left your company. Go to the organization user settings to remove the user from your organization.
           
@@ -457,13 +455,9 @@ sections:
       - question: |
           What if I get a warning about members who will lose access to the organization?
         answer: |
-          You can still connect to Microsoft Entra ID, but try to resolve the mapping issue after you connect. If you still need help, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
+          You can still connect to Microsoft Entra ID, but try to resolve the mapping issue after you connect and select the bolded text to see which users are affected. If you still need help, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
           
           ![Screenshot showing Microsoft Entra connection warning.](media/shared/connection-warning.png)
-          
-          Select the bolded text to see which users are affected.
-          
-          ![Show disconnected users](media/shared/show-disconnected-users.png)
           
       - question: |
           With more than 100 members in my Azure DevOps organization, how can I connect to a Microsoft Entra ID?
@@ -482,5 +476,5 @@ additionalContent: |
   ## Related articles
   
   - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
-  - [User and permissions management FAQs](faq-user-and-permissions-management.yml)
+  - [Learn about user and permissions management FAQs](faq-user-and-permissions-management.yml)
   - [Set up Visual Studio FAQs](faq-set-up-vs.yml)

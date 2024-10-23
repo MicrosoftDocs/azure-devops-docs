@@ -7,7 +7,7 @@ ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2024
+ms.date: 10/23/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you no longer need an organization, you can delete it from Azure DevOps. If you change your mind within 28 days, you can [recover your organization](./recover-your-organization.md).
-After 28 days, your organization and data are permanently deleted.
+After 28 days, your organization and all associated data are permanently deleted.
 
 When you delete your organization, the following occur:
 
@@ -30,9 +30,9 @@ When you delete your organization, the following occur:
 
 ## Prerequisites
 
-- **Permissions:** Have [Project Collection Administrator permissions](../security/look-up-project-collection-administrators.md).
+- **Permissions:** Have [Project Collection Administrator permissions](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 - **Access levels:** Have at least Basic access.
-- If your organization uses an Azure subscription for billing, [remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before deleting it in Azure DevOps.
+- **Subscription:** If your organization uses an Azure subscription for billing, [remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before deleting it in Azure DevOps.
 
 ## Delete organization
 
