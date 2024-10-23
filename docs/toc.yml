@@ -37,6 +37,8 @@
   - name: Manage extension permissions
     displayName: grant, publish, update, settings, admin
     href: ./marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: High-risk extensions
+    href: ./marketplace/high-risk extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Authenticate
   items:
   - name: Guide to authentication
