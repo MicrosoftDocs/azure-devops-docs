@@ -34,8 +34,9 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 - **SSH keys:** Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. You can find the steps for how to recreate SSH keys [further in this article](#inform-users-microsoft-entra-change). For more information, see the [FAQ](faq-azure-access.yml).
 
-### Custom Domains
-- If you [add any new custom domains](/azure/active-directory/fundamentals/add-custom-domain) to your Microsoft Entra directory, contact [Support](https://azure.microsoft.com/support/devops/) before you migrate customers over to the new custom domain as this action breaks the mapping for existing identities.
+### Custom domains
+
+If you [add any new custom domains](/azure/active-directory/fundamentals/add-custom-domain) to your Microsoft Entra directory, contact [Support](https://azure.microsoft.com/support/devops/) before you migrate customers over to the new custom domain as this action breaks the mapping for existing identities.
 
 > [!IMPORTANT]
 > After the transfer, users and groups who inherit membership and permissions from a Microsoft Entra group no longer inherit those permissions. Microsoft Entra groups added to your Azure DevOps organization won't be transferred and cease to exist in your organization when the Microsoft Entra connection is changed. All permissions and membership relationships associated with these Microsoft Entra groups also cease to exist after the transfer.
@@ -75,6 +76,7 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
    :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Screenshot showing Resolve disconnected users dialog.":::
 
 <a name='inform-users-microsoft-entra-change'></a>
+
 [!INCLUDE [inform-users-microsoft-entra-change](includes/inform-users-microsoft-entra-change.md)]
 
 ## Related articles

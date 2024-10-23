@@ -70,7 +70,7 @@ To give other users access to your organization, do the following steps:
    * **Add to projects:** Select the project to which you want to add the users.  
    * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. For more information, see [Default permissions and access assignments](../security/permissions-access.md).  
 
-      > [!NOTE]
+   >[!NOTE]
    > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask them to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).
 
 5. Select **Add** to complete your invitation.
