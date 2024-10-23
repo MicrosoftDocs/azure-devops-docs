@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Manage a policy
 
-Complete the following steps to change application connection, security, and user policies for your organization in Azure DevOps. 
+To change application connection, security, and user policies for your organization, do the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -12,6 +12,6 @@ Complete the following steps to change application connection, security, and use
 
    ![Screenshot of Organization settings button, preview page.](../media/settings/open-admin-settings-vert.png)
 
-3. Select **Policies**,  and then next to your policy, move the toggle to *on* or *off*.
+3. Select **Policies**, and then toggle your policy to **on** or **off** as needed.
 
   ![Screenshot of select policy, and then turn On or Off.](../media/change-policies-preview.png)

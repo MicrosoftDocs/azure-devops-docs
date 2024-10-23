@@ -6,7 +6,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/09/2020
+ms.date: 10/22/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -14,14 +14,14 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-A privacy policy is a legal requirement for all websites and apps that collect or use personal data from users. Learn how to add your privacy policy URL to your organization in Azure DevOps for public projects. Your privacy policy URL links to your custom document that describes how you handle both internal and external guest data privacy. The custom privacy policy URL displays only in **Organization settings** on the **Overview** page in Azure DevOps. The Microsoft Privacy Statement continues to display throughout Azure DevOps, whether or not you add a privacy policy URL for your organization.
+A privacy policy is legally required for all websites and apps that collect or use personal data from users. This article shows how to add your privacy policy URL to your organization in Azure DevOps for public projects. This URL links to your custom document that describes how you handle both internal and external guest data privacy. The custom privacy policy URL appears only in **Organization settings** on the **Overview** page in Azure DevOps. The Microsoft Privacy Statement continues to display throughout Azure DevOps, regardless of whether you add a privacy policy URL for your organization.
 
 > [!NOTE]
-> If you're interested in viewing or deleting personal data, see [Azure Data Subject Requests for the General Data Protection Regulation](/microsoft-365/compliance/gdpr-dsr-azure) (GDPR). If you're looking for general info about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> To view or delete personal data, see [Azure Data Subject Requests for the General Data Protection Regulation (GDPR)](/microsoft-365/compliance/gdpr-dsr-azure). For general information about GDPR, visit the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## Prerequisites
 
-You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
 ## Add your privacy policy URL in Azure DevOps
 
@@ -30,11 +30,13 @@ You must be a member of the [Project Collection Administrators group](../securit
   
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. In the **Overview** tab, add your privacy policy URL, and then select **Save**.
+3. In the **Overview** tab, add your privacy policy URL.
 
    ![Screenshot showing where you can add your privacy policy URL in Organization settings](media/add-privacy-url/privacy-url-in-organization-settings.png)
 
-A link is added to your organization's privacy document.
+4.  Select **Save**.
+
+   A link to your organization's privacy document gets added. This link provides users with direct access to your custom privacy policy, detailing how you handle both internal and external guest data privacy. The link appears in the **Organization settings** on the **Overview** page, ensuring that users can easily find and review your privacy practices.
 
 ## Related articles
 - [Data Protection Overview](../security/data-protection.md)
