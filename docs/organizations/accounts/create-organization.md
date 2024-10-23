@@ -33,17 +33,17 @@ Use an organization to connect groups of related projects and help scale up your
 
 1. Sign in to [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137).
 
-2. Select **New organization**.
+1. Select **New organization**.
 
-   ![Screenshot show selection of New organization.](/media/select-new-organization.png)
+   :::image type="content" source="../../media/select-new-organization.png" alt-text="Screenshot shows New organization button for selection.":::
 
-3. Enter the name for your organization, select its hosting geography, and then select **Continue**.
+1. Enter the name for your organization, select its hosting geography, and then select **Continue**.
 
    [!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
-   ![Screenshot shows Creating an organization in Azure DevOps, highlighted Continue button.](/media/name-your-organization.png)
+   :::image type="content" source="../../media/name-your-organization.png" alt-text="Screenshot shows Creating an organization in Azure DevOps, highlighted Continue button.":::
 
-   ![Screenshot shows temporary screen taking you to your organization notification.](/media/taking-you-to-your-azure-devops-organization.png)
+   :::image type="content" source="../../media/taking-you-to-your-azure-devops-organization.png" alt-text="Screenshot shows temporary screen taking you to your organization notification.":::
 
    Congratulations, you're an organization owner!
 
