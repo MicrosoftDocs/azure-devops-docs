@@ -148,6 +148,7 @@ The following tables describe the type of events (or actions) that are available
 | Library.ServiceConnectionExecuted	| Execute |	Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionForProjectModified |	Modify |	Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionModified |	Modify |	Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
+| Library.ServiceConnectionPropertyChanged | Modify
 | Library.ServiceConnectionShared |	Modify | Shared Service Connection "{ConnectionName}" of type {ConnectionType} with project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionSharedWithMultipleProjects	| Modify |	Shared Service Connection "{ConnectionName}" of type {ConnectionType} with multiple projects. |
 | Library.VariableGroupCreated |	Create |	Created Variable Group "{VariableGroupName}" in project {ResolveProjectId:ProjectId}. |
