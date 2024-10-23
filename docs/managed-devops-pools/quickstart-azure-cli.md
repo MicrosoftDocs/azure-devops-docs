@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
-ms.date: 10/18/2024
+ms.date: 10/23/2024
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
 ---
@@ -100,8 +100,8 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
         -l $REGION
 
     # Save the id of the newly created dev center
-    DEVCID= \
-        $(az devcenter admin devcenter show -n $DEV_CENTER_NAME \
+    DEVCID=$( \
+        az devcenter admin devcenter show -n $DEV_CENTER_NAME \
         -g $RESOURCE_GROUP_NAME \
         --query id -o tsv)
 
@@ -114,8 +114,8 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
     # Save the dev center project for use when creating
     # the Managed DevOps Pool
-    DEVCPID= \
-        $(az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME \
+    DEVCPID=$() \
+        az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME \
         -g $RESOURCE_GROUP_NAME \
         --query id -o tsv)
     ```
