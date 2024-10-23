@@ -114,7 +114,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
     # Save the dev center project for use when creating
     # the Managed DevOps Pool
-    DEVCPID=$() \
+    DEVCPID=$( \
         az devcenter admin project show -n $DEV_CENTER_PROJECT_NAME \
         -g $RESOURCE_GROUP_NAME \
         --query id -o tsv)
