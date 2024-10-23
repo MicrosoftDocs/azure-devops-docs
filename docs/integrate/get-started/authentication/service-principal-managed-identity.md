@@ -253,43 +253,61 @@ A: Yes, you can connect to any Azure Artifacts feed with a service principal. In
 
     - Project-scoped feed:
     
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <clear />
-        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-      </packageSources>
-    </configuration>
-    ```
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
     - Organization-scoped feed:
     
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <clear />
-        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-      </packageSources>
-    </configuration>
-    ```
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
 1. [Get a Microsoft Entra ID token](/azure/databricks/dev-tools/service-prin-aad-token) for your service principal.
 
-1. Set the `ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS` environment variable by specifying your feed URL, Microsoft Entra ID access token, and the path to your service principal certificate, as shown below:
+1. Set the `ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS` environment variable as shown below and specify your feed URL, Microsoft Entra ID access token, and the path to your service principal certificate:
 
-    ```json
-    {
-      "endpointCredentials": [
+    - **PowerShell**:
+    
+        ```PowerShell
+        $env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'
         {
-          "endpoint": "<FEED_URL>",
-          "clientId": "<MICROSOFT_ENTRA_ID_ACCESS_TOKEN>",
-          "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+          "endpointCredentials": [
+            {
+              "endpoint": "<FEED_URL>",
+              "clientId": "<MICROSOFT_ENTRA_ID_ACCESS_TOKEN>",
+              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+            }
+          ]
         }
-      ]
-    }
-    ```
+        '@
+        ```
+
+    - **Bash**:
+    
+        ```bash
+        export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
+          "endpointCredentials": [
+            {
+              "endpoint": "<FEED_URL>",
+              "clientId": "<MICROSOFT_ENTRA_ID_ACCESS_TOKEN>",
+              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+            }
+          ]
+        }'
+        ```
 
 <a name='npm-project-setup-with-entra-id-tokens'></a>
 
