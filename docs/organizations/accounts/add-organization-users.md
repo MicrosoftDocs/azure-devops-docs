@@ -150,7 +150,7 @@ The Users view displays key information for each user in a table. In this view, 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access levels.
 * Filter by searching for partial user names, access levels, or extension names.
-* See the last access date for each user. This information can help you identify users to remove or lower their access to stay within your license limits. For more information, see [Manage access with Microsoft Entra ID](../security/manage-access.md).
+* See the last access date for each user. This information can help you identify users to remove or lower their access to stay within your license limits. For more information, see [Permissions and access](../security/permissions-access.md).
 
 #### [Browser](#tab/browser)
 
