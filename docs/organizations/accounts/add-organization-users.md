@@ -286,7 +286,7 @@ For more information, see [Add or remove users or groups, manage security groups
   * Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you authenticate users and control access through [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) using your organization's directory.
 * If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
-![Screenshot shows adding members' sign-in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
+![Screenshot shows adding members' sign-in addresses or display names.](media/add-team-members/add-user-or-group-to-project.png)
 
 After you add members to your project, each member receives an invitation email with a link to your organization. They can use this link to sign in and access your project. First-time members might get asked for more details when they sign in to personalize their experience.
 
