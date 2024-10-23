@@ -7,7 +7,7 @@ ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/31/2024
+ms.date: 10/22/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -19,13 +19,11 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 ## Prerequisites
 
-* You must be a member of the Project Collection Administrators or Project Administrators group for the organization that you want to invite external users to.
-* The Microsoft Entra tenant, to which you want to invite external users, must allow adding new users, per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
-* The user policy, **External guest access**, must be **On** for the organization that you want to invite external users to. See the following image example.
+* **Permissions:** Be a member of the Project Collection Administrators or Project Administrators group for the organization to which you want to invite external users.
+* **Microsoft Entra tenant:** The Microsoft Entra tenant to which you want to invite external users must allow adding new users, as per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
+* **Policies:** Ensure **External guest access** is turned **On** for the organization to which you want to invite external users. See the following image example.
    * Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
-   * If instead the *Invite GitHub users* policy displays, you're recognized as a GitHub user and so the GitHub invitation experience is available. For more information, see [Enable GitHub invitations](../../repos/get-started/sign-up-invite-teammates.md).
-
-![External guest access turned on](media/add-external-user/guest-access-preview.png)
+   * If the **Invite GitHub users** policy displays, you're recognized as a GitHub user and the GitHub invitation experience is available. For more information, see [Enable GitHub invitations](../../repos/get-started/sign-up-invite-teammates.md).
 
 > [!NOTE]
 > **Required:** Use a different email address or user principal name (UPN) for your personal and business accounts. This eliminates the challenge of disambiguating between your business and personal accounts when the email or UPN is the same.
@@ -50,9 +48,9 @@ Learn how to invite external users to your organization. If you access Azure Dev
     - **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. For more information, see [Default permissions and access assignments](../security/permissions-access.md).
     - **Send email invites**: Check this box to invite your new users via their email addresses.
 
-5. Advise the external user to locate the email that they received from AzureDevOps@microsoft.com with the subject, **You have been invited to an Azure DevOps project** and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
+5. Advise the external user to locate the email that they received from `AzureDevOps@microsoft.com` with the subject, **You have been invited to an Azure DevOps project** and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
 
-    :::image type="content" source="media/add-external-user/external-user-email-invitation.png" alt-text="Screenshot showing External user's invitation email.":::
+   :::image type="content" source="media/add-external-user/external-user-email-invitation.png" alt-text="Screenshot showing External user's invitation email.":::
 
 >[!Note]
 > If you need to resend the invitation email, go to **Users** > select the user > **Resend invite**.
@@ -63,7 +61,7 @@ A guest user can add other guest users to the organization after being granted t
 
 ## Related articles
 
-* [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+* [Learn about Microsoft Entra B2B collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 * [Migrate to group-based resource management](./assign-access-levels-by-group-membership.md)
 * [Assign access levels to users by group membership](assign-access-levels-by-group-membership.md)
 * [Restrict invitations to new users](../security/restrict-invitations.md)
