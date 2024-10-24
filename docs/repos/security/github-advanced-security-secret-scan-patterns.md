@@ -38,7 +38,7 @@ The following table lists the partner provider patterns supported by secret scan
 
 ### Non-provider patterns
 
-The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. For more information, see [Manage secret scanning alerts](github-advanced-security-secret-scanning.md).
+The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. For more information, see [Manage secret scanning alerts](github-advanced-security-secret-scanning.md#manage-secret-scanning-alerts).
 
 > [!TIP]
 > The detection of non-provider patterns is currently in beta and subject to change.
