@@ -16,28 +16,22 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 
 When creating a new feed in Azure Artifacts, you can choose to scope it to either a project or your organization, depending on your scenario. However, Azure Artifacts recommends scoping new feeds to a project. In this article, you'll learn about the key differences between the two types of feeds.
 
-## Create a new feed
+## Create a feed
 
-::: moniker range=">= azure-devops-2019"
-
-Follow these instructions and select the appropriate scope for your need to create a project-scoped or an organization-scoped feed.
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
+1. Provide a **Name** for your feed, choose its **Visibility** to specify who can view your packages, and check the **Include packages from common public sources** checkbox if you want to include packages from public sources such as *nuget.org*.
 
-1. Give your feed a **Name** and choose its **visibility**. Select **upstream sources** if you want to include packages from public registries.
-
-1. Select **Project** if you want to create a project-scoped feed, otherwise select **Organization**.
+1. Under **Scope**, select **Project** to create a project-scoped feed, or **Organization** if you want an organization-scoped feed.
 
 1. Select **Create** when you're done.
 
     :::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="A screenshot showing how to create project and organization scoped feeds.":::
 
-::: moniker-end
-
 > [!NOTE]
-> Organization-scoped feeds cannot be converted into project-scoped feeds.
+> Organization-scoped feeds cannot be converted to project-scoped feeds.
 
 ## Project-scoped vs organization-scoped feeds
 
