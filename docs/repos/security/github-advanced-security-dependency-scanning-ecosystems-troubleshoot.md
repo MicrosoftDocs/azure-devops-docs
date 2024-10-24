@@ -11,7 +11,8 @@ author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 10/24/2024
 ---
-## Troubleshooting dependency scanning 
+
+# Troubleshooting dependency scanning 
 
 Learn how to troubleshoot dependency scanning issues in GitHub Advanced Security for Azure DevOps.
 
