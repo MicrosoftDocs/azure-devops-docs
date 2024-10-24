@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 09/20/2023
+ms.date: 10/24/2024
 ---
 
 # Supported package ecosystems 
