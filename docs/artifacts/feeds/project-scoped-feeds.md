@@ -1,18 +1,20 @@
 ---
-title: Project scoped feeds
-description: Understand the difference between project-scoped and organization-scoped feeds
+title: Project-scoped vs organization-scoped feeds
+description: Learn the differences between project-scoped and organization-scoped feeds in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 10/03/2022
+ms.date: 10/24/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Project-scoped feeds
+# Project-scoped vs organization-scoped feeds
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When creating a new Azure Artifacts feed, you can choose to scope your feed to your project or your organization depending on your needs. Feeds that are created through the web interface are project-scoped by default.
+Azure Artifacts enables developers to manage their dependencies from a single feed. A feed acts as an organizational space to host various types of packages, giving you control over who can access it, whether it's team members within your organization or even public users.
+
+When creating a new feed in Azure Artifacts, you can choose to scope it to either a project or your organization, depending on your scenario. However, Azure Artifacts recommends scoping new feeds to a project. In this article, you'll learn about the key differences between the two types of feeds.
 
 ## Create a new feed
 
