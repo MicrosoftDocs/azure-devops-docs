@@ -37,27 +37,15 @@ When creating a new feed in Azure Artifacts, you can choose to scope it to eithe
 
 A project-scoped feed is scoped to a project instead of an organization. Here are the main differences between the two types of feeds:
 
-1. **Visibility**:
-
-    * Project-scoped feeds inherit the visibility of the project.
-    * Organization-scoped feeds are always private by default.
-
-1. **Links**:
-
-    * The URL of a project-scoped feed includes the project.
-        * Example: `https://pkgs.dev.azure.com/<ORG_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json`
-
-    * The URL of an organization-scoped feed doesn't include a project.
-        * Example: `https://pkgs.dev.azure.com/<ORG_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json`
-
-1. **User interface**:
-    * All organization-scoped feeds are available from the feeds' dropdown menu. To see a project-scoped feed in the list of feeds, you have to navigate to the project hosting that feed.
-
-1. **Connection**:
-    * When connecting to a private project scoped feed from an Azure Pipelines pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. For more information, see [Package permissions](./feed-permissions.md#pipelines-permissions).
+| **Category**      | **Project-Scoped Feed**                                                                                      | **Organization-Scoped Feed**                                                      |
+|-------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Visibility**    | Inherits the visibility of the project.                                                                       | Always private by default.                                                        |
+| **Links**         | The URL includes the project name.<br>Example: `https://pkgs.dev.azure.com/<ORG_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json` | The URL does not include a project.<br>Example: `https://pkgs.dev.azure.com/<ORG_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json` |
+| **User Interface**| Visible only after navigating to the project that hosts the feed.                                              | Always available from the feeds dropdown menu.                                     |
+| **Connection**    | To access a feed from a pipeline running in a different project within the same organization, the **Project Collection Build Service** and the project's **Build Service** identity of the project running the pipeline must be granted the **Feed Publisher (Contributor)** role in feed settings. | You only need to assign the **Project Collection Build Service** the **Feed Publisher (Contributor)** role in feed settings. |
 
 > [!NOTE]
-> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > selecting the ellipsis button on the right for the specified view > then selecting **Edit**.
 
 ## Security policies
 
