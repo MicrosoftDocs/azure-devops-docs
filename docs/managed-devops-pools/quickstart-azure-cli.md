@@ -334,4 +334,4 @@ az group delete -n $RESOURCE_GROUP_NAME
 
 ## See also
 
-* [Review the Managed DevOps Pools Azure CLI reference](/cli/azure/service-page/managed%20devops%20pools)
+* [Managed DevOps Pools Azure CLI reference](/cli/azure/service-page/managed%20devops%20pools)
