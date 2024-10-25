@@ -2,7 +2,7 @@
 title: Parameters and templateContext
 description: How to use parameters in templates
 ms.topic: conceptual
-ms.date: 08/30/2024
+ms.date: 10/25/2024
 monikerRange: '>=azure-devops-2019'
 ai-usage: ai-assisted
 ---
@@ -159,6 +159,31 @@ steps:
   - ${{ each fruitColor in fruit.colors}} : # Iterate over each color in the current fruit's colors
     - script: echo ${{ fruit.fruitName}} ${{ fruitColor }} # Echo the current fruit's name and color
 ``` 
+
+You can also directly reference an object's keys and corresponding values. 
+
+```yaml
+parameters:
+  - name: myObject
+    type: object
+    default:
+      key1: 'value1'
+      key2: 'value2'
+      key3: 'value3'
+
+jobs:
+- job: ExampleJob
+  displayName: 'Example object parameter job'
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - script: |
+      echo "Keys in myObject:"
+      echo "Key1: ${{ parameters.myObject.key1 }}"
+      echo "Key2: ${{ parameters.myObject.key2 }}"
+      echo "Key3: ${{ parameters.myObject.key3 }}"
+    displayName: 'Display object keys and values'
+```
 
 
 ### Required parameters
