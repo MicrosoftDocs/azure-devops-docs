@@ -15,7 +15,7 @@ ms.custom: devx-track-azurecli
 
 # Configure target branches for pull requests
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 By default, Azure DevOps suggests the creation of new pull requests against
 the default branch. In a repository with multiple branches used for pull
