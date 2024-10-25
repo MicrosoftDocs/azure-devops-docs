@@ -161,7 +161,7 @@ steps:
 
 ---
 
-To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-i-want-to-download-a-pipeline-artifact-from-another-project-but-my-pipeline-is-failing) configured for both your downstream project and downstream pipeline.
+To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#how-can-i-download-a-pipeline-artifact-from-another-project-within-the-same-organization) configured for both the downstream project and the pipeline generating the artifact.
 By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name wasn't specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
 
 ```yml
