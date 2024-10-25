@@ -366,7 +366,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
         <td>Test Plans</td>
       </tr>
-      <td rowspan="20"><strong>Future</strong></td>
+      <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
@@ -389,13 +389,7 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
-      </tr> 
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status" data-raw-source="[Show status of GitHub Actions work flow run](/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status)">Show status of GitHub Actions work flow run</a>
-         </td>
-         <td>Boards</td>         
-      </tr>     
+      </tr>         
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Repos</td>
