@@ -25,8 +25,8 @@ Recommended options:
 * [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md). Manual configuration is more time consuming than the automatic configuration and should only be used if you've already tried to automatic option. 
 
 > [!NOTE]
-> There are other, available Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection](#convert-an-existing-service-connection-to-use-workload-identity-federation) to use workload identity federation. 
-> * [App registration (automatic) with a secret](#create-an-app-registration-with-a-secret-automatic)
+> There are other Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection](#convert-an-existing-service-connection-to-use-workload-identity-federation) to use workload identity federation first. 
+> * [App registration (automatic) with a secret](azure-resource-manager-alternate-approaches.md#create-an-app-registration-with-a-secret-automatic)
 > * [Agent-assigned managed identity (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity)
 > * [Publish profile (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile)
 
@@ -146,86 +146,6 @@ Use this option to automatically create a workload identity credential for an ex
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
-
-### Create an app registration with a secret (automatic)
-
-With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a secret for authentication. 
-
-> [!WARNING]
-> Using a secret requires manual rotation and management and is not recommended. Workload identity federation is the preferred credential type.
-
-You can use this approach if all the following items are true for your scenario:
-
-* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
-* You don't need to further limit permissions for Azure resources that users access through the service connection.
-* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government-cloud) environments.
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of Team Foundation Server.
-
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select **New service connection**,  then select **Azure Resource Manager** and **Next**.
-
-   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
-
-1. Select **App registration (automatic)** with the credential **Secret**.
-
-   :::image type="content" source="media/select-app-registration-secret-service.png" alt-text="Screenshot of Workload Identity federation app registration (automatic) authentication method selection.":::
-
-1. Select a **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
-
-    * For the **Subscription** scope, enter the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource group** | Required. Select the Azure resource group. |
-    
-    * For the **Management Group** scope, select the **Azure management group**.
-    
-    * For the **Machine Learning Workspace** scope, enter the following parameters:
-
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource Group** | Required. Select the resource group containing the workspace. |
-        | **Machine Learning Workspace** | Required. Select the Azure Machine Learning workspace. |
-|
-
-1. Enter a **Service connection name**.
-1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-1. Select **Save**.
-
-## Convert an existing service connection to use workload identity federation
-
-You can quickly convert an existing Azure Resource Manager service connection to use workload identity federation for authentication instead of a secret. You can use the service connection conversion tool in Azure DevOps if your service connection meets these requirements:
-
-* Azure DevOps originally created the service connection. If you manually create your service connection, you can't convert the service connection by using the service connection conversion tool because Azure DevOps doesn't have permissions to modify its own credentials.
-* Only one project uses the service connection. You can't convert [cross-project service connections](../policies/permissions.md#set-service-connection-project-permissions).
-
-To convert a service connection:
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select the service connection that you want to convert to use workload identity.
-
-1. Select **Convert**.
-
-    :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot that shows selecting convert for federated credentials.":::
-    
-    If you have an existing credential with an expired secret, you see a different option to convert. 
-
-    :::image type="content" source="media/secret-expired-workload-convert.png" alt-text="Screenshot that shows option to convert to use federated credentials when you have an expired certificate. ":::
-
-1. Select **Convert** again to confirm that you want to create a new service connection.
-
-   The conversion might take a few minutes. If you want to revert the connection, you must revert it within seven days.
 
 #### Convert multiple service connections with a script
 
