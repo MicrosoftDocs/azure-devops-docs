@@ -25,7 +25,7 @@ Recommended options:
 * [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md). Manual configuration is more time consuming than the automatic configuration and should only be used if you've already tried to automatic option. 
 
 > [!NOTE]
-> There are other Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection](#convert-an-existing-service-connection-to-use-workload-identity-federation) to use workload identity federation first. 
+> There are other Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection to use workload identity federation](#convert-an-existing-service-connection-to-use-workload-identity-federation) first. 
 > * [App registration (automatic) with a secret](azure-resource-manager-alternate-approaches.md#create-an-app-registration-with-a-secret-automatic)
 > * [Agent-assigned managed identity (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity)
 > * [Publish profile (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile)
@@ -146,6 +146,34 @@ Use this option to automatically create a workload identity credential for an ex
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
+## Convert an existing service connection to use workload identity federation
+
+You can quickly convert an existing Azure Resource Manager service connection to use workload identity federation for authentication instead of a secret. You can use the service connection conversion tool in Azure DevOps if your service connection meets these requirements:
+
+* Azure DevOps originally created the service connection. If you manually create your service connection, you can't convert the service connection by using the service connection conversion tool because Azure DevOps doesn't have permissions to modify its own credentials.
+* Only one project uses the service connection. You can't convert [cross-project service connections](../policies/permissions.md#set-service-connection-project-permissions).
+
+To convert a service connection:
+
+1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
+
+   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Select the service connection that you want to convert to use workload identity.
+
+1. Select **Convert**.
+
+    :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot that shows selecting convert for federated credentials.":::
+    
+    If you have an existing credential with an expired secret, you see a different option to convert. 
+
+    :::image type="content" source="media/secret-expired-workload-convert.png" alt-text="Screenshot that shows option to convert to use federated credentials when you have an expired certificate. ":::
+
+1. Select **Convert** again to confirm that you want to create a new service connection.
+
+   The conversion might take a few minutes. If you want to revert the connection, you must revert it within seven days.
+
 
 #### Convert multiple service connections with a script
 

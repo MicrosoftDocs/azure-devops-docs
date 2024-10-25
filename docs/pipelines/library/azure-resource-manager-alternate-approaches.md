@@ -69,33 +69,6 @@ You can use this approach if all the following items are true for your scenario:
 1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 1. Select **Save**.
 
-## Convert an existing service connection to use workload identity federation
-
-You can quickly convert an existing Azure Resource Manager service connection to use workload identity federation for authentication instead of a secret. You can use the service connection conversion tool in Azure DevOps if your service connection meets these requirements:
-
-* Azure DevOps originally created the service connection. If you manually create your service connection, you can't convert the service connection by using the service connection conversion tool because Azure DevOps doesn't have permissions to modify its own credentials.
-* Only one project uses the service connection. You can't convert [cross-project service connections](../policies/permissions.md#set-service-connection-project-permissions).
-
-To convert a service connection:
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select the service connection that you want to convert to use workload identity.
-
-1. Select **Convert**.
-
-    :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot that shows selecting convert for federated credentials.":::
-    
-    If you have an existing credential with an expired secret, you see a different option to convert. 
-
-    :::image type="content" source="media/secret-expired-workload-convert.png" alt-text="Screenshot that shows option to convert to use federated credentials when you have an expired certificate. ":::
-
-1. Select **Convert** again to confirm that you want to create a new service connection.
-
-   The conversion might take a few minutes. If you want to revert the connection, you must revert it within seven days.
-
 <a name="use-msi"></a>
 
 ## Create an Azure Resource Manager service connection to a VM that uses a managed identity
