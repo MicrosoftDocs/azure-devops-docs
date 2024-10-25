@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Project-scoped vs organization-scoped feeds
+# Feed scopes: Project vs organization feeds
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -80,8 +80,8 @@ A: If your pipeline is failing to download an artifact from another project, ens
 
 A: Yes, adding users to the Azure DevOps organization is still required for them to access the packages in the feed. You can add them as **Project Collection Valid Users** from **Organization Settings** > **Security** > **Permissions**.
 
-## Related articles
+## Related content
 
-- [Configure permissions](./feed-permissions.md)
-- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
+- [Configure feed permissions](./feed-permissions.md)
 - [Use feed views to share packages](./views.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
