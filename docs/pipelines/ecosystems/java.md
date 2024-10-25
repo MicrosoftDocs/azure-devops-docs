@@ -65,7 +65,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. When you see the **Configure your pipeline** tab, select **Maven**, **Gradle**, or **Ant** depending on how you want to [build your code](#build-your-code).
 
-1. A `azure-pipelines-yml` file containing your pipeline definition is created in your repo and opened in the YAML editor. You can customize the pipeline by adding more tasks or modifying the existing tasks. For more information about the build tasks, see [Build your code](#build-your-code).
+1. A `azure-pipelines.yml` file containing your pipeline definition is created in your repo and opened in the YAML editor. You can customize the pipeline by adding more tasks or modifying the existing tasks. For more information about the build tasks, see [Build your code](#build-your-code).
 
 1. When you're finished editing the `azure-pipelines.yml`, select **Save and run**.
 
