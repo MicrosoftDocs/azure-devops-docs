@@ -44,7 +44,7 @@ The following example specifies three images. For more information on the schema
                     ...
                     "images": [
                         {
-                            "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+                            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
                             "aliases": [
                                 "ubuntu-20.04-gen2"
                             ]
@@ -77,7 +77,7 @@ The following example defines three images. Standby agents are enabled, with 100
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
         "aliases": [
             "ubuntu-20.04-gen2"
         ],
@@ -112,7 +112,7 @@ The following example shows the `images` section of the **fabric-profile.json** 
     "sku": {...},
     "images": [
         {
-            "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
             "aliases": [
                 "ubuntu-20.04-gen2"
             ],
@@ -150,7 +150,7 @@ The following example defines three images. Standby agents are enabled, with 100
     "sku": {...},
     "images": [
         {
-            "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
             "aliases": [
                 "ubuntu-20.04-gen2"
             ],
@@ -241,7 +241,7 @@ To specify a selected marketplace image, provide the resource ID of the image us
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
     }
 ]
 ```
@@ -253,7 +253,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
     }
 ]
 ```

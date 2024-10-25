@@ -243,7 +243,7 @@ The attachment is added to the work item.
 
    :::image type="content" source="media/confirm-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming delete action.":::
 
-The deleted attachment cannot be restored and is permenantly removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
+The deleted attachment cannot be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
 
 ## Permanently delete attachments
 

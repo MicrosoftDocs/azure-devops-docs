@@ -735,7 +735,7 @@ False
    :::column span="1":::
    riskGraphConfig
    
-   > Maps the workflow States to one of the three Risk areas displayed on the Graph: `atRisk` is Red, `nuetral` is Gray, and `onTrack` is Green.  
+   > Maps the workflow States to one of the three Risk areas displayed on the Graph: `atRisk` is Red, `neutral` is Gray, and `onTrack` is Green.  
 
    :::column-end:::
    :::column span="1":::
