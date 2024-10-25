@@ -175,16 +175,17 @@ These investments include:
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
       </tr>  
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
-         <td>Boards</td>
-         <td>2024 Q4</td>
-      </tr>   
-      <tr>
+       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
          <td>2024 Q4</td>
-      </tr>     
+      </tr>    
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>Boards</td>
+         <td>2025 Q1</td>
+      </tr>  
+      
     </tbody>
 </table>
 
@@ -277,7 +278,7 @@ For the past several years, all our pipelines investments have been in the area 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="15"><strong>2024 Q4</strong></td>
+      <td rowspan="12"><strong>2024 Q4</strong></td>
         <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
         </td>
@@ -285,22 +286,10 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API suppport for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API suppport for connecting GitHub repositories (general availability)</a>
+            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API suppport for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API suppport for connecting GitHub repositories</a>
          </td>
          <td>Boards</td> 
-      </tr> 
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
-         </td>
-         <td>Boards</td>         
-      </tr> 
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status" data-raw-source="[Show status of GitHub Actions work flow run](/azure/devops/release-notes/roadmap/2024/boards-show-github-actions-status)">Show status of GitHub Actions work flow run</a>
-         </td>
-         <td>Boards</td>         
-      </tr>
+      </tr>      
       <tr>
          <td>
          <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
@@ -314,11 +303,7 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
          <td><a href="/azure/devops/release-notes/2024/sprint-246-update#enhanced-tag-management-on-work-item-form">Remove deleted tags from suggested list on work item form</a></td>
          <td>Boards</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
-         <td>Boards</td>
-      </tr>
+      </tr>     
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards & Pipelines</td>
@@ -351,7 +336,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="2"><strong>2025 Q1</strong></td>
+      <td rowspan="5"><strong>2025 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/junit-java-support" data-raw-source="[JUnit / Java support in Test Plans](/azure/devops/release-notes/roadmap/2022/junit-java-support)">JUnit / Java support in Test Plans</a></td>
         <td>Test Plans</td>
       </tr>
@@ -359,6 +344,20 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2023/test-plan-task-in-pipelines" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2022/test-plan-task-in-pipelines)">Test Plan task in Pipelines</a></td>
         <td>Test Plans</td>
       </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/boards-markdown-in-work-items" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2024/boards-markdown-in-work-items)">Markdown support in work items</a></td>
+        <td>Boards</td>
+      </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
+         </td>
+         <td>Boards</td>         
+      </tr> 
       <td rowspan="2"><strong>2025 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[New Test Runs experience](/azure/devops/release-notes/roadmap/2022/improved-visibility)">New Test Runs experience</a></td>
         <td>Test Plans</td>
@@ -390,7 +389,7 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
-      </tr>      
+      </tr>         
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Repos</td>
