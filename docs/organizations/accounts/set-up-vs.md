@@ -47,7 +47,7 @@ You can also use Azure DevOps Services with any IDE or code editor, like the fol
 
 3. Add your Visual Studio profile details. You only need to do this action once. 
 
-    ![Screenshot show Create your profile screen.](media/set-up-vs/profile-organization-details.png)
+    ![Screenshot shows Create your profile screen.](media/set-up-vs/profile-organization-details.png)
 
 4. Name your organization and confirm its location. 
 

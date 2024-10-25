@@ -68,7 +68,7 @@ For more information, see [Rate and usage limits](../../integrate/concepts/rate-
 
   d. The usage page is scoped to the 30 minutes before and after the first delayed request. Review the request history leading up to delayed requests.
 
-  :::image type="content" source="media/usage-screenshot-example.png" alt-text="Usage page screenshot example":::
+  :::image type="content" source="media/usage-screenshot-example.png" alt-text="Screenshot of usage page example.":::
 
 ### Understand notifications and alerts
 - When a user's request gets delayed, they receive a notification email and see a warning banner on the web. Both the banner and email link to the usage page.
