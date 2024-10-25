@@ -21,7 +21,7 @@ If you're already signed in to Visual Studio 2019, see [connect to Azure DevOps 
 
 Once connected, you can store and share code in free, unlimited, private, cloud-based Git repositories or Team Foundation Version Control (TFVC). Use Agile tools for DevOps, continuous integration, and continuous delivery to organize and manage your work, which helps your team build frequently, test early, and ship faster.
 
-To set up Visual Studio without Azure DevOps Services, [get started with Visual Studio](https://visualstudio.microsoft.com/vs/getting-started/). To host your own server, [install and set up Azure DevOps Server](https://learn.microsoft.com/azure/devops/server/install/get-started).
+To set up Visual Studio without Azure DevOps Services, see [Install Visual Studio](/visualstudio/install/install-visual-studio?view=vs-2022&preserve-view=true). To host your own server, [install and set up Azure DevOps Server](/azure/devops/server/install/get-started).
 
 You can also use Azure DevOps Services with any IDE or code editor, like the following examples:
 
