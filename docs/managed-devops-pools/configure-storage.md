@@ -70,7 +70,7 @@ To delete the data disk configuration for an existing pool, specify an empty lis
 
 #### [Azure CLI](#tab/azure-cli/)
 
-Additional disk storage is configured using the `datadisks` property in the `storageProfile` section in the `fabric-profile` parameter.
+Additional disk storage is configured using the `dataDisks` property in the `storageProfile` section in the `fabric-profile` parameter.
 
 ```azurecli
 az mdp pool create \

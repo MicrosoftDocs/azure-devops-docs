@@ -289,7 +289,7 @@ To specify an Azure Compute Gallery image, provide the resource ID of the image 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
     }
 ]
 ```
@@ -301,7 +301,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
     }
 ]
 ```
@@ -353,7 +353,7 @@ To configure aliases, specify them in the `aliases` list. The following example 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
         "aliases": [
             "ubuntu-20.04-gen2"
         ]
@@ -368,7 +368,7 @@ To configure aliases, specify them in the `aliases` list. The following example 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscrition_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
         "aliases": [
             "ubuntu-20.04-gen2"
         ]
