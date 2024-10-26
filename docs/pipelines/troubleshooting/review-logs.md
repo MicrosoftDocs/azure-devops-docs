@@ -378,7 +378,7 @@ steps:
     targetType: 'inline'
     script: '$(System.DefaultWorkingDirectory)\perfview.exe /accepteula /logfile:"PerfView.log" abort'
 
-- task: PowerShell@2 # add a sleep of 5 mins, to givet time for required for traces to be complete
+- task: PowerShell@2 # add a sleep of 5 mins, to give it time for required traces to be complete
   inputs:
     targetType: 'inline'
     script: 'Start-Sleep -Seconds 300'

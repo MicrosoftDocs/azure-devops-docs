@@ -106,7 +106,7 @@ ReferenceName is another common annotation used to define the system identifier 
 
 Querying an individual Entity is useful. Eventually, you'll probably want to filter or expand details of another Entity. To do so, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
 
-A `NavigationaProperty` with a collection type represents a many-to-many relationship in the model.
+A `NavigationProperty` with a collection type represents a many-to-many relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML

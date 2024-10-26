@@ -479,7 +479,7 @@ If alerts are created for new dependency changes in a pull request, the alert wi
 
 You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
 
-[![Screenshot of active depenendency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
+[![Screenshot of active dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
 
 To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
 
