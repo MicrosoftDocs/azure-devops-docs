@@ -9,7 +9,7 @@ ms.date: 04/02/2024
 | Provider | Supported Secret                | Token Name                     |
 | -------- | ------------------------------- | ------------------------------ |
 | Generic  | ASP.NET Machine Key             | AspNetMachineKey               |
-| Generic  | DER-endcoded Private Key        | DerPrivateKey                  |
+| Generic  | DER-encoded Private Key        | DerPrivateKey                  |
 | Generic  | Dynatrace Token                 | DynatraceToken                 |
 | Generic  | GPG Credentials                 | GpgCredentials                 |
 | Generic  | HTTP Request Headers            | HttpAuthorizationRequestHeader |
