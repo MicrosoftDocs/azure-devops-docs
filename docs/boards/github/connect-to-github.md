@@ -41,7 +41,7 @@ The following authentication options are supported based on the GitHub platform 
 :::row-end:::
 :::row:::
    :::column span="":::
-      - [GitHub.com user account (Recommended)](#server-github-ent-username)
+      - [GitHub.com user account (Recommended)](#add-a-github-connection-with-github-credentials)
       - [Personal access token (PAT)](#github-pat)
    :::column-end:::
    :::column span="":::
