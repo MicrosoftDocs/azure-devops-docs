@@ -142,7 +142,7 @@ The following example shows the contents of the **agent-profile.json** file.
 
 When **Same agent can be used by multiple builds** (`"kind": "stateful"` in resources templates or `{ "stateful": {...} }` in Azure CLI) is enabled, agents in the pool are considered to be stateful. Stateful pools are configured using the following settings.
 
-* **Max time to live for standby agents** (`maxAgetLifetime`) configures the maximum duration an agent in a stateful pool can run before it is shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
+* **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it is shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
 
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs are complete. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
 
