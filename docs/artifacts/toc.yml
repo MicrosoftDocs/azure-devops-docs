@@ -160,9 +160,9 @@
     - name: What are feeds?
       displayName: feeds, artifact feeds
       href: concepts/feeds.md
-    - name: Project-scoped vs organization-scoped feeds
-      displayName: project scoped, feed, artifact feeds
+    - name: Feed scopes
       href: feeds/project-scoped-feeds.md
+      displayName: project scoped, organization scoped, feed, artifacts
     - name: Configure permissions
       displayName: feed, artifact feeds, permissions
       href: feeds/feed-permissions.md
