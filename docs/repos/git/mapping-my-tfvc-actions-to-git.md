@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-git
 
 Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
-This article doesn't delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
+This article doesn't delve deep into the [Git commands](https://git-scm.com/docs/git#_git_commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 
 ## Start at the beginning by creating a new repo
 
@@ -318,7 +318,7 @@ Alternatively you can manually delete your local repo&mdash;after making a valid
 
 There are a lot more actions and options available to Git users. Here are some useful reference sites for further reading:
 
-* Git commands covered herein, refer to [git documentation](https://git-scm.com/documentation)
+* Git commands covered herein, refer to [git documentation](https://git-scm.com/docs)
 * [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
 * [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git), by Joshua Wehner
 
