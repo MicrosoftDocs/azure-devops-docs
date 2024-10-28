@@ -25,7 +25,7 @@ As a leading identity and access management (IAM) provider, [Microsoft Entra ID]
 
 **1. Broader reach inside and outside of Microsoft**
 
-By building an app on Entra, you have a broader reach through the rest of the Microsoft ecosystem. One Microsoft Entra app can be used to access multiple Microsoft products, making app credential management far simpler. Teams offering SaaS products may consider creating a preintegrated application that appears alongside other popular apps in the [Microsoft Entra app gallery](/entra/identity/enterprise-apps/overview-application-gallery). 
+By building an app on Microsoft Entra, you have a broader reach through the rest of the Microsoft ecosystem. One Microsoft Entra app can be used to access multiple Microsoft products, making app credential management far simpler. Teams offering SaaS products may consider creating a preintegrated application that appears alongside other popular apps in the [Microsoft Entra app gallery](/entra/identity/enterprise-apps/overview-application-gallery). 
 
 **2. Greater admin visibility, consent, and management**
 
