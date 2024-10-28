@@ -38,8 +38,7 @@ When you add a dashboard, you can choose to make it a project dashboard or one s
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
- 
+[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]
 
 ## Open Dashboards 
 
