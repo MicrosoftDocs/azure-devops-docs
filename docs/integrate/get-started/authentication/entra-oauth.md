@@ -51,7 +51,7 @@ Building on a new platform can be overwhelming. We provide some helpful links we
 * [Understanding delegated access](/entra/identity-platform/delegated-access-primer) 
 * [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app)
 * [Add permissions to access Microsoft Graph](/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-microsoft-graph): Useful to learn how to add delegated permissions from an Azure resource. Instead of Microsoft Graph, select `Azure DevOps` from the list of resources instead.
-* [Scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc): Read up on the `.default` scope.
+* [Scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc): Read up on the `.default` scope. See the scopes available for Azure DevOps in [our list of scopes](oauth.md#scopes).
 * [Requesting permissions through consent](/entra/identity-platform/consent-types-developer)
 * [Authentication libraries](/entra/identity-platform/reference-v2-libraries) and [code samples](/entra/identity-platform/sample-v2-code?tabs=apptype)
 * [Manage personal access tokens via API](../../../organizations/accounts/manage-personal-access-tokens-via-api.md): Using the PAT lifecycle management APIs requires Entra tokens and our docs and the [associated sample app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) might be a helpful example for setting up an Entra app to use Azure DevOps REST APIs.
