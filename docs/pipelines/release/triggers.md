@@ -1,26 +1,27 @@
 ---
-title: Classic release triggers for stages, branches, and pipelines
-description: DevOps CI CD - Understand triggers in Azure Pipelines
+title: Classic release triggers
+description: Learn the different types of release triggers and how to use them in your release pipelines.
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/20/2021
+ms.date: 10/28/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Release triggers
+# Classic release triggers
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Release triggers are an automation tool that can be used in your deployment workflow to initiate actions when specific conditions are met. after certain conditions are met. Classic release pipelines support several types of triggers, which we'll cover in this article:
 
+- [Continuous deployment triggers](#continuous-deployment-triggers)
 
-::: moniker range="azure-devops"
-> [!NOTE] 
-> This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
-::: moniker-end
+- [Scheduled release triggers](#scheduled-release-triggers)
 
-Release triggers are an automation tool to deploy your application. When the trigger conditions are met, the pipeline will deploy your artifacts to the environment/stages you already specified. 
+- [Pull request release triggers](#pull-request-triggers)
+
+- [Stage triggers](#stage-triggers)
 
 ## Classic release pipeline triggers
 
