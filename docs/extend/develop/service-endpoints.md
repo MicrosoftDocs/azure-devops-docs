@@ -234,7 +234,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
       "label": "Fabrikam service/server end point",
       "defaultValue": "",
       "required": true,
-      "helpMarkDown": "Select the Fabrikam end point to use. If needed,select 'manage', and add a new service endpoint of type 'Fabrikam server connection'"
+      "helpMarkDown": "Select the Fabrikam end point to use. If needed, select 'manage', and add a new service endpoint of type 'Fabrikam server connection'"
     },
     {
       "name": "project",
