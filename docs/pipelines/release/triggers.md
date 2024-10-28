@@ -35,40 +35,41 @@ For example, selecting *main* will trigger a release every time a new artifact b
 
 1. Select your release definition, and then select **Edit**.
 
-1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Continuous deployment trigger**, then add your **Build branch filters**
+1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Continuous deployment trigger**, then add your **Build branch filters**.
 
     :::image type="content" source="media/trigger-01.png" alt-text="A screenshot displaying how to configure the continuous deployment trigger in a release pipeline.":::
-
-
-<a id="scheduled-triggers"></a>
 
 ## Scheduled release triggers
 
 Scheduled release triggers allow you to create new releases at specific times.
 
-Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Disabled button and specify your release schedule. You can set up multiple schedules to trigger a release.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-> [!div class="mx-imgBorder"]
-> ![Defining schedules to trigger releases](media/trigger-04.png)
+1. Select **Pipelines** > **Releases**.
 
-::: moniker range="<=azure-devops"
+1. Select your release definition, and then select **Edit**.
 
-<a id="prsettrigger"></a>
+1. Under the **Artifacts** section, select the **Schedule set** icon, select the toggle button to enable the **Scheduled release trigger**, and then specify your release schedule. You can set up multiple schedules to trigger releases.
+
+    :::image type="content" source="media/trigger-04.png" alt-text="A screenshot displaying how to configure the Scheduled release triggers in a release pipeline.":::
 
 ## Pull request triggers
 
-If you chose to enable the pull-request triggers, a release will be created every time a selected artifact is available as part of a pull request workflow.
+If you chose to enable the pull-request triggers, a release will be triggered whenever a new version of the selected artifact is created by the pull request pipeline workflow. To use a pull request trigger, you must also enable it for specific stages (covered in the next section). You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
 
-> [!div class="mx-imgBorder"]
-> ![Configure a pull request trigger.](media/trigger-01a.png)
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-To use a pull request trigger, you must also enable it for specific stages. We will go through stage triggers in the next section. You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
+1. Select **Pipelines** > **Releases**.
 
-You can also use **Build tags** to organize your workflow and tag specific runs. The following pull request trigger will create a release every time a new artifact version is available as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
+1. Select your release definition, and then select **Edit**.
 
-:::image type="content" source="media/build-tags-example.png" alt-text="Screenshot showing an example of how to set up a pull request trigger with build tags":::
+1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Pull request trigger**, then add your **Target Branch Filters**.
 
-::: moniker-end
+    :::image type="content" source="media/trigger-01a.png" alt-text="A screenshot displaying how to configure pull request triggers in a release pipeline.":::
+
+You can also use **Build tags** to organize your workflow and tag specific runs. In the example below, a release is triggered every time a new artifact version is created as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
+
+:::image type="content" source="media/build-tags-example.png" alt-text="A screenshot showing how to set up a pull request trigger with build tags.":::
 
 ## Stage triggers
 
