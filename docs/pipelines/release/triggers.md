@@ -23,29 +23,22 @@ Release triggers are an automation tool that can be used in your deployment work
 
 - [Stage triggers](#stage-triggers)
 
-## Classic release pipeline triggers
-
-- Continuous deployment triggers: trigger a releases after a Classic or YAML pipeline completes and a new artifact becomes available.
-
-- Scheduled release triggers: trigger a release at specific times based on a defined schedule.
-
-- Pull request release triggers: a release is triggered whenever a new version of the selected artifact becomes available after being built by the pull request pipeline workflow.
-
-- Stage triggers: configure how each stage in a Classic release is triggered. Options: `After release`, `After stage` (if you have more than one stage), and `Manual only`. 
-    - After release: deploy to the stage every time a new release is created. 
-    - After stage: deploy to the stage after deployments to the selected stage(s) are successful. 
-    - Manual only: only allow manual deployments.
-
-<a id="release-triggers"></a>
-
 ## Continuous deployment triggers
 
-Continuous deployment triggers allow you to create a release every time a new build artifact is available. Using the build branch filters you can trigger deployment for a specific target branch. A release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting `main` will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under `features/`, enter `features/*`. To trigger a release for commits to all branches, enter `*`. Note that all specified filters will be OR'ed.
+Continuous deployment triggers enable you to automatically create a release whenever a new artifact becomes available. By Using the build branch filters you can trigger deployment for a specific target branch. A release is triggered only for pipeline artifacts originating from one of the selected branches. 
 
-:::image type="content" source="media/trigger-01.png" alt-text="Configure continuous deployment triggers":::
+For example, selecting *main* will trigger a release every time a new artifact becomes available from the main branch. To trigger a release for any build under 'features/', enter 'features/*'. To trigger a release for all builds, use '*'. Note that all specified filters will be OR'ed meaning any artifact matching at least one filter condition will trigger a release.
 
-> [!NOTE]
-> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up triggers to deploy your app to the various stages.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines** > **Releases**.
+
+1. Select your release definition, and then select **Edit**.
+
+1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Continuous deployment trigger**, then add your **Build branch filters**
+
+    :::image type="content" source="media/trigger-01.png" alt-text="A screenshot displaying how to configure the continuous deployment trigger in a release pipeline.":::
+
 
 <a id="scheduled-triggers"></a>
 
