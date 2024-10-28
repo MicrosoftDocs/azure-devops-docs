@@ -25,8 +25,6 @@ Analytics supports several dashboard widgets that take advantage of the power of
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
 
-
-
 ## Prerequisites
 
 ::: moniker range="azure-devops"

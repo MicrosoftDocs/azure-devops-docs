@@ -40,7 +40,7 @@ By configuring these permissions, you ensure that only authorized users can make
 For more information about adding and viewing dashboards, see [Add, rename, and delete dashboards](dashboards.md).   
 
 > [!TIP]
-> If a user reports that they can't create or edit a team dashboard despite having the necessary permissions, ensure they are added as a member of the team. This includes adding them as a team member to the default project team. For more information, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md).
+> If a user reports that they can't create or edit a team dashboard despite having the necessary permissions, ensure they are added as a member of the team. This includes adding them as a member of the default project team. For more information, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md).
 
 <a id="permissions">  </a>
 
@@ -52,12 +52,12 @@ For more information about adding and viewing dashboards, see [Add, rename, and 
 - **Permissions:**
   - **Team dashboards**: To add, edit, or manage a team dashboard, meet the following requirements:
     - Have at least **Basic** access.
-    - Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have dashboard permissions.
-    - Be a [team member](../../organizations/security/add-users-team-project.md) for the currently selected team to edit dashboards.
+    - Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have **Edit dashboard** permissions.
+    - Be a [member of the team](../../organizations/security/add-users-team-project.md).
   - **Project dashboards**: To add, edit, or manage project dashboards, meet the following requirements:
     - Have at least **Basic** access.
-    - Be a project administrator or have dashboard permissions.
-    - Be a [team member](../../organizations/security/add-users-team-project.md) for the currently selected team to edit dashboards.
+    - Be a project administrator or have **Edit dashboard** permissions.
+    - Be a [member of the team](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ For more information about adding and viewing dashboards, see [Add, rename, and 
 - **Permissions:** To add, edit, or manage a team dashboard, meet the following requirements:
   - Have at least **Basic** access.
   - Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have dashboard permissions.
-  - Be a [team member](../../organizations/security/add-users-team-project.md) for the currently selected team to edit dashboards.
+  - Be a [member of the team](../../organizations/security/add-users-team-project.md) to edit its dashboards.
 ::: moniker-end
 
 ## Set default team dashboard permissions

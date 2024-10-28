@@ -14,11 +14,11 @@ ms.date: 10/25/2024
   - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
   - Be a [member of the project](../../organizations/accounts/add-organization-users.md).
 - **Permissions:**
-  - **Team Dashboards**: To add, edit, or manage a team dashboard, meet the following requirements:
+  - **Team dashboards**: To add, edit, or manage a team dashboard, meet the following requirements:
     - Have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.
     - Be a member of the team.
     - Be a member of the Project Administrators group.
-  - **Project Dashboards**: To add, edit, or manage a project dashboard, meet the following requirement:
+  - **Project dashboards**: To add, edit, or manage a project dashboard, meet the following requirement:
     - Have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the selected project dashboard.
 
 ::: moniker-end
