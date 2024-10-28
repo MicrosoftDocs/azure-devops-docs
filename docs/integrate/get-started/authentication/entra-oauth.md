@@ -18,33 +18,33 @@ ms.date: 10/28/2024
 ## Microsoft Entra ID OAuth
 When you create a [Microsoft Entra ID OAuth app](/entra/identity-platform/v2-protocols), your app is issued Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard one-hour duration before expiration. 
 
-Entra ID is a separate Microsoft product from Azure DevOps with its own platform that allows you to register an application to access Entra tenants and define permissions needed from different Azure resources, of which Azure DevOps is considered one. Entra apps and Azure DevOps apps are separate entities with no knowledge of each other. The means to authenticate your application will differ from Entra OAuth to Azure DevOps OAuth and we recommend reading the Entra documentation thoroughly to understand the new functionality available to you via Entra, as well as the [different expectations](/entra/identity-platform/application-model) of you during setup.
+Entra ID is a separate Microsoft product with its own platform. On Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one. Entra apps and Azure DevOps apps are separate entities with no knowledge of each other. The means to authenticate your application differs from Entra OAuth to Azure DevOps OAuth and we recommend reading the Entra documentation thoroughly to understand the new functionality available via Entra and the [different expectations](/entra/identity-platform/application-model) of you during setup.
 
 ### Why choose Entra?
-As a leading identity and access management provider, [Microsoft Entra ID](/entra/fundamentals/whatis) has been heavily focused on the needs of companies looking to easily manage team members and safeguard company resources. Entra ID offers a lot of features, of which application development and management is one of them. The Entra application model offers a few advantages over the Azure DevOps OAuth app model that make them more appealing to app developers.
+As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) is focused on the needs of companies that need to manage team members and safeguard company resources. Entra ID offers a lot of features, of which application development and management is one of them. The Entra application model offers a few advantages over the Azure DevOps OAuth app model that make them more appealing to app developers.
 
 **1. Broader reach inside and outside of Microsoft**
 
-By building an app on Entra, you’ll have a much broader reach through the rest of the Microsoft ecosystem. One Entra app can be used to access multiple Microsoft products, making app credential management far simpler. Teams offering SaaS products may consider creating a preintegrated application that will appear alongaside other popular apps in the Microsoft Entra app gallery. 
+By building an app on Entra, you have a broader reach through the rest of the Microsoft ecosystem. One Entra app can be used to access multiple Microsoft products, making app credential management far simpler. Teams offering SaaS products may consider creating a preintegrated application that appears alongside other popular apps in the [Microsoft Entra app gallery](/entra/identity/enterprise-apps/overview-application-gallery). 
 
 **2. Greater admin visibility, consent, and management**
 
-Azure tenants can be used to allow trusted admins to manage which apps access company resources, who in the organization can use the app, and how consent can be obtained for these apps. Azure DevOps OAuth doesn’t know knowledge of tenants or their admins, relying exclusively on users to authorize access to potentially sensitive data. Users may have previously authorized access to a long-forgotten app, leaving the door open for later potential infiltration. Admin oversight provides an additional set of eyes to make sure that any appropriate review processes are followed and adhered to and allowing them to even clean up unused or unauthorized apps. 
+[Trusted tenant admins can manage](/entra/identity/enterprise-apps/what-is-application-management) which apps access company resources, who in the organization can use the app, and how consent can be obtained. Azure DevOps OAuth doesn’t know knowledge of tenants or their admins, relying exclusively on users to authorize access to potentially sensitive data. Users that previously authorized access to a long-forgotten app are leaving the door open for later potential infiltration. Admin oversight provides an additional set of eyes with appropriate review processes and helpful cleanup of unused or unauthorized apps. 
 
 **3. Tighter conditional access controls**
 
-Conditional access policies make it a breeze to set up the appropriate access controls on which users can and cannot access your organization through an Entra app. Our own Azure DevOps OAuth app sits outside of the Entra ecosystem and doesn’t adhere to all conditional access policies. 
+[Conditional access policies](/azure/devops/organizations/accounts/change-application-access-policies) make it a breeze to set up the appropriate access controls on which users can and cannot access your organization through an Entra app. Azure DevOps OAuth app sits outside of the Entra ecosystem and doesn’t adhere to all conditional access policies. 
 
 **4. Self-serve app configuration**
 
-Changing app scopes and app ownership on an Entra app is a relative breeze compared to Azure DevOps OAuth apps. We’ve had app developers reach out to our customer support team to make changes, but in Entra the power to change scopes is returned to the developer. App ownership can even be shared between multiple users and not restricted to a single user which may pose a problem if said user leaves the company in the future. 
+Changing app scopes and app ownership on an Entra app is a relative breeze compared to Azure DevOps OAuth apps. App developers reach out to our customer support team to make changes on Azure DevOps OAuth apps, but in Entra the power to change scopes is returned to the developer. App ownership can even be shared between multiple users and not restricted to a single user which may pose a problem if said user leaves the company in the future. 
 
 **5. Sign-in logs available**
 
-Entra logs all “sign-ins" into an Azure tenant, which includes your internal apps and resources. This additional information can offer some more insight into who is using your apps that is not available through our auditing.   
+Entra logs [all “sign-ins"](/entra/identity/monitoring-health/concept-sign-ins) into an Azure tenant, which includes your internal apps and resources. This additional information can offer some more insight into who is using your apps that is not available through our auditing.
 
 ### Helpful resources
-Building on a new platform can be overwhelming. We provide some helpful links we think might be useful to the OAuth app development process on Microsoft Entra. For those migrating from Azure DevOps OAuth to Microsoft Entra OAuth, we provide helpful tips to consider during your migration effort.
+Building on a new platform can be overwhelming. We provide some helpful links we think might be useful to the OAuth app development process on Microsoft Entra. For developers switching over from Azure DevOps OAuth to Microsoft Entra OAuth, we provide helpful tips to consider during your migration effort.
 
 #### Good resources for developers
 * [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow)
@@ -72,4 +72,4 @@ Building on a new platform can be overwhelming. We provide some helpful links we
 ## App-only flows on Entra
 Entra OAuth is the recommended solution for building apps to access Azure DevOps services on-behalf-of a consenting user.
 
-If you're looking to build an application to act on-behalf-of itself, relying solely on its own permissions and access to resources, then look into our documentation on [service principal support](service-principal-managed-identity.md) on Entra. In these docs, we elaborate more on how to set up an application service principal or managed identity that does not rely on user permissions to action on organization resources. This is the recommended authentication for building out automated tooling for teams.
+If you're looking to build an application to act on-behalf-of itself, then look into our documentation on [service principal support](service-principal-managed-identity.md). In these docs, we elaborate more on how to set up a service principal or managed identity that does not rely on user permissions to action on organization resources, instead relying solely on its own permissions. This authentication mechanism is the recommended authentication for building out automated tooling for teams.
