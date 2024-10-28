@@ -235,7 +235,7 @@ Manual mode is best suited for teams that have knowledge of their CI/CD pipeline
 You can create your own provisioning schedule or choose from one of the predefined schedules, and you can configure the time zone to use for specifying the schedules. The default value for **Pre-provisioning TimeZone** is **(UTC) Coordinated Universal Time**.
 
 > [!TIP]
-> The provisioning count in a scheme can't be greater than the **Maximim agents** configured in [Pool settings](configure-pool-settings.md#maximum-agents).
+> The provisioning count in a scheme can't be greater than the **Maximum agents** configured in [Pool settings](configure-pool-settings.md#maximum-agents).
 
 Every few minutes, Managed DevOps Pools checks the count of active agents running jobs and standby agents waiting for jobs, to ensure that the provisioning count of agents specified by the current provisioning scheme are available. If the current provisioning count is 10, and there are five agents running jobs and two agents on standby, Managed DevOps Pools will start three additional standby agents to bring the total agent count up to 10.
 
@@ -349,7 +349,7 @@ A single `daysData` item contains a dictionary of times and standby agent counts
 "daysData": [
     {}, # Schedule of standby agent count adjustments for Sunday
     {   # Schedule of standby agent count adjustments for Monday
-        "09:00:00": 1, # Adjust standy agent count to 1
+        "09:00:00": 1, # Adjust standby agent count to 1
         "17:00:00": 0  # Adjust standby agent count to 0
     },
     {  # Schedule of standby agent count adjustments for Tuesday
@@ -505,7 +505,7 @@ A single `daysData` item contains a dictionary of times and standby agent counts
 "daysData": [
     {}, # Schedule of standby agent count adjustments for Sunday
     {   # Schedule of standby agent count adjustments for Monday
-        "09:00:00": 1, # Adjust standy agent count to 1
+        "09:00:00": 1, # Adjust standby agent count to 1
         "17:00:00": 0  # Adjust standby agent count to 0
     },
     {  # Schedule of standby agent count adjustments for Tuesday

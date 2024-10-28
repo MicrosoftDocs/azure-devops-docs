@@ -143,7 +143,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 1. To add team members, choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add, currect page](../security/media/add-users/team-profile-choose-add.png)   
+	> ![Team Profile, choose Add, current page](../security/media/add-users/team-profile-choose-add.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 

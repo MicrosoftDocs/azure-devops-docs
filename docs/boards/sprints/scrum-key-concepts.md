@@ -53,7 +53,7 @@ With capacity bars, you can quickly see who is over, at, or under capacity. Capa
 
 |Capacity colors |Capacity bars |
 |----------------|--------------|
-|![Screenshot of capacity colors.](media/capacity-planning-tool-color-chart.png) | ![Screeshot of Capacity bars.](media/ALM_DS_CapacityBars_S.png) | 
+|![Screenshot of capacity colors.](media/capacity-planning-tool-color-chart.png) | ![Screenshot of Capacity bars.](media/ALM_DS_CapacityBars_S.png) | 
 
 For more information, see [Adjust work to fit sprint capacity](adjust-work.md). 
 
