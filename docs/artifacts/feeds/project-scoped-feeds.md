@@ -76,7 +76,7 @@ A: If your pipeline is failing to download an artifact from another project, ens
 
 - **On the downstream project**: navigate to **Project Settings** > **Permissions** > **Users** > search for your upstream project's name, then select **Expand search** > select your upstream project's build service and enable **View project-level information**.
 
-#### Q: If I enable upstream sources in a new feed and set its visibility to 'Members of your Microsoft Entra tenant,' do I still need to add Entra users to the Azure DevOps Organization that contains the feed?
+#### Q: If I enable upstream sources in a new feed and set its visibility to 'Members of your Microsoft Entra tenant,' do I still need to add Microsoft Entra users to the Azure DevOps Organization that contains the feed?
 
 A: Yes, adding users to the Azure DevOps organization is still required for them to access the packages in the feed. You can add them as **Project Collection Valid Users** from **Organization Settings** > **Security** > **Permissions**.
 
