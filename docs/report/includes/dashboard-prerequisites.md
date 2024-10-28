@@ -1,7 +1,7 @@
 ---
 ms.subservice: azure-devops-analytics
 ms.topic: include
-ms.date: 10/25/2024
+ms.date: 10/28/2024
 ---
 
 <a id="permissions">  </a>
@@ -12,14 +12,11 @@ ms.date: 10/25/2024
 
 - **Access:**
   - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-  - Be a [member of the project](../../organizations/accounts/add-organization-users.md).
+  - Be a [member of the project](../../organizations/accounts/add-organization-users.md) and have at least **Basic** access or have specific [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.
 - **Permissions:**
   - **Team dashboards**: To add, edit, or manage a team dashboard, meet the following requirements:
-    - Have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.
     - Be a member of the team.
     - Be a member of the Project Administrators group.
-  - **Project dashboards**: To add, edit, or manage a project dashboard, meet the following requirement:
-    - Have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the selected project dashboard.
 
 ::: moniker-end
 
@@ -27,13 +24,7 @@ ms.date: 10/25/2024
 
 - **Access:**
   - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-  - Be a [member of the project](../../organizations/accounts/add-organization-users.md).
-- **Permissions:**
-  - **Team Dashboards**: To add, edit, or manage a team dashboard, meet the following requirements:
-    - Have **Basic** access, have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you or be a member of the Project Administrators group.
-    - Be a member of the team.
-  - **Project Dashboards**: To add, edit, or manage a project dashboard, meet the following requirement:
-    - Have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the selected project dashboard.
+  - Be a [member of the project](../../organizations/accounts/add-organization-users.md) and have at least **Basic** access, have specific [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you, or be a member of the Project Administrators group.
 - **Tools:** Have [Analytics enabled](../dashboards/analytics-extension.md) for [Analytics widgets](../dashboards/analytics-widgets.md) to work with your dashboard.
 
 ::: moniker-end
@@ -42,9 +33,7 @@ ms.date: 10/25/2024
 
 - **Access:**
   - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-  - Be a [member of the project](../../organizations/accounts/add-organization-users.md).
-- **Permissions:**
-  - Have **Basic** access, have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the selected dashboard, be a member of the Project Administrators group, or be assigned to the [team administrator role](../../organizations/settings/add-team-administrator.md).
+  - Be a [member of the project](../../organizations/accounts/add-organization-users.md) and have **Basic** access, have specific [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the selected dashboard, be a member of the Project Administrators group, or be assigned to the [team administrator role](../../organizations/settings/add-team-administrator.md).
 - **Tools:**
   - Install or enable the [Analytics Marketplace extension](../dashboards/analytics-extension.md). Analytics widgets aren't available if Analytics isn't installed, enabled, or running.
   - Have [Analytics enabled](../dashboards/analytics-extension.md) for [Analytics widgets](../dashboards/analytics-widgets.md) to work with your dashboard.

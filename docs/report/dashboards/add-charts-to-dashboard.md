@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2024
+ms.date: 10/28/2024
 ---
 
 # Add charts to a dashboard
@@ -28,20 +28,17 @@ This article explains how to add charts to a dashboard from their respective fun
 ::: moniker range="azure-devops"
 
 - **Dashboard creation**: Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart.
-- **Access:** Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-- **Permissions:** To add, edit, or manage a team dashboard, meet the following requirements:
-  - Have at least **Basic** access.
-  - Be a member of the team.
-  - Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have [dashboard permissions](./dashboard-permissions.md) granted to you.
-
+- **Access:** 
+  - Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+  - To add, edit, or manage a team dashboard, be a team member and have at least **Basic** access.
+- **Permissions:** Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 - **Dashboard creation**: Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart.
-- **Permissions:** To add, edit, or manage a team dashboard, meet the following requirements:
-  - Have at least **Basic** access.
-  - Be a member of the team.
-  - Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have [dashboard permissions](./dashboard-permissions.md) granted to you.
+- **Access:**
+  -  Be a member of the team with at least **Basic** access.
+- **Permissions:** Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
 ::: moniker-end
 
 For more information, see [Default permissions and access for charts and dashboards](charts-dashboard-permissions-access.md).
