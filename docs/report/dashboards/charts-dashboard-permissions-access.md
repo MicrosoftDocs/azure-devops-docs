@@ -17,10 +17,9 @@ ms.date: 04/04/2022
 
 Team members and members of the Contributors group for a project can view charts and dashboards. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 
-Stakeholders have limited access to view charts and dashboards. For more information, see [About access levels](../../organizations/security/access-levels.md).
+Stakeholders get limited access to view charts and dashboards. For more information, see [About access levels](../../organizations/security/access-levels.md).
 
 For an overview of dashboard and chart features, see [Dashboards, charts, & widgets](overview.md). 
-
 
 ## Dashboards, charts, reports, and widgets
 
@@ -30,12 +29,7 @@ You can define and manage dashboards from the web portal, **Dashboard**. For an 
 Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
 ::: moniker-end    
 
-
-
 [!INCLUDE [temp](../../organizations/security/includes/report.md)]
-
-
-::: moniker range=">= azure-devops-2019" 
 
 ## Power BI Integration and Analytics views
 
@@ -45,18 +39,8 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 [!INCLUDE [temp](../../organizations/security/includes/analytics.md)]
 
-::: moniker-end
-
-
 ## Related articles
-
-::: moniker range=">= azure-devops-2019" 
 
 - [Work across projects](../../project/navigation/work-across-projects.md)
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md) 
 - [Set permissions to access Analytics data and Analytics views](../powerbi/analytics-security.md)
-
-::: moniker-end
-
-
-
