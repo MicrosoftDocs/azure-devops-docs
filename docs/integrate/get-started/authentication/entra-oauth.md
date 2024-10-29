@@ -37,7 +37,7 @@ By building an app on Microsoft Entra, you have a broader reach through the rest
 
 **4. Self-serve app configuration**
 
-Changing app scopes and app ownership on a Microsft Entra app is a relative breeze compared to Azure DevOps OAuth apps. App developers reach out to our customer support team to make changes on Azure DevOps OAuth apps, but in Microsoft Entra the power to change scopes is returned to the developer. App ownership can even be shared between multiple users and not restricted to a single user which may pose a problem if said user leaves the company in the future. 
+Changing app scopes and app ownership on a Microsoft Entra app is a relative breeze compared to Azure DevOps OAuth apps. App developers reach out to our customer support team to make changes on Azure DevOps OAuth apps, but in Microsoft Entra the power to change scopes is returned to the developer. App ownership can even be shared between multiple users and not restricted to a single user which may pose a problem if said user leaves the company in the future. 
 
 **5. Sign-in logs available**
 
@@ -54,7 +54,7 @@ Building on a new platform can be overwhelming. We provide some helpful links we
 * [Scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc): Read up on the `.default` scope. See the scopes available for Azure DevOps in [our list of scopes](oauth.md#scopes).
 * [Requesting permissions through consent](/entra/identity-platform/consent-types-developer)
 * [Authentication libraries](/entra/identity-platform/reference-v2-libraries) and [code samples](/entra/identity-platform/sample-v2-code?tabs=apptype)
-* [Manage personal access tokens via API](../../../organizations/accounts/manage-personal-access-tokens-via-api.md): Using the PAT lifecycle management APIs requires Microsft Entra tokens and our docs and the [associated sample app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) might be a helpful example for setting up a Microsoft Entra app to use Azure DevOps REST APIs.
+* [Manage personal access tokens via API](../../../organizations/accounts/manage-personal-access-tokens-via-api.md): Using the PAT lifecycle management APIs requires Microsoft Entra tokens and our docs and the [associated sample app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) might be a helpful example for setting up a Microsoft Entra app to use Azure DevOps REST APIs.
 * [Support and help options for developers](/entra/identity-platform/developer-support-help-options)
 
 #### Good resources for admins
