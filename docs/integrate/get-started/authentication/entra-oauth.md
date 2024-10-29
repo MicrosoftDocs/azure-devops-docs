@@ -16,14 +16,14 @@ ms.date: 10/28/2024
 > When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps, as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69702).
 
 ## Microsoft Entra ID OAuth
-Microsoft Entra ID is a separate Microsoft product with its own platform. On Microsoft Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one. 
+Microsoft Entra ID is a separate Microsoft product with its own platform. On Microsoft Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one.
 
 Microsoft Entra apps and Azure DevOps apps are separate entities with no knowledge of each other. The means to authenticate your application differs from Microsoft Entra OAuth to Azure DevOps OAuth. For one thing, [Microsoft Entra ID OAuth apps](/entra/identity-platform/v2-protocols) are issued Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard one-hour duration before expiration. 
 
 We recommend reading the Microsoft Entra documentation thoroughly to understand the new functionality available via Microsoft Entra and the [different expectations](/entra/identity-platform/application-model) of you during setup. 
 
 ### Why choose Microsoft Entra?
-As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) is focused on the needs of companies that need to manage team members and safeguard company resources. Microsoft Entra ID offers many features, of which application development and management is one of them. The Microsoft Entra application model offers a few advantages over the Azure DevOps OAuth app model that make them more appealing to app developers.
+As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) is focused on the needs of companies that need to manage team members and safeguard company resources. Microsoft Entra ID offers many features -- application development and management is one of them. The Microsoft Entra application model offers a few advantages over the Azure DevOps OAuth app model that make them more appealing to app developers.
 
 **1. Broader reach inside and outside of Microsoft**
 
