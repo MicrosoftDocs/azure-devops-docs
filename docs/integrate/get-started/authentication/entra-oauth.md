@@ -13,15 +13,17 @@ ms.date: 10/28/2024
 # Building for Azure DevOps with Microsoft Entra OAuth Apps
 
 > [!IMPORTANT]
-> When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69702).
+> When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps, as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69702).
 
 ## Microsoft Entra ID OAuth
-When you create a [Microsoft Entra ID OAuth app](/entra/identity-platform/v2-protocols), your app is issued Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard one-hour duration before expiration. 
+Microsoft Entra ID is a separate Microsoft product with its own platform. On Microsoft Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one.
 
-Microsoft Entra ID is a separate Microsoft product with its own platform. On Microsoft Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one. Microsoft Entra apps and Azure DevOps apps are separate entities with no knowledge of each other. The means to authenticate your application differs from Microsoft Entra OAuth to Azure DevOps OAuth and we recommend reading the Microsoft Entra documentation thoroughly to understand the new functionality available via Microsoft Entra and the [different expectations](/entra/identity-platform/application-model) of you during setup.
+Microsoft Entra apps and Azure DevOps apps are separate entities with no knowledge of each other. The means to authenticate your application differs from Microsoft Entra OAuth to Azure DevOps OAuth. For one thing, [Microsoft Entra ID OAuth apps](/entra/identity-platform/v2-protocols) are issued Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard one-hour duration before expiration. 
+
+We recommend reading the Microsoft Entra documentation thoroughly to understand the new functionality available via Microsoft Entra and the [different expectations](/entra/identity-platform/application-model) of you during setup. 
 
 ### Why choose Microsoft Entra?
-As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) is focused on the needs of companies that need to manage team members and safeguard company resources. Microsoft Entra ID offers many features, of which application development and management is one of them. The Microsoft Entra application model offers a few advantages over the Azure DevOps OAuth app model that make them more appealing to app developers.
+As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) is focused on the needs of companies that need to manage team members and safeguard company resources. Microsoft Entra ID offers many features -- application development and management is one of them. The Microsoft Entra application model offers a few advantages over the Azure DevOps OAuth app model that make them more appealing to app developers.
 
 **1. Broader reach inside and outside of Microsoft**
 
@@ -63,11 +65,14 @@ Building on a new platform can be overwhelming. We provide some helpful links we
 * [Consent experience for applications in Microsoft Entra ID](/entra/identity-platform/application-consent-experience)
 
 #### Building & migrating tips
+> [!NOTE]
+> Microsoft Entra OAuth apps doesn't natively support MSA users for Azure DevOps REST APIs. If you are building an app that must cater to MSA users or supports both Microsoft Entra and MSA users, [Azure DevOps OAuth apps](azure-devops-oauth.md) remains your best option. We are currently working on native support for MSA users through Microsoft Entra OAuth.
+
 * **Good-to-know Azure DevOps IDs:**
   * Microsoft Entra resource identifier: `499b84ac-1321-427f-aa17-267ca6975798`
   * Resource Uri: `https://app.vssps.visualstudio.com`
   * Use the `.default` scope when requesting a token with all scopes that the app is permissioned for.
-* When migrating an existing app, you may be using Azure DevOps user identifiers that don't exist in Microsoft Entra. Use the [ReadIdentities API](/rest/api/azure/devops/ims/identities/read-identities) to resolve and match the different identities in use.
+* When migrating an existing app, you may be using Azure DevOps user identifiers that don't exist in Microsoft Entra. Use the [ReadIdentities API](/rest/api/azure/devops/ims/identities/read-identities) to resolve and match the different identities in use by each identity provider.
 
 ## App-only flows on Microsoft Entra
 Microsoft Entra OAuth is the recommended solution for building apps to access Azure DevOps services on-behalf-of a consenting user.
