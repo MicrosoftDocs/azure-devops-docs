@@ -275,9 +275,7 @@ A: Yes, you can connect to any Azure Artifacts feed with a service principal. In
         </configuration>
         ```
 
-1. [Get a Microsoft Entra ID token](/azure/databricks/dev-tools/service-prin-aad-token) for your service principal.
-
-1. Set the `ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS` environment variable as shown below and specify your feed URL, Microsoft Entra ID access token, and the path to your service principal certificate:
+1. Set the [ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md#environment-variables) environment variable as shown below, specifying your feed URL, the service principal's application (client) ID, and the path to your service principal certificate:
 
     - **PowerShell**:
     
@@ -287,7 +285,7 @@ A: Yes, you can connect to any Azure Artifacts feed with a service principal. In
           "endpointCredentials": [
             {
               "endpoint": "<FEED_URL>",
-              "clientId": "<MICROSOFT_ENTRA_ID_ACCESS_TOKEN>",
+              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
               "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
             }
           ]
@@ -302,7 +300,7 @@ A: Yes, you can connect to any Azure Artifacts feed with a service principal. In
           "endpointCredentials": [
             {
               "endpoint": "<FEED_URL>",
-              "clientId": "<MICROSOFT_ENTRA_ID_ACCESS_TOKEN>",
+              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
               "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
             }
           ]
