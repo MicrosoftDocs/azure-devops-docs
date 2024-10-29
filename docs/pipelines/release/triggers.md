@@ -75,46 +75,33 @@ You can also use **Build tags** to organize your workflow and tag specific runs.
 
 Stage triggers allow you set up specific conditions to trigger deployment to a specific stage.
 
-- **Select trigger**:
-  Set the trigger that will start the deployment to your stage automatically. Use the **Stages** dropdown to trigger a release after a successful deployment to the selected stage. Select **Manual only** to only allow manual trigger.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="media/trigger-02a.png" alt-text="A screenshot showing predeployment triggers.":::
+1. Select **Pipelines** > **Releases**.
 
-- **Artifacts filter**:
-  Enable the toggle button to trigger a new deployment based on specific artifacts. In this example, a release will be deployed when a new artifact is available from the specified branch.
+1. Select your release definition, and then select **Edit**.
 
-    :::image type="content" source="media/trigger-02b.png" alt-text="A screenshot showing predeployment artifact filters.":::
+1. Under the **Stages** section, select the **Pre-deployment conditions** icon, and set up your triggers.
 
-- **Schedule**:
-  Trigger a new deployment to your specified stage at a specific time.
+    :::image type="content" source="media/release-triggers-to-stages.png" alt-text="A screenshot showing stage triggers in a release pipeline.":::
 
-    :::image type="content" source="media/trigger-02.png" alt-text="A screenshot showing predeployment schedule settings.":::    
+- **Select trigger**: choose the trigger to start deployment to this stage automatically. Select "After release" to deploy to this stage each time a new release is created. Select "After stage" to deploy after successful deployments to selected stages. Select "Manual only" to allow only manual deployments.
 
-- **Pull-request deployment**:
-  Enable the toggle button to trigger a new release every time a new pull request is created. It's recommended to disable this feature for production environment.
+- **Artifacts filter**: specify artifact condition(s) that must be met to trigger a deployment. A release will be deployed to this stage only if all artifact conditions match.
 
-    :::image type="content" source="media/trigger-02c.png" alt-text="A screenshot showing pull request deployment trigger.":::    
+- **Schedule**: set a specified time to trigger a deployment to this stage.
 
-- **Pre-deployment approvals**:
-Select the users who can approve or reject deployments to your selected stage. By default, when this feature is enabled, all project users must approve the deployment. If a group is added to the approvers list, at least one user in the group must approve the deployment. You can also specify the *Approval policies* and *Timeout* (the maximum time for an approval to remain in pending state before it is automatically rejected).
+- **Pull-request deployment**: allow pull request-triggered releases to deploy to this stage. We recommend keeping this option disabled for critical or production stages.
 
-    :::image type="content" source="media/pre-deployment-approval.png" alt-text="A screenshot showing predeployment approvals."::: 
+## Related content
 
-- **Gates**:
-Enable the toggle button to set up specific gates to evaluate before trigger deployment.
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
 
-    :::image type="content" source="media/gates.png" alt-text="A screenshot showing predeployment gates."::: 
+- [Deploy to different stages from multiple branches](deploy-multiple-branches.md)
 
-- **Deployment queue settings**:
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
 
-Configure specific actions when multiple releases are queued for deployment.
 
-:::image type="content" source="media/deploy-queue.png" alt-text="A screenshot displaying the deployment queue settings.":::
 
-- **Number of parallel deployments**: options: *Specific* or *Unlimited*. Specify how many deployments can occur simultaneously within the same stage. If you set the number to '1', deployments will occur one after another in sequence.
-  
-- **Subsequent releases**: options: *Deploy all in sequence* or *Deploy latest and cancel the others* This option is activated if you select *Specific* under the *Number of parallel deployments*.
-  
-  - **Deploy all in sequence**: select this option if you need releases to deploy one after the other. This approach ensures that predeployment approval requests are processed in the correct order.
-      
-  - **Deploy latest and cancel the others**: select this option if you're producing builds faster than releases, and you only want to deploy the latest build. See [Specify queuing policies](../process/stages.md?tabs=classic#specify-queuing-policies) for more details.
+
+
