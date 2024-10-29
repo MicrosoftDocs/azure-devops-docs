@@ -24,8 +24,8 @@
 | | `vso.extension_manage` | Extensions (read and manage) | Grants the ability to install, uninstall, and perform other administrative actions on installed extensions. | `vso.extension` |
 | | `vso.extension.data` | Extension data (read) | Grants the ability to read data (settings and documents) stored by installed extensions. | `vso.profile` |
 | | `vso.extension.data_write` | Extension data (read and write) | Grants the ability to read and write data (settings and documents) stored by installed extensions. | `vso.extension.data` |
-| **Github Connections** | `vso.githubconnections` | GitHub Connections (read) | Grants the ability to read github connections and github repositories data. |
-| | `vso.githubconnections_manage` | GitHub Connections (read and manage) | Grants the ability to read and manage github connections and github repositories data | `vso.githubconnections` |
+| **Github Connections** | `vso.githubconnections` | GitHub Connections (read) | Grants the ability to read GitHub connections and GitHub repositories data. |
+| | `vso.githubconnections_manage` | GitHub Connections (read and manage) | Grants the ability to read and manage GitHub connections and GitHub repositories data | `vso.githubconnections` |
 | **Graph & identity** | `vso.graph` | Graph (read) | Grants the ability to read user, group, scope, and group membership information. |
 | | `vso.graph_manage` | Graph (manage) | Grants the ability to read user, group, scope and group membership information, and to add users, groups, and manage group memberships. | `vso.graph` |
 | | `vso.identity` | Identity (read) | Grants the ability to read identities and groups. |
