@@ -48,12 +48,12 @@ Configure a migration environment on a local workstation and install the followi
 * [Subversion](https://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
 
-You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
+You'll also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
 ](./create-new-repo.md)
 
 ## Convert the source SVN repository to a local Git repository
 
-The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like Azure Repos.
+The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository doesn't have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like Azure Repos.
 
 > [!TIP]
 >
@@ -103,7 +103,7 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "autho
 >
 > Setting a prefix is also useful if you wish to track multiple projects that share a common repository. By default, the prefix is set to `origin/`.
 
-If you are using the standard trunk, branches, tags layout you'll just put `--stdlayout`. However, if you have something different you may have to pass the `--trunk`, `--branches`, and `--tags` to find what is what. For example, if your repository structure was `trunk/companydir` and you branched that instead of trunk, you would probably want `--trunk=trunk/companydir --branches=branches`.
+If you're using the standard trunk, branches, tags layout you'll just put `--stdlayout`. However, if you have something different you may have to pass the `--trunk`, `--branches`, and `--tags` to find what is what. For example, if your repository structure was `trunk/companydir` and you branched that instead of trunk, you would probably want `--trunk=trunk/companydir --branches=branches`.
 
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --branches=/branches --tags=/tags  --authors-file "authors-transform.txt" c:\mytempdir
@@ -111,7 +111,7 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --bran
 
 > [!NOTE]
 >
-> This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you will have a Git checkout of your repository.
+> This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you'll have a Git checkout of your repository.
 
 ### Convert version control-specific configurations
 
@@ -128,7 +128,7 @@ git commit -m 'Convert svn:ignore properties to .gitignore.'
 
 ### Push repository to a bare git repository
 
-In this step, you will create a bare repository and make its default branch match SVN's trunk branch name.
+In this step, you'll create a bare repository and make its default branch match SVN's trunk branch name.
 
 1. Create a bare Git repository
 
@@ -181,7 +181,7 @@ git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remot
 ```
 > [!NOTE]
 >
-> This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you will have a Git checkout of your repository.
+> This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you'll have a Git checkout of your repository.
 
 ### Migrate only specific revisions
 
@@ -211,6 +211,6 @@ provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*
 
-*This document does not provide you with any legal rights to any
+*This document doesn't provide you with any legal rights to any
 intellectual property in any Microsoft product. You may copy and use
 this document for your internal, reference purposes.*
