@@ -327,5 +327,5 @@ The following tables describe the type of events (or actions) that are available
 
 ## Related articles
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
-- [Export audit events](azure-devops-auditing.md#export-auditing-events)
+- [Export audit events](azure-devops-auditing.md#export-audit-events)
 - [Set up an audit stream](auditing-streaming.md)

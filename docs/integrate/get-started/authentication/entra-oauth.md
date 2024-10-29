@@ -13,7 +13,7 @@ ms.date: 10/28/2024
 # Building for Azure DevOps with Microsoft Entra OAuth Apps
 
 > [!IMPORTANT]
-> When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps, as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69702).
+> When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps, as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 ## Microsoft Entra ID OAuth
 Microsoft Entra ID is a separate Microsoft product with its own platform. On Microsoft Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one.
