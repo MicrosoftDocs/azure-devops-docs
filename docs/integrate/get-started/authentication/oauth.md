@@ -53,6 +53,18 @@ Some scopes might be inclusive of other scopes, for example, `vso.code_manage` i
 
 [!INCLUDE [scopes table](../../includes/scopes.md)]
 
+## FAQ
+
+## Frequently asked questions (FAQs)
+
+#### Q: Can I use OAuth with my mobile phone app?
+
+A: No. Azure DevOps Services only supports the web server flow, so there's no way to implement OAuth, as you can't securely store the app secret.
+
+#### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
+
+A: No. OAuth is only supported in the REST APIs.
+
 ## Related articles
 
 * [Choosing the right authentication method](authentication-guidance.md)
