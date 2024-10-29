@@ -232,7 +232,7 @@ When you confirm that you want to regenerate, the previous app secret no longer 
 3. Find the app under the **Applications and services** header on the left sidebar.
 4. select "Delete" on the application registration page. A modal appears to confirm your deletion.
 
-   :::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Delete button on app metadata page highlighted":::
+   :::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Screenshot of app metadata page with delete button highlighted":::
 
 6. Once you delete the app registration, the app breaks, and we stop minting new tokens or accepting minted tokens for this app.
 
