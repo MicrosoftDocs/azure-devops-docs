@@ -63,13 +63,9 @@ If you chose to enable the pull-request triggers, a release will be triggered wh
 
 1. Select your release definition, and then select **Edit**.
 
-1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Pull request trigger**, then add your **Target Branch Filters**.
+1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Pull request trigger**, then add your **Target Branch Filters**. In the example below, a release is triggered every time a new artifact version is created as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
 
     :::image type="content" source="media/trigger-01a.png" alt-text="A screenshot displaying how to configure pull request triggers in a release pipeline.":::
-
-You can also use **Build tags** to organize your workflow and tag specific runs. In the example below, a release is triggered every time a new artifact version is created as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
-
-:::image type="content" source="media/build-tags-example.png" alt-text="A screenshot showing how to set up a pull request trigger with build tags.":::
 
 ## Stage triggers
 
@@ -83,7 +79,7 @@ Stage triggers allow you set up specific conditions to trigger deployment to a s
 
 1. Under the **Stages** section, select the **Pre-deployment conditions** icon, and set up your triggers.
 
-    :::image type="content" source="media/release-triggers-to-stages.png" alt-text="A screenshot showing stage triggers in a release pipeline.":::
+    :::image type="content" source="media/release-triggers-to-stages.png" alt-text="A screenshot showing stage triggers in a release pipeline." lightbox="media/release-triggers-to-stages.png":::
 
 - **Select trigger**: choose the trigger to start deployment to this stage automatically. Select "After release" to deploy to this stage each time a new release is created. Select "After stage" to deploy after successful deployments to selected stages. Select "Manual only" to allow only manual deployments.
 
