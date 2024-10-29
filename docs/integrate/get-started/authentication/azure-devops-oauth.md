@@ -227,14 +227,16 @@ When you confirm that you want to regenerate, the previous app secret no longer 
 
 ## Delete your app
 
-1. If you no longer need your app, delete it from your profile `https://app.vssps.visualstudio.com/profile/view`.
+If you no longer need your app, delete it from your profile.
+
+1. Go to your profile at: `https://app.vssps.visualstudio.com/profile/view`.
 2. Ensure you're on the correct tenant's page by selecting from the dropdown menu under your name in the sidebar.
 3. Find the app under the **Applications and services** header on the left sidebar.
 4. select "Delete" on the application registration page. A modal appears to confirm your deletion.
 
    :::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Screenshot of app metadata page with delete button highlighted":::
 
-6. Once you delete the app registration, the app breaks, and we stop minting new tokens or accepting minted tokens for this app.
+5. Once you delete the app registration, the app breaks, and we stop minting new tokens or accepting minted tokens for this app.
 
 ## Frequently asked questions (FAQs)
 
@@ -262,40 +264,6 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 
 A: Verify that your organization's admin didn't disable **Third-party application access via OAuth** at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
 In this scenario, the flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
-
-#### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
-
-A: No. OAuth is only supported in the REST APIs.
-
-#### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
-
-A: Do the following steps:
-
-1. Get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work-items?preserve-view=true&view=azure-devops-rest-6.1) REST API:
-
-   ```REST
-   GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
-   ```
-
-2. To get the attachments details, add the following parameter to the URL:
-
-   ```REST
-   $expand=all
-   ```
-
-3. With the results, you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
-
-   ```REST API
-   $url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=6.0
-
-   $workItem = Invoke-RestMethod -Uri $url -Method Get -ContentType application/json
-
-   $split = ($workItem.relations.url).Split('/')
-
-   $attachmentId = $split[$split.count - 1]
-
-   # Result: 1244nhsfs-ff3f-25gg-j64t-fahs23vfs
-   ```
 
 ## Related articles
 
