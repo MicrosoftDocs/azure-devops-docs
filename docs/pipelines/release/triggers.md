@@ -55,7 +55,7 @@ Scheduled release triggers allow you to create new releases at specific times.
 
 ## Pull request triggers
 
-If you chose to enable the pull-request triggers, a release will be triggered whenever a new version of the selected artifact is created by the pull request pipeline workflow. To use a pull request trigger, you must also enable it for specific stages (covered in the next section). You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
+If you chose to enable the pull-request triggers, a release will be triggered whenever a new version of the selected artifact is created by the pull request pipeline workflow. To use a pull request trigger, you must also enable it for specific stages (covered in the next section). You may also want to set up [branch policies](../../repos/git/pr-status-policy.md) for your branches.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -81,13 +81,13 @@ Stage triggers allow you set up specific conditions to trigger deployment to a s
 
     :::image type="content" source="media/release-triggers-to-stages.png" alt-text="A screenshot showing stage triggers in a release pipeline." lightbox="media/release-triggers-to-stages.png":::
 
-- **Select trigger**: choose the trigger to start deployment to this stage automatically. Select "After release" to deploy to this stage each time a new release is created. Select "After stage" to deploy after successful deployments to selected stages. Select "Manual only" to allow only manual deployments.
+- **Select trigger**: Choose the trigger to start deployment to this stage automatically. Select "After release" to deploy to this stage each time a new release is created. Select "After stage" to deploy after successful deployments to selected stages. Select "Manual only" to allow only manual deployments.
 
-- **Artifacts filter**: specify artifact condition(s) that must be met to trigger a deployment. A release will be deployed to this stage only if all artifact conditions match.
+- **Artifacts filter**: Specify artifact condition(s) that must be met to trigger a deployment. A release will be deployed to this stage only if all artifact conditions match.
 
-- **Schedule**: set a specified time to trigger a deployment to this stage.
+- **Schedule**: Set a specified time to trigger a deployment to this stage.
 
-- **Pull-request deployment**: allow pull request-triggered releases to deploy to this stage. We recommend keeping this option disabled for critical or production stages.
+- **Pull-request deployment**: Allow pull request-triggered releases to deploy to this stage. We recommend keeping this option disabled for critical or production stages.
 
 ## Related content
 
