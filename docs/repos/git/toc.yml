@@ -147,6 +147,8 @@
     href: pull-request-templates.md
   - name: Extend pull request workflows with pull request status
     href: pull-request-status.md
+  - name: Configure custom target branches for pull requests
+    href: pull-request-targets.md
 - name: History
   items:
   - name: Review history
