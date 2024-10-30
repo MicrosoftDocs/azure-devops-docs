@@ -11,7 +11,7 @@ This article provides solutions to common Managed DevOps Pools issues.
 
 ## Pool creation failure due to Azure DevOps organization permissions
 
-Pool creation fails with the a `PoolProvisioningFailed` error similar to the following error: `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, was not found in the Azure DevOps organization provided, <your Azure DevOps organization>.`.
+Pool creation fails with a `PoolProvisioningFailed` error similar to the following error: `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, was not found in the Azure DevOps organization provided, <your Azure DevOps organization>.`.
 
 To resolve this issue:
 * Your Azure DevOps organization must be connected to Microsoft Entra ID and your logged in Azure user must be a member of this tenant. See [Managed DevOps Pools prerequisites - Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](./prerequisites.md#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership).
@@ -20,11 +20,11 @@ To resolve this issue:
 
 ## Pool creation failure due to VNet permissions
 
-Pool creation fails with the a `UnauthorizedAccessToVirtualNetwork` error similar to the following error: `Validation failure "UnauthorizedAccessToVirtualNetwork": "DevOpsInfrastructure service principal does not have Read access to virtual network <your VNet> in resource group <your resource group>. Give Reader and Network Contributor access to DevOpsInfrastructure service principal and try again.`.
+Pool creation fails with a `UnauthorizedAccessToVirtualNetwork` error similar to the following error: `Validation failure "UnauthorizedAccessToVirtualNetwork": "DevOpsInfrastructure service principal does not have Read access to virtual network <your VNet> in resource group <your resource group>. Give Reader and Network Contributor access to DevOpsInfrastructure service principal and try again.`.
 
 To resolve this issue:
 * Managed DevOps Pools requires access to your virtual network. See [Grant the DevOpsInfrastructure principal access to your virtual network](./configure-networking.md#grant-the-devopsinfrastructure-principal-access-to-your-virtual-network).
-* The virtual network subet needs to be delegated to `Microsoft.DevOpsInfrastructure/pools`. See [Delegate the subnet to Microsoft.DevOpsInfrastructure/pools](./configure-networking.md#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
+* The virtual network subnet needs to be delegated to `Microsoft.DevOpsInfrastructure/pools`. See [Delegate the subnet to Microsoft.DevOpsInfrastructure/pools](./configure-networking.md#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
 
 ## See also
 
