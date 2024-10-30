@@ -23,7 +23,7 @@ To resolve this issue:
 Pool creation fails with a `UnauthorizedAccessToVirtualNetwork` error similar to the following error: `Validation failure "UnauthorizedAccessToVirtualNetwork": "DevOpsInfrastructure service principal does not have Read access to virtual network <your VNet> in resource group <your resource group>. Give Reader and Network Contributor access to DevOpsInfrastructure service principal and try again.`.
 
 To resolve this issue:
-* Managed DevOps Pools requires access to your virtual network. See [Grant the DevOpsInfrastructure principal access to your virtual network](./configure-networking.md#grant-the-devopsinfrastructure-principal-access-to-your-virtual-network).
+* Managed DevOps Pools requires access to your virtual network. See [Grant Reader and Network Contributor access to DevOpsInfrastructure service principal](./configure-networking.md#grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal).
 * The virtual network subnet needs to be delegated to `Microsoft.DevOpsInfrastructure/pools`. See [Delegate the subnet to Microsoft.DevOpsInfrastructure/pools](./configure-networking.md#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
 
 ## See also
