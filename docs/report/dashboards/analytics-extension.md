@@ -7,7 +7,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 07/26/2022
+ms.date: 10/25/2024
 ---
 
 # Install or enable the Analytics service
@@ -16,7 +16,7 @@ ms.date: 07/26/2022
 
 ::: moniker range=">= azure-devops-2020" 
 
-For Azure DevOps Server 2020 and later versions, the Analytics service is generally available. It's automatically enabled for all new project collections added to your server. For project collections upgraded from a previous version, you may need to [manually enable it](#enable-analytics). You enable Analytics for each project collection for which you want to generate Analytics reports. 
+For Azure DevOps Server 2020 and later versions, the Analytics service is generally available and automatically enabled for all new project collections added to your server. For project collections upgraded from a previous version, you might need to [manually enable it](#enable-analytics). You enable Analytics for each project collection for which you want to generate Analytics reports. 
 
 ::: moniker-end
 
@@ -33,22 +33,19 @@ Analytics supports access to Analytics widgets for all projects defined in the p
 
 ## Prerequisites
 
-::: moniker range="azure-devops-2019"
-**For Azure DevOps Server 2019.1:**
-::: moniker-end
-
-- You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
-- You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections). 
-- To enable, pause, disable, or resume Analytics, you must be a member of the **[Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md)**[ group](../../organizations/security/change-organization-collection-level-permissions.md) group with **[Edit collection-level information](../../organizations/security/permissions.md#collection)**[ permissions](../../organizations/security/permissions.md#collection).  
+**For Azure DevOps Server 2019.1 and greater:**
+- Have Azure DevOps Server [installed and configured](/azure/devops/server/install/get-started).
+- Have a [project collection](/azure/devops/server/admin/manage-project-collections). 
+- **Permissions:** To enable, pause, disable, or resume Analytics, be a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) with [Edit collection-level information permissions](../../organizations/security/permissions.md#collection).  
 
 ::: moniker range="azure-devops-2019"
 **For Azure DevOps Server 2019:**
-
-- You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
-- You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections). 
-- To install an extension, you must be a member of the **[Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md)**[ group](../../organizations/security/change-organization-collection-level-permissions.md) group with **[Edit collection-level information](../../organizations/security/permissions.md#collection)**[ permissions](../../organizations/security/permissions.md#collection) If you don't have permissions, you can [request extensions](../../marketplace/request-extensions.md) instead.
-- To upload an extension, you must be a member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator) group with **[Edit instance-level information](../../organizations/security/permissions.md#server)**[ permissions](../../organizations/security/permissions.md#server).
-   ::: moniker-end
+- Have Azure DevOps Server [installed and configured](/azure/devops/server/install/get-started).
+- Have a [project collection](/azure/devops/server/admin/manage-project-collections). 
+- **Permissions:** 
+  - Be a member of the [Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md) group with [Edit collection-level information](../../organizations/security/permissions.md#collection) permission. If you don't have permissions, you can [request extensions](../../marketplace/request-extensions.md) instead.
+  - To upload an extension, be a member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator) group with [Edit instance-level information](../../organizations/security/permissions.md#server) permission.
+::: moniker-end
 
 <a name="enable-analytics"></a>
 
@@ -56,7 +53,7 @@ Analytics supports access to Analytics widgets for all projects defined in the p
 
 ::: moniker range="azure-devops-2019" 
 
-If you've upgraded to Azure DevOps Server 2019.1, you can enable Analytics for a project collection with the following steps. Otherwise, for Azure DevOps Server 2019, see [Install Analytics](#install-analytics). 
+If you upgraded to Azure DevOps Server 2019.1, you can enable Analytics for a project collection with the following steps. Otherwise, for Azure DevOps Server 2019, see [Install Analytics](#install-analytics). 
 
 ::: moniker-end
 
@@ -77,16 +74,16 @@ If you've upgraded to Azure DevOps Server 2019.1, you can enable Analytics for a
 ## Pause or disable Analytics
 
 ::: moniker range="azure-devops-2019"
-If you've upgraded to Azure DevOps Server 2019.1, you can pause or disable Analytics for a project collection with the following steps. Otherwise, for Azure DevOps Server 2019, the equivalent actions are to [Disable or uninstall the Analytics extension](#disable-analytics-extension).
+If you upgraded to Azure DevOps Server 2019.1, you can pause or disable Analytics for a project collection with the following steps. Otherwise, for Azure DevOps Server 2019, the equivalent actions are to [Disable or uninstall the Analytics extension](#disable-analytics-extension).
 ::: moniker-end
 
-You can only pause or disable Analytics that has been previously enabled.  
+You can only pause or disable previously enabled Analytics.  
 
 1. From the **Analytics** settings page, select **Pause Analytics** or **Disable Analytics**. 
 
    > [!div class="mx-imgBorder"]  
    > ![Pause or Disable Analytics](media/enable-analytics/pause-analytics.png) 
-1. Confirm that you want to pause or disable the service. 
+2. Confirm that you want to pause or disable the service. 
 
    > [!div class="mx-imgBorder"]  
    > ![Confirm Pause dialog.](media/enable-analytics/confirm-pause.png)   ![Confirm  Disable](media/enable-analytics/confirm-disable.png)
@@ -96,14 +93,14 @@ You can only pause or disable Analytics that has been previously enabled.
 ## Resume Analytics
 
 ::: moniker range="azure-devops-2019"
-For Azure DevOps Server 2019.1, you can resume Analytics after you've paused it for a project collection. Resuming the service will re-enable staging jobs, which will update the data tables and make them current, updating since the time it was paused.
+For Azure DevOps Server 2019.1, you can resume Analytics after you pause it for a project collection. Resuming the service re-enables staging jobs, which update the data tables and make them current, updating since the time it was paused.
 ::: moniker-end
 
 1. From the **Analytics** settings page, select **Resume Analytics**. 
 
    > [!div class="mx-imgBorder"]  
    > ![Enable Analytics](media/enable-analytics/enable-analytics.png) 
-1. Confirm that you want to resume the service. 
+2. Confirm that you want to resume the service. 
 
    > [!div class="mx-imgBorder"]  
    > ![Confirm Resume dialog.](media/enable-analytics/confirm-resume.png) 
@@ -112,21 +109,21 @@ For Azure DevOps Server 2019.1, you can resume Analytics after you've paused it 
 
 ## What happens if I pause or disable Analytics?
 
-Pausing Analytics or disabling the Analytics extension (2019), disables the following features:
+When you pause or disable the Analytics extension (2019), the following features get disabled:
 
 - [Analytics widgets](analytics-widgets.md)
 - [Analytics in-context reports, such as pipeline and test reports](overview.md)
 - [Power BI integration using Analytics views](../powerbi/what-are-analytics-views.md)
 - [OData endpoint queries](../extend-analytics/quick-ref.md) 
 
-Pausing Analytics preserves your data but stops staging jobs from updating your data. You can resume the service later and your data will then be updated. 
+Pausing Analytics preserves your data but stops staging jobs from updating your data. You can resume the service later and then your data updates. 
 
-Disabling Analytics or removing the Analytics extension (2019), turns off all Analytics staging jobs and deletes the Analytics data stored in the Analytics tables. All Analytics data that captures historical trends is lost. It doesn't delete any other data stored in your collection. You can't undo this action. Once historical data and trending data is deleted, you can't restore it. Re-enabling Analytics won't restore the historical data. 
+When you disable or remove the Analytics extension (2019), it turns off all Analytics staging jobs and deletes the Analytics data that is stored in the Analytics tables. All Analytics data that captures historical trends is lost. It doesn't delete any other data stored in your collection. You can't undo this action. Once historical data and trending data is deleted, you can't restore it. Re-enabling Analytics doesn't restore the historical data. 
 
 With Analytics disabled or removed, the following actions occur: 
 
-- No staging jobs are run, and the Analytics tables won't have updated information.  
-- Table data is deleted, and if Analytics is re-enabled, all data will have to be repopulated from scratch.
+- No staging jobs run, and the Analytics tables information doesn't get updated.  
+- Table data is deleted, and if Analytics is re-enabled, all data must get repopulated from scratch.
 
 ::: moniker range="azure-devops-2019" 
 
@@ -143,7 +140,7 @@ For more information about the data tables, see [Analytics data model](../extend
 
 ## Install the Analytics extension
 
-If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analytics extension to gain access to Analytics widgets and reports for your project collection. The Analytics extension is shipped within the on-premises installer. Installing the extension simply enables the functionality. There isn't any need to download extension files manually to install.  
+If you didn't upgrade to Azure DevOps Server 2019.1, you can install the Analytics extension to gain access to Analytics widgets and reports for your project collection. The Analytics extension is shipped within the on-premises installer. Installing the extension simply enables the functionality. There isn't any need to download extension files manually to install.  
 
 > [!TIP]
 > The Analytics extension appears in the local gallery for Azure DevOps Server so that there isn't any need to download it from the Azure DevOps Marketplace.
@@ -173,7 +170,7 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
    > [!div class="mx-imgBorder"]  
    > ![Select the project collection](media/install-analytics/select-collection.png) 
 
-1. Upon completion of install, you'll see an image similar to the following. Select **Proceed to collection** to return to the web portal for your collection.  
+2. Upon completion of install, an image similar to the following displays. Select **Proceed to collection** to return to the web portal for your collection.  
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Analytics Marketplace extension installed, Proceed to collection.](media/install-analytics/success-install.png)   
@@ -184,7 +181,7 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 
 ## Disable or uninstall the Analytics extension
 
-If you choose to disable the Analytics extension, it will stop any jobs from running. Analytics data will be out of sync and associated features won't be available. However, no data is deleted.  Uninstalling the Analytics extension deletes the data from the Analytics database tables. Upon reinstall of the extension, the data is repopulated from scratch.
+If you choose to disable the Analytics extension, it stops any jobs from running. Analytics data is out of sync and associated features aren't available. However, no data is deleted. Uninstalling the Analytics extension deletes the data from the Analytics database tables. Upon reinstall of the extension, the data is repopulated from scratch.
 
 1. Open the extensions menu and select **Manage Extensions**.
 
@@ -194,7 +191,7 @@ If you choose to disable the Analytics extension, it will stop any jobs from run
 
 ## Restore the Analytics extension if removed from the deployment
 
-If you remove the Analytics extension from your deployment, you can install the extension from the online marketplace to restore it. You may be unable to use the online marketplace because of your server setup. For example, your firewall might block some outgoing connections. Even if that's the case, you can restore it to the local marketplace using the following steps.
+If you remove the Analytics extension from your deployment, you can install the extension from the online marketplace to restore it. You might be unable to use the online marketplace because of your server setup. For example, your firewall might block some outgoing connections. Even if that's the case, you can restore it to the local marketplace using the following steps.
 
 1. Open **Collection settings** following the instructions provided in the section [Install the Analytics extension](#install-the-analytics-extension). 
 
@@ -230,7 +227,7 @@ When you navigate to the Marketplace from your on-premises server, an error does
 
 ## Known issue
 
-If you use a public URL to install the extension, for example `https://OnPrem.MyCompany.com`, you may get a callback error, such as a TLS/SSL error. 
+If you use a public URL to install the extension, for example `https://OnPrem.MyCompany.com`, you might get a callback error, such as a TLS/SSL error. 
 
 To resolve this issue, you can install the extension from a machine that hosts the application tier and point to the local machine URL, for example `https://myMachineName`.
 
@@ -240,7 +237,7 @@ To resolve this issue, you can install the extension from a machine that hosts t
 
 - [What is Analytics](../powerbi/what-is-analytics.md)
 - [Data available from Analytics](../powerbi/data-available-in-analytics.md)
-- [Grant permissions to access Analytics](../powerbi/analytics-security.md)
+- [Grant permissions for accessing Analytics](../powerbi/analytics-security.md)
 - [The Reporting Roadmap](../powerbi/reporting-roadmap.md) 
 - [Extension FAQs](../../marketplace/faq-extensions.yml) 
 

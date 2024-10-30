@@ -11,26 +11,23 @@ ms.date: 08/03/2022
 
 ::: moniker range="azure-devops"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
+1. Select :::image type="icon" source="../../../media/icons/gear-icon.png"::: **Organization settings**.
   
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing Organization settings button highlights.](../../../media/settings/open-admin-settings-vert.png) 
+   :::image type="content" source="../../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing Organization settings button for selection.":::
 
-3. Select **Process**. 
-   
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot showing highlighted Process button for selection.](../work/media/process/open-process-page-s150.png) 
+1. Select **Process**.
+
+   :::image type="content" source="../work/media/process/open-process-page-s150.png" alt-text="Screenshot showing highlighted Process button for selection.":::
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. Sign in to your collection (```https://dev.azure.com/{Your_Collection}```).
-2. Select **Collection Settings** or **Admin settings**.
-3. Select **Process**. 
-   
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot showing highlighted Process button in Collection settings.](../work/media/process/open-process-2020.png) 
+1. Sign in to your collection (`https://dev.azure.com/{Your_Collection}`).
+1. Select **Collection Settings** or **Admin settings**.
+1. Select **Process**.
+
+   :::image type="content" source="../work/media/process/open-process-2020.png" alt-text="Screenshot showing highlighted Process button in Collection settings.":::
 
 ::: moniker-end

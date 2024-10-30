@@ -104,7 +104,7 @@
     - name: Task types & usage
       href: process/tasks.md
       displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
-    - name: Task groups (classic)
+    - name: Task groups (Classic)
       href: release/task-groups.md
     - name: Add a custom task extension
       href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json
@@ -201,12 +201,12 @@
     - name: Pipeline completion triggers
       displayName: build completion, completion trigger
       href: process/pipeline-triggers.md
-    - name: Build completion triggers (classic)
+    - name: Build completion triggers (Classic)
       displayName: build completion, completion trigger
       href: release/pipeline-triggers-classic.md
-    - name: Release triggers (classic)
-      displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
+    - name: Release triggers (Classic)
       href: release/triggers.md
+      displayName: release trigger, stage trigger, deploy PR, scheduled trigger
   - name: Approvals, checks, & gates
     items:
     - name: Release approval and gates overview
@@ -317,6 +317,9 @@
         - name: Azure Resource Manager service connection
           displayName: resource manager, service connection, service principal
           href: library/connect-to-azure.md
+        - name: Azure Resource Manager special cases 
+          displayName: agent-assigned identity, publish profile
+          href: library/azure-resource-manager-alternate-approaches.md
         - name: Manually configure workload identity service connections
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections
@@ -406,6 +409,9 @@
       - name: Release variables
         displayName: release, deploy, variables
         href: release/variables.md
+      - name: Release triggers (Classic)
+        href: release/triggers.md
+        displayName: release trigger, stage trigger, deploy PR, scheduled trigger
       - name: Deploy pull request Artifacts
         displayName: pr release, deployment
         href: release/deploy-pull-request-builds.md

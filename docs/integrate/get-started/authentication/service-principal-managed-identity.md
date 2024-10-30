@@ -241,27 +241,71 @@ A: Yes, you can connect to any Azure Artifacts feed with a service principal. In
 
 ##### NuGet project setup with Microsoft Entra token
 
-1. Add a nuget.config file to your project, in the same folder as the *.csproj* or *.sln* file.
+1. Make sure you have the [latest NuGet](https://www.nuget.org/downloads). 
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <clear />
-        <add key="FeedName" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-      </packageSources>
-    </configuration>
-    ```
+1. Download and install the Azure Artifacts Credential Provider:
+    
+    - [Windows](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-windows)
+    
+    - [Linux/Mac](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac)
 
-1. [Get a Microsoft Entra ID token](/azure/databricks/dev-tools/service-prin-aad-token) for your service principal.
+1. Add a *nuget.config* file to your project, in the same folder as the *.csproj* or *.sln* file:
 
-1. Run the following command to authenticate with your credentials and then add your token using the setapikey command. This command adds your feed source to your nuget.config:
+    - Project-scoped feed:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
-    ```Command
-    nuget sources add -name <FEED_NAME> -source <SOURCE_URL> -username <USERNAME> -password <PASSWORD>
+    - Organization-scoped feed:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
-    nuget setapikey <YOUR_ACCESS_TOKEN> -source <SOURCE_URL> 
-    ```
+1. Set the [ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md#environment-variables) environment variable as shown below, specifying your feed URL, the service principal's application (client) ID, and the path to your service principal certificate:
+
+    - **PowerShell**:
+    
+        ```PowerShell
+        $env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'
+        {
+          "endpointCredentials": [
+            {
+              "endpoint": "<FEED_URL>",
+              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
+              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+            }
+          ]
+        }
+        '@
+        ```
+
+    - **Bash**:
+    
+        ```bash
+        export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
+          "endpointCredentials": [
+            {
+              "endpoint": "<FEED_URL>",
+              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
+              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+            }
+          ]
+        }'
+        ```
 
 <a name='npm-project-setup-with-entra-id-tokens'></a>
 

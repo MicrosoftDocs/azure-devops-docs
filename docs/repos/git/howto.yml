@@ -85,7 +85,7 @@ sections:
       
           Once you're done with the stash, delete it with [`git stash drop`]. This command removes the last set of stashed changes.
       
-          You can have multiple stashes, but managing them requires more manual manipulation as you have to explicitly apply and drop stashes. Learn more from the [Git Stash documentation](https://git-scm.com/book/en/v1/Git-Tools-Stashing).
+          You can have multiple stashes, but managing them requires more manual manipulation as you have to explicitly apply and drop stashes. Learn more from the [Git Stash documentation](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning).
           
       - question: |
           How can I change the default editor for Git command-line tools?
