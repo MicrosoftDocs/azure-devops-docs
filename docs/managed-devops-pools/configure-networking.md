@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 10/30/2024
 ---
 
 # Configure Managed DevOps Pools networking
@@ -36,9 +36,11 @@ If you're using Express Route, you need to temporary drop or change the manageme
 > [!IMPORTANT]
 > The Managed DevOps Pool and virtual network must be in the same region, or you'll get an error similar to the following when you try to create the pool or update the network configuration. `Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region.`
 
+### Grant the DevOpsInfrastructure principal access to your virtual network
+
 Ensure the DevOpsInfrastructure principal has the following access on the virtual network:
 - `Reader` and `Network Contributor`
-- OR add the following permission to a custom role:
+- Or add the following permission to a custom role:
   - `Microsoft.Network/virtualNetworks/*/read`
   - `Microsoft.Network/virtualNetworks/subnets/join/action`
   - `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/validate/action`

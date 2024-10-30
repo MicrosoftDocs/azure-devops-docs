@@ -40,6 +40,8 @@
     href: monitor-pool.md
   - name: Diagnostic logs
     href: diagnostics.md
+  - name: Troubleshooting
+    href: troubleshooting.md
 - name: Manage cost and performance
   items:
   - name: Pricing
