@@ -9,7 +9,13 @@ ms.date: 10/30/2024
 
 This article provides solutions to common Managed DevOps Pools issues.
 
-## Pool creation failure due to Azure DevOps organization permissions
+## Pool creation errors
+
+| Error | Resolution |
+| `PoolProvisioningFailed` | [Pool creation failure due to Azure DevOps organization permissions](#pool-creation-failure-due-to-azure-devops-organization-permissions) |
+| `UnauthorizedAccessToVirtualNetwork` | [Pool creation failure due to VNet permissions](#pool-creation-failure-due-to-vnet-permissions) |
+
+### Pool creation failure due to Azure DevOps organization permissions
 
 Pool creation fails with a `PoolProvisioningFailed` error similar to the following error: `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, was not found in the Azure DevOps organization provided, <your Azure DevOps organization>.`.
 
@@ -18,7 +24,7 @@ To resolve this issue:
 * Your logged in Azure user must have the proper Azure DevOps permissions to create a pool. See [Azure DevOps prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
 
 
-## Pool creation failure due to VNet permissions
+### Pool creation failure due to VNet permissions
 
 Pool creation fails with a `UnauthorizedAccessToVirtualNetwork` error similar to the following error: `Validation failure "UnauthorizedAccessToVirtualNetwork": "DevOpsInfrastructure service principal does not have Read access to virtual network <your VNet> in resource group <your resource group>. Give Reader and Network Contributor access to DevOpsInfrastructure service principal and try again.`.
 
