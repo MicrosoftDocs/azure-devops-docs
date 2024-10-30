@@ -1,125 +1,103 @@
 ---
-title: Classic release triggers for stages, branches, and pipelines
-description: DevOps CI CD - Understand triggers in Azure Pipelines
+title: Classic release triggers
+description: Learn the different types of release triggers and how to use them in your release pipelines.
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/20/2021
+ms.date: 10/28/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Release triggers
+# Classic release triggers
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Release triggers are an automation tool that can be used in your deployment workflow to initiate actions when specific conditions are met. after certain conditions are met. Classic release pipelines support several types of triggers, which we'll cover in this article:
 
+- [Continuous deployment triggers](#continuous-deployment-triggers)
 
-::: moniker range="azure-devops"
-> [!NOTE] 
-> This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
-::: moniker-end
+- [Scheduled release triggers](#scheduled-release-triggers)
 
-Release triggers are an automation tool to deploy your application. When the trigger conditions are met, the pipeline will deploy your artifacts to the environment/stages you already specified. 
+- [Pull request release triggers](#pull-request-triggers)
 
-## Classic release pipeline triggers
-
-- Continuous deployment triggers: trigger a releases after a Classic or YAML pipeline completes and a new artifact becomes available.
-
-- Scheduled release triggers: trigger a release at specific times based on a defined schedule.
-
-- Pull request release triggers: a release is triggered whenever a new version of the selected artifact becomes available after being built by the pull request pipeline workflow.
-
-- Stage triggers: configure how each stage in a Classic release is triggered. Options: `After release`, `After stage` (if you have more than one stage), and `Manual only`. 
-    - After release: deploy to the stage every time a new release is created. 
-    - After stage: deploy to the stage after deployments to the selected stage(s) are successful. 
-    - Manual only: only allow manual deployments.
-
-<a id="release-triggers"></a>
+- [Stage triggers](#stage-triggers)
 
 ## Continuous deployment triggers
 
-Continuous deployment triggers allow you to create a release every time a new build artifact is available. Using the build branch filters you can trigger deployment for a specific target branch. A release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting `main` will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under `features/`, enter `features/*`. To trigger a release for commits to all branches, enter `*`. Note that all specified filters will be OR'ed.
+Continuous deployment triggers enable you to automatically create a release whenever a new artifact becomes available. By Using the build branch filters you can trigger deployment for a specific target branch. A release is triggered only for pipeline artifacts originating from one of the selected branches. 
 
-:::image type="content" source="media/trigger-01.png" alt-text="Configure continuous deployment triggers":::
+For example, selecting *main* will trigger a release every time a new artifact becomes available from the main branch. To trigger a release for any build under 'features/', enter 'features/*'. To trigger a release for all builds, use '*'. Note that all specified filters will be OR'ed meaning any artifact matching at least one filter condition will trigger a release.
 
-> [!NOTE]
-> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up triggers to deploy your app to the various stages.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-<a id="scheduled-triggers"></a>
+1. Select **Pipelines** > **Releases**.
+
+1. Select your release definition, and then select **Edit**.
+
+1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Continuous deployment trigger**, then add your **Build branch filters**.
+
+    :::image type="content" source="media/trigger-01.png" alt-text="A screenshot displaying how to configure the continuous deployment trigger in a release pipeline.":::
 
 ## Scheduled release triggers
 
 Scheduled release triggers allow you to create new releases at specific times.
 
-Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Disabled button and specify your release schedule. You can set up multiple schedules to trigger a release.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-> [!div class="mx-imgBorder"]
-> ![Defining schedules to trigger releases](media/trigger-04.png)
+1. Select **Pipelines** > **Releases**.
 
-::: moniker range="<=azure-devops"
+1. Select your release definition, and then select **Edit**.
 
-<a id="prsettrigger"></a>
+1. Under the **Artifacts** section, select the **Schedule set** icon, select the toggle button to enable the **Scheduled release trigger**, and then specify your release schedule. You can set up multiple schedules to trigger releases.
+
+    :::image type="content" source="media/trigger-04.png" alt-text="A screenshot displaying how to configure the Scheduled release triggers in a release pipeline.":::
 
 ## Pull request triggers
 
-If you chose to enable the pull-request triggers, a release will be created every time a selected artifact is available as part of a pull request workflow.
+If you chose to enable the pull-request triggers, a release will be triggered whenever a new version of the selected artifact is created by the pull request pipeline workflow. To use a pull request trigger, you must also enable it for specific stages (covered in the next section). You may also want to set up [branch policies](../../repos/git/pr-status-policy.md) for your branches.
 
-> [!div class="mx-imgBorder"]
-> ![Configure a pull request trigger.](media/trigger-01a.png)
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-To use a pull request trigger, you must also enable it for specific stages. We will go through stage triggers in the next section. You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
+1. Select **Pipelines** > **Releases**.
 
-You can also use **Build tags** to organize your workflow and tag specific runs. The following pull request trigger will create a release every time a new artifact version is available as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
+1. Select your release definition, and then select **Edit**.
 
-:::image type="content" source="media/build-tags-example.png" alt-text="Screenshot showing an example of how to set up a pull request trigger with build tags":::
+1. Select the **Continuous deployment triggers** icon, and then select the toggle button to enable the **Pull request trigger**, then add your **Target Branch Filters**. In the example below, a release is triggered every time a new artifact version is created as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
 
-::: moniker-end
+    :::image type="content" source="media/trigger-01a.png" alt-text="A screenshot displaying how to configure pull request triggers in a release pipeline.":::
 
 ## Stage triggers
 
 Stage triggers allow you set up specific conditions to trigger deployment to a specific stage.
 
-- **Select trigger**:
-  Set the trigger that will start the deployment to your stage automatically. Use the **Stages** dropdown to trigger a release after a successful deployment to the selected stage. Select **Manual only** to only allow manual trigger.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="media/trigger-02a.png" alt-text="A screenshot showing predeployment triggers.":::
+1. Select **Pipelines** > **Releases**.
 
-- **Artifacts filter**:
-  Enable the toggle button to trigger a new deployment based on specific artifacts. In this example, a release will be deployed when a new artifact is available from the specified branch.
+1. Select your release definition, and then select **Edit**.
 
-    :::image type="content" source="media/trigger-02b.png" alt-text="A screenshot showing predeployment artifact filters.":::
+1. Under the **Stages** section, select the **Pre-deployment conditions** icon, and set up your triggers.
 
-- **Schedule**:
-  Trigger a new deployment to your specified stage at a specific time.
+    :::image type="content" source="media/release-triggers-to-stages.png" alt-text="A screenshot showing stage triggers in a release pipeline." lightbox="media/release-triggers-to-stages.png":::
 
-    :::image type="content" source="media/trigger-02.png" alt-text="A screenshot showing predeployment schedule settings.":::    
+- **Select trigger**: Choose the trigger to start deployment to this stage automatically. Select "After release" to deploy to this stage each time a new release is created. Select "After stage" to deploy after successful deployments to selected stages. Select "Manual only" to allow only manual deployments.
 
-- **Pull-request deployment**:
-  Enable the toggle button to trigger a new release every time a new pull request is created. It's recommended to disable this feature for production environment.
+- **Artifacts filter**: Specify artifact condition(s) that must be met to trigger a deployment. A release will be deployed to this stage only if all artifact conditions match.
 
-    :::image type="content" source="media/trigger-02c.png" alt-text="A screenshot showing pull request deployment trigger.":::    
+- **Schedule**: Set a specified time to trigger a deployment to this stage.
 
-- **Pre-deployment approvals**:
-Select the users who can approve or reject deployments to your selected stage. By default, when this feature is enabled, all project users must approve the deployment. If a group is added to the approvers list, at least one user in the group must approve the deployment. You can also specify the *Approval policies* and *Timeout* (the maximum time for an approval to remain in pending state before it is automatically rejected).
+- **Pull-request deployment**: Allow pull request-triggered releases to deploy to this stage. We recommend keeping this option disabled for critical or production stages.
 
-    :::image type="content" source="media/pre-deployment-approval.png" alt-text="A screenshot showing predeployment approvals."::: 
+## Related content
 
-- **Gates**:
-Enable the toggle button to set up specific gates to evaluate before trigger deployment.
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
 
-    :::image type="content" source="media/gates.png" alt-text="A screenshot showing predeployment gates."::: 
+- [Deploy to different stages from multiple branches](deploy-multiple-branches.md)
 
-- **Deployment queue settings**:
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
 
-Configure specific actions when multiple releases are queued for deployment.
 
-:::image type="content" source="media/deploy-queue.png" alt-text="A screenshot displaying the deployment queue settings.":::
 
-- **Number of parallel deployments**: options: *Specific* or *Unlimited*. Specify how many deployments can occur simultaneously within the same stage. If you set the number to '1', deployments will occur one after another in sequence.
-  
-- **Subsequent releases**: options: *Deploy all in sequence* or *Deploy latest and cancel the others* This option is activated if you select *Specific* under the *Number of parallel deployments*.
-  
-  - **Deploy all in sequence**: select this option if you need releases to deploy one after the other. This approach ensures that predeployment approval requests are processed in the correct order.
-      
-  - **Deploy latest and cancel the others**: select this option if you're producing builds faster than releases, and you only want to deploy the latest build. See [Specify queuing policies](../process/stages.md?tabs=classic#specify-queuing-policies) for more details.
+
+
