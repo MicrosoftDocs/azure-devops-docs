@@ -11,7 +11,7 @@ This article provides solutions to common Managed DevOps Pools issues.
 
 ## Pool creation errors
 
-| Error | Resolution steps |
+| Error code | Description |
 |-------|------------------|
 | `PoolProvisioningFailed` | [Pool creation failure due to Azure DevOps organization permissions](#pool-creation-failure-due-to-azure-devops-organization-permissions) |
 | `UnauthorizedAccessToVirtualNetwork` | [Pool creation failure due to VNet permissions](#pool-creation-failure-due-to-vnet-permissions) |
