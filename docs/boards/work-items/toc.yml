@@ -8,7 +8,7 @@
   displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
   href: view-add-work-items.md
 - name: Manage work items
-  href: ../backlogs/manage-work-items.md
+  href: ../work-items/manage-work-items.md
   displayname: follow, update status, Discussion
 - name: Filter your work items
   href: ../backlogs/filter-backlogs-boards-plans.md

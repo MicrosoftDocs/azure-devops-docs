@@ -11,8 +11,7 @@ ms.date: 07/09/2020
 You can add a new work item with the [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
-az boards work-item create --title
-                           --type
+az boards work-item create --title '<title>' --type '<type>' 
                            [--area]
                            [--assigned-to]
                            [--description]
@@ -33,7 +32,7 @@ az boards work-item create --title
 #### Optional parameters
 
 - **area**: Area the work item is assigned to (for example, *Demos*).
-- **assigned-to**: Name of the person the work item is assigned-to (for example, *fabrikam*).
+- **assigned-to**: The email ADDRESS of the person the work item is assigned-to (for example, fabrikamfiber-3@fabrikamfiber.com).
 - **description**: Description of the work item.
 - **discussion**: Comment to add to a discussion in a work item.
 - **fields**: Space separated `field=value` pairs for custom fields you would like to set.

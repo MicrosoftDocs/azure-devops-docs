@@ -40,8 +40,6 @@ These methods provide flexibility in how you manage and track your work items wi
 
 ## Open the Work items page
 
-<a id="browser"></a> 
-
 # [Web portal](#tab/browser)
 
 From your project, select **Boards** > **Work items**. 
@@ -74,7 +72,7 @@ If you don't see the **Work Items** option, you're not connected to a project. F
 
 There's no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services only.
 
-***
+---
 
 > [!NOTE]    
 > The types of work items you can create depend on the process chosen when the project was created—[Agile](guidance/agile-process-workflow.md), [Basic](../get-started/plan-track-work.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md). For example, backlog items may be called user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). All these types describe the customer value to deliver and the work to be performed.
@@ -83,10 +81,20 @@ There's no [**az boards**](/cli/azure//boards) command that opens the **Work Ite
 
 ## View work items
 
-Use the drop-down menu to focus on relevant items within a project using one of seven pivots. Additionally, [filter](#filter) each pivot view. You can also use an Azure DevOps CLI command to view work item details.
+You can view work items assigned to you, work items you're following, work items in which you're mentioned, and work items that you recently viewed or updated via the web portal and Visual studio.
+
+::: moniker range="azure-devops"
+
+You can also view work items usings the Azure DevOps CLI.
+
+::: moniker-end
+
+
 
 # [Web portal](#tab/browser)
- 
+
+Use the drop-down menu to focus on relevant items within a project using one of seven pivots. Additionally, [filter](#filter-to-create-personal-views) each pivot view.  
+
 :::row:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2020"
@@ -123,6 +131,8 @@ Use the drop-down menu to focus on relevant items within a project using one of 
       - **Recently created**: Lists work items created within the last 30 days in the project.  
    :::column-end:::
 :::row-end:::
+
+You can sort your view by any column field selected from the **Column Options** dialog in the web portal. For more information, see [Change column options](../backlogs/set-column-options.md).
 
 # [Visual Studio 2019](#tab/visual-studio)
 
@@ -175,9 +185,8 @@ ID    Type    Title      Assigned To          State
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-***
+---
 
-<a id="filter"></a>
 
 ## Filter to create personal views
 
@@ -197,9 +206,11 @@ Filter each work item pivot view by entering a keyword or using fields like work
 
 No [**az boards**](/cli/azure//boards) command applies to filtering. Azure DevOps CLI commands are only valid for Azure DevOps Services.
 
-***
+---
 
-<a id="add-work-item"></a>
+## Add work items
+
+You can add work items from the **Work Items** page or from a **Boards**, **Backlogs**, or **Sprints** page in the web portal, from Visual Studio, or by using the Azure DevOps CLI.
 
 ## Add a work item from the Work items page
 
@@ -238,7 +249,7 @@ A browser window opens, displaying the work item form for you to complete.
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-***
+---
 
 [Add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags, while users with **Stakeholder** access can only add existing tags.
 
@@ -308,8 +319,6 @@ Queries provide the following features and more:
 
 For more information, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json). For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 
-<a id="page-controls">  </a>
-
 ## Use work items page controls  
 
 Use the following three controls to manage your views in the web portal.
@@ -318,13 +327,13 @@ Use the following three controls to manage your views in the web portal.
 > | Control    | Function       |
 > |--------------------------|-------------------------------|
 > | ![Screenshot of View options control icon.](../media/icons/view-options-icon.png) | View/hide completed items | 
-> | ![Screenshot of Filter control icon.](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
+> | ![Screenshot of Filter control icon.](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter-to-create-personal-views)  | 
 > | ![Screenshot of Full screen icon.](../media/icons/full-screen-icon.png) / ![Image of Exit full screen icon.](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Manage work items](../backlogs/manage-work-items.md)
+> [Manage work items](../work-items/manage-work-items.md)
 
 ## Related articles
 
