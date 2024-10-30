@@ -5,7 +5,7 @@ ms.author: jukullam
 author: JuliaKM
 ms.subservice: azure-devops-pipelines-apps
 ms.custom: devx-track-azurecli, devx-track-arm-template, arm2024
-ms.date: 06/20/2023
+ms.date: 10/30/2024
 ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
@@ -234,7 +234,8 @@ You use Azure Key Vault to store all connection information for your Azure servi
 
 ## Add an Azure Resource Manager service connection
 1. Create an Azure Resource Manager [service connection](../../../library/service-endpoints.md).
-1. Select **Service Principal (automatic)**.
+1. Select **App registration (automatic)** and **Workload identity federation**.
+1. Select your subscription.
 1. Choose the **data-pipeline-cicd-rg** resource group.
 1. Name the service connection `azure_rm_connection`.
 1. Select **Grant access permission to all pipelines**. You need to have the Service Connections Administrator role to select this option. 
