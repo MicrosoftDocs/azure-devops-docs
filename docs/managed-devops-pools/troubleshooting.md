@@ -29,3 +29,4 @@ To resolve this issue:
 ## See also
 
 * [Managed DevOps Pools prerequisites](./prerequisites.md)
+* [Configure Managed DevOps Pools networking](./configure-networking.md)
