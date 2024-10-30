@@ -47,12 +47,12 @@ For more pull request guidelines and management considerations, see
 
 There are multiple entry points to using a dynamic target branch.
 
-1. **Pull Request Suggestions.** When a user pushes a branch to Azure
+- **Pull Request Suggestions.** When a user pushes a branch to Azure
    DevOps, their next visit to the Repos page may suggest creating a pull
    request from that branch. This "Create New Pull Request" button chooses
    the target branch dynamically.
 
-2. **Pull Request URL.** When a user navigates directly to the pull
+- **Pull Request URL.** When a user navigates directly to the pull
    request creation page using a `sourceRef` parameter but omitting the
    `targetRef` parameter, Azure DevOps selects a target branch based on
    this dynamic choice.
@@ -184,15 +184,15 @@ This heuristic relies on some assumptions about how the target branches and the
 source branch were created. Here are some potential reasons why the heuristic
 does not work:
 
-1. The target branches are not protected by pull request policies. If the target
+- The target branches are not protected by pull request policies. If the target
    branches can be pushed arbitrarily, then the first-parent history is not a
    reliable indicator of the previous location of that branch.
 
-2. The source branch was created from a previous tip of a candidate branch. If
+- The source branch was created from a previous tip of a candidate branch. If
    the source branch chose an arbitrary commit in the history, then there's no
    guarantee about the first parent history it depended upon.
 
-3. The source branch was advanced using `git commit` and `git merge` commands.
+- The source branch was advanced using `git commit` and `git merge` commands.
    Commands such as `git reset --hard` or `git rebase` may change the history of
    the branch in unpredictable ways.
 
