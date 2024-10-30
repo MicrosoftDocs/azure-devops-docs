@@ -6,7 +6,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.topic: quickstart
 ms.date: 12/13/2023
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2022'
 "recommendations": "true"
 ---
 
