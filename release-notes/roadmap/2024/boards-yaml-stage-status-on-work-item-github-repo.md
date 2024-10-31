@@ -14,7 +14,7 @@ hide_comments: true
 
 Similar to how classic release pipelines report deployment status, extend support for YAML pipelines to display stage status on the **Deployments** control within the work item form when your code resides in a GitHub repository.
 
-Depends on [Show build status when using a YAML build pipeline with GitHub repository](boards-yaml-stage-status-on-work-item.md).
+Depends on [**Support YAML stage status on Deployment control in work item form**](boards-yaml-stage-status-on-work-item.md).
 
 > [!NOTE]
 > This feature will only be available with the [new Azure Boards experience](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default).
