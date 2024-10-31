@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2022'
 
 # Use packages from Crates.io
 
-[!INCLUDE [version-gt-eq-2022](../includes/version-gt-eq-2022.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Azure Artifacts upstream sources enables developers to consume packages from public registries like Crates.io and nuget.org. This article will guide you through setting up your project and using the command line to consume Crates from Crates.io. 
 
