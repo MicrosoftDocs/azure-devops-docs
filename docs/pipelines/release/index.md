@@ -58,7 +58,28 @@ In the following example, the pipeline consists of two build artifacts originati
 
 :::image type="content" source="media/definition-01.png" alt-text="A screenshot showing a release pipeline deployment steps.":::
 
+## Releases vs deployments 
+
+A **release** is a construct that holds a versioned set of artifacts specified in a CI/CD pipeline. It includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. There can be multiple releases from one release pipeline, and information about each one is stored and displayed in Azure Pipelines for the specified [retention period](../policies/retention.md#release).  
+
+A **deployment** is the action of running the tasks for one stage, which can include running automated tests, deploying build artifacts, and whatever other actions are specified for that stage. 
+Initiating a release starts each deployment based on the settings and policies defined in the original release pipeline. There can be multiple deployments of each release even for one stage. When a deployment of a release fails for a stage, you can redeploy the same release to that stage. To redeploy a release, simply navigate to the release you want to deploy and select deploy.
+
+The following diagram shows the relationship between release, release pipelines, and deployments.
+
+:::image type="content" source="media/release-deploy.png" alt-text="Relationship between releases, release pipelines, and deployments":::
+
 ## FAQ 
+
+#### Q: Why wasn't my deployment triggered?
+
+A: Creating a release pipeline doesn't automatically start a deployment. Here are a few reasons why this might happen:
+
+- [Deployment Triggers](triggers.md): defined deployment triggers may cause the deployment to pause. This can occur with scheduled triggers or when there's a delay until deployment to another stage is complete.
+
+- [Queuing Policies](../process/stages.md#queuing-policies): these policies dictate the order of execution and when releases are queued for deployment.
+
+- [Pre-Deployment Approvals or Gates](approvals/index.md): specific stages may require pre-deployment approvals or gates, preventing deployment until all defined conditions are met.
 
 #### Q: How can I edit variables at release time?
 
