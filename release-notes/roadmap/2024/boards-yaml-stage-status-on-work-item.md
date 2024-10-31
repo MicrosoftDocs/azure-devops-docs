@@ -16,7 +16,3 @@ Like how classic release pieplines report deployment status, we want to add supp
 
 > [!div class="mx-imgBorder"]
 > ![screen shot example of YAML stage status on deployment control in work item form](media\boards-yaml-stage-status-on-work-item.png)
-
-> [!NOTE] 
-> This feature will only be supported in the New Boards experience 
-
