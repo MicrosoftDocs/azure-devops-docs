@@ -16,3 +16,5 @@ Like how classic release pieplines report deployment status, we want to add supp
 
 > [!div class="mx-imgBorder"]
 > ![screen shot example of YAML stage status on deployment control in work item form](media\boards-yaml-stage-status-on-work-item.png)
+
+[Suggestion ticket](https://developercommunity.visualstudio.com/t/yaml-multistage-pipelines-link-workitems-to-deploy/1060361)
