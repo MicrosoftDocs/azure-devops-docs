@@ -1,7 +1,7 @@
 ---
 title: Select backlog navigation levels
 titleSuffix: Azure DevOps
-description: Choose which backlog and portfolio backlogs are active for your team in Azure DevOps. 
+description: Learn how to choose and configure multiple backlog and portfolio backlog levels for your team in Azure DevOps to suit your workflow.
 ms.service: azure-devops-boards
 ms.custom: teams
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/31/2024
 ---
 
-# Select backlog navigation levels for your team
+# Select backlog navigation levels
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
@@ -20,7 +20,7 @@ Each team has the flexibility to choose and configure multiple backlog levels ac
 
 If you need more portfolio backlogs, see the following articles based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)  
-- **On-premises XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
+- **On-premises XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 
