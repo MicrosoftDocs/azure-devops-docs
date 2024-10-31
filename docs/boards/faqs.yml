@@ -171,7 +171,7 @@ sections:
     questions: 
       - question: What's the difference between a backlog and a board?  
         answer: | 
-          Each backlog and board represents a filtered set of work items based on team area path and iteration path assignments. Backlogs list work items, boards display work items as cards. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-board).
+          Each backlog and board represents a filtered set of work items based on team area path and iteration path assignments. Backlogs list work items, boards display work items as cards. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
 
       - question: How do I add a backlog or board?  
         answer: | 

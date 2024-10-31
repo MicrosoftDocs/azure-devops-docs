@@ -27,7 +27,7 @@ Kubelogin isn't pre-installed on [Hosted images](/azure/devops/pipelines/agents/
 - Can specify the `state` of the approvals to be returned, for example, `pending`.
 
 Here's an example:
-`GET https://dev.azure.com/fabrikamfiber/fabrikam-chat/_apis/pipelines/approvals?api-version=7.1-preview.1&userId=47acd774-9773-6c31-bbb6-5a0585695d19&state=pending` returns 
+`GET https://dev.azure.com/fabrikamfiber/fabrikam-chat/_apis/pipelines/approvals?api-version=7.1-preview.1&userId=00aa00aa-bb11-cc22-dd33-44ee44ee44ee&state=pending` returns 
 ```json
 {
     "count": 2,

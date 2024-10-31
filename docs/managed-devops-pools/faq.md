@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions
 description: Learn the answers to frequently asked questions for Managed DevOps Pools.
-ms.date: 10/08/2024
+ms.date: 10/18/2024
 ---
 
 # Frequently asked questions

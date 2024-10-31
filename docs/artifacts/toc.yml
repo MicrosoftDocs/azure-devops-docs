@@ -160,9 +160,9 @@
     - name: What are feeds?
       displayName: feeds, artifact feeds
       href: concepts/feeds.md
-    - name: Project-scoped vs organization-scoped feeds
-      displayName: project scoped, feed, artifact feeds
+    - name: Feed scopes
       href: feeds/project-scoped-feeds.md
+      displayName: project scoped, organization scoped, feed, artifacts
     - name: Configure permissions
       displayName: feed, artifact feeds, permissions
       href: feeds/feed-permissions.md
@@ -180,9 +180,9 @@
     - name: What are feed views?
       displayName: views, artifact feeds, feeds, artifacts
       href: concepts/views.md
-    - name: Promote a package to a view
-      displayName: promote, artifact feed, promote packages, feed views
+    - name: Promote packages and manage views
       href: feeds/views.md
+      displayName: promote, feed, view, package
   - name: Upstream sources
     items:
     - name: Upstream sources overview

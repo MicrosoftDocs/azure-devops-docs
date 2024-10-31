@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: How you can view the permissions assigned to you or your team members, including project-level, collection-level, and object-level permissions. 
 ms.assetid:  
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/19/2024
+ms.date: 10/17/2024
 --- 
 
 # View permissions for yourself or others
@@ -26,8 +27,8 @@ For more information, see [Get started with permissions, access, and security gr
 
 ## Prerequisites
 
-* You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
-* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
+* **Project connection:** Be connected to a project. If you don't have a project, [create one](../projects/create-project.md).
+* **Permissions:** Be a member of the Project Valid Users Group or Project Collection Valid Users Group.
 
 ## View project-level permissions
 
@@ -36,7 +37,7 @@ Do the following steps to view project-level permissions for you or other users.
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the preview feature, for the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To get the new user interface for the **Project Permissions Settings Page**, [enable the preview feature](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -110,6 +111,11 @@ For more information, see [Permissions and groups reference](permissions.md#proj
 
 ::: moniker-end
 
+> [!TIP]
+> If there's an asterisk (*) next to a 'Deny' permission, it indicates that the denial applies to all child objects or resources under the specified scope. This means that if a user is denied a permission at a higher level, they're also denied that permission for all related resources, regardless of any other permissions that might be granted at lower levels. 
+> 
+> For example, if a user has 'Deny' permission for 'View project' with an asterisk (*) at the project level, they can't view any of the repositories, boards, or pipelines within that project, even if they are granted 'Allow' permissions at those lower levels.
+
 ## View organization or collection-level permissions 
 
 Do the following steps to view organization or collection-level permissions for you or other users.
@@ -129,16 +135,14 @@ Do the following steps to view organization or collection-level permissions for 
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 2. Select **Admin settings**. 
 
     :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot shows the Admin settings button.":::
 
-3. Select **Security** > **Project Collection Administrators** > **Members**. 
-
-    :::image type="content" source="media/view-permissions/collection-admins-vert.png" alt-text="Screenshot shows Security, Project Collection Administrators group, Members tab.":::
+3. Select **Security** > **Project Collection Administrators** > **Members**.
 
 4. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
 
@@ -203,4 +207,4 @@ Do the following steps to view object-level permissions for you or other users.
 ## Related articles
 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
-- [Permissions and role lookup guide](permissions-lookup-guide.md)
+- [Look up permissions and roles](permissions-lookup-guide.md)

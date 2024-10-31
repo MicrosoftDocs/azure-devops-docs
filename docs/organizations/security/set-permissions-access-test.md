@@ -8,14 +8,20 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/29/2024
+ms.date: 10/17/2024
 --- 
 
 # Set permissions and access for testing
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To fully utilize Azure Test Plans, it’s essential to understand and configure the necessary permissions and access levels. This article guides you through the prerequisites and steps for granting access to manual testing features, managing test plans and test suites, and setting permissions for creating and deleting test artifacts. By following these guidelines, you can ensure that your team has the appropriate access to efficiently manage and execute test plans.
+To fully utilize Azure Test Plans, it's crucial to understand and configure the necessary permissions and access levels. This article outlines the steps, so you can do the following tasks:
+
+- Grant access to manual testing features
+- Manage test plans and test suites
+- Set permissions for creating and deleting test artifacts
+
+By following these guidelines, you can ensure that your team has the appropriate access to efficiently manage and execute test plans.
 
 To manage access to manual test features, you can grant specific permissions to users or groups at the **object** or **project** level for the following tasks: 
 
@@ -36,16 +42,20 @@ To manage access to manual test features, you can grant specific permissions to 
 
 ::: moniker range="azure-devops"
  
-- **Access levels**: You must have **[Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)** access level or specific subscriptions like **[Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)**, **[Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)**, or **[MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)**.
-- **Permissions**: To manage project or object-level test-related permissions or to permanently delete test artifacts, you must be part of the **Project Administrators** security group.
-- **Organization-level permissions**: To manage access levels or organization-level permissions, users must be in the **Project Collection Administrators** security group or have your **Edit instance-level information** set to **Allow**.
+- **Access levels**: 
+  - Have **[Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)** access level 
+  - Or have specific subscriptions like **[Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)**, **[Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)**, or **[MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)**.
+- **Permissions**: 
+  - To manage project or object-level test-related permissions or to permanently delete test artifacts, be part of the **Project Administrators** security group.
+  - To manage access levels or organization-level permissions, be in the **Project Collection Administrators** security group or have your **Edit instance-level information** set to **Allow**.
   
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Access levels**: You must be part of the **Azure DevOps Server Administrators** security group.
-- **Permissions**: To manage project or object-level test-related permissions, you must be part of the **Project Administrators** security group.
-- **Collection-level permissions:** To manage collection-level permissions or manage access levels, you must part of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
+- **Access levels**: Be part of the **Azure DevOps Server Administrators** security group.
+- **Permissions**: 
+  - To manage project or object-level test-related permissions, be part of the **Project Administrators** security group.
+  - To manage collection-level permissions or manage access levels, be part of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
 
 ::: moniker-end
 
@@ -63,18 +73,19 @@ For full access to Test Plans, users must have [**Basic + Test Plans**](change-a
 
 Do the following steps to grant permissions for managing test artifacts at the area path level.
 
-1. Go to **Project settings** > **Project configuration**.
-2. Select **Areas** > ...(ellipses) > **Security**. 
+1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
+2. Select **Project settings** > **Project configuration**.
+3. Select **Areas** > **...**(ellipses) > **Security**. 
 
    :::image type="content" source="media/delete-test-plans-open-area-permissions.png" alt-text="Screenshot showing opened Area path permissions for project."::: 
 
-3. Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
+4. Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
    :::image type="content" source="media/manage-test-plans-test-suites-access.png" alt-text="Screenshot showing access set to Allow for test plans and suites.":::
 
 ## Set permissions for managing test artifacts 
 
-When it comes to testing artifacts like test plans, test suites, and test cases, the process for deleting them is distinct from deleting non-test work items.
+When it comes to testing artifacts like test plans, test suites, and test cases, the process for deleting them is distinct from deleting nontest work items.
 
 Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites.
 
@@ -96,8 +107,13 @@ Do the following steps to set permissions for managing test artifacts.
 
 #### [Preview page](#tab/preview-page) 
 
-1. Go to **Project settings** > **Permissions** > and then select a user or group.
-2. Select from the dropdown menus to change the permissions for each item.
+1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
+2. Select **Project settings** > **Permissions**.
+   
+	![Screenshot showing Choose Project settings > Permissions.](../settings/media/shared/open-project-settings-permissions-preview.png)
+
+3. Select a user or group.
+4. Select from the dropdown menus to change the permissions for each item.
 
    In the following example, we grant users assigned to the Team Admin group permissions to view test runs and manage test configurations and environments.
 
@@ -107,8 +123,10 @@ Do the following steps to set permissions for managing test artifacts.
 
 #### [Current page](#tab/current-page) 
 
-1. Go to **Project settings** > **Permissions** > and then select a user or group.
-2. Select from the dropdown menus to change the permissions for each item.
+1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
+2. Select **Project settings** > **Permissions**.
+3. Select a user or group.
+4. Select from the dropdown menus to change the permissions for each item.
 
    In the following example, we grant users assigned to the Team Admin group permissions to view test runs and manage test configurations and environments.
 

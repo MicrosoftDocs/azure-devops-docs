@@ -49,7 +49,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 
 1. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, add one area path for each team you define. For more information, review [About areas and iterations](about-areas-iterations.md).
 2. Determine the number and names of teams you want to support. For more information, review [About teams and Agile tools](about-teams-and-settings.md).
-3. Open **Project settings>Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings-list-project-areas) and [Add area paths](#add-an-area-path).
+3. Open **Project settings>Project configuration**>**Areas** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Add area paths](#add-an-area-path).
 4. Define the teams you need to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).  
 5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#list-team-iterations) and [Set team default area path(s)](#team-area-paths).
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
@@ -139,28 +139,55 @@ ID     Identifier                            Name                Path           
 
 ---
 
-## Add an area path 
+## Add an area path
 
-Only one area is defined, by default. Add area paths under the root area path for the project, or as a child to another area path.  
+Only one root area is defined, by default. Add area paths under the root area path for the project, or as a child to another area path or team.  New area paths are added to the root node by default.
 
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
+Upi can also new and child add area paths to a team. For more information, see [Set team area paths](#set-team-area-paths).
 
 #### [Browser](#tab/browser/)
 
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
+Go to Project settings, and then choose **Project configuration** > **Areas**.
 
-    Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
+To add a new node: 
+
+1. Highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for an area path and choose **New**, or select the **New** menu item at the top of the area list.
+
+1. Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
     > [!div class="mx-imgBorder"]  
-    > ![Add a new area path](media/areas/new-area-preview.png) 
+    > ![Add a new area path](media/areas/new-area.png) 
+
+1. Select **Save and close**
+
+All new areas are added as a child node to the root area path.
+
+
+To add a child node:
+
+1. Highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child** or select **New child** from the menu at the top of the area list.  
+
+1. Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Add a new area path](media/areas/new-child-area.png) 
+
+1. Select **Save and close**
+
+
+Area paths can also be added to a team in the **Team configuration** > **Areas** page.
+
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"  
 
 You can add area paths to a project using [az boards area project create](/cli/azure/boards/area/project#az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+
+If you specify the `--path` parameter, the new area path is added as a child node to the specified path. If you don't specify the `--path` parameter, the new area path is added as a child node to the root node.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -310,14 +337,17 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker range=">= azure-devops-2020"  
 
-1. Open **Areas** for the team context.  
+You can select existing area paths or create new or child area paths from the team settings. 
+
+1. Select **Project Settings**>**Team configuration**>**Areas**.  
+1. Select the team you want to configure from the drop-down list at the top of the page.
 
    Here, we show the Areas for the Fabrikam Fiber team.  
 
    > [!div class="mx-imgBorder"]
    > ![Area page for team](media/team-defaults/open-areas-fabrikam-team-preview.png)
 
-2. Choose the area path(s) to be active for each team.  
+1. Choose the area path(s) to be active for the team.  
 
     > [!div class="mx-imgBorder"]
     > ![Work, Iterations page for team](media/team-defaults/stdefaults-add-area-paths-preview.png)  
@@ -326,7 +356,7 @@ The default area path determines the default area path assigned to work items th
 
     ![Multiple area paths assigned to team](media/team-defaults/stdefaults-set-team-area-paths-team-services-list-preview.png)  
 
-3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.
+1. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.
 
    ![Backlog view of default team](media/team-defaults/area-path-assigned-to-item.png)
 

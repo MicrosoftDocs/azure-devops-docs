@@ -59,6 +59,7 @@ ms.date: 09/18/2024
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge attempted](#git.pullrequest.merge.attempted)
+  * [Pull request approved](#git.pullrequest.approved)
   * [Pull request updated](#git.pullrequest.updated)
   * [Pull request commented on](#git.pullrequest.commented-on)
   * [Repository created](#repository-created)
@@ -67,15 +68,16 @@ ms.date: 09/18/2024
   * [Repository renamed](#repository-renamed)
   * [Repository status changed](#repository-status-changed)
 
+* **Service Connections**
+  * [Service connection created](#service-connection-created)
+  * [Service connection updated](#service-connection-updated)
+
 * **Work items**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
-
-* [Service connection created](#service-connection-created)
-* [Service connection updated](#service-connection-updated)
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving Webhooks from Azure DevOps.
@@ -105,7 +107,7 @@ Event: A build completes.
 #### Sample payload
 ```json
 {
-  "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
+  "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
   "notificationId": 1,
   "id": "00000000-0000-0000-0000-000000000000",
   "eventType": "build.complete",
@@ -137,7 +139,7 @@ Event: A build completes.
   },
   "createdDate": "2024-12-02T12:21:13.8866607Z"
 }{
-  "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
+  "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
   "notificationId": 1,
   "id": "00000000-0000-0000-0000-000000000000",
   "eventType": "build.complete",
@@ -1629,7 +1631,7 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 
 ```json
 {
-    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "notificationId": 3,
     "id": "00000000-0000-0000-0000-000000000000ac1dd6da-af30-43cb-8434-e1005864b0a3",
     "eventType": "ms.vss-pipelines.job-state-changed-event",
@@ -2150,7 +2152,7 @@ Event: A pull request merge is attempted in a Git repository.
 
 <a name="git.pullrequest.approved"></a>
 
-### Pull request merge approved
+### Pull request approved
 
 Event: A merge commit is approved on a pull request.
 
@@ -2385,7 +2387,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
 Event: A pull request is commented on.
 
 * Publisher ID: `azure-devops`
-* Event ID: `git-pullrequest-comment-event`
+* Event ID: `ms.vss-code.git-pullrequest-comment-event`
 * Resource Name: `pullrequest`
 
 #### Settings

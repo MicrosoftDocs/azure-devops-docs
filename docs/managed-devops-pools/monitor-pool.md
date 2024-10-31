@@ -1,7 +1,7 @@
 ---
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.date: 10/08/2024
+ms.date: 10/18/2024
 ---
 
 # Monitor Managed DevOps Pools
@@ -22,10 +22,10 @@ Managed DevOps Pools provides the following metrics:
 | **Allocated**<br>Number of Azure DevOps Agents with jobs currently running | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
 | **NotReady**<br>Number of Azure DevOps Agents that are not set up for testing | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
 | **PendingReimage**<br>Number of Azure DevOps Agents in the process of being reimaged | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReturn**<br>[Azure only] Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occur in batches) | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
+| **PendingReturn**<br>Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occur in batches) | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
 | **Provisioned**<br>Number of Azure DevOps Agents currently up | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
 | **Ready**<br>Number of Azure DevOps Agents present that are prepared to accept a job | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **StartingNumber** of Azure DevOps Agents being prepared | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
+| **Starting**<br>Number of Azure DevOps Agents being prepared | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
 | **Total**<br>Total number of Azure DevOps Agents | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
 | **Count**<br>Total number of agents provisioned, grouped by status | Count | Count | `ErrorCode`, `FailureStage`, `PoolId`, `RequestType`, `Status`, `Type` |
 
@@ -44,7 +44,7 @@ Azure Monitor supports filtering and splitting for metrics that have dimensions.
 | `Type` |  |
 | `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
 | `FailureStage` |  |
-| `RequestType` | TODO - if there are predefined values for there I can list them here |
+| `RequestType` |  |
 | `Status` | Agent status |
 
 
@@ -75,7 +75,7 @@ The **Pool Usage** chart displays the following metrics.
 - Allocated: Count of agents currently running jobs.
 - NotReady: Count of stateful agents that have completed a job but are not yet ready to accept a new job.
 - PendingReimage: Count of agents that have completed a job and are preparing to be reimaged. This status is typical if you have your pool configured for stateless agents with standby agent mode enabled.
-- PendingReturn: [Azure only] Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occurs in batches)
+- PendingReturn: Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occurs in batches)
 - Provisioned: Count of online agents.
 - Total: Total number of agents.
 
@@ -123,9 +123,9 @@ For a list of error codes, see the following [Error codes](#error-codes) section
 | `ImageThrottling` | Too many simultaneous copy requests from a snapshot or image resource. Retry later. |
 | `InstallationOfWindowsUndeployable` | OS provisioning for VM  failed. Error details: This installation of Windows is undeployable. Make sure the image is properly prepared (generalized). Instructions for Windows: `https://azure.microsoft.com/documentation/articles/virtual-machines-windows-upload-image/` |
 | `InsufficientCapacity` | Allocation failed. We do not have sufficient capacity for the requested VM size in this region. Read more about improving likelihood of allocation success at `https://aka.ms/allocation-guidance` |
-| `InvalidSubnetDelegation` | Subnet `/subscriptions/resourceGroups/SqlClientDrivers/providers/Microsoft.Network/virtualNetworks/SqlClientDrivers-vNet/subnets/Managed-Instance-pool` referenced by `/subscriptions/resourceGroups/Managed-Instance-pool/providers/Microsoft.Compute/virtualMachineScaleSets//updateGroups/version1/networkInterfaceConfigurations/nic/ipConfigurations/ipconfig` can't be used because it contains external resources. |
+| `InvalidSubnetDelegation` | Subnet `/subscriptions/{subscriptionId}/resourceGroups/{rgName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}` referenced by `/subscriptions/{subscriptionId}/resourceGroups/{rgName}/providers/Microsoft.Compute/virtualMachineScaleSets/{}/updateGroups/version1/networkInterfaceConfigurations/nic/ipConfigurations/ipconfig` can't be used because it contains external resources. |
 | `NetworkProfileProcessingTimeout` | An unexpected error occurred while processing the network profile of the VM. Retry later. |
-| `ProvisioningTimeOut` | Resource `/subscriptions//resourceGroups//providers/Microsoft.Network/networkInterfaces/providers/Microsoft.Compute/virtualMachineScaleSets//virtualMachines/networkInterfaces/nic` not found. OS Provisioning for VM  did not finish in the allotted time. The VM may still finish provisioning successfully. Check provisioning state later. Also, make sure the image has been properly prepared (generalized). Instructions for Windows: `https://azure.microsoft.com/documentation/articles/virtual-machines-windows-upload-image/` Instructions for Linux: `https://azure.microsoft.com/documentation/articles/virtual-machines-linux-capture-image/` If you are deploying more than 20 Virtual Machines concurrently, consider moving your custom image to shared image gallery. Refer to `https://aka.ms/movetosig` for the same. |
+| `ProvisioningTimeOut` | Resource `subscriptions/{subscriptionId}/resourceGroups/{rgName}/providers/Microsoft.Network/networkInterfaces/providers/Microsoft.Compute/virtualMachineScaleSets/{}/virtualMachines/networkInterfaces/nic` not found. OS Provisioning for VM  did not finish in the allotted time. The VM may still finish provisioning successfully. Check provisioning state later. Also, make sure the image has been properly prepared (generalized). Instructions for Windows: `https://azure.microsoft.com/documentation/articles/virtual-machines-windows-upload-image/` Instructions for Linux: `https://azure.microsoft.com/documentation/articles/virtual-machines-linux-capture-image/` If you are deploying more than 20 Virtual Machines concurrently, consider moving your custom image to shared image gallery. Refer to `https://aka.ms/movetosig` for the same. |
 | `RemoteNameCantBeResolved` |  |
 | `ResourceGroupBeingDeleted` | The resource group ... is in deprovisioning state and can't perform this operation. |
 | `SecretDisabled` | Operation get isn't allowed on a disabled secret. Status: 403 (Forbidden) ErrorCode: Forbidden |

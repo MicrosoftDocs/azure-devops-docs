@@ -43,7 +43,7 @@ If you're new to managing projects and teams, complete the following steps:
 1. Define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#get-started).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence. For guidance, review [About areas and iterations](about-areas-iterations.md).
 1. Determine if you want a flat structure or hierarchy of sprints and releases.
-1. Open **Project settings>Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#list-project-iterations) and [Add iterations and set iteration dates](#iterations). 
+1. Open **Project settings>Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#list-project-iterations) and [Add iterations and set iteration dates](#add-iterations-and-set-iteration-dates). 
 1. Open the team configuration and assign the default and other area paths to each team. Follow the steps provided later in this article: [Open team settings](#list-team-iterations) and [Set team default iteration paths](#select-team-sprints-and-set-the-default-iteration-path).
 1. Each team should assign the default iteration path they selected to their work items. Do so for those work items to show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
@@ -110,7 +110,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 ::: moniker range="azure-devops"
 
-[List project iteration paths](#list-project-iteration) | [Add a project iteration](#add-project-iteration) | [List team iteration paths](#list-team-iterations) | [Set team iteration paths](#select-team-sprints-and-set-the-default-iteration-path) | [Delete or update a project iteration path](#rename-or-move-an-iteration)
+[List project iteration paths](#list-project-iterations) | [Add a project iteration](#add-project-iterations) | [List team iteration paths](#list-team-iterations) | [Set team iteration paths](#select-team-sprints-and-set-the-default-iteration-path) | [Delete or update a project iteration path](#rename-or-move-an-iteration)
 
 List the iterations defined for a project using [az boards iteration project list](/cli/azure/boards/iteration/project#az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -184,7 +184,7 @@ ID     Identifier                            Name            Path               
 
    :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Iterations page, scheduled set of sprints.":::
 
-   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path-team-services). 
+   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path). 
 
 ::: moniker-end
 
@@ -208,7 +208,7 @@ From **Iterations**,  add iterations that teams can then select for their use.
 
    :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps Server 2019.":::
 
-   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path-team-services).
+   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path).
 
 ::: moniker-end
 
@@ -340,11 +340,7 @@ dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2   2019-01-21T00:00:00+00:00  2019
 
 ---
 
-[](#select-team-sprints-and-set-the-default-iteration-path)
-
 ## Select team sprints and set the default iteration path
-
-[](#select-team-sprints-and-set-the-default-iteration-path)
 
 You [define sprints for the project](../../boards/sprints/define-sprints.md) and then select them to be active for each team. You assign the default iteration to use when creating new work items. 
 
@@ -415,7 +411,7 @@ az boards iteration team set-backlog-iteration --id --team
 
 - **team**: Required. Name or ID of the team.
 - **default-iteration-macro**: Optional. Default iteration macro, the only valid entry is @CurrentIteration.  
-- **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#list-project-iteration).  
+- **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#list-project-iterations).  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 
 #### Example 

@@ -1,14 +1,14 @@
 ---
 title: Add built-in charts to a team dashboard
 titleSuffix: Azure DevOps
-description: Learn how to add system-generated charts or query-based charts to a team dashboard in Azure DevOps.
+description: Learn how to add system-generated charts or query-based charts to a team dashboard.
 ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/18/2023
+ms.date: 10/28/2024
 ---
 
 # Add charts to a dashboard
@@ -16,31 +16,29 @@ ms.date: 07/18/2023
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 ::: moniker range=">= azure-devops-2020"
-This article describes how to add query-based charts and in-context reports to a dashboard from their functional page. For example, you can add the Team Velocity in-context Analytics report to a dashboard. Once you've added the report, go ahead and modify the corresponding widget configuration parameters.
+This article explains how to add query-based charts and in-context reports to a dashboard from their respective functional pages. For example, you can add the Team Velocity in-context Analytics report to a dashboard. After adding the report, you can modify the corresponding widget configuration parameters to suit your needs.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-You can add the charts described in this article to a dashboard from their corresponding functional page, like: 
-- Builds
-- Releases
-- Queries
+This article explains how to add charts to a dashboard from their respective functional pages. For example, you can add charts from the Builds, Releases, or Queries pages. After adding the charts, you can customize the widget configuration parameters to meet your specific needs.
 ::: moniker-end
 
 ## Prerequisites  
 
 ::: moniker range="azure-devops"
- 
-- You must have [created the team dashboard](dashboards.md) to which you want to add a chart.  
-- Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](./dashboard-permissions.md).
 
+- **Dashboard creation**: Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart.
+- **Access:** 
+  - Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+  - To add, edit, or manage a team dashboard, be a team member and have at least **Basic** access.
+- **Permissions:** Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
-- You must have [created the team dashboard](dashboards.md) to which you want to add a chart.  
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](./dashboard-permissions.md). In general, you need to be a member of the team to edit a team dashboard.
- Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
+- **Dashboard creation**: Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart.
+- **Access:**
+  -  Be a member of the team with at least **Basic** access.
+- **Permissions:** Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
 ::: moniker-end
 
 For more information, see [Default permissions and access for charts and dashboards](charts-dashboard-permissions-access.md).
@@ -88,12 +86,12 @@ You can add each of the in-context **Analytics** reports to a dashboard.
 
 ::: moniker range="< azure-devops-2020"
 
-There are many in-context reports that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data. If you find a widget that works, add it to the dashboard: 
+There are many in-context reports that you can access from the web portal, but can't add to a dashboard. However, you might find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data. If you find a widget that works, add it to the dashboard: 
 
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
-- [Team velocity](./team-velocity.md)
-- [View/configure sprint burndown](configure-sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
-- [Cumulative flow](./cumulative-flow.md), see [CFD widget](widget-catalog.md)
+- [Learn about team velocity](./team-velocity.md)
+- [View and configure sprint burndown](configure-sprint-burndown.md). See [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
+- [Learn about cumulative flow](./cumulative-flow.md), see [CFD widget](widget-catalog.md)
 
 ::: moniker-end
 
@@ -120,7 +118,6 @@ Each time you run a build, it logs information about the build, including:
 
 Each time a release gets deployed, it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
 
-::: moniker range=">= azure-devops-2019"
 > [!TIP]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
@@ -133,12 +130,6 @@ Each time a release gets deployed, it logs information about the release to each
 
    :::image type="content" source="media/add-cd-release-definition-tile.png" alt-text="Screenshot of Release pipeline tile.":::
 
-::: moniker-end
-
-
-
-
-
 ## Add a test quality trend chart   
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
@@ -148,7 +139,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and go to your project.
 
-2. Open a build summary for a build pipeline to which you've added tests.
+2. Open a build summary for a build pipeline to which you added tests.
 
 3. Open the **Tests** page.
 
@@ -168,11 +159,6 @@ As you update the Markdown file, changes automatically appear on the dashboard u
 
 ## Related articles
 
-::: moniker range=">= azure-devops-2019"
-
-- [Burndown guidance](burndown-guidance.md)
-- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Analyze test results](../../pipelines/test/test-analytics.md)
-::: moniker-end
-
-
+- [Learn how to use burndown charts](burndown-guidance.md)
+- [Understand cumulative flow and lead/cycle time](cumulative-flow-cycle-lead-time-guidance.md)
+- [Analyze your test results](../../pipelines/test/test-analytics.md)
