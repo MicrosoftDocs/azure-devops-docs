@@ -15,6 +15,12 @@ monikerRange: '<= azure-devops'
 
 Azure Pipelines offers developers a structured framework for deploying applications across multiple environments efficiently and securely using classic release pipelines. In this article you learn how to create release definitions in Azure Pipelines.
 
+## Prerequisites
+
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
+
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
+
 ## Create a release definition
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
