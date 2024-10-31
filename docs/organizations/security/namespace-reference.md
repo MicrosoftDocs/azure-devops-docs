@@ -16,7 +16,7 @@ ms.date: 10/31/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes the valid security namespaces, lists the associated permissions, and provides links to more information. Security namespaces store access control lists (ACLs) on tokens, determining the level of access various entities have to perform specific actions on specific resources. These entities include:
+This article describes the valid security namespaces, lists the associated permissions, and provides links to more information. Security namespaces store access control lists ([ACLs](/rest/api/azure/devops/security/access-control-lists/query?view=azure-devops-rest-5.0&tabs=HTTP)) on tokens, determining the level of access various entities have to perform specific actions on specific resources. These entities include:
 
 - Azure DevOps users
 - Azure DevOps organization owners
@@ -27,7 +27,7 @@ This article describes the valid security namespaces, lists the associated permi
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. An ACL includes a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE consists of an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query?view=azure-devops-rest-7.2&tabs=HTTP)
 
 
 ## Permission management tools 
@@ -1223,7 +1223,7 @@ The following table describes the security namespaces and permissions that aren'
 
 ## Deprecated and read-only namespaces
 
-The following namespaces are either deprecated or read-only. You shouldn't use them. 
+The following namespaces are either deprecated or read-only. Don't use them. 
 
 :::row:::
    :::column span="2":::
