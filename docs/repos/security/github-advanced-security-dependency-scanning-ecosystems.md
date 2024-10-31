@@ -1,7 +1,7 @@
 ---
 title: Supported package ecosystems for dependency scanning for GitHub Advanced Security for Azure DevOps 
 titleSuffix: Azure Repos
-description: Supported package ecosystems for dependency scanning for GitHub Advanced Security for Azure DevOps
+description: Supported package ecosystems for dependency scanning for GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: reference 

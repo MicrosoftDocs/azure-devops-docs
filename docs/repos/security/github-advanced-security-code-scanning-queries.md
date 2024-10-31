@@ -1,7 +1,7 @@
 ---
-title: Using custom queries with GitHub Advanced Security for Azure DevOps 
+title: Use custom queries with GitHub Advanced Security for Azure DevOps 
 titleSuffix: Azure Repos
-description: Using custom queries with GitHub Advanced Security for Azure DevOps
+description: Using custom queries with GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
@@ -11,7 +11,6 @@ author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 10/24/2024
 ---
-
 
 # Using custom queries with CodeQL
 

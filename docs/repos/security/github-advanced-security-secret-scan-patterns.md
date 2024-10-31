@@ -1,7 +1,7 @@
 ---
 title: Secret scanning patterns for GitHub Advanced Security for Azure DevOps 
 titleSuffix: Azure Repos
-description: Patterns for GitHub Advanced Security for Azure DevOps
+description: Patterns for GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
@@ -16,9 +16,9 @@ ms.date: 10/18/2024
 
 Advanced Security maintains multiple sets of default secret scanning patterns: 
 
-1. **Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
-1. **User alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
-1. **Non-provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled.
+* ***Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
+* **User alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
+* **Non-provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled.
 
 ## Supported secrets 
 
@@ -30,13 +30,13 @@ Advanced Security maintains multiple sets of default secret scanning patterns:
 | Push protection | A token for which leaks are reported to users on push. Applies to all repositories where secret push protection enabled. |
 | Validity | Tokens for which Advanced Security attempts to perform a validity check. |
 
-### Partner provider patterns
+## Partner provider patterns
 
 The following table lists the partner provider patterns supported by secret scanning. 
 
 [!INCLUDE [provider-table](includes/provider-table.md)]
 
-### Non-provider patterns
+## Non-provider patterns
 
 The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. For more information, see [Manage secret scanning alerts](github-advanced-security-secret-scanning.md#manage-secret-scanning-alerts).
 

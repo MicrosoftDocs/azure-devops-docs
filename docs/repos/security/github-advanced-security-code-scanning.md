@@ -12,7 +12,6 @@ monikerRange: 'azure-devops'
 ms.date: 10/24/2024
 ---
 
-
 # Code scanning 
 
 Code scanning in [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) lets you analyze the code in an Azure DevOps repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are raised as an alert. Code scanning uses CodeQL to identify vulnerabilities.  
@@ -166,9 +165,9 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Managing code scanning alerts on pull requests 
 
-If alerts are created for new code changes in a pull request, the alert will reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
+If alerts are created for new code changes in a pull request, the alert will be reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
 
-You can the affected lines of code, see a summary of the finding, and resolve the annotation in the Overview section.
+You can review the affected lines of code, see a summary of the finding, and resolve the annotation in the Overview section.
 
 [![Screenshot of active code pull request annotation.](./media/pull-request-annotation-code-scanning.png)](./media/pull-request-annotation-code-scanning.png#lightbox)
 
