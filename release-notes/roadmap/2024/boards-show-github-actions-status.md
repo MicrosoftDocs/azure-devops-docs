@@ -22,5 +22,7 @@ Now, whenever a work item is linked to a GitHub repository, whether through a pu
 
 > [!div class="mx-imgBorder"]
 > ![screen shot example of work flow run on work item form](media\boards-show-github-actions-status-1.png)
+
+
 > [!NOTE]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).

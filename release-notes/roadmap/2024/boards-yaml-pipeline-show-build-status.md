@@ -14,5 +14,8 @@ hide_comments: true
 
 When using an Azure DevOps YAML build pipeline with a GitHub repository, show the build status on **Developer** control of the work item form.
 
+> [!div class="mx-imgBorder"]
+> ![screen shot example of github build status on work item form](media\boards-build-status-on-yaml-gh-repo.png)
+
 > [!NOTE]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
