@@ -50,9 +50,9 @@ If you're new to managing projects and teams, follow these steps to configure yo
 
 1. **Determine area paths**: Identify the number and names of **Area Paths** needed to categorize your work. At a minimum, add one area path for each team you define.
 2. **Decide on teams**: Decide on the number and names of teams you want to support. For more information, see [About teams and Agile tools](about-teams-and-settings.md).
-3. **Define area paths**: Open **Project settings > Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow these steps: [Open Project Settings, Project configuration](set-area-paths.md#open-project-settings) and [Add area paths](set-area-paths.md#add-areas).
+3. **Define area paths**: Define the area paths to support steps 1 and 2 at the project level. Follow these steps: [Add area paths](set-area-paths.md#add-an-area-path).
 4. **Define teams**: Define the teams needed to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).
-5. **Configure team settings**: [Open the team configuration](set-area-paths.md#open-team-settings) and [assign the default and other area paths](set-area-paths.md#team-area-paths) to each team.
+5. **Configure team settings**: Use these steps to [assign the default and other area paths](set-area-paths.md#set-team-area-paths) to each team.
 6. **Assign work items**: Assign work items to the area paths you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 > [!NOTE]
@@ -92,7 +92,7 @@ Follow these steps to configure **Iteration Paths** for your project and teams:
 1. Define the area paths and teams using the guidance in [Define area paths and assign to a team](set-area-paths.md#get-started).
 2. Determine the length of the iteration you want to support. We recommend that all teams use the same sprint cadence.
 3. Decide whether you want a flat structure or a hierarchy of sprints and releases.
-4. Open **Project settings > Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow these steps: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates.
+4. Define the iteration paths to support steps 2 and 3 at the project level. Follow these steps: [Add iterations and set iteration dates](set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates).
 5. Open the team configuration and assign the default, backlog, and other iteration paths to each team. Follow these steps: [Open team settings](set-iteration-paths-sprints.md#list-team-iterations) and [Set team default iteration paths](set-iteration-paths-sprints.md#list-team-iterations).
 6. Each team should assign an iteration path to their work items that falls under the **Backlog iteration** path. These work items appear on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md).
 
@@ -110,7 +110,7 @@ You can do the following actions at any time:
 ## How many iterations should a team define?
 
 Define as many child iterations as needed to reflect your project lifecycle. These paths represent a series of events, such as sprints, prebeta and beta results, and other release milestones. Teams usually leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
-Define as many child iterations as needed to reflect your project lifecycle. These iterations can represent various events, such as sprints, pre-beta and beta phases, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
+Define as many child iterations as needed to reflect your project lifecycle. These iterations can represent various events, such as sprints, prebeta and beta phases, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
 
 Add iterations to support the following requirements:
 * Define sprints for your Scrum teams to [plan and execute their sprints](../../boards/sprints/assign-work-sprint.md)

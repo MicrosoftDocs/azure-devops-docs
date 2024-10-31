@@ -110,7 +110,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 ::: moniker range="azure-devops"
 
-[List project iteration paths](#list-project-iterations) | [Add a project iteration](#add-project-iterations) | [List team iteration paths](#list-team-iterations) | [Set team iteration paths](#select-team-sprints-and-set-the-default-iteration-path) | [Delete or update a project iteration path](#rename-or-move-an-iteration)
+[List project iteration paths](#list-project-iterations) | [Add a project iteration](#add-iterations-and-set-iteration-dates) | [List team iteration paths](#list-team-iterations) | [Set team iteration paths](#select-team-sprints-and-set-the-default-iteration-path) | [Delete or update a project iteration path](#rename-or-move-an-iteration)
 
 List the iterations defined for a project using [az boards iteration project list](/cli/azure/boards/iteration/project#az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -124,8 +124,8 @@ az boards iteration project list [--depth]
 #### Parameters
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
-- **path**: Optional. Absolute path of an iteration. `\Iteration\` must follow after the `\ProjectName`, which distinguishes it from an area path. Example: --path \ProjectName\Iteration\IterationName. If spaces are used within a node, then enclose in double-quotes, for example,--path "\Fabrikam Fiber\Iteration\Sprint 1". When not specified, lists iteration paths from the root level.  
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+- **path**: Optional. Absolute path of an iteration. `\Iteration\` must follow after the `\ProjectName`, which distinguishes it from an area path. Example: --path \ProjectName\Iteration\IterationName. If spaces are used within a node, then enclose in double-quotes, for example,`--path "\Fabrikam Fiber\Iteration\Sprint 1"`. When not specified, lists iteration paths from the root level.  
+- **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.  
 
 
 #### Example
@@ -231,9 +231,9 @@ az boards iteration project create --name
 #### Parameters
 
 - **name**: Required. Enter the name of the iteration path.
-- **finish-date**: Optional. Finish date of the iteration. Example: "2019-06-21".
+- **finish-date**: Optional. Finish date of the iteration. Example: "--finish-date 2019-06-21".
 - **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, adds an iteration at the root level.
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
+- **project**: Optional. Name or ID of the project. Example:` --project "Fabrikam Fiber"`. 
 - **start-date**: Optional. Enter the start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
 
 
