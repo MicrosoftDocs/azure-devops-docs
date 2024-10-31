@@ -379,7 +379,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Show stage status on the work item when using a YAML release pipeline](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Show stage status on the work item when using a YAML release pipeline</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status to Deployment control on work item](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status to Deployment control on work item</a>
          </td>
          <td>Boards</td>         
       </tr> 
