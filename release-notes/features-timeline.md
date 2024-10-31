@@ -181,17 +181,17 @@ These investments include:
          <td>2024 Q4</td>
       </tr> 
       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>Boards</td>
+         <td>2025 Q1</td>
+      </tr>  
+       <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
-         <td>Boards</td>
-         <td>2025 Q1</td>
-      </tr>  
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo" data-raw-source="[Report stage status to work item when using a YAML release pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo)">Report stage status to work item when using a YAML release pipeline with GitHub repository</a></td>
          <td>Boards</td>
