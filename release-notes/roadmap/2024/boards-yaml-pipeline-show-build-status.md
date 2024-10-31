@@ -18,4 +18,4 @@ When using an Azure DevOps YAML build pipeline with a GitHub repository, show th
 > ![screen shot example of github build status on work item form](media\boards-build-status-on-yaml-gh-repo.png)
 
 > [!NOTE]
-> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+> This feature will only be available with the [new Azure Boards experience](../../../release-notes/2024/sprint-237-update#new-boards-hub-on-by-default).
