@@ -17,4 +17,4 @@ Similar to how classic release pipelines report deployment status, extend suppor
 Depends on [Show build status when using a YAML build pipeline with GitHub repository](boards-yaml-pipeline-show-build-status.md).
 
 > [!NOTE]
-> This feature will only be available with the [new Azure Boards experience](https://learn.microsoft.com/en-us/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default).
+> This feature will only be available with the [new Azure Boards experience](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default).
