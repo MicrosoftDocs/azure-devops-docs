@@ -73,7 +73,7 @@ You can also use the REST API for this process.
 
 1. Select identity type **App registration or Managed identity (manual)** the **Workload identity federation** credential.
 
-    :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
+    :::image type="content" source="approvals/media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection for managed identity.":::
 
 1. For **Service connection name**, enter a value such as `uamanagedidentity`. You'll use this value in your federated credential subject identifier.
 
@@ -217,7 +217,7 @@ You can also use the REST API for this process.
 
 1. Select identity type **App registration or Managed identity (manual)** the **Workload identity federation** credential.
 
-    :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
+    :::image type="content" source="approvals/media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
 
 1. For **Service connection name**, enter a value such as `uaappregistration`. You'll use this value in your federated credential subject identifier.
 
