@@ -67,7 +67,7 @@ Initiating a release starts each deployment based on the settings and policies d
 
 The following diagram shows the relationship between release, release pipelines, and deployments.
 
-:::image type="content" source="media/release-deploy.png" alt-text="Relationship between releases, release pipelines, and deployments":::
+:::image type="content" source="media/release-deploy.png" alt-text="A diagram illustrating the difference between releases and deployments.":::
 
 ## FAQ 
 
