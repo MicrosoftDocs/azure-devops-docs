@@ -5,7 +5,7 @@ ms.date: 11/1/2024
 ms.topic: include
 ---
 
-### macOS-15 Sequoia  is available in preview
+### macOS-15 Sequoia is available in preview
 
 The `macOS-15` image is now available in preview for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
 
