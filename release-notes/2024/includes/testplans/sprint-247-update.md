@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Auto Pause for Test Case Run
 
-Manual testers often face the frustrating experience of losing partial test run data when they forget to mark an incomplete test case as "Paused" before hitting "Save and Close." This oversight can mean losing all progress on a complex or long-running test case and having to start from scratch. To address this pain point, we're introducing **Auto Pause for Test Case Run**. This new feature automatically marks a test case as "Paused" if the tester steps away or interrupts their work, ensuring data is saved without needing a manual pause. By simplifying the pause and resume process, we’re making it easier to pick up exactly where you left off. A private preview will begin in the coming weeks—please [email us](mailto:adocustomerfeedback@service.microsoft.com) if you’d like to join! 
+Manual testers frequently face challenges with losing partial test run data when they forget to mark an incomplete test case as “Paused” before selecting “Save and Close.” This oversight can result in losing all progress on complex or long-running test cases, requiring testers to start over. To address this issue, we’re introducing Auto Pause for Test Case Run. This new feature automatically marks a test case as “Paused” if the tester steps away or interrupts their work, ensuring data is saved without the need for a manual pause. By simplifying the pause and resume process, testers can pick up exactly where they left off. A private preview will be available in the coming weeks—please [email us](mailto:adocustomerfeedback@service.microsoft.com) if you’d like to join! 
 
 ### New release version for TFE
 

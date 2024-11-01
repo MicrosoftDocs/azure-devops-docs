@@ -7,8 +7,8 @@ ms.topic: include
 
 ### Commit-less builds supported for dependency scanning 
 
-To submit results successfully for dependency scanning, we previously required a build with a new commit. Now, all scans regardless of commit diff will have any detected components submitted and analyzed for potential vulnerabilities. 
+Dependency scanning no longer requires a new commit to trigger results submission. With this update, all builds will submit detected components for vulnerability analysis, whether or not they include commit changes. This enhancement streamlines security workflows and broadens scan coverage.
 
-### File previews and annotations supported for scans with CodeQL sourcesFolder variable
+### File previews and annotations for CodeQL scans using sourcesFolder
 
-If you had the sourcesFolder variable specified for your CodeQL builds, file previews and pull request annotations may not have appeared as anticipated. Advanced Security will now properly render the file preview when you click into an alert, as well as place annotations on the correct file path.
+Now, when using the sourcesFolder variable in CodeQL builds, file previews and annotations display accurately in alerts and pull requests, giving you consistent, reliable visibility into scan results.

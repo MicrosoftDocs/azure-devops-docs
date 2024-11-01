@@ -24,12 +24,13 @@ For macOS-15 installed software, see [image configuration](https://github.com/ac
 The `macOS-14` image will still be used when specifying `macOS-latest`. Once `macOS-15` is generally available, `macOS-latest` will migrate directly to `macOS-15`.
 
 
-### Newly created Azure Service Connections create App registrations with new naming convention
+### Azure Service Connections now create App registrations with an updated naming convention
 
-Currently, a Service Connection is named `<azure devops org>-<azure devops project>-<azure subscription id>`. This makes it difficult to correlate App registrations to service connections apart that target the same Azure subscription. To make it easy to distinguish App registrations, the name of the app registration will include the id of the service connection: `<azure devops org>-<azure devops project>-<service connection id>`.
+Previously, Service Connections were named using the format `<azure devops org>-<azure devops project>-<azure subscription id>`, making it challenging to distinguish between App registrations linked to the same Azure subscription. To improve clarity, App registration names will now include the Service Connection ID, following this format: `<azure devops org>-<azure devops project>-<service connection id>`.
 
-The id of a service connection can be found on the service connection details page:
+You can find the service connection ID on the service connection details page:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection details page.](../../media/247-pipelines-01.png "Screenshot of service connection details page")
+
 

@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Search Pull Requests by Title on PR Listing Page
 
-The Pull Requests listing page now supports filtering by PR title, making it easier to find the pull requests you are looking for.
+The Pull Requests listing page now includes a filter by PR title, making it easier to locate specific pull requests.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of filtering by PR title.](../../media/247-repos-01.png "Screenshot of filtering by PR title")](../../media/247-repos-01.png#lightbox)
