@@ -10,7 +10,6 @@ ms.date: 9/26/2024
 
 ## Features
 > [!NOTE]
-> These features will roll out over the next two to three weeks.
 > We are rolling out the feature. Receiving it in your organization depends on various factors, and it may arrive later if you don't have it yet.
 
 [!INCLUDE [sprint-245-update-links](../includes/repos/sprint-245-update-links.md)]
