@@ -175,6 +175,6 @@ Your stream gets removed. Any events that haven't been sent before the deletion 
 ## Related articles
 
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
-- [Export audit events](azure-devops-auditing.md#export-auditing-events)
+- [Export audit events](azure-devops-auditing.md#export-audit-events)
 - [List of audit events](auditing-events.md)
 - [Introducing Azure DevOps Audit Stream on Azure DevOps blog](https://devblogs.microsoft.com/devops/introducing-azure-devops-audit-stream/)
