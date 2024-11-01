@@ -9,7 +9,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 10/29/2024
+ms.date: 11/01/2024
 ---
 
 # Access, export, and filter audit logs
@@ -197,9 +197,10 @@ The following limitations apply to what can be audited:
 
 * **Microsoft Entra group membership changes**: Auditing Logs include updates to Azure DevOps groups and group membership, when an event Area is `Groups`. However, if you manage membership via Microsoft Entra groups, additions and removals of users from those Microsoft Entra groups aren't included in these logs. Review the Microsoft Entra audit logs to see when a user or group was added or removed from a Microsoft Entra group.
 * **Sign-in events**: Azure DevOps doesn't track sign-in events. To review sign-in events to your Microsoft Entra ID, view the Microsoft Entra audit logs.
-* **Indirect user additions:** In some cases, users might get added to your organization indirectly. For instance, if a user is assigned a work item, they might automatically get added to the organization. However, this action doesn't generate a corresponding audit event for the work item assignment. To trace these events, consider the following actions:
-  - Review the work item history to see who assigned the work item.
-  - Check the audit log for any related events that might provide context.
+* **Indirect user additions:** In some cases, users might get added to your organization indirectly and show in the audit log as being added by Azure DevOps Services. For instance, if a user is assigned to a work item, they might get added automatically to the organization. While an audit event gets generated for the user being added, there isn't a corresponding audit event for the work item assignment that triggered the user addition. To trace these events, consider the following actions:
+  * Review your work item history for the corresponding timestamps to see if this user was assigned to any work items.
+  * Check the audit log for any related events that might provide context.
+
 
 ## Frequently asked questions
 
