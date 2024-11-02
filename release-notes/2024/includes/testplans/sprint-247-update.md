@@ -7,14 +7,14 @@ ms.topic: include
 
 ### New Release: Azure Test Runner Public Version 1.2.2
 
-Azure Test Plans released a fix in 1.2.2 for a recent issue in Test Plans where ATR experienced launch failures in Chrome version 130. This issue arose due to Chrome’s [added support for non-special scheme URLs](https://docs.google.com/document/d/1LjxHl32fE4tCKugrK_PIso7mfXQVEeoD1wSnX2y0ZU8/edit?resourcekey=0-d1gP4X2sG7GPl9mlTeptIA&tab=t.0#heading=h.voahsyj6c2dh), which impacted the ATR user flow. With this update, the regression bug is resolved, and ATR functionality is restored. For more details about this regression bug, visit [this issue tracker](https://issues.chromium.org/issues/375228139) in Chromium.
+Azure Test Plans released a fix in 1.2.2 for a recent issue in Test Plans where Azure Test Runner(ATR) experienced launch failures in Chrome version 130. This issue arose due to Chrome’s [added support for non-special scheme URLs](https://docs.google.com/document/d/1LjxHl32fE4tCKugrK_PIso7mfXQVEeoD1wSnX2y0ZU8/edit?resourcekey=0-d1gP4X2sG7GPl9mlTeptIA&tab=t.0#heading=h.voahsyj6c2dh), which impacted the ATR user flow. With this update, the regression bug is resolved, and ATR functionality is restored. For more details about this regression bug, visit [this issue tracker](https://issues.chromium.org/issues/375228139) in Chromium.
 
 We encourage you to use web application for enhanced features. If you find any missing features in web application, we would love to hear from you. [Share your feedback](mailto:adocustomerfeedback@service.microsoft.com) with us! 
 
 
-### Sorting in Test Plans Directory
+### New sorting capabilities in Test Plans directory
 
-We’ve added a new sorting feature to the Test Plans Directory page! You can now sort by each column more effectively, with options for all column types. Sorting is available in alphanumeric order, making it easier to organize and find the information you need quickly.
+The Test Plans directory now offers enhanced sorting options! With this update, you can quickly organize each column alphanumerically, providing a streamlined way to find and access your data.
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Sorting in Test Plans Directory.](../../media/247-testplans-01.gif "gif to Sorting in Test Plans Directory")
@@ -22,7 +22,7 @@ We’ve added a new sorting feature to the Test Plans Directory page! You can no
 
 ### Auto Pause for Test Case Run
 
-Manual testers frequently face challenges with losing partial test run data when they forget to mark an incomplete test case as "Paused" before selecting "Save and Close". This oversight can result in losing all progress on complex or long-running test cases, requiring testers to start over. To address this issue, we’re introducing Auto Pause for Test Case Run. This new feature automatically marks a test case as "Paused" if the tester steps away or interrupts their work, ensuring data is saved without the need for a manual pause. By simplifying the pause and resume process, testers can pick up exactly where they left off. A preview becomes available in the coming weeks—please [email us](mailto:adocustomerfeedback@service.microsoft.com) if you’d like to join! 
+Manual testers often encounter challenges with losing progress on test cases if an incomplete run isn’t marked as “Paused” before selecting “Save and Close.” This can result in lost work on complex or lengthy cases, requiring testers to start over. To solve this, we’re introducing Auto Pause for Test Case Run. This feature automatically pauses a test case if there’s a break or interruption, ensuring all data is saved without needing a manual pause. With Auto Pause, testers can easily resume right where they left off, simplifying the testing process and making it more efficient. A preview will be available in the coming weeks—[email us](mailto:adocustomerfeedback@service.microsoft.com) if you’d like to join! 
 
 ### New release version for test and feedback extensions (TFE)
 
