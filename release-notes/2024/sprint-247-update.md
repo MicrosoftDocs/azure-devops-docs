@@ -7,6 +7,7 @@ description: TBD
 ---
 # TBD
 
+We're excited to introduce new updates in GitHub Advanced Security for Azure DevOps, featuring commit-less builds for expanded dependency scanning and improved file previews with annotations for CodeQL scans. 
 
 
 Check out the release notes for details.
