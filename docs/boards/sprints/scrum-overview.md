@@ -30,7 +30,7 @@ The general sequence of steps for implementing Scrum using Azure Boards is as fo
 1. [Define project-level Iteration Paths and set dates](../../organizations/settings/set-iteration-paths-sprints.md)
 1. (Optional) [Add project-level Area Paths](../../organizations/settings/set-area-paths.md) (Or,  add an area path when you configure each team) 
 1. [Add teams](../../organizations/settings/add-teams.md) 
-1. [Select team-level Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md#activate).
+1. [Select team-level Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations).
 
 ### 2. Create team backlog 
 
