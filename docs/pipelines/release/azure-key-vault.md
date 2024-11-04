@@ -273,8 +273,8 @@ In the next step, we'll create an ARM service connection using service principal
     - task: AzureKeyVault@2
       displayName: Azure Key Vault
       inputs:
-        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
-        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        azureSubscription: 'SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'KEY_VAULT_NAME'
         SecretsFilter: '*'
         RunAsPreJob: false
     ```
@@ -292,15 +292,15 @@ In the next step, we'll create an ARM service connection using service principal
     - task: AzureKeyVault@2
       displayName: Azure Key Vault
       inputs:
-        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
-        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        azureSubscription: 'SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'KEY_VAULT_NAME'
         SecretsFilter: '*'
         RunAsPreJob: false
     
     - task: CmdLine@2
       displayName: Create file
       inputs:
-        script: 'echo $(YOUR_SECRET_NAME) > secret.txt'
+        script: 'echo $(SECRET_NAME) > secret.txt'
     
     - task: CopyFiles@2
       displayName: Copy file
@@ -351,14 +351,14 @@ In the next step, we'll create an ARM service connection using service principal
 1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
     
     - **Display name**: Create file
-    - **Script**: `echo $(YOUR_SECRET_NAME) > secret.txt`
+    - **Script**: `echo $(SECRET_NAME) > secret.txt`
 
     :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task.":::
 
 1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
 
     - **Display name**: Azure Key Vault
-    - **Azure subscription**: select your service principal service connection you created earlier
+    - **Azure subscription**: select the service connection you created earlier
     - **Key vault**: select your key vault
     - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
     
@@ -425,8 +425,8 @@ In the next step, we'll create an ARM service connection using service principal
     - task: AzureKeyVault@1
       displayName: Azure Key Vault
       inputs:
-        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
-        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        azureSubscription: 'SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'KEY_VAULT_NAME'
         SecretsFilter: '*'
     ```
 
@@ -443,14 +443,14 @@ In the next step, we'll create an ARM service connection using service principal
     - task: AzureKeyVault@1
       displayName: Azure Key Vault
       inputs:
-        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
-        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        azureSubscription: 'SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'KEY_VAULT_NAME'
         SecretsFilter: '*'
     
     - task: CmdLine@2
       displayName: Create file
       inputs:
-        script: 'echo $(YOUR_SECRET_NAME) > secret.txt'
+        script: 'echo $(SECRET_NAME) > secret.txt'
     
     - task: CopyFiles@2
       displayName: Copy file
@@ -495,14 +495,14 @@ In the next step, we'll create an ARM service connection using service principal
 1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
     
     - **Display name**: Create file
-    - **Script**: `echo $(YOUR_SECRET_NAME) > secret.txt`
+    - **Script**: `echo $(SECRET_NAME) > secret.txt`
 
     :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task in classic pipelines in Azure DevOps Server 2019.":::
 
 1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
 
     - **Display name**: Azure Key Vault
-    - **Azure subscription**: select your service principal service connection you created earlier
+    - **Azure subscription**: select the service connection you created earlier
     - **Key vault**: select your key vault
     - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
     
