@@ -35,7 +35,7 @@ Newly created Azure service connections can have a service management reference 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection creation page.](../../media/247-pipelines-02.png "Screenshot of service connection creation details")
 
-This information will be used to populate App registration metadata that can be found on the Branding & properties blade.
+This information will be used to populate App registration metadata that can be found on the Branding & properties blade:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of app registration properties.](../../media/247-pipelines-03.png "Screenshot of app registration properties")
@@ -51,7 +51,7 @@ You can find the service connection id on the service connection details page:
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection details page.](../../media/247-pipelines-01.png "Screenshot of service connection details page")
 
-You can also follow or share the 'Manage App registration' link.
+You can also follow or share the 'Manage App registration' link or 'Manage manage identity' if a [Managed Identity](/azure/devops/release-notes/2024/pipelines/sprint-246-update#azure-service-connection-managed-identity-support) is used.
 
 ### Azure Pipelines tasks use Node 20
 
