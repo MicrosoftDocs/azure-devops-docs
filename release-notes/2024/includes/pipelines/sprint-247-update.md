@@ -23,21 +23,19 @@ For macOS-15 installed software, see [image configuration](https://github.com/ac
 
 The `macOS-14` image will still be used when specifying `macOS-latest`. Once `macOS-15` is generally available, `macOS-latest` migrates directly to `macOS-15`.
 
-
-
-### Improvements to Service connection App registration attribution
+### Improvements to service connection App registration attribution
 
 Service connection that target Azure by default create an App registration.
-To find the identity associated with a service connection, you can follow the 'Manage App registration' link on the service connection details page. We received feedback that, when browsing app registrations directly in Entra ID, it is not always clear what an App registration is used for. To improve the attribution experience, we made the following changes.
+To find the identity associated with a service connection, you can follow the 'Manage App registration' link on the service connection details page. We received feedback that, when browsing app registrations directly in Entra ID, it is not always clear what an App registration is used for. To improve the attribution experience, we made the following changes:
 
 #### App registration notes and service management reference
 
-Newly created Azure service connections can have a service management reference specified in addition to a description.
+Newly created Azure service connections can have a service management reference specified in addition to a description:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection details page.](../../media/247-pipelines-02.png "Screenshot of service connection creation details")
 
-This will be used to populate App registration metadata which can be found on the Branding & properties blade.
+This information will be used to populate App registration metadata that can be found on the Branding & properties blade.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection details page.](../../media/247-pipelines-03.png "Screenshot of app registration properties")
