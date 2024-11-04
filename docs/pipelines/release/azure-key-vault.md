@@ -78,6 +78,27 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
       --vault-name <YOUR_KEY_VAULT_NAME>
     ```
 
+# [Managed Identity](#tab/managedidentity)
+
+## Create a user-assigned managed identity
+
+1. Sign in to the Azure portal, then search for the **Managed Identities** service in the search bar.
+
+1. Select Create, and fill out the required fields as follows:
+
+    - **Subscription**: Select your subscription from the dropdown menu.
+    - **Resource group**: Select an existing resource group or create a new one.
+    - **Region**: Select a region from the dropdown menu.
+    - **Name**: Enter a name for your user-assigned managed identity.
+
+1. Select **Review + create** when you're done.
+
+1. Once the deployment is complete, select **Go to resource**, then copy the **Subscription** and **Client ID** values to use in upcoming steps.
+
+1. Navigate to **Settings** > **Properties**, and copy your managed identity's **Tenant ID** value for later use.
+
+# [Service Principal](#tab/serviceprincipal)
+
 ## Set up key vault access policies
 
 To access our Azure Key Vault, we need to set up a service principal to grant access to Azure Pipelines. Follow [this guide](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal) to create a service principal with Azure CLI, and then continue with the next steps in this section.
@@ -167,6 +188,8 @@ In the next step, we'll create an ARM service connection using service principal
     :::image type="content" source="media/new-service-principal-arm-service-connection-server-2019.png" alt-text="A screenshot showing how to create a new ARM service connection using service principal in Azure DevOps Server 2019.":::
 
 ::: moniker-end
+
+---
 
 ## Create a new pipeline
 
