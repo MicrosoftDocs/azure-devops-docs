@@ -6,11 +6,13 @@ ms.author: rabououn
 author: ramiMSFT
 ms.topic: quickstart
 ms.date: 12/08/2023
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2022'
 "recommendations": "true"
 ---
 
 # Publish Cargo packages with Azure Pipelines
+
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Azure Pipelines enables developers to publish their Cargo packages to Azure Artifacts feeds and public registries such as Crates.io. In this article, you will learn how to publish your Cargo packages to an Azure Artifacts feed using both YAML and Classic pipelines.
 
