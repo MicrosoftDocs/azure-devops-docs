@@ -51,6 +51,8 @@ You can find the service connection id on the service connection details page:
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection details page.](../../media/247-pipelines-01.png "Screenshot of service connection details page")
 
+You can also follow or share the 'Manage App registration' link.
+
 ### Azure Pipelines tasks use Node 20
 
 Tasks that run on a pipeline agent are executed using a runner. The [Azure Pipelines tasks](/azure/devops/pipelines/tasks/reference) that use Node as a runner now all use Node 20.
