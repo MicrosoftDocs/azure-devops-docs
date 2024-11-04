@@ -145,17 +145,9 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
     
     - **Description**: (Optional) Add a description.
 
-1. In **Security**, select **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. In **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
 1. Select **Save** to validate and create the service connection.
-
-
-
-
-
-
-
-
 
 
 # [Service Principal](#tab/serviceprincipal)
