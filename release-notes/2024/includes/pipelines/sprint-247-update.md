@@ -24,11 +24,31 @@ For macOS-15 installed software, see [image configuration](https://github.com/ac
 The `macOS-14` image will still be used when specifying `macOS-latest`. Once `macOS-15` is generally available, `macOS-latest` migrates directly to `macOS-15`.
 
 
-### New naming convention for app registrations in Azure service connections
 
-Previously, Service Connections were named using the format `<azure devops org>-<azure devops project>-<azure subscription id>`, making it challenging to distinguish between App registrations linked to the same Azure subscription. To improve clarity, App registration names will now include the Service Connection ID, following this format: `<azure devops org>-<azure devops project>-<service connection id>`.
+### Improvements to Service connection App registration attribution
 
-You can find the service connection ID on the service connection details page:
+Service connection that target Azure by default create an App registration.
+To find the identity associated with a service connection, you can follow the 'Manage App registration' link on the service connection details page. We received feedback that, when browsing app registrations directly in Entra ID, it is not always clear what an App registration is used for. To improve the attribution experience, we made the following changes.
+
+#### App registration notes and service management reference
+
+Newly created Azure service connections can have a service management reference specified in addition to a description.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of service connection details page.](../../media/247-pipelines-02.png "Screenshot of service connection details page")
+
+This will be used to populate App registration metadata which can be found on the Branding & properties blade.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of service connection details page.](../../media/247-pipelines-03.png "Screenshot of service connection details page")
+
+If a description was not specified at service connection creation time, we will create a default note on the App registration.
+
+#### New naming convention for app registrations in Azure service connections
+
+Previously, service connections were named using the format `<azure devops org>-<azure devops project>-<azure subscription id>`, making it challenging to distinguish between App registrations linked to the same Azure subscription. To improve clarity, App registration names will now include the service connection id, following this format: `<azure devops org>-<azure devops project>-<service connection id>`.
+
+You can find the service connection id on the service connection details page:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service connection details page.](../../media/247-pipelines-01.png "Screenshot of service connection details page")
