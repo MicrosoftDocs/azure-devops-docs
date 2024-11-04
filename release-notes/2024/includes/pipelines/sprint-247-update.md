@@ -33,12 +33,12 @@ To find the identity associated with a service connection, you can follow the 'M
 Newly created Azure service connections can have a service management reference specified in addition to a description:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of service connection details page.](../../media/247-pipelines-02.png "Screenshot of service connection creation details")
+> ![Screenshot of service connection creation page.](../../media/247-pipelines-02.png "Screenshot of service connection creation details")
 
 This information will be used to populate App registration metadata that can be found on the Branding & properties blade.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of service connection details page.](../../media/247-pipelines-03.png "Screenshot of app registration properties")
+> ![Screenshot of app registration properties.](../../media/247-pipelines-03.png "Screenshot of app registration properties")
 
 If a description was not specified at service connection creation time, we will create a default note on the App registration.
 
