@@ -78,6 +78,8 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
       --vault-name <YOUR_KEY_VAULT_NAME>
     ```
 
+## Set up authentication
+
 # [Managed Identity](#tab/managedidentity)
 
 ## Create a user-assigned managed identity
@@ -244,7 +246,7 @@ In the next step, we'll create an ARM service connection using service principal
 
 ---
 
-## Create a new pipeline
+## Access key vault secrets from your pipeline
 
 ::: moniker range=">= azure-devops-2020"
 
