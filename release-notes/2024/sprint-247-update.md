@@ -1,11 +1,11 @@
 ---
-title: TBD
+title: Improved GitHub Advanced Security Scanning
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/1/2024
-description: TBD
+ms.date: 11/4/2024
+description: Improved GitHub Advanced Security Scanning
 ---
-# TBD
+# Improved GitHub Advanced Security Scanning
 
 We're excited to introduce new updates in GitHub Advanced Security for Azure DevOps, featuring commit-less builds for expanded dependency scanning and improved file previews with annotations for CodeQL scans. 
 
@@ -28,7 +28,7 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-247-update-links](includes/pipelines/sprint-247-update-links.md)]
 
-### Testplans
+### Test Plans
 
 [!INCLUDE [sprint-247-update-links](includes/testplans/sprint-247-update-links.md)]
 
@@ -48,7 +48,7 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-247-update](includes/pipelines/sprint-247-update.md)]
 
-## Testplans
+## Test Plans
 
 [!INCLUDE [sprint-247-update](includes/testplans/sprint-247-update.md)]
 

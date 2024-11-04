@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/1/2024
+ms.date: 11/4/2024
 ms.topic: include
 ---
 
@@ -11,4 +11,4 @@ Dependency scanning no longer requires a new commit to trigger results submissio
 
 ### File previews and annotations for CodeQL scans using sourcesFolder
 
-Now, when using the sourcesFolder variable in CodeQL builds, file previews and annotations display accurately in alerts and pull requests, giving you consistent, reliable visibility into scan results.
+Now, when using the `sourcesFolder` variable in CodeQL builds, file previews and annotations display accurately in alerts and pull requests, giving you consistent, reliable visibility into scan results.

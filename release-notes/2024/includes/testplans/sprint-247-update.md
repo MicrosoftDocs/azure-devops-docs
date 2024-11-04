@@ -1,11 +1,11 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/1/2024
+ms.date: 11/4/2024
 ms.topic: include
 ---
 
-### New Release: Azure Test Runner Public Version 1.2.2
+### Azure Test Runner version 1.2.2
 
 Azure Test Plans released a fix in 1.2.2 for a recent issue in Test Plans where Azure Test Runner(ATR) experienced launch failures in Chrome version 130. This issue arose due to Chrome’s [added support for non-special scheme URLs](https://docs.google.com/document/d/1LjxHl32fE4tCKugrK_PIso7mfXQVEeoD1wSnX2y0ZU8/edit?resourcekey=0-d1gP4X2sG7GPl9mlTeptIA&tab=t.0#heading=h.voahsyj6c2dh), which impacted the ATR user flow. With this update, the regression bug is resolved, and ATR functionality is restored. For more details about this regression bug, visit [this issue tracker](https://issues.chromium.org/issues/375228139) in Chromium.
 
