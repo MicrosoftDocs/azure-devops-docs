@@ -26,12 +26,4 @@ Manual testers often encounter challenges with losing progress on test cases if 
 
 ### New release version for test and feedback extensions (TFE)
 
-We’re excited to announce the release of TFE version 1.0.247.0, now available for both Chrome and Edge. 
-
-**What’s New:**
-
-* Fix for Stakeholder Mode: We have resolved the issue with Stakeholder Mode, which previously experienced disruptions.
-
-New Release: Test and Feedback Extension 1.0.247.0
-
-We’re thrilled to announce the release of TFE version 1.0.247.0, now available on both Chrome and Edge. This update brings a key improvement: a fix for Stakeholder Mode, addressing and resolving previous disruptions. Enjoy a smoother, more reliable experience with this latest version!
+We’re thrilled to announce the release of TFE version 1.0.247.0, now available on both Chrome and Edge. This update brings a key improvement: a fix for Stakeholder Mode, addressing and resolving previous disruptions. Enjoy a smoother, more reliable experience with this latest version! 
