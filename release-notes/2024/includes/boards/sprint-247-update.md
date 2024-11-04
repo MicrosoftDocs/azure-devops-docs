@@ -1,12 +1,10 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 10/31/2024
+ms.date: 11/4/2024
 ms.topic: include
 ---
 
-### New REST API Limit on Work Item Comments
+### New REST API limit on work item comments
 
-As a security improvement, we’ve introduced a new limit on the number of comments that can be added to work items via the REST API. Now, each work item can have a maximum of one thousand comments when added through the API. This limit applies exclusively to the REST API; users accessing the web interface can continue to add comments manually, even if the total exceeds one thousand.
-
-
+To enhance security, a new limit has been set on the number of comments that can be added to work items through the REST API. Each work item now supports a maximum of 1,000 comments via the API. This restriction applies solely to the REST API, and users can still manually add comments through the web interface, even beyond the 1,000-comment threshold.

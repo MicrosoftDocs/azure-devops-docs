@@ -1,9 +1,10 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 10/31/2024
+ms.date: 11/4/2024
 ms.topic: include
 ---
 
-- [macOS-15 Sequia is available in preview](#macos-15-sequia-is-available-in-preview)
-- [Newly created Azure Service Connections create App registrations with new naming convention](#newly-created-azure-service-connections-create-app-registrations-with-new-naming-convention)
+- [macOS-15 Sequoia is available in preview](#macos-15-sequoia-is-available-in-preview)
+- [Improvements to service connection App registration attribution](#improvements-to-service-connection-app-registration-attribution)
+- [Azure Pipelines tasks use Node 20](#azure-pipelines-tasks-use-node-20)

@@ -1,9 +1,11 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 10/31/2024
+ms.date: 11/4/2024
 ms.topic: include
 ---
-    
+ 
+- [Azure Test Runner Version 1.2.2](#azure-test-runner-version-122)
+- [New sorting capabilities in Test Plans directory](#new-sorting-capabilities-in-test-plans-directory) 
 - [Auto Pause for Test Case Run](#auto-pause-for-test-case-run)
-- [New release version for TFE](#new-release-version-for-tfe)
+- [New release version for test and feedback extensions (TFE)](#new-release-version-for-test-and-feedback-extensions-tfe)
