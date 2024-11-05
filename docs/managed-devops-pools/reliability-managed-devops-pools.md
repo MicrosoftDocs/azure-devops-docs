@@ -1,7 +1,7 @@
 ---
 title: Reliability in Managed DevOps Pools
 description: Learn about reliability and disaster recovery options with Managed DevOps Pools.
-ms.date: 10/16/2024
+ms.date: 11/05/2024
 ms.topic: reliability-article
 #Customer intent: As a developer, I want to understand reliability support for Managed DevOps Pools so that I can respond to and/or avoid failures in order to minimize downtime and data loss.
 ---
