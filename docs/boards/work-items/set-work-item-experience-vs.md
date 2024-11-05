@@ -46,4 +46,4 @@ Visual Studio 2019 now includes a new Git tool that provides an improved experie
 
 ## Related articles
 
-- [Manage work items](manage-work-items.md)
+- [Manage work items](../backlogs/manage-work-items.md)

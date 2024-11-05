@@ -70,7 +70,7 @@ For more information, see [View and add work items](../work-items/view-add-work-
 
 ## Link Work Items
 
-Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to you work item. For more information, see [Link work items to objects](add-links.md).
+Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to you work item. For more information, see [Link work items to objects](add-link.md).
 
 
 ::: moniker range="azure-devops"
@@ -130,7 +130,7 @@ Once you add an attachment, you can hover over the work item to access the **mor
 
 ::: moniker range="< azure-devops"
 
-:::image type="content" source="media/manage-work-items/attachments-tab-server.png" alt-text="Screenshot showing highlighted Attachments button in work item." :::
+:::image type="content" source="media/manage-work-items/attachments-tab-server.png" alt-text="Screenshot of highlighted Attachments button in work item." :::
 
 You can choose a list or grid view of attachments. The grid view provides a thumbnail preview of the attachment.   
 
@@ -150,7 +150,7 @@ Once you add an attachment, you can hover over the work item to access the **mor
 
 1. From your work item, select the **Attachments** tab > **Add attachment**.
    
-   :::image type="content" source="../backlogs/media/add-attachment.png" alt-text="Screenshot showing highlighted Attachments button in work item.":::
+   :::image type="content" source="../backlogs/media/add-attachment.png" alt-text="Screenshot showing highlighted Attachments button.":::
 
 2. Select the file, select **Open**, and then **Save**. 
 

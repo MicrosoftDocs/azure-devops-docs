@@ -334,7 +334,7 @@ Use the following three controls to manage your views in the web portal.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Manage work items](../work-items/manage-work-items.md)
+> [Manage work items](../backlogs/manage-work-items.md)
 
 ## Related articles
 
