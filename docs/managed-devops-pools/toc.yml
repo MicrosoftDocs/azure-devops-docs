@@ -34,6 +34,8 @@
     href: view-agents.md
   - name: Demands
     href: demands.md
+  - name: Reliability
+    href: reliability-managed-devops-pools.md
 - name: Monitor and troubleshoot
   items:
   - name: Monitor
