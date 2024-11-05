@@ -56,7 +56,7 @@
     - name: Supported ecosystems and build configurations
       href: security/github-advanced-security-dependency-scanning-ecosystems.md
     - name: Troubleshoot dependency scanning
-      href: security/github-advanced-security-dependency-scanning-ecosystems-troubleshoot.md
+      href: security/github-advanced-security-dependency-scanning-troubleshoot.md
   - name: Code Scanning for GitHub Advanced Security
     items:
     - name: Configure code scanning
