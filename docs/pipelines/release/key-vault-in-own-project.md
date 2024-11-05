@@ -28,38 +28,23 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 - Your own repository. [Create a new Git repo](../../repos/git/create-new-repo.md) if you don't already have one.
 - An Azure subscription. [Create a free Azure account](https://azure.microsoft.com/free) if you don't already have one.
 
-## Create an Azure Key Vault
-
-> [!NOTE]
-> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
+## Create a Key Vault
 
 ### [Azure portal](#tab/portal/)
 
-1. Navigate to [Azure portal](https://portal.azure.com/).
+1. Sign in to the [Azure portal](https://portal.azure.com/), and then select **Create a resource**.
 
-1. Select **Create a resource** in the left navigation pane.
+1. Under **Key Vault**, select **Create** to create a new Azure Key Vault.
 
-    :::image type="content" source="media/create-resource-pane.png" alt-text="A screenshot showing how to create a new resource in Azure portal.":::
+1. Select your **Subscription** from the dropdown menu, and then select an existing **Resource group** or create a new one. Enter a **Key vault name**, select a **Region**, choose a **Pricing tier**, and select **Next** if you want to configure additional properties. Otherwise, select **Review + create** to keep the default settings.
 
-1. Search for **Key Vault** and then press Enter.
-    
-    :::image type="content" source="media/search-resources.png" alt-text="A screenshot showing how to search for Azure Key Vault in Azure portal.":::
-
-1. Select **Create** to create a new Azure Key Vault.
-
-    :::image type="content" source="media/create-key-vault.png" alt-text="A screenshot showing how to create a new Azure Key Vault in Azure portal.":::
-
-1. Select your **Subscription** and then add a new **Resource group**. Enter a **Key vault name** and select a **Region** and a **Pricing tier**. Select **Review + create** when you're done.
-
-    :::image type="content" source="media/create-key-vault-window.png" alt-text="A screenshot showing the steps to create a new key vault in Azure portal.":::
-
-1. Select **Go to resource** when the deployment of your new resource is completed.
+1. Once the deployment is complete, select **Go to resource**.
 
     :::image type="content" source="media/go-to-resources.png" alt-text="A screenshot showing how to navigate to your resource in Azure portal.":::
 
 ### [Azure CLI](#tab/cli/)
 
-1. First we need to set our default region and Azure subscription.
+1. First, set your default region and Azure subscription:
 
     - Set default subscription:
     
@@ -73,13 +58,13 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
     az config set defaults.location=<your_region>
     ```
 
-1. Create a new resource group to host your Azure Key Vault. A resource group is a container that holds related resources for an Azure solution.
+1. Create a new resource group to host your Azure Key Vault. A resource group is a container that holds related resources for an Azure solution:
 
     ```azurecli
     az group create --name <your-resource-group>
     ```
    
-1. Create a new Azure Key Vault.
+1. Create a new Azure Key Vault:
 
     ```azurecli
     az keyvault create \
@@ -87,6 +72,8 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
       --resource-group <your-resource-group>
     ```
 ---
+
+# [Service Principal](#tab/serviceprincipal)
 
 ## Create a service principal
 
@@ -158,6 +145,8 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 1. Select **Verify and save** when you're done.
 
     :::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
+
+---
 
 ## Query and use secrets in your pipeline
 
