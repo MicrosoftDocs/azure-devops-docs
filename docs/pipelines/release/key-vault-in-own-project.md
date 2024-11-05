@@ -73,6 +73,81 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
     ```
 ---
 
+## Set up authentication
+
+# [Managed Identity](#tab/managedidentity)
+
+## Create a user-assigned managed identity
+
+1. Sign in to the [Azure portal](https://portal.azure.com/), then search for the **Managed Identities** service in the search bar.
+
+1. Select Create, and fill out the required fields as follows:
+
+    - **Subscription**: Select your subscription from the dropdown menu.
+    - **Resource group**: Select an existing resource group or create a new one.
+    - **Region**: Select a region from the dropdown menu.
+    - **Name**: Enter a name for your user-assigned managed identity.
+
+1. Select **Review + create** when you're done.
+
+1. Once the deployment is complete, select **Go to resource**, then copy the **Subscription** and **Client ID** values to use in upcoming steps.
+
+1. Navigate to **Settings** > **Properties**, and copy your managed identity's **Tenant ID** value for later use.
+
+## Set up key vault access policies
+
+1. Navigate to [Azure portal](https://portal.azure.com/), and use the search bar to find the key vault you created earlier.
+
+1. Select **Access policies**, then select **Create** to add a new policy.
+
+1. Under **Secret permissions**, select **Get** and **List** checkboxes.
+
+1. Select **Next**, then paste the **Client ID** of the managed identity you created earlier into the search bar. Select your managed identity.
+
+1. Select **Next**, then **Next** once more.
+
+1. Review your new policies, and then select **Create** when you're done.
+
+## Create a service connection
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections**, and then select **New service connection** to create a new service connection.
+
+1. Select **Azure Resource Manager**, then select **Next**.
+
+1. For **Identity Type**, select **Managed identity** from the dropdown menu.
+
+1. For **Step 1: Managed identity details**, fill out the fields as follows:
+
+    - **Subscription for managed identity**: Select the subscription containing your managed identity.
+
+    - **Resource group for managed identity**: Select the resource group hosting your managed identity.
+
+    - **Managed Identity**: Select your managed identity from the dropdown menu.
+
+1. For **Step 2: Azure Scope**, fill out the fields as follows:
+
+    - **Scope level for service connection**: Select Subscription.
+
+    - **Subscription for service connection**: Select the subscription your managed identity will access.
+
+    - **Resource group for Service connection**: (Optional) Specify to limit managed identity access to one resource group.
+
+1. For **Step 3: Service connection details**:
+
+    - **Service connection name**: Provide a name for your service connection.
+
+    - **Service Management Reference**: (Optional) Context information from an ITSM database.
+
+    - **Description**: (Optional) Add a description.
+
+1. In **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+
+1. Select **Save** to validate and create the service connection.
+
+    :::image type="content" border="false" source="media/managed-identity-service-connection.png" alt-text="A screenshot displaying how to create a managed identity ARM service connection." lightbox="media/managed-identity-service-connection.png":::
+
 # [Service Principal](#tab/serviceprincipal)
 
 ## Create a service principal
