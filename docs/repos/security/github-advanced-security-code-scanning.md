@@ -178,4 +178,4 @@ To dismiss pull request alerts, you must navigate to the alert detail view to cl
 To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab.
 
 > [!TIP]
-> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference.
+> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
