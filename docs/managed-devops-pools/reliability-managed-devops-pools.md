@@ -10,7 +10,7 @@ ms.topic: reliability-article
 
 This article describes reliability support in Managed DevOps Pools, and covers [cross-region disaster recovery](#cross-region-disaster-recovery).
 
-## Availibility zones
+## Availability zones
 
 Managed DevOps Pools does not support availability zones at this time.
 
@@ -24,7 +24,7 @@ Managed DevOps Pools instances don't automatically replicate or switch from a fa
 
 ### Plan for disaster recovery
 
-Document the configuration of your Mananged DevOps Pools so that you can recreate them in the even of an outage. This includes the following resources that Managed DevOps Pools depends on:
+Document the configuration of your Managed DevOps Pools so that you can recreate them in the even of an outage. This includes the following resources that Managed DevOps Pools depends on:
 
 - The resource group for the replacement pool
 - The dev center and dev center project for the replacement pool
