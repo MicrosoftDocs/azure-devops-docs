@@ -115,7 +115,7 @@ Use the Collapse/Expand button to show or hide the attachments.
 
 To toggle between the list and grid view of attachments, select the **List** or **Grid** icon.
 
-:::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-services" alt-text="Screenshot showing list and grid view buttons." :::
+:::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-services.png" alt-text="Screenshot showing list and grid view buttons." :::
 
 Once you add an attachment, you can hover over the work item to access the **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false":::  menu. The more actions menu allows you to:
 
@@ -134,7 +134,7 @@ Once you add an attachment, you can hover over the work item to access the **mor
 
 You can choose a list or grid view of attachments. The grid view provides a thumbnail preview of the attachment.   
 
-:::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-server" alt-text="Screenshot showing list and grid view buttons." :::
+:::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-server.png" alt-text="Screenshot showing list and grid view buttons." :::
 
 Once you add an attachment, you can hover over the work item to access the **more actions** :::image type="icon" source="../media/icons/more-actions-horizontal.png" border="false":::  menu. The more actions menu allows you to:
 
