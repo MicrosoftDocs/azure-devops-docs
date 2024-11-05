@@ -151,6 +151,7 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
 
 1. Select **Save** to validate and create the service connection.
 
+    :::image type="content" border="false" source="media/managed-identity-service-connection.png" alt-text="A screenshot displaying how to create a managed identity ARM service connection." lightbox="media/managed-identity-service-connection.png":::
 
 # [Service Principal](#tab/serviceprincipal)
 
