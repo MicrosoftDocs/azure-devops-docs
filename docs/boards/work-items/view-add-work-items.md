@@ -27,6 +27,7 @@ This article shows how to add any type of work item. However, use the backlog or
 To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
 
 You can add work items in the following ways:
+
 - [Add work items from the Work items page](#add-a-work-item-from-the-work-items-page)
 - [Add work items from a Boards, Backlogs, or Sprints page](#add-a-work-item-from-a-boards-backlogs-or-sprints-page)
 - [Add work items using the Azure DevOps CLI](#add-a-work-item-from-a-boards-backlogs-or-sprints-page)
