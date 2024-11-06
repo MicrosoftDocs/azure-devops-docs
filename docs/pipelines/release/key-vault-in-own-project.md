@@ -201,7 +201,7 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
 1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
-1. Leave this open, as you will come back to it to verify and save once you 1/ create the federated credential in Azure and 2/ grant permissions
+1. Leave this open, as you will come back to it to verify and save once you 1/ create the federated credential in Azure and 2/ grant **Read** access to your service principal at the subscription level.
 
     :::image type="content" border="false" source="media/service-principal-federated-credential-service-connection.png" alt-text="A screenshot displaying how to create an ARM service connection using App registration." lightbox="media/service-principal-federated-credential-service-connection.png":::
 
@@ -241,27 +241,15 @@ Before you can verify the connection, you need to grant the service principal **
 
 1. Once the role assignment is added. go back to your service connection (in Azure DevOps) and select **Verify and Save** to save your service connection.
 
-## Configure Key Vault access permissions
+## Configure Key Vault access policies
 
-1. Navigate to [Azure portal](https://portal.azure.com/).
+1. Navigate to [Azure portal](https://portal.azure.com/), find the key vault you created earlier, and then select **Access policies**.
 
-1. Select the key vault you created in the previous step.
+1. Select **Create**, and then under **Secret permissions** add the **Get** and **List** permissions, and then select **Next**.
 
-1. Select **Access policies**.
+1. Under **Principal**, paste your service principal's *Object ID*, select it and then select **Next**.
 
-    :::image type="content" source="media/access-policies.png" alt-text="A screenshot showing how to navigate to your key vault access policies in Azure portal.":::
-
-1. Select **Add Access Policy** to add a new policy.
-
-1. Add a **Get** and **List** to **Secret permissions**.
-
-    :::image type="content" source="media/get-list-permissions.png" alt-text="A screenshot showing how to add get and list permissions to your key vault in Azure portal.":::
-
-1. Under **Select principal**, select to add a service principal and choose the one you created earlier.
-
-1. Select **Save** when you're done.
-
-
+1. Select **Next** once more, review your settings, and then select **Save** when you're done.
 
 ---
 
@@ -276,27 +264,14 @@ pool:
 steps:
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription: 'repo-kv-demo'                    ## YOUR_SERVICE_CONNECTION_NAME
-    KeyVaultName: 'kv-demo-repo'                         ## YOUR_KEY_VAULT_NAME
-    SecretsFilter: 'secretDemo'                          ## YOUR_SECRET_NAME. Default value: *
-    RunAsPreJob: false                                   ## Make the secret(s) available to the whole job
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'run'
-    projects: '**/*.csproj'
-  env:
-    mySecret: $(secretDemo)
+    azureSubscription: 'SERVICE_CONNECTION_NAME'
+    KeyVaultName: 'KEY_VAULT_NAME'
+    SecretsFilter: '*'
 
 - bash: |
     echo "Secret Found! $MY_MAPPED_ENV_VAR"        
   env:
-    MY_MAPPED_ENV_VAR: $(mySecret)
+    MY_MAPPED_ENV_VAR: $(SECRET_NAME)
 ```
 
 The output from the last bash command should look like this:
