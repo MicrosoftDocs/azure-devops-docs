@@ -119,7 +119,7 @@ If you choose to run custom CodeQL queries, there isn't by default a separate fi
 
 [![Screenshot of code scanning alerts for a repository.](./media/code-scanning-alerts.png)](./media/code-scanning-alerts.png#lightbox) 
 
-If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task does not fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
+If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task doesn't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
 ### Alert details 
 
@@ -165,17 +165,17 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Managing code scanning alerts on pull requests 
 
-If alerts are created for new code changes in a pull request, the alert will be reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
+If alerts are created for new code changes in a pull request, the alert is reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab. There is a new branch picker entry for the pull request branch. 
 
 You can review the affected lines of code, see a summary of the finding, and resolve the annotation in the Overview section.
 
 [![Screenshot of active code pull request annotation.](./media/pull-request-annotation-code-scanning.png)](./media/pull-request-annotation-code-scanning.png#lightbox)
 
-To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
+To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but doesn't close or fix the underlying alert. 
 
 [![Screenshot of closed code pull request annotation.](./media/pull-request-annotation-code-scanning-closed.png)](./media/pull-request-annotation-code-scanning-closed.png#lightbox)
 
-To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab.
+To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation directs you to the alert detail view in the Advanced Security tab.
 
 > [!TIP]
 > Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
