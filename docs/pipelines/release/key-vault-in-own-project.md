@@ -154,9 +154,7 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-tutorial-1) in Azure, enabling us to query our Azure Key Vault from Azure Pipelines.
 
-1. Navigate to [Azure portal](https://portal.azure.com/).
-
-1. From the menu bar, select the **>_** icon to open the **Cloud Shell**.
+1. Navigate to [Azure portal](https://portal.azure.com/), then select the **>_** icon from the menu bar to open the **Cloud Shell**.
 
 1. Select **PowerShell** or leave it as **Bash** based on your preference.
 
@@ -170,12 +168,71 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
     ```json
     {
-      "appId": "p951q3e2-8e5r-z697-e9q52aviu8a2",
+      "appId": "xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "displayName": "MyServicePrincipal",
       "password": "***********************************",
-      "tenant": "85wes2u6-63sh-95zx-2as3-qw58wex269df"
+      "tenant": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx"
     }
     ```
+
+## Create a service connection
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings**, and then select **Service connections**.
+
+1. Select **New service connection**, select **Azure Resource Manager**, and then select **Next**.
+
+1. Select **Service principal (manual)**, and then select **Next**.
+
+1. For **Identity Type**, select **App registration or managed identity (manual)** from the dropdown menu.
+
+1. For *Credential**, select **Workload identity federation**.
+
+1. Provide a name for your service connection, and then select **Next**.
+
+1. Copy the **Issuer** and the **Subject identifier** as we will need it in the next step.
+
+1. Select **Azure Cloud** for **Environment**, and **Subscription** for the **Subscription scope**.
+
+1. Enter your Azure **Subscription ID** and **Subscription name**.
+
+1. For **Authentication**, paste your service principal's **Application (client) ID** and **Directory (tenant) ID**
+
+1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+
+1. Select **Verify and Save** when you're done.
+
+    :::image type="content" border="false" source="media/managed-identity-service-connection.png" alt-text="A screenshot displaying how to create an ARM service connection using App registration or managed identity (manual)." lightbox="media/managed-identity-service-connection.png":::
+
+
+
+
+
+
+
+1. Select **Subscription** for the **Scope Level**, and fill in the required fields with information from the previously created service principal. Select **Verify** when you're done: 
+
+    - **Service Principal Id**: Your service principal **appId**.
+    - **Service Principal key**: Your service principal **password**.
+    - **Tenant ID**: Your service principal **tenant**.
+
+1. Provide a name for your service connection, and make sure you check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Verify and save** when you're done.
+
+    :::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
+
+
+## Create a workload identity federation
+
+1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's ClientID in the search bar, and then select your *Application*.
+
+1. Under **Manage**, select **Cetificates & secrets** > **Federated credentials**.
+
+1. Select **Add credential**, and then select **Other issuer** for the **Federated credential scenario**.
+
+1. 
 
 ## Configure Key Vault access permissions
 
@@ -197,29 +254,7 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
 1. Select **Save** when you're done.
 
-## Create a new service connection
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings**, and then select **Service connections**.
-
-1. If you're setting up a service connection for the first time in your project, select **Create service connection**. If you've made service connections before, select **New service connection**.
-
-1. Select **Azure Resource Manager**, and then select **Next**.
-
-1. Select **Service principal (manual)**, and then select **Next**.
-
-1. Select **Subscription** for the **Scope Level**, and fill in the required fields with information from the previously created service principal. Select **Verify** when you're done: 
-
-    - **Service Principal Id**: Your service principal **appId**.
-    - **Service Principal key**: Your service principal **password**.
-    - **Tenant ID**: Your service principal **tenant**.
-
-1. Provide a name for your service connection, and make sure you check the **Grant access permission to all pipelines** checkbox.
-
-1. Select **Verify and save** when you're done.
-
-    :::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
 
 ---
 
