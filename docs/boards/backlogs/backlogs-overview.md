@@ -17,7 +17,7 @@ ms.date: 10/16/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With *backlogs*, you can plan your project by adding user stories or requirements to your product backlog. When you have your plan in place, you can start driving code development efforts.
+With *backlogs*, you can plan your project by adding user stories or requirements to your product backlog. With your plan in place, you can start driving code development efforts.
 
 If you're a project administrator, see [Configure and customize Azure Boards](../configure-customize.md), which shows you how to define area and iteration paths and customize your work item types. When you create a project or add a team, Azure Boards automatically creates a backlog. Each team has access to their own product, portfolio, and sprint backlogs. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools).
 
@@ -57,15 +57,11 @@ Use backlogs to do the following tasks:
 
 ## Product and portfolio backlogs
 
-Backlogs present work items as lists. A *product backlog* represents r project plan, the roadmap for what r team plans to deliver. It also provides a repository of all the information  need to track and share with r team.
+Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information  need to track and share with your team.
 
-In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* allows  to group and organize your backlog into a hierarchy. You can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
-
-::: moniker range=">= azure-devops-2019"
+In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* lets you group and organize your backlog into a hierarchy. You can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
 
 :::image type="content" source="../work-items/media/about-agile/view-backlogs.png" alt-text="Screenshot of Boards Backlogs.":::  
-
-::: moniker-end
 
 ## Backlog configuration
 
@@ -86,9 +82,7 @@ For more information, see the following articles:
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
 
-::: moniker range=">= azure-devops-2019"
 [!INCLUDE [tip configure backlog view](../includes/tip-configure-backlog-view.md)]
-::: moniker-end
 
 ### Common backlog configurations for multiple teams
 
@@ -220,7 +214,7 @@ For more information about hierarchical team and backlog structures, see [Manage
 
 All backlogs and boards support dragging to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You might need to refresh the page to view the changes.
 
-You can only use dragging to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered or reparented because another team owns it.  
+You can only use dragging to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items might appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered or reparented because another team owns it.  
 
 :::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
@@ -228,7 +222,7 @@ You can only use dragging to reorder or reparent work items assigned to area pat
 
 ## Display leaf node work items
 
-For TFS 2018 and earlier versions, the board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the *leaf node*.
+Sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the *leaf node*.
 
 [!INCLUDE [describe leaf node](../includes/display-leaf-nodes.md)]  
 
@@ -279,8 +273,6 @@ For more information about using each of these controls, see [Configure your bac
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       :::image type="icon" source="../../media/icons/backlogs.png" border="false":::
@@ -291,7 +283,6 @@ For more information about using each of these controls, see [Configure your bac
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)
 :::row-end:::
-::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
@@ -327,7 +318,6 @@ For more information about using each of these controls, see [Configure your bac
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       :::image type="icon" source="../media/icons/filter-icon.png":::  
@@ -361,8 +351,6 @@ For more information about using each of these controls, see [Configure your bac
       Enter or exit full screen mode
    :::column-end:::
 :::row-end:::
-::: moniker-end
-
 :::row:::
    :::column span="":::
       :::image type="icon" source="../media/icons/expand_icon.png"::: / :::image type="icon" source="../media/icons/collapse_icon.png":::
@@ -374,7 +362,6 @@ For more information about using each of these controls, see [Configure your bac
       Expand or collapse one level of the tree hierarchy
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       :::image type="icon" source="../../media/icons/actions-icon.png":::
@@ -388,11 +375,10 @@ For more information about using each of these controls, see [Configure your bac
       - [Send email](../work-items/email-work-items.md)
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ---
 
 > [!NOTE]
-> Even if you have show parents turned on, the **Create Query** and **Email** :::image type="icon" source="../media/icons/mail_icon.png"::: controls only list items at the currently selected level.
+> Even if you have the "Show Parents" option turned on, the **Create Query** and **Email** :::image type="icon" source="../media/icons/mail_icon.png"::: controls only list items at the currently selected level.
 
 ## Permissions and access
 
@@ -406,13 +392,14 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 ## Next steps
 
-If you're just getting started, see [Sign up for Azure Boards](../get-started/index.md).
+> [!div class="nextstepaction"]
+>[Sign up for Azure Boards](../get-started/index.md)
 
 ## Related articles
 
 - [Navigate the web portal](../../project/navigation/index.md)
-- [About Kanban boards](../boards/kanban-overview.md)  
-- [About work items](../work-items/about-work-items.md)  
-- [What is Agile?](/devops/plan/what-is-agile)
-- [What is Agile development?](/devops/plan/what-is-agile-development)  
-- [Agile culture](/devops/plan/adopting-agile)
+- [Learn about Kanban boards](../boards/kanban-overview.md)
+- [Understand work items](../work-items/about-work-items.md)
+- [Discover what Agile is](https://devops/plan/what-is-agile)
+- [Explore Agile development](https://devops/plan/what-is-agile-development)
+- [Adopt an Agile culture](https://devops/plan/adopting-agile)
