@@ -565,6 +565,10 @@
     {
       "source_path": "docs/boards/backlogs/add-work-items.md",
       "redirect_url": "/azure/devops/boards/backlogs/manage-work-items"
+    },
+    {
+      "source_path": "docs/repos/security/github-advanced-security-dependency-scanning-ecosystems-troubleshoot.md",
+      "redirect_url": "/azure/devops/repos/security/github-advanced-security-dependency-scanning-troubleshoot"
     }
   ]
 }
