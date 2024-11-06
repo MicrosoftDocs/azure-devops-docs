@@ -157,93 +157,79 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
 
 ## Set up key vault access policies
 
-To access our Azure Key Vault, we need to set up a service principal to grant access to Azure Pipelines. Follow [this guide](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal) to create a service principal with Azure CLI, and then continue with the next steps in this section.
+To access your Azure Key Vault, you must first set up a service principal to grant access to Azure Pipelines:
+
+1. [Create a service principal](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal)
 
 1. Navigate to [Azure portal](https://portal.azure.com/), and then use the search bar to find the key vault you created earlier.
 
-    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
+1. Select **Access policies**, and then select **Create**.
 
-1. Select **Access policies**, and then select **Create** to create a new policy.
+1. Under **Secret permissions**, add the **Get** and **List** permissions, and then select **Next**.
 
-1. Under **Secret permissions**, select **Get** and **List**.
+1. For **Principal**, paste your service principal's *Object ID*, select it, and then select **Next**.
 
-1. Select **Next**, and then select the service principal you created earlier. A service principal is an object that represents an application or service that's requesting access to Azure resources.
-
-1. Select **Next**, and then **Next** once more.
-
-1. Review your policies, and then select **Create** when you're done.
+1. Select **Next** once more, review your policies, and then select **Save** when you're done.
 
 ## Add role assignment
 
-In the next step, we'll create an ARM service connection using service principal. Before we can verify the connection, we need to grant the service principal **Read** access at the subscription level:
+In the next step, you’ll create an ARM service connection for your service principal. Before verifying the connection, you need to: (1) grant the service principal *Read* access at the subscription level, and (2) create a federated credential for your service principal.
 
-1. Navigate to [Azure portal](https://portal.azure.com/)
+The following steps outline how to grant *Read* access at the subscription level:
 
-1. Select **Subscriptions** from the left navigation panel, and then find and select your subscription.
+1. Navigate to [Azure portal](https://portal.azure.com/), select **Subscriptions**, and then find and select your subscription.
 
 1. Select **Access control**, and then select **Add** > **Add role assignment**.
-
-    :::image type="content" border="false" source="media/add-service-principal-role-assignment.png" alt-text="A screenshot showing how to add a new role assignment at the subscription level.":::
 
 1. Select **Reader** under the **Role** tab, and then select **Next**.
 
 1. Select **User, group, or service principal**, and then select **Select members**. 
 
-    :::image type="content" border="false" source="media/azure-add-members-to-role-assignment.png" alt-text="A screenshot showing how to add members to role assignment in Azure.":::
-
-1. Use the search bar to find your service principal, and then select the "+" sign to select it, then click on the **Select** button.
+1. Paste your service principal's Object ID in the search bar, select it, and then **Select**.
  
 1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
 
 ## Create a service connection
 
-::: moniker range=">= azure-devops-2020"
-
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Project settings** > **Service connections**, and then select **New service connection** to create a new service connection.
+1. Select **Project settings**, and then select **Service connections**.
 
-1. Select **Azure Resource Manager**, and then select **Next**.
+1. Select **New service connection**, select **Azure Resource Manager**, and then select **Next**.
 
 1. Select **Service principal (manual)**, and then select **Next**.
 
-1. Select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**, then enter your **Subscription Id** and your **Subscription Name**.
+1. For **Identity Type**, select **App registration or managed identity (manual)** from the dropdown menu.
 
-1. Fill out the following fields with the information you obtained when creating the service principal, and then select **Verify** when you're done: 
+1. For **Credential**, select **Workload identity federation**.
 
-    - **Service Principal Id**: Your service principal **appId**.
-    - **Service Principal key**: Your service principal **password**.
-    - **Tenant ID**: Your service principal **tenant**.
+1. Provide a name for your service connection, and then select **Next**.
 
-1. Once the verification has succeeded, provide a name and description (optional) for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+1. Select **Azure Cloud** for **Environment**, and **Subscription** for the **Subscription scope**.
 
-1. Select **Verify and save** when you're done.
+1. Enter your Azure **Subscription ID** and **Subscription name**.
 
-    :::image type="content" source="media/manual-service-principal-service-connection.png" alt-text="A screenshot showing how to create a new Azure Resource Manager service connection using service principal.":::
+1. For **Authentication**, paste your service principal's **Application (client) ID** and **Directory (tenant) ID**
 
-::: moniker-end
+1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
-::: moniker range="azure-devops-2019"
+1. Leave this window open, you'll return to verify and save your service connection once you've created the federated credential in Azure.
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
+## Create a service principal federated credential
 
-1. Select **Project settings** > **Service connections** > **New service connection** and then select **Azure Resource Manager** to create a new ARM service connection.
+1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's *ClientID* in the search bar, and then select your *Application*.
 
-1. Give your service connection a name, and then select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**.
+1. Under **Manage**, select **Certificates & secrets** > **Federated credentials**.
 
-1. Enter your **Subscription Id** and your **Subscription Name**.
+1. Select **Add credential**, and then for **Federated credential scenario**, select **Other issuer**.
 
-1. Fill out the following fields with the information you obtained when creating the service principal, and then select **Verify connection** when you're done: 
+1. For **Issuer**, paste the *Issuer* you copied from your service connection earlier.
 
-    - **Service Principal client Id**: Your service principal **appId**.
-    - **Service Principal key**: Your service principal **password**.
-    - **Tenant ID**: Your service principal **tenant**.
+1. For **Subject identifier**, paste the *Subject identifier* you copied from your service connection earlier.
 
-1. Check the **Allow all pipelines to use this connection** checkbox, and then select **Ok** when you're done.
+1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
 
-    :::image type="content" source="media/new-service-principal-arm-service-connection-server-2019.png" alt-text="A screenshot showing how to create a new ARM service connection using service principal in Azure DevOps Server 2019.":::
-
-::: moniker-end
+1. Return to your service connection window, select **Verify and Save** to save your service connection.
 
 ---
 
