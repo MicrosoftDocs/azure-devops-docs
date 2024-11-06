@@ -201,19 +201,45 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
 1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
-1. Select **Verify and Save** when you're done.
+1. Leave this open, as you will come back to it to verify and save once you 1/ create the federated credential in Azure and 2/ grant permissions
 
     :::image type="content" border="false" source="media/service-principal-federated-credential-service-connection.png" alt-text="A screenshot displaying how to create an ARM service connection using App registration." lightbox="media/service-principal-federated-credential-service-connection.png":::
 
-## Create a workload identity federation
+## Create a federated credential in Azure
 
 1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's ClientID in the search bar, and then select your *Application*.
 
-1. Under **Manage**, select **Cetificates & secrets** > **Federated credentials**.
+1. Under **Manage**, select **Certificates & secrets** > **Federated credentials**.
 
-1. Select **Add credential**, and then select **Other issuer** for the **Federated credential scenario**.
+1. Select **Add credential**, and then for **Federated credential scenario**, select **Other issuer**.
 
-1. 
+1. For **Issuer**, paste the *Issuer* you copied from your service connection earlier.
+
+1. For **Subject identifier**, paste the *Subject identifier* you copied from your service connection earlier.
+
+1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
+
+    :::image type="content" border="false" source="media/service-principal-federated-credential-in-azure.png" alt-text="A screenshot displaying how to create a federated credential for a service principal in Azure." lightbox="media/service-principal-federated-credential-in-azure.png":::
+
+## Add role assignment to your subscription
+
+Before you can verify the connection, you need to grant the service principal **Read** access at the subscription level:
+
+1. Navigate to [Azure portal](https://portal.azure.com/)
+
+1. Select **Subscriptions** from the left navigation panel, and then find and select your subscription.
+
+1. Select **Access control**, and then select **Add** > **Add role assignment**.
+
+1. Select **Reader** under the **Role** tab, and then select **Next**.
+
+1. Select **User, group, or service principal**, and then select **Select members**. 
+
+1. In the search bar, paste your service principal's *Object ID*, and then select the "+" sign to select it, then click on the **Select** button.
+ 
+1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
+
+1. Once the role assignment is added. go back to your service connection (in Azure DevOps) and select **Verify and Save** to save your service connection.
 
 ## Configure Key Vault access permissions
 
