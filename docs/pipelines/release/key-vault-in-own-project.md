@@ -40,8 +40,6 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 1. Once the deployment is complete, select **Go to resource**.
 
-    :::image type="content" source="media/go-to-resources.png" alt-text="A screenshot showing how to navigate to your resource in Azure portal.":::
-
 ### [Azure CLI](#tab/cli/)
 
 1. First, set your default region and Azure subscription:
@@ -201,13 +199,13 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
 1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
-1. Leave this open, as you will come back to it to verify and save once you 1/ create the federated credential in Azure and 2/ grant **Read** access to your service principal at the subscription level.
+1. Leave this open, you'll return to verify and save once you've (1) created the federated credential in Azure and (2) granted your service principal Read access at the subscription level.
 
     :::image type="content" border="false" source="media/service-principal-federated-credential-service-connection.png" alt-text="A screenshot displaying how to create an ARM service connection using App registration." lightbox="media/service-principal-federated-credential-service-connection.png":::
 
 ## Create a federated credential in Azure
 
-1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's ClientID in the search bar, and then select your *Application*.
+1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's *ClientID* in the search bar, and then select your *Application*.
 
 1. Under **Manage**, select **Certificates & secrets** > **Federated credentials**.
 
@@ -227,19 +225,19 @@ Before you can verify the connection, you need to grant the service principal **
 
 1. Navigate to [Azure portal](https://portal.azure.com/)
 
-1. Select **Subscriptions** from the left navigation panel, and then find and select your subscription.
+1. Under **Azure service**, select **Subscriptions**, and then find and select your subscription.
 
-1. Select **Access control**, and then select **Add** > **Add role assignment**.
+1. Select **Access control (IAM)**, and then select **Add** > **Add role assignment**.
 
 1. Select **Reader** under the **Role** tab, and then select **Next**.
 
 1. Select **User, group, or service principal**, and then select **Select members**. 
 
-1. In the search bar, paste your service principal's *Object ID*, and then select the "+" sign to select it, then click on the **Select** button.
+1. In the search bar, paste your service principal's *Object ID*, select it, then click on the **Select** button.
  
 1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
 
-1. Once the role assignment is added. go back to your service connection (in Azure DevOps) and select **Verify and Save** to save your service connection.
+1. Once the role assignment is added. go back to your service connection (in Azure DevOps) to finally select **Verify and Save** to save your service connection.
 
 ## Configure Key Vault access policies
 
@@ -283,7 +281,7 @@ Secret Found! ***
 > [!NOTE]
 > If you want to query for multiple secrets from your Azure Key Vault, use the `SecretsFilter` argument to pass a comma-separated list of secret names: *'secret1, secret2'*.
 
-## Related articles
+## Related content
 
 - [Manage service connections](../library/service-endpoints.md)
 - [Define variables](../process/variables.md)
