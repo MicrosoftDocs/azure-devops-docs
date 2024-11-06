@@ -66,7 +66,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 ### Visible UI testing using Microsoft-hosted agents
 
-Visible UI Testing in not supported in Microsoft-hosted agents. The test would fail with error message "element not interactable". Microsoft-hosted agents support Headless mode UI Testing.
+Visible UI testing in not supported in Microsoft-hosted agents. The test fails with error message "element not interactable". Microsoft-hosted agents support headless browser testing.
 
 ### Headless mode UI testing using Microsoft-hosted agents
 Microsoft-hosted agents are preconfigured for UI testing and UI tests for web apps. Microsoft-hosted agents are also
