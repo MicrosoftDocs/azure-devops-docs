@@ -20,7 +20,8 @@ You can generate SARIF files using many static analysis security testing tools, 
 
 ## Upload a code scanning analysis with Azure Pipelines
 To use Azure Pipelines to upload a third-party SARIF file to a repository, your pipeline will need to use the [`AdvancedSecurity-Publish`](/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1) task, which is part of the tasks bundled with GitHub Advanced Security for Azure DevOps. The main input parameters to use are:
-- `SarifsInputDirectory`:  configures the directory of SARIF files to be uploaded. The expected directory path is absolute.- `Category`: optionally assigns a category for results in the SARIF file. This enables you to analyze the same commit in multiple ways and review the results using the code scanning views in GitHub. For example, you can analyze using multiple tools, and in mono-repos, you can analyze different slices of the repository based on the subset of changed files.
+- `SarifsInputDirectory`:  configures the directory of SARIF files to be uploaded. The expected directory path is absolute.
+- `Category`: optionally assigns a category for results in the SARIF file. This enables you to analyze the same commit in multiple ways and review the results using the code scanning views in GitHub. For example, you can analyze using multiple tools, and in mono-repos, you can analyze different slices of the repository based on the subset of changed files.
 
 Here is an example of an integration with the [Microsoft Security DevOps task](/azure/defender-for-cloud/azure-devops-extension) owned by the Microsoft Defender for Cloud team: 
 
