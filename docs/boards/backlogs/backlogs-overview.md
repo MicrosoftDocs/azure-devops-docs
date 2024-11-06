@@ -399,7 +399,4 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 - [Navigate the web portal](../../project/navigation/index.md)
 - [Learn about Kanban boards](../boards/kanban-overview.md)
-- [Understand work items](../work-items/about-work-items.md)
-- [Discover what Agile is](https://devops/plan/what-is-agile)
-- [Explore Agile development](https://devops/plan/what-is-agile-development)
-- [Adopt an Agile culture](https://devops/plan/adopting-agile)
+- [Discover what Agile is](/devops/plan/what-is-agile)
