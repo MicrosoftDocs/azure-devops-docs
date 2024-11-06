@@ -203,25 +203,12 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
 1. Select **Verify and Save** when you're done.
 
-    :::image type="content" border="false" source="media/managed-identity-service-connection.png" alt-text="A screenshot displaying how to create an ARM service connection using App registration or managed identity (manual)." lightbox="media/managed-identity-service-connection.png":::
 
 
 
 
 
 
-
-1. Select **Subscription** for the **Scope Level**, and fill in the required fields with information from the previously created service principal. Select **Verify** when you're done: 
-
-    - **Service Principal Id**: Your service principal **appId**.
-    - **Service Principal key**: Your service principal **password**.
-    - **Tenant ID**: Your service principal **tenant**.
-
-1. Provide a name for your service connection, and make sure you check the **Grant access permission to all pipelines** checkbox.
-
-1. Select **Verify and save** when you're done.
-
-    :::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
 
 
 ## Create a workload identity federation
