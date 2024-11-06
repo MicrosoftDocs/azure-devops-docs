@@ -452,7 +452,7 @@ It's recommended to add a comment near the dependency resolution so that anyone 
 ### What if there's no fix available?
 
 When no known fix is available, the following options are available as other methods of remediation until an upgraded component is available: 
-* Stop using the component and remove it from your code - this removal will be detected upon your next build with the dependency scanning task installed 
+* Stop using the component and remove it from your code - this removal is detected upon your next build with the dependency scanning task installed 
 * Contribute a fix to the component itself. If your organization has specific guidelines around open-source contributions, follow those guidelines.
 * Dismissing the alert. However, alerts with no known fix still can pose a security threat to your organization. We recommend that you don't dismiss an alert just because there's no known fix. 
 
@@ -475,7 +475,7 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Managing dependency scanning alerts on pull requests
 
-If alerts are created for new dependency changes in a pull request, the alert will reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
+If alerts are created for new code changes in a pull request, the alert is reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab. There is a new branch picker entry for the pull request branch.
 
 You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
 
@@ -485,7 +485,7 @@ To dismiss pull request alerts, you must navigate to the alert detail view to cl
 
 [![Screenshot of closed dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning-closed.png)](./media/pull-request-annotation-dependency-scanning-closed.png#lightbox)
 
-To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab. 
+To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation directs you to the alert detail view in the Advanced Security tab. 
 
 > [!TIP]
 > Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
