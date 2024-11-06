@@ -104,13 +104,16 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2024 through Octo
 
 ### New articles
 
-- [Configure target branches for pull requests](/azure/devops/repos/git/pull-request-targets)
+We've reorganized our GitHub Advanced Security for Azure DevOps content to make it easier to find troubleshooting and reference information.
+
 - [Using custom queries with CodeQL](/azure/devops/repos/security/github-advanced-security-code-scanning-queries)
 - [Troubleshoot code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning-troubleshoot)
 - [Troubleshooting dependency scanning](/azure/devops/repos/security/github-advanced-security-dependency-scanning-ecosystems-troubleshoot)
 - [Supported package ecosystems](/azure/devops/repos/security/github-advanced-security-dependency-scanning-ecosystems)
 - [Secret scanning patterns](/azure/devops/repos/security/github-advanced-security-secret-scan-patterns)
 - [Troubleshoot secret scanning](/azure/devops/repos/security/github-advanced-security-secret-scanning-troubleshoot)
+
+- [Configure target branches for pull requests](/azure/devops/repos/git/pull-request-targets)
 
 ## Extend
 
