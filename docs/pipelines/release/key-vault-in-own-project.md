@@ -203,13 +203,7 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
 1. Select **Verify and Save** when you're done.
 
-
-
-
-
-
-
-
+    :::image type="content" border="false" source="media/service-principal-federated-credential-service-connection.png" alt-text="A screenshot displaying how to create an ARM service connection using App registration." lightbox="media/service-principal-federated-credential-service-connection.png":::
 
 ## Create a workload identity federation
 
