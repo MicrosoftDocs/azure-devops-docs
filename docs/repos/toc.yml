@@ -63,6 +63,8 @@
       href: security/github-advanced-security-code-scanning.md
     - name: Using custom queries and query packs
       href: security/github-advanced-security-code-scanning-queries.md
+    - name: Integrate third-party code scanning tools
+      href: security/github-advanced-security-code-scanning-third-party.md
     - name: Troubleshoot code scanning
       href: security/github-advanced-security-code-scanning-troubleshoot.md
   - name: Security Overview on GitHub Advanced Security
