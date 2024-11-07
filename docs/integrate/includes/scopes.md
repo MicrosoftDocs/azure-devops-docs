@@ -1,8 +1,8 @@
 | Category | Scope | Name | High-risk | Description | Inherits From |
 | -------- | ----- | ---- | --------- | ----------- | ------------- |
-| **Advanced Security** | `vso.advsec` | AdvancedSecurity (read) |??| Grants the ability to read alerts, result instances, analysis result instances. |
-| | `vso.advsec_write` | AdvancedSecurity (read and write) | ?? |Grants the ability to upload analyses in sarif | `vso.advsec` |
-| | `vso.advsec_manage` | AdvancedSecurity (read, write, and manage) | ?? |Grants the ability to upload analyses in sarif | `vso.advsec_write` |
+| **Advanced Security** | `vso.advsec` | AdvancedSecurity (read) | Yes | Grants the ability to read alerts, result instances, analysis result instances. |
+| | `vso.advsec_write` | AdvancedSecurity (read and write) | Yes |Grants the ability to upload analyses in sarif | `vso.advsec` |
+| | `vso.advsec_manage` | AdvancedSecurity (read, write, and manage) | Yes |Grants the ability to upload analyses in sarif | `vso.advsec_write` |
 | **Agent Pools** | `vso.agentpools` | Agent Pools (read) || Grants the ability to view tasks, pools, queues, agents, and currently running or recently completed jobs for agents. |
 | | `vso.agentpools_manage` | Agent Pools (read, manage) | Yes | Grants the ability to manage pools, queues, and agents. | `vso.agentpools` |
 | | `vso.environment_manage` | Environment (read, manage) | Yes | Grants the ability to manage pools, queues, agents, and environments. | `vso.agentpools_manage` |
@@ -24,8 +24,8 @@
 | | `vso.extension_manage` | Extensions (read and manage) | Yes | Grants the ability to install, uninstall, and perform other administrative actions on installed extensions. | `vso.extension` |
 | | `vso.extension.data` | Extension data (read) || Grants the ability to read data (settings and documents) stored by installed extensions. | `vso.profile` |
 | | `vso.extension.data_write` | Extension data (read and write) || Grants the ability to read and write data (settings and documents) stored by installed extensions. | `vso.extension.data` |
-| **Github Connections** | `vso.githubconnections` | GitHub Connections (read) |??| Grants the ability to read GitHub connections and GitHub repositories data. |
-| | `vso.githubconnections_manage` | GitHub Connections (read and manage) |??| Grants the ability to read and manage GitHub connections and GitHub repositories data | `vso.githubconnections` |
+| **Github Connections** | `vso.githubconnections` | GitHub Connections (read) || Grants the ability to read GitHub connections and GitHub repositories data. |
+| | `vso.githubconnections_manage` | GitHub Connections (read and manage) | Yes | Grants the ability to read and manage GitHub connections and GitHub repositories data | `vso.githubconnections` |
 | **Graph & identity** | `vso.graph` | Graph (read) || Grants the ability to read user, group, scope, and group membership information. |
 | | `vso.graph_manage` | Graph (manage) | Yes | Grants the ability to read user, group, scope and group membership information, and to add users, groups, and manage group memberships. | `vso.graph` |
 | | `vso.identity` | Identity (read) || Grants the ability to read identities and groups. |
@@ -58,8 +58,8 @@
 | | `vso.serviceendpoint_query` | Service Endpoints (read and query) || Grants the ability to read and query service endpoints. | `vso.serviceendpoint` |
 | | `vso.serviceendpoint_manage` | Service Endpoints (read, query and manage) | Yes | Grants the ability to read, query, and manage service endpoints. | `vso.serviceendpoint_query` |
 | **Service Hooks** | `vso.hooks` | Service hooks (read) || Grants the ability to read service hook subscriptions and metadata, including supported events, consumers, and actions. (No longer public.) | `vso.profile` |
-| | `vso.hooks_write` | Service hooks (read and write) |??| Grants the ability to create and update service hook subscriptions and read metadata, including supported events, consumers, and actions. (No longer public.) | `vso.hooks` |
-| | `vso.hooks_interact` | Service hooks (interact) |??| Grants the ability to interact and perform actions on events received via service hooks. (No longer public.) | `vso.profile` |
+| | `vso.hooks_write` | Service hooks (read and write) || Grants the ability to create and update service hook subscriptions and read metadata, including supported events, consumers, and actions. (No longer public.) | `vso.hooks` |
+| | `vso.hooks_interact` | Service hooks (interact) || Grants the ability to interact and perform actions on events received via service hooks. (No longer public.) | `vso.profile` |
 | **Settings** | `vso.settings` | Settings (read) || Grants the ability to read settings. |
 | | `vso.settings_write` | Settings (read and write) || Grants the ability to create and read settings. |
 | **Symbols** | `vso.symbols` | Symbols (read) || Grants the ability to read symbols. | `vso.profile` |
