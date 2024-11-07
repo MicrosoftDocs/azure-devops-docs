@@ -19,7 +19,7 @@ ms.date: 10/31/2024
 
 Work items help you plan and manage your project by tracking different types of work, such as user stories, product backlog items, tasks, test cases, or bugs. Use work items to describe the work to be done, assign tasks, track status, and coordinate efforts within your team.
 
-This article describes the feature that you can use to manage work items in Azure DevOps.
+This article describes the features that you can use to manage work items in Azure DevOps.
 
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
@@ -35,7 +35,7 @@ Once you select the work item you want to update, you can make changes to the wo
 
 # [Visual Studio 2019](#tab/visual-studio)
 
-From the Team Explorer, you can select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
+From the Team Explorer, select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
 
 ### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -56,6 +56,8 @@ az boards work-item update --id <work-item-id> --assigned-to <user-email> --org 
 
 ::: moniker-end
 
+---
+
 ## View and track work items
 
 You can view work items created by you or your team. The **Work items** page offers several personalized pivots and interactive filter functions to streamline listing work items. 
@@ -70,7 +72,7 @@ For more information, see [View and add work items](../work-items/view-add-work-
 
 ## Link Work Items
 
-Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to you work item. For more information, see [Link work items to objects](add-link.md).
+Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to your work items. For more information, see [Link work items to objects](add-link.md).
 
 
 ::: moniker range="azure-devops"
@@ -90,9 +92,9 @@ You can specify the types of changes you want to be notified about. When you sel
 - **Not Subscribed**: Only receive notifications from this work item when you're @mentioned.
 - **Subscribed**: Receive notifications for all changes to this work item.
 - **Custom**: Specify notifications for:
-  - **State Changed**: When the work item changes state.
-  - **Assigned To Changed**: When the work item is assigned to someone else.
-  - **Iteration Changed**: When the iteration path changes.
+  - **State Changed**: When the work item changes state
+  - **Assigned To Changed**: When the work item is assigned to someone else
+  - **Iteration Changed**: When the iteration path changes
 
 Notifications are sent to your preferred email address, which you can [change from your user profile](../../organizations/notifications/change-email-address.md).
 
@@ -294,7 +296,7 @@ There are two ways to customize work item templates:
 1. **Work Item Type**: Customize the work item type used by your project. This customization affects only the work item type. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 1. **Work Item Template**: Create custom work item templates used by your team based on existing work items. Custom work item templates allow you to prepopulate values in commonly used fields. For more information, see, [Use work item templates](work-item-template.md).
 
-With the appropriate organization-level permissions, you can create customized inherited *process templates*. All projects that use the customized process template get the customizations made to that process. You can customize which work item types are included in the process template and customize the work item attributes. For more information, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md).
+With the appropriate organization-level permissions, you can create customized inherited *process templates*. All projects that use the customized process template get the customizations made to that process. You can customize which work item types are included in the process template and customize the work item template form. For more information, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md) and [Customize a process template](../../reference/process-templates/customize-process.md).
 
 
 ## Delete work items
@@ -308,9 +310,11 @@ For more information, see, [Remove, delete, or restore work items](remove-delete
 
 Analytics views provide a powerful way to visualize and analyze your work items. You can use  create custom reports and dashboards to track progress, identify trends, and make data-driven decisions.
 
+For more information, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
+
 ## Best Practices
 
-Work items are an integral part of the development process. You can use work items to track different types of work, such as user stories, product backlog items, tasks, test cases, bugs, and more. There are best practices to help you effectively manage work items for development processes including:
+There are best practices to help you effectively manage work items for development processes including:
 
 - [Agile](../work-items/guidance/agile-process-workflow.md)
 - [Scrum](../work-items/guidance/scrum-process-workflow.md)
