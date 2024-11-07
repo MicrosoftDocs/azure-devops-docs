@@ -116,13 +116,13 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 > [!NOTE]
 > For anonymous users of the public feed, use the original URL (without *~force-auth*) in your *.cargo/config.toml* file, as shown below:
 > 
-```
-[registries]
-<FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
-        
-[source.crates-io]
-replace-with = "<FEED_NAME>"
-```
+>```
+>[registries]
+><FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
+>        
+>[source.crates-io]
+>replace-with = "<FEED_NAME>"
+>```
 >
 
 ::: moniker-end
