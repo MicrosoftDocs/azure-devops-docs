@@ -47,6 +47,8 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 ## Connect to your feed
 
+::: moniker range="azure-devops"
+
 #### [Private feed](#tab/privatefeed/)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -121,6 +123,42 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
         replace-with = "<FEED_NAME>"
         ```
 >
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
+
+1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
+
+1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository:
+
+    - **Project-scoped feed**:
+    
+        ```
+        [registries]
+        <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
+        
+        [source.crates-io]
+        replace-with = "<FEED_NAME>"
+        ```
+
+    - **Collection-scoped feed**:
+    
+        ```
+        [registries]
+        <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<COLLECTION_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
+        
+        [source.crates-io]
+        replace-with = "<FEED_NAME>"
+        ```
+
+::: moniker-end
 
 ## Configure a credential provider
 
