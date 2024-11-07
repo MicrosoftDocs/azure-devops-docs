@@ -404,13 +404,14 @@ Follow the steps below to delete the resources you created:
 
 A: If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
 
-```PowerShell
-$ErrorActionPreference="Stop";
-$Credential = Get-Credential;
-Connect-AzAccount -SubscriptionId <YOUR_SUBSCRIPTION_ID> -Credential $Credential;
-$spn=(Get-AzureRmADServicePrincipal -SPN <YOUR_SERVICE_PRINCIPAL_ID>);
-$spnObjectId=$spn.Id;
-Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
+```azurecli
+az account set --subscription <YOUR_SUBSCRIPTION_ID>
+
+az login
+
+$spnObjectId = az ad sp show --id <YOUR_SERVICE_PRINCIPAL_ID>
+
+az keyvault set-policy --name <YOUR_KEY_VAULT_NAME> --object-id $spnObjectId --secret-permissions get list
 ```
 
 ## Related articles
