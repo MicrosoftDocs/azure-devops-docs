@@ -26,9 +26,11 @@ The `macOS-14` image will still be used when specifying `macOS-latest`. Once `ma
 ### Improvements to service connection App registration attribution
 
 When a service connection targets Azure, it automatically creates an App registration. 
-To find the identity associated with a service connection, you can use the 'Manage App registration' link on the service connection details page. We received feedback that, when browsing App registrations directly in Microsoft Entra ID, it isn't always clear what an App registration is used for. To improve the attribution experience, we made the following changes:
+To find the identity associated with a service connection, you can use the 'Manage App registration' link on the service connection details page. We received feedback that, when browsing App registrations directly in Microsoft Entra ID, it isn't always clear what an App registration is used for. 
 
-#### App registration notes and service management reference
+
+To improve the attribution experience, we made the following changes:
+##### App registration notes and service management reference
 
 Newly created Azure service connections can now include a service management reference in addition to a description:
 
@@ -42,7 +44,7 @@ This information is used to populate App registration metadata that can be found
 
 If a description wasn’t provided during service connection creation, a default note will be added to the App registration.
 
-#### New naming convention for App registrations in Azure service connections
+##### New naming convention for App registrations in Azure service connections
 
 Previously, service connections were named using the format `<azure devops org>-<azure devops project>-<azure subscription id>`, making it challenging to distinguish between App registrations linked to the same Azure subscription. To improve clarity, App registration names will now include the service connection ID, following this format: `<azure devops org>-<azure devops project>-<service connection id>`.
 
