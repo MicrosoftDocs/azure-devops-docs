@@ -91,9 +91,19 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
 
-1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository:
+1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository depending on your scenario. See [Permissions table](../feeds/feed-permissions.md#permissions-table) to learn more about the different roles and their permissions:
 
-    - **Project-scoped feed**:
+    - **Feed Readers and anonymous users**:
+    
+        ```
+        [registries]
+        <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
+        
+        [source.crates-io]
+        replace-with = "<FEED_NAME>"
+        ```
+
+    - **Feed and Upstream Readers, Feed Publishers, and Feed Owners**: Be sure to include the additional flag (*~force-auth*) for proper authentication with your feed, as shown below:
     
         ```
         [registries]
@@ -102,28 +112,6 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
         [source.crates-io]
         replace-with = "<FEED_NAME>"
         ```
-
-    - **Organization-scoped feed**:
-    
-        ```
-        [registries]
-        <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>~force-auth/Cargo/index/" }
-        
-        [source.crates-io]
-        replace-with = "<FEED_NAME>"
-        ```
-
-> [!NOTE]
-> For anonymous users of the public feed, use the original URL (without *~force-auth*) in your *.cargo/config.toml* file, as shown below:
-> 
->```
->[registries]
-><FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
->        
->[source.crates-io]
->replace-with = "<FEED_NAME>"
->```
->
 
 ::: moniker-end
 
