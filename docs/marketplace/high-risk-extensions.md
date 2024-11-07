@@ -19,7 +19,7 @@ For more information about extensions, see the [developing](../extend/overview.m
 
 ## Extensions with too permissive scopes
 
-Extensions that require too permissive scopes to be approved by a Project Collection Administrator are considered high-risk. [Go to this article](../extend/develop/manifest.md) to determine if a particular extension falls into the high-risk category.
+Extensions that require too permissive scopes to be approved by a Project Collection Administrator are considered high-risk. [Go to this article](../extend/develop/manifest.md) to determine if a particular scope falls into the high-risk category.
 
 ![Screenshot showing high-risk extension details.](media/high-risk-extensions/high-risk-extension-details.png)
 
