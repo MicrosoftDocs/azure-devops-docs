@@ -56,7 +56,7 @@ Do the following steps to add and edit your columns:
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select **Boards** > **Boards** > **Configure board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: .
 
-   :::image type="content" source="media/sequence-boards-boards-configure-team-settings.png" alt-text="Screenshot shows selection sequence buttons, Boards, Boards, and Configure board settings.":::
+   :::image type="content" source="media/sequence-boards-boards-configure-board-settings.png" alt-text="Screenshot shows selection sequence buttons, Boards, Boards, and Configure board settings.":::
 
 3. Select **Columns**.
    - To add a column, select **+ Add column**.
