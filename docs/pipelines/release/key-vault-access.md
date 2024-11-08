@@ -59,9 +59,9 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 1. Make sure to copy the output, as we'll use it to create the service connection in the next step.
 
-## Create a service connection
-
 ::: moniker range="azure-devops"
+
+## Create a service connection
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -85,9 +85,32 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 ## Create a federated credential
 
+1. Navigate to [Azure portal](https://portal.azure.com/), enter your service principal's *ClientID* in the search bar, and then select your *Application*.
+
+1. Under **Manage**, select **Certificates & secrets** > **Federated credentials**.
+
+1. Select **Add credential**, and then for **Federated credential scenario**, select **Other issuer**.
+
+1. For **Issuer**, paste the following URL replacing the placeholder with your organization GUID. You can find your organization ID by navigating to **Organization settings** > **Microsoft Entra** > Download the list of Azure DevOps organizations connected to your directory.
+
+    ```
+    https://vstoken.dev.azure.com/<ORGANIZATION_ID>
+    ```
+
+1. For **Subject identifier**, paste the following URL replacing the placeholder with your organization name, project name, and service connection name.
+
+    ```
+    sc://ORGANIZATION_NAME/PROJECT_NAME/SERVICE_CONNECTION_NAME
+    ```
+
+1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
+
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
+
+## Create a service connection
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -104,6 +127,8 @@ Start by creating a new service principal, this will enable you to access Azure 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
+## Create a service connection
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
@@ -139,6 +164,22 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 ## 1 - Map key vault secrets with a variable group
 
+::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines** > **Library**, and then select **+ Variable group**.
+
+1. Name your variable group, and then select the toggle button to enable the **Link secrets from an Azure Key Vault as variable** button.
+
+1. Select the service connection you created earlier from the dropdown menu, select your key vault, and then select **Authorize** to add a *Get* and *List* permissions to your key vault.
+
+1. Under **Variables**, select **Add** to add your secret, then select **Save** when you're done.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Pipelines** > **Library**, and then select **+ Variable group**.
@@ -154,6 +195,8 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
     :::image type="content" source="media/add-role-assignment-secret-user-service-principal.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure Key Vault."::: 
 
 1. Add your secrets and then select **Save** when you're done.
+
+::: moniker-end
 
 ## 2 - Configure inbound access from Azure DevOps
 
