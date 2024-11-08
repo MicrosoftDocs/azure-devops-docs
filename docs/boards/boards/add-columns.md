@@ -60,8 +60,11 @@ Do the following steps to add and edit your columns:
 
 3. Select **Columns**.
    - To add a column, select **+ Add column**.
+   
    :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot shows highlighted Add column button.":::
+   
    - To edit a column, select the column tab. For example, in the following image, we choose to edit the Active column. 
+   
    :::image type="content" source="media/columns/kanban-settings-columns-active-column.png" alt-text="Screenshot that shows the Settings dialog and selection of an Active column.":::
 
 4. Do any of the following tasks for your columns. These tasks link to sections further in this article:
