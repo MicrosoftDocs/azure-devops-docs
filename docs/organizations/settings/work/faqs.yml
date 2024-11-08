@@ -81,7 +81,7 @@ sections:
           To grant a project member permissions, see [Change project-level permissions](../../security/change-project-level-permissions.md).  
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          To modify an On-premises XML process, you need to be a member of the **Project Collection Administrators** group to manage process templates or the **Project Administrators** group to exercise a [**witadmin** commmand](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
+          To modify an On-premises XML process, you need to be a member of the **Project Collection Administrators** group to manage process templates or the **Project Administrators** group to exercise a [**witadmin** command](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
           - [Delete field](../../../reference/add-modify-field.md)
           - [Manage process template](../../../boards/work-items/guidance/manage-process-templates.md)
           To grant a project member permissions, see [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md).  

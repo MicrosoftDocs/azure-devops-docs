@@ -117,7 +117,7 @@ The `uri` property references a page that is rendered within the content area of
 
 ### Showing the dialog
 
-To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
+To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifier of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
 
 ```javascript
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {

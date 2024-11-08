@@ -259,7 +259,7 @@ You can assign an individual test case to a tester.
 2. Add or remove testers from the list. After you select the testers, tick the **Send email**
    checkbox and edit the message as required so they know that tests are ready for them to run.
 
-   ![Screenshot shwoing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
+   ![Screenshot showing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
 
    The email contains a link that testers can open to see the list of assigned tests.
    Testers need [Basic access](../organizations/security/access-levels.md)

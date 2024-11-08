@@ -24,7 +24,7 @@ With the sample in this guide, you learn how to:
 - Execute the pipeline using the Azure DevOps CLI and monitor the run processing and output.
 
 > [!NOTE]
-> This sample demostrates the functionality of Azure DevOps CLI with variable groups. For increased security, [define variables in variables groups in the Pipelines UI](../../library/variable-groups.md) or [link a variable group to secrets in Azure Key Vault](../../library/link-variable-groups-to-key-vaults.md). 
+> This sample demonstrates the functionality of Azure DevOps CLI with variable groups. For increased security, [define variables in variables groups in the Pipelines UI](../../library/variable-groups.md) or [link a variable group to secrets in Azure Key Vault](../../library/link-variable-groups-to-key-vaults.md). 
 
 [!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
