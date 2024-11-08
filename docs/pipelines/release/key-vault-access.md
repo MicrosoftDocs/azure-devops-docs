@@ -105,7 +105,6 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
 
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
@@ -123,6 +122,9 @@ Start by creating a new service principal, this will enable you to access Azure 
 1. Enter your service principal information, and then select **Verify**.
 
 1. After successful verification, name your service connection, add a description, and then check the **Grant access permission to all pipelines** checkbox. Select **Verify and save** when you're done.
+
+> [!TIP]
+> If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
 
 ::: moniker-end
 
@@ -142,10 +144,10 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 1. Check the **Allow all pipelines to use this connection** checkbox, and then select **Ok** when you're done.
 
-::: moniker-end
-
 > [!TIP]
 > If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
+
+::: moniker-end
 
 
 
