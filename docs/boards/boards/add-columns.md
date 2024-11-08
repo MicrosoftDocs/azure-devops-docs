@@ -54,15 +54,14 @@ Column titles and options vary based on the [process](../work-items/guidance/cho
 Do the following steps to add and edit your columns:
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select **Boards** > **Boards** > **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: .
+2. Select **Boards** > **Boards** > **Configure board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: .
 
-   :::image type="content" source="media/sequence-boards-boards-configure-team-settings.png" alt-text="Screenshot shows selection sequence buttons, Boards, Boards, and Configure team settings.":::
+   :::image type="content" source="media/sequence-boards-boards-configure-team-settings.png" alt-text="Screenshot shows selection sequence buttons, Boards, Boards, and Configure board settings.":::
 
 3. Select **Columns**.
    - To add a column, select **+ Add column**.
    :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot shows highlighted Add column button.":::
    - To edit a column, select the column tab. For example, in the following image, we choose to edit the Active column. 
-
    :::image type="content" source="media/columns/kanban-settings-columns-active-column.png" alt-text="Screenshot that shows the Settings dialog and selection of an Active column.":::
 
 4. Do any of the following tasks for your columns. These tasks link to sections further in this article:
@@ -169,12 +168,20 @@ Users can quickly double-check the criteria by choosing the Information tooltip 
 
 ## Delete a column
 
-Deleting a column can help streamline your board and remove unnecessary stages in your workflow. Before you delete a column, ensure it doesn't contain any work items. If it does, move the items to another column. Then, do the following steps:
+Remove a column to help streamline your board and remove unnecessary stages in your workflow. Before you remove a column, ensure it doesn't contain any work items. If it does, move the items to another column. Then, do the following steps:
 
 1. Ensure the column doesn't contain any work items. If it does, move the items to another column.
 2. On the [Configure board settings](#add-and-edit-columns) page, select **Columns** > **Column options menu** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: > **X Remove**.
 
    :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog.":::
+
+## Move a column
+
+Moving a column allows you to reorganize your board to better reflect your team's workflow and priorities. By adjusting the order of columns, you can ensure that the most critical stages are prominently displayed and that the workflow is intuitive for all team members.
+
+To move a column, drag the column tab to the desired position on the board or in the **Column options menu**, select **Move left** or **Move right**.
+
+:::image type="content" source="media/columns/column-options-menu.png" alt-text="Screenshot shows the column options menu in Configure board settings.":::
 
 ## Update status
 
@@ -205,11 +212,6 @@ Drag an item up or down within a column.
 :::image type="content" source="media/ALM_AC_ChangePriorities.png" alt-text="Screenshot that shows moving an item within a column.":::
 
 ## Do more tasks
-
-Select from the following actions, as appropriate:
-   - **Change the column order** by dragging the column tab to the position that you want.
-
-   - 
 
 In the following table, we list tasks and their associated articles, so you can do more with your board. 
 
