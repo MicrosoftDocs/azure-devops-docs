@@ -172,9 +172,33 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 1. Name your variable group, and then select the toggle button to enable the **Link secrets from an Azure Key Vault as variable** button.
 
-1. Select the service connection you created earlier from the dropdown menu, select your key vault, and then select **Authorize** to add a *Get* and *List* permissions to your key vault.
+1. Select the service connection you created earlier, select your key vault, and then select **Authorize**.
 
 1. Under **Variables**, select **Add** to add your secret, then select **Save** when you're done.
+
+Now navigate to your Azure key vault and make sure that (a) your service connection has the *Get* and *list* permissions (b) your service principal has the *Key Vault Secrets User* role.
+
+#### 1.1 Set up key vault access policies
+    
+1. Navigate to your Azure key vault, and then select **Access policies**.
+
+1. Select **Create**, and under **Secret permissions**, add the **Get** and **List** permissions, and then select **Next**.
+
+1. Add your service connection in the search bar, select it, and then select **Next**.
+
+1. Select **Next** once more, review your settings, and then select **Review + create** when you're done.
+
+#### 1.2 Set up key vault access control IAM    
+    
+1. Navigate to your Azure key vault, and then select **Access control (IAM)**.
+
+1. Select **Add** > **Add role assignment** > then select the **Role** tab.
+
+1. Select the **Key Vault Secrets User** role, and then select **Next**.
+
+1. Select **Select members** > add your service principal > **Select**.
+
+1. Select **Review + assign** when you're done.
 
 ::: moniker-end
 
@@ -220,7 +244,7 @@ In this example, we use the variable group, set up earlier and authorized with a
 
 ```yml
 variables:
-  group: mySecret-VG
+-  group: mySecret-VG
 
 steps:
 - task: CmdLine@2
