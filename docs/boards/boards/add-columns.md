@@ -41,7 +41,7 @@ Managing columns on your board is essential for visualizing your team's workflow
    - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)
    - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)
    - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-   - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+   - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
 
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
@@ -65,7 +65,7 @@ Do the following steps to add and edit your columns:
 
    :::image type="content" source="media/columns/kanban-settings-columns-active-column.png" alt-text="Screenshot that shows the Settings dialog and selection of an Active column.":::
 
-4. Do any of the following tasks for your columns:
+4. Do any of the following tasks for your columns. These tasks link to sections further in this article:
    - [Map workflow states to columns](#map-workflow-states-to-columns)
    - [Rename a column](#rename-a-column)
    - [Split columns](#split-columns)
@@ -108,13 +108,9 @@ Do this task whenever you add columns, workflow states, or work item types (WITs
 
 Renaming your column titles to map to your workflow stages helps ensure clarity and alignment within your team. It allows everyone to understand the current status of work items at a glance and ensures that the board accurately reflects your team's workflow.
 
-Rename a column directly from the board.
+Rename a column directly from the board by selecting the column name, shown in the following image. You can also rename a column from the [column edit screen](#add-and-edit-columns).
 
 :::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot showing renaming a column directly on a board.":::
-
-Rename a column from the column edit screen.
-
-:::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot that shows the Settings dialog and selections for adding a Test column.":::Rename your column titles to map to your workflow stages.
 
 ## Split columns
 
@@ -133,9 +129,7 @@ Choose the column tab that you want to split and add a check mark in the box to 
 :::image type="content" source="media/columns/split-columns.png" alt-text="Screenshot of board settings page, Split columns.":::
 
 > [!TIP]    
-> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
-
-::: moniker-end 
+> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).
 
 ### Move items into the *Doing* and *Done* columns 
 
@@ -173,6 +167,15 @@ Users can quickly double-check the criteria by choosing the Information tooltip 
 
 :::image type="content" source="media/columns/definition-of-done-information-tooltip.png" alt-text="Screenshot showing information tooltip of Definition of Done.":::
 
+## Delete a column
+
+Deleting a column can help streamline your board and remove unnecessary stages in your workflow. Before you delete a column, ensure it doesn't contain any work items. If it does, move the items to another column. Then, do the following steps:
+
+1. Ensure the column doesn't contain any work items. If it does, move the items to another column.
+2. On the [Configure board settings](#add-and-edit-columns) page, select **Columns** > **Column options menu** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: > **X Remove**.
+
+   :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog.":::
+
 ## Update status
 
 To update status, drag-and-drop your work items. For example, to signal when work can start in a downstream stage, drag items to the next column. You can move an item from one column to any other column on the board, forward and back. 
@@ -206,12 +209,7 @@ Drag an item up or down within a column.
 Select from the following actions, as appropriate:
    - **Change the column order** by dragging the column tab to the position that you want.
 
-   - **Delete a column** by first making sure that the column doesn't contain any work items. If it does, move the items to another column. Then, do the following steps:
-
-     1. Open **Settings** and select **Columns** > **Column options menu** :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::.
-     2. Select **Remove** from the menu.
-
-     :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog.":::
+   - 
 
 In the following table, we list tasks and their associated articles, so you can do more with your board. 
 
