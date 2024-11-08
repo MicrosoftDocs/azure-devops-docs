@@ -178,9 +178,10 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 1. Under **Variables**, select **Add** to add your secret, then select **Save** when you're done.
 
-Now navigate to your Azure key vault and make sure that (a) your service connection has the *Get* and *list* permissions (b) your service principal has the *Key Vault Secrets User* role.
+> [!NOTE]
+> Make sure that your **service connection** has the *Get* and *list* permissions, and your **service principal** is assigned the *Key Vault Secrets User* role in your private key vault.
 
-#### 1.1 Set up key vault access policies
+#### 1.1 Set up the service connection permissions
     
 1. Navigate to your Azure key vault, and then select **Access policies**.
 
@@ -190,7 +191,7 @@ Now navigate to your Azure key vault and make sure that (a) your service connect
 
 1. Select **Next** once more, review your settings, and then select **Review + create** when you're done.
 
-#### 1.2 Set up key vault access control IAM    
+#### 1.2 Set up the service principal permissions 
     
 1. Navigate to your Azure key vault, and then select **Access control (IAM)**.
 
