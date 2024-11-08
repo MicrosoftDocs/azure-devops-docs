@@ -32,7 +32,7 @@ az boards work-item create --title '<title>' --type '<type>'
 #### Optional parameters
 
 - **area**: Area the work item is assigned to (for example, *Demos*).
-- **assigned-to**: The email ADDRESS of the person the work item is assigned-to (for example, fabrikamfiber-3@fabrikamfiber.com).
+- **assigned-to**: The email address of the person the work item is assigned-to (for example, fabrikamfiber-3@fabrikamfiber.com).
 - **description**: Description of the work item.
 - **discussion**: Comment to add to a discussion in a work item.
 - **fields**: Space separated `field=value` pairs for custom fields you would like to set.
