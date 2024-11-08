@@ -23,7 +23,8 @@ Managing columns on your board is essential for visualizing your team's workflow
 
 > [!NOTE]    
 > - To manage columns on a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). 
-> - To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).   
+> - To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).
+> - To view frequently asked questions about Azure Boards, see [FAQs](../faqs.yml).   
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2019"
@@ -31,7 +32,8 @@ Managing columns on your board is essential for visualizing your team's workflow
 > [!NOTE]    
 > - To add columns to a Taskboard, customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
 > - To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
-> - For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> - To see an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> - To view frequently asked questions about Azure Boards, see [FAQs](../faqs.yml).
 
 ::: moniker-end
 
