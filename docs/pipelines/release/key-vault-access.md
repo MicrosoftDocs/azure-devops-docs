@@ -45,11 +45,11 @@ Azure Pipelines enables developers to link an Azure Key Vault to a variable grou
 
 ## Create a service principal
 
-Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure Key Vault from Azure Pipelines.
+Start by creating a new service principal, this will enable you to access Azure resources. Next, you will need to create a new ARM service connection in Azure DevOps, then set up a federated credential for you service principal in Azure before verifying and saving your service connection in Azure DevOps.
 
 1. Navigate to [Azure portal](https://ms.portal.azure.com/).
 
-1. Open the **Cloud Shell**, and then select **Bash**.
+1. Open the **Cloud Shell** from the menu bar, and then select **Bash**.
 
 1. Run the following command to create a new service principal:
 
@@ -61,7 +61,33 @@ Let's start by creating a new service principal, this will enable us to access A
 
 ## Create a service connection
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections** > **New service connection**.
+
+1. Select **Azure Resource Manager**, and then select **Next**.
+
+1. For **Identity Type**, select **App registration (automatic)** from the dropdown menu.
+
+1. For **Credential**, leave the default recommended value: **Workload identity federation**.
+
+1. For **Scope level**, select **Subscription, and then select your subscription from the dropdown menu.
+
+1. Select a **Resource group** if you want to limit access to the specified resource group only.
+
+1. Provide a name for your service connection, and then select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection.
+
+1. Select **Save** when you're done.
+
+    :::image type="content" source="media/automatic-service-connection-service-principal.png" alt-text="A screenshot displaying how to configure an ARM service connection for a service principal."::: 
+
+## Create a federated credential
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020 || azure-devops-2022"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -95,6 +121,10 @@ Let's start by creating a new service principal, this will enable us to access A
 
 > [!TIP]
 > If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
+
+
+
+
 
 
 ::: zone pivot="access-from-azure-devops"
