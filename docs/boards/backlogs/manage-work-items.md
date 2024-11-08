@@ -35,7 +35,7 @@ Once you select the work item you want to update, you can make changes to the wo
 
 # [Visual Studio 2019](#tab/visual-studio)
 
-From the Team Explorer, select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
+To update a work item.From the Team Explorer, select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
 
 ### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -80,7 +80,7 @@ Add links to work items to show relationships between them and other work items 
 ## Follow a work item
 
 To track the progress of a single work item, select the **Follow** icon 
- :::image type="icon" source="../media/icons/follow-icon.png" border="false":::. This action notifies you when changes are made to the work item.
+ :::image type="icon" source="../media/icons/follow-icon.png" border="false":::. This action send you email alerts when changes are made to the work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Work item form, Follow icon control.](../work-items/media/follow-work/follow-work-item.png) 
