@@ -29,13 +29,13 @@ Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to aut
 ## Available OAuth models
 
 > [!IMPORTANT]
-> When creating a new OAuth 2.0 app, use Microsoft Entra ID OAuth. Azure DevOps OAuth 2.0 is slated for deprecation in 2026. Starting February 2025, we will stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69702).
+> When creating a new OAuth 2.0 app, use Microsoft Entra ID OAuth. Azure DevOps OAuth 2.0 is slated for deprecation in 2026. Starting February 2025, we will stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 <a name='azure-active-directory-oauth'></a>
 
 ### Microsoft Entra ID OAuth
 
-Building on a new platform can be overwhelming. In [this guide to building an Entra app for Azure DevOps](entra-oauth.md), we collect helpful links that might be useful to kicking off the OAuth app development process on Microsoft Entra. For folks migrating from Azure DevOps OAuth to Microsoft Entra OAuth, we provide helpful tips to consider during your migration effort.
+Building on a new platform can be overwhelming. In [this guide to building a Microsoft Entra app for Azure DevOps](entra-oauth.md), we collect helpful links that might be useful to kicking off the OAuth app development process on Microsoft Entra. For folks migrating from Azure DevOps OAuth to Microsoft Entra OAuth, we provide helpful tips to consider during your migration effort.
 
 ### Azure DevOps OAuth
 
@@ -68,5 +68,5 @@ A: No. OAuth is only supported in the REST APIs.
 ## Related articles
 
 * [Choosing the right authentication method](authentication-guidance.md)
-* [Building for Azure DevOps with Entra OAuth apps](entra-oauth.md)
+* [Building for Azure DevOps with Microsoft Entra OAuth apps](entra-oauth.md)
 * [Using Azure DevOps OAuth](azure-devops-oauth.md)

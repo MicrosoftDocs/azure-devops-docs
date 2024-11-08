@@ -160,7 +160,7 @@ You can delete work items in one of the following ways:
 
 1. Confirm you want to delete the items.  
 
-   :::image type="content" source="media/move-change-delete/delete-work-items-dialog.png" alt-text="Screensot of the Confirm delete dialog.":::  
+   :::image type="content" source="media/move-change-delete/delete-work-items-dialog.png" alt-text="Screenshot of the Confirm delete dialog.":::  
 
 ::: moniker-end
 

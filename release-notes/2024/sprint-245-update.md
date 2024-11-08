@@ -56,7 +56,7 @@ Check out the release notes for details.
 ## Next steps
 
 > [!NOTE]
-> These features will roll out over the next two to three weeks.
+>We are rolling out the feature. Receiving it in your organization depends on various factors, and it may arrive later if you don't have it yet.
 
 Head over to Azure DevOps and take a look.
 

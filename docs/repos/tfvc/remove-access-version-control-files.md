@@ -89,7 +89,7 @@ The following procedures provide details for removing a file by using the Visual
    ```
    tf permission /inherit:no myfile.cs
 
-   tf permission /deny:read myfile.cs /group:ADATAUM\Group1 ADATAUM\Group2 myfile.cs
+   tf permission /deny:read myfile.cs /group:ADATUM\Group1 ADATUM\Group2 myfile.cs
    ```
 
 ## Related articles

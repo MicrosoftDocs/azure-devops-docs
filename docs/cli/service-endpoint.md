@@ -27,7 +27,7 @@ With the `az devops service-endpoint` command, you can create and manage differe
 
 For detail command syntax, see [`az devops service-endpoint`](/cli/azure/devops/service-endpoint). For syntax on the REST API for service endpoints, see [Endpoints](/rest/api/azure/devops/serviceendpoint/endpoints).
 
-You can also use azure cli commands to get details, list, delete, and update a service endpoint. See [Index to Azure DevOps CLI examples, Service endpoints or service connections](quick-reference.md#service-endpoints).
+You can also use azure cli commands to get details, list, delete, and update a service endpoint. See [Index to Azure DevOps CLI examples, Service endpoints or service connections](quick-reference.md#service-endpoints-or-service-connections).
 
 To use the web portal to create and edit service connections, see [Manage service connections](../pipelines/library/service-endpoints.md). 
  

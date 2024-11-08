@@ -54,7 +54,7 @@ You can determine the work item types that belong to your Requirements category.
 
 
 Look up your team's Area Path(s) and Iteration Paths. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
-[Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+[Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
 
 <a id="sprint"></a>
 
@@ -62,7 +62,7 @@ Look up your team's Area Path(s) and Iteration Paths. For more information, see 
 
 Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with the Iteration Path you select.  
 
-You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
 
 Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.  
 

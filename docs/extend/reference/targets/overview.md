@@ -19,7 +19,6 @@ ms.date: 10/12/2022
 Extensions enhance the Azure DevOps user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target. For more information about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md).
 
 The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension. Install this extension into your organization. Once it's installed, you see the extensibility points that are available. We recommend you install this extension into a personal or test organization. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available. 
-Also, find a sample of a repository creation extension point [here](https://github.com/microsoft/azure-devops-extension-sample/tree/master/src/Samples/RepositoryActions).
 
 For more information, see the following references:
 - [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/)

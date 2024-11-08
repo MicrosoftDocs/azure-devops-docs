@@ -45,7 +45,7 @@ Enabling continuous deployment trigger will instruct the pipeline to automatical
 
 1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline, then select **Edit**.
 
-   ![edit the release pipelin](media/define-multistage-release-process/open-for-edit.png)
+   ![edit the release pipeline](media/define-multistage-release-process/open-for-edit.png)
 
 1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel. Make sure this is enabled so that a new release is created after every new successful build is completed.
 

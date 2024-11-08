@@ -638,7 +638,7 @@ Review the `Node` elements that you've specified and remove any unsupported attr
 
 `ProjectLifecycle` has been misspelled. 
 ```xml
-        <Node StructureType="ProjectLifecylce" Name="Iteration" xmlns="">
+        <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
             <Node StructureType="ProjectLifecycle" Name="Sprint 1" />
             <Node StructureType="ProjectLifecycle" Name="Sprint 2" />
@@ -672,7 +672,7 @@ Review the `property` elements you've specified and remove any unsupported attri
 The `value` attribute is misspelled. 
 ```xml
        <properties>
-        <property name="MSPROJ" vaule="Classification\Fabrikam_FileMapping.xml" isFile="true" />
+        <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Agile" />
       </properties>
 ```
@@ -1036,7 +1036,7 @@ ProcessConfiguration.xml `RequirementBacklog` element contains a misspelled meta
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
-      <State value="New" type="Propsed" />
+      <State value="New" type="Proposed" />
       <State value="Active" type="InProgress" />
       <State value="Resolved" type="InProgress" />
       <State value="Closed" type="Complete" />
@@ -2071,7 +2071,7 @@ Correct the named tasked in your TestManagement.xml file.
 The `TestResolutionStates` element has been misspelled.   
 ```xml
     <taskXml>
-      <TestResolutionSattes fileName="Test Management\TestResolutionState.xml" />
+      <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
     </taskXml>
 ```
 

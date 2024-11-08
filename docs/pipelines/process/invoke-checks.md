@@ -96,7 +96,7 @@ If your check needs to access non-Pipelines related resources, for example, Boar
 ### Send a decision back to Azure DevOps
 
 Your check implementation must use the [Post Event](/rest/api/azure/devops/distributedtask/events/post-event) REST API call to communicate a decision back to Azure Pipelines. Make sure you specify the following properties:
-- `Headers`: `Basic: {AuthToken}`
+- `Headers`: `Bearer {AuthToken}`
 - `Body`:
 ```json
 {
