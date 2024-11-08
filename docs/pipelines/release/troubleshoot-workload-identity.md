@@ -115,7 +115,7 @@ You can fix the issuer URL by editing and saving the service connection to updat
 
 The next sections identify common issues and describe causes and resolutions.
 
-<a name='i-dont-have-permissions-to-create-a-service-principal-in-the-micrososft-entra-tenant'></a>
+<a name='i-dont-have-permissions-to-create-a-service-principal-in-the-microsoft-entra-tenant'></a>
 
 ### I don't have permissions to create a service principal in the Microsoft Entra tenant
 

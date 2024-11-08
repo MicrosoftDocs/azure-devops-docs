@@ -328,7 +328,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
-Doc-ready Power BI Query (anonomized)
+Doc-ready Power BI Query (anonymized)
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? "
         &"$apply=filter( "

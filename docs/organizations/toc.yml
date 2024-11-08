@@ -29,7 +29,7 @@
     displayName: alternate, password, create, modify, revoke
     href: ./accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json
   - name: SSH public keys
-    displayName: Git, repo, repository, encription, public, private, configure
+    displayName: Git, repo, repository, encryption, public, private, configure
     href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json
   - name: Alternate credentials
     displayName: Git, repository, HTTPS, SSH, OAuth, PATs

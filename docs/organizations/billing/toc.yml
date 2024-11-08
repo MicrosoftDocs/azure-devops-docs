@@ -26,7 +26,7 @@
   displayName: update, remove, billing
   href: change-azure-subscription.md
 - name: Billing FAQs
-  displayName: assignment, group, rules, basic, stakeholder, pro-rated, mulit-organization, subscription, charges
+  displayName: assignment, group, rules, basic, stakeholder, pro-rated, multi-organization, subscription, charges
   href: billing-faq.yml
 - name: Cloud Solution Providers
   items:

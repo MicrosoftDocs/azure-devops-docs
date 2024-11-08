@@ -286,7 +286,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API suppport for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API suppport for connecting GitHub repositories</a>
+            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API support for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API support for connecting GitHub repositories</a>
          </td>
          <td>Boards</td> 
       </tr>      
