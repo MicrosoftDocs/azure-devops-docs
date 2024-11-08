@@ -166,18 +166,18 @@ Users can quickly double-check the criteria by choosing the Information tooltip 
 
 :::image type="content" source="media/columns/definition-of-done-information-tooltip.png" alt-text="Screenshot showing information tooltip of Definition of Done.":::
 
-## Delete a column
+## Remove or move a column
 
-Remove a column to help streamline your board and remove unnecessary stages in your workflow. Before you remove a column, ensure it doesn't contain any work items. If it does, move the items to another column. Then, do the following steps:
+Removing or moving a column can help streamline your board and better reflect your team's workflow and priorities. By adjusting the order of columns or removing unnecessary stages, you can ensure that the most critical stages are prominently displayed and that the workflow is intuitive for all team members.
+
+### Remove a column
 
 1. Ensure the column doesn't contain any work items. If it does, move the items to another column.
 2. On the [Configure board settings](#add-and-edit-columns) page, select **Columns** > **Column options menu** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: > **X Remove**.
 
    :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog.":::
 
-## Move a column
-
-Moving a column allows you to reorganize your board to better reflect your team's workflow and priorities. By adjusting the order of columns, you can ensure that the most critical stages are prominently displayed and that the workflow is intuitive for all team members.
+### Move a column
 
 To move a column, drag the column tab to the desired position on the board or in the **Column options menu**, select **Move left** or **Move right**.
 
