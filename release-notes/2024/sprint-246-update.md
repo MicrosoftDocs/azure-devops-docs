@@ -35,10 +35,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-246-update-links](includes/pipelines/sprint-246-update-links.md)]
 
-### Azure Artifacts
-
-[!INCLUDE [sprint-246-update-links](includes/artifacts/sprint-246-update-links.md)]
-
 ### Wiki
 
 [!INCLUDE [sprint-246-update-links](includes/wiki/sprint-246-update-links.md)]
@@ -62,10 +58,6 @@ Check out the release notes for details.
 ## Azure Pipelines
 
 [!INCLUDE [sprint-246-update](includes/pipelines/sprint-246-update.md)]
-
-## Azure Artifacts
-
-[!INCLUDE [sprint-246-update](includes/artifacts/sprint-246-update.md)]
 
 ## Wiki
 
