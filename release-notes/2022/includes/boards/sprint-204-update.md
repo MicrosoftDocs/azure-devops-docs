@@ -19,7 +19,7 @@ Previously, the Kanban board **Show more items** feature fetched the next 200 wo
 
 ### General availability of Copy Dashboard
 
-Copy Dashboard is now generally available. Copy Dashobard lets you copy a dashboard to the same or a new project. To copy a dashboard:
+Copy Dashboard is now generally available. Copy Dashboard lets you copy a dashboard to the same or a new project. To copy a dashboard:
 
 1. Go to the dashboard you want to copy. From there click the menu to bring up **Copy Dashboard** and then click on it.
 

@@ -233,6 +233,9 @@ To delete an attachment:
 
    :::image type="content" source="../backlogs/media/confirm-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming delete action.":::
 
+The deleted attachment cannot be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
+
+
 ::: moniker-end
 
 The deleted attachment can't be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.

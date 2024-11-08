@@ -114,7 +114,7 @@ The following tips can be useful.
    "272","Issue","Fix issues with code","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Active",
    "273","Issue","Merge testing modules","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Active",
    "274","Issue","Open private preview for select customers","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Active",
-   "275","Issue","Enable feature for suctomer champs","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Active",
+   "275","Issue","Enable feature for customer champs","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Active",
    "276","Issue","Remove old test code","Christie Church <fabrikamfiber1@hotmail.com>","Active",
    ```
 

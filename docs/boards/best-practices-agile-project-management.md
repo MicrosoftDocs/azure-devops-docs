@@ -55,7 +55,7 @@ Best practice tips:
 
 For more information about configuring sprints, see:
 
-- [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
+- [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#define-and-assign-iteration-paths)
 - [Define iteration paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Choose your work item types
@@ -333,8 +333,6 @@ For more information, see:
 - [Filter your board](./backlogs/filter-backlogs-boards-plans.md)
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team delivery plans](plans/review-team-plans.md)
-
-<a id="process-improvement"></a>
 
 ## Process improvement
 

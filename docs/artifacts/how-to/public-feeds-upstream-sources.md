@@ -115,6 +115,8 @@ pip install
 
 #### [Cargo](#tab/cargo)
 
+Feed and Upstream Reader (Collaborator) roles or higher must use an additional flag to authenticate with their public feed in order to install packages. Be sure to follow the instructions in [Cargo - Connect to a feed](../cargo/cargo-upstream-source.md#connect-to-your-feed) to properly authenticate with your feed, and then run the following command in your project directory to restore your packages. 
+
 ```Command
 cargo build
 ```

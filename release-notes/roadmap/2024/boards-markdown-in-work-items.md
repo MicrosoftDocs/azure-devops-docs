@@ -14,4 +14,6 @@ hide_comments: true
 
 As a user, like in work item comments, I want to be able to use markdown syntax in the description (or any large text field) of work item form.
 
-[Suggestion Ticket](https://developercommunity.visualstudio.com/t/support-markdown-as-an-alternative-to-html-for-wor/365464)
+[Suggestion ticket](https://developercommunity.visualstudio.com/t/support-markdown-as-an-alternative-to-html-for-wor/365464)
+
+[Related suggestion ticket](https://developercommunity.visualstudio.com/t/make-it-easy-to-insert-tables-into-a-work-item-des/1108159)

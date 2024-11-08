@@ -205,11 +205,11 @@ The following tables describe the type of events (or actions) that are available
 | Pipelines.PipelineDeleted |	Remove |	Deleted pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId} |
 | Pipelines.PipelineModified	| Modify |	Modified pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId} |
 | Pipelines.PipelineRetentionSettingChanged |	Modify |	Pipelines retention "{SettingName}" changed from {OldValue} to {NewValue} in {ProjectName} project |
-| Pipelines.ResourceAuthorizedForPipeline	| Modify |	Successfully authorized {ResourceType} resource {ResourceId} for pipeline id {PipelineId} |
+| Pipelines.ResourceAuthorizedForPipeline	| Modify |	Successfully authorized {ResourceType} resource {ResourceId} for pipeline ID {PipelineId} |
 | Pipelines.ResourceAuthorizedForProject	| Modify |	Successfully authorized {ResourceType} resource {ResourceId} for the project |
-| Pipelines.ResourceNotAuthorizedForPipeline |	Modify |	Didn't authorize {ResourceType} resource {ResourceId} for pipeline id {PipelineId}. The resource doesn't exist or the user doesn't have permission |
+| Pipelines.ResourceNotAuthorizedForPipeline |	Modify |	Didn't authorize {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. The resource doesn't exist or the user doesn't have permission |
 | Pipelines.ResourceNotAuthorizedForProject	| Modify |	Didn't authorize {ResourceType} resource {ResourceId} for the project. The resource doesn't exist or the user doesn't have permission |
-| Pipelines.ResourceUnauthorizedForPipeline	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for pipeline id {PipelineId} |
+| Pipelines.ResourceUnauthorizedForPipeline	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for pipeline ID {PipelineId} |
 | Pipelines.ResourceUnauthorizedForProject	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for the project |
 | Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease id {RetentionLeaseId} to {RetentionOwnerId} |
 | Pipelines.RunUnretained	 | Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained |
@@ -327,5 +327,5 @@ The following tables describe the type of events (or actions) that are available
 
 ## Related articles
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
-- [Export audit events](azure-devops-auditing.md#export-auditing-events)
+- [Export audit events](azure-devops-auditing.md#export-audit-events)
 - [Set up an audit stream](auditing-streaming.md)

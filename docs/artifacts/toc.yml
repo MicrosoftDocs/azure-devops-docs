@@ -198,7 +198,7 @@
       href: how-to/search-upstream.md
       displayName: search, upstreams
     - name: Manage dependencies with upstream sources
-      displayName: dependecies, artifacts, upstreams, public package
+      displayName: dependencies, artifacts, upstreams, public package
       href: tutorials/protect-oss-packages-with-upstream-sources.md
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
@@ -215,7 +215,7 @@
     displayName: publish packages, download packages, pipeline artifact
     href: ../pipelines/artifacts/pipeline-artifacts.md
   - name: Pipeline caching
-    displayName: caching, storage, pipeline cach
+    displayName: caching, storage, pipeline cache
     href: ../pipelines/release/caching.md
   - name: Set up retention policies
     displayName: policies, retention, pipeline artifact

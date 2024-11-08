@@ -4,7 +4,7 @@ description: Use .NET Framework to build ASP.NET apps in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: devx-track-dotnet
-ms.date: 07/12/2024
+ms.date: 10/16/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,15 +23,123 @@ This article describes how to build a .NET Framework project with Azure Pipeline
 
 ## Get the sample app
 
-The sample app is a Visual Studio solution that uses .NET 4.8. To get the app, fork the GitHub repo at `https://github.com/Azure-Samples/app-service-web-dotnet-get-started`.
+The sample app is a Visual Studio solution that uses .NET 4.8. To get the app, fork the GitHub repo at: 
+
+``` html
+https://github.com/Azure-Samples/app-service-web-dotnet-get-started
+
+```
 
 ## Create and build the pipeline
 
 Once you have the sample code in your own repository, create a pipeline in your Azure DevOps project by using the instructions in [Create your first pipeline](../../create-first-pipeline.md).
 
-Select the **ASP.NET** template. This choice automatically adds the tasks required to build the code in the sample repository.
+Select the **ASP.NET** template. This choice automatically adds the *azure-pipelines.yml* file with the tasks required to build the code to the sample repository. The template includes the VSTest@2 task to run tests. The sample repository doesn't contain tests, so you can remove the VSTest@2 task from the pipeline.  
 
-Select **Save and run** to see the pipeline in action.
+Your pipeline should look like the following example:
+
+::: moniker range="azure-devops"
+
+```yaml
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+```
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+```yaml
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
+trigger:
+- main
+
+pool: 
+  name: default
+  
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+```
+
+::: moniker-end
+
+Select **Save and run** and select **Jobs** to see the pipeline in action.
+
+To publish the build artifacts, add the following task to the end of your YAML file:
+
+::: moniker range="azure-devops"
+
+```yaml
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'myartifact'
+    publishLocation: 'pipeline'
+```
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+```yaml
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
+
+```
+::: moniker-end
+
 
 ## Build environment
 

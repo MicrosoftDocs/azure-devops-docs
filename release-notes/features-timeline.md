@@ -179,13 +179,24 @@ These investments include:
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
          <td>2024 Q4</td>
-      </tr>    
+      </tr> 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
          <td>2025 Q1</td>
       </tr>  
-      
+       <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
+         </td>
+         <td>Boards</td>
+         <td>2025 Q1</td>   
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo" data-raw-source="[Report stage status to work item when using a YAML release pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo)">Report stage status to work item when using a YAML release pipeline with GitHub repository</a></td>
+         <td>Boards</td>
+         <td>Future</td>
+      </tr>       
     </tbody>
 </table>
 
@@ -286,7 +297,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API suppport for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API suppport for connecting GitHub repositories</a>
+            <a href="/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview" data-raw-source="[REST API support for connecting GitHub repositories](/azure/devops/release-notes/2023/boards/sprint-219-update#rest-api-support-for-connecting-github-repositories-private-preview)">REST API support for connecting GitHub repositories</a>
          </td>
          <td>Boards</td> 
       </tr>      
@@ -348,7 +359,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-markdown-in-work-items" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2024/boards-markdown-in-work-items)">Markdown support in work items</a></td>
         <td>Boards</td>
       </tr>
-       <tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
       </tr>
@@ -357,8 +368,8 @@ For the past several years, all our pipelines investments have been in the area 
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
          </td>
          <td>Boards</td>         
-      </tr> 
-      <td rowspan="2"><strong>2025 Q2</strong></td>
+      </tr>      
+      <td rowspan="3"><strong>2025 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[New Test Runs experience](/azure/devops/release-notes/roadmap/2022/improved-visibility)">New Test Runs experience</a></td>
         <td>Test Plans</td>
       </tr>
@@ -366,6 +377,12 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
         <td>Test Plans</td>
       </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
+         </td>
+         <td>Boards</td>         
+      </tr> 
       <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
@@ -385,7 +402,11 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/pr-search" data-raw-source="[PR search](/azure/devops/release-notes/roadmap/2024/pr-search)">PR search</a></td>
         <td>General</td>
-      </tr>     
+      </tr> 
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo" data-raw-source="[Report stage status to work item when using a YAML release pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo)">Report stage status to work item when using a YAML release pipeline with GitHub repository</a></td>    
+         <td>Boards</td>
+      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>

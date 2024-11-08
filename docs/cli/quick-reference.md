@@ -37,17 +37,17 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 :::row:::
    :::column span="1":::
       #### Area and Iteration Paths
-      - [Add a project area path](../organizations/settings/set-area-paths.md#add-area) 
-      - [Add a project iteration](../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration)
-      - [Delete or update a project iteration path](../organizations/settings/set-iteration-paths-sprints.md#delete-update-iteration-paths)
-      - [List project area paths](../organizations/settings/set-area-paths.md#list-areas) 
-      - [List project iteration paths](../organizations/settings/set-iteration-paths-sprints.md#iteration-project-list) 
+      - [Add a project area path](../organizations/settings/set-area-paths.md#add-an-area-path) 
+      - [Add a project iteration](../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates)
+      - [Delete or update a project iteration path](../organizations/settings/set-iteration-paths-sprints.md#rename-or-move-an-iteration)
+      - [List project area paths](../organizations/settings/set-area-paths.md#list-project-areas) 
+      - [List project iteration paths](../organizations/settings/set-iteration-paths-sprints.md#list-project-iterations) 
       - [List team areas paths](../organizations/settings/set-area-paths.md#list-team-area-paths) 
-      - [List team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#list-team-iteration-paths) 
-      - [Remove area path from a team](../organizations/settings/set-area-paths.md#remove-area-path-from-team)
-      - [Rename or move a project area path](../organizations/settings/set-area-paths.md#rename-move-project-area-path) 
+      - [List team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations) 
+      - [Remove area path from a team](../organizations/settings/set-area-paths.md#remove-an-area-path-from-a-team)
+      - [Rename or move a project area path](../organizations/settings/set-area-paths.md#rename-or-move-an-area-path) 
       - [Set team area paths](../organizations/settings/set-area-paths.md#set-team-area-paths) 
-      - [Set team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#set-team-iteration-paths) 
+      - [Set team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) 
    :::column-end:::
    :::column span="1":::
       #### Queries 
@@ -245,8 +245,6 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show details of permissions available in each namespace](../organizations/security/manage-tokens-namespaces.md)
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Update a security group](../organizations/security/add-manage-security-groups.md) 
-
-<a id="service-endpoints"></a>
 
 ## Service endpoints or service connections
 
