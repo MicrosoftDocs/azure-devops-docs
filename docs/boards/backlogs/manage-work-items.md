@@ -8,8 +8,8 @@ ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6
 ms.author: v-catherbund
 author: cebundy
 monikerRange: '<= azure-devops'
-ms.topic: tutorial
-ms.date: 10/31/2024
+ms.topic: conceptual
+ms.date: 11/11/2024
 ---
 
 # Manage Work Items in Azure DevOps

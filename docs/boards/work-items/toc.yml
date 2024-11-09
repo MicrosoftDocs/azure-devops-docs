@@ -4,11 +4,13 @@
 - name: Quick reference
   href: quick-ref.md
   displayname: index, concepts, tasks, customize
+- name: Manage work items
+  href: ../backlogs/manage-work-items.md
+  displayname: add, view, update, attachments, tags, link, delete, copy, clone, analytics, customize, follow, link, best oractices
 - name: View & add work items
   displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
   href: view-add-work-items.md
-  displayname: follow, update status, Discussion
-- name: Filter your work items
+- name: Filter work items
   href: ../backlogs/filter-backlogs-boards-plans.md
   displayname: sort, reorder, group, parent, tags
 - name: Manage requirements
