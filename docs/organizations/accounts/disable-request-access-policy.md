@@ -20,7 +20,7 @@ To prevent users from requesting access to your organization or projects, you ca
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+- [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 - **Access levels:** Have at least Basic access.
 
 ## Disable Request Access policy

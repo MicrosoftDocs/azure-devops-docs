@@ -9,7 +9,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 11/01/2024
+ms.date: 11/11/2024
 ---
 
 # Access, export, and filter audit logs
@@ -40,14 +40,7 @@ Audit events are stored for 90 days before they're deleted. To retain the data f
 
 ### Prerequisites
 
-Auditing is turned off by default for all Azure DevOps Services organizations.
-
-**Permissions:** 
-- To to [enable auditing](#enable-and-disable-auditing), be a member of the Project Collection Administrators group. Organization owners are automatically members of this group.
-- Grant specific auditing permissions to any group via the **Security > Permissions** page in **Organization settings**. This action allows for flexible management of who can view and manage audit logs, ensuring that only authorized personnel have access to sensitive auditing information.
-
-> [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users in the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages. For more information and important security-related details, see [Manage your organization, Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+[!INCLUDE [prerequisites-auditing](includes/prerequisites-auditing.md)]
 
 ## Enable and disable auditing
 
@@ -173,7 +166,8 @@ In the current Auditing UI, you can filter events only by date or time range.
 
    ![Screenshot shows auditing entry filter by date & time.](media/azure-devops-auditing/audit-log-date-time-picker.png)
 
-2. Use the filters to select any time range within the last 90 days and scope it down to the minute. Once you select a time range, c
+2. Use the filters to select any time range within the last 90 days and scope it down to the minute.
+
 3. Select **Apply** on the time range selector to start the search. 
    By default, the top 200 results return for that time selection. If there are more results, you can scroll down to load more entries onto the page.
 
@@ -197,7 +191,7 @@ The following limitations apply to what can be audited:
 
 * **Microsoft Entra group membership changes**: Auditing Logs include updates to Azure DevOps groups and group membership, when an event Area is `Groups`. However, if you manage membership via Microsoft Entra groups, additions and removals of users from those Microsoft Entra groups aren't included in these logs. Review the Microsoft Entra audit logs to see when a user or group was added or removed from a Microsoft Entra group.
 * **Sign-in events**: Azure DevOps doesn't track sign-in events. To review sign-in events to your Microsoft Entra ID, view the Microsoft Entra audit logs.
-* **Indirect user additions:** In some cases, users might get added to your organization indirectly and show in the audit log as being added by Azure DevOps Services. For instance, if a user is assigned to a work item, they might get added automatically to the organization. While an audit event gets generated for the user being added, there isn't a corresponding audit event for the work item assignment that triggered the user addition. To trace these events, consider the following actions:
+* **Indirect user additions:** In some cases, users might get added to your organization indirectly and show in the audit log added by Azure DevOps Services. For instance, if a user is assigned to a work item, they might get added automatically to the organization. While an audit event gets generated for the user being added, there isn't a corresponding audit event for the work item assignment that triggered the user addition. To trace these events, consider the following actions:
   * Review your work item history for the corresponding timestamps to see if this user was assigned to any work items.
   * Check the audit log for any related events that might provide context.
 
