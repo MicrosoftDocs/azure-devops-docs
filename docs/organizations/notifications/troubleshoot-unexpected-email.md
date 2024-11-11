@@ -15,7 +15,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
 If you receive a notification email that you didn't expect, it could be for one of the following reasons:
 
 * The email is sent to a group of which you're a member
