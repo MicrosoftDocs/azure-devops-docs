@@ -7,9 +7,10 @@ ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/06/2022
+ms.date: 10/16/2024
 ---
 
 # Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
@@ -96,7 +97,7 @@ While the `Contains` operator runs a table scan, which isn't only slower, but al
 >
 > When a user then runs a query on this field using the `Contains Words` operator, the search will be run against the unique keywords stored in the index. For long-text fields, this makes searching much more efficient and quicker than doing a substring search. By default, SQL defines a "word" as a set of characters between punctuation. For example, periods signify the end of a word, but the period is not considered to be part of the word. Because the full-text search index contains keywords instead of exact phrases, you'll end up getting all the results that contain the same keywords, as determined by the indexing.
 
-<a id="keyword"/>
+<a id="keyword"></a>
 
 ## Keyword or phrase query with wildcards
 
@@ -113,9 +114,7 @@ For example, specify **Contains Words** and **inform&#42;** to filter on a text 
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
-<a id="undefined-value"/>
-
-
+<a id="undefined-value"></a>
 
 ## Query for specific words and not others
 
@@ -126,50 +125,57 @@ In the following example, these operators filter work items for those items that
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
 
-
 ## Undefined field value queries
 
-You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters list all work items of type Task whose Activity field is blank.  
+You can find work items that have an undefined field value by using the equals operator `=` and leaving the Value for the field blank. For example, the following filters list all work items of type Task whose Activity field is blank.  
 
 ![Filter based on blank entries](media/example-work-item-queries/IC736440.png)
 
-To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
+To list work items based on a field that isn't blank, use the *not* operator `<>` and leave the Value blank.
 
-<a id="empty"/>
-<a id="empty-or-not-empty-html-field-queries"/>
-
-::: moniker range=">= azure-devops-2019"
+<a id="empty"></a>
+<a id="empty-or-not-empty-html-field-queries"></a>
 
 ## Empty or not empty HTML field queries
 
-You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
+You can find work items with empty **Description**s. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
 
-For example, the following query filters list all work items where some entries have been made into the **Description** field.  
+For example, the following query filters list all work items with some **Description** field entries.   
 
 > [!div class="mx-imgBorder"] 
 > ![Filter based non-empty HTML fields](media/example-queries/is-not-empty-query.png)
 
-::: moniker-end
+## Filter for special characters
+
+To filter for a URL or a phrase that contains special characters like `/` or `-`, use a backslash to escape these characters. The following examples show how to filter for a URL and for a phrase with a dash:
+
+- **Filter for a URL**: Search for a work item title that includes the phrase `https://example.com/path-to-resource`.
+  - Query: `Title ~ "https:\/\/example.com\/path-to-resource"`
+  - Results: Returns all work items with the exact URL in the specified field.
+
+- **Filter for a phrase with a dash**: Search for a work item title that includes `"your-phrase-with-dash"`.
+  - Query: `Title ~ "feature-update\-2023"`
+  - Results: Returns all work items that contain the exact phrase with dashes in the specified field.
 
 <a id="no-tags"></a>
 
 > [!NOTE]
-> The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
+> You can't query for work items that don't have any tags attached to them. To up vote this feature request, do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
 
 
-<a id="category"/>
+<a id="category"></a>
 
 ## Category-based queries
 
-To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria returns all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
+To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
 ![Query clause to find work items by category](media/example-work-item-queries/IC720125.png)
 
-<a id="category"/>
+<a id="category"></a>
 
 ### What items appear in the Requirement or Task categories? 
 
-The default assignments of work item types to each category are listed below for each process.  
+The default assignments of work item types to each category are listed as follows for each process.  
 
 | Process | Requirement category | Task category |
 |---------|---------|---------|
@@ -199,13 +205,13 @@ For example, the following query shows how to query across all projects for acti
 
 You can use the following macros to list work items based on recent activity: 
 
-- **@MyRecentActivity**: List items you've recently viewed or modified.
+- **@MyRecentActivity**: List items you recently viewed or modified.
 - **@RecentMentions**: List items you were added to via an **@mention** in the last 30 days.
-- **@RecentProjectActivity**: List items that have been recently created or modified in your project.
+- **@RecentProjectActivity**: List items recently created or modified in your project.
 
 Specify the **ID** field and either the **In** or **Not In** operators.  
 
-For example, the following query shows how to query for work items that you've recently viewed or modified. 
+For example, the following query shows how to query for work items that you recently viewed or modified. 
 
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
@@ -214,7 +220,7 @@ For example, the following query shows how to query for work items that you've r
 
 ## Common fields for most work item types 
 
-The following table describes common fields used to filter queries. The **ID** fields uniquely identify work items in a list. Use the **Title** field to distinguish the work item from all others of the same type.  The **Description** and other rich-text (data type=HTML) fields provide additional information that is needed to implement work and track changes. After a work item is created, you can modify all fields except for the **ID**. When you add and save a work item, the ID is assigned by the system and cannot be changed. 
+The following table describes common fields used to filter queries. The **ID** fields uniquely identify work items in a list. Use the **Title** field to distinguish the work item from all others of the same type. The **Description** and other rich-text (data type=HTML) fields provide additional information that is needed to implement work and track changes. After a work item is created, you can modify all fields except for the **ID**. When you add and save a work item, the ID gets assigned by the system and can't be changed. 
 
 > [!NOTE]   
 > The system automatically indexes all long-text fields with a data type of **PlainText** and **HTML** fields for full-text search. This includes the **Title**, **Description**, and **Steps to Repro** fields. For more information and  server and collation requirements applicable to on-premises Azure DevOps, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
@@ -238,7 +244,7 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column span="2":::
    A description of the criteria to be met before the bug or product backlog item can be closed.
 
-   Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria helps ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
+   Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria helps ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item is satisfactorily completed.
  
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
    :::column-end:::     
@@ -280,7 +286,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Repro Steps (or Steps to reproduce) <sup>1</sup> 
    :::column-end:::
      :::column span="2":::
-   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.   
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full effect of the problem and whether they fixed the bug. This entry includes actions taken to find or reproduce the bug and expected behavior.   
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
    :::column-end:::
    :::column span="1":::

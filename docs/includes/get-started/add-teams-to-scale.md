@@ -13,7 +13,7 @@ As your organization grows, we recommend that you add teams to scale your projec
 
 ![Agile tools and team assets](../../organizations/settings/media/agile-tools/agile-tools-team-assets-post-2018.png)
 
-To learn more, see the following articles:
+For more information, see the following articles:
 
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)
 - [Add a team, move from one default team to several teams](../../organizations/settings/add-teams.md)  

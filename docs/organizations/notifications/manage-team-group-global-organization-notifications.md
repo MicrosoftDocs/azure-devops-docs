@@ -1,5 +1,5 @@
 ---
-title: Manage notifications for a team, project, organization or collection
+title: Manage notifications for a team, project, organization, or collection
 titleSuffix: Azure DevOps
 description: Learn how to configure team, project, and organization/collection notifications for when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.subservice: azure-devops-notifications
@@ -8,7 +8,7 @@ ms.custom: cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 04/24/2023
+ms.date: 09/05/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -145,7 +145,7 @@ A subscription lets you control what your team is notified of and how the team r
 
   
 
-<a name="manage" />
+<a name="manage"></a>
 
 > [!TIP]
 > If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).
@@ -165,7 +165,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 ::: moniker range="azure-devops-2020"
 
 > [!TIP]
-> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). Also, you can generate a banner with the [**az devops banner command**](../../organizations/settings/manage-banners.md) that all users see when they sign in.
+> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). Also, you can generate a banner to communication with users without sending out mass emails.  For more information, see [Add and manage information banners in Azure DevOps](../../organizations/settings/manage-banners.md).
 
 ::: moniker-end
 
@@ -175,14 +175,12 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-
-
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 
 ## Related articles
 
-- [Manage personal notification settings](manage-your-personal-notifications.md)
-- [Set your preferences](../../organizations/settings/set-your-preferences.md)
-- [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../../boards/work-items/follow-work-items.md)  
+- [Manage your personal notification settings](manage-your-personal-notifications.md)
+- [Set your notification preferences](../../organizations/settings/set-your-preferences.md)
+- [Review default and supported notifications](oob-built-in-notifications.md)
+- [Follow a specific work item](../../boards/work-items/follow-work-items.md)
 - [Change your preferred email address](change-email-address.md)

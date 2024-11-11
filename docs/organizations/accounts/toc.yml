@@ -60,3 +60,12 @@
   - name: Create and configure an organization
     displayName: create, configure, delete, restore, owner, browser, region, name, location, features, project, data protection, subscription
     href: faq-configure-customize-organization.yml
+  - name: Manage users and permissions
+    displayName: user, permission, role, access, project, collection, administrator, owner, member, guest, external, Azure Active Directory, group, team, security, policy, token, authentication, authorization, identity, organization, account, profile, settings, data, protection
+    href: faq-user-and-permissions-management.yml
+  - name: Access via Microsoft Entra
+    displayName: access, Microsoft Entra, organization, account, sign in, sign out, browser, device, mobile, desktop, tablet
+    href: faq-azure-access.yml
+  - name: Set up Visual Studio
+    displayName: Visual Studio, protocol, connection, Azure DevOps, project
+    href: faq-set-up-vs.yml

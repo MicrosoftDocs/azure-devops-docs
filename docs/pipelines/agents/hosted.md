@@ -31,12 +31,13 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | --- | --- | --- | --- |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
+| Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
-| macOS 14 Sonoma (preview) | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 15 Sequia preview | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
+| macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
-| macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
-| macOS 11 Big Sur (deprecated) | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
+| macOS 12 Monterey | *macOS-12* | `macOS-12` |  **deprecated** |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -45,6 +46,10 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The macOS-15 Sequia image is available in preview
+* The Ubuntu-24.04 image is available
+* The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
+* The Ubuntu-22.04 image is available
 * The macOS-14 Sonoma image is available in preview
 * The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
 * All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
@@ -282,7 +287,7 @@ Microsoft-hosted agents do not offer:
 * The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 * The ability to roll back to a previous VM image version. You always use the latest version.
 
-If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
+If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install), use [scale set agents](scale-set-agents.md), or [Managed DevOps Pools agents](../../managed-devops-pools/index.yml).
 
 ## FAQ
 
@@ -372,7 +377,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
 
   This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
 

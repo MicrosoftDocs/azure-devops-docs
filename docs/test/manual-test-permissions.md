@@ -5,7 +5,7 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
@@ -18,7 +18,7 @@ ms.date: 09/15/2021
 Access levels and permissions control access to Azure Test Plans features. To access the Test Plans web portal, you must have a **Basic** access level or greater. To define and manage test plans, test suites, and test cases, you need **Basic + Test Plans**, which is available from Azure DevOps.
  
 > [!NOTE]  
-> Users granted **Stakeholder** access have no access to features or functions supported through the Test Plans or Test web portal. However, they are able to provide feedback through the **Test & Feedback** extension. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md).
+> Users granted **Stakeholder** access have no access to features or functions supported through the Test Plans or Test web portal. However, they are able to provide feedback through the **Test & Feedback** extension. For more information, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md).
 
 ## Access and licensing 
 

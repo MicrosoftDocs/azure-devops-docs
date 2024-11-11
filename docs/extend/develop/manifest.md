@@ -24,6 +24,8 @@ See the following example of a typical manifest:
 
 [!code-json[](../_data/extension-typical.json)]
 
+For information about inputs, see [...](custom-control.md)
+
 ## Required attributes
 
 <a id="core-properties"></a>
@@ -110,7 +112,7 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
 }            
 ```
 
-Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in  the Marketplace. Bring-Your-Own-License (BYOL) means the publisher of the extension provides the billing and licensing mechanism for the extension, as it isn't provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end-user license agreement. Also, publishers must provide content for the pricing tab in Marketplace as follows:
+Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in  the Marketplace. Bring-Your-Own-License (BYOL) means the publisher of the extension provides the billing and licensing mechanism for the extension, as it isn't provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end-user license agreement. Publishers must provide content for the pricing tab in Marketplace as follows:
 
 ```json
 {
@@ -125,7 +127,8 @@ Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an exte
 }          
 ```
 
-You also need to add a new section in your extension manifest to override paid licensing. In the future, we remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “ID” and a “behavior.” The “ID” must match the ID of the contributions defined in the manifest.
+You also need to add a new section in your extension manifest to override paid licensing. In the future, we remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an "ID" and a "behavior." Make the "ID" match the ID of the contributions defined in the manifest.
+
 ```json
 "licensing": {
 
@@ -170,7 +173,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 ### Marketplace Q & A - CustomerQnASupport property
 
-All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or a custom Q&A URL. You can disable Q&A in the Marketplace using the CustomerQnASupport property in the manifest. 
+All extensions on the Visual Studio Marketplace have a Questions and Answers (Q & A) section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Questions and Answers (Q&A), GitHub issues, or a custom Q&A URL. You can disable Q&A in the Marketplace using the CustomerQnASupport property in the manifest. 
 
 **Default experience** (No changes to manifest are required)
 - For extensions with a GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues. 
@@ -192,7 +195,7 @@ For a different experience than one of the default options, use the **CustomerQn
 
 Properties for the Customer Q & A Support section:
 
-- **enablemarketplaceqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
+- **enablemarketplaceqna** - boolean field, set to `true` for marketplace, or custom Q&A; false for disabling Q&A
 - **url** - string, URL for custom Q&A
 
 
@@ -229,7 +232,7 @@ Properties for the Customer Q & A Support section:
 
 ## Scopes
 
-In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations it's permitted to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Auth and security](auth.md).
+In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations permitted to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Auth and security](auth.md).
 
 If no scopes are specified, extensions are only provided access to user profile and extension data.
 
@@ -239,7 +242,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 ### Changing scope of published extension
 
-You can change the scope of a published extension. If you previously installed your extension (and authorized the previous set of scopes), you must authorize the new scopes before you can upgrade to the newest version.
+You can change the scope of a published extension. If you previously installed your extension (and authorized the previous set of scopes), authorize the new scopes before you can upgrade to the newest version.
 
 The **Action Required** section of the Extension settings hub shows a user that, if any, installed extensions require authorization:
 
@@ -536,7 +539,7 @@ Properties for the Files section:
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
+* **id** - A reference ID (string) for the contribution. Make each contribution ID unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **type** - The ID of the contributionType of this contribution. 
 * **description** - (Optional) A string describing what the contribution is providing.
 * **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
@@ -550,7 +553,7 @@ For more information, see the [contribution model overview](contributions-overvi
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
+* **id** - A reference ID (string) for the contribution type. Make each contribution type ID unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **name** - The friendly name of the contribution type. 
 * **description** - (Optional) A string describing in more detail what the contribution type is for.
 * **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that contributions of this type can use.
@@ -571,7 +574,7 @@ Use unique identifiers to reference contributions and contribution types. Refere
 
 - A *full* contribution reference includes the publisher identifier, extension identifier, and contribution/type identifier, separated by
 a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of "hub" in the "vss-web" extension published by the "ms" (Microsoft) publisher.
-- *Relative* contribution references might be used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
+- *Relative* contribution references might get used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
 by the contribution identifier. For example, ".hub" might be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub."
 
 <a name="contributionTargets"></a>
@@ -620,7 +623,7 @@ The Marketplace only supports badges from the following trusted services:
 > [!NOTE]
 > Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
 
-To show a badge from another service, contact *vsmarketplace@microsoft.com*.
+To show a badge from another service, contact [Customer Support at the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps).
 
 <a name="example"></a>
 

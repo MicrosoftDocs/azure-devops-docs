@@ -16,11 +16,11 @@ monikerRange: '<= azure-devops'
 
 Learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 
-To start manual testing, add the test to the user story or bug that you want to test. From the Kanban board, you can define inline tests or a set of manual tests for a backlog item. You also can run these tests and update their status. If you're new to working with the Kanban board, see the [Kanban quickstart](../boards/boards/kanban-quickstart.md).
+To start manual testing, add the test to the user story or bug that you want to test. From the board, you can define inline tests or a set of manual tests for a backlog item. You also can run these tests and update their status. If you're new to working with the board, see the [Board quickstart](../boards/boards/kanban-quickstart.md).
 
-Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
+Tests you create from the board are automatically linked to the user story or backlog item.  
 
-## Open your Kanban board
+## Open your board
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -30,7 +30,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	If you don't see the team or project you want, select ![Azure DevOps icon](../media/icons/project-icon.png) **Azure DevOps** to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
-2. Select **Boards** to open the Kanban board.
+2. Select **Boards** to open the board.
 
    ![Azure Boards](media/azure-devops-boards-board.png)
 
@@ -58,9 +58,9 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
 
-   ![Open test case from Kanban board](media/open-test-case-form-from-kanban-board.png)
+   ![Open test case from board](media/open-test-case-form-from-kanban-board.png)
 
-To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
+For more information about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
 Before you run the test, you must add details.
 
@@ -101,7 +101,7 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker range=">= azure-devops-2019"
 
-When you first open the Kanban board, you'll see an unexpanded view of checklists and tests.
+When you first open the board, you'll see an unexpanded view of checklists and tests.
 
    ![Inline tests collapsed](media/azure-devops-boards-board.png)
 
@@ -111,12 +111,10 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ::: moniker-end
 
-
-
 ## Next steps
   
 > [!div class="nextstepaction"]
-> [Kanban quickstart](../boards/boards/kanban-quickstart.md)
+> [Board quickstart](../boards/boards/kanban-quickstart.md)
 
 ## Related articles
 - [Learn more about test case management](../test/create-test-cases.md)

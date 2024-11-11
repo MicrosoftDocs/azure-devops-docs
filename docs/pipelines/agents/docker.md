@@ -1,6 +1,7 @@
 ---
 title: Run a self-hosted agent in Docker
 ms.topic: conceptual
+ms.custom: linux-related-content
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.date: 04/05/2024
@@ -20,7 +21,7 @@ To run your agent in Docker, you'll pass a few [environment variables](#environm
 
 This feature requires agent version 2.149 or later.
 Azure DevOps 2019 didn't ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
+However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
 
 ::: moniker-end
 
@@ -220,12 +221,15 @@ Next, create the Dockerfile.
     * For Alpine:
       ```dockerfile
       FROM alpine
+      ENV TARGETARCH="linux-musl-x64"
+
+      # Another option:
+      # FROM arm64v8/alpine
+      # ENV TARGETARCH="linux-musl-arm64"
 
       RUN apk update
       RUN apk upgrade
       RUN apk add bash curl git icu-libs jq
-
-      ENV TARGETARCH="linux-musl-x64"
 
       WORKDIR /azp/
 
@@ -244,11 +248,12 @@ Next, create the Dockerfile.
     * For Ubuntu 22.04:
       ```dockerfile
       FROM ubuntu:22.04
-
-      RUN apt update -y && apt upgrade -y && apt install curl git jq libicu70 -y
-
-      # Also can be "linux-arm", "linux-arm64".
       ENV TARGETARCH="linux-x64"
+      # Also can be "linux-arm", "linux-arm64".
+
+      RUN apt update
+      RUN apt upgrade -y
+      RUN apt install -y curl git jq libicu70
 
       WORKDIR /azp/
 
@@ -334,7 +339,7 @@ Next, create the Dockerfile.
 
     AZP_AGENT_PACKAGES=$(curl -LsS \
         -u user:$(cat "${AZP_TOKEN_FILE}") \
-        -H "Accept:application/json;" \
+        -H "Accept:application/json" \
         "${AZP_URL}/_apis/distributedtask/packages/agent?platform=${TARGETARCH}&top=1")
 
     AZP_AGENT_PACKAGE_LATEST_URL=$(echo "${AZP_AGENT_PACKAGES}" | jq -r ".value[0].downloadUrl")

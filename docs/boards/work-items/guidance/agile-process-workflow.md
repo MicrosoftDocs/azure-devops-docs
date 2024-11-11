@@ -16,7 +16,7 @@ ms.date: 06/01/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-When you use the Agile process in Azure Boards, the following work item types (WITs) help your team to plan and track progress of your projects: epics, features, user stories, tasks, issues/bugs. Once you define your WITs, you can use the Kanban board to track progress by updating the status of those items.
+When you use the Agile process in Azure Boards, the following work item types (WITs) help your team to plan and track progress of your projects: epics, features, user stories, tasks, issues/bugs. Once you define your WITs, you can use the board to track progress by updating the status of those items.
 
 :::image type="content" source="../../../organizations/settings/work/media/scrum-to-agile/agile-process-plan-wits.png" alt-text="Conceptual image of Agile process, work item types used to plan and track work.":::
 
@@ -105,7 +105,7 @@ Use the guidance in the following table and the [common fields used across work 
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [temp](../../includes/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip-azure-devops.md)] 
 
 ## Track progress
 
@@ -129,13 +129,13 @@ A typical workflow progression for a user story follows:
 -  A user story gets moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass.  
 -  A user story gets moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.
 
-### Update status with Kanban or Taskboards
+### Update status with board or Taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [Taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [board](../../boards/kanban-overview.md) to update the status of requirements, and the [Taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-![Screenshot of Track progress on the Kanban board.](../../boards/media/alm-cc-move-card.png)
+![Screenshot of Track progress on the board.](../../boards/media/alm-cc-move-card.png)
 
-You can customize the Kanban board to support more [swimlanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more information, see [Customize your work tracking experience](#customize-work-item-types).
+You can customize the board to support more [swimlanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more information, see [Customize your work tracking experience](#customize-work-item-types).
 
 
 ## Map user stories to features

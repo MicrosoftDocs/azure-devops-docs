@@ -5,10 +5,10 @@ ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 09/14/2021
+ms.date: 09/16/2024
 ---
 
 # Exploratory testing with the Test & Feedback extension in Connected mode
@@ -34,7 +34,7 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 
 3. Open the extension in your web browser and select **Connected** mode.
 
-   ![Screenshot showing starting the extension in Connected mode.](media/shared/connectedmode-01.png)
+   ![Screenshot showing starting the extension in Connected mode.](media/perform-exploratory-tests/getstarted-06.png)
  
 4. Enter the Azure DevOps URL you want to connect to and select **Next**.
 
@@ -42,7 +42,7 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 
    If you're connecting for the first time, you might be prompted to sign in. 
  
-   After you connect to the server, the extension shows all the collections, projects and teams in that server. 
+   After you connect to the server, the extension shows all the collections, projects, and teams in that server. 
 5. Select the project or team you want to connect to and select **Save**.
 
    ![Screenshot showing project or team selection.](media/connected-mode-exploratory-testing/connected-mode-03.png)
@@ -95,7 +95,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   > You can also [add your findings to an existing similar bug](reference-qa.yml#addsimilar). 
+   You can also [add your findings to an existing similar bug](reference-qa.yml#addsimilar). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. The timeline shows all the screenshots, videos, notes, the work items such as bugs, tasks, and test cases you already
@@ -106,7 +106,7 @@ Do the following steps to start your exploratory testing session and create bugs
    You can use the extension to [explore work items](explore-workitems-exploratory-testing.md)
    in Azure DevOps.
 
-2. To view a bug or task in Azure DevOps, choose the link in the session timeline.
+1. To view a bug or task in Azure DevOps, choose the link in the session timeline.
 
    ![Screenshot of view a bug or task.](media/connected-mode-exploratory-testing/create-bugs-09.png)
 
@@ -126,18 +126,13 @@ The extension lets you create test cases as you explore your application.
 
    ![Screenshot showing creating a test case.](media/connected-mode-exploratory-testing/create-testcase-01.png)
 
-2. The test case form contains a list of all your actions up to this point
-   while exploring the app (it reads them from the image action log).
+2. The test case form lists all your actions while exploring the app, as recorded in the image action log.
 
    ![Screenshot showing the actions for the new test case.](media/connected-mode-exploratory-testing/create-testcase-02.png)
 
-3. Enter a title for the test case and then edit it as required. For example, 
-   uncheck the action steps you don't want to include in the test case, edit the captured 
-   text, and add the expected result. Then save the test case.
+3. Enter a title for the test case and then edit it as required. For example, uncheck the action steps you don't want to include in the test case, edit the captured text, and add the expected result. Then save the test case.
  
    ![Screenshot showing editing a new test case.](media/connected-mode-exploratory-testing/create-testcase-03.png)
-
-4. Continue exploring the application. Create more bugs, tasks, or test cases  as required. 
 
 <a name="endsession"></a>
 

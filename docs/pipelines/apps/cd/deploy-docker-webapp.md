@@ -119,8 +119,6 @@ To complete this section successfully, you must have an [Azure Container Registr
 
 1. To deploy your image from the container registry, you must enable the admin user account. Navigate to your container registry in Azure portal, and select **Access keys**. Next, select the toggle button to **Enable Admin user**.
 
-    :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
-
 ## Create a Web App
 
 1. Navigate to [Azure portal](https://portal.azure.com).

@@ -29,7 +29,7 @@ Azure Repos Git, GitHub, and Bitbucket Cloud repositories are supported. For mor
 
 We now have GitHub Actions for [Azure Pipelines (Azure/pipelines)](https://github.com/Azure/pipelines). You can use Azure/pipelines to trigger a run in Azure Pipelines as part of your GitHub Actions workflow.
 
-[GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-github-actions) makes it easy to build, test, and deploy your code right from GitHub. You can also use it to trigger external CI/CD tools and services. For example, you can use GitHub Actions for continuous integration, and [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/?nav=min) for continuous delivery to leverage features like Approvals, Environments and deep integration with Kubernetes.
+GitHub Actions makes it easy to build, test, and deploy your code right from GitHub. You can also use it to trigger external CI/CD tools and services. For example, you can use GitHub Actions for continuous integration, and [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/?nav=min) for continuous delivery to leverage features like Approvals, Environments and deep integration with Kubernetes.
 
 You can use this action to trigger a specific pipeline (YAML or classic release pipeline) in Azure DevOps. GitHub Actions will take the Project URL, pipeline name, and a [Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?tabs=preview-page&view=azure-devops&preserve-view=true) for your Azure DevOps organization as inputs.
 

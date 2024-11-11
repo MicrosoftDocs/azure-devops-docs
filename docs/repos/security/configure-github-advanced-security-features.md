@@ -9,26 +9,26 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 10/20/2023
+ms.date: 10/24/2024
 ---
 
 # Configure GitHub Advanced Security for Azure DevOps
 
 GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. 
 
-GitHub Advanced Security for Azure includes:
+GitHub Advanced Security for Azure DevOps includes:
 * Secret Scanning push protection: check if code pushes include commits that expose secrets such as credentials  
 * Secret Scanning repo scanning: scan your repository and look for exposed secrets that were committed accidentally
 * Dependency Scanning – search for known vulnerabilities in open source dependencies (direct and transitive)
 * Code Scanning – use CodeQL static analysis engine to identify code-level application vulnerabilities such as SQL injection and authentication bypass 
 
-At this time, GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Services and there are no plans to bring this product to Azure DevOps Server. 
+At this time, GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Services and there are no plans to bring this product to Azure DevOps Server. GitHub Advanced Security for Azure DevOps is also only available for code Git repositories. 
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
 ## Prerequisites
 
-You must have permissions allocated as a member of the Project Collection Administrators group.  To add members to the Project Collection Administrators group or change a project collection-level permission see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
+You must have permissions allocated as a member of the Project Collection Administrators group. To add members to the Project Collection Administrators group or change a project collection-level permission see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
 
 ### Extra prerequisites for self-hosted agents
 
@@ -38,21 +38,17 @@ If your organization uses self-hosted agents, there are more requirements:
 
 | Domain URL  | Description |
 | ----------- | ----------- |
-| `https://governance.dev.azure.com/{organization_name}` | For organizations using the dev.azure.com domain to access their DevOps instance  |
-| `https://dev.azure.com/{organization_name}` | For organizations using the dev.azure.com domain to access their DevOps instance |
-| `https://advsec.dev.azure.com/{organization_name}` | For organizations using the dev.azure.com domain to access their DevOps instance |
-| `https://{organization_name}.governance.visualstudio.com/` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
+| `https://governance.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance  |
+| `https://dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
+| `https://advsec.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
+| `https://{organization_name}.governance.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
 | `https://{organization_name}.visualstudio.com`  | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance | 
-| `https://{organization_name}.advsec.visualstudio.com/` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
+| `https://{organization_name}.advsec.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
 
-* Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
+* Run a compatible version of the .NET runtime (currently .NET 8.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
-* Install the CodeQL bundle to the agent tool cache by utilizing the setup script for your architecture, available on [GitHub](https://github.com/microsoft/GHAzDO-Resources/tree/main/src/agent-setup). These scripts require the
-`$AGENT_TOOLSDIRECTORY` environment variable to be set to the location of the agent tools directory on the agent, e.g. `C:/agent/_work/_tool`. Alternatively, you may manually implement the following steps: 
-    1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
-    2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
-    3.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`.
-
+* Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You may utilize the `enableAutomaticCodeQLInstall: true` variable with the `Advanced-Security-CodeQL@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
+  
 ## Enable GitHub Advanced Security
 
 You can enable Advanced Security at the organization, project, or repository level. To access each of the scanning tools and results, you need to first enable Advanced Security. Once you enable Advanced Security, any future pushes containing secrets to a repository with this policy enabled are blocked, and repository secret scanning happens in the background.
@@ -69,7 +65,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 1. Go to your **Project settings** for your Azure DevOps project. 
 1. Select **Repos**. 
 1. Select the **Settings** tab. 
-1. Select **Enable all** and you'll see an estimate for the number of active committers for your project appear. 
+1. Select **Enable all** and see an estimate for the number of active committers for your project appear. 
 1. Select **Begin billing** to activate Advanced Security for every existing repository in your project. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created repositories have Advanced Security enabled upon creation. 
 
@@ -78,7 +74,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
 1. Select **Repositories**. 
-1. Select **Enable all** and you'll see an estimate for the number of active committers for your organization appear. 
+1. Select **Enable all** and see an estimate for the number of active committers for your organization appear. 
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created projects have Advanced Security enabled upon creation. 
 
@@ -132,7 +128,7 @@ Add the tasks in the following order:
 
 :::image type="content" source="media/code-scanning-config-yaml-tasks.png" lightbox="media/code-scanning-config-yaml-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML.":::
 
-Additionally, you'll need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`.  
+Additionally, you need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`. If you're utilizing self-hosted agents, you may also add the `enableAutomaticCodeQLInstall: true` variable to automatically install the latest CodeQL bits for your agent.
 
 Here is an example starter pipeline:
 
@@ -152,9 +148,11 @@ steps:
       languages: "java"
       # Supported languages: csharp, cpp, go, java, javascript, python, ruby, swift
       # You can customize the initialize task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1?view=azure-pipelines
+      # If you're using a self-hosted agent to run CodeQL, use `enableAutomaticCodeQLInstall` to automatically use the latest CodeQL bits on your agent:
+      enableAutomaticCodeQLInstall: true
 
 #   Add your custom build steps here
-# - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you are building from a clean state).
+# - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you're building from a clean state).
 # - Disable the use of any build caching mechanisms as this can interfere with CodeQL's ability to capture all the necessary data during the build.
 # - Disable the use of any distributed/multithreaded/incremental builds as CodeQL needs to monitor executions of the compiler to construct an accurate representation of the application.
 # - For dependency scanning, ensure you have a package restore step for more accurate results.
@@ -186,25 +184,33 @@ steps:
 > Use `java` to analyze code written in Java, Kotlin or both.
 > Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
-If the language specified is `cpp, java, csharp` or `swift` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action.
+If the language specified is `cpp, java, csharp` or `swift` custom build steps are required.
 
 
 #### [Classic](#tab/classic)
 
 Add the tasks in the following order: 
 1. `Advanced Security Initialize CodeQL`
-1. `Advanced Security AutoBuild` (language-dependent) or replace this with your own custom build steps
+1. Add your own custom build steps
 1. `Advanced Security Perform CodeQL Analysis`
 
 :::image type="content" source="media/code-scanning-config-classic-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML." lightbox="media/code-scanning-config-classic-tasks.png" :::
 
-Additionally, you will need to specify which language(s) you are analyzing in the Initialize CodeQL task. If the language specified is `cpp, java, csharp` or `swift,` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action. 
+Additionally, you will need to specify which language(s) you're analyzing in the Initialize CodeQL task. If the language specified is `cpp, java, csharp` or `swift,`  custom build steps are required.
+
+If you're running on a self-hosted agent, select the `Enable automatic CodeQL detection and installation` to automatically use the latest CodeQL bits on your agent if you did not manually install the latest CodeQL bundle to your agent tool cache.
 
 To generate alerts, run your first scan with a pipeline with the code scanning tasks included.
 
 --- 
 
-If, for whatever reason, you need to disable Advanced Security, any alerts and state of alerts will be retained for the next time you re-enable Advanced Security for your repository.
+## Set up pull request annotations 
+
+For both dependency scanning and code scanning, annotations are automatically configured for pull requests where a build validation policy applies with dependency scanning and/or code scanning tasks included in your pipeline. For more information on configuring build validation policies, see [Build validation](../git/branch-policies.md#build-validation).
+
+For more information on resolving alerts for pull request branches, see [Managing dependency scanning alerts on pull requests](github-advanced-security-dependency-scanning.md#managing-dependency-scanning-alerts-on-pull-requests) and [Managing code scanning alerts on pull requests](github-advanced-security-code-scanning.md#managing-code-scanning-alerts-on-pull-requests).
+
+If, for whatever reason, you need to disable Advanced Security, any alerts and state of alerts will be retained in the Advanced Security tab for the next time you re-enable Advanced Security for your repository.
 
 ## Next steps
 

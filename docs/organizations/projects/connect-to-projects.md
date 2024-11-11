@@ -36,11 +36,11 @@ A project defines a process and data storage in which you manage your software p
 ## Connect from the web portal
 
 ::: moniker range="azure-devops"
-- Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
+- Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 ::: moniker-end
 
 ::: moniker range=" < azure-devops" 
-- Sign in to your project (```http://ServerName/{DefaultCollection}/{ProjectName}```). 
+- Sign in to your project (```http://ServerName/{DefaultCollection}/{Project_Name}```). 
 ::: moniker-end
 
 For more information, see [Web portal navigation](../../project/navigation/index.md).
@@ -240,7 +240,7 @@ To connect to a project, you need your user account added to the project. The **
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-You can also provide access to Stakeholders in your organization with limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
+You can also provide access to Stakeholders in your organization with limited access to specific features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 

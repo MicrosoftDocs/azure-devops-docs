@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 06/29/2023
+ms.date: 08/07/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -44,15 +44,15 @@ variable. You can do this at the step or task level:
 
 ```yaml
 steps:
-  - bash: echo This script could use $SYSTEM_ACCESSTOKEN
-    env:
-      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-  - powershell: | 
-      Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
-      Write-Host "$env:SYSTEM_ACCESSTOKEN = $(System.AccessToken)"
+  - script: |
+      echo "Using System.AccessToken to authenticate"
+      git clone https://$(System.AccessToken)@dev.azure.com/yourorganization/yourproject/_git/yourrepository
+    displayName: 'Clone repository using System.AccessToken'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
+
+
 
 You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 

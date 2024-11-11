@@ -95,7 +95,7 @@ If you want to develop your own widget based on Analytics, see [Create an Analyt
 
 ## In-context reports and roll-up columns 
 
-Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and Kanban boards. Also, there are some pipelines and test in-context reports. To learn more, see the following articles: 
+Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and boards. Also, there are some pipelines and test in-context reports. For more information, see the following articles: 
 
 - [Cumulative flow](../dashboards/cumulative-flow.md)
 - [Team velocity](../dashboards/team-velocity.md)
@@ -112,7 +112,7 @@ Also, you can add rollup columns to product and portfolio backlogs that provide 
 
 Analytics views is a web portal feature that supports filtering work tracking data for status and trend reports. With Analytics views, you can use default or custom views to generate reports in Power BI. Power BI provides a data connector for Analytics views.  
 
-To learn more, see [What are Analytics views?](what-are-analytics-views.md).
+For more information, see [What are Analytics views?](what-are-analytics-views.md).
  
 
 ## Metadata & OData queries

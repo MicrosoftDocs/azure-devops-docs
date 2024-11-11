@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
 monikerRange: ">= azure-devops-2020"
-ms.date: 08/16/2023
+ms.date: 07/16/2024
 ---
 
 # Change a project process from Basic to Agile
@@ -24,12 +24,12 @@ Before you change your process, you should learn about the new process you're sw
 |**Basic** | ![Basic work item types](../../../boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/media/track-issues/basic-process-workflow.png)|
 |**Agile** | ![Agile work item types](media/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
 
-Some of the benefits of changing your process from Basic to Agile are:
+Let's break down some of the benefits of transitioning your process from Basic to Agile:
 
-- You can use separate bugs to track code defects, instead of issues and user stories
-- You can follow the Agile workflow states, which are different from the Basic process states
-- You can access both Feature and Epic portfolio backlogs, which help you organize your work items
-- You can comply with your organization’s requirement to use a customized inherited process based on the Agile process
+- **Separate bug tracking:** In the Agile process, you can create separate work items specifically for tracking code defects (bugs). This action allows you to manage them independently from other work items like issues and user stories.
+- **Agile workflow states:** Unlike the Basic process, Agile introduces different workflow states. These states align with Agile principles and help you manage work items more effectively. For example, you have states like "To Do," "In Progress," "Done," and others.
+- **Portfolio backlogs:** Agile provides access to both Feature and Epic portfolio backlogs. These backlogs allow you to organize and prioritize work items at a higher level, making it easier to plan and manage your project.
+- **Customized inherited process:** If your organization requires a customized process based on Agile principles, transitioning to Agile ensures compliance. You can tailor the process to your team’s specific needs while still following Agile practices.
 
 For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
@@ -41,49 +41,78 @@ For more information, see [About processes and process templates](../../../board
 
 ## Change the process
 
-1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
+:::moniker range="azure-devops"
 
-2. Select :::image type="icon" source="../../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
+1. Sign in to your organization: ```https://dev.azure.com/{Your_Organization}```.
+
+1. Select :::image type="icon" source="../../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
 
    :::image type="content" source="../../../media/open-organization-settings.png" alt-text="Screenshot of highlighted Organization settings button.":::
-3. Select **Process**, and then choose **Basic**.
+
+2. Select **Process**, and then choose **Basic**.
 
    :::image type="content" source="../../../media/settings/open-process-page-basic.png" alt-text="Screenshot of highlighted Process tab.":::
 
-4. Choose **Projects**.
+3. Select **Projects**.
 
    :::image type="content" source="media/change-process/choose-basic-process-projects.png" alt-text="Screenshot of highlighted Projects tab.":::
 
-5. For the project you want to change, select the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Change process** and follow the steps in the wizard.
+4. For the project you want to change, select the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Change process** and follow the steps in the wizard.
 
    :::image type="content" source="media/change-process/change-process-basic-to-agile.png" alt-text="Screenshot of highlighted Change process selection.":::
 
-6. Choose **Agile** from the dropdown menu, and then select **Save**.
+5. Choose **Agile** from the dropdown menu, and then select **Save**.
 
    :::image type="content" source="media/change-process/change-process-basic-to-agile-wizard-choose-agile.png" alt-text="Screenshot of Agile process selection.":::
 
-   The wizard displays the following information. Notice the steps to manually update your work items and board settings and **Close** the window when you're done.
+   The wizard displays the following information. Notice the steps to manually update your work items and board settings and **Close** the window.
 
    :::image type="content" source="media/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png" alt-text="Screenshot of completion page.":::
 
-7. (Optional) If you had existing work items, manually update work items and board settings.
-   1. Update the column to state mapping for each team Kanban board.
+6. (Optional) If you had existing work items, manually update work items and board settings.
+   1. Update the column to state mapping for each team board.
+   2. Update existing work items using the work item types set by the target process.
+   3. Update existing work items using the correct state model of the target process.
+::: moniker-end
+
+:::moniker range="< azure-devops"
+
+1. Sign in to your collection.
+
+2. Select :::image type="icon" source="../../../media/icons/gear-icon.png" border="false"::: **Collection settings** > **Process** > **Basic** > **Projects**.
+
+3. For the project you want to change, select the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Change process** and follow the steps in the wizard.
+
+   :::image type="content" source="media/change-process/change-process-basic-to-agile.png" alt-text="Screenshot of highlighted Change process selection.":::
+
+4. Choose **Agile** from the dropdown menu, and then select **Save**.
+
+   :::image type="content" source="media/change-process/change-process-basic-to-agile-wizard-choose-agile.png" alt-text="Screenshot of Agile process selection.":::
+
+   The wizard displays the following information. Notice the steps to manually update your work items and board settings and **Close** the window.
+
+   :::image type="content" source="media/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png" alt-text="Screenshot of completion page.":::
+
+5. (Optional) If you had existing work items, manually update work items and board settings.
+   1. Update the column to state mapping for each team board.
    2. Update existing work items using the work item types set by the target process.
    3. Update existing work items using the correct state model of the target process.
 
-## Update Kanban board column-to-state settings
+:::moniker-end
 
-You can customize Kanban boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. To learn more, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
+## Update board column-to-state settings
 
-1. For each team, [open your Kanban board](../../../boards/get-started/plan-track-work.md), and then select **Correct this now** or select the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
+You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
-   :::image type="content" source="media/change-process/open-kanban-board.png" alt-text="Screenshot of opened Kanban board.":::
+1. For each team, [open your board](../../../boards/get-started/plan-track-work.md), and then select **Correct this now** or select the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
+
+   :::image type="content" source="media/change-process/open-kanban-board.png" alt-text="Screenshot of opened board.":::
 
    The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 
    :::image type="content" source="media/change-process/kanban-stories-column-settings-to-correct.png" alt-text="Screenshot of Column dialog with settings to correct.":::
 
-2. Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. **Save** your work when you're done. For more information, see [Manage columns on your Kanban board.](../../../boards/boards/add-columns.md)
+2. Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. **Save** your work. For more information, see [Manage columns on your board.](../../../boards/boards/add-columns.md)
 
 ## Update work items
 
@@ -113,7 +142,7 @@ You can customize Kanban boards to display intermediate columns. For each column
 
 6. Repeat these steps for the Done state, changing it to Closed; and the To Do state, changing it to New.
 
-7.  When you're done, **Save** your changes.
+7.  **Save** your changes.
 
 ## Verify your changes
 
@@ -129,7 +158,7 @@ You can customize Kanban boards to display intermediate columns. For each column
 
 ## Related articles
 
-- [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
+- [Modify work items in bulk](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
 - [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)

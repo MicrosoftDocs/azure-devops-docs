@@ -48,7 +48,7 @@ You can import work items using Excel. As shown in the following image, Epics, F
 
 Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details, and assigning work to team members and to sprints. 
 
-To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
+For more information about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 ### Document Portfolio Vision and Strategic Themes  
 
@@ -61,7 +61,7 @@ We recommend you use the project wiki to capture and share the Portfolio Vision,
 - Customer-centric programs 
 
 Information can be easily shared and updated by any member of the team. 
-To learn more about using the project wiki, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
+For more information about using the project wiki, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 
 ### Define and prioritize the Epics portfolio backlog
 
@@ -204,15 +204,15 @@ Just as you earlier mapped each Feature to its parent Epic, now you'll map each 
 	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)
 
 
-## View Kanban boards and update status  
+## View boards and update status  
 
-Each team's Kanban board provides a visual interactive space for the team to plan and update status. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
+Each team's board provides a visual interactive space for the team to plan and update status. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
-For an overview of Kanban board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. For more information, see [Customize your boards](../configure-customize.md).
+For an overview of board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. For more information, see [Customize your boards](../configure-customize.md).
 
-### Open a Kanban board  
+### Open a board  
 
-You open the Kanban board from any backlog by choosing the **View as Board** link. 
+You open the board from any backlog by choosing the **View as Board** link. 
 
 > [!div class="mx-imgBorder"]
 > ![Epic board](media/safe-plan-track/view-epics-kanban.png)
@@ -228,26 +228,26 @@ Each board supports the following tasks:
 
 <a id="portfolio-team-board"></a>
 
-### Portfolio Kanban board  
+### Portfolio board  
 
 Child items of Epics are listed within each card. You can expand and collapse the list of child items. 
 
 > [!div class="mx-imgBorder"]
-> ![Epics Kanban board](media/safe-plan-track/epics-kanban-board.png)
+> ![Epics board](media/safe-plan-track/epics-kanban-board.png)
  
 <a id="program-team-board"></a>
 
-### Program team Kanban board 
+### Program team board 
 
 > [!div class="mx-imgBorder"]
-> ![Fiber Suite Kanban board](media/safe-plan-track/features-kanban-board.png)
+> ![Fiber Suite board](media/safe-plan-track/features-kanban-board.png)
 
 <a id="agile-team-board"></a>
 
-### Agile team Kanban board 
+### Agile team board 
 
 > [!div class="mx-imgBorder"]
-> ![Feature team Kanban board](media/safe-plan-track/user-story-kanban-board.png)
+> ![Feature team board](media/safe-plan-track/user-story-kanban-board.png)
 
 
 ## Plan a sprint 
@@ -259,7 +259,7 @@ As shown in the following image, the App team plans their sprints.
 > [!div class="mx-imgBorder"]
 > ![App team, Backlogs, Sprint planning](media/safe-plan-track/plan-sprint.png)
 
-To learn more about planning and conducting sprints, see the tutorials for [Plan and work a sprint](../sprints/assign-work-sprint.md). 
+For more information about planning and conducting sprints, see the tutorials for [Plan and work a sprint](../sprints/assign-work-sprint.md). 
 
 ## Plan a release train  
 
@@ -279,7 +279,7 @@ Here we show the Fiber Suite program team plan the releases for their features.
 When creating and updating work items, understand what you can and can't do.  
 - You can only assign a work item to one team member; if you need to assign similar work to more than one user, copy the work item and make the assignment 
 - Can only assign a work item to a single Area Path and Iteration Path
-- The quickest way to add backlog work items is from the backlog or Kanban board 
+- The quickest way to add backlog work items is from the backlog or board 
 - You can use [work item templates](../backlogs/work-item-template.md) to quickly fill in work item fields
 
 <a id="bulk-update"></a>

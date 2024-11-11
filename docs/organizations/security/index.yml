@@ -9,9 +9,9 @@ metadata:
   description: Assign users to security groups, manage permissions, access levels, and billing for Azure DevOps.  
   ms.subservice: azure-devops-security
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
-  ms.date: 04/22/2024
+  author: chcomley 
+  ms.author: chcomley 
+  ms.date: 07/03/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -25,6 +25,8 @@ landingContent:
         links:
           - text: About permissions, access, and security groups
             url: about-permissions.md
+          - text: Security best practices
+            url: security-best-practices.md
       - linkListType: quickstart
         links:
           - text: View permissions
@@ -37,7 +39,7 @@ landingContent:
             url: request-changes-permissions.md
           - text: Add or remove users or security groups
             url: add-remove-manage-user-group-security-group.md 
-  - title: Access levels
+  - title: Manage access
     linkLists:
       - linkListType: concept
         links:
@@ -47,34 +49,22 @@ landingContent:
             url: stakeholder-access.md
       - linkListType: quickstart
         links:
-          - text: Add users or groups to an access level (on-premises)
+          - text: Change access levels (on-premises)
             url: change-access-levels.md?view=azure-devops-2020&preserve-view=true
+          - text: Add users or groups to a team or project (on-premises)
+            url: add-users-team-project.md 
       - linkListType: tutorial
         links:
           - text: Get started as a Stakeholder
             url: get-started-stakeholder.md
-  - title: Manage user access (cloud) 
-    linkLists:
-      - linkListType: quickstart
+      - linkListType: how-to-guide
         links:
           - text: Create an organization 
             url: ../accounts/create-organization.md?toc=/azure/devops/organizations/security/toc.json  
-      - linkListType: how-to-guide
-        links:
           - text: Add users to your organization 
             url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json  
           - text: Connect your organization to Microsoft Entra ID
             url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
-  - title: Manage user access (on-premises) 
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Change access levels 
-            url: change-access-levels.md 
-      - linkListType: how-to-guide
-        links:
-          - text: Add users or groups to a team or project
-            url: add-users-team-project.md 
   - title: Manage billing
     linkLists:
       - linkListType: overview
@@ -86,10 +76,10 @@ landingContent:
           - text: Buy Basic access
             url: ../billing/buy-basic-access-add-users.md
           - text: Set up billing for your organization
-            url: ../billing/set-up-billing-for-your-organization-vs.md
+            url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
           - text: Try Azure Test Plans for free
             url: ../billing/try-additional-features-vs.md
-  - title: Authenticate, PATs, & secure applications 
+  - title: Authenticate, use PATs, & secure applications 
     linkLists:
       - linkListType: concept
         links:
@@ -129,8 +119,6 @@ landingContent:
         links:
           - text: Default permissions quick reference 
             url: permissions-access.md 
-          - text: Security management tools 
-            url: security-tools-reference.md
       - linkListType: reference
         links:
           - text: Permissions lookup guide

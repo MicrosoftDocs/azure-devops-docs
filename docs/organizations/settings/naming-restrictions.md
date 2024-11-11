@@ -8,7 +8,7 @@ ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/28/2023
+ms.date: 05/30/2024
 ---
 
 # Naming restrictions and conventions  
@@ -19,8 +19,12 @@ Most components in Azure DevOps must follow naming restrictions and conventions.
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
-> [!NOTE]   
-> For limits on the number of items you can define, see [Work tracking, process, and project limits](work/object-limits.md).
+> [!IMPORTANT]   
+> When using the API, rather than user interface (UI), the API allows you to directly specify a name, which includes characters that might be restricted in the UI. 
+> 
+> **Best practices:** 
+> - Follow the UI restrictions to maintain consistency and prevent unintended issues.
+> - Validate names programmatically and handle any special characters appropriately.
 
 <a id="CommonRestrictions">   </a>
 
@@ -29,6 +33,9 @@ Common restrictions include not exceeding the character length for a name, not c
 The length restrictions in this article get measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count as two characters against the length restriction. For more information, see [About Unicode and Character Sets](/windows/win32/intl/about-unicode-and-character-sets). 
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
+
+> [!NOTE]
+> - For limits on the number of items you can define, see [Work tracking, process, and project limits](work/object-limits.md).
 
 <a id="reserved"></a>
 
@@ -59,12 +66,12 @@ Universal packages must conform to the following restrictions.
 
 ## Azure Boards 
 
-<a id="WorkItems"/>
-<a id="work-items-work-item-types-and-customizations"/>
+<a id="WorkItems"></a>
+<a id="work-items-work-item-types-and-customizations"></a>
 
 You use work items to capture information to plan and track your software development projects. With work items, you can describe the work to be done, assign work, track status, and coordinate efforts within your team. Different types of work items&mdash;such as user stories, tasks, bugs, and issues&mdash;track different types of information. For more information, see [Azure Boards documentation](../../boards/index.yml).
 
-All work item tracking objects are associated with one or more names. Most have friendly display names, except work item types and global lists, which are associated with reference names. A friendly name is a unique, user-visible identifier for a field. Using friendly names ensures consistency across projects and work item types in a project collection. The system uses the reference name internally and you can't change it after it's defined.  
+All work item tracking objects are associated with one or more names. Most have friendly display names, except work item types and global lists, which are associated with reference names. A friendly name is a unique, user-visible identifier for a field. Using friendly names ensures consistency across projects and work item types in a project collection. The system uses the reference name internally and you can't change it once defined.  
 
 There are restrictions on several elements that are associated with work items, including reference and friendly names, field names, and attachment size.  
 
@@ -91,42 +98,42 @@ Files attached to work items must conform to the following restrictions.
 ::: moniker range="< azure-devops"
 |Restriction type  |Restriction  |
 |---------|---------|
-|File size   | Must not exceed the maximum size:<br>- Default maximum size: 4,096 kilobytes.<br>- Absolute maximum size: 2 gigabytes. For more information, see [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).   |
+|File size   | Must not exceed the maximum size:<br/>- Default maximum size: 4,096 kilobytes.<br/>- Absolute maximum size: 2 gigabytes. For more information, see [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).   |
 ::: moniker-end
 
 <a id="Kanban"></a>
 
 ### Board column and swimlane names 
 
-Your [Kanban board](../../boards/boards/kanban-overview.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
+Your [board](../../boards/boards/kanban-overview.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
 
-Customize your Kanban boards by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
+Customize your board by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
 
 Column and swimlane names must conform to the following restrictions.
 
 |Restriction type |Restriction |
 |---------|---------|
 |Length    | Must not contain more than 256 Unicode characters.    |
-|Uniqueness     |- Column names must not be the same as any other column name on the Kanban board.<br>- Swimlane names must not be the same as any other swimlane name on the Kanban board.         |
+|Uniqueness     |- Column names must not be the same as any other column name on the board.<br>- Swimlane names must not be the same as any other swimlane name on the board.         |
 |Special characters    | Must not contain any Unicode control characters or surrogate characters. |
 
 <a id="WorkItemFields">   </a>
 
 ### Field names 
 
-Each work item type contains one or more work item fields. These fields define the information stored for work items based on the work item type.  Each work item field has an associated field reference name. The field reference name uniquely identifies each field and can't be changed after it's assigned. For more information about out-of-box work item fields, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
+Each work item type contains one or more work item fields. These fields define the information stored for work items based on the work item type. Each work item field has an associated field reference name. The field reference name uniquely identifies each field and can't be changed once assigned. For more information about out-of-box work item fields, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
 Work item field names must conform to the following restrictions.  
 
 |Restriction type |Restriction |
 |-----------------|------------|
 |Length    | Must not contain more than 128 Unicode characters.    |
-|Uniqueness|- Field names must contain at least one alphabetic character.<br/>- Must not contain any one of the following characters: `.,;':~\/\*|?"&%$!+=()[]{}<>-`.<br/>- Must not contain leading or trailing spaces.<br/>- Must not contain two or more consecutive spaces.   |
+|Uniqueness|- Field names must contain at least one alphabetic character.<br/>- Must not contain any one of the following characters: `. , ; ' : ~ \ / \ * ? " & % $ ! + = () [] {} <> -` &#124;.<br/>- Must not contain leading or trailing spaces.<br/>- Must not contain two or more consecutive spaces.   |
 |Special characters | Must be unique within the organization or project collection. Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. |
 
 #### Field reference names and portability  
 
-The work item type definition language includes the concept of a *field reference name*. Field reference names can help you to port definitions between Team Foundation project collections and also to allow third-party integrations to find and refer to specific fields. These names are globally unique, just as a namespace in the .NET Framework application is globally unique.  
+The work item type definition language includes the concept of a *field reference name*. Field reference names can help you to port definitions between Team Foundation project collections and also to allow non-Microsoft integrations to find and refer to specific fields. These names are globally unique, just as a namespace in the .NET Framework application is globally unique.  
 
 The **System** namespace is used only to define all core system fields that are mandatory for Team Foundation system functions. You can't create your own System.X field because it might impede functionality.  
 
@@ -154,7 +161,7 @@ The following examples show valid field reference names, in various namespaces. 
 
 The system displays help text at run time to help users know what to enter into the field. Help text is scoped to a specific work item type in a specific project. 
 
-For the Inheritance process, you specify help text for a field through the **Edit field** dialog, **Definition** tab, **Description**. See [Add a custom field to a work item type](work/add-custom-field.md). For the On-premises XML process, you specify help text by using the `HELPTEXT` element. See [Add or modify a field to track work](../../reference/add-modify-field.md#add-rules-to-a-field).
+For the Inheritance process, you specify help text for a field through the **Edit field** dialog, **Definition** tab, **Description**. See [Add a custom field to a work item type](work/add-custom-field.md). For the On-premises XML process, you specify help text by using the `HELPTEXT` element. See [Add or modify a field for work tracking](../../reference/add-modify-field.md#add-rules-to-a-field).
 
 Help text that you add must conform to the following restrictions. 
 
@@ -164,7 +171,7 @@ Help text that you add must conform to the following restrictions.
 
 ### Global lists 
 
-A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises Azure DevOps Server. As you define work item types, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple work item types and projects. For details, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
+A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises Azure DevOps Server. As you define work item types, you might find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple work item types and projects. For details, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
 
 A global list, defined using the `GLOBALLIST` element contains one or more list items, specified using the `LISTITEM` element.
 
@@ -215,15 +222,15 @@ Azure Pipeline definitions must conform to the following restrictions.
 
 |Restriction type |Restriction  |
 |---------|---------|
-|Job name    |- Must only contain alphanumeric characters and `'_'`.<br/>- Must not start with a number.<br/>- Must have a unique name.<br/>- Must not contain keywords, for example: "deployment".         |
-|Stage name     | - Must only contain alphanumeric characters and `'_'`.<br/>- Must not start with a number.<br/>- Must not contain keywords, for example: "deployment".        |
+|Job name    |- Must only contain alphanumeric characters and `'_'`.<br/>- Must not start with a number.<br/>- Must have a unique name.<br/>- Must not contain keywords, for example: "deployment."         |
+|Stage name     | - Must only contain alphanumeric characters and `'_'`.<br/>- Must not start with a number.<br/>- Must not contain keywords, for example: "deployment."        |
 |Expressions    | Must start with `a-Z` or `_AND`, followed by `a-Z`, `0-9`, or `_`.        |
 
 For more information, see [Azure Pipelines documentation](../../pipelines/index.yml).
 
 ## Azure Repos (Git)
 
-Each Azure DevOps project can contain multiple Git repositories. The names you assign to Git repositories must conform to the following restrictions. To learn more, see [Azure Repos Git documentation](../../repos/git/index.yml).For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format). 
+Each Azure DevOps project can contain multiple Git repositories. The names you assign to Git repositories must conform to the following restrictions. For more information, see [Azure Repos Git documentation](../../repos/git/index.yml). For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format). 
 
 > [!IMPORTANT]
 > Although you can include spaces within repo names, we don't recommend that you do so.
@@ -232,13 +239,13 @@ Each Azure DevOps project can contain multiple Git repositories. The names you a
 |---------|---------|
 |Length     | Must not contain more than 64 Unicode characters.        |
 |Uniqueness    | Must not be identical to any other Git repo name in the project.        |
-|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).        |
+|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `\ / : * ? " < > ; # $ * { } , + = [ ]` &#124;.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).        |
 
 <a id="SourceControl">   </a>
 
 ## Azure Repos (TFVC) 
  
-Team Foundation version control (TFVC) provides a central repository for files and the commands that are required to manage those files across a team. It also provides customizable check-in policies, branching, merging, shelving, and many other features. To learn more, see [Azure Repos TFVC documentation](../../repos/tfvc/index.yml)
+Team Foundation version control (TFVC) provides a central repository for files and the commands that are required to manage those files across a team. It also provides customizable check-in policies, branching, merging, shelving, and many other features. For more information, see [Azure Repos TFVC documentation](../../repos/tfvc/index.yml)
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](../../repos/tfvc/optimize-your-workspace.md).
 
@@ -258,8 +265,8 @@ Files and folders you add to Team Foundation version control must conform to the
 
 |Restriction type |Restriction |
 |---------|---------|
-|Files and folders    |- Names must not contain the following printable characters: `\ / : * ? " < > | ;`.<br>- Folders must not be outside the mapped directory for the active workspace.   |
-|File names   | - Must not begin with a `$`.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ;`.        |
+|Files and folders    |- Names must not contain the following printable characters: `\ / : * ? " < > ;`.<br>- Folders must not be outside the mapped directory for the active workspace.   |
+|File names   | - Must not begin with a `$`.<br>- Must not contain the following printable characters: `\ / : * ? " < > ;` &#124;.     |
 
 ### TFVC labels
 
@@ -268,7 +275,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
 |Restriction type |Restriction |
 |---------|---------|
 |Length    |Must not contain more than 64 Unicode characters.  |
-|Special characters | - Can't end with a space `( )` or period `.`.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; @`. |
+|Special characters | - Can't end with a space `( )` or period `.`.<br>- Must not contain the following printable characters: `\ / : * ? " < > ; @` &#124;. |
 
 
 ### TFVC Shelvesets 
@@ -280,7 +287,7 @@ Shelveset names must conform to the following restrictions.
 |Restriction type |Restriction |
 |---------|---------|
 |Length    |Must not contain more than 64 Unicode characters.  |
-|Special characters | Must not contain the following printable characters: `\ / : * ? " < > | ;`. |
+|Special characters | Must not contain the following printable characters: `\ / : * ? " < > & ;` &#124;. |
 
 ### TFVC workspaces
 
@@ -291,7 +298,7 @@ Workspace names must conform to the following restrictions.
 |Restriction type |Restriction |
 |---------|---------|
 |Length    |Must not contain more than 64 Unicode characters.  |
-|Special characters | - Must not end with a space `( )`.<br/>- Must not contain the following printable characters: `\ / : * ? " < > | ;`. |
+|Special characters | - Must not end with a space `( )`.<br/>- Must not contain the following printable characters: `\ / : * ? " < >  ;` &#124;. |
 
 ::: moniker range="< azure-devops"
 
@@ -348,7 +355,7 @@ Names you assign to project collections must conform to the following restrictio
 |Length    |  Must not contain more than 64 Unicode characters.       |
 |Uniqueness    | - Must not be identical to any other collection name in your on-premises deployment.<br>- If your deployment includes SharePoint Products or SQL Server Reporting Services, they can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website.        |
 |Reserved names    |  Must not be a [system reserved name](#reserved).         |
-|Special characters | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>                |
+|Special characters | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > ; # $ * { } , + = [ ]` &#124;. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>                |
 
 ::: moniker-end
 
@@ -365,7 +372,7 @@ Names you assign to projects that you create must conform to the following restr
 |Length    |  Must not contain more than 64 Unicode characters.       |
 |Uniqueness    | Must not be identical to any other name in the project collection, the SharePoint Web application that supports the collection, or the instance of SQL Server Reporting Services that supports the collection. |
 |Reserves names    | - Must not be a [system reserved name](#reserved). <br>- Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.  |
-| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.   |
+| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > ; # $ * { } , + = [ ]` &#124;. <br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.   |
 
 <a id="GroupAccountNames">   </a>
 
@@ -373,7 +380,7 @@ Names you assign to projects that you create must conform to the following restr
 
 With Azure DevOps security groups, you can apply certain rights or permissions to a group of users.
 
-On-premises groups may consist of Active Directory group accounts, Azure DevOps security groups, Windows user accounts, Windows group accounts, or any mixture of these types. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
+On-premises groups might consist of Active Directory group accounts, Azure DevOps security groups, Windows user accounts, Windows group accounts, or any mixture of these types. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
 
 Security groups must conform to the following restrictions.  
 
@@ -382,7 +389,7 @@ Security groups must conform to the following restrictions.
 |Security group account name length  |  Must not contain more than 256 Unicode characters.       |
 |Uniqueness    | - Project-level group accounts must not match any other group name in the same project.<br>- Collection-level group accounts must not match any other name of a group account in the project collection.  |
 |Reserved group names    |Must not be named with a $NAMESPACE at either the project or the server level.    |
-| Special characters |- Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `/ \ [ ] : | < > + = ; ? *`. <br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.`.<br>- Must not include commas `,`.   |
+| Special characters |- Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `/ \ [ ] : < > + = ; ? *` &#124;. <br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.`.<br>- Must not include commas `,`.   |
 
 ::: moniker range="< azure-devops"
 
@@ -392,7 +399,7 @@ Team Foundation Build lets you manage all the aspects of the build process on a 
 
 ### Build computer 
 
-Team Foundation Build is a separate installation from the Azure DevOps Server application tier, data tier, or Visual Studio client. You may choose a separate computer. Otherwise, you can install the build side by side on the client computer or on the servers.  
+Team Foundation Build is a separate installation from the Azure DevOps Server application tier, data tier, or Visual Studio client. You can choose a separate computer. Otherwise, you can install the build side by side on the client computer or on the servers.  
 
 Your on-premises build computer must conform to the following restrictions.
 
@@ -442,7 +449,7 @@ Team names must conform to the following restrictions.
 |Length    | Must not contain more than 64 Unicode characters.        |
 |Uniqueness     |Must not be identical to any other name in the project.         |
 |Reserved names   | Must not be a [system reserved name](#reserved).        |
-|Special characters     | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`.<br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.       |
+|Special characters     | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > ; # $ * { } , + = [ ]` &#124;.<br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.       |
 
 ## User account names
 
@@ -452,10 +459,10 @@ User accounts that you add to an organization or collection must conform to the 
 
 |Restriction type |Restriction |
 |---------|---------|
-|Account name length   | Must not contain more than 256 Unicode characters.        |
-|Uniqueness   | Must not match any other user account added to the project collection.        |
-|Reserved group names    | Must not be named with a $NAMESPACE at either the project or the server level.  |
-|Special characters   | - Must not include the following printable characters: `"/ \ [ ] : | < > + = ; ? *`.<br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.` or a dollar sign `$`.<br>- Must not include commas `,`.<br>- Must not include the following Unicode categories: LineSeparator, ParagraphSeparator, Control, Format, OtherNotAssigned.        |
+|Account name length   | Must not contain more than 256 Unicode characters.             |
+|Uniqueness   | Must not match any other user account added to the project collection.  |
+|Reserved group names| Must not be named with a `$NAMESPACE` at either the project or the server level.  |
+|Special characters   | - Must not include the following printable characters: `"/ \ [ ] :  < > + = ; ? *` &#124;.</br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.` or a dollar sign `$`.<br>- Must not include commas `,`.<br>- Must not include the following Unicode categories: LineSeparator, ParagraphSeparator, Control, Format, OtherNotAssigned. |
 
 ## Wiki page and file names
 

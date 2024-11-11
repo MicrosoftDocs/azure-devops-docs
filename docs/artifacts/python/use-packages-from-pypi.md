@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Azure Artifacts, developers can publish and consume packages from Azure Artifacts feeds and external registries such as pypi.org. This article will guide you through setting up your project and using the command line to efficiently consume Python packages from PyPI. 
+Using Azure Artifacts, developers can publish and consume packages from both Azure Artifacts feeds and external registries such as PyPI.org. By enabling upstream sources, you can streamline your package management, using a single feed to manage both your own packages and those consumed from public registries. Once enabled, Azure Artifacts automatically saves a copy of any package installed by a collaborator or higher from an upstream source. This article will guide you through setting up your project and using the command line to efficiently consume Python packages from PyPI. 
 
 In this article, you'll learn how to:
 
@@ -30,9 +30,9 @@ In this article, you'll learn how to:
 
 - Download [Python](https://www.python.org/downloads/).
 
-## Enable upstream sources
+## Enable upstream sources when creating a new feed
 
-If you haven't created a feed yet, follow the steps below to create a new one. Make sure to check the box for *upstream sources* to enable upstream sources. If you already have a feed, skip to the [next step](#add-pypi-upstream) to add PyPI as an upstream source.
+If you haven't created a feed yet, follow the steps below to create a new one. Make sure to check the box for *upstream sources* to enable upstream sources. If you already have a feed, skip to the [next step](#add-pypi-as-a-new-upstream-source) to add PyPI as an upstream source.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -44,7 +44,7 @@ If you haven't created a feed yet, follow the steps below to create a new one. M
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
-## Add PyPI upstream
+## Add PyPI as a new upstream source
 
 If you selected the upstream sources checkbox during the creation of your feed, PyPI should have been automatically included as an upstream source. If not, you can manually add it by following these steps:
 
@@ -56,7 +56,9 @@ If you selected the upstream sources checkbox during the creation of your feed, 
 
 1. Select **Public source**, and then select **PyPI (https://pypi.org/)** from the dropdown menu.
 
-1. Select **Save** when you're done, and then select **Save** one more time from the top right corner to save your changes.
+1. Select **Add** when you're done, and then select **Save** from the top right corner to save your changes.
+
+    :::image type="content" source="media/add-pypi-upstream.png" alt-text="A screenshot displaying how to add PyPI as a new upstream source.":::
 
 ## Authenticate with your feed
 

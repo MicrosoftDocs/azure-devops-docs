@@ -136,7 +136,7 @@ Access views that you have favorited by choosing the :::image type="icon" source
 
 ::: moniker range=">= azure-devops-2019"
 
-## Favorite a team's backlog, Kanban board, or other view
+## Favorite a team's backlog, board, or other view
 
 You can favorite several Agile tools for a team from a **Boards** page. 
 1. Choose **Boards**, and then choose the page of interest, such as **Boards**, **Backlogs**, or **Sprints**.  

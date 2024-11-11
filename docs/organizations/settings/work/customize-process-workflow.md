@@ -1,204 +1,179 @@
 ---
 title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
-description: Learn how to add or remove workflow states to a work item type for an inherited process 
+description: Learn how to add or remove workflow states to a work item type for an inherited process in Azure Boards.
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.topic: tutorial
-ms.date: 08/17/2020
+ms.topic: how-to
+ms.date: 10/21/2024
+#customer intent: As a team lead or administrator, I want to learn how to customize states in a work item type to optimize our team's workflow.
 ---
 
-# Customize the workflow (Inheritance process)  
+# Customize the workflow (Inheritance process)
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories.  
+Each work item type (WIT) has an associated workflow that tracks the status of work from creation to completion. To align with your business and team processes, you can add custom states to most work item types. For example, you might add a *Triaged* state for bugs or a *Design* state for features or user stories.
 
-Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
+In this article, you customize the Bug WIT to include a Triaged state. The state and reason fields are displayed in the header area of the work item form.
 
-![Bug work item form, header area, added state](media/process/cust-workflow-form-triage-header.png)  
+:::image type="content" source="media/process/cust-workflow-form-triage-header.png" alt-text="Screenshot of Bug work item form, header area, added state.":::
 
-This article addresses the supported workflow customization options and  how to customize a workflow. Specifically, you'll learn about:
-
->[!div class="checklist"]      
-> - Supported workflow customization scenarios 
-> - Impact to team boards when you customize a workflow  
-> - End-to-end workflow customization steps   
-> - How to add or remove a custom workflow state 
-> - How to hide or unhide an inherited workflow state 
-> - How to view a graphic depiction of the state model 
-
-For documentation on the workflow for build and release DevOps tasks, see [Use Azure Pipelines](../../../pipelines/get-started/pipelines-get-started.md).
+For documentation on the workflow for build and release DevOps tasks, see [YAML vs Classic Pipelines](../../../pipelines/get-started/pipelines-get-started.md).
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-
-## Supported customizations 
+## Supported customizations
 
 [!INCLUDE [temp](../includes/process-customize-workflow.md)]
 
+### State dropdown menu sequence
 
-### State drop-down menu sequence 
+The **State** dropdown menu lists states in the order you define within each state category. For newly added work items, the first state in the *Proposed* category is assigned as the default state.
 
-The **State** drop-down menu lists States within the sequence you order them within each state category. For newly added work items, the first State in the *Proposed* category is assigned as the default State.  
+The following image illustrates the state sequence defined for a User Story and its corresponding dropdown menu.
 
-The following image illustrates the State sequence defined for User Story and its corresponding drop-down menu. 
+:::image type="content" source="media/customize-workflow/user-story-state-sequence.png" alt-text="Screenshot of User story state sequence.":::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:::image type="content" source="media/customize-workflow/user-story-state-drop-down-list.png" alt-text="Screenshot of User story State dropdown menu.":::  
 
+Within each category, you can move custom states up or down.
 
-> [!div class="mx-imgBorder"]  
-> ![User story state sequence](media/customize-workflow/user-story-state-sequence.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![User story State drop-down menu](media/customize-workflow/user-story-state-drop-down-list.png)  
+## Affect to teams with workflow changes
 
-Within each category, you can move custom states up or down. 
+### Update board configuration
 
+Teams should update their board configuration when making the following customizations:
 
-## Impact to teams with workflow changes
+- Add a custom state.
+- Change the category of a custom state.
+- Add a custom or inherited work item type to a backlog level. See [Customize backlogs and boards](customize-process-backlogs-boards.md).
 
-Teams may need to update their Kanban board configuration when the following customizations are made: 
+### Taskboard configuration
 
-- You add a custom State  
-- You change the category of a custom State  
-- You add a custom or inherited work item type to a backlog level ([Customize your backlogs or boards](customize-process-backlogs-boards.md)) 
+Teams should update their board configuration when making the following customizations:
 
-States that you add to the task WIT adds columns to the Taskboard. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT also add columns to the Taskboard. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added. 
+- Add states to the task WIT, which adds columns to the Taskboard.
+- [Track bugs along with tasks](../show-bugs-on-backlog.md), adding states to the bug WIT, which also adds columns to the Taskboard.
+- Add the same states to both task and bug work item types, which updates the status consistently and minimize the number of columns added.
 
+[!INCLUDE [prerequisites](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../includes/process-prerequisites.md)] 
+[!INCLUDE [organization process settings](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
-
-[!INCLUDE [temp](../includes/automatic-update-project.md)] 
+[!INCLUDE [note automatic update](../includes/automatic-update-project.md)]
 
 <a id="states">  </a>
 <a id="add-states"></a>
 
-## Add a workflow state   
+## Add a workflow state
 
-States you add appear in the drop-down menu for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State. Also, default reasons are defined, such as *Moved to state Triaged*, *Moved out of state Triaged*.
+States you add appear in the dropdown menu for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State. Default reasons are defined, such as *Moved to state Triaged* and *Moved out of state Triaged*.
 
-1. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
+1. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Process page, Bug WIT, States tab, Add state](media/process/cpworkflow-add-state.png) 
+   :::image type="content" source="media/process/cpworkflow-add-state.png" alt-text="Screenshot of Process page for a Bug with New state selected.":::
 
-	If the <strong>New state</strong> option is disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+   If the **New state** option is disabled, you don't have the necessary permissions to edit the process. See [Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
-2. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
+1. Enter the name of the State, choose its category and color, and then select **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
-	> [!div class="mx-imgBorder"]
-	> ![State menu in work item form](media/process/cpw-new-state-triaged.png) 
+   :::image type="content" source="media/process/cpw-new-state-triaged.png" alt-text="Screenshot of Add a state to Bug dialog.":::
 
-	::: moniker range="azure-devops"
-	> [!NOTE]   
-	> Any workflow state you add to the *In Progress* or *Resolved* state categories will cause the **Activated By**/**Activated Date** and **Resolved By**/**Resolved Date** fields to update with workflow state changes in and out of these categories. To learn more, see [Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields](../../../boards/queries/query-by-workflow-changes.md#activated-resolved-fields).  
-	::: moniker-end
+   ::: moniker range="azure-devops"
 
-1. (Optional) To change the sequence of the State within the drop-down menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**. 
+   > [!NOTE]
+   > Any workflow state you add to the *In Progress* or *Resolved* state categories will cause the **Activated By**/**Activated Date** and **Resolved By**/**Resolved Date** fields to update with workflow state changes in and out of these categories. For more information, see [Activated By/Date and Resolved By/Date fields](../../../boards/queries/query-by-workflow-changes.md#activated-resolved-fields).
+   ::: moniker-end
 
-	> [!div class="mx-imgBorder"]
-	> ![Move up State](media/customize-workflow/move-state-sequence.png) 
+1. (Optional) To change the sequence of the State within the dropdown menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**.
 
-1. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you customized. 
+   :::image type="content" source="media/customize-workflow/move-state-sequence.png" alt-text="Screenshot of the States tab where you can Move up State.":::
 
-	Here we show the State drop-down menu with Triaged selected. 
+1. When you're done adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you customized.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Bug form, Triaged state added](media/process/cpw-added-triage-state-in-form.png) 
+   Here is the State dropdown menu with Triaged selected.
 
-1. Remember, when you add a State to a WIT, which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
+   :::image type="content" source="media/process/cpw-added-triage-state-in-form.png" alt-text="Screenshot of Bug form with the Triaged state selected.":::
+
+1. When you add a State to a WIT, which is associated with a backlog level, each team that uses the board needs to update their column settings. See [Manage columns on your board](../../../boards/boards/add-columns.md).
 
 <a id="edit-state"></a>
 
 ## Edit a state
 
-You can edit the category or the color of a custom state. However, you can't change the name of the custom state. 
+You can edit the category or the color of a custom state. However, you can't change the name of the custom state.
 
-1. Choose <strong>Edit</strong> from the &hellip; context menu for the state you want to modify.  
-  
-	> [!div class="mx-imgBorder"]  
-	> ![Bug WIT, Edit custom state](media/process/cpworkflow-edit-state.png)
+1. Select **Edit** from the &hellip; context menu for the state you want to modify.  
 
-1. Modify the category or color, and then choose <strong>Save</strong>. 
+   :::image type="content" source="media/process/cpworkflow-edit-state.png" alt-text="Screenshot of a Bug form with a state selected and the context menu open to Edit.":::
 
-1. If you change the category, teams that use the Kanban board need to update their [column settings](../../../boards/boards/add-columns.md).    
+1. Modify the category or color, and then choose **Save**.
+
+1. If you change the category, teams that use the board need to update their column settings. See [Manage columns on your board](../../../boards/boards/add-columns.md).
  
 <a id="remove-state"></a>
 
 ## Hide or remove a custom state
 
-When you hide or remove a state:  
-- The state no longer appears in the State drop-down menu for the WIT
-- No changes occur to the work item history     
-- Existing work items maintain their state value, but are in an invalid state. If you want to make a change to the work item, you must first update the state values. You may want to create a query and do a bulk update to move the affected work items into a valid state. If you add the state back to the work item type, the work items revert to a valid state.  
+When you hide or remove a state:
 
+- The state no longer appears in the State dropdown menu for the WIT
+- No changes occur to the work item history
+- Existing work items maintain their state value, but are in an invalid state. If you want to make a change to the work item, you must first update the state value.
+
+  You might want to create a query and do a bulk update to move the affected work items into a valid state. If you add the state back to the work item type, the work items revert to a valid state.  
 
 <a id="hide-state"></a>
 
-## Hide or unhide an inherited state 
+## Hide or unhide an inherited state
 
-You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category. 
+You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category.
 
-1. Open the &hellip; context menu for the state you want to hide and choose the <strong>Hide</strong> option. 
+1. Open the &hellip; context menu for the state you want to hide and choose the **Hide** option.
 
-	Here we hide the Resolved state for the Bug WIT. 
+   This example hides the Resolved state for the Bug WIT.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Hide an inherited state](media/process/cpworkflow-hide-state.png)  
+   :::image type="content" source="media/process/cpworkflow-hide-state.png" alt-text="Screenshot of a Bug type with a state selected and its context menu displaying Hide.":::  
 
-	> [!NOTE]    
-	> If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
+   > [!NOTE]
+   > If you hide the state of a WIT tracked on a board, each team that uses the board needs to update their column settings. See [Manage columns on your board](../../../boards/boards/add-columns.md).
 
 1. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
- 
 
 <a id="remove-state"></a>
 
-## Remove a custom state 
+## Remove a custom state
 
-1. Open the &hellip; context menu for the state you want to remove, and choose <strong>Remove</strong>. You can only remove a custom state.     
+1. Open the &hellip; context menu for the state you want to remove, and choose **Remove**. You can only remove a custom state.
 
-1. From the Remove State dialog, click <strong>Remove</strong>.   
+1. From the **Remove State** dialog, select **Remove**.
 
-	<img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" />  
+   :::image type="content" source="media/process/workflow-remove-state-warning.png" alt-text="Screenshot of Remove state warning dialog box.":::
 
+## View the State workflow model
 
-## View the State workflow model 
+You can view the State workflow model by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model.
 
-You can view the State workflow model by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model. 
+> [!NOTE]
+> The State Model Visualization extension is not supported by Azure Boards or the product team. For questions, suggestions, or issues, please visit the [extension page](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization).
 
-> [!NOTE]   
-> The State Model Visualization extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the [extension page](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization). 
+For example, you can customize the Bug workflow to have a **Triaged** state and all states can transition from one state to another.
 
-For example, the following image shows the Bug workflow that has been customized to have a **Triaged** state. This view illustrates the default transitions of the workflow model. All states can transition from one state to another. 
+You can zoom in and zoom out of the view. Also, you can move the state nodes around to gain a better view of the state model.
 
-> [!div class="mx-imgBorder"]  
-> ![Bug workflow that has been customized to have a Triaged state.](media/customize-workflow/state-model-visualization.png)  
+## Next steps
 
-You can zoom in and zoom out of the view. Also, you can move the state nodes around to gain a better view of the state model. 
+> [!div class="nextstepaction"]
+> [Review changes made to an inherited process through the audit log](../../audit/azure-devops-auditing.md)
 
+## Related articles
 
-## Related articles   
-
-[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
-
-- [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md) 
-- [Add or modify a work item type](customize-process-work-item-type.md)
-- [Add and manage fields](customize-process-field.md)  
-- [Customize a form](customize-process-form.md)
-- [Customize a project using an inherited process](customize-process.md) 
-- [Add or edit Kanban columns](../../../boards/boards/add-columns.md)  
-- [Query by workflow or Kanban board changes](../../../boards/queries/query-by-workflow-changes.md)    
-
-
-
-
-
-
-
-
-
-
-
+- [Learn about workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md)
+- [Add and manage work item types](customize-process-work-item-type.md)
+- [Add and manage fields](customize-process-field.md)
+- [Customize the web layout for a work item type](customize-process-form.md)
+- [Customize a project using an inherited process](customize-process.md)
+- [Manage columns on your board](../../../boards/boards/add-columns.md)

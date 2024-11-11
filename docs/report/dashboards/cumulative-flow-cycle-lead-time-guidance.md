@@ -53,7 +53,7 @@ Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lea
 
 ## Chart metrics  
 
-CFD charts display the count of work items grouped by state/Kanban column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
+CFD charts display the count of work items grouped by state/column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
 
 ---
 :::row:::
@@ -102,11 +102,11 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 --- 
 <sup>1</sup> The CFD widget (Analytics) and built-in CFD chart (work tracking data store) don't provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
-There's a well-defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more WIP, the longer the cycle time, which also leads to longer lead times. The opposite is also true&mdash;the less WIP, the shorter the cycle and lead time. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../boards/boards/wip-limits.md).  
+There's a well-defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more WIP, the longer the cycle time, which also leads to longer lead times. The opposite is also true&mdash;the less WIP, the shorter the cycle and lead time. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you can and should set [Work In Progress limits on the board](../../boards/boards/wip-limits.md).  
 
 The count of work items indicates the total amount of work on a given day. In a fixed period CFD, a change in this count indicates scope change for a given period. In a continuous flow CFD, it indicates the total amount of work in the queue and completed for a given day.  
 
-Decomposing work into specific Kanban board columns provides a view where work is in process. This view provides insights on where work is moving smoothly, where there are blockages and where no work is being done at all. It's difficult to decipher a tabular view of the data, however, the visual CFD chart provides evidence that something is happening in a given way. 
+Decomposing work into specific board columns provides a view where work is in process. This view provides insights on where work is moving smoothly, where there are blockages and where no work is being done at all. It's difficult to decipher a tabular view of the data, however, the visual CFD chart provides evidence that something is happening in a given way. 
 
 ## Identify issues, take appropriate actions 
  
@@ -114,7 +114,7 @@ The CFD answers several specific questions and based on the answer, actions can 
 
 ### Will the team complete work on time? 
  
-This question applies to fixed period CFDs only. You gain an understanding by looking at the curve (or progression) of work in the last column of the Kanban board.  
+This question applies to fixed period CFDs only. You gain an understanding by looking at the curve (or progression) of work in the last column of the board.  
 
 ![Sample CFD with a half completed chart, dotted lines show the work won't be completed](media/cfd-incomplete.png)  
 
@@ -134,7 +134,7 @@ Two problems show up visually as flat lines and as bulges.
 
 :::row:::
    :::column span="2":::
-      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-overview.md) provides the quickest way to transition work from one column to another.  
+      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [board](../../boards/boards/kanban-overview.md) provides the quickest way to transition work from one column to another.  
       Flat lines can also appear when the work across one or more processes takes longer than planned. Flat lines appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. 
    :::column-end:::
    :::column span="3":::
@@ -183,7 +183,7 @@ The one scenario where you can't track scope changes with a CFD occurs when the 
 
 ### Too much WIP?  
 
-You can easily monitor [whether WIP limits have been exceed from the Kanban board](../../boards/boards/wip-limits.md). You can also monitor it from the CFD.  
+You can easily monitor [whether WIP limits have been exceed from the board](../../boards/boards/wip-limits.md). You can also monitor it from the CFD.  
 
 A large amount of WIP usually shows up as a vertical bulge. The longer that there's a large amount of WIP, the more the bulge will expand to become an oval. It's an indication that the WIP is negatively affecting the cycle and lead time.  
 
@@ -204,9 +204,9 @@ The diagram below illustrates how lead time differs from cycle time. Lead time i
 
 If a work item enters a Completed state and then is reactivated, any extra time it spends in a Proposed, In Progress, or Resolved state will contribute to its lead/cycle time when it enters a Completed state category for the second time.
 
-If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../boards/boards/add-columns.md). 
+If your team uses the board, you'll want to understand how your columns map to workflow states. For more information on configuring your board, see [Add columns](../../boards/boards/add-columns.md). 
 
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
+For more information about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times
   

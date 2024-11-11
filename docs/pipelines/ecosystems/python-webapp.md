@@ -7,8 +7,7 @@ ms.author: v-catherbund
 author: cebundy
 ms.date: 04/01/2024
 monikerRange: '>= azure-devops-2020'
-ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2, arm2024
-
+ms.custom: devx-track-python, freshness-fy22q2, arm2024, linux-related-content
 ---
 
 # Use Azure Pipelines to build and deploy a Python web app to Azure App Service
@@ -397,7 +396,7 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
 
 1. Select **Create Pipeline**.
 
-    ::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
+    :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
 
 1. In the **Where is your code** dialog, select **GitHub Enterprise Server**. You might be prompted to sign into GitHub.
 
@@ -457,7 +456,6 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
             python -m venv antenv
             source antenv/bin/activate
             python -m pip install --upgrade pip
-            pip install setup
             pip install -r requirements.txt
           workingDirectory: $(projectRoot)
           displayName: "Install requirements"
@@ -522,6 +520,96 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
 
 The following explanation describes the YAML pipeline file. To learn about the pipeline YAML file schema, see [YAML schema reference](/azure/devops/pipelines/yaml-schema/pipeline).
 
+::: moniker range="azure-devops"
+
+The complete example pipeline YAML file is shown below:
+
+```yml
+trigger:
+- main
+
+variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureServiceConnectionId: '<GUID>'
+
+  # Web app name
+  webAppName: '<your-webapp-name>'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+  # Environment name
+  environmentName: '<your-webapp-name>'
+
+  # Project root folder. Point to the folder containing manage.py file.
+  projectRoot: $(System.DefaultWorkingDirectory)
+
+  pythonVersion: '3.11'
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+
+    - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        python -m pip install --upgrade pip
+        pip install setup
+        pip install -r requirements.txt
+      workingDirectory: $(projectRoot)
+      displayName: "Install requirements"
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(projectRoot)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      displayName: 'Upload package'
+      artifact: drop
+
+- stage: Deploy
+  displayName: 'Deploy Web App'
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeploymentJob
+    pool:
+      vmImage: $(vmImageName)
+    environment: $(environmentName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '$(pythonVersion)'
+            displayName: 'Use Python version'
+
+          - task: AzureWebApp@1
+            displayName: 'Deploy Azure Web App : $(webAppName)'
+            inputs:
+              azureSubscription: $(azureServiceConnectionId)
+              appName: $(webAppName)
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+```
+
+::: moniker-end
+
 #### Variables
 
 ::: moniker range=">=azure-devops"
@@ -534,13 +622,13 @@ variables:
 azureServiceConnectionId: '<GUID>'
 
 # Web app name
-webAppName: '<your-web-app-name>'
+webAppName: '<your-webapp-name>'
 
 # Agent VM image name
 vmImageName: 'ubuntu-latest'
 
 # Environment name
-environmentName: '<your-web-app-name>'
+environmentName: '<your-webapp-name>'
 
 # Project root folder.
 projectRoot: $(System.DefaultWorkingDirectory)
@@ -571,10 +659,10 @@ variables:
 azureServiceConnectionId: '<your-service-connection-name>'
 
 # Web app name
-webAppName: '<your-web-app-name>'
+webAppName: '<your-webapp-name>'
 
 # Environment name
-environmentName: '<your-web-app-name>'
+environmentName: '<your-webapp-name>'
 
 # Project root folder. 
 projectRoot: $(System.DefaultWorkingDirectory)
@@ -632,7 +720,7 @@ The job contains multiple steps:
            displayName: 'Use Python $(pythonVersion)'
     ```
 
-1. This step uses a script to create a virtual Python environment and install the app's dependencies contained in the `requirements.txt` file. The `--target` parameter specifies the location to install the dependencies. The `workingDirectory` parameter specifies the location of the app code.
+1. This step uses a script to create a virtual Python environment and install the app's dependencies contained in the `requirements.txt` The `workingDirectory` parameter specifies the location of the app code.
 
     ```yml
       - script: |
@@ -640,7 +728,7 @@ The job contains multiple steps:
            source antenv/bin/activate
            python -m pip install --upgrade pip
            pip install setup
-           pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+           pip install  -r ./requirements.txt
          workingDirectory: $(projectRoot)
          displayName: "Install requirements"
    ```
@@ -726,6 +814,8 @@ The `strategy` keyword is used to define the deployment strategy. The `runOnce` 
         steps:
 ```
 
+::: moniker range="azure-devops"
+
 The `steps` in the pipeline are:
 
 1. Use the [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task to specify the version of Python to use on the agent. The version is defined in the `pythonVersion` variable.
@@ -738,8 +828,6 @@ The `steps` in the pipeline are:
    ```
 
 1. Deploy the web app using the [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1). This task deploys the pipeline artifact `drop` to your web app.
-
-    ::: moniker range=">=azure-devops"
 
    ```yml
    - task: AzureWebApp@1
@@ -758,9 +846,39 @@ The `steps` in the pipeline are:
 
     Also, because the *python-vscode-flask-tutorial* repository contains the same startup command in a file named *startup.txt*, you can specify that file by adding the parameter: `startUpCommand: 'startup.txt'`.
 
-    ::: moniker-end
+::: moniker-end
 
-    ::: moniker range="< azure-devops"
+::: moniker range="< azure-devops"
+
+The `steps` in the pipeline are:
+
+1. Use the [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task to specify the version of Python to use on the agent. The version is defined in the `pythonVersion` variable.
+
+   ```yml
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python version'
+   ```
+
+1. Deploy the web app using the [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1). This task deploys the pipeline artifact `drop` to your web app.
+
+   ```yml
+   - task: AzureWebApp@1
+      displayName: 'Deploy Azure Web App : <your-web-app-name>'
+      inputs:
+         azureSubscription: $(azureServiceConnectionId)
+         appName: $(webAppName)
+         package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+    ```
+
+   |**Parameter**|**Description**|
+   |--|---|
+   |`azureSubscription`|The Azure Resource Manager service connection ID or name to use.|
+   |`appName`|The name of the web app.|
+   |`package`|The location of the *.zip* file to deploy.|
+
+    Also, because the *python-vscode-flask-tutorial* repository contains the same startup command in a file named *startup.txt*, you can specify that file by adding the parameter: `startUpCommand: 'startup.txt'`.
 
     ```yml
       - task: AzureWebApp@1
@@ -770,7 +888,7 @@ The `steps` in the pipeline are:
            appName: $(webAppName)
            package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
            startUpCommand: 'startup.txt'
-   ```
+    ```
 
    |**Parameter**|**Description**|
    |--|---|

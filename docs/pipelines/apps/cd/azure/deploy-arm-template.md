@@ -6,7 +6,7 @@ ms.author: jukullam
 author: JuliaKM
 ms.date: 02/22/2022
 monikerRange: '=azure-devops'
-ms.custom: subject-armqs, devx-track-arm-template, arm2024
+ms.custom: subject-armqs, devx-track-arm-template, arm2024, linux-related-content
 ---
 
 # Quickstart: Use an ARM template to deploy a Linux web app to Azure

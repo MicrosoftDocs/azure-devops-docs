@@ -47,14 +47,14 @@ These permissions can be given to any users or groups you wish to have manage yo
 ## Create a stream
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
- 
-   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-3. Select **Auditing**.
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+   
+1. Select **Auditing**.
 
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
-
+   
 > [!NOTE]
 > If you don't see *Auditing* in Organization Settings, then auditing is not currently enabled for your organization. Someone in the organization owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You will then be able to see events on the Auditing page if you have the appropriate permissions.
 
@@ -96,7 +96,9 @@ Events begin to arrive on Splunk within half an hour or less.
 
 ### Set up an Event Grid stream
 
-1. Create an Event Grid topic on Azure. 
+1. Create an Event Grid topic on Azure.
+> [!NOTE]
+> When creating the Event Grid topic, navigate to the Advanced tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas are not supported by Azure DevOps. 
 2. Make note of the “Topic Endpoint” and one of the two “Access Keys”. Use this information to create the Event Grid connection.
 
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::
@@ -173,6 +175,6 @@ Your stream gets removed. Any events that haven't been sent before the deletion 
 ## Related articles
 
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
-- [Export audit events](azure-devops-auditing.md#export-auditing-events)
+- [Export audit events](azure-devops-auditing.md#export-audit-events)
 - [List of audit events](auditing-events.md)
 - [Introducing Azure DevOps Audit Stream on Azure DevOps blog](https://devblogs.microsoft.com/devops/introducing-azure-devops-audit-stream/)

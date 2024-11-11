@@ -37,7 +37,7 @@ After closing the **Advanced Editor** and while remaining in the **Power Query E
     > ![Screenshot of Power BI transform data, Expand AreaPath column.](media/transform-data/expand-area-path-property.png)
 
 	> [!NOTE]   
-	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. To learn more about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
+	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. For more information about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
 	
 1. The table now contains entity field(s).
 

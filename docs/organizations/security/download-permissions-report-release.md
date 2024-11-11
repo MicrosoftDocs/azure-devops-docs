@@ -15,13 +15,13 @@ ms.date: 07/07/2022
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
  
-To determine the effective permissions of users and groups for a release, you can download the permissions report. Requesting the report generates an email with a link to download the report. The report lists the effective permissions for the release you select, for each user and group specified at the time the report is generated. Inherited permissions come from a parent group which you can view from the web portal. The report is a json-formatted report that you can open using Power BI or other json reader.  
+To determine the effective permissions of users and groups for a release, you can download the permissions report. Requesting the report generates an email with a link to download the report. The report lists the effective permissions for the release you select, for each user and group specified at the time the report is generated. Inherited permissions come from a parent group that you can view from the web portal. The report is a json-formatted report that you can open using Power BI or other json reader.  
 
 You can also use the [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true) to download the report. 
 
 ## Prerequisites
 
-- To download the permissions report, you must be a member of the **Project Collection Administrators** group. The user interface button won't appear for users who aren't a member of this group. 
+- To download the permissions report, you must be a member of the **Project Collection Administrators** group. The user interface button doesn't appear for users who aren't a member of this group. 
 
 	To find a member of the **Project Collection Administrators** group, see [Look up a project collection administrator](look-up-project-collection-administrators.md).
 
@@ -53,7 +53,7 @@ You can download the report for a specific release from the release's Security d
 
 ## Related articles  
 
-- [Set different levels of pipeline permissions](../../pipelines/policies/permissions.md) 
+- [Set different levels of pipeline permissions](../../pipelines/policies/permissions.md#pipeline-permissions) 
 - [Manage permissions with command line tool](manage-tokens-namespaces.md) 
 - [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true)
 

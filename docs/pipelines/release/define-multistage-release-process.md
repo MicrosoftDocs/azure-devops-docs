@@ -15,9 +15,9 @@ monikerRange: '<= azure-devops'
 
 
 
-Azure Pipelines provide a highly configurable and manageable pipeline for releases to multiple stages such as development, staging, QA, and production. it also offers the opportunity to implement gates and approvals at each specific stage.
+Azure Pipelines provide a highly configurable and manageable pipeline for releases to multiple stages such as development, staging, QA, and production. It also offers the opportunity to implement gates and approvals at each specific stage.
 
-In this tutorial, you will learn about:
+In this tutorial, you'll learn about:
 
 > [!div class="checklist"]
 > * Continuous deployment triggers
@@ -35,17 +35,17 @@ You'll need:
   - [Azure DevOps Project](/azure/devops-project/overview)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-* Two separate targets where you will deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target.
-  In this example, we are using Azure App Service website instances. If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
+* Two separate targets where you'll deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target.
+  In this example, we are using Azure App Service website instances. If you decide to do the same, you'll have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other so that you can easily identify them. Use the Azure portal to create a new web app.
 
 ## Continuous deployment (CD) triggers
 
 Enabling continuous deployment trigger will instruct the pipeline to automatically create a new release every time a new build is available.
 
-1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline select **Edit**.
+1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline, then select **Edit**.
 
-   ![edit the release pipelin](media/define-multistage-release-process/open-for-edit.png)
+   ![edit the release pipeline](media/define-multistage-release-process/open-for-edit.png)
 
 1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel. Make sure this is enabled so that a new release is created after every new successful build is completed.
 
@@ -56,11 +56,11 @@ Enabling continuous deployment trigger will instruct the pipeline to automatical
 
    ![pre-deployment conditions](media/define-multistage-release-process/environment-trigger.png)
 
-   You can also set up [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md#scheduled-release-triggers).
+   You can also set up [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers), or [schedule deployments](triggers.md#scheduled-release-triggers).
 
 ## Add stages
 
-In this section, we will add two new stages to our release pipeline: QA and production (Two Azure App Services websites in this example). This is a typical scenario where you would deploy initially to a test or staging server, and then to a live or production server. Each [stage](../process/stages.md) represents one deployment target.
+In this section, we'll add two new stages to our release pipeline: QA and production (Two Azure App Services websites in this example). This is a typical scenario where you would deploy initially to a test or staging server, and then to a live or production server. Each [stage](../process/stages.md) represents one deployment target.
 
 1. Select the **Pipeline** tab in your release pipeline and select the existing stage. Change the name of your stage to **Production**.
 
@@ -92,7 +92,7 @@ In this section, we will add two new stages to our release pipeline: QA and prod
 
    ![Tasks drop down and selecting QA stage](media/define-multistage-release-process/open-qa-tasks.png)
 
-1. Depending on the tasks that you are using, change the settings so that this stage deploys to your "QA" target. In our example, we will be using **Deploy Azure App Service** task as shown below. 
+1. Depending on the tasks that you're using, change the settings so that this stage deploys to your "QA" target. In our example, we'll be using **Deploy Azure App Service** task as shown below. 
 
    ![Using the deploy azure app service task](media/define-multistage-release-process/change-target-environment.png)
 
@@ -101,13 +101,13 @@ In this section, we will add two new stages to our release pipeline: QA and prod
 ## Add Pre-deployment approvals
 
 The release pipeline we previously modified deploys to QA and production. If the deployment to QA fails, then deployment to production won't trigger.
-It is recommended to always verify if your app is working properly in QA or test stage before deploying to production. Adding approvals will ensure all the criteria are met before deploying to the next stage. To add approvals to your pipeline follow the steps below:
+It's recommended to always verify if your app is working properly in QA or test stage before deploying to production. Adding approvals will ensure all the criteria are met before deploying to the next stage. To add approvals to your pipeline follow the steps below:
 
 1. Select the **Pipeline** tab,  **Pre-deployment conditions** icon then **Pre-deployment approvers**.
 
    ![pre-deployment approvers panel](media/define-multistage-release-process/open-approvers.png)
 
-1. In the **Approvers** text box, enter the user(s) that will be responsible for approving the deployment. It is also recommended to uncheck the **The user requesting a release or deployment should not approve it** check box.
+1. In the **Approvers** text box, enter the user(s) that will be responsible for approving the deployment. It's also recommended to uncheck the **The user requesting a release or deployment should not approve it** check box.
 
    ![Adding pre-deployment approvers](media/define-multistage-release-process/select-approvers.png)
 
@@ -121,7 +121,7 @@ It is recommended to always verify if your app is working properly in QA or test
 
 ## Create a release
 
-Now that the release pipeline setup is complete, it's time to start the deployment. To do this, we will manually create a new release. Usually a release is created automatically when a new build artifact is available. However, in this scenario we will create it manually.
+Now that the release pipeline setup is complete, it's time to start the deployment. To do this, we'll manually create a new release. Usually a release is created automatically when a new build artifact is available. However, in this scenario we'll create it manually.
 
 1. Select the **Release** drop-down list and choose **Create release**.
 
@@ -131,7 +131,7 @@ Now that the release pipeline setup is complete, it's time to start the deployme
 
    ![create a new release panel](media/define-multistage-release-process/queue-release.png)
 
-1. A banner will appear indicating that a new release has been create. Select the release link to see more details.
+1. A banner will appear indicating that a new release has been created. Select the release link to see more details.
 
    ![release created successfully](media/define-multistage-release-process/release-link.png)
 
@@ -166,7 +166,7 @@ Deployment logs help you monitor and debug the release of your application. To c
 
    ![downloading logs](media/define-multistage-release-process/download-logs.png)
 
-1. If you need additional information to debug your deployment, you can [run the release in debug mode](../../pipelines/release/variables.md#debug-mode).
+1. If you need additional information to debug your deployment, you can [run the release in debug mode](../../pipelines/release/variables.md#run-a-release-in-debug-mode).
 
 ## Next step
 

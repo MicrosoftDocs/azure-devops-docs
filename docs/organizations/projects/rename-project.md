@@ -40,7 +40,7 @@ Renaming a project in Azure DevOps updates the project name in version control p
 
 ## Rename a project
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```), and then open the project that you want to rename.
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
 2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
 

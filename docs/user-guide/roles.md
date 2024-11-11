@@ -57,7 +57,7 @@ Product owners typically plan the feature set to deliver, set priorities, and tr
 
 - Use the product backlog to quickly define and prioritize user stories, features, and other work items
 - Use the sprint backlog and task board to implement Scrum practices
-- Use the Kanban board to work with Kanban methods
+- Use your board to work with Kanban methods
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards
 - Use dashboards to share information, status, and trends with your team or organization
   
@@ -85,7 +85,7 @@ To get started, see the overviews in [Azure Pipelines](../pipelines/get-started/
 
 With Stakeholder access, anyone in your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. Stakeholders also contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools.
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md).
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. For more information, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md).
 
 <a id="admin-roles">  </a>
 

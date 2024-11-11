@@ -9,21 +9,18 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 09/10/2024
 ---
-
 
 # Understand CMMI process template artifacts
 
-
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md) process.
+The Capability Maturity Model Integration (CMMI) process supports various work item types (WITs) to plan and track work, tests, feedback, and code reviews. Different WITs allow you to track various types of work, such as requirements, change requests, tasks, bugs, and more. These artifacts get created when you set up a project using the CMMI process, based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md) framework.
 
 :::image type="content" source="media/cmmi-process-work-tracking-wits.png" alt-text="Conceptual image, CMMI process work item types.":::
 
-
-Along with the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
+Teams can use a set of work item queries to track information, analyze progress, and make decisions.
 
 [!INCLUDE [temp](../../includes/process-customize.md)] 
 
@@ -43,9 +40,6 @@ You can use work item queries to list work items based on their type, such as ch
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
-
-
-
 [!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
 ## Monitor progress  
@@ -56,24 +50,16 @@ All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../repor
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
-
 ::: moniker range="< azure-devops-2022"
 
 <a id="reports"></a>
 
 ## SQL Server reports  
 
-
-If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to many CMMI reports. For these reports to be useful, [teams must do certain activities](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports), such as define build processes, link work items, and update status or remaining work.  
+If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you have access to many CMMI reports. For these reports to be useful, [teams must do certain activities](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports), such as define build processes, link work items, and update status or remaining work.  
 
 If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 ::: moniker-end
- 
-
-## Related notes  
-
-[!INCLUDE [temp](../../includes/create-team-project-links.md)]
-
 
 ### CMMI process versions  
 
@@ -84,27 +70,25 @@ As updates are made to the CMMI process template, the version number is updated.
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
-> | TFS 2018 | CMMI | 16 |
 
 For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
+### Use the CMMI process effectively
 
-### More CMMI guidance
+Development teams have diverse practices and established processes. This guidance focuses on activities relevant to effectively using the CMMI process.
 
-The situations and working practices of development teams vary widely, and most companies have their own well-established processes. For these reasons, the guidance given here doesn't attempt to prescribe a development process in full. Instead, we describe just the activities that are relevant to making best use of the CMMI process.
+- [Learn about CMMI](cmmi/guidance-background-to-cmmi.md): Understand CMMI and its six capability levels.
+- [Manage projects](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management): Get guidance on managing, planning, and coordinating software development and maintenance with the CMMI model.
+- [Explore engineering activities](cmmi/guidance-engineering.md): Discover value-added activities for designing and building software products.
 
--  [Background to CMMI](cmmi/guidance-background-to-cmmi.md): Provides an overview of CMMI and the six capability levels that are intrinsic to the model.
-
--  [Project management](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management): Provides guidance to help you better understand how to manage, plan, and coordinate the development and maintenance of software products working with the CMMI model.
-
--  [Engineering](cmmi/guidance-engineering.md): Addresses the value-added activities for discovering the information that is required to design and build software products
-
-Using the CMMI template and guidance can help you achieve the aims of CMMI if you use it as part of a process improvement program. Adapt this guidance to your own situation, which  depends on the type and history of the product that you're developing, the project's scale, the background of the team members, and accepted practices in your organization.
-
- This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](https://djaa.com/).  
-
+Use the CMMI template and guidance as part of a process improvement program. Adapt this guidance based on:
+- Product type and history
+- Project scale
+- Team members' backgrounds
+- Accepted practices in your organization
 
 <a id="predefined-queries"></a>
 
+## Related articles 
 
- 
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]

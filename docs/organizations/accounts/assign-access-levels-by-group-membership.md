@@ -1,5 +1,5 @@
 ---
-title: Add group rule to assign access levels
+title: Add group rule, assign access levels
 titleSuffix: Azure DevOps Services
 ms.custom: engagement-fy23
 description: Learn how to assign access levels with group rules in Microsoft Entra ID and Azure DevOps.
@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/06/2024
+ms.date: 10/22/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -15,17 +15,17 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps provides group-based access levels for Microsoft Entra groups and Azure DevOps groups. These groups allow you to manage permissions efficiently by assigning access levels to entire groups of users. In this article, learn how to add a group rule to assign an access level to that group of users. Azure DevOps resources get assigned to all members of a group.
+Azure DevOps provides group-based access levels for Microsoft Entra groups and Azure DevOps groups, allowing you to manage permissions efficiently by assigning access levels to entire groups of users. This article explains how to add a group rule to assign an access level to a group of users. Azure DevOps resources are assigned to all members of a group.
 
-Assign group rules to support both access levels and project memberships. Users get the highest access level when they're assigned to more than one rule or Microsoft Entra group, which specify different levels of access. For example, if John is assigned to two Microsoft Entra groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
+Assign a group rule to manage both access levels and project memberships. When a user is assigned to multiple rules or Microsoft Entra groups with different access levels, they receive the highest access level among them. For example, if John is assigned to two Microsoft Entra groups with different group rules—one specifying Stakeholder access and the other Basic access—John receives Basic access.
 
-When users leave the Microsoft Entra group, Azure DevOps adjusts their access level based on the rules defined for that group. The user remains in Azure DevOps but may have different permissions or access rights. The highest access level assigned to the user determines their final permissions.
+When a user leaves a Microsoft Entra group, Azure DevOps adjusts their access level according to the group's defined rules. If the group was the user's sole source of access, Azure DevOps automatically removes them from the organization. If the user belongs to other groups, their access level and permissions are reevaluated.
 
 [!INCLUDE [note-group-rules](../security/includes/note-group-rules.md)]
 
 ## Prerequisites
 
-- To manage group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, [get added as one](../security/change-organization-collection-level-permissions.md).
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
 ## Add group rule
 
@@ -62,13 +62,13 @@ When users leave the Microsoft Entra group, Azure DevOps adjusts their access le
 1. Select **Group rules** > :::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false"::: > **Manage members**.
    ![Screenshot shows highlighted group rule for managing members.](media/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
-   Leave existing automation for managing access levels for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
+   Keep the existing automation for managing user access levels running as-is (for example, PowerShell scripts). The goal is to ensure that the same resources applied by the automation are accurately reflected for those users.
 
 2. Add members, and then select **Add**.
 
    ![Screenshot of Adding a group member.](media/migrate-to-group-based-resource-management/add-group-members.png)
 
-   When you assign the same access level to a user, the user consumes only one access level. User assignments can be made both directly and through a group.
+   When you assign the same access level to a user, they consume only one access level, regardless of whether the assignment is made directly or through a group.
 
 ## Verify group rule
 
@@ -78,7 +78,7 @@ Verify that the resources are applied to each group and individual user. Select 
 
 ## Remove direct assignments
 
-To manage a user's resources only by the groups that they're in, remove their direct assignments. Resources assigned to a user via individual assignment stay assigned to the user. This assignment stays whether the resources are assigned or taken away from the user's groups.
+To manage a user's resources solely through their group memberships, remove any direct assignments. Resources assigned to a user individually remain assigned, regardless of changes to the user's group memberships.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -98,9 +98,7 @@ To manage a user's resources only by the groups that they're in, remove their di
 
    ![Screenshot of confirmation to Remove.](media/remove-direct-assignments/confirm-removal-of-direct-assignments.png)
 
-   Direct assignments get removed from the users.
-
-   If a user isn't a member of any groups, then the user isn't affected.
+   Direct assignments get removed from the users. If a user isn't a member of any groups, then the user isn't affected.
 
 ### FAQs
 
@@ -113,5 +111,5 @@ A: Visual Studio Subscribers are always directly assigned via the [Visual Studio
 ## Related articles
 
 * [Install Active Directory and Microsoft Entra users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
-* [About accessing your organization with Microsoft Entra ID](access-with-azure-ad.md)
+* [Learn about accessing your organization with Microsoft Entra ID](access-with-azure-ad.md)
 * [Manage Microsoft Entra groups](manage-azure-active-directory-groups.md)

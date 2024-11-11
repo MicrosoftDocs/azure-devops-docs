@@ -474,7 +474,7 @@ To bypass this precaution on GitHub pipelines, enable the **Make secrets availab
 > It has more limited access to open resources than a normal access token.
 > To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
 
-For more information, see [Repository protection - Forks](../security/repos.md#forks).
+For more information, see [Repository protection - Forks](../security/misc.md#forks).
 
 You can define centrally how pipelines build PRs from forked GitHub repositories using the **Limit building pull requests from forked GitHub repositories** control. It's available at organization and project level. You can choose to:
 - Disable building pull requests from forked repositories

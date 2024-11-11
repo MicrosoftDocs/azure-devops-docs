@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.date: 02/21/2024
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ---
 
 # Task types & usage
@@ -140,7 +141,7 @@ Control options are available as keys on the `task` section.
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019 < azure-devops"
+::: moniker range=" azure-devops-2020"
 
 Control options are available as keys on the `task` section.
 
@@ -157,12 +158,11 @@ Control options are available as keys on the `task` section.
     string: string # Name/value pairs
   name: string # ID of the step.
   timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
-  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Control options are available as keys on the `task` section.
 
@@ -219,7 +219,7 @@ steps:
 
 ::: moniker-end
 
-:::moniker range="> azure-devops-2019"
+:::moniker range="> azure-devops-2020"
 
 ### Step target
 
@@ -245,11 +245,11 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Number of retries if task failed
 
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. For more information in task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero retries. For more information on task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
 
 ```yml
 - task: <name of task>
@@ -258,8 +258,8 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 ```
 
 > [!NOTE]
-> * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
-> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
+> * Requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries are not supported for [agentless tasks](./phases.md#agentless-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task), and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks). 
+> * The wait time between each retry increases after each failed attempt. The first retry happens in seconds. 
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
 > * A warning is added to the task logs indicating that it has failed before it is retried.
@@ -335,17 +335,17 @@ Select this check box if you want the task to run even if the build or deploymen
 
 
 
-:::moniker range=">= azure-devops-2019"
-
 Each task has an `env` property that is a list of string pairs that represent environment variables mapped into the task process.
 
+:::moniker range="azure-devops"
+
 ```yml
-task: AzureCLI@2
-displayName: Azure CLI
-inputs: # Specific to each task
-env:
-  ENV_VARIABLE_NAME: value
-  ENV_VARIABLE_NAME2: value
+- task: AzureCLI@2
+  displayName: Azure CLI
+  inputs: # Specific to each task
+  env:
+    ENV_VARIABLE_NAME: value
+    ENV_VARIABLE_NAME2: value
   ...
 ```
 
@@ -369,6 +369,38 @@ The following example runs the `script` step, which is a shortcut for the [Comma
 ```
 
 :::moniker-end
+
+::: moniker range="< azure-devops"
+
+```yml
+- task: Bash@3
+  inputs:
+     targetType: # specific to each task
+  env:
+    ENV_VARIABLE_NAME: value
+    ENV_VARIABLE_NAME2: value
+  ...
+```
+
+The following example runs the `script` step, which is a shortcut for the [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3), followed by the equivalent task syntax. This example assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
+
+```yml
+# Using the script shortcut syntax
+- script: echo "This is " $ENV_VARIABLE_NAME
+  env:
+    ENV_VARIABLE_NAME: "my value"
+  displayName: 'echo environment variable'
+
+# Using the task syntax
+- task: Bash@2
+  inputs:
+    script: echo "This is " $ENV_VARIABLE_NAME
+  env:
+    ENV_VARIABLE_NAME: "my value"
+  displayName: 'echo environment variable'
+```
+
+::: moniker-end
 
 
 #### [Classic](#tab/classic/)

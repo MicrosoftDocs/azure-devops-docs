@@ -3,20 +3,32 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/27/2021
+ms.date: 09/25/2024
 ---
 
 #### [Browser](#tab/browser/)
 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="< azure-devops"
 
-From your web browser, (1) check that you have selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
- 
-> [!div class="mx-imgBorder"]  
-> ![Open Boards>Queries, vertical nav](../queries/media/view-run-queries/open-queries-vert.png) 
+From your web browser, (1) check that you selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
 
-If it is your first time opening **Queries**, the page opens to **Favorites**. This page lists those queries that you have indicated are a favorite.  Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
+:::image type="content" source="../queries/media/view-run-queries/open-queries-vert.png" alt-text="Screenshot of the queries page."::: 
+
+The **Queries** page opens to the **Favorites** tab that lists the queries you set as favorites. You can choose the **All** tab to view all queries you defined and shared queries for the project.  
+
+> [!TIP] 
+> Queries you or your team have chosen as favorites show up on the **Favorites** page. Favorite queries along with other objects also appear on your **Project** page. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+From your project, choose **Boards > Queries**, and then choose **All**. 
+
+:::image type="content" source="../queries/media/view-run-queries/open-queries-new-boards-hubs.png" alt-text="Screenshot of the queries page.":::
+
+The **Queries** page opens to the **Favorites** tab that lists the queries you set as favorites. You can choose the **All** tab to view all queries you defined and shared queries for the project.  
 
 > [!TIP] 
 > Queries you or your team have chosen as favorites show up on the **Favorites** page. Favorite queries along with other objects also appear on your **Project** page. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
@@ -29,7 +41,7 @@ If it is your first time opening **Queries**, the page opens to **Favorites**. T
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 1. From the Team Explorer home page, choose **Work Items**. 
   

@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstreams. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Microsoft Entra ID. See [Manage access with Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Microsoft Entra ID.
+With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstream sources. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Microsoft Entra ID. See [Manage access with Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Microsoft Entra ID.
 
 ## Add a feed in your organization as an upstream source
 
@@ -28,11 +28,9 @@ With Azure Artifacts, you can enable upstream sources to start consuming package
 
 1. Select your **Feed** from the dropdown menu, select a **View** and give your upstream source a name. Make sure you check the **UPack** package type.
 
+1. Select **Add** when you're done, and then select **Save** one more time from the top right corner to save your changes.
+
     :::image type="content" source="./media/upack-upstream.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source.":::
-
-1. Select **Save** when you're done.
-
-1. Select **Save** at the top right corner to save your changes.
 
 ## Add a feed in another organization as an upstream source
 
@@ -48,11 +46,9 @@ With Azure Artifacts, you can enable upstream sources to start consuming package
 
 1. Enter your **Azure Artifacts feed locator**, and give your upstream source a name. Make sure you check the **UPack** package type.
 
+1. Select **Add** when you're done, and then select **Save** one more time from the top right corner to save your changes.
+
     :::image type="content" source="./media/upack-upstream-other-org.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source with a feed in another organization.":::
-
-1. Select **Save** when you're done.
-
-1. Select **Save** at the top right corner to save your changes.
 
 ## View saved packages from upstream
 

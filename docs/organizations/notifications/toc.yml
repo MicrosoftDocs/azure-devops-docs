@@ -29,7 +29,7 @@
   - name: Follow work & pull requests
     displayName: notification, subscription, subscribe, user, story, automatic
     href: ../../boards/work-items/follow-work-items.md
-  - name: Use @mentions to further discussion
+  - name: Use @mentions
     displayName: add, user, group, conversation, comments, PR, story, directory
     href: at-mentions.md
   - name: Link work items and other objects
@@ -56,9 +56,9 @@
   - name: Why are my emails delayed
     displayName: expected, notification, statistics, issue, filter, duplicate, subscription, volume
     href: troubleshoot-delayed-email.md
-  - name: Contacting support
+  - name: Get support
     displayName: developer, community, version, platform, event, ID
-    href: troubleshoot-contact-support.md
+    href: ../../user-guide/provide-feedback.md
 - name: Reference
   items:
   - name: Default permissions (Security)

@@ -1,7 +1,7 @@
 ---
 title: Query work items by link or attachment count in Azure Boards  
 titleSuffix: Azure Boards
-description: Learn how to query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards.
+description: Learn how to query work items based on link type, link count, link restrictions, and attached file count in Azure Boards.
 ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2023
+ms.date: 09/06/2024
 ---
 
 # Query work items by link or attachment count  
@@ -19,11 +19,11 @@ ms.date: 10/27/2023
 You can [link work items to track related work and dependencies](../backlogs/add-link.md) and attach files to share information with your team. You can then list work items based on one or more of the following fields:
 
 ::: moniker range="azure-devops"  
-Attachment File Count | (Discussion) Comment Count | External Link count| Hyperlink Count| Link Comment| Related Link Count|Remote Link Count
+Attached File Count | (Discussion) Comment Count | External Link count| Hyperlink Count| Link Comment| Related Link Count|Remote Link Count
 ::: moniker-end 
 
 ::: moniker range="< azure-devops" 
-- Attachment File Count
+- Attached File Count
 - (Discussion) Comment Count 
 - External Link count
 - Hyperlink Count
@@ -129,7 +129,7 @@ The following query finds work items in all projects that are linked to work ite
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
-Use this type of query to list all dependent work items that link to active Product Backlog Items or Bugs that haven't been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\Phone Customers** are returned.
+Use this type of query to list all dependent work items that link to active Product Backlog Items or Bugs that aren't removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\Phone Customers** are returned.
 
 ![Work Items and Dependent Links Query](media/example-work-item-queries/IC588290.png)   
 
@@ -158,7 +158,7 @@ If you typically organize your user stories under features, you can quickly find
 Or, you can find unparented backlog items using a **Work items and direct links** query. For example, the following query lists active user stories for the Azure DevOps team that don't have a Parent link. 
 
 :::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal, unparented user stories.":::
-<a id="table-field"/>
+<a id="table-field"></a>
 <a id="fields"></a>
 
 ## Fields associated with links and attachments
@@ -167,7 +167,7 @@ The following table describes fields associated with links and attachments. Most
 
 :::row:::
    :::column span="1":::
-   **Attachment File Count**
+   **Attached File Count**
    :::column-end:::
    :::column span="3":::
    The number of files attached to the work item and stored in the work item tracking database.  
@@ -193,7 +193,7 @@ The following table describes fields associated with links and attachments. Most
 
    :::column-end:::
    :::column span="3":::
-   The number of links from the work item to artifacts that aren't work items. such as pull requests, commits, changesets, or other link types.  
+   The number of links from the work item to artifacts that aren't work items, such as pull requests, commits, changesets, or other link types.  
    Reference Name=System.ExternalLinkCount, Data type=Integer
    :::column-end:::
 :::row-end:::

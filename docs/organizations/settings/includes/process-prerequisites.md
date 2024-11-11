@@ -4,19 +4,30 @@ ms.topic: include
 
 ## Prerequisites
 
-Prior to customizing a process, we recommend that you review [Configure and customize Azure Boards](../../../boards/configure-customize.md), which provides guidance on how to customize Azure Boards to meet your business needs. For a description of the different backlogs and boards, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](../../../boards/backlogs/backlogs-boards-plans.md).
+For guidance on tailoring Azure Boards to align with your specific business requirements, see [About configuring and customizing Azure Boards](../../../boards/configure-customize.md).
 
 ::: moniker range="azure-devops"
 
-- You must have an organization created in Azure DevOps Services. If you haven't created one yet, [do that now](../../../user-guide/sign-up-invite-teammates.md).
-- To create, edit, and manage processes, you must be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md), or have the corresponding collection-level permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../../security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+- **Organization requirement**: Ensure you have an [organization in Azure DevOps](../../accounts/create-organization.md).
 
+- **Permissions**:
+
+  - Be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md).
+  - Have collection-level permissions such as **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**.
+  - These permissions allow you to modify processes and fields within your organization.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
-- You must have selected the Inheritance process model for the project collection where the project is created. To learn more, see [Choose the process model for your project collection](../../../reference/customize-work.md#choose-the-process-model-for-your-project-collection). 
-- To create, edit, and manage processes, you must be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md),  or have the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../../security/set-permissions-access-work-tracking.md).
+- **Project process model requirement**:
+
+  - Ensure that you have the [Inheritance process model](../../../reference/customize-work.md#choose-the-process-model-for-your-project-collection) for the project collection where the project is created.
+
+- **Permissions**:
+
+  - Be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md).
+  - Have collection-level permissions such as **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**.
+  - These permissions allow you to modify processes and fields within your organization.
 
 ::: moniker-end

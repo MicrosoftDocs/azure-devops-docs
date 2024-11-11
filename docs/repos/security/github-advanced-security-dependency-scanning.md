@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 09/20/2023
+ms.date: 10/24/2024
 ---
 
 # Dependency scanning 
@@ -24,7 +24,7 @@ Dependency scanning generates an alert for any open-source component, direct or 
 
 ### About dependency scanning detection 
 
-A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code is executed. 
+A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code (in other words, a new commit) is executed. 
 
 For every vulnerable component detected in use, the component and vulnerability are listed in the build log and displayed as an alert in the Advanced Security tab. Only advisories that reviewed by GitHub and added to the [GitHub Advisory Database](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/browsing-security-advisories-in-the-github-advisory-database) create a dependency scanning alert. The build log includes a link to the individual alert for further investigation. For more information on the alert detail, view Fixing dependency scanning alerts.  
 
@@ -90,9 +90,6 @@ The pipelines listed under the **Detections** tab are the pipelines where the vu
 Once an alert has been resolved, the alert automatically moves to the `Closed` state and the latest run pipeline under the Detections tab displays a green checkmark, meaning that code containing the updated component was run in that pipeline: 
 
 ![Screenshot of dependency scanning detections view for an alert](./media/dependency-scanning-detections.png)
-
-
-
 
 #### Severity 
 
@@ -455,7 +452,7 @@ It's recommended to add a comment near the dependency resolution so that anyone 
 ### What if there's no fix available?
 
 When no known fix is available, the following options are available as other methods of remediation until an upgraded component is available: 
-* Stop using the component and remove it from your code - this removal will be detected upon your next build with the dependency scanning task installed 
+* Stop using the component and remove it from your code - this removal is detected upon your next build with the dependency scanning task installed 
 * Contribute a fix to the component itself. If your organization has specific guidelines around open-source contributions, follow those guidelines.
 * Dismissing the alert. However, alerts with no known fix still can pose a security threat to your organization. We recommend that you don't dismiss an alert just because there's no known fix. 
 
@@ -474,33 +471,21 @@ To dismiss an alert:
 
 ![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
 
-This action only dismisses the alert for your selected branch. Other branches that may contain the same vulnerability stays active until otherwise acted upon. Any alert that has been previously dismissed can be manually reopened.
+This action only dismisses the alert for your selected branch. Other branches that may contain the same vulnerability stays active until otherwise acted upon. Any alert that has been previously dismissed can be manually reopened. 
 
-## Troubleshooting dependency scanning 
+### Managing dependency scanning alerts on pull requests
 
-### Dependency scanning not identifying any components
+If alerts are created for new code changes in a pull request, the alert is reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab. There is a new branch picker entry for the pull request branch.
 
-If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task. 
+You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
 
-### Dependency scanning task timeout 
+[![Screenshot of active dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
 
-The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
+To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
 
-To use this variable, add `DependencyScanning.Timeout` as a pipeline variable: 
+[![Screenshot of closed dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning-closed.png)](./media/pull-request-annotation-dependency-scanning-closed.png#lightbox)
 
->[!div class="tabbedCodeSnippets"]
-```yaml
-- task: AdvancedSecurity-Dependency-Scanning@1
-- env:
-    DependencyScanning.Timeout: 600
-```
+To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation directs you to the alert detail view in the Advanced Security tab. 
 
-### Break-glass scenario for build task
-
-If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.
-
-### Dependency scanning task permissions
-
-The dependency scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in the same project have access to fetch alerts. If you remove those permissions from the build service account or if you have a custom setup (for example, a pipeline hosted in a different project than the repository), you must grant these permissions manually.
-
-Grant `Advanced Security: View Alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
+> [!TIP]
+> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.

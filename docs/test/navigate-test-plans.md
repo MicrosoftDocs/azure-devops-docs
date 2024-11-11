@@ -4,7 +4,7 @@ description: Learn how to navigate Test Plans.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 monikerRange: '>=azure-devops-2020'
 ms.date: 09/14/2021
@@ -265,7 +265,7 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 - **Edit test case**: Open the work item form, optionally edit work item fields including test steps.
 - **Assign tester**: Assign the test points to a tester for test execution.
 
-To learn more about executing tests, see [Run manual tests](run-manual-tests.md) and [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
+For more information about executing tests, see [Run manual tests](run-manual-tests.md) and [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
 
 
 ## Chart test cases and test results 

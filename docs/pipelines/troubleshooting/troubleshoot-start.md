@@ -156,7 +156,7 @@ If the above error is received while configuring the agent, log on to your TFS m
 ![is TFS anonymous authentication enabled](../media/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=846610 -->
-<a name="renew-lock" />
+<a id="renew-lock"></a>
 
 ### Agent lost communication
 

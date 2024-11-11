@@ -6,7 +6,7 @@ ms.subservice: azure-devops-security
 ms.custom: devx-track-python
 ms.topic: how-to
 ms.reviewer: wonga
-ms.date: 04/29/2024
+ms.date: 10/24/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -16,16 +16,16 @@ monikerRange: 'azure-devops'
 
 When you're dealing with a large set of personal access tokens (PATs) you own, it might become complex to manage the maintenance of these tokens using the UI alone.
 
-With the PAT Lifecycle Management API, you can easily manage the PATs associated with your organizations using automated processes. This rich set of APIs lets you manage your PATs, allowing you to create new personal access tokens and renew or expire existing personal access tokens.
+With the PAT Lifecycle Management API, you can easily manage the PATs associated with your organizations using automated processes. This rich set of APIs lets you manage your PATs, allowing you to create new PATs and renew or expire existing PATs.
 
 In this article, we show you how to configure an application that authenticates with a Microsoft Entra token and makes calls with the PAT Lifecycle API. If you'd like to just see the full list of available endpoints, [view the API reference here](/rest/api/azure/devops/tokens).
 
 ## Prerequisites
 
-To use the API, you must authenticate with a Microsoft Entra token, which you can do via [Microsoft Entra ID OAuth](../../integrate/get-started/authentication/oauth.md). For more information, see the [authentication section](#authenticate-with-azure-active-directory-azure-ad-tokens).
-
-* You must [have a Microsoft Entra tenant with an active Azure subscription.](/azure/active-directory/develop/quickstart-create-new-tenant)
-* Depending on your tenant's security policies, your application might need permissions to access resources in the organization. At this moment, the only way to proceed with using this app in this tenant is to ask an admin to grant permission to the app before you can use it.
+* **Permissions:** Depending on your tenant's security policies, your application might need permissions to access resources in the organization. At this moment, the only way to proceed with using this app in this tenant is to ask an administrator to grant permission to the app before you can use it.
+- **Authentication:** 
+  - To use the API, authenticate with a Microsoft Entra token via [Microsoft Entra ID OAuth](../../integrate/get-started/authentication/oauth.md). For more information, see the [authentication section](#authenticate-with-azure-active-directory-azure-ad-tokens).
+  - [Have a Microsoft Entra tenant with an active Azure subscription.](/azure/active-directory/develop/quickstart-create-new-tenant)
 
 > [!NOTE]
 > You can't use service principals or managed identities to create or revoke PATs.
@@ -34,30 +34,27 @@ To use the API, you must authenticate with a Microsoft Entra token, which you ca
 
 ## Authenticate with Microsoft Entra tokens
 
-Unlike other Azure DevOps Services APIs, users must provide an [Microsoft Entra access token](/azure/active-directory/develop/access-tokens) to use this API instead of a PAT token. Microsoft Entra tokens are a safer authentication mechanism than using PATs. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is given to allowed users only.
+Unlike other Azure DevOps Services APIs, users must provide an [Microsoft Entra access token](/azure/active-directory/develop/access-tokens) to use this API instead of a PAT. Microsoft Entra tokens are a safer authentication mechanism than using PATs. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is given to allowed users only.
 
-In order to acquire and refresh Microsoft Entra access tokens, you must:
+To acquire and refresh Microsoft Entra access tokens, do the following tasks:
 
 * [Have a Microsoft Entra tenant with an active Azure subscription](/azure/active-directory/develop/quickstart-create-new-tenant)
 * [Register an application in their Microsoft Entra tenant](/azure/active-directory/develop/quickstart-register-app)
 * [Add Azure DevOps permissions to the application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
 
 > [!IMPORTANT]
-> "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue a Microsoft Entra access token is not valid for use with this API.  If multi-factor authentication is enabled in your Microsoft Entra tenant, you must definitely use the ["authorization code” flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).  
-
-> [!CAUTION]
-> Having a Microsoft Entra tenant with an active Azure subscription is a prerequisite for using this API.
+> "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue a Microsoft Entra access token is not valid for use with this API.  If multi-factor authentication is enabled in your Microsoft Entra tenant, you must definitely use the ["authorization code” flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 Once you have an application with a working authentication flow for handling Microsoft Entra tokens, you can use these tokens to make calls to the PAT Lifecycle Management API.
 
-In order to call the API directly, you need to provide a Microsoft Entra access token as a `Bearer` token in `Authorization` header of your request.
-To see the examples and a full list of the available requests, refer to the [PAT API reference.](/rest/api/azure/devops/tokens)
+To call the API directly, provide a Microsoft Entra access token as a `Bearer` token in `Authorization` header of your request.
+For more information and a full list of the available requests, see the [PAT API reference.](/rest/api/azure/devops/tokens)
 
-In the following section, we show you how to create an app that authenticates a user with a Microsoft Entra access token using the MSAL library and calls our PAT Lifecycle Management API.
+In the following section, we show how to create an app that authenticates a user with a Microsoft Entra access token. The app uses the Microsoft Authentication Library (MSAL) library and calls our PAT Lifecycle Management API.
 
-The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows you can use within your app for acquiring and refreshing Microsoft Entra tokens. A complete list of MSAL flows can be found under [Microsoft Authentication Library authentication flows documentation](/azure/active-directory/develop/msal-authentication-flows). A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication method](../../integrate/get-started/authentication/authentication-guidance.md) for Azure DevOps.
+The MSAL includes multiple compliant authentication flows you can use within your app for acquiring and refreshing Microsoft Entra tokens. A complete list of MSAL flows can be found under [Microsoft Authentication Library authentication flows documentation](/azure/active-directory/develop/msal-authentication-flows). A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication method](../../integrate/get-started/authentication/authentication-guidance.md) for Azure DevOps.
 
-Follow either one of the two examples to get started:
+To get started, see either one of the following examples:
 
 * [Clone our sample Python Flask app](#clone-our-python-flask-web-app) and configure it with your tenant and ADO organization
 * [Generate a sample application in the Azure portal](#generate-a-quickstart-azure-portal-application) for your language of choice and configure it for the PAT Lifecycle Management API
@@ -98,7 +95,7 @@ To follow this approach, follow the **Quickstarts** instructions for the applica
 
 6. Select your application platform. For this tutorial, select **Python**.
 
-7. Make sure you meett the necessary prerequisites, then allow Azure portal to make the necessary changes to configure your application. The **reply URL** is the redirect URL that was set at application creation + “/getAToken”.
+7. Make sure you meet the necessary prerequisites, then allow Azure portal to make the necessary changes to configure your application. The **reply URL** is the redirect URL that was set at application creation + “/getAToken”.
    
     ![Screenshot shows allowing the Azure portal to make the necessary changes to configure your application.](./media/manage-personal-access-tokens-via-api/step-7-allow-portal-configuration.png)
 
@@ -111,7 +108,7 @@ To follow this approach, follow the **Quickstarts** instructions for the applica
     ![Screenshot shows installing the application requirements and running the application.](./media/manage-personal-access-tokens-via-api/step-9-install-and-run.png)
 
 ### Configure a Quickstart application
-Once the user downloads and installs the Quickstart application, it's configured to use a test API endpoint from Microsoft Graph. We need to modify the generated configuration file to have it call the PAT Lifecycle Management API instead.
+Once the user downloads and installs the Quickstart application, it gets configured to use a test API endpoint from Microsoft Graph. Modify the generated configuration file to have it call the PAT Lifecycle Management API instead.
 
 > [!TIP]
 > We use collection and organization interchangeably in these docs. If a configuration variable needs a collection name, please replace it with your organization name.
@@ -125,7 +122,7 @@ The following example shows you how we did this configuration for the Quickstart
 
 Make sure you follow instructions to secure your client secret, which is initially inserted in plain-text into the application configuration file. As a best practice, remove the plain-text variable from the configuration file and use an environment variable or Azure KeyVault to secure their application's secret. 
 
-Instead, you can choose to use a certificate instead of a client secret. Using certificates is the recommended option if the application will get used in production. The instructions for using a certificate can be found in the final step of the Quickstart application setup.
+Instead, you can choose to use a certificate instead of a client secret. Using certificates is the recommended option if the application gets used in production. The instructions for using a certificate can be found in the final step of the Quickstart application setup.
 
 > [!CAUTION] 
 > Never leave a plain-text client secret in production application code.
@@ -188,7 +185,7 @@ Instead, you can choose to use a certificate instead of a client secret. Using c
     ENDPOINT = 'https://vssps.dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview'
     ```
 
-4. Change the `SCOPE` variable to reference the Azure DevOps API resource; the character string is the resource ID for the Azure DevOps API, and the “.default” scope refers to all scopes for that resource ID. 
+4. Change the `SCOPE` variable to reference the Azure DevOps API resource; the character string is the resource ID for the Azure DevOps API, and the `.default` scope refers to all scopes for that resource ID. 
 
     ```python
     SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
@@ -231,17 +228,17 @@ Instead, you can choose to use a certificate instead of a client secret. Using c
     # Specifies the token cache should be stored in server-side session
     ```
 
-7. Rerun the application to test that you can GET all PAT tokens for the requesting user. Once verified, you can modify the contents of `'app.py'` and the `'ms-identity-python-webapp-master\templates'` directory to support sending requests to the rest of the PAT lifecycle management API endpoints.  For an example of a Python Flask Quickstart application that was modified to support requests to all PAT lifecycle management API endpoints, [see this sample repo on GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample).
+7. Rerun the application to test that you can GET all PAT tokens for the requesting user. Once verified, you can modify the contents of `'app.py'` and the `'ms-identity-python-webapp-master\templates'` directory to support sending requests to the rest of the PAT lifecycle management API endpoints. For an example of a Python Flask Quickstart application that was modified to support requests to all PAT lifecycle management API endpoints, [see this sample repo on GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample).
 
 <a name='automatically-refresh-an-azure-ad-access-token'></a>
 
 ## Automatically refresh a Microsoft Entra access token
 
-Once the application is configured correctly and the user acquired an access token, the token can be used for up to an hour. The MSAL code provided in both previous examples automatically refresh the token once it expires. Refreshing the token prevents the user from needing to sign in again and acquire a new authorization code. However, users might need to sign in again after 90 days once their refresh token expires.
+Once the application is configured correctly and the user acquired an access token, the token can be used for up to an hour. The MSAL code provided in both previous examples automatically refreshes the token once it expires. Refreshing the token prevents the user from needing to sign in again and acquire a new authorization code. However, users might need to sign in again after 90 days once their refresh token expires.
 
 ## Explore PAT Lifecycle Management APIs
 
-In the above GitHub sample application and Quickstart applications, the application is preconfigured to make requests with the Microsoft Entra tokens you acquired. 
+In the previous GitHub sample application and Quickstart applications, the application is preconfigured to make requests with the Microsoft Entra tokens you acquired. 
 For more information, see the [API Reference docs](/rest/api/azure/devops/tokens/pats).
 
 ##  Frequently asked questions (FAQs)
@@ -275,7 +272,7 @@ To rotate your PAT, do the following steps:
 ### Q: I see a "Need admin approval" pop-up when I try to proceed with using this app. How can I use this app without admin approval?
 **A:** It seems that your tenant has security policies, which require your application to be granted permissions to access resources in the organization. At this moment, the only way to proceed with using this app in this tenant is to ask an admin to grant permission to the app before you can use it.
 
-### Q: Why am I seeing an error like "Service principals are not allowed to perform this action" when I try to call the PAT Lifecycle Management API using a Service Principal or Managed Identity?
+### Q: Why am I seeing an error like "Service principals aren't allowed to perform this action" when I try to call the PAT Lifecycle Management API using a Service Principal or Managed Identity?
 **A:** Service Principals and Managed Identities aren't permitted. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is given to allowed users only. 
 
 ## Next steps

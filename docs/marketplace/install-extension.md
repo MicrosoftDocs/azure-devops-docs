@@ -7,7 +7,8 @@ ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 02/26/2024
+ai-usage: ai-assisted
+ms.date: 10/09/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,21 +24,20 @@ For more information about extensions, see the [developing](../extend/overview.m
 
 ::: moniker range="azure-devops"
 
-- You must be a member of the Project Collection Administrators group to install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
-- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md) for information on how to share private extensions.
+- **Permissions:** Be a member of the Project Collection Administrators group to install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+- **Extension sharing:** Private extensions must be shared with your organization to be installed. For more information about sharing private extensions, see the [publishing documentation](../extend/publish/overview.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- Only members of the Project Collection Administrators group or who have "Edit collection-level information" permissions can install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
-- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md) for information on how to share private extensions.
+- **Permissions:** Be a member of the Project Collection Administrators group or have "Edit collection-level information" permissions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+- **Extension sharing:** Private extensions must be shared with your organization to be installed. For more information about sharing private extensions, see the [publishing documentation](../extend/publish/overview.md).
 
 > [!NOTE]
-> To use an existing Azure subscription for billing, you must have at least co-administrator permissions for that subscription. If you don't have permissions, an Azure Account Administrator or Service Administrator can [add you as co-administrator](/azure/billing-add-change-azure-subscription-administrator) to the Azure subscription in the Azure portal.
+> To use an existing Azure subscription for billing, you need at least co-administrator permissions for that subscription. If you don't have permissions, an Azure Account Administrator or Service Administrator can [add you as co-administrator](/azure/billing-add-change-azure-subscription-administrator) to the Azure subscription in the Azure portal.
 
-Your project collection reuses your Azure subscription for future Marketplace purchases. 
-[Where can I find more info about Azure billing?](faq-extensions.yml)
+Your project collection reuses your Azure subscription for future Marketplace purchases. [Where can I find more info about Azure billing?](faq-extensions.yml)
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 
 * * *
 
-::: moniker range="<azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 1. Go to [Marketplace.visualstudio.com](https://marketplace.visualstudio.com/azuredevops).
 2.	Sign in using your Azure DevOps credentials.
@@ -200,8 +200,7 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
    :::image type="content" source="media/get-devops-extensions/install-devops-extension-02.png" alt-text="Screenshot of Selecting an extension.":::
 
 4. Select the extension and select **Get** or **Get it free**.
-   Or, for some third-party extensions, select **Get Started** to show pricing information
-   and extension-specific installation instructions.
+   Or, for some non-Microsoft extensions, select **Get Started** to show pricing information and extension-specific installation instructions.
 
    :::image type="content" source="media/get-devops-extensions/install-devops-extension-04.png" alt-text="Screenshot of getting the extensions.":::
 
@@ -227,8 +226,6 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
    :::image type="content" source="media/get-devops-extensions/install-devops-extension-07.png" alt-text="Screenshot showing completed installation of extension.":::
 
 ::: moniker-end
-
-
 
 <a id="uninstall-disable-extension">  </a>
 
@@ -374,7 +371,7 @@ az devops extension list [--include-built-in {false, true}]
 
 ### Example - list extensions
 
-The following command lists extensions in your organization. It excludes the **disabled** and **built-in** extensions, and shows the results in table format.
+The following command lists extensions in your organization. It excludes the disabled and built-in extensions, and shows the results in table format.
 
 ```azurecli 
 az devops extension list --include-built-in false --include-disabled false -output table
@@ -431,10 +428,27 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ::: moniker-end
 
+### Troubleshoot extension installation
 
-## Frequently asked questions (FAQs)
+Follow these troubleshooting steps to resolve common issues:
+
+- **Extension fails to install:**
+  - **Check permissions:** Ensure you have the necessary permissions to install extensions. You need to be a Project Collection Administrator or have the necessary permissions granted by an administrator.
+  - **Verify extension compatibility:** Ensure the extension is compatible with your version of Azure DevOps. Check the extension's details page for compatibility information.
+  - **Network issues:** Verify that your network connection is stable and that there are no firewall or proxy settings blocking the installation process.
+
+- **Extension crashes or causes errors:**
+  - **Collect diagnostic information:** If an extension crashes or causes errors, collect diagnostic information to help identify the issue. This information includes error messages, logs, and screenshots of the problem.
+  - **Check extension logs:** Some extensions provide logs that can help diagnose issues. Check the extension's documentation for information on how to access and interpret these logs.
+  - **Contact support:** If you can't resolve the issue, contact the extension's support team with the collected diagnostic information. Provide as much detail as possible to help them troubleshoot the problem.
+
+- **Extension not visible after installation:**
+  - **Refresh the page:** Sometimes, the extension might not appear immediately after installation.
+  - **Check permissions:** Ensure you have the necessary permissions to view and use the extension. Some extensions might require specific permissions to be visible.
+  - **Reinstall the extension:** If the extension still isn't visible, try uninstalling and reinstalling it.
 
 ::: moniker range=" < azure-devops"
+## Frequently asked questions (FAQs)
 ### Q: Why don't I see my organization from the Marketplace installation page? 
 A: If you don't see your organization when buying from the Azure DevOps Marketplace, try the following steps:
 1. Check the identity that you use to sign in to the Visual Studio Marketplace. In the upper-right corner, select your user name to view your profile. 
@@ -483,9 +497,9 @@ A: You must be a member of your project collection. Follow these steps to check 
 1. Open a private or incognito browsing session.
 1. Sign in to your Azure DevOps Server home page (```https://{server}:8080/tfs/```) with the identity that's a user in the project collection where you want to install the extension.
 
-   Azure DevOps might ask you to choose between a "work or school organization" or "personal account." This message means that you used an email address that's the same for a Microsoft account and a "work or school account" managed by your organization in Microsoft Entra ID. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
+Azure DevOps might ask you to choose between a "work or school organization" or "personal account." This message means that you used an email address that's the same for a Microsoft account and a "work or school account" managed by your organization in Microsoft Entra ID. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
 
-2. From your project collection, go to the Marketplace.
+1. From your project collection, go to the Marketplace.
 
 ### Q: Why doesn't the extension that I want show a download button (on-premises)? 
 A: Some extensions work only with Azure DevOps Services for one of the following reasons:  
@@ -497,15 +511,6 @@ A: Some extensions work only with Azure DevOps Services for one of the following
 A: You must be a member of the [Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) for the Azure DevOps Server where you want to upload extensions.
 ::: moniker-end
 
-### Q: How do I get support for Azure subscriptions, billing, and Marketplace?
-A: Depending on the support you need, choose from the following articles:
-- [Azure Billing and Subscription FAQs](https://azure.microsoft.com/pricing/faq/)
-- [Azure support](https://azure.microsoft.com/support/options/)
-- [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
-- [Visual Studio subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-
-> [!NOTE]
-> The Azure DevOps support team doesn't support Visual Studio Marketplace extensions. To get support on marketplace extensions, locate the extension you're using in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs). On the extension page, you can find a link to the GitHub repository where you can create an issue, or get a link to get community support.
 
 ## Next steps
 
@@ -516,3 +521,6 @@ A: Depending on the support you need, choose from the following articles:
 
 - [Request extensions and approve extension requests](request-extensions.md)
 - [Develop a web extension](../extend/get-started/node.md)
+- [Azure Billing and Subscription FAQs](https://azure.microsoft.com/pricing/faq/)
+- [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
+- [Visual Studio subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)

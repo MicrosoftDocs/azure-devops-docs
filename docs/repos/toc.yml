@@ -42,11 +42,31 @@
   - name: Billing for GitHub Advanced Security
     href: security/github-advanced-security-billing.md
   - name: Secret Scanning for GitHub Advanced Security
-    href: security/github-advanced-security-secret-scanning.md
+    items:
+    - name: Configure secret scanning
+      href: security/github-advanced-security-secret-scanning.md
+    - name: Secret scanning patterns
+      href: security/github-advanced-security-secret-scan-patterns.md
+    - name: Troubleshoot secret scanning
+      href: security/github-advanced-security-secret-scanning-troubleshoot.md
   - name: Dependency Scanning for GitHub Advanced Security
-    href: security/github-advanced-security-dependency-scanning.md
+    items:
+    - name: Configure dependency scanning
+      href: security/github-advanced-security-dependency-scanning.md
+    - name: Supported ecosystems and build configurations
+      href: security/github-advanced-security-dependency-scanning-ecosystems.md
+    - name: Troubleshoot dependency scanning
+      href: security/github-advanced-security-dependency-scanning-troubleshoot.md
   - name: Code Scanning for GitHub Advanced Security
-    href: security/github-advanced-security-code-scanning.md
+    items:
+    - name: Configure code scanning
+      href: security/github-advanced-security-code-scanning.md
+    - name: Using custom queries and query packs
+      href: security/github-advanced-security-code-scanning-queries.md
+    - name: Integrate third-party code scanning tools
+      href: security/github-advanced-security-code-scanning-third-party.md
+    - name: Troubleshoot code scanning
+      href: security/github-advanced-security-code-scanning-troubleshoot.md
   - name: Security Overview on GitHub Advanced Security
     href: security/github-advanced-security-security-overview.md
 - name: Integrations

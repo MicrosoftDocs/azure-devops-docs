@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2023
+ms.date: 09/13/2024
 ---
 
 # Delete a project
@@ -19,22 +19,26 @@ ms.date: 12/05/2023
 If a project becomes obsolete, you can [delete it](#delete-project) from your organization or collection in Azure DevOps. Likewise, if you're migrating from an on-premises Azure DevOps Server to Azure DevOps Services, it might be necessary to delete the project. The removal of projects can also enhance navigation by restricting it to only those projects that are currently in use.
 
 > [!CAUTION]
-> Projects deleted from the web portal are soft-deleted and permanently removed if not restored within 28 days. However, projects deleted from the on-premises Azure DevOps Administration Console are hard-deleted and can't be restored. For restoration details, see [Restore a project](#restore-a-deleted-project). To access data from a deleted project without restoring it, [save project data](#save-project-data).
+> - Soft-deleted projects from the web portal are permanently removed if not restored within 28 days.
+> - In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
+> - Hard-deleted projects from the on-premises Azure DevOps Administration Console cannot be restored.
+> For more information, see [Restore a project](#restore-a-deleted-project) and [Save project data](#save-project-data).
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
 
-* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-* You must have the **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#view-project-level-permissions).
-* (Optional) [Save project data](#save-project-data) before you delete a project if you want to access project data without restoring it.
+* **Permissions:** 
+  * Be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+  * Have the **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#view-project-level-permissions).
+* **Optional:** [Save project data](#save-project-data) before deleting a project if you want to access project data without restoring it.
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
-* To restore a project, you must have the **Delete team project** permission set to **Allow**. For more information, see [View permissions](../security/view-permissions.md).
-* (Optional) [Save project data](#save-project-data), as deleting a project results in irreversible data loss.
+* **Permissions:** Have the **Delete team project** permission set to **Allow**. For more information, see [View permissions](../security/view-permissions.md).
+* **Optional:** [Save project data](#save-project-data), as deleting a project results in irreversible data loss.
 
 ::: moniker-end  
 
@@ -176,7 +180,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 
 3. Select **Overview**, and then scroll down to "recently deleted projects."
 
-   ![Screenshot that shows recently deleted projects.](../accounts/media/shared/organization-settings-select-overview.png)
+   ![Screenshot that shows recently deleted projects.](media/delete-project/recently-deleted-projects.png)
 
 4. Highlight the project you want to restore, and then select **Restore**.
 
@@ -284,4 +288,4 @@ A: Wait 28 days before the project is permanently deleted.
 - [Create a project](create-project.md)
 - [Restore a project](delete-project.md#restore-a-deleted-project)
 - [Delete a project with REST API](/rest/api/azure/devops/core/projects/delete)
-- [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)
+- [ Use the TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)

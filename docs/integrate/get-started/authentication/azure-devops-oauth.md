@@ -5,7 +5,7 @@ description: How to use the Azure DevOps OAuth 2.0 implementation for existing w
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/10/2023
+ms.date: 10/21/2024
 ---
 
 # Use Azure DevOps OAuth 2.0 to create a web app
@@ -13,13 +13,16 @@ ms.date: 11/10/2023
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> This information is for existing Azure DevOps OAuth apps only. New app developers should use  [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps.
+> Azure DevOps OAuth is slated for deprecation in 2026. This information is for existing Azure DevOps OAuth apps only. To create new apps, use [Microsoft Entra ID OAuth](entra-oauth.md) to integrate with Azure DevOps. Starting February 2025, we will stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
 
 ## Get started with Azure DevOps OAuth
 
 ### 1. Register your app
+
+> [!IMPORTANT]
+> New app creation will be blocked starting February 2025.
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
@@ -61,14 +64,14 @@ Parameter     | Type   | Notes
 client_id     | GUID   | The ID assigned to your app when it was registered.
 response_type | string | `Assertion`
 state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
-scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
+scope         | string | Scopes registered with the app. Space separated. See [available scopes](oauth.md#scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 
 2. Add a link or button to your site that takes the user to the Azure DevOps Services authorization endpoint:
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
-        ?client_id=88e2dd5f-4e34-45c6-a75d-524eb2a0399e
+        ?client_id=00001111-aaaa-2222-bbbb-3333cccc4444
         &response_type=Assertion
         &state=User1
         &scope=vso.work%20vso.code_write
@@ -141,7 +144,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > Securely persist the **refresh_token** so your app doesn't need to prompt the user to authorize again. Access tokens expire quickly and shouldn't be persisted.
 
 ### 4. Use the access token
@@ -171,10 +174,12 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 
 #### HTTP request headers - refresh token
 
-|  Header           | Value
-|-------------------|------------------------------------------------------------------
-| Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see the following example)
+
+|  Header           | Value  |
+|-------------------|------------------------------------------------------------------|
+| Content-type      | `application/x-www-form-urlencoded`|
+| Content-length    | Calculated string length of the request body (see the following example)|
+
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
@@ -205,10 +210,8 @@ Replace the placeholder values in the previous sample request body:
 }
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > A new refresh token gets issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
-
-<a name="scopes"></a>
 
 ### Samples
 
@@ -216,73 +219,51 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Every 5 years, your application secret will expire. You are expected to regenerate your app secret to continue to be able to create and use access tokens and refresh tokens. To do so, you can click the "Regenerate secret" button, which will pop up a dialog to confirm you want to complete this action.
+Every five years, your application secret expires. Regenerate your app secret to continue to create and use access tokens and refresh tokens. To do so, select "Regenerate secret," which then confirms that you want to complete this action.
 
 :::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
 
-When you confirm that you want to regenerate, the previous app secret will no longer work and all previous tokens minted with this secret will also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
+When you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
 
+## Delete your app
+
+If you no longer need your app, delete it from your profile.
+
+1. Go to your profile at: `https://app.vssps.visualstudio.com/profile/view`.
+2. Ensure you're on the correct tenant's page by selecting from the dropdown menu under your name in the sidebar.
+3. Find the app under the **Applications and services** header on the left sidebar.
+4. select "Delete" on the application registration page. A modal appears to confirm your deletion.
+
+   :::image type="content" source="media/azdo-oauth-app-delete.png" alt-text="Screenshot of app metadata page with delete button highlighted":::
+
+5. Once you delete the app registration, the app breaks, and we stop minting new tokens or accepting minted tokens for this app.
 
 ## Frequently asked questions (FAQs)
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Q: Can I use OAuth with my mobile phone app?
+#### Q: Can I use OAuth with my mobile phone app?
 
 A: No. Azure DevOps Services only supports the web server flow, so there's no way to implement OAuth, as you can't securely store the app secret.
 
-### Q: What errors or special conditions do I need to handle in my code?
+#### Q: What errors or special conditions do I need to handle in my code?
 
 A: Make sure that you handle the following conditions:
 * If your user denies your app access, no authorization code gets returned. Don't use the authorization code without checking for denial.
 * If your user revokes your app's authorization, the access token is no longer valid. When your app uses the token to access data, a 401 error returns. Request authorization again.
 
-### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
+#### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
 A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure you use `https://localhost` as the beginning of your callback URL when you register your app.
 
-### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
+#### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
 
 A: Check that you set the content type to application/x-www-form-urlencoded in your request header.
 
-### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
+#### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
 
-A: Verify that **Third-party application access via OAuth** wasn't disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
+A: Verify that your organization's admin didn't disable **Third-party application access via OAuth** at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
 In this scenario, the flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
-
-### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
-
-A: No. OAuth is only supported in the REST APIs at this point.
-
-### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
-
-A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work-items?preserve-view=true&view=azure-devops-rest-6.1) REST API:
-
-```REST
-GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
-```
-
-To get the attachments details, you need to add the following parameter to the URL:
-
-```REST
-$expand=all
-```
-
-With the results, you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
-
-```REST API
-$url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=5.0
-
-$workItem = Invoke-RestMethod -Uri $url -Method Get -ContentType application/json
-
-$split = ($workitem.relations.url).Split('/')
-
-$attachmentId = $split[$split.count - 1]
-
-# Result: 1244nhsfs-ff3f-25gg-j64t-fahs23vfs
-```
-
-<!-- ENDSECTION -->
 
 ## Related articles
 

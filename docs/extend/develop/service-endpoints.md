@@ -46,7 +46,7 @@ The steps involved in completing this task are:
 > [!NOTE]
 > This tutorial refers to the home directory for your project as "home".
 
-<a name="step1" />
+<a name="step1"></a>
 
 ## Create the manifest file: `vss-extension.json`
 
@@ -192,7 +192,7 @@ For this tutorial, this REST call returns nothing and is meant to be replaced by
 It's possible to use other parameters than the endpoint URL for the REST URL, for instance some endpoint properties.
 For instance, assuming that we had a property in the endpoint named subscriptionId, the REST URL could use it with the following syntax: $(endpoint.subscription).
 
-<a name="step2" />
+<a name="step2"></a>
 
 ## Create the build task
 
@@ -234,7 +234,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
       "label": "Fabrikam service/server end point",
       "defaultValue": "",
       "required": true,
-      "helpMarkDown": "Select the Fabrikam end point to use. If needed,selecton 'manage', and add a new service endpoint of type 'Fabrikam server connection'"
+      "helpMarkDown": "Select the Fabrikam end point to use. If needed, select 'manage', and add a new service endpoint of type 'Fabrikam server connection'"
     },
     {
       "name": "project",

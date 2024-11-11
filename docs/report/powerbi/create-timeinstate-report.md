@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms date: 03/04/2024
+ms date: 09/16/2024
 ---
 
 # Add a time-in-state measure to your Power BI report
@@ -17,7 +17,7 @@ ms date: 03/04/2024
 
 The time a work item spends in a specific workflow state or series of states is an important aspect for understanding efficiency. The [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md) Analytics widgets provide some measures of time-in-state. However, these widgets might not have the level of detail that you want. 
 
-This article provides recipes using Data Analysis Expressions (DAX) to evaluate time spent by work items in a combination of states. Specifically, you learn how to add the following measure and calculated columns to your Power BI reports and use them to generate various trend charts. All fields are calculated columns except the first one listed.  
+This article provides recipes using Data Analysis Expressions (DAX) to evaluate time spent by work items in a combination of states. Specifically, you learn how to add the following measure and calculated columns to your Power BI reports and use them to generate various trend charts. All fields are calculated columns except the first one listed.
 
 |Count| Description |
 |-----|-------------|
@@ -43,7 +43,8 @@ This article provides recipes using Data Analysis Expressions (DAX) to evaluate 
 > * All intra-day or intra-period (weekly/monthly) revisions are ignored by the calculations. This can result in unexpected results for specific scenarios like a work item showing no time "In Progress" when a work item is "In Progress" for less than a day.   
 > * Power BI default aggregations are used whenever possible instead of building measures.  
 > * Some calculations include **+0** to ensure that a numeric value is included for every row instead of BLANK.
-> You may need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses *New*, *Active*, and *Closed* in place of *Proposed*, *In Progress*, and *Completed*. 
+> * You might need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses *New*, *Active*, and *Closed* in place of *Proposed*, *In Progress*, and *Completed*.
+> * The **Date** column referred to in this article isn't a native column in Azure DevOps; It's a derived column created within PowerBI to facilitate the **Time in State** report. You can build this column using the existing date-related columns, such as "Changed Date" or "State Changed Date."
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -466,14 +467,14 @@ Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks f
     >         SUM ( 'View Name'[Date Diff in Days] ),
     >         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
     >         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-    >         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
+    >         'View Name'[State Change Count] <= EARLIER ( 'View Name'[State Change Count - First Completed] ),
     >         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
     >     ) + 0
     > )
     > ```
     > 
     > [!NOTE]
-    > You might need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
+    > You might need to revise the previous definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
 
 <a id="dax-functions"></a>
 
@@ -495,9 +496,9 @@ Additional information is provided in this section for the DAX functions used to
 
 ## Related articles
 
-- [Power BI integration overview](overview.md) 
+- [Learn about Power BI integration](overview.md)
 - [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
-- [Dataset design for the Power BI Connector](data-connector-dataset.md)
-- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
-- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
+- [Design datasets for the Power BI Connector](data-connector-dataset.md)
+- [Understand workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Explore the data model for Analytics](../extend-analytics/data-model-analytics-service.md)
