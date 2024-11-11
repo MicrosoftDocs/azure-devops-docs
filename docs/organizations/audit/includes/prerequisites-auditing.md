@@ -11,9 +11,9 @@ Auditing is turned off by default for all Azure DevOps Services organizations. E
 - Manage audit streams
 - View audit log
 
-  :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set audit permissions to Allow":::
+:::image type="content" source="../media/auditing-streaming/auditing-permissions.png" alt-text="Screenshot shows settings audit permissions to Allow.":::
 
 PCAs can grant these permissions to any users or groups for managing organization streams via **Organization settings** > **Security > Permissions**. PCAs can also assign the *Delete audit streams* permission. 
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users in the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages. For more information and important security-related details, see [Manage your organization, Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users in the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages. For more information and important security-related details, see [Limit user visibility for projects and more](../../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
