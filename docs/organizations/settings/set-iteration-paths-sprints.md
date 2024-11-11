@@ -166,7 +166,7 @@ ID     Identifier                            Name            Path               
 
 ::: moniker range=">= azure-devops-2020" 
 
-1. Add and modify area paths from **Project settings** > **Project configuration** > **Iterations**.   
+1. Add and modify iterations from **Project settings** > **Project configuration** > **Iterations**.   
 
    For Scrum-based projects, you see the following set of sprints. 
 
