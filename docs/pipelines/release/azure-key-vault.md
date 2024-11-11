@@ -43,7 +43,7 @@ If you already have your own repository, proceed to the next step. Otherwise, im
 
 ## Create an Azure Key Vault
 
-1. Sign in to the [Azure Portal](https://portal.azure.com/), and then select the [Cloud Shell](/azure/cloud-shell/overview) button in the upper-right corner.
+1. Sign in to the [Azure portal](https://portal.azure.com/), and then select the [Cloud Shell](/azure/cloud-shell/overview) button in the upper-right corner.
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
