@@ -45,7 +45,7 @@ Azure Pipelines enables developers to link an Azure Key Vault to a variable grou
 
 ## Create a service principal
 
-Start by creating a new service principal, this will enable you to access Azure resources. Next, you will need to create a new ARM service connection in Azure DevOps, then set up a federated credential for you service principal in Azure before verifying and saving your service connection in Azure DevOps.
+Start by creating a new service principal, this will enable you to access Azure resources. Next, you will need to create a new ARM service connection in Azure DevOps, then set up a federated credential for your service principal in Azure before verifying and saving your service connection in Azure DevOps.
 
 1. Navigate to [Azure portal](https://ms.portal.azure.com/).
 
