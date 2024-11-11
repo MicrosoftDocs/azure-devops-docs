@@ -222,7 +222,7 @@ Your service principal's token is now renewed for three more months.
    > [!NOTE]
    > This operation is available even if the service principal's token has not expired.
    
-   > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it will update the secret for the app registered for the service principal. For more information, see [Create an Azure Resource Manager service connection using automated security](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-automated-security) and [What happens when you create a Resource Manager service connection?](https://learn.microsoft.com/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+   > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it will update the secret for the app registered for the service principal. For more information, see [Create an Azure Resource Manager service connection using automated security](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-automated-security) and [What happens when you create a Resource Manager service connection?](https://learn.microsoft.com/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops#what-happens-when-you-create-an-azure-resource-manager-service-connection)
 
 <a name="failedToObtainJWT"></a>
 
