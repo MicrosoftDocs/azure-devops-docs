@@ -25,8 +25,7 @@ Setting up billing in Azure DevOps is essential for managing costs associated wi
 ## Prerequisites
 
 * **Subscription:** Have an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/).
-- **Permissions:**
-  * Be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+- * [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
   * To give another user access to manage billing, be the [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator) to give another user access to manage billing.
   * To change your organization's billing subscription, have the following permissions:
     - [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
@@ -142,6 +141,6 @@ Assign any of the following roles to a user under the subscription your organiza
 
 ## Related articles
 
-* [Increase storage limit for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-storage-limit-for-azure-artifacts)
+* [Increase Azure Artifacts storage limit](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit)
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
 * [Learn about cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)

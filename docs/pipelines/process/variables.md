@@ -4,7 +4,7 @@ ms.custom: devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 04/04/2024
+ms.date: 10/03/2024
 ai-usage: ai-assisted
 
 monikerRange: '<= azure-devops'
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. All variables are strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline.
 
-When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level overrides a variable set at the pipeline root level. A variable set in the pipeline root level overrides a variable set in the Pipeline settings UI. 
+When you define the same variable in multiple places with the same name, the most locally scoped variable takes precedence. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level overrides a variable set at the pipeline root level. A variable set in the pipeline root level overrides a variable set in the Pipeline settings UI. 
 To learn more how to work with variables defined at the job, stage, and root level, see [Variable scope](#variable-scopes). 
 
 You can use variables with [expressions](expressions.md) to conditionally assign values and further customize pipelines.
@@ -146,11 +146,11 @@ Runtime expression variables are only expanded when they're used for a value, no
 
 ### What syntax should I use?
 
-Use macro syntax if you're providing input for a task. 
+Use macro syntax if you're providing a secure string or a [predefined variable](/azure/devops/pipelines/build/variables) input for a task. 
 
 Choose a runtime expression if you're working with [conditions](conditions.md) and [expressions](expressions.md). However, don't use a runtime expression if you don't want your empty variable to print (example: `$[variables.var]`). For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a macro expression. 
 
-If you're defining a variable in a template, use a template expression.
+Typically a template variable is the standard to use. By leveraging template variables, your pipeline will fully inject the variable value into your pipeline at pipeline compilation. This is helpful when attempting to debug pipelines. You can download the log files and evaluate the fully expanded value that is being substituted in. Since the variable is substituted in, you shouldn't leverage template syntax for sensitive values.
 
 ## Set variables in pipeline
 
@@ -425,6 +425,9 @@ Deleted variable 'Configuration' successfully.
 
 * * *
 <h2 id="secret-variables">Set secret variables</h2>
+
+> [!TIP]
+> Secret variables aren't automatically exported as environment variables. To use secret variables in your scripts, explicitly map them to environment variables. For more information, see [Set secret variables](set-secret-variables.md).
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"

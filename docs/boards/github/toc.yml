@@ -6,7 +6,7 @@
   href: connect-to-github.md
 - name: Connect Azure Boards (on-premises)
   href: connect-on-premises-to-github.md
-- name: Link GitHub commits, pull requests, & issues
+- name: Link GitHub commits, pull requests, & branches
   href: link-to-from-github.md
 - name: Add status badges
   href: configure-status-badges.md

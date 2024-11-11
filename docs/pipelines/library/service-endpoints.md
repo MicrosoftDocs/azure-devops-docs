@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/26/2024
+ms.date: 10/16/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,6 +33,39 @@ The first part of this article explains how to create, view, edit, and use servi
 
 ## Create a service connection
 
+::: moniker range="azure-devops"
+
+To create a service connection for Azure Pipelines:
+
+1. In your Azure DevOps project, select **Project settings** > **Service connections**.
+
+1. Select **New service connection**, select the type of service connection that you need, and then select **Next**.
+
+1. Choose an authentication method, and then select **Next**.
+
+1. Enter the parameters for the service connection. The parameters vary based on the [service connection type](#common-service-connection-types) and authentication method.
+
+   Depending on the service connection type and authentication method, there might be a link to **Verify** the connection. The validation link uses a REST call to the external service with the information that you entered, and indicates whether the call succeeded.
+   
+1. Enter a **Service connection name** to use for the service connection in task properties.
+
+1. Optionally, enter a **Description**.
+
+1. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection.
+
+   If you don't select this option, you must later explicitly [authorize each pipeline to use the service connection](#authorize-pipelines).
+   
+1. Select **Save** or **Verify and save**.
+
+The following example shows an Azure Resource Manager connection to an Azure subscription. You use the **Service connection name** as the `MyAzureSubscription1
+` or equivalent subscription name value in pipeline tasks.
+
+:::image type="content" source="media/azure-resource-manager-subscription.png" alt-text="Screenshot of the New Azure service connection screen with managed identity.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
 To create a service connection for Azure Pipelines:
 
 1. In your Azure DevOps project, select **Project settings** > **Service connections**.
@@ -58,6 +91,8 @@ To create a service connection for Azure Pipelines:
 The following example shows an Azure Resource Manager connection to an Azure subscription. You use the **Service connection name** as the `azureSubscription` or equivalent subscription name value in pipeline tasks.
 
 :::image type="content" source="media/new-azure-resource-manager-connection.png" alt-text="Screenshot of the New Azure service connection screen.":::
+
+::: moniker-end
 
 ## View a service connection
 
@@ -190,7 +225,7 @@ For information about creating a service connection to an Azure Resource Manager
 
 ### Azure Service Bus service connection
 
-For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2) instead of an Azure Service Bus service connection to send a message to Azure Service Bus. This version of the task supports Entra ID and workload identity federation. 
+For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2) instead of an Azure Service Bus service connection to send a message to Azure Service Bus. This version of the task supports Microsoft Entra ID and workload identity federation. 
 
 ### Bitbucket Cloud service connection
 
@@ -263,9 +298,15 @@ You can create a service connection to a Docker container registry.
 
 Select the registry type:
 
+::: moniker range="azure-devops"
 * [Docker Hub](#docker-hub-or-others)
 * [Others](#docker-hub-or-others)
 * [Azure Container Registry](#azure-container-registry)
+::: moniker-end
+::: moniker range="< azure-devops"
+* [Docker Hub](#docker-hub-or-others)
+* [Others](#docker-hub-or-others)
+::: moniker-end
 
 #### Docker Hub or Others
 
@@ -283,8 +324,14 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
+
 #### Azure Container Registry
 
+::: moniker range="< azure-devops"
+Azure Container Registry is not available in Azure DevOps Server. 
+::: moniker-end
+
+::: moniker range="azure-devops"
 You can connect to an Azure Container Registry using either a [Service Principal](#service-principal-authentication-type), [Managed Identity](#managed-identity-authentication-type), or [Workload Identity federation](#workload-identity-federation-authentication-type) **Authentication Type**.
 
 ##### Service Principal authentication type
@@ -324,6 +371,7 @@ Enter the following parameters to define a connection to an Azure Container Regi
 | Connection name | Required. A name to use to refer to the service connection in task properties. For YAML pipelines, use the name as the **azureSubscription** or other connection name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
+::: moniker-end
 
 ### Generic service connection
 

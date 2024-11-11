@@ -272,7 +272,7 @@ Use the following guidance and that provided for [fields used in common across w
   :::row-end:::
   ---
 
-[!INCLUDE [temp](../../includes/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip-azure-devops.md)] 
 
 ## Track work progress
 

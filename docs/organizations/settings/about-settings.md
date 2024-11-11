@@ -656,7 +656,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Create audit streaming](../audit/auditing-streaming.md)
    :::column-end:::
    :::column span="2":::
-      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [events](../audit/auditing-events.md).
+      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-audit-events), or learn more about Audit [events](../audit/auditing-events.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -798,7 +798,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-storage-limit-for-azure-artifacts).
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit).
    :::column-end:::
 :::row-end:::
 ---

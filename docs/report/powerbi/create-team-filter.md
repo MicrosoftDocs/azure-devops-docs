@@ -54,7 +54,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
    
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}'"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"TeamName", "TeamSK"})
     in
         #"Select columns"

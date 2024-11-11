@@ -68,7 +68,7 @@ trigger:
 - main
 
 pool:
-  vmImage: `ubuntu-latest`
+  vmImage: 'ubuntu-latest'
 
 steps:
 - bash: az --version
@@ -92,7 +92,7 @@ trigger:
 - main
 
 pool:
-  vmImage: `windows-latest`
+  vmImage: 'windows-latest'
 
 steps:
 - bash: az --version

@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/10/2023
+ms.date: 10/21/2024
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
@@ -22,45 +22,51 @@ Learn how to authenticate your web app users for REST API access, so your app do
 
 ## About OAuth 2.0
 
-Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token. Use this token when you call the REST APIs from your application. When you call Azure DevOps Services APIs for that user, use that user's access token. Access tokens expire, so refresh the access token if it's expired.
+Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token. Use this token when you call the REST APIs from your application. When you call Azure DevOps Services APIs for that user, use that user's access token. Access tokens expire, so refresh the access token if expired.
 
 :::image type="content" source="media/oauth-overview.png" alt-text="Process to get authorization.":::
 
 ## Available OAuth models
 
-When you create an OAuth 2.0 app use [**Microsoft Entra ID OAuth**](/azure/active-directory/fundamentals/auth-oauth2). We still support [Azure DevOps OAuth 2.0](azure-devops-oauth.md), but we aren't investing on this model at this time.
+> [!IMPORTANT]
+> When creating a new OAuth 2.0 app, use Microsoft Entra ID OAuth. Azure DevOps OAuth 2.0 is slated for deprecation in 2026. Starting February 2025, we will stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 <a name='azure-active-directory-oauth'></a>
 
 ### Microsoft Entra ID OAuth
 
-When you create a Microsoft Entra ID OAuth app, your app is issued Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard one-hour duration before expiration.
-
-For more information, see the following articles:
-* [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
-* [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
-* [Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#delegated-permission-to-microsoft-graph): The linked example demonstrates how to choose a permission for the Microsoft Graph resource. When you create an app, select `Azure DevOps` from the list of resources instead.
-* [Manage PATs via API](../../../organizations/accounts/manage-personal-access-tokens-via-api.md)
-
-> [!NOTE]
-> When you create apps that use other APIs, make sure to select the [scopes](#scopes) needed for those APIs.
+Building on a new platform can be overwhelming. In [this guide to building a Microsoft Entra app for Azure DevOps](entra-oauth.md), we collect helpful links that might be useful to kicking off the OAuth app development process on Microsoft Entra. For folks migrating from Azure DevOps OAuth to Microsoft Entra OAuth, we provide helpful tips to consider during your migration effort.
 
 ### Azure DevOps OAuth
 
-For existing apps, use the [Azure DevOps OAuth guide](./azure-devops-oauth.md). You can also [manage which Azure DevOps apps are authorized](../../../organizations/settings/manage-authorizations.md).
+For existing apps, see the [Azure DevOps OAuth app guide](./azure-devops-oauth.md). You can also [manage which Azure DevOps apps are authorized](../../../organizations/settings/manage-authorizations.md) to access your resources.
 
 ## Scopes
 
-Developers are expected to specify what scopes they require from their users. Scopes are available on both OAuth models. The following scopes are available via delegated (on-behalf-of user) flows only.
+Developers are expected to specify what scopes they require from their users. The same scopes are available on both OAuth models. The following scopes are available via delegated (on-behalf-of user) flows only.
 To find out what scopes you need for your app, look under the `scopes` header on the API Reference page for each API you're using. 
 
-Some scopes might be inclusive of other scopes, for example, `code_manage` includes `code_write`. Consider what is the minimal number of scopes you need when requesting scope consent from users.
+Some scopes might be inclusive of other scopes, for example, `vso.code_manage` includes `vso.code_write`. For example, many scopes inherit from `vso.profile`. Consider what is the minimal number of scopes you need when requesting scope consent from users.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Scopes only enable access to REST APIs and select Git endpoints. SOAP API access isn't supported.
 
 [!INCLUDE [scopes table](../../includes/scopes.md)]
 
+## FAQ
+
+## Frequently asked questions (FAQs)
+
+#### Q: Can I use OAuth with my mobile phone app?
+
+A: No. Azure DevOps Services only supports the web server flow, so there's no way to implement OAuth, as you can't securely store the app secret.
+
+#### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
+
+A: No. OAuth is only supported in the REST APIs.
+
 ## Related articles
 
-* [OAuth 2.0 authentication with Microsoft Entra ID](/azure/active-directory/fundamentals/auth-oauth2)
+* [Choosing the right authentication method](authentication-guidance.md)
+* [Building for Azure DevOps with Microsoft Entra OAuth apps](entra-oauth.md)
+* [Using Azure DevOps OAuth](azure-devops-oauth.md)

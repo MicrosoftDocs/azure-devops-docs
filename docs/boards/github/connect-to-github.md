@@ -41,7 +41,7 @@ The following authentication options are supported based on the GitHub platform 
 :::row-end:::
 :::row:::
    :::column span="":::
-      - [GitHub.com user account (Recommended)](#server-github-ent-username)
+      - [GitHub.com user account (Recommended)](#add-a-github-connection-with-github-credentials)
       - [Personal access token (PAT)](#github-pat)
    :::column-end:::
    :::column span="":::
@@ -430,7 +430,7 @@ A: Only organization or project Administrators can invite new users to join the 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
+> [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
 ## Related articles
 

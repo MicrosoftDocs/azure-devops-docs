@@ -102,7 +102,7 @@ Your board is highly configurable to support your team's workflow. Each team can
   :::column span="1":::
    - [Manage columns](add-columns.md)  
    - [Set WIP limits](wip-limits.md)  
-   - [Set Definition of Done](add-columns.md#add-the-definition-of-done-to-a-column)  
+   - [Set Definition of Done](add-columns.md#add-definition-of-done-to-a-column)  
    - [Add swimlanes](expedite-work.md)
    - [Reorder cards](customize-cards.md#reorder-cards)
    - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md)

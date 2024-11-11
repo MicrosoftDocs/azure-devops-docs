@@ -12,6 +12,8 @@
     href: quickstart-azure-portal.md
   - name: ARM template
     href: quickstart-arm-template.md
+  - name: Azure CLI
+    href: quickstart-azure-cli.md
 - name: Configure
   items:
   - name: Configure pool settings
@@ -32,6 +34,8 @@
     href: view-agents.md
   - name: Demands
     href: demands.md
+  - name: Reliability
+    href: reliability-managed-devops-pools.md
 - name: Monitor and troubleshoot
   items:
   - name: Monitor
@@ -50,5 +54,19 @@
     href: faq.md
 - name: Reference
   items:
+  - name: .NET
+    href: /dotnet/api/overview/azure/devops-infrastructure
+  - name: ARM template
+    href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
   - name: Azure CLI
     href: /cli/azure/service-page/managed%20devops%20pools
+  - name: Bicep
+    href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
+  - name: Java
+    href: /java/api/overview/azure/devops-infrastructure
+  - name: JavaScript
+    href: /javascript/api/overview/azure/devops-infrastructure
+  - name: Python
+    href: /python/api/overview/azure/devops-infrastructure
+  - name: Terraform
+    href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform

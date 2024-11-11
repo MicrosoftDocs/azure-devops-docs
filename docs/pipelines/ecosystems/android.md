@@ -119,6 +119,11 @@ To test your app in a hosted lab of Android devices in the Visual Studio App Cen
 
 This task requires an [App Center](https://appcenter.ms) free trial account, which must be converted to paid after 30 days to continue to use the test lab. [Sign up for an App Center account](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) before you use this task.
 
+> [!WARNING]
+> Visual Studio App Center is scheduled for retirement on March 31, 2025. [Learn more about support timelines and recommended alternatives.](https://aka.ms/appcenter/retire)
+
+[Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+
 The following example runs an App Center test suite. The task uses a [service connection](../library/service-endpoints.md#visual-studio-app-center-service-connection) that you must set up.
 
 For the complete task syntax and reference, see [App Center Test task](/azure/devops/pipelines/tasks/reference/app-center-test-v1). For more information, see [Using Azure DevOps for UI Testing](/appcenter/test-cloud/vsts-plugin).

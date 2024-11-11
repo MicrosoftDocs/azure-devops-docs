@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 09/20/2023
+ms.date: 10/24/2024
 ---
 
 # Secret scanning 
@@ -162,47 +162,3 @@ Bypassing flagged secrets isn't recommended because bypassing can put your compa
 
 If you believe a blocked secret is a false positive or safe to push, you can bypass push protection. Include the string `skip-secret-scanning:true` in your commit message. Even if you bypass push protection, a secret scanning alert is generated in the alert UX once the secret is pushed.
 
-
-## Secret scanning patterns
-
-Advanced Security maintains multiple sets of default secret scanning patterns: 
-
-1. **Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
-1. **User alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
-1. **Non-provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled.
-
-### Supported secrets 
-
-| Section  | Explanation  |
-|---|---|
-|  Provider | The name of the token provider. |
-| Token name | The type of token discovered by Advanced Security secret scanning. |
-| User | A token for which leaks are reported to users post-push. This applies to all repositories where Advanced Security is enabled |
-| Push protection | A token for which leaks are reported to users on push. This applies to all repositories where secret push protection enabled. |
-| Validity | Tokens for which Advanced Security will attempt to perform a validity check. |
-
-#### Partner provider patterns
-
-The following table lists the partner provider patterns supported by secret scanning. 
-
-[!INCLUDE [provider-table](includes/provider-table.md)]
-
-#### Non-provider patterns
-
-The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. For more information, see [Manage secret scanning alerts](#manage-secret-scanning-alerts).
-
-> [!TIP]
-> The detection of non-provider patterns is currently in beta and subject to change.
-
-[!INCLUDE [non-provider-table](includes/non-provider-table.md)]  
-
-## Troubleshooting secret scanning 
-
-### Secret scanning repository scanning doesn't complete 
-If the repository-level secret scanning upon first enabling Advanced Security appears to be stuck after some time, attempt to disable then re-enable Advanced Security to reset the scanning operation.
-
-### Push protection not blocking a secret 
-Ensure that the secret you are attempting to block is supported for push protection using the above tables, [Supported secrets](#supported-secrets). 
-
-### No repository alerts created for password
-Ensure that the secret you are attempting to block is supported as a user alert using the above tables, [Supported secrets](#supported-secrets). If you are attempting to push a generically named secret, such as `password: password123` or `secret: password123`, secret scanning does not support this scenario and no alert is creaeted nor does push protection apply.

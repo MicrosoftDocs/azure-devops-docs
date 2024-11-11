@@ -340,7 +340,7 @@ The following properties are valid for  **TestSuites** and its surrogate key `Te
 |  |`AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated.  | 
 |**Test Plan Id** | `TestPlanId` | Int32 | The number (not the ID) assigned to a test case.  | 
 |**Test Suite Id** | `TestSuiteId`  | Int32 | Name assigned to the test configuration.   |  
-|**Test Plan Title** | `TestPlanTitle` | String | The state of the test configuration, either Active or Inactive.   |  
+|**Test Plan Title** | `TestPlanTitle` | String | The title of the test plan. |
 |**Test Suite Title** | `Title` | Int32 | The number (not the ID) assigned to a test case.  | 
 |**OrderId** | `OrderId`  | Int32 | Name assigned to the test configuration.   |  
 |**Test Suite Level 1 Id** through **Test Suite Level 14 Id** | `IdLevel1` through`IdLevel14` | Int32 | The level of a nested test suite.   |  

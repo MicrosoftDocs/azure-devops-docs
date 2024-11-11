@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms date: 09/16/2024
-#customer intent: As a team member or administrator, I want to connect to Azure DevOps Analitics with Power BI to create reports. 
+#customer intent: As a team member or administrator, I want to connect to Azure DevOps Analytics with Power BI to create reports. 
 ---
 
 # Connect Analytics with Power BI Data Connector

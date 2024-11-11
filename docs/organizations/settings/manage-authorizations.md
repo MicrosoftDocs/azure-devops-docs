@@ -7,12 +7,15 @@ ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/10/2024
+ms.date: 10/21/2024
 ---
 
 #  Authorize other services to access Azure DevOps
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+> [!IMPORTANT]
+> This article applies to Azure DevOps OAuth authorizations. Azure DevOps OAuth is slated for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 You can grant other services access to Azure DevOps using the OAuth 2.0 framework. This secure authorization allows services to access resources like work items, source code, and build results. When authorizing a service, use your Microsoft account (for example, `me@live.com`) or your work account (for example, `me@my-workplace.com`). The authorized service doesn't have access to your Azure DevOps credentials, and you can revoke authorizations as needed.
 

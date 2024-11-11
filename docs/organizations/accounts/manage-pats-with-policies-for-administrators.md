@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 08/19/2024
+ms.date: 10/24/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -15,19 +15,19 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article explains how to limit the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps using Microsoft Entra policies. It also covers managing the automatic revocation of leaked PATs. Each policy's default behavior is detailed in its respective section.
+This article provides guidance on how to use Microsoft Entra policies to manage personal access tokens (PATs) in Azure DevOps. It explains how to limit the creation, scope, and lifespan of new or renewed PATs, as well as how to handle the automatic revocation of leaked PATs. Each section details the default behavior of the respective policies, helping administrators effectively control and secure PAT usage within their organization.
 
 > [!IMPORTANT]
 > Existing PATs, created through both the UI and APIs, remain valid for the rest of their lifespan. Update your existing PATs to comply with the new restrictions to ensure successful renewal.
 
 ## Prerequisites
 
-- **Organization requirements:** Your organization must be [linked to Microsoft Entra ID](connect-organization-to-azure-ad.md).
-- **Roles:** You must be an [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) to manage your organization policies. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, contact your administrator. If you're not an admin, you can't see the policies.
+- **Organization connection:** Ensure your organization is [linked to Microsoft Entra ID](connect-organization-to-azure-ad.md).
+- **Roles:** Be an [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary.
 
 ## Restrict creation of global PATs
 
-The Azure DevOps Administrator in Microsoft Entra can restrict users from creating global PATs, which apply to all accessible organizations rather than a single organization. Enabling this policy requires new PATs to be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.
+The Azure DevOps Administrator in Microsoft Entra can restrict users from creating global Personal Access Tokens (PATs), which apply to all accessible organizations rather than a single organization. When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -35,7 +35,7 @@ The Azure DevOps Administrator in Microsoft Entra can restrict users from creati
 
    ![Screenshot showing Choose the gear icon, Organization settings.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Microsoft Entra**, find the *Restrict global personal access token creation* policy and move the toggle to *on*.
+3. Select **Microsoft Entra**, find the *Restrict global personal access token creation* policy and move the toggle *on*.
 
    :::image type="content" source="media/policies/restrict-global-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for Restrict global PAT creation policy.":::
 
@@ -47,7 +47,7 @@ The Azure DevOps Administrator in Microsoft Entra can restrict users from creati
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-3. Select **Microsoft Entra**, find the *Restrict full-scoped personal access token creation* policy and move the toggle to *on*.
+3. Select **Microsoft Entra**, find the *Restrict full-scoped personal access token creation* policy and move the toggle *on*.
 
    :::image type="content" source="media/policies/restrict-full-scoped-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for the Restrict full-scoped PAT creation policy.":::
 
@@ -59,7 +59,7 @@ The Azure DevOps Administrator in Microsoft Entra ID can define the maximum life
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-3. Select **Microsoft Entra**, find the *Enforce maximum personal access token lifespan* policy and move the toggle to *on*.
+3. Select **Microsoft Entra**, find the *Enforce maximum personal access token lifespan* policy and move the toggle *on*.
 
    :::image type="content" source="media/policies/enforce-maximum-pat-lifespan-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for Enforce maximum PAT lifespan policy.":::
 
@@ -70,7 +70,7 @@ The Azure DevOps Administrator in Microsoft Entra ID can define the maximum life
 ## Add Microsoft Entra users or groups to the allowlist
 
 > [!WARNING]
-> We recommend using groups for your tenant policy allow lists. If you use a named user, note that a reference to their identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups for your tenant policy allow lists. If you use a named user, a reference to their identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 Users or groups on the allowlist are exempt from the restrictions and enforcements of these policies when enabled. To add a user or group, select **Add Microsoft Entra user or group**, then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, other activated policies still apply. Therefore, to exempt a user from all policies, add them to each allowlist.
 

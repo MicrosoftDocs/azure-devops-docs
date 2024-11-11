@@ -5,24 +5,26 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 08/28/2024
+ms.date: 10/16/2024
 monikerRange: '>= azure-devops'
 "recommendations": "true"
 ---
 
 # Manually set an Azure Resource Manager workload identity service connection
 
-When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-micrososft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
+When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-microsoft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
 
 We recommend that you [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) before you begin a manual configuration.
 
-There are two options for authentication: use a managed identity or use a service principal with an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+There are two options for authentication: use a managed identity or use an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+
+## Set a workload identity service connection 
 
 #### [Managed identity](#tab/managed-identity)
 
-## Set a workload identity service connection to use managed identity authentication
+<a name="set-a-workload-identity-service-connection-to-use-managed-identity-authentication"></a>
 
-To manually set up managed identity authentication for your Azure DevOps pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
+To manually set up managed identity authentication for your Azure Pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
 
 1. Create the managed identity in Azure portal. 
 1. Create the service connection in Azure DevOps and save as a draft. 
@@ -31,6 +33,12 @@ To manually set up managed identity authentication for your Azure DevOps pipelin
 1. Save your service connection in Azure DevOps.
 
 You can also use the REST API for this process.
+
+### Prerequisites for managed identity authentication
+
+- To create a user-assigned managed identity, your Azure account needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) or higher role assignment.
+- To use a managed identity to access Azure resources in your pipeline, [assign the managed identity access to the resource](/entra/identity/managed-identities-azure-resources/how-to-assign-access-azure-resource).  
+
 
 ### Create a managed identity in Azure portal
 
@@ -61,24 +69,62 @@ You can also use the REST API for this process.
 
 1. Select **New service connection**.
 
-1. Select **Azure Resource Manager**, and then select **Next**.
+1. Select **Azure Resource Manager**.
 
-1. Select **Workload Identity federation (manual)**, and then select **Next**.
+1. Select identity type **App registration or Managed identity (manual)** the **Workload identity federation** credential.
 
-    :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
+    :::image type="content" source="media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection for managed identity.":::
 
 1. For **Service connection name**, enter a value such as `uamanagedidentity`. You'll use this value in your federated credential subject identifier.
 
-1. For **Subscription ID** and **Subscription Name**, enter the values for the subscription in your Azure portal account.
+1. Select **Next**.
 
-    :::image type="content" source="approvals/media/federated-set-subscription.png" alt-text="Screenshot that shows federated subscription credentials.":::
+1. In **Step 2: App registration details**:
 
-1. In the authentication section:
+    **Step 2: App registration details** contains the following parameters. You can enter or select the following parameters:
 
-   1. For **Service Principal Id**, enter the value of **Client Id** from your managed identity.
-   1. For **Tenant ID**, enter the value of **Tenant Id** from your managed identity.
+   | Parameter | Description |
+   | --------- | ----------- |
+   | **Issuer** | Required. DevOps automatically creates the issuer URL. |
+   | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
+   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
 
-      :::image type="content" source="approvals/media/federated-managed-values.png" alt-text="Screenshot that shows Azure portal managed identity values.":::
+
+    1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
+    
+        * For the **Subscription** scope, enter the following parameters:
+
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
+        
+        * For the **Management Group** scope, enter the following parameters:
+
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Management Group Id** | Required. Enter the Azure management group ID. |
+            | **Management Group Name** | Required. Enter the Azure management group name. |
+        
+        * For the **Machine Learning Workspace** scope, enter the following parameters:
+
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
+            | **Resource Group** | Required. Select the resource group containing the workspace. |
+            | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
+            | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
+    
+    1. In the **Authentication** section, enter or select the following parameters:
+    
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Application (client) ID** | Required. Enter the Client ID for your managed identity. |
+        | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
+    
+    
+    1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 
 1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
 
@@ -123,9 +169,9 @@ You can also use the REST API for this process.
 
 1. Select **Verify and save**. Once this step successfully completes, your managed identity is fully configured. 
 
-#### [Service principal](#tab/service-principal)
+#### [App registration](#tab/app-registration)
 
-## Set a workload identity service connection to use service principal authentication
+<a name="app-registration-workload-identity"></a>
 
 This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. You'll need to complete these steps in the following order:
 
@@ -136,6 +182,13 @@ This section guides you through setting up an app registration and federated cre
 1. Save your service connection in Azure DevOps.
 
 You can also use the REST API for this process.
+
+
+### Prerequisites for app registration authentication
+
+- To create a service connection, your Azure account needs to be able to create app registrations. 
+    - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
+
 
 ### Create an app registration and federated credentials in Azure portal
 
@@ -154,38 +207,72 @@ You can also use the REST API for this process.
     :::image type="content" source="approvals/media/app-registration-client-tenant.png" alt-text="Screenshot that shows the app registration client ID and tenant ID.":::
 
 
-### Create a service connection for service principal authentication in Azure DevOps
-
-1. Open a new browser window. 
+### Create a service connection for app registration authentication in Azure DevOps
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**.
 
 1. Select **New service connection**.
 
-1. Select **Azure Resource Manager**, and then select **Next**.
+1. Select **Azure Resource Manager**.
 
-1. Select **Workload Identity federation (manual)**, and then select **Next**.
+1. Select identity type **App registration or Managed identity (manual)** the **Workload identity federation** credential.
 
-    :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot that shows selecting the workload identity service connection.":::
+    :::image type="content" source="media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
 
 1. For **Service connection name**, enter a value such as `uaappregistration`. You'll use this value in your federated credential subject identifier.
 
+1. Select **Next**.
 
-1. For **Subscription ID** and **Subscription Name**, enter the values for the subscription in your Azure portal account.
+1. In **Step 2: App registration details**:
 
-    :::image type="content" source="approvals/media/federated-set-subscription.png" alt-text="Screenshot that shows federated subscription credentials.":::
+    **Step 2: App registration details** contains the following parameters. You can enter or select the following parameters:
 
-1. In the authentication section:
+   | Parameter | Description |
+   | --------- | ----------- |
+   | **Issuer** | Required. DevOps automatically creates the issuer URL. |
+   | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
+   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
 
-    1. For **Service Principal Id**, enter the value of **Application (client) ID** from your app registration.
 
-    1. For **Tenant Id**, enter the value of **Directory (tenant) ID** from your app registration.
+    1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
+    
+        * For the **Subscription** scope, enter the following parameters:
 
-1. Copy the generated values for **Issuer** and **Subject identifier**.
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
+        
+        * For the **Management Group** scope, enter the following parameters:
 
-    :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot that shows DevOps credentials for federated authentication.":::
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Management Group Id** | Required. Enter the Azure management group ID. |
+            | **Management Group Name** | Required. Enter the Azure management group name. |
+        
+        * For the **Machine Learning Workspace** scope, enter the following parameters:
 
-1. Select **Keep as draft** to save a draft credential. You can't complete setup until your app registration has a federated credential in Azure portal. 
+            | Parameter | Description |
+            | --------- | ----------- |
+            | **Subscription Id** | Required. Enter the Azure subscription ID. |
+            | **Subscription Name** | Required. Enter the Azure subscription name. |
+            | **Resource Group** | Required. Select the resource group containing the workspace. |
+            | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
+            | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
+    
+    1. In the **Authentication** section, enter or select the following parameters:
+    
+        | Parameter | Description |
+        | --------- | ----------- |
+        | **Application (client) ID** | Required. Enter the Application (client) ID for your app registration. |
+        | **Directory (tenant) ID** | Required. Enter the Directory (tenant) ID for your app registration. |
+    
+    
+    1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+
+1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
+
+1. Select **Keep as draft** to save a draft credential. You can't complete setup until your managed identity has a federated credential in Azure portal. 
 
 
 ### Add a federated credential to your app registration in Azure portal
