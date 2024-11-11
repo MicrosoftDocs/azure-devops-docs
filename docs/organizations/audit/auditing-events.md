@@ -301,7 +301,7 @@ The following tables describe the type of events (or actions) that are available
 ### Release
 | ActionId |	Category |	Details |
 |----------|-----------|----------|
-| Release.ApprovalCompleted |	Modify |	{ApprovalType} approval for deployment of release "{ReleaseName}" to stage "{StageName}" was {ApprovalResult} in Project {ResolveProjectId:ProjectId} |
+| Release.ApprovalCompleted |	Modify | {ApprovalType} approval for deployment of release "{ReleaseName}" to stage "{StageName}" was {ApprovalResult} in Project {ResolveProjectId:ProjectId} |
 | Release.ApprovalsCompleted |	Modify	| Multiple {ApprovalType} approvals for deployment of release "{ReleaseName}" have been {ApprovalResult} in Project {ResolveProjectId:ProjectId}|
 | Release.DeploymentCompleted	| Execute	| Deployment of release "{ReleaseName}" on pipeline "{PipelineName}" to "{StageName}" in Project {ResolveProjectId:ProjectId} was {DeploymentResult}|
 | Release.DeploymentsCompleted	| Execute	| Deployments of multiple stages of release "{ReleaseName}" on pipeline "{PipelineName}" were {DeploymentResult} in Project {ResolveProjectId:ProjectId}|

@@ -85,13 +85,15 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 
 4. Select **Set up**. 
    
-You stream gets configured and events begin to arrive on Splunk within half an hour or less. 
+Your stream gets configured and events begin to arrive on Splunk within half an hour or less. 
 
 ### Set up an Event Grid stream
 
 1. Create an Event Grid topic on Azure.
+
 > [!NOTE]
-> When creating the Event Grid topic, navigate to the Advanced tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas are not supported by Azure DevOps. 
+> Go to the **Advanced** tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas are not supported by Azure DevOps. 
+
 2. Make note of the "Topic Endpoint" and one of the two "Access Keys". Use this information to create the Event Grid connection.
 
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::

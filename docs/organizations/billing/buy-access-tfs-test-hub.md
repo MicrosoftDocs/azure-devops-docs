@@ -77,4 +77,4 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 - [Buy Basic access for users](buy-basic-access-add-users.md)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 - [Change your subscription for billing](change-azure-subscription.md)
-- [Learn about Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)
+- [Learn about Microsoft Cost Management and billing](/azure/cost-management-billing/cost-management-billing-overview)

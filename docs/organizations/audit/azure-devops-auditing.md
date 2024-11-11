@@ -166,7 +166,8 @@ In the current Auditing UI, you can filter events only by date or time range.
 
    ![Screenshot shows auditing entry filter by date & time.](media/azure-devops-auditing/audit-log-date-time-picker.png)
 
-2. Use the filters to select any time range within the last 90 days and scope it down to the minute. Once you select a time range, c
+2. Use the filters to select any time range within the last 90 days and scope it down to the minute.
+
 3. Select **Apply** on the time range selector to start the search. 
    By default, the top 200 results return for that time selection. If there are more results, you can scroll down to load more entries onto the page.
 
