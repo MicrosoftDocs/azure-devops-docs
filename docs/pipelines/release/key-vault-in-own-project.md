@@ -166,10 +166,10 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 
     ```json
     {
-      "appId": "xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "displayName": "MyServicePrincipal",
       "password": "***********************************",
-      "tenant": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx"
+      "tenant": "aaaabbbb-0000-cccc-1111-dddd2222eeee"
     }
     ```
 
