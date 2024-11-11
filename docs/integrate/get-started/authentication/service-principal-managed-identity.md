@@ -413,7 +413,13 @@ git config -e
 GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
 ```
 
+
 ## Potential errors
+
+### The Git repository with name or identifier '{`repoName`}' does not exist or you do not have permissions for the operation you are attempting.
+
+Ensure that the service principal has at least a ["Basic" license](/azure/devops/organizations/security/access-levels) to access repositories. A "Stakeholder" license is not sufficient.
+
 
 ### Failed to create service principal with object ID '{`provided objectId`}'
 
