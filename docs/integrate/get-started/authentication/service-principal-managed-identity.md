@@ -106,7 +106,7 @@ The returned access token is a JWT with the defined roles, which can be used to 
 #### Acquire a Microsoft Entra ID token with the Azure CLI
 For ad-hoc operations, it might be easier to acquire a one-off Microsoft Entra ID token through the Azure CLI. This might be preferred for operations that do not need a persistent token to be regularly rotated, like API calls or git clone operations 
 
-**Prerequisites***
+**Prerequisites**
 * **Azure tenant id and subscription id**: Make sure the subscription is associated with the tenant connected to the  Azure DevOps organziation you are trying to access. If you do not know your tenant or subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
 * **Azure app client ID and client secret**
 * [**Azure CLI**](/cli/azure/install-azure-cli)
