@@ -41,7 +41,7 @@ Changing app scopes and app ownership on a Microsoft Entra app is a relative bre
 
 Microsoft Entra logs [all “sign-ins"](/entra/identity/monitoring-health/concept-sign-ins) into an Azure tenant, which includes your internal apps and resources. This additional information can offer some more insight into who is using your apps that aren't available through our auditing.
 
-### Developing on Entra
+### Developing applications for Azure DevOps on Microsoft Entra
 
 We recommend reading the Microsoft Entra documentation thoroughly to understand the new functionality available via Microsoft Entra and the [different expectations](/entra/identity-platform/application-model) of you during setup. 
 
@@ -52,3 +52,31 @@ We have also provided guides to support your app development for:
 Microsoft Entra OAuth is the recommended solution for building apps to access Azure DevOps services on-behalf-of a consenting user.
 
 If you're looking to build an application to act on-behalf-of itself, then look into our documentation on [service principal support](service-principal-managed-identity.md). In these docs, we elaborate more on how to set up a service principal or managed identity that doesn't rely on user permissions to action on organization resources, instead relying solely on its own permissions. This authentication mechanism is the recommended authentication for building out automated tooling for teams.
+
+### Acquiring a Microsoft Entra access token with the Azure CLI
+
+You can use the Azure CLI to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls or git clone operations that don't need a persistent token. 
+
+#### Prerequisites
+* **Azure subscription id**: Make sure the subscription is associated with the tenant connected to the  Azure DevOps organziation you are trying to access. If you do not know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+* [**Azure CLI**](/cli/azure/install-azure-cli)
+
+#### Acquiring an access token for a user
+These instructions are provided by the Databricks docs and more details can be found on [their page](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/user-aad-token).
+
+  1. Sign in to the Azure CLI using the `az login` command. Follow the on-screen instructions to complete signin.
+  2. Set the right correct subscription for the signed-in user by entering the command below:
+  ``` bash
+  az account set -s <subscription-id>
+  ```
+  3. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
+  ``` bash
+  az account get-access-token \
+  --resource 499b84ac-1321-427f-aa17-267ca6975798 \
+  --query "accessToken" \
+  -o tsv
+  ```
+
+#### Acquiring an access token for a service principal
+Service principals can also use ad-hoc Microsoft Entra ID access tokens for ad-hoc operations.
+Instructions on how to do so are provided in this section in the guide to [service principals and managed identities]().
