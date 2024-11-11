@@ -268,3 +268,4 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 - [Review pipeline logs](../troubleshooting/review-logs.md)
 - [Define variables](../process/variables.md)
 - [Classic release and artifacts variables](./variables.md)
+  
