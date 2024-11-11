@@ -167,8 +167,6 @@ All of them are HTTPS, unless otherwise stated.
 
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
 
-* * *
-
 ## Configure the Azure DevOps Agent to run behind a Proxy
 
 If you have configured a proxy service on your image and want your workloads running on your Managed DevOps pool to run behind this proxy, you will additionally need to add a few environment variables on your image.
@@ -179,7 +177,7 @@ If you have configured a proxy service on your image and want your workloads run
 
 For Windows, these are expected to be system environment variables, and for Linux these variables are expected to exist in the '/etc/environment' file. Setting these system variables incorrectly or without a configured proxy service on the image will cause provisioning of new agents to fail with network connectivity issues.
 
-**Migrating from Azure VMSS Agents-** If you are migrating from VMSS and were previously using their Proxy settings on your images as defined [here](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops#customizing-pipeline-agent-configuration), no changes should be required.
+**Migrating from Azure VMSS Agents-** If you are migrating from VMSS and were previously using their Proxy settings on your images as defined [here](../pipelines/agents/scale-set-agents.md#customizing-pipeline-agent-configuration), no changes should be required.
 
 ## See also
 
