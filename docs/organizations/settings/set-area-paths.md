@@ -119,6 +119,7 @@ ID     Identifier                            Name                Path           
 55382  4235f40d-753b-49dd-868f-82372065ec83  Shopping Cart       \Fabrikam Fiber\Area\Account Management\Shoppin...  False
 55383  49d34650-6c65-446c-aff6-79edd3a21a75  Customer Profile    \Fabrikam Fiber\Area\Account Management\Custome...  False
 ```
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
@@ -161,10 +162,9 @@ To add a child area path, do the following steps:
 
 You can also add area paths to a team on the **Team configuration** > **Areas** page.
 
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"  
+::: moniker range="azure-devops"
 
 You can add area paths to a project using [az boards area project create](/cli/azure/boards/area/project#az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -224,7 +224,6 @@ ID     Identifier                            Name    Path                       
 ## List team area paths  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
- 
 
 #### [Browser](#tab/browser/)
 
