@@ -24,6 +24,6 @@ The Test Plans directory now offers enhanced sorting options! With this update, 
 
 Manual testers often encounter challenges with losing progress on test cases if an incomplete run isn’t marked as “Paused” before selecting “Save and Close.” This can result in lost work on complex or lengthy cases, requiring testers to start over. To solve this, we’re introducing Auto Pause for Test Case Run. This feature automatically pauses a test case if there’s a break or interruption, ensuring all data is saved without needing a manual pause. With Auto Pause, testers can easily resume right where they left off, simplifying the testing process and making it more efficient. A preview will be available in the coming weeks—[email us](mailto:adocustomerfeedback@service.microsoft.com) if you’d like to join! 
 
-### New release version for test and feedback extensions (TFE)
+### New release version for Test and Feedback Extensions (TFE)
 
 We’re thrilled to announce the release of TFE version 1.0.247.0, now available on both Chrome and Edge. This update brings a key improvement: a fix for Stakeholder Mode, addressing and resolving previous disruptions. Enjoy a smoother, more reliable experience with this latest version! 
