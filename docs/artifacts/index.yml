@@ -8,8 +8,8 @@ metadata:
   description: Code once and share your packages NuGet, npm, Maven, Python, and Universal Packages with Azure Artifacts for more reliable and scalable builds. 
   ms.service: azure-devops-artifacts
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  ms.author: rabououn
+  author: ramiMSFT
   ms.date: 09/17/2021 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

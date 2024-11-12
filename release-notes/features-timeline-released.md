@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/9/2024
+ms.date: 9/4/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -21,6 +21,7 @@ hide_comments: true
 ---
 
 ## Released features
+## Azure DevOps Services
 
 The released features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
 Versions in the "Server" column are linked to the appropriate download location. 
@@ -36,6 +37,60 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="14"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
+    <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
+    <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
+    <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>New pip detection strategy for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Enhanced tag management on work item form </td><td>Boards</td><td>N/A</td></tr>
+    <td>Improved image support in work item comments</td><td>Boards</td><td>N/A</td></tr>
+    <td>GitHub pull request insights</td><td>Boards</td><td>N/A</td></tr>
+    <td>Configure target branches for pull requests</td><td>Repos</td><td>Future</td></tr>
+    <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Future</td></tr>
+    <td>Ubuntu 24.04 on Azure Pipelines hosted agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="14"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
+    <td>Pull request branches now visible in Advanced Security branch picker </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Automatic updates for default branch changes in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Generic third-party SARIF support for Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Pull request annotations feature in public preview </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>AB# links on GitHub pull requests</td><td>Boards</td><td>N/A</td></tr>
+    <td>REST API support for connecting GitHub repositories</td><td>Boards</td><td>N/A</td></tr>
+    <td>Permanently delete attachments</td><td>Boards</td><td>Future</td></tr>
+    <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
+    <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Test and feedback extension in Manifest V3 (Edge release)</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="7"><a href="2024/sprint-244-update.md" data-raw-source="[4 September 2024](2024/sprint-244-update.md)"> 4 September 2024</a></td>
+    <td>New Advanced Security API endpoint to retrieve all branches with successful Advanced Security analyses</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Advanced Security List Alerts API return all alerts across all branches</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Area and iteration level fields</td><td>Boards</td><td>Future</td></tr>
+    <td>UI support of Git Submodules</td><td>Repos</td><td>Future</td></tr>
+    <td>Announcing deprecation of Pipeline Tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>The Pipelines agent will show warnings for agents running Operating Systems not supported by .NET 8</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Enhanced Visibility for Usage Limits in Azure DevOps</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="8"><a href="2024/sprint-243-update.md" data-raw-source="[13 August 2024](2024/sprint-242-update.md)"> 13 August 2024</a></td>
+    <td>Advanced Security meter usage API now returns user identities</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Advanced Security code scanning for C# and Java projects without builds</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Managed DevOps Pools (Preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Pipelines tasks use Node 20</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Create build pipeline permission</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Exclusive lock check at stage level</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Template information in pipeline runs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Manually triggered YAML pipeline stages</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
     <td rowspan="3"><a href="2024/sprint-242-update.md" data-raw-source="[25 July 2024](2024/sprint-242-update.md)"> 25 July  2024</a></td>
     <td>Connect to GitHub repository search improvements</td><td>Boards</td><td>Future</td></tr>
@@ -110,8 +165,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January 2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
-    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>GitHub Integration - Improved AB# validation</td><td>Boards</td><td>Future</td></tr>
+    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>    
     <td>Team Automation Rules</td><td>Boards</td><td>Future</td></tr>
     <td>Update deprecated tasks before January 31</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Microsoft hosted agents use PowerShell 7.4</td><td>Pipelines</td><td>N/A</td></tr>
@@ -4755,6 +4809,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </tbody>
 </table>
 
+## Azure DevOps Server
+
+
 ## Azure DevOps Server Build Numbers
 
 
@@ -4771,7 +4828,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
           <td>December 6, 2022</td>
           <td>19.205.33122.1</td>
         </tr>
@@ -5000,6 +5057,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
       </tbody>
     </table>
+
 
 ## How to provide feedback
 

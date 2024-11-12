@@ -136,7 +136,7 @@ The two files are described in greater detail in the next sections.
 
 The migration specification, *migration.json*, is a JSON file that provides migration settings. It includes the desired organization name, storage account information, and other information. Most of the fields are autopopulated, and some fields require your input before you attempt a migration.
 
-![Screenshot of a newly generated migration specification file.](media/migration-import/importSpecNotFilledOut.png)
+![Screenshot of a newly generated migration specification file.](media/migration-import/importSpecHalfFilledOut.png)
 
 The *migration.json* file's displayed fields and required actions are described in the following table:
 
@@ -370,10 +370,10 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 Following our Fabrikam example, the two SQL commands would look like the following example:
 
 ```sql
-ALTER DATABASE [Foo] SET RECOVERY SIMPLE;
+ALTER DATABASE [Fabrikam] SET RECOVERY SIMPLE;
 
 USE [Foo]
-CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'
+CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikampassword'
 CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
@@ -470,9 +470,7 @@ Imports can be queued as either a test run or a production run. The **ImportType
 - **ProductionRun**: Use a production run when you want to keep the resulting migration and use the organization full time in Azure DevOps Services after the migration finishes. 
 
 > [!TIP] 
-> We always recommend that you complete a test run migration first. 
-
-![Screenshot of completed migration specification file with migration type.](media/migration-import/importSpecCompleted.png)
+> We always recommend that you complete a test run migration first.
 
 ### Test run organizations
 
@@ -489,7 +487,7 @@ Before you can run a second test run migration or the final production migration
 > Optional information to help a user be more successfulAny test run migration that follows the first is expected to take longer given the extra time required to clean up resources from previous test runs. 
 
 It can take up to one hour for an organization name to become available after deleting or renaming. 
-For more information,, see the [Post migration tasks](migration-post-migration.md) article. 
+For more information, see the [Post migration tasks](migration-post-migration.md) article. 
 
 If you encounter any migration problems, see [Troubleshoot migration and migration errors](migration-troubleshooting.md#resolve-migration-errors). 
 
@@ -514,7 +512,7 @@ You can then contact Azure DevOps Services customer support for help with unders
 
 #### Detach your team project collection from Azure DevOps Server to prepare it for migration. 
 
-Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new TFS server or in this case, to Azure DevOps Services. 
+Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new server or in this case, to Azure DevOps Services. 
 
 Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection). 
 

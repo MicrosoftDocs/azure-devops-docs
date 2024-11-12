@@ -1,15 +1,14 @@
 ---
 title: Configure networking
-suffix: Managed DevOps Pools
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 10/18/2024
 ---
 
 # Configure Managed DevOps Pools networking
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 ## Adding agents to your own Virtual network
 
@@ -38,10 +37,13 @@ If you're using Express Route, you need to temporary drop or change the manageme
 > The Managed DevOps Pool and virtual network must be in the same region, or you'll get an error similar to the following when you try to create the pool or update the network configuration. `Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region.`
 
 Ensure the DevOpsInfrastructure principal has the following access on the virtual network:
-- Reader
-- Network Contributor, or add the following permission to a custom role: `Microsoft.Network/virtualNetworks/subnets/join/action`
-- `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/validate/action` access using a custom role
-- `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/write` access using a custom role
+- `Reader` and `Network Contributor`
+- OR add the following permission to a custom role:
+  - `Microsoft.Network/virtualNetworks/*/read`
+  - `Microsoft.Network/virtualNetworks/subnets/join/action`
+  - `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/validate/action`
+  - `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/write`
+  - `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/delete`
 
 Make a custom role for the **Service Association Link** access. An example role can be created at the resource group or subscription level in the Access Control tab, as shown in the following example.
 
@@ -105,6 +107,33 @@ If you are using ARM templates, add a `networkProfile` property if it doesn't al
         }
         ...
     }
+}
+```
+
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Networking is configured using the `networkProfile` property in the `fabricProfile` section when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. For an isolated network, omit the `networkProfile` property when creating a pool.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `networkProfile` section of the **fabric-profile.json** file.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {...},
+    "networkProfile": {
+        "subnetId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet"
+    }
+  }
 }
 ```
 

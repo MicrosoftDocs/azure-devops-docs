@@ -5,7 +5,7 @@ description: Manage security in Azure Pipelines.
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: chcomley
 author: chcomley
-ms.date: 06/25/2024
+ms.date: 09/13/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -155,7 +155,7 @@ To manage project-level permissions for users and groups across all build pipeli
 
 By default, object-level permissions for individual pipelines are inherited from the project-level permissions. You can override the inherited project-level permissions. 
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To manage permissions for a pipeline, do the following steps:
 
@@ -201,7 +201,7 @@ Inherited users and groups can't be removed unless inheritance is disabled. To r
 
 By default, object-level permissions for individual pipelines inherit the project-level permissions. You can override the inherited permissions. 
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for an individual pipeline, do the following steps:
 
@@ -230,7 +230,7 @@ When you explicitly set an inherited user or group permission, inheritance is di
 
 Object-level permissions for individual pipelines inherit the project-level permissions by default. You can override these inherited permissions for an individual pipeline.
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set object-level permissions for a pipeline, do the following steps:
 
@@ -340,7 +340,7 @@ Do the following steps to add project users or groups that aren't listed in the 
 
 ## Set security for environments in Azure Pipelines
 
-Environments bundle deployment targets for YAML pipelines but aren't compatible with classic pipelines. Security roles, assigned at the project level to default users and groups, are inherited by all environments. These security settings can be adjusted at both the project and individual environment levels.
+Environments bundle deployment targets for YAML pipelines but aren't compatible with classic pipelines. All environments inherit, security roles, assigned at the project level to default users and groups. You can customize these settings for individual environments, including removing inherited users or groups and adjusting privilege levels, by disabling inheritance. Additionally, you can manage pipeline access for each environment.
 
 The following table shows security roles for environments:
 
@@ -387,7 +387,7 @@ To add project users or groups that aren't listed in the security dialog, do the
 
 ### Set object-level environment security
 
-By default, object-level security roles inherit from project-level settings. But, you can customize these settings for individual environments, including removing inherited users or groups and adjusting privilege levels, by disabling inheritance. Additionally, you have the option to manage pipeline access for each environment.
+By default, object-level security roles inherit from project-level settings. But, you can customize these settings for individual environments, including removing inherited users or groups and adjusting privilege levels, by disabling inheritance. Additionally, you can manage pipeline access for each environment.
 
 #### Set object-level environment user and group security roles
 
@@ -694,7 +694,7 @@ Users and groups can be removed from a release pipeline. Inherited users and gro
 
 ::: moniker range="< azure-devops-2020"
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 1. From your project, select **Pipelines** > **Releases**.
 1. Select the file view icon:::image type="icon" source="media/folder-icon.png":::.
@@ -1063,7 +1063,7 @@ Users and groups can be removed from the task group. Inherited users and groups 
 
 ::: moniker range="azure-devops-2020"
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for individual task groups, do the following steps:
 
@@ -1108,7 +1108,7 @@ Users and groups can be removed from the task group. Inherited users and groups 
 
 ::: moniker range="< azure-devops-2020"
 
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission is not inherited. If inheritance is enabled you can change an explicitly set permission back to the inherited value.
+You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for a task group, do the following steps:
 
@@ -1137,7 +1137,7 @@ When a permission for an inherited user or group is explicitly set, inheritance 
 
 ## Set agent pool security in Azure Pipelines
 
-Agent pools are a collection of agents that you use to run build and release jobs. 
+Agent pools are a collection of agents that you use to run build and release jobs.
 
 ::: moniker range="azure-devops"
 
@@ -1183,6 +1183,14 @@ The following table shows default project and object security roles for agent po
 
 ::: moniker range="azure-devops"
 
+### Add the principal as a user
+
+Before you can add a principal, such as a service principal, in the **Security** settings of an agent pool, add it as a user in your organization.
+
+1. Go to **Organization settings**.
+2. Select **Users**. 
+3. Add the service principal with Basic access or higher.
+
 ### Set organization security for agent pools
 
 You can manage collection-level users and groups for all agent pools in the organization or for individual project-scoped agent pools. The security roles for agent pools are **Reader**, **Service Account**, and **Administrator**. The **User** and **Creator** roles aren't available at the organization level.
@@ -1193,28 +1201,29 @@ By default, no users or groups have explicit roles for all pools at the organiza
 
 To manage security roles for all agent pools in the organization, do the following steps:
 
-1. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
-1. Select **Security**. 
+1. [Add the principal as a user](#add-the-principal-as-a-user).
+2. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
+3. Select **Security**. 
 
    :::image type="content" source="media\agent-pools-organization-security-selection.png" alt-text="Screenshot of organization-level security selection for all agent pools.":::
 
-1. To add users and groups:
+4. To add users and groups:
     1. Select **Add**
-    1. Enter a user or group and select it from the search results.
-    1. Repeat the previous step to add more users and groups.
-    1. Select a role and select **Add** 
+    2. Enter a user or group and select it from the search results.
+    3. Repeat the previous step to add more users and groups.
+    4. Select a role and select **Add** 
 
         :::image type="content" source="media\agent-pool-add-user.png" alt-text="Screenshot of organization-level add user for all agent pools.":::
 
-1. To remove a user or group from the list, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
+5. To remove a user or group from the list, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 
-1. To change a security role, select the user or group and select the role from the dropdown list.
+6. To change a security role, select the user or group and select the role from the dropdown list.
 
-2. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
+7. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
 
     :::image type="content" source="media\agent-pool-organization-security-dialog.png" alt-text="Screenshot of organization-level security dialog for all agent pools.":::
 
-3. Close the dialog.
+8. Close the dialog.
 
 #### Set organization security for individual agent pools
 
@@ -1488,8 +1497,8 @@ To add project users or groups that aren't listed in the security dialog, do the
 
 ## Related articles
 
-- [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)
-- [Default permissions and access](../../organizations/security/permissions-access.md)
-- [Permissions and groups reference](../../organizations/security/permissions.md)
-- [Securing Azure Pipelines](../security/overview.md)
-- [Azure DevOps CLI reference](/cli/azure/devops)
+- [Start with permissions, access, and security groups](../../organizations/security/about-permissions.md)
+- [Review default permissions and access](../../organizations/security/permissions-access.md)
+- [Refer to permissions and groups](../../organizations/security/permissions.md)
+- [Secure Azure Pipelines](../security/overview.md)
+- [Access the Azure DevOps CLI reference](/cli/azure/devops)

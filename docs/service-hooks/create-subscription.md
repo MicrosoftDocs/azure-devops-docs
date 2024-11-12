@@ -70,8 +70,8 @@ See the following response to the request to create the subscription:
 
 ```js
 {
-    "id": "74aeeed0-bf5d-48dc-893f-f862b80987e9",
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/hooks/subscriptions/74aeeed0-bf5d-48dc-893f-f862b80987e9",
+    "id": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/hooks/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "publisherId": "tfs",
     "eventType": "build.complete",
     "resourceVersion": "1.0",

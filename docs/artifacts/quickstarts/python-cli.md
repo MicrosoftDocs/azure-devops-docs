@@ -84,7 +84,7 @@ Use the following steps to use the sample Python package from GitHub.
 1. From a CLI on your local machine, clone the repository to your local machine using the URL you copied from your forked repository. 
 
     ```Command
-    git clone <REPOSIORY_URL>
+    git clone <REPOSITORY_URL>
     ```
 
 1. Change directory to your cloned repository.

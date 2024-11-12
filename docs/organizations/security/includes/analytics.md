@@ -20,6 +20,7 @@ ms.topic: include
      **Project admins**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
       View Analytics 
@@ -76,4 +77,5 @@ ms.topic: include
       ✔️
    :::column-end:::
 :::row-end:::
- 
+
+---

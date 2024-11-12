@@ -127,22 +127,22 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Select the **Connect Azure Network Load Balancer** task. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one).
 
-1. Select the **Variables** tab and enter the variable values as below.
+1. Select the **Variables** tab, create your variables, and provide their respective values as shown in the example below:
 
     | Variable Name | Variable Value  |
     |--|--|
     | DatabaseName | PartsUnlimited-Dev |
-    | DBPassword | P2ssw0rd@123 |
-    | DBUserName |sqladmin  |
-    | DefaultConnectionString | Data Source=[YOUR_DNS_NAME];Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30; |
+    | DBPassword | xxxxxxxx |
+    | DBUserName | xxxxxxxx |
+    | DefaultConnectionString | Data Source=[YOUR_DNS_NAME];Initial Catalog=PartsUnlimited-Dev;User ID=xxxxxxxx;Password=xxxxxxxx;MultipleActiveResultSets=False;Connection Timeout=30; |
     | ServerName | localhost |
 
     > [!IMPORTANT]
     > Make sure to replace your SQL server DNS name (which you noted from Azure portal earlier) in **DefaultConnectionString** variable.
 
-    Your DefaultConnectionString should be similar to this string after replacing the SQL DNS:
+    Your DefaultConnectionString  should look similar to the following after replacing the SQL DNS:
 
-    `Data Source=cust1sqljo5zndv53idtw.westus2.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30;`
+    `Data Source=cust1sqljo5zndv53idtw.westus2.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=xxxxxxxx;Password=xxxxxxxx;MultipleActiveResultSets=False;Connection Timeout=30;`
 
     The final variable list should look something like this:
 

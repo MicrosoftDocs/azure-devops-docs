@@ -9,12 +9,11 @@ ms.date: 06/29/2022
 
 ### Date and time pattern
 
-The date and time pattern you enter for **DateTime** fields should match that which you select through your profile. To view or change your selection, see [Set user preferences for Time and Locale](../../organizations/settings/set-your-preferences.md).
+The date and time pattern you enter for **DateTime** fields should match that which you select through your profile. To view or change your selection, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
 
 ::: moniker range="azure-devops"
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows the Date Pattern dropdown options on the Time and Locale pane.](../../organizations/settings/media/user-preferences/date-patterns.png) ![Screenshot that shows the Time Pattern dropdown options on the Time and Locale pane.](../../organizations/settings/media/user-preferences/time-pattern.png)
+:::image type="content" source="../../organizations/settings/media/user-preferences/date-patterns.png" alt-text="Screenshot that shows the Date Pattern dropdown options on the Time and Locale pane."::: :::image type="content" source="../../organizations/settings/media/user-preferences/time-pattern.png" alt-text="Screenshot that shows the Time Pattern dropdown options on the Time and Locale pane.":::
 
 ::: moniker-end
 

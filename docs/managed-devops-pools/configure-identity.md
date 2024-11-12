@@ -1,15 +1,14 @@
 ---
 title: Configure identity
-suffix: Managed DevOps Pools
 description: Learn how to configure a managed identity for Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 10/18/2024
 ---
 
 # Configure Managed DevOps Pools identity
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 User assigned managed identities enable Azure resources to authenticate to cloud services, like Azure Key Vault, without storing credentials in code. These types of managed identities are created as standalone Azure resources, and have their own lifecycle. A single resource, like a Virtual Machine, can utilize multiple user assigned managed identities. Similarly, a single user assigned managed identity can be shared across multiple resources.
 

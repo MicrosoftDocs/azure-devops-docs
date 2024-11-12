@@ -60,7 +60,7 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 ###  JavaScript sample
 
-This example shows how to register an object that's called when events occur on the work item form that may impact your contributed group. Please see [WorkItemFormGroup Sample](https://github.com/microsoft/azure-devops-extension-sample/blob/master/src/Samples/WorkItemFormGroup/WorkItemFormGroup.tsx) for more examples.
+This example shows how to register an object that's called when events occur on the work item form that may impact your contributed group.
 
 ```js   
 import { IWorkItemFormService, WorkItemTrackingServiceIds } from "azure-devops-extension-api/WorkItemTracking";
@@ -299,9 +299,9 @@ To add an observer to the work item, which listens to the work item events, add 
 ## Changes with New Boards Hub
 
 > [!NOTE]
-> New Boards Hub is currently in preview but is on track be available for everyone in 2024. We strongly suggest that you immediately enable New Boards Hub and test your internal extensions.
+> New Boards Hub is currently in preview but is on track be available for everyone. We strongly suggest that you immediately enable New Boards Hub and test your internal extensions.
 
-### Use the latests SDK's
+### Use the latest SDKs
 
 Make sure your extension is using the latest version of [azure-devops-extension-sdk](https://www.npmjs.com/package/azure-devops-extension-sdk)
 
@@ -309,7 +309,7 @@ When using the new SDK, you should also be using the [azure-devops-extension-api
 
 ### When to use action or action-provider
 
-Use `ms.vss-web.action-provider` when dynamically loading menu items using ``getMenuItems`` on the menu handler. Avoid using `ms.vss-web.action-provider` when your menu items are static and defined in your manifest. Instead `ms.vss-web.action` should be used .
+Use `ms.vss-web.action-provider` when dynamically loading menu items using ``getMenuItems`` on the menu handler. Avoid using `ms.vss-web.action-provider` when your menu items are static and defined in your manifest. Instead `ms.vss-web.action` should be used.
 
 ### Package require("VSS/Events/Document") is no longer supported
 

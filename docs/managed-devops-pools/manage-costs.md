@@ -1,15 +1,16 @@
 ---
 title: Manage cost and performance
-suffix: Managed DevOps Pools
 description: Learn how to manage cost and performance for your Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/18/2024
+ms.date: 10/18/2024
+ms.topic: concept-article
+#Customer intent: As a platform engineer, I want to understand how to balance the cost and performance of my pools.
 ---
 
 # Manage cost and performance
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Managed DevOps Pools provides several different options for configuring the performance of your pool. This article describes options for matching your pool's performance to the demands of your workload, by increasing or reducing the performance and cost of your pools.
 

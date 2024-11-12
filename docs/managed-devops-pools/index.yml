@@ -8,10 +8,7 @@ metadata:
   titleSuffix: Azure DevOps 
   description: Managed DevOps Pool is a fully managed service where VMs or containers powering the agents will live in a Microsoft Azure subscription and not in your own Azure subscription.
   ms.topic: landing-page 
-  author: steved0x 
-  ms.author: sdanie 
-  ms.date: 07/31/2024
-  ms.subservice: azure-devops-managed-devops-pools
+  ms.date: 10/18/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -31,6 +28,8 @@ landingContent:
             url: quickstart-azure-portal.md
           - text: ARM template
             url: quickstart-arm-template.md
+          - text: Azure CLI
+            url: quickstart-azure-cli.md
   - title: Configure Managed DevOps Pools
     linkLists:
       - linkListType: concept
@@ -50,7 +49,7 @@ landingContent:
           - text: Configure security settings
             url: configure-security.md
           - text: Configure Identity
-            url: index.yml
+            url: configure-identity.md
   - title: Key concepts
     linkLists:
       - linkListType: concept
@@ -63,8 +62,24 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: .NET
+            url: /dotnet/api/overview/azure/devops-infrastructure
+          - text: ARM template
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
           - text: Azure CLI
             url: /cli/azure/service-page/managed%20devops%20pools
+          - text: Bicep
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
+          - text: Java
+            url: /java/api/overview/azure/devops-infrastructure
+          - text: JavaScript
+            url: /javascript/api/overview/azure/devops-infrastructure
+          - text: Python
+            url: /python/api/overview/azure/devops-infrastructure
+          - text: REST
+            url: /rest/api/devopspools
+          - text: Terraform
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
@@ -73,6 +88,8 @@ landingContent:
             url: monitor-pool.md
           - text: Diagnostic logs
             url: diagnostics.md
+          - text: Reliability
+            url: reliability-managed-devops-pools.md
   - title: Manage costs
     linkLists:
       - linkListType: concept

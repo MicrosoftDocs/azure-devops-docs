@@ -215,11 +215,11 @@ To secure your organization and code, you can set various policies. Specifically
 Use the Microsoft Entra tenant policy to restrict creating new organizations to desired users only. This policy is turned off by default and only valid when the organization is connected to Microsoft Entra ID. For more information, see [Restrict organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 
 The following policies determine the access granted to users and applications within your organizations:
-- [Third-party application access via OAuth](../accounts/change-application-access-policies.md#application-connection-policies).
-- [SSH authentication access](../accounts/change-application-access-policies.md#application-connection-policies).
+- [Non-Microsoft application access via OAuth](../accounts/change-application-access-policies.md#change-application-connection-policies).
+- [SSH authentication access](../accounts/change-application-access-policies.md#change-application-connection-policies).
 - **Allow public projects**: When enabled, users can create public projects that allow nonmembers of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For more information, see [Make your project public](../projects/make-project-public.md). 
 - **Log Audit events** - Turn on the ability to track [Auditing events and streams](../audit/azure-devops-auditing.md) for your organization.
-- [Enable Microsoft Entra Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#conditional-access-policies).
+- [Enable Microsoft Entra Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
 
 ### User policies 
 - **External guest access** (*Only valid when the organization is connected to Microsoft Entra ID.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant's Microsoft Entra ID via the **Users** page. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  

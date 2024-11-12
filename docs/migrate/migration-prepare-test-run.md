@@ -36,7 +36,7 @@ Do the following steps to generate the migration specification and related files
 
 ## Configure the migration specification file 
 
-The migration specification file is a JSON file that instructs the Data Migration Tool how to to the following actions.
+The migration specification file is a JSON file that instructs the Data Migration Tool how to do the following actions.
 - Configure your migrated organization
 - Specify the source locations
 - Customize the migration 
@@ -224,7 +224,7 @@ See the following example of the SQL command:
     ALTER DATABASE [Foo] SET RECOVERY SIMPLE; 
      
     USE [Foo] 
-    CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!' 
+    CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikampassword' 
     CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo] 
     EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
@@ -270,7 +270,7 @@ For more information, see [Create a storage account](/azure/storage/common/stora
 
 A grace period is placed on the newly migrated Azure DevOps Services organization to allow your team to finish any steps it needs and correct license assignments. If you anticipate that you might want to purchase any more user plans, build or deployment pipelines, hosted build services, hosted load test services, for example, we highly recommend that you sure you have an Azure Subscription ready for linking to your migrated organization. The grace period ends on the first day of the following month after you completed your migration. 
 
-We remind you again in the Post-migration phase(link) for when you need to do the linking. This preparation step is more about making sure that you know which Azure Subscription you use in that later step. For more information, see [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md). 
+We remind you again in the Post-migration phase(link) for when you need to do the linking. This preparation step is more about making sure that you know which Azure Subscription you use in that later step. For more information, see [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing). 
 
 ## Next steps 
 

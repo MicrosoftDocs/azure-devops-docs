@@ -8,7 +8,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/24/2024
+ai-usage: ai-assisted
+ms.date: 08/19/2024
 --- 
 
 
@@ -16,7 +17,7 @@ ms.date: 07/24/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Several permissions are set at the organization or collection level. You can grant these permissions by adding a user or group to the **Project Collection Administrators** group. Or, you can grant specific collection-level permissions to a custom security group or user. 
+This article shows you how to manage permissions at the organization or collection level. Several permissions are set at these levels. You can only grant these permissions if you're a member of the **Project Collection Administrators** group.
  
 ::: moniker range="azure-devops"
 An organization is the container for several projects that share resources. For more information, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
@@ -26,14 +27,13 @@ An organization is the container for several projects that share resources. For 
 A project collection is the container for several projects that share resources. For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 ::: moniker-end
 
-The following articles provide related information: 
+You might find the following articles helpful:
 
 - [Look up a project collection administrator](look-up-project-collection-administrators.md)
 - [Manage users, groups, and security groups](add-remove-manage-user-group-security-group.md)
 - [Request an increase in permission levels](request-changes-permissions.md)
 - [Change project-level permissions](change-project-level-permissions.md)
 - [Set object-level permissions](set-object-level-permissions.md)
-- [Employ security best practices](security-best-practices.md)
 
 [!INCLUDE [hidden-security-groups](./includes/hidden-security-groups.md)]
 
@@ -42,18 +42,18 @@ The following articles provide related information:
 [!INCLUDE [collection-level-permissions](./includes/collection-level-permissions.md)]
 
 > [!NOTE]
-> **Project Collection Administrators** have the permission to manage organization or collection-level security groups, group membership, and edit permission ACLs. This permission isn’t controlled through the user interface.
+> **Project Collection Administrators** can manage organization or collection-level security groups, group membership, and edit permission ACLs. This permission isn't controlled through the user interface.
 
 ## Prerequisites
 
-- To manage permissions or groups at the organization or collection level, you must be a member of the **Project Collection Administrators** security group. If you created the organization or collection, you're automatically a member of this group. To get added to this group, you need to request permissions from a [member of the **Project Collection Administrators** group](look-up-project-collection-administrators.md).
+**Security groups:**
+- You must be a member of the **Project Collection Administrators** security group to manage permissions or groups at the organization or collection level. If you created the organization or collection, you're automatically a member of this group. To be added to this group, request permissions from a [member of the **Project Collection Administrators** group](look-up-project-collection-administrators.md).
 - Ensure security groups in Microsoft Entra ID or Active Directory are defined before adding them. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
-::: moniker range="azure-devops"  
+::: moniker range="azure-devops"
 > [!NOTE]   
-> Users added to the **Project-Scoped Users** group can't access most **Organization settings** pages, including **Permissions**. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
-> 
-> Users with **Stakeholder** access can't access specific features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+>- Users in the **Project-Scoped Users** group can't access most **Organization settings** pages, including **Permissions**. For more information, see [Manage your organization, limit user visibility for projects, and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+>- Users with **Stakeholder** access can't access specific features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 ::: moniker-end  
 
@@ -64,16 +64,14 @@ The following articles provide related information:
 
 <a id="add-user-group"></a>
 
-## Add members to the Project Collection Administrators group 
+## Add members to the Project Administrators group 
 
-You can add users from a project, organization, or collection to the **Project Collection Administrators** group or any other group at the organization or collection level. To add a custom security group, first [create the group](add-remove-manage-user-group-security-group.md).
-
-In the following steps, we show how to add a user to the **Project Collection Administrators** group at the organization or collection level. The method is similar to adding a Microsoft Entra ID or Active Directory group. You can also add a user to the **Project Collection Administrators** group at the project level.
+Do the following steps to add users to the **Project Administrators** group or any other group at the organization or collection level. To add a custom security group, first [create the group](add-remove-manage-user-group-security-group.md).
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To turn on the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -86,7 +84,7 @@ In the following steps, we show how to add a user to the **Project Collection Ad
 3. Select **Project Administrators** group, **Members**, and then **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Screenshot showing Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add-s154.png) 
+    > ![Screenshot showing Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add.png) 
 
 4. Enter the name of the user account or custom security group into the text box and select the matching result. You can enter multiple identities into the **Add users and/or groups** box, and the system automatically searches for matches. Select the appropriate matches. 
 
@@ -145,12 +143,12 @@ In the following steps, we show how to add a user to the **Project Collection Ad
 
 ## Change permissions for a group 
 
-You can change the permissions for any organization or collection-level group, except the **Project Collection Administrators** group. Adding security groups to a collection is similar to adding them to a project. For more information, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md)and [About permissions, Permission states](about-permissions.md#permission-states).
+You can change the permissions for any organization or collection-level group, except the **Project Collection Administrators** group. Adding security groups to a collection is similar to adding them to a project. For more information, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md) and [About permissions, Permission states](about-permissions.md#permission-states).
     
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To turn on the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -204,7 +202,7 @@ You can change the collection-level permissions for a specific user. For more in
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To turn on the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 

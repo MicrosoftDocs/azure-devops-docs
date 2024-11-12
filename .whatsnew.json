@@ -85,6 +85,10 @@
         "heading": "Azure Pipelines"
       },
       {
+        "names": ["managed-devops-pools"],
+        "heading": "Managed DevOps Pools"
+      },
+      {
         "names": ["project"],
         "heading": "Project"
       },

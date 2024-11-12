@@ -5,7 +5,7 @@ ms.author: jukullam
 author: JuliaKM
 ms.subservice: azure-devops-pipelines-apps
 ms.custom: devx-track-azurecli, devx-track-arm-template, arm2024
-ms.date: 06/20/2023
+ms.date: 10/30/2024
 ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
@@ -150,9 +150,9 @@ To make commands easier to run, start by selecting a default region. After you s
             --name data-factory-cicd-dev \
             --resource-group $rgName
        ```
-    3. Copy the subscription ID. Your data factory will use this ID later. 
+    3. Copy the subscription ID. Your data factory uses this ID later. 
 
-1. [Create a second data factory](https://ms.portal.azure.com/#create/hub) by using the portal UI or the Azure CLI. You'll use this data factory for testing.
+1. [Create a second data factory](https://ms.portal.azure.com/#create/hub) by using the portal UI or the Azure CLI. You use this data factory for testing.
 
     * Name: `data-factory-cicd-test`
     * Version: `V2`
@@ -169,7 +169,7 @@ To make commands easier to run, start by selecting a default region. After you s
             --resource-group $rgName
        ```
     
-    2. Copy the subscription ID. Your data factory will use this ID later. 
+    2. Copy the subscription ID. Your data factory uses this ID later. 
  
 1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub): 
     * Resource group: `data-pipeline-cicd-rg`
@@ -190,7 +190,7 @@ To make commands easier to run, start by selecting a default region. After you s
             --location eastus2  \
             --sku trial
         ```
-    3. Copy the subscription ID. Your Databricks service will use this ID later. 
+    3. Copy the subscription ID. Your Databricks service uses this ID later. 
 
 ## Upload data to your storage container
 
@@ -202,7 +202,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ## Set up Key Vault
 
-You'll use Azure Key Vault to store all connection information for your Azure services.
+You use Azure Key Vault to store all connection information for your Azure services.
 
 ### Create a Databricks personal access token
 1. In the Azure portal, go Databricks and then open your workspace. 
@@ -234,10 +234,11 @@ You'll use Azure Key Vault to store all connection information for your Azure se
 
 ## Add an Azure Resource Manager service connection
 1. Create an Azure Resource Manager [service connection](../../../library/service-endpoints.md).
-1. Select **Service Principal (automatic)**.
+1. Select **App registration (automatic)** and **Workload identity federation**.
+1. Select your subscription.
 1. Choose the **data-pipeline-cicd-rg** resource group.
 1. Name the service connection `azure_rm_connection`.
-1. Select **Grant access permission to all pipelines**. You'll need to have the Service Connections Administrator role to select this option. 
+1. Select **Grant access permission to all pipelines**. You need to have the Service Connections Administrator role to select this option. 
 
 ## Add pipeline variables
 
@@ -269,8 +270,8 @@ You'll use Azure Key Vault to store all connection information for your Azure se
                                        "STORAGE_CONTAINER_NAME=rawdata"
    ```
 
-1. Create a second variable group named `keys-vg`. This group will pull data variables from Key Vault. 
-1. Select **Link secrets from an Azure key vault as variables**. For more information, see [Link secrets from an Azure key vault](../../../library/variable-groups.md#link-secrets-from-an-azure-key-vault). 
+1. Create a second variable group named `keys-vg`. This group pulls data variables from Key Vault. 
+1. Select **Link secrets from an Azure key vault as variables**. For more information, see [Link a variable group to secrets in Azure Key Vault](../../../library/link-variable-groups-to-key-vaults.md). 
 1. Authorize the Azure subscription. 
 1. Choose all of the available secrets to add as variables (`databricks-token`,`StorageConnectString`,`StorageKey`).
 
@@ -342,7 +343,7 @@ Follow these steps to run the continuous integration and continuous delivery (CI
 1. Select **Azure Repos Git** as the location of your source code.
 1. When the list of repositories appears, select your repository. 
 1. As you set up your pipeline, select **Existing Azure Pipelines YAML file**. Choose the YAML file: **/azure-data-pipeline/data_pipeline_ci_cd.yml**.
-1. Run the pipeline.  If your pipeline hasn't been run before, you might need to give permission to access a resource during the run. 
+1. Run the pipeline. When running your pipeline for the first time, you might need to give permission to access a resource during the run. 
 
 
 ## Clean up resources

@@ -898,6 +898,8 @@ With filtering turned on, choose one or more values from the multi-select drop-d
 
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
+>
+> The values that populate the filter options are based on the work items that are currently loaded and displayed. For example, if you have a backlog with 2,000 work items, but only 1,000 are displayed on a board, the filter options are based on just the items displayed.
 
 ### Filter a board by using select field values
 

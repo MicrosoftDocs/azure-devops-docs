@@ -165,7 +165,7 @@ sections:
           
           *   The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
           
-          *   The Azure subscription used for billing was removed from your organization. For more information, see [Link your organization](../billing/set-up-billing-for-your-organization-vs.md).
+          *   The Azure subscription used for billing was removed from your organization. For more information, see [Link your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing).
           
           *   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
           
@@ -253,7 +253,7 @@ sections:
       - question: |
           Q: Will my Azure DevOps or Microsoft Entra group get deleted if I remove its group rule?
         answer: |
-          A: No. Your groups don'g get deleted.
+          A: No. Your groups don't get deleted.
           
       - question: |
           Q: What does the option "Remove <group> from all project level groups" do?
@@ -289,7 +289,7 @@ sections:
         answer: |
           A: Your organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers.
           
-          To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then, you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your organization, [add these users, and assign them Basic access](add-organization-users.md). When billing is set up, you pay monthly for the extra users' access. And can cancel at any time.
+          To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing). Then, you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your organization, [add these users, and assign them Basic access](add-organization-users.md). When billing is set up, you pay monthly for the extra users' access. And can cancel at any time.
           
           If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md).
           

@@ -73,7 +73,9 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 ## Restore packages
 
-Run the following command in an elevated command prompt:
+Run the following command in your project directory to restore your packages:
+
+::: moniker range="azure-devops"
 
 #### [NuGet](#tab/nuget)
 
@@ -111,7 +113,95 @@ gradle build
 pip install
 ```
 
+#### [Cargo](#tab/cargo)
+
+Feed and Upstream Reader (Collaborator) roles or higher must use an additional flag to authenticate with their public feed in order to install packages. Be sure to follow the instructions in [Cargo - Connect to a feed](../cargo/cargo-upstream-source.md#connect-to-your-feed) to properly authenticate with your feed, and then run the following command in your project directory to restore your packages. 
+
+```Command
+cargo build
+```
+
 - - -
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020 < azure-devops"
+
+#### [NuGet](#tab/nugetserver)
+
+```Command
+nuget.exe restore
+```
+
+#### [Dotnet](#tab/dotnetserver)
+
+```Command
+dotnet restore --interactive
+```
+
+#### [Npm](#tab/npmserver)
+
+```Command
+npm install
+```
+
+#### [Maven](#tab/mavenserver)
+
+```Command
+mvn install
+```
+
+#### [Gradle](#tab/gradleserver)
+
+```Command
+gradle build
+```
+
+#### [Python](#tab/pythonserver)
+
+```Command
+pip install
+```
+
+- - -
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+#### [NuGet](#tab/nugetserver19)
+
+```Command
+nuget.exe restore
+```
+
+#### [Npm](#tab/npmserver19)
+
+```Command
+npm install
+```
+
+#### [Maven](#tab/mavenserver19)
+
+```Command
+mvn install
+```
+
+#### [Gradle](#tab/gradleserver19)
+
+```Command
+gradle build
+```
+
+#### [Python](#tab/pythonserver19)
+
+```Command
+pip install
+```
+
+- - -
+
+::: moniker-end
 
 > [!NOTE]
 > You must be a **Feed and Upstream Reader (Collaborator)** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.

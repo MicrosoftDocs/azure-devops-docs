@@ -19,13 +19,13 @@ You can sign in using an Azure DevOps personal access token (PAT). To create a P
 
 To use a PAT with the Azure DevOps CLI, use one of these options:
 
-* Use `az devops login` and be [prompted for the PAT token](#userprompt).
-* Pipe the [PAT token on StdIn](#PipePATonStdIn) to `az devops login`. 
+* Use `az devops login` and be [prompted for the PAT token](#user-prompted-to-use-az-devops-login).
+* Pipe the [PAT token on StdIn](#pipe-pat-on-stdin-to-az-devops-login) to `az devops login`. 
 
   > [!NOTE]
   > This option works only in a non-interactive shell.
 
-* Set the `AZURE_DEVOPS_EXT_PAT` [environment variable](#EnvironmentVariable), and don't use `az devops login`.
+* Set the `AZURE_DEVOPS_EXT_PAT` [environment variable]((#use-the-azuredevopsextpat-environment-variable), and don't use `az devops login`.
 
 ## User prompted to use az devops login
 
@@ -37,9 +37,13 @@ Token:
 ```
 
 > [!NOTE]   
-> If you have already signed in with `az login` interactively or if you're using a user name and password, you're not required to provide a token because the `az devops` commands now support sign-in through `az login`. 
+> If you have already signed in with `az login` interactively or if you're using a user name and password, you're not required to provide a token because the `az devops` commands now support sign-in through `az login`.
 
 When you're successfully signed in, this command also can set your default organization to Contoso, provided no default organization is configured.
+
+> [!NOTE]   
+> For Guest Users, only the `az devops login` is supported.
+
 
 ## Pipe PAT on StdIn to az devops login
 

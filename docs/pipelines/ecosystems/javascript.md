@@ -78,11 +78,16 @@ Edit your *azure-pipelines.yml* file as follows.
     - script: |
         npm run build
       displayName: 'npm build'
+
+    - script: 
+        npm test
+      displayname: 'npm test'
+
     ``` 
 
 1. Add the following new tasks to the pipeline:
 
-   - The [copy files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies the npm package and *package.json* files from the local download path on the agent and saves them to a local artifact staging path on the agent. Only the *src* and *public* folders are copied.
+   - The [copy files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies the files from the *src* and *public* folders to the build artifact staging directory.
 
    - The [publish pipeline artifact task](../artifacts/pipeline-artifacts.md) gets the files from the artifact staging location and publishes them as artifacts to be output with pipeline builds.
 

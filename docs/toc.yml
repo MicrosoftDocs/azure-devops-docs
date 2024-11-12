@@ -49,6 +49,8 @@
     href: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with OAuth 2.0
     href: ./integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Use Microsoft Entra OAuth with Azure DevOps Services
+    href: ./integrate/get-started/authentication/entra-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Use Azure DevOps OAuth 2.0 to create a web app
     href: ./integrate/get-started/authentication/azure-devops-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Cross-platform CLI for Azure DevOps using PATs
@@ -322,7 +324,7 @@
   - name: How to buy Azure DevOps CALs >>
     href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Billing
-    href: ./organizations/billing/overview.md
+    href: organizations/index.yml
   - name: Build Visual Studio extensions >>
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
   - name: Build apps for Windows >>

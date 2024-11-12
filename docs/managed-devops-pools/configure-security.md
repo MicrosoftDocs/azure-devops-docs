@@ -1,15 +1,14 @@
 ---
 title: Configure security
-suffix: Managed DevOps Pools
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 10/18/2024
 ---
 
 # Configure Managed DevOps Pools security settings
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 You can configure security setting for Managed DevOps Pools during pool creation by using the **Security** tab, and after pool creation by using the **Security** settings pane.
 
@@ -72,6 +71,41 @@ The `organizationProfile` section has the following properties.
 | `permissionProfile` | Specify the permission granted to the Azure DevOps pool when it is created. This value can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 | `kind` | This value specifies the type of organization for the pool, and must be set to `Azure DevOps`. |
 
+#### [Azure CLI](#tab/azure-cli/)
+
+Organizations are configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows an `organization-profile` object that is configured for all projects in the `fabrikam-tailspin` organization with `parallelism` set to `1`.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+      {
+          "url": "https://dev.azure.com/fabrikam-tailspin",
+          "projects": [],
+          "parallelism": 1
+      }
+    ]
+  }
+}
+```
+
+The `organizationProfile` section has the following properties.
+
+| Property | Description |
+|------|-------------|
+| `AzureDevOps` | This value is the name of the object defined in `organization-profile` and must be set to `Azure DevOps`. |
+| `organizations` | A list of the organizations that can use your pool. `url` specifies the URL of the organization, `projects` is a list of project names that can use the pool (an empty list supports all projects in the organization), and `parallelism` specifies the number of agents that can be used by this organization. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
+| `permissionProfile` | Specify the permission granted to the Azure DevOps pool when it is created. This value can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+
 * * *
 
 ### Use pool in multiple organizations
@@ -108,6 +142,38 @@ Add additional organizations to the organizations list to configure your pool fo
         "kind": "CreatorOnly"
     },
     "kind": "AzureDevOps"
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Organizations are configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+Add additional organizations to the organizations list to configure your pool for use with multiple organizations. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organizations is limited to two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+        {
+            "url": "https://dev.azure.com/fabrikam-tailspin",
+            "projects": [],
+            "parallelism": 2
+        },
+        {
+            "url": "https://dev.azure.com/fabrikam-prime",
+            "projects": [ "fabrikam-dev", "fabrikam-test" ],
+            "parallelism": 2
+        }
+    ]
+  }
 }
 ```
 
@@ -149,6 +215,32 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
             }
         }
     ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Interactive mode is configured using the `logonType` property in the `osProfile` section in the `fabric-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `osProfile` section of the **fabric-profile.json** file with `Interactive` mode enabled.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {
+      "secretsManagementSettings": {...},
+      "logonType": "Interactive"
+    },
+    "storageProfile": {...}
+  }
 }
 ```
 
@@ -202,11 +294,48 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
     }
    ```
 
-* * *
+#### [Azure CLI](#tab/azure-cli/)
 
-* **Creator only** - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **Off** in the agent pool security settings. **Creator only** is the default setting.
-* **Inherit permissions from project** - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **On** in the agent pool security settings.
-* **Specific accounts** - Specify the accounts to be added as administrators of the created agent pool in Azure DevOps. By default the Managed DevOps Pool creator is added to the list.
+Pool administration permissions are configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create)a pool.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+```json
+{
+  "AzureDevOps":
+  {
+    "organizations":  [...],
+    "permissionProfile": {
+        "kind": "CreatorOnly"
+    }
+  }
+}
+```
+
+The `permissionProfile` property can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. 
+
+* `CreatorOnly` - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **Off** in the agent pool security settings. **Creator only** is the default setting.
+* `Inherit` - The user that created the Managed DevOps Pool is added as an administrator of the Azure DevOps agent pool, and **Inheritance** is set to **On** in the agent pool security settings.
+* `SpecificAccounts` - Specify the accounts to be added as administrators of the created agent pool in Azure DevOps. By default the Managed DevOps Pool creator is added to the list. Provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. 
+
+   ```json
+    {
+        "AzureDevOps" : {
+            "organizationProfile": {
+            "organizations": [...],
+            "permissionProfile": {
+            "kind": "SpecificAccounts",
+            "users" : ["User1@fabrikam.com", "User2@fabrikam.com" ]
+            }
+        }
+    }
+   ```
+
+* * *
 
 
 ## See also

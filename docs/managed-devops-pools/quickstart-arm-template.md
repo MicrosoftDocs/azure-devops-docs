@@ -1,24 +1,22 @@
 ---
 title: Create a Managed DevOps Pool using an ARM template
-suffix: Managed DevOps Pools
-description: Create your first Managed DevOps Pool using an Azure Resource Manager template (ARM template).
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/22/2024
+description: Learn how to create a Managed DevOps Pool using an Azure Resource Manager template (ARM template).
+ms.date: 10/18/2024
+ms.topic: quickstart
+#Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using an ARM template and run a pipeline in the new pool.
 ---
 
 # Quickstart: Create a Managed DevOps Pool using an ARM template
 
-This article shows you how to create a Managed DevOps Pool using an ARM template, and run a pipeline in it.
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
+This article shows you how to create a Managed DevOps Pool using an ARM template, and run a pipeline in the new pool.
 
 ## Prerequisites
 
-Before completing the steps in this article, you must have completed the following steps from the [Prerequisites](./prerequisites.md) article.
-
-1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
-1. Verify that you have permission to create an agent pool in your organization by following the **Verify Azure DevOps permissions** steps in [Prerequisites](./prerequisites.md#verify-azure-devops-permissions).
+Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
 ## Sign in to the Azure CLI
 
@@ -280,4 +278,4 @@ To delete the Managed DevOps Pool, Dev Center, and Dev Center Project, you can d
 
 ## See also
 
-* [Review the Managed DevOps Pools resource schema](https://github.com/Azure/azure-resource-manager-schemas/blob/main/schemas/2024-04-04-preview/Microsoft.DevOpsInfrastructure.json)
+* [Managed DevOps Pools ARM template reference](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template)

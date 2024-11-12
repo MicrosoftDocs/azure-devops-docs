@@ -65,11 +65,11 @@ steps:
 
 ---
 
-Although the artifact's name is optional, it is a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
+Although the artifact's name is optional, it's a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
 
 The path of the file/folder that you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
-Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
+Packages in Azure Artifacts are immutable. Once you publish a package, its version is permanently reserved. Rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
 
 ```yml
   jobs:
@@ -161,8 +161,8 @@ steps:
 
 ---
 
-To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-i-want-to-download-a-pipeline-artifact-from-another-project-but-my-pipeline-is-failing) configured for both your downstream project and downstream pipeline.
-By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
+To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-how-can-i-download-a-pipeline-artifact-from-another-project-within-the-same-organization) configured for both the downstream project and the pipeline generating the artifact.
+By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name wasn't specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
 
 ```yml
 steps:
@@ -181,7 +181,7 @@ A single download step can download one or more artifacts. To download multiple 
 
 When an artifact name is specified:
 
-1. Only files for that specific artifact are downloaded. If the artifact does not exist, the task will fail.
+1. Only files for that specific artifact are downloaded. If the artifact doesn't exist, the task will fail.
 
 1. File matching patterns are evaluated relative to the root of the artifact. For example, the pattern `*.jar` matches all files with a `.jar` extension at the root of the artifact.
 
@@ -276,6 +276,66 @@ Not available.
 
 ---
 
+#### Download a specific artifact
+
+The following example demonstrates how to download pipeline artifacts from a specific build version produced by a particular run:
+
+# [YAML](#tab/yaml)
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: myPipeline
+    project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
+    source: '79'
+    version: '597'
+
+steps:
+- download: myPipeline
+  artifact: drop
+  patterns: '**'
+  displayName: 'Download Pipeline Artifact'
+```
+
+# [YAML (task)](#tab/yaml-task)
+
+```yaml
+steps:
+- task: DownloadPipelineArtifact@2
+  displayName: 'Download Pipeline Artifact'
+  inputs:
+    buildType: specific
+    project: 'xxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx'
+    definition: 79
+    buildVersionToDownload: specific
+    pipelineId: 597
+    artifactName: drop
+```
+
+# [Classic](#tab/classic)
+
+- Add the :::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact** task.
+
+- Fill out the following fields:
+    - **Display name**: task display name
+    - **Download artifacts produced by**: specific run
+    - **Project**: the project from which to download the pipeline artifacts
+    - **Build pipeline**: select from the dropdown menu
+    - **Build version to download**: specific version
+    - **Build**: the build from which to download the artifacts
+    - **Artifact name**: the name of the artifact to download
+    - **Matching patterns**: one or more file matching patterns that limit which files get downloaded
+    - **Destination directory**: Default: $(Pipeline.Workspace)
+
+:::image type="content" source="media/download-pipeline-artifacts-specific-version.png" alt-text="A screenshot displaying how to configure the download pipeline artifacts task to download a specific artifact.":::
+
+# [Azure CLI](#tab/azure-cli)
+
+Not available.
+
+---
+
+
 ## Artifacts in release and deployment jobs
 
 Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `$(Pipeline.Workspace)`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
@@ -366,6 +426,22 @@ When migrating from build artifacts to pipeline artifacts:
 - **publishLocation**: (Required) Artifacts publish location. Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`. Default: pipeline.
 
 - **artifact**: (Optional) Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
+
+## View published Artifacts
+
+Once your pipeline run is complete, follow these steps to view or download your published artifact:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline run, and then select the **Summary** tab.
+
+1. In the related section, select the published artifact.
+
+    :::image type="content"  source="../media/published-artifact.png" alt-text="A screenshot showing how to find published artifacts in a pipeline run."::: 
+
+1. Expand the drop folder to locate your artifact. You can then download your Artifact and explore its content.
+
+    :::image type="content"  source="../media/drop-artifacts.png" alt-text="A screenshot displaying the content of a published artifact.":::
 
 ## FAQ
 

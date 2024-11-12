@@ -68,7 +68,7 @@ trigger:
 - main
 
 pool:
-  vmImage: `ubuntu-latest`
+  vmImage: 'ubuntu-latest'
 
 steps:
 - bash: az --version
@@ -92,7 +92,7 @@ trigger:
 - main
 
 pool:
-  vmImage: `windows-latest`
+  vmImage: 'windows-latest'
 
 steps:
 - bash: az --version
@@ -397,15 +397,15 @@ steps:
     architecture: 'x64'
 
 # Update pip to latest
-- bash: python -m pip install --upgrade pip
+- pwsh: python -m pip install --upgrade pip
   displayName: 'Upgrade pip'
 
 # Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
-- bash: pip install --pre azure-cli
+- pwsh: pip install --pre azure-cli
   displayName: 'Upgrade Azure CLI'
 
 # Install Azure DevOps extension
-- bash: az extension add -n azure-devops
+- pwsh: az extension add -n azure-devops
   displayName: 'Install Azure DevOps extension'
 
 # Now you can make calls into Azure DevOps CLI

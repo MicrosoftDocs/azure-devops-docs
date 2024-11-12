@@ -1,15 +1,16 @@
 ---
 title: Managed DevOps Pools pricing
-suffix: Managed DevOps Pools
-description: Learn about pricing for your Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 06/12/2024
+description: Learn how pricing is calculated for your Managed DevOps Pools.
+ms.date: 10/18/2024
+ms.topic: concept-article
+#Customer intent: As a platform engineer, I want to understand how Managed DevOps Pools pricing is determined so that I can estimate my projected cost.
 ---
 
 # Pricing
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Managed DevOps Pools pricing is determined by the cost of the Azure services your pool uses, like compute, storage, and data egress, combined with the standard Azure DevOps Services pricing for self-hosted agents. This article describes how to estimate and project the costs for your Managed DevOps Pools.
 

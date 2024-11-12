@@ -35,8 +35,8 @@
   - name: Informational runs
     href: process/information-run.md
     displayName: information run
-  - name: Build history
-    href: build/history.md
+  - name: View pipeline history (Classic)
+    href: release/history.md
 - name: Pipeline structure & logic
   items:
   - name: Repositories
@@ -104,8 +104,8 @@
     - name: Task types & usage
       href: process/tasks.md
       displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
-    - name: Task groups (classic)
-      href: library/task-groups.md
+    - name: Task groups (Classic)
+      href: release/task-groups.md
     - name: Add a custom task extension
       href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json
     - name: Upload tasks to project collection
@@ -157,12 +157,17 @@
     - name: Set variables in scripts
       displayName: variables, task, setname, scripts
       href: process/set-variables-scripts.md
-    - name: Add & use variable groups
-      displayName: Azure key vault, link secrets, expansion, expand variables
-      href: library/variable-groups.md
-    - name: Use variables in a variable group
-      displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
-      href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
+    - name: Variable groups
+      items:
+      - name: Manage variable groups
+        displayName: Azure key vault, link secrets, expansion, expand variables
+        href: library/variable-groups.md
+      - name: Link a variable group to Azure Key Vault
+        displayName: Azure key vault, link secrets, expansion, expand variables
+        href: library/link-variable-groups-to-key-vaults.md
+      - name: Manage variables in variable groups (CLI)
+        displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
+        href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
     - name: Use classic release and artifacts variables
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
       href: release/variables.md
@@ -196,12 +201,12 @@
     - name: Pipeline completion triggers
       displayName: build completion, completion trigger
       href: process/pipeline-triggers.md
-    - name: Build completion triggers (classic)
+    - name: Build completion triggers (Classic)
       displayName: build completion, completion trigger
-      href: process/pipeline-triggers-classic.md
-    - name: Release triggers (classic)
-      displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
+      href: release/pipeline-triggers-classic.md
+    - name: Release triggers (Classic)
       href: release/triggers.md
+      displayName: release trigger, stage trigger, deploy PR, scheduled trigger
   - name: Approvals, checks, & gates
     items:
     - name: Release approval and gates overview
@@ -233,6 +238,9 @@
   - name: About agents & agent pools
     displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
     href: agents/agents.md
+  - name: Managed DevOps pools
+    href: /azure/devops/managed-devops-pools/overview
+    displayName: pools, agents
   - name: Agent version 3.x
     href: agents/v3-agent.md
   - name: Create & manage agent pools
@@ -286,15 +294,18 @@
     - name: Cache NuGet packages
       displayName: caching, cache
       href: artifacts/caching-nuget.md
-    - name: Classic Build options
-      displayName: classic build, build options
-      href: build/options.md
-    - name: Publish Pipeline artifacts
-      displayName: publish, artifacts
-      href: publish-pipeline-artifact.md
+    - name: View pipeline history (Classic)
+      href: release/history.md
+      displayName: history
+    - name: Classic pipelines configuration
+      href: release/options.md
+      displayName: classic, build options
+    - name: Publish & download pipeline artifacts
+      href: artifacts/pipeline-artifacts.md
+      displayName: publish, download, artifacts
     - name: Publish & download build artifacts
-      displayName: build, artifacts
       href: artifacts/build-artifacts.md
+      displayName: build, download, publish, artifacts
   - name: Deploy
     items:
     - name: Deploy to Azure
@@ -306,6 +317,9 @@
         - name: Azure Resource Manager service connection
           displayName: resource manager, service connection, service principal
           href: library/connect-to-azure.md
+        - name: Azure Resource Manager special cases 
+          displayName: agent-assigned identity, publish profile
+          href: library/azure-resource-manager-alternate-approaches.md
         - name: Manually configure workload identity service connections
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections
@@ -392,6 +406,12 @@
       - name: Artifact sources
         displayName: artifacts, source, release artifacts
         href: release/artifacts.md
+      - name: Release variables
+        displayName: release, deploy, variables
+        href: release/variables.md
+      - name: Release triggers (Classic)
+        href: release/triggers.md
+        displayName: release trigger, stage trigger, deploy PR, scheduled trigger
       - name: Deploy pull request Artifacts
         displayName: pr release, deployment
         href: release/deploy-pull-request-builds.md
@@ -417,10 +437,10 @@
         - name: Provision agents for deployment groups
           href: release/deployment-groups/howto-provision-deployment-group-agents.md
         - name: Add a deployment group job to a release pipeline
-          href: process/deployment-group-phases.md
+          href: release/deployment-group-phases.md
         - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
           href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
-  - name: Pipeline Artifacts
+  - name: Artifacts
     items:
     - name: Artifacts in Azure Pipelines
       displayName: artifacts, artifacts overview
@@ -434,9 +454,12 @@
     - name: Artifact sources
       displayName: artifacts, source, release artifacts
       href: release/artifacts.md
+    - name: Use the .artifactignore file
+      href: ../artifacts/reference/artifactignore.md?toc=/azure/devops/pipelines/toc.json
+      displayName: artifactignore, gitignore
     - name: NuGet
       items:
-      - name: Quickstart
+      - name: Publish packages to internal and external feeds
         displayName: nuget, package
         href: artifacts/nuget.md
       - name: Restore NuGet packages
@@ -529,7 +552,7 @@
     - name: Xcode
       displayName: app certificate, test flight
       href: ecosystems/xcode.md
-  - name: Microsoft Learn course
+  - name: Microsoft Learn courses
     items:
     - name: Create a build pipeline
       href: /training/modules/create-a-build-pipeline/
@@ -577,8 +600,8 @@
     href: troubleshooting/troubleshoot-triggers.md
   - name: Pipeline queues but never starts
     href: troubleshooting/troubleshoot-start.md
-  - name: Debug deployment issues
-    href: release/variables.md#debug-mode
+  - name: Debug release issues
+    href: release/variables.md#run-a-release-in-debug-mode
   - name: Troubleshoot ARM service connections
     href: release/azure-rm-endpoint.md
   - name: Review logs
@@ -587,10 +610,8 @@
     items:
     - name: View pipeline reports
       href: reports/pipelinereport.md
-    - name: Add widgets to a dashboard
-      href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json
-    - name: Test Results Trend (Advanced)
-      href: ../report/dashboards/analytics-widgets.md?toc=/azure/devops/pipelines/toc.json#test-results-trend-advanced
+    - name: Monitor your pipelines with dashboard widgets
+      href: reports/pipeline-widgets.md
 - name: Security
   items:
   - name: Set retention policies
@@ -693,7 +714,7 @@
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines
-    href: migrate/from-classic-pipelines.md
+    href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md
   - name: Migrate from Travis

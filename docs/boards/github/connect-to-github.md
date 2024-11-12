@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/07/2024
+ms.date: 08/22/2024
 ---
 
 # Connect Azure Boards to GitHub (cloud) 
@@ -21,9 +21,11 @@ Use GitHub.com repositories for your software development and your Azure Boards 
 
 ## Prerequisites 
 
-* You must have an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). If you created the project, you have permissions. 
-* You must be an administrator or owner of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories.   
+- **Project requirements:** Have an Azure DevOps project. If you don't have a project, [create one](../get-started/sign-up-invite-teammates.md).
+
+- **Permissions:**
+  - Be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). If you created the project, you have permissions.
+  - Be an administrator or owner of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. 
 
 ## Authentication options
 
@@ -39,7 +41,7 @@ The following authentication options are supported based on the GitHub platform 
 :::row-end:::
 :::row:::
    :::column span="":::
-      - [GitHub.com user account (Recommended)](#server-github-ent-username)
+      - [GitHub.com user account (Recommended)](#add-a-github-connection-with-github-credentials)
       - [Personal access token (PAT)](#github-pat)
    :::column-end:::
    :::column span="":::
@@ -50,56 +52,56 @@ The following authentication options are supported based on the GitHub platform 
 :::row-end:::
  
 > [!NOTE]
-> If you choose to connect Github with PAT, make sure you configure single sign-on (SSO) for the PAT on your GitHub account. This is needed to be able to get a list of repositories of an organization with Security Assertion Markup Language (SAML) SSO authentication configured.
+> If you choose to connect GitHub with a PAT, configure single sign-on (SSO) for the PAT on your GitHub account. This configuration is necessary to retrieve a list of repositories from an organization with Security Assertion Markup Language (SAML) SSO authentication enabled.
  
 ## Connect Azure Boards to a GitHub repo.
 
-1. Sign into your Azure DevOps project.  
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).  
 
 2. Select **Project settings** > **GitHub connections**.   
 
 	:::image type="content" source="media/connect-cloud/open-project-settings-github-connections.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::
 
-1.	If it's the first time you make a connection from the project, choose **Connect your GitHub account** to use your GitHub account credentials. 
+3. If this is your first time connecting from the project, select **Connect your GitHub account** to use your GitHub account credentials.
 
 	:::image type="content" source="media/connect-cloud/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
 	Otherwise, choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false"::: **New connection**, and select your authentication method from the **New Connection** dialog.
 
-	When you connect using your GitHub account, use your GitHub account credentials to authenticate. To use PAT, see [Add a GitHub connection using PAT](#github-pat). To connect to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
+	When you connect with your GitHub account, use your GitHub credentials to authenticate. To use a PAT, see [Add a GitHub connection using PAT](#github-pat). For connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
 ## Add a GitHub connection with GitHub credentials 
 
 You can connect up to 500 GitHub repositories to an Azure Boards project. 
 
-1. 	If it's your first time connecting to GitHub from Azure Boards, you're asked to sign in using your GitHub credentials. Choose an account for which you're a repository administrator. 
+1. If this is your first time connecting to GitHub from Azure Boards, sign in using your GitHub credentials. Choose an account for which you're a repository administrator.
 
-2. Choose the GitHub account or organization that you want to connect. Only those organizations that you own or are an administrator for are listed.  
+2. Select the GitHub account or organization you want to connect. Only organizations that you own or are an administrator for are listed.
 
-	If all repositories for an organization are already connected to Azure Boards, you see the following message. 
+   If all repositories for an organization are already connected to Azure Boards, you will see the following message:
 
-	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
+   :::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect.":::
 
-3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code that GitHub sent you and choose **Verify**. Otherwise, the system automatically recognizes your GitHub organization as your GitHub account is associated with your Azure DevOps Services account. 
+3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code sent by GitHub and select **Verify**. If not, the system will automatically recognize your GitHub organization as your GitHub account is associated with your Azure DevOps Services account.
 
 <a id="choose-repositories"></a> 
 
-### Choose the repositories 
+### Add GitHub repositories 
 
-Once you're authenticated, you can select the repositories you want to connect. 
+Once authenticated, you can select the repositories you want to connect.
 
-1. The **Add GitHub Repositories** dialog automatically displays and selects all GitHub.com repositories for which you're an administrator for the organization you selected. Unselect any repositories that you don't want to participate in the integration. 
+1. The **Add GitHub Repositories** dialog automatically displays and selects all GitHub.com repositories for which you're an administrator in the selected organization. Deselect any repositories that you don't want to include in the integration.
 
    :::image type="content" source="media/github/add-github-repos.png" alt-text="Screenshot showing GitHub repos.":::
 
    > [!TIP]   
-   > We recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected **AB#** mention linking. For more information, see [Troubleshoot GitHub & Azure Boards integration](connect-to-github.md#resolve-connection-issues). 
+   > To avoid unexpected **AB#** mention linking, we recommend connecting a GitHub repo to projects within a single Azure DevOps organization. Connecting the same GitHub repo to projects in multiple Azure DevOps organizations can cause issues. For more information, see [Troubleshoot GitHub & Azure Boards integration](connect-to-github.md#resolve-connection-issues). 
 
-	If all repositories are connected already to the current or other organization, then the following message displays. 
+	If all repositories are already connected to the current or another organization, the following message displays:
 
 	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
-2. When you're done, select **Save**.
+2. After making your selections, select **Save**.
 
 <a id="confirm-connection"></a> 
 
@@ -122,7 +124,7 @@ To change the configuration or manage the Azure Boards app for GitHub, see  [Cha
 
 ## Add a GitHub connection using PAT   
 
-We recommend that you use your GitHub account credentials to connect to your GitHub repository. However, if you need to use a PAT, do so by following these procedures. 
+We recommend using your GitHub account credentials to connect to your GitHub repository. If you need to use a PAT, do the following steps.
 
 > [!TIP]  
 > When you create your GitHub PAT, make sure that you include these scopes: `repo, read:user, user:email, admin:repo_hook`. 
@@ -133,19 +135,19 @@ We recommend that you use your GitHub account credentials to connect to your Git
 
 	To create a GitHub PAT, go to [GitHub Developer Settings > Personal access tokens](https://github.com/settings/tokens). 
 
-2. Enter the PAT and choose **Connect**. 
+2. Enter the PAT and select **Connect**. 
 
    :::image type="content" source="media/github/add-github-connection-dialog-pat.png" alt-text="Screenshot showing entered PAT.":::
 
-3. Choose the repositories you want connected to the project by following the procedures outlined in [Choose the repositories](#choose-repositories) earlier in this article. 
+3. Select the repositories you want to connect to the project by following the procedures outlined in [Choose the repositories](#choose-repositories) earlier in this article.
 
-4. If it's the first time connecting to a GitHub account or organization from Azure Boards, you also must install the Azure Boards app for GitHub. [Confirm the connection](#confirm-connection) earlier in this article. 
+4. If it's the first time connecting to a GitHub account or organization from Azure Boards, install the Azure Boards app for GitHub. [Confirm the connection](#confirm-connection) earlier in this article.
 
 <a id="server-github-ent-oauth-register"></a>
 
 ## Register Azure DevOps in GitHub as an OAuth App
 
-If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Create an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
+To use OAuth to connect Azure DevOps with your GitHub Enterprise Server, first register the application as an OAuth App. For more information, see [Create an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
 
 <a id="register-services-oauth"></a>
 
@@ -199,11 +201,11 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 ## Connect Azure DevOps Services to GitHub Enterprise Server
 
 > [!IMPORTANT]  
-> To connect Azure DevOps Services to your GitHub Enterprise Server, your GitHub Enterprise Server must be sufficiently accessible from the Internet. Make sure Azure DNS can resolve your GitHub Enterprise Server name and your firewall allows access from Azure Data Center IP addresses. To determine the IP address range, see [Microsoft Azure Data Center IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653). A common error message encountered when connectivity issues exist is: 
+> To connect Azure DevOps Services to your GitHub Enterprise Server, ensure your GitHub Enterprise Server is accessible from the Internet. Verify that Azure DNS can resolve your GitHub Enterprise Server name and that your firewall allows access from Azure Data Center IP addresses. To determine the IP address range, see [Microsoft Azure Data Center IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653). A common error message for connectivity issues is:
 > 
 > *The remote name could not be resolved: 'github-enterprise-server.contoso.com'*
 > 
-> If you encounter this error, check that your server is accessible. For more information, see [Azure DNS FAQ](/azure/dns/dns-faq). 
+> If you encounter this error, check your server's accessibility. For more information, see [Azure DNS FAQ](/azure/dns/dns-faq).
 
 1. Select **Project settings** > **GitHub connections** > **GitHub Enterprise Server** for a first-time connection. 
 
@@ -250,13 +252,13 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 
 ## Resolve connection issues
 
-The Azure Boards-GitHub integration relies on various authentication protocols to support the connection. Changes to a user's permission scope or authentication credentials can cause revocation of the GitHub repositories connected to Azure Boards. 
- 
-For an overview of the integration that the Azure Boards app for GitHub supports, see [Azure Boards-GitHub integration](index.md).  
+The Azure Boards-GitHub integration uses various authentication protocols to maintain the connection. Changes to a user's permission scope or authentication credentials can revoke the GitHub repositories connected to Azure Boards.
 
-#### Supported authentication options
+For an overview of the integration supported by the Azure Boards app for GitHub, see [Azure Boards-GitHub integration](index.md).
 
-The following authentication options are supported based on the GitHub platform you want to connect to.  
+### Supported authentication options
+
+The following supported authentication options depend on the GitHub platform you are connecting to:
 
 :::row:::
    :::column span="1":::
@@ -311,7 +313,7 @@ The following authentication options are supported based on the GitHub platform 
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
-#### Grant Azure Boards organization access 
+### Grant Azure Boards organization access 
 
 If the integration between Azure Boards and GitHub isn't working as expected, verify that you granted organization access. 
 
@@ -324,9 +326,9 @@ If the integration between Azure Boards and GitHub isn't working as expected, ve
 
    :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::
 
-#### Resolve access issues
+### Resolve access issues
 
-When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X. Hover over the alert and it indicates that the credentials are no longer valid. To correct the problem, remove the connection and recreate a new connection.
+When the Azure Boards connection to GitHub loses access, an alert status with a red-X appears in the user interface. Hover over the alert to see that the credentials are no longer valid. To fix the issue, remove the connection and create a new one.
 
 :::image type="content" source="media/troubleshoot/failed-connection.png" alt-text="Screenshot of failed connection.":::
 
@@ -348,10 +350,9 @@ To resolve this issue, consider the following items:
 
 <a id="ghe-dataimport"></a>
 
-#### Resolve broken GitHub Enterprise Server connection  
+### Resolve broken GitHub Enterprise Server connection  
 
-If you migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection doesn't work as expected. Work item mentions within GitHub might be delayed or never show up in Azure DevOps Services. This problem occurs because the callback URL associated with GitHub is no longer valid. 
-
+If you migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection may not work as expected. Work item mentions within GitHub might be delayed or never appear in Azure DevOps Services because the callback URL associated with GitHub is no longer valid.
 Consider the following resolutions:
 
 - **Remove and re-create the connection**:
@@ -362,26 +363,24 @@ Consider the following resolutions:
 
 <a id="integrate-repo-to-several-organizations"></a>
 
-#### Connect to multiple Azure DevOps organizations 
+### Connect to multiple Azure DevOps organizations 
 
-If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you might get unexpected results when using **AB#** mentions linking to work items. This problem occurs because work item IDs aren't unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. When a work item gets mentioned in a commit message or pull request, both organizations can attempt to create a link to a work item with a matching ID if one exists. 
+Connecting your GitHub repository to projects in multiple Azure DevOps organizations, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, can cause unexpected results with **AB#** mentions. Work item IDs aren't unique across Azure DevOps organizations, so **AB#12** could refer to a work item in either Contoso or Fabrikam. When a work item is mentioned in a commit message or pull request, both organizations might attempt to link to a work item with the matching ID, causing confusion.
 
-In general, a user intends an **AB#** mention to link to a single work item in one of the projects. But, if a work item of the same ID exists in both accounts, then links get created for both work items, likely causing confusion.
-
-Currently, there's no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization. 
+To avoid this issue, connect a single GitHub repository to only one Azure DevOps organization.
 
 > [!NOTE]  
-> When you make the connection by using the Azure Boards app for GitHub, the app prevents you from connecting to two different organizations. If a GitHub repository is incorrectly connected to the wrong Azure DevOps organization, you must contact the owner of that organization to remove the connection before you can add the repository to the correct Azure DevOps organization.
+> When you connect using the Azure Boards app for GitHub, the app prevents connections to multiple organizations. If a GitHub repository is connected to the wrong Azure DevOps organization, contact the owner of that organization to remove the connection before adding the repository to the correct Azure DevOps organization.
 
 <a id="update-wits"></a>
 
-#### Update XML definitions for select work item types 
+### Update XML definitions for select work item types 
 
-Update the XML definitions for the work item types, if your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms. 
+Update the XML definitions for the work item types if your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience and link to and view the GitHub link types from the Development section in the work item forms.
 
-For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
+For example, to link user stories and bugs to GitHub commits and pull requests from the **Development** section, update the XML definitions for user stories and bugs.
 
-Follow the sequence of tasks provided in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to update the XML definitions. For each work item type, find the `Group Label="Development"` section, and add the following two lines in the following code syntax to support the external links types: **GitHub Commit** and **GitHub Pull Request**.  
+Follow the sequence of tasks provided in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to update the XML definitions. For each work item type, find the `Group Label="Development"` section, and add the following two lines in the code syntax to support the external link types: **GitHub Commit** and **GitHub Pull Request**.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -389,7 +388,7 @@ Follow the sequence of tasks provided in [Hosted XML process model](../../organi
 >              <ExternalLinkFilter Type="GitHub Commit" />  
 > ```
 
-When updated, the section should appear as follows. 
+After updating, the section should appear as follows.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -417,22 +416,21 @@ When updated, the section should appear as follows.
 
 <a id="faqs"></a>
 
-## FAQs (Frequently asked questions)
+## FAQs
 
-### Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
-A: No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
+### Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users to my organization?
+A: No. Ask your users to sign out and then sign back in to the organization with their GitHub credentials from a fresh browser session. This action will establish their GitHub identities.
 
-### Q: I'm an organization Administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
-A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials.    
+### Q: I'm an organization Administrator and I enabled the policy for inviting GitHub users. Why can't I invite new GitHub users?
+A: After changing the setting, sign out of Azure DevOps and then sign back in to the organization (`dev.azure.com/{organizationName}` or `organizationName.visualstudio.com`) with your GitHub credentials from a fresh browser session.
 
 ### Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
-
-A: Only organization or project Administrators can invite new users to join the organization. You might not have the permission required to add new users. Work with your administrator to get you the right permissions or ask them to add the user for you.
+A: Only organization or project Administrators can invite new users to join the organization. You might not have the required permissions to add new users. Work with your administrator to get the necessary permissions or ask them to add the user for you.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
+> [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
 ## Related articles
 

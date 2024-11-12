@@ -1,15 +1,14 @@
 ---
 title: Configure demands
-suffix: Managed DevOps Pools
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 10/18/2024
 ---
 
 # Demands
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 [Demands](/azure/devops/pipelines/yaml-schema/pool-demands) provide a way for pipelines to specify what capabilities must be present in an agent in order for Azure DevOps to send a job from the pipeline to the agent. In Managed DevOps Pools, demands like [ImageOverride](#imageoverride) work just like demands in Azure Pipelines, where a pipeline job is routed to a specific agent that has attributes matching the demand, but some demands, like [WorkFolder](#workfolder) and [Priority](#priority), can be used to configure attributes on the agent. This article describes the demands available in Managed DevOps Pools and how to use them.
 
@@ -40,6 +39,16 @@ pool:
   demands:
   - Priority -equals Low
 ```
+
+Jobs are selected to run from the queue in order of priority. For example, you have a pool which has a maximum agents setting of 10 and a pipeline configured to use this pool. The pool is already running 10 pipelines, and 20 more are queued. If you have a priority pipeline to run, for example to push out a hot fix, it would normally run after the 10 running pipelines and the 20 queued pipelines complete. If you set priority to high when queuing your hotfix pipeline, it will get an agent and run before the 20 previously queued pipelines.
+
+If multiple jobs are queued at the same time, it is possible that a lower priority job will run before a higher priority job.
+
+For the case of a single pipeline with multiple jobs:
+
+* If your pipeline has [dependencies that define sequential jobs](../pipelines/process/phases.md#dependencies), the sequential jobs run in the order specified by the pipeline regardless of the priority setting for each job.
+* If your pipeline has multiple jobs configured to run in parallel ([the default for YAML pipelines](../pipelines/process/phases.md#dependencies)), the jobs are queued at the same time, and jobs in the pipeline with lower priority might run before jobs in the pipeline with higher priority.
+
 
 ## ImageOverride
 

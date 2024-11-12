@@ -1,15 +1,16 @@
 ---
 title: Overview
-suffix: Managed DevOps Pools
 description: Learn about Managed DevOps Pools.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 04/23/2024
+ms.date: 10/18/2024
+ms.topic: overview
+#Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
 ---
 
 # Overview
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Managed DevOps Pools empowers development teams to quickly and easily spin up Azure DevOps agent pools that are tailored to a team's specific needs. Managed DevOps Pools implements security best practices, provides knobs to balance cost and performance, provides paths for the most common scenarios, and significantly reduces time spent in creating and maintaining custom pools.
 
@@ -29,10 +30,10 @@ Manage DevOps Pools:
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
 * Can view all active agents and the status of agent provisioning and reimaging.
 * Can have an additional data disk, so you don't have to use a larger SKU just to get more disk space
-* Reduce your Azure cost by up to 80%, with SPOT instances (Coming by GA)
-* Has container agents (Coming by GA)
-* Purged problem stateful agents out of the pool (Coming by GA)
-* Can fall back to another geographical region when the primary region experiences an outage (Coming by GA)
+* Reduce your Azure cost by up to 80%, with SPOT instances (Coming by March 2025)
+* Has container agents (Coming by March 2025)
+* Purged problem stateful agents out of the pool (Coming by March 2025)
+* Can fall back to another geographical region when the primary region experiences an outage (Coming by March 2025)
 
 ## Benefits
 
@@ -55,3 +56,16 @@ Managed DevOps Pools provide the following benefits to creating, configuring, an
 ## Get Started
 
 To start using Managed DevOps Pools, see [Get started with Managed DevOps Pools](./quickstart-azure-portal.md).
+
+## See also
+
+See what our MVPs are saying about Managed DevOps Pools. The following links take you to the respective author's external sites outside of Microsoft Learn.
+
+* [A first look at revolutionizing your cloud deployments with Azure Managed DevOps Pools by Haflidi Fridthjofsson](https://www.azureviking.com/post/a-first-look-at-revolutionizing-your-cloud-deployments-with-azure-managed-devops-pools)
+* [A first look at using Azure Managed DevOps Pools by Richard Fennell](https://blogs.blackmarble.co.uk/rfennell/a-first-look-at-using-azure-mdp/)
+* [Azure DevOps Managed DevOps pools by bjompen](https://bjompen.com/#/posts/azdo.mdp?id=azure-devops-managed-devops-pools)
+* [Deploying in a private Azure environment using Managed DevOps Pools by Gora LEYE](https://logcorner.com/deploying-in-a-private-azure-environment-using-managed-devops-pools/)
+* [Managed DevOps Pools: Simplifying Self-Hosted Azure Pipeline Agents by Vladimir Gusarov](
+https://blog.almguru.com/managed-devops-pools-simplifying-self-hosted-azure-pipeline-agents-cd5f9c60640c)
+* [Simplifying Build Farms with Managed DevOps Pools for Azure DevOps](https://mattvsts.github.io/2024/09/11/managed-devops-pools/) by Matteo Emili.
+

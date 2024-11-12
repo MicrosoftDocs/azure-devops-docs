@@ -1,15 +1,14 @@
 ---
 title: Configure pool settings
-suffix: Managed DevOps Pools
 description: Learn how to configure Managed DevOps Pools settings.
-ms.subservice: azure-devops-managed-devops-pools
-author: steved0x
-ms.author: sdanie
-ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 10/18/2024
 ---
 
 # Configure pool settings
+
+> [!IMPORTANT]
+> Managed DevOps Pools is currently in PREVIEW.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 This article describes how to configure the basic settings of your Managed DevOps Pool.
 
@@ -40,7 +39,7 @@ Choose the Dev Center project for your Managed DevOps Pool. During pool creation
 
 #### [ARM template](#tab/arm/)
 
-The Dev Center project is specified by the `devCenterProjectResourceId` property.
+The dev center project is specified by the `devCenterProjectResourceId` property.
 
 ```json
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -66,9 +65,23 @@ You can retrieve the `devCenterProjectResourceId` for your Dev Center project in
  az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+The dev center project is specified by the `devcenter-project-id` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+```azurecli
+az mdp pool create \
+   --devcenter-project-id /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/resourceGroupName/providers/Microsoft.DevCenter/projects/devCenterProjectName
+   # other parameters omitted for space
+```
+
+You can retrieve the `devcenter-project-id` for your dev center project in the Azure portal by using the JSON View from the overview page of your dev center project, or you can retrieve it using the Azure CLI to query the project for its `id` property. In the following example, the `devcenter-project-id` is retrieved from a dev center project named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
+
+```azurecli
+ az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
+```
+
 * * *
-
-
 
 ## Azure DevOps organization
 
@@ -111,6 +124,33 @@ If your pool is configured for multiple organizations, the **Azure DevOps organi
 }
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+**Azure DevOps organization** is configured using the `organizations` list in the `organization-profile` parameter. In the following example, a Managed DevOps Pool is configured for all projects in a single organization, with a parallelism of 4. For an example of configuring multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `organizations` list in the **organization-profile.json** file.
+
+```json
+{
+  "AzureDevOps": {
+    "organizations": [
+      {
+        "url": "https://dev.azure.com/fabrikam-tailspin",
+        "projects": [],
+        "parallelism": 4
+      }
+    ],
+    "permissionProfile": {...}
+  }
+}
+```
+
 * * *
 
 By default, your Managed DevOps Pool is available to all projects in your specified organizations. To limit your pool to specific projects, see [Security settings - configure organization access](configure-security.md#configure-organization-access).
@@ -148,6 +188,16 @@ Specify the maximum count of agents that are available for use in your pool. For
 }
 ```
 
+#### [Azure CLI](#tab/azure-cli/)
+
+**Maximum agents** is configured using the `maximum-concurrency` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. In the following example, **Maximum agents** is set to `4`.
+
+```azurecli
+az mdp pool create \
+   --maximum-concurrency 4
+   # other parameters omitted for space
+```
+
 * * *
 
 > [!NOTE]
@@ -161,7 +211,7 @@ Specify the maximum count of agents that are available for use in your pool. For
 
 :::image type="content" source="./media/pool-settings/agent-size.png" alt-text="Screenshot of Agent size setting.":::
 
-Choose **Change size** to view and select an Azure virtual machine size that is available in your Azure region.
+Choose **Change size** to view and select an Azure virtual machine size that is available in your Azure region. Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked as **Available**. You can request more quota for **Not Available** SKUs. Once a quota request for a **Not Available** SKU is approved, it will then be listed as **Available**. [Learn more about Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
 
 #### [ARM template](#tab/arm/)
 
@@ -187,6 +237,31 @@ Agent size is configured using the `sku` property in the `fabricProfile` section
             }
         }
     ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Agent size is configured using the `sku` property in the `fabricProfile` section when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. In the following example, a **Standard_D2ads_v5** VM size is specified.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `sku` section of the **fabric-profile.json** file.
+
+```json
+{
+  "vmss": {
+    "sku": {
+      "name": "Standard_D2ads_v5"
+    },
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {...}
+  }
 }
 ```
 
@@ -234,6 +309,34 @@ OS disk type is configured using the `osDiskStorageAccountType` property in the 
             }
         }
     ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+ In the following example, a **Standard** OS disk type is specified. Choose **Standard**, **StandardSSD**, or **Premium**.
+
+OS disk type is configured using the `osDiskStorageAccountType` property in the `storageProfile` section in the `fabric-profile` parameter. In the following example, a **Standard** OS disk type is specified. Choose **Standard**, **StandardSSD**, or **Premium**.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `storageProfile` section of the **fabric-profile.json** file.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {
+      "osDiskStorageAccountType": "Standard",
+      "dataDisks": []
+    }
+  }
 }
 ```
 

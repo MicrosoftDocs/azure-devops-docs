@@ -19,7 +19,12 @@ As a pipeline decorator author, you can use this context to make decisions about
 Also, decorators run after task names are resolved to task globally unique identifiers (GUIDs).
 When your decorator wants to reference a task, it should use the GUID rather than the name or keyword.
 
+
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
+> [!NOTE]
+> Pipeline decorators are used when building [web extensions](../get-started/node.md). These examples are not designed to work in YAML pipelines. 
+
 
 ## Resources
 
