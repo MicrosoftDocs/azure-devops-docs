@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/12/2024
 ---
 
 # Configure Managed DevOps Pools networking
@@ -169,15 +169,15 @@ If you configure your Azure DevOps Pipeline to run inside of a container, you ne
 
 ## Configure the Azure DevOps Agent to run behind a Proxy
 
-If you have configured a proxy service on your image and want your workloads running on your Managed DevOps pool to run behind this proxy, you will additionally need to add a few environment variables on your image.
+If you configured a proxy service on your image and want your workloads running on your Managed DevOps pool to run behind this proxy, you must add the following environment variables on your image.
 
-* VSTS_AGENT_INPUT_PROXYURL - The URL of the configured proxy to run behind
-* VSTS_AGENT_INPUT_PROXYUSERNAME - The username needed to use the proxy
-* VSTS_AGENT_INPUT_PROXYPASSWORD - The password to use the proxy.
+* `VSTS_AGENT_INPUT_PROXYURL` - The URL of the configured proxy to run behind
+* `VSTS_AGENT_INPUT_PROXYUSERNAME` - The username needed to use the proxy
+* `VSTS_AGENT_INPUT_PROXYPASSWORD` - The password to use the proxy.
 
-For Windows, these are expected to be system environment variables, and for Linux these variables are expected to exist in the '/etc/environment' file. Setting these system variables incorrectly or without a configured proxy service on the image will cause provisioning of new agents to fail with network connectivity issues.
+For Windows, these environment variables shoud be system environment variables, and for Linux these variables should be in the **/etc/environment** file. Setting these system variables incorrectly or without a configured proxy service on the image causes provisioning of new agents to fail with network connectivity issues.
 
-**Migrating from Azure VMSS Agents-** If you are migrating from VMSS and were previously using their Proxy settings on your images as defined [here](../pipelines/agents/scale-set-agents.md#customizing-pipeline-agent-configuration), no changes should be required.
+If you are migrating from VMSS and are already using the proxy environment variables on your image, as described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration), no changes should be required.
 
 ## See also
 
