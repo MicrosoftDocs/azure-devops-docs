@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With NuGet Package Restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both Classic and YAML Pipelines.
+With NuGet Package Restore you can install all your project's dependency without needing to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will guide you through restoring your NuGet packages using both Classic and YAML Pipelines.
 
 ## Prerequisites
 
@@ -35,27 +35,39 @@ With NuGet Package Restore you can install all your project's dependency without
 
 1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
+```yaml
+steps:
+- task: NuGetAuthenticate@1
+
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: '*'
+    checkLatest: true
+
+- script: nuget restore <SOLUTION_PATH>
+```
 
 ### [Classic](#tab/classic/)
 
-1. Navigate to your pipeline definition, and then select **Edit**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **+** to add a new task. Search for the **NuGet** task, and then select **Add** to add it to your pipeline.
+1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
 
-1. Name your task and select **Restore** from the **Command** dropdown.
+1. Select **+** to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate*, and *Command line* tasks to your pipeline. Leave the *NuGet tool installer* and *NuGet Authenticate* tasks with their default settings and configure the *Command line* task as follows:
 
-1. Under **Feeds to use**, select **Feed(s) I select here**, and then select your feed from the dropdown menu.
-
-1. To include packages from NuGet.org, check the **Use packages from NuGet.org** option.
+  - **Display name**: Restore.
+  - **Script**: 
+      ```
+      nuget.exe restore <SOLUTION_PATH>
+      ```
 
 1. Select **Save & queue** when you're done.
 
-    :::image type="content" source="media/nuget-restore-classic.png" alt-text="Screenshot that shows how to configure the NuGet restore task.":::
-
-
+> [!NOTE]
+> Make sure that The NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources in an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-in-an-existing-feed)
 * * *
 
-## Restore NuGet packages from a feed in a different organization
+## Restore NuGet packages from a feed in a another organization
 
 To restore NuGet packages from a feed in a different Azure DevOps organization, you must use a personal access token to authenticate.
 
