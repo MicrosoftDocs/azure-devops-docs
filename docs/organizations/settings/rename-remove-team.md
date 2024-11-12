@@ -8,30 +8,32 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 08/08/2024
+ms.date: 11/12/2024
 ---
 
 # Rename or remove a team  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-As your organization changes, you might need to rename or remove a team.  
+As your organization evolves, you might need to rename or remove a team to better align with new roles, projects, or organizational structures.
 
-When you rename a team, the new name propagates throughout Azure DevOps. The following team artifacts are automatically renamed:
-- Team security group 
+When you rename a team, the new name automatically propagates throughout Azure DevOps, ensuring consistency and avoiding confusion. The following team artifacts automatically get renamed:
+- Team security group
 - Team backlogs and boards
-- Team dashboards 
- 
-> [!TIP]    
-> Update any queries that reference the old team security group name. 
+- Team dashboards
 
-When you remove or delete a team, all of its configuration settings get deleted. These settings include team dashboards, backlogs, and boards. Data defined for work items that are assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
+Automatic renaming maintains access controls, project tracking, and dashboard configurations without manual updates. Removing a team deletes its configurations and reassigns its members to other teams, ensuring workflow continuity and organizational clarity.
+
+> [!TIP]    
+> Update any queries that reference the old team security group name.
+
+Deleting a team removes all configuration settings, including dashboards, backlogs, and boards. Work item data remains unchanged. Team configurations cannot be recovered after deletion.
  
 ## Prerequisites 
 
 **Permissions:**
-- **Team Administrator or Project Administrators group:** To rename a team, you must be a team administrator or a member of the [**Project Administrators** group](../security/change-project-level-permissions.md).
-- **Project Administrators group:** To remove or delete a team, you must be a member of the **Project Administrators** group. 
+- To rename a team, be a team administrator or a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
+- To remove or delete a team, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
 
 ## Rename a team
 
@@ -295,7 +297,7 @@ Are you sure you want to delete this team? (y/n): y
 ## Related articles
 
 - [Add teams](add-teams.md)  
-- [About teams and Agile tools](about-teams-and-settings.md)  
-- [Azure DevOps Teams CLI](/cli/azure/devops/team)  
-- [Teams (REST API)](/rest/api/azure/devops/core/teams)  
-- [Work Items (REST API)](/rest/api/azure/devops/wit)  
+- [Learn about teams and Agile tools](about-teams-and-settings.md)  
+- [Use the Azure DevOps Teams CLI](/cli/azure/devops/team)  
+- [Use the Teams REST API](/rest/api/azure/devops/core/teams)  
+- [Use the Work Items REST API](/rest/api/azure/devops/wit)  
