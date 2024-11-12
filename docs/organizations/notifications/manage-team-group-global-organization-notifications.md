@@ -22,15 +22,7 @@ For example, when a high priority work item is assigned to your team's area path
 
 ## Prerequisites
 
-To manage notifications, you must be an administrator for the level you want to manage:
-- Team: You must be a **Team Administrator** to modify subscriptions for a team.
-- Project: You must be a member of the **Project Administrators** group to create or modify subscriptions for a project.  
-- Organization: You must be a member of the **Project Collection Administrators** group to create or modify subscriptions for an organization or collection.
-
-If you're not an administrator, get added as one. For more information, see the following articles:
-- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
-- [Change permissions at the project-level](../../organizations/security/change-project-level-permissions.md)
-- [Change permissions at the organization or collection-level](../../organizations/security/change-organization-collection-level-permissions.md)
+[!INCLUDE [prerequisites-notifications](includes/prerequisites-notifications.md)]
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
@@ -92,26 +84,26 @@ A subscription lets you control what your team is notified of and how the team r
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-1. Select **Project settings** > **Notifications**.
+2. Select **Project settings** > **Notifications**.
 
     :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-2. Select **New subscription**.
+3. Select **New subscription**.
 
     ![New subscription is highlighted.](media/new-subscription-newnav.png) 
 
-3. Select the type of activity you want your team to be notified of.
+4. Select the type of activity you want your team to be notified of.
 
 	![Select event category and template.](media/new-sub-page1.png)
 
-1. Provide a description to help you identify the subscription later.
+5. Provide a description to help you identify the subscription later.
 
     ![Provide a description.](media/new-sub-description.png)
 
-1. Choose which team members should receive a notification:
+6. Choose which team members should receive a notification:
 
     ![Select role.](media/new-sub-team-delivery-by-role.png)
 
@@ -131,19 +123,17 @@ A subscription lets you control what your team is notified of and how the team r
    > **Changed reviewers** applies to any reviewer that's added or deleted, as a result of policies defined for the set of files. For example, a push to a pull request (PR) could introduce a change to File1.cs. If there’s a policy which says that Person A needs to review changes to File1.cs, they’d be in the Changed reviewers role for that iteration of the PR. 
    > The **Reset reviewers** role is related to the “reset votes” policy. For example, the repo has configured the policy, “Reset votes on new pushes”. Person B, who was required on the PR, has already approved this PR. Because of the reset votes policy, their vote has been reset. Thus, she’s in the Reset reviewers role for that iteration.
 
-1. Choose whether you want to receive notifications about activity in all projects or only a specific project.
+7. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
     ![Select scope](media/new-sub-scope.png)
 
-1. Optionally, configure more filter criteria.
+8. Optionally, configure more filter criteria.
 
     ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
-1. Select **Finish** to save the new subscription.
+9. Select **Finish** to save the new subscription.
 
 ::: moniker-end  
-
-  
 
 <a name="manage"></a>
 
@@ -169,7 +159,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=" azure-devops-2019"
 > [!TIP]
 > You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). 
 

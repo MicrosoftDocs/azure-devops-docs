@@ -14,6 +14,10 @@ monikerRange: 'azure-devops'
  
 # Integrate Azure Pipelines with Microsoft Teams
 
+> [!NOTE]
+> Microsoft Teams integration support for service hooks is retiring as of December 31, 2024 for new integrations and January 31, 2025 for existing integrations. We recommend using Power Automate workflows to provide maximum security for your data. For more information, see [Retirement of Office 365 connectors within Microsoft Teams](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/).
+
+
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]

@@ -114,7 +114,7 @@ Complete the following steps to set an icon for your hub.
 
 1. Set the `iconAsset` property of the hub contribution to the fully qualified asset identifier, which follows the pattern: `{publisher-id}.{extension-id}/{asset-path}`.
 
-2. Add an entry for this asset in the `includesata` contribution property.
+2. Add an entry for this asset in the `includesData` contribution property.
 
 3. Package the asset with your extension by listing it in the `files` property at the root of your manifest.
 

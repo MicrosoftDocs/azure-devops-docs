@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '= azure-devops'
-ms.date: 06/15/2023
+ms.date: 11/11/2024
 ---
 
 # Create audit streaming
@@ -35,18 +35,11 @@ Private linked workspaces aren't supported today.
 
 ## Prerequisites
 
-By default, Project Collection Administrators (PCAs) are the only group that has access to the auditing feature. You must have the following permissions:
-
-- Manage audit streams
-- View audit log
-  
-  :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set audit permissions to Allow":::
-
-These permissions can be given to any users or groups you wish to have manage your organization's streams. Additionally, there's also a *Delete audit streams* permission that you can add on for users or groups.
+[!INCLUDE [prerequisites-auditing](includes/prerequisites-auditing.md)]
 
 ## Create a stream
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
@@ -79,7 +72,7 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 
 1. Enable this feature in Splunk. For more information, see this [Splunk documentation](https://aka.ms/adostreamingsplunkdocumentation).
    
-   Once it's enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
+   Once enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
 
    > [!NOTE]
    > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
@@ -90,16 +83,18 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 
    :::image type="content" source="media/auditing-streaming/create-stream-splunk.png" alt-text="Enter topic endpoint and access key that you noted earlier":::
 
-4. Select **Set up** and your stream's configured. 
+4. Select **Set up**. 
    
-Events begin to arrive on Splunk within half an hour or less. 
+Your stream gets configured and events begin to arrive on Splunk within half an hour or less. 
 
 ### Set up an Event Grid stream
 
 1. Create an Event Grid topic on Azure.
+
 > [!NOTE]
-> When creating the Event Grid topic, navigate to the Advanced tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas are not supported by Azure DevOps. 
-2. Make note of the “Topic Endpoint” and one of the two “Access Keys”. Use this information to create the Event Grid connection.
+> Go to the **Advanced** tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas are not supported by Azure DevOps. 
+
+2. Make note of the "Topic Endpoint" and one of the two "Access Keys". Use this information to create the Event Grid connection.
 
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::
 
@@ -145,7 +140,7 @@ Parameters available for editing differ per stream type.
 ## Disable a stream
  
 1. Next to the stream that you want to disable, move the **Enabled** toggle from *On* to *Off*.  
-   When streams encounter a failure, they may become disabled. You can get details on the failure from the status shown next to the stream, or by selecting **Edit stream**. You can also disable a stream manually, and then re-enable it later. 
+   When streams encounter a failure, they might become disabled. You can get details on the failure from the status shown next to the stream, or by selecting **Edit stream**. You can also disable a stream manually, and then re-enable it later. 
 
    :::image type="content" source="media/auditing-streaming/disable-stream-move-toggle-off.png" alt-text="Move toggle to Off to disable stream":::
 
@@ -154,7 +149,7 @@ Parameters available for editing differ per stream type.
 You can re-enable a disabled stream. It catches up on any audit events that were missed for up to the previous seven days. That way you don't miss any events from the duration that the stream was disabled. 
 
 > [!NOTE]
-> If a stream is disabled for more than 7 days, events older than 7 days aren't included in the catch up. 
+> Events older than 7 days aren't included in the catch-up if a stream is disabled for more than 7 days.
 
 ## Delete a stream
 
@@ -170,11 +165,11 @@ To delete a stream, make sure that you have the *Delete audit streams* permissio
 
 3. Select **Confirm**.
 
-Your stream gets removed. Any events that haven't been sent before the deletion aren't sent.
+The system removes your stream. Any unsent events before the deletion don't get sent.
 
 ## Related articles
 
-- [Review audit log](azure-devops-auditing.md#review-audit-log)
-- [Export audit events](azure-devops-auditing.md#export-auditing-events)
-- [List of audit events](auditing-events.md)
-- [Introducing Azure DevOps Audit Stream on Azure DevOps blog](https://devblogs.microsoft.com/devops/introducing-azure-devops-audit-stream/)
+- [Review the audit log](azure-devops-auditing.md#review-audit-log)
+- [Export audit events](azure-devops-auditing.md#export-audit-events)
+- [View the list of audit events](auditing-events.md)
+- [Read about Azure DevOps Audit Stream on the Azure DevOps blog](https://devblogs.microsoft.com/devops/introducing-azure-devops-audit-stream/)

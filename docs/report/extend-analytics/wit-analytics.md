@@ -290,7 +290,7 @@ The following table provides examples of how to expand several of these properti
 | Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
 | Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
-To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
+To specify several properties that need to be expanded, you specify them in a single expand clause within a comma-delimited list. 
 
 `$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
 

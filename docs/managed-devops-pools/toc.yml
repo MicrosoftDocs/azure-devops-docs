@@ -34,6 +34,8 @@
     href: view-agents.md
   - name: Demands
     href: demands.md
+  - name: Reliability
+    href: reliability-managed-devops-pools.md
 - name: Monitor and troubleshoot
   items:
   - name: Monitor
@@ -68,5 +70,7 @@
     href: /javascript/api/overview/azure/devops-infrastructure
   - name: Python
     href: /python/api/overview/azure/devops-infrastructure
+  - name: REST
+    href: /rest/api/devopspools
   - name: Terraform
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform

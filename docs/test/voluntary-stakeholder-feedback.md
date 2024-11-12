@@ -65,7 +65,7 @@ Use the Test & Feedback extension to provide voluntary feedback, even if you don
 
 10. Select the **Stop** icon to end your feedback session. 
      
-   ![Screenshot showing highlighted sqare icon to stop your feedback session.](media/shared/provide-stakeholder-feedback-12.png)
+   ![Screenshot showing highlighted square icon to stop your feedback session.](media/shared/provide-stakeholder-feedback-12.png)
 
 ## Related articles
 
