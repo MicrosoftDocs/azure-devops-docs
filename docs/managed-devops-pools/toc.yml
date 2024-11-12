@@ -68,5 +68,7 @@
     href: /javascript/api/overview/azure/devops-infrastructure
   - name: Python
     href: /python/api/overview/azure/devops-infrastructure
+  - name: REST
+    href: /rest/api/devopspools
   - name: Terraform
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform
