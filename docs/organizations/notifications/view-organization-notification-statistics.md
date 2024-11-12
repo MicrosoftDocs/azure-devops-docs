@@ -26,11 +26,18 @@ Notification statistics show the top 10 most active subscriptions and top event 
 3. Analyze the most active subscriptions and top event initiators.
 
 > [!div class="mx-imgBorder"] 
->![Organization notification settings delivery option](media/view-organization-notification-stats.png)
+>![Screenshot shows organization notification settings delivery option.](media/view-organization-notification-stats.png)
 
 #### Notes:
 
 * A context menu (`...`) on the most active subscriptions provides the option to edit, disable, or delete the subscription
 * Both email and service hooks subscriptions are eligible for the most active subscriptions
 * The integer subscription ID is shown in the description for a custom email subscription
-* Results are not a sliding 24-hour window and reset at the beginning of each day (00:00 UTC)
+* Results aren't a sliding 24-hour window and reset at the beginning of each day (00:00 UTC)
+
+## Related articles
+
+- [Manage personal notifications](manage-your-personal-notifications.md)
+- [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md)
+- [Use @mentions in work items and pull requests](at-mentions.md)
+- [Learn about notifications](about-notifications.md)
