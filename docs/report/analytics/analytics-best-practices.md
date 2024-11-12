@@ -121,7 +121,7 @@ If you have access to one or more projects, but not all projects, and you submit
 
 `"VS403496: The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you're using $expand or navigation properties, project filter is required for those entities. More information can be found here: https://go.microsoft.com/fwlink/?LinkId=786441."`
 
-To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).
+For more information, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).
 
 ## Review warning and error messages  
 

@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/19/2024
+ms.date: 09/09/2024
 ---
 
 # Allowed IP addresses and domain URLs
@@ -21,7 +21,7 @@ If your organization is secured with a firewall or proxy server, you must add ce
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
 
 > [!TIP]
-> So that Visual Studio and Azure Services work well with no network issues, you should open select ports and protocols. For more information, see [Install and use Visual Studio behind a firewall or proxy server, Use Visual Studio and Azure Services](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services).
+> So that Visual Studio and Azure Services work well with no network issues, open select ports and protocols. For more information, see [Install and use Visual Studio behind a firewall or proxy server, Use Visual Studio and Azure Services](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services).
 
 <a id="range-restrictions"></a>
 
@@ -296,7 +296,7 @@ Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadab
 
 If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md?preserve-view=true&view=azure-devops).
 
-For more information about hosted Windows, Linux and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
+For more information about hosted Windows, Linux, and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
 ### Azure Pipelines Self-hosted agents
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
@@ -304,6 +304,9 @@ If you're running a firewall and your code is in Azure Repos, see [Self-hosted L
 ## Azure DevOps import service
 
 During the import process, we highly recommend that you restrict access to your virtual machine (VM) to only IP addresses from Azure DevOps. To restrict access, allow only connections from the set of Azure DevOps IP addresses,  which were involved in the collection database import process. For information about identifying the correct IP addresses, see [(Optional) Restrict access to Azure DevOps Services IPs only](../../migrate/migration-import-large-collections.md#ips).
+
+> [!NOTE]
+> Azure DevOps doesn't natively support allowlisting directly within its settings. However, you can manage allowlisting at the network level using your organization's firewall or proxy settings. 
 
 ## Related articles
 

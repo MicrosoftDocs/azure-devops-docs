@@ -702,7 +702,7 @@ Along with the standard filter functions summarized in the previous table, the f
 
 
 ::: moniker range=">= azure-devops-2020"
-To learn more about these other functions, see the following articles: 
+For more information about these other functions, see the following articles: 
 - [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
 - [Display rollup progress or totals](display-rollup.md) 
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
@@ -710,7 +710,7 @@ To learn more about these other functions, see the following articles:
 ::: moniker-end 
 
 ::: moniker range="< azure-devops-2020"
-To learn more about these other functions, see the following articles: 
+For more information about these other functions, see the following articles: 
 - [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
@@ -898,6 +898,8 @@ With filtering turned on, choose one or more values from the multi-select drop-d
 
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
+>
+> The values that populate the filter options are based on the work items that are currently loaded and displayed. For example, if you have a backlog with 2,000 work items, but only 1,000 are displayed on a board, the filter options are based on just the items displayed.
 
 ### Filter a board by using select field values
 
@@ -986,7 +988,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 
 
-To learn more about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
+For more information about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
   
 
 

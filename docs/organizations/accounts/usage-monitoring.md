@@ -6,82 +6,88 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/09/2024
+ms.date: 10/24/2024
 monikerRange: 'azure-devops'
 ---
 
-# Usage monitoring
+# Monitor usage
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can investigate the usage of your users in Azure DevOps Services for the previous 28 days. Usage monitoring is important to identify causes for bandwidth bottlenecks, that aren't caused by faulty systems. See the following most common commands or operations that might trigger a usage message.
-
-- Requests that were delayed
-- Requests that exceeded thresholds
+Monitoring usage in Azure DevOps Services is crucial for identifying and addressing performance bottlenecks. By understanding the common commands and operations that trigger usage messages, you can optimize your tools and processes to ensure efficient use of resources. Regularly reviewing the usage page and audit logs helps maintain the performance and reliability of your Azure DevOps environment.
 
 ## Prerequisites
 
-You must be a member of the Project Collection Administrators group to view the Usage page.
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
-## Usage concepts
-
-When a user's request is delayed by a significant amount of time, that user gets a notification email. There's also a warning banner displayed on the web. Both the warning banner and notification email have a link to the usage page. If the user doesn't have an email address, the notification email gets sent to the Project Collection Administrators group members.
-
-Commands that consume a high number of Azure DevOps throughput units (TSTUs) (in the hundreds, for example) are responsible for the user exceeding the threshold. The User Agent and IP address columns can be helpful to see where these commands are coming from. Custom tools or build service accounts might be making a large number of calls in a short time window. 
-
-To avoid issues, you may need to rewrite tools or update build processes. This action reduces the type and number of calls. For example, a tool may be pulling a large version control repository from scratch regularly, when it could pull incrementally instead.
-
-- Request history on the Usage page is in descending order by default.
-- Usage is grouped by command into five-minute time windows.
-- The Count column gives the number of commands in the window.
-- Other columns highlight total TSTUs and delay time.
+> [!NOTE]
+> To view usage from an audit perspective, see [Access, export, and filter audit logs](../../organizations/audit/azure-devops-auditing.md). This view doesn't include TSTUs but retains data for 90 days.
 
 For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
 
-> [!NOTE]
-> To view usage from an audit perspective, see [Access, export, and filter audit logs](../../organizations/audit/azure-devops-auditing.md). This view does't include TSTUs, but does have 90s of retention.
-
 ## View usage
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Usage**.
 
-   :::image type="content" source="media/usage-pca-newnav.png" alt-text="Screenshot of Usage page for collection administrators.":::
+  :::image type="content" source="media/usage-pca-newnav.png" alt-text="Screenshot of Usage page for collection administrators.":::
 
-3. Use this page to investigate the usage of other users. Usage can occur from regular web portal operations or use of command line or REST API tools.
+3. Use this page to investigate the usage of other users. Usage can occur from regular web portal operations or the use of command line or REST API tools.
 
-   a. View by the following categories:
-     - Usage By User
-     - Usage By Pipeline
-     - Top user agents
-     - Top commands
-     - Top Build Pipelines
-     - Top Release Pipelines
+  a. View by the following categories:
+    - Usage by user
+    - Usage by pipeline
+    - Top user agents
+    - Top commands
+    - Top build pipelines
+    - Top release pipelines
   
-   b. Filter by the following column options:
-     - User
-     - User agent
-     - IP address
-     - Time range
-     - ServiceApplication
-     - Command
-     - Status
-     - Count
-     - Usage (TSTUs)
-     - Delay(s)
+  b. Filter by the following column options:
+    - User
+    - User agent
+    - IP address
+    - Time range
+    - Service
+    - Application
+    - Referrer
+    - Command
+    - UriStem
+    - Status
+    - Count
+    - Usage (TSTUs)
+    - Delay (s)
 
    Azure DevOps displays the last hour of requests by default. You can select from other increments of time.
 
-   d. Select from the following statuses:
-     - All statuses
-     - Normal
-     - Delayed
-     - Blocked
+  c. Select from the following statuses:
+    - All statuses
+    - Normal
+    - Delayed
+    - Blocked
 
-   e. The usage page is scoped to the 30 minutes before and after the first delayed request. Review the request history leading up to delayed requests.
+  d. The usage page is scoped to the 30 minutes before and after the first delayed request. Review the request history leading up to delayed requests.
 
-   :::image type="content" source="media/usage-screenshot-example.png" alt-text="Usage page screenshot example":::
+  :::image type="content" source="media/usage-screenshot-example.png" alt-text="Screenshot of usage page example.":::
+
+### Understand notifications and alerts
+- When a user's request gets delayed, they receive a notification email and see a warning banner on the web. Both the banner and email link to the usage page.
+- When a user doesn't have an email address, the notification gets sent to the Project Collection Administrators group members.
+
+### Identify high usage
+- Commands consuming a high number of Azure DevOps throughput units (TSTUs) can cause users to exceed thresholds.
+- The User Agent and IP address columns help identify the source of these commands. Custom tools or build service accounts might be making numerous calls in a short time window.
+
+### Optimize tools and processes
+
+To avoid issues, consider rewriting tools or updating build processes to reduce the type and number of calls. For example, instead of pulling a large version control repository from scratch regularly, pull incrementally.
+
+### Understand usage page details
+
+- Request history on the `Usage` page is in descending order by default.
+- Usage gets grouped by command into five-minute time windows.
+- The `Count` column shows the number of commands in the window.
+- Other columns highlight total TSTUs and delay time.
 
 ## Related articles
 

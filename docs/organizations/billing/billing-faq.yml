@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 11/21/2023
+  ms.date: 10/14/2024
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -50,7 +50,7 @@ sections:
       - question: |
           Q: What happens when a user is deleted in Microsoft Entra ID?
         answer: |
-          A: When a user is permanently deleted in Microsoft Entra ID, within a few hours, they're removed from Azure DevOps and you're no longer be billed for their license. You might need to remove guest users  manually from Azure DevOps. For more information, see [Delete a user in Microsoft Entra ID](https://learn.microsoft.com/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
+          A: When a user is permanently deleted in Microsoft Entra ID, within a few hours, they're removed from Azure DevOps and you're no longer be billed for their license. You might need to remove guest users  manually from Azure DevOps. For more information, see [Delete a user in Microsoft Entra ID](/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
       
       - question: |
           Q: How can I stop paying for users who aren't actively using Azure DevOps?
@@ -72,12 +72,12 @@ sections:
       - question: |
           Q: What happens if I set up billing before my Azure Test Plans trial expires?
         answer: |
-          A: If you [set up billing](set-up-billing-for-your-organization-vs.md) before your trial expires, you don't get charged until the trial ends.
+          A: If you [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) before your trial expires, you don't get charged until the trial ends.
 
       - question: |
           Q: What happens if I don't set up billing and my Azure Test Plans trial expires?
         answer: |
-          A: Those users assigned Basic + Test Plans lose access until you do [set up billing](set-up-billing-for-your-organization-vs.md).
+          A: Those users assigned Basic + Test Plans lose access until you do [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing).
       
       - question: |
           Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
@@ -100,17 +100,12 @@ sections:
            - [Buy Visual Studio Test Professional (standard subscription, yearly)](https://visualstudio.microsoft.com/vs/test-professional/)
           
           **Buy Azure DevOps Basic or Basic + Test Plans for anyone else**
-          1. [Create an Azure DevOps organization](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization) or select one you already use.
-          2. [Set up billing](https://learn.microsoft.com/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization.
-          3. [Add users who need access](https://learn.microsoft.com/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps server, assigning them Basic or Basic + Test Plans.
+          1. [Create an Azure DevOps organization](/azure/devops/organizations/accounts/create-organization) or select one you already use.
+          2. [Set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization.
+          3. [Add users who need access](/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps server, assigning them Basic or Basic + Test Plans.
           
           Each organization includes five free Basic users, which doesn't include a CAL. Add five users who won’t use the server to ensure you’re paying for everyone who needs a server CAL.
           
-      - question: |
-          Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
-        answer: |
-          A: Since June 1, 2019, on-premises Azure Artifacts, for example, Package Management, is included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no other purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
-
       - question: |
           Q: How do I pay for Azure DevOps support?
         answer: |
@@ -313,18 +308,23 @@ sections:
           
           1. In Azure DevOps Billing settings, [remove your billing subscription](change-azure-subscription.md#remove-your-billing-subscription).
           2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
-          3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
+          3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
 
       - question: |
           Q: Why is the name of my organization resource incorrect? 
         answer: |
-          A: If you have [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
+          A: If you have [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) again. 
          
       - question: |
           Q: What happens if I delete my organization resource? 
         answer: |
-          A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.yml#q--can-i-use-azure-devops-for-free-). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
-      
+          A: Deleting the Azure DevOps organization resource in the Azure portal results in an error if it's actively being used for billing. 
+          To delete the organization resource, first change billing to a different Azure subscription in the Azure DevOps organization (Organization settings > Billing > Change billing). For more information, see [Change billing in Azure DevOps](set-up-billing-for-your-organization-vs.md#change-your-billing-subscription).
+          
+          :::image type="content" source="media/delete-command-on-one-selected-item.png" alt-text="Screenshot of delete command on one selected item.":::
+          
+          If the user removing billing has permission on the Azure subscription, the resource in the Azure portal gets removed automatically. If the user removing billing in Azure DevOps doesn't have access to the Azure subscription, the organization resource persists and a user with access to the Azure subscription can safely remove it later without error.
+
       - question: |
           Q: Can I apply tags to organizations from the Azure portal?
         answer: |
@@ -350,7 +350,7 @@ sections:
       - question: |
           Q: What happens if I cancel my Azure subscription, or my credit card expires?
         answer: |
-          A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the [free tier](overview.md#free-tier) of service. To resume access to paid services, [reactivate your subscription](https://learn.microsoft.com/azure/cost-management-billing/manage/subscription-disabled) or [change your organization's billing subscription](change-azure-subscription.md).
+          A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the [free tier](overview.md#free-tier) of service. To resume access to paid services, [reactivate your subscription](/azure/cost-management-billing/manage/subscription-disabled) or [change your organization's billing subscription](change-azure-subscription.md).
           
           ![Screenshot of invalid Azure billing subscription.](media/billing-faq/azure-subscription-invalid.png)
 
@@ -372,7 +372,7 @@ sections:
       - question: |
           Q: How can I tell whether I have the necessary privileges to buy services through my organization's Enterprise Agreement?
         answer: |
-          A: The easiest approach to determine if you have the right privileges is to [set up billing](https://learn.microsoft.com/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for your organization. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, you can name subscriptions, "Pay-As-You-Go" or "Enterprise Agreement."
+          A: The easiest approach to determine if you have the right privileges is to [set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for your organization. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, you can name subscriptions, "Pay-As-You-Go" or "Enterprise Agreement."
           
           Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
           
@@ -381,19 +381,19 @@ sections:
       - question: |
           Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy Azure DevOps?
         answer: |
-          A: Yes, you can use these prepaid funds for all services that Azure DevOps offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
+          A: Yes, you can use these prepaid funds for all services that Azure DevOps offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
           
   - name: Other questions
     questions:
       - question: |
           Q: Why don't I see Team Projects in the Azure portal?
         answer: |
-          A: You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{your_organization}`). You can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
+          A: You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{Your_Organization}`). You can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
           
       - question: |
           Q: Why is my organization already linked to an Azure subscription?
         answer: |
-          A: Someone already [set up billing](set-up-billing-for-your-organization-vs.md) for your organization. Each organization can use only one Azure subscription for billing. You can't split across multiple Azure subscriptions.
+          A: Someone already [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization. Each organization can use only one Azure subscription for billing. You can't split across multiple Azure subscriptions.
           
       - question: |
           Q: Can I use the same Azure subscription for billing across multiple organizations?
@@ -415,10 +415,7 @@ sections:
 
 additionalContent: |
 
-  ## Related articles
-  
-  * [Set up billing](set-up-billing-for-your-organization-vs.md)
-  * [Add backup billing managers](add-backup-billing-managers.md)
-  * [Change the Azure subscription for billing](change-azure-subscription.md)
+  ## Related articles  
+
   * [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
   * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

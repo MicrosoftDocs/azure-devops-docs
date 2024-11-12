@@ -27,7 +27,7 @@ The following table summarizes the entity types and entity sets that support Azu
 |EntitySet | EntityType | Description |  
 |-----------|-------------|-------------| 
 |[**Branches**](#branches)|**Branch** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  
-|[**ParallelPipelineJobsSnapshot**](#parallelpipelinejobssnapshot)|**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   
+|[**ParallelPipelineJobsSnapshot**](#parallelpipelinejobssnapshot)|**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. For more information about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   
 |[**Pipelines**](#pipelines) | **Pipeline**| Properties for a pipeline. |   
 |[**PipelineJobs**](#pipelinejobs)|**PipelineJob** |Individual execution results for a specific Test associated with a TestRun |  
 |[**PipelineRuns**](#pipelineruns)|**PipelineRun** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  
@@ -62,7 +62,7 @@ The following properties are valid for the **ParallelPipelineJobsSnapshot** enti
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
-|**Hosted Or Self-hosted** | `IsHosted` | Boolean | Indicates if the parallel pipeline is run on a Microsoft-hosted agent (True) or is self-hosted (False). To learn more, see [Azure Pipelines agents](../../pipelines/agents/agents.md). | 
+|**Hosted Or Self-hosted** | `IsHosted` | Boolean | Indicates if the parallel pipeline is run on a Microsoft-hosted agent (True) or is self-hosted (False). For more information, see [Azure Pipelines agents](../../pipelines/agents/agents.md). | 
 |**Failed To Reach All Providers** | `FailedToReachAllProviders` | Boolean | Indicates if the job run reached all providers (True) or not (False).   |
 |**Number Of Parallel Pipelines Jobs** | `TotalCount` | Int32 | The number of jobs run as part of the snapshot.  | 
 |**Number Of Parallel Pipelines Minutes** | `TotalMinutes` | Int32 | The number of minutes taken to run the snapshot.  | 
@@ -99,7 +99,7 @@ The following members are defined for the `PipelineProcessType` enumerated type 
 
 ## PipelineJobs  
 
-A pipeline job is a series of steps that run sequentially as a unit. A job is the smallest unit of work that you can schedule to run. Pipelines are organized around jobs, and each pipeline has at least one job. To learn more, see [Specify jobs in your pipeline](../../pipelines/process/phases.md).
+A pipeline job is a series of steps that run sequentially as a unit. A job is the smallest unit of work that you can schedule to run. Pipelines are organized around jobs, and each pipeline has at least one job. For more information, see [Specify jobs in your pipeline](../../pipelines/process/phases.md).
 
 The following properties are valid for  **PipelineJobs** and its `PipelineJobSK` surrogate key.
 
@@ -119,7 +119,7 @@ For a sample report that queries the **PipelineJob** entity type, see [Pipeline 
 
 ## PipelineRuns  
 
-A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. A pipeline run includes jobs, steps, and tasks. To learn more, see [Pipeline run sequence](../../pipelines/process/runs.md).
+A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. A pipeline run includes jobs, steps, and tasks. For more information, see [Pipeline run sequence](../../pipelines/process/runs.md).
 
 The following properties are valid for the **PipelineRun** entity type and its `PipelineRunSK` surrogate key.
 

@@ -29,6 +29,11 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
@@ -60,6 +65,11 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
@@ -133,6 +143,10 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 * * *
 
+
+> [!NOTE]
+> `Build.ArtifactStagingDirectory` path is cleaned up after each build. If you're using this path to publish your artifact, make sure you copy the content you wish to publish into this directory before the publishing step.
+
 ## Download artifacts
 
 #### [YAML](#tab/yaml/)
@@ -182,9 +196,47 @@ When your pipeline run is completed, navigate to **Summary** to explore or downl
 
 ::: moniker-end
 
+## Download a specific artifact
 
+#### [YAML](#tab/yaml/)
 
+```yaml
+steps:
+- task: DownloadBuildArtifacts@1
+  displayName: 'Download Build Artifacts'
+  inputs:
+    buildType: specific
+    project: 'xxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxx'
+    pipeline: 20
+    buildVersionToDownload: specific
+    buildId: 128
+    artifactName: drop
+    extractTars: false
+```
 
+#### [Classic](#tab/classic/)
+
+Add the :::image type="icon" source="../tasks/utility/media/downloadbuildartifacts.png" border="false"::: **Download Build Artifacts** task to your pipeline definition and configure it as follows:
+
+:::image type="content" source="media/download-specific-build-artifact.png" alt-text="A screenshot that shows a Maven package deployed to a feed." lightbox="media/download-specific-build-artifact.png":::
+
+- **Download artifacts produced by**: Specific build.
+
+- **Project**: select your project from the dropdown menu.
+
+- **Build pipeline**: select your build pipeline.
+
+- **Build version to download**: select specific version.
+
+- **Build**: select your build from the dropdown menu.
+
+- **Download type**: specific artifact.
+
+- **Artifact name**: select your artifact from the dropdown menu.
+
+- **Destination directory**: default $(System.ArtifactsDirectory).
+
+* * *
 
 ## Tips
 

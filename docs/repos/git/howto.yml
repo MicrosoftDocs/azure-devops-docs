@@ -6,39 +6,36 @@ metadata:
   ms.assetid: b1262306-214c-4422-8eda-d03d05825241
   ms.service: azure-devops-repos
   ms.topic: faq
-  ms.date: 09/28/2021
+  ms.date: 08/22/2024
   monikerRange: '<= azure-devops'  
   ms.subservice: azure-devops-repos-git
-title:  Frequently Asked Git Questions
+title:  Git FAQs 
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+  In this article, find answers to frequently asked questions about Git, specifically tailored for Azure Repos. Whether you're looking to manage remote branches, identify your current branch, or handle other less-common Git tasks, this guide provides helpful tips and solutions. Dive into the following sections to enhance your Git workflow and resolve common issues.
 sections:
   - name: Ignored
     questions:
       - question: |
-          How can I easily get a remote branch downloaded to my local repository?
+          How can I easily download a remote branch to my local repository?
         answer: |
-          First, make sure you have an `origin` repository configured. You should have such a repository if you cloned [`git clone`](clone.md)) your repo.  When you check out a branch that doesn't exist locally, Git determines if there's a remote branch with the same name. If there is, Git creates a local branch with a reference to the remote branch of that name. Use `git pull` to download the commits and have Git catch up on the branch history locally.
-          
+          First, ensure you have an `origin` repository configured. You should have this if you cloned your repo using [`git clone`](clone.md). When you check out a branch that doesn't exist locally, Git checks if there's a remote branch with the same name. If there is, Git creates a local branch that references the remote branch. Use `git pull` to download the commits and update the branch history locally.
+                
       - question: |
           How can I find out which branch I'm working in?
         answer: |
-          `git branch` with no arguments shows the local branches and highlights the ones you've checked out. In Visual Studio, the status bar also displays the current branch when you're working with a project stored in a local Git repository. 
-
+          Run `git branch` with no arguments to show the local branches and highlight the one you've checked out. In Visual Studio, the status bar also displays the current branch when you're working with a project stored in a local Git repository.
+      
       - question: |
           When should I make Git commits?
         answer: |
-          Accepted practice is to make separate commits for logically separate changes. Think of commits as entries in a logbook. Whenever you make a change that's worth noting, record it in a commit.
-          A popular option is to allow everyone to commit locally as much as they want, but before they push the local commits, they squash them first through [rebasing](rebase.md). This option provides users with flexibility to make frequent commits, while keeping the commit history streamlined. 
-          
+          It's best practice to make separate commits for logically distinct changes. Think of commits as entries in a logbook. Whenever you make a change worth noting, record it in a commit. A popular approach is to allow frequent local commits, but squash them through [rebasing](rebase.md) before pushing. This provides flexibility while keeping the commit history streamlined.
+                
       - question: |
           If every branch retains its full commit history, doesn't that make the commit history of *main* hard to follow over time?
         answer: |
-          Large projects with many commits and a range of contributors can result in commit histories for the `main` branch that represents 
-          the development history of the topic branches merged into `main` more than the development history of the overall project. 
-          Git provides a facility for condensing commits on branches through [squashing commits and rebasing](rebase.md). When you squash commits, the commit history on a branch becomes less verbose, which makes for a simpler commit history on the main branch once merged.
-          
+          Large projects with many commits and contributors can result in a `main` branch history that reflects the development of topic branches more than the overall project. Git allows you to condense commits on branches through [squashing commits and rebasing](rebase.md). Squashing commits makes the branch history less verbose, simplifying the commit history on the main branch once merged.
       - question: |
           How can I find out who made a specific change to a file?
         answer: |
@@ -46,50 +43,54 @@ sections:
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
-          > git blame foo.js -L 20,+40  # show the blame output for the next 40 lines starting at line 20
+          > git blame Example_repo -L 20,+40  # show the blame output for the next 40 lines starting at line 20
 
-          215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 20) line 20 of the code
-          215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 21) line 21 of the code
-          215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 22) line 22 of the code
+          215d1108 (Example User 2015-11-21 09:54:23 -0800 20) line 20 of the code
+          215d1108 (Example User 2015-11-21 09:54:23 -0800 21) line 21 of the code
+          215d1108 (Example User 2015-11-21 09:54:23 -0800 22) line 22 of the code
           ```
           
           `Blame` searches the commit history for you. You can also review  a file's history in the web portal to determine
-          who made a change and when. Open Code Explorer for your repository and branch, then select the file of interest. Azure Repos will show a complete
+          who made a change and when. Open Code Explorer for your repository and branch, then select the file of interest. Azure Repos shows a complete
           commit history for that file on the current branch.
           
       - question: |
-          I've made changes to some files and now I can't check out to a different branch or rebase my work.
+          I made changes to some files and now I can't check out to a different branch or rebase my work.
         answer: |
-          Checking out to a different branch in Git will affect the state of files on your file system. Git uses the commit history to make sure you're working with the files that represent the state of your branch. If you try to change branches while you have uncommitted changes, those changes would be overwritten during checkout. Because Git doesn't want you to accidentally lose your changes, it prevents the checkout from happening. You have two options:
+          Checking out to a different branch in Git affects the state of files on your file system. Git uses the commit history to make sure you're working with the files that represent the state of your branch. If you try to change branches while you have uncommitted changes, those changes would be overwritten during checkout. Because Git doesn't want you to accidentally lose your changes, it prevents the checkout from happening. You have two options:
           
           - Abandon the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.  
           - Commit the changes. See [saving your work in Git with commits](commits.md). 
-          - [Stashing](howto.yml#faq) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
+          - [Stashing](howto.yml#i-did-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
 
-      - question: | 
-          I've done some work but need to switch to something else. How can I save my work for later without committing the changes?
+      - question: |
+          Pull request is unable to merge with this message: 'Unable to merge automatically: One of internal git objects (blob, tree, commit or tag) is too large which caused TF401022 exception. You can try to use LFS, split your merge or big commit into several small.'
         answer: |
-          Sometimes you want to keep the changes, but not commit them because they aren't at a point where you're comfortable doing so. Use Git `stash`. Stash takes the current staged and unstaged changes in your branch and saves the work, then returns your branch back to the state of the last commit. You can change to the other branch, do your work, then when you return to this branch run `stash apply` to restore your changes.
-         
-          
-          > [!div class="tabbedCodeSnippets"]
+          This issue is related to merge conflicts in large binary files. The current limit for files is 100MB. The workaround is to resolve merge conflicts locally by merging the target into the source locally, resolving conflicts, and pushing the changes.
+
+          Git LFS (Large File Storage) is recommended for storing large binary files, not only to avoid conflicts but also to manage overall repository size, which affects clone and push times.
+      
+      - question: |
+          I did some work but need to switch to something else. How can I save my work for later without committing the changes?
+        answer: |
+          If you want to save your changes without committing them, use Git `stash`. Stash saves the current staged and unstaged changes in your branch and reverts your branch to the state of the last commit. You can then switch to another branch, do your work, and later run `stash apply` to restore your changes.
+      
           ```Git CLI
-          > git stash
+          git stash
           Saved working directory and index state WIP on feature1: be26067 updated endpoint docs
           HEAD is now at be26067
           ```
-          
-          When you run `git stash apply`, the most recently stashed changes will be applied to your current branch. If there's a conflict applying the stashed changes, `stash` will restore the changes for the files that don't conflict and create conflict markers in the files that do conflict for you to resolve. You should [merge](merging.md) the changes manually in this case.
-          
-          Once you're done with the stash, delete it with `git stash drop` This command removes the last set of stashed changes.
-          
-          You can have multiple stashes, but doing so requires more manual manipulation as you have to explicitly apply and drop stashes. Learn more from [Git Stash documentation](https://git-scm.com/book/en/v1/Git-Tools-Stashing).
-          
+      
+          When you run [`git stash apply`], the most recently stashed changes get applied to your current branch. If there's a conflict, [`stash`] restores the changes for the files that don't conflict and creates conflict markers in the files that do. You should merge the changes manually in this case.
+      
+          Once you're done with the stash, delete it with [`git stash drop`]. This command removes the last set of stashed changes.
+      
+          You can have multiple stashes, but managing them requires more manual manipulation as you have to explicitly apply and drop stashes. Learn more from the [Git Stash documentation](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning).
           
       - question: |
           How can I change the default editor for Git command-line tools?
         answer: |
-          By default, command-line Git will use a command-line editor when asking for commit messages, performing rebases, and other work that requires additional information to 
+          By default, command-line Git uses a command-line editor when asking for commit messages, performing rebases, and other work that requires additional information to 
           complete. The default editor is configured using `git config`:
           
           > [!div class="tabbedCodeSnippets"]
@@ -121,11 +122,11 @@ sections:
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
-          > git config --global user.email "frank@fabrikam.com"
-          > git config --global user.name "Francis Totten"
+          > git config --global user.email "example-user@example-site.com"
+          > git config --global user.name "Example User"
           ```
           
-          The `--global` option will set the email and name included in commits for all Git repositories on this system. If you want to change the settings for a single
+          The `--global` option sets the email and name included in commits for all Git repositories on this system. If you want to change the settings for a single
           repository, you must change to the directory where the Git repository is located and run the above commands without the `--global` flag.
           
           You can also change the name and email settings from Visual Studio. From the **Git** menu, select **Settings** In the **Options** dialog, select **Git Global Settings** or **Git Repository Settings** > **General**.

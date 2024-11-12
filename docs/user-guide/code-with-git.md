@@ -6,7 +6,7 @@ description: Follow these steps to share code within a Git repo and project in A
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 10/20/2023
+ms.date: 10/18/2024
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ---
@@ -26,13 +26,11 @@ You must have an [organization](../organizations/accounts/create-organization.md
 Install one of the following Git command-line tools:
 
    - [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).
-   - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).
+   - [Git for macOS or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).
 
 ## 2. Clone the repo to your computer
 
-To work with a Git repo, clone it to your computer, which creates a complete local copy of the repo. Your code might be in one of several places. 
-
-::: moniker range=">= azure-devops-2019"
+To work with a Git repo, clone it to your computer, which creates a complete local copy of the repo. Your code might be in one of several places.
 
 1. Complete the following step that's applicable to your scenario:
 
@@ -44,11 +42,15 @@ To work with a Git repo, clone it to your computer, which creates a complete loc
 
    ![Screenshot of project with Repos and Files highlighted.](media/clone-repo/repos-files.png)
 
-3. Select **Clone** in the upper-right corner of the **Code** window and copy the URL.
-  
-   ![Screenshot of project with Copy icon highlighted.](media/code-with-git-clone-repo.png)
+3. Select **Clone**.
 
-4. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
+   :::image type="content" source="media/clone-repo/repos-files-clone-button.png" alt-text="Screenshot shows highlighted clone button in repos files.":::
+
+4. **Copy** the URL.
+
+   :::image type="content" source="media/clone-repo/copy-url-clone-action.png" alt-text="Screenshot shows highlighted copy icon for copying URL.":::
+
+5. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
    ```
    git clone https://FabrikamFiber01@dev.azure.com/FabrikamFiber01/FabrikamFiber01-01/_git/FabrikamFiber01-01
@@ -56,17 +58,13 @@ To work with a Git repo, clone it to your computer, which creates a complete loc
   
    Git downloads a copy of the code, including all [commits](../repos/git/commits.md), and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
 
-5. Switch your directory to the repository that you cloned.
+6. Switch your directory to the repository that you cloned.
 
    ```
    cd fabrikam-web
    ```
 
    Keep this command window open to work in a branch.
-
-::: moniker-end
-
-
 
 ## 3. Work in a branch
 
@@ -79,9 +77,9 @@ Git [branches](../repos/git/branch-policies-overview.md) isolate your changes fr
    ```
    This command creates a reference in Git for the new branch. It also creates a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
 
-   If you're working with a previously cloned repository, ensure that you've checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
+   If you're working with a previously cloned repository, ensure you checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
 
-1. Use `checkout` to switch to that branch.
+2. Use `checkout` to switch to that branch.
 
    ```
    git checkout users/jamal/feature1
@@ -145,8 +143,6 @@ Pull requests combine the review and merge of your code into a single collaborat
 
 The following example shows the basic steps of creating and completing a pull request.
 
-::: moniker range=">= azure-devops-2019"
-
 1. Open the team project for your organization in your web browser and select **Repos** > **Files**. If you kept your browser open after getting the clone URL, you can just switch back to it.
 
 2. Select **Create a pull request** in the upper-right corner of the **Files** window. If you don't see a message like **You updated users/jamal/feature1 just now**, refresh your browser.
@@ -178,15 +174,9 @@ The following example shows the basic steps of creating and completing a pull re
    >[!NOTE]
    >This example shows the basic steps of creating and completing a pull request. For more information, see [Create, view, and manage pull requests](../repos/git/pull-requests.md).
 
-::: moniker-end
-
-
-
 Your changes are now merged into the `main` branch, and your `users/jamal/feature1` branch is deleted on the remote repository. 
 
 ## View history
-
-::: moniker range=">= azure-devops-2019"
 
 1. Switch back to the web portal and select **History** from the **Code** page to view your new commit.
 
@@ -196,13 +186,9 @@ Your changes are now merged into the `main` branch, and your `users/jamal/featur
 
    ![Screenshot of README file](media/first-edit-readme-file.png)
 
-::: moniker-end
-
-
-
 ## Clean up
 
-Switch back to your Git Bash command prompt and run the following command to delete your local copy of the branch.
+To delete your local copy of the branch, switch back to your Git Bash command prompt and run the following command: 
 
 ```
 git checkout main
@@ -222,7 +208,7 @@ This action completes the following tasks:
 > 
 ## Related articles
 
-- [Key concepts for new users to Azure Pipelines](../pipelines/get-started/key-pipelines-concepts.md)
-- [What is Azure Repos?](../repos/get-started/what-is-repos.md)
-- [Learn more about working with a Git repo](../repos/git/index.yml)
-- [What is source control?](source-control.md)
+- [Understand key concepts for new users to Azure Pipelines](../pipelines/get-started/key-pipelines-concepts.md)
+- [Discover what Azure Repos is](../repos/get-started/what-is-repos.md)
+- [Learn how to work with a Git repo](../repos/git/index.yml)
+- [Explore what source control is](source-control.md)

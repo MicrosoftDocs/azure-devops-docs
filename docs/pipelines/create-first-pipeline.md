@@ -173,7 +173,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     az pipelines create --name "First-Java.CI" --org <organization> --project <project>
     ```
 
-    Replace `<organization>` and `<project>` with naem of your Azure DevOps organization and project.
+    Replace `<organization>` and `<project>` with name of your Azure DevOps organization and project.
 
     If you don't have the **azure-devops** Azure CLI extension, you'll be prompted to install it.
 

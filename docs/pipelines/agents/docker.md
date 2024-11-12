@@ -21,7 +21,7 @@ To run your agent in Docker, you'll pass a few [environment variables](#environm
 
 This feature requires agent version 2.149 or later.
 Azure DevOps 2019 didn't ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
+However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
 
 ::: moniker-end
 
@@ -339,7 +339,7 @@ Next, create the Dockerfile.
 
     AZP_AGENT_PACKAGES=$(curl -LsS \
         -u user:$(cat "${AZP_TOKEN_FILE}") \
-        -H "Accept:application/json;" \
+        -H "Accept:application/json" \
         "${AZP_URL}/_apis/distributedtask/packages/agent?platform=${TARGETARCH}&top=1")
 
     AZP_AGENT_PACKAGE_LATEST_URL=$(echo "${AZP_AGENT_PACKAGES}" | jq -r ".value[0].downloadUrl")

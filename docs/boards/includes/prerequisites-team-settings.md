@@ -3,7 +3,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 04/24/2023
+ms.date: 07/30/2024
 ---
 
 
@@ -11,19 +11,13 @@ ms.date: 04/24/2023
 
 ::: moniker range="azure-devops"
 
-* To configure team settings, you must be added to the Team Administrator role or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-* You must be assigned **Basic** access or higher to exercise all backlog and board features. 
-  Users with **Stakeholder** access can only edit work items on the board and add existing tags to a work item. Stakeholders can't add work items or update fields displayed on cards. 
-  For more information, see [About access levels](../../organizations/security/access-levels.md#access-level-settings).
+- **[Access levels](../../organizations/security/access-levels.md):** Have at least **Basic** access.
+- **Permissions:** To configure team settings, be part of the **Project Administrators** security group or [have the **Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
-* To configure team settings, you must be added to the Team Administrator role or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-* You must be assigned **Basic** access or higher to exercise all backlog and board features. Users with **Stakeholder** access can only edit work items on the board and add existing tags to a work item. Stakeholders can't do the following tasks. For more information, see [About access levels](../../organizations/security/access-levels.md#access-level-settings).
-  * Add work items to a board
-  * Drag-and-drop work items to update status or reorder cards
-  * Update fields displayed on cards 
+ - **[Access levels](../../organizations/security/access-levels.md):** Have at least **Basic** access.
+- **Permissions:** To configure team settings, be part of the **Project Administrators** security group or [have the **Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
 ::: moniker-end

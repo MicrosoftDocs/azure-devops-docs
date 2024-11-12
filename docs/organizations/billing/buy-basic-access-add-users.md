@@ -30,15 +30,15 @@ Visual Studio subscribers get access included with their subscription, and their
 
 Ensure you have the following items in place:
 
-* You must have [licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)
-* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+* [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
+* **Licensing:** Have [licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)
 
 ## Pay via Azure
 
 Complete the following steps to pay via Azure.
 
 1. [Create an Azure DevOps organization](../accounts/create-organization.md), even if you don't intend to use it.
-2. [Set up billing](set-up-billing-for-your-organization-vs.md) using an Azure subscription and add users or buy CI/CD.
+2. [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) using an Azure subscription and add users or buy CI/CD.
 3. Assign licenses to users.
 
 You're entitled to the same number of user licenses to be used in the server.
@@ -51,7 +51,7 @@ You're entitled to the same number of user licenses to be used in the server.
 
 Ensure you have the following items in place:
 
-* [Billing is set up](set-up-billing-for-your-organization-vs.md) for your organization
+* [Billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization
 * You have permissions allocated as [an organization Owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md)
 
 <a name="buy-access-vs-marketplace"></a>
@@ -147,7 +147,7 @@ For more information, see [multi-organization billing FAQs](./billing-faq.yml). 
 
 ## Related articles
 
-* [Set up billing](set-up-billing-for-your-organization-vs.md)
+* [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing)
 * [Change your Azure subscription for billing](change-azure-subscription.md)
 * [Learn about Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

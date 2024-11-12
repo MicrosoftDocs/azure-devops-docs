@@ -60,9 +60,9 @@ YAML pipelines can have different versions of the pipeline in different branches
 
 ## Classic release pipelines
 
-[Continuous deployment triggers](../release/triggers.md#release-triggers) help you start classic releases after a classic build or YAML pipeline completes.
+[Continuous deployment triggers](../release/triggers.md#continuous-deployment-triggers) help you start classic releases after a classic build or YAML pipeline completes.
 
-[Scheduled release triggers](../release/triggers.md#scheduled-triggers) allow you to run a release pipeline according to a schedule.
+[Scheduled release triggers](../release/triggers.md#scheduled-release-triggers) allow you to run a release pipeline according to a schedule.
 
 [Pull request release triggers](../release/triggers.md) are used to deploy a pull request directly using classic releases.
 

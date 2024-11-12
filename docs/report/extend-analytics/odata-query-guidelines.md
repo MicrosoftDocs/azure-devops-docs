@@ -100,7 +100,7 @@ Queries that violate an OData error rule results in a failed response with a 400
 
 ### ✔️ DO limit the query to the project(s) you have access to
 
-If your query targets data from a project you don't have access to, the query returns a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. To learn more, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
+If your query targets data from a project you don't have access to, the query returns a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. For more information, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
 
 If you don't have access to a project, the following message displays: 
 
@@ -224,7 +224,7 @@ For example, the following query gets the number of work items as by date to obs
 >     groupby((DateSK), aggregate($count as Count))
 > ```
 
-To learn more about aggregations, see [Aggregate data](aggregated-data-analytics.md).
+For more information about aggregations, see [Aggregate data](aggregated-data-analytics.md).
 
 <a id="restrict-aggregate-snapshot"> </a>
 
@@ -475,7 +475,7 @@ Whatever your approach is, run both queries multiple times. For example, run the
 
 By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, ask the service to summarize data server-side and return a smaller response than what you can fetch by applying the same function client-side. Finally, Analytics is optimized for this type of queries, so make use of it. 
 
-To learn more, see [Aggregate data](aggregated-data-analytics.md).
+For more information, see [Aggregate data](aggregated-data-analytics.md).
 
 <a id="specify-columns"> </a>
 

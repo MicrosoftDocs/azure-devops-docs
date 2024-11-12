@@ -36,14 +36,14 @@ With a Delivery Plan, you gain a tailor-made view across several teams and their
 
 ::: moniker range="azure-devops"  
 
-When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
+When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. For more information about Delivery Plans, see [Review team plans](review-team-plans.md).
 
 :::image type="content" source="media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"  
 
-When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../plans/review-team-plans.md).
+When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. For more information about Delivery Plans, see [Delivery Plans](../plans/review-team-plans.md).
 
 <img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" />
 ::: moniker-end 
@@ -111,7 +111,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 > [!TIP]
 > When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team is higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
-To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
+For more information about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
 
 
 <a id="dashboards">  </a>
@@ -141,7 +141,7 @@ Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-r
 - New features (New or Proposed)
 - Features being actively worked (In Progress or Active)
 
-Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
+Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. For more information about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
 
 ### Technical debt, bug debt, and activity dashboard 
 

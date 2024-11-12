@@ -38,7 +38,7 @@ Each view supports the following tasks:
 	> [!div class="mx-imgBorder"]  
 	> ![Open Tools>Options>Work Items](media/set-vs-experience/option-vs-options-work-items.png)
 
-To learn more about **Options**, see [Options Dialog Box (Visual Studio)](/visualstudio/ide/reference/options-dialog-box-visual-studio).
+For more information about **Options**, see [Options Dialog Box (Visual Studio)](/visualstudio/ide/reference/options-dialog-box-visual-studio).
 
 ## New Git tool experience
 

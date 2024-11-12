@@ -8,9 +8,10 @@ ms.service: azure-devops-boards
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/11/2023
+ms.date: 10/03/2024
 ---
 
 # Expedite work using swimlanes
@@ -23,17 +24,17 @@ Your board helps you visualize the flow of work as it moves from defined to comp
 
 ## Types of swimlanes  
 
-You can use up to 50 swimlanes to sort work on your board to track items that you differentiate as follows: 
-*	High priority items  
-*	Service-level class  
-*	Date-driven requirement  
-*	Dependency for or from another team   
-*	Blocked items  
-*	Technical debt or other engineering work that's not a specific user story  
+You can use up to 50 swimlanes to sort work on your board and track items differentiated by the following categories:
+- High priority items
+- Service-level class
+- Date-driven requirements
+- Dependencies for or from another team
+- Blocked items
+- Technical debt or other engineering work that isn't a specific user story
 
 ## Track work in swimlanes  
 
-You can drag items into a swimlane, and also reorder them within the lane.  
+You can drag items into a swimlane and reorder them within the swimlane. 
 
 > [!TIP]  
 > - Enter `o` to expand all swimlanes and `u` to collapse all swimlanes. To move the focus up or down, enter the `↑↓` up/down arrows. For more information, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
@@ -43,7 +44,7 @@ You can drag items into a swimlane, and also reorder them within the lane.
 > ![Screenshot of board and dragging items into a swimlane.](media/expedite/swimlanes-move-item.png)
 
 > [!NOTE]
-> The default lane appears unlabeled on the board. You can rename it to anything you like, but, you can't delete it or apply rules.
+> The default lane appears unlabeled on the board. You can rename it, but you can't delete it or apply rules to it.
 
 You can also focus on a single swimlane by collapsing all other lanes.
 
@@ -54,7 +55,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 	
 ## Add or remove a swimlane 
 
-*Which swimlanes support your tracking needs?* Once you identify a few, add them to your  board.
+Identify the swimlanes that support your tracking needs and add them to your board.
 
 ::: moniker range="azure-devops"
 
@@ -67,7 +68,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 3. Choose **Swimlanes**, choose **Add swimlane**, and then enter the name of the swimlane you want to add. For example, here we enter *Expedite*. You can optionally select the more actions icon :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to insert a new swimlane above or below another swimlane.
 
 	> [!NOTE]  
-	> The following images show the user interface that displays when the **New Boards Hub** preview feature is enabled. Some features are only available when the **New Boards Hub** is enabled as described in [Key concepts and work item tasks in Azure Boards](../work-items/quick-ref.md). For example, the ability to choose the swimlane color is only supported when the **New Boards Hub** feature is enabled. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md).
+	> The following images show the user interface when the **New Boards Hub** preview feature is enabled. Some features are only available with the **New Boards Hub**, as described in [Key concepts and work item tasks in Azure Boards](../work-items/quick-ref.md). For example, choosing the swimlane color is only supported when the **New Boards Hub** feature is enabled. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 	:::image type="content" source="media/expedite/add-swimlane-new-board-hubs-enabled.png" alt-text="Screenshot of board Settings, Swimlane tab, Add swimlane.":::
 
@@ -97,14 +98,14 @@ You can also focus on a single swimlane by collapsing all other lanes.
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot showing board settings dialog, Add a swimlane.](media/expedite/settings-swimlanes-add.png)  
 
-	The default lane appears unlabeled on the board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the board. 
+	The default lane appears unlabeled on the board. You can rename it to anything, but you can't delete it. Also, you can rename it directly from the board. 
     
 4. To reorder your swimlanes, grab the lane and move it up or down.   
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing board settings dialog, Reorder a swimlane.](media/expedite/swimlanes-reorder.png)  
 
-5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove**. 
+5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Remove**. 
 	
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing board settings dialog, Remove a swimlane.](media/expedite/swimlanes-remove.png)  
@@ -115,16 +116,19 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ## Set up swimlane rules
 
-Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your  board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it gets placed into that lane.
+Swimlane rules are similar to style rules but allow you to set conditions on your board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign a work item, it gets placed into that person's lane.
 
-Swimlane rules get executed in order, so once the rule is met, it executes and moves on to the next work item. For example, Lane 1 has a rule that says "where priority = 1" and Lane 2 has a rule that says "where priority = 2". If the work item is set to priority = 1, it gets moved into Lane 1.
+Swimlane rules are executed in order. Once a rule is met, it executes and moves on to the next work item. For example, if Lane 1 has a rule that says "where priority = 1" and Lane 2 has a rule that says "where priority = 2", a work item with priority = 1 gets moved into Lane 1.
 
 The following limits apply to swimlanes:
 - Up to five rules per lane
-- Max of 25 rules total
-- Only `AND` rules are supported
+- A maximum of 25 rules in total
+- Only `AND` conditions are supported
 
-Complete the following steps to set up swimlane rules for your board.
+> [!NOTE]
+> Manual movement of items into these lanes is restricted to ensure consistency with the configured rules. To move items into a swimlane with configured rules, ensure that the items meet the criteria defined in the swimlane rules. Adjust the item properties accordingly so that they automatically move into the correct swimlane.
+
+Do the following steps to set up swimlane rules for your board.
 
 1. From your board, choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to **Configure board settings**.
 

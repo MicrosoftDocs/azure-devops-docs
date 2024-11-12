@@ -7,7 +7,7 @@ ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 03/31/2022
+ms.date: 08/08/2024
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-azurecli
@@ -25,32 +25,32 @@ For PR guidelines and management considerations, see [About pull requests](about
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+- **Access:**
+  - **Basic access:** To view or review PRs, you must be a member of an Azure DevOps project with at least Basic access.
+  - **Stakeholder access:** For public projects, users granted Stakeholder access have full access to Azure Repos.
+- **Permissions:**
+  - **Repos enabled:** Repos must be enabled on your project. If the Repos hub and associated pages don’t display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+  - **Project membership:**
+    - If you don’t have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
+    - If you aren’t a project member, [get added](../../organizations/accounts/add-organization-users.md).
+  - **Readers security group:** To contribute to a PR, you must be a member of the Readers security group or have the corresponding permissions.
+  - **Contributors security group:** To create and complete a PR, you must be a member of the Contributors security group or have the corresponding permissions.
+- **Tools:**
+  - **Azure DevOps CLI:** You can create and manage PRs from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+    - Azure Repos CLI commands for PRs use [`az repos pr`](/cli/azure/repos/pr). 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-- To create and complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+- **Access:**
+    - **Basic access:** To view or review PRs, you must be a member of an Azure DevOps project with at least Basic access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- **Permissions:**
+  - **Repos enabled:** Repos must be enabled on your project. If the Repos hub and associated pages don’t display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+  - **Readers security group:** To contribute to a PR, you must be a member of the Readers security group or have the corresponding permissions.
+  - **Contributors security group:** To create and complete a PR, you must be a member of the Contributors security group or have the corresponding permissions.
 ::: moniker-end
 
-
-
-- To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
-
-::: moniker range="azure-devops"
-- You can create and manage PRs from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
-
-::: moniker-end
+For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 <a name="create-a-new-pull-request"></a>
 

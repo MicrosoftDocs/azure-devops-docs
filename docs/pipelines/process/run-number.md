@@ -24,10 +24,10 @@ In YAML pipelines, the build name property is called `name` and must be at the r
 >[!NOTE]
 >The `name` property doesn't work in template files. 
 
-The following example code outputs a customized build number like **project_def_master_20240828.1**.
+The following example code outputs a customized build number like **project_def_master_202408281**.
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
 
 steps:
   - script: echo '$(Build.BuildNumber)'
@@ -60,7 +60,7 @@ Consider the following data for a build run:
 If you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
 ```yaml
-$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:.r)
+$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 ```
 
 ## Tokens
@@ -109,7 +109,7 @@ In the preceding example, the first four variables are predefined. For informati
 
 ### How large can a run number be, and what characters can I use?
 
-Run numbers can be up to 255 characters. You can't use the characters `"`, `/`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, or `*`, and you can't end the number with `.`.
+Run numbers can be up to 255 characters. You can't use the characters `"`, `/`, `\`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, or `*`, and you can't end the number with `.`.
 
 ### What time zone are the build number time values expressed in?
 
@@ -143,7 +143,7 @@ variables:
     ${{ else }}:
       value: other
 
-name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd).$(Rev:.r)
+name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd).$(Rev:r)
 
 pool:
   vmImage: 'ubuntu-latest'

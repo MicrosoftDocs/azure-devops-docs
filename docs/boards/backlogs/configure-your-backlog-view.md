@@ -27,7 +27,7 @@ Each backlog&mdash;product or portfolio&mdash;is a tool you share with your team
 To effectively perform select tasks, it's good to know how to set your view options to support those tasks.  
 
 > [!TIP]  
-> You can't sort your backlog on a column. To view a sorted listed, select **Create query** from your backlog. Save and open the query. Modify the query if needed to be a flat list query. You can then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+> You can't sort your backlog on a column. To view a sorted listed, select **Create query** from your backlog. Save and open the query. Modify the query if needed to be a flat list query. You can then sort the query results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 
 ## Backlog configuration options
@@ -96,7 +96,7 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
 
       - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story Points**, **Effort**, or **Size**.   
 
-      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
       - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column. 
           
@@ -119,7 +119,7 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
 
       - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story Points**, **Effort**, or **Size**.   
 
-      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
       - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column. 
 
@@ -190,7 +190,7 @@ If your team follows Agile or Scrum methods, they'll want to prioritize the back
 	To reorder a backlog, you must have **Basic** or higher level access. If you have Stakeholder access, you can't reorder backlog items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 > [!NOTE]  
-> Changes you make to the priority impact all backlog items. When other team members refresh their backlog, they'll see the new priorities. A background process updates the [**Stack Rank** (Agile, Basic, and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. The priority ranking is assigned separately to each backlog level, which you can check by adding the field to a backlog and viewing a hiearchical list. 
+> Changes you make to the priority impact all backlog items. When other team members refresh their backlog, they'll see the new priorities. A background process updates the [**Stack Rank** (Agile, Basic, and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. The priority ranking is assigned separately to each backlog level, which you can check by adding the field to a backlog and viewing a hierarchical list. 
  
 Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:  
 - [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)

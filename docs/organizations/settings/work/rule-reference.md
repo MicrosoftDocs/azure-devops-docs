@@ -65,7 +65,7 @@ Default rules and behaviors that govern these fields include:
 1. These rules are needed when a work item type has custom states, or the work item type is a custom work item type.
 1. These rules only apply to inherited processes; they are never generated for the Hosted XML or On-premises XML processes. 
 
-Workflow states are associated with state categories to support the workflow on boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
+Workflow states are associated with state categories to support the workflow on boards. For more information, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
  
 
 ### State Change Date field rules
@@ -198,7 +198,7 @@ The On-premises XML process defines rules using XML elements. All of these rule 
 
 When you want a rule to apply to a field throughout the life of the work item, specify it within the `FIELD` section. For example, a field that is required for a bug that is new and active remains required until the bug is closed. Otherwise, if you want it applied based on a change in State, Reason, or transition, specify it within the `WORKFLOW` section.
 
-**State** (System.State) and **Reason** (System.Reason) fields are defined within the `WORKFLOW` section. You can specify most field rules to apply to a field during a change of state, selection of a reason, or for a specific transition. To learn more, see [Change the workflow for a work item type](../../../reference/add-modify-wit.md).
+**State** (System.State) and **Reason** (System.Reason) fields are defined within the `WORKFLOW` section. You can specify most field rules to apply to a field during a change of state, selection of a reason, or for a specific transition. For more information, see [Change the workflow for a work item type](../../../reference/add-modify-wit.md).
  
  
 Otherwise, specify a rule to be evaluated only during a change in state. These rules are defined within the `WORKFLOW` section under the `STATE`, `REASON`, or `TRANSITION` elements. All rules, except for `HELPTEXT`, can be applied within a `FIELD` (Workflow) element.
@@ -840,7 +840,7 @@ You can restrict application of a rule based on the current user's membership. W
 
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md). 
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](rule-reference.md). 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -951,7 +951,7 @@ Examples of tokens include the following:
 - [*CollectionName*], such as [fabrikam], [myorganization] 
 
 
-To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
+To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. For more information, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
 [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md). 
 
 :::image type="content" source="media/rules/permissions-group-scope.png" alt-text="Screenshot of filtered Permissions groups list.":::
@@ -985,7 +985,7 @@ Examples of tokens include the following:
 > [!NOTE]    
 > [Project], [GLOBAL], and [Team Foundation] are used as is. You don't replace them with the name of the project, collection, or server name. 
 
-To learn about the scopes available for your project or collection, go to the **Project Settings>Permissions>Groups** or **Collection Settings>Permissions>Groups** page. Filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
+To learn about the scopes available for your project or collection, go to the **Project Settings>Permissions>Groups** or **Collection Settings>Permissions>Groups** page. Filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. For more information, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
 [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md). 
 
 :::image type="content" source="media/rules/permissions-group-scope.png" alt-text="Screenshot of filtered Permissions groups list.":::

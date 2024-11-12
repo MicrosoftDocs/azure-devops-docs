@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/28/2023
+ms.date: 08/08/2024
 ---
 
 # Search packages across your feeds
@@ -19,15 +19,13 @@ Finding the right package for your project can be challenging, especially when t
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-
-- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-feed), if you don't have one already.
+- **Azure DevOps organization and project:** Ensure you have an organization and a project. If you don't have one, create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project).
+- **Azure Artifacts feed:** Make sure you have an Azure Artifacts feed. If you don't have one, [create a feed](../../artifacts/get-started-nuget.md#create-feed).
 
 ## Search packages
 
-1. Sign in to your project (```https://dev.azure.com/{your_organization}/{your_project}```).
-2. **Enter** "package" in the search box.
-
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
+2. Enter `package` in the search box.
 3. Select from the dropdown menus to search by feeds, views, or package types.
 
 	:::image type="content" source="media/shared/package-search-results-filters.png" alt-text="Screenshot showing the filter panel options.":::
@@ -70,8 +68,6 @@ Using upstream sources, you can consume packages from public registries and othe
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What are feeds?](../../artifacts/concepts/feeds.md)
-> [What are feed views?](../../artifacts/concepts/views.md)
 > [Promote a package to a view](../../artifacts//feeds/views.md)
 
 ## Related articles

@@ -14,7 +14,7 @@ ms.date: 06/22/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
-After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks to ensure you set up your organization or collection to get maximal use of your services. 
+After you create an organization or project collection, add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks to ensure you set up your organization or collection to get maximal use of your services. 
 
 ::: moniker range="azure-devops"
 Each organization is associated with one and only one collection. If you need to create another organization, see [Plan your organizational structure](plan-your-azure-devops-org-structure.md) and [Create an organization](../organizations/accounts/create-organization.md).
@@ -76,7 +76,7 @@ Azure DevOps charges for the following services as described in [Pricing for Azu
  
 All organizations are granted five free **Basic** licenses and unlimited users with **Stakeholder** access. For information on each access level, see [About access levels](../organizations/security/access-levels.md). 
 
-If your organization requires more than five contributors, then you need to set up billing. Users that have a Visual Studio subscription can be added without incurring any further billing charges. Billing is based on the access level, **Basic** or **Basic + Test Plans**, that you assign to the user. For more information, see [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).  
+If your organization requires more than five contributors, then you need to set up billing. Users that have a Visual Studio subscription can be added without incurring any further billing charges. Billing is based on the access level, **Basic** or **Basic + Test Plans**, that you assign to the user. For more information, see [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing).  
 
 ::: moniker-end
 
@@ -95,13 +95,13 @@ For more information about security and setting permissions at the collection-le
 ### Add members to the Project Collection Administrators group 
 
 ::: moniker range="azure-devops"
-When you create an organization, you become a member of the Project Collection Administrators group. This group has the authority to manage the organization’s settings, policies, and processes. It can also create and manage all the projects and extensions in the organization. 
+When you create an organization, you become a member of the **Project Collection Administrators** group. This group has the authority to manage the organization’s settings, policies, and processes. It can also create and manage all the projects and extensions in the organization. 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-The person who creates a project collection is automatically added as a member to the Project Collection Administrators group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
+The person who creates a project collection is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
 ::: moniker-end
 
-It's always a good idea to have more than one person who has administrative privileges. To add a user to this group, see [Change permissions at the organization level,Add members to the Project Collection Administrators group](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-collection-administrators-group).
+It's always a good idea to have more than one person who has administrative privileges. [Look up a **Project Collection Administrator**](../organizations/security/look-up-project-collection-administrators.md) and then ask them to add you to the group.
 
 <a id="project-scoped-user-group"></a> 
 
@@ -146,9 +146,9 @@ Users and groups who are added to the **Project-Scoped Users** group can only se
 To limit the identity selection to only users and groups added to a project, perform the following procedure for your organization and projects. 
 
 1. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../project/navigation/preview-features.md).  
-2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
+2. Add the users to your project as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
 3. Open **Organizations settings** > **Security** > **Permissions** and choose **Project-Scoped Users**. Select the **Members** tab. 
-4. Add all users and groups that you want to scope to the project(s) they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
+4. Add all users and groups that you want to scope to the project they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is turned on. 
 
 ::: moniker-end  
@@ -158,7 +158,7 @@ To limit the identity selection to only users and groups added to a project, per
 ### Set security policies
 
 Configure the security policies for your organization through the **Organization settings>Policies** page. These policies let you grant or restrict the following features: 
-- Third-party application access via OAuth 
+- Non-microsoft application access via OAuth 
 - SSH authentication
 - Creation of public projects
 - Invitation of GitHub user accounts
@@ -186,7 +186,7 @@ You want to tell your users about extensions and that they can [request an exten
 
 Code Search is a free Marketplace extension that lets you search across all your source repositories. For more information, see [Install and configure Search](../project/search/install-configure-search.md).
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 ### Turn on Analytics
 
@@ -217,8 +217,6 @@ Use the following settings, which get defined at the organization-level, to supp
 	- [Gravatar images](../repos/git/repository-settings.md#gravatar-images).
  
 ## Customize work-tracking processes
-
-::: moniker range=">= azure-devops-2019"
   
 All work-tracking tools are available immediately after you create a project. Often, one or more users might want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you might want to establish a methodology for who manages the updates and evaluates requests.
 
@@ -228,16 +226,9 @@ For more information, see the following articles:
 - [Customize a project](../organizations/settings/work/customize-process.md)  
 - [Add and manage processes](../organizations/settings/work/manage-process.md)
 
-::: moniker-end  
-
-
- 
-::: moniker range=">= azure-devops-2019"
-
 ## Alert users with information banners
 
 Communicate with your Azure DevOps users quickly through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending mass emails. For more information, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
-::: moniker-end 
 
 ## Review and update notifications
 

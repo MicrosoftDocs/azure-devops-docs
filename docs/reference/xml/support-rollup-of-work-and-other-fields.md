@@ -1,6 +1,6 @@
 ---
 title: Support rollup of work and other fields
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Provides summed values of select fields for all child work items of a parent.
 ms.service: azure-devops-boards
 ms.custom: process, archive-candidate
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 09/16/2024
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Rollup provides summed values of select fields for all child work items of a parent. Because Azure DevOps Services and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
+Rollup provides summed values of selected fields for all child work items of a parent. Since Azure DevOps supports multiple levels of nesting, ensure you don't double-count values during rollup. Project managers typically seek rollup for estimated or completed work, effort, size, or story points.
   
 > [!NOTE]    
 > The system doesn't support rollup of the Effort, Story Points, or Size fields across product backlogs and portfolio backlogs.
@@ -34,7 +34,7 @@ From any product or portfolio backlog, you can add rollup progress bars, counts 
 
 [!INCLUDE [temp](../../boards/includes/display-progress-bars.md)]
 
-To learn more, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
+For more information, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 
 ### View rollup within sprint Planning pane
 
@@ -43,7 +43,7 @@ As you assign backlog items to a sprint using the Planning pane, the sprint wind
 > [!div class="mx-imgBorder"]
 > ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](../../boards/sprints/media/assign-items-sprint/sprint-window-effort.png)   
 
-*Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. To learn more, see [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md).
+*Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. For more information, see [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md).
 
 ### View rollup of sprint backlogs and taskboards 
 
@@ -96,7 +96,7 @@ From a sprint task board, there are three types of rollup:
 
 
 
-When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. To learn more, see [Task board](../../boards/sprints//task-board.md).
+When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. For more information, see [Task board](../../boards/sprints//task-board.md).
 
 ## Other tools that support rollup 
 
@@ -122,7 +122,7 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 ## Work item query charts and rollup
 
-You can create a flat list query that sums the values of a field you specify. To learn more, see [Track progress by creating status and trend query-based charts](../../report/dashboards/charts.md). Charts support a count of work items or a sum of a field. 
+You can create a flat list query that sums the values of a field you specify. For more information, see [Track progress by creating status and trend query-based charts](../../report/dashboards/charts.md). Charts support a count of work items or a sum of a field. 
 
 For example, here we show a pivot table that sums the story points for user stories by area path and work item state. 
  
@@ -131,9 +131,9 @@ For example, here we show a pivot table that sums the story points for user stor
   
 ## Microsoft Excel and rollup of work tracking data 
 
-You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  To learn more about Excel integration, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
+You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  For more information about Excel integration, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
   
-To learn more about Excel macros, see [Automate tasks with the Macro Recorder](https://support.office.com/article/Automate-tasks-with-the-Macro-Recorder-974ef220-f716-4e01-b015-3ea70e64937b).  
+For more information about Excel macros, see [Automate tasks with the Macro Recorder](https://support.office.com/article/Automate-tasks-with-the-Macro-Recorder-974ef220-f716-4e01-b015-3ea70e64937b).  
 
 > [!TIP]
 > To provide support for opening work items and query results in Excel from the web portal, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
@@ -193,7 +193,7 @@ If you need to add reports to your on-premises TFS deployment, see [Add reports 
   
     If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
   
-    To learn more about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).  
+    For more information about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).  
   
 - Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.    
 - Determine if you want to make rollup values read-only on the work item form. By making them read-only you prevent users from entering inaccurate data. You make fields read-only using the `Control` field `Readonly` attribute.  

@@ -6,41 +6,41 @@ description: Learn how to rename your project, including tasks you need to compl
 ms.subservice: azure-devops-projects
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/29/2023
+ms.date: 11/11/2024
 ---
 
 # Rename a project in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Renaming a project in Azure DevOps updates the project name in version control paths, work items, queries, and other project artifacts. You can rename a single project multiple times, and use old names. Post-rename, some [actions may be required from team members](#required-user-actions-for-working-with-the-renamed-project).
+Renaming a project in Azure DevOps updates the project name in version control paths, work items, queries, and other project artifacts. You can rename a single project multiple times, and use old names. Some [actions might be required from team members](#required-user-actions-for-working-with-the-renamed-project) after you rename the project.
 
 > [!WARNING]
-> GitHub Copilot: Upon renaming a project, Azure DevOps notifies all project members via email if the user count is less than 1,000. For projects with more than 1,000 users, only Project Collection Administrators receive these notifications.
+>- Upon renaming a project, Azure DevOps notifies all project members via email if the user count is less than 1,000. For projects with more than 1,000 users, only Project Collection Administrators receive these notifications.
 >
->Workload identity federation: Renaming a project will break workload identity federation subjects in Azure Resource Manager service connections. 
+>- Renaming a project breaks workload identity federation subjects in Azure Resource Manager service connections. 
 
 ## Prerequisites
 
 ::: moniker range="azure-devops" 
 
-- You must be a member of the **Project Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
+- **Permissions**: Be a member of the Project Administrators group or have the project-level **Rename team project** permission set to *Allow*. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"  
 
-- You must be a member of the **Project Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
+- **Permissions:** Be a member of the Project Administrators group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
 
 ## Rename a project
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```), and then open the project that you want to rename.
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
 2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
 

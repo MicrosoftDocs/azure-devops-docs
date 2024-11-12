@@ -288,8 +288,8 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Delay task](/azure/devops/pipelines/tasks/reference/delay-v1)
 * [Invoke Azure Function task](/azure/devops/pipelines/tasks/reference/azure-function-v1)
 * [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
-* [Manual Validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v0)
-* [Publish To Azure Service Bus task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)
+* [Manual Validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1)
+* [Publish To Azure Service Bus task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v2)
 * [Query Azure Monitor Alerts task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1)
 * [Query Work Items task](/azure/devops/pipelines/tasks/reference/query-work-items-v0)
 
@@ -594,7 +594,7 @@ Timeouts have the following level of precedence.
 From a single job you author, you can run multiple jobs on multiple agents in parallel. Some examples include:
 
 * **Multi-configuration builds:** You can build multiple configurations in parallel. For
-  example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. To learn more, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
+  example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. For more information, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
 
 * **Multi-configuration deployments:** You can run multiple deployments
    in parallel, for example, to different geographic regions.

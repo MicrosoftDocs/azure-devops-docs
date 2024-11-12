@@ -7,7 +7,7 @@ ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 02/22/2022
+ms.date: 10/24/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -15,29 +15,41 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-With an organization, you gain access to Azure DevOps Services, where you can do the following tasks:
+With an organization in Azure DevOps Services, you can do the following tasks:
 
-* Collaborate with others to develop applications by using our cloud service
-* Plan and track your work and code defects and issues
-* Set up continuous integration and deployment
-* Integrate with other services by using service hooks
-* Obtain more features and extensions
-* Create one or more projects to segment work
+- **Collaborate**: Work with team members to develop applications using our cloud service.
+- **Plan and track**: Manage your work, track code defects, and address issues efficiently.
+- **Use continuous integration and deployment**: Set up automated builds and deployments to streamline your development process.
+- **Integrate**: Connect with other services using service hooks for seamless workflows.
+- **Enhance**: Access other features and extensions to extend the capabilities of Azure DevOps.
+- **Organize**: Create one or more projects to segment and manage your work effectively.
+
+By using these capabilities, you can enhance your development process and improve collaboration within your team.
 
 > [!NOTE]
 > If you're just getting started, see [Get started managing your organization](../../user-guide/manage-organization-collection.md). For information about managing an on-premises Azure DevOps Server, see [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
 
 ## Prerequisites
 
-Before you can manage an organization, do the following tasks: 
+To effectively manage an organization, ensure the following tasks are complete: 
+
+**Organization:**
 - [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md) in Azure DevOps Services.
-- [Create your organization](create-organization.md) and invite others, so they have access.
+- [Create your organization](create-organization.md) and invite team members and grant them access.
 
 ## Connect to your organization
 
-Once you've created your organization, you can [connect to your projects](../../organizations/projects/connect-to-projects.md) with tools like Xcode, Eclipse, or Visual Studio, and then add code to your project.
+Once you create your organization, you can [connect to your projects](../../organizations/projects/connect-to-projects.md) with tools like Xcode, Eclipse, or Visual Studio, and then add code to your project.
 
-Some clients, like Xcode, Git, and NuGet, require basic credentials (a username and password) to access Azure DevOps. To connect these clients to Azure DevOps, create personal access tokens (PATs) to authenticate your identity. Then, you can use a credential manager to create, store, and secure your tokens. This way, you don't have to reenter them every time you make updates. Or, if you don't want to use a credential manager, you can [create PATs manually](use-personal-access-tokens-to-authenticate.md).
+Some clients, like Xcode, Git, and NuGet, require basic credentials (a username and password) to access Azure DevOps. To connect these clients to Azure DevOps, you can use one of the following methods:
+
+- **Personal Access Tokens (PATs)**: To authenticate your identity, create PATs. You can use a credential manager to create, store, and secure your tokens, so you don't have to reenter them every time you make updates. If you prefer not to use a credential manager, you can [create PATs manually](use-personal-access-tokens-to-authenticate.md).
+
+- **OAuth**: Use OAuth to generate tokens for accessing Azure DevOps. OAuth tokens provide a more secure and flexible way to authenticate, especially for applications that require access to multiple resources.
+
+- **SSH Keys**: For Git operations, you can use SSH keys to authenticate. SSH keys provide a secure way to connect to your repositories without needing to enter a username and password.
+
+Choose the method that best fits your security and workflow requirements.
 
 <a id="add-users"></a>
 
@@ -49,11 +61,11 @@ You can add and assign an access level to users one-by-one, which is referred to
 
 ### *Access*, *access level*, and *permissions*
 
-Understand the following three key definitions when you manage your user base:
+Understand the following key definitions when managing your user base in Azure DevOps:
 
-* **Access** indicates a user can sign into your organization, and at a minimum view information about your organization.
-* **Access levels** manage access to specific web portal features. Access levels enable administrators to provide their user base access to the features they need and only pay for those features.
-* **Permissions**, granted through security groups, provide and restrict users from completing specific tasks.
+* **Access**: Indicates that a user can sign into your organization and, at a minimum, view information about your organization. Access is the basic level of interaction a user can have with your Azure DevOps environment.
+* **Access levels**: Manage access to specific web portal features. Access levels allow administrators to grant users access to the features they need while only paying for those features. For example, users with Basic access can contribute to projects, while users with Stakeholder access can only view and provide feedback.
+* **Permissions**: Permissions provide or restrict users from completing specific tasks, which are granted through security groups. Permissions control which actions users can perform within the organization, such as creating projects, editing work items, or managing repositories. By assigning users to different security groups, you can tailor their permissions to match their roles and responsibilities.
 
 For an overview of default assignments, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
@@ -63,19 +75,18 @@ For an overview of default assignments, see [Default permissions and access for 
 
 If you don't manage your user base with Microsoft Entra ID, as described in the next section, then you can add users through the following ways:
 
-* Add users to your organization from the **Organization settings > Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level. Specify the access level and the project(s) the user gets added to. For more information, see [Add users to your organization or project](add-organization-users.md).
+* **Add users to your organization:** Go to **Organization settings > Users**. Only organization owners or members of the Project Collection Administrator group can add users at this level. Specify the access level and the project the user gets added to. For more information, see [Add users to your organization or project](add-organization-users.md).
 
-* Add users to one or more teams from the **Project > Summary** page or to a specific team from the **Project settings > Teams > Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams.
+* **Add users to a team:** Go to **Project** > **Summary** to add users to one or more teams. Or, go to **Project settings** > **Teams** > **Team** to add users to a specific team. Members of the Project Collection Administrator or Project Administrator groups, or a team administrator, can add users to teams.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Web portal, Project Overview page, Invite new users dialog box](media/org-manage/invite-members-dialog.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot shows Web portal, Project Overview page, Invite new users dialog box.](media/org-manage/invite-members-dialog.png)
   
-   Unless users get granted an access level directly or through a group rule, they're assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization settings > Users** page.
+   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added as a Stakeholder. You can change the access level later via the **Organization settings** > **Users** page.
 
 > [!TIP]
 > If you need more than the free users and services included with your organization,
-[set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md).
-You can then pay for more users with Basic access, buy more services, and purchase extensions for your organization.
+[set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing). This allows you to pay for additional users with Basic access, purchase more services, and acquire extensions for your organization.
 
 For more information about adding users to your organization, see the following articles:
 
@@ -83,29 +94,26 @@ For more information about adding users to your organization, see the following 
 * [Add users to a team](../security/add-users-team-project.md#add-users-to-a-team)
 * [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project)
 
-
-
 <a id="access-azure-ad"></a>
 
 <a name='azure-ad'></a>
 
 ### Microsoft Entra ID
 
-If you manage your users with Microsoft Entra ID, you can connect your organization to Microsoft Entra ID and manage access through Microsoft Entra ID. If you already use Microsoft Entra ID, [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md).
+If you manage your users with Microsoft Entra ID, you can connect your organization to Microsoft Entra ID and manage access through it. If you already use Microsoft Entra ID, [authenticate access to Azure DevOps Services using your directory](access-with-azure-ad.md).
 
-Do the following tasks, to add users through Microsoft Entra ID:
+To add users through Microsoft Entra ID, do the following tasks:
 
-1. [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md). If you need to set up Microsoft Entra ID, do that now.  
-2. Go to [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
-3. [Add organization users to your Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory).  
-4. [Add a Microsoft Entra group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
-5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-by-group-membership.md).
+1. [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
+1. [Add organization users to your Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory) 
+1. [Add a Microsoft Entra group to an Azure DevOps group](manage-azure-active-directory-groups.md)
+1. [Create bulk assignments of access levels for users](add-organization-users.md) or [define group rules and assign access levels](assign-access-levels-by-group-membership.md)
 
 <a id="add-users-notes"></a>
 
 ### Group rules
 
-A best practice is to manage users through security groups. You can use the default security groups, create custom security groups, or reference Microsoft Entra groups. You can use any of these  groups to add and manage user access levels using group rules. For more information, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
+A best practice for managing users is to use security groups. You can utilize default security groups, create custom security groups, or reference Microsoft Entra groups. These groups allow you to add and manage user access levels using group rules. For more information, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
 
 ## Other organization management tasks
 
@@ -163,17 +171,17 @@ A best practice is to manage users through security groups. You can use the defa
    - [Add a team admin](../settings/add-team-administrator.md)
    - [Request an increase in permission levels](../security/request-changes-permissions.md)
    - [Grant or restrict permissions](../security/restrict-access.md)
-   - [Resources granted to project members](../projects/resources-granted-to-project-members.md)
+   - [Understand resources granted to project members](../projects/resources-granted-to-project-members.md)
    
    :::column-end:::
 :::row-end:::
 
 ## Related articles
 
-* [About access levels](../security/access-levels.md)
-* [Default permissions and access](../security/permissions-access.md)
+* [Learn about access levels](../security/access-levels.md)
+* [Understand default permissions and access](../security/permissions-access.md)
 * [Change project-level permissions](../security/change-project-level-permissions.md)
 * [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)
 * [Add a user as a team administrator](../settings/add-team-administrator.md)
-* [About using Microsoft Entra ID to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
+* [Authenticate access to Azure DevOps Services using Microsoft Entra ID](access-with-azure-ad.md)
 * [Troubleshoot permissions and access with Microsoft Entra ID](faq-azure-access.yml)

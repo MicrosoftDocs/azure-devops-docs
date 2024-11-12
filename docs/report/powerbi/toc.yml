@@ -52,7 +52,7 @@ items:
     href: data-connector-connect.md
   - name: Connect using OData queries
     href: odataquery-connect.md
-  - name: Connect using the OData Feed
+  - name: Connect using the OData feed
     href: access-analytics-power-bi.md
   - name: Connect using Advanced Functions
     href: data-connector-functions.md

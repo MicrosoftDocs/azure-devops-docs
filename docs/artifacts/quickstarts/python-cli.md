@@ -84,7 +84,7 @@ Use the following steps to use the sample Python package from GitHub.
 1. From a CLI on your local machine, clone the repository to your local machine using the URL you copied from your forked repository. 
 
     ```Command
-    git clone <REPOSIORY_URL>
+    git clone <REPOSITORY_URL>
     ```
 
 1. Change directory to your cloned repository.
@@ -318,7 +318,7 @@ When you connect to Azure DevOps for the first time, you're prompted for credent
 
     ```
     [global]
-    extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@<FEED_URL>
+    index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@<FEED_URL>
     ```
 
 1. To install your package, run the following command replacing \<PACKAGE_NAME\> with the package name from your feed.

@@ -4,10 +4,10 @@ titleSuffix: Azure DevOps
 description: Learn how to create an organization or project collection with a personal Microsoft account, GitHub account, or work or school account.
 ms.subservice: azure-devops-organizations
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/22/2024
+ms.date: 10/23/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,53 +15,43 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="= azure-devops"
-
-Use an organization to connect groups of related projects, and help to scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Microsoft Entra ID.
-
-::: moniker-end
-
-::: moniker range="= azure-devops"
+Use an organization to connect groups of related projects and help scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Using your work or school account *automatically connects* your organization to your Microsoft Entra ID.
 
 > [!NOTE]
-> All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via [REST API](/rest/api/azure/devops).
+> All organizations must be manually created via the web portal. Automated creation of organizations is not supported. However, we do support automated organization configuration, project creation, and resource provisioning via the [REST API](/rest/api/azure/devops).
 
 <a name="how-sign-up"></a>
 
 ## Prerequisites
 
-* Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
-* Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
-
-::: moniker-end
+* **Authentication:** Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
+* **Planning:** Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
 <a name="SignIn"></a>
 
-::: moniker range="= azure-devops"
+## Create an organization
 
-[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
+1. Sign in to [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137).
 
-[!INCLUDE [create-organization](../../includes/create-organization.md)]
+1. Select **New organization**.
 
-::: moniker-end
+   :::image type="content" source="../../media/select-new-organization.png" alt-text="Screenshot shows New organization button for selection.":::
 
-::: moniker range="< azure-devops"
+1. Enter the name for your organization, select its hosting geography, and then select **Continue**.
 
-## Create a project collection
+   [!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
-A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to those projects.
+   :::image type="content" source="../../media/name-your-organization.png" alt-text="Screenshot shows Creating an organization in Azure DevOps, highlighted Continue button.":::
 
-For more information about how to create a project collection, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops&preserve-view=true#create-a-project-collection).
+   :::image type="content" source="../../media/taking-you-to-your-azure-devops-organization.png" alt-text="Screenshot shows temporary screen taking you to your organization notification.":::
 
-::: moniker-end
+   Congratulations, you're an organization owner!
 
-::: moniker range="azure-devops"
+Sign in to your organization at any time, `https://dev.azure.com/{yourorganization}`.
 
 With your organization, the following aspects are included in the free tier:
 
 [!INCLUDE [free-tier](../../includes/free-tier.md)]
-
-::: moniker-end
 
 ## Next steps
 
@@ -71,8 +61,8 @@ With your organization, the following aspects are included in the free tier:
 ## Related articles
 
 * [Get started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
-* [Rename your organization](rename-organization.md)
+* [Rename an organization](rename-organization.md)
 * [Change organization time-zone](change-organization-location.md)
 * [Change organization owner](change-organization-ownership.md)
-* [Delete your organization](delete-your-organization.md)
+* [Delete an organization](delete-your-organization.md)
 * [Resolve orphaned organization](resolve-orphaned-organization.md)

@@ -54,7 +54,7 @@ Each user's access level or permission assignment controls access to the followi
 
 ### General work item permissions
 
-You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
+You can use work items to track anything you need to track. For more information, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
 
   
 
@@ -235,7 +235,7 @@ You can define and manage team dashboards from the web portal, **Dashboards**. F
 
 ## Power BI Integration and Analytics views
 
-From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md).
+From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. For more information, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md).
 
 You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
 
@@ -246,7 +246,6 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 ## Related articles
 
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
-- [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
 - [Web portal navigation](../../project/navigation/index.md)

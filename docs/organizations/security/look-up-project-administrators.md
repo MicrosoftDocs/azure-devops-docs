@@ -1,43 +1,40 @@
 ---
 title: Find a project administrator
 titleSuffix: Azure DevOps
-description: Quickstart guide to learn who is a member of the Project Administrators group in Azure DevOps
+description: Quickly identify members of the Project Administrators group in Azure DevOps.
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2022
+ms.date: 07/12/2024
 --- 
 
 # Look up a project administrator 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The **Project Administrators** group is the main administrative security group defined for a project. Members of the **Project Administrators** group have permissions to perform the following common tasks:  
+The **Project Administrators** group is the primary administrative security group for a project, with members authorized to do the following tasks:
 
-- Delete and rename the project  
-- Add users and teams to the project
-- Add and manage **Area Paths** and **Iteration Paths** 
-- Add and manage shared query folders  
-- Add members and groups to the **Project Administrators** group or any other project-level group
-- Manage permissions at the project-level or for any object defined for the project.  
+- **Delete or rename** a project
+- **Add users and teams** to a project
+- **Manage Area Paths and Iteration Paths**
+- **Organize shared query folders**
+- **Adjust group memberships**, including adding members to the **Project Administrators** group or other project-level groups
+- **Control permissions** at the project level and for project-defined objects
 
-To add members to the **Project Administrators** group or change a project-level permission see [Change project-level permissions](change-project-level-permissions.md). 
-
-For a description of each project-level group, see [Security groups, service accounts, and permissions, Project-level groups](permissions.md#project-level-groups). To understand how security groups are used to manage permissions, see [Get started with permissions, access, and security groups](about-permissions.md).   
+To add users to the **Project Administrators** group or change a project-level permission see [Change project-level permissions](change-project-level-permissions.md). 
  
 ## Prerequisites
 
-* You must be a member of the **Project Collection Valid Users** group to look up members of the **Project Administrators** group. Users added to a project are automatically added to this group. 
+You must be a member of the **Project Collection Valid Users** group to look up members of the **Project Administrators** group. Users added to a project are automatically added to this group. 
 
-## Show members of the Project Administrators group
+## Identify members of the Project Administrators group
 
-Choose the **Project Administrators** group from the **Project Settings > Permissions** page to see members.  
+Do the following steps to identify members of the **Project Administrators** group.
 
 ::: moniker range="azure-devops"
-
 > [!NOTE]   
 > To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
@@ -47,67 +44,62 @@ Choose the **Project Administrators** group from the **Project Settings > Permis
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
-2. Choose **Project settings**, and then **Permissions**.
+2. Select **Project settings** > **Permissions**.
 
-	![Choose Project settings > Permissions](../settings/media/shared/open-project-settings-permissions-preview.png)
+	![Screenshot showing Choose Project settings > Permissions.](../settings/media/shared/open-project-settings-permissions-preview.png)
 
-3. Choose **Project Administrators** group, and then **Members**.  
+3. Select **Project Administrators** > **Members**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings, Permissions page, Add member](media/project-collection/project-admin-members-tab-s154.png) 
+	> ![Screenshot showing Project Settings, Permissions page, Add member option.](media/project-collection/project-admin-members-tab-s154.png) 
 
-4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Select your match. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](media/project-collection/add-member-project-admin.png)  
 
 	> [!NOTE]   
-	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
-5. Choose **Save**. 
+5. Select **Save**. 
 
 #### [Current page](#tab/current-page) 
 
-1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
-2. Choose **Project Settings**, and then **Security**.
+2. Select **Project settings** > **Security**.
 
-	*To see the full image, click to expand*.
+	[![Screenshot of Project Settings>Security selection.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
-
-3. Choose **Project Administrators** group, and then the **Members** tab.  The list of members is shown.   
+3. Select **Project Administrators** > **Members**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Security, Add member](media/project-level-permissions-add-member.png) 
+	> ![Screenshot of Project Settings>Security, Add member option.](media/project-level-permissions-add-member.png) 
+
+
+The display presents a list of the Project Collection Administrators group's members.
 
 * * *
-
 ::: moniker-end    
 
+::: moniker range="< azure-devops"
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
-1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+2. Select **Project Settings** > **Security**.
 
-2. Choose **Project Settings**, and then **Security**.
+	[![Screenshot shows Project Settings>Security.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-	*To see the full image, click to expand*.
-
-	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
-
-3. Choose the **Members** tab. The list of members is shown. 
+3. Select **Members**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Security tab, Project Administrators Group, Members tab](media/view-permissions-project-level-membership.png) 
 
-::: moniker-end  
+The display presents a list of the Project Collection Administrators group's members.
 
-
-
-
+::: moniker-end
  
 ## Next steps
 

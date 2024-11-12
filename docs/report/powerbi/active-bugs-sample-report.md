@@ -32,7 +32,7 @@ For an overview of Analytics views, see [About Analytics views](what-are-analyti
 ### Power BI prerequisites  
 
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-- To learn more about using Power BI, see [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started).
+- For more information about using Power BI, see [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started).
 
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
@@ -91,7 +91,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
     > ![60 days of history with Daily granularity](media/active-bugs-report/active-bugs-history.png)
 
 	These selections generate a snapshot for each bug and for each week the bug is in a new, proposed, active, or resolved state. 
-    To learn more about these defining trend data options, see [Create an Analytics view, History](analytics-views-create.md#history).
+    For more information about these defining trend data options, see [Create an Analytics view, History](analytics-views-create.md#history).
 
     Choose **Save** to move to the next tab. 
 

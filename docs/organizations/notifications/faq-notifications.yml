@@ -8,9 +8,9 @@ metadata:
   ms.author: chcomley
   ms.subservice: azure-devops-notifications
   author: chcomley
-  ms.date: 07/02/2024
+  ms.date: 09/09/2024
   monikerRange: '<= azure-devops'
-title: Notifications FAQS
+title: FAQs about Notifications
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
@@ -34,7 +34,7 @@ sections:
       - question: |
           Why do some emails have multiple recipients on the To line? 
         answer: |
-          A default or team or group subscription can have multiple recipients, depending on how it's configured. When all users have permission to the resource related to the event, they get combined in one email.
+          A default or team or group subscription can have multiple recipients, depending on how it was configured. When all users have permission to the resource related to the event, they get combined in one email.
           
           Previously, each recipient received an individually addressed email, which could result in the same user getting multiple emails because of their membership in multiple groups.
 
@@ -44,14 +44,42 @@ sections:
           Yes. For more information, see [Use @ mentions in work items and pull requests](at-mentions.md).
 
       - question: |
-          How do subscriptions at one level impact what notifications are sent based on subscriptions on another level? 
+          How do subscriptions at one level affect what notifications are sent based on subscriptions on another level? 
         answer: |
-          Subscriptions made at one level are fully and completely independent of each other. There is no interaction. If you turn something off at the project level but not at the user level, then you get the notification. 
+          Subscriptions made at one level are independent of each other. There's no interaction. If you turn off something at the project level but not at the user level, then you get the notification. 
 
       - question: |
           Is it possible to translate notification messages in Azure DevOps? Even though my profile is in a different language, the email messages arrive in English.
         answer: |
           No. You can't customize the language of notification messages via Azure DevOps. Consider [integrating with a custom application or service](../../integrate/index.md?view=azure-devops) to achieve your desired results.
+
+      - question: |
+          How can I troubleshoot @mentions that are denied due to permissions?
+        answer: |
+          If you encounter issues with @mentions being denied due to permissions, follow these steps:
+          
+          - **Check user permissions:**
+             - Ensure that the user you're trying to mention has the necessary permissions to access the work item or pull request.
+             - Users must have at least **Basic** access level to be mentioned in work items and pull requests.
+          - **Check project membership:**
+             - Verify that the user is a member of the project. Only project members can be mentioned using the @mention control.
+             - To add a user to the project, go to **Project settings** > **Permissions** > **Members** and add the user.
+          - **Check group membership:**
+             - Ensure that the group you're trying to mention has the necessary permissions to access the work item or pull request.
+             - Groups must have at least **Basic** access level to be mentioned in work items and pull requests.
+          - **Check group settings:**
+             - Verify that the group is correctly configured in Microsoft Entra ID.
+             - Ensure that the group is added to the project. To add a group to the project, go to **Project Settings** > **Permissions** > **Groups** and add the group.
+          - **Limit identity search and selection:**
+             - If your organization manages users and groups using Microsoft Entra ID, you can limit the set of users and groups to project members and groups.
+             - For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md).
+          - **Contact support:**
+             - If you verified permissions and project membership but still encounter issues, contact your Azure DevOps administrator or [support team](https://developercommunity.visualstudio.com/home) for further assistance.
+
+      - question: |
+          How can I cc someone on a work item discussion?
+        answer: |
+          You can't cc someone on a work item discussion. But, you can mention them in the discussion by using the @mention control. To clarify that you just want them to be aware of the work item, include a brief message in your comment.
 
 additionalContent: |
 

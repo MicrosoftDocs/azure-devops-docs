@@ -4,10 +4,11 @@ description: How to use Work Item Search - functional options for Work Item Sear
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
+ai-usage: ai-assisted
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/28/2023
+ms.date: 10/17/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -21,7 +22,7 @@ Work Item Search lets you do the following tasks and more.
 
 |**Search task**  |**Description**  |
 |---------|---------|
-|[Search over all your projects](#search-across-all-fields)   | Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters.         |
+|[Search over all your projects](#search-across-all-fields)   | Search in your own and your partner teams' backlog. To search across your entire enterprise's work items, use cross-project searches. Narrow your search by using project and area path filters.         |
 |[Search across all work item fields](#search-across-all-fields)   | Quickly and easily find relevant work items by searching across all work item fields, including custom fields. Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.        |
 |[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
 |Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
@@ -29,43 +30,36 @@ Work Item Search lets you do the following tasks and more.
 
 ## Prerequisites
 
-All users can use work item search.
+- **Access levels:**
+  - **All project members:** Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access.
 ::: moniker range=" azure-devops"
-
-You can use Work Item Search by default without any installation when the Boards service is installed and enabled in Azure DevOps Services.
-
+- Work Item Search is available by default when the Boards service is installed and enabled.
 ::: moniker-end
 
 ### Search by work item ID
 
 Enter the work item ID in the Azure DevOps title bar. You can read and edit the work item in a modal dialog.
 
-::: moniker range=">= azure-devops-2019"
-
 ![Screenshot of opening the work item in a modal dialogue.](media/advanced-work-item-search-syntax/open-work-item-modal-new.png)
-
-::: moniker-end
-
-
 
 ## Search across all fields
 
-Search all work item fields, including custom ones, for natural searches. The snippet view shows matches.
+Search all work item fields, including custom ones, for natural searches. The following snippet view shows matches.
 
-<img alt="Search across all work item fields" src="media/work-item-search-get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
+<img alt="Screenshot of Searching across all work item fields." src="media/work-item-search-get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
 
 - Use simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" also finds instances of the word "updated" and "update." Searches aren't case-sensitive.
-- Search from within a project to, by default, search only within that project. 
+- Search from a project to, by default, search only within that project. 
 - Search from inside a team to, by default, search only within the default area path of that team. 
-  - Select a project to view a list of area paths in that project for which you have read access.
+  - Select a project to view a list of area paths in that project for which you have Read access.
   - Select area paths in the tree to narrow your search if necessary.
 - View hit counts for all projects, even one that you don't select. 
 - Open the search results in a new browser tab from either the main search function or by selecting **Ctrl** + **Shift** + **Enter**.
 
-## Apply best practices
+## Best practices
 
-- Use a text search across all fields to efficiently locate relevant work items. Text search is useful when you're trying to, for example, search for all work items that had similar exception trace.
-- Use the quick in-line search filters on any work item field to narrow down to a list of work items in seconds. The list of suggestions helps complete your search faster.
+- **Text search across all fields:** Use a text search across all fields to efficiently locate relevant work items. This search is useful for finding work items with similar exception traces.
+- **Quick in-line search filters:** Use quick in-line search filters on any work item field to narrow down the list of work items in seconds. The list of suggestions helps you complete your search faster.
 
 ## Compare search vs. managed work item queries
 
@@ -118,9 +112,7 @@ For more information, see the following articles:
 
 ## Fine-tune your search
 
-::: moniker range=">= azure-devops-2019"
-
-1. Specify fields to fine-tune your search. Search all assigned items by entering `a:` and a user name.
+1. To fine-tune your search, specify fields. Search all assigned items by entering `a:` and a user name.
 
 	:::image type="content" source="media/get-started/search-work-vert.png" alt-text="Search from title bar":::    
 
@@ -152,20 +144,17 @@ For more information, see the following articles:
 
    ![Screenshot showing sort drop-down list.](media/work-item-search-get-started/sort-order.png)    
 
-::: moniker-end
-
-
-
 ### Quick filters for matching in specific fields
 
 Quick inline search filters let you refine work items in seconds. The dropdown list of suggestions helps complete your search faster. Mix and match the functions to create quick powerful searches. 
 
+
 |**Usage**  |**Example** |
 |---------|---------|
-| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |`tags:Critical` finds work items having a field 'tags' containing the term 'Critical.'         |
-|Use multiple inline search filters to scope your search by any work item field, including custom fields.    | `t: Bug path:"project\search"` finds all bugs in the area path "project\search."        |
-|Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  `t: Bug CreatedDate> @Today-7` finds all bugs created in the last week.       |
-|For the search query that contains multiple terms and users looking for exact match, embed the search term inside `" "`   | `BuildPath: "tools.demoproject.com"` finds all work items that necessarily contain the path "tools.demoproject.com."        |
+| Scope your search terms to match in any work item field, including custom fields. Enter the field name followed by the search terms.   |`tags:Critical` finds work items with a 'tags' field containing the term 'Critical.'         |
+| Use multiple inline search filters to scope your search by any work item field, including custom fields.    | `t: Bug path:"project\search"` finds all bugs in the area path "project\search."        |
+| Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  `t: Bug CreatedDate> @Today-7` finds all bugs created in the last week.       |
+| For search queries containing multiple terms, use quotes to group the terms. However, quotes don't yield exact matches as you might expect; results match any work items containing the grouped terms in any order.  | `BuildPath: "tools.demoproject.com"` finds work items that contain the path "tools.demoproject.com."        |
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="media/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
@@ -196,7 +185,7 @@ If you're using a portrait orientation screen, use the **Preview pane: Right** l
 > [!TIP]
 > Search remembers the state of the filter pane, configuration of the work item view pane, and its position between sessions as part of your user preferences.
 
-## Search Work Items with REST API
+## Search work items with REST API
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](/rest/api/azure/devops/search/work-item-search-results/fetch-work-item-search-results).
 

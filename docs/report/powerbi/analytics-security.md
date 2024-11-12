@@ -29,7 +29,7 @@ If you're just adding an Analytics widget to a dashboard or viewing an Analytics
 
 - To change permissions at the project level, you need to be a member of the Project Administrators or Project Collection Administrators groups. 
   
-To learn more about working with permissions, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+For more information about working with permissions, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 
 ## Set permissions 
@@ -82,7 +82,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](media/analytics-security-permissions.png) 
 
-	To learn more about working with permissions, see [Security & identity](../../organizations/security/about-security-identity.md).
+	For more information about working with permissions, see [Security & identity](../../organizations/security/about-security-identity.md).
 
 1. Choose **Save changes** when done. 
 --- 

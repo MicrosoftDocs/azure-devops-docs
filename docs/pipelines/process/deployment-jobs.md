@@ -292,6 +292,10 @@ This approach has the following benefits:
 - Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a Kubernetes namespace, `smarthotel-dev.bookings`), because the deployment job is linked to the environment. 
 This is useful in the cases where the same connection detail is set for multiple steps of the job.
 
+> [!NOTE]
+> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the the API server endpoint is not exposed through a public IP address.
+> 
+> Azure Pipelines recommends setting up a self-hosted agent within a VNET that has access to the cluster's virtual network. See [Options for connecting to the private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster) for details.
 
 ### Rolling deployment strategy
 
@@ -388,7 +392,7 @@ To share variables between stages, output an [artifact](../artifacts/pipeline-ar
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
 - For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['JobA.StepA.VariableA']]`)
-- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<job-name>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
+- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['Deploy_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
@@ -471,6 +475,7 @@ stages:
       vmImage: 'ubuntu-latest'
     environment: 
       name: env2
+      resourceName: vmsfortesting
       resourceType: virtualmachine
     strategy:                  
       runOnce:
@@ -495,7 +500,7 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     variables:
-      myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVar'] ]
+      myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVarTwo'] ]
       myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
     
     steps:
@@ -503,7 +508,7 @@ stages:
       name: echovartwo
 ```
 
-When you output a variable from a deployment job, referencing it from the next job uses different syntax depending on if you want to set a variable or use it as a condition for the stage. 
+When you output a variable from a job in stage one, referencing it from a deployment job in next stage uses different syntax depending on if you want to set a variable or use it as a condition for the stage. 
 
 ```yaml
 stages:
@@ -536,6 +541,44 @@ stages:
           steps:
           - bash: echo $(myOutputVar)
 ```
+When you output a variable from a deployment job, use stageDependencies syntax to reference it from next stage 
+(for example, `$[stageDependencies.<stage-name>.<job-name>.outputs[Deploy_<resource-name>.<step-name>.<variable-name>]]`). 
+
+```yaml
+stages:
+- stage: StageA
+  jobs:
+    - deployment: A1
+      environment: 
+        name:  env1
+        resourceName: DevEnvironmentV
+        resourceType: virtualMachine
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+              - script: echo "##vso[task.setvariable variable=myVar;isOutput=true]true"
+                name: setvarStep
+              - script: |
+                  echo "Value of myVar in the same Job : $(setVarStep.myVar)"
+                displayName: 'Verify variable in StageA'
+- stage: StageB
+  dependsOn: StageA
+
+  # Full Variables syntax for inter-stage jobs
+  variables:
+    myOutputVar: $[stageDependencies.StageA.A1.outputs['Deploy_DevEnvironmentV.setvarStep.myVar']]
+  jobs:
+  - deployment: B1
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: envB
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - bash: echo $(myOutputVar)
+ ```
 
 Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)
 

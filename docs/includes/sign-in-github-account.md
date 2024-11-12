@@ -31,7 +31,7 @@ ms.topic: include
 
 An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 
-You can rename and delete your organization, or change the organization location. To learn more, see [Manage organizations](../organizations/accounts/organization-management.md).
+You can rename and delete your organization, or change the organization location. For more information, see [Manage organizations](../organizations/accounts/organization-management.md).
 
 ### Enable GitHub invitations
 

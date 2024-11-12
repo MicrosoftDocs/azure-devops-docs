@@ -25,16 +25,19 @@ To create a dashboard for a team or project, see [Add, rename, and delete dashbo
 
 ## Prerequisites  
 
-- You must be a [member of a project](../../organizations/accounts/add-organization-users.md). If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md).
-- Anyone with access to a project, including [Stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards. However, to view queries or work items displayed in a dashboard widget, you must have permissions to view the query and work items. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md) and [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md).
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team member for the currently selected team to edit dashboards.
-- When you copy a dashboard as a team dashboard, you should be a member of the team. Otherwise, you can't edit it. Also, when you copy a dashboard, you should choose a Shared Queries folder to copy queries to that you have permissions to edit and contribute queries to. 
+- **Project membership:** Be a [member of the project](../../organizations/accounts/add-organization-users.md).
+- **Access:** 
+  - Anyone with access to a project, including [Stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards. However, to view queries or work items displayed in a dashboard widget, have permissions to view the query and work items. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md) and [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md).
+  - Have at least **Basic** access.
+- **Permissions:**
+  - Be a member of the team, a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have [Edit dashboard permissions](../dashboards/dashboard-permissions.md).
+  - Have Edit permissions for a shared queries folder, to copy queries to.
 
 ## Open the dashboard you want to copy
 
 Do the following steps to open the source dashboard.
 
-1. Sign in to your project (```https://dev.azure.com/{your_organization}/{your_project}```).
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 2. Select **Overview** > **Dashboards**. The dashboard directory page opens. 
 
 	:::image type="content" source="media/dashboards/open-dashboards-vert.png" alt-text="Screenshot of Dashboards Directory.":::

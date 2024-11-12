@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/08/2024
+ms.date: 11/12/2024
 --- 
 
 # Security groups, service accounts, and permissions reference
@@ -87,8 +87,8 @@ The system generates a few service accounts to support specific operations. The 
 | Agent Pool Service | Has permission to listen to the message queue for the specific pool to receive work. In most cases, you don't need to manage group members directly - the agent registration process handles it for you. When you register the agent, the service account you specify (typically Network Service) automatically gets added. Responsible for performing Azure Boards read/write operations and updating work items when GitHub objects change.   |  
 | Azure Boards | Added when Azure Boards is [connected to GitHub](../../boards/github/connect-to-github.md). You shouldn't have to manage members of this group. Responsible for managing the link creation between GitHub and Azure Boards. |  
 | PipelinesSDK | Added as needed to support the Pipelines policy service scope tokens. This user account is similar to the build service identities but supports locking down permissions separately. In practice, the tokens that involve this identity are granted read-only permissions to pipeline resources and the one-time ability to approve policy requests. This account should be treated in the same way that the build service identities are treated.   |  
-| *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It's added to the Security Service Group, which is used to store users who are granted permissions, but not added to any other security group.  |  
-| Project Collection Build Service | Has permissions to run build services for the collection. It's added to the Security Service Group, which is used to store users who are granted permissions, but not added to any other security group.  |  
+| *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It's automatically a member of the Security Service Group, which is used to store users who are granted permissions, but no other security group.  |  
+| Project Collection Build Service | Has permissions to run build services for the collection. It's automatically a member of the Security Service Group, which is used to store users who are granted permissions, but no other security group. |  
 
 <a name="groups"></a>
 
@@ -206,10 +206,21 @@ When you create an organization or project collection in Azure DevOps, the syste
 > To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.
 ::: moniker-end  
 
-#### [Preview page](#tab/preview-page) 
+
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="< azure-devops"
+
+Preview page is not available for on-premises versions.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, new user interface.](media/permissions/collection-admin-permissions-vsts-new.png)
+
+::: moniker-end
 
 #### [Current page](#tab/current-page)
 
@@ -326,7 +337,7 @@ So the full name of the administrator group for the default collection is
    Has limited access to view organization settings and projects other than those projects they are specifically added to. Also, people picker options are limited to those users and groups explicitly added to the project the user is connected to.
    :::column-end:::
    :::column span="2":::
-   Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
+   Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. don't add users to this group if they are also added to the Project Collection Administrators group.  
    > [!NOTE]   
    > The **Project-Scoped Users** group becomes available with limited access when the organization-level preview feature, **Limit user visibility and collaboration to specific projects** is enabled. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
    :::column-end:::
@@ -363,9 +374,19 @@ For each project that you create, the system creates the followings project-leve
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="< azure-devops"
+
+Preview page is not available for on-premises versions.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 :::image type="content" source="media/permissions/project-level-groups-new.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps preview version.":::
+
+::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
@@ -499,11 +520,11 @@ For each team that you add, you can assign one or more team members as administr
 ## Permissions
 
 ::: moniker range="azure-devops"
-The system manages permissions at different levels&mdash;organization, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. You can manage more permissions by using one or more [security management tools](security-tools-reference.md), specifying a namespace permission.
+The system manages permissions at different levels&mdash;organization, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. Manage more permissions with the [command line tool (CLI)](manage-tokens-namespaces.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-The system manages permissions at different levels&mdash;server, collection, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. You can manage more permissions by using one or more [security management tools](security-tools-reference.md), specifying a namespace permission.
+The system manages permissions at different levels&mdash;server, collection, project, object, and role-based permissions&mdash;and by default assigns them to one or more built-in groups. You can manage most permissions through the web portal. Manage more permissions with the [command line tool (CLI)](manage-tokens-namespaces.md).
 ::: moniker-end
 
 In the following sections, the namespace permission is provided following the permission label that displays in the user interface. For example:   
@@ -653,6 +674,7 @@ Manage organization-level permissions through the [web portal admin context](../
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page)
+
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
@@ -983,7 +1005,7 @@ Manage organization-level permissions through the [web portal admin context](../
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
-* * *
+---
 
 ::: moniker-end
 
@@ -1028,6 +1050,9 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 
 ## Project-level permissions
 
+> [!IMPORTANT]
+> To access project-level resources, the **View project-level information** permission must be set to **Allow**.  This permission gates all other project-level permissions.
+
 ::: moniker range="azure-devops" 
 
 Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md) or with the [az devops security group](add-manage-security-groups.md) commands. Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
@@ -1037,7 +1062,22 @@ Manage project-level permissions through the [web portal admin context](change-p
 
 ::: moniker-end
 
-#### [Preview page](#tab/preview-page) 
+::: moniker range="< azure-devops"
+
+Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+
+::: moniker-end
+
+
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="< azure-devops"
+
+Preview page is not available for on-premises versions.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors.png)
@@ -1112,7 +1152,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, SUPPRESS_NOTIFICATIONS`
    :::column-end:::
    :::column span="2":::
-   Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
+   Users with this permission can update work items without generating notifications. This feature is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
 
    Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
@@ -1305,6 +1345,8 @@ Manage project-level permissions through the [web portal admin context](change-p
    Can view test plans under the project area path.
    :::column-end:::
 :::row-end:::
+
+::: moniker-end
 
 #### [Current page](#tab/current-page)
 
@@ -1561,7 +1603,8 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-* * *
+---
+
 
 ## Analytics views (object-level)  
 
@@ -1711,6 +1754,18 @@ You can define the following permissions in Build at both levels.
    Can administer the build permissions for other users.
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+   <a id="create-build-pipeline"></a> 
+   Create build pipeline
+   `Build,  CreateBuildPipeline`
+   :::column-end:::
+   :::column span="2":::
+   Can create pipeline lines and edit those pipelines.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
    <a id="create-build-pipeline-permission"></a>Create build pipeline
@@ -1802,7 +1857,7 @@ You can define the following permissions in Build at both levels.
    `Build, OverrideBuildCheckInValidation`
    :::column-end:::
    :::column span="2":::
-   Can commit a TFVC change set that affects a gated build definition
+   Can commit a TFVC changeset that affects a gated build definition
    without triggering the system to shelve and build their changes first.
    :::column-end:::
 :::row-end:::
@@ -1816,6 +1871,7 @@ You can define the following permissions in Build at both levels.
    They can also stop the builds that they have queued.
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
    <a id="edit-pipeline-queue-configuration-permission"></a> Edit queue build configuration
@@ -1825,13 +1881,14 @@ You can define the following permissions in Build at both levels.
    Can specify values for free-text parameters (e.g., of type `object` or `array`) and pipeline variables when queueing new builds.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
    <a id="retain-indefinitely-permission"></a> Retain indefinitely  
    `Build, RetainIndefinitely`  
    :::column-end:::
    :::column span="2":::
-   Can toggle the retain indefinitely flag on a build. This feature marks a build so that the system doesn't automatically delete it based on any applicable retention policy.
+   Can toggle the retain flag on a build to indefinitely. This feature marks a build so that the system doesn't automatically delete it based on any applicable retention policy.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1876,7 +1933,7 @@ You can define the following permissions in Build at both levels.
 > - Turn **Inheritance Off** for a build definition when you want to control permissions for specific build definitions.
 >     - When **inheritance is On**, the build definition respects the build permissions defined at the project level or a group or user. For example, a custom Build Managers group has permissions set to manually queue a build for project Fabrikam. Any build definition with inheritance On for project Fabrikam would allow a member of the Build Managers group the ability to manually queue a build.
 >     - However, by turning **Inheritance Off** for project Fabrikam, you can set permissions that only allow Project Administrators to manually queue a build for a specific build definition. This would then allow me to set permissions for that build definition specifically.
-> - Assign the **Override check-in validation by build** permission only to service accounts for build services and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../../pipelines/build/triggers.md). This does not apply to PR builds. For more information, see [Check in to a folder that is controlled by a gated check-in build process](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
+> - Assign the **Override check-in validation by build** permission only to service accounts for build services and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../../pipelines/build/triggers.md). This doesn't apply to PR builds. For more information, see [Check in to a folder that is controlled by a gated check-in build process](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 ## Git repository (object-level)
 
@@ -2083,7 +2140,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
 
 ## TFVC (object-level)
 
-Manage the security of each TFVC branch from the [web portal](../../repos/tfvc/set-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions, which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+Manage the security of each TFVC branch from the [web portal](../../repos/tfvc/set-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions, which appear only for a project that was configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
 These permissions appear only for a project setup to use Team Foundation Version Control as the source control system.
 
@@ -2140,7 +2197,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can check out and make a pending change to items in a folder. 
    Examples of pending changes include adding, editing, renaming, deleting,
-   un-deleting, branching, and merging a file.
+   undeleting, branching, and merging a file.
    Pending changes must be checked in,
    so users also must have the Check-in permission
    to share their changes with the team.*
@@ -2172,11 +2229,11 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can convert any folder under that path into a branch,
    and also take the following actions on a branch:
-   edit its properties, re-parent it, and convert it to a folder.
+   edit its properties, reparent it, and convert it to a folder.
    Users who have this permission can branch this branch
    only if they also have the Merge permission for the target path.
    Users can't create branches from a branch
-   for which they do not have the Manage Branch permission.
+   for which they don't have the Manage Branch permission.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2207,7 +2264,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    Can read the contents of a file or folder.
    If a user has Read permissions for a folder,
    the user can see the contents of the folder and the properties of the files in it,
-   even if the user does not have permission to open the files. 
+   even if the user doesn't have permission to open the files. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2629,7 +2686,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column span="2":::
    Can remove a tag from the list of available tags for that project.
    
-   This permission doesn't appear in the UI. You can only set it by using a command-line tool. There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, the system automatically deletes it.
+   This permission doesn't appear in the UI. You can only set it by using a command-line tool. There's also no UI to explicitly delete a tag. Instead, when a tag has not been in use for three days, the system automatically deletes it.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2865,10 +2922,7 @@ Use task groups to encapsulate a sequence of tasks already defined in a build or
 
 ## Notifications or alerts 
 
-::: moniker range=">= azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using [az devops security permission](manage-tokens-namespaces.md) or [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools.
-::: moniker-end
-::: moniker range="< azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
 ::: moniker-end
 
@@ -2961,8 +3015,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 
 ## Related articles
 
-- [Get started with permissions, access, and security groups](about-permissions.md)  
-- [Security and permission management tools](security-tools-reference.md)  
+- [Get started with permissions, access, and security groups](about-permissions.md)   
 - [Security namespace and permission reference for Azure DevOps](namespace-reference.md)    
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)     

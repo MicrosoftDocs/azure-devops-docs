@@ -36,7 +36,7 @@ Starting now, you can configure service hooks that fire when the state of a job 
 
 ```json
 {
-    "subscriptionId": "8d91ad83-1db5-4d43-8c5a-9bb2239644b1",
+    "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "notificationId": 29,
     "id": "fcad4962-f3a6-4fbf-9653-2058c304503f",
     "eventType": "ms.vss-pipelines.job-state-changed-event",

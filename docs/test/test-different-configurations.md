@@ -45,7 +45,7 @@ Then you can:
 - To view or add test configurations, you must have **Basic** access or higher.
 - To add test configurations, you must have the project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.
 
-To learn more, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
+For more information, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)]
 

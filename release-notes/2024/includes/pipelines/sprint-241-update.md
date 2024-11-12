@@ -7,7 +7,7 @@ ms.topic: include
 
 ### AzureFileCopy, AzurePowerShell, and SqlAzureDacpacDeployment tasks use Az modules only
 
-The AzureFileCopy, AzurePowerShell, and SqlAzureDacpacDeployment tasks can no longer use AzureRM modules. As of February 2024, the [AzureRM PowerShell module was deprecated](https://learn.microsoft.com/powershell/azure/migrate-from-azurerm-to-az) and is no longer supported. While the AzureRM module may still function, it’s no longer maintained, placing any continued use at your discretion. Tasks that previously could use both AzureRmM or Az modules now only use Az modules. If you use tasks on self-hosted agents ensure the [Az module](https://learn.microsoft.com/powershell/azure/install-azure-powershell) is pre-installed on your images.
+The AzureFileCopy, AzurePowerShell, and SqlAzureDacpacDeployment tasks can no longer use AzureRM modules. As of February 2024, the [AzureRM PowerShell module was deprecated](/powershell/azure/migrate-from-azurerm-to-az) and is no longer supported. While the AzureRM module may still function, it’s no longer maintained, placing any continued use at your discretion. Tasks that previously could use both AzureRmM or Az modules now only use Az modules. If you use tasks on self-hosted agents ensure the [Az module](/powershell/azure/install-azure-powershell) is pre-installed on your images.
 
 ### Use Workload identity federation for container jobs, resources, and tasks
 

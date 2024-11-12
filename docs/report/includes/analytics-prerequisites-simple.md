@@ -3,14 +3,13 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 08/12/2022
+ms.date: 07/08/2024
 ---
 
 <a id="prerequisites">  </a>
 
 ## Prerequisites  
 
-- To view Analytics data and query the service, you need to be a member of a project with Basic access or greater. By default, all project members are granted permissions to query Analytics and define Analytics views.
-- To learn about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md).
-
- 
+- **Access:** Be a [member of a project](../../organizations/accounts/add-organization-users.md) with at least **Basic** access.
+- **Permissions:** By default, project members have permission to query Analytics and create views.
+- For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md).

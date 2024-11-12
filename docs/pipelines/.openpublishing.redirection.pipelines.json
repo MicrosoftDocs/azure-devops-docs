@@ -36,6 +36,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root":"/docs/pipelines/tasks/transforms-variable-substitution.md",
+      "redirect_url":"/previous-versions/azure/devops/pipelines/tasks/transforms-variable-substitution?view=tfs-2018"
+    },
+    {
       "source_path_from_root":"/docs/pipelines/targets/webapp-on-container-linux.md",
       "redirect_url":"/azure/devops/pipelines/apps/cd/deploy-docker-webapp",
       "redirect_document_id": false
@@ -208,6 +212,38 @@
     {
       "source_path_from_root": "/docs/pipelines/ecosystems/xamarin.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/process/parameters.md",
+      "redirect_url": "/azure/devops/pipelines/release/parameters"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/library/task-groups.md",
+      "redirect_url": "/azure/devops/pipelines/release/task-groups"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/process/pipeline-triggers-classic.md",
+      "redirect_url": "/azure/devops/pipelines/release/pipeline-triggers-classic"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/build/options.md",
+      "redirect_url": "/azure/devops/pipelines/release/options"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/publish-pipeline-artifact.md",
+      "redirect_url": "/azure/devops/pipelines/release/publish-pipeline-artifact"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/process/deployment-group-phases.md",
+      "redirect_url": "/azure/devops/pipelines/release/deployment-group-phases"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/migrate/from-classic-pipelines.md",
+      "redirect_url": "/azure/devops/pipelines/release/from-classic-pipelines"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/build/history.md",
+      "redirect_url": "/azure/devops/pipelines/release/history"
     }
   ]
 }
