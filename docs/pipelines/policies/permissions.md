@@ -5,7 +5,7 @@ description: Manage security in Azure Pipelines.
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2024
+ms.date: 11/12/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -21,14 +21,14 @@ Administrators typically have unrestricted access, contributors oversee resource
 
 |Security area|Prerequisites |
 |---------|---------|
-|[Pipelines security](#set-pipeline-permissions-in-azure-pipelines)  | - To manage project collection groups, you must be a member of the **Project Collection Administrators** group.<br>- To manage project level users and groups, you must be a member of an administrator group or be allowed *Administer build permissions*.        |
-| [Agent pool security](#set-agent-pool-security-in-azure-pipelines) | - To manage agent pool security at the organization, collection, or project level, you must be a member of the **Project Collection Administrators** group or have the **Administrator** role for agent pools.<br>- To manage agent pool security at the object level, you must have the **Administrator** role for the agent pool.                |
-|[Deployment group security](#set-deployment-group-security-in-azure-pipelines)    | - To manage project-level deployment group security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual deployment groups, you must be assigned an administrator role.          |
-|[Environment security](#set-security-for-environments-in-azure-pipelines)   | - To manage project-level environment security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage object-level security for individual environments, you must be assigned an administrator role.          |
-|[Library security](#set-library-security-in-azure-pipelines)   | - To manage library security, you must be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual library assets, you must be an administrator or have the appropriate role.        |
-|[Release pipeline security](#set-release-pipeline-permissions-in-azure-pipelines)   | - To manage release pipeline security, you must be a member of an administrator group or be allowed *Administer release permissions*.<br> - A release pipeline must be created.        |
-|[Service connection security](#set-service-connection-security-in-azure-pipelines)    | - To manage service connection security, you must be a member of the **Project Administrators** group or have an administrator role. - To manage security at the project level, you must be a member of the **Project Administrators** group or have the **Administrator** role for service connections.<br> - To manage security at the object level, you must have the **Administrator** role for the service connection.       |
-|[Task group security](#set-task-group-permissions-in-azure-pipelines)    |  To manage task group security, you must be a member of an administrator group or be allowed *Administer task group permissions*.<br>- A task group must exist.        |
+|[Pipelines security](#set-pipeline-permissions-in-azure-pipelines)  | - To manage project collection groups, be a member of the **Project Collection Administrators** group.<br>- To manage project level users and groups, be a member of an administrator group or have *Administer build permissions*.        |
+| [Agent pool security](#set-agent-pool-security-in-azure-pipelines) | - To manage agent pool security at the organization, collection, or project level, be a member of the **Project Collection Administrators** group or have the **Administrator** role for agent pools.<br>- To manage agent pool security at the object level, have the **Administrator** role for the agent pool.                |
+|[Deployment group security](#set-deployment-group-security-in-azure-pipelines)    | - To manage project-level deployment group security, be a member of an administrator group or be assigned an administrator role.<br>- To manage security for individual deployment groups, have an administrator role.          |
+|[Environment security](#set-security-for-environments-in-azure-pipelines)   | - To manage project-level environment security, be a member of an administrator group or assigned an administrator role.<br>- To manage object-level security for individual environments, have an administrator role.          |
+|[Library security](#set-library-security-in-azure-pipelines)   | - To manage library security, be a member of an administrator group or assigned an administrator role.<br>- To manage security for individual library assets, e an administrator or have the appropriate role.        |
+|[Release pipeline security](#set-release-pipeline-permissions-in-azure-pipelines)   | - To manage release pipeline security, be a member of an administrator group or have *Administer release permissions*.<br> - Have a release pipeline.        |
+|[Service connection security](#set-service-connection-security-in-azure-pipelines)    | - To manage service connection security, be a member of the **Project Administrators** group or have an administrator role. - To manage security at the project level, be a member of the **Project Administrators** group or have the **Administrator** role for service connections.<br> - To manage security at the object level, have the **Administrator** role for the service connection.       |
+|[Task group security](#set-task-group-permissions-in-azure-pipelines)    |  To manage task group security, be a member of an administrator group or have *Administer task group permissions*.<br>- Have a task group.        |
 
 <a id="pipeline-permissions">  </a>
 
@@ -1213,7 +1213,7 @@ To manage security roles for all agent pools in the organization, do the followi
     3. Repeat the previous step to add more users and groups.
     4. Select a role and select **Add** 
 
-        :::image type="content" source="media\agent-pool-add-user.png" alt-text="Screenshot of organization-level add user for all agent pools.":::
+1: To create a new pipelines, you need **Create build pipeline** permissions. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to **Allow** for your security group. 
 
 5. To remove a user or group from the list, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 
@@ -1497,8 +1497,9 @@ To add project users or groups that aren't listed in the security dialog, do the
 
 ## Related articles
 
-- [Start with permissions, access, and security groups](../../organizations/security/about-permissions.md)
-- [Review default permissions and access](../../organizations/security/permissions-access.md)
-- [Refer to permissions and groups](../../organizations/security/permissions.md)
-- [Secure Azure Pipelines](../security/overview.md)
-- [Access the Azure DevOps CLI reference](/cli/azure/devops)
+- [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)
+- [Default permissions and access](../../organizations/security/permissions-access.md)
+- [Permissions and groups reference](../../organizations/security/permissions.md)
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
+- [Securing Azure Pipelines](../security/overview.md)
+- [Azure DevOps CLI reference](/cli/azure/devops)
