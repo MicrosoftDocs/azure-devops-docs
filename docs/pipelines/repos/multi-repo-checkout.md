@@ -181,7 +181,7 @@ steps:
 > [!NOTE]
 > In the previous example, the `self` checkout repository is specified in order to checkout the source of the repository associated with the pipeline.
 >
-> If you are using the default Azure Repos Git repository (that has the same name as the project), use the format `- checkout: git://MyRepo/MyRepo`.
+> If you are using the default Azure Repos Git repository (that has the same name as the project), use the format `- checkout: git://MyProject/MyRepo`.
 
 ## Checkout path
 
