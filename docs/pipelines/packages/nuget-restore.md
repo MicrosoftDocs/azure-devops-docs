@@ -1,89 +1,59 @@
 ---
-title: Restore NuGet packages in Azure Pipelines
-description: How to restore your NuGet packages
+title: Restore NuGet packages with Azure Pipelines
+description: Learn how to restore your NuGet packages with Classic and YAML Pipelines.
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.author: rabououn
 ms.reviewer: rabououn
 author: ramiMSFT
-ms.topic: conceptual
-ms.date: 10/10/2022
+ms.topic: how-to
+ms.date: 11/12/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Restore NuGet packages with Azure Pipelines
+# Restore NuGet packages with Azure Pipelines (YAML/Classic) 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With NuGet Package Restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both Classic and YAML Pipelines.
 
-### Prerequisites
+## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- An Azure DevOps project. If you don't have one yet, you can [create a new project](../../organizations/projects/create-project.md).
-- An Azure Artifacts feed. [Create a new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
-- Connect to Azure Artifacts feed: [NuGet.exe](../../artifacts/nuget/nuget-exe.md), [dotnet](../../artifacts/nuget/dotnet-setup.md).
-- [Set up your pipeline permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-## Restore NuGet packages from a feed
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+
+- If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
+
+## Restore NuGet packages from a feed in the same organization
+
+### [YAML](#tab/yaml/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
 
 ### [Classic](#tab/classic/)
 
-1. Navigate to your classic pipeline definition, and then select **Edit**.
+1. Navigate to your pipeline definition, and then select **Edit**.
 
-1. Select **+** to add a new task. Search for **NuGet**, and then select **Add** to add the task to your pipeline.
+1. Select **+** to add a new task. Search for the **NuGet** task, and then select **Add** to add it to your pipeline.
 
-1. Name your task and select **Restore** from the **Command**.
+1. Name your task and select **Restore** from the **Command** dropdown.
 
-1. Select **Feed(s) I select here**, and select your feed from the dropdown menu. If you want to use your own config file, select **Feeds in my NuGet.config** and enter the path to your NuGet.config file and the service connection if you want to authenticate with feeds outside your organization.
+1. Under **Feeds to use**, select **Feed(s) I select here**, and then select your feed from the dropdown menu.
 
-1. If you want to include packages from NuGet.org, check the **Use packages from NuGet.org** checkbox.
+1. To include packages from NuGet.org, check the **Use packages from NuGet.org** option.
 
 1. Select **Save & queue** when you're done.
 
     :::image type="content" source="media/nuget-restore-classic.png" alt-text="Screenshot that shows how to configure the NuGet restore task.":::
 
-> [!NOTE]
-> Classic NuGet restore uses the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](/azure/devops/pipelines/tasks/reference/nuget-tool-installer-v1) if you want to use a different NuGet version.
-
-### [YAML](#tab/yaml/)
-
-```YAML
-- task: NuGetCommand@2
-  displayName: NuGet v2 Restore
-  inputs:
-    command: restore                      
-    restoreSolution: '**/*.sln'             ## Required when command = restore. Path to solution, packages.config, or project.json. Default: **/*.sln.
-    feedsToUse: 'select'                    ## Required. Feeds to use. 'select' | 'config'. Alias: selectOrConfig. Default: select.
-    vstsFeed: '<PROJECT_NAME>/<FEED_NAME>'  ## Required when feedsToUse == Select. Use packages from this Azure Artifacts feed. 
-    includeNuGetOrg: true                   ## Use packages from upstream (NuGet.org)
-```
 
 * * *
-
-## Restore NuGet packages locally
-
-Place your `nuget.config` in the same folder as your `.csproj` or `.sln`file. Your config file should look similar to the following example:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <packageSources>
-    <!-- remove inherited connection strings -->
-    <clear />
-    <!-- add an Azure Artifacts feed -->
-    <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/microsoftLearnModule/_packaging/FabrikamFiber/nuget/v3/index.json" />
-    <!-- Get packages from NuGet.org -->
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-  </packageSources>
-</configuration>
-```
-
-To restore your NuGet packages, run the following command in your project directory:
-
-```Command
-nuget.exe restore
-```
 
 ## Restore NuGet packages from a feed in a different organization
 
