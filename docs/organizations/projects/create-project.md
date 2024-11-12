@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2023
+ms.date: 11/11/2024
 ---
 
 
@@ -30,21 +30,21 @@ Create an Azure DevOps project to establish a repository for source code and to 
 
 ::: moniker range="azure-devops" 
 
-- You need an organization before you can create a project. If you don't have an organization, [create an organization](../accounts/create-organization.md).  
-- You must be a member of the Project Collection Administrators group or have the collection-level "Create new projects" permission set to *Allow*. If you're the Organization owner, you're automatically added to the Project Collection Administrators group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+- **Organization:** Have an organization. If you don't have one, [create one](../accounts/create-organization.md).  
+- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"  
 
-- You need a project collection before you can create a project. If you don't have one, [create a project collection now](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
-- You must be a member of the Project Collection Administrators group or have the "Create new projects permission" set to *Allow*. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+- **Project collection:** Have a project collection. If you don't have one, [create one](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
+- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.
 
 ::: moniker-end  
 
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]  
-> To create a public project or to make a private project public, see the information in [Make a private project public](../projects/make-project-public.md). You must enable additional policy settings to work with public projects. Then, return to this article to create your project.
+> To create a public project or [make a private project public](../projects/make-project-public.md), enable additional policy settings to work with public projects, and then return to this article to create your project.
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 ::: moniker range=">= azure-devops"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```). 
 
 2. Select **New project**.
 
@@ -100,7 +100,7 @@ There isn't a limit on the number of projects that you can create within a proje
    - **Pipelines**: Define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
    - **Test Plans**: Define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
    - **Artifacts**: Discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/start-using-azure-artifacts.md).
-   - **manage your services**: Disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
+   - **Manage your services**: Disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 ::: moniker-end
 
