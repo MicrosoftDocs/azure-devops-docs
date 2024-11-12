@@ -21,9 +21,9 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the Project Collection Administrator group for the organization.
+- [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
-- **Access:**
+- **Access levels:**
   - Be a member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).
   - Be a member or a guest in the source Microsoft Entra ID.
 

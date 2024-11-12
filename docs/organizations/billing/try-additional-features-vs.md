@@ -22,7 +22,7 @@ Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 
 
 ## Prerequisites
 
-You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
 ## Try Azure Test Plans
 

@@ -62,8 +62,24 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: .NET
+            url: /dotnet/api/overview/azure/devops-infrastructure
+          - text: ARM template
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
           - text: Azure CLI
             url: /cli/azure/service-page/managed%20devops%20pools
+          - text: Bicep
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
+          - text: Java
+            url: /java/api/overview/azure/devops-infrastructure
+          - text: JavaScript
+            url: /javascript/api/overview/azure/devops-infrastructure
+          - text: Python
+            url: /python/api/overview/azure/devops-infrastructure
+          - text: REST
+            url: /rest/api/devopspools
+          - text: Terraform
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
@@ -72,6 +88,8 @@ landingContent:
             url: monitor-pool.md
           - text: Diagnostic logs
             url: diagnostics.md
+          - text: Reliability
+            url: reliability-managed-devops-pools.md
   - title: Manage costs
     linkLists:
       - linkListType: concept

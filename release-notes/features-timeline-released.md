@@ -67,6 +67,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
     <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
     <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Authentication to Azure Artifacts using a public feed and Cargo</td><td>Artifacts</td><td>N/A</td></tr>
     <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
 <tr>
 <tr>
