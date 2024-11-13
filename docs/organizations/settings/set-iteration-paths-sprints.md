@@ -276,12 +276,10 @@ Define both areas and iterations from **Project settings > Boards > Team configu
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Team Profile, choose Iterations and area.](media/team-defaults/team-profile-choose-iterations-areas.png)   
 
-3. If you need to switch the team context, use the team selector within the breadcrumbs.
+3. To switch the team context, use the team selector within the breadcrumbs.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Team Configuration, Team breadcrumb.](media/team-defaults/select-team-context.png) 
-
-::: moniker-end
+	> ![Screenshot of Team Configuration, Team breadcrumb.](media/team-defaults/select-team-context.png)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 

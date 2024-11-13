@@ -247,7 +247,7 @@ Each project has a default team assigned. You can change which project is assign
 ::: moniker range="azure-devops"
 1. Open **Project settings > Teams** as indicated in the previous section. 
 
-1. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the team you want to designate as the default, and choose **Set team as project default**. 
+2. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the team you want to designate as the default, and choose **Set team as project default**. 
 
 	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-new-ui.png)  
 ::: moniker-end
@@ -262,7 +262,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 1. Open **Project settings > Teams** as indicated in the previous section. 
 ::: moniker-end
  
-1. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
+2. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
 
 	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-current.png)  
 
