@@ -1189,7 +1189,7 @@ Before you can add a principal, such as a service principal, in the **Security**
 
 1. Go to **Organization settings**.
 2. Select **Users**. 
-3. Add the service principal with Basic access or higher.
+3. Add the service principal with at least Basic access.
 
 ### Set organization security for agent pools
 
