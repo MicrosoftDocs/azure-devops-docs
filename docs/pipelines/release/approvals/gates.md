@@ -2,18 +2,20 @@
 title: Control releases with deployment gates
 description: Understand deployment gates in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica
 ms.date: 11/11/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Deployment gates
+# Deployment gates overview
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Gates allow automatic collection of health signals from external services and then promote the release when all the signals are successful or stop the deployment on timeout. Typically, gates are used with incident management, problem management, change management, monitoring, and external approval systems.
+Deployment gates in Azure Pipelines are added to release pipelines to ensure that deployments meet specific criteria before proceeding. Gates are essential for ensuring that deployments are reliable and secure by enforcing rigorous checks leading to more stable and secure software releases.
+
+Gates are defined in the pre-deployment and post-deployment conditions of a release stage. They provide a mechanism to automatically collect health signals from external services, such as Azure Function or REST APIs, to control the promotion of releases based on these signals. Gates work with approvals to ensure that the right stakeholders approve the release and the release meets the necessary quality and compliance criteria.
 
 ## Use cases
 
@@ -31,7 +33,7 @@ Most of the health parameters vary over time, regularly changing their status fr
 
 ## Define a gate for a stage
 
-You can enable gates at the start of a stage (Predeployment conditions) or at the end of a stage (Post-deployment conditions) or for both. For more information, see [Set up gates](../deploy-using-approvals.md#set-up-gates).
+You can enable gates at the start of a stage (**Pre-deployment conditions**) or at the end of a stage (**Post-deployment conditions**) or for both. For more information, see [Set up gates](../deploy-using-approvals.md#set-up-gates).
 
 The **Delay before evaluation** is a time delay at the beginning of the gate evaluation process that allows the gates to initialize, stabilize, and begin providing accurate results for the current deployment. For more information, see [Gate evaluation flows](#gate-evaluation-flow-examples).
 
@@ -56,7 +58,7 @@ The evaluation options that apply to all the gates are:
 
 - **Time between re-evaluation of gates**. The time interval between successive evaluations of the gates. At each sampling interval, new requests are sent concurrently to each gate and the new results are evaluated. The recommendation is that the sampling interval is greater than the longest typical response time of the configured gates to allow time for all responses to be received for evaluation.
 - **Timeout after which gates fail**. The maximum evaluation period for all gates. The deployment is rejected if the timeout is reached before all gates succeed during the same sampling interval.
-- **Gates and approvals**. Select the required order of execution for gates and approvals if you configured both. For predeployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards saving the system from evaluating the gate functions if the user rejects the release. For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful ensuring the approvers have all the information required to approve the release.
+- **Gates and approvals**. Select the required order of execution for gates and approvals if you configured both. For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards saving the system from evaluating the gate functions if the user rejects the release. For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful ensuring the approvers have all the information required to approve the release.
 
 For more information about gates analytics, see [View approvals logs](../deploy-using-approvals.md#set-up-manual-validation) and [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
 
