@@ -60,7 +60,7 @@ The evaluation options that apply to all the gates are:
 - **Timeout after which gates fail**. The maximum evaluation period for all gates. The deployment is rejected if the timeout is reached before all gates succeed during the same sampling interval.
 - **Gates and approvals**. Select the required order of execution for gates and approvals if you configured both. For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards saving the system from evaluating the gate functions if the user rejects the release. For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful ensuring the approvers have all the information required to approve the release.
 
-For more information about gates analytics, see [View approvals logs](../deploy-using-approvals.md#set-up-manual-validation) and [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
+For more information about gates analytics, see [View approvals logs](../deploy-using-approvals.md#view-deployment-logs) and [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
 
 ### Gate evaluation flow examples
 
