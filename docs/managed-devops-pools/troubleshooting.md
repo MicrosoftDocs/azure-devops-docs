@@ -2,7 +2,7 @@
 title: Troubleshoot Managed DevOps Pools issues
 description: Learn how to troubleshoot common issues with Managed DevOps Pools.
 ms.topic: how-to
-ms.date: 11/12/2024
+ms.date: 11/13/2024
 ---
 
 # Troubleshoot Managed DevOps Pools issues
@@ -22,10 +22,8 @@ Pool creation fails with a `PoolProvisioningFailed` error similar one of the fol
 * `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, was not found in the Azure DevOps organization provided, <your Azure DevOps organization>.`.
 * `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, does not have Manage permissions in the Azure DevOps organization provided, <your Azure DevOps organization>."`
 
-To resolve the `The logged in user, <your user>, was not found in the Azure DevOps organization provided` issue:
-* Your Azure DevOps organization must be connected to Microsoft Entra ID and your logged in Azure user must be a member of this tenant. See [Managed DevOps Pools prerequisites - Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](./prerequisites.md#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership).
-
-To resolve the `The logged in user, <your user>, does not have Manage permissions in the Azure DevOps organization provided` issue:
+To resolve the issue:
+* Your Azure DevOps organization must be connected to Microsoft Entra ID and your logged in Azure user must be a member (and not a guest) of this tenant. See [Managed DevOps Pools prerequisites - Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](./prerequisites.md#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership).
 * Your logged in Azure user must have the proper Azure DevOps permissions to create a pool. See [Azure DevOps prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
 
 ### Pool creation failure due to VNet permissions
