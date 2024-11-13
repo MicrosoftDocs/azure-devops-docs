@@ -34,9 +34,11 @@ If you're using Express Route, you need to temporary drop or change the manageme
 > [!IMPORTANT]
 > The Managed DevOps Pool and virtual network must be in the same region, or you'll get an error similar to the following when you try to create the pool or update the network configuration. `Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region.`
 
+### Grant Reader and Network Contributor access to DevOpsInfrastructure service principal
+
 Ensure the DevOpsInfrastructure principal has the following access on the virtual network:
 - `Reader` and `Network Contributor`
-- OR add the following permission to a custom role:
+- Or add the following permission to a custom role:
   - `Microsoft.Network/virtualNetworks/*/read`
   - `Microsoft.Network/virtualNetworks/subnets/join/action`
   - `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/validate/action`
