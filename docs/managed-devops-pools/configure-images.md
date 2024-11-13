@@ -265,6 +265,7 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 * Windows 11
 * Ubuntu 20.04
 * Ubuntu 22.04
+* Ubuntu 24.04
 * Debian 9
 * RHEL 8
 * RHEL 9
