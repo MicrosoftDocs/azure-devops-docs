@@ -1,14 +1,10 @@
 ---
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Monitor Managed DevOps Pools
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Managed DevOps Pools provides several options for monitoring your pool instances. The **Overview** page provides predefined metrics charts, and you can configure custom charts on the **Metrics** page. Use these tools to monitor the health of your Managed DevOps Pools instances.
 
