@@ -21,7 +21,7 @@ Imagine you define the following variables:
 variables:
   Major: '1'
   Minor: '0'
-  Patch: $[counter(fromat('{0}.{1}', variables.Major, variables.Minor ), 0)]
+  Patch: $[counter(format('{0}.{1}', variables.Major, variables.Minor ), 0)]
 ```
 
 The `Patch` variable is defined using the `counter` function and the other two variables. In the YAML code above, the word `format` is misspelt. Previously, this error went undetected. Now, the _Validate_ functionality will detect this and surface an error message. 

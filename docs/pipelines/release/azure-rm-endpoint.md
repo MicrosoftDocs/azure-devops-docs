@@ -4,8 +4,8 @@ ms.custom: devx-track-arm-template, arm2024
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: troubleshooting
-ms.author: ronai
-author: RoopeshNair
+ms.author: jukullam
+author: juliakm
 ms.date: 10/04/2024
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
@@ -190,6 +190,12 @@ To resolve this issue, ask the subscription administrator to [assign you the app
 
 An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. However, if you have an issue with refreshing the token, see [valid refresh token wasn't found](#troubleshoot).
 
+If your token expired, you may see one of the error messages:
+
+* `AADSTS7000215: Invalid client secret is provided`
+* `AADSTS7000222: The provided client secret keys for app '***' are expired`
+* `Invalid client id or client secret`
+
 To renew the access token for an automatically created service principal:
 
 1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
@@ -202,6 +208,8 @@ Your service principal's token is now renewed for three more months.
 
    > [!NOTE]
    > This operation is available even if the service principal's token has not expired.
+   
+   > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it will update the secret for the app registered for the service principal. For more information, see [Create an Azure Resource Manager service connection using automated security](/azure/devops/pipelines/library/connect-to-azure#create-an-azure-resource-manager-service-connection-using-automated-security) and [What happens when you create a Resource Manager service connection?](/azure/devops/pipelines/release/azure-rm-endpoint#what-happens-when-you-create-an-azure-resource-manager-service-connection)
 
 <a name="failedToObtainJWT"></a>
 
@@ -248,4 +256,5 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 - [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
 - [Review pipeline logs](../troubleshooting/review-logs.md)
 - [Define variables](../process/variables.md)
-- [Use classic release and artifacts variables](./variables.md)
+- [Classic release and artifacts variables](./variables.md)
+

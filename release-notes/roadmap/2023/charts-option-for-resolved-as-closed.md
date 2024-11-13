@@ -26,4 +26,4 @@ Charts affected are:
 - Velocity chart on Analytics tab
 
 > [!div class="mx-imgBorder"]
-> ![Screen showing otpion to make resolved items track as completed.](media/reporting-resolved-category-as-completed-check.gif)
+> ![Screen showing option to make resolved items track as completed.](media/reporting-resolved-category-as-completed-check.gif)

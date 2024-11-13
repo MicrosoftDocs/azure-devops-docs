@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2024
+ms.date: 11/12/2024
 --- 
 
 # Security groups, service accounts, and permissions reference
@@ -20,7 +20,7 @@ This article provides a comprehensive reference for each built-in user, group, a
 
 For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions, access, and security groups](about-permissions.md), [About security roles](about-security-roles.md), and [About access levels](access-levels.md). 
 
-To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
+For more information about adding users to a group or setting a specific permission that you can manage through the web portal, see the following resources:  
 
 :::row:::
    :::column span="1":::
@@ -1768,6 +1768,15 @@ You can define the following permissions in Build at both levels.
 ::: moniker-end
 :::row:::
    :::column span="2":::
+   <a id="create-build-pipeline-permission"></a>Create build pipeline
+   `Build, CreateBuildDefinition`
+   :::column-end:::
+   :::column span="2":::
+   Can create pipelines.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
    <a id="delete-build-definition-permission"></a> Delete build definition  
    `Build, DeleteBuildDefinition`
    :::column-end:::
@@ -1800,9 +1809,19 @@ You can define the following permissions in Build at both levels.
    `Build, EditBuildDefinition`
    :::column-end:::
    :::column span="2":::
-
-   **Edit build pipeline**: Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition.  
-   **Edit build definition**: Can create and modify build definitions for this project.
+ 
+   **Edit build pipeline**: Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition. Cannot create new pipelines.
+   **Edit build definition*:* Can create and modify build definitions for this project.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+   > [!NOTE]   
+   > To control permissions for specific build definitions, turn off **inheritance**.
+   >
+   > When inheritance is turned _on_, the build definition respects the build permissions defined at the project level or a group or user. For example, a custom Build Managers group has permissions set to manually queue a build for project Fabrikam. Any build definition with inheritance for project Fabrikam allows a member of the Build Managers group to manually queue a build.
+   >
+   > When inheritance is turned _off_, you can set permissions so only Project Administrators can manually queue a build for a specific build definition.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3001,3 +3020,4 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)     
 - [Make a user a team administrator](../settings/manage-teams.md)  
+- [Troubleshoot permissions](troubleshoot-permissions.md)

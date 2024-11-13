@@ -29,6 +29,7 @@ ms.date: 08/18/2021
 <!--- Updated to support Azure DevOps Services + Azure DevOps Services Build and Release 
 
 Administer build permissions
+Create build pipeline
 Delete build pipeline
 Delete builds
 Destroy builds

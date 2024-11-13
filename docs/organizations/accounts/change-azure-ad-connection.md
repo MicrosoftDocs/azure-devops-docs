@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 11/08/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -18,13 +18,15 @@ monikerRange: 'azure-devops'
 
 This article explains how to switch your organization's connection from one Microsoft Entra ID to another. When you change directories, your project resources remain unaffected.
 
+You might want to switch to a different directory to align with organizational changes, such as mergers or acquisitions, or to consolidate multiple directories for better management and security.
+
 For more information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the Project Collection Administrator group for the organization.
+- [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
-- **Access:**
+- **Access levels:**
   - Be a member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).
   - Be a member or a guest in the source Microsoft Entra ID.
 
