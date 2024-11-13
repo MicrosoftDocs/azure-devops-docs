@@ -63,13 +63,14 @@ steps:
 
 1. Select **Save & queue** when you're done.
 
-> [!NOTE]
-> Make sure that The NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources in an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-in-an-existing-feed)
 * * *
 
-## Restore NuGet packages from a feed in a another organization
+> [!NOTE]
+> Make sure that The NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources in an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-in-an-existing-feed)
 
-To restore NuGet packages from a feed in a different Azure DevOps organization, you must use a personal access token to authenticate.
+## Restore NuGet packages from a feed in another organization
+
+To restore NuGet packages from a feed in a different Azure DevOps organization, you must first create a personal access token then use it to create a NuGet service connection.
 
 #### Create a personal access token
 
@@ -77,54 +78,68 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
 
     :::image type="content" source="media/pat.png" alt-text="Screenshot showing how to create a personal access token.":::
 
-1. Create a personal access token with **Packaging (read)** scope and copy your PAT to the clipboard.
+1. Create a new personal access token with **Packaging*** >  **Read** scope. Copy your PAT as you'll need it in the following section.
 
-    :::image type="content" source="media/create-read-feed-pat.png" alt-text="A screenshot showing how to create a personal access token with packaging read permissions.":::
+1. Select **Create** when you're done.
 
-#### Restore NuGet packages
+    :::image type="content" source="media/create-new-pat-updated.png" alt-text="A screenshot showing how to create a personal access token with packaging read permissions.":::
 
-### [Classic](#tab/classic/)
+#### Create a service connection
 
-1. Navigate to your pipeline definition and select the **NuGet restore** task. Make sure you're using version 2 of the task.
+1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
 
-    :::image type="content" source="media/nuget-v-2.png" alt-text="Screenshot showing the NuGet restore task version.":::
+1. Navigate to your **Project settings** > **Service connections**. 
 
-1. Select **Feeds and authentication**, and then select **Feeds in my NuGet.config**.
-1. Select the path of your *NuGet.config* file.
-1. Select **New** to add **Credentials for feeds outside this organization/collection**.
+1. Select **New service connection**, select **NuGet**, and then select **Next**. 
 
-    :::image type="content" source="media/feeds-and-authentication.png" alt-text="Screenshot showing how to configure the NuGet restore task.":::
+1. Select **External Azure DevOps Server** as the **Authentication method**, and then enter your target **Feed URL**. Paste the **Personal Access Token** you created earlier, provide a name for your service connection, and check **Grant access permission to all pipelines** if applicable to your scenario.
 
-1. Select **External Azure DevOps Server**, and then enter your feed URL (make sure it matches what's in your NuGet.config), your service connection name, and the personal access token you created earlier. Select **Save** when you're done.
+1. Select **Save** when you're done.
 
-    :::image type="content" source="media/external-server-service-connection.png" alt-text="Screenshot showing how to add a new service connection.":::
+    :::image type="content" source="media/new-service-connection-nuget-restore.png" alt-text="A screenshot showing how to create a new NuGet service connection.":::
 
-1. Select **Save & queue** when you're done.
+#### Restore packages
 
 ### [YAML](#tab/yaml/)
 
-```yml
-- task: NuGetCommand@2
-  displayName: NuGet Restore
+```yaml
+- task: NuGetToolInstaller@1
   inputs:
-    restoreSolution: '**/*.sln'                     ## Required when command = restore. Path to your project's solution, packages.config, or project.json.
-    feedsToUse: 'config'                            ## Required. 'select' | 'config'. Default: select.
-    nugetConfigPath: 'Deployment/NuGet.config'      ## Required when selectOrConfig = config. Path to your nuget.config file.
-    externalFeedCredentials: 'MyServiceConnection'  ## Use when selectOrConfig = config. The name of your service connection. Credentials for feeds outside your organization/collection.  
+    versionSpec: '*'
+    checkLatest: true
+
+- task: NuGetAuthenticate@1
+  inputs:
+    nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+    
+- script: |
+      nuget.exe restore <SOLUTION_PATH>
+  displayName: Restore       
 ```
+
+### [Classic](#tab/classic/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
+
+1. Select **+** to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate*, and *Command line* tasks to your pipeline. Leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
+
+    1. NuGet Authenticate task: select your service connection from the **Service connection credentials for feeds outside this organization** dropdown menu.
+    
+    1. Command line task:
+        - **Display name**: Restore.
+        - **Script**: 
+            ```
+            nuget.exe restore <SOLUTION_PATH>
+            ```
+
+1. Select **Save & queue** when you're done.
 
 * * *
 
-## FAQ
+## Related content
 
-### Q: My pipeline is failing to restore my NuGet packages?
-
-A: The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
-
- 
-
-## Related articles
-
-- [Publish to NuGet feeds (YAML/Classic)](../artifacts/nuget.md)
-- [Publish and consume build artifacts](../artifacts/build-artifacts.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/en-us/)
+- [Publish packages to internal and external feeds](../artifacts/pipeline-artifacts.md)
+- [Publish and download pipeline artifacts](../artifacts/build-artifacts.md)
+- [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
