@@ -88,6 +88,8 @@ landingContent:
             url: monitor-pool.md
           - text: Diagnostic logs
             url: diagnostics.md
+          - text: Troubleshooting
+            url: troubleshooting.md
           - text: Reliability
             url: reliability-managed-devops-pools.md
   - title: Manage costs
