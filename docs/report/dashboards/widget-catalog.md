@@ -580,7 +580,7 @@ To support adding, add one or more of the following widgets:
       For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).     
       
       > [!NOTE]  
-      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members).  
+      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still add users to your team from the team administration page.  
    :::column-end:::
 :::row-end:::
 :::row:::

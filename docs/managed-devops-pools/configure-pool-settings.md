@@ -1,14 +1,10 @@
 ---
 title: Configure pool settings
 description: Learn how to configure Managed DevOps Pools settings.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Configure pool settings
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 This article describes how to configure the basic settings of your Managed DevOps Pool.
 

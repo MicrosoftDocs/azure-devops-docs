@@ -1,16 +1,14 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 11/12/2024
+ms.date: 11/13/2024
 ---
 
 # Configure Managed DevOps Pools networking
 
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+Managed DevOps Pools agents can be configured to run in an isolated virtual network, or into an existing virtual network. This article describes how to configure your Managed DevOps Pool to run agents in your virtual network.
 
-## Adding agents to your own Virtual network
+## Adding agents to your own virtual network
 
 You may want to add agents from Managed DevOps Pools to your own virtual network for scenarios such as:
 
@@ -177,9 +175,9 @@ If you configured a proxy service on your image and want your workloads running 
 * `VSTS_AGENT_INPUT_PROXYUSERNAME` - The username needed to use the proxy
 * `VSTS_AGENT_INPUT_PROXYPASSWORD` - The password to use the proxy.
 
-For Windows, these environment variables shoud be system environment variables, and for Linux these variables should be in the **/etc/environment** file. Setting these system variables incorrectly or without a configured proxy service on the image causes provisioning of new agents to fail with network connectivity issues.
+For Windows, these environment variables should be system environment variables, and for Linux these variables should be in the **/etc/environment** file. Setting these system variables incorrectly or without a configured proxy service on the image causes provisioning of new agents to fail with network connectivity issues.
 
-If you are migrating from VMSS and are already using the proxy environment variables on your image, as described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration), no changes should be required.
+If you are migrating from Azure Virtual Machine Scale Set agents and are already using the proxy environment variables on your image, as described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration), no changes should be required.
 
 ## See also
 

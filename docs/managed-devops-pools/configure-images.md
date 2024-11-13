@@ -1,14 +1,10 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Configure Managed DevOps Pools images
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
 
@@ -313,7 +309,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 > [!IMPORTANT]
 > Assign the Reader role to the DevOpsInfrastructure Service Principal for the Azure Compute Gallery images you want to use. If you select an Azure Compute Gallery image that doesn't have this access configured, pool creation fails. You can assign the Reader role individually at the image level, or at the image gallery level for all images in the gallery.
 
-1. Go to the desired resource in the Azure Portal. To be able to use all images in a gallery, go to Azure Compute Gallery in the Azure portal. To use a specific image only, go to that image.
+1. Go to the desired resource in the Azure portal. To be able to use all images in a gallery, go to Azure Compute Gallery in the Azure portal. To use a specific image only, go to that image.
 1. Select **Access control (IAM)**.
 1. Select **Add** > **Add role assignment** to open the **Add role assignment** page.
 1. Assign the following role. For detailed steps, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
