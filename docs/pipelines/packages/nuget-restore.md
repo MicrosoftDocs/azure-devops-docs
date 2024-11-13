@@ -35,17 +35,17 @@ With NuGet Package Restore you can install all your project's dependency without
 
 1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
-```yaml
-steps:
-- task: NuGetAuthenticate@1
-
-- task: NuGetToolInstaller@1
-  inputs:
-    versionSpec: '*'
-    checkLatest: true
-
-- script: nuget restore <SOLUTION_PATH>
-```
+    ```yaml
+    steps:
+    - task: NuGetAuthenticate@1
+    
+    - task: NuGetToolInstaller@1
+      inputs:
+        versionSpec: '*'
+        checkLatest: true
+    
+    - script: nuget restore <SOLUTION_PATH>
+    ```
 
 ### [Classic](#tab/classic/)
 
@@ -55,22 +55,22 @@ steps:
 
 1. Select **+** to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate*, and *Command line* tasks to your pipeline. Leave the *NuGet tool installer* and *NuGet Authenticate* tasks with their default settings and configure the *Command line* task as follows:
 
-  - **Display name**: Restore.
-  - **Script**: 
-      ```
-      nuget.exe restore <SOLUTION_PATH>
-      ```
+    - **Display name**: Restore.
+    - **Script**: 
+        ```
+        nuget.exe restore <SOLUTION_PATH>
+        ```
 
 1. Select **Save & queue** when you're done.
 
 * * *
 
 > [!NOTE]
-> Make sure that The NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources in an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-in-an-existing-feed)
+> Make sure that The NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources in an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-in-an-existing-feed) for details.
 
 ## Restore NuGet packages from a feed in another organization
 
-To restore NuGet packages from a feed in a different Azure DevOps organization, you must first create a personal access token then use it to create a NuGet service connection.
+To restore NuGet packages from a feed in a different Azure DevOps organization, you must first create a personal access token then use it to set up a NuGet service connection.
 
 #### Create a personal access token
 
@@ -102,20 +102,26 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
 
 ### [YAML](#tab/yaml/)
 
-```yaml
-- task: NuGetToolInstaller@1
-  inputs:
-    versionSpec: '*'
-    checkLatest: true
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-- task: NuGetAuthenticate@1
-  inputs:
-    nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+    ```yaml
+    - task: NuGetToolInstaller@1
+      inputs:
+        versionSpec: '*'
+        checkLatest: true
     
-- script: |
-      nuget.exe restore <SOLUTION_PATH>
-  displayName: Restore       
-```
+    - task: NuGetAuthenticate@1
+      inputs:
+        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
+        
+    - script: |
+          nuget.exe restore <SOLUTION_PATH>
+      displayName: Restore       
+    ```
 
 ### [Classic](#tab/classic/)
 
@@ -125,7 +131,8 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
 
 1. Select **+** to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate*, and *Command line* tasks to your pipeline. Leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
 
-    1. NuGet Authenticate task: select your service connection from the **Service connection credentials for feeds outside this organization** dropdown menu.
+    1. NuGet Authenticate task: 
+        Select your service connection from the **Service connection credentials for feeds outside this organization** dropdown menu.
     
     1. Command line task:
         - **Display name**: Restore.
