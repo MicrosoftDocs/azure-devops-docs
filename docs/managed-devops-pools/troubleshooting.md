@@ -18,12 +18,20 @@ This article provides solutions to common Managed DevOps Pools issues.
 
 ### Pool creation failure due to Azure DevOps organization permissions
 
-Pool creation fails with a `PoolProvisioningFailed` error similar one of the following errors:
-* `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, was not found in the Azure DevOps organization provided, <your Azure DevOps organization>.`.
-* `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, does not have Manage permissions in the Azure DevOps organization provided, <your Azure DevOps organization>."`
+Pool creation fails with an error similar to one the following error messages.
+
+#### The logged in user was not found in the Azure DevOps organization
+
+* `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, was not found in the Azure DevOps organization provided, <your Azure DevOps organization>."`
 
 To resolve the issue:
 * Your Azure DevOps organization must be connected to Microsoft Entra ID and your logged in Azure user must be a member (and not a guest) of this tenant. See [Managed DevOps Pools prerequisites - Connect your Azure DevOps organization to Microsoft Entra ID and verify membership](./prerequisites.md#connect-your-azure-devops-organization-to-microsoft-entra-id-and-verify-membership).
+
+#### The logged in user does not have Manage permissions in the Azure DevOps organization
+
+* `Validation failure "PoolProvisioningFailed": "Failed to provision agent pool. Exception: The logged in user, <your user>, does not have Manage permissions in the Azure DevOps organization provided, <your Azure DevOps organization>."`
+
+To resolve the issue:
 * Your logged in Azure user must have the proper Azure DevOps permissions to create a pool. See [Azure DevOps prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
 
 ### Pool creation failure due to VNet permissions
