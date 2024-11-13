@@ -123,7 +123,7 @@ In Azure DevOps Services, you can [provide access to groups of users](../organiz
 
 You must also [assign an access level](../organizations/accounts/add-organization-users.md) to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
 
-To give Basic access or higher to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing) and [pay for more users](../organizations/billing/buy-basic-access-add-users.md). Otherwise, all other users receive Stakeholder access.
+To give at least Basic access to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing) and [pay for more users](../organizations/billing/buy-basic-access-add-users.md). Otherwise, all other users receive Stakeholder access.
 
 Microsoft Entra groups provide access to groups of users, with access levels automatically assigned at first sign-in. For organizations using Microsoft accounts for signing in, you must explicitly assign access levels to each user.
 
