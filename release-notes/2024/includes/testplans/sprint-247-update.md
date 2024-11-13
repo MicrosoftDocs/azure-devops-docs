@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/12/2024
+ms.date: 11/13/2024
 ms.topic: include
 ---
 
@@ -20,10 +20,10 @@ The Test Plans directory now offers enhanced sorting options! With this update, 
 > ![Gif to demo Sorting in Test Plans Directory.](../../media/247-testplans-01.gif "gif to Sorting in Test Plans Directory")
 
 
-### Auto Pause for Test Case Run
+### Auto Pause for Test Case Run preview
 
 Manual testers often encounter challenges with losing progress on test cases if an incomplete run isn’t marked as “Paused” before selecting “Save and Close.” This can result in lost work on complex or lengthy cases, requiring testers to start over. To solve this, we’re introducing Auto Pause for Test Case Run. This feature automatically pauses a test case if there’s a break or interruption, ensuring all data is saved without needing a manual pause. With Auto Pause, testers can easily resume right where they left off, simplifying the testing process and making it more efficient. A preview will be available in the coming weeks—[email us](mailto:adocustomerfeedback@service.microsoft.com) if you’d like to join! 
 
 ### New release version for Test and Feedback Extensions (TFE)
 
-We’re thrilled to announce the release of TFE version 1.0.247.0, now available on both Chrome and [Edge](https://microsoftedge.microsoft.com/addons/detail/test-feedback/leeakgkdanfdoebeohldonigkalooaej). This update brings a key improvement: a fix for Stakeholder Mode, addressing and resolving previous disruptions. Enjoy a smoother, more reliable experience with this latest version! 
+We’re thrilled to announce the release of TFE version 1.0.247.0, now available on both Chrome and Edge. [Install the latest version](https://microsoftedge.microsoft.com/addons/detail/test-feedback/leeakgkdanfdoebeohldonigkalooaej) to improved functionality, with a fix for Stakeholder Mode, addressing and resolving previous disruptions. Enjoy a smoother, more reliable experience with this latest version! 
