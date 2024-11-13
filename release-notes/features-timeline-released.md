@@ -38,14 +38,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="11"><a href="2024/sprint-247-update.md" data-raw-source="[12 November 2024](2024/sprint-247-update.md)"> 12 November 2024</a></td>
+    <td rowspan="10"><a href="2024/sprint-247-update.md" data-raw-source="[12 November 2024](2024/sprint-247-update.md)"> 12 November 2024</a></td>
     <td>Commit-less builds supported for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>File previews and annotations for CodeQL scans using sourcesFolder</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>New REST API limit on work item comments </td><td>Boards</td><td>Future</td></tr>
     <td>Search pull requests by title on PR listing page</td><td>Repos</td><td>Future</td></tr>
     <td>macOS-15 Sequoia is available in preview</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvements to service connection App registration attribution</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Azure Pipelines tasks use Node 20</td><td>Pipelines</td><td>Future</td></tr>
     <td>Azure Test Runner version 1.2.2</td><td>Test Plans</td><td>Future</td></tr>
     <td>New sorting capabilities in Test Plans directory</td><td>Test Plans</td><td>Future</td></tr>
     <td>Auto Pause for Test Case Run</td><td>Test Plans</td><td>Future</td></tr>
