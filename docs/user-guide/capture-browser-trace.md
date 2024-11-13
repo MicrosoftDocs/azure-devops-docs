@@ -2,7 +2,6 @@
 title: Capture a browser trace for troubleshooting
 titleSuffix: Azure DevOps
 description: Capture network information from a browser trace to help troubleshoot issues with Azure DevOps.
-ms.subservice: azure-devops
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
@@ -59,7 +58,7 @@ The following steps show how to use the developer tools in Google Chrome. For mo
 1. In your browser, select **F12**.
 2. Select :::image type="icon" source="../media/icons/gear-icon.png" border="false"::: **Settings**.
 
-   :::image type="content" source="media/google-chrome-more-actions-settings.png" alt-text="Screenshot shows a gear highlighted for selection, more actions":::
+   :::image type="content" source="media/capture-browser-trace/google-chrome-gear.png" alt-text="Screenshot shows a gear highlighted for selection, more actions":::
 
 3. Under Preferences, scroll to the Network section, and enter a check in the box next to **Allow to generate HAR with sensitive data**.
 
