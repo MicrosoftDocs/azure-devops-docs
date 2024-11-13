@@ -718,7 +718,7 @@
         items:
         - name: "2024"
           items:
-          - name: September 31
+          - name: November 13
             href: 2024/testplans/sprint-247-update.md
           - name: September 26
             href: 2024/testplans/sprint-245-update.md
