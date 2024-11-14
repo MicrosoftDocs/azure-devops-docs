@@ -142,11 +142,13 @@ The following tables describe the type of events (or actions) that are available
 | Library.AgentPoolDeleted | Remove |	Deleted agent pool {AgentPoolName}. |
 | Library.AgentsDeleted	| Modify |	Removed multiple agents from pool {AgentPoolName}. |
 | Library.ServiceConnectionCreated |	Create |	Created Service Connection "{ConnectionName}" of type {ConnectionType}. |
+| Library.ServiceConnectionCreatedForMultipleProjects | Create | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | Library.ServiceConnectionDeleted |	Remove |	Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionDeletedFromMultipleProjects	| Remove |	Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple Projects. |
 | Library.ServiceConnectionExecuted	| Execute |	Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionForProjectModified |	Modify |	Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionModified |	Modify |	Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
+| Library.ServiceConnectionPropertyChanged | Modify
 | Library.ServiceConnectionShared |	Modify | Shared Service Connection "{ConnectionName}" of type {ConnectionType} with project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionSharedWithMultipleProjects	| Modify |	Shared Service Connection "{ConnectionName}" of type {ConnectionType} with multiple projects. |
 | Library.VariableGroupCreated |	Create |	Created Variable Group "{VariableGroupName}" in project {ResolveProjectId:ProjectId}. |
@@ -214,6 +216,9 @@ The following tables describe the type of events (or actions) that are available
 | Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId} |
 | Pipelines.RunUnretained	 | Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained |
 | Pipelines.ProjectSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
+| Pipelines.OAuthConfigurationCreated |  Create |   Created OAuth configuration '{ConfigName}'  for '{SourceType}' |
+| Pipelines.OAuthConfigurationDeleted |  Remove |   Updated OAuth configuration '{ConfigName}'  for '{SourceType}' |
+| Pipelines.OAuthConfigurationUpdated |  Modify |   Deleted OAuth configuration '{ConfigName}'  for '{SourceType}' |
 | Pipelines.OrganizationSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 
 ### Policy
