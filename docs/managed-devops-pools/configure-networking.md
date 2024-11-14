@@ -98,7 +98,7 @@ If you are using ARM templates, add a `networkProfile` property if it doesn't al
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2024-04-04-preview",
+    "apiVersion": "2024-10-19",
     "location": "eastus",
     "properties": {
         ...
