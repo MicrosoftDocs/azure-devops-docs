@@ -216,10 +216,10 @@ The following tables describe the type of events (or actions) that are available
 | Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease id {RetentionLeaseId} to {RetentionOwnerId} |
 | Pipelines.RunUnretained	 | Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained |
 | Pipelines.ProjectSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
-| Pipelines.OrganizationSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 | Pipelines.OAuthConfigurationCreated |  Create |   Created OAuth configuration '{ConfigName}'  for '{SourceType}' |
 | Pipelines.OAuthConfigurationDeleted |  Remove |   Updated OAuth configuration '{ConfigName}'  for '{SourceType}' |
 | Pipelines.OAuthConfigurationUpdated |  Modify |   Deleted OAuth configuration '{ConfigName}'  for '{SourceType}' |
+| Pipelines.OrganizationSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 
 ### Policy
 | ActionId	| Category |	Details |
