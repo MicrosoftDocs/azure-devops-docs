@@ -81,7 +81,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
             {
                 "name": "[parameters('poolName')]",
                 "type": "microsoft.devopsinfrastructure/pools",
-                "apiVersion": "2024-04-04-preview",
+                "apiVersion": "2024-10-19",
                 "location": "[parameters('location')]",
                 "tags": {},
                 "properties": {
