@@ -37,7 +37,7 @@ Organizations are configured in the `organizationProfile` property of the Manage
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
             ...
@@ -195,7 +195,7 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
             ...

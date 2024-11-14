@@ -101,7 +101,7 @@ If your pool is configured for multiple organizations, the **Azure DevOps organi
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -173,7 +173,7 @@ Specify the maximum count of agents that are available for use in your pool. For
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -221,7 +221,7 @@ Agent size is configured using the `sku` property in the `fabricProfile` section
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -295,7 +295,7 @@ OS disk type is configured using the `osDiskStorageAccountType` property in the 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
