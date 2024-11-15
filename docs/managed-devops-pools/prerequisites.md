@@ -29,7 +29,7 @@ To use Managed DevOps Pools, register the following resource providers with your
 | Resource provider | Description |
 |-------------------|-------------|
 | **Microsoft.DevOpsInfrastructure** | Resource provider for Managed DevOps Pools |
-| **Microsoft.DevCenter** | Resource provider for dev denter and dev center project |
+| **Microsoft.DevCenter** | Resource provider for dev center and dev center project |
 
 Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
