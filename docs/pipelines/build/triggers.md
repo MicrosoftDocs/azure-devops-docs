@@ -4,7 +4,7 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 01/25/2023
+ms.date: 11/15/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -29,7 +29,7 @@ Continuous integration (CI) triggers vary based on the type of repository you bu
 - [CI triggers in GitHub](../repos/github.md#ci-triggers)
 - [CI triggers in Bitbucket Cloud](../repos/bitbucket.md#ci-triggers)
 - [CI triggers in TFVC](../repos/tfvc.md#ci-triggers)
-- [CI trigger YAML schema reference (`trigger`)](/azure/devops/pipelines/yaml-schema/trigger)
+- [CI trigger YAML schema reference](/azure/devops/pipelines/yaml-schema/trigger)
 
 <a name="pr-triggers"></a>
 Pull request validation (PR) triggers also vary based on the type of repository.
@@ -37,7 +37,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 - [PR triggers in Azure Repos Git](../repos/azure-repos-git.md#pr-triggers)
 - [PR triggers in GitHub](../repos/github.md#pr-triggers)
 - [PR triggers in Bitbucket Cloud](../repos/bitbucket.md#pr-triggers)
-- [PR trigger YAML schema reference (`pr`)](/azure/devops/pipelines/yaml-schema/pr)
+- [PR trigger YAML schema reference](/azure/devops/pipelines/yaml-schema/pr)
 
 [Gated check-in](../repos/tfvc.md#gated) is supported for TFVC repositories.
 
