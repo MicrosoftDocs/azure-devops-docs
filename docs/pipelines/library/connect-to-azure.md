@@ -14,6 +14,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+> [!NOTE]
+>We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
+
+
 An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
 
 ::: moniker range="azure-devops"

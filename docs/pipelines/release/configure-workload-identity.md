@@ -12,6 +12,8 @@ monikerRange: '>= azure-devops'
 
 # Manually set an Azure Resource Manager workload identity service connection
 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
 > [!NOTE]
 >We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
 
