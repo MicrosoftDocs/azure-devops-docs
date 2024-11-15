@@ -159,7 +159,7 @@ To add a new area path:
 1. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
     > [!div class="mx-imgBorder"]  
-    > ![Add a new area path](media/areas/new-area.png) 
+    > ![Add a new area path](media/areas/new-area-path.png) 
 
 1. Select **Save and close**
 
@@ -173,7 +173,7 @@ To add a child area path:
 1. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
-    > ![Add a new child area path](media/areas/new-child-area.png) 
+    > ![Add a new child area path](media/areas/new-area-preview.png) 
 
 1. Select **Save and close**
 
