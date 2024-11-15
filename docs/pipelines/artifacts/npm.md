@@ -179,4 +179,4 @@ To publish your packages to a feed in another Azure DevOps organization, you mus
 
 - [Publish and download pipeline artifacts](../artifacts/build-artifacts.md)
 - [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
-- [Deploy pull request Artifacts](../release/deploy-pull-request-builds).
+- [Deploy pull request Artifacts](../release/deploy-pull-request-builds.md).
