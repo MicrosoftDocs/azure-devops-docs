@@ -24,12 +24,12 @@ Manage DevOps Pools:
 * Can run long running workflows up to two days long
 * Can access resources in your company network or isolate your workload to only access specific endpoints
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
-* Can view all active agents and the status of agent provisioning and reimaging.
+* Can view all active agents and the status of agent provisioning and reimaging
 * Can attach a data disk, so you don't have to use a larger SKU just to get more disk space
-* Reduce your Azure cost by up to 80%, with SPOT instances (Coming by March 2025)
-* Has container agents (Coming by March 2025)
 * Purged problem stateful agents out of the pool (Coming by March 2025)
-* Can fall back to another geographical region when the primary region experiences an outage (Coming by March 2025)
+* Reduce your Azure cost by up to 80%, with SPOT instances (Coming 2025)
+* Has container agents (Coming 2025)
+* Can fall back to another geographical region when the primary region experiences an outage (Coming 2025)
 
 ## What's new for Managed DevOps Pools GA
 
