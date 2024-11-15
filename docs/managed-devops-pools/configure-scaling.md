@@ -843,8 +843,6 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 * **More performance** (`MorePerformance`) - 75th percentile
 * **Best performance** (`BestPerformance`) - 90th percentile
 
-You can view the projected and actual usage for any specific day within the last week, or a seven day average.
-
 #### [Azure portal](#tab/azure-portal/)
 
 :::image type="content" source="media/agent-performance/automatic-scaling.png" alt-text="Screenshot of automatic scaling setting.":::
