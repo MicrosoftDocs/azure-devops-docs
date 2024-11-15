@@ -4,10 +4,12 @@ description: How to enable and add upstream sources to a public feed in Azure Ar
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 03/02/2023
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ---
 
 # Use upstream sources in a public feed
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. In this article, you'll learn how to:
 
@@ -75,8 +77,6 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 Run the following command in your project directory to restore your packages:
 
-::: moniker range="azure-devops"
-
 #### [NuGet](#tab/nuget)
 
 ```Command
@@ -123,86 +123,6 @@ cargo build
 
 - - -
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020 < azure-devops"
-
-#### [NuGet](#tab/nugetserver)
-
-```Command
-nuget.exe restore
-```
-
-#### [Dotnet](#tab/dotnetserver)
-
-```Command
-dotnet restore --interactive
-```
-
-#### [Npm](#tab/npmserver)
-
-```Command
-npm install
-```
-
-#### [Maven](#tab/mavenserver)
-
-```Command
-mvn install
-```
-
-#### [Gradle](#tab/gradleserver)
-
-```Command
-gradle build
-```
-
-#### [Python](#tab/pythonserver)
-
-```Command
-pip install
-```
-
-- - -
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-#### [NuGet](#tab/nugetserver19)
-
-```Command
-nuget.exe restore
-```
-
-#### [Npm](#tab/npmserver19)
-
-```Command
-npm install
-```
-
-#### [Maven](#tab/mavenserver19)
-
-```Command
-mvn install
-```
-
-#### [Gradle](#tab/gradleserver19)
-
-```Command
-gradle build
-```
-
-#### [Python](#tab/pythonserver19)
-
-```Command
-pip install
-```
-
-- - -
-
-::: moniker-end
-
 > [!NOTE]
 > You must be a **Feed and Upstream Reader (Collaborator)** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
 
@@ -230,7 +150,7 @@ You can also use the NuGet CLI to force NuGet to use the source in your config f
 nuget restore -config <PATH_TO_NUGET_CONFIG_FILE>
 ```
 
-## Related articles
+## Related content
 
 - [Search for packages in upstream sources](search-upstream.md)
 - [Set up upstream sources](set-up-upstream-sources.md)
