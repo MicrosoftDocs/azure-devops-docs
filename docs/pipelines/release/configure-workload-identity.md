@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops'
 # Manually set an Azure Resource Manager workload identity service connection
 
 > [!NOTE]
->We are rolling out the [new Azure service connection creation experience](../../../release-notes/2024/sprint-246-update.md#new-azure-service-connection-creation-experience-with-improved-managed-identity-support). Receiving it in your organization depends on various factors, and you may still see the older user experience.
+>We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
 
 When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-microsoft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
 
