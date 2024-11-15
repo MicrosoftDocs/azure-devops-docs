@@ -1,16 +1,12 @@
 ---
 title: Overview
 description: Learn about Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
 ---
 
 # Overview
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Managed DevOps Pools empowers development teams to quickly and easily spin up Azure DevOps agent pools that are tailored to a team's specific needs. Managed DevOps Pools implements security best practices, provides knobs to balance cost and performance, provides paths for the most common scenarios, and significantly reduces time spent in creating and maintaining custom pools.
 

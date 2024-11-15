@@ -42,6 +42,8 @@
     href: monitor-pool.md
   - name: Diagnostic logs
     href: diagnostics.md
+  - name: Troubleshooting
+    href: troubleshooting.md
 - name: Manage cost and performance
   items:
   - name: Pricing
@@ -68,5 +70,7 @@
     href: /javascript/api/overview/azure/devops-infrastructure
   - name: Python
     href: /python/api/overview/azure/devops-infrastructure
+  - name: REST
+    href: /rest/api/devopspools
   - name: Terraform
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform

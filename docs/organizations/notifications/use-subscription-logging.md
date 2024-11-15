@@ -20,14 +20,14 @@ monikerRange: '<= azure-devops'
 
  For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
-Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
+Subscription logging is a valuable tool for troubleshooting. It provides diagnostic information from the notifications pipeline and is disabled by default. Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 
-## Enabling subscription logging
+## Enable subscription logging
 
-> [!IMPORTANT] 
-> There's a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
+> [!IMPORTANT]
+> TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions might cause notification delivery problems. If you're using on one of these versions, we recommend that you don't enable subscription logging for default subscriptions.
 
-Complete the following steps to enable subscription logging:
+To enable subscription logging, complete the following steps:
 
 1. Enable diagnostics for your organization by entering the following URL in your browser:
 
@@ -36,7 +36,7 @@ Complete the following steps to enable subscription logging:
 2. The option _Enable Diagnostics_ appears in the subscription context menu.
 
 > [!div class="mx-imgBorder"] 
->![Enable subscription logging](media/enable-subscription-logging.png)
+>![Screenshot shows enabled subscription logging.](media/enable-subscription-logging.png)
 
 ## View subscription diagnostic logs for event matching
 
@@ -66,8 +66,9 @@ Retrieve all notification delivery logs in a given time frame by entering the UR
 
 The result is JSON-formatted logging information.
 
+## Related articles
 
-
-
-
-
+- [Manage personal notifications](manage-your-personal-notifications.md)
+- [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md)
+- [Use @mentions in work items and pull requests](at-mentions.md)
+- [Learn about notifications](about-notifications.md)

@@ -1,14 +1,10 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Demands
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 [Demands](/azure/devops/pipelines/yaml-schema/pool-demands) provide a way for pipelines to specify what capabilities must be present in an agent in order for Azure DevOps to send a job from the pipeline to the agent. In Managed DevOps Pools, demands like [ImageOverride](#imageoverride) work just like demands in Azure Pipelines, where a pipeline job is routed to a specific agent that has attributes matching the demand, but some demands, like [WorkFolder](#workfolder) and [Priority](#priority), can be used to configure attributes on the agent. This article describes the demands available in Managed DevOps Pools and how to use them.
 
@@ -68,7 +64,7 @@ pool:
 
 ## ImageVersionOverride
 
-If you're using a Shared Image Gallery or Azure marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
+If you're using a Shared Image Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
 
 Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
 

@@ -218,9 +218,9 @@ sure you have the latest version of the target branches. Then, run the following
 
 ```
 $ git for-each-ref --format="%(is-base:HEAD) %(refname)" \
-           refs/remotesorigin/main \
-           "refs/remotesorigin/release/*" \
-           "refs/remotesorigin/feature/*"
+           refs/remotes/origin/main \
+           "refs/remotes/origin/release/*" \
+           "refs/remotes/origin/feature/*"
  refs/remotes/origin/main
  refs/remotes/origin/release/2024-September
 (HEAD) refs/remotes/origin/feature/targets

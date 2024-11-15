@@ -473,7 +473,7 @@ To manage access to specific features, see the following articles:
       - [About access levels](../organizations/security/access-levels.md) 
       - [Add team members (Azure DevOps Services)](../organizations/security/add-users-team-project.md) 
       - [Change access levels (on-premises deployments)](../organizations/security/change-access-levels.md) 
-      - [Add team members (on-premises deployments)](../organizations/settings/add-teams.md#add-team-members) 
+      - [Add team members (on-premises deployments)](../organizations/settings/add-teams.md) 
    :::column-end:::
    :::column span="1":::
       **Permissions** 

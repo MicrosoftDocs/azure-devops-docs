@@ -1,14 +1,10 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Configure scaling
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Configure scaling settings to manage the performance and cost of your Managed DevOps Pool. For information on pricing and performance, see [Manage cost and performance](manage-costs.md).
 
@@ -45,7 +41,7 @@ Agents are configured using the `agentProfile` property in the Managed DevOps Po
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -99,7 +95,7 @@ When **Agent state** is set to **Fresh agent every time**, a new agent is procur
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -183,7 +179,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -266,7 +262,7 @@ Manual standby agent provisioning is specified in the `resourcePredictionsProfil
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -603,7 +599,7 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -689,7 +685,7 @@ The following example configures four agents to be used during working hours wit
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -791,7 +787,7 @@ If you choose the all week scheme, you can specify a number of agents you want a
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -863,7 +859,7 @@ You can view the projected and actual usage for any specific day within the last
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...

@@ -129,7 +129,7 @@ sections:
 
       - question: Who can create charts?
         answer: |
-            To create charts, you need to be assigned Basic access or higher. 
+            To create charts, you need to be assigned at least Basic access. 
 
       - question: How can I edit or delete a chart?
         answer: |

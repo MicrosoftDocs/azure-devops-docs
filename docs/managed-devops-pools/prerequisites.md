@@ -1,14 +1,10 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Prerequisites for Managed DevOps Pools
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 There are a few things you need to prepare before using Managed DevOps Pools for the first time.
 
@@ -24,7 +20,7 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription)
 1. [Review Managed DevOps Pools quotas](#review-managed-devops-pools-quotas)
-1. [Create a Dev Center and Dev Center project](#create-a-dev-center-and-dev-center-project) (If you plan to create your Managed DevOps Pools using the Azure portal, you can create the Dev Center and Dev Center project during the pool creation process.)
+1. [Create a dev center and dev center project](#create-a-dev-center-and-dev-center-project) (If you plan to create your Managed DevOps Pools using the Azure portal, you can create the dev center and dev center project during the pool creation process.)
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
@@ -33,7 +29,7 @@ To use Managed DevOps Pools, register the following resource providers with your
 | Resource provider | Description |
 |-------------------|-------------|
 | **Microsoft.DevOpsInfrastructure** | Resource provider for Managed DevOps Pools |
-| **Microsoft.DevCenter** | Resource provider for Dev Center and Dev Center project |
+| **Microsoft.DevCenter** | Resource provider for dev denter and dev center project |
 
 Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
@@ -163,14 +159,14 @@ If your subscription doesn't have the capacity to configure your pool with desir
 
 Within 24 hours, the Managed DevOps Pools support team will evaluate your request and get back to you.
 
-### Create a Dev Center and Dev Center project
+### Create a dev center and dev center project
 
-Managed DevOps Pools requires a Dev Center and Dev Center project. You have the option to create a Dev Center and Dev Center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps. Multiple Managed DevOps Pools can use the same Dev Center and Dev Center project.
+Managed DevOps Pools requires a dev center and dev center project. You have the option to create a dev center and dev center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps. Multiple Managed DevOps Pools can use the same dev center and dev center project.
 
-* [Create a Dev Center](#create-a-dev-center)
-* [Create a Dev Center Project](#create-a-dev-center-project)
+* [Create a dev center](#create-a-dev-center)
+* [Create a dev center Project](#create-a-dev-center-project)
 
-#### Create a Dev Center
+#### Create a dev center
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the Azure portal menu, search for **Dev centers**, select it from the available options, and choose **Create**.
@@ -179,24 +175,24 @@ Managed DevOps Pools requires a Dev Center and Dev Center project. You have the 
 
 1. Choose the desired **Subscription**, **Resource group**, **Name**, and **Location**, and choose **Review + Create**.
 
-   ![Screenshot of Create a Dev center.](./media/prerequisites/create-dev-center.png)
+   ![Screenshot of Create a dev center.](./media/prerequisites/create-dev-center.png)
 
-1. On the confirmation window, choose **Create** to create the Dev center.
-1. Wait until the new Dev center is created, and proceed to the next section and create a Dev Center Project.
+1. On the confirmation window, choose **Create** to create the dev center.
+1. Wait until the new dev center is created, and proceed to the next section and create a dev center Project.
 
-#### Create a Dev Center Project
+#### Create a dev center Project
 
-1. Go to the Dev Center created in the previous section, and choose **Create project**.
+1. Go to the dev center created in the previous section, and choose **Create project**.
 
-   ![Screenshot of Create Dev Center Project button](./media/prerequisites/create-dev-center-proect-button.png)
+   ![Screenshot of Create dev center Project button](./media/prerequisites/create-dev-center-proect-button.png)
 
-1. Choose the desired **Subscription**, **Resource group**, **Dev center**, **Name**, and choose **Review + Create**.
+1. Choose the desired **Subscription**, **Resource group**, **dev center**, **Name**, and choose **Review + Create**.
 
-   ![Screenshot of Create a Dev center project.](./media/prerequisites/create-dev-center-project.png)
+   ![Screenshot of Create a dev center project.](./media/prerequisites/create-dev-center-project.png)
 
-1. On the confirmation window, choose **Create** to create the Dev center project.
+1. On the confirmation window, choose **Create** to create the dev center project.
 
-1. When you create your Managed DevOps Pool, specify the Dev Center and Dev Center project you created in these steps.
+1. When you create your Managed DevOps Pool, specify the dev center and dev center project you created in these steps.
 
 ## Configure your Azure DevOps organization
 

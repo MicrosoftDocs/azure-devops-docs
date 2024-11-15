@@ -6,9 +6,9 @@ ms.subservice: azure-devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
-ms.topic: quickstart
+ms.topic: conceptual
 monikerRange: '= azure-devops'
-ms.date: 08/03/2022
+ms.date: 11/11/2024
 ---
 
 # Auditing events list
@@ -22,9 +22,9 @@ The following tables describe the type of events (or actions) that are available
 
 [!INCLUDE [important-backed-by-azure-active-directory](includes/important-backed-by-azure-active-directory.md)]
 
-* Any given event belongs to a specific *Product Area*. The full list of areas is in the [Area table](#areas).
-* An event has a *Category* field that reflects the type of action performed during the event. The list of possible action types is in the [Categories table](#categories).
-* The list of all possible actions is grouped by *Product Area* and can be found in the [Actions section](#actions).
+* Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
+* Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
+* Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
 
 > [!NOTE]
 > We try our best to keep adding new actions regularly. If you'd like to see an event that isn't currently in the following tables, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
@@ -37,7 +37,7 @@ The following tables describe the type of events (or actions) that are available
 | [Billing](#billing)        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
 | [Checks](#checks)          | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
 | [Extension](#extension)    | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
-| [Git](#git)                | Create, modify, enable, disable, fork, delete and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
+| [Git](#git)                | Create, modify, enable, disable, fork, delete, and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
 | [Group](#group)            | Create groups and modify group memberships.          |
 | [Library](#library)        | Create, modify, delete, and track usage of service connections, variable groups, secure files, and agent pools in Azure Pipelines. |
 | [Licensing](#licensing)    | Assign, modify, and remove licensing. Create, modify, and delete group licensing rules.           |
@@ -95,9 +95,9 @@ The following tables describe the type of events (or actions) that are available
 ### Checks
 | ActionId |	Category |	Details |
 |----------|-----------|----------|
-| CheckConfiguration.Created |	Create |	{Type} check has been added to {ResourceType} {ResourceName} |
-| CheckConfiguration.Deleted |	Remove |	{Type} check has been removed from {ResourceType} {ResourceName} |
-| CheckConfiguration.Updated |	Modify |	{Type} check has been updated for {ResourceType} {ResourceName} |
+| CheckConfiguration.Created |	Create |	{Type} check was added to {ResourceType} {ResourceName} |
+| CheckConfiguration.Deleted |	Remove |	{Type} check was removed from {ResourceType} {ResourceName} |
+| CheckConfiguration.Updated |	Modify |	{Type} check was updated for {ResourceType} {ResourceName} |
 | CheckSuite.Completed |	Execute	| Checks on stage {StageName} of run #{RunName} of pipeline {PipelineName} in Project {ResolveProjectId:ProjectId} have been {CheckSuiteStatus} |
 
 ### Extension
@@ -107,7 +107,7 @@ The following tables describe the type of events (or actions) that are available
 | Extension.Enabled |	Modify |	Extension "{ExtensionName}" from publisher "{PublisherName}" was enabled |
 | Extension.Installed |	Create |	Extension "{ExtensionName}" from publisher "{PublisherName}" was installed - Version "{Version}" |
 | Extension.Uninstalled	| Remove |	Extension "{ExtensionName}" from publisher "{PublisherName}" was uninstalled |
-| Extension.VersionUpdated |	Modify |	Extension "{ExtensionName}" from publisher "{PublisherName}" has been updated from version "{FromVersion}" to version "{Version}" |
+| Extension.VersionUpdated |	Modify |	Extension "{ExtensionName}" from publisher "{PublisherName}" was updated from version "{FromVersion}" to version "{Version}" |
 
 ### Git
 | ActionId |	Category |	Details |
@@ -142,11 +142,13 @@ The following tables describe the type of events (or actions) that are available
 | Library.AgentPoolDeleted | Remove |	Deleted agent pool {AgentPoolName}. |
 | Library.AgentsDeleted	| Modify |	Removed multiple agents from pool {AgentPoolName}. |
 | Library.ServiceConnectionCreated |	Create |	Created Service Connection "{ConnectionName}" of type {ConnectionType}. |
+| Library.ServiceConnectionCreatedForMultipleProjects | Create | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | Library.ServiceConnectionDeleted |	Remove |	Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionDeletedFromMultipleProjects	| Remove |	Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple Projects. |
 | Library.ServiceConnectionExecuted	| Execute |	Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionForProjectModified |	Modify |	Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionModified |	Modify |	Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
+| Library.ServiceConnectionPropertyChanged | Modify
 | Library.ServiceConnectionShared |	Modify | Shared Service Connection "{ConnectionName}" of type {ConnectionType} with project {ResolveProjectId:ProjectId}. |
 | Library.ServiceConnectionSharedWithMultipleProjects	| Modify |	Shared Service Connection "{ConnectionName}" of type {ConnectionType} with multiple projects. |
 | Library.VariableGroupCreated |	Create |	Created Variable Group "{VariableGroupName}" in project {ResolveProjectId:ProjectId}. |
@@ -190,7 +192,7 @@ The following tables describe the type of events (or actions) that are available
 |-----------|----------|----------|
 | Security.ModifyAccessControlLists |	Modify | Permission "{NamespaceName}\{ChangedPermission}" was set to {PermissionModifiedTo} for {ResolveIdentity:SubjectDescriptor} |
 | Security.ModifyPermission	| Modify	| Permission "{NamespaceName}\{ChangedPermission}" was set to {PermissionModifiedTo} for {ResolveIdentity:SubjectDescriptor} |
-| Security.RemoveAccessControlLists |	Remove |	All access control lists were removed on namespace {NamespaceName} on token(s) {Tokens} |
+| Security.RemoveAccessControlLists |	Remove |	All access control lists were removed on namespace {NamespaceName} on tokens {Tokens} |
 | Security.RemoveAllAccessControlLists |	Remove |	{ResolveIdentity:ActorId} removed all Access Control Lists |
 | Security.RemoveIdentityACEs |	Remove |	{ResolveIdentity:ActorId} removed an identity ACE |
 | Security.RemovePermission |	Remove |	All permissions were removed for {ResolveIdentity:Identities} on namespace {NamespaceName} and token {Token} |
@@ -211,9 +213,12 @@ The following tables describe the type of events (or actions) that are available
 | Pipelines.ResourceNotAuthorizedForProject	| Modify |	Didn't authorize {ResourceType} resource {ResourceId} for the project. The resource doesn't exist or the user doesn't have permission |
 | Pipelines.ResourceUnauthorizedForPipeline	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for pipeline ID {PipelineId} |
 | Pipelines.ResourceUnauthorizedForProject	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for the project |
-| Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease id {RetentionLeaseId} to {RetentionOwnerId} |
+| Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId} |
 | Pipelines.RunUnretained	 | Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained |
 | Pipelines.ProjectSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
+| Pipelines.OAuthConfigurationCreated |  Create |   Created OAuth configuration '{ConfigName}'  for '{SourceType}' |
+| Pipelines.OAuthConfigurationDeleted |  Remove |   Updated OAuth configuration '{ConfigName}'  for '{SourceType}' |
+| Pipelines.OAuthConfigurationUpdated |  Modify |   Deleted OAuth configuration '{ConfigName}'  for '{SourceType}' |
 | Pipelines.OrganizationSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 
 ### Policy
@@ -253,12 +258,12 @@ The following tables describe the type of events (or actions) that are available
 | Process.Page.Add	| Create |	Page "{PageName}" added to work item type "{WorkItemTypeReferenceName}". |
 | Process.Page.Delete	| Remove |	Page "{PageName}" deleted from work item type "{WorkItemTypeReferenceName}". |
 | Process.Page.Update	| Modify |	Page "{PageName}" updated for work item type "{WorkItemTypeReferenceName}". |
-| Process.Process.CloneXmlToInherited |	Create |	The process "{ParentProcessName}" has been cloned to an inherited process called "{TargetProcessName}". |
+| Process.Process.CloneXmlToInherited |	Create |	The process "{ParentProcessName}" was cloned to an inherited process called "{TargetProcessName}". |
 | Process.Process.Create |	Create |	Created inherited process "{ProcessName}". |
-| Process.Process.Delete |	Remove |	Process "{ProcessName}" has been set as deleted. |
-| Process.Process.Edit |	Modify |	Process with the name "{OldProcessName}" has been modified, and has the following name {NewProcessInformation}. |
-| Process.Process.EditWithoutNewInformation |	Modify |	Process with the name "{OldProcessName}" has been modified. |
-| Process.Process.Import |	Create |	New process "{ProcessName}" has been imported. |
+| Process.Process.Delete |	Remove |	Process "{ProcessName}" was set as deleted. |
+| Process.Process.Edit |	Modify |	Process with the name "{OldProcessName}" was modified, and has the following name {NewProcessInformation}. |
+| Process.Process.EditWithoutNewInformation |	Modify |	Process with the name "{OldProcessName}" was modified. |
+| Process.Process.Import |	Create |	New process "{ProcessName}" was imported. |
 | Process.Process.MigrateXmlToInherited |	Modify |	Process for project "{ProjectName}" was changed from "{OldProcess}" to "{NewProcess}". |
 | Process.Rule.Add |	Create |	Rule "{RuleName}" added to "{WorkItemReferenceName}" for process "{ProcessName}". |
 | Process.Rule.Delete |	Remove |	Rule "{RuleName}" deleted from "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
@@ -275,9 +280,9 @@ The following tables describe the type of events (or actions) that are available
 ### Project
 | ActionId |	Category |	Details |
 |----------|-----------|----------|
-| Project.AreaPath.Create	| Create |	Area path "{Path}" has been created. |
-| Project.AreaPath.Delete |	Remove |	Area path "{Path}" has been deleted. |
-| Project.AreaPath.Update |	Modify |	Area path "{Path}" has been updated. |
+| Project.AreaPath.Create	| Create |	Area path "{Path}" was created. |
+| Project.AreaPath.Delete |	Remove |	Area path "{Path}" was deleted. |
+| Project.AreaPath.Update |	Modify |	Area path "{Path}" was updated. |
 | Project.Create |	Create |	Project {ProjectName} was created successfully |
 | Project.CreateCompleted |	Create |	Project {ProjectName} was created successfully |
 | Project.CreateFailed |	Create |	Project {ProjectName} failed to be created |
@@ -301,7 +306,7 @@ The following tables describe the type of events (or actions) that are available
 ### Release
 | ActionId |	Category |	Details |
 |----------|-----------|----------|
-| Release.ApprovalCompleted |	Modify |	{ApprovalType} approval for deployment of release "{ReleaseName}" to stage "{StageName}" has been {ApprovalResult} in Project {ResolveProjectId:ProjectId} |
+| Release.ApprovalCompleted |	Modify | {ApprovalType} approval for deployment of release "{ReleaseName}" to stage "{StageName}" was {ApprovalResult} in Project {ResolveProjectId:ProjectId} |
 | Release.ApprovalsCompleted |	Modify	| Multiple {ApprovalType} approvals for deployment of release "{ReleaseName}" have been {ApprovalResult} in Project {ResolveProjectId:ProjectId}|
 | Release.DeploymentCompleted	| Execute	| Deployment of release "{ReleaseName}" on pipeline "{PipelineName}" to "{StageName}" in Project {ResolveProjectId:ProjectId} was {DeploymentResult}|
 | Release.DeploymentsCompleted	| Execute	| Deployments of multiple stages of release "{ReleaseName}" on pipeline "{PipelineName}" were {DeploymentResult} in Project {ResolveProjectId:ProjectId}|
