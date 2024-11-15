@@ -5,11 +5,11 @@ ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica
-ms.date: 11/11/2024
+ms.date: 11/14/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Deployment gates overview
+# Deployment gates concepts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 

@@ -217,7 +217,7 @@
     - name: Invoke Azure Function / REST API checks
       displayName: azure function, checks
       href: process/invoke-checks.md
-    - name: Define a gate
+    - name: Deployment gates concepts
       href: release/approvals/gates.md
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
