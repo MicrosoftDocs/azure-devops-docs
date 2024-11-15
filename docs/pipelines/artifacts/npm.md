@@ -85,66 +85,53 @@ steps:
 
 * * *
 
-## Publish to a public registry
+## Publish packages to a feed in another organization
 
-Before publishing your packages to a public npm registry like npmjs.com, you must first create a service connection to authenticate with the desired external service.
+To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
+
+1. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. 
+
+1. In a command prompt window, run the following command to encode your personal access token. Replace the placeholder with the personal access token you created in the previous step:
+
+    ```
+    node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+    ```
+
+1. Copy your Base64 encoded personal access token as you'll need it in the following section.
+
+#### Create a service connection
+
+1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
+
+1. Navigate to your **Project settings** > **Service connections**. 
+
+1. Select **New service connection**, select **npm**, and then select **Next**. 
+
+1. Select **Username and Password** as the **Authentication method**, and then enter your **Registry URL**. Enter your **Username** and **Password**, provide a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Save** when you're done.
+
+#### Publish packages
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Project settings** > **Service connections**, and then select **Create service connection**.
+1. Select **Pipelines**, and then select your pipeline definition.
 
-    :::image type="content" source="./media/create-service-connection.png" alt-text="A screenshot that shows how to create a new service connection in Azure DevOps.":::
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
-1. Select **npm** and then select **Next**. Fill out the required fields, and then select **Save** when you're done.
+    ```yaml
+    - task: NodeTool@0
+      inputs:
+        checkLatest: true
 
-#### [YAML](#tab/yaml/)
-
-```yaml
-- task: Npm@1
-  inputs:
-    command: publish
-    publishRegistry: useExternalRegistry
-    publishEndpoint: '<NAME_OF_YOUR_SERVICE_CONNECTION>'
-```
-
-- **publishRegistry**: select *useExternalRegistry* to publish to a public registry. Options: useExternalRegistry | useFeed.
-- **publishEndpoint**: replace the placeholder with the name of the service connection you created earlier. required when *publishRegistry* == *useExternalRegistry*.
-
-#### [Classic](#tab/classic/)
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *npm* task, and then select **Add** to add it to your pipeline.
-
-    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot that shows how to find and add the npm task.":::
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
-
-1. Navigate to the Azure DevOps portal, and then select your project.
-
-2. Select **Pipelines**, and then select your pipeline definition. 
-
-3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *npm* task, and then select **Add** to add it to your pipeline.
-
-    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot that shows how to find and add the npm task.":::
-
-::: moniker-end
-
-4. Name your task and then select **Publish** from the commands dropdown menu. Specify your *package.json* path, your **Registry location**, and your **External registry**.
-
-    - **Working folder that contains package.json**: path to the folder containing the target *package.json* and *.npmrc* files. Leave this blank if those files are at the root of your repo.
-    - **Registry location**: select **External npm registry** to publish to a public registry such as npmjs.com. 
-    - **External registry**: select the service connection you created earlier.
-
-    :::image type="content" source="./media/npm-publish-registry.png" alt-text="A screenshot that shows how to configure the npm task to publish packages to a public registry.":::
-
-* * *
+    - task: npmAuthenticate@0
+      inputs:
+        workingFile: .npmrc
+        customEndpoint: <SERVICE_CONNECTION_NAME>
+        
+    - script: |
+       npm publish    
+    ```
 
 ## Related articles
 
