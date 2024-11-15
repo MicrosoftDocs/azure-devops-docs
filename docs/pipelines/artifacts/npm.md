@@ -113,6 +113,8 @@ To publish your packages to a feed in another Azure DevOps organization, you mus
 
 #### Publish packages
 
+#### [YAML](#tab/yaml/)
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Pipelines**, and then select your pipeline definition.
@@ -133,8 +135,48 @@ To publish your packages to a feed in another Azure DevOps organization, you mus
        npm publish    
     ```
 
-## Related articles
+#### [Classic](#tab/classic/)
 
-- [Publish and restore npm packages from the command line](../../artifacts/npm/publish.md).
-- [Use packages from npmjs.com](../../artifacts/npm/upstream-sources.md).
-- [Publish and download pipeline artifacts](./pipeline-artifacts.md).
+::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+::: moniker-end
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Node.js tool installer*, *npm Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *Node.js tool installer* task with the default settings and configure the *npm Authenticate* and *Command line* tasks as follows:.
+
+    1. **npm Authenticate task**: 
+        1. Select the path to your *.npmrc* file.
+        1. Select the service connection you created earlier from the **Credentials for registries outside this organization/collection** dropdown menu.
+    
+    1. **Command line task**:
+        - **Display name**: Publish.
+        - **Script**: 
+            ```
+            npm publish
+            ```
+- - -
+
+## Related content
+
+- [Publish and download pipeline artifacts](../artifacts/build-artifacts.md)
+- [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
+- [Deploy pull request Artifacts](../release/deploy-pull-request-builds).
