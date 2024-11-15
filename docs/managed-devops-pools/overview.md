@@ -25,7 +25,7 @@ Manage DevOps Pools:
 * Can access resources in your company network or isolate your workload to only access specific endpoints
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
 * Can view all active agents and the status of agent provisioning and reimaging.
-* Can have an additional data disk, so you don't have to use a larger SKU just to get more disk space
+* Can attach a data disk, so you don't have to use a larger SKU just to get more disk space
 * Reduce your Azure cost by up to 80%, with SPOT instances (Coming by March 2025)
 * Has container agents (Coming by March 2025)
 * Purged problem stateful agents out of the pool (Coming by March 2025)
