@@ -24,12 +24,24 @@ Manage DevOps Pools:
 * Can run long running workflows up to two days long
 * Can access resources in your company network or isolate your workload to only access specific endpoints
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
-* Can view all active agents and the status of agent provisioning and reimaging.
-* Can have an additional data disk, so you don't have to use a larger SKU just to get more disk space
-* Reduce your Azure cost by up to 80%, with SPOT instances (Coming by March 2025)
-* Has container agents (Coming by March 2025)
+* Can view all active agents and the status of agent provisioning and reimaging
+* Can attach a data disk, so you don't have to use a larger SKU just to get more disk space
 * Purged problem stateful agents out of the pool (Coming by March 2025)
-* Can fall back to another geographical region when the primary region experiences an outage (Coming by March 2025)
+* Reduce your Azure cost by up to 80%, with SPOT instances (Coming 2025)
+* Has container agents (Coming 2025)
+* Can fall back to another geographical region when the primary region experiences an outage (Coming 2025)
+
+## What's new for Managed DevOps Pools GA
+
+**Managed DevOps Pools supported in more Azure regions**: Managed DevOps Pools is now available in Sweden Central, Brazil South, Japan East, UAE North, Korea Central, and Norway East, allowing you to leverage regional resources for optimized performance and compliance. To see the Azure regions that support Managed DevOps Pools in your subscription, [register the Microsoft.DevOpsInfrastructure provider in your subscription and view the supported locations](prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
+
+**Proxy support**: You can set up your Managed DevOps Pools to direct network traffic through a proxy. By using an image with a preinstalled proxy, you can run your Azure pipelines on Managed DevOps Pools behind a proxy, like the current Azure Virtual Machine Scale Set agents offering. This setup enables the agent to retrieve sources and download artifacts, passing the proxy details to tasks that also require proxy settings to access the web. For more information, see [Proxy support](./configure-networking.md#configure-the-azure-devops-agent-to-run-behind-a-proxy).
+
+**View agent IP address**: You can now view the IP address of the agent in the Initialize job step of your pipeline log, useful for scenarios such as investigating failing pipelines due to proxies or firewall rules.
+
+**Move to another resource group or subscription**: You now have the option to move your Managed DevOps Pools to another Azure resource group or to another subscription. For more information, see [Move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
+
+**Ubuntu 24.04 support**: We've added support for Ubuntu 24.04 by adding three images to [Selected marketplace images](./configure-images.md#selected-marketplace-images) and enabling bring-your-own Ubuntu 24.04 images using [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images). 
 
 ## Benefits
 
