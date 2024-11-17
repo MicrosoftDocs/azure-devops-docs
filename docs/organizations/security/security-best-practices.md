@@ -74,7 +74,7 @@ The system handles permissions at various levels—individual, collection, proje
 - **Provide least privilege access:** Ideally, users and services should have the minimum necessary access to perform their business functions.
 
 > [!NOTE]
-> In the context of CI/CD, implementing [least privilege access](https://en.wikipedia.org/wiki/Principle_of_least_privilege) can be counterproductive due to the dynamic nature of architecture. Each time a new service is introduced, permissions must be updated beforehand. Additionally, rollbacks may require extra permissions that need to be considered. This challenge is magnified in environments with multiple pipelines.
+> In the context of CI/CD, implementing [least privilege access](https://wikipedia.org/wiki/Principle_of_least_privilege) can be counterproductive due to the dynamic nature of architecture. Each time a new service is introduced, permissions must be updated beforehand. Additionally, rollbacks may require extra permissions that need to be considered. This challenge is magnified in environments with multiple pipelines.
 > While least privilege permissions aim to minimize the impact of security breaches, it's crucial to balance security with productivity. This can be achieved by adopting more permissive access and mitigating the associated risks with compensating controls and security practices outlined on this page.
 
 - **Disable inheritance:** Whenever possible, disable inheritance. Inheritance can inadvertently grant access or permissions to unexpected users due to its allow-by-default nature. For more information, see the [section on permission inheritance](about-permissions.md#permission-inheritance)
