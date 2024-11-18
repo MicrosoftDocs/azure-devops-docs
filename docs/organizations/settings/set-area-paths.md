@@ -146,7 +146,7 @@ Only one root area is defined by default. Add new and child area paths under the
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
-You can also new and child add area paths to a team. For more information, see [Set team area paths](#set-team-area-paths).
+You can also add new and child area paths to a team. For more information, see [Set team area paths](#set-team-area-paths).
 
 #### [Browser](#tab/browser/)
 

@@ -80,12 +80,12 @@ Add links to work items to show relationships between them and other work items 
 ## Follow a work item
 
 To track the progress of a single work item, select the **Follow** icon 
- :::image type="icon" source="../media/icons/follow-icon.png" border="false":::. This action send you email alerts when changes are made to the work item.
+ :::image type="icon" source="../media/icons/follow-icon.png" border="false":::. This action sends you email alerts when changes are made to the work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Work item form, Follow icon control.](../work-items/media/follow-work/follow-work-item.png) 
 
-You receive notifications when other project members modify the work item, such as when they add to the discussion, change a field value, or add an attachment.
+You receive notifications when other project members modify the work item, such as adding to the discussion, change a field value, or add an attachment.
 
 You can specify the types of changes you want to be notified about. When you select the settings icon, :::image type="icon" source="../media/icons/settings-icon.png" border="false"::: you can select:
 
@@ -104,7 +104,7 @@ To stop following changes, select the  **Following** icon :::image type="icon" s
 
 ## Attachments
 
-You can attach files to work items to provide additional context or information. You can attach up to 100 files to a work item. Each attachment is limited to 60 MB. You can manage attachments through the web portal by selecting the attachment tab on your work item.
+You can attach files to work items to provide more context or information. You can attach up to 100 files to a work item. Each attachment is limited to 60 MB. You can manage attachments through the web portal by selecting the attachment tab on your work item.
 
 For more information, see [Manage attachments to work items](../work-items/manage-attachments.md).
 
