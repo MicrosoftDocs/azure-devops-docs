@@ -159,7 +159,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders use drag-and-drop to create and change work items, but only change the State field on cards. They also can’t [see or adjust capacity](../../boards/sprints/set-capacity.md).
+      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders use drag-and-drop to create and change work items, but only change the State field on cards. They only view [the sprint capacity settings](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
