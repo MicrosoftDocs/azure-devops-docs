@@ -8,7 +8,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/07/2024
+ms.date: 11/18/2024
 ---
 
 # Plan your organizational structure
@@ -162,16 +162,17 @@ Azure Repos offers the following version control systems for teams to choose fro
 
 TFVC is a centralized version control system that is also available. Unlike Git, only one TFVC repository is allowed for a project. But, within that repo, folders, and branches are used to organize code for multiple products and services, if wanted. Projects can use both TFVC and Git, if appropriate.
 
-### Monorepo vs one repo per service
+### Monorepo vs. one repo per service
 
-Deploying various independent services from a monorepo can be very effective for small teams aiming to build early momentum. However, this strategy can become problematic as the team grows due to several factors:
+Deploying various independent services from a monorepo can be effective for small teams aiming to build early momentum. However, this strategy can become problematic as the team grows due to several factors:
+
 - The knowledge required for new members increases with the overall complexity of the system.
 - Code sharing within a single repository can result in unintended coupling between services.
-- Changes in shared code can impact the behavior of various services, and tracking these changes can be challenging.
+- Changes in shared code can impact the behavior of various services, making it challenging to track these changes.
 
-For larger teams, managing a monorepo necessitates strong engineering discipline and robust tooling. On the other hand, you can opt for individual repositories for each service, along with a separate repo for shared resources. Although this approach involves more initial setup, it scales more effectively as the team grows and makes onboarding easier for new members, who can concentrate solely on their specific service repo.
+For larger teams, managing a monorepo necessitates strong engineering discipline and robust tooling. Alternatively, you can opt for individual repositories for each service, along with a separate repo for shared resources. Although this approach involves more initial setup, it scales more effectively as the team grows. It also makes onboarding easier for new members, who can concentrate solely on their specific service repo.
 
-If you're starting with a small team, a monorepo is can be a good choice. As your team expands and complexity rises, you can transition to separate repositories.
+If you’re starting with a small team, a monorepo can be a good choice. As your team expands and complexity rises, you can transition to separate repositories.
 
 ### One vs. many repos within a project
 
