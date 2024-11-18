@@ -1049,7 +1049,7 @@ steps:
 - script: echo $(secondEval)
 ```
 
-You can also use the `eq()` expression for evaluating equivalence. Values are implicitly converted to numbers (`false` to `0` and `true` to `1`).
+When you use the `eq()` expression for evaluating equivalence, values are implicitly converted to numbers (`false` to `0` and `true` to `1`).
 
 ```yaml
 variables:
