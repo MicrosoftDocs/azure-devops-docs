@@ -35,7 +35,7 @@ Once you select the work item you want to update, you can make changes to the wo
 
 # [Visual Studio 2019](#tab/visual-studio)
 
-To update a work item.From the Team Explorer, select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
+To update a work item. From the Team Explorer, select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
 
 ### [Azure DevOps CLI](#tab/azure-devops-cli)
 
