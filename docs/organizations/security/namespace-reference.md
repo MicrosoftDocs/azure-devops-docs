@@ -1,68 +1,68 @@
 ---
 title: Namespace reference  
 titleSuffix: Azure DevOps
-description: Learn about the security namespaces used to manage access control in Azure DevOps, including associated permissions and detailed information.  
+description: Understand the set of namespaces used to manage security.  
 ms.subservice: azure-devops-security
 ms.custom: quarterly-review
 ms.topic: reference
 ms.author: chcomley
 author: chcomley
-ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/31/2024
+ms.date: 04/04/2022  
 ---
 
 # Security namespace and permission reference for Azure DevOps 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes the valid security namespaces, lists the associated permissions, and provides links to more information. Security namespaces store access control lists ([ACLs](/rest/api/azure/devops/security/access-control-lists/query)) on tokens, determining the level of access various entities have to perform specific actions on specific resources. These entities include:
-
-- Azure DevOps users
-- Azure DevOps organization owners
-- Members of Azure DevOps security groups
-- Azure DevOps service accounts
-- Azure DevOps service principals
-
-Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. An ACL includes a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE consists of an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
+Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces determines the level of access the following entities have to perform a specific action on a specific resource.
+- Azure DevOps user 
+- Azure DevOps Organization owner  
+- Member of an Azure DevOps security group 
+- Azure DevOps service account  
+- Azure DevOps service principal  
+ 
+Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query)
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
 
 
 ## Permission management tools 
 
-The recommended method for managing permissions is through the web portal. However, to set permissions that are unavailable through the portal or to manage granular permissions, use command line tools or the REST API:
+The recommended method for managing permissions is through the web portal. However, to set permissions unavailable through the portal or granular permissions, use command line tools or the REST API.
+- For Azure DevOps Services, you can use the `az devops security permission` commands. 
+- For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
+- For Azure DevOps git repositories,[tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
+- For Team Foundation Version Control (TFVC) repositories, [TF TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
 
-- For Azure DevOps Services, use the `az devops security permission` commands.
-- For Azure DevOps Server, use the TFSSecurity commands.
-- For Azure DevOps Git repositories, use the [tf git permission command-line tool](../../repos/tfvc/git-permission-command.md).
-- For Team Foundation Version Control (TFVC) repositories, use the [TFVC permission command-line tool](../../repos/tfvc/permission-command.md).
-
-For all Azure DevOps instances, you can also use the [Security REST API](/rest/api/azure/devops/security).
+For all Azure DevOps instances, you can use the [Security REST API](/rest/api/azure/devops/security). 
 
 ## Security namespaces and their IDs
 
-Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or specific permissions aren't visible through the web portal and grant access by default to members of security groups or Azure DevOps service principals. These namespaces are grouped into the following categories based on how they're managed through the web portal:
+This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces are grouped into the following categories based on how they're managed through the web portal. 
 
-- Object-level
+
+- Object-level 
 - Project-level
-- Organization or collection-level
-- Server-level (on-premises only)
-- Role-based
-- Internal only
+- Organization or collection-level 
+- Server-level (on-premises only) 
+- Role-based 
+- Internal only 
+
 
 ### Hierarchy and tokens 
 
-A security namespace can be either hierarchical or flat. In a hierarchical namespace, tokens exist in a hierarchy where effective permissions are inherited from parent tokens to child tokens. In contrast, tokens in a flat namespace have no parent-child relationship.
+A security namespace can be either hierarchical or flat. Tokens in a hierarchical namespace exist in a hierarchy with effective permissions inherited from parent tokens to child tokens. Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
 
-Tokens in a hierarchical namespace can have either fixed-length or variable-length path parts. If the tokens have variable-length path parts, a separator character is used to distinguish where one path part ends and another begins.
+Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
+If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
 
-Security tokens are case-insensitive. Examples of tokens for different namespaces are provided in the following sections.
+Security tokens are case-insensitive. Token examples for different namespaces are provided in the following sections. 
 
 ## Object-level namespaces and permissions
 
-The following table describes the namespaces that manage object-level permissions. Most of these permissions are managed through the web portal page for each object. Permissions are set at the project level and inherited at the object level unless explicitly changed.
+The following table describes the namespaces that manage object-level permissions. Most of the listed permissions are managed through the web portal page for each object. Permissions are set at the project-level and inherited at the object-level unless changed.
 
 ---
 :::row:::
@@ -90,12 +90,12 @@ The following table describes the namespaces that manage object-level permission
       `ManagePermissions`   
    :::column-end:::
    :::column span="2":::
-      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-object-level) to read, edit, delete, and generate reports. You can manage these permissions for each [analytics view from the user interface](../../report/powerbi/analytics-security.md).  
+      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-object-level) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](../../report/powerbi/analytics-security.md).  
       <br/>
       **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
-      **Example**: `$/Shared/xxxxxxxx-aaaa-1111-bbbb-11111`   
+      **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`   
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `d34d3680-dfe5-4cc6-a949-7d9c68f73cba`
    :::column-end:::
 :::row-end:::
 ---
@@ -125,11 +125,11 @@ The following table describes the namespaces that manage object-level permission
       [Manages build permissions at the project-level and object-level](permissions.md#build-object-level).  
       <br/>
       **Token format for project-level build permissions**: `PROJECT_ID`  
-      If you need to update permissions for a particular build definition ID, for example, 12, security token for that build definition looks like the following example:  
+      If you need to update permissions for a particular build definition ID, for example, 12, security token for that build definition looks as follows:  
       **Token format for project-level, specific build permissions**: `PROJECT_ID/12`  
-      **Example**: `xxxxxxxx-aaaa-1111-bbbb-11111/12`  
+      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12`  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `33344d9c-fc72-4d6f-aba5-fa317101a7e9`
    :::column-end:::
 :::row-end:::
 ---
@@ -148,10 +148,9 @@ The following table describes the namespaces that manage object-level permission
       `MANAGE_TEST_SUITES`   
    :::column-end:::
    :::column span="2":::
-      [Manages area path object-level permissions](permissions.md#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. For more information, see [Set permissions and access for work tracking,  Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).  
-      **Token format example:** `POST https://dev.azure.com/{organization}/_apis/securitynamespaces/{namespaceId}/permissions?api-version=6.0 { "token": "vstfs:///Classification/Node/{area_node_id}", "permissions": { "allow": 1, "deny": 0 } }`
+      [Manages area path object-level permissions](permissions.md#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. You can manage these permissions through the [Set permissions and access for work tracking,  Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `83e28ad4-2d72-4ceb-97b0-c7726d5502c3`
    :::column-end:::
 :::row-end:::
 ---
@@ -168,9 +167,9 @@ The following table describes the namespaces that manage object-level permission
       `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
-      [Manages dashboard object-level permissions](permissions.md#dashboards-object-level) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
+      [Manages dashboard object-level permissions](permissions.md#dashboards-object-level) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
 :::row-end:::
 ---
@@ -208,7 +207,7 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for branch-level permissions** is described in [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/).
       <br/><br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87`
    :::column-end:::
 :::row-end:::
 ---
@@ -235,10 +234,10 @@ The following table describes the namespaces that manage object-level permission
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration2ChildIteration1  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration2ChildIteration2  
       <br/>
-      To update permissions for `ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1`, the security token looks like the following example:  
+      To update permissions for `ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1`, the security token looks as follows:  
       `vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1ChildIteration1_Identifier`  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1`
    :::column-end:::
 :::row-end:::
 ---
@@ -258,11 +257,11 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for metaTask-level permissions**: `PROJECT_ID/METATASK_ID`
       <br/><br/>
-      If MetaTask has `parentTaskId`, then the Security token looks like the following example: 
+      If MetaTask has parentTaskId, then the Security token looks as follows: 
       <br/>
       **Token Format**: `PROJECT_ID/PARENT_TASK_ID/METATASK_ID`
       <br/><br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `f6a4de49-dbe2-4704-86dc-f8ec1a294436`
    :::column-end:::
 :::row-end:::
 ---
@@ -279,7 +278,7 @@ The following table describes the namespaces that manage object-level permission
    :::column span="2":::
       [Manages permissions for Delivery Plans](permissions.md) to view, edit, delete, and manage delivery plans. You can manage these permissions through the [web portal for each plan](set-permissions-access-work-tracking.md).      
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `bed337f8-e5f3-4fb9-80da-81e17d06e7a8`
    :::column-end:::
 :::row-end:::
 ---
@@ -307,16 +306,16 @@ The following table describes the namespaces that manage object-level permission
       [Manages release definition permissions at the project and object-level](permissions.md#release-management).  
       <br/>
       **Token format for project-level permissions**: `PROJECT_ID`  
-      **Example**: `xxxxxxxx-aaaa-1111-bbbb-11111`  
-      If you need to update permissions for a particular release definition ID, for example, 12, security token for that release definition looks like the following example:  
+      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
+      If you need to update permissions for a particular release definition ID, for example, 12, security token for that release definition looks as follows:  
       <br/>
       **Token format for specific release definition permissions**: `PROJECT_ID/12`  
-      **Example**: `xxxxxxxx-aaaa-1111-bbbb-11111/12`  
+      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12`  
       If the release definition ID lives in a folder, then the security tokens look as follows:  
       **Token format**: `PROJECT_ID/{folderName}/12`  
       For stages, tokens look like: `PROJECT_ID/{folderName}/{DefinitionId}/Environment/{EnvironmentId}`.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `c788c23e-1b46-4162-8f5e-d7585343b5de`
    :::column-end:::
 :::row-end:::
 ---
@@ -333,10 +332,9 @@ The following table describes the namespaces that manage object-level permission
       `RecordQueryExecutionInfo`   
    :::column-end:::
    :::column span="2":::
-      [Manages permissions for work item queries and query folders](permissions.md#query). To manage these permissions through the web portal, see [Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries). 
-      **Token format example:** `POST https://dev.azure.com/{organization}/_apis/securitynamespaces/{namespaceId}/permissions?api-version=6.0 { "token": "/{project_id}/{shared_queries_id}", "permissions": { "allow": 1, "deny": 0 } }`.
+      [Manages permissions for work item queries and query folders](permissions.md#query). To manage these permissions through the web portal, see [Set permissions and access for work tracking, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries).  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `71356614-aad7-4757-8f2c-0fb3bff6f680`
    :::column-end:::
 :::row-end:::
 ---
@@ -344,7 +342,7 @@ The following table describes the namespaces that manage object-level permission
 
 ## Project-level namespaces and permissions
 
-The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions, while other project-level groups have specific permission assignments.
+The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 ---
 :::row:::
@@ -392,7 +390,7 @@ The following table describes the namespaces that manage project-level permissio
    :::column-end:::
    :::column span="2":::
       [Manages Project-level permissions](permissions.md#project-level-permissions).  
-      The `AGILETOOLS_BACKLOG` permission manages access to Azure Boards backlogs. This setting is an internal permission setting and shouldn't be changed.  
+      The `AGILETOOLS_BACKLOG` permission manages access to Azure Boards backlogs. This is an internal permission setting and shouldn't be changed.  
       <br/>
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
@@ -401,12 +399,12 @@ The following table describes the namespaces that manage project-level permissio
       Assume you have a project named `Test Project 1`.  
       You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
-      The command returns a `project-id`, for example, `xxxxxxxx-aaaa-1111-bbbb-11111`.  
+      The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
-      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-aaaa-1111-bbbb-11111'`
+      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`
 ::: moniker-end  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::
 :::row-end:::
 ---
@@ -421,12 +419,12 @@ The following table describes the namespaces that manage project-level permissio
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [permissions administrative interface](change-project-level-permissions.md).  
+      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](change-project-level-permissions.md).  
       <br/>
       **Token format for project-level permissions**: `/PROJECT_ID`  
-      **Example**: `/xxxxxxxx-aaaa-1111-bbbb-11111`  
+      **Example**: `/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `bb50f182-8e5e-40b8-bc21-e8752a1e7ae2`
    :::column-end:::
 :::row-end:::
 ---
@@ -450,9 +448,9 @@ The following table describes the namespaces that manage project-level permissio
       `ManageBranch`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There's only one TFVC repository for a project. You can manage these permissions through the [repositories administrative interface](../../repos/tfvc/set-tfvc-repository-permissions.md).  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There's only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/tfvc/set-tfvc-repository-permissions.md).  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `a39371cf-0841-4c16-bbd3-276e341bc052`
    :::column-end:::
 :::row-end:::
 ---
@@ -467,6 +465,7 @@ The following table describes the namespaces that manage organization-level perm
 ::: moniker range="< azure-devops"
 
 ## Collection-level namespaces and permissions 
+
 
 The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
@@ -503,7 +502,7 @@ The following table describes the namespaces that manage organization-level perm
       <br/>
       **Token format**: `/AllPermissions`
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `a6cc6381-a1ca-4b36-b3c1-4e65211e82b6`
    :::column-end:::
 :::row-end:::
 ---
@@ -522,7 +521,7 @@ The following table describes the namespaces that manage organization-level perm
    :::column span="2":::
       [Manages access to view, manage, use, or administer permissions for build resources](permissions.md#collection-level).  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `302acaca-b667-436d-a946-87133492041c`
    :::column-end:::
 :::row-end:::
 ---
@@ -545,7 +544,7 @@ The following table describes the namespaces that manage organization-level perm
    :::column span="2":::
       [Manages permissions at the organization or collection-level](permissions.md#collection-level).    
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `3e65f728-f8bc-4ecd-8764-7e378b19bfa7`
    :::column-end:::
 :::row-end:::
 ---
@@ -564,7 +563,7 @@ The following table describes the namespaces that manage organization-level perm
    :::column span="2":::
       [Manages permissions to create, delete, and administer processes](permissions.md#administer-process-permissions).
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `2dab47f9-bd70-49ed-9bd5-8eb051e59c02`
    :::column-end:::
 :::row-end:::
 ---
@@ -585,7 +584,7 @@ The following table describes the namespaces that manage organization-level perm
       **Root token format**: `/`  
       **Token format for a specific workspace**: `/{workspace_name};{owner_id}`  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `93bafc04-9075-403a-9367-b7164eac6b5c`
    :::column-end:::
 :::row-end:::
 ---
@@ -606,7 +605,7 @@ The following table describes the namespaces that manage organization-level perm
       > The `AdminConfiguration` permission grants users the ability to edit server-level permissions for users and groups. 
       > The `AdminConnections` permission grants users the ability to read the contents of a file or folder of an on-premises, server-level repository.
       ::: moniker-end
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `66312704-deb5-43f9-b51c-ab4ff5e351c3`
    :::column-end:::
 :::row-end:::
 ---
@@ -615,7 +614,7 @@ The following table describes the namespaces that manage organization-level perm
 
 ## Server-level namespaces and permissions  
 
-The following table describes those security namespaces and permissions defined for on-premises instances. You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). For descriptions of these permissions, see [Permissions and groups, Server-level permissions](permissions.md#server-permissions).  
+The following table describes those security namespaces and permissions defined for on-premises instances of Azure DevOps Server. You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). For descriptions of these permissions, see [Permissions and groups, Server-level permissions](permissions.md#server-permissions).  
  
 
 ---
@@ -642,7 +641,7 @@ The following table describes those security namespaces and permissions defined 
    :::column span="2":::
       Manages permissions set at the server-level to create and delete project collections.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::
 :::row-end:::
 ---
@@ -659,7 +658,7 @@ The following table describes those security namespaces and permissions defined 
    :::column span="2":::
       Manages permissions set at the server-level. Includes permissions to edit instance-level information, make requests on behalf of others, and trigger events.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `1f4179b3-6bac-4d01-b421-71ea09171400`
    :::column-end:::
 :::row-end:::
 ---
@@ -673,7 +672,7 @@ The following table describes those security namespaces and permissions defined 
    :::column span="2":::
       Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube).   
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `b8fbab8b-69c8-4cd9-98b5-873656788efb`
    :::column-end:::
 :::row-end:::
 ---
@@ -717,7 +716,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups. 
       - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group<br/><br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`  
+      **ID:** `101eae8c-1709-47f9-b228-0e476c35b3ba`  
    :::column-end:::
 :::row-end:::
 ---
@@ -739,7 +738,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Project Administrators group 
       - **Administrator** role (all permissions) to the user who created a specific Environment.<br/><br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`  
+      **ID:** `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`  
    :::column-end:::
 :::row-end:::
 ---
@@ -755,7 +754,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/grant-permissions.md).    
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`  
+      **ID:** `5d6d7b80-3c63-4ab0-b699-b6a5910f8029`  
    :::column-end:::
 :::row-end:::
 ---
@@ -778,7 +777,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
       For more information, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
 :::row-end:::
 ---
@@ -799,7 +798,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, and `Create` permissions) to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
       Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).<br/><br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `49b48001-ca20-4adc-8111-5b60c903a50c`
    :::column-end:::
 :::row-end:::
 ---
@@ -835,7 +834,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions to read or modify the organization account owner. These permissions are assigned to the organization owner and members of the Project Collection Administrator group.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `11238e09-49f2-40c7-94d0-8f0307204ce4`
    :::column-end:::
 :::row-end:::
 ---
@@ -855,9 +854,9 @@ The following table describes the security namespaces and permissions that aren'
       Manages permissions to read, administer permissions, and execute queries against the Analytics service.  
       <br/>
       **Token format for project-level permissions**: `$/PROJECT_ID`  
-      **Example**: `$/xxxxxxxx-aaaa-1111-bbbb-11111`  
+      **Example**: `$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `58450c49-b02d-465a-ab12-59ae512d6531`
    :::column-end:::
 :::row-end:::
 ---
@@ -875,7 +874,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Sets permissions to read, delete, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `19F9F97D-7CB7-45F7-8160-DD308A6BD48E` 
    :::column-end:::
 :::row-end:::
 ---
@@ -894,7 +893,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions and access to boards.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `251e12d9-bea3-43a8-bfdb-901b98c0125e`
    :::column-end:::
 :::row-end:::
 ---
@@ -910,7 +909,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages read/write permissions of external integrations with Azure Boards.   
       <br/>
-     **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+     **ID:** `5ab15bc8-4ea1-d0f3-8344-cab8fe976877`
    :::column-end:::
 :::row-end:::
 ---
@@ -937,7 +936,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions for chat services integrated with Azure DevOps, such as Slack and Microsoft Teams. For more information, see [Azure Boards with Slack](../../boards/integrations/boards-slack.md), [Azure Boards with Microsoft Teams](../../boards/integrations/boards-teams.md), [Azure Pipelines with Slack](../../pipelines/integrations/slack.md), [Azure Pipelines with Microsoft Teams](../../pipelines/integrations/microsoft-teams.md), [Azure Repos with Slack](../../repos/integrations/repos-slack.md), and [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md).  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `bc295513-b1a2-4663-8d1a-7017fd760d18`
    :::column-end:::
 :::row-end:::
 ---
@@ -956,7 +955,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](../../pipelines/process/environments-kubernetes.md#set-up-review-app).  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `0d140cae-8ac1-4f48-b6d1-c93ce0301a12`
    :::column-end:::
 :::row-end:::
 ---
@@ -972,7 +971,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Grants read and write access for notification handler.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `7cd317f2-adc6-4b6c-8d99-6074faeaf173`
    :::column-end:::
 :::row-end:::
 ---
@@ -987,7 +986,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Grants read and write access for notification subscribers.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `2bf24a2b-70ba-43d3-ad97-3d9e1f75622f`
    :::column-end:::
 :::row-end:::
 ---
@@ -1004,7 +1003,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages member permissions to view, edit, and unsubscribe from notifications or create a SOAP subscription.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `58b176e7-3411-457a-89d0-c6d0ccb3c52b` 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1021,12 +1020,13 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
    :::column span="2":::
       Manages permissions to read, write, and delete user account identity information; manage group membership and create and restore identity scopes. The `ManageMembership` permission is automatically granted to members of the Project Administrators and Project Collection Administrators groups.   
+      
       **Token format for project-level permissions**: `PROJECT_ID`  
-      **Example**: `xxxxxxxx-aaaa-1111-bbbb-11111`  
-      To modify group level permissions for Group Origin ID [xxxxxxxx-aaaa-1111-bbbb-11111]:  
-      **Token**: `xxxxxxxx-aaaa-1111-bbbb-11111\xxxxxxxx-aaaa-1111-bbbb-11111`  
+      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
+      To modify group level permissions for Group Origin ID [2b087996-2e64-4cc1-a1dc-1ccd5e7eb95b]:  
+      **Token**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba\2b087996-2e64-4cc1-a1dc-1ccd5e7eb95b`  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `5a27515b-ccd7-42c9-84f1-54c998f03866` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1045,7 +1045,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages the ability to view, add, modify, and remove license levels. These permissions are automatically granted to members of the Project Collection Administrators groups.    
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `453e2db3-2e81-474f-874d-3bf51027f2ee` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1062,7 +1062,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages the ability to create and download permission reports.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `25fb0ed7-eb8f-42b8-9a5e-836a25f67e37` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1075,8 +1075,8 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group receive limited visibility to organization-level data. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      Applies a system-level deny permission on the namespace, which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
+      **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::
 ---
@@ -1092,7 +1092,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions to read and write [pipeline cache entries](../../pipelines/release/caching.md). These permissions are only assigned to internal Azure DevOps service principles. 
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `62a7ad6b-8b8d-426b-ba10-76a7090e94d5` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1128,7 +1128,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages access to Release Management user interface elements.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111 ` 
+      **ID:** `7c7d32f7-0e86-4cd6-892e-b35dbba870bd ` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1144,7 +1144,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       This security namespace is used to know if a user is valid or anonymous/public.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `ca535e7e-67ce-457f-93fe-6e53aa4e4160` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1162,7 +1162,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions to view, edit, and delete service hook subscriptions and publish service hook events. These permissions are automatically assigned to members of the Project Collection Administrators group. `DeleteSubscriptions` is no longer used; `EditSubscriptions` can delete service hooks.  
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111` 
+      **ID:** `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1175,11 +1175,11 @@ The following table describes the security namespaces and permissions that aren'
       `QueryUsageSummary`
    :::column-end:::
    :::column span="2":::
-      Manages permissions to query usage. By default, all members of the Project Collection Administrators groups and users granted Stakeholder access are granted permission to query usage summary for everyone. For more information, see [Rate limits](../../integrate/concepts/rate-limits.md). 
+      Manages permissions to query usage. By default, all members of the Project Collection Administrators groups and users granted Stakeholder access are granted permission to query usage summary for everyone. For more information, see [Rate limits](../../integrate/concepts/rate-limits.md).
       <!--- Update link when new article on Utilization is published. --> 
       **Token format**: `/`
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `83abde3a-4593-424e-b45f-9898af99034d`
    :::column-end:::
 :::row-end:::
 ---
@@ -1195,7 +1195,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions for administrating work tracking and destroying attachments.
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `445d2788-c5fb-4132-bbef-09c4045ad93f`
    :::column-end:::
 :::row-end:::
 ---
@@ -1208,12 +1208,12 @@ The following table describes the security namespaces and permissions that aren'
       `ManageLinkTypes`  
    :::column-end:::
    :::column span="2":::
-      Manages permissions for changing work tracking processes and managing link types. The WorkItemTrackingProvision namespace is an older security namespace that is mostly used for earlier on-premises versions. The [Process](#process) namespace replaces this namespace for managing processes in Azure DevOps Server 2019 and later versions.   
+      Manages permissions for changing work tracking processes and managing link types. The WorkItemTrackingProvision namespace is an older security namespace that is mostly used for TFS-2018 and earlier versions. The [Process](#process) namespace replaces this namespace for managing processes in Azure DevOps Server 2019 and later versions.   
       <br/>
       **Root token format**: `/$`   
       **Token format for a specific project**: `$/PROJECT_ID`   
       <br/>
-      **ID:** `xxxxxxxx-aaaa-1111-bbbb-11111`
+      **ID:** `5a6cd233-6615-414d-9393-48dbb252bd23`
    :::column-end:::
 :::row-end:::
 ---
@@ -1223,7 +1223,7 @@ The following table describes the security namespaces and permissions that aren'
 
 ## Deprecated and read-only namespaces
 
-The following namespaces are either deprecated or read-only. Don't use them. 
+The following namespaces are either deprecated or read-only. You shouldn't use them. 
 
 :::row:::
    :::column span="2":::
@@ -1261,8 +1261,8 @@ The following namespaces are either deprecated or read-only. Don't use them.
 
 ## Related articles
 
-- [Learn about security, authentication, and authorization](about-security-identity.md)
-- [Use the Security Namespaces REST API](/rest/api/azure/devops/security/)
-- [Use TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
-- [Understand security terms with the security glossary](security-glossary.md)
+- [About security, authentication, and authorization](about-security-identity.md)
+- [Security Namespaces REST API](/rest/api/azure/devops/security/)
+- [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
+- [Security glossary](security-glossary.md)
 
