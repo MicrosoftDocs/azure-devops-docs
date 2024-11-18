@@ -1,78 +1,22 @@
 ---
 title: Publish Maven artifacts
-description: How to publish Maven artifacts with Azure Pipelines
+description: Learn how to publish Maven artifacts to internal and external feed using Azure Pipelines.
 ms.topic: conceptual
-ms.date: 10/24/2022
+ms.date: 11/18/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Publish Maven artifacts with Azure Pipelines
+# Publish Maven artifacts with Azure Pipelines (YAML/Classic)
 
-Using Azure Pipelines, you can publish your Maven packages to Azure Artifacts feeds, public registries, or as a pipeline artifact.
+Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as nuget.org. This article will guide you through publishing your Maven artifacts using both YAML and Classic pipelines.
 
-## Set up your project
+## Prerequisites
 
-1. Add the following snippet to the `repositories` and `distributionManagement` sections in your *pom.xml* file. Replace the placeholders with your organization name, project name, and your feed name.
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
 
-    ```XML
-    <repository>
-      <id>MavenDemo</id>
-      <url>https://pkgs.dev.azure.com/ORGANIZATION-NAME/PROJECT-NAME/_packaging/FEED-NAME/maven/v1</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    ```
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-1. Configure your *settings.xml* file as follows. Replace the placeholders with your organization name, your project name, and your personal access token.
-
-    ```XML
-    <server>
-      <id>PROJECT-NAME</id>
-      <username>ORGANIZATION-NAME</username>
-      <password>PERSONAL-ACCESS-TOKEN</password>
-    </server>
-    ```
-
-1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging read & write** scope and paste it into the `password` tag in your *settings.xml* file.
-
-## Build your code
-
-In this example, we're using the [Maven task](../tasks/build/maven.md) to build the project with Azure Pipelines.
-
-```yml
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'my-app/pom.xml'    // Path to your pom file
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-```
-
-## Publish packages to your pipeline
-
-The following example illustrates how to publish your artifact to *drop* in your pipeline. Use the [Copy files](../tasks/utility/copy-files.md) task to copy your packages to a target folder, then use [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) to publish your build artifacts to Azure Pipelines.
-
-```yml
-- task: CopyFiles@2
-  inputs:
-    Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
-```
-
-:::image type="content" source="media/published-maven-pipeline.png" alt-text="A screenshot showing the build artifact published to drop in Azure Pipelines.":::
+- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-npm.md#create-a-feed).
 
 ## Publish packages to your feed
 
