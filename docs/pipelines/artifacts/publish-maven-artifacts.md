@@ -16,7 +16,7 @@ Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts f
 
 - An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-npm.md#create-a-feed).
+- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-maven.md#create-a-feed).
 
 ## Publish packages to a feed in the same organization
 
@@ -120,23 +120,55 @@ steps:
   displayName: 'Maven Authenticate'
   inputs:
     MavenServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION> 
+
 - script: |
    mvn deploy
   displayName: 'Publish'
 ```
 
+#### [Classic](#tab/classic/)
 
-## Q&A
+::: moniker range="azure-devops"
 
-#### Q: How to authenticate with MavenAuthenticate?
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-A: You can use the [MavenAuthenticate](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0) task to authenticate with Maven feeds inside and outside your organization. See the examples below for more details:
+::: moniker-end
 
-- [Authenticate with Maven feeds inside your organization](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0#authenticate-maven-feeds-inside-your-organization)
-- [Authenticate with Maven feeds outside your organization](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0#authenticate-maven-feeds-outside-your-organization)
+::: moniker range="< azure-devops"
 
-## Related articles
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-- [Publish npm packages with Azure Pipelines](./npm.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
-- [Publish NuGet packages with Azure Pipelines](./nuget.md)
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+::: moniker-end
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Maven Authenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
+
+    1. **Maven Authenticate**: Select your service connection from the **Credentials for repositories outside this organization/collection** dropdown menu.
+
+    1. **Command line task**:
+        - **Display name**: Publish.
+        - **Script**: 
+            ```
+            mvn deploy
+            ```
+
+4. Select **Save & queue** when you're done.
+
+- - -
+
+## Related content
+
+- [maven-authenticate-v0 task](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0)
+- [Artifact sources](../release/artifacts.md)
+- [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
