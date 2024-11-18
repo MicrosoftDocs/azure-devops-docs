@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2024
+ms.date: 11/12/2024
 #customer intent: As a team administrator, I want to be able to track code defects as part of the backlog in Azure Boards so the team can track them in the same way as requirements or tasks.
 ---
 
@@ -21,10 +21,7 @@ As your team identifies code defects or bugs, they can add them to the backlog a
 
 When you track bugs as *requirements*, they appear on the product Backlogs and boards. When you track bugs as *tasks*, the bugs appear on Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
 
-::: moniker range=">= azure-devops-2019"
-
 You can define your team's tracking setting for the [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration (CMMI)](../../boards/work-items/guidance/cmmi-process.md) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/plan-track-work.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type.
-::: moniker-end
 
 [!INCLUDE [requirements-term](../../boards/includes/note-requirements-terms.md)]
 
@@ -44,23 +41,19 @@ You can change settings from a backlog or board view, or from **Project settings
 
 The following steps show how to change it from the board view.
 
-::: moniker range=">= azure-devops-2019"  
-
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) and select your project.
-1. [Open your board](../../boards/boards/kanban-quickstart.md). If you're not a team administrator, [get added as one](add-team-administrator.md). Only team and project administrators can customize the board.
-1. Choose **Board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.
+2. [Open your board](../../boards/boards/kanban-quickstart.md). If you're not a team administrator, [get added as one](add-team-administrator.md). Only team and project administrators can customize the board.
+3. Choose **Board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.
 
    :::image type="content" source="media/configure-team/open-board-settings.png" alt-text="Screenshot shows the Open board settings button for a team.":::  
 
-1. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+4. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
    :::image type="content" source="media/show-bugs-dialog.png" alt-text="Screenshot shows the Settings page with the Working with bugs tabs selected.":::  
 
-1. When you're done with your changes, choose **Save**.  
+5. When you're done with your changes, choose **Save**.  
 
-1. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [board](../../boards/boards/kanban-overview.md).
-
-::: moniker-end
+6. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [board](../../boards/boards/kanban-overview.md).
 
 ## Nest items
 
@@ -75,16 +68,12 @@ When you manage bugs with requirements or tasks, they appear on one or more of y
 
 Bugs are a common item that teams want to track, and choose how they track them. For more information, see [Manage bugs](../../boards/backlogs/manage-bugs.md).
 
-However, what if you want to track other work item types on your backlogs and boards?  
-
-::: moniker range=">= azure-devops-2019"  
+However, what if you want to track other work item types on your backlogs and boards?
 
 You can add other work item types by customizing your process or project, based on the process model that you use. These items include change requests, issues, and impediments.
 
 - For the Inheritance process model, see [Customize your backlogs or boards](work/customize-process-backlogs-boards.md).
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
-
-::: moniker-end
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 

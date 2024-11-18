@@ -1,16 +1,14 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Configure Managed DevOps Pools networking
 
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+Managed DevOps Pools agents can be configured to run in an isolated virtual network, or into an existing virtual network. This article describes how to configure your Managed DevOps Pool to run agents in your virtual network.
 
-## Adding agents to your own Virtual network
+## Adding agents to your own virtual network
 
 You may want to add agents from Managed DevOps Pools to your own virtual network for scenarios such as:
 
@@ -36,9 +34,11 @@ If you're using Express Route, you need to temporary drop or change the manageme
 > [!IMPORTANT]
 > The Managed DevOps Pool and virtual network must be in the same region, or you'll get an error similar to the following when you try to create the pool or update the network configuration. `Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region.`
 
+### Grant Reader and Network Contributor access to DevOpsInfrastructure service principal
+
 Ensure the DevOpsInfrastructure principal has the following access on the virtual network:
 - `Reader` and `Network Contributor`
-- OR add the following permission to a custom role:
+- Or add the following permission to a custom role:
   - `Microsoft.Network/virtualNetworks/*/read`
   - `Microsoft.Network/virtualNetworks/subnets/join/action`
   - `Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks/validate/action`
@@ -98,7 +98,7 @@ If you are using ARM templates, add a `networkProfile` property if it doesn't al
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2024-04-04-preview",
+    "apiVersion": "2024-10-19",
     "location": "eastus",
     "properties": {
         ...
@@ -166,6 +166,18 @@ All of them are HTTPS, unless otherwise stated.
      These entries are the minimum domains required. If you have any issues, see [Azure DevOps allowlist](/azure/devops/organizations/security/allow-list-ip-url) for the full list of domains required.
 
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
+
+## Configure the Azure DevOps Agent to run behind a Proxy
+
+If you configured a proxy service on your image and want your workloads running on your Managed DevOps pool to run behind this proxy, you must add the following environment variables on your image.
+
+* `VSTS_AGENT_INPUT_PROXYURL` - The URL of the configured proxy to run behind
+* `VSTS_AGENT_INPUT_PROXYUSERNAME` - The username needed to use the proxy
+* `VSTS_AGENT_INPUT_PROXYPASSWORD` - The password to use the proxy.
+
+For Windows, these environment variables should be system environment variables, and for Linux these variables should be in the **/etc/environment** file. Setting these system variables incorrectly or without a configured proxy service on the image causes provisioning of new agents to fail with network connectivity issues.
+
+If you are migrating from Azure Virtual Machine Scale Set agents and are already using the proxy environment variables on your image, as described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration), no changes should be required.
 
 ## See also
 

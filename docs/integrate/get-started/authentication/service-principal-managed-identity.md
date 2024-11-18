@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.custom: arm2024
 ms.author: wonga
 author: wonga
-ms.date: 11/10/2023
+ms.date: 11/18/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -45,10 +45,6 @@ Further information:
 * [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
 * [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 * [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
-
-> [!NOTE]
-> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWY8q]
 
 #### Create a managed identity
 
@@ -133,7 +129,6 @@ az login \
   --query "accessToken" \
   -o tsv
   ```
-
 
 > [!NOTE]
 > Use the  Azure DevOps application ID, not our resource URI, for generating tokens.

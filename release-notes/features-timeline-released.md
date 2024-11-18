@@ -38,6 +38,19 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="10"><a href="2024/sprint-247-update.md" data-raw-source="[13 November 2024](2024/sprint-247-update.md)"> 13 November 2024</a></td>
+    <td>Commit-less builds supported for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>File previews and annotations for CodeQL scans using sourcesFolder</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>New REST API limit on work item comments </td><td>Boards</td><td>Future</td></tr>
+    <td>Search pull requests by title on PR listing page</td><td>Repos</td><td>Future</td></tr>
+    <td>macOS-15 Sequoia is available in preview</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Improvements to service connection App registration attribution</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Azure Test Runner version 1.2.2</td><td>Test Plans</td><td>Future</td></tr>
+    <td>New sorting capabilities in Test Plans directory</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Auto Pause for Test Case Run preview</td><td>Test Plans</td><td>Future</td></tr>
+    <td>New release version for Test and Feedback Extensions (TFE)</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="14"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
     <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
     <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
@@ -53,6 +66,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
     <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
     <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Authentication to Azure Artifacts using a public feed and Cargo</td><td>Artifacts</td><td>N/A</td></tr>
     <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
 <tr>
 <tr>

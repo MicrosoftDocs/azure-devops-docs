@@ -21,7 +21,7 @@ monikerRange: '< azure-devops'
 
 ## Prerequisites
 
-You must be a member of the Team Foundation Administrators group. The user who installed Azure DevOps Server gets automatically added to this group. For more information, see [Add or remove a team administrator](../settings/add-team-administrator.md).
+- **Permissions:** Be a member of the Team Foundation Administrators group. The user who installed Azure DevOps Server gets automatically added to this group. For more information, see [Add or remove a team administrator](../settings/add-team-administrator.md).
 
 For more information about the requirements to access Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about licensing, see the [pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing). To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
@@ -77,4 +77,4 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 - [Buy Basic access for users](buy-basic-access-add-users.md)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 - [Change your subscription for billing](change-azure-subscription.md)
-- [Learn about Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)
+- [Learn about Microsoft Cost Management and billing](/azure/cost-management-billing/cost-management-billing-overview)
