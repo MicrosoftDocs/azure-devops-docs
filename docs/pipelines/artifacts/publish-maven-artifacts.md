@@ -169,6 +169,6 @@ steps:
 
 ## Related content
 
-- [maven-authenticate-v0 task](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0)
-- [Artifact sources](../release/artifacts.md)
+- [Maven Authenticate v0 task](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0)
 - [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
+- [Publish and download pipeline artifacts](pipeline-artifacts.md)
