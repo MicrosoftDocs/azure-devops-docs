@@ -180,6 +180,6 @@ For more information, see [Review team Delivery Plans](../plans/review-team-plan
 ## Related articles
 
 - [Bulk add or modify work items with Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Follow best practices for migrating work items](../backlogs/migration-best-practices.md)
-- [Migrate build and release pipelines](../../pipelines/migrate-microsoft-azure-devops-pipelines.md)
-- [Use the Azure DevOps REST API](/rest/api/azure/devops/)
+- [Follow best practices for migrating work items](https://docs.microsoft.com/azure/devops/boards/backlogs/migration-best-practices)
+- [Migrate build and release pipelines](https://docs.microsoft.com/azure/devops/pipelines/migrate-microsoft-azure-devops-pipelines)
+- [Use the Azure DevOps REST API](https://docs.microsoft.com/rest/api/azure/devops/)
