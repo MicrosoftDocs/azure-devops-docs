@@ -84,6 +84,48 @@ steps:
 
 ---
 
+## Publish packages to a feed in another organization
+
+To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
+
+Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope.  Copy your personal access token as you'll need it in the following section.
+
+#### Create a service connection
+
+1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
+
+1. Navigate to your **Project settings** > **Service connections**. 
+
+1. Select **New service connection**, select **Maven**, and then select **Next**. 
+
+1. Select **Username and Password** as the **Authentication method**, and then enter your **Repository URL** and your **Repository Id**.
+
+1. Enter your **Username** and use the personal access token you created earlier as your **Password**. Provide a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Save** when you're done.
+
+#### Publish packages
+
+#### [YAML](#tab/yaml/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+```yaml
+steps:
+- task: MavenAuthenticate@0
+  displayName: 'Maven Authenticate'
+  inputs:
+    MavenServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION> 
+- script: |
+   mvn deploy
+  displayName: 'Publish'
+```
+
+
 ## Q&A
 
 #### Q: How to authenticate with MavenAuthenticate?
