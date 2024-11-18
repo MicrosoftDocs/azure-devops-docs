@@ -1,14 +1,10 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your Managed DevOps Pools agents.
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ---
 
 # Configure storage
-
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 If you want more disk space for your agents, Managed DevOps Pools supports attaching an empty data disk to the agents in your Managed DevOps Pool. Attaching a data disk allows you to get more storage space without incurring the potentially greater cost of moving your VM size to a more expensive size that has more built-in storage.
 
@@ -45,7 +41,7 @@ Additional disk storage is configured in an ARM template in `dataDisks` section 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...

@@ -1,21 +1,28 @@
 ---
-title: Project Summary, vision, & view project activity
+title: Project summary page, view project activity
 titleSuffix: Azure DevOps 
-description: View or update your project Summary to share project vision, objectives, and activity for Azure DevOps
+description: Learn how to view and update your project summary page to share project vision, objectives, and activity for Azure DevOps.
 ms.topic: quickstart
 ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2023
+ms.date: 11/11/2024
 ---
 
-# Share your project vision, view project activity
+# View and update project summary page
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks.
+Each project provides a summary or home page to share information and showcase the latest project activity. This page serves as a central hub for team members to stay informed and up-to-date on the project's progress. Use this page for the following tasks:
+
+- Share important project updates and announcements
+- Highlight recent activities and milestones
+- Provide quick access to key project resources and documentation
+- Facilitate team collaboration and communication
+
+Use the project summary page to also perform more specific tasks:
 
 :::row:::
    :::column span="1":::
@@ -46,35 +53,33 @@ Each project provides a **Summary** or home page to share information and showca
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   
-> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. For more information, see [What is a public project?](../projects/about-projects.md)
+> You can designate hosted projects as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. For more information, see [What is a public project?](../projects/about-projects.md)
 ::: moniker-end
 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
 
-> [!NOTE]   
-> If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). Then, you can change the project summary page to point to the wiki.
-
 ## Prerequisites
 
-- You must be a member of the [**Project Administrators** group](../security/change-project-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+- **Permissions**: Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group or have your **Edit project-level information** permission set to *Allow* to do the following tasks:
   - Edit information on the project page
   - Change the repository that you use to share project information
   - Manage project membership
-- To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#valid-user-groups).
-- To add or edit project **Tags**, you must have the project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API. The project properties REST API is used to drive the project tags experience in the product.  
+- **Specific tasks:**
+  - To edit a project page, be a contributor to the repository or branch or have the **Contribute** permissions set to *Allow*.  
+  - To view the project summary, be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#valid-user-groups).
+  - To add or edit project tags, have the project-level **Manage properties** permission set to *Allow*. This permission controls the project properties REST API.
 
 > [!TIP]    
-> If you don't have permissions to edit a page or use a feature, the corresponding icons and links aren't visible. 
+> If you don't have the necessary permissions to edit a page or use a feature, the corresponding icons and links aren't visible to you.
 
-## Open project Summary
+## Open project summary
 
-From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, select **Overview** > **Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
-If your project summary isn't set up yet, you see this welcome page:
+If your project summary isn't set up yet, a welcome page displays:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Open project summary.](media/share-project/welcome-page-new-nav.png)  
+> ![Screenshot shows project welcome page.](media/share-project/welcome-page-new-nav.png)  
 
 Select one of the following tasks to get started:
 
@@ -85,10 +90,9 @@ Select one of the following tasks to get started:
 - **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
 - [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
+## Update the summary page
 
-## Update the page
-
-The **Summary** page displays either the **README** file defined in a project repository or the home page of a project wiki. If you want to use the project wiki home page, first set that up as described in [Create a Wiki for your project](../../project/wiki/wiki-create-repo.md).
+The summary page displays either the README file defined in a project repository or the home page of a project wiki. To use the project wiki home page, [create a wiki for your project](../../project/wiki/wiki-create-repo.md) and then you can change the project summary page to point to the wiki.
 
 1. Edit the page:
 
@@ -117,7 +121,7 @@ The **Summary** page displays either the **README** file defined in a project re
 
 	If you choose a **Readme file**, select the repository for the README. A preview of the current text for the README file is shown. 
 
-	:::image type="content" source="media/summary/select-readme-repository.png" alt-text="About this project dialog, choose and select README repository.":::
+	:::image type="content" source="media/summary/select-readme-repository.png" alt-text="About this project dialog, choose, and select README repository.":::
 
 	If you choose a **Wiki**, the Wiki home page is referenced and must be the first file within the Wiki TOC. You can't change that reference.  
 
@@ -132,9 +136,9 @@ The **Summary** page displays either the **README** file defined in a project re
 	- Links to templates to file a bug, issue, or request 
 	- Links to distribution lists to email a question or post a question on Slack or Teams channel. 
 
-## Invite people to contribute to your project 
+## Invite contributors to your project 
 
-You can send an email to invite users to contribute to your project by choosing **Invite**. For more information, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
+Send an email to invite users to contribute to your project by choosing **Invite**. For more information, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
 
 :::image type="content" source="../security/media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 
@@ -244,12 +248,12 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 ## Related articles
 
-- [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
+- [Learn about Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
-- [Web portal navigation](../../project/navigation/index.md)
-- [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Navigate the web portal](../../project/navigation/index.md)
+- [Discover what you get with a project](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
 **REST APIs**
 
-- [Projects - Get Project Properties](/rest/api/azure/devops/core/projects/get-project-properties)
-- [Projects - Set Project Properties](/rest/api/azure/devops/core/projects/set-project-properties)
+- [Get project properties](/rest/api/azure/devops/core/projects/get-project-properties)
+- [Set project properties](/rest/api/azure/devops/core/projects/set-project-properties)

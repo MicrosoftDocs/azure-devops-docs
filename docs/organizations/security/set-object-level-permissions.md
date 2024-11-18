@@ -42,7 +42,7 @@ To access the Permissions dialog for an object, follow these steps:
 :::image type="content" source="media/permissions-dialog.png" alt-text="Screenshot showing how to get to permission settings for an object.":::
 
 > [!NOTE]
-> Some objects, such as repositories and Analytics views, require Basic access or higher levels. For more information, see [Access levels](access-levels.md).
+> Some objects, such as repositories and Analytics views, require at least Basic access levels. For more information, see [Access levels](access-levels.md).
 
 ## Set permissions for Dashboards, Wikis, and Analytic views
 
