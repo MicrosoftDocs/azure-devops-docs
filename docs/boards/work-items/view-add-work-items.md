@@ -36,6 +36,8 @@ These methods provide flexibility in how you manage and track your work items wi
 > [!NOTE]     
 > The **Work Items** page is available from Azure DevOps Services, Azure DevOps Server 2019 and later versions, and Visual Studio 2019 RC1. 
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 ## Open the Work items page

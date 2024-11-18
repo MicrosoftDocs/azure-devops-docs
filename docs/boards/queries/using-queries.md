@@ -33,6 +33,8 @@ You can create queries from the web portal or from a supported client, such as V
 
 Check out our recommended [best practices](#best-practices), later in this article.
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Choose a query filter 

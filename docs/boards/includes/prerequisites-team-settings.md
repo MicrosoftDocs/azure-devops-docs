@@ -7,8 +7,6 @@ ms.date: 07/30/2024
 ---
 
 
-## Prerequisites
-
 ::: moniker range="azure-devops"
 
 - **[Access levels](../../organizations/security/access-levels.md):** Have at least **Basic** access.

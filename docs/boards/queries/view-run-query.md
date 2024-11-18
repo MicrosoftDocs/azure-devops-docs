@@ -26,8 +26,9 @@ To locate work items assigned to you or your team, you can run a query. Your pro
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/prerequisites-queries.md)]
+## Prerequisites
 
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 
 
