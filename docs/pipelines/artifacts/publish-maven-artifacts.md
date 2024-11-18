@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 
 # Publish Maven artifacts with Azure Pipelines (YAML/Classic)
 
-Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as nuget.org. This article will guide you through publishing your Maven artifacts using both YAML and Classic pipelines.
+Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as Maven Central. This article will guide you through publishing your Maven artifacts using both YAML and Classic pipelines.
 
 ## Prerequisites
 
