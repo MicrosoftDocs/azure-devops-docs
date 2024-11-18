@@ -1,7 +1,7 @@
 ---
-title: Manage attachments to work items
+title: Manage work item attachments
 titleSuffix: Azure Boards 
-description: Learn how to manage attachments to work items in Azure DevOps.
+description: Learn how to manage work item attachments in Azure DevOps.
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
 ms.author: v-catherbund
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 11/15/2024
 ---
 
-# Manage attachments to work items
+# Manage work item attachments
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
@@ -178,6 +178,6 @@ The attachment is permanently deleted and isn't accessible from any other links.
 
 ## Related articles
 
-[About work items and work item types](about-work-items.md)
-[Manage work items](../backlogs/manage-work-items.md)
-[View and add work items](view-add-work-items.md)
+- [About work items and work item types](about-work-items.md)
+- [Manage work items](../backlogs/manage-work-items.md)
+- [View and add work items](view-add-work-items.md)
