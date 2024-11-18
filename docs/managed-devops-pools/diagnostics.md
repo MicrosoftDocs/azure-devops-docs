@@ -23,6 +23,9 @@ Diagnostic settings in Azure are used to collect resource logs. An Azure resourc
 
    :::image type="content" source="./media/diagnostics/diagnostics.png" alt-text="Screenshot of diagnostics settings.":::
 
+   > [!IMPORTANT]
+   > Managed DevOps Pools currently supports **Archive to a storage account** and **Stream to an event hub**, with more destination types coming soon.
+
 3. Run jobs in your pool, and then review the collected data. For information on analyzing diagnostic log data, see [Analyze and visualize monitoring data](/azure/azure-monitor/best-practices-analysis). The diagnostic data contains log entries similar to the following example.
 
    ```json
