@@ -5,8 +5,8 @@ ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-azurecli
 ms.subservice: azure-devops-marketplace
 ms.author: alexpysanets
-author: alexpysanets
-ms.date: 11/07/2024
+author: chcomley
+ms.date: 11/18/2024
 ---
 
 # High-risk extensions
