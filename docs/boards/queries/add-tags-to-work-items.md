@@ -25,6 +25,8 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 > [!NOTE]   
 > Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.  
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 ::: moniker range="azure-devops"

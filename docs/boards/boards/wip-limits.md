@@ -21,6 +21,8 @@ Work-in-Progress (WIP) limits, a crucial [Kanban](kanban-overview.md) practice, 
 
 Setting WIP limits for each stage adds soft constraints on the number of items allowed in the corresponding columns. Exceeding these limits is possible, but your board displays item counts next to each limit. Use this article as a guide for setting and implementing WIP limits.
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 <a id="Initial WIP"></a>

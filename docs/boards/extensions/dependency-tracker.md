@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/02/2024
+ms.date: 11/18/2024
 ---
 
 # Use the Dependency Tracker extension
@@ -66,21 +66,21 @@ All teams across organizations can participate in tracking dependencies.
 
 ## Prerequisites
 
-- Install the [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) for the organization for which you want to track dependencies.
-- To view dependencies, you must be a member of the Project Valid Users group for the project.  
-- To create a dependency, you must be a member of the Contributors group for both projects that participate in the dependency linking.
-- To support cross-organization participation, all organizations must authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
-- Azure Boards must be enabled as a service. If it isn't enabled, you must reenable it. For more information, see [Turn a service on or off](../../organizations/settings/set-services.md). 
-- To modify the configuration, you must be a member of the  Project Collection Administrator Group. 
+- **Tools**: Install the [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) for the organization for which you want to track dependencies.
+- **Permissions**: 
+  - To view dependencies, be a member of the **Project Valid Users** group for the project.  
+  - To create a dependency, be a member of the **Contributors** group for both projects that participate in the dependency linking.
+  - To modify configuration, be a member of the  **Project Collection Administrators** Group.
+- **Authentication**: To support cross-organization participation, all organizations must authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+- **Services**: [Enable Azure Boards as a service](../../organizations/settings/set-services.md). 
+- **Configuration and customization tasks**:
+  - Set up the area paths and teams to participate in dependency tracking. 
+  - Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
+  - Customize your process as needed to support any other work items or fields. 
+  - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations.
 
 > [!IMPORTANT]  
-> The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
-
-Also, you should do the following configuration or customization tasks: 
-- Set up the area paths and teams to participate in dependency tracking. 
-- Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
-- Customize your process as needed to support any other work items or fields. 
-- [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations.
+> The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article.
 
 ## Open the Dependency Tracker extension
 
@@ -272,7 +272,7 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 
 ## Risk Graph
 
-The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumer. The graph lets a team, at a glance, understand the number of dependencies and level of risks associated. Also, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
+The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumer. The graph lets a team understand the number of dependencies and level of risks associated at a glance. Also, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Dependency Tracker Risk Graph.](media/tracker/risk-graph-1.png)
@@ -895,11 +895,11 @@ False
 
 ## Related articles
 
-- [Work item field index](..//work-items/guidance/work-item-field.md)
+- [Manage work item fields](..//work-items/guidance/work-item-field.md)
 - [Review team delivery plans](../plans/review-team-plans.md)
-- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
-- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
-- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
+- [Use the inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
+- [Use the hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
+- [Understand workflow states and state categories in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
 
 ## Related Marketplace extensions
 

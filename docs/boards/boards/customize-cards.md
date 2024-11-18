@@ -21,6 +21,8 @@ A board presents work items in the form of cards, where each card represents a w
 > [!NOTE] 
 > This article addresses customization of a board. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 - See the section, [Card customization sequence](#card-customization-sequence)
 

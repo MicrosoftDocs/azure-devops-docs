@@ -37,6 +37,8 @@ Managing columns on your board is essential for visualizing your team's workflow
 
 ::: moniker-end
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 - **Tasks (optional):** To avoid revisiting your configuration, we recommend doing the following tasks before you begin to manage your board columns:
    - [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)

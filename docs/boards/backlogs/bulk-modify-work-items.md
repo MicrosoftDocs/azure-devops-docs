@@ -32,6 +32,8 @@ In this article, learn how to do the following tasks:
 > - Assign work from a backlog to a sprint using drag-and-drop
 > - Add or remove tags from several work items
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](../includes/prerequisites-work-items.md)]
 
 ## Supported tasks
