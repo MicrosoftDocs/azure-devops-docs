@@ -31,6 +31,8 @@ Bugs also provide the following features:
 
 [!INCLUDE [no bugs in basic process](../includes/basic-process-bug-note.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](../includes/prerequisites-work-items.md)]
 
 > [!TIP]
