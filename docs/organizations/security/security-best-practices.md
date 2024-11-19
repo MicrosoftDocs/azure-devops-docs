@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 08/13/2024
+ms.date: 11/18/2024
 ---
 
 # Security best practices
@@ -71,7 +71,12 @@ For more information, see [Application management best practices](/azure/active-
 
 The system handles permissions at various levels—individual, collection, project, and object—and assigns them to one or more built-in groups by default. To enhance security, do the following actions:
 
-- **Provide least privilege access:** Give users and services the minimum necessary access to perform their business functions.
+- **Provide least privilege access:** Ideally, users and services should have the minimum necessary access to perform their business functions.
+
+> [!NOTE]
+> In the context of CI/CD, implementing [least privilege access](https://wikipedia.org/wiki/Principle_of_least_privilege) can be counterproductive due to the dynamic nature of architecture. Each time a new service gets introduced, permissions must be updated beforehand. Additionally, rollbacks might require extra permissions that need to be considered. This challenge is magnified in environments with multiple pipelines.
+> While least privilege permissions aim to minimize the impact of security breaches, it's crucial to balance security with productivity. You can achieve this balance by adopting more permissive access and mitigating the associated risks with compensating controls and security practices outlined on this page.
+
 - **Disable inheritance:** Whenever possible, disable inheritance. Inheritance can inadvertently grant access or permissions to unexpected users due to its allow-by-default nature. For more information, see the [section on permission inheritance](about-permissions.md#permission-inheritance)
 
 For more information about permissions, see the following articles: 
