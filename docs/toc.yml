@@ -39,7 +39,7 @@
     href: ./marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: High-risk extensions
     displayName: risk, scope, extensions
-    href: ./marketplace/high-risk extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    href: ./marketplace/high-risk-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Authenticate
   items:
   - name: Guide to authentication
