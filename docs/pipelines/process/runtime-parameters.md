@@ -2,7 +2,7 @@
 title: Use runtime and type-safe parameters
 description: You can use runtime parameters in pipelines or as part of a template
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 11/19/2024
 monikerRange: '>=azure-devops-2020'
 ai-usage: ai-assisted
 ---
