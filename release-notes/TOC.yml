@@ -871,6 +871,8 @@
         items:
         - name: "2024"
           items:
+          - name: November 26
+            href: 2024/general/sprint-248-update.md 
           - name: October 16
             href: 2024/general/sprint-246-update.md 
           - name: July 3

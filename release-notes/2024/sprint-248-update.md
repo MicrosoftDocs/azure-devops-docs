@@ -12,6 +12,10 @@ description: TBD
 
 Check out the release notes for details.
 
+### General
+
+[!INCLUDE [sprint-248-update-links](includes/general/sprint-248-update-links.md)]
+
 ### Azure Boards:
 
 [!INCLUDE [sprint-248-update-links](includes/boards/sprint-248-update-links.md)]
@@ -27,6 +31,10 @@ Check out the release notes for details.
 ### Test Plans
 
 [!INCLUDE [sprint-248-update-links](includes/testplans/sprint-248-update-links.md)]
+
+## General
+
+[!INCLUDE [sprint-248-update](includes/general/sprint-248-update.md)]
 
 ## Azure Boards
 
