@@ -587,7 +587,7 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 - [Resolve data validation errors](resolve-excel-data-validation-errors.md):
     A data validation error occurs if a field value violates the rules for that field and work item type.  
 - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
-    An invalid link happens when work item in a hierarchy or tree list and is moved or sorted, breaking the dependencies between work items. To resolve this error, review the error message and reposition the work items to restore the correct structure.
+    An invalid link happens when a work item in a hierarchy or tree list and is moved or sorted, breaking the dependencies between work items. To resolve this error, review the error message and reposition the work items to restore the correct structure.
 - [Address Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
     If you receive error TF208104, your changes to the fields are published, but changes to the link hierarchy aren't. This error occurs because another process locks at least one of the link relationships for the work item, such as Project Server integration. 
 
@@ -609,7 +609,7 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops"
+::: moniker range=" azure-devops-2019"
 
 - [Modify work items in bulk (web portal)](../bulk-modify-work-items.md)  
 - [Troubleshoot Azure DevOps Office integration issues](tfs-office-integration-issues.md)
