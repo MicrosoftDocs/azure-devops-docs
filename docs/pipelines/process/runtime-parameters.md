@@ -56,7 +56,7 @@ jobs:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-When the pipeline runs, you select the Pool Image. If you don't make a selection, the default option, `ubuntu-latest` gets used. 
+From the pipeline runs page, select **Run pipeline** to run the pipeline. You'll see the option to select the Pool Image. If you don't make a selection, the default option, `ubuntu-latest` gets used. You won't have the option to select a Pool Image if you run your pipeline from the YAML editor. 
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)

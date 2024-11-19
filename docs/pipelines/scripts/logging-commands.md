@@ -5,6 +5,7 @@ ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.date: 11/19/2024
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ---
 
 # Logging commands
