@@ -20,6 +20,9 @@ Azure Artifacts provides an easy way to share packages to users outside your org
 
 ## Create a public feed
 
+> [!NOTE]
+> Public feeds are only available in Azure DevOps Services.
+
 Public feeds are project-scoped feeds in a public project. Public feeds inherit the visibility settings of the hosting project.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your public project.
