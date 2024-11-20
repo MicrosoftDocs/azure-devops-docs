@@ -78,6 +78,9 @@ The system handles permissions at various levels—individual, collection, proje
 > While least privilege permissions aim to minimize the impact of security breaches, it's crucial to balance security with productivity. You can achieve this balance by adopting more permissive access and mitigating the associated risks with compensating controls and security practices outlined on this page.
 
 - **Disable inheritance:** Whenever possible, disable inheritance. Inheritance can inadvertently grant access or permissions to unexpected users due to its allow-by-default nature. For more information, see the [section on permission inheritance](about-permissions.md#permission-inheritance)
+- **Environment segmentation:** Utilize separate Azure accounts for each environment to isolate resources and minimize disruptions. For large organizations, allocate at least one account per team per environment. Consider adopting [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/) for streamlined provisioning and management.
+- **Access control and compliance:** Leverage [Azure Policy](/azure/governance/policy/overview) in Management Groups to restrict access to unused Azure regions and services, ensuring compliance with organizational standards.
+- **Attribute-Based Access Control (ABAC):** Implement [ABAC](/azure/role-based-access-control/conditions-overview) with properly tagged resources to limit rogue actor access and prevent unauthorized resource creation.
 
 For more information about permissions, see the following articles: 
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
