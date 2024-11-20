@@ -6,4 +6,4 @@ ms.topic: include
 ---
  
 - [Direct Link from Test Plan Work Item to Test Plans Page](#direct-link-from-test-plan-work-item-to-test-plans-page)
-- [New sorting capabilities in Test Plans directory](#new-sorting-capabilities-in-test-plans-directory) 
+- [Auto Pause for Test Case Execution preview](#auto-pause-for-test-case-execution-preview) 
