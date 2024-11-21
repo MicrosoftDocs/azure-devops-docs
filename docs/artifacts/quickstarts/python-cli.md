@@ -1,67 +1,36 @@
 ---
-title: Publish and consume Python packages using the CLI
-description: Publish and consume Python packages from the command-line interface.
+title: Publish and consume Python packages (CLI)
+description: Learn how to publish and consume Python packages from the command-line interface.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
-ms.date: 02/21/2024
+ms.date: 11/21/2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Publish and consume Python packages using the command line (CLI)
+# Publish and consume Python packages (CLI)
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Artifacts allows you to create, host, and share Python packages with your team or organization. You can publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment.
+Azure Artifacts enables developers to manage their dependencies from a single feed. You can publish and consume Python packages to your feed from the command line. In this article, you'll learn how to:
 
-In this article you learn how to:
-
-* Create an Azure Artifacts feed.
-* Set up authentication with either the Python artifacts-keyring package or, a personal access token (PAT).
-* Publish Python packages to your feed.
-* Consume Python packages from your feed.
-
-To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+> [!div class="checklist"]  
+> * Create an new feed.
+> * Publish Python packages to a feed.
+> * Install Python packages from a feed.
 
 ## Prerequisites
 
-To run the following steps, you must have:
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
 
-::: moniker range=">= azure-devops"
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-* An Azure DevOps organization. [Create one for free](../../pipelines/get-started/pipelines-sign-up.md).
-* A personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
-* An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
-* Python 3.9 or later installed on your local machine. [Download Python here](https://www.python.org/downloads).
-* pip 24.0 and twine 5.0.0 or higher.
-* A Python package to publish from your local machine to your feed.
-* If using the sample Python package:
-    * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-    * git installed on your local machine. 
+- Download and install [Python](https://www.python.org/downloads/).
 
-::: moniker-end
+## Create a feed
 
-::: moniker range="< azure-devops"
-
-* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-* Access to an Azure DevOps Server collection.
-* A personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
-* An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
-* Python 3.9 or later installed in your local development environment.
-* pip 24.0 and twine 5.0.0 or higher.
-* If using the sample Python package:
-    * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-    * git installed on your local machine. 
-
-::: moniker-end
-
-
-## Create an Azure Artifacts feed
-
-If you don't have a feed, use the following steps to create one.
-
-[!INCLUDE [Create a feed](../includes/create-feed-gt-eq-2019.md)]
+[!INCLUDE [](../includes/create-feed.md)]
 
 ## Create a local Python package
 
