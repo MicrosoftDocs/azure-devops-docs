@@ -18,16 +18,18 @@ Dependency scanning supports both direct and transitive dependencies for all sup
 
 Due to how detection is run for dependency scanning, ensure you have a package restore step in your build pipeline so that the correct package version is determined, otherwise results may be missing or incomplete. 
 
+## Ecosystems and versions
+
 | Package manager  | Languages  | Supported formats | Supported versions |
 |---|---|---|---|
-|  [Cargo](./#cargo) | Rust  | `Cargo.toml`, `Cargo.lock`  | v1 |
+|  [Cargo](#cargo) | Rust  | `Cargo.toml`, `Cargo.lock`  | v1 |
 |  CocoaPods | Swift  | `Podfile.lock`  | n/a |
 |  [Go modules](#go-modules) | Go  | `go.mod`, `go.sum`  | n/a |
 |  Gradle | Java  | `*.lockfile`  | n/a |
 |  Maven | Java  | `pom.xml`  | n/a |
-|  [npm](./#npm) | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | v6, v7 & lockfile <= v3 |
-|  [NuGet](./#nuget) | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | n/a |
-|  [pip](./#pip) | Python  | `setup.py`, `requirements.txt`  | n/a |
+|  [npm](#npm) | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | v6, v7 & lockfile <= v3 |
+|  [NuGet](#nuget) | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | n/a |
+|  [pip](#pip) | Python  | `setup.py`, `requirements.txt`  | n/a |
 |  pnpm | JavaScript  | `package.json` | v7, v8 |
 |  RubyGems | Ruby  |  `Gemfile.lock` | n/a |
 |  Yarn | JavaScript  | `package.json`  | v1, v2 |
