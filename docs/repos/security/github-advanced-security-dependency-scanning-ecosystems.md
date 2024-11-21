@@ -21,16 +21,28 @@ Due to how detection is run for dependency scanning, ensure you have a package r
 | Package manager  | Languages  | Supported formats | Supported versions |
 |---|---|---|---|
 |  Cargo | Rust  | `Cargo.toml`, `Cargo.lock`  | v1 |
-|  CocoaPods | Swift  | `Podfile.lock`  | |
-|  Go modules | Go  | `go.mod`, `go.sum`  | v1.11+ |
+|  CocoaPods | Swift  | `Podfile.lock`  | n/a |
+|  Go modules | Go  | `go.mod`, `go.sum`  | n/a |
 |  Gradle | Java  | `*.lockfile`  | n/a |
 |  Maven | Java  | `pom.xml`  | n/a |
-|  npm | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | v6, v7, v8 |
-|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | |
-|  pip | Python  | `setup.py`, `requirements.txt`  | |
+|  [npm](/#npm) | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | v6, v7 & lockfile <= v3 |
+|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | n/a |
+|  pip | Python  | `setup.py`, `requirements.txt`  | n/a |
 |  pnpm | JavaScript  | `package.json` | v7, v8 |
-|  RubyGems | Ruby  |  `Gemfile.lock` | |
-|  Yarn | JavaScript  | `package.json`  | v1, v2, v3 |
+|  RubyGems | Ruby  |  `Gemfile.lock` | n/a |
+|  Yarn | JavaScript  | `package.json`  | v1, v2 |
+
+## Cargo 
+
+If `Cargo` cli installed with v1.77 or higher, `cargo metadata` is used, which is more accurate.
+
+## Go modules
+
+If using Go v1.17 or higher, `go.mod` is used directly, along with the `go cli` if it is present on the agent. Otherwise the `go.sum` file is scanned.
+
+## Maven
+
+Detection requires the `maven` CLI to be installed on the agent. 
 
 ## npm
 
@@ -41,5 +53,7 @@ Dependency scanning detects any root `package.json` files but doesn't resolve sp
 Without a package restore, dependency scanning doesn't resolve any specific package versions even if dependencies in the `*.csproj` are not semanatically versioned. 
 
 ## pip 
+
+Use pip v22.2.0 or higher to enable use of `pip report` scanning, which provides more accurate detection.
 
 The enviroment variable `PIP_INDEX_URL` is used to determine what package feed should be used for `pip install --report detection`. The default value will use the PyPi index unless pip defaults have been configured globally.
