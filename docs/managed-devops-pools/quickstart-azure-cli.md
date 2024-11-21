@@ -162,7 +162,7 @@ The `mdp pool create` method has several parameters that take JSON values that c
 
 Create the following three files and save them to the folder where you plan to run the Azure CLI commands to create the pool.
 
-1. Create a file name **agent-profile.json** with the following contents.
+1. Create a file named **agent-profile.json** with the following contents.
 
     ```json
     {
