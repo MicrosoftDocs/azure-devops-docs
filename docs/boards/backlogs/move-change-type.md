@@ -127,6 +127,7 @@ Note the following:
 - You can only move work items from one project to another project within the organization or collection. 
 - You can only move work items whose type exists in the project you're moving it to. For example, you can't move User Stories to a project based on the Scrum process that doesn't contain User Story as a work item type. 
 - You can't move work items associated with test management. 
+- You can only move work items whose status is supported in the target project. For example, you can't move a work item with a status of **In Progress** to a project that doesn't support the **In Progress** status.
 - To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
 - Users granted **Stakeholder** access don't have access to this feature even if granted permission.  
 
@@ -157,3 +158,5 @@ Note the following:
 
 - [Remove or delete work items](remove-delete-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
+- [Add or modify work items in bulk with Microsoft Excel](./office/bulk-add-modify-work-items-excel.md)
+- [Import, update, and export bulk work items with CSV files](../queries/import-work-items-from-csv.md)

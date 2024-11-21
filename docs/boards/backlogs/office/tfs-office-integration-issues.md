@@ -25,6 +25,17 @@ If the **Team** ribbon is missing in Microsoft Excel, as shown in the following 
 
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
+
+## Install Azure DevOps Integration 2019
+
+This tool allows you to connect to Azure Boards from Excel. To install the Azure DevOps Integration 2019 tool, follow these steps:
+
+1. Download the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) tool.
+
+1. Install the tool by running the downloaded file.
+1. Restart Excel to see the **Team** ribbon.
+
+If you still don't see the **Team** ribbon, follow the steps in the following sections.
  
 ## Enable the Azure DevOps add-in 
 
@@ -51,7 +62,7 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
    > [!div class="mx-imgBorder"]
    > ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
    
-2. Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
+1. Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 
    > [!NOTE]
    > If there are multiple folders with the same name, select the one with the highest version number. 
@@ -63,25 +74,25 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
    > [!div class="mx-imgBorder"]
    > ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
 
-3.	Double-select to open **LoadBehavior** and set the value data field to `3`. If the value is `0` the **Team** ribbon doesn't load.
+1.	Double-select to open **LoadBehavior** and set the value data field to `3`. If the value is `0` the **Team** ribbon doesn't load.
  
-4.	Select **OK** and restart Excel. 
+1. Select **OK** and restart Excel. 
 
-	For more information about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
+    For more information about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
 
 ## Verify if the add-in is disabled
 
-1.	From the Excel **File** menu, select **Options**.
-2. Choose **Add-ins** and from the *Manage* dropdown menu, select **Disabled Items** > **Go**.
+1. From the Excel **File** menu, select **Options**.
+1. Choose **Add-ins** and from the *Manage* dropdown menu and select **Disabled Items** > **Go**.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of Excel Options, Add-ins, Choose Disabled Items.](media/excel-com-disabled-items.png)
-   
-3. If you see "Azure DevOps Add In" in the list, choose it and select **Enable**.
+
+1. If you see *Azure DevOps Add In* in the list, choose it and select **Enable**.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of disabled items dialog, Azure DevOps Add In checked.](media/excel-com-list-of-disabled-items.png) 
-   
+
 ## Office add-in doesn't load or open in Excel when Visual Studio fails
 
 To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you might need to repair Visual Studio. 
@@ -105,23 +116,23 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
    > [!div class="mx-imgBorder"]
    > ![Screenshot of Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
 
-2. Run the following commands based on your software:
+1. Run the following commands based on your software:
 
-|Software |Commands |
-|---------|---------|
-|Microsoft 365   | `GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.14.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.14.0.Microsoft.Office.Interop.Excel.dll`<br>`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.14.0.office\15.0.0.0__71e9bce111e9429c\Policy.14.0.Office.dll`   |
-|Office 2016 and Office 2013   |  `GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.12.0.Microsoft.Office.Interop.Excel.dll`<br>`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.office\15.0.0.0__71e9bce111e9429c\Policy.12.0.Office.dll`  |
-|Office 2010     |`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.Microsoft.Office.Interop.Excel\14.0.0.0__71e9bce111e9429c\Policy.12.0.Microsoft.Office.Interop.Excel.dll`<br>`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.office\14.0.0.0__71e9bce111e9429c\Policy.12.0.Office.dll`  |
+    |Software |Commands |
+    |---------|---------|
+    |Microsoft 365   | `GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.14.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.14.0.Microsoft.Office.Interop.Excel.dll`<br>`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.14.0.office\15.0.0.0__71e9bce111e9429c\Policy.14.0.Office.dll`   |
+    |Office 2016 and Office 2013   |  `GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.12.0.Microsoft.Office.Interop.Excel.dll`<br>`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.office\15.0.0.0__71e9bce111e9429c\Policy.12.0.Office.dll`  |
+    |Office 2010     |`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.Microsoft.Office.Interop.Excel\14.0.0.0__71e9bce111e9429c\Policy.12.0.Microsoft.Office.Interop.Excel.dll`<br>`GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.office\14.0.0.0__71e9bce111e9429c\Policy.12.0.Office.dll`  |
 
-3. After you successfully run the `GACUTIL` commands, restart Excel and look for the Azure DevOps Integration Tool for Office add-in. 
+1. After you successfully run the `GACUTIL` commands, restart Excel and look for the Azure DevOps Integration Tool for Office add-in. 
 
 If the previous steps don't help, try the next steps:  
 
 1.	[Repair Office](https://support.office.com/article/Repair-an-Office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b?ui=en-US&rs=en-US&ad=US).  
 
-2.	Uninstall Office and then reinstall Office. 
+1.	Uninstall Office and then reinstall Office. 
 
-3.	Contact Microsoft via the [Developer Community](https://developercommunity.visualstudio.com/home).  
+1.	Contact Microsoft via the [Developer Community](https://developercommunity.visualstudio.com/home).  
 
 ## User can't sign in to Azure DevOps from Excel after password change
 
@@ -130,7 +141,7 @@ If you changed your network password and start receiving authentication errors w
 #### Remove the token from the registry
 
 1. Close all open Excel instances.
-2. Save and then clear the registry path by running the following commands from an elevated Command Prompt (run as administrator):
+1. Save and then clear the registry path by running the following commands from an elevated Command Prompt (run as administrator):
    ```CommandPrompt
    reg export HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\14.0\ClientServices\TokenStorage\VisualStudio\VssApp %TEMP%\oicreds.reg
    ```
@@ -139,7 +150,7 @@ If you changed your network password and start receiving authentication errors w
    reg delete HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\14.0\ClientServices\TokenStorage\VisualStudio\VssApp
    ```
 
-3. Open Excel and it prompts for sign-in when it connects to Azure DevOps.
+1. Open Excel and it prompts for sign-in when it connects to Azure DevOps.
 
 Wait until the token expires or delete this reg key every time a password changes if configured in a way that causes this issue.
 

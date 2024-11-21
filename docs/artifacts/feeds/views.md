@@ -197,8 +197,12 @@ Azure Artifacts offers three default views: *@Local*, *@Prerelease*, and *@Relea
 
     :::image type="content" source="./media/manage-views.png" alt-text="A screenshot showing how to add, edit, or delete feed views.":::
 
+::: moniker range="azure-devops"
+
 > [!IMPORTANT]
 > For public feeds, if you change the access permissions of a view to **Specific people**, that view will no longer be available as an upstream source.
+
+::: moniker-end
 
 ## Related content
 

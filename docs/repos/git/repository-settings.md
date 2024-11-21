@@ -950,7 +950,7 @@ To set policies to protect specific or default branch names across a project:
 1. Select the plus sign **+** in **Branch Policies** at the bottom of the page.
 1. On the **Add branch protection** screen, select **Protect the default branch of each repository**, or **Protect current and future branches matching a specified pattern**.
 
-   If you select the second option, enter the branch name to protect. An informational message lets you know how many current branches are affected. The branch doesn't have to exist yet to protect the branch name.
+   If you select the second option, enter the branch name to protect. An informational message lets you know how many current branches are affected. Keep in mind that branch name (or the pattern you entered) is **case-sensitive**. The branch doesn't have to exist yet to protect the branch name.
 
 1. Select **Create**.
 

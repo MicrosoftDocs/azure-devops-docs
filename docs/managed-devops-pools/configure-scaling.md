@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 11/13/2024
+ms.date: 11/15/2024
 ---
 
 # Configure scaling
@@ -843,11 +843,9 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 * **More performance** (`MorePerformance`) - 75th percentile
 * **Best performance** (`BestPerformance`) - 90th percentile
 
-You can view the projected and actual usage for any specific day within the last week, or a seven day average.
-
 #### [Azure portal](#tab/azure-portal/)
 
-:::image type="content" source="media/agent-performance/automatic-scaling.png" alt-text="Screenshot of automatic scaling setting.":::
+:::image type="content" source="media/agent-performance/automatic-scaling-setting.png" alt-text="Screenshot of automatic scaling setting.":::
 
 #### [ARM template](#tab/arm/)
 

@@ -24,7 +24,6 @@ This article describes the features that you can use to manage work items in Azu
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
-
 ## Update work items
 
 You can update a work item to change various elements, such as the title, description, state, or assigned team member.
