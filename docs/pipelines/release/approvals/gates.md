@@ -1,5 +1,5 @@
 ---
-title: Control releases with deployment gates
+title: Deployment gates concepts
 description: Understand deployment gates in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: concept-article
@@ -72,15 +72,9 @@ The following diagram illustrates the flow of gate evaluation where, after the i
 
 :::image type="content" source="media/gate-results-fail.png" alt-text="A screenshot showing examples of gates approvals and failures.":::
 
-## Resources
-
-- [Custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md)
-- [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
-- [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 
 ## Related articles
 
 - [Release gates and approvals overview](index.md)
 - [Use gates and approvals to control your deployment](../deploy-using-approvals.md)
-- [Add stages, dependencies, & conditions](../../process/stages.md)
-- [Release triggers](../triggers.md)
+- [Classic Release triggers](../triggers.md)
