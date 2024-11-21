@@ -26,7 +26,7 @@ Ensure that the secret you are attempting to block is supported for push protect
 Ensure that the secret you're attempting to block is supported as a user alert in [Supported secrets](github-advanced-security-secret-scan-patterns.md#supported-secrets). If you're attempting to push a generically named secret, such as `password: password123` or `secret: password123`, secret scanning doesn't support this scenario and no alert is created nor does push protection apply.
 
 ## No user alerts created for supported pattern
-Some patterns may be looking for paired credentials, so only including one part of the pattern may not trigger an alert. For more information on paired credentials, see [About secret scanning alerts](./github-advanced-security-secret-scanning#about-secret-scanning-alerts).
+Some patterns may be looking for paired credentials, so only including one part of the pattern may not trigger an alert. For more information on paired credentials, see [About secret scanning alerts](./github-advanced-security-secret-scanning.md#about-secret-scanning-alerts).
 
 ## Security overview reporting more critical alerts than shown at the repository-level
 Security overview reports all secret alerts, including the `high confidence` provider patterns and the `other confidence` non-provider patterns. In the repository-level Advanced Security view, select the `Confidence` filter dropdown to view `Confidence: other` findings. For more information on provider versus non-provider patterns, see [Secret scanning patterns](./github-advanced-security-secret-scan-patterns.md#non-provider-patterns)
