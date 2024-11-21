@@ -38,7 +38,7 @@ If `Cargo` cli installed with v1.77 or higher, `cargo metadata` is used, which i
 
 ## Go modules
 
-If using Go v1.17 or higher, `go.mod` is used directly, along with the `go cli` if it is present on the agent. Otherwise the `go.sum` file is scanned.
+If using Go v1.17 or higher, `go.mod` is used directly, along with the `go cli` if it's present on the agent. Otherwise the `go.sum` file is scanned.
 
 ## Maven
 
@@ -46,14 +46,14 @@ Detection requires the `maven` CLI to be installed on the agent.
 
 ## npm
 
-Dependency scanning detects any root `package.json` files but doesn't resolve specific package versions without a package restore at build time even if dependencies in the `package.json` are not semanatically versioned. 
+Dependency scanning detects any root `package.json` files but doesn't resolve specific package versions without a package restore at build time even if dependencies in the `package.json` aren't semantically versioned. 
 
 ## NuGet 
 
-Without a package restore, dependency scanning doesn't resolve any specific package versions even if dependencies in the `*.csproj` are not semanatically versioned. 
+Without a package restore, dependency scanning doesn't resolve any specific package versions even if dependencies in the `*.csproj` aren't semantically versioned. 
 
 ## pip 
 
-Use pip v22.2.0 or higher to enable use of `pip report` scanning, which provides more accurate detection.
+Use `pip v22.2.0` or higher to enable use of `pip report` scanning, which provides more accurate detection.
 
-The enviroment variable `PIP_INDEX_URL` is used to determine what package feed should be used for `pip install --report detection`. The default value will use the PyPi index unless pip defaults have been configured globally.
+The environment variable `PIP_INDEX_URL` is used to determine what package feed should be used for `pip install --report detection`. The default value uses the PyPi index unless pip defaults are configured globally.
