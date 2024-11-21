@@ -1,6 +1,6 @@
 ---
-title: Publish and consume Python packages (CLI)
-description: Learn how to publish and consume Python packages from the command-line interface.
+title: Publish and install Python packages (CLI)
+description: Learn how to publish and install Python packages from the command-line interface.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
@@ -9,11 +9,11 @@ monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Publish and consume Python packages (CLI)
+# Publish and install Python packages (CLI)
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. You can publish and consume Python packages to and from your feed using the command line. In this article, you'll learn how to:
+Azure Artifacts enables developers to manage their dependencies from a single feed. You can publish and install Python packages to and from your feed using the command line. In this article, you learn how to:
 
 > [!div class="checklist"]  
 > * Create an new feed.
