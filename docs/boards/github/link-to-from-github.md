@@ -1,5 +1,5 @@
 ---
-title: Link GitHub commits, PRs, branches,and issues to work items
+title: Link GitHub commits, PRs, branches, and issues to work items
 titleSuffix: Azure Boards 
 description: Learn how to links work items to GitHub commits, pull requests, branches, and issues, and automatically transition work item states in Azure Boards.  
 ms.service: azure-devops-boards 
