@@ -25,43 +25,31 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 
 ![Pic: Notification](./media/integrations-slack/notifications.png)
 
-Read this article to learn how to: 
-
-> [!div class="checklist"]  
-> * Add the Azure Boards app to your Slack workspace
-> * Link and unlink your Azure Boards project to the Azure Boards app
-> * Set up subscriptions to work item related events in your Slack channel
-> * Create work items from your Slack channel
-> * Monitor work item activity in your Slack channel  
-> * Get notifications in private Slack channels
-
 > [!NOTE]
 > * Azure Boards and Slack integration is only supported for Azure DevOps Services.  
 > * Notifications are currently not supported inside direct messages.
 
 ## Prerequisites
 
-- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For more information, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
-- To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
-
-
+- **Access levels**: To create a work item, be a **Contributor** for the project.
+- **Permissions**: To create subscriptions in a Slack channel for work item events, be a member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group  or [Team Administrators](../../organizations/settings/add-team-administrator.md) group.
+- **Policies**: To receive notifications, [enable the **Third party application access via OAuth** policy for the organization](../../organizations/accounts/change-application-access-policies.md).
 
 ## Add the Azure Boards app to your Slack workspace
 
 1. To install the Azure Boards app to your Slack workspace, open a web browser, sign into Slack, and open the [Azure Boards app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp). 
 
-1. Once added, you'll see a welcome message from the app as shown in the following image. 
+2. Once added, a welcome message displays from the app as shown in the following image. 
 
 	![Pic: Welcome message](./media/integrations-slack/welcome-message.png)
 
-1. Use the `/azboards` Slack handle to interact with the app. A list of commands is provided later in this article, [Command reference](#command-reference).
+3. Use the `/azboards` Slack handle to interact with the app. A list of commands is provided later in this article, [Command reference](#command-reference).
 
 ## Link your Azure Boards project to the Azure Boards app
 
 To use the app, you must first link your Azure Boards project to your Slack channel. 
 
-1. Once the app has been installed in your Slack workspace, connect and authenticate yourself to Azure Boards. 
+1. Once the app gets installed in your Slack workspace, connect and authenticate yourself to Azure Boards. 
 
 	![screenshot of sign-in](./media/integrations-slack/signin.png)
 
@@ -94,7 +82,7 @@ filters to customize your Slack channel. To easily set up subscriptions, your re
 
 ## Add area paths
 
-You can add areas that your team works on to the channel so that they're always available for creating work items and subscriptions. This is important mainly for the teams with more than 100 area paths.
+You can add areas that your team works on to the channel so that they're always available for creating work items and subscriptions. This action is important mainly for the teams with more than 100 area paths.
 
 - Use the following command to add area paths from your project to the Slack channel.
 
@@ -110,7 +98,7 @@ You can add areas that your team works on to the channel so that they're always 
 
 	![add areapath success message](./media/integrations-slack/add-areapath.png)
 
-- If you choose project name as your area path, then you'll receive notifications for all the area paths in the project. It's logically equivalent to choosing 'Any' area path.
+- If you choose project name as your area path, then you receive notifications for all the area paths in the project. It's logically equivalent to choosing 'Any' area path.
 
 
 ## Create a work item with a command
@@ -204,7 +192,7 @@ If you're experiencing the following errors when using the [Azure Boards App for
 
 In the **same browser**, start a new tab, go to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command. 
 
-Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
+Select the `Sign in` button and you get redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](media/troubleshooting/boards-consent-page-slack.png)
@@ -215,6 +203,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 ## Related articles
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
-- [Azure Repos with Slack](../../repos/integrations/repos-slack.md)
+- [Use Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
+- [Use Azure Repos with Slack](../../repos/integrations/repos-slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
