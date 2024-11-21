@@ -45,10 +45,10 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
     ```
     [distutils]
     Index-servers =
-      HelloNodeFeed
+    FEED_NAME
     
-    [HelloNodeFeed]
-    Repository = https://pkgs.dev.azure.com/ramiMSFTDevOps/HelloNode/_packaging/HelloNodeFeed/pypi/upload/
+    [FEED_NAME]
+    Repository = https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/upload/
     ```
 
 1. Run the following command in your project directory to create source and wheel distributions.
@@ -60,7 +60,7 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 1. Run the following command to publish your package. Use the *-r REPOSITORY_NAME* flag to ensure your private packages are not accidentally published to PyPI.
 
     ```
-    twine upload -r HelloNodeFeed dist/*
+    twine upload -r REPOSITORY_NAME dist/*
     ```
 
 > [!IMPORTANT]
@@ -80,7 +80,7 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 
     ```
     [global]
-    index-url=https://pkgs.dev.azure.com/ramiMSFTDevOps/HelloNode/_packaging/HelloNodeFeed/pypi/simple/
+    index-url=https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/simple/
     ```
 
 1. Run this command in your project directory to install your packages:
