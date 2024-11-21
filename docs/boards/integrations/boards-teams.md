@@ -23,41 +23,24 @@ This article describes how to use the Azure Boards and Azure DevOps apps for Mic
 
 By using the Azure Boards app for Microsoft Teams, you can:
 
-- Set up and manage subscriptions to create and manage work items and work item events in your Teams channels.
-- Create work items from conversations in a channel.
-- Search and share work items with other channels using the messaging extension.
-- View work item previews from URLs.
+- Set up subscriptions to create and manage work items and work item events in your Teams channels.
+- Create work items directly from channel conversations.
+- Search for and share work items across channels using the messaging extension.
+- View previews of work items from URLs.
 
 > [!NOTE]
-> Azure Boards notifications aren't supported inside Teams chat or direct messages.
-
-In this article, you learn how to:
-
-- Add the Azure Boards app to your team in Microsoft Teams.
-- Link your Azure Boards project to the Azure Boards app.
-- Set up subscriptions to work item events in your Teams channel.
-- Create work items from your Teams channel.
-- Monitor work item activity in your Teams channel.
-
-> [!NOTE]
-> The Azure Boards app for Microsoft Teams isn't supported for O365 Government Community Cloud (GCC) customers that use an Azure Commercial subscription in conjunction with a GCC tenant.
+> - Azure Boards notifications aren't supported inside Teams chat or direct messages.
+> - The Azure Boards app for Microsoft Teams isn't supported for O365 Government Community Cloud (GCC) customers that use an Azure Commercial subscription in conjunction with a GCC tenant.
 
 ## Prerequisites
 
-- Access to a Team and channel in Microsoft Teams where you can install an app.
-- Project Administrator or Team Administrator [role](../../organizations/security/permissions.md) in an Azure DevOps project.
-- **Third party application access via OAuth** enabled in Azure DevOps organizational settings.
-
-For more information, see the following resources:
-
-- [Create a project](../../organizations/projects/create-project.md)
-- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)
-- [Add team administrator](../../organizations/settings/add-team-administrator.md)
-- [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
+- **Permissions**: Be a member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group  or [Team Administrators](../../organizations/settings/add-team-administrator.md) group for your project.
+- **Policies**: [Enable the **Third party application access via OAuth** policy](../../organizations/accounts/change-application-access-policies.md).
+- **Access**: Have access to a team and channel in Microsoft Teams where you can install an app.
 
 ## Add the Azure Boards app to Teams
 
-You can add the Azure Boards app to your Teams channels.
+To add the Azure Boards app to your Teams channels, do the following steps.
 
 1. In Microsoft Teams, select **Apps**, search for *Azure Boards*, and then select **Azure Boards**.
 
@@ -105,7 +88,6 @@ To use the app, sign in to Azure Boards and link your Azure Boards project to yo
 1. Select the **Add subscription** button in the linked project notification to start monitoring your project.
 
    :::image type="content" source="media/integrations-teams/add-subscription.png" alt-text="Screenshot of the linked project notification with the Add subscription button.":::
-
 
 ### Set up subscriptions
 
@@ -168,7 +150,7 @@ To view, add, and remove subscriptions for a channel, use the `@azure boards sub
 
 To help you search for and share work items, the Azure Boards app for Microsoft Teams supports the compose extension. You can search for work items by work item ID, title, or supported functional command. For a list of supported commands, see [Functional work item search](../../project/search/functional-work-item-search.md).
 
-To use the compose extension, you must be signed in to the Azure Boards project in the Teams channel. Select the **+** symbol in the message field, select **Azure Boards**, and then search for a work item. You can also select **Create work item** to create a new work item.
+To use the compose extension, be signed in to the Azure Boards project in the Teams channel. Select the **+** symbol in the message field, select **Azure Boards**, and then search for a work item. You can also select **Create work item** to create a new work item.
 
 :::image type="content" source="media/integrations-teams/teams-boards-compose-extension.png" alt-text="Screenshot showing the compose extension.":::
 

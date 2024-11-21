@@ -34,11 +34,13 @@ When you connect your Azure DevOps Server project with your GitHub Enterprise Se
 
 ## Prerequisites 
  
-* Connect to GitHub.com repositories by installing Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
-* [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
-* Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-* You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-* You must be an administrator of the GitHub Enterprise Server that you connect to. 
+* **Integration with GitHub**: 
+  * Connect to GitHub.com repositories by installing Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
+  * [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
+* **Project connection**: Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+* **Permissions**: 
+  * Be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
+  * Be an administrator of the GitHub Enterprise Server that you connect to. 
 
 ## Authentication options
 
@@ -295,8 +297,8 @@ Consider the following resolutions:
 	Delete and recreate the connection to the GitHub repository. This recreated connection causes GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
-  - The PAT may have been revoked or the required permission scopes changed and are insufficient.
-  - The user may have lost admin permissions on the GitHub repo.  
+  - The PAT might be revoked or the required permission scopes changed and are insufficient.
+  - The user perhaps lost administrative permissions on the GitHub repository.  
 
 	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`.
 
@@ -304,11 +306,15 @@ Consider the following resolutions:
 
 #### Update XML definitions for select work item types 
 
-If your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience, and you want to link to and view the GitHub link types from the Development section in the work item forms, you must update the XML definitions for the work item types. 
+If your organization customizes work tracking using the Hosted XML or on-premises XML process model and wants to integrate GitHub link types into the Development section of work item forms, you must update the XML definitions for the corresponding work item types.
 
-For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
+For example, to link user stories and bugs to GitHub commits and pull requests within the **Development** section of work item forms, you must update the XML definitions for these work item types.
 
-Follow the sequence of tasks provided in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to update the XML definitions. For each work item type, find the `Group Label="Development"` section, and add the following two lines in the following code syntax to support the external links types: **GitHub Commit** and **GitHub Pull Request**.  
+To modify the XML definitions, do the steps outlined in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md). For each work item type:
+1. Locate the `Group Label="Development"` section.
+2. To support the external link types, **GitHub Commit** and **GitHub Pull Request**, add the following lines of code:
+
+This integration enables seamless tracking of GitHub activities directly from your work items in Azure Boards.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -349,6 +355,6 @@ When it updates, the section should appear as follows.
 
 ## Related articles
 
-- [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Learn about Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
