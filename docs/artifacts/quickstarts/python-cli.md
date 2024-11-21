@@ -32,143 +32,39 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 
 [!INCLUDE [](../includes/create-feed.md)]
 
-## Create a local Python package
-
-You need a Python package to publish to your feed. If you don't have a package to publish, you can clone a sample Python package from GitHub.
-
-### Clone the sample Python package
-
-
-Use the following steps to use the sample Python package from GitHub.
-
-1. Go to the following GitHub repository:
-
-    ```html
-    https://github.com/microsoft/python-package-template
-    ```
-
-1. Fork the repository to your GitHub account.
-1. Go to your forked repository, and select **Code**.
-1. Copy the URL of your forked repository.
-1. From a CLI on your local machine, clone the repository to your local machine using the URL you copied from your forked repository. 
-
-    ```Command
-    git clone <REPOSITORY_URL>
-    ```
-
-1. Change directory to your cloned repository.
-
-    ```Command
-    cd python-package-template
-    ```
-
-### Build your package
-
-To build your wheel and source distribution, run the following commands in your project directory:
-
-```Command
-pip install --upgrade build
-python -m build
-```
-
-If your Python project has a `setup.py` file, you can use the following command to build your package:
-
-```Command
-python setup.py sdist bdist_wheel
-```
-
-## Connect to feed
-
-There are two primary ways to connect to a feed to publish or consume your Python packages:
-
-1. Use the artifacts-keyring package, which automatically sets up authentication for you.
-1. Manually set up credentials with a PAT.
-
-> [!NOTE]
-> **artifacts-keyring** is not supported on newer versions of Ubuntu.
-
-
-> [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
-
-## Set up artifacts-keyring for authentication
-
-The artifacts-keyring package works with the Python keyring package to allow you to set up authentication to publish and consume your Python packages to and from your feed. Both pip and twine use the Python keyring package to find credentials. 
-
-> [!IMPORTANT]
-> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**. For more information, see [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements).
-
-If you choose to use **artifacts-keyring**, you must install the package before you can use it.
-
-In an elevated command prompt window, run the following command to install the artifacts-keyring package:
-   
-   ```Command
-   pip install artifacts-keyring
-   ```
-
-## Publish Python packages
-
-You can publish Python packages to your feed using the artifacts-keyring package or PAT authentication.
-
-### Publish packages with artifacts-keyring
-
-1. Select **Connect to feed** from your feed.
-
-   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
-
- 1. Select **twine** and copy the repository URL from the **Project setup** section.
+## Publish packages
  
-       :::image type="content" source="./media/screenshot-twine-connect-to-feed-url.png" alt-text="A screenshot of instructions to connect to feed with twine.":::
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. To publish a package to your feed, run the following command replacing \<FEED_URL\> with the repository URL you copied from the **Connect to feed** dialog:
-    
-    ```Command
-    twine upload --repository-url <FEED_URL> dist/*
-    ```
+1. Select **Artifacts**, and then select **Connect to feed**.
 
-### Publish packages with PAT authentication
+1. Select **twine** from the left navigation area. If this is your first time using Azure Artifacts with twine, make sure to install the prerequisites by selecting **Get the tools** and following the provided steps.
 
-Use twine to upload your package to your Azure Artifacts feed.
-
-1. Go to  your Azure DevOps Project and select **Artifacts**.
-1. Select your feed and select **Connect to feed**.
-
-   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
-
-1. Select **twine** under the **Python** section.
-
-   :::image type="content" source="./media/screenshot-connect-to-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
-
-1. On your development machine, ensure that twine is installed.  
-
-    ```Command
-    pip install --upgrade twine
-    ```
-
-1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
-
-   :::image type="content" source="./media/screenshot-twine-connect-to-feed-pyirc.png" alt-text="A screenshot highlighting the `.pyirc` file content.":::
-
-1. To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
-
-    Example of a `.pypirc` file with credentials:
+1. Add a *.pypirc* file to your home directory and paste the provided snippet into it. Your file should look similar to the following snippet. If you already have a *.pypirc* that contains credentials for the public PyPI index, we recommend removing the [pypi] section to avoid accidentally publishing private packages to PyPI.
 
     ```
     [distutils]
     Index-servers =
-        <FEED_NAME>
-
-    [<FEED_NAME>]
-    Repository = <FEED_URL>
-    username = <FEED_NAME>
-    password = <YOUR_PERSONAL_ACCESS_TOKEN>
+      HelloNodeFeed
+    
+    [HelloNodeFeed]
+    Repository = https://pkgs.dev.azure.com/ramiMSFTDevOps/HelloNode/_packaging/HelloNodeFeed/pypi/upload/
     ```
 
-1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `pypirc` file location with the `--config-file` option.
+1. Run the following command in your project directory to create source and wheel distributions.
 
-    ```Command
-    twine upload --repository <FEED_NAME> dist/*
     ```
+    python setup.py sdist bdist_wheel
+    ```
+
+1. Run the following command to publish your package. Use the *-r <REPOSITORY>* flag to ensure your private packages are not accidentally published to PyPI.
+
+    ```
+    twine upload -r HelloNodeFeed dist/*
+    ```
+
+> [!IMPORTANT]
+> You must have twine 1.13.0 or higher to use **artifacts-keyring**. See [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements) for more details.
 
 ## Consume Python packages
 
