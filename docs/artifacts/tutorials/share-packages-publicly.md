@@ -56,7 +56,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Python](#tab/python)
 
-- [Publish Python packages](../quickstarts/python-cli.md#publish-python-packages)
+- [Publish Python packages](../quickstarts/python-cli.md#publish-packages)
 
 #### [Cargo](#tab/cargo)
 

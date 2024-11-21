@@ -57,7 +57,7 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
     python setup.py sdist bdist_wheel
     ```
 
-1. Run the following command to publish your package. Use the *-r <REPOSITORY>* flag to ensure your private packages are not accidentally published to PyPI.
+1. Run the following command to publish your package. Use the *-r REPOSITORY_NAME* flag to ensure your private packages are not accidentally published to PyPI.
 
     ```
     twine upload -r HelloNodeFeed dist/*
