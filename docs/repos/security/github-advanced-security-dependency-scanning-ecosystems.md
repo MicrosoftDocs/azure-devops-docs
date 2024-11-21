@@ -20,14 +20,14 @@ Due to how detection is run for dependency scanning, ensure you have a package r
 
 | Package manager  | Languages  | Supported formats | Supported versions |
 |---|---|---|---|
-|  Cargo | Rust  | `Cargo.toml`, `Cargo.lock`  | v1 |
+|  [Cargo](./#cargo) | Rust  | `Cargo.toml`, `Cargo.lock`  | v1 |
 |  CocoaPods | Swift  | `Podfile.lock`  | n/a |
-|  Go modules | Go  | `go.mod`, `go.sum`  | n/a |
+|  [Go modules](#go-modules) | Go  | `go.mod`, `go.sum`  | n/a |
 |  Gradle | Java  | `*.lockfile`  | n/a |
 |  Maven | Java  | `pom.xml`  | n/a |
-|  [npm](/#npm) | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | v6, v7 & lockfile <= v3 |
-|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | n/a |
-|  pip | Python  | `setup.py`, `requirements.txt`  | n/a |
+|  [npm](./#npm) | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | v6, v7 & lockfile <= v3 |
+|  [NuGet](./#nuget) | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | n/a |
+|  [pip](./#pip) | Python  | `setup.py`, `requirements.txt`  | n/a |
 |  pnpm | JavaScript  | `package.json` | v7, v8 |
 |  RubyGems | Ruby  |  `Gemfile.lock` | n/a |
 |  Yarn | JavaScript  | `package.json`  | v1, v2 |
