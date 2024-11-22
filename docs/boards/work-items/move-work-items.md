@@ -56,8 +56,6 @@ To move work items under a team, do the following steps:
 2. After you bulk modify, bulk save.  
   
    <img src="media/move-work-items/query-bulk-save.png" alt="Screenshot of Bulk save edited work items." />  
- 
-::: moniker-end
 
 <a id="move-work-items"></a> 
 
