@@ -169,8 +169,6 @@ To review the list of fields defined for an organization or collection, do the f
 
 	For descriptions, usage, and reference names of each field, refer to the [Work item field index](guidance/work-item-field.md). Additionally, you can retrieve field reference names using the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
 
-::: moniker-end
-
 <a id="wi-explorer"></a>
 
 ## Work Item Field Explorer 
