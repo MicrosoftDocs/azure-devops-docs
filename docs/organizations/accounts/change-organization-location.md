@@ -21,6 +21,10 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 > [!WARNING]
 > We're temporarily unable to process migration requests until January 13, 2025. We apologize for any inconvenience and appreciate your understanding. Migration requests will resume January 14.
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
+
 ## Find your organization geography
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).

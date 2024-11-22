@@ -24,7 +24,7 @@ A board presents work items in the form of cards, where each card represents a w
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- See the section, [Card customization sequence](#card-customization-sequence)
+- **Tasks (optional)**: See the section, [Card customization sequence](#card-customization-sequence)
 
 ## Card customization options  
 
@@ -62,7 +62,7 @@ Within the [Settings dialog for a board](#open-your-board-settings), you have th
 
 ## Card customization sequence 
 
-Before you configure the cards, make sure the following tasks are complete, or you might need to revisit your configuration.  
+Before you configure the cards, ensure the following tasks are complete, or you might need to revisit your configuration.  
 
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
