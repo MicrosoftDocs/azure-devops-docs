@@ -6,9 +6,6 @@ ms.topic: include
 ms.date: 11/21/2024
 ---
 
-
-## Prerequisites
-
 ::: moniker range="azure-devops"
 - **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
 - **Permissions**: 
