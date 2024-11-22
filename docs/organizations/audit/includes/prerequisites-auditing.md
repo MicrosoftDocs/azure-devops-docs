@@ -7,7 +7,7 @@ author: chcomley
 
 Auditing is turned off by default for all Azure DevOps Services organizations. Ensure that only authorized personnel have access to sensitive auditing information.
 
-**Permissions:** Be a member of the Project Collection Administrators (PCA) group (organization owners are automatically members of this group) or have the following auditing permissions per user or group:
+**Permissions:** Be a member of the **Project Collection Administrators** (PCA) group. Organization owners are automatically members of this group. Or have the following auditing permissions per user or group:
 - Manage audit streams
 - View audit log
 
