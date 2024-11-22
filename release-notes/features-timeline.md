@@ -383,9 +383,13 @@ For the past several years, all our pipelines investments have been in the area 
          </td>
          <td>Boards</td>         
       </tr> 
-      <td rowspan="19"><strong>Future</strong></td>
+      <td rowspan="20"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/agents-apple-silicon)">Hosted macOS agents on Apple Silicon</a></td>
+        <td>Pipelines</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
