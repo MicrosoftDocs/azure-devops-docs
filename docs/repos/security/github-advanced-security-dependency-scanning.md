@@ -32,24 +32,7 @@ The build log also contains basic information about each detected vulnerability.
 
 ![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png) 
 
-### Supported package ecosystems 
-
-Dependency scanning supports both direct and transitive dependencies for all supported package ecosystems. 
-
-| Package manager  | Languages  | Supported formats |
-|---|---|---|
-|  Cargo | Rust  | `Cargo.toml`, `Cargo.lock`  | 
-|  CocoaPods | Swift  | `Podfile.lock`  | 
-|  Go modules | Go  | `go.mod`, `go.sum`  | 
-|  Gradle | Java  | `*.lockfile`  | 
-|  Maven | Java  | `pom.xml`  | 
-|  npm | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | 
-|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | 
-|  pip | Python  | `setup.py`, `requirements.txt`  | 
-|  pnpm | JavaScript  | `package.json` | 
-|  RubyGems | Ruby  |  `Gemfile.lock` | 
-|  Yarn | JavaScript  | `package.json`  | 
-
+For a list of supported component ecosystems and versions, see [Supported package ecosystems](./github-advanced-security-dependency-scanning-ecosystems.md).
 
 ### About dependency scanning alerts 
 
