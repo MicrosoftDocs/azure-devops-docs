@@ -30,9 +30,9 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 
 ::: moniker range="azure-devops"
 
-- **Project requirements:** An [Azure DevOps project](../../../organizations/projects/create-project).
+- **Project requirements:** An [Azure DevOps project](../../../organizations/projects/create-project.md).
 - **Permissions:**   
-    - Be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).
+    - Be a member of the [**Project Administrators** group](../../../organizations/security/change-project-level-permissions.md).
     - The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
 - **Subscriptions:** 
     - A GitHub account. If you don't have one, you can create one for free at [GitHub](https://github.com).
@@ -49,9 +49,9 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 ::: moniker-end
 ::: moniker range="< azure-devops"
 
-- **Project requirements:** An [Azure DevOps project](../../../organizations/projects/create-project).
+- **Project requirements:** An [Azure DevOps project](../../../organizations/projects/create-project.md).
 - **Permissions:**   
-    - Be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).
+    - Be a member of the [**Project Administrators** group](../../../organizations/security/change-project-level-permissions.md).
     - The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
 - **Subscriptions:** 
     - A GitHub account. If you don't have one, you can create one for free at [GitHub](https://github.com).
