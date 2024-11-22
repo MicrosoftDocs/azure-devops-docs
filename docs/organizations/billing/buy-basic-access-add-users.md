@@ -51,8 +51,8 @@ You're entitled to the same number of user licenses to be used in the server.
 
 Ensure you have the following items in place:
 
-* [Billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization
-* You have permissions allocated as [an organization Owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md)
+* Ensure [billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization.
+* **Permissions**: Be a member of the [Project Collection Administrators](../security/look-up-project-collection-administrators.md) group. Organization owners are already members of this group.
 
 <a name="buy-access-vs-marketplace"></a>
 
