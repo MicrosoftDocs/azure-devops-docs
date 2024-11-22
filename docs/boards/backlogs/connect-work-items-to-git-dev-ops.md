@@ -81,7 +81,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	Name the branch and select the repository.   
 
-	<img src="media/git/git-dev-create-branch.png" alt="Screenshot shows Create a branch dialog box." />  
+	![Screenshot shows Create a branch dialog box.](media/git/git-dev-create-branch.png)
 
 	When you create branches, they automatically get linked to the work item.  
 
@@ -142,7 +142,7 @@ For example, here we select the first five items to link to a new branch.
 
 And, we specify the name of the branch.  
 
-<img src="media/add-work-item-create-branch-multi-items.png" alt="Screenshot shows Create new branch dialog." />   
+![Screenshot shows Create new branch dialog.](media/add-work-item-create-branch-multi-items.png)
 
 <a id="link-objects">  </a>
 
@@ -192,7 +192,8 @@ Hovering over any entry listed under the Development section activates the hyper
 
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
-<img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Screenshot shows Artifact-to-artifact link types." /> 
+![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
+
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2019"
