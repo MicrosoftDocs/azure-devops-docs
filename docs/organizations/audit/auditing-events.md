@@ -122,7 +122,6 @@ The following tables describe the type of events (or actions) that are available
 | Action | Description |
 |--------|-------------|
 | `Group.CreateGroups` | {GroupName} group was created. |
-| `Group.UpdateGroupMembership` |  |
 | `Group.UpdateGroupMembership.Add` | {ResolveIdentity:MemberId} was added as a member of group {ResolveIdentity:GroupId}. |
 | `Group.UpdateGroupMembership.Remove` | {ResolveIdentity:MemberId} was removed as a member of group {ResolveIdentity:GroupId}. |
 | `Group.UpdateGroups.Delete` | {ResolveIdentity:GroupId} group was deleted. |
