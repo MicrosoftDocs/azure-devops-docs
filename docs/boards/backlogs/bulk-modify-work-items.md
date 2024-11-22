@@ -24,14 +24,6 @@ Use bulk modify when you need to quickly make the same change to many work items
 
 With bulk modify, you can edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions assigned to you.
 
-In this article, learn how to do the following tasks:
-
-> [!div class="checklist"]
-> - Multi-select work items from a list and open the context menu
-> - Edit one or more fields of several work items
-> - Assign work from a backlog to a sprint using drag-and-drop
-> - Add or remove tags from several work items
-
 ## Prerequisites
 
 [!INCLUDE [prerequisites](../includes/prerequisites-work-items.md)]

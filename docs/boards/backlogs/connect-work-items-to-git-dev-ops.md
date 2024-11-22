@@ -5,31 +5,21 @@ description: Learn how to create a branch, commit, or a pull request in Azure Bo
 ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/26/2022
+ms.date: 11/22/2024
 ---
 
 # Drive Git development from a work item in Azure Boards   
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
+Linking your work items to development objects such as branches, commits, pull requests, and builds is a powerful way to drive development and keep your team synchronized. By creating branches directly from work items, you establish a clear connection between tasks and code changes. As development progresses, you can associate pull requests and commits with these work items, ensuring a comprehensive record of the operations performed to complete specific work.
 
-In this article, learn how to do the following tasks:  
-
->[!div class="checklist"]    
-> * How to create a new branch or pull request from a work item   
-> * Complete the pull request  
-> * Perform a squash merge  
-> * Create a branch for several work items  
-> * Link a work item to existing development and build objects    
-
-::: moniker range=">= azure-devops-2019"  
-This article addresses creating new branches, adding links to commits, and adding pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
-::: moniker-end
+This article covers how to create new branches, add links to commits, and manage pull requests in a Git repository hosted on Azure DevOps. For instructions on linking GitHub commits and pull requests to work items, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
 
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. For more information, see the following resources:   
@@ -39,7 +29,7 @@ This article addresses creating new branches, adding links to commits, and addin
 
 ## Development control
 
-The **Development** control records all Git development processes that support completion of the work item. This control can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.   
+The **Development** control tracks all Git development activities that contribute to the completion of a work item. It provides your team with the necessary information to take the next development steps, minimizing the need for multiple navigational actions to accomplish common tasks. Additionally, it enhances traceability by displaying all related branches, commits, pull requests, and builds associated with the work item, ensuring comprehensive visibility into the development process.   
 
 ::: moniker range=">= azure-devops-2020"  
 :::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
@@ -49,32 +39,31 @@ The **Development** control records all Git development processes that support c
 :::image type="content" source="media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
 ::: moniker-end
 
+From the **Development** control, you can quickly access branches, pull requests, and commits linked to the work item. Additionally, you can initiate a pull request for a branch you created or linked directly from the work item.
 
-
-
-
-From it, you can quickly access branches, pull requests, and commits that are linked to the work item. Also, you can start a pull request for a branch you created or linked to from the work item.  
-
-Keep in mind that the **Development** control only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients don't display several of the features that are available from the web portal. 
+> [!NOTE]
+> The **Development** control is only available within the web portal's work item form. The work item tracking experience and forms in Visual Studio or other supported clients do not display several features available in the web portal. 
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
 
-* Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
+- **Permissions**: 
+  - Be a member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md) group.
+  - To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
+- **Access levels**: To reorder a backlog or use the Forecast tool, have at least **Basic** access. Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
+- **Permissions**: 
+  - Be a member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md) group.
+  - To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 
 ::: moniker-end
-
 
 <a id="git-development">  </a>
 
@@ -84,27 +73,24 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 1. Start work on the work item by creating a branch. You can add a new Git branch from within the Development section...  
 
-	::: moniker range=">= azure-devops-2019"  
-	:::image type="content" source="media/git/development-control-git-github-create-branch.png" alt-text="Screenshot of Development control, Create branch link.":::
-	::: moniker-end
-	
+   :::image type="content" source="media/git/development-control-git-github-create-branch.png" alt-text="Screenshot of Development control, Create branch link.":::	
 
-	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
+	... or, from the form's  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: Actions menu.  
 
-	:::image type="content" source="media/git/actions-menu-new-branch-option.png" alt-text="User story work item form, Action menu, add new branch."::: 
+	:::image type="content" source="media/git/actions-menu-new-branch-option.png" alt-text="Screenshot shows User story work item form, Action menu, add new branch."::: 
 
 	Name the branch and select the repository.   
 
-	<img src="media/git/git-dev-create-branch.png" alt="Create a branch dialog box" />  
+	<img src="media/git/git-dev-create-branch.png" alt="Screenshot shows Create a branch dialog box." />  
 
 	When you create branches, they automatically get linked to the work item.  
 
 	> [!NOTE]  
 	> You can only create a branch once you've added files to the main branch, which we recommend you label ```main``` or other distinctive label. The system automatically adds a README file to the initial repo created with each new project.   
 
-2. The system opens to the repository and branch that you created. 
+   The system opens to the repository and branch that you created. 
 
-	You can edit a file within the web portal. 
+2.	You can edit a file within the web portal. 
 
 	Or, if you have extensive file edits or need to add files, work from Visual Studio or other supported IDE. Add a new local branch from the branch you created. For more information, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process works, we work best with an edition of Visual Studio.)  
 
@@ -112,37 +98,37 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.  
 
-	![Commit and push changes](media/git/git-dev-commit-sync.png)  
+	![Screenshot shows Commit and push changes.](media/git/git-dev-commit-sync.png)  
 
 	If it's your first time pushing changes from a new branch, publish the branch before you push changes. For more information, see [Share code with push](../../repos/git/pushing.md).   
 
 4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md) from the work item form.  
 
-	You create a pull request to merge the changes you made to a main branch and get your changes reviewed by other members of your team.  
+	Create a pull request to merge the changes you made to a main branch and get your changes reviewed by other members of your team.  
 
-	:::image type="content" source="media/git/create-pull-request.png" alt-text="Screenshot of Development control, Create pull request link.":::  
+	:::image type="content" source="media/git/create-pull-request.png" alt-text="Screenshot shows Development control, Create pull request link.":::  
 
-5.	Your view switches to **Code**, Pull Requests page. Complete creating the pull request as shown. 
+5. Your view switches to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
- 	![Code view, Pull Request page.](media/git/git-dev-create-pull-request.png)   
+   ![Code view, Pull Request page.](media/git/git-dev-create-pull-request.png)   
 
-	> [!NOTE]  
-	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
+   > [!NOTE]  
+   > Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	![Pull Request page, Create pull request.](media/git/git-dev-pr-complete.png)  
+   ![Screenshot shows Pull Request page, Create pull request.](media/git/git-dev-pr-complete.png)  
 
-	Check the box for **Squash changes when merging** and then complete the merge. 
+   Check the box for **Squash changes when merging** and then complete the merge. 
 
-	![Complete pull request dialog box, check squash-merge](media/git/git-dev-complete-merge.png)  
+   ![Screenshot shows Complete pull request dialog box, check squash-merge.](media/git/git-dev-complete-merge.png)  
 
 6. Upon completion, you should see a similar screen as follows.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Pull request, completed notification](media/git/git-dev-pr-completed.png)
+	> ![Screenshot shows Pull request, completed notification.](media/git/git-dev-pr-completed.png)
 
 7.	Open the work item form or refresh the form, expand the **Development** section (choose **Maximize Development** :::image type="icon" source="../media/icons/full-screen-icon.png" border="false":::), and you see the links that were added to support the operations you completed.  
 
-	![Screenshot of Work item form, Development section, links added.](media/git/git-dev-development-section-completed-links.png)  
+   ![Screenshot of Work item form, Development section, links added.](media/git/git-dev-development-section-completed-links.png)  
 
 <a id="add-branch-multi-wi">  </a>
 
@@ -156,8 +142,7 @@ For example, here we select the first five items to link to a new branch.
 
 And, we specify the name of the branch.  
 
-<img src="media/add-work-item-create-branch-multi-items.png" alt="Create new branch dialog" />   
-
+<img src="media/add-work-item-create-branch-multi-items.png" alt="Screenshot shows Create new branch dialog." />   
 
 <a id="link-objects">  </a>
 
@@ -165,26 +150,26 @@ And, we specify the name of the branch.
 
 All items listed under the Development section also appear under the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab. All development actions started from the Development section are also recorded under the **History** :::image type="icon" source="media/icon-history-tab-wi.png" border="false"::: tab. 
 
-![Links tab, development links](media/add-work-item-dev-links.png)  
+![Screenshot shows Links tab, development links.](media/add-work-item-dev-links.png)  
 
 To link a work item to an existing object, choose the ![Add link](../media/icons/add-link-icon.png) Add links icon and then choose the link type.  
 
-![Select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
+![Screenshot shows select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
 
 ### Remove a link 
 
 If you want to remove a link, you can do so from the **Development** section by highlighting it first and then choose **Remove link** :::image type="icon" source="../media/icons/delete_icon.png" border="false":::.  
 
-![Development section, delete a link](media/add-work-item-remove-dev-link.png)  
+![Screenshot shows Development section, delete a link.](media/add-work-item-remove-dev-link.png)  
 
 Or, you can select it from the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab and choose **Actions** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: for the link and then choose the **Remove link** :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: option.
 
 ## Related articles
 
-- [Cross-service overview](../../cross-service/cross-service-overview.md)
+- [Learn about Azure DevOps cross-service](../../cross-service/cross-service-overview.md)
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/index.yml) 
+- [Learn about Git](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
 - [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
@@ -198,20 +183,17 @@ With Git commits, any work items that were linked to a commit are listed under t
  
 ### Link types showing in the Development section
 
-Links shown in this section appear because of these actions:   
+Links shown in this section appear because of the following actions:   
 - Creating a branch, commit, or pull request from the work item    
 - Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   
 - Specifically linking the work item from the **Development** section or **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab to a source code branch, build, or other supported Git or TFVC operation.  
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
 
-::: moniker range=">= azure-devops-2019"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
-<img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
+<img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Screenshot shows Artifact-to-artifact link types." /> 
 ::: moniker-end
-
-
 
 ::: moniker range="=azure-devops-2019"
 For more information about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
