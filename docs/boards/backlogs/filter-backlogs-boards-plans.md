@@ -728,22 +728,16 @@ The **Parent Work Item** filter enables you to focus on one or more select featu
 The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020. You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. 
 You can also add the **Parent** field to cards on the boards and Taskboards. 
 
-
 ## Persistence and saving filter options
 
-Once you set the filter options for a specific view, your settings persist until you change them. There's no save button or other action you need to take.   
- 
-> [!NOTE]    
-> You can't set default filter options, nor set filter options for other members in your team. 
+Once you set filter options for a specific view, your settings persist until you modify them. There's no need to select a save button or take any other actions.
 
+> [!NOTE]
+> You can't set default filter options or configure filters for other team members.
 
-## Prerequisites
+To filter work items based on specific fields, first add the field as a column or to the card. For example, to filter by **Assigned To**, **Iteration Path**, **Work Item Type**, or any other field's content, ensure these fields are displayed on the cards, backlog, plan, or list.
 
-- All project members can exercise filter functions.  
-- All filter functions are set only for the current user until the user clears them.  
-
-
-- To filter using fields, first add the field as a column or to the card. For example, to filter by **Assign To**, **Iteration Path**, or **Work Item Type**&mdash;or the contents of any other field&mdash;add those fields to show on the cards, backlog, plan, or list. 
+All filter configurations are user-specific and remain active until you clear them.
 
 To add columns or fields, see the following articles: 
 
