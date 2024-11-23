@@ -40,8 +40,9 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
     - If using a Docker Hub: You need a Docker Hub account. If you don't have one, you can create one for free at [Docker Hub](https://hub.docker.com/).
 - **Repository:** A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker)
 - **Container registry:** 
-    - A container registry ([Docker Hub](https://hub.docker.com/) or 
+    - A container registry ([Docker Hub](https://hub.docker.com/) or, 
     - [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
+- **Service connection:** A GitHub service connection. If you don't have one, you can create one in your Azure DevOps project settings. For more information to create a service connection, see [Service connections](../../library/service-endpoints.md#github-service-connection).
 - **Software requirements:**
   - Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.
  
@@ -57,6 +58,7 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
     - A GitHub account. If you don't have one, you can create one for free at [GitHub](https://github.com).
     - Docker Hub account: You need a Docker Hub account. If you don't have one, you can create one for free at [Docker Hub](https://hub.docker.com/).
 - **Repository:** A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker)
+- **Service connection:** A GitHub Enterprise Server service connection. If you don't have one, you can create one in your Azure DevOps project settings. For more information to create a service connection, see [Service connections](../../library/service-endpoints.md#github-enterprise-server-service-connection).
 - **Container registry:** A ([Docker Hub](https://hub.docker.com/) container registry 
 - **Software requirements:** Docker must be is installed and the Docker engine running with elevated privileges on your self-hosted agent.
 
@@ -65,7 +67,7 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 
 ## Create a Docker service connection
 
-Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry. Go to the [Service connections](../../library/service-endpoints.md) page in your Azure DevOps project to create a new service connection and select the **Docker Registry** connection type.
+Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry. Go to [Service connections](../../library/service-endpoints.md) in your Azure DevOps project settings to create a new [Docker Registry](../../library/service-endpoints.md#docker-registry-service-connection) service connection.
 
 # [Docker Hub](#tab/docker)
 
@@ -88,7 +90,7 @@ Pushing a Docker image to Azure Container Registry isn't supported in Azure DevO
 
 ---
 
-## Create an Azure Pipeline to build and push a Docker image
+## Create a YAML pipeline to build and push a Docker image
 
 
 # [Docker Hub](#tab/docker)
@@ -99,13 +101,13 @@ Use following steps to create a YAML pipeline that uses the Docker@2 task to bui
 
 ::: moniker range="azure-devops"
 
-1. Navigate to your Azure DevOps project and select **Pipelines** from the left-hand menu.
+1. Go to your Azure DevOps project and select **Pipelines** from the left-hand menu.
 
 1. Select **New pipeline**.
 1. Select the location of your source repository.
 1. Select **GitHub** as the location of your source code and select your repository.
     - If you're redirected to GitHub to sign in, enter your GitHub credentials.
-    - If you're redirected to GitHub to install the Azure Pipelines app, select Approve and install.
+    - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 1. Select the **Starter pipeline** template to create a basic pipeline configuration.
 1. Replace the contents of **azure-pipelines.yml** with the following code:
 
@@ -132,12 +134,14 @@ Use following steps to create a YAML pipeline that uses the Docker@2 task to bui
    ```
 
 1. Edit the pipeline YAML file as follows:
-    - Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`. If you're using a self-hosted agent, set `vmImage` to the name of the pool that contains the self-hosted agent with Docker capability. You can add the `demands: docker` property to ensure an agent with Docker installed is selected. For example:
+    - Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`. 
+    
+        If you're using a self-hosted agent, set `vmImage` to the name of the pool that contains the self-hosted agent with Docker capability. You can add the `demands:` property to ensure an agent with Docker installed is selected. For example:
 
         ```yaml
             pool:
-            name: <your-agent-pool>
-            demands: docker'
+              name: <your agent pool>
+              demands: docker
         ```
 
     - Replace `<docker connection>` with the name of the Docker service connection you created earlier.
@@ -152,7 +156,9 @@ When using self-hosted agents, be sure that Docker is installed on the agent's h
 
 ::: moniker range="< azure-devops"
 
-To build the image, Docker must be installed on the agent's host and the Docker engine/daemon must be running with elevated privileges. Use the following steps to create your pipeline using the YAML pipeline editor.
+To build the image, Docker must be installed on the agent's host and the Docker engine/daemon must be running with elevated privileges. 
+
+Use the following steps to create your pipeline using the YAML pipeline editor.
 
 1. Go to your collection and create a project.
 1. In your project, select **Pipelines**.
@@ -172,8 +178,8 @@ To build the image, Docker must be installed on the agent's host and the Docker 
     - main
     
     pool:
-    name: default
-    demands: docker
+      name: default
+      demands: docker
     
     variables:
     repositoryName: '<target repository name>'
@@ -210,16 +216,15 @@ You can create a YAML pipeline to build and push a Docker image to an Azure cont
 The Docker@2 task is used to build and push the image to the container registry.
 The [Docker@2 task](/azure/devops/pipelines/tasks/build/docker) is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
 
-The following steps outline how to create a YAML pipeline that uses the Docker@2 task to build and push the image.  
+Use the following steps to create a YAML pipeline that uses the Docker@2 task to build and push the image.  
 
 
-1. Navigate to your Azure DevOps project and select **Pipelines** from the left-hand menu.
+1. Go to your Azure DevOps project and select **Pipelines** from the left-hand menu.
 
-1. Select **New pipeline** to create a new pipeline.
-1. Select **GitHub** or **GitHub Enterprise Server** as the location for your source code.
-1. If you haven't already, authorize Azure Pipelines to connect to your GitHub Enterprise Server account.
-    1. Select **Connect to GitHub Enterprise Server**.
-    1. Enter your account details, and then select **Verify and save**.
+1. Select **New pipeline**.
+1. Select **GitHub** as the location of your source code and select your repository.
+    - If you're redirected to GitHub to sign in, enter your GitHub credentials.
+    - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 1. Select your repository.
 1. Select the **Starter pipeline** template to create a basic pipeline configuration.
 1. Replace the contents of **azure-pipelines.yml** with the following code: 
@@ -238,7 +243,7 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
     steps:
     - task: Docker@2
     inputs:
-    containerRegistry: '<azure resource manager connection>'
+    containerRegistry: '<docker registry service connection>'
     repository: $(repositoryName)
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
@@ -246,9 +251,8 @@ The following steps outline how to create a YAML pipeline that uses the Docker@2
     ```
 
 1. Edit the pipeline YAML file as follows:
-    - Replace `<azure resource manager connection>` with the name of the Azure Resource Manager service connection you created earlier.
-    - Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image. For example, `<your-docker-hub-username>/<repository-name>`.
-    - Replace `azure resource manager connection` with the name of the Azure Resource Manager service connection you created earlier.
+    - Replace `<target repository name>` with the name of the repository in the container registry where you want to push the image.
+    - Replace `<docker registry service connection>` with the name of the Docker registry service connection you created earlier.
 
 1. When you're done, select **Save and run**.
 
