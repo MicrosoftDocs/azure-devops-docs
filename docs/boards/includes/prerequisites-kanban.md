@@ -10,9 +10,7 @@ Boards automatically get created when you create a project or add a team. Each t
 
 ::: moniker range="azure-devops"
 
-- **Project and team access:**
-  - [Connect to a project](../get-started/sign-up-invite-teammates.md).
-  - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
+- **Project access:** Be a [project member](../../organizations/security/add-users-team-project.md).
 
 - **Access levels:**
   - Have at least [**Basic** access](../../organizations/security/access-levels.md) to add work items and use all board features.
@@ -27,9 +25,7 @@ Boards automatically get created when you create a project or add a team. Each t
 
 ::: moniker range="azure-devops-2022"
 
-- **Project and team access:**
-  - [Connect to a project](../../organizations/projects/create-project.md).
-  - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
+- **Project access:** Be a [project member](../../organizations/security/add-users-team-project.md).
 
 - **Access levels:**
   - Have at least [**Basic** access](../../organizations/security/access-levels.md) to add work items and use all board features.
@@ -42,9 +38,7 @@ Boards automatically get created when you create a project or add a team. Each t
 
 ::: moniker range="< azure-devops-2022"
 
-- **Project and team access:**
-  - [Connect to a project](../../organizations/projects/create-project.md). If you don't have a project, create one.
-  - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
+- **Project access:** Be a [project member](../../organizations/security/add-users-team-project.md).
 
 - **Access levels:**
   - Have [**Basic** access or higher](../../organizations/security/access-levels.md) to add work items and use all board features.
