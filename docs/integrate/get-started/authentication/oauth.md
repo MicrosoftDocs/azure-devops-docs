@@ -53,8 +53,6 @@ Some scopes might be inclusive of other scopes, for example, `vso.code_manage` i
 
 [!INCLUDE [scopes table](../../includes/scopes.md)]
 
-## FAQ
-
 ## Frequently asked questions (FAQs)
 
 #### Q: Can I use OAuth with my mobile phone app?
