@@ -72,7 +72,7 @@ steps:
 
 ::: moniker-end
 
-3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Node.js tool installer*, *npm Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *Node.js tool installer* task with the default settings and configure the *npm Authenticate* and *Command line* tasks as follows:.
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Node.js tool installer*, *npm Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *Node.js tool installer* task with the default settings and configure the *npm Authenticate* and *Command line* tasks as follows:
 
     1. **npm Authenticate task**: Select the path to the *.npmrc* file.
     
