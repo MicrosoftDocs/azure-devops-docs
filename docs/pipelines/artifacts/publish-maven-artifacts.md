@@ -43,7 +43,7 @@ Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts f
 ```yml
 steps:
 - task: MavenAuthenticate@0
-  displayName: 'Maven Authenticate'
+  displayName: 'Authenticate to Azure Artifacts feed'
   inputs:
     artifactsFeeds: 'MavenDemo,MavenDemoFeed2'        ## Select one or multiple feeds to authenticate with.
 - script: |
@@ -100,7 +100,7 @@ Navigate to the organization hosting your target feed and [Create a personal acc
 
 1. Select **Username and Password** as the **Authentication method**, and then enter your **Repository URL** and your **Repository Id**.
 
-1. Enter your **Username** and use the personal access token you created earlier as your **Password**. Provide a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+1. Enter your **Username** (a placeholder, as Azure Pipelines will use your `pom.xml` configuration file and the personal access token you created earlier to authenticate). For **Password**, paste your personal access token. Provide a **Name** for your service connection, and check the **Grant access permission to all pipelines** checkbox.
 
 1. Select **Save** when you're done.
 
@@ -117,7 +117,7 @@ Navigate to the organization hosting your target feed and [Create a personal acc
 ```yaml
 steps:
 - task: MavenAuthenticate@0
-  displayName: 'Maven Authenticate'
+  displayName: 'Authenticate to Azure Artifacts feed'
   inputs:
     MavenServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION> 
 
