@@ -95,7 +95,7 @@ Management of service principals differs from user accounts in the following key
 
 #### Acquire a Microsoft Entra ID token programmatically
 
-Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. See the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). The examples in the Entra docs demonstrate how to 
+Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. See the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token).
 
 The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
