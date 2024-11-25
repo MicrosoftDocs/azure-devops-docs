@@ -37,7 +37,7 @@ steps:
     checkLatest: true
 
 - task: npmAuthenticate@0
-  displayName: 'npm Authenticate .npmrc'
+  displayName: 'Authenticate to Azure Artifacts feed'
   inputs:
     workingFile: .npmrc
 
@@ -89,15 +89,7 @@ steps:
 
 To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
 
-1. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. 
-
-1. In a command prompt window, run the following command to encode your personal access token. Replace the placeholder with the personal access token you created in the previous step:
-
-    ```
-    node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-    ```
-
-1. Copy your Base64 encoded personal access token as you'll need it in the following section.
+1. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. Copy your personal access token as you'll need it in the following section.
 
 #### Create a service connection
 
@@ -107,7 +99,7 @@ To publish your packages to a feed in another Azure DevOps organization, you mus
 
 1. Select **New service connection**, select **npm**, and then select **Next**. 
 
-1. Select **Username and Password** as the **Authentication method**, and then enter your **Registry URL**. Enter your **Username** and **Password**, provide a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+1. Select **Username and Password** as the **Authentication method**, and then enter your **Registry URL**. Enter your **Username** (a placeholder, as Azure Pipelines will use your `.npmrc` configuration file and the personal access token you created earlier to authenticate). For **Password**, paste your personal access token. Provide a name for your service connection, and check the **Grant access permission to all pipelines** checkbox.
 
 1. Select **Save** when you're done.
 
@@ -127,12 +119,14 @@ To publish your packages to a feed in another Azure DevOps organization, you mus
         checkLatest: true
 
     - task: npmAuthenticate@0
+      displayName: 'Authenticate to Azure Artifacts feed'
       inputs:
         workingFile: .npmrc
         customEndpoint: <SERVICE_CONNECTION_NAME>
         
     - script: |
-       npm publish    
+       npm publish  
+      displayName: Publish  
     ```
 
 #### [Classic](#tab/classic/)
