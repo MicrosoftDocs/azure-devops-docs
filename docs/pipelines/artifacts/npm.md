@@ -89,7 +89,7 @@ steps:
 
 To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
 
-1. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. Copy your personal access token as you'll need it in the following section.
+Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. Copy your personal access token as you'll need it in the following section.
 
 #### Create a service connection
 
@@ -167,7 +167,8 @@ To publish your packages to a feed in another Azure DevOps organization, you mus
             ```
             npm publish
             ```
-- - -
+
+***
 
 ## Related content
 
