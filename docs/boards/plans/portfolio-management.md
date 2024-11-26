@@ -28,7 +28,9 @@ To support the following elements, [set up a hierarchical team and backlog struc
 - **Plan and monitor:** Use portfolio management views to plan epics and features and monitor the progress of feature teams.
 - **Assign backlog items:** Assign backlog items to feature teams from a common backlog.
 
-![Screenshot shows Each team has its own view of the work.](media/pm-team-structure.png)
+![Screenshot shows each team has its own view of the work.](media/pm-team-structure.png)
+
+[!INCLUDE [prerequisites-team-settings](../includes/prerequisites-team-settings.md)]
 
 [!INCLUDE [image differences](../includes/image-differences.md)]
 
@@ -55,7 +57,7 @@ To visualize ownership and progress involving other teams, do the following task
 - **Utilize Plans:** Use the ["Plans" feature](review-team-plans.md) in Azure Boards, which gives you cross-team visibility into work items across multiple teams. This action lets you see all backlog items and features, even if they belong to different teams.
 
 > [!TIP]
-> Add **Node Name** to the **Column Options** to show the team name assigned to each work item. 
+> Add **Node name** to the **Column options** to show the team name assigned to each work item. 
 
 For example, the Fabrikam Fiber Team's backlog view includes work items assigned to their area path, **Fabrikam Fiber**, and the parent Epic, which is assigned to the **Fabrikam** team. Items owned by other teams appear with an information icon, :::image type="icon" source="../../media/icons/info.png" border="false":::. Hover over the information icon for the Epic to see more details.
 
