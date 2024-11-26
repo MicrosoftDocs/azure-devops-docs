@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: v-catherbund
 author: cebundy
-ms.date: 10/07/2024
+ms.date: 11/25/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="azure-devops"
 
-This article guides you through the setup and configuration for using Azure Pipelines to build and push a Docker image to an Azure Container Registry and Docker Hub. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
+This article guides you through the setup and configuration in Azure Pipelines to build and push a Docker image to an Azure Container Registry and Docker Hub. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
 
 ::: moniker-end
 ::: moniker range="< azure-devops"
@@ -24,7 +24,7 @@ This article guides you through the setup and configuration for using Azure Pipe
 
 ::: moniker-end
 
-You learn how to create a YAML pipeline to build and push a Docker image to a container registry. The Docker@2 task is used to build and push the image to the container registry.
+You learn how to create a YAML pipeline to build and push a Docker image to a container registry using he Docker@2 task.
 
 ## Prerequisites
 
@@ -118,18 +118,18 @@ Use following steps to create a YAML pipeline that uses the Docker@2 task to bui
     - main
     
     pool:
-    vmImage: 'ubuntu-latest' 
+      vmImage: 'ubuntu-latest' 
     
     variables:
-    repositoryName: '<target repository name>'
+      repositoryName: '<target repository name>'
     
     steps:
     - task: Docker@2
-    inputs:
-    containerRegistry: '<docker connection>'
-    repository: $(repositoryName)
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+      inputs:
+        containerRegistry: '<docker connection>'
+        repository: $(repositoryName)
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
 
    ```
 
@@ -182,15 +182,15 @@ Use the following steps to create your pipeline using the YAML pipeline editor.
       demands: docker
     
     variables:
-    repositoryName: '<target repository name>'
+      repositoryName: '<target repository name>'
     
     steps:
     - task: Docker@2
-    inputs:
-    containerRegistry: '<docker connection>'
-    repository: $(repositoryName)
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+      inputs:
+        containerRegistry: '<docker connection>'
+        repository: $(repositoryName)
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
     
     ```
 
@@ -235,18 +235,18 @@ Use the following steps to create a YAML pipeline that uses the Docker@2 task to
     - main
     
     pool:
-    vmImage: 'ubuntu-latest' 
+      vmImage: 'ubuntu-latest' 
     
     variables:
-    repositoryName: '<target repository name>' 
+      repositoryName: '<target repository name>' 
     
     steps:
     - task: Docker@2
-    inputs:
-    containerRegistry: '<docker registry service connection>'
-    repository: $(repositoryName)
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+      inputs:
+        containerRegistry: '<docker registry service connection>'
+        repository: $(repositoryName)
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
     
     ```
 
