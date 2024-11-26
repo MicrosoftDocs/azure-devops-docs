@@ -14,16 +14,25 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-## Introduction
+In [Portfolio Management](portfolio-management.md), we explore how management teams and feature teams can use their backlogs to prioritize and focus on the most critical work items. This article helps you configure teams to optimally support the distinct backlog views tailored for both management and feature teams.
 
-In [Portfolio Management](portfolio-management.md), we explored how management teams and feature teams can use their backlogs to prioritize and focus on the most critical work items. This article delves into configuring teams to optimally support the distinct backlog views tailored for both management and feature teams.
+## Why effective team configuration matters
 
-Effective team configuration is essential for ensuring that each team has a clear and focused view of their responsibilities and priorities. By setting up a hierarchical team structure, you can enhance collaboration, streamline workflow management, and ensure alignment with organizational goals. This structure not only facilitates better visibility into each team's workload but also promotes accountability and efficiency across projects.
+Effective team configuration is essential for ensuring that each team has a clear and focused view of their responsibilities and priorities. By setting up a hierarchical team structure, you can:
 
-Specifically, we guide you through the steps to configure a team structure similar to the following example. This setup enables each team to maintain its own customized view of the work, facilitating better focus and productivity.
+- **Enhance collaboration:** Foster better communication and teamwork across different functions.
+- **Streamline workflow management:** Simplify processes and reduce bottlenecks.
+- **Align with organizational goals:** Ensure that all teams are working towards common objectives.
+- **Promote accountability and efficiency:** Increase visibility into each team's workload, promoting responsibility and productivity across projects.
 
-![Screenshot shows each team has its own view of the work.](media/pm-team-structure.png)
+### Key benefits
 
+- **Customized backlog views:** Each team can prioritize and manage their work based on their specific goals and responsibilities.
+- **Improved visibility:** Management and feature teams gain clear insights into their respective workloads and progress.
+- **Enhanced focus:** Teams can concentrate on the most critical tasks without getting overwhelmed by unrelated work items.
+- **Efficient workflow management:** Streamlined processes lead to faster decision-making and project execution.
+
+By implementing a hierarchical team structure, you ensure that your organization remains agile, focused, and aligned with its strategic objectives.
 
 ## Prerequisites 
 
@@ -156,7 +165,7 @@ Because each team can customize their board columns and swimlanes, the values as
 
 By design, the team with the longest area path takes precedence in resolving conflicts and determines the values for the **Board Column**, **Board Column Done**, and **Board Lane** fields. If two or more teams share area paths of equal depth, the results are nondeterministic.
 
-To address this, the primary workaround is to maintain single ownership of work items by [defining area paths and assigning them to a specific team](../../organizations/settings/set-area-paths.md). Alternatively, you can add custom workflow states that all teams can use uniformly. For more details, refer to [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md).
+The primary workaround is to maintain single ownership of work items by [defining area paths and assigning them to a specific team](../../organizations/settings/set-area-paths.md). Alternatively, you can add custom workflow states that all teams can use uniformly. For more information, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md).
 
 ## Next steps
 > [!div class="nextstepaction"]
