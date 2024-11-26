@@ -51,7 +51,7 @@ The following operating systems are supported by the 4.x agent.
   * Server OS
     * Windows Server 2012 or higher
 
-## Upgrade to 3.x agent on unsupported operating systems
+## Upgrade to 4.x agent on unsupported operating systems
 
 If you're running your self-hosted agents on an operating system that isn't supported by .NET 8, you must update your machines to use a newer supported operating system [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions).
 
