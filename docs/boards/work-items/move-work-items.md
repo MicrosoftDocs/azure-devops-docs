@@ -15,35 +15,37 @@ ms.date: 05/20/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you add a team or your teams undergo reorganization, you may need to move work items assigned to one team to new **Area Paths** owned by another team. All work items are assigned to an **Area Path**, even if it is at the top of the hierarchy for the project.  
+## Introduction
 
-Work items that belong to the Requirements category appear on a team's backlog based on their assignment to the **Area Path(s)** owned by a team. Assigning other work items to a team's **Area Path(s)** support queries based on team ownership. 
+When you add a team or reorganize existing teams, you might need to transfer work items from one team to another by updating their Area Paths. Every work item in Azure DevOps is assigned to an Area Path, which determines team ownership and influences how work items are displayed on backlogs and boards.
 
-To learn how to add a team, see [Create or add a team](../../organizations/settings/add-teams.md). 
- 
+Work items categorized under the Requirements category appear on a team's backlog based on their assignment to the team's Area Path. Similarly, assigning other work items to a team's Area Path supports queries and reporting based on team ownership.
 
 ## Prerequisites 
 
 ::: moniker range="azure-devops"  
 
-- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).    
-- To use Azure CLI commands, you must first install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).   
+[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
+
+- **Area Path permissions**: Have permissions to view and edit work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).   
+- **Configured area paths**: Ensure that the target team has its Area Paths correctly configured. If not, set up the required Area Paths before transferring work items.
+- **Consistent process model**: Teams should be using a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.
+- **Backup work items**: We recommend you back up or export work items before performing bulk moves to prevent data loss if there's an error. 
+- **Tools**: To use Azure CLI commands, install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).   
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
 
-- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).  
+[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
+
+- **Area Path permissions**: Have permissions to view and edit work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
 
 ::: moniker-end  
 
-
-
 ## Move work items under teams 
 
-From the web portal, you can perform bulk updates of the **Area Path**.  
- 
-::: moniker range=">= azure-devops-2019"
+To move work items under a team, do the following steps:
 
 1. [Create a query](../queries/using-queries.md) of all work items you want to reassign. 
 
@@ -51,23 +53,17 @@ From the web portal, you can perform bulk updates of the **Area Path**.
 
    <img src="media/move-work-items/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items." />
 
-1. After you bulk modify, do a bulk save.  
+2. After you bulk modify, bulk save.  
   
    <img src="media/move-work-items/query-bulk-save.png" alt="Screenshot of Bulk save edited work items." />  
- 
-::: moniker-end
-
-  
 
 <a id="move-work-items"></a> 
-
-
 
 ::: moniker range="azure-devops"   
 
 ## Move a work item using Azure CLI
 
-You can use the [az boards work-item update](/cli/azure/boards/work-item#az-boards-work-item-update) to move a single work item by updating it's Area Path.   
+You can use the [az boards work-item update](/cli/azure/boards/work-item#az-boards-work-item-update) to move a single work item by updating its Area Path.   
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -107,7 +103,7 @@ You can only move one work item at a time using Azure DevOps CLI. In this exampl
 az boards work-item update --id 148 --area "Fabrikam Fiber\Production Planning" --output yaml
 ```
 
-The YAML output listed below provides information on each of the fields defined for the work item. 
+The following YAML output provides information on each of the fields defined for the work item. 
 
 > [!div class="tabbedCodeSnippets"]
 ```YAML output
@@ -187,15 +183,14 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 ```
 
 ::: moniker-end 
- 
 
 ## Verify your team backlog 
 
-After you move work items from one team to another team, check your team backlog to ensure the items appear. See [Create your backlog](../backlogs/create-your-backlog.md).  
+After you move work items from one team to another team, check your team backlog to ensure the items appear. For more information, see [Create your backlog](../backlogs/create-your-backlog.md).  
 
 If you encounter any problems, review [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog.md).
 
 ## Related articles
 
 - [Create or add a team](../../organizations/settings/add-teams.md)
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) 
+- [Learn about teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) 

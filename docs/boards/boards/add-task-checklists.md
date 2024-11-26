@@ -40,6 +40,8 @@ Make use of the following features for checklists.
 > [!TIP]    
 > You can disable it from the [common configurations dialog](customize-cards.md).  
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 [!INCLUDE [temp](../includes/open-kanban-board.md)]

@@ -579,7 +579,7 @@ stages:
     steps: ${{ parameters.steps }}
 ```
 
-The following pipeline, `azure-pipelines.yml`, imports variables from `variables-template.yml`, and then uses the `stage-template.yml` template for each stage.  Each stage (Dev, Test, Prod) gets defined with the same template but with different parameters, leading to consistency across stages while allowing for customization. The Prod stage includes an environment variable as an example of something you might use for authentication. 
+The following pipeline, `azure-pipelines.yml`, imports variables from `variables-template.yml`, and then uses the `stage-template.yml` template for each stage.  Each stage (Dev, Test, Prod) gets defined with the same template but with different parameters, leading to consistency across stages while allowing for customization. The Prod stage includes an environment variable as an example of something you might use for authentication. To learn more about defining parameters, see [Template parameters](template-parameters.md).
 
 ```yaml
 # azure-pipelines.yml
@@ -611,6 +611,7 @@ stages:
         env:
           SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
+
 ## Reference template paths
 
 Template paths can be an absolute path within the repository or relative to the file that does the including.

@@ -28,6 +28,16 @@ You can export of work items in bulk using a CSV formatted file. While you conti
 
 ## Import new work items
 
+To import work items in bulk, the CSV file must contain the **Work Item Type** and **Title** fields. You can include other fields as needed. To import a CSV file:
+
+- Do not include the **ID** field. 
+- If the CSV file has been exported from a different project, remove fields that contain value specific to the source project. For example, you for remove **Area Path**, **Tags**  For a list of default fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
+- When importing test cases, you must include the **Test Steps** field. For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md).  Do not include **Assigned To**, **Changed Date**, **Created By**, or **State** fields.
+- Ensure that the **Work Item Type** and **Title** fields are included in the CSV file.
+- Ensure that the **Work Item Type** is a valid type in the target project.
+- Ensure that the fields in the CSV file match the fields fi=or the owrk item type in the target project.
+- If you import a CSV file that contains work items that has invalid values, once you import the file, you must edit the work items to fix the invalid values before you can save the work items.
+
 Do the following steps to import new work items.
 
 > [!NOTE]  

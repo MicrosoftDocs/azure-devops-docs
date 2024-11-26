@@ -349,7 +349,7 @@ Key Vault integration is configured in **Settings > Security**.
 :::image type="content" source="./media/configure-security/configure-keyvault.png" alt-text="Screenshot of configuring Key Vault certificates.":::
 
 > [!NOTE]
-> Key Vault integration settings can't be configured during pool creation and are not displayed in the Settings tab during pool creation.
+> Key Vault integration settings can be configured only after the pool is created. Key Vault integration settings can't be configured during pool creation and are not displayed in the **Security** tab during pool creation.
 
 #### [ARM template](#tab/arm/)
 
