@@ -15,21 +15,15 @@ ms.date: 10/20/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Once you've configured your Agile tools to support SAFe®, trace relationships can be created from Stories all the way up to Epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
+Once you configure your Agile tools to support SAFe®, you can establish trace relationships from Stories all the way up to Epics, ensuring comprehensive visibility and alignment across your initiatives. Additionally, you can monitor progress at the portfolio, program, and feature team levels, enabling more informed decision-making and strategic planning.
 
-This article walks you through some of the basic tools you'll use to plan and track your SAFe® programs and portfolios. Specifically, you'll learn how to quickly complete these tasks:
-
->[!div class="checklist"]      
-> - Define epics, features, and stories  
-> - Group or map stories to features, and features to epics
-> - Assign value streams  
-> - Plan a sprint 
-> - Review feature team progress
-> - Review program features
-> - Review portfolio epics 
-
+This article guides you through the essential tools and techniques for planning and tracking your SAFe® programs and portfolios, helping you effectively manage and scale your Agile practices.
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-admin](../includes/prerequisites-project-admin.md)]
 
 ## Define portfolios and epics 
 
