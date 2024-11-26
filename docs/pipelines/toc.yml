@@ -242,6 +242,8 @@
   - name: Managed DevOps pools
     href: /azure/devops/managed-devops-pools/overview
     displayName: pools, agents
+  - name: Agent version 4.x
+    href: agents/v4-agent.md
   - name: Agent version 3.x
     href: agents/v3-agent.md
   - name: Create & manage agent pools
