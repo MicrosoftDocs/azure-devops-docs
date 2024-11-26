@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can change your organization name (URL) at any time in Azure DevOps. This action allows you to update the URL to better reflect your organization's branding or structure. Changing the organization name updates the URL used to access your Azure DevOps resources, but it doesn't affect your projects, repositories, or other resources within the organization. Follow the steps in this article to rename your organization and ensure a smooth transition for your team.
+You can change your organization name (URL) at any time in Azure DevOps. This action allows you to update the URL to better reflect your organization's branding or structure. Changing the organization name updates the URL used to access your Azure DevOps resources, including the URLs of your projects, repositories and other resources in the organization. Follow the steps in this article to rename your organization and ensure a smooth transition for your team.
 
 > [!CAUTION]
 > The rename operation affects your organization's connections and individuals who are currently working with your organization. Before you start, meet the [prerequisites](#prerequisites) and find out [what to do after renaming your organization](/troubleshoot/azure/devops/rename-service-url). The URL of projects, repositories, and other resources within the organization will change. Make sure to update any bookmarks or links to these resources.
