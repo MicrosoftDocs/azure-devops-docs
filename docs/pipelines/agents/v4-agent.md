@@ -45,9 +45,9 @@ The following operating systems are supported by the 4.x agent.
     * macOS 15.0 "Sequoia"
 * **Windows**
     * Windows 10
-      * 11 23H2, 11 22H2, 11 21H2
+      * 21H2, 1809, 1607
     * Windows 11
-      * 10 21H2, 10 1809, 10 1607
+      * 23H2, 22H2, 21H2
   * Server OS
     * Windows Server 2012 or higher
 
@@ -82,7 +82,9 @@ The following list of operating systems were supported for self-hosted 3.x agent
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
     * Windows 8.1
     * Windows 10
-      * 21H2
+      * [21H2 (E)](/lifecycle/products/windows-10-enterprise-and-education)
+    * Windows 11
+      * [21H2 (E) & 22H2 (E)](/windows/release-health/windows11-release-information)
 
 ## FAQ
 
