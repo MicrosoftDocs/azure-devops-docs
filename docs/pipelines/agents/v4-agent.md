@@ -3,7 +3,7 @@ title: Agent software version 4
 description: Learn how to run pipelines using the version 4 agent software.
 monikerRange: 'azure-devops'
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 11/27/2024
 ---
 
 # Agent software version 4
@@ -17,9 +17,12 @@ If you're running your self-hosted agents on newer operating systems [supported 
 
 The following operating systems are supported by the 4.x agent.
 
+> [!NOTE]
+> See [.NET 8 - Supported OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions) for the full list of operating systems.
+
 * **Linux**
   * x64
-    * Debian 11 & 12
+    * Debian 12
     * Fedora 39 & 40
     * openSUSE 15.5 & 15.6
     * Red Hat Enterprise Linux 8 & 9
@@ -57,9 +60,12 @@ If you're running your self-hosted agents on an operating system that isn't supp
 
 The following list of operating systems were supported for self-hosted 3.x agents, but aren't supported by .NET 8 and can't be used to run version 4.x agents.
 
+> [!NOTE]
+> See [.NET 8 - Out of support OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#out-of-support-os-versions) for the full list of operating systems that are out of support for .NET 8.
+
 * **Linux**
   * x64
-    * Debian 10
+    * Debian 10 & 11
     * Fedora 36
     * openSUSE 15
     * Red Hat Enterprise Linux 7
@@ -67,7 +73,7 @@ The following list of operating systems were supported for self-hosted 3.x agent
     * Ubuntu 18.04, 16.04
     * Oracle Linux 7
   * ARM64
-    * Debian 10
+    * Debian 10 & 11
     * Ubuntu 18.04
   * Alpine x64
     * [Alpine Linux](https://alpinelinux.org/) 3.13
@@ -95,6 +101,8 @@ The 3.x agents use .NET 6 and the 4.x agents use .NET 8.
 ### How can I check my agents to see if they can upgrade to 4.x?
 
 Compare the operating system of your agent with the supported list from the previous [Upgrade to 4.x agent on supported operating systems](#upgrade-to-4x-agent-on-supported-operating-systems) section.
+
+You can also use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools will be able to upgrade to 4.x.
 
 ### How will security issues in the agent be patched going forward?
 
