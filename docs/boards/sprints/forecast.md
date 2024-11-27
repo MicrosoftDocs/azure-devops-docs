@@ -30,9 +30,9 @@ Use this article to learn:
 
 ::: moniker range="azure-devops"
 
-* Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
-* You must be granted **Basic** access or higher to use the forecast feature. For more information, see [About access levels](../../organizations/security/access-levels.md).
+* **Project membership**: Be a member of a [project](../../organizations/projects/create-project.md). 
+* **Permissions**: Be a member of the **Contributors** security group. 
+* **Access levels**: Have at least [**Basic** access](../../organizations/security/access-levels.md).
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -42,9 +42,9 @@ Use this article to learn:
 
 ::: moniker range="< azure-devops"
 
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
-* You must be granted **Basic** access or higher to add or modify work items. For more information, see [About access levels](../../organizations/security/access-levels.md).
+* **Project membership**: Be a member of a [project](../../organizations/projects/create-project.md). 
+* **Permissions**: Be a member of the **Contributors** security group. 
+* **Access levels**: Have at least [**Basic** access](../../organizations/security/access-levels.md).
 
 ::: moniker-end 
  

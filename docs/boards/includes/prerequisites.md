@@ -7,7 +7,7 @@ ms.date: 11/21/2024
 ---
 
 ::: moniker range="azure-devops"
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
+- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md).
 - **Permissions**: 
   - Be a member of the **Contributors** or **Project Administrators** security group.
   - To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md).

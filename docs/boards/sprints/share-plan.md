@@ -17,14 +17,7 @@ ms.date: 09/20/2021
  
 <a id="share" >  </a>
 
-Once you've completed your sprint plan, you can easily share it with other members of your team or organization. This article shows you how to: 
-
-> [!div class="checklist"]   
-> * Create a query from your sprint plan    
-> * Email your sprint plan   
-
-Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
-
+Once you complete your sprint plan, sharing it with your team and organization is simple. Stakeholders with project access can view the sprint plan by accessing the URL of your sprint backlog page. Additionally, you can distribute the plan via email or by printing a copy to ensure everyone stays informed and aligned.
 
 ## Open a sprint backlog for a team 
 
