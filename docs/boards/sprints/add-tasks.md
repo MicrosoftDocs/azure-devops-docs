@@ -29,6 +29,8 @@ Adding tasks to backlog items is essential for tracking the work required to imp
 
 When you add and manage tasks, your team gains a clear understanding of the importance and required effort for each item. This action ensures better workload distribution and project planning.
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Open a sprint backlog for a team 
