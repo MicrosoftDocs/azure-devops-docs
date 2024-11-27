@@ -179,15 +179,31 @@ These investments include:
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
          <td>2024 Q4</td>
-      </tr> 
+      </tr>       
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a>
+         </td>
          <td>Boards</td>
          <td>2025 Q1</td>
       </tr>  
-       <tr>
+      <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
+         </td>
+         <td>Boards</td>
+         <td>2025 Q1</td>   
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos" data-raw-source="[Support state transitions when merging a GitHub pull request](/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos)">Support state transitions when merging a GitHub pull request</a>
+         </td>
+         <td>Boards</td>
+         <td>2025 Q1</td>   
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
@@ -347,7 +363,7 @@ For the past several years, all our pipelines investments have been in the area 
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="5"><strong>2025 Q1</strong></td>
+      <td rowspan="7"><strong>2025 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/junit-java-support" data-raw-source="[JUnit / Java support in Test Plans](/azure/devops/release-notes/roadmap/2022/junit-java-support)">JUnit / Java support in Test Plans</a></td>
         <td>Test Plans</td>
       </tr>
@@ -360,7 +376,20 @@ For the past several years, all our pipelines investments have been in the area 
         <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos" data-raw-source="[Support state transitions when merging a GitHub pull request](/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos)">Support state transitions when merging a GitHub pull request</a>
+         </td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
+         </td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
       </tr>
       <tr>
