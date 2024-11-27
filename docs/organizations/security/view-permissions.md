@@ -27,7 +27,7 @@ For more information, see [Get started with permissions, access, and security gr
 
 ## Prerequisites
 
-* **Project membership**: Be a member of a [project](../organizations/projects/create-project.md). 
+* **Project membership**: Be a [member of a project](../organizations/projects/create-project.md). 
 * **Permissions:** Be a member of the **Project Valid Users** group or **Project Collection Valid Users** group.
 
 ## View project-level permissions

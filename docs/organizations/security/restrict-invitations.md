@@ -30,7 +30,7 @@ can add users who are already in the organization to their team       |
 ## Prerequisites
 
 - **Permissions**: Be a member of the [**Project Collection Administrators** group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- **Access levels:** Be a member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).
+- **Access levels:** Be a member in the destination Microsoft Entra ID. For more information, see [Convert a Microsoft Entra guest into a member](../accounts/faq-azure-access.yml).
 
 ## Turn off policy
 

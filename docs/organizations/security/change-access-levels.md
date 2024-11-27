@@ -27,7 +27,7 @@ For a simplified overview of the permissions that are assigned to the most commo
 
 ## Prerequisites
 
-- **Permissions**: Be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
+- **Permissions**: Be a member of the [**Project Administrators** group](change-project-level-permissions.md). 
 * **Group membership**: To manage access for a large group of users, create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups.
 * **Project access**: Ensure users are [added to the project](add-users-team-project.md).
 
@@ -35,17 +35,11 @@ For a simplified overview of the permissions that are assigned to the most commo
 
 You can manage access levels for the collections defined on the application tier. The default access level affects all the projects in all the collections. When you add users or groups to teams, projects, or collections, they get the default access level. To give a different access level to a certain user or group, you need to add them to a non-default access level.
 
-::: moniker range=">= azure-devops-2019"
-
 - From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you're at a project level, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
 
    ![Screenshot of web portal, Open Access levels dialog.](media/change-access-levels/open-access-levels-2019.png)
 
 	If you don't see **Access levels**, you aren't an administrator and need to [get permission](/azure/devops/server/admin/add-administrator).
-
-::: moniker-end
-
-
 
 ## Add a user or group to an access level 
 
