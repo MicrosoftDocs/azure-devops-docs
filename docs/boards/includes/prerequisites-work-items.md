@@ -3,7 +3,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 10/02/2024
+ms.date: 11/25/2024
 ---
 
 
@@ -20,5 +20,7 @@ ms.date: 10/02/2024
 
   > [!NOTE]
   > - Provide [Stakeholder access](../../organizations/security/access-levels.md) to members who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, boards, and dashboards. 
-  > - **Stakeholders** can't add new tags, even if the permission is explicitly set, due to their access level. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+  ::: moniker range="azure-devops" 
+  > - By default, all **Contributors** and **Stakeholders** in public projects can add new and existing tags. In private projects, Stakeholders can only add existing tags. To control the ability to create new tags, set the **Create tag definition** permission at the project level. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
+::: moniker-end
 
