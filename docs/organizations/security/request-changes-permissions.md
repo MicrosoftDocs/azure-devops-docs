@@ -44,13 +44,11 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Prerequisites
 
-- To view permissions, you must be a member of the **Project Valid Users** group. Users added to a project are automatically added to this security group. For more information, see [View permissions for yourself or others](view-permissions.md).
-- To look up an administrator for your project or project collection, you must be a member of the **Project Valid Users** group. 
-
+**Permissions**: To view permissions and to look up a project administrator, be a member of the **Project Valid Users** group. Users who are project members are automatically part of this security group. For more information, see [View permissions for yourself or others](view-permissions.md).
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> Users added to the **Project-scoped users** group don't have access **Organization settings** other than the **Overview** section if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

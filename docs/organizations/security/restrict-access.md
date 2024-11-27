@@ -22,6 +22,10 @@ If you're new to the permissions and groups landscape, see [Get started with per
 > [!TIP]    
 > The structure of your project in Azure DevOps plays a pivotal role in determining the granularity of permissions at an object level, such as repositories and area paths. This structure is the foundation that allows you to fine-tune access controls, enabling you to specifically delineate which areas are accessible or restricted. For more information, see [About projects and scaling your organization](../projects/about-projects.md).
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
+
 ## Use security groups
 
 For optimal maintenance, we suggest using either the default security groups or establish [custom security groups to manage permissions](add-remove-manage-user-group-security-group.md). The permission settings for the Project Administrators and Project Collection Administrators groups are fixed by design and can't be altered. But, you have the flexibility to modify permissions for all other groups.
@@ -30,7 +34,7 @@ Managing permissions for a small number of users individually might seem feasibl
 
 ## Delegate tasks to specific roles
 
-As an administrator or account owner, delegating administrative tasks to team members who oversee specific areas is a strategic approach. The primary built-in roles equipped with predefined permissions and role assignments include:
+As an administrator or organization owner, delegating administrative tasks to team members who oversee specific areas is a strategic approach. The primary built-in roles equipped with predefined permissions and role assignments include:
 
 - **Readers:** Have read-only access to the project.
 - **Contributors:** Can contribute to the project by adding or modifying content.

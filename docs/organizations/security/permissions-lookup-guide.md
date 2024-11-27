@@ -26,20 +26,20 @@ Values in parenthesis indicate what level the permission is managed:
 
 ::: moniker range="azure-devops"
 
-- **Object**: Permissions are managed at the object-level    
-- **Project**: Permissions are managed at the project level
-- **Collection**: Permissions are managed at the organization level  
+- **Object**: Permissions are managed at the object level.    
+- **Project**: Permissions are managed at the project level.
+- **Collection**: Permissions are managed at the organization level.  
 - **Role**: Permissions are managed through a security role.   
 - **Team**: Permissions are managed via the team administrator role.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- **Object**: Permissions are managed at the object-level    
-- **Project**: Permissions are managed at the project level
-- **Collection**: Permissions are managed at the account or project collection level  
+- **Object**: Permissions are managed at the object level.    
+- **Project**: Permissions are managed at the project level.
+- **Collection**: Permissions are managed at the account or project collection level.  
 - **Role**: Permissions are managed through a security role.  
-- **Server**: Permissions are managed at the instance level for a server   
+- **Server**: Permissions are managed at the instance level for a server.   
 - **Team**: Permissions are managed via the team administrator role.
 ::: moniker-end
 

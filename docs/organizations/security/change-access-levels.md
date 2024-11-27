@@ -27,9 +27,9 @@ For a simplified overview of the permissions that are assigned to the most commo
 
 ## Prerequisites
 
-* You must be a member of the Administrators group. If you aren't a member, [get added now](/azure/devops/server/admin/add-administrator).
-* To manage access for a large group of users, create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups.
-* Users must be [added to a project](add-users-team-project.md).
+- **Permissions**: Be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
+* **Group membership**: To manage access for a large group of users, create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups.
+* **Project access**: Ensure users are [added to the project](add-users-team-project.md).
 
 ## Open access levels
 

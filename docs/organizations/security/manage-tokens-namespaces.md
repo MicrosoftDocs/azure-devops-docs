@@ -29,12 +29,12 @@ Azure DevOps grants a number of permissions by default to members of default sec
 > 
 ## Prerequisites 
 
-- To manage tokens and namespaces, you must be a member of the Project Collection Administrators security group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
-- Sign into Azure DevOps using `az login`.  
-- For the examples in this article, set the default organization as follows: 
-    - For **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.  
-    - For **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`
+- **Permissions**: Be a member of the **Project Collection Administrators** security group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  
+- **Tools**: Install the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
+  - Sign into Azure DevOps using `az login`.  
+  - For the examples in this article, set the default organization as follows: 
+    - **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.  
+    - **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`
 
 ## Security permission commands
 
