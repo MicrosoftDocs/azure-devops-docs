@@ -13,13 +13,17 @@ ms.date: 09/06/2024
 ---
 
 
-# Query fields, operators, and macros in Azure Boards 
+# Query fields, operators, and macros
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 This article provides descriptions of each field data type, query operator, and query macro. Some data types, operators, and macros are only valid for the indicated Azure DevOps version. 
 
 For more information, see [Query quick reference](query-index-quick-ref.md) and [Manage and organize queries](organize-queries.md).
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
 <a id="field-values"></a> 
 

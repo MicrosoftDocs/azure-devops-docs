@@ -29,8 +29,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
-> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 ::: moniker-end
 

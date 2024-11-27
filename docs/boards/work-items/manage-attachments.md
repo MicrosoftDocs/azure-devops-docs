@@ -4,11 +4,12 @@ titleSuffix: Azure Boards
 description: Learn how to manage work item attachments in Azure DevOps.
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
-ms.author: v-catherbund
-author: cebundy
+ms.author: chcomley
+author: chcomley
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.topic: how-to
-ms.date: 11/15/2024
+ms.date: 11/21/2024
 ---
 
 # Manage work item attachments
@@ -16,64 +17,80 @@ ms.date: 11/15/2024
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-Attachments to work items are a great way to share information with your team. You can attach files, images, and links to work items. You can attach up to 100 files to a work item. Each attachment is limited to 60 MB. This article shows you how to manage attachments to work items in Azure DevOps.
+Attachments enhance work items by enabling you to share essential information with your team. You can attach files, images, and links directly to work items, facilitating better collaboration and documentation. Each work item can include up to **100 attachments**, with each file limited to **60 MB**. This article provides guidance on managing attachments within Azure DevOps.
 
-You can manage attachments through the web portal by selecting the attachment tab on your work item.
+## Prerequisites
 
-::: moniker range="azure-devops"
+[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
 
-:::image type="content" source="media/manage-work-items/attachments-tab-services.png" alt-text="Screenshot showing highlighted Attachments button in work item." :::
+- **Permanent deletion permissions**: To permanently delete attachments, have the **Permanently delete work items** permission set to **Allow**.
 
-Use the Collapse/Expand button to show or hide the attachments.
+## Manage attachments through the web portal
 
-:::image type="content" source="media/manage-work-items/expand-collapse-attachments.png" alt-text="Screenshot showing highlighted expand or collapse attachments button in work item." :::
+Do the following steps to manage attachments through the web portal:
 
-To toggle between the list and grid view of attachments, select the **List** or **Grid** icon.
+::: moniker range=" azure-devops"
 
-:::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-services.png" alt-text="Screenshot showing list and grid view buttons." :::
+1. Go to the desired work item and select the **Attachments** tab.
 
-Once you add an attachment, you can hover over the work item to access the **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false":::  menu. The more actions menu allows you to:
+   :::image type="content" source="media/manage-work-items/attachments-tab-services.png" alt-text="Screenshot showing highlighted Attachments button in work item." :::
 
-- preview the attachment
-- edit the comment
-- copy the attachment link
-- download the attachment
-- delete attachments
-- permanently delete attachments if you have the correct permissions.
+2. Use the **Collapse/Expand** button to toggle the visibility of attachments.
+
+   :::image type="content" source="media/manage-work-items/expand-collapse-attachments.png" alt-text="Screenshot showing highlighted expand or collapse attachments button in work item." :::
+
+3. Switch between **List** and **Grid** views by selecting the corresponding icon.
+
+   :::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-services.png" alt-text="Screenshot showing list and grid view buttons." :::
+
+4. After you [add an attachment](#add-attachment), hover over the work item to access the **more actions** ![More Actions Icon](../media/icons/more-actions.png) menu. This menu allows you to do the following tasks:
+   - **Preview** the attachment
+   - [**Add** and **Edit** a comment](#add-and-edit-comment)
+   - [**Copy** an attachment link](#copy-attachment-link)
+   - [**Download** an attachment](#download-attachment)
+   - [**Delete** attachments](#delete-attachment)
+   - [**Permanently Delete** an attachment](#permanently-delete-attachment)
+### Tips
+
+- **Bulk management**: To manage multiple attachments simultaneously, consider using bulk actions available in the **Attachments** tab.
+- **Permissions**: Ensure you have the appropriate permissions to add, edit, or delete attachments. Project administrators typically have full access, while other roles might have limited permissions.
+- **File size and type**: Be mindful of the attachment size limits (up to **60 MB** per file) and ensure that the file types you upload are supported by Azure DevOps.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-:::image type="content" source="media/manage-work-items/attachments-tab-server.png" alt-text="Screenshot of highlighted Attachments button in work item." :::
+1. Go to the desired work item and select the **Attachments** tab.
 
-You can choose a list or grid view of attachments. The grid view provides a thumbnail preview of the attachment.   
+   :::image type="content" source="media/manage-work-items/attachments-tab-server.png" alt-text="Screenshot of highlighted Attachments button in work item." :::
 
-:::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-server.png" alt-text="Screenshot showing list and grid view buttons." :::
+2. Choose a list or grid view of attachments. The grid view provides a thumbnail preview of the attachment.   
 
-Once you add an attachment, you can hover over the work item to access the **more actions** :::image type="icon" source="../media/icons/more-actions-horizontal.png" border="false":::  menu. The more actions menu allows you to:
+   :::image type="content" source="media/manage-work-items/attachments-list-grid-view-buttons-server.png" alt-text="Screenshot showing list and grid view buttons." :::
 
-- preview the attachment
-- edit the comment
-- download the attachment
-- delete attachments
-
+3. After you [add an attachment](#add-attachment), hover over the work item to access the **more actions** ![More Actions Icon](../media/icons/more-actions.png) menu. This menu allows you to do the following tasks:
+   - **Preview** an attachment
+   - [**Add** and **Edit** a comment](#add-and-edit-comment)
+   - [**Download** an attachment](#download-attachment)
+   - [**Delete** an attachment](#delete-attachment)
 
 ::: moniker-end
 
-### Add attachments
+### Add attachment
 
-1. From your work item, select the **Attachments** tab > **Add attachment**.
+To add an attachment to a work item, do the following steps:
+
+1. From your work item, select **Attachments** > **Add attachment**.
    
    :::image type="content" source="../backlogs/media/add-attachment.png" alt-text="Screenshot showing highlighted Attachments button.":::
 
-2. Select the file, select **Open**, and then **Save**. 
+2. Select the file > **Open** > **Save**. 
 
-The attachment is added to the work item. To add more attachments, select **+ Add attachment**.
+The attachment gets added to the work item. To add more attachments, select **+ Add attachment**.
 
-### Add comments to attachments
+### Add and edit comment
 
-To add a comment to an attachment:
+To add or edit a comment for an attachment, do the following steps:
 
 ::: moniker range="azure-devops"
 
@@ -81,7 +98,7 @@ To add a comment to an attachment:
 
    :::image type="content" source="media/manage-work-items/add-comment-attachment.png" alt-text="Screenshot showing add comment to attachment flow.":::
 
-1. Edit your comment and select **Save**.
+1. Add or edit your comment and select **Save**.
 
 ::: moniker-end
 
@@ -95,9 +112,6 @@ To add a comment to an attachment:
 
 ::: moniker-end
 
-### Preview attachments
-
-
 ::: moniker range="azure-devops"
 
 ### Copy attachment link
@@ -108,7 +122,7 @@ Hover over the attachment and select **more actions** :::image type="icon" sourc
 
 ::: moniker-end
 
-### Download attachments
+### Download attachment
 
 To download an attachment to your browser's download directory:
 
@@ -124,9 +138,9 @@ Select or hover over the attachment and select **more actions** :::image type="i
 
 ::: moniker-end
 
-### Delete attachments
+### Delete attachment
 
-To delete an attachment: 
+To delete an attachment, do the following steps: 
 
 ::: moniker range="azure-devops"
 
@@ -146,18 +160,17 @@ To delete an attachment:
 
    :::image type="content" source="../backlogs/media/confirm-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming delete action.":::
 
-The deleted attachment cannot be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
-
+The deleted attachment can't be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachment) it.
 
 ::: moniker-end
 
-The deleted attachment can't be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
+The deleted attachment can't be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachment) it.
 
 ::: moniker range="azure-devops"
 
-### Permanently delete attachments
+### Permanently delete attachment
 
-To permanently delete attachments, you need **Permanently delete work items** permissions. This action is typically reserved for situations requiring immediate removal, such as when files are infected. Otherwise, deleted attachments are automatically removed within 28 days.
+This action is typically reserved for situations requiring immediate removal, such as when files are infected. Otherwise, deleted attachments are automatically removed within 28 days.
 
 1. From your work item, select the **Attachments** tab. 
 2. Select **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Permanently delete attachment**.
@@ -175,9 +188,8 @@ The attachment is permanently deleted and isn't accessible from any other links.
 
 ::: moniker-end
 
-
 ## Related articles
 
-- [About work items and work item types](about-work-items.md)
+- [Learn about work items and work item types](about-work-items.md)
 - [Manage work items](../backlogs/manage-work-items.md)
 - [View and add work items](view-add-work-items.md)

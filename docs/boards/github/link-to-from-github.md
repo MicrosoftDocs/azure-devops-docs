@@ -23,7 +23,7 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 
 - **Project connection:** Ensure your Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).
 
-- **Permissions:** Be a Contributor to both the Azure Boards project and the GitHub repository.
+- **Permissions:** Be a **Contributor** to both the Azure Boards project and the GitHub repository.
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
