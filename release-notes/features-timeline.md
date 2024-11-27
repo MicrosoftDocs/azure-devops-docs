@@ -203,7 +203,7 @@ These investments include:
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
@@ -383,7 +383,7 @@ For the past several years, all our pipelines investments have been in the area 
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-prs-commits-with-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
          </td>
          <td>Boards</td>
       </tr>
