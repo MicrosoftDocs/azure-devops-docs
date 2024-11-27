@@ -38,22 +38,24 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Prerequisites
 
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* Get added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-* To add work items and exercise all board features, have at least **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
+* Permissions: 
+  * Be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+  * To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* **Access levels**: To add work items and exercise all board features, have at least **Basic** access.
+ 
 
 ::: moniker range=">= azure-devops-2022"
 
 > [!NOTE]  
-> Users assigned **Stakeholder** access can't exercise these **Taskboard** features: update fields displayed on cards or use the **Planning** pane to change the sprint assignment.  
+> Users assigned **Stakeholder** access can't update fields displayed on cards or use the **Planning** pane to change the sprint assignment.  
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2022"
 
 > [!NOTE]  
-> Users with **Stakeholder** access can't exercise these **Taskboard** features: Add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
+> Users with **Stakeholder** access can't add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
 
 ::: moniker-end
 
