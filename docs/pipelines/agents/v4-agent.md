@@ -132,13 +132,10 @@ The pipelines team recommends that you update your agent machines to newer opera
 
 ### Does Azure DevOps Server support the 4.x agent
 
-Azure DevOps Server versions support the version of the agent that is deployed with that version. Currently, the latest Azure DevOps Server versions support the following 3.x agent software versions. The following table lists each [supported Azure DevOps Server version](/azure/devops/server/install/servicing#supported-versions) and its supported agent version.
+Azure DevOps Server versions support the version of the agent that is deployed with that version. Currently, the latest Azure DevOps Server versions support the 3.x agent software versions. For more information, see [Does Azure DevOps Server support the 3.x agent](./v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
-| Azure DevOps Server version | Agent version |
-|-----------------------------|---------------|
-| [Azure DevOps Server 2022.2](/azure/devops/server/release-notes/azuredevops2022u2) | 3.238.0 |
-| [Azure DevOps Server 2020.1.2](/azure/devops/server/release-notes/azuredevops2020u1) | 3.225.0 |
-| [Azure DevOps Server 2019.1.2](/azure/devops/server/release-notes/azuredevops2019u1) | 3.225.0 |
+> [!NOTE]
+> Azure DevOps Server 2020 and higher will support the 4.x agent software through updates. When those updates are released, the following table will be updated with the corresponding agent version. Currently, the latest update for each version of Azure DevOps Server still uses the 3.x agent.
 
 Azure DevOps Server is serviced through security or servicing patches that provide targeted cumulative bug fixes for existing features in the product. For the best and most secure product experience, we strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, from the [Azure DevOps Server download page](/azure/devops/server/download/azuredevopsserver).
 
@@ -146,8 +143,8 @@ After installing an Azure DevOps Server update or new version, [update your agen
 
 ### What is the timeline for agent version 4 deployment?
 
-Agent version 4 was released November 2024.
+Agent version 4.x was released October 2024.
 
 ### What will happen when a task requires an agent to be updated to agent version 4?
 
-Normally, when a task requires a newer version of the agent, it will automatically update itself. For now, while agent version 3 continues to be updated, we have disabled auto update from agent version 3 to agent version 4. Once we enable it, for Operating Systems that aren't compatible with agent version 4, agent version 2.217 and newer won't attempt to update itself to the v3 agent. Instead, a warning will be shown informing users they need to upgrade the Operating System first: `The operating system the agent is running on is <OS>, which will not be supported by the .NET 6 based v3 agent. Please upgrade the operating system of this host to ensure compatibility with the v3 agent. See https://aka.ms/azdo-pipeline-agent-version`
+Normally, when a task requires a newer version of the agent, it will automatically update itself. For now, while agent version 3 continues to be updated, we have disabled auto update from agent version 3 to agent version 4. Once we enable it, for Operating Systems that aren't compatible with agent version 4, agent version 3.248 and newer won't attempt to update itself to the v4 agent. Instead, a warning will be shown informing users they need to upgrade the Operating System first: `The operating system the agent is running on is <OS>, which will not be supported by the .NET 8 based v4 agent. Please upgrade the operating system of this host to ensure compatibility with the v3 agent. See https://aka.ms/azdo-pipeline-agent-version`
