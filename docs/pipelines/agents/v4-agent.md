@@ -135,7 +135,7 @@ The pipelines team recommends that you update your agent machines to newer opera
 Azure DevOps Server versions support the version of the agent that is deployed with that version. Currently, the latest Azure DevOps Server versions support the 3.x agent software versions. For more information, see [Does Azure DevOps Server support the 3.x agent](./v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 > [!NOTE]
-> Azure DevOps Server 2020 and higher will support the 4.x agent software through updates. When those updates are released, the following table will be updated with the corresponding agent version. Currently, the latest update for each version of Azure DevOps Server still uses the 3.x agent.
+> Azure DevOps Server 2020 and higher will support the 4.x agent software through updates. When those updates are released, this article will be updated with the corresponding agent version.
 
 Azure DevOps Server is serviced through security or servicing patches that provide targeted cumulative bug fixes for existing features in the product. For the best and most secure product experience, we strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, from the [Azure DevOps Server download page](/azure/devops/server/download/azuredevopsserver).
 
