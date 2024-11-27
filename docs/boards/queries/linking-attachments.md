@@ -33,6 +33,10 @@ Attached File Count | (Discussion) Comment Count | External Link count| Hyperlin
 
 For more information about these fields, see the [table provided later in this article](#table-field). 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
+
 ## Supported operators and macros 
 
 Clauses that specify an integer field can use the following operators.

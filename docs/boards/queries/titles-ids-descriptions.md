@@ -13,11 +13,15 @@ monikerRange: '<= azure-devops'
 ms.date: 10/16/2024
 ---
 
-# Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
+# Query by titles, IDs, and rich-text fields
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, see [Create a query/Best practices](using-queries.md#best-practices).  
+When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, see [Create a query, Best practices](using-queries.md#best-practices).  
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
 ## Supported operators and macros 
 

@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/05/2022
 ---
 
-# Use an index to query quick reference data in Azure Boards and Azure DevOps
+# Use an index to query quick reference data
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
