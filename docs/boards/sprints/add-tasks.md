@@ -219,9 +219,7 @@ Unparenting a work item removes its association with a parent backlog item or us
   - Go to **Queries**, create a new query, and set the criteria to filter tasks without a parent.
 - **Drag and drop:** Alternatively, you can drag the task directly on the Taskboard to the **Unparented** section if your board configuration supports it.
 
-For more information, see [Manage work item links](../work-items/manage-links.md).
-
-## Next Step
+## Next steps
 
 > [!div class="nextstepaction"]
 > [3. Set sprint capacity](set-capacity.md)

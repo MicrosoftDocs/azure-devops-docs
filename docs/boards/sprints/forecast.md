@@ -30,7 +30,7 @@ Use this article to learn:
 
 ::: moniker range="azure-devops"
 
-* **Project membership**: Be a member of a [project](../organizations/projects/create-project.md). 
+* **Project membership**: Be a member of a [project](../../organizations/projects/create-project.md). 
 * **Permissions**: Be a member of the **Contributors** security group. 
 * **Access levels**: Have at least [**Basic** access](../../organizations/security/access-levels.md).
 
@@ -42,7 +42,7 @@ Use this article to learn:
 
 ::: moniker range="< azure-devops"
 
-* **Project membership**: Be a member of a [project](../organizations/projects/create-project.md). 
+* **Project membership**: Be a member of a [project](../../organizations/projects/create-project.md). 
 * **Permissions**: Be a member of the **Contributors** security group. 
 * **Access levels**: Have at least [**Basic** access](../../organizations/security/access-levels.md).
 
