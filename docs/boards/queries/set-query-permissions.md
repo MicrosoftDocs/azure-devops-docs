@@ -73,11 +73,11 @@ To set permissions on a new query folder, do the following steps:
 
 	This example uses the name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
 
-    :::image type="content" source="media/permissions/new-folder-dialog-new-boards-hubs.png" alt-text="Screenshot of New folder dialog.":::
+    :::image type="content" source="media/view-run-queries/new-folder-dialog-new-boards-hubs.png" alt-text="Screenshot of New folder dialog.":::
 
 1. To set permissions for the new folder, select **More actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Security**.
 
-    :::image type="content" source="media/permissions/select-query-security.png" alt-text="Screenshot of security selection for a query folder.":::
+    :::image type="content" source="media/view-run-queries/select-query-security.png" alt-text="Screenshot of security selection for query folder.":::
 
 1. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Enter the name of a user or group within the search box.   
 
@@ -169,7 +169,7 @@ To keep anyone else from modifying a shared query that you create, you might wan
 
 1. Choose the **More actions** icon :::image type="icon" source="../media/icons/more-actions.png" border="false"::: and select **Security**.  
 
-    :::image type="content" source="media/permissions/select-query-security.png" alt-text="Screenshot of Open query permissions context menu.":::
+    :::image type="content" source="media/view-run-queries/select-query-security.png" alt-text="Screenshot of Open query permissions context menu.":::
 
 2. Change the permissions so that a team member or group can't edit, delete, or change permissions for the query.  
 
