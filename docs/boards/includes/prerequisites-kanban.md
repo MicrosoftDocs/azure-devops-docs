@@ -10,9 +10,8 @@ Boards automatically get created when you create a project or add a team. Each t
 
 ::: moniker range="azure-devops"
 
-- **Project access:** Be a [project member](../../organizations/security/add-users-team-project.md).
-
 - **Access levels:**
+  - Be a [project member](../../organizations/security/add-users-team-project.md).
   - Have at least [**Basic** access](../../organizations/security/access-levels.md) to add work items and use all board features.
   - Users with **Stakeholder** access:
     - Public project: Full access to board features, similar to users with Basic access.
@@ -25,9 +24,8 @@ Boards automatically get created when you create a project or add a team. Each t
 
 ::: moniker range="azure-devops-2022"
 
-- **Project access:** Be a [project member](../../organizations/security/add-users-team-project.md).
-
 - **Access levels:**
+  - Be a [project member](../../organizations/security/add-users-team-project.md).
   - Have at least [**Basic** access](../../organizations/security/access-levels.md) to add work items and use all board features.
   - Users with **Stakeholder** access for a private project can add work items and update status through drag-and-drop but can't update fields displayed on cards. They can add tasks and change task status.
 
@@ -38,9 +36,8 @@ Boards automatically get created when you create a project or add a team. Each t
 
 ::: moniker range="< azure-devops-2022"
 
-- **Project access:** Be a [project member](../../organizations/security/add-users-team-project.md).
-
 - **Access levels:**
+  - Be a [project member](../../organizations/security/add-users-team-project.md).
   - Have [**Basic** access or higher](../../organizations/security/access-levels.md) to add work items and use all board features.
   - Users with **Stakeholder** access can't use these board features: add work items, drag-and-drop work items to update status, or update fields displayed on cards. They can add tasks and change task status.
 
