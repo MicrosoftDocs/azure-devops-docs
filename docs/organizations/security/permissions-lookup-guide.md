@@ -332,7 +332,7 @@ Values in parenthesis indicate what level the permission is managed:
 
 - Grant or restrict permissions to select tasks using [Grant or restrict permissions to select tasks](restrict-access.md).
 - Get started with permissions, access, and security groups by following [Get started with permissions, access, and security groups](about-permissions.md).
-- Learn about [About security roles](about-security-roles.md).
+- Learn [About security roles](about-security-roles.md).
 - Refer to the [Permissions and groups reference](permissions.md) for detailed information.
 - Change project-level permissions with [Change project-level permissions](change-project-level-permissions.md).
 - Modify project collection-level permissions using [Change project collection-level permissions](change-organization-collection-level-permissions.md).
