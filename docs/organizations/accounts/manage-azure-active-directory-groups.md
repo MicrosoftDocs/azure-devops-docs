@@ -86,7 +86,7 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
 * * *
 
-Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).
+Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-reevaluate-your-permissions).
 
 ## Related articles
 

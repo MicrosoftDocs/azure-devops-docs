@@ -32,7 +32,7 @@ In this article, learn how to add users to a team or project. For organizations 
 
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
 
-If you're new to Azure DevOps, familiarize yourself with the information in the following articles: 
+**Recommended**: If you're new to Azure DevOps, familiarize yourself with the information in the following articles: 
 
 - [Get started with permissions, access levels, and security groups](about-permissions.md)  
 - [About projects and scaling your organization](../projects/about-projects.md)  

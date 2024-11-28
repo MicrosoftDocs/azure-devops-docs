@@ -17,7 +17,11 @@ ms.date: 08/05/2024
 
 Due to the extensive security and permission structure of Azure DevOps, you might need to investigate why a user lacks access to a project, service, or feature they expect. Find step-by-step guidance to understand and address issues a user might encounter when connecting to a project or accessing an Azure DevOps service or feature.
 
-Before using this guide, we recommend getting familiar with the following content: 
+## Prerequisites
+
+**Permissions:** To manage permissions or groups at the organization or collection level, be a member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group.
+
+**Recommended**: Before using this guide, we recommend getting familiar with the following content: 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Default permissions and access quick reference.](permissions-access.md) 
 
