@@ -21,7 +21,7 @@ To change the **Organization owner**, see [Change organization owner](../account
 
 ## Prerequisites
 
-* To look up the owner or view organization settings, you must be a member of the **Project Collection Valid Users** group. Users added to a project are automatically included in this group. 
+[!INCLUDE [prerequisites-project-collection-valid-users-group](../../includes/prerequisites-project-collection-valid-users-group.md)]
 
 <a name="find-owner"></a>
 

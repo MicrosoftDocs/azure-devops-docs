@@ -134,7 +134,7 @@ If you have [Project Collection Administrator](../../user-guide/manage-organizat
 #### Use access 
 
 1. [Activate your access](/azure/active-directory/privileged-identity-management/groups-activate-roles). 
-2. [Refresh your permissions](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions) in Azure DevOps. 
+2. [Refresh your permissions](request-changes-permissions.md#refresh-or-reevaluate-your-permissions) in Azure DevOps. 
 3. Take the action requiring administrator access. 
 
 > [!NOTE]
