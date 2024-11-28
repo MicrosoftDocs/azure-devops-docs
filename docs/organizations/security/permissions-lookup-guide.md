@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---
 
-# Permissions lookup guide for Azure DevOps
+# Permissions lookup guide
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -93,7 +93,7 @@ Values in parenthesis indicate what level the permission is managed:
    ### B
    ::: moniker range=">= azure-devops-2019"
    - [Branches, Git (Object)](../../repos/git/branch-permissions.md)
-   - [Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
+   - [Branches, Team Foundation Version Control (TFVC) (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Build pipelines (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Build quality, manage (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Build queue, manage (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
@@ -328,13 +328,12 @@ Values in parenthesis indicate what level the permission is managed:
    :::column-end:::
 :::row-end:::
 
-
 ## Related articles
 
-- [Grant or restrict permissions to select tasks](restrict-access.md)
-- [Get started with permissions, access, and security groups](about-permissions.md)
-- [About security roles](about-security-roles.md). 
-- [Permissions and groups reference](permissions.md) 
-- [Change project-level permissions](change-project-level-permissions.md)
-- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
-- [Troubleshoot permissions](troubleshoot-permissions.md)
+- Grant or restrict permissions to select tasks using [Grant or restrict permissions to select tasks](restrict-access.md).
+- Get started with permissions, access, and security groups by following [Get started with permissions, access, and security groups](about-permissions.md).
+- Learn about [About security roles](about-security-roles.md).
+- Refer to the [Permissions and groups reference](permissions.md) for detailed information.
+- Change project-level permissions with [Change project-level permissions](change-project-level-permissions.md).
+- Modify project collection-level permissions using [Change project collection-level permissions](change-organization-collection-level-permissions.md).
+- Troubleshoot permissions issues by consulting [Troubleshoot permissions](troubleshoot-permissions.md).

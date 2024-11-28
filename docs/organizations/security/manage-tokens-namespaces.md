@@ -18,7 +18,7 @@ ms.date: 03/31/2022
 
 Permissions grant access to perform a specific action on a specific resource as described in [Get started with permissions, access, and security groups](about-permissions.md). You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
 
-Azure DevOps grants a number of permissions by default to members of default security groups. You can add and manage permissions at a more granular level with the `az devops security permission` commands. Use these commands to:
+Azure DevOps grants many permissions by default to members of default security groups. You can add and manage permissions at a more granular level with the `az devops security permission` commands. Use these commands to:
 
 - View the permissions associated with security namespaces
 - View details about those permissions
@@ -65,7 +65,7 @@ The following parameters are optional for all commands, and not listed in the ex
 
 ## List security namespaces 
 
-You can list all available namespaces for an organization with the [az devops security permission namespace list](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-list) command.  For a description of all security namespaces and associated tokens, see [Security namespace and permission reference](namespace-reference.md).
+You can list all available namespaces for an organization with the [az devops security permission namespace list](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-list) command. For a description of all security namespaces and associated tokens, see [Security namespace and permission reference](namespace-reference.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -74,10 +74,9 @@ az devops security permission namespace list [--local-only]
 
 ### Parameters
 
-- **local-only**: Optional. If true, retrieve only local security namespaces.
+**local-only**: Optional. If true, retrieve only local security namespaces.
 
-    Security namespaces may have their data mastered in one microservice, but still be visible in other microservices. If a security namespace's data is mastered in microservice X, it is said to be local to that microservice. Otherwise, it is said to be remote.
-
+Security namespaces might have their data managed in one microservice, but still be visible in other microservices. If a security namespace's data is managed in microservice X, it's local to that microservice. Otherwise, it's remote.
 
 Enter `az devops security permission namespace list` to list the namespaces defined for your organization or on-premises server.   
 
@@ -267,7 +266,7 @@ $/69265579-a1e0-4a30-a141-ac9e3bb82572  0                  0
 
 ## Show namespace details
 
-You can show details of permissions available in each namespace with the [az devops security permission namespace show](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-show) command.
+Show details of permissions available in each namespace with the [az devops security permission namespace show](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-show) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -298,7 +297,7 @@ ReadEuii                  Read EUII data                                        
 
 ## Reset permissions
 
-You can reset the permission bits for a specified user or group with the [az devops security permission reset](/cli/azure/devops/security/permission#az-devops-security-permission-reset) command. 
+Reset the permission bits for a specified user or group with the [az devops security permission reset](/cli/azure/devops/security/permission#az-devops-security-permission-reset) command. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -411,12 +410,15 @@ az devops security permission update --id
 ### Parameters
 
 
-- **id** or **namespace-id**: Required. ID of security namespace.
-- **subject**: Required. The email address or group descriptor of the user.
-- **token**: Required. Individual security token.
-- **allow-bit**: Optional. Allow bit or addition of bits. Required if **--deny-bit** is missing.
-- **deny-bit**: Optional. Deny bit or addition of bits. Required if **--allow-bit** is missing.
-- **merge**: Optional. If set, the existing access control entry (ACE) has its allow and deny merged with the incoming ACE's allow and deny. If unset, the existing ACE is displaced. The accepted values are *false* or *true*.
+- **id** or **namespace-id**: *Required.* The ID of the security namespace.
+- **subject**: *Required.* The email address or group descriptor of the user.
+- **token**: *Required.* An individual security token.
+- **allow-bit**: *Optional.* Specifies the allow bit or adds more bits. **Required** if **deny-bit** isn't provided.
+- **deny-bit**: *Optional.* Specifies the deny bit or adds other bits. **Required** if **allow-bit** isn't provided.
+- **merge**: *Optional.* Determines whether to merge with existing access control entries (ACE). 
+  - If set to **true**, the existing ACEs allow and deny permissions merge with those permissions of the incoming ACE.
+  - If set to **false** or omitted, the existing ACE is replaced.
+  - Accepted values are `true` or `false`.
 
 ### Example
 
