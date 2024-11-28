@@ -19,15 +19,17 @@ As you manage security for your organization, you can set permissions at the org
 
 The following items are considered objects:
 
-- General: Dashboards, Analytic views, Wikis, and notifications
+- **General**: Dashboards, Analytic views, Wikis, and notifications
 - Azure Boards: Area Paths, Iteration Paths, Shared queries and query folders, and more
-- Azure Pipelines: Build and release pipelines, deployment groups, task groups, and more
-- Azure Repos: Git repositories and branches, TFVC folders or branches
-- Azure Artifacts: Artifacts and feeds
+- **Azure Pipelines**: Build and release pipelines, deployment groups, task groups, and more
+- **Azure Repos**: Git repositories and branches, TFVC folders or branches
+- **Azure Artifacts**: Artifacts and feeds
 
 Work items, tags, test plans, and other test artifacts are subject to the security settings typically set at the project level or for an area path.
 
-To set object-level permissions, you must be a member of the **Project Administrators** group or have explicit permissions through the individual object security dialog.
+## Prerequisites
+
+**Permissions**: To set object-level permissions, you must be a member of the **Project Administrators** group or have explicit permissions through the individual object security dialog.
 
 > [!NOTE]
 > TFVC only supports a single repository per project. You can set permissions for the repository or repo folders/branches, which inherit from the repo.

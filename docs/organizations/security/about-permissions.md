@@ -233,7 +233,7 @@ To manage organizational access with Microsoft Entra ID, see the following artic
 * [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Troubleshoot access with Microsoft Entra ID](../accounts/faq-azure-access.yml) 
 
-Azure DevOps registers the changes that get made to a Microsoft Entra group within an hour of that change in Microsoft Entra ID. Any inherited permissions via group membership get refreshed. To refresh your Microsoft Entra membership and inherited permissions in Azure DevOps, sign out and then sign back in, or [trigger a refresh to reevaluate your permission](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).  
+Azure DevOps registers the changes that get made to a Microsoft Entra group within an hour of that change in Microsoft Entra ID. Any inherited permissions via group membership get refreshed. To refresh your Microsoft Entra membership and inherited permissions in Azure DevOps, sign out and then sign back in, or [trigger a refresh to reevaluate your permission](request-changes-permissions.md#refresh-or-reevaluate-your-permissions).  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
