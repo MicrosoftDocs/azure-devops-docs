@@ -12,4 +12,4 @@ hide_comments: true
 
 # Hosted macOS agents on Apple Silicon
 
-Customers have been waiting for Apple Silicon (arm64) support on Microsoft-hosted macOS agents in Azure Pipelines. The main reason for why we haven't been able to support this as well as provide larger SKUs of macOS agents is that our current uniform billing model across Linux, Windows, and macOS hosted agents is not sustainable for us to provide these agents. We have started thinking about this problem and will work on a solution.
+Customers have been waiting for Apple Silicon (Arm64) support on Microsoft-hosted macOS agents in Azure Pipelines. We haven't been able to support this, or provide larger SKUs of macOS agents, because our current uniform billing model across Linux, Windows, and macOS-hosted agents is unable to support them. We are working on a solution.
