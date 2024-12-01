@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes commonly used terms used in pipeline [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md).
+This article describes commonly used terms used in pipeline [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md), and provides tips for better testing in Azure Pipelines.
 
 
 
@@ -37,5 +37,11 @@ This article describes commonly used terms used in pipeline [test report](review
 | **Test result** | Single instance of execution of a test case with a specific outcome and details. |
 | **Test run** | Logical grouping of test results based on:<br />- **Test executed using built-in tasks**: All tests executed using a single task such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2), [Ant](/azure/devops/pipelines/tasks/reference/ant-v1), [Maven](/azure/devops/pipelines/tasks/reference/maven-v3), [Gulp](/azure/devops/pipelines/tasks/reference/gulp-v1), [Grunt](/azure/devops/pipelines/tasks/reference/grunt-v0) or [Xcode](/azure/devops/pipelines/tasks/reference/xcode-v5) will be reported under a single test run<br />- **Results published using [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task**: Provides an option to group all test results from one or more test results files into a single run, or individual runs per file<br />- **Tests results published using API(s)**: [API(s)](/rest/api/azure/devops/test/runs) provide the flexibility to create test runs and organize test results for each run as required. |
 | **Traceability** | Ability to [trace](requirements-traceability.md) forward or backward to a requirement, bug, or source code from a test result. |
+
+## Best Practices for Azure Pipeline Testing
+
+Ensuring application reliability requires [comprehensive testing](https://learn.microsoft.com/devops/develop/shift-left-make-testing-fast-reliable) in Azure pipelines, with unit tests and integration tests being essential. Testing integrations in cloud environments, particularly [serverless applications](https://azure.microsoft.com/solutions/serverless), poses challenges due to distributed architectures, misconfigured [IAM permissions](https://learn.microsoft.com/entra/fundamentals/introduction-identity-access-management), and service-to-service integration issues.
+
+To address this, consider running your code locally while interacting with genuine Azure services, facilitating realistic tests and enabling debugger tools suitable for automated testing. Implementing this approach requires provisioning ephemeral Azure resources. Ideally, create [separate accounts for each environment](https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure); alternatively, dynamic provisioning within Azure pipelines is possible, although this increases execution time and necessitates careful resource decommissioning planning. To minimize naming conflicts, avoid explicit resource naming unless necessary and include environment names in resource names.
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
