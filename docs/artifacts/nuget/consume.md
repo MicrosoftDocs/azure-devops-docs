@@ -51,11 +51,15 @@ To set up Visual Studio to access your feed as a package source, we must first g
 
 1. Select **Add Source** when you're done.
 
+    :::image type="content" source="media/add-new-source-mac.png" alt-text="A screenshot showing how to add a new package source in Visual Studio for Mac.":::
+
 ---
 
 ## Install packages from your feed
 
 Now that you set up Visual Studio and added a new package source pointing to your feed, you can now search and install packages right from Visual Studio package manager.
+
+#### [Windows](#tab/windows/)
 
 1. Open Visual Studio, and then right-click on your project in the Solution Explorer, then select **Manage NuGet Packages...**.
 
@@ -63,7 +67,19 @@ Now that you set up Visual Studio and added a new package source pointing to you
     
     :::image type="content" source="../media/select-pkg-src.png" alt-text="A screenshot showing the package source dropdown menu in Visual Studio.":::
 
-1. Use the search bar to look for packages in your feed.
+1. Use the search bar to find packages in your feed.
+
+#### [Mac](#tab/macOS/)
+
+1. Open Visual Studio for Mac, right-click on the **Dependencies** folder in your solution, and then select **Manage NuGet Packages...**.
+
+1. Select the **Browse** tab, and then select your feed from the **Package source** dropdown at the bottom.
+
+1. Use the search bar to find packages in your feed.
+
+    :::image type="content" source="media/search-package-sources-mac.png" alt-text="A screenshot showing how to search for packages in Visual Studio for Mac.":::
+
+---
 
 > [!NOTE]
 > If you enabled [upstream sources](../nuget/upstream-sources.md), any packages that haven't been saved to your feed (by using them at least once) won't appear in the search result.
