@@ -37,21 +37,19 @@ To set up Visual Studio to access your feed as a package source, we must first g
 
     :::image type="content" source="../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio - Windows":::
 
-#### [macOS](#tab/macOS/)
+#### [Mac](#tab/macOS/)
 
 1. Create a new [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-1. Open visual studio, and then select **Preferences** from the menu bar.
+1. Open Visual Studio for Mac, and then navigate to **Visual Studio** > **Preferences**.
 
-1. Select **NuGet**, and then select **Sources**.
+1. Select **NuGet** > **Sources**, and then select **Add** to set up a new source.
 
-1. Select **Add**, and then enter your feed's **Name**, the **Source** URL you copied in the previous step, a userName (any string), and your personal access token. Select **OK** when you're done.
+1. Provide a **Name** for your new source and enter the source URL in the **Location** field. For **UserName**, you can enter any string, and for **Password**, paste the personal access token you created earlier. Select **OK** when you're done.
 
-1. If you enabled upstream sources in your feed, clear the **nuget.org** checkbox.
+1. If you have upstream sources enabled in your feed, clear the **nuget.org** checkbox.
 
-1. Select **OK** when you're done.
-
-    :::image type="content" source="../media/vs-mac-settings.png" alt-text="A screenshot showing how to add a new package source in Visual Studio - macOS.":::
+1. Select **Add Source** when you're done.
 
 ---
 
