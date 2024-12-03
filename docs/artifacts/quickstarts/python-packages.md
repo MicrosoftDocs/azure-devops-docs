@@ -28,49 +28,26 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 - Download and install [Python](https://www.python.org/downloads/).
 
-## Create a local Python package
+## Get the code
 
-You need a Python package to publish to your feed. If you don't have a package to publish, you can clone a sample Python package from GitHub.
+1. If you don't have your own Python project, you can use the following sample Python project:
 
-### Clone the sample Python package
-
-Use the following steps to use the sample Python package from GitHub.
-
-1. Go to the following GitHub repository:
-
-    ```html
+    ```
     https://github.com/microsoft/python-package-template
     ```
 
-1. Fork the repository to your GitHub account.
-1. Go to your forked repository, and select **Code**.
-1. Copy the URL of your forked repository.
-1. From a CLI on your local machine, clone the repository with the following command using the URL you copied from your forked repository: 
+1. To build your wheel and source distribution, run the following commands in your project directory:
 
-    ```Command
-    git clone <REPOSITORY_URL>
+    ```
+    pip install --upgrade build
+    python -m build
     ```
 
-1. Change directory to the cloned repository.
+1. If your Python project has a *setup.py* file, you can also use this command to build your package:
 
-    ```Command
-    cd python-package-template
     ```
-
-### Build your package
-
-To build your wheel and source distribution, run the following commands in your project directory:
-
-```Command
-pip install --upgrade build
-python -m build
-```
-
-If your Python project has a `setup.py` file, you can use the following command to build your package:
-
-```Command
-python setup.py sdist bdist_wheel
-```
+    python setup.py sdist bdist_wheel
+    ```
 
 ## Create a feed
 
