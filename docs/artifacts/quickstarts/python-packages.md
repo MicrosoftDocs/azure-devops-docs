@@ -1,54 +1,32 @@
 ---
 title: Get started with Python packages in Azure Artifacts
-description: Quickly start hosting and consuming python packages with Azure.
+description: Learn how to set up your project to manage your Python packages in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.date: 02/21/2024
+ms.date: 12/03/2024
 monikerRange: '>= azure-devops-2019'
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
 ---
 
-# Quickstart: Publish and consume Python packages with Azure Artifacts using the command line (CLI)
+# Get started with Python packages in Azure Artifacts
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-In this quickstart, you learn how to create an Azure Artifacts feed and use your feed to publish and consume Python packages from the command line in your local development environment. When you're finished, you have a Python package published to your feed and installed from your feed to your local development environment.
+Using Azure Artifacts, you can publish and download packages from feeds and public registries such as PyPi. This quickstart will guide you through creating a feed, configuring your project, and managing Python packages in your Azure Artifacts feed. In this article, you will learn how to:
 
-To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+> [!div class="checklist"]
+>
+> * Create a new feed.
+> * Authenticate with your feed.
+> * Publish Python packages.
+> * Install packages from your feed.
 
 ## Prerequisites
 
-To run the following steps, you must have:
+- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-::: moniker range=">= azure-devops"
-
-* An Azure DevOps organization. [Create one for free](../../pipelines/get-started/pipelines-sign-up.md).
-* A personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
-* An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
-* Python 3.8 or later installed on your local machine. [Download Python here](https://www.python.org/downloads).
-* pip 19.2 and twine 1.13.0 or higher.
-* A Python package to publish from your local machine to your feed.
-* If using the sample Python package:
-    * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-    * git installed on your local machine. 
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-*  A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-* Access to an Azure DevOps Server collection.
-* A personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
-* An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
-* Python 3.8 or later installed in your local development environment.
-* pip 19.2 and twine 1.13.0 or higher.
-* If using the sample Python package:
-    * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-    * git installed on your local machine. 
-
-
-::: moniker-end
+- Download and install [Python](https://www.python.org/downloads/).
 
 ## Create a local Python package
 
