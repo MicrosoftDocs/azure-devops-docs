@@ -70,7 +70,7 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-  "Stateless": {}
+    "Stateless": {}
 }
 ```
 
@@ -126,11 +126,11 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-  "Stateful": 
-  {
-      "maxAgentLifetime": "7.00:00:00",
-      "gracePeriodTimeSpan": "00:30:00"
-  }
+    "Stateful": 
+    {
+        "maxAgentLifetime": "7.00:00:00",
+        "gracePeriodTimeSpan": "00:30:00"
+    }
 }
 ```
 
@@ -200,7 +200,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
 
 Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
-Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"kind": "Automatic"` to configure automatic standby agents. See the following sections for details on how to configure each scaling type.
+Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"Manual": {}` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"Automatic": {}` to configure automatic standby agents. See the following sections for details on how to configure each scaling type.
 
 ```azurecli
 az mdp pool create \
@@ -212,13 +212,11 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-  "Stateless": 
-  {
+    "Stateless": {},
     "resourcePredictionsProfile": {
-        "kind": "Manual"
+        "Manual": {}
     },
     "resourcePredictions": {...}
-  }
 }
 ```
 
@@ -425,25 +423,24 @@ Manual standby agent provisioning is specified in the `resourcePredictionsProfil
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {},
-                {
-                    "00:00:00": 1,
-                    "04:00:00": 0
-                },
-                {},
-                {},
-                {},
-                {},
-                {}
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {},
+            {
+                "00:00:00": 1,
+                "04:00:00": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
     }
 }
 ```
@@ -460,7 +457,10 @@ The following example is a manual standby agent scheme, using `Eastern Standard 
 
 ```json
 {
-"Stateless": {
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
     "resourcePredictions": {
         "timeZone": "Eastern Standard Time",
         "daysData": [
@@ -487,11 +487,7 @@ The following example is a manual standby agent scheme, using `Eastern Standard 
             },
             {}
         ]
-    },
-    "resourcePredictionsProfile": {
-        "kind": "Manual"
     }
-  }
 }
 ```
 
@@ -634,25 +630,24 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {},
-                {
-                    "00:00:00": 1,
-                    "04:00:00": 0
-                },
-                {},
-                {},
-                {},
-                {},
-                {}
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {},
+            {
+                "00:00:00": 1,
+                "04:00:00": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
     }
 }
 ```
@@ -732,37 +727,36 @@ The following example configures four agents to be used during working hours wit
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {},
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {}
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {},
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {}
+        ]
     }
 }
 ```
@@ -815,18 +809,17 @@ If you choose the all week scheme, you can specify a number of agents you want a
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {
-                    "00:00:00": 1
-                }
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {
+                "00:00:00": 1
+            }
+        ]
     }
 }
 ```
@@ -878,10 +871,10 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "predictionPreference": "Balanced",
-            "kind": "Automatic"
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Automatic": {
+            "predictionPreference": "Balanced"
         }
     }
 }
