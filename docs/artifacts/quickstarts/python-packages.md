@@ -103,137 +103,32 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 ## Publish packages
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
-
-1. Select **twine** under the **Python** section.
-
-1. On your development machine, ensure that twine is installed.  
-
-    ```Command
-    pip install --upgrade twine
-    ```
-
-1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
-
-    :::image type="content" source="./media/screenshot-twine-connect-to-feed-pyirc.png" alt-text="A screenshot highlighting the `.pyirc` content.":::
-
-1. To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
-
-    Example of a `.pypirc` file with credentials:
+1. Run this command in your project directory to create source and wheel distributions:
 
     ```
-    [distutils]
-    Index-servers =
-        <FEED_NAME>
-
-    [<FEED_NAME>]
-    Repository = <FEED_URL>
-    username = <FEED_NAME>
-    password = <YOUR_PERSONAL_ACCESS_TOKEN>
+    python setup.py sdist bdist_wheel
+    
     ```
 
-1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `.pypirc` file location with the `--config-file` argument.
-
-    ```Command
-    twine upload --repository <FEED_NAME> dist/*
-    ```
-
-### Install a package from your feed
-
-1. Go to  your Azure DevOps Project and select **Artifacts**.
-1. Select your feed and select **Connect to feed**.
-
-   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed button.":::
-
-1. Select **pip** under the **Python** section. 
-
-   :::image type="content" source="media/pip-feed.png" alt-text="A screenshot highlighting the pip package type.":::
-
-1. Prepare your local Python environment.
-
-    # [Windows](#tab/Windows)
-    
-    1. Ensure pip is installed and up to date:
-    
-        ```Command
-        python -m pip install --upgrade pip
-        ```
-    
-    1. Create and activate a Python virtual environment:
-    
-        ```Command
-        python -m venv myenv
-        myenv/Scripts/activate
-        ```
-
-    # [Linux and macOS](#tab/LinuxMac)
-    
-    1. Ensure pip is installed and up to date:
-    
-        ```Command
-        python3 -m pip install --upgrade pip
-        ```
-    
-    1. To create and activate a Python virtual environment:
-    
-        ```Command
-        python3 -m venv myenv
-        source myenv/bin/activate
-        ```
-    
-    ---
-
-1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtual environment. Copy the content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
-
-    :::image type="content" source="./media/screenshot-pip-connect-to-feed-pip-ini.png" alt-text="A screenshot highlighting the pip.ini file content.":::
-    
-1. To avoid needing to enter your personal access token every time you install a package from your feed, you can add your credentials to the *pip.ini* or *pip.conf* file. Make sure you don't check your personal access token into a public repository.
-
-    Example of a *pip.ini* or *pip.conf* file with credentials:
+1. Run the following command to publish your package. Use the -r *FEED_NAME* flag to ensure your private packages are not accidentally published to PyPI.
 
     ```
-    [global]
-    extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@<FEED_URL>
+    twine upload -r <FEED_NAME> dist/*
     ```
 
-1. To install your package, run the following command replacing \<PACKAGE_NAME\> with the package name from your feed.
+## Install packages
+
+1. Run this command in your project directory to install your packages:
+
+    ```
+    pip install
+    ```
+
+1. To install a specific package, run the following command, replacing the placeholder with the package name from your feed.
 
     ```Command
     pip install <PACKAGE_NAME>
     ```
-
-## Clean up resources
-
-When you're finished with the resources you created, you can delete them to avoid incurring charges. When you delete a project, all its project level artifacts feeds are deleted.  
-
-To delete a project: 
-
-1. Select **Project Settings**.
-1. On the **Project details** page, select **Delete** at the bottom of the page.
-1. Enter the name of the project to confirm, and then select **Delete**.
-
-If you want to only delete the feed:
-
-1. Select **Artifacts** and select your feed from the drop-down menu.
-1. Select the settings button.
-1. From the **Feed settings** tab, select **Delete feed**.
-1. Select **Delete** to confirm.
-
-To clean up your local development environment:
-
-1. To deactivate your virtual environment, run the following command:
-
-    ```Command
-    deactivate
-    ```
-
-1. To delete your virtual environment, delete the directory where it was created.
-1. Remove the `.pypirc` file from your home directory.
-
-If you cloned the sample Python package, you can delete the repository from your local machine and your GitHub account.
-
 
 ## Next steps
 
