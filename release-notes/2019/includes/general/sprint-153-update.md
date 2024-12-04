@@ -32,9 +32,6 @@ The audit events will have information such as IP, who caused the event to be lo
 
 By default, only the project collection administrators can access the audit log. An administrator can grant separate permission to team members to access the audit logs. The auditing feature can be found under the Organizations settings. For more information, see our [documentation](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&preserve-view=true).
 
-> [!div class="mx-imgBorder"]
-> ![Azure auditing feature can be found under organizations settings.](../../media/153_01.png "Azure auditing feature can be found under organizations settings")
-
 ### Manage security groups and permissions from the command line
 
 You can now manage security groups and permissions from the command line by using the **az devops security permission** commands. By using the commands, you can create scripts to manage permissions and standardize the process of creating security groups. In addition, you can use the commands to run reports to view a list of security groups and corresponding permissions. 
