@@ -51,7 +51,7 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 ## Create a feed
 
-[!INCLUDE [](includes/create-feed.md)]
+[!INCLUDE [](../includes/create-feed.md)]
 
 ## Connect to a feed
 
