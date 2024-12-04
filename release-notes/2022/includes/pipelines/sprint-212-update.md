@@ -184,9 +184,6 @@ The Audit logs will contain an entry similar to the following.
 
 In addition, it will show up in the Audit UI.
 
-> [!div class="mx-imgBorder"]
-> ![Log entry in Audit UI](../../media/212-pipelines-02.png)
-
 ### Task library exposes Agent hosting model
 
 Task Authors that want to determine whether an agent is running in Microsoft-hosted pools or not can now use Task Library function `getAgentMode()` to determine the hosting model. This is beneficial in scenarios where a task wants to influence behavior based on having access to a customer's network or not. A task may try to reach an Azure service over a private endpoint if it is executed from a self-hosted agent or scale-set agents that reside in a customer's network.
