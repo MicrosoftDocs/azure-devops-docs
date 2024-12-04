@@ -13,7 +13,7 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Azure Artifacts, you can publish and download packages from feeds and public registries such as PyPi. This quickstart will guide you through creating a feed, configuring your project, and managing Python packages in your Azure Artifacts feed. In this article, you will learn how to:
+Using Azure Artifacts, you can publish and download packages from feeds and public registries such as PyPi. This quickstart will guide you through creating a feed, configuring your project, and managing Python packages in your Azure Artifacts feed. In this article, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -65,7 +65,7 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 1. If this is your first time using Azure Artifacts with twine, select **Get the tools** and follow the steps to install the prerequisites.
 
-1. Add a *.pypirc* file to your home directory and paste the provided snippet. Your file should look like this:
+1. Add a *pypirc* file to your home directory and paste the provided snippet. Your file should look like this:
 
     ```
     [distutils]
