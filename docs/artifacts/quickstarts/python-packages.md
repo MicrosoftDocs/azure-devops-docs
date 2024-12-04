@@ -1,6 +1,6 @@
 ---
 title: Get started with Python packages in Azure Artifacts
-description: Learn how to set up your project to manage your Python packages in Azure Artifacts.
+description: Learn how to set up your project and manage your Python packages in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 12/03/2024
@@ -132,14 +132,8 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 ## Next steps
 
-- [Use feed views to share packages](../feeds/views.md)
+> [!div class="nextstepaction"]
+> [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
+> [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+> [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
-- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
-
-- [Build Python apps](../../pipelines/ecosystems/python.md)
-
-## Related articles
-
-- [Artifacts keyring](https://github.com/microsoft/artifacts-keyring)
-
-- [Python virtual environment](https://docs.python.org/3/library/venv.html)
