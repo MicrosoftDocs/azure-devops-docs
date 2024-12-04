@@ -318,9 +318,9 @@ Update exist timeline record:
 
 Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks are able to use the variable. The variable is exposed to the following tasks as an environment variable.
 
-When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
+When `isSecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
 
-When `isoutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isoutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
+When `isOutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isOutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
 
 See [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts) for more details.
 
@@ -328,9 +328,9 @@ See [set variables in scripts](../process/set-variables-scripts.md) and [define 
 
 ::: moniker range=">= azure-devops-2019"
 * `variable` = variable name (Required)
-* `issecret` = boolean (Optional, defaults to false)
-* `isoutput` = boolean (Optional, defaults to false)
-* `isreadonly` = boolean (Optional, defaults to false)
+* `isSecret` = boolean (Optional, defaults to false)
+* `isOutput` = boolean (Optional, defaults to false)
+* `isReadOnly` = boolean (Optional, defaults to false)
 ::: moniker-end
    
 
@@ -344,8 +344,8 @@ Set the variables:
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-    echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+    echo "##vso[task.setvariable variable=secretSauce;isSecret=true]crushed tomatoes with garlic"
+    echo "##vso[task.setvariable variable=outputSauce;isOutput=true]canned goods"
   name: SetVars
 ```
 ::: moniker-end
@@ -370,8 +370,8 @@ Set the variables:
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-    Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+    Write-Host "##vso[task.setvariable variable=secretSauce;isSecret=true]crushed tomatoes with garlic"
+    Write-Host "##vso[task.setvariable variable=outputSauce;isOutput=true]canned goods"
   name: SetVars
 ```
 ::: moniker-end
