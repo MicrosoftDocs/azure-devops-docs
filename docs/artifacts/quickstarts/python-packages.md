@@ -51,20 +51,63 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 ## Create a feed
 
-[!INCLUDE [Create a feed](../includes/create-feed-gt-eq-2019.md)]
+[!INCLUDE [](includes/create-feed.md)]
 
-## Publish your package to your feed
+## Connect to a feed
 
-Use twine to upload your package to your Azure Artifacts feed.
+#### [twine](#tab/twine)
 
-1. Go to  your Azure DevOps Project and select **Artifacts**.
-1. Select your feed and select **Connect to feed**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
 1. Select **twine** under the **Python** section.
 
-   :::image type="content" source="./media/screenshot-connect-to-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
+1. If this is your first time using Azure Artifacts with twine, select **Get the tools** and follow the steps to install the prerequisites.
+
+1. Add a *.pypirc* file to your home directory and paste the provided snippet. Your file should look like this:
+
+    ```
+    [distutils]
+    Index-servers =
+        FEED_NAME
+    
+    [FEED_NAME]
+    Repository = https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/upload/
+    ```
+
+> [!NOTE]
+> If your *.pypirc* file already contains credentials for the public PyPI index, we recommend removing the `[pypi]` section to prevent accidental publication of private packages to PyPI.
+
+#### [pip](#tab/pip)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
+
+1. Select **pip** under the **Python** section.
+
+1. If this is your first time using Azure Artifacts with pip, select **Get the tools** and follow the steps to install the prerequisites.
+
+1. [Create a virtual environment](https://docs.python.org/3/library/venv.html).
+
+1. Add a *pip.ini* file (Windows) or *pip.conf* file (Mac/Linux) to your virtual environment and paste the provided snippet into it. Your file should resemble the following:
+
+    ```
+    [global]
+    index-url=https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/simple/
+    ```
+
+- - - 
+
+
+## Publish packages
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
+
+1. Select **twine** under the **Python** section.
 
 1. On your development machine, ensure that twine is installed.  
 
