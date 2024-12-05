@@ -50,13 +50,13 @@ i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-
 
 | Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 | 7.0 |
 |-----------------------------|-----|-----|-----|-----|-----|-----|-----|
-| Azure DevOps Services       | X   | X   | X   | X   | X   | X  | X |
-|Azure DevOps Server 2022     | X   | X   | X   | X   | X   | X  | X |
-| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X  | - |
-| Azure DevOps Server 2019    | X   | X   | X   | X   | X   | -   |
-| Team Foundation Server 2018 | X   | X   | X   | X   | -   | -   |
-| Team Foundation Server 2017 | X   | X   | X   | -   | -   | -   |
-| Team Foundation Server 2015 | X   | X   | -   | -   | -   | -   |
+| Azure DevOps Services       | X   | X   | X   | X   | X   | X   | X   |
+| Azure DevOps Server 2022    | X   | X   | X   | X   | X   | X   | X   |
+| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X   | -   |
+| Azure DevOps Server 2019    | X   | X   | X   | X   | X   | -   | -   |
+| Team Foundation Server 2018 | X   | X   | X   | X   | -   | -   | -   |
+| Team Foundation Server 2017 | X   | X   | X   | -   | -   | -   | -   |
+| Team Foundation Server 2015 | X   | X   | -   | -   | -   | -   | -   |
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
 
