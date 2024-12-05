@@ -45,6 +45,9 @@ i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-
 
 ### Supported versions
 
+> [!NOTE]
+> All supported Rest APIs are documented in the **[Azure DevOps REST API Reference](/rest/api/azure/devops)**
+
 | Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 | 7.0 |
 |-----------------------------|-----|-----|-----|-----|-----|-----|-----|
 | Azure DevOps Services       | X   | X   | X   | X   | X   | X  | X |
@@ -57,9 +60,7 @@ i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
 
-> [!NOTE]
-> Only the documented APIs in [Azure DevOps Services REST API Reference](/rest/api/azure/devops) for each version are supported. For example, there are undocumented version 1.0 APIs in some server versions, these are not supported.
-
+A few undocumented version 1.0 APIs existed in Team Foundation Server 2013, but aren't supported.
 ## Related articles
 
 * [Get started with REST APIs](../how-to/call-rest-api.md)
