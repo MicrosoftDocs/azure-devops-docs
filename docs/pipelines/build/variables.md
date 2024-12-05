@@ -40,16 +40,16 @@ To learn how to clean up source, see [Clean the local repo on the agent](../repo
 # [YAML](#tab/yaml)
 
 In YAML, you must explicitly map `System.AccessToken` into the pipeline using a
-variable. You can do this at the step or task level:
+variable. You can do this at the step or task level. For example, you can use `System.AccessToken` to authenticate with a container registry.
 
 ```yaml
 steps:
-  - script: |
-      echo "Using System.AccessToken to authenticate"
-      git clone https://$(System.AccessToken)@dev.azure.com/yourorganization/yourproject/_git/yourrepository
-    displayName: 'Clone repository using System.AccessToken'
-    env:
-      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+- task: Docker@2
+  inputs:
+    command: login
+    containerRegistry: '<docker connection>'
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
 
