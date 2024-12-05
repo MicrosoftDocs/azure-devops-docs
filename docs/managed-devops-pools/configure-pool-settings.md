@@ -153,7 +153,9 @@ By default, your Managed DevOps Pool is available to all projects in your specif
 
 ## Maximum agents
 
-Specify the maximum count of agents that are available for use in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents at a time will run jobs while the other jobs wait.
+Specify the maximum count of agents that can be provisioned at a given time in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents at a time will run jobs while the other jobs wait.
+
+You can view the current status and count of the provisioned agents in your pool using the [Agents](./view-agents.md) pane. All of the agents in the **Agents** view (with the exception of agents with a **Returned** status) are running on a virtual machine resource, and count towards the **Maximum agents** count.
 
 #### [Azure portal](#tab/azure-portal/)
 
