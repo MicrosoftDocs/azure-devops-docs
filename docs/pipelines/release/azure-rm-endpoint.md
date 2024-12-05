@@ -60,7 +60,7 @@ The following issues might occur when you create service connections:
 - [Azure subscription isn't passed from the previous task output](#azure-subscription-isnt-passed-from-the-previous-task-output)
 - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
 
-#### The user has only guest permission in the directory
+### The user has only guest permission in the directory
 
 1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner) or [user account administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator)
 
@@ -96,7 +96,7 @@ Alternatively, if you're prepared to give the user administrator-level permissio
 It typically takes 15 to 20 minutes to apply the changes globally. The user then can try recreating the service connection.
 
 
-#### The user isn't authorized to add applications in the directory
+### The user isn't authorized to add applications in the directory
 
 You must have permissions to add integrated applications in the directory. The directory administrator has permissions to change this setting.
 
