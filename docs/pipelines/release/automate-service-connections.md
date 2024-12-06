@@ -4,7 +4,7 @@ description: Learn how to use automation to create a service connection in Azure
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 12/05/2024
+ms.date: 12/06/2024
 monikerRange: '>= azure-devops'
 "recommendations": "true"
 ai-usage: ai-assisted
@@ -22,20 +22,108 @@ To automate the creation of a service connection that uses workload identity fed
 
 ## Create identity
 
+You need either an app registration or a managed service identity.
+
+
 #### [Managed identity](#tab/managed-identity)
 
+Create a managed identity with `az identity create`. 
+
+SAMPLE
+
 #### [App registration](#tab/app-registration)
+
+Create an app registration with `az ad app create`. 
+
+SAMPLE
 
 ---
 
 ## Create role assignment
 
+Add a role assignment to your managed identity or app registration with `az role assignment create`. 
+
+WHAT ROLE TO ASSIGN?
+
+SAMPLE
+
 ## Create Azure DevOps Service Connection
+
+Use the REST API to create a service connection. 
+
+```azurecli
+    az rest --method 'POST' `
+            --uri $apiUri `
+            --body "@$serviceEndpointRequestBodyFile" `
+            --resource <resource-id> `
+            --output json `
+            | ConvertFrom-Json -Depth 4 `
+            | Set-Variable serviceEndpoint
+```
+
+Here's a full sample request with curl. 
+
+```json
+curl --request POST \
+  --url '<org url>/_apis/serviceendpoint/endpoints?api-version=7.2-preview' \
+  --header 'Authorization: Basic <redacted>' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/9.2.0' \
+  --data '{
+    "data": {
+        "azureSpnPermissions": "[{\"roleAssignmentId\":\"<role-assignment-id>\",\"resourceProvider\":\"Microsoft.RoleAssignment\",\"provisioned\":true}]",
+        "azureSpnRoleAssignmentId": "<role-assignment-id>",
+        "registryId": "/subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.ContainerRegistry/registries/<registry-name>",
+        "registrytype": "ACR",
+        "subscriptionId": "<subscription-id>",
+        "subscriptionName": "<subscription-name>",
+        "creationMode": "Manual"
+    },
+    "name": "manualwif-new",
+    "type": "dockerregistry",
+    "url": "https://management.azure.com/",
+    "description": "",
+    "authorization": {
+        "parameters": {
+            "loginServer": "<login-server>",
+            "role": "<role-id>",
+            "scope": "/subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.ContainerRegistry/registries/<registry-name>",
+            "servicePrincipalId": "<app-id>",
+            "tenantId": "<tenant-id>"
+        },
+        "scheme": "WorkloadIdentityFederation"
+    },
+    "isShared": false,
+    "isReady": true,
+    "owner": "Library",
+    "serviceEndpointProjectReferences": [
+        {
+            "projectReference": {
+                "id": "<project-id>",
+                "name": "<project-name>"
+            },
+            "name": "manualwif-new",
+            "description": ""
+        }
+    ]
+}'
+```
 
 ## Create federated identity credential
 
 #### [Managed identity](#tab/managed-identity)
 
+```azurecli
+az identity federated-credential create --name $IdentityName `
+                                        --identity-name $IdentityName  `
+                                        --resource-group $IdentityResourceGroupName `
+                                        --issuer  $serviceEndpoint.authorization.parameters.workloadIdentityFederationIssuer `
+                                        --subject $serviceEndpoint.authorization.parameters.workloadIdentityFederationSubject `
+                                        --subscription $IdentitySubscriptionId
+```
+
 #### [App registration](#tab/app-registration)
+
+NEED EXAMPLE
 
 ---
