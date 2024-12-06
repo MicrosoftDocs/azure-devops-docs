@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 
 <!--- Azure DevOps Server 2019 and 2020 Pipelines Build only-->
 
-::: moniker range="<=azure-devops-server-2022"
+::: moniker range="<=azure-devops-2022"
 
 | Task | Readers | Contributors | Build Admins | Project Admins | 
 |------|:-------:|:------------:|:------------:|:--------------:|
