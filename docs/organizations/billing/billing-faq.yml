@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/14/2024
+  ms.date: 12/07/2024
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -109,7 +109,7 @@ sections:
       - question: |
           Q: How do I pay for Azure DevOps support?
         answer: |
-          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). Report a service outage from our [service status page](https://status.dev.azure.com/). 
+          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
            
           If you need technical support with Azure DevOps and don't have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
            
