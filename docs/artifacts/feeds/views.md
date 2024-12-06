@@ -14,10 +14,10 @@ monikerRange: '<= azure-devops'
 
 Feed views allow users to control package visibility by sharing some packages while keeping others private. Each view filters the feed to display a subset of packages based on specific criteria defined for that view.
 
-By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. The `@Local` view is the default and contains all published packages as well as those saved from upstream sources. All views support NuGet, npm, Maven, Python, Cargo, and Universal Packages.
+By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. The `@Local` view is the default and contains all published packages as well as those saved from upstream sources. All views support NuGet, npm, Maven, Python, Cargo, and Universal Packages. You can change the default view in your **Feed Settings** > **Views**, but doing so does not enable direct publishing to that view. Packages can only be published to the base feed, where they will be available in the *@Local* view.
 
 > [!Note]
-> Azure Artifacts only supports publishing and restoring packages from the default view - *@Local*. You cannot publish directly to the *@Prerelease* or *@Release* views.
+> Azure Artifacts does not support direct publishing to the *@Prerelease* or *@Release* views.
 
 ## Promote packages
 
