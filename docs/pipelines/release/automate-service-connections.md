@@ -1,6 +1,6 @@
 ---
 title: Automate Azure Resource Manager with workload identity service connections
-description: Learn how to use automation to create a service connection in Azure Pipelines wuth workload identity.
+description: Learn how to use automation to create a service connection in Azure Pipelines with workload identity.
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
@@ -18,7 +18,7 @@ Use automation to create Azure Resource Manager service connections with workloa
 
 Automation also helps enforce security policies and compliance requirements by making sure that service connections are created with the necessary permissions and configurations, while also serving as documentation for the setup process.
 
-To automate the creation of a service connection that uses workload identity federation, you'll need to create objects in a specific order. 
+To automate the creation of a service connection that uses workload identity federation, you need to create objects in a specific order. 
 
 ## Create identity
 
@@ -47,7 +47,7 @@ WHAT ROLE TO ASSIGN?
 
 SAMPLE
 
-## Create Azure DevOps Service Connection
+## Create a service connection
 
 Use the REST API to create a service connection. 
 
