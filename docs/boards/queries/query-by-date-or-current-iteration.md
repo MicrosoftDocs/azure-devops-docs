@@ -291,7 +291,7 @@ To use this macro, the specified team must [select a set of sprints](../../organ
 
 ## List work items moved out of a sprint
 
-List work items that were defined for a sprint but later moved out by using a query with a clause that contains the `Was Ever` operator for the **Iteration Path** field. You can only construct this query by using the [WIQL syntax](wiql-syntax.md). Edit the WIQL syntax in Query Editor by installing the [WIQL Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor).
+List work items that were defined for a sprint but later moved out by using a query with a clause that contains the `Was Ever` operator for the **Iteration Path** field. You can only construct this query by using the [WIQL syntax](wiql-syntax.md). Edit the WIQL syntax in Query Editor by installing the [WIQL Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor).
 
 For example, the following syntax queries for work items meet the following criteria:
 
@@ -334,7 +334,7 @@ ORDER BY [System.Id]
 The Query Editor view of the syntax appears as shown.
 
 > [!NOTE]
-> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the `Was Ever` operator, indicating an issue with the clause. However, the query still runs and you can create query charts. To modify the query, you *must* use the [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor).
+> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the `Was Ever` operator, indicating an issue with the clause. However, the query still runs and you can create query charts. To modify the query, you *must* use the [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor).
 
 :::image type="content" source="media/example-work-item-queries/query-work-items-moved-out-of-sprint.png" alt-text="Screenshot that shows Query Editor work items moved out of a sprint.":::
 
