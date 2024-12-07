@@ -60,7 +60,7 @@ For a description of pipeline permissions, see [Pipeline or Build permissions](.
 
 ### Set project-level pipeline permissions
 
-::: moniker range=">= azure-devops-2022"
+::: moniker range="azure-devops-2022"
 
 To manage project-level permissions for users and groups across all build pipelines in your project, do the following steps:
 
