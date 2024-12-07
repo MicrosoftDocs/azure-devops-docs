@@ -1236,7 +1236,7 @@ To manage security roles for all agent pools in the organization, do the followi
     3. Repeat the previous step to add more users and groups.
     4. Select a role and select **Add** 
 
-1: To create a new pipelines, you need **Create build pipeline** permissions. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to **Allow** for your security group. 
+1: To create a new pipeline, you need **Create build pipeline** permissions. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to **Allow** for your security group. 
 
 5. To remove a user or group from the list, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 
