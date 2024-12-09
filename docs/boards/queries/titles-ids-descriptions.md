@@ -129,6 +129,9 @@ In the following example, these operators filter work items for those items that
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
 
+> [!NOTE]
+> Certain reserved words in SQL, such as `WHERE`, `THEN`, and `AND`, do not return results when used as standalone search terms with the `Contains Words` or `Does Not Contain Words` filters.
+
 ## Undefined field value queries
 
 You can find work items that have an undefined field value by using the equals operator `=` and leaving the Value for the field blank. For example, the following filters list all work items of type Task whose Activity field is blank.  
