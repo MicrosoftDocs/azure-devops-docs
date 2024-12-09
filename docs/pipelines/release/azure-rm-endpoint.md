@@ -152,7 +152,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   1. Sign in to the Azure portal.
   1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
 
-    :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure portal.":::
+     :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure portal.":::
 
   1. Select **Microsoft Entra ID** from the left pane.
   1. Select **App registrations**.
@@ -160,7 +160,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   1. Under **Authentication**, select **Supported account types**.
   1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
-    :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
+     :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
 
   1. Select **Save** when you're done.
 
@@ -192,7 +192,6 @@ The token for your service principal or secret is now renewed for three more mon
 
    > [!NOTE]
    > This operation is available even if the service principal's token has not expired.
-   
    > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it will update the secret for the app registered for the service principal. For more information, see [Create an Azure Resource Manager service connection using automated security](/azure/devops/pipelines/library/connect-to-azure#create-an-azure-resource-manager-service-connection-using-automated-security) and [What happens when you create a Resource Manager service connection?](/azure/devops/pipelines/release/azure-rm-endpoint#what-happens-when-you-create-an-azure-resource-manager-service-connection)
 
 ### Failed to obtain the JWT by using the service principal client ID
