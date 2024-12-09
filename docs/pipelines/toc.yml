@@ -327,6 +327,9 @@
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections
           href: release/troubleshoot-workload-identity.md
+        - name: Troubleshoot Azure Resource Manager service connections
+          href: release/azure-rm-endpoint.md
+          displayName: service connection, service principal, Azure resource manager, azure
       - name: Azure App Service (Web Apps)
         items:
         - name: Deploy to App Service using Azure Pipelines
