@@ -62,7 +62,7 @@ You can use the Azure CLI to get Microsoft Entra ID access tokens for users. Sin
 * [**Azure CLI**](/cli/azure/install-azure-cli)
 
 #### Acquiring an access token for a user
-These instructions are provided by the Databricks docs and more details can be found on [their page](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/user-aad-token).
+These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/user-aad-token).
 
   1. Sign in to the Azure CLI using the `az login` command. Follow the on-screen instructions to complete signin.
   2. Set the right correct subscription for the signed-in user by entering the command below:
