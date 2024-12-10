@@ -62,7 +62,7 @@ Meanwhile, Microsoft Entra tokens only last for one-hour before they must be ref
 
 You can use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls that don't need a persistent token. 
 
-### Acquire user tokens in Azure CLI
+#### Acquire user tokens in Azure CLI
 These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/user-aad-token).
 
   1. Sign in to the Azure CLI using the `az login` command. Follow the on-screen instructions to complete signin.
@@ -78,7 +78,7 @@ These instructions are provided by the Databricks docs and more details can be f
   -o tsv
   ```
 
-### Acquire service principal tokens in Azure CLI
+#### Acquire service principal tokens in Azure CLI
 Service principals can also use ad-hoc Microsoft Entra ID access tokens for ad-hoc operations.
 Instructions on how to do so are provided in this section in the guide to [service principals and managed identities](service-principal-managed-identity.md#b-acquire-a-microsoft-entra-id-token-with-the-azure-cli).
 
