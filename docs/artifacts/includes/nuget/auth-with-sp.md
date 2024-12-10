@@ -10,7 +10,6 @@ ms.date: 12/10/2024
 
 To authenticate with a service principal, set the [ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md#environment-variables) environment variable as shown below, specifying your feed URL, the service principal's application (client) ID, and the path to your service principal certificate:
     - **PowerShell**:
-    
         ```PowerShell
         $env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'
         {
@@ -24,9 +23,7 @@ To authenticate with a service principal, set the [ARTIFACTS_CREDENTIALPROVIDER_
         }
         '@
         ```
-
     - **Bash**:
-    
         ```bash
         export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
           "endpointCredentials": [
@@ -38,4 +35,5 @@ To authenticate with a service principal, set the [ARTIFACTS_CREDENTIALPROVIDER_
           ]
         }'
         ```
+
 
