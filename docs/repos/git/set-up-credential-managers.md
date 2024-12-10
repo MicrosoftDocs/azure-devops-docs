@@ -51,7 +51,7 @@ Once authenticated, the credential manager creates and caches a token for future
 ### Set default credential type
 By default, GCM will request a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) from Azure Repos. However, you can change the default token type to a [Microsoft Entra token]() for Git authentication instead. We recommend this approach since the latter token has a one-hour expiration compared to the 7-day PATs minted by GCM. All PATs created by GCM can be [revoked in the User Settings page](../../../integrate/get-started/authenticat-to-authenticate.md#revoke-a-pat).
 
-To [set your default credential type to Microsoft Entra tokens](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposcredentialtype), set the `credential.azreposCredentialType` configuration entry (or `GCM_AZREPOS_CREDENTIALTYPE` environment variable) to `oauth`. Learn more about [using GCM with Azure Repos](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/azrepos-users-and-tokens.md).
+To [set your default credential type to Microsoft Entra tokens](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposcredentialtype), set the `credential.azreposCredentialType` configuration entry (or `GCM_AZREPOS_CREDENTIALTYPE` environment variable) to `oauth`. Learn more about [using GCM with Azure Repos](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/azrepos-users-and-tokens.md#set-default-credential-type).
 
 ### Getting help
 
