@@ -136,6 +136,20 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 ::: moniker-end
 
 
+
+<a name="identity_values"></a>
+### How are the identity variables set?
+
+The value depends on what caused the build and are specific to Azure Repos repositories. 
+
+| If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
+| --- | --- | ---|
+| In Git or by the [Continuous integration (CI) triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who pushed or checked in the changes. |
+| In Git or by a [branch policy build](../../repos/git/branch-policies.md#build-validation). | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who checked in the changes. |
+| In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
+| In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |
+| Because you clicked the **Queue build** button | You | You |
+
 ::: moniker range="azure-devops"
 
 ## Ask Copilot to generate variable usage examples
@@ -152,17 +166,3 @@ The following text shows an example prompt for Copilot:
 You can customize the prompt to use values that meet your requirements. For example, you can ask for help creating a stage that only runs when a pipeline fails. 
 
 ::: moniker-end
-
-
-<a name="identity_values"></a>
-### How are the identity variables set?
-
-The value depends on what caused the build and are specific to Azure Repos repositories. 
-
-| If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
-| --- | --- | ---|
-| In Git or by the [Continuous integration (CI) triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who pushed or checked in the changes. |
-| In Git or by a [branch policy build](../../repos/git/branch-policies.md#build-validation). | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who checked in the changes. |
-| In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
-| In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |
-| Because you clicked the **Queue build** button | You | You |
