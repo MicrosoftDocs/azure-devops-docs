@@ -123,6 +123,9 @@ gradle build
 
     :::image type="content" source="media\published-artifact.png" alt-text="Screenshot showing the published artifact in pipeline summary.":::
 
+> [!TIP]
+> To keep the Gradle daemon running, consider adding `org.gradle.daemon=true` to your *gradle.properties* file.
+
 ## Related articles
 
 - [Publish and download pipeline Artifacts](./pipeline-artifacts.md)
