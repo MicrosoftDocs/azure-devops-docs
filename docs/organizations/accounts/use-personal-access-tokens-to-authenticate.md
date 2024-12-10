@@ -19,15 +19,12 @@ monikerRange: '<= azure-devops'
 
 A Personal Access Token (PAT) serves as an alternative password for authenticating into Azure DevOps. This PAT identifies you and determines your accessibility and scope of access. Therefore, treat PATs with the same level of caution as passwords.
 
-When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use non-Microsoft tools that don't support Microsoft or Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs are a suitable alternative.
+When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use non-Microsoft tools that don't support Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs can be a suitable alternative. Otherwise, we recommend [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) over PATs whenever possible. We recommend reviewing our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to choose the appropriate authentication mechanism for your needs.
 
-This article guides you through creating, using, modifying, and revoking PATs for Azure DevOps.
-
-You can manage PATs using the following methods:
-* **User interface (UI):** Through user settings, as detailed in this article
-* [**PAT Lifecycle Management API**](manage-personal-access-tokens-via-api.md)
-
-To establish PATs for non-Microsoft tools, you can use [Git credential managers](../../repos/git/set-up-credential-managers.md) or generate them manually. We recommend reviewing our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to choose the appropriate authentication mechanism. PATs provide a straightforward alternative for smaller projects that don't require an extensive solution. Without a credential manager, users input their credentials each time.
+You can manage PATs through the following methods:
+* **User interface (UI):** Through user settings, as detailed in this article.
+* [**PAT Lifecycle Management APIs**](manage-personal-access-tokens-via-api.md)
+* [Git credential managers](../../repos/git/set-up-credential-managers.md) for Git operations. Credential managers facilitate token management. Without one, users must input their credentials each time.
 
 ## Prerequisites
 
@@ -37,14 +34,9 @@ To establish PATs for non-Microsoft tools, you can use [Git credential managers]
       - Go to **your profile** and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.
       - Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions assigned to you. Look for permissions related to managing tokens or user settings.
   - If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an Azure DevOps Administrator might need to grant you specific permissions or add you to an allowlist to create and manage PATs.
-  - Depending on the tasks you want to perform with the PAT, you might need additional permissions. For example: 
-    - Build: Read & execute
-    - Code: Read, write, & manage
-    - Environment: Read & manage
-    - Project and team: Read, write, & manage
-    - Variable groups: Read & create
+  - PATs are connected to the user account that minted the token. Depending on the tasks you want the PAT to perform, you might need additional permissions yourself.
 - **Access levels:** Have at least Basic access.
-- **Security best practices:** Familiarize yourself with [security best practices](../security/security-best-practices.md) for managing PATs, such as using them only when necessary and regularly rotating them.
+- **Security best practices:** Familiarize yourself with [security best practices](../security/security-best-practices.md) for managing PATs. **Use them only when necessary and always regularlu rotate them.**
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
@@ -86,9 +78,9 @@ A: When a user is removed from Azure DevOps, the PAT invalidates within 1 hour. 
 
 A: Yes, there's a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md). For more information, see [Manage PATs using REST API](manage-personal-access-tokens-via-api.md) and [FAQs](manage-personal-access-tokens-via-api.md#q-how-can-i-regeneraterotate-pats-through-the-api-i-saw-that-option-in-the-ui-but-i-dont-see-a-similar-method-in-the-api).
 
-### Q: Can I use basic auth with all Azure DevOps REST APIs?
+### Q: Can I use PATs with all Azure DevOps REST APIs?
 
-A: No. You can use basic auth with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) only support [OAuth](../../integrate/get-started/authentication/oauth.md). For more information, see [Manage PATs using REST API](manage-personal-access-tokens-via-api.md).
+A: No. You can use basic auth with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the [PAT Management Lifecycle APIs](manage-personal-access-tokens-via-api.md)) only support [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md). For an example on how to set up an Entra app to call such APIs, see [the Manage PATs using REST API docs](manage-personal-access-tokens-via-api.md).
 
 ### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
