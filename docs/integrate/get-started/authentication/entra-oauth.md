@@ -22,7 +22,6 @@ Entra tokens can also be used for [ad-hoc requests with the Azure CLI](entra.md#
 > When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps, as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 ### Helpful resources
-Building on a new platform can be overwhelming. We provide links we think might be useful to the OAuth app development process on Microsoft Entra. For developers switching over from Azure DevOps OAuth to Microsoft Entra OAuth, we offer helpful tips to consider during your migration effort.
 
 #### For developers
 * [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app)
