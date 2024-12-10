@@ -1,62 +1,45 @@
 ---
-title: Define a Classic release pipeline
-description: DevOps CI CD - Define a multi-stage continuous deployment (CD) pipeline for your ASP.NET Core app using Azure Pipelines
+title: DeCreate a multi-stage release pipeline
+description: Learn how to create a multi-stage Classic release pipeline for your ASP.NET Core app using Azure Pipelines.
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.topic: tutorial
-ms.author: ronai
-author: RoopeshNair
-ms.date: 09/02/2021
+ms.date: 12/10/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Define your Classic pipeline
+# Create a multi-stage release pipeline (Classic)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Azure Pipelines enables developers to deploy their applications across multiple environments using both YAML and Classic pipelines. This article walks you through creating a multi-stage Classic release pipeline to deploy your ASP.NET Core web app to multiple stages.
 
-
-Azure Pipelines provide a highly configurable and manageable pipeline for releases to multiple stages such as development, staging, QA, and production. It also offers the opportunity to implement gates and approvals at each specific stage.
-
-In this tutorial, you'll learn about:
+In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Continuous deployment triggers
-> * Adding stages
-> * Adding pre-deployment approvals
-> * Creating releases and monitoring deployments
+> * Set up continuous deployment triggers
+> * Add stages
+> * Add pre-deployment approvals
+> * Create releases and monitor deployments
 
 ## Prerequisites
 
-You'll need:
+- A Classic release pipeline that contains at least one stage. If you don't already have one, [Create a Classic release](releases.md).
 
-* A release pipeline that contains at least one stage. If you don't already have one, you can create it by working through any of the following quickstarts and tutorials:
+- [Azure subscription](https://azure.microsoft.com/free/).
 
-  - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Azure DevOps Project](/azure/devops-project/overview)
-  - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+- [Azure App Service](azure/app-service/getting-started?pivots=stack-net).
 
-* Two separate targets where you'll deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target.
-  In this example, we are using Azure App Service website instances. If you decide to do the same, you'll have to choose names that are unique, but it's a good idea to include
-  "QA" in the name of one, and "Production" in the name of the other so that you can easily identify them. Use the Azure portal to create a new web app.
+## Set up continuous deployment triggers
 
-## Continuous deployment (CD) triggers
+Enabling the continuous deployment trigger will configure the pipeline to automatically create a new release whenever a new pipeline artifact becomes available.
 
-Enabling continuous deployment trigger will instruct the pipeline to automatically create a new release every time a new build is available.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline, then select **Edit**.
+1. Select **Azure Pipelines** > **Releases**, select your release pipeline, and then select **Edit**.
 
-   ![edit the release pipeline](media/define-multistage-release-process/open-for-edit.png)
+1. In the **Artifacts** section, select the **Continuous deployment trigger** icon to open the trigger panel, then toggle it to enable.
 
-1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel. Make sure this is enabled so that a new release is created after every new successful build is completed.
-
-   ![continuous deployment trigger](media/define-multistage-release-process/ci-trigger.png)
-
-1. Select the **Pre-deployment conditions** icon in the **Stages** section to open the conditions panel.
-   Make sure that the trigger for deployment to this stage is set to **After release**. This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
-
-   ![pre-deployment conditions](media/define-multistage-release-process/environment-trigger.png)
-
-   You can also set up [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers), or [schedule deployments](triggers.md#scheduled-release-triggers).
+1. Under the first stage, select the **Pre-deployment conditions** icon and ensure the deployment trigger is set to **After release**. This triggers deployments to this stage automatically when a new release is created. 
 
 ## Add stages
 
