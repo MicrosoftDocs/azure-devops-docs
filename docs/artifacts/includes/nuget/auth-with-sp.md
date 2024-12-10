@@ -17,15 +17,14 @@ To authenticate with a service principal, set the [ARTIFACTS_CREDENTIALPROVIDER_
 In PowerShell, enter the following code.
 
 ```powershell
-$env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'
-{
+$env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'{
     "endpointCredentials": [
-    {
-        "endpoint": "<FEED_URL>",
-        "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
-        "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
-    }
-]
+        {
+            "endpoint": "<FEED_URL>",
+            "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
+            "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+        }
+    ]
 }
 '@
 ```
