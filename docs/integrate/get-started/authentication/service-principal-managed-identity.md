@@ -109,26 +109,37 @@ For ad-hoc operations, it might be easier to acquire a one-off Microsoft Entra I
 
 These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/service-prin-aad-token).
 
-  1. Sign in to the Azure CLI as the service principal using the `az login` command. Follow the on-screen instructions to complete signin.
-  ``` bash
-az login \
---service-principal \
--t <Tenant-ID> \
--u <Client-ID> \
--p <Client-secret>
+  1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
+  2. Follow the on-screen instructions to complete signin.
+  ``` powershell
+# To authenticate a service principal with a password or cert:
+az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
+
+# To authenticate a managed identity:
+az login --identity
   ```
-  2. Set the right correct subscription for the signed-in service principal by entering the command below:
-  ``` bash
+
+  3. Set the right correct subscription for the signed-in service principal by entering the command below:
+  ``` powershell
   az account set -s <subscription-id>
   ```
 
-  3. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-  ``` bash
-  az account get-access-token \
-  --resource 499b84ac-1321-427f-aa17-267ca6975798 \
-  --query "accessToken" \
-  -o tsv
+  4. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
+  ``` powershell
+  $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
   ```
+
+  5. Now, you can use `az cli` commands per usual. Let's try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
+```powershell
+$apiVersion = "7.1-preview.1"
+$uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
+$headers = @{
+    Accept = "application/json"
+    Authorization = "Bearer $accessToken"
+}
+Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
+```
+
 
 > [!NOTE]
 > Use the  Azure DevOps application ID, not our resource URI, for generating tokens.
@@ -161,7 +172,7 @@ Follow along with these examples by finding the app code in our [collection of s
 
 #### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
-A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, meaning token strings that represent a user’s username and password, they're incredibly risky to use as they can easily fall into the wrong person’s hands. Microsoft Entra tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
+A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). Improperly stored PATs can fall into the wrong hands and last the duration of its often longer lifespan. Microsoft Entra tokens expire every hour, limiting the overall risk factor when leaked. For common PAT scenarios, we [share some examples on hopw you might explore using a Microsoft Entra token instead](entra.md).
 
 You can't use a service principal to create a personal access token.
 
@@ -172,39 +183,6 @@ A: At this time, service principals and managed identities have the same [rate l
 #### Q: Will using this feature cost more?
 
 A: Service principals and managed identities are priced similarly as users, based on the access level. One notable change pertains to how we treat "multi-org billing" for service principals. Users get counted as only one license, no matter how many organizations they're in. Service principals get counted as one license per each organization the user's in. This scenario is similar to standard "user assignment-based billing." 
-
-#### Q: Can I use a service principal or managed identity with Azure CLI?
-
-A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Microsoft Entra ID access tokens](#5-get-a-microsoft-entra-id-token). See these examples for how you might pass a Microsoft Entra token in to authenticate with CLI.
-
-```powershell
-# To authenticate with a command: After typing this command, the az devops login will prompt you to enter a token. You can add an Entra ID token too! Not just a PAT.
-az devops login
-
-# To authenticate a service principal with a password or cert:
-az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
-
-# To authenticate a managed identity:
-az login --identity
-```
-
-Now, let's get a Microsoft Entra token (the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`) and try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
-
-```powershell
-Write-Host "Obtain access token for Service Connection identity..."
-$accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
-
-Write-Host "Use access token with Azure DevOps REST API to list projects in the organization..."
-$apiVersion = "7.1-preview.1"
-$uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
-$headers = @{
-    Accept = "application/json"
-    Authorization = "Bearer $accessToken"
-}
-Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
-```
-
-Now, you can use `az cli` commands per usual. 
 
 #### Q: Can I add a managed identity from a different tenant to my organization?
 
