@@ -54,7 +54,9 @@ Microsoft Entra OAuth is the recommended solution for building apps to access Az
 If you're looking to build an application to act on-behalf-of itself, then look into our documentation on [service principal support](service-principal-managed-identity.md). In these docs, we elaborate more on how to set up a service principal or managed identity that doesn't rely on user permissions to action on organization resources, instead relying solely on its own permissions. This authentication mechanism is the recommended authentication for building out automated tooling for teams.
 
 ## Replacing PATs with Microsoft Entra tokens
-Personal access tokens remain one of the most popular forms of authentication for Azure DevOps users. We are hoping to change this precedent by engaging more users to explore using Microsoft Entra tokens wherever PATs may be commonly used. Below are some of the most popular PAT scenarios and ways you might be able to replace the PAT with an Entra token in this workflow.
+[Personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) remain one of the most popular forms of authentication for Azure DevOps users and there remain scenarios where PATs are still the primary form of authentication. Poor PAT management and storage can result in unauthorized access to your Azure DevOps organizations. Letting PATs live for a long lifespan or over-scoping them can also increase the risk of damage that can be done by a leaked PAT.
+
+Meanwhile, Microsoft Entra tokens only last for one-hour before they must be refreshed. The authentication protocols to generate Entra tokens are more robust and secure, combined with protection measures like conditional access policy better protect against token theft adn replay attacks. We are hoping to engage more users to explore using Microsoft Entra tokens wherever PATs may be commonly used today. Below are some of the most popular PAT use cases and ways you might be able to replace the PAT with an Entra token in this workflow.
 
 ### Ad-hoc requests to Azure DevOps REST APIs
 
