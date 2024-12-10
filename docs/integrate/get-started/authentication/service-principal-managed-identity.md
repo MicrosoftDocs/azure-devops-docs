@@ -93,13 +93,13 @@ Management of service principals differs from user accounts in the following key
 
 ### 5. Get a Microsoft Entra ID token
 
-#### Acquire a Microsoft Entra ID token programmatically
+#### (a) Acquire a Microsoft Entra ID token programmatically
 
 Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. See the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token).
 
 The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
-#### Acquire a Microsoft Entra ID token with the Azure CLI
+#### (b) Acquire a Microsoft Entra ID token with the Azure CLI
 For ad-hoc operations, it might be easier to acquire a one-off Microsoft Entra ID token through the Azure CLI. This might be preferred for operations that do not need a persistent token to be regularly rotated, like API calls or git clone operations 
 
 **Prerequisites**
