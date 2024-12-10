@@ -31,7 +31,7 @@ Learn more about [working with variables](../process/variables.md).
 ::: moniker range="azure-devops"
 
 > [!TIP]
-> You can ask [Microsoft Copilot](/copilot/overview) for help using variables. For example, ask Copilot "How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?" Copilot will guide you through creating a stage with a condition that targets `Agent.JobStatus`.
+> You can ask [Copilot](/copilot/) for help using variables. For example, ask Copilot "How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?" Copilot will guide you through creating a stage with a condition that targets `Agent.JobStatus`.
 
 ::: moniker-end
 
