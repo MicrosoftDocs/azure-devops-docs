@@ -6,6 +6,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
 ms.date: 08/07/2024
+ms.custom:  copilot-scenario-highlight 
 monikerRange: '<= azure-devops'
 ---
 
@@ -31,10 +32,9 @@ Learn more about [working with variables](../process/variables.md).
 ::: moniker range="azure-devops"
 
 > [!TIP]
-> You can ask [Copilot](/copilot/) for help using variables. For example, ask Copilot "How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?" Copilot will guide you through creating a stage with a condition that targets `Agent.JobStatus`.
+> You can ask [Copilot](/copilot/) for help with variables. To learn more, see [Ask Copilot to generate variable usage examples](#ask-copilot-to-generate-variable-usage-examples).
 
 ::: moniker-end
-
 
 ## Build.Clean 
 
@@ -136,6 +136,22 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 ::: moniker-end
 
 
+::: moniker range="azure-devops"
+
+## Ask Copilot to generate variable usage examples
+
+You can use [Copilot](/copilot/) to generate an example pipeline stage condition that uses the `Agent.JobStatus` variable.  
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+The following text shows an example prompt for Copilot:
+
+> How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?
+
+You can customize the prompt to use values that meet your requirements. For example, you can ask for help creating a stage that only runs when a pipeline fails. 
+
+::: moniker-end
 
 
 <a name="identity_values"></a>
