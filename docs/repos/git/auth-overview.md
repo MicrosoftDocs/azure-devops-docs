@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-# Authentication overview
+# Git Repos Authentication overview
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -18,26 +18,7 @@ Selecting the right authentication method is crucial for secure access to your A
 
 Always revoke credentials when they're no longer required to maintain the security of your repositories. This approach ensures that you have the flexibility to work with your code securely and efficiently, while also safeguarding it against unauthorized access.
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
-
-## Authentication comparison
-
-| Authentication Type | When to use | Secure? | Ease of setup | Additional tools |   
-|---------------------|:-------------:|:------------:|:---------------------|-------------|   
-| Personal access tokens | You need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
-| SSH | You already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
-
-### Use Git Credential Manager to generate tokens
-
-<a name="use-credential-managers-to-generate-tokens"></a>
-
-Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid entering your credentials every time and keep your token more secure when accessing Azure Repos. Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. 
-
-PATs or Microsoft Entra tokens are generated on demand when you have the credential manager installed. 
-The credential manager creates the token in Azure DevOps and saves it locally for use with the Git command line or other client. 
+### Authentication mechanisms
 
 ## Personal access tokens
 
@@ -91,7 +72,7 @@ git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourO
 
    Replace `{organization}` with your Azure DevOps organization name and `{repository}` with the name of your repository.
 
-## SSH key authentication
+## SSH keys
 
 Key authentication with SSH works through a public and private key pair that you create on your computer. 
 You associate the public key with your username from the web. Azure DevOps will encrypt the data sent to you with that key when you work with Git.
@@ -105,7 +86,14 @@ For more information, see [Set up SSH with Azure DevOps](use-ssh-keys-to-authent
 
 ## OAuth
 
-Use [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). 
+Use [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). Microsoft Entra tokens can be used wherever PATs are used.
+
+## Use Git Credential Manager to generate tokens
+
+<a name="use-credential-managers-to-generate-tokens"></a>
+
+Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid entering your credentials every time and keep your token more secure when accessing Azure Repos. Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. Microsoft Entra tokens or PATs are generated on demand when you have the credential manager installed and saved locally for use with the Git command line or other client. 
+
 
 ## Related articles
 - [Use Git Credential Manager to authenticate to Azure Repos](set-up-credential-managers.md)
