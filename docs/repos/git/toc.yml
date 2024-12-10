@@ -22,7 +22,7 @@
   items:
   - name: Connect to a project or repo
     href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json
-  - name: Authentication
+  - name: Git Authentication Overview
     href: auth-overview.md
   - name: Authenticate with SSH
     href: use-ssh-keys-to-authenticate.md
