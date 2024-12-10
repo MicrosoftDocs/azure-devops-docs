@@ -6,6 +6,8 @@
   href: architecture-overview.md
 - name: Prerequisites
   href: prerequisites.md
+- name: Compare with Azure Virtual Machine Scale Set agents
+  href: migrate-from-scale-set-agents.md
 - name: Quickstarts
   items:
   - name: Azure portal
