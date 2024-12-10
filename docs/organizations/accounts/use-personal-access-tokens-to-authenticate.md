@@ -19,7 +19,11 @@ monikerRange: '<= azure-devops'
 
 A Personal Access Token (PAT) serves as an alternative password for authenticating into Azure DevOps. This PAT identifies you and determines your accessibility and scope of access. Therefore, treat PATs with the same level of caution as passwords.
 
-When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use non-Microsoft tools that don't support Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs can be a suitable alternative. Otherwise, we recommend [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) over PATs whenever possible. We recommend reviewing our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to choose the appropriate authentication mechanism for your needs.
+When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use non-Microsoft tools that don't support Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs can be a suitable alternative. Otherwise, we recommend [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) over PATs whenever possible. 
+
+> [!TIP]
+> We recommend reviewing our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to choose the appropriate authentication mechanism for your needs.
+> This [page](../../integrate/get-started/authentication/entra.md) in our docs offers some guidance on common PAT scenarios that might be better served by Micrsoft Entra tokens instead.
 
 You can manage PATs through the following methods:
 * **User interface (UI):** Through user settings, as detailed in this article.
