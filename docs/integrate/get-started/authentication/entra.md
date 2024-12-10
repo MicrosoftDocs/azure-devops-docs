@@ -79,7 +79,7 @@ These instructions are provided by the Databricks docs and more details can be f
 
 ### Acquiring an access token for a service principal
 Service principals can also use ad-hoc Microsoft Entra ID access tokens for ad-hoc operations.
-Instructions on how to do so are provided in this section in the guide to [service principals and managed identities](service-principal-managed-identity.md).
+Instructions on how to do so are provided in this section in the guide to [service principals and managed identities](service-principal-managed-identity.md#b-acquire-a-microsoft-entra-id-token-with-the-azure-cli).
 
 ## Using Microsoft Entra tokens for Git
 
