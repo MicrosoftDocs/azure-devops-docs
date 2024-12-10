@@ -23,21 +23,13 @@ The following table outlines the recommended authentication mechanisms for diffe
 | Type of application | Description | Example | Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
 | Interactive client-side app (REST) | Client application that allows user interaction calling [Azure DevOps Services REST APIs](/rest/api/azure/devops) | Console application enumerating projects in an organization | [OAuth](./oauth.md) | [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive client-side app (client libraries) | Client application that allows user interaction calling Azure DevOps Services Client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| Interactive JavaScript app | GUI-based JavaScript application | AngularJS single page app displaying project information for a user | [Microsoft Authentication Library for JavaScript (MSAL JS)](https://github.com/AzureAD/microsoft-authentication-library-for-js#microsoft-authentication-library-for-javascript-msaljs) | [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/JavascriptWebAppSample) |
+| Interactive client-side app (client libraries) | Client application that allows user interaction calling Azure DevOps Services client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Non-interactive client-side app | Headless text only client-side application | Console app displaying all bugs assigned to a user | [Device Profile](/azure/active-directory/develop/v2-oauth2-device-code) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Personal access token (PAT) | Bearer token to access your own resources  | Use your PAT in place of your password for REST requests. Not ideal for building applications. | [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) |[docs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  |
 | Server app | Azure DevOps Server app using the Client OM library | Azure DevOps Server extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Service principal or Managed Identity | Application identity with access to organization's Azure DevOps resources | Azure function to create work items |[Service principals and managed identities](./service-principal-managed-identity.md)| [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) |
-| Web extension | Azure DevOps Services [extension](../../../extend/get-started/node.md) | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) extension | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample](../../../extend/develop/add-dashboard-widget.md) |
+| Web extension | Azure DevOps Services [extension](../../../extend/develop/samples-overview.md) | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) extension | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample](../../../extend/develop/add-dashboard-widget.md) |
 
-For more information, see the following articles:
-- [About security and identity](../../../organizations/security/about-security-identity.md).
-- [OAuth authentication](oauth.md)
-- [Service principals and managed identities](service-principal-managed-identity.md)
-- [Azure DevOps Client Libraries](../../concepts/dotnet-client-libraries.md)
-- [Azure DevOps extensions](../../../extend/develop/samples-overview.md)
-- [Azure DevOps data protection overview](../../../organizations/security/data-protection.md)
 
 #### Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server
 
@@ -56,3 +48,9 @@ A: This guidance is primarily for Azure DevOps Services users. For Azure Devops 
 
 ### Q: What if I want my application to authenticate with both Azure DevOps Server and Azure DevOps Services?
 A: The best practice is to have separate authentication paths for Azure DevOps Server and Azure DevOps Services. You can use the `requestContext` to determine which service you're accessing and then apply the appropriate authentication mechanism. If you prefer a unified solution, [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) work for both.
+
+## Related resources
+
+- [About security and identity](../../../organizations/security/about-security-identity.md).
+- [Azure DevOps data protection overview](../../../organizations/security/data-protection.md)
+- [Sample applications](https://github.com/microsoft/azure-devops-auth-samples/tree/master)
