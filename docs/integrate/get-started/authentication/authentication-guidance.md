@@ -31,10 +31,6 @@ The following table outlines the recommended authentication mechanisms for diffe
 | Web extension | Azure DevOps Services [extension](../../../extend/develop/samples-overview.md) | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) extension | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample](../../../extend/develop/add-dashboard-widget.md) |
 
 
-#### Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server
-
-For more information, see [Using IIS Basic Authentication with Azure DevOps on-premises](iis-basic-auth.md).
-
 ## Frequently asked questions (FAQs)
 
 ### Q: Why can't my service account access the Azure DevOps REST API?
