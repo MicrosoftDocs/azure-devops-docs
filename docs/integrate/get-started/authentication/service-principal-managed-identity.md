@@ -142,7 +142,7 @@ Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -Expan
 
 
 > [!NOTE]
-> Use the  Azure DevOps application ID, not our resource URI, for generating tokens.
+> Use the Azure DevOps application ID, not our resource URI, for generating tokens.
 
 ### 6. Use the Microsoft Entra ID token to authenticate to Azure DevOps resources
 
@@ -155,6 +155,12 @@ Another example demonstrates how to connect to Azure DevOps using a User Assigne
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8L]
 
 Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
+
+Some common scenarios for authenticating with service principals besides making Azure DevOps REST API calls can be found in these resources:
+* Connect your service principal to a [Nuget feed](), [npm feed](), [Maven feed]().
+* [Publish extensions to the Visual Studio Marketplace]() with your service principal.
+* Create [secret-free service connections in Azure Pipelines](/azure/devops/pipelines/library/connect-to-azure) backed by service principals or managed identities
+* [Clone repos using a service principal with Git Credential Manager]()
 
 ## How do service principals differ from users
 * You can't modify a service principal’s display name or avatar on Azure DevOps.
@@ -199,7 +205,7 @@ A: You can only add a managed identity from the same tenant that your organizati
 9. To get a Microsoft Entra access token from this service principal that makes use of the managed identity certificate, see the following code sample:
 
 > [!NOTE]
-> You must regularly rotate certificates, as always.
+> Always regularly rotate your certificates.
 
 ```cs
 public static async Task<string> GetSecret(string keyVaultName, string secretName)
@@ -234,191 +240,11 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 }
 ```
 
-### Artifacts
-#### Q: Can I use a service principal to connect to feeds?
-
-A: Yes, you can connect to any Azure Artifacts feed with a service principal. In the following examples, we demonstrate how to connect with a Microsoft Entra ID token for NuGet, npm, and Maven, but other feed types should also work.
-
-##### NuGet project setup with Microsoft Entra token
-
-1. Make sure you have the [latest NuGet](https://www.nuget.org/downloads). 
-
-1. Download and install the Azure Artifacts Credential Provider:
-    
-    - [Windows](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-windows)
-    
-    - [Linux/Mac](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac)
-
-1. Add a *nuget.config* file to your project, in the same folder as the *.csproj* or *.sln* file:
-
-    - Project-scoped feed:
-    
-        ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <configuration>
-          <packageSources>
-            <clear />
-            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-          </packageSources>
-        </configuration>
-        ```
-
-    - Organization-scoped feed:
-    
-        ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <configuration>
-          <packageSources>
-            <clear />
-            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-          </packageSources>
-        </configuration>
-        ```
-
-1. Set the [ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md#environment-variables) environment variable as shown below, specifying your feed URL, the service principal's application (client) ID, and the path to your service principal certificate:
-
-    - **PowerShell**:
-    
-        ```PowerShell
-        $env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'
-        {
-          "endpointCredentials": [
-            {
-              "endpoint": "<FEED_URL>",
-              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
-              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
-            }
-          ]
-        }
-        '@
-        ```
-
-    - **Bash**:
-    
-        ```bash
-        export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
-          "endpointCredentials": [
-            {
-              "endpoint": "<FEED_URL>",
-              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
-              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
-            }
-          ]
-        }'
-        ```
-
-<a name='npm-project-setup-with-entra-id-tokens'></a>
-
-##### npm project setup with Microsoft Entra tokens
-> [!NOTE]
-> The vsts-npm-auth tool does not support Microsoft Entra access tokens. 
-
-1. Add a `.npmrc` to your project, in the same directory as your `package.json`.
-
-    ```
-    registry=https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/registry/ 
-    always-auth=true
-    ```
-2. Get an access token for your service principal or managed identity.
-3. Add this code to your `${user.home}/.npmrc` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
-
-    ```
-    //pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
-    ```
-
-<a name='maven-project-setup-with-entra-id-tokens'></a>
-
-##### Maven project setup with Microsoft Entra tokens
-
-1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
-
-    ```xml
-    <repository>
-      <id>Fabrikam</id>
-      <url>https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/maven/v1</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    ```
-
-2. Get an access token for your Service Principal or Managed Identity.
-
-3. Add or edit the `settings.xml` file in `${user.home}/.m2` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
-
-    ```xml
-    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
-      <servers>
-        <server>
-          <id>Fabrikam</id>
-          <username>Fabrikam</username>
-          <password>[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]</password>
-        </server>
-      </servers>
-    </settings>
-    ``` 
-
-### Marketplace
-#### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
-
-A: Yes. Do the following steps.
-
-1. Add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
-
-2. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
-```
-tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
-```
-
-### Pipelines
-
-#### Q: Can I use a managed identity within a service connection? How can I more easily rotate secrets for the service principal in my service connection? Can I avoid storing secrets in a service connection altogether?
-Azure supports workload identity federation using the OpenID Connect protocol, which allows us to create secret-free service connections in Azure Pipelines backed by service principals or managed identities with federated credentials in Microsoft Entra ID. As part of its execution, a pipeline can exchange its own internal token with a Microsoft Entra token, thereby gaining access to Azure resources. Once implemented, this mechanism is recommended in the product over [other types of Azure service connections](/azure/devops/pipelines/library/connect-to-azure) that exist today. This mechanism can also be used to set up secret-free deployments with any other OIDC compliant service provider. This mechanism is in preview.
-
-### Repos
-#### Q: Can I use a service principal to do git operations, like clone a repo?
-
-A: See the following example of how we passed a [Microsoft Entra ID token](#5-get-a-microsoft-entra-id-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
-
-```powershell
-$ServicePrincipalAadAccessToken = 'Entra ID access token of a service principal'
-git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
-```
-
-> [!TIP] 
-> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Microsoft Entra tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
-
-A helpful tip on how to get the access token from the Azure CLI to call git fetch:
-
-1. Open the Git configuration of your repository: 
-```sh
-git config -e
-```
-
-1. Add the following lines, where the Azure DevOps resource's UUID is `00000000-0000-0000-0000-000000000000`:
-```sh
-[credential]
-    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource     00000000-0000-0000-0000-000000000000 --query accessToken -o tsv)\"; }; f" 
-```
-
-1. Test that it works using: 
-```sh
-GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
-```
-
-
 ## Potential errors
 
 ### The Git repository with name or identifier '{`repoName`}' does not exist or you do not have permissions for the operation you are attempting.
 
 Ensure that the service principal has at least a ["Basic" license](/azure/devops/organizations/security/access-levels) to access repositories. A "Stakeholder" license is not sufficient.
-
 
 ### Failed to create service principal with object ID '{`provided objectId`}'
 
@@ -432,7 +258,7 @@ This error might be due to one of the following reasons:
 * You're a project or team administrator, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations.md) is disabled.
 * You're a project or team administrator who can invite new users, but you're trying to assign a license when you invite a new user. Project or team administrators aren't allowed to assign a license to new users. Any new invited user is added at the [default access level for new users](/azure/devops/organizations/billing/buy-basic-access-add-users#select-default-access-level-for-new-users). Contact a PCA to change the license access level.
 
-### Azure DevOps Graph List API returns empty list, even though we know there are service principals in the organization
+### Azure DevOps Graph List API returns an empty list, even though we know there are service principals in the organization
 The Azure DevOps Graph List API might return an empty list, even if there are still more pages of users to return. Use the `continuationToken` to iterate through the lists, and you can eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it's possible that the first X results return empty.
 
 ### TF401444: Sign-in at least once as {`tenantId`\`tenantId`\`servicePrincipalObjectId`} in a web browser to enable access to the service.
