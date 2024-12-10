@@ -56,14 +56,14 @@ If you're looking to build an application to act on-behalf-of itself, then look 
 ## Replacing PATs with Microsoft Entra tokens
 [Personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) remain one of the most popular forms of authentication for Azure DevOps users and there remain scenarios where PATs are still the primary form of authentication. Poor PAT management and storage can result in unauthorized access to your Azure DevOps organizations. Letting PATs live for a long lifespan or over-scoping them can also increase the risk of damage that can be done by a leaked PAT.
 
-Meanwhile, Microsoft Entra tokens only last for one-hour before they must be refreshed. The authentication protocols to generate Entra tokens are more robust and secure, combined with protection measures like conditional access policy better protect against token theft adn replay attacks. We are hoping to engage more users to explore using Microsoft Entra tokens wherever PATs may be commonly used today. Below are some of the most popular PAT use cases and ways you might be able to replace the PAT with an Entra token in this workflow.
+Meanwhile, Microsoft Entra tokens only last for one hour before they must be refreshed. The authentication protocols to generate Entra tokens are more robust and secure. Combined with protection measures, like [conditional access policies](../../../organizations/accounts/change-application-access-policies#cap-support-on-azure-devops), these tokens better protect against token theft and replay attacks than PATs.  We are hoping to engage more users to explore using Microsoft Entra tokens wherever PATs may be commonly used today. Below are some of the most popular PAT use cases and ways you might be able to replace the PAT with an Entra token in this workflow.
 
 ### Ad-hoc requests to Azure DevOps REST APIs
 
 You can use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls that don't need a persistent token. 
 
 #### Acquire user tokens in Azure CLI
-These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/user-aad-token).
+Credit to these instructions go to the [Databricks docs](/azure/databricks/dev-tools/user-aad-token).
 
   1. Sign in to the Azure CLI using the `az login` command. Follow the on-screen instructions to complete signin.
   2. Set the right correct subscription for the signed-in user by entering the command below. Make sure the Azure subscription id is associated with the tenant connected to the  Azure DevOps organization you are trying to access. If you do not know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
