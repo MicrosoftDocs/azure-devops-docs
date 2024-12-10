@@ -105,6 +105,9 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 ::: moniker range=">=azure-devops"
 
+> [!TIP]
+> You can ask GitHub Copilot for help using variables. For example, ask Copilot "How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?" Copilot will guide you through creating a stage with a condition that targets `Agent.JobStatus`.
+
 [!INCLUDE [include](includes/variables-hosted.md)]
 
 ::: moniker-end
