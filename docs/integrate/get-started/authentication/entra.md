@@ -53,19 +53,18 @@ Microsoft Entra OAuth is the recommended solution for building apps to access Az
 
 If you're looking to build an application to act on-behalf-of itself, then look into our documentation on [service principal support](service-principal-managed-identity.md). In these docs, we elaborate more on how to set up a service principal or managed identity that doesn't rely on user permissions to action on organization resources, instead relying solely on its own permissions. This authentication mechanism is the recommended authentication for building out automated tooling for teams.
 
-## Acquiring Microsoft Entra access tokens with the Azure CLI
+## Replacing PATs with Microsoft Entra tokens
+Personal access tokens remain one of the most popular forms of authentication for Azure DevOps users. We are hoping to change this precedent by engaging more users to explore using Microsoft Entra tokens wherever PATs may be commonly used. Below are some of the most popular PAT scenarios and ways you might be able to replace the PAT with an Entra token in this workflow.
 
-You can use the Azure CLI to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls or git clone operations that don't need a persistent token. 
+### Ad-hoc requests to Azure DevOps REST APIs
 
-### Prerequisites
-* **Azure subscription id**: Make sure the subscription is associated with the tenant connected to the  Azure DevOps organization you are trying to access. If you do not know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
-* [**Azure CLI**](/cli/azure/install-azure-cli)
+You can use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls that don't need a persistent token. 
 
-### Acquiring an access token for a user
+### Acquire user tokens in Azure CLI
 These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/user-aad-token).
 
   1. Sign in to the Azure CLI using the `az login` command. Follow the on-screen instructions to complete signin.
-  2. Set the right correct subscription for the signed-in user by entering the command below:
+  2. Set the right correct subscription for the signed-in user by entering the command below. Make sure the Azure subscription id is associated with the tenant connected to the  Azure DevOps organization you are trying to access. If you do not know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
   ``` bash
   az account set -s <subscription-id>
   ```
@@ -77,10 +76,9 @@ These instructions are provided by the Databricks docs and more details can be f
   -o tsv
   ```
 
-### Acquiring an access token for a service principal
+### Acquire service principal tokens in Azure CLI
 Service principals can also use ad-hoc Microsoft Entra ID access tokens for ad-hoc operations.
 Instructions on how to do so are provided in this section in the guide to [service principals and managed identities](service-principal-managed-identity.md#b-acquire-a-microsoft-entra-id-token-with-the-azure-cli).
 
-## Using Microsoft Entra tokens for Git
-
+### Git operations with Git Credential Manager
 Microsoft Entra tokens can also be used to perform Git operations. For those regularly pushing to git repositories, [using the Git Credential Manager](../../../repos/git/set-up-credential-managers.md) offers a simple way to request and manage one's Microsoft Entra OAuth token credentials, so long as `oauth` is set as the default `credential.azReposCredentialType`.
