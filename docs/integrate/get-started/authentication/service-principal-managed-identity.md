@@ -172,13 +172,13 @@ Follow along with these examples by finding the app code in our [collection of s
 
 #### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
-A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). Improperly stored PATs can fall into the wrong hands and last the duration of its often longer lifespan. Microsoft Entra tokens expire every hour, limiting the overall risk factor when leaked. For common PAT scenarios, we [share some examples on hopw you might explore using a Microsoft Entra token instead](entra.md).
+A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). Improperly stored PATs can fall into the wrong hands and last the duration of its often longer lifespan. Microsoft Entra tokens expire every hour, limiting the overall risk factor when leaked. For common PAT scenarios, we [share some examples on hopw you might explore using a Microsoft Entra token instead](entra.md#replacing-pats-with-microsoft-entra-tokens).
 
 You can't use a service principal to create a personal access token.
 
 #### Q: What are the rate limits on service principals and managed identities?
 
-A: At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
+A: Service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
 #### Q: Will using this feature cost more?
 
