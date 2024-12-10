@@ -60,7 +60,7 @@ Meanwhile, Microsoft Entra tokens only last for one hour before they must be ref
 
 ### Ad-hoc requests to Azure DevOps REST APIs
 
-You can use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls that don't need a persistent token. 
+You can use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users to call [Azure DevOps REST APIs](/rest/api/azure/devops/). Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls that don't need a persistent token. 
 
 #### Acquire user tokens in Azure CLI
 Credit to these instructions go to the [Databricks docs](/azure/databricks/dev-tools/user-aad-token).
