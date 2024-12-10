@@ -58,7 +58,7 @@ If you're looking to build an application to act on-behalf-of itself, then look 
 You can use the Azure CLI to get Microsoft Entra ID access tokens for users. Since Entra access tokens only live for one hour, this is ideal for quick ad-hoc operations, like API calls or git clone operations that don't need a persistent token. 
 
 ### Prerequisites
-* **Azure subscription id**: Make sure the subscription is associated with the tenant connected to the  Azure DevOps organziation you are trying to access. If you do not know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+* **Azure subscription id**: Make sure the subscription is associated with the tenant connected to the  Azure DevOps organization you are trying to access. If you do not know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
 * [**Azure CLI**](/cli/azure/install-azure-cli)
 
 ### Acquiring an access token for a user
