@@ -97,6 +97,9 @@ If you want to publish your packages using Azure Pipelines, use the [NuGet Authe
 
 A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Signing in once every 30 days is sufficient for many users, but you might need to sign in more frequently depending on your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization and complete the full authentication prompt. If your PAT still doesn't work, check if it expired.
 
+Some known reasons why PATs might fail:
+* Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server: see [Using IIS Basic Authentication with Azure DevOps on-premises](iis-basic-auth.md).
+
 ### Q: How do I create access keys that aren't tied to a specific person for deployment purposes?
 
 A: In Azure DevOps, you can create access keys that aren't tied to a specific person by using Service Principals or Manage Identities. For more information, see [Manage service connections](../../pipelines/library/service-endpoints.md), [Use Azure Key Vault secrets in Azure Pipelines](../../pipelines/release/azure-key-vault.md).
