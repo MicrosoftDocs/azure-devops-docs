@@ -35,7 +35,7 @@ Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to aut
 
 ### Microsoft Entra ID OAuth
 
-Building on a new platform can be overwhelming. In [this guide to building a Microsoft Entra app for Azure DevOps](entra-oauth.md), we collect helpful links that might be useful to kicking off the OAuth app development process on Microsoft Entra. For folks migrating from Azure DevOps OAuth to Microsoft Entra OAuth, we provide helpful tips to consider during your migration effort.
+Building on a new platform can be overwhelming. In [this guide to building a Microsoft Entra app for Azure DevOps](entra-oauth.md), we collect helpful links that might be useful to kicking off the OAuth app development process on Microsoft Entra. For folks migrating from Azure DevOps OAuth to Microsoft Entra OAuth, we offer tips to consider during your migration effort.
 
 ### Azure DevOps OAuth
 
