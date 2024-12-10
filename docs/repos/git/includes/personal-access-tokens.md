@@ -74,67 +74,14 @@ If you get an unexpected PAT notification, it might mean that an administrator o
 
 ## Use a PAT
 
-Your PAT serves as your digital identity, much like a password.
+Your PAT serves as your digital identity, much like a password. PATs may be used as a quick way to do one-off requests or prototype an application locally. 
 
-**Git**
-
-Git interactions require a username, which can be anything except an empty string. To use a PAT with HTTP basic authentication, `Base64-encode` your `$MyPat` as shown in the following code block.
-
-#### [Windows](#tab/Windows/)
-
-In PowerShell, enter the following code.
-
-```powershell
-$MyPat = 'yourPat'
-$headerValue = "Authorization: Basic " + [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":" + $MyPat))
-$env:GIT_AUTH_HEADER = $headerValue
-
-git --config-env=http.extraheader=GIT_AUTH_HEADER clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
-```
-
-Use credential managers to avoid entering your credentials every time and keep your token more secure:
-
-- Use [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
-- Install [Git for Windows](https://www.git-scm.com/download/win).
-
-#### [Linux/macOS](#tab/Linux/)
-
-In Bash, enter the following code.
-
-```bash
-MY_PAT=yourPAT # replace "yourPAT" with "PatStringFromWebUI"
-export HEADER_VALUE=$(echo -n "Authorization: Basic "$(printf ":%s" "$MY_PAT" | base64))
-
-git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
-```
-
-To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
-
-***
-
-### Existing repositories
-
-- **Remove existing origin:** If you previously added the origin using a username, remove it by running the following command:
-
-   ``git remote remove origin``
-
-- **Authenticate with a PAT:** If you encounter issues with standard authentication, run the following command to authenticate via the command line:  
-
-   ``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<project-name>/_git/<repo_name>``
-
-   ``git push -u origin --all``
-
-   The `path to git repo = /_git/do` refers to the URL path structure used in Azure DevOps for Git repositories. The `/_git/` segment indicates that you're accessing a Git repository, and you should replace `do` with the actual name of your repository. For example, if your repository is named `my-repo`, the path would be '`/_git/my-repo`'.
-
-- **Clone repository:** If you're using Git and need to authenticate, run the following command:
-
-   ``git clone https://{organization}@dev.azure.com/{organization}/_git/{repository}``
-
-   Replace `{organization}` with your Azure DevOps organization name and `{repository}` with the name of your repository.
+> [!IMPORTANT]
+> When your code is working, it's a good time to switch from basic auth to [Microsoft Entra OAuth](../../../integrate/get-started/authentication/entra-oauth.md). Microsoft Entra tokens can be used anywhere a PAT is used, unless specified below.
 
 ### Use a PAT in your code
 
-You can use a PAT in your code to authenticate API requests and automate workflows. To do so, include the PAT in the authorization header of your HTTP requests.
+You can use a PAT in your code to authenticate [REST APIs](/rest/api/azure/devops) requests and automate workflows. To do so, include the PAT in the authorization header of your HTTP requests.
 
 #### [Windows](#tab/Windows/)
 
@@ -230,12 +177,10 @@ curl -u :{PAT} https://dev.azure.com/{organization}/_apis/build-release/builds
 
 ***
 
-When your code is working, it's a good time to switch from basic auth to [OAuth](../../../integrate/get-started/authentication/oauth.md).
+Some more examples of how to use PATs can be found in the following articles:
 
-For more information and examples of how to use PATs, see the following articles:
-
-- [Set up Git credential managers](../set-up-credential-managers.md)
-- [Access REST APIs](/rest/api/azure/devops)
+- [Authenticate with your Git repos](../auth-overview.md)
+- [Set up Git credential managers (GCM) to connect with Git repositories](../set-up-credential-managers.md)
 - [Use NuGet on a Mac](../../../artifacts/nuget/consume.md)
 - [Authenticate reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
 - [Get started with Azure DevOps CLI](../../../cli/index.md)
