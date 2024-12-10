@@ -16,6 +16,9 @@ Get started with Azure Pipelines by converting your existing Classic pipeline to
 
 When you convert your Classic pipeline, the end product is two pipelines. You'll have one new YAML pipeline and a Classic pipeline that can be retired. Your Classic pipeline's run history remains in the Classic pipeline. 
 
+> [!NOTE]
+> You can only export a YAML file from an existing Classic pipeline created with the classic build designer. If you don't see the option to export to JSON or YAML, then your pipeline doesn't support exporting. Classic release pipelines don't have the export to YAML option. You can export a classic release pipeline by exporting each individual task. 
+
 ## Prerequisites
 
 Make sure you have the following items before you begin.
@@ -58,9 +61,6 @@ Do the following steps to create a sample YAML pipeline, which you'll update lat
 ## Export your Classic pipeline
 
 Do the following steps to export your Classic pipeline to a YAML file that you can use in the editor. 
-
-> [!NOTE]
-> You can only export a YAML file from an existing Classic pipeline created with the classic build designer. If you don't see the option to export to JSON or YAML, then your pipeline doesn't support exporting. Classic release pipelines don't have the export to YAML option. You can export a classic release pipeline by exporting each individual task. 
 
 1. Go to **Pipelines** > **Pipelines**. 
  
