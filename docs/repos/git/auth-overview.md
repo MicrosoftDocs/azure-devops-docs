@@ -20,9 +20,9 @@ Always revoke credentials when they're no longer required to maintain the securi
 
 ## Authentication mechanisms
 
-### OAuth
+### Microsoft Entra OAuth tokens
 
-Use [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). Microsoft Entra tokens can be used wherever personal access tokens are used.
+Use [Microsoft Entra](../../integrate/get-started/authentication/entra.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). Microsoft Entra tokens can be used wherever personal access tokens are used.
 
 ### Personal access tokens
 
