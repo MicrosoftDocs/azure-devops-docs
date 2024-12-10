@@ -83,4 +83,4 @@ Instructions on how to do so are provided in this section in the guide to [servi
 
 ## Using Microsoft Entra tokens for Git
 
-Microsoft Entra tokens can also be used to perform Git operations. For those regularly pushing to git repositories, [using the Git Credential Manager](/repos/git/set-up-credential-managers) offers a simple way to request and manage one's Microsoft Entra OAuth token credentials, so long as `oauth` is set as the default `credential.azReposCredentialType`.
+Microsoft Entra tokens can also be used to perform Git operations. For those regularly pushing to git repositories, [using the Git Credential Manager](../../repos/git/set-up-credential-managers) offers a simple way to request and manage one's Microsoft Entra OAuth token credentials, so long as `oauth` is set as the default `credential.azReposCredentialType`.
