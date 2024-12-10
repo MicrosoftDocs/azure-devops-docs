@@ -138,7 +138,7 @@ If you're using an older version of NuGet, follow the instructions below to conn
 
 ::: moniker-end
 
-[!INCLUDE [](includes/nuget/auth-with-sp.md)]
+[!INCLUDE [](../includes/nuget/auth-with-sp.md)]
 
 ## Related articles
 
