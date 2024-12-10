@@ -98,4 +98,3 @@ Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid e
 - [Use Git Credential Manager to authenticate to Azure Repos](set-up-credential-managers.md)
 - [About security, authentication, and authorization in Azure DevOps](../../organizations/security/about-security-identity.md)
 - [About permissions and security groups in Azure DevOps](../../organizations/security/about-permissions.md)
-- 
