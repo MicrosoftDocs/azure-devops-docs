@@ -60,9 +60,8 @@ You can also provide a [service principal](../../integrate/get-started/authentic
 
 You must also set at least one authentication mechanism if you set this value:
 * [credential.azreposServicePrincipalSecret](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalsecret)
-* [credential.azreposServicePrincipalCertificateThumbprint](git config --global credential.azreposServicePrincipalCertificateThumbprint "9b6555292e4ea21cbc2ebd23e66e2f91ebbe92dc")
-* [credential.azreposServicePrincipalCertificateSendX5C](credential.azreposServicePrincipalCertificateSendX5C)
-
+* [credential.azreposServicePrincipalCertificateThumbprint](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatethumbprint)
+* [credential.azreposServicePrincipalCertificateSendX5C](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatesendx5c)
 
 ### Getting help
 
