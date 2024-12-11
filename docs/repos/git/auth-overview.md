@@ -22,12 +22,21 @@ Always revoke credentials when they're no longer required to maintain the securi
 
 ### Microsoft Entra OAuth tokens
 
-Use [Microsoft Entra](../../integrate/get-started/authentication/entra.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). Microsoft Entra tokens can be used wherever personal access tokens are used.
+Use [Microsoft Entra](../../integrate/get-started/authentication/entra.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). Microsoft Entra tokens can be used wherever personal access tokens are used. Here's a helpful tip on how to get a one-time access token from the Azure CLI to call git fetch:
+
+```powershell
+$accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+git -c http.extraheader="AUTHORIZATION: bearer $accessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
+```
+
+>[!TIP]
+> Look into the [Git Credential Manager (GCM)](set-up-credential-managers.md) instead to avoid entering your credentials everytime. Use GCM with default credential type as `Oauth` to generate Microsoft Entra tokens.
 
 ### Personal access tokens
 
 [Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) provide access to Azure DevOps without using your username and password directly. These tokens expire and allow you to restrict the scope of the data they can access.
-Use PATs to authenticate if you don't have SSH keys set up on your system or need to limit the permissions granted by the credential. If you are using PATs regularly, look into the [Git Credential Manager (GCM)](set-up-credential-managers.md) instead to avoid entering your credentials everytime. Even better, explore using GCM with Microsoft Entra tokens instead of PATs whenever possible.
+
+Use PATs to authenticate if you don't have SSH keys set up on your system or need to limit the permissions granted by the credential.
 
 Git interactions require a username, which can be anything except an empty string. To use a PAT with HTTP basic authentication, `Base64-encode` your `$MyPat` as shown in the following code block.
 
@@ -54,7 +63,9 @@ export HEADER_VALUE=$(echo -n "Authorization: Basic "$(printf ":%s" "$MY_PAT" | 
 git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
-***
+>[!TIP]
+> If you are using PATs regularly, look into the [Git Credential Manager (GCM)](set-up-credential-managers.md) instead to avoid entering your credentials everytime. Even better, explore using GCM with default credential type as `Oauth` to generate Microsoft Entra tokens instead of PATs whenever possible.
+
 
 ### SSH keys
 
