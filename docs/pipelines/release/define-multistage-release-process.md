@@ -1,5 +1,5 @@
 ---
-title: DeCreate a multi-stage release pipeline
+title: Create a multi-stage release pipeline
 description: Learn how to create a multi-stage Classic release pipeline for your ASP.NET Core app using Azure Pipelines.
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.topic: tutorial
