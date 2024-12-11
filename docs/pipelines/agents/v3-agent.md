@@ -46,11 +46,13 @@ The following operating systems are supported by the 3.x agent.
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+    * macOS 15.0 "Sequoia"
   * ARM64
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+    * macOS 15.0 "Sequoia"
 * **Windows**
   * Client OS
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)

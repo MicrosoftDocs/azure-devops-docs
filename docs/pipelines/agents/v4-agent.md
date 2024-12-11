@@ -37,12 +37,10 @@ The following operating systems are supported by the 4.x agent.
     * [Alpine Linux](https://alpinelinux.org/) 3.17 to 3/20
 * **macOS**
   * x64
-    * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
     * macOS 15.0 "Sequoia"
   * ARM64
-    * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
     * macOS 15.0 "Sequoia"
