@@ -23,11 +23,11 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
+
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
+
 - A Classic release pipeline that contains at least one stage. If you don't already have one, [Create a Classic release](releases.md).
-
-- [Azure subscription](https://azure.microsoft.com/free/).
-
-- [Azure App Service](azure/app-service/getting-started).
 
 ## Set up continuous deployment triggers
 
