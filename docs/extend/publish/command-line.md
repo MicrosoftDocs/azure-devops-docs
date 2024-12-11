@@ -18,7 +18,7 @@ You can use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your ex
 
 For more information, see the overview of [publish, install, and share](./overview.md).
 
-## Prerequisites
+### Prerequisites
 
 Get the TFX CLI from Node Package Manager and generate a Microsoft Entra token or a personal access token (PAT). Also, if you haven't already, set up a Publisher in the Gallery.
 
@@ -50,7 +50,7 @@ Once TFX CLI is installed and you have your token, you can use the tool to packa
 tfx extension publish --publisher <YOUR_PUBLISHER_ID> --manifest-js <YOUR_EXTENSION_MANIFEST> --share-with <ACCOUNT_NAME>
 ```
 
-### Potential Errors
+## Potential Errors
 
 You may receive the following error if your extension has already been published:
 
