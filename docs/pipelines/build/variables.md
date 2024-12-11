@@ -154,7 +154,7 @@ The value depends on what caused the build and are specific to Azure Repos repos
 
 ## Ask Copilot to generate variable usage examples
 
-You can use [Copilot](/copilot/) to generate an example pipeline stage condition that uses the `Agent.JobStatus` variable.  
+You can use [Copilot](/copilot/) to generate an example pipeline snippets that take advantage of variables. For example, you can use Copilot to generate a stage condition that uses the `Agent.JobStatus` variable.  
 
 > [!NOTE]
 > GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
