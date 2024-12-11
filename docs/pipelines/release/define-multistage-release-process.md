@@ -75,54 +75,39 @@ Adding approvals ensures that all criteria are met before deploying to the next 
 
 ## Create a release
 
-Now that the release pipeline setup is complete, it's time to start the deployment. To do this, we'll manually create a new release. Usually a release is created automatically when a new build artifact is available. However, in this scenario we'll create it manually.
+In this example we'll manually create a new release. Usually a release is created automatically when a new build artifact is available. However, in this scenario we'll create it manually.
 
-1. Select the **Release** drop-down list and choose **Create release**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-   ![create a new release](media/define-multistage-release-process/create-release.png)
+1. Select **Azure Pipelines** > **Releases**, select your release pipeline, and then select **Edit**.
 
-1. Enter a description for your release, check that the correct artifacts are selected, and then select **Create**.
+1. Select the **Release** drop-down menu and choose **Create release**.
 
-   ![create a new release panel](media/define-multistage-release-process/queue-release.png)
+1. Enter a description for the release, verify that the correct artifacts are selected, and then select **Create**.
 
-1. A banner will appear indicating that a new release has been created. Select the release link to see more details.
+1. A banner will appear indicating that a new release has been created. Select the release link to see more details. The release summary page will display the deployment status for each stage.
 
-   ![release created successfully](media/define-multistage-release-process/release-link.png)
+1.The user(s) you added as approvers will receive an approval request. To approve, they can add a brief comment and select **Approve**.
 
-1. The release summary page will show the status of the deployment to each stage.
-
-   ![deployment status](media/define-multistage-release-process/approval-waiting.png)
-
-   Other views, such as the list of releases, also display an icon that indicates approval is pending. The icon shows a pop-up containing the stage name and more details when you point to it. This makes it easy for an administrator to see which releases are awaiting approval, as well as the overall progress of all releases.    
-
-   ![releases list view](media/define-multistage-release-process/list-approval-waiting.png)
-
-1. Select the _pending_approval_ icon to open the approval window panel. Enter a brief comment, and select **Approve**.
-
-   ![approving deployment](media/define-multistage-release-process/approve-dialog.png)
+    :::image type="content" source="media/define-multistage-release-process/approve-dialog.png" alt-text="A screenshot displaying how to approve deployment requests in a Classic release pipeline.":::
 
 > [!NOTE]   
-> You can schedule deployment at a later date, for example during non-peak hours. You can also reassign approval to a different user. Release administrators can access and override all approval decisions.
-
-<a name="monitor-track"></a>
+> Release administrators can access and override all approval decisions.
 
 ## Monitor and track deployments
 
-Deployment logs help you monitor and debug the release of your application. To check the logs of our deployment follow the steps below:
+Deployment logs allow you to monitor and troubleshoot the release of your application. Follow the steps below to check the logs for your deployment:
 
-1. In the release summary, hover over a stage and select **Logs**.
-
-   ![deployment logs](media/define-multistage-release-process/open-logs-page.png)
-
-   During deployment, you can still access the logs page to see the live logs of every task.
+1. In the release summary, hover over a stage and select **Logs**. You can also access the logs page during deployment to see the live logs of each task.
    
-1. Select any task to see the logs for that specific task. This makes it easier to trace and debug deployment issues. You can also download individual task logs, or a zip of all the log files.
-
-   ![downloading logs](media/define-multistage-release-process/download-logs.png)
+1. Select any task to view its specific logs. You can also download individual task logs or a zip of all the log files.
 
 1. If you need additional information to debug your deployment, you can [run the release in debug mode](../../pipelines/release/variables.md#run-a-release-in-debug-mode).
 
-## Next step
+    :::image type="content" source="media/define-multistage-release-process/download-logs.png" alt-text="A screenshot displaying deployment logs in a Classic release pipeline.":::
+    
+## Related content
 
-> [!div class="nextstepaction"]
-> [Use approvals and gates to control your deployment](deploy-using-approvals.md)
+- [Use approvals and gates to control your deployment](deploy-using-approvals.md)
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
+- [Deploy from multiple branches](deploy-multiple-branches.md)
