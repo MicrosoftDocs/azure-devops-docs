@@ -156,13 +156,13 @@ The value depends on what caused the build and are specific to Azure Repos repos
 
 Use [Copilot](/copilot/) to generate pipeline snippets that use variables. For example, you can use Copilot to generate a stage with a condition that uses the `Agent.JobStatus` variable.  
 
-> [!NOTE]
-> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
-
 The following text shows an example prompt for Copilot:
 
 > How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?
 
 You can customize the prompt to use values that meet your requirements. For example, you can ask for help creating a stage that only runs when a pipeline fails. 
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
 
 ::: moniker-end
