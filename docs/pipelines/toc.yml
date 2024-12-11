@@ -409,6 +409,9 @@
       - name: Create a Classic release
         displayName: release artifacts, deployment artifacts
         href: release/releases.md
+      - name: Create a multi-stage release
+        displayName: classic release, classic deployment
+        href: release/define-multistage-release-process.md
       - name: Artifact sources
         displayName: artifacts, source, release artifacts
         href: release/artifacts.md
@@ -427,9 +430,6 @@
       - name: Deploy to a Windows VM
         displayName: windows vm, deployment vm
         href: release/deploy-webdeploy-iis-deploygroups.md
-      - name: Classic release pipelines
-        displayName: classic release, classic deployment
-        href: release/define-multistage-release-process.md
       - name: Stage templates in Azure Pipelines
         displayName: environment, templates, stages
         href: release/env-templates.md

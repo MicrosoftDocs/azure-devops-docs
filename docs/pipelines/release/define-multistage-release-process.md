@@ -27,7 +27,7 @@ In this tutorial, you'll learn how to:
 
 - [Azure subscription](https://azure.microsoft.com/free/).
 
-- [Azure App Service](azure/app-service/getting-started?pivots=stack-net).
+- [Azure App Service](azure/app-service/getting-started).
 
 ## Set up continuous deployment triggers
 
@@ -87,7 +87,7 @@ In this example we'll manually create a new release. Usually a release is create
 
 1. A banner will appear indicating that a new release has been created. Select the release link to see more details. The release summary page will display the deployment status for each stage.
 
-1.The user(s) you added as approvers will receive an approval request. To approve, they can add a brief comment and select **Approve**.
+1. The user(s) you added as approvers will receive an approval request. To approve, they can add a brief comment and select **Approve**.
 
     :::image type="content" source="media/define-multistage-release-process/approve-dialog.png" alt-text="A screenshot displaying how to approve deployment requests in a Classic release pipeline.":::
 
