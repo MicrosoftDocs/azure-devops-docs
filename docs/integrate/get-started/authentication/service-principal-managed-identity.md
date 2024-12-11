@@ -157,9 +157,9 @@ Another example demonstrates how to connect to Azure DevOps using a User Assigne
 Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
 
 Some common scenarios for authenticating with service principals besides making Azure DevOps REST API calls can be found in these resources:
-* Connect your service principal to a Nuget feed with [Nuget.exe](../../../artifacts/nuget/nuget-exe) or [dotnet](../../../artifacts/nuget/dotnet-setup).
-* [Publish extensions to the Visual Studio Marketplace via command line](../../../extend/publish/command-line) with your service principal.
-* Create [secret-free service connections in Azure Pipelines](../../../pipelines/library/connect-to-azure) backed by service principals or managed identities
+* Connect your service principal to a Nuget feed with [Nuget.exe](../../../artifacts/nuget/nuget-exe.md) or [dotnet](../../../artifacts/nuget/dotnet-setup.md).
+* [Publish extensions to the Visual Studio Marketplace via command line](../../../extend/publish/command-line.md) with your service principal.
+* Create [secret-free service connections in Azure Pipelines](../../../pipelines/library/connect-to-azure.md) backed by service principals or managed identities.
 * [Clone repos using a service principal with Git Credential Manager](../../../repos/git/set-up-credential-managers.md)
 
 ## How do service principals differ from users
