@@ -24,7 +24,7 @@ This article guides you through the setup and configuration for using Azure Pipe
 
 ::: moniker-end
 
-You learn how to create a YAML pipeline to build and push a Docker image to a container registry using he Docker@2 task.
+You learn how to create a YAML pipeline to build and push a Docker image to a container registry using the Docker@2 task.
 
 ## Prerequisites
 
