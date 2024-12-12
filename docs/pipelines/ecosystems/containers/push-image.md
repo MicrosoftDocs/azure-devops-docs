@@ -41,11 +41,11 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
     - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.
     - A [GitHub service connection](../../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.
 - **Azure:**
-  If you're deploying to Azure:
+    If you're deploying to Azure:
     - An [Azure subscription](https://azure.microsoft.com/free/).
     - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
 - **Docker Hub:**
-  If you're deploying to Docker Hub:
+    If you're deploying to Docker Hub:
     - A [Docker Hub](https://hub.docker.com/) account.
     - A [Docker Hub](https://hub.docker.com/) image repository.
 
