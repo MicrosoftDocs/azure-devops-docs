@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 11/18/2024
+ms.date: 12/12/2024
 ---
 
 # Security best practices
@@ -206,7 +206,7 @@ For more information, see [Manage PATs with policies - for administrators](../ac
 
 - [Use extends templates](../../pipelines/security/templates.md#use-extends-templates).
 - [Set pipeline permissions](../../pipelines/policies/permissions.md)
-- [Secure Azure Pipelines overview](../../pipelines/security/overview.md).
+- **Adopt and Secure Infrastructure as Code (IaC):** Use IaC tools like Azure Resource Manager (ARM) templates or Bicep to define and provision infrastructure directly from your pipeline. Leverage version control to track changes, implement linting and static analysis to identify vulnerabilities, and use Azure Policy to enforce compliance and security standards during pipeline execution. For more information, see [Secure Azure Pipelines overview](../../pipelines/security/overview.md).
 
 ### Policies
 
