@@ -20,26 +20,19 @@ With the PAT Lifecycle Management API, you can easily manage the PATs associated
 
 In this article, we show you how to configure an application that [authenticates with a Microsoft Entra token](../../integrate/get-started/authentication/entra-oauth.md) and makes calls with the PAT Lifecycle API.
 
-## Prerequisites
-
-* [Have a Microsoft Entra tenant with an active Azure subscription.](/azure/active-directory/develop/quickstart-create-new-tenant)
-* * **Permissions:** Depending on your tenant's security policies, your application might need permissions to access resources in the organization. Request a tenant administrator to grant permission to the app to use it within your tenant.
-
 > [!IMPORTANT]
 > You can't use service principals or managed identities to create or revoke PATs.
 
-<a name='authenticate-with-azure-active-directory-azure-ad-tokens'></a>
-
-## Authenticate with Microsoft Entra tokens
+## Prerequisites
 
 Unlike other Azure DevOps Services APIs, users must provide an [Microsoft Entra access token](../../integrate/get-started/authentication/entra-oauth.md) to use this API. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is available only to [safer Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md). 
 
-### Prerequisites
 To acquire and refresh Microsoft Entra access tokens, you must do the following:
 
 * [Have a Microsoft Entra tenant with an active Azure subscription](/azure/active-directory/develop/quickstart-create-new-tenant)
 * [Register an application in their Microsoft Entra tenant](/azure/active-directory/develop/quickstart-register-app)
 * [Add Azure DevOps permissions to the application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+* Get consent from tenant admin: Depending on your tenant's security policies, your application might need permissions to access resources in the organization. Request a tenant administrator to grant permission to the app to use it within your tenant.
 
 > [!IMPORTANT]
 > "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue a Microsoft Entra access token is not valid for use with this API.  If multi-factor authentication is enabled in your Microsoft Entra tenant, you must definitely use the ["authorization code” flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
