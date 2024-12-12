@@ -30,22 +30,12 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 
 ::: moniker range="azure-devops"
 
-- **Project requirements:** An [Azure DevOps project](../../../organizations/projects/create-project.md).
-- **Permissions:**   
-    - Be a member of the [**Project Administrators** group](../../../organizations/security/change-project-level-permissions.md).
-    - The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
-- **Subscriptions:** 
-    - A GitHub account. If you don't have one, you can create one for free at [GitHub](https://github.com).
-    - If using a Azure Container Registry: An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/free/) if you don't have one already.
-    - If using a Docker Hub: You need a Docker Hub account. If you don't have one, you can create one for free at [Docker Hub](https://hub.docker.com/).
-- **Repository:** A GitHub repository with a Dockerfile. If you don't have one, you can use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker)
-- **Container registry:** 
-    - A container registry ([Docker Hub](https://hub.docker.com/) or, 
-    - [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
-- **Service connection:** A GitHub service connection. If you don't have one, you can create one in your Azure DevOps project settings. For more information to create a service connection, see [Service connections](../../library/service-endpoints.md#github-service-connection).
-- **Software requirements:**
-  - Docker. If using a self-hosted agent, ensure Docker is installed and the Docker engine running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.
- 
+| **Product**    | **Requirements**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - If you're using a self-hosted agent, ensure Docker is installed and the Docker engine is running with elevated privileges. Microsoft-hosted agents have Docker preinstalled. |
+| **GitHub**       | - A [GitHub](https://github.com) account.<br>   - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.<br>   - A [GitHub service connection](../../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.                                                                                                                                                  |
+| **Azure**        | - An [Azure subscription](https://azure.microsoft.com/free/).<br>   - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).                                                                                                                                                                                                                                                                                                                                 |
+| **Docker Hub**   | - A [Docker Hub](https://hub.docker.com/) account.<br>   - A [Docker Hub](https://hub.docker.com/) image repository.                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ::: moniker-end
 ::: moniker range="< azure-devops"
