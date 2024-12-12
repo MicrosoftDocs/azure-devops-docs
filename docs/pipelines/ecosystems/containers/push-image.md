@@ -24,7 +24,7 @@ This article guides you through the setup and configuration for using Azure Pipe
 
 ::: moniker-end
 
-You learn how to create a YAML pipeline to build and push a Docker image to a container registry using the Docker@2 task.
+You learn how to create a YAML pipeline to build and push a Docker image to a container registry using he Docker@2 task.
 
 ## Prerequisites
 
@@ -32,21 +32,20 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 
 - **Azure DevOps:** 
     - An [Azure DevOps project](../../../organizations/projects/create-project.md).
-    - **Permission:** To grant access to all pipelines in the project: 
-        - You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).
-    - **Permission:** To create service connections:
-        - You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md). 
+      - **Permissions:** 
+          - To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).
+          - To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md). 
     - If you're using a self-hosted agent, ensure Docker is installed and the Docker engine is running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.
 - **GitHub:**   
     - A [GitHub](https://github.com) account.
     - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.
     - A [GitHub service connection](../../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.
 - **Azure:**
-    - If you're deploying to Azure:
+  If you're deploying to Azure:
         - An [Azure subscription](https://azure.microsoft.com/free/).
         - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
 - **Docker Hub:**
-    - If you're deploying to Docker Hub:
+  If you're deploying to Docker Hub:
         - A [Docker Hub](https://hub.docker.com/) account.
         - A [Docker Hub](https://hub.docker.com/) image repository.
 
