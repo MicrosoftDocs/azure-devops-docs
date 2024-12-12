@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019' 
-ms.date: 09/18/2024
+ms.date: 12/12/2024
 #customer intent: As a team member or leader, I want to monitor sprint burndown information to see whether my team is on track to complete our sprint plan.
 ---
 
