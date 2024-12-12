@@ -75,7 +75,7 @@ A healthy sprint burndown report looks something like the image shown here. The 
 | Element | Description |
 |:--------|:------------|
 | **Date range** | The  start and end date of the sprint. |
-| **Stories Remaining** | The number of stories remaining in the sprint. If you choose a different work item type the remaining number of those work items is shown. |
+| **Stories Remaining** | The number of stories remaining in the sprint. If you choose a different work item type, the remaining number of those work items is shown. |
 | **Completed** | The percentage of work completed based on original scope. Select **Completed** to see the full list of completed work items. |
 | **Average burndown** | Average work completed. |
 | **Total Scope Increase** | Shows the change in how much work from the original scope since the burndown started. The example shows that six work items were removed. |
@@ -128,7 +128,7 @@ The Analytics-based Sprint Burndown widget provides an easy way to monitor progr
 | Element | Description |
 |:--------|:------------|
 | **Date range** | The  start and end date of the sprint. |
-| **Tasks Remaining** | The number of tasks remaining in the sprint. If you choose a different work item type the remaining number of those work items is shown. |
+| **Tasks Remaining** | The number of tasks remaining in the sprint. If you choose a different work item type, the remaining number of those work items is shown. |
 | **Completed** | The percentage of work completed based on original scope. Select **Completed** to see the full list of completed work items. |
 | **Average burndown** | Average work completed. |
 | **Total Scope Increase** | Shows the change in how much work from the original scope since the burndown started. The example shows that four work items were added to the sprint. |
@@ -186,9 +186,9 @@ To monitor sprint burndown, your team must [schedule sprints](../../boards/sprin
 
 ### Recommended activities
 
-- Define tasks that take a day or less to complete to decrease the effect of poor estimates.  
+- To decrease the effect of poor estimates, define tasks that take a day or less to complete.  
 - Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.
-- Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
+- To support monitoring and achieve a smoother burndown chart, update Remaining Work daily or several times within a week.  
 - At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
 
 <a id="empty-chart">  </a>
@@ -197,8 +197,8 @@ To monitor sprint burndown, your team must [schedule sprints](../../boards/sprin
 
 If your sprint burndown chart appears empty, check these points:
 
-- Have you assigned tasks to the sprint associated with the chart?
-- Have you assigned Remaining Work to the tasks assigned to the sprint?
+- Did you assign tasks to the sprint associated with the chart?
+- Did you assign Remaining Work to the tasks assigned to the sprint?
 - Are the parent work items of the tasks assigned to the same sprint? If not, the tasks might appear in another sprint associated with the parent item.
 
 <a id="open-chart">  </a>
@@ -225,7 +225,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
     :::image type="content" source="../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png" alt-text="Screenshot shows the option to select another sprint in Azure Boards.":::
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, select **New Sprint** from the menu, and then select **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
+    The system lists only those sprints that are selected for the current team focus. If you don't see the sprints you want listed, select **New Sprint** from the menu, and then select **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 
@@ -247,7 +247,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
     :::image type="content" source="../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png" alt-text="Screenshot shows the option to select another sprint in Azure Boards 2019.":::
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then select **New Sprint** from the menu, and then select **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
+    The system lists only those sprints that are selected for the current team focus. If you don't see the sprints you want listed, then select **New Sprint** from the menu, and then select **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 
