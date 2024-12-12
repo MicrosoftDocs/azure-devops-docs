@@ -39,9 +39,11 @@ The following operating systems are supported by the 4.x agent.
   * x64
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+    * macOS 15.0 "Sequoia"
   * ARM64
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+    * macOS 15.0 "Sequoia"
 * **Windows**
     * Windows 10
       * 21H2, 1809, 1607
