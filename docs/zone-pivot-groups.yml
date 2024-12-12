@@ -40,3 +40,11 @@ groups:
     title: PAT
   - id: managed-identity
     title: Managed identity
+- id: azure-pipelines-docker-acr
+  title: Docker and ACR registries  
+  prompt: Choose a container registry
+  pivots:
+  - id: acr-registry
+    title: ACR registry
+  - id: docker-registry
+    title: Docker registry
