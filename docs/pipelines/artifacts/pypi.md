@@ -25,6 +25,11 @@ Azure Pipelines enables developers to publish Python packages to Azure Artifacts
 
 To publish Python packages using twine, you must first authenticate with your Azure Artifacts feed. The [TwineAuthenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) provides twine credentials to a `PYPIRC_PATH` environment variable. This variable is then used by`twine` to publish packages directly from your pipeline.
 
+> [!IMPORTANT]
+> The credentials stored in the `PYPIRC_PATH` environment variable take precedence over those in the `.ini` and `.conf` files.  
+>
+> If you add multiple *TwineAuthenticate* tasks at different stages in your pipeline, each task execution will extend **(not override)** the existing `PYPIRC_PATH` environment variable.
+
 # [YAML](#tab/yaml)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -57,12 +62,10 @@ To publish Python packages using twine, you must first authenticate with your Az
 
 * * *
 
-> [!IMPORTANT]
-> The credentials stored in the `PYPIRC_PATH` environment variable supersede those in your `.ini` and `.conf` files.  
->
-> If you add multiple TwineAuthenticate tasks at different stages in your pipeline, each additional task execution will extend **(not override)** the existing `PYPIRC_PATH` environment variable.
-
 ## Publish Python packages to a feed
+
+> [!NOTE]
+> To publish your packages to a feed using Azure Pipelines, make sure that both the **Project Collection Build Service** and your project's **Build Service** identities are assigned the **Feed Publisher (Contributor)** role in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for details.
 
 # [YAML](#tab/yaml)
 
@@ -129,11 +132,10 @@ To publish Python packages using twine, you must first authenticate with your Az
 
 * * *
 
-> [!NOTE]
-> To publish your packages to a feed using Azure Pipelines, both the **Project Collection Build Service** and your project's **Build Service** identities must have the **Feed Publisher (Contributor)** role assigned in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for details.
 
-## Related articles
 
-- [Publish and download Python packages CLI](../../artifacts/quickstarts/python-cli.md)
-- [Search for packages in upstream sources](../../artifacts/how-to/search-upstream.md)
-- [Configure permissions](../../artifacts/feeds/feed-permissions.md)
+## Related content
+
+- [Publish and download pipeline artifacts](build-artifacts.md)
+- [Set up upstream sources](../../artifacts/how-to/set-up-upstream-sources.md)
+- [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
