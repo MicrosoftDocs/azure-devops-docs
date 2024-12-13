@@ -199,12 +199,7 @@ sections:
           A: By default, [Access via Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities).    
   
   - name: Change app access policies for your organization
-    questions:
-      - question: |
-          Q: How do personal access tokens differ from alternate authentication credentials?
-        answer: |
-          A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an organization, and to [scopes](../../integrate/index.md) of activities that the token authorizes. For more information, see [Use personal access tokens](use-personal-access-tokens-to-authenticate.md).
-          
+    questions:      
       - question: |
           Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
         answer: |
