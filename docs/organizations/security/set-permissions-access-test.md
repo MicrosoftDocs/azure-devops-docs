@@ -43,19 +43,19 @@ To manage access to manual test features, you can grant specific permissions to 
 ::: moniker range="azure-devops"
  
 - **Access levels**: 
-  - Have **[Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)** access level 
+  - Have **[Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)** access 
   - Or have specific subscriptions like **[Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)**, **[Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)**, or **[MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)**.
 - **Permissions**: 
-  - To manage project or object-level test-related permissions or to permanently delete test artifacts, be part of the **Project Administrators** security group.
-  - To manage access levels or organization-level permissions, be in the **Project Collection Administrators** security group or have your **Edit instance-level information** set to **Allow**.
+  - To manage project or object-level test-related permissions or to permanently delete test artifacts, be a member of the **Project Administrators** security group.
+  - To manage access levels or organization-level permissions, be a member of the **Project Collection Administrators** security group or have your **Edit instance-level information** set to **Allow**.
   
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Access levels**: Be part of the **Azure DevOps Server Administrators** security group.
+- **Access levels**: Be a member of the **Azure DevOps Server Administrators** security group.
 - **Permissions**: 
-  - To manage project or object-level test-related permissions, be part of the **Project Administrators** security group.
-  - To manage collection-level permissions or manage access levels, be part of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
+  - To manage project or object-level test-related permissions, be a member of the **Project Administrators** security group.
+  - To manage collection-level permissions or manage access levels, be a member of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
 
 ::: moniker-end
 

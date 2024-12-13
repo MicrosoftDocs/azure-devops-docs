@@ -25,7 +25,7 @@ With Scrum, teams plan and track work at regular time intervals, referred to as 
 
 ## Prerequisites
 
-* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+**Permissions**: To change sprint dates, be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 <a id="quick-start-schedule">   </a>
 

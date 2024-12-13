@@ -539,6 +539,10 @@
       "redirect_url": "/azure/devops/pipelines/agents/scale-set-agents#orchestration-modes"
     },
     {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
       "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-06.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     }, 
@@ -753,6 +757,10 @@
     {
       "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-01.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/roadmap/2022/resume-test-execution.md",
+      "redirect_url": "/azure/devops/test/"
     }
   ]
 }

@@ -20,6 +20,8 @@ ms.date: 10/03/2024
 
 Your board helps you visualize the flow of work as it moves from defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 ## Types of swimlanes  

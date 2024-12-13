@@ -122,9 +122,9 @@
     - name: Python quickstart
       displayName: python packages, python introduction
       href: quickstarts/python-packages.md
-    - name: Publish and consume Python packages (CLI)
-      displayName: python, publish, download, cli
+    - name: Publish and install Python packages (CLI)
       href: quickstarts/python-cli.md
+      displayName: python, publish, install, cli
     - name: Publish Python packages to a feed (Classic/YAML)
       displayName: python, publish, pipeline, yaml, classic
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
@@ -198,7 +198,7 @@
       href: how-to/search-upstream.md
       displayName: search, upstreams
     - name: Manage dependencies with upstream sources
-      displayName: dependecies, artifacts, upstreams, public package
+      displayName: dependencies, artifacts, upstreams, public package
       href: tutorials/protect-oss-packages-with-upstream-sources.md
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
@@ -215,7 +215,7 @@
     displayName: publish packages, download packages, pipeline artifact
     href: ../pipelines/artifacts/pipeline-artifacts.md
   - name: Pipeline caching
-    displayName: caching, storage, pipeline cach
+    displayName: caching, storage, pipeline cache
     href: ../pipelines/release/caching.md
   - name: Set up retention policies
     displayName: policies, retention, pipeline artifact

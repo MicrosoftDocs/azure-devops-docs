@@ -112,7 +112,7 @@ jobs:
       routeTraffic:
         steps:
         - script: echo routing traffic...   
-      postRouteTaffic:
+      postRouteTraffic:
         steps:          
         - script: echo health check post routing traffic...  
       on:

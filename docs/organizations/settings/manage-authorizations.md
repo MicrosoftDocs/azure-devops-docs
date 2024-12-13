@@ -15,9 +15,16 @@ ms.date: 10/21/2024
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> This article applies to Azure DevOps OAuth authorizations. Azure DevOps OAuth is slated for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/?p=69702).
+> This article applies to Azure DevOps OAuth authorizations. Azure DevOps OAuth is slated for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 You can grant other services access to Azure DevOps using the OAuth 2.0 framework. This secure authorization allows services to access resources like work items, source code, and build results. When authorizing a service, use your Microsoft account (for example, `me@live.com`) or your work account (for example, `me@my-workplace.com`). The authorized service doesn't have access to your Azure DevOps credentials, and you can revoke authorizations as needed.
+
+## Prerequisites
+
+- **Permissions**: 
+  - Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
+  - The service has the Contributor role, or a custom role with similar permissions, on the resources it needs to access.
+- **Service compatibility**: The service you intend to authorize supports OAuth 2.0 integration with Azure DevOps.
 
 ## Authorize a service
 
@@ -33,7 +40,7 @@ A typical authorization flow might be similar to the following example:
 
    :::image type="content" source="../../service-hooks/media/authorize/vso-authorize.png" alt-text="Screenshot of Accept or Deny buttons for authorization of the application.":::
 
-   A service can only request full access through the REST APIs, so the authorization request may not be specific.
+   A service can only request full access through the REST APIs, so the authorization request might not be specific.
 
 4. Review the request and approve the authorization.
 
@@ -68,7 +75,7 @@ Review the services that you granted authorization to access your organization.
 ## Related articles
 
 - [Change application access policies](../accounts/change-application-access-policies.md)
-- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md) 
-- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
-- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
+- [Manage service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)
+- [Add users to a team or project](../../organizations/security/add-users-team-project.md)
+- [Assign users to an administrator role](/azure/devops/server/admin/add-administrator)  

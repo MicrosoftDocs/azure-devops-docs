@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/06/2024
-monikerRange: '>= azure-devops-2022'
+monikerRange: 'azure-devops'
 ---
 
 # Build and publish Docker images to Azure Container Registry

@@ -16,11 +16,15 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In most cases, you can start using your product and portfolio backlogs once your project is created. A default team is created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
+In most cases, you can start using your product and portfolio backlogs once your project is created. A default team gets created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
 
-However, you may need to ensure you've configured your backlogs and boards correctly. Ensure the configuration if you've added a team and want to start using the team backlogs and boards. Changes may be made to a project or team configuration over time. These changes can influence the work items that appear on your backlog and boards. 
+However, you might need to ensure you've configured your backlogs and boards correctly. Ensure the configuration if you've added a team and want to start using the team backlogs and boards. Changes may be made to a project or team configuration over time. These changes can influence the work items that appear on your backlog and boards. 
 
 For an overview of the tools associated with your team, see [Manage and configure team tools](../../organizations/settings/manage-teams.md).
+
+## Prerequisites
+
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Default backlog and board work items
 
@@ -54,7 +58,7 @@ You can determine the work item types that belong to your Requirements category.
 
 
 Look up your team's Area Path(s) and Iteration Paths. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
-[Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+[Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
 
 <a id="sprint"></a>
 
@@ -62,7 +66,7 @@ Look up your team's Area Path(s) and Iteration Paths. For more information, see 
 
 Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with the Iteration Path you select.  
 
-You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
 
 Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.  
 
@@ -145,13 +149,7 @@ For more information about checklists, see the following articles:
 
 ::: moniker-end
 
-
-
-
-
 <a id="customize-checklist-2019"></a>
-
-::: moniker range=">= azure-devops-2019"
 
 ## Add other work item types to your board checklist
 
@@ -161,9 +159,6 @@ For example, here  we've chosen to track bugs along with tasks, and we enable Is
 
 > [!div class="mx-imgBorder"]
 > ![On the settings page, the Annotations tab is selected and five Annotation types (Task, Bug, Tests, Issue, Ticket) are listed. All but Tests are enabled.](media/setup-backlog/annotations-on-prem.png)
-
-::: moniker-end
-
 
 ## Hide or show backlog levels 
 

@@ -38,10 +38,9 @@ To set up sprints yet for your team, see [Manage sprint timelines](define-sprint
 
 ## Prerequisites
 
-- Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-- You must be a member of the **Contributors** or **Project Administrators** security group in your project. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-- To view or set capacity, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-- To set capacity, you must be a member of the team. For more information, see [Add users to a project or team](../../organizations/security/add-users-team-project.md#add-users-to-a-team).
+- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md).
+- **Permissions**: Be a member of the **Contributors** or **Project Administrators** security group in your project. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+- **Access levels**: To view or set capacity, have at least **Basic** access. Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 <a id="customize-activity-list">  </a> 
 
@@ -95,15 +94,15 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= azure-devops-2019"
 
-1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, [team members must be added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, users must be added to the team.  
 
    :::image type="content" source="media/capacity/add-team-members.png" alt-text="Screenshot of Capacity page, Add team members.":::
 
    The **Add all team members** action retrieves a maximum of 100 team members. If you have more team members to add, you can add them one-by-one by choosing **Add user**.
 
-1. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
+2. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
 
-1. Set team member time off. For the entire team days off, choose the **0 days** link as shown.  
+3. Set team member time off. For the entire team days off, choose the **0 days** link as shown.  
 
    :::image type="content" source="media/capacity/team-members-added-set-team-days-off.png" alt-text="Screenshot of setting time off.":::
 
@@ -112,7 +111,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
    > [!TIP]
    > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).
 
-1. Set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned.
+4. Set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned.
 
    For example, Christie Church's capacity is 6 hours/day for design work.
 

@@ -65,7 +65,7 @@ The following permissions are automatically assigned to branch creators: **Contr
 
 
 > [!NOTE]
-> The **Exempt from policy enforcement** permission was removed for Azure DevOps Server 2019 and later versions. It's functionalilty is now supported with the following two permissions: 
+> The **Exempt from policy enforcement** permission was removed for Azure DevOps Server 2019 and later versions. Its functionality is now supported with the following two permissions: 
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**

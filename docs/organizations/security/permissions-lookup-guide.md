@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---
 
-# Permissions lookup guide for Azure DevOps
+# Permissions lookup guide
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -26,20 +26,20 @@ Values in parenthesis indicate what level the permission is managed:
 
 ::: moniker range="azure-devops"
 
-- **Object**: Permissions are managed at the object-level    
-- **Project**: Permissions are managed at the project level
-- **Collection**: Permissions are managed at the organization level  
+- **Object**: Permissions are managed at the object level.    
+- **Project**: Permissions are managed at the project level.
+- **Collection**: Permissions are managed at the organization level.  
 - **Role**: Permissions are managed through a security role.   
 - **Team**: Permissions are managed via the team administrator role.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- **Object**: Permissions are managed at the object-level    
-- **Project**: Permissions are managed at the project level
-- **Collection**: Permissions are managed at the account or project collection level  
+- **Object**: Permissions are managed at the object level.    
+- **Project**: Permissions are managed at the project level.
+- **Collection**: Permissions are managed at the account or project collection level.  
 - **Role**: Permissions are managed through a security role.  
-- **Server**: Permissions are managed at the instance level for a server   
+- **Server**: Permissions are managed at the instance level for a server.   
 - **Team**: Permissions are managed via the team administrator role.
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Values in parenthesis indicate what level the permission is managed:
    ### B
    ::: moniker range=">= azure-devops-2019"
    - [Branches, Git (Object)](../../repos/git/branch-permissions.md)
-   - [Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
+   - [Branches, Team Foundation Version Control (TFVC) (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Build pipelines (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Build quality, manage (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Build queue, manage (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
@@ -113,6 +113,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Collection-level information](change-organization-collection-level-permissions.md)
    - [Configure Azure Boards (Team)](../settings/manage-teams.md)
    - [Create a workspace (Collection)](change-organization-collection-level-permissions.md)
+   - [Create build pipeline (Object)](../../pipelines/policies/pipeline-permissions.md)
    - [Create child nodes (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Create child nodes (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Create new projects (Collection)](change-organization-collection-level-permissions.md)
@@ -327,13 +328,12 @@ Values in parenthesis indicate what level the permission is managed:
    :::column-end:::
 :::row-end:::
 
-
 ## Related articles
 
-- [Grant or restrict permissions to select tasks](restrict-access.md)
-- [Get started with permissions, access, and security groups](about-permissions.md)
-- [About security roles](about-security-roles.md). 
-- [Permissions and groups reference](permissions.md) 
-- [Change project-level permissions](change-project-level-permissions.md)
-- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
-- [Troubleshoot permissions](troubleshoot-permissions.md)
+- Grant or restrict permissions to select tasks using [Grant or restrict permissions to select tasks](restrict-access.md).
+- Get started with permissions, access, and security groups by following [Get started with permissions, access, and security groups](about-permissions.md).
+- Learn [About security roles](about-security-roles.md).
+- Refer to the [Permissions and groups reference](permissions.md) for detailed information.
+- Change project-level permissions with [Change project-level permissions](change-project-level-permissions.md).
+- Modify project collection-level permissions using [Change project collection-level permissions](change-organization-collection-level-permissions.md).
+- Troubleshoot permissions issues by consulting [Troubleshoot permissions](troubleshoot-permissions.md).

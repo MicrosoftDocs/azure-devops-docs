@@ -5,7 +5,7 @@ description: Learn how Scaled Agile Framework concepts map to Azure Boards artif
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
 ---

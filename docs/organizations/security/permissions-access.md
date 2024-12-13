@@ -196,7 +196,7 @@ You can manage feeds from the web portal, **Artifacts**. Users with Stakeholder 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You can manage feeds from the web portal, **Artifacts**. Users with Basic access or higher can access Azure Artifacts features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Artifacts**. Users with at least Basic access can access Azure Artifacts features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
 

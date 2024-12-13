@@ -24,7 +24,7 @@ Dependency scanning generates an alert for any open-source component, direct or 
 
 ### About dependency scanning detection 
 
-A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code (in other words, a new commit) is executed. 
+A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task is executed. 
 
 For every vulnerable component detected in use, the component and vulnerability are listed in the build log and displayed as an alert in the Advanced Security tab. Only advisories that reviewed by GitHub and added to the [GitHub Advisory Database](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/browsing-security-advisories-in-the-github-advisory-database) create a dependency scanning alert. The build log includes a link to the individual alert for further investigation. For more information on the alert detail, view Fixing dependency scanning alerts.  
 
@@ -32,24 +32,7 @@ The build log also contains basic information about each detected vulnerability.
 
 ![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png) 
 
-### Supported package ecosystems 
-
-Dependency scanning supports both direct and transitive dependencies for all supported package ecosystems. 
-
-| Package manager  | Languages  | Supported formats |
-|---|---|---|
-|  Cargo | Rust  | `Cargo.toml`, `Cargo.lock`  | 
-|  CocoaPods | Swift  | `Podfile.lock`  | 
-|  Go modules | Go  | `go.mod`, `go.sum`  | 
-|  Gradle | Java  | `*.lockfile`  | 
-|  Maven | Java  | `pom.xml`  | 
-|  npm | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | 
-|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | 
-|  pip | Python  | `setup.py`, `requirements.txt`  | 
-|  pnpm | JavaScript  | `package.json` | 
-|  RubyGems | Ruby  |  `Gemfile.lock` | 
-|  Yarn | JavaScript  | `package.json`  | 
-
+For a list of supported component ecosystems and versions, see [Supported package ecosystems](./github-advanced-security-dependency-scanning-ecosystems.md).
 
 ### About dependency scanning alerts 
 
@@ -452,7 +435,7 @@ It's recommended to add a comment near the dependency resolution so that anyone 
 ### What if there's no fix available?
 
 When no known fix is available, the following options are available as other methods of remediation until an upgraded component is available: 
-* Stop using the component and remove it from your code - this removal will be detected upon your next build with the dependency scanning task installed 
+* Stop using the component and remove it from your code - this removal is detected upon your next build with the dependency scanning task installed 
 * Contribute a fix to the component itself. If your organization has specific guidelines around open-source contributions, follow those guidelines.
 * Dismissing the alert. However, alerts with no known fix still can pose a security threat to your organization. We recommend that you don't dismiss an alert just because there's no known fix. 
 
@@ -475,79 +458,17 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Managing dependency scanning alerts on pull requests
 
-If alerts are created for new dependency changes in a pull request, the alert will reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab, with a new branch picker result for the pull request branch. 
+If alerts are created for new code changes in a pull request, the alert is reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab. There is a new branch picker entry for the pull request branch.
 
 You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
 
-[![Screenshot of active depenendency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
+[![Screenshot of active dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
 
 To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
 
 [![Screenshot of closed dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning-closed.png)](./media/pull-request-annotation-dependency-scanning-closed.png#lightbox)
 
-To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation will direct you to the alert detail view in the Advanced Security tab. 
+To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation directs you to the alert detail view in the Advanced Security tab. 
 
 > [!TIP]
-> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference.
-
-## Troubleshooting dependency scanning 
-
-### Dependency scanning not identifying any components
-If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task. 
-
-For example, for a C# (.NET Core) project, here is a sample YAML snippet: 
-
->[!div class="tabbedCodeSnippets"]
-```yaml
-- task: DotNetCoreCLI@2
-  displayName: 'Restore NuGet packages'
-  inputs:
-    command: 'restore'
-    projects: '**/*.csproj'
-
-    # If you are using a private package feed such as Azure Artifacts, you will need additional variables.
-    # For more information, see https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines 
-    feedsToUse: 'select'
-    ...
-
-- task: AdvancedSecurity-Dependency-Scanning@1
-```
-
-For a JavaScript project, here is a sample YAML snippet:
->[!div class="tabbedCodeSnippets"]
-```yaml
-- task: Npm@1
-  displayName: 'npm install'
-  inputs:
-    command: 'install'
-    workingDir: '$(System.DefaultWorkingDirectory)'
-
-- task: AdvancedSecurity-Dependency-Scanning@1
-```
-
-### Dependency scanning not picking up new vulnerabilities 
-
-If you are running a new build but not seeing new vulnerabilities as expected, ensure that the build is run with a new commit.
-
-### Dependency scanning task timeout 
-
-The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
-
-To use this variable, add `DependencyScanning.Timeout` as a pipeline variable: 
-
->[!div class="tabbedCodeSnippets"]
-```yaml
-- task: AdvancedSecurity-Dependency-Scanning@1
-- env:
-    DependencyScanning.Timeout: 600
-```
-
-### Break-glass scenario for build task
-
-If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.
-
-### Dependency scanning task permissions
-
-The dependency scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in the same project have access to fetch alerts. If you remove those permissions from the build service account or if you have a custom setup (for example, a pipeline hosted in a different project than the repository), you must grant these permissions manually.
-
-Grant `Advanced Security: View Alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
+> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.

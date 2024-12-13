@@ -2,7 +2,7 @@
 title: Use an index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
 description: Learn how to use an index to query operators, macros, and sample queries that are used to list work items for Azure Boards and Azure DevOps.
-ms.custom: boards-queriess, engagement-fy23
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview 
 ms.author: chcomley
@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/05/2022
 ---
 
-# Use an index to query quick reference data in Azure Boards and Azure DevOps
+# Use an index to query quick reference data
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

@@ -6,6 +6,8 @@
   href: architecture-overview.md
 - name: Prerequisites
   href: prerequisites.md
+- name: Compare with Azure Virtual Machine Scale Set agents
+  href: migrate-from-scale-set-agents.md
 - name: Quickstarts
   items:
   - name: Azure portal
@@ -34,12 +36,16 @@
     href: view-agents.md
   - name: Demands
     href: demands.md
+  - name: Reliability
+    href: reliability-managed-devops-pools.md
 - name: Monitor and troubleshoot
   items:
   - name: Monitor
     href: monitor-pool.md
   - name: Diagnostic logs
     href: diagnostics.md
+  - name: Troubleshooting
+    href: troubleshooting.md
 - name: Manage cost and performance
   items:
   - name: Pricing
@@ -66,5 +72,7 @@
     href: /javascript/api/overview/azure/devops-infrastructure
   - name: Python
     href: /python/api/overview/azure/devops-infrastructure
+  - name: REST
+    href: /rest/api/devopspools
   - name: Terraform
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform

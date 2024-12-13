@@ -146,7 +146,7 @@ sections:
 
       - question: How do I query for a list of related work items?   
         answer:  |
-          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`. However, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecesor-Successor**, and other link types. 
+          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`. However, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecessor-Successor**, and other link types. 
 
       - question: Can I query for work items linked across projects? 
         answer:  |

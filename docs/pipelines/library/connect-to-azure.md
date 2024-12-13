@@ -5,7 +5,7 @@ description: Learn how to use an Azure Resource Manager service connection to co
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 10/16/2024
+ms.date: 10/25/2024
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ---
@@ -14,19 +14,25 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+> [!NOTE]
+>We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
+
+
 An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
 
 ::: moniker range="azure-devops"
-You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. The recommended options are to use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity.  
+You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. 
 
-The recommended Azure Resource Manager service connection options are:
-* App registration (automatic) with a workload identity federation  or a secret 
+Recommended options:
+* [App registration (automatic) with workload identity federation](#create-an-app-registration-with-workload-identity-federation-automatic) 
 * Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). Use this option when you [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
+* [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md). Manual configuration is more time consuming than the automatic configuration and should only be used if you've already tried to automatic option. 
 
-There are other Azure Resource Manager service connection authentication options that aren't included in this article: 
-* [App registration or managed identity (manual) with workload identity federation or a secret](../release/troubleshoot-workload-identity.md)
-* [Agent-assigned managed identity (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity)
-* [Publish profile (not recommended)](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile)
+> [!NOTE]
+> There are other Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases and not recommended. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection to use workload identity federation](#convert-an-existing-service-connection-to-use-workload-identity-federation) first. 
+> * [Automatic app registration with a secret](azure-resource-manager-alternate-approaches.md#create-an-app-registration-with-a-secret-automatic)
+> * [Agent-assigned managed identity](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-to-a-vm-that-uses-a-managed-identity)
+> * [Publish profile](azure-resource-manager-alternate-approaches.md#create-an-azure-resource-manager-service-connection-using-a-publish-profile)
 
 ::: moniker-end
 
@@ -34,11 +40,7 @@ There are other Azure Resource Manager service connection authentication options
 
 <a name="create-an-azure-resource-manager-service-connection-using-workload-identity-federation"></a>
 
-## Create an Azure Resource Manager app registration (automatic)
-
-When you create an Azure Resource Manager service connection, you'll choose between two different credential types - [workload identity federation](/entra/workload-id/workload-identity-federation) or a secret. 
-
-### Create an Azure Resource Manager app registration with workload identity federation (automatic)
+## Create an app registration with workload identity federation (automatic)
 
 <a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation"></a>
 You can use this approach if all the following items are true for your scenario:
@@ -68,7 +70,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
         | Parameter | Description |
         | --------- | ----------- |
         | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource group** | Required. Select the Azure resource group. |
+        | **Resource group** | Optional. Select the Azure resource group. |
     
     * For the **Management Group** scope, select the **Azure management group**.
     
@@ -86,65 +88,8 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
 1. Select **Save**.
 
-After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
 
-
-### Create an Azure Resource Manager app registration with a secret (automatic)
-
-With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a secret for authentication. 
-
-> [!WARNING]
-> Using a secret requires manual rotation and management and is not recommended. Workload identity federation is the preferred credential type.
-
-You can use this approach if all the following items are true for your scenario:
-
-* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
-* You don't need to further limit permissions for Azure resources that users access through the service connection.
-* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government-cloud) environments.
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of Team Foundation Server.
-
-
-1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
-
-   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
-
-1. Select **New service connection**,  then select **Azure Resource Manager** and **Next**.
-
-   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
-
-1. Select **App registration (automatic)** with the credential **Secret**.
-
-   :::image type="content" source="media/select-app-registration-secret-service.png" alt-text="Screenshot of Workload Identity federation app registration (automatic) authentication method selection.":::
-
-1. Select a **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
-
-    * For the **Subscription** scope, enter the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource group** | Required. Select the Azure resource group. |
-    
-    * For the **Management Group** scope, select the **Azure management group**.
-    
-    * For the **Machine Learning Workspace** scope, enter the following parameters:
-
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Subscription** | Required. Select the Azure subscription. |
-        | **Resource Group** | Required. Select the resource group containing the workspace. |
-        | **Machine Learning Workspace** | Required. Select the Azure Machine Learning workspace. |
-|
-
-1. Enter a **Service connection name**.
-1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
-1. Select **Save**.
-
-After the new service connection is created, copy the connection name and paste it into your code as the value for `azureSubscription`.
-
-
-## Create an Azure Resource Manager service connection for an existing user-assigned managed identity
+## Create a service connection for an existing user-assigned managed identity
 
 Use this option to automatically create a workload identity credential for an existing user-assigned managed identity. You need to have an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity) before you start. 
 
@@ -206,8 +151,7 @@ Use this option to automatically create a workload identity credential for an ex
 
 ::: moniker range="azure-devops"
 
-
-## Convert an existing Azure Resource Manager service connection to use workload identity federation
+## Convert an existing service connection to use workload identity federation
 
 You can quickly convert an existing Azure Resource Manager service connection to use workload identity federation for authentication instead of a secret. You can use the service connection conversion tool in Azure DevOps if your service connection meets these requirements:
 
@@ -234,7 +178,8 @@ To convert a service connection:
 
    The conversion might take a few minutes. If you want to revert the connection, you must revert it within seven days.
 
-#### Convert multiple Azure Resource Manager service connections with a script
+
+#### Convert multiple service connections with a script
 
 Use a script to update multiple service connections at once to now use workload identity federation for authentication.
 
@@ -330,7 +275,7 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
 }
 ```
 
-### Revert an existing Azure Resource Manager Service connection that uses a secret
+### Revert an existing service connection that uses a secret
 
 You can revert a converted automatic service connection with its secret for seven days. After seven days, manually create a new secret.
 
@@ -356,7 +301,7 @@ To revert a service connection:
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-## Create an Azure Resource Manager service connection that uses an existing service principal
+## Create a service connection that uses an existing service principal
 
 If you want to use a predefined set of access permissions and you don't already have a service principal defined for this purpose, follow one of these tutorials to create a new service principal:
 

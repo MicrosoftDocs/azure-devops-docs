@@ -13,7 +13,8 @@ ms.date: 10/15/2024
 #customer intent: As a team member, I want to learn how to query work items in Azure Boards so I can find items based on when they were created, which iteration they belong to, or other factors.
 ---
 
-# Query by date or current iteration in Azure Boards
+
+# Query by date or current iteration
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -28,6 +29,10 @@ For example, find work items that were modified in the last three days with the 
 ::: moniker range=">= azure-devops-2019"
 Also, you can use  the `CurrentIteration +/- _n_` macro to create queries based on a sliding window of team iterations.
 ::: moniker-end
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
 ## Supported operators and macros
 
@@ -61,7 +66,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** field 
       TreePath
    :::column-end::: 
    :::column span="3":::
-      = , <> , Under, Not Under  
+      =, <>, Under, Not Under  
       **Macros**: `@CurrentIteration`<sup>1</sup> and `@CurrentIteration +/- n`<sup>2</sup> valid with the **Iteration Path** field.
    :::column-end:::
 :::row-end:::
@@ -70,7 +75,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** field 
 
 Notes:
 1. The `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear` macros are supported for Azure DevOps Server 2019.1 and later versions. They're only supported when run from the web portal.
-1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions. It's only supported when run from the web portal.
+1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions and is only supported when run from the web portal.
 
 > [!TIP]
 > The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md).
@@ -241,7 +246,7 @@ If your team follows Scrum processes, you schedule work to be completed in sprin
 The query finds any item assigned to a sprint that corresponds to the current iteration path for the team. For example, if a team is on Sprint 5, the query returns items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query returns items assigned to Sprint 6.
 
 > [!NOTE]
-> For the `@CurrentIteration` macro to work, the team must have selected an iteration path whose date range encompasses the current date. For more information, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the `@CurrentIteration` macro to work, the team must have selected an iteration path whose date range encompasses the current date. For more information, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path). Also, queries that contain this macro are only valid when run from the web portal.
 >
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 
@@ -252,7 +257,7 @@ Azure Boards adds a team parameter when you select the **@CurrentIteration** or 
 :::image type="content" source="media/query-date-iteration/at-current-with-team-parameter.png" alt-text="Screenshot that shows the Query filter by using the CurrentIteration macro with team parameter.":::
 
 > [!TIP]
-> If the `@CurrentIteration` macro isn't working, check that the expected iteration is selected for your team and that dates have been set for it. For more information, see [Select team sprints](../../organizations/settings/set-iteration-paths-sprints.md#activate).
+> If the `@CurrentIteration` macro isn't working, check that the expected iteration is selected for your team and that dates have been set for it. For more information, see [Select team sprints](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path).
 
 To change the team parameter that the system automatically sets, choose it by entering the name of the team in the parameter field added below the **@CurrentIteration** macro.
 
@@ -270,7 +275,7 @@ Use the `@CurrentIteration +/- n` macro when you want to track the work a team p
 
 > [!NOTE]
 > For the `@CurrentIteration +/- n` macro to work, the team must have selected iteration paths that meet the `+/- n`
-> criteria. Date ranges must encompass the current date for the `@CurrentIteration`. For more information about team selection of iteration paths, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#activate).
+> criteria. Date ranges must encompass the current date for the `@CurrentIteration`. For more information about team selection of iteration paths, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path).
 >
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 

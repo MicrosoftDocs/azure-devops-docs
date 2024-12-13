@@ -66,7 +66,7 @@ The GitHub repository contains the following files:
     variables:
       imageName: azure-pipelines-canary-k8s # name of ACR image
       dockerRegistryServiceConnection: azure-pipelines-canary-acr # name of ACR service connection
-      imageRepository: 'azure-pipelines-canary-k8s' # name of image repostory
+      imageRepository: 'azure-pipelines-canary-k8s' # name of image repository
       containerRegistry: example.azurecr.io # name of Azure container registry
       tag: '$(Build.BuildId)'
     

@@ -13,13 +13,17 @@ ms.date: 09/06/2024
 ---
 
 
-# Query fields, operators, and macros in Azure Boards 
+# Query fields, operators, and macros
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 This article provides descriptions of each field data type, query operator, and query macro. Some data types, operators, and macros are only valid for the indicated Azure DevOps version. 
 
 For more information, see [Query quick reference](query-index-quick-ref.md) and [Manage and organize queries](organize-queries.md).
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
 <a id="field-values"></a> 
 
@@ -551,7 +555,7 @@ For more information, see [Define a query](using-queries.md).
 
 
 > [!TIP] 
-> It's possible to contsruct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
+> It's possible to construct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 
 <a id="variables"></a> 
 <a id="macros"></a> 

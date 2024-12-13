@@ -25,8 +25,9 @@ For more information, see [Define features and epics](../backlogs/define-feature
 > [!div class="mx-imgBorder"]
 > ![Web portal, Features board with several user stories defined](media/features-epics/features-with-stories-intro.png)
 
-[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
+## Prerequisites
 
+[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 ## Open your board from the web portal
 

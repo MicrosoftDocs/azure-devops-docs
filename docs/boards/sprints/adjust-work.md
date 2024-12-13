@@ -30,6 +30,7 @@ Use this article to learn how to:
 > * Load balance work across your team 
 > * Quickly reassign tasks to another team member    
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 

@@ -26,17 +26,15 @@ You can get a list of users and groups that have access to your organization in 
 You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.
 ::: moniker-end
 
-
-
 ## Prerequisites
 
 ::: moniker range="azure-devops"
 
-* You must be the **Organization owner** or a member of the **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md).
+**Permissions**: Be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md). Organization owners are automatically members of this group.
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
-* You must be a member of the Administrators group. If you aren't a member, get added now. For more information, see [Add administrators](/azure/devops/server/admin/add-administrator).
+**Permissions**: Be a member of the [**Administrators** group](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users

@@ -1,5 +1,5 @@
 ---
-title: Link GitHub commits, PRs, branches,and issues to work items
+title: Link GitHub commits, PRs, branches, and issues to work items
 titleSuffix: Azure Boards 
 description: Learn how to links work items to GitHub commits, pull requests, branches, and issues, and automatically transition work item states in Azure Boards.  
 ms.service: azure-devops-boards 
@@ -21,11 +21,9 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 
 ## Prerequisites 
 
-- **Project connection:**
-  - Ensure your Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).
+- **Project connection:** Ensure your Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).
 
-- **Permissions:**
-  - Be a Contributor to both the Azure Boards project and the GitHub repository.
+- **Permissions:** Be a **Contributor** to both the Azure Boards project and the GitHub repository.
 
 ::: moniker range="azure-devops"
 > [!NOTE]   

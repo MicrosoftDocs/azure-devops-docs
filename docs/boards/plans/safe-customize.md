@@ -31,6 +31,10 @@ Learn how Azure Boards supports SAFe® practices through the following operation
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-admin](../includes/prerequisites-project-admin.md)]
+
 ## About customization and the inherited process
 
 Azure Boards provides a graphical user interface to support customization of your projects. This feature is called the Inherited process. All projects that use an inherited process are automatically updated when customizations are made to that process.  
