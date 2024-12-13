@@ -46,7 +46,7 @@ You can manage PATs through the following methods:
 
 ## Changes to format
 
-As of July 2024, we significantly changed the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our partner offerings, like [GitHub Advanced Security for Azure DevOps](https://devblogs.microsoft.com/devops/github-advanced-security-for-azure-devops-public-preview-starts-now/). This new PAT format follows the recommended format across all Microsoft products. The inclusion of more identifiable bits improves the false positive detection rate of these secret detection tools and enables us to mitigate detected leaks faster.
+As of July 2024, we significantly changed the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our [leaked PAT detection offerings](manage-pats-with-policies-for-administrators?view=azure-devops#revoke-leaked-pats-automatically). This new PAT format follows the recommended format across all Microsoft products. The inclusion of more identifiable bits improves the false positive detection rate of these secret detection tools and enables us to mitigate detected leaks faster.
 
 Key changes:
 * **Increased token length:** The new tokens are now **84** characters long, with 52 characters being randomized data. This increased length improves overall entropy, making the tokens more resistant to potential brute force attacks.
@@ -59,14 +59,14 @@ Action required:
 > [!IMPORTANT]
 > Both formats remain valid for the foreseeable future, but we **actively encourage customers to transition to the new 84-character format**. As adoption of the new format increases, we consider retiring the older 52-character format and all tokens issued in that style.
 
-## Related articles
-
-* [Learn about security, authentication, and authorization](../security/about-security-identity.md)
-* [Review default permissions and access for Azure DevOps](../security/permissions-access.md)
-* [Revoke user PATs (for admins)](admin-revoke-user-pats.md)
-* [Manage service principals and managed identities in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md)
-
-::: moniker range="azure-devops"
+## PAT Best Practices
+* When creating a PAT, don't put any personally identifiable information (PII) in the PAT name. Please don't rename the PAT token string as the name of your token.
+* If your PAT doesn't need to access multiple organizations, only choose the organization it needs to access. If you have a workflow that requires a PAT to access multiple organizations, create a separate global PAT for just that workflow.
+* Choose only the minimally needed scopes for each PAT. If possible, create multiple PATs for each workflow with fewer scopes vs. a single fully-scoped PAT. If your PAT only needs read permissions, don't provide it write permissions until it's necessary.
+* Keep PAT lifespans short and regularly rotate or regenerate them. This can be done on the UI or via the [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md).
+* [Tenant admins can set policies](manage-pats-with-policies-for-administrators.md) to restrict global PAT creation, full scoped PAT creation, and long-lived PAT duration. They can also enable policies to automatically revoke leaked PATs detected in public repositories. Use these policies to improve the security of your company.
+* Revoke PATs when they are no longer needed. Tenant admins can [revoke PATs for their organization users](admin-revoke-user-pats.md) if the PAT is compromised.
+* Rotate your PATs to use the new PAT format for better leaked secret detection.
 
 ## FAQs
 
@@ -109,3 +109,13 @@ Some known reasons why PATs might be failing:
 A: In Azure DevOps, you can create access keys that aren't tied to a specific person by using Service Principals or Manage Identities. For more information, see [Manage service connections](../../pipelines/library/service-endpoints.md), [Use Azure Key Vault secrets in Azure Pipelines](../../pipelines/release/azure-key-vault.md).
 
 ::: moniker-end
+
+## Related articles
+
+* [Learn about security, authentication, and authorization](../security/about-security-identity.md)
+* [Review default permissions and access for Azure DevOps](../security/permissions-access.md)
+* [Manage personal access tokens (PATs) using REST API](manage-personal-access-tokens-via-api.md)
+* [Revoke user PATs (for admins)](admin-revoke-user-pats.md)
+* [Manage service principals and managed identities in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md)
+* [Use policies to manage personal access tokens for users](manage-pats-with-policies-for-administrators.md)
+
