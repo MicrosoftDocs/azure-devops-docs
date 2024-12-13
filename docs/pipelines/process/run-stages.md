@@ -128,6 +128,106 @@ isSkippable: false
 1. Deploy to production
 - Only allow deployment from certain branches
 
+## Full pipeline
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: 'Build Stage'
+  jobs:
+  - job: BuildJob
+    displayName: 'Build Job'
+    steps:
+    - script: |
+        echo "Building the project..."
+        # Add your build commands here
+      displayName: 'Run build commands'
+
+- stage: Test
+  displayName: 'Test Stage'
+  dependsOn: Build
+  isSkippable: false
+  jobs:
+  - job: TestJob
+    displayName: 'Test Job'
+    steps:
+    - script: |
+        echo "Running tests..."
+        # Add your test commands here
+      displayName: 'Run test commands'
+
+- stage: DeployToStaging
+  displayName: 'Deploy to Staging'
+  dependsOn: Test
+  jobs:
+  - job: DeployStagingJob
+    displayName: 'Deploy to Staging Job'
+    steps:
+    - script: |
+        echo "Deploying to staging..."
+        # Add your deployment commands here
+      displayName: 'Run deployment commands'
+    - task: ManualValidation@1
+      inputs:
+        notifyUsers: 'julia.kullamader@microsoft.com'
+        approvers: 'julia.kullamader@microsoft.com'
+        instructions: 'Please validate the deployment to production.'
+
+- stage: DeployToProduction
+  displayName: 'Deploy to Production'
+  dependsOn: DeployToStaging
+  condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/main', 'refs/heads/release'))
+  jobs:
+  - job: DeployProductionJob
+    displayName: 'Deploy to Production Job'
+    steps:
+    - script: |
+        echo "Deploying to production..."
+        # Add your deployment commands here
+      displayName: 'Run deployment commands'
+    - task: ManualValidation@1
+      inputs:
+        notifyUsers: 'julia.kullamader@microsoft.com'
+        approvers: 'julia.kullamader@microsoft.com'
+        instructions: 'Please validate the deployment to production.'
+      displayName: 'Manual Validation'
+  # - task: Lock@0
+  #   inputs:
+  #     lockName: 'ProductionLock'
+  #     lockType: 'Exclusive'
+  #   displayName: 'Acquire exclusive lock for production deployment'
+
+- stage: DeployToAlternateProduction
+  displayName: 'Deploy to Alternate Production'
+  condition: succeeded()
+  trigger: manual
+  jobs:
+  - job: DeployAlternateProductionJob
+    displayName: 'Deploy to Alternate Production Job'
+    steps:
+    - script: |
+        echo "Deploying to alternate production..."
+        # Add your deployment commands here
+      displayName: 'Run deployment commands'
+
+- stage: Rollback
+  displayName: 'Rollback Stage'
+  trigger: manual
+  jobs:
+  - job: RollbackJob
+    displayName: 'Rollback Job'
+    steps:
+    - script: |
+        echo "Rolling back the deployment..."
+        # Add your rollback commands here
+      displayName: 'Run rollback commands'
+```
 
 
 ## Clean up resources
