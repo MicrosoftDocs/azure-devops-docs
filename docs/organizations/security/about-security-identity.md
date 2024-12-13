@@ -151,25 +151,15 @@ For on-premises deployments, AD is recommended for managing a large group of use
 
 Other applications and services can integrate with Azure DevOps. To access your account without repeatedly asking for user credentials, apps can use the following authentication methods:
 
-- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) to generate tokens on your behalf for:  
-	- Accessing specific resources or activities, like builds or work items
-	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Microsoft Entra features like multifactor authentication 
-	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
-
-- [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth.md) 
-to generate tokens on users' behalf for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
-and [Profiles](/rest/api/azure/devops/profile) 
-APIs support only OAuth. 
-
-- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys for yourself when you use Linux, macOS, 
-or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
-and can't use 
-[Git credential managers](../../repos/git/set-up-credential-managers.md) 
-or [PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
-for HTTPS authentication.
+- [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens on users' behalf for accessing [REST APIs](/rest/api/azure/devops/).
+  - There are two OAuth app models available: **Azure DevOps OAuth is planned for deprecation in 2026. Use [Micrsooft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to build on-behalf-of user apps.**
+  - You can also generate Microsoft Entra tokens for ad-hoc operations on your own behalf, for accessing resources like builds or work itemms or accessing [Azure DevOps REST APIs](/rest/api/azure/devops/).
 
 - [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Microsoft Entra tokens on behalf of an application or service, typically automating workflows that need to access Azure DevOps resources. Most actions traditionally performed by a service account and a PAT can be done using a service principal or managed identity.
+
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) to generate tokens on your behalf. This might be helpful for clients like Xcode and NuGet that don't support Microsoft accounts or features, like multi-factor authentication (MFA).
+
+- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for yourself when you use Linux, macOS, or Windows running [Git for Windows](https://www.git-scm.com/download/win) and can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [PATs](../accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
 
 By default, your account or collection allows access for all authentication methods. 
 You can limit access by specifically restricting each method. When you deny access to an authentication method, no app can use that method to access your account. Any app that previously had access receives an authentication error and can't access your account.
