@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 08/07/2024
+ms.date: 12/12/2024
 ms.custom:  copilot-scenario-highlight 
 monikerRange: '<= azure-devops'
 ---
@@ -32,7 +32,7 @@ Learn more about [working with variables](../process/variables.md).
 ::: moniker range="azure-devops"
 
 > [!TIP]
-> You can ask [Copilot](/copilot/) for help with variables. To learn more, see [Ask Copilot to generate variable usage examples](#ask-copilot-to-generate-variable-usage-examples).
+> You can ask [Copilot](/copilot/) for help with variables. To learn more, see [Ask Copilot to generate a stage with a condition based on variable values](#ask-copilot-to-generate-a-stage-with-a-condition-based-on-variable-values).
 
 ::: moniker-end
 
@@ -152,13 +152,13 @@ The value depends on what caused the build and are specific to Azure Repos repos
 
 ::: moniker range="azure-devops"
 
-## Ask Copilot to generate variable usage examples
+## Ask Copilot to generate a stage with a condition based on variable values
 
-Use [Copilot](/copilot/) to generate pipeline snippets that use variables. For example, you can use Copilot to generate a stage with a condition that uses the `Agent.JobStatus` variable.  
+Use [Copilot](/copilot/) to generate a stage with a condition determined by the value of a variable.  
 
-The following text shows an example prompt for Copilot:
+This example prompt defines a stage that runs when `Agent.JobStatus` indicates that the previous stage ran successfully:
 
-> How do I create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`?
+> Create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`.
 
 You can customize the prompt to use values that meet your requirements. For example, you can ask for help creating a stage that only runs when a pipeline fails. 
 

@@ -29,7 +29,6 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 | **Azure** | - An [Azure subscription](https://azure.microsoft.com/free/).<br>   - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal). |
 | **Docker Hub**   | - A [Docker Hub](https://hub.docker.com/) account.<br>   - A [Docker Hub](https://hub.docker.com/) image repository. |
 
-
 ::: zone pivot="docker-registry"
 
 ## Create a Docker service connection
