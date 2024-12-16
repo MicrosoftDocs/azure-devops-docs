@@ -220,7 +220,14 @@ In this article, you'll learn how to:
 
 - Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
-- Install [NuGet](https://www.nuget.org/downloads).
+- Install Windows MSBuild using one of the following options:
+    - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/preview/)
+    - [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools#build-tools-for-visual-studio-2022).
+    - [.NET Core SDK](https://dotnet.microsoft.com/download).
+
+- Install the [NuGet(.exe)](https://www.nuget.org/downloads) version *4.8.0.5385* or later.
+
+- Install the [dotnet runtime](https://dotnet.microsoft.com/en-us/download) version *8.0.x* or later.
 
 ## Create a personal access token
 
