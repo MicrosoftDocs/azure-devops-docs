@@ -71,24 +71,24 @@ The following tables describe the type of events (or actions) that are available
 
 |                             Action                                 |                             Description                      |
 |--------------------------------------------------------------------|--------------------------------------------------------------|
-| `Artifacts.Feed.Project.Modify`                                    | Modified feed {FeedName} in project {ProjectId}- {FeedChanges}.                     |
-| `Artifacts.Feed.Org.Create`                                        | Created organization feed {FeedName}.                                                                              |
-| `Artifacts.Feed.Project.Modify.Permissions`                        | Permissions for {DisplayName} were set to {Role} for feed {FeedName} in project {ProjectId}.                       |    
 | `Artifacts.Feed.Project.Create`                                    | Created feed {FeedName} in project {ProjectId}.                                   |
-| `Artifacts.Feed.Project.FeedView.Modify`                           | Modified feed view {FeedViewName} in feed {FeedName} in project {ProjectId}- {FeedViewChanges}.               |
-| `Artifacts.Feed.Org.Modify.Permissions`                            | Permissions for {DisplayName} were set to {Role} for organization feed {FeedName}.                  |
-| `Artifacts.Feed.Org.SoftDelete`                                    | Moved organization feed {FeedName} to the Feed Recycle Bin.                             |
-| `Artifacts.Feed.Org.HardDelete`                                    | Permanently deleted organization feed {FeedName}.                      |
+| `Artifacts.Feed.Org.Create`                                        | Created organization feed {FeedName}.                                                                              |
+| `Artifacts.Feed.Project.Modify`                                    | Modified feed {FeedName} in project {ProjectId}- {FeedChanges}.                     |
 | `Artifacts.Feed.Org.Modify`                                        | Modified organization feed {FeedName}- {FeedChanges}.                        |
 | `Artifacts.Feed.Project.SoftDelete`                                | Moved feed {FeedName} to the Feed Recycle Bin in project {ProjectId}.                                  |
-| `Artifacts.Feed.Org.FeedView.Modify`                               | Modified feed view {FeedViewName} in organization feed {FeedName}- {FeedViewChanges}.         |
+| `Artifacts.Feed.Org.SoftDelete`                                    | Moved organization feed {FeedName} to the Feed Recycle Bin.                             |
 | `Artifacts.Feed.Project.HardDelete`                                | Permanently deleted feed {FeedName} in project {ProjectId}.                           |
-| `Artifacts.Feed.Org.FeedView.Create`                               | Created feed view {FeedViewName} in organization feed {FeedName}.               |
+| `Artifacts.Feed.Org.HardDelete`                                    | Permanently deleted organization feed {FeedName}.                      |
+| `Artifacts.Feed.Project.Modify.Permissions`                        | Permissions for {DisplayName} were set to {Role} for feed {FeedName} in project {ProjectId}.                       |    
+| `Artifacts.Feed.Org.Modify.Permissions`                            | Permissions for {DisplayName} were set to {Role} for organization feed {FeedName}.                  |
 | `Artifacts.Feed.Project.Permissions.Deletion`                      | Permissions for feed {FeedName} in project {ProjectId} were removed for {DisplayName}.         |
-| `Artifacts.Feed.Project.FeedView.Create`                           | Created feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.                     |
 | `Artifacts.Feed.Org.Permissions.Deletion`                          | Permissions for organization feed {FeedName} were removed for {DisplayName}.    |
-| `Artifacts.Feed.Org.FeedView.HardDelete`                           | Permanently deleted feed view {FeedViewName} in organization feed {FeedName}.       |
+| `Artifacts.Feed.Project.FeedView.Create`                           | Created feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.                     |
+| `Artifacts.Feed.Org.FeedView.Create`                               | Created feed view {FeedViewName} in organization feed {FeedName}.               |
+| `Artifacts.Feed.Project.FeedView.Modify`                           | Modified feed view {FeedViewName} in feed {FeedName} in project {ProjectId}- {FeedViewChanges}.               |
+| `Artifacts.Feed.Org.FeedView.Modify`                               | Modified feed view {FeedViewName} in organization feed {FeedName}- {FeedViewChanges}.         |
 | `Artifacts.Feed.Project.FeedView.HardDelete`                       | Permanently deleted feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.             |
+| `Artifacts.Feed.Org.FeedView.HardDelete`                           | Permanently deleted feed view {FeedViewName} in organization feed {FeedName}.       |
 
 ### AuditLog events
 
