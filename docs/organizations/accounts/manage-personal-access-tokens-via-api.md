@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When you're dealing with a large set of [personal access tokens (PATs)](use-personal-access-tokens.md) you own, it might become complex to manage the maintenance of these tokens using the UI alone.
+When you're dealing with a large set of [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md) you own, it might become complex to manage the maintenance of these tokens using the UI alone.
 
 With the PAT Lifecycle Management API, you can easily manage the PATs associated with your organizations using automated processes. This [rich set of APIs](/rest/api/azure/devops/tokens) lets you manage your PATs, allowing you to create new PATs and renew or expire existing PATs.
 
@@ -42,7 +42,7 @@ Once you have an application with a working authentication flow for handling Mic
 To call the API directly, provide a Microsoft Entra access token as a `Bearer` token in `Authorization` header of your request.
 For more information and a full list of the available requests, see the [PAT API reference.](/rest/api/azure/devops/tokens)
 
-In the following section, we show how to create an app that authenticates a user with a Microsoft Entra access token. The app uses the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/en-us/entra/identity-platform/msal-overview) and calls our PAT Lifecycle Management API.
+In the following section, we show how to create an app that authenticates a user with a Microsoft Entra access token. The app uses the [Microsoft Authentication Library (MSAL)](/entra/identity-platform/msal-overview) and calls our PAT Lifecycle Management API.
 
 ## Clone our Python Flask web app
 
@@ -57,7 +57,7 @@ Once you clone the sample app, follow the instructions in the repo’s README. T
 
 Instead, you can generate a sample app with the generated MSAL code using the **Quickstart** option on the application's page in [Azure portal](https://portal.azure.com/). The Quickstart test application follows the authorization code flow, but does so with a Microsoft Graph API endpoint. Users need to update the application's configuration to point to the endpoint for the PAT Lifecycle Management API.
 
-To follow this approach, follow the **Quickstarts** instructions for the application type of your choice on the [Microsoft Entra ID Develop docs homepage](/azure/active-directory/develop/). We walk through the following example with a [Python Flask Quickstart app](#example-get-started-with-a-python-flask-quickstart-application).
+To follow this approach, follow the **Quickstarts** instructions for the application type of your choice on the [Microsoft Entra ID Develop docs homepage](/azure/active-directory/develop/). We walk through the following example with a [Python Flask Quickstart app](#configure-a-quickstart-application).
 
 1. Once you register your application in a Microsoft Entra tenant with an active Azure subscription, navigate to your registered application under **Microsoft Entra ID** -> **App Registrations** in the [Azure portal](https://portal.azure.com/).
    
@@ -67,7 +67,7 @@ To follow this approach, follow the **Quickstarts** instructions for the applica
 
    ![Screenshot shows selecting an application and navigating to API Permissions.](./media/manage-personal-access-tokens-via-api/step-2-api-permissions.png)
 
-3. Select **Add a permission** and select **Azure DevOps** -> select the appropriate scopes you need. In this case, the PAT Lifecycle Management APIs only support **user_impersonation**, but other APIs may request different more [granular scopes](../../integrate/get-started/authentication/oauth?view=azure-devops#scopes) that you can find on [each API's individual reference page](/rest/api/azure/devops/). Once all the scopes are selected, click **Add permissions**.
+3. Select **Add a permission** and select **Azure DevOps** -> select the appropriate scopes you need. In this case, the PAT Lifecycle Management APIs only support **user_impersonation**, but other APIs may request different more [granular scopes](../../integrate/get-started/authentication/oauth.md#scopes) that you can find on [each API's individual reference page](/rest/api/azure/devops/). Once all the scopes are selected, click **Add permissions**.
 
    ![Screenshot shows add the Azure DevOps, user_impersonation permission.](./media/manage-personal-access-tokens-via-api/step-3-add-azure-devops-permissions.png)
 
