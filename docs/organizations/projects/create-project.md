@@ -1,4 +1,18 @@
 ---
+title: Create a project
+titleSuffix: Azure DevOps
+ms.custom: devx-track-azurecli, engagement-fy23
+description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
+ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
+ms.subservice: azure-devops-projects
+ms.topic: how-to
+ms.author: chcomley
+author: chcomley
+monikerRange: '>= azure-devops-2019'
+ms.date: 12/17/2024
+---
+
+
 # Create a project in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
