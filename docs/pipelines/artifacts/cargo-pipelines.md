@@ -83,35 +83,44 @@ Azure Pipelines enables developers to publish Cargo packages to Azure Artifacts 
 
 * * *
 
-## Publish crates to your feed
+## Publish crates to a feed
+
+# [YAML](#tab/yaml)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+    ```yaml
+    - powershell: |
+       cargo publish --registry <FEED_NAME>        ## Replace the placeholder with your feed name
+      env:
+        SYSTEM_ACCESSTOKEN: $(system.accesstoken)
+    ```
 
 # [Classic](#tab/classic)
 
 1. From your Azure DevOps project, select **Pipelines**, select your pipeline definition, and then select **Edit**.
 
-1. Select the `+` sign on your agent job to add a new task. Find the **PowerShell** task through the search function, and then select **Add** to add it to your pipeline.
+1. Select the `+` sign to add a new task, then add the **Command line** task to your pipeline definition.
 
-1. Give your task a name, e.g., Publish, and then select **Inline** as the type. Paste your publish command inline, replacing the placeholder with your feed name:
+1. Give your task a name, and then paste the following command into the **Script** textbox, replacing the placeholder with your feed name:
 
     ```PowerShell
     cargo publish --registry <FEED_NAME>
     ```
 
-:::image type="content" source="media/publish-crate-cl-pipeline.png" alt-text="A screenshot showing how to publish crates to and Azure Artifacts feed using a classic pipeline.":::
+1. Select your agent job, scroll down to **Additional options**, and make sure you check the **Allow scripts to access the OAuth token** checkbox.
 
-# [YAML](#tab/yaml)
-
-```yaml
-- powershell: |
-   cargo publish --registry <FEED_NAME>        ## Replace the placeholder with your feed name
-  displayName: Publish
-```
+:::image type="content" source="media/publish-crate-cl-pipeline.png" alt-text="A screenshot displaying how to configure the publish task in a Classic pipeline.":::
 
 * * *
 
 ## Example
 
-In this example, we will install rustup on the agent, set up the PATH environment variable, build our project, authenticate with CargoAuthenticate, and finally publish our crate to our Azure Artifacts feed:
+The following example shows how to install Rustup on the agent, configure the PATH environment variable, build the project, authenticate with CargoAuthenticate, and publish to an Azure Artifacts feed:
 
 # [Windows](#tab/windows)
 
@@ -174,7 +183,7 @@ steps:
 
 * * *
 
-After your pipeline run is completed, your crate should be available in your feed, as shown below:
+Once your pipeline run completes, your crate should be available in your feed, as shown below:
 
 :::image type="content" source="media/published-crate-to-feed.png" alt-text="A screenshot showing the hello-world-cargo crate published to the feed.":::
 
