@@ -82,12 +82,12 @@ There isn't a limit on the number of projects that you can create within a proje
 - Choose the visibility, initial source control type, and work item process.
 For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
-  ```
+    ```
   > [!div class="mx-imgBorder"]  
   ```
   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav-2.png)  
   
-  ```
+    ```
   When you choose public visibility, anyone on the internet can view your project. With private visibility, only users you give access to can view your project. For more information about features and access levels for public projects, see [Make a private project public](make-project-public.md). If the **Public** option isn't available, you need to change the policy.
   ```1. Select **Create**. Azure DevOps displays the project welcome page.
 
@@ -117,12 +117,11 @@ For more information, see [Choosing the right version control for your project](
 - Choose the visibility, initial source control type, and work item process.
 For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
 
-  ```
-  > [!div class="mx-imgBorder"]  
-  ```
-  > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav2.png)  
+
+> [!div class="mx-imgBorder"] 
+>  ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav-2.png)  
   
-  ```
+
   When you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For more information about public projects, see [Create a public project in your organization](../projects/create-project.md). If the **Public** option isn't available, you need to change the policy.
   ```1. Select **Create**. Azure DevOps displays the welcome page.
 
