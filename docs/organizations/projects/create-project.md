@@ -71,11 +71,11 @@ There isn't a limit on the number of projects that you can create within a proje
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```). 
 
-2. Select **New project**.
+1. Select **New project**.
 
-   > [!div class="mx-imgBorder"]  
+      > [!div class="mx-imgBorder"]  
    > ![Screenshot of listed projects and highlighted New projects button.](media/create-project/select-new-project.png)  
-
+   
 3. Enter information into the form provided. 
    - Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. 
    - Enter an optional description. 
@@ -87,12 +87,12 @@ There isn't a limit on the number of projects that you can create within a proje
 
    When you choose public visibility, anyone on the internet can view your project. With private visibility, only users you give access to can view your project. For more information about features and access levels for public projects, see [Make a private project public](make-project-public.md). If the **Public** option isn't available, you need to change the policy.
 
-4. Select **Create**. Azure DevOps displays the project welcome page.
+1. Select **Create**. Azure DevOps displays the project welcome page.
 
-   > [!div class="mx-imgBorder"]  
+      > [!div class="mx-imgBorder"]  
    > ![Screenshot of project creation confirmation dialog.](media/create-project/project-creation-complete-preview.png)
-
-   Select one of the following options to continue:
+   
+      Select one of the following options to continue:
 
    - **Invite**: Add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project).
    - **Boards**: Add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
@@ -108,28 +108,28 @@ There isn't a limit on the number of projects that you can create within a proje
 
 1. Sign in to your DevOps Server collection (```https://<your-devops-server>/<your-organization>```). 
 
-2. Select **New project**. You can also [create a project from a process](../settings/work/manage-process.md).
+1. Select **New project**. You can also [create a project from a process](../settings/work/manage-process.md).
 
-   > [!div class="mx-imgBorder"]  
+      > [!div class="mx-imgBorder"]  
    > ![Screenshot of listed projects and highlighted New projects button.](media/create-project/select-new-project.png)
+   
+1. Enter information into the form provided. 
+- Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. 
+- Enter an optional description. 
+- Choose the visibility, initial source control type, and work item process. 
+  For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
 
-3. Enter information into the form provided. 
-   - Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. 
-   - Enter an optional description. 
-   - Choose the visibility, initial source control type, and work item process. 
-     For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
-
-   > [!div class="mx-imgBorder"]  
+      > [!div class="mx-imgBorder"]  
    > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav.png)  
+   
+      When you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For more information about public projects, see [Create a public project in your organization](../projects/create-project.md). If the **Public** option isn't available, you need to change the policy.
 
-   When you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For more information about public projects, see [Create a public project in your organization](../projects/create-project.md). If the **Public** option isn't available, you need to change the policy.
+1. Select **Create**. Azure DevOps displays the welcome page.
 
-4. Select **Create**. Azure DevOps displays the welcome page.
-
-   > [!div class="mx-imgBorder"]  
+      > [!div class="mx-imgBorder"]  
    > ![Screenshot of project creation confirmation dialog.](media/create-project/project-creation-complete-new-nav.png)
-
-   Select one of the following options to continue:
+   
+      Select one of the following options to continue:
 
    - **Invite**: add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project).
    - **Boards**: add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
@@ -203,12 +203,12 @@ View a list of projects from your web browser.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
 
-2. Select **Organization settings** and then select **Projects**.
+1. Select **Organization settings** and then select **Projects**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of highlighted Project button and resulting list.](media/create-project/list-projects-org-settings.png)  
-
-	Open your desired project. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md).
+> [!div class="mx-imgBorder"]  
+   > ![Screenshot of highlighted Project button and resulting list.](media/create-project/list-projects-org-settings.png)  
+   
+   	Open your desired project. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md).
 
 ::: moniker-end
  
@@ -216,19 +216,19 @@ View a list of projects from your web browser.
 
 1. To view the projects defined for a collection, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Choose any project to connect to that project.
+1. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Choose any project to connect to that project.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of projects list.](media/create-project/list-projects-2019.png)  
-
+> [!div class="mx-imgBorder"]  
+   > ![Screenshot of projects list.](media/create-project/list-projects-2019.png)  
+   
 Or
 
 - Select **Admin settings** and then choose **Projects** to list all projects.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of selected Admin settings and Projects.](media/create-project/list-projects-admin-settings-2019.png)  
-
-	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
+> [!div class="mx-imgBorder"]  
+  > ![Screenshot of selected Admin settings and Projects.](media/create-project/list-projects-admin-settings-2019.png)  
+  
+  	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
 ::: moniker-end
 
