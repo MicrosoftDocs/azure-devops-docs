@@ -46,7 +46,7 @@ You can manage PATs through the following methods:
 
 ## Changes to format
 
-As of July 2024, we significantly changed the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our [leaked PAT detection tooling](manage-pats-with-policies-for-administrators?view=azure-devops#revoke-leaked-pats-automatically) or [partner offerings](../../repos/security/github-advanced-security-secret-scanning). This new PAT format follows the recommended format across all Microsoft products. The inclusion of more identifiable bits improves the false positive detection rate of these secret detection tools and enables us to mitigate detected leaks faster.
+As of July 2024, we significantly changed the format of PATs issued by Azure DevOps. These changes provide more security benefits and improve secret detection tooling available through our [leaked PAT detection tooling](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically) or [partner offerings](../../repos/security/github-advanced-security-secret-scanning.md). This new PAT format follows the recommended format across all Microsoft products. The inclusion of more identifiable bits improves the false positive detection rate of these secret detection tools and enables us to mitigate detected leaks faster.
 
 Key changes:
 * **Increased token length:** The new tokens are now **84** characters long, with 52 characters being randomized data. This increased length improves overall entropy, making the tokens more resistant to potential brute force attacks.
