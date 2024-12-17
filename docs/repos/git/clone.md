@@ -72,7 +72,7 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
    :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
 
 > [!IMPORTANT]
-> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations. [Learn more about our move away from using PATs for git operations](https://devblogs.microsoft.com/devops/?p=69907).
+> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations. [Learn more about our move away from using PATs for git operations](https://devblogs.microsoft.com/devops/?p=69930).
 
 ## Clone an Azure Repos Git repo
 
