@@ -19,7 +19,7 @@ monikerRange: '<= azure-devops'
 
 A Personal Access Token (PAT) serves as an alternative password for authenticating into Azure DevOps. This PAT identifies you and determines your accessibility and scope of access. Therefore, treat PATs with the same level of caution as passwords.
 
-When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use non-Microsoft tools that don't support Microsoft Entra accounts, or if you prefer not to share your primary credentials with these tools, PATs can be a suitable alternative. Otherwise, we recommend [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) over PATs whenever possible. 
+When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID is a recognized and supported method. If you use tools that don't support Microsoft Entra accounts or if you don't want to share your primary credentials with these tools, PATs can be a suitable alternative. Otherwise, we recommend [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) over PATs whenever possible. 
 
 > [!TIP]
 > We recommend reviewing our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to choose the appropriate authentication mechanism for your needs.
@@ -38,9 +38,9 @@ You can manage PATs through the following methods:
       - Go to **your profile** and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.
       - Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions assigned to you. Look for permissions related to managing tokens or user settings.
   - If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an Azure DevOps Administrator might need to grant you specific permissions or add you to an allowlist to create and manage PATs.
-  - PATs are connected to the user account that minted the token. Depending on the tasks you want the PAT to perform, you might need additional permissions yourself.
+  - PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.
 - **Access levels:** Have at least Basic access.
-- **Security best practices:** Familiarize yourself with [security best practices](../security/security-best-practices.md) for managing PATs. **Use them only when necessary and always regularlu rotate them.**
+- **Security best practices:** Familiarize yourself with [security best practices](../security/security-best-practices.md) for managing PATs. **Use them only when necessary and always regularly rotate them.**
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
@@ -62,12 +62,12 @@ Action required:
 ## PAT Best Practices
 * **_ALWAYS_** store your PATs in a secure key management solution, like [Azure KeyVault](/azure/key-vault/general/overview).
 * Use credential managers, like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or the [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider), whenever possible to make credential management simple. These tools may have options to use Microsoft Entra tokens instead of PATs.
-* When creating a PAT, don't put any personally identifiable information (PII) in the PAT name. Please don't rename the PAT token string as the name of your token.
+* When creating a PAT, don't put any personally identifiable information (PII) in the PAT name. Don't rename the PAT token string as the name of your token.
 * If your PAT doesn't need to access multiple organizations, only choose the organization it needs to access. If you have a workflow that requires a PAT to access multiple organizations, create a separate global PAT for just that workflow.
-* Choose only the minimally needed scopes for each PAT. If possible, create multiple PATs for each workflow with fewer scopes vs. a single fully-scoped PAT. If your PAT only needs read permissions, don't provide it write permissions until it's necessary.
-* Keep PAT lifespans short (weekly) and regularly rotate or regenerate them. This can be done on the UI or via the [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md).
+* Choose only the needed scopes for each PAT. If possible, create multiple PATs for each workflow with fewer scopes vs. a single fully scoped PAT. If your PAT only needs read permissions, don't provide it write permissions until it's necessary.
+* Keep PAT lifespans short (weekly) and regularly rotate or regenerate them. Do this on the UI or via the [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md).
 * [Tenant admins can set policies](manage-pats-with-policies-for-administrators.md) to restrict global PAT creation, full scoped PAT creation, and long-lived PAT duration. They can also enable policies to automatically revoke leaked PATs detected in public repositories. Use these policies to improve the security of your company.
-* Revoke PATs when they are no longer needed. Tenant admins can [revoke PATs for their organization users](admin-revoke-user-pats.md) if the PAT is compromised.
+* Revoke PATs when they're no longer needed. Tenant admins can [revoke PATs for their organization users](admin-revoke-user-pats.md) if the PAT is compromised.
 * Rotate your PATs to use the new PAT format for better leaked secret detection.
 
 ## FAQs
@@ -82,7 +82,7 @@ A: When a user is removed from Azure DevOps, the PAT invalidates within 1 hour. 
 
 ### Q: Is there a way to renew a PAT via REST API?
 
-A: Yes, there's a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md). For more information, see [Manage PATs using REST API](manage-personal-access-tokens-via-api.md) and [FAQs](manage-personal-access-tokens-via-api.md#q-how-can-i-regeneraterotate-pats-through-the-api-i-saw-that-option-in-the-ui-but-i-dont-see-a-similar-method-in-the-api).
+A: Yes, there's a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md#q-how-can-i-regeneraterotate-pats-through-the-api-i-saw-that-option-in-the-ui-but-i-dont-see-a-similar-method-in-the-api).
 
 ### Q: Can I use PATs with all Azure DevOps REST APIs?
 
