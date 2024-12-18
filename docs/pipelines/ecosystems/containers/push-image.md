@@ -29,6 +29,7 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 | **Azure** | - An [Azure subscription](https://azure.microsoft.com/free/).<br>   - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal). |
 | **Docker Hub**   | - A [Docker Hub](https://hub.docker.com/) account.<br>   - A [Docker Hub](https://hub.docker.com/) image repository. |
 
+
 ::: zone pivot="docker-registry"
 
 ## Create a Docker service connection
@@ -78,17 +79,15 @@ To create a pipeline using the classic editor, follow these steps:
 
 ### Add the Docker@2 task to the pipeline
 
-Add the Docker@2 task to the pipeline to build and push the image to the container registry.
+To build and push the image to the container registry, add the Docker@2 task to the pipeline.
 
-1. Select the add task icon on **Agent job 1**.
+1. Add a task to the **Agent job 1**.
   :::image type="content" source="../media/classic-pipeline-add-task.png" alt-text="Screenshot of add task icon.":::
 1. Select the **Docker** task, and **Add**.
 1. Select the **buildAndPush** task.
-1. For **Container Registry**, select the service connection you created earlier.  If you don't have one, you can select ***+New*** to create a new Docker Hub service connection.
+1. For **Container Registry**, select the service connection you created earlier. If you don't have one, you can select ***+New*** to create a new Docker Hub service connection.
 
-    :::image type="content" source="../media/classic-pipeline-docker2-docker-build-and-push-task.png" alt-text="Screenshot of task to push image to Docker Hub.":::
-
-  :::image type="content" source="../media/classic-pipeline-docker2-docker-build-and-push-task.png" alt-text="Screenshot of task to push image to Docker Hub.":::
+  :::image type="content" source="../media/classic-pipeline-docker2-docker-build-and-push-task.png" alt-text="Screenshot of task to build and push image to Docker Hub.":::
 
 ### Run the pipeline
 
@@ -96,12 +95,8 @@ Add the Docker@2 task to the pipeline to build and push the image to the contain
 1. On the **Run pipeline** page, select **Save and run**.
 1. Select **Job** to view the logs and verify the pipeline ran successfully.
 
-    
-      :::image type="content" source="../media/classic-pipeline-push-image-task-docker.png" alt-text="Screenshot of task to push image to Docker Hub.":::
 
-1. Select **Save and queue** and on the **Run pipeline** page, select **Save and run**.
-
-# [YAML](#tab/yaml).  
+# [YAML](#tab/yaml)
 
 The Docker@2 task is used to build and push the image to the container registry.
 The [Docker@2 task](/azure/devops/pipelines/tasks/build/docker) is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
@@ -159,7 +154,7 @@ Use the following steps to create a YAML pipeline that uses the Docker@2 task to
 
 To create your classic pipeline, follow these steps:
 
-1. From your Azure DevOps projec, select **Pipelines** and **New pipeline**
+1. From your Azure DevOps project, select **Pipelines** and **New pipeline**
 1. Select **Use the classic editor** from the **Where is your code?** page.
 1. On the **Select a source** page, select **GitHub**.
 1. Choose your repository and select **Continue**.
@@ -172,22 +167,27 @@ To create your classic pipeline, follow these steps:
 
 Add a **Docker@2** task to the pipeline to build and push the image to the container registry. 
 
-1. Select the add task icon on **Agent job 1**.
+1. Add a task to **Agent job 1**.
   :::image type="content" source="../media/classic-pipeline-add-task.png" alt-text="Screenshot of add task icon.":::
 1. Select the **Docker** task, and **Add**.
 1. Select the **buildAndPush** task.
-1. To create a service connection:
-    1. Select **+New**.
+1. Create a service connection select **+New**.
 
-      :::image type="content" source="../media/classic-pipeline-new-service-connection-selection.png" alt-text="Screenshot of new service connection selection."::: 
+  :::image type="content" source="../media/classic-pipeline-new-service-connection-selection.png" alt-text="Screenshot of new service connection selection."::: 
 
-    1. Select your **Subscription**.
-    1. Select your **Azure container registry**.
-    1. Enter a **Service connection name**.
-    1. Select **Grant access permission to all pipelines**.
-    1. Select **Save**.
+1. Fill in the following fields:
 
-      :::image type="content" source="../media/classic-pipeline-new-cr-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry .":::
+    | Field | Description |
+    |---|---|
+    | **Subscription** | Select your Azure subscription. |
+    | **Azure container registry** | Select your Azure container registry. |
+    | **Service connection name** | Enter a name for the service connection. |
+    | **Grant access permission to all pipelines** | Select this option to grant access to all pipelines. |
+
+    :::image type="content" source="../media/classic-pipeline-new-cr-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry service connection.":::
+
+1. Select **Save**.
+
 
 ### Run the pipeline
     
