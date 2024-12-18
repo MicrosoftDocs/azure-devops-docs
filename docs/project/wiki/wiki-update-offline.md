@@ -63,10 +63,10 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
    :::image type="content" source="media/wiki/work-offline-wikiMaster-files.png" alt-text="Wiki main files":::
 
-> [!IMPORTANT]
-> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations. [Learn more about our move away from using PATs for git operations](https://devblogs.microsoft.com/devops/?p=69930).
+	> [!IMPORTANT]
+	> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations. [Learn more about our move away from using PATs for git operations](https://devblogs.microsoft.com/devops/?p=69930).
 
-5. Use the URL that you copied to clone the repo in the IDE that you use. For more information, see one of the following articles:
+4. Use the URL that you copied to clone the repo in the IDE that you use. For more information, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?tabs=visual-studio)
