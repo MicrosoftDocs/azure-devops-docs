@@ -23,23 +23,23 @@ Microsoft Entra apps and Azure DevOps apps are separate entities with no knowled
 
 We recommend reading the Microsoft Entra documentation thoroughly to understand the new functionality available via Microsoft Entra and the [different expectations](/entra/identity-platform/application-model) of you during setup. 
 
-We've provided guidance to support your app development for:
+We have guidance to support your app development for:
 * [Microsoft Entra OAuth apps (on-behalf-of user apps)](entra-oauth.md) for apps that perform actions on behalf of consenting users
 * [Microsoft Entra service principals and managed identities (on-behalf-of itself apps)](service-principal-managed-identity.md) for apps that perform automated tooling within a team
 
 ## Replacing PATs with Microsoft Entra tokens
 [Personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) remain one of the most popular forms of authentication for Azure DevOps users for their ease of creation and use. However, poor PAT management and storage can result in unauthorized access to your Azure DevOps organizations. Letting PATs live for a long lifespan or over-scoping them can also increase the risk of damage that a leaked PAT can do.
 
-Microsoft Entra tokens provide an appealing alternative since they only last for one hour before they must be refreshed. The authentication protocols to generate Entra tokens are more robust and secure. Security measures like [conditional access policies](../../../organizations/accounts/change-application-access-policies.md#cap-support-on-azure-devops) protect against token theft and replay attacks than PATs. We're hoping to engage more users to explore using Microsoft Entra tokens wherever PATs may be commonly used today. Below are some of the most popular PAT use cases and ways you might be able to replace the PAT with an Entra token in this workflow.
+Microsoft Entra tokens provide an appealing alternative since they only last for one hour before they must be refreshed. The authentication protocols to generate Entra tokens are more robust and secure. Security measures like [conditional access policies](../../../organizations/accounts/change-application-access-policies.md#cap-support-on-azure-devops) protect against token theft and replay attacks. We're hoping to engage more users to explore using Microsoft Entra tokens wherever PATs may be commonly used today. We share some of the most popular PAT use cases and ways you might be able to replace the PAT with an Entra token in this workflow.
 
 ### Ad-hoc requests to Azure DevOps REST APIs
 
-You can also use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users to call [Azure DevOps REST APIs](/rest/api/azure/devops/). Since Entra access tokens only live for one hour, they are ideal for quick one-off operations, like API calls that don't need a persistent token. 
+You can also use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users to call [Azure DevOps REST APIs](/rest/api/azure/devops/). Since Entra access tokens only live for one hour, they're ideal for quick one-off operations, like API calls that don't need a persistent token. 
 
 #### Acquire user tokens in Azure CLI
-Credit to these instructions go to the [Databricks docs](/azure/databricks/dev-tools/user-aad-token).
+Credit to these instructions goes to the [Databricks docs](/azure/databricks/dev-tools/user-aad-token).
 
-  1. Sign in to the Azure CLI using the `az login` command. Follow the on-screen instructions to sign in.
+  1. Sign in to the Azure CLI using the `az login` command and follow the on-screen instructions.
   2. Set the right correct subscription for the signed-in user with these bash commands. Make sure the Azure subscription ID is associated with the tenant connected to the  Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
   ``` bash
   az account set -s <subscription-id>
