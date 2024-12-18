@@ -33,7 +33,7 @@ In this article, you'll learn how to:
 
 - Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
-- Install [PowerShell](powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the required *PowerShellGet* version needed for installing *PSResourceGet*.
+- Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the required *PowerShellGet* version needed for installing *PSResourceGet*.
 
 - Install [PSResourceGet](/powershell/gallery/powershellget/install-powershellget).
 
@@ -231,7 +231,7 @@ In this article, you'll learn how to:
 
 - Install the [dotnet runtime](https://dotnet.microsoft.com/en-us/download) version *8.0.x* or later.
 
-- Install [PowerShell](powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the appropriate *PowerShellGet* and *PackageManagement* versions.
+- Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the appropriate *PowerShellGet* and *PackageManagement* versions.
 
 ## Create a personal access token
 
