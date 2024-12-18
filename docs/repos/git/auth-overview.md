@@ -63,6 +63,9 @@ export HEADER_VALUE=$(echo -n "Authorization: Basic "$(printf ":%s" "$MY_PAT" | 
 git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
+---
+
+
 >[!TIP]
 > If you are using PATs regularly, look into the [Git Credential Manager (GCM)](set-up-credential-managers.md) instead to avoid entering your credentials everytime. Even better, explore using GCM with default credential type as `Oauth` to generate Microsoft Entra tokens instead of PATs whenever possible.
 
