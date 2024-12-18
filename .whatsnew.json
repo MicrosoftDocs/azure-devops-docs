@@ -7,11 +7,6 @@
       "relativeLinkPrefix": "/azure/devops/"
     },
     "inclusionCriteria": {
-      "additionalMicrosoftOrgs": [
-        "GitHub",
-        "Microsoft",
-        "MicrosoftDocs"
-      ],
       "minAdditionsToFile": 10,
       "omitPullRequestTitles": true
     },
