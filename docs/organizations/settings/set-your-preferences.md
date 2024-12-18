@@ -40,7 +40,7 @@ We're previewing the ability to use your profile picture, name, email address, a
 
 2. From the **Profile** page, you can change the profile picture, display name, contact information, and region. The following image shows that Christie Church is enrolled in the Microsoft Entra profile information preview.
 
-   ![Screenshot shows Entra profile information in the Profile page.](media/entra-profile-preview.png)
+   :::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Entra profile information in the Profile page.":::
 
 If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
 
