@@ -1,6 +1,6 @@
 ---
 ms.topic: how-to
-title: Authenticating to Azure DevOps with Microsoft Entra ID access tokens
+title: Authenticate to Azure DevOps with Microsoft Entra ID access tokens
 description: Use Microsoft Entra authentication to access Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.subservice: azure-devops-security
@@ -41,16 +41,16 @@ Credit to these instructions goes to the [Databricks docs](/azure/databricks/dev
 
   1. Sign in to the Azure CLI using the `az login` command and follow the on-screen instructions.
   2. Set the right correct subscription for the signed-in user with these bash commands. Make sure the Azure subscription ID is associated with the tenant connected to the  Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
-  ``` bash
-  az account set -s <subscription-id>
-  ```
+    ``` bash
+    az account set -s <subscription-id>
+    ```
   3. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-  ``` bash
-  az account get-access-token \
-  --resource 499b84ac-1321-427f-aa17-267ca6975798 \
-  --query "accessToken" \
-  -o tsv
-  ```
+    ``` bash
+    az account get-access-token \
+    --resource 499b84ac-1321-427f-aa17-267ca6975798 \
+    --query "accessToken" \
+    -o tsv
+    ```
 
 #### Acquire service principal tokens in Azure CLI
 Service principals can also use ad-hoc Microsoft Entra ID access tokens for ad-hoc operations.
