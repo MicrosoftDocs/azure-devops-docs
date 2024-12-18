@@ -288,6 +288,11 @@ The following tables describe the type of events (or actions) that are available
 | `Project.UpdateRenameQueued` | Rename for project {PreviousProjectName} to {ProjectName} was started. |
 | `Project.UpdateVisibilityCompleted` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was successful. |
 | `Project.UpdateVisibilityQueued` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was started. |
+| `Project.IterationPath.Create` | IterationPath {Path} has been created. |
+| `Project.IterationPath.Update` | IterationPath {Path} has been updated. |
+| `Project.IterationPath.Delete` | IterationPath {Path} has been deleted. |
+| `Project.Process.Modify` | Process for project {ResolveProjectId:ProjectId} was changed from {OldProcessName} to {ProcessName}. |
+| `Project.Process.ModifyWithoutOldProcess` | Process for project {ResolveProjectId:ProjectId} was changed to {ProcessName}. |
 
 ### Release events
 
