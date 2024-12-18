@@ -112,11 +112,11 @@ These instructions are provided by the Databricks docs and more details can be f
   1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
   2. Follow the on-screen instructions and finish signing in.
   ``` powershell
-# To authenticate a service principal with a password or cert:
-az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
+  # To authenticate a service principal with a password or cert:
+  az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
 
-# To authenticate a managed identity:
-az login --identity
+  # To authenticate a managed identity:
+  az login --identity
   ```
 
   3. Set the right correct subscription for the signed-in service principal by entering the command:
@@ -130,15 +130,15 @@ az login --identity
   ```
 
   5. Now, you can use `az cli` commands per usual. Let's try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
-```powershell
-$apiVersion = "7.1-preview.1"
-$uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
-$headers = @{
-    Accept = "application/json"
-    Authorization = "Bearer $accessToken"
-}
-Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
-```
+  ```powershell
+  $apiVersion = "7.1-preview.1"
+  $uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
+  $headers = @{
+      Accept = "application/json"
+      Authorization = "Bearer $accessToken"
+  }
+  Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
+  ```
 
 
 > [!NOTE]
@@ -162,7 +162,7 @@ Some common scenarios for authenticating with service principals besides making 
 * Create [secret-free service connections in Azure Pipelines](../../../pipelines/library/connect-to-azure.md) backed by service principals or managed identities.
 * [Clone repos using a service principal with Git Credential Manager](../../../repos/git/set-up-credential-managers.md)
 
-## How do service principals differ from users
+## How do service principals differ from users?
 * You can't modify a service principal’s display name or avatar on Azure DevOps.
 * A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 * Service principals can't be organization owners or create organizations.
