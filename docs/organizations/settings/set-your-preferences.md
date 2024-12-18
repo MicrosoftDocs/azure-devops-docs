@@ -42,7 +42,7 @@ We're previewing the ability to use your profile picture, name, email address, a
 
    ![Screenshot shows Entra profile information in the Profile page.](media/entra-profile-preview.png)
 
-If you run into any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
+If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
 
    :::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
 
@@ -89,7 +89,9 @@ If you run into any issues using Microsoft Entra profile information, let us kno
 
 To receive information, tips, and resources related to Azure DevOps, enter a check in the box and select **Save**.
 
-User profile settings are updated.
+User profile settings get updated.
+
+---
 
 ## FAQs
 
