@@ -21,9 +21,9 @@ Entra tokens can also be used for [ad-hoc requests with the Azure CLI](entra.md#
 > [!IMPORTANT]
 > When creating a new OAuth 2.0 app, start here with Microsoft Entra OAuth apps, as [Azure DevOps OAuth apps](azure-devops-oauth.md) are planned for deprecation in 2026. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
-### Helpful resources
+## Helpful resources
 
-#### For developers
+### For developers
 * [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app)
 * [Add permissions to access Microsoft Graph](/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-microsoft-graph): Useful to learn how to add delegated permissions from an Azure resource. Instead of Microsoft Graph, select `Azure DevOps` from the list of resources instead.
 * [Scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc): Read up on the `.default` scope. See the scopes available for Azure DevOps in [our list of scopes](oauth.md#scopes).
@@ -32,12 +32,12 @@ Entra tokens can also be used for [ad-hoc requests with the Azure CLI](entra.md#
 * [Manage personal access tokens via API](../../../organizations/accounts/manage-personal-access-tokens-via-api.md): Using the PAT lifecycle management APIs requires Microsoft Entra tokens and our docs and the [associated sample app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) might be a helpful example for setting up a Microsoft Entra app to use Azure DevOps REST APIs.
 * [Support and help options for developers](/entra/identity-platform/developer-support-help-options)
 
-#### For admins
+### For admins
 * [What is application management in Microsoft Entra ID?](/entra/identity/enterprise-apps/what-is-application-management)
 * [Quickstart: Add an enterprise application](/entra/identity/enterprise-apps/add-application-portal)
 * [Consent experience for applications in Microsoft Entra ID](/entra/identity-platform/application-consent-experience)
 
-#### Building & migrating tips
+## Building & migrating tips
 > [!NOTE]
 > Microsoft Entra OAuth apps doesn't natively support MSA users for Azure DevOps REST APIs. If you are building an app that must cater to MSA users or supports both Microsoft Entra and MSA users, [Azure DevOps OAuth apps](azure-devops-oauth.md) remains your best option. We are currently working on native support for MSA users through Microsoft Entra OAuth.
 
