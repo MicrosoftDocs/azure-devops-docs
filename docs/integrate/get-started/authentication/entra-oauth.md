@@ -13,7 +13,7 @@ ms.date: 10/28/2024
 # Building for Azure DevOps with Microsoft Entra OAuth Apps
 
 ## Entra OAuth Tokens
-The Microsoft Identity platform offers a number of ways to authenticate users via [the OAuth 2.0 protocol](/entra/identity-platform/v2-protocols). In these docs, we use OAuth tokens to colloquially refer to [on-behalf-of user flows](/entra/identity-platform/v2-oauth2-on-behalf-of-flow), aka [delegated flows](/entra/identity-platform/delegated-access-primer), for apps that request tokens to perform actions for their users. The rest of this guide offers helpful resources for these app developers. 
+The Microsoft Identity platform offers many ways to authenticate users via [the OAuth 2.0 protocol](/entra/identity-platform/v2-protocols). In these docs, we use OAuth tokens to colloquially refer to [on-behalf-of user flows](/entra/identity-platform/v2-oauth2-on-behalf-of-flow), also known as [delegated flows](/entra/identity-platform/delegated-access-primer), for apps that request tokens to perform actions for their users. The rest of this guide offers helpful resources for these app developers. 
 
 Another common app flow we support is building [on-behalf-of app using service principals and managed identities](service-principal-managed-identity.md).
 Entra tokens can also be used for [ad-hoc requests with the Azure CLI](entra.md#acquire-user-tokens-in-azure-cli) or [git operations through the Git Credential Manager](entra.md#git-operations-with-git-credential-manager).
