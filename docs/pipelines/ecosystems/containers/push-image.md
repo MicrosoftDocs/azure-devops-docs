@@ -1,7 +1,7 @@
 ---
 title: Use Azure Pipelines to build and push container images to registries
 description: Use Azure Pipelines to build and push container images to Docker Hub and Azure Container Registry.
-ms.topic: conceptual
+ms.topic: tutorial
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: v-catherbund
 author: cebundy
@@ -13,12 +13,9 @@ zone_pivot_groups: pipelines-docker-acr
 
 # Use Azure Pipelines to build and push container images to registries
 
-[!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-eq-2022](../../../includes/version-eq-azure-devops.md)] 
 
-
-This article guides you through the setup and configuration in Azure Pipelines to build and push a Docker image to an Azure Container Registry and Docker Hub. Additionally, it details the use of the `System.AccessToken` for secure authentication within your pipeline.
-
-You learn how to create a YAML pipeline to build and push a Docker image to a container registry using the Docker@2 task.
+This article guides you through the creaton of a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. 
 
 ## Prerequisites
 
@@ -55,13 +52,17 @@ To create a service connection:
 
     :::image type="content" source="../media/docker-registry-selection.png" alt-text="Screenshot of Docker Registry selection.":::
 
-1. Select **Docker Hub**.
+1. Select **Docker Hub** and enter the following information:
 
-    :::image type="content" source="../media/docker-hub-service-connection-dialog.png" alt-text="{alt-text}":::
+    | Field | Description |
+    |---|---|
+    | **Docker ID** | Enter your Docker ID. |
+    | **Docker Password** | Enter your Docker password. |
+    | **Service connection name** | Enter a name for the service connection. |
+    | **Grant access permission to all pipelines** | Select this option to grant access to all pipelines. |
 
-1. Enter your **Docker ID** and **Docker Password**.
-1. Enter the **Service connection name** to use for the service connection in task properties.
-1. Select **Grant access permission to all pipelines**.
+    :::image type="content" source="../media/docker-hub-service-connection-dialog.png" alt-text="Screenshot of Docker Hub service connection dialog.":::
+
 1. Select **Verify and save**.
 
 :::zone-end
@@ -230,47 +231,3 @@ The [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) is design
 :::zone-end
 
 When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with elevated privileges.  
-
-## Using System.AccessToken for Authentication in Docker@2 Task
-
-You can authenticate with a container registry using the `System.AccessToken` provided by Azure DevOps. This token allows secure access to resources within your pipeline without exposing sensitive credentials.
-
-The following YAML pipeline example, the Docker@2 task is used to sign in to the container registry and push the Docker image. The `System.AccessToken` is set as an environment variable to authenticate the Docker commands.
-
-Replace `<docker connection>` with your Docker registry service connection name.
-Replace `<your repository>` with the name of your Docker repository.
-
-
-```yaml
-trigger:
-- main
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-variables:
-  SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-
-steps:
-- task: Docker@2
-  inputs:
-    command: login
-    containerRegistry: '<docker connection>'
-  env:
-    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-
-- task: Docker@2
-  inputs:
-    command: buildAndPush
-    repository: '<your repository>'
-    dockerfile: '**/Dockerfile'
-    tags: |
-      $(Build.BuildId)
-  env:
-    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-```
-
-## Related articles
-
-- [Use Docker YAML to build and push images to Azure Container Registry](./acr-template.md)
-- [Use Docker YAML to build and push images to Azure Container Registry (self-hosted agent)](./publish-to-acr.md)
