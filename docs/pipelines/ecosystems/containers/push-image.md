@@ -22,15 +22,24 @@ You learn how to create a YAML pipeline to build and push a Docker image to a co
 
 ## Prerequisites
 
+:::zone pivot="acr-registry"
+
 | **Product** | **Requirements**   |
 |---|---|
 | **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - If you're using a self-hosted agent, ensure Docker is installed and the Docker engine is running with elevated privileges. Microsoft-hosted agents have Docker preinstalled. |
 | **GitHub** | - A [GitHub](https://github.com) account.<br>   - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.<br>   - A [GitHub service connection](../../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.|
 | **Azure** | - An [Azure subscription](https://azure.microsoft.com/free/).<br>   - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal). |
-| **Docker Hub**   | - A [Docker Hub](https://hub.docker.com/) account.<br>   - A [Docker Hub](https://hub.docker.com/) image repository. |
 
+:::zone-end
 
 ::: zone pivot="docker-registry"
+
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - If you're using a self-hosted agent, ensure Docker is installed and the Docker engine is running with elevated privileges. Microsoft-hosted agents have Docker preinstalled. |
+| **GitHub** | - A [GitHub](https://github.com) account.<br>   - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.<br>   - A [GitHub service connection](../../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.|
+| **Docker Hub**   | - A [Docker Hub](https://hub.docker.com/) account.<br>   - A [Docker Hub](https://hub.docker.com/) image repository. |
+
 
 ## Create a Docker service connection
 
@@ -184,7 +193,7 @@ Add a **Docker@2** task to the pipeline to build and push the image to the conta
     | **Service connection name** | Enter a name for the service connection. |
     | **Grant access permission to all pipelines** | Select this option to grant access to all pipelines. |
 
-    :::image type="content" source="../media/classic-pipeline-new-cr-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry service connection.":::
+    :::image type="content" source="../media/classic-pipeline-new-acr-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry service connection.":::
 
 1. Select **Save**.
 
