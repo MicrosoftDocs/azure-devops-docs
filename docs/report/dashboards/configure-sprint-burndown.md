@@ -74,7 +74,7 @@ A healthy sprint burndown report looks something like the image shown here. The 
 
 | Element | Description |
 |:--------|:------------|
-| **Date range** | The  start and end date of the sprint. |
+| **Date range** | The start and end date of the sprint. |
 | **Stories Remaining** | The number of stories remaining in the sprint. If you choose a different work item type, the remaining number of those work items is shown. |
 | **Completed** | The percentage of work completed based on original scope. Select **Completed** to see the full list of completed work items. |
 | **Average burndown** | Average work completed. |
@@ -127,7 +127,7 @@ The Analytics-based Sprint Burndown widget provides an easy way to monitor progr
 
 | Element | Description |
 |:--------|:------------|
-| **Date range** | The  start and end date of the sprint. |
+| **Date range** | The start and end date of the sprint. |
 | **Tasks Remaining** | The number of tasks remaining in the sprint. If you choose a different work item type, the remaining number of those work items is shown. |
 | **Completed** | The percentage of work completed based on original scope. Select **Completed** to see the full list of completed work items. |
 | **Average burndown** | Average work completed. |
