@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 08/13/2024
+ms.date: 12/12/2024
 ---
 
 # Security best practices
@@ -71,8 +71,16 @@ For more information, see [Application management best practices](/azure/active-
 
 The system handles permissions at various levels—individual, collection, project, and object—and assigns them to one or more built-in groups by default. To enhance security, do the following actions:
 
-- **Provide least privilege access:** Give users and services the minimum necessary access to perform their business functions.
+- **Provide least privilege access:** Ideally, users and services should have the minimum necessary access to perform their business functions.
+
+> [!NOTE]
+> In the context of CI/CD, implementing [least privilege access](https://wikipedia.org/wiki/Principle_of_least_privilege) can be counterproductive due to the dynamic nature of architecture. Each time a new service gets introduced, permissions must be updated beforehand. Additionally, rollbacks might require extra permissions that need to be considered. This challenge is magnified in environments with multiple pipelines.
+> While least privilege permissions aim to minimize the impact of security breaches, it's crucial to balance security with productivity. You can achieve this balance by adopting more permissive access and mitigating the associated risks with compensating controls and security practices outlined on this page.
+
 - **Disable inheritance:** Whenever possible, disable inheritance. Inheritance can inadvertently grant access or permissions to unexpected users due to its allow-by-default nature. For more information, see the [section on permission inheritance](about-permissions.md#permission-inheritance)
+- **Environment segmentation:** Allocate separate Azure accounts for Development, Testing, Production, and other environments. This approach enhances security by minimizing the [blast radius](https://wikipedia.org/wiki/Blast_radius) and prevents resource conflicts and data contamination. Additionally, it enables multiple ephemeral, feature-specific resources within the development account. For large organizations, consider allocating at least one account per team per environment. Separate accounts for business-critical workloads may also be warranted. Consider adopting [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/) for streamlined provisioning and management.
+- **Access control and compliance:** Leverage [Azure Policy](/azure/governance/policy/overview) in Management Groups to restrict access to unused Azure regions and services, ensuring compliance with organizational standards.
+- **Attribute-Based Access Control (ABAC):** Implement [ABAC](/azure/role-based-access-control/conditions-overview) with properly tagged resources to limit rogue actor access and prevent unauthorized resource creation.
 
 For more information about permissions, see the following articles: 
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
@@ -198,7 +206,7 @@ For more information, see [Manage PATs with policies - for administrators](../ac
 
 - [Use extends templates](../../pipelines/security/templates.md#use-extends-templates).
 - [Set pipeline permissions](../../pipelines/policies/permissions.md)
-- [Secure Azure Pipelines overview](../../pipelines/security/overview.md).
+- **Adopt and Secure Infrastructure as Code (IaC):** Use IaC tools like Azure Resource Manager (ARM) templates or Bicep to define and provision infrastructure directly from your pipeline. Leverage version control to track changes, implement linting and static analysis to identify vulnerabilities, and use Azure Policy to enforce compliance and security standards during pipeline execution. For more information, see [Secure Azure Pipelines overview](../../pipelines/security/overview.md).
 
 ### Policies
 
