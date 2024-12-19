@@ -6,7 +6,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 11/13/2024
+ms.date: 12/19/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,9 +17,9 @@ If you're troubleshooting an issue with Azure DevOps, and you need to contact Mi
 > [!WARNING]
 > Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Please remove any sensitive information before sharing traces with others. Microsoft support uses these traces for troubleshooting purposes only.
 
-You can capture this information any supported browser: Microsoft Edge or Google Chrome. Steps for each browser are shown as follows.
+You can capture this information from Microsoft Edge or Google Chrome. Steps for each browser are shown as follows.
 
-## Microsoft Edge
+## Use Microsoft Edge
 
 The following steps show how to use the developer tools in Microsoft Edge. For more information, see [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium).
 
@@ -40,10 +40,7 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
    [Screenshot placeholder]
 
 5. Close the settings menu.
-6. Ensure the network tab is set to “Preserve log” and is capturing traffic.
-
-   [Screenshot placeholder]
-
+6. Ensure the network tab is set to "Preserve log" and is capturing traffic.
 7. Ensure you're signed in to Azure DevOps. It's important to sign in _before_ you start the trace so that the trace doesn't contain sensitive information related to your account.
 8. Go to the step before where the issue occurs.
 9. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
@@ -52,9 +49,9 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
 
    [Screenshot placeholder]
 
-12. (Optional) Uncheck the “Allow to generate HAR with sensitive data” box when you're done.
+12. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
-## Google Chrome
+## Use Google Chrome
 
 The following steps show how to use the developer tools in Google Chrome. For more information, see [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools).
 
@@ -68,10 +65,7 @@ The following steps show how to use the developer tools in Google Chrome. For mo
    [Screenshot placeholder]
 
 4. Close the settings menu.
-5. Ensure the network tab is set to “Preserve log” and is capturing traffic.
-
-   [Screenshot placeholder]
-
+5. Ensure the network tab is set to "Preserve log" and is capturing traffic.
 6. Ensure you're signed in to Azure DevOps. It's important to sign in _before_ you start the trace so that the trace doesn't contain sensitive information related to your account.
 7. Go to the step before where the issue occurs.
 8. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
@@ -80,7 +74,7 @@ The following steps show how to use the developer tools in Google Chrome. For mo
 
    [Screenshot placeholder]
 
-11. (Optional) Uncheck the “Allow to generate HAR with sensitive data” box when you're done.
+11. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
 ## Next steps
 
