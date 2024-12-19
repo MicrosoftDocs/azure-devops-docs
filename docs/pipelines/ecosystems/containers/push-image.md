@@ -15,7 +15,7 @@ zone_pivot_groups: pipelines-docker-acr
 
 [!INCLUDE [version-eq-2022](../../../includes/version-eq-azure-devops.md)] 
 
-This article guides you through the creaton of a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. 
+This article guides you through the creation of a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. 
 
 ## Prerequisites
 
@@ -95,7 +95,7 @@ To build and push the image to the container registry, add the Docker@2 task to 
   :::image type="content" source="../media/classic-pipeline-add-task.png" alt-text="Screenshot of add task icon.":::
 1. Select the **Docker** task, and **Add**.
 1. Select the **buildAndPush** task.
-1. For **Container Registry**, select the service connection you created earlier. If you don't have one, you can select ***+New*** to create a new Docker Hub service connection.
+1. For **Container Registry**, select the service connection you created earlier. If you don't have one, select ***+New*** to create a new Docker Hub service connection.
 
   :::image type="content" source="../media/classic-pipeline-docker2-docker-build-and-push-task.png" alt-text="Screenshot of task to build and push image to Docker Hub.":::
 
@@ -164,7 +164,7 @@ Use the following steps to create a YAML pipeline that uses the Docker@2 task to
 
 To create your classic pipeline, follow these steps:
 
-1. From your Azure DevOps project, select **Pipelines** and **New pipeline**
+1. From your Azure DevOps project, select **Pipelines** and **New pipeline**.
 1. Select **Use the classic editor** from the **Where is your code?** page.
 1. On the **Select a source** page, select **GitHub**.
 1. Choose your repository and select **Continue**.
@@ -217,8 +217,8 @@ To create a pipeline using the classic editor, follow these steps:
     - If you're redirected to GitHub to sign in, enter your GitHub credentials.
     - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 1. Select the **Docker -  Build and push an image to Azure Container Registry** template.
-1. Select you Azure subscription and **Continue**.
-1. Select a Container Registry, and then select **Validate and configure**.
+1. Select your Azure subscription and **Continue**.
+1. Select your Container Registry, and then select **Validate and configure**.
 1. Select **Save and run** and **Save and run** again.
 1. Select **Job** to view the logs and verify the pipeline ran successfully.
 
@@ -231,3 +231,8 @@ The [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) is design
 :::zone-end
 
 When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with elevated privileges.  
+
+## Related articles
+
+- [Build a container image](build-image.md)
+- [Docker content trust](content-trust.md)
