@@ -108,9 +108,9 @@ To use this method of authentication, you must configure your TFS server as foll
 
 > [!NOTE]
 > By product design, IIS anonymous authentication is required for OAuth authentication to work.
-> This OAuth authentication is being used by azure devops for the agent and pipeline functionality, for this reason even if we have agents already configured, those agents will become unusable if we disable the 
-> Anonymous authentication.
-> Azure devops product already have an excellent security approach. The TFS/azure devops server application in IIS will not let unauthenticated requests through. That just lets it through the IIS front door to the
+> This OAuth authentication is being used by Azure Devops for the agent and pipeline functionality, for this reason even if we have agents already configured, those agents will become unusable if we disable the 
+> anonymous authentication.
+> Azure Devops product already have an excellent security approach. The TFS/azure devops server application in IIS will not let unauthenticated requests through. That just lets it through the IIS front door to the
 > application which enforces OAuth. For example, in a pipeline run, the build server generates an OAuth token per build which is scoped to the build and expires after the build. So even though the token is guarded, if
 > leaked, it's useless after the build - contrary to an identity. The OAuth token is also not available to code run by the build process (unit tests checked in by developers). If it relied on the windows identity the
 > windows service ran as, then developers running unit tests in the CI could elevate to access or delete code they don't have permissions to.
