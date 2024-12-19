@@ -1,13 +1,13 @@
 ---
 title: Set user preferences
 titleSuffix: Azure DevOps
-description: Learn how to change a user's picture, preferred email, and other user preferences from the user's Azure DevOps profile.
+description: Learn how to change a user's picture, preferred email address, and other user preferences from the user's Azure DevOps profile.
 ms.subservice: azure-devops-settings
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/17/2024
+ms.date: 12/19/2024
 ---
 
 # Set user preferences
@@ -16,39 +16,17 @@ ms.date: 12/17/2024
 
 ::: moniker range="azure-devops"
 
-You can set user preferences on the user profile page in Azure DevOps. Changes can include the picture, display name, preferred email, and UI theme. These settings only apply to Azure DevOps.
+You can set user preferences on the user profile page in Azure DevOps. Changes can include the picture, display name, preferred email address, and UI theme. These settings only apply to Azure DevOps.
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
-On the Azure DevOps user profile page, you can change the user picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences.
+On the Azure DevOps user profile page, you can change the user picture, display name, preferred email address, language, date and time pattern, time zone, and other user interface preferences.
 
 ::: moniker-end
 
 ## Set preferences
-
-#### [New Teams Page](#tab/preview-page) 
-
-::: moniker range="azure-devops"
-
-We're previewing the ability to use your profile picture, name, email address, and region as configured in Microsoft Entra within Azure DevOps.
-
-1. From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
-
-   ![Screenshot shows button sequence to get to Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
-
-2. From the **Profile** page, you can change the profile picture, display name, contact information, and region. The following image shows that Christie Church is enrolled in the Microsoft Entra profile information preview.
-
-   :::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Entra profile information in the Profile page.":::
-
-If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
-
-   :::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
@@ -58,7 +36,7 @@ If you encounter any issues using Microsoft Entra profile information, let us kn
 
    ![Screenshot shows buttons to get to Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
 
-2. From the **Profile** page, you can change the profile picture, display name, contact information, and region. Select **Save**.
+2. From the **Profile** page, you can change the profile picture, display name, contact email address, and region. Select **Save**.
 
    ![Screenshot to choose and edit the Profile page.](media/edit-about-page-preview.png)
 
@@ -73,7 +51,7 @@ If you encounter any issues using Microsoft Entra profile information, let us kn
 2. From the **General** tab, you can change the following information:
    - Profile picture
    - Display name
-   - Preferred email 
+   - Preferred email address
    - Whether borders appear for fields on work item forms.
 
 	:::image type="content" source="media/user-preferences/user-profile-dialog-general-tab.png" alt-text="Screenshot of User Profile dialog, General tab.":::
@@ -87,11 +65,27 @@ If you encounter any issues using Microsoft Entra profile information, let us kn
 
 ::: moniker-end
 
+#### [Microsoft Entra profile preview](#tab/preview-page) 
+
+::: moniker range="azure-devops"
+
+We're previewing the ability to use your profile picture, name, email address, and region as configured in Microsoft Entra within Azure DevOps.
+
+1. From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
+
+   ![Screenshot shows button sequence to get to Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
+
+2. From the **Profile** page, you can change the profile picture, display name, contact information, and region. The following image shows that Christie Church is enrolled in the Microsoft Entra profile information preview.
+
+   :::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Microsoft Entra profile information in the Profile page.":::
+
+If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
+
+   :::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
+
 To receive information, tips, and resources related to Azure DevOps, enter a check in the box and select **Save**.
 
 User profile settings get updated.
-
----
 
 ## FAQs
 
@@ -99,16 +93,21 @@ See the following frequently asked questions and answers.
 
 #### Q: How can I change my profile picture in Microsoft Entra?
 A: 
-1. Sign in to your Microsoft 365 account.
-2. Select your profile picture or initials.
-3. Select **My profile** from the dropdown menu.
-4. Select the camera icon of **Change Photo**, next to your current profile picture.
-5. Upload a new photo from your device and adjust it as needed.
-6. **Save** your changes.
+1. Sign in to your [Microsoft 365 account](https://www.microsoft365.com/).
+2. Select **My profile** from the dropdown menu.
+3. Select the camera icon or **Change Photo**, next to your current profile picture.
+4. Upload a new photo from your device and adjust it as needed.
+5. **Save** your changes.
 
 #### Q: Why did I stop getting email notifications from Azure DevOps?
 
 A: Azure DevOps sends notification emails to the email address configured for your account in Microsoft Entra. If you're not getting notifications, make sure an email address is configured in Microsoft Entra. 
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]
+
+---
 
 ## Related articles
 
