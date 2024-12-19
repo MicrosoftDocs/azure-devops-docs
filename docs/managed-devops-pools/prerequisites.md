@@ -162,10 +162,12 @@ Within 24 hours, the Managed DevOps Pools support team will evaluate your reques
 
 ### Create a dev center and dev center project
 
-Managed DevOps Pools requires a dev center and dev center project. You have the option to create a dev center and dev center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps. Multiple Managed DevOps Pools can use the same dev center and dev center project.
+Managed DevOps Pools requires a dev center and dev center project. You have the option to create a dev center and dev center project when you create your pool in the Azure portal, but if you want to create them ahead of time, perform the following steps.
 
 * [Create a dev center](#create-a-dev-center)
 * [Create a dev center Project](#create-a-dev-center-project)
+
+Multiple Managed DevOps Pools can use the same dev center and dev center project, and the dev center project isn't required to be in the same region or the same subscription as your Managed DevOps Pool.
 
 #### Create a dev center
 
