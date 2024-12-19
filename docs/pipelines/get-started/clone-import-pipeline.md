@@ -34,21 +34,23 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 
     :::image type="content" source="media/pipeline-details-2019.png" alt-text="Pipeline details in Azure DevOps Server 2019":::
 
-2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
+1. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
-3. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
+1. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
 
 :::moniker-end
 
-:::moniker range="> azure-devops-2019"
+:::moniker range="> azure-devops-2020"
 
 1. [Go](../create-first-pipeline.md#view-and-manage-your-pipelines) to the [pipeline details](../create-first-pipeline.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
     :::image type="content" source="media/pipeline-edit.png" alt-text="Edit pipeline."::: 
+1. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
-2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
+    > [!NOTE]
+    > When copying from a classic pipeline, select the agent job, **View YAML**, **Copy to clipboard**, then paste to the YAML editor for your new pipeline. You can repeat this for each job in the pipeline.
 
-3. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
+1. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
 
 :::moniker-end
 
