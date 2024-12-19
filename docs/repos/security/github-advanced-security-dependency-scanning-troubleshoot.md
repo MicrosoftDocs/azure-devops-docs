@@ -58,7 +58,7 @@ To use this variable, add `DependencyScanning.Timeout` as a pipeline variable:
 >[!div class="tabbedCodeSnippets"]
 ```yaml
 - task: AdvancedSecurity-Dependency-Scanning@1
-- env:
+  env:
     DependencyScanning.Timeout: 600
 ```
 
