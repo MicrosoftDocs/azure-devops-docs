@@ -677,7 +677,7 @@ steps:
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+    arguments: '--configuration $(buildConfiguration) --collect "Code Coverage"'
 ```
 
 To add the **.NET Core** task through the task editor:
@@ -686,7 +686,7 @@ To add the **.NET Core** task through the task editor:
 
     1. **Command**: test.
     1. **Path to projects**: _Should refer to the test projects in your solution_.
-    1. **Arguments**: `--configuration $(BuildConfiguration) --collect "Code coverage"`.
+    1. **Arguments**: `--configuration $(BuildConfiguration) --collect "Code Coverage"`.
 
 1. Ensure that the **Publish test results** option remains selected.
 
@@ -696,7 +696,7 @@ If you choose to run the `dotnet test` command, specify the test results logger 
 steps:
 # ...
 # do this after your tests have run
-- script: dotnet test <test-project> --logger trx --collect "Code coverage"
+- script: dotnet test <test-project> --logger trx --collect "Code Coverage"
 - task: PublishTestResults@2
   inputs:
     testRunner: VSTest
