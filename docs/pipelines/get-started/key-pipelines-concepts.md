@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 Learn about the key concepts and components that make up Azure Pipelines. Understanding the basic terms and parts of a pipeline can help you more effectively build, test, and deploy your code.  
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMlMo]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=20e737aa-cadc-4603-9685-3816085087e9]  
 
 **Key concepts overview**
 
