@@ -41,7 +41,6 @@ This article guides you through the creation of a pipeline to build and push a D
 
 Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry. For more information, see [Docker Registry service connections](../../library/service-endpoints.md#docker-registry-service-connection).
 
-To use the following steps to create a service connection:
 
 1. In your Azure DevOps project, select **Project settings** > **Service connections**.
 
