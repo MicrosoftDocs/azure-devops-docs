@@ -75,7 +75,7 @@ User profile settings get updated.
 
 We're previewing the ability to use your profile picture, display name, contact email address, and region as configured in Microsoft Entra within Azure DevOps.
 
-From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
+From the Azure DevOps home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
 
 :::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Microsoft Entra profile information in the Profile page.":::
 
