@@ -75,19 +75,11 @@ User profile settings get updated.
 
 We're previewing the ability to use your profile picture, display name, contact email address, and region as configured in Microsoft Entra within Azure DevOps.
 
-Do the following steps to set your preferences.
-
-1. From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
-
-   ![Screenshot shows button sequence to get to Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
-
-2. From the **Profile** page, you can change the profile picture, display name, contact email address, and region. The following image shows that Christie Church is enrolled in the Microsoft Entra profile information preview.
-
-   :::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Microsoft Entra profile information in the Profile page.":::
+:::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Microsoft Entra profile information in the Profile page.":::
 
 If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
 
-   :::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
+:::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
 
 To receive information, tips, and resources related to Azure DevOps, enter a check in the box and select **Save**.
 
@@ -100,10 +92,9 @@ See the following frequently asked questions and answers.
 #### Q: How can I change my profile picture in Microsoft Entra?
 A: 
 1. Sign in to your [Microsoft 365 account](https://www.microsoft365.com/).
-2. Select **My profile** from the dropdown menu.
-3. Select the camera icon or **Change Photo**, next to your current profile picture.
-4. Upload a new photo from your device and adjust it as needed.
-5. **Save** your changes.
+2. Select the camera icon or **Change Photo**, next to your current profile picture.
+3. Upload a new photo from your device and adjust it as needed.
+4. **Save** your changes.
 
 #### Q: Why did I stop getting email notifications from Azure DevOps?
 
