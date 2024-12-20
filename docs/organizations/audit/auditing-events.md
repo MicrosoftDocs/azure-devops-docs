@@ -33,6 +33,7 @@ The following tables describe the type of events (or actions) that are available
 
 | Area                       | Description |
 |----------------------------|-------------|
+| [Artifacts events](#artifacts-events)    | Create, modify permissions, and delete feed views and both organization-scoped and project-scoped feeds. |
 | [AuditLog events](#auditlog-events)      | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
 | [Billing events](#billing-events)        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
 | [Extension events](#extension-events)    | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
@@ -65,6 +66,29 @@ The following tables describe the type of events (or actions) that are available
 
 > [!NOTE]
 > Want to find out what actions your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit.
+
+### Artifacts events
+
+|                             Action                                 |                             Description                                                         |
+|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| `Artifacts.Feed.Project.Create`                                    | Created feed {FeedName} in project {ProjectId}.                                                 |
+| `Artifacts.Feed.Org.Create`                                        | Created organization feed {FeedName}.                                                           |
+| `Artifacts.Feed.Project.Modify`                                    | Modified feed {FeedName} in project {ProjectId}- {FeedChanges}.                                 |
+| `Artifacts.Feed.Org.Modify`                                        | Modified organization feed {FeedName}- {FeedChanges}.                                           |
+| `Artifacts.Feed.Project.SoftDelete`                                | Moved feed {FeedName} to the Feed Recycle Bin in project {ProjectId}.                           |
+| `Artifacts.Feed.Org.SoftDelete`                                    | Moved organization feed {FeedName} to the Feed Recycle Bin.                                     |
+| `Artifacts.Feed.Project.HardDelete`                                | Permanently deleted feed {FeedName} in project {ProjectId}.                                     |
+| `Artifacts.Feed.Org.HardDelete`                                    | Permanently deleted organization feed {FeedName}.                                               |
+| `Artifacts.Feed.Project.Modify.Permissions`                        | Permissions for {DisplayName} were set to {Role} for feed {FeedName} in project {ProjectId}.    |    
+| `Artifacts.Feed.Org.Modify.Permissions`                            | Permissions for {DisplayName} were set to {Role} for organization feed {FeedName}.              |
+| `Artifacts.Feed.Project.Modify.Permissions.Deletion`               | Permissions for feed {FeedName} in project {ProjectId} were removed for {DisplayName}.          |
+| `Artifacts.Feed.Org.Modify.Permissions.Deletion`                   | Permissions for organization feed {FeedName} were removed for {DisplayName}.                    |
+| `Artifacts.Feed.Project.FeedView.Create`                           | Created feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.                     |
+| `Artifacts.Feed.Org.FeedView.Create`                               | Created feed view {FeedViewName} in organization feed {FeedName}.                               |
+| `Artifacts.Feed.Project.FeedView.Modify`                           | Modified feed view {FeedViewName} in feed {FeedName} in project {ProjectId}- {FeedViewChanges}. |
+| `Artifacts.Feed.Org.FeedView.Modify`                               | Modified feed view {FeedViewName} in organization feed {FeedName}- {FeedViewChanges}.           |
+| `Artifacts.Feed.Project.FeedView.HardDelete`                       | Permanently deleted feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.         |
+| `Artifacts.Feed.Org.FeedView.HardDelete`                           | Permanently deleted feed view {FeedViewName} in organization feed {FeedName}.                   |
 
 ### AuditLog events
 
