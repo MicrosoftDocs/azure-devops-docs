@@ -112,6 +112,9 @@ If you want to completely hide your packages, you must restrict access to both t
 
     :::image type="content" source="media/edit-views.png" alt-text="A screenshot showing the prerelease view permissions.":::
 
+> [!NOTE]
+> To add a feed from a different organization as an upstream source, the target feed owner needs to share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views**, selecting the ellipsis next to the specified view, selecting **Edit**, and adjusting the permissions.
+
 > [!IMPORTANT]
 > Views inherit permissions from the parent feed. If you set a view's visibility to *Specific people* without specifying any users or groups, the view's permissions will default back to the permissions of its parent feed.
 
