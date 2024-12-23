@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 08/13/2024
+ms.date: 12/20/2024
 ---
 
 # About permissions and security groups
@@ -27,7 +27,7 @@ For more information, see [Security best practices](security-best-practices.md).
 
 All Azure DevOps users have an *access level*, which grants or restricts access to specific web portal features.  
 
-There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Stakeholder access provides free access to an unlimited number of users to a limited set of features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Use the Stakeholder access level for users who don’t need paid access. Don't use Stakeholder access as a substitute for more limited permissions, as users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder when they sign in. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 To give a user access to Agile portfolio management or test case management features, [change access levels](change-access-levels.md), not permissions. For more information, see [About access levels](access-levels.md).
  
@@ -40,7 +40,7 @@ All users in Azure DevOps belong to one or more default *security groups*. Secur
 - Some permissions get managed through *role-based assignments* (for example, team administrator, extension management, or pipeline resource roles).
 - Administrators can define custom security groups to manage permissions for different functional areas.
 
-For more information, see [Security best practices, Security and user groups](security-best-practices.md#security-and-user-groups).
+For more information, see [Security best practices](security-best-practices.md#security-and-user-groups).
 
 Managing permissions in Azure DevOps involves two key groups: Project Collection Administrators and Project Administrators.
 
@@ -53,7 +53,7 @@ Managing permissions in Azure DevOps involves two key groups: Project Collection
 **Project Administrators:**
 - Operate at the project level.
 - Manage security groups and permissions from the Project settings in the web portal.
-- Contributors handle permissions for specific objects they create within the project.
+- Handle permissions for specific objects contributors create within the project.
 
 ### Permission states 
 
@@ -99,12 +99,12 @@ Permissions follow a hierarchy, allowing inheritance from a parent node or overr
 
 **Object-level inheritance:** 
 
-Object-level permissions, assigned to nodes like areas, iterations, version control folders, and work item query folders, are inherited down the hierarchy.
+Object-level permissions, assigned to nodes like areas, iterations, version control folders, and work item query folders, get inherited down the hierarchy.
 
 **Permission inheritance and specificity rules:**
 
 - Explicit permissions always take precedence over inherited ones.
-- Permissions set at a higher-level node are inherited by all subnodes unless explicitly overridden.
+- Permissions set at a higher-level node get inherited by all subnodes unless explicitly overridden.
 - If a permission isn't explicitly allowed or denied for a subnode, it inherits the permission from its parent.
 - If a permission is explicitly set for a subnode, the parent’s permission isn't inherited, regardless of whether allowed or denied.
 
