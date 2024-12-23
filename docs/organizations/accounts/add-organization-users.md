@@ -2,7 +2,7 @@
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
 ms.custom: devx-track-azurecli
-description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
+description: Learn how to add users to an organization and manage users' access levels, direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
@@ -22,7 +22,7 @@ Learn how to add users to your organization and manage user access through direc
 The following types of users can join your Azure DevOps Services organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
+* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries. Don't use Stakeholder access as a substitute for more limited permissions, as users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder when they sign in. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 * Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level. 
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
