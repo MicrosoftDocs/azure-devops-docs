@@ -47,6 +47,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    > [!NOTE]   
    > All users granted Stakeholder access can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. For more information, see [Stakeholder access quick reference](../stakeholder-access.md).
    > Although the **Create tag definition**  permission appears
