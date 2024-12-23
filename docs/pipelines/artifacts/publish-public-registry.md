@@ -1,28 +1,22 @@
 ---
-title: Publish NuGet packages to NuGet.org with Azure Pipelines (Classic/YAML)
+title: Publish NuGet packages to NuGet.org (Classic/YAML)
 description: Learn how to publish NuGet packages to NuGet.org using Azure Pipelines.
 ms.topic: conceptual
-ms.date: 05/14/2023
+ms.date: 12/23/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Publish NuGet packages to NuGet.org with Azure Pipelines
+# Publish NuGet packages to NuGet.org (Classic/YAML)
 
-Using Azure Pipelines, developers can streamline the process of publishing their NuGet packages to feeds and public registries. In this tutorial, we'll explore how to leverage YAML and classic pipelines to publish NuGet packages to NuGet.org. In this article, you'll learn how to:
-
-> [!div class="checklist"]  
-> * Authenticate with NuGet.org.
-> * Create service connections.
-> * Publish packages to NuGet.Org.
+Using Azure Pipelines, developers can streamline the process of publishing their NuGet packages to feeds and public registries. This article will walk you through publishing your NuGet packages to NuGet.org.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. [Create one for free](../get-started/pipelines-sign-up.md), if you don't have one already. 
-    - The [**Administrator** role for service connections](../library/add-resource-protection.md) in your Azure DevOps project. 
-
-- A [nuget.org](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account.
-
+| **Product**       | **Requirements**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps**   | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md). |
+| **NuGet.org**      | - A [NuGet](https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account.                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## Create an API key
 
@@ -34,25 +28,25 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 1. Select **Create** when you're done.
 
-1. Select **Copy** and save your API key in a safe location.
+1. Select **Copy** and save your API key in a secure location.
 
 ## Create a service connection
 
-1. Sign in to your Azure DevOps organization `https://dev.azure.com/<Your_Organization>` and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings** located at the bottom left corner of the page.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings** in the bottom left corner of the page.
 
 1. Select **NuGet**, and then select **Next**.
 
-1. Select **ApiKey** as your authentication method and set the **Feed URL** to the following: `https://api.nuget.org/v3/index.json`.
+1. Select **ApiKey** as your authentication method and set the **Feed URL** to: `https://api.nuget.org/v3/index.json`.
 
-1. Enter the ApiKey you generated earlier in the **ApiKey** field, and then provide a name for your service connection.
+1. Enter the ApiKey you created earlier in the **ApiKey** field, and provide a name for your service connection.
 
-1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done. To select this option, you'll need the service connection **Administrator** role. 
+1. Select the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done.
 
 ## Publish packages
 
-1. Sign in to your Azure DevOps organization `https://dev.azure.com/<Your_Organization>` and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Pipelines**, and then select your pipeline. Select **Edit** to edit your pipeline.
 
