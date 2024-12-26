@@ -51,7 +51,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 1. Select the appropriate authentication option. 
 
-	* Use **oAuth2**  for Microsoft Entra ID or Windows credentials.
+	* Use **oAuth2**  for Microsoft Entra ID or Windows credentials. This is the recommended approach.
 
       ![Configure Areas dialog](media/aad-auth-power-bi.png)
  
@@ -73,6 +73,5 @@ At this point, the data will update on your scheduled basis using the credential
 ## Related articles
 
 - [About Power BI integration](overview.md)  
-- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

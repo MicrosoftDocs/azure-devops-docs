@@ -40,11 +40,8 @@ The following steps cover configuration of SSH key authentication on the followi
 - macOS
 - Windows systems running [Git for Windows](https://www.git-scm.com/download/win)
 
->[!NOTE]
-> As of Visual Studio 2017, SSH can be used to connect to Azure DevOps Git repositories.
-
 > [!TIP]
-> On Windows, we recommended the use of [Git Credential Manager](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+> On Windows, we recommend the use of [Git Credential Manager](set-up-credential-managers.md) instead of SSH.
 
 ### Step 1: Create your SSH keys
 

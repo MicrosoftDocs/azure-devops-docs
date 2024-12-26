@@ -19,8 +19,6 @@ ms.date: 01/05/2024
 
 You can update your wiki pages offline the same way you develop code in a Git repo.
 
-
-
 You can use any client you want or git command-line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../repos/git/index.yml).
 
 The basic steps to update wiki content offline are as follows:
@@ -62,6 +60,9 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 	Enter it in your browser to view the files defined under the wikiMaster branch.
 
    :::image type="content" source="media/wiki/work-offline-wikiMaster-files.png" alt-text="Wiki main files":::
+
+	> [!IMPORTANT]
+	> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations.
 
 4. Use the URL that you copied to clone the repo in the IDE that you use. For more information, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)

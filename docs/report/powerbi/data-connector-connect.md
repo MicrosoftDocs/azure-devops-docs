@@ -123,6 +123,5 @@ For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fab
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
 - [About Power BI integration](overview.md)
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
-- [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 - [Analytics views dataset design](data-connector-dataset.md)
 - [Example reports based on Analytics views](data-connector-examples.md)

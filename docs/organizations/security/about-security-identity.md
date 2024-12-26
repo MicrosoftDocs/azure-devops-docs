@@ -14,7 +14,7 @@ ms.date: 07/11/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps employs various security concepts to ensure that only authorized users can access features, functions, and data. Users gain access to Azure DevOps through the authentication of their security credentials and the authorization of their account entitlements to access specific features or functions. 
+Azure DevOps employs various security concepts to ensure that only authorized users can access features, functions, and data. Users gain access to Azure DevOps through the authentication of their security credentials and the authorization of their account entitlements. The combination of both determine the user's access to specific features or functions. 
 
 This article builds on the information provided in [Get started with permissions, access, and security groups](../security/about-permissions.md). Administrators can benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
 
@@ -98,7 +98,7 @@ This article builds on the information provided in [Get started with permissions
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-Both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises) support software development from planning to deployment. They leverage Microsoft Azure's Platform as a Service infrastructure and services, including Azure SQL databases, to provide a reliable, globally available service for your projects.
+Both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises) support software development from planning to deployment. Each platform leverages Microsoft Azure's Platform as a Service infrastructure and services, including Azure SQL databases, to provide a reliable, globally available service for your projects.
 
 ::: moniker range="azure-devops"
 For more information about how Microsoft ensures your Azure DevOps Services projects are safe, available, secure, and private, see the [Azure DevOps Services data protection overview](../../organizations/security/data-protection.md).
@@ -108,7 +108,7 @@ For more information about how Microsoft ensures your Azure DevOps Services proj
 
 ## Accounts 
 
-While human user accounts are the primary focus, Azure DevOps also supports various other account types for different operations. These include the following account types:
+While human user accounts are the primary focus, Azure DevOps also supports various other account types for different operations:
 
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To find the owner for your organization, see [Look up the organization owner](look-up-organization-owner.md). 
@@ -151,25 +151,15 @@ For on-premises deployments, AD is recommended for managing a large group of use
 
 Other applications and services can integrate with Azure DevOps. To access your account without repeatedly asking for user credentials, apps can use the following authentication methods:
 
-- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) to generate tokens on your behalf for:  
-	- Accessing specific resources or activities, like builds or work items
-	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Microsoft Entra features like multifactor authentication 
-	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
-
-- [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth.md) 
-to generate tokens on users' behalf for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
-and [Profiles](/rest/api/azure/devops/profile) 
-APIs support only OAuth. 
-
-- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys for yourself when you use Linux, macOS, 
-or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
-and can't use 
-[Git credential managers](../../repos/git/set-up-credential-managers.md) 
-or [PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
-for HTTPS authentication.
+- [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens on users' behalf for accessing [REST APIs](/rest/api/azure/devops/).
+  - There are two OAuth app models available: **Azure DevOps OAuth is planned for deprecation in 2026. Use [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to build on-behalf-of user apps.**
+  - You can also generate Microsoft Entra tokens for ad-hoc operations on your own behalf, for accessing resources like builds or work items or accessing [Azure DevOps REST APIs](/rest/api/azure/devops/).
 
 - [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Microsoft Entra tokens on behalf of an application or service, typically automating workflows that need to access Azure DevOps resources. Most actions traditionally performed by a service account and a PAT can be done using a service principal or managed identity.
+
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) to generate tokens on your behalf. PATs might be helpful for clients like Xcode and NuGet that don't support Microsoft accounts or features, like multifactor authentication (MFA).
+
+- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for yourself when you use Linux, macOS, or Windows running [Git for Windows](https://www.git-scm.com/download/win) and can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [PATs](../accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
 
 By default, your account or collection allows access for all authentication methods. 
 You can limit access by specifically restricting each method. When you deny access to an authentication method, no app can use that method to access your account. Any app that previously had access receives an authentication error and can't access your account.
@@ -225,19 +215,19 @@ The following policies determine the access granted to users and applications wi
 - **External guest access** (*Only valid when the organization is connected to Microsoft Entra ID.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant's Microsoft Entra ID via the **Users** page. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
 - **Allow team and project administrators to invite new users**: Only valid when the organization is connected to Microsoft Entra ID. When enabled, team and project administrators can add users via the **Users** page. For more information, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
 - **Request access**: Only valid when the organization is connected to Microsoft Entra ID. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
-- **Invite GitHub users**: Only valid when the organization isn't connected to Microsoft Entra ID. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  For more information, see [Connect to GitHub/FAQs](../../boards/github/connect-to-github.md#faqs). 
+- **Invite GitHub users**: Only valid when the organization isn't connected to Microsoft Entra ID. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page. For more information, see [Connect to GitHub/FAQs](../../boards/github/connect-to-github.md#faqs). 
 
 <a id="project-scoped-user-group"></a> 
 
 ### Project-Scoped Users group 
 
-By default, users added to an organization can view all organization and project information and settings, including user lists, project lists, billing details, usage data, and more. 
+By default, users added to an organization can view all organization and project information and settings -- including user lists, project lists, billing details, usage data, and more. 
 
 [!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
-To restrict certain users, such as Stakeholders, Microsoft Entra guest users, or members of a specific security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that's enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+To restrict certain users, such as Stakeholders, Microsoft Entra guest users, or members of a specific security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 - Can only access the **Overview** and **Projects** pages of **Organization settings**.
-- Can only connect and view those projects to which [they've been added to explicitly](add-users-team-project.md). 
+- Can only connect and view those projects that they are [added to explicitly](add-users-team-project.md). 
 - Can only select user and group identities added explicitly to the project they're connected to. 
 
 For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group) and [Manage preview features](../../project/navigation/preview-features.md). 
@@ -266,7 +256,7 @@ To secure your code, you can set various Git repository and branch policies. For
 
 ## Azure Repos and Azure Pipelines security 
 
-Since repositories and build and release pipelines pose unique security challenges, additional features beyond the features discussed in this article are employed. For more information, see the following articles. 
+Since repositories and build and release pipelines pose unique security challenges, other features beyond the features discussed in this article are employed. For more information, see the following articles. 
 
 - [Securing Azure Pipelines](../../pipelines/security/overview.md)
 - [Plan how to secure your YAML pipelines](../../pipelines/security/approach.md)
