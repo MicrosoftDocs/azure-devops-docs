@@ -7,12 +7,11 @@ ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/11/2024
+ms.date: 12/26/2024
 ---
 
 # Authenticate with Azure DevOps with Microsoft Entra
 
-## Microsoft Entra ID
 Microsoft Entra ID is a separate Microsoft product with its own platform. As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) is focused on the needs of companies that need to manage team members and safeguard company resources. We offer the ability to [connect your Azure DevOps organization to a Microsoft Entra ID tenant](../../../organizations/accounts/connect-organization-to-azure-ad.md), and there may be [many benefits to your company](../../../organizations/accounts/access-with-azure-ad.md) in doing so.
 
 Once connected, the Microsoft Identity application platform on top of Microsoft Entra ID offers a few advantages that makes it appealing to app developers and org admins. On Microsoft Entra, you can register an application to access Azure tenants and define permissions needed from Azure resources, of which Azure DevOps is considered one. Azure DevOps exists outside of the construct of Azure tenants.
