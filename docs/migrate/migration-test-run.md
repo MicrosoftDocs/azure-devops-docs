@@ -508,17 +508,13 @@ A common concern for teams doing a final production run is their rollback plan, 
 
 Rollback for the final production run is fairly simple. Before you queue the migration, detach the team project collection from Azure DevOps Server, which makes it unavailable to your team members. If for any reason you need to roll back the production run and bring the on-premises server back online for your team members, you can do so. Attach the team project collection on-premises again and inform your team that they continue to work normally while your team regroups to understand any potential failures.
 
-You can then contact Azure DevOps Services customer support for help with understanding the failure's cause if you can't determine the cause. For more information, see the [Troubleshooting article](migration-troubleshooting.md). Customer support tickets can be opened from the following page https://aka.ms/AzureDevOpsImportSupport. If the issue requires product group engineers to engage, those cases get handled during regular business hours. 
-
-::: moniker range="< azure-devops"
+You can then contact Azure DevOps Services customer support for help with understanding the failure's cause if you can't determine the cause. For more information, see the [Troubleshooting article](migration-troubleshooting.md). Customer support tickets can be opened from the following page https://aka.ms/AzureDevOpsImportSupport. If the issue requires product group engineers to engage, those cases get handled during regular business hours.
 
 #### Detach your team project collection from Azure DevOps Server to prepare it for migration. 
 
 Before you generate a backup of your SQL database, you must completely detach the collection from Azure DevOps Server (not SQL) using the Data Migration Tool. The detach process in Azure DevOps Server transfers user identity information stored outside of the collection database, making it portable for moving to a new server or, in this case, to Azure DevOps Services.
 
-Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection). 
-
-::: moniker-end
+Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection).
 
 ### Queue the migration
 

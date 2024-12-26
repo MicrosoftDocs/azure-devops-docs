@@ -4,6 +4,7 @@ description: Overview of the high fidelity migration process from on-premises Se
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid:
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -12,7 +13,7 @@ ms.date: 05/20/2024
 
 # Get started with Azure DevOps Data Migration Tool
 
-Before you use the Azure DevOps Data Migration Tool to migrate your database with high fidelity, learn some of the basic concepts in this article.
+Before you use the [Azure DevOps Data Migration Tool](https://www.microsoft.com/download/details.aspx?id=54274) to migrate your database with high fidelity, learn some of the basic concepts in this article.
 
 :::image type="content" source="media/get-started-stage-migration-highres.png" alt-text="Diagram highlighting the Get started stage in sequential stages.":::
 
@@ -69,10 +70,10 @@ A question that typically comes up with migration is what type of licensing a co
 ||---------|---------| 
 |1|Number of team members              |         |
 |2|Number of stakeholders              |         |
-|3|Subtract line (2) from line (1)*    |         |
+|3|Subtract the value in line 2 from the value in line 1*    |         |
 |4|# of Visual Studio subscribers**    |         |
-|5|Subtract line (4) from line (3)     |         |
-|6|Subtract line (5) from line (5)***  |         |
+|5|Subtract the value in line 4 from the value in line 3     |         |
+|6|Subtract the value in line 5 from the value in line 5***  |         |
 
 - *Stakeholders are free 
 - ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription 
