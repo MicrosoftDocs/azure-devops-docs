@@ -71,6 +71,9 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
 
+> [!IMPORTANT]
+> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations.
+
 ## Clone an Azure Repos Git repo
 
 By signing in as a member of an Azure DevOps project, you can clone private repos that are accessible to you, and public repos. Visual Studio supports search, clone, and sync operations on repos that are accessible through authentication.
