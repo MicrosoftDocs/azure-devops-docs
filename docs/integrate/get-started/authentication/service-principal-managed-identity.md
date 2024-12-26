@@ -58,7 +58,7 @@ For more information, see the following articles and video:
 * [Manage user-assigned managed identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8K]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9cf4e49-db98-4247-8770-b8707b043f17]
 
 ### 2. Add a service principal to an Azure DevOps organization
 
@@ -77,7 +77,7 @@ If you're a PCA, you can also grant a service principal access to specific proje
 ### 3. Setting permissions on a service principal
 After your service principals are added to the organization, you can treat them similarly to standard user accounts. You can assign permissions directly on a service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals?view=azure-devops-rest-7.1&preserve-view=true) to perform CRUD operations on service principals.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWG70]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e8ee6f58-3939-4170-b112-0ca1b39b0298]
 
 Setting these permissions might differ from how you're used to setting up application permissions in a Microsoft Entra application for other Azure resources. Azure DevOps doesn't rely on the ["Application permissions" setup](/entra/identity-platform/permissions-consent-overview#types-of-permissions) available to application registrations through the Azure portal. These application permissions apply permissions to a service principal across all organizations tied to a tenant and have no knowledge of the organization, project, or object permissions available in Azure DevOps. To offer service principals more granular permissions, we rely on our own permissions model instead of Entra ID's. 
 
@@ -148,11 +148,11 @@ These instructions are provided by the Databricks docs and more details can be f
 
 In the following video example, we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWNVM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8397f848-b946-4c30-8d0c-78aa4784a549]
 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8L]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f4a20e00-c2df-49cc-9b86-7454bd84b9ce]
 
 Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
 

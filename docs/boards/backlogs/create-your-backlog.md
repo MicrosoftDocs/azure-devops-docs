@@ -23,6 +23,8 @@ The product backlog is your project plan, which shows what your team intends to 
 
 [!INCLUDE [link other articles](../includes/note-configure-customize.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](../includes/prerequisites.md)]
 
 ## Add a backlog

@@ -3,8 +3,9 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 10/12/2023
+ms.date: 11/19/2024
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ---
 
 # Logging commands
@@ -317,9 +318,9 @@ Update exist timeline record:
 
 Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks are able to use the variable. The variable is exposed to the following tasks as an environment variable.
 
-When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
+When `isSecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
 
-When `isoutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isoutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
+When `isOutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isOutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
 
 See [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts) for more details.
 
@@ -327,9 +328,9 @@ See [set variables in scripts](../process/set-variables-scripts.md) and [define 
 
 ::: moniker range=">= azure-devops-2019"
 * `variable` = variable name (Required)
-* `issecret` = boolean (Optional, defaults to false)
-* `isoutput` = boolean (Optional, defaults to false)
-* `isreadonly` = boolean (Optional, defaults to false)
+* `isSecret` = boolean (Optional, defaults to false)
+* `isOutput` = boolean (Optional, defaults to false)
+* `isReadOnly` = boolean (Optional, defaults to false)
 ::: moniker-end
    
 
@@ -343,8 +344,8 @@ Set the variables:
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-    echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+    echo "##vso[task.setvariable variable=secretSauce;isSecret=true]crushed tomatoes with garlic"
+    echo "##vso[task.setvariable variable=outputSauce;isOutput=true]canned goods"
   name: SetVars
 ```
 ::: moniker-end
@@ -369,8 +370,8 @@ Set the variables:
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-    Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+    Write-Host "##vso[task.setvariable variable=secretSauce;isSecret=true]crushed tomatoes with garlic"
+    Write-Host "##vso[task.setvariable variable=outputSauce;isOutput=true]canned goods"
   name: SetVars
 ```
 ::: moniker-end
@@ -517,7 +518,7 @@ Upload and attach attachment to current timeline record. These files aren't avai
 
 #### Usage
 
-Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering.
+Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
 
 
 #### Examples

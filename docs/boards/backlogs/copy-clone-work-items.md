@@ -23,6 +23,8 @@ There are two types of copy functions you can use:
 
 [!INCLUDE [temp](../includes/image-differences.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>

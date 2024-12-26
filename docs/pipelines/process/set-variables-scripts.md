@@ -24,7 +24,7 @@ To use a variable with a condition in a pipeline, see [Specify conditions](condi
 
 ## About `task.setvariable`
 
-When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same job by default. If you add the parameter `isoutput`, the syntax to call your variable changes. See [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
+When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same job by default. If you add the parameter `isOutput`, the syntax to call your variable changes. See [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
 
 # [Bash](#tab/bash)
 
@@ -64,11 +64,11 @@ Read the variable `myVar`:
 The `task.setvariable` command includes properties for setting a variable as secret, as an output variable, and as read only. The available properties include:
 
 * `variable` = variable name (Required)
-* `issecret` = boolean (Optional, defaults to false)
-* `isoutput` = boolean (Optional, defaults to false)
-* `isreadonly` = boolean (Optional, defaults to false)
+* `isSecret` = boolean (Optional, defaults to false)
+* `isOutput` = boolean (Optional, defaults to false)
+* `isReadOnly` = boolean (Optional, defaults to false)
 
-To use the variable in the next stage, set the `isoutput` property to `true`. To reference a variable with the `isoutput` set to true, you'll include the task name. For example, `$(TaskName.myVar)`. 
+To use the variable in the next stage, set the `isOutput` property to `true`. To reference a variable with the `isOutput` set to true, you'll include the task name. For example, `$(TaskName.myVar)`. 
 
 When you set a variable as read only, it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances security by making that variable immutable. 
 
@@ -82,8 +82,8 @@ When you set a variable as read only, it can't be overwritten by downstream task
 
 There are four different types of output variables with distinct syntaxes:
 
-* [Output variables set in the same job without the `isoutput` parameter](#set-an-output-variable-for-use-in-the-same-job). To reference these variables, you'll use macro syntax. Example: `$(myVar)`.
-* [Output variables set in the same job with the `isoutput` parameter](#set-an-output-variable-for-use-in-the-same-job). To reference these variables, you'll include the task name. Example: `$(myTask.myVar)`.
+* [Output variables set in the same job without the `isOutput` parameter](#set-an-output-variable-for-use-in-the-same-job). To reference these variables, you'll use macro syntax. Example: `$(myVar)`.
+* [Output variables set in the same job with the `isOutput` parameter](#set-an-output-variable-for-use-in-the-same-job). To reference these variables, you'll include the task name. Example: `$(myTask.myVar)`.
 * [Output variables set in a future job](#set-an-output-variable-for-use-in-future-jobs). To reference these variables, you'll reference the variable in the `variables` section with `dependency` syntax.  
 * [Output variables set in future stages](#set-an-output-variable-for-use-in-future-stages). To reference these variables, you'll reference the variable in the `variables` section with `stageDependencies` syntax.  
 
@@ -92,11 +92,11 @@ There are four different types of output variables with distinct syntaxes:
 
 ## Set an output variable for use in the same job
 
-When you use an output variable in the same job, you don't have to use the `isoutput` property. By default, the variable will be available to downstream steps within the same job. However, if you do add the `isoutput` property, you'll need to reference the variable with the task name. 
+When you use an output variable in the same job, you don't have to use the `isOutput` property. By default, the variable will be available to downstream steps within the same job. However, if you do add the `isOutput` property, you'll need to reference the variable with the task name. 
 
 # [Bash](#tab/bash)
 
-The script here sets the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput=true`.
+The script here sets the same-job output variable `myJobVar` without specifying `isOutput` and sets `myOutputJobVar` with `isOutput=true`.
 
 ```yaml
 jobs:
@@ -105,11 +105,11 @@ jobs:
   - bash: |
      echo "##vso[task.setvariable variable=myJobVar]this is the same job"
   - bash: |
-     echo "##vso[task.setvariable variable=myOutputJobVar;isoutput=true]this is the same job too"
+     echo "##vso[task.setvariable variable=myOutputJobVar;isOutput=true]this is the same job too"
     name: setOutput
 ```
 
-This script gets the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isoutput=true` is added. 
+This script gets the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isOutput=true` is added. 
 
 ```yaml
 jobs:
@@ -118,7 +118,7 @@ jobs:
   - bash: |
      echo "##vso[task.setvariable variable=myJobVar]this is the same job"
   - bash: |
-     echo "##vso[task.setvariable variable=myOutputJobVar;isoutput=true]this is the same job too"
+     echo "##vso[task.setvariable variable=myOutputJobVar;isOutput=true]this is the same job too"
     name: setOutput
   - bash: |
      echo $(myJobVar) 
@@ -128,7 +128,7 @@ jobs:
 
 # [PowerShell](#tab/powershell)
 
-This script sets the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput=true`. 
+This script sets the same-job output variable `myJobVar` without specifying `isOutput` and sets `myOutputJobVar` with `isOutput=true`. 
 
 ```yaml
 jobs:
@@ -137,11 +137,11 @@ jobs:
   - powershell: |
      Write-Host "##vso[task.setvariable variable=myJobVar]this is the same job"
   - powershell: |
-     Write-Host "##vso[task.setvariable variable=myOutputJobVar;isoutput=true]this is the same job too"
+     Write-Host "##vso[task.setvariable variable=myOutputJobVar;isOutput=true]this is the same job too"
     name: setOutput
 ```
 
-This script gets the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isoutput=true` is added. 
+This script gets the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isOutput=true` is added. 
 
 ```yaml
 jobs:
@@ -150,7 +150,7 @@ jobs:
   - powershell: |
      Write-Host "##vso[task.setvariable variable=myJobVar]this is the same job"
   - powershell: |
-     Write-Host "##vso[task.setvariable variable=myOutputJobVar;isoutput=true]this is the same job too"
+     Write-Host "##vso[task.setvariable variable=myOutputJobVar;isOutput=true]this is the same job too"
     name: setOutput
   - powershell: |
      Write-Host $(myJobVar) 
@@ -172,7 +172,7 @@ jobs:
 - job: A
   steps:
   - bash: |
-     echo "##vso[task.setvariable variable=myOutputVar;isoutput=true]this is from job A"
+     echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is from job A"
     name: passOutput
 
 ```
@@ -184,7 +184,7 @@ jobs:
 - job: A
   steps:
   - bash: |
-     echo "##vso[task.setvariable variable=myOutputVar;isoutput=true]this is from job A"
+     echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is from job A"
     name: passOutput
 - job: B
   dependsOn: A
@@ -204,7 +204,7 @@ jobs:
 - job: A
   steps:
   - powershell: |
-     Write-Host "##vso[task.setvariable variable=myOutputVar;isoutput=true]this is from job A"
+     Write-Host "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is from job A"
     name: passOutput
 ```
 
@@ -215,7 +215,7 @@ jobs:
 - job: A
   steps:
   - powershell: |
-     Write-Host "##vso[task.setvariable variable=myOutputVar;isoutput=true]this is from job A"
+     Write-Host "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is from job A"
     name: passOutput
 - job: B
   dependsOn: A
@@ -231,7 +231,7 @@ jobs:
 
 Output variables can be used across stages in pipelines. You can use output variables to pass useful information, such as the ID of a generated output, from one stage to the next. 
 
-When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#dependencies). 
+When you set a variable with the `isOutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#dependencies). 
 
 Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition. 
 
@@ -319,7 +319,7 @@ steps:
 
 There are a few reasons why your output variable may not appear. 
 
-* Output variables set with `isoutput` aren't available in the same job and instead are only available in downstream jobs. 
+* Output variables set with `isOutput` aren't available in the same job and instead are only available in downstream jobs. 
 * Depending on what variable syntax you use, a variable that sets an output variable's value may not be available at runtime. For example, variables with macro syntax (`$(var)`) get processed before a task runs. In contrast, variables with template syntax are processed at runtime (`$[variables.var]`). You'll usually want to use runtime syntax when setting output variables. For more information on variable syntax, see [Define variables](variables.md#understand-variable-syntax).
 * There may be extra spaces within your expression. If your variable isn't rendering, check for extra spaces surrounding `isOutput=true`.
 

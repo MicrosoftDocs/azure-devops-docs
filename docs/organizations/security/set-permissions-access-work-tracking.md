@@ -27,10 +27,10 @@ To manage work tracking effectively, assign specific permissions to users or gro
 
 ## Prerequisites  
 ::: moniker range="azure-devops"
-To set work tracking permissions, you must be a member of the [**Project Administrators** group](change-project-level-permissions.md) or have explicit permissions to manage the work tracking area as described in this article. 
+**Permissions**: To set work tracking permissions, be a member of the [**Project Administrators** group](change-project-level-permissions.md) or have explicit permissions to manage the work tracking area as described in this article. 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
+**Permissions**: To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
 ::: moniker-end
 
 <a id="business-workflows"></a> 

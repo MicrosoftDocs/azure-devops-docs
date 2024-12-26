@@ -25,12 +25,9 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 > [!NOTE]   
 > Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.  
 
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
+## Prerequisites
 
-::: moniker range="azure-devops"
-- Users with **Stakeholder** access for public projects can add new tags.
-- By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing tags. Stakeholders in private projects can add tags that are already defined, but not add new tags. To grant or restrict permissions to create new tags, you set the permission **Create tag definition** at the project-level. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-::: moniker-end	 
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 <a id="assign"></a>
 

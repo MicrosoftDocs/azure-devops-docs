@@ -25,9 +25,9 @@ If you're assigned **Stakeholder** access and want to start using Azure Boards t
 
 In general, use the following guidance when assigning **Stakeholder** access users to a security group: 
 
-- Add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
-- Add to the **Project Administrators** security group users tasked with managing project resources. 
-- Add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. 
+- Add to the **Contributors** security group for managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
+- Add to the **Project Administrators** security group for users tasked with managing project resources. 
+- Add to the **Project Collection Administrators** security group for users tasked with managing organization or collection resources. 
 
 <a id="stakeholder-access">  </a>
 <a id="feature-access">  </a>

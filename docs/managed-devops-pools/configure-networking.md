@@ -152,6 +152,7 @@ All of them are HTTPS, unless otherwise stated.
   *  `server.pipe.aria.microsoft.com` - Common client side telemetry solution (and used by the Agent Pool Validation extension among others)
   *  `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP, not HTTPS
   *  `www.microsoft.com` - Provisioning Linux machines
+  *  `security.ubuntu.com` - Provisioning Linux machines
 * Less secure, more open endpoints that our service depends on:
    * Needed by our service:
      * `packages.microsoft.com` - Provisioning Linux machines
@@ -164,6 +165,16 @@ All of them are HTTPS, unless otherwise stated.
      * `*.vssps.visualstudio.com`
      * `*.visualstudio.com`
      These entries are the minimum domains required. If you have any issues, see [Azure DevOps allowlist](/azure/devops/organizations/security/allow-list-ip-url) for the full list of domains required.
+* Azure related endpoints:
+    Azure VMs may route traffic to certain Azure features through your subnet. For these requests, you have the option of routing requests through Azure directly, or enabling access through your network.
+    1. [Configuring Azure traffic to run through Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview)
+
+       Routing traffic through Azure directly avoids adding throughput to your NSGs or Firewalls, and does not require that you allowlist the domains listed in the following option.
+
+       For example, using the [data disk](./configure-storage.md) feature will involve network calls to Azure Storage. Enabling **Microsoft.Storage** service endpoint on your network will route traffic directly through Azure, avoiding your network rules and reducing load.
+    2. If you want to avoid routing traffic through Service Endpoints, these are the domains to allowlist for specific features.
+
+       * `md-*.blob.storage.azure.net` - Required to [configure a data disk](./configure-storage.md)
 
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
 

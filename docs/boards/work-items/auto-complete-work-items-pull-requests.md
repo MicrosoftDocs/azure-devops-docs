@@ -25,6 +25,11 @@ When you link a work item to a pull request (PR), you can automatically complete
 
 For more information, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
+
+- **GitHub permissions:** Be a **Contributor** to the GitHub repository.
 
 ## Autocomplete work items  
 

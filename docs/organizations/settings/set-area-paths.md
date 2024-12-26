@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/12/2024
+ms.date: 11/14/2024
 ---
 
 # Define area paths and assign to a team
@@ -48,11 +48,11 @@ New projects include a single root area corresponding to the project name and a 
 If you're new to managing projects and teams, follow these steps to configure your project and teams:
 
 1. **Define area paths**: Determine the number and names of area paths needed to categorize your work. Add at least one area path per team. For more information, see [About areas and iterations](about-areas-iterations.md).
-2. **Define teams**: Decide the number and names of teams required. For more information, see [About teams and Agile tools](about-teams-and-settings.md).
-3. **Configure area paths**: Go to **Project settings** > **Project configuration** > **Areas** and define the area paths for your project. Follow the steps in [Add area paths](#add-an-area-path).
-4. **Create teams**: Create the necessary teams based on step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).
-5. **Assign area paths to teams**: In the team configuration, assign the default and other area paths to each team. Do the steps in [Set team default area paths](#set-team-area-paths).
-6. **Assign area paths to work items**: Assign work items to the defined area paths using [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to update multiple items at once.
+1. **Define teams**: Decide the number and names of teams required. For more information, see [About teams and Agile tools](about-teams-and-settings.md).
+1. **Configure area paths**: Go to **Project settings** > **Project configuration** > **Areas** and define the area paths for your project. Follow the steps in [Add area paths](#add-an-area-path).
+1. **Create teams**: Create the necessary teams based on step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).
+1. **Assign area paths to teams**: In the team configuration, assign the default and other area paths to each team. Do the steps in [Set team default area paths](#set-team-area-paths).
+1. **Assign area paths to work items**: Assign work items to the defined area paths using [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to update multiple items at once.
 
 > [!NOTE]
 > Assigning the same area path to multiple teams may cause conflicts over work item ownership. For more information, see [Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
@@ -132,7 +132,7 @@ Only one root area is defined by default. Add new and child area paths under the
 > [!div class="mx-imgBorder"]  
 > ![Screenshot shows Areas, defaults defined for project.](media/areas/modify-areas-its-areas-ts.png)
 
-You can also new and child add area paths to a team. For more information, see [Set team area paths](#set-team-area-paths).
+You can also add new and child area paths to a team. For more information, see [Set team area paths](#set-team-area-paths).
 
 #### [Browser](#tab/browser/)
 
@@ -140,12 +140,12 @@ To add a new area path, do the following steps:
 
 1. Highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for an area path and choose **New**, or select the **New** menu item at the top of the area list.
 
-2. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
+1. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
     > [!div class="mx-imgBorder"]  
-    > ![Screenshot shows adding a new area path.](media/areas/new-area.png) 
+    > ![Add a new area path](media/areas/new-area-path.png) 
 
-3. Select **Save and close**
+1. Select **Save and close**
 
 All new areas are added as a child node to the root area path.
 
@@ -156,7 +156,7 @@ To add a child area path, do the following steps:
 1. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
-    > ![Add a new child area path](media/areas/new-child-area.png) 
+    > ![Add a new child area path](media/areas/new-area-preview.png) 
 
 1. Select **Save and close**
 
@@ -231,7 +231,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
    ![Screenshot shows Project settings, Team configuration page.](media/areas/project-settings-team-configuration-preview.png)
 
-2. If you need to switch the team context, use the team selector within the breadcrumbs.
+1. If you need to switch the team context, use the team selector within the breadcrumbs.
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot shows Team Configuration, Team breadcrumb.](media/team-defaults/select-team-context-preview.png)
@@ -280,12 +280,12 @@ You define both areas and iterations from **Project Settings > Team configuratio
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows work backlog or board, choose team profile icon.](media/team-defaults/open-team-profile-choose-team-settings.png)  
 
-2. Choose **Iterations and areas**. 
+1. Choose **Iterations and areas**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot shows Team Profile, choose Iterations and area.](media/team-defaults/team-profile-choose-iterations-areas.png)   
 
-3. If you need to switch the team context, use the team selector within the breadcrumbs.
+1. If you need to switch the team context, use the team selector within the breadcrumbs.
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot shows Team Configuration, Team breadcrumb, version 2019.](media/team-defaults/select-team-context.png)
@@ -342,7 +342,7 @@ You can select existing area paths or create new or child area paths from the te
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Area page for team, on-premises versions.](media/team-defaults/open-areas-fabrikam-team.png)
 
-2. Choose one or more area paths to be active for each team.  
+1. Choose one or more area paths to be active for each team.  
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot shows Work, Iterations page for team, on-premises versions.](media/team-defaults/stdefaults-add-area-paths.png)  
@@ -351,7 +351,7 @@ You can select existing area paths or create new or child area paths from the te
 
     ![Screenshot shows multiple area paths assigned to team, on-premises versions.](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
 
-3. When you finish, refresh the product backlog page for the team, and you see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.  
+1. When you finish, refresh the product backlog page for the team, and you see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.  
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows backlog view of default team, on-premises versions.](media/add-team/product-backlog-default-team-horz.png)  
@@ -410,11 +410,11 @@ The system automatically updates work items and queries that reference your upda
 
     :::image type="content" source="media/areas/edit-area-rename-project-configuration.png" alt-text="Screenshot of open context menu for an Area Path node, choose Edit option.":::
 
-2. In the dialog that opens, enter the new name.
+1. In the dialog that opens, enter the new name.
 
     :::image type="content" source="media/areas/edit-area-rename-dialog.png" alt-text="Screenshot of Edit area dialog.":::
 
-3. To move the node within the hierarchy, change the **Location** field.
+1. To move the node within the hierarchy, change the **Location** field.
 
 	> [!NOTE]
 	> When you rename or change the **Location** field for a node, the system automatically updates the existing work items that reference the **Area Path**. 

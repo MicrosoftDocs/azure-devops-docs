@@ -26,7 +26,8 @@ You need the following prerequisites to manage webhooks for an Azure DevOps orga
 
   >[!IMPORTANT]
   >It's recommended to use only HTTPS endpoints. HTTP has the potential to send private data, including authentication headers, unencrypted in the event payload. You must use HTTPS for basic authentication on a webhook.
-
+- If connecting to a service behind a virtual private network, ensure that Azure DevOps IP addresses are allowed for inbound connections. See [Inbound Connections](../../organizations/security/allow-list-ip-url.md).
+  
 ## Send JSON representation to a service
 
 1. In your Azure DevOps project, go to **Project settings** > **Service hooks** at `https://<organization-name>/<project-name>/_settings/serviceHooks`.

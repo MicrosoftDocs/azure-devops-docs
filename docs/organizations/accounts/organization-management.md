@@ -74,7 +74,7 @@ If you don't manage your user base with Microsoft Entra ID, as described in the 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows Web portal, Project Overview page, Invite new users dialog box.](media/org-manage/invite-members-dialog.png)
   
-   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added as a Stakeholder. You can change the access level later via the **Organization settings** > **Users** page.
+   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added with Stakeholder access. You can change the access level later via the **Organization settings** > **Users** page.
 
 > [!TIP]
 > If you need more than the free users and services included with your organization,

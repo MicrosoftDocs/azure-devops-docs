@@ -26,12 +26,13 @@ You can create queries from the web portal or from a supported client, such as V
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
-> The browser images used in this article are from the New Boards Hubs feature, which is enabled by default. If this feature isn't enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 ::: moniker-end
 
 Check out our recommended [best practices](#best-practices), later in this article.
+
+## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 

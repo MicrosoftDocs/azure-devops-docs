@@ -33,11 +33,11 @@ By default, members of the **Contributors** group are assigned the **Create tag 
 
 ## Prerequisites
 
-- To manage permissions or groups at the project level, you must be a member of the **Project Administrators** security group. If you created the project, you're automatically added as a member of this group. To get added to this group, you need to request permissions from a member of the **Project Administrators** group. See [Look up a project administrator](look-up-project-administrators.md).
-- To add security groups defined in Microsoft Entra ID or Active Directory, make sure the security groups are first defined. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+- **Permissions**: To manage permissions or groups at the project level, be a member of the [**Project Administrators** security group](look-up-project-administrators.md). If you created the project, you're automatically added as a member of this group.
+- **Directory services**: To add security groups in Microsoft Entra ID or Active Directory, ensure the security groups are already defined. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 > [!NOTE]   
-> Users granted **Stakeholder** access, can't access select features even if granted permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+> Users granted **Stakeholder** access can't access select features even if granted permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
  
 <a id="add-user-group"></a>
 

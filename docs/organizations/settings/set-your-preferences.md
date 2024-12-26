@@ -1,13 +1,13 @@
 ---
 title: Set user preferences
 titleSuffix: Azure DevOps
-description: Learn how to change a user's picture, preferred email, and other user preferences from the user's Azure DevOps profile.
+description: Learn how to change a user's picture, preferred email address, and other user preferences from the user's Azure DevOps profile.
 ms.subservice: azure-devops-settings
 ms.author: chcomley
 author: chcomley
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2022
+ms.date: 12/19/2024
 ---
 
 # Set user preferences
@@ -16,44 +16,29 @@ ms.date: 07/27/2022
 
 ::: moniker range="azure-devops"
 
-You can set user preferences on the user profile page in Azure DevOps. Changes can include the picture, display name, preferred email, and UI theme. These settings only apply to Azure DevOps.
+You can set user preferences on the user profile page in Azure DevOps. Changes can include the user picture, display name, preferred email address, and UI theme. These settings only apply to Azure DevOps.
 
-> [!TIP]
-> - To change the settings for your work or school account, see [Change work or school account settings in the My Account portal](https://support.microsoft.com/account-billing/change-work-or-school-account-settings-in-the-my-account-portal-e50bfccb-58e9-4d42-939c-a60cb6d56ced).
-> - You can't change the UI theme if you're using Internet Explorer. For more information about the browsers we support, see [Azure DevOps client compatibility](/azure/devops/server/compatibility?view=azure-devops&preserve-view=true).
-
-See the following articles for setting other user preferences:
-
-- [Change time and locale](../accounts/change-time-zone.md#change-user-profile-time-zone): Change the preferred language, date and time patterns, and time zone.  
-- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md): Add or review subscriptions to event changes.  
-- [Refresh or reevaluate your permissions](../security/troubleshoot-permissions.md#refresh-permissions): Use to refresh permissions and make any recent changes take effect.  
-- [Manage preview features](../../project/navigation/preview-features.md): Enable or disable a preview feature for your user account.  
-
-> [!NOTE]
-> Language settings apply only to your profile page and don't affect the UI language.
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
-On the Azure DevOps user profile page, you can change the user picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
-
-See the following articles for setting more user preferences:
-
-- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-- [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
+On the Azure DevOps user profile page, you can change the user picture, display name, preferred email address, language, date and time pattern, time zone, and other user interface preferences.
 
 ::: moniker-end
 
 ## Set preferences
 
+#### [Current page](#tab/current-page) 
+
+Do the following steps to set your preferences.
+
 ::: moniker range="azure-devops"
 
 1. From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
 
-   ![Screenshot to open Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
+   ![Screenshot shows buttons to get to Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
 
-2. From the **Profile** page, you can change the profile picture, display name, contact information, and region. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
+2. From the **Profile** page, you can change the profile picture, display name, contact email address, and region. Select **Save**.
 
    ![Screenshot to choose and edit the Profile page.](media/edit-about-page-preview.png)
 
@@ -61,14 +46,14 @@ See the following articles for setting more user preferences:
 
 ::: moniker range=" < azure-devops"
 
-1. To change the user preferences, open the user profile menu, and then select **My profile**.
+1. Open the user profile menu, and then select **My profile**.
 
 	:::image type="content" source="media/user-preferences/open-profile-menu-2020.png" alt-text="Screenshot of select the user profile menu, and then My profile.":::
 
 2. From the **General** tab, you can change the following information:
    - Profile picture
    - Display name
-   - Preferred email 
+   - Preferred email address
    - Whether borders appear for fields on work item forms.
 
 	:::image type="content" source="media/user-preferences/user-profile-dialog-general-tab.png" alt-text="Screenshot of User Profile dialog, General tab.":::
@@ -82,7 +67,46 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-User profile settings are updated.
+User profile settings get updated.
+
+#### [Microsoft Entra profile preview](#tab/preview-page) 
+
+::: moniker range="azure-devops"
+
+We're previewing the ability to use your profile picture, display name, contact email address, and region as configured in Microsoft Entra within Azure DevOps.
+
+From the Azure DevOps home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
+
+:::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Microsoft Entra profile information in the Profile page.":::
+
+If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
+
+:::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
+
+To receive information, tips, and resources related to Azure DevOps, enter a check in the box and select **Save**.
+
+User profile settings get updated.
+
+## FAQs
+
+See the following frequently asked questions and answers.
+
+#### Q: How can I change my profile picture in Microsoft Entra?
+A: 
+1. Sign in to your [Microsoft 365 account](https://www.microsoft365.com/).
+2. Select the camera icon or **Change Photo**, next to your current profile picture.
+3. Upload a new photo from your device and adjust it as needed.
+4. **Save** your changes.
+
+#### Q: Why did I stop getting email notifications from Azure DevOps?
+
+A: Azure DevOps sends notification emails to the email address configured for your account in Microsoft Entra. If you're not getting notifications, make sure an email address is configured in Microsoft Entra. 
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]
+
+---
 
 ## Related articles
 

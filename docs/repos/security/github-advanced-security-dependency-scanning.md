@@ -24,7 +24,7 @@ Dependency scanning generates an alert for any open-source component, direct or 
 
 ### About dependency scanning detection 
 
-A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code (in other words, a new commit) is executed. 
+A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task is executed. 
 
 For every vulnerable component detected in use, the component and vulnerability are listed in the build log and displayed as an alert in the Advanced Security tab. Only advisories that reviewed by GitHub and added to the [GitHub Advisory Database](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/browsing-security-advisories-in-the-github-advisory-database) create a dependency scanning alert. The build log includes a link to the individual alert for further investigation. For more information on the alert detail, view Fixing dependency scanning alerts.  
 
@@ -32,24 +32,7 @@ The build log also contains basic information about each detected vulnerability.
 
 ![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png) 
 
-### Supported package ecosystems 
-
-Dependency scanning supports both direct and transitive dependencies for all supported package ecosystems. 
-
-| Package manager  | Languages  | Supported formats |
-|---|---|---|
-|  Cargo | Rust  | `Cargo.toml`, `Cargo.lock`  | 
-|  CocoaPods | Swift  | `Podfile.lock`  | 
-|  Go modules | Go  | `go.mod`, `go.sum`  | 
-|  Gradle | Java  | `*.lockfile`  | 
-|  Maven | Java  | `pom.xml`  | 
-|  npm | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | 
-|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | 
-|  pip | Python  | `setup.py`, `requirements.txt`  | 
-|  pnpm | JavaScript  | `package.json` | 
-|  RubyGems | Ruby  |  `Gemfile.lock` | 
-|  Yarn | JavaScript  | `package.json`  | 
-
+For a list of supported component ecosystems and versions, see [Supported package ecosystems](./github-advanced-security-dependency-scanning-ecosystems.md).
 
 ### About dependency scanning alerts 
 
