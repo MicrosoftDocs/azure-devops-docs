@@ -7,7 +7,7 @@ ms.service: azure-devops-repos
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.date: 11/13/2020
+ms.date: 12/26/2024
 ---
 
 # Use Git Credential Manager to authenticate to Azure Repos
@@ -15,7 +15,7 @@ ms.date: 11/13/2020
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Microsoft Entra ID.  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multifactor authentication through Microsoft account or Microsoft Entra ID.  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
 Azure Repos provides IDE support for Microsoft account and Microsoft Entra authentication through the following clients:
 
@@ -30,7 +30,7 @@ If your environment doesn't have an integration available, configure your IDE wi
 
 Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes Git Credential Manager. Make sure to enable the Git Credential Manager installation option.
 
-   ![Select Enable Git Credential Manager during Git for Windows install](media/install-git-with-git-credential-manager.png) 
+   ![Screenshot shows selection, Enable Git Credential Manager during Git for Windows install.](media/install-git-with-git-credential-manager.png) 
 
 ### macOS and Linux
 
