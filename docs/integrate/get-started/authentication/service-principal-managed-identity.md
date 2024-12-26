@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.custom: arm2024
 ms.author: wonga
 author: wonga
-ms.date: 11/18/2024
+ms.date: 12/26/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -89,7 +89,7 @@ Management of service principals differs from user accounts in the following key
 * Service principals can be added to Microsoft Entra groups (in the Azure portal). There currently exists a technical limitation preventing us from being able to display them in a list of Microsoft Entra group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra group they belong to. 
 * Users in a Microsoft Entra group won't be part of an Azure DevOps organization immediately just because an admin creates a group and adds a Microsoft Entra group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
 * You can't modify a service principal’s display name or avatar on Azure DevOps.
-* Service principals get licenses in each organization they gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
+* Service principals get licenses in each organization they get added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 
 ### 5. Get a Microsoft Entra ID token
 
