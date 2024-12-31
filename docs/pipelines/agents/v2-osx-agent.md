@@ -20,7 +20,7 @@ monikerRange: '<= azure-devops'
 
 
 
-To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+To build and deploy Xcode apps, you need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
