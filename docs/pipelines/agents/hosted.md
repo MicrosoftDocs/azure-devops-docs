@@ -379,8 +379,6 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
 
-  This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
-
 #### Mono
 
   To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
