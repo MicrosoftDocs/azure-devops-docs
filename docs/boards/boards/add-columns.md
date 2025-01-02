@@ -169,7 +169,7 @@ Choose a column tab to configure the Definition of Done for that column.
 
 :::image type="content" source="media/columns/definition-of-done-defined.png" alt-text="Screenshot showing the columns management screen, entering plain text for Definition of Done.":::
 
-Users can quickly double-check the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
+Users can quickly double-check the criteria by choosing the Information tooltip :::image type="icon" source="../../media/icons/info.png" border="false"::: info icon.  
 
 :::image type="content" source="media/columns/definition-of-done-information-tooltip.png" alt-text="Screenshot showing information tooltip of Definition of Done.":::
 
