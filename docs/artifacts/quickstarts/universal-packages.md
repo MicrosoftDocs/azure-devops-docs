@@ -94,6 +94,9 @@ Using the CLI helps streamline your tasks. Before you continue, make sure you ha
 
 * * *
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Publish Universal Packages
 
 To publish a Universal Package to your feed, you need to provide a package name and version number.
@@ -115,7 +118,7 @@ The package name should be in lowercase, start and end with letters or numbers, 
         ```
 
 > [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+> Universal Packages containing an exceptionally large number of files (100K+) may fail to publish. In this case, we recommend bundling the files into a *ZIP* or *TAR* archive to reduce the file count.
 
 ## View published packages
 
