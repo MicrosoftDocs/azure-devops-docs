@@ -41,7 +41,7 @@ Azure Artifacts is a highly scalable package management solution that enables de
 - **Universal Packages**: up to 4 TiB per file (Recommended for large binary files).
 
 > [!NOTE]
-> If you plan to publish a Universal Package containing an exceptionally large number of files (100K+), we recommend compressing the files into a *ZIP* or *TAR* archive to avoid the risk of your publish request being rejected. For all other Universal Packages, leave the files uncompressed and follow the regular workflow to publish to your feed.
+> Universal Packages containing an exceptionally large number of files (100K+) may fail to publish. In this case, we recommend bundling the files into a *ZIP* or *TAR* archive to reduce the file count.
 
 ::: moniker-end
 
