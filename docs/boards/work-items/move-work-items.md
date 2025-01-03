@@ -16,8 +16,6 @@ ms.date: 01/03/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-## Introduction
-
 When you add a team or reorganize existing teams, you might need to transfer work items from one team to another by updating their Area Paths. Every work item in Azure DevOps is assigned to an Area Path, which determines team ownership and influences how work items are displayed on backlogs and boards.
 
 Work items categorized under the Requirements category appear on a team's backlog based on their assignment to the team's Area Path. Similarly, assigning other work items to a team's Area Path supports queries and reporting based on team ownership.
@@ -185,7 +183,7 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 
 ::: moniker-end 
 
-## Verify visibility in the backlog
+## Verify visibility
 
 After you move work items from one team to another team, do the following actions if you don't see the work items:
 - **Refresh**: Refresh the board or select **Show more items** if newly added work items don't appear.
