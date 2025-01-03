@@ -4,10 +4,11 @@ titleSuffix: Azure DevOps Services
 description: Learn how to delete your organization, and what happens to users when you do.
 ms.subservice: azure-devops-organizations
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
+ai-usage: ai-assisted
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2024
+ms.date: 01/03/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -16,14 +17,15 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you no longer need an organization, you can delete it from Azure DevOps. If you change your mind within 28 days, you can [recover your organization](./recover-your-organization.md).
-After 28 days, your organization and all associated data are permanently deleted.
+After 28 days, your organization and all associated data get permanently deleted.
 
-When you delete your organization, the following occur:
+When you delete your organization, the following results occur:
 
-- Users immediately lose access to organization services and resources.
-- Your organization URL becomes available for anyone to use, which might take up to one hour.
-- Your organization is disabled and appears deleted in your profile for 28 days.
-- If your organization is linked to an Azure subscription for billing, you must unlink it before deletion. You're still charged for any paid users and services used during the current billing cycle. Billing stops after the current cycle ends.
+- **Loss of access:** Users immediately lose access to organization services and resources.
+- **URL availability:** Your organization URL becomes available for anyone to use, which might take up to one hour.
+- **Organization disabled:** Your organization is disabled and appears deleted in your profile for 28 days.
+- **Billing unlinking:** If your organization is linked to an Azure subscription for billing, you must unlink it before deletion. You're still charged for any paid users and services used during the current billing cycle. Billing stops after the current cycle ends.
+- **Azure account access:** Deleting an organization in Azure DevOps doesn't directly affect users' access to their Azure accounts in portal.azure.com. Users still retain access to Azure accounts and other services, as the deletion is specific to the Azure DevOps organization and its associated data.
 
 > [!CAUTION]
 > In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
