@@ -67,7 +67,7 @@ Do the following steps to add the Markdown widget. To add a dashboard, see [Add,
    ![Screenshot shows Markdown widget.](media/widget-markdown-tile.png) 
 
 5. Select **Done Editing** to exit dashboard editing. This action dismisses the widget catalog. You can then configure the Markdown widget as needed.
-6. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: more actions > ![gear icon](../../media/icons/gear-icon.png)  **Configure**.
+6. Select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: more actions > ![gear icon](../../media/icons/gear-icon.png)  **Configure**.
 
    :::image type="content" source="media/widget-more-actions-configure.png" alt-text="Screenshot shows three dots for more actions, and the highlighted Configure button.":::
 
