@@ -4,6 +4,7 @@ description:
 ms.topic: how-to 
 ms.date: 01/03/2025
 monikerRange: 'azure-devops'
+ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to design a sample pipeline with stages so that I can see how to use conditions, validation, triggers, etc..
 
@@ -13,7 +14,7 @@ monikerRange: 'azure-devops'
  
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this article, you learn how to create and run a more complex YAML pipeline with multiple stages and conditions. The pipeline includes build, test, and deploy stages and also has optional stages for alternate deployments and rollbacks. 
+In this article, learn how to create and run a more complex YAML pipeline with multiple stages and conditions. The example pipeline includes build, test, and deploy stages and also has optional stages for alternate deployments and rollbacks. With multiple stages you can isolate different parts of your pipeline, improve quality control and security, have better visibility into the pipeline's progress, and mitigate risk. The rollback stage lets you quickly revert to a stable version if something goes wrong, enhacing reliability and stability. 
 
 This code works for most scenarios but doesn't include language or platform-specific requirements. As a next step, customize the pipeline for your specific implementation needs. 
 
@@ -26,7 +27,7 @@ This code works for most scenarios but doesn't include language or platform-spec
 
 ## 1. Create the build stage
 
-In the build stage, you restore dependencies and run unit tests to ensure the code is ready for further stages such as testing and deployment. 
+In the `Build` stage, restore dependencies and run unit tests to make sure the code is ready for testing and deployment. If your application needs to compile source code, do so in the build stage.
 
 ```yaml
 trigger:
@@ -52,7 +53,7 @@ stages:
     
 ## 2. Add the test stage 
 
-The Test stage runs tests on the project and typically publishes the test results to Azure DevOps. To learn more about publishing test results, see the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
+The `Test` stage runs tests on the project and typically publishes the test results to Azure DevOps. To learn more about publishing test results, see the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
 
 The Test stage only runs if the Build stage completes successfully and the stage can't be skipped.
 
@@ -76,7 +77,7 @@ Because `isSkippable` is set to `false`, the option to skip the Test stage isn't
 
 ## 3. Deploy to staging
 
-The `DeployToStaging` stage depends on the `Test` stage to run. The `DeployStagingJobWithValidation` job requires manual approval. A user needs to validate the stage before the run proceeds. Having a manual approval in your pipeline adds another level of security, helps mitigate risks, and makes sure that all changes get reviewed by the appropriate stakeholders. The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) pauses the pipeline run and waits for a manual interaction. 
+The `DeployToStaging` stage depends on the `Test` stage to run. The `DeployStagingJobWithValidation` job requires manual approval. The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) pauses the pipeline run and waits for a manual interaction. A user needs to validate the stage before the run proceeds. Having a manual approval in your pipeline adds another level of security, helps mitigate risks, and makes sure that all changes get reviewed by the appropriate stakeholders. 
 
 The pool for the manual approval is `server`. Manual validations only run on a server pool. 
 
@@ -142,7 +143,7 @@ The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-vali
 
 ## 5. Add optional alternate production and rollback stages
 
-These two optional stages,`DeployToAlternateProduction` and `Rollback`, are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. This enhances the overall reliability and availability of your application. You may also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md).
+Two optional stages,`DeployToAlternateProduction` and `Rollback`, are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. This enhances the overall reliability and availability of your application. You may also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md).
 
 The `Rollback` stage provides a safety net to revert your application to a previously stable state if something goes wrong during or after a deployment. This could be because of a deployment failure, bug, compliance requirement, disaster recovery, or other issue. A rollback stage is essential for maintaining the stability and reliability of your application. 
 
