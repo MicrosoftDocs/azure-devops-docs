@@ -24,7 +24,7 @@ Explore the following items:
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 - **Extensions**: [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension. If the extension isn't installed, the option to explore work items from the board isn't visible.
-- 
+
 <a name="kanban"></a>
 
 ## Explore work items from the board
