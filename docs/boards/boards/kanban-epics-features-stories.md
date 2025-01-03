@@ -22,9 +22,6 @@ And, as with [child task checklists for backlog items](add-task-checklists.md), 
 
 For more information, see [Define features and epics](../backlogs/define-features-epics.md). 
 
-> [!div class="mx-imgBorder"]
-> ![Web portal, Features board with several user stories defined](media/features-epics/features-with-stories-intro.png)
-
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]

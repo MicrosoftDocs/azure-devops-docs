@@ -272,7 +272,7 @@ In addition to the dynamic card reordering, you can also move a card to a specif
 You can reorder the work items within a board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
 
 > [!NOTE]   
-> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Move to column position** feature requires the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 Specify a value within the range listed, which corresponds to the number of items currently in the column. 
 

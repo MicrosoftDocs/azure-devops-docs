@@ -97,9 +97,6 @@ You can customize boards to display intermediate columns. For each column added,
 
 1. For each team, [open your board](../../../boards/get-started/plan-track-work.md).
 
-   > [!div class="mx-imgBorder"]  
-   > ![Open team board](media/scrum-to-agile/open-kanban-board.png)
-
 2. Choose the **Correct this now** link or the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 
    The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
