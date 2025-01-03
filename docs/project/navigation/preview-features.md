@@ -77,7 +77,7 @@ When you turn on a feature at the project or collection-level, you turn it on fo
 
 ::: moniker range="azure-devops"
 
-The following table shows the preview features you can turn on or off based on your role: user or team member, or for the organization. Only Project Collection Administrators can manage organization-level features. 
+The following table lists the preview features that you can turn on or off based on your role: user, team member, or organization. Only Project Collection Administrators can manage organization-level features.
 
 |**Preview features**|**Per user**|**Per organization**|
 |--------------------|--------------|-----------------|

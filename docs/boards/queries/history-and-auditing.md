@@ -190,7 +190,7 @@ To view only the comments that were added to the log, choose the **Discussion On
 The **History** tab is designed to track all changes made to a work item to support full traceability. The long revision history that results can make it difficult to understand when changes happen to specific fields. To quickly find revisions made to a specific field or by specific people, filter the history view. 
 
 > [!NOTE]   
-> The **Toggle filter** feature requires the **New Boards Hub** feature, which is enabled by default. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Toggle filter** feature requires the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 To review updates by specific people, select their names from the **Updated by** menu. 
 

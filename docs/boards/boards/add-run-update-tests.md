@@ -69,7 +69,7 @@ Tests that you create from the board automatically get linked to the user story 
 
 	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped.
 
-	For example, a test suite is created for each user story, and all inline tests are added to that suite. In the following example, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
+	For example, a test suite is created for each user story, and all inline tests get added to that suite. In the following example, test suite 152 is highlighted which has three manual tests defined with IDs of 280, 281, and 282.  
 
 	![Screenshot showing  Inline test cases get added to test suites and test plans.](media/i-test-plan-suite.png) 
 

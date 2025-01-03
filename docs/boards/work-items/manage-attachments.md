@@ -184,7 +184,7 @@ This action is typically reserved for situations requiring immediate removal, su
 The attachment is permanently deleted and isn't accessible from any other links. 
 
 > [!NOTE]
-> This feature is only available in New Boards Hub.
+> This feature requires the **New Boards Hub**, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 

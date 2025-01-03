@@ -89,7 +89,7 @@ The following example shows how to find all closed bugs by modifying the
 1. Select **Save as** in the more actions ![More actions](../../media/icons/more-actions.png) menu.
 
     > [!NOTE]
-    > When the **New Boards Hubs** feature is not enabled, the **Save As** selection is at the top of the page.
+    > If the **New Boards Hubs** feature is disabled, the **Save As** selection is at the top of the page.
 
 1. Save the query to your **My Queries** folder.  
 

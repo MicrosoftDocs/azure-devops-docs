@@ -106,8 +106,6 @@ You can customize boards to display intermediate columns. For each column added,
 
 1. For each team, [open your board](../../../boards/get-started/plan-track-work.md), and then select **Correct this now** or select the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 
-   :::image type="content" source="media/change-process/open-kanban-board.png" alt-text="Screenshot of opened board.":::
-
    The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 
    :::image type="content" source="media/change-process/kanban-stories-column-settings-to-correct.png" alt-text="Screenshot of Column dialog with settings to correct.":::

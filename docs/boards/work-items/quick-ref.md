@@ -17,11 +17,10 @@ ms.date: 02/02/2023
 
 Use this index to quickly access concepts and tasks related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
-
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> The following features require that you enable the **New Boards Hub** preview feature. These features are only available for Azure DevOps Services at this time. To enable the **New Boards Hub**, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The following features require the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md):
 > - [Change the link type of an existing link](quick-ref.md#work-item-user-tasks)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
