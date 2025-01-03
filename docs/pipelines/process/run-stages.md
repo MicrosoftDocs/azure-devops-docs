@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 In this article, you learn how to create and run a more complex YAML pipeline with multiple stages and conditions. The pipeline includes build, test, and deploy stages and also has optional stages for alternate deployments and rollbacks. 
 
-This code works for most scenarios but doesn't include language or platform-specific requirements. As a next step, you'll need to customize the pipeline for your specific implementation needs. 
+This code works for most scenarios but doesn't include language or platform-specific requirements. As a next step, customize the pipeline for your specific implementation needs. 
 
 ## Prerequisites
 
@@ -28,27 +28,27 @@ This code works for most scenarios but doesn't include language or platform-spec
 
 In the build stage, you restore dependencies and run unit tests to ensure the code is ready for further stages such as testing and deployment. 
 
-```yaml
-trigger:
-- main
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-stages:
-- stage: Build
-  displayName: 'Build Stage'
-  jobs:
-  - job: BuildJob
-    displayName: 'Build Job'
-    steps:
-    - script: |
-        echo "Restoring project dependencies..."
-      displayName: 'Restore dependencies'
-    - script: |
-        echo "Running unit tests..."
-      displayName: 'Run unit tests'
-```
+    ```yaml
+    trigger:
+    - main
+    
+    pool:
+      vmImage: 'ubuntu-latest'
+    
+    stages:
+    - stage: Build
+      displayName: 'Build Stage'
+      jobs:
+      - job: BuildJob
+        displayName: 'Build Job'
+        steps:
+        - script: |
+            echo "Restoring project dependencies..."
+          displayName: 'Restore dependencies'
+        - script: |
+            echo "Running unit tests..."
+          displayName: 'Run unit tests'
+    ```
     
 ## 2. Add the test stage 
 
@@ -60,19 +60,19 @@ Because `isSkippable` is set to `false`, the option to skip the Test stage isn't
 
 :::image type="content" source="media/stages/isskippable-stage-false.png" alt-text="Screenshot of stage that can't be skipped.":::  
 
-```yaml
-- stage: Test
-  displayName: 'Test Stage'
-  dependsOn: Build
-  isSkippable: false
-  jobs:
-  - job: TestJob
-    displayName: 'Test Job'
-    steps:
-    - script: |
-        echo "Running unit tests..."
-      displayName: 'Run unit tests'
-   ```
+    ```yaml
+    - stage: Test
+      displayName: 'Test Stage'
+      dependsOn: Build
+      isSkippable: false
+      jobs:
+      - job: TestJob
+        displayName: 'Test Job'
+        steps:
+        - script: |
+            echo "Running unit tests..."
+          displayName: 'Run unit tests'
+    ```
 
 ## 3. Deploy to staging
 
@@ -81,32 +81,32 @@ The `DeployToStaging` stage depends on the `Test` stage to run. The `DeployStagi
 The pool for the manual approval is `server`. Manual validations only run on a server pool. 
 
 
-```yaml
-- stage: DeployToStaging
-  displayName: 'Deploy to Staging'
-  dependsOn: Test
-  jobs:
-  - job: DeployStagingJob
-    displayName: 'Deploy to Staging Job'
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
-    - script: |
-        echo "Build staging job..."
-      displayName: 'Build and deploy to staging'
-
-  - job: DeployStagingJobWithValidation
-    pool: server
-    timeoutInMinutes: 4320 # job times out in 3 days
-    displayName: 'Deploy to Staging Job'
-    steps:
-    - task: ManualValidation@1
-      timeoutInMinutes: 1440 # task times out in 1 day
-      inputs:
-        notifyUsers: user@example.com
-        instructions: 'Please validate the stage configuration and resume'
-        onTimeout: 'resume'
-```
+    ```yaml
+    - stage: DeployToStaging
+      displayName: 'Deploy to Staging'
+      dependsOn: Test
+      jobs:
+      - job: DeployStagingJob
+        displayName: 'Deploy to Staging Job'
+        pool:
+          vmImage: 'ubuntu-latest'
+        steps:
+        - script: |
+            echo "Build staging job..."
+          displayName: 'Build and deploy to staging'
+    
+      - job: DeployStagingJobWithValidation
+        pool: server
+        timeoutInMinutes: 4320 # job times out in 3 days
+        displayName: 'Deploy to Staging Job'
+        steps:
+        - task: ManualValidation@1
+          timeoutInMinutes: 1440 # task times out in 1 day
+          inputs:
+            notifyUsers: user@example.com
+            instructions: 'Please validate the stage configuration and resume'
+            onTimeout: 'resume'
+    ```
 
 
 ## 4. Deploy to production
@@ -115,32 +115,32 @@ In the `DeployToProduction` stage, the application deploys to the production env
 
 The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) here adds a second human validation step for security and quality control. We also used a manual validation task in the `DeployToStaging` stage. 
 
-```yaml
-- stage: DeployToProduction
-  displayName: 'Deploy to Production'
-  dependsOn: DeployToStaging
-  lockBehavior: sequential
-  condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/main', 'refs/heads/release'))
-  jobs:
-  - job: DeployProductionJob
-    displayName: 'Deploy to Production Job'
-    steps:
-    - script: |
-        echo "Deploying to production..."
-        # Add your deployment commands here
-      displayName: 'Run deployment commands'
-  - job: waitForValidation
-    displayName: Wait for external validation
-    pool: server
-    timeoutInMinutes: 4320 # job times out in 3 days
-    steps:
-    - task: ManualValidation@1
-      timeoutInMinutes: 1440 # task times out in 1 day
-      inputs:
-        notifyUsers: user@example.com
-        instructions: 'Please validate the build configuration and resume'
-        onTimeout: 'resume'
-```
+    ```yaml
+    - stage: DeployToProduction
+      displayName: 'Deploy to Production'
+      dependsOn: DeployToStaging
+      lockBehavior: sequential
+      condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/main', 'refs/heads/release'))
+      jobs:
+      - job: DeployProductionJob
+        displayName: 'Deploy to Production Job'
+        steps:
+        - script: |
+            echo "Deploying to production..."
+            # Add your deployment commands here
+          displayName: 'Run deployment commands'
+      - job: waitForValidation
+        displayName: Wait for external validation
+        pool: server
+        timeoutInMinutes: 4320 # job times out in 3 days
+        steps:
+        - task: ManualValidation@1
+          timeoutInMinutes: 1440 # task times out in 1 day
+          inputs:
+            notifyUsers: user@example.com
+            instructions: 'Please validate the build configuration and resume'
+            onTimeout: 'resume'
+    ```
 
 ## 5. Add optional alternate production and rollback stages
 
@@ -148,42 +148,35 @@ These two optional stages,`DeployToAlternateProduction` and `Rollback`, are manu
 
 The `Rollback` stage provides a safety net to revert your application to a previously stable state if something goes wrong during or after a deployment. This could be because of a deployment failure, bug, compliance requirement, disaster recovery, or other issue. A rollback stage is essential for maintaining the stability and reliability of your application. 
 
-```yaml
-- stage: DeployToAlternateProduction
-  displayName: 'Deploy to Alternate Production'
-  condition: succeeded()
-  trigger: manual
-  jobs:
-  - job: DeployAlternateProductionJob
-    displayName: 'Deploy to Alternate Production Job'
-    steps:
-    - script: |
-        echo "Deploying to alternate production..."
-        # Add your deployment commands here
-      displayName: 'Run deployment commands'
+    ```yaml
+    - stage: DeployToAlternateProduction
+      displayName: 'Deploy to Alternate Production'
+      condition: succeeded()
+      trigger: manual
+      jobs:
+      - job: DeployAlternateProductionJob
+        displayName: 'Deploy to Alternate Production Job'
+        steps:
+        - script: |
+            echo "Deploying to alternate production..."
+            # Add your deployment commands here
+          displayName: 'Run deployment commands'
+    
+    - stage: Rollback
+      displayName: 'Rollback Stage'
+      trigger: manual
+      jobs:
+      - job: RollbackJob
+        displayName: 'Rollback Job'
+        steps:
+        - script: |
+            echo "Rolling back the deployment..."
+            # Add your rollback commands here
+          displayName: 'Run rollback commands'
+    ```
 
-- stage: Rollback
-  displayName: 'Rollback Stage'
-  trigger: manual
-  jobs:
-  - job: RollbackJob
-    displayName: 'Rollback Job'
-    steps:
-    - script: |
-        echo "Rolling back the deployment..."
-        # Add your rollback commands here
-      displayName: 'Run rollback commands'
-```
 
-
-## Related content
+## Next steps
 
 > [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
-
--or-
-
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
-
+> [Learn about the pipeline run sequence](runs.md)
