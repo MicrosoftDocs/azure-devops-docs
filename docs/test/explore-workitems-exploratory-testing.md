@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'
-ms.date: 08/22/2024
+ms.date: 01/03/2025
 ---
 
 # Explore work items with the Test & Feedback extension
@@ -23,7 +23,8 @@ Explore the following items:
 - [Multiple work items in the same session](#multipleitems)
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
-
+- **Extensions**: [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension. If the extension isn't installed, the option to explore work items from the board isn't visible.
+- 
 <a name="kanban"></a>
 
 ## Explore work items from the board
