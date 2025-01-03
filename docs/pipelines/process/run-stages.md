@@ -2,7 +2,7 @@
 title: Design and run a YAML pipeline with stages
 description: 
 ms.topic: how-to 
-ms.date: 11/01/2024
+ms.date: 01/03/2025
 monikerRange: 'azure-devops'
 
 #customer intent: As a developer, I want to design a sample pipeline with stages so that I can see how to use conditions, validation, triggers, etc..
@@ -13,122 +13,20 @@ monikerRange: 'azure-devops'
  
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to run a pipeline with more complex stages in Azure DevOps YAML pipelines. 
+In this article, you learn how to create and run a more complex YAML pipeline with multiple stages and conditions. The pipeline includes build, test, and deploy stages and also has optional stages for alternate deployments and rollbacks. 
 
-    - Learn how to run stages
-    - Include properties like conditions, dependsOn, trigger: Manual, running children
-    - Explain what happens if a stage fails
-    - Possibly include manualValidation tasks and checks
-
+This code works for most scenarios but doesn't include language or platform-specific requirements. As a next step, you'll need to customize the pipeline for your specific implementation needs. 
 
 ## Prerequisites
 
-Azure DevOps account
-Basic knowledge of YAML and Azure Pipelines
-Sample repository or project to work with
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
+* Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). 
 
-## "[verb] * [noun]"
+## 1. Create the build stage
 
-[Introduce the procedure.]
-
-1. Create the build stage
-
-Include 
-
-    ```yaml
-    trigger:
-    - main
-    
-    pool:
-      vmImage: 'ubuntu-latest'
-    
-    stages:
-    - stage: Build
-      displayName: 'Build Stage'
-      jobs:
-      - job: BuildJob
-        displayName: 'Build Job'
-        steps:
-        - script: |
-            echo "Building the project..."
-          displayName: 'Run build commands'
-    
-    - stage: Test
-      displayName: 'Test Stage'
-      dependsOn: Build
-      jobs:
-      - job: TestJob
-        displayName: 'Test Job'
-        steps:
-        - script: |
-            echo "Running tests..."
-          displayName: 'Run test commands'
-    
-    - stage: Deploy
-      displayName: 'Deploy Stage'
-      jobs:
-      - job: DeployJob
-        displayName: 'Deploy Job'
-        steps:
-        - script: |
-            echo "Deploying the project..."
-          displayName: 'Run deployment commands'
-    ```
-    
-1. Test stage - Add a dependsOn clause
-
-isSkippable: false
-- show what that looks like in the UI, you can't do a run without the Test stage
-
-  ```yaml
-    pool:
-      vmImage: 'ubuntu-latest'
-    
-    stages:
-    - stage: Build
-      displayName: 'Build Stage'
-      jobs:
-      - job: BuildJob
-        displayName: 'Build Job'
-        steps:
-        - script: |
-            echo "Building the project..."
-          displayName: 'Run build commands'
-    
-    - stage: Test
-      displayName: 'Test Stage'
-      dependsOn: Build
-      isSkippable: false
-      jobs:
-      - job: TestJob
-        displayName: 'Test Job'
-        steps:
-        - script: |
-            echo "Running tests..."
-          displayName: 'Run test commands'
-    
-    - stage: Deploy
-      displayName: 'Deploy Stage'
-      dependsOn: 
-      - Build
-      - Test
-      jobs:
-      - job: DeployJob
-        displayName: 'Deploy Job'
-        steps:
-        - script: |
-            echo "Deploying the project..."
-          displayName: 'Run deployment commands'
-   ```
-
-1. Deploy to staging
-- include approval 
-
-
-1. Deploy to production
-- Only allow deployment from certain branches
-
-## Full pipeline
+In the build stage, you restore dependencies and run unit tests to ensure the code is ready for further stages such as testing and deployment. 
 
 ```yaml
 trigger:
@@ -145,10 +43,24 @@ stages:
     displayName: 'Build Job'
     steps:
     - script: |
-        echo "Building the project..."
-        # Add your build commands here
-      displayName: 'Run build commands'
+        echo "Restoring project dependencies..."
+      displayName: 'Restore dependencies'
+    - script: |
+        echo "Running unit tests..."
+      displayName: 'Run unit tests'
+```
+    
+## 2. Add the test stage 
 
+The Test stage runs tests on the project and typically publishes the test results to Azure DevOps. To learn more about publishing test results, see the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
+
+The Test stage only runs if the Build stage completes successfully and the stage can't be skipped.
+
+Because `isSkippable` is set to `false`, the option to skip the Test stage isn't available in the Azure DevOps UI. 
+
+:::image type="content" source="media/stages/isskippable-stage-false.png" alt-text="Screenshot of stage that can't be skipped.":::  
+
+```yaml
 - stage: Test
   displayName: 'Test Stage'
   dependsOn: Build
@@ -158,30 +70,56 @@ stages:
     displayName: 'Test Job'
     steps:
     - script: |
-        echo "Running tests..."
-        # Add your test commands here
-      displayName: 'Run test commands'
+        echo "Running unit tests..."
+      displayName: 'Run unit tests'
+   ```
 
+## 3. Deploy to staging
+
+The `DeployToStaging` stage depends on the `Test` stage to run. The `DeployStagingJobWithValidation` job requires manual approval. A user needs to validate the stage before the run proceeds. Having a manual approval in your pipeline adds another level of security, helps mitigate risks, and makes sure that all changes get reviewed by the appropriate stakeholders. The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) pauses the pipeline run and waits for a manual interaction. 
+
+The pool for the manual approval is `server`. Manual validations only run on a server pool. 
+
+
+```yaml
 - stage: DeployToStaging
   displayName: 'Deploy to Staging'
   dependsOn: Test
   jobs:
   - job: DeployStagingJob
     displayName: 'Deploy to Staging Job'
+    pool:
+      vmImage: 'ubuntu-latest'
     steps:
     - script: |
-        echo "Deploying to staging..."
-        # Add your deployment commands here
-      displayName: 'Run deployment commands'
-    - task: ManualValidation@1
-      inputs:
-        notifyUsers: 'julia.kullamader@microsoft.com'
-        approvers: 'julia.kullamader@microsoft.com'
-        instructions: 'Please validate the deployment to production.'
+        echo "Build staging job..."
+      displayName: 'Build and deploy to staging'
 
+  - job: DeployStagingJobWithValidation
+    pool: server
+    timeoutInMinutes: 4320 # job times out in 3 days
+    displayName: 'Deploy to Staging Job'
+    steps:
+    - task: ManualValidation@1
+      timeoutInMinutes: 1440 # task times out in 1 day
+      inputs:
+        notifyUsers: user@example.com
+        instructions: 'Please validate the stage configuration and resume'
+        onTimeout: 'resume'
+```
+
+
+## 4. Deploy to production
+
+In the `DeployToProduction` stage, the application deploys to the production environment, but only if the `DeployToStaging` stage succeeds and the source branch is either `main` or `release`. 
+
+The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) here adds a second human validation step for security and quality control. We also used a manual validation task in the `DeployToStaging` stage. 
+
+```yaml
 - stage: DeployToProduction
   displayName: 'Deploy to Production'
   dependsOn: DeployToStaging
+  lockBehavior: sequential
   condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/main', 'refs/heads/release'))
   jobs:
   - job: DeployProductionJob
@@ -191,18 +129,26 @@ stages:
         echo "Deploying to production..."
         # Add your deployment commands here
       displayName: 'Run deployment commands'
+  - job: waitForValidation
+    displayName: Wait for external validation
+    pool: server
+    timeoutInMinutes: 4320 # job times out in 3 days
+    steps:
     - task: ManualValidation@1
+      timeoutInMinutes: 1440 # task times out in 1 day
       inputs:
-        notifyUsers: 'julia.kullamader@microsoft.com'
-        approvers: 'julia.kullamader@microsoft.com'
-        instructions: 'Please validate the deployment to production.'
-      displayName: 'Manual Validation'
-  # - task: Lock@0
-  #   inputs:
-  #     lockName: 'ProductionLock'
-  #     lockType: 'Exclusive'
-  #   displayName: 'Acquire exclusive lock for production deployment'
+        notifyUsers: user@example.com
+        instructions: 'Please validate the build configuration and resume'
+        onTimeout: 'resume'
+```
 
+## 5. Add optional alternate production and rollback stages
+
+These two optional stages,`DeployToAlternateProduction` and `Rollback`, are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. This enhances the overall reliability and availability of your application. You may also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md).
+
+The `Rollback` stage provides a safety net to revert your application to a previously stable state if something goes wrong during or after a deployment. This could be because of a deployment failure, bug, compliance requirement, disaster recovery, or other issue. A rollback stage is essential for maintaining the stability and reliability of your application. 
+
+```yaml
 - stage: DeployToAlternateProduction
   displayName: 'Deploy to Alternate Production'
   condition: succeeded()
@@ -230,16 +176,7 @@ stages:
 ```
 
 
-## Clean up resources
-
-<!-- Optional: Steps to clean up resources - H2
-
-Provide steps the user can take to clean up resources that
-they might no longer need.
-
--->
-
-## Next step -or- Related content
+## Related content
 
 > [!div class="nextstepaction"]
 > [Next sequential article title](link.md)
@@ -250,23 +187,3 @@ they might no longer need.
 * [Related article title](link.md)
 * [Related article title](link.md)
 
-<!-- Optional: Next step or Related content - H2
-
-Consider adding one of these H2 sections (not both):
-
-A "Next step" section that uses 1 link in a blue box 
-to point to a next, consecutive article in a sequence.
-
--or- 
-
-A "Related content" section that lists links to 
-1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
