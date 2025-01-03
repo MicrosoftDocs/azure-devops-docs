@@ -102,13 +102,13 @@ Tasks or other child items you add as checklists are automatically assigned to t
 Checklist items show the avatars of those team members assigned to the item. You can view the avatar assignment of checklist items, or reassign a checklist item by choosing the item's &hellip;**Work items action menu** and selecting **Assigned to**.  
 
 > [!NOTE]   
-> Avatar images and the **Assign to** menu option requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> Avatar images and the **Assign to** menu option require the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 :::image type="content" source="media/checklists/checklist-actions-menu.png" alt-text="Screenshot of Boards, list of tasks showing avatars, and checklist of work items action menu.":::
 
 ::: moniker-end
 
-## Configure your board 
+## Configure your board
 
 To configure or change the layout of your board, see [Customize your boards](../configure-customize.md). 
 

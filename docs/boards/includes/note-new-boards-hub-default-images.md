@@ -7,4 +7,4 @@ ms.date: 11/26/2024
 ---
 
 > [!NOTE]
-> The browser images used in this article are from the New Boards Hub feature, which is enabled by default. If this feature isn't enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+> The following images display the user interface with the **New Boards Hub** feature enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
