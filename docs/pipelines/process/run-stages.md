@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 ---
 
-# Run stages
+# Design and run a YAML pipeline with stages
  
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
