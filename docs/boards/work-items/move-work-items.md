@@ -4,11 +4,12 @@ titleSuffix: Azure Boards
 description: Learn how to move work items assigned to one team to another team.  
 ms.subservice: azure-devops-settings
 ms.custom: devx-track-azurecli
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2022
+ms.date: 01/03/2025
 ---
 
 # Move work items from one team to another team
@@ -27,7 +28,7 @@ Work items categorized under the Requirements category appear on a team's backlo
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
 
-- **Area Path permissions**: Have permissions to view and edit work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).   
+- **Area Path permissions**: *View* and *Edit* work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
 - **Configured area paths**: Ensure that the target team has its Area Paths correctly configured. If not, set up the required Area Paths before transferring work items.
 - **Consistent process model**: Teams should be using a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.
 - **Backup work items**: We recommend you back up or export work items before performing bulk moves to prevent data loss if there's an error. 
@@ -51,11 +52,11 @@ To move work items under a team, do the following steps:
 
 1. Multi-select those items, which belong to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md).
 
-   <img src="media/move-work-items/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items." />
-
-2. After you bulk modify, bulk save.  
+  ![Screenshot of Web portal, Queries page, Bulk modify select work items.](media/move-work-items/query-bulk-edit-area-path.png)
   
-   <img src="media/move-work-items/query-bulk-save.png" alt="Screenshot of Bulk save edited work items." />  
+1. After you bulk modify, bulk save.
+  
+  ![Screenshot of Bulk save edited work items.](media/move-work-items/query-bulk-save.png)
 
 <a id="move-work-items"></a> 
 
@@ -184,11 +185,16 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 
 ::: moniker-end 
 
-## Verify your team backlog 
+## Verify visibility in the backlog
 
-After you move work items from one team to another team, check your team backlog to ensure the items appear. For more information, see [Create your backlog](../backlogs/create-your-backlog.md).  
+After you move work items from one team to another team, do the following actions if you don't see the work items:
+- **Refresh**: Refresh the board or select **Show more items** if newly added work items don't appear.
+- **Verify team**: Check that you selected the right team to ensure the items appear on the backlog.
+- **Verify Area Path**: Verify that the moved work items are assigned to the correct Area Path that corresponds to the team's backlog. Each team has specific Area Paths that determine which work items show up on their backlog. This action is crucial for ensuring visibility in the backlog.
+- **Verify Iteration Path**: Check the Iteration Path for the sprint. The sprint backlog only displays work items assigned to the selected sprint's Iteration Path.
+- **Verify work item types and filters**: Review your backlog filters and that work item types are correctly categorized to ensure all relevant items display.
 
-If you encounter any problems, review [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog.md).
+For more information, see [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog.md).
 
 ## Related articles
 
