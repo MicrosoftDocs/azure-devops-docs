@@ -1,6 +1,6 @@
 ---
 title: Design and run a YAML pipeline with stages
-description: 
+description: Create and run a complex YAML pipeline with multiple stages, conditions, validations, triggers, and rollback options.
 ms.topic: how-to 
 ms.date: 01/03/2025
 monikerRange: 'azure-devops'
