@@ -540,7 +540,7 @@ stages:
 
 ## Extend from a template and use an include template with variables
 
-One common scenario is to have a pipeline with stages for development, testing, and production that uses both a template for variables and an extends template for stages or jobs. 
+One common scenario is to have a pipeline with stages for development, testing, and production that uses both an *include* template for variables and an *extends* template for stages or jobs. 
 
 In the following example, `variables-template.yml`  defines a set of virtual machine variables that are then used in `azure-pipeline.yml`. 
 
