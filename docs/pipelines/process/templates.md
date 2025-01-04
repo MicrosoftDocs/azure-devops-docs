@@ -15,16 +15,16 @@ ai-usage: ai-assisted
 
 ::: moniker range=">=azure-devops-2020"
 
-Templates let you define reusable content, logic, and parameters in YAML pipelines. To work with templates effectively, you'll need to have a basic understanding of [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md) such as stages, steps, and jobs. 
+Templates let you define reusable content, logic, and parameters in YAML pipelines. To work with templates effectively, you need to have a basic understanding of [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md) such as stages, steps, and jobs. 
 
 Templates can help you speed up development. For example, you can have a series of the same tasks in a template and then include the template multiple times in different stages of your YAML pipeline. 
 
-Templates can also help you secure your pipeline. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, you may want to restrict what tasks are allowed to run. For that scenario, you can use template to prevent someone from successfully running a task that violates your organization's security policies.
+Templates can also help you secure your pipeline. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, you might want to restrict what tasks are allowed to run. For that scenario, you can use template to prevent someone from successfully running a task that violates your organization's security policies.
  
 There are two types of templates: includes and extends. 
 
-- **Includes templates** let you insert reusable content with a template. If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file.
-- **Extends template** control what is allowed in a pipeline. When an extends template controls what is allowed in a pipeline, the template defines logic that another file must follow. 
+- **Includes templates** let you insert reusable content with a template. If a template is used to include content, it functions like an include directive in many programming languages. Content from template is inserted into the pipeline or template that includes it.
+- **Extends template** control what is allowed in a pipeline. For example, an extends template can be used in the context of extending a pipeline to perform stages or jobs. When an extends template controls what is allowed in a pipeline, the template defines logic that pipeline or another template must follow. 
 
 To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md). 
 
@@ -32,7 +32,7 @@ To take full advantage of templates, you should also use [template expressions](
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
-- No more than 100 separate YAML files may be included (directly or indirectly)
+- No more than 100 separate YAML files can be included (directly or indirectly)
 - No more than 20 levels of template nesting (templates including other templates)
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
 
@@ -51,7 +51,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 ::: moniker range=">=azure-devops-2020"
 
 To increase security, you can enforce that a pipeline extends from a particular template. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
-In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
+In `start.yml`, if a `buildStep` gets passed with a script step, then it's rejected and the pipeline build fails. 
 When extending from a template, you can increase security by adding a [required template approval](../security/templates.md#set-required-templates). 
 
 ```yaml
@@ -540,7 +540,7 @@ stages:
 
 ## Extend from a template and use an include template with variables
 
-One common scenario is to have a pipeline with stages for development, testing, and production that uses both an *include* template for variables and an *extends* template for stages or jobs. 
+One common scenario is to have a pipeline with stages for development, testing, and production that uses both an includes template for variables and an extends template for stages and jobs. 
 
 In the following example, `variables-template.yml`  defines a set of virtual machine variables that are then used in `azure-pipeline.yml`. 
 
@@ -579,7 +579,7 @@ stages:
     steps: ${{ parameters.steps }}
 ```
 
-The following pipeline, `azure-pipelines.yml`, imports variables from `variables-template.yml`, and then uses the `stage-template.yml` template for each stage.  Each stage (Dev, Test, Prod) gets defined with the same template but with different parameters, leading to consistency across stages while allowing for customization. The Prod stage includes an environment variable as an example of something you might use for authentication. To learn more about defining parameters, see [Template parameters](template-parameters.md).
+The following pipeline, `azure-pipelines.yml`, imports variables from `variables-template.yml`, and then uses the `stage-template.yml` template for each stage. Each stage (Dev, Test, Prod) is defined with the same template but with different parameters, leading to consistency across stages while allowing for customization. The 'Prod' stage includes an environment variable as an example of something you might use for authentication. To learn more about defining parameters, see [Template parameters](template-parameters.md).
 
 ```yaml
 # azure-pipelines.yml
@@ -720,9 +720,9 @@ jobs:
     vmImage: 'windows-latest'
 ```
 
-For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
+For `type: github`, `name` is `<identity>/<repo>` as in the preceding example.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md#azure-repos) of type `Azure Repos/Team Foundation Server` with access to the project and include that in YAML:
+If that project is in a separate Azure DevOps organization, you need to configure a [service connection](../library/service-endpoints.md#azure-repos) of type `Azure Repos/Team Foundation Server` with access to the project and include that in YAML:
 
 ```yaml
 resources:
@@ -735,7 +735,7 @@ jobs:
 ```
 
 Repositories are resolved only once, when the pipeline starts up.
-After that, the same resource is used for the duration of the pipeline.
+After that, the same resource is used during the pipeline run.
 Only the template files are used.
 Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
 This means that you can't use scripts from the template repo in your pipeline.
@@ -745,7 +745,7 @@ The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
 > [!NOTE]
-> If no `ref` is specified, the pipeline will default to using `refs/heads/main`.
+> If no `ref` is specified, the pipeline defaults to using `refs/heads/main`.
 
 You can also pin to a specific commit in Git with the SHA value for a repository resource. The SHA value is a 40-character checksum hash that uniquely identifies the commit.
 
@@ -758,7 +758,7 @@ resources:
       ref: 1234567890abcdef1234567890abcdef12345678
 ```
 
-You may also use `@self` to refer to the repository where the original pipeline was found.
+You can also use `@self` to refer to the repository where the original pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
 For example:
 
@@ -804,7 +804,7 @@ jobs:
 
 ### How can I use variables inside of templates?
 
-There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables are available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+There are times when it is useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables are available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
 
 In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
 
