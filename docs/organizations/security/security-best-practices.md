@@ -264,7 +264,7 @@ For more information, see [Other security considerations](../../pipelines/securi
 ### Containers
 
 - **Use trusted images**: Utilize official and verified images from reputable sources such as Azure Container Registry or Docker Hub. Always specify a specific version or tag to maintain consistency and reliability, rather than relying on the `latest` tag. Regularly update base images to include the latest security patches and bug fixes.
-- **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as [Microsoft Defender for Cloud](https://github.com/MicrosoftDocs/azure-security-docs/blob/main/articles/defender-for-cloud/defender-for-containers-introduction.md) to monitor and detect security risks. Additionally, Azure Container Registry offers integrated vulnerability scanning to help ensure container images are secure before deployment. You can also integrate third-party scanning tools through Azure DevOps extensions for added security checks.
+- **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as [Microsoft Defender for Cloud](https://github.com/MicrosoftDocs/azure-security-docs/blob/main/articles/defender-for-cloud/defender-for-containers-introduction.md) to monitor and detect security risks. Additionally, Azure Container Registry offers integrated [vulnerability scanning](https://github.com/MicrosoftDocs/azure-management-docs/blob/main/articles/container-registry/scan-images-defender.md) to help ensure container images are secure before deployment. You can also integrate third-party scanning tools through Azure DevOps extensions for added security checks.
 
 
 ## Secure Azure Repos
