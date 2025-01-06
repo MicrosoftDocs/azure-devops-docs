@@ -110,7 +110,7 @@ You must have permissions to add integrated applications in the directory. The d
 
 ::: moniker range="<= azure-devops-2022"
 
-You can also create the service principal with an existing user who already has the required permissions in Microsoft Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-an-existing-service-principal).
+You can also create the service principal with an existing user who already has the required permissions in Microsoft Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-a-service-connection-that-uses-an-existing-service-principal).
 
 ::: moniker-end
 
@@ -123,6 +123,21 @@ These errors typically occur when your session is expired. To resolve these issu
 1. Sign in using the appropriate credentials.
 1. Select your organization and your project.
 1. [Create your service connection](../library/service-endpoints.md).
+
+### Error: You don't appear to have an active Azure subscription when attempting to edit or create a new service connection
+
+This error typically occurs when you are part of multiple Entra ID tenants.
+Follow the below steps to resolve to verify and resolve the issue.
+
+1. Navigate to [VS profile](https://app.vsaex.visualstudio.com/).
+
+2. Check whether you have multiple tenants.
+
+3. Select each tenant, and then reauthenticate.
+
+4. Try to create a service connection, and then check whether the subscription loads.
+
+<a name="contributorrole"></a>
 
 ### Failed to assign Contributor role
 
@@ -235,6 +250,9 @@ The Azure Resource Manager service connection can connect to an Azure subscripti
 
 - App registration (recommended): You can authenticate the connection using a Workload identity federation or a secret.
 - Managed identity: Managed identities for Azure resources provide Azure services with an automatically managed identity in Microsoft Entra ID. You can also use an agent-assigned managed identity.
+
+> When setting up the service connection with a managed identity as the authentication method, the process doesn’t create a new managed identity; it simply establishes the service connection. For this to function correctly, certain conditions must be met. Specifically, because managed identity is the chosen authentication method, there should be a system-assigned identity on the virtual machine you're using. Additionally, this virtual machine needs to act as a self-hosted agent within the pipelines for the workflow to fully execute, allowing the pipeline to deploy changes through the service connection. The system-assigned identity on the VM identifies that the same VM is serving as the agent in the pipeline, enabling authentication. This allows you to leverage the existing managed identity setup.
+
 
 To learn about managed identities for virtual machines, see [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm).  
 
