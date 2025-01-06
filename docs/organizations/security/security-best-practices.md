@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 6/01/2025
+ms.date: 01/06/2025
 ---
 
 # Security best practices
