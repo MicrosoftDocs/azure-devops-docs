@@ -58,7 +58,7 @@ sections:
                 - [Key words](./titles-ids-descriptions.md)  
                 - [Linked work items](./linking-attachments.md)  
                 - [Logical groupings](./using-queries.md)  
-                - [Query macros](about-managed-queries.md#macros)  
+                - [Query macros](about-managed-queries.md#supported-macros)  
                 - [Tags](./add-tags-to-work-items.md#query)  
                 - [Was Ever](./query-by-workflow-changes.md)  
                 - [Wildcard](./titles-ids-descriptions.md)  
@@ -70,7 +70,7 @@ sections:
                 - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
                 - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
-                - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
+                - [Board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md)
                 ::: moniker-end
@@ -146,7 +146,7 @@ sections:
 
       - question: How do I query for a list of related work items?   
         answer:  |
-          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`. However, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecesor-Successor**, and other link types. 
+          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`. However, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecessor-Successor**, and other link types. 
 
       - question: Can I query for work items linked across projects? 
         answer:  |

@@ -9,8 +9,8 @@ metadata:
   description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: steved0x 
+  ms.author: sdanie 
   ms.date: 09/27/2021 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

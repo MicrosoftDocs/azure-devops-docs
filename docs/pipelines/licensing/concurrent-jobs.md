@@ -28,7 +28,7 @@ monikerRange: '<= azure-devops'
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
 > [!NOTE]
-> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected. Please note that it takes us 2-3 business days to respond to your free tier requests.
+> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected. Please note that it usually takes us 2-3 business days to respond to your free tier requests. During certain time periods, processing times may be longer.
 
 ## What is a parallel job? 
 
@@ -60,7 +60,7 @@ To request the free grant for public or private projects, submit [a request](htt
 
 
 > [!NOTE] 
-> It takes us 2-3 business days to respond to your free tier request.
+> It takes us 2-3 business days to respond to your free tier request. During certain time periods, processing times may be longer.
 
 There's no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects.
 
@@ -124,7 +124,7 @@ Figure out how many parallel jobs you need by first seeing how many parallel job
 
    :::image type="content" source="media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png" alt-text="Location of parallel jobs in organization settings.":::
 
-   URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
+   URL example: `https://{Your_Organization}/_admin/_buildQueue?_a=resourceLimits`
 
 2. View the maximum number of parallel jobs that are available in your organization.
 
@@ -148,7 +148,7 @@ In the following scenarios, you might need multiple parallel jobs:
 
 To buy more parallel jobs:
 
-* [Billing must be set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md)
+* [Billing must be set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 * You need to be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
 
 ### Buy parallel jobs
@@ -273,8 +273,8 @@ For each additional XAML build controller, you'll need an additional self-hosted
 
 
 ## Related articles
-- [Set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- [Set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 - [Manage paid access](../../organizations/billing/buy-basic-access-add-users.md)
 - [Buy access to test hub](../../organizations/billing/buy-access-tfs-test-hub.md)
-- [Add user for billing management](../../organizations/billing/add-backup-billing-managers.md)
+- [Add user for billing management](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing)
 - [Azure DevOps billing overview](../../organizations/billing/overview.md)

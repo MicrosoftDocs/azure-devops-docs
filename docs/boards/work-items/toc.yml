@@ -1,16 +1,19 @@
 - name: About work items
   href: about-work-items.md
-  displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cients
+  displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, clients
 - name: Quick reference
   href: quick-ref.md
   displayname: index, concepts, tasks, customize
+- name: Manage work items
+  href: ../backlogs/manage-work-items.md
+  displayname: add, view, update, attachments, tags, link, delete, copy, clone, analytics, customize, follow, link, best oractices
 - name: View & add work items
   displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
   href: view-add-work-items.md
-- name: Add & update a work item
-  href: ../backlogs/add-work-items.md
-  displayname: follow, update status, Discussion
-- name: Filter your work items
+- name: Manage work item attachments
+  href: ../work-items/manage-attachments.md
+  displayname: attach, upload, download, delete, view, image, file, drag and drop, link, copy, paste, clipboard
+- name: Filter work items
   href: ../backlogs/filter-backlogs-boards-plans.md
   displayname: sort, reorder, group, parent, tags
 - name: Manage requirements
@@ -25,9 +28,9 @@
 - name: Link work items
   href: ../backlogs/add-link.md
   displayname: remote work, bulk modify links, pull request, build
-- name: Copy or clone
+- name: Copy or clone work items
   href: ../backlogs/copy-clone-work-items.md
-  displayname: change type, URL, list
+  displayname: copy, clone, create, duplicate, copy to clipboard
 - name: Collaborate with others
   items:
   - name: Follow work
@@ -36,7 +39,7 @@
   - name: Use @mentions in discussions
     href: ../../organizations/notifications/at-mentions.md?toc=/azure/devops/boards/toc.json
     displayname: people picker
-  - name: Add tags to work items
+  - name: Add tags for work items
     href: ../queries/add-tags-to-work-items.md
     displayname: chart, color-code, filter, show, query, bulk modify
   - name: Send email of items or print

@@ -36,7 +36,9 @@ To learn more about what you can customize, see [About process customization and
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../includes/create-inherited-process.md)] 
+## Create inherited process
+
+For more information, see [Create inherited process](manage-process.md#create-an-inherited-process).
 
 <a id="add-wit">  </a>
 
@@ -52,7 +54,7 @@ To learn more about what you can customize, see [About process customization and
 
 	Choose **Create** to save. 
 
-	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. To learn more, see [About work items](../../../boards/work-items/about-work-items.md).
+	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. For more information, see [About work items](../../../boards/work-items/about-work-items.md).
  
 	![WIT header details](media/process/weblayout-system-controls-details-page.png)
 
@@ -82,7 +84,7 @@ To learn more about what you can customize, see [About process customization and
 
    ![Add a field to Use story, specify layout](media/process/cpfield-customer-ticket-layout.png) 
 
-6. Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
+6. Choose **Add field** to complete adding the field. If you didn't specify its layout location, it gets added to the first group of fields on the layout form.  
 
    > [!TIP]    
    > Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 

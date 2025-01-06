@@ -2,8 +2,9 @@
 title: Parameters and templateContext
 description: How to use parameters in templates
 ms.topic: conceptual
-ms.date: 06/30/2023
+ms.date: 10/25/2024
 monikerRange: '>=azure-devops-2019'
+ai-usage: ai-assisted
 ---
 
 # Template parameters
@@ -63,17 +64,17 @@ parameters:
   type: jobList
 
 jobs:
-- ${{ each testJob in parameters.testSet }}:
-  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 200) }}:
+- ${{ each testJob in parameters.testSet }}:  # Iterate over each job in the 'testSet' parameter
+  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 200) }}: # Check if the HTTP response is 200
     - job:
       steps: 
       - powershell: 'Invoke-RestMethod -Uri https://blogs.msdn.microsoft.com/powershell/feed/ | Format-Table -Property Title, pubDate'
       - ${{ testJob.steps }}    
-  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 500) }}:
+  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 500) }}: # Check if the HTTP response is 500
     - job:
       steps:
-      - powershell: 'Get-ChildItem -Path Env:\'
-      - ${{ testJob.steps }}
+      - powershell: 'Get-ChildItem -Path Env:\' # Run a PowerShell script to list environment variables
+      - ${{ testJob.steps }} # Include additional steps from the 'testJob' object
 ```
 
 ```yaml
@@ -85,17 +86,17 @@ pool:
   vmImage: ubuntu-latest
 
 extends:
-  template: testing-template.yml
+  template: testing-template.yml 
   parameters:
-    testSet:
-    - job: positive_test
+    testSet:  # Define the 'testSet' parameter to pass to the template
+    - job: positive_test # Define a job named 'positive_test'
       templateContext:
-        expectedHTTPResponseCode: 200
+        expectedHTTPResponseCode: 200 # Set the expected HTTP response code to 200 for this job
       steps:
       - script: echo "Run positive test" 
-    - job: negative_test
+    - job: negative_test # Define a job named 'negative_test'
       templateContext:
-        expectedHTTPResponseCode: 500
+        expectedHTTPResponseCode: 500 # Set the expected HTTP response code to 500 for this job
       steps:
       - script: echo "Run negative test" 
 ```
@@ -110,15 +111,15 @@ You can call different templates from a pipeline YAML depending on a condition. 
 ```yml
 #azure-pipeline.yml
 parameters:
-- name: experimentalTemplate
+- name: experimentalTemplate 
   displayName: 'Use experimental build process?'
   type: boolean
   default: false
 
 steps:
-- ${{ if eq(parameters.experimentalTemplate, true) }}:
+- ${{ if eq(parameters.experimentalTemplate, true) }}: # Check if 'experimentalTemplate' is true
   - template: experimental.yml
-- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:  # Check if 'experimentalTemplate' is not true
   - template: stable.yml
 ```
 
@@ -130,15 +131,15 @@ You can iterate through an object and print each string in the object.
 
 ```yaml
 parameters:
-- name: listOfStrings
+- name: listOfStrings  
   type: object
-  default:
+  default: 
   - one
   - two
 
 steps:
-- ${{ each value in parameters.listOfStrings }}:
-  - script: echo ${{ value }}
+- ${{ each value in parameters.listOfStrings }}: # Iterate over each value in the 'listOfStrings' parameter
+  - script: echo ${{ value }} # Output the current value in the iteration
 ``` 
 
 Additionally, you can iterate through nested elements within an object.
@@ -151,20 +152,45 @@ parameters:
   - fruitName: 'apple'
     colors: ['red','green']
   - fruitName: 'lemon'
-    colors: ['yellow']
+    colors: ['yellow'] 
 
 steps:
-- ${{ each fruit in parameters.listOfFruits }} :
-  - ${{ each fruitColor in fruit.colors}} :
-    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }}
+- ${{ each fruit in parameters.listOfFruits }} : # Iterate over each fruit in the 'listOfFruits'
+  - ${{ each fruitColor in fruit.colors}} : # Iterate over each color in the current fruit's colors
+    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }} # Echo the current fruit's name and color
 ``` 
+
+You can also directly reference an object's keys and corresponding values. 
+
+```yaml
+parameters:
+  - name: myObject
+    type: object
+    default:
+      key1: 'value1'
+      key2: 'value2'
+      key3: 'value3'
+
+jobs:
+- job: ExampleJob
+  displayName: 'Example object parameter job'
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - script: |
+      echo "Keys in myObject:"
+      echo "Key1: ${{ parameters.myObject.key1 }}"
+      echo "Key2: ${{ parameters.myObject.key2 }}"
+      echo "Key3: ${{ parameters.myObject.key3 }}"
+    displayName: 'Display object keys and values'
+```
 
 
 ### Required parameters
 
 You can add a validation step at the beginning of your template to check for the parameters you require.
 
-Here's an example that checks for the `solution` parameter using Bash (which enables it to work on any platform):
+Here's an example that checks for the `solution` parameter using Bash:
 
 ```yaml
 # File: steps/msbuild.yml

@@ -4,9 +4,9 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 04/07/2021
+ms.date: 05/31/2024
 ---
 
 
 > [!NOTE]   
-> As you customize an inherited process, all projects that use that process are updated automatically to reflect the customizations. For this reason, we recommend that you create a test process and test project when you have a number of customizations to make in order to test the customizations prior to rolling them out to your organization. To learn more, see [Create and manage inherited processes](../work/manage-process.md).
+> When you customize an inherited process, any projects using that process automatically reflect the customizations. To ensure a smooth transition, we recommend creating a test process and project, which allows you to test your customizations before you implement them organization-wide. For more information, see [Create and manage inherited processes](../work/manage-process.md).

@@ -30,9 +30,9 @@ Use this article to learn:
 
 ::: moniker range="azure-devops"
 
-* Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
-* You must be granted **Basic** access or higher to use the forecast feature. For more information, see [About access levels](../../organizations/security/access-levels.md).
+* **Project membership**: Be a member of a [project](../../organizations/projects/create-project.md). 
+* **Permissions**: Be a member of the **Contributors** security group. 
+* **Access levels**: Have at least [**Basic** access](../../organizations/security/access-levels.md).
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -42,9 +42,9 @@ Use this article to learn:
 
 ::: moniker range="< azure-devops"
 
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
-* You must be granted **Basic** access or higher to add or modify work items. For more information, see [About access levels](../../organizations/security/access-levels.md).
+* **Project membership**: Be a member of a [project](../../organizations/projects/create-project.md). 
+* **Permissions**: Be a member of the **Contributors** security group. 
+* **Access levels**: Have at least [**Basic** access](../../organizations/security/access-levels.md).
 
 ::: moniker-end 
  
@@ -64,7 +64,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 *	Define and size backlog items to [minimize variability](../../report/dashboards/team-velocity.md).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs appear on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool forecasts those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and Taskboards. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features. The map creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on boards, sprint backlogs, and Taskboards. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features. The map creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 
 

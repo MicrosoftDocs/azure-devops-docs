@@ -33,7 +33,7 @@ If your pipeline queues but never starts, check the following items.
 > 
 > Learn more:
 > [How a parallel job is consumed by a pipeline](../licensing/concurrent-jobs.md),
-> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-approvals),
+> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-pre-deployment-approvals),
 > [Server jobs](../process/phases.md#server-jobs),
 > [Deployment groups](../release/deployment-groups/index.md)
 
@@ -156,7 +156,7 @@ If the above error is received while configuring the agent, log on to your TFS m
 ![is TFS anonymous authentication enabled](../media/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=846610 -->
-<a name="renew-lock" />
+<a id="renew-lock"></a>
 
 ### Agent lost communication
 

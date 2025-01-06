@@ -7,11 +7,6 @@
       "relativeLinkPrefix": "/azure/devops/"
     },
     "inclusionCriteria": {
-      "additionalMicrosoftOrgs": [
-        "GitHub",
-        "Microsoft",
-        "MicrosoftDocs"
-      ],
       "minAdditionsToFile": 10,
       "omitPullRequestTitles": true
     },
@@ -83,6 +78,10 @@
       {
         "names": ["pipelines"],
         "heading": "Azure Pipelines"
+      },
+      {
+        "names": ["managed-devops-pools"],
+        "heading": "Managed DevOps Pools"
       },
       {
         "names": ["project"],

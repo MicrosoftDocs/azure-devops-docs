@@ -8,7 +8,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 02/23/2022
+ms.date: 11/18/2024
 ---
 
 # Plan your organizational structure
@@ -40,7 +40,7 @@ An organization in Azure DevOps is a mechanism for organizing and connecting gro
 Each organization gets its own *free tier* of services (up to five users for each service type) as follows. You can use all the services, or choose only what you need to complement your existing workflows.
 
 * [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
-* [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
+* [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and boards
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
 * Unlimited Stakeholders
@@ -162,7 +162,19 @@ Azure Repos offers the following version control systems for teams to choose fro
 
 TFVC is a centralized version control system that is also available. Unlike Git, only one TFVC repository is allowed for a project. But, within that repo, folders, and branches are used to organize code for multiple products and services, if wanted. Projects can use both TFVC and Git, if appropriate.
 
-### One vs. many repos
+### Monorepo vs. one repo per service
+
+Deploying various independent services from a monorepo can be effective for small teams aiming to build early momentum. However, this strategy can become problematic as the team grows due to several factors:
+
+- The knowledge required for new members increases with the overall complexity of the system.
+- Code sharing within a single repository can result in unintended coupling between services.
+- Changes in shared code can impact the behavior of various services, making it challenging to track these changes.
+
+For larger teams, managing a monorepo necessitates strong engineering discipline and robust tooling. Alternatively, you can opt for individual repositories for each service, along with a separate repo for shared resources. Although this approach involves more initial setup, it scales more effectively as the team grows. It also makes onboarding easier for new members, who can concentrate solely on their specific service repo.
+
+If you’re starting with a small team, a monorepo can be a good choice. As your team expands and complexity rises, you can transition to separate repositories.
+
+### One vs. many repos within a project
 
 Do you need to set up multiple repos within a single project or have a repo set up per project? The following guidance relates to the planning and administration functions across those repos.  
 
@@ -172,11 +184,11 @@ If the products stored in multiple repos work on independent schedules or proces
 
 Base your decision for one vs. many repos on the following factors and tips:
 
-- code dependencies and architecture 
-- put each independently deploy-able product or service in its own repo
-- don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as no tools can help coordinate those changes 
-- if your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [How Microsoft develops modern software with DevOps](/devops/develop/how-microsoft-develops-devops) articles
-- if you have many disconnected services, one repo per service is a good strategy  
+- Code dependencies and architecture 
+- Put each independently deploy-able product or service in its own repo
+- Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as no tools can help coordinate those changes 
+- If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [How Microsoft develops modern software with DevOps](/devops/develop/how-microsoft-develops-devops) articles
+- If you have many disconnected services, one repo per service is a good strategy
 
 > [!Tip]
 > Consider [managing your permissions](../organizations/security/permissions.md), so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). If you have too many repos, it's hard to keep track of who owns which code or other content stored in those repos.
@@ -190,6 +202,19 @@ Forks can be useful when you're working with vendor teams that shouldn't have di
 The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
 
 ![Diagram showing organizational structure for a company.](media/azure-devops-org_project_team_visual.png)
+
+### Managing temporary and shared resources
+
+Consider how to manage temporary and shared resources effectively by employing the following best practices:
+
+- **Temporary environments:** Temporary environments are short-lived and used for tasks such as testing, development, or staging. To manage these environments efficiently:
+  - **Separate repositories and pipelines:** Each temporary environment and its associated resources, for example, Azure Functions, should have its own repository and pipeline. This separation allows you to deploy and roll back the environment and its resources simultaneously, making it easier to spin up and discard them as needed.
+  - **Example:** Create a repository and pipeline specifically for your development environment, including all necessary resources such as Azure Functions, storage accounts, and other services.
+- **Shared resources:** Shared resources are typically long-lived and used across multiple environments. These resources often have longer spin-up times and higher costs. To manage shared resources effectively:
+  - **Separate repositories and pipelines:** Shared resources, such as Azure SQL Database, should have their own repository and pipeline. This separation ensures that temporary environments can use these shared resources, making their deployments faster and more cost-effective.
+  - **Example:** Create a repository and pipeline for your Azure SQL Database, which can be used by multiple temporary environments.
+- **Shared infrastructure resources:** Shared infrastructure resources, such as Virtual Private Clouds (VPCs) and subnets, also known as landing zones, should also have their own repositories and pipelines. This approach ensures that your infrastructure is managed consistently and can be reused across different environments.
+  - **Example:** Create a repository and pipeline for your VPC and subnet configuration, which can be referenced by other repositories and pipelines.
 
 ## More about organizational structure
 
@@ -245,5 +270,5 @@ The organizations are for the same company, but are mostly isolated from each ot
 - [Create an organization](../organizations/accounts/create-organization.md)
 - [Create a project](../organizations/projects/create-project.md)
 - [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 - [Set user preferences](../organizations/settings/set-your-preferences.md)

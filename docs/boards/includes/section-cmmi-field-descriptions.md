@@ -103,6 +103,7 @@ ms.date: 09/21/2020
       - **Ready**  
       - **Skipped**  
       - **Info Received**  
+
       Specify **Not Ready** when the requirement is in the `Active` state. Specify **Ready** when the requirement is in the `Resolved` state.  
    :::column-end:::
 :::row-end:::

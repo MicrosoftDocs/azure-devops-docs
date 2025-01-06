@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 11/27/2023
+ms.date: 12/11/2024
 monikerRange: azure-devops
 ---
 
@@ -137,7 +137,7 @@ To use the GitHub App, install it in your GitHub organization or user account fo
 
 After installation, the GitHub App will become Azure Pipelines' default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories.
 
-If you install the GitHub App for all repositories in a GitHub organization, you don't need to worry about Azure Pipelines sending mass emails or automatically setting up pipelines on your behalf. As an alternative to installing the app for all repositories, repository admins can install it one at a time for individual repositories. This requires more work for admins, but has no advantage nor disadvantage.
+If you install the GitHub App for all repositories in a GitHub organization, you don't need to worry about Azure Pipelines sending mass emails or automatically setting up pipelines on your behalf. However, if the app is installed for all repositories, the token used by the application will have access to all repositories, including private ones. For security reasons, it is recommended to separate private and public repositories at the organization level. This means having a dedicated organization only for public projects without private repositories. If, for some reason, there is a need to have public and private repositories in the same organization, instead of using access for all repositories, explicitly select the repositories to which the application should have access. This requires more work for admins but ensures better security management.
 
 #### Permissions needed in GitHub
 
@@ -474,7 +474,7 @@ To bypass this precaution on GitHub pipelines, enable the **Make secrets availab
 > It has more limited access to open resources than a normal access token.
 > To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
 
-For more information, see [Repository protection - Forks](../security/repos.md#forks).
+For more information, see [Repository protection - Forks](../security/misc.md#forks).
 
 You can define centrally how pipelines build PRs from forked GitHub repositories using the **Limit building pull requests from forked GitHub repositories** control. It's available at organization and project level. You can choose to:
 - Disable building pull requests from forked repositories

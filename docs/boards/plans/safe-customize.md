@@ -31,6 +31,10 @@ Learn how Azure Boards supports SAFe® practices through the following operation
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-admin](../includes/prerequisites-project-admin.md)]
+
 ## About customization and the inherited process
 
 Azure Boards provides a graphical user interface to support customization of your projects. This feature is called the Inherited process. All projects that use an inherited process are automatically updated when customizations are made to that process.  
@@ -46,7 +50,7 @@ Each work item type defines the fields that capture and store information. You c
 - [Add a custom field](#add-custom-field) to support tracking budget costs, value streams, or customer-centric information  
 - [Customize existing fields](#customize-fields), such as modifying the picklist or changing a field label  
 - [Add custom rules](#custom-rules) to make select fields required or specify actions to take under select conditions 
-- [Change the workflow](#custom-workflow) to reflect your team's Kanban workflow process  
+- [Change the workflow](#custom-workflow) to reflect your team's workflow process  
 - [Add a custom control or extension](#custom-control) to support custom functions such as a calculated field 
 
 
@@ -184,18 +188,18 @@ For more information on setting field rules, see [Add a rule to a work item type
 
 ## Customize the workflow
 
-You may want to customize the workflow for User Stories, Features, and Epics so that it matches your workflow process. By customizing the workflow early, you minimize the Kanban board configuration teams must do. 
+You may want to customize the workflow for User Stories, Features, and Epics so that it matches your workflow process. By customizing the workflow early, you minimize the board configuration teams must do. 
 
-The default workflow for the Agile process includes *New*, *Active*, *Resolved*, and *Closed* states. While each team can add workflow columns to their Kanban board, you might want to customize the workflow to track these columns instead. That way the Kanban boards for all teams are set up to use the same workflow states. 
+The default workflow for the Agile process includes *New*, *Active*, *Resolved*, and *Closed* states. While each team can add workflow columns to their board, you might want to customize the workflow to track these columns instead. That way the boards for all teams are set up to use the same workflow states. 
 
-For example, you can add and rename workflow States to match the Kanban columns shown in the following image&mdash;*Backlog*, *Analyze*, *Develop*, *Test*, and *Done*.  
+For example, you can add and rename workflow States to match the columns shown in the following image&mdash;*Backlog*, *Analyze*, *Develop*, *Test*, and *Done*.  
 
 > [!div class="mx-imgBorder"]  
-> ![Conceptual image of Kanban board columns to visualize flow and limit WIP.](../boards/media/alm_kb_board2.png)  
+> ![Conceptual image of board columns to visualize flow and limit WIP.](../boards/media/alm_kb_board2.png)  
 
 Discuss with your team which workflow states best support their Agile practices. For more information, see the following articles:  
 - [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md)  
-- [Add columns to your Kanban board](../boards/add-columns.md)  
+- [Add columns to your board](../boards/add-columns.md)  
 - [Definition of Done](../boards/add-columns.md#definition-of-done)  
 
 <a id="custom-control"></a> 
@@ -263,7 +267,7 @@ You add the following Marketplace extensions to get access to many rich features
 
 ## Related articles
 
-- [Grant or restrict access](../../organizations/security/restrict-access.md) 
+- [Manage access](../../organizations/security/restrict-access.md) 
 - [Develop a web extension for Azure DevOps Services](../../extend/get-started/node.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)
 - [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)

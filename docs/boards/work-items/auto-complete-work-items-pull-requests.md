@@ -7,7 +7,7 @@ ms.custom: cross-service
 ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 09/09/2024
 ---
 
 
@@ -23,8 +23,13 @@ When you link a work item to a pull request (PR), you can automatically complete
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR.  
 ::: moniker-end 
 
-To learn more about pull requests, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
+For more information, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
+
+- **GitHub permissions:** Be a **Contributor** to the GitHub repository.
 
 ## Autocomplete work items  
 
@@ -37,19 +42,19 @@ As shown in the following image, check the box to **Complete linked work items a
 ![Complete pull request dialog, Autocomplete work items with completion of PR option](media/workflow-states-complete-pr.png)
 ::: moniker-end 
 
-In the following circumstances, the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Completed category for the work item type: 
-- The work item, whose work item type is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance, the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
-- The work item is already in a State that belongs to the Completed category. No further transition is required. 
-- The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  
-- For on-premises deployments and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
+In the following circumstances, the system doesn't automatically update the work item state to **Done**, **Closed**, or **Completed** categories for the work item type (WIT): 
+- The work item, whose WIT is managed with the Inheritance process model, is already in the **Resolved** state. In this instance, the system doesn't update the State. For example, if a bug derived from the Agile process is in a **Resolved** state, the system doesn't transition it to **Closed**.   
+- The work item is already in the **Completed** state. No further transition is required. 
+- The WIT includes workflow field rules that prevent the work item from advancing to the next state. For instance, a rule might require that another field gets defined when closing the work item. 
+- For on-premises deployments and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. For more information, see [Change the workflow for a WIT, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
 
-To learn more about process models, see [Customize your work tracking experience](../../reference/customize-work.md). 
+For more information, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 ::: moniker range=">= azure-devops-2020"
 
 ## Specify the workflow state of linked work items 
 
-To transition a work item to a specific workflow state, you can enter the information in the pull request Description. Prefix the **#ID** with a valid workflow state for the work item you mention. 
+To transition a work item to a specific workflow state, you can enter the information in the pull request description. Prefix the **#ID** with a valid workflow state for the mentioned work item. 
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2020"
@@ -59,11 +64,20 @@ To transition a work item to a specific workflow state, you can enter the inform
 
 ::: moniker range=">= azure-devops-2020"
 
-As shown in the following image, two user stories are transitioned, one to **Resolved** and the other to **Review**. Also, two tasks are set to **Done**. 
+The following example shows user stories that transitioned - one to the **Resolved** state and the other to the **Review** state. Also, two tasks are marked as **Done**. 
 
 :::image type="content" source="media/automate-state-transition/pull-request-set-workflow-state-to-transition-to.png" alt-text="Screenshot of pull request, set workflow state to transition #ID work items.":::
 
 ::: moniker-end 
+
+## Disable automatic completion of associated work items
+
+To disable the automatic completion of associated work items when users complete a pull request, follow these steps:
+
+1. Go to **Project settings** > **Repositories** > select the repository.
+2. In the **Settings** tab, move the toggle to **Off** for **Commit mention work item resolution**.
+
+Mentions in commit comments to close work items (for example, "Fixes #123") isn't allowed.
 
 ## Related articles
 

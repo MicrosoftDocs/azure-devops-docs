@@ -12,4 +12,4 @@ hide_comments: true
 
 # Workload identity federation for Docker service connection
 
-Workload identity federation for the Azure service connection was [announced in public preview](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) in September 2023. After this has become [generally available](/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments), we will update the Docker service connection to support Workload identity federation when accessing Azure Container Registry.
+Workload identity federation for the Azure service connection is now [generally available](/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments). We will work on supporting Workload identity federation for Azure-based Docker service connections next. This will help you eliminate secrets in the following use cases: (a) Run on a container job using a container from a private registry (b) Use a container from a private registry as a resource in the pipeline (c) Build and publish container images to a private Docker registry.

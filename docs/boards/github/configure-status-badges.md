@@ -1,7 +1,7 @@
 ---
 title: Add status badges for your GitHub repo
 titleSuffix: Azure Boards
-description: Learn how to add and configure your Kanban board badge status so it appears on your GitHub repo. 
+description: Learn how to add and configure your board badge status so it appears on your GitHub repo. 
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
@@ -14,7 +14,7 @@ ms.date: 07/12/2023
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
  
-You can add Markdown syntax to a GitHub repo `README.md` file to display your Kanban board status in that repo. Show the status by adding the syntax you choose from your Kanban board settings.  
+You can add Markdown syntax to a GitHub repo `README.md` file to display your board status in that repo. Show the status by adding the syntax you choose from your board settings.  
 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]   
@@ -25,14 +25,14 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 ## Prerequisites 
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).  
-* You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-* To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  
+* **Permissions**: Be a [team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or be a member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.
+* **Integration with GitHub**: [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to/from exist. 
+* **Board configuration**: Have a board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+* **Repository access**: To add the status badge to the GitHub.com repository, be a contributor of the repository.  
 
 ## Add a status badge
 
-1. Sign into Azure Boards and [open your Kanban board](../boards/kanban-quickstart.md). 
+1. Sign into Azure Boards and [open your board](../boards/kanban-quickstart.md). 
 
 2. Select the :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
@@ -41,10 +41,10 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
 
    ::: moniker range=">= azure-devops-2020"
-   :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of Kanban Board Settings dialog, Status badge tab.":::
+   :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of board Settings dialog, Status badge tab.":::
    ::: moniker-end
    ::: moniker range="azure-devops-2019"
-   :::image type="content" source="media/badges/status-badge.png" alt-text="Screenshot of Kanban Board Settings dialog, Status badge tab, Azure DevOps Server 2019.":::
+   :::image type="content" source="media/badges/status-badge.png" alt-text="Screenshot of board Settings dialog, Status badge tab, Azure DevOps Server 2019.":::
    ::: moniker-end
 
 4. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
@@ -67,13 +67,13 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 6. Open the README file in your GitHub repo and paste the syntax you copied to make the badge display.  
 
-	You should see the same preview image that you selected with values that correspond to your Kanban board. 
+	You should see the same preview image that you selected with values that correspond to your board. 
 
 ## Related articles
 
-- [Add columns to your Kanban board](../boards/add-columns.md)
+- [Add columns to your board](../boards/add-columns.md)
 - [Customize cards](../boards/customize-cards.md)
 - [Configure team settings](../../organizations/settings/manage-teams.md)
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
-- [Azure Boards-GitHub integration](index.md) 
+- [Integrate Azure Boards with GitHub](index.md) 
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

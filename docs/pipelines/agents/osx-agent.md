@@ -17,7 +17,7 @@ This article provides guidance for using the [3.x agent software](v3-agent.md) w
 
 :::moniker-end
 
-To build and deploy Xcode apps or Xamarin.iOS projects, you need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+To build and deploy Xcode apps, you need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > [!NOTE]
 > This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
@@ -38,6 +38,7 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you need at least one ma
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+
 - **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 * **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).

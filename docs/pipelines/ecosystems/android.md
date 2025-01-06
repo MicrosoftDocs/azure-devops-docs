@@ -6,69 +6,58 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2
-ms.date: 12/22/2021
+ms.date: 08/12/2024
 monikerRange: azure-devops
 author: vijayma
 ---
 
-# Build, test, & deploy Android apps
+# Build, test, and deploy Android apps
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can set up pipelines to automatically build, test, and deploy Android applications.
+This quickstart shows you how to set up a YAML pipeline in Azure Pipelines to automatically build, test, and deploy an Android app.
+
 ## Prerequisites
 
-You must have the following items:
-- GitHub account. If you don't have a GitHub account, [create one now](https://github.com).
-- Azure DevOps project. If you don't have a project, [create one now](../../organizations/projects/create-project.md).
+- An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- A GitHub account.
 
-## Set up pipeline
+  >[!IMPORTANT]
+  >During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, authorize Azure Pipelines, or authenticate to GitHub organizations. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-Do the following tasks to set up a pipeline for a sample Android application.
+## Create and run the pipeline
 
-1. Fork the following repository to your GitHub account to get the code for a simple Android application.
+Do the following tasks to set up a pipeline for a simple Android application.
 
-    ```
-    https://github.com/MicrosoftDocs/pipelines-android
-    ```
+1. To get the code for the sample app, fork the [Android sample app](https://github.com/MicrosoftDocs/pipelines-android) repository to your GitHub account.
+1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if this pipeline is the first in the project.
+1. Select **GitHub** as the location of your source code.
+1. On the **Select a repository** screen, select your forked Android sample repository.
+1. On the **Configure your pipeline** screen, select **Android**.
+1. Azure Pipelines provides a starter pipeline based on the [Android](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/android.yml) template. Review the pipeline code.
+1. Select **Save and run**.
+1. Optionally, edit the **Commit message** and provide a description. Then select **Save and run** again to commit the *azure-pipelines.yml* file to your repository and start a build.
 
-2. Sign in to your Azure DevOps organization and go to your project.
+The build run page shows build details and progress. If you want to watch your pipeline in action, select **Job** on the lower part of the page.
 
-3. Select **Pipelines** > **Create pipeline** or **New pipeline**.
+You now have a working Android YAML pipeline, *azure-pipelines.yml*, in your repository that's ready to customize.
 
-4. Select **GitHub** as the location of your source code.
-   
-   :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot showing list of repositories to select from.":::
-   
-   You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+## Customize your pipeline
 
-5. Select the **-android** repository that you previously forked.
+To make changes to your pipeline, select **Edit** on the pipeline page. The following sections describe some common ways to customize your Android pipeline.
 
-6. Select **Approve and install** on the screen that follows.
-   
-   Azure Pipelines generates a YAML file for your pipeline.
+### Configure Gradle
 
-7. Select **Run**.
-8. **Commit directly to the main branch**, and then choose **Run** again.
+The starter YAML pipeline uses Gradle, a common open-source build tool for Android projects. For more information, see the [Gradle task](/azure/devops/pipelines/tasks/reference/gradle-v3).
 
-9.  Wait for the run to finish.
+In the example task, the `tasks` parameter builds the `assembleDebug` build type. You can adjust the `tasks` value for the build variants you want, such as `build`, `test`, and `assembleRelease`.
 
-You have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+The example task also assumes that your `gradlew` file is at the root of the repository. If not, adjust the `workingDirectory` and `gradleWrapperFile` values accordingly.
 
-> [!TIP]
-> To make changes to the YAML file, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
-
-## Build with Gradle
-
-Gradle is a common build tool used for building Android projects. For more information about your options, see the [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3) task.
+The `workingDirectory` should be similar to the root of the repository, such as `AndroidApps/MyApp` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp`. The `gradleWrapperFile` path should be similar to the root of the repository, such as `AndroidApps/MyApp/gradlew` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp/gradlew`.
 
 ```yaml
-# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/android
-pool:
-  vmImage: 'macOS-latest'
-
-steps:
-- task: Gradle@2
+- task: Gradle@3
   inputs:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
@@ -78,33 +67,13 @@ steps:
     tasks: 'assembleDebug'
 ```
 
-### Adjust the build path
+For more information about using Gradle tasks, see [Using tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html) in the Gradle documentation. For more information about build tasks, see [Build a debug APK](https://developer.android.com/studio/build/building-cmdline#DebugMode) and [Configure build variants](https://developer.android.com/studio/build/build-variants.html) in the Google Android development documentation.
 
-- Adjust the **workingDirectory** value if your `gradlew` file isn't in the root of the repository.
-The directory value should be similar to the root of the repository,
-such as `AndroidApps/MyApp` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp`.
+### Sign and align the Android package (APK)
 
-- Adjust the **gradleWrapperFile** value if your `gradlew` file isn't in the root of the repository.
-The file path value should be similar to the root of the repository,
-such as `AndroidApps/MyApp/gradlew` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp/gradlew`.
+To run on a device instead of an emulator, the Android Application Package (APK) must be signed. Zipaligning reduces the RAM the application consumes. If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK, add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the pipeline. For more information, see [Sign a mobile app](../apps/mobile/app-signing.md).
 
-### Adjust Gradle tasks
-
-Adjust the **tasks** value for the build variant you prefer, such as `assembleDebug` or `assembleRelease`.
-For more information, see the following Google Android development documentation:
-- [Build a debug APK](https://developer.android.com/studio/build/building-cmdline#DebugMode) and
-- [Configure build variants](https://developer.android.com/studio/build/build-variants.html).
-
-### Sign and align an Android Package (APK)
-
-If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK,
-add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the YAML.
-An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM consumed by the application.
-
-> [!IMPORTANT]
-> We recommend storing each of the following passwords in a [secret variable](../process/variables.md#secret-variables).
-
-::: moniker range="<=azure-devops"
+For security, store the `jarsignerKeystorePassword` and `jarsignerKeyPassword` in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
 
 ```yaml
 - task: AndroidSigning@2
@@ -118,31 +87,25 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
     zipalign: true
 ```
 
-::: moniker-end
+### Test on the Android emulator
 
-## Test
-
-### Test on the Android Emulator
-
-Create the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task and copy paste the code below in order to install and run the emulator. 
-Don't forget to arrange the emulator parameters to fit your testing environment.
- The emulator starts as a background process and is available in later tasks.
+To install and run the Android emulator, add the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to your pipeline, and paste in the following code. The emulator starts as a background process and is available in later tasks. Arrange the emulator parameters to fit your testing environment.
 
 ```bash
 #!/usr/bin/env bash
 
 # Install AVD files
-echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-30;google_apis;x86'
 
 # Create emulator
-echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
+echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n android_emulator -k 'system-images;android-30;google_apis;x86' --force
 
 $ANDROID_HOME/emulator/emulator -list-avds
 
 echo "Starting emulator"
 
 # Start emulator in background
-nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+nohup $ANDROID_HOME/emulator/emulator -avd android_emulator -no-snapshot -no-window -no-audio -no-boot-anim -accel off > /dev/null 2>&1 &
 $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
 
 $ANDROID_HOME/platform-tools/adb devices
@@ -152,66 +115,34 @@ echo "Emulator started"
 
 ### Test on Azure-hosted devices
 
-Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-test-v1) task to test the application in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required, which must later be converted to paid.
+To test your app in a hosted lab of Android devices in the Visual Studio App Center, add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-test-v1) task to your pipeline.
+
+This task requires an [App Center](https://appcenter.ms) free trial account, which must be converted to paid after 30 days to continue to use the test lab. [Sign up for an App Center account](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) before you use this task.
+
+> [!WARNING]
+> Visual Studio App Center is scheduled for retirement on March 31, 2025. [Learn more about support timelines and recommended alternatives.](https://aka.ms/appcenter/retire)
 
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
-::: moniker range="<=azure-devops"
+The following example runs an App Center test suite. The task uses a [service connection](../library/service-endpoints.md#visual-studio-app-center-service-connection) that you must set up.
+
+For the complete task syntax and reference, see [App Center Test task](/azure/devops/pipelines/tasks/reference/app-center-test-v1). For more information, see [Using Azure DevOps for UI Testing](/appcenter/test-cloud/vsts-plugin).
 
 ```yml
-# App Center test v1
-# Test app packages with Visual Studio App Center.
 - task: AppCenterTest@1
   inputs:
-    appFile: # string. Alias: app. Required. Binary application file path. 
-    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest' # string. Alias: artifactsDir. Required. Artifacts directory. Default: $(Build.ArtifactStagingDirectory)/AppCenterTest.
-  # Prepare Tests
-    #prepareTests: true # boolean. Alias: enablePrepare. Prepare tests. Default: true.
-    frameworkOption: 'appium' # 'appium' | 'espresso' | 'calabash' | 'uitest' | 'xcuitest'. Alias: framework. Required when enablePrepare = true. Test framework. Default: appium.
-    #appiumBuildDirectory: # string. Alias: appiumBuildDir. Required when enablePrepare = true && framework = appium. Build directory. 
-    #espressoBuildDirectory: # string. Alias: espressoBuildDir. Optional. Use when enablePrepare = true && framework = espresso. Build directory. 
-    #espressoTestApkFile: # string. Alias: espressoTestApkPath. Optional. Use when enablePrepare = true && framework = espresso. Test APK path. 
-    #calabashProjectDirectory: # string. Alias: calabashProjectDir. Required when enablePrepare = true && framework = calabash. Project directory. 
-    #calabashConfigFile: # string. Optional. Use when enablePrepare = true && framework = calabash. Cucumber config file. 
-    #calabashProfile: # string. Optional. Use when enablePrepare = true && framework = calabash. Profile to run. 
-    #calabashSkipConfigCheck: false # boolean. Optional. Use when enablePrepare = true && framework = calabash. Skip Configuration Check. Default: false.
-    #uiTestBuildDirectory: # string. Alias: uitestBuildDir. Required when enablePrepare = true && framework = uitest. Build directory. 
-    #uitestStorePath: # string. Optional. Use when enablePrepare = true && framework = uitest. Store file. 
-    #uiTestStorePassword: # string. Alias: uitestStorePass. Optional. Use when enablePrepare = true && framework = uitest. Store password. 
-    #uitestKeyAlias: # string. Optional. Use when enablePrepare = true && framework = uitest. Key alias. 
-    #uiTestKeyPassword: # string. Alias: uitestKeyPass. Optional. Use when enablePrepare = true && framework = uitest. Key password. 
-    #uiTestToolsDirectory: # string. Alias: uitestToolsDir. Optional. Use when enablePrepare = true && framework = uitest. Test tools directory. 
-    #signInfo: # string. Optional. Use when framework = calabash || framework = uitest. Signing information. 
-    #xcUITestBuildDirectory: # string. Alias: xcuitestBuildDir. Optional. Use when enablePrepare = true && framework = xcuitest. Build directory. 
-    #xcUITestIpaFile: # string. Alias: xcuitestTestIpaPath. Optional. Use when enablePrepare = true && framework = xcuitest. Test IPA path. 
-    #prepareOptions: # string. Alias: prepareOpts. Optional. Use when enablePrepare = true. Additional options. 
-  # Run Tests
-    #runTests: true # boolean. Alias: enableRun. Run tests. Default: true.
-    credentialsOption: 'serviceEndpoint' # 'serviceEndpoint' | 'inputs'. Alias: credsType. Required when enableRun = true. Authentication method. Default: serviceEndpoint.
-    #serverEndpoint: # string. Required when enableRun = true && credsType = serviceEndpoint. App Center service connection. 
-    #username: # string. Required when enableRun = true && credsType = inputs. App Center username. 
-    #password: # string. Required when enableRun = true && credsType = inputs. App Center password. 
-    appSlug: # string. Required when enableRun = true. App slug. 
-    devices: # string. Required when enableRun = true. Devices. 
-    #series: 'master' # string. Optional. Use when enableRun = true. Test series. Default: master.
-    #dsymDirectory: # string. Alias: dsymDir. Optional. Use when enableRun = true. dSYM directory. 
-    localeOption: 'en_US' # 'da_DK' | 'nl_NL' | 'en_GB' | 'en_US' | 'fr_FR' | 'de_DE' | 'ja_JP' | 'ru_RU' | 'es_MX' | 'es_ES' | 'user'. Alias: locale. Required when enableRun = true. System language. Default: en_US.
-    #userDefinedLocale: # string. Optional. Use when enableRun = true && locale = user. Other locale. 
-    #loginOptions: # string. Alias: loginOpts. Optional. Use when enableRun = true && credsType = inputs. Additional options for login. 
-    #runOptions: # string. Alias: runOpts. Optional. Use when enableRun = true. Additional options for run. 
-    #skipWaitingForResults: false # boolean. Alias: async. Optional. Use when enableRun = true. Do not wait for test result. Default: false.
-  # Advanced
-    #cliFile: # string. Alias: cliLocationOverride. App Center CLI location. 
-    #showDebugOutput: false # boolean. Alias: debug. Enable debug output. Default: false.
+    appFile: path/myapp.ipa
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
+    frameworkOption: 'appium'
+    appiumBuildDirectory: test/upload
+    serverEndpoint: 'My App Center service connection'
+    appSlug: username/appIdentifier
+    devices: 'devicelist'
 ```
-
-::: moniker-end
 
 ### Keep artifacts with the build record
 
-Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. Your APK gets stored with the build record or test, and gets deployed in later pipelines. For more information, see [Artifacts](../artifacts/pipeline-artifacts.md).
-
-::: moniker range="<=azure-devops"
+To store your APK file with the build record or test and deploy it in subsequent pipelines, add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks to your pipeline. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md).
 
 ```yaml
 - task: CopyFiles@2
@@ -219,59 +150,36 @@ Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and 
     contents: '**/*.apk'
     targetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: MyBuildOutputs
 ```
 
-::: moniker-end
+### Deploy to App Center
 
-## Deploy
+To distribute an app to a group of testers or beta users, or promote the app to Intune or Google Play, add the [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3) task. The task requires a free [App Center](https://appcenter.ms) account that remains free of charge.
 
-### Add App Center
-
-Add the [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3) task to distribute an application to a group of testers or beta users, or promote the application to Intune or Google Play. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
-
-::: moniker range="<=azure-devops"
+The following example distributes an app to users. For the complete task syntax and reference, see [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3). For more information, see [Deploy Azure DevOps Builds with App Center](/appcenter/distribution/vsts-deploy).
 
 ```yml
-# App Center distribute v3
-# Distribute app builds to testers and users via Visual Studio App Center.
 - task: AppCenterDistribute@3
   inputs:
-    serverEndpoint: # string. Required. App Center service connection. 
-    appSlug: # string. Required. App slug. 
-    appFile: # string. Alias: app. Required. Binary file path. 
-    #buildVersion: # string. Build version. 
-    releaseNotesOption: 'input' # 'input' | 'file'. Alias: releaseNotesSelection. Required. Create release notes. Default: input.
-    releaseNotesInput: # string. Required when releaseNotesSelection = input. Release notes. 
-    #releaseNotesFile: # string. Required when releaseNotesSelection = file. Release notes file. 
-    #isMandatory: false # boolean. Require users to update to this release. Default: false.
-    destinationType: 'groups' # 'groups' | 'store'. Required. Release destination. Default: groups.
-    #distributionGroupId: # string. Alias: destinationGroupIds. Optional. Use when destinationType = groups. Destination IDs. 
-    #destinationStoreId: # string. Required when destinationType = store. Destination ID. 
-    #isSilent: # boolean. Optional. Use when destinationType = groups. Do not notify testers. Release will still be available to install. 
-  # Symbols
-    #symbolsOption: 'Apple' # 'Apple' | 'Android' | 'UWP'. Alias: symbolsType. Symbols type. Default: Apple.
-    #symbolsPath: # string. Optional. Use when symbolsType == AndroidNative || symbolsType = Windows. Symbols path. 
-    #appxsymPath: # string. Optional. Use when symbolsType = UWP. Symbols path (*.appxsym). 
-    #symbolsDsymFiles: # string. Alias: dsymPath. Optional. Use when symbolsType = Apple. dSYM path. 
-    #symbolsMappingTxtFile: # string. Alias: mappingTxtPath. Optional. Use when symbolsType = Android. Mapping file. 
-    #nativeLibrariesPath: # string. Optional. Use when symbolsType == Android. Native Library File Path. 
-    #symbolsIncludeParentDirectory: # boolean. Alias: packParentFolder. Optional. Use when symbolsType = Apple. Include all items in parent folder.
+    serverEndpoint: 'AppCenter'
+    appSlug: '$(APP_CENTER_SLUG)'
+    appFile: '$(APP_FILE)' # Relative path from the repo root to the APK file you want to publish
+    symbolsOption: 'Android'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'Here are the release notes for this version.'
+    destinationType: 'groups'
 ```
 
-::: moniker-end
+### Install the Google Play extension and deploy to Google Play
 
-### Install Google Play
-
-Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)
-and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play
-using a [service connection](..//library/service-endpoints.md) that you configure.
+To automate interaction with Google Play, install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and then use the following tasks. By default, these tasks authenticate to Google Play by using a [service connection](..//library/service-endpoints.md) that you must configure.
 
 #### Release
 
-Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release)
-task to release a new Android app version to the Google Play store.
-
-::: moniker range="<=azure-devops"
+To release a new Android app version to the Google Play store, add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release) task to your pipeline.
 
 ```yaml
 - task: GooglePlayRelease@4
@@ -281,14 +189,9 @@ task to release a new Android app version to the Google Play store.
     track: 'internal'
 ```
 
-::: moniker-end
-
 #### Promote
 
-Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote)
-task to promote a previously released Android application update from one track to another, such as `alpha` &rarr; `beta`.
-
-::: moniker range="<=azure-devops"
+To promote a previously released Android application update from one track to another, such as `alpha` &rarr; `beta`, add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote) task to your pipeline.
 
 ```yaml
 - task: GooglePlayPromote@3
@@ -299,14 +202,9 @@ task to promote a previously released Android application update from one track 
     destinationTrack: 'alpha'
 ```
 
-::: moniker-end
-
 #### Increase rollout
 
-Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout)
-task to increase the rollout percentage of an application that was previously released to the `rollout` track.
-
-::: moniker range="<=azure-devops"
+To increase the rollout percentage of an application that was previously released to the `rollout` track, add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout) task to your pipeline.
 
 ```yaml
 - task: GooglePlayIncreaseRollout@2
@@ -316,14 +214,9 @@ task to increase the rollout percentage of an application that was previously re
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
-::: moniker-end
+#### Update status
 
-#### Status update
-
-Add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update)
-task to update the rollout status for the application that was previously released to the `rollout` track.
-
-::: moniker range="<=azure-devops"
+To update the rollout status for an application that was previously released to the `rollout` track, add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update) task to your pipeline.
 
 ```yaml
   - task: GooglePlayStatusUpdate@2
@@ -334,48 +227,55 @@ task to update the rollout status for the application that was previously releas
       status: 'inProgress' # draft | inProgress | halted | completed
 ```
 
-::: moniker-end
+## Create an app bundle
+
+You can build and sign an app bundle with an inline script and a secure file.
+
+1. Download your keystore and store it as a [secure file](../library/secure-files.md) in the Azure Pipelines library.
+
+1. Create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md).
+
+In your YAML pipeline:
+
+1. Add the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) task to download the *app.keystore* secure file.
+
+   ```yaml
+   - task: DownloadSecureFile@1
+     name: keyStore
+     displayName: "Download keystore from secure files"
+     inputs:
+       secureFile: app.keystore
+   ```
+
+1. Use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task with a Bash script to build and sign the app bundle.
+
+   ```yaml
+   - task: Bash@3
+     displayName: "Build and sign App Bundle"
+     inputs:
+       targetType: "inline"
+       script: |
+         msbuild -restore $(Build.SourcesDirectory)/myAndroidApp/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
+   ```
+
+1. Use the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) task to copy the app bundle.
+
+   ```yaml
+   - task: CopyFiles@2
+     displayName: 'Copy deliverables'
+     inputs:
+       SourceFolder: '$(Build.SourcesDirectory)/myAndroidApp/bin/$(buildConfiguration)'
+       Contents: '*.aab'
+       TargetFolder: 'drop'
+   ```
+
+From here, you can either create and save an artifact with the [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish the app bundle.
 
 ## Related extensions
 
-- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
-- [Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (Microsoft)  
-- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
-- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
-- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) from Codified Security
+- [Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) from Microsoft
+- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) from James Montemagno
+- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) from Perfecto Mobile
+- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) from Microsoft
 
-## FAQ
-
-### Q: How do I create app bundles?
-
-A: You can build and sign your app bundle with an inline script and a secure file. To do so, first download your keystore and [store it as a secure file in the Library](../library/secure-files.md). Then, create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md). 
-
-Next, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) tasks to download your keystore and build and sign your app bundle.
-
-In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
-
-::: moniker range="<=azure-devops"
-
-```yaml
-- task: DownloadSecureFile@1
-  name: keyStore
-  displayName: "Download keystore from secure files"
-  inputs:
-    secureFile: app.keystore
-
-- task: Bash@3
-  displayName: "Build and sign App Bundle"
-  inputs:
-    targetType: "inline"
-    script: |
-      msbuild -restore $(Build.SourcesDirectory)/myAndroidApp/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
-
-- task: CopyFiles@2
-  displayName: 'Copy deliverables'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/myAndroidApp/bin/$(buildConfiguration)'
-    Contents: '*.aab'
-    TargetFolder: 'drop'
-```
-
-::: moniker-end

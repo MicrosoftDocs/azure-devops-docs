@@ -145,11 +145,10 @@ As shown in the following table, a ✔️ indicates the task is available from t
 
 ## Prerequisites
 
-- To manage work item templates in the web portal, you need to join the team that owns them. You can then add, edit, or delete templates as needed.
-
-- You need to be a project Contributor and a team member to use work item templates in the web portal. You can then apply templates to existing work items. 
-
-- To add, capture, or edit work item templates through Visual Studio Team Explorer, install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
+- **Permissions**: 
+  - To manage work item templates in the web portal, be a member of the team that owns them. You can then add, edit, or delete templates as needed.
+  - To use work item templates in the web portal, be a **Contributor** to the project. You can then apply templates to existing work items. 
+- **Tools**: To add, capture, or edit work item templates through Visual Studio Team Explorer, install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
 
 <a id="capture"> </a> 
 
@@ -337,7 +336,7 @@ You can apply a template to a single work item or do a bulk update of several wo
  
    :::image type="content" source="media/templates/bulk-apply-template-vsts-s136.png" alt-text="Screenshot of Bulk update several work items.":::
 
-3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
+3. Field changes are automatically applied and work items saved. For more information about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 

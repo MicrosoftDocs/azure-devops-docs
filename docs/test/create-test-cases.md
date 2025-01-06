@@ -6,7 +6,7 @@ ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
@@ -125,7 +125,7 @@ After reordering the tests, you can sort them by the **Order** field and then ru
 ::: moniker-end
 
 > [!TIP]
-> You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
+> You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
 
 ## Use the Grid view to edit test cases
 ::: moniker range=">=azure-devops-2020"
@@ -259,7 +259,7 @@ You can assign an individual test case to a tester.
 2. Add or remove testers from the list. After you select the testers, tick the **Send email**
    checkbox and edit the message as required so they know that tests are ready for them to run.
 
-   ![Screenshot shwoing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
+   ![Screenshot showing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
 
    The email contains a link that testers can open to see the list of assigned tests.
    Testers need [Basic access](../organizations/security/access-levels.md)

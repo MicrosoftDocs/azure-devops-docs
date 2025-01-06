@@ -5,7 +5,8 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 06/29/2023
+ms.date: 12/12/2024
+ms.custom:  copilot-scenario-highlight 
 monikerRange: '<= azure-devops'
 ---
 
@@ -28,6 +29,13 @@ For classic pipelines, you can use [release variables](../release/variables.md) 
 
 Learn more about [working with variables](../process/variables.md).
 
+::: moniker range="azure-devops"
+
+> [!TIP]
+> You can ask [Copilot](/copilot/) for help with variables. To learn more, see [Ask Copilot to generate a stage with a condition based on variable values](#ask-copilot-to-generate-a-stage-with-a-condition-based-on-variable-values).
+
+::: moniker-end
+
 ## Build.Clean 
 
 This is a deprecated variable that modifies how the build agent cleans up source.
@@ -40,19 +48,19 @@ To learn how to clean up source, see [Clean the local repo on the agent](../repo
 # [YAML](#tab/yaml)
 
 In YAML, you must explicitly map `System.AccessToken` into the pipeline using a
-variable. You can do this at the step or task level:
+variable. You can do this at the step or task level. For example, you can use `System.AccessToken` to authenticate with a container registry.
 
 ```yaml
 steps:
-  - bash: echo This script could use $SYSTEM_ACCESSTOKEN
-    env:
-      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-  - powershell: | 
-      Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
-      Write-Host "$env:SYSTEM_ACCESSTOKEN = $(System.AccessToken)"
-    env:
-      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+- task: Docker@2
+  inputs:
+    command: login
+    containerRegistry: '<docker connection>'
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
+
+
 
 You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
@@ -129,7 +137,6 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 
 
-
 <a name="identity_values"></a>
 ### How are the identity variables set?
 
@@ -142,3 +149,20 @@ The value depends on what caused the build and are specific to Azure Repos repos
 | In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
 | In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |
 | Because you clicked the **Queue build** button | You | You |
+
+::: moniker range="azure-devops"
+
+## Ask Copilot to generate a stage with a condition based on variable values
+
+Use [Copilot](/copilot/) to generate a stage with a condition determined by the value of a variable.  
+
+This example prompt defines a stage that runs when `Agent.JobStatus` indicates that the previous stage ran successfully:
+
+> Create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`.
+
+You can customize the prompt to use values that meet your requirements. For example, you can ask for help creating a stage that only runs when a pipeline fails. 
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+::: moniker-end

@@ -19,7 +19,7 @@ ms.date: 09/28/2023
 > [!NOTE]
 > This article applies to Azure DevOps Server (on-premises). To manage access levels for Azure DevOps Services (cloud), see [Add users to your organization or project](../accounts/add-organization-users.md).
 
-Access levels grant or restrict access to use the functions and features that Azure DevOps Server provides. Access levels are in addition to permissions granted through security groups, which provide or restrict specific tasks. In this article, learn how to change access levels for users and groups. For more information, see [About access levels](access-levels.md).
+Access levels manage access to use the functions and features that Azure DevOps Server provides. Access levels are in addition to permissions granted through security groups, which provide or restrict specific tasks. In this article, learn how to change access levels for users and groups. For more information, see [About access levels](access-levels.md).
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
@@ -27,25 +27,19 @@ For a simplified overview of the permissions that are assigned to the most commo
 
 ## Prerequisites
 
-* You must be a member of the Administrators group. If you aren't a member, [get added now](/azure/devops/server/admin/add-administrator).
-* To manage access for a large group of users, create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups.
-* Users must be [added to a project](add-users-team-project.md).
+- **Permissions**: Be a member of the [**Project Administrators** group](change-project-level-permissions.md). 
+* **Group membership**: To manage access for a large group of users, create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups.
+* **Project access**: Ensure users are [added to the project](add-users-team-project.md).
 
 ## Open access levels
 
 You can manage access levels for the collections defined on the application tier. The default access level affects all the projects in all the collections. When you add users or groups to teams, projects, or collections, they get the default access level. To give a different access level to a certain user or group, you need to add them to a non-default access level.
-
-::: moniker range=">= azure-devops-2019"
 
 - From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you're at a project level, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
 
    ![Screenshot of web portal, Open Access levels dialog.](media/change-access-levels/open-access-levels-2019.png)
 
 	If you don't see **Access levels**, you aren't an administrator and need to [get permission](/azure/devops/server/admin/add-administrator).
-
-::: moniker-end
-
-
 
 ## Add a user or group to an access level 
 

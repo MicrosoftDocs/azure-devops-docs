@@ -18,26 +18,17 @@ ms.date: 07/14/2020
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
-
-Why should you use a Personal Access Token over an Alternate Access Credential?
-
-For these three reasons:
-
-- As part of good password management, these tokens automatically expire so you don't have to remember to change your password.
-- Since PATs are a generated password, you won't use a common password as part of your AAC, which means a more limited surface area for attack.
-- If you need to provide a diagnostic trace and forget to replace the value, you can revoke the credential. Doing so maintains secure access to Azure DevOps.
-
 ::: moniker range="azure-devops"
 
 <a name='azure-active-directory-azure-ad'></a>
@@ -52,7 +43,7 @@ Microsoft Entra ID is also known as "Organizational Credential" in Power BI Desk
 
 2. Choose <strong>Sign in</strong> and enter your Microsoft Entra credentials. After that, you're done.
 
-To change an existing URL to use Microsoft Entra ID instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this article.
+To change an existing URL to use Microsoft Entra ID instead of a PAT, see [Change authentication credentials](#update-credentials) later in this article.
 
 ::: moniker-end
 
@@ -75,30 +66,17 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 ## Create a Personal Access Token  
 
-1. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
+> [!NOTE]
+> PATs are a less desirable option compared to connecting Power BI with Microsoft Entra ID or Windows Authentication.
+> Consider them an extension of your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password.
+> To help keep your token more secure, consider using credential managers. If you use a credential managers, you won't have to enter your credentials every time you push.
 
-	![User Profile, My Security menu option](../../media/open-security.png)  
-
-1. Enter the required information: 
-   - Add a description  
-   - Set the expiration period  
-   - Select the organization 
-   - Choose Selected scopes
-   - Check the **Analytics (read)**
+1. Follow the steps on the [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
 	
-     And, then choose **Create Token**.  
-
-     > [!div class="mx-imgBorder"]  
-     > ![Create personal access token](media/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
-
 2. Copy the token that displays. If you navigate away from the page, you can't retrieve it later.  
-
-	![Copy Personal Access Token dialog](media/client-authentication/copy-personal-access-token.png)  
 
 3. If you need to revoke a token, navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
 	
-	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers. If you use credential managers, you won't have to enter your credentials every time you push.  
-
 ## Enter credentials within a client
 
 Both Power BI and Excel work using Power Query when accessing OData. The authentication mechanism, including the various
@@ -124,9 +102,7 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 
 	::: moniker-end
 
-5. In the authentication dialog, choose <strong>Basic</strong>, enter your credentials, and then choose <strong>Connect</strong>:  
-   - If you're using an AAC, enter your username and password  
-   - If you're using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
+5. In the authentication dialog, choose <strong>Basic</strong>, enter your credentials, and then choose <strong>Connect</strong>. If you're using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
 
      ::: moniker range="azure-devops"
 

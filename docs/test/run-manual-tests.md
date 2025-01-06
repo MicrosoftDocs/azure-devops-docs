@@ -5,10 +5,10 @@ ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: rbatra
+ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 09/11/2024
 ---
 
 # Run manual tests
@@ -250,7 +250,8 @@ If you want to collect more diagnostic data for your desktop application, run yo
    ![Screenshot shows the Run for desktop application dialog box with options to download and launch Test Runner.](media/run-manual-tests/tr-atp-launch.png)
 
    > [!NOTE]
-   > Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
+   > - Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
+   > - Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions)
 
 1. Select **Launch** and start testing as described in the previous section. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
 
@@ -716,10 +717,9 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
-### Q: Some of the attachments for the test run are not showing preview option?
+### Q: Some of the attachments for the test run are not showing the preview option?
 
-**A:** You can only preview files with txt and log extensions.
-       Click on preview option for txt or log extension file, another UI will open up with the drop down field showing all the attachments for the test run, however, if you select the file with extension type other than txt or log, a message will be shown: "You can only preview files with txt and log extensions, click here download the attachment"
+**A:** You can only preview files with txt and log extensions. Click on the preview option for txt or log extension files, and another UI will open up with the drop down field showing all the attachments for the test run. If you select a file with an extension type other than txt or log, the following message is shown: "You can only preview files with txt and log extensions, click here to download the attachment"
 
 ### Q: How do I control how long I keep my test data?
 
@@ -733,13 +733,13 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 **A:** The Test Runner desktop client is currently supported only on Windows x64 platform.
 
-### Q: I am observing test run failure with Test Runner client?
+### Q: I am observing test run failures when using the Azure Test Runner desktop client.
 
 **A:** Make sure you are using latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
 
-### Q: Azure Test Runner is blocked due to conditional access policy?
+### Q: Does the Azure Test Runner desktop client work on devices with Microsoft Entra Conditional Access enabled?
 
-**A:** Azure Test Runner may not work if your organization uses a conditional access policy via Microsoft Entra. [Learn more](https://learn.microsoft.com/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web  runner in this scenario.
+**A:** Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web runner in this scenario.
 
 ### Q: Can I opt out of telemetry for the Test Runner client?
 

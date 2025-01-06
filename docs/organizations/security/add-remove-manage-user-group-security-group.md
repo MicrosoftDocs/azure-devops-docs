@@ -23,11 +23,11 @@ For more information, see the following articles:
   - [Add users & manage access](../accounts/add-organization-users.md)  
   - [Add users or groups to a team or project](add-users-team-project.md)  
   - [Remove user accounts](/azure/active-directory/add-users-azure-active-directory#delete-a-user) 
-  - [Grant or restrict access using permissions](restrict-access.md)
+  - [Manage access using permissions](restrict-access.md)
   - [Change project-level permissions](../security/change-project-level-permissions.md)
   - [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)
 
-Users inherit permissions from the group(s) that they belong to. If a permission is set to **Allow** for one group and **Deny** for another group to which the user belongs, then their effective permission assignment is **Deny**. For more information, see [About permissions/Inheritance](about-permissions.md#inheritance).  
+Users inherit permissions from the group(s) that they belong to. If a permission is set to **Allow** for one group and **Deny** for another group to which the user belongs, then their effective permission assignment is **Deny**. For more information, see [About permissions/Inheritance](about-permissions.md#security-groups-and-membership).  
 
 ## How Azure DevOps uses security groups 
 
@@ -45,8 +45,9 @@ Azure DevOps uses security groups for the following purposes:
  
 ## Prerequisites
 
-* To manage permissions or groups at the project level, you must be a member of the **Project Administrators** Group. If you created the project, you're automatically added as a member of this group. 
-* To manage permissions or groups at the collection or instance level, you must be a member of the **Project Collection Administrators** Group. If you created the organization or collection, you're automatically added as a member of this group. 
+**Permissions**: 
+* To manage permissions or groups at the project level, be a member of the **Project Administrators** security group. If you created the project, you're automatically added as a member of this group. 
+* To manage permissions or groups at the collection or instance level, be a member of the **Project Collection Administrators** security group. If you created the organization or collection, you're automatically added as a member of this group. 
 
 ::: moniker range="azure-devops"
 > [!NOTE]  
@@ -204,9 +205,9 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 	For example, here we choose the **Project Administrators** group, **Members**, and then **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings > Permissions, Add member](media/project-collection/project-admin-members-add-s154.png) 
+    > ![Project Settings > Permissions, Add member](media/project-collection/project-admin-members-add.png) 
 
-4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+2. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
     > [!div class="mx-imgBorder"]  
     > ![Add users and group dialog, preview page.](media/project-collection/add-member-project-admin.png)  
@@ -214,7 +215,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
     > [!NOTE]   
     > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
-5. Select **Save**. 
+3. Select **Save**. 
 
 #### [Current page](#tab/current-page) 
 

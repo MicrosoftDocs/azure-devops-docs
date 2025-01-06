@@ -19,7 +19,7 @@ Rollup provides support to show a count of work items or sum of Story Points, Re
  
 :::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Feature rollup matrix report.":::
 
-To learn more about rollup and options to show rollup, see [Display rollup progress or totals in Azure Boards](../../boards/backlogs/display-rollup.md).
+For more information about rollup and options to show rollup, see [Display rollup progress or totals in Azure Boards](../../boards/backlogs/display-rollup.md).
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]

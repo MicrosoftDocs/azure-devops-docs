@@ -1,183 +1,170 @@
 ---
-title: Use PowerShell scripts to customize pipelines
-description: Learn how you can use a script to customize your pipeline
+title: PowerShell scripts to customize pipelines
+description: Learn about using PowerShell scripts to customize your pipelines by adding business logic.
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 01/06/2023
+ms.date: 07/03/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Use a PowerShell script to customize your pipeline
+# PowerShell scripts to customize pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+This article explains how you can move beyond compiling and testing code and use PowerShell scripts to add business logic to pipelines. The Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) runs PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
 
+You can use variables in your PowerShell scripts, including [user-defined variables](../process/variables.md#user-defined-variables) that you set yourself. You can also use [predefined variables](../build/variables.md) that are available in all Azure Pipelines, and set [multi-job output variables](../process/variables.md#set-a-multi-job-output-variable) to make variables available to future jobs. For more information, see [Define variables](../process/variables.md).
 
-When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md). PowerShell Core runs on any platform. 
+You can use named parameters in your PowerShell scripts. Other kinds of parameters, such as switch parameters, aren't supported and cause errors if you try to use them. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
 
-::: moniker range=">= azure-devops-2019"
-## Add a PowerShell script
+## Add a PowerShell script to a pipeline
+
+The build uses the active branch of your code. If your pipeline run uses the `main` branch, your script also uses the `main` branch.
+
 ### [YAML](#tab/yaml)
 
-The syntax for including PowerShell Core is slightly different from the syntax for Windows PowerShell. 
+You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md), or run PowerShell Core on any platform. The syntax for including PowerShell Core is slightly different than for Windows PowerShell.
 
-1. Push your PowerShell script to your repo.
+After you push your PowerShell script to your repo, add a `pwsh` or `powershell` step to your pipeline. The `pwsh` keyword and `powershell` keywords are both shortcuts to run the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
 
-2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
+Example for PowerShell Core:
 
 ```yaml
-# for PowerShell Core
 steps:
 - pwsh: ./my-script.ps1
+```
 
-# for Windows PowerShell
+Example for Windows PowerShell:
+
+```yaml
 steps:
 - powershell: .\my-script.ps1
 ```
 
 ### [Classic](#tab/classic)
 
-1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for PowerShell Core and Windows PowerShell. 
+Add the PowerShell Script task to your pipeline, and add your script file to the **Script Path**. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for both PowerShell Core and Windows PowerShell. 
 
-    :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
-
-2. Add your file to the **Script Path**. 
-    
-    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Add the script path.":::
+:::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
 
 ---
-::: moniker-end
 
+## Example script to apply version to assemblies
 
+The example script in this section applies a version to assembly property files. For the script to run successfully, the defined build number format must have four periods, for example `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`.
 
-## Example PowerShell script: version assemblies
-
-Here's an example script to version your assemblies. For the script to run successfully, you'll need to update your build number to use a format with four periods (example: `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`). Build number can also be referred to as run number.
+> [!NOTE]
+> Build number is also called run number.
 
 ### [YAML](#tab/yaml)
 
-You can [customize your build number](../process/run-number.md) within a YAML pipeline with the `name` property. 
+Customize your build number in the YAML pipeline by using the `name` property. The `name` property must be at the root level of the pipeline. For more information, see [Configure run or build numbers](../process/run-number.md).
 
 ```yaml
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
-
-pool:
-  vmImage: windows-latest
-
-steps:
-- pwsh: echo $(Build.BuildNumber) //output updated build number
 ```
+
 #### [Classic](#tab/classic)
 
-1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
+To customize your build number in a Classic pipeline, when you add the build task to your pipeline, specify your build number format in the **Options** tab. 
 
-    ![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
-
-2. Next, specify your build number.
-
-    ![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+:::image type="content" source="media\build-number-format.png" alt-text="Screenshot of build number format setting.":::
 
 ---
 
-```ps
-# If found use it to version the assemblies.
-#
-# For example, if the 'Build number format' build pipeline parameter 
-# $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
-# then your build numbers come out like this:
-# "Build HelloWorld_2013.07.19.1"
-# This script would then apply version 2013.07.19.1 to your assemblies.
-	
+The following PowerShell example script applies a version to assemblies. For example, if your defined build number format `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces build number `Build HelloWorld_2024.07.19.1`, the script applies version `2024.07.19.1` to your assemblies.
+
+```powershell
 # Enable -Verbose option
 [CmdletBinding()]
-	
-# Regular expression pattern to find the version in the build number 
-# and then apply it to the assemblies
+
+# Regular expression pattern to find the version in the build number
 $VersionRegex = "\d+\.\d+\.\d+\.\d+"
-	
-# If this script is not running on a build server, remind user to 
-# set environment variables so that this script can be debugged
+
+# If not running on a build server, remind user to set environment variables for debugging
 if(-not ($Env:BUILD_SOURCESDIRECTORY -and $Env:BUILD_BUILDNUMBER))
 {
-	Write-Error "You must set the following environment variables"
-	Write-Error "to test this script interactively."
-	Write-Host '$Env:BUILD_SOURCESDIRECTORY - For example, enter something like:'
-	Write-Host '$Env:BUILD_SOURCESDIRECTORY = "C:\code\FabrikamTFVC\HelloWorld"'
-	Write-Host '$Env:BUILD_BUILDNUMBER - For example, enter something like:'
-	Write-Host '$Env:BUILD_BUILDNUMBER = "Build HelloWorld_0000.00.00.0"'
-	exit 1
+    Write-Error "You must set the following environment variables"
+    Write-Error "to test this script interactively."
+    Write-Host '$Env:BUILD_SOURCESDIRECTORY - For example, enter something like:'
+    Write-Host '$Env:BUILD_SOURCESDIRECTORY = "C:\code\Fabrikam\HelloWorld"'
+    Write-Host '$Env:BUILD_BUILDNUMBER - For example, enter something like:'
+    Write-Host '$Env:BUILD_BUILDNUMBER = "Build HelloWorld_0000.00.00.0"'
+    exit 1
 }
-	
+
 # Make sure path to source code directory is available
 if (-not $Env:BUILD_SOURCESDIRECTORY)
 {
-	Write-Error ("BUILD_SOURCESDIRECTORY environment variable is missing.")
-	exit 1
+    Write-Error ("BUILD_SOURCESDIRECTORY environment variable is missing.")
+    exit 1
 }
 elseif (-not (Test-Path $Env:BUILD_SOURCESDIRECTORY))
 {
-	Write-Error "BUILD_SOURCESDIRECTORY does not exist: $Env:BUILD_SOURCESDIRECTORY"
-	exit 1
+    Write-Error "BUILD_SOURCESDIRECTORY does not exist: $Env:BUILD_SOURCESDIRECTORY"
+    exit 1
 }
 Write-Verbose "BUILD_SOURCESDIRECTORY: $Env:BUILD_SOURCESDIRECTORY"
-	
-# Make sure there is a build number
+    
+# Make sure there's a build number
 if (-not $Env:BUILD_BUILDNUMBER)
 {
-	Write-Error ("BUILD_BUILDNUMBER environment variable is missing.")
-	exit 1
+    Write-Error ("BUILD_BUILDNUMBER environment variable is missing.")
+    exit 1
 }
 Write-Verbose "BUILD_BUILDNUMBER: $Env:BUILD_BUILDNUMBER"
-	
+    
 # Get and validate the version data
 $VersionData = [regex]::matches($Env:BUILD_BUILDNUMBER,$VersionRegex)
 switch($VersionData.Count)
 {
-   0		
+   0        
       { 
-         Write-Error "Could not find version number data in BUILD_BUILDNUMBER."
+         Write-Error "Couldn't find version number data in BUILD_BUILDNUMBER."
          exit 1
       }
    1 {}
    default 
       { 
-         Write-Warning "Found more than instance of version data in BUILD_BUILDNUMBER." 
-         Write-Warning "Will assume first instance is version."
+         Write-Warning "Found more than one instance of version data in BUILD_BUILDNUMBER." 
+         Write-Warning "Assuming first instance is version."
       }
 }
 $NewVersion = $VersionData[0]
 Write-Verbose "Version: $NewVersion"
-	
+    
 # Apply the version to the assembly property files
 $files = gci $Env:BUILD_SOURCESDIRECTORY -recurse -include "*Properties*","My Project" | 
-	?{ $_.PSIsContainer } | 
-	foreach { gci -Path $_.FullName -Recurse -include AssemblyInfo.* }
+    ?{ $_.PSIsContainer } | 
+    foreach { gci -Path $_.FullName -Recurse -include AssemblyInfo.* }
 if($files)
 {
-	Write-Verbose "Will apply $NewVersion to $($files.count) files."
-	
-	foreach ($file in $files) {
-		$filecontent = Get-Content($file)
-		attrib $file -r
-		$filecontent -replace $VersionRegex, $NewVersion | Out-File $file
-		Write-Verbose "$file.FullName - version applied"
-	}
+    Write-Verbose "Applying $NewVersion to $($files.count) files."
+    
+    foreach ($file in $files) {
+        $filecontent = Get-Content($file)
+        attrib $file -r
+        $filecontent -replace $VersionRegex, $NewVersion | Out-File $file
+        Write-Verbose "$file.FullName - version applied"
+    }
 }
 else
 {
-	Write-Warning "Found no files."
+    Write-Warning "Found no files."
 }
 ```
 
 <a name="oauth"></a>
+<a name="example-powershell-script-access-rest-api"></a>
+## Example script to access the REST API
 
-## Example PowerShell script: access REST API
-
-In this example, you'll use the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md). 
+This example uses the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
 #### [YAML](#tab/yaml)
 
-You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to access the OAuth token. 
+You can use `$env:SYSTEM_ACCESSTOKEN` in an inline script in your YAML pipeline to access the OAuth token.
+
+The following inline PowerShell script in a YAML pipeline uses the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
 
 ```yaml
 - task: PowerShell@2
@@ -194,14 +181,17 @@ You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to acces
      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-
 #### [Classic](#tab/classic)
 
-To enable your script to use the build process OAuth token, go to the **Tasks** tab of the build definition and within your build phase, select **Allow Scripts to Access OAuth Token**, which is located in the **Additional options** section.
+To enable your script to use the build process OAuth token, select the **Agent job** for the PowerShell script task, and then select **Allow scripts to access the OAuth token** under **Additional options**.
 
-After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
+:::image type="content" source="media\allow-script-to-access-oauth-token.png" alt-text="Screenshot of enabling OAuth token access for scripts.":::
 
-```ps
+Your script can now use the `SYSTEM_ACCESSTOKEN` environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
+
+The following inline script in a **PowerShell Script** task uses the Azure Pipelines REST API to retrieve the pipeline definition.
+
+```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
 Write-Host "URL: $url"
 $pipeline = Invoke-RestMethod -Uri $url -Headers @{
@@ -210,29 +200,10 @@ $pipeline = Invoke-RestMethod -Uri $url -Headers @{
 Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
 
+---
 
---- 
+## Related content
 
-
-## FAQ
-<!-- BEGINSECTION class="md-qanda" -->
-
-
-### What variables are available for me to use in my scripts?
-
-You can use [predefined variables](../build/variables.md) in your scripts. For more information on available variables and how to use them, see [Use predefined variables](../build/variables.md).
-
-[!INCLUDE [include](../includes/variable-set-in-script-qa.md)]
-
-### Which branch of the script does the build run?
-
-The build will use the active branch of your code. If your pipeline run uses the `main` branch, your script will also use the `main` branch. 
-### What kinds of parameters can I use?
-
-You can use named parameters. Other kinds of parameters, such as switch parameters, aren't supported. You'll see errors if you try to use switch parameters. 
-
-::: moniker range="< azure-devops"
-[!INCLUDE [temp](../includes/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
+- [Configure run or build numbers](../process/run-number.md)
+- [Azure Pipelines PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2)
+- [Azure Pipelines REST API](../../integrate/index.md)

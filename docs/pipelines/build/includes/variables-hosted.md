@@ -21,7 +21,7 @@ ms.date: 07/25/2023
 | Agent.HomeDirectory | The directory the agent is installed into. This contains the agent software. For example: `c:\agent`. |
 | Agent.Id | The ID of the agent. |
 | Agent.JobName | The name of the running job. This will usually be "Job"; or "__default", but in multi-config scenarios, will be the configuration. |
-| Agent.JobStatus | The status of the build.<br><ul><li>`Canceled`<li>`Failed`<li>`Succeeded`<li>`SucceededWithIssues` (partially successful)</ul>The environment variable should be referenced as `AGENT_JOBSTATUS`. The older `agent.jobstatus` is available for backwards compatibility. |
+| Agent.JobStatus | The status of the build.<br><ul><li>`Canceled`<li>`Failed`<li>`Succeeded`<li>`SucceededWithIssues` (partially successful)<li>`Skipped` (last job) </ul>The environment variable should be referenced as `AGENT_JOBSTATUS`. The older `agent.jobstatus` is available for backwards compatibility. |
 | Agent.MachineName | The name of the machine on which the agent is installed. |
 | Agent.Name | The name of the agent that is registered with the pool.<br><br>If you're using a self-hosted agent, then this name is specified by you. See [agents](../../agents/agents.md). |
 | Agent.OS | The operating system of the agent host. Valid values are:<br><ul><li>`Windows_NT`<li>`Darwin`<li>`Linux`</ul>If you're running in a container, the agent host and container may be running different operating systems. |
@@ -46,6 +46,8 @@ Example of **Agent.ContainerMapping**:
 ## Build variables (DevOps Services)
 
 <a id="build-variables"></a>
+
+When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because its value is not accessible within the template's scope. 
 
 | Variable | Description | Available in [templates](../../process/templates.md)? |
 |:---------|:------------|:------------------------------------------------------|
@@ -116,6 +118,8 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <a id="system-variables"></a>
 
+When you use a variable in a template that is not marked as available in templates, the variable will not render. The variable won't render because its value is not accessible within the template's scope. 
+
 | Variable | Description | Available in [templates](../../process/templates.md)? |
 |:---------|:------------|:------------------------------------------------------|
 | System.AccessToken | [Use the OAuth token to access the REST API](../../scripts/powershell.md#example-powershell-script-access-rest-api).<br><br>[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken).<br><br>This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. | Yes |
@@ -128,6 +132,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 | System.JobDisplayName | The human-readable name given to a job. | No |
 | System.JobId | A unique identifier for a single attempt of a single job. The value is unique to the current pipeline. | No |
 | System.JobName | The name of the job, typically used for expressing dependencies and accessing output variables. | No |
+| System.OidcRequestUri | Generate an `idToken` for authentication with Entra ID using OpenID Connect (OIDC). [Learn more](/azure/devops/release-notes/2024/sprint-240-update#pipelines-and-tasks-populate-variables-to-customize-workload-identity-federation-authentication). | Yes |
 | System.PhaseAttempt | Set to 1 the first time this phase is attempted, and increments every time the job is retried.<br><br>Note: "Phase" is a mostly redundant concept, which represents the design-time for a job (whereas job was the runtime version of a phase). We've mostly removed the concept of "phase" from Azure Pipelines. Matrix and multi-config jobs are the only place where "phase" is still distinct from "job." One phase can instantiate multiple jobs, which differ only in their inputs. | No |
 | System.PhaseDisplayName | The human-readable name given to a phase. | No |
 | System.PhaseName | A string-based identifier for a job, typically used for expressing dependencies and accessing output variables. | No |
@@ -140,7 +145,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 | System.PullRequest.SourceCommitId | The commit that is being reviewed in a pull request. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation)). This variable is only available in a YAML pipeline if the PR is affected by a branch policy. |
 | System.PullRequest.SourceRepositoryURI | The URL to the repo that contains the pull request. For example: `https://dev.azure.com/ouraccount/_git/OurProject`.  | No |
 | System.PullRequest.TargetBranch | The branch that is the target of a pull request. For example: `refs/heads/main` when your repository is in Azure Repos and `main` when your repository is in GitHub. This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation). This variable is only available in a YAML pipeline if the PR is affected by a branch policy. | No |
-| System.StageAttempt | Set to 1 the first time this stage is attempted, and increments every time the job is retried. | No |
+| System.StageAttempt | Set to 1 the first time this stage is attempted, and increments every time the stage is retried. | No |
 | System.StageDisplayName | The human-readable name given to a stage. | No |
 | System.StageName | A string-based identifier for a stage, typically used for expressing dependencies and accessing output variables. | No |
 | System.TeamFoundationCollectionUri | The URI of the TFS collection or Azure DevOps organization. For example: `https://dev.azure.com/fabrikamfiber/`.<br><br>This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. | Yes |

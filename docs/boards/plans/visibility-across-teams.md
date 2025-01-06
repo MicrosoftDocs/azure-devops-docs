@@ -36,14 +36,14 @@ With a Delivery Plan, you gain a tailor-made view across several teams and their
 
 ::: moniker range="azure-devops"  
 
-When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
+When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. For more information about Delivery Plans, see [Review team plans](review-team-plans.md).
 
 :::image type="content" source="media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"  
 
-When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../plans/review-team-plans.md).
+When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. For more information about Delivery Plans, see [Delivery Plans](../plans/review-team-plans.md).
 
 <img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" />
 ::: moniker-end 
@@ -111,7 +111,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 > [!TIP]
 > When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team is higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
-To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
+For more information about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
 
 
 <a id="dashboards">  </a>
@@ -141,7 +141,7 @@ Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-r
 - New features (New or Proposed)
 - Features being actively worked (In Progress or Active)
 
-Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
+Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. For more information about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
 
 ### Technical debt, bug debt, and activity dashboard 
 
@@ -167,13 +167,13 @@ You can add [Widgets based on the Analytics Service](../../report/dashboards/ana
 
 You can track capacity for individuals that participate on more than one team. To learn how, see [Set sprint capacity, Track capacity when working on more than one team](../sprints/set-capacity.md#track-capacity-per-team).
 
-## Limitations of multi-team Kanban board views 
+## Limitations of multi-team board views 
 
-While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
+While the management teams you configure can use the board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [board columns](../boards/add-columns.md) with identical workflow mapping, updating the Features on one team's board won't be reflected on another team's board. 
 Only when the work item state changes does the card column reflect the same on all boards.
 
 > [!IMPORTANT]   
-> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For more information, see [Customize your work tracking experience](../../reference/customize-work.md). 
+> Work items that appear on more than one team's board can yield query results that don't meet your expectations. Because each team can customize the board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For more information, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 ## Related articles
 

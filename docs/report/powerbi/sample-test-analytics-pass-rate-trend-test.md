@@ -293,7 +293,7 @@ Expand the `Date` column to show the expanded entity `CompletedOn.Date`.  Expand
 
 1. Select the `PassRate`column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
 
-To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

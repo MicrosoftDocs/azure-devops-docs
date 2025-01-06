@@ -2,8 +2,9 @@
 title: Use runtime and type-safe parameters
 description: You can use runtime parameters in pipelines or as part of a template
 ms.topic: conceptual
-ms.date: 07/03/2023
+ms.date: 11/19/2024
 monikerRange: '>=azure-devops-2020'
+ai-usage: ai-assisted
 ---
 
 # Runtime parameters
@@ -55,7 +56,7 @@ jobs:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-When the pipeline runs, you select the Pool Image. If you don't make a selection, the default option, `ubuntu-latest` gets used. 
+From the pipeline runs page, select **Run pipeline** to run the pipeline. You'll see the option to select the Pool Image. If you don't make a selection, the default option, `ubuntu-latest` gets used. You won't have the option to select a Pool Image if you run your pipeline from the YAML editor. 
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)
@@ -291,6 +292,94 @@ steps:
 - ${{ if eq(length(parameters.foo), 0) }}:
   - script: echo Foo is empty
     displayName: Foo is empty
+```
+
+### Dynamically include a list of steps with the stepList parameter 
+
+In this example, the `stepList` parameter type is used to dynamically include a list of steps in the build process. 
+
+- The main pipeline (`azure-pipelines.yml`) defines two jobs: build and deploy.
+- The build job uses a template (`build.yml`) and passes a list of build tasks using the `stepList` parameter.
+- The `build.yml` template dynamically includes the steps defined in the `build_tasks` parameter.
+
+```yaml
+#azure-pipelines.yml
+
+trigger:
+- main
+
+jobs:
+  - job: build
+    displayName: 'Build .NET Core Application'
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - checkout: self
+
+      - template: build.yml
+        parameters:
+          build_tasks:
+            - task: DotNetCoreCLI@2
+              displayName: 'Restore'
+              inputs:
+                command: 'restore'
+                projects: '**/*.csproj'  
+
+            - task: DotNetCoreCLI@2
+              displayName: 'Build'
+              inputs:
+                command: 'build'
+                arguments: '--no-restore'
+                projects: '**/*.csproj' 
+
+  - job: deploy
+    displayName: 'Pack for Azure App Service deployment'
+    dependsOn: build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - download: current
+        artifact: drop
+```
+
+The `build.yml` template:
+
+- Defines the parameter `build_tasks` with the stepList type and a default empty list.
+- Sets the .NET Core SDK to 6.x. 
+- Iterates over each step in the `build_tasks` parameter.
+- Executes each step defined in the `build_tasks` list.
+
+```yaml
+#build.yml
+
+parameters:
+  - name: build_tasks
+    type: stepList
+    default: []
+
+steps:
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core SDK'
+    inputs:
+      packageType: 'sdk'
+      version: '6.x'
+
+  - ${{ each step in parameters.build_tasks }}:
+      - ${{ step }}
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Publish'
+    inputs:
+      command: 'publish'
+      arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+      projects: '**/*.csproj'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
 ```
 
 

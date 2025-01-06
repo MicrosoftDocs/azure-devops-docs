@@ -54,7 +54,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
    
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}'"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"TeamName", "TeamSK"})
     in
         #"Select columns"
@@ -117,7 +117,7 @@ The last step is to create the necessary relationships in Power BI.
 	
 3. In the Manage Relationships dialog:  
 	a. Delete any relationships that might have been automatically detected.   
-	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering).  
+	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Power BI Desktop, Manage Relationships dialog, View To Area](media/ViewToArea.png)

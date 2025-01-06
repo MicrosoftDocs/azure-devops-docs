@@ -2,6 +2,7 @@
 title: Build container images to deploy apps
 description: Build Linux or Windows container images for app deployment using Azure Pipelines.
 ms.topic: quickstart
+ms.custom: linux-related-content
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
 ms.date: 01/23/2024
 monikerRange: '>=azure-devops-2020'
@@ -192,7 +193,7 @@ This command creates an image equivalent to one built with the Docker task. Inte
 
 ### Can I reuse layer caching during builds on Azure Pipelines?
 
-If you're using Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine, based on the image generated from [**azure-pipelines-image-generation** repository](https://github.com/actions/runner-image) templates. These virtual machines are cleaned up after the job completes. This ephemeral lifespan prevents reusing these virtual machines for subsequent jobs and the reuse of cached Docker layers. As a workaround, you can set up a multi-stage build that produces two images and pushes them to an image registry at an early stage. You can then tell Docker to use these images as a cache source with the `--cache-from` argument. 
+If you're using Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine, based on the image generated from [**azure-pipelines-image-generation** repository](https://github.com/actions/runner-images) templates. These virtual machines are cleaned up after the job completes. This ephemeral lifespan prevents reusing these virtual machines for subsequent jobs and the reuse of cached Docker layers. As a workaround, you can set up a multi-stage build that produces two images and pushes them to an image registry at an early stage. You can then tell Docker to use these images as a cache source with the `--cache-from` argument. 
 
 If you're using self-hosted agents, you can cache Docker layers without any workarounds because the ephemeral lifespan problem doesn't apply to these agents. 
 

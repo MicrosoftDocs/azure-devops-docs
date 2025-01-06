@@ -76,7 +76,7 @@ variables:
   # Web app name
   webAppName: 'web-app-name'
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'ubuntu-20.04'
   # Environment name
   environmentName: 'environment-name'
   # Root folder under which your composer.json file is available.
@@ -154,7 +154,7 @@ To use a PHP version other than the default, the symlink can be pointed to that 
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-20.04'
 
 variables:
   phpVersion: 8.2

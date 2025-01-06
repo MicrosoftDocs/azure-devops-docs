@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/08/2024
+ms.date: 09/25/2024
 ---
 
 # What is Azure Boards?
@@ -41,9 +41,9 @@ The following table lists some of the benefits of using Azure Boards.
 
 |Benefit |Details  |
 |---------|---------|
-|Start simply, scale as you grow     | Azure Boards offers predefined work item types for tracking features, user stories, bugs, and tasks, making it easy to start using your product backlog or Kanban board. It supports different [Agile methods](../plans/agile-culture.md), so you can implement the method that suits you best. You can add teams as your organization grows to give them the autonomy to track their work as they see fit.        |
-|Use visual, interactive tools     | Visual tools help teams quickly see and share progress with [Kanban boards](../boards/kanban-quickstart.md), [product backlogs](../backlogs/create-your-backlog.md), [built-in scrum boards and planning tools](../sprints/scrum-overview.md), and [delivery plans](../plans/review-team-plans.md).        |
-|Customize easily   |Easily [configure and customize](../configure-customize.md) Kanban boards, Taskboards, and delivery plans through the user interface, as well as add [custom fields, work item types, and portfolio backlogs](../../organizations/settings/work/inheritance-process-model.md).         |
+|Start simply, scale as you grow     | Azure Boards offers predefined work item types for tracking features, user stories, bugs, and tasks, making it easy to start using your product backlog or board. It supports different [Agile methods](../plans/agile-culture.md), so you can implement the method that suits you best. You can add teams as your organization grows to give them the autonomy to track their work as they see fit.        |
+|Use visual, interactive tools     | Visual tools help teams quickly see and share progress with [Boards](../boards/kanban-quickstart.md), [product backlogs](../backlogs/create-your-backlog.md), [built-in scrum boards and planning tools](../sprints/scrum-overview.md), and [delivery plans](../plans/review-team-plans.md).        |
+|Customize easily   |Easily [configure and customize](../configure-customize.md) boards, Taskboards, and delivery plans through the user interface, as well as add [custom fields, work item types, and portfolio backlogs](../../organizations/settings/work/inheritance-process-model.md).         |
 |Use built-in social tools and communication   |  [Work item forms](../work-items/about-work-items.md#work-item-form-controls) provide built-in discussion that you can use to capture questions, notes, and communication as they occur. You can maintain a history of what a team decides on any particular work item. You can also quickly bring a team member or an entire team into the conversation [by using @mentions](../../organizations/notifications/at-mentions.md).        |
 |Capture information, generous cloud storage   | Work items are designed to track all the information you need. You can edit in rich text, drag and drop inline images, and add larger attachments - up to 60 MB and as many as 100. Also, you can [link work items](../backlogs/add-link.md) within a hierarchy or by simple related links. Each work item form maintains a history of changes, so you can review what changed, who made the change, and when.        |
 |Find what you need quickly and get notified of changes   | Azure Boards provides easy-to-use tools to help you quickly find specific work items as your project grows. You can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes, use pivot views to show work items assigned to you, use the [query engine](../queries/query-field-value.md) to filter work items based on any field, and use ad-hoc search with quick inline filters. You can also personalize your alerts for work items that are changed or assigned to you.        |
@@ -57,7 +57,7 @@ For more information, see our Training module, [What is Azure Boards?](/training
 
 ## Connect Azure Boards to GitHub
 
-You can connect Azure Boards with GitHub repositories to link GitHub commits, pull requests, and issues to work items. Use GitHub for software development and Azure Boards to plan and track work. Quickly open linked GitHub commits, pull requests, or issues from the Kanban board. For more information, see [GitHub & Azure Boards](../github/index.md).   
+You can connect Azure Boards with GitHub repositories to link GitHub commits, pull requests, branches, and issues to work items. Use GitHub for software development and Azure Boards to plan and track work. Quickly open linked GitHub commits, pull requests, or issues from the board. For more information, see [GitHub & Azure Boards](../github/index.md).   
 
 For more information, see [About default processes and process templates](../work-items/guidance/choose-process.md).
 
@@ -92,6 +92,21 @@ A team in Azure Boards is a group of project members who work in a specific prod
 :::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" alt-text="Conceptual image of team tools":::   
 
 Azure Boards integrates with popular chat tools such as [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) through ChatOps. It also offers extensions that add new capabilities to your projects and can be found in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). These extensions can help with planning and tracking work items, sprints, scrums, and other project management tasks, as well as collaboration among team members. 
+
+## New Azure Boards
+
+You might notice some changes in the user experience of Azure Boards. These updates are part of the new Azure Boards, designed to provide a faster interface, improve accessibility, and ensure consistency with other areas of the product.
+
+### What to expect
+
+The core functionality of Azure Boards remains the same. It still contains the features you know and love such as Boards, Backlogs, Sprints, Queries, and Delivery Plans. However, the user experience is refined to align with the rest of Azure DevOps. User interface changes include increased spacing between elements and strategically placed scroll bars to enhance accessibility.
+
+We understand that adjusting to changes can take time, and to ease the transition, we also introduced some [new features](https://devblogs.microsoft.com/devops/new-boards-hub-rollout-update-2) exclusive to the updated Azure Boards.
+
+### Provide feedback
+
+If you find some issues above and beyond spacing and cosmetic, please [provide your feedback](../../../docs/user-guide/provide-feedback.md) to our product team.
+
 
 ## Related articles
 

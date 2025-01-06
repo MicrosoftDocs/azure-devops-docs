@@ -1,0 +1,104 @@
+### YamlMime:Landing
+
+title: Managed DevOps Pools documentation
+summary: Managed DevOps Pool is a fully managed service where VMs or containers powering the agents will live in a Microsoft Azure subscription and not in your own Azure subscription.
+
+metadata:
+  title: Managed DevOps Pools documentation
+  titleSuffix: Azure DevOps 
+  description: Managed DevOps Pool is a fully managed service where VMs or containers powering the agents will live in a Microsoft Azure subscription and not in your own Azure subscription.
+  ms.topic: landing-page 
+  ms.date: 11/13/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is Managed DevOps Pools?
+            url: overview.md
+          - text: Compare with Azure Virtual Machine Scale Set agents
+            url: migrate-from-scale-set-agents.md
+      - linkListType: quickstart
+        links:
+          - text: Azure portal
+            url: quickstart-azure-portal.md
+          - text: ARM template
+            url: quickstart-arm-template.md
+          - text: Azure CLI
+            url: quickstart-azure-cli.md
+  - title: Configure Managed DevOps Pools
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Configure prerequisites
+            url: prerequisites.md
+          - text: Configure pool settings
+            url: configure-pool-settings.md
+          - text: Configure scaling
+            url: configure-scaling.md
+          - text: Configure networking
+            url: configure-networking.md
+          - text: Configure additional storage
+            url: configure-storage.md
+          - text: Configure images
+            url: configure-images.md
+          - text: Configure security settings
+            url: configure-security.md
+          - text: Configure Identity
+            url: configure-identity.md
+  - title: Key concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Architecture overview
+            url: architecture-overview.md
+          - text: Demands
+            url: demands.md
+  - title: Reference guidance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: .NET
+            url: /dotnet/api/overview/azure/devops-infrastructure
+          - text: ARM template
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
+          - text: Azure CLI
+            url: /cli/azure/service-page/managed%20devops%20pools
+          - text: Bicep
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
+          - text: Java
+            url: /java/api/overview/azure/devops-infrastructure
+          - text: JavaScript
+            url: /javascript/api/overview/azure/devops-infrastructure
+          - text: Python
+            url: /python/api/overview/azure/devops-infrastructure
+          - text: REST
+            url: /rest/api/devopspools
+          - text: Terraform
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Monitor
+            url: monitor-pool.md
+          - text: Diagnostic logs
+            url: diagnostics.md
+          - text: Troubleshooting
+            url: troubleshooting.md
+          - text: Reliability
+            url: reliability-managed-devops-pools.md
+  - title: Manage costs
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Pricing
+            url: pricing.md
+          - text: Manage costs
+            url: manage-costs.md

@@ -8,8 +8,6 @@ ms.date: 05/17/2024
 
 # Agent software version 3
 
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
@@ -27,7 +25,6 @@ The following operating systems are supported by the 3.x agent.
 
 * **Linux**
   * x64
-    * CentOS 7, 8
     * Debian 10+
     * Fedora 36+
     * openSUSE 15+
@@ -48,11 +45,12 @@ The following operating systems are supported by the 3.x agent.
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
+    * macOS 14.0 "Sonoma"
   * ARM64
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
-    * Note: Not all Azure Pipelines tasks have been updated to support ARM64 yet
+    * macOS 14.0 "Sonoma"
 * **Windows**
   * Client OS
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
@@ -70,7 +68,6 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 
 | System/Distribution | Version not supported by .NET 6 |
 |---------------------|---------------------------------|
-| CentOS | < 7 |
 | Debian | <= 4.9 |
 | Fedora | <= 32 |
 | RedHat Enterprise Linux | <= 6 |
@@ -127,7 +124,7 @@ You don't have to install .NET 6 on your agent machine before installing and con
 
 The version of .NET used to run the 3.x agent is self-contained in the agent installation, and isn't used to build your code. The version of .NET that is used to build your code depends on the pipeline and the version or versions of .NET you have installed onto your agent machine. 
 
-### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
+### I use Azure DevOps Server and not Azure DevOps Services. Does this change impact me?
 
 Yes, if you are using any of the versions of Azure DevOps Server listed in the following section.
 
@@ -135,7 +132,19 @@ The pipelines team recommends that you update your agent machines to newer opera
 
 ### Does Azure DevOps Server support the 3.x agent
 
-Azure DevOps Server versions support the version of the agent that is deployed with that version. The following versions of Azure DevOps Server include a version of the 3.x agent that is supported for that Azure DevOps Server version. To get the 3.x agent installed in your Azure DevOps Server installation, update your Azure DevOps Server version to one of the following versions.
+Azure DevOps Server versions support the version of the agent that is deployed with that version. The following table lists each [supported Azure DevOps Server version](/azure/devops/server/install/servicing#supported-versions) and its supported agent version.
+
+| Azure DevOps Server version | Agent version |
+|-----------------------------|---------------|
+| [Azure DevOps Server 2022.2](/azure/devops/server/release-notes/azuredevops2022u2) | 3.238.0 |
+| [Azure DevOps Server 2020.1.2](/azure/devops/server/release-notes/azuredevops2020u1) | 3.225.0 |
+| [Azure DevOps Server 2019.1.2](/azure/devops/server/release-notes/azuredevops2019u1) | 3.225.0 |
+
+Azure DevOps Server is serviced through security or servicing patches that provide targeted cumulative bug fixes for existing features in the product. For the best and most secure product experience, we strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, from the [Azure DevOps Server download page](/azure/devops/server/download/azuredevopsserver).
+
+After installing an Azure DevOps Server update or new version, [update your agents](/azure/devops/pipelines/agents/agents#to-update-self-hosted-agents).
+
+The following table lists the versions of Azure DevOps Server that first included a version of the 3.x agent.
 
 * [Azure DevOps Server 2022 Update 2](/azure/devops/server/release-notes/azuredevops2022u2)
 * [Azure DevOps Server 2022 Update 1](/azure/devops/server/release-notes/azuredevops2022u1)

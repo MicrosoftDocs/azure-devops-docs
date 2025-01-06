@@ -15,9 +15,9 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Git repo forks are useful when people want to make experimental, risky, or confidential changes to a codebase, but those changes need to be isolated from the codebase in the original repo. A new fork is basically a clone of the original repo pushed to a new remote repo. The fork is independent of the original repo, and is a complete copy unless you specify a single branch.
+Git repo forks are useful when people want to make experimental, risky, or concealed changes to a codebase, but those changes need to be isolated from the codebase in the original repo. A new fork is basically a new remote repo that shares the source code of the original repo.
 
-As an independent copy, changes you make to your fork, such as adding commits or branches, aren't shared with the original repo. If you want to merge your codebase changes into the original repo, you must create a [pull request](pull-requests.md) (PR) to request review and approval of those changes.
+As an independent version, changes you make to your fork, such as adding commits or branches, are hidden from the original repo. If you want to merge your codebase changes into the original repo, you must create a [pull request](pull-requests.md) (PR) to request review and approval of those changes.
 
 The forking process doesn't transfer any permissions, policies, or build pipelines from the original repo to your fork.
 
@@ -123,7 +123,7 @@ git remote set-url upstream <clone URL>
 
 ## Push local changes to your fork
 
-When you fork, you create a personal and independent copy of the remote repo. So, there's nothing to prevent you from working directly in the `main` branch of the local clone and then pushing that work to the `main` branch of your fork. However, it's generally better to use [feature branches](git-branching-guidance.md#use-feature-branches-for-your-work) for your work. By using feature branches:
+When you fork, you create a personal version of the original repository (original repository is referred as "upstream"). Fork is independent from the upstream, but fork shares the code and retains a link to the upstream, allowing for future synchronization. So, there's nothing to prevent you from working directly in the `main` branch of the local clone and then pushing that work to the `main` branch of your fork. However, it's generally better to use [feature branches](git-branching-guidance.md#use-feature-branches-for-your-work) for your work. By using feature branches:
 
 - You can maintain multiple, independent workstreams simultaneously.
 
@@ -152,7 +152,7 @@ In Azure Repos, to merge into the original repo the changes that you pushed to y
    For more information about how to create a PR using your browser, Visual Studio, or the Azure DevOps CLI, see [Create a PR](pull-requests.md#create-a-pull-request).
 
    >[!IMPORTANT]
-   >Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission on the upstream repo can open a PR to it. If the upstream repo has a PR build [pipeline](../../pipelines/repos/azure-repos-git.md) that's configured to run on PR creation, a build will run on the changes introduced by your PR.
+   >Anyone in Project Valid Users and with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission on the upstream repo can open a PR to it. If the upstream repo has a PR build [pipeline](../../pipelines/repos/azure-repos-git.md) that's configured to run on PR creation, a build will run on the changes introduced by your PR.
 
 1. For your PR to complete, all required reviewers must approve the PR changes and all target branch policies must be met. On PR approval and [completion](complete-pull-requests.md#complete-a-pull-request), the changes in the PR source branch will merge into the PR target branch.
 

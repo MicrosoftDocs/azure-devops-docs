@@ -15,47 +15,43 @@ ms.date: 10/20/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With team's configured and working backlogs and boards, you're ready to start viewing and monitoring progress. 
+With your teams' backlogs and boards properly configured and operational, you're now ready to begin viewing and monitoring progress effectively.
 
-Azure Boards provides many in-context charts and dashboard widgets that allow you to monitor and report on various SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
+Azure Boards offers various in-context charts and dashboard widgets that enable you to track and report on key SAFe® metrics. Specifically, Azure Boards provides access to the following tools to help teams derive SAFe® metrics and monitor and report progress:
 
-- Roll up columns on backlogs 
-- In-context reports 
-- Managed query charts such as pie, bar, stacked bar, trend, and pivot
-- Dashboard widgets 
-- Team and project dashboards 
-- Analytic Views to support Power BI reports 
-- OData queries to use with Power BI reports 
+- **Roll-up columns on backlogs:** Aggregate and visualize work items across multiple backlogs.
+- **In-context reports:** Access detailed reports directly within your work items.
+- **Managed query charts:** Utilize various chart types such as pie, bar, stacked bar, trend, and pivot to analyze data.
+- **Dashboard widgets:** Customize your dashboards with widgets that display pertinent metrics and information.
+- **Team and project dashboards:** Create comprehensive dashboards tailored to specific teams and projects.
+- **Analytic views for Power BI reports:** Use Analytic Views to integrate Azure Boards data with Power BI for advanced reporting.
+- **OData queries for Power BI reports:** Use OData queries to fetch data for Power BI, enabling rich data visualization and analysis.
 
-For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md). Another backlog tool is Forecast which teams can use in their iteration planning. 
+For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md). Another essential backlog tool is **Forecast**, which teams can utilize during their iteration planning sessions.
 
-In this tutorial, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe® metrics 
+## View progress rollup
 
->[!div class="checklist"]      
-> - Progress reports
-> - Cumulative Flow Diagram 
-> - Lead time and cycle time charts
-> - Iteration planning, team velocity, and forecast
-
-[!INCLUDE [temp](../includes/note-safe-articles.md)]
-
-
-## View progress rollup 
-
-Quick progress views are available from each team's backlog through rollup columns. Here's an example that shows progress based on completion of child work items.  
+With your teams' backlogs and boards properly configured and operational, you can now effectively view and monitor progress through rollup columns in each team's backlog. The following example illustrates progress based on the completion of child work items.
 
 > [!div class="mx-imgBorder"]  
-> ![Rollup progress bars](../backlogs/media/rollup/progress-by-work-items.png) 
+> ![Screenshot shows rollup progress bars.](../backlogs/media/rollup/progress-by-work-items.png) 
 
-Other rollup options include progress by specific work item types, progress by story points, count of work items, or sum of a numeric field. For more information, see [Display rollup progress or totals](../backlogs/display-rollup.md). 
+In addition to tracking completion of child work items, other rollup options include:
+
+- **Progress by specific work item types:** Monitor progress based on different categories of work items.
+- **Progress by story points:** Track the total story points completed versus planned.
+- **Count of work items:** Keep a tally of work items completed within a specific timeframe.
+- **Sum of a numeric field:** Aggregate numerical data related to work items for comprehensive analysis.
+
+For more detailed information on configuring and displaying rollup progress or totals, refer to [Display Rollup Progress or Totals](../backlogs/display-rollup.md).
 
 
 ## View team velocity 
 
-Each team has access to their velocity through the in-context velocity report. These reports show a bar chart count of planned, completed, completed late, and incomplete work items for the last six or more iterations. As shown in the example below, the chart also provides the average velocity calculated for the number of iterations shown. 
+Each team has access to their velocity through the in-context velocity report. These reports show a bar chart count of planned, completed, completed late, and incomplete work items for the last six or more iterations. As shown in the following example, the chart also provides the average velocity calculated for the number of iterations shown. 
 
 > [!div class="mx-imgBorder"]  
-> ![Velocity](media/safe/velocity-story-points.png)  
+> ![Screenshot shows velocity story points.](media/safe/velocity-story-points.png)  
 
 This average can be used to forecast work by plugging it into the forecast tool. 
 
@@ -64,18 +60,18 @@ This average can be used to forecast work by plugging it into the forecast tool.
 By assigning Story Points to each User Story, a team can determine how much work they can complete using the Forecast tool. For details on its usage, see [Forecast your product backlog](../sprints/forecast.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Forecast tool](../sprints/media/forecast-s125.png)
+> ![Screenshot shows Forecast tool.](../sprints/media/forecast-s125.png)
 
 ## View the Cumulative Flow Diagram (CFD) 
 
 Each Azure Boards backlog and board provide configurable CFD views. So each team at every level of SAFe® implementation can monitor progress using these built-in charts. 
 
-The following image shows an example CFD chart for User Stories with all Kanban columns displayed. 
+The following image shows an example CFD chart for User Stories with all columns displayed. 
 
 > [!div class="mx-imgBorder"]  
-> ![CFD chart](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
+> ![Screenshot shows CFD chart.](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
-Teams can use their CFD to identify bottlenecks and monitor the batch size of work in their various Kanban states. 
+Teams can use their CFD to identify bottlenecks and monitor the batch size of work in their various states. 
 
 In-context CFD charts are quickly accessible from each backlog and board view. Also, CFD charts can be added to team and project dashboards. For more information, see [View/configure a Cumulative Flow Diagram](../../report/dashboards/cumulative-flow.md).  
 
@@ -84,8 +80,8 @@ In-context CFD charts are quickly accessible from each backlog and board view. A
 
 Other metrics that teams use are derived from the Lead time and cycle time charts. These charts can be added to a team dashboard and monitored to learn the following information: 
 
-- Lead time: Days on average to complete deliverables from date created
-- Cycle time: Days on average to complete deliverables from date work started
+- **Lead time**: Days on average to complete deliverables from date created
+- **Cycle time**: Days on average to complete deliverables from date work started
 - Number of outliers 
  
 Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information and provide several interactive elements. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
@@ -116,23 +112,21 @@ Program teams can review roadmaps of the deliverables of their Agile Release Tea
 You can expand each feature team to see details. Story deliverables are assigned to the PI 1 sprints. Delivery Plans are fully interactive, allowing you to drag and drop work items to update their sprint assignments, or open work items to update fields, add comments, and other information. 
 
 > [!div class="mx-imgBorder"]  
-> ![Plans, Fiber Suite App team deliverables](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
+> ![Screenshot shows Plans, Fiber Suite App team deliverables.](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
 
 ### Review the portfolio features deliverable 
 
 Portfolio teams can review the Features under development by their program teams. For example, Features under development by the Fiber Suite team are shown in the following delivery plan view. The Features under development show up under the Program Increment timeboxes.  
  
 > [!div class="mx-imgBorder"]  
-> ![Plans, Portfolio feature deliverables](media/safe-metrics/plan-portfolio-fiber-suite.png) 
-
+> ![Screenshot shows Plans, Portfolio feature deliverables.](media/safe-metrics/plan-portfolio-fiber-suite.png) 
 
 ### Review feature timeline roadmaps 
 
 The feature timeline tool provides another view into progress of deliverables. Here we show the Fabrikam Team's Epics as shown in the Feature Timeline tool. Progress bars are configurable based on completed stories or effort.  
 
 > [!div class="mx-imgBorder"]  
-> ![Feature Timeline, Portfolio feature deliverables](media/safe-metrics/feature-timeline-fabrikam-team.png) 
-
+> ![Screenshot shows Feature Timeline, Portfolio feature deliverables.](media/safe-metrics/feature-timeline-fabrikam-team.png) 
 
 <!---
 
@@ -156,5 +150,3 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 ## Related articles
 
 - [Review team Delivery Plans](review-team-plans.md) 
-
-

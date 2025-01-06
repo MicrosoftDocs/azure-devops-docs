@@ -50,7 +50,7 @@ To view work items assigned to you across projects, choose the :::image type="ic
 > [!div class="mx-imgBorder"]  
 > ![View work assigned to you across projects](media/projects-page/view-work-across-projects.png) 
 
-To view work items assigned to you for a specific project, [open **Work>Work Items>Assigned to Me**](../../boards/work-items/view-add-work-items.md). 
+To view work items assigned to you for a specific project, [open **Boards>Work items>Assigned to me**](../../boards/work-items/view-add-work-items.md). 
 
 
 ::: moniker-end

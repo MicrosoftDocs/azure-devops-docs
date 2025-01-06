@@ -45,11 +45,7 @@ Auditing service available in all geographies and to all customers.
 
 ### Conditional Access Policy support for device state
 
-Azure DevOps to honor any conditional access policies that include [devihttps://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-conditions#device-state-previewce state]conditions. 
-
-### Access events for PAT, SSH will be available in the Auditing Log
-
-Usage of (Personal Access Tokens) PATs, SSH keys, or OAuth for signing in to the service for an API call will be added to the Auditing log.
+Azure DevOps to honor any conditional access policies that include [device state conditions](/azure/active-directory/conditional-access/concept-conditional-access-conditions#device-state-preview). 
 
 ## Artifacts
 

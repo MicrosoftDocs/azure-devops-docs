@@ -1,6 +1,6 @@
 ---
 ms.service: azure-devops-test-plans
-ms.author: rbatra
+ms.author: jeom
 author: raviLiftr
 ms.topic: include
 ms.date: 07/13/2021
@@ -28,6 +28,6 @@ ms.date: 07/13/2021
 	- To delete or restore test-based work items, you must have the **Delete and restore work items** permission set to **Allow**.  
 	- To permanently delete test-based work items, you must have the **Permanently delete work items** permission set to **Allow**.  
 
-To learn more, see [Manual test access and permissions](../manual-test-permissions.md). 
+For more information, see [Manual test access and permissions](../manual-test-permissions.md). 
 
 

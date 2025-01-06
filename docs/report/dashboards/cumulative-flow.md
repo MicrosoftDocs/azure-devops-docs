@@ -18,7 +18,7 @@ ms.date: 04/04/2022
 
 ::: moniker range=">= azure-devops-2019" 
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts: the in-context report you can view from a team backlog or Kanban board and the CFD widget you can add to a dashboard. 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts: the in-context report you can view from a team backlog or board and the CFD widget you can add to a dashboard. 
 
 ::: moniker-end
 
@@ -64,7 +64,7 @@ Use this article to learn how to:
 
 
 
-The CFD shows the count of items in each Kanban column for the selected time period. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
+The CFD shows the count of items in each column for the selected time period. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
 
 
 ::: moniker range=">= azure-devops-2020" 
@@ -87,7 +87,7 @@ The CFD shows the count of items in each Kanban column for the selected time per
 
 ::: moniker-end
 
-For the CFD to provide useful information, you'll want to update the status of work items to reflect progress as it occurs. You can quickly make these updates through your [Kanban board](../../boards/boards/kanban-quickstart.md). 
+For the CFD to provide useful information, you'll want to update the status of work items to reflect progress as it occurs. You can quickly make these updates through your [board](../../boards/boards/kanban-quickstart.md). 
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -164,7 +164,7 @@ CFD reports are available for each backlog level, both product and portfolio bac
 
 1. Next, select **View full report** for the Cumulative Flow Diagram.  
 
-1. Use the interactive controls to select the time frame, swimlanes, and workflow states or Kanban board columns. You can select a rolling period of 14 days or up to 180 days.  
+1. Use the interactive controls to select the time frame, swimlanes, and workflow states or board columns. You can select a rolling period of 14 days or up to 180 days.  
 
 	Hover over a point in time to show how many work items are in a particular state. The default setting for the Cumulative Flow Diagram-Average work in progress includes completed work items since the team started tracking work. 
 
@@ -222,12 +222,12 @@ Each team can set their preferences for the in-context cumulative flow charts.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Board settings](media/cfd/open-cfd-settings-new-nav.png)
 
-	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban boards and CFD charts.  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the boards and CFD charts.  
 
 2. Select **Cumulative flow** and specify the team's preferences.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Kanban board, Common configuration dialog, Cumulative flow](media/cfd/settings-cumulative-flow-dialog.png)	
+	> ![Board, Common configuration dialog, Cumulative flow](media/cfd/settings-cumulative-flow-dialog.png)	
 
 ::: moniker-end  
 
@@ -243,7 +243,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range=">= azure-devops-2020" 
 
-1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
+1. If you haven't yet configured your board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
 1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](./add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
 
@@ -260,7 +260,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range="azure-devops-2019"
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md), do that now.  
-1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
+1. If you haven't yet configured your board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
 1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](./add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
 

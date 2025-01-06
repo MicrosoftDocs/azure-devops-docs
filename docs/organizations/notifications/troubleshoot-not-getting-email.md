@@ -80,8 +80,8 @@ Recipients who don't have permission to view the artifact, don't receive an emai
 
 ## Known issue
 
-If a subscription was created or last modified by a user who lost permissions to the project, then the notifications for that subscription won't be delivered and will be filtered silently.
+If a subscription was created or last modified by a user who lost permissions to the project, then the notifications for that subscription get filtered silently and don't get delivered.
 
 ## Contact customer support
 
-If you're not able to resolve the issue with the previous steps, consider contacting [customer support](troubleshoot-contact-support.md)
+If you're not able to resolve the issue with the previous steps, consider contacting [customer support](../../user-guide/provide-feedback.md).

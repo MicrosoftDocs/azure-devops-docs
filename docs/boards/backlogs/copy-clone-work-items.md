@@ -9,16 +9,21 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/26/2024
+ms.date: 09/09/2024
 ---
 
 # Copy or clone work items and more
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-There are two types of copy functions you can use. The first is to copy or duplicate a single work item, referred to as [copy or clone](#copy-or-clone-a-work-item). The second function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard.
+There are two types of copy functions you can use:
+
+- **Copy or clone a single work item:** To duplicate a single work item, use the "Create copy of a work item" feature. Depending on the options you choose, this process can be considered either a [copy or a clone](#copy-or-clone-a-work-item).
+- **Copy a list of work items:** To copy a list of work items, multi-select a list of work items and use the "Copy as HTML" or "Copy to clipboard" feature.
 
 [!INCLUDE [temp](../includes/image-differences.md)]
+
+## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -26,14 +31,18 @@ There are two types of copy functions you can use. The first is to copy or dupli
 
 ## Copy or clone a work item
 
-**Copy** a work item when you want to create a new work item that's a duplicate of an existing one. When you copy a work item, you create a new work item with a new ID, but the fields of the new work item are prepopulated with the same values as the original work item. You can then modify the fields of the new work item as needed. A related link to the original work item gets created and any parent link is copied over. No history or attachments are copied over from the original work item.
+**Copy** a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed. A related link to the original work item and any parent link are copied over, but history and attachments are not.
 
-**Clone** a work item when you want to create an exact copy of an existing work item, including all the fields and attachments, but with a new ID. Cloning is useful when you want to create a new work item that's the same as an existing one, with no field modifications needed.
+**Clone** a work item to create an exact copy of an existing work item, including all fields and attachments, but with a new ID. Cloning is useful when no field modifications are needed.
 
-In other words, **copy** a work item to create a new work item with prepopulated values that you can adjust, and **clone** a work item to create an exact copy.
+In summary, **copy** a work item to adjust prepopulated values, and **clone** a work item to create an exact duplicate.
+
+::: moniker range="< azure-devops"
 
 > [!NOTE]
-> Some fields might get copied, depending on the on-premises version you're working with and how you customized your work item types. If the work item type of the work item that you clone has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field gets copied. The current system out-of-box templates have this rule defined, which was added to TFS 2018 and later versions.
+> Some fields might get copied depending on your on-premises version and customizations. If the work item type you clone lacks a state transition rule to clear the *Closed By* field when the *State* is **New** or **Active**, that field gets copied. Current system out-of-box templates include this rule.
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -45,7 +54,7 @@ In other words, **copy** a work item to create a new work item with prepopulated
 
     :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
 
-	Optionally, check one or more of the boxes:
+	**Choose options:**
  
 	- **Include existing links**: To include all **Related** and external links in the copied work item. A **Related** link gets created automatically for the work item copied, and included in the **Discussion** section. There's no method for disabling this feature.  
 	- **Include existing attachments**: To include attachments in the copied work item
@@ -53,10 +62,10 @@ In other words, **copy** a work item to create a new work item with prepopulated
 
 	> [!NOTE]
 	> - When you copy the work item to a different project, **Include child work items** is disabled. 
-	> - When you copy a work item and choose to **Include child work items**, a copy is made of each child work item and linked to the copied work item through a Parent-Child link. 
+	> - When you copy a work item and choose to **Include child work items**, a copy gets made of each child work item and linked to the copied work item through a parent-child link. 
 	> - The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update.
 
-3. In the work item form that opens, update other fields as needed. All work items start in the New state.
+3. In the work item form that opens, update other fields as needed. Select **OK**. All work items start in the "New" state.
 
 ::: moniker-end
 
@@ -82,7 +91,7 @@ In other words, **copy** a work item to create a new work item with prepopulated
 ::: moniker-end
 
 > [!TIP]
-> Copied or cloned work items always have an ID that is greater than the work items from which they were copied or cloned.
+> Copied or cloned work items always have a higher ID than the original work items.
 
 ## Change the work item type
 
@@ -131,9 +140,9 @@ In Visual Studio, right-select the work item tab to copy the URL. The URL opens 
 
 ## Related articles
 
-- [Prepopulate fields using work item templates](work-item-template.md)
-- [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md) 
+- [Prepopulate fields with work item templates](work-item-template.md)
+- [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md)
 - [Bulk modify work items](bulk-modify-work-items.md)
-- [Move work items and change the work item type](move-change-type.md)
+- [Move work items and change their type](move-change-type.md)
 - [Remove, delete, or restore work items](remove-delete-work-items.md)
-- [Azure Boards FAQs](../faqs.yml)
+- [Access Azure Boards FAQs](../faqs.yml)

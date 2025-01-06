@@ -50,7 +50,7 @@ jobs:
             strategy: $(strategy.name)
             percentage: $(strategy.increment)
             manifests: 'manifest.yml'
-      postRouteTaffic:
+      postRouteTraffic:
         pool: server
         steps:          
         - script: echo monitor application health...  
@@ -63,9 +63,8 @@ jobs:
           - script: echo checks passed, notify...
 
 ```
-The canary strategy for Kuberenetes will first deploy the changes with 10% pods followed by 20% while monitoring the health during *postRouteTraffic*. If all goes well, it will promote to 100%. 
+The canary strategy for Kubernetes will first deploy the changes with 10% pods followed by 20% while monitoring the health during *postRouteTraffic*. If all goes well, it will promote to 100%. 
 
-We are looking for early feedback on support for VM resource in environments and performing rolling deployment strategy across multiple machines. [Contact us](mailto:rm_customer_queries@microsoft.com?subject=VMResourcePrivateBeta) to enroll.
 
 ### Approval policies for YAML pipelines
 

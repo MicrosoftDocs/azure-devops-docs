@@ -5,10 +5,11 @@ ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: how-to
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 02/26/2024
+date: 10/10/2024
 ---
 
 # Add a custom pipelines task extension
@@ -44,7 +45,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 > The dev machine must run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of `azure-pipelines-task-lib`. Update your task.json file as per the following command:
 >```
 >"execution": {
->    "Node16": {
+>    "Node20_1": {
 >      "target": "index.js"
 >    }
 >  }
@@ -150,7 +151,7 @@ Now that the scaffolding is complete, we can create our custom task.
         }
     ],
     "execution": {
-        "Node": {
+        "Node20_1": {
             "target": "index.js"
         }
     }
@@ -179,7 +180,7 @@ Now that the scaffolding is complete, we can create our custom task.
     run();
    ```
 
-4. Enter "tsc" from the `buildandreleasetask` folder to compile an `index.js` file from `index.ts`.
+4. To compile an `index.js` file from `index.ts`, enter "tsc" from the `buildandreleasetask` folder.
 
 #### task.json components
 
@@ -195,7 +196,7 @@ See the following descriptions of some of the components of the `task.json` file
 | `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
 | `groups`             | Describes the logical grouping of task properties in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
-| `execution`          | Execution options for this task, including scripts.                                                                         
+| `execution`          | There are multiple execution options for this task, including scripts, like `Node`, `PowerShell`, `PowerShell3`, or `Process`.                                                                       
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 
 > [!NOTE]
@@ -306,9 +307,9 @@ Do unit tests to quickly test the task script, and not the external tools that i
    The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
 
 
-4. Add the following example success test to your `_suite.ts` file to run the task mock runner.
+4. To run the task mock runner, add the following example success test to your `_suite.ts` file.
 
-    ```typescript
+   ```typescript
         it('should succeed with simple inputs', function(done: Mocha.Done) {
         this.timeout(1000);
 
@@ -328,7 +329,7 @@ Do unit tests to quickly test the task script, and not the external tools that i
             done(error); // Ensure the test case fails if there's an error
         });
     });
-    ```
+   ```
 
 5. Create a `failure.ts` file in your test directory as your task mock runner with the following contents:
 
@@ -347,24 +348,24 @@ Do unit tests to quickly test the task script, and not the external tools that i
 
    The failure test validates that when the tool gets bad or incomplete input, it fails in the expected way with helpful output.
 
-6. Add the following code to your `_suite.ts` file to run the task mock runner.
+6. To run the task mock runner, add the following code to your `_suite.ts` file.
 
     ```typescript
-    it('it should fail if tool returns 1', function(done: Mocha.Done) {
+    it('should fail if tool returns 1', function(done: Mocha.Done) {
         this.timeout(1000);
     
-        let tp = path.join(__dirname, 'failure.js');
-        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+        const tp = path.join(__dirname, 'failure.js');
+        const tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
     
-        tr.run();
-        console.log(tr.succeeded);
-        assert.equal(tr.succeeded, false, 'should have failed');
-        assert.equal(tr.warningIssues.length, 0, "should have no warnings");
-        assert.equal(tr.errorIssues.length, 1, "should have 1 error issue");
-        assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
-        assert.equal(tr.stdout.indexOf('Hello bad'), -1, "Should not display Hello bad");
-    
-        done();
+        tr.runAsync().then(() => {
+            console.log(tr.succeeded);
+            assert.equal(tr.succeeded, false, 'should have failed');
+            assert.equal(tr.warningIssues.length, 0, 'should have no warnings');
+            assert.equal(tr.errorIssues.length, 1, 'should have 1 error issue');
+            assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
+            assert.equal(tr.stdout.indexOf('Hello bad'), -1, 'Should not display Hello bad');
+            done();
+        });
     });
     ```
 
@@ -391,7 +392,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
    
 **Don't create this file in the buildandreleasetask folder.**
 
-[!code-javascript[JSON](../_data/extension-build-tasks.json)]
+[!Code-javaScript[JSON](../_data/extension-build-tasks.json)]
 
 >[!NOTE]
 > Change the **publisher** to your publisher name. For more information, see [Create a publisher](#createpublisher).
@@ -477,7 +478,7 @@ Share it with your organization so that you can install and test it.
 Right-select your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 > [!IMPORTANT]
-> Publishers must be verified to share extensions publicly. To learn more, see [Package/Publish/Install](../publish/overview.md).
+> Publishers must be verified to share extensions publicly. For more information, see [Package/Publish/Install](../publish/overview.md).
 
 Now that your extension is shared in the Marketplace, anyone who wants to use it must install it.
 
@@ -485,7 +486,7 @@ Now that your extension is shared in the Marketplace, anyone who wants to use it
 
 ## 6. Create a build and release pipeline to publish the extension to Marketplace
 
-Create a build and release pipeline on Azure DevOps to help maintain the custom task on the Marketplace.
+To maintain the custom task on the Marketplace, create a build and release pipeline on Azure DevOps.
 
 ### Prerequisites
 
@@ -520,7 +521,7 @@ Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudi
 Pipeline library variable group
    :::column-end:::
    :::column span="2":::
-Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-variable-groups-in-pipelines) within this group in your pipeline. Also, declare the following variables in the variable group:
 
 - `publisherId`: ID of your marketplace publisher</br>
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
@@ -700,7 +701,7 @@ To run unit tests, add a custom script to the package.json file like the followi
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
 1. Add the "npm" task with the "install" command and target the folder with the package.json file.
 1. Add the "Bash" task to compile the TypeScript into JavaScript. 
-1. Add the "Query Extension Version" task to query the existing extension version. Use the following inputs:
+1. To query the existing version, add the "Query Extension Version" task using the following inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace (Service connection): Service Connection
     - Publisher ID: ID of your Visual Studio Marketplace publisher
@@ -708,9 +709,9 @@ To run unit tests, add a custom script to the package.json file like the followi
     - Increase version: Patch
     - Output Variable: Task.Extension.Version
 
-1. Add the "Package Extension" task to package the extensions based on manifest Json. Use the following inputs:
+1. To package the extensions based on manifest Json, add the "Package Extension" task using the following inputs:
     - Root manifests folder: Points to root directory that contains manifest file. For example, $(System.DefaultWorkingDirectory) is the root directory
-    - Manifest file(s): vss-extension.json
+    - Manifest file: vss-extension.json
     - Publisher ID: ID of your Visual Studio Marketplace publisher
     - Extension ID: ID of your extension in the vss-extension.json file
     - Extension Name: Name of your extension in the vss-extension.json file
@@ -718,7 +719,7 @@ To run unit tests, add a custom script to the package.json file like the followi
     - Override tasks version: checked (true)
     - Override Type: Replace Only Patch (1.0.r)
     - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public
-1. Add the "Copy files" task to copy published files. Use the following inputs:
+1. To copy to published files, add the "Copy files" task using the following inputs:
     - Contents: All of the files to be copied for publishing them as an artifact
     - Target folder: The folder that the files get copied to
        - For example: $(Build.ArtifactStagingDirectory)
@@ -732,7 +733,7 @@ To run unit tests, add a custom script to the package.json file like the followi
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
 
-1. Add the "Download build artifacts" task to download the artifacts onto a new job. Use the following inputs:
+1. To download the artifacts onto a new job, add the "Download build artifacts" task using the following inputs:
     - Download artifacts produced by: If you're downloading the artifact on a new job from the same pipeline, select "Current build." If you're downloading on a new pipeline, select "Specific build."
     - Download type: Choose "Specific artifact" to download all files that were published.
     - Artifact name: The published artifact's name.
@@ -764,6 +765,7 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## FAQs
+
 See the following frequently asked questions (FAQs) about adding custom build or release tasks in extensions for Azure DevOps.
 
 ### Q: How can I restrict Azure Pipelines commands usage for task?
@@ -810,9 +812,49 @@ A: The pipeline agent sends `SIGINT` and `SIGTERM` signals to the relevant child
 
 A: We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, [bump the task version](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and [mark the task as deprecated](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
-### Q: How can I upgrade a task to the latest Node?
+### Q: How can I upgrade my custom task to the latest Node?
 
-A: We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 16](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md).
+A: We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 20](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode20.md).
+
+Microsoft Hosted agents and various Azure DevOps Server versions have different life cycles, leading to different Node runner versions being installed depending on where a task is running. To ensure compatibility across agents with different Node runner versions, the **task.json** file can include multiple execution sections. In the following example, Azure Pipeline agents with the Node 20 runner use it by default, while agent without it fall back to the Node 10 implementation.
+
+```nodejs
+  "execution": {
+    "Node10": {
+      "target": "bash.js",
+      "argumentFormat": ""
+    },
+    "Node20_1": {
+      "target": "bash.js",
+      "argumentFormat": ""
+    }
+```
+
+To upgrade your tasks:
+
+* To ensure your code behaves as expected, test your tasks on the various Node runner versions.
+* In your task's execution section, update from `Node` or `Node10` to `Node16` or `Node20`.
+* To support older server versions, you should leave the `Node`/`Node10` target. Older Azure DevOps Server versions might not have the latest Node runner version included.
+* You can choose to share the entry point defined in the target or have targets optimized to the Node version used.
+
+   ```nodejs
+   "execution": {
+     "Node10": {
+       "target": "bash10.js",
+       "argumentFormat": ""
+   },
+   "Node16": {
+     "target": "bash16.js",
+     "argumentFormat": ""
+   },
+   "Node20_1": {
+     "target": "bash20.js",
+     "argumentFormat": ""
+   }
+   ```
+   
+> [!IMPORTANT]
+> Not adding support for the Node 20 runner on your custom tasks will cause tasks to fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
 
 ## Related articles
 

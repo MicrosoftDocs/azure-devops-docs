@@ -7,14 +7,15 @@ ms.subservice: azure-devops-projects
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
-monikerRange: '>= azure-devops-2020'
-ms.date: 10/18/2023
+monikerRange: '<= azure-devops'
+ms.date: 10/08/2024
 ---
 
 # Manage preview features 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -25,7 +26,7 @@ As some new features get introduced, you can turn them on or off. You can try th
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="< azure-devops"
 
 As some new features get introduced, you can turn them on or off. You can try them out, provide feedback, and work with the ones that meet your requirements. Some preview features provide access to new functionality, while others reflect a change to the user interface, but little or no change in functionality. 
 
@@ -46,7 +47,7 @@ Enabling a feature at the organization level activates it for all users. They ca
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="< azure-devops"
 
 1. Open your profile menu by choosing your image icon and select **Manage features**.  
 
@@ -76,15 +77,15 @@ When you turn on a feature at the project or collection-level, you turn it on fo
 
 ::: moniker range="azure-devops"
 
-The following table shows the preview features you can turn on or off based on your role: user or team member, or for the organization. Only Project Collection Administrators can manage organization-level features. 
+The following table lists the preview features that you can turn on or off based on your role: user, team member, or organization. Only Project Collection Administrators can manage organization-level features.
 
 |**Preview features**|**Per user**|**Per organization**|
 |--------------------|--------------|-----------------|
-|[Pull Request Summary - Load of large files](#pull-request-summary)  | ✔️ |   |   
+|[Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files)  | ✔️ |   |   
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
 |New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
-|[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
+|[New Boards Hubs](../../boards/work-items/quick-ref.md) | ✔️ | ✔️ |
 |[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |
 | New Settings Search in the organization settings panel| ✔️ |✔️   |    
 |[New workflow identity authentication option](../../pipelines/library/connect-to-azure.md)| ✔️ | ✔️ |    
@@ -98,9 +99,9 @@ The following table shows the preview features you can turn on or off based on y
 
 ::: moniker-end
 
-:::moniker range="azure-devops-2020"
+::: moniker range="azure-devops-2020"
 
-The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
+The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
 
 |**Feature**|**User**|**Project** | **Collection**|
 |--------------------|--------------|-----------------||-----------------|
@@ -109,15 +110,27 @@ The following table shows the features you can turn on or off based on your role
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2022"
 
-<a id="pull-request-summary">  </a>
+You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You can turn on or off the [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download) feature on a per project or collection basis.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2022"
 
 ## Pull request summary - Load of large files
 
 Turns on a file content load experience for large files in the Pull request summary.
 
-<a id="experimental-themes">  </a>
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Experimental themes  
 
@@ -190,7 +203,13 @@ The following features are generally available for Azure DevOps.
 
 ::: moniker-end
 
+## Transition of Preview Features to General Availability
+
+While there's no fixed timeline for when a preview feature will move to general availability (GA), there are several indicators and resources you can use to stay informed about the status of preview features:
+
+- **Azure DevOps roadmap and release notes:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. For more information, see the Relevant Links section at [Azure DevOps Blog](https://devblogs.microsoft.com/devops/). 
+- **Azure DevOps blog:** The Azure DevOps blog often features posts about new releases, including when preview features transition to GA. Subscribing to the blog or regularly checking it can help you stay updated. For more information, see [Azure DevOps Blog](https://devblogs.microsoft.com/devops/).
+
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)

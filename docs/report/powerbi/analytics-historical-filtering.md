@@ -24,7 +24,7 @@ The following table describes the entity sets that you can use to create histori
 
 |`EntitySet`  |   **Description** | **Sample report** |
 |------------|-------------|-------------|  
-|[**WorkItemBoardSnapshot**](../analytics/entity-reference-boards.md#kanban-board-properties-fields) |(Composite) The state of each work item on each calendar date, including Kanban board location. | [Cumulative Flow Diagram (CFD) sample report](sample-boards-cfd.md) |
+|[**WorkItemBoardSnapshot**](../analytics/entity-reference-boards.md#kanban-board-properties-fields) |(Composite) The state of each work item on each calendar date, including board location. | [Cumulative Flow Diagram (CFD) sample report](sample-boards-cfd.md) |
 |[**WorkItemRevisions**](../analytics/entity-reference-boards.md#property-names-fields)|All historic work item revisions, including the current revision. Doesn't include deleted work items. | [Return the history of a specific work item](../extend-analytics/analytics-recipes.md#history)   | 
 |[**WorkItemSnapshot**](../analytics/entity-reference-boards.md#property-names-fields)|(Composite) The state of each work item on each calendar date. |[Bug trends sample report](sample-boards-bugtrend.md)   |   
 |[**ParallelPipelineJobsSnapshot**](../analytics/entity-reference-pipelines.md#parallelpipelinejobssnapshot)|(Composite) Supports understanding of parallel pipeline consumption.  |    | 
@@ -62,7 +62,7 @@ If you want all the dates since the `{startDate}` inclusive, add the following f
 You use the `WorkItemRevisions` entity set to load all the revisions for a given work item. The query returns all historic work item revisions, including the current revision, for the work items you filter on. It doesn't include deleted work items. 
 
 > [!TIP]  
-> To create a work tracking trend report, create or modify a default **Analytics view** and specify the time frame of interest in the **History** tab. To learn more, see [Create an Analytics view](../powerbi/analytics-views-create.md).
+> To create a work tracking trend report, create or modify a default **Analytics view** and specify the time frame of interest in the **History** tab. For more information, see [Create an Analytics view](../powerbi/analytics-views-create.md).
 
 
 Both [Analytics views](./what-are-analytics-views.md) and the [Burndown and Burnup widgets](../dashboards/configure-burndown-burnup-widgets.md) let you configure filters that scope the data set to your needs. You apply filters to scope the data to specific teams, work item types, or backlogs. Filters may also apply to specific properties or fields and their corresponding values. For example, you can apply filters on work items to return only bugs defined for the *Fabrikam Voice* team and that are tagged with *Customer*.  
@@ -139,7 +139,7 @@ With Analytics disabled or removed, the following actions occur:
 - No staging jobs are run, and the Analytics tables won't have updated information.  
 - Table data is deleted, and if Analytics is re-enabled, all data will be repopulated from scratch.
 
-To learn more, see [Install or enable the Analytics service](../dashboards/analytics-extension.md).
+For more information, see [Install or enable the Analytics service](../dashboards/analytics-extension.md).
 
 ::: moniker-end
 

@@ -27,10 +27,12 @@ To access the security overview for your organization, navigate to **Organizatio
 
 :::image type="content" source="media/security-overview-risk.png" lightbox="media/security-overview-risk.png" alt-text="Screenshot of Risk tab in security overview for an organization."::: 
 
-Under the **Coverage** tab, security overview shows all repositories in your enterprise, regardless of their enablement status. 
+Under the **Coverage** tab, security overview shows all repositories in your enterprise, regardless of their enablement status. For any repositories that have Advanced Security enabled, a breakdown of each tool is also included:
 
 :::image type="content" source="media/security-overview-coverage.png" lightbox="media/security-overview-coverage.png" alt-text="Screenshot of Coverage tab in security overview for an organization."::: 
 
-By hovering on a specific repository, security overview directs you to that repository's settings pane where you can enable Advanced Security. To learn more about configuring Advanced Security features, refer to [Configure GitHub Advanced Security](configure-github-advanced-security-features.md).
+Dependency scanning, code scanning, and secret scanning alerts are enabled once a SARIF result file has been successfully submitted to Advanced Security. In other words, a successful scan regardless of alert discovery on any branch for a repository lights up coverage for that particular tool and repository. The enablement status doesn't consider recency of the scan. 
+
+Hovering on a specific repository and selecting the cog icon directs you to that repository's settings pane where you can enable Advanced Security. For more information about configuring Advanced Security features, see [Configure GitHub Advanced Security](configure-github-advanced-security-features.md).
 
 :::image type="content" source="media/enable-github-advanced-security.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::

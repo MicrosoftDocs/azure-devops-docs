@@ -149,7 +149,7 @@ The Audit logs will contain an entry similar to the following.
 [
     {
         "Id": "2517368925862632546;00000264-0000-8888-8000-000000000000;839ad1ba-f72b-4258-bc3f-88be7a4553b5",
-        "CorrelationId": "8392d1ba-f76b-4258-bc3f-88be7a4553b5",
+        "CorrelationId": "aaaa0000-bb11-2222-33cc-444444dddddd",
         "ActivityId": "a298a06c-965f-4e60-9643-2593f2066e37",
         "ActorCUID": "fe950802-bf07-755b-826d-e8dcc066252c",
         "ActorUserId": "fe950802-bf07-755b-826d-e8dcc066252c",
@@ -183,9 +183,6 @@ The Audit logs will contain an entry similar to the following.
 ```
 
 In addition, it will show up in the Audit UI.
-
-> [!div class="mx-imgBorder"]
-> ![Log entry in Audit UI](../../media/212-pipelines-02.png)
 
 ### Task library exposes Agent hosting model
 

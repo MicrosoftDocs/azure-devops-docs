@@ -33,7 +33,7 @@ ms.date: 10/19/2022
    `Project, CHANGE_PROCESS`
    :::column-end:::
    :::column span="2":::
-   When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../../settings/work/manage-process.md).  
+   When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. For more information, see [Create and manage inherited processes](../../settings/work/manage-process.md).  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -47,8 +47,9 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="4":::
+   
    > [!NOTE]   
-   > All users granted Stakeholder access can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. To learn more, see [Stakeholder access quick reference](../stakeholder-access.md).
+   > All users granted Stakeholder access can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. For more information, see [Stakeholder access quick reference](../stakeholder-access.md).
    > Although the **Create tag definition**  permission appears
    > in the security settings at the project-level,
    > tagging permissions are actually collection level permissions that are scoped
@@ -65,7 +66,7 @@ ms.date: 10/19/2022
     `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
-   Can add and remove test results and add or modify test runs. To learn more, see [Control how long to keep test results](../../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../../test/run-manual-tests.md). 
+   Can add and remove test results and add or modify test runs. For more information, see [Control how long to keep test results](../../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../../test/run-manual-tests.md). 
    :::column-end:::
 :::row-end:::
 :::row:::

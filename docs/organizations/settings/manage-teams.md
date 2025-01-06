@@ -1,14 +1,14 @@
 ---
 title: Manage teams, configure team tools 
 titleSuffix: Azure DevOps
-description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
+description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, boards, and more in Azure DevOps. 
 ms.subservice: azure-devops-settings
 ms.custom: teams
 ms.author: chcomley
 author: chcomley
-ms.topic: overview
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms.date: 01/05/2024
+ms.date: 11/12/2024
 ---
 
 # Manage and configure team tools
@@ -27,12 +27,11 @@ Team administrators perform the following tasks for team tools:
 
 ## Prerequisites
 
-- To perform any team configuration task, you must be a team administrator for the team to be modified, or be a member of the **Project Administrators** group. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).  
-- To add a team, you must be a member of the **Project Administrators** group. For more information, see [Add teams](add-teams.md).
+**Permissions:** 
+- To manage teams, be a [team administrator](add-team-administrator.md) or be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
+- To add a team, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. For more information, see [Add teams](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
-
-::: moniker range=">= azure-devops-2019"
 
 ## Open your team profile
 
@@ -76,9 +75,9 @@ After project administrators add the project's area and iteration paths using [S
 Settings include making the following associations for each team:  
 
 - **Select team area paths**   
-	Can select the default area path(s) associated with the team. These settings affect many Agile tools available to the team.	
+	Can select the default area paths associated with the team. These settings affect many Agile tools available to the team.	
 - **Select team iteration paths or sprints** 
-	Can select the default area path(s) associated with the team. These settings affect many Agile tools available to the team. 
+	Can select the default area paths associated with the team. These settings affect many Agile tools available to the team. 
  
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
 [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
@@ -89,7 +88,7 @@ For more information, see [Define area paths and assign to a team](set-area-path
 
 As a team administrator, you have the flexibility to customize your team's workflow to suit your needs. One way to do so is by choosing which backlog levels are active for your team. For instance, a feature team might only want to display the product backlog, while a management team might prefer to show the feature and epic backlogs only. Also, you can choose how to treat bugs within your workflow, either as user stories and requirements or as tasks.
 
-Another way to customize your team's workflow is by selecting non-working days for the team. By doing so, sprint planning and tracking tools can automatically take these days off into account when calculating capacity and sprint burndown.
+Another way to customize your team's workflow is by selecting nonworking days for the team. By doing so, sprint planning and tracking tools can automatically take these days off into account when calculating capacity and sprint burndown.
 
 Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location. You can also [set team automation rules to update work items when child item states change](../../boards/work-items/automate-work-item-state-transitions.md).
 
@@ -98,7 +97,7 @@ Most of these team settings can be easily configured from the common configurati
 ::: moniker range=">= azure-devops-2022"
 
 1. Check that you selected the correct project, and then choose **Boards** > **Boards**, and select the correct team from the team selector dropdown menu. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md).
-   :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the kanban board.":::
+   :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the board.":::
 
 2. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
@@ -115,9 +114,9 @@ Most of these team settings can be easily configured from the common configurati
 1. Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
+	> ![Open board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
 
-2. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+2. Make sure that you select the team backlog or board that you want to configure using the team selector. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
 3. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]
@@ -135,7 +134,7 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end  
 
-Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Kanban overview](../../boards/boards/kanban-overview.md) and [Kanban quickstart](../../boards/boards/kanban-quickstart.md).
+Team administrators have complete control over customizing their team's boards for both the product and portfolio backlogs. To set up a board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Board overview](../../boards/boards/kanban-overview.md) and [Board quickstart](../../boards/boards/kanban-quickstart.md).
 
 For detailed information on each configuration option, you can explore the following articles:
 
@@ -173,13 +172,13 @@ For detailed information on each configuration option, you can explore the follo
 
 ::: moniker range=">= azure-devops-2020" 
 
-Similar to Kanban boards, you can customize each sprint taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
+Similar to boards, you can customize each sprint Taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020" 
 
-Similar to Kanban boards, each sprint taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
+Similar to boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
@@ -201,7 +200,7 @@ By default, all team members can add and edit team dashboards. In addition, team
 
 ::: moniker range=">= azure-devops-2020"
 
-Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1024 px, and then we resize to 200 x 200.
+Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1,024 px, and then we resize to 200 x 200.
 
 
 ![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)
@@ -216,7 +215,7 @@ Team settings also include the team name, description, and team profile image. T
 
 ## Manage notifications 
 
-Team administrators have the ability to add and edit alerts, allowing the team to receive email notifications as changes occur to work items, code reviews, source control files, and builds. Various alerts are pre-defined for each team. For more information, see [Manage team alerts](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
+Team administrators have the ability to add and edit alerts, allowing the team to receive email notifications as changes occur to work items, code reviews, source control files, and builds. Various alerts are predefined for each team. For more information, see [Manage team alerts](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 
 :::image type="content" source="media/manage-notifications.png" alt-text="Screenshot of highlighted Notifications button.":::
 

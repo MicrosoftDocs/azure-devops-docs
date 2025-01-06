@@ -21,7 +21,7 @@ To sign up for all Azure DevOps Services, see [Sign up, sign in to Azure DevOps]
 
 ## Prerequisites
 
-You must have the latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.
+**Browser**: Have the latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.
 
 ## Sign-up 
 
@@ -125,7 +125,7 @@ For more information about changing your project settings, see the following art
 	- **Project name**: Can't contain special characters (such as /: \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. 
 	- **Visibility**: Choose **Public** if you want to create an open-source project. Otherwise, choose **Private**, so only people who you give access to can view your project. 
 
-1. Your next step is to start using your Kanban board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project.  
+2. Your next step is to start using your board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project.  
 
 
 > [!NOTE]   
@@ -218,10 +218,10 @@ If you signed up for Azure DevOps with an existing Microsoft account or GitHub i
 	- **Project name**: Can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. 
 	- **Visibility**: Choose **Public** if you want to create an open-source project. Otherwise, choose **Private**, so only people who you give access to can view your project. 
 	
-2. Your Kanban board automatically appears. You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
+2. Your board automatically appears. You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Kanban board](media/track-issues/issues-board-new-item.png)
+	> ![board](media/track-issues/issues-board-new-item.png)
 
 	
 

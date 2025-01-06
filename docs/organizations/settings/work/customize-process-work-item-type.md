@@ -94,7 +94,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 > [!NOTE]    
 > Disabling a WIT removes the WIT from the **New** drop down and add experiences. Creating a work item of that WIT is also blocked via REST APIs.  
 >
-> No changes are made to existing work items of that type. You can update or delete them and they continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
+> No changes are made to existing work items of that type. You can update or delete them and they continue to appear on backlogs and boards. Both work item types need to be enabled in order to do a change type operation.
 
 <a id="destroy">  </a>
 

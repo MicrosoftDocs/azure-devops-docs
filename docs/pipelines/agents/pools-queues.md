@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 04/05/2024
+ms.date: 08/30/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,6 +15,9 @@ monikerRange: '<= azure-devops'
 ::: moniker range="= azure-devops"
 
 An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
+
+> [!NOTE]
+> Managed DevOps Pools agent pools are managed in the Azure Portal. If you're using Managed DevOps Pools, see [Create your first Managed DevOps Pool](../../managed-devops-pools/quickstart-azure-portal.md).
 
 ::: moniker-end
 
@@ -103,7 +106,7 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 ### Manage pools and queues
 
-#### [Browser](#tab/browser)
+#### [Azure Pipelines UI](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
@@ -117,9 +120,13 @@ If you are a project team member, you create and manage agent pools from the age
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
+To delete a pool, go to the **Agent pools** list, choose **More options**, **Delete**.
+
+:::image type="content" source="media/agent-pool-delete.png" alt-text="Screenshot of deleting an agent pool.":::
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="azure-devops"
 
 [List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [Show agent queue details](#show-agent-queue-details)
 

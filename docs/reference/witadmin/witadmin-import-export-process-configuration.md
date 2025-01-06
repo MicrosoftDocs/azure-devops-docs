@@ -305,7 +305,7 @@ If you modify the test suite workflow, then you have to make a similar update if
    :::column span="1":::
    To contain the necessary metastate mappings:  
    - Map the start of each workflow state to `type="Proposed"` 
-   - Map each intermediate workflow state you want to have show up on the Kanban board to `type="InProgress"` 
+   - Map each intermediate workflow state you want to have show up on the board to `type="InProgress"` 
    - Map the end of each workflow state to `type="Complete"`  
      You can have only one State mapped to  `type="Complete"`<br/><br/>
      To contain an entry to define the color codes associated with the WIT. For example:  
@@ -380,7 +380,7 @@ If you modify the test suite workflow, then you have to make a similar update if
    
    You can have only one State mapped to `type="Complete"`  
    
-   To learn more, see [Support bug update status using My Work](../xml/support-bug-update-status-using-my-work.md).
+   For more information, see [Support bug update status using My Work](../xml/support-bug-update-status-using-my-work.md).
    :::column-end:::
 :::row-end:::
 :::row:::

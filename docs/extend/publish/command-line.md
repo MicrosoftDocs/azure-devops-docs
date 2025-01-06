@@ -18,28 +18,39 @@ You can use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your ex
 
 For more information, see the overview of [publish, install, and share](./overview.md).
 
-## Prerequisites
+### Prerequisites
 
-Get the TFX CLI from Node Package Manager and generate a personal access token (PAT). Also, if you haven't already, set up a Publisher in the Gallery.
+Get the TFX CLI from Node Package Manager and generate a Microsoft Entra token or a personal access token (PAT). Also, if you haven't already, set up a Publisher in the Gallery.
 
 ### Acquire the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
 
-### Create a personal access token
+### Publish with a Microsoft Entra token as a service principal
+
+It is also possible to publish an extension as a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+
+1. Add the service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
+
+2. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using a service principal. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use its access token:
+```
+tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <ENTRA_TOKEN>
+```
+
+### Publish with a personal access token
 
 [!INCLUDE [Control](../includes/procedures/acquire-pat.md)]
 
-## Publish from the command line
-
-Once TFX CLI is installed and you have your PAT, you can use the tool to package and publish your extension.
+Once TFX CLI is installed and you have your token, you can use the tool to package and publish your extension.
 
 1. Open a command prompt to the root directory of your extension.
-1. Run the following command to publish your extension. When prompted, enter your personal access token to authenticate. 
+1. Run the following command to publish your extension. When prompted, enter your token to authenticate. 
 
 ```Command
 tfx extension publish --publisher <YOUR_PUBLISHER_ID> --manifest-js <YOUR_EXTENSION_MANIFEST> --share-with <ACCOUNT_NAME>
 ```
+
+## Potential Errors
 
 You may receive the following error if your extension has already been published:
 

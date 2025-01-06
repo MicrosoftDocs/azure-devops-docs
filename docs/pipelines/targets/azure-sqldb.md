@@ -73,7 +73,7 @@ param
   [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIp -EndIPAddress $agentIP
+New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIP -EndIPAddress $agentIP
 ```
 
 ### Classic
@@ -91,12 +91,12 @@ $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIP -EndIPAddress $agentIP -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
 function Update-AzureSQLServerFirewallRule{
   $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIP -EndIPAddress $agentIP -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
 if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $FirewallRuleName -ErrorAction SilentlyContinue) -eq $null)
@@ -170,11 +170,21 @@ steps:
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
-- task: CmdLine@2
-  displayName: Run Sqlcmd
+- task: PowerShell@2
   inputs:
-    filename: sqlcmd
-    arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+    targetType: 'inline'
+    script: |
+      if (-not (Get-Module -ListAvailable -Name SqlServer)) {
+          Install-Module -Name SqlServer -Force -AllowClobber
+      }
+  displayName: 'Install SqlServer module if not present'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+    Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
+  displayName: 'Run SQL script'
 
 - task: AzurePowerShell@5
   displayName: 'Azure PowerShell script'
@@ -188,19 +198,27 @@ steps:
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use an [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
-- Second, use a [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-- Third, use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
+1. Use the [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
 
-:::image type="content" source="media/classic-sql.png" alt-text="A screenshot showing a classic pipeline to run SQL script.":::
+1. Use the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to invoke SQLCMD and execute your scripts. Add the following inline script to your task:
+
+    ```PowerShell
+    if (-not (Get-Module -ListAvailable -Name SqlServer)) {
+      Install-Module -Name SqlServer -Force -AllowClobber
+    }
+
+    Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
+    ```
+
+1. Use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
+
+    :::image type="content" source="media/sql-add-firewall-rules.png" alt-text="A screenshot displaying a classic pipeline to add firewall rules and run SQL scripts.":::
 
 * * *
 
@@ -267,7 +285,7 @@ In your release pipeline, you can implement various checks and conditions to con
 * Configure **gates** as a pre-condition for deployment to a stage.
 * Specify conditions for a task to run.
 
-To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
+For more information, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
 ## More SQL actions
@@ -308,7 +326,7 @@ SqlPackage.exe /action:Extract /tf:"<Target location of dacpac file>"
 **Example:**
 
 ```command
-SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net.placeholder"
  /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
@@ -332,7 +350,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Publish /TargetServe
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb4" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
@@ -356,7 +374,7 @@ SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /S
 **Example:**
 
 ```command
-SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net.placeholder"
 /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
@@ -380,7 +398,7 @@ SqlPackage.exe /SourceFile:"<Bacpac file location>" /Action:Import /TargetServer
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
@@ -404,7 +422,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:DeployReport /Target
 **Example:**
 
 ```command
-SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\deployReport.xml" 
 ```
 
@@ -428,7 +446,7 @@ SqlPackage.exe /Action:DriftReport /TargetServerName:"<ServerName>.database.wind
 **Example:**
 
 ```command
-SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net" /TargetDatabaseName:"Testdb"
+SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net.placeholder" /TargetDatabaseName:"Testdb"
 /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\driftReport.xml"
 ```
 
@@ -452,7 +470,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Script /TargetServer
 **Example:**
 
 ```command
-SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net"
+SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net.placeholder"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\test.sql"
 /Variables:StagingDatabase="Staging DB Variable value"
 ```

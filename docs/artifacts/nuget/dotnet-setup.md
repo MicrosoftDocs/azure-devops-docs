@@ -77,6 +77,8 @@ Using Azure Artifacts, you can seamlessly publish your NuGet packages to Azure A
 
 ::: moniker-end
 
+[!INCLUDE [](../includes/nuget/auth-with-sp.md)]
+
 ## Related articles
 
 - [Publish and restore NuGet packages (NuGet.exe)](publish.md)

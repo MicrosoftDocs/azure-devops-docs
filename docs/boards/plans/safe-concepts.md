@@ -5,7 +5,7 @@ description: Learn how Scaled Agile Framework concepts map to Azure Boards artif
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
 ---
@@ -88,11 +88,7 @@ SAFe® backlogs map to team, program, and portfolio backlogs. Out of the box, th
 
 You can customize your backlog and boards, even adding portfolio backlogs, as described in [Customize Azure Boards, Customize backlogs](safe-customize.md#custom-backlog).  
 
-The Kanban board view of each backlog is configurable by each team. 
-
-
-
-
+The board view of each backlog is configurable by each team. 
 
 <a id="iterations"></a>
 
@@ -126,7 +122,7 @@ You can use tags for a quick and easy way to map Features and Epics to their Val
 
 With tags that you add to work items, you can:
 
-- Filter any backlog or Kanban board
+- Filter any backlog or board
 - Create queries based on tags, and filter query results by tags
 - Create progress and trend charts or reports based on tags 
 
@@ -156,7 +152,7 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 - Objectives
 - Customer-centric practices 
 
-To learn more about the project wiki, see [Share information](#share-information) later in this article. 
+For more information about the project wiki, see [Share information](#share-information) later in this article. 
 
 
 <a id="milestones"></a>

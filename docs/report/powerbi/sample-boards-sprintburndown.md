@@ -23,7 +23,7 @@ However, you can customize a sprint burndown chart using Analytics and Power BI 
  
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-To learn more about burndown and burnup, and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
+For more information about burndown and burnup, and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
  
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -328,7 +328,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
-Doc-ready Power BI Query (anonomized)
+Doc-ready Power BI Query (anonymized)
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? "
         &"$apply=filter( "

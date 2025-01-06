@@ -25,7 +25,7 @@ With Scrum, teams plan and track work at regular time intervals, referred to as 
 
 ## Prerequisites
 
-* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+**Permissions**: To change sprint dates, be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 <a id="quick-start-schedule">   </a>
 
@@ -105,7 +105,7 @@ If you have several teams, more complex release and sprint cadences to schedule,
 ## Schedule new sprints for different teams and release cadences 
  
 > [!NOTE]    
-> Your sprint backlog and taskboard are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
+> Your sprint backlog and taskboard are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
 
 Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, assign start and end dates for your team's sprints.
 

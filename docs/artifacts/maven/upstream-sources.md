@@ -39,7 +39,7 @@ If you checked the *upstream sources* checkbox when creating your feed, Maven Ce
 
 1. Select **Upstream sources**, and then select **Add Upstream**.
 
-1. Select **Public source**, select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu, and then select **Save** when you're done.
+1. Select **Public source**, select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu, and then select **Add** when you're done.
 
     :::image type="content" source="../media/maven-add-upstream.png" alt-text="A screenshot showing how to add Maven central upstream source.":::
 

@@ -17,7 +17,7 @@ ms.date: 11/07/2022
 
 The Analytics service collects all work tracking activity defined and updated through Azure Boards.  Analytics stores as properties all work tracking fields, except for HTML/rich-text and History fields. Custom properties for custom fields are automatically added to  Analytics. 
 
-This article describes the majority of properties that you can use to generate an Analytics report for work tracking. You use a combination of properties to filter a query, aggregate data, or build a report. You can run these queries directly in your browser. To learn more, see [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md). If you're new to work tracking and Azure Boards, we recommend you review the following articles: 
+This article describes the majority of properties that you can use to generate an Analytics report for work tracking. You use a combination of properties to filter a query, aggregate data, or build a report. You can run these queries directly in your browser. For more information, see [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md). If you're new to work tracking and Azure Boards, we recommend you review the following articles: 
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Track user stories, issues, bugs, and other work items in Azure Boards](../../boards/work-items/about-work-items.md)   
 
@@ -33,20 +33,20 @@ When querying Analytics for work tracking data, use one of the following entity 
 Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other entities to filter data or select properties to report on. For a summary of example reports, see [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
  
 > [!NOTE]  
-> To generate status and trend reports on test-specific work item types, query the `WorkItems` and `WorkItemSnapshot` entity types and filter based on the work item type. For information on test runs, test results, or other test data, query the `TestRuns`, `TestPoints`, `TestResultsDaily`, `TestSuite` or `TestPointHistorySnapshot` entity types. To learn more, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
+> To generate status and trend reports on test-specific work item types, query the `WorkItems` and `WorkItemSnapshot` entity types and filter based on the work item type. For information on test runs, test results, or other test data, query the `TestRuns`, `TestPoints`, `TestResultsDaily`, `TestSuite` or `TestPointHistorySnapshot` entity types. For more information, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
 
 |`EntitySet`  | `EntityType`  | Description | 
 |------------|-------------|-------------|  
 |[**Areas**](#areas) | **Area** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
 |[**Dates**](entity-reference-general.md#dates)|**CalendarDate**|The dates used to filter and group other entities using relationships.| 
 |[**Iterations**](#iterations) | **Iteration** |The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |
-|[**BoardLocations**](#kanban-board-properties-fields) |**BoardLocation**|  The Kanban board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| 
+|[**BoardLocations**](#kanban-board-properties-fields) |**BoardLocation**|  The board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each board field, see [Workflow and board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-board-fields).| 
 |[**Processes**](#processes) |**Process** | Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). Supported for Analytics v2.0 version and later. | 
 |[**Projects**](entity-reference-general.md#projects)|**Project** |All projects defined for an organization (cloud) or project collection (on-premises). | 
 |[**Tags**](#tags) | **Tag** |All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | 
 |[**Teams**](#teams) | **Team** |All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | 
 |[**Users**](entity-reference-general.md#users)|**User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | 
-|[**WorkItemBoardSnapshot**](#kanban-board-properties-fields) |**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | 
+|[**WorkItemBoardSnapshot**](#kanban-board-properties-fields) |**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including board location, used to generate trend reports. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | 
 |[**WorkItemLinks**](#workitemlinks)| **WorkItemLink** |The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | 
 |[**WorkItemRevisions**](#property-names-fields) |**WorkItemRevision** |All historic work item revisions, including the current revision. Doesn't include deleted work items. |  
 |[**WorkItemSnapshot**](#property-names-fields) |**WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, used to support trend reporting. For a sample report, see [Bug trends sample report](../powerbi/sample-boards-bugtrend.md).  |   
@@ -59,7 +59,7 @@ There are two work tracking snapshot entity sets: `WorkItemSnapshot` and `WorkIt
 
 A snapshot provides a record of the values defined for a work item each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
 
-To learn more, see [OData query guidelines, Do use weekly or monthly snapshots for trend queries that span a long time period](../extend-analytics/odata-query-guidelines.md#-do-use-weekly-or-monthly-snapshots-for-trend-queries-that-span-a-long-time-period). 
+For more information, see [OData query guidelines, Do use weekly or monthly snapshots for trend queries that span a long time period](../extend-analytics/odata-query-guidelines.md#-do-use-weekly-or-monthly-snapshots-for-trend-queries-that-span-a-long-time-period). 
 
 
 ### About work item revisions
@@ -123,7 +123,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Created Date**<br/>`CreatedDate`<br/>`CreatedDateSK`| DateTime | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display. <br/>`Microsoft.VSTS.Common.CreatedDate`    |  
 |`CreatedDateSK`| Int32 | The date the work item was created, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. | 
 |`CreatedOn` | Navigation | Navigation property to the `Date` entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in ```groupby``` statements. |
-|**Cycle Time Days**<br/>`CycleTimeDays` | Double | Cycle time is calculated from first entering an *In Progress* or *Resolved* state category to entering a *Completed* state category. To learn more, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md). |  
+|**Cycle Time Days**<br/>`CycleTimeDays` | Double | Cycle time is calculated from first entering an *In Progress* or *Resolved* state category to entering a *Completed* state category. For more information, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md). |  
 |**Discipline**<br/>`Discipline` | String | The type of activity or discipline that is assigned to a task. Allowed values are: *Analysis**, **Development**, **Test**, **User Education**, and **User Experience**. (CMMI process) <br/>`Microsoft.VSTS.Common.Activity`   |    
 |**Due Date**<br/>`DueDate` | DateTime | The forecasted due date by which an issue or work item will be resolved. (Agile process)<br/>`Microsoft.VSTS.Scheduling.DueDate`    | 
 | **Effort**<br/>`Effort` | Double | An estimate for the amount of work that a product backlog item (Scrum process) or issue (Basic process) will require to implement. <br/>`Microsoft.VSTS.Scheduling.Effort`  |    
@@ -136,7 +136,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Is Last Revision of Day**<br/>`IsLastRevisionOfDay` | Boolean | Indicates that the snapshot represents the last revision of the day when set to `True`.|  
 |**Is Last Revision of Period**<br/>`IsLastRevisionOfPeriod` | Boolean | Indicates that the snapshot represents the last revision of the period when set to `True`. |  
 |**Issue**<br/>`Issue` | String | Indicates that the shared step is associated with an expected result. Allowed values are **Yes** and **No**. <br/>`Microsoft.VSTS.Common.Issue`   |  
-| **Lead Time Days**<br/>`LeadTimeDays`  | Double | Lead time is calculated from work item creation or entering a *Proposed* state category to entering a *Completed* state category. To learn more, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md).    | 
+| **Lead Time Days**<br/>`LeadTimeDays`  | Double | Lead time is calculated from work item creation or entering a *Proposed* state category to entering a *Completed* state category. For more information, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md).    | 
 |**Original Estimate**<br/>`OriginalEstimate` | Double | A measure of the amount of work that is required to complete a task. <br/>`Microsoft.VSTS.Scheduling.OriginalEstimate`   | 
 |**Parent Work Item Id** <br/>`ParentWorkItemId` | Int32 | The unique ID that identifies the work item linked to as a parent. Useful for generating rollup reports. The **Parent** field is available from Azure DevOps Server 2020 and later versions. Valid for these entity types: `WorkItemRevision` and `WorkItem`. <br/>`System.Parent`   |  
 |**Priority**<br/>`Priority` | Int32 | A subjective rating of the bug, issue, task, or test case as it relates to the business. Values include: - **1**, **2**, or **3**. <br/> `Microsoft.VSTS.Common.Priority` |  
@@ -160,7 +160,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Stack Rank** <br/>`StackRank`  | Double | A number assigned by a system background process used to stack rank or track the sequence of items on a backlog or board. (Agile, Scrum, and Basic processes) <br/>`Microsoft.VSTS.Common.StackRank`  |  
 | **Start Date**<br/>`StartDate`  | DateTime | Date and time assigned to a work item for work to start. <br/>`Microsoft.VSTS.Scheduling.StartDate` | 
 | **State** <br/>`State`  | String | The current state of the work item. The valid values for state are specific to each type of work item and customizations made to it.<br/>`System.State` | 
-|**State Category** <br/>`StateCategory`   | String | State categories determine how Azure Boards and select dashboard widgets treat each workflow state. The state categories in use include:  *Proposed*, *In Progress*, *Resolved*, *Removed*, and *Completed*. To learn more, see [How to use workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). Valid only for the `WorkItemRevision` entity type. |  
+|**State Category** <br/>`StateCategory`   | String | State categories determine how Azure Boards and select dashboard widgets treat each workflow state. The state categories in use include:  *Proposed*, *In Progress*, *Resolved*, *Removed*, and *Completed*. For more information, see [How to use workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). Valid only for the `WorkItemRevision` entity type. |  
 |**State Change Date** <br/>`StateChangeDate` | DateTime | The date and time when the value of the **State** field changed. <br/>`Microsoft.VSTS.Common.StateChangeDate` | 
 |`StateChangeSK`| Int32 | The date the State for a work item was changed, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities.  | 
 |`StateChangeOn` | Navigation | Navigation property to the `Date` entity for the date the State for a work item was changed, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in ```groupby``` statements. | 
@@ -226,7 +226,7 @@ The following two functions are supported for the **WorkItem** entity. These fun
 
 ## BoardLocation and WorkItemBoardSnapshot    
 
-Properties listed and described in the following table are defined for the following entity types, unless specifically noted. With these fields, you can filter work item data based on the status of a work item within a team's Kanban board column, swimlane, or backlog level. 
+Properties listed and described in the following table are defined for the following entity types, unless specifically noted. With these fields, you can filter work item data based on the status of a work item within a team's board column, swimlane, or backlog level. 
 
 - `BoardLocation`
 - `WorkItemBoardSnapshot`  
@@ -235,23 +235,23 @@ For an example that queries the `WorkItemBoardSnapshot` entity set, see [Cumulat
 
 |**Display name**<br/>`Property name` | **Data type** | **Description**<br/>`Reference name` | 
 |-------------------------------------|---------------|--------------------------------------|
-|**Board Id**  <br/>`BoardId` | Guid | The unique GUID assigned to a Kanban board. Each team is associated with one or more Kanban boards.  | 
-|**Board Category Reference Name**<br/>`BoardCategoryReferenceName` | String | The name assigned to the category of work item types used to populate a Kanban board. For example, the product backlog board is associated with the Requirements category. To learn more, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).  | 
-| **Board Name** <br/>`BoardName` | String | The name assigned to the Kanban board. For example, *Stories*, *Backlog Items*, *Features*, and *Epics*.  | 
-|**Board Level**<br/>`BoardLevel` | Int32 | The number assigned to the Kanban board based on where it sits within the hierarchy of Kanban boards.  | 
+|**Board Id**  <br/>`BoardId` | Guid | The unique GUID assigned to a board. Each team is associated with one or more boards.  | 
+|**Board Category Reference Name**<br/>`BoardCategoryReferenceName` | String | The name assigned to the category of work item types used to populate a board. For example, the product backlog board is associated with the Requirements category. For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).  | 
+| **Board Name** <br/>`BoardName` | String | The name assigned to the board. For example, *Stories*, *Backlog Items*, *Features*, and *Epics*.  | 
+|**Board Level**<br/>`BoardLevel` | Int32 | The number assigned to the board based on where it sits within the hierarchy of boards.  | 
 |**Backlog Type** <br/>`BacklogType` | String | The name of the type of backlog. For example, Iteration, Requirement, or Portfolio.   | 
-|**Column Name**<br/>`ColumnName` | String | The name of the Kanban board column that a work item is currently assigned, such as *Active*, **Closed**, **Committed**, **Done**, or other custom column label. <br/> `System.BoardColumn`   | 
-|**Column Order**<br/>`ColumnOrder` | Int32 | The number assigned to the Kanban board column in terms of its sequence within the Kanban board.   |  
+|**Column Name**<br/>`ColumnName` | String | The name of the board column that a work item is currently assigned, such as *Active*, **Closed**, **Committed**, **Done**, or other custom column label. <br/> `System.BoardColumn`   | 
+|**Column Order**<br/>`ColumnOrder` | Int32 | The number assigned to the board column in terms of its sequence within the board.   |  
 |**Done** <br/>`Done` | Enumerated | Indicates the split-column location. Valid values are listed below for [BoardColumnSplit](#boardcolumnsplit-enumerated-members).   | 
-|**Column Item Limit**<br/>`ColumnItemLimit` | Int32 | The number assigned to the Kanban board column in terms of its sequence.  |   
+|**Column Item Limit**<br/>`ColumnItemLimit` | Int32 | The number assigned to the board column in terms of its sequence.  |   
 |**Is Board Visible** <br/>`IsBoardVisible` | Boolean | Indicates if the team has elected to make a board visible or not.  | 
-|**Is Column Split**<br/>`IsColumnSplit`  | Boolean | Indicates if a column has been split into **Doing** and **Done** columns as described in [Split columns on your Kanban board to show work in progress](../../boards/boards/split-columns.md).  | 
+|**Is Column Split**<br/>`IsColumnSplit`  | Boolean | Indicates if a column has been split into **Doing** and **Done** columns as described in [Split columns on your board to show work in progress](../../boards/boards/split-columns.md).  | 
 |**Is Current** <br/>`IsCurrent`  | Boolean | Property that supports filtering the data to view the most recent snapshot of the filtered set of work items by setting the value to `True`. | 
 |**Is Default Lane** <br/>`IsDefaultLane` | Boolean | Property that indicates the work item is assigned to the default swimlane (True) or not (False).  |    
-|**Is Done** <br/>`IsDone` | Boolean | The current assignment of the work item to **Doing** (False) or **Done** (True) within a Kanban column. Only assigned when [split-columns](../../boards/boards/split-columns.md) is enabled for a Kanban board column. <br/>`System.BoardColumnDone`   | 
-|**Lane Id** <br/>`LaneId` | Guid | The unique GUID assigned to a Kanban board swim lane. Each team can add one or more swim lanes to a Kanban board. To learn more about swimlanes, see [Speed up your team's work by using swimlanes in your Kanban board](../../boards/boards/expedite-work.md). | 
-|**Lane Name**<br/>`LaneName` | String | The name assigned to the Kanban board swimlane.<br/>`System.BoardLane`   |  
-|**Lane Order**<br/>`LaneOrder` | Int32 | The number assigned to the Kanban board swimlane in terms of its sequence. | 
+|**Is Done** <br/>`IsDone` | Boolean | The current assignment of the work item to **Doing** (False) or **Done** (True) within a column. Only assigned when [split-columns](../../boards/boards/split-columns.md) is enabled for a board column. <br/>`System.BoardColumnDone`   | 
+|**Lane Id** <br/>`LaneId` | Guid | The unique GUID assigned to a board swim lane. Each team can add one or more swim lanes to a board. For more information about swimlanes, see [Speed up your team's work by using swimlanes in your board](../../boards/boards/expedite-work.md). | 
+|**Lane Name**<br/>`LaneName` | String | The name assigned to the board swimlane.<br/>`System.BoardLane`   |  
+|**Lane Order**<br/>`LaneOrder` | Int32 | The number assigned to the board swimlane in terms of its sequence. | 
  
 ### BoardColumnSplit enumerated members
 
@@ -264,9 +264,9 @@ The following table lists the member names for the `BoardColumnSplit` enumerated
 |`Unknown`              | 2            | Unknown (not split)   |   
 
 
-To learn more about board columns for a team, see the following articles:  
-- [Add columns to your Kanban board to manage your workflow](../../boards/boards/add-columns.md)
-- [Split columns on your Kanban board to show work in progress](../../boards/boards/split-columns.md) 
+For more information about board columns for a team, see the following articles:  
+- [Add columns to your board to manage your workflow](../../boards/boards/add-columns.md)
+- [Split columns on your board to show work in progress](../../boards/boards/split-columns.md) 
 
 ## Areas 
 
@@ -286,7 +286,7 @@ The following properties are valid for the **Areas** entity set, which is associ
 
 Navigation properties for the **Area** entity type and **Areas** entity set include `Project` and `Teams`.  
 
-To learn more about **Area Paths**, see the following articles:  
+For more information about **Area Paths**, see the following articles:  
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) 
 
@@ -311,7 +311,7 @@ The following properties are valid for the **Iterations** entity set, which is a
 
 Navigation properties for the **Iteration** entity type and **Iterations** entity set include `Project` and `Teams`.  
 
-To learn more about **Iteration Paths**, see the following articles:  
+For more information about **Iteration Paths**, see the following articles:  
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
 - [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 
@@ -339,7 +339,7 @@ You can use these properties to filter on work tracking data based on a backlog 
 |**Is Bug Type** | `IsBugType` | Boolean | Indicates if the work item type belongs to the Bug category.   | 
 |**Is Deleted** | `IsDeleted` | Boolean | Indicates if the work item type has been deleted.   |  
 
-To learn more about process backlogs and work item types, see the following articles:  
+For more information about process backlogs and work item types, see the following articles:  
 - [Create and manage inherited processes](../../organizations/settings/work/manage-process.md)
 - [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md) 
 - [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md) 
@@ -353,7 +353,7 @@ A custom category is created when a custom work item type and backlog level are 
 
 ## Tags
 
-The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. To learn more about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
+The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. For more information about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
 You can use these properties to filter or report on work tracking data. 
 
@@ -399,7 +399,7 @@ Query **WorkItemLinks** to report on parent/child, related, predecessor/successo
 
 Navigation properties for the **WorkItemLink** entity type include `Projects`, `SourceWorkItem`, and `TargetWorkItem`.
 
-To learn more about links and link types, see the following articles:  
+For more information about links and link types, see the following articles:  
 - [Use links to view dependencies and track related work](../../boards/backlogs/add-link.md)
 - [Reference guide for link types used in Azure DevOps](../../boards/queries/link-type-reference.md)
 

@@ -68,15 +68,15 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Kanban board quickstart
+          - text: Board quickstart
             url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Kanban board overview
+          - text: Board overview
             url: ./boards/kanban-overview.md
           - text: Add columns
             url: ./boards/add-columns.md
-          - text: Customize your Kanban board
+          - text: Customize your board
             url: ./configure-customize.md
   - title: Implement Scrum
     linkLists:
@@ -110,7 +110,7 @@ landingContent:
         links:
           - text: Connect Azure Boards to GitHub
             url: ./github/connect-to-github.md
-          - text: Link GitHub commits, pull requests, & issues to work items
+          - text: Link GitHub commits, pull requests, & branches to work items
             url: ./github/link-to-from-github.md
       - linkListType: concept
         links:

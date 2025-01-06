@@ -8,7 +8,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ai-usage: ai-assisted
+ms.date: 08/19/2024
 --- 
 
 
@@ -16,182 +17,165 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-Several permissions are set at the organization or collection level. You can grant these permissions by adding a user or group to the **Project Collection Administrators** group. Or, you can grant select collection-level permissions to a custom security group or to a user. 
+This article shows you how to manage permissions at the organization or collection level. Several permissions are set at these levels. You can only grant these permissions if you're a member of the **Project Collection Administrators** group.
  
 ::: moniker range="azure-devops"
-An organization is the container for several projects that share resources. For more information about projects and project collections, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+An organization is the container for several projects that share resources. For more information, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-A project collection is the container for several projects that share resources. For more information about projects and project collections, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
+A project collection is the container for several projects that share resources. For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 ::: moniker-end
 
+You might find the following articles helpful:
 
-See the following articles for related information: 
-
+- [Look up a project collection administrator](look-up-project-collection-administrators.md)
+- [Manage users, groups, and security groups](add-remove-manage-user-group-security-group.md)
 - [Request an increase in permission levels](request-changes-permissions.md)
 - [Change project-level permissions](change-project-level-permissions.md)
-- [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md)
 - [Set object-level permissions](set-object-level-permissions.md)
-- [Look up a project collection administrator](look-up-project-collection-administrators.md)
-- [Look up the organization owner](look-up-organization-owner.md)
 
 [!INCLUDE [hidden-security-groups](./includes/hidden-security-groups.md)]
-
 
 ## Collection-level permissions 
 
 [!INCLUDE [collection-level-permissions](./includes/collection-level-permissions.md)]
 
 > [!NOTE]
-> The permission to add or remove organization or collection-level security groups, add and manage organization or collection-level group membership, and edit collection and project-level permission ACLs is assigned to all members of the **Project Collection Administrator**s group. It isn't controlled by a permissions surfaced within the user interface. 
-
+> **Project Collection Administrators** can manage organization or collection-level security groups, group membership, and edit permission ACLs. This permission isn't controlled through the user interface.
 
 ## Prerequisites
 
-- To manage permissions or groups at the organization or collection level, you must be a member of the **Project Collection Administrators** security group. If you created the organization or collection, you are automatically added as a member of this group. To get added to this group, you need to request permissions from a member of the **Project Collection Administrators** group. See [Look up a project collection administrator](look-up-project-collection-administrators.md).
-- If want to add security groups defined in Microsoft Entra ID or Active Directory, make sure those are first defined. To learn more, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+**Permissions:**
+- To manage permissions or groups at the organization or collection level, be a member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group.
+- **Directory services**: Ensure security groups in Microsoft Entra ID or Active Directory are defined before adding them. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
-
-::: moniker range="azure-devops"  
+::: moniker range="azure-devops"
 > [!NOTE]   
-> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including **Permissions**. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
-> 
-> Also, users granted **Stakeholder** access, won't be able to access select features even if granted permissions to those features. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
+>- Users in the **Project-scoped Users** group can't access most organization settings, including permissions. For more information, see [Manage your organization, limit user visibility for projects, and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+>- Users with **Stakeholder** access can't access specific features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops" 
 > [!NOTE]   
-> Users granted **Stakeholder** access, won't be able to access select features even if granted permissions to those features. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
+> Users with **Stakeholder** access can't access specific features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 ::: moniker-end  
-
 
 <a id="add-user-group"></a>
 
-## Add members to the Project Collection Administrators group 
+## Add members to the Project Administrators group 
 
-You can add users who've been added to a project, organization, or collection to the **Project Collection Administrators** group, or any other group at the organization or collection-level. To add a custom security group, first create the group as described in [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).
-
-Here we show how to add a user to the **Project Collection Administrators** group. The method is similar to adding a Microsoft Entra ID or Active Directory group. 
+Do the following steps to add users to the **Project Administrators** group or any other group at the organization or collection level. To add a custom security group, first [create the group](add-remove-manage-user-group-security-group.md).
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To turn on the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```). 
 
-2. Choose **Organization settings** and then **Permissions**.
+2. Select **Organization settings** > **Permissions**.
 
-    ![Choose Organization settings, and then Permissions](media/permissions/open-project-settings-permissions-preview.png)
+    ![Screenshot showing Organization settings and Permissions selections.](media/permissions/open-project-settings-permissions-preview.png)
 
-3. Choose **Project Administrators** group, **Members**, and then **Add**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Project Settings > Permissions, Add member](media/project-collection/project-admin-members-add-s154.png) 
-
-4. Enter the name of the user account or custom security group into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+3. Select **Project Administrators** group, **Members**, and then **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Add users and group dialog, preview page.](media/project-collection/add-member-project-admin.png)  
+    > ![Screenshot showing Project Settings > Permissions, Add member.](media/project-collection/project-admin-members-add.png) 
 
-5. Choose **Save**. 
+4. Enter the name of the user account or custom security group into the text box and select the matching result. You can enter multiple identities into the **Add users and/or groups** box, and the system automatically searches for matches. Select the appropriate matches. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot showing Add users and group dialog, preview page.](media/project-collection/add-member-project-admin.png)  
+
+5. Select **Save**. 
 
 #### [Current page](#tab/current-page) 
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-2. Choose **Project Settings** and then **Security**.
+2. Select **Project Settings** and then **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
-    [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+    [![Screenshot showing selections, Project Settings and Security.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-3. Choose **Project Administrators** group, **Members**, and then **Add**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of Project Settings>Security, Add member.](media/project-level-permissions-add-member.png) 
-
-4. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+3. Select **Project Administrators** group, **Members**, and then **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Add users and group dialog, current page.](media/project-level-permissions-add-a-user.png)  
+    > ![Screenshot of Project Settings, Security, Add member selections.](media/project-level-permissions-add-member.png) 
 
-5. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
+4. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Select one or more matches. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot showing Add users and group dialog, current page.](media/project-level-permissions-add-a-user.png)  
+
+5. Select **Save changes**. Select the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon and the additions reflect.  
 
 * * *
 
 ::: moniker-end 
 
+::: moniker range="< azure-devops"
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+1. Open the web portal and choose the collection where you want to add users or groups.
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+2. Select **Collection Settings** > **Security**.
 
-2. Choose **Project Settings** and then **Security**.
+    [![Screenshot of Project Settings, Security selection.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-    *To see the full image, click to expand*.
-
-    [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
-
-1. Choose **Project Administrators** group, **Members**, and then **Add**.  
+3. Select **Project Administrators** > **Members** > **Add**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Security, Add member](media/project-level-permissions-add-member.png) 
+    > ![Screenshot of Project Settings>Security, Add member selection sequence.](media/project-level-permissions-add-member.png) 
 
-1. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+4. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Select one or more matches. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Add users and group dialog, on-premises.](media/project-level-permissions-add-a-user.png)  
+    > ![Screenshot of Add users and group dialog, on-premises.](media/project-level-permissions-add-a-user.png)  
 
-1. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
+5. Select **Save changes** and the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
 
 ::: moniker-end 
 
-
-
-
 ## Change permissions for a group 
 
-You can change the permissions for any organization or collection-level group, except the **Project Collection Administrators** group. You can add security groups to a collection in a similar manner to adding a security group to a project. See [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). To understand permission assignments and inheritance, see [About permissions, Permission states](about-permissions.md#permission-states).
- 
+You can change the permissions for any organization or collection-level group, except the **Project Collection Administrators** group. Adding security groups to a collection is similar to adding them to a project. For more information, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md) and [About permissions, Permission states](about-permissions.md#permission-states).
     
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To turn on the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open the **Permissions** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
+1. Go to the **Permissions** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
 
 	> [!NOTE]   
-	> You can't change the permission settings for the **Project Collection Administrators** group. This is by design. 
+	> By design, you can't change the permission settings for the **Project Collection Administrators** group.
 
-2. From the **Permissions** page, choose the group whose permissions you want to change. 
+2. Choose the group whose permissions you want to change. 
 
-    For example, here we choose the **Stakeholders Limited** group, and change several permissions.  
+    In the following example, we choose the **Stakeholders Limited** group, and change several permissions.  
 
-	:::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-group.png" alt-text="Screenshot of Collection-level Prmissions for a selected group, preview page.":::  
+	:::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-group.png" alt-text="Screenshot of Collection-level Permissions for a selected group, preview page.":::  
 
-    Your changes are automatically saved. 
+    Your changes automatically save. 
 
- 
 #### [Current page](#tab/current-page) 
 
-1. Open the **Security** page as described in the previous section, [Add a user or group to the Project Collection Administrators group](#add-user-group). 
+1. Go to the **Security** page as described in the previous section, [Add a user or group to the Project Collection Administrators group](#add-user-group). 
 
-1. From the **Security** page, choose the group whose permissions you want to change. 
+1. Choose the group whose permissions you want to change. 
 
-    For example, here we choose the **Stakeholders Limited** group, and change several permissions.  
+    In the following example, we choose the **Stakeholders Limited** group, and change several permissions.  
 
-	:::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-groups-current-page.png" alt-text="Screenshot of Collection-level Prmissions for a selected group, current page.":::  
+	:::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-groups-current-page.png" alt-text="Screenshot of Collection-level Permissions for a selected group, current page.":::  
 
-1. Choose **Save changes**.   
+1. Select **Save changes**.   
 
 * * *
 
@@ -199,60 +183,56 @@ You can change the permissions for any organization or collection-level group, e
 
 ::: moniker range="< azure-devops"
 
+1. Go to the **Security** page as described in the previous section, [Add a user or group to the Project Collection Administrators group](#add-user-group). 
 
-1. Open the **Security** page as described in the previous section, [Add a user or group to the Project Collection Administrators group](#add-user-group). 
+1. Choose the group whose permissions you want to change. 
 
-1. From the **Security** page, choose the group whose permissions you want to change. 
+    In the following example, we choose the **Stakeholders Limited** group and change several permissions.  
 
-    For example, here we choose the **Stakeholders Limited** group, and change several permissions.  
+	:::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-groups-current-page.png" alt-text="Screenshot of Collection-level Permissions for a selected group, current page.":::  
 
-	:::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-groups-current-page.png" alt-text="Screenshot of Collection-level Prmissions for a selected group, current page.":::  
-
-1. Choose **Save changes**.   
-
+1. Select **Save changes**.   
 
 ::: moniker-end
- 
 
 ## Change permissions for a user 
  
-You can change the collection-level permissions for a specific user. To understand permission assignments and inheritance, see [About permissions, Permission states](about-permissions.md#permission-states).
+You can change the collection-level permissions for a specific user. For more information, see [About permissions, Permission states](about-permissions.md#permission-states).
 
-   
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To turn on the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open the **Permissions** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
+1. Go to the **Permissions** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
 
-1. From the **Permissions** page, choose **Users**, and then choose the user whose permissions you want to change.
+2. Select **Users**, then choose the user whose permissions you want to change.
 
 	:::image type="content" source="media/change-project-level/choose-users-select-user.png" alt-text="Screenshot of Users tab, choose a user.":::   
 
-1.	From the **Permissions** page, change the assignment for one or more permissions. 
+3.	Change the assignment for one or more permissions. 
 
-	For example, here we change the **Edit project-level information** for Christie Church. 
+	In the following example, we change the **Edit project-level information** for Christie Church. 
 
 	:::image type="content" source="media/change-project-collection-level/change-project-level-permission-for-user.png" alt-text="Screenshot of selected users, Permissions.":::   
 
-	Dismiss the dialog when done. Your changes are automatically saved. 
+	Dismiss the dialog and your changes automatically save. 
 
 #### [Current page](#tab/current-page) 
 
-1. Open the **Security** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
+1. Go to the **Security** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
 
-1. From the **Security** page, in the **Filter users and groups** text box, enter the name of the user whose permissions you want to change. 
+1. In the **Filter users and groups** text box, enter the name of the user whose permissions you want to change. 
 
 1. Change the assignment for one or more permissions. 
 
-	For example, here we change the **Edit project-level information** for Christie Church. 
+	In the following example, we change the **Edit project-level information** for Christie Church. 
 
-	:::image type="content" source="media/change-project-collection-level/change-project-level-permission-for-user-current-page.png" alt-text="Screenshot of selected user , change Edit project-level information permission level.":::   
+	:::image type="content" source="media/change-project-collection-level/change-project-level-permission-for-user-current-page.png" alt-text="Screenshot of selected user, change Edit project-level information permission level.":::   
 
-1. Choose **Save changes**.   
+1. Select **Save changes**.   
 
 * * *
 
@@ -262,16 +242,15 @@ You can change the collection-level permissions for a specific user. To understa
 
 1. Open the **Security** page as described in the previous section, [Add a user or group to the Project Administrators group](#add-user-group). 
 
-1. From the **Security** page, in the **Filter users and groups** text box, enter the name of the user whose permissions you want to change. 
+1. In the **Filter users and groups** text box, enter the name of the user whose permissions you want to change. 
 
 1. Change change the assignment for one or more permissions. 
 
-	For example, here we change the **Edit project-level information** for Christie Church. 
+	In the following example, we change the **Edit project-level information** for Christie Church. 
 
-	:::image type="content" source="media/change-project-collection-level/change-project-level-permission-for-user-current-page.png" alt-text="Screenshot of selected user , change Edit project-level information permission level.":::   
+	:::image type="content" source="media/change-project-collection-level/change-project-level-permission-for-user-current-page.png" alt-text="Screenshot of selected user, change Edit project-level information permission level.":::   
 
-1. Choose **Save changes**.   
-
+1. Select **Save changes**.   
 
 ::: moniker-end
 
@@ -279,7 +258,7 @@ You can change the collection-level permissions for a specific user. To understa
 
 ## On-premises deployments
 
-For on-premises deployments, see these additional articles: 
+For on-premises deployments, see the following articles: 
 
 - [Add a user as an Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator) 
 - [Azure DevOps Server service account groups](/azure/devops/server/admin/service-accounts-dependencies)  
@@ -288,11 +267,9 @@ For on-premises deployments, see these additional articles:
 
 ::: moniker range="< azure-devops"
 
-If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
+If your on-premises deployment is integrated with SQL Server Reports, manage membership for those products separately from their websites. For more information, see [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end 
-
-
 
 ::: moniker range="< azure-devops"
 
@@ -300,30 +277,25 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 
 #### Q: When do I need to add someone to the Project Collection Administrator role?
 
-A: It varies. For most organizations that use Azure DevOps, Project Collection Administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also do many operations required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
+A: It varies. In most organizations, Project Collection Administrators manage the collections created by the **Team Foundation Administrators** group. They don’t create collections themselves but handle tasks like creating team projects, adding users to groups, and modifying collection settings.
 
 #### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
 
-A: Project collection administrators must be members of the following groups or have the following permissions:
+A: Project Collection Administrators need the following permissions:
 
-- Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
-
-- SharePoint Products: If the collection is configured with a site collection resource, then a member of the **Site Collection Administrators** group.
-
-- Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
+- **Team Foundation Server:** Members of the **Project Collection Administrators** group, or have the necessary [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
+- **SharePoint Products:** Members of the **Site Collection Administrators** group if the collection includes a site collection resource.
+- **Reporting Services:** Members of the **Team Foundation Content Manager** group if the collection includes reporting resources.
 
 #### Q: I'm an admin, but I don't have permission to add a Project Collection Administrator. What do I need?
 
-A: The following permissions are required:
+A: You need the following permissions:
+- **Project Collection Administrator** or **View Server-Level Information and Edit Server-Level Information** set to **Allow**.
+- For SharePoint Products, membership in the **Site Collection Administrators or Farm Administrators** groups.
+- For Reporting Services, membership in the **Content Managers** or **Team Foundation Content Managers** groups.
 
-- You must be a **Project Collection Administrator**, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
-
-- To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** or **Farm Administrators** groups for SharePoint Products.
-
-- To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
-
-> [!Important]
-> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
+> [!IMPORTANT]
+> To create project collections and perform other administrative tasks, users need administrative permissions. Additionally, the service account for the Team Foundation Background Job Agent must have specific permissions. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
 
 ::: moniker-end 
  
@@ -334,8 +306,8 @@ A: The following permissions are required:
 
 ## Related articles
 
+- [Look up a project collection administrator](look-up-project-collection-administrators.md)
+- [Manage users, groups, and security groups](add-remove-manage-user-group-security-group.md)
+- [Request an increase in permission levels](request-changes-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
 - [Set object-level permissions](set-object-level-permissions.md)
-- [Get started with permissions, access, and security groups](about-permissions.md)
-- [Permissions lookup reference](permissions-lookup-guide.md)
-- [Permissions and groups reference](permissions.md)
-- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)

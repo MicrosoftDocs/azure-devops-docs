@@ -165,7 +165,7 @@ To view the test summary trend of a pipeline for a particular branch, use the fo
 - Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
-To learn more about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -504,7 +504,7 @@ Expand the `CompletedOn` column. Expanding the column flattens the record into s
 
 From the Power Query Editor, select the `PassRate` column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
 
-To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

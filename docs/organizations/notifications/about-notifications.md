@@ -7,7 +7,7 @@ ms.custom: quarterly-update, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 12/17/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -133,7 +133,9 @@ There are no UI permissions associated with managing email notifications or aler
 
 ## Preferred email address
 
-The preferred email address for your organization profile gets notifications, by default. It's typically the email address you signed into Azure DevOps with. You can manage this email address via your organization preferences profile page.
+The preferred email address for your organization profile gets notifications, by default. It's typically the email address you signed into Azure DevOps with. You can manage this email address via your organization preferences profile page. 
+
+If you're enrolled in the Microsoft Entra profile information preview, your profile information is pulled directly from Microsoft Entra and can't be edited. For more information, see [Set your preferences](../settings/set-your-preferences.md).
 
 > [!NOTE]
 > Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis.
@@ -143,10 +145,9 @@ The preferred email address for your organization profile gets notifications, by
 
 ## Integrating with other services
 
-If your team uses an external service to collaborate&mdash;such as Campfire or Slack&mdash;you can configure notifications for these services. We support the following out of the box services.
+If your team uses an external service to collaborate&mdash;such as Trello or Slack&mdash;you can configure notifications for these services. We support the following out of the box services.
 
-- [Campfire](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
-- [HipChat](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
+- [Trello](../../service-hooks/services/trello.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
 - [Slack](../../service-hooks/services/slack.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)  
 - [Microsoft Teams](../../service-hooks/services/teams.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
 

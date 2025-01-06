@@ -22,7 +22,7 @@
   items:
   - name: Connect to a project or repo
     href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json
-  - name: Authentication
+  - name: Git Authentication Overview
     href: auth-overview.md
   - name: Authenticate with SSH
     href: use-ssh-keys-to-authenticate.md
@@ -147,6 +147,8 @@
     href: pull-request-templates.md
   - name: Extend pull request workflows with pull request status
     href: pull-request-status.md
+  - name: Configure custom target branches for pull requests
+    href: pull-request-targets.md
 - name: History
   items:
   - name: Review history
@@ -199,6 +201,8 @@
     href: howto.yml
   - name: Git limits
     href: limits.md
+  - name: Repository health
+    href: repo-health.md
   - name: Map TFVC actions to Git
     href: mapping-my-tfvc-actions-to-git.md
   - name: RPC failures & http.postBuffer
