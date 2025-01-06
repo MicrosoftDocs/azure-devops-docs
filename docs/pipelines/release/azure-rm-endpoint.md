@@ -126,7 +126,7 @@ These errors typically occur when your session is expired. To resolve these issu
 
 ### Error: You don't appear to have an active Azure subscription when attempting to edit or create a new service connection
 
-This error typically occur when you are part of multiple Entra ID.
+This error typically occurs when you are part of multiple Entra ID.
 Follow the below steps to resolve to verify and resolve the issue.
 
 1. Navigate to [VS profile](https://app.vsaex.visualstudio.com/).
