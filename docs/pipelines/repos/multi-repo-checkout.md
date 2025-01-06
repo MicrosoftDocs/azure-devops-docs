@@ -199,6 +199,22 @@ If a `path` is specified for a `checkout` step, that path is used, relative to `
 > [!NOTE]
 > If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
 
+## Workspace repository
+
+When multiple `checkout` steps (and different paths for each) are used in your pipeline, you may want to use the root directory of one the repositories as the default working directory. If so, you can set the `workspaceRepo` input to `true` for the related `checkout` step.
+
+```yaml
+- checkout: git://project/first
+  path: repo/first-repo
+
+- checkout: git://project/second
+  path: repo/second-repo
+  workspaceRepo: true
+
+- pwsh: pwd
+# Expected output: $(Pipeline.Workspace)/repo/second-repo
+```
+
 ## Checking out a specific ref
 
 The default branch is checked out unless you designate a specific ref.
