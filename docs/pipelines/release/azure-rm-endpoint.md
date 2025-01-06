@@ -110,7 +110,7 @@ You must have permissions to add integrated applications in the directory. The d
 
 ::: moniker range="<= azure-devops-2022"
 
-You can also create the service principal with an existing user who already has the required permissions in Microsoft Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-an-existing-service-principal).
+You can also create the service principal with an existing user who already has the required permissions in Microsoft Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-a-service-connection-that-uses-an-existing-service-principal).
 
 ::: moniker-end
 
