@@ -60,15 +60,24 @@ Action required:
 > Both formats remain valid for the foreseeable future, but we **actively encourage customers to transition to the new 84-character format**. As adoption of the new format increases, we consider retiring the older 52-character format and all tokens issued in that style.
 
 ## PAT Best Practices
-* **_ALWAYS_** store your PATs in a secure key management solution, like [Azure KeyVault](/azure/key-vault/general/overview).
-* Use credential managers, like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or the [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider), whenever possible to make credential management simple. These tools may have options to use Microsoft Entra tokens instead of PATs.
+
+#### Consider alternatives
+* For ad-hoc requests, [acquire an Entra token via Azure CLI](../../integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) that lives for one hour instead of minting a longer-lived PAT.
+* Use credential managers, like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or the [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider), whenever possible to make credential management simple. These tools may have options to [use Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) as the default authentication instead of PATs.
+
+#### Creating PATs
 * When creating a PAT, don't put any personally identifiable information (PII) in the PAT name. Don't rename the PAT token string as the name of your token.
 * If your PAT doesn't need to access multiple organizations, only choose the organization it needs to access. If you have a workflow that requires a PAT to access multiple organizations, create a separate global PAT for just that workflow.
 * Choose only the needed scopes for each PAT. If possible, create multiple PATs for each workflow with fewer scopes vs. a single fully scoped PAT. If your PAT only needs read permissions, don't provide it write permissions until it's necessary.
-* Keep PAT lifespans short (weekly) and regularly rotate or regenerate them. Do this on the UI or via the [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md).
-* [Tenant admins can set policies](manage-pats-with-policies-for-administrators.md) to restrict global PAT creation, full scoped PAT creation, and long-lived PAT duration. They can also enable policies to automatically revoke leaked PATs detected in public repositories. Use these policies to improve the security of your company.
+* Keep PAT lifespans short (weekly is ideal, even shorter is better) and regularly rotate or regenerate them. Do this on the UI or via the [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md).
+
+#### Managing PATs
+* **_ALWAYS_** store your PATs in a secure key management solution, like [Azure KeyVault](/azure/key-vault/general/overview).
 * Revoke PATs when they're no longer needed. Tenant admins can [revoke PATs for their organization users](admin-revoke-user-pats.md) if the PAT is compromised.
-* Rotate your PATs to use the new PAT format for better leaked secret detection.
+* Rotate your PATs to use the [new PAT format](#changes-to-format) for better leaked secret detection and revocation by our first-party tools.
+
+#### For Admins
+* [Tenant admins can set policies](manage-pats-with-policies-for-administrators.md) to restrict global PAT creation, full scoped PAT creation, and long-lived PAT duration. They can also enable policies to automatically revoke leaked PATs detected in public repositories. Use these policies to improve the security of your company.
 
 ## FAQs
 
