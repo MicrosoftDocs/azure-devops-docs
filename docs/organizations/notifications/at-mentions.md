@@ -11,8 +11,8 @@ ai-usage: ai-assisted
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/03/2024
---- 
-
+---
+ 
 # Use @mentions in work items and pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -104,7 +104,6 @@ You can also use group mentions. Enter the name of a team or a security group, c
 
 > [!NOTE]
 > - Don't copy and paste **@mention** users from a previous comment. Although the formatting may look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
-> - If you **@mention** a group that has no members, no email gets sent, even if the group is a member of other groups.
 
 Upon completion of your selection and text entry, your **@mention** user receives an email alerting them about the mention.
 
