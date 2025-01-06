@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/03/2024
+ms.date: 01/06/2025
 ---
  
 # Use @mentions in work items and pull requests
@@ -103,7 +103,7 @@ You can also use group mentions. Enter the name of a team or a security group, c
 > ![Screenshot of discussion section with at mention made.](media/at-mention/at-mention-discussion.png)
 
 > [!NOTE]
-> - Don't copy and paste **@mention** users from a previous comment. Although the formatting may look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
+> Don't copy and paste **@mention** users from a previous comment. Although the formatting may look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
 
 Upon completion of your selection and text entry, your **@mention** user receives an email alerting them about the mention.
 
