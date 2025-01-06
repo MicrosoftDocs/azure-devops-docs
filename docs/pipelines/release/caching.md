@@ -408,6 +408,8 @@ steps:
   displayName: Cache NuGet packages
 ```
 
+This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your your *.csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
+
 ## Node.js/npm
 
 There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules that can reduce or eliminate network calls to the public npm registry or to a private registry.
