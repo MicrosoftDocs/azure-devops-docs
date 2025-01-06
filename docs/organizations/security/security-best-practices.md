@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 12/12/2024
+ms.date: 6/01/2025
 ---
 
 # Security best practices
@@ -260,6 +260,12 @@ For more information, see [Manage PATs with policies - for administrators](../ac
 - **Configure branch control checks for production context**: Set up branch control checks to restrict the use of sensitive connections (for example, prod-connection) to pipelines running in the context of the production branch, ensuring proper authorization and preventing accidental misuse.
 
 For more information, see [Other security considerations](../../pipelines/security/misc.md).
+
+### Containers
+
+- **Use trusted images**: Utilize official and verified images from reputable sources such as Azure Container Registry or Docker Hub. Always specify a specific version or tag to maintain consistency and reliability, rather than relying on the `latest` tag. Regularly update base images to include the latest security patches and bug fixes.
+- **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as Microsoft Defender for Cloud to monitor and detect security risks. Additionally, Azure Container Registry offers integrated vulnerability scanning to help ensure container images are secure before deployment. You can also integrate third-party scanning tools through Azure DevOps extensions for added security checks.
+
 
 ## Secure Azure Repos
 
