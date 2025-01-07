@@ -179,7 +179,7 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
 1. From your work item, select **Links** > **Add link** > **Existing item**.
    
-   :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows sequence to add link to newly created a work item.":::
+   :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows sequence to add link to newly created work item.":::
 
 2. Choose one of the following remote link types from the **Link type** dropdown menu:
 
