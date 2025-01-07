@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01-06-2025
+ms.date: 01/06/2025
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
@@ -18,34 +18,85 @@ ms.date: 01-06-2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work item links are associations between two work items or a work item and another object. Links describe the relationship between objects. You can use work item links to track dependencies and related work for traceability, share information, manage complex projects that involve multiple teams or products, track code changes, tests, and more.
+<!---Decided to keep the following section of hyperlinks, as there are high #s of clicks here rather than in the automatically provided 'In this article" section-->
+
+::: moniker range=" azure-devops"
+> [!div class="checklist"]
+>- [Link work items to various objects](#link-work-items-to-various-objects)
+>- [Link work items to other work items](#link-a-work-item-to-another-work-item)
+>- [Link several work items](#link-several-work-items)
+>- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
+>- [Link work items to new work items](#link-work-items-to-new-work-items)
+>- [Link work items to work items in different projects (cross-organization)](#link-work-items-to-remote-work-items-cross-organization)
+>- [Link work items to pull requests](#link-work-items-to-pull-requests)
+>- [Link work items to GitHub objects](#link-work-items-to-github-objects)
+>- [Link several items to new Git branches](#link-several-work-items-to-new-git-branches)
+>- [Link work items to builds](#link-work-items-to-builds)
+>- [Link work items to deployments](#link-work-items-to-deployments)
+>- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
+>- [Link work items to tests](#link-work-items-to-tests)
+>- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document)
+>- [View dependencies and track related work](#view-dependencies-and-track-related-work)
+>- [Query for linked work items](#query-for-linked-work-items)
+>- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
+>- [Delete work item links](#delete-work-item-links)
+::: moniker-end
+
+::: moniker range=" < azure-devops"
+In this article, learn how to do the following tasks:  
+> [!div class="checklist"]
+>- [Link work items to various objects](#link-work-items-to-various-objects)
+>- [Link work items to other work items](#link-a-work-item-to-another-work-item)
+>- [Link several work items](#link-several-work-items)
+>- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
+>- [Link work items to new work items](#link-work-items-to-new-work-items)
+>- [Link work items to pull requests](#link-work-items-to-pull-requests)
+>- [Link work items to GitHub objects](#link-work-items-to-github-objects)
+>- [Link several items to new Git branches](#link-several-work-items-to-new-git-branches)
+>- [Link work items to builds](#link-work-items-to-builds)
+>- [Link work items to deployments](#link-work-items-to-deployments)
+>- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
+>- [Link work items to tests](#link-work-items-to-tests)
+>- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document)
+>- [View dependencies and track related work](#view-dependencies-and-track-related-work)
+>- [Query for linked work items](#query-for-linked-work-items)
+>- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
+>- [Delete work item links](#delete-work-item-links)
+::: moniker-end
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
+
 | Prerequisite | Description |
 |:-------------|:------------|
 | **Project Administrator or Contributor member** | [Project member](../../organizations/security/add-users-team-project.md) and member of the **Contributors** or **Project Administrators** security group. |
 | **Stakeholder access** | To add or modify work items, you must be granted [**Stakeholder** access or higher](../../organizations/security/stakeholder-access.md). Users with **Stakeholder** access for public projects have full access to backlog and board features, like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
 | **Contributor member or Allow permissions** | - To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).</br>- To configure the integration options for a Classic release pipeline, you must have permissions to edit the release.</br>- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.</br>- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
 | **Defined iterations** | To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
+
 | Prerequisite | Description |
 |:-------------|:------------|
 | **Project Administrator or Contributor member** | [Project member](../../organizations/security/add-users-team-project.md) and member of the **Contributors** or **Project Administrators** security group. |
 | **Stakeholder access** | To add or modify work items, you must be granted [**Stakeholder** access or higher](../../organizations/security/stakeholder-access.md). |
 | **Contributor member or Allow permissions** | - To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).<br>- To configure the integration options for a Classic release pipeline, you must have permissions to edit the release.<br>- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.<br>- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
 | **Defined iterations** | To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
+
 | Prerequisite | Description |
 |:-------------|:------------|
 | **Project Administrator or Contributor member** | [Project member](../../organizations/security/add-users-team-project.md) and member of the **Contributors** or **Project Administrators** security group. |
 | **Stakeholder access** | To add or modify work items, you must be granted [**Stakeholder** access or higher](../../organizations/security/stakeholder-access.md). |
 | **Contributor member or Allow permissions** | To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
 | **Defined iterations** | To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+
 ::: moniker-end
 
 ## Types of links
@@ -70,10 +121,10 @@ For more information about work link types, including parent/child, related, and
 To link work items to various objects, follow these general steps:
 
 1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
-2. Open the work item that you want to link from, or create a new one.
+2. Open the existing work item that you want to link from, or create a new one.
 3. Select **Links** > **Add link**, and then select **Existing item** or **New item**.
 
-   :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot sequence to add new or existing item link to work item.":::
+   :::image type="content" source="media/add-link/add-link-new-item.png" alt-text="Screenshot sequence to add new or existing item link to work item.":::
 
 4. In the **Link type** dropdown list, select the [link type](#types-of-links) that you want to create.
 5. In the field that follows, enter or select the object that you want to link to.
@@ -95,10 +146,14 @@ For more specific instructions on linking different types of work items, refer t
 To add a link to another work item in the web portal, do the following steps:
 
 1. Open the work item that you want to link from.
-2. In the work item form, find the **Related Work** section.
-3. Select **Add link** > **Existing item**.
-4. In the **Link type** dropdown list, select the [link type](#types-of-links) that you want to create, for example, **Child**, **Parent**, or **Related**.
-5. In the **Work items to link** field, enter the ID of the work item you want to link to, or select from the dropdown menu, and then select **Add link**.
+2. In the work item form, you can choose from two ways to do this task:
+   - Go to the **Related Work** section and select **Add link** > **Existing item**.
+   - Select **Links** > **Add link** > **Existing item**.
+
+   :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows highlighted buttons sequence to add a link to an existing work item from the Links tab.":::
+
+3. In the **Link type** dropdown list, select the [link type](#types-of-links) that you want to create, for example, **Child**, **Parent**, or **Related**.
+4. In the **Work items to link** field, enter the ID of the work item you want to link to, or select from the dropdown menu, and then select **Add link**.
 
    The following example uses the **Related** link type to a test case with ID of *280*.
 
@@ -116,7 +171,7 @@ To add a link to another work item in the web portal, do the following steps:
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md).
 2. [Multi-select (highlight) the work items](bulk-modify-work-items.md#multi-select) to add a link to.
-3. Open the **&hellip;** context menu of one of the selected work items, choose **Add link**, and then choose **Link to an existing item...** or **Link to a new work item...**.
+3. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** for the selected work items, select **Add link**, and then choose **Link to an existing item...** or **Link to a new work item...**.
 
    In the following example, we multi-select from the product backlog and choose **Link to an existing item...**.
 
@@ -144,7 +199,7 @@ To add a link to another work item in the web portal, do the following steps:
 
 Do the following steps to link a work item to a new work item.
 
-1. From your existing work item, select **Links** > **Add link** > **New item**.
+1. From your work item, select **Links** > **Add link** > **New item**.
    
    :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows sequence to add link to newly created a work item.":::
 
@@ -165,7 +220,10 @@ Do the following steps to link a work item to a new work item.
 
 Do the following steps to link work items to objects defined in other Azure DevOps organizations. You can only do so if both organizations use the same Microsoft Entra ID to manage users.
 
-1. From the existing work item, select **Links** > **Add link** > **Existing item**.
+1. From your work item, select **Links** > **Add link** > **New item**.
+   
+   :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows sequence to add link to newly created a work item.":::
+
 2. Choose one of the following remote link types from the **Link type** dropdown menu:
 
    - **Consumes From** or **Produces For**: When you want to track dependencies of work items that are defined in different organizations and managed by different teams.
@@ -240,7 +298,7 @@ Do the following steps to link work items to existing builds. These builds can b
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your existing work item, select **Links** > **Add link** > **Existing item**.
+1. From your work item, select **Links** > **Add link** > **Existing item**.
 
 2. From the **Add link** dialog, choose one of the build link types: **Build**, **Found in build**, **Integrated in build**. Specify the build number.
 
