@@ -681,7 +681,7 @@
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
       href: security/approach.md
-    - name: Other security considerations
+    - name: Secure agents, projects, and containers
       href: security/misc.md
     - name: Secure access to Azure repositories from pipelines
       displayName: forks, branches, access token
