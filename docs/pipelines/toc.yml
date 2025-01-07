@@ -681,8 +681,8 @@
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
       href: security/approach.md
-    - name: Secure repositories
-      href: security/misc.md#protect-repositories
+    - name: Secure agents, projects, and containers
+      href: security/misc.md
     - name: Secure access to Azure repositories from pipelines
       displayName: forks, branches, access token
       href: security/secure-access-to-repos.md
@@ -691,21 +691,12 @@
     - name: Pipeline resources
       displayName: protected resources, repository resources
       href: security/resources.md
-    - name: Project structure
-      displayName: separate projects
-      href: security/misc.md#protect-projects
     - name: Security through templates
       displayName: conditionals, extends, scripts, templates
       href: security/templates.md
     - name: Variables and parameters
       displayName: inputs, parameters, queue-time variables
       href: security/inputs.md
-    - name: Shared infrastructure
-      displayName: low privileges, hosted, infrastructure
-      href: security/misc.md#protect-shared-infrastructure
-    - name: Other security considerations
-      displayName: PATH, containers, control tasks, auditing
-      href: security/misc.md
 - name: Integration
   items:
   - name: Microsoft Teams
