@@ -18,17 +18,23 @@ ms.date: 07/10/2024
 
 For applications that interface with Azure DevOps Services, you must authenticate to gain access to resources like REST APIs. This article provides guidance to help you choose the right authentication mechanism for your application. 
 
-The following table outlines the recommended authentication mechanisms for different application types. Refer to the accompanying descriptions, examples, and code samples to help get you started.
+The following table outlines suggested authentication concepts to consider for different application scenarios. Refer to the accompanying descriptions, examples, and code samples to help get you started.
+
 
 | Type of application | Description | Example | Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
-| Interactive client-side app (REST) | Client application that allows user interaction calling [Azure DevOps Services REST APIs](/rest/api/azure/devops) | Console application enumerating projects in an organization | [OAuth](./oauth.md) | [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive client-side app (client libraries) | Client application that allows user interaction calling Azure DevOps Services client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| Non-interactive client-side app | Headless text only client-side application | Console app displaying all bugs assigned to a user | [Device Profile](/azure/active-directory/develop/v2-oauth2-device-code) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
-| Personal access token (PAT) | Bearer token to access your own resources  | Use your PAT in place of your password for REST requests. Not ideal for building applications. | [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) |[docs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  |
+| Interactive client-side app (REST) | Client application that allows user interaction calling [Azure DevOps Services REST APIs](/rest/api/azure/devops) | Console application enumerating projects in an organization | [OAuth](./oauth.md) with Microsoft Authentication Library (MSAL) | [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| Interactive client-side app (client libraries) | Client application that allows user interaction calling Azure DevOps Services [client libraries](../../concepts/dotnet-client-libraries.md)  | Console application enumerating bugs assigned to the current user |  OAuth with [client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| Non-interactive client-side app | Headless text only client-side application | Console app displaying all bugs assigned to a user | OAuth with [Device Profile](/azure/active-directory/develop/v2-oauth2-device-code) flow | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
+| Personal access token (PAT) | Bearer token to access your own resources  | Use your PAT in place of your password for ad-hoc REST calls. Not ideal for applications. | [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) |[examples](../../how-to/call-rest-api.md)  |
 | Server app | Azure DevOps Server app using the Client OM library | Azure DevOps Server extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| Service principal or Managed Identity | Application identity with access to organization's Azure DevOps resources | Azure function to create work items |[Service principals and managed identities](./service-principal-managed-identity.md)| [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) |
+| Service principal or Managed identity | Application with its own identity | Azure function to create work items | [Service principals and managed identities](./service-principal-managed-identity.md)| [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) |
 | Web extension | Azure DevOps Services [extension](../../../extend/develop/samples-overview.md) | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) extension | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample](../../../extend/develop/add-dashboard-widget.md) |
+
+> [!TIP]
+> [Entra-based authentication](../../integrate/get-started/authentication/entra.md) is our recommendation for developers looking to integrate with Azure DevOps Services, if you are interacting with Microsoft Entra accounts. The OAuth sample apps in this table are using [Microsoft Entra's identity platform for app development](../../integrate/get-started/authentication/entra-oauth.md).
+> For authentication with Microsoft accounts (MSA) or Azure DevOps Server users, look into our [client libraries](../../concepts/dotnet-client-libraries.md) or [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+> Read up more in [our blog](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) on how we're reducing PAT usage across our platform.
 
 
 ## Frequently asked questions (FAQs)
