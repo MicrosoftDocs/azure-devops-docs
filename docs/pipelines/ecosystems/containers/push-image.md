@@ -44,7 +44,7 @@ Before pushing container images to a registry, you need to create a service conn
 
 1. In your Azure DevOps project, select **Project settings** > **Service connections**.
 
-    :::image type="content" source="../media/project-settings-selection.png" alt-text="screenshot of Project settings selection.":::
+    :::image type="content" source="../media/project-settings-selection.png" alt-text="Screenshot of Project settings selection.":::
 
 1. Select **New service connection** and **Docker Registry**.
 
@@ -140,7 +140,7 @@ To build and push the image to the container registry, add the Docker@2 task to 
 1. Select the **buildAndPush** task.
 1. For **Container Registry**, select the service connection you created earlier. If you don't have one, select ***+New*** to create a new Docker Hub service connection.
 
-    :::image type="content" source="../media/classic-pipeline-docker2-docker-build-and-push-task.png" alt-text="Screenshot of task to build and push image to Docker Hub.":::
+    :::image type="content" source="../media/classic-pipeline-docker-2-build-and-push-task.png" alt-text="Screenshot of task to build and push image to Docker Hub.":::
 
 ### Run the pipeline
 
@@ -255,7 +255,7 @@ Add a **Docker@2** task to the pipeline to build and push the image to the conta
     | **Service connection name** | Enter a name for the service connection. |
     | **Grant access permission to all pipelines** | Select this option to grant access to all pipelines. |
 
-    :::image type="content" source="../media/classic-pipeline-new-acr-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry service connection.":::
+    :::image type="content" source="../media/classic-pipeline-new-azure-container-registry-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry service connection.":::
 
 1. Select **Save**.
 
