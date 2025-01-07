@@ -3,7 +3,7 @@
 title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
 ms.topic: conceptual
-ms.date: 05/10/2023
+ms.date: 01/08/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -24,7 +24,7 @@ To use a variable with a condition in a pipeline, see [Specify conditions](condi
 
 ## About `task.setvariable`
 
-When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable is only available to tasks in the same job by default. If you add the parameter `isOutput`, the syntax to call your variable changes. See [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
+When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable is only available to tasks in the same job by default. If you add the parameter `isOutput`, the syntax to call your variable changes. For more information, see [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
 
 # [Bash](#tab/bash)
 
