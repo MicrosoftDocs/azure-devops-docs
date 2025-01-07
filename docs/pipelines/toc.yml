@@ -697,8 +697,6 @@
     - name: Variables and parameters
       displayName: inputs, parameters, queue-time variables
       href: security/inputs.md
-    - name: Shared infrastructure
-    - name: Other security considerations
 - name: Integration
   items:
   - name: Microsoft Teams
