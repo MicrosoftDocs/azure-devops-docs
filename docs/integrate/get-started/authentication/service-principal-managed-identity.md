@@ -35,7 +35,7 @@ Your implementation might vary, but at a high-level, the following steps help yo
 
 ### 1. Create a new managed identity or application service principal
 
-Create an [application service principal](#create-an-application-service-principal) or a [managed identity](#create-a-managed-identity) in the Azure portal. 
+Create an [application service principal](#option-1:-create-an-application-service-principal) or a [managed identity](#option-2:-create-a-managed-identity) in the Azure portal. 
 
 #### Option 1: Create an application service principal
 
