@@ -18,7 +18,7 @@ Pipeline caching can help reduce build time by allowing the outputs or downloade
 Caching can be effective at improving build time provided the time to restore and save the cache is less than the time to produce the output again from scratch. Because of this, caching may not be effective in all scenarios and may actually have a negative impact on build time.
 
 > [!NOTE]
-> Pipeline caching is supported in agent pool jobs for both YAML and Classic pipelines. However, it is not supported in Classic release pipelines.
+> Pipeline caching is not supported in Classic release pipelines.
 
 ### When to use artifacts versus caching
 
@@ -29,7 +29,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files won't impact the job's ability to run).
 
 > [!NOTE]
-> Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
+> Pipeline caching and pipeline artifacts are free for all tiers (free and paid). See [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
 ## Cache task: how it works
 
@@ -40,7 +40,7 @@ When a cache step is encountered during a run, the task restores the cache based
 After all steps in the job have run and assuming a **successful** job status, a special **"Post-job: Cache"** step is automatically added and triggered for each **"restore cache"** step that wasn't skipped. This step is responsible for **saving the cache**.
 
 > [!NOTE]
-> Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
+> Caches are immutable, meaning once a cache is created, its content is unchangeable.
 
 ### Configure the Cache task
 
@@ -139,15 +139,17 @@ steps:
 
 In this example, the cache task attempts to find if the key exists in the cache. If the key doesn't exist in the cache, it tries to use the first restore key `yarn | $(Agent.OS)`.
 This attempts to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
-For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the `old-yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
+For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the `old-yarn.lock` yielded a different hash than `yarn.lock`, the restore key would yield a partial hit.
 If there's a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result yields the most recently created cache key as the result.
 
 > [!NOTE]
-> A pipeline can have one or more caching task(s). There is no limit on the caching storage capacity, and jobs and tasks from the same pipeline can access and share the same cache.
+> A pipeline can have one or more caching tasks. There's no limit on the caching storage capacity, and jobs and tasks from the same pipeline can access and share the same cache.
 
 ## Cache isolation and security
 
-To ensure isolation between caches from different pipelines and different branches, every cache belongs to a logical container called a scope. Scopes provide a security boundary that ensures a job from one pipeline cannot access the caches from a different pipeline, and a job building a PR has read access to the caches for the PR's target branch (for the same pipeline), but cannot write (create) caches in the target branch's scope.
+To ensure isolation between caches from different pipelines and different branches, every cache belongs to a logical container called a scope. Scopes provide a security boundary that ensures:
+1. A job from one pipeline can't access the caches from a different pipeline, and
+1. A job building a PR has read access to the caches for the PR's target branch (for the same pipeline), but can't write (create) caches in the target branch's scope.
 
 When a cache step is encountered during a run, the cache identified by the key is requested from the server. The server then looks for a cache with this key from the scopes visible to the job, and returns the cache (if available). On cache save (at the end of the job), a cache is written to the scope representing the pipeline and branch. See below for more details.
 
@@ -179,11 +181,11 @@ When a cache step is encountered during a run, the cache identified by the key i
 | `master` branch                                   | Yes  | No    |
 
 > [!TIP]
-> Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
+> Because caches are already scoped to a project, pipeline, and branch, there's no need to include any project, pipeline, or branch identifiers in the cache key.
 
 ## Conditioning on cache restoration
 
-In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable causes the variable to be set to `true` when there's a cache hit, `inexact` on a restore key cache hit, otherwise it is set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
+In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable causes the variable to be set to `true` when there's a cache hit, `inexact` on a restore key cache hit, otherwise it's set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
 
 In the following example, the `install-deps.sh` step is skipped when the cache is restored:
 
@@ -408,7 +410,7 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your *.csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
+This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your *Csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
 
 ## Node.js/npm
 
