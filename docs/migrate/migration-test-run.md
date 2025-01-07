@@ -8,7 +8,7 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/03/2025
+ms.date: 01/07/2025
 ---
 
 # Do test run migration
@@ -22,12 +22,11 @@ Your team is now ready to begin the process of starting a test run of your migra
 Complete the [Prepare test run phase](migration-prepare-test-run.md) before you begin a test run migration. 
 
 > [!IMPORTANT]
-> To ensure a smooth migration process, complete the dry run imports as close to the production imports as possible, allowing time for validation and testing, ideally within 45 days.
-> Performing a successful dry run migration within the same sprint as your production import increases the success rate for the final import. The more time that passes between the dry run and production run, the more the service might change, introducing potential errors that a fresh dry run would catch.
-> If you need more time for testing, you can rerun the dry run import after 45 days as many times as needed, though it reverts to the initial state each time. It might be possible to extend the dry run to retain the state by contacting Support with a business justification. Note the following points:
-> - You can't extend a dry run indefinitely.
-> - You can't promote a dry run to a production run.
-> - A dry run gets deleted once it times out, a new dry run (with the same name) gets run, or a production run starts.
+> To ensure a smooth migration process, complete the test run imports as close to the production imports as possible, allowing time for validation and testing, ideally within 45 days.
+> Performing a successful test run migration within the same [sprint](../boards/sprints/scrum-key-concepts.md) as your production import increases the success rate for the final import. The more time that passes between the test run and production run, the more the service might change, introducing potential errors that a fresh test run would catch.
+> If you need more time for testing, you can rerun the test run import after 45 days as many times as needed, though it reverts to the initial state each time. Note the following points:
+> - You can't promote a test run to a production run.
+> - A test run gets deleted once it times out, a new test run (with the same name) gets run, or a production run starts.
 
 ## Validate a collection 
 
