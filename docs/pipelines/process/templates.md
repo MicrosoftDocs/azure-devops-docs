@@ -24,7 +24,7 @@ Templates can also help you secure your pipeline. When a template controls what 
 There are two types of templates: includes and extends. 
 
 - **Includes templates** let you insert reusable content with a template. If a template is used to include content, it functions like an include directive in many programming languages. Content from template is inserted into the pipeline or template that includes it.
-- **Extends template** let you control what is allowed in a pipeline. For example, an extends template can be used in the context of extending a pipeline to perform stages or jobs. When an extends template controls what is allowed in a pipeline, the template defines logic that a pipeline must follow. 
+- **Extends templates** let you control what is allowed in a pipeline. When an extends template controls what is allowed in a pipeline, the template defines logic that a pipeline must follow. For example, an extends template can be used in the context of extending a pipeline to perform stages or jobs. 
 
 To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md). 
 
@@ -804,7 +804,7 @@ jobs:
 
 ### How can I use variables inside of templates?
 
-There are times when it is useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables are available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+There are times when it's useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables are available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
 
 In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
 
