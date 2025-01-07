@@ -388,8 +388,8 @@
       - name: Build images
         displayName: docker, compose, docker-compose, arm, buildkit, image
         href: ecosystems/containers/build-image.md
-      - name: Push images
-        displayName: container registry, acr, gcr, ecr, docker hub, azure container registry, google container registry
+      - name: Build and push container images to registries
+        displayName: container registry, acr, docker hub, azure container registry
         href: ecosystems/containers/push-image.md
       - name: Content trust
         displayName: docker content trust, dct
