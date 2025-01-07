@@ -1,5 +1,5 @@
 ---
-title: Other security considerations for Azure Pipelines
+title: Secure agents, projects, and containers
 description: Other tips for securing your pipelines, including protecting shared infrastructure, repositories, and projects.
 ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
 ms.reviewer: vijayma
@@ -7,7 +7,7 @@ ms.date: 06/11/2024
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Other security considerations for Azure Pipelines
+# Secure agents, projects, and containers
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
