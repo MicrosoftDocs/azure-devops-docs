@@ -19,7 +19,7 @@ monikerRange: 'azure-devops'
 > [!NOTE]
 > Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-Adding Microsoft Entra service principals and managed identities to your Azure DevOps Services organizations will grant them access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
+Add [Microsoft Entra](entra.md) service principals and managed identities as application identities into your Azure DevOps Services organizations to grant them access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
 
 ## About service principals and managed identities
 
