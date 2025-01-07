@@ -32,8 +32,8 @@ The following table outlines suggested authentication concepts to consider for d
 | Web extension | Azure DevOps Services [extension](../../../extend/develop/samples-overview.md) | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) extension | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample](../../../extend/develop/add-dashboard-widget.md) |
 
 > [!TIP]
-> [Entra-based authentication](entra.md) is our recommendation for developers looking to integrate with Azure DevOps Services, if you are interacting with Microsoft Entra accounts. The OAuth sample apps in this table are using [Microsoft Entra's identity platform for app development](entra-oauth.md).
-> For authentication with Microsoft accounts (MSA) or Azure DevOps Server users, look into our [client libraries](../../concepts/dotnet-client-libraries.md) or [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+> [Entra-based authentication](entra.md) is our recommendation for developers looking to integrate with Azure DevOps Services, if you are interacting with Microsoft Entra accounts. The OAuth sample apps in this table are using [Microsoft Entra's identity platform for app development](entra-oauth.md). <br/>
+> For authentication with Microsoft accounts (MSA) or Azure DevOps Server users, look into our [client libraries](../../concepts/dotnet-client-libraries.md) or [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).<br/>
 > Read up more in [our blog](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) on how we're reducing PAT usage across our platform.
 
 
