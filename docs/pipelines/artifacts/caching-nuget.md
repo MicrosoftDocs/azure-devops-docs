@@ -32,7 +32,7 @@ To lock your project's dependencies, set the **RestorePackagesWithLockFile** pro
 
 ## Cache NuGet packages
 
-We'll need to create a pipeline variable to point to the location of our packages on the agent running the pipeline.
+We need to create a pipeline variable to point to the location of our packages on the agent running the pipeline.
 
 In this example, the content of the **packages.lock.json** will be hashed to produce a dynamic cache key. This ensures that every time the file is modified, a new cache key is generated.
 
@@ -68,7 +68,7 @@ This task will only run if the `CACHE_RESTORED` variable is false.
     restoreSolution: '**/*.sln'
 ```
 
-If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command will be executed, generating your project.assets.json file. The restore task will not download packages that are already present in your corresponding folder.
+If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command is executed, generating your project.assets.json file. The restore task won't download packages that are already present in your corresponding folder.
 
 > [!NOTE]
 > A pipeline can contain one or more caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
@@ -120,7 +120,7 @@ steps:
     configuration: '$(buildConfiguration)'
 ```
 
-This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your your *.csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
+This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your *.Csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
 
 ## Related articles
 

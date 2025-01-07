@@ -408,7 +408,7 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your your *.csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
+This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your *.csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
 
 ## Node.js/npm
 
