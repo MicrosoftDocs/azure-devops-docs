@@ -23,7 +23,7 @@ When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID
 
 > [!TIP]
 > We recommend reviewing our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to choose the appropriate authentication mechanism for your needs.
-> This [page](../../integrate/get-started/authentication/entra.md) in our docs offers some guidance on common PAT scenarios that might be better served by Micrsoft Entra tokens instead.
+> [Entra tokens](../../integrate/get-started/authentication/entra.md) are our recommended authentication mechanism for developers looking to integrate with Azure DevOps. Read up more in [our blogs](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) on how we're reducing PAT usage across our platform.
 
 You can manage PATs through the following methods:
 * **User interface (UI):** Through user settings, as detailed in this article.
