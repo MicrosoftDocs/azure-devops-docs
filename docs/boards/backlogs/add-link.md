@@ -5,11 +5,12 @@ description: Learn how to link work items to user stories, bugs, remote work ite
 ms.custom: cross-project, devx-track-azurecli, engagement-fy24
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/06/2025
+ms.date: 01/07/2025
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
@@ -18,51 +19,6 @@ ms.date: 01/06/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work item links are associations between two work items or a work item and another object. Links describe the relationship between objects. You can use work item links to track dependencies and related work for traceability, share information, manage complex projects that involve multiple teams or products, track code changes, tests, and more.
-<!---Decided to keep the following section of hyperlinks, as there are high #s of clicks here rather than in the automatically provided 'In this article" section-->
-
-::: moniker range=" azure-devops"
-> [!div class="checklist"]
->- [Link work items to various objects](#link-work-items-to-various-objects)
->- [Link work items to other work items](#link-a-work-item-to-another-work-item)
->- [Link several work items](#link-several-work-items)
->- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
->- [Link work items to new work items](#link-work-items-to-new-work-items)
->- [Link work items to work items in different projects (cross-organization)](#link-work-items-to-remote-work-items-cross-organization)
->- [Link work items to pull requests](#link-work-items-to-pull-requests)
->- [Link work items to GitHub objects](#link-work-items-to-github-objects)
->- [Link several items to new Git branches](#link-several-work-items-to-new-git-branches)
->- [Link work items to builds](#link-work-items-to-builds)
->- [Link work items to deployments](#link-work-items-to-deployments)
->- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
->- [Link work items to tests](#link-work-items-to-tests)
->- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document)
->- [View dependencies and track related work](#view-dependencies-and-track-related-work)
->- [Query for linked work items](#query-for-linked-work-items)
->- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
->- [Delete work item links](#delete-work-item-links)
-::: moniker-end
-
-::: moniker range=" < azure-devops"
-In this article, learn how to do the following tasks:  
-> [!div class="checklist"]
->- [Link work items to various objects](#link-work-items-to-various-objects)
->- [Link work items to other work items](#link-a-work-item-to-another-work-item)
->- [Link several work items](#link-several-work-items)
->- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
->- [Link work items to new work items](#link-work-items-to-new-work-items)
->- [Link work items to pull requests](#link-work-items-to-pull-requests)
->- [Link work items to GitHub objects](#link-work-items-to-github-objects)
->- [Link several items to new Git branches](#link-several-work-items-to-new-git-branches)
->- [Link work items to builds](#link-work-items-to-builds)
->- [Link work items to deployments](#link-work-items-to-deployments)
->- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
->- [Link work items to tests](#link-work-items-to-tests)
->- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document)
->- [View dependencies and track related work](#view-dependencies-and-track-related-work)
->- [Query for linked work items](#query-for-linked-work-items)
->- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
->- [Delete work item links](#delete-work-item-links)
-::: moniker-end
 
 ## Prerequisites
 
@@ -157,7 +113,7 @@ To add a link to another work item in the web portal, do the following steps:
 
    The following example uses the **Related** link type to a test case with ID of *280*.
 
-   ::: moniker range="azure-devops"
+   ::: moniker range=" azure-devops"
    :::image type="content" source="media/add-link/add-link-dialog.png" alt-text="Screenshot of Add link dialog, web portal, to an existing work item.":::
 
    You can only add links one at a time. You can't enter their IDs separated by commas or spaces.
@@ -180,7 +136,7 @@ To add a link to another work item in the web portal, do the following steps:
 4. Select from the **Link type** dropdown menu, for example, **Parent**, **Child**, or **Related**.
 5. In the **Work item** field, enter the ID of the work item you want to link to, then select **Add link**.
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
 
 ## Change the link type of an existing link
 
@@ -201,7 +157,7 @@ Do the following steps to link a work item to a new work item.
 
 1. From your work item, select **Links** > **Add link** > **New item**.
    
-   :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows sequence to add link to newly created a work item.":::
+   :::image type="content" source="media/add-link/add-link-new-item.png" alt-text="Screenshot sequence to add new or existing item link to work item.":::
 
 2. Specify the **Link type** and **Work Item Type**, and enter a title for the new work item and optional comment. Select **Add link**. 
 
@@ -213,14 +169,15 @@ Do the following steps to link a work item to a new work item.
 
    :::image type="content" source="media/add-link/new-issue-linked-item.png" alt-text="Screenshot of new work item Issue added.":::
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
+
 <a id="remote-work-items">  </a>
 
 ## Link work items to remote work items (cross-organization)
 
 Do the following steps to link work items to objects defined in other Azure DevOps organizations. You can only do so if both organizations use the same Microsoft Entra ID to manage users.
 
-1. From your work item, select **Links** > **Add link** > **New item**.
+1. From your work item, select **Links** > **Add link** > **Existing item**.
    
    :::image type="content" source="media/add-link/work-item-add-link-sequence.png" alt-text="Screenshot shows sequence to add link to newly created a work item.":::
 
@@ -237,9 +194,9 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
    The link tab maintains a count of all links to the work item. The **Remote Link Count** [field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that link to a work item defined in another project or organization.
 
-The following example shows two remote links, indicated by the :::image type="icon" source="../../media/icons/cloud-link.png" border="false"::: cloud icon, added to a user story.
+   The following example shows two remote links, indicated by the :::image type="icon" source="../../media/icons/cloud-link.png" border="false"::: cloud icon, added to a user story.
 
-:::image type="content" source="media/add-link/links-tab-remote-links.png" alt-text="Screenshot of User Story form, Link tab, showing two external links.":::
+   :::image type="content" source="media/add-link/links-tab-remote-links.png" alt-text="Screenshot of User Story form, Link tab, showing two external links.":::
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
@@ -258,12 +215,10 @@ The following example shows two remote links, indicated by the :::image type="ic
 
 For more information, see [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
-::: moniker range=">= azure-devops-2019" 
-
 <a id="link-github"></a>
 
 ## Link work items to GitHub objects
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Branch**, **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
@@ -271,7 +226,7 @@ When you connect Azure Boards with GitHub repositories, you can link work items 
 ::: moniker range="azure-devops-2019"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Commit** and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
-::: moniker range=">= azure-devops-2019" 
+
 > [!IMPORTANT]  
 > You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
@@ -282,14 +237,11 @@ For more information, see [Link GitHub commits, pull requests, branches, and iss
 1. From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) that you want to link to a new git branch.
 2. Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then **New branch...**. For more information, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 
-:::image type="content" source="media/add-link/link-git-branch.png" alt-text="Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch.":::
+   :::image type="content" source="media/add-link/link-git-branch.png" alt-text="Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch.":::
 
 ## Link work items to builds
-::: moniker-end
-::: moniker range=">= azure-devops-2020"
 
 Do the following steps to link work items to existing builds. These builds can be in your project or to other projects in your organization or collection.
-::: moniker-end
 
 ::: moniker range="azure-devops-2020"
 > [!NOTE]
@@ -304,7 +256,7 @@ Do the following steps to link work items to existing builds. These builds can b
 
    The build number is a combination of the pipeline and build name. If you don't know the build number, select **Find builds**.
 
-  :::image type="content" source="media/add-link/add-link-find-builds.png" alt-text="Screenshot shows highlighted button, Find builds.":::
+   :::image type="content" source="media/add-link/add-link-find-builds.png" alt-text="Screenshot shows highlighted button, Find builds.":::
 
 3. Choose the parameters to filter your search of builds.
 
@@ -351,18 +303,16 @@ You can link work items to existing builds from the **Add link** dialog.
 
 As you develop your software, you can capture which code changes and builds support the completion of a work item. Your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.
 
-::: moniker range=">= azure-devops-2019"
 The link types used to construct these links are: **Branch**, **Build**, **Changeset**, **Commit**, **Found in build**, **Integrated in build**, **Pull Request**, **Versioned Item**, and **Integrated in release environment**. These types appear in the following image.
 
 :::image type="content" source="../queries/media/link-type-reference/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of devops link types.":::
-::: moniker-end
 
 > [!TIP]
 > Drive development from the work item when you create it. You can also add the work item ID when creating branches, commits, and pull requests. Git lets you link work items to commits using the **Commit** link type. Here are the ways to do it:
 >
 > - Before committing your changes, add work item IDs in **Git Changes** for Visual Studio 2022 or **Team Explorer** for previous versions of Visual Studio:
 >
->   :::image type="content" source="../queries/media/link-git-commit-items.png" alt-text="Screenshot of Add work item ID or drag items before you commit your changes.":::
+>   :::image type="content" source="../queries/media/link-git-commit-items.png" alt-text="Screenshot of adding work item ID or dragging items before committing changes.":::
 >
 > - Use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, apply this comment `#35 Catch null exception` to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35.
 > - Use the **Development** control for Git development from the work item. For more information, see [Drive Git development from a work item in Azure Boards](../backlogs/connect-work-items-to-git-dev-ops.md).
@@ -373,28 +323,29 @@ As shown in the following image, the Deployment control displays release informa
 
 ### Deployment control
 
-Work item forms provide two controls to show and quickly navigate to development objects. This article describes the Deployment control. For information about the Development control, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
+The Deployment control provides several features to help you manage and track the release status of work items. The following list outlines these features:
 
-By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types.
+- **Default appearance:** The Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types by default.
+- **Custom work item types:** Custom work item types that use the Inherited process are automatically enabled.
+- **Release information:** The Deployment control shows the release information for two stages of the release pipeline integrated with Azure Boards.
+- **Linked work items:** This control only shows the work items that are linked to a Git commit or pull request for this pipeline.
+- **Visual insight:** Gain visual insight into the status of a work item as it is deployed to different release environments and quickly navigate to each release stage and run.
 
-Custom work item types that use the Inherited process are automatically enabled. The Deployment control shows the release information for two stages of the release pipeline integrated with Azure Boards.
+   :::image type="content" source="../work-items/media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Work item form, Deployment control.":::
 
-This control only shows the work items that are linked to a Git commit or pull request for this pipeline. You can also gain visual insight into the status of a work item as it is deployed to different release environments and quickly navigate to each release stage and run.
+- **Commit associations:** Work items associated with commits in the build show the status of the release.
+- **Project scope:** Only work items within the same project get linked to where the release pipeline is defined.
 
-:::image type="content" source="../work-items/media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Work item form, Deployment control.":::
+   :::image type="content" source="../work-items/media/deployments-control/release-settings-stages-1.png" alt-text="Screenshot showing multiple environments that the release is targeting.":::
 
-Work items associated with commits in the build show the status of the release. Only work items within the same project get linked to where the release pipeline is defined.
+- **Stage visibility:** When you open a work item, you can see the stages in real time.
+   
+   :::image type="content" source="../work-items/media/deployments-control/deployments-control-1.png" alt-text="Screenshot of Release Settings Stages, including Testing, Staging, Production, and Development.":::
 
-:::image type="content" source="../work-items/media/deployments-control/release-settings-stages-1.png" alt-text="Screenshot showing multiple environments that the release is targeting.":::
-
-When you open a work item, you can see the stages in real time.
-
-:::image type="content" source="../work-items/media/deployments-control/deployments-control-1.png" alt-text="Screenshot of Release Settings Stages, including Testing, Staging, Production, and Development.":::
-
-To populate the **Deployment** control, do the following steps:
+To populate the Deployment control, do the following steps:
 
 > [!NOTE]
-> The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline.
+> The Deployment control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline.
 
 1. Define a Classic release pipeline and set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).
 2. Configure the pipeline.
@@ -424,7 +375,7 @@ Team Foundation Version Control (TFVC) allows you to link work items to version 
 
 ## Link work items to tests
 
-Test-related link types link test case management work items to one another, or to other work items. From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, and which test suites are defined for a test plan. These objects aren't linked to each other through link types.
+Test-related link types link test case management work items to one another or to other work items. From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite and which test suites are defined for a test plan. These objects aren't linked to each other through link types.
 
 You can link work items to test cases using the **Tested/Tested By** link types. Use the same link controls you use to link work items to other work items. See [Link work items](#link-work-items).
 
@@ -438,15 +389,15 @@ For example, when you add Shared Steps to a Test Case, they automatically get li
 
 :::image type="content" source="media/add-link/insert-shared-steps.png" alt-text="Screenshot of Insert Shared Steps dialog.":::
 
-From **Test**, you can add test plans, test suites, and test cases, which are linked. You can't add them through a specific link type. The test system creates and manages the associations of test results to test cases and test plans.
+From the **Test** section, you can add test plans, test suites, and test cases, which are automatically linked. You can't add these items through a specific link type. The test system creates and manages the associations of test results to test cases and test plans.
 
 <a id="links-attachments"></a>
 
 ## Link work items to a Web site, network share, storyboard, or document
 
-You can use a hyperlink or Storyboard link type to link a work item to a Web site, network share, or document located on a network share. Both of these link types are one-way links. To add these link types, use the same controls described earlier. See [Link work items](#link-work-items).
+You can use a hyperlink or storyboard link type to link a work item to a website, network share, or document on a network share. Both link types are one-way links. To add these link types, use the same controls described earlier. See [Link work items](#link-work-items).
 
-When you use the storyboard link type, differentiate the link to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments.
+When using the storyboard link type, specify a storyboard or document that provides work item specifications. This link type allows your team to access the shared file and add their comments.
 
 :::image type="content" source="../queries/media/link-tracking-work-item-to-url-link-types.png" alt-text="Screenshot of Hyperlink or Storyboard link type to link a work item to a URL.":::
 
@@ -454,11 +405,11 @@ When you use the storyboard link type, differentiate the link to specify a story
 
 Azure DevOps provides several ways to view dependencies and track related work:
 
-- Query Editor: You can use the Query Editor to create custom queries that show all work items linked to a specific work item.
-- Backlogs and Boards: The Backlogs and Boards views show parent-child relationships between work items, allowing you to see dependencies at a glance.
-- Dependency Tracker: The Dependency Tracker is a Power BI report that provides a visual representation of dependencies between work items.
+- **Query Editor**: You can use the Query Editor to create custom queries that show all work items linked to a specific work item.
+- **Backlogs and Boards**: The Backlogs and Boards views show parent-child relationships between work items, allowing you to see dependencies at a glance.
+- **Dependency Tracker**: The Dependency Tracker is a Power BI report that provides a visual representation of dependencies between work items.
 
-To view the list of all objects linked to a work item, do the following steps.
+To view the list of all objects linked to a work item, do the following steps:
 
 1. Open the work item and select :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Links**. The links tab indicates the count of all linked objects. Linked objects get grouped under their link type, with a count within each group.
 
@@ -466,19 +417,23 @@ To view the list of all objects linked to a work item, do the following steps.
 
 1. (Optional) Expand or collapse each group, and sort within each group by **State**, **Latest Update**, or **Comment** by choosing the corresponding column title.
 
-For example, the following **Links** tab shows a portion of the 64 linked objects for a work item.
+   For example, the following **Links** tab shows a portion of the 64 linked objects for a work item.
 
-:::image type="content" source="../media/view-link-list/list-linked-objects-links-tab.png" alt-text="Screenshot of Links tab with many linked objects." lightbox="../media/view-link-list/list-linked-objects-links-tab.png":::
+   :::image type="content" source="../media/view-link-list/list-linked-objects-links-tab.png" alt-text="Screenshot of Links tab with many linked objects." lightbox="../media/view-link-list/list-linked-objects-links-tab.png":::
 
-Links prefaced with the :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: exclamation mark indicate that the build, release, or other object is deleted. Due to retention policies, these objects automatically get deleted after a certain time period.
+   Links prefaced with the :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: exclamation mark indicate that the build, release, or other object is deleted. Due to retention policies, these objects automatically get deleted after a certain time period.
 
 ## Query for linked work items 
 
 To filter items based on hierarchical links, use the **Tree of work items** query type. To filter items based on all link types, use **Work items and direct links**.
 
-To find work items linked to other work items with specific link types, use a query that shows a primary and a secondary set of work items. The primary set meets the field criteria, and the secondary set is linked to the primary set. You can’t query for work items in releases. You can query for work items with external links. To refine your search, add more query filters.
+To find work items linked to other work items with specific link types, use a query that shows a primary and a secondary set of work items:
+- The primary set meets the field criteria.
+- The secondary set is linked to the primary set.
 
-For query examples, see [Query work items by link or attachment count](../queries/linking-attachments.md).
+You can’t query for work items in releases, but you can query for work items with external links. Add more query filters to refine your search.
+
+For more information, see [Query work items by link or attachment count](../queries/linking-attachments.md).
 
 You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the **Test** > **Test Plans** page. For more information, see [Create test plans and test suites](../../test/create-a-test-plan.md).
 
@@ -606,10 +561,10 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 Do the following steps to delete a work item link.
 
-1. Open the work item that has links, or select it from a query result.
-1. Select the **Links** tab to see the list of links.
-1. Select the link that you want to delete, and then select **Remove link**.
-1. Confirm that you want to delete the link.
+1. Open the work item.
+2. Select the **Links** tab to see the list of links.
+3. Select the link that you want to delete, and then select **Remove link**.
+4. Confirm that you want to delete the link.
 
 After a work item gets linked to a commit or pull request, it continues to appear as part of the release stages. For example, if you have a work item that didn't pass testing criteria, you might want to remove it from the builds and releases.
 
