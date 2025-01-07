@@ -41,8 +41,8 @@
   items:
   - name: Guide to authentication
     href: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate extensions and security
-    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authenticate to Azure DevOps with Microsoft Entra
+    href: ./integrate/get-started/authentication/entra.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with service principals or managed identities
     href: ./integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with PATs
@@ -52,7 +52,9 @@
   - name: Use Microsoft Entra OAuth with Azure DevOps Services
     href: ./integrate/get-started/authentication/entra-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Use Azure DevOps OAuth 2.0 to create a web app
-    href: ./integrate/get-started/authentication/azure-devops-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    href: ./integrate/get-started/authentication/azure-devops-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json'
+  - name: Authenticate extensions and security
+    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json    
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: IIS Basic Authentication and PATs

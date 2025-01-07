@@ -28,12 +28,9 @@
   - name: Use personal access tokens
     displayName: alternate, password, create, modify, revoke
     href: ./accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json
-  - name: SSH public keys
+  - name: Use SSH public keys
     displayName: Git, repo, repository, encryption, public, private, configure
     href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json
-  - name: Alternate credentials
-    displayName: Git, repository, HTTPS, SSH, OAuth, PATs
-    href: ../repos/git/auth-overview.md?toc=/azure/devops/organizations/toc.json
   - name: Manage authorizations
     displayName: OAuth, services, access
     href: ./settings/manage-authorizations.md
