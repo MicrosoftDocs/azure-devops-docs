@@ -60,7 +60,7 @@ For a description of pipeline permissions, see [Pipeline or Build permissions](.
 
 ### Set project-level pipeline permissions
 
-::: moniker range=">= azure-devops-2022"
+::: moniker range="azure-devops-2022"
 
 To manage project-level permissions for users and groups across all build pipelines in your project, do the following steps:
 
@@ -68,14 +68,37 @@ To manage project-level permissions for users and groups across all build pipeli
     
     :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selection.":::
     
-2. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
+1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
 
-3. Select users or groups and set permissions to **Allow**, **Deny**, or **Not set**.
+1. Select users or groups and set permissions to **Allow**, **Deny**, or **Not set**.
+
+    :::image type="content" source="media/pipelines-project-level-security-dialog-2022.png" alt-text="Screenshot of project-level pipelines security dialog.":::
+
+1. Repeat the previous step to change the permissions for more groups and users.
+1. Close permissions dialog to save the changes. 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+To manage project-level permissions for users and groups across all build pipelines in your project, do the following steps:
+
+1. From your project, select **Pipelines**.
+    
+    :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selection.":::
+    
+1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
+
+1. Select users or groups and set permissions to **Allow**, **Deny**, or **Not set**.
 
     :::image type="content" source="media/pipelines-project-level-security-dialog.png" alt-text="Screenshot of project-level pipelines security dialog.":::
 
-4. Repeat the previous step to change the permissions for more groups and users.
-5. Close permissions dialog to save the changes. 
+1. Repeat the previous step to change the permissions for more groups and users.
+1. Close permissions dialog to save the changes. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2022"
 
 #### Add users or groups to the permissions dialog
  
@@ -108,17 +131,17 @@ To manage project-level permissions for users and groups across all build pipeli
     
     :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selections.":::
     
-2. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
-3. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
-4. Select a user or group and set the permissions.
+1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
+1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
+1. Select a user or group and set the permissions.
 
     :::image type="content" source="media/pipelines-project-level-permissions-2020.png" alt-text="Screenshot showing project-level pipeline security dialog.":::
 
-5. Repeat the previous step to change the permissions for more groups and users.
-6. Select **Save changes** or you can select **Undo changes** to undo the changes.
+1. Repeat the previous step to change the permissions for more groups and users.
+1. Select **Save changes** or you can select **Undo changes** to undo the changes.
 
-7. To remove a user or group from the list, select the user or group and select **Remove**.
-8. Select **Close**.
+1. To remove a user or group from the list, select the user or group and select **Remove**.
+1. Select **Close**.
 
 Your project-level pipelines permissions are set.
 
@@ -1213,7 +1236,7 @@ To manage security roles for all agent pools in the organization, do the followi
     3. Repeat the previous step to add more users and groups.
     4. Select a role and select **Add** 
 
-1: To create a new pipelines, you need **Create build pipeline** permissions. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to **Allow** for your security group. 
+1: To create a new pipeline, you need **Create build pipeline** permissions. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to **Allow** for your security group. 
 
 5. To remove a user or group from the list, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 

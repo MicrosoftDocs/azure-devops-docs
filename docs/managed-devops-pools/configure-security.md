@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 11/18/2024
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -37,7 +37,7 @@ Organizations are configured in the `organizationProfile` property of the Manage
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
             ...
@@ -195,7 +195,7 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
             ...
@@ -244,7 +244,7 @@ The following example shows the `osProfile` section of the **fabric-profile.json
 
 ## Pool administration permissions
 
-As part of the Managed DevOps Pool creation process, an organization level agent pool is created in Azure DevOps. The **Pool administration permissions** setting specifies which users are granted the administrator role of the newly created Azure DevOps pool. 
+As part of the Managed DevOps Pool creation process, an organization level agent pool is created in Azure DevOps. The **Pool administration permissions** setting specifies which users are granted the administrator role of the newly created Azure DevOps pool. To view and manage the Azure DevOps agent pool permissions after the Managed DevOps Pool is created, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -255,7 +255,7 @@ As part of the Managed DevOps Pool creation process, an organization level agent
 * **Specific accounts** - Specify the accounts to be added as administrators of the created agent pool in Azure DevOps. By default the Managed DevOps Pool creator is added to the list.
 
 > [!NOTE]
-> **Pool administration permissions** is configured on the **Security** tab when the pool is created, and are not displayed in the **Security** settings after the pool is created. To view and manage the Azure DevOps agent pool permissions after the Managed DevOps Pool is created, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
+> The **Pool administration permissions** setting is configured on the **Security** tab when the pool is created, and is not displayed in the **Security** settings after the pool is created. To view and manage the Azure DevOps agent pool permissions after the Managed DevOps Pool is created, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
 
 #### [ARM template](#tab/arm/)
 
@@ -330,6 +330,111 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
         }
     }
    ```
+
+* * *
+
+## Key Vault configuration
+
+Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning, which means the certificates will already exist on the machine by the time it runs your Azure DevOps pipelines. To use this feature, you must configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
+
+> [!NOTE]
+> As of `api-version 2024-10-19`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
+> 
+> Only one identity can be used to fetch secrets from the Key Vault.
+
+#### [Azure portal](#tab/azure-portal/)
+
+Key Vault integration is configured in **Settings > Security**.
+
+:::image type="content" source="./media/configure-security/configure-keyvault.png" alt-text="Screenshot of configuring Key Vault certificates.":::
+
+> [!NOTE]
+> Key Vault integration settings can be configured only after the pool is created. Key Vault integration settings can't be configured during pool creation and are not displayed in the **Security** tab during pool creation.
+
+#### [ARM template](#tab/arm/)
+
+Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` property. Set the `secretManagementSettings` to be able to access the desired certificate.
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "name": "fabrikam-managed-pool",
+            "type": "microsoft.devopsinfrastructure/pools",
+            "apiVersion": "2024-10-19",
+            "location": "eastus",
+            "properties": {
+            ...
+            "fabricProfile": {
+                "sku": {...},
+                "images": [...],
+                "osProfile": {
+                    "secretsManagementSettings": {
+                        "certificateStoreLocation": "LocalMachine",
+                        "observedCertificates": [
+                            "https://<keyvault-uri>/secrets/<certificate-name>"
+                        ],
+                        "keyExportable": false
+                    }
+                },
+                "storageProfile": {...},
+                "kind": "Vmss"
+            }
+        }
+    ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` property when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. Set the `secretManagementSettings` to be able to access the desired certificate.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `osProfile` section of the **fabric-profile.json** file with `secretsManagementSettings`configured.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {
+      "secretsManagementSettings": {
+          "certificateStoreLocation": "LocalMachine",
+          "observedCertificates": [
+              "https://<keyvault-uri>/secrets/<certificate-name>"
+          ],
+          "keyExportable": false
+      },
+      "logonType": "Interactive"
+    },
+    "storageProfile": {...}
+  }
+}
+```
+
+* * *
+
+### Configuring SecretManagementSettings
+
+Certificates retrieved using the `SecretManagementSettings` on your pool will automatically sync with the most recent versions published within the Key Vault. These secrets will be on the machine by the time it runs any Azure DevOps pipeline, meaning you can save time and remove tasks for fetching certificates.
+
+> [!IMPORTANT]
+> Provisioning of your agent virtual machines will fail if the secret cannot be fetched from the Key Vault due to a permissions or network issue.
+
+#### [Windows](#tab/windows/)
+
+For Windows, the Certificate Store Location is allowed to either be set to `LocalMachine` or `CurrentUser`. This setting will ensure that the secret is installed at that location on the machine. For specific behavior of how secret retrieval works, see [the documentation for the Azure VMSS Key Vault extension for Windows](/azure/virtual-machines/extensions/key-vault-windows).
+
+#### [Linux](#tab/linux/)
+
+For Linux, the Certificate Store Location can be any directory on the machine, and the certificates will be downloaded and synced to that location. For specifics on default settings and secret behavior, see [the documentation for the Azure VMSS Key Vault extension for Linux](/azure/virtual-machines/extensions/key-vault-linux).
 
 * * *
 

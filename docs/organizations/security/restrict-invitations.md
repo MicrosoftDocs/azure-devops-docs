@@ -11,12 +11,11 @@ monikerRange: 'azure-devops'
 ms.date: 11/30/2023
 ---
 
-# Restrict new user invitations from Project and Team Administrators 
+# Restrict administrators from inviting new users
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-By default, all administrators can invite new users to their Azure DevOps organization. Disabling this policy blocks Team and Project Administrators from inviting new users. Project Collection Administrators (PCAs) can add new users to the organization, regardless of the policy status. If a user is already a member of the organization, Project and Team Administrators can add that user to a project.
-
+By default, all administrators can invite new users to their Azure DevOps organization. Disabling this policy prevents Team and Project Administrators from inviting new users. However, Project Collection Administrators (PCAs) can still add new users to the organization regardless of the policy status. Additionally, if a user is already a member of the organization, Project and Team Administrators can add that user to specific projects.
 <!---
 
 |  Role               |Policy **on** |Policy **off**  |
@@ -30,9 +29,8 @@ can add users who are already in the organization to their team       |
 
 ## Prerequisites
 
-You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-
-Your organization must be backed by Microsoft Entra ID. For more information, see [Connect your organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).
+- **Permissions**: Be a member of the [**Project Collection Administrators** group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+- **Access levels:** Be a member in the destination Microsoft Entra ID. For more information, see [Convert a Microsoft Entra guest into a member](../accounts/faq-azure-access.yml).
 
 ## Turn off policy
 

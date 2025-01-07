@@ -30,6 +30,7 @@ In this article you'll learn how to:
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 

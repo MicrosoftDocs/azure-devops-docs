@@ -16,12 +16,12 @@ ms.date: 07/27/2022
 
 ::: moniker range="azure-devops"
 
-You configure resources either for yourself or for your team, project, or organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to. 
+You can configure resources for yourself, your team, project, or organization from the administrative **Settings** page. The settings available to you depend on your security group membership or administrative role.
 
-If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+If you're new to being a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md) for a comprehensive guide.
 
 > [!NOTE]  
-> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). For more information about Stakeholder access, see [Stakeholder access quick reference](../security/stakeholder-access.md). 
+> You can delegate several tasks to a user with Basic or Stakeholder access by adding them to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md). 
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 ## User settings
 
-Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications.
+Individual contributors can customize their experience in Azure DevOps by setting user preferences, enabling preview features, and managing their favorites and notifications. The following table outlines the various user settings available:
 
 :::row:::
    :::column span="1":::
@@ -153,9 +153,9 @@ Individual contributors can set their user preferences, enable features that are
 
 ## Team administrator role and managing teams
 
-Team administrators configure team resources, which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
+Team administrators are responsible for configuring team resources, which primarily include Agile tools and dashboards. To configure these resources, get added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md) or be a member of the Project Administrators or Project Collection Administrators groups.
 
-For a complete overview of all Agile tools that you can configure, see [Manage teams and configure team tools](manage-teams.md).
+The following table provides an overview of the Agile tools and resources that team administrators can configure. For a comprehensive guide, see [Manage teams and configure team tools](manage-teams.md).
 
 :::row:::
    :::column span="1":::

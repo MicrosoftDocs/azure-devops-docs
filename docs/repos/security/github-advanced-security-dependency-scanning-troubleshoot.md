@@ -49,10 +49,6 @@ For a JavaScript project, here is a sample YAML snippet:
 - task: AdvancedSecurity-Dependency-Scanning@1
 ```
 
-### Dependency scanning not picking up new vulnerabilities 
-
-If you are running a new build but not seeing new vulnerabilities as expected, ensure that the build is run with a new commit.
-
 ### Dependency scanning task timeout 
 
 The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
@@ -62,7 +58,7 @@ To use this variable, add `DependencyScanning.Timeout` as a pipeline variable:
 >[!div class="tabbedCodeSnippets"]
 ```yaml
 - task: AdvancedSecurity-Dependency-Scanning@1
-- env:
+  env:
     DependencyScanning.Timeout: 600
 ```
 

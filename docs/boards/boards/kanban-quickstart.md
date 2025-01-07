@@ -20,6 +20,8 @@ Boards provide an intuitive and visual way to manage your projects, track work i
 > [!NOTE]  
 >  You can only create or add boards to a project by adding another team. Boards only  get created when a project or team gets created. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 [!INCLUDE [temp](../includes/open-kanban-board.md)] 

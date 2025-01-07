@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.custom: arm2024
 ms.author: wonga
 author: wonga
-ms.date: 11/10/2023
+ms.date: 12/26/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -18,9 +18,8 @@ monikerRange: 'azure-devops'
 
 > [!NOTE]
 > Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWY8q]
 
-Add Microsoft Entra service principals and managed identities to your Azure DevOps Services organizations to grant access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
+Adding Microsoft Entra service principals and managed identities to your Azure DevOps Services organizations will grant them access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
 
 ## About service principals and managed identities
 
@@ -32,7 +31,7 @@ Use the following steps to authenticate these identities to Azure DevOps to allo
 
 ## Configure managed identities and service principals
 
-Your implementation might vary, but at a high-level, the following steps help you start using service principals in your workflow. Consider looking at one of our [sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) to follow along with an example on your own.
+Your implementation might vary, but at a high-level, the following steps help you start using service principals in your workflow. Consider looking at one of our [sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) to follow along.
 
 ### 1. Create a new managed identity or application service principal
 
@@ -59,7 +58,7 @@ For more information, see the following articles and video:
 * [Manage user-assigned managed identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8K]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9cf4e49-db98-4247-8770-b8707b043f17]
 
 ### 2. Add a service principal to an Azure DevOps organization
 
@@ -78,52 +77,97 @@ If you're a PCA, you can also grant a service principal access to specific proje
 ### 3. Setting permissions on a service principal
 After your service principals are added to the organization, you can treat them similarly to standard user accounts. You can assign permissions directly on a service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals?view=azure-devops-rest-7.1&preserve-view=true) to perform CRUD operations on service principals.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWG70]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e8ee6f58-3939-4170-b112-0ca1b39b0298]
 
-This might differ from how you're used to setting up application permissions in a Microsoft Entra application for other Azure resources. Azure DevOps doesn't rely on the ["Application permissions" setup](/entra/identity-platform/permissions-consent-overview#types-of-permissions) available to application registrations through the Azure portal. These application permissions apply permissions to a service principal across all organizations tied to a tenant and have no knowledge of the additional organization, project, or object permissions available in Azure DevOps. To offer service principals more granular permissions, we rely on our own permissions model instead of that through Entra ID. 
+Setting these permissions might differ from how you're used to setting up application permissions in a Microsoft Entra application for other Azure resources. Azure DevOps doesn't rely on the ["Application permissions" setup](/entra/identity-platform/permissions-consent-overview#types-of-permissions) available to application registrations through the Azure portal. These application permissions apply permissions to a service principal across all organizations tied to a tenant and have no knowledge of the organization, project, or object permissions available in Azure DevOps. To offer service principals more granular permissions, we rely on our own permissions model instead of Entra ID's. 
 
 ### 4. Managing a service principal
 Management of service principals differs from user accounts in the following key ways:
 
 * Service principals don't have emails and as such, they can't be invited to an organization via email.
 * Group rules for licensing currently don't apply to service principals. If you want to assign an access level to a service principal, it's best to do so directly. 
-* While service principals can be added to Microsoft Entra groups (in the Azure portal), we have a current technical limitation preventing us from being able to display them in a list of Microsoft Entra group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra group they belong to. 
-* Not all users in a Microsoft Entra group are immediately part of an Azure DevOps organization just because an admin creates a group and adds a Microsoft Entra group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
+* Service principals can be added to Microsoft Entra groups (in the Azure portal). There currently exists a technical limitation preventing us from being able to display them in a list of Microsoft Entra group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra group they belong to. 
+* Users in a Microsoft Entra group won't be part of an Azure DevOps organization immediately just because an admin creates a group and adds a Microsoft Entra group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
 * You can't modify a service principal’s display name or avatar on Azure DevOps.
-* A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
+* Service principals get licenses in each organization they get added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 
-### 5. Access Azure DevOps resources with a Microsoft Entra ID token
+### 5. Get a Microsoft Entra ID token
 
-<a name='get-a-microsoft-entra-id-token'></a>
+#### (a) Acquire a Microsoft Entra ID token programmatically
 
-#### Get a Microsoft Entra ID token
-Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. For more information, see the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
+Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. See the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token).
 
-The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
+The returned access token is a JSON web token (JWT) with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
-#### Use the Microsoft Entra ID token to authenticate to Azure DevOps resources
+#### (b) Acquire a Microsoft Entra ID token with the Azure CLI
+For ad-hoc operations, it might be easier to acquire a one-off Microsoft Entra ID token through the Azure CLI. This approach is preferred for operations that don't need a persistent token to be regularly rotated, like API calls or git clone operations.
+
+**Prerequisites**
+* **Azure tenant id and subscription id**: Make sure the subscription is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your tenant or subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+* **Azure app client ID and client secret**
+* [**Azure CLI**](/cli/azure/install-azure-cli)
+
+These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/service-prin-aad-token).
+
+  1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
+  2. Follow the on-screen instructions and finish signing in.
+  ``` powershell
+  # To authenticate a service principal with a password or cert:
+  az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
+
+  # To authenticate a managed identity:
+  az login --identity
+  ```
+
+  3. Set the right correct subscription for the signed-in service principal by entering the command:
+  ``` powershell
+  az account set -s <subscription-id>
+  ```
+
+  4. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
+  ``` powershell
+  $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+  ```
+
+  5. Now, you can use `az cli` commands per usual. Let's try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
+  ```powershell
+  $apiVersion = "7.1-preview.1"
+  $uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
+  $headers = @{
+      Accept = "application/json"
+      Authorization = "Bearer $accessToken"
+  }
+  Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
+  ```
+
+
+> [!NOTE]
+> Use the Azure DevOps application ID, not our resource URI, for generating tokens.
+
+### 6. Use the Microsoft Entra ID token to authenticate to Azure DevOps resources
+
 In the following video example, we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWNVM]
-
-* While service principals can be added to Microsoft Entra ID groups (in the Azure portal), we have a current technical limitation preventing us from being able to display them in a list of Microsoft Entra ID group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra ID group they belong to. 
-* Not all users in a Microsoft Entra ID group are immediately part of an Azure DevOps organization just because an admin creates a group and adds a Microsoft Entra ID group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra ID group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
-* You can't modify a service principal’s display name or avatar on Azure DevOps.
-* A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8397f848-b946-4c30-8d0c-78aa4784a549]
 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8L]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f4a20e00-c2df-49cc-9b86-7454bd84b9ce]
 
 Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
 
-Service principals can be used to call Azure DevOps REST APIs and do most actions, but it's limited from the following operations:
+Some common scenarios for authenticating with service principals besides making Azure DevOps REST API calls can be found in these resources:
+* Connect your service principal to a NuGet feed with [Nuget.exe](../../../artifacts/nuget/nuget-exe.md) or [dotnet](../../../artifacts/nuget/dotnet-setup.md).
+* [Publish extensions to the Visual Studio Marketplace via command line](../../../extend/publish/command-line.md) with your service principal.
+* Create [secret-free service connections in Azure Pipelines](../../../pipelines/library/connect-to-azure.md) backed by service principals or managed identities.
+* [Clone repos using a service principal with Git Credential Manager](../../../repos/git/set-up-credential-managers.md)
+
+## How do service principals differ from users?
+* You can't modify a service principal’s display name or avatar on Azure DevOps.
+* A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 * Service principals can't be organization owners or create organizations.
 * Service principals can't create tokens, like [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH Keys](../../../repos/git/use-ssh-keys-to-authenticate.md). They can generate their own Microsoft Entra ID tokens and these tokens can be used to call Azure DevOps REST APIs.
 * We don't support [Azure DevOps OAuth](./oauth.md) for service principals.
-
-> [!NOTE]
-> You can only use Application ID and not the Resource URIs associated with Azure DevOps for generating tokens.
 
 ## FAQs
 
@@ -131,50 +175,17 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 
 #### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
-A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, meaning token strings that represent a user’s username and password, they're incredibly risky to use as they can easily fall into the wrong person’s hands. Microsoft Entra tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
+A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). Improperly stored PATs can fall into the wrong hands and last the duration of its often longer lifespan. Microsoft Entra tokens expire every hour, limiting the overall risk factor when leaked. For common PAT scenarios, we [share some examples on how you might explore using a Microsoft Entra token instead](entra.md#replacing-pats-with-microsoft-entra-tokens).
 
 You can't use a service principal to create a personal access token.
 
 #### Q: What are the rate limits on service principals and managed identities?
 
-A: At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
+A: Service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
 #### Q: Will using this feature cost more?
 
 A: Service principals and managed identities are priced similarly as users, based on the access level. One notable change pertains to how we treat "multi-org billing" for service principals. Users get counted as only one license, no matter how many organizations they're in. Service principals get counted as one license per each organization the user's in. This scenario is similar to standard "user assignment-based billing." 
-
-#### Q: Can I use a service principal or managed identity with Azure CLI?
-
-A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Microsoft Entra ID access tokens](#get-a-microsoft-entra-id-token). See these examples for how you might pass a Microsoft Entra token in to authenticate with CLI.
-
-```powershell
-# To authenticate with a command: After typing this command, the az devops login will prompt you to enter a token. You can add an Entra ID token too! Not just a PAT.
-az devops login
-
-# To authenticate a service principal with a password or cert:
-az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
-
-# To authenticate a managed identity:
-az login --identity
-```
-
-Now, let's get a Microsoft Entra token (the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`) and try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
-
-```powershell
-Write-Host "Obtain access token for Service Connection identity..."
-$accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
-
-Write-Host "Use access token with Azure DevOps REST API to list projects in the organization..."
-$apiVersion = "7.1-preview.1"
-$uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
-$headers = @{
-    Accept = "application/json"
-    Authorization = "Bearer $accessToken"
-}
-Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
-```
-
-Now, you can use `az cli` commands per usual. 
 
 #### Q: Can I add a managed identity from a different tenant to my organization?
 
@@ -188,10 +199,10 @@ A: You can only add a managed identity from the same tenant that your organizati
 6. Create a new application registration in the target tenant.
 7. Upload the downloaded certificate to this new application in the "Certificates & secrets" tab.
 8. Add this application's service principal to the Azure DevOps organization we want it to access and remember to set up the service principal with any required permissions.
-9. To get a Microsoft Entra access token from this service principal that makes use of the managed identity certificate, see the following code sample:
+9. Get a Microsoft Entra access token from this service principal that makes use of the managed identity certificate with this code sample:
 
 > [!NOTE]
-> You must regularly rotate certificates, as always.
+> Always regularly rotate your certificates.
 
 ```cs
 public static async Task<string> GetSecret(string keyVaultName, string secretName)
@@ -226,199 +237,25 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 }
 ```
 
-### Artifacts
-#### Q: Can I use a service principal to connect to feeds?
-
-A: Yes, you can connect to any Azure Artifacts feed with a service principal. In the following examples, we demonstrate how to connect with a Microsoft Entra ID token for NuGet, npm, and Maven, but other feed types should also work.
-
-##### NuGet project setup with Microsoft Entra token
-
-1. Make sure you have the [latest NuGet](https://www.nuget.org/downloads). 
-
-1. Download and install the Azure Artifacts Credential Provider:
-    
-    - [Windows](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-windows)
-    
-    - [Linux/Mac](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac)
-
-1. Add a *nuget.config* file to your project, in the same folder as the *.csproj* or *.sln* file:
-
-    - Project-scoped feed:
-    
-        ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <configuration>
-          <packageSources>
-            <clear />
-            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-          </packageSources>
-        </configuration>
-        ```
-
-    - Organization-scoped feed:
-    
-        ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <configuration>
-          <packageSources>
-            <clear />
-            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-          </packageSources>
-        </configuration>
-        ```
-
-1. Set the [ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md#environment-variables) environment variable as shown below, specifying your feed URL, the service principal's application (client) ID, and the path to your service principal certificate:
-
-    - **PowerShell**:
-    
-        ```PowerShell
-        $env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'
-        {
-          "endpointCredentials": [
-            {
-              "endpoint": "<FEED_URL>",
-              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
-              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
-            }
-          ]
-        }
-        '@
-        ```
-
-    - **Bash**:
-    
-        ```bash
-        export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
-          "endpointCredentials": [
-            {
-              "endpoint": "<FEED_URL>",
-              "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
-              "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
-            }
-          ]
-        }'
-        ```
-
-<a name='npm-project-setup-with-entra-id-tokens'></a>
-
-##### npm project setup with Microsoft Entra tokens
-> [!NOTE]
-> The vsts-npm-auth tool does not support Microsoft Entra access tokens. 
-
-1. Add a `.npmrc` to your project, in the same directory as your `package.json`.
-
-    ```
-    registry=https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/registry/ 
-    always-auth=true
-    ```
-2. Get an access token for your service principal or managed identity.
-3. Add this code to your `${user.home}/.npmrc` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
-
-    ```
-    //pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
-    ```
-
-<a name='maven-project-setup-with-entra-id-tokens'></a>
-
-##### Maven project setup with Microsoft Entra tokens
-
-1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
-
-    ```xml
-    <repository>
-      <id>Fabrikam</id>
-      <url>https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/maven/v1</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    ```
-
-2. Get an access token for your Service Principal or Managed Identity.
-
-3. Add or edit the `settings.xml` file in `${user.home}/.m2` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
-
-    ```xml
-    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
-      <servers>
-        <server>
-          <id>Fabrikam</id>
-          <username>Fabrikam</username>
-          <password>[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]</password>
-        </server>
-      </servers>
-    </settings>
-    ``` 
-
-### Marketplace
-#### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
-
-A: Yes. Do the following steps.
-
-1. Add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
-
-2. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
-```
-tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
-```
-
-### Pipelines
-
-#### Q: Can I use a managed identity within a service connection? How can I more easily rotate secrets for the service principal in my service connection? Can I avoid storing secrets in a service connection altogether?
-Azure supports workload identity federation using the OpenID Connect protocol, which allows us to create secret-free service connections in Azure Pipelines backed by service principals or managed identities with federated credentials in Microsoft Entra ID. As part of its execution, a pipeline can exchange its own internal token with a Microsoft Entra token, thereby gaining access to Azure resources. Once implemented, this mechanism is recommended in the product over [other types of Azure service connections](/azure/devops/pipelines/library/connect-to-azure) that exist today. This mechanism can also be used to set up secret-free deployments with any other OIDC compliant service provider. This mechanism is in preview.
-
-### Repos
-#### Q: Can I use a service principal to do git operations, like clone a repo?
-
-A: See the following example of how we passed a [Microsoft Entra ID token](#get-a-microsoft-entra-id-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
-
-```powershell
-$ServicePrincipalAadAccessToken = 'Entra ID access token of a service principal'
-git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
-```
-
-> [!TIP] 
-> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Microsoft Entra tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
-
-A helpful tip on how to get the access token from the Azure CLI to call git fetch:
-
-1. Open the Git configuration of your repository: 
-```sh
-git config -e
-```
-
-1. Add the following lines, where the Azure DevOps resource's UUID is `00000000-0000-0000-0000-000000000000`:
-```sh
-[credential]
-    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource     00000000-0000-0000-0000-000000000000 --query accessToken -o tsv)\"; }; f" 
-```
-
-1. Test that it works using: 
-```sh
-GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
-```
-
 ## Potential errors
+
+### The Git repository with name or identifier '{`repoName`}' does not exist or you do not have permissions for the operation you are attempting.
+
+Ensure that the service principal has at least a ["Basic" license](/azure/devops/organizations/security/access-levels) to access repositories. A "Stakeholder" license isn't sufficient.
 
 ### Failed to create service principal with object ID '{`provided objectId`}'
 
 There's no service principal with the `provided objectId` in the tenant connected to your organization. One common reason is that you're passing in the object ID of the app registration, instead of the object ID of its service principal. Remember, a service principal is an object that represents the application for a given tenant, it's not the application itself.
 The `service principal object ID` can be found in your tenant's "Enterprise Applications" page. Search for the application's name and select on the "Enterprise Application" result that returns. This result is the page of the service principal / enterprise application and you can use the Object ID found on this page to create a service principal in Azure DevOps.
 
-### Access Denied: {`ID of the caller identity`} needs the following permission(s) on the resource Users to perform this action: Add Users
+### Access Denied: {`ID of the caller identity`} needs the following permissions on the resource Users to perform this action: Add Users
 
 This error might be due to one of the following reasons:
 * You're not the owner of the organization, project collection administrator, or a project or team administrator.
 * You're a project or team administrator, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations.md) is disabled.
 * You're a project or team administrator who can invite new users, but you're trying to assign a license when you invite a new user. Project or team administrators aren't allowed to assign a license to new users. Any new invited user is added at the [default access level for new users](/azure/devops/organizations/billing/buy-basic-access-add-users#select-default-access-level-for-new-users). Contact a PCA to change the license access level.
 
-### Azure DevOps Graph List API returns empty list, even though we know there are service principals in the organization
+### Azure DevOps Graph List API returns an empty list, even though we know there are service principals in the organization
 The Azure DevOps Graph List API might return an empty list, even if there are still more pages of users to return. Use the `continuationToken` to iterate through the lists, and you can eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it's possible that the first X results return empty.
 
 ### TF401444: Sign-in at least once as {`tenantId`\`tenantId`\`servicePrincipalObjectId`} in a web browser to enable access to the service.

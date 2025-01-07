@@ -113,18 +113,11 @@ Emailing lists of work items is a common way to share work tracking information.
 
 ::: moniker-end 
 
+## Prerequisites
 
-
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
-
-> [!NOTE]   
-> Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, boards, and dashboards.  
-
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 <a id="email-print-send-links"></a>
-
-
-
 <a id="email-item"></a>
 
 ## Email a single item  

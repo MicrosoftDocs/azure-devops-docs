@@ -21,8 +21,10 @@ A board presents work items in the form of cards, where each card represents a w
 > [!NOTE] 
 > This article addresses customization of a board. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- See the section, [Card customization sequence](#card-customization-sequence)
+- **Tasks (optional)**: See the section, [Card customization sequence](#card-customization-sequence)
 
 ## Card customization options  
 
@@ -60,7 +62,7 @@ Within the [Settings dialog for a board](#open-your-board-settings), you have th
 
 ## Card customization sequence 
 
-Before you configure the cards, make sure the following tasks are complete, or you might need to revisit your configuration.  
+Before you configure the cards, ensure the following tasks are complete, or you might need to revisit your configuration.  
 
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
@@ -270,7 +272,7 @@ In addition to the dynamic card reordering, you can also move a card to a specif
 You can reorder the work items within a board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
 
 > [!NOTE]   
-> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Move to column position** feature requires the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 Specify a value within the range listed, which corresponds to the number of items currently in the column. 
 

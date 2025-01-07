@@ -11,8 +11,8 @@ ms.date: 10/28/2024
 ::: moniker range="azure-devops"
 
 - **Access:**
-  - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-  - Be a [member of the project](../../organizations/accounts/add-organization-users.md) and have at least **Basic** access or have specific [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.
+  - Anyone with [project access](../../organizations/accounts/add-organization-users.md), including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+  - At least **Basic** access, or specific [dashboard permissions](../dashboards/dashboard-permissions.md).
 - **Permissions:**
   - **Team dashboards**: To add, edit, or manage a team dashboard, meet the following requirements:
     - Be a member of the team.
@@ -23,8 +23,8 @@ ms.date: 10/28/2024
 ::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
 
 - **Access:**
-  - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-  - Be a [member of the project](../../organizations/accounts/add-organization-users.md) and have at least **Basic** access, have specific [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you, or be a member of the Project Administrators group.
+  - Anyone with [project access](../../organizations/accounts/add-organization-users.md), including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+  - At least **Basic** access or specific [dashboard permissions](../dashboards/dashboard-permissions.md).md) granted to you, or be a member of the Project Administrators group.
 - **Tools:** Have [Analytics enabled](../dashboards/analytics-extension.md) for [Analytics widgets](../dashboards/analytics-widgets.md) to work with your dashboard.
 
 ::: moniker-end

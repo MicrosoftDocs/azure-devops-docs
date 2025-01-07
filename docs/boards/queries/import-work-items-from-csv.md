@@ -4,11 +4,12 @@ titleSuffix: Azure Boards
 description: Learn how to import, update, and export work items in bulk from a CSV formatted file in Azure Boards. 
 ms.custom: "boards-queries, linked-from-support"
 ms.service: azure-devops-boards
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
-ms.date: 10/10/2024
+ms.date: 11/26/2024
 #customer intent: As a team member, I want to import and export work items in CSV format to create or update them in bulk by using Excel.
 ---
 
@@ -17,16 +18,34 @@ ms.date: 10/10/2024
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range="> azure-devops-2019"
-Import and export work items in bulk using CSV formatted files in Azure Boards. While you can continue to use Excel for bulk import and updates, you can use the native import/export feature that doesn't require Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+Import and export work items in bulk using CSV-formatted files in Azure Boards. While you can continue to use Excel for bulk imports and updates, the native import/export feature allows you to manage work items without requiring Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
-You can export of work items in bulk using a CSV formatted file. While you continue to use Excel for bulk import and updates, you can use the native export feature from Queries that doesn't require Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
-::: moniker-end 
+Export work items in bulk using CSV-formatted files. Although Excel can still be used for bulk imports and updates, the native export feature from Queries enables you to manage work items without relying on Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+::: moniker-end
+
+## Prerequisites
+
+**Permissions**:
+- Export work items: Be a member of the **Project Administrators** security group or have **View project-level information** set to **Allow**.
+- Import work items: Be a member of the **Project Administrators** security group or the **Team Foundation Administrators** security group.
 
 ::: moniker range=">= azure-devops-2020"
 
 ## Import new work items
+
+To import work items in bulk, your CSV file must include the **Work Item Type** and **Title** fields. You can include more fields as needed. Follow these guidelines to import a CSV file:
+
+- **Exclude the ID field:** Don't include the **ID** field in your CSV file.
+- **Remove project-specific fields:** If the CSV file was exported from a different project, remove fields specific to the source project, such as **Area Path** and **Tags**. For a list of default fields, see [Work Item Field Index](../work-items/guidance/work-item-field.md). 
+- **Include the Test Steps field:** When importing test cases, include the **Test Steps** field. For more information, see [Bulk Import or Export Test Cases](../../test/copy-clone-test-items.md).
+- Don't include **Assigned To**, **Changed Date**, **Created By**, or **State** fields.
+- **Validate required fields:**
+  - Ensure the **Work Item Type** and **Title** fields are present in the CSV file.
+  - Confirm that the **Work Item Type** corresponds to a valid type in the target project.
+  - Verify that all fields in the CSV file match the fields for the work item types in the target project.
+- **Handle invalid values:** If the imported CSV file contains work items with invalid values, you must edit and correct these work items after import before they can be saved.
 
 Do the following steps to import new work items.
 
@@ -34,7 +53,7 @@ Do the following steps to import new work items.
 > You can import up to 1,000 work items at a time. If you have more than 1,000 work items to import, break them into multiple files and import them separately.
 
 1. Create a local *import.csv* file and open it in Visual Studio Code or Excel.
-1. The file must contain the **Work Item Type** and the **Title** fields. You can include other fields as needed. For a list of default fields, see [Work item field index](../work-items/guidance/work-item-field.md).  
+2. The file must contain the **Work Item Type** and the **Title** fields. You can include other fields as needed. For a list of default fields, see [Work item field index](../work-items/guidance/work-item-field.md).  
 
    The following example includes the **Priority** field.
 
@@ -47,28 +66,28 @@ Do the following steps to import new work items.
    Issue,Remove old test code,2
    ```
 
-1. From the web portal for your project, open **Boards** > **Queries**, and then select **Import work items**.
+3. From the web portal for your project, select **Boards** > **Queries** > **Import work items**.
 
    :::image type="content" source="media/import-csv/open-queries-import.png" alt-text="Screenshot showing the Boards page with Queries, then Import work items selected.":::
 
-1. Select **Choose file**, choose your file, and then select **Import**.
+4. Select **Choose file**, choose your file, and then select **Import**.
 
    :::image type="content" source="media/import-csv/import-file.png" alt-text="Screenshot showing Import work items dialog with the Import button highlighted.":::
 
    The import process loads the imported work items into the queries view in an **unsaved** state. No IDs get assigned.
 
-1. Verify the results and then select **Save items** to save the work items.
+5. Verify the results and then select **Save items** to save the work items.
 
    :::image type="content" source="media/import-csv/imported-file.png" alt-text="Screenshot showing Save items for imported work items.":::
 
    > [!TIP]
    > Don't assign IDs to new work items that you add. Assigning IDs results in an error message.
 
-1. The system highlights those work items with data issues. Resolve the data issues before you save the work items. In this example, an invalid value is in the Priority field. Fix the data by opening the work item directly. Instead, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
+6. The system highlights those work items with data issues. Resolve the data issues before you save the work items. In this example, an invalid value is in the Priority field. Fix the data by opening the work item directly. Instead, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
    :::image type="content" source="media/import-csv/imported-file-error.png" alt-text="Screenshot showing work items with data issues to fix.":::
 
-The following tips can be useful.
+### Tips
 
 - **Parent-child links:** You can add parent-child links between work items you import by indenting the title columns, as shown in [Can I import a CSV file that have parent-child links?](#tree-items). However, you can't specify any other link types when you import or update work items.
 - **Default State field:** When you import new work items, the **State** field is set to *New* by default. You can't specify a different state during the import process. If you need to change the state of imported work items, use the following workaround:
@@ -130,28 +149,22 @@ The following tips can be useful.
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Export list as a CSV file
 
 From any query, you can export a list of work items as a comma-delimited list. [Open the query](view-run-query.md), select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Export to CSV**.
-::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]
 > Requires Azure DevOps Server 2019 Update 1 or later version.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
 :::image type="content" source="../work-items/media/email/export.png" alt-text="Screenshot showing Export a query as CSV.":::
-
-::: moniker-end 
 
 ::: moniker range=">= azure-devops-2020"
 
 ## Export and import work items to a different project
 
-You can use this feature to export work items from one project and import them to another project. However, before you import them to another project, you must remove the work item ID. You get an error if you attempt to import new work items to a project with an ID specified.
+You can use this feature to export work items from one project and import them to another project. But, before you import them to another project, you must remove the work item ID. You get an error if you attempt to import new work items to a project with an ID specified.
 ::: moniker-end 
 
 ## Import HTML fields
@@ -172,7 +185,7 @@ Work Item Type,Title,Description
 
 ## Convert multi-line fields to plaintext
 
-To disable HTML in multi-line fields to ensure that they're plaintext, you can use the `witadmin changefield` command. For more information, see [Manage Work Item Fields](../../reference/witadmin/manage-work-item-fields.md).
+To disable HTML in multi-line fields to ensure that they're plaintext, use the `witadmin changefield` command. For more information, see [Manage Work Item Fields](../../reference/witadmin/manage-work-item-fields.md).
 
 Example command:
 
@@ -188,6 +201,25 @@ When you work with HTML fields across different Microsoft products, you might en
 - Use appropriate HTML tags and structures to minimize discrepancies. You can add multiple tags separated by a semicolon. For more information, see [Tasks you can and can't do with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 For more information on managing HTML content and ensuring compatibility, see [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md).
+
+::: moniker range=">= azure-devops-2020"
+
+## Unsupported work item types
+
+The CSV import doesn't support the following work item types:
+
+- Code Review Request
+- Code Review Response
+- Feedback Request
+- Feedback Response
+- Test Case
+- Test Plan
+- Test Suite
+- Shared Parameter
+
+For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md).
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -237,25 +269,10 @@ A: When you use the Web UI, the identity picker goes through extra steps to vali
 
 When you import from CSV, for performance reasons, the identity picker doesn't go through these extra steps. It only checks to see if there's a matching User Principal Name (UPN) already in the org. If it doesn't find a matching UPN, it reports that the identity is unknown.
 
-### Q: Does CSV import support all work item types?
-
-A: No, the CSV import doesn't support the following work item types:
-
-- Code Review Request
-- Code Review Response
-- Feedback Request
-- Feedback Response
-- Test Case
-- Test Plan
-- Test Suite
-- Shared Parameter
-
-For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md).
-
 ::: moniker-end 
 
 ## Related articles
 
-- [Work item field index](../work-items/guidance/work-item-field.md)
-- [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.yml)
+- [Access the Work Item Field Index](../work-items/guidance/work-item-field.md)
+- [Bulk Add or Modify Work Items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Consult FAQs: Work in Excel Connected to Azure Boards](../backlogs/office/faqs.yml)

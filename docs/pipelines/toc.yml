@@ -217,7 +217,8 @@
     - name: Invoke Azure Function / REST API checks
       displayName: azure function, checks
       href: process/invoke-checks.md
-    - name: Define a gate
+    - name: Deployment gates concepts
+      displayName: gates, checks, approvals, pre-deployment, post-deployment
       href: release/approvals/gates.md
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
@@ -241,6 +242,8 @@
   - name: Managed DevOps pools
     href: /azure/devops/managed-devops-pools/overview
     displayName: pools, agents
+  - name: Agent version 4.x
+    href: agents/v4-agent.md
   - name: Agent version 3.x
     href: agents/v3-agent.md
   - name: Create & manage agent pools
@@ -324,6 +327,9 @@
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections
           href: release/troubleshoot-workload-identity.md
+        - name: Troubleshoot Azure Resource Manager service connections
+          href: release/azure-rm-endpoint.md
+          displayName: service connection, service principal, Azure resource manager, azure
       - name: Azure App Service (Web Apps)
         items:
         - name: Deploy to App Service using Azure Pipelines
@@ -403,6 +409,9 @@
       - name: Create a Classic release
         displayName: release artifacts, deployment artifacts
         href: release/releases.md
+      - name: Create a multi-stage release
+        displayName: classic release, classic deployment
+        href: release/define-multistage-release-process.md
       - name: Artifact sources
         displayName: artifacts, source, release artifacts
         href: release/artifacts.md
@@ -421,9 +430,6 @@
       - name: Deploy to a Windows VM
         displayName: windows vm, deployment vm
         href: release/deploy-webdeploy-iis-deploygroups.md
-      - name: Classic release pipelines
-        displayName: classic release, classic deployment
-        href: release/define-multistage-release-process.md
       - name: Stage templates in Azure Pipelines
         displayName: environment, templates, stages
         href: release/env-templates.md
@@ -538,7 +544,7 @@
       - name: Java to web app with MicroProfile
         href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json
     - name: Android
-      displayName: android sdk, xamarin, android sdk platform tools
+      displayName: android sdk,android sdk platform tools
       href: ecosystems/android.md
     - name: Go
       displayName: workspace, gopath, goroot, go get, dep, dep ensure

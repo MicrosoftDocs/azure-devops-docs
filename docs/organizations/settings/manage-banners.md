@@ -28,8 +28,8 @@ We limit banners to 30 words prioritize by level. So, if you post a warning mess
 ## Prerequisites 
 
 ::: moniker range="azure-devops"
-- **Permissions:** To add or manage banners, be a member of the **Project Collection Administrators** security group. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
-- **Access levels:** 
+- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.
+- **Extensions:** 
   - Install the [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) marketplace extension. For more information, see [Install extensions](../../marketplace/install-extension.md).
   - [Install the Azure DevOps CLI extension](../../cli/index.md).  
   	- Sign into Azure DevOps using `az login`.  
@@ -37,8 +37,8 @@ We limit banners to 30 words prioritize by level. So, if you post a warning mess
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Permissions:** To add or manage banners, be a member of the **Project Collection Administrators** security group. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
-- **Access levels:** 
+- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.
+- **Extensions:** 
   - Install the [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) marketplace extension on the project collection where you want to manage banners. For more information, see [Install extensions for on-premises servers](../../marketplace/get-tfs-extensions.md).
 ::: moniker-end
 

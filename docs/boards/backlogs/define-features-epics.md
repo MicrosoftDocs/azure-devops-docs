@@ -36,6 +36,8 @@ The following image shows a *features* portfolio backlog that consists of a flat
 
 [!INCLUDE [work item types](../includes/work-item-types.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](../includes/prerequisites.md)]
 
 ## What makes a feature or epic?  

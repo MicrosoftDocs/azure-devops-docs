@@ -22,6 +22,8 @@ landingContent:
         links:
           - text: What is Managed DevOps Pools?
             url: overview.md
+          - text: Compare with Azure Virtual Machine Scale Set agents
+            url: migrate-from-scale-set-agents.md
       - linkListType: quickstart
         links:
           - text: Azure portal
@@ -88,6 +90,8 @@ landingContent:
             url: monitor-pool.md
           - text: Diagnostic logs
             url: diagnostics.md
+          - text: Troubleshooting
+            url: troubleshooting.md
           - text: Reliability
             url: reliability-managed-devops-pools.md
   - title: Manage costs

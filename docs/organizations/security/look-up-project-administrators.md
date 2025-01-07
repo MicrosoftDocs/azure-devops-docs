@@ -28,7 +28,7 @@ To add users to the **Project Administrators** group or change a project-level p
  
 ## Prerequisites
 
-You must be a member of the **Project Collection Valid Users** group to look up members of the **Project Administrators** group. Users added to a project are automatically added to this group. 
+[!INCLUDE [prerequisites-project-collection-valid-users-group](../../includes/prerequisites-project-collection-valid-users-group.md)]
 
 ## Identify members of the Project Administrators group
 

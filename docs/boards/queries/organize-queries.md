@@ -29,11 +29,12 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
-> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 ::: moniker-end
- 
+
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open a query 
@@ -88,7 +89,7 @@ The following example shows how to find all closed bugs by modifying the
 1. Select **Save as** in the more actions ![More actions](../../media/icons/more-actions.png) menu.
 
     > [!NOTE]
-    > When the **New Boards Hubs** feature is not enabled, the **Save As** selection is at the top of the page.
+    > If the **New Boards Hubs** feature is disabled, the **Save As** selection is at the top of the page.
 
 1. Save the query to your **My Queries** folder.  
 

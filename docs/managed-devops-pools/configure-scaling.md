@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 11/13/2024
+ms.date: 11/15/2024
 ---
 
 # Configure scaling
@@ -41,7 +41,7 @@ Agents are configured using the `agentProfile` property in the Managed DevOps Po
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -70,7 +70,7 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-  "Stateless": {}
+    "Stateless": {}
 }
 ```
 
@@ -95,7 +95,7 @@ When **Agent state** is set to **Fresh agent every time**, a new agent is procur
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -126,11 +126,11 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-  "Stateful": 
-  {
-      "maxAgentLifetime": "7.00:00:00",
-      "gracePeriodTimeSpan": "00:30:00"
-  }
+    "Stateful": 
+    {
+        "maxAgentLifetime": "7.00:00:00",
+        "gracePeriodTimeSpan": "00:30:00"
+    }
 }
 ```
 
@@ -159,6 +159,13 @@ Grace period enables the most cost effective way of running stateful pools for p
 
 When you create a pool, **Standby agent mode** is off by default, and there are no standby agents to immediately assign to your pipelines, which might have to wait a few moments, up to 15 minutes, for an agent to be provisioned on demand. For better performance, enable **Standby agent mode** and configure a standby agent schedule that provides capacity for your workload. 
 
+When a standby agent schedule is configured, Managed DevOps Pools periodically compares the count of provisioned agents with the standby agent count specified by the current provisioning scheme, and starts new agents as required to maintain the standby agent count. You can view the current status and count of the agents in your pool using the [Agents](./view-agents.md) pane.
+
+> [!IMPORTANT]
+> The provisioning count in a scheme can't be greater than the **Maximum agents** configured in [Pool settings](configure-pool-settings.md#maximum-agents).
+
+Standby agent mode is configured using the following settings:
+
 * **Off** - Standby agent mode is off and agents are provisioned on-demand when jobs are queued.
 * [Manual](#manual) - Configure a manual standby schedule.
 * [Automatic](#automatic) - Use an automatic standby schedule based on agent usage history and configurable for cost and performance.
@@ -179,7 +186,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -200,7 +207,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
 
 Agents are configured using the `agent-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) or [updating](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
-Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"kind": "Automatic"` to configure automatic standby agents. See the following sections for details on how to configure each scaling type.
+Standby agents are configured using the `resourcePredictionsProfile` section of the `agent-profile` parameter. Set `"Manual": {}` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"Automatic": {}` to configure automatic standby agents. See the following sections for details on how to configure each scaling type.
 
 ```azurecli
 az mdp pool create \
@@ -212,13 +219,11 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-  "Stateless": 
-  {
+    "Stateless": {},
     "resourcePredictionsProfile": {
-        "kind": "Manual"
+        "Manual": {}
     },
     "resourcePredictions": {...}
-  }
 }
 ```
 
@@ -229,11 +234,6 @@ The following example shows the contents of the **agent-profile.json** file.
 Manual mode is best suited for teams that have knowledge of their CI/CD pipelines usage patterns. If you select the manual option, you need to define your pre-provisioning scheme based on your understanding of when agents in the pool are most likely to get used and how many agents are likely to be used, and specify a provisioning count of agents that meet the projected demand.
 
 You can create your own provisioning schedule or choose from one of the predefined schedules, and you can configure the time zone to use for specifying the schedules. The default value for **Pre-provisioning TimeZone** is **(UTC) Coordinated Universal Time**.
-
-> [!TIP]
-> The provisioning count in a scheme can't be greater than the **Maximum agents** configured in [Pool settings](configure-pool-settings.md#maximum-agents).
-
-Every few minutes, Managed DevOps Pools checks the count of active agents running jobs and standby agents waiting for jobs, to ensure that the provisioning count of agents specified by the current provisioning scheme are available. If the current provisioning count is 10, and there are five agents running jobs and two agents on standby, Managed DevOps Pools will start three additional standby agents to bring the total agent count up to 10.
 
 Manual standby agent configuration can be configured in one of the following three ways.
 
@@ -262,7 +262,7 @@ Manual standby agent provisioning is specified in the `resourcePredictionsProfil
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -425,25 +425,24 @@ Manual standby agent provisioning is specified in the `resourcePredictionsProfil
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {},
-                {
-                    "00:00:00": 1,
-                    "04:00:00": 0
-                },
-                {},
-                {},
-                {},
-                {},
-                {}
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {},
+            {
+                "00:00:00": 1,
+                "04:00:00": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
     }
 }
 ```
@@ -460,7 +459,10 @@ The following example is a manual standby agent scheme, using `Eastern Standard 
 
 ```json
 {
-"Stateless": {
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
     "resourcePredictions": {
         "timeZone": "Eastern Standard Time",
         "daysData": [
@@ -487,11 +489,7 @@ The following example is a manual standby agent scheme, using `Eastern Standard 
             },
             {}
         ]
-    },
-    "resourcePredictionsProfile": {
-        "kind": "Manual"
     }
-  }
 }
 ```
 
@@ -599,7 +597,7 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -634,25 +632,24 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {},
-                {
-                    "00:00:00": 1,
-                    "04:00:00": 0
-                },
-                {},
-                {},
-                {},
-                {},
-                {}
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {},
+            {
+                "00:00:00": 1,
+                "04:00:00": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
     }
 }
 ```
@@ -685,7 +682,7 @@ The following example configures four agents to be used during working hours wit
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -732,37 +729,36 @@ The following example configures four agents to be used during working hours wit
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {},
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {
-                    "09:00:00": 4,
-                    "17:00:00": 0
-                },
-                {}
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {},
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {
+                "09:00:00": 4,
+                "17:00:00": 0
+            },
+            {}
+        ]
     }
 }
 ```
@@ -787,7 +783,7 @@ If you choose the all week scheme, you can specify a number of agents you want a
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -815,18 +811,17 @@ If you choose the all week scheme, you can specify a number of agents you want a
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "kind": "Manual"
-        },
-        "resourcePredictions": {
-            "timeZone": "Eastern Standard Time",
-            "daysData": [
-                {
-                    "00:00:00": 1
-                }
-            ]
-        }
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Manual": {}
+    },
+    "resourcePredictions": {
+        "timeZone": "Eastern Standard Time",
+        "daysData": [
+            {
+                "00:00:00": 1
+            }
+        ]
     }
 }
 ```
@@ -843,11 +838,9 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 * **More performance** (`MorePerformance`) - 75th percentile
 * **Best performance** (`BestPerformance`) - 90th percentile
 
-You can view the projected and actual usage for any specific day within the last week, or a seven day average.
-
 #### [Azure portal](#tab/azure-portal/)
 
-:::image type="content" source="media/agent-performance/automatic-scaling.png" alt-text="Screenshot of automatic scaling setting.":::
+:::image type="content" source="media/agent-performance/automatic-scaling-setting.png" alt-text="Screenshot of automatic scaling setting.":::
 
 #### [ARM template](#tab/arm/)
 
@@ -859,7 +852,7 @@ You can view the projected and actual usage for any specific day within the last
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-04-04-preview",
+            "apiVersion": "2024-10-19",
             "location": "eastus",
             "properties": {
                 ...
@@ -880,10 +873,10 @@ You can view the projected and actual usage for any specific day within the last
 
 ```json
 {
-    "Stateless": {
-        "resourcePredictionsProfile": {
-            "predictionPreference": "Balanced",
-            "kind": "Automatic"
+    "Stateless": {},
+    "resourcePredictionsProfile": {
+        "Automatic": {
+            "predictionPreference": "Balanced"
         }
     }
 }

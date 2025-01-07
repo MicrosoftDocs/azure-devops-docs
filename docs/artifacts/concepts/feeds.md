@@ -71,6 +71,11 @@ Follow the instructions below and choose the appropriate scope to create a new p
 
 ::: moniker-end
 
+> [!NOTE]
+> Public feeds are only available in Azure DevOps Services.
+
+::: moniker range="azure-devops"
+
 ## Public feeds
 
 Public feeds allow you to share your packages publicly with anyone on the internet. Users do not need to be members of your organization, nor do they need to log in to the Azure DevOps portal to access the packages.
@@ -95,6 +100,8 @@ Public feeds are project-scoped feeds in a public project. Follow the instructio
 1. Enter a **Name** for your feed, and then select **Project** for the feed's scope. Select **Create** when you're done.
 
     :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot that shows how to create a new public feed.":::
+
+::: moniker-end
 
 ## Delete a feed
 

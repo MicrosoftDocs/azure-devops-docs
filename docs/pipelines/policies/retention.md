@@ -394,3 +394,4 @@ Classic releases retain pipelines that they consume automatically. If you are us
 
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
 - [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
+- [Using Tasks to Retain Runs in Azure Pipelines](../../pipelines/build/run-retention.md)

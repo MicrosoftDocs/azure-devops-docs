@@ -33,7 +33,7 @@ If your pipeline queues but never starts, check the following items.
 > 
 > Learn more:
 > [How a parallel job is consumed by a pipeline](../licensing/concurrent-jobs.md),
-> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-approvals),
+> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-pre-deployment-approvals),
 > [Server jobs](../process/phases.md#server-jobs),
 > [Deployment groups](../release/deployment-groups/index.md)
 

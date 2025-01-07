@@ -1,267 +1,173 @@
 ---
 title: Manage work items
 titleSuffix: Azure Boards 
-description: Learn how to update, link, and follow work items, as well as add, delete, restore, and permanently delete work item attachments.
+description: Learn how to create, update, link, follow, and delete work items, as well as manage attachments and tags.
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.author: chcomley
-author: chcomley
+ms.author: v-catherbund
+author: cebundy
 monikerRange: '<= azure-devops'
-ms.topic: tutorial
-ms.date: 10/02/2024
+ms.topic: concept-article
+ms.date: 11/11/2024
 ---
 
-# Manage work items
+# Manage Work Items in Azure DevOps
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-Work items help you plan and manage your project by tracking different types of work, such as user stories, product backlog items, tasks, bugs, or issues. Use work items to describe the work to be done, assign tasks, track status, and coordinate efforts within your team.
+Work items help you plan and manage your project by tracking different types of work, such as user stories, product backlog items, tasks, test cases, or bugs. Use work items to describe the work to be done, assign tasks, track status, and coordinate efforts within your team.
 
-Once you [create work items](../work-items/view-add-work-items.md), managing work items involves the following key tasks:
+This article describes the features that you can use to manage work items in Azure DevOps.
 
-- [Update work items](#update-work-items)
-- [Link work items](#link-to-a-work-item)
-- [Follow work items](#follow-a-work-item)
-- [Add attachments](#add-attachments)
-- [Delete attachments](#delete-attachments)
-- [Permanently delete attachments](#permanently-delete-attachments)
 
-By effectively managing work items, you can ensure that your project stays on track and that all team members are aligned on the work to be done.
-
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
-
-<a id="define-new-work">  </a>
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 ## Update work items
 
-As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. 
+You can update a work item to change various elements, such as the title, description, state, or assigned team member.
 
-#### [Browser](#tab/browser/) 
+### [Browser](#tab/browser)
 
-The following image shows the workflow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For more information, see [Move, change, or remove a work item](remove-delete-work-items.md).
+Once you select the work item you want to update, you can make changes to the work item form.
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot showing updating the state of a user story.](media/add-work/update-state.png)  
+# [Visual Studio 2019](#tab/visual-studio)
 
-:::row:::
-   :::column span="2":::
-      **Typical workflow progression:**
-      - The product owner creates a user story in the **New** state with the default reason, **New user story**   
-      - The team updates the status to **Active** when they decide to complete the work during the sprint  
-      - A user story is moved to **Resolved** when the team completes all its associated tasks and unit tests for the story pass.  
-      - A user story is moved to the **Closed** state when the product owner agrees that the story is implemented according to the Acceptance Criteria and acceptance tests pass.  
-    
-**Atypical transitions**: 
-      - Change the State from **Active** to **New**.  
-      - Change the State from **Resolved** to **Active**.  
-      - Change the State from **Resolved** to **New**.  
-      - Change the State from **Closed** to **Active**.  
-      - Change the State from **New** to **Removed**.  
-      - Change the State from **Removed** to **New**.  
-   :::column-end:::
-   :::column span="2":::
-      ![Screenshot of user story workflow, Agile process.](../work-items/guidance/media/alm_pt_agile_wf_userstory.png)  
-   :::column-end:::
-:::row-end:::
+To update a work item. From the Team Explorer, select a work item. The work item form opens in the web portal where you can make changes to the work item form and save your changes.
 
-Removed work items remain in the data store and can be reactivated by changing the State.   
+### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-With each update, changes are recorded in the History field, which you can view through the **History** tab.  
-
-![Screenshot of viewing change history.](media/add-work-item-history.png)  
-
-To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).
-
-### [Visual Studio 2019](#tab/visual-studio/)
-
-You can't update a work item using Visual Studio 2019 at this time.
-
-### [Azure DevOps CLI](#tab/azure-devops-cli) 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ::: moniker range="azure-devops"
 
-[Update work item](#update-work-item) | [Show work item details](#show-work-item) 
+To assign a team member to a work item using the Azure DevOps CLI, use the [az boards work-item update](/cli/azure/boards/work-item#az-boards-work-item-update) command.  
 
-<a id="update-work-item"></a>  
+```azurecli
 
-### Update a work item
+az boards work-item update --id <work-item-id> --assigned-to <user-email> --org https://dev.azure.com/<organization-name> --project <project-name>
 
-You can make updates to your work items with the [az boards work-item update](/cli/azure/boards/work-item#az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-```azurecli 
-az boards work-item update --id
-                           [--area]
-                           [--assigned-to]
-                           [--description]
-                           [--discussion]
-                           [--fields]
-                           [--iteration]
-                           [--open]
-                           [--org]
-                           [--reason]
-                           [--state]
-                           [--title] 
-``` 
-
-### Parameters 
-
-- **id**: Required. The ID of the work item.
-
-### Optional parameters
-
-- **area**: Area the work item is assigned to (for example, **Demos**). 
-- **assigned-to**: Name of the person the work item is assigned-to (for example, **fabrikam**). 
-- **description**: Description of the work item. 
-- **discussion**: Comment to add to a discussion in a work item. 
-- **fields**: Space separated "field=value" pairs for custom fields you would like to set. 
-- **iteration**: Iteration path of the work item (for example, **DemosIteration 1**). 
-- **open**: Open the work item in the default web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **reason**: Reason for the state of the work item. Must be a valid workflow Reason for the work item type.
-- **state**: State of the work item (for example, **Active**). Must be a valid workflow State for the work item type.
-- **title**: Title of the work item. 
-
-### Example 
-
-The following command updates the title of the bug with the ID 864 and displays the results in the Azure DevOps CLI in table format.
-
-```azurecli 
-az boards work-item update --id 864  --title "Fix security issues" --output table
-
-ID    Type    Title                Assigned To          State
-----  ------  -------------------  -------------------  -------
-864   Bug     Fix security issues  contoso@contoso.com  New
 ```
 
-<a id="show-work-item"></a>  
-
-#### Add comments to a discussion
-
-Use the **discussion** parameter to add comments to the **Discussion** control of a work item. The following command adds the specified comment to the bug with the ID 864 and opens the bug in your default web browser, where you can view the comment.
-
-```azurecli 
-az boards work-item update --id 864  --discussion  "This work item is about 50% complete" --open
-```
-
-### Show details for a work item
-
-You can show the details for a work item with the [az boards work-item show](/cli/azure/boards/work-item#az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-```azurecli 
-az boards work-item show --id
-                         [--open]
-                         [--org] 
-``` 
-
-### Parameters 
-
-- **id**: Required. The ID of the work item.
-- **open**: Open the work item in the default web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-
-### Example 
-
-The following command shows details for the bug with the ID 864. It opens in your default web browser and also displays the results in the Azure DevOps CLI in table format.
-
-```azurecli 
-az boards work-item show --id 864  --open --output table
-
-ID    Type    Title       Assigned To          State
-----  ------  ----------  -------------------  -------
-864   Bug     fix-issues  contoso@contoso.com  New 
-``` 
+> [!TIP]
+> If you set the default organization and project using the `az devops configure` command, you can omit the `--org` and `--project` parameters.
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+---
 
-* * *
+## View and track work items
+
+You can view work items created by you or your team. The **Work items** page offers several personalized pivots and interactive filter functions to streamline listing work items. 
+
+::: moniker range="azure-devops"
+
+You can also view work items from Visual Studio, Azure DevOps CLI, or the REST API.
+
+::: moniker-end
+
+For more information, see [View and add work items](../work-items/view-add-work-items.md).
+
+## Link Work Items
+
+Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to your work items. For more information, see [Link work items to objects](add-link.md).
 
 
-### Link to a work item
-
-Add links to work items to show relationships between them and other work items or objects. For example, link a bug to a user story to indicate that the bug is blocking the user story. You can also link work items to commits, pull requests, builds, and other objects.
-
-Set the link relationship to various types, including **Parent**, **Child**, and **Duplicate**.
-
-For more information, see [Link work items to objects](../backlogs/add-link.md).
+::: moniker range="azure-devops"
 
 ## Follow a work item
 
-To track the progress of a single work item, select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This action notifies you when changes are made to the work item.
+To track the progress of a single work item, select the **Follow** icon 
+ :::image type="icon" source="../media/icons/follow-icon.png" border="false":::. This action sends you email alerts when changes are made to the work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Work item form, Follow icon control.](../work-items/media/follow-work/follow-work-item.png) 
 
-You receive notifications only when other project members modify the work item, such as when they add to the discussion, change a field value, or add an attachment.
+You receive notifications when other project members modify the work item, such as adding to the discussion, change a field value, or add an attachment.
+
+You can specify the types of changes you want to be notified about. When you select the settings icon, :::image type="icon" source="../media/icons/settings-icon.png" border="false"::: you can select:
+
+- **Not Subscribed**: Only receive notifications from this work item when you're @mentioned.
+- **Subscribed**: Receive notifications for all changes to this work item.
+- **Custom**: Specify notifications for:
+  - **State Changed**: When the work item changes state
+  - **Assigned To Changed**: When the work item is assigned to someone else
+  - **Iteration Changed**: When the iteration path changes
 
 Notifications are sent to your preferred email address, which you can [change from your user profile](../../organizations/notifications/change-email-address.md).
 
-To stop following changes, select the :::image type="icon" source="../media/icons/following-icon.png" border="false"::: following icon.
-
-::: moniker range="< azure-devops"
-
-> [!IMPORTANT]
-> To support the **follow** feature, configure an [SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.
+To stop following changes, select the  **Following** icon :::image type="icon" source="../media/icons/following-icon.png" border="false":::.
 
 ::: moniker-end
 
-<a id="sort"></a>
+## Attachments
 
-## Add columns and sort by a column 
+You can attach files to work items to provide more context or information. You can attach up to 100 files to a work item. Each attachment is limited to 60 MB. You can manage attachments through the web portal by selecting the attachment tab on your work item.
 
-Sort your view by any column field selected from the **Column Options** dialog in the web portal. For more information, see [Change column options](../backlogs/set-column-options.md).
+For more information, see [Manage attachments to work items](../work-items/manage-attachments.md).
+
+## Work item tags
+
+Tags are keywords that you define to categorize work items. You can add tags to work items to filter backlogs and queries.
+
+To learn how to manage and use tags, see [Add tags to work items](../queries/add-tags-to-work-items.md).
+
 
 [!INCLUDE [discussion-tip-azure-devops](../includes/discussion-tip-azure-devops.md)]
 
-## Copy selected items to the clipboard or email them
 
-To select several items in a sequence, hold down the **Shift** key on a web portal page. To select non-sequential items, use the **Ctrl** key. Then, use **Ctrl+C** to copy the selected items to the clipboard. Alternatively, open the context menu for the selected work items, select the ![actions icon](../media/icons/actions-icon.png), and select an option from the menu.
+## Copy or clone work items
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of web portal, Work Items page, Following view, Select multiple work items, open context menu.](../work-items/media/view-add/following-context-menu.png)
+Cloning or copying a DevOps work item can be beneficial for several reasons:
 
-## Add attachments
+- **Efficiency**: Quickly create a new work item with similar details without manually duplicating all the information.
+- **Consistency**: Ensure that the new work item retains the same structure, fields, and values as the original, maintaining consistency across similar tasks.
+- **Template Usage**: Use an existing work item as a template for new work items, especially for recurring tasks or standard processes.
+- **Bulk Operations**: Easily create multiple similar work items for different team members or iterations.
+- **Preserve History**: Keep the history and context of the original work item while creating a new instance for tracking separate progress.
 
-1. From your work item, select the **Attachments** tab > **Add attachment**.
-   
-   :::image type="content" source="media/add-attachment.png" alt-text="Screenshot showing highlighted Attachments button in work item.":::
+For more information, see [Copy or clone work items](copy-clone-work-items.md).
 
-2. Select the file, select **Open**, and then **Save**. 
+## Move work items between team
 
-The attachment is added to the work item.
+You can move work items from one team to another team within the same project. To move work items, you must have the **Edit work items in this node** permission for the target team.
 
-## Delete attachments
+For more information, see [Move work items from one team to another](../work-items/move-work-items.md).
 
-1. From your work item, select the **Attachments** tab. 
-2. Select **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Delete attachment**.
+## Customizing Work Item Templates
 
-   :::image type="content" source="media/delete-attachment.png" alt-text="Screenshot showing delete attachment flow.":::
+Project Work items can be customized to track additional information that is important to your team. You can add custom fields, change the layout of the work item form, and add custom rules to enforce processes. This customization can be done by modifying the process templates used by your project. 
 
-3. Select **Delete** to confirm you want to delete the attachment.
+There are two ways to customize work item templates:
 
-   :::image type="content" source="media/confirm-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming delete action.":::
+1. **Work Item Type**: Customize the work item type used by your project. This customization affects only the work item type. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
+1. **Work Item Template**: Create custom work item templates used by your team based on existing work items. Custom work item templates allow you to prepopulate values in commonly used fields. For more information, see, [Use work item templates](work-item-template.md).
 
-The deleted attachment cannot be restored and is permanently removed after 28 days. In the meantime, if you have permissions, you can [permanently delete](#permanently-delete-attachments) it.
+With the appropriate organization-level permissions, you can create customized inherited *process templates*. All projects that use the customized process template get the customizations made to that process. You can customize which work item types are included in the process template and customize the work item template form. For more information, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md) and [Customize a process template](../../reference/process-templates/customize-process.md).
 
-## Permanently delete attachments
 
-To permanently delete attachments, you need **Permanently delete work items** permissions. This action is typically reserved for situations requiring immediate removal, such as when files are infected. Otherwise, deleted attachments will be automatically removed within 28 days.
+## Delete work items
 
-1. From your work item, select the **Attachments** tab. 
-2. Select **more actions** :::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Permanently delete attachment**.
+You can delete work items that are no longer needed. Deleted work items are moved to the Recycle Bin where they can be restored or permanently deleted.
 
-   :::image type="content" source="media/permanently-delete-attachment.png" alt-text="Screenshot showing permanently delete attachment flow.":::
+For more information, see, [Remove, delete, or restore work items](remove-delete-work-items.md).
 
-3. Select **Delete** to confirm you want to permanently delete the attachment.
 
-   :::image type="content" source="media/confirm-permanently-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming permanent delete action.":::
+## Reporting and Analytics
 
-The attachment is permanently deleted and isn't accessible from any other links. 
+Analytics views provide a powerful way to visualize and analyze your work items. You can use  create custom reports and dashboards to track progress, identify trends, and make data-driven decisions.
 
-> [!NOTE]
-> This feature is only available in New Boards Hub.
+For more information, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
+
+## Best Practices
+
+There are best practices to help you effectively manage work items for development processes including:
+
+- [Agile](../work-items/guidance/agile-process-workflow.md)
+- [Scrum](../work-items/guidance/scrum-process-workflow.md)
+- [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process-workflow.md)
+
 
 ## Next steps  
 

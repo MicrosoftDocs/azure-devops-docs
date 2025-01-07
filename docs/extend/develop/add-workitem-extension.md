@@ -299,7 +299,7 @@ To add an observer to the work item, which listens to the work item events, add 
 ## Changes with New Boards Hub
 
 > [!NOTE]
-> New Boards Hub is currently in preview but is on track be available for everyone. We strongly suggest that you immediately enable New Boards Hub and test your internal extensions.
+> The New Boards Hub feature is enabled by default. We strongly suggest that you test your internal extensions with the New Boards Hub to ensure compatibility.
 
 ### Use the latest SDKs
 
@@ -313,4 +313,4 @@ Use `ms.vss-web.action-provider` when dynamically loading menu items using ``get
 
 ### Package require("VSS/Events/Document") is no longer supported
 
-``require("VSS/Events/Document")`` import is no longer supported with New Boards Hub.
+``require("VSS/Events/Document")`` import is no longer supported with the New Boards Hub.

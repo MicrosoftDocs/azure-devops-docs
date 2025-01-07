@@ -29,12 +29,10 @@ Tests that you create from the board automatically get linked to the user story 
   - [Connect to a project](../get-started/sign-up-invite-teammates.md). If you don't have a project, create one.
   - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
 
-- **Access levels:**
-  - Ensure you have [**Basic** access or higher](../../organizations/security/access-levels.md) to add work items and use all board features.
-  - Verify you have **Basic** access or higher to view or run tests. Users with **Stakeholder** access can't view or run tests.
+- **Access levels:** To add work items, view or run tests, and use all boards features, have at least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.
 
 - **Permissions:**
-  - Set **View work items in this node** and **Edit work items in this node** permissions to **Allow** to view or modify work items. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+  - To view or modify work items, set **View work items in this node** and **Edit work items in this node** permissions to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -42,9 +40,7 @@ Tests that you create from the board automatically get linked to the user story 
   - [Connect to a project](../../organizations/projects/create-project.md). If you don't have a project, create one.
   - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
 
-- **Access levels:**
-  - Ensure you have [**Basic** access or higher](../../organizations/security/access-levels.md) to add work items and use all board features.
-  - Verify you have **Basic** access or higher to view or run tests. Users with **Stakeholder** access can't view or run tests.
+- **Access levels:** To add work items, view or run tests, and use all board features, have at least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.
 
 - **Permissions:**
   - Set **View work items in this node** and **Edit work items in this node** permissions to **Allow** to view or modify work items. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
@@ -73,7 +69,7 @@ Tests that you create from the board automatically get linked to the user story 
 
 	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped.
 
-	For example, a test suite is created for each user story, and all inline tests are added to that suite. In the following example, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
+	For example, a test suite is created for each user story, and all inline tests get added to that suite. In the following example, test suite 152 is highlighted which has three manual tests defined with IDs of 280, 281, and 282.  
 
 	![Screenshot showing  Inline test cases get added to test suites and test plans.](media/i-test-plan-suite.png) 
 
