@@ -47,9 +47,9 @@ highlightedContent:
       itemType: how-to-guide
       url: ./organizations/projects/connect-to-projects.md
     # Card
-    - title: Authenticate access with personal access tokens
+    - title: Authenticate with Azure DevOps
       itemType: how-to-guide
-      url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
+      url: ./integrate/get-started/authentication/authentication-guidance.md
 # productDirectory section (optional)
 productDirectory:
 #  title: Azure DevOps Products
@@ -221,8 +221,6 @@ additionalContent:
               url: ./organizations/security/about-permissions.md
             - text: About access levels
               url: ./organizations/security/access-levels.md
-            - text: Use personal access tokens
-              url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
             - text: Billing overview
               url: ./organizations/billing/overview.md
             - text: Add or remove users or groups 
@@ -230,7 +228,7 @@ additionalContent:
             - text: Change project-level permissions
               url: ./organizations/accounts/organization-management.md
             - text: Change project collection-level permissions
-              url: ./organizations/accounts/organization-management.md
+              url: ./organizations/accounts/organization-management.md       
             - text: See more >
               url: ./organizations/security/index.yml 
       # Card
@@ -302,12 +300,12 @@ additionalContent:
         # Card
         - title: Marketplace & Extensibility
           links:
+            - text: Authentication overview
+              url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Discover extensions
               url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Develop extensions
               url: ./extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
-            - text: Integrate applications
-              url: ./integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Service hooks
               url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: See more >
