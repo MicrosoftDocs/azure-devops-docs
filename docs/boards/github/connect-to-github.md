@@ -124,7 +124,9 @@ To change the configuration or manage the Azure Boards app for GitHub, see  [Cha
 
 ## Add a GitHub connection using PAT   
 
-We recommend using your GitHub account credentials to connect to your GitHub repository. If you need to use a PAT, do the following steps.
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
+We recommend using your GitHub account credentials to connect to your GitHub repository.
 
 > [!TIP]  
 > When you create your GitHub PAT, make sure that you include these scopes: `repo, read:user, user:email, admin:repo_hook`. 
@@ -343,10 +345,10 @@ To resolve this issue, consider the following items:
 	Delete and recreate the connection to the GitHub repository. This recreated connection causes GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
-  - The PAT might be revoked or the required permission scopes changed and are insufficient.
+  - The PAT was revoked or the required permission scopes changed and are insufficient.
   - The user might not have admin permissions on the GitHub repo.  
 
-	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
+	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. For more information, see [Best practices for using PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#best-practices-for-using-pats).
 
 <a id="ghe-dataimport"></a>
 

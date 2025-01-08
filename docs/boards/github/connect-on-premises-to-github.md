@@ -297,10 +297,10 @@ Consider the following resolutions:
 	Delete and recreate the connection to the GitHub repository. This recreated connection causes GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
-  - The PAT might be revoked or the required permission scopes changed and are insufficient.
+  - The PAT  was revoked or the required permission scopes changed and are insufficient.
   - The user perhaps lost administrative permissions on the GitHub repository.  
 
-	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`.
+	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. For more information, see [Best practices for using PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#best-practices-for-using-pats).
 
 <a id="update-wits"></a>
 
