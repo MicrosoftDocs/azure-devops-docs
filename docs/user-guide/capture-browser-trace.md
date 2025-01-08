@@ -76,15 +76,14 @@ The following steps show how to use the developer tools in Google Chrome. For mo
 
    :::image type="content" source="media/capture-browser-trace/google-chrome-network-tab-check-preserve-log.png" alt-text="Screenshot shows check next to Preserve log in Network tab in Google Chrome.":::
 
-6. Ensure you're signed in to Azure DevOps. It's important to sign in _before_ you start the trace so that the trace doesn't contain sensitive information related to your account.
-7. Go to the step before where the issue occurs.
-8. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
-9. When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting.
-10. Select **Export HAR (with sensitive data)**.	 
+6. Go to the step before where the issue occurs.
+7. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
+8. When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting.
+9.  Select **Export HAR (with sensitive data)**.	 
 
     :::image type="content" source="media/capture-browser-trace/google-chrome-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection, Export HAR (with sensitive data), in Google Chrome.":::
 
-11. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
+10. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
 ---
 
