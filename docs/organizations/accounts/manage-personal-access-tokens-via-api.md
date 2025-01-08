@@ -37,7 +37,7 @@ To acquire and refresh Microsoft Entra access tokens, you must do the following:
 * Get consent from tenant admin: Depending on your tenant's security policies, your application might need permissions to access resources in the organization. Request a tenant administrator to grant permission to the app to use it within your tenant.
 
 > [!IMPORTANT]
-> "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue a Microsoft Entra access token is not valid for use with this API.  If multi-factor authentication is enabled in your Microsoft Entra tenant, you must definitely use the ["authorization code” flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+> "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue a Microsoft Entra access token is not valid for use with this API.  If multifactor authentication is enabled in your Microsoft Entra tenant, you must definitely use the ["authorization code” flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 Once you have an application with a working authentication flow for handling Microsoft Entra tokens, you can use these tokens to make calls to the PAT Lifecycle Management API.
 
