@@ -17,7 +17,7 @@ If you're troubleshooting an issue with Azure DevOps and need to contact [Micros
 A HAR (HTTP Archive) file tracks information between a web browser and a website. It contains detailed performance data about web pages, including resources loaded, time taken for each resource, and any errors encountered. Sharing a HAR file with Microsoft Support can help diagnose and resolve issues more effectively.
 
 > [!WARNING]
-> Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Remove any tokens or passwords before sharing traces with others. Handle these HAR files with care to ensure the security and privacy of the contained information. Microsoft support uses these traces for troubleshooting purposes only.
+> Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Remove any passwords before sharing traces with others. Handle these HAR files with care to ensure the security and privacy of the contained information. Microsoft support uses these traces for troubleshooting purposes only.
 
 ## Generate HAR file and record browser activity
 
