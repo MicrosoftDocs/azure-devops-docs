@@ -26,7 +26,7 @@ ms.topic: include
    :::image type="content" source="../media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
    > [!NOTE]
-   > You might be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID has enabled a policy that limits you to a specific custom-defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
+   > You might be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID enabled a policy that limits you to a specific custom-defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
    > For a custom-defined PAT, the required scope for accessing the Component Governance API, `vso.governance`, isn't selectable in the UI.
 
 6. When you're done, copy the token and store it in a secure location. For your security, it doesn't display again.
@@ -59,25 +59,24 @@ For more information, see [Configure an SMTP server and customize email for aler
 
 #### Unexpected notification
 
-If you get an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you. Here are some examples.
+If you receive an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you. Here are some examples:
 
 - A token named "git: `https://dev.azure.com/{Your_Organization}` on YourMachine" gets created when you connect to an Azure DevOps Git repo via git.exe.
-- A token named "Service Hooks: : Azure App Service: : Deploy web app" gets created when you or an administrator sets up an Azure App Service web app deployment.
-- A token named "WebAppLoadTestCDIntToken" gets created when web load testing is set up as part of a pipeline by you or an administrator.
-- A token named "Microsoft Teams Integration" gets created when a Microsoft Teams Integration Messaging Extension is set up.
-
+- A token named "Service Hooks: Azure App Service: Deploy web app" gets created when you or an administrator sets up an Azure App Service web app deployment.
+- A token named "WebAppLoadTestCDIntToken" gets created when web load testing gets set up as part of a pipeline by you or an administrator.
+- A token named "Microsoft Teams Integration" gets created when a Microsoft Teams Integration Messaging Extension gets set up.
 
 > [!WARNING]
-> - Revoke the PAT if you suspect it exists in error. Follow the steps to [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md) and change your password.
-> - Check with your administrator if you are a Microsoft Entra user to see if your organization was accessed by an unknown source or location.
+> - [Revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md) (and change your password) if you suspect it exists in error.
+> - Check with your administrator if you're a Microsoft Entra user to see if an unknown source or location accessed your organization.
 > - Review the FAQ on [accidental PAT check-ins to public GitHub repositories](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 
-Your PAT serves as your digital identity, much like a password. PATs may be used as a quick way to do one-off requests or prototype an application locally. 
+Your PAT serves as your digital identity, much like a password. You can use PATs as a quick way to do one-off requests or prototype an application locally. 
 
 > [!IMPORTANT]
-> When your code is working, it's a good time to switch from basic auth to [Microsoft Entra OAuth](../../../integrate/get-started/authentication/entra-oauth.md). Microsoft Entra tokens can be used anywhere a PAT is used, unless specified below.
+> When your code is working, it's a good time to switch from basic auth to [Microsoft Entra OAuth](../../../integrate/get-started/authentication/entra-oauth.md). You can use Microsoft Entra ID tokens anywhere a PAT gets used, unless specified further in this article.
 
 You can use a PAT in your code to authenticate [REST APIs](/rest/api/azure/devops) requests and automate workflows. To do so, include the PAT in the authorization header of your HTTP requests.
 
@@ -209,7 +208,7 @@ Do the following steps to:
 
 You can revoke a PAT at any time for these and other reasons:
 
-- Revoke a PAT if you suspect it is compromised.
+- Revoke a PAT if you suspect it's compromised.
 - Revoke a PAT when it's no longer needed.
 - Revoke a PAT to enforce security policies or compliance requirements.
 
