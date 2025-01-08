@@ -6,16 +6,18 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 01/08/2025
 monikerRange: '<= azure-devops'
 ---
 
 # Capture a browser trace for troubleshooting
 
-If you're troubleshooting an issue with Azure DevOps, and you need to contact [Microsoft Support](provide-feedback.md), you might want to first capture some additional information. For example, it can be helpful to share a browser trace, a step recording, and console output. This information can provide important details about what exactly is happening in Azure DevOps when your issue occurs.
+If you're troubleshooting an issue with Azure DevOps and need to contact [Microsoft Support](provide-feedback.md), capture additional information such as a browser trace, step recording, and console output. This data provides important details about what is happening in Azure DevOps when the issue occurs.
+
+A HAR (HTTP Archive) file tracks information between a web browser and a website. It contains detailed performance data about web pages, including resources loaded, time taken for each resource, and any errors encountered. Sharing a HAR file with Microsoft Support can help diagnose and resolve issues more effectively.
 
 > [!WARNING]
-> Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Remove any sensitive information before sharing traces with others. Microsoft support uses these traces for troubleshooting purposes only.
+> Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Remove any tokens or passwords before sharing traces with others. Handle these HAR files with care to ensure the security and privacy of the contained information. Microsoft support uses these traces for troubleshooting purposes only.
 
 You can capture this information from Microsoft Edge or Google Chrome. Steps for each browser are shown as follows.
 
@@ -44,15 +46,15 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
 
    :::image type="content" source="media/capture-browser-trace/microsoft-edge-network-tab-check-preserve-log.png" alt-text="Screenshot shows check next to Preserve log in Network tab in Microsoft Edge.":::
 
-7. Ensure you're signed in to Azure DevOps. It's important to sign in _before_ you start the trace so that the trace doesn't contain sensitive information related to your account.
-8. Go to the step before where the issue occurs.
-9. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
-10. When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting.
-11. Select **Export HAR (with sensitive data)**.	 
+7. Go to the step before where the issue occurs.
+8. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
+9.  When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting. 
+
+10. Select **Export HAR (with sensitive data)**.	 
 
     :::image type="content" source="media/capture-browser-trace/microsoft-edge-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection Export HAR with sensitive data in Microsoft Edge.":::
 
-12. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
+11. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
 You have a complete HAR file with the necessary data for troubleshooting.
 
