@@ -21,7 +21,7 @@ A HAR (HTTP Archive) file tracks information between a web browser and a website
 
 You can capture this information from Microsoft Edge or Google Chrome. Steps for each browser are shown as follows.
 
-## Use Microsoft Edge
+# [Microsoft Edge](#tab/microsoft-edge)
 
 The following steps show how to use the developer tools in Microsoft Edge. For more information, see [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium).
 
@@ -56,9 +56,7 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
 
 11. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
-You have a complete HAR file with the necessary data for troubleshooting.
-
-## Use Google Chrome
+# [Google Chrome](#tab/google-chrome)
 
 The following steps show how to use the developer tools in Google Chrome. For more information, see [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools).
 
@@ -85,6 +83,8 @@ The following steps show how to use the developer tools in Google Chrome. For mo
     :::image type="content" source="media/capture-browser-trace/google-chrome-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection, Export HAR (with sensitive data), in Google Chrome.":::
 
 11. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
+
+---
 
 You have a complete HAR file with the necessary data for troubleshooting.
 
