@@ -850,7 +850,7 @@
         items:
         - name: "2025"
           items:
-        - name: January 8
+          - name: January 8
             href: 2025/ghazdo/sprint-248-update.md
           expanded: false
         - name: "2024"
