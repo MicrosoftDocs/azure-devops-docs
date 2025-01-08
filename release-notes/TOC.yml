@@ -894,7 +894,7 @@
         - name: "2025"
           items:
           - name: January 8
-            href: 2024/general/sprint-248-update.md 
+            href: 2025/general/sprint-248-update.md 
           expanded: true  
         - name: "2024"
           items:
@@ -1019,14 +1019,12 @@
         items:
         - name: "2025"
           items:
-        - name: January 8
-          href: 2025/reporting/sprint-248-update.md
           expanded: true 
         - name: "2024"
           items:
         - name: September 4
           href: 2024/reporting/sprint-244-update.md
-          expanded: true 
+          expanded: false 
         - name: "2023"
           items:
           - name: November 16
@@ -1084,9 +1082,7 @@
         items:
         - name: "2025"
           items:
-          - name: 
-            href: 
-          expanded: false
+           expanded: false
         - name: "2024"
           items:
           - name: October 16
