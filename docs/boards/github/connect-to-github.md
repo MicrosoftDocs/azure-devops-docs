@@ -47,7 +47,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column span="":::
       - [OAuth (preferred, registration required)](#server-github-ent-oauth-register) 
       - [PAT](#server-github-ent-pat) 
-      - [Username plus password](#server-github-ent-username) 
+      - [GitHub credentials](#server-github-ent-credentials) 
    :::column-end:::
 :::row-end:::
  
@@ -111,7 +111,7 @@ Once authenticated, you can select the repositories you want to connect.
 
    :::image type="content" source="media/github/approve-install-auth-azure-boards-from-github.png" alt-text="Screenshot showing confirming GitHub repositories.":::
 
-2. Provide your GitHub password to confirm.
+2. Provide your GitHub credentials to confirm.
 
 3.	When you're done, you should see the new connection with the selected repositories listed.
 
@@ -233,9 +233,9 @@ To use OAuth to connect Azure DevOps with your GitHub Enterprise Server, first r
 
 	:::image type="content" source="media/connect-cloud/new-github-enterprise-server-dialog-pat.png" alt-text="Screenshot of New GitHub Enterprise connection, Personal access token connection dialog.":::
 
-	<a id="server-github-ent-username"></a>
+	<a id="server-github-ent-credentials"></a>
 
-	**Connect with a Username and Password**   
+	**Connect with GitHub credentials**   
 
 	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server, and then select **Connect**.
 
@@ -282,7 +282,7 @@ The following supported authentication options depend on the GitHub platform you
    :::column span="1":::
       - OAuth  
       - PAT
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -294,7 +294,7 @@ The following supported authentication options depend on the GitHub platform you
    :::column-end:::
    :::column span="1":::
       - PAT 
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -307,7 +307,7 @@ The following supported authentication options depend on the GitHub platform you
    :::column span="1":::
       - OAuth  
       - PAT
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 

@@ -38,7 +38,7 @@ For more information on setting up and managing Microsoft Entra ID, see the [Mic
 ## High-level steps to connect your organization to Microsoft Entra ID
 
 1. **Connect to Microsoft Entra ID**: If your organization was created with a Microsoft account, connect it to your [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis). This integration allows you to manage access and enforce security policies centrally.
-2. **Sign in**: Use the same username and password that you use with your Microsoft services to sign in to Azure DevOps. The single sign-on (SSO) capability streamlines the sign-in process and improves security.
+2. **Sign in**: Use the same credentials that you use with your Microsoft services to sign in to Azure DevOps. The single sign-on (SSO) capability streamlines the sign-in process and improves security.
 3. **Enforce policies**: Implement and enforce policies to control access to your team's critical resources and key assets. Microsoft Entra ID provides robust policy management features, including multifactor authentication (MFA), conditional access, and role-based access control.
 
 <a name='how-azure-ad-controls-access-to-azure-devops'></a>
