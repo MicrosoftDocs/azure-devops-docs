@@ -7,7 +7,7 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 10/17/2024
+ms.date: 11/13/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,6 +16,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process!
+
+> [!NOTE]
+> If you're troubleshooting issues related to signing in to Azure DevOps via Microsoft Edge or Google Chrome, [collect an HTTP Archive (HAR) trace](capture-browser-trace.md).
 
 |Action |More info  |
 |---------|---------|
