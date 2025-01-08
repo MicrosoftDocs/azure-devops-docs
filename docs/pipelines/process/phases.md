@@ -1,6 +1,6 @@
 ---
 title: Jobs in Azure Pipelines
-description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
+description: Understand jobs in Azure Pipelines and Azure DevOps Server
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
 ms.date: 01/08/2025
@@ -262,7 +262,7 @@ Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 ### Server jobs
 
-The server (Azure Pipelines or TFS) orchestrates and executes tasks in a server job. A server job doesn't require an agent or any target computers. Only a few tasks are supported in a server job now. The maximum time for a server job is 30 days. 
+The server orchestrates and executes tasks in a server job. A server job doesn't require an agent or any target computers. Only a few tasks are supported in a server job now. The maximum time for a server job is 30 days. 
 
 ### Agentless jobs supported tasks
 
@@ -409,7 +409,7 @@ and a [server job](#server-jobs).
 1. The tasks in the first job of the release run on an agent
    and, after this job is complete, the agent is released.
 
-1. The server job contains a Manual Intervention task that runs on the Azure Pipelines or TFS. The job doesn't execute on, or require, an agent or any target servers. The Manual Intervention task displays its message and waits for a    "resume" or "reject" response from the user. In this example, if the task reaches the configured timeout, the task    automatically rejects the deployment. Set the timeout in the control options section to zero if you don't want an automated response to be generated.
+1. The server job contains a Manual Intervention task that runs on the Azure Pipelines or DevOps Server. The job doesn't execute on, or require, an agent or any target servers. The Manual Intervention task displays its message and waits for a "resume" or "reject" response from the user. In this example, if the task reaches the configured timeout, the task automatically rejects the deployment. Set the timeout in the control options section to zero if you don't want an automated response to be generated.
 
 1. The tasks in the third jobs are run if the release is resumed - possibly on a different agent. If the release is rejected, this job doesn't run and the release is marked as failed.
 
@@ -804,8 +804,7 @@ For information about using **dependsOn** and **condition**, see [Specify condit
 
 ## Access to OAuth token
 
- You can allow scripts running in a job to access the current Azure Pipelines or TFS OAuth security token.
-  The token can be used to authenticate to the Azure Pipelines REST API.
+ You can allow scripts running in a job to access the current Azure Pipelines OAuth security token. The token can be used to authenticate to the Azure Pipelines REST API.
 
 #### [YAML](#tab/yaml/)
 
