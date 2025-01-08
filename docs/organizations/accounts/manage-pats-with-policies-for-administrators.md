@@ -25,6 +25,8 @@ This article provides guidance on how to use Microsoft Entra policies to manage 
 - **Organization connection:** Ensure your organization is [linked to Microsoft Entra ID](connect-organization-to-azure-ad.md).
 - **Roles:** Be an [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary.
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 ## Restrict creation of global PATs
 
 The Azure DevOps Administrator in Microsoft Entra can restrict users from creating global Personal Access Tokens (PATs), which apply to all accessible organizations rather than a single organization. When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.

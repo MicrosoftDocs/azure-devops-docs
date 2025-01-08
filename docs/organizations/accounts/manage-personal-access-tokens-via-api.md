@@ -14,9 +14,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When you're dealing with a large set of [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md) you own, it might become complex to manage the maintenance of these tokens using the UI alone.
+When you own a large set of [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md), it might become complex to manage the maintenance of these tokens using the UI alone.
 
 With the PAT Lifecycle Management API, you can easily manage the PATs associated with your organizations using automated processes. This [rich set of APIs](/rest/api/azure/devops/tokens) lets you manage your PATs, allowing you to create new PATs and renew or expire existing PATs.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 In this article, we show you how to configure an application that [authenticates with a Microsoft Entra token](../../integrate/get-started/authentication/entra-oauth.md) and makes calls with the PAT Lifecycle API.
 

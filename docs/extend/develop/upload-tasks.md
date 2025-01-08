@@ -31,6 +31,7 @@ To upload tasks to project collection, you need prerequisites:
     npm install -g tfx-cli
    ```
 - Permissions to update required project collection, PAT generated with scope **Environment (Read & Write)** to be able to upload tasks to the project collection.
+  [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Tfx-cli sign in with personal access token
 
