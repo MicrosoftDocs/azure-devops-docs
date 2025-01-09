@@ -476,9 +476,9 @@ The final migration specification file should look like the following example.
 
 ### Determine the migration type
 
-Imports can be queued as either a test run or a production run. The **ImportType** parameter determines the migration type: 
+Imports can be queued as either a test run (`DryRun`) or a production run (`ProductionRun`). The **ImportType** parameter determines the migration type: 
 
-- **TestRun**: Use a test run for test purposes. The system deletes test runs after 45 days. 
+- **DryRun**: Also referred to as a test run. Use for test and validation purposes. The system deletes test runs after 45 days. 
 - **ProductionRun**: Use a production run when you want to keep the resulting migration and use the organization full time in Azure DevOps Services after the migration finishes. 
 
 > [!TIP] 
