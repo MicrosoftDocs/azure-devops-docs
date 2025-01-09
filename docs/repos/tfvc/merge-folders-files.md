@@ -22,12 +22,12 @@ The procedures in this article explain how you can use the Visual Studio graphic
 
 ## Prerequisites
 
-To do these procedures, you must have the following permissions set:
+To do these procedures, have the following permissions set:
 
-- You must have the **Read** permission for the item in the source tree and your **Check out** permission for the item in the target tree set to **Allow**.
-- You must have the **Merge** permission set for the target path.
-- If the item in the target tree is being renamed, you must have the **Check out** permission for both the source tree and the target tree set to **Allow**.
-- If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**.
+- Have the **Read** permission for the item in the source tree and your **Check out** permission for the item in the target tree set to **Allow**.
+- Have the **Merge** permission set for the target path.
+- If the item in the target tree is being renamed, have the **Check out** permission for both the source tree and the target tree set to **Allow**.
+- If any files affected by the operation are locked, have the **Lock** permission set to **Allow**.
 
 For more information about permissions, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 

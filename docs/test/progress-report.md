@@ -28,7 +28,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- You must be a member of a project with at least Basic access. If you don't have a project yet, create one. For more information, see [Sign up for free](../user-guide/sign-up-invite-teammates.md). 
+- Be a member of a project with at least Basic access. If you don't have a project yet, create one. For more information, see [Sign up for free](../user-guide/sign-up-invite-teammates.md). 
 - If you aren't a project member, [get added now](../organizations/accounts/add-organization-users.md). Anyone with access to the project, except stakeholders, can view Analytics views.
 - **Test Plans** must be enabled. If it's disabled, the **Test Plans** > **Progress Report** page doesn't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
 - Have the **View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).
@@ -36,8 +36,8 @@ To track the progress of more than one test plan or test suite, use the Progress
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- You must be a member of a project with at least Basic access. If you aren't a project member, [get added now](../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be the **Organization owner** or a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
+- Be a member of a project with at least Basic access. If you aren't a project member, [get added now](../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. Be the **Organization owner** or a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
 - **Test Plans** must be enabled. If it's disabled, the **Test Plans** > **Progress Report** page doesn't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
 - Have the **View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).
 

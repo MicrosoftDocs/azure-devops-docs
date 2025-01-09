@@ -25,7 +25,7 @@ The Team Foundation Version Control (TFVC) `status` command, or its alias `stat`
 
 ## Prerequisites
 
-To use the `status` command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `status` command, have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

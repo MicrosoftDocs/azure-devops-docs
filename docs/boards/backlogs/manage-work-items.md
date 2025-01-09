@@ -131,7 +131,7 @@ For more information, see [Copy or clone work items](copy-clone-work-items.md).
 
 ## Move work items between team
 
-You can move work items from one team to another team within the same project. To move work items, you must have the **Edit work items in this node** permission for the target team.
+You can move work items from one team to another team within the same project. To move work items, have the **Edit work items in this node** permission for the target team.
 
 For more information, see [Move work items from one team to another](../work-items/move-work-items.md).
 

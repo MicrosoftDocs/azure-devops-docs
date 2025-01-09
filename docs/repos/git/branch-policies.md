@@ -23,13 +23,13 @@ A branch with required policies configured can't be deleted, and requires pull r
 
 ::: moniker range="azure-devops"
 
-- To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To set branch policies, be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 - If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To set branch policies, be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 ::: moniker-end
 
 ## Configure branch policies
@@ -725,7 +725,7 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 A build validation policy queues a new build when a new PR is created or changes are pushed to an existing PR that targets the branch. The build policy evaluates the build results to determine whether the PR can be completed.
 
 > [!IMPORTANT]
-> Before specifying a build validation policy, you must have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
+> Before specifying a build validation policy, have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
 
 ::: moniker-end 
 
@@ -897,7 +897,7 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 If a build validation policy is enabled, a new build is queued when a new pull request is created or when changes are pushed to an existing pull request that targets the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 > [!IMPORTANT]
-> Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
+> Before specifying a build validation policy, have a build definition. If you don't have one, see [Create a build definition](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
 
 ![Add build policy](media/branch-policies/add-build-policy-2018.png)
 

@@ -65,7 +65,7 @@ To move a work item from one project to another, or to change the work item type
    :::column-end:::
    :::column span="2":::
        - Have the project-level permission set to **Allow**: **Delete and restore work items**
-       - Have **Basic** access or higher.
+       - Have at least **Basic** access.
        - By default, members of the **Contributors** group have this permission.
    :::column-end:::
 :::row-end:::

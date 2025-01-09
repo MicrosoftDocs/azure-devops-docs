@@ -28,7 +28,7 @@ At this time, GitHub Advanced Security for Azure DevOps is only available for Az
 
 ## Prerequisites
 
-You must have permissions allocated as a member of the Project Collection Administrators group. To add members to the Project Collection Administrators group or change a project collection-level permission see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
+Have permissions allocated as a member of the Project Collection Administrators group. To add members to the Project Collection Administrators group or change a project collection-level permission see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
 
 ### Extra prerequisites for self-hosted agents
 

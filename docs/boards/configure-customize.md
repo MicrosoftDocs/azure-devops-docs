@@ -471,7 +471,7 @@ Since process-level, project-level, and team-level settings can have a wide effe
 
 ### Process-level changes 
 
-To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+To create, edit, or manage Inherited processes and apply them to projects, be a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md). Or, have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 For more information, see the following articles:  
 
@@ -481,9 +481,9 @@ For more information, see the following articles:
 
 ### Project-level changes 
 
-To add Area Paths or Iteration Paths, you must be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
+To add Area Paths or Iteration Paths, be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
 
-Or, to add, edit, and manage Area Paths or Iteration Paths under a specific node, you must have one or more of the following permissions set to **Allow**:
+Or, to add, edit, and manage Area Paths or Iteration Paths under a specific node, have one or more of the following permissions set to **Allow**:
 
 - **Create child nodes**  
 - **Delete this node**  
@@ -496,7 +496,7 @@ For more information, see the following articles:
 
 ### Team-level changes
 
-To configure team tools, you must be a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
+To configure team tools, be a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
  
 Team administrators do the following operations:  
 - Add team members 

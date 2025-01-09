@@ -20,7 +20,7 @@ Team Foundation Version Control administrators can add, configure, and remove ch
 
 ## Prerequisites  
 
-You must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+Have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To add check-in notes
 

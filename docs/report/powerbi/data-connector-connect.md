@@ -39,7 +39,7 @@ In this article, learn how to establish a seamless connection between Power BI a
 - Install the *Power BI Desktop* *October 2018 Update* or a [newer version](https://aka.ms/pbidesktopstore).
 - Ensure that you're a member of a project with at least Basic access. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 - Ensure that you're a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true) is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
+- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true) is installed, and if not, then enable it. Be an account owner or a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
 - Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) for which you want to create a Power BI report.

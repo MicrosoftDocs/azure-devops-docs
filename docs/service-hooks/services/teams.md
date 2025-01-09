@@ -21,9 +21,9 @@ This article describes how you can integrate your Azure DevOps project activitie
 
 ## Requirements and limitations
 
-- To create Azure DevOps subscriptions in Teams, you must have **Project Administrator** permissions in your Azure DevOps project.
+- To create Azure DevOps subscriptions in Teams, have **Project Administrator** permissions in your Azure DevOps project.
 
-- To receive Azure DevOps notifications in Teams, you must have **Third party application access via OAuth** enabled in your Azure DevOps organization settings.
+- To receive Azure DevOps notifications in Teams, have **Third party application access via OAuth** enabled in your Azure DevOps organization settings.
 
 - Only Azure DevOps organizations in the same Microsoft Entra tenant as your Microsoft Teams account can be connected. Even if your email addresses are the same for Azure DevOps and Microsoft Teams, they can't be linked if they're backed by different tenants. For more information, see [Access via Microsoft Entra FAQs](../../organizations/accounts/faq-azure-access.yml#AlreadyConnected).
 
