@@ -92,7 +92,7 @@ Search has the following dependencies, which get installed automatically as part
 
    > [!NOTE]
    > If you're using Oracle Server JRE 8, which was the default for Search in TFS (Azure DevOps Server doesn't use Oracle Server JRE 8), be aware of the following information:
-   > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration,the commercial features of the Server JRE are neither activated nor unlocked.
+   > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration, the commercial features of the Server JRE are neither activated nor unlocked.
    > * If you choose to continue with Oracle JRE, contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), so that you can continue to receive JRE updates.
 
 #### Migrate to Microsoft Build of OpenJDK from Oracle Server JRE
@@ -158,14 +158,14 @@ To install or update Search on a separate or remote server, typically when there
 
 ## Secure search
 
-The Search service uses a modified version of [Elasticsearch](https://www.elastic.co/products/elasticsearch). The terms "Search" and "Elasticsearch" are used interchangeably for the rest of this section. Administrators must provide credentials whether the Search service is on the same machine as Azure DevOps Server, or on a separate machine. This action is part of configuring the Search feature through the server or the Search configuration wizard. These credentials are new and aren't related to any pre-existing account or server credentials. They're used to set up and connect to Search service. These new sets of credentials enable basic authentication in the search service.
+The Search service uses a modified version of [Elasticsearch](https://www.elastic.co/products/elasticsearch). The terms "Search" and "Elasticsearch" are used interchangeably for the rest of this section. Administrators must provide credentials whether the Search service is on the same machine as Azure DevOps Server, or on a separate machine. This action is part of configuring the Search feature through the server or the Search configuration wizard. These credentials are new and aren't related to any preexisting account or server credentials. They're used to set up and connect to Search service. These new sets of credentials enable basic authentication in the search service.
 
 ![Screenshot showing search credentials.](media/administration/tfsU3_search_cred1.png)
 
-For an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3 or for search reconfiguration, only the user information automatically populates and administrators must provide password credentials. Administrators can provide a different username and password if they wish. If the Search service is on the same machine as Azure DevOps Server, administrators can provide a new set of credentials in the Configuration Wizard to set up the Search service, if wanted. However, if the Search service is on a remote machine, administrators must first provide the new credentials to the Search service setup script.
+For an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3 or for search reconfiguration, only the user information automatically populates and administrators must provide credentials. Administrators can provide different credentials if they wish. If the Search service is on the same machine as Azure DevOps Server, administrators can provide a new set of credentials in the Configuration Wizard to set up the Search service, if wanted. However, if the Search service is on a remote machine, administrators must first provide the new credentials to the Search service setup script.
 
 > [!NOTE]
-> * Username and password values should both be between 8 and 64 characters in length. While the password can be assigned any value, the username can contain only alphanumeric and underscore characters. 
+> * Credential values should both be between 8 and 64 characters in length.
 > * Search credentials only authenticate the users and make sure that unauthenticated users can't access the Elasticsearch endpoint. However, Elasticsearch doesn't support HTTPS and so these credentials get sent over the network as Base64 encoded strings. If there's a possibility of intermediate access to request, configure appropriate security settings based on your corporate security and compliance requirements.
 > * Aim to limit access to both searching and indexing to specific users or user groups using encryption through IPSec, described as follows. 
 
