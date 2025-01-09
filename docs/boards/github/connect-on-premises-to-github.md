@@ -48,7 +48,7 @@ The following authentication options are supported.
 
 ::: moniker range="azure-devops-2020"
 - [PAT](#server-github-ent-pat)
-- [Username and password](#server-github-ent-username)
+- [GitHub credentials](#server-github-ent-credentials)
 
 > [!NOTE] 
 > OAuth isn't supported for Azure DevOps Server 2020.  
@@ -57,7 +57,7 @@ The following authentication options are supported.
 ::: moniker range="azure-devops-2019"
 - [OAuth (Recommended, registration required)](#server-github-ent-oauth-register) 
 - [PAT](#server-github-ent-pat)
-- [Username and password](#server-github-ent-username)
+- [GitHub credentials](#server-github-ent-credentials)
 ::: moniker-end
 
 <a id="github-oauth"></a>
@@ -156,7 +156,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 4.	If it's the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
 
 	- **Personal Access Token**, for details see [Connect using a Personal Access Token](#github-ent-pat). 
-	- **User Name and Password**, see [Connect using a Username and Password](#server-github-ent-username).
+	- **GitHub credentials**, see [Connect using GitHub credentials](#server-github-ent-credentials).
 
 	:::image type="content" source="media/github-ent/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
@@ -164,11 +164,10 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 
-3. Select **Project settings** > **GitHub connections** > **Connect your GitHub Enterprise account**.   
+3. Select **Project settings** > **GitHub connections** > **Connect your GitHub Enterprise account** or choose from the other authentication options, which we don't recommend.   
 
    :::image type="content" source="media/github-ent/open-project-settings-github-connections.png" alt-text="Screenshot of Project settings, selected Integrations.":::   
 
-	Or, choose a **personal access token** or **username and password**, if you're using those credentials.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -195,13 +194,13 @@ Choose the configuration that you set up in [Step 4 of Register your OAuth confi
 
    :::image type="content" source="media/github-ent/ads-add-ghe-pat.png" alt-text="Screenshot of sign in with PAT.":::
 
-<a id="server-github-ent-username"></a>
+<a id="server-github-ent-credentials"></a>
 
-#### Connect with a username and password   
+#### Connect with GitHub credentials   
 
 1.	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose **Connect**.
 
-   :::image type="content" source="media/github-ent/ads-add-ghe-user-name.png" alt-text="Screenshot of sign in with username and password."::: 
+   :::image type="content" source="media/github-ent/ads-add-ghe-user-name.png" alt-text="Screenshot of sign in with GitHub credentials."::: 
 
 2. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when you're done.
 
@@ -241,7 +240,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column span="1":::
       - OAuth  
       - PAT
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -253,7 +252,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column-end:::
    :::column span="1":::
       - PAT 
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -266,7 +265,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column span="1":::
       - OAuth  
       - PAT
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
  
