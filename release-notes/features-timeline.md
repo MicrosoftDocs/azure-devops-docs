@@ -125,12 +125,12 @@ Azure DevOps supports many different authentication mechanisms, including basic 
        <tr>
          <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
          <td>General</td>
-         <td>2024 H2</td>
+         <td>2025 Q1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
          <td>General</td>
-         <td>Future</td>
+         <td>2025 Q1</td>
       </tr>
    </tbody>
 </table>
