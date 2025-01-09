@@ -201,7 +201,7 @@ az devops service-endpoint azurerm create --azure-rm-service-principal-id
 
 ### Use a client secret
 
-In interactive mode, the the `az devops service-endpoint azurerm create` command asks for a service principal secret using a prompt message. For automation purposes, set the service principal secret using the `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
+In interactive mode, the `az devops service-endpoint azurerm create` command asks for a service principal secret using a prompt message. For automation purposes, set the service principal secret using the `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
 
 ```bash
 export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
@@ -215,7 +215,7 @@ $env:AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
 
 If the Microsoft Entra application uses [certificate for authentication](/azure/active-directory/develop/active-directory-certificate-credentials), then create a .pem file for the certificate and pass the path to the .pem file using the `--azure-rm-service-principal-certificate-path` argument.
 
-You can create a.pem file using openssl:
+You can create a .pem file using openssl:
 
 ```bash
 openssl pkcs12 -in file.pfx -out file.pem -nodes -secret pass:<secret_here>
