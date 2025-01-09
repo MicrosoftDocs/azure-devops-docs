@@ -92,3 +92,4 @@ You have a complete HAR file with the necessary data for troubleshooting.
 ## Related articles
 
 - [Access Azure DevOps troubleshooting documentation](/troubleshoot/azure/devops/welcome-azure-devops)
+- [Get support and provide feedback](provide-feedback.md)
