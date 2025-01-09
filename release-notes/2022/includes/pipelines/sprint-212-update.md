@@ -139,9 +139,6 @@ You can use `parameters.` and `variables.` in your template expressions. For var
 
 When a user is asked to approve a pipeline to deploy to a particular stage, that user can choose to reassign the approval to someone else. 
 
-> [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/212-pipelines-01.png)
-
 Up until now, such actions were not logged in the Audit logs. This issue is fixed now. 
 
 The Audit logs will contain an entry similar to the following.

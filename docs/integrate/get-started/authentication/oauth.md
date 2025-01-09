@@ -17,8 +17,7 @@ ms.date: 10/21/2024
 Learn how to authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 
 > [!NOTE]
-> - The following guidance is intended for Azure DevOps Services users since OAuth 2.0 isn't supported on Azure DevOps Server. Client Libraries are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
-> - For more information, see the [C# OAuth GitHub sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
+> The following guidance is intended for Azure DevOps Services users since OAuth 2.0 isn't supported on Azure DevOps Server. Client Libraries are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
 
 ## About OAuth 2.0
 

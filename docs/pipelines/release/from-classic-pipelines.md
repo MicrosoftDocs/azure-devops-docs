@@ -60,13 +60,11 @@ Do the following steps to create a sample YAML pipeline, which you'll update lat
 
 ## Export your Classic pipeline
 
-Do the following steps to export your Classic pipeline to a YAML file that you can use in the editor. 
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
-1. Go to **Pipelines** > **Pipelines**. 
+1. Select **Pipelines** > **Pipelines**. 
  
-1. Open your Classic pipeline in the classic build designer.
-
-1. Select the ellipses (...), and then select **Export to YAML**.
+1. Select your Classic pipeline definition, select the ellipses icon, and then select **Export to YAML**. Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
 
     :::image type="content" source="media/export-yaml.png" alt-text="Screenshot of context menu, to export your pipeline to YAML.":::
 

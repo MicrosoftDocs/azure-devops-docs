@@ -16,6 +16,8 @@ monikerRange: '<= azure-devops'
 
 If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT to safeguard the organization. Disabling a user's account also revokes their PAT.
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 ## Why revoke user PATs?
 
 Revoking user PATs is essential for the following reasons:

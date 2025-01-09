@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article provides guidance on how to use Microsoft Entra policies to manage personal access tokens (PATs) in Azure DevOps. It explains how to limit the creation, scope, and lifespan of new or renewed PATs, as well as how to handle the automatic revocation of leaked PATs. Each section details the default behavior of the respective policies, helping administrators effectively control and secure PAT usage within their organization.
+This article provides guidance on how to use Microsoft Entra policies to manage personal access tokens (PATs) in Azure DevOps. It explains how to limit the creation, scope, and lifespan of new or renewed PATs, and how to handle the automatic revocation of leaked PATs. Each section details the default behavior of the respective policies, helping administrators effectively control and secure PAT usage within their organization.
 
 > [!IMPORTANT]
 > Existing PATs, created through both the UI and APIs, remain valid for the rest of their lifespan. Update your existing PATs to comply with the new restrictions to ensure successful renewal.
@@ -24,6 +24,8 @@ This article provides guidance on how to use Microsoft Entra policies to manage 
 
 - **Organization connection:** Ensure your organization is [linked to Microsoft Entra ID](connect-organization-to-azure-ad.md).
 - **Roles:** Be an [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Restrict creation of global PATs
 
@@ -70,7 +72,7 @@ The Azure DevOps Administrator in Microsoft Entra ID can define the maximum life
 ## Add Microsoft Entra users or groups to the allowlist
 
 > [!WARNING]
-> We recommend using groups for your tenant policy allow lists. If you use a named user, a reference to their identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups for your tenant policy allowlists. If you use a named user, a reference to their identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 Users or groups on the allowlist are exempt from the restrictions and enforcements of these policies when enabled. To add a user or group, select **Add Microsoft Entra user or group**, then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, other activated policies still apply. Therefore, to exempt a user from all policies, add them to each allowlist.
 
@@ -79,7 +81,7 @@ Users or groups on the allowlist are exempt from the restrictions and enforcemen
 The [Azure DevOps Administrator in Microsoft Entra ID](azure-ad-tenant-policy-restrict-org-creation.md#prerequisites) can manage the policy that automatically revokes leaked PATs. This policy applies to all PATs within organizations linked to your Microsoft Entra tenant. By default, this policy is set to *on*. If Azure DevOps PATs are checked into public GitHub repositories, they're automatically revoked.
 
 > [!WARNING]
-> Disabling this policy means any PATs checked into public GitHub repositories will remain active, potentially compromising your Azure DevOps organization and data, and putting your applications and services at significant risk. Even with the policy disabled, you will still receive an email notification if a PAT is leaked, but it will not be revoked automatically.
+> Disabling this policy means any PATs checked into public GitHub repositories remain active, potentially compromising your Azure DevOps organization and data, and putting your applications and services at significant risk. Even with the policy disabled, you still receive an email notification if a PAT is leaked, but it isn't revoked automatically.
 
 ### Turn off automatic revocation of leaked PATs
 

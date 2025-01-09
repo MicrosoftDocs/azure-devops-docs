@@ -21,9 +21,6 @@ When you restrict pipeline permissions of a protected resource, such as a servic
 > [!div class="mx-imgBorder"]
 > ![Pipeline Permissions for Changes to Approvals](../../media/213-pipelines-01.png)
 
-> [!div class="mx-imgBorder"]
-> ![Successfully Authorized for Changes to Approvals](../../media/213-pipelines-02.png)
-
 ### Ensure your organization only uses YAML pipelines
 
 Azure DevOps now lets you ensure your organization only uses YAML pipelines, by disabling the creation of classic build pipelines, classic release pipelines, task groups, and deployment groups. Your existing classic pipelines will continue to run, and you'll be able to edit them, but you won't be able to create new ones.

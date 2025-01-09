@@ -68,8 +68,8 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 > [!NOTE]
 > PATs are a less desirable option compared to connecting Power BI with Microsoft Entra ID or Windows Authentication.
-> Consider them an extension of your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password.
-> To help keep your token more secure, consider using credential managers. If you use a credential managers, you won't have to enter your credentials every time you push.
+> Consider them an extension of your identity. When used, the token is acting as you. Keep your tokens secret.
+> To help keep your token more secure, consider using credential managers. If you use a credential manager, you won't have to enter your credentials every time you push.
 
 1. Follow the steps on the [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
 	
@@ -102,7 +102,7 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 
 	::: moniker-end
 
-5. In the authentication dialog, choose <strong>Basic</strong>, enter your credentials, and then choose <strong>Connect</strong>. If you're using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
+5. In the authentication dialog, choose **Basic**, enter your credentials, and then choose **Connect**.  
 
      ::: moniker range="azure-devops"
 
