@@ -5,8 +5,8 @@ ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: bjanousek
-author: bjanousek
+ms.author: vijayma
+author: vijayma
 ms.date: 06/26/2024
 monikerRange: '= azure-devops'
 ---
