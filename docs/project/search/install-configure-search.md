@@ -92,7 +92,7 @@ Search has the following dependencies, which get installed automatically as part
 
    > [!NOTE]
    > If you're using Oracle Server JRE 8, which was the default for Search in TFS (Azure DevOps Server doesn't use Oracle Server JRE 8), be aware of the following information:
-   > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration,the commercial features of the Server JRE are neither activated nor unlocked.
+   > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration, the commercial features of the Server JRE are neither activated nor unlocked.
    > * If you choose to continue with Oracle JRE, contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), so that you can continue to receive JRE updates.
 
 #### Migrate to Microsoft Build of OpenJDK from Oracle Server JRE
@@ -158,7 +158,7 @@ To install or update Search on a separate or remote server, typically when there
 
 ## Secure search
 
-The Search service uses a modified version of [Elasticsearch](https://www.elastic.co/products/elasticsearch). The terms "Search" and "Elasticsearch" are used interchangeably for the rest of this section. Administrators must provide credentials whether the Search service is on the same machine as Azure DevOps Server, or on a separate machine. This action is part of configuring the Search feature through the server or the Search configuration wizard. These credentials are new and aren't related to any pre-existing account or server credentials. They're used to set up and connect to Search service. These new sets of credentials enable basic authentication in the search service.
+The Search service uses a modified version of [Elasticsearch](https://www.elastic.co/products/elasticsearch). The terms "Search" and "Elasticsearch" are used interchangeably for the rest of this section. Administrators must provide credentials whether the Search service is on the same machine as Azure DevOps Server, or on a separate machine. This action is part of configuring the Search feature through the server or the Search configuration wizard. These credentials are new and aren't related to any preexisting account or server credentials. They're used to set up and connect to Search service. These new sets of credentials enable basic authentication in the search service.
 
 ![Screenshot showing search credentials.](media/administration/tfsU3_search_cred1.png)
 
