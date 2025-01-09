@@ -29,7 +29,7 @@ Work items, tags, test plans, and other test artifacts are subject to the securi
 
 ## Prerequisites
 
-**Permissions**: To set object-level permissions, you must be a member of the **Project Administrators** group or have explicit permissions through the individual object security dialog.
+**Permissions**: To set object-level permissions, be a member of the **Project Administrators** group or have explicit permissions through the individual object security dialog.
 
 > [!NOTE]
 > TFVC only supports a single repository per project. You can set permissions for the repository or repo folders/branches, which inherit from the repo.

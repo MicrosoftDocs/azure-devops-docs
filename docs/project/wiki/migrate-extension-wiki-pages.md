@@ -21,7 +21,7 @@ Learn how to migrate pages created using the [Wiki Marketplace  extension](https
 
 ## Prerequisites
 
-You must be a member of the Contributors group of your team project to migrate wiki pages to your team project wiki.
+Be a member of the Contributors group of your team project to migrate wiki pages to your team project wiki.
 
 ## Migrate pages and other artifacts
 

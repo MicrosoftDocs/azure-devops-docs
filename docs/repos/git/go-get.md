@@ -52,7 +52,7 @@ If your Azure DevOps Git repo is private, you can either use SSH or authenticate
 
 ### SSH
 
-To use SSH with `go get`, you must have SSH keys set up for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md).
+To use SSH with `go get`, have SSH keys set up for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md).
 
 When you have SSH keys set up, add this entry to your .gitconfig file:
 

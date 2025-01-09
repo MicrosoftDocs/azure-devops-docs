@@ -19,7 +19,7 @@ Share your code with others in Azure DevOps when you use a Git repository.
 
 ## Prerequisites
 
-You must have an [organization](../organizations/accounts/create-organization.md) and [project](../organizations/projects/create-project.md) in Azure DevOps. When you create a project, Azure DevOps automatically creates an empty repository in Repos.
+An [organization](../organizations/accounts/create-organization.md) and [project](../organizations/projects/create-project.md) in Azure DevOps. When you create a project, Azure DevOps automatically creates an empty repository in Repos.
 
 ## 1. Install Git command-line tools
 

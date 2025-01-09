@@ -23,8 +23,8 @@ Find the code you need faster with functional code search. This article explains
 
 - **Access levels:**
   - **Basic access:**
-    - To use code search, you must have at least Basic access.
-    - To access code in a private project, you must have at least Basic access.
+    - To use code search, have at least Basic access.
+    - To access code in a private project, have at least Basic access.
   - **Stakeholder access:**
     - Users with Stakeholder access don’t have access to code, so they can’t search for code.
     - Users with Stakeholder access for a public project have full access to code, so they can search for code.
@@ -36,8 +36,8 @@ Find the code you need faster with functional code search. This article explains
 
 - **Access levels:**
   - **Basic access:**
-    - To use code search, you must have at least Basic access.
-    - To access code in a private project, you must have at least Basic access.
+    - To use code search, have at least Basic access.
+    - To access code in a private project, have at least Basic access.
   - **Stakeholder access:**
     - Users with Stakeholder access don’t have access to code, so they can’t search for code.
 - **Search results:**

@@ -40,8 +40,8 @@ For information on working with dependencies, see [Track dependencies](track-dep
 
 ## Prerequisites
 
-- **Access levels:** To view a delivery plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
-- **Permissions:** To open or modify a work item or add work items to a plan, you must have **Edit work items in this node** set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+- **Access levels:** To view a delivery plan, be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
+- **Permissions:** To open or modify a work item or add work items to a plan, have **Edit work items in this node** set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 For work items and dependency lines to appear on the plan:
 

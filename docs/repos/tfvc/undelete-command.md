@@ -25,8 +25,8 @@ The Team Foundation Version Control (TFVC) `undelete` command restores items tha
 
 To use the `undelete` command:
 
-- You must have the **Check out** permission set to **Allow**.
-- If you include the `/lock` option with a value other than `None`, you must have the **Lock** permission set to **Allow**.
+- Have the **Check out** permission set to **Allow**.
+- If you include the `/lock` option with a value other than `None`, have the **Lock** permission set to **Allow**.
 - You must own the workspace or have the global **Administer workspaces** permission set to **Allow**.
 
 For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).

@@ -34,7 +34,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 ## Prerequisites 
  
-* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* Be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
  
 ::: moniker range="azure-devops"  
 > [!NOTE]  

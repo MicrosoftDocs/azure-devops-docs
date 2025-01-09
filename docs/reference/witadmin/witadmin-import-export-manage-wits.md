@@ -34,9 +34,9 @@ To learn more about how work item types are used to track work, see [Track your 
 
 ## Prerequisites  
   
-For the project where the work item types are defined, you must have the following permissions set:   
--   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
--   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
+For the project where the work item types are defined, have the following permissions set:   
+-   To export or list work item types, be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
+-   To destroy, import, or rename work item types, be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
 For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   

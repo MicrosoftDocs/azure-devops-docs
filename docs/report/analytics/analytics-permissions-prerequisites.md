@@ -57,7 +57,7 @@ To verify that all services are enabled, see [Turn a service on or off](../../or
 
 **Analytics views**, a hub in your web portal, provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics data.  For more information, see [What is the Analytics Service?](../powerbi/what-are-analytics-views.md) 
 
-To access **Analytics views**, you must have it enabled. The organization owner or member of the Project Collection Administrators group can enable it for everyone in the organization. Or, each project member can enable it for themselves. 
+To access **Analytics views**, have it enabled. The organization owner or member of the Project Collection Administrators group can enable it for everyone in the organization. Or, each project member can enable it for themselves. 
 
 To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
 

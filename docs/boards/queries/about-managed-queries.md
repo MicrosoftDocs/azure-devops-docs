@@ -32,7 +32,7 @@ You can create queries and query folders from the web portal or from Visual Stud
 If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
 
 - To find work items that are assigned to you, add the **@Me** macros as the value for the **Assigned To** field in one of the query clauses.  
-- All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
+- All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
 - You can modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](using-queries.md).   
 - You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can also update the fields of one or more work items and publish your changes to the database for tracking work items.  
 - You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 

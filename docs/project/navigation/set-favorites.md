@@ -42,21 +42,21 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project through the web portal. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
-* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
-* To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
-* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.  
+* Connect to a project through the web portal. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
+* Be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, have at least **Stakeholder** access.
+* To favorite repositories, or delivery plans, have at least **Basic** access. 
+* To favorite test plans, have **Basic + Test Plans** access level or equivalent.  
 
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2019"
 
-* You must connect to a project through the web portal. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
-* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
-* To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
-* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.   
+* Connect to a project through the web portal. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
+* Be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, have at least **Stakeholder** access.
+* To favorite repositories, or delivery plans, have at least **Basic** access. 
+* To favorite test plans, have **Basic + Test Plans** access level or equivalent.   
 
 ::: moniker-end 
 
@@ -165,7 +165,7 @@ Open **Boards>Queries** and choose the **All** page. Expand a folder as needed. 
 Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
 
 > [!NOTE]  
-> You must be a member of at least one team for the **Add to Team Favorites** option to be visible.  If not visible, ask your project administrator or team administrator to add you to a team.
+> Be a member of at least one team for the **Add to Team Favorites** option to be visible.  If not visible, ask your project administrator or team administrator to add you to a team.
 
 > [!div class="mx-imgBorder"]  
 > ![Work>Queries, Add to favorites](media/favorites/favorite-query.png)

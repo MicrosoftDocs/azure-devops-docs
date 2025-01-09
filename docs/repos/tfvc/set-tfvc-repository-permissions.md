@@ -22,19 +22,19 @@ You can manage access to a Team Foundation Version Control (TFVC) repository to 
 
 ## Prerequisites
 
-- You must have a TFVC project. If you don't have a project yet, create one in [Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md) or set one up in [on-premises Azure DevOps Server](../../organizations/projects/create-project.md).
+- A TFVC project. If you don't have a project yet, create one in [Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md) or set one up in [on-premises Azure DevOps Server](../../organizations/projects/create-project.md).
 
-- You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) or have **Manage permissions** set to **Allow** for the TFVC repository.
+- Be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) or have **Manage permissions** set to **Allow** for the TFVC repository.
 
 ::: moniker range="azure-devops"
 
-- To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as **Contributors** and those granted **Basic** access. For more information, see [About access levels](../../organizations/security/access-levels.md).
+- To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as **Contributors** and those granted **Basic** access. For more information, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).
+- To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).
 ::: moniker-end 
 
 ## Default repository permissions  
@@ -46,7 +46,7 @@ By default, members of the project **Contributors** group have permissions to co
 <a id="tfvc-repository">  </a>
 ## Set TFVC repository security permissions
 
-To set permissions for a custom security group, you must have defined that group previously. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
+To set permissions for a custom security group, have defined that group previously. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
 ::: moniker range="azure-devops"
 
