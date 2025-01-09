@@ -8,7 +8,7 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/07/2025
+ms.date: 01/09/2025
 ---
 
 # Do test run migration
@@ -22,11 +22,16 @@ Your team is now ready to begin the process of starting a test run of your migra
 Complete the [Prepare test run phase](migration-prepare-test-run.md) before you begin a test run migration. 
 
 > [!IMPORTANT]
-> To ensure a smooth migration process, complete the test run imports as close to the production imports as possible, allowing time for validation and testing, ideally within 45 days.
-> Performing a successful test run migration within the same [sprint](../boards/sprints/scrum-key-concepts.md) as your production import increases the success rate for the final import. The more time that passes between the test run and production run, the more the service might change, introducing potential errors that a fresh test run would catch.
-> If you need more time for testing, you can rerun the test run import after 45 days as many times as needed, though it reverts to the initial state each time. Note the following points:
+> To ensure a smooth migration process, perform one or more test run imports. A test run import lasts for 45 days for testing and validation. After 45 days, the test run times out and gets removed, requiring you to start over if needed.
+> The more time that passes between the test run and production run, the more the service might change, potentially introducing errors that a fresh test run would catch. You can rerun the test run import as many times as needed. Each import begins from the initial state of the imported database, as it's not possible for changes from one import to persist to another.
+> Note the following points:
+> - You can't extend a test run indefinitely.
 > - You can't promote a test run to a production run.
-> - A test run gets deleted once it times out, a new test run (with the same name) gets run, or a production run starts.
+> - A test run gets deleted if any of the following occur:
+>  - The test run times out.
+>  - A new test run with the same name is run.
+>  - A production run starts.
+>  - The organization is manually deleted via organization settings.
 
 ## Validate a collection 
 
