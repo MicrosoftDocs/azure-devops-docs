@@ -1,30 +1,37 @@
 ---
-title: Start using Azure Artifacts
+title: What is Azure Artifacts?
 description: Learn how to get started with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 10/02/2024
+ms.date: 01/09/2025
 monikerRange: '<= azure-devops'
 ---
 
-# Start using Azure Artifacts
+# What is Azure Artifacts?
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online. Azure Artifacts supports various package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
+Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online.
 
-## Prerequisites
-
-- Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
-- Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
+Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 > [!NOTE]
 > Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-azure-artifacts-storage-limit) to ensure you have the appropriate resources.
 
+## Prerequisites
+
+| **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An [Azure DevOps project](../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server. |
+
 ## Create a new feed
+
+Azure Artifacts feeds are organizational constructs that enable you to store, manage, and share your packages while maintaining access control. Feeds are not limited to specific package types; you can store a variety of packages, such as npm, NuGet, Maven, Python, Cargo, and Universal Packages in a single feed. See [What are feeds](/concepts/feeds.md) for more details.
+
+Follow the instructions below to create a new feed:
 
 [!INCLUDE [](includes/create-feed.md)]
 
