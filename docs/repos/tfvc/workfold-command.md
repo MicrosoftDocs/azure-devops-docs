@@ -20,7 +20,7 @@ The Team Foundation Version Control (TFVC) `workfold` command creates, modifies,
 
 ## Prerequisites
 
-To use the `workfold` command, you must be the owner of the specified or implied workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `workfold` command, be the owner of the specified or implied workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
  
 
 ## Syntax

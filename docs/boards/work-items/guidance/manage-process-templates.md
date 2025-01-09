@@ -34,7 +34,7 @@ You can upload and export process templates only for those project collections c
 
 ## Prerequisites
  
-To manage process templates, you must be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
+To manage process templates, be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
 
 ::: moniker range=">= azure-devops-2019"
 

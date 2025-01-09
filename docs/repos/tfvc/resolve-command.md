@@ -19,7 +19,7 @@ The Team Foundation Version Control (TFVC) `tf resolve` command lets you resolve
 
 ## Prerequisites
 
-To use the `resolve` command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `resolve` command, be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

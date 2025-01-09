@@ -33,7 +33,7 @@ Before editing a check-in policy, you must first create one. For more informatio
 
 ## Prerequisites  
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To complete this procedure, have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Edit a check-in policy
 

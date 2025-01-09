@@ -23,7 +23,7 @@ When you check in files to a version control folder that's controlled by a [gate
 
 ## Prerequisites
 
-- You must be a **Contributor** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+- Be a **Contributor** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 - You can't have [Limit job authorization scope to current project for non-release pipelines](../../pipelines/process/access-tokens.md#job-authorization-scope) set. If you receive an error such as **The shelveset _Build_95;Build\\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in**, check this setting and make sure it's not enabled.
 

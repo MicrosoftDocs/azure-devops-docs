@@ -21,7 +21,7 @@ Azure DevOps doesn't charge for setting up service hooks or integrating with ext
 
 ## Create a Jenkins service hook
 
-To manage service hooks for an Azure DevOps organization or project, you must have **Owner** or **Project Collection Administrator** role in the organization.
+To manage service hooks for an Azure DevOps organization or project, have **Owner** or **Project Collection Administrator** role in the organization.
 
 ### Configure Jenkins
 

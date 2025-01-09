@@ -19,7 +19,7 @@ The Team Foundation Version Control (TFVC) `workspaces` command displays informa
 
 ## Prerequisites
 
-To use the `workspaces` command, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `workspaces` command, have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

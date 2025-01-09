@@ -20,7 +20,7 @@ You can compare text files by using the [Diff window](compare-files.md), the def
 
 ## Prerequisites
 
-You must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+Be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ## Associate a file type with a file-comparison tool
 

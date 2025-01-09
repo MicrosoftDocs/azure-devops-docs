@@ -22,7 +22,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 
 ## Prerequisites 
 
-- You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
+- Be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 

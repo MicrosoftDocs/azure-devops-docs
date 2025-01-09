@@ -130,7 +130,7 @@ When you hide or remove a state:
 
 ## Hide or unhide an inherited state
 
-You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category.
+You can hide an inherited state that your team doesn't use in its workflow process. However, have at least one state defined for each category.
 
 1. Open the &hellip; context menu for the state you want to hide and choose the **Hide** option.
 

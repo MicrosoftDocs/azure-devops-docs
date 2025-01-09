@@ -232,7 +232,7 @@ All changes you make to your query folder structure in Visual Studio appear in t
 
 ## Save a query as a team favorite
 
-To save a shared query as a team favorite, you must be a member of the team.
+To save a shared query as a team favorite, be a member of the team.
 
 You can add a shared query to team favorites. Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
@@ -263,7 +263,7 @@ You can only add shared queries as team favorites if you have [team administrato
 A query tile displays a count of the work items in a query. You can also quickly open the query from the dashboard. You can add a query tile to a dashboard from the **Queries** page using the following steps, or by following the steps outlined in [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
  
 > [!NOTE]   
-> You must be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
+> Be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
 
 ::: moniker range="< azure-devops"
 

@@ -249,7 +249,7 @@ Within the table, you can complete the same actions as in the Consuming Dependen
 The **Timeline** tab provides a calendar view of dependencies. The Timeline view is in Beta.
 
 > [!IMPORTANT]   
-> For the Timeline to show meaningful data, you must have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
+> For the Timeline to show meaningful data, have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
 
 There are two versions of the Timeline view: **Correct Flow** and **Incorrect Flow**. Each version shows the color-coded workflow state. You can customize color codes within the [Dependency Tracker configuration](#configuration).
 
@@ -302,7 +302,7 @@ You can drill down into specifics by choosing one of the dependencies.
 
 ## Configure the Dependency Tracker
 
-You must be a member of the  Project Collection Administrator Group to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
+Be a member of the  Project Collection Administrator Group to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
 To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when you're done. 
 

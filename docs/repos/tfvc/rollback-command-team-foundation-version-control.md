@@ -20,7 +20,7 @@ You can use the Team Foundation Version Control (TFVC) `tf rollback` command to 
 
 ## Prerequisites
 
-To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use this command, have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

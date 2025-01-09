@@ -22,7 +22,7 @@ The Team Foundation Version Control (TFVC) `rename` command changes the name or 
 
 ## Prerequisites
 
-To use the `rename` command, you must have the **Check out** permission set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `rename` command, have the **Check out** permission set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

@@ -19,7 +19,7 @@ The Team Foundation Version Control (TFVC) `undo` command discards one or more p
  
 ## Prerequisites
 
-By default, members of the project **Contributors** group have permissions to contribute to a repository and use the `undo` command in their own workspaces. To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+By default, members of the project **Contributors** group have permissions to contribute to a repository and use the `undo` command in their own workspaces. To undo pending changes in another user's workspace, have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
@@ -88,7 +88,7 @@ tf undo [/workspace:<workspace-name>[;<workspace-owner>]]
    :::column span="3":::
    Specifies the name of the workspace to undo pending changes in. If not specified, the workspace that maps the current directory is used.
 
-   You can specify `<workspace-owner>` to undo a pending change in a workspace that belongs to a specific user. If you don't provide this argument, the workspace that's owned by the current user is used by default. But if you provide the `/login` argument with a username, the workspace that's owned by that user is used. You must have the **UndoOther** permission set to **Allow** to undo changes in another user's workspace.
+   You can specify `<workspace-owner>` to undo a pending change in a workspace that belongs to a specific user. If you don't provide this argument, the workspace that's owned by the current user is used by default. But if you provide the `/login` argument with a username, the workspace that's owned by that user is used. Have the **UndoOther** permission set to **Allow** to undo changes in another user's workspace.
 
    > [!Note]  
    > You can use the `undo` command to undo a pending change in a remote workspace that's still in use. Before continuing work in that workspace, a user must sign in to the machine that hosts the workspace and get the items that are affected by the undo operation. For more information about the `get` command and its `/all` argument, see [Get command](get-command.md).

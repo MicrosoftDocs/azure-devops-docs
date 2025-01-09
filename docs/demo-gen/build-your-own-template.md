@@ -17,7 +17,7 @@ Azure DevOps Generator provides many out-of-the-box templates that support a wid
 
 ## Prerequisites
 
-You must have an [Azure DevOps project](../organizations/projects/create-project.md) that's ready for extraction. The extractor captures the contents of the project and saves them as JSON files, which get archived into a zip file.
+An [Azure DevOps project](../organizations/projects/create-project.md) that's ready for extraction. The extractor captures the contents of the project and saves them as JSON files, which get archived into a zip file.
 
 ## Build a custom template
 

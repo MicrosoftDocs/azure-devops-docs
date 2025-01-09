@@ -93,7 +93,7 @@ To retrieve the current list of tags from the source repo, perform a [fetch](pul
 
 ## Create tag
 
-To create a tag, you must have the [Create tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
+To create a tag, have the [Create tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
 
 > [!NOTE]
 > Tag names can't contain ASCII control characters, such as spaces, tildes, and colons. It's common practice to use lowercase characters and to separate words with a hyphen. Tag name length shouldn't exceed 250 ASCII characters. To avoid ambiguity between tag names and commit hashes, don't use tag names that consist of 40 hexadecimal characters. For more information on tag naming, see [git-check-ref-format](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html).
@@ -171,7 +171,7 @@ You can view tags in the **History** view.
 >[!IMPORTANT]
 >Use caution when deleting tags from your repo. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags, or if you are sure that the repo hasn't been pulled, cloned, or forked since you created your tag.
 
-To delete a tag, you must have the [Force push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). The creator also inherits **Force push** permissions for a tag.
+To delete a tag, have the [Force push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). The creator also inherits **Force push** permissions for a tag.
 
 #### [Browser](#tab/browser)
 

@@ -30,7 +30,7 @@ To manage work tracking effectively, assign specific permissions to users or gro
 **Permissions**: To set work tracking permissions, be a member of the [**Project Administrators** group](change-project-level-permissions.md) or have explicit permissions to manage the work tracking area as described in this article. 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-**Permissions**: To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
+**Permissions**: To set process permissions, be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
 ::: moniker-end
 
 <a id="business-workflows"></a> 
@@ -136,7 +136,7 @@ The following table summarizes the different permissions you can set at the obje
 Area path permissions let you manage access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
-> Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
+> Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
  
 ::: moniker range="azure-devops" 
 
@@ -214,7 +214,7 @@ There are some restrictions for applying custom rules to system fields. For exam
 ## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
-To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group or granted explicit access through the object's **Security** dialog. 
+To manage permissions for a query or query folder, be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group or granted explicit access through the object's **Security** dialog. 
 
 **Query folder permissions dialog**
 
@@ -255,7 +255,7 @@ Delivery Plans are an object within a project. You can manage permissions for ea
 
 Users granted **Stakeholder** access for private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. For a comparison chart of Stakeholder versus basic access, see the [Feature Matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
-To edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's **Security** dialog.
+To edit the permissions for a Delivery Plan, be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's **Security** dialog.
 
 ::: moniker range=">= azure-devops-2022"
 

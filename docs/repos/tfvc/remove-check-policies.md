@@ -21,7 +21,7 @@ Team Foundation Version Control (TFVC) administrators can add check-in policies 
 
 ## Prerequisites
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To complete this procedure, have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Remove a check-in policy
 

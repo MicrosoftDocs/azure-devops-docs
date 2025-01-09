@@ -35,7 +35,7 @@ For more information, see [Organize queries](organize-queries.md).
 
 ## Prerequisites
 
-- **Access levels**: Have at least **Basic** access.
+- **Access levels**: At least **Basic** access.
 - **Permissions**: 
   - To manage permissions, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).
   - To create or edit a shared query, have your **Contribute** permission set to **Allow** for the shared query folder.  

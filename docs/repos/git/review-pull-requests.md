@@ -54,7 +54,7 @@ In this article you learn how to:
 
 - **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
  
-- To review PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access level or higher.
+- To review PRs, be a member of the Azure DevOps project the PR is in, with at least **Basic** access.
 
   - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
   
@@ -69,7 +69,7 @@ In this article you learn how to:
 
 - **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
 
-- To review PRs, you must be a member of the Azure DevOps project with **Basic** access level or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To review PRs, be a member of the Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 

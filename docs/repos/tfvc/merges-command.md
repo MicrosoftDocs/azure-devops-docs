@@ -20,7 +20,7 @@ The `tf merges` command displays detailed information about past merges between 
 
 ## Prerequisites
 
-To use the `merges` command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `merges` command, have the **Read** permission set to **Allow** for both source and destination branches. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

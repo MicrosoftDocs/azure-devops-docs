@@ -32,17 +32,17 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker range="azure-devops"
 
-* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
-* You must have at least Basic access to create and modify a wiki.
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
+* A team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
+* At least Basic access to create and modify a wiki.
+* Have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Any user with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
-* You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
+* A team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
+* Have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Any user with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
