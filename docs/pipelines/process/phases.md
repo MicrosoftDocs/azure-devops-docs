@@ -222,7 +222,7 @@ Jobs can be of different types, depending on where they run.
 
 ### Agent pool jobs
 
-Jobs are run on an agent in an agent pool. You can specify the pool to run the job on, and you can also specify demands to specify what capabilities an agent must have to run your job. Agents can be Microsoft-hosted or self-hosted. For more information, see [Azure Pipelines agents](../agents/agents.md).
+Agent pool obs are the most common jobs. These jobs run on an agent in an agent pool. You can specify the pool to run the job on, and you can also specify demands to specify what capabilities an agent must have to run your job. Agents can be Microsoft-hosted or self-hosted. For more information, see [Azure Pipelines agents](../agents/agents.md).
 
 * When you're using Microsoft-hosted agents, each job in a pipeline gets a fresh agent.
 * When you're using self-hosted agents, you can use [demands](/azure/devops/pipelines/yaml-schema/pool-demands) to specify what capabilities an agent must have to run your job. You can get the same agent for consecutive jobs, depending on whether there's more than one agent in your agent pool that matches your pipeline's demands. If there's only one agent in your pool that matches the pipeline's demands, the pipeline waits until this agent is available.
@@ -401,23 +401,21 @@ To add a new job, select '...' on the pipeline channel in the **Tasks** tab of t
 
 When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies aren't supported in release pipelines. Multiple jobs in a release pipeline run in sequence. 
 
-For example, the pipeline divides the overall release execution into separate execution jobs by using two agent jobs
-and a [server job](#server-jobs).
+For example, the pipeline divides the overall release execution into separate execution jobs by using two agent jobs and a [server job](#server-jobs).
 
 ![Configuring a manual intervention step](media/phases-02.png)
 
-1. The tasks in the first job of the release run on an agent
-   and, after this job is complete, the agent is released.
+1. The tasks in the first job of the release run on an agent. The agent is released after the job is complete.
 
 1. The server job contains a Manual Intervention task that runs on the Azure Pipelines or DevOps Server. The job doesn't execute on, or require, an agent or any target servers. The Manual Intervention task displays its message and waits for a "resume" or "reject" response from the user. In this example, if the task reaches the configured timeout, the task automatically rejects the deployment. Set the timeout in the control options section to zero if you don't want an automated response to be generated.
 
-1. The tasks in the third jobs are run if the release is resumed - possibly on a different agent. If the release is rejected, this job doesn't run and the release is marked as failed.
+1. The tasks in the third jobs are run if the release is resumed, possibly on a different agent. If the release is rejected, this job doesn't run and the release is marked as failed.
 
 It's important to understand some of the consequences of phased execution:
 
 * Each job might use different agents. Don't assume that the state from an earlier job is available during subsequent jobs.
 
-* The **Continue on Error** and **Always run** options for tasks in each job don't have any effect on tasks in   subsequent jobs. For example, setting **Always run** on a task at the end of the first job doesn't guarantee that tasks in subsequent jobs run.
+* The **Continue on Error** and **Always run** options for tasks in each job don't have any effect on tasks in subsequent jobs. For example, setting **Always run** on a task at the end of the first job doesn't guarantee that tasks in subsequent jobs run.
 
 * * *
 
@@ -487,7 +485,7 @@ jobs:
 
 
 
-Use the **Run this job** option on an agent or server job to run the tasks only when specific [conditions](conditions.md) are met. Select a predefined condition, or select "custom" and enter an [expression](conditions.md) that evaluates  to **true** or **false**. Nested expressions can be used, and the expressions can access variables available in the release pipeline.
+Use the **Run this job** option on an agent or server job to run the tasks only when specific [conditions](conditions.md) are met. Select a predefined condition, or select "custom" and enter an [expression](expressions.md) that evaluates  to **true** or **false**. Nested expressions can be used, and the expressions can access variables available in the release pipeline.
 
 
 
