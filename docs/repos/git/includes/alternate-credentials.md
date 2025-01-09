@@ -14,7 +14,7 @@ ms.topic: include
 
 	<img alt="Go to organization home, open your profile, go to Security" src="/azure/devops/repos/git/media/my-profile-tfs.png" />
 
-3. Enable alternate authentication credentials for this account. Then provide a secondary username and password.
+3. Enable alternate authentication credentials for this account. Then provide secondary credentials.
 
    ![Enable alternate authentication credentials link on the user profile page](/azure/devops/repos/git/media/enable-alternate-credentials.png)
 
