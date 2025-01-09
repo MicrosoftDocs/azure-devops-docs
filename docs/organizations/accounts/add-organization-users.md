@@ -65,13 +65,13 @@ To give other users access to your organization, do the following steps:
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-   * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames of the users. You can add multiple email addresses by separating them with a semicolon `;`. Accepted email addresses appear in red. For more information about GitHub authentication, see [Connect to GitHub/FAQs](../../boards/github/connect-to-github.md#faqs). To add a service principal, enter the display name of the application or managed identity.
+   * **Users:** Enter the email addresses (Microsoft accounts) of the users. You can add multiple email addresses by separating them with a semicolon `;`. Accepted email addresses appear in red. To add a service principal, enter the display name of the application or managed identity.
      * **Access level:** Set the access level to **Basic** for users who contribute to the code base. For more information, see [About access levels](../security/access-levels.md).  
    * **Add to projects:** Select the project to which you want to add the users.  
    * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. For more information, see [Default permissions and access assignments](../security/permissions-access.md).  
 
    >[!NOTE]
-   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask them to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).
+   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft account, ask them to sign up for a [Microsoft account](https://signup.live.com/).
 
 5. Select **Add** to complete your invitation.
 
