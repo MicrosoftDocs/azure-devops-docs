@@ -25,13 +25,13 @@ Complete the [Prepare test run phase](migration-prepare-test-run.md) before you 
 > To ensure a smooth migration process, perform one or more test run imports. A test run import lasts for 45 days for testing and validation. After 45 days, the test run times out and gets removed, requiring you to start over if needed.
 > The more time that passes between the test run and production run, the more the service might change, potentially introducing errors that a fresh test run would catch. You can rerun the test run import as many times as needed. Each import begins from the initial state of the imported database, as it's not possible for changes from one import to persist to another.
 > Note the following points:
-> - You can't extend a test run indefinitely.
-> - You can't promote a test run to a production run.
+> - You can't extend a test run indefinitely
+> - You can't promote a test run to a production run
 > - A test run gets deleted if any of the following occur:
->  - The test run times out.
->  - A new test run with the same name is run.
->  - A production run starts.
->  - The organization is manually deleted via organization settings.
+>   - The test run times out
+>   - A new test run with the same name is run
+>   - A production run starts
+>   - The organization is manually deleted via organization settings
 
 ## Validate a collection 
 
