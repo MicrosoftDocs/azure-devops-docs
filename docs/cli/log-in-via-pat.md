@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/10/2023
+ms.date: 01/08/2025
 ---
 
 # Sign in with a personal access token (PAT)
@@ -16,6 +16,8 @@ ms.date: 08/10/2023
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 You can sign in using an Azure DevOps personal access token (PAT). To create a PAT, see [Use personal access tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
 To use a PAT with the Azure DevOps CLI, use one of these options:
 
