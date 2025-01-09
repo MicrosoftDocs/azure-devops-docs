@@ -41,8 +41,6 @@ When resizing the side-by-side diff pane in the PR files tab, the user’s scrol
 ### Search for a commit on a mobile device
 
 When viewing the Commits page on a mobile device, the search box is missing in the new experience. As a result, it is hard for you to find a commit by its hash and open it. This has been fixed now.
-  
-<br><img src="../../media/179-repos-0-6.gif" width="500" alt="Search for a commit on a mobile device">
 
 ### Improved usage of space for new PR file diff mobile view
 
