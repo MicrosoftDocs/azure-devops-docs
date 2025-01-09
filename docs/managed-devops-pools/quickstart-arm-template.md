@@ -12,7 +12,7 @@ This article shows you how to create a Managed DevOps Pool using an ARM template
 
 ## Prerequisites
 
-Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
+Before completing the steps in this article, have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
 ## Sign in to the Azure CLI
 

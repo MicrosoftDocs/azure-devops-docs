@@ -21,7 +21,7 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
 
 ## Prerequisites
 
-- To create subscriptions in a Slack channel for repository-related events, you must be a member of the **Project Administrators** group, or be a team administrator. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions in a Slack channel for repository-related events, be a member of the **Project Administrators** group, or be a team administrator. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. For more information, see [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 

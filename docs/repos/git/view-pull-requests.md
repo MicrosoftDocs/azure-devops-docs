@@ -29,7 +29,7 @@ There are several ways to list, filter, view, and open PRs for a project.
 ::: moniker range="azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
-- To view PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+- To view PRs, be a member of the Azure DevOps project the PR is in, with at least **Basic** access. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
   > [!NOTE]
   > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
@@ -37,7 +37,7 @@ There are several ways to list, filter, view, and open PRs for a project.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view PRs, be a member of the Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 ::: moniker-end
 
 

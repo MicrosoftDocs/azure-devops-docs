@@ -22,7 +22,7 @@ Also, when you add a work item, the system references the default area and itera
 
 ## Prerequisites 
  
-* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* Be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
  
 ::: moniker range="azure-devops"  
 
@@ -56,7 +56,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Projects page, filter on Fabrikam.](media/projects-page/filter-projects-vert.png) 
 
-1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
+1. Choose **Create Project** to add a project. Be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing selection of account home, Projects page, New project.](../../organizations/projects/media/create-project/projects-hub-vert-create-project.png) 

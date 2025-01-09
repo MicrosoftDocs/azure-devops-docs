@@ -23,7 +23,7 @@ You can also use the `tf` command-line utility to roll back changes. For more in
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Roll back changes from a single changeset
 

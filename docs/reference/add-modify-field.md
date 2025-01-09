@@ -34,9 +34,9 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 
 ## Prerequisites
  
-- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**. 
-- To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
-- To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
+- To list fields, have your **View project-level information** permission for the project in the collection set to **Allow**. 
+- To add or customize a field, be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
+- To delete or rename fields or change an attribute of a field, be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
 To get added as an administrator, [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 

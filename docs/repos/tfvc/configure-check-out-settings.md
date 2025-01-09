@@ -20,7 +20,7 @@ Team Foundation Version Control (TFVC) administrators can configure source contr
 
 ## Prerequisites
 
-To configure check-out settings, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To configure check-out settings, have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### Configure checkout settings
 

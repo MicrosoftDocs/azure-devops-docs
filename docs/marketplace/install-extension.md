@@ -463,7 +463,7 @@ A: If you don't see your organization when buying from the Azure DevOps Marketpl
  
 ### Q: Why can't I install an extension?
 A: You can't install extensions for one of the following reasons.  
-- You must be a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
+- Be a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
 - For an "already installed or requested" error, check with your Project Collection Administrator and ask them to assign the extension to you.  
 
 ### Q: Why can't users access extension features?
@@ -486,11 +486,11 @@ A: Your extension might be out of preview. After a preview period, an extension 
 
 ### Q: Why can't I install extensions for Azure DevOps Server?
 A: You can't install extensions for Azure DevOps Server for one of the following reasons:
-- You must be a member of the **Project Collection Administrators** group or have the **Edit collection-level information** permission set to **Allow** in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
+- Be a member of the **Project Collection Administrators** group or have the **Edit collection-level information** permission set to **Allow** in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 - You might get an error that says you already installed or requested the extension. If so, check with a member of the **Project Collection Administrators** group and ask them to assign the extension to you. For more information, see [Request an increase in permission levels](../organizations/security/request-changes-permissions.md).   
  
 ### Q: Why don't I see the project collection I want (on-premises)?
-A: You must be a member of your project collection. Follow these steps to check your identity that you use to sign in to the Marketplace.
+A: Be a member of your project collection. Follow these steps to check your identity that you use to sign in to the Marketplace.
 1. On your Azure DevOps Server web portal home page (```https://{server}:8080/tfs/```), go to the top-right corner of the page, and select your user name to view your profile.
 1. On the left side of your profile, make sure that your email address and directory are correct.
 1. Close all browser windows.
@@ -508,7 +508,7 @@ A: Some extensions work only with Azure DevOps Services for one of the following
 - The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
 
 ### Q: Why can't I upload extensions to Azure DevOps Server?
-A: You must be a member of the [Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) for the Azure DevOps Server where you want to upload extensions.
+A: Be a member of the [Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) for the Azure DevOps Server where you want to upload extensions.
 ::: moniker-end
 
 

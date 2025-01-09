@@ -10,7 +10,7 @@ ms.date: 03/12/2024
 ## Prerequisites
 
 - **Access Levels:**
-  - **Basic** access or higher, with permissions to view work items under the corresponding Area Path. For more information, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+  - At least **Basic** access, with permissions to view work items under the corresponding Area Path. For more information, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
   - [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level to add test plans and test suites, delete test artifacts, and define test configurations.
   - Alternatively, one of the following **Visual Studio subscriptions**:
     - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)

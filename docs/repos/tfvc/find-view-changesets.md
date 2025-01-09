@@ -23,7 +23,7 @@ You can view a changeset to see what the exact file changes were, discover the o
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Find a changeset by ID
 

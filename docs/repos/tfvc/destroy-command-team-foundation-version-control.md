@@ -28,7 +28,7 @@ After you delete the files, you can synchronize the TFVC warehouse. Otherwise, t
 
 ## Prerequisites
 
-To use the `destroy` command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `destroy` command, belong to the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 ```

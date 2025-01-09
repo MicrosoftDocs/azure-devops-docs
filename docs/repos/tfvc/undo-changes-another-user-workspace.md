@@ -24,7 +24,7 @@ Occasionally a team member is blocked from checking in a file that someone else 
 
 ## Prerequisites
 
-To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To undo pending changes in another user's workspace, have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Undo the changes in another user's workspace
 

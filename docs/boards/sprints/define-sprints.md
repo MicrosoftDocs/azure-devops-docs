@@ -31,7 +31,7 @@ With Scrum, teams plan and track work at regular time intervals, referred to as 
 
 ## Start scheduling sprints
 
-To quickly get started, you can use the default sprints. Default sprints are also referred to as iterations and were added when your project was created. Note, you must be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md) to add sprints and schedule sprint dates. If you created the project, you're a member. 
+To quickly get started, you can use the default sprints. Default sprints are also referred to as iterations and were added when your project was created. Note, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md) to add sprints and schedule sprint dates. If you created the project, you're a member. 
 
 ::: moniker range=">= azure-devops-2020"
 

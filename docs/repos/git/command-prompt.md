@@ -309,7 +309,7 @@ For more information, see the following resources:
      `git branch -d` *branchname*
    :::column-end:::
    :::column span="1":::
-     Open the **Branches** view in Team Explorer, then right-click the branch and select **Delete**. You must be checked out to a different branch than the one you want to delete.
+     Open the **Branches** view in Team Explorer, then right-click the branch and select **Delete**. Be checked out to a different branch than the one you want to delete.
    :::column-end:::
    :::column span="1":::
      From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a branch and select **Delete**

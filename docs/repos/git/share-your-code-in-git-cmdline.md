@@ -25,7 +25,7 @@ The instructions in this article use the default bash shell used on Linux and ma
 
 ## Download and install Azure CLI and add Azure DevOps extension
 
-1. [Install the Azure CLI](/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
+1. [Install the Azure CLI](/cli/azure/install-azure-cli). At least `v2.0.49`, which you can verify with `az --version` command.
 
 2. Add the Azure DevOps Extension `az extension add --name azure-devops`
 
