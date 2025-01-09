@@ -75,7 +75,7 @@ steps:
 
 ::: moniker range="< azure-devops"
 
-See [multi-configuration execution](../process/phases.md#parallelexec).
+See [multi-configuration execution](../process/phases.md#multi-job-configuration).
 
 ::: moniker-end
 

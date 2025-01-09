@@ -918,7 +918,7 @@ stages:
 
 ::: moniker range=">= azure-devops-2019"
 
-If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
+If you're setting a variable from a [matrix](phases.md?tab=yaml#multi-job-configuration)
 or [slice](phases.md?tab=yaml#slicing), then to reference the variable when you access it from a downstream job,
 you must include:
 
