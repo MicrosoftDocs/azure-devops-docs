@@ -35,9 +35,9 @@ Follow the instructions below to create a new feed:
 
 [!INCLUDE [](includes/create-feed.md)]
 
-## Get started with Azure Artifacts
+## Get started
 
-With Azure Artifacts, you can publish and consume various package types from feeds and public registries such as nuget.org, npmjs.com, Maven Central, etc. Select your package type to get started:
+With Azure Artifacts, you can publish and install various package types from feeds and public registries such as nuget.org, npmjs.com, Maven Central, etc. Select your package type to get started:
 
 ::: moniker range="azure-devops"
 
@@ -71,13 +71,47 @@ With Azure Artifacts, you can publish and consume various package types from fee
 
 # [Universal Packages](#tab/universalpackages)
 
-- **Quickstart:**  [started with Universal Packages in Azure Artifacts](./quickstarts/universal-packages.md)
+- **Quickstart:**  [Get started with Universal Packages in Azure Artifacts](./quickstarts/universal-packages.md)
 
 ---
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="azure-devops-2022"
+
+# [NuGet](#tab/nuget)
+
+- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [dotnet](#tab/dotnet)
+
+- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
+
+# [Npm](#tab/npm)
+
+- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradle)
+
+- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
+
+# [Python](#tab/python)
+
+- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Cargo](#tab/cargo)
+
+- **Quickstart:** [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
 
 # [NuGet](#tab/nugetserver)
 
