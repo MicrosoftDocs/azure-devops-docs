@@ -69,7 +69,7 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 > [!NOTE]
 > PATs are a less desirable option compared to connecting Power BI with Microsoft Entra ID or Windows Authentication.
 > Consider them an extension of your identity. When used, the token is acting as you. Keep your tokens secret.
-> To help keep your token more secure, consider using credential managers. If you use a credential managers, you won't have to enter your credentials every time you push.
+> To help keep your token more secure, consider using credential managers. If you use a credential manager, you won't have to enter your credentials every time you push.
 
 1. Follow the steps on the [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
 	
