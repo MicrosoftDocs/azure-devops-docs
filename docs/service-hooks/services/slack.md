@@ -85,8 +85,6 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
 
    When the event occurs in your project, a notification appears in your team's Slack channel.
 
-   ![Screenshot showing a notification in a Slack channel.](./media/slack/notifications.png)
-
 ::: moniker-end
 
 

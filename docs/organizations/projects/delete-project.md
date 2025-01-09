@@ -253,9 +253,6 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
    deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
    ```
 
-   Something similar to the following screenshot appears:
-   ![Screenshot of PowerShell script return example for deleted projects.](media/restore-project/deleted-projects-powershell-script-2019.png)
-
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
 
     ```
