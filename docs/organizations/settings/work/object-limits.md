@@ -131,7 +131,7 @@ For the On-premises XML process model, you can modify the backlog and Taskboard 
 
 ## GitHub integration
 
-If you [integrate your project with GitHub](../../../cross-service/github-integration), the following the following limits apply.
+If you [integrate your project with GitHub](../../../cross-service/github-integration), the following limits apply.
 
 | Integration |  Limit |
 |--------|-------|
