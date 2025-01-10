@@ -89,11 +89,11 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 ## Integrate with third-party tools using API
  [OpsHub Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/), allows you to integrate Azure DevOps (Server and Services) with other systems using API. This tool:
  
-- Integrates Work Items (Standard and custom), Test Entities, Areas, Iterations, Pipelines
+- Integrates work items (standard and custom), test entities, areas, iterations, pipelines
 - Integrates comments, attachments, links, images, mentions, project movements, and entity deletions
 - Integrates 1000+ projects
 - Plugs in custom integrations
-- Deploys on-Premises or on-Cloud
+- Deploys on-premises or on-cloud
 - Integrates history  
 
 ## Project and portfolio management 
