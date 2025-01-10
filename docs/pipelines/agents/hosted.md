@@ -55,7 +55,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 * All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
 * The macOS 13 image is generally available
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
-* Ubuntu 18.04 has been retired
+* The Ubuntu 18.04 image is retired
 * [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
 * [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
@@ -63,7 +63,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 * [`windows-latest` images use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
 * [`macOS-latest` images use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
 * [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
-* The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
+* The Windows Server 2016 with Visual Studio 2017 image is deprecated and was retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
 * In December 2021, we removed the following Azure Pipelines hosted image:
   * macOS X Mojave 10.14 (`macOS-10.14`)
 * In March 2020, we removed the following Azure Pipelines hosted images:
@@ -76,7 +76,7 @@ Customers are encouraged to migrate to newer versions or a [self-hosted agent](w
 For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 > [!NOTE]
-> macOS capacity is currently limited. Unlike Linux and Windows images, where our capacity is restrained by Azure's all up capacity, macOS capacity is constrained by the amount of hardware we have available. While we are working to make additional capacity available over Spring 2024, some jobs may experience delayed execution.
+> macOS capacity is currently limited. Unlike Linux and Windows images, where our capacity is restrained by Azure's all up capacity, macOS capacity is constrained by the amount of hardware we have available. While we are working to add capacity during Spring 2024, some jobs may experience delayed execution.
 > Wherever possible, e.g. for jobs that do not create Apple ecosystem apps, customers should choose Linux or Windows images.
 
 > [!NOTE]
