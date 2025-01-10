@@ -29,7 +29,7 @@ Azure Artifacts supports multiple package types, including NuGet, npm, Python, M
 
 ## Create a new feed
 
-Azure Artifacts feeds are organizational constructs that enable you to store, manage, and share your packages while maintaining access control. Feeds are not limited to specific package types; you can store a variety of packages, such as npm, NuGet, Maven, Python, Cargo, and Universal Packages in a single feed. See [What are feeds](/concepts/feeds.md) for more details.
+Azure Artifacts feeds are organizational constructs that enable you to store, manage, and share your packages while maintaining access control. Feeds are not limited to specific package types; you can store a variety of packages, such as npm, NuGet, Maven, Python, Cargo, and Universal Packages in a single feed. See [What are feeds](concepts/feeds.md) for more details.
 
 Follow the instructions below to create a new feed:
 
@@ -79,31 +79,31 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker range="azure-devops-2022"
 
-# [NuGet](#tab/nuget)
+# [NuGet](#tab/nugetserver22)
 
 - **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
 
-# [dotnet](#tab/dotnet)
+# [dotnet](#tab/dotnetserver22)
 
 - **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
 
-# [Npm](#tab/npm)
+# [Npm](#tab/npmserver22)
 
 - **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
 
-# [Maven](#tab/maven)
+# [Maven](#tab/mavenserver22)
 
 - **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
 
-# [Gradle](#tab/gradle)
+# [Gradle](#tab/gradleserver22)
 
 - **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
 
-# [Python](#tab/python)
+# [Python](#tab/pythonserver22)
 
 - **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
 
-# [Cargo](#tab/cargo)
+# [Cargo](#tab/cargoserver22)
 
 - **Quickstart:** [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
 
@@ -113,27 +113,27 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker range="azure-devops-2020"
 
-# [NuGet](#tab/nugetserver)
+# [NuGet](#tab/nugetserver20)
 
 - **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
 
-# [dotnet](#tab/dotnetserver)
+# [dotnet](#tab/dotnetserver20)
 
 - **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
 
-# [Npm](#tab/npmserver)
+# [Npm](#tab/npmserver20)
 
 - **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
 
-# [Maven](#tab/mavenserver)
+# [Maven](#tab/mavenserver20)
 
 - **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
 
-# [Gradle](#tab/gradleserver)
+# [Gradle](#tab/gradleserver20)
 
 - **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
 
-# [Python](#tab/pythonserver)
+# [Python](#tab/pythonserver20)
 
 - **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
 
