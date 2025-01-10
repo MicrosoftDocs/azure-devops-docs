@@ -129,6 +129,15 @@ For the On-premises XML process model, you can modify the backlog and Taskboard 
 
 ::: moniker-end
 
+## GitHub integration
+
+If you [integrate your project with GitHub](../../../cross-service/github-integration), the following the following limits apply.
+
+| Integration |  Limit |
+|--------|-------|
+| Azure Boards: Connected GitHub repositories (UX) | limit of 500 repositories per connection |
+| Azure Boards: Connected GitHub repositories (API) | limit of 2,000 repositories per connection. [Learn more](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/github-connections). |
+
 ## Projects
 
 Azure DevOps Services limits each organization to 1,000 projects per organization, an increase over the previous limit of 300 projects.
