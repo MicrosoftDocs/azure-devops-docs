@@ -136,7 +136,7 @@ If you [integrate your project with GitHub](../../../cross-service/github-integr
 | Integration |  Limit |
 |--------|-------|
 | Azure Boards: Connected GitHub repositories (UX) | limit of 500 repositories per connection |
-| Azure Boards: Connected GitHub repositories (API) | limit of 2,000 repositories per connection. [Learn more](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/github-connections). |
+| Azure Boards: Connected GitHub repositories (API) | limit of 2,000 repositories per connection. [Learn more](../../../../rest/api/azure/devops/wit/github-connections). |
 
 ## Projects
 
