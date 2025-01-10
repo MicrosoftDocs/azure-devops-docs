@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 09/05/2024
+ms.date: 09/10/2024
 ---
 
 # Work tracking, process, and project limits
@@ -128,6 +128,15 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 For the On-premises XML process model, you can modify the backlog and Taskboard limits by editing the `ProcessConfiguration.xml` file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
+
+## GitHub integration
+
+If you [integrate your project with GitHub](../../../cross-service/github-integration.md), the following limits apply.
+
+| Integration |  Limit |
+|--------|-------|
+| Azure Boards: Connected GitHub repositories (UX) | 500 repositories per connection. |
+| Azure Boards: Connected GitHub repositories (API) | 2,000 repositories per connection. [Learn more](/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP&preserve-view=true). |
 
 ## Projects
 
