@@ -86,11 +86,20 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 -  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
 -  [Integrate with service hooks](../../service-hooks/overview.md)
 
+## Integrate with third-party tools using API
+ [OpsHub Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/), allows you to integrate Azure DevOps (Server and Services) with other systems using API. This tool:
+ 
+- Integrates Work Items (Standard and custom), Test Entities, Areas, Iterations, Pipelines
+- Integrates comments, attachments, links, images, mentions, project movements, and entity deletions
+- Integrates 1000+ projects
+- Plugs in custom integrations
+- Deploys on-Premises or on-Cloud
+- Integrates history  
+
 ## Project and portfolio management 
 
 The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. These tools also support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
 
-[Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/) is an enterprise class integration platform. It enables bi-directional synchronization for Azure DevOps(Server and Services) with 50+ ALM, DevOps, Project, and Portfolio Management tools out of the box. It enables synchronization of all work items including test artifacts with an easy to use mapping UI and is scalable for any number of projects and teams.  
 - [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
 - [Project Connect](https://www.wicresoftinternational.com/about-us) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
 
