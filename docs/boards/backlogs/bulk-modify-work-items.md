@@ -93,7 +93,7 @@ Team members who belong to the Contributors group can complete the following tas
 > [!NOTE]  
 > - You can't perform certain functions on work items whose [work item types](../work-items/about-work-items.md) belong to the [hidden types category](../work-items/agile-glossary.md#hidden-types). This category includes all work items that track tests (such as test cases, shared steps, and shared parameters), code review requests and responses, and feedback requests and responses.
 > - You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type.
-> - You must be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
+> - Be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 ::: moniker-end
 

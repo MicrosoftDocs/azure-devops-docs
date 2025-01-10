@@ -22,7 +22,7 @@ The tool is compatible with text and XML based files, but to associate a specifi
 
 ## Prerequisites
 
-You must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+Be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ## Associate a file type with a merge tool
 

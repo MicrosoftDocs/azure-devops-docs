@@ -58,6 +58,8 @@
   items:
   - name: Troubleshoot connection
     href: troubleshoot-connection.md?toc=/azure/devops/get-started/toc.json
+  - name: Capture browser trace
+    href: capture-browser-trace.md?toc=/azure/devops/get-started/toc.json
   - name: 'TF31002: Unable to connect'
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/get-started/toc.json
   - name: Troubleshoot access and permissions

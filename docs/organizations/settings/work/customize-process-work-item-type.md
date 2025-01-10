@@ -105,7 +105,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 1. To completely remove a custom WIT and all work items based on that WIT, choose **Destroy** from the WIT context menu.
 
-	To destroy a WIT, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	To destroy a WIT, be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 
 

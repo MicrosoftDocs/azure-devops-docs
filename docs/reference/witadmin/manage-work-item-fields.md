@@ -48,8 +48,8 @@ For an overview of the fields defined within a default process template, see [Wo
 
 ## Prerequisites  
   
--  To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.    
--   To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
+-  To list fields, have your **View project-level information** permission for the project in the collection set to **Allow**.    
+-   To delete or rename fields or change an attribute of a field, be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
 For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   

@@ -23,7 +23,7 @@ Permission settings are in the form of either **Allow** or **Deny**. **Deny** al
 
 ## Prerequisites
 
-To complete this task, you must have your **Manage permissions** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To complete this task, have your **Manage permissions** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To set permissions for users or groups
 

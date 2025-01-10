@@ -31,7 +31,7 @@ In this article, learn how to do the following tasks:
 
 ## Prerequisites
 
-- Manage your subscription, so you receive notifications in your channel whenever code gets pushed or checked in, or when a pull request (PR) gets created, updated, or merged. To create subscriptions for repo-related events, you must be a member of the **Project Administrators** group, or a team administrator.  To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
+- Manage your subscription, so you receive notifications in your channel whenever code gets pushed or checked in, or when a pull request (PR) gets created, updated, or merged. To create subscriptions for repo-related events, be a member of the **Project Administrators** group, or a team administrator.  To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
@@ -113,7 +113,7 @@ To help users search and share information about pull requests, Azure Repos app 
 
 ## Preview pull request URLs
 
-When you paste the URL of a PR, a preview shows like the one in the following image, which helps to keep PR-related conversations contextual and accurate. You must be signed in, and then you can preview PRs for URLs in all channels in a Team.
+When you paste the URL of a PR, a preview shows like the one in the following image, which helps to keep PR-related conversations contextual and accurate. Be signed in, and then you can preview PRs for URLs in all channels in a Team.
 
 :::image type="content" source="media/integrations-slack/URL-Preview.png" alt-text="Screenshot showing URL unfurling.":::
 

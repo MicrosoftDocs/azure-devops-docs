@@ -141,7 +141,7 @@ See the following frequently asked questions (FAQs) about Azure Test Plans.
 
 ### Q: What permissions do I need to run automated tests from Azure Test Plans?
 
-**A:** You must be a Project Contributor, or have the following permissions:
+**A:** Be a Project Contributor, or have the following permissions:
 
 * Create releases
 * Manage releases

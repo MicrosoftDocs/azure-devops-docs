@@ -32,10 +32,10 @@ sections:
       - question: |
           Why don't I see my organization in the Azure portal?
         answer: |
-          In both applications, you must have
+          In both applications, have
           [Azure Service Administrator or Coadministrator](/azure/billing-add-change-azure-subscription-administrator) 
           permissions for the Azure subscription linked to your organization in Azure DevOps.
-          Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization owner permissions.
+          Also, in the [Azure portal](https://portal.azure.com), have Project Collection Administrator or organization owner permissions.
           
       - question: |
           What do I need to set up an existing Azure DevOps instance with Microsoft Entra ID?

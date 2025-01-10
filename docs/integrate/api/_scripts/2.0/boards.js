@@ -1,13 +1,14 @@
 var apiwriter = require('apiwriter');
 
-/* When running with OnPrem, ensure that Basic Auth is set up in the virtual directory itself.
- * Set these environment variables when running writer tool for boards.js 
- * set cfgApisUrl=http://localhost:8080/tfs/DefaultCollection/fooScrum/AgileTeam/_apis
- * set cfgUserName=<Domain\UserName>
- * set cfgPassword=<PasswordInPlainText>
- * set cfgApiVersion=1.0
- * set cfgScript=boards.js
- * set cfgScriptPath = ../../VSContent/integrate/api/_scripts/2.0
+/* When running with OnPrem, ensure that Service Principal authentication is set up.
+ * Set these environment variables when running writer tool for plans.js 
+ * set cfgApisUrl=http://localhost:8080/tfs/DefaultCollection/agile/_apis
+ * set cfgServicePrincipalId=<ServicePrincipalId>
+ * set cfgServicePrincipalKey=<ServicePrincipalKey>
+ * set cfgTenantId=<TenantId>
+ * set cfgApiVersion=3.0-preview.1
+ * set cfgScript=plans.js
+ * set cfgScriptPath=../../Content.VS/vscom/integrate/api/_scripts/3.0
  */
 
 exports.getContext = function () {

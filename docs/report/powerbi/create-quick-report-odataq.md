@@ -37,7 +37,7 @@ To create a Power BI report, you must meet the following criteria:
 ::: moniker range=" < azure-devops"
 
 - Be a project member. If you aren't, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- [Enable or install Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
+- [Enable or install Analytics](../dashboards/analytics-extension.md). Be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
 - Enable **Boards**. To re-enable Boards, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions for Analytics access](./analytics-security.md).
 - Have *[Power BI Desktop](/power-bi/desktop-what-is-desktop)* *October 2018 Update* or later version.

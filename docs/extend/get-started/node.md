@@ -22,7 +22,7 @@ Use extensions to enhance Azure DevOps with new web experiences, dashboard widge
 
 ## Prerequisites
 
-You must have the following permission and installations.
+Have the following permission and installations.
 
 * You must be an organization owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 * Install [Node.js](https://nodejs.org).

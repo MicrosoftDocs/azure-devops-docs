@@ -21,7 +21,7 @@ The Team Foundation Version Control (TFVC) `view` command retrieves a specific v
 
 ## Prerequisites
 
-To use the `view` command, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `view` command, have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

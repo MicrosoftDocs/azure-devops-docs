@@ -50,7 +50,7 @@ You can plan and track work from the web portal **Boards** hub, and using Visual
 > [!NOTE]
 > Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md).
 
-Each user's access level or permission assignment controls access to the following tasks. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
+Each user's access level or permission assignment controls access to the following tasks. Members of the Readers, Contributors, or Project Administrators group are assumed to have  at least Basic access.  
 
 ### General work item permissions
 
@@ -190,7 +190,7 @@ Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access leve
 
 ::: moniker range="azure-devops"
 
-You can manage feeds from the web portal, **Artifacts**. Users with Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Artifacts**. Users with at least Stakeholder or Basic access can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
 

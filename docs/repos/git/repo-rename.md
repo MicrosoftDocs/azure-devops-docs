@@ -20,7 +20,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ## Prerequisites
 
-- To rename a repository, you must have [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
+- To rename a repository, have [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
 ::: moniker range=">= azure-devops"
 - If you want to use **az repos update** command to rename a repository, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end

@@ -47,7 +47,7 @@ For each stage it selects to run, Azure Pipelines:
 
 Azure Pipelines does the following activities for each job it selects to run:
 
-1. Expands YAML `strategy: matrix` or `strategy: parallel` [multi-configurations](phases.md#parallelexec) into multiple runtime jobs.
+1. Expands YAML `strategy: matrix` or `strategy: parallel` [multi-configurations](phases.md#multi-job-configuration) into multiple runtime jobs.
 5. Evaluates [conditions](conditions.md) to decide whether the job is eligible to run.
 6. Requests an agent for each eligible job.
 

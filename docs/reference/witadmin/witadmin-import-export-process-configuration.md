@@ -33,8 +33,8 @@ To manage the process configuration for a project, use the `witadmin` command li
 
 ## Prerequisites  
 
-- To export process configuration definitions, you must be a valid user of the project or collection.    
-- To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.  
+- To export process configuration definitions, be a valid user of the project or collection.    
+- To import process configuration definitions, be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.  
 
 For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 

@@ -56,8 +56,8 @@ Most work item type customizations are made to the work item type XML definition
 
 ::: moniker range=">= azure-devops-2019"
 
-- To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- To add or customize a work item type by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
+- To list work item types, have your **View project-level information** permission for the project in the collection set to **Allow**.  
+- To add or customize a work item type by customizing a process template, be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
 ::: moniker-end
 
 

@@ -33,7 +33,7 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions).
+To add extensions or edit a process, be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions).
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 

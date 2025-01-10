@@ -41,7 +41,7 @@ To effectively manage an organization, ensure the following tasks are complete:
 
 Once you create your organization, you can [connect to your projects](../../organizations/projects/connect-to-projects.md) with tools like Xcode, Eclipse, or Visual Studio, and then add code to your project.
 
-Some clients, like Xcode, Git, and NuGet, require basic credentials (a username and password) to access Azure DevOps. To connect these clients to Azure DevOps, look into the [available authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) and choose the method that best fits your security and workflow requirements.
+Some clients, like Xcode, Git, and NuGet, require basic credentials to access Azure DevOps. To connect these clients to Azure DevOps, look into the [available authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) and choose the method that best fits your security and workflow requirements.
 
 <a id="add-users"></a>
 

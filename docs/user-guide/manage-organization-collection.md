@@ -180,7 +180,7 @@ An extension is an installable unit that adds new capabilities to your projects.
 
 For example, to support [code search](../project/search/functional-code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
  
-You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the **Project Collection Administrators** group. Or, you can get added to the [Manager role for extensions](../marketplace/grant-permissions.md).
+You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, be an organization Owner, a member of the **Project Collection Administrators** group. Or, you can get added to the [Manager role for extensions](../marketplace/grant-permissions.md).
 
 ### Install Code Search 
 

@@ -20,7 +20,7 @@ In general, you should get the latest files from the server on a regular basis s
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Get the latest version of files
 
