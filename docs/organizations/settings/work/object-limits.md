@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 09/05/2024
+ms.date: 09/10/2024
 ---
 
 # Work tracking, process, and project limits
@@ -131,12 +131,12 @@ For the On-premises XML process model, you can modify the backlog and Taskboard 
 
 ## GitHub integration
 
-If you [integrate your project with GitHub](../../../cross-service/github-integration), the following limits apply.
+If you [integrate your project with GitHub](../../../cross-service/github-integration.md), the following limits apply.
 
 | Integration |  Limit |
 |--------|-------|
-| Azure Boards: Connected GitHub repositories (UX) | limit of 500 repositories per connection |
-| Azure Boards: Connected GitHub repositories (API) | limit of 2,000 repositories per connection. [Learn more](../../../../rest/api/azure/devops/wit/github-connections). |
+| Azure Boards: Connected GitHub repositories (UX) | 500 repositories per connection. |
+| Azure Boards: Connected GitHub repositories (API) | 2,000 repositories per connection. [Learn more](/rest/api/azure/devops/wit/github-connections/get-github-connections.md). |
 
 ## Projects
 
