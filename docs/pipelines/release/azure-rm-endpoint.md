@@ -211,7 +211,7 @@ The token for your service principal or secret is now renewed for three more mon
 
 ### Failed to obtain the JWT by using the service principal client ID
 
-This issue occurs when you try to verify a service connection that has an expired secret.
+This issue occurs when you try to verify a service connection that has an expired secret or there are some other issues at the Entra ID level.
 
 To resolve this issue:
 
@@ -229,6 +229,8 @@ To resolve this issue:
 1. Select **Edit** in the upper-right corner, and now select **Verify**.
 
 1. Select **Save** to save your service connection.
+
+>[!NOTE] Error like this "Failed to obtain the Json Web Token(JWT) using service principal client ID. Exception message: AADSTS7000112: Application is disabled. You need to work with your Entra ID team to confirm that the option "[Enabled for users to sign-in](https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/app-integration/error-code-aadsts7000112-application-is-disabled)" in the enterprise application linked with your service principal is not disabled. 
 
 ### Azure subscription isn't passed from the previous task output
 
