@@ -25,7 +25,7 @@ Azure Artifacts supports multiple package types, including NuGet, npm, Python, M
 
 | **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An [Azure DevOps project](../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server. |
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server. |
 
 ## Create a new feed
 
