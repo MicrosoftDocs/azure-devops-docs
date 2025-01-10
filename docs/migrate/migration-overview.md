@@ -86,7 +86,7 @@ If for some reason you can't use the Data Migration Tool but still want a higher
 
 ## Migrate data between Azure DevOps projects
 
-[OpsHub Migrator for Microsoft Azure DevOps (OM4ADO)](https://www.opshub.com/products/opshub-azure-devops-migrator/), formerly known as OpsHub Visual Studio Migration Utility(OVSMU), enables a seamless migration between Azure DevOps Server and Azure DevOps Services( TFS to ADO, ADO to TFS, ADO to ADO and TFS to ADO migrations). The tool supports:
+[OpsHub Migrator for Microsoft Azure DevOps (OM4ADO)](https://www.opshub.com/products/opshub-azure-devops-migrator/), formerly known as OpsHub Visual Studio Migration Utility (OVSMU), enables a seamless migration between Azure DevOps Server and Azure DevOps Services (TFS to ADO, ADO to TFS, ADO to ADO and TFS to ADO migrations). The tool supports:
 
 - Version control information and history (original dates and users added to comments)
 - Work items (standard and custom) and history (retains the original dates and users)
