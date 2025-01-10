@@ -3,7 +3,7 @@
   href: index.yml
 - name: Get started
   items:
-  - name: Azure Artifacts overview
+  - name: What is Azure Artifacts?
     displayName: get started, introduction
     href: start-using-azure-artifacts.md
   - name: Publish your first package

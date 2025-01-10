@@ -235,7 +235,7 @@ The **Used** column on your organization's billing page is updated once a day, s
 
 #### Q: How can I manage the retention duration of old packages?
 
-A: You can set up the retention policies to automatically delete old packages. However, note that packages promoted to a view are not affected by retention policies and will not be deleted. See [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
+A: You can set up the retention policies to automatically delete old packages. However, that are promoted to a view are not affected by retention policies and will not be deleted. See [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
 
 #### Q: How do I delete specific packages manually?
 
