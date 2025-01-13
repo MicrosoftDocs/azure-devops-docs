@@ -46,8 +46,11 @@
       displayName: publish package, nuget.exe, cli
       href: nuget/publish.md
     - name: Publish NuGet packages (dotnet)
-      displayName: dotnet, artifacts, publish packages
       href: nuget/dotnet-exe.md
+      displayName: dotnet, artifacts, publish packages
+    - name: Restore NuGet packages (dotnet)
+      href: nuget/restore-nuget-packages-dotnet.md
+      displayName: dotnet, restore
     - name: Publish to a NuGet feed (YAML/Classic)
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
