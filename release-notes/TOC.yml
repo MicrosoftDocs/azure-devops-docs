@@ -437,8 +437,6 @@
           expanded: false
         - name: "2024"
           items:
-          - name: November 26
-            href: 2024/repos/sprint-248-update.md
           - name: November 13
             href: 2024/repos/sprint-247-update.md
           - name: October 16
@@ -850,7 +848,7 @@
         items:
         - name: "2025"
           items:
-          - name: January 8
+          - name: January 14
             href: 2025/ghazdo/sprint-248-update.md
           expanded: false
         - name: "2024"
@@ -898,8 +896,6 @@
           expanded: true  
         - name: "2024"
           items:
-          - name: November 26
-            href: 2024/general/sprint-248-update.md 
           - name: October 16
             href: 2024/general/sprint-246-update.md 
           - name: July 3
@@ -1082,7 +1078,7 @@
         items:
         - name: "2025"
           items:
-           expanded: false
+          expanded: false
         - name: "2024"
           items:
           - name: October 16
