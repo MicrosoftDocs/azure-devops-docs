@@ -1,34 +1,31 @@
 ---
-title: Publish and restore NuGet packages with dotnet CLI
-description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages.
+title: Publish NuGet packages with dotnet CLI
+description: Learn how to connect to a feed and use the dotnet CLI to publish NuGet packages.
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
-ms.topic: conceptual
-ms.date: 04/17/2024
+ms.topic: tutorial
+ms.date: 01/13/2025
 monikerRange: '>= azure-devops-2020'
-"recommendations": "true"
 ---
 
-# Publish and restore NuGet packages from the command line (dotnet)
+# Publish NuGet packages from the command line (dotnet)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables you to publish and restore your NuGet packages to and from your feed, allowing you to share them with others according to your feed's visibility settings. This guide walks you through configuring your project to publish or restore packages using the dotnet command-line interface.
+This guide walks you through configuring your project to publish NuGet packages using the dotnet command-line interface.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - [An Azure Artifacts feed](../get-started-nuget.md#create-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Download and install [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download). |
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
-
-- Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
-
-- Download and install [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download).
-
-## Connect to feed
+## Connect to a feed
 
 ::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
