@@ -75,52 +75,56 @@ This guide walks you through configuring your project to publish NuGet packages 
 
 ::: moniker-end
 
-## Publish packages
+## Publish packages to a feed in the same organization
 
-Run the following command to publish a package to your feed. Replace the placeholders with the appropriate information:
+Run the following command to publish a package to your feed. Replace the placeholders with the appropriate values:
 
 ```CLI
 dotnet nuget push --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING> <PACKAGE_PATH> 
 ```
 
-**Example**: *dotnet nuget push --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ bin/MyPackage.5.0.2.nupkg*
+**Example**: 
+
+```CLI
+dotnet nuget push --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ bin/MyPackage.5.0.2.nupkg
+```
+
 
 > [!NOTE]
-> The `api-key` is only used as a placeholder.
+> The `api-key` is required, but you can provide any string as its value when publishing to an Azure Artifacts feed.
 
-## Publish packages from external sources
+## Publish packages to a feed in another organization
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
+To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization.
 
-1. Replace the *<PERSONAL_ACCESS_TOKEN>* placeholder with your personal access token, and then run the following command to add your package source to your *nuget.config* file. This adds your PAT to your *nuget.config*. Make sure to store this file securely and not check it into source control.
+1. Navigate to the organization hosting the target feed and create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **Packaging** >  **Read & write** scope.
+
+1. Replace the *<PERSONAL_ACCESS_TOKEN>* placeholder with your personal access token, and then run the following command to add your package source to your *nuget.config* file. Ensure that this file is stored securely and is not checked into source control.
 
     ```CLI
     dotnet nuget add source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --name <SOURCE_NAME> --username <USER_NAME> --password <PERSONAL_ACCESS_TOKEN> --configfile <PATH_TO_NUGET_CONFIG_FILE>
     ```
 
-1. Publish your package:
+1. Run the following command to publish your package:
 
     ```CLI
     dotnet nuget push --source <SOURCE_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
     ```
 
 **Example**: 
-*dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config*
-*dotnet nuget push --source MySource --api-key AZ nupkgs/mypackage.1.1.0.nupkg*
+
+```CLI
+dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config
+
+dotnet nuget push --source MySource --api-key AZ nupkgs/mypackage.1.1.0.nupkg
+```
 
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow the [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
 
-## Restore packages
 
-Run the following command to restore your packages. The `--interactive` flag is used to prompt the user for credentials:
+## Related content
 
-```CLI
-dotnet restore --interactive
-```
-
-## Related articles
-
-- [Connect to Azure Artifacts feeds (NuGet.exe)](./nuget-exe.md)
+- [Restore NuGet packages (dotnet)](restore-nuget-packages-dotnet.md)
 - [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
-- [Use packages from NuGet Gallery](./upstream-sources.md)
+- [Use packages from NuGet.org](./upstream-sources.md)
