@@ -128,7 +128,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>2025 Q1</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable the use of personal access tokens (PAT)](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable the use of personal access tokens (PAT)</a></td>
          <td>General</td>
          <td>2025 Q1</td>
       </tr>
