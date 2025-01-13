@@ -2,7 +2,7 @@
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.date: 12/18/2020
+ms.date: 01/13/2025
 ms.topic: include
 ---
 
@@ -10,8 +10,9 @@ ms.topic: include
 ## Prerequisites
 
 
-- Be a member of a project with at least Basic access. If you haven't been added as a project member, [get added now](../../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- For Analytics data to be available, the corresponding service must be enabled. For example, to query work tracking data, **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable a service, see [Turn an Azure DevOps service on or off](../../../organizations/settings/set-services.md)
-- To use **Analytics views**, [enable the Analytics views preview feature](../../../project/navigation/preview-features.md) either for individual users or for the organization. 
-- Also, have your ***View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../analytics-security.md).
-- To use Power BI for Azure DevOps or to exercise an OData query for Analytics, have your **View Analytics** permission set to *Allow*. By default, all Contributors with Basic access are granted access. To edit shared **Analytics views**, have your **Edit shared Analytics views** permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../analytics-security.md).
+| Category | Prerequisite |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. If you aren't project member, [get added now](../../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except stakeholders, can view Analytics views. |
+| **Permissions** | - **View Analytics** permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../analytics-security.md). <br>- To use Power BI for Azure DevOps or to exercise an OData query for Analytics: **View Analytics** permission set to *Allow*. By default, all Contributors with Basic access are granted access. <br>- To edit shared **Analytics views**: **Edit shared Analytics views** permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../analytics-security.md). |
+| **Service availability** | For Analytics data availability, enable the corresponding service. For example, to query work tracking data, enable **Boards**. If it's disabled, **Analytics views** don't display. To re-enable a service, see [Turn an Azure DevOps service on or off](../../../organizations/settings/set-services.md). |
+| **Feature enablement** | To use **Analytics views**, [enable the Analytics views preview feature](../../../project/navigation/preview-features.md) either for individual users or for the organization. |
