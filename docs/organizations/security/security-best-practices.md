@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 01/06/2025
+ms.date: 01/13/2025
 ---
 
 # Security best practices
@@ -265,6 +265,9 @@ For more information, see [Other security considerations](../../pipelines/securi
 
 - **Use trusted images**: Utilize official and verified images from reputable sources such as Azure Container Registry or Docker Hub. Always specify a specific version or tag to maintain consistency and reliability, rather than relying on the `latest` tag. Regularly update base images to include the latest security patches and bug fixes.
 - **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as [Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-introduction) to monitor and detect security risks. Additionally, Azure Container Registry offers integrated [vulnerability scanning](https://learn.microsoft.com/azure/container-registry/scan-images-defender) to help ensure container images are secure before deployment. You can also integrate third-party scanning tools through Azure DevOps extensions for added security checks.
+- **Implement security policies to prevent privilege escalation and ensure containers run with the least amount of privileges necessary**: For example, Azure [Kubernetes Service (AKS)](https://learn.microsoft.com/azure/aks/operator-best-practices-cluster-security), [role-based access control](https://learn.microsoft.com/azure/aks/manage-azure-rbac), and [Pod Security Admission](https://learn.microsoft.com/azure/aks/use-psa) allow you to enforce policies that restrict container privileges, ensure non-root execution, and limit access to critical resources. Define Pod Security Admission policies (for Kubernetes 1.22 and later) to apply restrictions, such as preventing the use of privileged containers or ensuring containers do not access the host network.
+- **Utilize Network Policies**: Network Policies can be used to restrict communication between containers, ensuring that only authorized containers can access sensitive resources within your network. In addition, [Azure Policy for AKS](https://learn.microsoft.com/azure/governance/policy/concepts/policy-for-kubernetes) can be leveraged to enforce container security best practices, such as ensuring only trusted container images are deployed.
+- **Set container-specific resource limits**: For example, set limits on CPU and memory to prevent containers from consuming excessive resources, which could lead to denial of service or security vulnerabilities.
 
 
 ## Secure Azure Repos
