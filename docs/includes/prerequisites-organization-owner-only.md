@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 10/22/2024
+ms.date: 01/13/2025
 ---
 
-**Permissions:** Be an [owner of your organization](../organizations/accounts/change-organization-ownership.md).
+**Permissions:** [Owner of your organization](../organizations/accounts/change-organization-ownership.md).
