@@ -3,13 +3,13 @@ ms.service: azure-devops-test-plans
 ms.author: jeom
 author: raviLiftr
 ms.topic: include
-ms.date: 03/12/2024
+ms.date: 01/13/2025
 ---
 
 
 ## Prerequisites
 
-- **Access Levels:**
+- **Access levels:**
   - At least **Basic** access, with permissions to view work items under the corresponding Area Path. For more information, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
   - [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level to add test plans and test suites, delete test artifacts, and define test configurations.
   - Alternatively, one of the following **Visual Studio subscriptions**:
