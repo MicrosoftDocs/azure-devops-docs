@@ -96,6 +96,11 @@ sections:
           ## Create an organization
 
           For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md?view=azure-devops).
+      
+      - question: |
+          Q: Is localization supported in the Azure Devops service?
+        answer: |
+          A: Sorry, localization is not supported in the Azure DevOps service. It is only supported in the on-premises version of Azure DevOps.
 
       - question: |
           Q: How many organizations can I create?
