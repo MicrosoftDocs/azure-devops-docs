@@ -1,7 +1,9 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/14/2024
+ms.date: 1/15/2025
 ms.topic: include
 ---
 
+- [New pipeline expression function](#new-pipeline-expression-functions)
+- [Enhancements to ManualValidation Task](#enhancements-to-manualvalidation-task)
