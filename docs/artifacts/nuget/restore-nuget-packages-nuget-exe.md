@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article guides you through setting up your project and restoring your NuGet packages using the NuGet command-line interface.
+This article guides you through setting up your project and restoring NuGet packages using the NuGet command-line interface.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ This article guides you through setting up your project and restoring your NuGet
 
 1. Select **Connect to feed**, and then select **NuGet.exe** from the left navigation pane.
 
-1. Add a *nuget.config* file to your project, in the same folder as your *.csproj* or *.sln* file. Paste the provided XML snippet into your file. The snippet should look like the following:
+1. Add a *nuget.config* file to your project, in the same folder as your *csproj* or *.sln* file. Paste the provided XML snippet into your file. The snippet should look like the following:
 
     - **Organization-scoped feed**:
     

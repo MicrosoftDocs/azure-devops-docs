@@ -129,7 +129,7 @@ nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
 
 ## Related content
 
-- [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget.exe.md)
+- [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget-exe.md)
 
 - [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 
