@@ -43,8 +43,11 @@
       displayName: dotnet package, authenticate
       href: nuget/dotnet-setup.md
     - name: Publish NuGet packages (NuGet.exe)
-      displayName: publish package, nuget.exe, cli
       href: nuget/publish.md
+      displayName: publish, nuget
+    - name: Restore NuGet packages (NuGet.exe)
+      href: nuget/resore-nuget-packages-nuget.exe.md
+      displayName: nuget, restore
     - name: Publish NuGet packages (dotnet)
       displayName: dotnet, artifacts, publish packages
       href: nuget/dotnet-exe.md
