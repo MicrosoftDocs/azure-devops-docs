@@ -18,9 +18,6 @@ monikerRange: 'azure-devops'
 
 When you [create an organization](create-organization.md) in Azure DevOps, you can choose the geography where your organization gets hosted. You might select your organization's geography based on locality, network latency, or sovereignty requirements for data centers. The default location for your organization is determined by the closest [Microsoft Azure geography](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
-> [!WARNING]
-> We're temporarily unable to process migration requests until January 13, 2025. We apologize for any inconvenience and appreciate your understanding. Migration requests will resume January 14.
-
 ## Find your organization geography
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
