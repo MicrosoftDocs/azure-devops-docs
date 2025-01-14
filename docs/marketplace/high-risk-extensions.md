@@ -45,4 +45,4 @@ Note: this feature is being released graduadly. So if you dont see the high risk
 
 ## Addition of the unpublished state field in the Azure DevOps Services REST API
 
-With the Azure DevOps Services REST API [version 7.2](https://learn.microsoft.com/en-us/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&amp%3Btabs=HTTP&tabs=HTTP#extensionstateflags), the string field of 'unpublished' is now available too.
+With the Azure DevOps Services REST API [version 7.2](https://learn.microsoft.com/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&amp%3Btabs=HTTP&tabs=HTTP#extensionstateflags), the string field of 'unpublished' is now available too.
