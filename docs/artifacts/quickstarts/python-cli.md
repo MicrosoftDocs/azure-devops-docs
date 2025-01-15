@@ -33,7 +33,7 @@ This article guides you through publishing Python packages to an Azure Artifacts
 
 1. Select **twine** from the left navigation area. If this is your first time using Azure Artifacts with twine, make sure to install the prerequisites by selecting **Get the tools** and following the provided steps.
 
-1. Add a *.pypirc* file to your home directory and paste the provided snippet into it. Your file should look similar to the following snippet. If you already have a *.pypirc* that contains credentials for the public PyPI index, we recommend removing the *[pypi]* section to avoid accidentally publishing private packages to PyPI.
+1. Add a *pypirc* file to your home directory and paste the provided snippet into it. Your file should look similar to the following snippet. If you already have a *pypirc* that contains credentials for the public PyPI index, we recommend removing the *[pypi]* section to avoid accidentally publishing private packages to PyPI.
 
     ```
     [distutils]
@@ -50,7 +50,7 @@ This article guides you through publishing Python packages to an Azure Artifacts
     python setup.py sdist bdist_wheel
     ```
 
-1. Run the following command to publish your package. Use the *-r REPOSITORY_NAME* flag to ensure your private packages are not accidentally published to PyPI.
+1. Run the following command to publish your package. Use the `-r REPOSITORY_NAME` flag to ensure that your private packages are not accidentally published to PyPI.
 
     ```
     twine upload -r REPOSITORY_NAME dist/*
