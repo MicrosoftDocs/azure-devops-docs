@@ -59,7 +59,7 @@ The Test stage only runs if the Build stage completes successfully and the stage
 
 Because `isSkippable` is set to `false`, the option to skip the Test stage isn't available in the Azure DevOps UI. 
 
-:::image type="content" source="media/stages/isskippable-stage-false.png" alt-text="Screenshot of stage that can't be skipped.":::  
+:::image type="content" source="media/stages/is-skippable-stage-false.png" alt-text="Screenshot of stage that can't be skipped.":::  
 
 ```yaml
 - stage: Test
