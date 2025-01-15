@@ -12,6 +12,9 @@
   - name: Customize your pipeline
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
     href: customize-pipeline.md
+  - name: Build a pipeline with stages
+    displayName: multi-stage pipeline, stages, design pipeline, build, test, deploy
+    href: process/run-stages.md
 - name: Pipeline basics
   items:
   - name: Key concepts
@@ -83,9 +86,6 @@
     - name: Add stages, dependencies & conditions
       displayName: stage, dependencies, conditions, queuing policies, approvals
       href: process/stages.md
-    - name: Design a pipeline with stages
-      displayName: stages, YAML, dependencies, conditions, queuing policies, approvals
-      href: process/run-stages.md
     - name: Deployment jobs
       displayName: pipeline decorator, deployment strategy, lifecycle hooks, rolling, canary
       href: process/deployment-jobs.md

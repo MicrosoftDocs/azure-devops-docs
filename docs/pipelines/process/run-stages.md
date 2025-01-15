@@ -1,8 +1,8 @@
 ---
-title: Design and run a YAML pipeline with stages
+title: Build a pipeline with stages
 description: Create and run a complex YAML pipeline with multiple stages, conditions, validations, triggers, and rollback options.
 ms.topic: how-to 
-ms.date: 01/03/2025
+ms.date: 01/15/2025
 monikerRange: 'azure-devops'
 ai-usage: ai-assisted
 
@@ -10,11 +10,11 @@ ai-usage: ai-assisted
 
 ---
 
-# Design and run a YAML pipeline with stages
+# Build a pipeline with stages
  
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this article, learn how to create and run a more complex YAML pipeline with multiple stages and conditions. The example pipeline includes build, test, and deploy stages and also has optional stages for alternate deployments and rollbacks. With multiple stages you can isolate different parts of your pipeline, improve quality control and security, have better visibility into the pipeline's progress, and mitigate risk. The rollback stage lets you quickly revert to a stable version if something goes wrong, enhacing reliability and stability. 
+In this article, learn how to create and run a more complex YAML pipeline with multiple stages and conditions. The example pipeline includes build, test, and deploy stages and also has optional stages for alternate deployments and rollbacks. With multiple stages you can isolate different parts of your pipeline, improve quality control and security, have better visibility into the pipeline's progress, and mitigate risk. The rollback stage lets you quickly revert to a stable version if something goes wrong, enhancing reliability and stability. 
 
 This code works for most scenarios but doesn't include language or platform-specific requirements. As a next step, customize the pipeline for your specific implementation needs. 
 
@@ -143,7 +143,7 @@ The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-vali
 
 ## 5. Add optional alternate production and rollback stages
 
-Two optional stages,`DeployToAlternateProduction` and `Rollback`, are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. This enhances the overall reliability and availability of your application. You may also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md).
+Two optional stages, `DeployToAlternateProduction` and `Rollback`, are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. This enhances the overall reliability and availability of your application. You may also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md) and [Add stages, dependencies, and conditions](stages.md).
 
 The `Rollback` stage provides a safety net to revert your application to a previously stable state if something goes wrong during or after a deployment. This could be because of a deployment failure, bug, compliance requirement, disaster recovery, or other issue. A rollback stage is essential for maintaining the stability and reliability of your application. 
 
