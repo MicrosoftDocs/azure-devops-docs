@@ -1,32 +1,25 @@
 ---
-title: Publish and install Python packages (CLI)
-description: Learn how to publish and install Python packages from the command-line interface.
+title: Publish Python packages (CLI)
+description: Learn how to publish Python packages from the command-line interface.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
-ms.date: 11/21/2024
+ms.date: 01/15/2025
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Publish and install Python packages (CLI)
+# Publish Python packages (CLI)
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. You can publish and install Python packages to and from your feed using the command line. In this article, you learn how to:
-
-> [!div class="checklist"]  
-> * Create an new feed.
-> * Publish Python packages to a feed.
-> * Install Python packages from a feed.
+This article guides you through publishing Python packages to an Azure Artifacts feed using the NuGet command-line interface.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
-
-- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
-
-- Download and install [Python](https://www.python.org/downloads/).
+| **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Python](https://www.python.org/downloads/). |
 
 ## Create a feed
 
@@ -40,7 +33,7 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 
 1. Select **twine** from the left navigation area. If this is your first time using Azure Artifacts with twine, make sure to install the prerequisites by selecting **Get the tools** and following the provided steps.
 
-1. Add a *.pypirc* file to your home directory and paste the provided snippet into it. Your file should look similar to the following snippet. If you already have a *.pypirc* that contains credentials for the public PyPI index, we recommend removing the [pypi] section to avoid accidentally publishing private packages to PyPI.
+1. Add a *.pypirc* file to your home directory and paste the provided snippet into it. Your file should look similar to the following snippet. If you already have a *.pypirc* that contains credentials for the public PyPI index, we recommend removing the *[pypi]* section to avoid accidentally publishing private packages to PyPI.
 
     ```
     [distutils]
@@ -66,34 +59,11 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 > [!IMPORTANT]
 > You must have twine 1.13.0 or higher to use **artifacts-keyring**. See [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements) for more details.
 
-## Install packages
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
-
-1. Select **pip** from the left navigation area. If this is your first time using Azure Artifacts with pip, make sure to install the prerequisites by selecting **Get the tools** and following the provided steps.
-
-1. [Create a virtual environment](https://docs.python.org/3/library/venv.html).
-
-1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste the provided snippet into it. Your file should look similar to the following snippet: 
-
-    ```
-    [global]
-    index-url=https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/simple/
-    ```
-
-1. Run this command in your project directory to install your packages:
-
-    ```
-    pip install
-    ```
-
-> [!IMPORTANT]
-> You must have pip 19.2 or higher to use **artifacts-keyring**. See [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements) for more details.
-
 ## Related content
 
-- [Use packages from PyPi](../python/use-packages-from-pypi.md)
-- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
-- [Configure permissions](../feeds/feed-permissions.md)
+- [Install Python packages (CLI)](install-python-packages.md)
+
+- [Publish Python packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/pypi.md)
+
+- [Use packages from PyPi.org](../python/use-packages-from-pypi.md)
+
