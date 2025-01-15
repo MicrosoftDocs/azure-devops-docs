@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Create and configure organization FAQs
+  title: Organization FAQs
   titleSuffix: Azure DevOps
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
   ms.subservice: azure-devops-organizations
@@ -10,7 +10,7 @@ metadata:
   author: chcomley
   ms.date: 01/15/2025
   monikerRange: '<= azure-devops'
-title: Create and configure organization FAQs
+title: Organization FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
