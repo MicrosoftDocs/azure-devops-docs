@@ -14,32 +14,27 @@ title: Create and configure organization FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-  Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. We group the FAQs by the following subjects:
+  Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps, grouped into the following categories:
   
-  - [General](#general-organization-faqs)
-  - [Create an organization](#create-organization-faqs)
-  - [Configure an organization](#configure-organization-faqs)
-  - [Delete or restore an organization](#delete-restore-organization-faqs)
+    - [General](#general-organization-faqs)
+    - [Create an organization](#create-organization-faqs)
+    - [Configure an organization](#configure-organization-faqs)
+    - [Delete or restore an organization](#delete-restore-organization-faqs)
   
   For more information about user and permissions management, see [User and permissions management FAQs](faq-user-and-permissions-management.yml).
   
   <a name="general-organization-faqs"></a>
-  
 
 sections:
   - name: General
     questions:
       - question: |
-          Q: What users can join for free? What benefits do users get from joining Azure DevOps?
+          Q: Which users can join for free, and what benefits do they receive from joining Azure DevOps?
         answer: |
-          A: Azure DevOps is free for these users to join:
-          
-          * Five users who get Basic features, like version control and tools for Agile, Java, and build and release management. 
-          
-          * Unlimited users who get Stakeholder features, like working with your backlog, work items, and queries.
-          
-          * Unlimited Visual Studio subscribers, who also get Basic features.
+          A: Get the following benefits from joining Azure DevOps:
 
+          [!INCLUDE [free-tier](../../includes/free-tier.md)]
+          
           For more information, see [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
           
           <a name="browser-problems"></a>
@@ -47,7 +42,7 @@ sections:
       - question: |
           Q: Why won't my browser work with Azure DevOps?
         answer: |
-          A: You might be using an unsupported browser. For the best experience, make sure that you're using a [supported browser](/azure/devops/server/compatibility#supported-browsers).
+          A: You might be using an unsupported browser. For the best experience, ensure you're using a [supported browser](/azure/devops/server/compatibility#supported-browsers).
           
       - question: |
           Q:  Which Visual Studio subscriptions can I use with Azure DevOps?
@@ -62,26 +57,20 @@ sections:
           <a name="organization-location"></a>
           
       - question: |
-          Q: How do I find the region where my organization is located? 
+          Q: How do I find the geography where my organization is located? 
         answer: |
-          A: [Find your organization's region](./change-organization-location.md).
+          A: [Find your organization's geography](./change-organization-location.md).
           
       - question: |
-          Q: How do I change my project name, organization location, or process? 
+          Q: How do I change my project name, organization location, or project process? 
         answer: |
-          A: You can choose your organization location, or process when you sign up for your organization. 
+          A: You can choose your organization location, or process when you sign up for your organization. For more information, see the following articles:
           
-          ![Change organization details](../../media/change-details-standard1.png)
-          
-          Azure DevOps uses Agile as the default [process](../../boards/work-items/guidance/choose-process.md) to organize your work. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available. For a better experience, select a location that's closest to most users in your organization. 
-          
-          If a new region or location opens later, you can [change your organization location or region](./change-organization-location.md). You can also select another process, like Scrum, if that works best for you.
-          
-          ![Rename project, change organization location, or select another process](../../media/change-details-standard2.png)
-          
-          If you connected your organization to Microsoft Entra ID but you belong to multiple directories and want to select a different directory, change your directory here:
-          
-          ![Change your directory](../../media/change-details-standard2-with-directory.png)
+          - [Change your project name](../../organizations/projects/rename-project.md)
+          - [Change your organization geography](./change-organization-location.md)
+          - [Change your project process from Agile to Scrum](../../organizations/settings/work/change-process-agile-to-scrum.md)
+          - [Change your project process from Scrum to Agile](../../organizations/settings/work/change-process-scrum-to-agile.md)
+          - [Change your project process from Basic to Agile](../../organizations/settings/work/change-process-basic-to-agile.md)
           
           <a name="create-organization-faqs"></a>
           
@@ -92,7 +81,7 @@ sections:
       - question: |
           Q: Is localization supported in the Azure Devops service?
         answer: |
-          A: Sorry, localization isn't supported in the Azure DevOps service. It's supported in the on-premises version of Azure DevOps.
+          A: Sorry, localization isn't supported in the Azure DevOps service. We support localization in the on-premises version of Azure DevOps.
 
       - question: |
           Q: How many organizations can I create?
@@ -155,13 +144,6 @@ sections:
           
           To [add users to the directory](/azure/active-directory/active-directory-create-users), be a directory administrator. If you can't access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/azure/active-directory/sign-up-organization).
           
-          <a name="ChangeDirectory"></a>
-          
-      - question: |
-          Q: Can I change the directory after sign-in?
-        answer: |
-          A: Yes, see [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
-          
           <a name="ChooseOrgAcctMSAcct"></a>
           
           [!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
@@ -171,7 +153,14 @@ sections:
           * Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
           
           [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
-          
+        
+          <a name="ChangeDirectory"></a>
+
+      - question: |
+          Q: Can I change the directory after sign-in?
+        answer: |
+          A: Yes, see [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
+      
       - question: |
           Q: How do you store, secure, and protect my data?
         answer: |
