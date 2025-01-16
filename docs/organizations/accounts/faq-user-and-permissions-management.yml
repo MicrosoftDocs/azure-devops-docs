@@ -23,6 +23,7 @@ summary: |
   - [Organizations](#leave-organization)
   - [Group-based licensing](#group-based-licensing)
   - [Add members to projects](#add-members-to-projects)
+  - [Switch between accounts in Azure DevOps and the Azure portal](#switch-between-accounts-in-azure-devops-and-the-azure-portal)
   
   <a name="general-permissions"></a>
   
@@ -119,6 +120,7 @@ sections:
           
   - name: User access
     questions:
+      
       - question: |
           Q: What does "Last Access" mean in the All Users view?
         answer: |
@@ -375,7 +377,17 @@ sections:
           <a name="get-support"></a>
           
           [!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
-          
+
+          <a name="switch-between-accounts-in-azure-devops-and-the-azure-portal"></a>
+  - name: Switch between accounts in the Azure portal and Azure DevOps
+    questions:
+      - question: |
+         Q: As an administrator, how can I make it easier to switch between accounts across the Azure portal and Azure DevOps?
+        answer: |
+           A: Managing multiple accounts can be cumbersome and time-consuming. To streamline the process, consider the following actions:
+              - **Use different browsers or profiles:** Use different web browsers or browser profiles for each account to stay signed into multiple accounts simultaneously without switching back and forth.
+              - **Utilize incognito/private browsing:** Use an incognito or private browsing window to temporarily access a different account without affecting your current session.
+              - **Single sign-on (SSO):** If supported by your organization, implement single sign-on (SSO) to streamline the sign-in process across Azure services.
 
 additionalContent: |
 
