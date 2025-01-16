@@ -21,7 +21,7 @@ This article guides you through downloading Universal Packages from your Azure A
 
 ## Install Azure DevOps extension
 
-Ensure that you have Azure CLI (version 2.10.1 or higher) installed. Then, follow the steps below to install or update the Azure DevOps extension for managing Azure DevOps services from the command line.
+Ensure that you have Azure CLI (version 2.10.1 or higher) installed. Then, follow the steps below to install or update the Azure DevOps extension to manage your Azure DevOps resources from the command line.
 
 1. Run the following command to install the Azure DevOps extension:
 
@@ -71,7 +71,7 @@ To download only specific files, use the `--file-filter` parameter to fetch only
     az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
     ```
 
-**Example:** Using `--file-filter logs/.log` would match all files in the `logs` directory with the `.log` extension (e.g., build_logs.log).
+**Example:** Using `--file-filter logs/.log` would match all files in the `logs` directory with the `.log` extension.
 
 ## Download the latest version
 
@@ -86,7 +86,7 @@ Use wildcards `*` to download the latest version of your Universal Packages.
 - `--version '1.2.*'`: Download the latest patch release with major version 1 and minor version 2.
   
 > [!NOTE]
-> Wildcard patterns are not supported with pre-release versions (packages with a dash in their version number).
+> Wildcard patterns are not supported with prerelease versions (packages with a dash in their version number).
 
 ## Related content
 
