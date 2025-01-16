@@ -7,10 +7,13 @@ ms.topic: include
 
 ### New pipeline expression functions
 
-Pipeline expression functions allow you to write powerful YAML pipelines. In this sprint, we've added two new pipeline expression functions:
-`iif(condition, value_when_true, value_when_false)` that returns `value_when_true` when `condition evaluated to `true` or `value_when_false`, otherwise
-`trim` that returns a new string in which whitespaces at the beginning and end of the string are removed
-For example, you can use the `iif` function to choose in which pool to run the pipeline. If you want to build PRs using the Azure Pipelines pool, but all other runs should use a Managed DevOps pool, you can write the following pipeline.
+Pipeline expression functions allow you to write powerful YAML pipelines. In this sprint, we've introduced two new functions:
+
+* `iif(condition, value_when_true, value_when_false)` that returns `value_when_true` when `condition evaluated to `true` or `value_when_false`, otherwise
+
+* `trim` that returns a new string in which whitespaces at the beginning and end of the string are removed
+
+For example, you can use the `iif` function to dynamically select a pool for running your pipeline. If you want to build PRs using the Azure Pipelines pool, but all other runs should use a Managed DevOps pool, you can write the following pipeline.
 ```
 variables:
   poolToUse: ${{ iif(eq(variables['Build.Reason'], 'PullRequest'), 'Azure Pipelines', 'Silvius1ESPoolNew')}}
@@ -45,7 +48,7 @@ stages:
 
 ### Enhancements to ManualValidation Task
 
-The [ManualValidation](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/manual-validation-v1) task enables you to pause a pipeline run and wait for manual intervention. One scenario for using this task is manual testing. 
+The [ManualValidation](/azure/devops/pipelines/tasks/reference/manual-validation-v1) task allows you to pause a pipeline run and wait for manual intervention. One common use case is to enable manual testing during the pipeline.
 
 To increase security of your pipeline, you may wish to restrict who can complete the task and resume the pipeline run. To this end, we're introducing a new version of the task that provides two additional parameters:
 `approvers`: restrict who can complete the task to a predefined set of users / security groups / teams

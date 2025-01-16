@@ -11,6 +11,6 @@ The coverage page in Advanced Security’s security overview now provides a deta
 > [!div class="mx-imgBorder"]
 > [![Screenshot of security overview.](../../media/248-ghazdo-01.png "Screenshot of security overview")](../../media/248-ghazdo-01.png#lightbox)
 
-For more details, see [Security overview for Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops#viewing-security-insights). 
+For more details, see [Security overview for Advanced Security](https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops#viewing-security-insights). 
 
 
