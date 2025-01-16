@@ -17,7 +17,7 @@ This article guides you through downloading Universal Packages from your Azure A
 
 | **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Install [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).<br> - Install the [Azure DevOps extension](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops&tabs=Windows#install-azure-devops-extension) version 0.14.0 or higher. |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Install [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).<br> - Install the [Azure DevOps extension](#install-azure-devops-extension) version 0.14.0 or higher. |
 
 ## Install Azure DevOps extension
 
@@ -37,7 +37,15 @@ Ensure that you have Azure CLI (version 2.10.1 or higher) installed. Then, follo
 
 ## Create a feed
 
-[!INCLUDE [](../includes/create-feed.md)]
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+1. Provide a **Name** for your feed, choose the **Visibility** option that defines who can view your packages, check **Include packages from common public sources** if you want to include packages from sources like *nuget.org* or *npmjs.com*, and for **Scope**, decide whether the feed should be scoped to your project or the entire organization.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
 
 ## Download Universal Packages
 
