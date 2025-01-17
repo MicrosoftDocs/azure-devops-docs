@@ -1,12 +1,9 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-<<<<<<< HEAD
-ms.date: 1/15/2025
-=======
-ms.date: 1/14/2025
->>>>>>> 5e53b7659a203f3348a02a532059e241c405fe22
+ms.date: 1/16/2025
 ms.topic: include
 ---
 
+- [Sparse checkout for Azure Repos](#sparse-checkout-for-azure-repos)
 - [Make cross-repo policies case-sensitive](#make-cross-repo-policies-case-sensitive)
