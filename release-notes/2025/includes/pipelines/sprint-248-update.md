@@ -48,11 +48,16 @@ stages:
 
 ### Enhancements to ManualValidation Task
 
-The [ManualValidation](/azure/devops/pipelines/tasks/reference/manual-validation-v1) task allows you to pause a pipeline run and wait for manual intervention. One common use case is to enable manual testing during the pipeline.
+
+
+The [ManualValidation](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/manual-validation-v1) task enables you to pause a pipeline run and wait for manual intervention. One scenario for using this task is manual testing. 
 
 To increase security of your pipeline, you may wish to restrict who can complete the task and resume the pipeline run. To this end, we're introducing a new version of the task that provides two additional parameters:
-`approvers`: restrict who can complete the task to a predefined set of users / security groups / teams
-`allowApproversToApproveTheirOwnRuns`: restrict the user who queued the pipeline run from resuming it
+
+* `approvers`: restrict who can complete the task to a predefined set of users / security groups / teams
+
+* `allowApproversToApproveTheirOwnRuns`: restrict the user who queued the pipeline run from resuming it
+
 For example, the following YAML snippet restricts the set of people who can resume the pipeline run to members of the Release Approvers group, but not by the user who triggered the pipeline run.
 
 ```
@@ -64,10 +69,10 @@ For example, the following YAML snippet restricts the set of people who can resu
 ```
 
 In the `approvers` property, you can use the following values (comma, separated) :
-Email address,
-Test-Permission-Group,
-Test-Project-Team,
-[ProjectName]\[Permission Group],
-[Org]\[Permission Group],
-[ProjectName]\[Project Team],
-[Org]\[Project Team]
+* Email address,
+* Permission-Group,
+* Project-Team,
+* [ProjectName]\[Permission Group],
+* [Org]\[Permission Group],
+* [ProjectName]\[Project Team]
+

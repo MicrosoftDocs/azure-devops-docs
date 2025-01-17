@@ -7,8 +7,9 @@ description: Security and Repository Performance
 ---
 # Enhanced Security and Repository Performance
 
-With this sprint, we’re enhancing your DevOps workflow with greater security visibility and optimized repository performance. GitHub Advanced Security now includes detailed enablement tracking for **dependency scanning**, **code scanning**, and **secret scanning**, offering deeper insights into your organization’s security coverage. Additionally, sparse checkout support for Azure Repos enables faster and more efficient checkouts for large repositories.
+With this sprint, we’re enhancing your DevOps workflow with greater security visibility and optimized repository performance. GitHub Advanced Security now includes detailed enablement tracking for **dependency scanning**, **code scanning**, and **secret scanning**, offering deeper insights into your organization’s security coverage. 
 
+In addition, sparse checkout support for Azure Repos enables faster and more efficient checkouts for large repositories.
 
 Check out the release notes for details.
 
