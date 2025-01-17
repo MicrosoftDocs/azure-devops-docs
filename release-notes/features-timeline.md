@@ -133,7 +133,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>2025 Q1</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[ew service connection type for pipelines to authenticate with Azure DevOps](/azure/devops/release-notes/roadmap/2025/new-service-connection)">ew service connection type for pipelines to authenticate with Azure DevOps</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[New service connection type for pipelines to authenticate with Azure DevOps](/azure/devops/release-notes/roadmap/2025/new-service-connection)">New service connection type for pipelines to authenticate with Azure DevOps</a></td>
          <td>Pipelines</td>
          <td>2025 Q1</td>
       </tr>
