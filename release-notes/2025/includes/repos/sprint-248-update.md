@@ -15,17 +15,15 @@ Setting `sparseCheckoutDirectories` enables cone mode, where the checkout proces
 If both properties are set, the agent initialize cone mode with directory matching. If neither property is specified in the checkout task, the sparse checkout process is disabled. Any issues encountered during command execution results in the checkout task failing.
 
 YAML example for sparse checkout cone mode:
-```
+```yaml
     checkout: repo
-    
     sparseCheckoutDirectories: src
 ```
 
 YAML example for sparse checkout non-cone mode:
-```
+```yaml
 
    checkout: repo
-
    sparseCheckoutPatterns: /* !/img 
 
 ```
