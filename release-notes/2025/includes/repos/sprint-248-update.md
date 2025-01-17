@@ -12,7 +12,7 @@ The [git sparse-checkout](https://github.blog/open-source/git/bring-your-monorep
 
 Setting `sparseCheckoutDirectories` enables cone mode, where the checkout process uses directory matching. Alternatively, you can set `sparseCheckoutPatterns` which triggers non-cone mode, allowing more complex pattern matching. 
 
-If both properties are set, the agent initialize cone mode with directory matching. If neither property is specified in the checkout task, the sparse checkout process is disabled. Any issues encountered during command execution results in the checkout task failing.
+If both properties are set, the agent initializes cone mode with directory matching. If neither property is specified in the checkout task, the sparse checkout process is disabled. Any issues encountered during command execution results in the checkout task failing.
 
 YAML example for sparse checkout cone mode:
 ```yaml
@@ -28,7 +28,7 @@ YAML example for sparse checkout non-cone mode:
 
 ```
 > [!IMPORTANT]
-> The sparse checkout feature requires agent **v3.248.0 (v4.248.0 for .NET 8)** or above. 
+> The sparse checkout feature requires agent **v3.248.0 (v4.248.0 for .NET 8)** or later versions. 
 
 You can find the agent on the **[releases page](https://github.com/microsoft/azure-pipelines-agent/releases)**.
 

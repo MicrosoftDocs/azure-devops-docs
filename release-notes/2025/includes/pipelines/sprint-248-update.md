@@ -13,7 +13,7 @@ Pipeline expression functions allow you to write powerful YAML pipelines. In thi
 
 * `trim(string)` that returns a new string in which whitespaces at the beginning and end of the string are removed
 
-For example, you can use the `iif` function to dynamically select a pool for running your pipeline. If you want to build PRs using the Azure Pipelines pool, but all other runs should use a Managed DevOps pool, you can write the following pipeline.
+For example, you can use the `iif` function to dynamically select a pool for running your pipeline. If you want to build pull requests using the Azure Pipelines pool, but all other runs should use a Managed DevOps pool, you can write the following pipeline.
 ```
 variables:
   poolToUse: ${{ iif(eq(variables['Build.Reason'], 'PullRequest'), 'Azure Pipelines', 'ManagedDevOpsPool')}}
@@ -46,7 +46,7 @@ stages:
       - script: ./deploy.sh ${{trim(region)}}
 ```
 
-### Enhancements to ManualValidation Task
+### Enhancements to ManualValidation task
 
 
 

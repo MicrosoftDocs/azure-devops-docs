@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [New pipeline expression function](#new-pipeline-expression-functions)
-- [Enhancements to ManualValidation Task](#enhancements-to-manualvalidation-task)
+- [Enhancements to ManualValidation task](#enhancements-to-manualvalidation-task)
