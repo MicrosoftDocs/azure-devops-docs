@@ -517,6 +517,10 @@ To trigger agent update programmatically, you can use Agent update API as descri
 
   Create the **Agents** folder if it isn't present.
 
+## Agent directory structure
+
+[!INCLUDE [include](includes/agent-directory-structure.md)]
+
 ## FAQ
 
 [!INCLUDE [include](includes/v2/qa-agent-version.md)]
