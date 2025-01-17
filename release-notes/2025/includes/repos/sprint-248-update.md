@@ -40,7 +40,7 @@ You can find the agent on the **[releases page](https://github.com/microsoft/azu
 Previously, the branch candidate preview for cross-repo policies displayed results in a case-insensitive manner, despite branch matching being case-sensitive. This inconsistency created potential misalignment, as it could appear that certain branches were protected when they weren't. 
 To resolve this issue, we have updated the branch pattern preview to align with the case-sensitive behavior of policy application. 
 
-Before fix:
+Previously:
 > [!div class="mx-imgBorder"]
 > [![Screenshot of before fix](../../media/248-repos-01.png "Screenshot of before fix")](../../media/248-repos-01.png#lightbox)
 

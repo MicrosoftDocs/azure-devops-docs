@@ -12,10 +12,13 @@ Azure Boards now supports integration with GitHub Enterprise Cloud organizations
 To connect an Azure Boards project to your GitHub Enterprise Cloud organization with data residency:
 
   1. Create a new connection in Azure Boards.
-  2. Select the **GitHub Enterprise Cloud with data residency** option.
+  
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of connect github with boards.](../../media/248-boards-01.png "Screenshot of connect github with boards")](../../media/248-boards-01.png#lightbox)
+
+
+2. Select the **GitHub Enterprise Cloud with data residency** option. 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of new github connection.](../../media/248-boards-02.png "Screenshot of new github connection")](../../media/248-boards-02.png#lightbox)
