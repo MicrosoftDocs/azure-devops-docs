@@ -21,12 +21,15 @@ The agent's work directory contains the workspace where the source and jobs outp
 
 The work directory structure is as follows:
 
+```plaintext
+
     - /work directory
         - /1 build directory/pipeline workspace
             - /s source/working directory
             - /b binaries directory
             - /a artifacts staging directory
             - /TestResults Test results directory
+```
 
 | Directory | Description | Examples | Predefined variables |
 |-----------|-------------|----------|------------|
