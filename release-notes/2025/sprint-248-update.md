@@ -1,15 +1,15 @@
 ---
-title: Security and Repository Performance
+title: Security and Pipeline workflows
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/15/2024
-description: Security and Repository Performance
+ms.date: 1/17/2024
+description: Security and Pipeline workflows
 ---
-# Enhanced Security and Repository Performance
+# Enhanced security and Pipeline workflows
 
-With this sprint, we’re enhancing your DevOps workflow with greater security visibility and optimized repository performance. GitHub Advanced Security now includes detailed enablement tracking for **dependency scanning**, **code scanning**, and **secret scanning**, offering deeper insights into your organization’s security coverage. 
+With this sprint, we’re enhancing your DevOps workflow with greater security visibility and and streamlined pipeline workflows. GitHub Advanced Security now includes detailed enablement tracking for **dependency scanning**, **code scanning**, and **secret scanning**, offering deeper insights into your organization’s security coverage. 
 
-In addition, sparse checkout support for Azure Repos enables faster and more efficient checkouts for large repositories.
+In addition,  we're excited to introduce pipeline-focused enhancements, including new YAML expression functions and expanded controls for manual validation tasks, enabling you to create more efficient and secure workflows.
 
 Check out the release notes for details.
 
@@ -74,4 +74,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Dan Hellem
+Silviu Andrica

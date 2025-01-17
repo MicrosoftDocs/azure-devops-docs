@@ -10,7 +10,7 @@
       items:
         - name: "2025"
           items:
-          - name: January 15
+          - name: January 17
             href: 2025/sprint-248-update.md
           expanded: true
         - name: "2024"
@@ -276,7 +276,7 @@
         items:
         - name: "2025"
           items:
-          - name: January 15
+          - name: January 17
             href: 2025/boards/sprint-248-update.md
           expanded: false
         - name: "2024"
@@ -432,7 +432,7 @@
         items:
         - name: "2025"
           items:
-          - name: January 15
+          - name: January 17
             href: 2025/repos/sprint-248-update.md
           expanded: false
         - name: "2024"
@@ -520,7 +520,7 @@
         items:
         - name: "2025"
           items:
-          - name: January 15
+          - name: January 17
             href: 2025/pipelines/sprint-248-update.md
           expanded: false
         - name: "2024"
@@ -738,7 +738,7 @@
         items:
         - name: "2025"
           items:
-          - name: January 15
+          - name: January 17
             href: 2025/testplans/sprint-248-update.md
           expanded: false
         - name: "2024"
@@ -848,7 +848,7 @@
         items:
         - name: "2025"
           items:
-          - name: January 15
+          - name: January 17
             href: 2025/ghazdo/sprint-248-update.md
           expanded: false
         - name: "2024"

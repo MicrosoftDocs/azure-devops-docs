@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/16/2025
+ms.date: 1/17/2025
 ms.topic: include
 ---
 
@@ -10,7 +10,9 @@ ms.topic: include
 
 The [git sparse-checkout](https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/) command is now supported in the YAML checkout task, alongside the [partial clone filter](https://learn.microsoft.com/azure/devops/pipelines/yaml-schema/steps-checkout?view=azure-pipelines), to improve repository checkout performance. You can use the properties `sparseCheckoutDirectories` and `sparseCheckoutPatterns`.
 
-Setting `sparseCheckoutDirectories` enables cone mode, where the checkout process uses directory matching. Alternatively, you can set `sparseCheckoutPatterns` which will trigger non-cone mode, allowing more complex pattern matching. If both properties are set, the agent will initialize cone mode with directory matching. If neither property is specified in the checkout task, the sparse checkout process is disabled. Any issues encountered during command execution will result in the checkout task failing.
+Setting `sparseCheckoutDirectories` enables cone mode, where the checkout process uses directory matching. Alternatively, you can set `sparseCheckoutPatterns` which will trigger non-cone mode, allowing more complex pattern matching. 
+
+If both properties are set, the agent will initialize cone mode with directory matching. If neither property is specified in the checkout task, the sparse checkout process is disabled. Any issues encountered during command execution will result in the checkout task failing.
 
 YAML example for sparse checkout cone mode:
 ```
@@ -27,7 +29,7 @@ YAML example for sparse checkout non-cone mode:
    sparseCheckoutPatterns: /* !/img 
 
 ```
-> [!NOTE]
+> [!IMPORTANT]
 > The sparse checkout feature requires agent **v3.248.0 (v4.248.0 for .NET 8)** or above. 
 
 You can find the agent on the **[releases page](https://github.com/microsoft/azure-pipelines-agent/releases)**.
@@ -35,7 +37,8 @@ You can find the agent on the **[releases page](https://github.com/microsoft/azu
 
 ### Make cross-repo policies case-sensitive
 
-While creating a new cross-repos policy with a branch pattern, the preview was incorrectly displaying the list of branch candidates for this new policy. Branch matching is case-sensitive but preview shows the candidates in case-insensitive manner. This caused a bad user experience and confusion for the end-user, leading them to think their branches were protected when, in fact, they were not. To maintain consistency between the policy preview and its application, we are introducing this feature.
+Previously, the branch candidate preview for cross-repo policies displayed results in a case-insensitive manner, despite branch matching being case-sensitive. This inconsistency created potential misalignment, as it could appear that certain branches were protected when they weren't. 
+To resolve this issue, we have updated the branch pattern preview to align with the case-sensitive behavior of policy application. 
 
 Before fix:
 > [!div class="mx-imgBorder"]
