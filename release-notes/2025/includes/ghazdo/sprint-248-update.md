@@ -11,6 +11,6 @@ The security overview in GitHub Advanced Security now provides a detailed breakd
 > [!div class="mx-imgBorder"]
 > [![Screenshot of security overview.](../../media/248-ghazdo-01.png "Screenshot of security overview")](../../media/248-ghazdo-01.png#lightbox)
 
-For more information, see [Security overview for Advanced Security](https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops#viewing-security-insights). 
+For more information, see [Security overview for Advanced Security](/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops#viewing-security-insights). 
 
 

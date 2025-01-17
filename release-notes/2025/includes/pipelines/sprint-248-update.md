@@ -50,7 +50,7 @@ stages:
 
 
 
-The [ManualValidation](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/manual-validation-v1) task enables you to pause a pipeline run and wait for manual intervention. One scenario for using this task is manual testing. 
+The [ManualValidation](/azure/devops/pipelines/tasks/reference/manual-validation-v1) task enables you to pause a pipeline run and wait for manual intervention. One scenario for using this task is manual testing. 
 
 To increase security of your pipeline, you may wish to restrict who can complete the task and resume the pipeline run. To this end, we're introducing a new version of the task that provides two additional parameters:
 
