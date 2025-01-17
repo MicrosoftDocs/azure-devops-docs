@@ -7,7 +7,7 @@ description: Security and Pipeline workflows
 ---
 # Enhanced security and Pipeline workflows
 
-With this sprint, we’re enhancing your DevOps workflow with greater security visibility and and streamlined pipeline workflows. GitHub Advanced Security now includes detailed enablement tracking for **dependency scanning**, **code scanning**, and **secret scanning**, offering deeper insights into your organization’s security coverage. 
+With this sprint, we’re enhancing your DevOps workflow with greater security visibility and streamlined pipeline workflows. GitHub Advanced Security now includes detailed enablement tracking for **dependency scanning**, **code scanning**, and **secret scanning**, offering deeper insights into your organization’s security coverage. 
 
 In addition,  we're excited to introduce pipeline-focused enhancements, including new YAML expression functions and expanded controls for manual validation tasks, enabling you to create more efficient and secure workflows.
 
