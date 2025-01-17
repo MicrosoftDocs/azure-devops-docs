@@ -5,7 +5,7 @@ ms.date: 1/17/2025
 ms.topic: include
 ---
 
-- [Security overview coverage tool-specific enablement status](#security-overview-coverage-tool-specific-enablement-status)
+- [Tool specific security overview coverage](#tool-specific-security-overview-coverage)
 
 
 

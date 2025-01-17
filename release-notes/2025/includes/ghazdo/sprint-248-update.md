@@ -4,7 +4,7 @@ ms.author: ckanyika
 ms.date: 1/17/2025
 ms.topic: include
 ---
-### Security overview coverage tool-specific enablement status
+### Tool specific security overview coverage
 
 The security overview in GitHub Advanced Security for Azure DevOps now provides a detailed breakdown of enablement status for each scan tool, including **dependency scanning**, **code scanning**, and **secret scanning**. This enhancement allows you to view fine-grained enablement statuses across all repositories in your organization.
 
