@@ -335,44 +335,9 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>2025 Q1</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q1</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/direct-link-from-test-plan" data-raw-source="[Direct link from Test Plan work item to Test Plans page](/azure/devops/release-notes/roadmap/2025/testplans/direct-link-from-test-plan)">Direct link from Test Plan work item to Test Plans page</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q1</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test" data-raw-source="[Auto-pause manual test case run](/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test)">Auto-pause manual test case run</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q1</td>
-      </tr>
-            <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step" data-raw-source="[Undo test step in web and desktop runner](/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step)">Undo test step in web and desktop runner</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q1</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/export-test-cases" data-raw-source="[Export test cases with custom columns in XLSX](/azure/devops/release-notes/roadmap/2025/testplans/export-test-cases)">Export test cases with custom columns in XLSX</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q1</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans)">Restore deleted test plans and test suites using REST API</a></td>
          <td>Test Plans</td>
          <td>2025 Q1</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access" data-raw-source="[Quick access to test results and Run ID in web runner](/azure/devops/release-notes/roadmap/2025/testplans/quick-access)">Quick access to test results and Run ID in web runner</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q1</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases" data-raw-source="[Resume paused test cases on by default](/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases)">Resume paused test cases on by default</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results" data-raw-source="[Quick access to Test Results in Test Case](/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results)">Quick access to Test Results in Test Case</a></td>
@@ -380,12 +345,12 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>2025 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory" data-raw-source="[New Test Plans directory](/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory)">New Test Plans directory</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test" data-raw-source="[Auto-pause manual test case run](/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test)">Auto-pause manual test case run</a></td>
          <td>Test Plans</td>
-         <td>2025 Q2</td>
+         <td>2025 Q1</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Recent test result in user story work item](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Recent test result in user story work item</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases" data-raw-source="[Resume paused test cases on by default](/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases)">Resume paused test cases on by default</a></td>
          <td>Test Plans</td>
          <td>2025 Q2</td>
       </tr>
@@ -396,21 +361,6 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result" data-raw-source="[Advanced Test Case result history](/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result)">Advanced Test Case result history</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q2</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines" data-raw-source="[Seamless build pipeline integration for Test Case Run](/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines)">Seamless build pipeline integration for Test Case Run</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q2</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript" data-raw-source="[Support for JavaScript in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript)">Support for JavaScript in Azure Test Plans</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q2</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test" data-raw-source="[Improve flaky test detection](/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test)">Improve flaky test detection</a></td>
          <td>Test Plans</td>
          <td>2025 Q2</td>
       </tr>
@@ -430,7 +380,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="15"><strong>2025 Q1</strong></td>
+      <td rowspan="20"><strong>2025 Q1</strong></td>
        <td>
          <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
         </td>
@@ -465,19 +415,40 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Boards & Pipelines</td>
       </tr>
       <tr>
-        <td>
-            <a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a>
-        </td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-junit" data-raw-source="[Support for JUnit/Java in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-junit)">Support for JUnit/Java in Azure Test Plans</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-      </tr>  
-        <td><a href="/azure/devops/release-notes/roadmap/2023/junit-java-support" data-raw-source="[JUnit / Java support in Test Plans](/azure/devops/release-notes/roadmap/2022/junit-java-support)">JUnit / Java support in Test Plans</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest" data-raw-source="[Support for Pytest/Python in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for Pytest/Python in Azure Test Plans</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/test-plan-task-in-pipelines" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2022/test-plan-task-in-pipelines)">Test Plan task in Pipelines</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/direct-link-from-test-plan" data-raw-source="[Direct link from Test Plan work item to Test Plans page](/azure/devops/release-notes/roadmap/2025/testplans/direct-link-from-test-plan)">Direct link from Test Plan work item to Test Plans page</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test" data-raw-source="[Auto-pause manual test case run](/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test)">Auto-pause manual test case run</a></td>
+         <td>Test Plans</td>
+      </tr>
+            <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step" data-raw-source="[Undo test step in web and desktop runner](/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step)">Undo test step in web and desktop runner</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/export-test-cases" data-raw-source="[Export test cases with custom columns in XLSX](/azure/devops/release-notes/roadmap/2025/testplans/export-test-cases)">Export test cases with custom columns in XLSX</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans)">Restore deleted test plans and test suites using REST API</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access" data-raw-source="[Quick access to test results and Run ID in web runner](/azure/devops/release-notes/roadmap/2025/testplans/quick-access)">Quick access to test results and Run ID in web runner</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
@@ -491,16 +462,8 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="6"><strong>2025 Q2</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[New Test Runs experience](/azure/devops/release-notes/roadmap/2022/improved-visibility)">New Test Runs experience</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td>
+      <td rowspan="13"><strong>2025 Q2</strong></td>
+        <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
          <td>Boards</td>         
@@ -516,6 +479,42 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
         <td>Pipelines</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases" data-raw-source="[Resume paused test cases on by default](/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases)">Resume paused test cases on by default</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results" data-raw-source="[Quick access to Test Results in Test Case](/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results)">Quick access to Test Results in Test Case</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory" data-raw-source="[New Test Plans directory](/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory)">New Test Plans directory</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Recent test result in user story work item](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Recent test result in user story work item</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result" data-raw-source="[Advanced Test Case result history](/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result)">Advanced Test Case result history</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines" data-raw-source="[Seamless build pipeline integration for Test Case Run](/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines)">Seamless build pipeline integration for Test Case Run</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript" data-raw-source="[Support for JavaScript in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript)">Support for JavaScript in Azure Test Plans</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test" data-raw-source="[Improve flaky test detection](/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test)">Improve flaky test detection</a></td>
+         <td>Test Plans</td>
       </tr>
       <td rowspan="17"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
