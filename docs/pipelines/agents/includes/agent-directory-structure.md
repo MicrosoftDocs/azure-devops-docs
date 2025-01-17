@@ -7,9 +7,6 @@ author: cebundy
 ms.date: 01/15/2025
 ---
 
-## Agent directory structure
-
-
 When pipeline jobs are run on agents, a directory structure is created to store the source code, binaries, and artifacts. 
 
 The agent's home directory is the directory where the agent is installed. The directory is typically located:
@@ -41,3 +38,4 @@ The work directory structure is as follows:
 | `a` - Artifacts staging directory | Contains the build artifacts. Is cleaned between runs on self-hosted agents. | **Microsoft-hosted agent:** <br> &nbsp;&nbsp;&nbsp;`C:\a\1\a`<br> &nbsp;&nbsp;&nbsp;`/home/vsts/work/1/a`<br> **Self-hosted agent:**<br> &nbsp;&nbsp;&nbsp;`C:\agent\_work\1\a`<br> &nbsp;&nbsp;&nbsp;`/home/agent/_work/1/a` | `Build.StagingDirectory`<br>`Build.ArtifactStagingDirectory` <br>`System.ArtifactsDirectory`|
 | TestResults directory | Contains the test results. Is cleaned between runs on self-hosted agents.| **Microsoft-hosted agent:** <br> &nbsp;&nbsp;&nbsp;`C:\a\1\TestResults`<br> &nbsp;&nbsp;&nbsp;`/home/vsts/work/1/TestResults`<br> **Self-hosted agent:**<br> &nbsp;&nbsp;&nbsp;`C:\agent\_work\1\TestResults`<br> &nbsp;&nbsp;&nbsp;`/home/agent/_work/1/TestResults` | `Common.TestResultsDirectory`|
 
+On Microsoft-hosted agents, a different agent is used on each run, therefore the work directory is not retained between runs. On self-hosted agents, only the artifacts staging directory and test results directories are cleaned by default between runs. For more information about the workspace clean option, see [Workspace](../../process/phases.md#workspace).
