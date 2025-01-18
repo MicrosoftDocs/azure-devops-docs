@@ -668,7 +668,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
          <td>Boards</td>         
       </tr> 
-      <td rowspan="23"><strong>Future</strong></td>
+      <td rowspan="26"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
       </tr>
@@ -737,28 +737,40 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/test-plan-task-in-pipelines" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2022/test-plan-task-in-pipelines)">Test Plan task in Pipelines</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-junit" data-raw-source="[Support for JUnit/Java in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-junit)">Support for JUnit/Java in Azure Test Plans</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/junit-java-support" data-raw-source="[JUnit / Java support in Test Plans](/azure/devops/release-notes/roadmap/2022/junit-java-support)">JUnit / Java support in Test Plans</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines" data-raw-source="[Seamless build pipeline integration for Test Case Run](/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines)">Seamless build pipeline integration for Test Case Run</a></td>
+         <td>Test Plans</td>
+      </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access" data-raw-source="[Quick access to test results and Run ID in web runner](/azure/devops/release-notes/roadmap/2025/testplans/quick-access)">Quick access to test results and Run ID in web runner</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[Improved co-relation between test run and test case versions](/azure/devops/release-notes/roadmap/2022/improved-visibility)">Improved co-relation between test run and test case versions</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Recent test result in user story work item](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Recent test result in user story work item</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/direct-link-from-test-plan" data-raw-source="[Direct link from Test Plan work item to Test Plans page](/azure/devops/release-notes/roadmap/2025/testplans/direct-link-from-test-plan)">Direct link from Test Plan work item to Test Plans page</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test" data-raw-source="[Auto-pause manual test case run](/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test)">Auto-pause manual test case run</a></td>
+         <td>Test Plans</td>
+      </tr>
+            <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step" data-raw-source="[Undo test step in web and desktop runner](/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step)">Undo test step in web and desktop runner</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/alphabetical-sort" data-raw-source="[Sort test suites in alphabetical order](/azure/devops/release-notes/roadmap/2022/alphabetical-sort)">Sort test suites in alphabetical order</a></td>
-        <td>Test Plans</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/export-test-cases" data-raw-source="[Export test cases with custom columns in XLSX](/azure/devops/release-notes/roadmap/2025/testplans/export-test-cases)">Export test cases with custom columns in XLSX</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans)">Restore deleted test plans and test suites using REST API</a></td>
+         <td>Test Plans</td>
       </tr>
    </tbody>
 </table>
