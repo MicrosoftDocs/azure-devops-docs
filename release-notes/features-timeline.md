@@ -660,7 +660,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
          <td>Boards</td>         
       </tr> 
-      <td rowspan="26"><strong>Future</strong></td>
+      <td rowspan="27"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
       </tr>
@@ -762,6 +762,10 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans)">Restore deleted test plans and test suites using REST API</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience</a></td>
          <td>Test Plans</td>
       </tr>
    </tbody>
