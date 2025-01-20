@@ -65,6 +65,10 @@ The following functions are effective ways to enhance the security of your netwo
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
 
+### DevSecOps
+
+- **Embrace DevSecOps:** Implement [Zero Trust](https://learn.microsoft.com/security/zero-trust/develop/secure-devops-environments-zero-trust) principles to fortify your [DevOps platform](https://learn.microsoft.com/security/zero-trust/develop/secure-devops-platform-environment-zero-trust), safeguard your [development environment](https://learn.microsoft.com/security/zero-trust/develop/secure-dev-environment-zero-trust), and integrate Zero Trust seamlessly into your [developer workflows](https://learn.microsoft.com/security/zero-trust/develop/embed-zero-trust-dev-workflow).
+
 -----
 
 ## Scope permissions
