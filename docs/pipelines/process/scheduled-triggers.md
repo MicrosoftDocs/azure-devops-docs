@@ -52,7 +52,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code or pipeline settings changes since the last successful scheduled run. The default is false.
 ```
 
 ::: moniker-end
@@ -66,7 +66,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code or pipeline settings changes since the last successful scheduled run. The default is false.
   batch: boolean # Whether to run the pipeline if the previously scheduled run is in-progress; the default is false.
   # batch is available in Azure DevOps Server 2022.1 and higher
 ```
