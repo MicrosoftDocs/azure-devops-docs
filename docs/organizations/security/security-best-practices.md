@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted 
-ms.date: 01/13/2025
+ms.date: 01/20/2025
 ---
 
 # Security best practices
@@ -64,6 +64,10 @@ The following functions are effective ways to enhance the security of your netwo
 - **Implement web application firewalls (WAFs):** Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks.
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
+
+### DevSecOps
+
+**Embrace DevSecOps:** Implement [Zero Trust](/security/zero-trust/develop/secure-devops-environments-zero-trust) principles to fortify your [DevOps platform](/security/zero-trust/develop/secure-devops-platform-environment-zero-trust), safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust), and integrate Zero Trust seamlessly into your [developer workflows](/security/zero-trust/develop/embed-zero-trust-dev-workflow).
 
 -----
 
