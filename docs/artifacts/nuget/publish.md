@@ -107,11 +107,22 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Add your package source to your *nuget.config* file. This will add your PAT to your *nuget.config* file. Store this file in a safe location, and make sure that you don't check it into source control.
+1. Add your package source to your sources list
+  
+   If using a *nuget.config* file, this command will add your PAT to your *nuget.config* file. Store this file in a safe location, and make sure that you don't check it into source control.
 
     ```CLI
     nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
     ```
+
+   Without a *nuget.config* file, this command will add your source with the PAT.
+
+   ```CLI
+    nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN>
+    ```
+
+    > [!NOTE]
+    > The `UserName` parameter is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds.
 
 1. Publish your NuGet package to your feed:
 
@@ -123,6 +134,11 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject
 
 ```CLI
 nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
+nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
+```
+
+```CLI
+nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken
 nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
 ```
 
