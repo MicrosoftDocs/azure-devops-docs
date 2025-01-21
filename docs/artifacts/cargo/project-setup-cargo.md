@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2022'
 
 # Connect your Cargo project to an Azure Artifacts feed
 
-[!INCLUDE [version-gt-eq-2022](../includes/version-gt-eq-2022.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 This article guides you through setting up your Cargo project, configuring the credential provider, and connecting to an Azure Artifacts feed.
 
@@ -44,7 +44,7 @@ This article guides you through setting up your Cargo project, configuring the c
         FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/_packaging/FEED_NAME/Cargo/index/" }
         ```
 
-1. Add the following snippet to your *cargo/config.toml* to replace the *crates.io* source with with your feed. Replace the placeholder with your feed name:
+1. Add the following snippet to your *cargo/config.toml* to replace the *crates.io* source with your feed. Replace the placeholder with your feed name:
 
     ```
     [source.crates-io]
@@ -57,7 +57,7 @@ To use Cargo with Azure Artifacts, you must first set up a default credential he
 
 ### [Windows](#tab/windows)
 
-Add the following snippet to your *%USERPROFILE%\.cargo\config.toml*. This will set a default credential helper for the user:
+Add the following snippet to your *%USERPROFILE%\.cargo\config.toml*. This sets a default credential helper for the user:
 
 ```
 [registry]
@@ -66,7 +66,7 @@ global-credential-providers = ["cargo:token", "cargo:wincred"]
 
 ### [Linux](#tab/linux)
 
-Add the following snippet to your */.cargo/config.toml*. This will set a default credential helper for the user:
+Add the following snippet to your */.cargo/config.toml*. This sets a default credential helper for the user:
 
 ```
 [registry]
@@ -75,7 +75,7 @@ global-credential-providers = ["cargo:token", "cargo:libsecret"]
 
 ### [macOS](#tab/macOS)
 
-Add the following snippet to your */.cargo/config.toml*. This will set a default credential helper for the user:
+Add the following snippet to your */.cargo/config.toml*. This sets a default credential helper for the user:
 
 ```dotnetcli
 [registry]
@@ -118,4 +118,4 @@ az account get-access-token --query "join(' ', ['Bearer', accessToken])" --outpu
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Publish Cargo packages](../artifacts/get-started-cargo.md)
+> [Publish Cargo packages](../get-started-cargo.md)
