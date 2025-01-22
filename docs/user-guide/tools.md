@@ -57,10 +57,10 @@ Visual Studio 2019 and later versions provide a new Git experience through the *
 
 You can integrate the following Microsoft Office tools with Azure DevOps.
 
-- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
+- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items. Requires the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) add-in to be installed. 
 
 > [!IMPORTANT]
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
+> Starting with Visual Studio 2019, the Azure DevOps Office Integration 2019 add-in for Office deprecated support for Microsoft Project. Project integration and the TFSFieldMapping command aren't supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ For more information, see [Web portal navigation](../project/navigation/index.md
 
 ### Browser-based extensions
 
-Several extensions are built and maintained by the Azure DevOps Services product team:
+Extensions built and maintained by the Azure DevOps Services product team:
 
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): To quickly find relevant work items, search across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
