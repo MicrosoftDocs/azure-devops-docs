@@ -90,9 +90,9 @@ If for some reason you can't use the Data Migration Tool but still want a higher
 
 - Version control information and history (original dates and users added to comments)
 - Work items (standard and custom) and history (retains the original dates and users)
-- Test Plan, Test Suite, Test Cases and Test Results
-- Iteration, Area Path, Group, Team, User
-- Dashboard, Query, Widget, and Pipeline
+- Test plan, test suite, test cases and test results
+- Iteration, area path, group, team, user
+- Dashboard, query, widget, and pipeline
 - Azure DevOps Server versions 2010 and later
 - Azure DevOps Services 
 
@@ -101,8 +101,8 @@ If for some reason you can't use the Data Migration Tool but still want a higher
 [OpsHub Migration Manager (OMM)](https://www.opshub.com/migrations/migrate-to-azure-devops/) allows you to migrate from non-Microsoft tools to Azure DevOps (Server or Services) without downtime or disruption. This tool can migrate: 
 
 - Work items (standard and custom)
-- Test entities - Test Plan, Test Result, Test Run, Test Suite
-- Areas, Iterations, Dashboard, Query, Widget
+- Test entities - test plan, test result, test run, test suite
+- Areas, iterations, dashboard, query, widget
 - History, comments, attachments and links, mentions
 - All or selected projects to Azure DevOps
 - Reverse sync information from Azure DevOps to legacy tool
