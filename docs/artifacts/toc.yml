@@ -133,9 +133,12 @@
       href: python/use-packages-from-pypi.md
   - name: Universal Packages
     items:
+    - name: Project setup
+      href: universal-packages/project-setup-universal-packages.md
+      displayName: universal packages
     - name: Universal Packages quickstart
-      displayName: universal packages, publish, download
       href: quickstarts/universal-packages.md
+      displayName: universal packages, publish, download
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
       displayName: universal packages, yaml, classic
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
