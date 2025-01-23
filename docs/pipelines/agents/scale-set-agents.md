@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli, arm2024
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/30/2024
+ms.date: 01/23/2025
 monikerRange: azure-devops
 ---
 
@@ -17,7 +17,9 @@ monikerRange: azure-devops
 Azure Virtual Machine Scale Set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
 > [!TIP]
-> Managed DevOps Pools is a new service that is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, simplifying custom pool creation even further, by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools. For more information, see the [Managed DevOps Pools](../../managed-devops-pools/index.yml) documentation.
+> Managed DevOps Pools is a new service that is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, simplifying custom pool creation even further, by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools.
+>
+> If you're considering using auto-scaleable self-hosted agent pools, we recommend looking at Managed DevOps Pools. For more information, see [Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents](../../managed-devops-pools/migrate-from-scale-set-agents.md) and [Managed DevOps Pools overview](../../managed-devops-pools/overview.md).
 
 If you like Microsoft-hosted agents but are limited by what they offer, you should consider scale set agents. Here are some examples:
 
