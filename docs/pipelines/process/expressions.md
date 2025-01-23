@@ -329,6 +329,14 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Short-circuits after first match
 * Example: `in('B', 'A', 'B', 'C')` (returns True)
 
+::: moniker range=">= azure-devops"
+### iif
+* Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwize
+* Min parameters: 1. Max parameters: 3
+* The first parameter must be a condition
+* Example: `iff(eq(variables['Build.Reason'], 'PullRequest'), 'ManagedDevOpsPool', 'Azure Pipelines')` returns 'ManagedDevOpsPool' when the pipeline runs in response to a PR.
+::: moniker-end
+
 ::: moniker range="> azure-devops-2019"
 
 ### join
@@ -468,6 +476,13 @@ steps:
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
 * Example: `startsWith('ABCDE', 'AB')` (returns True)
+
+::: moniker range=">= azure-devops"
+### trim
+* Returns the parameter without leading and trailing white spaces
+* Min parameters: 1. Max parameters: 1
+* Example: `trim('  variable  ') ` returns 'variable'
+::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 ### upper
