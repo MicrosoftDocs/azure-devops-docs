@@ -8,8 +8,7 @@ ms.topic: overview
 
 # Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents
 
-> [!NOTE]
-> Azure DevOps recommends the use of Managed DevOps Pools vs Azure Virtual Machine Scale Set agents for your custom agent pools scenario if possible.
+[!INCLUDE [mdp-recommended](./includes/mdp-recommended.md)] 
 
 ## Feature comparison
 

@@ -12,8 +12,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. As your codebase and team grow, you'll need more agents.
 
 When your pipeline runs, the system begins one or more jobs.
@@ -112,6 +110,8 @@ Azure Virtual Machine Scale Set agents are a form of self-hosted agents that can
 You specify a Virtual Machine Scale Set, the number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
 
 For more information, see [Azure Virtual Machine Scale Set agents](scale-set-agents.md).
+
+[!INCLUDE [mdp-recommended](../../managed-devops-pools/includes/mdp-recommended.md)] 
 
 ## Managed DevOps Pools agents
 
