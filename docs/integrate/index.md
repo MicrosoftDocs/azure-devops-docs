@@ -22,7 +22,29 @@ To get started, see:
 
 - [Create a bug](./quickstarts/create-bug-quickstart.md)
 - [Get work items using queries](./quickstarts/work-item-quickstart.md)
- 
+
+# Integrating Applications with Azure DevOps
+
+Integrating Azure DevOps with other tools and services not only enhances team collaboration but also streamlines workflows across the software development lifecycle. Whether you're building custom integrations or using off-the-shelf services, understanding the prerequisites is essential.
+
+# Prerequisites for Integration
+
+Before starting the integration process, ensure the following: 
+
+- **Access:** Ensure proper permissions and use secure authentication (PATs or OAuth)
+- **API knowledge:** Understand Azure DevOps REST API and the target tool’s API 
+- **Data mapping:** Identify and align fields and data types between systems, ensuring compatibility in field names, formats, and value ranges 
+- **Network and Connectivity:** Ensure your network supports API calls, webhook notifications, and connectivity between Azure DevOps and self-hosted tools
+
+[OpsHub Integration Manager (OIM)](https://www.opshub.com/products/opshub-integration-manager/) allows you to integrate Azure DevOps (Server and Services) with other systems. The tool: 
+
+- Integrates work items (standard and custom), test entities, areas, iterations, pipelines 
+- Syncs comments, attachments, links, images, mentions, project movements, and entity deletions  
+- Scales across 1000+ projects 
+- Supports custom integrations  
+- Deploys on-premise or on-cloud 
+- Preserves history
+- Supports bidirectional integration
 
 ## Resources
 
