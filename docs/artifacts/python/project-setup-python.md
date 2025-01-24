@@ -43,12 +43,15 @@ Make sure you have the latest version of pip `python -m pip install --upgrade pi
 
 1. [Create a virtual environment](https://docs.python.org/3/library/venv.html) if you don't have one already.
  
-1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste the provided snippet from the **Project setup** section into the file. Your config file should look similar to the following: 
+1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste the provided snippet from the **Project setup** section into the file. Your config file should look similar to the following snippet: 
 
     ```
     [global]
     index-url=https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/simple/
     ```
+
+> [!NOTE]
+> You need pip version 19.2 or higher to use **artifacts-keyring**. For more information, see [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements).
 
 ### [twine](#tab/twine)
 
@@ -60,10 +63,10 @@ Make sure you've installed Twine `p install twine` and if you're using Linux, en
 
 1. Select **Connect to feed**, and then select **Twine** from the left.
 
-1. Add a *.pypirc* file to your home directory and paste the provided snippet from the **Project setup** section into the file. Your config file should look similar to the following:
+1. Add a *.pypirc* file to your home directory and paste the provided snippet from the **Project setup** section into the file. Your config file should look similar to the following snippet:
 
     > [!NOTE]
-    > If your *.pypirc* file contains credentials for the public PyPI index, we recommend removing the *[pypi]* section to prevent accidentally publishing private packages to the public registry.
+    > If your config file contains credentials for the public PyPI index, we recommend removing the *[pypi]* section to prevent accidentally publishing private packages to the public registry.
 
     ```
     [distutils]
@@ -73,6 +76,9 @@ Make sure you've installed Twine `p install twine` and if you're using Linux, en
     [FEED_NAME]
     Repository = https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/pypi/upload/
     ```
+
+> [!NOTE]
+> You need Twine 1.13.0 or higher to use **artifacts-keyring**. For more information, see [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements).
 
 - - -
 
