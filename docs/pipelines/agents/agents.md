@@ -24,9 +24,8 @@ Azure Pipelines provides several different types of agents.
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server |
 | [Managed DevOps Pools agents](#managed-devops-pools-agents) | Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription | Azure DevOps Services |
-| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands | Azure DevOps Services |
+| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands. <br>If you're considering using auto-scalable self-hosted agent pools, we recommend looking at Managed DevOps Pools. For more information, see [Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents](../../managed-devops-pools/migrate-from-scale-set-agents.md) and [Managed DevOps Pools overview](../../managed-devops-pools/overview.md). | Azure DevOps Services |
 
-[!INCLUDE [mdp-recommended](../../managed-devops-pools/includes/mdp-recommended.md)] 
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
