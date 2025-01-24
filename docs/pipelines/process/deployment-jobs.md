@@ -152,7 +152,7 @@ With `maxParallel: <# or % of VMs>`, you can control the number/percentage of vi
 
 ### Canary deployment strategy
 
-The [Canary deployment strategy](/devops/pipelines/yaml-schema/jobs-deployment-strategy-canary) is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
+The [Canary deployment strategy](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-canary) is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
 
 ```YAML
 strategy: 

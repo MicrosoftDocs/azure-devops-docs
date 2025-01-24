@@ -90,7 +90,7 @@ While this article focuses on Azure Pipelines, you could consider these alternat
 
 This article focuses on general CI/CD practices with Azure Pipelines. The following are some compute environments to which you could consider deploying:
 
-- [App Service](azure/app-service) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, and applications run and scale with ease on both Windows and Linux-based environments. Web Apps supports deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
+- [App Service](/azure/app-service) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, and applications run and scale with ease on both Windows and Linux-based environments. Web Apps supports deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
 
 - [Azure Virtual Machines](/azure/virtual-machines) handles workloads that require a high degree of control, or depend on OS components and services that aren't possible with Web Apps.
 
