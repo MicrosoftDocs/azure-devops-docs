@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 05/18/2023
+ms.date: 01/24/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 > [!IMPORTANT]
-> - Job and stage names cannot contain keywords (example: `deployment`).
+> - Job and stage names can't contain keywords (example: `deployment`).
 > - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. Azure DevOps supports the *runOnce*, *rolling*, and the *canary* strategies.  
@@ -22,51 +22,17 @@ Deployment jobs provide the following benefits:
  - **Deployment history**: You get the deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
  - **Apply deployment strategy**: You define how your application is rolled out.
 
-A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`.
+A deployment job doesn't automatically clone the source repo. You can check out the source repo within your job with `checkout: self`.
 
 > [!NOTE]
 > This article focuses on deployment with deployment jobs. To learn how to deploy to Azure with pipelines, see [Deploy to Azure overview](../overview-azure.md). 
 
 ## Schema
 
-Here's the full syntax to specify a deployment job: 
+Go to the YAML Schema to see the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) and [jobs.deployment.environment](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) definitions. 
 
-```YAML
-jobs:
-- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
-  displayName: string  # friendly name to display in the UI
-  pool:                # not required for virtual machine resources
-    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
-    demands: string | [ string ]
-  workspace:
-    clean: outputs | resources | all # what to clean up before the job runs
-  dependsOn: string
-  condition: string
-  continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  container: containerReference # container to run this job inside
-  services: { string: string | container } # container resources to run as a service container
-  timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
-  cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: # several syntaxes, see specific section
-  environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy:
-    runOnce:    #rolling, canary are the other strategies that are supported
-      deploy:
-        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
-```
+For virtual machines, you don't need to define a pool. Any steps that you define in a deployment job with a virtual machine resource runs against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 
-There is a more detailed, alternative syntax you can also use for the `environment` property.
-
-```yaml
-environment:
-    name: string # Name of environment.
-    resourceName: string # Name of resource.
-    resourceId: string # Id of resource.
-    resourceType: string # Type of environment resource.
-    tags: string # List of tag filters.
-```
-
-For virtual machines, you don't need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 ## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
@@ -77,7 +43,7 @@ When you're deploying application updates, it's important that the technique you
 * Test the updated version after routing traffic.
 * In case of failure, run steps to restore to the last known good version. 
 
-We achieve this by using lifecycle hooks that can run steps during deployment. Each of the lifecycle hooks resolves into an agent job or a [server job](phases.md#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
+We achieve this by using lifecycle hooks that can run steps during deployment. Each of the lifecycle hooks resolves into an agent job or a [server job](phases.md#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the lifecycle hooks inherit the `pool` specified by the `deployment` job. 
 
 Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
@@ -85,7 +51,7 @@ Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
+`deploy`: Used to run steps that deploy your application. Download artifact task is auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -95,7 +61,7 @@ Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 ### RunOnce deployment strategy
 
-`runOnce` is the simplest deployment strategy wherein all the lifecycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
+[runOnce](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-run-once) is the simplest deployment strategy wherein all the lifecycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
 
 ```YAML
 strategy: 
@@ -141,7 +107,7 @@ If you're using self-hosted agents, you can use the workspace clean options to c
 
 ### Rolling deployment strategy
 
-A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of virtual machines (rolling set) in each iteration. 
+A [rolling deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of virtual machines (rolling set) in each iteration. 
 
 We currently only support the rolling strategy to VM resources.
 
@@ -182,11 +148,11 @@ Then, either `on: success` or `on: failure` is executed.
 With `maxParallel: <# or % of VMs>`, you can control the number/percentage of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place on the rest of the machines, which reduces overall downtime.
 
  > [!NOTE]
- > There are a few known gaps in this feature. For example, when you retry a stage, it will re-run the deployment on all VMs not just failed targets. 
+ > There are a few known gaps in this feature. For example, when you retry a stage, it re-runs the deployment on all VMs not just failed targets. 
 
 ### Canary deployment strategy
 
-Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
+The [Canary deployment strategy](/devops/pipelines/yaml-schema/jobs-deployment-strategy-canary) is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
 
 ```YAML
 strategy: 
@@ -293,13 +259,13 @@ This approach has the following benefits:
 This is useful in the cases where the same connection detail is set for multiple steps of the job.
 
 > [!NOTE]
-> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the the API server endpoint is not exposed through a public IP address.
+> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the API server endpoint isn't exposed through a public IP address.
 > 
 > Azure Pipelines recommends setting up a self-hosted agent within a VNET that has access to the cluster's virtual network. See [Options for connecting to the private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster) for details.
 
 ### Rolling deployment strategy
 
-The rolling strategy for VMs updates up to five targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+The rolling strategy for VMs updates up to five targets in each iteration. `maxParallel` determines the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It's also used to determine the success and failure conditions during deployment.
 
 ```YAML
 jobs: 
@@ -378,7 +344,7 @@ jobs:
 ```
 ## Use pipeline decorators to inject steps automatically
 
-[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be applied as part of enforcing safe deployment practices.
+[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to autoinject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be applied as part of enforcing safe deployment practices.
 
 In addition, deployment jobs can be run as a [container job](container-phases.md) along with [services side-car](service-containers.md) if defined.
 
