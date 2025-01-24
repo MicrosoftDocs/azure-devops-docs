@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 08/30/2024
+ms.date: 01/24/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,8 +23,10 @@ Azure Pipelines provides several different types of agents.
 |------------|-------------|--------------|
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server |
-| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands | Azure DevOps Services |
 | [Managed DevOps Pools agents](#managed-devops-pools-agents) | Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription | Azure DevOps Services |
+| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands | Azure DevOps Services |
+
+[!INCLUDE [mdp-recommended](../../managed-devops-pools/includes/mdp-recommended.md)] 
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
