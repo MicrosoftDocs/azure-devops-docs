@@ -198,6 +198,8 @@ You can delete runs using the [More actions menu](../create-first-pipeline.md#pi
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../create-first-pipeline.md#pipeline-run-more-actions-menu).
 
+> The data deletion rate has delays roughly from 1 to 500 days depending on the number of test points that the host has. This delay processing needs to be improved and the Product team is planning to improve this design. 
+
   > [!div class="mx-imgBorder"]
   > ![delete a run](media/delete-a-run.png)
 
