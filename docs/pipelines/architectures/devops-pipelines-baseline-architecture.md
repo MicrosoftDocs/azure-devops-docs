@@ -1,7 +1,7 @@
 ---
 title: Azure Pipelines baseline architecture 
 description: This architecture illustrates building a continuous integration and deployment pipeline using Azure Pipelines.
-ms.date: 05/08/2023
+ms.date: 01/24/2025
 ms.topic: example-scenario
 ms.custom:
     - devops
@@ -22,12 +22,12 @@ monikerRange: '<= azure-devops'
 This article describes a high-level DevOps workflow for deploying application changes to staging and production environments in Azure. The solution uses continuous integration/continuous deployment (CI/CD) practices with Azure Pipelines.
 
 > [!IMPORTANT]
-> This article covers a general CI/CD architecture using Azure Pipelines. It is not intended to cover the specifics of deploying to different environments, such as Azure App Services, Virtual Machines, and Azure Power Platform. Deployment platform specifics are covered in separate articles.
+> This article covers a general CI/CD architecture using Azure Pipelines. It isn't intended to cover the specifics of deploying to different environments, such as Azure App Services, Virtual Machines, and Azure Power Platform. Deployment platform specifics are covered in separate articles.
 
 ## Architecture
 
 :::image type="complex" source="media/azure-devops-ci-cd-architecture.svg" lightbox="media/azure-devops-ci-cd-architecture.svg" alt-text="Architecture diagram of a CI/CD pipeline using Azure Pipelines." border="false"::: 
-Architecture diagram of an Azure pipeline. The diagram shows the following steps: 1. An engineer pushing code changes to an Azure DevOps Git repository. 2. An Azure Pipelines PR pipeline getting triggered. This pipeline shows the following tasks: linting, restore, build, and unit tests. 3. An Azure Pipelines CI pipeline getting triggered. This pipeline shows the following tasks: get secrets, linting, restore, build, unit tests, integration tests and publishing build artifacts. 3. An Azure Pipelines CD pipeline getting triggered. This pipeline shows the following tasks: download artifacts, deploy to staging, tests, manual intervention, and release. 4. Shows the CD pipeline deploying to a staging environment. 5. Shows the CD pipeline releasing to a production environment. 6. Shows an operator monitoring the pipeline, taking advantage of Azure Monitor, Azure Application Insights and Azure Analytics Workspace.
+Architecture diagram of an Azure pipeline. The diagram shows the following steps: 1. An engineer pushing code changes to an Azure DevOps Git repository. 2. An Azure Pipelines PR pipeline getting triggered. This pipeline shows the following tasks: linting, restore, build, and unit tests. 3. An Azure Pipelines CI pipeline getting triggered. This pipeline shows the following tasks: get secrets, linting, restore, build, unit tests, integration tests, and publishing build artifacts. 3. An Azure Pipelines CD pipeline getting triggered. This pipeline shows the following tasks: download artifacts, deploy to staging, tests, manual intervention, and release. 4. Shows the CD pipeline deploying to a staging environment. 5. Shows the CD pipeline releasing to a production environment. 6. Shows an operator monitoring the pipeline, taking advantage of Azure Monitor, Azure Application Insights, and Azure Analytics Workspace.
 :::image-end:::
 
 *Download a [Visio file](https://arch-center.azureedge.net/azure-devops-ci-cd-architecture.vsdx) of this architecture.*
@@ -53,22 +53,22 @@ The data flows through the scenario as follows:
 
 1. **CD release to staging** - The CD pipeline downloads the build artifacts that are created in the CI pipeline and deploys the solution to a staging environment. The pipeline then runs acceptance tests against the staging environment to validate the deployment. If any acceptance test fails, the pipeline ends and the developer will have to make the required changes. If the tests succeed, a [manual validation task](/azure/devops/pipelines/tasks/utility/manual-validation?tabs=yaml) can be implemented to require a person or group to validate the deployment and resume the pipeline.
 
-1. **CD release to production** - If the manual intervention is resumed, or there's no manual intervention implemented, the pipeline releases the solution to production. The pipeline should run smoke tests in production to ensure the release is working as expected. If a manual intervention step results in a cancel, the release fails, or the smoke tests fail, the release is rolled back, the pipeline ends and the developer will have to make the required changes.
+1. **CD release to production** - If the manual intervention is resumed, or there's no manual intervention implemented, the pipeline releases the solution to production. The pipeline should run smoke tests in production to ensure the release is working as expected. If a manual intervention step results in a cancel, the release fails, or the smoke tests fail, the release is rolled back, the pipeline ends, and the developer will have to make the required changes.
 
 1. **Monitoring** - Azure Monitor collects observability data such as logs and metrics so that an operator can analyze health, performance, and usage data. Application Insights collects all application-specific monitoring data, such as traces. Azure Log Analytics is used to store all that data.
 
 ### Components
 
-- An [Azure Repos](https://azure.microsoft.com/products/devops/repos) Git repository serves as a code repository that provides version control and a platform for collaborative projects.
+- An [Azure Repos](/azure/devops/repos) Git repository serves as a code repository that provides version control and a platform for collaborative projects.
 
-- [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines) provides a way to build, test, package and release application and infrastructure code. This example has three distinct pipelines with the following responsibilities:
-  - PR pipelines validate code before allowing a PR to merge through linting, building and unit testing.
+- [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines) provides a way to build, test, package, and release application and infrastructure code. This example has three distinct pipelines with the following responsibilities:
+  - PR pipelines validate code before allowing a PR to merge through linting, building, and unit testing.
   - CI pipelines run after code is merged. They perform the same validation as PR pipelines, but add integration testing and publish build artifacts if everything succeeds.
   - CD pipelines deploy build artifacts, run acceptance tests, and release to production.
 
 - [Azure Artifact Feeds](/azure/devops/artifacts/concepts/feeds) allow you to manage and share software packages, such as Maven, npm, and NuGet. Artifact feeds allow you to manage the lifecycle of your packages, including versioning, promoting, and retiring packages. This helps you to ensure that your team is using the latest and most secure versions of your packages.
 
-- [Key Vault](https://azure.microsoft.com/services/key-vault) provides a way to manage secure data for your solution, including secrets, encryption keys, and certificates. In this architecture, it's used to store application secrets. These secrets are accessed through the pipeline. Secrets can be accessed by Azure Pipelines with a [Key Vault task](/azure/devops/pipelines/tasks/deploy/azure-key-vault) or by [linking secrets from Key Vault](/azure/devops/pipelines/library/variable-groups?tabs=yaml#link-secrets-from-an-azure-key-vault).
+- [Key Vault](/azure/key-vault) provides a way to manage secure data for your solution, including secrets, encryption keys, and certificates. In this architecture, it's used to store application secrets. These secrets are accessed through the pipeline. Secrets can be accessed by Azure Pipelines with a [Key Vault task](/azure/devops/pipelines/tasks/deploy/azure-key-vault) or by [linking secrets from Key Vault](/azure/devops/pipelines/library/variable-groups?tabs=yaml#link-secrets-from-an-azure-key-vault).
 
 - [Monitor](https://azure.microsoft.com/services/monitor) is an observability resource that collects and stores metrics and logs, application telemetry, and platform metrics for the Azure services. Use this data to monitor the application, set up alerts, dashboards, and perform root cause analysis of failures.
 
@@ -80,7 +80,7 @@ The data flows through the scenario as follows:
 
 While this article focuses on Azure Pipelines, you could consider these alternatives:
 
-- [Azure DevOps Server](https://azure.microsoft.com/services/devops/server) (previously known as Team Foundation Server) could be used as an on-premises substitute.
+- [Azure DevOps Server](https://azure.microsoft.com/services/devops/server) could be used as an on-premises substitute.
 
 - [Jenkins](/azure/jenkins) is an open source tool used to automate builds and deployments.
 
@@ -90,13 +90,13 @@ While this article focuses on Azure Pipelines, you could consider these alternat
 
 This article focuses on general CI/CD practices with Azure Pipelines. The following are some compute environments to which you could consider deploying:
 
-- [App Services](https://azure.microsoft.com/services/app-service/web) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, and applications run and scale with ease on both Windows and Linux-based environments. Web Apps supports deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
+- [App Service](/azure/app-service) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, and applications run and scale with ease on both Windows and Linux-based environments. Web Apps supports deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
 
-- [Azure Virtual Machines](/azure/app-service/choose-web-site-cloud-service-vm) handles workloads that require a high degree of control, or depend on OS components and services that aren't possible with Web Apps (for example, the Windows GAC, or COM).
+- [Azure Virtual Machines](/azure/virtual-machines) handles workloads that require a high degree of control, or depend on OS components and services that aren't possible with Web Apps.
 
-- [Azure Power Platform](https://powerplatform.microsoft.com/) is a collection of cloud services that enable users to build, deploy, and manage applications without the need for infrastructure or technical expertise.
+- [Azure Power Platform](/power-platform) is a collection of cloud services that enable users to build, deploy, and manage applications without the need for infrastructure or technical expertise.
 
-- [Azure Functions](https://azure.microsoft.com/services/functions) is a serverless compute platform that you can use to build applications. With Functions, you can use triggers and bindings to integrate services. Functions also support deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
+- [Azure Functions](/azure/azure-functions/) is a serverless compute platform that you can use to build applications. With Functions, you can use triggers and bindings to integrate services. Functions also support deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
 
 - [Azure Kubernetes Service (AKS)](/azure/aks) is a managed Kubernetes cluster in Azure. Kubernetes is an open source container orchestration platform.
 
@@ -152,7 +152,7 @@ Azure DevOps costs depend on the number of users in your organization that requi
 
 This [pricing calculator](https://azure.com/e/498aa024454445a8a352e75724f900b1) provides an estimate for running Azure DevOps with 20 users.
 
-Azure DevOps is billed on a per-user per-month basis. There might be more charges depending on concurrent pipelines needed, in addition to any additional test users or user basic licenses.
+Azure DevOps is billed on a per-user per-month basis. There might be more charges depending on concurrent pipelines needed, in addition to any more test users or user basic licenses.
 
 ## Security
 

@@ -38,6 +38,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="7"><a href="2025/sprint-248-update.md" data-raw-source="[17 January 2025](2025/sprint-248-update.md)"> 17 January 2025</a></td>
+    <td>Tool specific security overview coverage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure Boards Integration with GitHub Enterprise Cloud with Data Residency </td><td>Boards</td><td>Future</td></tr>
+    <td>Sparse checkout for Azure Repos</td><td>Repos</td><td>Future</td></tr>
+    <td>Make cross-repo policies case-sensitive</td><td>Repos</td><td>Future</td></tr>
+    <td>New pipeline expression function</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Enhancements to ManualValidation task</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Azure Test Plans bug fixes</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
     <td rowspan="10"><a href="2024/sprint-247-update.md" data-raw-source="[13 November 2024](2024/sprint-247-update.md)"> 13 November 2024</a></td>
     <td>Commit-less builds supported for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>File previews and annotations for CodeQL scans using sourcesFolder</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
