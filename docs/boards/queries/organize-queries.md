@@ -42,11 +42,11 @@ Organize your personal or shared queries by adding a query folder. You can then 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
 
-## Run, edit, and save a query  
+## Copy, edit, and save a query  
 
-The easiest way to define a query is to start with an existing shared query. 
-The following example shows how to find all closed bugs by modifying the 
-*Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
+You can copy a query within the same project by selecting a query and saving it with a new name with the **Save as** option.  
+
+The easiest way to define a query is to start with an existing shared query. The following example shows how to find all closed bugs by modifying the *Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
 #### [Browser](#tab/browser/)
 

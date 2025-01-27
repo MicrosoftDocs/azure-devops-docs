@@ -70,7 +70,14 @@ The template defines several resources:
 
 6. Replace the content of your pipeline with this code:
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="4-8":::
+   ```yaml
+   trigger:
+    - none
+
+   pool:
+     vmImage: 'ubuntu-latest'
+   ```
+   
 
 7. Create three variables:  `siteName`, `administratorLogin`, and `adminPass`. `adminPass` needs to be a secret variable.
     * Select **Variables**. 
@@ -86,12 +93,36 @@ The template defines several resources:
 
 8. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-8" highlight="1-2":::
-
+    ```yaml
+    variables:
+      ARM_PASS: $(adminPass)
+    
+    trigger:
+    - none
+    
+    pool:
+      vmImage: 'ubuntu-latest'
+    ```
 
 9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. For more information, see [Build a Web app on Linux with Azure database for MySQL](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/webapp-linux-managed-mysql) repo for more details. 
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-15" highlight="10-15":::
+    ```yaml
+    variables:
+      ARM_PASS: $(adminPass)
+    
+    trigger:
+    - none
+    
+    pool:
+      vmImage: 'ubuntu-latest'
+    
+    steps:
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    ```
 
 10. Add and configure the **Azure Resource Group Deployment** task. 
     
@@ -109,7 +140,39 @@ The template defines several resources:
     - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
     - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you find problems with the template before deploying. 
    
-    :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-29" highlight="17-29":::
+
+    ```yaml
+    variables:
+      ARM_PASS: $(adminPass)
+    
+    trigger:
+    - none
+    
+    pool:
+      vmImage: 'ubuntu-latest'
+    
+    steps:
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    
+    - task: AzureResourceManagerTemplateDeployment@3
+      inputs:
+        deploymentScope: 'Resource Group'
+        azureResourceManagerConnection: '<your-resource-manager-connection>'
+        subscriptionId: '<your-subscription-id>'
+        action: 'Create Or Update Resource Group'
+        resourceGroupName: 'ARMPipelinesLAMP-rg'
+        location: '<your-closest-location>'
+        templateLocation: 'Linked artifact'
+        csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
+        csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
+        overrideParameters: '-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
+        deploymentMode: 'Incremental'
+    ```
+
 
 11. Click **Save and run** to deploy your template. The pipeline job will be launched and after few minutes, depending on your agent, the job status should indicate `Success`.
 
@@ -133,7 +196,14 @@ The template defines several resources:
 
 1. Replace the content of your pipeline with this code:
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-bicep.yml" range="8-12":::
+    ```yaml
+    trigger:
+    - none
+    
+    pool:
+      vmImage: $(vmImageName)
+    ```
+
 
 1. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
     * Select **Variables**. 
@@ -149,7 +219,15 @@ The template defines several resources:
 
 1. At the top of your YAML file, map values for `location` and `resourceGroupName`. Your location should be the location of the resource group. Your resource group needs to already exist. 
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-bicep.yml" range="1-6" highlight="3-4":::
+    ```yaml
+    variables:
+      vmImageName: 'ubuntu-latest'
+      resourceGroupName: '<resource-group-name>' # Needs to already exist
+      location: '<your-closest-location>'
+      templateFile: './main.bicep'
+      sourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
+    ```
+
 
 1. If you do not already have an Azure Resource Manager service connection, [create a service connection](../../../library/service-endpoints.md#create-a-service-connection). Learn more about [connecting to Azure](../../../library/connect-to-azure.md). 
     *  The service connection be in the same resource group as your `resourceGroupName`.  
@@ -161,7 +239,33 @@ The template defines several resources:
     * The **Script Type** is *Shell*. 
     * The Script Location is *Inline script*. 
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-bicep.yml" range="1-24" highlight="17-24":::
+    ```yaml
+    variables:
+      vmImageName: 'ubuntu-latest'
+      resourceGroupName: '<resource-group-name>' # Needs to already exist
+      location: '<your-closest-location>'
+      templateFile: './main.bicep'
+      sourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
+    
+    trigger:
+    - none
+    
+    pool:
+      vmImage: $(vmImageName)
+    
+    name: Bicep deploy template
+    
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: '<service-connection-name>'
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |
+          az deployment group create --resource-group $(resourceGroupName) --template-file $(sourceFolder)$(templateFile) \
+          --parameters administratorLogin=$(administratorLogin) administratorLoginPassword=$(administratorLoginPassword)
+    ```
+
 
     
 ---
@@ -202,7 +306,33 @@ ___
 
 You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
 
-  :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-cleanup.yml" range="1-24" highlight="17-24":::
+```yaml
+variables:
+  ARM_PASS: $(adminPass)
+
+trigger:
+- none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: '<your-resource-manager-connection>'
+    subscriptionId: '<your-subscription-id>'
+    action: 'DeleteRG'
+    resourceGroupName: 'ARMPipelinesLAMP-rg'
+    location: ''<your-closest-location>'
+```
+
 
 # [Bicep](#tab/bicep)
 

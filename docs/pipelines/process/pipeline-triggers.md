@@ -23,6 +23,10 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
+>
+> Triggers defined using the pipeline settings UI take precedence over YAML triggers. To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
+
+
 
 ## Configure pipeline resource triggers
 

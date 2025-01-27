@@ -3243,3 +3243,9 @@ Event: A work item is commented on.
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. 
 
 Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. You can use this URL to create a connection to the container to make REST API calls.
+
+## Related articles
+
+- [Integrate with service hooks](overview.md)
+- [Create a service hook subscription programmatically](create-subscription.md)
+- [Service hook consumers](consumers.md)

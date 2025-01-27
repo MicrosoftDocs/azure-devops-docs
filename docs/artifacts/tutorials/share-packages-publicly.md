@@ -40,7 +40,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 #### [NuGet](#tab/nuget)
 
 - [Publish NuGet packages - (NuGet.exe)](../nuget/publish.md#publish-packages-to-a-feed-in-the-same-organization)
-- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages)
+- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages-to-a-feed-in-the-same-organization)
 
 #### [Npm](#tab/npm)
 
