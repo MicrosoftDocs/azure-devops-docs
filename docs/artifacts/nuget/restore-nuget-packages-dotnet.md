@@ -1,19 +1,17 @@
 ---
-title: Publish NuGet packages with dotnet CLI
-description: Learn how to connect to a feed and use the dotnet CLI to publish NuGet packages.
-ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
+title: Restore NuGet packages with dotnet CLI
+description: Learn how to connect to a feed and use the dotnet CLI to restore NuGet packages.
 ms.service: azure-devops-artifacts
-ms.custom: devx-track-dotnet
 ms.topic: tutorial
 ms.date: 01/13/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Publish NuGet packages from the command line (dotnet)
+# Restore NuGet packages from the command line (dotnet)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This guide walks you through configuring your project to publish NuGet packages using the dotnet command-line interface.
+This guide walks you through configuring your project and restoring your NuGet packages using the dotnet command-line interface.
 
 ## Prerequisites
 
@@ -60,6 +58,9 @@ This guide walks you through configuring your project to publish NuGet packages 
 
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
 
+> [!NOTE]
+> dotnet isn't supported in Azure DevOps Server 2019.
+
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
@@ -70,61 +71,18 @@ This guide walks you through configuring your project to publish NuGet packages 
 
     :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
 
-> [!NOTE]
-> dotnet is not supported in Azure DevOps Server 2019.
-
 ::: moniker-end
 
-## Publish packages to a feed in the same organization
+## Restore packages
 
-Run the following command to publish a package to your feed. Replace the placeholders with the appropriate values:
-
-```CLI
-dotnet nuget push --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING> <PACKAGE_PATH> 
-```
-
-**Example**: 
+Run the following command to restore your packages. The `--interactive` flag is used to prompt the user for credentials:
 
 ```CLI
-dotnet nuget push --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ bin/MyPackage.5.0.2.nupkg
+dotnet restore --interactive
 ```
-
-
-> [!NOTE]
-> The `api-key` is required, but you can provide any string as its value when publishing to an Azure Artifacts feed.
-
-## Publish packages to a feed in another organization
-
-To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization.
-
-1. Navigate to the organization hosting the target feed and create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **Packaging** >  **Read & write** scope.
-
-1. Replace the *<PERSONAL_ACCESS_TOKEN>* placeholder with your personal access token, and then run the following command to add your package source to your *nuget.config* file. Ensure that this file is stored securely and is not checked into source control.
-
-    ```CLI
-    dotnet nuget add source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --name <SOURCE_NAME> --username <USER_NAME> --password <PERSONAL_ACCESS_TOKEN> --configfile <PATH_TO_NUGET_CONFIG_FILE>
-    ```
-
-1. Run the following command to publish your package:
-
-    ```CLI
-    dotnet nuget push --source <SOURCE_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
-    ```
-
-**Example**: 
-
-```CLI
-dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config
-
-dotnet nuget push --source MySource --api-key AZ nupkgs/mypackage.1.1.0.nupkg
-```
-
-> [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow the [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
-
 
 ## Related content
 
-- [Restore NuGet packages (dotnet)](restore-nuget-packages-dotnet.md)
+- [Publish NuGet packages (dotnet)](dotnet-exe.md)
 - [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 - [Use packages from NuGet.org](./upstream-sources.md)
