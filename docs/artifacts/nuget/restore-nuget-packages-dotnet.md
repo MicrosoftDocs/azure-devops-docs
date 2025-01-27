@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This guide walks you through configuring your project and restore your NuGet packages using the dotnet command-line interface.
+This guide walks you through configuring your project and restoring your NuGet packages using the dotnet command-line interface.
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ This guide walks you through configuring your project and restore your NuGet pac
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
 
 > [!NOTE]
-> dotnet is not supported in Azure DevOps Server 2019.
+> dotnet isn't supported in Azure DevOps Server 2019.
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
