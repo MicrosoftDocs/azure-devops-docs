@@ -1,6 +1,6 @@
 ---
 title: Connect your Cargo project to an Azure Artifacts feed
-description: Lean how to set up your Cargo project and connect to an Azure Artifacts feed.
+description: Learn how to set up your Cargo project and connect to an Azure Artifacts feed.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 01/21/2025
