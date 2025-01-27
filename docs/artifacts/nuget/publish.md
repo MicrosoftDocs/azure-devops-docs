@@ -103,7 +103,7 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject
 
 To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization.
 
-1. Navigate to the organization hosting the target feed and create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) **Packaging** > **Read & write** scope.
+1. Navigate to the organization hosting the target feed and create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **Packaging** > **Read & write** scope.
 
 1. Run the following command to add your package source to your *nuget.config* file. This will add your PAT to your *nuget.config* file. Store this file in a safe location, and make sure that you don't check it into source control.
 
