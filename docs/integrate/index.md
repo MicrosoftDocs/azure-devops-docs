@@ -23,11 +23,11 @@ To get started, see the following articles:
 - [Create a bug](./quickstarts/create-bug-quickstart.md)
 - [Get work items using queries](./quickstarts/work-item-quickstart.md)
 
-# Integrate applications with Azure DevOps
+## Integrate applications with Azure DevOps
 
 Integrate Azure DevOps with other tools and services to not only enhance team collaboration but also streamline workflows across the software development lifecycle. Whether you're building custom integrations or using off-the-shelf services, it's essential that you understand the prerequisites.
 
-# Prerequisites for integration
+## Prerequisites for integration
 
 Before you start the integration process, ensure you have the following items: 
 
