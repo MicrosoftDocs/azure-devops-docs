@@ -142,6 +142,9 @@
     - name: Universal Packages quickstart
       displayName: universal packages, publish, download
       href: quickstarts/universal-packages.md
+    - name: Download Universal Packages
+      href: quickstarts/download-universal-packages.md
+      displayName: universal packages, download
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
       displayName: universal packages, yaml, classic
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
