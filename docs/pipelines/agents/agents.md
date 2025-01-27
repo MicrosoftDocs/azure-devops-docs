@@ -1,8 +1,8 @@
 ---
 title: Azure Pipelines Agents
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: devx-track-azurecli
-description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
+description: Learn about building your code or deploying your software using agents in Azure Pipelines.
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.date: 08/30/2024
 monikerRange: '<= azure-devops'
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 
 
-To build your code or deploy your software using Azure Pipelines, you need at least one agent. As your codebase and team grow, you'll need more agents.
+To build your code or deploy your software using Azure Pipelines, you need at least one agent. As your codebase and team grow, you need more agents.
 
 When your pipeline runs, the system begins one or more jobs.
 An agent is computing infrastructure with installed agent software that runs one job at a time.
@@ -47,7 +47,7 @@ Jobs can be run [directly on the host machine of the agent](../process/phases.md
 ## Self-hosted agents
 
 An agent that you set up and manage on your own to run jobs is a **self-hosted agent**.
-You can use self-hosted agents in Azure Pipelines or Azure DevOps Server, formerly named Team Foundation Server (TFS).
+You can use self-hosted agents in Azure Pipelines or Azure DevOps Server.
 Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
@@ -57,7 +57,7 @@ Also, machine-level caches and configuration persist from run to run, which can 
 ::: moniker range="azure-devops"
 
 > [!TIP]
-> Before you install a self-hosted agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
+> Before you install a self-hosted agent, you might want to see if a Microsoft-hosted agent pool works for you. In many cases, a Microsoft-hosted agent pool is the simplest way to get going. [Give it a try](hosted.md).
 
 :::moniker-end
 
@@ -92,9 +92,9 @@ After you install the agent on a machine, you can install any other software on 
 
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
-All official Azure DevOps tasks use Node 20 as a universal handler, however, customers might still use custom tasks that use the end-of-life Node 6, Node 10, or Node 16 libraries. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
+All official Azure DevOps tasks use Node 20 as a universal handler, however, customers might still use custom tasks that use the end-of-life Node 6, Node 10, or Node 16 libraries. To support backward compatibility with Node that reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
 
-* Manually install the Node 6 runner. For more information about manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
+* Manually install the Node 6 runner. For more information, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md).
 * Use the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node 6 library.
 * Install an agent package that includes Node 6.
   
@@ -115,9 +115,16 @@ For more information, see [Azure Virtual Machine Scale Set agents](scale-set-age
 
 ## Managed DevOps Pools agents
 
-Managed DevOps Pools empowers development teams to quickly and easily spin up Azure DevOps agent pools that are tailored to a team's specific needs. Managed DevOps Pools implements security best practices, provides knobs to balance cost and performance, provides paths for the most common scenarios, and significantly reduces time spent in creating and maintaining custom pools.
+Managed DevOps Pools empowers development teams to quickly and easily spin up Azure DevOps agent pools that are tailored to a team's specific needs. 
 
-Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, simplifying custom pool creation even further, by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools. For more information, see the [Managed DevOps Pools](../../managed-devops-pools/index.yml) documentation.
+Managed DevOps Pools:
+
+- implements security best practices
+- provides knobs to balance cost and performance
+- provides paths for the most common scenarios
+- significantly reduces time spent in creating and maintaining custom pools
+
+Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, They simplify custom pool creation even further by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools. For more information, see the [Managed DevOps Pools](../../managed-devops-pools/index.yml) documentation.
 
 ::: moniker-end
 
@@ -142,7 +149,7 @@ You might need more parallel jobs to use multiple agents at the same time:
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!IMPORTANT]
-> Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
+> Starting with Azure DevOps Server 2019, you don't have to pay for self-hosted concurrent jobs in releases. You're only limited by the number of agents that you have.
 
 ::: moniker-end
 
@@ -153,7 +160,7 @@ Every self-hosted agent has a set of capabilities that indicate what it can do. 
 The agent software automatically determines various system capabilities such as the name of the machine, type of operating system, and versions of certain software installed on the machine. Also, environment variables defined in the machine automatically appear in the list of system capabilities.
 
 > [!NOTE]
-> Storing environment variables as capabilities means that when an agent runs, the stored capability values are used to set the environment variables. Also, any changes to environment variables that are made while the agent is running won't be picked up and used by any task. If you have sensitive environment variables that change and you don't want them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.   
+> Storing environment variables as capabilities means that when an agent runs, the stored capability values are used to set the environment variables. Also, any changes to environment variables that are made while the agent is running aren't picked up and used by any task. If you have sensitive environment variables that change and you don't want them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.   
 
 When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
@@ -161,7 +168,7 @@ When you author a pipeline, you specify certain **demands** of the agent. The sy
 >
 > Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
 > meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
-> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> matches the requirements of the job. Although it's possible to add capabilities to a Microsoft-hosted agent, you don't need 
 > to use capabilities with Microsoft-hosted agents.
 
 ### Configure demands
@@ -248,7 +255,7 @@ az pipelines agent list --pool-id
 - **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
 - **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set `-s NAME_OR_ID`.
 
 #### Example
 
@@ -366,7 +373,7 @@ The payload of the messages exchanged between the agent and Azure Pipelines/Azur
 
 > [!NOTE]
 > The agent provides support for UTF-8 client encoding output. 
-> However, if your system has a different encoding from UTF-8, you might encounter some problems with the output of logs. For example, the logs might contain characters that aren't recognized by your system’s encoding so they might appear as garbled or missing symbols.
+> However, if your system has a different encoding from UTF-8, you might encounter some problems with the output of logs. For example, the logs might contain characters that your system’s encoding doesn't recognize, so they might appear as garbled or missing symbols.
 
 ::: moniker range="azure-devops"
 
@@ -428,7 +435,7 @@ ensure that the agent starts automatically if the machine is restarted.
    you might need to run the agent interactively for production use -
    such as to run UI tests. When the agent is configured to run in this
    mode, the screen saver is also disabled. Some domain policies might
-   prevent you from enabling auto-logon or disabling the screen saver. In such cases, you might need to seek an exemption from the domain policy, or run the agent on a workgroup computer where the domain policies don't apply.
+   prevent you from enabling autologon or disabling the screen saver. In such cases, you might need to seek an exemption from the domain policy, or run the agent on a workgroup computer where the domain policies don't apply.
 
    > [!NOTE]
    > There are security risks when you enable automatic logon
@@ -437,9 +444,9 @@ ensure that the agent starts automatically if the machine is restarted.
    > in this way, you must ensure the computer is physically protected;
    > for example, located in a secure facility. If you use
    > Remote Desktop to access the computer on which an agent is running
-   > with auto-logon, simply closing the Remote Desktop causes the
+   > with autologon, simply closing the Remote Desktop causes the
    > computer to be locked and any UI tests that run on this agent might
-   > fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
+   > fail. To avoid this issue, use the [tscon](/windows-server/administration/windows-commands/tscon)
    > command to disconnect from Remote Desktop. For example:
    >
    > `%windir%\System32\tscon.exe 1 /dest:console`
@@ -510,7 +517,7 @@ You can view the version of an agent by navigating to **Agent pools** and select
 To trigger agent update programmatically, you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
 
 > [!NOTE]
-> For servers with no internet access, manually copy the agent zip file to the following folder to use as a local file. Create the **Agents** folder if it is not present.
+> For servers with no internet access, manually copy the agent zip file to the following folder to use as a local file. Create the **Agents** folder if it isn't present.
 > * Windows: `%ProgramData%\Microsoft\Azure DevOps\Agents` 
 > * Linux: `usr/share/Microsoft/Azure DevOps/Agents`
 > * macOS: `usr/share/Microsoft/Azure DevOps/Agents`
@@ -551,8 +558,8 @@ For self-hosted agents:
 
 When a pipeline is canceled, the agent sends a sequence of commands to the process executing the current step. 
 
-* The first command is sent with a timeout of 7.5 seconds. 
-* If the process doesn't terminate, a second command is sent with a 2.5-second timeout.
+* The first command is sent with a time out of 7.5 seconds. 
+* If the process doesn't terminate, a second command is sent with a 2.5-second time out.
 * If the process doesn't terminate, the agent commands it to be killed.
 * If the process ignores the two initial termination requests, it's forcibly killed.
 
