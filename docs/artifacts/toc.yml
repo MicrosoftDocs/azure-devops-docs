@@ -145,9 +145,12 @@
       href: python/use-packages-from-pypi.md
   - name: Universal Packages
     items:
+    - name: Project setup
+      href: universal-packages/project-setup-universal-packages.md
+      displayName: universal packages
     - name: Universal Packages quickstart
-      displayName: universal packages, publish, download
       href: quickstarts/universal-packages.md
+      displayName: universal packages, publish, download
     - name: Download Universal Packages
       href: quickstarts/download-universal-packages.md
       displayName: universal packages, download
