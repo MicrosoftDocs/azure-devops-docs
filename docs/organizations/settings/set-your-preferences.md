@@ -71,6 +71,8 @@ User profile settings get updated.
 
 #### [Microsoft Entra profile preview](#tab/preview-page) 
 
+<a id="microsoft-entra-profile-preview"></a>
+
 ::: moniker range="azure-devops"
 
 We're previewing the ability to use your profile picture, display name, contact email address, and region as configured in Microsoft Entra within Azure DevOps.

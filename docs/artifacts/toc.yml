@@ -43,11 +43,17 @@
       displayName: dotnet package, authenticate
       href: nuget/dotnet-setup.md
     - name: Publish NuGet packages (NuGet.exe)
-      displayName: publish package, nuget.exe, cli
       href: nuget/publish.md
+      displayName: publish, nuget
+    - name: Restore NuGet packages (NuGet.exe)
+      href: nuget/restore-nuget-packages-nuget-exe.md
+      displayName: nuget, restore
     - name: Publish NuGet packages (dotnet)
-      displayName: dotnet, artifacts, publish packages
       href: nuget/dotnet-exe.md
+      displayName: dotnet, artifacts, publish packages
+    - name: Restore NuGet packages (dotnet)
+      href: nuget/restore-nuget-packages-dotnet.md
+      displayName: dotnet, restore
     - name: Publish to a NuGet feed (YAML/Classic)
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
@@ -119,12 +125,18 @@
       href: maven/jitpack-upstream.md
   - name: Python
     items:
+    - name: Project setup
+      href: python/project-setup-python.md
+      displayName: python, pip, twine
     - name: Python quickstart
       displayName: python packages, python introduction
       href: quickstarts/python-packages.md
-    - name: Publish and install Python packages (CLI)
+    - name: Publish Python packages (CLI)
       href: quickstarts/python-cli.md
-      displayName: python, publish, install, cli
+      displayName: python, publish, cli
+    - name: Install Python packages (CLI)
+      href: quickstarts/install-python-packages.md
+      displayName: python, install, cli
     - name: Publish Python packages to a feed (Classic/YAML)
       displayName: python, publish, pipeline, yaml, classic
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
@@ -139,6 +151,9 @@
     - name: Universal Packages quickstart
       href: quickstarts/universal-packages.md
       displayName: universal packages, publish, download
+    - name: Download Universal Packages
+      href: quickstarts/download-universal-packages.md
+      displayName: universal packages, download
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
       displayName: universal packages, yaml, classic
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
@@ -150,6 +165,9 @@
     - name: Cargo quickstart
       displayName: cargo, crate
       href: get-started-cargo.md
+    - name: Project setup
+      href: cargo/project-setup-cargo.md
+      displayName: cargo, crate
     - name: Use packages from Crates.io
       displayName: cargo, upstream, crate
       href: cargo/cargo-upstream-source.md
