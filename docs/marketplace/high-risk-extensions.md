@@ -47,4 +47,4 @@ You also see the same information on high-risk scopes in the [Azure DevOps Visua
 
 ## Addition of the unpublished state field in the Azure DevOps Services REST API
 
-With the Azure DevOps Services REST API [version 7.2](/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&amp%3Btabs=HTTP&tabs=HTTP), the string field 'unpublished' is now available.
+With the Azure DevOps Services REST API [version 7.2](/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&amp%3Btabs=HTTP&tabs=HTTP&preserve-view=true), the string field 'unpublished' is now available.
