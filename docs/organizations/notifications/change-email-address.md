@@ -21,7 +21,7 @@ You can change your preferred email address for notifications from your organiza
 > [!NOTE]
 > - Your preferred email address applies across all of your organizations and can't be changed on a per-organization basis.
 > - It might take some time for the settings to take effect.
-> - If you're enrolled in the Microsoft Entra profile information preview, you profile information gets pulled directly from Microsoft Entra and therefore you can't edit it. For more information, see [Set user preferences, Microsoft Entra profile preview](../settings/set-your-preferences?view=azure-devops&tabs=preview-page&preserve-view=true).
+> - If you're enrolled in the Microsoft Entra profile information preview, you profile information gets pulled directly from Microsoft Entra and therefore you can't edit it. For more information, see [Set user preferences, Microsoft Entra profile preview](../settings/set-your-preferences.md#microsoft-entra-profile-previewtabpreview-page).
 ::: moniker-end
 
 ## Change your email address
