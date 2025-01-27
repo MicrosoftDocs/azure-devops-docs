@@ -156,6 +156,9 @@
     - name: Cargo quickstart
       displayName: cargo, crate
       href: get-started-cargo.md
+    - name: Project setup
+      href: cargo/project-setup-cargo.md
+      displayName: cargo, crate
     - name: Use packages from Crates.io
       displayName: cargo, upstream, crate
       href: cargo/cargo-upstream-source.md
