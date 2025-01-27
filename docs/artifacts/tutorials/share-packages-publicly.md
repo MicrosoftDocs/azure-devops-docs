@@ -44,7 +44,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Npm](#tab/npm)
 
-- [Publish Npm packages](../npm/publish.md)
+- [Publish npm packages](../npm/publish.md)
 
 #### [Maven](#tab/maven)
 
@@ -76,7 +76,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Npm](#tab/npm)
 
-- [Publish Npm packages](../../pipelines/artifacts/npm.md#publish-packages-to-a-feed-in-the-same-organization)
+- [Publish npm packages](../../pipelines/artifacts/npm.md#publish-packages-to-a-feed-in-the-same-organization)
 
 #### [Maven](#tab/maven)
 
