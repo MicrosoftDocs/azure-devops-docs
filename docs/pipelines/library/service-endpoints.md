@@ -507,7 +507,7 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 
 > [!NOTE]
 > User certificates issued by Azure Kubernetes Service are valid for two years. If you choose to use kubeconfig, you will need to reconfigure service connections after two years.
-> To get user certificate issued by Azure Kubernetes Service from current context, use the command: `kubectl config view --raw -o jsonpath="{.users[?(@.name contains clusterUser_.*_$(kubectl config current-context))].user.client-certificate-data}"`
+> To get user certificate issued by Azure Kubernetes Service from current context, use the command: `kubectl config view --raw -o jsonpath="{.users[?(@.name contains clusterUser_.*_$(kubectl config current-context))].user.client-certificate-data}" | base64 -d`
 > To check when user certificate will expire, use the command: `cat <cert_file> | openssl x509 -enddate -noout -in -`
 
 #### Service account option
