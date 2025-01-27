@@ -122,6 +122,9 @@
       href: maven/jitpack-upstream.md
   - name: Python
     items:
+    - name: Project setup
+      href: python/project-setup-python.md
+      displayName: python, pip, twine
     - name: Python quickstart
       displayName: python packages, python introduction
       href: quickstarts/python-packages.md
