@@ -17,12 +17,12 @@ ms.date: 11/10/2023
 Use personal access tokens (PATs) with the cross-platform CLI for Azure DevOps.
 
 > [!IMPORTANT]
-> We don't recommend using basic authentication. For Azure DevOps Services, see [Sign in with a PAT](../../../cli/log-in-via-pat.md).
+> We don't recommend using basic authentication or PATs. Instead, we recommend using [Microsoft Entra-based authentication](/authentication/entra.md), if you're interacting with Microsoft Entra accounts.
 
 ## Prerequisites
 
-- Download the latest version of **Node.js source code**, from the [Node.js source code downloads page](https://nodejs.org/en/download/)
-- Install the **Cross-platform CLI for Azure DevOps**
+- Latest version of [**Node.js source code**](https://nodejs.org/en/download/)
+- **Cross-platform CLI for Azure DevOps**
   - Install **tfx-cli** using `npm`, a component of Node.js by running:
 
    ```no-highlight

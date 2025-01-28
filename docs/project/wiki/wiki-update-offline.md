@@ -30,16 +30,12 @@ The basic steps to update wiki content offline are as follows:
 
 ## Prerequisites
 
-::: moniker range=">= azure-devops-2019"
-
-Do the following steps to migrate Markdown pages from another wiki to your team project wiki or to content that you publish as code to a wiki.
-
-- [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md)
-- Understand the [differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
-
-::: moniker-end
-
-
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the project where the wiki's located. If you don't have access, request it from your project administrator. |
+| **Permissions** | - Member of the **Contributors** group.<br> - To publish code as wiki: **Create Repository** permission. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md).  |
+| **Access levels** | At least **Basic** access. |
+|**Tasks**   |- [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md) <br> - Understand the [differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)    |
 
 <a id="edit-wiki-offline"></a>
 
