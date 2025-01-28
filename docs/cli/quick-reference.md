@@ -26,7 +26,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 
 ## Azure Artifacts
 
-- [Universal Packages - download specific files](../artifacts/quickstarts/universal-packages.md#download-specific-files)
+- [Universal Packages - download specific files](../artifacts/quickstarts/download-universal-packages.md#download-specific-files)
 - [Create a feed](../artifacts/quickstarts/universal-packages.md) 
 - [Download a universal package](../artifacts/quickstarts/universal-packages.md) 
 - [Publish a universal package](../artifacts/quickstarts/universal-packages.md) 

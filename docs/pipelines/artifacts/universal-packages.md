@@ -177,7 +177,7 @@ To download a Universal Package, add the **Universal Package** task to your pipe
 ---
 
 > [!TIP]
-> You can use wildcards to download the latest version of a Universal Package. For more information, see [Download the latest version](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version).
+> You can use wildcards to download the latest version of a Universal Package. For more information, see [Download the latest version](../../artifacts/quickstarts/download-universal-packages.md#download-the-latest-version).
 
 ## Related articles
 

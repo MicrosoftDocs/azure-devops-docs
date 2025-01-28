@@ -19,12 +19,13 @@ Learn how to manage permissions for users or groups, so they can manage extensio
 
 ## Prerequisites
 ::: moniker range="azure-devops"
-- Be a member of the Project Collection Administrators group to manage permissions for users or groups. Organization owners are automatically members of this group.
-- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md) for information on how to share private extensions.
+- **Permissions:** Member of the Project Collection Administrators group. Organization owners are automatically members of this group.
+- **Extension sharing:** Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- Be a member of the Project Collection Administrators group or have "Edit collection-level information" permissions to manage permissions for users or groups. Organization owners are automatically members of the Project Collection Administrators group.
+- **Permissions:** Member of the Project Collection Administrators group or **Edit collection-level information** permissions. Organization owners are automatically members of this group.
+- **Extension sharing:** Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).
 ::: moniker-end
 
 ## Manage permissions
