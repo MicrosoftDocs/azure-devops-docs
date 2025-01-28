@@ -17,7 +17,7 @@ ms.date: 11/10/2023
 Use personal access tokens (PATs) with the cross-platform CLI for Azure DevOps.
 
 > [!IMPORTANT]
-> We don't recommend using basic authentication or PATs. Instead, we recommend using [Microsoft Entra-based authentication](/authentication/entra.md), if you're interacting with Microsoft Entra accounts.
+> We don't recommend using basic authentication or PATs. Instead, we recommend using [Microsoft Entra-based authentication](../authentication/entra.md), if you're interacting with Microsoft Entra accounts.
 
 ## Prerequisites
 
