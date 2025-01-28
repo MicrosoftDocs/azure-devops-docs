@@ -19,7 +19,7 @@ Use an Azure Pipeline to automatically build, test, and deploy your .NET Core pr
 
 * Set up your build environment with [self-hosted](../agents/agents.md) agents.
 * Restore dependencies, build your project, and test with the [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
-* Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results.
+* Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
 * Package and deliver your build output to:
    * your pipeline.
    * a [NuGet feed](../artifacts/nuget.md).
@@ -30,7 +30,7 @@ Use an Azure Pipeline to automatically build, test, and deploy your .NET Core pr
 
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 * Restore dependencies, build your project, and test with the  [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
-* Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results.
+* Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
 * Package and deliver your build output to:
    * your pipeline.
    * a [NuGet feed](../artifacts/nuget.md).
@@ -677,7 +677,7 @@ steps:
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+    arguments: '--configuration $(buildConfiguration) --collect "Code Coverage"'
 ```
 
 To add the **.NET Core** task through the task editor:
@@ -686,7 +686,7 @@ To add the **.NET Core** task through the task editor:
 
     1. **Command**: test.
     1. **Path to projects**: _Should refer to the test projects in your solution_.
-    1. **Arguments**: `--configuration $(BuildConfiguration) --collect "Code coverage"`.
+    1. **Arguments**: `--configuration $(BuildConfiguration) --collect "Code Coverage"`.
 
 1. Ensure that the **Publish test results** option remains selected.
 
@@ -696,7 +696,7 @@ If you choose to run the `dotnet test` command, specify the test results logger 
 steps:
 # ...
 # do this after your tests have run
-- script: dotnet test <test-project> --logger trx --collect "Code coverage"
+- script: dotnet test <test-project> --logger trx --collect "Code Coverage"
 - task: PublishTestResults@2
   inputs:
     testRunner: VSTest
@@ -707,7 +707,7 @@ steps:
 
 If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
 
-You can publish code coverage results to the server with the [Publish Code Coverage Results (PublishCodeCoverageResults@1)](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task. The coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+You can publish code coverage results to the server with the [Publish Code Coverage Results (PublishCodeCoverageResults@2](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task. The coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
 To run tests and publish code coverage with Coverlet, do the following tasks:
 
@@ -734,7 +734,7 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
       publishTestResults: true
       projects: 'MyTestLibrary' # update with your test project directory
     
-  - task: PublishCodeCoverageResults@1
+  - task: PublishCodeCoverageResults@2
     displayName: 'Publish code coverage report'
     inputs:
       codeCoverageTool: 'Cobertura'
