@@ -35,10 +35,9 @@ To move a work item from one project to another, or to change the work item type
 
 ## Prerequisites
 
-- **Permissions**:
-  - To remove, delete, and restore work items, be a members of the **Contributors** group.
-  - To permanently delete work items, be a member of the **Project Administrators** group, or be granted the required permission.
-  - Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To remove, delete, and restore work items: M of the **Contributors** group.<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission.<br>- Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.|
 
 :::row:::
    :::column span="1":::

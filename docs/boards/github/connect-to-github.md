@@ -21,11 +21,10 @@ Use GitHub.com repositories for your software development and your Azure Boards 
 
 ## Prerequisites 
 
-- **Project requirements:** Have an Azure DevOps project. If you don't have a project, [create one](../get-started/sign-up-invite-teammates.md).
-
-- **Permissions:**
-  - Be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). If you created the project, you have permissions.
-  - Be an administrator or owner of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. |
+| **Project membership**|  [Project member](../organizations/projects/create-project.md). |
 
 ## Authentication options
 

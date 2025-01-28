@@ -66,18 +66,13 @@ All teams across organizations can participate in tracking dependencies.
 
 ## Prerequisites
 
-- **Tools**: Install the [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) for the organization for which you want to track dependencies.
-- **Permissions**: 
-  - To view dependencies, be a member of the **Project Valid Users** group for the project.  
-  - To create a dependency, be a member of the **Contributors** group for both projects that participate in the dependency linking.
-  - To modify configuration, be a member of the  **Project Collection Administrators** Group.
-- **Authentication**: To support cross-organization participation, all organizations must authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
-- **Services**: [Enable Azure Boards as a service](../../organizations/settings/set-services.md). 
-- **Configuration and customization tasks**:
-  - Set up the area paths and teams to participate in dependency tracking. 
-  - Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
-  - Customize your process as needed to support any other work items or fields. 
-  - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations.
+| Category | Requirements |
+|--------------|-------------|
+| **Tools** | [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) installed for the organization for which you want to track dependencies. |
+| **Permissions** | - To view dependencies: Member of the **Project Valid Users** group for the project. <br> - To create a dependency: Member of the **Contributors** group for both projects that participate in the dependency linking. <br> - To modify configuration: Member of the **Project Collection Administrators** group. |
+| **Authentication** | All organizations authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). |
+| **Services** | [Azure Boards as a service](../../organizations/settings/set-services.md) enabled. |
+| **Configuration and customization tasks** | - Area paths and teams set up to participate in dependency tracking. <br> - Iteration paths/sprints configured for the project and assigned to work items participating in dependency tracking. This requirement is essential for the Timeline view to yield meaningful data. <br> - Customize your process as needed to support any other work items or fields. <br> - [Dependency Tracker](#configuration) configured to support your business needs and address any customizations. |
 
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article.

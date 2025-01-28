@@ -24,7 +24,7 @@ A board presents work items in the form of cards, where each card represents a w
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- **Tasks (optional)**: See the section, [Card customization sequence](#card-customization-sequence)
+|**Tasks (optional)**| See the section, [Card customization sequence](#card-customization-sequence)|
 
 ## Card customization options  
 

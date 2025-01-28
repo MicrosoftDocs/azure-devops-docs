@@ -44,7 +44,9 @@ For more detailed information on using filters, see [Filter Backlogs, Boards, an
 
 ## Prerequisites
 
-**Project access**: Be a [project member](../../organizations/security/add-users-team-project.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project membership**|  [Project member](../organizations/projects/create-project.md). |
 
 ## Supported filter functions 
 

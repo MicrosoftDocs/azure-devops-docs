@@ -28,11 +28,10 @@ For instructions on removing, deleting, or restoring work items, see [Remove, de
 
 ::: moniker range="azure-devops"
 
-* **Permissions**:
-  * Be a member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-  * To modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-  * To move work items to another project, be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users with **Stakeholder** access don't have access to this feature. 
-* **Access levels**: To change the work item type, have at least **Stakeholder** access. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To move work items to another project: Member of the **Project Administrators** group or **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission. Users with **Stakeholder** access don't have access to this feature. |
+| **Access levels** | To change the work item type: At least **Stakeholder** access. |
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -41,11 +40,10 @@ For instructions on removing, deleting, or restoring work items, see [Remove, de
 
 ::: moniker range=" < azure-devops"
 
-* **Permissions**:
-  * Be a member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-  * To modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-  * To move work items to another project, be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users with **Stakeholder** access don't have access to this feature. Also, the project must use an Inherited process model.   
-* **Access levels**: To change the work item type, have at least **Stakeholder** access. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To move work items to another project: Member of the **Project Administrators** group or **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission. Users with **Stakeholder** access don't have access to this feature. Also, the project must use an Inherited process model.  |
+| **Access levels** | To change the work item type: At least **Stakeholder** access. |
 
 You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you use the [Analytics Service](../../report/powerbi/what-is-analytics.md) to support your reporting needs. For more information about disabling the data warehouse, see [Disable the data warehouse and cube](/previous-versions/azure/devops/report/admin/disable-data-warehouse). 
 

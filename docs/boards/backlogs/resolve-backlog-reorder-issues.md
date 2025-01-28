@@ -22,6 +22,10 @@ ms.date: 10/14/2024
 
 When you reorder, nest, and display work items, Azure Boards expects a [natural hierarchy](#natural-hierarchy-for-work-item-types). The natural hierarchy breaks when you create same-category or same-type links between work items. For example, parent to child links that are bug to bug or user story to user story or *requirements* category to *task* category. Use this article to address error messages when you add links that aren't in the natural hierarchy.
 
+## Prerequisites
+
+[!INCLUDE [temp](../includes/prerequisites.md)]
+
 ## You cannot reorder work items and some work items might not be shown
 
 You might see an error similar to one of the following messages:

@@ -34,13 +34,11 @@ When you connect your Azure DevOps Server project with your GitHub Enterprise Se
 
 ## Prerequisites 
  
-* **Integration with GitHub**: 
-  * Connect to GitHub.com repositories by installing Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
-  * [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
-* **Project connection**: Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-* **Permissions**: 
-  * Be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-  * Be an administrator of the GitHub Enterprise Server that you connect to. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. <br> - **Administrator** of the GitHub Enterprise Server that you connect to. |
+| **Project membership**|  [Project member](../organizations/projects/create-project.md). |
+| **Integration with GitHub** | - Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories. <br> - [Azure Boards app for GitHub](install-github-app.md) installed on the GitHub organizations or account. |
 
 ## Authentication options
 
