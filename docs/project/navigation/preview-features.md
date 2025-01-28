@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/15/2025
+ms.date: 01/27/2025
 ---
 
 # Manage preview features 
@@ -31,6 +31,14 @@ As some new features get introduced, you can turn them on or off. You can try th
 As some new features get introduced, you can turn them on or off. You can try them out, provide feedback, and work with the ones that meet your requirements. Some preview features provide access to new functionality, while others reflect a change to the user interface, but little or no change in functionality. 
 
 ::: moniker-end
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the [project](../../organizations/projects/create-project.md) where you want to enable or disable preview features. |
+| **Permissions** | To enable or disable preview features for your organization: Member of the **Project Administrators** group. |
+| **Access levels** |At least **Basic** access.  |
 
 ## Turn on or off preview features
 

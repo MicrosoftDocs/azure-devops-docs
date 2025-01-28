@@ -19,10 +19,10 @@ In this example, we add an action to the query context menu in the work item que
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-## Prerequisites for this article
+## Prerequisites
 
-- You need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
-- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
+- [Develop a web extension](../get-started/node.md).
+- [Create a web app for your action](./add-hub.md).
 
 ## Update extension manifest file
 
