@@ -7,7 +7,7 @@ ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
-ms.date: 12/07/2018
+ms.date: 01/28/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -20,7 +20,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
 
 * You created a manual test case that you later decide is a good test
   to automate, but you still want to be able to run that test as part of a test plan.
-  Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
+  You can run tests in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. Automated tests can also be run from the **Test Plans** web portal.
   If you're using XAML builds, you can also [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
 * You want to enable end-to-end traceability of requirements.
@@ -76,20 +76,26 @@ There are two entry points in Azure DevOps, from where you can associate your au
 
 ### Associate your test from a build pipeline 
 
-1. Navigate to Pipelines and choose a pipeline where the desired automated test has run. 
-2. Then select a build where your tests have run.
-3. In the “Tests” tab, find the automated test that you want to associate with a test case. 
-4. Select the test and from the command bar, click on “Associate Test Case” button. 
-5. In the side panel, find the test case to which the automated test needs to be associated, and click on "Associate".
-<img width="1902" alt="Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface" src="https://github.com/user-attachments/assets/8508e71b-c55b-4407-93d2-ef027461cb1f" title="Associating an automated test to a test case in CI/CD pipeline" />
+1. Go to **Pipelines** and choose a pipeline where the desired automated test ran. 
+2. Select a build where your tests ran.
+3. In the **Tests** tab, find the automated test that you want to associate with a test case. 
+4. Select the test and then **Associate Test Case**. 
+5. Find the test case to which the automated test needs to be associated, and select **Associate**.
 
-### Associate your test from a Test Case 
-1. Open any test case and navigate to the “Associated Automation” tab. 
-2. Under “Associated Automation” click on the “Add test” button. 
-3. Choose a Piplene and a Pipeline run for which the desired test was executed, then select the desired test and click on "Associate test".  
-Note: The test needs to be run at least once, before it can be discoverable for association. 
-<img width="1464" alt="Screenshot showing the flow of associating a test with a test case from within the test case interface" src="https://github.com/user-attachments/assets/717bb70b-8df4-452f-9654-0c178fb8b0d2" title="Associating an automated test to a test case"/>
-You can then utilize the Azure Test Plans pipeline task to execute your automated test as part of a pipeline.
+  :::image type="content" source="media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-pipelines.png" alt-text="Screenshot showing the process of associating an automated test to a test case within a CICD pipeline interface.":::
+
+### Associate your test from a test case 
+
+1. Open any test case and go to the **Associated Automation** tab. 
+2. Select **Add test**. 
+3. Choose a Pipeline and a Pipeline run for which the desired test was executed, then select the desired test and **Associate test**.  
+
+  > [!NOTE]
+  > Run the test at least once, so it's discoverable for association. 
+
+  :::image type="content" source="media/associate-automated-test-with-test-case/associate-automated-test-to-test-case.png" alt-text="Screenshot showing the flow of associating a test with a test case from within the test case interface.":::
+
+  Now you can utilize the Azure Test Plans pipeline task to execute your automated test as part of a pipeline.
 
 ## FAQs
 
