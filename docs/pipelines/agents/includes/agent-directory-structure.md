@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: v-catherbund
 author: cebundy
-ms.date: 01/15/2025
+ms.date: 01/28/2025
 ---
 
 When pipeline jobs are run on agents, a directory structure is created to store the source code, binaries, and artifacts. 
