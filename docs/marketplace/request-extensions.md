@@ -20,8 +20,9 @@ Project Collection Administrators receive an email when another project member r
 
 ## Prerequisites
 
-- To request extensions, be a contributor for your organization.
-- To approve extensions, be a member of the Project Collection Administrators group and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
+**Permissions:**
+- To request extensions: Contributor for your organization.
+- To approve extensions: Member of the Project Collection Administrators group and [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
 ## Request an extension
 
