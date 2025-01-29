@@ -120,13 +120,6 @@ Use parent-child links to create a hierarchy of requirements, features, and epic
 
 With a hierarchy, you can manage a set of features that different teams work on. You can also see the summary of estimates, progress, and more on the product backlogs.
 
-[OpsHub Integration Manager (OIM)](https://www.opshub.com/products/opshub-integration-manager/) allows you to maintain consistent hierarchies across different tools used by multiple teams through:
-
-- **Data mapping**: Maps parent-child relationships (e.g., epics → features → user stories) between tools like Azure DevOps and Jira, maintaining the hierarchy throughout integration. 
-- **Sync logic**: Real-time bi-directional synchronization ensures changes in one tool are reflected in others, preserving the relationships. For example, when a user adds a new feature under an epic in Azure DevOps, this addition is reflected in Jira with the correct parent-child relationship. 
-- **Conflict resolution**: Manages discrepancies by maintaining hierarchy consistency with pre-defined rules. If a change is made in Azure DevOps and Jira simultaneously, the tool resolves the conflict by applying the change with the highest priority (e.g., the latest update or the highest user role). 
-- **Dynamic user mapping**: Auto-matches user attributes such as roles, permissions, and groups, ensuring that the right users are associated with their respective tasks and actions across the integrated platforms. 
-
 **Group user stories under Features using Mapping** 
 
 :::image type="content" source="media/manage-requirements/mapping-user-stories-to-features.png" alt-text="Screenshot of mapping user stories under Features using Mapping tool.":::

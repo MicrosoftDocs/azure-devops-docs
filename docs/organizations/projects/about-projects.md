@@ -372,7 +372,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 
 ### Q: Can I move or transfer a project to another organization or collection? 
 
-**A:** Yes, but not without losing data. You can manually copy resources and leave some behind, or use a third-party tool, such as [OpsHub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/), which copies data using the REST APIs. 
+**A:** Yes, but not without losing data. You can manually copy resources and leave some behind, or use a non-Microsoft tool. 
 
 ### Q: What programmatic tools support projects?
 
