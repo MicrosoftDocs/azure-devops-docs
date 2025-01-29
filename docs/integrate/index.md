@@ -36,16 +36,6 @@ Before you start the integration process, ensure you have the following items:
 - **Data mapping:** Identify and align fields and data types between systems to ensure compatibility in field names, formats, and value ranges. 
 - **Network and connectivity:** Ensure your network supports API calls, webhook notifications, and connectivity between Azure DevOps and self-hosted tools.
 
-[OpsHub Integration Manager (OIM)](https://www.opshub.com/products/opshub-integration-manager/) allows you to integrate Azure DevOps (Server and Services) with other systems. This tool provides the following benefits: 
-
-- Integrates work items (standard and custom), test entities, areas, iterations, pipelines 
-- Syncs comments, attachments, links, images, mentions, project movements, and entity deletions  
-- Scales across 1000+ projects 
-- Supports custom integrations  
-- Deploys on-premises or on-cloud 
-- Preserves history
-- Supports bidirectional integration
-
 ## Resources
 
 - [REST API reference](/rest/api/azure/devops/)
