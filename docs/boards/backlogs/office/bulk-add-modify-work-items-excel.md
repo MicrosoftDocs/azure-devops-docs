@@ -36,7 +36,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 |Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../../../organizations/security/add-users-team-project.md). |
 | **Access levels** |At least [Stakeholder access](../../../organizations/security/stakeholder-access.md).   |
 | **Permissions** | - Member of the **Contributors** group.<br> - *View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
 | **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br> - [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family). Install the Azure DevOps Office Integration plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.<br> - [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later](https://visualstudio.microsoft.com/downloads/) To use the [Select User](#select-user) feature, download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts. |
@@ -47,7 +47,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 |Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../../../organizations/security/add-users-team-project.md). |
 | **Access levels** |At least [Stakeholder access](../../../organizations/security/stakeholder-access.md).   |
 | **Permissions** | - Member of the **Contributors** group.<br> - *View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
 | **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br>- [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family). Install the plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Standalone Office Integration installer. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure Boards and Azure DevOps from Excel, Project, and the PowerPoint-based storyboarding tool.<br> -  To use the [Select User](#select-user) feature, install [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). You can download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts.|

@@ -23,6 +23,9 @@ Visual Studio 2019 allows you to switch between the default and legacy views of 
 Before you switch between work item views in Visual Studio 2019, ensure you meet the following requirements:
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
+
+| Category | Requirements |
+|--------------|-------------|
 |**Tools**| Visual Studio 2019 and latest updates.|
 |**Extensions**| Enabled Team Explorer extension in Visual Studio 2019.|
 

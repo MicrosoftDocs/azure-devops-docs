@@ -24,7 +24,7 @@ Use GitHub.com repositories for your software development and your Azure Boards 
 | Category | Requirements |
 |--------------|-------------|
 | **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. |
-| **Project membership**|  [Project member](../organizations/projects/create-project.md). |
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 ## Authentication options
 

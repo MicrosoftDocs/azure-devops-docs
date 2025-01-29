@@ -25,6 +25,9 @@ Work items categorized under the Requirements category appear on a team's backlo
 ::: moniker range="azure-devops"  
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
+
+| Category | Requirements |
+|--------------|-------------|
 |**Area Path permissions**| **View** and **Edit** work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
 |**Configured area paths**| The target team has correctly configured Area Paths. If not, set up the required Area Paths before transferring work items.|
 |**Consistent process model**| Your team uses a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.|

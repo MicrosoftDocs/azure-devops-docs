@@ -46,7 +46,7 @@ For more detailed information on using filters, see [Filter Backlogs, Boards, an
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project membership**|  [Project member](../organizations/projects/create-project.md). |
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 ## Supported filter functions 
 
