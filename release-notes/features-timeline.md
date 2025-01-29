@@ -186,9 +186,9 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
       </tr>  
        <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
-         <td>2025 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>
       </tr>       
       <tr>
          <td>
@@ -217,12 +217,7 @@ These investments include:
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo" data-raw-source="[Report stage status to work item when using a YAML release pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo)">Report stage status to work item when using a YAML release pipeline with GitHub repository</a></td>
-         <td>Boards</td>
-         <td>Future</td>
-      </tr>       
+      </tr>          
     </tbody>
 </table>
 
