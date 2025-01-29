@@ -29,26 +29,32 @@
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json
     displayName: search, packages
-  - name: Manage permissions
-    href: feeds/feed-permissions.md
-    displayName: feed, artifact feeds, permissions
-  - name: Feeds
-    items:
-    - name: What are feeds?
-      href: concepts/feeds.md
-      displayName: feeds, artifact feeds
-    - name: Feed scopes
-      href: feeds/project-scoped-feeds.md
-      displayName: project scoped, organization scoped, feed, artifacts
-    - name: Delete and recover packages
-      href: how-to/delete-and-recover-packages.md
-      displayName: delete, recover, packages, artifacts
-    - name: Use public feeds to share your packages publicly
-      href: tutorials/share-packages-publicly.md
-      displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
-    - name: Migrate from file shares
-      href: nuget/move-from-fileshares.md
-      displayName: migrate, file share
+  - name: Key concepts
+    displayName: concepts, artifacts
+    href: artifacts-key-concepts.md
+  - name: Package graphs
+    displayName: graph, artifacts, packages
+    href: concepts/package-graph.md
+  - name: Componentization
+    displayName: componentization, artifacts, packages, concepts
+    href: collaborate-with-packages.md
+- name: Feeds
+  items:
+  - name: What are feeds?
+    href: concepts/feeds.md
+    displayName: feeds, artifact feeds
+  - name: Feed scopes
+    href: feeds/project-scoped-feeds.md
+    displayName: project scoped, organization scoped, feed, artifacts
+  - name: Delete and recover packages
+    href: how-to/delete-and-recover-packages.md
+    displayName: delete, recover, packages, artifacts
+  - name: Use public feeds to share your packages publicly
+    href: tutorials/share-packages-publicly.md
+    displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
+  - name: Migrate from file shares
+    href: nuget/move-from-fileshares.md
+    displayName: migrate, file share
   - name: Feed views
     items:
     - name: What are feed views?
@@ -253,6 +259,11 @@
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
       href: tutorials/powershell-upstream-source.md
+- name: Security
+  items:
+  - name: Manage permissions
+    href: feeds/feed-permissions.md
+    displayName: feed, artifact, permissions
 - name: Examples
   items:
   - name: NuGet
@@ -327,22 +338,9 @@
   - name: Publish symbols
     displayName: symbols, debug, debugger, publish
     href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-- name: Concepts and resources
-  items:
-  - name: Key concepts
-    displayName: concepts, artifacts
-    href: artifacts-key-concepts.md
-  - name: Package graphs
-    displayName: graph, artifacts, packages
-    href: concepts/package-graph.md
-  - name: Componentization
-    displayName: componentization, artifacts, packages, concepts
-    href: collaborate-with-packages.md
-  - name: Developer resources
-    items:
-    - name: Azure DevOps developer resources
-      displayName: cli, reference
-      href: ../dev-resources/index.yml
-    - name: REST API reference
-      displayName: api, reference
-      href: /rest/api/azure/devops/index
+- name: DevOps CLI
+  displayName: cli, reference
+  href: ../cli/index
+- name: REST API reference
+  displayName: api, reference
+  href: /rest/api/azure/devops/index
