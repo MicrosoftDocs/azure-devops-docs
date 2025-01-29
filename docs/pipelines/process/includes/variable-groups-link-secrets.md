@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 04/29/2022
+ms.date: 01/27/2025
 ms.custom: arm2024
 ---
 
@@ -19,10 +19,11 @@ Although Key Vault supports storing and managing cryptographic keys and certific
 
 ### Prerequisites
 
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/).
-- An Azure DevOps organization. [Sign up for free](https://dev.azure.com/) or an Azure DevOps Server.
-- A DevOps project. [Create a project](../../../organizations/projects/create-project.md) if you don't already have one. 
-- An [Azure Resource Manager service connection](../../library/connect-to-azure.md) for your project.
+| Product | Requirements|
+|---------|-------------|
+| Azure DevOps | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br> - An [Azure Resource Manager service connection](../../library/connect-to-azure.md) for your project.<br>  - **Permissions:**<br>     &nbsp;&nbsp;&nbsp;&nbsp;- To use service connections: Have at least the *User* role for the [service connection](../../policies/permissions.md#set-service-connection-security-in-azure-pipelines).<br>    &nbsp;&nbsp;&nbsp;&nbsp;- To create a variable group: Have at least *Creator* [library permission](../../policies/permissions.md#set-library-security-in-azure-pipelines).  |
+| Azure | - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/).<br> - **Permissions:**<br>     &nbsp;&nbsp;&nbsp;&nbsp;To create a key vault: Have at least the *Owner* role for the subscription.|
+
 
 ### Create a key vault
 
