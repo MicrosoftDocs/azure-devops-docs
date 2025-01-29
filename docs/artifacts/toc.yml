@@ -57,68 +57,38 @@
     - name: Promote packages and manage views
       href: feeds/views.md
       displayName: promote, feed, view, package
-- name: Packages
+- name: Publish
   items:
   - name: NuGet
     items:
-    - name: NuGet quickstart
-      displayName: nuget, quickstart
-      href: get-started-nuget.md
     - name: Project setup (NuGet.exe)
-      displayName: nuget package, artifacts feeds, publish packages, download packages
+      displayName: publish, nuget, package
       href: nuget/nuget-exe.md
+    - name: Publish NuGet packages (NuGet.exe)
+      href: nuget/publish.md
+      displayName: publish, nuget, package
     - name: Project setup (dotnet)
       displayName: dotnet package, authenticate
       href: nuget/dotnet-setup.md
-    - name: Publish NuGet packages (NuGet.exe)
-      href: nuget/publish.md
-      displayName: publish, nuget
-    - name: Restore NuGet packages (NuGet.exe)
-      href: nuget/restore-nuget-packages-nuget-exe.md
-      displayName: nuget, restore
     - name: Publish NuGet packages (dotnet)
       href: nuget/dotnet-exe.md
-      displayName: dotnet, artifacts, publish packages
-    - name: Restore NuGet packages (dotnet)
-      href: nuget/restore-nuget-packages-dotnet.md
-      displayName: dotnet, restore
-    - name: Publish to a NuGet feed (YAML/Classic)
-      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline
-      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
-    - name: Install NuGet packages with Visual Studio
-      displayName: install package, nuget, visual studio
-      href: nuget/consume.md
-    - name: Share PowerShell modules with Azure Artifacts
-      displayName: powershell, module, package
-      href: tutorials/private-powershell-library.md
-    - name: Use packages from NuGet.org
-      displayName: upstream, nuget, install, package
-      href: nuget/upstream-sources.md
+      displayName: dotnet, publish, packages
+    - name: Publish from GitHub Actions
+      href: quickstarts/github-actions.md
     - name: Publish packages to NuGet.org
       displayName: publish, nuget, package, upstream
       href: nuget/publish-to-nuget-org.md
-    - name: Publish from GitHub Actions
-      href: quickstarts/github-actions.md
     - name: Migrate from MyGet to Azure Artifacts
       displayName: migrate, nuget
       href: tutorials/migrate-packages.md
   - name: npm
     items:
-    - name: npm quickstart
-      displayName: npm, npm introduction
-      href: get-started-npm.md
     - name: Project setup
-      displayName: npmrc, connect, feed, npm
+      displayName: publish, npm
       href: npm/npmrc.md
     - name: Publish and restore npm packages (CLI)
       displayName: npm, publish, restore, cli
       href: npm/publish.md
-    - name: Publish npm packages (YAML/Classic)
-      displayName: npm, publish, yaml, classic
-      href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json
-    - name: Use packages from npmjs.com
-      displayName: upstream, npmjs, npm, install
-      href: npm/upstream-sources.md
     - name: Npm scopes
       displayName: npm scope, npm artifacts, npm packages
       href: npm/scopes.md
@@ -127,18 +97,130 @@
       href: npm/npm-audit.md
   - name: Maven
     items:
-    - name: Maven quickstart
-      displayName: maven, maven introduction
-      href: get-started-maven.md
+    - name: Project setup
+      displayName: maven pom, maven artifacts, maven packages, maven authentication
+      href: maven/pom-and-settings.md
+    - name: Publish artifacts with Gradle
+      displayName: gradle, publish
+      href: maven/publish-with-gradle.md
+  - name: Python
+    items:
+    - name: Project setup
+      href: python/project-setup-python.md
+      displayName: python, pip, twine
+    - name: Publish Python packages (CLI)
+      href: quickstarts/python-cli.md
+      displayName: python, publish, cli
+  - name: Universal Packages
+    items:
+    - name: Project setup
+      href: universal-packages/project-setup-universal-packages.md
+      displayName: universal packages
+    - name: Universal Packages quickstart
+      href: quickstarts/universal-packages.md
+      displayName: universal packages, publish, download
+  - name: Cargo
+    items:
+    - name: Project setup
+      href: cargo/project-setup-cargo.md
+      displayName: cargo, crate
+    - name: Cargo quickstart
+      displayName: cargo, crate
+      href: get-started-cargo.md
+- name: Restore
+  items:
+  - name: NuGet
+    items:
+    - name: Project setup (NuGet.exe)
+      displayName: nuget package, artifacts feeds, publish packages, download packages
+      href: nuget/nuget-exe.md
+    - name: Restore NuGet packages (NuGet.exe)
+      href: nuget/restore-nuget-packages-nuget-exe.md
+      displayName: nuget, restore
+    - name: Project setup (dotnet)
+      displayName: dotnet package, authenticate
+      href: nuget/dotnet-setup.md
+    - name: Restore NuGet packages (dotnet)
+      href: nuget/restore-nuget-packages-dotnet.md
+      displayName: dotnet, restore
+    - name: Install NuGet packages with Visual Studio
+      displayName: install package, nuget, visual studio
+      href: nuget/consume.md
+  - name: npm
+    items:
+    - name: Project setup
+      displayName: npmrc, connect, feed, npm
+      href: npm/npmrc.md
+    - name: Publish and restore npm packages (CLI)
+      displayName: npm, publish, restore, cli
+      href: npm/publish.md
+    - name: Npm scopes
+      displayName: npm scope, npm artifacts, npm packages
+      href: npm/scopes.md
+    - name: Npm audit
+      displayName: npm audit, npm artifacts
+      href: npm/npm-audit.md
+  - name: Maven
+    items:
     - name: Project setup
       displayName: maven pom, maven artifacts, maven packages, maven authentication
       href: maven/pom-and-settings.md
     - name: Restore Maven packages
       displayName: maven, restore, install
       href: maven/install.md
-    - name: Publish artifacts with Gradle
-      displayName: gradle, publish
-      href: maven/publish-with-gradle.md
+  - name: Python
+    items:
+    - name: Project setup
+      href: python/project-setup-python.md
+      displayName: python, pip, twine
+    - name: Install Python packages (CLI)
+      href: quickstarts/install-python-packages.md
+      displayName: python, install, cli
+  - name: Universal Packages
+    items:
+    - name: Project setup
+      href: universal-packages/project-setup-universal-packages.md
+      displayName: universal packages
+    - name: Download Universal Packages
+      href: quickstarts/download-universal-packages.md
+      displayName: universal packages, download
+  - name: Cargo
+    items:
+    - name: Project setup
+      href: cargo/project-setup-cargo.md
+      displayName: cargo, crate
+    - name: Cargo quickstart
+      displayName: cargo, crate
+      href: get-started-cargo.md
+- name: Upstream sources
+  items:
+  - name: Upstream sources overview
+    displayName: upstream, sources, upstreams
+    href: concepts/upstream-sources.md
+  - name: Set up upstream sources
+    href: how-to/set-up-upstream-sources.md
+    displayName: configure, upstreams
+  - name: Use upstream sources with public feeds
+    href: how-to/public-feeds-upstream-sources.md
+    displayName: upstream, public feed
+  - name: Search for packages in upstream sources
+    href: how-to/search-upstream.md
+    displayName: search, upstreams
+  - name: Safeguard against malicious public packages
+    displayName: upstreams, behavior, configure upstreams
+    href: concepts/upstream-behavior.md
+  - name: NuGet
+    items:
+    - name: Use packages from NuGet.org
+      displayName: upstream, nuget, install, package
+      href: nuget/upstream-sources.md
+  - name: npm
+    items:
+    - name: Use packages from npmjs.com
+      displayName: upstream, npmjs, npm, install
+      href: npm/upstream-sources.md
+  - name: Maven
+    items:
     - name: Use packages from Maven Central
       displayName: maven, maven central, upstream
       href: maven/upstream-sources.md
@@ -153,80 +235,27 @@
       href: maven/jitpack-upstream.md
   - name: Python
     items:
-    - name: Project setup
-      href: python/project-setup-python.md
-      displayName: python, pip, twine
-    - name: Python quickstart
-      displayName: python packages, python introduction
-      href: quickstarts/python-packages.md
-    - name: Publish Python packages (CLI)
-      href: quickstarts/python-cli.md
-      displayName: python, publish, cli
-    - name: Install Python packages (CLI)
-      href: quickstarts/install-python-packages.md
-      displayName: python, install, cli
-    - name: Publish Python packages to a feed (Classic/YAML)
-      displayName: python, publish, pipeline, yaml, classic
-      href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
     - name: Use packages from PyPi
       displayName: python, PyPi, upstream
       href: python/use-packages-from-pypi.md
   - name: Universal Packages
     items:
-    - name: Project setup
-      href: universal-packages/project-setup-universal-packages.md
-      displayName: universal packages
-    - name: Universal Packages quickstart
-      href: quickstarts/universal-packages.md
-      displayName: universal packages, publish, download
-    - name: Download Universal Packages
-      href: quickstarts/download-universal-packages.md
-      displayName: universal packages, download
-    - name: Universal Packages in Azure Pipelines (YAML/Classic)
-      displayName: universal packages, yaml, classic
-      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
     - name: Universal Packages upstream sources
       displayName: universal packages, upstream sources, upstreams
       href: universal-packages/universal-packages-upstream.md
   - name: Cargo
     items:
-    - name: Cargo quickstart
-      displayName: cargo, crate
-      href: get-started-cargo.md
-    - name: Project setup
-      href: cargo/project-setup-cargo.md
-      displayName: cargo, crate
     - name: Use packages from Crates.io
       displayName: cargo, upstream, crate
       href: cargo/cargo-upstream-source.md
-    - name: Publish Cargo packages to a feed (Classic/YAML)
-      displayName: cargo, publish, crate, yaml, classic
-      href: ../pipelines/artifacts/cargo-pipelines.md?toc=/azure/devops/artifacts/toc.json
-- name: Feeds, views, and upstream sources
-  items:
-  - name: Upstream sources
+  - name: PowerShell
     items:
-    - name: Upstream sources overview
-      displayName: upstream, sources, upstreams
-      href: concepts/upstream-sources.md
-    - name: Set up upstream sources
-      href: how-to/set-up-upstream-sources.md
-      displayName: configure, upstreams
-    - name: Use upstream sources with public feeds
-      href: how-to/public-feeds-upstream-sources.md
-      displayName: upstream, public feed
-    - name: Search for packages in upstream sources
-      href: how-to/search-upstream.md
-      displayName: search, upstreams
-    - name: Manage dependencies with upstream sources
-      displayName: dependencies, artifacts, upstreams, public package
-      href: tutorials/protect-oss-packages-with-upstream-sources.md
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
       href: tutorials/powershell-upstream-source.md
-    - name: Safeguard against malicious public packages
-      displayName: upstreams, behavior, configure upstreams
-      href: concepts/upstream-behavior.md
+  - name: Manage dependencies with upstream sources
+    displayName: dependencies, artifacts, upstreams, public package
+    href: tutorials/protect-oss-packages-with-upstream-sources.md
 - name: Artifacts in Azure Pipelines
   items:
   - name: Artifacts in Azure Pipelines overview
@@ -235,15 +264,38 @@
   - name: Publish and download artifacts in Azure Pipeline
     displayName: publish packages, download packages, pipeline artifact
     href: ../pipelines/artifacts/pipeline-artifacts.md
-  - name: Pipeline caching
-    displayName: caching, storage, pipeline cache
-    href: ../pipelines/release/caching.md
-  - name: Set up retention policies
-    displayName: policies, retention, pipeline artifact
-    href: ../pipelines/policies/retention.md
   - name: Use the .artifactignore file
+    displayName: artifactignore
     href: reference/artifactignore.md
-    displayName: artifactignore, gitignore
+  - name: NuGet
+    items:
+    - name: Publish packages to internal and external feeds
+      displayName: nuget, package
+      href: ../pipelines/artifacts/nuget.md
+    - name: Restore NuGet packages
+      displayName: nuget, package, restore
+      href: ../pipelines/packages/nuget-restore.md
+    - name: Publish NuGet packages to NuGet.org (Classic/YAML)
+      displayName: publish, nuget, package
+      href: ../pipelines/artifacts/publish-public-registry.md
+  - name: npm
+    displayName: npm, package
+    href: ../pipelines/artifacts/npm.md
+  - name: Maven
+    displayName: Maven, package
+    href: ../pipelines/artifacts/publish-maven-artifacts.md
+  - name: Gradle
+    displayName: Gradle, package
+    href: ../pipelines/artifacts/pull-package-gradle.md
+  - name: Python
+    displayName: python, package
+    href: ../pipelines/artifacts/pypi.md
+  - name: Cargo
+    displayName: cargo, crate
+    href: ../pipelines/artifacts/cargo-pipelines.md
+  - name: Universal Packages
+    displayName: package, universal
+    href: ../pipelines/artifacts/universal-packages.md
 - name: Symbols
   items:
   - name: Symbols overview
@@ -258,7 +310,7 @@
   - name: Publish symbols
     displayName: symbols, debug, debugger, publish
     href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-- name: Concepts and references
+- name: Concepts and resources
   items:
   - name: Key concepts
     displayName: concepts, artifacts
@@ -269,11 +321,11 @@
   - name: Componentization
     displayName: componentization, artifacts, packages, concepts
     href: collaborate-with-packages.md
-- name: Developer resources
-  items:
-  - name: Azure DevOps developer resources
-    displayName: cli, reference
-    href: ../dev-resources/index.yml
-  - name: REST API reference
-    displayName: api, reference
-    href: /rest/api/azure/devops/index
+  - name: Developer resources
+    items:
+    - name: Azure DevOps developer resources
+      displayName: cli, reference
+      href: ../dev-resources/index.yml
+    - name: REST API reference
+      displayName: api, reference
+      href: /rest/api/azure/devops/index
