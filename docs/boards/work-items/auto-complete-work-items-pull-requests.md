@@ -28,8 +28,7 @@ For more information, see [Create, view, and manage pull requests](../../repos/g
 ## Prerequisites
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
-
-- **GitHub permissions:** Be a **Contributor** to the GitHub repository.
+|**GitHub permissions**| **Contributor** to the GitHub repository.|
 
 ## Autocomplete work items  
 

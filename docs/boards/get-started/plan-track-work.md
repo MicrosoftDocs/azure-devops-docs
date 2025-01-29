@@ -68,7 +68,7 @@ In each work item form, describe work, assign contributors, track status, and co
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - To add work items to a board and use all other board features: At least **Basic** access. <br> - Private project: To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. <br> - Public project: For full access to all Boards features: At least **Stakeholder** access. |
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. <br> - Public project: For full access to all Boards features: At least **Stakeholder** access. |
 | **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end
@@ -77,7 +77,7 @@ In each work item form, describe work, assign contributors, track status, and co
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - To add work items to a board and use all other board features: At least **Basic** access. <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
 | **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 > [!NOTE]
@@ -89,7 +89,7 @@ In each work item form, describe work, assign contributors, track status, and co
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - To add work items to a board and use all other board features: At least **Basic** access. <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
 | **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end

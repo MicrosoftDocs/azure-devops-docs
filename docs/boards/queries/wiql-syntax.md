@@ -26,7 +26,9 @@ The WIQL syntax supports all functions available through the web portal Query Ed
 
 ## Prerequisites
 
-A query returns only those work items for which you have the **View work items** or **View work items in this node** permission. Typically, these permissions are granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md).  
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | **View work items** or **View work items in this node** permission set to **Allow**. Typically, these permissions get granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md). |
 
 
 ## Query language overview

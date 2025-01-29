@@ -101,7 +101,7 @@ Hide **In Progress items** when you want to forecast work. For more information,
 >
 > - For more information, see [Configure your backlog view](configure-your-backlog-view.md) and [Add custom work item types](../../organizations/settings/work/add-custom-wit.md).
 > - For issues that might occur with multi-team ownership, see [Exercising select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
-> - To reorder work items on your backlog, have at least Basic access. If you have Stakeholder access, you can't reorder work items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> - To reorder work items on your backlog, have at least [**Basic** access](../../organizations/security/access-levels.md). If you have Stakeholder access, you can't reorder work items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ## Natural hierarchy for work item types
 

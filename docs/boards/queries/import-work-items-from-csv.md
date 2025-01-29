@@ -28,8 +28,8 @@ Export work items in bulk using CSV-formatted files. Although Excel can still be
 ## Prerequisites
 
 **Permissions**:
-- Export work items: Be a member of the **Project Administrators** security group or have **View project-level information** set to **Allow**.
-- Import work items: Be a member of the **Project Administrators** security group or the **Team Foundation Administrators** security group.
+- Export work items: Member of the **Project Administrators** group or **View project-level information** permission set to **Allow**.
+- Import work items: Member of the **Project Administrators** or **Team Foundation Administrators** security group.
 
 ::: moniker range=">= azure-devops-2020"
 

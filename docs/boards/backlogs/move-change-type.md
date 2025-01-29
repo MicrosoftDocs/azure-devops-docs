@@ -34,7 +34,7 @@ For instructions on removing, deleting, or restoring work items, see [Remove, de
 | **Access levels** | To change the work item type: At least **Stakeholder** access. |
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with [**Basic** access](../../organizations/security/access-levels.md). For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 

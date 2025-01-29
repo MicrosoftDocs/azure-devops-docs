@@ -35,11 +35,10 @@ For more information, see [Organize queries](organize-queries.md).
 
 ## Prerequisites
 
-- **Access levels**: At least **Basic** access.
-- **Permissions**: 
-  - To manage permissions, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).
-  - To create or edit a shared query, have your **Contribute** permission set to **Allow** for the shared query folder.  
-  - To change permissions of a query or query folder, have the **Manage Permissions** permission set to **Allow** for the query folder.
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels**| At least [**Basic** access](../../organizations/security/access-levels.md).|
+|**Permissions**| - To manage permissions, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).<br>- To create or edit a shared query, have your **Contribute** permission set to **Allow** for the shared query folder.<br>- To change permissions of a query or query folder, have the **Manage Permissions** permission set to **Allow** for the query folder.|
 
 Users with [Stakeholder access](../../organizations/security/stakeholder-access.md) can't create or save queries in a shared folder.
 

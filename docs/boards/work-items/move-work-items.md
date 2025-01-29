@@ -25,20 +25,18 @@ Work items categorized under the Requirements category appear on a team's backlo
 ::: moniker range="azure-devops"  
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
-
-- **Area Path permissions**: *View* and *Edit* work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
-- **Configured area paths**: Ensure that the target team has its Area Paths correctly configured. If not, set up the required Area Paths before transferring work items.
-- **Consistent process model**: Teams should be using a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.
-- **Backup work items**: We recommend you back up or export work items before performing bulk moves to prevent data loss if there's an error. 
-- **Tools**: To use Azure CLI commands, install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).   
+|**Area Path permissions**| **View** and **Edit** work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
+|**Configured area paths**| The target team has correctly configured Area Paths. If not, set up the required Area Paths before transferring work items.|
+|**Consistent process model**| Your team uses a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.|
+|**Backed up work items**| We recommend you back up or export work items before performing bulk moves to prevent data loss if there's an error. |
+|**Tools**| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md).   
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
-
-- **Area Path permissions**: Have permissions to view and edit work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
+|**Area Path permissions**| **View** and **Edit** work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
 
 ::: moniker-end  
 

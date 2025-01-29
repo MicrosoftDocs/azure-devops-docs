@@ -22,8 +22,7 @@ Attachments enhance work items by enabling you to share essential information wi
 ## Prerequisites
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
-
-- **Permanent deletion permissions**: To permanently delete attachments, have the **Permanently delete work items** permission set to **Allow**.
+|**Permanent deletion permissions**| To permanently delete attachments: **Permanently delete work items** permission set to **Allow**.|
 
 ## Manage attachments through the web portal
 

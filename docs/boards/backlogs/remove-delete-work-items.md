@@ -37,7 +37,7 @@ To move a work item from one project to another, or to change the work item type
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To remove, delete, and restore work items: M of the **Contributors** group.<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission.<br>- Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.|
+| **Permissions** | - To remove, delete, and restore work items: Member of the **Contributors** group.<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission.<br>- Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.|
 
 :::row:::
    :::column span="1":::
@@ -53,7 +53,7 @@ To move a work item from one project to another, or to change the work item type
       [Change state to **Remove** or **Cut**](#remove)
    :::column-end:::
    :::column span="2":::
-       - Have the **Area Path** permission set to **Allow**: **Edit work items in this node**
+       - **Area Path** permission set to **Allow**: **Edit work items in this node**
        - By default, members of the **Contributors** group have this permission.
    :::column-end:::
 :::row-end:::
@@ -63,8 +63,8 @@ To move a work item from one project to another, or to change the work item type
       [Restore work items](#restore)  
    :::column-end:::
    :::column span="2":::
-       - Have the project-level permission set to **Allow**: **Delete and restore work items**
-       - Have at least **Basic** access.
+       - Project-level permission set to **Allow**: **Delete and restore work items**
+       - At least [**Basic** access](../../organizations/security/access-levels.md).
        - By default, members of the **Contributors** group have this permission.
    :::column-end:::
 :::row-end:::
@@ -73,7 +73,7 @@ To move a work item from one project to another, or to change the work item type
       [Permanently delete or destroy work items](#restore-or-destroy-work-items)  
    :::column-end:::
    :::column span="2":::
-       - Have the project-level permission set to **Allow**: **Permanently delete work items**
+       - Project-level permission set to **Allow**: **Permanently delete work items**
        - By default, members of the **Project Administrators** group have this permission.
    :::column-end:::
 :::row-end:::
@@ -84,7 +84,7 @@ To move a work item from one project to another, or to change the work item type
       [Delete or destroy work items from the command line](#az-boards-cli)
    :::column-end:::
    :::column span="2":::
-       - Have the project-level permission set to **Allow**: **Permanently delete work items**
+       - Project-level permission set to **Allow**: **Permanently delete work items**
        - By default, members of the **Project Administrators** group have this permission.
    :::column-end:::
 :::row-end:::
