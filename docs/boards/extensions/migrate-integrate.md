@@ -34,18 +34,8 @@ The [Azure DevOps Migration Tools marketplace extension](https://github.com/nkdA
 - Edit work items in bulk
 - Migrate test suites and test plans 
 
-For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/) and [OM4ADO](https://www.opshub.com/products/opshub-azure-devops-migrator/).
+For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/).
 
-[OpsHub Migrator for Microsoft Azure DevOps](https://www.opshub.com/products/opshub-azure-devops-migrator/) (OM4ADO), formerly known as OpsHub Visual Studio Migration Utility(OVSMU), gives a seamless migration between Azure DevOps Server and Azure DevOps Services. Migrate projects from DevOps Services to a collection on DevOps Server including:  
-
-- Version control information and history
-- Work items and history
-- Test cases and test results
-- Iteration, Area Path, Group, Team, User
-- Dashboard, Query, Widget, and Pipeline
-- Supports Azure DevOps Server versions 2019 and later
-- Supports Azure DevOps Services
- 
 ## Migrate process models between Azure DevOps organizations
 
 The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.processtemplate) marketplace extension provides support to complete the following tasks:  
@@ -53,14 +43,6 @@ The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?
 - Upload an On-premises XML process model from an export 
 
 For constraints on process template definitions that you can import, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
-
-## Migrate between legacy tools and Azure DevOps
-
-[OpsHub Migration Manager](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OMM) supports full fidelity large-scale data migration projects out of the box between legacy or Application Lifestyle Management (ALM) tools and Azure DevOps. OpsHub Migration Manager (OMM) offers the following benefits:
-
-- Zero downtime migration or nondisruptive migration 
-- Factory approach for large-scale migration projects
-- Full fidelity migration with history preservation for all artifacts, comments, attachments, and relationships  
 
 ## Export and import work tracking data
 
@@ -85,16 +67,6 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 -  [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md) 
 -  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
 -  [Integrate with service hooks](../../service-hooks/overview.md)
-
-## Integrate with third-party tools using API
- [OpsHub Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/), allows you to integrate Azure DevOps (Server and Services) with other systems using API. This tool:
- 
-- Integrates work items (standard and custom), test entities, areas, iterations, pipelines
-- Integrates comments, attachments, links, images, mentions, project movements, and entity deletions
-- Integrates 1000+ projects
-- Plugs in custom integrations
-- Deploys on-premises or on-cloud
-- Integrates history  
 
 ## Project and portfolio management 
 
