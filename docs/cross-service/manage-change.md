@@ -44,7 +44,7 @@ Minimize unnecessary change by having the following details:
 ## Agile best practices for change management
 
 > [!NOTE]
-> *Agile is a project management approach that works by breaking projects into short, iterative cycles called “sprints”. At its core, Agile is based on the assumption that circumstances change as a project develops. That’s why, in an Agile project, the planning, design, development, and testing cycles are never done. They continue to change as the project takes form. &mdash;[IMA](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)*  
+> Agile is a project management approach that works by breaking projects into short, iterative cycles called “sprints”. At its core, Agile is based on the assumption that circumstances change as a project develops. That’s why, in an Agile project, the planning, design, development, and testing cycles are never done. They continue to change as the project takes form.  
 
 To mitigate problems that arise from change, Agile project managers adopt many best practices. These practices are divided into the following groups: [Control your process](#control-your-process), [Manage change at the product plan level](#manage-change-at-the-product-plan-level), [Manage your sprints](#manage-your-sprints), and [Consider change criteria](#consider-change-criteria). 
 
@@ -53,7 +53,7 @@ To mitigate problems that arise from change, Agile project managers adopt many b
 To support your change management process, meet both team and business objectives, minimize the number of approvals required to address changes, and assist your teams in their continual improvement processes.
 
 > [!TIP]
-> *Continuous improvement is a method to make sure that your processes, methods, and practices are as efficient and effective as possible. &mdash;[Agile and a continuous improvement mindset](https://scrumtraininginstitute.com/agile-scrum-training/agile-team-health-check/#:~:text=At%20the%20core%20of%20Agile%20continuous%20improvement%20is,your%20organization%20can%20develop%20a%20continuous%20improvement%20mindset)*  
+> Continuous improvement is a method to make sure that your processes, methods, and practices are as efficient and effective as possible. 
 
 ### Manage change at the product plan level   
 
@@ -142,9 +142,4 @@ Azure DevOps provides a robust alert system, where project members can [set aler
 
 ## Related articles 
 
-- [Five Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
-- [How to Create the Best Agile Change Management Process](https://www.mindville.com/blog/create-the-best-agile-change-management-process) 
-- [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/) 
-- [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
-- [Change Management meets Agile, how does that work?](https://www.andchange.com/themes/change-management-meets-agile/)
 - [What is Agile?](/devops/plan/what-is-agile)
