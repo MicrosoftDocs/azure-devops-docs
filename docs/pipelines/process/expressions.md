@@ -331,7 +331,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 
 ::: moniker range=">= azure-devops"
 ### iif
-* Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwize
+* Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwise
 * Min parameters: 1. Max parameters: 3
 * The first parameter must be a condition
 * Example: `iif(eq(variables['Build.Reason'], 'PullRequest'), 'ManagedDevOpsPool', 'Azure Pipelines')` returns 'ManagedDevOpsPool' when the pipeline runs in response to a PR.
