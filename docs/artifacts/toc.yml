@@ -253,8 +253,25 @@
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
       href: tutorials/powershell-upstream-source.md
+- name: Examples
+  items:
+  - name: NuGet
+    href: get-started-nuget.md
+  - name: npm
+    href: get-started-npm.md
+  - name: Maven
+    href: get-started-maven.md
+  - name: Python
+    href: quickstarts/python-packages.md
+  - name: Universal Packages
+    href: quickstarts/universal-packages.md
+  - name: Cargo
+    href: get-started-cargo.md
+  - name: PowerShell
+    items:
+    - name: Share PowerShell modules with Azure Artifacts
+      href: tutorials/private-powershell-library.md
   - name: Manage dependencies with upstream sources
-    displayName: dependencies, artifacts, upstreams, public package
     href: tutorials/protect-oss-packages-with-upstream-sources.md
 - name: Artifacts in Azure Pipelines
   items:
