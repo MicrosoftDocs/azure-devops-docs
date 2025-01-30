@@ -191,6 +191,6 @@ The following example restores a solution from a project-scoped feed in the same
 
 ## Related content
 
-- [Create your first pipeline](../../create-first-pipeline.md)
-- [Build, test, and deploy .NET Core apps](../../ecosystems/dotnet-core.md)
+- [Publish NuGet packages with Azure Pipelines](../../artifacts/nuget.md)
+- [Quickstart: Get started with NuGet packages in Azure Artifacts](../../../artifacts/get-started-nuget.md)
 - [Azure Pipelines agents](../../agents/agents.md#install)
