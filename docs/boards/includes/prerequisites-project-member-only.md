@@ -6,4 +6,6 @@ ms.topic: include
 ms.date: 01/13/2025
 ---
 
-**Access levels:** [Project member](../../organizations/security/add-users-team-project.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels**| [Project member](../../organizations/security/add-users-team-project.md)|

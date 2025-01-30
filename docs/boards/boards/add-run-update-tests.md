@@ -25,25 +25,23 @@ Tests that you create from the board automatically get linked to the user story 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- **Project and team access:**
-  - [Connect to a project](../get-started/sign-up-invite-teammates.md). If you don't have a project, create one.
-  - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
 
-- **Access levels:** To add work items, view or run tests, and use all boards features, have at least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Access levels** |To add work items, view or run tests, and use all boards features: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.|
+|**Permissions**|- To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).|
 
-- **Permissions:**
-  - To view or modify work items, set **View work items in this node** and **Edit work items in this node** permissions to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Project and team access:**
-  - [Connect to a project](../../organizations/projects/create-project.md). If you don't have a project, create one.
-  - [Add yourself to a team or project](../../organizations/security/add-users-team-project.md).
 
-- **Access levels:** To add work items, view or run tests, and use all board features, have at least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Access levels** |To add work items, view or run tests, and use all boards features: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.|
+|**Permissions**|- To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).|
 
-- **Permissions:**
-  - Set **View work items in this node** and **Edit work items in this node** permissions to **Allow** to view or modify work items. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
 ::: moniker-end
 
 ## Open your board from the web portal

@@ -30,11 +30,12 @@ To maximize the effectiveness of your backlog management, it's crucial to config
 
 ## Prerequisites
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
-- **Permissions**: Be a member of the **Contributors** group.
-- **Access levels**: 
-  - To reorder a backlog or use the Forecast tool, have at least **Basic** access. Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-- **Configured backlogs**: Ensure that both product and portfolio backlogs are set up for your team.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | Member of the **Contributors** group. |
+| **Access levels** | - To reorder a backlog or use the Forecast tool: At least **Basic** access. Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Configured backlogs** | Both product and portfolio backlogs set up for your team. |
 
 > [!TIP]
 > You can't sort your backlog directly by clicking on a column header. To view a sorted list, select **Create query** from your backlog. Save and open the query, then modify it to a flat list query if needed to apply sorting to the results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
@@ -301,6 +302,7 @@ The **Forecast** tool is only available for the product backlog. To forecast you
 5. Enter a velocity estimate in the **Forecasting based on velocity** box.  
 6. Review the forecast lines that appear, similar to the ones shown in the following image. 
 	:::image type="content" source="../sprints/media/forecast-s125.png" alt-text="Screenshot of backlog showing Forecast lines."::: 
+   
    The forecast tool doesn't reference any iteration assignments made to the product backlog items. 
 
 > [!TIP]  
