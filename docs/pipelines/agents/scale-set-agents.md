@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli, arm2024
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/24/2025
+ms.date: 01/30/2025
 monikerRange: azure-devops
 ---
 
@@ -149,10 +149,9 @@ In the following example, a new resource group and Virtual Machine Scale Set are
 > [!IMPORTANT]
 > Azure Pipelines does not support [instance protection](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection). Make sure you have the *scale-in* and *scale set actions* instance protections disabled.
 
-### Orchestration modes
-Azure virtual machine scale sets can be configured with two [orchestration modes](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes): Uniform and Flexible. Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
+### Orchestration mode
 
-The Flexible orchestration mode enables Azure Pipelines to queue multiple scale set operations in parallel. Azure Pipelines support for Flexible orchestration is available upon request and is subject to evaluation. Customers' usage patterns need to indicate a significant benefit from it. Such customers have large scale sets, do not reuse agents for multiple jobs, run multiple, short-lived jobs in parallel, and exclusively use ephemeral disks in their VMs. If you would like to use this feature, reach out to our [support team](https://azure.microsoft.com/support/devops/).
+Azure virtual machine scale sets can be configured with Uniform [orchestration mode](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes).Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
 
 ## Create the scale set agent pool
 
@@ -462,7 +461,7 @@ To delete the saved agent when you're done with your investigation, navigate to 
 
 - [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
   - [Create the scale set](#create-the-scale-set)
-    - [Orchestration modes](#orchestration-modes)
+    - [Orchestration mode](#orchestration-mode)
   - [Create the scale set agent pool](#create-the-scale-set-agent-pool)
   - [Use scale set agent pool](#use-scale-set-agent-pool)
   - [How Azure Pipelines manages the scale set](#how-azure-pipelines-manages-the-scale-set)
