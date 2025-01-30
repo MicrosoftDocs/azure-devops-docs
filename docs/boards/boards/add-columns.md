@@ -39,13 +39,11 @@ Managing columns on your board is essential for visualizing your team's workflow
 
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- **Tasks (optional):** To avoid revisiting your configuration, we recommend doing the following tasks before you begin to manage your board columns:
-   - [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)
-   - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)
-   - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)
-   - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-   - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels** | At least [**Basic**](../../organizations/security/access-levels.md) access.|
+|**Permissions** | To configure team settings: Member of the **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).|
+| **Tasks (optional)**| To avoid revisiting your configuration, we recommend doing the following tasks before you begin to manage your board columns: <br>- [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)<br> - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)<br> - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)<br> - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)<br> - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)|
 
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>

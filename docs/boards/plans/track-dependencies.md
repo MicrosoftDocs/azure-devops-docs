@@ -27,18 +27,10 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 
 ## Prerequisites
 
-**Permissions**: 
-- To view a Delivery Plan, be a member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
-- To open or modify a work item or add work items, have the **Edit work items in this node** set to **Allow** for the Area Paths assigned to the work item.  
-
-**For work items and dependency lines to appear on the plan** 
-- [Enable a team product or portfolio backlog](../../organizations/settings/select-backlog-navigation-levels.md) to select it for a plan. 
-- Ensure work items belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items belonging to a category selected for viewing on a team's backlog and meet any [field criteria defined for the plan](add-edit-delivery-plan.md#field-criteria) appear on the plan. 
-- [Select sprints for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.
-- [Define start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) for each project iteration.
-- Assign [**Iteration Paths**](../sprints/assign-work-sprint.md) or [**Start Date/Target Date**](../queries/query-by-date-or-current-iteration.md#date-and-iteration-path-fields) to each work item. When defined, **Start Date/Target Date** overrides the sprint assigned to a work item. 
-- To show dependency icons and lines, [link work items](../backlogs/add-link.md) using **Predecessor-Successor** link type. 
-- Expand your team to view dependency icons and dependency lines. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To view a Delivery Plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.<br> - To open or modify a work item or add work items: **Edit work items in this node** permission set to **Allow** for the Area Paths assigned to the work item. |
+| **Configuration** |- For work items and dependency lines to appear on the plan: [Enable a team product or portfolio backlog](../../organizations/settings/select-backlog-navigation-levels.md) to select it for a plan.<br> - Work items belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items belonging to a category selected for viewing on a team's backlog and meet any [field criteria defined for the plan](add-edit-delivery-plan.md#field-criteria) appear on the plan. <br> - [Sprints selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br> - [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) defined for each project iteration.<br> - [**Iteration Paths**](../sprints/assign-work-sprint.md) or [**Start Date/Target Date**](../queries/query-by-date-or-current-iteration.md#date-and-iteration-path-fields) defined for each work item. When defined, **Start Date/Target Date** overrides the sprint assigned to a work item.<br> - To show dependency icons and lines:  [Work items](../backlogs/add-link.md) linked using **Predecessor-Successor** link type.<br> - Team expanded to view dependency icons and dependency lines. |
 
 > [!TIP]  
 > If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.  

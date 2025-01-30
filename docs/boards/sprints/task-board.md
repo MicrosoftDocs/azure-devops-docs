@@ -35,12 +35,12 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ## Prerequisites
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
-* **Permissions**: 
-  * Be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-  * To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* **Access levels**: To add work items and exercise all board features, have at least **Basic** access.
-* **Sprint backlog**: If you haven't yet, [add tasks to your sprint backlog](add-tasks.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| **Access levels** | To add work items and exercise all board features: At least [**Basic** access](../../organizations/security/access-levels.md). |
+| **Sprint backlog** | [Tasks on your sprint backlog](add-tasks.md). |
 
 ::: moniker range=">= azure-devops-2022"
 
