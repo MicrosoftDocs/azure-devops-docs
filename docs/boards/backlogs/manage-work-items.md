@@ -69,6 +69,8 @@ You can also view work items from Visual Studio, Azure DevOps CLI, or the REST A
 
 For more information, see [View and add work items](../work-items/view-add-work-items.md).
 
+When you **[integrate Azure DevOps (ADO, VSTS) with other tools](https://www.opshub.com/products/opshub-integration-manager?utm_source=Microsoft.Learn.com&utm_medium=Referrals&utm_campaign=Manage+Work+Items+in+Azure+DevOps+article)**, work items will be automatically synced from source system to the target system and vice versa. Also, changes to the work item will be syncronized bidirectionally. This means that changes made in one tool, like updates to the status or assigned person, will be reflected in the other tool as well. This helps keep all systems in sync without having to manually update each one, improving the accuracy and efficiency of work item tracking. For example, when the support team marks an incident as "Escalated" in ServiceNow, it automatically syncs to ADO as a work item for the development team to prioritize. As developers update statuses, comments, and resolutions in ADO, these changes sync back to ServiceNow. Once the ADO work item is marked "Resolved", the corresponding ServiceNow incident is updated, allowing the support team to review the resolution and communicate it to the customer. 
+
 ## Link Work Items
 
 Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to your work items. For more information, see [Link work items to objects](add-link.md).
