@@ -97,7 +97,6 @@ The name of an output variable may change if your pipeline uses an [execution st
   displayName: 'Print all variables'
 ```
 
-
 ## Set an output variable for use in the same job
 
 When you use an output variable in the same job, you don't have to use the `isOutput` property. By default, the variable is available to downstream steps within the same job. However, if you do add the `isOutput` property, you need to reference the variable with the task name. 
