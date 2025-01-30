@@ -90,6 +90,14 @@ There are four different types of output variables with distinct syntaxes:
 > [!NOTE]
 > Future stages or jobs can only access output variables if they depend on the stage or job where the variable was set. To make an output variable accessible, make sure that the next stage or job depends on the stage or job where you created the variable. If multiple stages or jobs need to use the same output variable, use the `dependsOn` condition to establish this dependency.
 
+The name of an output variable may change if your pipeline uses an [execution strategy like a matrix job](/azure/devops/pipelines/yaml-schema/jobs-job-strategy). For those cases, output your variable for testing first to verify its name. You can also print out all available variables in a pipeline with the script `env`. 
+
+```yaml
+- script: env
+  displayName: 'Print all variables'
+```
+
+
 ## Set an output variable for use in the same job
 
 When you use an output variable in the same job, you don't have to use the `isOutput` property. By default, the variable is available to downstream steps within the same job. However, if you do add the `isOutput` property, you need to reference the variable with the task name. 
