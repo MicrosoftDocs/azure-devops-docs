@@ -216,6 +216,20 @@ If you define custom fields in the change request, you must [add mapping for cus
 
 Change Management Core and Change Management - State Model plugins must be active on your ServiceNow instance for the dropdowns to work. For more information, see [Upgrade change management](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html) and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/state-model-activate-tasks.html).
 
+### Are there any other tools that can help to integrate Azure pipelines with ServiceNow change management?
+
+Yes, the integration can be implemented using [OpsHub integration tool](https://www.opshub.com/products/opshub-integration-manager/?utm_source=Microsoft.Learn.com&utm_medium=Referrals&utm_campaign=+Integrate+Azure+Pipelines+with+ServiceNow+Change+Management+article) that allows you to bi-directionally synchronize data between Azure pipelines and ServiceNow change management. For example, when a new release or deployment is triggered in Azure, a corresponding change request can be automatically created in ServiceNow. Similarly, any updates made to development tasks or incidents in either system will be automatically reflected in the other system, ensuring that both teams always have the most up-to-date information. This flow of data helps maintain consistency and accuracy between development and IT operations, reducing manual intervention and ensuring that critical changes are tracked in both systems.
+
+ #### How it works: 
+
+- **Connection setup**: Establish a secure connection between your Azure DevOps and ServiceNow instances. Configure authentication and authorization settings for seamless data flow. 
+
+- **Field mapping**: Map relevant fields between Azure pipelines entities (e.g., releases, deployments, work items) and ServiceNow change management records (e.g., change request).This ensures accurate data transfer and maintains consistency between systems. 
+
+- **Workflow automation:** Trigger actions in ServiceNow based on events in Azure pipelines (e.g., create a change request when a release is initiated). 
+
+
+
 ## Resources
 
 - [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
