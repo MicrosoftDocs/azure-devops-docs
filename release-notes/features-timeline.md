@@ -186,9 +186,9 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
       </tr>  
        <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
-         <td>2025 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>
       </tr>       
       <tr>
          <td>
@@ -217,12 +217,7 @@ These investments include:
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo" data-raw-source="[Report stage status to work item when using a YAML release pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo)">Report stage status to work item when using a YAML release pipeline with GitHub repository</a></td>
-         <td>Boards</td>
-         <td>Future</td>
-      </tr>       
+      </tr>          
     </tbody>
 </table>
 
@@ -454,12 +449,16 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="10"><strong>2025 Q2</strong></td>
+      <td rowspan="11"><strong>2025 Q2</strong></td>
         <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
          <td>Boards</td>         
       </tr> 
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
+        <td>Boards</td>
+      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>

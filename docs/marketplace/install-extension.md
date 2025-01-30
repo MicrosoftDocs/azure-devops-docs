@@ -24,18 +24,18 @@ For more information about extensions, see the [developing](../extend/overview.m
 
 ::: moniker range="azure-devops"
 
-- **Permissions:** Be a member of the Project Collection Administrators group to install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
-- **Extension sharing:** Private extensions must be shared with your organization to be installed. For more information about sharing private extensions, see the [publishing documentation](../extend/publish/overview.md).
+- **Permissions:** Member of the Project Collection Administrators group. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+- **Extension sharing:** Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- **Permissions:** Be a member of the Project Collection Administrators group or have "Edit collection-level information" permissions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
-- **Extension sharing:** Private extensions must be shared with your organization to be installed. For more information about sharing private extensions, see the [publishing documentation](../extend/publish/overview.md).
+- **Permissions:** Member of the Project Collection Administrators group or **Edit collection-level information** permissions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+- **Extension sharing:** Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).
 
 > [!NOTE]
-> To use an existing Azure subscription for billing, you need at least co-administrator permissions for that subscription. If you don't have permissions, an Azure Account Administrator or Service Administrator can [add you as co-administrator](/azure/billing-add-change-azure-subscription-administrator) to the Azure subscription in the Azure portal.
+> To use an existing Azure subscription for billing, have at least co-administrator permissions for that subscription. If you don't have permissions, an Azure Account Administrator or Service Administrator can [add you as co-administrator](/azure/billing-add-change-azure-subscription-administrator) to the Azure subscription in the Azure portal.
 
 Your project collection reuses your Azure subscription for future Marketplace purchases. [Where can I find more info about Azure billing?](faq-extensions.yml)
 

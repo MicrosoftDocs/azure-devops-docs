@@ -18,6 +18,10 @@ ms.date: 01/05/2024
 
 Use the *Filter pages* feature in the table of contents (TOC) to focus on a single page or several pages. Or, [search](../search/get-started-search.md) to find pages containing a phrase or keyword.
 
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
+
 ## Filter wiki pages
 
 Enter a title, keyword, or character string into the **Filter pages by title** box to quickly find pages whose title contains the keyword.

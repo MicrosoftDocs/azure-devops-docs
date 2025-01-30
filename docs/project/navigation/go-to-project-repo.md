@@ -15,14 +15,13 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
 
 Also, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 ## Prerequisites 
  
-* Be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+[!INCLUDE [prerequisites-contributor-only](../../includes/prerequisites-contributor-only.md)]
  
 ::: moniker range="azure-devops"  
 

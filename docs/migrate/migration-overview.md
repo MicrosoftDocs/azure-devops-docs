@@ -78,11 +78,11 @@ You can purge data that you don’t need before or after the migration.
 1. Prepare everything for your migration execution. 
 1. Perform a test run. 
 1. Carry out a migration. 
-1. Confirm that your users and data got migrated, and the collection is functioning as expected. 
+1. Confirm that your users and data got migrated, and the collection is functioning as expected.
 
 ## Option 3: API-based migration
 
-If for some reason you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), you can choose from various tools that use public APIs to move data.  
+If for some reason you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), you can choose from various tools that use public APIs to move data.
 
 ## API-based migration limitations
 

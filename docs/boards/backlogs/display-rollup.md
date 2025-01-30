@@ -36,18 +36,22 @@ In the following example, **Progress by Work Items** displays progress bars for 
 
 ::: moniker range=" azure-devops"
 
-- **Permissions:** Be a member of the **Project Collection Valid Users Group** to view delivery plans and rollup progress.
-- **Access levels:** Have one of the following access levels assigned to you:
-  - **Basic:** Provides full access to all Azure Boards features, including viewing and modifying work items.
-  - **Stakeholder:** Allows viewing and modifying work items but with limited features.
-- **Use parent-child links:** Ensure that your work items are linked using parent-child relationships to support rollup.
-- **Add required fields:** Make sure that the fields you want to roll up are present in the work item types.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | To view delivery plans and rollup progress: Member of the **Project Collection Valid Users Group**. |
+| **Access levels** | One of the following access levels assigned: <br> - [**Basic:**](../../organizations/security/access-levels.md) Full access to all Azure Boards features, including viewing and modifying work items. <br> - **Stakeholder:** View and modify work items with limited features. |
+| **Use parent-child links** | Work items linked using parent-child relationships to support rollup. |
+| **Add required fields** | The fields you want to roll up are present in the work item types. |
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- Enable the Analytics service on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
-- **Use parent-child links:** Ensure that your work items are linked using parent-child relationships to support rollup.
-- **Add required fields:** Make sure that the fields you want to roll up are present in the work item types.
+
+| Category | Requirements |
+|--------------|-------------|
+|**Analytics service** |Analytics service enabled on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).|
+| **Parent-child links** | Work items linked using parent-child relationships to support rollup. |
+| **Required fields** | The fields you want to roll up are present in the work item types. |
 
 ::: moniker-end
 
@@ -91,8 +95,9 @@ Each user can customize their column options, and these settings persist across 
 
 1. Open a product or portfolio backlog. Optionally, enable **Show parents** in your view options. Even if child items aren't listed, rollup for them displays.
 
-Open a portfolio backlog and select **In Progress Items** and **Completed Child Items**. This allows you to compare the State value of items with the rollup value.
-![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
+   Open a portfolio backlog and select **In Progress Items** and **Completed Child Items**. This allows you to compare the State value of items with the rollup value.
+
+   ![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
 
 2. Select **Column options**, or select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**.
    
