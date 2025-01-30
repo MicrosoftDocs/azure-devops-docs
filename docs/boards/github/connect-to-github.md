@@ -21,11 +21,10 @@ Use GitHub.com repositories for your software development and your Azure Boards 
 
 ## Prerequisites 
 
-- **Project requirements:** Have an Azure DevOps project. If you don't have a project, [create one](../get-started/sign-up-invite-teammates.md).
-
-- **Permissions:**
-  - Be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). If you created the project, you have permissions.
-  - Be an administrator or owner of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub repository to connect to. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. |
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 ## Authentication options
 
@@ -54,7 +53,7 @@ The following authentication options are supported based on the GitHub platform 
 > [!NOTE]
 > If you choose to connect GitHub with a PAT, configure single sign-on (SSO) for the PAT on your GitHub account. This configuration is necessary to retrieve a list of repositories from an organization with Security Assertion Markup Language (SAML) SSO authentication enabled.
  
-## Connect Azure Boards to a GitHub repo.
+## Connect Azure Boards to a GitHub repo
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).  
 

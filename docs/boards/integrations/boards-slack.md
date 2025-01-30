@@ -31,9 +31,11 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 
 ## Prerequisites
 
-- **Access levels**: To create a work item, be a **Contributor** for the project.
-- **Permissions**: To create subscriptions in a Slack channel for work item events, be a member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group  or [Team Administrators](../../organizations/settings/add-team-administrator.md) group.
-- **Policies**: To receive notifications, [enable the **Third party application access via OAuth** policy for the organization](../../organizations/accounts/change-application-access-policies.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | **Contributor** for the project. |
+| **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
+| **Policies** | To receive notifications: [**Third party application access via OAuth** policy enabled for the organization](../../organizations/accounts/change-application-access-policies.md). |
 
 ## Add the Azure Boards app to your Slack workspace
 
@@ -143,7 +145,8 @@ access to the discussion that led to the creation of the work item.
 
 	This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
-[!NOTE]Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+> [!NOTE]
+> Team administrators can't remove or modify subscriptions created by Project administrators.
 
 ![Pic: View subscriptions](./media/integrations-slack/view-subscriptions.png)
 
