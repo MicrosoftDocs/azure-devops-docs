@@ -166,15 +166,6 @@ If you want to remove a link, you can do so from the **Development** section by 
 
 Or, you can select it from the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab and choose **Actions** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: for the link and then choose the **Remove link** :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: option.
 
-## Related articles
-
-- [Learn about Azure DevOps cross-service](../../cross-service/cross-service-overview.md)
-- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
-- [Add work items](add-work-items.md)  
-- [Learn about Git](../../repos/git/index.yml) 
-- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
-- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
-
 ### Associated work items in build 
 
 With Git commits, any work items that were linked to a commit are listed under the Associated work items in the build summary page.  
@@ -196,12 +187,19 @@ The link types you can add within the development section are Branch, Build, Cha
 
 ![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
 
-::: moniker-end
-
 ::: moniker range="=azure-devops-2019"
 For more information about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
  
 ::: moniker-end
+
+## Related articles
+
+- [Learn about Azure DevOps cross-service](../../cross-service/cross-service-overview.md)
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
+- [Add work items](add-work-items.md)  
+- [Learn about Git](../../repos/git/index.yml) 
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
 <!---
 and only work with the current build processes (not XAML builds)

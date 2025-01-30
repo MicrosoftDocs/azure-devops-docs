@@ -464,7 +464,7 @@ Along with the standard filter functions summarized in the previous table, the f
         
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 6)  
+      ✔️ (Note 5)  
    :::column-end:::
    :::column span="1":::
             
@@ -484,7 +484,7 @@ Along with the standard filter functions summarized in the previous table, the f
         
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 7)  
+      ✔️ (Note 6)  
    :::column-end:::
    :::column span="1":::
         
@@ -664,7 +664,7 @@ Along with the standard filter functions summarized in the previous table, the f
 
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 6)  
+      ✔️ (Note 5)  
    :::column-end:::
    :::column span="1":::
         
@@ -681,7 +681,7 @@ Along with the standard filter functions summarized in the previous table, the f
 
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 7)  
+      ✔️ (Note 6)  
    :::column-end:::
    :::column span="1":::
         
@@ -700,9 +700,8 @@ Along with the standard filter functions summarized in the previous table, the f
 2. Grouping is supported through portfolio backlogs and boards, parent-child links, and tree hierarchy. Tree hierarchies are flattened when filtering is applied and reinstated when filtering is cleared.  
 3. **Backlogs** and **Sprint Backlogs** support reordering. However, when filtering is enabled, reordering isn't supported.
 4. **Taskboards** provides a **Group by** function based on **People** or **Stories**.  
-5. **Query Results** supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
-7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
+5. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
+6. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -775,7 +774,6 @@ To add columns or fields, see the following articles:
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of choosing Filter function.](media/filter-boards/filter-kb-choose-filter-services.png)
-	::: moniker-end
 
 5. Choose your filters of interest. 
 

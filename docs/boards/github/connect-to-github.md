@@ -53,7 +53,7 @@ The following authentication options are supported based on the GitHub platform 
 > [!NOTE]
 > If you choose to connect GitHub with a PAT, configure single sign-on (SSO) for the PAT on your GitHub account. This configuration is necessary to retrieve a list of repositories from an organization with Security Assertion Markup Language (SAML) SSO authentication enabled.
  
-## Connect Azure Boards to a GitHub repo.
+## Connect Azure Boards to a GitHub repo
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).  
 

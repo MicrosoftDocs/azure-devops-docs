@@ -352,6 +352,6 @@ When it updates, the section should appear as follows.
 
 ## Related articles
 
-- [Learn about Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Learn about Azure Boards](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)

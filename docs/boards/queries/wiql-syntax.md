@@ -197,7 +197,7 @@ Each filter condition is composed of three parts, each of which must conform to 
 - **Operator**: Valid values are specified in the [Operators](#operators) section later in this article. 
 - **Field value**: You can specify one of the following three values depending on the field specified.  
 	- A *literal value* must match the data type of the field value. 
-	- A *variable or macro that indicates a certain value. For example, **@Me** indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article.
+	- A *variable* or macro that indicates a certain value. For example, **@Me** indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article.
 	- The name of another *field*. For example, you can use `[Assigned to] = [Changed by]` to find work items that are assigned to the person who changed the work item most recently.
 
 For a description and reference names of all system-defined fields, see [Work item field index](../work-items/guidance/work-item-field.md).

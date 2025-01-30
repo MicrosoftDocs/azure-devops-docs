@@ -302,6 +302,7 @@ The **Forecast** tool is only available for the product backlog. To forecast you
 5. Enter a velocity estimate in the **Forecasting based on velocity** box.  
 6. Review the forecast lines that appear, similar to the ones shown in the following image. 
 	:::image type="content" source="../sprints/media/forecast-s125.png" alt-text="Screenshot of backlog showing Forecast lines."::: 
+   
    The forecast tool doesn't reference any iteration assignments made to the product backlog items. 
 
 > [!TIP]  

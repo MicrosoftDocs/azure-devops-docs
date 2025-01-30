@@ -77,8 +77,6 @@ To move a work item from one project to another, or to change the work item type
        - By default, members of the **Project Administrators** group have this permission.
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= azure-devops"
 :::row:::
    :::column span="1":::
       [Delete or destroy work items from the command line](#az-boards-cli)
@@ -88,7 +86,6 @@ To move a work item from one project to another, or to change the work item type
        - By default, members of the **Project Administrators** group have this permission.
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ---
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../get-started/permissions-access-boards.md).  

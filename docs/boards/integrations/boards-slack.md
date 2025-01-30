@@ -145,7 +145,8 @@ access to the discussion that led to the creation of the work item.
 
 	This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
-[!NOTE]Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+> [!NOTE]
+> Team administrators can't remove or modify subscriptions created by Project administrators.
 
 ![Pic: View subscriptions](./media/integrations-slack/view-subscriptions.png)
 

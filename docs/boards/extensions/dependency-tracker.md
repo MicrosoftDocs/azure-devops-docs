@@ -577,7 +577,7 @@ The following table describes each of the property items specified in the config
 :::row-end:::
 :::row:::
    :::column span="1":::
-   riskAssessementValues
+   riskAssessmentValues
    
    > Specifies the [Risk](../queries/planning-ranking-priorities.md#risk) field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. 
 

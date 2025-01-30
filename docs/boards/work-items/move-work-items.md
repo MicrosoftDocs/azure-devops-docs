@@ -24,22 +24,25 @@ Work items categorized under the Requirements category appear on a team's backlo
 
 ::: moniker range="azure-devops"  
 
-[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
-
 | Category | Requirements |
 |--------------|-------------|
-|**Area Path permissions**| **View** and **Edit** work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
+| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including those in the **Readers** group, can send emails containing work items. |
+|**Area Path permissions**| **View** and **Edit** work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).|
 |**Configured area paths**| The target team has correctly configured Area Paths. If not, set up the required Area Paths before transferring work items.|
 |**Consistent process model**| Your team uses a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.|
 |**Backed up work items**| We recommend you back up or export work items before performing bulk moves to prevent data loss if there's an error. |
-|**Tools**| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md).   
+|**Tools**| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md). |  
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
 
-[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
-|**Area Path permissions**| **View** and **Edit** work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including those in the **Readers** group, can send emails containing work items. |
+|**Area Path permissions**| **View** and **Edit** work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).|
 
 ::: moniker-end  
 
@@ -48,14 +51,14 @@ Work items categorized under the Requirements category appear on a team's backlo
 To move work items under a team, do the following steps:
 
 1. [Create a query](../queries/using-queries.md) of all work items you want to reassign. 
+   
+2. Multi-select those items, which belong to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md).
 
-1. Multi-select those items, which belong to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md).
-
-  ![Screenshot of Web portal, Queries page, Bulk modify select work items.](media/move-work-items/query-bulk-edit-area-path.png)
+   ![Screenshot of Web portal, Queries page, Bulk modify select work items.](media/move-work-items/query-bulk-edit-area-path.png)
   
-1. After you bulk modify, bulk save.
+3. After you bulk modify, bulk save.
   
-  ![Screenshot of Bulk save edited work items.](media/move-work-items/query-bulk-save.png)
+   ![Screenshot of Bulk save edited work items.](media/move-work-items/query-bulk-save.png)
 
 <a id="move-work-items"></a> 
 

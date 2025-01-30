@@ -95,8 +95,9 @@ Each user can customize their column options, and these settings persist across 
 
 1. Open a product or portfolio backlog. Optionally, enable **Show parents** in your view options. Even if child items aren't listed, rollup for them displays.
 
-Open a portfolio backlog and select **In Progress Items** and **Completed Child Items**. This allows you to compare the State value of items with the rollup value.
-![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
+   Open a portfolio backlog and select **In Progress Items** and **Completed Child Items**. This allows you to compare the State value of items with the rollup value.
+
+   ![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
 
 2. Select **Column options**, or select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**.
    
