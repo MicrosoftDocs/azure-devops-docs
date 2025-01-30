@@ -194,7 +194,7 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 > [!IMPORTANT]
 > Caution must be exercised when making changes directly to the scale set in the Azure portal.
-> - You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
+> - You may not change many of the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
 > - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
 
 ## How Azure Pipelines manages the scale set
