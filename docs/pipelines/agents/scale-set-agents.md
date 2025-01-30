@@ -26,7 +26,7 @@ If you like Microsoft-hosted agents but are limited by what they offer, you shou
 - You need to open corporate firewall to specific IP addresses so that Microsoft-hosted agents can communicate with your servers.
 - You need to restrict network connectivity of agent machines and allow them to reach only approved sites.
 - You can't get enough agents from Microsoft to meet your needs.
-- Your jobs exceed the Microsoft-hosted agent timeout.
+- Your jobs exceed the Microsoft-hosted agent time-out.
 - You can't partition Microsoft-hosted parallel jobs to individual projects or teams in your organization.
 - You want to run several consecutive jobs on an agent to take advantage of incremental source and machine-level package caches.
 - You want to run configuration or cache warmup before an agent begins accepting jobs.
