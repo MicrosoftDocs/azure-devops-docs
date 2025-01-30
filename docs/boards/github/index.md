@@ -59,6 +59,13 @@ You can start from either Azure Boards or GitHub to integrate and connect up to 
 > [!IMPORTANT]   
 > We recommend that you use the [Azure Boards app for GitHub](install-github-app.md) to configure and manage your connections to GitHub.com. The app provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. Once you're connected, you can manage the repositories either from Azure Boards or GitHub.com.
 
+> You may also consider [Opshub Integration Manager (OIM)](https://www.opshub.com/products/opshub-integration-manager/?utm_source=Microsoft.Learn.com&utm_medium=Referrals&utm_campaign=Azure+Boards-GitHub+integration+article) for integrating Azure DevOps with GitHub to automate state transitions in Azure DevOps (ADO, VSTS) based on GitHub commits. This sync tool reduces manual effort and improves traceability by providing real-time visibility into commit activity and trends. For example, when a developer makes a commit in GitHub, the corresponding commit details (including commit messages and changes) will be automatically synced into Azure DevOps work items. So,the project manager and the teams using ADO are able to see exactly which work items (tasks, bugs, or features) were affected by specific commits, all within ADO's interface. If a pull request is created in GitHub, the integration will reflect the PR status in ADO, ensuring that the development process is visible and traceable across both platforms without needing to manually update work items. The tool allows you to: 
+- **Synchronize comprehensive data:** Ensure that commits, comments, attachments, links, and entity mention are kept in sync while maintaining data integrity 
+- **Scale across large teams and multiple projects:** Synchronize issues across 1000+ projects and growing teams without impacting system performance
+- **Manage issues and projects:** Move issues between projects while preserving hierarchy and avoiding duplicates, even when issue types change
+
+Once connected, you can manage and track development progress directly from either Azure DevOps or GitHub, ensuring a more integrated and efficient workflow. 
+
 ## Use integration features
 
 You can do the following tasks with Azure Boards-GitHub integration:
