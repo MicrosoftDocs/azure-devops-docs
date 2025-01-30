@@ -39,3 +39,4 @@ Before you start the integration process, ensure you have the following items:
 ## Resources
 
 - [REST API reference](/rest/api/azure/devops/)
+- [Azure DevOps security overview](../organizations/security/security-overview.md)
