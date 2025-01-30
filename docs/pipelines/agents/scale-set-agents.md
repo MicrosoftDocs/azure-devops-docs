@@ -151,7 +151,7 @@ In the following example, a new resource group and Virtual Machine Scale Set are
 
 ### Orchestration mode
 
-Azure virtual machine scale sets can be configured with Uniform [orchestration mode](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes).Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
+Azure virtual machine scale sets can be configured with Uniform [orchestration mode](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes). Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
 
 ## Create the scale set agent pool
 
