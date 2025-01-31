@@ -189,6 +189,9 @@ The following example restores a solution from a project-scoped feed in the same
     restoreSolution: '**/*.sln'
 ```
 
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+
 ## Related content
 
 - [Publish NuGet packages with Azure Pipelines](../../artifacts/nuget.md)

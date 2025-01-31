@@ -68,6 +68,9 @@ This task will only run if the `CACHE_RESTORED` variable is false.
     restoreSolution: '**/*.sln'
 ```
 
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+
 If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command is executed, generating your project.assets.json file. The restore task won't download packages that are already present in your corresponding folder.
 
 > [!NOTE]

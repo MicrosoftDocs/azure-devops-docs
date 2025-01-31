@@ -46,6 +46,9 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 ## Publish packages
 
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+
 #### [YAML](#tab/yaml/)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
