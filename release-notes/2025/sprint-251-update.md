@@ -2,7 +2,7 @@
 title: TBA
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/6/2024
+ms.date: 2/6/2025
 description: TBA
 ---
 # TBA
@@ -15,6 +15,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-251-update-links](includes/general/sprint-251-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-251-update-links](includes/ghazdo/sprint-251-update-links.md)]
+
 ### Azure Pipelines
 
 [!INCLUDE [sprint-251-update-links](includes/pipelines/sprint-251-update-links.md)]
@@ -26,6 +30,10 @@ Check out the release notes for details.
 ## General
 
 [!INCLUDE [sprint-251-update](includes/general/sprint-251-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-251-update](includes/ghazdo/sprint-251-update.md)]
 
 ## Azure Pipelines
 
