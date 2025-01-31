@@ -330,7 +330,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Example: `in('B', 'A', 'B', 'C')` (returns True)
 
 ::: moniker range=">= azure-devops"
-### iif
+### iff
 * Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwize
 * Min parameters: 1. Max parameters: 3
 * The first parameter must be a condition
