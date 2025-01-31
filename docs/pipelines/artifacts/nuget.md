@@ -28,6 +28,9 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 
 - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
 
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use `NuGetAuthenticate@1` with .NET CLI instead of *nuget.exe*. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+
 ## Publish NuGet packages to a feed in the same organization
 
 > [!NOTE]
