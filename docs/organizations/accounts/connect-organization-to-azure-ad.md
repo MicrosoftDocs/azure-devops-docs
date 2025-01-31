@@ -21,19 +21,12 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 ## Prerequisites
 
-- [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-
-- **Access levels:**
-  - Be a member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).
-  - Be a member or a guest in the source Microsoft Entra ID.
-
-- **User management:** 
-  - Confirm there are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Microsoft Entra identities in the new tenant.
-  - Don't add the users from the destination Microsoft Entra ID into the Azure DevOps organization.
-  - Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
-
-- Inform users of the upcoming change. There's no downtime during this change, but users are affected. Let them know before you begin that there's a short [series of steps](#inform-users-microsoft-entra-change) they need to complete. As your company transitions from Microsoft account (MSA) to Microsoft Entra identities, your users' benefits continue with their new identity, as long as their emails match.
-- Compare your Azure DevOps email list with your Microsoft Entra ID email list. Create a Microsoft Entra ID email address entry for every user who's in the Azure DevOps organization and not in the Microsoft Entra ID. Afterward, you can [invite users as guests](add-external-user.md) who don't have Microsoft Entra ID email addresses.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Access levels**|- Member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).<br>- Member or a guest in the source Microsoft Entra ID.|
+|**User management** |- 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Microsoft Entra identities in the new tenant.<br>- Don't add the users from the destination Microsoft Entra ID into the Azure DevOps organization.<br>- Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.<br>- Inform users of the upcoming change. There's no downtime during this change, but users are affected. Let them know before you begin that there's a short [series of steps](#inform-users-microsoft-entra-change) they need to complete. As your company transitions from Microsoft account (MSA) to Microsoft Entra identities, your users' benefits continue with their new identity, as long as their emails match.<br>- Compare your Azure DevOps email list with your Microsoft Entra ID email list. Create a Microsoft Entra ID email address entry for every user who's in the Azure DevOps organization and not in the Microsoft Entra ID. Afterward, you can [invite users as guests](add-external-user.md) who don't have Microsoft Entra ID email addresses.|
+|**SSH keys** |Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. Find the steps for how to recreate SSH keys [further in this article](#inform-users-microsoft-entra-change). For more information, see the [FAQ](faq-azure-access.yml).|
     
 > [!NOTE]
 > Ensure you're using Microsoft Entra Public. Connecting Azure DevOps Services organizations to Microsoft Entra Government and accessing Azure DevOps Services with user accounts from Microsoft Entra Government isn't supported.

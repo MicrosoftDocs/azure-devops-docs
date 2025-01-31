@@ -32,9 +32,11 @@ When you delete your organization, the following results occur:
 
 ## Prerequisites
 
-- [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-- **Access levels:** Have at least Basic access.
-- **Subscription:** If your organization uses an Azure subscription for billing, [remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before deleting it in Azure DevOps.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Access levels**| At least **Basic** access.|
+|**Subscription** |If your organization uses an Azure subscription for billing, [remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before deleting it in Azure DevOps.|
 
 ## Delete organization
 

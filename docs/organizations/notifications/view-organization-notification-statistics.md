@@ -19,6 +19,10 @@ Notification statistics show the top 10 most active subscriptions and top event 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+
 ## View notification statistics for organization
 
 1. [Open organization notifications settings](navigating-the-ui.md#open-org-level).
@@ -28,12 +32,12 @@ Notification statistics show the top 10 most active subscriptions and top event 
 > [!div class="mx-imgBorder"] 
 >![Screenshot shows organization notification settings delivery option.](media/view-organization-notification-stats.png)
 
-#### Notes:
-
-* A context menu (`...`) on the most active subscriptions provides the option to edit, disable, or delete the subscription
-* Both email and service hooks subscriptions are eligible for the most active subscriptions
-* The integer subscription ID is shown in the description for a custom email subscription
-* Results aren't a sliding 24-hour window and reset at the beginning of each day (00:00 UTC)
+> [!NOTE]
+> Information the user should notice even if skimming.
+>* A context menu (`...`) on the most active subscriptions provides the option to edit, disable, or delete the subscription.
+>* Both email and service hooks subscriptions are eligible for the most active subscriptions.
+>* The integer subscription ID is shown in the description for a custom email subscription.
+>* Results aren't a sliding 24-hour window and reset at the beginning of each day (00:00 UTC).
 
 ## Related articles
 

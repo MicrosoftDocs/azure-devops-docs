@@ -73,6 +73,10 @@ Use the **@mention** control to start or continue a discussion in the following 
 
 ::: moniker-end
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+
 ## Identity search selection
 
 1. Enter **@** in a code comment in a pull request to trigger the **@mention** people picker.

@@ -49,12 +49,11 @@ Access is restricted for users who aren't signed in (anonymous/public users) and
 
 ## Prerequisites
 
-- [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-- **Organization:** Have [an organization](../../user-guide/sign-up-invite-teammates.md) in Azure DevOps.
-- **Awareness:** 
-  - Understand [access levels and unavailable features for public projects](#).
-  - Be aware of [partial migration options](#partial-migration).
-  - Review items in the [migration checklist](#migration-checklist). 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Organization** |An [organization](../../user-guide/sign-up-invite-teammates.md).|
+|**Tasks**| - Understand [access levels and unavailable features for public projects](access-levels).<br>- Awareness of [partial migration options](#partial-migration).<br>- Review items in the [migration checklist](#migration-checklist). |
 
 ### Migration checklist
 

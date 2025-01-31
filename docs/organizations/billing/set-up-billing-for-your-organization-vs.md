@@ -24,12 +24,10 @@ Setting up billing in Azure DevOps is essential for managing costs associated wi
 
 ## Prerequisites
 
-* **Subscription:** Have an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/).
-- * [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-  * To give another user access to manage billing, be the [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator) to give another user access to manage billing.
-  * To change your organization's billing subscription, have the following permissions:
-    - [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-    - [Owner or Contributor permission for the Azure subscription](set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing), which you can use to purchase.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br> - To give another user access to manage billing: [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator).<br>- To change your organization's billing subscription:<br>- [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- [Owner or Contributor permission for the Azure subscription](set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing), which you can use to purchase.  |
+|**Subscription**| An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/).|
 
 > [!NOTE]
 > Azure DevOps doesn't support the [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/).

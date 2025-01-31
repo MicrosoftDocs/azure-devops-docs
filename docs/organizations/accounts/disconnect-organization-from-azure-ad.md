@@ -23,9 +23,10 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 ## Prerequisites
 
-* **Permissions:** Add your Microsoft account to the Project Collection Administrator group in the Organization settings.
-* **Organization owner:** Change the organization owner to a Microsoft account instead of a school or work account. Ensure that your work or school account has the same email address as your Microsoft account; otherwise, you can't sign in to your organization.
-
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- Change the organization owner to a Microsoft account instead of a school or work account. Ensure that your work or school account has the same email address as your Microsoft account; otherwise, you can't sign in to your organization.|
+|**Access levels**| At least **Basic** access.|
 
 **What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 

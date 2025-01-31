@@ -31,7 +31,9 @@ You can also use Azure DevOps Services with any IDE or code editor, like the fol
 
 ## Prerequisites
 
-**Tools:** [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409). If you have a Visual Studio subscription that includes the Visual Studio IDE, get the version that's available with your subscription.
+| Category | Requirements |
+|--------------|-------------|
+|**Tools**| [Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409). If you have a Visual Studio subscription that includes the Visual Studio IDE, get the version that's available with your subscription.|
 
 ## Set up Visual Studio 2022 for Azure DevOps Services
 

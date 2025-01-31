@@ -25,9 +25,12 @@ But, organizations connected to Microsoft Entra ID can transfer ownership to an 
 
 ## Prerequisites
 
-**Permissions:**
-- Be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Microsoft Entra ID. If using [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure?msclkid=303229fdc6c111ecaf0f666b2dd9cd6f), the Azure DevOps Administrator should be of type [Active](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?msclkid=5cdc55f5c6c011eca737e344cbe17b42). Being a Project Collection Administrator isn't required.
-- Claim ownership of organizations only when the current owner and all members of the Project Collection Administrators group are inactive in the backing Microsoft Entra ID. Azure DevOps and Microsoft Entra ID define inactive user accounts the same way. For more information, see [What are inactive user accounts?](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|[Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). If using [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure?msclkid=303229fdc6c111ecaf0f666b2dd9cd6f), the Azure DevOps Administrator should be of type [Active](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?msclkid=5cdc55f5c6c011eca737e344cbe17b42). Being a Project Collection Administrator isn't required.|
+
+> [!NOTE]
+> Claim ownership of organizations only when the current owner and all members of the Project Collection Administrators group are inactive in the backing Microsoft Entra ID. Azure DevOps and Microsoft Entra ID define inactive user accounts the same way. For more information, see [What are inactive user accounts?](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).
 
 ### Find your Azure DevOps Administrator
 
