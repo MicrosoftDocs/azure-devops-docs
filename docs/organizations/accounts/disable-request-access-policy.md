@@ -22,7 +22,7 @@ To prevent users from requesting access to your organization or projects, you ca
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 |**Access levels**| At least **Basic** access.|
 
 ## Disable Request Access policy

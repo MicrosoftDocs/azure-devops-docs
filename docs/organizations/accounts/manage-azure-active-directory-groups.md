@@ -29,7 +29,7 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- Microsoft Entra Administrator in the [Azure portal](https://portal.azure.com).|
+|**Permissions**| - Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- Microsoft Entra Administrator in the [Azure portal](https://portal.azure.com).|
 |**Access levels**| At least **Basic** access.|
 
 <a name='add-an-azure-ad-group-to-an-azure-devops-group'></a>

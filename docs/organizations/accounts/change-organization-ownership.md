@@ -25,7 +25,7 @@ As roles and responsibilities change, you can change the owner for your organiza
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 |**New owner tasks**|- Sign in to your organization, create a profile, and agree to the Terms of Service.<br>- Access the organization at least once after creating your initial profile.|
 
 > [!TIP]

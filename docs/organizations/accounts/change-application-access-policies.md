@@ -21,7 +21,7 @@ This article shows how to manage your organization's security policies that dete
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 

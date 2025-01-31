@@ -21,7 +21,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** | Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 | **Microsoft Entra tenant** |The Microsoft Entra tenant to which you want to invite external users allows adding new users, as per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).|
 | **Policies** |- **External guest access** turned **On** for the organization to which you want to invite external users.<br>- Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).<br>- If the **Invite GitHub users** policy displays, you're recognized as a GitHub user and the GitHub invitation experience is available. For more information, see [Enable GitHub invitations](../../repos/get-started/sign-up-invite-teammates.md).|
 

@@ -34,7 +34,7 @@ The following types of users can join your Azure DevOps Services organization fo
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** | Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 |**Organization** | An [organization](create-organization.md).|
 
 For an overview of the methods supported for adding users to an organization, see [Add and manage user access](organization-management.md#add-users).
