@@ -20,7 +20,7 @@ With pipeline caching, you can reduce your build time by caching your dependenci
 
 ## Lock dependencies
 
-To set up the cache task, we must first lock our project's dependencies and create a **package.lock.json** file. We'll use the hash of the content of this file to generate a unique key for our cache.
+To set up the cache task, you must first lock your project's dependencies and create a **package.lock.json** file. The hash of the lock file's content will be used to generate a unique cache key.
 
 To lock your project's dependencies, set the **RestorePackagesWithLockFile** property in your *csproj* file to **true**. NuGet restore generates a lock file **packages.lock.json** at the root directory of your project. Make sure you check your **packages.lock.json** file into your source code.
 
@@ -34,7 +34,7 @@ To lock your project's dependencies, set the **RestorePackagesWithLockFile** pro
 
 We need to create a pipeline variable to point to the location of our packages on the agent running the pipeline.
 
-In this example, the content of the **packages.lock.json** will be hashed to produce a dynamic cache key. This ensures that every time the file is modified, a new cache key is generated.
+In this example, the content of the **packages.lock.json** is hashed to produce a dynamic cache key. This ensures that every time the file is modified, a new cache key is generated.
 
 :::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot showing how the cache key is generated in Azure Pipelines.":::
 
@@ -67,6 +67,9 @@ This task will only run if the `CACHE_RESTORED` variable is false.
     command: 'restore'
     restoreSolution: '**/*.sln'
 ```
+
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
 
 If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command is executed, generating your project.assets.json file. The restore task won't download packages that are already present in your corresponding folder.
 
