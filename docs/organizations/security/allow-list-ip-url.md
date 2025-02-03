@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/31/2024
+ms.date: 02/03/2025
 ---
 
 # Allowed IP addresses and domain URLs
