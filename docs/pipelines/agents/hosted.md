@@ -37,7 +37,6 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | macOS 15 Sequoia preview | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
-| macOS 12 Monterey | *macOS-12* | `macOS-12` |  **deprecated** |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -46,6 +45,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The macOS-12 Monterey image has been retired
 * The macOS-15 Sequoia image is available in preview
 * The Ubuntu-24.04 image is available
 * The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
