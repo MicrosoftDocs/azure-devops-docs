@@ -22,6 +22,10 @@ ms.date: 10/14/2024
 
 When you reorder, nest, and display work items, Azure Boards expects a [natural hierarchy](#natural-hierarchy-for-work-item-types). The natural hierarchy breaks when you create same-category or same-type links between work items. For example, parent to child links that are bug to bug or user story to user story or *requirements* category to *task* category. Use this article to address error messages when you add links that aren't in the natural hierarchy.
 
+## Prerequisites
+
+[!INCLUDE [temp](../includes/prerequisites.md)]
+
 ## You cannot reorder work items and some work items might not be shown
 
 You might see an error similar to one of the following messages:
@@ -97,7 +101,7 @@ Hide **In Progress items** when you want to forecast work. For more information,
 >
 > - For more information, see [Configure your backlog view](configure-your-backlog-view.md) and [Add custom work item types](../../organizations/settings/work/add-custom-wit.md).
 > - For issues that might occur with multi-team ownership, see [Exercising select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
-> - To reorder work items on your backlog, have at least Basic access. If you have Stakeholder access, you can't reorder work items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> - To reorder work items on your backlog, have at least [**Basic** access](../../organizations/security/access-levels.md). If you have Stakeholder access, you can't reorder work items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ## Natural hierarchy for work item types
 

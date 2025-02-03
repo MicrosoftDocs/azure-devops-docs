@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/09/2024
+ms.date: 02/03/2025
 ---
 
 # Allowed IP addresses and domain URLs
@@ -47,6 +47,12 @@ Ensure the following IP addresses are allowed for outbound connections, so your 
 13.107.9.0/24
 13.107.42.0/24
 13.107.43.0/24
+150.171.22.0/24 
+150.171.23.0/24 
+150.171.73.0/24 
+150.171.74.0/24 
+150.171.75.0/24 
+150.171.76.0/24
 ```
 
 #### [IP V6 ranges](#tab/IP-V6)
@@ -57,6 +63,9 @@ Ensure the following IP addresses are allowed for outbound connections, so your 
 2620:1ec:a92::/48
 2620:1ec:21::/48
 2620:1ec:22::/48
+2620:1ec:50::/48 
+2620:1ec:51::/48 
+2603:1061:10::/48
 ```
 
 ---

@@ -21,7 +21,9 @@ To sign up for all Azure DevOps Services, see [Sign up, sign in to Azure DevOps]
 
 ## Prerequisites
 
-**Browser**: Have the latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.
+| Category | Requirements |
+|--------------|-------------|
+|**Browser**| Latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.|
 
 ## Sign-up 
 

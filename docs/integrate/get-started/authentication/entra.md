@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 01/08/2025
+ms.date: 01/31/2025
 ---
 
 # Authenticate to Azure DevOps with Microsoft Entra
@@ -36,22 +36,44 @@ Microsoft Entra tokens offer a secure alternative, lasting only one hour before 
 
 You can also use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users to call [Azure DevOps REST APIs](/rest/api/azure/devops/). Since Entra access tokens only last for one hour, they're ideal for quick one-off operations, like API calls that don't need a persistent token.
 
-#### Acquire user tokens in Azure CLI
+---
+
+#### Acquire user tokens
+
+# [Azure CLI](#tab/azure-cli)
 
 1. Sign in to the Azure CLI using the `az login` command and follow the on-screen instructions.
-2. Set the right correct subscription for the signed-in user with these bash commands. Make sure the Azure subscription ID is associated with the tenant connected to the  Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+1. Set the correct subscription for the signed-in user with these bash commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
   
-``` bash
-  az account set -s <subscription-id>
-  ```
+   ```bash
+   az account set -s <subscription-id>
+   ```
 
-3. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-  ``` bash
-  az account get-access-token \
-  --resource 499b84ac-1321-427f-aa17-267ca6975798 \
-  --query "accessToken" \
-  -o tsv
-  ```
+1. Generate a Microsoft Entra ID access token with the `az account get-access-token` command using the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
+
+   ```bash
+   az account get-access-token \
+   --resource 499b84ac-1321-427f-aa17-267ca6975798 \
+   --query "accessToken" \
+   -o tsv
+   ```
+
+# [Azure PowerShell](#tab/azure-powershell)
+
+1. Sign in to Azure PowerShell using the `Connect-AzAccount` command and follow the on-screen instructions.
+1. Set the correct subscription for the signed-in user with these PowerShell commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+  
+   ```azurepowershell-interactive
+   Set-AzContext -Subscription <subscriptionID>
+   ```
+
+1. Generate a Microsoft Entra ID access token with the `Get-AzAccessToken` command using the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
+
+   ```azurepowershell-interactive
+   Get-AzAccessToken -ResourceUrl '499b84ac-1321-427f-aa17-267ca6975798'
+   ```
+
+---
 
 For more information, see the [Databricks docs](/azure/databricks/dev-tools/user-aad-token).
 
