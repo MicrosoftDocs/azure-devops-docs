@@ -10,7 +10,7 @@ ms.topic: include
 You can now easily access the Test Plans page directly from the Test Plans work item. We are adding a clear, direct entry point to help you quickly navigate to the corresponding test plan without extra steps. This improvement makes it faster and more intuitive to trace your test plans, ensuring a smoother experience when managing your test workflow.
 
 > [!div class="mx-imgBorder"]
-> ![Gif to demo Test Plan, Suite ID search details.](../../media/235-testplans-01.gif "gif to GitHub Test Plan, Suite ID search details")
+> ![Gif to demo Test Plan, Suite ID search details.](../../media/251-testplans-01.gif "gif to GitHub Test Plan, Suite ID search details")
 
  Give it a try and let us know via  [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
 

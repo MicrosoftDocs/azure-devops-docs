@@ -6,17 +6,13 @@ ms.date: 2/6/2025
 ms.topic: include
 ---
 
-### Copy code block to clipboard
+### Generate Git Credentials" button has been removed from "Clone Repository" dialogs in Repos and Wiki
 
-In response to your feedback in the  [developer community](https://developercommunity.visualstudio.com/t/azure-devops-vsts-wiki-copy-code-button/421282), we’ve introduced a "Copy to clipboard" button for all code blocks in rendered markdown. This enhancement is available across Wiki pages, markdown file previews in Repos, pull request discussions and descriptions, and work item discussions.
-> [!div class="mx-imgBorder"]
-> ![Screenshot of copy to clipboard.](../../media/246-general-01.png "Screenshot of copy to clipboard")
-
-### Microsoft Entra profile information (preview)
-
-We’re excited to introduce the integration of Microsoft Entra profile information in Azure DevOps, removing the need for separate profile updates. To try the preview, enable Microsoft Entra profile information in [Preview Features](/azure/devops/project/navigation/preview-features?view=azure-devops).
+We are deactivating the "Generate Git Credentials" button from the "Clone Repository" dialogs in the Repos and Wiki UI to encourage users to move to Microsoft Entra tokens when authenticating these git operations. Previously, clicking this button would generate a new personal access token (PAT) with "vso.code" scope that remains active for 7 days. Each time the button is pressed, a new PAT would be generated resulting in the creation of numerous, unused PATs per user.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of turn on Microsoft Entra Profile Information.](../../media/246-general-02.png "Screenshot of turn on Microsoft Entra Profile Information")
+> ![Screenshot of deactivated generate git credentials button.](../../media/251-general-01.png "Screenshot of deactivated generate git credentials button")
 
-Once enabled, your [profile settings](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops#set-preferences) are read-only and automatically populated from Microsoft Entra. To revert to your previous settings or provide feedback, turn off the preview and share your comments.
+Users are recommended to explore using Entra tokens in lieu of PATs when conducting ad-hoc git clone operations for code and wiki repositories. The docs have guidance on how to do so via [command line](/azure/devops/repos/git/auth-overview?view=azure-devops&tabs=Windows) or within the [Git Credential Manager](/azure/devops/repos/git/set-up-credential-managers?view=azure-devops) (GCM).
+
+PATs can still be used for git operations, but in order to do so, users must create a PAT with the appropriate "vso.code" scope in their Personal Access Token page themselves. Make sure that such PATs only live for as long as they are needed and revoked after they are not used. As a reminder, in general, PATs ought to be securely stored in a secret management service like Azure Key Vault (AKV) and regularly rotated. 
