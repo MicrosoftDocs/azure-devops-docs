@@ -64,6 +64,8 @@
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
   - name: Azure CLI
     href: /cli/azure/service-page/managed%20devops%20pools
+  - name: Azure PowerShell
+    href: /powershell/module/az.mdp
   - name: Bicep
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
   - name: Java
