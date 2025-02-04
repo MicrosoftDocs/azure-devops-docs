@@ -16,7 +16,7 @@ This article guides you through setting up your YAML and Classic pipelines to re
 |--------------------|---------------------|
 |  **Azure DevOps**  | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> An [Azure Artifacts feed](../../artifacts/get-started-maven.md#create-a-feed).<br> - **Permissions:**<br> - To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br> - To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
 
-# Restore Maven packages from a feed in the same organization
+## Restore packages from a feed in the same organization
 
 ### [YAML](#tab/yaml/)
 
@@ -81,7 +81,7 @@ steps:
 
 ---
 
-## Restore Maven packages from a feed in another organization
+## Restore packages from a feed in another organization
 
 To restore your packages from a feed in another Azure DevOps organization, you must first create a personal access token in the target organization, and then create a service connection to authenticate with the target feed.
 
