@@ -199,7 +199,7 @@ To renew the access token for an automatically created service principal or secr
 
 1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
 
-1. Select **Edit** in the upper-right corner, and the select **Verify**. 
+1. Select **Edit** in the upper-right corner. 
 
 1. Select **Save**.
 
@@ -211,7 +211,7 @@ The token for your service principal or secret is now renewed for three more mon
 
 ### Failed to obtain the JWT by using the service principal client ID
 
-This issue occurs when you try to verify a service connection that has an expired secret or there are some other issues at the Entra ID level.
+This issue occurs when you try to save a service connection that has an expired secret or there are some other issues at the Entra ID level.
 
 To resolve this issue:
 
@@ -220,15 +220,6 @@ To resolve this issue:
 1. Select **Edit** in the upper-right corner, and then make any change to your service connection. The easiest and recommended change is to add a description.
 
 1. Select **Save** to save the service connection.
-
-   > [!NOTE]
-   > Select **Save**. Don't try to verify the service connection at this step.
-
-1. Exit the service connection edit window, and then refresh the service connections page.
-
-1. Select **Edit** in the upper-right corner, and now select **Verify**.
-
-1. Select **Save** to save your service connection.
 
 > [!NOTE]
 > If you get an error like `Failed to obtain the Json Web Token(JWT) using service principal client ID. Exception message: AADSTS7000112: Application is disabled.`, you need to work with your Entra ID team to confirm that the option [Enabled for users to sign-in](/troubleshoot/entra/entra-id/app-integration/error-code-aadsts7000112-application-is-disabled) in the enterprise application linked with your service principal is not disabled. 

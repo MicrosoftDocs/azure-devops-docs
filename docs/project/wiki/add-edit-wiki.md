@@ -54,9 +54,12 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ## Prerequisites
 
-* Have a [provisioned wiki](wiki-create-repo.md).
-* Be a member of the team project as a **Contributor** to add or update wiki pages.
-* Have **Basic** access level to edit the project wiki.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the project where the wiki's located. If you don't have access, request it from your project administrator. |
+| **Permissions** | Member of the **Contributors** group. |
+| **Access levels** | At least **Basic** access. |
+| **Tasks**  | Complete [provisioned wiki](wiki-create-repo.md).|
 
 <a id="open-wiki">  </a>
 

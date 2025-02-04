@@ -84,31 +84,6 @@ You can purge data that you don’t need before or after the migration.
 
 If for some reason you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), you can choose from various tools that use public APIs to move data.
 
-## Migrate data between Azure DevOps projects
-
-[OpsHub Migrator for Microsoft Azure DevOps (OM4ADO)](https://www.opshub.com/products/opshub-azure-devops-migrator/), formerly known as OpsHub Visual Studio Migration Utility (OVSMU), enables a seamless migration between Azure DevOps Server and Azure DevOps Services (TFS to ADO, ADO to TFS, ADO to ADO and TFS to ADO migrations). The tool supports:
-
-- Version control information and history (original dates and users added to comments)
-- Work items (standard and custom) and history (retains the original dates and users)
-- Test Plan, Test Suite, Test Cases and Test Results
-- Iteration, Area Path, Group, Team, User
-- Dashboard, Query, Widget, and Pipeline
-- Azure DevOps Server versions 2010 and later
-- Azure DevOps Services 
-
-## Migrate from legacy tools to Azure DevOps
-
-[OpsHub Migration Manager (OMM)](https://www.opshub.com/migrations/migrate-to-azure-devops/) allows you to migrate from non-Microsoft tools to Azure DevOps (Server or Services) without downtime or disruption. This tool can migrate: 
-
-- Work items (standard and custom)
-- Test entities - Test Plan, Test Result, Test Run, Test Suite
-- Areas, Iterations, Dashboard, Query, Widget
-- History, comments, attachments and links, mentions
-- All or selected projects to Azure DevOps
-- Reverse sync information from Azure DevOps to legacy tool
-- Azure DevOps Server versions 2010 and later
-- Azure DevOps Services 
-
 ## API-based migration limitations
 
 The following limitations occur with API-based migration: 
