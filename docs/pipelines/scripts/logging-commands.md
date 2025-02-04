@@ -564,6 +564,8 @@ The updated environment variable will be reflected in subsequent tasks.
 
 ## Artifact commands
 
+Artifact publishing is not supported in Classic release pipelines.
+
 ### Associate: Initialize an artifact
 
 `##vso[artifact.associate]artifact location`
