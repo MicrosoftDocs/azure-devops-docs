@@ -107,13 +107,13 @@ To publish your NuGet packages to a feed in a different Azure DevOps organizatio
 
 1. Add your package source to your sources list
   
-   1. If using a *nuget.config* file, this command will add your PAT to your *nuget.config* file. Store this file in a safe location, and make sure that you don't check it into source control.
+   If using a *nuget.config* file, this command will add your PAT to your *nuget.config* file. Store this file in a safe location, and make sure that you don't check it into source control.
 
     ```CLI
     nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
     ```
 
-   1. Without a *nuget.config* file, this command will add your source with the PAT.
+   Without a *nuget.config* file, this command will add your source with the PAT.
 
    ```CLI
     nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN>
