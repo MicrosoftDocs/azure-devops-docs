@@ -19,7 +19,7 @@ If you have a network proxy configured, the `enableAutomaticCodeQLInstall ` sett
 
 Previously, it was difficult to know if your Advanced Security scan was successful if your branch had no vulnerabilities detected as the branch picker would only display branches with alerts present. 
 
-Both the repository-level alerts UX and the [Analysis - List API](https://learn.microsoft.com/en-us/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2) now return branches with a successful SARIF submission for dependency and code scanning, even if no alerts are detected.
+Both the repository-level alerts UX and the [Analysis - List API](/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2) now return branches with a successful SARIF submission for dependency and code scanning, even if no alerts are detected.
 
 ### Pull request annotations experience improvements
 
