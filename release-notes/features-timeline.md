@@ -199,7 +199,7 @@ These investments include:
       </tr>  
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with<br />GitHub repository</a>
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
@@ -217,7 +217,21 @@ These investments include:
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
-      </tr>          
+      </tr>   
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit)">Auto link the merge commit</a>
+         </td>
+         <td>Boards</td>
+         <td>2025 Q1</td>   
+      </tr>   
+       <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link" data-raw-source="[Automatically remove branch links from work items when their corresponding GitHub branches are deleted](/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link)">Automatically remove branch links when their corresponding<br/>GitHub branches are deleted</a>
+         </td>
+         <td>Boards</td>
+         <td>2025 Q1</td>   
+      </tr>         
     </tbody>
 </table>
 
@@ -375,7 +389,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="18"><strong>2025 Q1</strong></td>
+      <td rowspan="20"><strong>2025 Q1</strong></td>
        <td>
          <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
         </td>
@@ -391,6 +405,17 @@ Below, you will find several investments that we plan to deliver as part of this
          </td>
          <td>Boards</td>
       </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit)">Auto link the merge commit</a>
+         </td>
+         <td>Boards</td>
+      </tr>     
+      <tr>
+         <td>
+          <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link" data-raw-source="[Automatically remove branch links from work items when their corresponding GitHub branches are deleted](/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link)">Automatically remove branch links when their corresponding GitHub branches are deleted</a>
+         </td>
+         <td>Boards</td>
+      </tr>     
       <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
