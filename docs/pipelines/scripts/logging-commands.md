@@ -22,7 +22,7 @@ They cover actions like creating new [variables](../process/variables.md), marki
 > 
 > We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
 > This is to avoid masking secrets at too granular of a level, making the logs unreadable.
-> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
+> For this reason, secrets shouldn't contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
 > "bar" isn't masked from the logs.
 
 |Type  |Commands  |
@@ -67,7 +67,7 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
 > [!NOTE]
-> Please note that you can't use the `set -x` command before a logging command when you are using Linux or macOS. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended), to learn how to disable `set -x` temporarily for Bash.
+> Note that you can't use the `set -x` command before a logging command when you're using Linux or macOS. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended), to learn how to disable `set -x` temporarily for Bash.
 
 ## Formatting commands
 
@@ -119,7 +119,7 @@ steps:
 ```
 ---
 
-Those commands will render in the logs like this:
+Those commands render in the logs like this:
 
 ![Screenshot of logs with custom formatting options](media/log-formatting.png)
  
@@ -275,7 +275,7 @@ While customers can add entries to the timeline, they won't typically be shown i
 The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
 Task authors must remember which GUID they used for each timeline record.
-The logging system will keep track of the GUID for each timeline record, so any new GUID will result a new timeline record.
+The logging system keeps track of the GUID for each timeline record, so any new GUID results a new timeline record.
 
 #### Properties
 
@@ -320,9 +320,9 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `isSecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
 
-When `isOutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isOutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
+When `isOutput` is set to `true` the syntax to reference the set variable varies based on whether you're accessing that variable in the same job, a future job, or a future stage. Additionally, if `isOutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
 
-See [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts) for more details.
+For more information about output variables, see [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts).
 
 #### Properties
 
@@ -412,9 +412,9 @@ Future jobs can also see canned goods
 
 #### Usage
 
-The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (e.g. base64 encoded) or derived.
+The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (for example, base64 encoded) or derived.
 
-Note: Previous occurrences of the secret value will not be masked. 
+Note: Previous occurrences of the secret value won't be masked. 
 
 #### Examples
 
@@ -518,7 +518,7 @@ Upload and attach attachment to current timeline record. These files aren't avai
 
 #### Usage
 
-Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
+Upload and attach summary Markdown from an .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary appears on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
 
 
 #### Examples
