@@ -16,7 +16,7 @@ ms.date: 04/29/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Your board in Azure DevOps lets you visualize your team’s tasks, track progress, and manage work items efficiently. This article provides step-by-step instructions on how to add task checklists to your board, enhancing your team’s productivity and transparency.
+Your board in Azure DevOps lets you visualize your team’s tasks, track progress, and manage work items efficiently. This article provides step-by-step instructions on how to add task checklists to items on your board, enhancing your team’s productivity and transparency.
 
 The following image shows a representation of various tasks and bugs in progress. Some are still pending, while others are marked as completed. By incorporating the Issue work item type into your Iteration backlog, you can seamlessly add issues as checklists
 
@@ -48,9 +48,9 @@ Make use of the following features for checklists.
 
 ## Add one or more child items to a checklist
 
-In the following example, tasks get added to the product board using the checklist feature. You can use the same procedures to add any other supported checklist item from your board.  
+In the following example, tasks get added to an item on the product board using the checklist feature. You can use the same procedures to add any other supported checklist item from your board.  
 
-1. From your board, select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Work item actions** > **+ Add Task**. If you already have a work item open, select **Add link** > **New item**. For more information, see [Link work items to objects](../backlogs/add-link.md).
+1. From your board, select an item and select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Work item actions** > **+ Add Task**. If you already have a work item open, select **Add link** > **New item**. For more information, see [Link work items to objects](../backlogs/add-link.md).
 
     :::image type="content" source="media/checklists/add-task-menu.png" alt-text="Screenshot of open the context menu of work item to add a task.":::
 
