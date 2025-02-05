@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 <a id="platform-version"></a>
 
-You can tell what platform you use by opening the **About** page for Azure DevOps Services or Azure DevOps Server. 
+You can tell which platform you use by opening the **About** page for Azure DevOps Services or Azure DevOps Server. 
 
 ## Azure DevOps Services
 
