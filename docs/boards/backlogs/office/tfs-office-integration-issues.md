@@ -20,9 +20,8 @@ If the **Team** ribbon is missing in Microsoft Excel, as shown in the following 
 > ![Screenshot of Excel and Azure DevOps/Office integration Team ribbon.](media/excel-team-ribbon.png)
 
 > [!NOTE]
-> The Azure DevOps Office integration is feature complete with no plans for updates or improvements. Future investments will focus on native tooling for [bulk importing or updating work items using CSV files](https://github.com/SamGrantham/azure-devops-docs-pr/blob/docs-editor/tfs-office-integration-issues-1719507337/docs/boards/queries/import-work-items-from-csv.md). If you encounter issues with the Office integration, consider using this alternative.
+> The Azure DevOps Office integration is feature complete with no plans for updates or improvements. Future investments will focus on native tooling for [bulk importing or updating work items using CSV files](../../queries/import-work-items-from-csv.md). If you encounter issues with the Office integration, consider using this alternative.
 > All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family), which installs the Azure DevOps Office Integration Add-in. For prerequisites, see [Azure Boards and Office integration](track-work.md). 
-
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
 
@@ -44,9 +43,9 @@ If you still don't see the **Team** ribbon, follow the steps in the following se
    
    :::image type="content" source="media/excel-options-com-add-ins.png" alt-text="Screenshot of sequence to add COM add-in.":::
 
-3. Make sure there's a check in the **Team Foundation Add-in** box. 
+1. Make sure there's a check in the **Team Foundation Add-in** box. 
 
-   > [!div class="mx-imgBorder"]
+      > [!div class="mx-imgBorder"]
    > ![Screenshot of COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
    
 4.	Restart Excel. 
@@ -59,21 +58,21 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 
 1. Launch the Registry Editor from your Windows Start Menu by entering `regedit` in the Search or Run box.
 
-   > [!div class="mx-imgBorder"]
+      > [!div class="mx-imgBorder"]
    > ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
    
 1. Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 
-   > [!NOTE]
+      > [!NOTE]
    > If there are multiple folders with the same name, select the one with the highest version number. 
 
    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the following options)
    - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
    - `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
 
-   > [!div class="mx-imgBorder"]
+      > [!div class="mx-imgBorder"]
    > ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
-
+   
 1.	Double-select to open **LoadBehavior** and set the value data field to `3`. If the value is `0` the **Team** ribbon doesn't load.
  
 1. Select **OK** and restart Excel. 
@@ -85,14 +84,14 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 1. From the Excel **File** menu, select **Options**.
 1. Choose **Add-ins** and from the *Manage* dropdown menu and select **Disabled Items** > **Go**.
 
-   > [!div class="mx-imgBorder"]
+      > [!div class="mx-imgBorder"]
    > ![Screenshot of Excel Options, Add-ins, Choose Disabled Items.](media/excel-com-disabled-items.png)
-
+   
 1. If you see *Azure DevOps Add In* in the list, choose it and select **Enable**.
 
-   > [!div class="mx-imgBorder"]
+      > [!div class="mx-imgBorder"]
    > ![Screenshot of disabled items dialog, Azure DevOps Add In checked.](media/excel-com-list-of-disabled-items.png) 
-
+   
 ## Office add-in doesn't load or open in Excel when Visual Studio fails
 
 To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you might need to repair Visual Studio. 
@@ -113,9 +112,9 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
 
 1. Open the Visual Studio Command Prompt and choose to run it as an administrator. 
 
-   > [!div class="mx-imgBorder"]
+      > [!div class="mx-imgBorder"]
    > ![Screenshot of Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
-
+   
 1. Run the following commands based on your software:
 
     |Software |Commands |
