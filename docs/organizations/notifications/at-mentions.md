@@ -21,7 +21,7 @@ ms.date: 01/06/2025
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker within the **@mention** control, you can select a project member or group from the search list. The mentioned user or group receives an email notification about your comment.
 
-For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
 
 > [!NOTE]
 > You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).

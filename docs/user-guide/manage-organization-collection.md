@@ -49,7 +49,7 @@ When you add users, you specify their *access level*, which determines the featu
 - [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is turned on the organization, users added to the **Project-Scoped Users** group can't access projects that they haven't been added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-identity-selection), later in this article. 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is turned on the organization, users added to the **Project-Scoped Users** group can't access projects that they haven't been added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-user-visibility-for-projects-and-more), later in this article. 
 
 ::: moniker-end  
 
