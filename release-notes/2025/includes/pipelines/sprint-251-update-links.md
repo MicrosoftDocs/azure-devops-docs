@@ -7,4 +7,4 @@ ms.topic: include
 
 - [Azure Classic Service Connections are being retired](#azure-classic-service-connections-are-being-retired)
 - [Managed DevOps Pools is Generally Available](#managed-devops-pools-is-generally-available)
-- [New AzureVmssDeployment@2, JavaToolInstaller@2, JenkinsDownloadArtifacts@2 tasks secret-less operation](#new-azurevmssdeployment@2-javatoolinstaller@2-jenkinsdownloadartifacts@2-tasks-secret-less-operation)
+- [New AzureVmssDeployment@2, JavaToolInstaller@2, JenkinsDownloadArtifacts@2 tasks secret-less operation](#new-azurevmssdeployment2-javatoolinstaller2-jenkinsdownloadartifacts2-tasks-secret-less-operation)
