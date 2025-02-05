@@ -5,7 +5,7 @@ ms.date: 2/6/2025
 ms.topic: include
 ---
 
-- [Direct Link from Test Plan Work Item to Test Plans Page](#direct-link-from-test-plan-work-item-to-test-plans-page)
+- [Advanced Security tracks default branch changes across experiences](#advanced-security-tracks-default-branch-changes-across-experiences)
 - [CodeQL installation for self-hosted agents supports proxy configurations](#codeql-installation-for-self-hosted-agents-supports-proxy-configurations)
 - [Alerts branch picker returns all branches with successful scan](#alerts-branch-picker-returns-all-branches-with-successful-scan)
 - [Pull request annotations experience improvements](#pull-request-annotations-experience-improvements)
