@@ -24,6 +24,10 @@ Each organization is associated with one and only one collection. If you need to
 When you install Azure DevOps Server, you automatically create a default collection. If you need to create another project collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 ::: moniker-end
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-pca-only](../includes/prerequisites-pca-only.md)]
+
 > [!NOTE]   
 > This article provides an overview of tasks that require membership in the **Project Collection Administrators** group. For information on tasks performed by members of a **Project Administrators** group, see [Manage your project](project-admin-tutorial.md).
 
