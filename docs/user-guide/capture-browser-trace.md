@@ -19,6 +19,10 @@ A HAR (HTTP Archive) file tracks information between a web browser and a website
 > [!WARNING]
 > Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Remove any passwords before sharing traces with others. Handle these HAR files with care to ensure the security and privacy of the contained information. Microsoft support uses these traces for troubleshooting purposes only.
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../includes/prerequisites-project-member-only.md)]
+
 ## Generate HAR file and record browser activity
 
 You can capture this information from Microsoft Edge or Google Chrome. Steps for each browser are shown as follows.
