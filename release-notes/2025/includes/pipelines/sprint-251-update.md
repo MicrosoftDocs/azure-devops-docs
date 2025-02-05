@@ -40,7 +40,7 @@ The AzureVmssDeployment, JavaToolInstaller, JenkinsDownloadArtifacts tasks are c
     storageAccountName: <storage account>
 ```
 
-New task versions have been created that now use Azure RBAC instead of storage account key/sas. The new tasks require the [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor) role to be assigned to the identity of the service connection configured. The AzureVmssDeployment@1 System-assigned Managed Identity also requires the [Storage Blob Data Reader](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-reader) role:
+New task versions have been created that now use Azure RBAC instead of storage account key/sas. The new tasks require the [Storage Blob Data Contributor](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor) role to be assigned to the identity of the service connection configured. The AzureVmssDeployment@1 System-assigned Managed Identity also requires the [Storage Blob Data Reader](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-reader) role:
 
 ```mermaid
 graph TD;
