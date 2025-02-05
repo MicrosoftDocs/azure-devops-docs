@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/15/2024 
+ms.date: 01/04/2025
 --- 
 
 # Manage access to specific features
@@ -198,42 +198,11 @@ These links provide detailed steps and guidelines for setting up and managing pe
 
 ## Limit user visibility to organization and project information
 
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
-
 By default, when users get added to an organization, they gain visibility into all organizational and project information and settings. To tailor this access, the **Limit user visibility and collaboration to specific projects** preview feature can be enabled at the organizational level. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
 
-Once this feature is activated, users who are part of the **Project-Scoped Users** group have limited visibility, unable to see most **Organization settings**. Their access is confined to the projects they explicitly get added to, ensuring a more controlled and secure environment.
+Once this feature activates, users who are part of the **Project-Scoped Users** group have limited visibility, unable to see most **Organization settings**. Their access is confined to the projects they explicitly get added to, ensuring a more controlled and secure environment. For more information, see [Restrict users' view to organization projects](../accounts/add-organization-users.md#restrict-user-visibility-to-organization-and-project-information)
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
-
-::: moniker-end
-
-::: moniker range="azure-devops" 
-
-## Limit the people picker to project users and groups
-
-For organizations integrated with Microsoft Entra ID, the **people picker** enables a comprehensive search across all users and groups within Microsoft Entra ID, without being limited to a single project.
-
-The **people picker** supports the following Azure DevOps functionalities:
-
-- **Selecting user identities:** Choose users from work tracking identity fields like **Assigned To**.
-  
-- **@mentions in discussions:**
-  - Use **@mention** to select users or groups in various discussions and comments, including:
-    - Work item discussions
-    - Pull request discussions
-    - Commit comments
-    - Comments on changesets and shelvesets
-  
-- **@mentions in wiki pages:** Use **@mention** to select users or groups within wiki pages.
-
-As you enter into the **people picker**, it displays matching user names or security groups, as illustrated in the following example.
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of People Picker.](../../organizations/notifications/media/at-mention/identity-selector.png)  
-
-> [!NOTE]
-> For users and groups within the **Project-scoped users** group, visibility and selection are limited to users and groups within their connected project. To extend the people picker's scope to include all project members, see [Manage your organization: Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
 
 ::: moniker-end
  
@@ -302,10 +271,10 @@ For examples that illustrate how to restrict modification of work items or selec
 
 ## Related articles
 
-- [Default permissions and access](permissions-access.md) 
-- [Permission lookup guide](permissions-lookup-guide.md) 
+- [View default permissions and access](permissions-access.md)
+- [Use the permission lookup guide](permissions-lookup-guide.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)
-- [Permissions and groups reference](permissions.md)
+- [Refer to permissions and groups](permissions.md)
 - [Change project-level permissions](change-project-level-permissions.md)
 - [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 

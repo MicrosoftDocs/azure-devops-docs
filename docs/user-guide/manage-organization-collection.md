@@ -111,49 +111,17 @@ It's always a good idea to have more than one person who has administrative priv
 
 By default, users added to an organization can view all organization and project information and settings.  
 
-[!INCLUDE [project-scoped-users-important-note](../includes/project-scoped-users-important-note.md)]
+To restrict specific users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once enabled, any user or group added to the **Project-Scoped Users** group is restricted in the following ways:
 
-To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once turned on, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
-
-- Restricted users to only access those projects to which they're added. 
-- Restricts views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
-- Limits the set of people or groups that appear through people-picker search selections and the ability to **@mention** people. 
+- Access is limited to only the projects to which they are added.
+- Views displaying lists of users, projects, billing details, usage data, and more accessed through **Organization settings** are restricted.
+- The set of people or groups that appear in people-picker search selections and the ability to **@mention** people is limited.
 
 [!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
 
 For more information, see [Manage preview features](../project/navigation/preview-features.md). 
 
 All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups might be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
-::: moniker-end  
-
-::: moniker range="azure-devops"
- 
-<a id="limit-identity-selection"></a> 
-
-### Limit identity search and selection  
-
-With Microsoft Entra ID, you can use people pickers to search for any user or group in your organization, not just the ones in your current project. People pickers support the following Azure DevOps functions: 
-- Selection of a user identity from a work tracking identity field such as **Assigned To**  
-- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
-- Selection of a user or group using **@mention** from a wiki page 
-
-As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
-
-   :::image type="content" source="../organizations/notifications/media/at-mention/identity-selector.png" alt-text="Screenshot of people picker.":::
- 
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Limit user visibility for projects and more](#limit-identity-selection) earlier in this article. 
-
-To limit the identity selection to only users and groups added to a project, perform the following procedure for your organization and projects. 
-
-1. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../project/navigation/preview-features.md).  
-2. Add the users to your project as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
-3. Open **Organizations settings** > **Security** > **Permissions** and choose **Project-Scoped Users**. Select the **Members** tab. 
-4. Add all users and groups that you want to scope to the project they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
-	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is turned on. 
-
-::: moniker-end  
-
-::: moniker range="azure-devops"
 
 ### Set security policies
 

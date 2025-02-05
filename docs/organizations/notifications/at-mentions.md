@@ -123,8 +123,6 @@ People pickers generally search and select any user or group added to an organiz
 
 For organizations using Microsoft Entra ID to manage users and groups, people pickers support searching all users and groups within the directory. To limit the search and selection to only those users and groups added to a specific project, enable the **Limit user visibility and collaboration to specific projects** preview feature for your organization.
 
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
-
 When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in the following ways:
 
 - Users added to the **Project-Scoped Users** group can only select from an identity list that contains users and groups explicitly added to the project they're connected to.

@@ -221,9 +221,7 @@ The following policies determine the access granted to users and applications wi
 
 ### Project-Scoped Users group 
 
-By default, users added to an organization can view all organization and project information and settings -- including user lists, project lists, billing details, usage data, and more. 
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
+By default, users added to an organization can view all organization and project information and settings, including user lists, project lists, billing details, usage data, and more. 
 
 To restrict certain users, such as Stakeholders, Microsoft Entra guest users, or members of a specific security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 - Can only access the **Overview** and **Projects** pages of **Organization settings**.
