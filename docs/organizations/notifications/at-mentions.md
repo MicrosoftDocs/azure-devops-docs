@@ -24,15 +24,15 @@ The **@mention** control allows you to quickly add a user or group to a work ite
 For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
 
 > [!NOTE]
-> You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
+> You can post an @mention via API. To get the Azure DevOps User Entitlement ID, see [Get the Azure DevOps User Entitlement Id](/rest/api/azure/devops/graph/users/get?view=azure-devops-rest-7.1&preserve-view=true%2Fview%3Dazure-devops-rest-6.0&tabs=HTTP), which does not refer to the user's originID.
 >
 > - If your organization is using the existing HTML editor, add the following HTML code:
 >   ```html
->   <div><a href="#" data-vss-mention="version:2.0,{user id}">@John Doe</a> Testing mentioning</div>
+>   <div><a href="#" data-vss-mention="version:2.0,{userID}">@John Doe</a> Testing mentioning</div>
 >   ```
 > - If your organization is using the new Markdown editor for comments, use the following code:
 >   ```markdown
->   @<UserID>
+>   @<userID>
 >   ```
 
 ::: moniker-end
