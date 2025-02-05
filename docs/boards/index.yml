@@ -24,8 +24,6 @@ landingContent:
         links:
           - text: What is Azure Boards?
             url: ./get-started/what-is-azure-boards.md
-          - text: Security Overview
-            url: ../organizations/security/security-overview.md
           - text: About work items
             url: ./work-items/about-work-items.md
       - linkListType: concept

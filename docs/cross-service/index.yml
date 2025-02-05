@@ -28,8 +28,6 @@ landingContent:
             url: github-integration.md
           - text: Deploy to Azure
             url: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json
-          - text: Security Overview
-            url: ../organizations/security/security-overview.md?toc=/azure/devops/cross-service/toc.json
   - title: Integrate with Microsoft Teams  
     linkLists:
       - linkListType: how-to-guide

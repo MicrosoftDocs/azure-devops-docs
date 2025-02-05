@@ -4,8 +4,6 @@
   href: services.md?toc=/azure/devops/get-started/toc.json
 - name: Compare Azure DevOps hosted vs. on-premises
   href: about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json
-- name: Security overview
-  href: ../organizations/security/security-overview.md?toc=/azure/devops/get-started/toc.json
 - name: Get started for end users
   items:
   - name: Sign in to the web or a client
