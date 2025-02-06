@@ -13,7 +13,7 @@ Now, Advanced Security is aware of changes to your default branch and will updat
 
 ### CodeQL installation for self-hosted agents supports proxy configurations
 
-If you have a network proxy configured, the `enableAutomaticCodeQLInstall ` setting may previously error when downloading the CodeQL tool cache to your self-hosted agent. We've introduced handling for network proxies so that automatic installation will run successfully.
+If you have a network proxy configured, the `enableAutomaticCodeQLInstall ` setting may previously error when downloading the CodeQL tool cache to your self-hosted agent. We've introduced handling for network proxies so that automatic installation runs successfully.
 
 ### Alerts branch picker returns all branches with successful scan  
 
