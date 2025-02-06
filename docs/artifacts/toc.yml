@@ -343,7 +343,7 @@
     href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
     displayName: symbols, debug, debugger, publish
 - name: DevOps CLI
-  href: ../cli/index
+  href: /azure/devops/cli/index
   displayName: cli, reference
 - name: REST API reference
   href: /rest/api/azure/devops/index
