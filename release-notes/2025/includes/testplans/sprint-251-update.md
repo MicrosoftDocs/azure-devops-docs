@@ -5,7 +5,7 @@ ms.date: 2/6/2025
 ms.topic: include
 ---
 
-### Direct Link from Test Plan Work Item to Test Plans Page
+### Direct Link from Test Plan work item to Test Plans Page
 
 You can now easily access the Test Plans page directly from the Test Plans work item. We are adding a clear, direct entry point to help you quickly navigate to the corresponding test plan without extra steps. This improvement makes it faster and more intuitive to trace your test plans, ensuring a smoother experience when managing your test workflow.
 
