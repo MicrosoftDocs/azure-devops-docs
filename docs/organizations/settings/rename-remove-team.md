@@ -31,13 +31,7 @@ Deleting a team removes all configuration settings, including dashboards, backlo
  
 ## Prerequisites 
 
-Permissions:
-
-The following actions require either a team administrator or membership in the [Project Administrators](../security/change-project-level-permissions.md) group:
-
-- Rename a team
-
-- Remove or delete a team
+[!INCLUDE [prerequisites-project-administrator-only](../../includes/prerequisites-project-administrator-only.md)]
 
 ## Rename a team
 

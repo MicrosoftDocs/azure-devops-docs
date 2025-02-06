@@ -34,7 +34,8 @@ With a custom rule, you can define a number of actions based on specific conditi
 > You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
 
 Prior to defining a custom rule, review [Rules and rule evaluation, Inherited process rule composition](rule-reference.md#ip-rule-composition). For examples that illustrate common scenarios for applying rules, see [Sample rule scenarios](rule-samples.md). 
- 
+
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
 

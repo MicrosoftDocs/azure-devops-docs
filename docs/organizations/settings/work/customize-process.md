@@ -39,8 +39,9 @@ You can only customize inherited processes. Any changes you make to the inherite
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
-- **Project requirement:** Ensure that you have a [project that uses an inherited process](../work/manage-process.md). For more information, see [Create an inherited process](manage-process.md#create-an-inherited-process).
 
 [!INCLUDE [temp](../includes/automatic-update-project.md)]
 

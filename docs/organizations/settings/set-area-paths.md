@@ -26,14 +26,7 @@ To understand how the system uses area paths, see [About area and iteration path
 
 ## Prerequisites
 
-**Permissions**: 
-- To set team area paths, be a [team administrator](add-team-administrator.md) or a member of the [Project Administrators](../security/change-project-level-permissions.md) group. By default, the user who created the project has these permissions.
-- To add an area path under the root node or edit or delete any child node, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-- To add, edit, and manage area paths under a node, have one or more of the following permissions set to **Allow**:   
-   - **Create child nodes**
-   - **Delete this node**
-   - **Edit this node**
-   - **View permissions in this node**
+|**Permissions**|- To set team area or iteration paths: [Team administrator](add-team-administrator.md) or a member of the [Project Administrators](../security/change-project-level-permissions.md) group. By default, the user who created the project has these permissions.<br>- To add an area path under the root node or edit or delete any child node: Member of the [Project Administrators](../security/change-project-level-permissions.md) group.<br>- To add, edit, and manage area paths under a node: One or more of the following permissions set to **Allow**:<br>- **Create child nodes**<br>- **Delete this node**<br>- **Edit this node**<br>- **View permissions in this node**|
 
 For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 

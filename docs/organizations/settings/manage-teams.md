@@ -27,9 +27,9 @@ Team administrators perform the following tasks for team tools:
 
 ## Prerequisites
 
-**Permissions:** 
-- To manage teams, be a [team administrator](add-team-administrator.md) or be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-- To add a team, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. For more information, see [Add teams](add-teams.md).
+ Category | Requirements |
+|--------------|-------------|
+|**Permissions** |- To manage teams: [Team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group.<br>- To add a team: Member of the [Project Administrators](../security/change-project-level-permissions.md) group. For more information, see [Add teams](add-teams.md).|
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 

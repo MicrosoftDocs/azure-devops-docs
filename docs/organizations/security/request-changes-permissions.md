@@ -43,8 +43,10 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Prerequisites
 
-- **Permissions**: To view permissions and to look up a project administrator, be a member of the **Project Valid Users** group. Users who are project members are automatically part of this security group. For more information, see [View permissions for yourself or others](view-permissions.md).
-- **Knowledge**: Before you request a permission change, ensure you understand the basics by reviewing [Get started with permissions, access, and security groups](about-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | To view permissions and to look up a project administrator: Member of the **Project Valid Users** group. Project members are automatically part of this security group. For more information, see [View permissions for yourself or others](view-permissions.md). |
+| **Knowledge** | Before you request a permission change, ensure you understand the basics by reviewing [Get started with permissions, access, and security groups](about-permissions.md). |
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  

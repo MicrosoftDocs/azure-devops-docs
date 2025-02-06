@@ -35,6 +35,9 @@ Apply the resolution fix(es) provided for the message(s) that you received, zip 
 
 If you're just starting your customization, [review the validation rules provided](customize-process.md).  
 
+## Prerequisites
+
+[!INCLUDE [process-prerequisites](../../includes/process-prerequisites.md)]
 
 <a id="info-only"></a>
 

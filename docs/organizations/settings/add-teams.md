@@ -30,18 +30,23 @@ To maintain Agile practices while scaling teams, review [Scale Agile to Large Te
 >
 > To move work items between teams, see [Move work items from one team to another](../../boards/work-items/move-work-items.md).
 
-## Prerequisites 
+## Prerequisites
 
 ::: moniker range="azure-devops"
-- **Permissions**: 
-  - To create a team or set the default team, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. Only members of the Project Administrators group can add and delete teams.   
-  - To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-- **Azure CLI**: To use Azure CLI commands, install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Project Administrators** security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
+|**Tools**| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md).|  
+
 ::: moniker-end
+
 ::: moniker range="< azure-devops"
-**Permissions**: 
-- To create a team or set the default team, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. Only members of the Project Administrators group can add and delete teams.   
-- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group.
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Project Administrators** security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
+
 ::: moniker-end 
 
 <a id="add-team"> </a>  
