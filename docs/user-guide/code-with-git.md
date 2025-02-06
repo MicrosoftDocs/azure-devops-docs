@@ -19,16 +19,12 @@ Share your code with others in Azure DevOps when you use a Git repository.
 
 ## Prerequisites
 
-An [organization](../organizations/accounts/create-organization.md) and [project](../organizations/projects/create-project.md) in Azure DevOps. When you create a project, Azure DevOps automatically creates an empty repository in Repos.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+|Git command-line tool | One of the following Git command-line tools:<br>- [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).<br>- [Git for macOS or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).|
 
-## 1. Install Git command-line tools
-
-Install one of the following Git command-line tools:
-
-   - [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).
-   - [Git for macOS or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).
-
-## 2. Clone the repo to your computer
+## 1. Clone the repo to your computer
 
 To work with a Git repo, clone it to your computer, which creates a complete local copy of the repo. Your code might be in one of several places.
 
@@ -66,7 +62,7 @@ To work with a Git repo, clone it to your computer, which creates a complete loc
 
    Keep this command window open to work in a branch.
 
-## 3. Work in a branch
+## 2. Work in a branch
 
 Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work being done in the project. We recommend using the [Git workflow](../repos/git/gitworkflow.md), which uses a new branch for every feature or fix that you work on. For our examples, we use the branch, `users/jamal/feature1`.
 
@@ -106,7 +102,7 @@ Git [branches](../repos/git/branch-policies-overview.md) isolate your changes fr
    >  git checkout feature1
    >  ```
 
-## 4. Work with the code
+## 3. Work with the code
 
 In the following steps, we make a change to the files on your computer, commit the changes locally, and then push the commit to the repo stored on the server.
 
@@ -137,7 +133,7 @@ In the following steps, we make a change to the files on your computer, commit t
 
 Your code is now shared to the remote repository, in a branch named `users/jamal/feature1`. To merge the code from your working branch into the `main` branch, use a pull request.
 
-## 5. Merge your changes with a pull request
+## 4. Merge your changes with a pull request
 
 Pull requests combine the review and merge of your code into a single collaborative process. After you’re done fixing a bug or new feature in a branch, create a new pull request. Add the members of the team to the pull request so they can review and vote on your changes. Use pull requests to review works in progress and get early feedback on changes. There’s no commitment to merge the changes because you can abandon the pull request at any time.
 

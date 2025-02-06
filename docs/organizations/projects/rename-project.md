@@ -26,17 +26,9 @@ Renaming a project in Azure DevOps updates the project name in version control p
 
 ## Prerequisites
 
-::: moniker range="azure-devops" 
-
-- **Permissions**: Be a member of the Project Administrators group or have the project-level **Rename team project** permission set to *Allow*. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"  
-
-- **Permissions:** Be a member of the Project Administrators group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-
-::: moniker-end  
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the **Project Administrators** group or project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).|
 
 ## Rename a project
 

@@ -30,15 +30,11 @@ You can manage PATs through the following methods:
 
 ## Prerequisites
 
-- **Permissions:** 
-  - Have permission to access and modify your user settings where PATs are managed.
-    - **Check permissions:** To check your permissions, do either of the following processes in Azure DevOps:
-      - Go to **your profile** and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.
-      - Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions assigned to you. Look for permissions related to managing tokens or user settings.
-  - If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an Azure DevOps Administrator might need to grant you specific permissions or add you to an allowlist to create and manage PATs.
-  - PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.
-- **Access levels:** Have at least Basic access.
-- **Security best practices:** Familiarize yourself with [security best practices](../security/security-best-practices.md) for managing PATs. **Use them only when necessary and always regularly rotate them.**
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** |Permission to access and modify your user settings where PATs are managed. <br>- Go to **your profile** and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.<br>- Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions assigned to you. Look for permissions related to managing tokens or user settings.<br>- If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an Azure DevOps Administrator might need to grant you specific permissions or add you to an allowlist to create and manage PATs.<br>- PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.|
+|**Access levels** |At least **Basic** access.|
+|**Tasks**|Familiarize yourself with [security best practices](../security/security-best-practices.md) for managing PATs. **Use them only when necessary and always regularly rotate them.**|
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
