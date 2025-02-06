@@ -34,7 +34,7 @@ You can set notifications at the following levels:
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 <a id="open-person-level"></a>
 

@@ -19,7 +19,7 @@ If you want to stop receiving specific email notifications, you can do so by uns
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## View subscriptions
 
