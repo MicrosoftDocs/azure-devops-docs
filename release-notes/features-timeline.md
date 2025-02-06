@@ -56,7 +56,7 @@ Upcoming capabilities we expect to deliver include:
         <td>2025 Q1</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2024/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>2025 Q2</td>
       </tr>
@@ -476,16 +476,20 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
-         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependency-pr" data-raw-source="[Display contextual comments to pull requests containing newly introduced dependencies](/azure/devops/release-notes/roadmap/2024/ghazdo/dependency-pr)">Display contextual comments to pull requests containing newly introduced dependencies</a></td>
-         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/multi-repo" data-raw-source="[Support for multi-repository result publishing](/azure/devops/release-notes/roadmap/2025/ghazdo/multi-repo)">Support for multi-repository result publishing</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/service-hooks" data-raw-source="[Advanced Security alert events added to Azure DevOps service hooks framework](/azure/devops/release-notes/roadmap/2025/ghazdo/service-hooks)">Advanced Security alert events added to Azure DevOps service hooks framework</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-v2" data-raw-source="[New security overview alert details and reporting capabilities](/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-v2)">New security overview alert details and reporting capabilities</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <td rowspan="13"><strong>2025 Q2</strong></td>
         <td>
