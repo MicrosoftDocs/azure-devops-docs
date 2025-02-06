@@ -202,7 +202,7 @@ These links provide detailed steps and guidelines for setting up and managing pe
 
 ### Organizations and projects
 
-By default, users added to an organization can view all organization and project information and settings. You can restrict specific users, such as Stakeholders, Microsoft Entra users, or member sof a particular security group, with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature [gets turned on](#turn-on-the-preview-feature-and-add-users-to-the-security-group), any user or group that [gets added to the **Project-Scoped Users** group](#identity-search-and-selection) is restricted in the following ways:
+By default, users added to an organization can view all organization and project information and settings. You can restrict specific users, such as Stakeholders, Microsoft Entra users, or members of a particular security group, with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature [gets turned on](#turn-on-the-preview-feature-and-add-users-to-the-security-group), any user or group that [gets added to the **Project-Scoped Users** group](#identity-search-and-selection) is restricted in the following ways:
 
 - Access is confined to only the projects to which they're explicitly added.
 - Views displaying lists of users, projects, billing details, usage data, and more accessed through **Organization settings** are restricted.
