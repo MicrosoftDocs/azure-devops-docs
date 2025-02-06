@@ -4,7 +4,7 @@ ms.author: ckanyika
 ms.date: 2/6/2025
 ms.topic: include
 ---
-### Advanced Security tracks default branch changes across experiences 
+### GitHub Advanced Security tracks default branch changes across experiences 
 
 The repository-level alert UX view shows the alert state for your default branch as the initial view, and the security overview displays alert information for your default branch only. We've received feedback that some users often change the default branch for their repositories while the Advanced Security experiences continued showing results for their old default branch selection. 
 
