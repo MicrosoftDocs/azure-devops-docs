@@ -11,7 +11,7 @@ ms.topic: include
 We are deactivating the "Generate Git Credentials" button from the "Clone Repository" dialogs in the Repos and Wiki UI to encourage users to move to Microsoft Entra tokens when authenticating these git operations. Previously, clicking this button would generate a new personal access token (PAT) with "vso.code" scope that remains active for 7 days. Each time the button is pressed, a new PAT would be generated resulting in the creation of numerous, unused PATs per user.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of deactivated generate git credentials button.](../../media/251-general-01.png "Screenshot of deactivated generate git credentials button")
+> [![Screenshot of deactivated generate git credentials button.](../../media/251-general-01.png "Screenshot of deactivated generate git credentials button")](../../media/251-general-01.png#lightbox)
 
 Users are recommended to explore using Entra tokens in lieu of PATs when conducting ad-hoc git clone operations for code and wiki repositories. The docs have guidance on how to do so via [command line](/azure/devops/repos/git/auth-overview?view=azure-devops&tabs=Windows) or within the [Git Credential Manager](/azure/devops/repos/git/set-up-credential-managers?view=azure-devops) (GCM).
 
