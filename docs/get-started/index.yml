@@ -36,7 +36,7 @@ landingContent:
           - text: What is Azure Test Plans?
             url: ../test/overview.md
           - text: Get started as a Stakeholder
-            url: ../organizations/security/get-started-stakeholder.md 
+            url: ../organizations/security/get-started-stakeholder.md
   - title: Sign up for free
     linkLists:
       - linkListType: quickstart

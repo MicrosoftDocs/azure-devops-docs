@@ -18,7 +18,13 @@ monikerRange: '<= azure-devops'
 
 You might not receive an expected notification email. Learn how to check the notification statistics.
 
-An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
+
+## Troubleshoot delayed notifications
+
+An email generates when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 

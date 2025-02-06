@@ -21,10 +21,12 @@ ms.date: 01/06/2025
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker within the **@mention** control, you can select a project member or group from the search list. The mentioned user or group receives an email notification about your comment.
 
-For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
 
 > [!NOTE]
-> You can post an @mention via API. To get the Azure DevOps User Entitlement ID, see [Get the Azure DevOps User Entitlement Id](/rest/api/azure/devops/graph/users/get?view=azure-devops-rest-7.1&preserve-view=true%2Fview%3Dazure-devops-rest-6.0&tabs=HTTP), which does not refer to the user's originID.
+
+> You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User ID](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
+
 >
 > - If your organization is using the existing HTML editor, add the following HTML code:
 >   ```html
@@ -72,6 +74,10 @@ Use the **@mention** control to start or continue a discussion in the following 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker-end
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Identity search selection
 
@@ -122,8 +128,6 @@ Use the **@mention** control in pull request discussions, commit comments, chang
 People pickers generally search and select any user or group added to an organization's Microsoft Entra ID.
 
 For organizations using Microsoft Entra ID to manage users and groups, people pickers support searching all users and groups within the directory. To limit the search and selection to only those users and groups added to a specific project, enable the **Limit user visibility and collaboration to specific projects** preview feature for your organization.
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in the following ways:
 

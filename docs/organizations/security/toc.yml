@@ -121,9 +121,6 @@
   - name: Set Wiki permissions
     displayName: project, access, settings, users
     href: ../../project/wiki/manage-readme-wiki-permissions.md??toc=/azure/devops/organizations/security/toc.json
-  - name: Set feedback permissions
-    displayName: users, access, settings, response
-    href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/security/toc.json
 - name: Secure organizations/collections
   items:
   - name: Look up the organization owner

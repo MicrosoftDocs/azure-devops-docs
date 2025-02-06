@@ -65,7 +65,7 @@ Each project provides many shared resources that support all teams within the pr
 For more information, see the following articles:
 - [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
 ::: moniker range="azure-devops"
-- [Limit  identity search](../user-guide/manage-organization-collection.md#limit-identity-selection). 
+- [Limit  identity search](../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more). 
 ::: moniker-end
 
 <a id="process-models"></a>
