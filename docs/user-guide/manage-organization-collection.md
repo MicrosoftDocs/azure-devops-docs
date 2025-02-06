@@ -120,7 +120,7 @@ By default, users added to an organization can view all organization and project
 
 Do the following steps to turn on the preview feature and add users and group to the Project-Scoped Users group:
 
-1. Turn on the **Limit user visibility and collaboration to specific projects** [preview feature](../project/navigation/preview-features.md) for the organization. For more information, see [Manage preview features](../project/navigation/preview-features.md).  
+1. Turn on the **Limit user visibility and collaboration to specific projects** [preview feature](../project/navigation/preview-features.md) for the organization. 
 2. Add the users to your project as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
 3. Open **Organizations settings** > **Security** > **Permissions** and choose **Project-Scoped Users**. Select the **Members** tab. 
 4. Add all users and groups that you want to scope to the project they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
