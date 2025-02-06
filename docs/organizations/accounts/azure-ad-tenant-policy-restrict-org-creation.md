@@ -20,11 +20,9 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 ## Prerequisites
 
-**Permissions:** To manage this policy, be an Azure DevOps Administrator in Microsoft Entra ID. Being a Project Collection Administrator isn't required.
-
-If you don't see the policy section in Azure DevOps, it means you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then go to **Microsoft Entra ID** > **Roles and administrators**. If you aren't an Azure DevOps Administrator, contact your administrator for assistance.
-
-![Screenshot shows Azure Portal Microsoft Entra roles and administrators.](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|[Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary. The Project Collection Administrator role isn't required. |
 
 ## Turn on the policy
 

@@ -15,7 +15,7 @@ ms.date: 11/11/2024
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Learn how to connect to a project, from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
+Learn how to connect to a project from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)   
@@ -27,9 +27,11 @@ A project defines a process and data storage in which you manage your software p
 
 ## Prerequisites
 
-- **Project access:** [Have a project](create-project.md) in your organization. If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
-- **Remote work:** If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy). From each client, you can switch context to a different project and connect as a different user. 
-- **Code base setup:** [Set up Git](../../repos/git/gitquickstart.md) or [Set up Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml).
+| Category | Requirements |
+|--------------|-------------|
+|**Project membership**  |[Project member](../projects/create-project.md). |
+|**Remote work** |If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy). From each client, you can switch context to a different project and connect as a different user. |
+|**Code base setup**| [Set up Git](../../repos/git/gitquickstart.md) or [Set up Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml).|
 
 <a id="web-portal">  </a>
 

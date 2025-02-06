@@ -22,10 +22,11 @@ monikerRange: '<= azure-devops'
 
 Subscription logging is a valuable tool for troubleshooting. It provides diagnostic information from the notifications pipeline and is disabled by default. Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 
-## Enable subscription logging
+## Prerequisites
 
-> [!IMPORTANT]
-> TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions might cause notification delivery problems. If you're using on one of these versions, we recommend that you don't enable subscription logging for default subscriptions.
+[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+
+## Enable subscription logging
 
 To enable subscription logging, complete the following steps:
 

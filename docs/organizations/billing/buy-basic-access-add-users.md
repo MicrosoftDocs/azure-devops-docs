@@ -30,8 +30,10 @@ Visual Studio subscribers get access included with their subscription, and their
 
 Ensure you have the following items in place:
 
-* [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-* **Licensing:** Have [licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
+|**Licensing**| [Licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
 
 ## Pay via Azure
 

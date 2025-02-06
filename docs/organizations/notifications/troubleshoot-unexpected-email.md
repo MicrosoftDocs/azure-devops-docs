@@ -20,6 +20,10 @@ If you get a notification email that you didn't expect, it could be for one of t
 * The email is sent to a group of which you're a member
 * An unexpected subscription triggered the email
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+
 Do the following tasks to determine if any resolve the issue:
 
 ## Inspect the 'To:' line on the email

@@ -30,14 +30,19 @@ Create an Azure DevOps project to establish a repository for source code and to 
 
 ::: moniker range="azure-devops" 
 
-- **Organization:** Have an organization. If you don't have one, [create one](../accounts/create-organization.md).  
-- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.
+| Category | Requirements |
+|--------------|-------------|
+|**Organization** |An [organization](../accounts/create-organization.md). | 
+|**Permissions** |Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.|
+
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"  
 
-- **Project collection:** Have a project collection. If you don't have one, [create one](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
-- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.
+| Category | Requirements |
+|--------------|-------------|
+|**Project collection**| A [project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).|
+|**Permissions** |Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.|
 
 ::: moniker-end  
 
