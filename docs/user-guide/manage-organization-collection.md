@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 06/22/2023
+ms.date: 02/05/2025
 ---
 
 # Manage your organization or collection
@@ -38,7 +38,7 @@ You can add users and security groups to your organization through the web porta
 ::: moniker range="< azure-devops" 
 For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Active Directory (AD) and manage user access through security groups defined in AD. That way, when you add and remove users or groups from AD, you automatically add and remove these same users and groups from Azure DevOps. Typically, you should install Active Directory before installing Azure DevOps. You limit the maintenance of managing permissions and user access.
 
-For small and large enterprises, you add users to a server instance through the web portal **Access levels** interface. All users added to the server instance can be added to one or more projects defined within the project collection(s) defined in the server instance. 
+For small and large enterprises, you add users to a server instance through the web portal **Access levels** interface. All users added to the server instance can be added to one or more projects defined within the project collection defined in the server instance. 
 ::: moniker-end 
 
 When you add users, you specify their *access level*, which determines the features they can use through the web portal. For more information, review these resources:  
@@ -49,7 +49,7 @@ When you add users, you specify their *access level*, which determines the featu
 - [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is turned on the organization, users added to the **Project-Scoped Users** group can't access projects that they haven't been added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-user-visibility-for-projects-and-more), later in this article. 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is turned on the organization, users added to the **Project-Scoped Users** group can't access projects that they aren't added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-user-visibility-for-projects-and-more), later in this article. 
 
 ::: moniker-end  
 
@@ -104,24 +104,32 @@ The person who creates a project collection is automatically added as a member t
 It's always a good idea to have more than one person who has administrative privileges. [Look up a **Project Collection Administrator**](../organizations/security/look-up-project-collection-administrators.md) and then ask them to add you to the group.
 
 <a id="project-scoped-user-group"></a> 
+<a id="limit-user-visibility-for-projects-and-more"></a>
 
 ::: moniker range="azure-devops"
 
-### Limit user visibility for projects and more 
+### Limit user visibility and collaboration to specific projects 
 
-By default, users added to an organization can view all organization and project information and settings.  
+By default, users added to an organization can view all organization and project information and settings. You can restrict specific users with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature gets enabled, any user or group that gets added to the **Project-Scoped Users** group is restricted in the following ways:
 
-To restrict specific users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once enabled, any user or group added to the **Project-Scoped Users** group is restricted in the following ways:
-
-- Access is limited to only the projects to which they are added.
+- Access is limited to only the projects to which they're added.
 - Views displaying lists of users, projects, billing details, usage data, and more accessed through **Organization settings** are restricted.
 - The set of people or groups that appear in people-picker search selections and the ability to **@mention** people is limited.
 
 [!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
 
-For more information, see [Manage preview features](../project/navigation/preview-features.md). 
+Do the following steps to turn on the preview feature and add users and group to the Project-Scoped Users group:
 
-All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups might be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
+1. Turn on the **Limit user visibility and collaboration to specific projects** [preview feature](../project/navigation/preview-features.md) for the organization. For more information, see [Manage preview features](../project/navigation/preview-features.md).  
+2. Add the users to your project as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
+3. Open **Organizations settings** > **Security** > **Permissions** and choose **Project-Scoped Users**. Select the **Members** tab. 
+4. Add all users and groups that you want to scope to the project they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
+   
+   The **Project-Scoped Users** group only appears under the **Permissions** > **Groups** when the **Limit user visibility and collaboration to specific projects** preview feature is turned on. 
+
+All security groups in Azure DevOps are considered organization-level entities, even if they only have permissions for a specific project. This means that security groups get managed at the organization level. 
+
+From the web portal, the visibility of some security groups might be restricted based on the user's permissions. However, you can still discover the names of all security groups within an organization by using the **azure devops** CLI tool or the REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
 
 ### Set security policies
 

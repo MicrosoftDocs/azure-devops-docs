@@ -202,7 +202,7 @@ These links provide detailed steps and guidelines for setting up and managing pe
 
 By default, when users get added to an organization, they gain visibility into all organizational and project information and settings. To tailor this access, the **Limit user visibility and collaboration to specific projects** preview feature can be enabled at the organizational level. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
 
-Once this feature activates, users who are part of the **Project-Scoped Users** group have limited visibility, unable to see most **Organization settings**. Their access is confined to the projects they explicitly get added to, ensuring a more controlled environment. For more information, see [Restrict users' view to organization projects](../accounts/add-organization-users.md#restrict-user-visibility-to-organization-and-project-information)
+Once this feature activates, users who are part of the **Project-Scoped Users** group have limited visibility, unable to see most **Organization settings**. Their access is confined to the projects they explicitly get added to, ensuring a more controlled environment. For more information, see [Restrict user visibility to organization and project information](../accounts/add-organization-users.md#restrict-user-visibility-to-organization-and-project-information)
 
 ::: moniker-end
  
