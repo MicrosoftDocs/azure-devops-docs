@@ -12,6 +12,9 @@
   - name: Monitor Artifacts storage
     href: artifact-storage.md
     displayName: storage, consumption, usage, billing
+  - name: Key concepts
+    href: artifacts-key-concepts.md
+    displayName: concepts, artifacts
   - name: Best practices
     href: concepts/best-practices.md
     displayName: best practices, concepts
@@ -26,9 +29,6 @@
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json
     displayName: search, packages
-  - name: Key concepts
-    href: artifacts-key-concepts.md
-    displayName: concepts, artifacts
   - name: Componentization
     href: collaborate-with-packages.md
     displayName: componentization, artifacts, packages, concepts
