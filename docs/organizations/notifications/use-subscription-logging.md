@@ -24,7 +24,7 @@ Subscription logging is a valuable tool for troubleshooting. It provides diagnos
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Enable subscription logging
 

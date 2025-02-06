@@ -23,7 +23,7 @@ This option is good for users who don't want notifications of events that they t
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Skip initiator
 

@@ -21,7 +21,7 @@ Notification statistics show the top 10 most active subscriptions and top event 
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## View notification statistics for organization
 
