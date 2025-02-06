@@ -20,7 +20,7 @@ You might not receive an expected notification email. Learn how to check the not
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Troubleshoot delayed notifications
 

@@ -75,7 +75,7 @@ Use the **@mention** control to start or continue a discussion in the following 
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Identity search selection
 

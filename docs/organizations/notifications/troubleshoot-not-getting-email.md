@@ -35,7 +35,7 @@ If you're not receiving an expected notification email, it could be for one of t
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Troubleshoot missing notifications
 

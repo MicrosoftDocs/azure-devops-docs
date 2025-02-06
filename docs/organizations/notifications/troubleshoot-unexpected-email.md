@@ -22,7 +22,7 @@ If you get a notification email that you didn't expect, it could be for one of t
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-member-only](../../boards/includes/prerequisites-project-member-only.md)]
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 Do the following tasks to determine if any resolve the issue:
 
