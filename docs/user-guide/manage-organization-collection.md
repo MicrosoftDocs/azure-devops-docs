@@ -112,15 +112,33 @@ It's always a good idea to have more than one person who has administrative priv
 
 ::: moniker range="azure-devops"
 
-### Limit user visibility and collaboration to specific projects 
+### Limit user visibility
 
-By default, users added to an organization can view all organization and project information and settings. You can restrict specific users with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature gets enabled, any user or group that gets added to the **Project-Scoped Users** group is restricted in the following ways:
+[!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
 
-- Access is limited to only the projects to which they're added.
+### Organizations and projects
+
+By default, users added to an organization can view all organization and project information and settings. You can restrict specific users, such as Stakeholders, Microsoft Entra users, or member sof a particular security group, with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature [gets turned on](#turn-on-the-preview-feature-and-add-users-to-the-security-group), any user or group that [gets added to the **Project-Scoped Users** group](#identity-search-and-selection) is restricted in the following ways:
+
+- Access is confined to only the projects to which they're explicitly added.
 - Views displaying lists of users, projects, billing details, usage data, and more accessed through **Organization settings** are restricted.
 - The set of people or groups that appear in people-picker search selections and the ability to **@mention** people is limited.
 
-[!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
+### Identity search and selection
+
+With Microsoft Entra ID, you can use people pickers to search for any user or group in your organization, not just the ones in your current project. People pickers support the following Azure DevOps functions:
+
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page 
+
+As shown in the following image, start entering a user or security group name into a people picker box until you find a match.
+
+   :::image type="content" source="../organizations/notifications/media/at-mention/identity-selector.png" alt-text="Screenshot of people picker.":::
+
+Users and groups who get [added to the **Project-Scoped Users** group](#turn-on-the-preview-feature-and-add-users-to-the-security-group) can only see and select users and groups in the project they're connected to from a people picker.
+
+### Turn on the preview feature and add users to the security group
 
 Do the following steps to turn on the preview feature and add users and group to the Project-Scoped Users group:
 
