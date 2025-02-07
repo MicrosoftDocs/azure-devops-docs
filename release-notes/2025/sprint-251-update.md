@@ -7,7 +7,7 @@ description: TBA
 ---
 # TBA
 
-
+We’re excited to announce new enhancements in Azure DevOps that improve security and simplify workflows. The Generate Git Credentials button has been removed from the Clone Repository dialogs in Repos and Wiki, aligning with our move to Microsoft Entra tokens for authentication—helping teams adopt a more secure and efficient Git workflow. Additionally, Managed DevOps Pools is now generally available, providing better scalability, reliability, and streamlined management for Azure DevOps Virtual Machine Scale Set agent pools. These updates reinforce our commitment to building a secure and seamless experience for our developer community.
 
 Check out the release notes for details.
 

@@ -1,29 +1,29 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/6/2025
+ms.date: 2/10/2025
 ms.topic: include
 ---
-### GitHub Advanced Security Now Tracks Default Branch Changes
+### GitHub Advanced tracks default branch changes across experiences 
 
-The repository-level alert UX now displays alerts for the current default branch, and the security overview reflects only the latest default branch selection. We've received feedback that some users often change the default branch for their repositories while the Advanced Security experiences continued showing results for their old default branch selection. 
+GitHub Advanced Security now automatically detects default branch changes and updates the security overview and repository-level alert view to reflect the latest configuration.
 
-With this update, Advanced Security automatically updates the security overview and repository-level views shortly after a new default branch is assigned.
+We received feedback that default branches are frequently updated in repositories, while Advanced Security continued displaying results for the previous selection. This update ensures your security insights stay accurate and aligned.
 
 
 ### CodeQL installation for self-hosted agents supports proxy configurations
 
-If you have a network proxy configured, the enableAutomaticCodeQLInstall setting may have previously failed when downloading the CodeQL tool cache to your self-hosted agent. We've introduced handling for network proxies, ensuring that automatic installation completes successfully.
+Automatic CodeQL installation now supports network proxy configurations. Previously, the `enableAutomaticCodeQLInstall` setting could fail when downloading the CodeQL tool cache to self-hosted agents. We've introduced handling for network proxies so that automatic installation will run successfully.
 
 ### Alerts branch picker returns all branches with successful scan  
 
-Previously, it was difficult to know if your Advanced Security scan was successful if your branch had no vulnerabilities detected as the branch picker would only display branches with alerts present. 
+The branch picker in Advanced Security has been updated to display all branches with a successful scan, even if no vulnerabilities are detected. Previously, only branches with alerts were shown, making it difficult to confirm whether a scan had completed successfully
 
-Both the repository-level alerts UX and the [Analysis - List API](https://learn.microsoft.com/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2) now return branches with a successful SARIF submission for dependency and code scanning, even if no alerts are detected.
+Both the repository-level alerts UX and the [Analysis - List API](https://learn.microsoft.com/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2) now return branches with a successful SARIF submission for dependency and code scanning, improving scan visibility.
 
 ### Pull request annotations experience improvements
 
-In this release, we've improved the pull request annotation experience in Advanced Security in a few places: 
+With this release, we improved the pull request annotation experience in Advanced Security in a few places: 
 * Increased dependency scanning annotations: Advanced Security will display pull request annotations even when Advanced Security cannot determine physical file location.
 * Auto-closure: pull request comments will be automatically resolved if the associated alert is dismissed. 
 We've also introduced performance improvements and batch handling for pull request events for a smoother experience.
