@@ -124,13 +124,15 @@ Select the **Current UI** tab. The New Teams Page UI is only available for Azure
 
 5. Select the team to add team administrators, team members, configure iterations and areas. The Team Profile opens.   
 	
-  From the team profile, you can do the following tasks:<br>  
-	- [Add and remove team administrators](add-team-administrator.md)<br>
-	- [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)<br>
-	- [Set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)<br>
-	- [Define area paths and assign to a team](set-area-paths.md)<br>  
+  From the team profile, you can do the following tasks:
+
+	- [Add and remove team administrators](add-team-administrator.md)
+	- [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
+	- [Set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+	- [Define area paths and assign to a team](set-area-paths.md)
 	- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md)
- 
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="add-team-cli"></a> 
