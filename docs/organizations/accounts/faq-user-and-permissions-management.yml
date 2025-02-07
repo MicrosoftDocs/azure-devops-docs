@@ -62,11 +62,7 @@ sections:
         answer: |
           A: If you have at least **Basic** access, you can find a member of the **Project Collection Administrators** group in your organization's or collection's settings.
           
-          ::: moniker range=">= azure-devops-2019"
-          
           For more information, see [Look up a project collection administrator](../security/look-up-project-collection-administrators.md).
-          
-          ::: moniker-end
       
       - question: Why can't users access some features?
         answer: |
@@ -117,7 +113,6 @@ sections:
         answer: |
           A: If no other access levels are available, users can [work as Stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
           
-          ::: moniker range=" azure-devops"
           <a name="github-enterprise"></a>
 
   - name: GitHub Enterprise
@@ -156,8 +151,6 @@ sections:
           Q: What if a GitHub Enterprise user also has a Visual Studio subscription?
         answer: |
           A: If a user accessing Azure DevOps has both a GitHub Enterprise and Visual Studio subscription, they get detected as a Visual Studio subscriber. A Visual Studio subscription always gives them the same Basic access, and might provide access to Test Plans, depending on the subscription level.
-
-          ::: moniker-end
 
           <a name="user-access"></a>
 

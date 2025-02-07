@@ -429,7 +429,7 @@ A: After changing the setting, sign out of Azure DevOps and then sign back in to
 A: Only organization or project Administrators can invite new users to join the organization. You might not have the required permissions to add new users. Work with your administrator to get the necessary permissions or ask them to add the user for you.
 
 ### Q: Do GitHub Enterprise users get free access to Azure DevOps?
-A: For more information, see [User and permissions management FAQs](../../organizations/accounts/faq-user-and-permissions-management?view=azure-devops#github-enterprise).
+A: For more information, see [User and permissions management FAQs/GitHub Enterprise](../../organizations/accounts/faq-user-and-permissions-management.yml).
 
 ## Next steps
 
