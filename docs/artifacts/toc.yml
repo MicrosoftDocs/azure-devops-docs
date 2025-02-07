@@ -29,9 +29,6 @@
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json
     displayName: search, packages
-  - name: Componentization
-    href: collaborate-with-packages.md
-    displayName: componentization, artifacts, packages, concepts
 - name: Feeds
   items:
   - name: What are feeds?
