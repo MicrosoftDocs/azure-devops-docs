@@ -42,8 +42,6 @@ Open your team profile to quickly access items defined for your team.
 
    :::image type="content" source="media/open-project-settings-teams-cloud.png" alt-text="Screenshot of sequence to open a team.":::
 
-::: moniker-end
-
 ## Add users to a team
  
 Tools like capacity planning, team alerts, and dashboard widgets operate within the scope of a team. They automatically access the user information of team members to facilitate planning tasks or issue alerts.
@@ -97,6 +95,7 @@ Most of these team settings can be easily configured from the common configurati
 ::: moniker range=">= azure-devops-2022"
 
 1. Check that you selected the correct project, and then choose **Boards** > **Boards**, and select the correct team from the team selector dropdown menu. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md).
+   
    :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the board.":::
 
 2. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
@@ -144,7 +143,7 @@ For detailed information on each configuration option, you can explore the follo
       **General**
       - [Backlogs](select-backlog-navigation-levels.md)
       - [Working with bugs](show-bugs-on-backlog.md)            
-      **Cards**
+   **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
       - [Add tag colors](../../boards/boards/customize-cards.md)

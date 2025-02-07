@@ -25,14 +25,14 @@ Azure DevOps grants many permissions by default to members of default security g
 - Update or reset permissions
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Security namespace and permission reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces).. 
+> Namespaces and tokens are valid for all versions of Azure DevOps. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Security namespace and permission reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces). 
 > 
 ## Prerequisites 
 
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  |
-|**Tools**| [Azure DevOps CLI extension](../../cli/index.md).<br>- Sign in using `az login`.<br>- For the examples in this article, set the default organization as follows:<br>- **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.  - **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`|
+|**Tools**| [Azure DevOps CLI extension](../../cli/index.md).<br>- Sign in using `az login`.<br>- For the examples in this article, set the default organization as follows:<br>- **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.<br>- **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`|
 
 ## Security permission commands
 
@@ -233,7 +233,7 @@ az devops security permission list --id
 
 ### Parameters
 
-- - **id** or **namespace-id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
+- **id** or **namespace-id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
 - **subject**: Required. The email address or group descriptor of the user.
 - **recurse**: Optional. If true, and the namespace is hierarchical, this parameter returns the child ACLs of the tokens.
 - **token**: Optional. Specify an individual security token.

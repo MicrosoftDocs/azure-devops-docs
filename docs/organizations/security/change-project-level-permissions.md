@@ -25,7 +25,7 @@ Consider adding users to the **Project Administrators** group when they're taske
 [!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)]
 
 > [!NOTE]
-> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrators** group. It isn't controlled by a permissions surfaced within the user interface. 
+> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrators** group. It isn't controlled by a permission surfaced within the user interface. 
 
 ### Create tag definition permission
 

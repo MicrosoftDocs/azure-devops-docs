@@ -114,7 +114,7 @@ az devops user list [--org] [--skip] [--top]
 #### Parameters
 
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. For example, `--org https://dev.azure.com/MyOrganizationName/`.
-- - **skip**: Optional. Number of users to skip.
+- **skip**: Optional. Number of users to skip.
 - **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.
 
 #### Example
