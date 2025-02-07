@@ -26,8 +26,7 @@ To add a team, see [Add teams](add-teams.md). To add or remove a project adminis
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group, or a team administrator for the team you want to update.
-- **Access:** To get added as a team administrator, have at least **Basic** access and ask another team administrator or a member of the [Project Administrators] (../security/look-up-project-administrators.md) group.
+[!INCLUDE [prerequisites-project-administrator-and-basic](../../includes/prerequisites-project-administrator-and-basic.md)]
 
 <a id="open-admin-context">  </a>
 

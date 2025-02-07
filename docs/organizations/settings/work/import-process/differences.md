@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
-# Process template customizations differences between Azure DevOps Services and TFS  
+# Process template customization differences
 
 [!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
  
@@ -22,11 +22,11 @@ ms.date: 03/20/2018
 >
 >To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md).  
 
-Azure DevOps Services uses a different model than Team Foundation Server (TFS) for relating projects and process.  
-* In TFS, process templates are used as starting points for projects and once a project is created, the project is the scope you customize.
+Azure DevOps Services uses a different model than Azure DevOps Server for relating projects and process.  
+* In Azure DevOps Server, process templates are used as starting points for projects and once a project is created, the project is the scope you customize.
 * In Azure DevOps Services, process is shared across multiple projects and is the scope you customize.  
  
-The structure and overall syntax used in defining process templates remains the same, with only a few minor differences existing between templates you customize for import into Azure DevOps Services and those you upload to support an on-premises TFS.  
+The structure and overall syntax used in defining process templates remains the same, with only a few minor differences existing between templates you customize for import into Azure DevOps Services and those you upload to support an on-premises version.  
 
 > [!NOTE]  
 > Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Services.

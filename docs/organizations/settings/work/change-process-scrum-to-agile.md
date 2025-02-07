@@ -36,6 +36,8 @@ Reasons you might want to change your process from Scrum to Agile:
 
 [!INCLUDE [temp](../includes/change-process-manual-steps.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]

@@ -19,14 +19,13 @@ Due to the extensive security and permission structure of Azure DevOps, you migh
 
 ## Prerequisites
 
-**Permissions:** To manage permissions or groups at the organization or collection level, be a member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group.
-
-**Recommended**: Before using this guide, we recommend getting familiar with the following content: 
-- [Get started with permissions, access, and security groups](about-permissions.md)
-- [Default permissions and access quick reference.](permissions-access.md) 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | To manage permissions or groups at the organization or collection level: Member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| **Recommendation** | Before using this guide, we recommend getting familiar with the following content: <br>- [Get started with permissions, access, and security groups](about-permissions.md) <br>- [Default permissions and access quick reference](permissions-access.md). |
 
 > [!TIP]
-> When you're creating an Azure DevOps security group, label it clearly to indicate if it's intended to limit access.
+> When you create an Azure DevOps security group, label it clearly to indicate whether it's intended to limit access.
 
 You can set permissions at the following levels:
 - Object level

@@ -124,6 +124,8 @@ When you add a WIT to a backlog level, certain fields are automatically added to
 | Requirement backlog |- Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
 | Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
  
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 

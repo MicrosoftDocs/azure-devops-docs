@@ -35,6 +35,8 @@ For more information, see [About processes and process templates](../../../board
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
 [!INCLUDE [image-differences](../../../includes/image-differences.md)]
