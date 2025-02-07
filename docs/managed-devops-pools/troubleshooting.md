@@ -77,6 +77,10 @@ For more information, see [Manage cost and performance - Pre-provisioning with s
 
 #### Automatic standby mode for new pools
 
+Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standy mode, and switch back to automatic standby mode after a month, onceonce During the first month using a pool, you can switch to manual standby mode.
+
+
+
 ### Consider using Stateful pools with a grace period to keep agents online
 
 One option to improve agent performance without using standby agents is to use stateful agents with a short grace period. When stateful agents with a grace period complete a job, they stay online for the duration specified by the grace period and wait for jobs. If your workload comes in bursts, you can configure a grace period that keeps agents online when jobs are steady, and starts them from scratch during slower periods.
