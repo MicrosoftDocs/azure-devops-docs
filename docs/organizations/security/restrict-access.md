@@ -196,7 +196,7 @@ These links provide detailed steps and guidelines for setting up and managing pe
 
 ::: moniker range="azure-devops" 
 
-### Limit user visibility
+## Limit user visibility
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
