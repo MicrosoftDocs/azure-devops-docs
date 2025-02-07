@@ -95,7 +95,6 @@ For more information about security and setting permissions at the collection-le
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
 - [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 
-
 ### Add members to the Project Collection Administrators group 
 
 ::: moniker range="azure-devops"
@@ -107,12 +106,25 @@ The person who creates a project collection is automatically added as a member t
 
 It's always a good idea to have more than one person who has administrative privileges. [Look up a **Project Collection Administrator**](../organizations/security/look-up-project-collection-administrators.md) and then ask them to add you to the group.
 
+
+### Set security policies
+
+Configure the security policies for your organization through the **Organization settings** > **Policies** page. These policies let you grant or restrict the following features: 
+- Non-microsoft application access via OAuth 
+- SSH authentication
+- Creation of public projects
+- Invitation of GitHub user accounts
+
+:::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies.":::
+
+For more information, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md). 
+
 <a id="project-scoped-user-group"></a> 
 <a id="limit-user-visibility-for-projects-and-more"></a>
 
 ::: moniker range="azure-devops"
 
-### Limit user visibility
+## Limit user visibility
 
 [!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
 
@@ -152,18 +164,6 @@ Do the following steps to turn on the preview feature and add users and group to
 All security groups in Azure DevOps are considered organization-level entities, even if they only have permissions for a specific project. This means that security groups get managed at the organization level. 
 
 From the web portal, the visibility of some security groups might be restricted based on the user's permissions. However, you can still discover the names of all security groups within an organization by using the **azure devops** CLI tool or the REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
-
-### Set security policies
-
-Configure the security policies for your organization through the **Organization settings>Policies** page. These policies let you grant or restrict the following features: 
-- Non-microsoft application access via OAuth 
-- SSH authentication
-- Creation of public projects
-- Invitation of GitHub user accounts
-
-:::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies.":::
-
-For more information, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md). 
 
 ::: moniker-end
 
