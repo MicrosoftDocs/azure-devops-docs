@@ -39,7 +39,7 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 ### Create allowlist
 
 > [!WARNING]
-> We recommend using groups with your tenant policy allow list. If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups with your tenant policy allowlist. If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 When the policy is enabled, all users are restricted from creating new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
 
@@ -64,7 +64,7 @@ The error message is customized.
 ![Customized error message](media/azure-ad-tenant-policy/error-message-example-ui.png)
 
 > [!NOTE]
-> Administrators, who aren't on the allow list, can't connect their organization to the Microsoft Entra tenant where the policy is turned on.
+> Administrators, who aren't on the allowlist, can't connect their organization to the Microsoft Entra tenant where the policy is turned on.
 >
 > ![Connection failed error](media/azure-ad-tenant-policy/connection-failed-notification.png)
 
