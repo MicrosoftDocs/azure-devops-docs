@@ -49,7 +49,7 @@ For example, when the Azure DevOps team at Microsoft chose to move from Azure De
 
 The [Azure DevOps Data Migration Tool](https://www.microsoft.com/download/details.aspx?id=54274) is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.  
 
-Before you initiate the migration process, the tools can perform a premigration analysis to assess the readiness of the source environment and identify potential issues or dependencies that might affect the migration. Assess readiness, so you can plan and mitigate potential challenges beforehand. 
+Before you initiate the migration process, the tools can perform a premigration analysis to assess the readiness of the source environment and identify potential issues or dependencies that might affect the migration. Assess readiness, so you can plan and mitigate potential challenges beforehand.
 
 ## Migration Tool limitations
 
@@ -83,6 +83,26 @@ You can purge data that you don’t need before or after the migration.
 ## Option 3: API-based migration
 
 If you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), consider using various tools that leverage public APIs to move data. These tools include extensions available at the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+
+[OpsHub Migrator for Microsoft Azure DevOps (OM4ADO)](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHub), formerly known as OpsHub Visual Studio Migration Utility (OVSMU), enables a seamless migration between Azure DevOps Server and Azure DevOps Services (TFS to ADO, ADO to TFS, ADO to ADO and TFS to ADO migrations). The tool supports:
+- Version control information and history (original dates and users added to comments)
+- Work items (standard and custom) and history (retains the original dates and users)
+- Test plan, test suite, test cases and test results
+- Iteration, area path, group, team, user
+- Dashboard, query, widget, and pipeline
+- Azure DevOps Server versions 2010 and later
+- Azure DevOps Services
+
+## Migrate from legacy tools to Azure DevOps
+[OpsHub Migration Manager (OMM)](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OMM) allows you to migrate from non-Microsoft tools to Azure DevOps (Server or Services) without downtime or disruption. This tool can migrate: 
+- Work items (standard and custom)
+- Test entities - test plan, test result, test run, test suite
+- Areas, iterations, dashboard, query, widget
+- History, comments, attachments and links, mentions
+- All or selected projects to Azure DevOps
+- Reverse sync information from Azure DevOps to legacy tool
+- Azure DevOps Server versions 2010 and later
+- Azure DevOps Services 
 
 ## API-based migration limitations
 
