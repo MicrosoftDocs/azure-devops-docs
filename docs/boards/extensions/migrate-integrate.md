@@ -36,6 +36,15 @@ The [Azure DevOps Migration Tools marketplace extension](https://github.com/nkdA
 
 For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/).
 
+[OpsHub Migrator for Microsoft Azure DevOps (OM4ADO)](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHub), formerly known as OpsHub Visual Studio Migration Utility (OVSMU), enables a seamless migration between Azure DevOps Server and Azure DevOps Services (TFS to ADO, ADO to TFS, ADO to ADO and TFS to ADO migrations). The tool supports:
+- Version control information and history (original dates and users added to comments)
+- Work items (standard and custom) and history (retains the original dates and users)
+- Test plan, test suite, test cases and test results
+- Iteration, area path, group, team, user
+- Dashboard, query, widget, and pipeline
+- Azure DevOps Server versions 2010 and later
+- Azure DevOps Services
+
 ## Migrate process models between Azure DevOps organizations
 
 The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.processtemplate) marketplace extension provides support to complete the following tasks:  
@@ -53,7 +62,20 @@ If you want to migrate from Jira to Azure Boards, consider using the Marketplace
 - Map users from Jira to users in Azure DevOps 
 - Migrate work item field data  
 - Migrate links and attachments 
-- Migrate history  
+- Migrate history
+
+## Migrate from legacy tools to Azure DevOps
+
+[OpsHub Migration Manager (OMM)](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OMM) allows you to migrate from non-Microsoft tools to Azure DevOps (Server or Services) without downtime or disruption. This tool can migrate: 
+- Work items (standard and custom)
+- Test entities - test plan, test result, test run, test suite
+- Areas, iterations, dashboard, query, widget
+- History, comments, attachments and links, mentions
+- All or selected projects to Azure DevOps
+- Reverse sync information from Azure DevOps to legacy tool
+- Azure DevOps Server versions 2010 and later
+- Azure DevOps Services 
+
 
 ## Integrate with GitHub
 
