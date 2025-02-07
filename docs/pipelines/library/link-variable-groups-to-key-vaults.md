@@ -4,7 +4,7 @@ description: Create a variable group that links to secrets in an Azure key vault
 ms.topic: tutorial
 ms.author: v-catherbund
 author: cebundy
-ms.date: 08/25/2024
+ms.date: 01/27/2025
 monikerRange: '<= azure-devops'
 ---
 

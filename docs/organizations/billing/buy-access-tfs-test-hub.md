@@ -21,7 +21,9 @@ monikerRange: '< azure-devops'
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the **Team Foundation Administrators** group. The user who installed Azure DevOps Server gets automatically added to this group. For more information, see [Add or remove a team administrator](../settings/add-team-administrator.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the **Team Foundation Administrators** group. The user who installed Azure DevOps Server gets automatically added to this group. For more information, see [Add or remove a team administrator](../settings/add-team-administrator.md).|
 
 For more information about the requirements to access Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about licensing, see the [pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing). To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 

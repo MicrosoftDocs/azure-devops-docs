@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 01/20/2025
+ms.date: 01/22/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -186,9 +186,9 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
       </tr>  
        <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
-         <td>2025 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>
       </tr>       
       <tr>
          <td>
@@ -199,7 +199,7 @@ These investments include:
       </tr>  
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with GitHub repository</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with<br />GitHub repository</a>
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
@@ -217,12 +217,21 @@ These investments include:
          </td>
          <td>Boards</td>
          <td>2025 Q1</td>   
-      </tr>
+      </tr>   
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo" data-raw-source="[Report stage status to work item when using a YAML release pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item-github-repo)">Report stage status to work item when using a YAML release pipeline with GitHub repository</a></td>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit)">Auto link the merge commit</a>
+         </td>
          <td>Boards</td>
-         <td>Future</td>
-      </tr>       
+         <td>2025 Q1</td>   
+      </tr>   
+       <tr>
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link" data-raw-source="[Automatically remove branch links from work items when their corresponding GitHub branches are deleted](/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link)">Automatically remove branch links when their corresponding<br/>GitHub branches are deleted</a>
+         </td>
+         <td>Boards</td>
+         <td>2025 Q1</td>   
+      </tr>         
     </tbody>
 </table>
 
@@ -380,7 +389,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="18"><strong>2025 Q1</strong></td>
+      <td rowspan="20"><strong>2025 Q1</strong></td>
        <td>
          <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
         </td>
@@ -396,6 +405,17 @@ Below, you will find several investments that we plan to deliver as part of this
          </td>
          <td>Boards</td>
       </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/roadmap/2024/boards-auto-link-merge-commit)">Auto link the merge commit</a>
+         </td>
+         <td>Boards</td>
+      </tr>     
+      <tr>
+         <td>
+          <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link" data-raw-source="[Automatically remove branch links from work items when their corresponding GitHub branches are deleted](/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link)">Automatically remove branch links when their corresponding GitHub branches are deleted</a>
+         </td>
+         <td>Boards</td>
+      </tr>     
       <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
@@ -454,12 +474,16 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="13"><strong>2025 Q2</strong></td>
+      <td rowspan="11"><strong>2025 Q2</strong></td>
         <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
          <td>Boards</td>         
       </tr> 
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
+        <td>Boards</td>
+      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
@@ -496,19 +520,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result" data-raw-source="[Advanced Test Case result history](/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result)">Advanced Test Case result history</a></td>
          <td>Test Plans</td>
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines" data-raw-source="[Seamless build pipeline integration for Test Case Run](/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines)">Seamless build pipeline integration for Test Case Run</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript" data-raw-source="[Support for JavaScript in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript)">Support for JavaScript in Azure Test Plans</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test" data-raw-source="[Improve flaky test detection](/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test)">Improve flaky test detection</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <td rowspan="17"><strong>Future</strong></td>
+      <td rowspan="20"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
@@ -551,6 +563,18 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
          <td>Pipelines</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines" data-raw-source="[Seamless build pipeline integration for Test Case Run](/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines)">Seamless build pipeline integration for Test Case Run</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript" data-raw-source="[Support for JavaScript in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-javascript)">Support for JavaScript in Azure Test Plans</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test" data-raw-source="[Improve flaky test detection](/azure/devops/release-notes/roadmap/2025/testplans/improve-flaky-test)">Improve flaky test detection</a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/package-promote-task" data-raw-source="[Package promote task in Azure Pipelines](/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
@@ -640,15 +664,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Pipelines</td>
       </tr>
       <tr>
-      <td rowspan="5"><strong>2025 H2</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
-        <td>Test Plans</td>
-      </tr>
-      <tr>
+      <td rowspan="3"><strong>2025 H2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
         <td>Boards</td>
       </tr>     
@@ -660,7 +676,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
          <td>Boards</td>         
       </tr> 
-      <td rowspan="27"><strong>Future</strong></td>
+      <td rowspan="26"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
       </tr>
@@ -723,10 +739,6 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
          <td>Reporting</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/sort-test-plans" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
-        <td>Test Plans</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-junit" data-raw-source="[Support for JUnit/Java in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-junit)">Support for JUnit/Java in Azure Test Plans</a></td>

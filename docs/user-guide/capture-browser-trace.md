@@ -6,7 +6,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 01/27/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,6 +18,10 @@ A HAR (HTTP Archive) file tracks information between a web browser and a website
 
 > [!WARNING]
 > Browser traces often contain sensitive information and might include authentication tokens linked to your identity. Remove any passwords before sharing traces with others. Handle these HAR files with care to ensure the security and privacy of the contained information. Microsoft support uses these traces for troubleshooting purposes only.
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../includes/prerequisites-project-member-only.md)]
 
 ## Generate HAR file and record browser activity
 
@@ -49,8 +53,8 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
    :::image type="content" source="media/capture-browser-trace/microsoft-edge-network-tab-check-preserve-log.png" alt-text="Screenshot shows check next to Preserve log in Network tab in Microsoft Edge.":::
 
 7. Go to the step before where the issue occurs.
-8. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
-9.  When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting. 
+8. Record the steps you take in Azure DevOps using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47). Steps Recorder doesn't automatically start recording HAR traces in DevTools, so make sure to start the recording in DevTools, too.
+9. When you're done recording, stop recording in Step Recorder. In DevTools, stop recording and long press **Export** so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting. 
 
 10. Select **Export HAR (with sensitive data)**.	 
 

@@ -67,8 +67,6 @@
       href: security/github-advanced-security-code-scanning-third-party.md
     - name: Troubleshoot code scanning
       href: security/github-advanced-security-code-scanning-troubleshoot.md
-  - name: Security Overview on GitHub Advanced Security
-    href: security/github-advanced-security-security-overview.md
 - name: Integrations
   items:
   - name: Azure Repos with Slack

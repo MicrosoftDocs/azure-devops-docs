@@ -22,35 +22,32 @@ The web portal for Azure DevOps provides support for software development teams 
 
 This article shows you how to navigate to functional and administrative tasks available from the web portal. There are three levels of administrative tasks: team, project, and organization.  
 
-If you don't have a project yet, [create one](../../user-guide/sign-up-invite-teammates.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigationbreadcrumb/toc.json). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-This article shows you how to navigate to functional and administrative tasks available from the web portal. There are four levels of administrative tasks: team, project, collection, and server.  
-
-If you don't have a project yet, [create one](../../organizations/projects/create-project.md). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
+This article shows you how to navigate to functional and administrative tasks available from the web portal. There are four levels of administrative tasks: team, project, collection, and server.
 
 ::: moniker-end
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
 ## Open a service or functional task page
 
 Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
 
-
 > [!NOTE]  
-> Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+> Only those services that are enabled appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service don't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 
 You open a service by choosing the service from the sidebar and then selecting from the available pages. 
 
-For example, here we select **Boards -> Backlogs**. 
+For example, here we select **Boards** > **Backlogs**. 
 
 :::image type="content" source="media/go-to-app/work-backlogs-selection.gif" alt-text="Screenshot of Boards -> Backlogs.":::
 
-
-Within the page you may select a specific view or artifact, such as a team backlog or choose another page. 
-
+Within the page you might select a specific view or artifact, such as a team backlog or choose another page. 
 
 <a id="team-settings"></a> 
 
@@ -59,7 +56,7 @@ Within the page you may select a specific view or artifact, such as a team backl
 Select configurations are made to teams through the team settings pages. For an overview of all team settings, see [About user, team, project, and organization-level settings](../../organizations/settings/about-settings.md#team).
 
 
-1. Choose **Project Settings**.
+1. Choose **Project settings**.
 
     :::image type="content" source="../../media/settings/open-project-settings-vert-brn.png" alt-text="Screenshot of project settings selection.":::
 
@@ -97,7 +94,6 @@ Administrators configure resources for a project and manage project-level permis
 
 Organization owners and members of the Project Collection Administrators group configure resources for all projects or the entire organization, including adding users, from the Organization settings pages. This includes managing permissions at the organization-level. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
-
 From there, you can choose a page from the list of settings. Settings are organized based on the service they support, such as **Boards**, **Repos**, **Pipelines**, and **Artifacts**.
   
 ::: moniker-end
@@ -115,7 +111,6 @@ Members of the Project Collection Administrators group configure resources for a
 1. From there, you can choose a page from the list of settings. Settings are organized based on the service they support, such as **Boards**, **Repos**, and **Pipelines**.  
 
 ::: moniker-end
-
 
 ## Related articles 
 

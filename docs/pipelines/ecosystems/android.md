@@ -6,7 +6,7 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2
-ms.date: 08/12/2024
+ms.date: 02/04/2025
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -91,26 +91,34 @@ For security, store the `jarsignerKeystorePassword` and `jarsignerKeyPassword` i
 
 To install and run the Android emulator, add the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to your pipeline, and paste in the following code. The emulator starts as a background process and is available in later tasks. Arrange the emulator parameters to fit your testing environment.
 
-```bash
-#!/usr/bin/env bash
+> [!IMPORTANT]
+> If you're using a [Microsoft-hosted agent](../agents/hosted.md), use the MacOS agent image with the Android emulator. Current Android emulators require hardware acceleration to start. Azure DevOps hosted Ubuntu agents do not support hardware acceleration. 
 
-# Install AVD files
-echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-30;google_apis;x86'
+```yaml
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      #!/usr/bin/env bash
 
-# Create emulator
-echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n android_emulator -k 'system-images;android-30;google_apis;x86' --force
+      # Install AVD files
+      echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-35;google_apis;x86_64'
 
-$ANDROID_HOME/emulator/emulator -list-avds
+      # Create emulator
+      echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager create avd -n xamarin_android_emulator -d "Nexus 10" -k 'system-images;android-35;google_apis;x86_64' --force
 
-echo "Starting emulator"
+      echo "y" | $ANDROID_HOME/emulator/emulator -list-avds
 
-# Start emulator in background
-nohup $ANDROID_HOME/emulator/emulator -avd android_emulator -no-snapshot -no-window -no-audio -no-boot-anim -accel off > /dev/null 2>&1 &
-$ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
+      echo "Starting emulator"
 
-$ANDROID_HOME/platform-tools/adb devices
+      # Start emulator in background
+      nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot -no-window -no-audio -no-boot-anim -accel on > /dev/null 2>&1 &
+      # Fixed quoting around "\r"
+      $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d "\r") ]]; do sleep 1; done; input keyevent 82'
 
-echo "Emulator started"
+      $ANDROID_HOME/platform-tools/adb devices
+
+      echo "Emulator started"
 ```
 
 ### Test on Azure-hosted devices

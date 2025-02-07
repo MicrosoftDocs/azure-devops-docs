@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli, arm2024
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/30/2024
+ms.date: 01/30/2025
 monikerRange: azure-devops
 ---
 
@@ -14,10 +14,9 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-Azure Virtual Machine Scale Set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
+[!INCLUDE [mdp-recommended](../../managed-devops-pools/includes/mdp-recommended.md)] 
 
-> [!TIP]
-> Managed DevOps Pools is a new service that is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, simplifying custom pool creation even further, by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools. For more information, see the [Managed DevOps Pools](../../managed-devops-pools/index.yml) documentation.
+Azure Virtual Machine Scale Set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
 If you like Microsoft-hosted agents but are limited by what they offer, you should consider scale set agents. Here are some examples:
 
@@ -27,7 +26,7 @@ If you like Microsoft-hosted agents but are limited by what they offer, you shou
 - You need to open corporate firewall to specific IP addresses so that Microsoft-hosted agents can communicate with your servers.
 - You need to restrict network connectivity of agent machines and allow them to reach only approved sites.
 - You can't get enough agents from Microsoft to meet your needs.
-- Your jobs exceed the Microsoft-hosted agent timeout.
+- Your jobs exceed the Microsoft-hosted agent time-out.
 - You can't partition Microsoft-hosted parallel jobs to individual projects or teams in your organization.
 - You want to run several consecutive jobs on an agent to take advantage of incremental source and machine-level package caches.
 - You want to run configuration or cache warmup before an agent begins accepting jobs.
@@ -150,10 +149,9 @@ In the following example, a new resource group and Virtual Machine Scale Set are
 > [!IMPORTANT]
 > Azure Pipelines does not support [instance protection](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection). Make sure you have the *scale-in* and *scale set actions* instance protections disabled.
 
-### Orchestration modes
-Azure virtual machine scale sets can be configured with two [orchestration modes](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes): Uniform and Flexible. Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
+### Orchestration mode
 
-The Flexible orchestration mode enables Azure Pipelines to queue multiple scale set operations in parallel. Azure Pipelines support for Flexible orchestration is available upon request and is subject to evaluation. Customers' usage patterns need to indicate a significant benefit from it. Such customers have large scale sets, do not reuse agents for multiple jobs, run multiple, short-lived jobs in parallel, and exclusively use ephemeral disks in their VMs. If you would like to use this feature, reach out to our [support team](https://azure.microsoft.com/support/devops/).
+Azure virtual machine scale sets can be configured with Uniform [orchestration mode](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes). Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
 
 ## Create the scale set agent pool
 
@@ -196,7 +194,7 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 > [!IMPORTANT]
 > Caution must be exercised when making changes directly to the scale set in the Azure portal.
-> - You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
+> - You may not change many of the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
 > - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
 
 ## How Azure Pipelines manages the scale set
@@ -463,7 +461,7 @@ To delete the saved agent when you're done with your investigation, navigate to 
 
 - [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents)
   - [Create the scale set](#create-the-scale-set)
-    - [Orchestration modes](#orchestration-modes)
+    - [Orchestration mode](#orchestration-mode)
   - [Create the scale set agent pool](#create-the-scale-set-agent-pool)
   - [Use scale set agent pool](#use-scale-set-agent-pool)
   - [How Azure Pipelines manages the scale set](#how-azure-pipelines-manages-the-scale-set)

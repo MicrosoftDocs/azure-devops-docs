@@ -509,7 +509,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 3. Configure Container Registry integration for existing AKS clusters.
 
     > [!NOTE]
-    > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
+    > If you have multiple subscriptions on the Azure portal, please, use this command first to select a subscription
     >```azurecli
     >az account set --subscription "<subscription id or subscription name>"
     >```

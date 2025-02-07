@@ -22,6 +22,10 @@ Learn the following CLI commands for managing wikis.
 > [!NOTE]
 > You can't delete project wikis with the CLI.
 
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
+
 ## Commands
 
 |Commands  |description  |

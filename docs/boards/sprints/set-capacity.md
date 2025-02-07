@@ -38,9 +38,11 @@ To set up sprints yet for your team, see [Manage sprint timelines](define-sprint
 
 ## Prerequisites
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md).
-- **Permissions**: Be a member of the **Contributors** or **Project Administrators** security group in your project. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-- **Access levels**: To view or set capacity, have at least **Basic** access. Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** security group in your project. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). |
+| **Access levels** | To view or set capacity: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
 
 <a id="customize-activity-list">  </a> 
 
