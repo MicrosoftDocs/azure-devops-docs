@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/23/2024  
+ms.date: 02/10/2025
 ---
 
 
@@ -31,7 +31,8 @@ Assign users or groups of users to one of the following access levels:
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in **Basic** and Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Stakeholder**: Can assign to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Visual Studio Subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
+- **Visual Studio subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
+- **GitHub Enterprise**: The system automatically recognizes users with a GitHub Enterprise license the next time they sign in to Azure DevOps. Regardless of a user's assigned access level (for example, they could be assigned **Stakeholder** access), they receive **Basic** access when they're associated with a GitHub Enterprise license.
 
 > [!TIP]
 > As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
@@ -62,7 +63,7 @@ The following table indicates those features available for each supported access
       **Stakeholder**
    :::column-end:::
    :::column span="1":::
-      **Basic** &<br/>**Visual Studio Professional**
+      **Basic**, **GitHub Enterprise**, &<br/>**Visual Studio Professional**
    :::column-end:::
    :::column span="1":::
       **Basic + Test Plans &**<br/>**Visual Studio Enterprise**
