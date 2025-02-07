@@ -59,6 +59,8 @@ Teams should update their board configuration when making the following customiz
 - [Track bugs along with tasks](../show-bugs-on-backlog.md), adding states to the bug WIT, which also adds columns to the Taskboard.
 - Add the same states to both task and bug work item types, which updates the status consistently and minimize the number of columns added.
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [organization process settings](../includes/open-process-admin-context-ts.md)]
