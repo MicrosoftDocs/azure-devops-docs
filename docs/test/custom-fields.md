@@ -19,6 +19,10 @@ Using the custom fields allows [storing the custom data](#store-custom-data) aga
 There can be up to 100 custom fields defined for a single Azure DevOps project.
 Project administrator can [manage (add/delete) the set of the custom fields](#managing-custom-fields).
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+
 <a name="managing-custom-fields"></a>
 
 ## Manage the custom fields

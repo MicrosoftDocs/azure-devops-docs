@@ -21,19 +21,19 @@ This article describes how you can integrate your Azure DevOps project activitie
 
 ## Requirements and limitations
 
-- To create Azure DevOps subscriptions in Teams, have **Project Administrator** permissions in your Azure DevOps project.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - To create Azure DevOps subscriptions in Teams: Member of the **Project Administrators** group.<br>- To receive Azure DevOps notifications in Teams: **Third party application access via OAuth** enabled in your Azure DevOps organization settings.|
+|**Microsoft Entra**|Only Azure DevOps organizations in the same Microsoft Entra tenant as your Microsoft Teams account can be connected. Even if your email addresses are the same for Azure DevOps and Microsoft Teams, they can't be linked if they're backed by different tenants. For more information, see [Access via Microsoft Entra FAQs](../../organizations/accounts/faq-azure-access.yml#AlreadyConnected). |
 
-- To receive Azure DevOps notifications in Teams, have **Third party application access via OAuth** enabled in your Azure DevOps organization settings.
-
-- Only Azure DevOps organizations in the same Microsoft Entra tenant as your Microsoft Teams account can be connected. Even if your email addresses are the same for Azure DevOps and Microsoft Teams, they can't be linked if they're backed by different tenants. For more information, see [Access via Microsoft Entra FAQs](../../organizations/accounts/faq-azure-access.yml#AlreadyConnected).
-
-- Office 365 Connectors within Teams are being retired, and you might be unable to create new connectors. For more information, see [Retirement of Office 365 connectors within Microsoft Teams](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/). Features that provide similar functionality to Office 365 Connectors with better scalability and security include [Workflows](/power-automate/teams/install-teams-app) or the Azure DevOps Services apps for Teams.
+> [!NOTE]
+> Office 365 Connectors within Teams are retired. For more information, see [Retirement of Office 365 connectors within Microsoft Teams](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/). Features that provide similar functionality to Office 365 Connectors with better scalability and security include [Workflows](/power-automate/teams/install-teams-app) or the Azure DevOps Services apps for Teams.
 
 ## Azure DevOps Services apps for Teams
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
 
 You can use the following apps that offer rich features to integrate with Microsoft Teams.
 
@@ -77,7 +77,7 @@ To bring your project dashboard or Kanban board into Teams, you can install the 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops" 
+::: moniker range=" < azure-devops"
 
 ## Add the Azure DevOps Server app to a team
 
@@ -106,7 +106,8 @@ To manage your Teams apps and tabs, select **Apps** in the Teams menu and then s
 
 ## Related content
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
+
 - [Use the Azure Boards app in Microsoft Teams](../../boards/integrations/boards-teams.md)
 - [Integrate Azure Pipelines with Microsoft Teams](../../pipelines/integrations/microsoft-teams.md)
 - [Use Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)
@@ -114,7 +115,8 @@ To manage your Teams apps and tabs, select **Apps** in the Teams menu and then s
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range=" < azure-devops"
+
 - [Retirement of Office 365 connectors within Microsoft Teams](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/)
 - [Install the Workflows app in Microsoft Teams](/power-automate/teams/install-teams-app)
 

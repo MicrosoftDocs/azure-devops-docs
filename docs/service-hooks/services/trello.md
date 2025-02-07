@@ -15,6 +15,13 @@ ms.date: 07/27/2020
 Create cards and lists in Trello in response to events from Azure DevOps.
 For example, when code is pushed, or a build occurs.
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
+|**Tools**|Trello  |
+
 ## Get a Trello authorization token
 
 1. If you don't have a Trello account, sign up at [Trello](https://trello.com/signup).

@@ -14,10 +14,16 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Grafana is an open source, feature-rich metrics dashboard and graph editor. It supports Graphite, Elasticsearch, OpenTSDB, Prometheus, and InfluxDB analytics services. Use the Grafana service hook to annotate Grafana dashboards upon completion of Azure Pipelines deployments.
+Grafana is an open source, feature-rich metrics dashboard, and graph editor. It supports Graphite, Elasticsearch, OpenTSDB, Prometheus, and InfluxDB analytics services. Use the Grafana service hook to annotate Grafana dashboards upon completion of Azure Pipelines deployments.
 
 ![Grafana dashboard with annotations](./media/grafana/dashboard-with-annotations.png)
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
+|**Tools**|Grafana  |
 
 ::: moniker range="azure-devops-2019"
 

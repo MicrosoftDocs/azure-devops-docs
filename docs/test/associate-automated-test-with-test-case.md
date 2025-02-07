@@ -27,6 +27,10 @@ Consider using Visual Studio to associate automated tests with a test case when:
   If your test cases are linked to requirements or user stories,
   the results of the test execution can be used to establish the quality of those requirements. 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites](includes/prerequisites.md)] 
+
 ## Create a test project and build pipeline
 
 Do the following steps to create a test project and build pipeline.

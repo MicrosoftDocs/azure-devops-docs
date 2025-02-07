@@ -25,10 +25,11 @@ Stakeholders and other users can respond to feedback requests using the Test & F
 
 ## Prerequisites
 
-Ensure you have the [Test & Feedback extension](perform-exploratory-tests.md) installed. 
-
-> [!NOTE]   
-> Any user with a Stakeholder access can use the Test & Feedback extension in **Stakeholder** mode. This mode is designed to allow the widest possible range of users to assist test teams by providing feedback.
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
+| **Extensions** |[Test & Feedback extension](perform-exploratory-tests.md).|
 
 <a name="email"></a>
 
