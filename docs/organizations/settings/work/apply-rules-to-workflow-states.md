@@ -46,14 +46,10 @@ After you add or modify your workflow states for a work item type, define rules 
 
 ## Prerequisites
 
-To apply rules to workflow states in Azure DevOps, you need specific permissions and access levels:
-
-- **Permissions:**
-  - Be a **Project Administrator** to manage security groups and permissions at the project level, which includes setting rules for workflow states.
-  - Have **Work Item Tracking permission**, which allows you to manage the work tracking area, which can be granted to members of the Project Administrators group or through specific permissions.
-
-- **Access levels:**
-  - Have **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To manage security groups and permissions at the project level, which includes setting rules for workflow states: **Project Administrator**.<br>- To manage the work tracking area: **Project Administrator** or specifically assigned the **Work Item Tracking** permission. |
+| **Access levels** | **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states. |
 
 ## Understand workflow rules 
 

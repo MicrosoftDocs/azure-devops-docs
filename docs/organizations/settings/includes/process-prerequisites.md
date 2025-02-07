@@ -2,32 +2,11 @@
 ms.topic: include
 ---
 
-## Prerequisites
-
 For guidance on tailoring Azure Boards to align with your specific business requirements, see [About configuring and customizing Azure Boards](../../../boards/configure-customize.md).
 
-::: moniker range="azure-devops"
-
-- **Organization requirement**: Ensure you have an [organization in Azure DevOps](../../accounts/create-organization.md).
-
-- **Permissions**:
-
-  - Be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md).
-  - Have collection-level permissions such as **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**.
-  - These permissions allow you to modify processes and fields within your organization.
-
-::: moniker-end
-
-::: moniker range=" < azure-devops"
-
-- **Project process model requirement**:
-
-  - Ensure that you have the [Inheritance process model](../../../reference/customize-work.md#choose-the-process-model-for-your-project-collection) for the project collection where the project is created.
-
-- **Permissions**:
-
-  - Be a member of the [**Project Collection Administrators** group](../../security/change-organization-collection-level-permissions.md).
-  - Have collection-level permissions such as **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**.
-  - These permissions allow you to modify processes and fields within your organization.
-
-::: moniker-end
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To create, delete, or edit a process: Member of the [Project Collection Administrators](../../security/change-organization-collection-level-permissions.md) group or specific collection-level permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. For more information, see [Set permissions and access for work tracking, Customize an inherited process](../../../security/set-permissions-access-work-tracking.md#customize-an-inherited-process).<br>- To update boards: [Team Administrator](../add-team-administrator.md) or a member of the [Project Administrators](../../security/change-project-level-permissions.md) group. |
+| **Access** | - Even if you have **Basic** or lower access, you can still change a process if someone gives you permissions to do so.<br>- To update and change the type of your existing work items: Member of the project. |
+| **Project process model** | - Have the [Inheritance process model](../../../reference/customize-work.md#choose-the-process-model-for-your-project-collection) for the project collection containing the project.<br>- If migrating data to Azure DevOps Services, use the [Team Foundation Server Database Import Service](../../../migrate/migration-overview.md). |
+| **Knowledge** | Familiarity with the [customization and process models](../../../reference/customize-work.md). |

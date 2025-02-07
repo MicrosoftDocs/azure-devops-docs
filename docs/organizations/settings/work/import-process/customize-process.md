@@ -86,6 +86,10 @@ A process is a zip file that contains a set of interdependent files. These files
 
 There are differences between what Azure DevOps Services supports and what on-premises Team Foundation Server supports. For a summary of these differences, see [Process template customizations differences](differences.md).
 
+## Prerequisites
+
+[!INCLUDE [process-prerequisites](../../includes/process-prerequisites.md)]
+
 ## How to customize a process
 
 When you customize a process, starting with a well-defined process is easier than building a new one.
