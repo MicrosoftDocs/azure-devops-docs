@@ -4,16 +4,16 @@ ms.author: ckanyika
 ms.date: 2/6/2025
 ms.topic: include
 ---
-### GitHub Advanced Security tracks default branch changes across experiences 
+### GitHub Advanced Security Now Tracks Default Branch Changes
 
-The repository-level alert UX view shows the alert state for your default branch as the initial view, and the security overview displays alert information for your default branch only. We've received feedback that some users often change the default branch for their repositories while the Advanced Security experiences continued showing results for their old default branch selection. 
+The repository-level alert UX now displays alerts for the current default branch, and the security overview reflects only the latest default branch selection. We've received feedback that some users often change the default branch for their repositories while the Advanced Security experiences continued showing results for their old default branch selection. 
 
-Now, Advanced Security is aware of changes to your default branch and will update the security overview and repo-level view shortly after your default branch assignment is changed. 
+With this update, Advanced Security automatically updates the security overview and repository-level views shortly after a new default branch is assigned.
 
 
 ### CodeQL installation for self-hosted agents supports proxy configurations
 
-If you have a network proxy configured, the `enableAutomaticCodeQLInstall ` setting may previously error when downloading the CodeQL tool cache to your self-hosted agent. We've introduced handling for network proxies so that automatic installation runs successfully.
+If you have a network proxy configured, the enableAutomaticCodeQLInstall setting may have previously failed when downloading the CodeQL tool cache to your self-hosted agent. We've introduced handling for network proxies, ensuring that automatic installation completes successfully.
 
 ### Alerts branch picker returns all branches with successful scan  
 
