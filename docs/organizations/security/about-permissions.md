@@ -21,7 +21,7 @@ In this article, learn about access levels and permissions via inheritance, secu
 
 For an overview of default permissions, see [Default permissions quick reference](permissions-access.md).
 
-For more information, see [Security best practices](security-best-practices.md).
+For more information, see [Security overview](security-overview.md).
 
 ## Access levels 
 
@@ -40,7 +40,7 @@ All users in Azure DevOps belong to one or more default *security groups*. Secur
 - Some permissions get managed through *role-based assignments* (for example, team administrator, extension management, or pipeline resource roles).
 - Administrators can define custom security groups to manage permissions for different functional areas.
 
-For more information, see [Security best practices](security-best-practices.md#security-and-user-groups).
+For more information, see [Security overview](security-overview.md#security-and-user-groups).
 
 Managing permissions in Azure DevOps involves two key groups: Project Collection Administrators and Project Administrators.
 

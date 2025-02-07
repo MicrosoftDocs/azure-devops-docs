@@ -90,6 +90,5 @@ Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps
 
 ## Related articles
 
-- [Learn about just-in-time-access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups)
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Manage conditional access](change-application-access-policies.md)
