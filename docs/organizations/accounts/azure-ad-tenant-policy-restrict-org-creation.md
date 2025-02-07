@@ -45,6 +45,8 @@ When the policy is enabled, all users are restricted from creating new organizat
 
 Select **Add Microsoft Entra user or group**.
 
+For more information, see [Add organization users and manage access](add-organization-users.md).
+
 ### Create error message
 
 When administrators, who aren't on the allowlist, try to create an organization they get an error. 
