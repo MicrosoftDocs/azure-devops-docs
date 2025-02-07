@@ -4,11 +4,11 @@ ms.author: ckanyika
 ms.date: 2/10/2025
 ms.topic: include
 ---
-### GitHub Advanced tracks default branch changes across experiences 
+### Advanced Security tracks default branch changes across experiences 
 
-GitHub Advanced Security now automatically detects default branch changes and updates the security overview and repository-level alert view to reflect the latest configuration.
+The repository-level alert UX view shows the alert state for your default branch as the initial view, and the security overview displays alert information for your default branch only. We've received feedback that some users often change the default branch for their repositories while the Advanced Security experiences continued showing results for their old default branch selection. 
 
-We received feedback that default branches are frequently updated in repositories, while Advanced Security continued displaying results for the previous selection. This update ensures your security insights stay accurate and aligned.
+Now, Advanced Security is aware of changes to your default branch and will update the security overview and repo-level view shortly after your default branch assignment is changed. 
 
 
 ### CodeQL installation for self-hosted agents supports proxy configurations
