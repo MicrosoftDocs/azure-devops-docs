@@ -211,13 +211,12 @@ You can delete any team except the default team. At least one team must be defin
 
 1. From your project in the web portal, select **Project settings** > **Teams** as shown in the previous section.
 
-1. Select the team you want to delete and then select **Settings**. 
-1. Scroll down and select **Delete Team**.    
+2. Select the team you want to delete and then select **Settings**. 
+3. Scroll down and select **Delete Team**.    
 
-> [!div class="mx-imgBorder"]
-1. Select **Delete** in the confirmation box to complete the delete operation. 
+4. Select **Delete** in the confirmation box to complete the delete operation. 
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![Screenshot of Delete team confirmation dialog, new teams page.](media/rename-remove-team/delete-team-confirmation.png) 
    
 ::: moniker-end

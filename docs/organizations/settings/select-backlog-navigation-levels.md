@@ -50,7 +50,6 @@ This setting affects the backlog and board views for all team members, ensuring 
 
 6. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
-::: moniker-end
    Your customized backlog and board view reflect the selected backlog levels.
 
 ## Related articles
