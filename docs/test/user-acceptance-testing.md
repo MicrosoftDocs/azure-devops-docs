@@ -25,9 +25,9 @@ agile teams often prefer to work from User Stories or Product Backlog items as t
 
 | Category | Requirement |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
 | **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
-| **Permissions** | - To add or modify bugs or other work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**. <br> - To add new tags: **Create tag definition** permission set to **Allow**. <br> For more information, see [Set permissions and access for testing](../../organizations/security/set-permissions-access-test.md). |
+| **Permissions** | - To add or modify bugs or other work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**. <br> - To add new tags: **Create tag definition** permission set to **Allow**. <br> For more information, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). |
 |**Configuration**  |Work items and a test plan. If you don't have these, [create your backlog](../boards/backlogs/create-your-backlog.md) and [create a test plan](create-a-test-plan.md).|
 
 <a name="search-assign"></a>

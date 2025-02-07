@@ -21,7 +21,7 @@ This article describes webhooks and how to set them up for your Azure DevOps pro
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 |**Project and service**|- A project in the organization<br>- A service with a public HTTPS endpoint to which you want to send Azure DevOps events.|
 
   > [!IMPORTANT]

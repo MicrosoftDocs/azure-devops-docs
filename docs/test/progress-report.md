@@ -31,8 +31,8 @@ To track the progress of more than one test plan or test suite, use the Progress
 
 | Category | Requirements |
 |--------------|-------------|
-|**Project access**| [Project member](../../organizations/security/add-users-team-project.md). |
-|**Access levels**| At least **Basic** access. For more information, see [Manual test access and permissions](../manual-test-permissions.md). |
+|**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
+|**Access levels**| At least **Basic** access. For more information, see [Manual test access and permissions](manual-test-permissions.md). |
 | **Permissions** |**View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).| 
 |**Services** |**Test Plans** enabled. If it's disabled, the **Test Plans** > **Progress Report** page doesn't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)|
 
@@ -42,8 +42,8 @@ To track the progress of more than one test plan or test suite, use the Progress
 
 | Category | Requirements |
 |--------------|-------------|
-|**Project access**| [Project member](../../organizations/security/add-users-team-project.md). |
-|**Access levels**| At least **Basic** access. For more information, see [Manual test access and permissions](../manual-test-permissions.md). |
+|**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
+|**Access levels**| At least **Basic** access. For more information, see [Manual test access and permissions](manual-test-permissions.md). |
 | **Permissions** |**View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).| 
 | **Extensions** |[Analytics extension](../report/dashboards/analytics-extension.md) installed and enabled.   |
 |**Services** |**Test Plans** enabled. If it's disabled, the **Test Plans** > **Progress Report** page doesn't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)|

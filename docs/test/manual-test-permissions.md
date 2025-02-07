@@ -21,7 +21,7 @@ Access levels and permissions control access to Azure Test Plans features.
 
 | Category | Requirement |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
 | **Access levels** |- To access the Test Plans web portal: At least **Basic** access.<br>- To define and manage test plans, test suites, and test cases: **Basic + Test Plans** access.|
 
 > [!NOTE]  

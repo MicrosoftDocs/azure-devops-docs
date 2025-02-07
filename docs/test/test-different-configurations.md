@@ -42,10 +42,10 @@ Then you can:
 
 | Category | Requirement |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
 | **Access levels** | To add test configurations: Project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.|
 
-For more information, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
+For more information, see [Manual test access and permissions](manual-test-permissions.md).
 
 [!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)]
 

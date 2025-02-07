@@ -27,7 +27,7 @@ With OAuth, you grant a service the authorization to access your Azure DevOps re
 
 | Category | Requirement |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
 | **Access levels** | At least **Basic** access. |
 |**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 

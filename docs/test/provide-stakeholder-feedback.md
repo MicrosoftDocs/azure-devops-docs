@@ -27,7 +27,7 @@ Stakeholders and other users can respond to feedback requests using the Test & F
 
 | Category | Requirement |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
 | **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
 | **Extensions** |[Test & Feedback extension](perform-exploratory-tests.md).|
 

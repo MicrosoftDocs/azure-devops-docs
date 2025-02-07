@@ -25,7 +25,7 @@ The `ServiceHooks` security namespace ID is defined under [List Security Namespa
 
 | Category | Requirements |
 |--------------|-------------|
-|**Project access**| [Project member](../../organizations/security/add-users-team-project.md). |
+|**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
 |**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- [Personal access token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for your Azure DevOps profile.   |
 |**Tools**|[Azure CLI](/cli/azure/install-azure-cli).<br>1. Sign in with `az devops login`.<br>2. You can define your organization as default organization. Otherwise, define `--org "https://dev.azure.com/{organization}"` for each command. ```az devops configure --defaults organization="https://dev.azure.com/{organization}"```<br>3. Check if you can see list of permissions for your organization: ```az devops security permission namespace list --org "https://dev.azure.com/{organization}"```.   |
 

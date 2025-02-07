@@ -106,7 +106,7 @@ Service hooks are an Azure DevOps Services feature that can alert external servi
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
-1. [Download](https://ngrok.com/download) and unzip the appropriate ngrok release for your platform.
+1. Download and unzip the appropriate ngrok release for your platform.
 
 2. Use ngrok to start listening on the same port as your sample server - port 3000. Run the following command in a new command window.
 

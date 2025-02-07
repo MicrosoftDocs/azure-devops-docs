@@ -23,7 +23,7 @@ Learn how to create events and metrics in Datadog in response to events from Azu
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
+|**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
 |**Tools**|[Datadog](https://aka.ms/AzureDevOpsDataDog). In the Datadog application, go to [Integrations > API](https://aka.ms/AzureDevOpsDataDogAPI), create a new key or select an existing one, and then copy the key to your clipboard.   |
 
 ## Start sending Azure DevOps events to Datadog

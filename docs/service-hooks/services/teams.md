@@ -33,7 +33,7 @@ This article describes how you can integrate your Azure DevOps project activitie
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
-::: moniker range=" azure-devops"
+::: moniker range="azure-devops"
 
 You can use the following apps that offer rich features to integrate with Microsoft Teams.
 
@@ -77,7 +77,7 @@ To bring your project dashboard or Kanban board into Teams, you can install the 
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops"
+::: moniker range=" < azure-devops" 
 
 ## Add the Azure DevOps Server app to a team
 
