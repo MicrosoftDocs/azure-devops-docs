@@ -59,7 +59,7 @@ Check your self-hosted parallel jobs count to ensure that you have enough capaci
 
 ### Check Maximum agents configuration
 
-The [Maximum agents](./configure-pool-settings.md#maximum-agents) setting configures the maximum count of running agents in your Managed DevOps Pool. If Maximum agents is set to 5, Managed DevOps Pools can run a maximum of five concurrent pipelines. If more than five pipelines are queued, the additional pipelines won't start until one of the five available agents are available.
+The [Maximum agents](./configure-pool-settings.md#maximum-agents) setting configures the maximum count of running agents in your Managed DevOps Pool. If the **Maximum agents** setting is 5, Managed DevOps Pools can run a maximum of five concurrent pipelines. If more than five pipelines are queued, the additional pipelines won't start until one of the five available agents is available.
 
 > [!NOTE]
 > **Maximum agents** configures the maximum number of agents that can be provisioned at the same time, but your organization's self-hosted parallel jobs count specifies the number of jobs that can run concurrently. Ensure that you have enough self-hosted parallel jobs available in your organization to enable your agents to run jobs. For more information, see [Azure DevOps Services parallel job pricing](./pricing.md#azure-devops-services-parallel-job-pricing).
