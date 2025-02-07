@@ -49,7 +49,10 @@ When using Managed DevOps Pools, you might encounter situations where there is a
 * [Check for insufficient parallel jobs](#check-for-insufficient-parallel-jobs)
 * [Check Maximum agents configuration](#check-maximum-agents-configuration)
 * [Consider pre-provisioning agents using a standby agent schedule](#consider-pre-provisioning-agents-using-a-standby-agent-schedule)
+  * [Automatic standby mode for new pools](#automatic-standby-mode-for-new-pools)
 * [Consider using Stateful pools with a grace period to keep agents online](#consider-using-stateful-pools-with-a-grace-period-to-keep-agents-online)
+* [Check pool buffer percentage if using multiple images](#check-pool-buffer-percentage-if-using-multiple-images)
+* [Check timeout error codes](#check-timeout-error-codes)
 
 ### Check for insufficient parallel jobs
 
@@ -72,11 +75,17 @@ When **Standby agent mode** is enabled, you can specify a schedule and a count o
 
 For more information, see [Manage cost and performance - Pre-provisioning with standby agents](./manage-costs.md#pre-provisioning-with-standby-agents).
 
+#### Automatic standby mode for new pools
+
 ### Consider using Stateful pools with a grace period to keep agents online
 
 One option to improve agent performance without using standby agents is to use stateful agents with a short grace period. When stateful agents with a grace period complete a job, they stay online for the duration specified by the grace period and wait for jobs. If your workload comes in bursts, you can configure a grace period that keeps agents online when jobs are steady, and starts them from scratch during slower periods.
 
 For more information, see [Standby agents](configure-scaling.md#standby-agent-mode) and [Stateful pools](configure-scaling.md#stateful-pools).
+
+### Check pool buffer percentage if using multiple images
+
+### Check timeout error codes
 
 ## See also
 
