@@ -19,17 +19,16 @@ You can build part of your app in Azure Pipelines and part in Jenkins. You can t
 
 Azure DevOps doesn't charge for setting up service hooks or integrating with external services, and Jenkins is fully open-source and free to use.
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
+|**Tools**|[Jenkins](https://jenkins-ci.org/) server. If you set up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http). In your *jenkins.xml* configuration file, set the [hudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL system property](https://plugins.jenkins.io/git/#plugin-content-push-notification-from-repository) to `disabled` by adding or updating the following line in the `<arguments>` tag, before the `-jar` parameter:<br><br>`-Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled`.  |
+
 ## Create a Jenkins service hook
 
-To manage service hooks for an Azure DevOps organization or project, have **Owner** or **Project Collection Administrator** role in the organization.
-
-### Configure Jenkins
-
-1. If you don't have one, set up a [Jenkins](https://jenkins-ci.org/) server.
-
-1. If you set up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
-
-1. In your *jenkins.xml* configuration file, set the [hudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL system property](https://plugins.jenkins.io/git/#plugin-content-push-notification-from-repository) to `disabled` by adding or updating the following line in the `<arguments>` tag, before the `-jar` parameter:<br><br>`-Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled`.
+Do the following steps to create a Jenkins service hook.
 
 ### Set up a Jenkins build
 
@@ -69,8 +68,8 @@ To manage service hooks for an Azure DevOps organization or project, have **Owne
 
 Now when the event occurs in the Git repository, it triggers a Jenkins build.
 
->[!TIP]
->You can also create a service hook subscription programmatically with REST APIs. For more information, see [Create a service hook subscription programmatically](../create-subscription.md).
+> [!TIP]
+> You can also create a service hook subscription programmatically with REST APIs. For more information, see [Create a service hook subscription programmatically](../create-subscription.md).
 
 ## Related content
 

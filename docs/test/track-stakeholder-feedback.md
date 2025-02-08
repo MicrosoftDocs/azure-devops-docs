@@ -17,6 +17,8 @@ monikerRange: '<= azure-devops'
 
 All feedback gets captured in a *Feedback Response* work item. You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](/previous-versions/azure/devops/project/feedback/give-feedback), through a work item query.
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-queries](../boards/includes/prerequisites-queries.md)]
 
 <a name="track"></a>

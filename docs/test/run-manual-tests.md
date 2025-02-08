@@ -65,9 +65,11 @@ The Test Center in the Microsoft Test Manager client is a desktop-based manual t
 Testers can use it for manual testing needs. For more information, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
 To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
+[!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)] 
 
 <a name="run-web"></a>
 

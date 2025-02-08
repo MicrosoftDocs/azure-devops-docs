@@ -18,7 +18,11 @@ ms.date: 12/04/2023
 
 Azure Test Plans users can bulk import or export test cases using CSV or Microsoft Excel file formats. The import operation supports creation of new test cases into a given test suite or update existing test cases by providing the test case ID. The export operation allows users to export test cases into CSV or Microsoft Excel file (XLSX). While you can continue to use bulk import and updates, you can use the native web-portal based functionality to copy, clone and update the test cases. For more information, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
   
-For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).   
+For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-stakeholder](includes/prerequisites-stakeholder.md)] 
  
 ## Export test cases 
 
