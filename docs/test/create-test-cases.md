@@ -28,6 +28,8 @@ Organize your test cases by adding them to test plans and test suites, and then 
   From a best practice perspective, if you have two test scenarios where the workflows are
   different, consider creating separate test cases. Also see [FAQs for manual testing](reference-qa.yml#testcases).
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 <a name="createcase"></a>

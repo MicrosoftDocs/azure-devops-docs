@@ -40,14 +40,14 @@ Then you can:
 
 ## Prerequisites
 
-- Connect to a project. If you don't have a project yet, [create one](/azure/devops/user-guide/sign-up-invite-teammates).
-- Be added to a project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-- To view or add test configurations, have at least **Basic** access.
-- To add test configurations, have the project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To add test configurations: Project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.|
 
-For more information, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
+For more information, see [Manual test access and permissions](manual-test-permissions.md).
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)]
+[!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)]
 
 <a name="view-configs"></a>
 

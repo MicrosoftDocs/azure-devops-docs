@@ -23,6 +23,8 @@ Insert parameters within your test steps for a manual test case. Then, provide a
 
 With shared steps and shared parameters, you can run multiple test cases with the same data.
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 ## Add parameters to a test case
