@@ -7,7 +7,7 @@ ms.date: 01/13/2025
 ---
 
 
-## Prerequisites
-
-- **Project access:** [Project member](../../organizations/security/add-users-team-project.md). 
-- **Access levels:** At least **Basic** access. For more information, see [Manual test access and permissions](../manual-test-permissions.md). 
+| Category | Requirements |
+|--------------|-------------|
+|**Project access**| [Project member](../../organizations/security/add-users-team-project.md). |
+|**Access levels**| At least **Basic** access. For more information, see [Manual test access and permissions](../manual-test-permissions.md). |

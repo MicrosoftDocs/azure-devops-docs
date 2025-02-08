@@ -7,8 +7,6 @@ ms.date: 01/13/2025
 ---
 
 
-## Prerequisites
-
 | Category | Requirement |
 |--------------|-------------|
 | **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |

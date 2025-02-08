@@ -18,7 +18,9 @@ ms.date: 12/06/2021
 Collect diagnostic data while you test your apps. This data is included in the bugs you file 
 during the test. You can collect diagnostic data from web apps and from desktop apps, and view it in Azure Test Plans.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-stakeholder](includes/prerequisites-stakeholder.md)] 
 
 <a name="collect-web"></a>
 
