@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Test Plans Sprint 251 Update
 description: See the Sprint 251 feature updates for Azure Test Plans, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/6/2025
+ms.date: 2/10/2025
 ---
 
 # Azure Test Plans - Sprint 251 Update

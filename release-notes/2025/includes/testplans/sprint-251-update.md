@@ -1,13 +1,13 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/6/2025
+ms.date: 2/10/2025
 ms.topic: include
 ---
 
 ### Direct Link from Test Plan work item to Test Plans page
 
-You can now easily access the Test Plans page directly from the Test Plans work item. We are adding a clear, direct entry point to help you quickly navigate to the corresponding test plan without extra steps. This improvement makes it faster and more intuitive to trace your test plans, ensuring a smoother experience when managing your test workflow.
+You can now easily access the Test Plans page directly from the Test Plans work item. We're adding a clear, direct entry point to help you quickly navigate to the corresponding test plan without extra steps. This improvement makes it faster and more intuitive to trace your test plans, ensuring a smoother experience when managing your test workflow.
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Test Plan, Suite ID search details.](../../media/251-testplans-01.gif "gif to GitHub Test Plan, Suite ID search details")
