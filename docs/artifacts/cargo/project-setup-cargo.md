@@ -7,7 +7,6 @@ ms.date: 01/21/2025
 monikerRange: '>= azure-devops-2022'
 ---
 
-# Connect your Cargo project to an Azure Artifacts feed
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
@@ -17,8 +16,10 @@ This article guides you through setting up your Cargo project, configuring the c
 
 | **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [rustup](https://rustup.rs/). You'll need Cargo version 1.74.0 or later. |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md). |
 
+- An Azure DevOps [project](../../organizations/projects/create-project.md).  
+- Download and install [rust](https://rustup.rs/). You'll need Cargo version 1.74.0 or later. |
 
 ## Project setup
 
@@ -30,60 +31,65 @@ This article guides you through setting up your Cargo project, configuring the c
 
 1. Add the provided snippet to your *cargo/config.toml* in your source repository. Your *config.toml* file should resemble the following:
 
-    - **Project-scoped feed**: 
-    
-        ```
+    - **Project-scoped feed**:
+
+        ```toml
         [registries]
         FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
-        ```
-    
-    - **Organization-scoped feed**: 
-    
-        ```
+        ```toml
+
+    - **Organization-scoped feed**:
+
+        ```toml
         [registries]
         FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/_packaging/FEED_NAME/Cargo/index/" }
-        ```
+        ```toml
 
 1. Add the following snippet to your *cargo/config.toml* to replace the *crates.io* source with your feed. Replace the placeholder with your feed name:
 
-    ```
+    ```toml
     [source.crates-io]
     replace-with = "FEED_NAME"
-    ```
+    ```toml
 
 ## Configure a credential provider
 
 To use Cargo with Azure Artifacts, you must first set up a default credential helper. See [The Cargo Book](https://doc.rust-lang.org/nightly/cargo/reference/registry-authentication.html) for more details.
 
-### [Windows](#tab/windows)
+### Windows
 
-Add the following snippet to your *%USERPROFILE%\.cargo\config.toml*. This sets a default credential helper for the user:
+Add the following snippet to your *%uperrorFile%\.cargo\config.toml*. This sets a default credential helper for the user:
 
-```
+```toml
 [registry]
-global-credential-providers = ["cargo:token", "cargo:wincred"]
-```
+global-credential-providers = ["cargo:token", "cargo:winced"]
+```toml
 
-### [Linux](#tab/linux)
+### Linux
 
 Add the following snippet to your */.cargo/config.toml*. This sets a default credential helper for the user:
 
 ```
+
 [registry]
-global-credential-providers = ["cargo:token", "cargo:libsecret"]
+global-credential-providers = ["cargo:token", "cargo:liberec"]
+
+```toml
 ```
 
-### [macOS](#tab/macOS)
+```toml
+```
+
+### macOS
 
 Add the following snippet to your */.cargo/config.toml*. This sets a default credential helper for the user:
 
-```dotnetcli
+```dotnet
 [registry]
 global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 ```
 
 - - -
-
 
 ## Log in to the registry
 
@@ -93,27 +99,26 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 
 1. Run the following command to log in to your registry. Replace the placeholder with your feed's name, and provide the personal access token you created earlier when prompted:
 
-### [PowerShell ](#tab/powershell/)
+### PowerShell
 
 ```powershell
 "Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("PAT:" + (Read-Host -MaskInput "Enter PAT"))) | cargo login --registry <FEED_NAME>
 ```
 
-#### [Bash ](#tab/bash/)
+#### Bash
 
 ```bash
 read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login --registry <FEED_NAME>
 ```
 
-#### [Azure CLI](#tab/azurecli/)
+#### Azure CLI
 
-```azurecli
+```azureCR
 az login
 az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry <FEED_NAME>
 ```
 
 - - -
-
 
 ## Next steps
 
