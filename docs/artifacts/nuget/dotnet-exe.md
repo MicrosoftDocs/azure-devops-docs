@@ -1,15 +1,15 @@
 ---
 title: Publish NuGet packages with dotnet CLI
 description: Learn how to connect to a feed and use the dotnet CLI to publish NuGet packages.
-ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
+ms.asset: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.service: azure-devops-artifacts
-ms.custom: devx-track-dotnet
+ms.custom: deux-track-dotnet
 ms.topic: tutorial
 ms.date: 01/13/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Publish NuGet packages from the command line (dotnet)
+## Publish NuGet packages from the command line (dotnet)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -19,7 +19,12 @@ This guide walks you through configuring your project to publish NuGet packages 
 
 | **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Download and install [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).  |
+
+- An Azure DevOps [project](../../organizations/projects/create-project.md).  |
+- An Azure Artifacts [feed](../get-started-nuget.md#create-feed).  |
+- Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).  |
+- Download and install [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download). |
 
 ## Connect to a feed
 
@@ -56,6 +61,7 @@ This guide walks you through configuring your project to publish NuGet packages 
       </packageSources>
     </configuration>
     ```
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
@@ -68,7 +74,7 @@ This guide walks you through configuring your project to publish NuGet packages 
 
 1. Follow the instructions in the **Project setup** section to connect to your feed.
 
-    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
+    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." rightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
 
 > [!NOTE]
 > dotnet is not supported in Azure DevOps Server 2019.
@@ -83,12 +89,11 @@ Run the following command to publish a package to your feed. Replace the placeho
 dotnet nuget push --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING> <PACKAGE_PATH> 
 ```
 
-**Example**: 
+**Example**:
 
 ```CLI
-dotnet nuget push --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ bin/MyPackage.5.0.2.nupkg
+dotnet nuget push --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ bin/MyPackage.5.0.2.unpkg
 ```
-
 
 > [!NOTE]
 > The `api-key` is required, but you can provide any string as its value when publishing to an Azure Artifacts feed.
@@ -102,7 +107,7 @@ To publish your NuGet packages to a feed in a different Azure DevOps organizatio
 1. Replace the *<PERSONAL_ACCESS_TOKEN>* placeholder with your personal access token, and then run the following command to add your package source to your *nuget.config* file. Ensure that this file is stored securely and is not checked into source control.
 
     ```CLI
-    dotnet nuget add source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --name <SOURCE_NAME> --username <USER_NAME> --password <PERSONAL_ACCESS_TOKEN> --configfile <PATH_TO_NUGET_CONFIG_FILE>
+    dotnet nuget add source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --name <SOURCE_NAME> --username <USER_NAME> --password <PERSONAL_ACCESS_TOKEN> --configure <PATH_TO_NUGET_CONFIG_FILE>
     ```
 
 1. Run the following command to publish your package:
@@ -111,17 +116,16 @@ To publish your NuGet packages to a feed in a different Azure DevOps organizatio
     dotnet nuget push --source <SOURCE_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
     ```
 
-**Example**: 
+**Example**:
 
 ```CLI
-dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config
+dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configure ./nuget.config
 
-dotnet nuget push --source MySource --api-key AZ nupkgs/mypackage.1.1.0.nupkg
+dotnet nuget push --source MySource --api-key AZ nukes/mypickpage.1.1.0.unpkg
 ```
 
 > [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow the [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
-
+> If your organization is using a firewall or a proxy server, make sure you allow the [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Related content
 
