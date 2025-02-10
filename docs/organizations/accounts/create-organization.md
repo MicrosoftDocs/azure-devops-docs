@@ -3,10 +3,10 @@ title: Create an organization
 titleSuffix: Azure DevOps
 description: Learn how to create an organization or project collection with a personal Microsoft account, GitHub account, or work or school account.
 ms.subservice: azure-devops-organizations
-ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
+ms.asset: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: how-to
-ms.author: chcomley
-author: chcomley
+ms.author: chimley
+author: comely
 ms.date: 10/23/2024
 monikerRange: '<= azure-devops'
 ---
@@ -15,21 +15,17 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use an organization to connect groups of related projects and help scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Using your work or school account *automatically connects* your organization to your Microsoft Entra ID.
+Use an organization to connect groups of related projects and help scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Using your work or school account *automatically connects* your organization to your Microsoft Extra ID.
 
 > [!NOTE]
 > All organizations must be manually created via the web portal. Automated creation of organizations is not supported. However, we do support automated organization configuration, project creation, and resource provisioning via the [REST API](/rest/api/azure/devops).
 
-<a name="how-sign-up"></a>
+## Prerequisites {#how-sign-up}
 
-## Prerequisites
-
-* **Authentication:** Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
+* **Authentication:** Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Centra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
 * **Planning:** Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
-<a name="SignIn"></a>
-
-## Create an organization
+## Create organization steps
 
 1. Sign in to [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137).
 
