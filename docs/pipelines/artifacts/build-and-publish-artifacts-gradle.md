@@ -16,11 +16,9 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
+- An [Azure DevOps organization](../../organizations/accounts/create-organization.md).
 
-- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
-
-- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-maven.md#create-a-feed).
+- An [Azure DevOps project](../../organizations/projects/create-project.md#create-a-project).
 
 ## Build and publish pipeline artifacts
 
