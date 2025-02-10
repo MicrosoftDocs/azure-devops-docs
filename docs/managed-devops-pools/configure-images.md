@@ -390,6 +390,9 @@ In addition to any aliases that you configure, Azure Pipelines images have the f
 
 If you have multiple images in your pool, you can configure a pipeline to run on a specific image by using a [demand](/azure/devops/pipelines/yaml-schema/pool-demands) named `ImageOverride`. When you specify the `ImageOverride` demand in your pipeline, Managed DevOps Pools sends the job only to agents using that image.
 
+> [!IMPORTANT]
+> If you have multiple images in your pool, and don't use demands to designate which image to use in your pipelines, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using templates), or by ordering the list in the Azure portal using drag and drop.
+
 To run a pipeline on the Ubuntu 20.04 image from the previous example that had an `ubuntu-20.04-gen2` alias, specify the following demand in the `pool` section of your pipeline.
 
 ```yml
