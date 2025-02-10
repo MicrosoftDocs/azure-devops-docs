@@ -172,7 +172,7 @@ The following example defines three images. Standby agents are enabled, with 100
 If you choose a single image, all pipelines run in your pool usinge that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
 
 > [!IMPORTANT]
-> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
+> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
 
 You can choose from the following types of images.
 
@@ -330,7 +330,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 
 If you have multiple images in your pool, you can configure your Azure DevOps pipeline to use a specific image by referencing an alias for that image.
 
-If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
+If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
 
 > [!TIP]
 > If your pipelines experience problems after adding a new image to your pool for the first time, check the ordering of the images in the list, and consider using demands and aliases to explictly designate which image to use for each pipeline.
