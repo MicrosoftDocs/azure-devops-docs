@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/07/2025
+ms.date: 02/10/2025
 --- 
 
 # Azure DevOps security overview
@@ -26,13 +26,13 @@ To secure your network when you're working with Azure DevOps, do the following a
 | Security action |Description  |
 |---------|---------|
 |[Set up IP allowlisting](allow-list-ip-url.md) | Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface. |
-|Use encryption | Always encrypt data in transit and at rest. Secure communication channels using protocols like HTTPS. |
-|Validate certificates | Ensure certificates are valid and issued by trusted authorities when establishing connections. |
-|Implement web application firewalls (WAFs) | Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks. |
-|Enable network security groups (NSGs) | Use NSGs to control inbound and outbound traffic to Azure resources, ensuring only authorized traffic is allowed. |
-|Use Azure Firewall | Deploy Azure Firewall to provide a centralized network security policy across multiple Azure subscriptions and virtual networks. |
-|Monitor network traffic | Use Azure Network Watcher to monitor and diagnose network issues, ensuring the security and performance of your network. |
-|Implement DDoS protection | Enable Azure DDoS Protection to safeguard your applications from distributed denial-of-service (DDoS) attacks. |
+| [Use data encryption](/azure/security/fundamentals/encryption-overview) | Always encrypt data in transit and at rest. Secure communication channels using protocols like HTTPS. |
+| [Validate certificates](/azure/security/fundamentals/certificate-management) | Ensure certificates are valid and issued by trusted authorities when establishing connections. |
+| [Implement Web Application Firewalls (WAFs)](https://learn.microsoft.com/azure/web-application-firewall/) | Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks. |
+|[Enable network security groups (NSGs)](/azure/virtual-network/network-security-groups-overview) |Use NSGs to control inbound and outbound traffic to Azure resources, ensuring only authorized traffic is allowed. |
+|[Use Azure Firewall](/azure/firewall/overview) | Deploy Azure Firewall to provide a centralized network security policy across multiple Azure subscriptions and virtual networks. |
+| Monitor network traffic | Use [Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) to monitor and diagnose network issues, ensuring the security and performance of your network. |
+| Implement DDoS protection | Enable Azure DDoS Protection to safeguard your applications from distributed denial-of-service (DDoS) attacks. For more information, see [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview). |
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
 
@@ -49,52 +49,58 @@ To ensure secure and efficient management of permissions, do the following actio
 
 | Security action |Description  |
 |---------|---------|
-|Disable inheritance | Avoid inheritance, preventing unintended access. Inheritance can inadvertently grant permissions to users who shouldn't have them, due to its allow-by-default nature. Carefully manage and explicitly set permissions to ensure that only the intended users have access. For more information, see [permission inheritance](about-permissions.md#permission-inheritance). |
-|Segment environments | Use separate Azure accounts for different environments, such as Development, Testing, and Production, to enhance security and prevent conflicts. This approach minimizes the risk of resource conflicts and data contamination between environments. It also allows for better management and isolation of resources. For more information, see [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/). |
+|[Disable inheritance](about-permissions.md#permission-inheritance) | Avoid inheritance, preventing unintended access. Inheritance can inadvertently grant permissions to users who shouldn't have them, due to its allow-by-default nature. Carefully manage and explicitly set permissions to ensure that only the intended users have access. |
+|Segment environments | Use separate Azure accounts for different environments, such as Development, Testing, and Production, to enhance security and prevent conflicts. This approach minimizes the risk of resource conflicts and data contamination between environments and allows for better management and isolation of resources. For more information, see [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/). |
 |Control access and ensure compliance | Use [Azure Policy](/azure/governance/policy/overview) to restrict access to unused Azure regions and services, ensuring compliance with organizational standards. This action helps enforce best practices and maintain a secure environment by preventing unauthorized access and usage. |
-|Implement Azure role-based control (ABAC) | Use [Attribute-Based Access Control (ABAC)](/azure/role-based-access-control/conditions-overview) with properly tagged resources, limiting unauthorized access. This action ensures that access permissions get granted based on specific attributes, enhancing security by preventing unauthorized resource creation and access. |
+|Implement Azure role-based control (ABAC) | Use [ABAC](/azure/role-based-access-control/conditions-overview) with properly tagged resources, limiting unauthorized access. This action ensures that access permissions get granted based on specific attributes, enhancing security by preventing unauthorized resource creation and access. |
 |Use security groups | Use security groups to efficiently manage permissions for multiple users. This method simplifies granting and revoking access compared to assigning permissions individually and ensures consistency and easier management across your organization.<br>- Use Microsoft Entra ID, Active Directory, or Windows security groups when you're managing lots of users.<br>- Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.<br>- Keep groups as small as possible, restricting access. |
-|Choose the right authentication method | Set up secure authentication methods and manage authorization policies. See [authentication methods](about-security-identity.md). |
-|Integrate with Microsoft Entra ID | Use Microsoft Entra ID for unified identity management. See [integrate with Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md). |
-|Enable MFA | Add an extra layer of security with [MFA](/entra/identity/authentication/tutorial-enable-azure-mfa). |
-|Change security policies | Manage security policies, including conditional access. See [change security policies](../accounts/change-application-access-policies.md). |
+|Choose the right authentication method | Set up secure authentication methods and manage authorization policies. For more information, see [Authentication methods](about-security-identity.md). |
+|[Integrate with Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md) | Use Microsoft Entra ID for unified identity management. |
+|[Enable MFA](/entra/identity/authentication/tutorial-enable-azure-mfa) | Add an extra layer of security with MFA. |
+|[Change security policies](../accounts/change-application-access-policies.md) | Manage security policies, including conditional access. |
 
 For more information about permissions, see the following articles: 
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
 - [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions).
 
 <a id="choose-the-right-authentication-method">  </a>
+<a name='use-azure-ad'></a>
 
-#### Choose the right authentication method
+### Choose the right authentication method
 
 When you're choosing the appropriate authentication method, consider alternatives like [service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to enhance security and streamline access management.
 
 | Security action |Description  |
 |---------|---------|
-|Use service principals | Represent security objects within a Microsoft Entra application. Define what an application can do in a given tenant. Set up during application registration in the Azure portal. Configure to access Azure resources, including Azure DevOps. Useful for apps needing specific access and control. |
-|Use managed identities | Similar to an application’s service principal. Provide identities for Azure resources. Allow services supporting Microsoft Entra authentication to share credentials. Azure handles credential management and rotation automatically. Ideal for seamless sign-in details management. |
+|**Use service principals** | Represent security objects within a Microsoft Entra application. Define what an application can do in a given tenant. Set up during application registration in the Azure portal. Configure to access Azure resources, including Azure DevOps. Useful for apps needing specific access and control. |
+|**Use managed identities** | Similar to an application’s service principal. Provide identities for Azure resources. Allow services supporting Microsoft Entra authentication to share credentials. Azure handles credential management and rotation automatically. Ideal for seamless sign-in details management. |
+|**Use Microsoft Entra ID** |- Create a single plane for identity by connecting Azure DevOps to Microsoft Entra ID. This consistency reduces confusion and minimizes security risks from manual configuration errors.<br>- [Access your organization with Microsoft Entra ID](../accounts/access-with-azure-ad.md)and assign different roles and permissions to specific groups across various resource scopes. This action implements fine-grained governance, ensures controlled access, and aligns with security best practices.<br>- Enable [Multifactor Authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) with Microsoft Entra ID, which requires multiple factors like password and phone verification for user authentication.<br>- Use [Conditional Access Policies](../accounts/change-application-access-policies.md), which define access rules based on conditions like [location, device, or risk level](/azure/active-directory/conditional-access/howto-conditional-access-policy-location). |
 
-<a name='use-azure-ad'></a>
+### Manage external guest access
 
-### Use Microsoft Entra ID
-NEW & EXISTING
-
-To enhance security and streamline identity management, do the following actions using Microsoft Entra ID:
+To ensure the security and proper management of external guest access, do the following actions:
 
 | Security action |Description  |
 |---------|---------|
-|Establish a unified identity system | Create a single plane for identity by connecting Azure DevOps to Microsoft Entra ID. This consistency reduces confusion and minimizes security risks from manual configuration errors. |
-|Implement fine-grained governance | Use Microsoft Entra ID to assign different roles and permissions to specific groups across various resource scopes. This action ensures controlled access and aligns with security best practices. |
-|Enhance security features | Enable other security features with Microsoft Entra ID, such as: |
-|Enable Multifactor Authentication (MFA) | Require multiple factors like password and phone verification for user authentication. |
-|Conditional access policies | Define access rules based on conditions like location, device, or risk level. |
+|Block external guest access | Disable the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list) to prevent external guest access if there's no business need for it. |
+|Use distinct emails or UPNs | Use different email addresses or user principal names (UPNs) for personal and business accounts to eliminate ambiguity between personal and work-related accounts. |
+|Group external guest users | Place all external guest users in a single Microsoft Entra group and [manage permissions for this group appropriately](../accounts/assign-access-levels-by-group-membership.md). Remove direct assignments to ensure group rules apply to these users. |
+|Reevaluate rules regularly | Regularly review rules on the Group rules tab of the Users page. Consider any group membership changes in Microsoft Entra ID that might affect your organization. Microsoft Entra ID can take up to 24 hours to update dynamic group membership, and rules are automatically reevaluated every 24 hours and whenever a group rule changes. |
 
-For more information, see the following articles:
-- [About accessing your organization with Microsoft Entra ID](../accounts/access-with-azure-ad.md)
-- [Add Active Directory / Microsoft Entra users or groups to a built-in security groups](add-ad-aad-built-in-security-groups.md)
-- [Limit access by location or IP addresses](/azure/active-directory/conditional-access/howto-conditional-access-policy-location)
-- [Manage conditional access](../accounts/change-application-access-policies.md)
-- [Require all users to use multifactor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)
+For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations).
+
+### Remove users
+EXISTING
+
+To maintain a secure environment, it's essential to manage user accounts effectively. To ensure that only active and authorized users have access to existing environment, do the following actions.
+
+| Security action |Description  |
+|---------|---------|
+|Remove inactive users from Microsoft accounts (MSAs) | [Directly remove inactive users from your organization](../accounts/delete-organization-users.md) if using MSAs. You can't create queries for work items assigned to removed MSA accounts. |
+|Disable or delete Microsoft Entra user accounts | If connected to Microsoft Entra ID, disable or delete the Microsoft Entra user account while keeping the Azure DevOps user account active. This action allows you to continue querying work item history using your Azure DevOps user ID. |
+|[Revoke user PATs](../accounts/admin-revoke-user-pats.md) | Ensure secure management of these critical authentication tokens by regularly reviewing and revoking any existing user PATs. |
+|Revoke special permissions granted to individual users | Audit and revoke any special permissions granted to individual users to ensure alignment with the principle of least privilege. |
+|Reassign work from removed users | Before removing users, reassign their work items to current team members to distribute the load effectively. |
 
 ### Scope service accounts
 
@@ -126,32 +132,6 @@ To ensure secure and efficient access to Azure resources, do the following actio
 |Use purpose-specific team service accounts | Authenticate service connections using purpose-specific team service accounts to maintain security and control. |
 
 For more information, see [Common service connection types](../../pipelines/library/service-endpoints.md).
-
-### Manage external guest access
-
-To ensure the security and proper management of external guest access, do the following actions:
-
-| Security action |Description  |
-|---------|---------|
-|Block external guest access | Disable the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list) to prevent external guest access if there's no business need for it. |
-|Use distinct emails or UPNs | Use different email addresses or user principal names (UPNs) for personal and business accounts to eliminate ambiguity between personal and work-related accounts. |
-|Group external guest users | Place all external guest users in a single Microsoft Entra group and [manage permissions for this group appropriately](../accounts/assign-access-levels-by-group-membership.md). Remove direct assignments to ensure group rules apply to these users. |
-|Reevaluate rules regularly | Regularly review rules on the Group rules tab of the Users page. Consider any group membership changes in Microsoft Entra ID that might affect your organization. Microsoft Entra ID can take up to 24 hours to update dynamic group membership, and rules are automatically reevaluated every 24 hours and whenever a group rule changes. |
-
-For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations).
-
-### Remove users
-EXISTING
-
-To maintain a secure environment, it's essential to manage user accounts effectively. To ensure that only active and authorized users have access to existing environment, do the following actions.
-
-| Security action |Description  |
-|---------|---------|
-|Remove inactive users from Microsoft accounts (MSAs) | [Directly remove inactive users from your organization](../accounts/delete-organization-users.md) if using MSAs. You can't create queries for work items assigned to removed MSA accounts. |
-|Disable or delete Microsoft Entra user accounts | If connected to Microsoft Entra ID, disable or delete the Microsoft Entra user account while keeping the Azure DevOps user account active. This action allows you to continue querying work item history using your Azure DevOps user ID. |
-|[Revoke user PATs](../accounts/admin-revoke-user-pats.md) | Ensure secure management of these critical authentication tokens by regularly reviewing and revoking any existing user PATs. |
-|Revoke special permissions granted to individual users | Audit and revoke any special permissions granted to individual users to ensure alignment with the principle of least privilege. |
-|Reassign work from removed users | Before removing users, reassign their work items to current team members to distribute the load effectively. |
 
 ## Enable and review auditing events
 NEW & EXISTING
