@@ -169,7 +169,7 @@ The following example defines three images. Standby agents are enabled, with 100
 
 * * *
 
-If you choose a single image, all pipelines run in your pool use that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
+If you choose a single image, all pipelines run in your pool usinge that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
 
 > [!IMPORTANT]
 > If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
