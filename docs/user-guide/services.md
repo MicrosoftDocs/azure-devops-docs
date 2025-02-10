@@ -98,7 +98,7 @@ Azure DevOps supports two primary types of source control to suit diverse projec
 
 ### Git
 
-Git is a version control system where each developer has a local copy of the entire repository, which allows for offline work and easy branching and merging. Git is the default choice for new projects and is recommended for its flexibility and robustness1.
+Git is a version control system where each developer has a local copy of the entire repository, which allows for offline work and easy branching and merging. Git is the default choice for new projects and is recommended for its flexibility and robustness.
 
 > [!NOTE]
 > Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
