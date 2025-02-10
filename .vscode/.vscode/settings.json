@@ -5,5 +5,6 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
     ],
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "editor.detectIndentation": false
 }
