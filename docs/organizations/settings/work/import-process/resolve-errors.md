@@ -1762,14 +1762,16 @@ Edit the definition files for work item types that contain the named field and r
 
 Bug.xml has the priority field defined, but has a different list of values than expected.
 
-<FIELD name="Priority" refname="Microsoft.AzureDevOps.Common.Priority" type="Integer" reportable="dimension">
-  <ALLOWEDVALUES expanditems="true">
-    <LISTITEM value="0"/>
-    <LISTITEM value="1"/>
-    <LISTITEM value="2"/>
-  </ALLOWEDVALUES>
-  <DEFAULT from="value" value="2" />
-</FIELD>
+```xml
+    <FIELD name="Priority" refname="Microsoft.AzureDevOps.Common.Priority" type="Integer" reportable="dimension">
+        <ALLOWEDVALUES expanditems="true">
+        <LISTITEM value="0"/>
+        <LISTITEM value="1"/>
+        <LISTITEM value="2"/>
+        </ALLOWEDVALUES>
+        <DEFAULT from="value" value="2" />
+    </FIELD>
+```
 
 #### Resolution example
 
