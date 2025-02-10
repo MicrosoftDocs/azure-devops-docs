@@ -36,6 +36,15 @@ The [Azure DevOps Migration Tools marketplace extension](https://github.com/nkdA
 
 For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/).
 
+You may also consider this [marketplace extension for migrating within Microsoft ecosystem](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubMigratorforMicrosoftAzureDevOps) to enable a seamless migration between Azure DevOps Server and Azure DevOps Services (TFS to ADO, ADO to TFS, ADO to ADO and TFS to ADO migrations). The tool supports:
+- Version control information and history (original dates and users added to comments)
+- Work items (standard and custom) and history (retains the original dates and users)
+- Test plan, test suite, test cases and test results
+- Iteration, area path, group, team, user
+- Dashboard, query, widget, and pipeline
+- Azure DevOps Server versions 2010 and later
+- Azure DevOps Services
+
 ## Migrate process models between Azure DevOps organizations
 
 The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.processtemplate) marketplace extension provides support to complete the following tasks:  
