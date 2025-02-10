@@ -28,9 +28,10 @@ With this release, we improved the pull request annotation experience in Advance
 * Auto-closure: pull request comments will be automatically resolved if the associated alert is dismissed. 
 We've also introduced performance improvements and batch handling for pull request events for a smoother experience.
 
-### Get Alerts API enhancements and additional properties 
+### Improvements for Get Alerts API 
 
-There are a number of improvements for the Advanced Security Get Alerts API:
+With this update we introduce new improvements for the Advanced Security Get alerts API:
+
 * Minimal API expand option: fetch a minimal version of the Alerts API using the parameter `expand=minimal` in your payload. E.g.: `https://advsec.dev.azure.com/{organization}/{project}/_apis/Alert/repositories/{repository}/Alerts?expand=minimal`. 
 
 > [!div class="mx-imgBorder"]

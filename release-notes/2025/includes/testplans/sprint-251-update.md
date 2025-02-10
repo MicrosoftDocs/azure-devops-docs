@@ -18,13 +18,13 @@ You can now easily access the Test Plans page directly from the Test Plans work 
 
 With this sprint, we’ve made updates to Azure Test Plans to resolve several bugs and improve usability. Here’s what’s been fixed:
 
-* **Shared step results vow visible:**
-    Fixed a bug where shared step results wouldn’t appear in the query editor when accessing test cases in the New Boards Hub.
+* Fixed an issue where Test Suites did not update correctly when switching between Test Plans. 
 
-* **Improved stakeholder mode sessions:**
-    Resolved an issue in the test and feedback extension that blocked users with stakeholder access from starting sessions. 
-* **Cleaner test plan copying:**
-    Fixed a problem where requirements were duplicated when copying a Test Plan using the “Reference Existing Test Cases” option.
+* Fixed an issue in the Test & Feedback Extension where session reports failed to download and redirected users to a blank page.
+
+* Fixed an issue in the new Boards hub where Shared Steps opened in the old work item form and users couldn't delete comments in the discussion section.
+
+* Fixed an issue where filtering test results by the Owner clause did not work, causing queries to return an error instead of results.
 
 ### Export test cases with custom columns in XLSX
 

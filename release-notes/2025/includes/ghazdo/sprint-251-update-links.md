@@ -9,5 +9,4 @@ ms.topic: include
 - [CodeQL installation for self-hosted agents supports proxy configurations](#codeql-installation-for-self-hosted-agents-supports-proxy-configurations)
 - [Alerts branch picker returns all branches with successful scan](#alerts-branch-picker-returns-all-branches-with-successful-scan)
 - [Pull request annotations experience improvements](#pull-request-annotations-experience-improvements)
-- [Get Alerts API enhancements and additional properties](#get-alerts-api-enhancements-and-additional-properties)
-
+- [Improvements for Get alerts API ](#improvements-for-get-alerts-api)
