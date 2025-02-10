@@ -24,6 +24,28 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 
 ## Build and publish pipeline artifacts
 
+#### [YAML](#tab/yaml/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+    ```yaml
+    steps:
+    - task: Gradle@4
+      displayName: 'gradlew build'
+    
+    - task: CopyFiles@2
+      displayName: 'Copy Files to: $(Pipeline.Workspace)'
+      inputs:
+        TargetFolder: '$(Pipeline.Workspace)'
+    
+    - task: PublishPipelineArtifact@1
+      displayName: 'Publish Pipeline Artifact'
+    ```
+
 ### [Classic](#tab/classic/)
 
 ::: moniker range="azure-devops"
@@ -69,8 +91,8 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 > [!TIP]
 > To keep the Gradle daemon running, consider adding `org.gradle.daemon=true` to your *gradle.properties* file.
 
-## Related articles
+## Related content
 
 - [Publish and download pipeline Artifacts](./pipeline-artifacts.md)
-- [Restore NuGet packages in Azure Pipelines](../packages/nuget-restore.md)
-- [Artifacts in Azure Pipelines](./build-artifacts.md)
+- [Artifact sources in Classic release pipelines](../release/artifacts.md)
+- [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
