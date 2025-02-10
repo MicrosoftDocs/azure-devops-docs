@@ -84,7 +84,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Gradle](#tab/gradle)
 
-- [Publish Artifacts with Gradle](../../pipelines/artifacts/pull-package-gradle.md)
+- [Publish Artifacts with Gradle](../../pipelines/artifacts/build-and-publish-artifacts-gradle.md)
 
 #### [Python](#tab/python)
 

@@ -50,7 +50,7 @@ Azure Artifacts allow developers to publish and consume various types of package
 
 #### [Gradle](#tab/gradle/)
 
-[Build and publish artifacts with Gradle and Azure Pipelines](pull-package-gradle.md)
+[Build and publish artifacts with Gradle and Azure Pipelines](build-and-publish-artifacts-gradle.md)
 
 #### [Universal Packages](#tab/universal-packages/)
 
@@ -89,7 +89,7 @@ Azure Artifacts allow developers to publish and consume various types of package
 
 #### [Gradle](#tab/gradleserver/)
 
-[Build and publish artifacts with Gradle and Azure Pipelines](pull-package-gradle.md)
+[Build and publish artifacts with Gradle and Azure Pipelines](build-and-publish-artifacts-gradle.md)
 
 #### [Python](#tab/pythonserver/)
 
