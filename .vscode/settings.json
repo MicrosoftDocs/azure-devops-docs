@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "Entra"
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }
