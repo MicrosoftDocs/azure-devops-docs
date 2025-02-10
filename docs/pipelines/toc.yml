@@ -490,7 +490,7 @@
         displayName: Maven, restore
     - name: Gradle
       displayName: Gradle, package
-      href: artifacts/build-and-publish-artifacts-gradle.md
+      href: artifacts/build-publish-artifacts-gradle.md
     - name: Python
       displayName: python, package
       href: artifacts/pypi.md

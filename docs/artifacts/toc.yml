@@ -314,7 +314,7 @@
     href: ../pipelines/artifacts/publish-maven-artifacts.md
     displayName: Maven, package
   - name: Gradle
-    href: ../pipelines/artifacts/build-and-publish-artifacts-gradle.md
+    href: ../pipelines/artifacts/build-publish-artifacts-gradle.md
     displayName: Gradle, package
   - name: Python
     href: ../pipelines/artifacts/pypi.md

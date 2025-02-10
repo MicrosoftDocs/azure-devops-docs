@@ -74,7 +74,7 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 
     1. **Gradle**: leave the default settings.
     
-    1. **Copy Files**: set the *Target Foler* to $(Pipeline.Workspace).
+    1. **Copy Files**: set the *Target Folder* to $(Pipeline.Workspace).
 
     1. **Publish Pipeline Artifact**: make sure the *File or directory path* is set to $(Pipeline.Workspace) and the *Artifact publish location* is Azure Pipelines.
 
