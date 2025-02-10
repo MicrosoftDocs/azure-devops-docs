@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 01/17/2023
+ms.date: 02/10/2025
 ---
 
 # Resolve validation errors for process import
@@ -17,21 +17,20 @@ ms.date: 01/17/2023
 [!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
-> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [Azure DevOps data import service](../../../../migrate/migration-overview.md). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations migrated to Azure DevOps Services using the [Azure DevOps data import service](../../../../migrate/migration-overview.md).
 >
-> If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
+> If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template: [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
->To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
-
+> For more information, see [Customize work tracking](../../../../reference/customize-work.md). 
 
 During process import, the process is validated to ensure the system works as expected for the custom process. 
-You'll receive a list of error messages if the process fails validation.  
+You receive a list of error messages if the process fails validation.  
 
 ![Process successfully imported](media/ALM_IP_ValidationErrors_list_775.png)  
 
-If you've received a validation error when you tried [import process](import-process.md), you'll need to resolve the error before retrying the import. 
+If you received a validation error when you tried [import process](import-process.md), resolve the error before retrying the import. 
 Each error has a link to learn more about the specific validation failure and guidance on how to correct it.
-Apply the resolution fix(es) provided for the message(s) that you received, zip up the updated files, and retry the import operation.  
+Apply the resolution fix provided for the message that you received, zip up the updated files, and retry the import operation.  
 
 If you're just starting your customization, [review the validation rules provided](customize-process.md).  
 
@@ -46,7 +45,7 @@ If you're just starting your customization, [review the validation rules provide
 <a id="TF402555"></a>
 
 ### TF402555: Field *[refName]* is deleted.
-The process that you're importing doesn't include the named field in the process being updated, therefore it is removed as part of the update operation.  
+The process that you're importing doesn't include the named field in the process being updated, therefore it gets removed as part of the update operation.  
 
 #### Scenario example
 
@@ -63,11 +62,11 @@ The system displays an information message about the field to be deleted.
 
 <a id="TF402591"></a>
 
-### TF402591: Field  with reference name *[refName]* cannot be renamed to '*[name1]*' from '*[name2]*' in existing processes *[processName]*.
+### TF402591: Field  with reference name *[refName]* can't be renamed to '*[name1]*' from '*[name2]*' in existing processes *[processName]*.
 
-The process that you're importing contains a renamed field that uses the same `refname` in the current process(es).  
+The process that you're importing contains a renamed field that uses the same `refname` in the current process.  
 
-Field names cannot be renamed.
+You can't rename field names.
 
 <a id="TF402598"></a>
 
@@ -93,7 +92,7 @@ The system displays an information message about the deletion.
 ### TF402601: Work item type *[witName]* is renamed to *[name1]* from *[name2]*.
 
 The process contains a renamed WIT. The WIT is renamed in the existing process.  
-The process that you're updating contains a WIT that's been renamed from the name in the current process.  
+The process that you're updating contains a WIT that gets renamed from the name in the current process.  
 As part of updating the existing process, the system renames the WIT in the current process. All work items in existing projects that reference the process are also renamed.
 
 #### Scenario example
@@ -128,7 +127,7 @@ From the error message, determine and correct the source of the malformed XML.
 
 ### TF402594: File violates the schema with the following error: *[Error message]*
 
-Each XML file in the process zip file must conform to the given schema. Schema violation errors are caused by custom XML tags or attributes within the XML file. Read the error message to determine the source of schema violation and fix accordingly.
+Each XML file in the process zip file must conform to the given schema. Schema violation errors are due to custom XML tags or attributes within the XML file. Read the error message to determine the source of schema violation and fix accordingly.
 
 The schema definition for work item tracking defines all child elements within the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, 
 check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax.  
@@ -158,7 +157,7 @@ Correct the schema error in the named file.
 ## Process template plug-in errors
 
 The ProcessTemplate.xml is the root file that defines the entire process and all XML definition files that 
-will be imported to add or update a process. This file contains all of the plug-ins and task groups that are referenced 
+are imported to add or update a process. This file contains all of the plug-ins and task groups that are referenced 
 when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
@@ -172,7 +171,7 @@ Correct the process zip package to include the named file.
 <a id="VS402452"></a>
 
 ### VS402452: The process template did not specify a version, or specified an invalid version.
-Edit the ProcessTemplate.xml file to specify a version. 
+To specify a version, edit the ProcessTemplate.xml file. 
 
 #### Error example
 
@@ -213,7 +212,7 @@ Then, either update the plug-in to remove the missing named file, or add the nam
 #### Error example
 
 The WorkItemTracking plug-in specifies `fileName="WorkItem Tracking\TypeDefinitions\Epic.xml`, 
-however it hasn't been added to the WorkItem Tracking\TypeDefinitions folder.
+however it isn't added to the WorkItem Tracking\TypeDefinitions folder.
 
 ```xml
      <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Epic.xml" />
@@ -275,7 +274,7 @@ The WorkItems.xml file contains two `CATEGORIES` statements.
 
 #### Resolution example
 
-The WorkItems.xml file has been updated to contain only one `CATEGORIES` statement.
+The WorkItems.xml file is updated to contain only one `CATEGORIES` statement.
 ```xml
   <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">
     <dependencies>
@@ -308,7 +307,8 @@ The WorkItems.xml file contains duplicate `ProjectConfiguration` statements.
 ```
 #### Resolution example
 
-The WorkItems.xml file has been updated to contain only one `ProjectConfiguration` statement.
+The WorkItems.xml file is updated to contain only one `ProjectConfiguration` statement.
+
 ```xml
     <taskXml>
       <PROCESSCONFIGURATION>
@@ -338,7 +338,8 @@ The configuration specified is out-of-date and specifies two files that aren't c
 
 #### Resolution example
 
-The WorkItems.xml file has been updated to contain the correct configuration `ProjectConfiguration` statement.
+The WorkItems.xml file is updated to contain the correct configuration `ProjectConfiguration` statement.
+
 ```xml
     <taskXml>
       <PROCESSCONFIGURATION>
@@ -451,7 +452,7 @@ Update your Categories.xml file to define the missing *[name]* category.
 
 #### Error example
 
-ProcessConfiguration references the Epic Category, however it is missing from the Categories.xml definition file.
+ProcessConfiguration references the Epic Category, however it's missing from the Categories.xml definition file.
 
 #### Resolution example
 
@@ -471,7 +472,7 @@ Update your Categories.xml file to define the missing *[categoryName]* category.
 
 <a id="TF402560"></a>
 
-### TF402560: You've defined *[n]* categories. Only *[nn]* are allowed.
+### TF402560: You defined *[n]* categories. Only *[nn]* are allowed.
 
 Review your Categories.xml file for all `CATEGORY` element statements and determine which ones you can delete so as not exceed the allowed limit. 
 Then, review your ProcessConfiguration.xml file to replace values that reference deleted categories.
@@ -505,11 +506,11 @@ The name of the WIT referenced for Microsoft.EpicCategory is misspelled.
 ### TF402597: Custom category *[categoryName]* isn't supported because ProcessConfiguration doesn't reference it. 
 
 You can only specify custom categories that you use to configure an Agile tool feature in the ProcessConfiguration.  
-Review your ProcessConfiguration.xml file and determine if you've missed adding support for a category. Otherwise, remove *[categoryName]* from the Categories.xml file.
+Review your ProcessConfiguration.xml file and determine if you missed adding support for a category. Otherwise, remove *[categoryName]* from the Categories.xml file.
 
 #### Error example
 
-ProcessConfiguration doesn't reference Microsoft.EpicCategory, although it's defined in the Categories.xml definition file. 
+ProcessConfiguration doesn't reference Microsoft.EpicCategory, although defined in the Categories.xml definition file. 
 
 #### Resolution example
 
@@ -526,9 +527,9 @@ Add `PortfolioBacklog` to ProcessConfiguration to reference Microsoft.EpicCatego
         <Column refname="System.WorkItemType" width="100" />
         <Column refname="System.Title" width="400" />
         <Column refname="System.State" width="100" />
-        <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
-        <Column refname="Microsoft.VSTS.Common.BusinessValue" width="50" />
-        <Column refname="Microsoft.VSTS.CMMI.RequirementType" width="100" />
+        <Column refname="Microsoft.AzureDevOps.Scheduling.Effort" width="50" />
+        <Column refname="Microsoft.AzureDevOps.Common.BusinessValue" width="50" />
+        <Column refname="Microsoft.AzureDevOps.CMMI.RequirementType" width="100" />
         <Column refname="System.Tags" width="200" />
       </Columns>
       <AddPanel>
@@ -575,7 +576,7 @@ Remove the duplicate statement.
 
 <a id="TF402512"></a>
 
-### TF402512: File *[fileName]* does not exist.
+### TF402512: File *[fileName]* doesn't exist.
 
 The file specified in the Classification.xml file isn't present in the specified path or the path is misspelled.  
 
@@ -601,12 +602,12 @@ The Classification folder path is misspelled.
 
 ### TF402513: Name *[pathName]* in the Classification plug-in doesn't conform to TreePath naming restrictions.
 
-Review the `Node` elements you've specified and change the names to conform to supporting naming conventions.
+Review the `Node` elements you specified and change the names to conform to supporting naming conventions.
 Reference: [Add and modify area and iteration paths](../../../settings/set-area-paths.md).
 
 #### Error example
 
-The Path names include the # character which is not allowed. 
+The Path names include the # character which isn't allowed. 
 ```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
@@ -618,7 +619,8 @@ The Path names include the # character which is not allowed.
 ```
 #### Resolution example
 
-The Path names have been corrected. 
+The Path names are corrected.
+
 ```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
@@ -632,14 +634,15 @@ The Path names have been corrected.
 
 <a id="TF402514"></a>
 
-### TF402514: Node StructureType *[structureTypeName]* in the Classification plug-in is not supported.
+### TF402514: Node StructureType *[structureTypeName]* in the Classification plug-in isn't supported.
 
 The `StructureType` attribute only allows the following values: `ProjectModelHierarchy` and `ProjectLifecycle`.  
-Review the `Node` elements that you've specified and remove any unsupported attributes.
+Review the `Node` elements that you specified and remove any unsupported attributes.
 
 #### Error example
 
-`ProjectLifecycle` has been misspelled. 
+`ProjectLifecycle` is misspelled. 
+
 ```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
@@ -651,7 +654,8 @@ Review the `Node` elements that you've specified and remove any unsupported attr
 ```
 #### Resolution example
 
-Misspelled name has been corrected. 
+Misspelled name is corrected.
+
 ```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
@@ -668,7 +672,7 @@ Misspelled name has been corrected.
 ### TF402515: A property attribute in the Classification plug-in is either missing or not supported.
 
 The `property` element only allows the following attributes: `name` , `value` , and `isFile`.  
-Review the `property` elements you've specified and remove any unsupported attributes.
+Review the `property` elements you specified and remove any unsupported attributes.
 
 #### Error example
 
@@ -681,7 +685,8 @@ The `value` attribute is misspelled.
 ```
 #### Resolution example
 
-Misspelled attribute has been corrected. 
+Misspelled attribute is corrected. 
+
 ```xml
       <properties>
         <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
@@ -690,9 +695,9 @@ Misspelled attribute has been corrected.
 ```
 <a id="TF402516"></a>
 
-### TF402516: The Classification plug-in contains more than two root level Nodes, which is not supported.
+### TF402516: The Classification plug-in contains more than two root level Nodes, which isn't supported.
 
-Review the `Node` elements you've specified and remove extra root level nodes.
+Review the `Node` elements you specified and remove extra root level nodes.
 
 #### Error example
 
@@ -781,13 +786,13 @@ Update GroupsandPermissions.xml to use sprints.
 
 <a id="TF402561"></a>
 
-### TF402561: You've defined *[n]* custom link types. Only *[nn]* are allowed.
+### TF402561: You defined *[n]* custom link types. Only *[nn]* are allowed.
 
 Review your WorkItems.xml plug-in file for all `LINKTYPE` element statements. 
 Remove statements associated with custom link types so as not exceed the allowed limit. 
 And then, remove the corresponding  link type definition file from the LinkTypes folder.
 
-Also, remove any references to the custom link types that you've added to a WIT definition within a `LinksControlOptions` section under the `FORM` section.
+Also, remove any references to the custom link types that you added to a WIT definition within a `LinksControlOptions` section under the `FORM` section.
 
 
 <a id="TF402583"></a>
@@ -817,7 +822,7 @@ The following `LINKTYPE` element statements within the WorkItems.xml plug-in fil
 
 <a id="TF402564"></a>
 
-### TF402564: You've defined *[n]* global lists. Only *[nn]* are allowed.
+### TF402564: You defined *[n]* global lists. Only *[nn]* are allowed.
 
 One or more WITs defined in the custom process template contain a `GLOBALLIST` element. 
 Search through your WIT definition files and replace any `GLOBALLIST` elements with `ALLOWEDVALUES` or `SUGGESTEDVALUES` elements. 
@@ -825,7 +830,7 @@ For reference syntax, see [Define pick lists](/previous-versions/azure/devops/re
 
 <a id="TF402565"></a>
 
-### TF402565: You've defined *[n]* items in global list *[globalListName]*. A maximum of *[nn]* is allowed.
+### TF402565: You defined *[n]* items in global list *[globalListName]*. A maximum of *[nn]* is allowed.
 
 The named `GLOBALLIST` element contains more items than allowed. Either reduce the number of list items contained in the `GLOBALLIST` element, 
 or segment the global list into two or more elements so that neither list exceeds the maximum number of allowed items. 
@@ -859,7 +864,7 @@ ProcessConfiguration.xml `RequirementBacklog` element is missing a metastate map
 
 #### Resolution example
 
-Missing metastate mappings have been added. 
+Missing metastate mappings are added. 
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
    <States>
@@ -883,8 +888,7 @@ named element in the ProcessConfiguration.xml file to provide the missing metast
 
 ### TF402548: Element *[elementName]* requires that you map at least one state to metastate *[metastateName]*.
 
-
-Update the `States` section within the named element in the ProcessConfiguration.xml file to provide the missing metastate mapping. 
+To provide the missing metastate mapping, update the `States` section within the named element in the ProcessConfiguration.xml file. 
 
 
 #### Error example
@@ -903,7 +907,7 @@ ProcessConfiguration.xml `RequirementBacklog` element is missing a metastate map
 
 #### Resolution example
 
-Missing metastate mappings have been added. 
+Missing metastate mappings are added. 
 
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
@@ -920,7 +924,7 @@ Missing metastate mappings have been added.
 
 ### TF402550: Element *[elementName]* includes more than one metastate mapping for workflow state *[stateName]*.
 
-Metastate value cannot be mapped to more than one workflow state.
+Metastate value can't be mapped to more than one workflow state.
 
 #### Error example
 
@@ -939,7 +943,8 @@ ProcessConfiguration.xml `RequirementBacklog` element contains two metastate map
 
 #### Resolution example
 
-Metastate mappings have been corrected. 
+Metastate mappings are corrected. 
+
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
@@ -956,12 +961,12 @@ Metastate mappings have been corrected.
 
 ### TF402551: Work item type *[witName]* doesn't define workflow state *[stateName]*, which is required because ProcessConfiguration maps it to a metastate for element *[elementName]*.
 
-Either correct the ProcessConfiguration.xml file or the `WORKFLOW` section of the named WIT to add the missing `STATE` and `TRANSITION` elements.
+To add the missing `STATE` and `TRANSITION` elements, either correct the ProcessConfiguration.xml file or the `WORKFLOW` section of the named WIT.
 
 
 #### Error example 
 
-ProcessConfiguration.xml `RequirementBacklog` element specifies `value="Committed"`, however UserStory.xml doesn't define Committed as a State.    
+The ProcessConfiguration.xml `RequirementBacklog` element specifies `value="Committed"`, however UserStory.xml doesn't define Committed as a State.    
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
@@ -1012,7 +1017,7 @@ ProcessConfiguration.xml `RequirementBacklog` element is missing the state `New`
 
 #### Resolution example
 
-Metastate mapping has been corrected. 
+Metastate mapping is corrected.
 
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
@@ -1050,7 +1055,7 @@ ProcessConfiguration.xml `RequirementBacklog` element contains a misspelled meta
 
 #### Resolution example
 
-Metastate mapping has been corrected. 
+Metastate mapping is corrected. 
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
@@ -1074,7 +1079,7 @@ Review [ProcessConfiguration XML element reference](../../../../reference/xml/pr
 
 ### TF402572: Cannot find specified file in the process template package.
 
-A file specified in a plug-in file for upload is missing from the zip file. Review all files specified for upload and make sure they are included in the process zip file.  
+A file specified in a plug-in file for upload is missing from the zip file. Review all files specified for upload and make sure they're included in the process zip file.  
 
 Review [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md) for required elements.
 
@@ -1088,17 +1093,18 @@ Review [ProcessConfiguration XML element reference](../../../../reference/xml/pr
 
 #### Example
 
-The Scrum process specifies the following `TypeField` elements. If any of these are missing, you'll receive error TF402574.
+The Scrum process specifies the following `TypeField` elements. If any of these elements are missing, you receive error TF402574.
+
 ```xml
 <TypeFields>
     <TypeField refname="System.AreaPath" type="Team" />
-    <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
-    <TypeField refname="Microsoft.VSTS.Common.BacklogPriority" type="Order" />
-    <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
-    <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
-    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
-    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationLaunchInstructions" type="ApplicationLaunchInstructions" />
-    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationType" type="ApplicationType">
+    <TypeField refname="Microsoft.AzureDevOps.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
+    <TypeField refname="Microsoft.AzureDevOps.Common.BacklogPriority" type="Order" />
+    <TypeField refname="Microsoft.AzureDevOps.Scheduling.Effort" type="Effort" />
+    <TypeField refname="Microsoft.AzureDevOps.Common.Activity" type="Activity" />
+    <TypeField refname="Microsoft.AzureDevOps.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
+    <TypeField refname="Microsoft.AzureDevOps.Feedback.ApplicationLaunchInstructions" type="ApplicationLaunchInstructions" />
+    <TypeField refname="Microsoft.AzureDevOps.Feedback.ApplicationType" type="ApplicationType">
         <TypeFieldValues>
             <TypeFieldValue value="Web application" type="WebApp" />
             <TypeFieldValue value="Remote machine" type="RemoteMachine" />
@@ -1112,7 +1118,7 @@ The Scrum process specifies the following `TypeField` elements. If any of these 
 
 <a id="TF402588"></a>
 
-### TF402588: Several portfolio backlogs *[backlogNames]* have defined *[backlogName]* as their parent. A parent backlog may have only one child backlog.
+### TF402588: Several portfolio backlogs *[backlogNames]* have defined *[backlogName]* as their parent. A parent backlog might have only one child backlog.
 
 Only one child portfolio backlog can map to a single parent backlog.  
 
@@ -1132,7 +1138,8 @@ Edit ProcessConfiguration to correct the parent-child backlog specifications.
 
 #### Resolution example
 
-Change the parent on the Feature backlog to point to the Epic backlog.
+To point to the Epic backlog, change the parent on the Feature backlog.
+
 ```xml
   <PortfolioBacklog category="Microsoft.EpicCategory" parent="Microsoft.InitiativeCategory" pluralName="Epics" singularName="Epic">
     ...
@@ -1170,8 +1177,8 @@ Add the Epic `PortfolioBacklog` to the ProcessConfiguration.xml file.
       <Column refname="System.WorkItemType" width="100" />
       <Column refname="System.Title" width="400" />
       <Column refname="System.State" width="100" />
-      <Column refname="Microsoft.VSTS.Common.BusinessValue" width="50" />
-      <Column refname="Microsoft.VSTS.CMMI.RequirementType" width="100" />
+      <Column refname="Microsoft.AzureDevOps.Common.BusinessValue" width="50" />
+      <Column refname="Microsoft.AzureDevOps.CMMI.RequirementType" width="100" />
       <Column refname="System.Tags" width="200" />
     </Columns>
   </PortfolioBacklog>
@@ -1181,7 +1188,7 @@ Add the Epic `PortfolioBacklog` to the ProcessConfiguration.xml file.
 
 ### TF402590: Several portfolio backlogs *[Backlog 1, Backlog 2]* don't define their parent. 
  
-Only one portfolio backlog, the top backlog, may be unparented. All other backlogs must include a `parent="Microsoft.FooCategory"` attribute and value.
+Only one portfolio backlog, the top backlog, might be unparented. All other backlogs must include a `parent="Microsoft.FooCategory"` attribute and value.
 
 #### Resolution example
 
@@ -1224,7 +1231,7 @@ For more information, see [ProcessConfiguration XML element reference](../../../
 
 ### TF400507: Each work item type must support an initial state value that matches one of the states defined in: BugWorkItems. 
 
-This error occurs when a work item type included in the `Microsoft.BugCategory` specifies an initial state that isn't included in the `BugWorkItems` section of the ProcessConfiguration XML file. Either fix the XML definition workflow states for the named work item types, or update the `BugWorkItems` section to include the missing state(s).  
+This error occurs when a work item type included in the `Microsoft.BugCategory` specifies an initial state that isn't included in the `BugWorkItems` section of the ProcessConfiguration XML file. Either fix the XML definition workflow states for the named work item types, or update the `BugWorkItems` section to include the missing state.  
 
 For more information, see [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). 
 
@@ -1232,7 +1239,7 @@ For more information, see [ProcessConfiguration XML element reference](../../../
 
 ### TF400572: The Project Process Settings must be configured for this feature to be used.
 
-This is caused by templates that are from TFS 2010 or earlier versions, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
+This error stems from old templates, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
 
 
 <a id="wit-definitions"></a>
@@ -1241,18 +1248,18 @@ This is caused by templates that are from TFS 2010 or earlier versions, before t
 
 <a id="TF402570"></a>
 
-### TF402570: You've defined *[n]* work item types. A maximum of *[witLimit]* is allowed.
+### TF402570: You defined *[n]* work item types. A maximum of *[witLimit]* is allowed.
 
-You've defined more WITs that are allowed in the process. Review your WorkItems.xml file and reduce the number of `WORKITEMTYPE` statements it contains and remove the associated WIT definition files from the process.
+You defined more WITs that are allowed in the process. Review your WorkItems.xml file and reduce the number of `WORKITEMTYPE` statements it contains and remove the associated WIT definition files from the process.
 
 <a id="TF402573"></a>
 
 ### TF402573: Work item type WIT doesn't specify required `refname` attribute.  
 
-Work item types (Bug, User Story, Task, etc.) require the `refname` attribute. The refname value must be unique and cannot contain any reserved namespaces.
-The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by Azure DevOps. 
+Work item types (Bug, User Story, Task, etc.) require the `refname` attribute. The refname value must be unique and can't contain any reserved namespaces.
+The namespaces-System.*XXX* and Microsoft.AzureDevOps.*XXX*-are reserved by Azure DevOps. 
 
-See [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference) for more information.
+For more information, see [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference) for more information.
 
 #### Error example
 
@@ -1270,14 +1277,14 @@ See [All WITD XML elements reference](/previous-versions/azure/devops/reference/
 
 ### TF402599: The work item type refname *[refName]* isn't valid as it uses a disallowed namespace [namespace].
 
-Reference names of custom fields and WITs can't use reserved namespaces: System.*XXX* and Microsoft.VSTS.*XXX*.  
+Reference names of custom fields and WITs can't use reserved namespaces: System.*XXX* and Microsoft.AzureDevOps.*XXX*.  
 
 Edit the `refname` attribute of the named WIT. 
 
 #### Error example
 
 ```xml
-<FIELD name="Custom Field" refname="Microsoft.VSTS.CustomField" type="String" />
+<FIELD name="Custom Field" refname="Microsoft.AzureDevOps.CustomField" type="String" />
 ```
 #### Resolution example
 
@@ -1291,7 +1298,7 @@ Edit the `refname` attribute of the named WIT.
  
 WIT reference names must adhere to established naming conventions: only letters, no spaces, and at least one period (.)
 
-Edit the `refname` attribute of the named WIT to meet naming requirements.. 
+Edit the `refname` attribute of the named WIT to meet naming requirements. 
 
 #### Error example
 
@@ -1321,8 +1328,8 @@ The following rules are **not** supported for import to Azure DevOps:
 
 ### TF402539: Field *[refName]* only allows the following rules: *[ruleNames]*.
 
-Edit your WIT definitions for the named field and remove any non-allowed rule(s). Review both the `FIELDS` and `WORKFLOW` sections. 
-Most system fields do not allow specifying rules. 
+Edit your WIT definitions for the named field and remove any nonallowed rules. Review both the `FIELDS` and `WORKFLOW` sections. 
+Most system fields don't allow specifying rules. 
 
 #### Valid rules to use with System fields 
 
@@ -1337,7 +1344,7 @@ Most system fields do not allow specifying rules.
 
 ### TF402540: Work item type *[witName]* isn't valid because it specifies global list *[GLOBALLIST]*. Global lists aren't supported.
 
-Global lists are not supported in VSTS. 
+Global lists aren't supported in Azure DevOps. 
 Replace all instances of `GLOBALLIST` elements with 
 `ALLOWEDVALUES` and `LISTITEM` elements in all WIT definition files.
 Reference:  [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
@@ -1370,7 +1377,7 @@ Reference:  [Define pick lists](/previous-versions/azure/devops/reference/xml/de
 
 ### TF402541: Work item type *[witName]* isn't valid because it references global list *[globalListName]*. Global lists aren't supported.
 
-Global lists are not supported in VSTS. Replace all instances of `GLOBALLIST` elements with 
+Global lists aren't supported in Azure DevOps. Replace all instances of `GLOBALLIST` elements with 
 `ALLOWEDVALUES` and `LISTITEM` elements in all WIT definition files.
 Reference: [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
 
@@ -1403,7 +1410,7 @@ Reference: [Define pick lists](/previous-versions/azure/devops/reference/xml/def
 
 ### TF402542: The custom field refname *[refName]* isn't valid as it uses disallowed namespace *[namespace]*.
 
-The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved in VSTS. 
+The namespaces-System.*XXX* and Microsoft.AzureDevOps.*XXX*-are reserved in Azure DevOps. 
 Reference names of custom fields and types can't use these namespaces.   
 
 To fix this error, rename the `refname` attribute for the named field in the WIT definition files where it appears. 
@@ -1415,7 +1422,7 @@ To fix this error, rename the `refname` attribute for the named field in the WIT
 
   - OR - 
 
-<FIELD name="CustomField" refname="Microsoft.VSTS.CustomField" type="String" />
+<FIELD name="CustomField" refname="Microsoft.AzureDevOps.CustomField" type="String" />
 ```
 
 
@@ -1432,21 +1439,21 @@ To fix this error, rename the `refname` attribute for the named field in the WIT
 
 Edit the named field in the named WIT to provide the missing `ALLOWEDVALUES` rule, referencing the named element for more details.  
 
-The ProcessConfiguration.xml file element, `TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity"`, 
-requires a pick list is defined for the Microsoft.VSTS.Common.Activity field in all WITs that belong to the Task Category. 
+The ProcessConfiguration.xml file element, `TypeField refname="Microsoft.AzureDevOps.Common.Activity" type="Activity"`, 
+requires a pick list is defined for the Microsoft.AzureDevOps.Common.Activity field in all WITs that belong to the Task Category. 
 
 ```xml
-<TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
+<TypeField refname="Microsoft.AzureDevOps.Common.Activity" type="Activity" />
 ```
 
-If you have added bugs to the Task Category, you must ensure that the Bug.xml file contains the 
+If you added bugs to the Task Category, ensure that the Bug.xml file contains the 
 named field and specifies the same pick list as is defined for it in the Task.xml file. 
 
 #### Error example
 
 Bug.xml has the field defined, but not the pick list.
 ```xml
-      <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">
+      <FIELD name="Activity" refname="Microsoft.AzureDevOps.Common.Activity" type="String" reportable="dimension">
         <HELPTEXT>Type of work involved</HELPTEXT>
       </FIELD> 
 ```
@@ -1455,7 +1462,7 @@ Bug.xml has the field defined, but not the pick list.
 
 Corrected Bug.xml
 ```xml
-      <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">
+      <FIELD name="Activity" refname="Microsoft.AzureDevOps.Common.Activity" type="String" reportable="dimension">
         <HELPTEXT>Type of work involved</HELPTEXT>
         <SUGGESTEDVALUES>
           <LISTITEM value="Development"/>
@@ -1502,7 +1509,7 @@ Missing `FIELD` elements added to the UserStory.xml file.
 
 ### To support ProcessConfiguration element *[elementName]*, work item type *[witName]* must define TypeField *[typeField]* (field refname [refName]).
 
-In the ProcessConfiguration you created a `TypeField` with `TypeFieldValues`. In your work item type you have to reference that same `TypeField`.
+In the ProcessConfiguration you created a `TypeField` with `TypeFieldValues`. In your work item type, reference that same `TypeField`.
 
 
 #### Error example
@@ -1520,10 +1527,10 @@ ProcessConfiguration.xml
 ```
 
 
-FeedbackRequest.xml is using the Microsoft.VSTS.Feedback.ApplicationType field when it should be using the Custom.ApplicationType field.
+FeedbackRequest.xml is using the Microsoft.AzureDevOps.Feedback.ApplicationType field when it should be using the Custom.ApplicationType field.
 
 ```xml
-  <FIELD name="Application Type" refname="Microsoft.VSTS.Feedback.ApplicationType" type="String">
+  <FIELD name="Application Type" refname="Microsoft.AzureDevOps.Feedback.ApplicationType" type="String">
     ...
   </FIELD>
 ```
@@ -1542,29 +1549,29 @@ FeedbackRequest.xml
 
 ### TF402556: For field *[refName]* to be well defined, you must name it *[fieldName]* and set its type to *[fieldType]*. Provided *[refName]* is *[fieldName]* and type is *[fieldType]*.
 
-If you are on an on-premises server and running **tfsMigrator**, this error is usually generated when your process is out-of-date and a system field is not properly defined. In the majority of those cases you need to use the `witadmin /changefield` command to properly rename the field.
+If you are on an on-premises server and running **tfsMigrator**, this error is generated when your process is out-of-date and a system field isn't properly defined. In most cases, use the `witadmin /changefield` command to properly rename the field.
 
 #### Examples of Reserved Fields
 
-Reserved System.*XXX* and Microsoft.VSTS.*XXX* fields have required name and type values.
+Reserved System.*XXX* and Microsoft.AzureDevOps.*XXX* fields require `name` and `type` values.
 
 | Field                                                    | Name                        | Type                                                                                                          |                                                                                                                
 |----------------------------------------------------------|-----------------------------|------------------|
 | System.Id                                                | ID                          | Integer          |
 | System.Title                                             | Title                       | String           |
-| Microsoft.VSTS.Scheduling.StoryPoints                    | Story Points                | Double           |
-| Microsoft.VSTS.Scheduling.RemainingWork                  | Remaining Work              | Double           |
-| Microsoft.VSTS.Scheduling.OriginalEstimate               | Original Estimate           | Double           |
-| Microsoft.VSTS.Scheduling.CompletedWork                  | Completed Work              | Double           |
+| Microsoft.AzureDevOps.Scheduling.StoryPoints                    | Story Points                | Double           |
+| Microsoft.AzureDevOps.Scheduling.RemainingWork                  | Remaining Work              | Double           |
+| Microsoft.AzureDevOps.Scheduling.OriginalEstimate               | Original Estimate           | Double           |
+| Microsoft.AzureDevOps.Scheduling.CompletedWork                  | Completed Work              | Double           |
 
 #### Error example
 
-TF402556: For field Microsoft.VSTS.TCM.ReproSteps to be well defined, you must name it Repro Steps and set its type to HTML. Provided Microsoft.VSTS.TCM.ReproSteps is My Repro Steps and type is HTML.
+TF402556: For field Microsoft.AzureDevOps.TCM.ReproSteps to be well defined, you must name it Repro Steps and set its type to HTML. Provided Microsoft.AzureDevOps.TCM.ReproSteps is My Repro Steps and type is HTML.
 
-In Bug.xml, the friendly field name has been changed to "My Repro Steps".
+In Bug.xml, the friendly field name changed to "My Repro Steps."
 
 ```xml
-  <FIELD name="My Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
+  <FIELD name="My Repro Steps" refname="Microsoft.AzureDevOps.TCM.ReproSteps" type="HTML">
     <HELPTEXT>How to see the bug. End by contrasting expected with actual behavior.</HELPTEXT>
   </FIELD> 
 ```
@@ -1572,7 +1579,7 @@ In Bug.xml, the friendly field name has been changed to "My Repro Steps".
 
 Bug.xml
 ```xml
-  <FIELD name="Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
+  <FIELD name="Repro Steps" refname="Microsoft.AzureDevOps.TCM.ReproSteps" type="HTML">
     <HELPTEXT>How to see the bug. End by contrasting expected with actual behavior.</HELPTEXT>
   </FIELD> 
 ```
@@ -1595,7 +1602,7 @@ UserStory.xml
 ```xml
   <FIELD name="Hair Color 2" refname="MyCompany.CustomFields.HairColor" type="Double" reportable="dimension" />
 ```
-Notice that the `name` and `type` attributes differ from that in the Bug.xml work item type
+Notice that the `name` and `type` attributes differ from the Bug.xml work item type.
 
 #### Resolution example
 
@@ -1612,9 +1619,9 @@ UserStory.xml
 
 ### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
 
-Fields must be defined consistently across processes that have been or that you plan to import to Azure DevOps Services. 
+Define fields consistently across processes you're importing to Azure DevOps Services. 
 The system doesn't allow you to import a process that contains a `FIELD` element which is defined 
-one way in Process A and another way in Process B.  All `FIELD` element attributes must match.
+one way in Process A and another way in Process B. All `FIELD` element attributes must match.
 
 #### Example
 
@@ -1642,43 +1649,42 @@ Notice how different values are specified for `name` and `type` attributes.
 
 ### Resolution
 
-Ensure that fields of the same `refname` are defined the same across all processes that  
-have been imported or that you plan to import to Azure DevOps Services.
+Ensure that fields of the same `refname` are defined the same across all processes imported or that you plan to import to Azure DevOps Services.
 
 <a id="TF402559"></a>
 
 ### TF402559: The definition for field *[refName]* is inconsistent with an existing field. The `type` is *[typeName]* but should be *[typeName]*.
-Edit the WIT file(s) that contains the named field to ensure the specified `type` attribute value is consistent across all WITs.  
+Edit the WIT file that contains the named field to ensure the specified `type` attribute value is consistent across all WITs.  
 
 <a id="TF402562"></a>
 
-### TF402562: You've defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed.
+### TF402562: You defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed.
 
-You've defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed. Within a single WIT, you can specify only the specified number of fields.  
+You defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed. Within a single WIT, you can specify only the specified number of fields.  
 
 Edit the named WIT and remove the extra custom fields to reduce the total number of fields to be within the allowed limit.
 
 <a id="TF402563"></a>
 
-### TF402563: You've defined a total of *[n]* fields for all work item types. Only *[fieldLimit]* are allowed.
+### TF402563: You defined a total of *[n]* fields for all work item types. Only *[fieldLimit]* are allowed.
 
-You've defined *[n]* fields for all WITs defined in the process. Only *[fieldLimit]* are allowed. This includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields as well as custom fields.  
+You defined *[n]* fields for all WITs defined in the process. Only *[fieldLimit]* are allowed, which includes System.*XXX* and Microsoft.AzureDevOps.*XXX* namespace fields and custom fields.  
 
 Review the `FIELDS` and `WORKFLOW` sections and determine which custom fields to remove.
 
 <a id="TF402566"></a>
 
-### TF402566: You've defined *[n]* field rules for work item type *[witName]*. A maximum of *[ruleLimit]*  is allowed. 
+### TF402566: You defined *[n]* field rules for work item type *[witName]*. A maximum of *[ruleLimit]*  is allowed. 
  
-You've defined *[n]* field rules for the named WIT which exceeds the allowed number of field rules for any one WIT.  
+You defined *[n]* field rules for the named WIT which exceeds the allowed number of field rules for any one WIT.  
 
 Edit the named WIT and remove the extra field rules to reduce the total number of fields to be within the allowed limit.
 
 <a id="TF402568"></a>
 
-### TF402568: You've defined *[n]* fields with `syncnamechanges="true"` for work item type *[witName]*. A maximum of 64 is allowed.
+### TF402568: You defined *[n]* fields with `syncnamechanges="true"` for work item type *[witName]*. A maximum of 64 is allowed.
 
-The number of fields with  `syncnamechanges="true"` defined for the named WIT exceeds the allowed limit. This includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields as well as custom fields.  
+The number of fields with  `syncnamechanges="true"` defined for the named WIT exceeds the allowed limit, which includes System.*XXX* and Microsoft.AzureDevOps.*XXX* namespace fields and custom fields.  
 
 Review the `FIELDS` section of the named WIT and determine which custom fields to remove or modify.
 
@@ -1692,7 +1698,7 @@ Review the `FIELDS` section of the named WIT and determine which custom fields t
 
 <a id="TF402569"></a>
 
-### TF402569: You've defined *[n]* values for field *[fieldName]* in work item type *[witName]*. A maximum of *[listLimit]* is allowed.
+### TF402569: You defined *[n]* values for field *[fieldName]* in work item type *[witName]*. A maximum of *[listLimit]* is allowed.
 
 The number of `LISTITEM` elements defined for the named field in the named WIT exceeds the allowed limit.  
 
@@ -1717,7 +1723,7 @@ Notice the bug and user story `refname` values are different.
 
 ### TF402584: Field rule attributes "for" or "not" aren't supported.
 
-The `"for"` and `"not"` attributes are not supported at all for any field rule for import to Azure DevOps Services.  
+The `"for"` and `"not"` attributes aren't supported at all for any field rule for import to Azure DevOps Services.  
 Review the `FIELDS` and `WORKFLOW` sections for the presence of `"for"` and `"not"` attributes and remove them. 
 
 #### Error example
@@ -1740,9 +1746,8 @@ Review the `FIELDS` and `WORKFLOW` sections for the presence of `"for"` and `"no
 
 ### TF402593: Field rules aren't supported for field *[fieldName]*.
 
-Most System and Microsoft.VSTS fields do not support rules. 
-See [Rules and rule evaluation](../rule-reference.md) 
-for a complete list of supported field rules.
+Most System and Microsoft.AzureDevOps fields don't support rules. 
+For more information, see [Rules and rule evaluation](../rule-reference.md).
 
 Edit the definition files for work item types that contain the named field and remove the field rules specified for it. 
 
@@ -1750,28 +1755,27 @@ Edit the definition files for work item types that contain the named field and r
 
 ### TF402602: The field *[refName]* must have exactly these values *[values]*.
 
-All fields defined by VSTS in the reserved namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-must not be altered.  If you wish to have a different list of values in these pick list fields, define your own custom field.
+- **Don't alter reserved fields**: Don't alter any fields defined in the reserved namespaces `System.*XXX*` and `Microsoft.AzureDevOps.*XXX*`.
+- **Define custom fields**: To have a different list of values in the pick list fields, define your own custom field.
 
 #### Error example
 
 Bug.xml has the priority field defined, but has a different list of values than expected.
 
-```xml
-      <FIELD name="Priority" refname="Microsoft.VSTS.Common.Priority" type="Integer" reportable="dimension">
-        <ALLOWEDVALUES expanditems="true">
-          <LISTITEM value="0"/>
-          <LISTITEM value="1"/>
-          <LISTITEM value="2"/>
-        </ALLOWEDVALUES>
-        <DEFAULT from="value" value="2" />
-      </FIELD>
-```
+<FIELD name="Priority" refname="Microsoft.AzureDevOps.Common.Priority" type="Integer" reportable="dimension">
+  <ALLOWEDVALUES expanditems="true">
+    <LISTITEM value="0"/>
+    <LISTITEM value="1"/>
+    <LISTITEM value="2"/>
+  </ALLOWEDVALUES>
+  <DEFAULT from="value" value="2" />
+</FIELD>
 
 #### Resolution example
 
 Corrected Bug.xml including a new field
 ```xml
-      <FIELD name="Priority" refname="Microsoft.VSTS.Common.Priority" type="Integer" reportable="dimension">
+      <FIELD name="Priority" refname="Microsoft.AzureDevOps.Common.Priority" type="Integer" reportable="dimension">
         <HELPTEXT>Business importance. 1=must fix; 4=unimportant.</HELPTEXT>
         <ALLOWEDVALUES expanditems="true">
           <LISTITEM value="1"/>
@@ -1795,9 +1799,9 @@ Corrected Bug.xml including a new field
 
 <a id="VS402504"></a>
 
-### VS402504: User or group cannot be found *[project]\Group Name*. Verify that the users and groups used in your work item type definition exist.
+### VS402504: User or group can't be found *[project]\Group Name*. Verify that the users and groups used in your work item type definition exist.
 
-Custom project scoped groups are not supported. You can only reference account level scoped groups.
+Custom project scoped groups aren't supported. You can only reference account level scoped groups.
 
 #### Error example
 
@@ -1815,11 +1819,11 @@ Create a new account (collection) level group "Organization Leaders" and referen
 ```
 
 > [!NOTE]
-> A freshly created global group might take a little while before being found by the import process.
+> A freshly created global group might take a little while before the import process locates it.
 
 <a id="TF237094"></a>
 
-### TF237094: Field name '[fieldName]' is used by the field '[refName]', so it cannot be used by the field '[refName]'.
+### TF237094: Field name '[fieldName]' is used by the field '[refName]', so it can't be used by the field '[refName]'.
 
 Field name already exist with that same name on a different field. Change the name of the field.
 
@@ -1840,13 +1844,13 @@ Change the field name of Custom.NewField.ExternalID
 
 <a id="VS403104"></a>
 
-### VS403104: Work item type *[witName]* references the required field *[refName]* which is not included in all layouts.
+### VS403104: Work item type *[witName]* references the required field *[refName]* which isn't included in all layouts.
 
 This warning is generated if you have a required field in a work item type that is referenced in the `<Layout>` node but not the `<WebLayout>`. The `<WebLayout>` is used to modify the layout of the new form. See [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements) for details.
 
 <a id="VS403073"></a>
 
-### VS403073: Group & `<Group Name>`: violates the rule that a group can only contain a single HTML or WebPage control preceded by label controls..
+### VS403073: Group & `<Group Name>`: violates the rule that a group can only contain a single HTML or WebPage control preceded by label controls.
 
 In the new form layout, a group can only contain one HTMLFieldControl or WebPageControl. 
 
@@ -1861,7 +1865,7 @@ In the new form layout, a group can only contain one HTMLFieldControl or WebPage
 </Section>
 ```
 
-To resolve this, create two separate groups that contain one control each.
+To resolve this error, create two separate groups that contain one control each.
 
 #### Resolution example
 
@@ -1878,7 +1882,7 @@ To resolve this, create two separate groups that contain one control each.
 
 <a id="TF402594"></a>
 
-### TF402594: File violates the schema with the following error: The element 'Control' cannot contain child element 'Link' because the parent element's content model is empty.
+### TF402594: File violates the schema with the following error: The element 'Control' can't contain child element 'Link' because the parent element's content model is empty.
 
 #### Error example
 
@@ -1907,11 +1911,11 @@ To resolve this, create two separate groups that contain one control each.
 
 <a id="TF402567"></a>
 
-### TF402567: You've defined *[n]* workflow states for work item type *[witName]*. A maximum of *[stateLimit]*  is allowed.
+### TF402567: You defined *[n]* workflow states for work item type *[witName]*. A maximum of *[stateLimit]*  is allowed.
 
-You've defined *[n]* workflow states for the named WIT which exceeds the allowed number of workflow states for any one WIT.  
+You defined *[n]* workflow states for the named WIT which exceeds the allowed number of workflow states for any one WIT.  
 
-Edit the `WORKFLOW` section of the named WIT and remove the extra `STATE` elements to reduce the total number of states to be within the allowed limit. 
+To reduce the total number of states to be within the allowed limit, edit the `WORKFLOW` section of the named WIT and remove the extra `STATE` elements. 
 
 <a id="TF402578"></a>
 
@@ -1956,7 +1960,7 @@ Process B, Bug.xml
 
 Because both fields share the same reference name, `refname="MyCompany.CustomFields.Foo"`, 
 they must also specify the same friendly name `<FIELD name="Foo"` across all processes 
-that have been imported or will be imported to Azure DevOps Services. 
+imported or to be imported to Azure DevOps. 
 
 <a id="TF402580"></a>
 
@@ -2011,7 +2015,8 @@ UserStory.xml
 ```xml
   <WORKITEMTYPE name="User Story" refname="MyCompany.Name"> 
 ```
-notice both `refname` values equal "MyCompany.Name"
+
+Both `refname` values equal "MyCompany.Name"
 
 #### Resolution example
 
@@ -2030,13 +2035,13 @@ UserStory.xml
 
 <a id="TF402582"></a>
 
-### TF402582: Work item type *[witName]* contains custom control *[controlName]* which is not supported. 
+### TF402582: Work item type *[witName]* contains custom control *[controlName]* which isn't supported. 
  
-Custom controls are not supported in Azure DevOps Services. Review the `FORM` section for the named WIT and remove any custom controls that are defined. 
+Custom controls aren't supported in Azure DevOps Services. Review the `FORM` section for the named WIT and remove any custom controls that are defined. 
 
 #### Error example 
 
-`Type="OneViewMultiValueControl"` specifies a custom control. This must be removed or replaced to a supported control. 
+`Type="OneViewMultiValueControl"` specifies a custom control. Remove or replace this custom control to a supported control. 
    
 ```xml
     <Group Label="Engineering Alignment">
@@ -2071,7 +2076,7 @@ Correct the named tasked in your TestManagement.xml file.
 
 #### Error example 
 
-The `TestResolutionStates` element has been misspelled.   
+The `TestResolutionStates` element is misspelled.   
 ```xml
     <taskXml>
       <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
