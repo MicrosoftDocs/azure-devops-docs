@@ -29,14 +29,12 @@ You can configure filters on your subscriptions to control which events trigger 
 
 For a complete set of supported consumer services and actions, see the [Consumer reference](./consumers.md).
 
-
 ## Prerequisites
 
-To create a subscription, the following data is required:
-
-- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.
-- Event ID and settings. See the [Event reference](./events.md).
-- Consumer and action IDs and settings. See the [Consumer reference](./consumers.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
+|**Data**|- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.<br>- Event ID and settings. See the [Event reference](./events.md).<br>- Consumer and action IDs and settings. See the [Consumer reference](./consumers.md).|
 
 ## Create the request
 

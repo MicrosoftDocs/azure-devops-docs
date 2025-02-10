@@ -27,7 +27,7 @@ landingContent:
           - text: About settings
             url: ./settings/about-settings.md 
           - text: Get started as an administrator
-            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json 
+            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json
       - linkListType: quickstart
         links:
           - text: Set user preferences

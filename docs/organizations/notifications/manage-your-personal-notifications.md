@@ -32,7 +32,7 @@ For information about team and project-level notifications, see [Team and projec
 
 ## Prerequisites
 
-Every user can manage their personal notifications.
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## View your personal notifications
 

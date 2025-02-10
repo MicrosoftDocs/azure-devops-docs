@@ -9,6 +9,11 @@
             "source_path_from_root": "/docs/artifacts/how-to/project-scoped-feeds-pipeline-project-permissions.md",
             "redirect_url": "/azure/devops/artifacts/feeds/project-scoped-feeds",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/artifacts/collaborate-with-packages.md",
+            "redirect_url": "/azure/devops/artifacts/concepts/best-practices",
+            "redirect_document_id": false
         }
     ]
 }

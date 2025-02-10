@@ -21,6 +21,10 @@ View the status of planned tests or monitor testing progress by defining test ca
 To track the progress of more than one test plan or test suite, open the [Progress Report](progress-report.md).
 ::: moniker-end
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)]
+
 <a id="charts"></a> 
 
 ## Track testing progress

@@ -23,6 +23,14 @@ With OAuth, you grant a service the authorization to access your Azure DevOps re
 - The service that you authorize never has access to your Azure DevOps credentials.
 - Revoke any authorizations that you've granted to other services.
 
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | At least **Basic** access. |
+|**Permissions**| Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+
 ## Authorize a service
 
 A typical authorization flow might go like this:

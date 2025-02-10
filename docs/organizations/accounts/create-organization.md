@@ -22,7 +22,9 @@ Use an organization to connect groups of related projects and help scale up your
 
 ## Prerequisites {#how-sign-up}
 
-* **Authentication:** Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Centra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
+## Prerequisites
+
+* **Authentication:** Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
 * **Planning:** Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
 ## Create organization steps

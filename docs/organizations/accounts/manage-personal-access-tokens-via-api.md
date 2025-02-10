@@ -27,9 +27,11 @@ In this article, we show you how to configure an application that [authenticates
 
 ## Prerequisites
 
-Unlike other Azure DevOps Services APIs, users must provide an [Microsoft Entra access token](../../integrate/get-started/authentication/entra-oauth.md) to use this API. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is available only to [safer Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md). 
+| Category | Requirements |
+|--------------|-------------|
+|Unlike other Azure DevOps Services APIs, users must provide a [Microsoft Entra access token](../../integrate/get-started/authentication/entra-oauth.md) to use this API. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is available only to [safer Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md). |
 
-To acquire and refresh Microsoft Entra access tokens, you must do the following:
+To acquire and refresh Microsoft Entra access tokens:
 
 * [Have a Microsoft Entra tenant with an active Azure subscription](/azure/active-directory/develop/quickstart-create-new-tenant)
 * [Register an application in their Microsoft Entra tenant](/azure/active-directory/develop/quickstart-register-app)
