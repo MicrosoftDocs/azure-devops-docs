@@ -349,7 +349,7 @@ Managed DevOps Pools provides you with several options for virtual machine image
 You can configure your pool to use a single image or multiple images, and use aliases to configure your pipelines to use a specific image. For more information, see [Configure Managed DevOps Pools images](./configure-images.md).
 
 > [!IMPORTANT]
-> If you have multiple images in your pool, and don't use [demands in your pipelines to designate an image](./configure-images.md#use-multiple-images-per-pool-with-aliases), the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md&tabs=arm#choose-your-pools-image)), or by ordering the images in the images list in the Azure portal using drag and drop.
+> If you have multiple images in your pool, and don't use [demands in your pipelines to designate an image](./configure-images.md#use-multiple-images-per-pool-with-aliases), the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?tabs=arm#choose-your-pools-image)), or by ordering the images in the images list in the Azure portal using drag and drop.
 
 ## See also
 
