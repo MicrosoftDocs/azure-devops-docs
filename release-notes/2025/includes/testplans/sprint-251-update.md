@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/10/2025
+ms.date: 2/11/2025
 ms.topic: include
 ---
 
@@ -18,7 +18,7 @@ You can now easily access the Test Plans page directly from the Test Plans work 
 
 With this sprint, we’ve made updates to Azure Test Plans to resolve several bugs and improve usability. Here’s what’s been fixed:
 
-* Fixed an issue where Test Suites did not update correctly when switching between Test Plans. 
+* Fixed an issue where Test Suites didn't update correctly when switching between Test Plans. 
 
 * Fixed an issue in the Test & Feedback Extension where session reports failed to download and redirected users to a blank page.
 

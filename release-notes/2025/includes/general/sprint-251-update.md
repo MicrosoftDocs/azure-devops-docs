@@ -2,7 +2,7 @@
 author: ckanyika
 ms.author: ckanyika
 ms.service: azure-devops
-ms.date: 2/10/2025
+ms.date: 2/11/2025
 ms.topic: include
 ---
 
@@ -36,4 +36,4 @@ We’re thrilled to announce ongoing improvements to our networking infrastructu
 * 2620:1ec:51::/48
 * 2603:1061:10::/48
 
-For more details, visit our blog: [Update to Azure DevOps Allowed IP addresses - Azure DevOps Blog](https://devblogs.microsoft.com/devops/update-to-ado-allowed-ip-addresses/).
+For more details, visit our blog: [Update to Azure DevOps Allowed IP addresses](https://devblogs.microsoft.com/devops/update-to-ado-allowed-ip-addresses/).
