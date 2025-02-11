@@ -137,8 +137,6 @@ landingContent:
             url: ../pipelines/artifacts/build-artifacts.md
           - text: Use the .artifactignore file
             url: reference/artifactignore.md
-          - text: Artifact sources
-            url: ../pipelines/release/artifacts.md
           - text: NuGet
             url: ../pipelines/artifacts/nuget.md
           - text: npm
