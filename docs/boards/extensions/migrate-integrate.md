@@ -32,12 +32,26 @@ You can search for extensions in the [Visual Studio Marketplace](https://marketp
 - Split one project into many projects
 - Assist changing process templates
 - Edit work items in bulk
-- Migrate test suites and test plans 
+- Migrate test suites and test plans
+
+## Migrate data between projects without downtime  
+
+There are non-Microsoft tools that allow migration between Azure DevOps Server and Azure DevOps Services without downtime or disruption, even when the target ADO is not empty or templates differ. These tools generally support:
+
+- Version control information and history (original dates and users added to comments)
+- Work items (standard and custom) and history (retains the original dates and users)
+- Test plan, test suite, test cases and test results
+- Iteration, area path, group, team, user
+- Dashboard, query, widget, and pipeline
+- Azure DevOps Server versions 2010 and later
+- Azure DevOps Services                      
+
+You can search for such extensions (e.g., OM4ADO) in [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 ## Migrate process models between Azure DevOps organizations
 
 For constraints on process template definitions that you can import, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
-
+  
 ## Export and import work tracking data
 
 The main tool you can use to import work tracking data you exported from elsewhere is Microsoft Excel. Excel supports publishing a flat list of work items or a hierarchical tree of parent-child linked work items. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
