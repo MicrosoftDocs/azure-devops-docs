@@ -77,9 +77,7 @@ For more information, see [Manage cost and performance - Pre-provisioning with s
 
 #### Automatic standby mode for new pools
 
-Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standy mode, and switch back to automatic standby mode after a month, onceonce During the first month using a pool, you can switch to manual standby mode.
-
-
+Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standy mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had a observe your pool's usage.
 
 ### Consider using Stateful pools with a grace period to keep agents online
 
@@ -87,9 +85,13 @@ One option to improve agent performance without using standby agents is to use s
 
 For more information, see [Standby agents](configure-scaling.md#standby-agent-mode) and [Stateful pools](configure-scaling.md#stateful-pools).
 
-### Check pool buffer percentage if using multiple images
+### Check standby agent percentage if using standby agents with multiple images
+
+If you use standby agents with multiple images, check the history of usage per image and compare it with the [Standby agent percentage](./configure-scaling.md#manual) setting of your images to ensure your standby ratio matches your usage. For example, if you have one Windows image and one Ubuntu image, and your workload uses Windows 75% of the time, ensure your Windows image is configured with a standby agent percentage of 75.
 
 ### Check timeout error codes
+
+If your agent assignment times out, you can check the error code on the [Error codes](./monitor-pool.md#error-codes) section of the [Overview](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview) page.
 
 ## See also
 
