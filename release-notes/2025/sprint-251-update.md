@@ -5,7 +5,7 @@ ms.author: ckanyika
 ms.date: 2/11/2025
 description: Git authentication and improved pipeline scalability
 ---
-# Secure Git authentication and improved pipeline scalability
+# Secure Git authentication and improved Pipeline scalability
 
 We’re excited to announce new enhancements in Azure DevOps that improve security and simplify workflows. The Generate Git Credentials button has been removed from the Clone Repository dialogs in Repos and Wiki, aligning with our move to Microsoft Entra tokens for authentication—helping teams adopt a more secure and efficient Git workflow. 
 
