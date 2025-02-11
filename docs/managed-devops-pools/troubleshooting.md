@@ -91,7 +91,7 @@ If you use standby agents with multiple images, check the history of usage per i
 
 ### Check timeout error codes
 
-If your agent assignment times out, you can check the error code on the [Error codes](./monitor-pool.md#error-codes) section of the [Overview](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview) page.
+If your agent assignment times out, you can check the error code on the [Error codes](./monitor-pool.md#error-codes-chart) section of the [Overview](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview) page.
 
 ## See also
 
