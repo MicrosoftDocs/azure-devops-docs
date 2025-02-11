@@ -27,7 +27,9 @@ By accessing this information, you can efficiently manage and oversee the organi
 
 ## Prerequisites
 
-- **Organization connection:** Be a member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Organization connection** |Member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
 
 ## Get list of organizations
 

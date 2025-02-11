@@ -31,6 +31,8 @@ For more information, see the following articles:
 - [Create manual test cases](create-test-cases.md)
 - [Test settings](./test-different-configurations.md)
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 > [!NOTE] 

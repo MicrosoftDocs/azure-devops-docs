@@ -12,7 +12,7 @@ ms.date: 01/20/2025
 ---
 
 # Security best practices
-
+<!--MOVED TO SECURITY OVERVIEW
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you're handling information and data, especially in a cloud-based solution like Azure DevOps Services, security should be your top priority. While Microsoft ensures the security of the underlying cloud infrastructure, configuring security within Azure DevOps is your responsibility.
@@ -64,19 +64,19 @@ The following functions are effective ways to enhance the security of your netwo
 - **Implement web application firewalls (WAFs):** Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks.
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
-
+-->
 ### DevSecOps
 
 **Embrace DevSecOps:** Implement [Zero Trust](/security/zero-trust/develop/secure-devops-environments-zero-trust) principles to fortify your [DevOps platform](/security/zero-trust/develop/secure-devops-platform-environment-zero-trust), safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust), and integrate Zero Trust seamlessly into your [developer workflows](/security/zero-trust/develop/embed-zero-trust-dev-workflow).
 
 -----
-
+<!--
 ## Scope permissions
 
 The system handles permissions at various levels—individual, collection, project, and object—and assigns them to one or more built-in groups by default. To enhance security, do the following actions:
 
 - **Provide least privilege access:** Ideally, users and services should have the minimum necessary access to perform their business functions.
-
+-->
 > [!NOTE]
 > In the context of CI/CD, implementing [least privilege access](https://wikipedia.org/wiki/Principle_of_least_privilege) can be counterproductive due to the dynamic nature of architecture. Each time a new service gets introduced, permissions must be updated beforehand. Additionally, rollbacks might require extra permissions that need to be considered. This challenge is magnified in environments with multiple pipelines.
 > While least privilege permissions aim to minimize the impact of security breaches, it's crucial to balance security with productivity. You can achieve this balance by adopting more permissive access and mitigating the associated risks with compensating controls and security practices outlined on this page.
@@ -96,7 +96,7 @@ For more information about permissions, see the following articles:
 - **Limit access to projects and repos:** Reduce the risk of leaking sensitive information and deploying insecure code by [limiting access to projects and repositories](restrict-access.md). Use built-in or custom security groups manage permissions.
 - **Disable *“Allow public projects”*:** In your organization’s policy settings, disable the option to create public projects. Switch project visibility from public to private as needed. Users who haven’t signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
 - **Restrict project creation:** Prevent users from creating new projects to maintain control over your environment.
-
+<!--MOVED TO SECURITY OVERVIEW
 ### External guest access 
 
 - **Block external guest access:** Disable the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list) to prevent external guest access if there's no business need for it.
@@ -122,7 +122,7 @@ The following table shows recommendations for assigning permissions to security 
 |Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | **Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.**        |
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
-
+-->
 ### Just-in-time access for admin groups 
 
 If you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access, you can modify the configuration of your organization or project. To enhance security for these built-in administrator groups, consider implementing just-in-time access using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). This approach allows you to grant elevated permissions only when needed, reducing the risk associated with permanent access.
@@ -143,7 +143,7 @@ If you have [Project Collection Administrator](../../user-guide/manage-organizat
 
 > [!NOTE]
 > Users have elevated access in Azure DevOps for up to 1 hour after their PIM group access gets deactivated.
-
+<!---MOVED TO SECURITY OVERVIEW
 ## Scope service accounts
 
 - **Create single-purpose service accounts:** Each service should have its dedicated account to minimize risk. Avoid using regular user accounts as [service accounts](permissions.md#service-accounts).
@@ -181,7 +181,7 @@ Explore alternatives like [service principals and managed identities](../../inte
  
 - **Use service principals:** Represent security objects within a Microsoft Entra application. Define what an application can do in a given tenant. Set up during application registration in the Azure portal. Configure to access Azure resources, including Azure DevOps. Useful for apps needing specific access and control.
 - **Use managed identities:** Similar to an application’s service principal. Provide identities for Azure resources. Allow services supporting Microsoft Entra authentication to share credentials. Azure handles credential management and rotation automatically. Ideal for seamless sign-in details management.
-
+-->
 ### Use PATs sparingly
 
 - **Scope PATs to specific roles:** Assign PATs only the necessary permissions for specific tasks. Avoid granting global access to multiple organizations or repositories to minimize the risk of accidental misuse.
@@ -193,7 +193,7 @@ Explore alternatives like [service principals and managed identities](../../inte
 For more information, see [Manage PATs with policies - for administrators](../accounts/manage-pats-with-policies-for-administrators.md) and [Use PATs](../accounts/use-personal-access-tokens-to-authenticate.md). 
 
 -----
-
+<!---MOVED TO SECURITY OVERVIEW
 ## Secure Azure Artifacts 
 
 - Ensure that you understand the difference between feeds, project, and project collection administrators. For more information, see [Configure Azure Artifacts settings](../../artifacts/feeds/feed-permissions.md).
@@ -211,7 +211,7 @@ For more information, see [Manage PATs with policies - for administrators](../ac
 - [Use extends templates](../../pipelines/security/templates.md#use-extends-templates).
 - [Set pipeline permissions](../../pipelines/policies/permissions.md)
 - **Adopt and Secure Infrastructure as Code (IaC):** Use IaC tools like Azure Resource Manager (ARM) templates or Bicep to define and provision infrastructure directly from your pipeline. Leverage version control to track changes, implement linting and static analysis to identify vulnerabilities, and use Azure Policy to enforce compliance and security standards during pipeline execution. For more information, see [Secure Azure Pipelines overview](../../pipelines/security/overview.md).
-
+-->
 ### Policies
 
 - **Require external reviewers:** Ensure at least one reviewer outside the original requester for a thorough review process. The approver shares co-ownership of the changes and accountability for any potential effects.
@@ -273,7 +273,7 @@ For more information, see [Other security considerations](../../pipelines/securi
 - **Utilize Network Policies**: [Network Policies](/azure/virtual-network/kubernetes-network-policies) can be used to restrict communication between containers, ensuring that only authorized containers can access sensitive resources within your network. In addition, [Azure Policy for AKS](/azure/governance/policy/concepts/policy-for-kubernetes) can be leveraged to enforce container security best practices, such as ensuring only trusted container images are deployed.
 - **Set container-specific resource limits**: For example, set limits on CPU and memory to prevent containers from consuming excessive resources, which could lead to denial of service or security vulnerabilities.
 
-
+<!---MOVED TO SECURITY OVERVIEW
 ## Secure Azure Repos
 
 - [Improve code quality with branch policies](../../repos/git/branch-policies.md)
@@ -283,7 +283,7 @@ For more information, see [Other security considerations](../../pipelines/securi
 
 - [Set permissions and access for testing](set-permissions-access-test.md)
 - [Supported scenarios and access requirements](../../test/overview.md#supported-scenarios-and-access-requirements)
-
+-->
 ## Secure GitHub Integrations
 
 - **Use OAuth flow instead of PATs**: Disable PAT-based authentication for GitHub service connections and opt for OAuth flow for better security and integration.

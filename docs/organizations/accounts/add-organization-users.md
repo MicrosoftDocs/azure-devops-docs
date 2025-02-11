@@ -32,8 +32,10 @@ The following types of users can join your Azure DevOps Services organization fo
 
 ## Prerequisites
 
-* [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-* **Organization:** Have an organization. If you don't have an organization, [create one](create-organization.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Organization** | An [organization](create-organization.md).|
 
 For an overview of the methods supported for adding users to an organization, see [Add and manage user access](organization-management.md#add-users).
 
@@ -244,7 +246,7 @@ ID                                    Display Name         Email                
 
 * * *
 
-## Restrict users' view to organization projects
+## Restrict user visibility to organization and project information
 
 To restrict certain users' access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they aren't explicitly added to.
 
@@ -269,8 +271,6 @@ To add users to the new **Project-Scoped Users** group, do the following steps:
 5. Select **Security** > **Permissions** > **Project-Scoped Users**. 
 6. Choose the **Members** tab. 
 7. Add all users and groups that you want to scope to the project you added them to.
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
 

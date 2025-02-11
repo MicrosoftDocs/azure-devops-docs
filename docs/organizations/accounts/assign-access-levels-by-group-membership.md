@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 02/07/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -25,7 +25,10 @@ When a user leaves a Microsoft Entra group, Azure DevOps adjusts their access le
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Microsoft Entra** |Member of the Microsoft Entra ID that backs your organization. For more information, see [Access via Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities)  |
 
 ## Add group rule
 

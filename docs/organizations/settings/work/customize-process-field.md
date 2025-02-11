@@ -24,6 +24,7 @@ For a list of all fields defined for your organization&mdash;which includes all 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 

@@ -16,7 +16,7 @@ ms.date: 05/21/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Many permissions get set at the project level. You can grant these permissions by adding a user or group to the **Project Administrators** group. Or, you can grant select project-level permissions to a custom security group or to a user. 
+Many permissions get set at the project level. You can grant these permissions by adding a user or group to the **Project Administrators** group. Or, you can grant specific project-level permissions to a custom security group or to a user. 
 
 Consider adding users to the **Project Administrators** group when they're tasked with adding or managing teams, area and iteration paths, repositories, service hooks, and service end points.
 
@@ -25,7 +25,7 @@ Consider adding users to the **Project Administrators** group when they're taske
 [!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)]
 
 > [!NOTE]
-> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrators** group. It isn't controlled by a permissions surfaced within the user interface. 
+> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrators** group. It isn't controlled by a permission surfaced within the user interface. 
 
 ### Create tag definition permission
 
@@ -33,8 +33,10 @@ By default, members of the **Contributors** group are assigned the **Create tag 
 
 ## Prerequisites
 
-- **Permissions**: To manage permissions or groups at the project level, be a member of the [**Project Administrators** security group](look-up-project-administrators.md). If you created the project, you're automatically added as a member of this group.
-- **Directory services**: To add security groups in Microsoft Entra ID or Active Directory, ensure the security groups are already defined. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions** | Member of the [**Project Administrators** security group](look-up-project-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| **Directory services** | [Security groups defined in Microsoft Entra ID or Active Directory](add-ad-aad-built-in-security-groups.md) before adding them to Azure DevOps. |
 
 > [!NOTE]   
 > Users granted **Stakeholder** access can't access select features even if granted permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).

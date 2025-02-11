@@ -20,11 +20,9 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 ## Prerequisites
 
-**Permissions:** To manage this policy, be an Azure DevOps Administrator in Microsoft Entra ID. Being a Project Collection Administrator isn't required.
-
-If you don't see the policy section in Azure DevOps, it means you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then go to **Microsoft Entra ID** > **Roles and administrators**. If you aren't an Azure DevOps Administrator, contact your administrator for assistance.
-
-![Screenshot shows Azure Portal Microsoft Entra roles and administrators.](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|[Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary. The Project Collection Administrator role isn't required. |
 
 ## Turn on the policy
 
@@ -41,11 +39,13 @@ If you don't see the policy section in Azure DevOps, it means you aren't an admi
 ### Create allowlist
 
 > [!WARNING]
-> We recommend using groups with your tenant policy allow list. If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups with your tenant policy allowlist. If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 When the policy is enabled, all users are restricted from creating new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
 
 Select **Add Microsoft Entra user or group**.
+
+For more information, see [Add organization users and manage access](add-organization-users.md).
 
 ### Create error message
 
@@ -64,7 +64,7 @@ The error message is customized.
 ![Customized error message](media/azure-ad-tenant-policy/error-message-example-ui.png)
 
 > [!NOTE]
-> Administrators, who aren't on the allow list, can't connect their organization to the Microsoft Entra tenant where the policy is turned on.
+> Administrators, who aren't on the allowlist, can't connect their organization to the Microsoft Entra tenant where the policy is turned on.
 >
 > ![Connection failed error](media/azure-ad-tenant-policy/connection-failed-notification.png)
 

@@ -18,7 +18,9 @@ ms.date: 09/16/2024
 The **Test & Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone on your team can use the Test & Feedback extension to submit bugs or provide feedback and contribute to the quality of your product.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)] 
 
 <a name="browser-support"></a>
 

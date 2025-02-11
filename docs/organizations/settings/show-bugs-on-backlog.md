@@ -25,6 +25,8 @@ You can define your team's tracking setting for the [Agile](../../boards/work-it
 
 [!INCLUDE [requirements-term](../../boards/includes/note-requirements-terms.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](includes/prerequisites-team-settings.md)]
 
 ## Choose from options for bug tracking

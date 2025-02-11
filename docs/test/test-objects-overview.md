@@ -18,6 +18,9 @@ ms.date: 09/15/2021
 
 Read this article to gain an understanding of the objects and terms used in manual and exploratory testing. 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)]
 
 <a name="testplans"></a>
 

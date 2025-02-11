@@ -481,11 +481,16 @@
       displayName: npm, package
       href: artifacts/npm.md
     - name: Maven
-      displayName: Maven, package
-      href: artifacts/publish-maven-artifacts.md
+      items:
+      - name: Publish Maven packages to internal and external feeds
+        href: artifacts/publish-maven-artifacts.md
+        displayName: Maven, publish
+      - name: Restore packages
+        href: packages/maven-restore.md
+        displayName: Maven, restore
     - name: Gradle
       displayName: Gradle, package
-      href: artifacts/pull-package-gradle.md
+      href: artifacts/build-publish-artifacts-gradle.md
     - name: Python
       displayName: python, package
       href: artifacts/pypi.md

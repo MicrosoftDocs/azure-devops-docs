@@ -746,7 +746,7 @@ For organizations that manage their users and groups using Microsoft Entra ID or
 
 ::: moniker range="azure-devops"
 
-To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. For more information, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. For more information, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more). 
  
 
 ::: moniker-end

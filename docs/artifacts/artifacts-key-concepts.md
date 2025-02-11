@@ -43,4 +43,3 @@ Packages can be deleted manually or by setting up retention policies for your fe
 
 - [Package graphs](./concepts/package-graph.md)
 - [Use artifactignore](./reference/artifactignore.md)
-- [Packages componentization](./collaborate-with-packages.md)

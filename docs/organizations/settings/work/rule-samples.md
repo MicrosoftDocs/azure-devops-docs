@@ -13,14 +13,13 @@ ms.date: 06/30/2021
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
 ---
 
-# Sample custom rule scenarios  
+# Sample custom rule scenarios
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides examples of custom rule definitions. All custom rules are defined for a work item type. Examples are provided for both the Inherited and On-premises XML process models. 
 
 Prior to adding custom rules, read [Rules and rule evaluation](rule-reference.md) and [Add a rule to a work item type (Inheritance process)](custom-rules.md). 
- 
 
 <a name="dependent-required"></a>   
 

@@ -28,6 +28,7 @@ For example, the following form shows that two custom pages have been added, **I
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 

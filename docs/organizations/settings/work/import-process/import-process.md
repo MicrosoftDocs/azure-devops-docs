@@ -20,7 +20,7 @@ ms.date: 03/06/2020
 >
 > If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
-> To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
+> For more information, see [Customize work tracking](../../../../reference/customize-work.md). 
 
 In Azure DevOps Services, you manage customization of work tracking objects through a process.
 Hosted XML processes are imported and exported through a web based administration experience. 
@@ -39,6 +39,10 @@ Import process supports the following scenarios:
 *   [Import an existing process from an on-premises Azure DevOps Server](#import-from-TFS)  
 *   [Import a new process created from an existing exported process](#import-process)  
 *   [Import an update to an existing process, and have all projects using that process be updated](#update-process)  
+
+## Prerequisites
+
+[!INCLUDE [process-prerequisites](../../includes/process-prerequisites.md)]
 
 <a id="import-from-TFS">  </a>
 

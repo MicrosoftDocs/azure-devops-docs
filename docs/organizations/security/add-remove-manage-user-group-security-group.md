@@ -45,13 +45,13 @@ Azure DevOps uses security groups for the following purposes:
  
 ## Prerequisites
 
-**Permissions**: 
-* To manage permissions or groups at the project level, be a member of the **Project Administrators** security group. If you created the project, you're automatically added as a member of this group. 
-* To manage permissions or groups at the collection or instance level, be a member of the **Project Collection Administrators** security group. If you created the organization or collection, you're automatically added as a member of this group. 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - To manage permissions or groups at the project level: Member of the **Project Administrators** security group.<br>- To manage permissions or groups at the collection level: Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
 
 ::: moniker range="azure-devops"
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including Permissions. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can't access most **Organization settings** pages, including permissions. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 ::: moniker-end
 
 <a id="create-custom-group"></a> 
