@@ -42,12 +42,12 @@ The AzureVmssDeployment, JavaToolInstaller, JenkinsDownloadArtifacts tasks can b
 
 New task versions have been created that now use Azure RBAC instead of storage account key/sas. The new tasks require the [Storage Blob Data Contributor](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor) role to be assigned to the identity of the service connection configured. 
 
-You will need to assign the appropriate RBAC role for the task to be able to access the Azure Storage Account. See [Assign an Azure role for access to blob data](https://learn.microsoft.com/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
+You will need to assign the appropriate RBAC role for the task to be able to access the Azure Storage Account. See [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
 
 The AzureVmssDeployment@1 task needs additional RBAC roles configured to access the storage account configured in `customScriptsStorageAccount`:
 
 ![AzureVmssDeployment@1 RBAC](AzureVmssDeployment-rbac.png "AzureVmssDeployment@1 RBAC")
 
-1. Service Connection: [Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Virtual Machine Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/compute#virtual-machine-contributor) permission on the Virtual Machine Scale Set
-2. Service Connection: [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor) on the storage account that holds the custom script
-3. Virtual Machine Scale Set System-assigned Managed Identity: [Storage Blob Data Reader](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-reader) on the storage account that holds the custom script
+1. Service Connection: [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles/compute#virtual-machine-contributor) permission on the Virtual Machine Scale Set
+2. Service Connection: [Storage Blob Data Contributor](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor) on the storage account that holds the custom script
+3. Virtual Machine Scale Set System-assigned Managed Identity: [Storage Blob Data Reader](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-reader) on the storage account that holds the custom script
