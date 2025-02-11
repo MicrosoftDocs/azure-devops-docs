@@ -50,8 +50,8 @@ When using Managed DevOps Pools, you might encounter situations where there is a
 * [Check Maximum agents configuration](#check-maximum-agents-configuration)
 * [Consider pre-provisioning agents using a standby agent schedule](#consider-pre-provisioning-agents-using-a-standby-agent-schedule)
   * [Automatic standby mode for new pools](#automatic-standby-mode-for-new-pools)
+  * [Check standby agent percentage if using standby agents with multiple images](#check-standby-agent-percentage-if-using-standby-agents-with-multiple-images)
 * [Consider using Stateful pools with a grace period to keep agents online](#consider-using-stateful-pools-with-a-grace-period-to-keep-agents-online)
-* [Check pool buffer percentage if using multiple images](#check-pool-buffer-percentage-if-using-multiple-images)
 * [Check timeout error codes](#check-timeout-error-codes)
 
 ### Check for insufficient parallel jobs
@@ -77,17 +77,17 @@ For more information, see [Manage cost and performance - Pre-provisioning with s
 
 #### Automatic standby mode for new pools
 
-Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standy mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had a observe your pool's usage.
+Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standby mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had to observe your pool's usage.
+
+#### Check standby agent percentage if using standby agents with multiple images
+
+If you use standby agents with multiple images, check the history of usage per image and compare it with the [Standby agent percentage](./configure-scaling.md#manual) setting of your images to ensure your standby ratio matches your usage. For example, if you have one Windows image and one Ubuntu image, and your workload uses Windows 75% of the time, ensure your Windows image is configured with a standby agent percentage of 75.
 
 ### Consider using Stateful pools with a grace period to keep agents online
 
 One option to improve agent performance without using standby agents is to use stateful agents with a short grace period. When stateful agents with a grace period complete a job, they stay online for the duration specified by the grace period and wait for jobs. If your workload comes in bursts, you can configure a grace period that keeps agents online when jobs are steady, and starts them from scratch during slower periods.
 
 For more information, see [Standby agents](configure-scaling.md#standby-agent-mode) and [Stateful pools](configure-scaling.md#stateful-pools).
-
-### Check standby agent percentage if using standby agents with multiple images
-
-If you use standby agents with multiple images, check the history of usage per image and compare it with the [Standby agent percentage](./configure-scaling.md#manual) setting of your images to ensure your standby ratio matches your usage. For example, if you have one Windows image and one Ubuntu image, and your workload uses Windows 75% of the time, ensure your Windows image is configured with a standby agent percentage of 75.
 
 ### Check timeout error codes
 
