@@ -231,7 +231,7 @@ sections:
       - question: |
           How can I protect access to built-in administrator groups?
         answer: |
-          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group. For more information, see [Just-in-time access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups).
+          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group.
       
       - question: |
           Why doesn't the Security tab show all members when I select a Microsoft Entra group?

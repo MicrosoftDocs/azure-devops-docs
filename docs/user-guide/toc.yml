@@ -41,8 +41,8 @@
     href: ../organizations/security/request-changes-permissions.md?toc=/azure/devops/get-started/toc.json
   - name: Grant or restrict permissions to select tasks
     href: ../organizations/security/restrict-access.md?toc=/azure/devops/get-started/toc.json
-  - name: Security best practices
-    href: ../organizations/security/security-best-practices.md?toc=/azure/devops/get-started/toc.json
+  - name: Security overview
+    href: ../organizations/security/security-overview.md?toc=/azure/devops/get-started/toc.json
   expanded: true
 - name: Key concepts
   items:

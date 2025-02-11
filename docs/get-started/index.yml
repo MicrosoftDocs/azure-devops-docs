@@ -75,14 +75,14 @@ landingContent:
             url: ../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing
       - linkListType: concept
         links:
+          - text: Security overview
+            url: ../organizations/security/security-overview.md?toc=/azure/devops/get-started/toc.json
           - text: Default permissions and access
             url: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json
           - text: Permission lookup guide
             url: ../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/get-started/toc.json
           - text: About settings
             url: ../organizations/settings/about-settings.md?toc=/azure/devops/get-started/toc.json
-          - text: Security best practices
-            url: ../organizations/security/security-best-practices.md?toc=/azure/devops/get-started/toc.json
   - title: Plan and track work
     linkLists:
       - linkListType: quickstart
