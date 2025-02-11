@@ -77,7 +77,7 @@ For more information, see [Manage cost and performance - Pre-provisioning with s
 
 #### Automatic standby mode for new pools
 
-Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standby mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had to observe your pool's usage.
+Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standby mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had time to observe your pool's usage.
 
 #### Check standby agent percentage if using standby agents with multiple images
 
