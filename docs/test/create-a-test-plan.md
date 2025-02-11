@@ -37,6 +37,8 @@ In the next version of the product, you can reuse the existing test cases. Howev
 > [!TIP]
 > For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 <a name="testplan"></a>
