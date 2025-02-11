@@ -94,7 +94,7 @@ landingContent:
           - text: Python
             url: quickstarts/install-python-packages.md
           - text: Universal Packages
-            url: qquickstarts/download-universal-packages.md
+            url: quickstarts/download-universal-packages.md
           - text: Cargo
             url: get-started-cargo.md
   - title: Upstream sources
@@ -139,6 +139,20 @@ landingContent:
             url: reference/artifactignore.md
           - text: Artifact sources
             url: ../pipelines/release/artifacts.md
+          - text: NuGet
+            url: ../pipelines/artifacts/nuget.md
+          - text: npm
+            url: ../pipelines/artifacts/npm.md
+          - text: Maven
+            url: ../pipelines/artifacts/publish-maven-artifacts.md
+          - text: Gradle
+            url: ../pipelines/artifacts/build-publish-artifacts-gradle.md
+          - text: Python
+            url: ../pipelines/artifacts/pypi.md
+          - text: Cargo
+            url: ../pipelines/artifacts/cargo-pipelines.md
+          - text: Universal Packages
+            url: ../pipelines/artifacts/universal-packages.md
   - title: Symbols
     linkLists:
       - linkListType: concept
