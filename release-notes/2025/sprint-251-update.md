@@ -1,15 +1,15 @@
 ---
-title: TBA
+title: Git authentication and improved pipeline scalability
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/11/2025
-description: TBA
+description: Git authentication and improved pipeline scalability
 ---
-# TBA
+# Secure Git authentication and improved pipeline scalability
 
 We’re excited to announce new enhancements in Azure DevOps that improve security and simplify workflows. The Generate Git Credentials button has been removed from the Clone Repository dialogs in Repos and Wiki, aligning with our move to Microsoft Entra tokens for authentication—helping teams adopt a more secure and efficient Git workflow. 
 
-Additionally, Managed DevOps Pools is now generally available, providing better scalability, reliability, and streamlined management for Azure DevOps Virtual Machine Scale Set agent pools. These updates reinforce our commitment to building a secure and seamless experience for our developer community.
+In addition, we're excited to announce that in Azure Pipelines, managed DevOps pools is now generally available, providing better scalability, reliability, and streamlined management for Azure DevOps Virtual Machine Scale Set agent pools. 
 
 Check out the release notes for details.
 

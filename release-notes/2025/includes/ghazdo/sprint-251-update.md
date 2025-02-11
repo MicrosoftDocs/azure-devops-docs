@@ -25,14 +25,14 @@ Both the repository-level alerts UX and the [Analysis - List API](https://learn.
 
 With this release, we've improved the pull request annotation experience in GitHub Advanced Security through:
  
-* **Increased dependency scanning annotations:** Advanced Security displays pull request annotations even when Advanced Security can't determine physical file location.
+* **Increased dependency scanning annotations:** GitHub Advanced Security displays pull request annotations even when Advanced Security can't determine physical file location.
 
 * **Auto-closure:** pull request comments will be automatically resolved if the associated alert is dismissed. 
 We've also introduced performance improvements and batch handling for pull request events for a smoother experience.
 
 ### Improvements for Get Alerts API 
 
-With this update we introduce new improvements for the Advanced Security Get alerts API:
+With this update we introduce new improvements for the GitHub Advanced Security Get alerts API:
 
 * Minimal API expand option: fetch a minimal version of the Alerts API using the parameter `expand=minimal` in your payload. E.g.: `https://advsec.dev.azure.com/{organization}/{project}/_apis/Alert/repositories/{repository}/Alerts?expand=minimal`. 
 
