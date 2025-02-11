@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ---
 
 # About migrating and integrating work tracking data 
@@ -34,19 +34,17 @@ You can search for extensions in the [Visual Studio Marketplace](https://marketp
 - Edit work items in bulk
 - Migrate test suites and test plans
 
-## Migrate data between projects without downtime  
+### Migrate data between projects without downtime  
 
-There are non-Microsoft tools that allow migration between Azure DevOps Server and Azure DevOps Services without downtime or disruption, even when the target ADO is not empty or templates differ. These tools generally support:
+There are non-Microsoft tools available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) that enable seamless migration without downtime or disruption, even when the target environment isn't empty or when templates differ. These tools generally support:
 
-- Version control information and history (original dates and users added to comments)
-- Work items (standard and custom) and history (retains the original dates and users)
-- Test plan, test suite, test cases and test results
-- Iteration, area path, group, team, user
-- Dashboard, query, widget, and pipeline
-- Azure DevOps Server versions 2010 and later
-- Azure DevOps Services                      
-
-You can search for such extensions (e.g., OM4ADO) in [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- Version control information and history, including original dates and users added to comments.
+- Work items, both standard and custom, along with their history, retaining the original dates and users.
+- Test plans, test suites, test cases, and test results.
+- Iteration, area path, group, team, and user data.
+- Dashboards, queries, widgets, and pipelines.
+- Compatibility with Azure DevOps Server versions 2010 and later.
+- Support for Azure DevOps Services.
 
 ## Migrate process models between Azure DevOps organizations
 
