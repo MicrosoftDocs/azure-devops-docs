@@ -27,10 +27,11 @@ If you're just adding an Analytics widget to a dashboard or viewing an Analytics
 
 ## Prerequisites 
 
-- To change permissions at the project level, you need to be a member of the Project Administrators or Project Collection Administrators groups. 
+|Category  | Requirements |
+|-------------|-------------|
+|**Permissions** |To change permissions at the project level: Member of the **Project Administrators** or **Project Collection Administrators** groups.|
   
 For more information about working with permissions, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
-
 
 ## Set permissions 
 

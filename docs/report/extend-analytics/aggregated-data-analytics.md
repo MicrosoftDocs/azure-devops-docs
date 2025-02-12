@@ -32,6 +32,9 @@ To learn how to generate simple counts, see [Return a count of items (no other d
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## What is the Aggregation Extension for OData?
 

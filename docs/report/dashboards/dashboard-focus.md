@@ -53,6 +53,10 @@ The following table lists several types of dashboards you might want to create.
 
 ::: moniker-end 
 
+## Prerequisites
+
+[!INCLUDE [analytics-prerequisites](../includes/analytics-prerequisites.md)]
+
 ::: moniker range=">= azure-devops-2020"
 
 ## Choose a dashboard type and create it

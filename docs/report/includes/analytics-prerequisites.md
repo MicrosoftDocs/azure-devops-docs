@@ -5,25 +5,24 @@ author: chcomley
 ms.topic: include
 ms.date: 01/13/2025
 ---
-
-<a id="prerequisites">  </a>
-
-## Prerequisites  
+ 
 
 ::: moniker range="azure-devops"
 
-- [**Access:**](../../organizations/security/access-levels.md):[Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Anyone with access to the project, except those granted **Stakeholder** access, can view Analytics views.
-- **Service:** **Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.
-- **Permissions:** **View Analytics** permission set to **Allow**. For more information, see [Grant permissions to access the Analytics service](../powerbi/analytics-security.md).
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | Anyone with access to the project, including Stakeholders, can view Analytics views. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Services**| **Azure Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.|
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- [**Access:**](../../organizations/security/access-levels.md): [Project member](../../organizations/security/add-users-team-project.md) with at least **Basic** access. Anyone with access to the project, except those granted **Stakeholder** access, can view Analytics views.
-- **Permission:** **View Analytics** permission set to **Allow**. For more information, see [Grant permissions to access the Analytics service](../powerbi/analytics-security.md).
-- **Service:** 
-  - [Analytics service](../dashboards/analytics-extension.md) enabled. Be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to enable it. 
-  - **Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | Anyone with access to the project, except those granted **Stakeholder** access, can view Analytics views. For Stakeholders: **View Analytics** permission set to **Allow**.<br>- For more information, see [Grant permissions to access the Analytics service](../powerbi/analytics-security.md).<br>- For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Services**| - **Azure Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.<br>- [Analytics service](../dashboards/analytics-extension.md) enabled. Be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to enable it.|
 
 ::: moniker-end

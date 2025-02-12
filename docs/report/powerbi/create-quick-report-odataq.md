@@ -18,30 +18,27 @@ With Power BI Desktop, you can easily start creating reports for your project in
 
 If you don't have Power BI Desktop, [download](/power-bi/desktop-what-is-desktop) and install it for free.
 
-<a id="prerequisites">  </a>
-
 ## Prerequisites  
-
-To create a Power BI report, you must meet the following criteria:  
 
 ::: moniker range="azure-devops"
 
-- Be a project member. If you aren't, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions for Analytics access](./analytics-security.md).
-- Enable **Boards**. To re-enable Boards, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Have *[Power BI Desktop](/power-bi/desktop-what-is-desktop)* *October 2018 Update* or later version.
-- Track work items for some period of time on which to generate a trend report. 
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](./analytics-security.md) |
+|**Tools** | - [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
+|**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
-- Be a project member. If you aren't, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- [Enable or install Analytics](../dashboards/analytics-extension.md). Be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
-- Enable **Boards**. To re-enable Boards, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions for Analytics access](./analytics-security.md).
-- Have *[Power BI Desktop](/power-bi/desktop-what-is-desktop)* *October 2018 Update* or later version.
-- Track work items for some period of time on which to generate a trend report. 
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](./analytics-security.md) |
+|**Tools** | - [Analytics extension](../dashboards/analytics-extension.md). [**Project Collection Administrators**](../../organizations/security/change-organization-collection-level-permissions.md) can add and enable the service.<br>- [Power BI Desktop](https://powerbi.microsoft.com/desktop).<br>- [Azure Boards turned on](../../organizations/settings/set-services.md)  |
+|**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
 ::: moniker-end
 

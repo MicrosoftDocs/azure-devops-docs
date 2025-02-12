@@ -27,13 +27,13 @@ In this article, you learn how to:
 
 For an overview of Analytics views, see [About Analytics views](what-are-analytics-views.md).
 
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+## Prerequisites
 
-### Power BI prerequisites  
-
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-- For more information about using Power BI, see [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started).
-
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | By default, project members have permission to query Analytics and create views. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Tools** | [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 

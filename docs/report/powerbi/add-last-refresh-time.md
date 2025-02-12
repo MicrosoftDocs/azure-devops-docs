@@ -24,6 +24,8 @@ The steps to add a last refresh date vary based on the source of your Power BI r
 > [!NOTE]  
 > Several Analytics entity types, such as `WorkItemRevision`, `WorkItem`, `WorkItemLink`, `TestRun`, and others, include the `AnalyticsUpdatedDate` property. This property indicates the most recent time that the individual entity references were updated.
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Add the last refresh date based on an Analytics view
