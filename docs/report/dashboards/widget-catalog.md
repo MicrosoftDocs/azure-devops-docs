@@ -111,7 +111,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
 | **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
  
 ::: moniker-end
@@ -120,7 +120,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Stakeholder** access. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md)<br>- At least **Stakeholder** access. |
 | **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
 
 ::: moniker-end

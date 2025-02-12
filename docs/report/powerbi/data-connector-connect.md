@@ -26,7 +26,7 @@ In this article, learn how to establish a seamless connection between Power BI a
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
 | **Permissions** | [Analytics permissions](analytics-security.md). If you're a member of the **Contributors** group for the project, you have permission. |
 |**Tools** | - [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://aka.ms/pbidesktopstore)    |
 |**Tasks**| - Familiarity with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).<br>- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. |
@@ -37,7 +37,7 @@ In this article, learn how to establish a seamless connection between Power BI a
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
 | **Permissions** | [Analytics permissions](analytics-security.md). If you're a member of the **Contributors** group for the project, you have permission. |
 |**Tools** | - [Analytics installed and enabled](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true). Account owners or a members of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) can add extensions or enable the service.<br>- [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://aka.ms/pbidesktopstore)    |
 |**Tasks**| - Familiarity with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).<br>- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. |
