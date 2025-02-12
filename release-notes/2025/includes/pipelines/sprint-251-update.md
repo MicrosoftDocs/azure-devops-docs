@@ -1,14 +1,14 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/11/2025
+ms.date: 2/12/2025
 ms.topic: include
 ---
 
 
 ### Azure Classic Service Connections are being retired
 
-Cloud Services is the classic deployment model for Azure, also called Azure Service Manager (ASM). It has been replaced by Azure Resource Manager (ARM) since 2014 and is now [retired](https://azure.microsoft.com/updates?id=cloud-services-retirement-announcement). Therefore, we're removing the ability to create new Azure Classic service connections. Existing Azure Classic service connections won't be removed.
+Cloud Services, also known as Azure Service Manager (ASM), was the original deployment model for Azure. Since its replacement by Azure Resource Manager (ARM) in 2014, it has now been [retired](https://azure.microsoft.com/updates?id=cloud-services-retirement-announcement). Consequently, we are discontinuing the ability to create new Azure Classic service connections. However, existing Azure Classic service connections will remain unaffected.
 
 ### Managed DevOps Pools is generally available
 
