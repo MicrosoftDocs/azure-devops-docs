@@ -38,6 +38,7 @@ In this article you'll learn how to define queries that return the following dat
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 

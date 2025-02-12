@@ -34,17 +34,21 @@ Analytics supports access to Analytics widgets for all projects defined in the p
 ## Prerequisites
 
 **For Azure DevOps Server 2019.1 and greater:**
-- Have Azure DevOps Server [installed and configured](/azure/devops/server/install/get-started).
-- Have a [project collection](/azure/devops/server/admin/manage-project-collections). 
-- **Permissions:** To enable, pause, disable, or resume Analytics, be a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) with [Edit collection-level information permissions](../../organizations/security/permissions.md#collection).  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Project collection**   |[Project collection](/azure/devops/server/admin/manage-project-collections).    |
+| **Permissions** | To enable, pause, disable, or resume Analytics: Member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) with [Edit collection-level information permissions](../../organizations/security/permissions.md#collection). For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+| **Tools** |Azure DevOps Server [installed and configured](/azure/devops/server/install/get-started).  |
 
 ::: moniker range="azure-devops-2019"
-**For Azure DevOps Server 2019:**
-- Have Azure DevOps Server [installed and configured](/azure/devops/server/install/get-started).
-- Have a [project collection](/azure/devops/server/admin/manage-project-collections). 
-- **Permissions:** 
-  - Be a member of the [Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md) group with [Edit collection-level information](../../organizations/security/permissions.md#collection) permission. If you don't have permissions, you can [request extensions](../../marketplace/request-extensions.md) instead.
-  - To upload an extension, be a member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator) group with [Edit instance-level information](../../organizations/security/permissions.md#server) permission.
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Project collection**   |[Project collection](/azure/devops/server/admin/manage-project-collections).    |
+| **Permissions** | - To enable, pause, disable, or resume Analytics: Member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) with [Edit collection-level information permissions](../../organizations/security/permissions.md#collection).<br>- To upload an extension: Member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator) group with [Edit instance-level information](../../organizations/security/permissions.md#server) permission.<br>For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+| **Tools** |Azure DevOps Server [installed and configured](/azure/devops/server/install/get-started).  |
+
 ::: moniker-end
 
 <a name="enable-analytics"></a>

@@ -22,34 +22,33 @@ To view a chart on a dashboard, you can start from **Queries>Charts** page and c
 The only task you can accomplish from the **Chart for Work Items** widget that you can't from the **Queries>Charts** page is grouping work items by Tags. This feature is supported for Azure DevOps server 2022 and later versions. 
 ::: moniker-end
   
- 
 ## Prerequisites 
 
-Prerequisites to meet include having the necessary permissions, defining and saving a flat-list query under the **Shared Queries** folder, and creating the dashboard where you want to add the widget.  
- 
-### Permissions  
+::: moniker range="azure-devops"
 
-By default, users with at least **Basic** access can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
-- To save a query to a **Shared Queries** folder, have permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
-- To add a widget to a team dashboard, be a member of the team or be a member of the **Project Administrators** security group.
-- To add a widget to a project dashboard, have created the dashboard or be granted permissions to edit the dashboard, or be a member of the **Project Administrators** security group.
-- To view a query-based widget added to a dashboard, have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
-::: moniker-end
-
-::: moniker range="azure-devops"
-> [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+| Category | Requirements |
+|-------------|-------------|
+| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Permissions** |- By default, users with at least **Basic** access can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).<br>- To save a query to a **Shared Queries** folder: Permissions to save queries under a folder. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).<br>- To add a widget to a team dashboard: Member of the team or member of the **Project Administrators** security group.<br>- To add a widget to a project dashboard: Dashboard creator or **Edit** permissions for the dashboard, or member of the **Project Administrators** security group.<br>- To view a query-based widget added to a dashboard: **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message. |
+| **Queries** | - Only [flat-list queries](charts.md#create-a-flat-list-query) support charts.<br>- To add a chart to a dashboard: Save the query to a **Shared Queries** folder. To do so, [get permissions to save queries under a folder](../../boards/queries/set-query-permissions.md). |
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-- To save a query to a **Shared Queries** folder, have permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).  
-- To add a widget to a team dashboard, be a member of the team or be a member of the **Project Administrators** security group. 
-- To view a query-based widget added to a dashboard, have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
+| Category | Requirements |
+|-------------|-------------|
+| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Permissions** |- By default, users with at least **Basic** access can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).<br>- To save a query to a **Shared Queries** folder: Permissions to save queries under a folder. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).<br>- To add a widget to a team dashboard: Member of the team or member of the **Project Administrators** security group.<br>- To add a widget to a project dashboard: Dashboard creator or **Edit** permissions for the dashboard, or member of the **Project Administrators** security group.<br>- To view a query-based widget added to a dashboard: **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message. |
+| **Queries** | - Only [flat-list queries](charts.md#create-a-flat-list-query) support charts.<br>- To add a chart to a dashboard: Save the query to a **Shared Queries** folder. To do so, [get permissions to save queries under a folder](../../boards/queries/set-query-permissions.md). |
+
 ::: moniker-end
  
 For more information about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 

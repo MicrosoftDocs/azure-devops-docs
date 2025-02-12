@@ -24,6 +24,8 @@ You can create custom views in the web portal for Azure DevOps. Then load the vi
 
 [!INCLUDE [disabled board note](../includes/boards-disabled.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [open analytics to access views](../includes/analytics-open.md)]
