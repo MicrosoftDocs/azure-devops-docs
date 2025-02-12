@@ -20,8 +20,13 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 > [!IMPORTANT]  
 > The method demonstrated in this article works for small organizations, because it always pulls in all the data into Power BI. Most of the filtering that's specified in the Power Query Editor is done client-side. For information about other approaches, see [Power BI integration Overview](overview.md). 
 
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
-- [Install Power BI Desktop](https://powerbi.microsoft.com/desktop).
+## Prerequisites
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Permissions** | By default, project members have permission to query Analytics and create views. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Tools** | [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
 
 ## Access the Analytics OData feed
 

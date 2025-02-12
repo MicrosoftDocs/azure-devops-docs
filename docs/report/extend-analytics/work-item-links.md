@@ -27,7 +27,11 @@ In this article you'll learn:
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+::: moniker range=" < azure-devops"
 
 > [!NOTE]
 > The examples shown in this article are based on an Azure DevOps Services URL. For Azure DevOps Server, you need to substitute the URL for the on-premises server.
@@ -38,8 +42,6 @@ In this article you'll learn:
 > ```
 
 ::: moniker-end
-
- 
 
 ## Parent-child hierarchy
 

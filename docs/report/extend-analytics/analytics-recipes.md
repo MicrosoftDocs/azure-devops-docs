@@ -22,6 +22,7 @@ This article builds off information provided in [Construct OData queries for Ana
 
 [!INCLUDE [temp](../includes/analytics-preview.md)] 
  
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 

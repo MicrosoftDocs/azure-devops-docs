@@ -37,6 +37,8 @@ When you add a dashboard, you can choose to make it a project dashboard or one s
 > Project dashboards are owned by the person that created the dashboard. The owner can set permissions as to who can edit the dashboard. Team dashboards are owned by team administrators and can be edited by any member of the team. All dashboards can be viewed by members of the project. All widgets available to team dashboards are available for project dashboards. For team-specific widgets, if you aren't able to select a team through the widget, then the team defaults to the default project team.
 
 ::: moniker-end
+ 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]
 

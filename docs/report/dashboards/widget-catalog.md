@@ -108,15 +108,21 @@ Widgets listed in the following table are provided out-of-box. They're organized
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- To add widgets to a dashboard, be a member of a project. If you aren't a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- To add widgets from the marketplace, be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
-- To add, edit, or manage a dashboard, have at least **Basic** access.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
+ 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- To add widgets to a dashboard, be a member of a project. If you aren't a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- To add widgets from the marketplace, be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
-- To add, edit, or manage a dashboard, have at least  **Stakeholder** access.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Stakeholder** access. |
+| **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
+
 ::: moniker-end
 
 > [!NOTE]

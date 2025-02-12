@@ -20,6 +20,8 @@ Project-scope queries help answer questions about a single project whereas organ
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 > [!IMPORTANT]

@@ -27,21 +27,25 @@ This article explains how to add charts to a dashboard from their respective fun
 
 ::: moniker range="azure-devops"
 
-- **Dashboard creation**: Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart.
-- **Access:** 
-  - Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-  - To add, edit, or manage a team dashboard, be a team member and have at least **Basic** access.
-- **Permissions:** Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
+|Category  | Requirements |
+|-------------|-------------|
+| **Dashboard creation** |Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart. |
+|**Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or specific [dashboard permissions](./dashboard-permissions.md) granted to you. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Services**| **Azure Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.|
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Dashboard creation**: Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart.
-- **Access:**
-  -  Be a member of the team with at least **Basic** access.
-- **Permissions:** Be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
-::: moniker-end
 
-For more information, see [Default permissions and access for charts and dashboards](charts-dashboard-permissions-access.md).
+|Category  | Requirements |
+|-------------|-------------|
+| **Dashboard creation** |Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart. |
+|**Access levels** | - [Project member](../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or specific [dashboard permissions](./dashboard-permissions.md) granted to you. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Services**| **Azure Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.|
+
+::: moniker-end
 
 <a id="work-item-query"></a>
 

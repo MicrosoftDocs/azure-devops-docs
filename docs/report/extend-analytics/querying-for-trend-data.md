@@ -43,7 +43,9 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 ::: moniker-end
 
+## Prerequisites
 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="trend-data"></a>
 
