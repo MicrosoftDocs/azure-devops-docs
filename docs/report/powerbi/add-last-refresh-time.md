@@ -110,7 +110,7 @@ To add a column with the last refresh date of the dataset, do the following step
 
    :::image type="content" source="media/last-refresh/last-refresh-date-query.png" alt-text="Screenshot of Power Query Editor, formula for DateTime.LocalNow for Last Refresh Date query. ":::
 
-1. To convert the date data to a table format, choose **To Table** > **To Table**. Depending on the version you're using, you might need to **Invoke** parameters first.
+1. To convert the date data to a table format, choose **To Table** > **To Table**.
 
    :::image type="content" source="media/last-refresh/convert-data-to-table.png" alt-text="Screenshot of Power Query Editor, To Table option. ":::
 
