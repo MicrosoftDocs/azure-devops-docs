@@ -9,7 +9,7 @@ description: Git authentication and improved pipeline scalability
 
 We’re excited to announce new enhancements in Azure DevOps that improve security and simplify workflows. The Generate Git Credentials button has been removed from the Clone Repository dialogs in Repos and Wiki, aligning with our move to Microsoft Entra tokens for authentication—helping teams adopt a more secure and efficient Git workflow. 
 
-In addition, we're excited to announce that in Azure Pipelines, managed DevOps pools is now generally available, providing better scalability, reliability, and streamlined management for Azure DevOps Virtual Machine Scale Set agent pools. 
+Additionally, we are pleased to announce that in Azure Pipelines, managed DevOps pools is now generally available, providing better scalability, reliability, and streamlined management for Azure DevOps Virtual Machine Scale Set agent pools. 
 
 Check out the release notes for details.
 

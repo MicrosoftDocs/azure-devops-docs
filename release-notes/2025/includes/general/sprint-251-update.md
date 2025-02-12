@@ -6,9 +6,9 @@ ms.date: 2/11/2025
 ms.topic: include
 ---
 
-### Removal of “Generate Git Credentials” Button in Repos and Wiki
+### Removal of Generate Git Credentials button in Repos and Wiki
 
-The **“Generate Git Credentials”** button has been removed from the **“Clone Repository”** dialogs in the Repos and Wiki UI to support the transition to Microsoft Entra tokens for authentication in Git operations. Previously, selecting this button generated a new Personal Access Token (PAT) with the “vso.code” scope, active for seven days. Each use created a new PAT, often resulting in unnecessary credentials.
+The **Generate Git Credentials** button has been removed from the **Clone Repository** dialogs in the Repos and Wiki UI to support the transition to Microsoft Entra tokens for authentication in Git operations. Previously, selecting this button generated a new Personal Access Token (PAT) with the `vso.code` scope, active for seven days. Each use created a new PAT, often resulting in unnecessary credentials.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of deactivated generate git credentials button.](../../media/251-general-01.png "Screenshot of deactivated generate git credentials button")](../../media/251-general-01.png#lightbox)
@@ -16,7 +16,7 @@ The **“Generate Git Credentials”** button has been removed from the **“Clo
 
 To enhance security and streamline authentication, consider using Entra tokens for ad-hoc Git clone operations in Repos and Wiki. Documentation is available to help you configure authentication via the  [command line](/azure/devops/repos/git/auth-overview?view=azure-devops&tabs=Windows) or within the [Git Credential Manager](/azure/devops/repos/git/set-up-credential-managers?view=azure-devops) (GCM).
 
-While PATs remain available for Git operations, they must now be manually created with the appropriate “vso.code” scope from the Personal Access Token page. Ensure that PATs are only active as long as needed and revoked when no longer in use. As a best practice, store PATs securely in a secret management service such as Azure Key Vault (AKV) and rotate them regularly.
+While PATs remain available for Git operations, they must now be manually created with the appropriate `vso.code` scope from the Personal Access Token page. Ensure that PATs are only active as long as needed and revoked when no longer in use. As a best practice, store PATs securely in a secret management service such as Azure Key Vault (AKV) and rotate them regularly.
 
 ### Update to Azure DevOps Allowed IP addresses
 
