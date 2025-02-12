@@ -69,7 +69,7 @@ The [Maximum agents](./configure-pool-settings.md#maximum-agents) setting config
 
 ### Consider pre-provisioning agents using a standby agent schedule
 
-If [Standby agent mode](./configure-scaling.md#standby-agent-mode) is disabled, Managed DevOps Pools agents are started on demand when a pipeline is queued, and while typically a fresh agent takes only a few moments to start, sometime it can take up to 15 minutes.
+If [Standby agent mode](./configure-scaling.md#standby-agent-mode) is disabled, Managed DevOps Pools agents are started on demand when a pipeline is queued, and while typically a fresh agent takes only a few moments to start, sometimes it can take up to 15 minutes.
 
 When **Standby agent mode** is enabled, you can specify a schedule and a count of agents to keep ready to meet the demands of your workload.
 
