@@ -8,7 +8,7 @@ monikerRange: 'azure-devops'
 ms.date: 05/09/2018
 ---
 
-# About the Azure DevOps Services Demo Generator
+## About the Azure DevOps Services Demo Generator
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
