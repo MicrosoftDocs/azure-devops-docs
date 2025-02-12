@@ -8,6 +8,8 @@ monikerRange: 'azure-devops'
 ms.date: 05/09/2018
 ---
 
+# Build a custom template
+
 # About the Azure DevOps Services Demo Generator
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
