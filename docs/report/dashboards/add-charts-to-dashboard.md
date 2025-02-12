@@ -29,8 +29,8 @@ This article explains how to add charts to a dashboard from their respective fun
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Dashboard creation** |Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart. |
-|**Access levels** | - [Project member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Dashboard creation** |[Creator of the team dashboard](dashboards.md) to which you want to add a chart. |
+|**Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
 | **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or specific [dashboard permissions](./dashboard-permissions.md) granted to you. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
 |**Services**| **Azure Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.|
 
@@ -40,8 +40,8 @@ This article explains how to add charts to a dashboard from their respective fun
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Dashboard creation** |Be the [creator of the team dashboard](dashboards.md) to which you want to add a chart. |
-|**Access levels** | - [Project member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+| **Dashboard creation** |[Creator of the team dashboard](dashboards.md) to which you want to add a chart. |
+|**Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
 | **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or specific [dashboard permissions](./dashboard-permissions.md) granted to you. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
 |**Services**| **Azure Boards** enabled. If it's disabled, **Analytics views** doesn't display. [Reenable it](../../organizations/settings/set-services.md) either for individual users or for the entire organization.|
 

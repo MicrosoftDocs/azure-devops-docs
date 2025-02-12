@@ -191,9 +191,7 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 
 
 
-## Move or delete a widget 
-
-Just as you have to be a team admin, a project admin, or have the necessary permissions to add items to a dashboard, have the [necessary permissions](#permissions) to remove items.  
+## Move or delete a widget
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.  
