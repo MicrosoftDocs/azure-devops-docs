@@ -11,8 +11,6 @@ ms.date: 05/24/2023
 
 # Build a custom template
 
-## About the Azure DevOps Services Demo Generator
-
 ## Introduction
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
