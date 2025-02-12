@@ -21,6 +21,9 @@ Several built-in Analytics reports and widgets are supported. You can view the O
  
 For a list of built-in Analytics reports and widgets, see [About dashboards, charts, reports, & widgets](../dashboards/overview.md) and [Widgets based on Analytics data](../dashboards/analytics-widgets.md).
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Open the Analytics report  
 

@@ -46,6 +46,8 @@ This article provides recipes using Data Analysis Expressions (DAX) to evaluate 
 > * You might need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses *New*, *Active*, and *Closed* in place of *Proposed*, *In Progress*, and *Completed*.
 > * The **Date** column referred to in this article isn't a native column in Azure DevOps; It's a derived column created within PowerBI to facilitate the **Time in State** report. You can build this column using the existing date-related columns, such as "Changed Date" or "State Changed Date."
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 > [!NOTE]  

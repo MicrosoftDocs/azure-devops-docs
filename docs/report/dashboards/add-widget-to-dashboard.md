@@ -22,6 +22,8 @@ Widgets smartly format data to provide access to easily consumable data. You add
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ## Open a dashboard 
