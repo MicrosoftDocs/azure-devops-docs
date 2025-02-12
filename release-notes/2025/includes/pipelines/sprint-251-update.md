@@ -48,10 +48,9 @@ You will need to assign the appropriate Azure RBAC role for service connection u
 The AzureVmssDeployment@1 task needs additional RBAC roles configured to access the storage account configured in `customScriptsStorageAccount`:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of AzureVmssDeployment@1 RBAC.](../../media/251-pipelines-01.png "Screenshot of AAzureVmssDeployment@1 RBAC")
+> [![Screenshot of AzureVmssDeployment@1 RBAC.](../../media/251-pipelines-01.png "Screenshot of AzureVmssDeployment@1 RBAC")](../../media/251-ghazdo-01.png#lightbox)
 
 1. The `azureSubscription` Service Connection: [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles/compute#virtual-machine-contributor) role on the Virtual Machine Scale Set
 2. The `azureSubscription` Service Connection: [Storage Blob Data Contributor](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor) role on the storage account that holds the custom script
 3. The Virtual Machine Scale Set System-assigned Managed Identity: [Storage Blob Data Reader](/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-reader) role on the storage account that holds the custom script
-
 
