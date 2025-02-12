@@ -16,7 +16,7 @@ You can now easily access the Test plans page directly from the Test plans work 
 
 ### Azure Test Plans bug fixes
 
-With this sprint, we’ve made updates to Azure Test Plans to resolve several bugs and improve usability. Here's what's been fixed:
+With this sprint, we made updates to Azure Test Plans to resolve several bugs and improve usability. Here's what's been fixed:
 
 * Fixed an issue where Test Suites didn't update correctly when switching between Test Plans. For details on the initial bug, see [this DevComm post](https://developercommunity.visualstudio.com/t/Changing-between-Test-Plans-does-not-alw/10753235).
 
@@ -24,7 +24,7 @@ With this sprint, we’ve made updates to Azure Test Plans to resolve several bu
 
 * Fixed an issue in the new Boards hub where Shared Steps opened in the old work item form and users couldn't delete comments in the discussion section. [this DevComm post](https://developercommunity.visualstudio.com/t/Delete-comment-in-discussion-section-in-/10775737).
 
-* Fixed an issue where filtering test results by the Owner clause did not work, causing queries to return an error instead of results. [this DevComm post](https://developercommunity.visualstudio.com/t/Filter-test-results-using-the-Owner-clau/10785774). 
+* Fixed an issue where filtering test results by the Owner clause didn't work, causing queries to return an error instead of results. [this DevComm post](https://developercommunity.visualstudio.com/t/Filter-test-results-using-the-Owner-clau/10785774). 
 
 ### Export test cases with custom columns in XLSX
 
