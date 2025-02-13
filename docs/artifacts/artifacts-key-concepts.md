@@ -1,45 +1,71 @@
 ---
-title: Key concepts for Azure Artifacts
-description: Important concepts for Azure Artifacts
+title: Azure Artifacts key concepts 
+description: Understand the key concepts in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 01/12/2022
+ms.date: 02/12/2025
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Key concepts for Azure Artifacts
+# Azure Artifacts key concepts 
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-## Immutability
+Azure Artifacts enable developers to host and share various types of packages to streamline collaboration and package distribution. This article covers the key concepts when working with Azure Artifacts.
 
-Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package with the same version number.
+## Feeds
 
-Many package clients, including NuGet and npm, keep a local cache of packages on your machine. Once a client has cached a particular package version, it will return that copy on future install/restore requests.
+Azure Artifacts feeds are organizational constructs that provide a structured way to store, manage, and share packages while controlling access. Feeds are not limited to specific package types and can host various types, such as npm, NuGet, Maven, Python, Cargo and Universal Packages.
+Feeds can be scoped to a project or an organization. However, only project-scoped feeds can be set as public, and organization-scoped feeds cannot be converted to project-scoped feeds.
 
-If, on the server side, you replace a package version v1 with a new version v2, the client is unable to tell the difference. This can lead to indeterminate build results from different machines. For example, a developer's machine and the build agent might have cached different revisions of the package, leading to unexpected build results.
+## Feed views
 
-If a package is broken, buggy, or shares unintended content (like secrets), the best approach is to prepare a fix and publish it as a new version. Then, depending on the severity of the issue and how widely depended-on the package is, you can delete the package to make it unavailable for consumption.
+Feed views allow developers to share a selected subset of package versions with their consumers. A common use case is sharing only tested and validated package versions while holding back those still in development or not meeting a specific quality standard.
 
-The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
+By default, feeds include three views: `@local`, `@prerelease`, and `@release`. The latter two can be renamed or deleted as needed. `@local` is the default view, commonly used in upstream sources, and it contains all packages published directly to the feed as well as those saved from upstream sources.
+
+## Upstream sources
+
+Upstream sources allow you to store packages from multiple sources within a single feed. This includes both packages you publish and those saved from external feeds and public registries such as NuGet.org or npmjs.com. When an upstream source is enabled on your feed, Azure Artifacts automatically saves a copy of any package installed by a collaborator or higher from the upstream source.
+
+For public package managers that support multiple feeds, such as NuGet and Maven, the order in which feeds are queried can vary. For example, NuGet sends parallel queries to all configured feeds and selects the first valid response it receives, which can sometimes lead to nondeterministic behavior.
+
+Upstream sources help mitigate this non-deterministic behavior by searching the feed and its upstream sources in the following order:
+
+1. Packages published directly to the feed.
+
+1. Packages saved from an upstream source.
+
+1. Packages available from upstream sources. Each upstream source is searched in the order they appear in the feed's configuration.
 
 > [!NOTE]
-> Deleted feeds remain in the recycle bin for 30 days then are deleted permanently. The feed name becomes available once the feed is permanently deleted.
+> To take full advantage of the fast lookup feature, we recommend that you include only one feed in your configuration file.
+
+## Immutability
+
+Once you publish a specific version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision of the package with that same version number, nor can you delete it and upload a new package with the same version number.
 
 ## Indexing
 
-Azure Artifacts maintain an index of all the packages in each feed, which enables fast list operations. List operations on your file shares require the client to open every package and examine its metadata unless your file share has been configured to provide an index that the client understands.
+Azure Artifacts maintain an index of all the packages in each feed, which enables fast list operations. This is different from file shares, where the client must open each package and examine its metadata unless the file share has been configured to provide an index that the client recognizes.
 
 ## Well-formedness
 
-Azure Artifacts validate all the published packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when migrating to Azure Artifacts.
+Azure Artifacts validates all the published packages to ensure integrity and correctness. This helps prevent invalid packages from entering your development environment. If you have a workflow that publishes malformed packages and plan to migrate to Azure Artifacts, it’s important to revise your workflow during the transition to ensure your packages pass the validation checks in Azure Artifacts.
 
 ## Recycle Bin
 
-Packages can be deleted manually or by setting up retention policies for your feed. Deleted packages remain in the recycle bin for 30 days then get deleted permanently. Feed owners can recover the deleted packages from the Recycle Bin.
+Packages can be deleted manually or by setting up retention policies for your feed. Deleted packages remain in the recycle bin for 30 days before they are automatically deleted permanently. Only feed owners can recover the deleted packages from the recycle bin.
 
-## Related articles
+You must be a feed owner also to delete feeds. Deleted feeds remain in the recycle bin for 30 days before they are automatically deleted permanently. Once the feed is permanently deleted, the feed name becomes available.
 
-- [Package graphs](./concepts/package-graph.md)
-- [Use artifactignore](./reference/artifactignore.md)
+## Related content
+
+- [What are feeds?](concepts/feeds.md)
+
+- [Feed views](concepts/views.md)
+
+- [Azure Artifacts Upstream Sources](concepts/upstream-sources.md)
+
+- [Delete and recover packages](how-to/delete-and-recover-packages.md)
