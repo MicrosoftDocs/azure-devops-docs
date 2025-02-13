@@ -52,7 +52,7 @@ When using Managed DevOps Pools, you might encounter situations where there is a
   * [Automatic standby mode for new pools](#automatic-standby-mode-for-new-pools)
   * [Check standby agent percentage if using standby agents with multiple images](#check-standby-agent-percentage-if-using-standby-agents-with-multiple-images)
 * [Consider using Stateful pools with a grace period to keep agents online](#consider-using-stateful-pools-with-a-grace-period-to-keep-agents-online)
-* [Check timeout error codes](#check-timeout-error-codes)
+* [Check time-out error codes](#check-time-out-error-codes)
 
 ### Check for insufficient parallel jobs
 
@@ -89,7 +89,7 @@ One option to improve agent performance without using standby agents is to use s
 
 For more information, see [Standby agents](configure-scaling.md#standby-agent-mode) and [Stateful pools](configure-scaling.md#stateful-pools).
 
-### Check timeout error codes
+### Check time-out error codes
 
 If your agent assignment times out, you can check the error code on the [Error codes](./monitor-pool.md#error-codes-chart) section of the [Overview](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview) page.
 
