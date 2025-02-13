@@ -25,13 +25,10 @@ To create a dashboard for a team or project, see [Add, rename, and delete dashbo
 
 ## Prerequisites  
 
-- **Project membership:** Be a [member of the project](../../organizations/accounts/add-organization-users.md).
-- **Access:** 
-  - Anyone with access to a project, including [Stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards. However, to view queries or work items displayed in a dashboard widget, have permissions to view the query and work items. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md) and [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md).
-  - Have at least **Basic** access.
-- **Permissions:**
-  - Be a member of the team, a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have [Edit dashboard permissions](../dashboards/dashboard-permissions.md).
-  - Have Edit permissions for a shared queries folder, to copy queries to.
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | - Anyone with access to a project, including [Stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards. However, to view queries or work items displayed in a dashboard widget, have permissions to view the query and work items. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md) and [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md).<br>- Member of the team, a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or [**Edit**](../dashboards/dashboard-permissions.md) dashboard permission.- **Edit** permissions for a shared queries folder to copy queries into.|
 
 ## Open the dashboard you want to copy
 

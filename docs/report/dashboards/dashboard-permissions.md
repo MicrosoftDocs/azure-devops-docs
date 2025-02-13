@@ -48,21 +48,20 @@ For more information about adding and viewing dashboards, see [Add, rename, and 
 
 ::: moniker range=">= azure-devops-2020"
 
-- **Access:** 
-  - All members of the Project Valid Users group can view dashboards.
-  - To add, edit, or manage a team or project dashboard, be a [member of the team](../../organizations/security/add-users-team-project.md) with at least **Basic** access. 
-- **Permissions:**
-  - **Team dashboards**: To add, edit, or manage a team dashboard, be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have **Edit dashboard** permissions.
-  - **Project dashboards**: To add, edit, or manage project dashboards, be a project administrator, or have [Edit dashboard](./dashboard-permissions.md) permissions granted to you.
+| Category | Requirements |
+|-------------|-------------|
+|**Access levels** |- All members of the Project Valid Users group can view dashboards.<br>- To add, edit, or manage a team or project dashboard: [Team member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+|**Permissions** |- **Team dashboards**: To add, edit, or manage a team dashboard: [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or **Edit dashboard** permissions set to **Allow**.<br>- **Project dashboards**: To add, edit, or manage project dashboards: Project administrator, or [Edit dashboard](./dashboard-permissions.md) permissions set to **Allow**.|
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-- **Access:** 
-  - All members of the Project Valid Users group can view dashboards.
-  - To edit dashboards, be a [member of the team](../../organizations/security/add-users-team-project.md) with at least **Basic** access.
-- **Permissions:** To add, edit, or manage a team dashboard, be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
+| Category | Requirements |
+|-------------|-------------|
+|**Access levels** |- All members of the Project Valid Users group can view dashboards.<br>- To edit dashboards: [Team member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+|**Permissions** |- **Team dashboards**: To add, edit, or manage a team dashboard: [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or specific [dashboard permissions](./dashboard-permissions.md) granted to you.|
+
 ::: moniker-end
 
 ## Set default team dashboard permissions

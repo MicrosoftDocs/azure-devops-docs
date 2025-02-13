@@ -10,7 +10,7 @@ ms.topic: include
 ## Prerequisites
 
 
-| Category | Prerequisite |
+| Category | Requirements |
 |--------------|-------------|
 | **Project access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. If you aren't project member, [get added now](../../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except stakeholders, can view Analytics views. |
 | **Permissions** | - **View Analytics** permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../analytics-security.md). <br>- To use Power BI for Azure DevOps or to exercise an OData query for Analytics: **View Analytics** permission set to *Allow*. By default, all Contributors with Basic access are granted access. <br>- To edit shared **Analytics views**: **Edit shared Analytics views** permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../analytics-security.md). |
