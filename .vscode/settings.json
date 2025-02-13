@@ -2,5 +2,5 @@
     "cSpell.words": [
         "Entra"
     ],
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "onFocusChange"
 }
