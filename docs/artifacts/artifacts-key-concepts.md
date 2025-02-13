@@ -16,7 +16,7 @@ Azure Artifacts enable developers to host and share various types of packages to
 
 ## Feeds
 
-Azure Artifacts feeds are organizational constructs that provide a structured way to store, manage, and share packages while controlling access. Feeds are not limited to specific package types and can host various types, such as npm, NuGet, Maven, Python, Cargo and Universal Packages.
+Azure Artifacts feeds are organizational constructs that provide a structured way to store, manage, and share packages while controlling access. Feeds are not limited to specific package types and can host various types, such as npm, NuGet, Maven, Python, Cargo, and Universal Packages.
 Feeds can be scoped to a project or an organization. However, only project-scoped feeds can be set as public, and organization-scoped feeds cannot be converted to project-scoped feeds.
 
 ## Feed views
@@ -31,7 +31,7 @@ Upstream sources allow you to store packages from multiple sources within a sing
 
 For public package managers that support multiple feeds, such as NuGet and Maven, the order in which feeds are queried can vary. For example, NuGet sends parallel queries to all configured feeds and selects the first valid response it receives, which can sometimes lead to nondeterministic behavior.
 
-Upstream sources help mitigate this non-deterministic behavior by searching the feed and its upstream sources in the following order:
+Upstream sources help mitigate this nondeterministic behavior by searching the feed and its upstream sources in the following order:
 
 1. Packages published directly to the feed.
 
@@ -62,10 +62,10 @@ You must be a feed owner also to delete feeds. Deleted feeds remain in the recyc
 
 ## Related content
 
-- [What are feeds?](concepts/feeds.md)
+- [What are feeds?](./concepts/feeds.md)
 
-- [Feed views](concepts/views.md)
+- [Feed views](./concepts/views.md)
 
-- [Azure Artifacts Upstream Sources](concepts/upstream-sources.md)
+- [Azure Artifacts Upstream Sources](./concepts/upstream-sources.md)
 
-- [Delete and recover packages](how-to/delete-and-recover-packages.md)
+- [Delete and recover packages](./how-to/delete-and-recover-packages.md)
