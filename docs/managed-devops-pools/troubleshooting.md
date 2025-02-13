@@ -2,7 +2,7 @@
 title: Troubleshoot Managed DevOps Pools issues
 description: Learn how to troubleshoot common issues with Managed DevOps Pools.
 ms.topic: how-to
-ms.date: 02/11/2025
+ms.date: 02/13/2025
 ---
 
 # Troubleshoot Managed DevOps Pools issues
