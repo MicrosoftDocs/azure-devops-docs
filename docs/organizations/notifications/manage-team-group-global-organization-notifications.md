@@ -76,7 +76,7 @@ A subscription lets you control what your team is notified of and how the team r
 
     ![Screenshot of selected scope.](media/new-sub-scope.png)
 
-3. Optionally, configure more filter criteria.
+3. Optionally, configure more filter criteria. For fields, such as Created By, that require a user as a value, enter the username or email address of the user.
 
     ![Screenshot of configuring additional filter criteria.](media/new-sub-filter-conditions.png)
 
