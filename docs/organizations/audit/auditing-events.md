@@ -293,7 +293,6 @@ The following tables describe the type of events (or actions) that are available
 | `Project.AreaPath.Create` | Area path "{Path}" was created. |
 | `Project.AreaPath.Delete` | Area path "{Path}" was deleted. |
 | `Project.AreaPath.Update` | Area path "{Path}" was updated. |
-| `Project.Create` | Project {ProjectName} was created successfully. |
 | `Project.CreateCompleted` | Project {ProjectName} was created successfully. |
 | `Project.CreateFailed` | Project {ProjectName} failed to be created. |
 | `Project.CreateQueued` | Project {ProjectName} creation was started. |
