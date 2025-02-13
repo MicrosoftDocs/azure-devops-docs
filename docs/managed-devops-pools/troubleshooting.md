@@ -85,7 +85,7 @@ If you use standby agents with multiple images, check the history of usage per i
 
 ### Consider using Stateful pools with a grace period to keep agents online
 
-One option to improve agent performance without using standby agents is to use stateful agents with a short grace period. When stateful agents with a grace period complete a job, they stay online for the duration specified by the grace period and wait for jobs. If your workload comes in bursts, you can configure a grace period that keeps agents online when jobs are steady, and starts them from scratch during slower periods.
+One option to improve agent performance without using standby agents is to use stateful agents with a short grace period. When a stateful agent with a grace period completes a job, it stays online for the duration specified by the grace period and waits for additional jobs. If your workload comes in bursts, you can configure a grace period that keeps agents online when jobs are steady, and starts them from scratch during slower periods.
 
 For more information, see [Standby agents](configure-scaling.md#standby-agent-mode) and [Stateful pools](configure-scaling.md#stateful-pools).
 
