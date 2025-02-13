@@ -53,14 +53,6 @@ landingContent:
           url: feeds/views.md
         - text: Use public feeds to share your packages publicly
           url: tutorials/share-packages-publicly.md
-  - title: Security
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Manage permissions
-            url: feeds/feed-permissions.md
-          - text: Safeguard against malicious public packages
-            url: concepts/upstream-behavior.md
   - title: Publish
     linkLists:
       - linkListType: how-to-guide
@@ -123,6 +115,14 @@ landingContent:
             url: universal-packages/universal-packages-upstream.md
           - text: Use packages from Crates.io
             url: cargo/cargo-upstream-source.md
+  - title: Security
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Manage permissions
+            url: feeds/feed-permissions.md
+          - text: Safeguard against malicious public packages
+            url: concepts/upstream-behavior.md
   - title: Artifacts in Azure Pipelines
     linkLists:
       - linkListType: overview
