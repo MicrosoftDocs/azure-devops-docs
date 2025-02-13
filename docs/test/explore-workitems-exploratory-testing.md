@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'
-ms.date: 02/04/2025
+ms.date: 02/13/2025
 ---
 
 # Explore work items with the Test & Feedback extension
@@ -58,7 +58,7 @@ Explore the following items:
    You can search using the work item identifier or keywords in the work item title. The work item types available for search in the extension are: Epic, Feature, Test Case, and Requirement. For more information, see [About work items and work item types](../boards/work-items/about-work-items.md).
 
    > [!IMPORTANT]
-   > The Test & Feedback extension only searches and returns results for work items created in the past 180 days.
+   > The Test & Feedback extension only searches and returns results for work items created in the past 180 days if you search using work item title. If you search using work item ID, there is no 180 day limitation.
   
 2. In the search results, select the work item and choose **Explore selected work item**.
 
