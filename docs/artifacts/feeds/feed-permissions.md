@@ -143,6 +143,8 @@ If your pipeline is unable to access your feed, you might need to add the corres
 
 #### Examples
 
+::: moniker range="azure-devops"
+
 ### [NuGet](#tab/nuget)
 
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
@@ -168,6 +170,56 @@ If your pipeline is unable to access your feed, you might need to add the corres
 - [Publish Universal Packages with Azure Pipelines](../../pipelines/artifacts/universal-packages.md)
 
 ---
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+### [NuGet](#tab/nugetserver22)
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+
+### [Npm](#tab/npmserver22)
+
+- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md)
+
+### [Maven](#tab/mavenserver22)
+
+- [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+### [Python](#tab/pythonserver22)
+
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+
+### [Cargo](#tab/cargoserver22)
+
+- [Publish Cargo packages with Azure Pipelines](../../pipelines/artifacts/cargo-pipelines.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+### [NuGet](#tab/nugetserver)
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+
+### [Npm](#tab/npmserver)
+
+- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md)
+
+### [Maven](#tab/mavenserver)
+
+- [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+### [Python](#tab/pythonserver)
+
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+
+---
+
+::: moniker-end
 
 > [!NOTE]
 > If you want to access a feed in a different project from your pipeline, and your pipeline uses the project-level build identity, you must set up the other project to grant that identity at least the "Read project-level information" permission.
