@@ -82,6 +82,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 | Add/remove upstream sources          |          |          |          | &#x2713; |
 | Allow external package versions      |          |          |          | &#x2713; |
 | Edit feed settings                   |          |          |          | &#x2713; |
+| Delete a feed                        |          |          |          | &#x2713; |
 
 > [!NOTE]
 > [Azure Artifacts Administrators](#azure-artifacts-settings), including **Project Collection Administrators**, automatically have the **Feed Owner** role on all feeds.
