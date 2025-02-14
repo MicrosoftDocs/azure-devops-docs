@@ -9,7 +9,7 @@ WinWorld PC (winworldpc.com) is a website dedicated to preserving and providing 
 - Screenshots and system requirements
 
 ## Legal Notice
-All software available through WinWorld PC is considered abandonware or has been made freely available by the original publishers. Users should verify copyright status before downloading.
+All software available through WinWorld PC is no longer sold or supported by the original publishers or has been made freely available by them. Users should ensure they have the right to download and use it.
 
 ## Links
 - [Visit WinWorld PC](https://winworldpc.com/)
