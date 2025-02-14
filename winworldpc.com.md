@@ -1,7 +1,7 @@
 # WinWorld PC Archive
 
-A vintage software library and museum.
-
+## Overview
+WinWorld PC (winworldpc.com) is a website dedicated to preserving and providing access to vintage computer software, primarily focusing on operating systems and applications from the 1980s and 1990s. It serves as a vintage software library and museum.
 ## Overview
 WinWorld PC (winworldpc.com) is a website dedicated to preserving and providing access to vintage computer software, primarily focusing on operating systems and applications from the 1980s and 1990s.
 
