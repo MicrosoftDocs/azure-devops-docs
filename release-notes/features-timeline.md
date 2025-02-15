@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 01/22/2025
+ms.date: 2/14/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -246,6 +246,44 @@ These investments include:
          <td>2025 Q1</td>   
       </tr>         
     </tbody>
+</table>
+
+### Migrate to Managed DevOps Pools
+
+Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs) and the differences between them [here](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/migrate-from-scale-set-agents?view=azure-devops). Managed DevOps Pools is generally available, so you can migrate your Virtual machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible. 
+
+Below, you will find several investments we plan to deliver as part of this initiative:
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Quarter</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td>Spot VM agents</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td>Preemptive agent download</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td>Add trusted root certificates</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td>Container based agents</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+   </tbody>
 </table>
 
 ### YAML and release pipelines feature parity
