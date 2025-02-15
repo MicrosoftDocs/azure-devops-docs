@@ -22,6 +22,10 @@ The [commit](commits.md) history on your `main` branch (or other default branch)
 
 The default branch is an accurate representation of the history of each topic branch, but it's difficult to use to answer broader questions about your project's development.
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Squash merge
 
 Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. Squash merge commit doesn't have a reference to the topic branch, it will produce a **new commit** that contains all changes from the topic branch. Furthermore it is recommended to delete the topic branch to prevent any confusion.

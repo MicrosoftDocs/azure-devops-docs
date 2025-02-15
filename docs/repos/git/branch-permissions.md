@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/25/2021
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -14,23 +14,20 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](set-git-repository-permissions.md#git-repository).
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-## Use the branches view to configure security
+## Prerequisites
 
-::: moniker range=">= azure-devops-2019"
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
+## Use the branches view to configure security
 
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
    ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
-
-::: moniker-end
-
-
 
 2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
@@ -43,7 +40,7 @@ You can set permissions for individual users and groups, and inherit and overrid
 ## Add users or groups
 
 > [!TIP]    
-> You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
+> You can only add permissions for users and groups that are already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
 Add users or groups to your branch permissions by selecting **Add**.  
 Enter the sign-in address or group alias, then select **Save Changes**.
@@ -57,10 +54,9 @@ The user or group will still exist in your Project and this change will not affe
  
 ## Set permissions 
 
-Control branch permission settings from the branch permission view. Users and groups with permissions set at the repository level will
+Control branch permission settings from the branch permission view. Users and groups with permissions set at the repository level 
 [inherit those permissions](../../organizations/security/about-permissions.md#permission-inheritance) by default.
 
-::: moniker range=">= azure-devops-2019"
 The following permissions are automatically assigned to branch creators: **Contribute**, **Force push**, **Manage permissions** (when allowed through the repository setting **Permissions management**), and **Remove others' locks**.
 
 

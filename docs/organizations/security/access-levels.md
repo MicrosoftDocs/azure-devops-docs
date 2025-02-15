@@ -71,7 +71,7 @@ The following table indicates those features available for each supported access
 ---
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 :::row:::
    :::column span="3":::

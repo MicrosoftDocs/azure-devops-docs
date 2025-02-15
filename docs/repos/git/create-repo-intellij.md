@@ -22,14 +22,11 @@ You can also use this plugin to import projects into Azure Repos or create pull 
 In this guide, we show you how to create a Git repo using the Azure DevOps Services web portal, add some sample code, and then clone the repo and create pull requests all from within IntelliJ IDEA.
 
 ## Prerequisites
-To complete the steps in this guide you need:
 
-* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
-* The Azure DevOps plugin for IntelliJ. See [IntelliJ Plugin download page](https://plugins.jetbrains.com/plugin/7981-azure-devops) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
-* Git command line tools.
-  * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager](set-up-credential-managers.md).
-  * To install Git for macOS and Linux, see [git-scm.com](https://git-scm.com/downloads).
+| Category | Requirements |
+|-------------|-------------|
+| **Organization** | An [organization in Azure DevOps](../../organizations/accounts/create-organization.md) with a Git repository. |
+|**Tools**| - [IntelliJ IDEA](https://www.jetbrains.com/idea).<br>- [IntelliJ Plugin](https://plugins.jetbrains.com/plugin/7981-azure-devops).<br>- [Git Credential Manager](set-up-credential-managers.md) for Windows or [Git SCM](https://git-scm.com/downloads) for macOS and Linux.|
 
 ## Create a repo
 1. Navigate to your project in Azure DevOps by browsing to `https://dev.azure.com/{your organization}` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
