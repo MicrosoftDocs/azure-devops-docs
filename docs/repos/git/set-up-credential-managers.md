@@ -24,6 +24,12 @@ Azure Repos provides IDE support for Microsoft account and Microsoft Entra authe
 
 If your environment doesn't have an integration available, configure your IDE with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 
+> [!IMPORTANT]
+> Over the next year, we’ll be making moves towards strengthening Microsoft and our customers’ security posture in regards to the usage and creation of personal access tokens (PATs).
+> If you’ve been following this blog, you may have noticed we’ve been distancing away from PATs as the recommended authentication method for Azure DevOps APIs by offering restrictive policies and more secure alternatives. PATs can be an enticing vector for unauthorized access, especially when insecurely stored, over-scoped, or set for long durations.
+>
+> Learn more about our efforts in [reducing personal access token (PAT) usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/)
+
 ## Install Git Credential Manager
 
 ### Windows
