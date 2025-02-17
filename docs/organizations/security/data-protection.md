@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 09/13/2024
+ms.date: 02/17/2025
 monikerRange: 'azure-devops'
 ---
 # Data protection overview
@@ -30,7 +30,7 @@ The threats that you face are in four basic categories: data availability, servi
 
 Data protection requires the active engagement of administrators and users who know what steps to take to protect your assets from unauthorized disclosure and tampering. Be explicit when you grant permissions to user access points, so only the right people access data within Azure DevOps.
 
-You should consider all data to be potentially at risk, no matter where it is or how it's being used. This statement is true for both data stored in the cloud and data stored in a private datacenter. It's important to classify your data, its sensitivity and risk, and the damage that it might do if it becomes compromised. Also, categorize your data relative to an overall policy for managing information security.
+You should consider all data to be potentially at risk, no matter where it's located or how it's being used. This statement is true for both data stored in the cloud and data stored in a private datacenter. It's important to classify your data, its sensitivity and risk, and the damage that it might do if it becomes compromised. Also, categorize your data relative to an overall policy for managing information security.
 
 ## Built on Azure
 
@@ -258,6 +258,10 @@ Based on the classification, we control usage scenarios, geo-location requiremen
 Microsoft occasionally wants to contact customers to let them know about more features and services that might be useful. Because not all customers want to be contacted about these offers, you can opt in and opt out of marketing email communications.
 
 Microsoft never uses customer data to target specific offers for specific users or organizations. Instead, we use organization data and aggregate usage statistics at the organization level to determine groups that should receive specific offers.
+
+### Managing privacy policies for admins to control user feedback collection
+
+The feedback toggle feature allows Azure DevOps organization owners to control whether users are prompted to provide feedback and submit it. This feature is essential for ensuring that feedback practices align with your organization’s privacy and governance policies.
 
 ## Building confidence
 
