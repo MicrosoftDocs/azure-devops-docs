@@ -39,10 +39,10 @@ To set up sprints yet for your team, see [Manage sprint timelines](define-sprint
 ## Prerequisites
 
 | Category | Requirements |
-|--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | Member of the **Contributors** or **Project Administrators** security group in your project. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). |
-| **Access levels** | To view or set capacity: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+|----------------------|----------------------|
+| **Project access**   | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions**      | - To view capacity: Be a member of the [**Contributors**](../../organizations/security/add-users-team-project.md) security group in your project. <br/> - To edit capacity: Be a member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) security group or a [**Team Administrator**](../../organizations/settings/add-team-administrator.md) of the team. |
+| **Access levels**    | To view or set capacity: At least **[Basic](../../organizations/security/access-levels.md)**[ access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
 
 <a id="customize-activity-list">  </a> 
 
