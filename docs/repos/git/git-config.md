@@ -42,6 +42,10 @@ In this article you learn how to:
 >* Modify Git configuration file settings
 >* Modify Visual Studio Git-related settings
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Explore Git settings
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)

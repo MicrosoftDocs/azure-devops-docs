@@ -22,12 +22,17 @@ Locking also blocks any new commits from being added to the branch by others.
 ## Locking limitations
 
 Locking is ideal for preventing new changes that might conflict with an important merge or to place a branch into a read-only state. 
-Use [branch policies](branch-policies.md) and [pull requests](pull-requests.md) with locking if you want to ensure that changes in a branch are reviewed before they are merged and prevent changes in the locked branch.
+Use [branch policies](branch-policies.md) and [pull requests](pull-requests.md) with locking to ensure that changes in a branch get reviewed before they get merged and prevent changes in the locked branch.
 
-Locking does not prevent cloning of a repo or fetching updates made in the branch into your local repo.
-Share with your team the reason for the locking of the branch and make sure your team knows what to do to work with the branch after it is unlocked. 
+Locking doesn't prevent cloning of a repo or fetching updates made in the branch into your local repo.
+Share with your team the reason for the locking of the branch and make sure your team knows what to 
+do to work with the branch after it is unlocked. 
 
-> Only the user who locked the branch or a user with [Remove Others' Locks permissions](set-git-repository-permissions.md#git-repository) for the branch can remove the lock.
+## Prerequisites
+
+| Category | Requirements |
+|-------------|-------------|
+|**Permissions**|User who locked the branch or [**Remove Others' Locks** permissions](set-git-repository-permissions.md#git-repository) for the branch.|
 
 ## Lock a branch using the Branches view
 

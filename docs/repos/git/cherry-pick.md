@@ -25,6 +25,10 @@ You can cherry-pick to tackle these common tasks:
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Cherry-pick a commit
 
 #### [Browser](#tab/browser/)

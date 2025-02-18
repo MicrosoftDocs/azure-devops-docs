@@ -19,11 +19,11 @@ ms.custom: devx-track-js
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers and from automated tools. Non-Microsoft tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-* An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* Install [VS Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
-## Install Node.js
-To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform. The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.
+| Category | Requirements |
+|-------------|-------------|
+| **Organization** | An [organization in Azure DevOps](../../organizations/accounts/create-organization.md) with a Git repository. |
+|**Tools**| - [Visual Studio Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice.<br>- [Node.js](https://nodejs.org/en/download/). The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.|
 
 ## Create a basic web server using Express
 The steps in this section use [Express](https://expressjs.com/), which is a lightweight web framework for Node.js that provides many HTTP utility methods that simplify creating a web server. This framework provides you with the basic functions needed to listen to PR events.
@@ -126,7 +126,7 @@ To receive the service hook notifications, expose a port to the public internet.
 
     ![Screenshot shows Choose Service hooks from the admin menu.](media/create-pr-status-server/service-hooks-menu.png)
 
-5. If this is your first service hook, select **+ Create subscription**. 
+5. If it's your first service hook, select **+ Create subscription**. 
 
     ![Screenshot shows selected Create a new subscription from the toolbar.](media/create-pr-status-server/service-hooks-create-first-service-hook.png)
 

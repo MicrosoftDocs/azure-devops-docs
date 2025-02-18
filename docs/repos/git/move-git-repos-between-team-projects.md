@@ -20,7 +20,9 @@ If you're planning to consolidate multiple Azure DevOps projects into one, you'r
 * Move or merge them? 
 * Keep history or just the tip of the iceberg?
 
-In this article you will learn how to move your Git repositories to another project, with full-fidelity history. 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## What's the scenario?
 
