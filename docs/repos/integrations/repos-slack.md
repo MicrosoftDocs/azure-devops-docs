@@ -21,13 +21,13 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
 
 ## Prerequisites
 
-- To create subscriptions in a Slack channel for repository-related events, be a member of the **Project Administrators** group, or be a team administrator. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
-- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. For more information, see [Change application 
-access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To create subscriptions in a Slack channel for repository-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md).<br> - To receive notifications: **Third-party application access via OAuth** setting enabled for the organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).|
 
 > [!NOTE]
-> * You can only link the Azure Repos app for Slack to a project hosted on Azure DevOps Services at this time.
-> * Notifications are currently not supported inside direct messages.
+> * You can only link the Azure Repos app for Slack to a project hosted on Azure DevOps Services.
+> * Notifications aren't supported inside direct messages.
 
 ## Add the Azure Repos app to your Slack workspace
 

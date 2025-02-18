@@ -16,6 +16,12 @@ ms.date: 10/18/2024
 
 Learn how to troubleshoot common issues with GitHub Advanced Security for Azure DevOps' secret scanning feature.
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To view a summary of all alerts for a repository: **Contributor** permissions for the repository.<br>- To dismiss alerts in Advanced Security: **Project administrator** permissions. For more information about Advanced Security permissions, see [Manage Advanced Security permissions](github-advanced-security-permissions.md).|
+
 ## Secret scanning repository scanning doesn't complete 
 If the repository-level secret scanning upon first enabling Advanced Security appears to be stuck after some time, attempt to disable then re-enable Advanced Security to reset the scanning operation. If re-enabling Advanced Security doesn't result in a successful operation after some time, push a new commit to your repository to reset the scan evaluation. If both of these suggestions don't result in a successful initial scan after a day, file a support ticket.
 

@@ -31,12 +31,13 @@ In this article, learn how to do the following tasks:
 
 ## Prerequisites
 
-- Manage your subscription, so you receive notifications in your channel whenever code gets pushed or checked in, or when a pull request (PR) gets created, updated, or merged. To create subscriptions for repo-related events, be a member of the **Project Administrators** group, or a team administrator.  To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
-- To receive notifications, enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To create subscriptions for repo-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md).<br>- To receive notifications: **Third-party application access via OAuth** setting enabled for the Azure DevOps organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).|
 
 > [!NOTE]
-> * Notifications are currently not supported inside direct messages.
 > * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services.
+> * Notifications aren't supported inside direct messages.
 
 ## Add the Azure Repos app to a team in Microsoft Teams
 
