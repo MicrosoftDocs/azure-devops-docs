@@ -107,7 +107,7 @@ In this step, we make a change to the files on your computer, commit the changes
    git commit -a -m "My first commit"
    ```
 
-   When using `git commit`, `-a` means to commit all changed files, and `-m` specifies a commit message.
+   When you use `git commit`, `-a` means to commit all changed files, and `-m` specifies a commit message.
 
 5. Push your changes up to the Git repo by entering the following command into the Git command window:
 

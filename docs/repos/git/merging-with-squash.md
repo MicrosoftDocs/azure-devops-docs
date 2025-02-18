@@ -60,7 +60,7 @@ Choose **Squash commit** under **Merge type** in the **Complete pull request** d
 The **Files** tab in a pull request detects diffs by a three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their [common merge base](https://git-scm.com/docs/git-merge-base), for example, the best common ancestor. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common. You can check manually if multiple merge bases between the branches exist. To do so, run ```git merge-base --all feature master``` command. Azure DevOps detects existence of multiple merge bases for every PR. When these are detected, Azure DevOps displays the message "Multiple merge bases detected. The list of commits displayed might be incomplete" for the PR. While Azure DevOps is running the detection of multiple merge bases, it  doesn't check if potential merge base was already merged or not. Such check is done by ```git merge-base```. This is why Azure DevOps might display the message even when ```git merge-base``` reports only one merge base.
 
 > [!NOTE]
-> In case you have lost changes during a PR review, ensure that multiple merge bases arne't the root cause.
+> In case you have lost changes during a PR review, ensure that multiple merge bases aren't the root cause.
 
 The following example scenarios get detected by Azure DevOps as multiple bases, with the merge bases indicated by numbers one and two:
 
