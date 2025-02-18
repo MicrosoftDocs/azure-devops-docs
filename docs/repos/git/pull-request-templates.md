@@ -23,6 +23,10 @@ This article shows you how to get started with pull request templates.
 >[!NOTE]
 >Pull request templates can provide guidance, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like main, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## What is a pull request template?
 
 A pull request template is a file containing [Markdown](../../project/wiki/markdown-guidance.md) text that is added to your pull request description when the pull request is created. 

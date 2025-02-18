@@ -21,6 +21,12 @@ This article describes how to delete a Git branch by using two different methods
 > [!NOTE] 
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
+## Delete branch
+
 #### [Browser](#tab/Browser/)
 
 1. View your repo's branches by selecting **Repos** > **Branches** while viewing your repo on the web.
@@ -68,7 +74,7 @@ git push origin --delete <branch_name>
 
 * * *
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Restore a deleted branch](./restore-deleted-branch.md)
