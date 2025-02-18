@@ -7,7 +7,7 @@ ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/05/2025
+ms.date: 02/18/2025
 ---
 
 # Migration overview 
@@ -66,7 +66,10 @@ The tool allows you to "lift and shift" one Azure DevOps Server Collection to on
   - Users can rely on consistent results without unexpected changes. 
 - Migration focus, not transformation: 
   - The primary purpose of the migration tool is to move data from one location to another. 
-  - Data transformation (such as modifying values) is typically handled separately after migration. 
+  - Data transformation, such as modifying values, typically gets handled separately after migration.
+- Supported migration scenarios:
+  - Moving projects from one Azure DevOps Services organization to another Azure DevOps Services organization isn't currently supported.
+  - Migrating from one Azure DevOps Server instance to another isn't supported. 
 
 You can purge data that you don’t need before or after the migration. 
 
