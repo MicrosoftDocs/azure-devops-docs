@@ -402,20 +402,9 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 ::: moniker-end
 
-## Prerequisites 
+## Prerequisites
 
-
-::: moniker range=">= azure-devops-2020"
-- To configure policies, be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-::: moniker-end
-::: moniker range="azure-devops"
-- If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
-::: moniker-end
- 
-::: moniker range="< azure-devops-2020"
-- To configure policies, be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-::: moniker-end
-
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 <a name="view-and-edit-repository-settings"></a>
 

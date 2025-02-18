@@ -30,11 +30,9 @@ This article provides procedures for the following tasks:
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
-
-## Prerequisites for access to Azure Repos
+## Prerequisites
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
-
 
 ## Create a local Git repo from a new solution
 

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Configure billing for GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.topic: how-to 
+ms.topic: conceptual
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
