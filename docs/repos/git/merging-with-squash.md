@@ -14,7 +14,7 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you complete a [pull request](pull-requests.md), you merge the topic branch into your default branch, usually `main`. This merge adds the commits of the topic branch to your main branch and creates a merge commit to reconcile any conflicts between the default and topic branch. The comments and discussion in the pull request give additional context for the changes made in the topic branch.
+When you complete a [pull request](pull-requests.md), you merge the topic branch into your default branch, usually `main`. This merge adds the commits of the topic branch to your main branch and creates a merge commit to reconcile any conflicts between the default and topic branch. The comments and discussion in the pull request give more context for the changes made in the topic branch.
 
 ![Example of a regular merge from a pull request.](media/merging-with-squash/regular-branch-merge.png)
 
@@ -28,7 +28,7 @@ The default branch is an accurate representation of the history of each topic br
 
 ## Squash merge
 
-Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. Squash merge commit doesn't have a reference to the topic branch, it will produce a **new commit** that contains all changes from the topic branch. Furthermore it is recommended to delete the topic branch to prevent any confusion.
+Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of adding each commit on the topic branch to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. Squash merge commit doesn't have a reference to the topic branch. It produces a **new commit** that contains all changes from the topic branch. We recommend that you delete the topic branch to prevent any confusion.
 
 ![Diagram of squash merging in pull requests in Azure Repos.](media/merging-with-squash/squash-branch-merge.png)
 
@@ -36,11 +36,11 @@ A simple way to think about this is that squash merge gives you just the file ch
 
 ### How is a squash merge helpful?
 
-Squash merging keeps your default branch histories clean and easy to follow without demanding any workflow changes on your team. Contributors to the topic branch work how they want in the topic branch, and the default branches keep a linear history through the use of squash merges. The commit history of a `main` branch updated with squash merges has one commit for each merged branch. You can step through this history to find out exactly when work was done.
+Squash merging keeps your default branch histories clean and easy to follow without demanding any workflow changes on your team. Contributors to the topic branch work how they want in the topic branch, and the default branches keep a linear history by using squash merges. The commit history of a `main` branch updated with squash merges has one commit for each merged branch. You can step through this history to find out exactly when work was done.
 
 ### Considerations when squash merging
 
-Squash merging condenses the history of changes in your default branch, so it's important to work with your team to decide when you should squash merge or when you want to keep the full commit history of a topic branch. When squash merging, it's a good practice to delete the source branch. Deleting the source branch prevents confusion as the topic branch itself doesn't have a commit merging it into the default branch.
+Squash merging condenses the history of changes in your default branch, so it's important to work with your team to decide when to squash merge versus keeping the full commit history of a topic branch. When squash merging, it's a good practice to delete the source branch. Deleting the source branch prevents confusion as the topic branch itself doesn't have a commit merging it into the default branch.
 
 ::: moniker range=">= azure-devops-2019"
 ### Complete pull requests with squash merge
@@ -57,14 +57,14 @@ Choose **Squash commit** under **Merge type** in the **Complete pull request** d
 
 ## Multiple merge bases
 
-The **Files** tab in a pull request detects diffs by a three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their [common merge base](https://git-scm.com/docs/git-merge-base) (i.e. the best common ancestor). The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common. You can check manually if multiple merge bases between the branches exist. To do so, run ```git merge-base --all feature master``` command. Azure DevOps detects existence of multiple merge bases for every PR. When these are detected, Azure DevOps displays the message "Multiple merge bases detected. The list of commits displayed might be incomplete" for the PR. While Azure DevOps is running the detection of multiple merge bases, it  does not check if potential merge base was already merged or not. Such check is done by ```git merge-base```. This is why Azure DevOps may display the message even when ```git merge-base``` reports only one merge base.
+The **Files** tab in a pull request detects diffs by a three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their [common merge base](https://git-scm.com/docs/git-merge-base), for example, the best common ancestor. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common. You can check manually if multiple merge bases between the branches exist. To do so, run ```git merge-base --all feature master``` command. Azure DevOps detects existence of multiple merge bases for every PR. When these are detected, Azure DevOps displays the message "Multiple merge bases detected. The list of commits displayed might be incomplete" for the PR. While Azure DevOps is running the detection of multiple merge bases, it  doesn't check if potential merge base was already merged or not. Such check is done by ```git merge-base```. This is why Azure DevOps might display the message even when ```git merge-base``` reports only one merge base.
 
 > [!NOTE]
-> In case you have lost changes during a PR review, please ensure that multiple merge bases is not the root cause.
+> In case you have lost changes during a PR review, ensure that multiple merge bases arne't the root cause.
 
-The following scenarios are detected by Azure DevOps as multiple bases (the merge bases are indicated by number 1 and 2):
+The following example scenarios get detected by Azure DevOps as multiple bases, with the merge bases indicated by numbers one and two:
 
-- Cross-merges (also known as a criss-cross) between different branches (reported by Azure DevOps as well as ```git merge-base```)
+- Cross-merges (also known as a criss-cross) between different branches (reported by Azure DevOps and ```git merge-base```)
 ```
 ---1---o---A
     \ /
@@ -80,7 +80,7 @@ The following scenarios are detected by Azure DevOps as multiple bases (the merg
       \       \
        \---o---o---o---B
 ```
-- Handling aftermaths of main branch reverts, e.g. amend the merge commit
+- Handling aftermaths of main branch reverts, for example, amend the merge commit
 ```
 *   42bb2d2 (HEAD, A) Amended merge commit
 |\  
@@ -95,12 +95,12 @@ The following scenarios are detected by Azure DevOps as multiple bases (the merg
 * 6a52130 add init
 ```
 - Active reuse of feature branches
-- Other non-intuitive and convoluted manipulations with reverts, cherry picks, and merges
+- Other nonintuitive and convoluted manipulations with reverts, cherry picks, and merges
 
 
 Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface might not properly detect file changes, depending on which merge base it chooses. If the files in the pull request have different versions between the merge bases, a multiple merge base warning occurs.
 
-Please review [the official git documentation](https://git-scm.com/docs/git-merge-base) for more details.
+Review [the official git documentation](https://git-scm.com/docs/git-merge-base) for more details.
 
 ### Potential security risks of merging from multiple bases
 
