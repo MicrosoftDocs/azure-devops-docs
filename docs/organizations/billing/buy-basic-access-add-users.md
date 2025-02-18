@@ -8,7 +8,7 @@ ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/04/2024
+ms.date: 02/10/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -24,7 +24,7 @@ Visual Studio subscribers get access included with their subscription, and their
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
-::: moniker range=" < azure-devops"
+::: moniker range=" azure-devops"
 
 ## Prerequisites
 
@@ -33,28 +33,22 @@ Ensure you have the following items in place:
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
-|**Licensing**| [Licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
-
-## Pay via Azure
-
-Complete the following steps to pay via Azure.
-
-1. [Create an Azure DevOps organization](../accounts/create-organization.md), even if you don't intend to use it.
-2. [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) using an Azure subscription and add users or buy CI/CD.
-3. Assign licenses to users.
-
-You're entitled to the same number of user licenses to be used in the server.
+|**Billing**| [Billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization.|
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=" < azure-devops"
 
 ## Prerequisites
 
-Ensure you have the following items in place:
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
+|**Licensing**| [Licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
 
-* Ensure [billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization.
-* **Permissions**: Be a member of the [Project Collection Administrators](../security/look-up-project-collection-administrators.md) group. Organization owners are already members of this group.
+::: moniker-end
+
+::: moniker range=" azure-devops"
 
 <a name="buy-access-vs-marketplace"></a>
 
@@ -64,10 +58,11 @@ The easiest way to control paid access is to manually assign an access level. Yo
 
 Keep the following information in mind:
 
-- **Visual Studio subscribers** get detected automatically when they sign in. There's no extra charge for users with a Visual Studio subscription.
-- **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
-- **Basic** is free for the first 5 users, and paid for 6 or more users.
-- **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
+- **Visual Studio** subscribers get detected automatically when they sign in. There's no extra charge for users with a Visual Studio subscription.
+- **GitHub Enterprise** users get detected automatically when they sign in. There's no extra charge for users with a GitHub Enterprise license.
+- **Stakeholder** access is a [free access level with limited functionality](../security/get-started-stakeholder.md).
+- **Basic** access is free for the first 5 users and paid for 6 or more users.
+- **Basic + Test Plans** access is paid only, but [free to try for 30 days](try-additional-features-vs.md).
 
 ## Select default access level for new users
 
@@ -75,7 +70,7 @@ All new users get the free Stakeholder access if they're added directly to a pro
 
 To change the access level for new users added to projects, do the following steps:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -94,7 +89,7 @@ To change the access level for new users added to projects, do the following ste
 Group rules provide a great way to automate access level assignment for your organization. This way, you don't have to manually assign access each time a user gets added or removed. For more information, see [Group rules](../accounts/assign-access-levels-by-group-membership.md).
 
 > [!NOTE]
-> A group rule supersedes the default access level. For instance, if a user's part of a group that's assigned Basic access level, they get Basic, even if the default access level's set to Stakeholder. The default access level applies to users who aren't part of any group rules.
+> A group rule supersedes the default access level. For instance, if a user's part of a group  assigned the **Basic** access level, they get **Basic** access, even if the default access is set to Stakeholder. The default access level applies to users who aren't part of any group rules.
 
 ## Reduce charges for users with no access
 
@@ -139,6 +134,20 @@ For more information, see [multi-organization billing FAQs](./billing-faq.yml). 
 5. Select **Multi-organization**, and then select **Save**.
 
    ![Screenshot showing selected Multi-organization in Configure user billing screen.](media/buy-more-basic-access/select-multi-organization-billing.png)
+
+::: moniker-end
+
+::: moniker range=" < azure-devops"
+
+## Pay via Azure
+
+To pay via Azure, do the following steps:
+
+1. [Create an Azure DevOps organization](../accounts/create-organization.md), even if you don't intend to use it.
+2. [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) using an Azure subscription and add users or buy CI/CD.
+3. Assign licenses to users.
+
+You're entitled to the same number of user licenses to be used in the server.
 
 ::: moniker-end
 

@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 04/22/2024
+  ms.date: 02/10/2025
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -18,6 +18,7 @@ summary: |
   Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. We grouped the FAQs by the following subjects:
   - [General permissions](#general-permissions)
   - [Visual Studio subscriptions](#visual-studio-subscriptions)
+  - GitHub Enterprise
   - [User access](#user-access)
   - [Change app access policies](#change-app-access-policies)
   - [Organizations](#leave-organization)
@@ -61,11 +62,7 @@ sections:
         answer: |
           A: If you have at least **Basic** access, you can find a member of the **Project Collection Administrators** group in your organization's or collection's settings.
           
-          ::: moniker range=">= azure-devops-2019"
-          
           For more information, see [Look up a project collection administrator](../security/look-up-project-collection-administrators.md).
-          
-          ::: moniker-end
       
       - question: Why can't users access some features?
         answer: |
@@ -116,8 +113,47 @@ sections:
         answer: |
           A: If no other access levels are available, users can [work as Stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
           
-          <a name="user-access"></a>
+          <a name="github-enterprise"></a>
+
+  - name: GitHub Enterprise
+    questions:
+      - question: |
+          Q: Which GitHub Enterprise customers are eligible for Azure DevOps access?
+        answer: |
+          A: GitHub Enterprise Cloud customers who access GitHub and Azure DevOps with the same Entra tenant. Users must sign in using the same identity in GitHub and Azure DevOps. 
           
+      - question: |
+          Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
+        answer: |
+          A: Users of GitHub Enterprise Server are detected if they also have a matching license in the cloud. For more information, see [Syncing license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
+
+      - question: |
+          Q: What kind of access do GitHub Enterprise users get in Azure DevOps?
+        answer: |
+          A: Basic access, which includes all features except Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+
+      - question: |
+          Q: How are GitHub Enterprise users detected?
+        answer: |
+          A: Azure DevOps automatically checks if a user has GitHub Enterprise when the user signs in. It can take up to 24 hours for their access level to change to GitHub Enterprise. There are no charges for a user with the GitHub Enterprise access level.
+
+      - question: |
+          Q: What access level should I select if a user has a GitHub Enterprise license?
+        answer: |
+          A: If you know a user has a GitHub Enterprise license, the best option to choose is Stakeholder, to avoid any charges for Basic before the user signs in for the first time
+
+      - question: |
+          Q: What if a GitHub Enterprise user needs access to Test Plans?
+        answer: |
+          A: GitHub Enterprise users who need access to Test Plans can be assigned the Basic + Test Plans access level. 
+
+      - question: |
+          Q: What if a GitHub Enterprise user also has a Visual Studio subscription?
+        answer: |
+          A: If a user accessing Azure DevOps has both a GitHub Enterprise and Visual Studio subscription, they get detected as a Visual Studio subscriber. A Visual Studio subscription always gives them the same Basic access, and might provide access to Test Plans, depending on the subscription level.
+
+          <a name="user-access"></a>
+
   - name: User access
     questions:
       

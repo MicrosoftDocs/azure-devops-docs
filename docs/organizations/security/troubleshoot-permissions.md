@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/05/2024
+ms.date: 02/10/2025
 --- 
 
 # Troubleshoot access and permission issues
@@ -65,6 +65,7 @@ You can assign users or groups of users to one of the following access levels:
 - Basic
 - Basic + Test Plans
 - Visual Studio subscription
+- GitHub Enterprise
 
 For more information about restricting access levels in Azure DevOps, see [Supported access levels](access-levels.md#supported-access-levels).
 
@@ -74,11 +75,11 @@ Users can lose access for the following reasons:
 
 |**Reason for loss of access**  |**Troubleshooting action**|
 |---------|---------|
-|The user's Visual Studio subscription expired.     | Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
+|The user's Visual Studio subscription expired.     | This user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
 |The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
 |The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)        |
 
-Otherwise, on the first day of the calendar month, users who didn't sign in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
+Otherwise, users who didn't sign in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 
 For more information about permissions, see [Permissions and groups](permissions.md) and the [Permissions lookup guide](permissions-lookup-guide.md).
 

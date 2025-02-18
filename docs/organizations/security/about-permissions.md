@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 12/20/2024
+ms.date: 02/10/2025
 ---
 
 # About permissions and security groups
@@ -27,7 +27,10 @@ For more information, see [Security overview](security-overview.md).
 
 All Azure DevOps users have an *access level*, which grants or restricts access to specific web portal features.  
 
-There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Use the Stakeholder access level for users who don’t need paid access. Don't use Stakeholder access as a substitute for more limited permissions, as users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder when they sign in. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. 
+
+Stakeholder access provides free access to an unlimited number of users with a limited set of features. Use this access level for users who don’t need paid access.
+Don't use Stakeholder access instead of more limited permissions. Users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder to Basic access when they sign in. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 To give a user access to Agile portfolio management or test case management features, [change access levels](change-access-levels.md), not permissions. For more information, see [About access levels](access-levels.md).
  
