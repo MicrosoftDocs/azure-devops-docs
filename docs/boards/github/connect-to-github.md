@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/22/2024
+ms.date: 02/10/2025
 ---
 
 # Connect Azure Boards to GitHub (cloud) 
@@ -61,7 +61,7 @@ The following authentication options are supported based on the GitHub platform 
 
 	:::image type="content" source="media/connect-cloud/open-project-settings-github-connections.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::
 
-3. If this is your first time connecting from the project, select **Connect your GitHub account** to use your GitHub account credentials.
+3. If it's your first time connecting from the project, select **Connect your GitHub account** to use your GitHub account credentials.
 
 	:::image type="content" source="media/connect-cloud/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
@@ -73,15 +73,15 @@ The following authentication options are supported based on the GitHub platform 
 
 You can connect up to 500 GitHub repositories to an Azure Boards project. 
 
-1. If this is your first time connecting to GitHub from Azure Boards, sign in using your GitHub credentials. Choose an account for which you're a repository administrator.
+1. If it's your first time connecting to GitHub from Azure Boards, sign in using your GitHub credentials. Choose an account for which you're a repository administrator.
 
 2. Select the GitHub account or organization you want to connect. Only organizations that you own or are an administrator for are listed.
 
-   If all repositories for an organization are already connected to Azure Boards, you will see the following message:
+   If all repositories for an organization are already connected to Azure Boards, the following message shows:
 
    :::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect.":::
 
-3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code sent by GitHub and select **Verify**. If not, the system will automatically recognize your GitHub organization as your GitHub account is associated with your Azure DevOps Services account.
+3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code sent by GitHub and select **Verify**. If not, the system automatically recognizes your GitHub organization as your GitHub account is associated with your Azure DevOps Services account.
 
 <a id="choose-repositories"></a> 
 
@@ -353,7 +353,7 @@ To resolve this issue, consider the following items:
 
 ### Resolve broken GitHub Enterprise Server connection  
 
-If you migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection may not work as expected. Work item mentions within GitHub might be delayed or never appear in Azure DevOps Services because the callback URL associated with GitHub is no longer valid.
+If you migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection might not work as expected. Work item mentions within GitHub might be delayed or never appear in Azure DevOps Services because the callback URL associated with GitHub is no longer valid.
 Consider the following resolutions:
 
 - **Remove and re-create the connection**:
@@ -366,7 +366,7 @@ Consider the following resolutions:
 
 ### Connect to multiple Azure DevOps organizations 
 
-Connecting your GitHub repository to projects in multiple Azure DevOps organizations, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, can cause unexpected results with **AB#** mentions. Work item IDs aren't unique across Azure DevOps organizations, so **AB#12** could refer to a work item in either Contoso or Fabrikam. When a work item is mentioned in a commit message or pull request, both organizations might attempt to link to a work item with the matching ID, causing confusion.
+When you connect your GitHub repository to projects in multiple Azure DevOps organizations, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, can cause unexpected results with **AB#** mentions. Work item IDs aren't unique across Azure DevOps organizations, so **AB#12** could refer to a work item in either Contoso or Fabrikam. When a work item is mentioned in a commit message or pull request, both organizations might attempt to link to a work item with the matching ID, causing confusion.
 
 To avoid this issue, connect a single GitHub repository to only one Azure DevOps organization.
 
@@ -389,7 +389,7 @@ Follow the sequence of tasks provided in [Hosted XML process model](../../organi
 >              <ExternalLinkFilter Type="GitHub Commit" />  
 > ```
 
-After updating, the section should appear as follows.
+After you update, the section should appear as follows.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -420,13 +420,16 @@ After updating, the section should appear as follows.
 ## FAQs
 
 ### Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users to my organization?
-A: No. Ask your users to sign out and then sign back in to the organization with their GitHub credentials from a fresh browser session. This action will establish their GitHub identities.
+A: No. Ask your users to sign out and then sign back in to the organization with their GitHub credentials from a fresh browser session. This action establishes their GitHub identities.
 
 ### Q: I'm an organization Administrator and I enabled the policy for inviting GitHub users. Why can't I invite new GitHub users?
 A: After changing the setting, sign out of Azure DevOps and then sign back in to the organization (`dev.azure.com/{organizationName}` or `organizationName.visualstudio.com`) with your GitHub credentials from a fresh browser session.
 
 ### Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
 A: Only organization or project Administrators can invite new users to join the organization. You might not have the required permissions to add new users. Work with your administrator to get the necessary permissions or ask them to add the user for you.
+
+### Q: Do GitHub Enterprise users get free access to Azure DevOps?
+A: For more information, see [User and permissions management FAQs/GitHub Enterprise](../../organizations/accounts/faq-user-and-permissions-management.yml).
 
 ## Next steps
 
