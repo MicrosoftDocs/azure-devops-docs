@@ -17,7 +17,18 @@ ms.date: 11/21/2024
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-Attachments enhance work items by enabling you to share essential information with your team. You can attach files, images, and links directly to work items, facilitating better collaboration and documentation. Each work item can include up to **100 attachments**, with each file limited to **60 MB**. This article provides guidance on managing attachments within Azure DevOps.
+Attachments enhance work items by enabling you to share essential information with your team. You can attach files, images, and links directly to work items, facilitating better collaboration and documentation. This article provides guidance on managing attachments within Azure DevOps.
+
+::: moniker range="azure-devops"
+
+Each work item can include up to **100 attachments**, with each file limited to **60 MB**. This article provides guidance on managing attachments within Azure DevOps.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+By default, each work item can include up to **100 attachments**, with each file limited to **4 MB**. The maximum size of attachments can be configured via the Azure DevOps Server Administration Console. 
+
+::: moniker-end
 
 ## Prerequisites
 
