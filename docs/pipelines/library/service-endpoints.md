@@ -781,9 +781,9 @@ Other service connection types and tasks can be installed as extensions. See the
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-<!--  ## FAQs and Troubleshoot service connections -->
+## FAQs and Troubleshoot service connections
 
-<!-- ### Q: -->
-<!-- **A:**  -->
+### Q: How does Azure DevOps ensure efficient usage of Entra ID resources?
+Azure DevOps may internally cache Entra ID access tokens issued for target identities in service connections that use Entra ID authentication, such as [Azure Resource Manager](#azure-resource-manager-service-connection) and [Docker Registry](#docker-registry-service-connection). This helps prevent Entra ID throttling, which can occur due to a high number of server task executions and other actions that requires Azure DevOps to authenticate with Entra ID to serve the request. Caching applies only to server flows where the token is never exposed to the caller. If you receive an Entra ID token it will always be freshly issued. Modifying the service connection invalidates its token cache and temporarily disables caching for this service endpoint. If you're experiencing any issue due to the staleness of the token following changes made in Entra ID, wait for an hour or try updating the corresponding service endpoint.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
