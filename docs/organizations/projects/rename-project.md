@@ -58,16 +58,15 @@ The following results occur after the rename operation.
 * Work item IDs are unique in the organization and therefore the links don't expire.
 * The old project name can be used again.
 
-<a id="more-work"></a>
-
 ## Required user actions for working with the renamed project
 
 Each user within your team must [restart their clients](#restart-clients) and do some of the following actions, based on the features they use:
 - [Update Git remotes](#update-git-remotes)
 - [Update Team Foundation Version Control (TFVC) server workspaces](#update-tfvc-server-workspaces)
 - [Update TFVC local workspaces](#update-tfvc-local-workspaces)
+- [Update OData feeds](#update-odata-feeds)
+- [Update Analytics views](#update-analytics-views)
 
-<a id="restarting-clients"></a>
 
 ### Restart clients
 
@@ -78,15 +77,12 @@ For the following clients, save your work in each and then restart:
 - Visual Studio Team Explorer
 - Microsoft Excel, if your team uses the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) 
 
-<a id="git"></a>
-
 ### Update Git remotes
 
 If your project uses Git, then your remote references for each repository from the renamed project must be updated. These updates are necessary because the remote repository URL contains the project and the repository name. Git uses remote references to fetch and push changes between your local repository and the remote version stored on the server. Each member of your team must update their local Git repositories to continue connecting from their dev machines. 
 
 For more information, see [Update the Git remotes on your dev machines](../../repos/git/repo-rename.md#update-the-git-remotes-on-your-dev-machines).
 
-<a id="tfvc-server"></a>
 
 ### Update TFVC server workspaces
 
@@ -97,7 +93,6 @@ For Visual Studio clients, execute a get or check in and then the workspace mapp
 
 For more information, see [Rename command (TFVC)](../../repos/tfvc/rename-command-team-foundation-version-control.md).
 
-<a id="tfvc-local"></a>
 
 ### Update TFVC local workspaces
 
@@ -108,6 +103,14 @@ We recommend you update your clients to the latest update or release, if possibl
 
 Local workspaces get managed locally and not on the server. Older clients without the updated rename logic can't update local workspaces to the new project name. 
 
+### Update OData feeds
+
+If you use OData feeds in Power BI, update the feed URL to use the new project name. Updating the feed URL is essential to maintain data connections and avoid errors in reporting. For more information, see [Overview of sample reports using OData queries](../../report/powerbi/sample-odata-overview.md).
+
+### Update Analytics views
+
+If you created custom Analytics views using the old project name, you need to update the views with the new name. For more information, see [Analytics views](../../report/powerbi/analytics-views-manage.md#edit-an-existing-view).
+
 ## Related articles
 
 - [Delete a project](delete-project.md)
@@ -116,7 +119,7 @@ Local workspaces get managed locally and not on the server. Older clients withou
 ## Frequently asked questions (FAQs)
 
 ### Q: Why did my attempt to reuse a project name fail due to existing work spaces?
-A: You can't reuse a project name if there are still workspace mappings addressing it. This function helps avoid the ambiguity case where a workspace could be mapped to two projects. Contact the users who have these mappings, and either delete them or [update them](rename-project.md#tfvc-server) to use the new name.
+A: You can't reuse a project name if there are still workspace mappings addressing it. This function helps avoid the ambiguity case where a workspace could be mapped to two projects. Contact the users who have these mappings, and either delete them or [update them](#update-tfvc-server-workspaces)) to use the new name.
 
 If the user's machine containing the workspace is no longer available, then you can delete the workspace by running the following command from Visual Studio's developer command prompt:
 ```tf workspace /delete [/collection:TeamProjectCollectionUrl] workspacename[;workspaceowner]```
