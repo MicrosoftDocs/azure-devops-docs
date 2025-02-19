@@ -105,7 +105,7 @@ Local workspaces get managed locally and not on the server. Older clients withou
 
 ### Update OData feeds
 
-If you use OData feeds, update the feed URL to use the new project name. Updating the feed URL is essential to maintain data connections and avoid errors in reporting. For more information, see [Overview of sample reports using OData queries](../../report/powerbi/sample-odata-overview.md).
+If you use OData feeds in Power BI, update the feed URL to use the new project name. Updating the feed URL is essential to maintain data connections and avoid errors in reporting. For more information, see [Overview of sample reports using OData queries](../../report/powerbi/sample-odata-overview.md).
 
 ### Update Analytics views
 
