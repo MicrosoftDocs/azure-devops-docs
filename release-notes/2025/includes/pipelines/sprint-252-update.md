@@ -15,7 +15,7 @@ Some tools are no longer available on the Ubuntu 24.04 image:
 | Task/Took                             | Description                       |
 |---------------------------------------|-----------------------------------|
 | `MSBuild@1`                           | Task doesn't work as Mono and MSBuild are not available for Ubuntu 24. Use native [.NET on Ubuntu](https://learn.microsoft.com/dotnet/core/install/linux-ubuntu) instead. |
-| `NuGetCommand@2`                      | Task has reduced functionality as Mono and NuGet are not available for Ubuntu 24, see instructions on [Migrating to .NET CLI on Ubuntu](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/nuget-command-v2?view=azure-pipelines#support-for-newer-ubuntu-hosted-images). |
+| `NuGetCommand@2`                      | Task has reduced functionality as Mono and NuGet are not available for Ubuntu 24, see instructions on [Migrating to .NET CLI on Ubuntu](/azure/devops/pipelines/tasks/reference/nuget-command-v2?view=azure-pipelines#support-for-newer-ubuntu-hosted-images). |
 | Terraform                             | Terraform is not available on the `ubuntu-24.04` image. You can use the [Terraform extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) and `TerraformInstaller@1` task to make Terraform available in your pipeline. |
 
 For more details on software differences with the Ubuntu 22.02 image, see [Ubuntu-24.04 image](https://github.com/actions/runner-images/issues/10636).
@@ -23,7 +23,7 @@ For more details on software differences with the Ubuntu 22.02 image, see [Ubunt
 In preparation of the mapping of `ubuntu-latest` and `ubuntu-24.04`, pipelines using these image labels will show warnings over the coming weeks.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of warnings for Ubuntu-24.04 jobs.](../../media/252-pipelines-02.png "Screenshot of warnings for Ubuntu-24.04 jobs")](../../media/252-ghazdo-02.png#lightbox)
+> [![Screenshot of warnings for Ubuntu-24.04 jobs.](../../media/252-pipelines-02.png "Screenshot of warnings for Ubuntu-24.04 jobs")](../../media/252-pipelines-02.png#lightbox)
 
 
 ### Informational runs
@@ -33,6 +33,6 @@ In preparation of the mapping of `ubuntu-latest` and `ubuntu-24.04`, pipelines u
 Starting with this sprint, we're adding support for informational runs for pipelines hosted in Azure Repos. You can see an example below.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of informational runs.](../../media/252-pipelines-01.png "Screenshot of informational runs")](../../media/252-ghazdo-01.png#lightbox)
+> [![Screenshot of informational runs.](../../media/252-pipelines-01.png "Screenshot of informational runs")](../../media/252-pipelines-01.png#lightbox)
 
 The pipeline run error tells you the YAML file is incorrect, and this prevents Azure Pipelines from evaluating its trigger conditions.
