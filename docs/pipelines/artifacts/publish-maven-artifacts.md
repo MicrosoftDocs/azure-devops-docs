@@ -84,6 +84,9 @@ steps:
 
 ---
 
+> [!NOTE]
+> To publish packages to a feed using Azure Pipelines, make sure that both the *Project Collection Build Service* and your project's *Build Service* identities have the **Feed Publisher (Contributor)** role in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
+
 ## Publish packages to a feed in another organization
 
 To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
