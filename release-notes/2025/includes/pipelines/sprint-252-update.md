@@ -15,10 +15,10 @@ Some tools are no longer available on the Ubuntu 24.04 image:
 | Task/Took                             | Description                       |
 |---------------------------------------|-----------------------------------|
 | `MSBuild@1`                           | Task doesn't work as Mono and MSBuild are not available for Ubuntu 24. Use native [.NET on Ubuntu](https://learn.microsoft.com/dotnet/core/install/linux-ubuntu) instead. |
-| `NuGetCommand@2`                      | Task has reduced functionality as Mono and NuGet are not available for Ubuntu 24, see instructions on [Migrating to .NET CLI on Ubuntu](/azure/devops/pipelines/tasks/reference/nuget-command-v2?view=azure-pipelines#support-for-newer-ubuntu-hosted-images). |
-| Terraform                             | Terraform is not available on the `ubuntu-24.04` image. You can use the [Terraform extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) and `TerraformInstaller@1` task to make Terraform available in your pipeline. |
+| `NuGetCommand@2`                      | Task has reduced functionality as Mono and NuGet aren't available for Ubuntu 24, see instructions on [Migrating to .NET CLI on Ubuntu](/azure/devops/pipelines/tasks/reference/nuget-command-v2?view=azure-pipelines#support-for-newer-ubuntu-hosted-images). |
+| Terraform                             | Terraform isn't available on the `ubuntu-24.04` image. You can use the [Terraform extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) and `TerraformInstaller@1` task to make Terraform available in your pipeline. |
 
-For more details on software differences with the Ubuntu 22.02 image, see [Ubuntu-24.04 image](https://github.com/actions/runner-images/issues/10636).
+For more information on software differences with the Ubuntu 22.02 image, see [Ubuntu-24.04 image](https://github.com/actions/runner-images/issues/10636).
 
 In preparation of the mapping of `ubuntu-latest` and `ubuntu-24.04`, pipelines using these image labels will show warnings over the coming weeks.
 

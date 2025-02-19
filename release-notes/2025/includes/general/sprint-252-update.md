@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Microsoft Entra profile information (preview)
 
-In the fall we introduced the integration of [Microsoft Entra profile information](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops&tabs=preview-page) in Azure DevOps, removing the need for separate profile updates. Over the coming weeks we'll make it the default experience for more and more users. 
+In the fall we introduced the integration of [Microsoft Entra profile information](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops&tabs=preview-page) in Azure DevOps, removing the need for separate profile updates. Over the coming weeks we'll make it the default experience for more users. 
 
 We expect the preview to last a month or two, and after that this will be the way profile information works for Entra users in Azure DevOps. If you need to opt-out during the preview, please share feedback as to why, so we can fix any issues during the preview. Thanks!
 
@@ -17,8 +17,8 @@ We expect the preview to last a month or two, and after that this will be the wa
 
 ### Basic access included with GitHub Enterprise
 
-Starting this week, we are including Azure DevOps Basic usage rights with GitHub Enterprise licenses and automating the experience for Azure DevOps customers.
+Starting this week, we're including Azure DevOps Basic usage rights with GitHub Enterprise licenses and automating the experience for Azure DevOps customers.
 
-GitHub Enterprise cloud customers who use Microsoft Entra will automatically be recognized in Azure DevOps. Their access level will change to “GitHub Enterprise” and these users will not accrue additional charges in Azure DevOps [Learn more about access for GitHub Enterprise users](/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops).
+GitHub Enterprise cloud customers who use Microsoft Entra will automatically be recognized in Azure DevOps. Their access level will change to “GitHub Enterprise” and these users won't accrue additional charges in Azure DevOps [Learn more about access for GitHub Enterprise users](/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops).
 
 Initially this capability will be limited to GitHub Enterprise Cloud customers, but we’ll be adding GitHub Enterprise Cloud with Data Residency customers soon.
