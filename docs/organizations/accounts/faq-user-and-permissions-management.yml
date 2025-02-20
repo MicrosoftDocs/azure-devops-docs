@@ -15,17 +15,7 @@ title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-  Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. We grouped the FAQs by the following subjects:
-  - [General permissions](#general-permissions)
-  - [Visual Studio subscriptions](#visual-studio-subscriptions)
-  - GitHub Enterprise
-  - [User access](#user-access)
-  - [Change app access policies](#change-app-access-policies)
-  - [Organizations](#leave-organization)
-  - [Group-based licensing](#group-based-licensing)
-  - [Add members to projects](#add-members-to-projects)
-  - [Switch between accounts in Azure DevOps and the Azure portal](#switch-between-accounts-in-azure-devops-and-the-azure-portal)
-  
+  Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. We grouped the FAQs by the following subjects.
   <a name="general-permissions"></a>
   
 
