@@ -8,12 +8,12 @@ ms.topic: include
 
 ### Microsoft Entra profile information (preview)
 
-Last fall, we introduced the integration of [Microsoft Entra profile information](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops&tabs=preview-page) in Azure DevOps, removing the need for separate profile updates. Over the coming weeks we'll make it the default experience for more users. 
+Last fall, we introduced [Microsoft Entra profile information](/azure/devops/organizations/settings/set-your-preferences?view=azure-devops&tabs=preview-page) integration in Azure DevOps, so you no longer need to update your profile separately. Over the next few weeks, this will become the default experience. 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Entra profile information toggle.](../../media/252-general-01.png "Screenshot of Entra profile information toggle")](../../media/252-general-01.png#lightbox)
 
-The preview is expected to last a month or two, and after that this will be the way profile information works for Entra users in Azure DevOps. If you need to opt-out during the preview, please share feedback as to why, so we can address any issues during the preview.
+The preview will run for a month or two, and after that this will be the way profile information works for Entra users in Azure DevOps. If you need to opt-out during the preview, please share feedback so we can address any issues during the preview.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of feedback box.](../../media/252-general-02.png "Screenshot of feedback box")](../../media/252-general-01.png#lightbox)
