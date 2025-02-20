@@ -16,7 +16,7 @@ ms.date: 10/18/2024
 
 Advanced Security maintains multiple sets of default secret scanning patterns: 
 
-* ***Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
+* **Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
 * **User alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
 * **Non-provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled.
 

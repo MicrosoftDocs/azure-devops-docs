@@ -28,11 +28,13 @@ Total active committers are the number of committers who contributed to at least
 
 Before you enable Advanced Security for your organization, project, or repository, you can see an estimate of the number of active committers you might get charged for. 
 
-[![Screenshot of Advanced Security pop up with an estimated committee count.](media/enable-github-advanced-security-project-committers.png)](media/enable-github-advanced-security-project-committers.png#lightbox)
+> [!div class="mx-imgBorder"]  
+> [![Screenshot of Advanced Security pop up with an estimated committee count.](media/enable-github-advanced-security-project-committers.png)](media/enable-github-advanced-security-project-committers.png#lightbox)
 
 You can find the exact number of consumed licenses (active committer count in Advanced Security-enabled repositories) for Advanced Security under **Organization settings > Billing**. This number represents active committers as measured for the previous day.
 
-[ ![Screenshot of organization billing settings showing active committer count.](./media/billing-active-committer-count.png)](./media/billing-active-committer-count.png#lightbox)
+> [!div class="mx-imgBorder"]  
+> [![Screenshot of organization billing settings showing active committer count.](./media/billing-active-committer-count.png)](./media/billing-active-committer-count.png#lightbox)
 
 If you disable Advanced Security for all repositories in your organization, the active committer estimate disappears but you can watch your billing on your Azure subscription in the Azure portal.
 

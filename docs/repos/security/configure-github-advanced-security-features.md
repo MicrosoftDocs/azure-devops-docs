@@ -14,9 +14,8 @@ ms.date: 02/20/2025
 
 # Configure GitHub Advanced Security for Azure DevOps
 
-GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. 
+GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos and includes the following features:
 
-GitHub Advanced Security for Azure DevOps includes:
 * Secret Scanning push protection: check if code pushes include commits that expose secrets such as credentials  
 * Secret Scanning repo scanning: scan your repository and look for exposed secrets that were committed accidentally
 * Dependency Scanning – search for known vulnerabilities in open source dependencies (direct and transitive)
@@ -32,9 +31,7 @@ GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Ser
 
 ### Extra prerequisites for self-hosted agents
 
-If your organization uses self-hosted agents, there are more requirements: 
-
-* Add these URLs to your Allowlist to allow for the dependency scanning task to fetch vulnerability advisory data. Learn more about [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md). 
+If your organization uses self-hosted agents, add the following URLs to your Allowlist so the dependency scanning task can fetch vulnerability advisory data. For more information, see [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md). 
 
 | Domain URL  | Description |
 | ----------- | ----------- |
