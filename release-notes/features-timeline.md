@@ -281,7 +281,7 @@ Below, you will find several investments we plan to deliver as part of this init
       <tr>
          <td>Container based agents</td>
          <td>Pipelines</td>
-         <td>2025 Q2</td>
+         <td>2025 Q4</td>
       </tr>
    </tbody>
 </table>
