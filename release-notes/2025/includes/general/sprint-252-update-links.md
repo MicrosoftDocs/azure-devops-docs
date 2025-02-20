@@ -8,3 +8,4 @@ ms.topic: include
 
 - [Microsoft Entra profile information (preview)](#microsoft-entra-profile-information-preview)
 - [Basic access included with GitHub Enterprise](#basic-access-included-with-github-enterprise)
+- [Azure DevOps Allowed IP addresses](#azure-devops-allowed-ip-addresses)
