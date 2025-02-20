@@ -5,7 +5,7 @@ ms.author: ckanyika
 ms.date: 2/20/2025
 description: Azure Boards streamlines workflows 
 ---
-# Azure Boards streamlines workflows with automatically build links in YAML pipelines
+# Azure Boards streamlines workflows with automatic build links in YAML pipelines
 
 With this update, Azure Boards delivers a more seamless experience with key improvements. Build links in YAML pipelines now automatically connect completed builds to work items, making it easier to track progress. Additionally, the New Boards Hub is becoming the default experience, offering a more consistent and efficient way to manage work.
 
