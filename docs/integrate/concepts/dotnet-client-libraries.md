@@ -186,7 +186,9 @@ async void InitAzureDevOps()
                                          CredentialPromptType.PromptIfNeeded);
 
     VssConnection vssConnection = new VssConnection(_uri, creds);
-    await vssConnection.ConnectAsync();
+    CancellationTokenSource source = new CancellationTokenSource();
+    CancellationToken token = source.Token;
+    await vssConnection.ConnectAsync(token);
 
     ...
 
