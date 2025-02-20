@@ -28,7 +28,7 @@ Initially this capability will be limited to GitHub Enterprise Cloud customers, 
 
 ### Azure DevOps Allowed IP addresses
 
-We are thrilled to announce significant upgrades to our networking infrastructure, aimed at enhancing the performance and reliability of our service. Please add below new IP addresses to your firewall allow list as soon as possible to ensure continuous service during our infrastructure upgrade.
+We are thrilled to announce significant upgrades to our networking infrastructure, aimed at enhancing the performance and reliability of our service. Add the new IP addresses below, to your firewall allow list as soon as possible to ensure continuous service during our infrastructure upgrade.
 
 **IP V4 Ranges:**
 * 150.171.22.0/24
