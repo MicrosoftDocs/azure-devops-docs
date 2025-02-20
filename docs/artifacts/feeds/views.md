@@ -40,7 +40,7 @@ To promote a package using the REST API, you need to send a PATCH request with t
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** scope.
 
-1. Copy the relevant URL for your scenario, replace it in the examples below, and run the `curl` or `PowerShell` command to promote your package to the desired view:
+1. Copy the endpoint URL, replace it in the example below (either *PowerShell* or *curl*), and run the command to promote your package to the desired view.
 
 ::: moniker range="azure-devops"
 
@@ -235,21 +235,7 @@ See [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/npm/update
 
 #### Examples
 
-### [curl](#tab/curl)
-
-```curl
-PAT="YOUR_PERSONAL_ACCESS_TOKEN"
-$ curl -X PATCH "YOUR_URL" \
--H 'Content-Type: application/json' \
--H "Authorization: Basic $(echo -n ":$PAT" | base64)" \
--d '[ 
-       {
-         "op": "add",
-         "path": "/views/-",
-         "value": "YOUR_VIEW_NAME"
-       }
-    ]'
-```
+Replace the placeholders with your personal access token, endpoint URL, and view name, then run the command to promote your package to the desired view:
 
 ### [PowerShell](#tab/powershell)
 
@@ -269,6 +255,22 @@ $body = @{
 } | ConvertTo-Json
 
 Invoke-RestMethod -Uri $uri -Method Patch -Headers $headers -Body $body
+```
+
+### [curl](#tab/curl)
+
+```curl
+PAT="YOUR_PERSONAL_ACCESS_TOKEN"
+$ curl -X PATCH "YOUR_ENDPOINT_URL" \
+-H 'Content-Type: application/json' \
+-H "Authorization: Basic $(echo -n ":$PAT" | base64)" \
+-d '[ 
+       {
+         "op": "add",
+         "path": "/views/-",
+         "value": "YOUR_VIEW_NAME"
+       }
+    ]'
 ```
 
 ---
