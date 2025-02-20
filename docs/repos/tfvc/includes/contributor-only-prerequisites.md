@@ -10,4 +10,4 @@ ms.date: 02/20/2025
 |--------------|-------------|
 |**Permissions**| Member of the **Contributors** group for your project. |
 
-For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+For more information, see [Default TFVC permissions](../../../organizations/security/default-tfvc-permissions.md).

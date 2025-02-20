@@ -47,8 +47,6 @@ The following table lists the non-provider generated secrets detected by secret 
 
 ## Related articles
 
-## Related articles
-
 - [Set up code scanning](github-advanced-security-code-scanning.md)
 - [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
 - [Set up secret scanning](github-advanced-security-secret-scanning.md)

@@ -65,7 +65,7 @@ Troubleshooting steps:
    * Consider the possibility that your code might not have any vulnerabilities. If vulnerabilities are expected but not detected, proceed to verify further.
 1. Review query suite configuration
    * Confirm the query suite that's being used and consider switching to a more comprehensive suite if necessary.
-   * Alternatively, [custom query suites](github-advanced-security-code-scanning-queries.md#using-custom-queries-with-codeql) can be created for tailored analysis. 
+   * Alternatively, [custom query suites](github-advanced-security-code-scanning-queries.md#use-custom-queries-with-codeql) can be created for tailored analysis. 
 1. Adjust permissions for viewing results
    * Ensure proper permissions, at least at the contributor level, are granted to access analysis results. For more information, see [Advanced Security permissions](./github-advanced-security-permissions.md).
 
