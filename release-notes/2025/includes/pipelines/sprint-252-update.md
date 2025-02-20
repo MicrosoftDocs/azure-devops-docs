@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/19/2025
+ms.date: 2/20/2025
 ms.topic: include
 ---
 
@@ -30,7 +30,7 @@ In preparation of the mapping of `ubuntu-latest` and `ubuntu-24.04`, pipelines u
 
 [Informational runs] tell you Azure Pipelines failed to determine if a pipeline should run or not, because it couldn't process the pipeline's YAML file. Examples of such failures are failures to retrieve the YAML source code or errors in it. 
 
-Starting with this sprint, we're adding support for informational runs for pipelines hosted in Azure Repos. You can see an example below.
+With this sprint, we're adding support for informational runs for pipelines hosted in Azure Repos. You can see an example below.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of informational runs.](../../media/252-pipelines-01.png "Screenshot of informational runs")](../../media/252-pipelines-01.png#lightbox)

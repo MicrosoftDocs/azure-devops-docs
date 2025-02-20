@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/19/2025
+ms.date: 2/20/2025
 ms.topic: include
 ---
 
@@ -19,7 +19,10 @@ Once the build is complete, the corresponding link will automatically appear on 
 
 ### Update on New Boards Hub Rollout
 
-By the end of February, New Boards Hub will be the default experience for all organizations using the Azure DevOps service. This means every user will have at least tried New Boards, and our telemetry shows that about 98% are continuing to stay with it. As a product team, we prefer to maintain a single version of the product, so our next step is to disable the option to revert back to Old Boards. For some organizations, this change has already been implemented; for others, we plan to roll it out to select customers in March and complete the process for all customers by the end of May. As always, if you encounter any issues, [please report them via the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps). 
+By the end of February, New Boards Hub will become the default experience for all organizations using the Azure DevOps service. This means every user will have at least tried New Boards, and our telemetry shows that about 98% are continuing to stay with it. Since we aim to maintain a single version of the product, our next step is to disable the option to revert back to Old Boards. 
+
+For some organizations, this change has already been implemented; for others, we plan to roll it out to select customers in March and complete the process for all customers by the end of May. As always, if you encounter any issues, [please report them via the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps). 
+
 
 ### Increase Limit of Connected GitHub Repositories
 

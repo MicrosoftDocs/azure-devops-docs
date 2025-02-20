@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/19/2025
+ms.date: 2/20/2025
 ms.topic: include
 ---
 
@@ -12,7 +12,3 @@ Take control of your test case run with the new "Undo" option. You can easily re
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Undo test step in web and desktop runner.](../../media/252-testplans-01.gif "gif to demo Undo test step in web and desktop runner")
-
-### Test Plans bug fixes
-
-Fixed an issue where the action log count in the TFE options window didn't persist and reverted to the default value of 15 after reloading.
