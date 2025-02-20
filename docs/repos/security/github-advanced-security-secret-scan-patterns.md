@@ -44,3 +44,12 @@ The following table lists the non-provider generated secrets detected by secret 
 > The detection of non-provider patterns is currently in beta and subject to change.
 
 [!INCLUDE [non-provider-table](includes/non-provider-table.md)]  
+
+## Related articles
+
+## Related articles
+
+- [Set up code scanning](github-advanced-security-code-scanning.md)
+- [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
+- [Set up secret scanning](github-advanced-security-secret-scanning.md)
+- [Learn about GitHub Advanced Security for Azure DevOps](github-advanced-security-security-overview.md)

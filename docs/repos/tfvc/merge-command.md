@@ -23,7 +23,11 @@ The `tf merge` command applies changes from one branch into another in Team Foun
 
 ## Prerequisites
 
-To use the `merge` command, have the **Check out** permission set to **Allow** for the workspace folder that contains the `destination`, and have the **Read** permission set to **Allow** for the workspace folder that contains the `source`. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- **Check out** permission set to **Allow** for the workspace folder that contains the `destination`<br>- **Read** permission set to **Allow** for the workspace folder that contains the `source`. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

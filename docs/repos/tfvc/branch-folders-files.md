@@ -38,9 +38,9 @@ You can perform a branching operation by using either Visual Studio **Source Con
  
 ## Prerequisites  
 
-- To convert a folder to a branch, your **Manage branch** permission must be set to **Allow**.  
-- To branch a branch, your **Manage branch** permission must be set to **Allow** for the paths to the source and target branches. Your **Merge** permission for the path of target branch must set to **Allow**.  
-- To branch a folder or file, your **Check out** permission and your **Merge** permission for the target path must be set to **Allow**. 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To convert a folder to a branch: **Manage branch** permission set to **Allow**.<br>- To branch a branch,: **Manage branch** permission set to **Allow** for the paths to the source and target branches.<br>- >**Merge** permission for the path of target branch set to **Allow**.<br>- To branch a folder or file: **Check out** permission and **Merge** permission for the target path set to **Allow**.|
 
 For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 

@@ -20,9 +20,9 @@ The Team Foundation Version Control (TFVC) `workspace` command provides a way fo
 
 ## Prerequisites
 
-- To modify or delete an existing workspace, be the owner or have the global **Administer workspaces** permission set to **Allow**.
-- To create a workspace, have the global **Create a workspace** permission set to **Allow**.
-- To create workspaces for other users, have the **Administer workspaces** permission set to **Allow**.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To modify or delete an existing workspace: Owner or **Administer workspaces** permission set to **Allow**.<br>- To create a workspace: **Create a workspace** permission set to **Allow**.<br>- To create workspaces for other users: **Administer workspaces** permission set to **Allow**.|
 
 For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 

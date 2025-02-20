@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Remove check-in policies from your Team Foundation Version Control (TFVC) project.
 ms.assetid: fb4b62ef-e413-4f03-81fe-ae560c9f60ff
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -21,7 +21,11 @@ Team Foundation Version Control (TFVC) administrators can add check-in policies 
 
 ## Prerequisites
 
-To complete this procedure, have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Edit project-level information** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Remove a check-in policy
 
