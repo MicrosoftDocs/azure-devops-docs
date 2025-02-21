@@ -164,19 +164,16 @@ Because `release` was added to the branch filters in the `main` branch, but **no
 
 ::: moniker range=">=azure-devops-2022"
 
-The `batch` property configures whether to run the pipeline if the previously scheduled run is in-progress; the default is `false`. This is regardless of the version of the pipeline repository.
+The `batch` property configures whether to run the pipeline if the previously scheduled run is in-progress. When `batch` is `true`, a new pipeline run won't start due to the schedule if a previous pipeline run is still in-progress. The default is `false`.
 
-The following table describes how `always` and `batch` interact.
+The `batch` property is affected by the setting of the `always` property. When `always` is `true`, the pipeline runs according to the cron schedule, even when `batch` is `true` and there is an in-progress run.
 
 | Always | Batch | Behavior |
 |--------|-------|----------|
-| `false` | `false` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run. |
+| `false` | `false` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run, even if there's an in-progress run from the last scheduled trigger. |
 | `false` | `true` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run, and there's no in-progress scheduled pipeline run. |
 | `true` | `false` | Pipeline runs according to the cron schedule. |
-| `true` | `true` | Pipeline runs according to the cron schedule. |
-
-> [!IMPORTANT]
-> When `always` is `true`, the pipeline runs according to the cron schedule, even when `batch` is `true`.
+| `true` | `true` | Pipeline runs according to the cron schedule even if there is an in-progress run. |
 
 ### Build.CronSchedule.DisplayName variable
 
