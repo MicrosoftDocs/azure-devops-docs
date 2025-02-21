@@ -1,7 +1,7 @@
 ---
 title: Overview
 description: Learn about Managed DevOps Pools.
-ms.date: 12/10/2024
+ms.date: 02/21/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
 ---
@@ -26,10 +26,7 @@ Manage DevOps Pools:
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
 * Can view all active agents and the status of agent provisioning and reimaging
 * Can attach a data disk, so you don't have to use a larger SKU just to get more disk space
-* Purged problem stateful agents out of the pool (Coming by March 2025)
-* Reduce your Azure cost by up to 80%, with SPOT instances (Coming 2025)
-* Has container agents (Coming 2025)
-* Can fall back to another geographical region when the primary region experiences an outage (Coming 2025)
+* See [Roadmap](#roadmap) for features coming up.
 
 ## What's new for Managed DevOps Pools GA
 
@@ -62,6 +59,25 @@ Managed DevOps Pools provide the following benefits to creating, configuring, an
 **Reliable**: Your developers will experience lowest amount of downtime due to the high uptimes of Managed DevOps pools.
 
 **Security**: Your pool's agents are secured by Microsoft's best practices, and has features to further secure your pool.
+
+## Roadmap
+
+The following section describes new features in development for Managed DevOps Pools.
+
+* **Log analytics**: Managed DevOps Pools is adding support for Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). 
+
+* **Trusted root certificate**: TODO
+
+* **Shorter time for agent allocation**: The Managed DevOps Pools team is making updates to increase the start up time for stateless agents (**Fresh agent every time** setting).
+
+* **Ubuntu 24.04 Azure Pipelines Image**: Ubuntu 24.04 is supported for [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), and it is coming soon for [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
+
+* **Pool creation at the Azure DevOps using project level permissions**: Currently to create a Managed DevOps Pool, you must be an [Organization-level Agent pools administrator or a Project Collection Administrator in Azure DevOps](./prerequisites.md#verify-azure-devops-permissions). We're enabling a new mode of Managed DevOps Pools creation, requiring only Project-level Agent pools administrator. Managed DevOps Pools created using Project-level Agent pools administrator will be created and enabled only for use in the designated Azure DevOps Project.
+
+* **Open access for all pipelines to use a Managed DevOps Pool**: By default, each pipeline must be explictly authorized to use a newly created Managed DevOps Pool. We're adding an option to enable [Open access for all pipelines](/azure/devops/pipelines/agents/pools-queues#pipeline-permissions) so that administrators don't need to explictly authorize each pipeline.
+
+* **SPOT instances**: Reduce your Azure cost by up to 80%, with SPOT instances.
+
 
 ## Get Started
 
