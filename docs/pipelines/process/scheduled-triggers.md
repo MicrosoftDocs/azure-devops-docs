@@ -173,7 +173,7 @@ The `batch` property is affected by the setting of the `always` property. When `
 | `false` | `false` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run, even if there's an in-progress run from the last scheduled trigger. |
 | `false` | `true` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run, and there's no in-progress scheduled pipeline run. |
 | `true` | `false` | Pipeline runs according to the cron schedule. |
-| `true` | `true` | Pipeline runs according to the cron schedule. |
+| `true` | `true` | Pipeline runs according to the cron schedule even if there is an in-progress run. |
 
 ### Build.CronSchedule.DisplayName variable
 
