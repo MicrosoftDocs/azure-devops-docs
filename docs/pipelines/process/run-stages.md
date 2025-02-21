@@ -24,8 +24,8 @@ This code works for most scenarios but doesn't include language or platform-spec
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An [Azure DevOps project](/azure/devops/organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> * Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: Member of the [Project Administrators group](/azure/devops/organizations/security/change-project-level-permissions.md). |
-| **GitHub** | - A [GitHub](https://github.com) account.<br>   - A [GitHub service connection](/azure/devops/pipelines/library/service-endpoints.md) to authorize Azure Pipelines.|
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: Member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md). |
+| **GitHub** | - A [GitHub](https://github.com) account.<br>   - A [GitHub service connection](../library/service-endpoints.md) to authorize Azure Pipelines.|
 | **Azure** | - An [Azure subscription](https://azure.microsoft.com/free/).<br>   - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal). |
 
 
