@@ -20,7 +20,11 @@ The Team Foundation Version Control (TFVC) `tf label` command attaches a label t
 
 ## Prerequisites
 
-To use the `label` command, have the **Label** permission set to **Allow**. To modify or delete labels created by other users, have the **Administer labels** permission set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| **Label** permission set to **Allow**. To modify or delete labels created by other users, have the **Administer labels** permission set to **Allow**. |
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

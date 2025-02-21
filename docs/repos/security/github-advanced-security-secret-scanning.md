@@ -1,7 +1,7 @@
 ---
-title: Secret Scanning for GitHub Advanced Security for Azure DevOps 
+title: Set up secret scanning for GitHub Advanced Security
 titleSuffix: Azure Repos
-description: Set up secret scanning for GitHub Advanced Security for Azure DevOps
+description: Set up secret scanning for GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
@@ -9,12 +9,12 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 10/24/2024
+ms.date: 02/20/2025
 ---
 
-# Secret scanning 
+# Set up secret scanning 
 
-Exposed credentials in engineering systems provide easily exploitable opportunities for attackers. To defend against this threat, [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) scans for credentials and other sensitive content in your source code. Push protection also prevents any credentials from being leaked in the first place.  
+Exposed credentials in engineering systems provide easily exploitable opportunities for attackers. To defend against this threat, GitHub Advanced Security for Azure DevOps scans for credentials and other sensitive content in your source code. Push protection also prevents any credentials from being leaked in the first place.  
 
 Secret scanning for your repository scans for any secrets that might already exist in your source code across history and push protection prevents any new secrets from being exposed in source code. 
 
@@ -22,9 +22,7 @@ Secret scanning for your repository scans for any secrets that might already exi
 
 ## Prerequisites
 
-| Category | Requirements |
-|--------------|-------------|
-|**Permissions**|- To view a summary of all alerts for a repository: **Contributor** permissions for the repository.<br>- To dismiss alerts in Advanced Security: **Project administrator** permissions. For more information about Advanced Security permissions, see [Manage Advanced Security permissions](github-advanced-security-permissions.md).|
+[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
 
 ## About secret scanning alerts
 
@@ -164,3 +162,10 @@ Don't bypass flagged secrets because doing so can put your company’s security 
 
 If you believe a blocked secret is a false positive or safe to push, you can bypass push protection. Include the string `skip-secret-scanning:true` in your commit message. Even if you bypass push protection, a secret scanning alert is generated in the alert UX once the secret gets pushed.
 
+## Related articles
+
+- [Troubleshoot secret scanning](github-advanced-security-secret-scanning-troubleshoot.md)
+- [Learn about secret scanning patterns](github-advanced-security-secret-scan-patterns.md)
+- [Set up code scanning](github-advanced-security-code-scanning.md)
+- [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
+- [Learn about GitHub Advanced Security for Azure DevOps](github-advanced-security-security-overview.md)

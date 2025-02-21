@@ -1,5 +1,5 @@
 ---
-title: Code scanning for GitHub Advanced Security for Azure DevOps 
+title: Set up code scanning for GitHub Advanced Security for Azure DevOps 
 titleSuffix: Azure Repos
 description: Set up code scanning with GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
@@ -9,18 +9,22 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 10/24/2024
+ms.date: 02/20/2025
 ---
 
-# Code scanning 
+# Set up code scanning 
 
-Code scanning in [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) lets you analyze the code in an Azure DevOps repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are raised as an alert. Code scanning uses CodeQL to identify vulnerabilities.  
+Code scanning in GitHub Advanced Security for Azure DevOps lets you analyze the code in an Azure DevOps repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are raised as an alert. Code scanning uses CodeQL to identify vulnerabilities.  
 
 CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts. For more specific documentation about CodeQL, see [CodeQL documentation](https://codeql.github.com/docs/).
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
-## Additional configurations for code scanning
+## Prerequisites
+
+[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+
+## More configurations for code scanning
 
 ### Language and query support
 
@@ -60,10 +64,11 @@ For more information on the different build modes including a comparison on the 
 For running code scanning analysis through GitHub Advanced Security for Azure DevOps, the `autobuild` build mode is instead a separate build task, [`AdvancedSecurity-CodeQL-Autobuild@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1).
 
 > [!TIP]
-> Build mode `none` is useable in conjunction with other interpreted languages (e.g., JavaScript, Python, Ruby).
-> If build mode `none` is specified for C# or Java in conjunction with other compiled languages that do not support build mode `none`, the pipeline task will fail.
+> Build mode `none` is useable with other interpreted languages, for example, JavaScript, Python, Ruby.
+> If build mode `none` is specified for C# or Java with other compiled languages that don't support build mode `none`, the pipeline task fails.
 
-Here is an example of a valid configuration with multiple languages and `none` build mode:
+The following code shows an example of a valid configuration with multiple languages and `none` build mode:
+
 >[!div class="tabbedCodeSnippets"]
 ```yaml
 trigger: none
@@ -84,7 +89,8 @@ steps:
   displayName: Perform CodeQL Analysis
  ```
 
-Here is an example of an invalid configuration with multiple languages and `none` build mode:
+The following code shows an example of an invalid configuration with multiple languages and `none` build mode:
+
 >[!div class="tabbedCodeSnippets"]
 ```yaml
 trigger: none
@@ -178,4 +184,11 @@ To dismiss pull request alerts, you must navigate to the alert detail view to cl
 To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation directs you to the alert detail view in the Advanced Security tab.
 
 > [!TIP]
-> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
+> Annotations only get created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
+
+## Related articles
+
+- [Troubleshoot code scanning](github-advanced-security-code-scanning-troubleshoot.md)
+- [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
+- [Set up secret scanning](github-advanced-security-secret-scanning.md)
+- [Learn about GitHub Advanced Security for Azure DevOps](github-advanced-security-security-overview.md)
