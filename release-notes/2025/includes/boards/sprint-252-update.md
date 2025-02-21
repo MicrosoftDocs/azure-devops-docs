@@ -27,6 +27,6 @@ Over the past several months, we've enhanced both the user experience and scalab
 
 ### Update on New Boards Hub rollout
 
-By early March, New Boards Hub will become the default experience for all organizations using the Azure DevOps service. This means every user will have at least tried New Boards, and our telemetry shows that about 98% are continuing to stay with it. Since we aim to maintain a single version of the product, our next step is to disable the option to revert back to Old Boards. 
+By early March, New Boards Hub will become the default experience for all organizations using the Azure DevOps service. This means every user will have at least tried New Boards, and our telemetry shows that about 98% of users are continuing to stay with it. Since we aim to maintain a single version of the product, our next step is to disable the option to revert back to Old Boards. 
 
-For some organizations, this change has already been implemented; for others, we plan to begin rolling it out in March to a select users and complete the process for all users by the end of May. As always, if you encounter any issues, [please report them via the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps). 
+For some organizations, this change has already been implemented. For others, we plan to begin rolling it out in March and complete the process for all organizations by the end of May. As always, if you encounter any issues, [please report them via the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps). 
