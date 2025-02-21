@@ -121,7 +121,7 @@ Use that variable to populate the secret in the above Git command.
 > [!IMPORTANT]
 > The sync tags feature is supported in Azure Repos Git with Azure DevOps Server 2022.1 and higher.
 
-The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to checkout to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
+The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to check out to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
 
 Whether to synchronize tags when checking out a repository can be configured in YAML by setting the `fetchTags` property, and in the UI by configuring the **Sync tags** setting.
 
