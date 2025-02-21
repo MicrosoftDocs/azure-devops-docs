@@ -39,6 +39,8 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope.
 
+---
+
 ## Restore packages
 
 1. If you haven't authenticated with your feed yet, follow the steps in the [Project setup](npmrc.md#connect-to-feed) to connect to your feed and then proceed with the next step once you're done.
