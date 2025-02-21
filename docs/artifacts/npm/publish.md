@@ -1,30 +1,26 @@
 ---
-title: Publish and restore npm packages CLI
-description: Learn how to publish and restore npm packages from the command line.
+title: Publish npm packages from the command line
+description: Learn how to connect to your feed and publish npm packages from the command line.
 ms.assetid: 85773969-1491-4242-A060-BD5D193961A0
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
-ms.topic: conceptual
-ms.date: 05/24/2024
+ms.topic: tutorial
+ms.date: 02/21/2025
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Publish and restore npm packages from the command line
+# Publish npm packages from the command line
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Azure Artifacts, you can easily manage the publication and retrieval of your npm packages from various sources, including feeds and public registries like npmjs.com. This article walks you through setting up your project, publishing, and restoring your npm packages from your Azure Artifacts feed.
+This article guides you through authenticating with your Azure Artifacts feed and publishing npm packages from the command line.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
-
-- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
-
-- An Azure Artifacts feed. [Create one for free](../get-started-npm.md#create-a-feed).
-
-- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+| **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). |
 
 ## Connect to Feed
 
@@ -84,22 +80,10 @@ Using Azure Artifacts, you can easily manage the publication and retrieval of yo
     npm publish
     ```
 
-## Restore packages
+## Related content
 
-1. Run the following command in your project directory to restore all your npm packages:
-   
-    ```Cli
-    npm install
-    ```
-
-1. If you want to restore a specific package, run the following command in your project directory:
-
-    ```Cli
-    npm install --save <PACKAGE_NAME>
-    ```
-
-## Related articles
+- [Restore npm packages (CLI)](restore-npm-packages.md)
 
 - [Publish npm packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/npm.md)
+
 - [Use packages from npmjs.com](../npm/upstream-sources.md)
-- [Use npm audit](../npm/npm-audit.md)
