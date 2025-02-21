@@ -22,7 +22,7 @@ The preview will run for a month or two, and after that this will be the way pro
 
 Starting this week, we're including Azure DevOps Basic usage rights with GitHub Enterprise licenses and automating the experience for Azure DevOps users.
 
-If you're using GitHub Enterprise Cloud with Microsoft Entra you'll be automatically recognized in Azure DevOps. Your access level will be set to “GitHub Enterprise,” and you won't accrue additional charges in Azure DevOps [Learn more about access for GitHub Enterprise users](azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops#github-enterprise).
+If you're using GitHub Enterprise Cloud with Microsoft Entra you'll be automatically recognized in Azure DevOps. Your access level will be set to “GitHub Enterprise,” and you won't accrue additional charges in Azure DevOps [Learn more about access for GitHub Enterprise users](https://learn.microsoft.com/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops#github-enterprise).
 
 Initially this capability will be limited to GitHub Enterprise Cloud users, but we’ll be adding GitHub Enterprise Cloud with Data Residency users soon.
 
