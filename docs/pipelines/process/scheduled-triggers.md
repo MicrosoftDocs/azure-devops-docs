@@ -166,7 +166,7 @@ Because `release` was added to the branch filters in the `main` branch, but **no
 
 The `batch` property configures whether to run the pipeline if the previously scheduled run is in-progress. When `batch` is `true`, a new pipeline run won't start due to the schedule if a previous pipeline run is still in-progress. The default is `false`.
 
-The `batch` property is affected by the setting of the `always` property. When `always` is `true`, the pipeline runs according to the cron schedule, even when `batch` is `true`.
+The `batch` property is affected by the setting of the `always` property. When `always` is `true`, the pipeline runs according to the cron schedule, even when `batch` is `true` and there is an in-progress run.
 
 | Always | Batch | Behavior |
 |--------|-------|----------|
