@@ -20,7 +20,7 @@ The `tf help` command displays information about syntax for `tf` command-line ut
 
 ## Prerequisites
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads) installed on your local computer.
+[Visual Studio](https://visualstudio.microsoft.com/downloads) installed on your local computer.
 
 ## Syntax
 
