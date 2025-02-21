@@ -40,10 +40,10 @@ To learn how to build a Classic pipeline with stages, see [Deploy to different s
 
 ## 2. Add the build stage
 
-The starter pipeline you added in the previous stage was a placeholder. In this section, you'll remove the starter pipeline and add in a new YAML pipeline with a Build stage. 
+The starter pipeline you added in the previous stage was a placeholder. Remove the starter pipeline code and add in a new YAML pipeline with a Build stage. 
 
 1. Remove all of the code in your pipeline. 
-1. Replace the code with the following YAML. 
+1. Replace the code with the following YAML that includes a `Build` stage. 
 
     ```yaml
     trigger:
@@ -69,11 +69,11 @@ The starter pipeline you added in the previous stage was a placeholder. In this 
     
 In this `Build` stage and throughout the sample pipeline, there are placeholder script tasks. When you build a working pipeline, replace the placeholder commands like `Restoring project dependencies...` with actual code. 
 
-In this sample, you're restoring dependencies and running unit tests to make sure the code is ready for testing and deployment. If your application needs to compile source code, you'll also in the build stage.
+In this sample, you're restoring dependencies and running unit tests to make sure the code is ready for testing and deployment. If your application needs to compile source code, that will also happen in the `Build` stage.
 
 ## 3. Add the test stage 
 
-The `Test` stage runs tests on the project and typically publishes the test results to Azure DevOps. To learn more about publishing test results, see the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
+The `Test` stage runs tests on the project and publishes the test results to Azure DevOps. To learn more about publishing test results, see the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
 
 The `Test` stage only runs if the `Build` stage completes successfully and the stage can't be skipped.
 
@@ -93,7 +93,7 @@ Add the `Test` stage after the `Build` stage in your pipeline.
       displayName: 'Run unit tests'
 ```
 
-The Test stage includes an attribute that sets `isSkippable` to `false`. When you set `isSkippable` to `false`, a stage cannot be skipped. The option to skip the stage will also be disabled in the Azure DevOps UI. 
+The Test stage includes an attribute that sets `isSkippable` to `false`. When you set `isSkippable` to `false`, a stage can't be skipped. The option to skip the stage is also disabled in the Azure DevOps UI. 
 
 :::image type="content" source="media/stages/is-skippable-stage-false.png" alt-text="Screenshot of stage that can't be skipped.":::  
 
@@ -103,7 +103,7 @@ Add the `DeployToStaging` stage after the `Test` stage in your pipeline.
 
 The `DeployToStaging` stage depends on the `Test` stage to run. There are two different jobs in the `DeployToStaging` stage - `DeployStagingJob` and `DeployStagingJobWithValidation`. The `DeployStagingJob` should contain the code to deploy your staging job to staging resources like a staging server. 
 
-The `DeployStagingJobWithValidation` job contains all of the validation that go with your staging deployment. The `DeployStagingJobWithValidation` job requires manual approval. The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) pauses the pipeline run and waits for a manual interaction. A user needs to validate the stage before the run proceeds. Having a manual approval in your pipeline adds another level of security, helps mitigate risks, and makes sure that all changes get reviewed by the appropriate stakeholders. 
+The `DeployStagingJobWithValidation` job contains all of the validation that goes with your staging deployment. The `DeployStagingJobWithValidation` job requires manual approval. The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v1) pauses the pipeline run and waits for a manual interaction. A user needs to validate the stage before the run proceeds. Having a manual approval in your pipeline adds another level of security, helps mitigate risks, and makes sure that all changes get reviewed by the appropriate stakeholders. 
 
 The pool for the manual approval is `server`. Manual validations only run on a server pool. 
 
@@ -175,7 +175,7 @@ The [manual validation task](/azure/devops/pipelines/tasks/reference/manual-vali
 
 You can optionally add two stages `DeployToAlternateProduction` and `Rollback` after the `DeployToProduction` stage.
 
- `DeployToAlternateProduction` and `Rollback` are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. This enhances the overall reliability and availability of your application. You may also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md) and [Add stages, dependencies, and conditions](stages.md).
+ `DeployToAlternateProduction` and `Rollback` are manually queued. The `DeployToAlternateProduction` stage lets you have a backup production environment ready in case your primary environment fails. An environment can be an [Azure DevOps Environment](environments.md) or another location like a different cloud provider. This enhances the overall reliability and availability of your application. You might also want to have an alternate deployment environment for disaster recovery or testing and validation. For more complicated deployment strategies, see [Deployment jobs](deployment-jobs.md) and [Add stages, dependencies, and conditions](stages.md).
 
 The `Rollback` stage provides a safety net to revert your application to a previously stable state if something goes wrong during or after a deployment. This could be because of a deployment failure, bug, compliance requirement, disaster recovery, or other issue. A rollback stage is essential for maintaining the stability and reliability of your application. 
 
@@ -208,7 +208,7 @@ The `Rollback` stage provides a safety net to revert your application to a previ
 
 ## View the entire YAML pipeline
 
-Here's the entire pipeline with all of the mentioned stages. 
+Here's the entire pipeline with all of the referenced stages. 
 
 ```yaml
 trigger:
