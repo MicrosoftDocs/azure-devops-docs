@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/22/2016
+ms.date: 02/21/2025
 ---
 
 # Add panels on backlog pages
@@ -82,7 +82,7 @@ For each contribution in your extension, the manifest defines
 | title              | Tooltip text that appears on the menu item                                        |                   
 | name               | What appears in the dropdown for panel selection					                  |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
-| registeredObjectId | Id of the object registered for the panel                                             |    
+| registeredObjectId | ID of the object registered for the panel                                             |    
 
 
 Learn about all of the places where you can add an extension in [Extensibility points](../reference/targets/overview.md).
