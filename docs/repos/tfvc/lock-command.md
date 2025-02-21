@@ -22,7 +22,7 @@ The Team Foundation Version Control (TFVC) `lock` command locks or unlocks a fil
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|- **Lock** permission set to **Allow**. - **Unlock other user's changes** permission set to **Allow** if you don't have **Write** permission for a user's workspace that's locked. |
+|**Permissions**|- **Lock** permission set to **Allow**.<br>- **Unlock other user's changes** permission set to **Allow** if you don't have **Write** permission for a user's workspace that's locked. |
 
 For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 

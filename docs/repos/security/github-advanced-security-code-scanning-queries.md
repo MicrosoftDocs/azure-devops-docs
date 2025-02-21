@@ -37,7 +37,7 @@ To include a specific pack you want to include, specify the pack name. You can s
 The next step is to create a `qlpack.yml` file. This file declares the CodeQL pack and information about it. Any `*.ql` files in the same directory, or subdirectory, as a `qlpack.yml` are considered part of the package. 
 
 > [!TIP]
-> The `packs` filter from the configuration file support downloading packs from repositories hosted in GitHub, although the `queries` filter doesn't.
+> The `packs` filter from the configuration file supports downloading packs from repositories hosted in GitHub, although the `queries` filter doesn't.
 > If the pack is private in GitHub, then you need to provide a GitHub access token via the `AdvancedSecurity-Codeql-Init@1` task as an environment variable and variable name as `GITHUB_TOKEN`, with the scope of the token being `read:packages`.
 
 The following code shows an example configuration file: 

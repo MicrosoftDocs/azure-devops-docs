@@ -24,7 +24,7 @@ The tool is compatible with text and XML based files, but to associate a specifi
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. |
+|**Permissions**| Member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. |
 
 For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Set up secret scanning for GitHub Advanced security
+title: Set up secret scanning for GitHub Advanced Security
 titleSuffix: Azure Repos
 description: Set up secret scanning for GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops

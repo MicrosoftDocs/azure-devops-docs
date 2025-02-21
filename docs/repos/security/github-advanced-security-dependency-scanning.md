@@ -379,7 +379,7 @@ $ mvn dependency:tree -Dincludes=com.fasterxml.jackson.core:jackson-databind
 [INFO] ------------------------------------------------------------------------
 ```
 
-We recommend you to add a comment near the dependency resolution, so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version; otherwise, you accumulate dependencies.
+We recommend you add a comment near the dependency resolution, so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version; otherwise, you accumulate dependencies.
 
 In a real project, add the dependency as high up the chain as possible. For example, you could add the resolution in the parent POM file, instead of individually in every project POM file.
 
@@ -432,7 +432,7 @@ The RCE vulnerability in `Microsoft.AspNetCore.Http.Connections` was fixed in ve
 </Project>
 ```
 
-We recommend you to add a comment near the dependency resolution so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version. Otherwise, you accumulate dependencies.
+We recommend you add a comment near the dependency resolution so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version. Otherwise, you accumulate dependencies.
 
 ### What if there's no fix available?
 
