@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '< azure-devops'
-ms.date: 01/22/2024
+ms.date: 01/22/2025
 ---
 
 # Install and configure Search

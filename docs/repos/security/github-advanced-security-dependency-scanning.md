@@ -454,7 +454,7 @@ To dismiss an alert, do the following steps:
 
    ![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
 
-This action only dismisses the alert for your selected branch. Other branches that might contain the same vulnerability stays active until otherwise acted upon. You can manually reopen any previously dismissed alert. 
+This action dismisses the alert across all branches. Other branches that contain the same vulnerability will also be dismissed. Any alert previously dismissed can be manually reopened. 
 
 ### Managing dependency scanning alerts on pull requests
 
