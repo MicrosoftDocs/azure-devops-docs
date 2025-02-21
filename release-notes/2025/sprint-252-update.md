@@ -7,7 +7,7 @@ description: Basic access included with GitHub Enterprise plus Boards/GitHub int
 ---
 # Basic access included with GitHub Enterprise plus Boards/GitHub integration improvements
 
-We're excited to announce that GitHub Enterprise users now have access to Azure DevOps Basic usage rights at no extra cost. Simply signing in using your Entra ID to get started.
+We're excited to announce that Azure DevOps Basic access is now included with GitHub Enterprise.Simply signing in using your Entra ID to get started.
 
 We are also releasing several improvements to our Boards + GitHub integration.  
 
