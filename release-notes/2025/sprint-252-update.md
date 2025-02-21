@@ -1,16 +1,15 @@
 ---
-title: Azure Boards streamlines workflows Azure DevOps basic access with GitHub Enterprise
+title: Basic access included with GitHub Enterprise plus Boards/GitHub integration improvements
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/20/2025
-description: Azure Boards streamlines workflows Azure DevOps basic access with GitHub Enterprise
+description: Basic access included with GitHub Enterprise plus Boards/GitHub integration improvements
 ---
-# Azure Boards streamlines workflows with automatic build links and Basic access included with GitHub Enterprise
+# Basic access included with GitHub Enterprise plus Boards/GitHub integration improvements
 
+We're excited to announce that GitHub Enterprise users now have access to Azure DevOps Basic usage rights at no extra cost. By signing in to both products with your Entra ID, you can utilize this functionality. Many have already benefited from this integration!
 
-With this update, Azure Boards delivers a more seamless experience with key improvements. Build links in YAML pipelines now automatically connect completed builds to work items, making it easier to track progress. Additionally, the New Boards Hub is becoming the default experience, offering a more consistent and efficient way to manage work.
-
-We're also excited to announce that GitHub Enterprise users now have access to Azure DevOps Basic usage rights at no extra cost. By signing in to both products with your Entra ID, you can utilize this functionality. Many have already benefited from this integration!
+We are also releasing several improvements to our Boards + GitHub integration.  
 
 Check out the release notes for details.
 
