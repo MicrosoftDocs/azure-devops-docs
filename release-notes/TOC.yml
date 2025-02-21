@@ -526,7 +526,7 @@
         items:
         - name: "2025"
           items:
-          - name: February 20
+          - name: February 21
             href: 2025/pipelines/sprint-252-update.md
           - name: February 12
             href: 2025/pipelines/sprint-251-update.md
@@ -748,7 +748,7 @@
         items:
         - name: "2025"
           items:
-          - name: February 20
+          - name: February 21
             href: 2025/testplans/sprint-252-update.md
           - name: February 12
             href: 2025/testplans/sprint-251-update.md
@@ -907,7 +907,7 @@
         items:
         - name: "2025"
           items:
-          - name: February 20
+          - name: February 21
             href: 2025/general/sprint-252-update.md 
           - name: February 12
             href: 2025/general/sprint-251-update.md 
