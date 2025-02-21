@@ -145,7 +145,7 @@ resources:
 
 :::moniker-end
 
-You can trigger your pipeline when one or more stages of the triggering pipeline complete by using the `stages` filter. If you provide multiple stages, the triggered pipeline runs when all of the listed stages complete.
+By default your target pipeline is triggered only when the source pipeline completes. If your source pipeline has stages, you can use stage filters to trigger your pipeline to run when one or more stages of the source pipeline complete (instead the entire pipeline) by configuring a `stages` filter with one or more stages. If you provide multiple stages, the triggered pipeline runs when all of the listed stages complete.
 
 ```yml
 resources:
