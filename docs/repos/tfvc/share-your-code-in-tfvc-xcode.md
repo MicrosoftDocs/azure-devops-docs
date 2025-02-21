@@ -15,8 +15,14 @@ ms.subservice: azure-devops-repos-tfvc
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-
 Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the Azure DevOps project where the TFVC repository is located. |
+| **Permissions** | - **Read**: To view the repository and its contents.<br>- **Check In**: To check in changes to the repository.<br>- **Check Out**: To check out files for editing.<br>- **Manage Workspaces**: To create and manage workspaces. |
 
 ## Download and configure Git-tf
 

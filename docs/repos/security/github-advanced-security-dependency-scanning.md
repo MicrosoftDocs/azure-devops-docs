@@ -1,5 +1,5 @@
 ---
-title: Dependency Scanning for GitHub Advanced Security for Azure DevOps 
+title: Set up dependency scanning for GitHub Advanced Security
 titleSuffix: Azure Repos
 description: Set up dependency scanning for GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
@@ -9,20 +9,24 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 10/24/2024
+ms.date: 02/20/2025
 ---
 
-# Dependency scanning 
+# Set up dependency scanning 
 
 Dependency scanning in [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) detects the open source components used in your source code and detects if there are any associated vulnerabilities. Any found vulnerabilities from open source components get flagged as an alert. 
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
+## Prerequisites
+
+[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+
 ## About dependency scanning  
 
 Dependency scanning generates an alert for any open-source component, direct or transitive, found to be vulnerable that your code depends upon. Direct vulnerabilities are the libraries your code directly uses. Transitive dependencies are the libraries or other software that direct dependencies use. 
 
-### About dependency scanning detection 
+### Learn about dependency scanning detection 
 
 A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task is executed. 
 
@@ -34,13 +38,13 @@ The build log also contains basic information about each detected vulnerability.
 
 For a list of supported component ecosystems and versions, see [Supported package ecosystems](./github-advanced-security-dependency-scanning-ecosystems.md).
 
-### About dependency scanning alerts 
+### Learn about dependency scanning alerts 
 
-The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance. At this time, the alerts hub does not display alerts for scanning completed on PR branches.
+The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance. At this time, the alerts hub doesn't display alerts for scanning completed on PR branches.
 
 When a vulnerable package is detected in your repository, fixing dependency scanning alerts typically involves upgrading to a higher package version or removing an offending package. This advice holds true for both direct and transitive (or indirect) dependencies. The default view in your Advanced Security tab is active alerts for the default branch for your repository.
 
-There's no effect to results if pipelines or branches are renamed - it may take up to 24 hours before the new name is displayed.
+There's no effect to results if pipelines or branches are renamed - it might take up to 24 hours before the new name is displayed.
 
 ![Screenshot of dependency scanning alert view for a repository](./media/dependency-scanning-alerts.png)
 
@@ -49,7 +53,7 @@ An alert’s state is automatically updated to `Closed` when the vulnerable comp
 
 ![Screenshot of viewing closed dependency scanning alerts](./media/dependency-scanning-alerts-closed.png)
 
-If you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
+If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task doesn't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
 ### Alert details
 
@@ -60,17 +64,17 @@ You can also drill into details about an alert by clicking into a specific alert
 | Section  | Explanation  |
 |---|---|
 | Recommendation | The recommendation text comes directly from our vulnerability data provider, the GitHub Advisory Database. Typically, the guidance suggests upgrading the identified component to a nonvulnerable version. |
-| Location | The **Locations** section details the path(s) where the dependency scanning task has discovered the vulnerable component in use. If the file can be resolved from the underlying build scan to a committed file in source, the Locations card appears as a clickable link. If a file was produced as part of a build (for example, a build artifact), the link isn't clickable. Review the build logs to better understand how the component was brought into the build. |
+| Location | The **Locations** section details the paths where the dependency scanning task discovers the vulnerable component in use. If the file can be resolved from the underlying build scan to a committed file in source, the Locations card appears as a clickable link. If a file was produced as part of a build (for example, a build artifact), the link isn't clickable. Review the build logs to better understand how the component was brought into the build. |
 | Description | The description is provided by the GitHub Advisory description. |
 
 #### Detections  
 
-The pipelines listed under the **Detections** tab are the pipelines where the vulnerable component was found. Each row details the latest build of the affected pipeline and the date when the package was first introduced. If the vulnerable package has been fixed in some pipelines but not all, you see partially fixed rows.   
+The pipelines listed under the **Detections** tab are the pipelines where the vulnerable component was found. Each row details the latest build of the affected pipeline and the date when the package was first introduced. If the vulnerable package is fixed in some pipelines but not all, you see partially fixed rows.   
 
 ![Screenshot of dependency scanning detections view for an alert without a fix](./media/dependency-scanning-detections-no-fix.png)
 
 
-Once an alert has been resolved, the alert automatically moves to the `Closed` state and the latest run pipeline under the Detections tab displays a green checkmark, meaning that code containing the updated component was run in that pipeline: 
+Once an alert gets resolved, the alert automatically moves to the `Closed` state and the latest run pipeline under the Detections tab displays a green checkmark, meaning that code containing the updated component was run in that pipeline: 
 
 ![Screenshot of dependency scanning detections view for an alert](./media/dependency-scanning-detections.png)
 
@@ -90,18 +94,16 @@ The GitHub Advisory Database provides a CVSS score, which is then translated int
 
 Two sections are commonly found under **Finding details**: vulnerable package and root dependency. The vulnerable package is the potentially vulnerable component. The root dependency section contains top level components that are responsible for the dependency chain that lead to a vulnerability. 
 
-If the vulnerable package is only referenced as a direct dependency, you only see the ”vulnerable package” section.  
+If the vulnerable package is only referenced as a direct dependency, you only see the "vulnerable package" section.  
 
-If the vulnerable package is referenced both as a direct and transitive dependency, the package is shown in both the “vulnerable package” and “root dependency” section.  
+If the vulnerable package is referenced both as a direct and transitive dependency, the package is shown in both the "vulnerable package" and "root dependency" section.  
 
-If the vulnerable package is only referenced as a transitive dependency, the package is shown in the “vulnerable package” section, and the root dependencies referencing the vulnerable package are shown in the “root dependency” section. 
+If the vulnerable package is only referenced as a transitive dependency, the package is shown in the "vulnerable package" section, and the root dependencies referencing the vulnerable package are shown in the "root dependency" section. 
 
 
 ## Manage dependency scanning alerts 
 
 ### Viewing alerts for a repository 
-
-Anyone with contributor permissions for a repository can view a summary of all alerts for a repository in **Repos** >  **Advanced Security**. 
 
 By default, the alerts page shows dependency scanning results for the default branch of the repository. 
 
@@ -110,7 +112,7 @@ The status of an alert reflects the state for the default branch and latest run 
 ### Fixing dependency scanning alerts 
 A direct dependency is a component that you have in your repository. A transitive or indirect dependency is a component that gets used by a direct dependency. Your project is still vulnerable regardless of whether the vulnerability is found in a direct or transitive dependency.
 
-Fixing a vulnerable transitive dependency usually takes the form of explicitly overriding the version of the vulnerable component used for each identified direct dependency. Once the root dependencies have upgraded their use of the vulnerable component to a safe version, you can upgrade each root dependency rather than multiple individual overrides.  
+Fixing a vulnerable transitive dependency usually takes the form of explicitly overriding the version of the vulnerable component used for each identified direct dependency. Once the root dependencies upgrade their use of the vulnerable component to a safe version, you can upgrade each root dependency rather than multiple individual overrides.  
 
 #### Updating dependencies for Yarn/Npm 
 
@@ -142,7 +144,7 @@ The current version of `axios` has a [denial of service (DoS) vulnerability](htt
 }
 ```
 
-Now, the version of `eslint` in the `package.json` shown depends on a version of `acorn` that is a regular expression denial of service (ReDoS) vulnerability with a recommendation to update to version `5.7.4, 6.4.1, 7.1.1` or higher. If you get an alert from the dependency scanning tool, it should tell you the root dependency that requires the vulnerable dependency.
+Now, the version of `eslint` in the `package.json` shown depends on a version of `acorn` that is a regular expression denial of service, "Re-DoS," vulnerability with a recommendation to update to version `5.7.4, 6.4.1, 7.1.1` or higher. If you get an alert from the dependency scanning tool, it should tell you the root dependency that requires the vulnerable dependency.
 
 #### Yarn
 
@@ -192,7 +194,7 @@ Use the resolutions field in `package.json` to define a version override. Three 
 }
 ```
 
-Using the`**/acorn` pattern overrides all usages of the acorn package across all dependencies. It's dangerous, and break at runtime. As a result, it has been removed in Yarn v2.
+Using the`**/acorn` pattern overrides all usages of the acorn package across all dependencies. It's dangerous, and breaks at runtime, so we removed it in Yarn v2.
 
 Using the `eslint/**/acorn` pattern overrides all usages of the acorn package under the eslint package, and in any packages it depends on. It's safer than overriding the package for all dependencies, but it still has some risks if the dependency graph for a package is large. This pattern is recommended when there are many subpackages that use a vulnerable package and defining overrides for individual subpackages would be impractical.
 
@@ -202,7 +204,7 @@ Using the pattern `eslint/espree/acorn` overrides only the usage of `acorn` in t
 
 If you’re using npm 8.3 or higher, you can use the [**overrides**](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) field in your package.json
 
-Add an override if you need to make specific changes to transitive dependencies. For example, you may need to add an override to replace the version of a dependency with a known security issue, replace an existing dependency with a fork, or make sure that the same version of a package is used everywhere. 
+Add an override if you need to make specific changes to transitive dependencies. For example, you might need to override the version of a dependency with a known security issue, replace an existing dependency with a fork, or ensure that the same version of a package gets used everywhere. 
 
 >[!div class="tabbedCodeSnippets"]
 ```javascript
@@ -228,7 +230,7 @@ The override example shown demonstrates npm's way of saying “override only the
 
 After setting your overrides, you must delete your `package-lock.json` and `node_modules` and run `npm install` again.
 
-You may not set an override for a package that you directly depend on unless both the dependency and the override itself share the exact same spec. For example, let’s say `axios: "0.18.0"` is vulnerable and we're looking to upgrade to `axios: "0.19.2"`. Directly change the dependency version instead of using override.
+You might not set an override for a package that you directly depend on unless both the dependency and the override itself share the exact same spec. For example, let’s say `axios: "0.18.0"` is vulnerable and we're looking to upgrade to `axios: "0.19.2"`. Directly change the dependency version instead of using override.
 
 >[!div class="tabbedCodeSnippets"]
 ```javascript
@@ -262,7 +264,7 @@ Update the dependency's version without setting an override:
 
 #### Updating dependencies for Maven
 
-The dependency resolution mechanism isn't as sophisticated as the one used in Yarn. As a result, you can only have a single version of a dependency in a project. In order to resolve this issue, Maven uses a “nearest wins” algorithm. That is, it uses the version of the closest dependency to your project in the tree of dependencies.
+The dependency resolution mechanism isn't as sophisticated as the one used in Yarn. As a result, you can only have a single version of a dependency in a project. In order to resolve this issue, Maven uses a "nearest wins" algorithm. That is, it uses the version of the closest dependency to your project in the tree of dependencies.
 
 For example, you have the following dependency graph:
 
@@ -273,9 +275,9 @@ your-project --- A:1.0.0 --- B:2.0.0
        \__ B:1.0.0
 ```
 
-`your-project` depends on `A:1.0.0`, which in turn depends on `B:2.0.0` but your project also has a direct dependency on `B:1.0.0`. So, you have two different versions of dependency B in your dependency graph, but version 1.0.0 of dependency B wins as it is ‘nearest’ to your project.
+`your-project` depends on `A:1.0.0`, which in turn depends on `B:2.0.0` but your project also has a direct dependency on `B:1.0.0`. So, you have two different versions of dependency B in your dependency graph, but version 1.0.0 of dependency B wins as it is "nearest" to your project.
 
-In some cases, this scenario might work if the versions are compatible. However, if `A:1.0.0` depends on some feature of B that is only available in version `2.0.0` then this behavior doesn't work. In a worst case scenario, this project may still compile but fails at runtime.
+In some cases, this scenario might work if the versions are compatible. However, if `A:1.0.0` depends on some feature of B that is only available in version `2.0.0` then this behavior doesn't work. In a worst case scenario, this project might still compile but fails at runtime.
 
 Let’s take a look at a real world example.
 
@@ -326,7 +328,7 @@ You can verify this dependency by using the [Maven dependency plugin](https://ma
 
 First, check if there's a new version of `com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider` that doesn’t depend on a vulnerable version of `com.fasterxml.jackson.core:jackson-databind`. If so, you can upgrade `com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider` and stop there. If not, override the version of `com.fasterxml.jackson.core:jackson-databind`.
 
-As shown in the code snippet, when using Maven the “nearest wins”, so the resolution is to add a direct dependency to `com.fasterxml.jackson.core:jackson-databind` that fixes the vulnerability.
+As shown in the code snippet, when using Maven the "nearest wins", so the resolution is to add a direct dependency to `com.fasterxml.jackson.core:jackson-databind` that fixes the vulnerability.
 
 >[!div class="tabbedCodeSnippets"]
 ```java
@@ -377,7 +379,7 @@ $ mvn dependency:tree -Dincludes=com.fasterxml.jackson.core:jackson-databind
 [INFO] ------------------------------------------------------------------------
 ```
 
-It's recommended to add a comment near the dependency resolution, so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version; otherwise, you accumulate dependencies.
+We recommend you add a comment near the dependency resolution, so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version; otherwise, you accumulate dependencies.
 
 In a real project, add the dependency as high up the chain as possible. For example, you could add the resolution in the parent POM file, instead of individually in every project POM file.
 
@@ -430,7 +432,7 @@ The RCE vulnerability in `Microsoft.AspNetCore.Http.Connections` was fixed in ve
 </Project>
 ```
 
-It's recommended to add a comment near the dependency resolution so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version. Otherwise, you accumulate dependencies.
+We recommend you add a comment near the dependency resolution so that anyone coming later knows why the dependency is there. It can be removed once the root dependency uses the new version. Otherwise, you accumulate dependencies.
 
 ### What if there's no fix available?
 
@@ -441,34 +443,39 @@ When no known fix is available, the following options are available as other met
 
 ### Dismiss dependency scanning alerts
 
-To dismiss alerts in Advanced Security, you need the appropriate permissions. By default, only project administrators are provided with the ability to dismiss Advanced Security alerts. 
+To dismiss an alert, do the following steps: 
 
-To dismiss an alert: 
+1. Go to the alert you wish to close and select on the alert. 
+2. Select the **Close alert** drop-down. 
+3. If not already selected, select either **Risk accepted** or **False positive** as the closure reason.
+4. Add an optional comment into the **Comment** text box. 
+5. Select **Close** to submit and close the alert. 
+6. The alert state changes from **Open** to **Closed** and displays your dismissal reason.
 
-1. Go to the alert you wish to close and select on the alert 
-1. Select the **Close alert** drop-down 
-1. If not already selected, select either **Risk accepted** or **False positive** as the closure reason
-1. Add an optional comment into the **Comment** text box 
-1. Select **Close** to submit and close the alert 
-1. The alert state changes from **Open** to **Closed** and displays your dismissal reason
-
-![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
+   ![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
 
 This action dismisses the alert across all branches. Other branches that contain the same vulnerability will also be dismissed. Any alert previously dismissed can be manually reopened. 
 
 ### Managing dependency scanning alerts on pull requests
 
-If alerts are created for new code changes in a pull request, the alert is reported as an annotation in the Overview tab's comment section of the pull request and as an alert in the Advanced Security repository tab. There is a new branch picker entry for the pull request branch.
+If alerts are created for new code changes in a pull request, the alert is reported as an annotation in the **Overview** tab's comment section of the pull request and as an alert in the **Advanced Security** repository tab. A new branch picker entry is available for the pull request branch.
 
 You can see the affected package manifest, see a summary of the finding, and resolve the annotation in the Overview section.
 
 [![Screenshot of active dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning.png)](./media/pull-request-annotation-dependency-scanning.png#lightbox)
 
-To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but does not close or fix the underlying alert. 
+To dismiss pull request alerts, you must navigate to the alert detail view to close both the alert and resolve the annotation. Otherwise, simply changing the comment status (1) resolves the annotation but doesn't close or fix the underlying alert. 
 
 [![Screenshot of closed dependency pull request annotation.](./media/pull-request-annotation-dependency-scanning-closed.png)](./media/pull-request-annotation-dependency-scanning-closed.png#lightbox)
 
 To see the entire set of results for your pull request branch, navigate to **Repos** > **Advanced Security** and select your pull request branch. Selecting **Show more details** (2) on the annotation directs you to the alert detail view in the Advanced Security tab. 
 
 > [!TIP]
-> Annotations will only be created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
+> Annotations only get created when the affected lines of code are entirely unique to the pull request difference compared to the target branch of the pull request.
+
+## Related articles
+
+- [Learn about supported package ecosystems](github-advanced-security-dependency-scanning-ecosystems.md)
+- [Troubleshoot dependency scanning](github-advanced-security-dependency-scanning-troubleshoot.md)
+- [Set up secret scanning](github-advanced-security-secret-scanning.md)
+- [Learn about Advanced Security](github-advanced-security-security-overview.md)
