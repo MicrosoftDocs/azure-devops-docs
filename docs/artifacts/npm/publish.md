@@ -22,61 +22,35 @@ This article guides you through authenticating with your Azure Artifacts feed an
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). |
 
-## Connect to Feed
+## Get the tools
 
-::: moniker range="azure-devops"  
+If this is your first time using Azure Artifacts with npm on your machine, follow the steps below to set up your environment:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+### [Windows](#tab/windows/)
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Download [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-1. Select **Connect to Feed**, and then select **npm** from the left navigation area.
+1. Run the following command to install `vsts-npm-auth`.
 
-1. Follow the instructions in the **Project setup** section to configure your *.npmrc* file and connect to your feed.
+    ```
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    ```
 
-    :::image type="content" source="../npm/media/project-setup-npm.png" alt-text="Screenshot that shows how to connect to a feed in Azure DevOps services." lightbox="../npm/media/project-setup-npm.png":::
+### [Other](#tab/other/)
 
-::: moniker-end
+1. Download [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-::: moniker range="< azure-devops"
+1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope.
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-2. Select **Artifacts**, and then select your feed from the dropdown menu.
-
-3. Select **Connect to Feed**, and then select **npm** from the left navigation area.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2022"
-
-4. Follow the instructions in the **Project setup** section to connect to your feed.
-
-    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot that shows how to connect to your feed in Azure DevOps Server 2022.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-4. Follow the instructions in the **Project setup** section to connect to your feed.
-    
-    :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot that shows how to connect to your feed in Azure DevOps Server 2020.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-4. Follow the provided instructions to set up your project and connect to your feed.
-    
-    :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot that shows how to connect to your feed in Azure DevOps Server 2019.":::
-
-::: moniker-end
+---
 
 ## Publish packages
 
+1. If you haven't authenticated with your feed yet, follow the steps in the [Project setup](npmrc.md#connect-to-feed) to connect to your feed and then proceed with the next step once you're done.
+
 1. Run the following command in your project directory to publish the npm packages listed in your *package.json*:
 
-    ```Cli
+    ```
     npm publish
     ```
 
