@@ -173,8 +173,8 @@ You can configure the **Sync tags** setting from the properties of the **Get sou
 
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
-> [!IMPORTANT]
-> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) might have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch.
+> [!NOTE]
+> Pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) might have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch.
 >
 > To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
 
