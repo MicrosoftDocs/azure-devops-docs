@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/22/2016
+ms.date: 02/21/2025
 ---
 
 # Add panels on backlog pages
@@ -31,11 +31,12 @@ The custom panel opens in the same space that the mapping panel opens if it were
 
 There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
 
-<!---
-![backlog panel contribution point breakdown](../media/backlog-pane/backlogPaneContributionPointBreakdown.png)
--->
 
-![backlog panel contribution point breakdown](media/add-panel-show-three-types.png)
+| Backlog Category   | Contribution point |
+|--------------------|--------------------|
+| Portfolio (Epic, Feature) | ms.vss-work-web.portfolio-backlog-toolpane |
+| Requirements (User Story, Product Backlog Item) | ms.vss-work-web.requirement-backlog-toolpane | 
+| Sprint Backlog | ms.vss-work-web.iteration-backlog-toolpane |
 
 For more information, see the [Azure DevOps Services Extension Sample](https://github.com/Microsoft/azure-devops-extension-sample).
 
@@ -81,7 +82,7 @@ For each contribution in your extension, the manifest defines
 | title              | Tooltip text that appears on the menu item                                        |                   
 | name               | What appears in the dropdown for panel selection					                  |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
-| registeredObjectId | Id of the object registered for the panel                                             |    
+| registeredObjectId | ID of the object registered for the panel                                             |    
 
 
 Learn about all of the places where you can add an extension in [Extensibility points](../reference/targets/overview.md).
