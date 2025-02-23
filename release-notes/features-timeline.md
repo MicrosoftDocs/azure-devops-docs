@@ -36,7 +36,7 @@ The main capabilities of GitHub Advanced Security for Azure DevOps are:
 
 - *Secret Scanning:* Detect and remediate plaintext secrets in your git repositories. If push protection is enabled, it also detects and blocks secrets before they are pushed to your repositories.
 - *Code Scanning:* Search for potential security vulnerabilities and coding errors in your code using CodeQL or a third-party tool.
-- *Dependency Scanning:* Detect and alert when your code depends on a package that is insecure and recieve straightforward remediation guidance.
+- *Dependency Scanning:* Detect and alert when your code depends on a package that is insecure and receive straightforward remediation guidance.
 
 You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features).
 
