@@ -3,7 +3,7 @@ title: Azure DevOps release notes - Azure Pipelines Sprint 252 update
 description: See the Sprint 252 feature updates for Azure Pipelines, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/21/2024
+ms.date: 2/24/2024
 ---
 
 # Azure Pipelines - Sprint 252 Update
