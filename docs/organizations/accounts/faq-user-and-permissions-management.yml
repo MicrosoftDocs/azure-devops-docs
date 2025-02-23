@@ -112,6 +112,8 @@ sections:
         answer: |
           A: GitHub Enterprise Cloud customers who access GitHub and Azure DevOps with the same Entra tenant. Users must sign in using the same identity in GitHub and Azure DevOps. 
           
+          ![Screenshot shows GitHub Enterprise listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise.png)
+
       - question: |
           Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
         answer: |
