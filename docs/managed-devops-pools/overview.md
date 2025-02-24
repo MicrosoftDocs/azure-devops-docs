@@ -78,7 +78,7 @@ The following section describes new features in development for Managed DevOps P
 
 * **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for July 2025.**
 
-* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container.. **Planned for September 2025.**
+* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for September 2025.**
 
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for September 2025.**
 
