@@ -18,6 +18,10 @@ ms.date: 09/10/2018
 
 In Team Foundation Server 2015 Update 1, a project administrator can add a Git repo to a project created with Team Foundation Version Control (TFVC). You can also add a TFVC repo to a project created with Git. This allows you to adopt a new version control system while preserving all the data in your project. 
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Enable access to the new repo type
 
 Because permissions are applied at project creation time by a process template, there will be a small amount of work to correct permissions for a new repo type.

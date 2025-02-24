@@ -18,7 +18,11 @@ monikerRange: '<= azure-devops'
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)] 
+
+## Open recent exploratory sessions
 
 1. Open the **Recent exploratory sessions** page, with either of the following actions:
 

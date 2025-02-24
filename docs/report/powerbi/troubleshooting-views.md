@@ -19,6 +19,10 @@ An Analytics view provides a simplified way to specify the filter criteria for a
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
 ## Resolve size warnings
 
 ### Warning: This view may contain too much data

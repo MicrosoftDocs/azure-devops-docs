@@ -105,6 +105,9 @@ Public feeds are project-scoped feeds in a public project. Follow the instructio
 
 ## Delete a feed
 
+> [!NOTE]
+> You must be a **Feed Owner** to delete a feed.
+
 1. Navigate to your Azure DevOps project, select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your feed's settings.
@@ -131,7 +134,7 @@ To access feeds pending permanent deletion, navigate to the feed picker dropdown
 
 ## Permanently delete a feed
 
-A feed pending deletion will still use storage space. To permanently delete your feed before the 30-day period ends, follow these steps:
+A feed pending deletion will continue to use storage space. You must be a feed owner to permentantly delete a feed. To delete your feed before the 30-day period ends, follow these steps:
 
 1. Navigate to your Azure DevOps project, and then select **Artifacts**.
 

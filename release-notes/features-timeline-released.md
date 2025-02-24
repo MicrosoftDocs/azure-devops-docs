@@ -38,6 +38,22 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="14"><a href="2025/sprint-251-update.md" data-raw-source="[12 February  2025](2025/sprint-251-update.md)"> 12 February  2025</a></td>
+    <td>Removal of Generate Git Credentials Button in Repos and Wiki </td><td>General</td><td>Future</td></tr>
+    <td>Update to Azure DevOps Allowed IP addresses </td><td>General</td><td>Future</td></tr>
+    <td>GitHub Advanced Security updates for default branch changes</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL installation for self-hosted agents supports proxy configurations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Alerts branch picker now displays all branches with a successful scan</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Enhanced pull request annotations in GitHub Advanced Security </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Improvements for Get alerts API</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure Classic Service Connections are being retired</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Managed DevOps Pools is generally available</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New tasks to implement secret-less access to Azure storage accounts</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Direct link from Test Plan work item to Test Plans page</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Azure Test Plans bug fixes</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Export test cases with custom columns in XLSX</td><td>Test Plans</td><td>N/A</td></tr>
+    <td>Auto-pause manual test case run</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
     <td rowspan="7"><a href="2025/sprint-248-update.md" data-raw-source="[17 January 2025](2025/sprint-248-update.md)"> 17 January 2025</a></td>
     <td>Tool specific security overview coverage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Azure Boards Integration with GitHub Enterprise Cloud with Data Residency </td><td>Boards</td><td>Future</td></tr>

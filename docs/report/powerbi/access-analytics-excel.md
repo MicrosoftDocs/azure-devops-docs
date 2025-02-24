@@ -17,6 +17,10 @@ ms.date: 10/08/2024
 
 You can access data through Excel, generate reports, and then publish the charts to Power BI or use the Excel file as a basis for Power BI reports. At this time, you need alternate credentials enabled to access data Analytics via Excel.
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
 1. Open Excel 2016 or later, including Excel for Microsoft 365.

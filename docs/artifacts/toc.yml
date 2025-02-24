@@ -87,9 +87,9 @@
     - name: Project setup
       href: npm/npmrc.md
       displayName: publish, npm
-    - name: Publish and restore npm packages (CLI)
+    - name: Publish npm packages
       href: npm/publish.md
-      displayName: npm, publish, restore, cli
+      displayName: npm, publish, cli
     - name: Npm scopes
       href: npm/scopes.md
       displayName: npm scope, npm artifacts, npm packages
@@ -152,9 +152,9 @@
     - name: Project setup
       href: npm/npmrc.md
       displayName: npmrc, connect, feed, npm
-    - name: Publish and restore npm packages (CLI)
-      href: npm/publish.md
-      displayName: npm, publish, restore, cli
+    - name: Restore npm packages
+      href: npm/restore-npm-packages.md
+      displayName: npm, restore, cli
     - name: Npm scopes
       href: npm/scopes.md
       displayName: npm scope, npm artifacts, npm packages
@@ -314,7 +314,7 @@
     href: ../pipelines/artifacts/publish-maven-artifacts.md
     displayName: Maven, package
   - name: Gradle
-    href: ../pipelines/artifacts/pull-package-gradle.md
+    href: ../pipelines/artifacts/build-publish-artifacts-gradle.md
     displayName: Gradle, package
   - name: Python
     href: ../pipelines/artifacts/pypi.md

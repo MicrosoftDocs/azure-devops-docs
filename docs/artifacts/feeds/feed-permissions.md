@@ -82,6 +82,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 | Add/remove upstream sources          |          |          |          | &#x2713; |
 | Allow external package versions      |          |          |          | &#x2713; |
 | Edit feed settings                   |          |          |          | &#x2713; |
+| Delete a feed                        |          |          |          | &#x2713; |
 
 > [!NOTE]
 > [Azure Artifacts Administrators](#azure-artifacts-settings), including **Project Collection Administrators**, automatically have the **Feed Owner** role on all feeds.
@@ -131,15 +132,94 @@ If your pipeline is unable to access your feed, you might need to add the corres
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
-1.  Select **Permissions**, and then select **Add users/groups**.
-    Add your build identity and set its role to **Feed and Upstream Reader (Collaborator)**.
-    If you have a pipeline that needs to publish packages to the feed, set the role to **Feed Publisher (Contributor)** instead.
+1. Select **Permissions**, then select **Add users/groups**. Add your build identity and assign it the **Feed and Upstream Reader (Collaborator)** role. If your pipeline needs to publish packages to the feed, make sure that both the *Project Collection Build Service* and your *project's Build Service* identities have the **Feed Publisher (Contributor)** role. See the examples below to learn how to authenticate and publish packages to your feed with Azure Pipelines.
 
     :::moniker range=">= azure-devops-2022"
 
-    :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="A screenshot showing the build identity permission.":::
+    :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="A screenshot showing how to set up the build identities.":::
 
     ::: moniker-end
+
+
+#### Examples
+
+::: moniker range="azure-devops"
+
+### [NuGet](#tab/nuget)
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+
+### [Npm](#tab/npm)
+
+- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md)
+
+### [Maven](#tab/maven)
+
+- [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+### [Python](#tab/python)
+
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+
+### [Cargo](#tab/cargo)
+
+- [Publish Cargo packages with Azure Pipelines](../../pipelines/artifacts/cargo-pipelines.md)
+
+### [Universal Packages](#tab/universalpackages)
+
+- [Publish Universal Packages with Azure Pipelines](../../pipelines/artifacts/universal-packages.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+### [NuGet](#tab/nugetserver22)
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+
+### [Npm](#tab/npmserver22)
+
+- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md)
+
+### [Maven](#tab/mavenserver22)
+
+- [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+### [Python](#tab/pythonserver22)
+
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+
+### [Cargo](#tab/cargoserver22)
+
+- [Publish Cargo packages with Azure Pipelines](../../pipelines/artifacts/cargo-pipelines.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+### [NuGet](#tab/nugetserver)
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+
+### [Npm](#tab/npmserver)
+
+- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md)
+
+### [Maven](#tab/mavenserver)
+
+- [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+### [Python](#tab/pythonserver)
+
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+
+---
+
+::: moniker-end
 
 > [!NOTE]
 > If you want to access a feed in a different project from your pipeline, and your pipeline uses the project-level build identity, you must set up the other project to grant that identity at least the "Read project-level information" permission.

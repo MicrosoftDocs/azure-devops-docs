@@ -31,6 +31,8 @@ You can query Analytics from any [supported web browser](/azure/devops/server/co
 > [!NOTE]   
 > OData, an application-level protocol for interacting with data via RESTful (where REST=Representational State Transfer) interfaces), supports the description of data models as well as editing and querying of data according to those models. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. For an overview of OData, see [Welcome to OData](/odata/overview). 
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="query-metadata"></a>

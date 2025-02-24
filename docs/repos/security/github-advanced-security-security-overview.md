@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Utilize security overview for GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.topic: how-to 
+ms.topic: conceptual 
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
@@ -31,8 +31,15 @@ Under the **Coverage** tab, security overview shows all repositories in your ent
 
 :::image type="content" source="media/security-overview-coverage.png" lightbox="media/security-overview-coverage.png" alt-text="Screenshot of Coverage tab in security overview for an organization."::: 
 
-Dependency scanning, code scanning, and secret scanning alerts are enabled once a SARIF result file has been successfully submitted to Advanced Security. In other words, a successful scan regardless of alert discovery on any branch for a repository lights up coverage for that particular tool and repository. The enablement status doesn't consider recency of the scan. 
+Dependency scanning, code scanning, and secret scanning alerts are enabled once a SARIF result file gets successfully submitted to Advanced Security. In other words, a successful scan regardless of alert discovery on any branch for a repository lights up coverage for that particular tool and repository. The enablement status doesn't consider recency of the scan. 
 
 Hovering on a specific repository and selecting the cog icon directs you to that repository's settings pane where you can enable Advanced Security. For more information about configuring Advanced Security features, see [Configure GitHub Advanced Security](configure-github-advanced-security-features.md).
 
 :::image type="content" source="media/enable-github-advanced-security.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::
+
+## Related articles
+
+- [Set up code scanning](github-advanced-security-code-scanning.md)
+- [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
+- [Set up secret scanning](github-advanced-security-secret-scanning.md)
+- [Manage GitHub Advanced Security for Azure DevOps](github-advanced-security-permissions.md)

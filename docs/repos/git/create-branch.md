@@ -19,6 +19,10 @@ The first commit in a new Git repo is the start of the `main` branch. As you wor
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Create a new branch
 
 > [!NOTE]

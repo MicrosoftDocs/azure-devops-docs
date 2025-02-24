@@ -21,8 +21,7 @@ The Team Foundation Version Control `add` command adds files and folders to a TF
 ## Prerequisites
 
 - [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
-
-- The TFVC workspace set up on the dev machine. See [Workspace command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).
+- TFVC workspace set up on the dev machine. See [Workspace command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).
 
 ## Syntax
 

@@ -21,7 +21,11 @@ The Team Foundation Version Control (TFVC) `unlabel` command removes an item fro
 
 ## Prerequisites
 
-To use the `unlabel` command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|To use the `unlabel` command: Owner of the label or **Administer labels** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

@@ -21,7 +21,11 @@ Displays the history of a branch for a specified file or folder.
 
 ## Prerequisites
 
-To use the `branches` command, your **Read** permission must be set to **Allow** for the item and any branches to view their history.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow** for the item and any branches to view their history.  |
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

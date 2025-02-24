@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 01/22/2025
+ms.date: 2/14/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -30,9 +30,17 @@ Each feature is linked to an article where you can learn more about a particular
 
 ### GitHub Advanced Security for Azure DevOps
 
-GitHub Advanced Security (GHAS) for Azure DevOps is now generally available. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features). 
+GitHub Advanced Security for Azure DevOps (GHAzDO) brings additional security features to Azure DevOps under an additional license. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. 
 
-New capabilities we expect to deliver include: 
+The main capabilities of GitHub Advanced Security for Azure DevOps are:
+
+- *Secret Scanning:* Detect and remediate plaintext secrets in your git repositories. If push protection is enabled, it also detects and blocks secrets before they are pushed to your repositories.
+- *Code Scanning:* Search for potential security vulnerabilities and coding errors in your code using CodeQL or a third-party tool.
+- *Dependency Scanning:* Detect and alert when your code depends on a package that is insecure and receive straightforward remediation guidance.
+
+You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features).
+
+Upcoming capabilities we expect to deliver include: 
 <table>
     <thead>
         <tr>
@@ -43,17 +51,22 @@ New capabilities we expect to deliver include:
     </thead>
     <tbody>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2025 Q1</td>     
-        </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Determine detected partner secrets validity](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Determine detected partner secrets validity</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>2025 Q1</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+        <td>2025 Q2</td>
+      </tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>Future</td>
       </tr>
@@ -235,6 +248,44 @@ These investments include:
     </tbody>
 </table>
 
+### Migrate to Managed DevOps Pools
+
+Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Managed DevOps Pools is generally available, so you can migrate your Virtual machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible. 
+
+Below, you will find several investments we plan to deliver as part of this initiative:
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Quarter</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td>Spot VM agents</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td>Preemptive agent download</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td>Add trusted root certificates</td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td>Container based agents</td>
+         <td>Pipelines</td>
+         <td>2025 Q4</td>
+      </tr>
+   </tbody>
+</table>
+
 ### YAML and release pipelines feature parity
 
 For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We will continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
@@ -389,7 +440,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="20"><strong>2025 Q1</strong></td>
+      <td rowspan="21"><strong>2025 Q1</strong></td>
        <td>
          <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
         </td>
@@ -463,18 +514,22 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
-         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependency-pr" data-raw-source="[Display contextual comments to pull requests containing newly introduced dependencies](/azure/devops/release-notes/roadmap/2024/ghazdo/dependency-pr)">Display contextual comments to pull requests containing newly introduced dependencies</a></td>
-         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="11"><strong>2025 Q2</strong></td>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/multi-repo" data-raw-source="[Support for multi-repository result publishing](/azure/devops/release-notes/roadmap/2025/ghazdo/multi-repo)">Support for multi-repository result publishing</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/service-hooks" data-raw-source="[Advanced Security alert events added to Azure DevOps service hooks framework](/azure/devops/release-notes/roadmap/2025/ghazdo/service-hooks)">Advanced Security alert events added to Azure DevOps service hooks framework</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-v2" data-raw-source="[New security overview alert details and reporting capabilities](/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-v2)">New security overview alert details and reporting capabilities</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="13"><strong>2025 Q2</strong></td>
         <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
@@ -520,7 +575,15 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result" data-raw-source="[Advanced Test Case result history](/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result)">Advanced Test Case result history</a></td>
          <td>Test Plans</td>
       </tr>
-      <td rowspan="20"><strong>Future</strong></td>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata" data-raw-source="[Adding additional metadata for dependency alerts to improve remediation](/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata)">Adding additional metadata for dependency alerts to improve remediation</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
@@ -586,6 +649,14 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[DependaBot Security Update Support](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Dependabot Security Update Support</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging" data-raw-source="[Advanced Security events streamed to Azure DevOps audit log](/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging)">Advanced Security events streamed to Azure DevOps audit log</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
    </tbody>

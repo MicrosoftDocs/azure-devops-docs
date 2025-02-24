@@ -22,7 +22,9 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 * Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](provide-stakeholder-feedback.md#direct) voluntarily.
 * Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](provide-stakeholder-feedback.md#email).
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-stakeholder](includes/prerequisites-stakeholder.md)] 
 
 <a name="connectvtfs"></a>
 

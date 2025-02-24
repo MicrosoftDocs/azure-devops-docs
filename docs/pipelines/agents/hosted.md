@@ -76,10 +76,6 @@ Customers are encouraged to migrate to newer versions or a [self-hosted agent](w
 For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 > [!NOTE]
-> macOS capacity is currently limited. Unlike Linux and Windows images, where our capacity is restrained by Azure's all up capacity, macOS capacity is constrained by the amount of hardware we have available. While we are working to add capacity during Spring 2024, some jobs may experience delayed execution.
-> Wherever possible, e.g. for jobs that do not create Apple ecosystem apps, customers should choose Linux or Windows images.
-
-> [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 > [!IMPORTANT]
@@ -377,7 +373,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/).
 
 #### Mono
 
