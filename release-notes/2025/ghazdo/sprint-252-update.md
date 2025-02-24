@@ -6,7 +6,7 @@ ms.author: ckanyika
 ms.date: 2/24/2025
 ---
 
-# GitHub Advanced Security for Azure DevOps - Sprint 251 Update
+# GitHub Advanced Security for Azure DevOps - Sprint 252 Update
 
 ## Features
 
