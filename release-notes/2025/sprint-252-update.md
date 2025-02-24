@@ -15,7 +15,11 @@ Check out the release notes for details.
 
 ### General
 
-[!INCLUDE [sprint-252-update-links](includes/general/sprint-252-update-links.md)]
+[!INCLUDE [sprint-252-update-links](includes/general/sprint-252-update-links.md)] 
+
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-252-update-links](includes/ghazdo/sprint-252-update-links.md)] 
 
 ### Azure Boards:
 
@@ -32,6 +36,10 @@ Check out the release notes for details.
 ## General
 
 [!INCLUDE [sprint-252-update](includes/general/sprint-252-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-252-update](includes/ghazdo/sprint-252-update.md)]
 
 ## Azure Boards
 
