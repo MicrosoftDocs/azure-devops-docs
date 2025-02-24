@@ -7,19 +7,16 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2025
+ms.date: 02/24/2025
 --- 
 
 # Azure DevOps security overview
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-<!--- Ensure to differentiate between [github security doc](https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops)-->
-
 When you're handling information and data, especially in a cloud-based solution like Azure DevOps Services, security should be your top priority. While Microsoft ensures the security of the underlying cloud infrastructure, configuring security within Azure DevOps is your responsibility. This article provides an overview of necessary security-related configurations to protect your Azure DevOps environment against threats and vulnerabilities. 
 
 ## Secure your network
- 
 
 Securing your network is crucial when you're working with Azure DevOps to protect your data and resources from unauthorized access and potential threats. Implementing network security measures helps ensure that only trusted sources can access your Azure DevOps environment. To secure your network when you're working with Azure DevOps, do the following actions:
 
@@ -33,6 +30,55 @@ Securing your network is crucial when you're working with Azure DevOps to protec
 - **Implement DDoS protection:** Enable Azure DDoS Protection to safeguard your applications from distributed denial-of-service (DDoS) attacks. For more information, see [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview).
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
+
+## Secure your Azure DevOps environment
+
+To ensure that your Azure DevOps environment complies with industry standards and regulations, implement security measures and policies. Compliance with standards such as ISO/IEC 27001, SOC 1/2/3, and General Data Protection Regulation (GDPR) helps protect your environment and maintain trust with your users.
+
+- **Ensure compliance with industry standards:** Azure DevOps complies with various industry standards and regulations, such as ISO/IEC 27001, SOC 1/2/3, and GDPR. Ensure your environment adheres to these standards.
+- **Enforce policies:** Implement policies to enforce security best practices across your organization. This action includes requiring code reviews and enforcing [branch policies](../../repos/git/branch-policies.md), [compliance policies for pipelines](/azure/governance/policy/tutorials/policy-devops-pipelines), and [security policies](../accounts/change-application-access-policies.md).
+- **Onboard to Component Governance for CI/CD for the following reasons**:
+  - Security vulnerability detection: Alerts you to known vulnerabilities in open-source components.
+  - License compliance: Ensures components comply with your organization's licensing policies.
+  - Policy enforcement: Ensures only approved versions are used.<br>- 
+  - Visibility with tracking: Provides visibility into components across repositories for easier management. 
+
+### Manage project-level permissions
+
+- **Limit access to projects and repos:** Reduce the risk of leaking sensitive information and deploying insecure code by [limiting access to projects and repositories](restrict-access.md). Use built-in or custom security groups manage permissions.
+- **Disable *“Allow public projects”*:** In your organization’s policy settings, disable the option to create public projects. Switch project visibility from public to private as needed. Users who haven’t signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
+- **Restrict project creation:** Prevent users from creating new projects to maintain control over your environment.
+
+## Use security features and tools
+
+The following security features and tools can help you monitor, manage, and enhance the security of your projects:
+
+- **Use OAuth instead of personal access tokens (PATs)**: [Use OAuth flow](../../integrate/get-started/authentication/oauth.md) instead of PATs and don't use personal GitHub accounts as service connections.
+- **Use code scanning and analysis**: Utilize tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations. This action helps identify and remediate security issues early in the development process.
+- **[Use Git Credential Manager](../../repos/git/set-up-credential-managers.md)**: Support [two-factor authentication with GitHub repositories](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) and authenticate to Azure Repos.
+- **[Use Azure DevOps Credential Scanner for GitHub](https://secdevtools.azurewebsites.net/helpcredscan.html)**: When using a managed identity isn't an option, ensure that credentials get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Implement Azure DevOps Credential Scanner to identify credentials within the code.
+- **[Use native secret scanning for GitHub](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)**: When using a managed identity isn't an option, ensure that secrets get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Use the native secret scanning feature to identify secrets within the code.
+
+For more information, see the [GitHub advanced security overview](../../repos/security/github-advanced-security-security-overview.md).
+
+## Secure your services
+
+To ensure the security and integrity of your Azure DevOps services, implement security measures for each service. These measures include setting permissions, managing access, and using security features specific to each service.
+
+- **[Secure Azure Boards](set-permissions-access-work-tracking.md)**: For more information, see the following articles:
+  - [Set permissions for queries and query folders](../../boards/queries/set-query-permissions.md)
+  - [Manage team administrators](../settings/add-team-administrator.md)
+  - [Default permissions and access levels for Azure Boards](../../boards/get-started/permissions-access-boards.md)
+- **Secure Azure Repos**: For more information, see the following articles:
+  - [Default Git settings and policies](default-git-permissions.md)
+  - [Set permissions for a specific branch](../../repos/git/branch-permissions.md)
+  - [Set branch policies](../../repos/git/branch-policies.md)
+- **[Secure Azure Pipelines](../../pipelines/security/overview.md)**: For more information, see the following articles:
+  - [Add users to Azure Pipelines](../../pipelines/policies/set-permissions.md)
+  - [Use templates for security](../../pipelines/process/templates.md)
+  - [Secure agents, projects, and containers](../../pipelines/security/misc.md)
+- **[Secure Azure Test Plans](set-permissions-access-test.md)**: Ensure that your team has the appropriate access to efficiently manage and execute test plans.
+- **[Secure Azure Artifacts](../../artifacts/feeds/feed-permissions.md)**: Manage access to your packages and control who can interact with them.
 
 ## Control access
 
@@ -56,12 +102,14 @@ To scope permissions effectively, do the following actions:
   - Keep groups as small as possible, restricting access.
 - **[Choose the right authentication method](#choose-the-right-authentication-method):** Set up secure authentication methods and manage authorization policies. For more information, see [Authentication methods](about-security-identity.md).
 - **[Integrate with Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md):** Use Microsoft Entra ID for unified identity management.
+  - - To enhance security for built-in administrator groups, consider implementing just-in-time access using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). This approach allows you to grant elevated permissions only when needed, reducing the risk associated with permanent access.
 - **[Enable MFA](/entra/identity/authentication/tutorial-enable-azure-mfa):** Add an extra layer of security with MFA.
 - **[Change security policies](../accounts/change-application-access-policies.md):** Manage security policies, including conditional access.
 
 For more information about permissions, see the following articles:
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
-- [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions).
+- [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions)
+- [Permissions, security groups, and service accounts reference](permissions.md)
 
 <a id="choose-the-right-authentication-method">  </a>
 <a name='use-azure-ad'></a>
@@ -89,7 +137,15 @@ To ensure the security and proper management of external guest access, implement
 
 For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations).
 
-## Remove users
+### Implement Zero Trust
+
+To enhance security, adopt Zero Trust principles across your DevOps processes. This approach ensures that every access request is thoroughly verified, regardless of its origin. Zero Trust operates on the principle of "never trust, always verify," meaning that no entity, whether inside or outside the network, is trusted by default. By implementing Zero Trust, you can significantly reduce the risk of security breaches and ensure that only authorized users and devices can access your resources.
+
+- **Embrace the Zero Trust approach:** Implement [Zero Trust](/azure/security/fundamentals/zero-trust) principles to fortify your [DevOps platform](/security/zero-trust/develop/secure-devops-platform-environment-zero-trust), safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust), and integrate Zero Trust seamlessly into your [developer workflows](/security/zero-trust/develop/embed-zero-trust-dev-workflow). Zero Trust helps to protect against lateral movement within the network, ensuring that even if there's a compromised part of the network, the threat is contained and can't spread.
+
+For more information, see the [Zero Trust Assessment guide](https://microsoft.github.io/zerotrustassessment/guide).
+
+### Remove users
 
 To ensure that only active and authorized users have access to your Azure DevOps environment, regularly review and manage user access. Removing inactive or unauthorized users helps maintain a secure environment and reduces the risk of potential security breaches. By following these actions, you can ensure that your Azure DevOps environment remains secure and that only the necessary individuals have access.
 
@@ -98,14 +154,6 @@ To ensure that only active and authorized users have access to your Azure DevOps
 - **[Revoke user PATs](../accounts/admin-revoke-user-pats.md)**: Ensure secure management of these critical authentication tokens by regularly reviewing and revoking any existing user PATs.
 - **Revoke special permissions granted to individual users**: Audit and revoke any special permissions granted to individual users to ensure alignment with the principle of least privilege.
 - **Reassign work from removed users**: Before removing users, reassign their work items to current team members to distribute the load effectively.
-
-### Implement Zero Trust
-
-To enhance security, adopt Zero Trust principles across your DevOps processes. This approach ensures that every access request is thoroughly verified, regardless of its origin. Zero Trust operates on the principle of "never trust, always verify," meaning that no entity, whether inside or outside the network, is trusted by default. By implementing Zero Trust, you can significantly reduce the risk of security breaches and ensure that only authorized users and devices can access your resources.
-
-- **Embrace the Zero Trust approach:** Implement [Zero Trust](/azure/security/fundamentals/zero-trust) principles to fortify your [DevOps platform](/security/zero-trust/develop/secure-devops-platform-environment-zero-trust), safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust), and integrate Zero Trust seamlessly into your [developer workflows](/security/zero-trust/develop/embed-zero-trust-dev-workflow). Zero Trust helps to protect against lateral movement within the network, ensuring that even if one part of the network is compromised, the threat is contained and can't spread.
-
-For more information, see the [Zero Trust Assessment guide](https://microsoft.github.io/zerotrustassessment/guide).
 
 ## Scope service accounts
 
@@ -148,51 +196,6 @@ To ensure the security and integrity of your data, implement data protection mea
 
 - [**Protect your data**](data-protection.md): Protect data, including encryption, backup, and recovery strategies.
 - [**Add IPs and URLs to allowlist**](allow-list-ip-url.md): If your organization is secured with a firewall or proxy server, add IPs and URLs to the allowlist.
-
-## Secure your Azure DevOps environment
-
-To ensure that your Azure DevOps environment complies with industry standards and regulations, implement security measures and policies. Compliance with standards such as ISO/IEC 27001, SOC 1/2/3, and GDPR helps protect your environment and maintain trust with your users.
-
-- **Ensure compliance with industry standards:** Azure DevOps complies with various industry standards and regulations, such as ISO/IEC 27001, SOC 1/2/3, and GDPR. Ensure your environment adheres to these standards.
-- **Enforce policies:** Implement policies to enforce security best practices across your organization. This action includes requiring code reviews, enforcing branch policies, and setting up automated security checks. 
-- **Onboard to Component Governance for CI/CD:** Key reasons:
-  - Security vulnerability detection: Alerts you to known vulnerabilities in open-source components.
-  - License compliance: Ensures components comply with your organization's licensing policies.
-  - Policy enforcement: Ensures only approved versions are used.<br>- 
-  - Visibility with tracking: Provides visibility into components across repositories for easier management.
-
-## Use security features and tools
-
-The following security features and tools can help you monitor, manage, and enhance the security of your projects:
-
-- **Use OAuth instead of personal access tokens (PATs)**: [Use OAuth flow](../../integrate/get-started/authentication/oauth.md) instead of PATs and don't use personal GitHub accounts as service connections.
-- **Use code scanning and analysis**: Utilize tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations. This action helps identify and remediate security issues early in the development process.
-- **[Use Git Credential Manager](../../repos/git/set-up-credential-managers.md)**: Support [two-factor authentication with GitHub repositories](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) and authenticate to Azure Repos.
-- **[Use Azure DevOps Credential Scanner for GitHub](https://secdevtools.azurewebsites.net/helpcredscan.html)**: When using a managed identity isn't an option, ensure that credentials get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Implement Azure DevOps Credential Scanner to identify credentials within the code.
-- **[Use native secret scanning for GitHub](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)**: When using a managed identity isn't an option, ensure that secrets get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Use the native secret scanning feature to identify secrets within the code.
-
-### Secure your services
-
-To ensure the security and integrity of your Azure DevOps services, implement security measures for each service. These measures include setting permissions, managing access, and using security features specific to each service.
-
-### Secure your services
-
-To ensure the security and integrity of your Azure DevOps services, implement security measures for each service. These measures include setting permissions, managing access, and using security features specific to each service.
-
-- **[Secure Azure Boards](set-permissions-access-work-tracking.md)**: For more information, see the following articles:
-  - [Set permissions for queries and query folders](../../boards/queries/set-query-permissions.md)
-  - [Manage team administrators](../settings/add-team-administrator.md)
-  - [Default permissions and access levels for Azure Boards](../../boards/get-started/permissions-access-boards.md)
-- **Secure Azure Repos**: For more information, see the following articles:
-  - [Default Git settings and policies](default-git-permissions.md)
-  - [Set permissions for a specific branch](../../repos/git/branch-permissions.md)
-  - [Set branch policies](../../repos/git/branch-policies.md)
-- **[Secure Azure Pipelines](../../pipelines/security/overview.md)**: For more information, see the following articles:
-  - [Add users to Azure Pipelines](../../pipelines/policies/set-permissions.md)
-  - [Use templates for security](../../pipelines/process/templates.md)
-  - [Secure agents, projects, and containers](../../pipelines/security/misc.md)
-- **[Secure Azure Test Plans](set-permissions-access-test.md)**: Ensure that your team has the appropriate access to efficiently manage and execute test plans.
-- **[Secure Azure Artifacts](../../artifacts/feeds/feed-permissions.md)**: Manage access to your packages and control who can interact with them.
 
 ## Related articles
 
