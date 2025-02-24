@@ -64,13 +64,13 @@ Managed DevOps Pools provide the following benefits to creating, configuring, an
 
 The following section describes new features in development for Managed DevOps Pools.
 
+* **Ubuntu 24.04 Azure Pipelines Image**: Ubuntu 24.04 is supported for [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), and it is coming soon for [Azure Pipelines images](./configure-images.md#azure-pipelines-images). **Planned for February 2025.**
+
 * **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for April 2025.**
 
 * **Trusted root certificate**: Managed DevOps Pools is adding support so you can configure your pool to add certificates from your Key vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. **Planned for April 2025.**
 
 * **Shorter time for agent allocation**: The Managed DevOps Pools team is making updates to reduce the start-up time for stateless agents (**Fresh agent every time** setting). **Planned for April 2025.**
-
-* **Ubuntu 24.04 Azure Pipelines Image**: Ubuntu 24.04 is supported for [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), and it is coming soon for [Azure Pipelines images](./configure-images.md#azure-pipelines-images). **Planned for March 2025.**
 
 * **Pool creation at the Azure DevOps using project level permissions**: To create a Managed DevOps Pool, you must currently be an [Organization-level Agent pools administrator or a Project Collection Administrator in Azure DevOps](./prerequisites.md#verify-azure-devops-permissions). We're enabling a new mode of Managed DevOps Pools creation, requiring only Project-level Agent pools administrator. Managed DevOps Pools created using Project-level Agent pools administrator will be created and enabled only for use in the designated Azure DevOps Project. **Planned for April 2025.**
 
