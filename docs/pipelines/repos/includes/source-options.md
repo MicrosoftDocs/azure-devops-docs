@@ -69,7 +69,7 @@ steps:
 
 # [Classic](#tab/classic/)
 
-You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+You can configure the **Submodules** setting from the properties of the `Get sources` task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ![Configure Submodules setting.](../media/github/github-options.png)
 
@@ -143,7 +143,7 @@ You can also configure this setting by using the **Sync tags** option in the pip
 
     :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
 
-2. Choose **YAML**, **Get sources**.
+2. Choose **YAML**, `Get sources`.
 
     :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
 
@@ -156,7 +156,7 @@ You can also configure this setting by using the **Sync tags** option in the pip
 
 # [Classic](#tab/classic/)
 
-You can configure the **Sync tags** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Sync tags** setting from the properties of the `Get sources` task in your pipeline.
 
 :::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
 
@@ -200,7 +200,7 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
 
     :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
 
-2. Choose **YAML**, **Get sources**.
+2. Choose **YAML**, `Get sources`.
 
     :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
 
@@ -213,7 +213,7 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
 
 # [Classic](#tab/classic/)
 
-You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Shallow fetch** setting from the properties of the `Get sources` task in your pipeline.
 
 :::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
 
@@ -247,7 +247,7 @@ steps:
 
 # [Classic](#tab/classic/)
 
-Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
+Select the **Don't sync sources** setting from the properties of the `Get sources` task in your pipeline.
 
 ![Select the Don't sync sources setting.](../media/github/github-options.png)
 
@@ -305,7 +305,7 @@ This gives the following clean options.
 
 # [Classic](#tab/classic/)
 
-Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
+Select the **Clean** setting from the properties of the `Get sources` task in your pipeline and select one of the following options.
 
 ![Select the Clean setting.](../media/github/github-clean-sources.png)
 
@@ -333,13 +333,13 @@ You can't currently configure this setting in YAML but you can in the classic ed
 
 ![Configure Git options, YAML.](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
-From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
+From the classic editor, choose **YAML**, choose the `Get sources` task, and then configure the desired properties there.
 
 ![From the Classic editor, choose YAML > Get sources.](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
-You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Tag sources** setting from the properties of the `Get sources` task in your pipeline.
 
 ![Configure Git options, Classic.](../media/github/github-options.png)
 
