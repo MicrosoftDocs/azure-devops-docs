@@ -71,7 +71,7 @@ The following authentication options are supported based on the GitHub platform 
 
 ## Add a GitHub connection with GitHub credentials 
 
-You can connect up to 500 GitHub repositories to an Azure Boards project. 
+You can connect up to 1,000 GitHub repositories to an Azure Boards project. 
 
 1. If it's your first time connecting to GitHub from Azure Boards, sign in using your GitHub credentials. Choose an account for which you're a repository administrator.
 
