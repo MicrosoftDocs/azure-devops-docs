@@ -76,9 +76,9 @@ The following section describes new features in development for Managed DevOps P
 
 * **Open access for all pipelines to use a Managed DevOps Pool**: By default, each pipeline must be explicitly authorized to use a newly created Managed DevOps Pool. We're adding an option to enable [Open access for all pipelines](/azure/devops/pipelines/agents/pools-queues#pipeline-permissions) so that administrators don't need to explicitly authorize each pipeline. **Planned for April 2025.**
 
-* **SPOT instances**: Reduce your Azure cost by switching your non-time-critical pipelines to SPOT VMs. CI/CD workloads make ideal candidates to use SPOT VMs due to the ephemeral nature of CI/CD agents. **Planned for July 2025.**
+* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for July 2025.**
 
-* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container, using [Azure Container Instances](/azure/container-instances/container-instances-overview). **Planned for September 2025.**
+* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container.. **Planned for September 2025.**
 
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for September 2025.**
 
