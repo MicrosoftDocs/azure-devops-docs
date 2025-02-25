@@ -13,7 +13,7 @@ When a pipeline is triggered, Azure Pipelines pulls your source code from the Az
 
 > [!NOTE]
 > When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1`.
-If this default does not meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
+If this default doesn't meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
 
 ### Preferred version of Git
 
@@ -25,11 +25,11 @@ The `System.PreferGitFromPath` setting is always true on non-Windows agents.
 
 # [YAML](#tab/yaml/)
 
-If you are checking out a single repository, by default, your source code is checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code is checked out into `C:\agent\_work\1\mycustompath`.
+If you're checking out a single repository, by default, your source code is checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code is checked out into `C:\agent\_work\1\mycustompath`.
 
-If you are using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code is checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+If you're using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code is checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
 
-Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
+Please note that the checkout path value can't be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
 You can configure the `path` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
@@ -46,7 +46,7 @@ steps:
 
 # [Classic](#tab/classic/)
 
-This setting is not configurable in the classic editor. Your source code is checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code is checked out into `C:\agent\_work\1\mycustompath`.
+The path setting isn't configurable in the classic editor. Your source code is checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code is checked out into `C:\agent\_work\1\mycustompath`.
 
 ---
 
@@ -96,7 +96,7 @@ The build pipeline will check out your Git submodules as long as they are:
 
 In some cases you can't use the **Checkout submodules** option.
 You might have a scenario where a different set of credentials are needed to access the submodules.
-This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization, or if your job access token does not have access to the repository in a different project.
+This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization, or if your job access token doesn't have access to the repository in a different project.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
 First, get a personal access token (PAT) and prefix it with `pat:`.
@@ -175,7 +175,7 @@ You can configure the **Sync tags** setting from the properties of the `Get sour
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
 > [!NOTE]
-> In some organizations, new pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch.
+> In some organizations, new pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default wasn't to shallow fetch.
 >
 > To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
 
@@ -261,7 +261,7 @@ Select the **Don't sync sources** setting from the properties of the `Get source
 [!INCLUDE [include](build-clean-intro.md)]
 
 > [!NOTE]
-> Cleaning is not effective if you're using a [Microsoft-hosted agent](../../agents/hosted.md) because you'll get a new agent every time.
+> Cleaning isn't effective if you're using a [Microsoft-hosted agent](../../agents/hosted.md) because you'll get a new agent every time.
 
 # [YAML](#tab/yaml/)
 
@@ -355,6 +355,6 @@ The first four variables are predefined. `My.Variable` can be defined by you on 
 
 The pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
-Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
+Some build variables might yield a value that isn't a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag isn't created.
 
 After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.
