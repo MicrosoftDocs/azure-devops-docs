@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path_from_root": "/docs/repos/git/go-get.md",
+            "redirect_url": "/azure/devops/repos/git/go-install-exe",
+            "redirect_document_id": false
+        }
+    ]
+}
