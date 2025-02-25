@@ -353,7 +353,7 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.Buil
 
 The first four variables are predefined. `My.Variable` can be defined by you on the [variables tab](../../build/variables.md).
 
-The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+The pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
