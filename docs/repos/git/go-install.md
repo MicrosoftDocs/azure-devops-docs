@@ -25,8 +25,7 @@ same syntax described in the following sections.
 
 ## Go install with public projects
 
-If your Azure Repos Git repo is in a [public project](../../organizations/projects/about-projects.md) 
-you can use `go install` using the web repo url in the following format. For version, you can use `latest` or a specific version.
+If your Azure Repos Git repo is in a [public project](../../organizations/projects/about-projects.md), you can use `go install` using the web repo url in the following format. For version, you can use `latest` or a specific version.
 
 ```
 go install dev.azure.com/<organization>/<project>/_git/<repo>.git@<version>
@@ -52,7 +51,7 @@ If your Azure DevOps Git repo is private, you can either use SSH or authenticate
 
 To use SSH with `go install`, have SSH keys set up for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md).
 
-When you have SSH keys set up, add this entry to your .gitconfig file:
+When you have SSH keys set up, add this entry to your.gitconfig file:
 
 ```
 [url "git@ssh.dev.azure.com:v3/<organization>/<project>/<repo>"]
@@ -63,7 +62,7 @@ With this entry and a specific URL format, you can now use `go install`.
 
 > [!NOTE]
 > Be sure to use `.git` after the repo name.
-> Also, `_git` is not included in the package URL that you're passing to `go install` because you're using the SSH URL.
+> Also, `_git` isn't included in the package URL that you're passing to `go install` because you're using the SSH URL.
 
 ```
 go install dev.azure.com/<organization>/<project>/<repo>.git
@@ -73,7 +72,7 @@ go install dev.azure.com/<organization>/<project>/<repo>.git
 
 To use HTTPS with `go install`, you must create a PAT as described in [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the **Code (read)** [scope](../../integrate/get-started/authentication/oauth.md#scopes).
 
-After you create the PAT, add this entry to your .gitconfig file:
+After you create the PAT, add this entry to your.gitconfig file:
 
 ```
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
