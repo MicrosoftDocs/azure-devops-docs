@@ -26,7 +26,9 @@ This article guides you through publishing Python packages to an Azure Artifacts
 [!INCLUDE [](../includes/create-feed.md)]
 
 ## Publish packages
- 
+
+1. Follow the steps in the [Project setup](../python/project-setup-python.md#project-setup) to authenticated with your feed if you haven't done so, then proceed to the next step.
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
