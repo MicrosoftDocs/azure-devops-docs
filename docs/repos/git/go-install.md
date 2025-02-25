@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to use Go install command with Azure Repos Git
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 02/28/2025
+ms.date: 02/26/2025
 monikerRange: '>= azure-devops-2020'
 ms.subservice: azure-devops-repos-git
 ---
@@ -26,9 +26,7 @@ same syntax described in the following sections.
 ## Go get with public projects
 
 If your Azure Repos Git repo is in a [public project](../../organizations/projects/about-projects.md) 
-you can use `go install` using the web repo url in the following format, 
-and Azure Repos returns the appropriate meta tags so that `go install` knows 
-the type and location of the repo to retrieve it.
+you can use `go install` using the web repo url in the following format. For version, you can use `latest` or a specific version.
 
 ```
 go install dev.azure.com/<organization>/<project>/_git/<repo>.git@<version>
