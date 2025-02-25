@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 ms.subservice: azure-devops-repos-git
 ---
 
-# Go get command support in Azure Repos Git
+# Go install command support in Azure Repos Git
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
@@ -23,7 +23,7 @@ same syntax described in the following sections.
 > [!NOTE]
 > The feature documented in this article requires Azure DevOps Server 2019 Update 1 or later version. 
 
-## Go get with public projects
+## Go install with public projects
 
 If your Azure Repos Git repo is in a [public project](../../organizations/projects/about-projects.md) 
 you can use `go install` using the web repo url in the following format. For version, you can use `latest` or a specific version.
@@ -32,7 +32,7 @@ you can use `go install` using the web repo url in the following format. For ver
 go install dev.azure.com/<organization>/<project>/_git/<repo>.git@<version>
 ```
 
-You can also import/get a Go package in a subfolder of a repo by appending 
+You can also install a Go package in a subfolder of a repo by appending 
 the subfolder names, as shown in the following examples.
 
 ```
@@ -41,7 +41,7 @@ go install dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1@<ve
 go install dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1/subfolder2@<version>
 ```
 
-## Go get with private projects
+## Go install with private projects
 
 If your Azure DevOps Git repo is private, you can either use SSH or authenticate with a Personal Access Token (PAT) for HTTPS.
 
@@ -91,7 +91,7 @@ With this entry and a specific URL format, you can now use `go install`.
 go install dev.azure.com/<organization>/<project>/_git/<repo>.git@<version>
 ```
 
-You can also import/get a Go package in a subfolder of a repo by appending the subfolder 
+You can also install a Go package in a subfolder of a repo by appending the subfolder 
 names, as shown in the following examples.
 
 ```
