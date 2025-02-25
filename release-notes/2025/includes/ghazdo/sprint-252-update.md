@@ -5,11 +5,13 @@ ms.date: 2/24/2025
 ms.topic: include
 ---
 
-### One click enablement for dependency scanning now available 
+### One click enablement for dependency scanning now available in preview
 
 From your repository settings, you can now enable the Advanced Security dependency scanning task without needing to edit your pipeline definition. 
 
-By opting in to "Scan default branch for vulnerable dependencies," the dependency task will automatically run in any pipeline targeting your default branch or pull requests targeting your default branch if the task is not already present in your pipeline. If the task is already present in your pipeline, the task will not run again.
+By opting in to "Scan default branch for vulnerable dependencies," the dependency task will automatically run in any pipeline targeting your default branch or pull requests targeting your default branch if the task is not already present in your pipeline. If the task is already present in your pipeline, the task will not run again. 
+
+To participate in the preview, send us an [email](mailto:ghazdopreview@microsoft.com)!
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of security overview.](../../media/252-ghazdo-01.png "Screenshot of repository settings")](../../media/252-ghazdo-01.png#lightbox)
