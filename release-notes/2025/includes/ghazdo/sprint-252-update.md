@@ -5,7 +5,7 @@ ms.date: 2/24/2025
 ms.topic: include
 ---
 
-### One click enablement for dependency scanning now available in preview
+### One click enablement for dependency scanning preview
 
 From your repository settings, you can now enable the Advanced Security dependency scanning task without needing to edit your pipeline definition. 
 
