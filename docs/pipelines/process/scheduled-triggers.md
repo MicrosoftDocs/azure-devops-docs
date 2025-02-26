@@ -2,17 +2,17 @@
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
 ms.topic: conceptual
+ms.colelction: ce-skilling-ai-copilot
+ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
-ms.date: 05/09/2024
+ms.date: 02/26/2025
 monikerRange: '<= azure-devops'
 ---
 
 # Configure schedules for pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-
 
 Azure Pipelines provides several types of triggers to configure how your pipeline starts.
 
@@ -362,6 +362,40 @@ Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
 
+### Use GitHub Copilot to convert a cron expression from your local time zone to UTC
+
+Cron schedules are defined in UTC, so schedules like **Build every Monday, Wednesday, and Friday at 6:00 PM** must be converted from your desired time zone to UTC. These conversions can be as simple as adding or subtracting a few hours, or more complex resulting in the scheduled days changing. You can get AI assistance from GitHub Copilot to convert your cron expressions from your local time zone to UTC.
+
+To convert a cron expression to UTC from the time zone you used to create the expression, customize the following prompts.
+
+In the following examples, a cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM (`0 18 * * Mon,Wed,Fri`) Eastern Standard Time is converted to UTC.
+
+If you have a cron expression for your local time zone, you can ask Copilot to convert it to UTC.
+
+```copilot-prompt
+Convert the following cron expression from Eastern Standard Time to UTC: 0 18 * * Mon,Wed,Fri
+```
+
+If you don't have a cron expression already, you can ask Copilot to generate it for you.
+
+```copilot-prompt
+Build a UTC cron expression for Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time
+```
+    
+In the following example, a cron schedule to build Sunday through Thursday at midnight (`0 0 * * Sun-Thu`) Central European Standard Time is converted to UTC.
+    
+```copilot-prompt
+Convert the following cron expression from Central European Standard Time to UTC: 0 0 * * Sun-Thu
+```
+
+If you didn't have cron expression already, you can ask Copilot to generate it for you.
+
+```copilot-prompt
+Build a UTC cron expression for Sunday through Thursday at midnight Central European Standard Time
+```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
+
 
 ::: moniker-end
 
@@ -550,13 +584,13 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC + 5:30) India daily build**, the cron syntax (`mm HH DD MM DW`) is `30 21 * * Sun-Thu`.
 
-* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger. [You can get AI assistance from GitHub Copilot to convert your cron expressions from your local time zone to UTC](#use-github-copilot-to-convert-a-cron-expression-from-your-local-time-zone-to-utc).
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
 
 In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron syntax is `0 8 * * Mon-Fri`.
 
-* Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger. [You can get AI assistance from GitHub Copilot to convert your cron expressions from your local time zone to UTC](#use-github-copilot-to-convert-a-cron-expression-from-your-local-time-zone-to-utc).
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
 
