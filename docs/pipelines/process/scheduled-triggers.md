@@ -366,9 +366,9 @@ For more information on supported formats, see [Crontab Expression](https://gith
 
 Cron schedules are defined in UTC, so schedules like **Build every Monday, Wednesday, and Friday at 6:00 PM** must be converted from your desired time zone to UTC. These conversions can be as simple as adding or subtracting a few hours, or more complex resulting in the scheduled days changing. You can get AI assistance from GitHub Copilot to build cron expressions, or convert existing cron expressions from your local time zone to UTC.
 
-To convert a cron expression to UTC from the time zone you used to create the expression, customize the following prompts.
+Customize the following prompts to create cron expressions, or convert cron expressions to UTC from the time zone you used to create the expressions.
 
-In the following example, Copilot is prompted to create a UTC cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time is.
+In the following example, Copilot is prompted to create a UTC cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time.
 
 ```copilot-prompt
 Build a UTC cron expression for Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time
@@ -384,12 +384,6 @@ In the following example, Copilot is prompted to create a cron schedule to build
 
 ```copilot-prompt
 Build a UTC cron expression for Sunday through Thursday at midnight Central European Standard Time
-```
-
-In the following example, a cron schedule to build Sunday through Thursday at midnight (`0 0 * * Sun-Thu`) Central European Standard Time is converted to UTC.
-    
-```copilot-prompt
-Convert the following cron expression from Central European Standard Time to UTC: 0 0 * * Sun-Thu
 ```
 
 *Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
