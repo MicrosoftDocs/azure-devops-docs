@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 Feed views enable developers to control package visibility by sharing some packages while keeping others private. Each view filters the feed to display a subset of packages based on specific criteria defined for that view.
 
-By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. The `@Local` view is the default and contains all published packages and those saved from upstream sources. All views support NuGet, npm, Maven, Python, Cargo, and Universal Packages. You can change the default view in your **Feed Settings** > **Views**, but doing so doesn't enable direct publishing to that view. Packages can only be published to the base feed, where they'll be available in the *@Local* view.
+By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. The `@Local` view is the default and contains all published packages and those saved from upstream sources. All views support NuGet, npm, Maven, Python, Cargo, and Universal Packages. You can change the default view in your **Feed Settings** > **Views**, but doing so doesn't enable direct publishing to that view. Packages can only be published to the base feed, where they're available in the *@Local* view.
 
 > [!NOTE]
 > You must be a **Feed Publisher (Contributor)** or a **Feed Owner** to promote packages to a view.
@@ -40,7 +40,7 @@ To promote a package using the REST API, you need to send a PATCH request with t
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** scope.
 
-1. Copy the endpoint URL, replace it in the example below (either *PowerShell* or *curl*), and run the command to promote your package to the desired view.
+1. Copy the endpoint URL, replace it in the following example (either *PowerShell* or *curl*), and run the command to promote your package to the desired view.
 
 ::: moniker range="azure-devops"
 
@@ -300,7 +300,7 @@ By default, Azure Artifacts offers three views: *@Local*, *@Prerelease*, and *@R
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
-> For public feeds, if you change the access permissions of a view to **Specific people**, that view will no longer be available as an upstream source.
+> For public feeds, if you change the access permissions of a view to **Specific people**, that view is no longer available as an upstream source.
 
 ::: moniker-end
 
