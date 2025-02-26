@@ -210,7 +210,7 @@ jobs:
   - script: echo This step runs after the template's steps.
 ```
 
-#### Reuse jobs across multiple jobs
+#### Reuse jobs across multiple templates
 
 Much like steps, jobs can be reused with templates.
 
@@ -264,7 +264,7 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
-#### Reuse stages
+#### Reuse stages across multiple templates
 
 Stages can also be reused with templates.
 
