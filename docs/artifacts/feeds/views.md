@@ -259,18 +259,19 @@ Invoke-RestMethod -Uri $uri -Method Patch -Headers $headers -Body $body
 
 ### [curl](#tab/curl)
 
-```curl
+```bash
 PAT="YOUR_PERSONAL_ACCESS_TOKEN"
+ENCODED_PAT=$(echo -n ":$PAT" | base64 | tr -d '\n')
 $ curl -X PATCH "YOUR_ENDPOINT_URL" \
--H 'Content-Type: application/json' \
--H "Authorization: Basic $(echo -n ":$PAT" | base64)" \
--d '[ 
-       {
-         "op": "add",
-         "path": "/views/-",
-         "value": "YOUR_VIEW_NAME"
-       }
-    ]'
+-H "Content-Type: application/json" \
+-H "Authorization: Basic $ENCODED_PAT" \
+-d '{
+    "views":  {
+                  "path":  "/views/-",
+                  "op":  "add",
+                  "value":  "YOUR_VIEW_NAME"
+              }
+    }'
 ```
 
 ---
