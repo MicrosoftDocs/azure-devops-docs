@@ -491,7 +491,7 @@ variables:
 steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
-### Variable templates with parameter
+### Variable templates with parameters
 
 You can pass parameters to variables with templates. In this example, you're passing the `DIRECTORY` parameter to a `RELEASE_COMMAND` variable. 
 
