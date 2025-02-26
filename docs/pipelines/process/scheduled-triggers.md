@@ -364,7 +364,7 @@ For more information on supported formats, see [Crontab Expression](https://gith
 
 ### Use GitHub Copilot to create a cron expression
 
-Cron schedules are defined in UTC, so schedules like **Build every Monday, Wednesday, and Friday at 6:00 PM** must be converted from your desired time zone to UTC. These conversions can be as simple as adding or subtracting a few hours, or more complex resulting in the scheduled days changing. You can get AI assistance from GitHub Copilot to build cron expressions, or convert existing cron expressions from your local time zone to UTC.
+Azure Pipelines cron schedules are defined in UTC, so schedules like **Build every Monday, Wednesday, and Friday at 6:00 PM** must be converted from your desired time zone to UTC. You can get AI assistance from GitHub Copilot to build cron expressions, or convert existing cron expressions from your local time zone to UTC.
 
 Customize the following prompts to create cron expressions, or convert cron expressions to UTC from the time zone you used to create the expressions.
 
