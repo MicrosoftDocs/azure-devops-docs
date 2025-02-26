@@ -2,17 +2,17 @@
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
 ms.topic: conceptual
+ms.colelction: ce-skilling-ai-copilot
+ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
-ms.date: 05/09/2024
+ms.date: 02/26/2025
 monikerRange: '<= azure-devops'
 ---
 
 # Configure schedules for pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-
 
 Azure Pipelines provides several types of triggers to configure how your pipeline starts.
 
@@ -77,7 +77,7 @@ schedules:
 
 Scheduled pipelines in YAML have the following constraints.
 
-- The time zone for cron schedules is UTC.
+- The time zone for cron schedules is UTC. [You can get AI assistance from GitHub Copilot to create your cron expressions](#use-github-copilot-to-create-a-cron-expression).
 - If you specify an `exclude` clause without an `include` clause for `branches`, it's equivalent to specifying `*` in the `include` clause.
 - You can't use pipeline variables when specifying schedules.
 - If you use [templates in your YAML file](templates.md), then the schedules must be specified in the main YAML file and not in the template files.
@@ -362,6 +362,31 @@ Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
 
+### Use GitHub Copilot to create a cron expression
+
+Azure Pipelines cron schedules are defined in UTC, so schedules like **Build every Monday, Wednesday, and Friday at 6:00 PM** must be converted from your desired time zone to UTC. You can get AI assistance from GitHub Copilot to build cron expressions, or convert existing cron expressions from your local time zone to UTC.
+
+Customize the following prompts to create cron expressions, or convert cron expressions to UTC from the time zone you used to create the expressions.
+
+In the following example, Copilot is prompted to create a UTC cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time.
+
+```copilot-prompt
+Build a UTC cron expression for Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time
+```
+
+If you already have a cron expression in your local time zone, you can ask Copilot to convert it to UTC. In this example, a cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM (`0 18 * * Mon,Wed,Fri`) Eastern Standard Time is converted to UTC.
+
+```copilot-prompt
+Convert the following cron expression from Eastern Standard Time to UTC: 0 18 * * Mon,Wed,Fri
+```
+
+Converting a cron expression to UTC might require changing the days of the week in your expression. In the following example, Copilot is prompted to create a UTC cron schedule to build Monday through Friday at 12:30 AM Central European Standard Time. Central European Standard Time is ahead of UTC, so the resulting expression starts late Sunday night instead of early Monday morning, and ends on Thursday.
+
+```copilot-prompt
+Build a UTC cron expression for Monday through Friday at 12:30 AM Central European Standard Time
+```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ::: moniker-end
 
@@ -550,13 +575,13 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC + 5:30) India daily build**, the cron syntax (`mm HH DD MM DW`) is `30 21 * * Sun-Thu`.
 
-* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger. [You can get AI assistance from GitHub Copilot to create your cron expression](#use-github-copilot-to-create-a-cron-expression).
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
 
 In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron syntax is `0 8 * * Mon-Fri`.
 
-* Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger. [You can get AI assistance from GitHub Copilot to create your cron expression](#use-github-copilot-to-create-a-cron-expression).
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
 
@@ -624,7 +649,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ### I want my pipeline to run only on the schedule and not when someone pushes a change to a branch
 
-If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explicitly disabled the default CI and PR triggers on the pipeline.
+If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explicitly disable the default CI and PR triggers on the pipeline.
 
 To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
 
