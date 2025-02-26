@@ -569,6 +569,10 @@
     {
       "source_path": "docs/repos/security/github-advanced-security-dependency-scanning-ecosystems-troubleshoot.md",
       "redirect_url": "/azure/devops/repos/security/github-advanced-security-dependency-scanning-troubleshoot"
+    },
+    {
+      "source_path": "docs/organizations/security/security-best-practices.md",
+      "redirect_url": "/azure/devops/organizations/security/security-overview"
     }
   ]
 }
