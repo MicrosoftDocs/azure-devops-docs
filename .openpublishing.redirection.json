@@ -569,6 +569,11 @@
     {
       "source_path": "docs/repos/security/github-advanced-security-dependency-scanning-ecosystems-troubleshoot.md",
       "redirect_url": "/azure/devops/repos/security/github-advanced-security-dependency-scanning-troubleshoot"
+    },
+    {
+      "source_path_from_root": "/docs/repos/git/go-get.md",
+      "redirect_url": "/azure/devops/repos/git/go-install-exe",
+      "redirect_document_id": false
     }
   ]
 }
