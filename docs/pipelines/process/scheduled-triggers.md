@@ -380,6 +380,12 @@ If you already have a cron expression in your local time zone, you can ask Copil
 Convert the following cron expression from Eastern Standard Time to UTC: 0 18 * * Mon,Wed,Fri
 ```
 
+Converting a cron expression to UTC might require changing the days of the week in your expression. In the following example, Copilot is prompted to create a UTC cron schedule to build Monday through Friday at 12:30 AM Central European Standard Time. Central European Standard Time is ahead of UTC, so the resulting expression starts late Sunday night instead of early Monday morning, and ends on Thursday.
+
+```copilot-prompt
+Build a UTC cron expression for Monday through Friday at 12:30 AM Central European Standard Time
+```
+
 *Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ::: moniker-end
