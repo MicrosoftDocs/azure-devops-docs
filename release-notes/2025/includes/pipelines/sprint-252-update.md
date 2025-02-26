@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/24/2025
+ms.date: 2/26/2025
 ms.topic: include
 ---
 
@@ -12,7 +12,7 @@ The [Ubuntu 24.04](https://learn.microsoft.com/azure/devops/release-notes/2024/p
 
 Some tools are no longer available on the Ubuntu 24.04 image:
 
-| Task/Took                             | Description                       |
+| Task/Tool                             | Description                       |
 |---------------------------------------|-----------------------------------|
 | `MSBuild@1`                           | Task doesn't work as Mono and MSBuild aren't available for Ubuntu 24. Use native [.NET on Ubuntu](https://learn.microsoft.com/dotnet/core/install/linux-ubuntu) instead. |
 | `NuGetCommand@2`                      | Task has reduced functionality as Mono and NuGet aren't available for Ubuntu 24, see instructions on [Migrating to .NET CLI on Ubuntu](/azure/devops/pipelines/tasks/reference/nuget-command-v2?view=azure-pipelines#support-for-newer-ubuntu-hosted-images). |
