@@ -293,7 +293,7 @@ For complete schema information, see the [steps.downloadBuild definition](/azure
 <a name="define-a-repositories-resource"></a>
 ## Repository resource definition
 
-The `repository` keyword lets you specify an external repository. You can use this resource if your pipeline has [templates in another repository](../process/templates.md#use-other-repositories) or you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection. You must let the system know about these repositories.
+The `repository` keyword lets you specify an external repository. You can use this resource if your pipeline has [templates in another repository](templates.md#store-templates-in-other-repositories) or you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection. You must let the system know about these repositories.
 
 For example:
 
