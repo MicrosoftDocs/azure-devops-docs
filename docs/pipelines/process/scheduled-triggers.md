@@ -77,7 +77,7 @@ schedules:
 
 Scheduled pipelines in YAML have the following constraints.
 
-- The time zone for cron schedules is UTC.
+- The time zone for cron schedules is UTC. [You can get AI assistance from GitHub Copilot to create your cron expressions](#use-github-copilot-to-create-a-cron-expression).
 - If you specify an `exclude` clause without an `include` clause for `branches`, it's equivalent to specifying `*` in the `include` clause.
 - You can't use pipeline variables when specifying schedules.
 - If you use [templates in your YAML file](templates.md), then the schedules must be specified in the main YAML file and not in the template files.
@@ -368,7 +368,7 @@ Cron schedules are defined in UTC, so schedules like **Build every Monday, Wedne
 
 To convert a cron expression to UTC from the time zone you used to create the expression, customize the following prompts.
 
-In the following example, Copilot is prompted to ccreate a UTC cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time is.
+In the following example, Copilot is prompted to create a UTC cron schedule to build every Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time is.
 
 ```copilot-prompt
 Build a UTC cron expression for Monday, Wednesday, and Friday at 6:00 PM Eastern Standard Time
@@ -655,7 +655,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ### I want my pipeline to run only on the schedule and not when someone pushes a change to a branch
 
-If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explicitly disabled the default CI and PR triggers on the pipeline.
+If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explicitly disable the default CI and PR triggers on the pipeline.
 
 To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
 
