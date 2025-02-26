@@ -1,30 +1,28 @@
 ---
 ms.topic: include
 ms.service: azure-devops-repos
-ms.author: laurajjiang
-author: laurajjiang
-ms.date: 04/02/2024
+ms.author: nicour
+author: ncouraud
+ms.date: 02/26/2025
 ---
 
-| Provider | Supported Secret                | Token Name                     |
-| -------- | ------------------------------- | ------------------------------ |
-| Generic  | ASP.NET Machine Key             | AspNetMachineKey               |
-| Generic  | DER-encoded Private Key        | DerPrivateKey                  |
-| Generic  | Dynatrace Token                 | DynatraceToken                 |
-| Generic  | GPG Credentials                 | GpgCredentials                 |
-| Generic  | HTTP Request Headers            | HttpAuthorizationRequestHeader |
-| Generic  | JavaScript Web Token            | GenericJwt                     |
-| Generic  | LinkedIn Credentials            | LinkedInCredentials            |
-| Generic  | MongoDB Connection String       | MongoDbCredentials             |
-| Generic  | MySQL/MariaDB Connection String | MySqlCredentials               |
-| Generic  | PEM-encoded Private Key         | PemPrivateKey                  |
-| Generic  | PGP Private Key                 | PgpPrivateKey                  |
-| Generic  | PKCS12 Formatted Private Key    | Pkcs12PrivateKey               |
-| Generic  | PostgreSQL Connection String    | PostgreSqlCredentials          |
-| Generic  | Putty Private Key               | PuttyPrivateKey                |
-| Generic  | RabbitMQ Credentials            | RabbitMqCredentials            |
-| Generic  | RSA Private Key                 | RsaPrivateKey                  |
-| Generic  | SQL Server Connection String    | SqlLegacyCredentials           |
-| Generic  | SSH PrivateKey                  | OpenSshPrivateKey              |
-| Generic  | SSH PrivateKey                  | GitHubSshPrivateKey            |
-| Generic  | URL Encoded Credentials         | UrlCredentials                 |
+| Rule ID | Token Name  | User Alerts | Validity Checking |
+| --- | --- | --- | --- | --- |
+| SEC101/009 | LinkedInCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/013 | PemPrivateKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/032 | GpgCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/033 | MongoDbCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/036 | MySqlCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/037 | SqlLegacyCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/038 | PostgreSqlCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/041 | RabbitMQCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/042 | DynatraceToken  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/054 | PkcsPrivateKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/055 | Pkcs12CertificatePrivateKeyBundle  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/056 | OpenSshPrivateKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/057 | PuttyPrivateKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/058 | PgpPrivateKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/059 | RsaPrivateKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/122 | AspNetMachineKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/127 | UrlCredentials  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/528 | GenericJwt  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
