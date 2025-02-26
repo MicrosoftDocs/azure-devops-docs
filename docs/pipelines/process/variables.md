@@ -1144,12 +1144,13 @@ If a variable appears in the `variables` block of a YAML file, its value is fixe
 
 You have two options for defining queue-time values. You can define a variable in the UI and select the option to **Let users override this value when running this pipeline** or you can use [runtime parameters](runtime-parameters.md) instead. If your variable isn't a secret, the best practice is to use [runtime parameters](runtime-parameters.md).
 
-To set a variable at queue time, add a new variable within your pipeline and select the override option. 
+To set a variable at queue time, add a new variable within your pipeline and select the override option. Only users with the _Edit queue build configuration_ permission can change a variable's value.
 
 :::image type="content" source="media/set-queue-time-variable.png" alt-text="Set a variable at queue time.":::
 
 To allow a variable to be set at queue time, make sure the variable doesn't also appear in the `variables` block of a pipeline or job. If you define a variable in both the variables block of a YAML and in the UI, the value in the YAML has priority. 
 
+For added security, use a predefined set of values for settable at queue time variables and safe types such as booleans and integers. For strings, use a predefined set of values. 
 
 ::: moniker-end
 
