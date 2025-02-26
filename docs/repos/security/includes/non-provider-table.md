@@ -7,7 +7,7 @@ ms.date: 02/26/2025
 ---
 
 | Rule ID | Token Name  | User Alerts | Validity Checking |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | SEC101/122 | AspNetMachineKey  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/042 | DynatraceToken  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/528 | GenericJwt  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
