@@ -28,7 +28,7 @@ If your pipeline queues but never starts, check the following items.
 
 > [!NOTE]
 > The following scenarios won't consume a parallel job:
-> * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+> * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it doesn't consume a parallel job.
 > * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 > 
 > Learn more:
@@ -131,7 +131,7 @@ To check the capabilities and demands specified for your agents and pipelines, s
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands that don't match the system capabilities of the agent, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
+> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands that don't match the system capabilities of the agent, unless you have explicitly labeled the agents with matching capabilities, your pipelines won't get an agent.
 
 ::: moniker-end
 
@@ -178,11 +178,11 @@ This error might indicate the agent lost communication with the server for a spa
 
 ### TFS Job Agent not started
 
-This might be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
+This might be characterized by a message in the web console "Waiting for an agent to be requested." Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
 ### Misconfigured notification URL (1.x agent version)
 
-This might be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
+This might be characterized by a message in the web console "Waiting for console output from an agent," and the process eventually times out.
 
 A mismatching notification URL might cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
 
