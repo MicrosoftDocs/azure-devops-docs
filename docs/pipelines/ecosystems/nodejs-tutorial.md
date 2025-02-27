@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You need your own Azure subscription to complete this tutorial.
 - A GitHub account where you can create a repository. [Create one for free](https://github.com).
-- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization doesn't have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request takes 2-3 business days.
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization doesn't have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request can take several business days to process.
 - Familiarity with [Azure App Service](/azure/app-service/) and [Azure DevOps](/azure/devops/). 
 
 
