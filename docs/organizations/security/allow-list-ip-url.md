@@ -114,7 +114,7 @@ Ensure the following IP addresses are allowed for inbound connections, so your o
 Azure Service Tags are supported only for *inbound* connections. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
-> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). The Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
+> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md). Alternatively, you can also use [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). Managed DevOps Pools and Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
 Hosted macOS agents are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
 ### Other IP addresses
@@ -339,7 +339,7 @@ Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadab
 
 ### Azure Pipelines Microsoft-hosted agents
 
-If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md?preserve-view=true&view=azure-devops).
+If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md) and [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md?preserve-view=true&view=azure-devops).
 
 For more information about hosted Windows, Linux, and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
