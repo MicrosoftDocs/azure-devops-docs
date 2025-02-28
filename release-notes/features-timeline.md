@@ -189,7 +189,7 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">AB# links on GitHub pull request (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">AB# links on GitHub pull request</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
       </tr>       
@@ -197,12 +197,7 @@ These investments include:
          <td><a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
-      </tr>  
-       <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>
-      </tr>
+      </tr>      
       <tr>
          <td>
             <a href="/azure/devops/release-notes/2025/sprint-252-update#github-integration-linking-the-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/2025/sprint-252-update#github-integration-linking-the-merge-commit)">Auto link the merge commit</a>
@@ -244,7 +239,12 @@ These investments include:
          </td>
          <td>Boards</td>
          <td>2025 Q2</td>   
-      </tr>              
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td>Boards</td>
+         <td>2025 Q2</td>
+      </tr>             
     </tbody>
 </table>
 
