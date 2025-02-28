@@ -7,7 +7,7 @@ ms.date: 02/28/2025
 monikerRange: '> azure-devops-2019'
 ---
 
-# Securing Azure Pipelines
+# Secure Azure Pipelines
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
