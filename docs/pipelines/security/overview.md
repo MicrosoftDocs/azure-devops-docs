@@ -106,6 +106,5 @@ To improve the security of newly created organizations, starting with [Sprint 22
 
 ## Related Articles
 
-- [Data locations for Azure DevOps](data-location.md)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
 - [Azure Trust Center](https://azure.microsoft.com/support/trust-center/)
