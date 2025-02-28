@@ -22,6 +22,7 @@ Ensure you have the following installed on your machine:
 ## Steps
 
 1. **Clone the Repository**
+
    If you haven't already, clone the repository to your local machine:
 
    ```sh
@@ -30,15 +31,18 @@ Ensure you have the following installed on your machine:
    ```
 
 2. **Open the Solution**
+
    Open the ADOGenerator.sln solution file in Visual Studio or your preferred IDE.
 
 3. **Set ADOGenerator as the Startup Project**
+
    In Visual Studio:
 
    - Right-click on the ADOGenerator project in the Solution Explorer.
    - Select Set as Startup Project.
 
 4. **Build the Solution**
+
    Build the solution to ensure all dependencies are restored and the project compiles successfully:
 
    - In Visual Studio, right-click on the solution in the Solution Explorer and select `Build Solution`.
@@ -48,6 +52,7 @@ Ensure you have the following installed on your machine:
      ```
 
 5. **Run the Project**
+
    To run the project as a console application:
 
    - In Visual Studio, press `F5` or click on the Start button.
@@ -57,6 +62,7 @@ Ensure you have the following installed on your machine:
      ```
 
 6. **Publish the Project**
+
    To create an executable, publish the project:
 
    - In Visual Studio, right-click on the ADOGenerator project in the Solution Explorer and select `Publish`.
@@ -67,6 +73,7 @@ Ensure you have the following installed on your machine:
      ```
 
 7. **Run the Executable**
+
    Navigate to the publish directory and run the executable:
    ```sh
    cd src/ADOGenerator/bin/Release/net8.0/win-x64/publish
