@@ -25,11 +25,10 @@ The following procedure shows you how to destroy files and folders by using the 
 
 ## Prerequisites
 
-- To use the `destroy` command, be a member of the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
-
-- Before you run `tf destroy` without the `/keephistory` option, first delete the files you want to destroy. For more information, see [Delete files and folders from version control](delete-restore-files-folders.md). After you delete a file, its file name now includes a deletion ID. For example, if a file name is *aFile.cs*, after deletion the file name is *aFile.cs;x123*, where x123 is the deletion ID.
-
-  After you delete the files, you can synchronize the TFVC warehouse. Otherwise the warehouse won't be synchronized with the destroyed items.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To use the `destroy` command: Member of the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).|
+|**Tasks** |- Before you run `tf destroy` without the `/keephistory` option, first delete the files you want to destroy. For more information, see [Delete files and folders from version control](delete-restore-files-folders.md).<br>- After you delete a file, its file name includes a deletion ID. For example, if a file name is *aFile.cs*, after deletion the file name is *aFile.cs;x123*, where x123 is the deletion ID.<br>- After you delete the files, you can synchronize the TFVC warehouse. Otherwise the warehouse won't synchronize with the destroyed items.|
 
 ### To permanently destroy version-controlled files
 

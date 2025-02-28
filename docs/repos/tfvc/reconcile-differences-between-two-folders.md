@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Reconcile differences between two folders in Team Foundation Version Control (TFVC).
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -20,7 +20,11 @@ After you compare a server folder and a local folder in Team Foundation Version 
 
 ## Prerequisites
 
-To do these procedures, have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** and **Check out** permissions set to **Allow**.|
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 > [!NOTE]
 > To reconcile two local folders or files, you don't need Azure DevOps permissions.

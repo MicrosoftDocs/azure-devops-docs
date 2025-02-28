@@ -24,7 +24,11 @@ The `delete` command removes files and folders from the Azure DevOps server and 
 
 ## Prerequisites
 
-To use the `delete` command, have the **Check out** permission set to **Allow**. If you include the `/lock` option with a value other than `none`, have the **Lock** permission set to **Allow**. You must also own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- **Check out** permission set to **Allow**.<br>- If you include the `/lock` option with a value other than `none`: **Lock** permission set to **Allow**.<br>- Owner of the workspace or **Administer workspaces** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 ```

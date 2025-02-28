@@ -24,7 +24,11 @@ As a Team Foundation Version Control (TFVC) administrator, you might have to rem
 
 ## Prerequisites
 
-To remove access to Team Foundation version control files, belong to the **Azure DevOps Administrators** group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Member of the **Azure DevOps Administrators** group. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Remove access to a file under version control
 

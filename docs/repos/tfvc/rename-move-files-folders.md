@@ -27,7 +27,7 @@ You can also use the `tf` command-line utility to move or rename files or folder
 
 ## Prerequisites
 
-Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 ## Move an item
 

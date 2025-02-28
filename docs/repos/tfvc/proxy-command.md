@@ -19,7 +19,10 @@ The Team Foundation Version Control (TFVC) `tf proxy` command configures your cl
 
 ## Prerequisites
 
-To use the `proxy` command to configure a client computer, be a member of the **User** security group on the local computer. To use the `proxy` command to work with proxy records, have the **AdminConfiguration** permission. 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To use the `proxy` command to configure a client computer: Member of the **User** security group on the local computer.<br>- To use the `proxy` command to work with proxy records: **AdminConfiguration** permission. |
+
 For more information, see  [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
 
 ## Syntax

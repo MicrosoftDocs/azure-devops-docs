@@ -71,7 +71,7 @@ The following authentication options are supported based on the GitHub platform 
 
 ## Add a GitHub connection with GitHub credentials 
 
-You can connect up to 500 GitHub repositories to an Azure Boards project. 
+You can connect up to 1,000 GitHub repositories to an Azure Boards project. 
 
 1. If it's your first time connecting to GitHub from Azure Boards, sign in using your GitHub credentials. Choose an account for which you're a repository administrator.
 
@@ -429,7 +429,7 @@ A: After changing the setting, sign out of Azure DevOps and then sign back in to
 A: Only organization or project Administrators can invite new users to join the organization. You might not have the required permissions to add new users. Work with your administrator to get the necessary permissions or ask them to add the user for you.
 
 ### Q: Do GitHub Enterprise users get free access to Azure DevOps?
-A: For more information, see [User and permissions management FAQs/GitHub Enterprise](../../organizations/accounts/faq-user-and-permissions-management.yml).
+A: For more information, see [User and permissions management FAQs/GitHub Enterprise](../../organizations/accounts/faq-user-and-permissions-management.yml#github-enterprise).
 
 ## Next steps
 

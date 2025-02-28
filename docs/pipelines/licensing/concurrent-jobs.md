@@ -28,7 +28,7 @@ monikerRange: '<= azure-devops'
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
 > [!NOTE]
-> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected. Please note that it usually takes us 2-3 business days to respond to your free tier requests. During certain time periods, processing times may be longer.
+> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected. It can take several business days to process your free tier requests. During certain time periods, processing times may be longer.
 
 ## What is a parallel job? 
 
@@ -60,7 +60,7 @@ To request the free grant for public or private projects, submit [a request](htt
 
 
 > [!NOTE] 
-> It takes us 2-3 business days to respond to your free tier request. During certain time periods, processing times may be longer.
+> It can take several business days to process your free tier request. During certain time periods, processing times may be longer.
 
 There's no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects.
 

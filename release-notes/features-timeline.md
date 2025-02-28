@@ -36,7 +36,7 @@ The main capabilities of GitHub Advanced Security for Azure DevOps are:
 
 - *Secret Scanning:* Detect and remediate plaintext secrets in your git repositories. If push protection is enabled, it also detects and blocks secrets before they are pushed to your repositories.
 - *Code Scanning:* Search for potential security vulnerabilities and coding errors in your code using CodeQL or a third-party tool.
-- *Dependency Scanning:* Detect and alert when your code depends on a package that is insecure and recieve straightforward remediation guidance.
+- *Dependency Scanning:* Detect and alert when your code depends on a package that is insecure and receive straightforward remediation guidance.
 
 You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features).
 
@@ -250,7 +250,7 @@ These investments include:
 
 ### Migrate to Managed DevOps Pools
 
-Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs) and the differences between them [here](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/migrate-from-scale-set-agents?view=azure-devops). Managed DevOps Pools is generally available, so you can migrate your Virtual machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible. 
+Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Managed DevOps Pools is generally available, so you can migrate your Virtual machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible. 
 
 Below, you will find several investments we plan to deliver as part of this initiative:
 
@@ -281,7 +281,7 @@ Below, you will find several investments we plan to deliver as part of this init
       <tr>
          <td>Container based agents</td>
          <td>Pipelines</td>
-         <td>2025 Q2</td>
+         <td>2025 Q4</td>
       </tr>
    </tbody>
 </table>

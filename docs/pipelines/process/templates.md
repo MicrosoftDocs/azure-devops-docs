@@ -1,15 +1,15 @@
 ---
-title: Templates
-description: How to reuse pipelines through templates
+title: How to use YAML templates for reusable and secure pipelines
+description: Learn how to create reusable YAML pipeline templates to streamline and secure your CI/CD processes.
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 09/10/2024
+ms.date: 02/26/2025
 monikerRange: ">=azure-devops-2019"
 zone_pivot_groups: template-type
 ai-usage: ai-assisted
 ---
 
-# Template usage reference
+# Use YAML templates in pipelines for reusable and secure processes
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
@@ -28,7 +28,7 @@ There are two types of templates: includes and extends.
 
 To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md). 
 
-### Imposed limits
+### Imposed limits on template updates
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
@@ -173,7 +173,7 @@ jobs:
 ```
 
 
-#### Step reuse
+#### Reuse steps across multiple jobs
 
 You can insert a template to reuse one or more steps across several jobs.
 In addition to the steps from the template, each job can define more steps.
@@ -210,7 +210,7 @@ jobs:
   - script: echo This step runs after the template's steps.
 ```
 
-#### Job reuse
+#### Reuse jobs across multiple templates
 
 Much like steps, jobs can be reused with templates.
 
@@ -264,7 +264,7 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
-#### Stage reuse
+#### Reuse stages across multiple templates
 
 Stages can also be reused with templates.
 
@@ -309,7 +309,7 @@ stages:
 ```
 
 
-#### Job, stage, and step templates with parameters
+#### Add parameters to job, stage, and step templates
 
 In the following templates:
 
@@ -491,7 +491,7 @@ variables:
 steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
-### Variable templates with parameter
+### Variable templates with parameters
 
 You can pass parameters to variables with templates. In this example, you're passing the `DIRECTORY` parameter to a `RELEASE_COMMAND` variable. 
 
@@ -665,7 +665,7 @@ steps:
 - template: /dir1/dir2/fileC.yml
 ```
 
-### Use other repositories
+### Store templates in other repositories
 
 You can keep your templates in other repositories.
 For example, suppose you have a core pipeline that you want all of your app pipelines to use.

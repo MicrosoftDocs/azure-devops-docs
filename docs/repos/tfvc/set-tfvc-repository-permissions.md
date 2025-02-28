@@ -22,19 +22,24 @@ You can manage access to a Team Foundation Version Control (TFVC) repository to 
 
 ## Prerequisites
 
-- A TFVC project. If you don't have a project yet, create one in [Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md) or set one up in [on-premises Azure DevOps Server](../../organizations/projects/create-project.md).
-
-- Be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) or have **Manage permissions** set to **Allow** for the TFVC repository.
-
 ::: moniker range="azure-devops"
 
-- To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as **Contributors** and those granted **Basic** access. For more information, see [About access levels](../../organizations/security/access-levels.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the Azure DevOps project where the TFVC repository is located. |
+| **Permissions** | Member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) or **Manage permissions** set to **Allow** for the TFVC repository.|
+|**Access levels**| To contribute to source code: At least **Basic** access. **Stakeholder** access for private projects provides no access to source code. **Stakeholder** access for public projects provides the same access as **Contributors** and **Basic**. For more information, see [About access levels](../../organizations/security/access-levels.md).|
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the Azure DevOps project where the TFVC repository is located. |
+| **Permissions** | Member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) or **Manage permissions** set to **Allow** for the TFVC repository.|
+|**Access levels**| To contribute to source code: At least **Basic** access. **Stakeholder** access for private projects provides no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).|
+
 ::: moniker-end 
 
 ## Default repository permissions  
@@ -44,31 +49,31 @@ By default, members of the project **Contributors** group have permissions to co
 [!INCLUDE [temp](../../organizations/security/includes/code-tfvc.md)]
 
 <a id="tfvc-repository">  </a>
+
 ## Set TFVC repository security permissions
 
-To set permissions for a custom security group, have defined that group previously. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-
+To set permissions for a custom security group, ensure that the group is already defined. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) for more information.
 ::: moniker range="azure-devops"
 
 1. In the Azure DevOps web portal for the project where you want to set permissions, select **Project settings**. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-1. Select **Repositories**.
+2. Select **Repositories**.
 
-1. Select the TFVC repository labeled with the name of the project.
+3. Select the TFVC repository labeled with the name of the project.
 
    ![Image that shows choosing a TFVC repository.](media/tfvc-permissions/open-tfvc-repositories-security-s185.png)
 
-1. Choose the user or security group you want to change permissions for. 
+4. Choose the user or security group you want to change permissions for. 
 
    To set permissions for a specific user or group, enter their name in the identity box and select their identity. 
 
    ![Image that shows adding a user or group.](media/tfvc-permissions/add-user-group.png)  
 
-1. Make the changes to the permission set. 
+5. Make the changes to the permission set. 
 
    ![Image that shows setting the permissions for a user or group.](media/tfvc-permissions/set-tfvc-permissions.png)  
 
-1. When you're done, navigate away from the page. The permission changes are automatically saved for the selected user or group.
+6. When you're done, navigate away from the page. The permission changes are automatically saved for the selected user or group.
 
    If you add a user or group and don't change any of their permissions, the user or group you added no longer appears after you refresh the permissions page.
 
