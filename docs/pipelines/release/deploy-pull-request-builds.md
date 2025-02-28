@@ -106,8 +106,8 @@ Enabling status checks for a GitHub repository allows administrators to specify 
 
     :::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="A screenshot displaying how to enable status checks.":::
 
-> [!IMPORTANT]
-> Status checks will only appear on your pull request after the release pipeline has run at least once with the pull request deployment condition enabled. . See [Branch protection rules](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) for more details.
+    > [!IMPORTANT]
+    > Status checks will only appear on your pull request after the release pipeline has run at least once with the pull request deployment condition enabled. . See [Branch protection rules](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) for more details.
 
 1. You can view your status checks on the pull request overview page under the **Conversation** tab.
    
