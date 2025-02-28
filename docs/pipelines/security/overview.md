@@ -42,7 +42,7 @@ For added security and to reduce the risk of accidental misconfigurations, use Y
 
 :::moniker range=">= azure-devops-2022"
 
-### Disable Creation of Classic pipelines
+### Disable creating Classic pipelines
 
 Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API.
 
@@ -58,7 +58,7 @@ To improve the security of newly created organizations, starting with [Sprint 22
 
 :::moniker-end
 
-## Prevent Malicious code execution
+## Prevent malicious code execution
 
 To ensure that only tested and sanitized code runs through your pipeline, regularly review your pipelines for common issues. 
 
@@ -77,17 +77,13 @@ Securely use variables and parameters in your pipelines by following best practi
 - **Use parameters instead of variables**: Unlike variables, a running pipeline can't modify pipeline parameters. Parameters have data types such as `number` and `string`, and they can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
 
 
-### Begin with a Minimal Template
+### Begin with a minimal template
 
 Begin with a minimal template and gradually enforce extensions. This approach ensures that as you implement security practices, you have a centralized starting point that covers all pipelines.
 
 For more information, see [Templates](templates.md).
 
 
-
-## Control Access
-
-### Scope Permissions
 
 ### Choose the Right Authentication Method
 
