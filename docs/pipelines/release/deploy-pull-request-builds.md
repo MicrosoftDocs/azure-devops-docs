@@ -17,10 +17,9 @@ Pull requests provide an effective way to review code changes before merging the
 
 ## Prerequisites
 
-| **Product**       | **Requirements**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - Source code hosted on Azure Repos or GitHub. If you don’t have a repository, you can use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app to create one.<br> - A working [pipeline](../create-first-pipeline.md) for your repository.<br> - A Classic release pipeline. If you don't have one, [set up a Classic release pipeline](./deploy-multiple-branches.md#create-a-release-pipeline). <br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
-
+| **Product**        | **Requirements**    |
+|--------------------|---------------------|
+| **Azure DevOps**   | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - Source code hosted on Azure Repos or GitHub. If you don’t have a repository, you can use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app to create one.<br> - A working [pipeline](../create-first-pipeline.md) for your repository.<br> - A Classic release pipeline. If you don't have one, [set up a Classic release pipeline](./deploy-multiple-branches.md#create-a-release-pipeline). |
 
 ## Pull request deployments
 
@@ -97,14 +96,22 @@ You can use branch policies to implement a list of criteria that must be met bef
 
 Enabling status checks for a GitHub repository allows administrators to specify the criteria that must be met before a pull request can be merged into the target branch. 
 
+1. Navigate to the main page of your repository on GitHub.
+
+1. Under your repository name, select **Settings**.
+
+1. Select **Branches**, and then select **Add classic branch protection rule**.
+
+1. Check the box for **Require status checks to pass before merging**, then select the status corresponding to your release definition.
+
+    :::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="A screenshot displaying how to enable status checks.":::
+
 > [!IMPORTANT]
 > Status checks will only appear on your pull request after the release pipeline has run at least once with the pull request deployment condition enabled. . See [Branch protection rules](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) for more details.
 
-:::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="A screenshot displaying how to enable status checks.":::
-
-You can view your status checks in your pull request under the **Conversation** tab.
+1. You can view your status checks on the pull request overview page under the **Conversation** tab.
    
-:::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="A screenshot displaying the pull request status checks.":::
+    :::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="A screenshot displaying the pull request status checks.":::
 
 ---
 
