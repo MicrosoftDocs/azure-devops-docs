@@ -17,7 +17,7 @@ Keep **Azure DevOps Demo Generator** app ready. This app will automate the proce
 When you run the application you will see the information about predefined templates, choose the template by entering the corresponding number
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Demo Generator](../media/101.png "Screenshot of Demo Generator")](../media/101.png#lightbox)
+> [![Screenshot of Demo Generator](/media/101.png "Screenshot of Demo Generator")](/media/101.png#lightbox)
 
 > [!div class="mx-imgBorder"]
     > :::image type="content" source="media/101.png" alt-text="Azure DevOps Demo Generator select project template" lightbox="media/101.png":::
