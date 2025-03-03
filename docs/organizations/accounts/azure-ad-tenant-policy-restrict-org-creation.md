@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 03/03/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -39,9 +39,9 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 ### Create allowlist
 
 > [!WARNING]
-> We recommend using groups with your tenant policy allowlist. If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-When the policy is enabled, all users are restricted from creating new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
+When the policy is enabled, only users in the allowlist and users assigned to the Azure DevOps **Administrator** role can create new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
 
 Select **Add Microsoft Entra user or group**.
 
@@ -49,9 +49,7 @@ For more information, see [Add organization users and manage access](add-organiz
 
 ### Create error message
 
-When administrators, who aren't on the allowlist, try to create an organization they get an error. 
-
-To customize this error message, do the following steps:
+To customize the error message, do the following steps:
 
 1. In the policy settings in Azure DevOps, select **Edit display message**.
 
@@ -62,11 +60,6 @@ To customize this error message, do the following steps:
 The error message is customized.
 
 ![Customized error message](media/azure-ad-tenant-policy/error-message-example-ui.png)
-
-> [!NOTE]
-> Administrators, who aren't on the allowlist, can't connect their organization to the Microsoft Entra tenant where the policy is turned on.
->
-> ![Connection failed error](media/azure-ad-tenant-policy/connection-failed-notification.png)
 
 ## Related articles
 
