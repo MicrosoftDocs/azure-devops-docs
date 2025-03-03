@@ -18,6 +18,7 @@ monikerRange: '<= azure-devops'
 This article helps you understand how to grant and manage permissions for users or groups, enabling them to manage extensions effectively. By setting the appropriate permissions, you can maintain control over the extensions used within your organization and ensure compliance with your security policies.
 
 ## Prerequisites
+
 ::: moniker range="azure-devops"
 
 | Category | Requirements |
@@ -59,7 +60,7 @@ This article helps you understand how to grant and manage permissions for users 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=" <= azure-devops-2020"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -76,6 +77,8 @@ This article helps you understand how to grant and manage permissions for users 
     ![Extension security](media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
+
+By following these steps, you can effectively manage extension permissions within your Azure DevOps organization. This ensures that only authorized users can install, update, or remove extensions, maintaining the security and integrity of your development environment.
 
 ## Related articles
 
