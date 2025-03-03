@@ -90,8 +90,6 @@ To approve extensions, have [**edit collection-level information** permissions](
 
 4. [Assign the extensions](./install-extension.md) to users who need access.
 
-::: moniker-end
-
 Tell your team about your installed extensions, so they can start using their capabilities.
 
 ## Related articles
