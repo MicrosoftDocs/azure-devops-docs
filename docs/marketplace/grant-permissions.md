@@ -7,7 +7,7 @@ ms.subservice: azure-devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.author: chcomley
 author: chcomley
-ms.date: 10/12/2022
+ms.date: 03/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,31 +15,39 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to manage permissions for users or groups, so they can manage extensions.
+This article helps you understand how to grant and manage permissions for users or groups, enabling them to manage extensions effectively. By setting the appropriate permissions, you can maintain control over the extensions used within your organization and ensure compliance with your security policies.
 
 ## Prerequisites
 ::: moniker range="azure-devops"
-- **Permissions:** Member of the Project Collection Administrators group. Organization owners are automatically members of this group.
-- **Extension sharing:** Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the Project Collection Administrators group. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).|
+|**Extension sharing** | Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).|
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Permissions:** Member of the Project Collection Administrators group or **Edit collection-level information** permissions. Organization owners are automatically members of this group.
-- **Extension sharing:** Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the Project Collection Administrators group or **Edit collection-level information** permissions. Organization owners are automatically members of this group.|
+|**Extension sharing**| Private extensions [shared with your organization](../extend/publish/overview.md#share-your-extension).|
+
 ::: moniker-end
 
 ## Manage permissions
 
 ::: moniker range="azure-devops"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../media/settings/open-admin-settings-vert.png)
 
 3. Select **Extensions**.
 
-    ![Extension settings hub](media/manage-permissions/extensions-settings.png)
+    ![Screenshot showing Extension settings hub.](media/manage-permissions/extensions-settings.png)
 
 4. Select **Security**.
 
@@ -68,8 +76,6 @@ Learn how to manage permissions for users or groups, so they can manage extensio
     ![Extension security](media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
-
-
 
 ## Related articles
 
