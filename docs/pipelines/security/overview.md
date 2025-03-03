@@ -69,7 +69,11 @@ Follow these recommendations to protect the underlying infrastructure.
 - **Use Microsoft-hosted instead of self-hosted pools**: Microsoft-hosted pools offer isolation and a clean virtual machine for each run of a pipeline. Use Microsoft-hosted pools rather than self-hosted pools.
 - **Separate agents for each project**: To mitigate lateral movement and prevent cross-contamination between projects, maintain separate agent pools, each dedicated to a specific project. 
 - **Use low-privileged accounts to run agents**: To enhance system security, we recommend using the lowest-privileged account for running self-hosted agents. For instance, consider using your machine account or a managed service identity. Don't run an agent under an identity with direct access to Azure DevOps resources.
-
+- **Isolate production artifacts and sensitive agent pools** Use different agent pools to prevent security issues.  
+    - **Use a separate agent pool for production artifacts:** Isolate production artifacts by using a distinct agent pool, preventing accidental deployments from nonproduction branches.
+    - **Segment sensitive pools:** Create separate pools for sensitive and nonsensitive workloads. Only allow credentials in build definitions associated with the appropriate pool.
+- **Configure restrictive firewalls for self-hosted agents:** Set up firewalls to be as restrictive as possible while still allowing agents to function, balancing security and usability.
+- **Regularly update self-hosted agent pools:** Keep your self-hosted agents up-to-date with regular updates to ensure vulnerable code isn’t running, reducing the risk of exploitation.
 
 ## Secure projects and repositories
 
@@ -106,17 +110,34 @@ Securely use variables and parameters in your pipelines by following best practi
 - **Enable shell parameter validation**:  When the setting *Enable shell tasks arguments parameter validation* is enabled, there's an added check for characters like semi-colons, quotes, and parentheses. Turn on *Enable shell tasks arguments parameter validation* at the organization or project level under **Settings** > **Pipelines** > **Settings**. 
 - **Limit variables that can be set at queue time**: Prevent users from defining new variables at queue time by enabling the setting *limit variables that can be set at queue time* at **Organization settings** > **Pipelines** > **Settings**. 
 - **Use parameters instead of variables**: Unlike variables, a running pipeline can't modify pipeline parameters. Parameters have data types such as `number` and `string`, and they can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
+- **Reference secrets from templates** Instead of including inline scripts with secret parameters directly in your pipeline YAML, use [templates](templates.md) to abstract sensitive information away from the main pipeline. To implement this approach, create a separate YAML file for your script and then store that script in a separate, secure repository. You can then reference the template and pass a secret variable in your YAML as a parameter. The secure variable should come from Azure Key Vault, a variable group, or the pipeline UI.
 - **Don't log or print secrets**: Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. Azure Pipelines attempts to scrub secrets from logs wherever possible but can't catch every way that secrets can be leaked.
+- **Don't use structured data like JSON as secrets**: Create individual secrets for each sensitive value. This approach ensures better redaction accuracy and minimizes the risk of exposing sensitive data inadvertently.
 
-### Lock down containers
 
-**Mark volumes are read only**: Containers include system-provide volume mounts for tasks, tools, and external components required to work with the host agent. Set `externals`, `tasks`, and `tools` to read only for added security. 
+### Audit and rotate secrets
 
-### Begin with a minimal template
+To secure your pipelines, regularly audit secret handling in tasks and logs, review and remove unnecessary secrets, and rotate secrets to minimize security risks.
+
+- **Audit secret handling in tasks and logs**: Checks tasks to make sure secrents aren't sent to hosts or printed to logs. Verify that there are no secrets in any log files, including the error logs. 
+- **Review registered secrets:** Confirm that secrets in your pipeline are still necessary, and remove any that are no longer needed to reduce clutter and potential security risks.
+- **Rotate secrets:** Regularly rotate secrets to minimize the window of time during which a compromised secret could be exploited. 
+
+### Secure containers
+
+Learn how to secure containers through configuration changes, scanning, and policies. 
+
+- **Mark volumes are read only**: Containers include system-provide volume mounts for tasks, tools, and external components required to work with the host agent. Set `externals`, `tasks`, and `tools` to read only for added security. 
+- **Set container-specific resource limits**: Set limits on CPU and memory to prevent containers from consuming excessive resources, which could lead to denial of service or security vulnerabilities.
+- **Use trusted images**: Utilize official and verified images from reputable sources such as Azure Container Registry or Docker Hub. Always specify a specific version or tag to maintain consistency and reliability, rather than relying on the `latest` tag. Regularly update base images to include the latest security patches and bug fixes.
+- **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-containers-introduction) to monitor and detect security risks. Additionally, Azure Container Registry offers integrated [vulnerability scanning](/azure/container-registry/scan-images-defender) to help ensure container images are secure before deployment. You can also integrate third-party scanning tools through Azure DevOps extensions for added security checks.
+- **Implement security policies to prevent privilege escalation and ensure containers run with the least amount of privileges necessary**: For example, Azure [Kubernetes Service (AKS)](/azure/aks/operator-best-practices-cluster-security), [role-based access control](/azure/aks/manage-azure-rbac), and [Pod Security Admission](/azure/aks/use-psa) allow you to enforce policies that restrict container privileges, ensure non-root execution, and limit access to critical resources. 
+- **Utilize Network Policies**: [Network Policies](/azure/virtual-network/kubernetes-network-policies) can be used to restrict communication between containers, ensuring that only authorized containers can access sensitive resources within your network. In addition, [Azure Policy for AKS](/azure/governance/policy/concepts/policy-for-kubernetes) can be leveraged to enforce container security best practices, such as ensuring only trusted container images are deployed.
+
+## Use templates to enforce best practices
 
 Begin with a minimal template and gradually enforce extensions. This approach ensures that as you implement security practices, you have a centralized starting point that covers all pipelines.
 
-For more information, see [Templates](templates.md).
 
 
 
