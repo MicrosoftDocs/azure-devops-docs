@@ -71,8 +71,9 @@ Some templates may require additional extensions to be installed to your organiz
 > [!NOTE]
 > If you want to manually install the extensions,  click on the provided link for a specific extension, which takes you to the extension's page on Azure DevOps Marketplace. From there, you can install the extension.
 
-2. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
+2. Your project may take a couple of minutes for the Demo Generator to provision. 
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="media/104.png" alt-text="Required extensions setup in organization" lightbox="media/104.png":::
-3. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
+
+3. You can go to your organization to confirm that the project was created once you see the Project created successfully message.
