@@ -12,26 +12,26 @@ ms.date: 2/28/2025
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-You should first have **Azure DevOps Demo Generator** app ready by following the steps outlined in the [configure section](configure.md). This app will automate the process of creating a new Azure DevOps project within your account that is prepopulated with content (work items, repos, etc.) required for the labs. 
+You should first have the **Azure DevOps Demo Generator** app ready by following the steps outlined in the [configure section](configure.md). This app will automate the process of creating a new Azure DevOps project within your organization that is prepopulated with content (work items, repos, etc.) required for the labs. 
 
 When you run the application you will see the information about predefined templates, choose the template by entering the corresponding number
 
 > [!div class="mx-imgBorder"]
-> [![Demo Generator Template Details](../demo-gen/media/101.png "Demo Generator Template Details")](../demo-gen/media/101.png#lightbox)
+> [![Azure DevOps Demo Generator select project template](../demo-gen/media/101.png "Azure DevOps Demo Generator select project template")](../demo-gen/media/101.png#lightbox)
 
 #### 1. Select the authentication method
 
-Here you have 2 methods to authenticate Azure DevOps Demo Generator:
+You have 2 methods to authenticate to use the Azure DevOps Demo Generator app:
 
 1. Device Login using AD authentication
-Register Your Application in Azure AD. Refer <a href="https://azuredevopslabs.com/labs/azuredevops/appregister">Register and Setup</a>
+Register Your Application in Azure AD. Check out the [Register and Application](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api#register-an-application) documentation for more details. 
 
-   Login with the code displayed
+   * Login with the code displayed
 
-   After the login, organizations will be listed and select organization to create project
+   * After the login, organizations will be listed and select an organization to create project
 
    > [!div class="mx-imgBorder"]
-> [![Demo Generator Template Details](../demo-gen/media/102.png "Demo Generator Template Details")](../demo-gen/media/102.png#lightbox)
+> [![Device login using AD Auth](../demo-gen/media/102.png "Device login using AD Auth")](../demo-gen/media/102.png#lightbox)
 
 2. With Personal Access Token (PAT)
 
