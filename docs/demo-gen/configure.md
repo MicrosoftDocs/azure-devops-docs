@@ -32,7 +32,7 @@ Ensure you have the following installed on your machine:
 
 2. **Open the Solution**
 
-   Open the ADOGenerator.sln solution file in Visual Studio or your preferred IDE.
+   Open the **ADOGenerator.sln** solution file in Visual Studio or your preferred IDE.
 
 3. **Set ADOGenerator as the Startup Project**
 

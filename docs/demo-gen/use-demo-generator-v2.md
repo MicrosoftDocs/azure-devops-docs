@@ -17,12 +17,9 @@ Keep **Azure DevOps Demo Generator** app ready. This app will automate the proce
 When you run the application you will see the information about predefined templates, choose the template by entering the corresponding number
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Demo Generator](/media/101.png "Screenshot of Demo Generator")](/media/101.png#lightbox)
+> [![Demo Generator Template Details](../demo-gen/media/101.png "Demo Generator Template Details")](../demo-gen/media/101.png#lightbox)
 
-> [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/101.png" alt-text="Azure DevOps Demo Generator select project template" lightbox="media/101.png":::
-
-### 2. Select the authentication method
+#### 1. Select the authentication method
 
 Here you have 2 methods to authenticate Azure DevOps Demo Generator:
 
@@ -33,8 +30,8 @@ Register Your Application in Azure AD. Refer <a href="https://azuredevopslabs.co
 
    After the login, organizations will be listed and select organization to create project
 
-    > [!div class="mx-imgBorder"]
-        > :::image type="content" source="media/102.png" alt-text="Device login using AD Auth " lightbox="media/102.png":::
+   > [!div class="mx-imgBorder"]
+> [![Demo Generator Template Details](../demo-gen/media/102.png "Demo Generator Template Details")](../demo-gen/media/102.png#lightbox)
 
 2. With Personal Access Token (PAT)
 
@@ -57,11 +54,13 @@ Register Your Application in Azure AD. Refer <a href="https://azuredevopslabs.co
 
    Enter the organization name and the Personal Access Token (PAT). Provide the project name and press enter to create a project
 
-       > :::image type="content" source="media/103.png" alt-text="Authenticating the app using Personal Access Token(PAT)" lightbox="media/103.png":::
+> [!div class="mx-imgBorder"]
+> [![Authenticating the app using Personal Access Token(PAT)](../demo-gen/media/103.png "Authenticating the app using Personal Access Token(PAT)")](../demo-gen/media/103.png#lightbox)
 
-### 3. Steps
+#### 3. Steps
 
 1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
+1. 
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="media/templateselection.png" alt-text="Azure DevOps Demo Generator template selection screen" lightbox="media/templateselection.png":::
