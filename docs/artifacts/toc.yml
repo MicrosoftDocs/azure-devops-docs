@@ -145,7 +145,7 @@
       href: nuget/restore-nuget-packages-dotnet.md
       displayName: dotnet, restore
     - name: Install NuGet packages with Visual Studio
-      href: nuget/consume.md
+      href: nuget/install-nuget-packages-with-visual-studio.md
       displayName: install package, nuget, visual studio
   - name: npm
     items:
