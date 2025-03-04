@@ -55,7 +55,7 @@ Now that you have your feed's source URL, follow these steps to set up Visual St
 
 1. Enter a **Name** for the new source and paste the source URL you copied earlier in the **Location** field. For **UserName**, you can enter any string, and for **Password**, paste the personal access token you created earlier. Select **OK** when you're done.
 
-1. If you've enabled [upstream sources](upstream-sources.md) in your feed,uncheck **nuget.org**.
+1. If you've enabled [upstream sources](upstream-sources.md) in your feed, uncheck **nuget.org**.
 
 1. Select **Add Source** when you're done.
 
@@ -63,48 +63,51 @@ Now that you have your feed's source URL, follow these steps to set up Visual St
 
 ---
 
-## Install packages from your feed
+## Install packages from a feed
 
-Now that you set up Visual Studio and added a new package source pointing to your feed, you can now search and install packages right from Visual Studio package manager.
+Now that you've set up Visual Studio and added your feed as a package source, you can now search and install packages directly from the NuGet Package Manager in Visual Studio.
 
 #### [Windows](#tab/windows/)
 
-1. Open Visual Studio, and then right-click on your project in the Solution Explorer, then select **Manage NuGet Packages...**.
+1. Open Visual Studio, and then right-click on your project in the **Solution Explorer**, then select **Manage NuGet Packages...**.
 
 1. Select **Browse**, and then select your feed from the **Package source** dropdown menu.
     
-    :::image type="content" source="../media/select-pkg-src.png" alt-text="A screenshot showing the package source dropdown menu in Visual Studio.":::
-
-1. Use the search bar to find packages in your feed.
+1. Use the search bar to find and install packages from your feed.
+    
+    :::image type="content" source="../media/select-pkg-src.png" alt-text="A screenshot displaying the list of package sources in Visual Studio.":::
 
 #### [Mac](#tab/macOS/)
 
 1. Open Visual Studio for Mac, right-click on the **Dependencies** folder in your solution, and then select **Manage NuGet Packages...**.
 
-1. Select the **Browse** tab, and then select your feed from the **Package source** dropdown at the bottom.
+1. Select the **Browse** tab, and then select your feed from the **Package source** dropdown menu at the bottom.
 
-1. Use the search bar to find packages in your feed.
+1. Use the search bar to find and install packages from your feed.
 
-    :::image type="content" source="media/search-package-sources-mac.png" alt-text="A screenshot showing how to search for packages in Visual Studio for Mac.":::
+    :::image type="content" source="media/search-package-sources-mac.png" alt-text="A screenshot displaying how to search for packages in Visual Studio for Mac.":::
 
 ---
 
 > [!NOTE]
-> If you enabled [upstream sources](../nuget/upstream-sources.md), any packages that haven't been saved to your feed (by using them at least once) won't appear in the search result.
+> If you've enabled [upstream sources](../nuget/upstream-sources.md), packages that haven't been saved to your feed from upstream won't appear in search results. A package is saved to the feed when a *Feed and Upstream Reader (Collaborator)* or higher installs it from upstream.
 
 ## Install packages from NuGet.org
 
+You can install packages from NuGet.org in several ways, one of which is by using the *Package Manager Console* in Visual Studio:
+
 1. Navigate to *NuGet.org* and search for the package you want to install.
 
-1. Select **Package Manager**, and then copy the *Install-Package* command.
+1. Select the **Package Manager** tab, and then copy the *Install-Package* command.
 
-1. Open Visual Studio, and then select **Tools** > **NuGet Package Manager** > **Package Manager Console** to open the package manager console.
+1. Open Visual Studio, then select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
-1. Paste the install command into the Package Manager Console and then press Enter.
+1. Paste the install command into the console and press Enter.
 
-## Related articles
+## Related content
 
-- [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
-- [Publish and restore NuGet packages from the command line (NuGet.exe)](./publish.md)
-- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
-- [Configure upstream sources](../how-to/set-up-upstream-sources.md)
+- [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget-exe.md)
+
+- [Restore NuGet packages (dotnet)](restore-nuget-packages-dotnet.md)
+
+- [Search for packages in upstream sources](../how-to/search-upstream.md)
