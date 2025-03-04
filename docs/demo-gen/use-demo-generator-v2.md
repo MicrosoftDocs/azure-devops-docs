@@ -65,7 +65,7 @@ There are several templates available, including **eShopOnWeb**, which defines a
 
 > [!NOTE]
 > All  templates provide fictional Azure DevOps users and pre-populated Agile planning and tracking work items and data, along with source code in an Azure Repos Git repo, as well as access to Azure Pipelines.
-1. Some templates may require additional extensions to be installed to your organization. The demo generation process checks to see if these extensions are already installed. If the extension is **not** installed, provide your consent to install extension by pressing **Y** or **Yes** to install the extension(s) to your account. When ready, press enter to **Create Project**.
+Some templates may require additional extensions to be installed to your organization. The demo generation process checks to see if these extensions are already installed. If the extension is **not** installed, provide your consent to install extension by pressing **Y** or **Yes** to install the extension(s) to your account. When ready, press enter to **Create Project**.
 
 > [!NOTE]
 > If you want to manually install the extensions,  click on the provided link for a specific extension, which takes you to the extension's page on Azure DevOps Marketplace. From there, you can install the extension.
@@ -74,4 +74,4 @@ There are several templates available, including **eShopOnWeb**, which defines a
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="media/104.png" alt-text="Required extensions setup in organization" lightbox="media/104.png":::
-1. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
+3. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
