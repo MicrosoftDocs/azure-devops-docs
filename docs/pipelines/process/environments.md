@@ -61,7 +61,7 @@ To create your first environment:
 > [!TIP]
 > You can create an empty environment and reference it from deployment jobs so you can record deployment history against the environment.
 
-To programmatically create and manage environments, use the [Azure DevOps Environments REST API](https://learn.microsoft.com/en-us/rest/api/azure/devops/environments/environments).
+To programmatically create and manage environments, use the [Azure DevOps Environments REST API](/rest/api/azure/devops/environments/environments).
 
 You can use Azure Pipelines to deploy to environments. For more information, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](../ecosystems/kubernetes/aks-template.md).
 
@@ -139,17 +139,17 @@ You can select the **Deployments** tab in the Azure Pipelines **Environments** s
 
 - View jobs from all pipelines that target a specific environment. For example, two microservices that each have their own pipeline can deploy to the same environment. The deployment history helps identify all pipelines that affect the environment, and also helps visualize the sequence of deployments by each pipeline.
 
-  :::image type="content" source="media/environments-view-deployment-history.png" alt-text="Screenshot that shows deployment history listing.":::
+  :::image type="content" source="media/environments-deployment-history.png" alt-text="Screenshot that shows deployment history listing.":::
 
 - To drill down into the job details, select the **Changes** and **Work items** tabs on a deployment page. The tabs show lists of commits and work items that deployed to the environment. Each list item represents new items in that deployment.
 
   On the **Changes** tab, the first listing includes all the commits to that point, and the following listings include just the changes for that job. If multiple commits are tied to the same job, there are multiple results on the **Changes** tab.
 
-  :::image type="content" source="media/environment-view-deployment-history-changes.png" alt-text="Screenshot of commits under deployment history.":::
+  :::image type="content" source="media/environment-deployment-history-changes.png" alt-text="Screenshot of commits under deployment history.":::
 
 - If multiple work items are tied to the same job, there are multiple results on the **Work items** tab.
 
-  :::image type="content" source="media/environment-view-deployment-history-workitems.png" alt-text="Screenshot of work items under deployment history.":::
+  :::image type="content" source="media/environment-deployment-history-workitems.png" alt-text="Screenshot of work items under deployment history.":::
 
 ## Security
 
