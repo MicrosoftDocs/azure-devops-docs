@@ -1,11 +1,11 @@
 ---
-title: Install NuGet packages using Visual Studio
-description: How to use Visual Studio to consume NuGet packages from Azure Artifacts feeds and NuGet.org
+title: Install NuGet packages with Visual Studio
+description: Learn how to use Visual Studio to install NuGet packages from Azure Artifacts feeds and NuGet.org.
 ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
-ms.topic: conceptual
-ms.date: 01/26/2023
+ms.topic: how-to
+ms.date: 03/04/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,45 +13,53 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Artifacts and Visual Studio, you can set up your development machine to access and install packages from your feeds and public registries such as NuGet.org. 
+This article guides you through setting up your Visual Studio to install NuGet packages from Azure Artifacts feeds and NuGet.org.
 
-## Get source URL
+## Prerequisites
 
-To set up Visual Studio to access your feed as a package source, we must first get the *Source URL*:
+| **Product**        | **Requirements**    |
+|--------------------|---------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - The latest [NuGet version](https://www.nuget.org/downloads). |
+
+## Get the source URL
+
+Before setting up Visual Studio, you must first get your feed's source URL. You'll use this URL in the next section to add your feed as a package source in Visual Studio:
 
 [!INCLUDE [](../includes/nuget/nuget-consume-endpoint.md)]
 
 ## Set up Visual Studio
 
+Now that you have your feed's source URL, follow these steps to set up Visual Studio and add the new package source:
+
 #### [Windows](#tab/windows/)
 
-1. Open Visual Studio, and then select **Tools** > **Options**.
+1. Open Visual Studio, then select **Tools** > **Options**.
 
 1. Select **NuGet Package Manager**, and then select **Package Sources**.
 
-1. Enter your feed's **Name** and the **Source** URL you copied in the previous step, and then select the green (+) sign to add a new package source.
+1. Enter your feed's **Name** and paste the **Source** URL you copied earlier. Select the green (+) icon when you're done to add a new package source.
 
-1. If you enabled [upstream sources](upstream-sources.md) in your feed, clear the **nuget.org** checkbox.
+1. If you've enabled [upstream sources](upstream-sources.md) in your feed, uncheck **nuget.org**.
 
 1. Select **OK** when you're done.
 
-    :::image type="content" source="../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio - Windows":::
+    :::image type="content" source="../media/vs-addsource.png" alt-text="A screenshot displaying how to add a new package source in Visual Studio for Windows.":::
 
 #### [Mac](#tab/macOS/)
 
-1. Create a new [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+1. Create a new [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scopes.
 
-1. Open Visual Studio for Mac, and then navigate to **Visual Studio** > **Preferences**.
+1. Open Visual Studio for Mac, and navigate to **Visual Studio** > **Preferences**.
 
-1. Select **NuGet** > **Sources**, and then select **Add** to set up a new source.
+1. Select **NuGet** > **Sources**, then select **Add** to set up a new source.
 
-1. Provide a **Name** for your new source and enter the source URL in the **Location** field. For **UserName**, you can enter any string, and for **Password**, paste the personal access token you created earlier. Select **OK** when you're done.
+1. Enter a **Name** for the new source and paste the source URL you copied earlier in the **Location** field. For **UserName**, you can enter any string, and for **Password**, paste the personal access token you created earlier. Select **OK** when you're done.
 
-1. If you have upstream sources enabled in your feed, clear the **nuget.org** checkbox.
+1. If you've enabled [upstream sources](upstream-sources.md) in your feed,uncheck **nuget.org**.
 
 1. Select **Add Source** when you're done.
 
-    :::image type="content" source="media/add-new-source-mac.png" alt-text="A screenshot showing how to add a new package source in Visual Studio for Mac.":::
+    :::image type="content" source="media/add-new-source-mac.png" alt-text="A screenshot displaying how to add a new package source in Visual Studio for Mac.":::
 
 ---
 
