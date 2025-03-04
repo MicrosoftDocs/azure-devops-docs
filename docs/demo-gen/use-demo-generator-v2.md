@@ -19,7 +19,7 @@ When you run the application you will see the information about predefined templ
 > [!div class="mx-imgBorder"]
 > [![Azure DevOps Demo Generator select project template](../demo-gen/media/101.png "Azure DevOps Demo Generator select project template")](../demo-gen/media/101.png#lightbox)
 
-#### 1. Select the authentication method
+#### Select the authentication method
 
 You have 2 methods to authenticate to use the Azure DevOps Demo Generator app:
 
@@ -57,15 +57,11 @@ Register Your Application in Azure AD. Check out the [Register and Application](
 > [!div class="mx-imgBorder"]
 > [![Authenticating the app using Personal Access Token(PAT)](../demo-gen/media/103.png "Authenticating the app using Personal Access Token(PAT)")](../demo-gen/media/103.png#lightbox)
 
-#### 3. Steps
+#### Select your organization
 
-1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
-1. 
+1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple organizations of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. 
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/templateselection.png" alt-text="Azure DevOps Demo Generator template selection screen" lightbox="media/templateselection.png":::
-
-There are several other templates available, including **eShopOnWeb**, which defines a team project for an .NET app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD pipelines; and **MyShuttle**, which defines a Java app and Azure App Service deployment. If you are following a lab from [Azure DevOps Labs](https://www.azuredevopslabs.com), select the **DevOps Labs** section to choose the template
+There are several templates available, including **eShopOnWeb**, which defines a team project for an .NET app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD pipelines; and **MyShuttle**, which defines a Java app and Azure App Service deployment. If you are following a lab from [Azure DevOps Labs](https://www.azuredevopslabs.com), select the **DevOps Labs** section to choose the template
 
 > [!NOTE]
 > All  templates provide fictional Azure DevOps users and pre-populated Agile planning and tracking work items and data, along with source code in an Azure Repos Git repo, as well as access to Azure Pipelines.
