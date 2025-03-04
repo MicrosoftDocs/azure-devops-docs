@@ -80,6 +80,7 @@ Follow these recommendations to protect the underlying infrastructure.
 To enhance security, consider separating out your projects, using branch policies, and adding additional security measures for forks. 
 
 - **Separate projects**: Manage each product and team in separate projects. By doing so, you prevent pipelines from one product inadvertently accessing open resources from another product, thus minimizing lateral exposure. 
+- **Use project-level identities**: Use a project-based build identity for pipelines instead of a collection-level identity. Project-level identities identities can only access resources within their associated project, minimizing the risk of unauthorized access by malicious actors. For more information, see [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
 - **Use branch policies**: To ensure safe changes to code and pipeline, it’s crucial to apply permissions and branch policies. Additionally, consider [adding pipeline permissions and checks to repositories](../process/repository-resource.md).
 - **Add additional security for forks**: When you're working with public repositories from GitHub, it’s essential to carefully consider your approach to fork builds. Forks, originating from outside your organization, pose particular risks. 
     - **Don't provide secrets to fork builds**: By default, pipelines are configured to build forks, but secrets and protected resources aren't automatically exposed to the jobs in those pipelines. It's essential not to disable this protection to maintain security.
@@ -89,7 +90,8 @@ To enhance security, consider separating out your projects, using branch policie
 
 ## Secure service connections
 
-- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new [Azure Resource Manager service connection](../library/connect-to-azure.md), always choose a specific resource group.Whenever possible, use [workload identity federation](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) in place of a service principal for your [Azure service connection](../library/service-endpoints.md). 
+- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new [Azure Resource Manager service connection](../library/connect-to-azure.md), always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build.
+- **Use workload identity federation for authentication**: Whenever possible, use [workload identity federation](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) in place of a service principal for your [Azure service connection](../library/service-endpoints.md). Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets.
 - **Minimize GitHub App access**: Similarly, when you configure the GitHub app to Azure DevOps, grant access only to the repositories that you intend to build using pipelines.
 
 ## Prevent malicious code execution
@@ -104,16 +106,19 @@ To ensure that only tested and sanitized code runs through your pipeline, regula
 
 ### Secure inputs
 
-Securely use variables and parameters in your pipelines by following best practices for setting secrets, using queue-time variables, and enabling shell task argument validation to protect your pipeline from threats and vulnerabilities.
+Securely use variables and parameters in your pipelines by following best practices for setting secrets, including avoiding secret use, using queue-time variables, and enabling shell task argument validation to protect your pipeline from threats and vulnerabilities.
 
+- **Avoid using secrets when possible**: The best method to protect a secret isn't to have a secret in the first place. Check to see if your pipeline can use a different method than using a secret to perform a task such as a service connection with workload identity federation or a managed identity. Managed identities allow your applications and services to authenticate with Azure without requiring explicit credentials. For more information, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) 
+**Don't put secrets in YAML**: Never store sensitive values as plaintext in an Azure Pipelines **.yml** file. 
+- **Don't log or print secrets**: Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. Azure Pipelines attempts to scrub secrets from logs wherever possible but can't catch every way that secrets can be leaked.
+- **Don't use structured data like JSON as secrets**: Create individual secrets for each sensitive value. This approach ensures better redaction accuracy and minimizes the risk of exposing sensitive data inadvertently.
 - **Restrict access to secrets**: Remove any secrets or keys from appearing in pipelines. Move to secretless authentication methods like workload identity federation or set secrets in the UI, a variable group, or a variable group sourced from Azure Key Vault.
 - **Enable shell parameter validation**:  When the setting *Enable shell tasks arguments parameter validation* is enabled, there's an added check for characters like semi-colons, quotes, and parentheses. Turn on *Enable shell tasks arguments parameter validation* at the organization or project level under **Settings** > **Pipelines** > **Settings**. 
 - **Limit variables that can be set at queue time**: Prevent users from defining new variables at queue time by enabling the setting *limit variables that can be set at queue time* at **Organization settings** > **Pipelines** > **Settings**. 
 - **Use parameters instead of variables**: Unlike variables, a running pipeline can't modify pipeline parameters. Parameters have data types such as `number` and `string`, and they can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
 - **Reference secrets from templates** Instead of including inline scripts with secret parameters directly in your pipeline YAML, use [templates](templates.md) to abstract sensitive information away from the main pipeline. To implement this approach, create a separate YAML file for your script and then store that script in a separate, secure repository. You can then reference the template and pass a secret variable in your YAML as a parameter. The secure variable should come from Azure Key Vault, a variable group, or the pipeline UI.
-- **Don't log or print secrets**: Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. Azure Pipelines attempts to scrub secrets from logs wherever possible but can't catch every way that secrets can be leaked.
-- **Don't use structured data like JSON as secrets**: Create individual secrets for each sensitive value. This approach ensures better redaction accuracy and minimizes the risk of exposing sensitive data inadvertently.
-
+- **Limit secrets with branch policies and variable group permissions**: You can use a combination of variable group permissions, conditional job insertion, and branch policies to make sure that secrets are tied to the `main` branch. For more information, see [Protect secrets](secrets.md#limit-secrets-with-branch-policies-and-variable-group-permissions). 
+- **Use setvariable to limit setting variables**: Use the [`settableVariables` attribute](/azure/devops/pipelines/yaml-schema/target-settable-variables) to configure what variables pipeline authors are allowed to set in a pipeline. Without this setting, pipeline authors can declare unlimited new variables with the `setvariable` logging command. When you specify an empty list `with settableVariables`, all variable setting is disallowed.
 
 ### Audit and rotate secrets
 
@@ -138,12 +143,10 @@ Learn how to secure containers through configuration changes, scanning, and poli
 
 Begin with a minimal template and gradually enforce extensions. This approach ensures that as you implement security practices, you have a centralized starting point that covers all pipelines.
 
+- **Use extends templates** Extends templates define the outer structure offer specific points for targeted customizations. [Using extends templates](../process/templates.md#extend-from-a-template) can prevent malicious code from infiltrating a pipeline.
+- **Restrict access with steps**: Limit network access by having steps such as downloading packages run on a container rather than on the host. When steps run in a container you can prevent a bad actor from modifying agent configuration or leaving malicious code for later execution.
+- 
 
-
-
-### Choose the Right Authentication Method
-
-## Enable and Review Auditing Events
 
 ## Related Articles
 
