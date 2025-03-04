@@ -12,7 +12,7 @@ ms.date: 2/28/2025
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-Keep **Azure DevOps Demo Generator** app ready. This app will automate the process of creating a new Azure DevOps project within your account that is prepopulated with content (work items, repos, etc.) required for the labs. 
+You should first have **Azure DevOps Demo Generator** app ready by following the steps outlined in the [configure section](configure.md). This app will automate the process of creating a new Azure DevOps project within your account that is prepopulated with content (work items, repos, etc.) required for the labs. 
 
 When you run the application you will see the information about predefined templates, choose the template by entering the corresponding number
 
