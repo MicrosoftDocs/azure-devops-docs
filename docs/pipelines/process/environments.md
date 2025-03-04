@@ -44,6 +44,7 @@ To add an environment, you need the following prerequisites:
 - The [Creator role for environments](../library/add-resource-protection.md#environments) in your project.
 
 <a name="creation"></a>
+
 ## Create an environment
 
 To create your first environment:
@@ -61,7 +62,11 @@ To create your first environment:
 > [!TIP]
 > You can create an empty environment and reference it from deployment jobs so you can record deployment history against the environment.
 
+To programmatically create and manage environments, use the [Azure DevOps Environments REST API](https://learn.microsoft.com/en-us/rest/api/azure/devops/environments/environments).
+
 You can use Azure Pipelines to deploy to environments. For more information, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](../ecosystems/kubernetes/aks-template.md).
+
+
 
 <a name="target-from-deployment-job"></a>
 ## Target an environment from a deployment job
