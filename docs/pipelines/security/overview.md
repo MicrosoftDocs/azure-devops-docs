@@ -97,7 +97,7 @@ To secure your pipelines, regularly audit secret handling in tasks and logs, rev
 
 To ensure that only tested and sanitized code runs through your pipeline, regularly review your pipelines for common issues. 
 
-- **Code scanning**:  Escape special characters in arguments to avoid shell command injection. You can use [GitHub Advanced Security for Azure DevOps](../../repos/security/includes/github-advanced-security.md) to automate code scanning. 
+- **Code scanning**:  Escape special characters in arguments to avoid shell command injection. You can use [GitHub Advanced Security for Azure DevOps](../../repos/security/github-advanced-security-security-overview.md) to automate code scanning. 
 - **Validate inputs and use parameters**: Validate input parameters and arguments to prevent unintended behavior. Use parameterized queries in scripts to prevent SQL injection. [Runtime parameters](../process/runtime-parameters.md) help avoid security issues related to variables, such as [Argument Injection](https://devblogs.microsoft.com/devops/pipeline-argument-injection/).
 - **Don't use PATH in scripts**: Relying on the agent's `PATH` setting is dangerous because it can be altered by a previous script or tool. Always use a fully qualified path instead.
 - **Control available tasks**: Disable the ability to install and run tasks from the Marketplace, which gives you greater control over the code that executes in a pipeline. 
