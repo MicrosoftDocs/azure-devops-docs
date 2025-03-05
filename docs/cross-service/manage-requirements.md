@@ -199,7 +199,7 @@ You can also set team velocity based on your estimates. For example, if you say 
 
 **Example Forecast of requirements backlog** 
 
-[![Screenshot of Forecast of Requirements backlog, ordered by feature parent.](../boards/media/best-practices/forecast-product-backlog-ordered-parent.png)]
+![Screenshot of Forecast of Requirements backlog, ordered by feature parent.](../boards/media/best-practices/forecast-product-backlog-ordered-parent.png)
 
 Use a Marketplace extension to integrate your requirements planning with Microsoft Project tools.
 

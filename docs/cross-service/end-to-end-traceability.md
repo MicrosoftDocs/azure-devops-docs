@@ -55,7 +55,7 @@ You can [run automated tests](../boards/boards/add-run-update-tests.md) in a pip
  
 After you define a pipeline to build and release the code changes, you can track the deployment of the work item requirement to each release stage. From the work item form, you can quickly open the links to builds and releases from the **Deployment** and **Development** sections. 
 
-When you open the work item form, the stages the requirement is deployed to display. You can drill down for greater details with the dropdown menu. 
+When you open the work item form, it displays the stages to which the requirement is deployed. You can drill down for greater details with the dropdown menu. 
 
 - **Development** section: Open branches, commits, or pull requests linked to the work item.
 - **Deployment** section: Find release information for work items associated with a Git commit that's part of a build being released.
