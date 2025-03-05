@@ -8,7 +8,7 @@ ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/10/2025
+ms.date: 03/05/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -115,9 +115,9 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. Multi-organization billing doesn't apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal was added to where the service principal has **Basic** or **Basic + Test Plans**.
 
-For more information, see [multi-organization billing FAQs](./billing-faq.yml). Complete the following steps.
+For more information, see [multi-organization billing FAQs](./billing-faq.yml). To pay for a user once across multiple organizations, do the following steps:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -131,7 +131,7 @@ For more information, see [multi-organization billing FAQs](./billing-faq.yml). 
    
    ![Screenshot showing selected button, Configure user billing.](media/buy-more-basic-access/select-configure-user-billing.png)
 
-5. Select **Multi-organization**, and then select **Save**.
+5. Select **Multi-organization** > **Save**.
 
    ![Screenshot showing selected Multi-organization in Configure user billing screen.](media/buy-more-basic-access/select-multi-organization-billing.png)
 
