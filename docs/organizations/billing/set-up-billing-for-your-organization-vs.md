@@ -27,7 +27,7 @@ Setting up billing in Azure DevOps is essential for managing costs associated wi
 >    - Azure Test Plans
 >    - Microsoft-hosted CI/CD
 >    - Self-hosted CI/CD
-> - Before you delete your organization resource in the Azure portal, ensure you changed the billing subscription. Deleting the resource before this change might result in reverting to the free tier of service or your organization. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
+> - Before you delete your organization resource in the Azure portal, ensure you changed the billing subscription. Deleting the resource before this change might result in reverting to the free tier of service for your organization. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
 > - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. It's safe to delete these resource groups if empty. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
 
 ## Prerequisites
