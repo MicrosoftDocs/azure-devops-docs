@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/10/2023
+ms.date: 03/05/2025
 ---
 
-# Manage requirements 
+# Manage Agile requirements 
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
@@ -29,10 +29,10 @@ Use work items to capture requirements. Each work item has a type, which depends
 
 Work items let you capture different information and workflows. Each work item has a type, which depends on the process you choose. You can use these default work item types for requirements and defects:
 
-- Agile: User Story and Bug
-- Basic: Issue and Bug
-- Scrum: Product Backlog Item and Bug
-- CMMI: Requirement and Bug
+- **Agile:** User Story and Bug
+- **Basic:** Issue and Bug
+- **Scrum:** Product Backlog Item and Bug
+- **CMMI:** Requirement and Bug
 
 You can customize each process for your Azure DevOps project. You can also decide how to track bugs for each team.
 
@@ -42,44 +42,45 @@ You can customize each process for your Azure DevOps project. You can also decid
 
 ### Customize work item types  
 
-You can use custom work item types in the following ways:  
+You can customize the following aspects of work item types:
 - Add custom fields and workflow states
-- Add custom rules to support business workflow processes 
+- Add custom rules that support business workflow processes 
 - Add custom portfolio backlogs and customize backlogs and boards  
 - Add custom controls to work item forms to gain enhanced functionality
 
-### Add work items to product backlog or board 
+### Add work items to the product backlog or board
 
-Capture requirements by adding a Title to a product backlog and add the details later. 
+To capture requirements, start by adding a Title to the product backlog. You can add more details later as needed.
 
-**Capture requirements on the product backlog** 
+**Capture requirements on the product backlog**
 
-![Screenshot of adding product backlog item.](media/manage-requirements/add-new-items-agile.png)   
+Adding a Title to the product backlog helps you quickly capture and organize requirements and allows you to prioritize and refine them over time.
+
+![Screenshot of adding product backlog item.](media/manage-requirements/add-new-items-agile.png)
 
 ### Work item fields
 
-Each work item supports tracking data contained in work item fields. Also, it captures changes as updates occur within the **History** field and comments made in the **Discussion** section. The following image shows a sample work item form for the User Story work item type.
+Each work item tracks data in fields, captures changes in the **History** field, and comments in the **Discussion** section.
 
-Use work items to support the following tasks: 
-- Add information, update status, assign to team members, link work items, and attach files 
-- Assign work to a timebox or sprint  
-- Quickly fill in work item fields using work item templates
-- Contribute to a queryable discussion thread  
-- Prioritize work and triage work items. 
+Use work items to:
+- Add information, update status, assign to team members, link work items, and attach files
+- Assign work to a timebox or sprint
+- Quickly fill in fields using templates
+- Contribute to a queryable discussion thread
+- Prioritize and triage work items
 
-Other features that support end-to-end traceability are the **Development** and **Deployment** sections. These sections support the following tasks and insights:
-
+**Development** and **Deployment** sections support end-to-end traceability:
 - Create a new branch or pull request from a work item
 - Complete the pull request
 - Perform a squash merge
 - Create a branch for several work items
-- Link a work item to existing development and build objects 
-- View the release stages associated with the work item within the work item form in real time 
-- View the status of releases within those work items that are associated with commits in the build and release pipelines  
+- Link a work item to existing development and build objects
+- View release stages associated with the work item in real time
+- View the status of releases associated with commits in build and release pipelines
 
 ### Import and update requirements using Excel 
 
-You can also use a .csv file or an Excel spreadsheet to import and update your requirements. These tools let you work with a flat list or a tree of work items. For example, you can define a tree of Epics, Features, and User Stories in Excel and then import them to Azure DevOps, as shown in the following image.
+You can use a .csv file or Excel spreadsheet to import and update your requirements. These tools let you work with a flat list or a tree of work items. For example, you can define a tree of Epics, Features, and User Stories in Excel and then import them to Azure DevOps.
 
 **Import requirements from Excel** 
 
@@ -87,38 +88,40 @@ You can also use a .csv file or an Excel spreadsheet to import and update your r
 
 ### Functional and nonfunctional requirements 
 
-Work items help you track any work that you or your team need to do. You can use the same work item type for both functional and nonfunctional requirements. Functional requirements describe what your product or service should do. Nonfunctional requirements describe how your product or service should operate. 
+Work items help you track any work that you or your team need to do. You can use the same work item type for both functional and nonfunctional requirements:
 
-You can use tags, the Business Value field, or a custom field to categorize your requirements.
- 
+- **Functional requirements**: Describe what your product or service should do.
+- **Nonfunctional requirements**: Describe how your product or service should operate.
+
+Categorize your requirements using the following elements:
+- Tags
+- Business Value field
+- Custom fields
+
 ### Maintain requirement specifications 
 
-Some requirements need more details than what you can put in the work item. You can use Azure DevOps to store and manage your requirements in an Azure Repos repository. Or, you can use a project wiki to keep your specifications in one place.
+Some requirements need more details than what you can put in a work item. Use Azure DevOps to store and manage your requirements in an Azure Repos repository or a project wiki.
 
 You can link or attach your specifications to your requirements.
- 
+
 ## Analyze and prioritize requirements
 
-Prioritize and refine your backlog to make sure your requirements are clear and well-defined. You can use these Azure Boards tools to help you with the following tasks:
+Use Azure Boards tools to prioritize and refine your backlog, ensuring your requirements are clear and well-defined:
 
-**Product backlog**: Drag and drop work items to reorder them by priority and edit multiple work items at once to change assignments or update fields.
-**Query Results, Triage mode**: Review a list of work items and their forms to quickly update them and add details.
-
-**Prioritize feature backlog** 
-
-:::image type="content" source="media/manage-requirements/features-backlog-priority-order.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
+- **Product backlog**: Drag and drop work items to reorder by priority. Edit multiple work items at once to change assignments or update fields.
+- **Query Results, Triage mode**: Review and quickly update work items and add details.
 
 ## Group and organize requirements
 
-Group your requirements by features or business objectives using Azure Boards. You can use portfolio work item types, portfolio backlogs and boards, and a Mapping tool to link your requirements to a higher-level work item.
+Use Azure Boards to group your requirements by features or business objectives. Utilize portfolio work item types, portfolio backlogs and boards, and the Mapping tool to link requirements to higher-level work items.
 
-You can also use work item tags to group your requirements in different ways.
+You can also use work item tags to group requirements in different ways.
 
 ### Epics, features, and portfolio backlogs
 
-Use parent-child links to create a hierarchy of requirements, features, and epics - useful for organizations with multiple teams that want to see how their work contributes to the overall goals and use the portfolio planning tools.
+Use parent-child links to create a hierarchy of requirements, features, and epics. Parent-child links are useful for organizations with multiple teams that want to see how their work contributes to overall goals and utilize portfolio planning tools.
 
-With a hierarchy, you can manage a set of features that different teams work on. You can also see the summary of estimates, progress, and more on the product backlogs.
+With a hierarchy, you can manage a set of features that different teams work on. You can also view summaries of estimates, progress, and more on the product backlogs.
 
 **Group user stories under Features using Mapping** 
 
@@ -126,17 +129,17 @@ With a hierarchy, you can manage a set of features that different teams work on.
 
 ### Use tags to group work items   
  
-Work item tags are labels that team members can add to work items. You can filter backlogs and boards by these tags to see only the work items that match them. You can also use tags in your queries. For example, you can see only the cards with the Web tag on the board by filtering it with the *web* tag, as shown in the following image.
+Work item tags are labels that team members can add to work items. You can filter backlogs and boards by these tags to see only the matching work items. Tags can also be used in queries. For example, you can filter the board to see only the cards with the *web* tag.
 
 **Filter backlogs and boards based on tags** 
 
 ![Screenshot of board, Filter using keyword search.](../boards/backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
-## Implement Kanban or Scrum  
+## Use Kanban or Scrum
 
-Kanban and Scrum are two major Agile methods that Azure Boards supports. You can also use a hybrid approach like Scrumban that combines elements of both methods.
+Azure Boards supports two major Agile methods: Kanban and Scrum. You can also use a hybrid approach like Scrumban that combines elements of both methods.
 
-### Implement Kanban  
+### Use Kanban
 
 Use a Kanban board to visualize your work items on a product or portfolio backlog. The board shows the work items that belong to your team, based on the area and iteration paths you choose.
 
@@ -146,27 +149,19 @@ You can customize your board to match your Kanban practices. For example, you ca
 
 :::image type="content" source="../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot of board, Agile template, update status of work item."::: 
 
-### Implement Scrum  
+### Use Scrum  
 
-Use a sprint backlog and a Taskboard to see the work items that your team has planned for a specific sprint. You can assign work items to a sprint by dragging and dropping them from your requirements backlog. Then, you can view them in a separate **Sprint Backlog**.
+Use a sprint backlog and Taskboard to view the work items your team planned for a specific sprint. Assign work items to a sprint by dragging and dropping them from your requirements backlog. Then, view them in a separate **Sprint Backlog**.
 
 **Example sprint backlog** 
 
 ![Screenshot of Boards>Sprints>Backlog](../boards/work-items/media/view-add/view-sprint-backlogs.png)    
 
-Use the following Scrum practices to plan and track your work:
-
-- Choose a sprint for your requirements
-- Break down your requirements into tasks
-- Set how much work each team member can do in a sprint
-- Adjust your work to fit your sprint capacity
-- Share your sprint plan with others
-- Filter, update, and change the status of your tasks
-- Monitor your sprint progress with a burndown chart
+For more information, see [Plan and track your work](../boards/get-started/plan-track-work.md).
 
 #### Sprint burndown chart 
 
-The Sprint burndown chart shows you how your sprint is going by updating the work status every day, as you can see in the following image.
+The Sprint burndown chart provides a daily update on your sprint's progress, showing the current work status, as illustrated in the following image.
 
 **Example Sprint burndown chart** 
 
@@ -174,7 +169,7 @@ The Sprint burndown chart shows you how your sprint is going by updating the wor
 
 ## Manage dependencies
 
-In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. Once you've linked work items, you can view link relationships using the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension. The following image illustrates link relationships among several work items. 
+In Microsoft Project, you manage task dependencies by linking them. In Azure Boards, link work items using the Predecessor/Successor link type. View link relationships using the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension. The following image illustrates link relationships among several work items.
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
@@ -217,7 +212,7 @@ You can use one or more of the following options to mark a work item as a milest
 - Add a work item tag labeled **Milestone**   
 - Add a custom field labeled **Milestone** and populate it with a pick list of milestones  
 - Link work items using the Predecessor/Successor or Related link type to a milestone work item 
-- Assign a milestone work item to the sprint in which it's targeted for completion. 
+- Assign a milestone work item to the sprint targeted for completion. 
 
 ## Assign requirements to timeboxes 
 
@@ -237,7 +232,7 @@ To review progress and deliverables, you can use the following tools:
 
 ### Features board 
  
-You can also use your **Features** board to track progress and ensure the continuous delivery of value. The following image shows an example of a customized Features board. It has added columns for different stages of feature development, such as Need more info, Spec Complete, In Progress, and Customer Rollout. These columns reflect the natural flow of features from proposal to production.
+You can also use your **Features** board to track progress and ensure the continuous delivery of value. The following image shows an example of a customized Features board with added columns for different stages of feature development, such as Need more info, Spec Complete, In Progress, and Customer Rollout. These columns reflect the natural flow of features from proposal to production.
 
 **Example of Features board with customized columns** 
 
@@ -274,8 +269,8 @@ Azure DevOps provides a robust alert system, where project members can [set aler
  
 ## Related articles 
 
-- [What is Agile?](/devops/plan/what-is-agile)
-- [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
-- [About work items](../boards/work-items/about-work-items.md) 
-- [Create your backlog](../boards/backlogs/create-your-backlog.md)  
-- [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
+- [Learn about Agile](../devops/plan/what-is-agile)
+- [Follow best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
+- [Understand work items](../boards/work-items/about-work-items.md)
+- [Create your backlog](../boards/backlogs/create-your-backlog.md)
+- [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
