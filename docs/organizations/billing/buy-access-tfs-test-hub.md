@@ -8,9 +8,10 @@ ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/13/2022
+ms.date: 03/05/2025
 monikerRange: '< azure-devops'
 ---
+
 # Buy access to Azure Test Plans
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
@@ -35,7 +36,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
 2. Based on your total entitlements, pay for Basic users in your organization.  
 
-   Free users can't access Azure DevOps Server. So, add five Basic users who won't use your server, to ensure everyone else has paid monthly access.
+      Free users can't access Azure DevOps Server. So, add five Basic users who don't use your server to ensure everyone else gets paid monthly access.
 
    Users get invited to your organization, but aren't required to use Azure DevOps. 
 
@@ -60,10 +61,12 @@ For more information about the requirements to access Azure Test Plans, see [Cha
    Test Plans installs automatically in Azure DevOps Server. 
 
 > [!NOTE]
-> - Benefits of paying for Azure DevOps Server users via Basic + Test Plans in Azure DevOps Services:
->    - Users can access both Azure DevOps Server and Azure DevOps Services for the same price.
->    - Pay monthly for users who need temporary access.
->    - Utilize all Azure purchasing options, including credit card, Cloud Solution Provider (CSP) partner, Enterprise Agreement, and more.
+> **Benefits of paying for Azure DevOps Server users via Basic + Test Plans in Azure DevOps Services:**
+> - Users can access both Azure DevOps Server and Azure DevOps Services for the same price.
+> - Pay monthly for users who need temporary access.
+> - Utilize all Azure purchasing options, including credit card, Cloud Solution Provider (CSP) partner, Enterprise Agreement, and more.
+>
+> **Important considerations:**
 > - Azure DevOps Server doesn't detect activities in Azure DevOps Services.
 > - Add these users to Azure DevOps Server and assign them the Basic access level.
 > - If you stop paying for these users, your administrator should remove them from Azure DevOps Server or buy them an Azure DevOps Server CAL.
