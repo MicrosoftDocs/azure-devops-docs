@@ -60,11 +60,13 @@ By integrating Azure Boards with GitHub repositories, you can link GitHub commit
 
 ### Features of Azure Boards and GitHub integration
 
-- **Link work items**: Easily link work items to GitHub commits, pull requests, branches, and issues.
-- **View linked objects**: Quickly view and open linked objects from the board.
-- **Add status badges**: Add status badges of Azure Boards to a GitHub repository README file.
-- **View release summary**: Review work items linked to GitHub commits in the Release summary page.
-- **Sync GitHub issues**: Sync GitHub Issues to Azure Boards Work Items using the [GitHub Action](https://github.com/marketplace/actions/github-issues-to-azure-devops).
+| **Feature** | **Description** |
+|-------------|-----------------|
+| **Link work items** | Easily link work items to GitHub commits, pull requests, branches, and issues. |
+| **View linked objects** | Quickly view and open linked objects from the board. |
+| **Add status badges** | Add status badges of Azure Boards to a GitHub repository README file. |
+| **View release summary** | Review work items linked to GitHub commits in the Release summary page. |
+| **Sync GitHub issues** | Sync GitHub Issues to Azure Boards Work Items using the [GitHub Action](https://github.com/marketplace/actions/github-issues-to-azure-devops). |
 
 ## Integrate Azure Pipelines with GitHub
 
