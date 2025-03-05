@@ -3,7 +3,7 @@ ms.topic: include
 ms.service: azure-devops-repos
 ms.author: nicour
 author: ncouraud
-ms.date: 02/26/2025
+ms.date: 02/27/2025
 ---
 
 | Rule ID | Token Name  | User Alerts | Validity Checking |

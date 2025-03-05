@@ -3,7 +3,7 @@ ms.topic: include
 ms.service: azure-devops-repos
 ms.author: nicour
 author: ncouraud
-ms.date: 02/26/2025
+ms.date: 02/27/2025
 ---
 
 | Rule ID | Token Name | Push Protection | User Alerts | Validity Checking |
@@ -21,8 +21,8 @@ ms.date: 02/26/2025
 | SEC101/503 | AmazonOAuthCredentials | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/701 | AnthropicApiKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/504 | AsanaPat | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/604 | AtlassianApiToken |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/605 | AtlassianJwt |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/604 | AtlassianLegacyApiToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/008 | AwsCredentials | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/505 | AwsTemporaryCredentials | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/157 | AzureApimDirectManagementSas |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
@@ -86,7 +86,7 @@ ms.date: 02/26/2025
 | SEC101/105 | AzureMessagingLegacyCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/202 | AzureMixedRealityIdentifiableCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/136 | AzureMixedRealityLegacyCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/189 | AzureOpenAIKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/189 | AzureOpenAILegacyKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/246 | AzureRateCardSas | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/173 | AzureRelayIdentifiableKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/167 | AzureSearchIdentifiableAdminKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
@@ -99,12 +99,14 @@ ms.date: 02/26/2025
 | SEC101/253 | AzureSignalRIdentifiableKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/254 | AzureSignalRIdentifiableTemporaryKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/117 | AzureSignalRLegacyKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/258 | AzureSpringAppTestEndpointKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/152 | AzureStorageAccountIdentifiableCredentials | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/106 | AzureStorageAccountLegacyCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/251 | AzureStorageIdentifiablePrivateServiceKerberosKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/153 | AzureStorageIdentifiablePrivateServiceKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/120 | AzureWebAppBotCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/142 | AzureWebAppBotKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/257 | AzureWebAppBotIdentifiableKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/142 | AzureWebAppBotLegacyKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/248 | AzureWebPubSubIdentifiableCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/249 | AzureWebPubSubIdentifiableTemporaryCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/144 | AzureWebPubSubLegacyCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
@@ -180,15 +182,16 @@ ms.date: 02/26/2025
 | SEC101/002 | GoogleOAuthCredentials |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/628 | GoogleOAuthRefreshToken |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/030 | GoogleServiceAccountKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/538 | GrafanaApiKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/629 | GrafanaCloudApiToken |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/630 | GrafanaProjectApiKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
-| SEC101/631 | GrafanaProjectServiceAccountToken |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/538 | GrafanaCloudApiKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/629 | GrafanaCloudApiToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/630 | GrafanaProjectApiKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/631 | GrafanaProjectServiceAccountToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/581 | HashiCorpVaultBatchLegacyToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/582 | HashiCorpVaultBatchToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/580 | HashiCorpVaultRootServiceToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/583 | HashiCorpVaultServiceLegacyToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/584 | HashiCorpVaultServiceToken | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
+| SEC101/732 | HereApiKey |  | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/585 | HighnoteRkKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/586 | HighnoteSkKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
 | SEC101/589 | HubSpotApiPersonalAccessKey | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |  |
