@@ -24,7 +24,7 @@ When you run the application you will see the information about predefined templ
 You have 2 methods to authenticate to use the Azure DevOps Demo Generator app:
 
 1. Device Login using AD authentication
-Register Your Application in Azure AD. Check out the [Register and Application](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api#register-an-application) documentation for more details. 
+Register Your Application in Azure AD. Check out the [Register and Application](/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api#register-an-application) documentation for more details. 
 
    * Login with the code displayed
 
@@ -33,9 +33,7 @@ Register Your Application in Azure AD. Check out the [Register and Application](
    > [!div class="mx-imgBorder"]
 > [![Device login using AD Auth](../demo-gen/media/102.png "Device login using AD Auth")](../demo-gen/media/102.png#lightbox)
 
-2. With Personal Access Token (PAT)
-
-   <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows#create-a-pat" target="_blank">Create Personal Access Token</a> with the given scopes below
+1. Sign in with a [Personal Access Token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#creating-pats) with the following scopes:
 
    | Scope                      | Description                                |
    | -------------------------- | ------------------------------------------ |
