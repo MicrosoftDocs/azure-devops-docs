@@ -269,7 +269,6 @@ Azure DevOps provides a robust alert system, where project members can [set aler
  
 ## Related articles 
 
-- [Learn about Agile](../devops/plan/what-is-agile)
 - [Follow best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
 - [Understand work items](../boards/work-items/about-work-items.md)
 - [Create your backlog](../boards/backlogs/create-your-backlog.md)
