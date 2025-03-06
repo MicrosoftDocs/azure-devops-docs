@@ -17,9 +17,6 @@ This release contains a few improvements to the v2 task:
 * Support for diff coverage (PR coverage): V2 can generate diff coverage PR comments for multiple languages within the same pipeline.
 * V2 now supports the Build Quality Check task, which was not supported in V1.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshots of upgrade prompt.](../../media/235-testplans-01.png "Screenshots of upgrade prompt.")
-
 ### Default resume for paused test case
 
 Quickly resume your paused test cases with a single click. We've made "Resume" the default action for paused test cases, allowing you to pick up right where you left off without extra navigation. This update makes it faster and easier to continue your work without interruption. To further protect your progress, we're introducing a confirmation prompt to prevent accidental overwrites of paused test progress. This safeguard ensures your partially saved work stays intact, giving you peace of mind while managing your test runs. Give it a try and let us know via email what you think!
