@@ -94,9 +94,11 @@ Upstream sources eliminate this uncertainty by enforcing a structured search ord
 
 ## Save packages from upstream sources
 
-When you enable upstream sources for your feed and install a package from an upstream source, an automatic copy of that package is saved to your feed. This practice enhances download performance and conserves network bandwidth.
+When an upstream source is enabled on your feed, Azure Artifacts will automatically save a copy of any package installed by a collaborator or higher from upstream.
 
-For instance, you can install packages directly from the upstream source using a command like *npm install express*. Alternatively, packages might be installed as part of a dependency resolution process. In the latter scenario, installing *express* would also save its dependencies, such as *accepts*.
+For instance, you can install packages directly from the upstream source using a command like *npm install express*. Alternatively, packages might be installed as part of a dependency resolution process. In this case, installing *express* would also save its dependencies, such as *accepts*. 
+
+Upstream sources provide an important safeguard for your consumers and infrastructure, protecting them from unexpected outages. If the upstream source experiences downtime, maintenance, or becomes temporarily unavailable, you can still retrieve the necessary packages from your feed and continue your development.
 
 ::: moniker range="azure-devops"
 
@@ -107,13 +109,17 @@ For instance, you can install packages directly from the upstream source using a
 
 ## Override packages from upstream sources
 
-When enabling upstream sources, it's important to note that publishing a package version that already exists in an upstream source will not be possible. For example, if you enable the NuGet.org upstream, you won't be able to publish the *Newtonsoft.Json 10.0.3* package, as that exact version already exists in NuGet.org.
+When you enable upstream sources, keep in mind that you cannot publish a package version that already exists in an upstream source. For example, if you enable the *NuGet.org* upstream, you won't be able to publish the *Newtonsoft.Json 10.0.3* package, as that version is already available on NuGet.org.
 
-If you need to publish a package version that's already present in one of your upstream sources, you must follow these steps:
+If you need to publish a package version that already exists in one of your upstream sources, you must follow these steps:
 
 1. Disable the relevant upstream source.
-2. Publish your package.
-3. Re-enable the upstream source.
+
+1. Publish your package.
+
+1. Re-enable the upstream source.
+
+This process ensures that you can publish the desired version while maintaining the integrity of your upstream sources.
 
 > [!NOTE]
 > Package versions are immutable. Saved packages remain in the feed even if the upstream source is disabled or removed.
@@ -135,11 +141,7 @@ If a feed has a failing upstream source, the metadata for packages of the same p
     :::image type="content" source="media/last-sync-upstreams-details.png" alt-text="A screenshot displaying details of the sync up failure.":::
 
 > [!NOTE]
-> In the case of public registries like NuGet.org, there is a 3-6 hour delay between the time a package is pushed to the public registry and when it becomes available for download. This delay depends on job timing and data propagation. However, when the upstream source is an Azure Artifacts feed, the latency is usually no more than a few minutes.
-
-## Offline upstream sources
-
-Upstream sources serve as a valuable safeguard for your consumers and infrastructure, shielding them from unforeseen outages. When you install a package from an upstream source, a copy of that package is saved to your feed. In case the upstream source experiences downtime, undergoes maintenance, or becomes temporarily unavailable, you can still retrieve the necessary packages from your feed and continue your development.
+> For public registries like NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it becomes available for download. This delay depends on job timing and data propagation. However, when the upstream source is an Azure Artifacts feed, the latency is usually no more than a few minutes.
 
 ## FAQs
 
@@ -149,15 +151,15 @@ A: Packages from upstream sources become available in the downstream feed soon a
 
 ##### Q: What are feed views?
 
-A: Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. For more information, see [What are feed views](./views.md).
+A: Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. See [What are feed views](./views.md) for more details.
 
 ##### Q: I can't find the feed that I want to configure as an upstream source?
 
-A: Make sure that the feed's owner is sharing a view as an upstream source.
+A: Make sure that the feed's owner has shared a view as an upstream source. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-in-a-different-organization-as-an-upstream-source) for more details.
 
 ##### Q: Can a user with **Feed Reader** role download packages from an upstream source?
 
-A: No. A user with **Feed Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Feed and Upstream Reader (Collaborator)**, a **Feed Publisher (Contributor)**, or a **Feed Owner** install those packages from upstream.
+A: No. A user with the **Feed Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or **Feed Owner** installs those packages from upstream.
 
 ##### Q: What happens when a user deletes or unpublishes a package saved from an upstream source?
 
@@ -165,10 +167,12 @@ A: The package becomes unavailable for download from the feed, and the version n
 
 ##### Q: What happens when a user deprecates a package saved from an upstream source?
 
-A: When a user deprecates a package, a warning message is added to the package's metadata, which is displayed whenever the package is viewed or installed from the feed.
+A: When a user deprecates a package, a warning message is added to the package's metadata. This warning is displayed whenever the package is viewed or installed from the feed.
 
-## Related articles
+## Related content
 
-- [Configure upstream sources](../how-to/set-up-upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+
 - [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
+
 - [Feed permissions](../feeds/feed-permissions.md)
