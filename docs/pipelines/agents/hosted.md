@@ -29,6 +29,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
+| Windows Server 2025 with Visual Studio 2022 preview | *windows-2025* | `windows-2022` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
@@ -45,6 +46,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The windows-2025 image is available in preview
 * The macOS-12 Monterey image has been retired
 * The macOS-15 Sequoia image is available in preview
 * The Ubuntu-24.04 image is available
