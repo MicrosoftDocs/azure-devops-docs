@@ -128,7 +128,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 	> [!div class="mx-imgBorder"]  
 	> ![Create a Project dashboard.](media/dashboards/create-dashboard-project-dialog.png)  
 
-1.	Select **Save**. 
+1.	Select **Create**. 
 
 3.  The widget catalog opens. You can add one or more widgets to the dashboard. You can then configure and resize each widget as needed. 
 
