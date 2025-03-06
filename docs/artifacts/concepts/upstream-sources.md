@@ -1,5 +1,5 @@
 ---
-title: Upstream sources overview
+title: What are upstream sources?
 description: Understand Azure Artifacts upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.service: azure-devops-artifacts
@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Azure Artifacts Upstream Sources
+# What are upstream sources?
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -35,7 +35,7 @@ To take full advantage of the benefits of upstream sources as a package consumer
 
 #### 1. Use a single feed in your config file
 
-In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file (such as nuget.config or .npmrc) references only one feed with upstream sources enabled. 
+In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file (such as nuget.config or npmrc) references only one feed with upstream sources enabled. 
 
 - **Examples**:
 
@@ -136,7 +136,7 @@ If a feed has a failing upstream source, the metadata for packages of the same p
 
     :::image type="content" source="media/last-sync-upstreams.png" alt-text="A screenshot showing the upstream sources last sync up status.":::
 
-1. If any failures occur, a warning message will be displayed. Clicking on the *Failed* status will provide additional details, including the cause of the failure and instructions on how to resolve it.
+1. If any failures occur, a warning message will be displayed. Clicking on the *Failed* status provides additional details, including the cause of the failure and instructions on how to resolve it.
 
     :::image type="content" source="media/last-sync-upstreams-details.png" alt-text="A screenshot displaying details of the sync up failure.":::
 

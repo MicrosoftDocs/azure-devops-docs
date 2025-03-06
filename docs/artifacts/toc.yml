@@ -195,7 +195,7 @@
       displayName: cargo, crate
 - name: Upstream sources
   items:
-  - name: Upstream sources overview
+  - name: What are upstream sources?
     href: concepts/upstream-sources.md
     displayName: upstream, sources, upstreams
   - name: Set up upstream sources
