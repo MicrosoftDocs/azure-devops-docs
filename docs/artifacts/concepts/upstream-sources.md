@@ -3,8 +3,8 @@ title: Upstream sources overview
 description: Understand Azure Artifacts upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
-ms.date: 10/31/2023
+ms.topic: overview
+ms.date: 03/05/2025
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -13,77 +13,75 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using upstream sources, you can conveniently store packages from various sources in a single feed. This includes packages you publish and those you consume from external feeds and public registries like NuGet.org, npmjs.com, Maven Central, and PyPI. Once you've enabled upstream sources, any package installed from these upstream sources, a copy will be automatically saved to your feed.
+Azure Artifacts upstream sources enable developers to conveniently store packages from various sources in a single feed, including those you publish and those installed from external feeds or public registries like NuGet.org, npmjs.com. Once upstream sources are enabled, any package installed from an upstream source is automatically saved to your feed.
 
 [!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
-## Advantages
+## Why use upstream sources?
 
-Enabling upstream sources offers several advantages for managing your product's dependencies within a single feed:
+Enabling upstream sources provides several benefits for managing your product’s dependencies within a single feed:
 
-- **Simplicity:** When you publish all your packages to a single feed, it simplifies your configuration files like NuGet.config, npmrc, or settings.xml. With just one feed in your config file, you reduce the chances of errors and bugs, streamlining your setup.
+- **Simplicity**: Storing all your packages in a single feed simplifies your configuration files like NuGet.config, npmrc, or settings.xml. With just one feed in your config file, you reduce the chances of errors and streamline your setup.
 
-- **Determinism:** your feed resolves package requests in order, resulting in more consistency when rebuilding your code.
+- **Consistent Builds**: Your feed resolves package requests in a defined order, ensuring more predictable and reliable builds.
 
-- **Provenance:** Your feed retains information about the packages it saved from upstream sources. This allows you to verify that you're using the original package and not a copy or a potentially malicious version.
+- **Package Integrity**: Your feed retains metadata about packages saved from upstream sources, allowing you to verify their authenticity and ensure you're using the original versions, not copies or potentially malicious versions.
 
-- **Peace of mind:** Every package installed from upstream sources is automatically saved to your feed. This means that even if the upstream source is disabled, removed, or undergoing maintenance, you can continue developing and building with confidence because you have a copy of that package in your feed.
+- **Reliability**: Packages installed from upstream sources are automatically saved to your feed. This ensures continued access even if the upstream source becomes unavailable due to maintenance or other issues so you can continue developing and building with confidence.
 
-## Best practices - package consumers
+## Best practices for package consumers
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-#### Use a single feed in your config file:
+#### 1. Use a single feed in your config file
 
-In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled. See the example below:
+In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file (such as nuget.config or .npmrc) references only one feed with upstream sources enabled. 
 
-```nuget.config
-<packageSources>
-  <clear />
-  <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
-</packageSources>
-```
+- **Examples**:
 
-> [!NOTE]
-> NuGet compiles several [configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the complete set of options to apply. By using `<clear />`, you can effectively ignore all other package sources specified in higher-level configuration files.
+    ```.npmrc
+    registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
+    always-auth=true
+    ```
 
-```.npmrc
-registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
-always-auth=true
-```
+    ```nuget.config
+    <packageSources>
+      <clear />
+      <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
+    </packageSources>
+    ```
 
-#### Order your upstream sources intentionally:
+    > [!NOTE]
+    > NuGet compiles several [configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the complete set of options to apply. Using `<clear />` ensures that all other package sources specified in higher-level configuration files are ignored.
 
-If you're exclusively using public registries like nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed follow the sequence detailed in the [search order](#search-order) section.
+#### 2. Order your upstream sources intentionally
 
-However, when you're managing multiple sources, which might include a combination of feeds and public registries, each upstream source is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
+If you’re only using public registries like NuGet.org or npmjs.com, the order of your upstream sources doesn’t matter. Requests to the feed follow the sequence outlined in the [search order](#search-order) section.
 
-In some unique scenarios, certain organizations choose to customize open-source software (OSS) packages. This could involve addressing security concerns, enhancing functionality, or meeting specific requirements that necessitate internally rebuilding the package rather than directly obtaining it from a public repository. 
-If your organization follows this practice, it's advisable to position the upstream source containing these modified OSS packages ahead of the public package managers. This arrangement ensures the use of your organization's customized versions.
+However, when you're managing multiple sources, such as a combination of feeds and public registries, each upstream source is searched in the order defined in the feed’s configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
 
-#### Use the suggested default view:
+In some unique scenarios, some organizations modify open-source software (OSS) packages to address security concerns, enhance functionality, or meet specific internal  requirements that require rebuilding the package internally rather than obtaining it directly from a public repository. 
+If your organization follows this practice, place the upstream source containing these customized OSS packages before other public registries. This ensures your customized versions are used instead of public ones.
 
-When you add a remote feed as an upstream source, you must select its feed's view. This enables the upstream sources to construct a set of available packages. See [How upstreams construct the set of available packages](package-graph.md#how-upstreams-construct-the-set-of-available-packages) for more details.
+## Best practices for feed owners and package publishers
 
-## Best practices: feed owners/package publishers
+To ensure your feed can be easily configured as an upstream source, follow these best practices:
 
-To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
+#### 1. Use the default view
 
-#### Use the default view:
+The default view for all newly created feeds is `@Local`, which contains all the packages published to your feed as well as packages saved from upstream sources.
 
-The default view for all newly created feeds is the `@Local` view, which contains all the packages published to your feed or saved from upstream sources.
+If you want to use other views such as a view for newly released package versions, you can promote your packages to the `@Release` view and then make that view available to your target consumers. See [Feed views](views.md) for more details.
 
-If you want to use other views such as a view for newly released package versions, you can promote your package to the `@Release` view and then make that view available for your package consumers.
+#### 2. Construct a package graph
 
-#### Construct a package graph:
-
-To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
+To construct a package graph, simply connect to the feed's default view and install the package you want to share. Once a package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired version. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source. See [How upstreams construct the set of available packages](package-graph.md#how-upstreams-construct-the-set-of-available-packages) for more details.
 
 ## Search order
 
-For public package managers that support multiple feeds like NuGet and Maven, the order in which feeds are queried can sometimes be unclear or nondeterministic. For example, in NuGet, parallel queries are sent to all the feeds in the configuration file, and the responses are processed in a first-in, first-out (FIFO) manner.
+For public package managers that support multiple feeds, such as NuGet and Maven, the order in which feeds are queried can sometimes be unclear or nondeterministic. For example, NuGet sends parallel queries to all the feeds in the configuration file and processes responses in a first-in, first-out (FIFO) manner, which can lead to inconsistent results.
 
-Upstream sources address this non-deterministic behavior by searching the feed and its upstream sources in the following order:
+Upstream sources eliminate this uncertainty by enforcing a structured search order, by searching the feed and its upstream sources in the following order:
 
 1. Packages that have been published directly to the feed.
 
@@ -91,10 +89,8 @@ Upstream sources address this non-deterministic behavior by searching the feed a
 
 1. Packages available from upstream sources. Each upstream source is searched in the order it's listed in the feed's configuration.
 
-To take full advantage of the fast lookup feature, we recommend that you include only one feed in your configuration file.
-
 > [!NOTE]
-> Searching for packages in upstream sources using the NuGet Package Explorer is not supported.
+> Azure Artifacts does not support searching for packages in upstream sources using the NuGet Package Explorer in Visual Studio.
 
 ## Save packages from upstream sources
 
