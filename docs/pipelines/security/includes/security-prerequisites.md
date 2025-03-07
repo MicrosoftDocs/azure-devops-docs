@@ -7,6 +7,8 @@ author: juliakm
 ms.date: 03/04/2025
 ---
 
+This article is part of a series that helps you implement security measures for Azure Pipelines. For more information, see [Secure Azure Pipelines](../overview.md). 
+
 ## Prerequisites
 
 | **Category** | **Requirements**   |
