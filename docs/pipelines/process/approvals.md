@@ -278,9 +278,20 @@ stages:
 - stage: A
   lockBehavior: sequential
   jobs:
-  - job: Job
-    steps:
-    - script: Hey!
+  - deployment: DeployWeb
+    displayName: deploy Web App
+    pool:
+      vmImage: 'Ubuntu-latest'
+    # environment on which Exclusive lock is enabled
+    environment: 
+      name: 'smarthotel-dev'
+      resourceName: myVM
+      resourceType: virtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: Hey!
 ```
 Set on the pipeline:
 
@@ -288,10 +299,22 @@ Set on the pipeline:
 lockBehavior: runLatest
 stages:
 - stage: A
-  jobs:
-  - job: Job
-    steps:
-    - script: Hey!
+ jobs:
+ - deployment: DeployWeb
+    displayName: deploy Web App
+    pool:
+      vmImage: 'Ubuntu-latest'
+    # environment on which Exclusive lock is enabled
+    environment: 
+      name: 'smarthotel-dev'
+      resourceName: myVM
+      resourceType: virtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: Hey!
+    
 ```
 
 If you don't specify a `lockBehavior` and a lock is set on a resource, the default value of `runLatest` is used. 
