@@ -52,7 +52,7 @@ For added security and to reduce the risk of accidental misconfigurations, use Y
     - **Protected branch check**: If you have manual code review processes for specific branches, you can extend this protection to pipelines. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches.
     - **Manual approval check**: Use a manual approval check to block pipeline requests from using a protected resource until manually approved by specified users or groups.
     - **Business hours check**: Use this check to ensure that a pipeline deployment starts within a specified day and time window.
-- **Disable creating Classic pipelines**: Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API. For more information, see [Disable creation of Classic pipelines]((approach.md#disable-creation-of-classic-pipelines)). 
+- **Disable creating Classic pipelines**: Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API. For more information, see [Disable creation of Classic pipelines](approach.md#disable-creation-of-classic-pipelines). 
 
 ## Secure agents
 
