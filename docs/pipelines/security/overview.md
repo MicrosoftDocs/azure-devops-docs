@@ -58,7 +58,7 @@ For added security and to reduce the risk of accidental misconfigurations, use Y
 
 To secure containers, mark volumes as read-only, set resource limits, use trusted images, scan for vulnerabilities, and enforce security policies.
 
-- **Use Microsoft-hosted instead of self-hosted agents**: Microsoft-hosted agents offer isolation and a clean virtual machine for each run of a pipeline. Use Microsoft-hosted agents instead of self-hosted agents. For more information, see [Microsoft-hosted agents](../agents/hosted.md).
+- **Use Microsoft-hosted instead of self-hosted agents**: Microsoft-hosted agents offer isolation and a clean virtual machine for each run of a pipeline. Use Microsoft-hosted agents instead of self-hosted agents. For more information, see [Microsoft-hosted agents](../agents/hosted.md). 
 - **Separate agents for each project**: To mitigate lateral movement and prevent cross-contamination between projects, maintain separate agent pools, each dedicated to a specific project. 
 - **Use low-privileged accounts to run agents**: To enhance system security, use the lowest-privileged account for running self-hosted agents. For example, consider using your machine account or a managed service identity. Don't run an agent under an identity with direct access to Azure DevOps resources.
 - **Isolate production artifacts and sensitive agent pools**: Use different agent pools to prevent security issues.  
