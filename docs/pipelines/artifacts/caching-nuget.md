@@ -65,7 +65,7 @@ variables:
 
 ## Restore cache
 
-This task will only run if the `CACHE_RESTORED` variable is false.
+The following task will only run if the `CACHE_RESTORED` variable is **false**. This means that if a cache hit occurs (i.e., the packages are already available in the cache), the restore step is skipped to save time and resources. If no cache is found, the restore command runs to download the necessary dependencies.
 
 ```YAML
 - task: NuGetCommand@2
@@ -76,18 +76,24 @@ This task will only run if the `CACHE_RESTORED` variable is false.
 ```
 
 > [!NOTE]
-> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+> If you're using Ubuntu 24.04 or later, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
 
-If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command is executed, generating your project.assets.json file. The restore task won't download packages that are already present in your corresponding folder.
+#### Handle "project.assets.json not found" errors
+
+If you encounter the error *"project.assets.json not found"* during your build task, remove the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. This ensures the restore command runs and generates the *project.assets.json* file. The restore task will not re-download packages already present in your corresponding folder.
 
 > [!NOTE]
-> A pipeline can contain one or more caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
+> A pipeline can include multiple caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
 
 ## Performance comparison
 
-Pipeline caching is a great way to speed up your pipeline execution. Here's a side-by-side performance comparison for two different pipelines. Before adding the caching task (right), the restore task took approximately 41 seconds. We added the caching task to a second pipeline (left) and configured the restore task to run when a cache miss is encountered. The restore task in this case took 8 seconds to complete.
+Pipeline caching significantly reduces the time required to restore dependencies, leading to faster builds. The following comparison illustrates the impact of caching on pipeline execution time for two different pipelines:
 
-:::image type="content" source="media/caching-performance.png" alt-text="A screenshot showing the pipeline performance with and without caching.":::
+- **Without caching (right)**: The restore task took approximately 41 seconds. 
+
+- **With caching (left)**: We added the caching task to a second pipeline and configured the restore task to run only when a cache miss occurs. The restore task in this case completed in just 8 seconds.
+
+:::image type="content" source="media/caching-performance.png" alt-text="A screenshot displaying the pipeline performance with and without caching.":::
 
 Below is the full YAML pipeline for reference:
 
@@ -130,10 +136,12 @@ steps:
     configuration: '$(buildConfiguration)'
 ```
 
-This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your * Csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
+This approach also applies to .NET Core projects, provided your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your * Csproj* file, or by running the following command: `dotnet restore --use-lock-file`.
 
-## Related articles
+## Related content
 
 - [Pipeline caching](../release/caching.md)
-- [Deploy from multiple branches](../release/deploy-multiple-branches.md)
-- [Deploy pull request Artifacts](../release/deploy-pull-request-builds.md)
+
+- [Deploy pull request Artifacts (Classic)](../release/deploy-pull-request-builds.md)
+
+- [Deploy to different stages (Classic)](../release/deploy-multiple-branches.md)
