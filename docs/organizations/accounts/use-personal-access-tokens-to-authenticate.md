@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/08/2025
+ms.date: 03/10/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -106,9 +106,31 @@ A: No. Azure Artifacts doesn't support passing a PAT as an ApiKey. When using a 
 ### Q: Why did my PAT stop working?
 
 A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Signing in once every 30 days is sufficient for many users, but you might need to sign in more frequently depending on your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization and complete the full authentication prompt. If your PAT still doesn't work, check if it expired.
-::: moniker range="< azure-devops"
-Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server. For more information, see [Using IIS Basic Authentication with Azure DevOps on-premises](../../integrate/get-started/authentication/iis-basic-auth.md).
-::: moniker-end
+
+Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server.
+> [!CAUTION]
+> We recommend that you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned **off** always. Only if necessary should you enable IIS Basic Authentication. When IIS Basic Authentication is enabled on your windows machine, it prevents you from using personal access tokens (PATs) as an authentication mechanism.
+
+For example, if you use a PAT to allow a third-party app to retrieve bug information, and then send an email with the info to the bug assignee (with IIS Basic Authentication enabled), the app fails authentication. The app can't retrieve bug info.
+
+> [!WARNING]
+> If you use Git with IIS Basic Authentication, Git breaks because it requires PATs for user authentication. Although we don't recommend you use IIS Basic Authentication, by adding an extra header to Git requests, you can use Git with IIS Basic Authentication.
+>
+> The extra header must be used for all Azure DevOps Server installations, as Windows Auth also prevents using PATs.
+> The extra header must include a base 64 encoding of "user:PAT." See the following format and example.
+>
+>**Format:**
+>
+>   ```
+>   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:password"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
+>   ```
+>
+>**Example:**
+>
+>   ```
+>   git -c http.extraheader='Authorization: Basic a2FzYW50aGE6bzN3cDVndmw2YXRkajJkam83Znd4N2k3NDdhbGxjNXp4bnc3b3o0dGQycmd3d2M1eTdjYQ==' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
+>   ```
+
 ### Q: How do I create access keys that aren't tied to a specific person for deployment purposes?
 
 A: In Azure DevOps, you can create access keys that aren't tied to a specific person by using Service Principals or Managed Identities. For more information, see [Manage service connections](../../pipelines/library/service-endpoints.md) and [Use Azure Key Vault secrets in Azure Pipelines](../../pipelines/release/azure-key-vault.md).
