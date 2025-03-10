@@ -5,7 +5,7 @@ ms.date: 1/16/2025
 ms.topic: include
 ---
 
-### Azure Boards Integration with GitHub Enterprise Cloud with Data Residency
+### Azure Boards Integration with GitHub Enterprise Cloud with Data Residency (Preview)
 
 > [!NOTE]
 > This feature is currently in private preview. Please [email us](mailto:dahellem@microsoft.com) if you are interested in trying the Boards integration with GitHub Enterprise Cloud with Data Residency.
