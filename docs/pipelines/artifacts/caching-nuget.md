@@ -1,28 +1,35 @@
 ---
-title: Cache NuGet packages to reduce build time
-description: How to cache NuGet packages in Azure Pipelines
-ms.topic: conceptual
+title: Cache NuGet packages
+description: Learn how to cache NuGet packages in Azure Pipelines
+ms.topic: how-to
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/06/2023
-monikerRange: 'azure-devops'
+ms.date: 03/10/2025
+monikerRange: ">= azure-devops-2020"
 "recommendations": "true"
 ---
 
 # Cache NuGet packages
 
-**Azure DevOps Services**
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-With pipeline caching, you can reduce your build time by caching your dependencies to be reused in later runs. In this article, you learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
+Pipeline caching helps reduce build time by storing dependencies for reuse in future runs. In this article, you learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
 
 > [!NOTE]
 > Pipeline caching is not supported in Classic release pipelines.
 
+## Prerequisites
+
+| **Product**       | **Requirements** |
+|-------------------|------------------|
+| **Azure DevOps**  | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).  |
+
+
 ## Lock dependencies
 
-To set up the cache task, you must first lock your project's dependencies and create a **package.lock.json** file. The hash of the lock file's content will be used to generate a unique cache key.
+Before setting up the cache task, you need to lock your project's dependencies and generate a **package.lock.json** file. The unique cache key is derived from the hash of the content of this lock file to ensure consistency across builds.
 
-To lock your project's dependencies, set the **RestorePackagesWithLockFile** property in your *csproj* file to **true**. NuGet restore generates a lock file **packages.lock.json** at the root directory of your project. Make sure you check your **packages.lock.json** file into your source code.
+To lock your project's dependencies, add the **RestorePackagesWithLockFile** property to your *csproj* file and set it to **true**. When you run `nuget restore`, it will generate a **packages.lock.json** file in your project's root directory. Make sure you check your **packages.lock.json** file into your source code.
 
 ```XML
 <PropertyGroup>
@@ -32,18 +39,18 @@ To lock your project's dependencies, set the **RestorePackagesWithLockFile** pro
 
 ## Cache NuGet packages
 
-We need to create a pipeline variable to point to the location of our packages on the agent running the pipeline.
+To cache NuGet packages, define a pipeline variable that points to the location of the packages on the agent running the pipeline.
 
-In this example, the content of the **packages.lock.json** is hashed to produce a dynamic cache key. This ensures that every time the file is modified, a new cache key is generated.
+In the example below, the content of the **packages.lock.json** is hashed to generate a dynamic cache key. This ensures that whenever the file changes, a new cache key is created.
 
-:::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot showing how the cache key is generated in Azure Pipelines.":::
+:::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot displaying how the cache key is generated in Azure Pipelines.":::
 
 ```YAML
 variables:
   NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
 
 - task: Cache@2
-  displayName: Cache
+  displayName: Cache v2 task 
   inputs:
     key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
     restoreKeys: |
