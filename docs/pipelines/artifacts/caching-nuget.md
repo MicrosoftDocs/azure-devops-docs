@@ -43,7 +43,7 @@ To cache NuGet packages, define a pipeline variable that points to the location 
 
 In the example below, the content of the **packages.lock.json** is hashed to generate a dynamic cache key. This ensures that whenever the file changes, a new cache key is created.
 
-:::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot displaying how the cache key is generated in Azure Pipelines.":::
+:::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot displaying how the cache key is generated in Azure Pipelines." lightbox="media/cache-key-hash.png":::
 
 ```YAML
 variables:
