@@ -57,8 +57,6 @@
     href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json    
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: IIS Basic Authentication and PATs
-    href: ./integrate/get-started/authentication/iis-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Develop extensions
   items:
   - name: Get started
