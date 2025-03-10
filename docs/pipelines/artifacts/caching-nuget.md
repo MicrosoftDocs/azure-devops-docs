@@ -29,7 +29,7 @@ Pipeline caching helps reduce build time by storing dependencies for reuse in fu
 
 Before setting up the cache task, you need to lock your project's dependencies and generate a **package.lock.json** file. The unique cache key is derived from the hash of the content of this lock file to ensure consistency across builds.
 
-To lock your project's dependencies, add the **RestorePackagesWithLockFile** property to your *csproj* file and set it to **true**. When you run `nuget restore`, it will generate a **packages.lock.json** file in your project's root directory. Make sure you check your **packages.lock.json** file into your source code.
+To lock your project's dependencies, add the **RestorePackagesWithLockFile** property to your *csproj* file and set it to **true**. When you run `nuget restore`, it generates a **packages.lock.json** file in your project's root directory. Make sure you check your **packages.lock.json** file into your source code.
 
 ```XML
 <PropertyGroup>
@@ -65,7 +65,7 @@ variables:
 
 ## Restore cache
 
-The following task will only run if the `CACHE_RESTORED` variable is **false**. This means that if a cache hit occurs (i.e., the packages are already available in the cache), the restore step is skipped to save time and resources. If no cache is found, the restore command runs to download the necessary dependencies.
+The following task will only run if the `CACHE_RESTORED` variable is **false**. This means that if a cache hit occurs (the packages are already available in the cache), the restore step is skipped to save time and resources. If no cache is found, the restore command runs to download the necessary dependencies.
 
 ```YAML
 - task: NuGetCommand@2
@@ -80,7 +80,7 @@ The following task will only run if the `CACHE_RESTORED` variable is **false**. 
 
 #### Handle "project.assets.json not found" errors
 
-If you encounter the error *"project.assets.json not found"* during your build task, remove the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. This ensures the restore command runs and generates the *project.assets.json* file. The restore task will not re-download packages already present in your corresponding folder.
+If you encounter the error *"project.assets.json not found"* during your build task, remove the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. This ensures the restore command runs and generates the *project.assets.json* file. The restore task won't redownload packages that are already present in the corresponding folder.
 
 > [!NOTE]
 > A pipeline can include multiple caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
