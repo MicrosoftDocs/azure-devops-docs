@@ -17,3 +17,54 @@ Additionally, when a filter is applied, it is added as URL query parameter. This
 ### pnpm 9 support comes to Advanced Security dependency scanning
 
 Ahead of the end-of-life date for pnpm v8 at the end of April, the next update for dependency scanning will add support for scanning with pnpm v9. This addresses the [Developer Community](https://developercommunity.visualstudio.com/t/AdvancedSecurity-Dependency-Scanning1-T/10743452) request for pnpm v9 support.
+
+### Multi-repository publishing scenarios supported for Advanced Security
+
+When one repository houses the pipeline definition and another repository contains the source code to be scanned by Advanced Security, the results were processed and submitted to the incorrect repository. Rather than publishing results to the repository containing the source code, alerts would show up in the repository where the pipeline was defined. 
+
+Now, both dependency scanning and code scanning will properly route alerts to the repository containing the source code scanned for analysis for multi-repository scenarios. 
+
+Set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. Alternatively, if you do not explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+
+> YAML code snippet
+
+```yaml
+    trigger:
+  - main
+
+resources:
+  repositories:
+    - repository: BicepGoat
+      type: git
+      name: BicepGoat
+      ref: refs/heads/main
+      trigger:
+        - main
+
+jobs:
+  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
+  - job: "AdvancedSecurityCodeScanningExplicit"
+    displayName: "🛡 Infrastructure-as-Code Scanning (Explicit)"
+    variables:
+      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
+    steps:
+      - checkout: BicepGoat
+      - task: TemplateAnalyzerSarif@1
+        displayName: Scan with Template Analyzer
+      - task: AdvancedSecurity-Publish@1
+        displayName: Publish to IaC Scanning Results to Advanced Security
+
+
+  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
+  # infer repository to submit SARIF to from the working directory on the build agent.
+  - job: "AdvancedSecurityCodeScanningInfer"
+    displayName: "🛡 Infrastructure-as-Code Scanning (Infer)"
+    variables:
+      advancedsecurity.publish.repository.infer: true
+    steps:
+      - checkout: BicepGoat
+      - task: TemplateAnalyzerSarif@1
+        displayName: Scan with Template Analyzer
+      - task: AdvancedSecurity-Publish@1
+        displayName: Publish to IaC Scanning Results to Advanced Security
+```

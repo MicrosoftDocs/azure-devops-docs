@@ -5,6 +5,15 @@ ms.date: 3/12/2025
 ms.topic: include
 ---
 
+### ubuntu-latest now runs Ubuntu 24.04
+
+
+### Segmented Identities to acquire OIDC token
+
+### Upgrade Gradle task
+
+### CDN URL from Edgio endpoint to a custom URL
+
 ### StringList parameter type
 
 One of the top requested YAML pipelines features is to [define parameters that contain a list of items](https://developercommunity.visualstudio.com/t/parameters-that-support-multiselect/1224839).
@@ -34,6 +43,8 @@ stages:
 ```
 
 When queuing this pipeline, you'll now have the option of choosing multiple regions to deploy to, as shown in the screenshot below.
+
+###  Ability to disable release pipelines
 
 ### Identity of user who requested a stage to run
 
