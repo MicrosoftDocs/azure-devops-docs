@@ -579,7 +579,7 @@
       "redirect_url": "/azure/devops/organizations/security/security-overview"
     },
     {
-      "source_path": "docs/itegrate/get-started/authentication/iis-basic-auth.md",
+      "source_path": "docs/integrate/get-started/authentication/iis-basic-auth.md",
       "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#why-did-my-pat-stop-working"
     }
   ]

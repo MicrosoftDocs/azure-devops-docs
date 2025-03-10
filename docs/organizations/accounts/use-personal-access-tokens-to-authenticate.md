@@ -120,7 +120,7 @@ For example, if you use a PAT to allow a third-party app to retrieve bug informa
 > The extra header must include a base 64 encoding of "user:PAT." See the following format and example.
 >
 >**Format:**
-
+>
 >   ```
 >   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:password"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
 >   ```
