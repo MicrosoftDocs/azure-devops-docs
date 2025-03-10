@@ -129,6 +129,8 @@
       href: scripts/logging-commands.md
     - name: File matching patterns
       href: tasks/file-matching-patterns.md
+    - name: Cache NuGet packages
+      href: artifacts/caching-nuget.md
   - name: Templates, parameters, & expressions
     items:
     - name: Templates
