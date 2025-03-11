@@ -6,12 +6,12 @@ brand: azure
 
 metadata:
   title: Azure DevOps documentation
-  description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
+  description:  Collaborate on software development with source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   ms.topic: hub-page 
   ms.subservice: azure-devops-projects
   ms.author: chcomley
   author: chcomley
-  ms.date: 09/17/2022
+  ms.date: 03/11/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -47,7 +47,7 @@ highlightedContent:
       itemType: how-to-guide
       url: ./organizations/projects/connect-to-projects.md
     # Card
-    - title: Authenticate with Azure DevOps
+    - title: Secure access to Azure DevOps
       itemType: how-to-guide
       url: ./integrate/get-started/authentication/authentication-guidance.md
 # productDirectory section (optional)
