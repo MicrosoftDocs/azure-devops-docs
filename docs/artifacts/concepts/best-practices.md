@@ -1,62 +1,72 @@
 ---
-title: Best practices when working with Azure Artifacts
-description: Best practices when publishing and consuming packages with Azure Artifacts
+title: Azure Artifacts best practices
+description: Learn best practices for publishing, consuming, and managing packages with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 04/07/2023
+ms.date: 03/11/2025
 ms.custom: engagement-fy23
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Azure Artifacts: best practices
+# Azure Artifacts best practices
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Managing software packages can be a complex and time-consuming process, particularly when working with large-scale projects. Fortunately, Azure Artifacts provides a robust platform for package management that can help streamline the process and improve collaboration among development teams. However, to get the most out of Azure Artifacts, it's essential to follow best practices that ensure the integrity and quality of your packages. In this article, we'll cover some of the most important best practices for producing, consuming, and managing packages in Azure Artifacts. Whether you're a seasoned developer or just starting with Azure Artifacts, these tips will help you optimize your workflow and ensure the success of your projects.
+Managing software packages can be a complex and time-consuming process, particularly when working with large-scale projects. Azure Artifacts provides a reliable package management solution that streamlines workflows and enhances team collaboration. 
 
-## Create and publish packages
+To make the most of it, following best practices is essential to maintaining package integrity and quality. This article highlights key guidelines for creating, publishing, and consuming packages in Azure Artifacts. Whether you're new to Azure Artifacts or an experienced user, these best practices will help you optimize your workflow and ensure project success.
 
-Creating and publishing packages is a critical step in any package management workflow. In this section, we'll cover best practices for creating and publishing packages in Azure Artifacts.
+## Prerequisites
 
-- **Each repository should only reference one feed**:
+|    **Product**     |   **Requirements**   |
+|--------------------|----------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed). |
 
-    A feed is a fundamental organizational structure for hosting packages. While you can have multiple feeds for a project, it's best to limit a project to referencing just one feed. If you want to use packages from multiple feeds, it's recommended to use [upstream sources](upstream-sources.md). This enables you to access packages from multiple feeds and public registries.
+## Best practices for package publishers
 
-- **Automatically publish newly created packages to your feed**:
+Following best practices helps ensure consistency, security, and a smooth user experience. Below are key recommendations when publishing packages with Azure Artifacts:
 
-    This will update the `@local` view of your feed with the new packages. See [Feed views](views.md) to learn more about feed views and upstream sources.
+- **Use a single feed per repository**:
+
+    A feed is an organizational construct for hosting various types of packages. While you can have multiple feeds for a project, it's best to limit a project to referencing just one feed to minimize potential conflicts. If you want to access packages from multiple feeds or public registries, it's recommended to use upstream sources. See [What are upstream sources?](upstream-sources.md) for more details.
+
+- **Automatically publish newly created packages**:
+
+    Automating the publication of new packages ensures that your latest versions are always available to your team or target consumers without manual intervention. When you publish a package, it is added to the `@local` view of your feed. See [What are feed views?](views.md) for more details.
 
 - **Enable retention policies to automatically clean up old package versions**:
 
-    By deleting older package versions, you can optimize client performance and free up storage space. When setting up your [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) you have the flexibility to select the number of versions of a package to keep. This allows you to easily manage package versions and improve your package management workflow.
+    Over time, old package versions can accumulate, consuming unnecessary storage and slowing down queries. Enabling retention policies allows you to automatically remove older package versions while keeping a specified number of recent versions. This not only optimizes client performance but also helps manage storage costs efficiently. See [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
 
-- **Promote your package to the correct view**:
+- **Use feed views to release packages**:
 
-    To make a package available to early adopters, you can select it from your feed and promote it to the @prerelease view. Once you've deemed the package to be of sufficient quality for a full release, you can promote it to the @release view. By promoting package versions to a view, you can prevent them from being deleted by retention policies. To learn more about feed views, check out the [Feed views](views.md) article.
+    Feed views can be used to share a subset of package versions with your consumers. For instance, to make a package available to early adopters, you can select it from your feed and promote it to the `@Prerelease` view. Once you've deemed the package to be of sufficient quality for a full release, you can promote it to the `@Release` view. Packages promoted to a view are exempt from retention policies and will not be subject to deletion. See [What are feed views?](views.md) for more details.
 
-- **If external teams are consuming your packages, ensure that `@release` and `@prerelease` views are visible across the organizations**:
+- **Ensure proper access permissions for your views**:
 
-    If these views aren't visible, teams won't have access to your packages.
+    If your packages are consumed by external teams or across organizations, make sure that the `@Release` and `@Prerelease` views have the appropriate visibility settings. See [Feed views settings](../feeds/feed-permissions.md#feed-views-settings) for more details.
 
-## Consume packages
+## Best practices for package consumers
 
 In this section, we'll cover best practices for consuming packages with Azure Artifacts, including configuring package sources, managing package versions, and ensuring secure and efficient package consumption.
 
-- **Configure upstream sources for your feed**:
+- **Use upstream sources for external packages**:
 
-    Adding upstream sources to your feed is the recommended approach for consuming packages from public registries like NuGet.org or npmjs.com. See [Understand upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md) for more details.
+    If you want to use packages from external feeds or public registries such as *NuGet.org* or *npmjs.com*, it's recommended to use upstream sources. See [What are upstream sources?](upstream-sources.md) and [Set up upstream sources](../how-to/set-up-upstream-sources.md) for more details.
 
-- **Sources not in your organization but in the same Microsoft Entra tenant should be added using the feed locator**:
+- **Ensure the order of sources reflects your desired package resolution strategy**:
 
-    The syntax for the feed locator is as follows: `azure-feed://<organization>/<projectName>/<feed>@<view>`
+    The feed checks upstream sources sequentially and will return the package from the first source that contains it. Be mindful of the order to ensure your feed resolves packages from the correct source. See [Order your upstream sources intentionally](upstream-sources.md#2-order-your-upstream-sources-intentionally) and [Search order](upstream-sources.md#search-order) for more details.
 
-- **Ensure that the order of the sources matches your desired package resolution order**:
+- **Add external sources using the feed locator**:
 
-    The feed will sequentially check each upstream source, and return the package from the first source that has it.
+    If sources are in the same Microsoft Entra tenant but not part of your organization, you should use the feed locator. The syntax for the feed locator is as follows: `azure-feed://<organization>/<projectName>/<feed>@<view>`.
 
-## Related articles
+## Related content
 
-- [Package sizes and count limits](../reference/limits.md)
-- [Artifacts storage consumption](../artifact-storage.md)
-- [Upstream sources overview](upstream-sources.md)
+- [Limits on package versions and sizes](../reference/limits.md)
+
+- [Monitor Artifacts storage consumption](../artifact-storage.md)
+
+- [What are upstream sources?](upstream-sources.md)
