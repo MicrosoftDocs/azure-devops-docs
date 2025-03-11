@@ -133,8 +133,6 @@ You can also use the REST API for this process.
 
 1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
 
-    :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot that shows DevOps credentials for federated authentication.":::
-
 1. Select **Keep as draft** to save a draft credential. You can't complete setup until your managed identity has a federated credential in Azure portal. 
 
 
