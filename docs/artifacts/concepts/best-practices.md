@@ -21,7 +21,7 @@ To make the most of it, following best practices is essential to maintaining pac
 
 |    **Product**     |   **Requirements**   |
 |--------------------|----------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed). |
 
 ## Best practices for package publishers
 
