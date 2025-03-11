@@ -13,6 +13,8 @@ This article provides best practices on protecting secrets in Azure Pipelines. A
 
 Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md).
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Don't use secrets if another method is available
 
 The best method to protect a secret isn't to have a secret in the first place. Check to see if your pipeline can use a different method than using a secret to perform a task. 
