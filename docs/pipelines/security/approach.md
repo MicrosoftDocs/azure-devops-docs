@@ -13,6 +13,8 @@ monikerRange: '>= azure-devops-2020'
 
 Consider adopting an incremental approach to enhance the security of your pipelines. While it’s ideal to implement all the guidance we provide, don’t get overwhelmed by the number of recommendations. Start by making some improvements, even if you can’t address everything immediately.
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Security interdependence
 
 Security recommendations are interdependent. Your posture relies on the specific recommendations you implement, which, in turn, align with your DevOps and security teams’ concerns and organizational policies.
