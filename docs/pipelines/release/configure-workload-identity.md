@@ -146,9 +146,9 @@ You can also use the REST API for this process.
 
 1. Select the **Other issuer** scenario.
 
-1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
+1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal. For **Type**, select *Explicit subject identifier*.
 
-    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot that shows a comparison of federated credentials in Azure DevOps and the Azure portal.":::
+    :::image type="content" source="approvals/media/copy-federated-credentials-new-ui.png" alt-text="Screenshot comparison of federated credentials in Azure DevOps and the Azure portal. lightbox="approvals/media/copy-federated-credentials-new-ui.png :::
 
 1. Enter the **Name** of your federated credential.
 
@@ -294,9 +294,9 @@ You can also use the REST API for this process.
 
     :::image type="content" source="approvals/media/federated-credential-scenario.png" alt-text="Screenshot that shows selecting a federated credentials scenario.":::
 
-1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
+1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal. For **Type**, select *Explicit subject identifier*.
 
-    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot comparison of federated credentials in Azure DevOps and the Azure portal.":::
+    :::image type="content" source="approvals/media/copy-federated-credentials-new-ui.png" alt-text="Screenshot comparison of federated credentials in Azure DevOps and the Azure portal. lightbox="approvals/media/copy-federated-credentials-new-ui.png :::
 
 1. Select **Save**.
 
