@@ -59,7 +59,7 @@ This section outlines best practices for consuming packages with Azure Artifacts
     If you want to use packages from external feeds or public registries such as *NuGet.org* or *npmjs.com*, it's recommended to use upstream sources. See [What are upstream sources?](upstream-sources.md) and [Set up upstream sources](../how-to/set-up-upstream-sources.md) for more details.
 
     > [!NOTE]
-    > You must be a **Feed and Upstream Reader (Collaborator)** or higher to save packages from upstreams. See [Manage Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+    > You must be a **Feed and Upstream Reader (Collaborator)** or higher to save packages from upstream sources. See [Manage Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
 - **Ensure the order of sources reflects your desired package resolution strategy**:
 
