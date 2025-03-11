@@ -13,6 +13,8 @@ monikerRange: '>= azure-devops-2020'
 
 When it comes to securing Azure Pipelines, there are several other considerations to keep in mind, like protecting [shared infrastructure](#protect-shared-infrastructure), [repositories](#protect-repositories), [projects](#protect-projects), and [more](#other-security-considerations).
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Protect shared infrastructure
 
 Protected resources in Azure Pipelines are an abstraction of real infrastructure.

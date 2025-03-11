@@ -21,6 +21,8 @@ Learn how to securely utilize variables and parameters to collect input from pip
 
 Exercise caution with secret variables. The recommended methods for setting secret variables include using UI, creating a variable group, or utilizing a variable group sourced from Azure Key Vault. For more information, see [set secret variables](../process/set-secret-variables.md).
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Variables
 
 Variables serve as a convenient method to gather user input upfront and facilitate data transfer between pipeline steps. However, exercise caution when working with variables. By default, newly created variables, whether defined in YAML or scripted, are read-write. Downstream steps can modify variable values unexpectedly.

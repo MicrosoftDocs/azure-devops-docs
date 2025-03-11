@@ -18,6 +18,8 @@ Artifacts, pipelines, test plans, and work items are considered *open resources*
 
 Permissions and approval checks allow pipelines to access *protected resources* during pipeline runs. To keep protected resources safe, checks can suspend or fail a pipeline run.
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Protected resources
 
 Protected means that only specific users and pipelines within the project can access the resource. Examples of protected resources include:
