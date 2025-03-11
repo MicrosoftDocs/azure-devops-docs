@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 Managing software packages can be a complex and time-consuming process, particularly when working with large-scale projects. Azure Artifacts provides a reliable package management solution that streamlines workflows and enhances team collaboration. 
 
-To make the most of it, following best practices is essential to maintaining package integrity and quality. This article highlights key guidelines for creating, publishing, and consuming packages in Azure Artifacts. Whether you're new to Azure Artifacts or an experienced user, these best practices will help you optimize your workflow and ensure project success.
+To make the most of it, following best practices is essential to maintaining package integrity and quality. This article highlights key guidelines for creating, publishing, and consuming packages in Azure Artifacts. Whether you're new to Azure Artifacts or an experienced user, these best practices help you optimize your workflow and ensure project success.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ Following best practices helps ensure consistency, security, and a smooth user e
 
 - **Automatically publish newly created packages**:
 
-    Automating the publication of new packages ensures that your latest versions are always available to your team or target consumers without manual intervention. When you publish a package, it is added to the `@local` view of your feed. See [What are feed views?](views.md) for more details.
+    Automating the publication of new packages ensures that your latest versions are always available to your team or target consumers without manual intervention. When you publish a package, it's added to the `@local` view of your feed. See [What are feed views?](views.md) for more details.
 
 - **Enable retention policies to automatically clean up old package versions**:
 
@@ -44,7 +44,7 @@ Following best practices helps ensure consistency, security, and a smooth user e
 
 - **Use feed views to release packages**:
 
-    Feed views can be used to share a subset of package versions with your consumers. For instance, to make a package available to early adopters, you can select it from your feed and promote it to the `@Prerelease` view. Once you've deemed the package to be of sufficient quality for a full release, you can promote it to the `@Release` view. Packages promoted to a view are exempt from retention policies and will not be subject to deletion. See [What are feed views?](views.md) for more details.
+    Feed views can be used to share a subset of package versions with your consumers. For instance, to make a package available to early adopters, you can select it from your feed and promote it to the `@Prerelease` view. Once you've deemed the package to be of sufficient quality for a full release, you can promote it to the `@Release` view. Packages promoted to a view are exempt from retention policies and won't be subject to deletion. See [What are feed views?](views.md) for more details.
 
 - **Ensure proper access permissions for your views**:
 
@@ -52,7 +52,7 @@ Following best practices helps ensure consistency, security, and a smooth user e
 
 ## Best practices for package consumers
 
-In this section, we'll cover best practices for consuming packages with Azure Artifacts, including configuring package sources, managing package versions, and ensuring secure and efficient package consumption.
+This section outlines best practices for consuming packages with Azure Artifacts to ensure efficient usage:
 
 - **Use upstream sources for external packages**:
 
