@@ -14,7 +14,7 @@ The following features provide support for working with query results, saving an
 ---
 :::row:::  
    :::column span="1":::  
-      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-chart-to-a-dashboard)  
+      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-a-chart-to-a-dashboard)  
       - [Apply interactive filters](../backlogs/filter-backlogs-boards-plans.md)  
       - [Choose column sort](../backlogs/set-column-options.md)  
       - [Choose query column options](../backlogs/set-column-options.md)  
