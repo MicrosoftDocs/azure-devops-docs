@@ -45,7 +45,7 @@ For an overview of all burndown and burnup charts available to you, see [Burndow
 
 The Burndown Trend report is based on either a count of tasks or remaining work estimates, or other numeric fields that you define and update throughout the sprint cycle. For details, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). To open this report, see [Open a Sprint backlog](#open-chart).
 
-A healthy sprint burndown report appears simliar to the following example. The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint. 
+A healthy sprint burndown report appears similar to the following example. The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint. 
 
 :::image type="content" source="media/burndown/analytics-burndown-stories-count-past-s159.png" alt-text="Screenshot shows the burndown trend for specified start and end dates." lightbox="media/burndown/analytics-burndown-stories-count-past-s159.png":::
 

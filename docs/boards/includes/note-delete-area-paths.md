@@ -13,7 +13,7 @@ ms.date: 03/12/2025
 >   - Burndown and burnup widget charts
 >   - Sprint burndown charts
 >   - Velocity charts for teams with changed **Area Paths**
->   - Historical trend charts reference the **Area Path** and **Iteration Path** as they were defined at the time for each work item.
+>   - Historical trend charts that reference the **Area Path** and **Iteration Path** as they were defined at the time for each work item.
 > - Once deleted, you can't retrieve historical data for these paths.
 > - You can only delete area and iteration paths that are no longer used by any work items.
  

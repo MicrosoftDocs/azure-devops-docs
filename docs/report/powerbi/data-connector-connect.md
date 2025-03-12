@@ -121,4 +121,4 @@ For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fab
 - [Learn about Power BI integration](overview.md)
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
 - [Design Analytics views dataset](data-connector-dataset.md)
-- [Explore example reports based on Analytics views](data-connector-examples.md)](data-connector-examples.md)
+- [Explore example reports based on Analytics views](data-connector-examples.md)
