@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/17/2024
+ms.date: 03/11/2025
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 12/17/2024
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Create an Azure DevOps project to establish a repository for source code and to plan and track work. You can manage and structure your project to support your business needs. Each project provides boundaries to isolate data from other projects. For more information, see [About projects and scaling your organization](about-projects.md).
+Create an Azure DevOps project to set up a source code repository and organize your work. You can tailor and manage your project to meet your business requirements. Each project isolates its data from other projects. For more information, see [About projects and scaling your organization](about-projects.md).
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -49,7 +49,7 @@ Create an Azure DevOps project to establish a repository for source code and to 
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]  
-> To create a public project or [make a private project public](../projects/make-project-public.md), enable additional policy settings to work with public projects, and then return to this article to create your project.
+> To create a public project or [make a private project public](../projects/make-project-public.md), enable other policy settings to work with public projects, and then return to this article to create your project.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 ::: moniker range="< azure-devops"
 
-1. Sign in to your DevOps Server collection (```https://<your-devops-server>/<your-organization>```). 
+1. Sign in to your collection (```https://<your-devops-server>/<your-collection>```). 
 
 2. Select **New project**. You can also [create a project from a process](../settings/work/manage-process.md).
 
