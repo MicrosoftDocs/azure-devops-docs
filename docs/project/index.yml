@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 07/03/2023
+  ms.date: 03/11/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -25,7 +25,7 @@ landingContent:
         links:
           - text: Navigate the web portal 
             url: ./navigation/index.md
-          - text: Get started with Search
+          - text: Search Azure DevOps
             url: ./search/get-started-search.md
       - linkListType: how-to-guide
         links:
@@ -37,7 +37,7 @@ landingContent:
             url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json
           - text: Connect to a project
             url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json
-  - title: Add and manage wikis
+  - title: Manage wikis
     linkLists:
       - linkListType: overview
         links:
@@ -65,7 +65,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Search across all your code, wiki, packages and work items
+          - text: Search across all your code, wiki, packages, and work items
             url: ./search/get-started-search.md
       - linkListType: how-to-guide
         links:

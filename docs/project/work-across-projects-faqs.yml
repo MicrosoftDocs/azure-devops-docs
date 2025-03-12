@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Work across projects FAQs 
-  description: Get answers to frequent questions about working across projects in Azure DevOps.  
+  description: Get answers to frequently asked questions about working across projects in Azure DevOps.  
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-projects 
   ms.custom: cross-project
@@ -9,19 +9,19 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 01/08/2024
+  ms.date: 03/11/2025
 
-title: Work across projects FAQs 
+title: FAQs about working across projects
 
 summary: | 
-  Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where you might need multiple projects. In that event, several questions arise as to what tasks are supported when working with two or more projects. 
+    Many enterprise organizations create multiple projects to meet their business needs. Although we recommend maintaining a single project for simplicity, there are situations where multiple projects are necessary. Working with two or more projects raises several questions about the tasks that are supported.
 
-  This article addresses these questions. For more information about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
+    This article answers those questions. For more information about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
-  ::: moniker range="azure-devops"  
-  > [!NOTE]  
-  > Users added to the **Project-Scoped Users** group can only access projects they're added to. For more information, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group). 
-  ::: moniker-end  
+    ::: moniker range="azure-devops"  
+    > [!NOTE]  
+    > Users added to the **Project-Scoped Users** group can only access projects they're added to. For more information, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group). 
+    ::: moniker-end  
 
 sections:
   - name: Projects
