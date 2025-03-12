@@ -20,11 +20,7 @@ A project in Azure DevOps provides a space for users to plan, track progress, an
 
 When you create a project, Azure DevOps automatically creates a team with the same name, which is sufficient for small organizations. For enterprise-level organizations, you might need to scale up by creating more teams and projects. Azure DevOps supports up to 1,000 projects within an organization.
 
-The following image portrays an organization with multiple projects and teams.
-
-![Conceptual image, Scaled collection-project-team.](media/about-projects/multiple-projects-concept.png)
-
-This structure allows teams to configure tools to suit their needs and complete administrative tasks at the appropriate levels. As your organization grows, your tools can scale to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
+An organization with multiple projects allows teams to configure tools to suit their needs and complete administrative tasks at the appropriate levels. As your organization grows, your tools can scale to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
 
 For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md) and [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
