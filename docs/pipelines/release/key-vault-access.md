@@ -94,7 +94,7 @@ Start by creating a new service principal, this will enable you to access Azure 
 1. For **Issuer**, paste the following URL replacing the placeholder with your organization GUID. You can find your organization ID by navigating to **Organization settings** > **Microsoft Entra** > Download the list of Azure DevOps organizations connected to your directory.
 
     ```
-    https://vstoken.dev.azure.com/<ORGANIZATION_ID>
+    https://login.microsoftonline.com/<ORGANIZATION_ID>
     ```
 
 1. For **Subject identifier**, paste the following URL replacing the placeholder with your organization name, project name, and service connection name.
