@@ -22,7 +22,6 @@ When you create a project, Azure DevOps automatically creates a team with the sa
 
 The following image portrays an organization with multiple projects and teams.
 
-**Multiple projects + teams**
 ![Conceptual image, Scaled collection-project-team.](media/about-projects/multiple-projects-concept.png)
 
 This structure allows teams to configure tools to suit their needs and complete administrative tasks at the appropriate levels. As your organization grows, your tools can scale to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
