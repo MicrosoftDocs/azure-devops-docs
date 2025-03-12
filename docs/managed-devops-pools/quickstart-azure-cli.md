@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
-ms.date: 10/23/2024
+ms.date: 12/04/2024
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
 ---
@@ -12,7 +12,7 @@ This article shows you how to create a Managed DevOps Pool using Azure CLI, and 
 
 ## Prerequisites
 
-Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
+Before completing the steps in this article, have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
 ## Install or run in Azure Cloud Shell
 
@@ -211,7 +211,7 @@ Create the following three files and save them to the folder where you plan to r
 
     ```json
     {
-      "azure-dev-ops": {
+      "AzureDevOps": {
         "organizations": [
           {
             "url": "https://dev.azure.com/<organization-name>",

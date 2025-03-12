@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '< azure-devops'
-ms.date: 03/04/2024
+ms.date: 01/22/2024
 ---
 
 # Install and configure Search
@@ -19,12 +19,11 @@ ms.date: 03/04/2024
 In this article, learn how to install, [configure](#configure-search), and [uninstall](#uninstall-search) a secure search engine for Azure DevOps Server that runs on your own hardware. For more information, see the following articles:
 - [Manage Search and indexing](manage-search.md)
 - [Software dependencies](#software-dependencies), further in this article
-- [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/)
 
 ## Prerequisites
 
-- To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization. Non-administrative users can also request to have the extension added to their PCA.
-- For more information, see [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements).
+**Permissions:** Member of the **Project Collection Administrators** group for the organization. Non-administrative users can also request to have the extension added to their PCA.
+For more information, see [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements).
 
 ### Hardware recommendations
 
@@ -61,7 +60,7 @@ The amount of disk space used by Search depends mainly on the type and size of f
 
 Search has the following dependencies, which get installed automatically as part of the configuration:
 
-* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch.
+* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elastic.
   * Search uses a modified version of Elasticsearch. It works only with this modified version.
   * A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), reindexing can take some time to complete.
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html). 
@@ -78,7 +77,7 @@ Search has the following dependencies, which get installed automatically as part
 #### Java installation notes
 
 - If the Search configuration wizard doesn't detect a working installation of a Java Runtime Environment (JRE), it provides an option to download and install the latest supported version. Internet connectivity is required to download. If the target server doesn't have Internet connectivity, you must download and install a JRE manually before attempting to install Search.
-- Versions of Search before Azure DevOps Server used the [Oracle Server Java Runtime Environment](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html). In Azure DevOps Server, the default JRE is [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/).
+- Versions of Search before Azure DevOps Server used the [Oracle Server Java Runtime Environment](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html). Azure DevOps Server uses Elasticsearch version 7.17.0, which has a bundled version of OpenJDK. 
 - During installation, the wizard sets the **JAVA\_HOME** environment variable to point to the JRE installation folder. The configuration wizard might not detect an existing JRE installation if it wasn't correctly configured, or if the **JAVA\_HOME** setting points to an earlier version than required by Search. 
 
    > [!NOTE]   
@@ -92,7 +91,7 @@ Search has the following dependencies, which get installed automatically as part
 
    > [!NOTE]
    > If you're using Oracle Server JRE 8, which was the default for Search in TFS (Azure DevOps Server doesn't use Oracle Server JRE 8), be aware of the following information:
-   > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration,the commercial features of the Server JRE are neither activated nor unlocked.
+   > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration, the commercial features of the Server JRE are neither activated nor unlocked.
    > * If you choose to continue with Oracle JRE, contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), so that you can continue to receive JRE updates.
 
 #### Migrate to Microsoft Build of OpenJDK from Oracle Server JRE
@@ -158,14 +157,14 @@ To install or update Search on a separate or remote server, typically when there
 
 ## Secure search
 
-The Search service uses a modified version of [Elasticsearch](https://www.elastic.co/products/elasticsearch). The terms "Search" and "Elasticsearch" are used interchangeably for the rest of this section. Administrators must provide credentials whether the Search service is on the same machine as Azure DevOps Server, or on a separate machine. This action is part of configuring the Search feature through the server or the Search configuration wizard. These credentials are new and aren't related to any pre-existing account or server credentials. They're used to set up and connect to Search service. These new sets of credentials enable basic authentication in the search service.
+The Search service uses a modified version of [Elasticsearch](https://www.elastic.co/products/elasticsearch). The terms "Search" and "Elasticsearch" are used interchangeably for the rest of this section. Administrators must provide credentials whether the Search service is on the same machine as Azure DevOps Server, or on a separate machine. This action is part of configuring the Search feature through the server or the Search configuration wizard. These credentials are new and aren't related to any preexisting account or server credentials. They're used to set up and connect to Search service. These new sets of credentials enable basic authentication in the search service.
 
 ![Screenshot showing search credentials.](media/administration/tfsU3_search_cred1.png)
 
-For an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3 or for search reconfiguration, only the user information automatically populates and administrators must provide password credentials. Administrators can provide a different username and password if they wish. If the Search service is on the same machine as Azure DevOps Server, administrators can provide a new set of credentials in the Configuration Wizard to set up the Search service, if wanted. However, if the Search service is on a remote machine, administrators must first provide the new credentials to the Search service setup script.
+For an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3 or for search reconfiguration, only the user information automatically populates and administrators must provide credentials. Administrators can provide different credentials if they wish. If the Search service is on the same machine as Azure DevOps Server, administrators can provide a new set of credentials in the Configuration Wizard to set up the Search service, if wanted. However, if the Search service is on a remote machine, administrators must first provide the new credentials to the Search service setup script.
 
 > [!NOTE]
-> * Username and password values should both be between 8 and 64 characters in length. While the password can be assigned any value, the username can contain only alphanumeric and underscore characters. 
+> * Credential values should both be between 8 and 64 characters in length.
 > * Search credentials only authenticate the users and make sure that unauthenticated users can't access the Elasticsearch endpoint. However, Elasticsearch doesn't support HTTPS and so these credentials get sent over the network as Base64 encoded strings. If there's a possibility of intermediate access to request, configure appropriate security settings based on your corporate security and compliance requirements.
 > * Aim to limit access to both searching and indexing to specific users or user groups using encryption through IPSec, described as follows. 
 

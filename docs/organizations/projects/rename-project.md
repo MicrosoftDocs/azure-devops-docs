@@ -6,37 +6,29 @@ description: Learn how to rename your project, including tasks you need to compl
 ms.subservice: azure-devops-projects
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/29/2023
+ms.date: 11/11/2024
 ---
 
 # Rename a project in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Renaming a project in Azure DevOps updates the project name in version control paths, work items, queries, and other project artifacts. You can rename a single project multiple times, and use old names. Post-rename, some [actions may be required from team members](#required-user-actions-for-working-with-the-renamed-project).
+Renaming a project in Azure DevOps updates the project name in version control paths, work items, queries, and other project artifacts. You can rename a single project multiple times, and use old names. Some [actions might be required from team members](#required-user-actions-for-working-with-the-renamed-project) after you rename the project.
 
 > [!WARNING]
-> GitHub Copilot: Upon renaming a project, Azure DevOps notifies all project members via email if the user count is less than 1,000. For projects with more than 1,000 users, only Project Collection Administrators receive these notifications.
+>- Upon renaming a project, Azure DevOps notifies all project members via email if the user count is less than 1,000. For projects with more than 1,000 users, only Project Collection Administrators receive these notifications.
 >
->Workload identity federation: Renaming a project will break workload identity federation subjects in Azure Resource Manager service connections. 
+>- Renaming a project breaks workload identity federation subjects in Azure Resource Manager service connections. 
 
 ## Prerequisites
 
-::: moniker range="azure-devops" 
-
-- You must be a member of the **Project Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"  
-
-- You must be a member of the **Project Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-
-::: moniker-end  
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the **Project Administrators** group or project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).|
 
 ## Rename a project
 
@@ -66,16 +58,15 @@ The following results occur after the rename operation.
 * Work item IDs are unique in the organization and therefore the links don't expire.
 * The old project name can be used again.
 
-<a id="more-work"></a>
-
 ## Required user actions for working with the renamed project
 
 Each user within your team must [restart their clients](#restart-clients) and do some of the following actions, based on the features they use:
 - [Update Git remotes](#update-git-remotes)
 - [Update Team Foundation Version Control (TFVC) server workspaces](#update-tfvc-server-workspaces)
 - [Update TFVC local workspaces](#update-tfvc-local-workspaces)
+- [Update OData feeds](#update-odata-feeds)
+- [Update Analytics views](#update-analytics-views)
 
-<a id="restarting-clients"></a>
 
 ### Restart clients
 
@@ -86,15 +77,12 @@ For the following clients, save your work in each and then restart:
 - Visual Studio Team Explorer
 - Microsoft Excel, if your team uses the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) 
 
-<a id="git"></a>
-
 ### Update Git remotes
 
 If your project uses Git, then your remote references for each repository from the renamed project must be updated. These updates are necessary because the remote repository URL contains the project and the repository name. Git uses remote references to fetch and push changes between your local repository and the remote version stored on the server. Each member of your team must update their local Git repositories to continue connecting from their dev machines. 
 
 For more information, see [Update the Git remotes on your dev machines](../../repos/git/repo-rename.md#update-the-git-remotes-on-your-dev-machines).
 
-<a id="tfvc-server"></a>
 
 ### Update TFVC server workspaces
 
@@ -105,7 +93,6 @@ For Visual Studio clients, execute a get or check in and then the workspace mapp
 
 For more information, see [Rename command (TFVC)](../../repos/tfvc/rename-command-team-foundation-version-control.md).
 
-<a id="tfvc-local"></a>
 
 ### Update TFVC local workspaces
 
@@ -116,6 +103,14 @@ We recommend you update your clients to the latest update or release, if possibl
 
 Local workspaces get managed locally and not on the server. Older clients without the updated rename logic can't update local workspaces to the new project name. 
 
+### Update OData feeds
+
+If you use OData feeds in Power BI, update the feed URL to use the new project name. Updating the feed URL is essential to maintain data connections and avoid errors in reporting. For more information, see [Overview of sample reports using OData queries](../../report/powerbi/sample-odata-overview.md).
+
+### Update Analytics views
+
+If you created custom Analytics views using the old project name, you need to update the views with the new name. For more information, see [Analytics views](../../report/powerbi/analytics-views-manage.md#edit-an-existing-view).
+
 ## Related articles
 
 - [Delete a project](delete-project.md)
@@ -124,7 +119,7 @@ Local workspaces get managed locally and not on the server. Older clients withou
 ## Frequently asked questions (FAQs)
 
 ### Q: Why did my attempt to reuse a project name fail due to existing work spaces?
-A: You can't reuse a project name if there are still workspace mappings addressing it. This function helps avoid the ambiguity case where a workspace could be mapped to two projects. Contact the users who have these mappings, and either delete them or [update them](rename-project.md#tfvc-server) to use the new name.
+A: You can't reuse a project name if there are still workspace mappings addressing it. This function helps avoid the ambiguity case where a workspace could be mapped to two projects. Contact the users who have these mappings, and either delete them or [update them](#update-tfvc-server-workspaces)) to use the new name.
 
 If the user's machine containing the workspace is no longer available, then you can delete the workspace by running the following command from Visual Studio's developer command prompt:
 ```tf workspace /delete [/collection:TeamProjectCollectionUrl] workspacename[;workspaceowner]```

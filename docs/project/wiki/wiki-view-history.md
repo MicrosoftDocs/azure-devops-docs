@@ -20,20 +20,7 @@ This article shows you how to view the revision history of a wiki page in Azure 
 
 ## Prerequisites
 
-::: moniker range=" azure-devops"
-
-* You must have at least Basic access to create and modify a wiki.
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
-* Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
-
-::: moniker-end
-
-::: moniker range=" < azure-devops"
-
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
-* Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
-
-::: moniker-end
+[!INCLUDE [wiki-prereqs-create-repository](includes/wiki-prereqs-create-repository.md)]
 
 <a id="view-revision-history"></a>
 

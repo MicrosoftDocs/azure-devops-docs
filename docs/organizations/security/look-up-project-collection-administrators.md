@@ -40,13 +40,8 @@ For more information, see [Get started with permissions and security groups](abo
 
 ## Prerequisites
 
-You must be a member of the **Project Collection Valid Users** group to look up members of the **Project Collection Administrators** group. Users added to a project are automatically added to this group. 
- 
-::: moniker range="azure-devops"  
-> [!NOTE]  
-> Users added to the **Project-Scoped Users** group can't access **Organization settings** other than the **Overview** section if the [**Limit user visibility and collaboration to specific projects** preview feature is enabled](../../user-guide/manage-organization-collection.md#project-scoped-user-group) for the organization.
+[!INCLUDE [prerequisites-project-collection-valid-users-group](../../includes/prerequisites-project-collection-valid-users-group.md)]
 
-::: moniker-end  
  
 ## Show members of the Project Collection Administrators group
 

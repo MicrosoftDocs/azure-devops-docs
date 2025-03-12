@@ -19,7 +19,7 @@ This guide shows you how to share your Xcode projects using Azure Repos.
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Create a local Git repo for your Xcode project
 

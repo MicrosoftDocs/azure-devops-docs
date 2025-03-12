@@ -20,7 +20,7 @@ Analytics supports several dashboard widgets that take advantage of the power of
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. To add extensions or enable the service, you must be an organization owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). Using these widgets, you and your team can gain valuable insights into the health and status of your work.
+Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. To add extensions or enable the service, be an organization owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). Using these widgets, you and your team can gain valuable insights into the health and status of your work.
 ::: moniker-end
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
@@ -28,13 +28,23 @@ You add an Analytics widget to a dashboard the same way you add any other type o
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- Analytics widget data is calculated from the Analytics service. The Analytics service is enabled for all Azure DevOps organizations.  
-- To view Analytics data, you must have the **View analytics** project-level permission set to **Allow**. By default, this permission is set for all project members in all security groups. Users granted **Stakeholder** access or greater can view Analytics widgets.  
+
+The Analytics service is enabled for all Azure DevOps organizations.
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions**   |- To view Analytics data: **View analytics** project-level permission set to **Allow**. By default, all project members in all security groups have this permission.    |
+|**Access levels**  | At least  **Stakeholder** access.    |
+
 ::: moniker-end
 ::: moniker range="< azure-devops"
-- Analytics widget data is calculated from the Analytics service.
-- For Analytics widgets to display correctly, the Analytics service must be enabled on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
-- To view Analytics data, you must have the **View analytics** project-level permission set to **Allow**. By default, this permission is set for all project members in all security groups. Users granted **Stakeholder** access or greater can view Analytics widgets.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions**   |- To view Analytics data: **View analytics** project-level permission set to **Allow**. By default, all project members in all security groups have this permission.    |
+|**Access levels**  | At least  **Stakeholder** access.    |
+|**Services**   | [Analytics service enabled](../../report/dashboards/analytics-extension.md).   |
+ 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]

@@ -21,6 +21,10 @@ View the status of planned tests or monitor testing progress by defining test ca
 To track the progress of more than one test plan or test suite, open the [Progress Report](progress-report.md).
 ::: moniker-end
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)]
+
 <a id="charts"></a> 
 
 ## Track testing progress
@@ -288,7 +292,7 @@ Use the chart's context menu.
 You can [configure the dashboard widget](../report/dashboards/widget-catalog.md) to show a range of chart types.
 
 > [!NOTE]
-> You must be a team administrator to configure the dashboard widget, but team members with Stakeholder access can view the charts on the dashboard.
+> Be a team administrator to configure the dashboard widget, but team members with Stakeholder access can view the charts on the dashboard.
 
 ## Related articles
 

@@ -66,8 +66,10 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 ### Visible UI testing using Microsoft-hosted agents
 
-Microsoft-hosted agents are preconfigured for UI testing and UI tests for both
-web apps and desktop apps. Microsoft-hosted agents are also
+Visible UI testing in not supported in Microsoft-hosted agents. The test fails with error message "element not interactable". Microsoft-hosted agents support headless browser testing.
+
+### Headless mode UI testing using Microsoft-hosted agents
+Microsoft-hosted agents are preconfigured for UI testing and UI tests for web apps. Microsoft-hosted agents are also
 preconfigured with [popular browsers and matching web-driver versions](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.

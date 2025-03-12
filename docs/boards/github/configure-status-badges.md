@@ -25,10 +25,12 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 ## Prerequisites 
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).  
-* You must have a board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-* To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or  member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group. |
+| **Integration with GitHub** | [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to or from exist. |
+| **Board configuration** | A board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
+| **Repository access** | To add the status badge to the GitHub.com repository: Contributor to the repository. |
 
 ## Add a status badge
 
@@ -75,5 +77,5 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 - [Customize cards](../boards/customize-cards.md)
 - [Configure team settings](../../organizations/settings/manage-teams.md)
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
-- [Azure Boards-GitHub integration](index.md) 
+- [Integrate Azure Boards with GitHub](index.md) 
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

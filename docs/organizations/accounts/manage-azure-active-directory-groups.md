@@ -27,11 +27,10 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
 ## Prerequisites
 
-- **Permissions:** 
-  - Have [Project Collection Administrator permissions](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-  - Have Microsoft Entra administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
-- **Access levels:** Have at least Basic access.
-- **Organization connection:** Be a member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- Microsoft Entra Administrator in the [Azure portal](https://portal.azure.com).|
+|**Access levels**| At least **Basic** access.|
 
 <a name='add-an-azure-ad-group-to-an-azure-devops-group'></a>
 
@@ -87,10 +86,9 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
 * * *
 
-Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).
+Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-reevaluate-your-permissions).
 
 ## Related articles
 
-- [Learn about just-in-time-access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups)
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Manage conditional access](change-application-access-policies.md)

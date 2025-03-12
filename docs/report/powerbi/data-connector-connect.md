@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms date: 09/16/2024
-#customer intent: As a team member or administrator, I want to connect to Azure DevOps Analitics with Power BI to create reports. 
+#customer intent: As a team member or administrator, I want to connect to Azure DevOps Analytics with Power BI to create reports. 
 ---
 
 # Connect Analytics with Power BI Data Connector
@@ -24,25 +24,23 @@ In this article, learn how to establish a seamless connection between Power BI a
 
 ::: moniker range="azure-devops"
 
-- Get familiar with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).
-- Install the *Power BI Desktop* *October 2018 Update* or a [newer version](https://aka.ms/pbidesktopstore).
-- Ensure that you're a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
-- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report.
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | [Analytics permissions](analytics-security.md). If you're a member of the **Contributors** group for the project, you have permission. |
+|**Tools** | - [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://aka.ms/pbidesktopstore)    |
+|**Tasks**| - Familiarity with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).<br>- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. |
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- Get familiar with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).
-- Install the *Power BI Desktop* *October 2018 Update* or a [newer version](https://aka.ms/pbidesktopstore).
-- Ensure that you're a member of a project with Basic access or higher. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-- Ensure that you're a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true) is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
-- Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
-- [Create an Analytics view](analytics-views-create.md) for which you want to create a Power BI report.
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | [Analytics permissions](analytics-security.md). If you're a member of the **Contributors** group for the project, you have permission. |
+|**Tools** | - [Analytics installed and enabled](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true). Account owners or a members of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) can add extensions or enable the service.<br>- [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://aka.ms/pbidesktopstore)    |
+|**Tasks**| - Familiarity with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).<br>- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. |
 
 ::: moniker-end
 
@@ -123,6 +121,5 @@ For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fab
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
 - [About Power BI integration](overview.md)
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
-- [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 - [Analytics views dataset design](data-connector-dataset.md)
 - [Example reports based on Analytics views](data-connector-examples.md)

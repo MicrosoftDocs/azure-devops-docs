@@ -23,8 +23,10 @@ You can manage your search extension and indexing status, which include the foll
 
 ## Prerequisites
 
-- [Install and configure Search](install-configure-search.md).
-- Be assigned to the [Project Collection Administrator (PCA)](../../user-guide/project-admin-tutorial.md) role for the organization to manage Search and indexing.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | Member of the [Project Collection Administrators](../../user-guide/project-admin-tutorial.md) group. |
+| **Tasks** | Complete [Install and configure Search](install-configure-search.md). |
 
 ## Manage indexing
 

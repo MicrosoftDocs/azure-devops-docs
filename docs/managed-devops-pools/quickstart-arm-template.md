@@ -1,22 +1,18 @@
 ---
 title: Create a Managed DevOps Pool using an ARM template
 description: Learn how to create a Managed DevOps Pool using an Azure Resource Manager template (ARM template).
-ms.date: 10/18/2024
+ms.date: 11/13/2024
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using an ARM template and run a pipeline in the new pool.
 ---
 
 # Quickstart: Create a Managed DevOps Pool using an ARM template
 
-> [!IMPORTANT]
-> Managed DevOps Pools is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
-
 This article shows you how to create a Managed DevOps Pool using an ARM template, and run a pipeline in the new pool.
 
 ## Prerequisites
 
-Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
+Before completing the steps in this article, have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
 ## Sign in to the Azure CLI
 
@@ -85,7 +81,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
             {
                 "name": "[parameters('poolName')]",
                 "type": "microsoft.devopsinfrastructure/pools",
-                "apiVersion": "2024-04-04-preview",
+                "apiVersion": "2024-10-19",
                 "location": "[parameters('location')]",
                 "tags": {},
                 "properties": {

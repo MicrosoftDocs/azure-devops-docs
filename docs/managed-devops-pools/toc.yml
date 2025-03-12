@@ -6,6 +6,8 @@
   href: architecture-overview.md
 - name: Prerequisites
   href: prerequisites.md
+- name: Compare with Azure Virtual Machine Scale Set agents
+  href: migrate-from-scale-set-agents.md
 - name: Quickstarts
   items:
   - name: Azure portal
@@ -42,6 +44,8 @@
     href: monitor-pool.md
   - name: Diagnostic logs
     href: diagnostics.md
+  - name: Troubleshooting
+    href: troubleshooting.md
 - name: Manage cost and performance
   items:
   - name: Pricing
@@ -60,6 +64,8 @@
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
   - name: Azure CLI
     href: /cli/azure/service-page/managed%20devops%20pools
+  - name: Azure PowerShell
+    href: /powershell/module/az.mdp
   - name: Bicep
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
   - name: Java
@@ -68,5 +74,7 @@
     href: /javascript/api/overview/azure/devops-infrastructure
   - name: Python
     href: /python/api/overview/azure/devops-infrastructure
+  - name: REST
+    href: /rest/api/devopspools
   - name: Terraform
     href: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform

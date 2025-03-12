@@ -8,37 +8,62 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/27/2022
+ms.date: 11/21/2024
 ---
 
-# Set the Work Items experience
+# Set the work items experience
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
-[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]   
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Visual Studio 2019 supports switching between the default view of the Team Explorer **Work Items** page and the legacy view. The default view is designed to match the web portal **Boards > Work Items** page. The legacy view supports the Work Items page available with the previous versions of Visual Studio.
+Visual Studio 2019 allows you to switch between the default and legacy views of the Team Explorer **Work Items** page. The default view is designed to align with the web portal's **Boards** > **Work Items** page, offering a modern and consistent interface for managing work items. The legacy view retains the familiar layout from previous versions of Visual Studio, supporting users who prefer the traditional Work Items page experience.
 
-Each view supports the following tasks: 
+## Prerequisites
 
-| **Default experience**|**Legacy experience**|
-|-----------------------|---------------------| 
-|- [View and add work items](./view-add-work-items.md)|- [Add work items](../backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../queries/using-queries.md)<br/>- [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Send email of query results list using Outlook](../work-items/email-work-items.md)<br/>- [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)<br/>(on-premises Azure DevOps Server only)</br></ul>|
- 
-> [!IMPORTANT]
-> We strongly recommend that everyone use the default view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+Before you switch between work item views in Visual Studio 2019, ensure you meet the following requirements:
 
-## Change your Work Items view
+[!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
 
-1. From Visual Studio 2019 choose **Tools > Options**.
+| Category | Requirements |
+|--------------|-------------|
+|**Tools**| Visual Studio 2019 and latest updates.|
+|**Extensions**| Enabled Team Explorer extension in Visual Studio 2019.|
 
-1. In the Options dialog, enter **work items** in the search box.  
+## Work item views
 
-1. Choose your **Landing page** option from the menu. 
+Visual Studio 2019 provides flexibility in how you interact with work items by offering the following two distinct views:
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Tools>Options>Work Items](media/set-vs-experience/option-vs-options-work-items.png)
+### Default view
 
-For more information about **Options**, see [Options Dialog Box (Visual Studio)](/visualstudio/ide/reference/options-dialog-box-visual-studio).
+- **Consistency with web portal**: Mirrors the **Boards** > **Work Items** page in the Azure DevOps web portal.
+- **Modern interface**: Features a streamlined and updated design for enhanced usability.
+- **Integrated features**: Applies the latest updates and integrations available in Azure DevOps.
+
+### Legacy view
+
+- **Familiar layout**: Maintains the traditional Work Items page layout from earlier Visual Studio versions.
+- **Compatibility**: Ensures continuity for users transitioning from previous versions of Visual Studio.
+- **Customizations**: Supports existing customizations and workflows established in older environments.
+
+## Switch work item views
+
+To switch between the default and legacy views of the Work Items page in Visual Studio 2019, do the following steps:
+
+1. Select **View** > **Team Explorer** in the Visual Studio menu.
+
+2. In Team Explorer, select **Work Items** to open the Work Items page.
+
+3. Look for a toggle or option labeled **Switch to Legacy View** or **Use Default View** and move the toggle to switch between the default and legacy views based on your preference.
+
+## More resources
+
+For more information on managing work items and customizing your experience, see the following resources:
+
+- [Azure Boards-GitHub integration](index.md)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Work item field index](guidance/work-item-field.md)
+- [Manage work item fields using witadmin](../../reference/witadmin/manage-work-item-fields.md)
+- [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#work-items-work-item-types-and-customizations)
 
 ## New Git tool experience
 
@@ -46,4 +71,4 @@ Visual Studio 2019 now includes a new Git tool that provides an improved experie
 
 ## Related articles
 
-- [View and add work items using the Work Items page](view-add-work-items.md)
+- [Manage work items](../backlogs/manage-work-items.md)

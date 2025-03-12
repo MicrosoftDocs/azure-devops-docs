@@ -12,7 +12,12 @@ monikerRange: '>= azure-devops'
 
 # Manually set an Azure Resource Manager workload identity service connection
 
-When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-micrososft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+> [!NOTE]
+>We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
+
+When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-microsoft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
 
 We recommend that you [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) before you begin a manual configuration.
 

@@ -17,6 +17,8 @@ To ensure secure access to Azure repositories, enable the following toggles:
 - **Limit job authorization scope to current project for release pipelines**
 - **Protect access to repositories in YAML pipelines**
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Basic process
 
 The following steps to secure your pipelines are similar across all pipelines:

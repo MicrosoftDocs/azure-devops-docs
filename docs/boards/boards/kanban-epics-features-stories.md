@@ -22,17 +22,15 @@ And, as with [child task checklists for backlog items](add-task-checklists.md), 
 
 For more information, see [Define features and epics](../backlogs/define-features-epics.md). 
 
-> [!div class="mx-imgBorder"]
-> ![Web portal, Features board with several user stories defined](media/features-epics/features-with-stories-intro.png)
+## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
-
 
 ## Open your board from the web portal
 
 Your board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), choose **Stories backlog**. And, to switch to the [taskboard](../sprints/task-board.md), choose **Sprints** and then choose **Taskboard**.
 
-1. (1) Check that you selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
+1. (1) Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```), (2) choose **Boards > Boards**, and then (3) select the correct team from the team selector menu. 
 
 	![Screenshot showing Open your board.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
@@ -42,7 +40,7 @@ Your board is one of two types of boards available to you. For an overview of th
 	> ![Screenshot showing Choose another team's board.](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list.
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false":::) appear at the top of the team selector list.
 
 2. Select **Features** or **Epics** from the backlog selector menu. 
 

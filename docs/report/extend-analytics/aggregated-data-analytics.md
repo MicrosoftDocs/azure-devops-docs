@@ -32,6 +32,9 @@ To learn how to generate simple counts, see [Return a count of items (no other d
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## What is the Aggregation Extension for OData?
 
@@ -81,7 +84,7 @@ Using the `$apply` extension, you can obtain counts, sums, and additional inform
 
 The OData aggregation extension also supports a `groupby` clause that is identical to the SQL `GROUP BY` clause. You can use this clause to quickly break down numbers in more detail.  
 
-For example, thie following clause returns a  count of work items:
+For example, the following clause returns a count of work items:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

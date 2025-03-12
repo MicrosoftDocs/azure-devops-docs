@@ -125,13 +125,15 @@ public static void SampleREST()
 
 To change the method of authentication for Azure DevOps, change the VssCredential type passed to VssConnection when you create it.
 
-##### Personal access token authentication for REST services
+<a name='azure-active-directory-authentication-for-rest-services'></a>
+
+##### Microsoft Entra authentication for REST services
 
 ```cs
-public static void PersonalAccessTokenRestSample()
+public static void AADRestSample()
 {
-    // Create instance of VssConnection using Personal Access Token
-    VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
+    // Create instance of VssConnection using Azure AD Credentials for Azure AD backed account
+    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential(userName, password));
 }
 ```
 
@@ -149,18 +151,6 @@ public static void MicrosoftAccountRestSample()
 }
 ```
 
-<a name='azure-active-directory-authentication-for-rest-services'></a>
-
-##### Microsoft Entra authentication for REST services
-
-```cs
-public static void AADRestSample()
-{
-    // Create instance of VssConnection using Azure AD Credentials for Azure AD backed account
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential(userName, password));
-}
-```
-
 ##### OAuth Authentication for REST services
 
 For more information, see [Azure DevOps auth samples](https://github.com/microsoft/azure-devops-auth-samples) and [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow).
@@ -170,5 +160,15 @@ public static void OAuthSample()
 {
     // Create instance of VssConnection using OAuth Access token
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssOAuthAccessTokenCredential(accessToken));
+}
+```
+
+##### Personal access token authentication for REST services
+
+```cs
+public static void PersonalAccessTokenRestSample()
+{
+    // Create instance of VssConnection using Personal Access Token
+    VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
 }
 ```

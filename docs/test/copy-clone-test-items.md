@@ -29,6 +29,8 @@ In general, you should create a test plan for every major project milestone. Cop
   
 For more information, see [Overview of test objects and terms](test-objects-overview.md).  
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 [!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)] 
@@ -298,7 +300,7 @@ Cloning proves especially useful when you need to branch your application into t
 
 	- Choose one or the other radio-buttons based on the following guidance:  
 	   - **Reference existing test cases**: Choose this option when you plan to merge the two branches eventually. In this case, keep the same requirements for functionality that is already implemented and tested.  
-	   - **Duplicate existing test cases**: Choose this option when you want to make new user stories or requirements maintained separately. If you plan to diverge into two similar but separate applications, you might want to change the user stories of one without changing the stories of the other. Choosing this option creates an independent set of requirements for the new test cases.  
+	   - **Duplicate existing test cases**: Choose this option when you want to make new test cases maintained separately, note that new test cases will be linked to existing requirements.  
 
 	If you duplicate existing test cases, the copied test cases get assigned the **Area Path** and **Iteration Path** specified for the cloned test plan. 
 

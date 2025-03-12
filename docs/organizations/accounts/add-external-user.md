@@ -19,13 +19,13 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 ## Prerequisites
 
-* **Permissions:** Be a member of the Project Collection Administrators or Project Administrators group for the organization to which you want to invite external users.
-* **Microsoft Entra tenant:** The Microsoft Entra tenant to which you want to invite external users must allow adding new users, as per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
-* **Policies:** Ensure **External guest access** is turned **On** for the organization to which you want to invite external users. See the following image example.
-   * Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
-   * If the **Invite GitHub users** policy displays, you're recognized as a GitHub user and the GitHub invitation experience is available. For more information, see [Enable GitHub invitations](../../repos/get-started/sign-up-invite-teammates.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+| **Microsoft Entra tenant** |The Microsoft Entra tenant to which you want to invite external users allows adding new users, as per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).|
+| **Policies** |- **External guest access** turned **On** for the organization to which you want to invite external users.<br>- Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).<br>- If the **Invite GitHub users** policy displays, you're recognized as a GitHub user and the GitHub invitation experience is available. For more information, see [Enable GitHub invitations](../../repos/get-started/sign-up-invite-teammates.md).|
 
-> [!NOTE]
+> [!IMPORTANT]
 > **Required:** Use a different email address or user principal name (UPN) for your personal and business accounts. This eliminates the challenge of disambiguating between your business and personal accounts when the email or UPN is the same.
 
 ## Invite external user

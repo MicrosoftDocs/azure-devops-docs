@@ -21,8 +21,13 @@ A board presents work items in the form of cards, where each card represents a w
 > [!NOTE] 
 > This article addresses customization of a board. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 
-[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- See the section, [Card customization sequence](#card-customization-sequence)
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels** | At least [**Basic**](../../organizations/security/access-levels.md) access.|
+|**Permissions** | To configure team settings: Member of the **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).|
+|**Tasks (optional)**| See the section, [Card customization sequence](#card-customization-sequence)|
 
 ## Card customization options  
 
@@ -60,7 +65,7 @@ Within the [Settings dialog for a board](#open-your-board-settings), you have th
 
 ## Card customization sequence 
 
-Before you configure the cards, make sure the following tasks are complete, or you might need to revisit your configuration.  
+Before you configure the cards, ensure the following tasks are complete, or you might need to revisit your configuration.  
 
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
@@ -162,13 +167,13 @@ You can apply style rules to change the color of cards on boards and Taskboards.
 
    :::image type="content" source="../sprints/media/customize/taskboard-styles-priority.png" alt-text="Screenshot of the Settings, Styles dialog.":::
 
-> [!TIP]
-> Note the following information about style rules:
-   - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md). 
-   - All clauses are considered AND clauses, grouping clauses isn't supported. 
-   - Card rules apply to all work items that meet the rule criteria. 
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
-   - You can quickly enable and disable a style rule.
+   > [!TIP]
+   > Note the following information about style rules:
+   >- The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md). 
+   >- All clauses are considered AND clauses, grouping clauses isn't supported. 
+   >- Card rules apply to all work items that meet the rule criteria. 
+   >- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
+   >- You can quickly enable and disable a style rule.
 
    In the following example, we add a *Stale tasks* rule, which highlights tasks that haven't changed in the last five days.
 
@@ -202,7 +207,7 @@ Complete the following steps to manage annotations.
 
 ::: moniker range=">= azure-devops-2019"  
 
-1. From your board settings page, select **Annotations** .
+1. From your board settings page, select **Annotations**.
 2. Check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
    :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot showing a board, Settings dialog, Annotations tab.":::
@@ -270,7 +275,7 @@ In addition to the dynamic card reordering, you can also move a card to a specif
 You can reorder the work items within a board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
 
 > [!NOTE]   
-> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Move to column position** feature requires the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 Specify a value within the range listed, which corresponds to the number of items currently in the column. 
 

@@ -23,10 +23,10 @@ As roles and responsibilities change, you can change the owner for your organiza
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- **New owner tasks:**
-  - Sign in to your organization, create a profile, and agree to the Terms of Service.
-  - Access the organization at least once after creating your initial profile.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**New owner tasks**|- Sign in to your organization, create a profile, and agree to the Terms of Service.<br>- Access the organization at least once after creating your initial profile.|
 
 > [!TIP]
 > For organizations connected to Microsoft Entra ID, if your organization owner and all other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).

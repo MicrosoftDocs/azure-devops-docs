@@ -20,6 +20,8 @@ ms.date: 10/03/2024
 
 Your board helps you visualize the flow of work as it moves from defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 ## Types of swimlanes  
@@ -67,8 +69,7 @@ Identify the swimlanes that support your tracking needs and add them to your boa
 
 3. Choose **Swimlanes**, choose **Add swimlane**, and then enter the name of the swimlane you want to add. For example, here we enter *Expedite*. You can optionally select the more actions icon :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to insert a new swimlane above or below another swimlane.
 
-	> [!NOTE]  
-	> The following images show the user interface when the **New Boards Hub** preview feature is enabled. Some features are only available with the **New Boards Hub**, as described in [Key concepts and work item tasks in Azure Boards](../work-items/quick-ref.md). For example, choosing the swimlane color is only supported when the **New Boards Hub** feature is enabled. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md).
+   [!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 	:::image type="content" source="media/expedite/add-swimlane-new-board-hubs-enabled.png" alt-text="Screenshot of board Settings, Swimlane tab, Add swimlane.":::
 

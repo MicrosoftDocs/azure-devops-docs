@@ -17,7 +17,7 @@ ms.date: 04/12/2024
 
 **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards and collaboration tools. They have no access to code repositories. 
 
-**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.
+**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then assign them at least **Basic** access.
 
 If you're assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you're tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
  
@@ -25,9 +25,9 @@ If you're assigned **Stakeholder** access and want to start using Azure Boards t
 
 In general, use the following guidance when assigning **Stakeholder** access users to a security group: 
 
-- Add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
-- Add to the **Project Administrators** security group users tasked with managing project resources. 
-- Add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. 
+- Add to the **Contributors** security group for managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
+- Add to the **Project Administrators** security group for users tasked with managing project resources. 
+- Add to the **Project Collection Administrators** security group for users tasked with managing organization or collection resources. 
 
 <a id="stakeholder-access">  </a>
 <a id="feature-access">  </a>

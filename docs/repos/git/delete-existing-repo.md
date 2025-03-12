@@ -22,12 +22,14 @@ Remove unused Git repos from your project when they are no longer needed. The st
 
 ## Prerequisites 
 
-- You must have [Delete Repository permissions](set-git-repository-permissions.md) to delete a repo from a project. 
+| Category | Requirements |
+|-------------|-------------|
+| **Permissions** | [**Delete Repository** permission](set-git-repository-permissions.md). |
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> If you want to use the Azure DevOps CLI **az repos delete** command, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+> To use the Azure DevOps CLI **az repos delete** command, see [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 

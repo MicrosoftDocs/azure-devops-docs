@@ -18,6 +18,9 @@ ms.date: 09/15/2021
 
 Read this article to gain an understanding of the objects and terms used in manual and exploratory testing. 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)]
 
 <a name="testplans"></a>
 
@@ -254,7 +257,7 @@ There are a number of permissions that control select features for viewing, modi
      Project-level
    :::column-end:::
    :::column span="2":::
-      To view, create, or delete test runs, you must be granted the corresponding permission.
+      To view, create, or delete test runs, have the corresponding permission.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -266,7 +269,7 @@ There are a number of permissions that control select features for viewing, modi
      Project-level
    :::column-end:::
    :::column span="2":::
-      Manage test configurations or test environments, you must be granted the corresponding permission. 
+      Manage test configurations or test environments, have the corresponding permission. 
    :::column-end:::
 :::row-end:::
 :::row:::

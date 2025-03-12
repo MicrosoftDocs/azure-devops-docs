@@ -20,9 +20,9 @@ The Team Foundation Version Control (TFVC) `workspace` command provides a way fo
 
 ## Prerequisites
 
-- To modify or delete an existing workspace, you must be the owner or have the global **Administer workspaces** permission set to **Allow**.
-- To create a workspace, you must have the global **Create a workspace** permission set to **Allow**.
-- To create workspaces for other users, you must have the **Administer workspaces** permission set to **Allow**.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To modify or delete an existing workspace: Owner or **Administer workspaces** permission set to **Allow**.<br>- To create a workspace: **Create a workspace** permission set to **Allow**.<br>- To create workspaces for other users: **Administer workspaces** permission set to **Allow**.|
 
 For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
@@ -117,7 +117,7 @@ If you delete a workspace that contains pending changes, TFVC cancels the pendin
 
 When deleting a workspace you need to provide the `<workspace-owner>` and `<workspace-name>`
 
-You can use the `workspace` command to retrieve those values. For more information, see [workspaces command](/azure/devops/repos/tfvc/workspaces-command?view=azure-devops).
+You can use the `workspace` command to retrieve those values. For more information, see [workspaces command](workspaces-command.md).
 To find the `<workspace-owner>` value, run the following command:
 
 ```
@@ -155,7 +155,7 @@ The following example opens the **Add Workspace** dialog box and creates a new w
 c:\projects>tf workspace /new /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example creates a new workspace called **Beta1** and assigns **jenh** as the workspace owner. You must have the **AdminWorkspaces** permission to assign ownership of a new workspace to another user. For more information about security permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+The following example creates a new workspace called **Beta1** and assigns **jenh** as the workspace owner. Have the **AdminWorkspaces** permission to assign ownership of a new workspace to another user. For more information about security permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ```
 c:\projects>tf workspace /new Beta1;jenh

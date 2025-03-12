@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/29/2023
+ms.date: 11/11/2024
 ---
 
 # Change project visibility to public or private
@@ -18,37 +18,42 @@ ms.date: 11/29/2023
 
 In this article, learn how to change the visibility of your project to public or private.
 
-When you switch a private project to public visibility, it encompasses all its contents. It's not possible to selectively keep certain repositories, area paths, or build folders private.
+When you switch a private project to public visibility, all its contents become public. It's not possible to selectively keep certain repositories, area paths, or build folders private.
 
-Access is restricted for users who aren't signed in, often referred to as anonymous or public users. There are also users who are signed into Azure DevOps but aren't part of a project. Both these categories of users are given limited, read-only access as outlined in the following table.
+## Security
 
-When you switch a private project to public, all project members experience the following changes:
+When you switch a private project to public, project members experience the following changes:
 
-* Permissions marked **Deny** aren't recognized. The permissions automatically given to a nonmember set a minimum level of capabilities that can be assigned to any project member.
-* If a build pipeline is set to **Project Collection** scope, it runs with a Project scope instead, which reduces the risk of malicious users gaining access to the build service's authentication token.
-* Stakeholders have full access to **Repos** or **Code** features in public projects, but have no access in private projects.
-* Stakeholders have full access to **Boards** or **Work** in public projects, but only partial access in private projects. For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md).
-* Basic + Test Plans users can view and run tests from **Test Plans** or **Test**. Basic users need to upgrade their access level to Basic + Test Plans to get full access, which includes capability to create test plans and add test cases.
+* **Permissions**: Permissions marked **Deny** aren't recognized. Nonmembers are automatically given a minimum level of capabilities that can be assigned to any project member.
+* **Build pipelines**: If a build pipeline is set to *Project Collection* scope, it runs with a *Project* scope instead, reducing the risk of malicious users gaining access to the build service's authentication token.
+* **Stakeholders**:
+   - **Repos**: Stakeholders have full access to these features in public projects but have no access in private projects.
+   - **Boards**: Stakeholders have full access in public projects but only partial access in private projects. For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md).
+* **Basic + Test Plans users**: Basic + Test Plans users can view and run tests from Test Plans. Basic users can upgrade their access level to Basic + Test Plans to gain full access, including the capability to create test plans and add test cases.
 
-|Hub / Settings |Nonmember access |Stakeholder access |Basic access|Reader access |Contributor access  |Project Admin access  |
+### Access
+
+Access is restricted for users who aren't signed in (anonymous/public users) and users who are signed in, but aren't members of a project (nonproject members). Both categories of users, referred to as nonmembers, are given limited, read-only access as outlined in the following table.
+
+|Hub / Settings |Nonmember access |Stakeholder access |Basic access|Reader access |Contributor access  |Project administrator access  |
 |---------|---------|---------|---------|
-|**Dashboards** | read (many widgets aren't available) | partial  | full | read | read-write | read-write-administer |
+|**Dashboards** | read, + many widgets aren't available | partial  | full | read | read-write | read-write-administer |
 |**Wiki**     | read   | full | full | read | read-write | read-write-administer        |
-|**Boards (Work)** |  read | partial | full | read | read-write | read-write-administer |
-|**Repos (Code)**  | read | full | full | read | read-write |  read-write-administer   |
-|**Pipelines (Build and Release)**  | read  | full | full | read    | read-write | Read-Write-Administer |
-|**Test Plans**  | no access | no access | partial access (see last bullet prior to table) | read  |read-write | Read-Write-Administer |
-|**Notifications**  | no access | Full | Full | Read | read-write | read-write-administer |
+|**Boards** |  read | partial | full | read | read-write | read-write-administer |
+|**Repos**  | read | full | full | read | read-write |  read-write-administer   |
+|**Pipelines**  | read  | full | full | read    | read-write | read-write-administer |
+|**Test Plans**  | no access | no access | partial access | read  |read-write | read-write-administer |
+|**Notifications**  | no access | full | full | read | read-write | read-write-administer |
 |**Search**   | full| full | full | full | full | full |
-|**Settings**   | No access| Full | Full | Read | Read | Read-Write-Administer |
+|**Settings**   | no access| full | full | read | read | read-write-administer |
 
 ## Prerequisites
 
-- You must have [an organization](../../user-guide/sign-up-invite-teammates.md) in Azure DevOps.
-- You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- Understand [access levels and unavailable features for public projects](#access-levels-and-unavailable-features-for-public-projects).
-- Be aware of [partial migration options](#partial-migration).
-- Review items in the [migration checklist](#migration-checklist). 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Organization** |An [organization](../../user-guide/sign-up-invite-teammates.md).|
+|**Tasks**| - Understand [access levels and unavailable features for public projects](../security/access-levels.md).<br>- Awareness of [partial migration options](#partial-migration).<br>- Review items in the [migration checklist](#migration-checklist). |
 
 ### Migration checklist
 
@@ -92,7 +97,7 @@ The following checklist indicates those items you might want to review before yo
    :::column span="2"::: 
 :::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data. Work-items maintain their history when they're migrated from a private to public project. All discussions and descriptions are available. Check that none contains problematic speech.
 
-:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of your area paths have special, locked-down security settings. Denied permissions aren't enforced in a public project, so restricted area paths become public.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of your area paths have special locked-down security settings. Denied permissions aren't enforced in a public project, so restricted area paths become public.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -154,7 +159,7 @@ If not, ask the extension author to add support for nonmembers.
 
 ## 1. Enable anonymous access to projects
 
-Before you can change a private project to a public project, you must enable anonymous access for your organization.
+Before changing a private project to a public project, enable anonymous access for your organization by doing the following steps:
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
 
@@ -163,24 +168,19 @@ Before you can change a private project to a public project, you must enable ano
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
 
-3. Select **Policies**, and then turn **On** the **Allow public projects** security policy.
+3. Select **Policies**, and then turn on the **Allow public projects** security policy.
 
    :::image type="content" source="media/rename-project/org-policies-change-anon.png" alt-text="Screenshot showing Organization settings, Policy page, Security policies flow.":::
 
 ## 2. Set project visibility
 
-1. Sign in to your project (```https://dev.azure.com/{YourOganization}{YourProject}```). 
+1. Sign in to your project (```https://dev.azure.com/{Your_Oganization}{Your_Project}```). 
 2. Select **Project settings** > **Overview** > the **Visibility** dropdown menu, choose **Public** or **Private**, and then **Save**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Project Settings, Overview, Visibility flow.](media/switch-to-public.png) 
 
-## Access levels and unavailable features for public projects
-
-A project member has access to features based on the access level assigned. Nonmembers / public users are granted limited access automatically. 
-To contribute to a public project, you must be added as a member of that project and assigned either Stakeholder, Basic, or Basic + Test Plans access. Access levels determine the user interfaces that you can access. The security group you're assigned to determines the features you can exercise. For more information, see [About access levels](../security/access-levels.md).
-
-You [add project members](../accounts/add-organization-users.md) in the same way you do for private projects. Be sure you understand what it means to [invite an external user](../accounts/add-external-user.md) to have access to your project. If you created the project, you're automatically assigned to the Project Administrators group.
+## Limited UI elements for public projects
 
 The following user interface elements are hidden for nonmembers.
 
@@ -243,11 +243,17 @@ The following user interface elements are hidden for nonmembers.
 
 Nonmembers can't do the following tasks:
 
-* Edit or create artifacts, such as files, work items, and pipelines
-* Favorite and follow existing artifacts
-* View project members' email addresses and other contact information; nonmembers can only see name and picture. Also, filter lists of artifacts by identity
-* Switch between two public projects in the same organization; nonmembers must go directly to a public project using a URL
-* Perform code or work item searches across an organization
+* Edit or create artifacts, such as files, work items, and pipelines.
+* Favorite and follow existing artifacts.
+* View project members' email addresses and other contact information; nonmembers can only see names and pictures. Also, filter lists of artifacts by identity.
+* Switch between two public projects in the same organization; nonmembers can only go directly to a public project using a URL.
+* Perform code or work item searches across an organization.
+
+## Add contributors to a public project
+
+To contribute to a public project, get added as a member and assigned either Stakeholder, Basic, or Basic + Test Plans access. For more information, see [About access levels](../security/access-levels.md).
+
+You [add project members](../accounts/add-organization-users.md) the same way you do for private projects. Ensure you understand the implications of [inviting an external user](../accounts/add-external-user.md). If you created the project, you're automatically assigned to the Project Administrators group.
 
 ## Partial migration
 
@@ -272,6 +278,8 @@ Create the new repository in a project that you don't mind making public.
 > - The new repository doesn't connect to the old one.
 > - You can't easily migrate changes between them in the future.
 > - Your pull request history doesn't migrate.
+
+Do the following steps to migrate the Git tip only:
 
 1. Clone the existing repository: `git clone <clone_URL>`.
 2. Make sure you're in the root of the repository: `cd <reponame>`.

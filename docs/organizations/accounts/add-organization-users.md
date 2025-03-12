@@ -2,7 +2,7 @@
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
 ms.custom: devx-track-azurecli
-description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
+description: Learn how to add users to an organization and manage users' access levels, direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
@@ -22,8 +22,9 @@ Learn how to add users to your organization and manage user access through direc
 The following types of users can join your Azure DevOps Services organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level. 
+* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries. Don't use Stakeholder access as a substitute for more limited permissions, as users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder when they sign in. For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md).
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level.
+* Unlimited [GitHub Enterprise users](https://github.com/enterprise) who also get Basic features when they sign in with their GitHub Enterprise account.
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
@@ -32,8 +33,10 @@ The following types of users can join your Azure DevOps Services organization fo
 
 ## Prerequisites
 
-* [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-* **Organization:** Have an organization. If you don't have an organization, [create one](create-organization.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Organization** | An [organization](create-organization.md).|
 
 For an overview of the methods supported for adding users to an organization, see [Add and manage user access](organization-management.md#add-users).
 
@@ -244,7 +247,7 @@ ID                                    Display Name         Email                
 
 * * *
 
-## Restrict users' view to organization projects
+## Restrict user visibility to organization and project information
 
 To restrict certain users' access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they aren't explicitly added to.
 
@@ -269,8 +272,6 @@ To add users to the new **Project-Scoped Users** group, do the following steps:
 5. Select **Security** > **Permissions** > **Project-Scoped Users**. 
 6. Choose the **Members** tab. 
 7. Add all users and groups that you want to scope to the project you added them to.
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
 

@@ -1,7 +1,9 @@
 ---
 ms.topic: include
-ms.date: 10/23/2024
+ms.date: 01/13/2025
 ---
 
-- **Permissions:** Be a member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- **Access levels:** Have at least Basic access.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Access levels**| At least **Basic** access.|

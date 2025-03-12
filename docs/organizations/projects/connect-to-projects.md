@@ -8,14 +8,14 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x 
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2023
+ms.date: 11/11/2024
 ---
 
 # Connect to a project
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Learn how to connect to a project, from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
+Learn how to connect to a project from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)   
@@ -27,9 +27,11 @@ A project defines a process and data storage in which you manage your software p
 
 ## Prerequisites
 
-- You must [have a project](create-project.md) in your organization. If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
-- From each client, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
-- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/index.yml).
+| Category | Requirements |
+|--------------|-------------|
+|**Project membership**  |[Project member](../projects/create-project.md). |
+|**Remote work** |If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy). From each client, you can switch context to a different project and connect as a different user. |
+|**Code base setup**| [Set up Git](../../repos/git/gitquickstart.md) or [Set up Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml).|
 
 <a id="web-portal">  </a>
 
@@ -148,7 +150,6 @@ If you selected just one project, you see the **Home** page for that project. Th
 
 Team Explorer displays the **Home** page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your project.
 
-> [!div class="mx-tdBreakAll"]  
 > |Home page with Git  |Home page with TFVC  |
 > |-------------|----------|
 > |:::image type="content" source="media/te-home-page-git-repo.png" alt-text="Screenshot of Team Explorer Home page with Git as source control.":::|:::image type="content" source="media/te-home-page-tfvc-repo.png" alt-text="Screenshot of Team Explorer Home page w/ TFVC as source control.":::|
@@ -193,9 +194,7 @@ Your client remembers the set of connections you configure. You can switch from 
 
 ### Visual Studio 2017
 
-
 <a id="connect-account-dialog"></a>
-
 <a id="vs-2015-connect-account-dialog"></a>
 
 1. From **Connect**, choose **Connect to Team Project** to sign in with different credentials.

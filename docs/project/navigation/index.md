@@ -60,7 +60,7 @@ Here's what you need to know to get up and running using the web portal.
 
 
 ::: moniker range=">= azure-devops-2019"  
-You select services—such as **Boards**, **Repos**, and **Pipelines—from the sidebar and pages within those services. 
+You select services—such as **Boards**, **Repos**, and **Pipelines**—from the sidebar and pages within those services. 
 
 ![Vertical sidebar](media/gif-images/vertical-nav.gif)
 

@@ -2,7 +2,7 @@
 title: Use an index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
 description: Learn how to use an index to query operators, macros, and sample queries that are used to list work items for Azure Boards and Azure DevOps.
-ms.custom: boards-queriess, engagement-fy23
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview 
 ms.author: chcomley
@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/05/2022
 ---
 
-# Use an index to query quick reference data in Azure Boards and Azure DevOps
+# Use an index to query quick reference data
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -169,7 +169,7 @@ You can list work items based on the following criteria...
       ::: moniker range="azure-devops"
       - [Rename a query or query folder](organize-queries.md#rename-or-delete-a-query)) 
       - [Run a query](view-run-query.md) 
-      - [Save a query](organize-queries.md#run-edit-and-save-a-query) 
+      - [Copy and save a query](organize-queries.md#copy-edit-and-save-a-query) 
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#use-a-work-item-tree-to-view-hierarchies)
       - [View a query](view-run-query.md) 
@@ -181,7 +181,7 @@ You can list work items based on the following criteria...
       ::: moniker range="< azure-devops"
       - [Rename a query or query folder](organize-queries.md#rename-or-delete-a-query) 
       - [Run a query](using-queries.md) 
-      - [Save a query](organize-queries.md#run-edit-and-save-a-query)
+      - [Copy and save a query](organize-queries.md#copy-edit-and-save-a-query)
       - [Save a query as a team favorite](organize-queries.md#save-a-query-as-a-team-favorite)  
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#use-a-work-item-tree-to-view-hierarchies) 

@@ -16,7 +16,7 @@ ms.date: 04/29/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Your board in Azure DevOps lets you visualize your team’s tasks, track progress, and manage work items efficiently. This article provides step-by-step instructions on how to add task checklists to your board, enhancing your team’s productivity and transparency.
+Your board in Azure DevOps lets you visualize your team’s tasks, track progress, and manage work items efficiently. This article provides step-by-step instructions on how to add task checklists to items on your board, enhancing your team’s productivity and transparency.
 
 The following image shows a representation of various tasks and bugs in progress. Some are still pending, while others are marked as completed. By incorporating the Issue work item type into your Iteration backlog, you can seamlessly add issues as checklists
 
@@ -40,15 +40,17 @@ Make use of the following features for checklists.
 > [!TIP]    
 > You can disable it from the [common configurations dialog](customize-cards.md).  
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 [!INCLUDE [temp](../includes/open-kanban-board.md)]
 
 ## Add one or more child items to a checklist
 
-In the following example, tasks get added to the product board using the checklist feature. You can use the same procedures to add any other supported checklist item from your board.  
+In the following example, tasks get added to an item on the product board using the checklist feature. You can use the same procedures to add any other supported checklist item from your board.  
 
-1. From your board, select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Work item actions** > **+ Add Task**. If you already have a work item open, select **Add link** > **New item**. For more information, see [Link work items to objects](../backlogs/add-link.md).
+1. From your board, select an item and select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Work item actions** > **+ Add Task**. If you already have a work item open, select **Add link** > **New item**. For more information, see [Link work items to objects](../backlogs/add-link.md).
 
     :::image type="content" source="media/checklists/add-task-menu.png" alt-text="Screenshot of open the context menu of work item to add a task.":::
 
@@ -100,13 +102,13 @@ Tasks or other child items you add as checklists are automatically assigned to t
 Checklist items show the avatars of those team members assigned to the item. You can view the avatar assignment of checklist items, or reassign a checklist item by choosing the item's &hellip;**Work items action menu** and selecting **Assigned to**.  
 
 > [!NOTE]   
-> Avatar images and the **Assign to** menu option requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> Avatar images and the **Assign to** menu option require the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 :::image type="content" source="media/checklists/checklist-actions-menu.png" alt-text="Screenshot of Boards, list of tasks showing avatars, and checklist of work items action menu.":::
 
 ::: moniker-end
 
-## Configure your board 
+## Configure your board
 
 To configure or change the layout of your board, see [Customize your boards](../configure-customize.md). 
 

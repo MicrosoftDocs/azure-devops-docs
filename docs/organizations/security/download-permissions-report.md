@@ -21,8 +21,7 @@ You can also use the [Permissions Report REST API](/rest/api/azure/devops/permis
 
 ## Prerequisites
 
-- To download the permissions report, you must be a member of the Project Collection Administrators group. The user interface button won't appear for users who aren't a member of this group. 
-
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
 ## Open Project Settings>Repositories  
 

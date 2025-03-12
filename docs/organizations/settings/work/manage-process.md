@@ -28,6 +28,8 @@ For more information about what you can customize, see [About process customizat
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
 
 <a id="create-inherited-process"></a>

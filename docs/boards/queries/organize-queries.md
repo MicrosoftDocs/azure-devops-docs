@@ -29,11 +29,12 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
-> The browser images used in this article are from the new boards hubs feature, which is enabled by default. If this feature is not enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 ::: moniker-end
- 
+
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open a query 
@@ -41,11 +42,11 @@ Organize your personal or shared queries by adding a query folder. You can then 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
 
-## Run, edit, and save a query  
+## Copy, edit, and save a query  
 
-The easiest way to define a query is to start with an existing shared query. 
-The following example shows how to find all closed bugs by modifying the 
-*Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
+You can copy a query within the same project by selecting a query and saving it with a new name with the **Save as** option.  
+
+The easiest way to define a query is to start with an existing shared query. The following example shows how to find all closed bugs by modifying the *Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
 #### [Browser](#tab/browser/)
 
@@ -88,7 +89,7 @@ The following example shows how to find all closed bugs by modifying the
 1. Select **Save as** in the more actions ![More actions](../../media/icons/more-actions.png) menu.
 
     > [!NOTE]
-    > When the **New Boards Hubs** feature is not enabled, the **Save As** selection is at the top of the page.
+    > If the **New Boards Hubs** feature is disabled, the **Save As** selection is at the top of the page.
 
 1. Save the query to your **My Queries** folder.  
 
@@ -231,7 +232,7 @@ All changes you make to your query folder structure in Visual Studio appear in t
 
 ## Save a query as a team favorite
 
-To save a shared query as a team favorite, you must be a member of the team.
+To save a shared query as a team favorite, be a member of the team.
 
 You can add a shared query to team favorites. Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
@@ -262,7 +263,7 @@ You can only add shared queries as team favorites if you have [team administrato
 A query tile displays a count of the work items in a query. You can also quickly open the query from the dashboard. You can add a query tile to a dashboard from the **Queries** page using the following steps, or by following the steps outlined in [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
  
 > [!NOTE]   
-> You must be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
+> Be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
 
 ::: moniker range="< azure-devops"
 

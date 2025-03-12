@@ -50,28 +50,25 @@ Test Results Trend charts require that you set up continuous testing in your bui
 
 ## Prerequisites
 
-To configure the Test Results Trend widget:  
-
 ::: moniker range="azure-devops"
 
-- You must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). 
-- Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin. Default settings provide all team members with permissions.
-- Enable **Pipelines**. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Enable **Test Plans**. If disabled, the Test Results Trend widget displays an "Access not supported" error message. To enable test plans, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+| Category | Requirements |
+|-------------|-------------|
+| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Permissions** |- By default, users with at least **Basic** access can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).<br>- To add a widget to a team dashboard, you need to be a member of the team. Have at least **Basic** access, [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin. Default settings provide all team members with permissions.|
+|**Services** |- **Azure Pipelines** enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).<br>- **Test Plans** enabled. If disabled, the Test Results Trend widget displays an "Access not supported" error message. To enable test plans, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).<br>- **Continuous testing** set up for your build pipeline. For more information, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests). |
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-- You must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
--  Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-- Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions.
-- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin.
-- Enable **Pipelines**. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+| Category | Requirements |
+|-------------|-------------|
+| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Permissions** |- To add a widget to a team dashboard, you need to be a member of the team. Have at least **Basic** access, [dashboard permissions](./dashboard-permissions.md), or [team admin](../../organizations/settings/add-team-administrator.md) or project admin. Default settings provide all team members with permissions.|
+|**Services** |- **Azure Pipelines** enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).<br>- [Analytics Marketplace extension](../dashboards/analytics-extension.md). A member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) can add extensions.<br>- **Continuous testing** set up for your build pipeline. For more information, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests). |
 
 ::: moniker-end
-
 
 <a id="configure-widget"></a>
 

@@ -28,17 +28,19 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 
 ::: moniker range="azure-devops"
 
-* **Permissions:** 
-  * Be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-  * Have the **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#view-project-level-permissions).
-* **Optional:** [Save project data](#save-project-data) before deleting a project if you want to access project data without restoring it.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#view-project-level-permissions).|
+|**Optional**| [Save project data](#save-project-data) before deleting a project if you want to access project data without restoring it.|
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 
-* **Permissions:** Have the **Delete team project** permission set to **Allow**. For more information, see [View permissions](../security/view-permissions.md).
-* **Optional:** [Save project data](#save-project-data), as deleting a project results in irreversible data loss.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| **Delete team project** permission set to **Allow**. For more information, see [View permissions](../security/view-permissions.md).|
+|**Optional**| [Save project data](#save-project-data), as deleting a project results in irreversible data loss.|
 
 ::: moniker-end  
 
@@ -252,9 +254,6 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
    (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
    deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
    ```
-
-   Something similar to the following screenshot appears:
-   ![Screenshot of PowerShell script return example for deleted projects.](media/restore-project/deleted-projects-powershell-script-2019.png)
 
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
 

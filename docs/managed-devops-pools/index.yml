@@ -8,7 +8,7 @@ metadata:
   titleSuffix: Azure DevOps 
   description: Managed DevOps Pool is a fully managed service where VMs or containers powering the agents will live in a Microsoft Azure subscription and not in your own Azure subscription.
   ms.topic: landing-page 
-  ms.date: 10/18/2024
+  ms.date: 02/03/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -22,6 +22,8 @@ landingContent:
         links:
           - text: What is Managed DevOps Pools?
             url: overview.md
+          - text: Compare with Azure Virtual Machine Scale Set agents
+            url: migrate-from-scale-set-agents.md
       - linkListType: quickstart
         links:
           - text: Azure portal
@@ -62,8 +64,26 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: .NET
+            url: /dotnet/api/overview/azure/devops-infrastructure
+          - text: ARM template
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
           - text: Azure CLI
             url: /cli/azure/service-page/managed%20devops%20pools
+          - text: Azure PowerShell
+            url: /powershell/module/az.mdp
+          - text: Bicep
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
+          - text: Java
+            url: /java/api/overview/azure/devops-infrastructure
+          - text: JavaScript
+            url: /javascript/api/overview/azure/devops-infrastructure
+          - text: Python
+            url: /python/api/overview/azure/devops-infrastructure
+          - text: REST
+            url: /rest/api/devopspools
+          - text: Terraform
+            url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-terraform
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
@@ -72,6 +92,8 @@ landingContent:
             url: monitor-pool.md
           - text: Diagnostic logs
             url: diagnostics.md
+          - text: Troubleshooting
+            url: troubleshooting.md
           - text: Reliability
             url: reliability-managed-devops-pools.md
   - title: Manage costs

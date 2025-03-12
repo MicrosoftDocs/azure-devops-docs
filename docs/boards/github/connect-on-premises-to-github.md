@@ -34,11 +34,11 @@ When you connect your Azure DevOps Server project with your GitHub Enterprise Se
 
 ## Prerequisites 
  
-* Connect to GitHub.com repositories by installing Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
-* [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
-* Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-* You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-* You must be an administrator of the GitHub Enterprise Server that you connect to. 
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. <br> - **Administrator** of the GitHub Enterprise Server that you connect to. |
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
+| **Integration with GitHub** | - Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories. <br> - [Azure Boards app for GitHub](install-github-app.md) installed on the GitHub organizations or account. |
 
 ## Authentication options
 
@@ -46,7 +46,7 @@ The following authentication options are supported.
 
 ::: moniker range="azure-devops-2020"
 - [PAT](#server-github-ent-pat)
-- [Username and password](#server-github-ent-username)
+- [GitHub credentials](#server-github-ent-credentials)
 
 > [!NOTE] 
 > OAuth isn't supported for Azure DevOps Server 2020.  
@@ -55,7 +55,7 @@ The following authentication options are supported.
 ::: moniker range="azure-devops-2019"
 - [OAuth (Recommended, registration required)](#server-github-ent-oauth-register) 
 - [PAT](#server-github-ent-pat)
-- [Username and password](#server-github-ent-username)
+- [GitHub credentials](#server-github-ent-credentials)
 ::: moniker-end
 
 <a id="github-oauth"></a>
@@ -154,7 +154,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 4.	If it's the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
 
 	- **Personal Access Token**, for details see [Connect using a Personal Access Token](#github-ent-pat). 
-	- **User Name and Password**, see [Connect using a Username and Password](#server-github-ent-username).
+	- **GitHub credentials**, see [Connect using GitHub credentials](#server-github-ent-credentials).
 
 	:::image type="content" source="media/github-ent/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
@@ -162,11 +162,10 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 
-3. Select **Project settings** > **GitHub connections** > **Connect your GitHub Enterprise account**.   
+3. Select **Project settings** > **GitHub connections** > **Connect your GitHub Enterprise account** or choose from the other authentication options, which we don't recommend.   
 
    :::image type="content" source="media/github-ent/open-project-settings-github-connections.png" alt-text="Screenshot of Project settings, selected Integrations.":::   
 
-	Or, choose a **personal access token** or **username and password**, if you're using those credentials.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -193,13 +192,13 @@ Choose the configuration that you set up in [Step 4 of Register your OAuth confi
 
    :::image type="content" source="media/github-ent/ads-add-ghe-pat.png" alt-text="Screenshot of sign in with PAT.":::
 
-<a id="server-github-ent-username"></a>
+<a id="server-github-ent-credentials"></a>
 
-#### Connect with a username and password   
+#### Connect with GitHub credentials   
 
 1.	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose **Connect**.
 
-   :::image type="content" source="media/github-ent/ads-add-ghe-user-name.png" alt-text="Screenshot of sign in with username and password."::: 
+   :::image type="content" source="media/github-ent/ads-add-ghe-user-name.png" alt-text="Screenshot of sign in with GitHub credentials."::: 
 
 2. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when you're done.
 
@@ -239,7 +238,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column span="1":::
       - OAuth  
       - PAT
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -251,7 +250,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column-end:::
    :::column span="1":::
       - PAT 
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -264,7 +263,7 @@ The following authentication options are supported based on the GitHub platform 
    :::column span="1":::
       - OAuth  
       - PAT
-      - Username plus password
+      - GitHub credentials
    :::column-end:::
 :::row-end:::
  
@@ -295,20 +294,24 @@ Consider the following resolutions:
 	Delete and recreate the connection to the GitHub repository. This recreated connection causes GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
-  - The PAT may have been revoked or the required permission scopes changed and are insufficient.
-  - The user may have lost admin permissions on the GitHub repo.  
+  - The PAT  was revoked or the required permission scopes changed and are insufficient.
+  - The user perhaps lost administrative permissions on the GitHub repository.  
 
-	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`.
+	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. For more information, see [Best practices for using PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#best-practices-for-using-pats).
 
 <a id="update-wits"></a>
 
 #### Update XML definitions for select work item types 
 
-If your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience, and you want to link to and view the GitHub link types from the Development section in the work item forms, you must update the XML definitions for the work item types. 
+If your organization customizes work tracking using the Hosted XML or on-premises XML process model and wants to integrate GitHub link types into the Development section of work item forms, you must update the XML definitions for the corresponding work item types.
 
-For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
+For example, to link user stories and bugs to GitHub commits and pull requests within the **Development** section of work item forms, you must update the XML definitions for these work item types.
 
-Follow the sequence of tasks provided in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to update the XML definitions. For each work item type, find the `Group Label="Development"` section, and add the following two lines in the following code syntax to support the external links types: **GitHub Commit** and **GitHub Pull Request**.  
+To modify the XML definitions, do the steps outlined in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md). For each work item type:
+1. Locate the `Group Label="Development"` section.
+2. To support the external link types, **GitHub Commit** and **GitHub Pull Request**, add the following lines of code:
+
+This integration enables seamless tracking of GitHub activities directly from your work items in Azure Boards.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -349,6 +352,6 @@ When it updates, the section should appear as follows.
 
 ## Related articles
 
-- [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Learn about Azure Boards](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)

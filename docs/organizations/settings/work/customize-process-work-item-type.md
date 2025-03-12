@@ -23,6 +23,8 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
@@ -94,7 +96,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 > [!NOTE]    
 > Disabling a WIT removes the WIT from the **New** drop down and add experiences. Creating a work item of that WIT is also blocked via REST APIs.  
 >
-> No changes are made to existing work items of that type. You can update or delete them and they continue to appear on backlogs and boards. Both work item types need to be ebabled in order to do a change type operation.
+> No changes are made to existing work items of that type. You can update or delete them and they continue to appear on backlogs and boards. Both work item types need to be enabled in order to do a change type operation.
 
 <a id="destroy">  </a>
 
@@ -105,7 +107,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 1. To completely remove a custom WIT and all work items based on that WIT, choose **Destroy** from the WIT context menu.
 
-	To destroy a WIT, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	To destroy a WIT, be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 
 

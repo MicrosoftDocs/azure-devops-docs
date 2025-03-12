@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 11/08/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -18,21 +18,18 @@ monikerRange: 'azure-devops'
 
 This article explains how to switch your organization's connection from one Microsoft Entra ID to another. When you change directories, your project resources remain unaffected.
 
+You might want to switch to a different directory to align with organizational changes, such as mergers or acquisitions, or to consolidate multiple directories for better management and security.
+
 For more information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-- **Permissions:** Be a member of the Project Collection Administrator group for the organization.
-
-- **Access:**
-  - Be a member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).
-  - Be a member or a guest in the source Microsoft Entra ID.
-
-- **User management:** 
-  - Confirm there are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Microsoft Entra identities in the new tenant.
-  - Don't add the users from the destination Microsoft Entra ID into the Azure DevOps organization.
-
-- **SSH keys:** Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. You can find the steps for how to recreate SSH keys [further in this article](#inform-users-microsoft-entra-change). For more information, see the [FAQ](faq-azure-access.yml).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Access levels**|- Member in the destination Microsoft Entra ID. For more information, see how to [convert a Microsoft Entra guest into a member](faq-azure-access.yml).<br>- Member or a guest in the source Microsoft Entra ID.|
+|**User management** |- 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Microsoft Entra identities in the new tenant.<br>- Don't add the users from the destination Microsoft Entra ID into the Azure DevOps organization.|
+|**SSH keys** |Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. Find the steps for how to recreate SSH keys [further in this article](#inform-users-microsoft-entra-change). For more information, see the [FAQ](faq-azure-access.yml).|
 
 ### Custom domains
 

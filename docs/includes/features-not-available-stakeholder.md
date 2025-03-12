@@ -11,7 +11,7 @@ ms.date: 04/04/2022
 If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to provide them **Basic** access.   
 
 > [!NOTE]   
-> Even if Stakeholders are explicity granted permissions to some features, they are disallowed access to the feature due to their access level. Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
+> Even if Stakeholders are explicitly granted permissions to some features, they are disallowed access to the feature due to their access level. Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
 
 
 ::: moniker range="azure-devops"

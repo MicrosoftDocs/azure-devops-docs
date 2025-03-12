@@ -43,17 +43,14 @@ For example, the following image illustrates two different charts created from t
 
 ## Prerequisites
 
-Prerequisites to meet include having **Basic** access or higher and creating a flat-list query. Only flat-list queries support charts.
-
-If you want to add the chart to a dashboard, save the query under the **Shared Queries** folder and create the dashboard where you want to add the chart.
-
 ::: moniker range=">= azure-devops-2020"
 
-- To create a query chart, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-- To add a chart to a dashboard, you must save the query to a **Shared Queries** folder. To do that, you must have permissions to save queries under a folder. To get permissions, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
-- To add a query chart to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
-- To add a query chart to a project dashboard, you must create the dashboard or have permissions to edit the dashboard, or be a member of the **Project Administrators** security group.
-- To view a query chart added to a dashboard, you must have **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message.
+| Category | Requirements |
+|-------------|-------------|
+| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Permissions** |- To add a query chart to a team dashboard: Member of the team or member of the **Project Administrators** security group.<br>- To add a query chart to a project dashboard: Dashboard creator or permissions to **Edit** the dashboard or member of the **Project Administrators** security group.<br>- To view a query chart added to a dashboard: **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message.<br>For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+| **Queries** | - Only [flat-list queries](#create-a-flat-list-query) support charts.<br>- To add a chart to a dashboard: Save the query to a **Shared Queries** folder. To do so, [get permissions to save queries under a folder](../../boards/queries/set-query-permissions.md). |
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -64,13 +61,13 @@ If you want to add the chart to a dashboard, save the query under the **Shared Q
 
 ::: moniker range="< azure-devops-2020"
 
-- To create a query chart, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-- To add a chart to a dashboard, you must save the query to a **Shared Queries** folder. To do that, you must have permissions to save queries under a folder. To get permissions, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
-- To add a query chart to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
-- To view a query chart added to a dashboard, you must have **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message.
-::: moniker-end
+| Category | Requirements |
+|-------------|-------------|
+| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Permissions** |- To create a query chart: At least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).<br>- To add a chart to a dashboard: Save the query to a **Shared Queries** folder. To do so, have permissions to save queries under a folder. To get permissions, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).<br>- To add a query chart to a team dashboard: Member of the team or member of the **Project Administrators** security group.<br>- To view a query chart added to a dashboard: **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message.<br>For more information about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). |
+| **Queries** | - Only [flat-list queries](#create-a-flat-list-query) support charts.<br>- To add a chart to a dashboard: Save the query to a **Shared Queries** folder. To do so, [get permissions to save queries under a folder](../../boards/queries/set-query-permissions.md). |
 
-For more information about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md).
+::: moniker-end
 
 ### Create a flat-list query  
 
@@ -149,7 +146,7 @@ When a chart contains more than 8 or 12 items within the data series, values in 
 
 ## Create a query-based chart  
 
-1. From **Queries**, open the chart editor for a flat-list query. To create charts, you must belong to the Contributors group.
+1. From **Queries**, open the chart editor for a flat-list query. To create charts, belong to the Contributors group.
 
    ::: moniker range=">= azure-devops-2019"
    :::image type="content" source="media/charts/new-chart-new-qe.png" alt-text="Screenshot of the Charts tab with the New chart button.":::

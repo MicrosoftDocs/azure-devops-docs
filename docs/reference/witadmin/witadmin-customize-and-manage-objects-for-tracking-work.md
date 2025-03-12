@@ -27,7 +27,7 @@ As the following illustration shows, you manage categories and types of and work
   
 ![Conceptual image of Work Item Tracking Objects.](media/pnt_wit_objects.png)
 
-For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
+For most commands, be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 

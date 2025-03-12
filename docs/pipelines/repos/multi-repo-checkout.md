@@ -181,7 +181,7 @@ steps:
 > [!NOTE]
 > In the previous example, the `self` checkout repository is specified in order to checkout the source of the repository associated with the pipeline.
 >
-> If you are using the default Azure Repos Git repository (that has the same name as the project), use the format `- checkout: git://MyRepo/MyRepo`.
+> If you are using the default Azure Repos Git repository (that has the same name as the project), use the format `- checkout: git://MyProject/MyRepo`.
 
 ## Checkout path
 
@@ -198,6 +198,22 @@ If a `path` is specified for a `checkout` step, that path is used, relative to `
 
 > [!NOTE]
 > If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
+
+## Workspace repository
+
+When multiple `checkout` steps (and different paths for each) are used in your pipeline, you may want to use the root directory of one the repositories as the default working directory. If so, you can set the `workspaceRepo` input to `true` for the related `checkout` step.
+
+```yaml
+- checkout: git://project/first
+  path: repo/first-repo
+
+- checkout: git://project/second
+  path: repo/second-repo
+  workspaceRepo: true
+
+- pwsh: pwd
+# Expected output: $(Pipeline.Workspace)/repo/second-repo
+```
 
 ## Checking out a specific ref
 

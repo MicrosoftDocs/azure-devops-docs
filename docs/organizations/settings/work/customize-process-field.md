@@ -24,6 +24,7 @@ For a list of all fields defined for your organization&mdash;which includes all 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
@@ -342,7 +343,7 @@ Deleting a field deletes all data associated with that field, including historic
 
 	![Delete field](media/process/cpfield-delete-field.png) 
 
-	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to Delete field from account](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	To delete fields, be a member of the Project Collection Administrators group or be [granted explicit permissions to Delete field from account](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the field as shown. 
 

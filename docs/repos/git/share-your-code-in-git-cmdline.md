@@ -21,11 +21,19 @@ The instructions in this article use the default bash shell used on Linux and ma
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of a [project](../../organizations/projects/create-project.md). |
+| **Permissions** | - View code in private projects: At least **Basic** access.<br>- Clone or contribute to code in private projects: Member of the **Contributors** security group or corresponding permissions in the project.<br>- Set branch or repository permissions: **Manage permissions** permissions for the branch or repository.<br>- Change default branch: **Edit policies** permissions for the repository.<br>- Import a repository: Member of the **Project Administrators** security group or Git project-level **Create repository** permission set to **Allow**. For more information, see [Set Git repository permissions](set-git-repository-permissions.md). |
+| **Services** | [Repos enabled](../../organizations/settings/set-services.md). |
+| **Tools** | Optional. Use **az repos** commands: [Azure DevOps CLI](../../cli/index.md).|
+
+> [!NOTE]
+> In public projects, users with **Stakeholder** access have full access to Azure Repos, including viewing, cloning, and contributing to code.
 
 ## Download and install Azure CLI and add Azure DevOps extension
 
-1. [Install the Azure CLI](/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
+1. [Install the Azure CLI](/cli/azure/install-azure-cli). At least `v2.0.49`, which you can verify with `az --version` command.
 
 2. Add the Azure DevOps Extension `az extension add --name azure-devops`
 

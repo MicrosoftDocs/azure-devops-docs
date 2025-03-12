@@ -26,18 +26,19 @@ You can get a list of users and groups that have access to your organization in 
 You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.
 ::: moniker-end
 
-
-
 ## Prerequisites
 
 ::: moniker range="azure-devops"
 
-* You must be the **Organization owner** or a member of the **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md).
-  ::: moniker-end
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
-  ::: moniker range="< azure-devops"
-* You must be a member of the Administrators group. If you aren't a member, get added now. For more information, see [Add administrators](/azure/devops/server/admin/add-administrator).
-  ::: moniker-end
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+[!INCLUDE [prerequisites-project-administrator-only](../../includes/prerequisites-project-administrator-only.md)]
+
+::: moniker-end
 
 ## Export a list of users
 
@@ -113,7 +114,7 @@ az devops user list [--org] [--skip] [--top]
 #### Parameters
 
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. For example, `--org https://dev.azure.com/MyOrganizationName/`.
-- - **skip**: Optional. Number of users to skip.
+- **skip**: Optional. Number of users to skip.
 - **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.
 
 #### Example

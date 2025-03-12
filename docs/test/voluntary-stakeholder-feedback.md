@@ -17,6 +17,14 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
+| **Extensions** |[Test & Feedback extension](perform-exploratory-tests.md).|
+
 <a name="voluntary"></a>
 
 ## Provide voluntary feedback  
@@ -65,7 +73,7 @@ Use the Test & Feedback extension to provide voluntary feedback, even if you don
 
 10. Select the **Stop** icon to end your feedback session. 
      
-   ![Screenshot showing highlighted sqare icon to stop your feedback session.](media/shared/provide-stakeholder-feedback-12.png)
+   ![Screenshot showing highlighted square icon to stop your feedback session.](media/shared/provide-stakeholder-feedback-12.png)
 
 ## Related articles
 

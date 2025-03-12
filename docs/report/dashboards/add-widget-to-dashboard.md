@@ -22,11 +22,13 @@ Widgets smartly format data to provide access to easily consumable data. You add
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ## Open a dashboard 
 
-All dashboards are associated with a team. You must be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
+All dashboards are associated with a team. Be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all work tracking Analytics widgets are disabled and don't appear in the [widget catalog](widget-catalog.md). If Analytics is disabled or not installed, then all Analytics widgets are disabled. 

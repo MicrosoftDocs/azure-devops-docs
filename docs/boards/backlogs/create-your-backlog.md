@@ -23,6 +23,8 @@ The product backlog is your project plan, which shows what your team intends to 
 
 [!INCLUDE [link other articles](../includes/note-configure-customize.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](../includes/prerequisites.md)]
 
 ## Add a backlog
@@ -146,7 +148,7 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 :::image type="content" source="media/create-backlog/cyb-order-backlog.png" alt-text="Screenshot of Reordered work items in the backlog.":::
 
 > [!NOTE]  
-> To reorder a backlog, you must have Basic or higher level access. If you have Stakeholder access, you can't reorder backlog items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> To reorder a backlog, have at least Basic access. If you have Stakeholder access, you can't reorder backlog items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:
 

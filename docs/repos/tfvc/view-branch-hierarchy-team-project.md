@@ -25,6 +25,14 @@ As a project grows, its branch structure typically also grows and becomes more c
 
 The following procedures explain how to use Team Foundation Version Control (TFVC) to answer these types of questions.
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
 ## View and work with your branches
 
 You can use the **Hierarchy** window to perform the following tasks:

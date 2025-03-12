@@ -7,7 +7,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019  
+ms.date: 01/30/2025  
 monikerRange: '<= azure-devops'
 ---
 
@@ -19,12 +19,28 @@ When you create a team role-based notification subscription, you can choose the 
 
 For example, if your team has a subscription for a _pull request created_ event, the user who creates the pull request in the project doesn't receive this notification email. Other members of the team receive the notification email.
 
-This option is good for users who don't want notifications of events that they trigger. However, some users may feel left out when their teammates receive the email and they didn't. Let your team decide which option is best.
+This option is good for users who don't want notifications of events that they trigger. However, some users might prefer to receive the same notifications as their teammates. Let your team decide which option is best.
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
+
+## Skip initiator
+
+Do the following steps to opt out of receiving notifications that you create:
+
+1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
+2. Select **Project settings** > **Notifications**.
+3. Create a new subscription or edit an existing one.
+4. Select the notification.
+5. Check the **Skip initiator** box.
 
 > [!div class="mx-imgBorder"] 
-> ![New subscription skip initiator](media/new-sub-skip-initiator.png)
+> ![Screenshot shows new subscription skip initiator.](media/new-sub-skip-initiator.png)
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
+
+You don't receive notifications for events you trigger yourself.
 
 #### Related articles
 

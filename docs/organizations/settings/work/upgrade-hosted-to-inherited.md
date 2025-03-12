@@ -19,12 +19,9 @@ Cloning your Hosted XML process to the Inheritance process model allows you to m
 
 Before you clone a Hosted XML process, we recommend that you review [Supported operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
  
-
 ## Prerequisites
 
-- Your account currently uses the Hosted XML process model 
-- You must be a member of the Project Collection Administrators group, the organization owner, or be granted explicit permissions to edit, create, or manage a specific process and to create a project. 
-
+[!INCLUDE [prerequisites-change-process](../includes/prerequisites-change-process.md)]
 
 ## Sequence of steps
 

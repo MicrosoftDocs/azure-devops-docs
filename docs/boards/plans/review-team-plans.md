@@ -40,17 +40,11 @@ For information on working with dependencies, see [Track dependencies](track-dep
 
 ## Prerequisites
 
-- **Access levels:** To view a delivery plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
-- **Permissions:** To open or modify a work item or add work items to a plan, you must have **Edit work items in this node** set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
-
-For work items and dependency lines to appear on the plan:
-
-- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items that belong to a category selected for viewing on a team's backlog appear on the plan. 
-- [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
-- [Sprints must be selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.
-- [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) must be defined for each iteration.
-- [Iteration paths](../sprints/assign-work-sprint.md) must be assigned to each work item.  
-- For dependency icons and lines to show, [work items must be linked](../backlogs/add-link.md) via the **Predecessor-Successor** link type or other custom dependency link type. (Remote link types aren't supported.) You can add custom link types only for on-premises environments.
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | To view a delivery plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. |
+| **Permissions** | To open or modify a work item or add work items to a plan: **Edit work items in this node** permission set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path). |
+| **Configuration** |- Work items belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items that belong to a category selected for viewing on a team's backlog appear on the plan.<br> - [Team product or portfolio backlog enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br> - [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) defined for each iteration.<br> - [Iteration paths](../sprints/assign-work-sprint.md) assigned to each work item.<br> - For dependency icons and lines to show: [work items linked](../backlogs/add-link.md) via the **Predecessor-Successor** link type or other custom dependency link type. (Remote link types aren't supported.) You can add custom link types only for on-premises environments. |
 
 > [!TIP]  
 > If you edit a plan and the changes that you make don't seem to appear in the plan, refresh your browser. A browser refresh is sometimes needed to trigger the updates.  

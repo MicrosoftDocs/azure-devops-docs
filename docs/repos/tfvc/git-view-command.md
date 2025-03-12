@@ -22,7 +22,7 @@ The `tf git view` command retrieves a file from a Git repository to a temporary 
 
 - For requirements, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-- You must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository and branch if you're viewing branch information. For more information, see [Default Git permissions](../../organizations/security/default-git-permissions.md).
+- Be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository and branch if you're viewing branch information. For more information, see [Default Git permissions](../../organizations/security/default-git-permissions.md).
 
 ## Syntax
 

@@ -140,7 +140,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'Bug' "
             &"and StateCategory ne 'Completed'' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')) "
         &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -156,7 +156,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'Bug'
             and StateCategory ne 'Completed'
-            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
         &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)
 ```

@@ -3,7 +3,7 @@ title: Expressions
 description: Learn about how you can use expressions in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 10/10/2023
+ms.date: 11/18/2024
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -329,6 +329,14 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Short-circuits after first match
 * Example: `in('B', 'A', 'B', 'C')` (returns True)
 
+::: moniker range=">= azure-devops"
+### iif
+* Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwize
+* Min parameters: 1. Max parameters: 3
+* The first parameter must be a condition
+* Example: `iif(eq(variables['Build.Reason'], 'PullRequest'), 'ManagedDevOpsPool', 'Azure Pipelines')` returns 'ManagedDevOpsPool' when the pipeline runs in response to a PR.
+::: moniker-end
+
 ::: moniker range="> azure-devops-2019"
 
 ### join
@@ -468,6 +476,13 @@ steps:
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
 * Example: `startsWith('ABCDE', 'AB')` (returns True)
+
+::: moniker range=">= azure-devops"
+### trim
+* Returns the parameter without leading and trailing white spaces
+* Min parameters: 1. Max parameters: 1
+* Example: `trim('  variable  ') ` returns 'variable'
+::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 ### upper
@@ -1049,8 +1064,19 @@ steps:
 - script: echo $(secondEval)
 ```
 
+When you use the `eq()` expression for evaluating equivalence, values are implicitly converted to numbers (`false` to `0` and `true` to `1`).
 
-In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
+```yaml
+variables:
+  trueAsNumber: $[eq('true', true)] # 1 vs. 1, True
+  falseAsNumber: $[eq('false', true)] # 0 vs. 1, False
+
+steps:
+- script: echo $(trueAsNumber)
+- script: echo $(falseAsNumber)
+```
+
+In this next example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
 The function `coalesce()` evaluates the parameters in order, and returns the first value that doesn't equal null or empty-string.
 
 

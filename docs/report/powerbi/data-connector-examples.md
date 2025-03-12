@@ -26,6 +26,8 @@ Before generating these reports, you must first [connect to Analytics using the 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="number-of-work-items"></a>

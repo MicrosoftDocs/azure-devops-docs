@@ -32,10 +32,10 @@ sections:
       - question: |
           Why don't I see my organization in the Azure portal?
         answer: |
-          In both applications, you must have
+          In both applications, have
           [Azure Service Administrator or Coadministrator](/azure/billing-add-change-azure-subscription-administrator) 
           permissions for the Azure subscription linked to your organization in Azure DevOps.
-          Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization owner permissions.
+          Also, in the [Azure portal](https://portal.azure.com), have Project Collection Administrator or organization owner permissions.
           
       - question: |
           What do I need to set up an existing Azure DevOps instance with Microsoft Entra ID?
@@ -231,7 +231,7 @@ sections:
       - question: |
           How can I protect access to built-in administrator groups?
         answer: |
-          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group. For more information, see [Just-in-time access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups).
+          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group.
       
       - question: |
           Why doesn't the Security tab show all members when I select a Microsoft Entra group?

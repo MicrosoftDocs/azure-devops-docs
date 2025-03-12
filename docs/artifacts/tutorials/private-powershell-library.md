@@ -33,6 +33,8 @@ In this article, you'll learn how to:
 
 - Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
+- Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the required *PowerShellGet* version needed for installing *PSResourceGet*.
+
 - Install [PSResourceGet](/powershell/gallery/powershellget/install-powershellget).
 
 - Install the [SecretManagement and SecretStore](/powershell/utility-modules/secretmanagement/get-started/using-secretstore) modules.
@@ -220,7 +222,16 @@ In this article, you'll learn how to:
 
 - Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
-- Install [NuGet](https://www.nuget.org/downloads).
+- Install Windows MSBuild using one of the following options:
+    - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/preview/)
+    - [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools#build-tools-for-visual-studio-2022).
+    - [.NET Core SDK](https://dotnet.microsoft.com/download).
+
+- Install the [NuGet(.exe)](https://www.nuget.org/downloads) version *4.8.0.5385* or later.
+
+- Install the [dotnet runtime](https://dotnet.microsoft.com/en-us/download) version *8.0.x* or later.
+
+- Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the appropriate *PowerShellGet* and *PackageManagement* versions.
 
 ## Create a personal access token
 

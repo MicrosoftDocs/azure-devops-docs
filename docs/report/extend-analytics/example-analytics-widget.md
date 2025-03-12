@@ -31,7 +31,9 @@ With this information, you'll be able to create your own Analytics widget.
 
 ## Prerequisites
 
-This example provides a ready-made widget, covering basics from topics in Dashboards, Charting, and Analytics. The following documents provide more grounding on details demonstrated in this example:
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+The example in this article provides a ready-made widget, covering basics from topics in Dashboards, Charting, and Analytics. The following documents provide more grounding on details demonstrated in this example:
 1. Create an Azure DevOps Widget Extension, reference the [Widget extensions sample](../../extend/develop/add-dashboard-widget.md)
 1. Render an Azure DevOps Chart Control, reference [Add a Chart](../../extend/develop/add-chart.md)
 1. Query OData from [Analytics](quick-ref.md)

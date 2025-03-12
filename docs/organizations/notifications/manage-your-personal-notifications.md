@@ -32,8 +32,7 @@ For information about team and project-level notifications, see [Team and projec
 
 ## Prerequisites
 
-- Every user can manage their personal notifications
-- See [about notifications](about-notifications.md)
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## View your personal notifications
 
@@ -58,7 +57,7 @@ The following table shows notification event examples. For more information, see
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

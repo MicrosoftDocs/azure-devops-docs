@@ -12,6 +12,9 @@
   - name: Customize your pipeline
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
     href: customize-pipeline.md
+  - name: Build a pipeline with stages
+    displayName: multi-stage pipeline, stages, design pipeline, build, test, deploy
+    href: process/run-stages.md
 - name: Pipeline basics
   items:
   - name: Key concepts
@@ -126,6 +129,8 @@
       href: scripts/logging-commands.md
     - name: File matching patterns
       href: tasks/file-matching-patterns.md
+    - name: Cache NuGet packages
+      href: artifacts/caching-nuget.md
   - name: Templates, parameters, & expressions
     items:
     - name: Templates
@@ -217,7 +222,8 @@
     - name: Invoke Azure Function / REST API checks
       displayName: azure function, checks
       href: process/invoke-checks.md
-    - name: Define a gate
+    - name: Deployment gates concepts
+      displayName: gates, checks, approvals, pre-deployment, post-deployment
       href: release/approvals/gates.md
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
@@ -241,6 +247,8 @@
   - name: Managed DevOps pools
     href: /azure/devops/managed-devops-pools/overview
     displayName: pools, agents
+  - name: Agent version 4.x
+    href: agents/v4-agent.md
   - name: Agent version 3.x
     href: agents/v3-agent.md
   - name: Create & manage agent pools
@@ -324,6 +332,9 @@
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections
           href: release/troubleshoot-workload-identity.md
+        - name: Troubleshoot Azure Resource Manager service connections
+          href: release/azure-rm-endpoint.md
+          displayName: service connection, service principal, Azure resource manager, azure
       - name: Azure App Service (Web Apps)
         items:
         - name: Deploy to App Service using Azure Pipelines
@@ -382,8 +393,8 @@
       - name: Build images
         displayName: docker, compose, docker-compose, arm, buildkit, image
         href: ecosystems/containers/build-image.md
-      - name: Push images
-        displayName: container registry, acr, gcr, ecr, docker hub, azure container registry, google container registry
+      - name: Build and push container images to registries
+        displayName: container registry, acr, docker hub, azure container registry
         href: ecosystems/containers/push-image.md
       - name: Content trust
         displayName: docker content trust, dct
@@ -403,6 +414,9 @@
       - name: Create a Classic release
         displayName: release artifacts, deployment artifacts
         href: release/releases.md
+      - name: Create a multi-stage release
+        displayName: classic release, classic deployment
+        href: release/define-multistage-release-process.md
       - name: Artifact sources
         displayName: artifacts, source, release artifacts
         href: release/artifacts.md
@@ -421,9 +435,6 @@
       - name: Deploy to a Windows VM
         displayName: windows vm, deployment vm
         href: release/deploy-webdeploy-iis-deploygroups.md
-      - name: Classic release pipelines
-        displayName: classic release, classic deployment
-        href: release/define-multistage-release-process.md
       - name: Stage templates in Azure Pipelines
         displayName: environment, templates, stages
         href: release/env-templates.md
@@ -472,11 +483,16 @@
       displayName: npm, package
       href: artifacts/npm.md
     - name: Maven
-      displayName: Maven, package
-      href: artifacts/publish-maven-artifacts.md
+      items:
+      - name: Publish Maven packages to internal and external feeds
+        href: artifacts/publish-maven-artifacts.md
+        displayName: Maven, publish
+      - name: Restore packages
+        href: packages/maven-restore.md
+        displayName: Maven, restore
     - name: Gradle
       displayName: Gradle, package
-      href: artifacts/pull-package-gradle.md
+      href: artifacts/build-publish-artifacts-gradle.md
     - name: Python
       displayName: python, package
       href: artifacts/pypi.md
@@ -538,7 +554,7 @@
       - name: Java to web app with MicroProfile
         href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json
     - name: Android
-      displayName: android sdk, xamarin, android sdk platform tools
+      displayName: android sdk,android sdk platform tools
       href: ecosystems/android.md
     - name: Go
       displayName: workspace, gopath, goroot, go get, dep, dep ensure
@@ -675,8 +691,8 @@
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
       href: security/approach.md
-    - name: Secure repositories
-      href: security/misc.md#protect-repositories
+    - name: Secure agents, projects, and containers
+      href: security/misc.md
     - name: Secure access to Azure repositories from pipelines
       displayName: forks, branches, access token
       href: security/secure-access-to-repos.md
@@ -685,21 +701,12 @@
     - name: Pipeline resources
       displayName: protected resources, repository resources
       href: security/resources.md
-    - name: Project structure
-      displayName: separate projects
-      href: security/misc.md#protect-projects
     - name: Security through templates
       displayName: conditionals, extends, scripts, templates
       href: security/templates.md
     - name: Variables and parameters
       displayName: inputs, parameters, queue-time variables
       href: security/inputs.md
-    - name: Shared infrastructure
-      displayName: low privileges, hosted, infrastructure
-      href: security/misc.md#protect-shared-infrastructure
-    - name: Other security considerations
-      displayName: PATH, containers, control tasks, auditing
-      href: security/misc.md
 - name: Integration
   items:
   - name: Microsoft Teams

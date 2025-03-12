@@ -28,6 +28,8 @@ Organize your test cases by adding them to test plans and test suites, and then 
   From a best practice perspective, if you have two test scenarios where the workflows are
   different, consider creating separate test cases. Also see [FAQs for manual testing](reference-qa.yml#testcases).
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 <a name="createcase"></a>
@@ -259,7 +261,7 @@ You can assign an individual test case to a tester.
 2. Add or remove testers from the list. After you select the testers, tick the **Send email**
    checkbox and edit the message as required so they know that tests are ready for them to run.
 
-   ![Screenshot shwoing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
+   ![Screenshot showing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
 
    The email contains a link that testers can open to see the list of assigned tests.
    Testers need [Basic access](../organizations/security/access-levels.md)
@@ -298,7 +300,7 @@ You can tag test cases and view only the ones with specific tags.
 For example, tag all the tests related to signing in so that you can rerun these tests if a bug is fixed for that page.
 You can filter on that tag from the **Test Plans** web portal.
 
-To add new tags to add to work items, you must have **Basic** access or higher and have the project-level **Create new tag definition permissions** set to **Allow**. for more information, see [Add work item tags](../boards/queries/add-tags-to-work-items.md).
+To add new tags to add to work items, have at least **Basic** access and have the project-level **Create new tag definition permissions** set to **Allow**. for more information, see [Add work item tags](../boards/queries/add-tags-to-work-items.md).
 
 You can add and edit tags when you edit a test case, or bulk edit tags in the **Grid** view.
 You can also create suites based on queries when you use tags.
@@ -319,7 +321,7 @@ Or you can remove the test case from the test suite. From the context menu for t
 
 ![Screenshot showing removed test case.](media/create-test-cases/remove-test-case.png)
 
-To permanently delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
+To permanently delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2019"
@@ -327,7 +329,7 @@ You can tag test cases and view test cases only with specific tags.
 For example, tag all the tests related to signing in so that you can rerun these tests if a bug is fixed for that page.
 Then you can filter on that tag from the **Test Plans** web portal.
 
-To add new tags to add to work items, you must have **Basic** access or higher and have the project-level **Create new tag definition permissions** set to **Allow**. for more information, see [Add work item tags](../boards/queries/add-tags-to-work-items.md).
+To add new tags to add to work items, have at least **Basic** access and have the project-level **Create new tag definition permissions** set to **Allow**. for more information, see [Add work item tags](../boards/queries/add-tags-to-work-items.md).
 
 You can add and edit tags when you edit a test case, or bulk edit tags in the grid view.
 You can also create suites based on queries when you use tags.
@@ -346,10 +348,10 @@ Or you can permanently delete the test case.
 
 ![Screenshot showing deleted test case.](media/create-test-cases/delete-test-case.png)
 
-To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level Manage test plans or Manage test suites permission set to *Allow*.
+To delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level Manage test plans or Manage test suites permission set to *Allow*.
 To manage or delete test artifacts, you must also have your access level set to Basic + Test Plans or Visual Studio Enterprise.
 
-To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
+To delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
 ## Next steps

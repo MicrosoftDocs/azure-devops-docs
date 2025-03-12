@@ -66,27 +66,31 @@ In each work item form, describe work, assign contributors, track status, and co
 
 ::: moniker range="azure-devops"
 
-- You must have **Basic** access and be a member of the Contributors or Project Administrators group to add work items to a board and use all other board features.
-- You must have **Stakeholder** access for a *private* project and be a member of the Contributors or Project Administrators group to view boards, open and modify work items, and add child tasks to a checklist. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card.
-- You must have **Stakeholder** access for a *public* project and be a member of the Contributors or Project Administrators group to have full access to all Boards features.
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. <br> - Public project: For full access to all Boards features: At least **Stakeholder** access. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
 
-- You must have **Basic** access and be a member of the Contributors or Project Administrators group to add work items to a board and use all other board features.
-- You must have **Stakeholder** access and be a member of the Contributors or Project Administrators group to view boards, open and modify work items, and add child tasks to a checklist. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card.
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 > [!NOTE]
-> To drag-and-drop cards to different, columns you must have [Azure DevOps Server 2020 Update 1](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
+> To drag-and-drop cards to different columns, have [Azure DevOps Server 2020 Update 1](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-- You must have **Basic** access and be a member of the Contributors or Project Administrators group to add work items to a board and use all other board features.
-- You must have **Stakeholder** access for a *private* project and be a member of the Contributors or Project Administrators group to view boards, open and modify work items, and add child tasks to a checklist. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card.
-- You must have **Stakeholder** access for a *public* project and be a member of the Contributors or Project Administrators group to have full access to all Boards features.
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end
 

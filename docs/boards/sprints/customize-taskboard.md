@@ -32,12 +32,12 @@ Sprint Taskboards are similar to boards in that they show work items as cards in
 > [!NOTE] 
 > This article addresses customization of a sprint Taskboard. For information on customizing a board, see [Manage and configure team tools](../../organizations/settings/manage-teams.md#configure-team-backlogs). 
 
-
 ## Prerequisites
 
-* You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
-
+| Category | Requirements |
+|--------------|-------------|
+| **Taskboard** | A sprint Taskboard that you want to configure. When you add a team, you add a Taskboard for every sprint selected for your team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
+| **Permissions** | To add or rename columns, or customize cards: [Team Administrator](../../organizations/settings/add-team-administrator.md) role for the team's settings that you want to modify, or Member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). |
 
 ## Taskboard customization options  
 

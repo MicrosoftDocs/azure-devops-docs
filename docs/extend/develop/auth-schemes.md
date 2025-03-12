@@ -7,15 +7,14 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2020
+ms.date: 01/08/2025
 ---
 
 # Service endpoint authentication schemes
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to set the credentials in the HTTP request header when you're calling the external endpoint. Azure DevOps can then connect to the external service using the credentials. Azure DevOps supports a closed set of authentication schemes 
-that can be utilized by a custom service endpoint type. Azure DevOps interprets the authentication scheme that's used in any custom endpoint & support connection to the external service.
+Learn how to set the credentials in the HTTP request header when you're calling the external endpoint. Azure DevOps can then connect to the external service using the credentials. Azure DevOps supports a closed set of authentication schemes utilized by a custom service endpoint type. Azure DevOps interprets the authentication scheme that's used in any custom endpoint & support connection to the external service.
 
 See the following authentication schemes that are part of the closed set.
 
@@ -23,61 +22,7 @@ See the following authentication schemes that are part of the closed set.
 
 ## Basic authentication
 
-This scheme takes two inputs - Username & Password (confidential)
-
-Default authentication header used is: "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
-
-```json
-{
-    "id": "endpoint-auth-scheme-basic",
-    "description": "Basic Authentication based endpoint authentication scheme",
-    "type": "ms.vss-endpoint.service-endpoint-type",
-    "targets": [
-        "ms.vss-endpoint.endpoint-types"
-    ],
-    "properties": {
-        "name": "UsernamePassword",
-        "displayName": "i18n:Basic Authentication",
-        "authenticationSchemes": [
-            {
-                "type": "ms.vss-endpoint.endpoint-auth-scheme-basic",
-                "headers": [
-                    {
-                        "name": "Authorization",
-                        "value": "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
-                    }
-                ],
-                "inputDescriptors": [
-                    {
-                        "id": "username",
-                        "name": "i18n:Username",
-                        "description": "i18n:Username for connecting to the endpoint",
-                        "inputMode": "textbox",
-                        "isConfidential": false,
-                        "validation": {
-                            "isRequired": true,
-                            "dataType": "string",
-                             "maxLength": 300
-                        }
-                    },
-                    {   
-                        "id": "password",
-                        "name": "i18n:Password",
-                        "description": "i18n:Password for connecting to the endpoint",
-                        "inputMode": "passwordbox",
-                        "isConfidential": true,
-                        "validation": {
-                            "isRequired": true,
-                            "dataType": "string",
-                            "maxLength": 300
-                        }
-                    }
-                ]
-            }
-        ]
-    }
-}
-```
+As a security measure, we recommend using service principals & managed identities over basic authentication. For more information, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 ## Token-based authentication
 

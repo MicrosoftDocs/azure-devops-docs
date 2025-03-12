@@ -22,6 +22,8 @@ However, you can still filter on a team using the steps provided in this article
 > [!NOTE]  
 > In a similar manner, limitations exist in determining the board-specific column of a work item within an Analytics view. However, the guidance provided in this article won't work for board locations due to the dependency on the selected historical data in the view. 
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Add the AreaSK field to your Analytics view 

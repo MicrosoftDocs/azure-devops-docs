@@ -32,7 +32,7 @@ Azure Artifacts recommends using two separate configuration files. The first is 
 
 To set up the second file, simply place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
 
-The following steps will guide you through setting up the first configuration file:
+The following steps will guide you through setting up the first configuration file. Select the tab that corresponds to your development environment:
 
 ::: moniker range="< azure-devops"
 
@@ -57,7 +57,7 @@ The following steps will guide you through setting up the first configuration fi
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
 
-### [Other](#tab/other/)
+### [Linux/MacOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
@@ -131,7 +131,7 @@ The following steps will guide you through setting up the first configuration fi
 
    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
-### [Other](#tab/other/)
+### [Linux/MacOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
@@ -198,7 +198,7 @@ The following steps will guide you through setting up the first configuration fi
 
    :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
 
-### [Other](#tab/other/)
+### [Linux/MacOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and paste the following snippet into it:
 

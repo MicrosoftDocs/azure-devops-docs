@@ -24,7 +24,11 @@ As a Team Foundation Version Control (TFVC) administrator, you might have to rem
 
 ## Prerequisites
 
-To remove access to Team Foundation version control files, you must belong to the **Azure DevOps Administrators** group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Member of the **Azure DevOps Administrators** group. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Remove access to a file under version control
 
@@ -89,7 +93,7 @@ The following procedures provide details for removing a file by using the Visual
    ```
    tf permission /inherit:no myfile.cs
 
-   tf permission /deny:read myfile.cs /group:ADATAUM\Group1 ADATAUM\Group2 myfile.cs
+   tf permission /deny:read myfile.cs /group:ADATUM\Group1 ADATUM\Group2 myfile.cs
    ```
 
 ## Related articles

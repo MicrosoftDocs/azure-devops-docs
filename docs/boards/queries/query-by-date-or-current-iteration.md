@@ -13,7 +13,8 @@ ms.date: 10/15/2024
 #customer intent: As a team member, I want to learn how to query work items in Azure Boards so I can find items based on when they were created, which iteration they belong to, or other factors.
 ---
 
-# Query by date or current iteration in Azure Boards
+
+# Query by date or current iteration
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -28,6 +29,10 @@ For example, find work items that were modified in the last three days with the 
 ::: moniker range=">= azure-devops-2019"
 Also, you can use  the `CurrentIteration +/- _n_` macro to create queries based on a sliding window of team iterations.
 ::: moniker-end
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
 ## Supported operators and macros
 
@@ -70,7 +75,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** field 
 
 Notes:
 1. The `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear` macros are supported for Azure DevOps Server 2019.1 and later versions. They're only supported when run from the web portal.
-1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions. It's only supported when run from the web portal.
+1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions and is only supported when run from the web portal.
 
 > [!TIP]
 > The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md).
@@ -286,7 +291,7 @@ To use this macro, the specified team must [select a set of sprints](../../organ
 
 ## List work items moved out of a sprint
 
-List work items that were defined for a sprint but later moved out by using a query with a clause that contains the `Was Ever` operator for the **Iteration Path** field. You can only construct this query by using the [WIQL syntax](wiql-syntax.md). Edit the WIQL syntax in Query Editor by installing the [WIQL Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor).
+List work items that were defined for a sprint but later moved out by using a query with a clause that contains the `Was Ever` operator for the **Iteration Path** field. You can only construct this query by using the [WIQL syntax](wiql-syntax.md). Edit the WIQL syntax in Query Editor by installing the [WIQL Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor).
 
 For example, the following syntax queries for work items meet the following criteria:
 
@@ -329,7 +334,7 @@ ORDER BY [System.Id]
 The Query Editor view of the syntax appears as shown.
 
 > [!NOTE]
-> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the `Was Ever` operator, indicating an issue with the clause. However, the query still runs and you can create query charts. To modify the query, you *must* use the [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor).
+> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the `Was Ever` operator, indicating an issue with the clause. However, the query still runs and you can create query charts. To modify the query, you *must* use the [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor).
 
 :::image type="content" source="media/example-work-item-queries/query-work-items-moved-out-of-sprint.png" alt-text="Screenshot that shows Query Editor work items moved out of a sprint.":::
 

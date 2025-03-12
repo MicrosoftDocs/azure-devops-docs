@@ -23,12 +23,14 @@ Automate test cases in your test plans and run them directly from **Azure Test P
 
 <a name="prerequisites"></a>
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
-- You must also have the following items.
-   - A [test plan](create-a-test-plan.md) that contains your automated tests associated with automated test methods using [Visual Studio 2017](associate-automated-test-with-test-case.md) or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).
-   - A [build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md) that generates builds containing the test binaries.
-   - An app to test. You can deploy the app as part of the [build and release workflow](../pipelines/get-started/what-is-azure-pipelines.md) and also use it for on-demand testing.
-   - Permissions to create and manage releases, edit a release environment, and manage deployment.  For more information, see [Release permissions](../pipelines/policies/permissions.md#release-pipeline-permissions).
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - At least **Basic** access, with permissions to view work items under the corresponding Area Path.<br>- To add test plans and test suites, delete test artifacts, and define test configurations: [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access.<br>Or, one of the following **Visual Studio subscriptions**:<br> - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)<br>- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)<br>  - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/) |
+| **Permissions** | - To add or modify test plans, test suites, test cases, or other test-based work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**.<br>- To modify test plan properties such as build and test settings: **Manage test plans** permission set to **Allow** under the corresponding **Area Path**.<br>- to create and delete test suites, add and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite): **Manage test suites** permission set to **Allow** under the corresponding **Area Path**.<br>- Permissions to create and manage releases, edit a release environment, and manage deployment.  For more information, see [Release permissions](../pipelines/policies/permissions.md#release-pipeline-permissions) |
+|**Tools and configurations** |- A [test plan](create-a-test-plan.md) that contains your automated tests associated with automated test methods using [Visual Studio 2017](associate-automated-test-with-test-case.md) or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).<br>- A [build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md) that generates builds containing the test binaries.<br>- An app to test. You can deploy the app as part of the [build and release workflow](../pipelines/get-started/what-is-azure-pipelines.md) and also use it for on-demand testing.|
+
 
 ## Set up your environment
 
@@ -141,7 +143,7 @@ See the following frequently asked questions (FAQs) about Azure Test Plans.
 
 ### Q: What permissions do I need to run automated tests from Azure Test Plans?
 
-**A:** You must be a Project Contributor, or have the following permissions:
+**A:** Be a Project Contributor, or have the following permissions:
 
 * Create releases
 * Manage releases

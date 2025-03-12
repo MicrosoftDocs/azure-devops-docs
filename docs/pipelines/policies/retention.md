@@ -198,6 +198,8 @@ You can delete runs using the [More actions menu](../create-first-pipeline.md#pi
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../create-first-pipeline.md#pipeline-run-more-actions-menu).
 
+> The product team is actively working on improving data deletion times. You might see a processing delay of multiple days when deleting data if there are multiple test points associated with your host. 
+
   > [!div class="mx-imgBorder"]
   > ![delete a run](media/delete-a-run.png)
 
@@ -394,3 +396,4 @@ Classic releases retain pipelines that they consume automatically. If you are us
 
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
 - [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
+- [Using Tasks to Retain Runs in Azure Pipelines](../../pipelines/build/run-retention.md)

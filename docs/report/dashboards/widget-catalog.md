@@ -108,15 +108,21 @@ Widgets listed in the following table are provided out-of-box. They're organized
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you aren't a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
-- To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
+ 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you aren't a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
-- To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Stakeholder** access. |
+| **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
+
 ::: moniker-end
 
 > [!NOTE]
@@ -580,7 +586,7 @@ To support adding, add one or more of the following widgets:
       For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).     
       
       > [!NOTE]  
-      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members).  
+      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still add users to your team from the team administration page.  
    :::column-end:::
 :::row-end:::
 :::row:::

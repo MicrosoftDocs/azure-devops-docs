@@ -1,7 +1,7 @@
 ---
 title: Create a new Git repo in your project
 titleSuffix: Azure Repos
-description: Create a new Git repo in an Azure DevOps Services or Team Foundation Server Project
+description: Create a new Git repo in an Azure DevOps project via the web portal.
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.service: azure-devops-repos
 ms.topic: quickstart
@@ -14,22 +14,21 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps Services and TFS projects contain Git repositories, work items, builds, and releases. You can use Git repos in your projects to manage your source code as your project grows. This guide shows you how to create a Git repo using the web portal for either Azure DevOps Services (hosted on Azure) or Team Foundation Server (TFS - on-premises).
+Azure DevOps projects contain Git repositories, work items, builds, and releases. You can use Git repos in your projects to manage your source code as your project grows. This guide shows you how to create a Git repo using the web portal.
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* You must have the **Create repository** permission, which is granted by default to project administrators. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-* Git command-line tools:
-  * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager](set-up-credential-managers.md#windows)
-  * [Install Git for macOS and Linux](https://git-scm.com/downloads).
-    * For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
+| Category | Requirements |
+|-------------|-------------|
+| **Organization** | An [organization in Azure DevOps](../../organizations/accounts/create-organization.md) with a Git repository. |
+| **Permissions** | **Create repository** permissions, granted by default to project administrators. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).|
+| **Tools** | - [Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager](set-up-credential-managers.md#windows), or [Git for macOS and Linux](https://git-scm.com/downloads). For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md).  |
 
 ## Create a repo using the web portal 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open the **Repos** page in your project by browsing to `https://dev.azure.com/OrganizationName`, hover your mouse over the name of your project, and select the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you've accessed it recently.
+1. Open the **Repos** page in your project by browsing to `https://dev.azure.com/OrganizationName`, hover your mouse over the name of your project, and select the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you accessed it recently.
 
    ![Screenshot of organization or collection page that lists projects.](media/repo-mgmt/select-project-repos.png)
 
@@ -47,8 +46,8 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
    A new empty Git repo is now created in your project. 
 
-    - If you created an empty repo with no README or .gitignore files, you'll see instructions on how to [clone](clone.md) the repo to your computer. You'll also see instructions on how to [push](pushing.md) code in an existing repo into the newly created one.
-    - In this example, you created a README and a .gitignore. You'll now see an overview of the files in your repo. You can [clone](clone.md) the repo using the **Clone** link on the upper right of the page to get working with a local copy of the repo immediately. 
+    - If you created an empty repo with no README or .gitignore files, there are instructions on how to [clone](clone.md) the repo to your computer. There are also instructions on how to [push](pushing.md) code in an existing repo into the newly created one.
+    - In this example, you created a README and a .gitignore. There's an overview of the files in your repo. You can [clone](clone.md) the repo using the **Clone** link on the upper right of the page to get working with a local copy of the repo immediately. 
 
 ::: moniker-end
 
@@ -66,7 +65,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
-   ![Clone respository dialog.](./media/clone-repo/clone-repo.png)
+   ![Clone repository dialog.](./media/clone-repo/clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Then, browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
@@ -82,7 +81,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    cd fabrikam-fiber
    ```
 
-   Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you use it in the following steps.
 
 ::: moniker-end
 
@@ -90,7 +89,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Work with the code
 
-In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo on the server, and view the changes there.
+In this step, we make a change to the files on your computer, commit the changes locally, push the commit up to the repo on the server, and view the changes there.
 
 1. Browse to the folder on your computer where you cloned the repo and open the `README.md` file in your editor of choice.
 
@@ -108,7 +107,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
    git commit -a -m "My first commit"
    ```
 
-   When using `git commit`, `-a` means to commit all changed files, and `-m` specifies a commit message.
+   When you use `git commit`, `-a` means to commit all changed files, and `-m` specifies a commit message.
 
 5. Push your changes up to the Git repo by entering the following command into the Git command window:
 

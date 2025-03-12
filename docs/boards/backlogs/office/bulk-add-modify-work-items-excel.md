@@ -34,27 +34,23 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 ::: moniker range="azure-devops"
 
-| Prerequisite | Description |
+|Category | Requirements |
 |--------------|-------------|
-| Microsoft Excel 2010 or later | Including Microsoft Office Excel 365. |
-| [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family) | Install the Azure DevOps Office Integration plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel. |
-| [Member of the project](../../../organizations/security/add-users-team-project.md) | If you don't have an Azure Boards project yet, [create one now](../../get-started/sign-up-invite-teammates.md). |
-| Permissions set to **Allow**: **View work items in this node** and **Edit work items in this node** | By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Stakeholder** access or higher | For more information, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). |
-| [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later](https://visualstudio.microsoft.com/downloads/) | To use the [Select User](#select-user) feature, download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts. |
+| **Project access** | [Project member](../../../organizations/security/add-users-team-project.md). |
+| **Access levels** |At least [Stakeholder access](../../../organizations/security/stakeholder-access.md).   |
+| **Permissions** | - Member of the **Contributors** group.<br> - **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
+| **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br> - [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family). Install the Azure DevOps Office Integration plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.<br> - [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later](https://visualstudio.microsoft.com/downloads/) To use the [Select User](#select-user) feature, download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts. |
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops" 
 
-| Prerequisite | Description |
+|Category | Requirements |
 |--------------|-------------|
-| Microsoft Excel 2010 or later | Including Microsoft Office Excel 365. |
-| [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family) | Install the plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Standalone Office Integration installer. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure Boards and Azure DevOps from Excel, Project, and the PowerPoint-based storyboarding tool. |
-| [Member of the project](../../../organizations/security/add-users-team-project.md) | To connect to an Azure Boards project, you must be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, [create one now](../../../organizations/projects/create-project.md). |
-| Permissions set to **Allow**: **View work items in this node** and **Edit work items in this node** | By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Stakeholder** access or higher | For more information, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). |
-| [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019) | To use the [Select User](#select-user) feature, install [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). You can download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts. |
+| **Project access** | [Project member](../../../organizations/security/add-users-team-project.md). |
+| **Access levels** |At least [Stakeholder access](../../../organizations/security/stakeholder-access.md).   |
+| **Permissions** | - Member of the **Contributors** group.<br> - *View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
+| **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br>- [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family). Install the plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Standalone Office Integration installer. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure Boards and Azure DevOps from Excel, Project, and the PowerPoint-based storyboarding tool.<br> -  To use the [Select User](#select-user) feature, install [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). You can download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts.|
 
 ::: moniker-end  
 
@@ -103,7 +99,7 @@ Direct links queries are imported as a flat list into Excel, as modifying multip
 
 ### Tree lists
 
-You can bulk add a nested list of work items, like a work breakdown structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, or link tasks to product backlog items.
+You can bulk add a nested list of work items, such as a work breakdown structure or hierarchical user stories. For example, you can add a nested list of tasks, subtasks, and bugs, or link tasks to product backlog items.
 
 **List types**:
 - **Flat list**: A simple list of work items with a single **Title** column. No link management is supported.
@@ -206,27 +202,27 @@ You can and can't do the following tasks from an Excel worksheet:
 	> [!NOTE]   
 	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as there is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
 
-2.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
+1. In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), ensure that you installed the [Azure DevOps Office Integration 2019 tool](https://visualstudio.microsoft.com/downloads/#other-family). For more information, see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
 
-3. Choose **New List** from the Team ribbon. 
+1. Choose **New List** from the Team ribbon. 
 
    :::image type="content" source="media/excel/team-ribbon.png" alt-text="Screenshot of Choose New List.":::
 
-4. From the **New List** dialog, choose **Input list**.  
+1. From the **New List** dialog, choose **Input list**.  
 
     :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot of Select input list.":::
 
-5.  <a id="step-5"></a>Your worksheet is now bound to your project as an input list (Query[None]), flat list.  
+1.  <a id="step-5"></a>Your worksheet is now bound to your project as an input list (Query[None]), flat list.  
 
 	:::image type="content" source="media/excel/2019-input-list.png" alt-text="Screenshot of Empty flat list connected to a project."::: 
 
-6. Specify the titles of the work items you want to add and their work item type.
+1. Specify the titles of the work items you want to add and their work item type.
 
 	:::image type="content" source="media/excel/2019-specify-titles.png" alt-text="Screenshot of adding work items to Excel.":::
 
     The **State** and **Reason** fields automatically populate with default values once your select the work item type.
 
-7. **Publish** your worksheet. 
+1. **Publish** your worksheet. 
 
 	:::image type="content" source="media/excel/2019-publish.png" alt-text="Screenshot of Publish your worksheet.":::
 
@@ -236,12 +232,12 @@ You can and can't do the following tasks from an Excel worksheet:
 
 	:::image type="content" source="media/excel/2019-ids-assigned.png" alt-text="Screenshot of published work item IDs show in Excel.":::
 
-8.  To assign values to other fields, open [**Choose Columns**](#choose-columns), add the fields, make the assignments, and publish your changes. 
+1. To assign values to other fields, open [**Choose Columns**](#choose-columns), add the fields, make the assignments, and publish your changes. 
 
     > [!TIP]
     > When you add work items to a team backlog, ensure you specify the team's Area Path and Iteration Path. If you need to add Area Paths or Iteration Paths, select **Edit Areas and Iterations**. This link opens the **Project settings** page in a web browser. For more information, see [Define area paths and assign to a team](../../../organizations/settings/set-area-paths.md) and [Define Iteration Paths and configure team iterations](../../../organizations/settings/set-iteration-paths-sprints.md). 
 
-9. To open a work item to add more information, Choose the work item you want to open and then choose **Open in Web Access**. Before you do, make sure you publish any changes you made.  
+1. To open a work item to add more information, Choose the work item you want to open and then choose **Open in Web Access**. Before you do, make sure you publish any changes you made.  
 
 	:::image type="content" source="media/excel/2019-open-in-web-access.png" alt-text="Screenshot of Open a work item in the web portal from Excel.":::
 
@@ -587,9 +583,9 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 - [Resolve data validation errors](resolve-excel-data-validation-errors.md):
     A data validation error occurs if a field value violates the rules for that field and work item type.  
 - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
-    An invalid link occurs when a team member views work items in Excel as a hierarchy or tree list, and then moves or sorts a work item in a way that breaks the dependencies between work items. To resolve this error, review the error message and reposition the work items to restore the correct structure.
+    An invalid link happens when a work item in a hierarchy or tree list and is moved or sorted, breaking the dependencies between work items. To resolve this error, review the error message and reposition the work items to restore the correct structure.
 - [Address Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
-    If you receive error TF208104, your changes to the fields are published, but changes to the link hierarchy aren't. This error occurs because at least one of the link relationships for the work item is locked by another process, such as Project Server integration. 
+    If you receive error TF208104, your changes to the fields are published, but changes to the link hierarchy aren't. This error occurs because another process locks at least one of the link relationships for the work item, such as Project Server integration. 
 
 ## Next steps
 
@@ -609,7 +605,7 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops"
+::: moniker range=" azure-devops-2019"
 
 - [Modify work items in bulk (web portal)](../bulk-modify-work-items.md)  
 - [Troubleshoot Azure DevOps Office integration issues](tfs-office-integration-issues.md)

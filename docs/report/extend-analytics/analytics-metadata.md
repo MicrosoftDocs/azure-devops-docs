@@ -32,6 +32,10 @@ For detailed descriptions for all OData elements, see [OData model](/odata/conce
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
 ## Entity sets and entity types
 
 Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `Projects` is an entity set containing `Project` entities. An entity can be a member of at most one entity set.
@@ -106,7 +110,7 @@ ReferenceName is another common annotation used to define the system identifier 
 
 Querying an individual Entity is useful. Eventually, you'll probably want to filter or expand details of another Entity. To do so, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
 
-A `NavigationaProperty` with a collection type represents a many-to-many relationship in the model.
+A `NavigationProperty` with a collection type represents a many-to-many relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML

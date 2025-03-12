@@ -12,7 +12,7 @@ hide_comments: true
 
 # AB# links to appear in Development control of the GitHub pull request
 
-When you add AB# links to a GitHub pull request, show those links in the Development control of the pull request. This will provide a better ezperience for users who are using Azure Boards and GitHub together.
+When you add AB# links to a GitHub pull request, show those links in the Development control of the pull request. This will provide a better experience for users who are using Azure Boards and GitHub together.
 
 > [!div class="mx-imgBorder"]
 > ![screen shot example ab links on github pull request page](media\boards-ab-links-github-pr.png)

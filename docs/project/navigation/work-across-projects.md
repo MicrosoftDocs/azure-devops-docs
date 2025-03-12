@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley   
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/08/2024
+ms.date: 01/27/2025
 --- 
 
 
@@ -17,61 +17,43 @@ ms.date: 01/08/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-When you work on several projects, you can use select pages to support your cross-project work. These pages provide quick access and filter functions to support your work within a single project or work you're doing across several projects.
+When you work on several projects, you can use specific pages to support your cross-project work. These pages provide quick access and filter functions to help you manage your tasks within a single project or across multiple projects.
 
-For more information, see [Switch project, repository, or team](go-to-project-repo.md) or [Work across projects FAQs](../work-across-projects-faqs.yml). 
+For more information, see [Switch project, repository, or team](go-to-project-repo.md) or [Work across projects FAQs](../work-across-projects-faqs.yml).
 
-For example, you can quickly access and navigate to the following artifacts defined across projects.  
+For example, you can quickly access and navigate to the following artifacts defined across projects:
 
-::: moniker range=">= azure-devops-2019"
-- **Projects**: Projects defined for an organization in Azure DevOps
-- **Work items**: Work items assigned to you
-- **Pull requests**: Pull requests you initiated or that are relevant to you across all team projects you work in
-- **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more—that you favorited
-::: moniker-end  
-
-
+- **Projects**: View all projects defined for an organization in Azure DevOps.
+- **Work items**: Access work items assigned to you.
+- **Pull requests**: See pull requests you initiated or that are relevant to you across all team projects you work in.
+- **Favorites**: Access artifacts—such as projects, teams, repositories, shared queries, and more—that you marked as favorite.
 
 ## Prerequisites 
  
-* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+[!INCLUDE [prerequisites-contributor-only](../../includes/prerequisites-contributor-only.md)]
  
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
-  ::: moniker-end  
+> Users added to the **Project-Scoped Users** group can only access those projects they're explicitly added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+::: moniker-end  
 
 ## View and open work items
-
-::: moniker range=">= azure-devops-2019"
 
 To view work items assigned to you across projects, choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![View work assigned to you across projects](media/projects-page/view-work-across-projects.png) 
+> ![Screenshot show View of work assigned to you across projects.](media/projects-page/view-work-across-projects.png) 
 
-To view work items assigned to you for a specific project, [open **Work>Work Items>Assigned to Me**](../../boards/work-items/view-add-work-items.md). 
-
-
-::: moniker-end
-
-
-
-
+To view work items assigned to you for a specific project, [open **Boards>Work items>Assigned to me**](../../boards/work-items/view-add-work-items.md). 
 
 ### Work you're following
 
 Choose **Following** to open the page that lists all the work items [you marked to follow](../../boards/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../media/icons/icon-followed.png) following icon.
 
-::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Inbox > Work items pane > Following.](media/projects-page/account-home-work-following.png)  
 ::: moniker-end
 
-
-
-
-::: moniker range=">= azure-devops-2019"
 ### My activity
 
 Choose **My activity** to open the page that lists all work items that you recently viewed or updated.  
@@ -87,34 +69,19 @@ Similar to the Favorites page, you can filter the work pages by typing a keyword
 
 ## View and open pull requests
 
-::: moniker range=">= azure-devops-2019"
-
 To view pull requests you created  or that are assigned to you across projects, choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Pull requests**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of pull requests assigned to you across projects.](media/projects-page/view-pull-requests-vert.png) 
-
-::: moniker-end  
-
-
-
+> ![Screenshot of pull requests assigned to you across projects.](media/projects-page/view-pull-requests-vert.png)
 
 ## View and open favorites 
 
 You can view favorites you set across projects. For more information about working with favorites, see [Set personal or team favorites](set-favorites.md).
 
-::: moniker range=">= azure-devops-2019" 
-
 Choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Favorites**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of items you've favorited across projects.](media/favorites/open-favorites-page-vnav.png) 
-
-::: moniker-end  
-
-
-
-
 
 ## Related articles
 

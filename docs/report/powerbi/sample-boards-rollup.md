@@ -192,7 +192,7 @@ let
     Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
             &"$filter=WorkItemType eq 'Feature'"
             &" and State ne 'Cut'"
-            &" and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})"
+            &" and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))"
             &" and Descendants/any()"    
         &"& $select=WorkItemId,Title,WorkItemType,State,AreaSK"
         &"& $expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),"        
@@ -200,7 +200,7 @@ let
                 &"$apply=filter(WorkItemType eq 'User Story')"
                 &"/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)"
             &")", 
-        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
+        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
 ```
@@ -213,7 +213,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
     $filter=WorkItemType eq 'Feature'
         and State ne 'Cut'
-        and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
+        and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
         and Descendants/any()
     &$select=WorkItemId,Title,WorkItemType,State,AreaSK
     &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),

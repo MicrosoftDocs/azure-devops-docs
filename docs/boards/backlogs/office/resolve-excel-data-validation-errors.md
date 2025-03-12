@@ -25,7 +25,7 @@ A data validation error occurs when a change in the work item list or project pl
 
 ## Prerequisites  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md). 
+To update work items, be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md). 
  
   
 <a name="ResolveDataValidationError"></a> 

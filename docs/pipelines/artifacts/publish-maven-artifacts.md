@@ -1,110 +1,177 @@
 ---
 title: Publish Maven artifacts
-description: How to publish Maven artifacts with Azure Pipelines
-ms.topic: conceptual
-ms.date: 10/24/2022
+description: Learn how to publish Maven artifacts to internal and external feed using Azure Pipelines.
+ms.topic: how-to
+ms.date: 11/18/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Publish Maven artifacts with Azure Pipelines
+# Publish Maven artifacts with Azure Pipelines (YAML/Classic)
 
-Using Azure Pipelines, you can publish your Maven packages to Azure Artifacts feeds, public registries, or as a pipeline artifact.
+Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as Maven Central. This article will guide you through publishing your Maven artifacts using both YAML and Classic pipelines.
 
-## Set up your project
+## Prerequisites
 
-1. Add the following snippet to the `repositories` and `distributionManagement` sections in your *pom.xml* file. Replace the placeholders with your organization name, project name, and your feed name.
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
 
-    ```XML
-    <repository>
-      <id>MavenDemo</id>
-      <url>https://pkgs.dev.azure.com/ORGANIZATION-NAME/PROJECT-NAME/_packaging/FEED-NAME/maven/v1</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    ```
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-1. Configure your *settings.xml* file as follows. Replace the placeholders with your organization name, your project name, and your personal access token.
+- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-maven.md#create-a-feed).
 
-    ```XML
-    <server>
-      <id>PROJECT-NAME</id>
-      <username>ORGANIZATION-NAME</username>
-      <password>PERSONAL-ACCESS-TOKEN</password>
-    </server>
-    ```
+## Publish packages to a feed in the same organization
 
-1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging read & write** scope and paste it into the `password` tag in your *settings.xml* file.
+#### [YAML](#tab/yaml/)
 
-## Build your code
+::: moniker range="azure-devops"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+::: moniker-end
 
-In this example, we're using the [Maven task](../tasks/build/maven.md) to build the project with Azure Pipelines.
+::: moniker range="< azure-devops"
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+2. Select **Pipelines**, and then select your pipeline definition. 
+::: moniker-end
+
+3. Select **Edit**, and then add the following snippet to your YAML pipeline.
 
 ```yml
-- task: Maven@3
+steps:
+- task: MavenAuthenticate@0
+  displayName: 'Authenticate to Azure Artifacts feed'
   inputs:
-    mavenPomFile: 'my-app/pom.xml'    // Path to your pom file
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    artifactsFeeds: 'MavenDemo,MavenDemoFeed2'        ## Select one or multiple feeds to authenticate with.
+- script: |
+   mvn deploy
+  displayName: 'Publish'
 ```
 
-## Publish packages to your pipeline
+#### [Classic](#tab/classic/)
 
-The following example illustrates how to publish your artifact to *drop* in your pipeline. Use the [Copy files](../tasks/utility/copy-files.md) task to copy your packages to a target folder, then use [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) to publish your build artifacts to Azure Pipelines.
+::: moniker range="azure-devops"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+::: moniker-end
 
-```yml
-- task: CopyFiles@2
+::: moniker range="< azure-devops"
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+2. Select **Pipelines**, and then select your pipeline definition. 
+::: moniker-end
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Maven Authenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
+
+    1. **Maven Authenticate**: Select one or multiple feeds from the **Feeds** dropdown menu.
+
+    1. **Command line task**:
+        - **Display name**: Publish.
+        - **Script**: 
+            ```
+            mvn deploy
+            ```
+
+4. Select **Save & queue** when you're done.   
+
+---
+
+> [!NOTE]
+> To publish packages to a feed using Azure Pipelines, make sure that both the *Project Collection Build Service* and your project's *Build Service* identities have the **Feed Publisher (Contributor)** role in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
+
+## Publish packages to a feed in another organization
+
+To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
+
+Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope.  Copy your personal access token as you'll need it in the following section.
+
+#### Create a service connection
+
+1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
+
+1. Navigate to your **Project settings** > **Service connections**. 
+
+1. Select **New service connection**, select **Maven**, and then select **Next**. 
+
+1. Select **Username and Password** as the **Authentication method**, and then enter your **Repository URL** and your **Repository Id**.
+
+1. Enter your **Username** (a placeholder, as Azure Pipelines will use your `pom.xml` configuration file and the personal access token you created earlier to authenticate). For **Password**, paste your personal access token. Provide a **Name** for your service connection, and check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Save** when you're done.
+
+#### Publish packages
+
+#### [YAML](#tab/yaml/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+
+```yaml
+steps:
+- task: MavenAuthenticate@0
+  displayName: 'Authenticate to Azure Artifacts feed'
   inputs:
-    Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    MavenServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION> 
+
+- script: |
+   mvn deploy
+  displayName: 'Publish'
 ```
 
-:::image type="content" source="media/published-maven-pipeline.png" alt-text="A screenshot showing the build artifact published to drop in Azure Pipelines.":::
+#### [Classic](#tab/classic/)
 
-## Publish packages to your feed
+::: moniker range="azure-devops"
 
-To publish your package to an Azure Artifacts feed, use the Maven task to deploy your artifact to your feed. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-```yml
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'my-app/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    mavenAuthenticateFeed: true
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'deploy'
-```
+::: moniker-end
 
-:::image type="content" source="media/maven-published-to-feed.png" alt-text="A screenshot showing the build artifact published to a feed.":::
+::: moniker range="< azure-devops"
 
-## Q&A
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-#### Q: How to authenticate with MavenAuthenticate?
+::: moniker-end
 
-A: You can use the [MavenAuthenticate](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0) task to authenticate with Maven feeds inside and outside your organization. See the examples below for more details:
+::: moniker range="azure-devops-2019"
 
-- [Authenticate with Maven feeds inside your organization](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0#authenticate-maven-feeds-inside-your-organization)
-- [Authenticate with Maven feeds outside your organization](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0#authenticate-maven-feeds-outside-your-organization)
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
 
-## Related articles
+::: moniker-end
 
-- [Publish npm packages with Azure Pipelines](./npm.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
-- [Publish NuGet packages with Azure Pipelines](./nuget.md)
+::: moniker range="> azure-devops-2019"
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+::: moniker-end
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Maven Authenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
+
+    1. **Maven Authenticate**: Select your service connection from the **Credentials for repositories outside this organization/collection** dropdown menu.
+
+    1. **Command line task**:
+        - **Display name**: Publish.
+        - **Script**: 
+            ```
+            mvn deploy
+            ```
+
+4. Select **Save & queue** when you're done.
+
+- - -
+
+## Related content
+
+- [Maven Authenticate v0 task](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0)
+- [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
+- [Publish and download pipeline artifacts](pipeline-artifacts.md)

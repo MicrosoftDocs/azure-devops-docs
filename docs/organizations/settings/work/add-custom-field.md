@@ -25,6 +25,8 @@ For more information, see [About process customization and inherited processes](
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]

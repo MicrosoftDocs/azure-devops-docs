@@ -27,18 +27,17 @@ For guidance on who to provide greater permission levels, see [Manage access usi
 
 ## Prerequisites
 
-- You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises Azure DevOps](../../organizations/projects/create-project.md).
-- You must be a member of the [**Project Administrators** Group](../../organizations/security/change-project-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories.  
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ::: moniker range="azure-devops"
 
-To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as Contributors and those granted **Basic** access. For more information, see [About access levels](../../organizations/security/access-levels.md).
+To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as Contributors and those granted **Basic** access. For more information, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).
+To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).
 ::: moniker-end
 
 
@@ -119,7 +118,7 @@ You can manage access to a repository by setting the permission state to **Allow
 
 ## Change permissions for a security group
 
-To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project-level](../../organizations/security/change-project-level-permissions.md). 
+To set permissions for a custom security group, have defined that group previously. See [Set permissions at the project-level](../../organizations/security/change-project-level-permissions.md). 
 
 1. To set permissions for a specific group, choose the group. For example, here we choose the Contributors group.
 

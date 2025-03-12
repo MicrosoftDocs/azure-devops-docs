@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/05/2024
+ms.date: 02/10/2025
 --- 
 
 # Troubleshoot access and permission issues
@@ -17,12 +17,15 @@ ms.date: 08/05/2024
 
 Due to the extensive security and permission structure of Azure DevOps, you might need to investigate why a user lacks access to a project, service, or feature they expect. Find step-by-step guidance to understand and address issues a user might encounter when connecting to a project or accessing an Azure DevOps service or feature.
 
-Before using this guide, we recommend getting familiar with the following content: 
-- [Get started with permissions, access, and security groups](about-permissions.md)
-- [Default permissions and access quick reference.](permissions-access.md) 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | To manage permissions or groups at the organization or collection level: Member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| **Recommendation** | Before using this guide, we recommend getting familiar with the following content: <br>- [Get started with permissions, access, and security groups](about-permissions.md) <br>- [Default permissions and access quick reference](permissions-access.md). |
 
 > [!TIP]
-> When you're creating an Azure DevOps security group, label it clearly to indicate if it's intended to limit access.
+> When you create an Azure DevOps security group, label it clearly to indicate whether it's intended to limit access.
 
 You can set permissions at the following levels:
 - Object level
@@ -62,6 +65,7 @@ You can assign users or groups of users to one of the following access levels:
 - Basic
 - Basic + Test Plans
 - Visual Studio subscription
+- GitHub Enterprise
 
 For more information about restricting access levels in Azure DevOps, see [Supported access levels](access-levels.md#supported-access-levels).
 
@@ -71,11 +75,11 @@ Users can lose access for the following reasons:
 
 |**Reason for loss of access**  |**Troubleshooting action**|
 |---------|---------|
-|The user's Visual Studio subscription expired.     | Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
+|The user's Visual Studio subscription expired.     | This user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
 |The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
 |The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)        |
 
-Otherwise, on the first day of the calendar month, users who didn't sign in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
+Otherwise, users who didn't sign in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 
 For more information about permissions, see [Permissions and groups](permissions.md) and the [Permissions lookup guide](permissions-lookup-guide.md).
 
@@ -262,5 +266,5 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
 - [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)
-- [Security best practices](security-best-practices.md)  
+- [Security overview](security-overview.md)  
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)

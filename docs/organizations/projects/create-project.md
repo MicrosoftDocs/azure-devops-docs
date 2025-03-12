@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2023
+ms.date: 12/17/2024
 ---
 
 
@@ -30,21 +30,26 @@ Create an Azure DevOps project to establish a repository for source code and to 
 
 ::: moniker range="azure-devops" 
 
-- You need an organization before you can create a project. If you don't have an organization, [create an organization](../accounts/create-organization.md).  
-- You must be a member of the Project Collection Administrators group or have the collection-level "Create new projects" permission set to *Allow*. If you're the Organization owner, you're automatically added to the Project Collection Administrators group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Organization** |An [organization](../accounts/create-organization.md). | 
+|**Permissions** |Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.|
+
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"  
 
-- You need a project collection before you can create a project. If you don't have one, [create a project collection now](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
-- You must be a member of the Project Collection Administrators group or have the "Create new projects permission" set to *Allow*. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Project collection**| A [project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).|
+|**Permissions** |Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.|
 
 ::: moniker-end  
 
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]  
-> To create a public project or to make a private project public, see the information in [Make a private project public](../projects/make-project-public.md). You must enable additional policy settings to work with public projects. Then, return to this article to create your project.
+> To create a public project or [make a private project public](../projects/make-project-public.md), enable additional policy settings to work with public projects, and then return to this article to create your project.
 
 ::: moniker-end
 
@@ -69,7 +74,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 ::: moniker range=">= azure-devops"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```). 
 
 2. Select **New project**.
 
@@ -83,7 +88,7 @@ There isn't a limit on the number of projects that you can create within a proje
      For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav.png)  
+   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav-2.png)  
 
    When you choose public visibility, anyone on the internet can view your project. With private visibility, only users you give access to can view your project. For more information about features and access levels for public projects, see [Make a private project public](make-project-public.md). If the **Public** option isn't available, you need to change the policy.
 
@@ -100,7 +105,7 @@ There isn't a limit on the number of projects that you can create within a proje
    - **Pipelines**: Define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
    - **Test Plans**: Define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
    - **Artifacts**: Discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/start-using-azure-artifacts.md).
-   - **manage your services**: Disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
+   - **Manage your services**: Disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 ::: moniker-end
 
@@ -120,7 +125,7 @@ There isn't a limit on the number of projects that you can create within a proje
      For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav.png)  
+   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav-2.png)  
 
    When you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For more information about public projects, see [Create a public project in your organization](../projects/create-project.md). If the **Public** option isn't available, you need to change the policy.
 

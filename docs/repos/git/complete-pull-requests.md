@@ -24,34 +24,12 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
- 
-- To complete your PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project the PR is in.
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-
-- To view or review PRs, you must have **Basic** or higher access to the Azure DevOps project.
-
-- If you aren't a member of the project you want to contribute to, [get added](../../organizations/accounts/add-organization-users.md).
-
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-::: moniker-end
-
-
-
-- For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range="azure-devops"
-- In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 ::: moniker-end
 
 ## Check merge changes

@@ -350,7 +350,7 @@ If you already have the Python version you want to use on the machine hosting yo
 
 Create a pipeline to build and deploy your Python web app to Azure App Service. To understand pipeline concepts, watch:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMlMo]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=20e737aa-cadc-4603-9685-3816085087e9]  
 
 ::: moniker range=">=azure-devops"
 
@@ -456,7 +456,6 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
             python -m venv antenv
             source antenv/bin/activate
             python -m pip install --upgrade pip
-            pip install setup
             pip install -r requirements.txt
           workingDirectory: $(projectRoot)
           displayName: "Install requirements"
