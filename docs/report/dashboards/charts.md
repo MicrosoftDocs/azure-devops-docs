@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2024
+ms.date: 03/12/2025
 #customer intent: As an Azure Boards user, I want to create charts to track the status of work in progress.
 ---
 
@@ -19,7 +19,7 @@ ms.date: 09/20/2024
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md#define-a-flat-list-query). Queries support different chart views, such as pie, column, pivot, or trend. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other custom or system defined field.
 
-In this article you learn how to perform the following tasks:
+In this article, learn how to do the following tasks:
 
 > [!div class="checklist"]
 > - Construct a flat-list query to support your chart
@@ -28,18 +28,14 @@ In this article you learn how to perform the following tasks:
 > - Create a trend chart
 > - Add a chart to a dashboard
 
-> [!NOTE]
-> This article describes how to configure work tracking query charts. To add existing query charts to dashboards, see [Add charts to a dashboard](add-charts-to-dashboard.md). For information on configuring a **Chart for Work Items** widget, see [Configure a chart for work items widget](configure-chart-work-items-widget.md).
->
-> For an overview of all work tracking charts and in-context reports, see [About dashboards, charts, reports, & widgets](overview.md).
+This article describes how to configure work tracking query charts. For more information, see the following articles:
+- [Add charts to a dashboard](add-charts-to-dashboard.md) 
+- [Configure a chart for work items widget](configure-chart-work-items-widget.md).
+- [About dashboards, charts, reports, & widgets](overview.md).
 
-::: moniker range=">= azure-devops-2019"
-
-For example, the following image illustrates two different charts created from the same flat-list query. The pie chart groups the 19 bugs by state, and the bar chart groups the bugs by assignment and their current status.
+The following image shows two charts created from the same flat-list query.
 
 :::image type="content" source="media/overview/active-bug-charts-on-dashboards-2019.png" alt-text="Screenshot of Active bug charts added to dashboards.":::
-
-::: moniker-end
 
 ## Prerequisites
 
@@ -130,12 +126,9 @@ Most charts allow you to choose how you want to sort the data. You can sort by *
 
 #### Limited display of series
 
-::: moniker range=">= azure-devops-2019" 
-When a chart contains more than 8 or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled *(other)*. However, if you increase the chart size through the configurable widget on a dashboard you can increase the series limit.  
+When a chart contains more than 8 or 12 items within the data series, values in the nine or 13-plus items are consolidated into a set labeled *(other)*. However, if you increase the chart size through the configurable widget on a dashboard you can increase the series limit.  
 
-:::image type="content" source="media/charts/other-12-series.png" alt-text="Screenshot of Other category groups data beyond 12 set series.":::  
-
-::: moniker-end
+:::image type="content" source="media/charts/other-12-series.png" alt-text="Screenshot of Other category groups data beyond 12 set series.":::
 
 ## Chart availability
 
@@ -148,29 +141,23 @@ When a chart contains more than 8 or 12 items within the data series, values in 
 
 1. From **Queries**, open the chart editor for a flat-list query. To create charts, belong to the Contributors group.
 
-   ::: moniker range=">= azure-devops-2019"
-   :::image type="content" source="media/charts/new-chart-new-qe.png" alt-text="Screenshot of the Charts tab with the New chart button.":::
-   ::: moniker-end  
+   :::image type="content" source="media/charts/new-chart-new-qe.png" alt-text="Screenshot of the Charts tab with the New chart button."::: 
 
    If you have **Stakeholder** access, the **Charts** and **New Chart** links don't appear.
 
-1. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
-   ::: moniker range=">= azure-devops-2019"
+2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
 
-   :::image type="content" source="media/charts/config-pie-chart-priority-qe.png" alt-text="Screenshot of pie chart configure dialog.":::  
-   ::: moniker-end  
+   :::image type="content" source="media/charts/config-pie-chart-priority-qe.png" alt-text="Screenshot of pie chart configure dialog.":::   
 
    If you don't see the field you want in the **Group by** dropdown list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregation** options depend on the fields used in the query or the fields selected from the **Column Options**.  
 
    If you receive an error message when you close the chart editor, you need to request Basic access. For more information, see [Change access levels](../../organizations/security/change-access-levels.md).
 
-1. To sort the results, select **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
+3. To sort the results, select **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
 
-   ::: moniker range=">= azure-devops-2019"  
    To change a color, select a color from the Series set of color pickers.
 
-   :::image type="content" source="media/charts/color-series-picker.png" alt-text="Screenshot of Charts dialog, color series picker.":::  
-   ::: moniker-end  
+   :::image type="content" source="media/charts/color-series-picker.png" alt-text="Screenshot of Charts dialog, color series picker.":::    
 
 Charts automatically update when you edit the query or refresh the query results.  
 
@@ -200,10 +187,7 @@ The combined query and chart configuration yield the following pie chart.
 
 A stacked bar chart lets you track progress against two field values. Node Name displays the last leaf within an area path. Use this approach when you want to show data across teams and each node corresponds to a team.  
 
-::: moniker range=">= azure-devops-2019"
-
 :::image type="content" source="media/charts/config-stacked-bar-chart-team-qe.png" alt-text="Screenshot of Configure chart dialog, Stacked bar chart.":::
-::: moniker-end  
 
 ## Add a Pivot table  
 
@@ -215,48 +199,40 @@ The following image shows an example of work item types and their current state.
 
 ## Add a Trend chart
 
-Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year.  
-
-::: moniker range=">= azure-devops-2019"
+Trend charts display progress over time. You can select a rolling period ranging from the last week to the last year.
 
 :::image type="content" source="media/charts/config-2-week-trend-chart-bugs.png" alt-text="Screenshot of Configure chart dialog, two week trend chart.":::
-::: moniker-end  
 
-Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Data in the operational store is constantly changing and being updated. All data is current.
+Trend data comes from the work tracking data store. The schema of the relational database is designed and optimized for online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Data in the operational store constantly changes and updates. All data is current.
 
 ## Add a Burndown chart
 
-Burndown charts are useful for determining how quickly work is progressing based on a numeric field value, such as Story Points, Effort, or Remaining Work, or on a count of work items.
+Burndown charts help determine how quickly work is progressing based on a numeric field value, such as Story Points, Effort, or Remaining Work, or on a count of work items.
 
-To create a burndown chart, add the numeric field you want to your query. To view a burndown chart of tasks, select the **Sum** operator for **Remaining Work**.  
-
-::: moniker range=">= azure-devops-2019"
+To create a burndown chart, add the numeric field you want to your query. To view a burndown chart of tasks, select the **Sum** operator for **Remaining Work**.
 
 :::image type="content" source="media/charts/config-remaining-work-trend-chart.png" alt-text="Screenshot of Configure chart dialog, Remaining work for past four weeks.":::
 
-In addition to query-based burndown charts, you can [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
+In addition to query-based burndown charts, you can [configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
 
-::: moniker-end  
+## Add a chart to a dashboard
 
-## Add chart to a dashboard
+To add a chart to a dashboard, do the following steps:
 
-Add a chart to a dashboard is through the addition of a **Chart for Work Items** widget. You can add the chart to a dashboard as shown in the following procedure, or by adding the **Chart for Work Items** widget directly. For more information, see [Configure a chart for work items widget](configure-chart-work-items-widget.md).
+1. Add a **Chart for Work Items** widget. You can add the chart to a dashboard as shown in the following procedure, or by adding the **Chart for Work Items** widget directly. For more information, see [Configure a chart for work items widget](configure-chart-work-items-widget.md).
 
-> [!TIP]
-> All query charts are limited in size. You can resize and configure charts that you add to a dashboard by opening the **Chart for Work Items** widget used to display them.
+   > [!TIP]
+   > All query charts are limited in size. You can resize and configure charts that you add to a dashboard by opening the **Chart for Work Items** widget used to display them.
 
-- Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
+2. Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.
 
-::: moniker range=">= azure-devops-2019"
+   :::image type="content" source="media/charts/add-chart-to-dashboard-qe.png" alt-text="Screenshot shows the Chart context menu, Add to dashboard option.":::
 
-:::image type="content" source="media/charts/add-chart-to-dashboard-qe.png" alt-text="Screenshot shows the Chart context menu, Add to dashboard option.":::
+   Only queries that are saved to a **Shared Queries** folder have the **Add to dashboard** menu option.
 
-Only queries that are saved to a **Shared Queries** folder have the **Add to dashboard** menu option.
+3. In the dialog that opens, select the dashboard to add the chart to.
 
-In the dialog that opens, select the dashboard to add the chart to.
-
-:::image type="content" source="media/charts/select-dashboard-dialog.png" alt-text="Screenshot shows the Select a dashboard dialog.":::  
-::: moniker-end
+   :::image type="content" source="media/charts/select-dashboard-dialog.png" alt-text="Screenshot shows the Select a dashboard dialog.":::
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md).
 
