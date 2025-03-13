@@ -31,11 +31,11 @@ Sign up for Azure Boards with either a Microsoft account or GitHub account.
 
 # [Microsoft account](#tab/microsoft-account)
 
-[!INCLUDE [sign-up-msft-account](../includes/sign-up-msft-account.md)]
+[!INCLUDE [sign-up-msft-account](../../includes/sign-up-msft-account.md)]
 
 # [GitHub account](#tab/github-account)
 
-[!INCLUDE [sign-in-github-account](../includes/sign-in-github-account.md)]
+[!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
 
 ---
 
