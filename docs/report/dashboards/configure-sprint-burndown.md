@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019' 
-ms.date: 12/12/2024
+ms.date: 03/12/2025
 #customer intent: As a team member or leader, I want to monitor sprint burndown information to see whether my team is on track to complete our sprint plan.
 ---
 
@@ -18,11 +18,11 @@ ms.date: 12/12/2024
 
 ::: moniker range=">= azure-devops-2020"
 
-Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). There are two sprint accessible burndown charts: the in-context Burndown Trend report viewable from a team sprint backlog and the Sprint Burndown widget that you can add to a dashboard.
+Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). There are two accessible burndown charts: the in-context Burndown Trend report viewable from a team sprint backlog and the Sprint Burndown widget that you can add to a dashboard.
 
-Both the report and the widget derive data from [Analytics](../powerbi/what-is-analytics.md). They support monitoring burndown based on a count of work items or a sum of Story Points/Size/Effort, Remaining Work, or other numeric field.
+Both the report and the widget derive data from [Analytics](../powerbi/what-is-analytics.md). They support monitoring burndown based on a count of work items or a sum of Story Points, Size, Effort, Remaining Work, or other numeric fields.
 
-You can add either the report or widget to a dashboard. Also, you can monitor progress using the [Analytics-based burndown or burnup widgets](configure-burndown-burnup-widgets.md). They provide more configuration options.
+You can add either the report or widget to a dashboard. Additionally, you can monitor progress using the [Analytics-based burndown or burnup widgets](configure-burndown-burnup-widgets.md), which provide more configuration options.
 
 ::: moniker-end
 
@@ -34,30 +34,7 @@ Throughout your sprint, you can monitor the sprint burndown report to determine 
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-Use this article to learn about: 
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="checklist"]  
-> - Metrics tracked in the sprint burndown report and widget
-> - Team activities required to track tasks and Remaining Work
-> - How to set interactive controls to personalize your view of the sprint burndown report
-> - How to add the in-context Burndown Trend report to a dashboard  
-> - How to configure the Sprint Burndown widgets  
-> - How to view current and past sprint burndowns
-
 For an overview of all burndown and burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="checklist"]  
-> - Metrics tracked in the sprint burndown report and widget
-> - Team activities required to track tasks and Remaining Work
-> - How to configure the Sprint Burndown widget
-> - How to view current and past sprint burndowns
-
-::: moniker-end
 
 > [!NOTE]
 > Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
@@ -68,7 +45,7 @@ For an overview of all burndown and burnup charts available to you, see [Burndow
 
 The Burndown Trend report is based on either a count of tasks or remaining work estimates, or other numeric fields that you define and update throughout the sprint cycle. For details, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). To open this report, see [Open a Sprint backlog](#open-chart).
 
-A healthy sprint burndown report looks something like the image shown here. The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint. 
+A healthy sprint burndown report appears similar to the following example. The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint. 
 
 :::image type="content" source="media/burndown/analytics-burndown-stories-count-past-s159.png" alt-text="Screenshot shows the burndown trend for specified start and end dates." lightbox="media/burndown/analytics-burndown-stories-count-past-s159.png":::
 
@@ -95,7 +72,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 :::row:::
    :::column span="1":::
 
-   A healthy sprint burndown chart looks something like this. The *Ideal Trend* line connects the two points:
+   A healthy sprint burndown chart appears similar to the following example. The *Ideal Trend* line connects the two points:
 
    - **(1)** Team's total capacity at the start of the sprint.  
    - **(2)** 0 Remaining Work at the end of the sprint.
@@ -432,10 +409,12 @@ Teams can find it useful to review these reports periodically during their sprin
 - How can you more accurately determine how much your team can accomplish in a sprint?
 - How can you complete work at a more regular pace throughout the sprint?
 
-## Related articles
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Burndown and burnup guidance](burndown-guidance.md)
+
+## Related articles
 
 - [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Assign backlog items to a sprint in Azure Boards](../../boards/sprints/assign-work-sprint.md)

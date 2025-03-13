@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2024
+ms.date: 03/12/2025
 #customer intent:  As an administrator or team member, I want to understand how using a dashboard can provide visibility into projects for my team.
 ---
 
@@ -37,8 +37,6 @@ The following features provide support for viewing Azure DevOps data through the
 - **Widgets**: Items that display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 - **In-context reports**: System-generated charts that support specific services. Examples are team velocity, sprint burndown, the Cumulative Flow Diagram (CFD), and the **Test failures** report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.
 
-::: moniker range=">= azure-devops-2019"
-
 ### Power BI reports
 
 The following features provide support for viewing Azure DevOps data by using Power BI:
@@ -47,8 +45,7 @@ The following features provide support for viewing Azure DevOps data by using Po
 - **Power BI reports**: Allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data. For on-premises Azure DevOps environments, project collections must be configured to support the Inherited process.
 
 > [!NOTE]
-> Open Data Protocol (OData) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/).
-::: moniker-end  
+> Open Data Protocol (OData) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/). 
 
 ::: moniker range="< azure-devops-2022"
 
@@ -58,7 +55,7 @@ SQL Server Reporting Services is the legacy reporting solution available with Az
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+::: moniker range="< azure-devops-2022"
 
 - **Excel status and trend reports**: Support generating custom work tracking reports by using Excel starting with a flat-list query. For more information, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
@@ -139,7 +136,6 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="3":::
       Analytics views
@@ -162,7 +158,6 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
        ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="3":::
@@ -191,13 +186,9 @@ For Dashboards, set [dashboard permissions](dashboard-permissions.md) at the tea
 
 [!INCLUDE [report dashboard permissions](../../organizations/security/includes/report.md)]
 
-::: moniker range=">= azure-devops-2019"
-
 For Power BI Integration and Analytics views, you set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level.
 
 [!INCLUDE [analytics dashboard permissions](../../organizations/security/includes/analytics.md)]
-
-::: moniker-end
 
 ## Configurable dashboards
 
@@ -231,11 +222,7 @@ For more information, see [Define a query](../../boards/queries/using-queries.md
 
 #### Sample Agile tool lightweight charts
 
-::: moniker range=">= azure-devops-2019"
-
 :::image type="content" source="media/overview/active-bug-charts-on-dashboards-2019.png" alt-text="Screenshot that shows Active bug charts added to dashboards.":::
-
-::: moniker-end
 
 #### Sequence for adding query-based charts to a dashboard
 
@@ -267,21 +254,13 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 
 [:::image type="icon" source="media/widget-sprint-capacity.png":::](widget-catalog.md#sprint-capacity-widget) [:::image type="icon" source="media/widget-sprint-burndown.png":::](widget-catalog.md#sprint-burndown-analytics-widget)
 
-::: moniker range=">= azure-devops-2019"
-
 ### Sprint scope change
 
 There's no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint by using the Query Editor. For more information, see [Query sprint scope changes](../../boards/sprints/scrum-overview.md#sprint-scope-change).
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
 ### Sample Cumulative Flow Diagram widget
 
 :::image type="content" source="media/cfd-exampe-rolling-30-days.png" alt-text="Screenshot that shows a Cumulative Flow Diagram widget.":::
-
-::: moniker-end
 
 ### Monitor code activity, build progress, and deployment status
 
@@ -297,11 +276,7 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 :::image type="content" source="media/widget-build-history-chart.png" alt-text="Screenshot that shows a Deployment status widget.":::
 
-::: moniker range=">= azure-devops-2019"
-
 ### Analytics widgets and reports
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -314,21 +289,15 @@ The Analytics service is the reporting platform for Azure DevOps. As described i
 The Analytics service is the reporting platform for Azure DevOps. As described in [What is the Analytics service?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets and [Analytics views for Power BI reporting](../powerbi/what-are-analytics-views.md).
 
 > [!NOTE]
-> Analytics is in preview for Azure DevOps Server 2019 and generally available for Azure DevOps Server 2020 and later versions.
+> Analytics is generally available for Azure DevOps Server 2020 and later versions.
 
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 
 #### Sample Lead time widget
 
 :::image type="content" source="media/lead-time-control-chart.png" alt-text="Screenshot that shows a Lead time widget.":::
 
 For more information, see [Widgets based on Analytics data](../dashboards/analytics-widgets.md) and [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget).
-
-::: moniker-end
-
-
 
 <a id="work-tracking-analytics"></a>
 
@@ -487,7 +456,7 @@ Azure Pipelines provides an in-context **Test failures** report, derived from An
 [Add a custom field](../../organizations/settings/work/customize-process-field.md) to add data to support reporting requirements.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 Add data to support reporting requirements by adding a custom field: [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
@@ -510,13 +479,13 @@ For more information, see [Azure Monitor overview](/azure/azure-monitor/overview
 
 ### Azure Resource Graph
 
-Azure Resource Graph lets you explore and query your Azure resources at scale. It lets you query across subscriptions and management groups, making it easier to manage large environments.
+Azure Resource Graph lets you explore and query your Azure resources at scale. It lets you query across subscriptions and management groups, which makes it easier to manage large environments.
 
 For more information, see [What is Azure Resource Graph](/azure/governance/resource-graph/overview).
 
 ### Azure Advisor
 
-Azure Advisor is a personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It analyzes your resource configuration and usage telemetry and then recommends solutions to help improve the cost-effectiveness, performance, high availability, and security of your Azure resources.
+Azure Advisor is a personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It analyzes your resource configuration and usage, and then recommends solutions to help improve the cost-effectiveness, performance, high availability, and security of your Azure resources.
 
 For more information, see [Introduction to Azure Advisor](/azure/advisor/advisor-overview).
 
