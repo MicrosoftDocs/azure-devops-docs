@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Learn how to connect to Power BI Data Connector and Analytics to access Azure DevOps data. You can extract valuable insights and create compelling reports.
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.subservice: azure-devops-analytics
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms date: 09/16/2024
+ms date: 03/12/2025
 #customer intent: As a team member or administrator, I want to connect to Azure DevOps Analytics with Power BI to create reports. 
 ---
 
@@ -39,7 +40,7 @@ In this article, learn how to establish a seamless connection between Power BI a
 |-------------|-------------|
 | **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
 | **Permissions** | [Analytics permissions](analytics-security.md). If you're a member of the **Contributors** group for the project, you have permission. |
-|**Tools** | - [Analytics installed and enabled](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true). Account owners or a members of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) can add extensions or enable the service.<br>- [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://aka.ms/pbidesktopstore)    |
+|**Tools** | - [Analytics installed and enabled](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true). Account owners or members of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) can add extensions or enable the service.<br>- [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://aka.ms/pbidesktopstore)    |
 |**Tasks**| - Familiarity with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).<br>- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. |
 
 ::: moniker-end
@@ -67,7 +68,7 @@ Find answers to common questions about Power BI Data Connector and Analytics err
 ### Q: How should I read error messages coming from the connector?
 
 **A:** You might feel challenged reading error messages coming from the connector because they typically contain extra contextual information. If the load operation fails, then the message starts with "Failed to save modifications to the server...". When you see it, search for **&#91;DataSource.Error&#93; Azure DevOps...:**.
-The following example shows the error message returned from the connector. The most important part of the error message is "Query result exceeds maximum size. Reduce the number of records by applying additional filters."
+The following example shows the error message returned from the connector. The most important part of the error message is "Query result exceeds maximum size. Reduce the number of records by applying more filters."
 
 :::image type="content" source="media/QueryExceedsPreferredMaxSizeException.png" alt-text="Screenshot that shows the Query result exceeds maximum size error message.":::
 
@@ -114,12 +115,10 @@ For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fab
 
 :::image type="content" source="media/ProjecNotFoundError.png" alt-text="Screenshot that shows the Project not found error.":::
 
-<!-- ENDSECTION -->
-
-## Related content
+## Related articles
 
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
-- [About Power BI integration](overview.md)
+- [Learn about Power BI integration](overview.md)
 - [Set permissions to access Analytics and Analytics views](analytics-security.md)
-- [Analytics views dataset design](data-connector-dataset.md)
-- [Example reports based on Analytics views](data-connector-examples.md)
+- [Design Analytics views dataset](data-connector-dataset.md)
+- [Explore example reports based on Analytics views](data-connector-examples.md)
