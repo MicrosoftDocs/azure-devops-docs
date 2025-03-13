@@ -7,7 +7,7 @@ ms.subservice: azure-devops-new-user
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/20/2023
+ms.date: 03/13/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -17,34 +17,24 @@ monikerRange: 'azure-devops'
 
 Sign up for Azure DevOps and get the [free tier of services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). For more information, see [What is Azure DevOps?](what-is-azure-devops.md)
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Browser**| Latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.|
+
 ## Sign up
 
 Sign up for Azure DevOps with either a Microsoft account or GitHub account.
 
 # [Microsoft account](#tab/microsoft-account)
 
-1. If you don't have one, [create a Microsoft account](https://azure.microsoft.com/services/devops/).
-2. Go to [Azure DevOps](https://azure.microsoft.com/services/devops/) and select **Start free**.
-3. Enter your account credentials and go through the sign-up process.
-
-   Azure DevOps creates an organization.
--  Azure DevOps creates a project named after your *newly created* Microsoft account.
--  If you signed up with an existing Microsoft account, you need to [create a project](../organizations/projects/create-project.md) next.
-
-Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
+[!INCLUDE [sign-up-msft-account](../includes/sign-up-msft-account.md)]
 
 # [GitHub account](#tab/github-account)
 
-> [!NOTE]
-> If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Microsoft Entra account.
+[!INCLUDE [sign-in-github-account](../includes/sign-in-github-account.md)]
 
-1. If you don't have one, [create a GitHub account](https://github.com/join).
-2. Go to [Azure DevOps](https://azure.microsoft.com/services/devops/) and select **Start free with GitHub**.
-3. Enter your account credentials and go through the sign-up process. You're asked to **Authorize Microsoft-corp**.
-
-   Azure DevOps creates an organization. Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
-   Azure DevOps turns on the *Invite GitHub users* policy by default. 
-   ![Screenshot of the Invite GitHub users policy.](../media/invite-github-users-policy.png)
 ---
 
 ## Next steps  
