@@ -15,11 +15,11 @@ monikerRange: 'azure-devops'
 
 With Azure Artifacts upstream sources, developers gain the convenience of using a unified feed to both publish and consume packages from Artifact feeds and popular public registries like NuGet.org or npmjs.com.
 
-## Allow externally-sourced versions
+## Allow externally sourced versions
 
 This feature enables developers to control whether they want to consume package versions from public registries such as NuGet.org or npmjs.com. 
 
-once the **Allow External Versions** toggle is enabled for a specific packge, versions from the public registry become available for download. By default, this option is disabled, adding an extra layer of security by preventing exposure to potentially malicious packages from public registries. You must be a **Feed Owner** to enable the *allow externally sourced versions* feature.
+Once the **Allow External Versions** toggle is enabled for a specific package, versions from the public registry become available for download. By default, this option is disabled, adding an extra layer of security by preventing exposure to potentially malicious packages from public registries. You must be a **Feed Owner** to enable the *allow externally sourced versions* feature.
 
 > [!NOTE]
 > Changing this setting does not affect package versions already saved to the feed. Those versions will remain accessible regardless of this setting.
@@ -166,7 +166,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 ```
 
 > [!NOTE]
-> In some cases, setting up the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+> Changes to upstream behavior may take time to propagate across the service. If your package is not available after updating the settings, allow up to 3 hours for the changes to take effect.
 
 #### [Clear upstreaming behavior](#tab/clear/)
 
