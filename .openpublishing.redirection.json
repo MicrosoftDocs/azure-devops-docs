@@ -581,6 +581,14 @@
     {
       "source_path": "docs/integrate/get-started/authentication/iis-basic-auth.md",
       "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#why-did-my-pat-stop-working"
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-validation-errors.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues.md#resolve-data-validation-errors-that-occur-when-you-publish-from-Excel"
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#Resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
     }
   ]
 }

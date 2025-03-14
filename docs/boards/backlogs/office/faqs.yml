@@ -8,7 +8,7 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 08/12/2024
+  ms.date: 03/14/2025
 
 
 title: FAQs about working in Excel connected to Azure Boards  
@@ -115,10 +115,7 @@ sections:
           - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
           - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
           ::: moniker-end
-          ::: moniker range "azure-devops"
           - Use the [az boards work-item relation add](/cli/azure/boards/work-item/relation) command.
-          ::: moniker-end 
-
 
   - name: Work with test work items 
      
@@ -276,6 +273,17 @@ sections:
         answer: |
           See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon). 
 
+  - name: Resolve data conflicts and validation errors
+     
+    questions: 
+      
+      - question: How can I resolve data validation errors that occur when I publish from Excel? 
+        answer: |
+          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-validation-errors).
+
+      - question: How can I resolve data conflicts when I publish or refresh Excel data? 
+        answer: |
+          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-conflicts).
 
 additionalContent: | 
   ## Related articles
