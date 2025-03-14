@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *.npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
+Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ Azure Artifacts enables developers to manage their packages from various sources
 
 Azure Artifacts recommends using two separate configuration files. The first is dedicated to authenticating with Azure Artifacts, while the second should be kept locally to store your credentials. This approach allows you to share your configuration file while keeping your credentials secure.
 
-To set up the second file, simply place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
+To set up the second file, place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
 
-The following steps will guide you through setting up the first configuration file. Select the tab that corresponds to your development environment:
+The following steps guide you through setting up the first configuration file. Select the tab that corresponds to your development environment:
 
 ::: moniker range="< azure-devops"
 
@@ -57,7 +57,7 @@ The following steps will guide you through setting up the first configuration fi
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
 
-### [Linux/MacOS](#tab/Linuxmac/)
+### [Linux/macOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
@@ -131,7 +131,7 @@ The following steps will guide you through setting up the first configuration fi
 
    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
-### [Linux/MacOS](#tab/Linuxmac/)
+### [Linux/macOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
@@ -198,7 +198,7 @@ The following steps will guide you through setting up the first configuration fi
 
    :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
 
-### [Linux/MacOS](#tab/Linuxmac/)
+### [Linux/macOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and paste the following snippet into it:
 
@@ -314,7 +314,7 @@ Follow these steps to reset your vsts-npm-auth credentials:
 
 #### Unable to publish
 
-If you encounter a 403 error, it may indicate a name conflict. In Azure Artifacts, packages are immutable, meaning that once you publish a package to your feed, its version number is permanently reserved. Even if you delete it, you cannot publish a new package with the same version number. To address this issue, update the package version in your *package.json* file, and then try again.
+If you encounter a 403 error, it may indicate a name conflict. In Azure Artifacts, packages are immutable, meaning that once you publish a package to your feed, its version number is permanently reserved. Even if you delete it, you can't publish a new package with the same version number. To address this issue, update the package version in your *package.json* file, and then try again.
 
 ::: moniker-end
 
