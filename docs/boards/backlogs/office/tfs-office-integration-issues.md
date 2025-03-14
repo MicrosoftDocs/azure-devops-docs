@@ -160,6 +160,8 @@ If you get an error during refresh or publish, there might be a Conditional Acce
 
 You might get an error message when opening a work item list in Excel, triggered from Team Explorer. For more information, see [How to solve 'Unable to cast COM object of type Microsoft.Office.Interop.Excel.ApplicationClass' to interface type 'Microsoft.Office.Interop.Excel._Application.''](/archive/blogs/dau-blog/how-to-solve-unable-to-cast-com-object-of-type-microsoft-office-interop-excel-applicationclass-to-interface-type-microsoft-office-interop-excel-_application)
 
+<a id="resolve-data-conflicts">  </a>
+
 ## Resolve data conflicts when you publish or refresh Excel data
 
 A data conflict occurs when you try to publish a work item from [Excel](bulk-add-modify-work-items-excel.md) and the version of that work item differs from the version in the work item database. The following example shows how two team members can create such a conflict:
@@ -181,6 +183,8 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
   
 > [!NOTE]  
 > This step publishes only the work items that you corrected. If you don't resolve all data validation errors related to a work item, that work item isn't published.
+
+<a id="resolve-data-validation-errors">  </a>
 
 ## Resolve data validation errors that occur when you publish from Excel
 
