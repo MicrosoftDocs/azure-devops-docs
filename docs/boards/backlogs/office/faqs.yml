@@ -279,11 +279,11 @@ sections:
       
       - question: How can I resolve data validation errors that occur when I publish from Excel? 
         answer: |
-          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#Resolve-data-validation-errors).
+          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-validation-errors).
 
       - question: How can I resolve data conflicts when I publish or refresh Excel data? 
         answer: |
-          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#Resolve-data-conflicts).
+          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-conflicts).
 
 additionalContent: | 
   ## Related articles
