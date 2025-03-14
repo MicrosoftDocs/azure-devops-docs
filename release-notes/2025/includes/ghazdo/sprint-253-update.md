@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/12/2025
+ms.date: 3/17/2025
 ms.topic: include
 ---
 
@@ -68,3 +68,12 @@ jobs:
       - task: AdvancedSecurity-Publish@1
         displayName: Publish to IaC Scanning Results to Advanced Security
 ```
+
+### Service hooks for Advanced Security alerts (preview) 
+
+You can now configure service hooks for Advanced Security alert events, including new alert created, alert data changed, and alert state changed. Just like other repository events, you can filter by repository and branch. For alerts specifically, you can filter by alert type (dependencies, code scanning, or secrets) and alert severity.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of  filter by alert type .](../../media/253-ghazdo-02.png "Screenshot of S filter by alert type ")](../../media/253-ghazdo-02.png#lightbox)
+
+To participate in the preview, fill out the [preview interest form](https://aka.ms/ghazdo-service-hooks-preview) or send us an [email](mailto:ghazdopreview@microsoft.com)!

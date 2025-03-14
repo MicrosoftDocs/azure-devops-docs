@@ -1,18 +1,66 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/12/2025
+ms.date: 3/17/2025
 ms.topic: include
 ---
 
-### ubuntu-latest now runs Ubuntu 24.04
+### The ubuntu-latest pipeline image will start using ubuntu-24.04
+
+Over the coming weeks, pipeline jobs that specify `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
+
+Fore more information about the `ubuntu-24.04` image look [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
+
+```yaml
+- job: ubuntu2404
+  pool:
+    vmImage: 'ubuntu-24.04'
+  steps:
+  - bash: |
+      echo Hello from Ubuntu 24.04
+      lsb_release -d
+  - pwsh: |
+      Write-Host "`$PSVersionTable.OS"
+      $PSVersionTable.OS
+```
 
 
-### Segmented Identities to acquire OIDC token
+### Workload identity federation uses Entra issuer
+
+Just over a year ago, we made [Workload identity federation generally available](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/). Workload identity federation allows you to configure a service connection without a secret. The identity (App registration, Managed Identity) underpinning the service connection can only be used for the intended purpose: the service connection the federated credential configured.
+
+We are now changing the format of the federated credential.
+
+|         | Azure DevOps issuer                                                 | Entra issuer (new)                                            |
+|---------|---------------------------------------------------------------------|---------------------------------------------------------------|
+| Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`    |
+| Subject | `sc://<organization name>/<project name>/<service connection name>` | `<entra prefix>/sc/<organization id>/<service connection id>` |
+
+This change does not change the way tokens are obtained. Pipeline tasks do not need to be updated and work as before.
+
+The steps to create a service connection do not change. In most cases the change in configuration is not visible. When [configuring an Azure service connection manually](https://learn.microsoft.com/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
+
+![FIC example](manual-fic.png "FIC example")
+
+Copy these values as before when creating a federated credential for an App registration or Managed Identity.
+
+## Automation
+
+When creating a service connection in automation with the [REST API], use the federated credential returned by the API:
+
+```json
+authorization.parameters.workloadIdentityFederationIssuer
+authorization.parameters.workloadIdentityFederationSubject
+```
+
+When creating a service connection with the Terraform azuredevops provider, the [azuredevops_serviceendpoint_azurerm](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/serviceendpoint_azurerm#attributes-reference) resource returns `workload_identity_federation_issuer` and `workload_identity_federation_subject` attributes.
+
+## More information
+
+[Connect to Azure with an Azure Resource Manager service connection](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azures)  
+[Troubleshoot an Azure Resource Manager workload identity service connection](https://learn.microsoft.com/azure/devops/pipelines/release/troubleshoot-workload-identity)
 
 ### Upgrade Gradle task
-
-### CDN URL from Edgio endpoint to a custom URL
 
 ### StringList parameter type
 
@@ -44,7 +92,6 @@ stages:
 
 When queuing this pipeline, you'll now have the option of choosing multiple regions to deploy to, as shown in the screenshot below.
 
-###  Ability to disable release pipelines
 
 ### Identity of user who requested a stage to run
 

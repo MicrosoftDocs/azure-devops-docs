@@ -2,7 +2,7 @@
 author: ckanyika
 ms.author: ckanyika
 ms.service: azure-devops
-ms.date: 3/12/2025
+ms.date: 3/17/2025
 ms.topic: include
 ---
 
@@ -15,3 +15,8 @@ There are no actions that will need to be taken from your side and should be a s
 > [!div class="mx-imgBorder"]
 > [![Screenshot of tags being removed.](../../media/253-general-01.png "Screenshot of tags being removed")](../../media/253-general-01.png#lightbox)
 
+### Overlapping secrets for Azure DevOps OAuth
+
+We are excited to introduce the new overlapping secrets feature in Azure DevOps OAuth, designed to enhance security and streamline secret rotations. This feature allows you to add a new secret to your OAuth client while the old secret remains valid, ensuring a seamless transition and continuous operation of your applications. These new secrets can be managed programmatically via API or on the Visual Studio app page UI. The secret lifespan of new secrets has been reduced to 60 days.
+
+Please note that Azure DevOps OAuth is planned for deprecation in 2026, and we encourage developers to migrate to [Microsoft Entra ID OAuth](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/entra-oauth?view=azure-devops) for improved security features and longer-term investment. In the interim, we hope you regularly rotate your secrets using our new overlapping secrets feature.

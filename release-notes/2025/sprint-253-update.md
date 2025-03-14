@@ -2,14 +2,12 @@
 title: TBD
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/12/2025
+ms.date: 3/17/2025
 description: TBD
 ---
 # TBD
 
-We're excited to announce that Azure DevOps Basic access is now included with GitHub Enterprise.  Sign in using your Entra ID to get started.
 
-We're also releasing several improvements to our Boards + GitHub integration.  
 
 Check out the release notes for details.
 
