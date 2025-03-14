@@ -188,7 +188,7 @@ jobs:
 
 ### Required parameters
 
-You can add a validation step at the beginning of your template to check for the parameters you require.
+Pipelines will automatically report an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
 
 Here's an example that checks for the `solution` parameter using Bash:
 
