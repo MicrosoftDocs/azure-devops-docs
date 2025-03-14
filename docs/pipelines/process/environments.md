@@ -20,9 +20,9 @@ An environment represents a logical target where your pipeline deploys software.
 
 Environments provide the following benefits:
 
-- **Deployment history**. Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, you can use [deployment history](#deployment-history) of an environment to identify the source of changes.
+- **Deployment history**. Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, you can use [deployment history](#view-deployment-history) of an environment to identify the source of changes.
 
-- **Traceability of commits and work items**. You can view jobs within the pipeline run that target an environment. You can also view the [commits and work items](#deployment-history) that were newly deployed to the environment. Traceability also lets you track whether a code change commit or feature/bug-fix work item reached an environment.
+- **Traceability of commits and work items**. You can view jobs within the pipeline run that target an environment. You can also view the [commits and work items](#view-deployment-history) that were newly deployed to the environment. Traceability also lets you track whether a code change commit or feature/bug-fix work item reached an environment.
 
 - **Diagnostic resource health**. You can validate whether the application is functioning at its desired state.
 
@@ -43,7 +43,7 @@ To add an environment, you need the following prerequisites:
 - An Azure DevOps organization and project.
 - The [Creator role for environments](../library/add-resource-protection.md#environments) in your project.
 
-<a name="creation"></a>
+
 ## Create an environment
 
 To create your first environment:
@@ -61,9 +61,11 @@ To create your first environment:
 > [!TIP]
 > You can create an empty environment and reference it from deployment jobs so you can record deployment history against the environment.
 
+To programmatically create and manage environments, use the [Azure DevOps Environments REST API](/rest/api/azure/devops/environments/environments).
+
 You can use Azure Pipelines to deploy to environments. For more information, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](../ecosystems/kubernetes/aks-template.md).
 
-<a name="target-from-deployment-job"></a>
+
 ## Target an environment from a deployment job
 
 A [deployment job](deployment-jobs.md) is a collection of steps that run sequentially. You can use a deployment job to target an entire environment group of resources, as shown in the following example YAML snippet. The pipeline runs on the `myVM` machine because that resource name is specified.
@@ -87,7 +89,6 @@ A [deployment job](deployment-jobs.md) is a collection of steps that run sequent
           - script: echo Hello world
 ```
 
-<a name="target-resource-from-deployment-job"></a>
 ## Target a specific environment resource from a deployment job
 
 You can scope the deployment target to a particular resource within the environment, so you can record deployment history on the specific resource. The steps of the deployment job automatically inherit the service connection details from the resource the deployment job targets.
@@ -113,7 +114,7 @@ strategy:
 ```
 
 > [!NOTE]
-> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the the API server endpoint is not exposed through a public IP address.
+> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the API server endpoint isn't exposed through a public IP address.
 > 
 > Azure Pipelines recommends setting up a self-hosted agent within a VNET that has access to the cluster's virtual network. See [Options for connecting to the private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster) for details.
 
@@ -123,7 +124,6 @@ To control deployments to production environments, Azure Pipelines supports manu
 
 The environment **Creator**, **Administrator**, and **User** roles, but not the **Reader** role, can manage approvals and checks. As an environment owner, you can manually control when a stage should run by using approval checks. For more information, see [Define approvals and checks](approvals.md).
 
-<a name="in-run-details"></a>
 ## See environments in run details
 
 Under the **Environments** tab of the pipeline run details, you can see all environments that were targeted by deployment jobs of a pipeline run.
@@ -133,7 +133,6 @@ Under the **Environments** tab of the pipeline run details, you can see all envi
 >[!NOTE]
 >If you're using an Azure Kubernetes Service (AKS) private cluster, the **Environments** tab isn't available.
 
-<a name="deployment-history"></a>
 ## View deployment history
 
 You can select the **Deployments** tab in the Azure Pipelines **Environments** section to view deployment history.
