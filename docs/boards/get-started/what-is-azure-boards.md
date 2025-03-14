@@ -105,7 +105,7 @@ We understand that adjusting to changes can take time, and to ease the transitio
 
 ### Provide feedback
 
-If you find some issues above and beyond spacing and cosmetic, please [provide your feedback](../../../docs/user-guide/provide-feedback.md) to our product team.
+If you find some issues above and beyond spacing and cosmetic, please [provide your feedback](../../user-guide/provide-feedback.md) to our product team.
 
 
 ## Related articles
