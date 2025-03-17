@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/17/2025
+ms.date: 3/18/2025
 ms.topic: include
 ---
 
@@ -76,7 +76,8 @@ This change does not change the way tokens are obtained. Pipeline tasks do not n
 
 The steps to create a service connection do not change. In most cases the change in configuration is not visible. When [configuring an Azure service connection manually](https://learn.microsoft.com/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
 
-![FIC example](manual-fic.png "FIC example")
+> [!div class="mx-imgBorder"]
+> [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
 
 Copy these values as before when creating a federated credential for an App registration or Managed Identity.
 
@@ -96,7 +97,15 @@ When creating a service connection with the Terraform azuredevops provider, the 
 [Connect to Azure with an Azure Resource Manager service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azures)  
 [Troubleshoot an Azure Resource Manager workload identity service connection](https://learn.microsoft.com/azure/devops/pipelines/release/troubleshoot-workload-identity)
 
-### Upgrade Gradle task
+###  Gradle@4 task
+
+A new [Gradle@4](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/gradle-v4) task has been created with support for [Gradle 8](https://docs.gradle.org/8.0/userguide/upgrading_version_7.html). The built-in code coverage option is removed from the `Gradle` task starting with `Gradle@4`. To use code coverage with Gradle in your pipeline:
+
+- Specify code coverage plugins in your build.gradle file. For more information, see [Gradle code analysis options](https://docs.gradle.org/current/userguide/plugin_reference.html#code_analysis).
+- Use the [PublishCodeCoverageResults@2](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task in your pipeline after the `Gradle@4` task.
+
+Configuration of the SonarQube analysis was moved to the [SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) or [SonarCloud](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud) extensions in the task `Prepare Analysis Configuration`.
+
 
 ### StringList parameter type
 
