@@ -14,9 +14,6 @@ Additionally, when a filter is applied, it is added as URL query parameter. This
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)
 
-### pnpm 9 support comes to Advanced Security dependency scanning
-
-Ahead of the end-of-life date for pnpm v8 at the end of April, the next update for dependency scanning will add support for scanning with pnpm v9. This addresses the [Developer Community](https://developercommunity.visualstudio.com/t/AdvancedSecurity-Dependency-Scanning1-T/10743452) request for pnpm v9 support.
 
 ### Multi-repository publishing scenarios supported for Advanced Security
 
@@ -77,3 +74,7 @@ You can now configure service hooks for Advanced Security alert events, includin
 > [![Screenshot of  filter by alert type .](../../media/253-ghazdo-02.png "Screenshot of S filter by alert type ")](../../media/253-ghazdo-02.png#lightbox)
 
 To participate in the preview, fill out the [preview interest form](https://aka.ms/ghazdo-service-hooks-preview) or send us an [email](mailto:ghazdopreview@microsoft.com)!
+
+### pnpm 9 support comes to Advanced Security dependency scanning
+
+Ahead of the end-of-life date for pnpm v8 at the end of April, the next update for dependency scanning will add support for scanning with pnpm v9. This addresses the [Developer Community](https://developercommunity.visualstudio.com/t/AdvancedSecurity-Dependency-Scanning1-T/10743452) request for pnpm v9 support.
