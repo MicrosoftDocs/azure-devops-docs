@@ -191,7 +191,7 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="external-link-count"/>
+   <a id="external-link-count"></a>
 
    **External Link Count**
 
@@ -203,7 +203,7 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="hyper-link-count"/>
+   <a id="hyper-link-count"></a>
 
    **Hyperlink Count**
 
@@ -239,7 +239,7 @@ The following table describes fields associated with links and attachments. Most
 ::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
-   <a id="parent"/>
+   <a id="parent"></a>
 
    **Parent**
 
@@ -258,7 +258,7 @@ The following table describes fields associated with links and attachments. Most
 ::: moniker range="azure-devops-2020" 
 :::row:::
    :::column span="1":::
-   <a id="parent"/>
+   <a id="parent"></a>
 
    **Parent**
 
@@ -273,7 +273,7 @@ The following table describes fields associated with links and attachments. Most
 ::: moniker-end 
 :::row:::
    :::column span="1":::
-   <a id="related-link-count"/>
+   <a id="related-link-count"></a>
 
    **Related Link Count**
 
@@ -285,7 +285,7 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="remote-link-count"/>
+   <a id="remote-link-count"></a>
 
    **Remote Link Count**
 
