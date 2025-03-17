@@ -7,7 +7,7 @@ ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2024
+ms.date: 03/17/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -23,7 +23,7 @@ Organize your directory members with [Microsoft Entra groups](/azure/active-dire
 For more information on [Microsoft Entra ID benefits](/azure/active-directory/fundamentals/active-directory-whatis) and how to [control organization access with Microsoft accounts or Microsoft Entra ID](access-with-azure-ad.md), see the provided links.
 
 > [!NOTE]
-> Due to a functional limitation on Microsoft Graph, [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) don't appear in any list of Microsoft Entra group members on Azure DevOps. Permissions set on any Microsoft Entra groups still apply to any service principals in the group that have been added to the organizations, even if they aren't displaying on the web UI.
+> Due to a functional limitation on Microsoft Graph, [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) don't appear in any list of Microsoft Entra group members on Azure DevOps. Permissions set on any Microsoft Entra groups still apply to any service principals in the group that were added to the organizations, even if they aren't displaying on the web UI.
 
 ## Prerequisites
 
@@ -87,6 +87,27 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 * * *
 
 Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-reevaluate-your-permissions).
+
+## Configure just-in-time-access for admin groups
+
+If you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access, you can modify the configuration of your organization or project. To enhance security for these built-in administrator groups, consider implementing just-in-time access using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). This approach allows you to grant elevated permissions only when needed, reducing the risk associated with permanent access.
+
+### Configure access 
+
+1. [Create a role-assignable group in Microsoft Entra ID](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell&branch=main).
+2. [Add your Microsoft Entra group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page&preserve-view=true). 
+
+> [!NOTE]
+>  When you configure just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group, ensure that any user with elevated access also retains standard access to the organization. This way, they can view the necessary pages and refresh their permissions as needed.
+
+### Use access 
+
+1. [Activate your access](/azure/active-directory/privileged-identity-management/groups-activate-roles). 
+2. [Refresh your permissions](../security/request-changes-permissions.md#refresh-or-reevaluate-your-permissions) in Azure DevOps. 
+3. Take the action requiring administrator access. 
+
+> [!NOTE]
+> Users have elevated access in Azure DevOps for up to 1 hour after their PIM group access gets deactivated.
 
 ## Related articles
 
