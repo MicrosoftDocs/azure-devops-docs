@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 11/18/2024
+ms.date: 03/18/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -341,6 +341,35 @@ Managed DevOps Pools offers the ability to fetch certificates from an Azure Key 
 > As of `api-version 2024-10-19`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
 > 
 > Only one identity can be used to fetch secrets from the Key Vault.
+>
+> Managed DevOps Pools certificate settings are set at the pool level, and some of the settings are specific for Windows or Linux. If your workflow required both Linux and Windows images, you may have to divide them into multiple pools if you can't find a common set of certificate settings that works for both Windows and Linux.
+
+The following settings configure the certificates fetched from your Key Vault.
+
+- [Certificates](#certificates)
+- [Certificate store location](#certificate-store-location)
+- [Certificate store name](#certificate-store-name)
+- [Exportable private keys](#exportable-private-keys)
+
+### Certificates
+
+Specify the certificates to be fetched from your Key Vault and isntalled on all machines in your pool.
+
+### Certificate store location
+
+Specify the location to save the certificate on your agent.
+
+- **Windows agents**: Specify `LocalMachine` or `CurrentUser`
+- **Linux agents**: Disk path where certificate is stored, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
+   For Ubuntu distributions, if you specify the trusted store location, for example `/usr/local/share/ca-certificates`, the vertificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
+
+### Certificate store name
+
+This setting isn't used on Linux. For Windows agents, specify the name of the certificate store, either `My` (local certificate store - default if no name is specified) or `Root` (trusted root location).
+
+### Exportable private keys
+
+Whether the key of the certificates is exportable. The default is `false`.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -355,6 +384,9 @@ Key Vault integration is configured in **Settings > Security**.
 
 Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` property. Set the `secretManagementSettings` to be able to access the desired certificate.
 
+> [!NOTE]
+> The `osProfile.certificateStoreName` property in only available in `apiVersion 2025-01-21` and later.
+
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -363,7 +395,7 @@ Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
             ...
@@ -373,6 +405,7 @@ Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` 
                 "osProfile": {
                     "secretsManagementSettings": {
                         "certificateStoreLocation": "LocalMachine",
+                        "certificateStoreName": "Root",
                         "observedCertificates": [
                             "https://<keyvault-uri>/secrets/<certificate-name>"
                         ],
