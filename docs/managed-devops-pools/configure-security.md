@@ -342,7 +342,7 @@ Managed DevOps Pools offers the ability to fetch certificates from an Azure Key 
 > 
 > Only one identity can be used to fetch secrets from the Key Vault.
 >
-> Managed DevOps Pools certificate settings are set at the pool level, and some of the settings are specific for Windows or Linux. If your workflow required both Linux and Windows images, you may have to divide them into multiple pools if you can't find a common set of certificate settings that work for both Windows and Linux.
+> Managed DevOps Pools certificate settings are set at the pool level, and some of the settings are specific for Windows or Linux. If your workflow requires both Linux and Windows images, you may have to divide them into multiple pools if you can't find a common set of certificate settings that work for both Windows and Linux.
 
 The following settings configure the certificates fetched from your Key Vault.
 
@@ -353,21 +353,22 @@ The following settings configure the certificates fetched from your Key Vault.
 
 ### Certificates
 
-Specify the certificates to be fetched from your Key Vault and isntalled on all machines in your pool.
+Specify the certificates to be fetched from your Key Vault and installed on all machines in your pool.
 
 ### Certificate store location
 
-Specify the location to save the certificate on your agent.
+Specify the location to install the certificates on your agent.
 
 - **Windows agents**: Specify `LocalMachine` or `CurrentUser`.
-- **Linux agents**: Disk path where certificate is stored, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
+- **Linux agents**: Specify the disk path to store the certificates, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
    For Ubuntu distributions, if you specify the trusted store location, for example `/usr/local/share/ca-certificates`, the vertificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
    > [!NOTE]
    > **Certificate store location** is only support on Ubuntu distributions.
 
 ### Certificate store name
 
-This setting isn't used on Linux. For Windows agents, specify the name of the certificate store, either `My` (local certificate store - default if no name is specified) or `Root` (trusted root location).
+- **Windows agents**: Specify the name of the certificate store, either `My` (local certificate store - default if no name is specified) or `Root` (trusted root location).
+- **Linux agents**: This setting isn't used on Linux agents.
 
 ### Exportable private keys
 
