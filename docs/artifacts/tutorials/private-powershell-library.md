@@ -160,10 +160,10 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Publish a package
 
-Run the following command to publish the package to your feed:
+Run the following command to publish the package to your feed (any text for -ApiKey parameter is valid):
 
 ```powershell
-Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -ApiKey (Get-Secret <SECRET_NAME>) 
+Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -Credential (Get-Secret <SECRET_NAME>) -ApiKey "AzureDevOps"
 ```
 
 **Example**:
