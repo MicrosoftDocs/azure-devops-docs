@@ -99,7 +99,7 @@ jobs:
   steps:
     - ${{ parameters.myStep }}  # Use the step from the 'myStep' parameter
 
-- job: stringList  # Define a job named 'myStep'
+- job: stringList  # Define a job named 'stringList'
   steps:
   - ${{ each region in parameters.myStringlist}}:
       - script: echo ${{region}}
