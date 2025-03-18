@@ -58,6 +58,12 @@ The instructions in this article use the default bash shell used on Linux and ma
 Download and install [Git for Windows](https://git-scm.com/download/win) , which includes the [Git Credential Manager](set-up-credential-managers.md) to 
 easily connect to Azure Repos. 
 
+To use [WinGet], the Windows package manager, run the following commmand in a command line environment such as PowerShell.
+
+```pwoershell
+winget install --id Git.Git -e --source winget
+```
+
 ### macOS
 
 Use [Homebrew](https://brew.sh/) to install and set up Git.
