@@ -21,12 +21,14 @@ When one repository housed the pipeline definition and another repository contai
 
 Now, both dependency scanning and code scanning will correctly route alerts to the repository containing the source code scanned for analysis in multi-repository scenarios.
 
-To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. Alternatively, if you do not explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. 
 
-> YAML code snippet
+Alternatively, if you do not explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+
+YAML code snippet:
 
 ```yaml
-    trigger:
+  trigger:
   - main
 
 resources:

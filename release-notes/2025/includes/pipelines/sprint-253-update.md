@@ -5,42 +5,6 @@ ms.date: 3/18/2025
 ms.topic: include
 ---
 
-### macOS-15 Sequia is generally available
-
-The `macOS-15` image is now generally available in Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
-
-```yaml
-- job: macOS15
-  pool:
-    vmImage: 'macOS-15'
-  steps:
-  - bash: |
-      echo Hello from macOS Sequia
-      sw_vers
-```
-
-For macOS-15 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md).
-
-The `macOS-14` image will still be used when specifying `macOS-latest`. We will update `macOS-latest` will to use `macOS-15` in April.
-
-### windows-2025 is available in preview
-
-The `windows-2025` image is now available in preview for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'windows-2025'`:  
-
-```yaml
-- job: win2025
-  pool:
-    vmImage: 'windows-2025'
-  steps:
-  - pwsh: |
-      Write-Host "(Get-ComputerInfo).WindowsProductName"
-      Get-ComputerInfo | Select-Object WindowsProductName
-      Write-Host "`$PSVersionTable.OS"
-      $PSVersionTable.OS
-```
-
-For windows-2025 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md).
-
 ### The ubuntu-latest pipeline image will start using ubuntu-24.04
 
 Over the coming weeks, pipeline jobs that specify `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
