@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Deprecation of Languages statistics tags from the Project Summary Page
 
-In the upcoming weeks, we will be deprecating the Languages statistics tags from the Project Summary page. The removal of these tags will help to optimize the performance, resulting in faster load times and a more responsive interface.
+In the coming weeks, we will be deprecating the Languages statistics tags from the Project Summary page. This change will improve page performance, leading to faster load times and a more responsive interface.
 
 There are no actions that will need to be taken from your side and should be a seamless transition.
 
@@ -17,6 +17,7 @@ There are no actions that will need to be taken from your side and should be a s
 
 ### Overlapping secrets for Azure DevOps OAuth
 
-We are excited to introduce the new overlapping secrets feature in Azure DevOps OAuth, designed to enhance security and streamline secret rotations. This feature allows you to add a new secret to your OAuth client while the old secret remains valid, ensuring a seamless transition and continuous operation of your applications. These new secrets can be managed programmatically via API or on the Visual Studio app page UI. The secret lifespan of new secrets has been reduced to 60 days.
+We are excited to introduce the new overlapping secrets feature in Azure DevOps OAuth, designed to enhance security and streamline secret rotations. This feature allows you to add a new secret to your OAuth client while the old secret remains valid, ensuring a seamless transition and continuous operation of your applications. You can manage these secrets programmatically via API or through the Visual Studio App page UI. The secret lifespan of new secrets has been reduced to 60 days.
 
-Please note that Azure DevOps OAuth is planned for deprecation in 2026, and we encourage developers to migrate to [Microsoft Entra ID OAuth](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/entra-oauth?view=azure-devops) for improved security features and longer-term investment. In the interim, we hope you regularly rotate your secrets using our new overlapping secrets feature.
+Please note that Azure DevOps OAuth is planned for deprecation in 2026, and we encourage developers to migrate to [Microsoft Entra ID OAuth](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/entra-oauth?view=azure-devops) for improved security features and longer-term investment. In the interim, we recommend regularly rotating your secrets using our new overlapping secrets feature.
+

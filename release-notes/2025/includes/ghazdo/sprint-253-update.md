@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Security overview risk page enhanced with new columns and filtering options
 
-Under the "Risk" tab, you can now find additional columns for new, fixed, and dismissed security alerts across your organization. We've also added the ability to filter by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to add bounds to your search. 
+Under the **Risk tab**, you can now find additional columns for new, fixed, and dismissed security alerts across your organization. We've also added the ability to filter by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to add bounds to your search. 
 
-Additionally, when a filter is applied, it is added as URL query parameter. This is so you can share the pre-filtered view with others in your organization.
+Additionally, when a filter is applied, it is added as a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)
@@ -17,11 +17,11 @@ Additionally, when a filter is applied, it is added as URL query parameter. This
 
 ### Multi-repository publishing scenarios supported for Advanced Security
 
-When one repository houses the pipeline definition and another repository contains the source code to be scanned by Advanced Security, the results were processed and submitted to the incorrect repository. Rather than publishing results to the repository containing the source code, alerts would show up in the repository where the pipeline was defined. 
+When one repository housed the pipeline definition and another repository contained the source code to be scanned by Advanced Security, the results were processed and submitted to an incorrect repository. Instead of publishing results to the repository containing the source code, alerts would appear in the repository where the pipeline was defined.
 
-Now, both dependency scanning and code scanning will properly route alerts to the repository containing the source code scanned for analysis for multi-repository scenarios. 
+Now, both dependency scanning and code scanning will correctly route alerts to the repository containing the source code scanned for analysis in multi-repository scenarios.
 
-Set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. Alternatively, if you do not explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. Alternatively, if you do not explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
 
 > YAML code snippet
 
@@ -68,7 +68,13 @@ jobs:
 
 ### Service hooks for Advanced Security alerts (preview) 
 
-You can now configure service hooks for Advanced Security alert events, including new alert created, alert data changed, and alert state changed. Just like other repository events, you can filter by repository and branch. For alerts specifically, you can filter by alert type (dependencies, code scanning, or secrets) and alert severity.
+You can now configure service hooks for Advanced Security alert events, including:
+
+* New alert created 
+* Alert data changed
+* Alert state changed 
+
+Just like other repository events, you can filter by repository and branch. For alerts specifically, you can filter by alert type (dependencies, code scanning, or secrets) and alert severity.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of  filter by alert type .](../../media/253-ghazdo-02.png "Screenshot of S filter by alert type ")](../../media/253-ghazdo-02.png#lightbox)
