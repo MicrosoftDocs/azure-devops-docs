@@ -19,7 +19,7 @@ Azure Artifacts securely stores various package types in a feed, whether publish
 
 |    **Product**     |   **Requirements**   |
 |--------------------|----------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Owner](../feeds/feed-permissions.md#permissions-table) to set up retention policies, delete packages and feeds, or restore packages from the recycle bin.<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Publisher (Contributor)](../feeds/feed-permissions.md#permissions-table) or higher to unlist, deprecate, or yank a package. |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Owner](../feeds/feed-permissions.md#permissions-table) to set up retention policies, delete packages and feeds, or restore packages from the recycle bin.<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Publisher (Contributor)](../feeds/feed-permissions.md#permissions-table) or higher to unlist, deprecate, or yank packages. |
 
 ## Delete packages
 
@@ -41,7 +41,7 @@ There are two ways to remove a NuGet package from a feed: [Unlist](#qa) and [Del
 
 ::: moniker-end
 
-### Unlist packages using NuGet.exe
+### Unlist packages (CLI)
 
 1. Sign in to your Azure DevOps organization, then navigate to your project.
 
@@ -74,7 +74,7 @@ There are two ways to remove an npm package from a feed: [Deprecate](#qa) or [De
 
 ::: moniker-end
 
-### Deprecate or Delete packages (CLI)
+### Deprecate or delete packages (CLI)
 
 1. [Set up your project's .npmrc](../npm/npmrc.md).
 
@@ -124,7 +124,7 @@ There are two ways to remove an npm package from a feed: [Deprecate](#qa) or [De
 
 1. Select the package you want to delete, and then select **Delete**.
 
-    :::image type="content" source="../media/universal-package-delete-package.png" alt-text="A screenshot dispalaying how to delete a Universal Package in Azure Artifacts.":::
+    :::image type="content" source="../media/universal-package-delete-package.png" alt-text="A screenshot displaying how to delete a Universal Package in Azure Artifacts.":::
 
 #### [Cargo](#tab/cargo/)
 
@@ -142,15 +142,13 @@ There are two ways to remove a Cargo package from a feed: [Yank](#qa) and [Delet
 
 ## Delete packages permanently 
 
-Packages in the recycle bin are automatically deleted after 30 days, but they still count toward your storage usage during this period.To remove them sooner, you can manually delete them from the Recycle Bin by following these steps:
+Packages in the recycle bin are automatically deleted after 30 days, but they still count toward your storage usage during this period. To remove them sooner, you can manually delete them from the Recycle Bin by following these steps:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, then select your feed from the dropdown menu.
 
 1. In the upper-right corner, select **Recycle Bin**.
-
-    :::image type="content" source="../media/delete/recycle-bin.png" alt-text="A screenshot displaying how to access the recycle bin in Azure Artifacts.":::
 
 1. Select the package you want to delete permanently, then select **Permanently Delete**.
 
@@ -164,7 +162,7 @@ Packages in the recycle bin are automatically deleted after 30 days, but they st
 
 As the number of package versions in your feed grows, storage usage can increase rapidly. You can set up retention policies to automatically delete old package versions and free up space.
 
-If you need to keep a package indefinitely, promote it to a [view](../concepts/views.md). Packages in a view are exempt from retention policies and will not be subject to deletion. To configure retention policies for your feed, please follow the steps below:
+If you need to keep a package indefinitely, promote it to a [view](../concepts/views.md). Packages in a view are exempt from retention policies and will not be subject to deletion. To configure retention policies for your feed, follow the steps below:
 
 > [!NOTE]
 > Azure Artifacts does not support package demotion. Once a package is promoted to a view, it cannot be reverted back to *@local*.
@@ -204,9 +202,9 @@ Deleted packages remain in the recycle bin for 30 days. After this period, they 
 
 1. Select your package, and then select **Restore**.
 
-    :::image type="content" source="../media/restore-package.png" alt-text="A screenshot displaying how to restore deleted packages.":::
-
 1. Select **Restore** once more to confirm your decision.
+    
+    :::image type="content" source="../media/restore-package.png" alt-text="A screenshot displaying how to restore deleted packages.":::
 
 ::: moniker-end
 
@@ -239,7 +237,7 @@ Packages remain in the recycle bin for 30 days before they're permanently delete
 
 ##### Q: What if I don't want to enable retention policies?
 
-A: Azure Artifacts retention policies are designed to help manage your dependencies and streamline storage cost management. If you choose not to enable retention policies, you'll need to manage your storage manually, monitoring consumption and deleting packages as necessary. Azure Artifacts offers 2 GiB of free storage per organization, which allows you to evaluate whether the service fits your workflow. Once you exceed the storage limit, you won't be able to publish new artifacts unless you set up billing and increase your storage limit.
+A: Azure Artifacts retention policies are designed to help manage your dependencies and streamline storage cost management. If you choose not to enable retention policies, you'll need to manage your storage manually, monitoring consumption and deleting packages as necessary. Azure Artifacts offers 2 GiB of free storage per organization, which allows you to evaluate whether the service fits your workflow. Once you exceed the storage limit, you won't be able to publish new artifacts unless you set up billing and [increase your storage limit](../start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit).
 
 ##### Q: How long does it take for the billed storage amount to update after deleting Artifacts?
 
