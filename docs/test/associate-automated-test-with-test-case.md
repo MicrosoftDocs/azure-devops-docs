@@ -56,7 +56,7 @@ Do the following steps to associate your automated test with a test case in Visu
    You can't associate more than one test method with a test case, but you can associate a
    test method with more than one test case. 
 
-   If you're using the build and release services in Azure DevOps, not a [XAML build](#xaml-build), you can run associated tests in the build and release pipelines by using the[Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. You _can't_ run tests on-demand using Microsoft Test Manager unless you're using a XAML build. 
+   If you're using the build and release services in Azure DevOps, not a [XAML build](#xaml-build), you can run associated tests in the build and release pipelines by using the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. You _can't_ run tests on-demand using Microsoft Test Manager unless you're using a XAML build. 
 
    The parameters in a test case aren't used by any automated test that you associate with a test case. Iterations of a test case that use these parameters are for manual tests only.
 
@@ -71,16 +71,16 @@ For more information, see the following articles:
 ## Associate your automated test in Azure DevOps  
 ### Associate your test from a build pipeline 
 
-1. Go to **Pipelines** and choose a pipeline where the desired automated test ran. 
-2. Select a build where your tests ran.
-3. In the **Tests** tab, find the automated test that you want to associate with a test case. 
-4. Select the test and then **Associate Test Case**. 
-5. Find the test case to which the automated test needs to be associated, and select **Associate**.
+1. Navigate to **Pipelines** and choose a pipeline where the automated tests ran. 
+2. Choose the build in which your tests were executed.
+3. In the **Tests** tab, look for the automated test you wish to link with a manual test case.
+4. Select the test and then click on **Associate Test Case**. 
+5. Locate the manual test case you want to associate to the automated test and click **Associate**.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-pipelines.png)
 
-After you associate your automated tests with their corresponding test cases, you can utilize the Azure Test Plan task to execute them as part of a pipeline.
+After you associate your automated tests with their corresponding test cases, you can utilize the [Azure Test Plan task](/azure/devops/pipelines/tasks/reference/azure-test-plan-v0) to execute them as part of a pipeline.
 
 ## FAQs about associating automated tests
 
