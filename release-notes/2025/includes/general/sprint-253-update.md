@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Deprecation of Languages statistics tags from the Project Summary Page
 
-In the coming weeks, we will be deprecating the Languages statistics tags from the Project Summary page. This change will improve page performance, leading to faster load times and a more responsive interface.
+In the coming weeks, we will be deprecating the Languages statistics tags from the Project Summary page. The removal of these tags will help to optimize the performance, resulting in faster load times and a more responsive interface.
 
 There are no actions that will need to be taken from your side and should be a seamless transition.
 
