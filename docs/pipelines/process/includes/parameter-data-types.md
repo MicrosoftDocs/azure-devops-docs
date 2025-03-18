@@ -11,6 +11,7 @@ ai-usage: ai-assisted
 | Data type | Notes |
 |-----------|-------|
 | `string` | string
+| `stringList` | a list of items, multiple can be selected
 | `number` | may be restricted to `values:`, otherwise any number-like string is accepted
 | `boolean` | `true` or `false`
 | `object` | any YAML structure
@@ -23,7 +24,7 @@ ai-usage: ai-assisted
 | `stage` | a single stage
 | `stageList` | sequence of stages
 
-The step, stepList, job, jobList, deployment, deploymentList, stage, and stageList data types all use standard YAML schema format. This example includes string, number, boolean, object, step, and stepList. 
+The step, stepList, job, jobList, deployment, deploymentList, stage, stringList, and stageList data types all use standard YAML schema format. This example includes string, number, boolean, object, step, and stepList. 
 
 ```yaml
 parameters:
@@ -33,11 +34,22 @@ parameters:
 
 - name: myMultiString  # Define a parameter named 'myMultiString'
   type: string  # The parameter type is string
-  default: default  # Default value is 'default'
+  default: default  # Default value is 'default', only one default
   values:  # Allowed values for 'myMultiString'
   - default  
   - ubuntu  
 
+- name: myStringlist # Define a parameter named 'myStringlist'
+  type: stringList # The parameter type is stringList
+  displayName: Regions
+  values: # Allowed values for 'myStringlist'
+    - WUS
+    - CUS
+    - EUS
+  default: # Default values
+    - WUS
+    - CUS
+    
 - name: myNumber  # Define a parameter named 'myNumber'
   type: number  # The parameter type is number
   default: 2  # Default value is 2
@@ -76,7 +88,7 @@ parameters:
   default:  # Default value is a list of steps
     - script: echo step one  
     - script: echo step two  
-
+    
 trigger: none  
 
 jobs: 
@@ -86,4 +98,7 @@ jobs:
 - job: myStep  # Define a job named 'myStep'
   steps:
     - ${{ parameters.myStep }}  # Use the step from the 'myStep' parameter
+
+- ${{ each region in parameters.myStringlist}}:
+      - script: echo ${{region}}
 ```

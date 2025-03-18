@@ -315,6 +315,32 @@ jobs:
       - script: echo So will this!
 ```
 
+You can also use `stringList` to define and interate over parameters that contain a list of items. 
+
+```yaml
+parameters:
+- name: regions
+  type: stringList
+  displayName: Regions
+  values:
+    - WUS
+    - CUS
+    - EUS
+  default: 
+    - WUS
+    - EUS 
+
+stages:
+- ${{ each stage in parameters.regions}}:
+  - stage: ${{stage}}
+    displayName: Deploy to ${{stage}}
+    jobs:
+    - job:
+      steps:
+      - script: ./deploy ${{stage}}
+```
+
+
 You can also manipulate the properties of whatever you're iterating over.
 For example, to add more dependencies:
 
