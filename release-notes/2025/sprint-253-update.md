@@ -5,7 +5,7 @@ ms.author: ckanyika
 ms.date: 3/19/2025
 description: TBD
 ---
-# Enhancing Secret Management, Security Alerts, and Repository Workflows
+# Improved secret management, security alerts, and repository workflows
 
 
 Check out the release notes for details.

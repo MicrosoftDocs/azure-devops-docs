@@ -21,7 +21,7 @@ The `macOS-15` image is now generally available in Azure Pipelines hosted agents
 
 For macOS-15 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md).
 
-The `macOS-14` image will still be used when specifying `macOS-latest`. We will update `macOS-latest` will to use `macOS-15` in April.
+The `macOS-14` image will still be used when specifying `macOS-latest`. We will update `macOS-latest` to use `macOS-15` in April.
 
 ### Windows-2025 is available in preview
 
@@ -44,7 +44,7 @@ For windows-2025 installed software, see [image configuration](https://github.co
 
 ### The ubuntu-latest pipeline image will start using ubuntu-24.04
 
-Over the coming weeks, pipeline jobs that specify `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
+In the coming weeks, pipeline jobs specifying `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
 
 Fore more information about the `ubuntu-24.04` image look [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
 
@@ -141,7 +141,7 @@ When queuing this pipeline, you'll now have the option of choosing multiple regi
 
 ### Identity of user who requested a stage to run
 
-to improve security of your YAML pipelines, you may wish to know who requested a stage to run. To address this need, were adding two new predefined variables, `Build.StageRequestedBy` and `Build.StageRequestedById`. These variables are similar to the `Build.RequestedFor` and `Build.RequestedForId` variables, but for a stage, not a run.
+To improve security of your YAML pipelines, you may wish to know who requested a stage to run. To address this need, were adding two new predefined variables, `Build.StageRequestedBy` and `Build.StageRequestedById`. These variables are similar to the `Build.RequestedFor` and `Build.RequestedForId` variables, but for a stage, not a run.
 
 When a user explicitly triggers a user, for example, in case of a manually triggered stage or rerunning a stage, their identity will be used to fill in the two variables.
 
