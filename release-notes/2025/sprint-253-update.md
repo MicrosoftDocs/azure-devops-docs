@@ -1,12 +1,15 @@
 ---
-title: TBD
+title: Strengthening Security and Multi-Repository Integration in Azure DevOps
 author: ckanyika
 ms.author: ckanyika
 ms.date: 3/19/2025
-description: TBD
+description: Strengthening Security and Multi-Repository Integration in Azure DevOps
 ---
-# Improved secret management, security alerts, and repository workflows
+# Strengthening security and repository integration
 
+With this update, we’re improving security and authentication across Azure DevOps. Overlapping secrets for OAuth make secret rotation seamless, while GitHub Advanced Security enhances the security overview page with expanded filtering and ensures multi-repository publishing correctly routes dependency and code scanning alerts. 
+
+Workload identity federation in Pipelines now uses the Entra issuer, standardizing authentication while maintaining compatibility with existing service connections.
 
 Check out the release notes for details.
 
