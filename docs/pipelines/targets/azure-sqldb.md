@@ -3,7 +3,7 @@ title: Deploy to Azure SQL Database
 description: Deploy to an Azure SQL database from Azure Pipelines
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 03/19/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -62,7 +62,7 @@ To run SQL scripts as part of a pipeline, you’ll need Azure PowerShell scripts
 
 The following PowerShell script creates firewall rules. You can check in this script as `SetAzureFirewallRule.ps1` into your repository.
 
-### ARM
+#### [ARM](#tab/arm/)
 
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
@@ -76,7 +76,7 @@ $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
 New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIP -EndIPAddress $agentIP
 ```
 
-### Classic
+#### [ASM (Classic)](#tab/asm/)
 
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
@@ -108,10 +108,11 @@ else
   Update-AzureSQLServerFirewallRule
 }
 ```
+* * *
 
 The following PowerShell script removes firewall rules. You can check in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
-### ARM
+#### [ARM](#tab/arm/)
 
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
@@ -124,7 +125,7 @@ param
 Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName
 ```
 
-### Classic
+#### [ASM (Classic)](#tab/asm/)
 
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
@@ -142,6 +143,7 @@ if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $F
   Remove-AzureSqlDatabaseServerFirewallRule -RuleName $FirewallRuleName -ServerName $ServerName
 }
 ```
+* * *
 
 #### [YAML](#tab/yaml/)
 
@@ -183,7 +185,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-    Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
+      Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
   displayName: 'Run SQL script'
 
 - task: AzurePowerShell@5
