@@ -95,7 +95,7 @@ When creating a service connection with the Terraform azuredevops provider, the 
 
 ## More information
 
-[Connect to Azure with an Azure Resource Manager service connection](/azure/devops/pipelines/library/connect-to-azures)  
+[Connect to Azure with an Azure Resource Manager service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azures)
 [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
 
 ###  Gradle@4 task
