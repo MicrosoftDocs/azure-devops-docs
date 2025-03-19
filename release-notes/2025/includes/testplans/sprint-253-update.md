@@ -19,7 +19,7 @@ This release contains includes several improvements to the v2 task:
 
 ### Default resume for paused test case
 
-We’ve made **“Resume”** the default action for paused test cases, allowing you to pick up right where you left off without extra navigation. This update streamlines your workflow, making it faster and easier to continue your work without interruption. To further protect your progress, we’ve introduced a confirmation prompt to prevent accidental overwrites of paused test progress. This safeguard ensures your partially saved work remains intact, giving you peace of mind while managing your test runs. Give it a try and let us know via email what you think!
+**“Resume”** is now the default action for paused test cases, allowing you to pick up right where you left off without extra navigation. This update streamlines your workflow, making it faster and easier to continue your work without interruption. To further protect your progress, we’ve introduced a confirmation prompt to prevent accidental overwrites of paused test progress. This safeguard ensures your partially saved work remains intact, giving you peace of mind while managing your test runs. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
 
 ### Export test cases with custom columns in XLSX
 

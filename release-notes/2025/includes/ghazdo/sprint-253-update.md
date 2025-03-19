@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Security overview risk page enhanced with new columns and filtering options
 
-Under the **Risk** tab, you’ll now find additional columns for new, fixed, and dismissed security alerts across your organization. We’ve also introduced filtering options that let you narrow results by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to define search boundaries.
+Under the **Risk** tab, you’ll now find more columns for new, fixed, and dismissed security alerts across your organization. We’ve also introduced filtering options that let you narrow results by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to define search boundaries.
 
 Additionally, when a filter is applied, it's added as a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
 
@@ -24,7 +24,7 @@ Now, both dependency scanning and code scanning will correctly route alerts to t
 
 To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. 
 
-Alternatively, if you don't explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
 
 YAML code snippet:
 

@@ -44,9 +44,9 @@ For windows-2025 installed software, see [image configuration](https://github.co
 
 ### The ubuntu-latest pipeline image will start using ubuntu-24.04
 
-In the coming weeks, pipeline jobs specifying `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
+In the coming weeks, pipeline jobs specifying `ubuntu-latest` start using `ubuntu-24.04` instead of `ubuntu-22.04`.
 
-Fore more information about the `ubuntu-24.04` image look [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
+Learn more about the `ubuntu-24.04` image, [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
 
 ```yaml
 - job: ubuntu2404
@@ -66,16 +66,16 @@ Fore more information about the `ubuntu-24.04` image look [here](https://aka.ms/
 
 Just over a year ago, we made [Workload identity federation generally available](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/). Workload identity federation allows you to configure a service connection without a secret. The identity (App registration, Managed Identity) underpinning the service connection can only be used for the intended purpose: the service connection the federated credential configured.
 
-We are now changing the format of the federated credential.
+We're now changing the format of the federated credential.
 
 |         | Azure DevOps issuer                                                 | Entra issuer (new)                                            |
 |---------|---------------------------------------------------------------------|---------------------------------------------------------------|
 | Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<entra prefix>/sc/<organization id>/<service connection id>` |
 
-This change does not change the way tokens are obtained. Pipeline tasks do not need to be updated and work as before.
+This change doesn't change the way tokens are obtained. Pipeline tasks don't need to be updated and work as before.
 
-The steps to create a service connection do not change. In most cases the change in configuration is not visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
+The steps to create a service connection do not change. In most cases the change in configuration isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you'll see the new federated credentials displayed:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
@@ -112,7 +112,7 @@ Configuration of the SonarQube analysis was moved to the [SonarQube](https://mar
 
 One of the top requested YAML pipelines features is to [define parameters that contain a list of items](https://developercommunity.visualstudio.com/t/parameters-that-support-multiselect/1224839).
 
-Starting with this sprint, weve added a new parameter type, named `StringList`, that provides this capability.
+With this sprint, we've added a new parameter type, named `StringList`, that provides this capability.
 
 Say you want to allow those who queue pipeline runs to choose which regions they want to deploy a payload to. Now you can do this as shown in the example below.
 
@@ -143,5 +143,5 @@ When queuing this pipeline, you'll now have the option of choosing multiple regi
 
 To improve security of your YAML pipelines, you may wish to know who requested a stage to run. To address this need, were adding two new predefined variables, `Build.StageRequestedBy` and `Build.StageRequestedById`. These variables are similar to the `Build.RequestedFor` and `Build.RequestedForId` variables, but for a stage, not a run.
 
-When a user explicitly triggers a user, for example, in case of a manually triggered stage or rerunning a stage, their identity will be used to fill in the two variables.
+When a user explicitly triggers a user, for example, in case of a manually triggered stage or rerunning a stage, their identity is used to fill in the two variables.
 
