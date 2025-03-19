@@ -48,8 +48,8 @@ Use an Azure Pipeline to automatically build, test, and deploy your .NET Core pr
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).<br>   - If you're using a self-hosted agent, ensure Docker is installed and the Docker engine is running with elevated privileges. Microsoft-hosted agents have Docker preinstalled.<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  |
-| **GitHub** | - A [GitHub](https://github.com) account.<br>   - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.<br>   - A [GitHub service connection](../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.|
+| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  |
+| **GitHub** | - A [GitHub](https://github.com) account.|
 
 ::: moniker-end
 
@@ -57,8 +57,8 @@ Use an Azure Pipeline to automatically build, test, and deploy your .NET Core pr
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An Azure DevOps collection.<br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).<br>   - Ensure Docker is installed and the Docker engine is running with elevated privileges. Microsoft-hosted agents have Docker preinstalled. |
-| **GitHub** | - A [GitHub](https://github.com) account.<br>   - A GitHub repository with a Dockerfile. Use the [sample repository](https://github.com/MicrosoftDocs/pipelines-javascript-docker) if you don't have your own project.<br>   - A [GitHub service connection](../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.|
+| **Azure DevOps** | - An Azure DevOps collection.<br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).|
+| **GitHub** | - A [GitHub](https://github.com) account.|
 
 ::: moniker-end
 
@@ -70,23 +70,9 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 
 ### Create a DevOps project
 
-::: moniker range=">=azure-devops"
-
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
+Create a new Azure DevOps project to host your pipeline. 
 
 [!INCLUDE [include](includes/create-project.md)]
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-1. In a browser window, sign in to your Azure DevOps Server and select your collection.
-1. Select **New project**.
-1. Enter a project name.
-1. Optionally, enter a description.
-1. Select **Create**.
-
-::: moniker-end
 
 ### Set up your build environment
 
@@ -133,7 +119,7 @@ You can use the YAML pipeline editor or the classic editor to create your pipeli
 
 1. Examine your new pipeline to see what the YAML does. 
 
-You can customize the YAML file for your requirements. For example, you can specify the agent pool or add a [task to install different .NET SDK](#set-up-your-build-environment).
+You can customize the YAML file for your requirements. For example, you can specify the agent pool or add a [task to install different .NET SDK](#build-environment).
 
 ##### Save and run your pipeline
 
