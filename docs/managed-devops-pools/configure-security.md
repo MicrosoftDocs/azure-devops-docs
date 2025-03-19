@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 03/18/2025
+ms.date: 03/19/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -346,11 +346,11 @@ Managed DevOps Pools offers the ability to fetch certificates from an Azure Key 
 
 The following settings configure the certificates fetched from your Key Vault.
 
-- **Certificates**
+- **Certificates** (`observedCertificates`)
 
   Specify the certificates to be fetched from your Key Vault and installed on all machines in your pool.
 
-- **Certificate store location**
+- **Certificate store location** (`certificateStoreLocation`)
 
   Specify the location to install the certificates on your agent.
 
@@ -360,12 +360,12 @@ The following settings configure the certificates fetched from your Key Vault.
      > [!NOTE]
      > **Certificate store location** is only support on Ubuntu distributions.
 
-- **Certificate store name**
+- **Certificate store name** (`certificateStoreName`)
 
   - **Windows agents**: Specify the name of the certificate store, either `My` (local certificate store - default if no name is specified) or `Root` (trusted root location).
   - **Linux agents**: This setting isn't used on Linux agents.
 
-- **Exportable private keys**
+- **Exportable private keys** (`keyExportable`)
 
   Whether the key of the certificates is exportable. The default is `false`.
 
