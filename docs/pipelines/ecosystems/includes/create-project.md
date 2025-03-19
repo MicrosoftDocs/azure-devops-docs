@@ -5,6 +5,8 @@ ms.manager: mijacobs
 ms.author: v-catherbund
 author: cebundy
 ms.custom: devdivchpfy22
+ms.date: 03/19/2025
+
 ---
 
 ::: moniker range="azure-devops"
@@ -18,7 +20,7 @@ ms.custom: devdivchpfy22
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="<=azure-devops-2022"
 
 1. In a browser, go to your Azure DevOps Server.
 1. Select your collection.
