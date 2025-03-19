@@ -1,21 +1,21 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/18/2025
+ms.date: 3/19/2025
 ms.topic: include
 ---
 
 ### Improvements on the Publish code coverage results v2 task
 
 This release contains includes several improvements to the v2 task:
-* Expanded support for various code coverage formats, including: .coverage, .covx, .covb, .cjson, .xml, .lcov, and pycov1.
+* Expanded support for various code coverage formats, including: .coverage,.covx,.covb,.cjson,.xml,.lcov,and pycov1.
 * Generation of a comprehensive cjson file (and a Code Coverage report) that contains detailed code coverage information such as file names, lines covered/not covered, etc.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of code coverage.](../../media/253-testplans-01.png "Screenshot of code coverage")](../../media/253-testplans-01.png#lightbox)
 
 * Support for diff coverage (PR coverage): v2 can generate diff coverage PR comments for multiple languages within the same pipeline.
-* v2 now supports the Build Quality Check task, which was not supported in v1.
+* v2 now supports the Build Quality Check task, which wasn't supported in v1.
 
 ### Default resume for paused test case
 

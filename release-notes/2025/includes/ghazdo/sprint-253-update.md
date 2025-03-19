@@ -1,15 +1,15 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/18/2025
+ms.date: 3/19/2025
 ms.topic: include
 ---
 
 ### Security overview risk page enhanced with new columns and filtering options
 
-Under the **Risk tab**, you can now find additional columns for new, fixed, and dismissed security alerts across your organization. We've also added the ability to filter by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to add bounds to your search. 
+Under the **Risk tab**, you can now find more columns for new, fixed, and dismissed security alerts across your organization. We've also added the ability to filter by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to add bounds to your search. 
 
-Additionally, when a filter is applied, it is added as a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
+Additionally, when a filter is applied, it's added as a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)
@@ -23,7 +23,7 @@ Now, both dependency scanning and code scanning will correctly route alerts to t
 
 To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. 
 
-Alternatively, if you do not explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+Alternatively, if you don't explicitly checkout a repository or use an alias to checkout your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
 
 YAML code snippet:
 

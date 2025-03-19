@@ -2,12 +2,16 @@
 title: TBD
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/18/2025
+ms.date: 3/19/2025
 description: TBD
 ---
-# TBD
+# Enhancing Secret Management, Security Alerts, and Repository Workflows
 
+With this update,
 
+With this update, we’re making it easier to manage secrets and security visibility across your projects. The new overlapping secrets feature for OAuth enables smooth secret rotations by allowing new secrets to be added without immediately invalidating the old ones. At the same time, enhancements to the Security Overview Risk page introduce new filtering options, making it easier to track and analyze security alerts across repositories. Additionally, improvements to multi-repository publishing ensure that security scans and alerts are routed correctly, reducing confusion and streamlining workflows. These updates build on our ongoing efforts to provide a more secure, efficient, and developer-friendly Azure DevOps experience.
+
+We’ve introduced several updates to simplify security management and improve the way teams track and respond to security alerts in Azure DevOps. The new overlapping secrets functionality for OAuth makes secret rotations smoother, ensuring that teams can update credentials without downtime. The Security Overview Risk page now includes expanded filtering options, giving organizations greater control and clarity when reviewing security events. Meanwhile, improvements to dependency scanning and multi-repository publishing help maintain security integrity across projects, ensuring that alerts and scans are properly attributed to the right repositories. These refinements reinforce our commitment to a seamless and secure development experience.
 
 Check out the release notes for details.
 

@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/18/2025
+ms.date: 3/19/2025
 ms.topic: include
 ---
 
@@ -9,7 +9,7 @@ ms.topic: include
 - [Windows-2025 is available in preview](#windows-2025-is-available-in-preview)
 - [The ubuntu-latest pipeline image will start using ubuntu-24.04](#the-ubuntu-latest-pipeline-image-will-start-using-ubuntu-2404)
 - [Workload identity federation uses Entra issuer](#workload-identity-federation-uses-entra-issuer)
-- [Gradle@4 task](#gradle@4-task)
+- [Gradle@4 task](#gradle4-task)
 - [StringList parameter type](#stringlist-parameter-type)
 - [Identity of user who requested a stage to run](#identity-of-user-who-requested-a-stage-to-run)
 
