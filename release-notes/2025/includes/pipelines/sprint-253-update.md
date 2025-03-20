@@ -50,7 +50,7 @@ For Windows-2025 installed software, see [image configuration](https://github.co
 
 In the coming weeks, pipeline jobs specifying `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
 
-You can learn more about the `ubuntu-24.04` image, [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
+For guidance on tasks that use tools that are no longer on the `ubuntu-24.04` image, see our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
 
 ```yaml
 - job: ubuntu2404
@@ -65,7 +65,6 @@ You can learn more about the `ubuntu-24.04` image, [here](https://aka.ms/azdo-ub
       $PSVersionTable.OS
 ```
 
-For guidance on tasks that use tools that are no longer on the `ubuntu-24.04` image, see our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/).
 
 #### The ubuntu-20.04 pipeline image is deprecated and will be retired April 1
 
@@ -74,18 +73,18 @@ We are deprecating support for the Ubuntu 20.04 image in Azure Pipelines because
 
 ### Workload identity federation uses Entra issuer
 
-Just over a year ago, we made [Workload identity federation generally available](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/). Workload identity federation allows you to configure a service connection without a secret. The identity (App registration, Managed Identity) underpinning the service connection can only be used for the intended purpose: the service connection the federated credential configured.
+Just over a year ago, we made [Workload identity federation generally available](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/). Workload identity federation allows you to configure a service connection without a secret. The identity (App registration, Managed Identity) underpinning the service connection can only be used for the intended purpose: the service connection configured in the identity's federated credential.
 
-We're now changing the format of the federated credential for the Azure and Docker service connections. 
+We're now changing the format of the federated credential for new Azure and Docker service connections. Existing service connections will work as before.
 
-|         | Azure DevOps issuer                                                 | Entra issuer (new)                                            |
+|         | Azure DevOps issuer                                                 | Entra issuer (new service connections)                                            |
 |---------|---------------------------------------------------------------------|---------------------------------------------------------------|
 | Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<entra prefix>/sc/<organization id>/<service connection id>` |
 
-There is no change in configuration and the way tokens are obtained stays the same. Pipeline tasks don't need to be updated and work as before.
+There is no change in configuration and the way tokens are obtained stays the same. Pipeline tasks don't need to be updated and work as before. 
 
-The steps to create a service connection don't change. In most cases, the new issuer isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
+The steps to create a service connection are not changing and in most cases, the new issuer isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
