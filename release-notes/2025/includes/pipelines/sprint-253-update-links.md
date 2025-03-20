@@ -5,7 +5,7 @@ ms.date: 3/20/2025
 ms.topic: include
 ---
 
-- [macOS-15 Sequia is generally available](#macos-15-sequia-is-generally-available)
+- [macOS-15 Sequoia is generally available](#macos-15-sequoia-is-generally-available)
 - [Windows-2025 is available in preview](#windows-2025-is-available-in-preview)
 - [The ubuntu-latest pipeline image will start using ubuntu-24.04](#the-ubuntu-latest-pipeline-image-will-start-using-ubuntu-2404)
 - [Workload identity federation uses Entra issuer](#workload-identity-federation-uses-entra-issuer)
