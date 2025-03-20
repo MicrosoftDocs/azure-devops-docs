@@ -7,9 +7,10 @@ description: Strengthening Security and Multi-Repository Integration in Azure De
 ---
 # Strengthening security and repository integration
 
-With this update, we’re improving security and authentication across Azure DevOps. Overlapping secrets for OAuth make secret rotation seamless, while GitHub Advanced Security enhances the security overview page with expanded filtering and ensures multi-repository publishing correctly routes dependency and code scanning alerts. 
+With this update, we’re improving security and authentication across Azure DevOps. Overlapping secrets for Azure DevOps OAuth make secret rotation seamless, while GitHub Advanced Security brings better filtering to the security overview page while ensuring multi-repository publishing correctly routes dependency and code scanning alerts.
 
-Workload identity federation in Pipelines now uses the Entra issuer, standardizing authentication while maintaining compatibility with existing service connections.
+In Pipelines, Workload identity federation now uses the Entra issuer, ststandardizing authentication while maintaining compatibility with existing service connections.
+
 
 Check out the release notes for details.
 
