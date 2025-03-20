@@ -39,14 +39,14 @@ The `windows-2025` image is now available in preview for Azure Pipelines hosted 
       $PSVersionTable.OS
 ```
 
-For windows-2025 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md).
+For Windows-2025 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md).
 
 
 ### The ubuntu-latest pipeline image will start using ubuntu-24.04
 
-In the coming weeks, pipeline jobs specifying `ubuntu-latest` start using `ubuntu-24.04` instead of `ubuntu-22.04`.
+In the coming weeks, pipeline jobs specifying `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
 
-Learn more about the `ubuntu-24.04` image, [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
+You can learn more about the `ubuntu-24.04` image, [here](https://aka.ms/azdo-ubuntu-24.04). To keep using Ubuntu 22.04, use the `ubuntu-22.04` image label:
 
 ```yaml
 - job: ubuntu2404
@@ -138,6 +138,8 @@ stages:
 
 When queuing this pipeline, you'll now have the option of choosing multiple regions to deploy to, as shown in the screenshot below.
 
+> [!div class="mx-imgBorder"]
+> [![Screenshot of choosing multiple regions.](../../media/253-pipelines-02.png "Screenshot of choosing multiple regions")](../../media/253-pipelines-02.png#lightbox)
 
 ### Identity of user who requested a stage to run
 

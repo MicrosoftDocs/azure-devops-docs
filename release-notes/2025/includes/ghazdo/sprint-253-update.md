@@ -7,13 +7,12 @@ ms.topic: include
 
 ### Security overview risk page enhanced with new columns and filtering options
 
-Under the **Risk** tab, you’ll now find more columns for new, fixed, and dismissed security alerts across your organization. We’ve also introduced filtering options that let you narrow results by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to define search boundaries.
+Under the **Risk** tab, you can now see additional columns for new, fixed, and dismissed security alerts across your organization. We’ve also introduced filtering options that let you narrow results by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to define search boundaries.
 
-Additionally, when a filter is applied, it's added as a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
+Additionally, applying a filter adds a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)
-
 
 
 ### Multi-repository publishing scenarios supported for Advanced Security
@@ -22,7 +21,7 @@ Previously, when a pipeline definition was housed in one repository and the sour
 
 Now, both dependency scanning and code scanning correctly route alerts to the repository containing the scanned source code in multi-repository scenarios.
 
-To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory. 
+To enable this feature, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory. 
 
 Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
 
@@ -87,5 +86,5 @@ To participate in the preview, fill out the [preview interest form](https://aka.
 
 ### pnpm 9 support comes to GitHub Advanced Security dependency scanning
 
-With pnpm v8 reaching end-of-life at the end of April, the next dependency scanning update will include support for pnpm v9. This addresses your [Developer Community](https://developercommunity.visualstudio.com/t/AdvancedSecurity-Dependency-Scanning1-T/10743452) request for pnpm v9 support.
+With pnpm v8 reaching end-of-life at the end of April, the next dependency scanning update will include support for pnpm v9. This update is in response to your [Developer Community](https://developercommunity.visualstudio.com/t/AdvancedSecurity-Dependency-Scanning1-T/10743452) request for pnpm v9 support.
 
