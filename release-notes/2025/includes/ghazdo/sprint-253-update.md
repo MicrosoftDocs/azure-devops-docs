@@ -18,9 +18,9 @@ Additionally, when a filter is applied, it's added as a URL query parameter. Thi
 
 ### Multi-repository publishing scenarios supported for Advanced Security
 
-Previously, when a pipeline definition was housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results were processed and submitted to the wrong repository. Instead of publishing alerts to the repository containing the source code, they appeared in the repository where the pipeline was defined.
+Previously, when a pipeline definition was housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results were processed and submitted to the wrong repository. Instead of publishing alerts to the repository with the source code, they appeared in the repository where the pipeline was defined.
 
-Now, both dependency scanning and code scanning will correctly route alerts to the repository containing the scanned source code in multi-repository scenarios.
+Now, both dependency scanning and code scanning correctly route alerts to the repository containing the scanned source code in multi-repository scenarios.
 
 To enable this, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish to from the repository in the working directory. 
 

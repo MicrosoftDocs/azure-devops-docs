@@ -17,7 +17,7 @@ This release contains includes several improvements to the v2 task:
 * Support for diff coverage (PR coverage): v2 can generate diff coverage PR comments for multiple languages within the same pipeline.
 * v2 now supports the Build Quality Check task, which wasn't supported in v1.
 
-### Default resume for paused test case
+### Resume is now the default for paused test cases
 
 **“Resume”** is now the default action for paused test cases, allowing you to pick up right where you left off without extra navigation. This update streamlines your workflow, making it faster and easier to continue your work without interruption. To further protect your progress, we’ve introduced a confirmation prompt to prevent accidental overwrites of paused test progress. This safeguard ensures your partially saved work remains intact, giving you peace of mind while managing your test runs. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
 

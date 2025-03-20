@@ -5,7 +5,7 @@ ms.date: 3/19/2025
 ms.topic: include
 ---
 
-### macOS-15 Sequia is generally available
+### macOS-15 Sequoia is generally available
 
 The `macOS-15` image is now generally available in Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
 
@@ -15,7 +15,7 @@ The `macOS-15` image is now generally available in Azure Pipelines hosted agents
     vmImage: 'macOS-15'
   steps:
   - bash: |
-      echo Hello from macOS Sequia
+      echo Hello from macOS Sequoia
       sw_vers
 ```
 
