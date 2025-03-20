@@ -15,7 +15,7 @@ Additionally, applying a filter adds a URL query parameter, enabling you to shar
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)
 
 
-### Multi-repository publishing scenarios supported for GitHub Advanced Security
+### Multi-repository publishing scenarios supported for GitHub Advanced Security for Azure DevOps
 
 Previously, when a pipeline definition was housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results were processed and submitted to the wrong repository. Instead of publishing alerts to the repository with the source code, they appeared in the repository where the pipeline was defined.
 
@@ -69,7 +69,7 @@ jobs:
         displayName: Publish to IaC Scanning Results to Advanced Security
 ```
 
-### Service hooks for GitHub Advanced Security alerts (preview) 
+### Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview) 
 
 You can now configure service hooks for GitHub Advanced Security alert events, including:
 
@@ -84,7 +84,7 @@ Just like other repository events, you can filter by repository and branch. For 
 
 To participate in the preview, fill out the [preview interest form](https://aka.ms/ghazdo-service-hooks-preview) or send us an [email](mailto:ghazdopreview@microsoft.com)!
 
-### pnpm 9 support comes to GitHub Advanced Security dependency scanning
+### pnpm v9 support comes to GitHub Advanced Security for Azure DevOps dependency scanning
 
 With pnpm v8 reaching end-of-life at the end of April, the next dependency scanning update will include support for pnpm v9. This update is in response to your [Developer Community](https://developercommunity.visualstudio.com/t/AdvancedSecurity-Dependency-Scanning1-T/10743452) request for pnpm v9 support.
 

@@ -7,7 +7,9 @@ ms.topic: include
 
 ### Hosted image updates
 
-We have various updates that are explained in more detail in our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/).
+We’re rolling out updates to keep Azure Pipelines’ hosted agents secure and current. This includes adding support for Ubuntu-24.04, Windows 2025 images, and macOS-15 Sequoia, while deprecating older images like Ubuntu-20.04 and Windows Server 2019. 
+
+For more details, please vist our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/).
 
 #### macOS-15 Sequoia is generally available
 
@@ -27,7 +29,7 @@ For macOS-15 installed software, see [image configuration](https://github.com/ac
 
 The `macOS-14` image will still be used when specifying `macOS-latest`. We'll update `macOS-latest` to use `macOS-15` in April.
 
-#### Windows-2025 is available in preview
+#### Windows-2025 image is available in preview
 
 The `windows-2025` image is now available in preview for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'windows-2025'`:  
 
@@ -43,7 +45,7 @@ The `windows-2025` image is now available in preview for Azure Pipelines hosted 
       $PSVersionTable.OS
 ```
 
-For Windows-2025 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md).
+For Window Server 2025 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md).
 
 
 #### The ubuntu-latest pipeline image will start using ubuntu-24.04
@@ -109,7 +111,7 @@ Likewise, when creating a service connection with the Terraform azuredevops prov
 
 ###  Gradle@4 task
 
-A new [Gradle@4](/azure/devops/pipelines/tasks/reference/gradle-v4) task has been created with support for [Gradle 8](https://docs.gradle.org/8.0/userguide/upgrading_version_7.html). The built-in code coverage option is removed from the `Gradle` task starting with `Gradle@4`. To use code coverage with Gradle in your pipeline:
+A new [Gradle@4](/azure/devops/pipelines/tasks/reference/gradle-v4) task has been created with support for [Gradle 8.0](https://docs.gradle.org/8.0/userguide/upgrading_version_7.html). The built-in code coverage option is removed from the `Gradle` task starting with `Gradle@4`. To use code coverage with Gradle in your pipeline:
 
 - Specify code coverage plugins in your build.gradle file. For more information, see [Gradle code analysis options](https://docs.gradle.org/current/userguide/plugin_reference.html#code_analysis).
 - Use the [PublishCodeCoverageResults@2](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task in your pipeline after the `Gradle@4` task.
@@ -117,11 +119,11 @@ A new [Gradle@4](/azure/devops/pipelines/tasks/reference/gradle-v4) task has bee
 Configuration of the SonarQube analysis was moved to the [SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) or [SonarCloud](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud) extensions in the task `Prepare Analysis Configuration`.
 
 
-### StringList parameter type
+### stringList parameter type
 
 One of the top requested YAML pipelines features is to [define parameters that contain a list of items](https://developercommunity.visualstudio.com/t/parameters-that-support-multiselect/1224839).
 
-With this sprint, we've added a new parameter type, named `StringList`, that provides this capability.
+With this sprint, we've added a new parameter type, named `stringList`, that provides this capability.
 
 Say you want to allow those who queue pipeline runs to choose which regions they want to deploy a payload to. Now you can do this as shown in the example below.
 
