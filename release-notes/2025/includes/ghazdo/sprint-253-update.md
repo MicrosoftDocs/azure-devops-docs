@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Security overview risk page enhanced with new columns and filtering options
 
-Under the **Risk** tab, you will find newly added columns displaying new, fixed, and dismissed security alerts across your organization. We’ve also introduced filtering options that let you narrow results by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to define search boundaries.
+Under the **Risk** tab, you'll find newly added columns displaying new, fixed, and dismissed security alerts across your organization. We’ve also introduced filtering options that let you narrow results by project, tool (secrets, dependencies, or code scanning results), and a time-based filter to define search boundaries.
 
-Additionally, applying a filter adds a URL query parameter. This is so you can share the pre-filtered view with others in your organization.
+Additionally, applying a filter adds a URL query parameter, enabling you to share the pre-filtered view with others in your organization.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)

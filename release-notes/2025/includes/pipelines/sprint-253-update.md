@@ -21,7 +21,7 @@ The `macOS-15` image is now generally available in Azure Pipelines hosted agents
 
 For macOS-15 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md).
 
-The `macOS-14` image will still be used when specifying `macOS-latest`. We will update `macOS-latest` to use `macOS-15` in April.
+The `macOS-14` image will still be used when specifying `macOS-latest`. We'll update `macOS-latest` to use `macOS-15` in April.
 
 ### Windows-2025 is available in preview
 
@@ -75,7 +75,7 @@ We're now changing the format of the federated credential.
 
 This change doesn't change the way tokens are obtained. Pipeline tasks don't need to be updated and work as before.
 
-The steps to create a service connection do not change. In most cases, the change in configuration isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you'll see the new federated credentials displayed:
+The steps to create a service connection don't change. In most cases, the change in configuration isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you see the new federated credentials displayed:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
