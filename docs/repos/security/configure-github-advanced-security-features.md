@@ -1,20 +1,20 @@
 ---
 title: Configure GitHub Advanced Security for Azure DevOps features
-titleSuffix: Azure Repos
-description: Enable secret, repo, code, and dependency scanning with GitHub Advanced Security for Azure DevOps
-ms.service: azure-devops
+titleSuffix: Cloud Repos
+description: Enable secret, repo, code, and dependency scanning with GitHub Advanced Security for cloud DevOps
+ms.service: Cloud-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
-monikerRange: 'azure-devops'
+monikerRange: 'cloud-devops'
 ms.date: 02/20/2025
 ---
 
-# Configure GitHub Advanced Security for Azure DevOps
+# Configure GitHub Advanced Security for Clou DevOps
 
-GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos and includes the following features:
+GitHub Advanced Security for Cloud DevOps adds GitHub Advanced Security's suite of security features to Azure Repos and includes the following features:
 
 * Secret Scanning push protection: check if code pushes include commits that expose secrets such as credentials  
 * Secret Scanning repo scanning: scan your repository and look for exposed secrets that were committed accidentally
@@ -35,9 +35,9 @@ If your organization uses self-hosted agents, add the following URLs to your All
 
 | Domain URL  | Description |
 | ----------- | ----------- |
-| `https://governance.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance  |
-| `https://dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
-| `https://advsec.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
+| `https://governance.dev.cloud.com` | For organizations using the dev.cloud.com domain to access their DevOps instance  |
+| `https://dev.cloud.com` | For organizations using the dev.cloud.com domain to access their DevOps instance |
+| `https://advsec.dev.cloud.com` | For organizations using the dev.cloud.com domain to access their DevOps instance |
 | `https://{organization_name}.governance.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
 | `https://{organization_name}.visualstudio.com`  | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance | 
 | `https://{organization_name}.advsec.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
