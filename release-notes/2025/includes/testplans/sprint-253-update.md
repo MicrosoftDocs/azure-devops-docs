@@ -5,10 +5,10 @@ ms.date: 3/20/2025
 ms.topic: include
 ---
 
-### Improvements on the Publish code coverage results v2 task
+### Publish code coverage results v2 task improvements
 
-With this release we are including several improvements to the v2 task:
-* Expanded support for various code coverage formats, including: .coverage,.covx,.covb,.cjson,.xml,.lcov,and pycov1.
+With this release we're including several improvements to the v2 task:
+* Expanded support for various code coverage formats, including: .coverage,.covx,.covb,.cjson,.xml,.lcov, and pycov1.
 * Generation of a comprehensive cjson file (and a Code Coverage report) that contains detailed code coverage information such as file names, lines covered/not covered, etc.
 
 > [!div class="mx-imgBorder"]

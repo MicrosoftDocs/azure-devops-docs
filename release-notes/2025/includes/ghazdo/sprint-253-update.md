@@ -69,7 +69,7 @@ jobs:
         displayName: Publish to IaC Scanning Results to Advanced Security
 ```
 
-### Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview) 
+### Service hooks for GitHub Advanced Security for Azure DevOps alerts (preview) 
 
 You can now configure service hooks for GitHub Advanced Security alert events, including:
 

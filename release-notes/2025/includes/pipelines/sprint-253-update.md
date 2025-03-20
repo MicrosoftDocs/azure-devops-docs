@@ -7,13 +7,13 @@ ms.topic: include
 
 ### Hosted image updates
 
-We’re rolling out updates to keep Azure Pipelines’ hosted agents secure and current. This includes adding support for Ubuntu-24.04, Windows 2025 images, and macOS-15 Sequoia, while deprecating older images like Ubuntu-20.04 and Windows Server 2019. 
+We’re rolling out updates to keep Azure Pipelines’ hosted agents secure and current. These updates include adding support for Ubuntu-24.04, Windows 2025 images, and macOS-15 Sequoia, while deprecating older images like Ubuntu-20.04 and Windows Server 2019. 
 
-For more details, please vist our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/).
+For more details, please visit our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/).
 
 #### macOS-15 Sequoia is generally available
 
-The `macOS-15` image will become generally available April 1 in Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
+The `macOS-15` image will be available on Azure Pipelines hosted agents starting April 1. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
 
 ```yaml
 - job: macOS15
