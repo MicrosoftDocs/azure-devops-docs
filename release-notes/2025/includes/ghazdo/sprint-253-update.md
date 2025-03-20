@@ -15,7 +15,7 @@ Additionally, applying a filter adds a URL query parameter, enabling you to shar
 > [![Screenshot of Security overview risk page.](../../media/253-ghazdo-01.png "Screenshot of Security overview risk page")](../../media/253-ghazdo-01.png#lightbox)
 
 
-### Multi-repository publishing scenarios supported for Advanced Security
+### Multi-repository publishing scenarios supported for GitHub Advanced Security
 
 Previously, when a pipeline definition was housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results were processed and submitted to the wrong repository. Instead of publishing alerts to the repository with the source code, they appeared in the repository where the pipeline was defined.
 
