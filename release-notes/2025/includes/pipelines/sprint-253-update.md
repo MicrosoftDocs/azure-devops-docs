@@ -75,7 +75,7 @@ We're now changing the format of the federated credential.
 
 This change doesn't change the way tokens are obtained. Pipeline tasks don't need to be updated and work as before.
 
-The steps to create a service connection do not change. In most cases the change in configuration isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you'll see the new federated credentials displayed:
+The steps to create a service connection do not change. In most cases, the change in configuration isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you'll see the new federated credentials displayed:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
@@ -136,7 +136,7 @@ stages:
       - script: ./deploy ${{stage}}
 ```
 
-When queuing this pipeline, you'll now have the option of choosing multiple regions to deploy to, as shown in the screenshot below.
+When queuing this pipeline, you'll now have the option of choosing multiple regions to deploy to, as shown in the following screenshot:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of choosing multiple regions.](../../media/253-pipelines-02.png "Screenshot of choosing multiple regions")](../../media/253-pipelines-02.png#lightbox)
