@@ -5,9 +5,13 @@ ms.date: 3/20/2025
 ms.topic: include
 ---
 
-### macOS-15 Sequoia is generally available
+### Hosted image updates
 
-The `macOS-15` image is now generally available in Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
+We have various updates that are explained in more detail in our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/).
+
+#### macOS-15 Sequoia is generally available
+
+The `macOS-15` image will become generally available April 1 in Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-15'`:  
 
 ```yaml
 - job: macOS15
@@ -23,7 +27,7 @@ For macOS-15 installed software, see [image configuration](https://github.com/ac
 
 The `macOS-14` image will still be used when specifying `macOS-latest`. We'll update `macOS-latest` to use `macOS-15` in April.
 
-### Windows-2025 is available in preview
+#### Windows-2025 is available in preview
 
 The `windows-2025` image is now available in preview for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'windows-2025'`:  
 
@@ -42,7 +46,7 @@ The `windows-2025` image is now available in preview for Azure Pipelines hosted 
 For Windows-2025 installed software, see [image configuration](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md).
 
 
-### The ubuntu-latest pipeline image will start using ubuntu-24.04
+#### The ubuntu-latest pipeline image will start using ubuntu-24.04
 
 In the coming weeks, pipeline jobs specifying `ubuntu-latest` will start using `ubuntu-24.04` instead of `ubuntu-22.04`.
 
@@ -61,42 +65,46 @@ You can learn more about the `ubuntu-24.04` image, [here](https://aka.ms/azdo-ub
       $PSVersionTable.OS
 ```
 
+#### The ubuntu-20.04 pipeline image is deprecated and will be retired April 1
+
+We are deprecating support for the Ubuntu 20.04 image in Azure Pipelines because it will reach its end of support soon. Please find the deprecation plan in our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
+
 
 ### Workload identity federation uses Entra issuer
 
 Just over a year ago, we made [Workload identity federation generally available](https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/). Workload identity federation allows you to configure a service connection without a secret. The identity (App registration, Managed Identity) underpinning the service connection can only be used for the intended purpose: the service connection the federated credential configured.
 
-We're now changing the format of the federated credential.
+We're now changing the format of the federated credential for the Azure and Docker service connections. 
 
 |         | Azure DevOps issuer                                                 | Entra issuer (new)                                            |
 |---------|---------------------------------------------------------------------|---------------------------------------------------------------|
 | Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<entra prefix>/sc/<organization id>/<service connection id>` |
 
-This change doesn't change the way tokens are obtained. Pipeline tasks don't need to be updated and work as before.
+There is no change in configuration or the way tokens are obtained. Pipeline tasks don't need to be updated and work as before.
 
-The steps to create a service connection don't change. In most cases, the change in configuration isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you see the new federated credentials displayed:
+The steps to create a service connection don't change. In most cases, the new issuer isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
 
 Copy these values as before when creating a federated credential for an App registration or Managed Identity.
 
-## Automation
+#### Automation
 
-When creating a service connection in automation with the [REST API], use the federated credential returned by the API:
+When creating a service connection in automation with the [REST API](/rest/api/azure/devops/serviceendpoint/endpoints/create), use the federated credential returned by the API:
 
 ```json
 authorization.parameters.workloadIdentityFederationIssuer
 authorization.parameters.workloadIdentityFederationSubject
 ```
 
-When creating a service connection with the Terraform azuredevops provider, the [azuredevops_serviceendpoint_azurerm](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/serviceendpoint_azurerm#attributes-reference) resource returns `workload_identity_federation_issuer` and `workload_identity_federation_subject` attributes.
+Likewise, when creating a service connection with the Terraform azuredevops provider, the [azuredevops_serviceendpoint_azurerm](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/serviceendpoint_azurerm#attributes-reference) resource returns `workload_identity_federation_issuer` and `workload_identity_federation_subject` attributes.
 
-## More information
+#### More information
 
-[Connect to Azure with an Azure Resource Manager service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azures)
-[Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
+- [Connect to Azure with an Azure Resource Manager service connection](/azure/devops/pipelines/library/connect-to-azures)
+- [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
 
 ###  Gradle@4 task
 

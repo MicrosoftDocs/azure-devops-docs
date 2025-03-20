@@ -5,9 +5,7 @@ ms.date: 3/20/2025
 ms.topic: include
 ---
 
-- [macOS-15 Sequoia is generally available](#macos-15-sequoia-is-generally-available)
-- [Windows-2025 is available in preview](#windows-2025-is-available-in-preview)
-- [The ubuntu-latest pipeline image will start using ubuntu-24.04](#the-ubuntu-latest-pipeline-image-will-start-using-ubuntu-2404)
+- [Hosted image updates](#hosted-image-updates)
 - [Workload identity federation uses Entra issuer](#workload-identity-federation-uses-entra-issuer)
 - [Gradle@4 task](#gradle4-task)
 - [StringList parameter type](#stringlist-parameter-type)
