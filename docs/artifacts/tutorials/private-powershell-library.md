@@ -160,16 +160,16 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Publish a package
 
-Run the following command to publish the package to your feed (any text for -ApiKey parameter is valid):
+Run the following command to publish the package to your feed. Replace the placeholders with your package path, repository name, the credential object you created earlier, and provide any string for the ApiKey.
 
 ```powershell
-Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -Credential (Get-Secret <SECRET_NAME>) -ApiKey "AzureDevOps"
+Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -Credential $credentials -ApiKey <ANY_STRING>
 ```
 
 **Example**:
 
 ```powershell
-PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -ApiKey (Get-Secret MyNewCredential) -verbose
+PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -Credential $credentials -ApiKey az -verbose
 VERBOSE: Performing the operation "Publish-PSResource" on target "Publish resource
 'C:\AzureDevOps\Demos\PowerShellDemo\scripts\' from the machine".
 VERBOSE: The newly created nuspec is:
