@@ -9,7 +9,7 @@ description: Strengthening Security and Multi-Repository Integration in Azure De
 
 With this update, we’re improving security and authentication across Azure DevOps. Overlapping secrets for Azure DevOps OAuth make secret rotation seamless, while GitHub Advanced Security brings better filtering to the security overview page while ensuring multi-repository publishing correctly routes dependency and code scanning alerts.
 
-Hosted image updates in Azure Pipelines, include Ubuntu-24.04, Windows 2025, and mac-OS 15 Sequoia, to ensure a more secure and reliable experience.
+Hosted image updates in Azure Pipelines, include Ubuntu-24.04, Windows 2025, and mac-OS 15 Sequoia, ensuring a more secure and reliable experience.
 
 
 Check out the release notes for details.
@@ -67,4 +67,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Dan Hellem
+Silviu Andrica

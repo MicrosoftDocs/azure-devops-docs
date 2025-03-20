@@ -68,7 +68,7 @@ For guidance on tasks that use tools that are no longer on the `ubuntu-24.04` im
 
 #### The ubuntu-20.04 pipeline image is deprecated and will be retired April 1
 
-We are deprecating support for the Ubuntu 20.04 image in Azure Pipelines because it will reach its end of support soon. Please find the deprecation plan with brownout schedule in our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
+We're deprecating support for the Ubuntu 20.04 image in Azure Pipelines because it will reach its end of support soon. Find the deprecation plan with brownout schedule in our [blog post](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
 
 ### Workload identity federation uses Entra issuer
@@ -82,9 +82,9 @@ We're now changing the format of the federated credential for new Azure and Dock
 | Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<entra prefix>/sc/<organization id>/<service connection id>` |
 
-There is no change in configuration and the way tokens are obtained stays the same. Pipeline tasks don't need to be updated and work as before. 
+There's no change in configuration and the way tokens are obtained stays the same. Pipeline tasks don't need to be updated and work as before. 
 
-The steps to create a service connection are not changing and in most cases, the new issuer isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you will see the new federated credentials displayed:
+The steps to create a service connection aren't changing and in most cases, the new issuer isn't visible. When [configuring an Azure service connection manually](/azure/devops/pipelines/release/configure-workload-identity), you'll see the new federated credentials displayed:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of FIC example.](../../media/253-pipelines-01.png "Screenshot of FIC example")](../../media/253-pipelines-01.png#lightbox)
