@@ -25,7 +25,7 @@ Fetching work items using queries is a common scenario in Azure DevOps Services.
 |**Development environment**| A C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/).|
 
 > [!IMPORTANT]
-> We use Personal Access Tokens (PATs) as an example in this article, but we don't recommend using PATs. For more secure authentication mechanisms, see [Authentication guidance](../authentication/authentication-guidance.md).
+> We use Personal Access Tokens (PATs) as an example in this article, but we don't recommend using PATs. For more secure authentication mechanisms, see [Authentication guidance](../get-started/authentication/authentication-guidance.md).
 
 ## Create a C# project in Visual Studio
 

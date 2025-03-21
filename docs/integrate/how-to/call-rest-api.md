@@ -15,8 +15,6 @@ ms.date: 03/20/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-# Get started with the REST APIs
-
 Integrate your application with Azure DevOps using the REST APIs provided in this article. These APIs allow you to interact with the services programmatically, enabling you to automate workflows, integrate with other systems, and extend the capabilities of Azure DevOps.
 
 The APIs follow a common pattern, as shown in the following example:
