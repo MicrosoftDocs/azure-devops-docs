@@ -46,7 +46,7 @@ If you want to provide the personal access token (PAT) through an HTTP header, f
 Authorization: Basic BASE64PATSTRING
 ```
 
-The following example shows C# using the [HttpClient class](https://docs.microsoft.com/previous-versions/visualstudio/hh193681(v=vs.118)):
+The following example shows C# using the [HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118)):
 
 ```cs
 public static async void GetProjects()
