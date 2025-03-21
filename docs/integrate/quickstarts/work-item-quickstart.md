@@ -8,7 +8,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 10/03/2024
+ms.date: 03/21/2025
 ---
 
 # Fetch work items with queries programmatically 
@@ -19,11 +19,13 @@ Fetching work items using queries is a common scenario in Azure DevOps Services.
 
 ## Prerequisites
 
-- **Azure DevOps setup:**
-  - Have [an organization](https://go.microsoft.com/fwlink/?LinkId=307137) in Azure DevOps Services.
-  - Have a [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Azure DevOps** | - [An organization](https://go.microsoft.com/fwlink/?LinkId=307137).<\br>- A [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).|
+|**Development environment**| A C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/).|
 
-- **Development environment:** Have a C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/).
+> [!IMPORTANT]
+> We use Personal Access Tokens (PATs) as an example in this article, but we don't recommend using PATs. For more secure authentication mechanisms, see [Authentication guidance](../get-started/authentication/authentication-guidance.md).
 
 ## Create a C# project in Visual Studio
 
