@@ -87,9 +87,9 @@
     - name: Project setup
       href: npm/npmrc.md
       displayName: publish, npm
-    - name: Publish and restore npm packages (CLI)
+    - name: Publish npm packages
       href: npm/publish.md
-      displayName: npm, publish, restore, cli
+      displayName: npm, publish, cli
     - name: Npm scopes
       href: npm/scopes.md
       displayName: npm scope, npm artifacts, npm packages
@@ -145,16 +145,16 @@
       href: nuget/restore-nuget-packages-dotnet.md
       displayName: dotnet, restore
     - name: Install NuGet packages with Visual Studio
-      href: nuget/consume.md
+      href: nuget/install-nuget-packages-with-visual-studio.md
       displayName: install package, nuget, visual studio
   - name: npm
     items:
     - name: Project setup
       href: npm/npmrc.md
       displayName: npmrc, connect, feed, npm
-    - name: Publish and restore npm packages (CLI)
-      href: npm/publish.md
-      displayName: npm, publish, restore, cli
+    - name: Restore npm packages
+      href: npm/restore-npm-packages.md
+      displayName: npm, restore, cli
     - name: Npm scopes
       href: npm/scopes.md
       displayName: npm scope, npm artifacts, npm packages
@@ -195,7 +195,7 @@
       displayName: cargo, crate
 - name: Upstream sources
   items:
-  - name: Upstream sources overview
+  - name: What are upstream sources?
     href: concepts/upstream-sources.md
     displayName: upstream, sources, upstreams
   - name: Set up upstream sources

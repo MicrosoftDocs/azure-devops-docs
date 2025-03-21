@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2023
+ms.date: 03/11/2025
 ---
 
 # Keyboard shortcuts for Azure DevOps and Team Explorer
@@ -25,7 +25,7 @@ You can use these keyboard shortcuts when you work in the web portal for Azure D
 
 ### Web portal global shortcuts
 
-Select **?** to access global and page-specific shortcuts.
+To access global and page-specific shortcuts, select **?**.
 
 Page-specific shortcuts work only when you're on a specific page. For example, select **g**, **c** to open the **Code** page, and then select **c**,  **p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
 
@@ -44,7 +44,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 |Down arrow|Move focus down|
 |Ctrl+Home|Move focus to top of list|
 |Ctrl+End|Move focus to bottom of list|
-|Ctrl+Up arrow|Move item up in the list|
+|Ctrl+Up arrow|Move up item in the list|
 |Ctrl+Down arrow|Move item down in the list|
 |Shift+Up arrow|Highlight consecutive items above the current line or field|
 |Shift+Down arrow|Highlight consecutive items below the current line or field|
@@ -106,7 +106,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 
 ## Wiki
 
-You can use the following keyboard shortcuts when you [manage or edit wiki pages](../../project/wiki/add-edit-wiki.md). To view valid shortcuts, select **?** on a **Wiki** page.
+You can use the following keyboard shortcuts when you [manage or edit wiki pages](../../project/wiki/add-edit-wiki.md). To view valid shortcuts, from the wiki page, select **?**. 
 
 
 
@@ -201,7 +201,7 @@ You can use these shortcuts when you work in Team Explorer.
 |Ctrl+0, e|Open [Branches (Git)](../../repos/git/gitquickstart.md)|
 |Ctrl+0, g|Open [Changes (Git)](../../repos/git/gitquickstart.md)|
 |Ctrl+0, h|Open Home|
-|Ctrl+0, m|Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)|
+|Ctrl+0, m|Open [My Work Team Foundation Version Control (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)|
 |Ctrl+0, p|Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)|
 |Ctrl+0, r|Open [Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)|
 |Ctrl+0, s|Open Settings|
@@ -236,7 +236,7 @@ You can use these shortcuts when you work in Team Explorer.
 |Shift+Alt, l|Link to new work item|  
 |Enter|Open selected work item|  
 
-You can use shortcuts for query results when you have a list of work items, such as the query results view or a list of linked work items within a work item form.
+You can use shortcuts for query results when you're viewing a list of work items, whether in the query results view or within a list of linked work items in a work item form.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)]
 
@@ -244,14 +244,15 @@ You can use shortcuts for query results when you have a list of work items, such
 
 Team Explorer is a plug-in for Visual Studio. You gain access to Team Explorer when you install the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017.  
 
-## Related articles
-
-- [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
-- [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
-- [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
-- [Accessibility features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
-- [Web portal navigation](../../project/navigation/index.md)
-
 ## Next steps
 
-Learn more about [working in Team Explorer](../../user-guide/work-team-explorer.md).
+>[!div class="nextstepaction"]
+>[Work in Team Explorer](../../user-guide/work-team-explorer.md)
+
+## Related articles
+
+- [Learn keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))
+- [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)
+- [Use default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)
+- [Explore accessibility features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
+- [Navigate the web portal](../../project/navigation/index.md)

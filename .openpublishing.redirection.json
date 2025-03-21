@@ -569,6 +569,26 @@
     {
       "source_path": "docs/repos/security/github-advanced-security-dependency-scanning-ecosystems-troubleshoot.md",
       "redirect_url": "/azure/devops/repos/security/github-advanced-security-dependency-scanning-troubleshoot"
+    },
+    {
+      "source_path_from_root": "/docs/repos/git/go-get.md",
+      "redirect_url": "/azure/devops/repos/git/go-install"
+    },
+    {
+      "source_path": "docs/organizations/security/security-best-practices.md",
+      "redirect_url": "/azure/devops/organizations/security/security-overview"
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/iis-basic-auth.md",
+      "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#why-did-my-pat-stop-working"
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-validation-errors.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues.md#resolve-data-validation-errors-that-occur-when-you-publish-from-Excel"
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#Resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
     }
   ]
 }

@@ -46,7 +46,7 @@ To view your previous Azure resource usage, see [View and download your Azure us
 ## See also
 
 * [Manage cost and performance for Managed DevOps Pools](./manage-costs.md)
-* [Azure bandwidth pricing](https://azure.microsoft.com/pricing/details/bandwidth/).
+* [Azure bandwidth pricing](https://azure.microsoft.com/pricing/details/bandwidth/)
 * [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
-* [View and download your Azure usage and charges](/azure/cost-management-billing/understand/download-azure-daily-usage).
+* [View and download your Azure usage and charges](/azure/cost-management-billing/understand/download-azure-daily-usage)
 

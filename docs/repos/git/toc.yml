@@ -189,8 +189,8 @@
     href: ../tfvc/git-permission-command.md
   - name: tf git view
     href: ../tfvc/git-view-command.md
-  - name: Go get using Azure Repos
-    href: go-get.md
+  - name: Go install using Azure Repos
+    href: go-install.md
 - name: Reference
   items:
   - name: Default Git permissions (Security)

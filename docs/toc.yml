@@ -37,6 +37,9 @@
   - name: Manage extension permissions
     displayName: grant, publish, update, settings, admin
     href: ./marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: High-risk extensions
+    displayName: risk, scope, extensions
+    href: ./marketplace/high-risk-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Authenticate
   items:
   - name: Guide to authentication
@@ -57,8 +60,6 @@
     href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json    
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: IIS Basic Authentication and PATs
-    href: ./integrate/get-started/authentication/iis-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Develop extensions
   items:
   - name: Get started

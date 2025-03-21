@@ -88,13 +88,13 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 
 Each backlog can display up to 10,000 work items. This limit applies to what the backlog can display, not to the number of work items you can define, as there's no specific limit. If your backlog exceeds this limit, consider adding a team and moving some work items to the new team's backlog.
 
+
 > [!TIP]
 > If you're approaching the dashboards limits, see the following steps to manage and clean up your dashboards:
 > - **Review usage:** Identify dashboards that are no longer in use or are duplicates. You can do this by checking the last accessed date or by consulting with team members.
 > - **Consolidate dashboards:** Combine similar dashboards to reduce the total number. This can be done by adding multiple widgets to a single dashboard.
 > - **Archive old dashboards:** If certain dashboards are no longer needed but you want to keep the data, consider exporting the data and archiving the dashboards.
 > - **Use the Object Limit Tracker feature:** Provides real-time visibility into resource usage, including dashboards. This feature can help you [proactively manage your limits and avoid potential issues](https://devblogs.microsoft.com/devops/introducing-object-limit-tracker-in-azure-devops/).
-
 
 #### Other notes:
 
@@ -135,7 +135,7 @@ If you [integrate your project with GitHub](../../../cross-service/github-integr
 
 | Integration |  Limit |
 |--------|-------|
-| Azure Boards: Connected GitHub repositories (UX) | 500 repositories per connection. |
+| Azure Boards: Connected GitHub repositories (UX) | 1,000 repositories per connection. |
 | Azure Boards: Connected GitHub repositories (API) | 2,000 repositories per connection. [Learn more](/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP&preserve-view=true). |
 
 ## Projects

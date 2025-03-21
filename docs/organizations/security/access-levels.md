@@ -32,10 +32,9 @@ Assign users or groups of users to one of the following access levels:
 - **Basic + Test Plans**: Provides access to all features included in **Basic** and Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Stakeholder**: Can assign to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Visual Studio subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
+   > [!TIP]
+   > As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
 - **GitHub Enterprise**: The system automatically recognizes users with a GitHub Enterprise license the next time they sign in to Azure DevOps. Regardless of a user's assigned access level (for example, they could be assigned **Stakeholder** access), they receive **Basic** access when they're associated with a GitHub Enterprise license.
-
-> [!TIP]
-> As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
 
 ::: moniker-end  
 
@@ -524,8 +523,8 @@ You can manage access levels programmatically using the [`az devops user add` (A
 | Basic + Test Plans                                    | advanced           | account        | none             | 
 | Visual Studio Subscriber                              | none               | msdn           | eligible         | 
 | Stakeholder                                           | stakeholder        | account        | none             | 
-| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise       | 
-
+| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise|
+| GitHub Enterprise                                     | express   | account                  |enterprise       | 
 
  > [!NOTE]   
  > The `earlyAdopter` accountLicenseType is an internal value used solely by Microsoft.  
