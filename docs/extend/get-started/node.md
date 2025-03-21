@@ -25,7 +25,7 @@ Use extensions to enhance Azure DevOps with new web experiences, dashboard widge
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| Owner of the organization.|
-|**Tools** |- [Node.js](https://nodejs.org)<\br>- Extension packaging tool: Run `npm install -g tfx-cli` from a command prompt, which you use to [package your extension](../publish/overview.md) later on.|
+|**Tools** |- [Node.js](https://nodejs.org)<br/>- Extension packaging tool: Run `npm install -g tfx-cli` from a command prompt, which you use to [package your extension](../publish/overview.md) later on.|
 
 ## Create a directory and manifest
 
