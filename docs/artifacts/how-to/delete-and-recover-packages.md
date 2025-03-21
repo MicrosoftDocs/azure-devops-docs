@@ -98,7 +98,7 @@ There are two ways to remove an npm package from a feed: [Deprecate](#qa) or [De
 
 1. Select the package you want to delete, and then select **Delete**.
 
-    :::image type="content" source="../media/python-delete-package.png" lightbox="../media/python-delete-package.png" alt-text="A screenshot displaying how to delete a Python package in Azure Artifacts.":::
+    :::image type="content" source="../media/python-delete-package.png"  alt-text="A screenshot displaying how to delete a Python package in Azure Artifacts." lightbox="../media/python-delete-package.png":::
 
 #### [Maven](#tab/maven/)
 
