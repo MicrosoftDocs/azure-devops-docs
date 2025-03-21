@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
-ms.date: 11/30/2023
+ms.date: 03/20/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -39,7 +39,7 @@ When an individual user's requests get blocked, responses with HTTP code 429 (to
 
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
-### Azure DevOps throughput units (TSTUs)  
+### Azure DevOps throughput units 
 
 Azure DevOps users consume many shared resources, and consumption depends on the following factors: 
 
@@ -48,13 +48,13 @@ Azure DevOps users consume many shared resources, and consumption depends on the
 - Builds drive load by downloading files from version control, producing log output
 - All operations consume CPU and memory on various parts of the service
 
-To accommodate, Azure DevOps resource consumption is expressed in abstract units called Azure DevOps throughput units, or TSTUs. TSTUs eventually incorporate a blend of the following items:
+To accommodate, Azure DevOps resource consumption is expressed in abstract units called Azure DevOps throughput units (TSTUs). TSTUs eventually incorporate a blend of the following items:
 
 - [Azure SQL Database DTUs](/azure/azure-sql/database/purchasing-models) as a measure of database consumption
 - Application tier and job agent CPU, memory, and I/O as a measure of compute consumption
 - Azure Storage bandwidth as a measure of storage consumption  
 
-For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption. A single TSTU is the average load we expect a single normal user of Azure DevOps to generate per five minutes. Normal users also generate spikes in load. These spikes are typically 10 or fewer TSTUs per five minutes. Less frequently, spikes go as high as 100 TSTUs.
+For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption. A single TSTU is the average load we expect a typical user of Azure DevOps to generate per five minutes. Typical users also generate spikes in load. These spikes are typically 10 or fewer TSTUs per five minutes. Less frequently, spikes go as high as 100 TSTUs.
 
 The global consumption limit is 200 TSTUs within a sliding five-minute window.
 
@@ -62,10 +62,10 @@ We recommend that you at least respond to the `Retry-After` header. If you detec
 
 If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `X-RateLimit-Limit` headers. Doing so allows you to approximate how quickly you're approaching the delay threshold. Your client can intelligently react and spread out its requests over time.
 
- > [!NOTE]
- > Identities that are used by tools and applications to integrate with Azure DevOps might need higher rate and usage limits beyond the allowed consumption limit from time to time. You can get additional rate and usage limits by assigning the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits are fulfilled, you can go back to the access level that the identity used to have. You're charged for the cost of [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the time it's assigned to the identity.
+> [!NOTE]
+> Identities used by tools and applications to integrate with Azure DevOps might occasionally need higher rate and usage limits beyond the allowed consumption limit. You can increase these limits by assigning the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits is fulfilled, you can revert to the previous access level. You get charged for the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the duration assigned to the identity.
 >
-> Identities that are already assigned a Visual Studio Enterprise subscription cannot be assigned [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level till they are removed.
+> Identities already assigned a Visual Studio Enterprise subscription can't get assigned the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level until they get removed.
 
 ## Pipelines
 
@@ -163,8 +163,8 @@ There are no per-project limits placed on creating service connections. However,
 
 ## Related articles
 
-- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md)
+- [Track work, manage processes, and set project limits](../../organizations/settings/work/object-limits.md)
 - [Configure and customize Azure Boards](../../boards/configure-customize.md)
-- [Usage monitoring](../../organizations/accounts/usage-monitoring.md)
-- [Git limits](../../repos/git/limits.md)
-- [Best practices to avoid hitting rate limits](integration-bestpractices.md)
+- [Monitor usage](../../organizations/accounts/usage-monitoring.md)
+- [Understand Git limits](../../repos/git/limits.md)
+- [Follow best practices for avoiding hitting rate limits](integration-bestpractices.md)
