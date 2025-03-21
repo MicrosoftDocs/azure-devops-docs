@@ -54,7 +54,7 @@ sections:
           **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you created in the web portal or from Team Explorer. 
 
           > [!div class="mx-imgBorder"]  
-          > [Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
+          > ![Screenshot of Azure DevOps Open in Excel extension.](media/excel/open-in-excel.png)
 
 
       - question: Can I import or update work items without using Excel?  
