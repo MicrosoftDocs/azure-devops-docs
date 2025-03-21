@@ -24,6 +24,8 @@ landingContent:
             url: overview.md
           - text: Compare with Azure Virtual Machine Scale Set agents
             url: migrate-from-scale-set-agents.md
+          - text: Release notes
+            url: release-notes.md
       - linkListType: quickstart
         links:
           - text: Azure portal

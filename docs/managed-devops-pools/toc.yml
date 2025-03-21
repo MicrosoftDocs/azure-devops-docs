@@ -2,6 +2,8 @@
   href: index.yml
 - name: Overview
   href: overview.md
+- name: Release notes
+  href: release-notes.md
 - name: Architecture overview
   href: architecture-overview.md
 - name: Prerequisites
