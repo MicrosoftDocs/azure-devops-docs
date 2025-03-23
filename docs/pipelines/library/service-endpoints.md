@@ -168,7 +168,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | [Jira](#jira-service-connection) | Connect to a Jira server. |
 | [Kubernetes](#kubernetes-service-connection) | Connect to a Kubernetes cluster. |
 | [Maven](#maven-service-connection) | Connect to a Maven repository. |
-| [npm](#npm-service-connection) | Connect to an npm repository. |
+| [npm](#npm-service-connection) | Connect to an npm registry. |
 | [NuGet](#nuget-service-connection) | Connect to a NuGet server. |
 | [Other Git](#other-git-service-connection) | Connect to a git repository. |
 | [Python package download](#python-package-download-service-connection) | Connect to a Python repository for download. |
@@ -584,7 +584,7 @@ Use the following parameters when you define and secure a connection to an npm s
 | Parameter | Description  |
 |-----------------------|-------------|
 | Authentication method | Required. Select **Username and Password** or **Authentication Token**. |
-| Registry URL| Required. The URL of the Maven repository. |
+| Registry URL| Required. The URL of the npm registry. |
 | Username  | Required when connection type is **Username and Password**. The username for authentication.|
 | Password  | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required **Authentication Token** is selected. The personal access token (PAT) to authenticate with the service or registry. PATs are applicable to repositories that support them, for example https://registry.npmjs.org DevOps Services organizations or Azure DevOps Server. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
