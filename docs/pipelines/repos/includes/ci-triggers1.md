@@ -116,7 +116,7 @@ When you specify paths, you must explicitly specify branches to trigger on if yo
 
 ::: moniker range="> azure-devops-2020"
 
-Wilds cards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wild card characters (`**`, `*`, or `?)` when specifying path filters.
+Wildcards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wildcard characters (`**`, `*`, or `?)` when specifying path filters.
 
 ::: moniker-end
 
