@@ -906,6 +906,9 @@
         ],
         "artifacts/index.yml": [
           "tfs-2018"
+        ],
+        "**/*.md": [
+          "azure-devops-2019"
         ]
       }
     },
