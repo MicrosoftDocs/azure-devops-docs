@@ -8,8 +8,6 @@ ms.topic: overview
 
 # Features timeline
 
-This article provides a history of new features delivered in Managed DevOps Pools. For information on planned features, see [Managed DevOps Pools roadmap](overview.md#roadmap).
-
 ## March 2025
 
 * **Trusted root certificates**: Managed DevOps Pools added support so you can configure your pool to add certificates from your Key Vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. For more information, see [Key Vault configuration](./configure-security.md#key-vault-configuration).
@@ -31,3 +29,7 @@ This article provides a history of new features delivered in Managed DevOps Pool
 * **Move to another resource group or subscription**: You now have the option to move your Managed DevOps Pools to another Azure resource group or to another subscription. For more information, see [Move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
 
 * **Ubuntu 24.04 support**: We've added support for Ubuntu 24.04 by adding three images to [Selected marketplace images](./configure-images.md#selected-marketplace-images) and enabling bring-your-own Ubuntu 24.04 images using [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images). 
+
+## See also
+
+* [Managed DevOps Pools roadmap](overview.md#roadmap)
