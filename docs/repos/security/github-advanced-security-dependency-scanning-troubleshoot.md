@@ -76,6 +76,12 @@ The dependency scanning build task uses the pipeline identity to call the Advanc
 
 Grant `Advanced Security: View Alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
 
+## How can I explicitly define the repository to publish dependency scanning alerts to?
+1.   Use the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+2.   As another option, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` 
+
+For more information, check the [release notes](https://learn.microsoft.com/en-us/azure/devops/release-notes/2025/ghazdo/sprint-253-update#multi-repository-publishing-scenarios-supported-for-github-advanced-security-for-azure-devops).
+
 ## Related articles
 
 - [Set up code scanning](github-advanced-security-code-scanning.md)
