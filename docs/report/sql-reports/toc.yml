@@ -48,7 +48,7 @@
     href: /previous-versions/azure/devops/report/sql-reports/create-aggregate-report-report-designer-analysis-services-cube
   - name: View, organize, & configure reports
     href: /previous-versions/azure/devops/report/admin/view-organize-configure-reports-using-report-manager
-  - name: View, upload, & organize reports 
+  - name: View, upload, & organize reports
     href: /previous-versions/azure/devops/report/admin/view-upload-organize-reporting-services-reports
 - name: Report descriptions
   items:
@@ -102,12 +102,12 @@
   items:
   - name: Reportable fields
     items:
-    - name: Add or modify work item fields 
-      href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting 
-    - name: Reportable fields reference 
-      href: /previous-versions/azure/devops/reference/xml/reportable-fields-reference  
+    - name: Add or modify work item fields
+      href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting
+    - name: Reportable fields reference
+      href: /previous-versions/azure/devops/reference/xml/reportable-fields-reference
     - name: Change reporting attributes
-      href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting  
+      href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting
   - name: Data warehouse tables
     items:
     - name: Data warehouse tables
@@ -152,5 +152,3 @@
       href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-test-results
     - name: Work items and test case data
       href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-work
-
-
