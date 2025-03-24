@@ -57,7 +57,7 @@
   - name: Use Azure DevOps OAuth 2.0 to create a web app
     href: ./integrate/get-started/authentication/azure-devops-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json'
   - name: Authenticate extensions and security
-    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json    
+    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Develop extensions
