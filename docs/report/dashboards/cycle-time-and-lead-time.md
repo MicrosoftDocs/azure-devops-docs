@@ -8,7 +8,7 @@ ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019' 
+monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 #customer intent: As a team member, I want to create Lead Time or Cycle Time widgets to show team progress on the dashboard.
 ---
@@ -75,29 +75,6 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. C
 4. Select **Save** when you're done. The following image shows an example Lead Time chart showing 60 days of data.
 
    :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot of Example CFD chart, rolling 30 days.":::
-
-   For your lead time and cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-quickstart.md#track-work-in-progress) of those work items that the widgets track.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and select **Configure** to open the configuration dialog. Modify the title and then select the values you want to monitor:
-
-   - Team
-   - Backlog level
-   - Swimlane
-   - Time period
-
-   :::image type="content" source="media/cycle-lead-time-configure-dialog.png" alt-text="Screenshot of Configure dialog, Configure dialog, Lead Time widget, 2019 version.":::
-
-   To select a **Swimlane**, you must select a **Backlog**.
-
-1. For a continuous flow, select **Rolling period** and specify the number of days you want to view on the chart. Or, for a fixed scope view, select and specify the Start date. Select this view if your team employs a Scrumban process or follows a standard sprint process. The main difference between these two types of charts is that the fixed scope chart provides information (in most cases) of scope change.
-
-1. Select **Save** when you're done. The following image shows an example Lead Time chart showing 60 days of data.
-
-   :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot Example CFD chart, rolling 30 days, 2019 version.":::
 
    For your lead time and cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-quickstart.md#track-work-in-progress) of those work items that the widgets track.
 

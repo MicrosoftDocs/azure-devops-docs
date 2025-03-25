@@ -9,7 +9,7 @@ toc: show
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/11/2024
 ---
 
@@ -67,7 +67,6 @@ Each user within your team must [restart their clients](#restart-clients) and do
 - [Update OData feeds](#update-odata-feeds)
 - [Update Analytics views](#update-analytics-views)
 
-
 ### Restart clients
 
 Opened clients keep a cache of all project names in memory, but this cache doesn't automatically get cleared after a project is renamed. To clear the cache, restart your client so it populates the new project name. If you don't restart the client, then operations that use the cached project name fail with a *project not found* exception.
@@ -83,7 +82,6 @@ If your project uses Git, then your remote references for each repository from t
 
 For more information, see [Update the Git remotes on your dev machines](../../repos/git/repo-rename.md#update-the-git-remotes-on-your-dev-machines).
 
-
 ### Update TFVC server workspaces
 
 If your project uses TFVC with [server workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces must be updated with the new project name.
@@ -92,7 +90,6 @@ For Visual Studio clients, execute a get or check in and then the workspace mapp
 ![Screenshot of source control explorer, showing get latest version selection.](media/rename-project/tfvc-get.png)
 
 For more information, see [Rename command (TFVC)](../../repos/tfvc/rename-command-team-foundation-version-control.md).
-
 
 ### Update TFVC local workspaces
 

@@ -33,7 +33,7 @@ ms.date: 10/19/2022
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::
    :::column span="2":::
   <a id="administer-process-permissions-permission"></a>Administer process permissions  
@@ -94,7 +94,7 @@ ms.date: 10/19/2022
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::
    :::column span="2":::
   <a id="create-process-permission"></a>Create process  
@@ -157,7 +157,7 @@ ms.date: 10/19/2022
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::
    :::column span="2":::
   <a id="edit-process-permission"></a>Edit process  

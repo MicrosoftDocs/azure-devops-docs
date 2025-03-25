@@ -7,7 +7,7 @@ author: vijayma
 ms.date: 12/18/2023
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 YAML pipelines are configured by default with a CI trigger on all branches, unless the [Disable implied YAML CI trigger](/azure/devops/release-notes/2023/sprint-227-update#prevent-unintended-pipeline-runs) setting, introduced in [Azure DevOps sprint 227](/azure/devops/release-notes/2023/sprint-227-update), is enabled. The **Disable implied YAML CI trigger** setting can be configured at the organization level or at the project level. When the **Disable implied YAML CI trigger** setting is enabled, CI triggers for YAML pipelines are not enabled if the YAML pipeline doesn't have a `trigger` section. By default, **Disable implied YAML CI trigger** is not enabled.
 
@@ -116,10 +116,9 @@ When you specify paths, you must explicitly specify branches to trigger on if yo
 
 ::: moniker range="> azure-devops-2020"
 
-Wilds cards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wild card characters (`**`, `*`, or `?)` when specifying path filters.
+Wildcards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wildcard characters (`**`, `*`, or `?)` when specifying path filters.
 
 ::: moniker-end
-
 
 * Paths are always specified relative to the root of the repository.
 * If you don't set path filters, then the root folder of the repo is implicitly included by default.

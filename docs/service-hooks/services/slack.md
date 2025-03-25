@@ -64,7 +64,7 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
 ## Create a service hook subscription in your organization
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Go to your project **Service Hooks** page. 
 
@@ -86,8 +86,6 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
    When the event occurs in your project, a notification appears in your team's Slack channel.
 
 ::: moniker-end
-
-
 
 ## FAQs
 

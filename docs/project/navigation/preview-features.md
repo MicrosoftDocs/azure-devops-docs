@@ -124,12 +124,6 @@ You can turn on or off the [Pull Request Summary - Load of large files](#pull-re
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-You can turn on or off the [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download) feature on a per project or collection basis.
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2022"
 
 ## Pull request summary - Load of large files

@@ -46,8 +46,6 @@ Not all Markdown syntax is supported across all features in Azure DevOps. The fo
 
 For more information, see [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), and [wiki](add-edit-wiki.md).
 
-
-
 ## Headers
 
 Structure your content using headers. Headers segment longer content, making it easier to read.
@@ -159,14 +157,12 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 
 Combine these elements to apply emphasis to the text.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]  
 > There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
 
 ::: moniker-end
-
-
 
 **Example:**
 
@@ -655,15 +651,12 @@ We support both inline and block [KaTeX](https://khan.github.io/KaTeX/function-s
 
 To include mathematical notation surround the mathematical notation with a `$` sign for inline and `$$` for block,  as shown in the following examples:
 
-
-
 ### Example: Greek characters
 
 ```KaTeX
 $
 \alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta, \kappa, \lambda, \mu, \nu, \omicron, \pi, \rho, \sigma, \tau, \upsilon, \phi, ...
 $  
-
 
 $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Omega$
 ```
@@ -694,7 +687,6 @@ $$
 $$
 \sum_{i=1}^{10} t_i
 $$
-
 
 $$
 \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x
@@ -916,7 +908,7 @@ requirementDiagram
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 <a id="toc-wiki" > </a>
 
@@ -955,7 +947,7 @@ You can add the table of subpages either by inserting the special tag `[[_TOSP_]
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Add a collapsible section
 
@@ -1057,7 +1049,6 @@ In wiki pages, you can also create rich content using HTML tags.
 > [!TIP]
 > You can nest Markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
 
-
  ```HTML
 <p>
   
@@ -1111,7 +1102,6 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p>
 -->
-
 
 ## Related articles  
 

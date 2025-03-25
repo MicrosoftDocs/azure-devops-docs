@@ -7,10 +7,9 @@ ms.custom: powerbisample, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/16/2022
 ---
-
 
 # Add a team slicer to a Power BI report
 
@@ -24,7 +23,6 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 > If you've created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -68,10 +66,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
-
-
 ### Query breakdown
-
 
 The following table describes each part of the query.
 
@@ -148,7 +143,6 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 1. Add `Team.TeamName` to **Field**.
 
 For more information about working with slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
-
 
 ## Related articles
 

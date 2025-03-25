@@ -16,7 +16,7 @@ ms.date: 10/17/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To support your work tracking efforts, you can use Microsoft Excel. You can either work in online mode, where you're connected to either Azure Boards or Azure DevOps Server. Or, work in offline mode, where you access the local computer and document.
 
@@ -100,7 +100,7 @@ Connection from an Office client to an Azure Boards project requires the followi
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 - To connect Excel to Azure Boards, you must install Office Excel 2010 or later version, including Microsoft 365.
 - All Office integration tasks require that you install a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family)
@@ -109,7 +109,7 @@ Connection from an Office client to an Azure Boards project requires the followi
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)

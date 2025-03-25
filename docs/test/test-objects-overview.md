@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---
 
-
 # Test objects and terms
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
@@ -27,7 +26,6 @@ Read this article to gain an understanding of the objects and terms used in manu
 ## Test-specific work item types 
 
 To support manual and automated testing, you add and group three main types of test-specific work item types: **Test Plans**, **Test Suites**, and **Test Cases**. To support sharing of various test steps and test parameters, you define **Shared Steps** and **Shared Parameters**. These objects are stored in the work tracking data store as specific types of work items. 
-
 
 ![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
@@ -171,7 +169,6 @@ The only required field for all work item types is **Title**. When the work item
 :::row-end:::
 ---
 
-
 ## Common controls to all test-specific work item types 
 
 Several controls appear in several test-specific work items as described in the following table. If these controls are not of interest, you can hide them from the work item form layout as described in [Add and manage fields (Inheritance process)](../organizations/settings/work/customize-process-field.md#hide-a-field-or-custom-control).
@@ -230,11 +227,10 @@ For the Inherited process, you can customize test plans, test suites, and test c
 
 There are a number of permissions that control select features for viewing, modifying, or deleting work items. These include those listed in the following table.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 > [!NOTE]   
 > The **Change work item type** permission doesn't apply to test-specific work items. Even if you choose this feature from the work item form, changing the work item type is disallowed. 
 ::: moniker-end
-
 
 :::row:::
    :::column span="2":::
@@ -340,7 +336,6 @@ There are a number of permissions that control select features for viewing, modi
    :::column-end:::
 :::row-end:::
 
-
 For more information about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Change project-level permissions](../organizations/security/change-project-level-permissions.md). 
 
 ## Export, import, and bulk update of test-specific work items 
@@ -350,11 +345,6 @@ As with other work items, you can bulk edit test-specific work items. For more i
 ::: moniker range=">= azure-devops-2020"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
 - [Navigate Test Plans, Test suites context menu options](navigate-test-plans.md#test-suites-context-menu-options)
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-- [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
-- [Can I export the test plan to share or review offline](create-a-test-plan.md#work-with-test-suites)
 ::: moniker-end
 
 ## Test terms 

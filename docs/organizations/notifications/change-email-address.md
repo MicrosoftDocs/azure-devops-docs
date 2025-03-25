@@ -40,7 +40,7 @@ Do the following steps to update your preferred email address, where you receive
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Open your profile menu and select **My profile**.  
 

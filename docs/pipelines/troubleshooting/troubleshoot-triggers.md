@@ -88,16 +88,7 @@ If your pipelines use the default implicit CI trigger, and they stop working, ch
 
 ## Branch filters misconfigured in CI and PR triggers
 
-::: moniker range="azure-devops-2019"
-
-When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them.
-
-> [!IMPORTANT]
-> When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [pr](/azure/devops/pipelines/yaml-schema/pr) and [trigger](/azure/devops/pipelines/yaml-schema/trigger).
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them. For more information, see [pr](/azure/devops/pipelines/yaml-schema/pr) and [trigger](/azure/devops/pipelines/yaml-schema/trigger).
 

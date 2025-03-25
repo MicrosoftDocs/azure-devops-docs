@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.author: chcomley
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 author: chcomley
 ms.date: 10/05/2021
 ---
@@ -72,7 +72,6 @@ At this point, the data will update on your scheduled basis using the credential
 
 > [!IMPORTANT]   
 > Any data included in the Analytics view and published Power BI will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
-
 
 ## Related articles
 

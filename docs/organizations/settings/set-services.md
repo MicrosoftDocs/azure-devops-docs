@@ -6,7 +6,7 @@ ms.subservice: azure-devops-settings
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/12/2024
 ---
 

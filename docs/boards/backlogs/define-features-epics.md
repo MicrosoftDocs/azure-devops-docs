@@ -77,34 +77,13 @@ To focus on one level of a backlog at a time, select the name of the backlog. Yo
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) and go to your project.
-1. Select **Boards** > **Backlogs**.
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/open-work-backlogs-agile.png" alt-text="Screenshot opened work backlog, on-premises Azure DevOps Server 2019.":::
-
-   To choose a different team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png" alt-text="Screenshot of Choose another team.":::
-
-1. Choose the portfolio backlog that you want: **Features** or **Epics**.
-
-   :::image type="content" source="media/features-epics/choose-features-epics-agile.png" alt-text="Screenshot of Choose product backlog level, Backlog items, Stories, or Requirements.":::
-
-1. (Optional) To choose which columns should display and in what order, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You might want to add the Iteration Path to the set of columns that appear on your backlog. For more information, see [Change column options](../backlogs/set-column-options.md).
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png" alt-text="Screenshot showing how to Open Column Options from More commands menu, Azure DevOps Server 2019.":::
-
-::: moniker-end
-
 For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).  
 
 ## Add features and epics to your backlog
 
 Just as you can add items to your product backlog, you can add items to your **features** and **epics** backlogs.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select the :::image type="icon" source="../../media/icons/blue-add-icon.png":::**New Work Item**, enter a title, and then select **Enter** or **Add to top**.
 
@@ -187,7 +166,7 @@ Open each item by double-clicking, or highlight the item and select **Enter**. T
 
 You can add child items to your features from any backlog. You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the board for features. You can add child features from the Epic board. For more information, see [Board features and epics](../boards/kanban-epics-features-stories.md). To parent or reparent children from a backlog, see [Organize your backlog](organize-backlog.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When you see the :::image type="icon" source="../../media/icons/blue-add-icon.png"::: **Add** icon, you can add a child item. The work item always corresponds to the hierarchy of work item types defined for your project.
 

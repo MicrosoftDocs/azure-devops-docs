@@ -15,9 +15,7 @@ ms.date: 01/23/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. Other resources to review are [Agile glossary](../work-items/agile-glossary.md)  and [Project management and navigation glossary](../../project/navigation/glossary.md).  
-
 
 [!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
 
@@ -38,11 +36,9 @@ Capacity correlates to actual task time, either hours or days, that an individua
 
 By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity and days off. Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. Learn more: [Set sprint capacity](set-capacity.md). 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/capacity/set-capacity-web-team.png" alt-text="Screenshot of team capacity page.":::
 ::: moniker-end
-
-
 
 ## Capacity bars
 
@@ -57,11 +53,9 @@ With capacity bars, you can quickly see who is over, at, or under capacity. Capa
 
 For more information, see [Adjust work to fit sprint capacity](adjust-work.md). 
 
-
 ## Daily scrum meetings
 
 Daily Scrum meetings help teams stay focused on what they need to do to maximize their ability to meet their sprint commitments. The team's Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less. Learn more: [Scrum best practices, Daily scrum meeting](best-practices-scrum.md#daily-scrum-meetings).   
-
 
 <a id="forecast"></a>
 
@@ -72,7 +66,6 @@ As shown here, a velocity of 20 indicates that it will take five sprints to comp
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of team backlog, Forecast view.](media/forecast-s125.png)
-
 
 [!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
 
@@ -98,12 +91,9 @@ Scrum Masters help build and maintain healthy teams by employing Scrum processes
 
 The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](../../report/dashboards/configure-sprint-burndown.md). 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="../../report/dashboards/media/burndown/analytics-burndown-remaining-work-s159.png" alt-text="Screenshot of Sprint burndown chart.":::
 ::: moniker-end
-
-
-
 
 ## Sprint goals
 
@@ -155,19 +145,15 @@ Velocity is a measure of how much work a team can complete based on their sprint
 
 For example, in the chart shown below the green bar indicates the total estimated effort (story points) of the user stories completed within each sprint. Blue corresponds to the estimated effort of items not yet completed. Learn more: [View and work with the built-in team velocity chart](../../report/dashboards/team-velocity.md). 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="../../report/dashboards/media/velocity/analytics-velocity-azure-devops.png" alt-text="Screenshot of Velocity.":::
 ::: moniker-end
 
-
-
-
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 Along with the built-in Velocity chart, you can add a Velocity widget to your team dashboard. You can configure this widget to sum a count of work items or the sum of effort. Learn more: [Configure the Velocity widget](../../report/dashboards/team-velocity.md). 
 ::: moniker-end  
 
 Each team is associated with one and only one velocity chart. Velocity varies depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics. Learn more: [Add tasks to backlog items](add-tasks.md).
-
 
 ## Related articles 
 
@@ -176,5 +162,4 @@ Each team is associated with one and only one velocity chart. Velocity varies de
 - [Agile glossary](../work-items/agile-glossary.md)
 - [Project management and navigation glossary](../../project/navigation/glossary.md)
 - [What is Scrum?](/devops/plan/what-is-scrum)
-
 

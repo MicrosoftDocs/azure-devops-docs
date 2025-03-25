@@ -88,7 +88,6 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 
 Each backlog can display up to 10,000 work items. This limit applies to what the backlog can display, not to the number of work items you can define, as there's no specific limit. If your backlog exceeds this limit, consider adding a team and moving some work items to the new team's backlog.
 
-
 > [!TIP]
 > If you're approaching the dashboards limits, see the following steps to manage and clean up your dashboards:
 > - **Review usage:** Identify dashboards that are no longer in use or are duplicates. You can do this by checking the last accessed date or by consulting with team members.
@@ -181,7 +180,7 @@ For other restrictions and conformance requirements of the Hosted XML process mo
 > For the Hosted XML process model, you can define approximately 10,000 items across all global lists specified in all WITs.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 The following table lists the maximum number of objects you can define for the Inheritance and On-premises XML process models. While these limits are hard limits, practical limits might also apply.
 

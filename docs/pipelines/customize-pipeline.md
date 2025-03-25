@@ -8,7 +8,7 @@ ms.manager: jepling
 ms.author: vijayma
 author: vijayma
 ms.date: 08/17/2023
-monikerRange: ">= azure-devops-2019"
+monikerRange: "<=azure-devops"
 ---
 
 # Customize your pipeline
@@ -255,7 +255,6 @@ From the **Pipeline settings** pane you can configure the following settings.
 
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../organizations/notifications/manage-team-group-global-organization-notifications.md)
 
-
 ### Manage security
 
 You can configure pipelines security on a project level from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
@@ -265,7 +264,6 @@ You can configure pipelines security on a project level from the **More actions*
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to predefined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](policies/permissions.md).
 
 ## Create work item on failure
-
 
 ::: moniker range="azure-devops"
 

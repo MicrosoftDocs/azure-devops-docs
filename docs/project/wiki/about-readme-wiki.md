@@ -23,9 +23,7 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
-
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 The following features are supported for the team project wiki.
 
@@ -57,9 +55,7 @@ The following features are supported for the team project wiki.
 
 ::: moniker-end
 
-
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Publish existing Git repositories to a wiki  
 
@@ -80,7 +76,7 @@ There are significant differences between how you manage the content for a wiki 
 
 Markdown makes it easy to format text and include images. You can also link to documents within your project pages, README files, dashboards, and pull requests. You can provide guidance to your team in the following places using Markdown:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 - [Team project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
@@ -89,8 +85,6 @@ Markdown makes it easy to format text and include images. You can also link to d
 - [Pull requests](../../repos/git/pull-requests.md)
 
 ::: moniker-end
-
-
 
 For supported syntax, see [Use Markdown in Azure DevOps](markdown-guidance.md).
 

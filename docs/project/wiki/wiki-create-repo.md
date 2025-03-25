@@ -34,13 +34,11 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 Create a new Git repository that stores all your wiki pages and related artifacts. From the wiki landing page, select **Create Project wiki**. Even if you use TFVC for source control, you can create a wiki with a Git repository.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Create wiki, Git repo for your wiki or publish existing repo Markdown files.](media/wiki/create-wiki-or-publish-create-option.png)
 ::: moniker-end
-
-
 
 If you don't have access to create a wiki Git repository or if you don't have access to any of the existing wikis, the following message appears.
 

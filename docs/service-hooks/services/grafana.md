@@ -6,7 +6,7 @@ description: Annotate Grafana dashboards upon completion of deployments in Azure
 ms.assetid: d588f4a0-8081-4684-b87e-64d3140b8b1c
 ms.author: vijayma
 author: vijayma
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/27/2020
 ---
 
@@ -24,13 +24,6 @@ Grafana is an open source, feature-rich metrics dashboard, and graph editor. It 
 |--------------|-------------|
 |**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
 |**Tools**|Grafana  |
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]   
-> The service hook for Grafana is supported for Azure DevOps Server 2019.1 and later versions.   
-
-::: moniker-end
 
 ## Create a service hook subscription
 

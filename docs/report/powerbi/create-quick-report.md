@@ -5,7 +5,7 @@ description: Learn how to create a trend report using an Analytics view.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: quickstart
 ms.date: 11/08/2022
 ---
@@ -106,7 +106,6 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
     > [!NOTE]
     > To view trends over time, you want to use the **Date** format and not **Date Hierarchy**. The **Date Hierarchy** in Power BI rolls ups everything into a simple number for the period. The day level in the hierarchy rolls all days to a number between 1-31. For example, April 3 and May 3 both roll up into number 3. This is not the same as counting items per actual date.
 
-
 ## Group and filter the trend by State
 
 - To group your user stories by State, drag the **State** field into the Legend area. Optionally, filter the set of States to show in the chart. 
@@ -154,7 +153,6 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 
 > [!div class="nextstepaction"]
 > [Create an Active bugs report](active-bugs-sample-report.md)
-
 
 ## Related articles 
 

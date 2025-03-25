@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.author: chcomley
 author: chcomley
-monikerRange: ">= azure-devops-2019"
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 06/07/2021
 ---
@@ -76,7 +76,6 @@ You can temporarily disable a rule or delete it altogether.
 You delete or disable the rule from the actions menu of the rule.
 
 ![Delete or disable a rule](media/process/custom-rule-delete-disable-rule.png)  
-
 
 ## Related articles
 

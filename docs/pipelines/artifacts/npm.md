@@ -60,13 +60,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
 
@@ -143,13 +137,7 @@ Navigate to the organization hosting your target feed and [Create a personal acc
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
 

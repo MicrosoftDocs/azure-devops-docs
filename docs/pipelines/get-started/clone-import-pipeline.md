@@ -24,21 +24,9 @@ For information in migrating a classic build pipeline to YAML using **Export to 
 
 #### [YAML](#tab/yaml/)
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 For YAML pipelines, the process for cloning is to copy the YAML from the source pipeline and use it as the basis for the new pipeline.
-
-:::moniker-end
-
-:::moniker range="azure-devops-2019"
-
-1. Navigate to your pipeline, and choose **Edit**.
-
-    :::image type="content" source="media/pipeline-details-2019.png" alt-text="Pipeline details in Azure DevOps Server 2019":::
-
-1. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
-
-1. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
 
 :::moniker-end
 
@@ -59,14 +47,13 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 > [!NOTE]
 > When cloning a YAML pipeline, only the YAML content is copied. You need to reconfigure any other settings defined outside the scope of the YAML content, such as variables, triggers, security, and other settings.
 
-
 #### [Classic](#tab/classic/)
 
 If your new pipeline can be created by copying another classic pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
 
 You need `Edit release pipeline` or `Create build pipeline` permissions to clone a Classic pipeline. 
  
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 1. Navigate to the pipeline details page for your pipeline.
 
@@ -84,8 +71,6 @@ You need `Edit release pipeline` or `Create build pipeline` permissions to clone
 
 :::moniker-end
 
-
-
 * * *
 
 ## Export and Import a pipeline
@@ -94,25 +79,13 @@ You can create a new classic pipeline by exporting an existing one and then impo
 
 #### [YAML](#tab/yaml/)
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 In a YAML pipeline, exporting from one project and importing into another is the same process as cloning. You can copy the pipeline YAML from the editor and paste it into the YAML editor for your new pipeline.
 
 :::moniker-end
 
-:::moniker range="azure-devops-2019"
-
-1. Navigate to your pipeline, and choose **Edit**.
-
-    :::image type="content" source="media/pipeline-details-2019.png" alt-text="Pipeline details in Azure DevOps Server 2019":::
-
-1. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
-
-1. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
-
-:::moniker-end
-
-:::moniker range="> azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 1. [Go](../create-first-pipeline.md#view-and-manage-your-pipelines) to the [pipeline details](../create-first-pipeline.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
@@ -123,8 +96,6 @@ In a YAML pipeline, exporting from one project and importing into another is the
 1. To customize your newly cloned pipeline, see [Customize your pipeline](../customize-pipeline.md).
 
 :::moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 
@@ -168,9 +139,7 @@ The procedure for exporting and importing a classic release pipeline is similar 
 
 :::moniker-end
 
-
-
-:::moniker range=">= azure-devops-2019 <= azure-devops-2020"
+:::moniker range="=azure-devops-2020"
 
 1. Navigate to the pipeline details page for your pipeline. 
 

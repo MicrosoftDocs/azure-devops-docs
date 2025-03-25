@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms date: 03/12/2025
 #customer intent: As a team member or administrator, I want to connect to Azure DevOps Analytics with Power BI to create reports. 
 ---

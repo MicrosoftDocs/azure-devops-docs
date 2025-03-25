@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 10/21/2024
 #customer intent: As a team lead or administrator, I want to learn how to customize states in a work item type to optimize our team's workflow.

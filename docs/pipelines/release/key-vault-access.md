@@ -6,7 +6,7 @@ author: ramiMSFT
 ms.date: 05/02/2024
 ms.service: azure-devops-pipelines
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 zone_pivot_groups: key-vault-access-path
 ---
 
@@ -128,35 +128,7 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-## Create a service connection
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Project settings** > **Service connections** > **New service connection**.
-
-1. Select **Azure Resource Manager**, name your service connection, and then select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**.
-
-1. Enter your **Subscription Id** and your **Subscription Name**.
-
-1. Enter your service principal information, and then select **Verify connection**.
-
-1. Check the **Allow all pipelines to use this connection** checkbox, and then select **Ok** when you're done.
-
-> [!TIP]
-> If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
-
-::: moniker-end
-
-
-
-
-
-
 ::: zone pivot="access-from-azure-devops"
-
-
 
 ## Access a private key vault from Azure Devops
 
@@ -307,13 +279,9 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
 > [!IMPORTANT]
 > Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
-
 ::: zone-end
 
-
-
 ::: zone pivot="access-from-self-hosted-agent"
-
 
 ## Access a private key vault from a self-hosted agent
 
@@ -418,10 +386,7 @@ steps:
     publishLocation: 'Container'
 ```
 
-
 ::: zone-end
-
-
 
 ## Troubleshoot
 

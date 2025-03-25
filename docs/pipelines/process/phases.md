@@ -17,12 +17,9 @@ To learn about the key concepts and components that make up a pipeline, see [Key
 
 Azure Pipelines doesn't support job priority for YAML pipelines. To control when jobs run, you can specify [conditions](#conditions) and [dependencies](#dependencies).
 
-
-
 ## Define a single job
 
 #### [YAML](#tab/yaml/)
-
 
 In the simplest case, a pipeline has a single job. In that case, you don't have to explicitly use the `job` keyword unless you're using a [template](templates.md). You can directly specify the steps in your YAML file. 
 
@@ -163,13 +160,11 @@ The syntax for a deployment job is:
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Although you can add steps for deployment tasks in a `job`, we recommend that you instead use a [deployment job](deployment-jobs.md). A deployment job has a few benefits. For example, you can deploy to an environment, which includes benefits such as being able to see the history of what you deployed.
 
 ::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 To add jobs to your build pipeline, edit the pipeline on the Pipelines page. Select **...**  to add a job.
@@ -200,25 +195,6 @@ Jobs can be of different types, depending on where they run.
 ---
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-# [YAML](#tab/yaml)
-
-* **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps Server.
-
-# [Classic](#tab/classic)
-
-* **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps Server.
-* **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline.
-
----
-
-::: moniker-end
-
-
 
 ### Agent pool jobs
 
@@ -280,7 +256,6 @@ Because tasks are extensible, you can add more agentless tasks by using extensio
 
 #### [YAML](#tab/yaml/)
 
-
 The full syntax to specify a server job is:
 
 ```yaml
@@ -316,7 +291,6 @@ When you define multiple jobs in a single stage, you can specify dependencies be
 > Each agent can run only one job at a time. To run multiple jobs in parallel, you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 #### [YAML](#tab/yaml/)
-
 
 The syntax for defining multiple jobs and their dependencies is:
 
@@ -425,7 +399,6 @@ You can specify the conditions under which each job runs. By default, a job runs
 
 #### [YAML](#tab/yaml/)
 
-
 Example to run a job based upon the status of running a previous job:
 
 ```yaml
@@ -480,14 +453,9 @@ jobs:
   - script: echo hello from B
 ```
 
-
 #### [Classic](#tab/classic/)
 
-
-
 Use the **Run this job** option on an agent or server job to run the tasks only when specific [conditions](conditions.md) are met. Select a predefined condition, or select "custom" and enter an [expression](expressions.md) that evaluates  to **true** or **false**. Nested expressions can be used, and the expressions can access variables available in the release pipeline.
-
-
 
 * * *
 
@@ -503,7 +471,6 @@ The timeout period begins when the job starts running. It doesn't include the
 time the job is queued or is waiting for an agent.
 
 #### [YAML](#tab/yaml/)
-
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used.
 
@@ -528,7 +495,6 @@ Timeouts have the following level of precedence.
 1. On Microsoft-hosted agents, jobs are [limited in how long they can run based on project type and whether they're run using a paid parallel job](../agents/hosted.md#capabilities-and-limitations). When the Microsoft-hosted job timeout interval elapses, the job is terminated. On Microsoft-hosted agents, jobs can't run longer than this interval, regardless of any job level timeouts specified in the job.
 1. The timeout configured at the job level specifies the maximum duration for the job to run. When the job level timeout interval elapses, the job is terminated. When the job is run on a Microsoft-hosted agent, setting the job level timeout greater than the [built-in Microsoft-hosted job level timeout](../agents/hosted.md#capabilities-and-limitations) has no effect.
 1. You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). If the job level timeout interval elapses before the task completes, the running job is terminated, even if the task is configured with a longer timeout interval.
-
 
 ## Multi-job configuration
 

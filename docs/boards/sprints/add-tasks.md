@@ -54,28 +54,6 @@ When you add and manage tasks, your team gains a clear understanding of the impo
 
     The system lists only those sprints selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. From your web browser, open your team's sprint backlog. (1) Check that you selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
-
-    ![Screenshot shows Open Work, Sprints, for a team.](media/add-tasks/open-sprints-backlog-agile.png)
-
-    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot shows Choose another team.](media/add-tasks/team-selector-sprints-agile.png) 
-
-2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot shows Choose another sprint.](media/add-tasks/select-specific-sprint-agile.png)
-
-    The system lists only those sprints selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
-
-
 ::: moniker-end
 
 ## Add existing work items to a sprint

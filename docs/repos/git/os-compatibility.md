@@ -94,20 +94,13 @@ Azure Repos offers [repository settings](repository-settings.md) that block push
 |  File name restrictions  |                      [Reserved file names](/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1-COM9, LPT1-LPT9<br><br>Reserved file names followed by `.`<br><br>Reserved characters: `\ / : * ? " < >` <br><br> File names that end in `.` or whitespace                       |                                                                                     File names that end in `/`                                                                                     |                      File names that end in `/`                      |
 | Path length restrictions | [Paths in Windows](/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (including a null terminator). <br><br>For directories with .NET, the fully qualified file name must be fewer than 260 characters, and the directory name must be fewer than 248 characters. | File names are limited to 255 characters.<br><br> Path maximums in HFS+ are documented as unlimited, though some macOS versions cap paths at 1,016 characters. Some file systems support 1,016 as the path maximum. | File names are limited to 255 characters.<br><br> Path maximum is 4096. |
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Encoding support
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> The encoding support that this section describes is supported in Azure DevOps Server 2019.1 and later.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Microsoft added support for UTF-16 and UTF-32 encoding via the web push endpoint. This support means that we preserve the encoding type, so you don't have to rewrite your files as UTF-8. You also see a warning when you try to save a file that's not UTF encoded via the web (which supports only UTF encoding).
 

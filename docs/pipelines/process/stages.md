@@ -22,22 +22,13 @@ To find out how stages relate to other parts of a pipeline such as jobs, see [Ke
 You can also learn more about how stages relate to parts of a pipeline in the [YAML schema stages article](/azure/devops/pipelines/yaml-schema/stages). 
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can organize pipeline jobs into stages. Stages are the major divisions in a pipeline: build this app, run these tests, and deploy to preproduction are good examples of stages. They're logical boundaries in your pipeline where you can pause the pipeline and perform various checks.
 
 Every pipeline has at least one stage even if you don't explicitly define it. You can also arrange stages into a dependency graph so that one stage runs before another one. There's a limit of 256 jobs for a stage. 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
-
-::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 Organize the deployment jobs in your release pipeline into stages.
@@ -57,14 +48,7 @@ and [queuing policies](#queuing-policies) control when a release gets deployed t
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 In the simplest case, you don't need any logical boundaries in your pipeline. In that case, you don't have to explicitly use the `stage` keyword. You can directly specify the jobs in your YAML file.
 
@@ -107,14 +91,7 @@ If you choose to specify a `pool` at the stage level, then all jobs defined in t
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> In Azure DevOps Server 2019, pools can only be specified at job level.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ```yaml
 stages:
@@ -141,8 +118,6 @@ stages:
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 To add a stage to your release pipeline, select the release pipeline in **Releases** page, select the action to **Edit** it, and then select the **Pipeline** tab.
@@ -168,19 +143,11 @@ for a stage in a release pipeline. You can:
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When you define multiple stages in a pipeline, by default, they run sequentially in the order in which you define them in the YAML file. The exception to this is when you add dependencies. With dependencies, stages run in the order of the `dependsOn` requirements. 
 
 Pipelines must contain at least one stage with no dependencies.
-
 
 The syntax for defining multiple stages and their dependencies is:
 
@@ -243,8 +210,6 @@ stages:
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 You control the dependencies by setting the triggers on each stage of the release pipeline:
 
@@ -264,17 +229,9 @@ If you customize the default condition of the preceding steps for a stage, you r
 >
 > Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](?tabs=yaml).
 
-
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Example to run a stage based upon the status of running a previous stage:
 
@@ -306,9 +263,6 @@ stages:
 
 ::: moniker-end
 
-
-
-
 #### [Classic](#tab/classic/)
 
 When you specify **After release** or **After stage** triggers, you can also specify the branch filters for the artifacts consumed in the release. Releases will only deploy to a stage when the branch filters are satisfied.
@@ -320,11 +274,9 @@ When you specify **After release** or **After stage** triggers, you can also spe
 ## Specify queuing policies
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 YAML pipelines don't support queuing policies. Each run of a pipeline is independent from and unaware of other runs. In other words, your two successive commits may trigger two pipelines, and both of them will execute the same sequence of stages without waiting for each other. While we work to bring queuing policies to YAML pipelines, we recommend that you use [manual approvals](approvals.md) in order to manually sequence and control the order the execution if this is of importance.
 ::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 In some cases, you may be able to generate builds faster than
@@ -389,21 +341,13 @@ defined.
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
 
 Currently, manual approval checks are supported on environments. For more information, see [Approvals](approvals.md).
 
 ::: moniker-end
-
-::: moniker range="= azure-devops-2019"
-
-Approvals aren't yet supported in YAML pipelines in this version of Azure DevOps Server.
-
-::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 
@@ -462,5 +406,4 @@ When a stage is non-skippable, it will show with a disabled checkbox in the **St
 :::image type="content" source="media/stages/stages-run-skip-stage.png" alt-text="Screenshot of stages to run with disabled stage. ":::
 
 ::: moniker-end
-
 

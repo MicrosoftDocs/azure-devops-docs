@@ -12,20 +12,12 @@ monikerRange: '<= azure-devops'
 ms.date: 02/02/2023
 ---
 
-
 # Manage and organize queries in Azure Boards and Azure DevOps  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer.
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]  
-> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. Also, you can perform bulk drag-and-drop of queries into query folders from Visual Studio but not from the web portal. 
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -40,7 +32,6 @@ Organize your personal or shared queries by adding a query folder. You can then 
 ## Open a query 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
-
 
 ## Copy, edit, and save a query  
 
@@ -95,7 +86,6 @@ The easiest way to define a query is to start with an existing shared query. The
 
     :::image type="content" source="media/view-run-queries/save-as-new-boards-hubs.png" alt-text="Screenshot of Save As query dialog, new boards hubs experience.":::
 
-
    To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md). 
 
 ::: moniker-end
@@ -113,7 +103,6 @@ Specify the query name and folder location for the query.
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-dialog.png" alt-text="Screenshot of Visual Studio, Save Query As dialog.":::
 
-
 To save the query as a `.wiq` file, choose the **File** radio button and specify the file location. 
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-wiq-file.png" alt-text="Screenshot of Visual Studio, Save Query As a WIQ file dialog.":::
@@ -123,7 +112,6 @@ To save the query as a `.wiq` file, choose the **File** radio button and specify
 ## Rename or delete a query
 
 #### [Browser](#tab/browser/)
-
 
 From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/more-actions.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
 
@@ -145,7 +133,6 @@ For shared queries, you can also choose to do one of these tasks:
 - **Security...**: to set permissions for the query. For more information, see [Set query permissions](set-query-permissions.md).   
 - **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. For more information, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
@@ -155,14 +142,12 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 :::image type="content" source="../media/team-explorer/open-query-from-team-explorer.png" alt-text="Screenshot of Visual Studio, open context menu and choose option.":::
 
-
 ---
  
 ## Add a query folder and move items into a folder 
 
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
-
 
 #### [Browser](#tab/browser/)
 
@@ -210,14 +195,12 @@ You add query folders from the **Boards > Queries > All** page.
 
 ::: moniker-end
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
 > We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 All changes you make to your query folder structure in Visual Studio appear in the web portal by refreshing your browser. 
-
 
 1. From the **Work Items** page, open the context menu for **My Queries**, **Team Queries**, or an existing query folder, and choose **New Folder**.  
 

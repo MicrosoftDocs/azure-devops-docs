@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 --- 
 

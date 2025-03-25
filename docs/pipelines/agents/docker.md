@@ -5,7 +5,7 @@ ms.custom: linux-related-content
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.date: 04/05/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Run a self-hosted agent in Docker
@@ -16,14 +16,6 @@ This article provides instructions for running your Azure Pipelines agent in Doc
 
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`.
 To run your agent in Docker, you'll pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
-
-::: moniker range="azure-devops-2019"
-
-This feature requires agent version 2.149 or later.
-Azure DevOps 2019 didn't ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
-
-::: moniker-end
 
 ## Windows
 

@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 10/27/2022
 ---
 
-
 # Organize your backlog and map child work items to parents in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -26,7 +25,6 @@ In this article you'll learn how to:
 > * View the tree hierarchy  
 > * Group backlog items using the Mapping pane  
 > * Reparent items through dragging or the **Change parent** option  
-
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
@@ -79,36 +77,6 @@ From your web browser, open your product backlog.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
-
-	![Screenshot of Open Work, Backlogs, for a team, on-premises version.](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
-
-	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Choose another team, on-premises version.](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
-
-	> [!TIP]    
-	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
-
-1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Choose product backlog level, Backlog items, Stories, or Requirements, on-premises version.](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
-
-2. (Optional) To choose which columns should display and in what order, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Open Column Options, on-premises version.](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
-
-::: moniker-end
-
-
-
-
-
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)]
 
 ## Show parent tasks and expand the tree hierarchy  
@@ -134,8 +102,7 @@ You can set various options to view backlog work items using the **View options*
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
+::: moniker range="<azure-devops"
 
 You can set various options to view backlog work items using the **View options** menu. To learn which options to set based on the tasks you want to accomplish, see [Configure your backlog view](configure-your-backlog-view.md). 
 
@@ -156,16 +123,11 @@ You can set various options to view backlog work items using the **View options*
 
 ::: moniker-end
 
-
-
-
-
 <a id="mapping">  </a>
 
 ## Map items to group them under a feature or epic 
 
 If you've already created your backlog, and now you want to organize it, you can do that most easily by mapping child items to parents.   
-
 
 ::: moniker range="azure-devops"
 
@@ -185,7 +147,7 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Choose :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** and select **Mapping**.  
 
@@ -202,9 +164,6 @@ If you've already created your backlog, and now you want to organize it, you can
 2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane automatically displays. 
 
 ::: moniker-end
-
-
-
 
 You can multi-select backlog and sprint backlog items in the same way as you [multi-select items from query results](../backlogs/bulk-modify-work-items.md).   
 
@@ -235,11 +194,9 @@ If you find you can't reorder a backlog item, check whether the  :::image type="
 
 You can reparent items owned by other teams, but you can't reorder items owned by other teams. For more information, see [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team). 
 
-
 <a id="change-parent-option">  </a>
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Change a parent of multiple backlog items 
 
@@ -253,17 +210,15 @@ From a product or portfolio backlog, you can multi-select several work items and
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Change parent menu option of several backlog items.](media/organize-backlog/multi-reparent.png)
 
 ::: moniker-end
 
-
 [!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
-
 
 ## Related articles  
 

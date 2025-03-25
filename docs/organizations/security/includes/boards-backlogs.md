@@ -64,7 +64,7 @@ ms.date: 04/04/2022
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using the Planning pane 
@@ -95,6 +95,5 @@ ms.date: 04/04/2022
       ✔️
    :::column-end:::
 :::row-end:::
-
 
  

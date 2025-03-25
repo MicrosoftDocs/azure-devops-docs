@@ -8,7 +8,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: sample
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms date: 12/13/2022
 ---
 

@@ -5,7 +5,7 @@ description: Learn how to create a trend report using an OData Query.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: quickstart
 ms date: 09/06/2024
 ---
@@ -103,7 +103,6 @@ in
 
    Power BI might require you to authenticate. For more information, see [Client authentication options](client-authentication-options.md).
 
-
 ## Expand Area, Iteration, AssignedTo columns
 
 The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an `$expand` statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: `AssignedTo`, `Iteration`, and `Area`. 
@@ -124,7 +123,6 @@ After closing the **Advanced Editor** and while remaining in the **Power Query E
     > ![Screenshot of expanded Area columns.](media/transform-data/expanded-area-columns.png)
 
 1. Repeat steps 1 through 3 for all fields representing entities that need to expand. These fields appear with *Record* listed in the table column when unexpanded. 
-
 
 ## Rename fields and query, then Close & Apply
 
