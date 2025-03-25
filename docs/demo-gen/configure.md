@@ -23,7 +23,7 @@ Ensure you have the following installed on your machine:
 
 1. **Clone the Repository**
 
-   If you haven't already, clone the repository to your local machine:
+   If you haven't already, clone the [repository](https://github.com/microsoft/AzDevOpsDemoGenerator) to your local machine:
 
    ```sh
    git clone <repository-url>
